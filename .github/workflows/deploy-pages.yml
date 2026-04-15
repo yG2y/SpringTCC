@@ -1,0 +1,46 @@
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'Divulgacao/Apresentacao/**'
+      - '.github/workflows/deploy-pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Montar pasta de publicação
+        run: |
+          rm -rf dist
+          mkdir -p dist/imgs
+
+          # HTML principal vira index.html
+          cp "Divulgacao/Apresentacao/proposta-spring-boot-tcc.html" dist/index.html
+
+          # Imagens (mantém estrutura relativa usada no HTML)
+          cp -r "Divulgacao/Apresentacao/imgs/." dist/imgs/
+
+          # PDF de apresentação
+          cp "Divulgacao/Apresentacao/Trabalho Interdisciplinar_ Pesquisa em Engenharia de Software.pdf" dist/
+
+          # Evita processamento Jekyll
+          touch dist/.nojekyll
+
+      - name: Deploy para branch gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: gh-pages
+          commit_message: "Deploy: ${{ github.sha }}"
