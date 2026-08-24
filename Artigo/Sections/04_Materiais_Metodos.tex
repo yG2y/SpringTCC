@@ -1,0 +1,186 @@
+\section{Materiais e Métodos}
+\label{sec:metodologia}
+
+Esta seção descreve o tipo de pesquisa, o ambiente e os instrumentos, a amostragem, as métricas de avaliação, os procedimentos estatísticos, os experimentos já realizados e o cronograma do TCC~II. O desenho é classificado como \textbf{empírico}, porque se baseia em repositórios reais do GitHub; \textbf{quantitativo}, porque emprega métricas estruturais e testes estatísticos formais; e \textbf{longitudinal}, porque organiza a amostra em quatro coortes temporais definidas pela data de criação do repositório, permitindo contrastar gerações distintas de projetos Spring Boot e isolar o salto entre o período pré-IA (E3) e a Era da IA assistida (E4). A classificação justifica-se pelo objetivo de obter evidências observáveis, comparáveis entre épocas, e não pelo acompanhamento do mesmo repositório ao longo de toda a sua vida.
+
+Importa reconhecer uma limitação do desenho por coortes: repositórios de épocas mais antigas tiveram mais tempo de evolução orgânica do que os criados recentemente. Por isso, diferenças entre épocas não serão interpretadas automaticamente como melhoria ou piora de qualidade, mas como variações associadas à coorte, com controle explícito do tamanho do projeto (LOC) e da versão do Spring Boot.
+
+A Figura~\ref{fig:metodologia} resume o fluxo em três etapas: coleta dos repositórios; extração das métricas com a ferramenta CK; e consolidação para análise estatística e visualização.
+
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}[
+        font=\small,
+        box/.style={
+            draw,
+            rounded corners=3pt,
+            align=center,
+            inner sep=7pt,
+            text width=0.27\linewidth,
+            minimum height=2.6cm,
+            thick
+        },
+        arr/.style={-{Latex}, thick, shorten >=2pt, shorten <=2pt}
+    ]
+        \node[box] (coleta) {\textbf{1. Coleta}\\GitHub GraphQL\\filtros Java/Spring Boot\\coortes E1--E4};
+        \node[box, right=0.45cm of coleta] (extracao) {\textbf{2. Extração}\\Ferramenta CK\\CBO, RFC, WMC,\\DIT, NOC, LCOM\_HS, LOC};
+        \node[box, right=0.45cm of extracao] (analise) {\textbf{3. Análise}\\ETL no Power BI\\testes estatísticos\\visualização};
+        \draw[arr] (coleta) -- (extracao);
+        \draw[arr] (extracao) -- (analise);
+    \end{tikzpicture}
+    \caption{Visão geral da metodologia: coleta, extração de métricas e análise.}
+    \label{fig:metodologia}
+    {\footnotesize Fonte: Elaborada pelos autores.}
+\end{figure}
+
+\subsection{Ambiente e instrumentos}
+\label{subsec:ambiente}
+
+A coleta será realizada em Python, com a \emph{GitHub GraphQL API}, paginação e controle de \emph{rate limit}. Essa interface permite recuperar metadados específicos (\texttt{createdAt}, estrelas, linguagens, \emph{fork}) em uma única consulta estruturada, o que torna a amostragem mais reprodutível do que uma sequência de chamadas REST. A análise estrutural será executada com a ferramenta CK, versão 0.7.1, sobre JVM em versão fixa, documentada no pacote de replicação \cite{aniche:ck}. A CK foi escolhida por calcular, de forma automatizada, a suíte de Chidamber e Kemerer em código Java e por ser amplamente utilizada em estudos de MSR. O Power BI será o ambiente de ETL e de \emph{dashboards} exploratórios. A inferência estatística e as figuras finais reproduzíveis serão conduzidas em \emph{notebooks} Python (\texttt{scipy}, \texttt{statsmodels}) ou R. Diferentes ferramentas de métricas podem implementar o mesmo indicador de modos distintos, em especial o acoplamento \cite{child:19}; por isso a versão da CK, da JVM e os parâmetros de execução permanecerão constantes em todas as épocas.
+
+\subsection{Amostragem e procedimentos}
+\label{subsec:amostragem}
+
+A amostra será formada por repositórios públicos escritos principalmente em Java e com uso explícito de Spring Boot (dependências \texttt{spring-boot-starter} em \texttt{pom.xml} ou \texttt{build.gradle}). Serão considerados apenas projetos não forkeados, com no mínimo 10 estrelas, 2.000 linhas de código efetivas e 10 arquivos Java. Esses critérios reduzem tutoriais triviais e repositórios sem base de código adequada para análise estrutural. Será aplicado um \emph{delay} de mineração de 12 meses \cite{kalliamvakou:16}, para evitar que repositórios muito recentes sejam tratados como representativos de uma época ainda em consolidação. Pretende-se coletar 500 repositórios por época, totalizando 2.000 projetos. Os metadados incluem identificador, URL, estrelas, \texttt{createdAt}, \texttt{updatedAt}, estimativa de tamanho, linguagens e a versão do Spring Boot declarada no arquivo de \emph{build}.
+
+Cada repositório será associado a exatamente uma época com base em \texttt{createdAt} (UTC), conforme a Tabela~\ref{tab:epocas}. Após a seleção, os repositórios elegíveis serão clonados e analisados estaticamente pela CK. Os resultados serão armazenados em CSV com identificação do repositório e da época. Caso ocorram falhas de clonagem ou de extração, o projeto será substituído por outro da mesma época que respeite os mesmos critérios. Os CSV serão consolidados em um processo de ETL no Power BI, restrito a limpeza, modelagem dimensional e visualização exploratória. As agregações por repositório serão exportadas para CSV/Parquet que alimentarão a análise estatística formal. O objetivo não é acompanhar a evolução completa de cada repositório, e sim construir um retrato da coorte a partir de projetos criados na janela histórica correspondente.
+
+\begin{table}[H]
+    \centering
+    \caption{Épocas históricas: delimitação operacional das coortes no GitHub.}
+    \label{tab:epocas}
+    \footnotesize
+    \renewcommand{\arraystretch}{1.2}
+    \begin{tabularx}{\linewidth}{|c|c|c|>{\raggedright\arraybackslash}p{0.18\linewidth}|>{\raggedright\arraybackslash}X|}
+        \hline
+        \textbf{Época} & \textbf{Início} & \textbf{Fim} & \textbf{Denominação} & \textbf{Marcos representativos} \\
+        \hline
+        E1 & 01/01/2009 & 31/12/2013 & Colaboração emergente &
+        Consolidação inicial do GitHub e do ecossistema \emph{open source} Java. \\
+        \hline
+        E2 & 01/01/2014 & 31/12/2017 & Estruturação e \emph{frameworks} &
+        Popularização do Spring Boot; difusão de Docker e CI. \\
+        \hline
+        E3 & 01/01/2018 & 31/12/2021 & Maturidade colaborativa &
+        Consolidação de práticas de qualidade e revisão por pares. \\
+        \hline
+        E4 & 01/01/2022 & data da coleta & Era da IA assistida &
+        GitHub Copilot, Claude Code, Cursor, ChatGPT e adoção de IA generativa. \\
+        \hline
+    \end{tabularx}
+    \vspace{4pt}
+    {\footnotesize Fonte: Elaborada pelos autores. Critério de alocação: campo \texttt{createdAt} do repositório no GitHub (limites inclusivos).}
+\end{table}
+
+\subsection{Métricas de avaliação}
+\label{subsec:metricas-avaliacao}
+
+As métricas extraídas pela CK, em nível de classe e de método, são CBO, RFC, WMC, DIT, NOC, LCOM\_HS e LOC. Para LCOM, utiliza-se explicitamente a variante de Henderson-Sellers (LCOM\_HS), exportada na coluna \texttt{lcom} pela CK, distinta de LCOM1, LCOM2 e LCOM3 \cite{child:19,aniche:ck}. Após a sumarização, cada repositório será representado por médias: \texttt{avg\_cbo}, \texttt{avg\_rfc}, \texttt{avg\_wmc}, \texttt{avg\_loc\_method}, \texttt{avg\_dit}, \texttt{avg\_noc} e \texttt{avg\_lcom}. CBO e RFC observam acoplamento; WMC e LOC, complexidade e tamanho; DIT e NOC, herança; LCOM\_HS, coesão. A escolha justifica-se por duas razões: são indicadores clássicos e comparáveis entre projetos \cite{chidamber:94} e mapeiam diretamente os objetivos específicos da introdução. Métricas de complexidade e acoplamento são sensíveis ao tamanho das classes e dos métodos \cite{elemam:01}; por isso o LOC entra tanto como dimensão de análise quanto como variável de controle.
+
+A Tabela~\ref{tab:gqm-objetivos} unifica objetivos específicos, questões de pesquisa e métricas, conforme o GQM (Seção~\ref{subsec:fund-gqm}).
+
+\begin{table}[H]
+    \centering
+    \caption{Objetivos específicos, questões de pesquisa e métricas (GQM).}
+    \label{tab:gqm-objetivos}
+    \footnotesize
+    \renewcommand{\arraystretch}{1.2}
+    \begin{tabularx}{\linewidth}{|>{\raggedright\arraybackslash}p{0.26\linewidth}|c|>{\raggedright\arraybackslash}p{0.14\linewidth}|>{\raggedright\arraybackslash}X|>{\raggedright\arraybackslash}p{0.14\linewidth}|}
+        \hline
+        \textbf{Objetivo específico} & \textbf{Q} & \textbf{Dimensão} & \textbf{Questão de pesquisa} & \textbf{Métricas} \\
+        \hline
+        Caracterizar acoplamento entre épocas &
+        Q1 & Acoplamento &
+        Como a dependência entre classes evoluiu ao longo das quatro
+        épocas? & CBO, RFC \\
+        \hline
+        Caracterizar complexidade e tamanho entre épocas &
+        Q2 & Complexidade &
+        A densidade lógica dos métodos e o tamanho do código se alteraram
+        com o tempo e na Era da IA? & WMC, LOC \\
+        \hline
+        Caracterizar herança e coesão entre épocas &
+        Q3 & Herança e coesão &
+        As hierarquias permaneceram rasas e a coesão interna das classes
+        se manteve estável? & DIT, NOC, LCOM\_HS \\
+        \hline
+        Contrastar E3 e E4 (Era da IA) &
+        Q4 & Contraste IA &
+        O período pós-2022 difere de 2018--2021 nas métricas
+        estruturais? & Todas \\
+        \hline
+    \end{tabularx}
+    \vspace{4pt}
+    {\footnotesize Fonte: Elaborada pelos autores.}
+\end{table}
+
+\subsection{Métodos estatísticos}
+\label{subsec:estatistica}
+
+Além do filtro mínimo de 2.000 LOC, serão reportadas as distribuições de LOC e de versão do Spring Boot por época. Antes das comparações principais, aplicar-se-á o teste de Kruskal--Wallis sobre LOC entre épocas. Se diferenças forem detectadas, as análises estruturais serão complementadas por estratificação por faixas de LOC e por análise de sensibilidade com métricas normalizadas (razões por classe ou por KLOC). A versão do Spring Boot será registrada por repositório e tratada como variável confundidora na discussão.
+
+Para cada métrica agregada, aplicar-se-á o teste de Kruskal--Wallis às quatro épocas. Havendo significância global, seguir-se-á o teste de Dunn com correção de Bonferroni para comparações par a par. Para a hipótese da Era da IA, empregar-se-á o teste de Mann--Whitney entre E3 e E4. A correção para comparações múltiplas adotará $\alpha_{\mathrm{adj}} = \alpha / m$, com $\alpha = 0{,}05$ e $m$ igual ao número de testes da família: $m = 7$ no contraste E3 versus E4; $m = 42$ no conjunto completo de pares de épocas após Kruskal--Wallis (seis pares vezes sete métricas). Serão reportados \emph{p-valores} ajustados, tamanho de efeito (\emph{rank-biserial} ou $\delta$ de Cliff) e intervalos descritivos (mediana e amplitude interquartil). As visualizações previstas constam do Apêndice~\ref{ap:visualizacoes}.
+
+\subsection{Experimentos já realizados}
+\label{subsec:piloto}
+
+Um estudo piloto já foi executado para validar o \emph{pipeline} de extração. \emph{Scripts} em Python clonam repositórios Java públicos, invocam a CK 0.7.1 e consolidam CBO, RFC, WMC, DIT, NOC, LOC e indicadores auxiliares em CSV. O artefato \texttt{analise\_repositorios\_java.csv} reúne a análise de 520 repositórios, realizada em novembro de 2025, incluindo projetos Spring Boot de ampla adoção, como \texttt{spring-projects/spring-boot} (média de CBO 5,45; WMC 4,96; DIT 1,29) e \texttt{xkcoding/spring-boot-demo} (CBO 5,05; WMC 2,77; DIT 1,13). O piloto confirma que o ambiente (Python, Git, JVM e CK) está operacional e que as métricas previstas são extraíveis em escala. Não substitui a amostra final: os repositórios ainda não foram filtrados por dependência Spring Boot nem alocados às quatro épocas históricas. Esses recortes serão aplicados na coleta GraphQL descrita acima.
+
+\subsection{Cronograma do TCC II}
+\label{subsec:cronograma}
+
+O trabalho é desenvolvido em dupla. As Tabelas~\ref{tab:cronograma-gabriel} e~\ref{tab:cronograma-guilherme} apresentam cronogramas quinzenais independentes e complementares, da primeira quinzena de agosto de 2026 à segunda quinzena de novembro de 2026. Gabriel Ferreira concentra-se na amostragem, na mineração GraphQL e no ETL; Guilherme Augusto concentra-se na extração CK, na inferência estatística e nas figuras finais.
+
+\begin{table}[H]
+\centering
+\caption{Cronograma quinzenal --- Gabriel Ferreira.}
+\label{tab:cronograma-gabriel}
+\footnotesize
+\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\linewidth}{|>{\raggedright\arraybackslash}X|c|c|c|c|c|c|c|c|}
+\hline
+\textbf{Tarefa} & \textbf{A1} & \textbf{A2} & \textbf{S1} & \textbf{S2} & \textbf{O1} & \textbf{O2} & \textbf{N1} & \textbf{N2} \\
+\hline
+Critérios de amostragem e consulta GraphQL & X & X & & & & & & \\
+\hline
+Mineração E1--E2 e aplicação dos filtros & & & X & & & & & \\
+\hline
+Mineração E3--E4 e versão do Spring Boot & & & & X & & & & \\
+\hline
+ETL no Power BI e limpeza dos dados & & & & & X & X & & \\
+\hline
+Dashboards exploratórios e exportação CSV & & & & & & X & X & \\
+\hline
+Documentação da coleta e pacote de replicação & & & & & & & X & X \\
+\hline
+\end{tabularx}
+\vspace{4pt}
+{\footnotesize Fonte: Elaborada pelos autores. A1--A2: agosto; S1--S2: setembro; O1--O2: outubro; N1--N2: novembro de 2026.}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Cronograma quinzenal --- Guilherme Augusto.}
+\label{tab:cronograma-guilherme}
+\footnotesize
+\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\linewidth}{|>{\raggedright\arraybackslash}X|c|c|c|c|c|c|c|c|}
+\hline
+\textbf{Tarefa} & \textbf{A1} & \textbf{A2} & \textbf{S1} & \textbf{S2} & \textbf{O1} & \textbf{O2} & \textbf{N1} & \textbf{N2} \\
+\hline
+Ambiente CK/JVM e validação do piloto & X & & & & & & & \\
+\hline
+\textit{Pipeline} de clonagem e extração CK & & X & X & & & & & \\
+\hline
+Extração CK e agregação \texttt{avg\_*} (E1--E4) & & & X & X & & & & \\
+\hline
+Testes Kruskal--Wallis, Dunn e Mann--Whitney & & & & & X & X & & \\
+\hline
+Figuras finais e interpretação estatística & & & & & & X & X & \\
+\hline
+Pacote de replicação da análise e revisão do texto & & & & & & & X & X \\
+\hline
+\end{tabularx}
+\vspace{4pt}
+{\footnotesize Fonte: Elaborada pelos autores. A1--A2: agosto; S1--S2: setembro; O1--O2: outubro; N1--N2: novembro de 2026.}
+\end{table}

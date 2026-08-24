@@ -1,0 +1,116 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Evolução da Maturidade de Desenvolvimento em Projetos Spring Boot
+% TCC - Engenharia de Software - PUC Minas
+%
+% Para compilar:
+%   pdflatex Article.tex
+%   bibtex   Article
+%   pdflatex Article.tex
+%   pdflatex Article.tex
+%
+% Observação: o arquivo de estilo `sbc-template.sty` deve estar no mesmo
+% diretório (download em [https://www.sbc.org.br/documentos-da-sbc/](https://www.sbc.org.br/documentos-da-sbc/)
+% summary/169-templates-para-artigos-e-capitulos-de-livros/878-modelosparapublicaodeartigos).
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article}
+
+\usepackage{sbc-template}
+\usepackage{graphicx,url}
+\usepackage{float}
+\usepackage[brazil]{babel}
+\usepackage{tabularx}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\usepackage[utf8]{inputenc}
+\usepackage[inline]{enumitem}
+\usepackage{tcolorbox}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning}
+\usepackage{amsmath}
+
+%%%%%%%%%%%%%%%%% Pacotes para inserção de algoritmos - BEGIN
+\usepackage[ruled,lined]{algorithm2e}
+
+\usepackage{xcolor}
+\definecolor{verde}{rgb}{0.25,0.5,0.35}
+\definecolor{jpurple}{rgb}{0.5,0,0.35}
+\definecolor{darkgreen}{rgb}{0.0, 0.2, 0.13}
+
+\usepackage{listings}
+\lstset{
+    language=Java,
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{jpurple}\bfseries,
+    stringstyle=\color{red},
+    commentstyle=\color{verde},
+    morecomment=[s][\color{blue}]{/**}{*/},
+    extendedchars=true,
+    showspaces=false,
+    showstringspaces=false,
+    numbers=left,
+    numberstyle=\tiny,
+    breaklines=true,
+    backgroundcolor=\color{white!10},
+    breakautoindent=true,
+    captionpos=b,
+    xleftmargin=0pt,
+    tabsize=2
+}
+%%%%%%%%%%%%%%%%% Pacotes para inserção de algoritmos - END
+
+\graphicspath{%
+  {imgs/}%
+  {Sections/imgs/}%
+  {../Divulgacao/Apresentacao/imgs/}%
+  {./}%
+}
+
+\sloppy
+
+\title{Evolução da Maturidade de Desenvolvimento\\em Projetos Spring Boot}
+
+\author{Gabriel Ferreira\inst{1}, Guilherme Augusto\inst{1}}
+
+\address{Engenharia de Software --
+  Pontifícia Universidade Católica de Minas Gerais (PUC-MG)\\
+  Belo Horizonte -- MG -- Brazil
+  \email{\{gabriel.amaral.1447804,gajsouza\}@sga.pucminas.br}
+}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Internal software quality in object-oriented systems can be observed through structural metrics of coupling, complexity, inheritance, cohesion and size. In the Java ecosystem, Spring Boot is a widely adopted framework, yet longitudinal evidence on how the structural quality of public GitHub projects evolves---and whether the generative-AI era (2022--present) coincides with measurable change---remains scarce. This work aims to analyse that evolution across four temporal cohorts defined by repository creation date. Object-oriented metrics will be extracted with the CK tool, organised through an ETL pipeline in Power BI and compared with non-parametric tests (Kruskal--Wallis, Mann--Whitney, Bonferroni correction) in reproducible Python/R notebooks.
+\end{abstract}
+
+\begin{resumo}
+A qualidade interna de \emph{software} orientado a objetos pode ser observada por métricas estruturais de acoplamento, complexidade, herança, coesão e tamanho. No ecossistema Java, o Spring Boot é um \emph{framework} de ampla adoção; contudo, ainda são escassas evidências longitudinais sobre como a qualidade estrutural de projetos públicos no GitHub evolui e se a Era da IA generativa (2022--atual) coincide com alterações mensuráveis nessas métricas. O objetivo deste trabalho é analisar essa evolução em quatro coortes temporais definidas pela data de criação dos repositórios. As métricas serão extraídas com a ferramenta CK, organizadas em um \emph{pipeline} de ETL no Power BI e comparadas por testes não paramétricos (Kruskal--Wallis, Mann--Whitney e correção de Bonferroni) em \emph{notebooks} reproduzíveis em Python/R.
+\end{resumo}
+
+\begin{tcolorbox}
+\footnotesize
+\textbf{Bacharelado em Engenharia de \emph{Software} - PUC Minas\\
+Trabalho de Conclusão de Curso (TCC)} \\
+
+\indent Orientador de conteúdo (TCC I): Danilo Maia - danilomaia@pucminas.br \\
+Orientador de conteúdo (TCC I): João Pedro Batisteli - joaobatisteli@pucminas.br\\
+Orientador de conteúdo (TCC I): Leonardo Vilela - leonardocardoso@pucminas.br \\
+Orientador acadêmico (TCC I): Cleiton Tavares - cleitontavares@pucminas.br \\
+Orientador do TCC II: (A ser definido no próximo semestre)\\ \\
+Belo Horizonte, 24 de agosto de 2026.
+\end{tcolorbox}
+
+\input{Sections/01_Introducao}
+\input{Sections/02_Fundamentacao_Teorica}
+\input{Sections/03_Trabalhos_Relacionados}
+\input{Sections/04_Materiais_Metodos}
+
+\bibliographystyle{sbc}
+\bibliography{sbc-template}
+
+\appendix
+\input{Sections/Apendices}
+
+\end{document}

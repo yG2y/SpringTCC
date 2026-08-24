@@ -1,0 +1,26 @@
+\section{Fundamentação Teórica}
+\label{sec:fund}
+
+Esta seção apresenta os conceitos consolidados que embasam o estudo: qualidade interna de \emph{software}, a suíte de métricas de Chidamber e Kemerer, o paradigma \emph{Goal-Question-Metric}, a mineração de repositórios e a inteligência artificial generativa no recorte da Era da IA assistida.
+
+\subsection{Qualidade interna e métricas orientadas a objetos}
+\label{subsec:fund-qualidade}
+
+A norma \emph{ISO/IEC 25010} define qualidade de \emph{software} como um conjunto de características que expressam o grau em que um sistema atende a necessidades explícitas e implícitas \cite{iso25010}. Nesse modelo, a qualidade interna refere-se a propriedades do código-fonte observáveis por análise estática, incluindo modularidade, coesão e facilidade de manutenção. Pressman e Maxim destacam que sistemas com melhor qualidade interna tendem a exigir menor esforço de evolução e a permanecer viáveis por mais tempo \cite{pressman:21}.
+
+Para tornar essas características mensuráveis em código orientado a objetos, Chidamber e Kemerer propuseram um conjunto clássico de indicadores em nível de classe \cite{chidamber:94}. Acoplamento entre objetos (\emph{Coupling Between Objects} --- CBO) descreve o grau de dependência de uma classe em relação a outras. Métodos ponderados por classe (\emph{Weighted Methods per Class} --- WMC) agrega a complexidade dos métodos. Profundidade da árvore de herança (\emph{Depth of Inheritance Tree} --- DIT) e número de filhos (\emph{Number of Children} --- NOC) caracterizam a hierarquia. Resposta de uma classe (\emph{Response for a Class} --- RFC) estima o conjunto de métodos potencialmente acionados a partir de uma mensagem. Falta de coesão em métodos (\emph{Lack of Cohesion in Methods} --- LCOM) indica o quanto os métodos de uma classe operam sobre conjuntos disjuntos de atributos. Essas métricas passaram a ser amplamente empregadas para caracterizar projeto, manutenção e falhas em sistemas orientados a objetos \cite{singh:12,radjenovic:13,aniche:16}. A forma operacional em que serão extraídas neste trabalho, incluindo a ferramenta e as variantes adotadas, é especificada na Seção~\ref{sec:metodologia}.
+
+\subsection{Goal-Question-Metric}
+\label{subsec:fund-gqm}
+
+O paradigma \emph{Goal-Question-Metric} (GQM) organiza avaliações de \emph{software} em três níveis: o objetivo do estudo (\emph{goal}), as perguntas que o detalham (\emph{questions}) e as métricas que as respondem (\emph{metrics}) \cite{basili:94}. A abordagem evita coletar indicadores sem vínculo com a intenção da pesquisa: primeiro define-se o que se deseja aprender; em seguida, traduz-se esse objetivo em perguntas mensuráveis; por fim, escolhem-se as medidas adequadas. Neste trabalho, o GQM liga o objetivo de analisar a evolução da qualidade estrutural em projetos Spring Boot às dimensões de acoplamento, complexidade, herança, coesão e tamanho, operacionalizadas na Seção~\ref{sec:metodologia}.
+
+\subsection{Mineração de Repositórios de Software}
+\label{subsec:fund-msr}
+
+A Mineração de Repositórios de \emph{Software} (\emph{Mining Software Repositories} --- MSR) analisa artefatos reais --- código-fonte, histórico de versões e metadados de plataformas --- para identificar padrões de desenvolvimento, evolução e qualidade \cite{hassan:08}. Em vez de apoiar-se apenas em relatos ou documentação, a MSR observa evidências extraídas dos próprios repositórios. No GitHub, essa estratégia exige filtros de relevância, exclusão de \emph{forks} e consideração de um intervalo de maturação após a criação do repositório, a fim de reduzir ruído e projetos ainda imaturos \cite{kalliamvakou:14,kalliamvakou:16}. Esses cuidados conceituais orientam a amostragem descrita na metodologia.
+
+\subsection{Inteligência artificial generativa}
+\label{subsec:fund-ia}
+
+Neste trabalho, inteligência artificial generativa designa sistemas baseados em modelos de linguagem de grande escala, treinados em corpora de texto e código, capazes de produzir ou completar trechos de programa a partir de contexto e de \emph{prompts}. Ferramentas como GitHub Copilot, ChatGPT, Claude Code e Cursor ilustram esse paradigma e delimitam o que se denomina Era da IA assistida, adotada como quarta época histórica do estudo. Experimentos controlados indicam ganhos de produtividade e variações na qualidade do código sugerido por esses assistentes \cite{peng:23,dakhel:23}, o que motiva investigar se a estrutura interna de projetos Spring Boot publicados no GitHub apresenta sinais observáveis nesse período.
