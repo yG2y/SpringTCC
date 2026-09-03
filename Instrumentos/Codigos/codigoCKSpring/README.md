@@ -62,7 +62,67 @@ GITHUB_TOKEN=seu_token_aqui
 
 **IMPORTANTE**: O arquivo `.env` ja esta no `.gitignore` para proteger seu token.
 
-## Como Usar
+## Coleta de metadados Java web
+
+Script **sem clone e sem CK**: descobre repositorios Java web pela Search REST do GitHub, coleta estrelas, issues, contribuidores e topics, le `pom.xml` / `build.gradle` na raiz (Contents API) e classifica o framework.
+
+```powershell
+cd Instrumentos\Codigos\codigoCKSpring
+python collect_java_web_metadata.py --limit 200
+python collect_java_web_metadata.py --limit 50 --min-stars 25   # amostra menor
+```
+
+Saida padrao: `Instrumentos/Codigos/Artefatos/metadados_java_web.csv`
+
+| Coluna | Origem | Significado |
+| --- | --- | --- |
+| `full_name`, `url` | REST Search | identificador e URL do repositorio |
+| `created_at`, `pushed_at` | REST Search | datas ISO-8601 |
+| `stars`, `forks` | REST Search | popularidade |
+| `open_issues`, `total_issues` | GraphQL | issues abertas e totais (nao so label bug); `0` quando o repositorio tem issues desabilitadas e usa Jira, como `apache/camel` |
+| `contributors` | REST | total via header `Link` em `/contributors?per_page=1` |
+| `topics` | REST Search | topics do GitHub, separados por `; ` |
+| `frameworks` | topics + build | todos os frameworks detectados (multi-rotulo) |
+| `framework_primary` | prioridade abaixo | rotulo principal |
+| `detection_source` | -- | `topics`, `build`, `both` ou `none` |
+| `spring_boot_version` | pom/gradle | se Spring Boot for detectado |
+| `collected_at` | local | instante da coleta (UTC) |
+
+O GitHub **nao** expoe o framework como campo nativo. Topics sao metadado incompleto; o arquivo de build e o criterio confiavel.
+
+### Taxonomia (`framework_primary`, maior prioridade primeiro)
+
+1. Spring Boot (`spring-boot-starter`, `spring-boot-starter-web`, `webflux`)
+2. Quarkus (`io.quarkus`)
+3. Micronaut (`io.micronaut`)
+4. Helidon (`io.helidon`)
+5. Dropwizard (`io.dropwizard`)
+6. Vert.x (`io.vertx`)
+7. Play Framework (`com.typesafe.play` / topic `play-framework`)
+8. Vaadin (`com.vaadin`)
+9. JSF / PrimeFaces (`jakarta.faces`, `javax.faces`, `org.primefaces`)
+10. Struts (`org.apache.struts`)
+11. Wicket (`org.apache.wicket`)
+12. Javalin (`io.javalin`)
+13. Spark Java (`com.sparkjava`)
+14. Spring MVC sem Boot (`spring-webmvc`)
+15. Jakarta EE / Java EE (`jakarta.servlet`, `javax.servlet`, `jakarta.ws.rs`)
+16. GWT (`com.google.gwt`)
+17. Nao web / indefinido
+
+### Estrategia de busca
+
+A amostra e estratificada em 96 consultas: 24 topics x 4 janelas `created:` (2009--2013, 2014--2017, 2018--2021, 2022--2026). Cada consulta tem a forma `language:Java stars:>=10 topic:<topic> created:<janela>` e contribui com uma cota fixa de repositorios, para que a amostra nao fique dominada por Spring Boot nem pela epoca mais recente. O excedente de cada consulta fica em reserva e completa a amostra sem gastar novas chamadas. Filtros de 2000 LOC e delay de 12 meses ficam para a etapa da CK.
+
+Duas restricoes da API moldam esse desenho:
+
+- **A Search de repositorios nao aceita `OR` nem parenteses.** Booleanos so existem na busca de codigo e de issues. Uma consulta como `(topic:quarkus OR topic:micronaut)` retorna HTTP 200 com `total_count=0`, sem mensagem de erro, enquanto `topic:quarkus` sozinho retorna 162 resultados. Por isso cada topic e consultado separadamente.
+- **A Search tem cota propria de 30 requisicoes/minuto**, distinta das 5.000/hora do restante da API. O limiar de pausa e escolhido pelo header `X-RateLimit-Resource`; usar um piso unico faria o script dormir 60s a cada busca.
+
+Os topics foram conferidos um a um contra a API. `vert.x`, `spark-java`, `eclipse-vertx` e `grails` retornam zero ou quase zero e foram removidos da lista.
+
+## Como Usar (metricas CK)
+
 
 ### Execucao Basica
 
