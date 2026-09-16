@@ -121,6 +121,37 @@ Duas restricoes da API moldam esse desenho:
 
 Os topics foram conferidos um a um contra a API. `vert.x`, `spark-java`, `eclipse-vertx` e `grails` retornam zero ou quase zero e foram removidos da lista.
 
+## Selecao auditavel Spring Boot (populacao, filtros, TOP N)
+
+Protocolo reproduzivel, separado do piloto de 200 e do snapshot `collect_spring_boot_50k.py`. A descoberta usa `topic:spring-boot fork:true` **sem** `language:Java` e **sem** limiar de estrelas. Forks entram na populacao para que o filtro `is_fork` possa ser medido. Documentacao: `METODOLOGIA_SELECAO_SPRING_BOOT.md`.
+
+```powershell
+cd Instrumentos\Codigos\codigoCKSpring
+pip install -r requirements.txt
+python select_spring_boot.py count
+python select_spring_boot.py discover
+python select_spring_boot.py filter
+python select_spring_boot.py sample --limit 50000
+python select_spring_boot.py run --limit 50000
+python select_spring_boot.py validate --sample-size 30
+```
+
+Saida em `Instrumentos/Codigos/Artefatos/selecao_spring_boot/runs/<timestamp>/` (`population.csv`, `filter_attrition.csv`, `eligible_repositories.csv`, `selected_repositories.csv`, `excluded/*.jsonl`, `report.txt`, `run_metadata.json`). Retoma janelas ja coletadas em `windows.json`. `--limit` so e aplicado **depois** dos filtros; se restarem menos que N, os filtros nao sao relaxados.
+
+## Coleta em massa Spring Boot (snapshot anterior)
+
+Script legado. A Search so devolve 1.000 resultados por consulta; as janelas `created:` (e, se um dia ainda passar de 1.000, `stars:`) sao partidas sozinhas. A descoberta grava o CSV a cada pagina. Contribuidores e issues totais entram depois, tambem com checkpoint — da para matar o processo e retomar.
+
+```powershell
+cd Instrumentos\Codigos\codigoCKSpring
+python collect_spring_boot_50k.py --limit 50000
+python collect_spring_boot_50k.py --phase enrich   # se a busca ja acabou
+```
+
+Saida: `Instrumentos/Codigos/Artefatos/metadados_spring_boot_50k.csv` (nao sobrescreve o CSV de 200). Checkpoint das janelas: `metadados_spring_boot_50k.windows.json`.
+
+Consulta base: `language:Java topic:spring-boot created:<janela>` — sem filtro de estrelas, senao a API so tem ~3.700 repos. Framework fica Spring Boot por construcao da busca (`detection_source=topics`). O `pom.xml` nao e lido nos 50 mil: seriam 150 mil chamadas extras.
+
 ## Como Usar (metricas CK)
 
 
