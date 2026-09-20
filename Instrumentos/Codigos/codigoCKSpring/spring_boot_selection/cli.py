@@ -12,7 +12,7 @@ from .filters import run_filters, select_top_n
 from .github_client import GitHubClient
 from .reporting import build_run_metadata, write_report, write_run_metadata
 from .technical import validate_selected
-from .util import DEFAULT_CONFIG, RUNS_ROOT, load_config, load_env, log, utc_now, utc_now_iso
+from .util import DEFAULT_CONFIG, RUNS_ROOT, load_config, load_env, log, parse_iso, utc_now, utc_now_iso
 
 
 def new_run_dir() -> Path:
@@ -128,7 +128,10 @@ def cmd_filter(args: argparse.Namespace) -> int:
     run_dir = resolve_run_dir(args.run_dir, create=False)
     copy_config(args.config, run_dir)
     rows = load_population(run_dir)
-    result = run_filters(rows, config, run_dir)
+    count_path = run_dir / "count.json"
+    count_info = json.loads(count_path.read_text(encoding="utf-8")) if count_path.exists() else None
+    reference_time = parse_iso(count_info["collected_at"]) if count_info else utc_now()
+    result = run_filters(rows, config, run_dir, collection_time=reference_time)
     target = args.limit if args.limit is not None else int(config.get("target_count") or 50000)
     selected = select_top_n(result["eligible"], target, run_dir)
     write_report(
@@ -177,7 +180,7 @@ def cmd_sample(args: argparse.Namespace) -> int:
     return 0
 
 
-def cmd_run(args: argparse.Namespace) -> int:
+def _cmd_run(args: argparse.Namespace) -> int:
     config = load_config(args.config)
     if args.start_year:
         config["discovery"]["start_year"] = args.start_year
@@ -187,12 +190,16 @@ def cmd_run(args: argparse.Namespace) -> int:
     copy_config(args.config, run_dir)
     started = utc_now_iso()
     client = make_client(config)
-    info = count_population(client, config)
-    save_count(run_dir, info)
+    count_path = run_dir / "count.json"
+    if count_path.exists() and (run_dir / "population.csv").exists():
+        info = json.loads(count_path.read_text(encoding="utf-8"))
+    else:
+        info = count_population(client, config)
+        save_count(run_dir, info)
     print_count(info)
     store = discover_population(client, config, run_dir)
     rows = load_population(run_dir)
-    result = run_filters(rows, config, run_dir)
+    result = run_filters(rows, config, run_dir, collection_time=parse_iso(info["collected_at"]))
     target = args.limit if args.limit is not None else int(config.get("target_count") or 50000)
     selected = select_top_n(result["eligible"], target, run_dir)
     write_report(
@@ -221,6 +228,38 @@ def cmd_run(args: argparse.Namespace) -> int:
         ),
     )
     return 0
+
+
+
+def cmd_run(args: argparse.Namespace) -> int:
+    # A retomada conserva o snapshot inicial e os checkpoints, mas registra
+    # explicitamente o estado atual para nao manter o aviso da reuniao antiga.
+    run_dir = resolve_run_dir(args.run_dir, create=True)
+    args.run_dir = run_dir
+    status_path = run_dir / "collection_status.json"
+    status = {"status": "running", "resumed_at": utc_now_iso(),
+              "note": "Coleta retomada; resultados anteriores nesta pasta serao recalculados."}
+    status_path.write_text(json.dumps(status, ensure_ascii=False, indent=2), encoding="utf-8")
+    try:
+        result = _cmd_run(args)
+    except BaseException as exc:
+        status.update(status="interrupted" if isinstance(exc, KeyboardInterrupt) else "failed",
+                      stopped_at=utc_now_iso(), error_type=type(exc).__name__)
+        status_path.write_text(json.dumps(status, ensure_ascii=False, indent=2), encoding="utf-8")
+        raise
+    metadata_path = run_dir / "run_metadata.json"
+    metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
+    metadata["collection_started_at"] = (metadata.get("count_snapshot") or {}).get("collected_at", metadata["collection_started_at"])
+    metadata["collection_status"] = "completed_partition_traversal"
+    metadata["resumed_at"] = status["resumed_at"]
+    write_run_metadata(metadata_path, metadata)
+    status.update(status="completed_partition_traversal", finished_at=utc_now_iso(),
+                  collected_unique_count=metadata["collected_unique_count"],
+                  eligible_count=metadata["eligible_count"], selected_count=metadata["selected_count"],
+                  primary_language=metadata["primary_language"],
+                  note="Todas as janelas configuradas percorridas; indice dinamico pode divergir do total inicial. Selecao ordenada sobre os registros coletados.")
+    status_path.write_text(json.dumps(status, ensure_ascii=False, indent=2), encoding="utf-8")
+    return result
 
 
 def cmd_validate(args: argparse.Namespace) -> int:

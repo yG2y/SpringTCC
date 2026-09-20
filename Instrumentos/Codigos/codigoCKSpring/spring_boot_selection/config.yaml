@@ -3,13 +3,17 @@
 
 target_count: 50000
 
+# Linguagem principal informada pelo GitHub (campo REST language).
+# Aplicado localmente para registrar o antes/depois da exclusao.
+primary_language: Java
+
 discovery:
   # Populacao operacional: topic do GitHub, nao evidencia de dependencia.
   query: "topic:spring-boot"
   # fork:true INCLUI forks na busca. Sem esse qualificativo a Search os omite
   # e o filtro de forks ficaria invisivel. Nao usar language:Java.
   include_forks_in_search: true
-  start_year: 2012
+  start_year: 2008
   end_year: 2026
   api_version: "2022-11-28"
 

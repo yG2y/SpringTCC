@@ -52,12 +52,23 @@ chamada Contents por arquivo e por repositorio. Use:
 Permanece quem:
 
 1. Entrou na populacao operacional (topic `spring-boot`).
-2. Nao foi removido por nenhum filtro ativo em `config.yaml`.
+2. Tem linguagem principal Java, conforme `language` da API REST (exposta como `primary_language` nas saídas).
+3. Nao foi removido por nenhum filtro ativo em `config.yaml`.
 
 ## Criterios de exclusao
 
 Cada filtro e uma etapa independente, com JSONL dos removidos em
 `excluded/` e linha em `filter_attrition.csv`.
+
+### remove_primary_language (`primary_language_not_java`)
+
+- Primeira etapa, antes de forks: manter somente `primary_language = Java`.
+- Origem: campo `language` da API REST do GitHub; o alias `primary_language` aparece nos CSVs elegíveis/selecionados e nas evidências de exclusão.
+- Comparação exata, sem diferenciar maiúsculas/minúsculas. JavaScript, Kotlin, outras linguagens e valores ausentes são excluídos.
+- Justificativa: concentrar a análise de complexidade em projetos cuja linguagem principal é Java, conforme o recorte solicitado em 20/09/2026.
+- Limitação: um monorepo com backend Java pode ser excluído se sua linguagem principal for outra. Linguagem principal Java não comprova uso de Spring Boot.
+- A descoberta continua ampla para medir o efeito deste filtro. Não se acrescenta `language:Java` à consulta original durante a retomada.
+- Configuração: `primary_language: Java`; exclusões em `excluded/primary_language.jsonl`.
 
 ### remove_forks (`is_fork`)
 
@@ -90,7 +101,7 @@ Cada filtro e uma etapa independente, com JSONL dos removidos em
 
 ### remove_inactive (`inactive_3_years`)
 
-- Implementacao: `pushed_at` < (data da coleta − N anos), N configuravel
+- Implementacao: `pushed_at` < (data de `count.json` − N anos), N configuravel
   (padrao 3). `pushed_at` e o ultimo push Git; `updated_at` tambem muda com
   estrelas e issues, por isso nao e usado.
 - Justificativa: reduzir software abandonado.
@@ -159,3 +170,11 @@ Eligible e grava os que restaram.
   sao sinalizados.
 - `is_template` e `mirror_url` podem estar ausentes na Search.
 - Validacao tecnica do `pom.xml`/`build.gradle` e amostral neste pipeline.
+
+## Atualização de execução (17/09/2026)
+
+A descoberta cobre 2008–2026, incluindo repositórios antigos que receberam o tópico posteriormente. Falhas HTTP, respostas incompletas, paginação insuficiente e partições ainda acima de 1.000 interrompem a coleta sem marcar a janela como concluída. O filtro de atividade usa a data de `count.json` como referência fixa quando disponível; assim, refazer `filter` sobre a mesma execução não desloca o corte de três anos. A apresentação e as evidências da execução estão no README da raiz.
+
+## Continuação em 20/09/2026
+
+Os arquivos da apresentação de 17/09 permanecem em `runs/20260917_apresentacao`. A continuação usa `runs/20260920_java`, copiado com a população e os checkpoints anteriores. A contagem inicial e o corte de atividade foram preservados; os dados são coletados em datas diferentes, não constituindo um snapshot atômico do GitHub.

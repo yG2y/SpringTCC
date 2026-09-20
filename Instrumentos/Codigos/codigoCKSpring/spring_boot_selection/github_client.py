@@ -9,7 +9,8 @@ from .util import log
 
 GRAPHQL_URL = "https://api.github.com/graphql"
 REST_URL = "https://api.github.com"
-SEARCH_SLEEP_S = 2.1
+# A cota e controlada pelos headers e pelo backoff abaixo.
+SEARCH_SLEEP_S = 0.1
 CORE_SLEEP_S = 0.75
 API_VERSION = "2022-11-28"
 

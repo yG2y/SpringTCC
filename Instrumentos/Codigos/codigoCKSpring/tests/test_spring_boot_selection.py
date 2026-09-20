@@ -27,7 +27,7 @@ def repo(**overrides):
         "disabled": False,
         "default_branch": "main",
         "size_kb": 120,
-        "language": "Kotlin",
+        "language": "Java",
         "stargazers_count": 10,
         "forks_count": 1,
         "topics": "spring-boot",
@@ -113,6 +113,7 @@ class FilterPipelineTests(unittest.TestCase):
             result = run_filters(rows, self.config, Path(tmp), collection_time=self.now)
         attrition = {row["stage"]: row for row in result["attrition"]}
         self.assertEqual(attrition["universe"]["input_count"], 11)
+        self.assertEqual(attrition["remove_primary_language"]["excluded_count"], 1)
         self.assertEqual(attrition["remove_forks"]["excluded_count"], 1)
         self.assertEqual(attrition["remove_mirrors"]["excluded_count"], 1)
         self.assertEqual(attrition["remove_archived"]["excluded_count"], 1)
@@ -122,9 +123,29 @@ class FilterPipelineTests(unittest.TestCase):
         self.assertEqual(attrition["remove_empty"]["excluded_count"], 1)
         self.assertEqual(attrition["remove_non_software"]["excluded_count"], 1)
         names = {row["full_name"] for row in result["eligible"]}
-        self.assertEqual(names, {"a/prod", "org/spring-boot-demo", "org/kotlin-api"})
+        self.assertEqual(names, {"a/prod", "org/spring-boot-demo"})
         self.assertEqual(result["flagged_non_software"], 1)
         self.assertIn("tutorial", result["non_software_reason_counts"])
+
+    def test_primary_language_exact_match_missing_and_alias(self):
+        rows = [repo(repository_id=1, language="Java"),
+                repo(repository_id=2, language="JavaScript"),
+                repo(repository_id=3, language=None),
+                repo(repository_id=4, language="Kotlin"),
+                repo(repository_id=5, language="java"),
+                repo(repository_id=6, language="Java", primary_language="Kotlin")]
+        with tempfile.TemporaryDirectory() as tmp:
+            result = run_filters(rows, self.config, Path(tmp), collection_time=self.now)
+        self.assertEqual({r["repository_id"] for r in result["eligible"]}, {1, 5})
+        self.assertEqual(result["attrition"][1]["excluded_count"], 4)
+        self.assertTrue(all(r["primary_language"].lower() == "java" for r in result["eligible"]))
+
+    def test_language_filter_can_be_disabled(self):
+        self.config["primary_language"] = None
+        with tempfile.TemporaryDirectory() as tmp:
+            result = run_filters([repo(language="Kotlin")], self.config, Path(tmp), collection_time=self.now)
+        self.assertEqual(len(result["eligible"]), 1)
+        self.assertNotIn("remove_primary_language", [s["stage"] for s in result["attrition"]])
 
     def test_example_in_name_is_flagged_not_excluded(self):
         auto, flagged = classify_non_software(

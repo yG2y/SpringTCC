@@ -131,8 +131,8 @@ pip install -r requirements.txt
 python select_spring_boot.py count
 python select_spring_boot.py discover
 python select_spring_boot.py filter
-python select_spring_boot.py sample --limit 50000
-python select_spring_boot.py run --limit 50000
+python select_spring_boot.py --limit 50000 sample
+python select_spring_boot.py --limit 50000 run
 python select_spring_boot.py validate --sample-size 30
 ```
 
@@ -341,3 +341,11 @@ Este script e fornecido para fins educacionais e de pesquisa.
 ## Contato
 
 Para duvidas ou sugestoes, abra uma issue no repositorio.
+
+## Continuação com linguagem principal Java (20/09/2026)
+
+A descoberta preserva o universo amplo. A primeira etapa local exige `primary_language: Java` em `spring_boot_selection/config.yaml`, usando o campo REST `language`. Os CSVs elegíveis/selecionados incluem também a coluna `primary_language`. O filtro exclui outras linguagens e valores ausentes, com contagem própria e justificativa na metodologia.
+
+```powershell
+python select_spring_boot.py --run-dir ../Artefatos/selecao_spring_boot/runs/20260920_java --limit 50000 run
+```

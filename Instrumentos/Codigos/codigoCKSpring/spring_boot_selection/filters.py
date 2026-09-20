@@ -15,6 +15,7 @@ ELIGIBLE_FIELDS = [
     "html_url",
     "description",
     "language",
+    "primary_language",
     "stargazers_count",
     "forks_count",
     "created_at",
@@ -69,6 +70,7 @@ def exclusion_record(
             "pushed_at": row.get("pushed_at"),
             "created_at": row.get("created_at"),
             "language": row.get("language"),
+            "primary_language": row.get("primary_language", row.get("language")),
             "topics": row.get("topics"),
             "is_fork": row.get("is_fork"),
             "archived": row.get("archived"),
@@ -188,7 +190,7 @@ def run_filters(
     excluded_dir = run_dir / "excluded"
     excluded_dir.mkdir(parents=True, exist_ok=True)
     flagged_rows: List[Dict[str, Any]] = []
-    current = list(rows)
+    current = [dict(row, primary_language=row.get("primary_language", row.get("language")) or "") for row in rows]
 
     def record_stage(stage: str, before: int, excluded_n: int) -> None:
         after = before - excluded_n
@@ -206,6 +208,13 @@ def run_filters(
     record_stage("universe", len(current), 0)
 
     stages: List[Tuple[str, str, Callable[[Dict[str, Any]], bool], str]] = []
+    required_language = str(config.get("primary_language") or "").strip()
+    if required_language:
+        stages.append((
+            "remove_primary_language", "primary_language_not_" + required_language.lower(),
+            lambda r: str(r.get("primary_language") or "").strip().casefold() != required_language.casefold(),
+            "primary_language.jsonl",
+        ))
     if exclude_cfg.get("forks", True):
         stages.append(("remove_forks", "is_fork", lambda r: as_bool(r.get("is_fork")), "forks.jsonl"))
     if exclude_cfg.get("mirrors", True):

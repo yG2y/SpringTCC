@@ -1,0 +1,59 @@
+{
+  "collection_started_at": "2026-09-17T16:36:06Z",
+  "collection_finished_at": "2026-09-20T17:41:59Z",
+  "collection_date": "2026-09-17",
+  "query": "topic:spring-boot",
+  "include_forks_in_search": true,
+  "filters": {
+    "forks": true,
+    "mirrors": true,
+    "archived": true,
+    "disabled": true,
+    "templates": true,
+    "empty": true,
+    "inactive": true,
+    "non_software": true
+  },
+  "primary_language": "Java",
+  "primary_language_source": "GitHub REST language",
+  "activity": {
+    "max_inactive_years": 3,
+    "field": "pushed_at"
+  },
+  "cutoff_date": "2023-09-17T16:36:06Z",
+  "sorting": [
+    "stargazers_count desc",
+    "pushed_at desc",
+    "repository_id asc"
+  ],
+  "target_n": 50000,
+  "github_api_version": "2022-11-28",
+  "git_commit": "6da1be59923b2c661dc41d618a27d557333ba207",
+  "command": "run",
+  "api_total_count": 95666,
+  "collected_unique_count": 95894,
+  "eligible_count": 38456,
+  "selected_count": 38456,
+  "count_snapshot": {
+    "query": "topic:spring-boot fork:true",
+    "collected_at": "2026-09-17T16:36:06Z",
+    "total_count": 95666,
+    "incomplete_results": false,
+    "api_version": "2022-11-28",
+    "note": "total_count e a estimativa da Search API para a query inteira, antes de qualquer filtro local. Pode divergir da soma das particoes."
+  },
+  "collection_status": "completed_partition_traversal",
+  "resumed_at": "2026-09-20T16:54:10Z",
+  "count_completion_snapshot": {
+    "query": "topic:spring-boot fork:true",
+    "collected_at": "2026-09-20T17:42:57Z",
+    "total_count": 95972,
+    "incomplete_results": false,
+    "api_version": "2022-11-28",
+    "note": "total_count e a estimativa da Search API para a query inteira, antes de qualquer filtro local. Pode divergir da soma das particoes."
+  },
+  "manual_review_pending_count": 2507,
+  "total_excluded": 57438,
+  "resumed_from": "20260917_apresentacao",
+  "audit_status": "passed"
+}

@@ -181,9 +181,10 @@ def search_page(
         search=True,
     )
     if response.status_code != 200:
-        log(f"search HTTP {response.status_code}: {response.text[:200]}")
-        return 0, [], False
+        raise RuntimeError(f"Search HTTP {response.status_code}; janela nao concluida. Retome a mesma execucao.")
     payload = response.json()
+    if payload.get("incomplete_results"):
+        raise RuntimeError("Search retornou resultados incompletos; retome a mesma execucao.")
     return (
         int(payload.get("total_count") or 0),
         payload.get("items") or [],
@@ -286,6 +287,8 @@ def collect_range(
             page += 1
             if len(batch) < SEARCH_PER_PAGE:
                 break
+        if fetched < cap:
+            raise RuntimeError(f"Paginacao incompleta: {fetched}/{cap}; janela nao concluida.")
         append_query_log(
             query_log,
             {
@@ -310,6 +313,7 @@ def collect_range(
         log(f"    {total} > 1000; partindo {created}")
         for left, right in parts:
             collect_range(client, store, checkpoint, query_log, config, left, right, stars)
+        checkpoint.mark(key)
         return
 
     if stars is None:
@@ -321,9 +325,7 @@ def collect_range(
         checkpoint.mark(key)
         return
 
-    log(f"    [!] {query} ainda > 1000; recuperando o teto de 1000")
-    drain(items, SEARCH_HARD_CAP)
-    checkpoint.mark(key)
+    raise RuntimeError(f"Particao ainda excede 1000 resultados: {query}. Refine a particao antes de continuar.")
 
 
 def discover_population(
