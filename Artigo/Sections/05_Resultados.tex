@@ -1,0 +1,118 @@
+\section{Resultados Parciais}
+\label{sec:resultados}
+
+Esta seção apresenta os resultados das etapas de coleta e experimentação já concluídas: a filtragem da amostra de repositórios Java Spring Boot, a distribuição temporal por épocas históricas e o piloto de identificação de adoção de agentes de IA. Os resultados aqui reportados correspondem às fases preparatórias que antecedem a extração completa das métricas CK e a análise estatística principal, previstas para o TCC~II.
+
+\subsection{Coleta e filtragem da amostra}
+\label{subsec:res-coleta}
+
+A coleta foi conduzida em Python com a API REST do GitHub, com paginação por janelas anuais de \texttt{createdAt} de 2008 a 2026 e controle de \emph{rate limit}. Em 17 de setembro de 2026 às 16:36 UTC, a API reportou 95.666 candidatos; ao término da coleta, em 20 de setembro de 2026 às 17:42 UTC, o total era de 95.972. Foram efetivamente coletados 95.894 registros únicos; a diferença de 78 em relação à consulta final reflete variação temporal do índice e da paginação da API, não uma exclusão por critério.
+
+A Tabela~\ref{tab:atrito-filtros} detalha o atrito sequencial dos filtros aplicados sobre os 95.894 registros coletados. Cada repositório é contabilizado uma única vez no filtro que o rejeitou primeiro.
+
+\begin{table}[H]
+    \centering
+    \caption{Atrito dos filtros aplicados à amostra de repositórios Java Spring Boot.}
+    \label{tab:atrito-filtros}
+    \footnotesize
+    \renewcommand{\arraystretch}{1.2}
+    \begin{tabularx}{\linewidth}{|>{\raggedright\arraybackslash}X|r|r|r|}
+        \hline
+        \textbf{Filtro} & \textbf{Antes} & \textbf{Excluídos} & \textbf{Restantes} \\
+        \hline
+        Linguagem principal diferente de Java ou ausente & 95.894 & 23.298 & 72.596 \\
+        \hline
+        Forks (\texttt{is\_fork = true}) & 72.596 & 1.089 & 71.507 \\
+        \hline
+        Espelhos (\texttt{is\_mirror = true}) & 71.507 & 0 & 71.507 \\
+        \hline
+        Arquivados (\texttt{archived = true}) & 71.507 & 1.607 & 69.900 \\
+        \hline
+        Desabilitados (\texttt{disabled = true}) & 69.900 & 0 & 69.900 \\
+        \hline
+        Sem \emph{push} desde o corte ou sem data válida & 69.900 & 30.856 & 39.044 \\
+        \hline
+        Templates (\texttt{is\_template = true}) & 39.044 & 238 & 38.806 \\
+        \hline
+        Vazios ou sem \emph{branch} padrão & 38.806 & 3 & 38.803 \\
+        \hline
+        Materiais educacionais ou listas identificados & 38.803 & 347 & 38.456 \\
+        \hline
+        \textbf{Total elegível e selecionado} & — & \textbf{57.438} & \textbf{38.456} \\
+        \hline
+    \end{tabularx}
+    \vspace{4pt}
+    {\footnotesize Fonte: Elaborada pelos autores. Artefato: \texttt{runs/20260920\_java/filter\_attrition.csv}. A soma 57.438 + 38.456 = 95.894 foi verificada por auditoria automatizada com 13 verificações de integridade, todas aprovadas.}
+\end{table}
+
+Os 38.456 repositórios elegíveis foram selecionados em sua totalidade, pois não atingiram o teto operacional de 50.000 estabelecido na metodologia. Os metadados coletados incluem identificador, nome completo, URL, descrição, tópicos, estrelas, número de forks, datas de criação, atualização e último \emph{push}, tamanho estimado em KB, \emph{branch} padrão, licença e indicadores booleanos de \emph{fork}, template, arquivado e desabilitado.
+
+\subsection{Distribuição da amostra por épocas históricas}
+\label{subsec:res-epocas}
+
+Cada repositório foi associado a exatamente uma época com base no campo \texttt{createdAt} (UTC). A Tabela~\ref{tab:epocas} apresenta os limites operacionais das quatro coortes e os marcos históricos que as caracterizam.
+
+\begin{table}[H]
+    \centering
+    \caption{Épocas históricas: delimitação operacional das coortes no GitHub.}
+    \label{tab:epocas}
+    \footnotesize
+    \renewcommand{\arraystretch}{1.2}
+    \begin{tabularx}{\linewidth}{|c|c|c|>{\raggedright\arraybackslash}p{0.18\linewidth}|>{\raggedright\arraybackslash}X|}
+        \hline
+        \textbf{Época} & \textbf{Início} & \textbf{Fim} & \textbf{Denominação} & \textbf{Marcos representativos} \\
+        \hline
+        E1 & 01/01/2009 & 31/12/2013 & Colaboração emergente &
+        Consolidação inicial do GitHub e do ecossistema \emph{open source} Java. \\
+        \hline
+        E2 & 01/01/2014 & 31/12/2017 & Estruturação e \emph{frameworks} &
+        Popularização do Spring Boot; difusão de Docker e CI. \\
+        \hline
+        E3 & 01/01/2018 & 31/12/2021 & Maturidade colaborativa &
+        Consolidação de práticas de qualidade e revisão por pares. \\
+        \hline
+        E4 & 01/01/2022 & data da coleta & Era da IA assistida &
+        GitHub Copilot, Claude Code, Cursor, ChatGPT e adoção de IA generativa. \\
+        \hline
+    \end{tabularx}
+    \vspace{4pt}
+    {\footnotesize Fonte: Elaborada pelos autores. Critério de alocação: campo \texttt{createdAt} do repositório no GitHub (limites inclusivos).}
+\end{table}
+
+A concentração de repositórios na coorte E4 (criados a partir de 2022) era esperada dada a aceleração do uso do GitHub no período recente e o recorte temporal da coleta. Esse desequilíbrio será controlado na análise estatística por estratificação e testes não paramétricos, conforme descrito na metodologia.
+
+\subsection{Piloto de identificação de agentes de IA}
+\label{subsec:res-piloto-ia}
+
+O \emph{script} \texttt{detectar\_agentes\_ia.py} foi executado sobre os 50 repositórios mais populares da amostra (por número de estrelas), como experimento piloto para validar a metodologia de dois níveis descrita na Seção~\ref{subsec:identificacao-ia}. A Tabela~\ref{tab:piloto-ia} consolida os agentes identificados e o nível de detecção correspondente.
+
+\begin{table}[H]
+    \centering
+    \caption{Agentes de IA identificados no piloto com os 50 repositórios mais populares.}
+    \label{tab:piloto-ia}
+    \footnotesize
+    \renewcommand{\arraystretch}{1.2}
+    \begin{tabularx}{\linewidth}{|>{\raggedright\arraybackslash}X|c|c|}
+        \hline
+        \textbf{Agente identificado} & \textbf{Repositórios} & \textbf{Nível de detecção} \\
+        \hline
+        Claude Code & 8 & Nível~1 (arquivos de configuração) \\
+        \hline
+        GitHub Copilot & 5 & Nível~1 (arquivos de configuração) \\
+        \hline
+        Codex/OpenAI (\texttt{AGENTS.md}) & 5 & Nível~1 (arquivos de configuração) \\
+        \hline
+        Adoção silenciosa (referência no \texttt{.gitignore}) & 2 & Nível~1 (extensão via \texttt{.gitignore}) \\
+        \hline
+        Outros agentes (\emph{trailer} de commit) & 2 & Nível~2 (commits recentes) \\
+        \hline
+        \textbf{Total com evidência de IA} & \textbf{16} & — \\
+        \hline
+    \end{tabularx}
+    \vspace{4pt}
+    {\footnotesize Fonte: Elaborada pelos autores. Artefato: \texttt{resultado\_deteccao\_ia.csv}. Nota: dois repositórios (\texttt{springdoc/springdoc-openapi} e \texttt{metasfresh/metasfresh}) foram classificados como adotantes silenciosos por referenciarem diretórios de configuração no \texttt{.gitignore} sem incluí-los no repositório.}
+\end{table}
+
+Dos 50 repositórios analisados, 16 (32,0\%) apresentaram evidência verificável de adoção de agentes de IA: 14 detectados no Nível~1 (arquivos de configuração) e 2 no Nível~2 (commits recentes). A taxa de 32\% no subconjunto mais popular é consistente com o perfil de projetos maduros com grande base de colaboradores, para os quais a adoção de ferramentas de produtividade é mais frequente. Esse resultado valida a metodologia de dois níveis e confirma que a amostra contém projetos com evidência verificável de uso de IA — condição necessária para que o contraste entre código produzido por desenvolvedores (E3) e código assistido por IA (E4) seja empiricamente testável.
+
+O resultado é particularmente relevante para as questões de pesquisa Q3 e Q4 (Tabela~\ref{tab:gqm-objetivos}): dado que o Spring Boot gerencia o acoplamento vertical por meio de injeção de dependências, as métricas mais diretamente influenciadas pelo estilo de programação do desenvolvedor ou da IA são \textbf{WMC} (peso computacional dos métodos), \textbf{LCOM\_HS} (coesão interna das classes) e \textbf{CBO horizontal} (acoplamento entre pacotes de domínio não intermediados pelo \emph{framework}). O piloto estabelece a linha de base para o experimento principal, que medirá essas métricas em escala sobre os 38.456 repositórios selecionados.

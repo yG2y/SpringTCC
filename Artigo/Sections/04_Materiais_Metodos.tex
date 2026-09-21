@@ -7,30 +7,11 @@ Importa reconhecer uma limitação do desenho por coortes: repositórios de épo
 
 A Figura~\ref{fig:metodologia} resume o fluxo em três etapas: coleta dos repositórios; extração das métricas com a ferramenta CK; e consolidação para análise estatística e visualização.
 
-\begin{figure}[H]
+\begin{figure}
     \centering
-    \begin{tikzpicture}[
-        font=\small,
-        box/.style={
-            draw,
-            rounded corners=3pt,
-            align=center,
-            inner sep=7pt,
-            text width=0.27\linewidth,
-            minimum height=2.6cm,
-            thick
-        },
-        arr/.style={-{Latex}, thick, shorten >=2pt, shorten <=2pt}
-    ]
-        \node[box] (coleta) {\textbf{1. Coleta}\\GitHub GraphQL\\filtros Java/Spring Boot\\coortes E1--E4};
-        \node[box, right=0.45cm of coleta] (extracao) {\textbf{2. Extração}\\Ferramenta CK\\CBO, RFC, WMC,\\DIT, NOC, LCOM\_HS, LOC};
-        \node[box, right=0.45cm of extracao] (analise) {\textbf{3. Análise}\\ETL no Power BI\\testes estatísticos\\visualização};
-        \draw[arr] (coleta) -- (extracao);
-        \draw[arr] (extracao) -- (analise);
-    \end{tikzpicture}
-    \caption{Visão geral da metodologia: coleta, extração de métricas e análise.}
+    \includegraphics[width=1\linewidth]{imgs/Metodologia.png}
+    \caption{Visao geral da metodologia adotada no estudo }
     \label{fig:metodologia}
-    {\footnotesize Fonte: Elaborada pelos autores.}
 \end{figure}
 
 \subsection{Ambiente e instrumentos}
@@ -41,36 +22,22 @@ A coleta será realizada em Python, com a \emph{GitHub GraphQL API}, paginação
 \subsection{Amostragem e procedimentos}
 \label{subsec:amostragem}
 
-A amostra será formada por repositórios públicos escritos principalmente em Java e com uso explícito de Spring Boot (dependências \texttt{spring-boot-starter} em \texttt{pom.xml} ou \texttt{build.gradle}). Serão considerados apenas projetos não forkeados, com no mínimo 10 estrelas, 2.000 linhas de código efetivas e 10 arquivos Java. Esses critérios reduzem tutoriais triviais e repositórios sem base de código adequada para análise estrutural. Será aplicado um \emph{delay} de mineração de 12 meses \cite{kalliamvakou:16}, para evitar que repositórios muito recentes sejam tratados como representativos de uma época ainda em consolidação. Pretende-se coletar 500 repositórios por época, totalizando 2.000 projetos. Os metadados incluem identificador, URL, estrelas, \texttt{createdAt}, \texttt{updatedAt}, estimativa de tamanho, linguagens e a versão do Spring Boot declarada no arquivo de \emph{build}.
+A amostra é formada por repositórios públicos escritos principalmente em Java e com evidência de uso de Spring Boot indicada pelo tópico \texttt{spring-boot} na API de busca do GitHub. Foram considerados apenas projetos não forkeados, não arquivados, não desabilitados, com pelo menos um \emph{commit} de \emph{push} nos três anos anteriores à data de referência da coleta e que não correspondiam a materiais educacionais ou repositórios sem conteúdo. A linguagem principal Java foi exigida como filtro local sobre o campo \texttt{language} da API REST, de modo a concentrar a análise em projetos cuja linguagem predominante é Java. Repositórios sem atividade de \emph{push} desde 17 de setembro de 2023 --- corte fixado no momento da primeira consulta de contagem --- foram excluídos pelo filtro de atividade recente.
 
-Cada repositório será associado a exatamente uma época com base em \texttt{createdAt} (UTC), conforme a Tabela~\ref{tab:epocas}. Após a seleção, os repositórios elegíveis serão clonados e analisados estaticamente pela CK. Os resultados serão armazenados em CSV com identificação do repositório e da época. Caso ocorram falhas de clonagem ou de extração, o projeto será substituído por outro da mesma época que respeite os mesmos critérios. Os CSV serão consolidados em um processo de ETL no Power BI, restrito a limpeza, modelagem dimensional e visualização exploratória. As agregações por repositório serão exportadas para CSV/Parquet que alimentarão a análise estatística formal. O objetivo não é acompanhar a evolução completa de cada repositório, e sim construir um retrato da coorte a partir de projetos criados na janela histórica correspondente.
+A coleta foi conduzida em Python com a API REST do GitHub, com paginação por janelas anuais de \texttt{createdAt} de 2008 a 2026 e controle de \emph{rate limit}. A janela temporal deslizante foi adotada para contornar o limite de 1.000 resultados por consulta imposto pela API de busca do GitHub. A consulta-base utilizada foi \texttt{topic:spring-boot fork:true}, que inclui forks deliberadamente para que a exclusão seja quantificada após a coleta. Os filtros aplicados sequencialmente sobre os registros coletados e seus quantitativos resultantes são apresentados na Seção~\ref{subsec:res-coleta} (Tabela~\ref{tab:atrito-filtros}). Os metadados coletados incluem identificador, nome completo, URL, descrição, tópicos, estrelas, número de forks, datas de criação, atualização e último \emph{push}, tamanho estimado em KB, \emph{branch} padrão, licença e indicadores booleanos de \emph{fork}, template, arquivado e desabilitado. Cada repositório será associado a exatamente uma época com base em \texttt{createdAt} (UTC), conforme os critérios da Tabela~\ref{tab:epocas} apresentados na Seção~\ref{subsec:res-epocas}.
 
-\begin{table}[H]
-    \centering
-    \caption{Épocas históricas: delimitação operacional das coortes no GitHub.}
-    \label{tab:epocas}
-    \footnotesize
-    \renewcommand{\arraystretch}{1.2}
-    \begin{tabularx}{\linewidth}{|c|c|c|>{\raggedright\arraybackslash}p{0.18\linewidth}|>{\raggedright\arraybackslash}X|}
-        \hline
-        \textbf{Época} & \textbf{Início} & \textbf{Fim} & \textbf{Denominação} & \textbf{Marcos representativos} \\
-        \hline
-        E1 & 01/01/2009 & 31/12/2013 & Colaboração emergente &
-        Consolidação inicial do GitHub e do ecossistema \emph{open source} Java. \\
-        \hline
-        E2 & 01/01/2014 & 31/12/2017 & Estruturação e \emph{frameworks} &
-        Popularização do Spring Boot; difusão de Docker e CI. \\
-        \hline
-        E3 & 01/01/2018 & 31/12/2021 & Maturidade colaborativa &
-        Consolidação de práticas de qualidade e revisão por pares. \\
-        \hline
-        E4 & 01/01/2022 & data da coleta & Era da IA assistida &
-        GitHub Copilot, Claude Code, Cursor, ChatGPT e adoção de IA generativa. \\
-        \hline
-    \end{tabularx}
-    \vspace{4pt}
-    {\footnotesize Fonte: Elaborada pelos autores. Critério de alocação: campo \texttt{createdAt} do repositório no GitHub (limites inclusivos).}
-\end{table}
+\subsection{Identificação de adoção de agentes de IA}
+\label{subsec:identificacao-ia}
+
+Uma vez concluída a amostragem, aplica-se uma etapa de identificação de repositórios que apresentam evidência de uso de agentes de IA no desenvolvimento. O objetivo é caracterizar a presença de adoção de IA generativa na amostra, em especial na coorte E4 (2022--atual), enriquecendo o contraste entre épocas com um dado binário de confirmação: se o repositório tem ou não evidência verificável de agente de IA no ambiente de desenvolvimento.
+
+A metodologia adotada é a proposta por \cite{robbes:26}, adaptada ao contexto deste estudo. A identificação opera em dois níveis, acionados em sequência do mais eficiente ao mais custoso:
+
+\textbf{Nível~1 --- Arquivos de configuração} (\emph{file-level traces}): para cada repositório, recupera-se a árvore de arquivos da \emph{branch} padrão com uma única chamada à API REST do GitHub. Verifica-se a presença de arquivos e diretórios que só existem quando o desenvolvedor configura deliberadamente um agente de IA: \texttt{CLAUDE.md} e \texttt{.claude/} (Claude Code), \texttt{.cursorrules} e \texttt{.cursor/rules} (Cursor), \texttt{AGENTS.md} e \texttt{.codex/} (Codex/OpenAI), \texttt{.github/copilot-instructions.md} (GitHub Copilot), \texttt{.windsurfrules} (Windsurf), \texttt{.aider.conf.yml} (Aider), entre outros, totalizando 14 agentes e mais de 40 heurísticas de caminhos. Adicionalmente, inspeciona-se o \texttt{.gitignore} do repositório: a presença de entradas como \texttt{.cursor/} ou \texttt{CLAUDE.md} nesse arquivo indica adoção silenciosa --- o desenvolvedor usa o agente mas opta por não versionar os arquivos de configuração.
+
+\textbf{Nível~2 --- Commits recentes} (\emph{commit-level traces}): acionado apenas quando o Nível~1 não produz evidência. Recuperam-se os últimos $N$ commits da \emph{branch} principal e inspecionam-se dois sinais: (i)~a presença de trailers \texttt{Co-authored-by} nas mensagens de commit com domínios e identificadores conhecidos de agentes (por exemplo, \texttt{github-copilot}, \texttt{claude@anthropic}, \texttt{cursor@anysphere}); e (ii)~o campo \texttt{login} do autor do commit com padrões de identidade de bot (\texttt{github-copilot[bot]}, \texttt{coderabbitai[bot]}, \texttt{sweep[bot]}).
+
+Um repositório é classificado como positivo para adoção de agente de IA se ao menos uma evidência for encontrada em qualquer dos dois níveis. O resultado registra o nível de detecção, o nome do agente identificado e o arquivo ou \emph{trailer} específico que constituiu a evidência, de modo a tornar a classificação auditável e reproduzível.
 
 \subsection{Métricas de avaliação}
 \label{subsec:metricas-avaliacao}
@@ -119,12 +86,18 @@ A Tabela~\ref{tab:gqm-objetivos} unifica objetivos específicos, questões de pe
 
 Além do filtro mínimo de 2.000 LOC, serão reportadas as distribuições de LOC e de versão do Spring Boot por época. Antes das comparações principais, aplicar-se-á o teste de Kruskal--Wallis sobre LOC entre épocas. Se diferenças forem detectadas, as análises estruturais serão complementadas por estratificação por faixas de LOC e por análise de sensibilidade com métricas normalizadas (razões por classe ou por KLOC). A versão do Spring Boot será registrada por repositório e tratada como variável confundidora na discussão.
 
-Para cada métrica agregada, aplicar-se-á o teste de Kruskal--Wallis às quatro épocas. Havendo significância global, seguir-se-á o teste de Dunn com correção de Bonferroni para comparações par a par. Para a hipótese da Era da IA, empregar-se-á o teste de Mann--Whitney entre E3 e E4. A correção para comparações múltiplas adotará $\alpha_{\mathrm{adj}} = \alpha / m$, com $\alpha = 0{,}05$ e $m$ igual ao número de testes da família: $m = 7$ no contraste E3 versus E4; $m = 42$ no conjunto completo de pares de épocas após Kruskal--Wallis (seis pares vezes sete métricas). Serão reportados \emph{p-valores} ajustados, tamanho de efeito (\emph{rank-biserial} ou $\delta$ de Cliff) e intervalos descritivos (mediana e amplitude interquartil). As visualizações previstas constam do Apêndice~\ref{ap:visualizacoes}.
+Para cada métrica agregada, aplicar-se-á o teste de Kruskal--Wallis às quatro épocas. Havendo significância global, seguir-se-á o teste de Dunn com correção de Bonferroni para comparações par a par. Para a hipótese da Era da IA, empregar-se-á o teste de Mann--Whitney entre E3 e E4. A correção para comparações múltiplas adotará $\alpha_{\mathrm{adj}} = \alpha / m$, com $\alpha = 0{,}05$ e $m$ igual ao número de testes da família: $m = 7$ no contraste E3 versus E4; $m = 42$ no conjunto completo de pares de épocas após Kruskal--Wallis (seis pares vezes sete métricas). Serão reportados \emph{p-valores} ajustados, tamanho de efeito (\emph{rank-biserial} ou $\delta$ de Cliff) e intervalos descritivos (mediana e amplitude interquartil). As visualizações previstas constam do Apêndice~A.
 
 \subsection{Experimentos já realizados}
 \label{subsec:piloto}
 
-Um estudo piloto já foi executado para validar o \emph{pipeline} de extração. \emph{Scripts} em Python clonam repositórios Java públicos, invocam a CK 0.7.1 e consolidam CBO, RFC, WMC, DIT, NOC, LOC e indicadores auxiliares em CSV. O artefato \texttt{analise\_repositorios\_java.csv} reúne a análise de 520 repositórios, realizada em novembro de 2025, incluindo projetos Spring Boot de ampla adoção, como \texttt{spring-projects/spring-boot} (média de CBO 5,45; WMC 4,96; DIT 1,29) e \texttt{xkcoding/spring-boot-demo} (CBO 5,05; WMC 2,77; DIT 1,13). O piloto confirma que o ambiente (Python, Git, JVM e CK) está operacional e que as métricas previstas são extraíveis em escala. Não substitui a amostra final: os repositórios ainda não foram filtrados por dependência Spring Boot nem alocados às quatro épocas históricas. Esses recortes serão aplicados na coleta GraphQL descrita acima.
+Três experimentos foram executados para validar instrumentos e procedimentos antes da análise principal. Os resultados quantitativos obtidos em cada experimento são apresentados na Seção~\ref{sec:resultados}.
+
+\textbf{Piloto de extração CK (novembro de 2025):} \emph{scripts} em Python clonaram repositórios Java públicos, invocaram a CK 0.7.1 e consolidaram CBO, RFC, WMC, DIT, NOC, LOC e indicadores auxiliares em CSV. O artefato \texttt{analise\_repositorios\_java.csv} reúne a análise de 520 repositórios, incluindo projetos Spring Boot de ampla adoção, como \texttt{spring-projects/spring-boot} (CBO médio 5,45; WMC 4,96; DIT 1,29) e \texttt{xkcoding/spring-boot-demo} (CBO 5,05; WMC 2,77; DIT 1,13). O piloto confirma que o ambiente (Python, Git, JVM e CK) está operacional e que as métricas previstas são extraíveis em escala.
+
+\textbf{Coleta completa da amostra (setembro de 2026):} a execução do \emph{pipeline} de coleta e filtragem foi concluída em 20 de setembro de 2026. Os quantitativos de repositórios coletados, os filtros aplicados e o conjunto final selecionado são detalhados na Seção~\ref{subsec:res-coleta}.
+
+\textbf{Piloto de identificação de agentes de IA (setembro de 2026):} o \emph{script} \texttt{detectar\_agentes\_ia.py} foi executado sobre os 50 repositórios mais populares da amostra (por estrelas), aplicando a metodologia de dois níveis descrita na Subseção~\ref{subsec:identificacao-ia}. Os resultados quantitativos e a tabela de agentes identificados são apresentados na Seção~\ref{subsec:res-piloto-ia}.
 
 \subsection{Cronograma do TCC II}
 \label{subsec:cronograma}
