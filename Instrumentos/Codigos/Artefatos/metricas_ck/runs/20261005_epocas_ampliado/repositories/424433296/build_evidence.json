@@ -1,0 +1,212 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "4.0.8",
+  "spring_boot_major": "4",
+  "java_versions_declared": "${java.version};17",
+  "build_evidence": [
+    {
+      "file": "macula-boot-archetype/src/main/resources/archetype-resources/__rootArtifactId__-api/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "macula-boot-archetype/src/main/resources/archetype-resources/__rootArtifactId__-parent/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "macula-boot-archetype/src/main/resources/archetype-resources/__rootArtifactId__-parent/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "macula-boot-archetype/src/main/resources/archetype-resources/__rootArtifactId__-service1/pom.xml",
+      "artifact": "spring-boot-starter-flyway"
+    },
+    {
+      "file": "macula-boot-commons/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "macula-boot-examples/macula-example-alibaba-provider1/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "macula-boot-examples/macula-example-alibaba-provider2/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "macula-boot-examples/macula-example-tencent-provider/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "macula-boot-examples/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "macula-boot-examples/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "macula-boot-parent/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "macula-boot-parent/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "macula-boot-starters/macula-boot-starter-async/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "macula-boot-starters/macula-boot-starter-auditlog/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "macula-boot-starters/macula-boot-starter-auditlog/pom.xml",
+      "artifact": "spring-boot-webmvc-test"
+    },
+    {
+      "file": "macula-boot-starters/macula-boot-starter-cache/pom.xml",
+      "artifact": "spring-boot-starter-cache"
+    },
+    {
+      "file": "macula-boot-starters/macula-boot-starter-cloud/macula-boot-starter-cloud-alibaba-gray/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "macula-boot-starters/macula-boot-starter-cloud/macula-boot-starter-cloud-alibaba/pom.xml",
+      "artifact": "spring-boot-web-server"
+    },
+    {
+      "file": "macula-boot-starters/macula-boot-starter-cloud/macula-boot-starter-cloud-gateway/pom.xml",
+      "artifact": "spring-boot-starter-oauth2-resource-server"
+    },
+    {
+      "file": "macula-boot-starters/macula-boot-starter-crypto/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "macula-boot-starters/macula-boot-starter-idempotent/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "macula-boot-starters/macula-boot-starter-idempotent/pom.xml",
+      "artifact": "spring-boot-starter-aspectj"
+    },
+    {
+      "file": "macula-boot-starters/macula-boot-starter-jpa/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "macula-boot-starters/macula-boot-starter-kafka/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "macula-boot-starters/macula-boot-starter-kafka/pom.xml",
+      "artifact": "spring-boot-kafka"
+    },
+    {
+      "file": "macula-boot-starters/macula-boot-starter-observability/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "macula-boot-starters/macula-boot-starter-observability/pom.xml",
+      "artifact": "spring-boot-starter-opentelemetry"
+    },
+    {
+      "file": "macula-boot-starters/macula-boot-starter-observability/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "macula-boot-starters/macula-boot-starter-operationlog/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "macula-boot-starters/macula-boot-starter-operationlog/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "macula-boot-starters/macula-boot-starter-operationlog/pom.xml",
+      "artifact": "spring-boot-starter-aspectj"
+    },
+    {
+      "file": "macula-boot-starters/macula-boot-starter-oss/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "macula-boot-starters/macula-boot-starter-oss/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "macula-boot-starters/macula-boot-starter-redis/pom.xml",
+      "artifact": "spring-boot-starter-data-redis-reactive"
+    },
+    {
+      "file": "macula-boot-starters/macula-boot-starter-rocketmq/pom.xml",
+      "artifact": "spring-boot-starter-aspectj"
+    },
+    {
+      "file": "macula-boot-starters/macula-boot-starter-seata/pom.xml",
+      "artifact": "spring-boot-starter-aspectj"
+    },
+    {
+      "file": "macula-boot-starters/macula-boot-starter-security/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "macula-boot-starters/macula-boot-starter-security/pom.xml",
+      "artifact": "spring-boot-starter-aspectj"
+    },
+    {
+      "file": "macula-boot-starters/macula-boot-starter-security/pom.xml",
+      "artifact": "spring-boot-starter-oauth2-resource-server"
+    },
+    {
+      "file": "macula-boot-starters/macula-boot-starter-sender/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "macula-boot-starters/macula-boot-starter-springdoc/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "macula-boot-starters/macula-boot-starter-springdoc/pom.xml",
+      "artifact": "spring-boot-webmvc-test"
+    },
+    {
+      "file": "macula-boot-starters/macula-boot-starter-springretry/pom.xml",
+      "artifact": "spring-boot-starter-aspectj"
+    },
+    {
+      "file": "macula-boot-starters/macula-boot-starter-task/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "macula-boot-starters/macula-boot-starter-tinyid/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "macula-boot-starters/macula-boot-starter-web/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "macula-boot-starters/macula-boot-starter-web/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "macula-boot-starters/macula-boot-starter-websocket/pom.xml",
+      "artifact": "spring-boot-starter-websocket"
+    },
+    {
+      "file": "macula-boot-starters/pom.xml",
+      "artifact": "spring-boot-actuator"
+    },
+    {
+      "file": "macula-boot-starters/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "macula-boot-starters/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "e9aedde91fdd3a74bfa29807d274623ee3de0058",
+      "date": "2025-12-29T09:02:56+01:00",
+      "author": "Alessandro Falappa",
+      "email": "alex.falappa@gmail.com",
+      "message": "Merge pull request #186 from emilianbold/master\n\nAdds download counter badge"
+    },
+    {
+      "sha": "b9dfb17a01cbb8b4785140f3579a86349d5be6ce",
+      "date": "2025-10-24T09:56:28+03:00",
+      "author": "Emi",
+      "email": "emilian.bold@gmail.com",
+      "message": "Adds download counter badge"
+    },
+    {
+      "sha": "4c78c9bfd9765ed4f511039773efc3012b67be98",
+      "date": "2023-06-05T14:38:16+02:00",
+      "author": "Alessandro Falappa",
+      "email": "alex.falappa@gmail.com",
+      "message": "Merge pull request #174 from graben/patch-1\n\nFix argument passing, issue #165"
+    },
+    {
+      "sha": "048de794d584f67912dbbba515164b2b07d82e4a",
+      "date": "2021-02-02T19:59:04+01:00",
+      "author": "Benjamin Graf",
+      "email": "graben@users.noreply.github.com",
+      "message": "Update BootPanel.java\n\nFixes #165\n"
+    },
+    {
+      "sha": "4de5acaab1ccf26ec1128becff889d7c23c5d0e5",
+      "date": "2023-03-08T15:47:34+01:00",
+      "author": "Alessandro Falappa",
+      "email": "alex.falappa@gmail.com",
+      "message": "Merge pull request #182 from didiez/spring-boot-3-support\n\nadd spring-boot-3.x support"
+    },
+    {
+      "sha": "81d942f2e33802bf587a9a3eacd6e025d1a196db",
+      "date": "2023-03-08T13:43:50+01:00",
+      "author": "Diego Díez",
+      "email": "diegodiez.ddr@gmail.com",
+      "message": "add spring-boot-3.x support\n"
+    },
+    {
+      "sha": "25ce46a271c27d11fee120d14404ec169500824d",
+      "date": "2020-12-20T18:07:28+01:00",
+      "author": "Alessandro Falappa",
+      "email": "alex.falappa@gmail.com",
+      "message": "Add Spring Boot Dependencies updates deps counts\n\nFrequently used dependencies are now updated when using the Spring Boot\ndependencies pom generator."
+    },
+    {
+      "sha": "b2ec2ab1d0c50d4a38109fbd0e2910181da91fce",
+      "date": "2020-12-20T18:05:39+01:00",
+      "author": "Alessandro Falappa",
+      "email": "alex.falappa@gmail.com",
+      "message": "Fix optional dependencies generation\n\nThe dependencies marked as 'annotationProcessor' scope in metadata are\nnow correctly added with <optional> true.\n\nFixes #172"
+    },
+    {
+      "sha": "b48eaaa2e3c947da12316fd28da3f51e355a9793",
+      "date": "2020-12-08T18:08:15+01:00",
+      "author": "Alessandro Falappa",
+      "email": "alex.falappa@gmail.com",
+      "message": "Upgraded Boot version in basic project"
+    },
+    {
+      "sha": "77490e48e02225e1625c61fbf7422ac185ce1f42",
+      "date": "2020-12-08T18:05:33+01:00",
+      "author": "Alessandro Falappa",
+      "email": "alex.falappa@gmail.com",
+      "message": "Fix project evaluation and caching in icon annotator\n\nReverted last modification and revised caching logic."
+    },
+    {
+      "sha": "a7827c83a376a189470a3037d2eb5e5ea19e5ebf",
+      "date": "2020-12-06T17:15:27+01:00",
+      "author": "Alessandro Falappa",
+      "email": "alex.falappa@gmail.com",
+      "message": "Fix project evaluation in icon annotator\n\nAlso some other cosmetic renaming/rearranging"
+    },
+    {
+      "sha": "14331d29c475c9d861e2dd172d41b86bb67b8aad",
+      "date": "2020-11-30T10:45:21+01:00",
+      "author": "Alessandro Falappa",
+      "email": "alex.falappa@gmail.com",
+      "message": "Updated CHANGELOG"
+    },
+    {
+      "sha": "ceb73b6dfc84778de08abaa9b7139eb1e3c4dea6",
+      "date": "2020-11-30T10:34:50+01:00",
+      "author": "Alessandro Falappa",
+      "email": "alex.falappa@gmail.com",
+      "message": "Polished Diego Díez Ricondo (didiez) contributions"
+    },
+    {
+      "sha": "6192c370e2261d3714e5e5a016cc0e53e904802c",
+      "date": "2020-11-30T10:03:05+01:00",
+      "author": "Alessandro Falappa",
+      "email": "alex.falappa@gmail.com",
+      "message": "Merge branch 'improved-spring-boot-version-detection-v3.2'\n\n"
+    },
+    {
+      "sha": "aab513aaf0ee50118a0bb438136d1654995df915",
+      "date": "2020-11-30T10:02:52+01:00",
+      "author": "Alessandro Falappa",
+      "email": "alex.falappa@gmail.com",
+      "message": "Merge branch 'fix-icon-annotator-spring-boot-detection'\n\n"
+    },
+    {
+      "sha": "666a89c7dac89a1db4e961b675f3c3226220663d",
+      "date": "2020-11-30T10:02:35+01:00",
+      "author": "Alessandro Falappa",
+      "email": "alex.falappa@gmail.com",
+      "message": "Merge branch 'fix-npe-parent-multimodule'\n\n"
+    },
+    {
+      "sha": "fa4bdd98057e90e6e100dce3036fcb4ace76b72f",
+      "date": "2020-11-23T20:30:06+01:00",
+      "author": "didiez",
+      "email": "diegodiez.ddr@gmail.com",
+      "message": "Logged expanded UriTemplate with bootVersion"
+    },
+    {
+      "sha": "a7d7a0641423598435c2e0e38353dd2dcac568c0",
+      "date": "2020-11-23T20:28:31+01:00",
+      "author": "didiez",
+      "email": "diegodiez.ddr@gmail.com",
+      "message": "Fixed spring-boot version detection when generating spring-boot dependencies"
+    },
+    {
+      "sha": "c6d65ee6d6f0713d1670c72afb63c6d7899fbfab",
+      "date": "2020-11-16T10:45:50+01:00",
+      "author": "didiez",
+      "email": "diegodiez.ddr@gmail.com",
+      "message": "Fixed spring-boot detection mechanism when adding spring boot badge (icon) to project.\nThere is still an (small) issue: once the project is detected as spring-boot is not evaluated anymore until netbeans restart. Behaviour not changed for performance reasons."
+    },
+    {
+      "sha": "c2d2c10e56c91255d6e57396880cfac33c911a50",
+      "date": "2020-11-16T10:15:57+01:00",
+      "author": "didiez",
+      "email": "diegodiez.ddr@gmail.com",
+      "message": "Changed spring-boot detection mechanism to add \"Spring Boot\" option en properties panel\n\nFixes #167"
+    },
+    {
+      "sha": "75f4e407e620e0033e2875a543c9b2355d1b05c1",
+      "date": "2020-11-16T08:57:28+01:00",
+      "author": "didiez",
+      "email": "diegodiez.ddr@gmail.com",
+      "message": "Improved spring-boot version detection, searching for the effective version of the spring-boot-starter artifact.\nRearrange code in spring boot service to add always a pom change listener (refresh spring-boot version, adjust nbactions, etc.)\nMinor performance improvement when getting spring-boot version.\nAdded check to prevent overwrite nbactions.xml if it is not necessary."
+    },
+    {
+      "sha": "b62a6eccfc3651136b49aed223c0fdb280f34203",
+      "date": "2020-10-16T10:09:31+02:00",
+      "author": "Alessandro Falappa",
+      "email": "alex.falappa@gmail.com",
+      "message": "Merge pull request #166 from AlexFalappa/dependabot/maven/junit-junit-4.13.1\n\nBump junit from 4.12 to 4.13.1"
+    },
+    {
+      "sha": "fdf64988421182e37dddba838491658562be2c1d",
+      "date": "2020-10-13T07:43:59Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump junit from 4.12 to 4.13.1\n\nBumps [junit](https://github.com/junit-team/junit4) from 4.12 to 4.13.1.\n- [Release notes](https://github.com/junit-team/junit4/releases)\n- [Changelog](https://github.com/junit-team/junit4/blob/main/doc/ReleaseNotes4.12.md)\n- [Commits](https://github.com/junit-team/junit4/compare/r4.12...r4.13.1)\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "2b0426a98178ab8c273fb3bf70355b5ad7a7d070",
+      "date": "2020-07-29T21:55:45+02:00",
+      "author": "Alessandro Falappa",
+      "email": "alex.falappa@gmail.com",
+      "message": "[maven-release-plugin] prepare for next development iteration\n"
+    },
+    {
+      "sha": "e8ebf3f059fb409a40681b7a880f162c31480ced",
+      "date": "2020-07-29T21:55:44+02:00",
+      "author": "Alessandro Falappa",
+      "email": "alex.falappa@gmail.com",
+      "message": "[maven-release-plugin] prepare release nb-springboot-plugin-3.1\n"
+    },
+    {
+      "sha": "e5331e9c7fa39ff0d63a5df8195663ecb3d86f1f",
+      "date": "2020-07-29T13:22:34+02:00",
+      "author": "Alessandro Falappa",
+      "email": "alex.falappa@gmail.com",
+      "message": "Support Initializr metadata v2.2.\n\nAlso fixes version range checks for enabling dependencies based on\nselected boot version.\n\nCloses #160"
+    },
+    {
+      "sha": "e0534d770f29af220a94e92b4763501a3f22d7cf",
+      "date": "2020-07-27T20:04:50+02:00",
+      "author": "Alessandro Falappa",
+      "email": "alex.falappa@gmail.com",
+      "message": "Upgraded boot version in basic project wizard.\n\nNow at 2.3.2.RELEASE"
+    },
+    {
+      "sha": "d68a93e6411aec50a338d8b67cf4878182d95eb5",
+      "date": "2020-07-27T15:44:26+02:00",
+      "author": "Alessandro Falappa",
+      "email": "alex.falappa@gmail.com",
+      "message": "Updated changelog"
+    },
+    {
+      "sha": "78c8a3cd5845665b571552e9c3863bd7a8405fd5",
+      "date": "2020-07-27T15:39:56+02:00",
+      "author": "Alessandro Falappa",
+      "email": "alex.falappa@gmail.com",
+      "message": "Upgrade of Spring Boot version.\n\nUpgraded to Spring Boot 2.3.2.RELEASE and concording Spring Framework\nand Jackson versions."
+    },
+    {
+      "sha": "1440e0648cd64038b41d94306e0ee07753d2f9a4",
+      "date": "2020-07-27T15:27:53+02:00",
+      "author": "Alessandro Falappa",
+      "email": "alex.falappa@gmail.com",
+      "message": "Merge experiment/deps-layout"
+    }
+  ],
+  "commit_sha": "e9aedde91fdd3a74bfa29807d274623ee3de0058",
+  "extracted_at": "2026-10-05T18:31:58.768570+00:00"
+}

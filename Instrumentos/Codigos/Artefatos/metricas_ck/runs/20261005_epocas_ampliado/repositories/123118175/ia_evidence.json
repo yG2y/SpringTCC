@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "e61100ad096b50da7863a9edae7cd0d23d5dc6b6",
+      "date": "2025-12-07T19:06:46+05:30",
+      "author": "Sanjay Rawat",
+      "email": "13738294+RawSanj@users.noreply.github.com",
+      "message": "Restore README.md content and structure"
+    },
+    {
+      "sha": "c07ba38ba924d36f6ecf5cf0913d9bdc1fc95e3a",
+      "date": "2025-04-29T04:21:10+05:30",
+      "author": "Sanjay Rawat",
+      "email": "13738294+RawSanj@users.noreply.github.com",
+      "message": "Fix Actuator Health config\n"
+    },
+    {
+      "sha": "a237978c8db433c1be8b93ad24b96825ff0be29f",
+      "date": "2025-04-29T04:07:35+05:30",
+      "author": "Sanjay Rawat",
+      "email": "13738294+RawSanj@users.noreply.github.com",
+      "message": "Update Actuator Config to add Info\n\nRemoved Heroku related config files since this newer versions are no longer supported to deploy on Heroku since it is FREE anymore\n"
+    },
+    {
+      "sha": "f7ef42d9b0a5cded58d2187c083144f05fbd315d",
+      "date": "2025-04-23T16:02:34+05:30",
+      "author": "Sanjay Rawat",
+      "email": "13738294+RawSanj@users.noreply.github.com",
+      "message": "Update github action runner to ubuntu-latest\n"
+    },
+    {
+      "sha": "0b8a393721473f733b95b9961bb0a65d40a08974",
+      "date": "2025-04-23T15:50:49+05:30",
+      "author": "Sanjay Rawat",
+      "email": "13738294+RawSanj@users.noreply.github.com",
+      "message": "Update maven wrapper\n"
+    },
+    {
+      "sha": "60856435ea9c1065898f9a4c17bee64aa2fff17e",
+      "date": "2025-04-23T13:30:18+05:30",
+      "author": "Sanjay Rawat",
+      "email": "13738294+RawSanj@users.noreply.github.com",
+      "message": "Remove linux/arm/v7 platform since JDK docker images aren't available for them\n"
+    },
+    {
+      "sha": "dc8a5e5b2e12f0e35920bc9398bc75b87f0f3de0",
+      "date": "2025-04-23T12:22:22+05:30",
+      "author": "Sanjay Rawat",
+      "email": "13738294+RawSanj@users.noreply.github.com",
+      "message": "Upgrade to to Spring Boot 3.4.x and Java 21\n"
+    },
+    {
+      "sha": "0048993f7ccd9fc091eb2b994af66bb7e1b4a021",
+      "date": "2023-12-23T22:20:34+05:30",
+      "author": "Sanjay Rawat",
+      "email": "13738294+RawSanj@users.noreply.github.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "5b6102c03d78ff49a93648e8b8e87605ddc9f6c2",
+      "date": "2023-12-23T21:22:58+05:30",
+      "author": "Sanjay Rawat",
+      "email": "13738294+RawSanj@users.noreply.github.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "9678c00f1d5671ac048971f99eaf8641aa3f04b1",
+      "date": "2023-12-23T21:22:14+05:30",
+      "author": "Sanjay Rawat",
+      "email": "13738294+RawSanj@users.noreply.github.com",
+      "message": "Update traefik routing and README flag\n"
+    },
+    {
+      "sha": "639bf607526737b2a1eb24155b3b8da192609763",
+      "date": "2023-12-23T18:04:08+05:30",
+      "author": "Sanjay Rawat",
+      "email": "13738294+RawSanj@users.noreply.github.com",
+      "message": "Add Platform flag in Docker Image to show JVM or NATIVE in the Web UI\n"
+    },
+    {
+      "sha": "b68cde86ca499e7d5a6fd346cf9b9872213c1c82",
+      "date": "2023-12-23T17:25:15+05:30",
+      "author": "Sanjay Rawat",
+      "email": "13738294+RawSanj@users.noreply.github.com",
+      "message": "Update docker jvm tag and readme stat flag\n"
+    },
+    {
+      "sha": "5fe3945b38fb5f72eb6eea304486cf557f1fc102",
+      "date": "2023-12-23T17:14:58+05:30",
+      "author": "Sanjay Rawat",
+      "email": "13738294+RawSanj@users.noreply.github.com",
+      "message": "Streamlined setup for Docker JVM and GraalVM Native images + code cleanup\n"
+    },
+    {
+      "sha": "78980cf19adc2a80f7272718cb65a7aa75cc9eb7",
+      "date": "2023-12-23T12:41:33+05:30",
+      "author": "Sanjay Rawat",
+      "email": "13738294+RawSanj@users.noreply.github.com",
+      "message": "Multiplatform GraalVM Native Docker Image Try #6\n"
+    },
+    {
+      "sha": "35388a7d698703d39f8a72a14bbde6e172c4c31a",
+      "date": "2023-12-23T12:29:59+05:30",
+      "author": "Sanjay Rawat",
+      "email": "13738294+RawSanj@users.noreply.github.com",
+      "message": "Multiplatform GraalVM Native Docker Image Try #5\n"
+    },
+    {
+      "sha": "57b18b229e5dbbbca3a70da0653e1ccf83416846",
+      "date": "2023-12-23T01:45:45+05:30",
+      "author": "Sanjay Rawat",
+      "email": "13738294+RawSanj@users.noreply.github.com",
+      "message": "Multiplatform GraalVM Native Docker Image Try #4\n"
+    },
+    {
+      "sha": "0ad7ec75509abd87e009979e0979e262a978a91b",
+      "date": "2023-12-23T01:32:06+05:30",
+      "author": "Sanjay Rawat",
+      "email": "13738294+RawSanj@users.noreply.github.com",
+      "message": "Multiplatform GraalVM Native Docker Image Try #3\n"
+    },
+    {
+      "sha": "297daeae47e6511985e1cf44bbcaf034254de3c5",
+      "date": "2023-12-23T01:21:42+05:30",
+      "author": "Sanjay Rawat",
+      "email": "13738294+RawSanj@users.noreply.github.com",
+      "message": "Multiplatform GraalVM Native Docker Image Try #2\n"
+    },
+    {
+      "sha": "140abac248c0e144d2d4e245a0ca46653c540176",
+      "date": "2023-12-23T01:12:07+05:30",
+      "author": "Sanjay Rawat",
+      "email": "13738294+RawSanj@users.noreply.github.com",
+      "message": "Moved Dockerfile to src/main/docker and initial setup for Multiplatform GraalVM Native Docker Image\n"
+    },
+    {
+      "sha": "1555e6598216f0f176e0e0e6f0fc1594b154029d",
+      "date": "2023-12-23T00:56:02+05:30",
+      "author": "Sanjay Rawat",
+      "email": "13738294+RawSanj@users.noreply.github.com",
+      "message": "Update Readme stats\n"
+    },
+    {
+      "sha": "84babeeab5d6a69b4b9471a9d6452648b867b9c8",
+      "date": "2023-12-23T00:50:24+05:30",
+      "author": "Sanjay Rawat",
+      "email": "13738294+RawSanj@users.noreply.github.com",
+      "message": "Update Readme stats and License\n"
+    },
+    {
+      "sha": "a5a34a2b6d9f4f9c0c9c1a4cdc00193282f05cba",
+      "date": "2023-12-23T00:33:22+05:30",
+      "author": "Sanjay Rawat",
+      "email": "13738294+RawSanj@users.noreply.github.com",
+      "message": "Update stat readme labels\n"
+    },
+    {
+      "sha": "9dc07b031db185e7d4ae25205fb077b54d086cb7",
+      "date": "2023-12-23T00:17:02+05:30",
+      "author": "Sanjay Rawat",
+      "email": "13738294+RawSanj@users.noreply.github.com",
+      "message": "Add spring-boot-actuator to enable health checks\n"
+    },
+    {
+      "sha": "28075aa94b566d52a07201c07304d993dba46ae5",
+      "date": "2023-12-22T14:24:31+05:30",
+      "author": "Sanjay Rawat",
+      "email": "13738294+RawSanj@users.noreply.github.com",
+      "message": "Clean up and Doc update\n"
+    },
+    {
+      "sha": "b4d7d39f43829cf20e510ab785b22e283907ab13",
+      "date": "2023-12-22T14:11:37+05:30",
+      "author": "Sanjay Rawat",
+      "email": "13738294+RawSanj@users.noreply.github.com",
+      "message": "Add docker image tag dynamically\n"
+    },
+    {
+      "sha": "26ed5897f9e0f7ea07319325fbc7175bef865487",
+      "date": "2023-12-22T14:10:03+05:30",
+      "author": "Sanjay Rawat",
+      "email": "13738294+RawSanj@users.noreply.github.com",
+      "message": "Add docker image tag dynamically\n"
+    },
+    {
+      "sha": "bcda3c0761b4cb0c701c2680f0530a92b0b0f19c",
+      "date": "2023-12-22T14:08:13+05:30",
+      "author": "Sanjay Rawat",
+      "email": "13738294+RawSanj@users.noreply.github.com",
+      "message": "Add docker image tag dynamically\n"
+    },
+    {
+      "sha": "bfc01a6f8c1e8b455720f060f16ff8a3ecd9273a",
+      "date": "2023-12-22T14:03:39+05:30",
+      "author": "Sanjay Rawat",
+      "email": "13738294+RawSanj@users.noreply.github.com",
+      "message": "Format file\n"
+    },
+    {
+      "sha": "58853c64fd936ab690a7131ccc9b241826dcdb9c",
+      "date": "2023-12-22T13:42:36+05:30",
+      "author": "Sanjay Rawat",
+      "email": "13738294+RawSanj@users.noreply.github.com",
+      "message": "Testing Multi-Platform Build - Try #7 - using Dockerfile\n"
+    },
+    {
+      "sha": "898c1cb6ec1300b0b52c44afc866e4b80a854fa3",
+      "date": "2023-12-22T13:40:54+05:30",
+      "author": "Sanjay Rawat",
+      "email": "13738294+RawSanj@users.noreply.github.com",
+      "message": "Testing Multi-Platform Build - Try #6 - using Dockerfile\n"
+    }
+  ],
+  "commit_sha": "e61100ad096b50da7863a9edae7cd0d23d5dc6b6",
+  "extracted_at": "2026-10-05T18:09:13.217523+00:00"
+}

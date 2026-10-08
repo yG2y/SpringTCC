@@ -1,0 +1,160 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 21,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "4aee5093293f662b09bf86d69b76431dec3f65a0",
+      "date": "2026-06-27T12:49:08+05:30",
+      "author": "Rahul Kushwaha",
+      "email": "raahullkushwaha@gmail.com",
+      "message": "security: block app startup in prod if default admin password detected\n"
+    },
+    {
+      "sha": "a86eee0bcbece8b62bc8841b153bf2d2aac7192d",
+      "date": "2026-06-27T08:22:49+05:30",
+      "author": "Rahul Kushwaha",
+      "email": "raahullkushwaha@gmail.com",
+      "message": "fix: remove global ddl-auto, set per-profile to fix test override\n"
+    },
+    {
+      "sha": "4f5b9a35ed13a2d25cfbc3a5f3e4f8a605022db0",
+      "date": "2026-06-27T08:17:39+05:30",
+      "author": "Rahul Kushwaha",
+      "email": "raahullkushwaha@gmail.com",
+      "message": "fix: use Hibernate DDL in test profile, Flyway only in prod\n"
+    },
+    {
+      "sha": "3ae81f5170e24be7ecf207af130211b7538d5661",
+      "date": "2026-06-27T08:14:42+05:30",
+      "author": "Rahul Kushwaha",
+      "email": "raahullkushwaha@gmail.com",
+      "message": "fix: configure Flyway properly for test profile with MySQL\n"
+    },
+    {
+      "sha": "d99ce6b3e8fbd1643fdd5dbfdcaf234ff0a24707",
+      "date": "2026-06-27T08:12:00+05:30",
+      "author": "Rahul Kushwaha",
+      "email": "raahullkushwaha@gmail.com",
+      "message": "fix: add test profile with MySQL for CI — isolate from dev/prod\n"
+    },
+    {
+      "sha": "82b06796209248cac68569e640d6fdac24bbd7e1",
+      "date": "2026-06-27T08:07:59+05:30",
+      "author": "Rahul Kushwaha",
+      "email": "raahullkushwaha@gmail.com",
+      "message": "fix: use prod profile with MySQL in CI for Flyway compatibility\n"
+    },
+    {
+      "sha": "bfc60bde27e458537ff52bbde1aeecaddc049579",
+      "date": "2026-06-27T07:58:15+05:30",
+      "author": "Rahul Kushwaha",
+      "email": "raahullkushwaha@gmail.com",
+      "message": "fix: make Flyway migration H2 compatible for dev/test\n"
+    },
+    {
+      "sha": "1c33b66c93b786c108c9e20723f611971cb6e29a",
+      "date": "2026-06-27T07:55:50+05:30",
+      "author": "Rahul Kushwaha",
+      "email": "raahullkushwaha@gmail.com",
+      "message": "fix: remove separate Flyway URL in dev, use datasource\n"
+    },
+    {
+      "sha": "3362c406dc998773ab1296655b2f6840fd350293",
+      "date": "2026-06-27T07:50:23+05:30",
+      "author": "Rahul Kushwaha",
+      "email": "raahullkushwaha@gmail.com",
+      "message": "fix: remove deprecated Jackson serialization config for Spring Boot 4\n"
+    },
+    {
+      "sha": "753b5eb54eefcb8b652bf64c57fc10f6ce875697",
+      "date": "2026-06-27T07:43:59+05:30",
+      "author": "Rahul Kushwaha",
+      "email": "raahullkushwaha@gmail.com",
+      "message": "Update readme\n"
+    },
+    {
+      "sha": "c9a6187b905b43be525e06183afa9329cc036322",
+      "date": "2026-06-27T07:41:37+05:30",
+      "author": "Rahul Kushwaha",
+      "email": "raahullkushwaha@gmail.com",
+      "message": "fix: update DaoAuthenticationProvider for Spring Boot 4 API change\n"
+    },
+    {
+      "sha": "34fee1c9fcfb3ebf17762e828d2b9655ded788b7",
+      "date": "2026-06-27T07:37:13+05:30",
+      "author": "Rahul Kushwaha",
+      "email": "raahullkushwaha@gmail.com",
+      "message": "chore: migrate to Spring Boot 4.0.x + Java 21\n"
+    },
+    {
+      "sha": "586d9b815bc6ae8a17a925a52d64df801560b329",
+      "date": "2026-06-26T18:09:10+05:30",
+      "author": "Rahul Kushwaha",
+      "email": "raahullkushwaha@gmail.com",
+      "message": "fix readme\n"
+    },
+    {
+      "sha": "0f1033aa51811b40dcc1fab2c1b6e978d487e4c2",
+      "date": "2026-06-26T18:05:55+05:30",
+      "author": "Rahul Kushwaha",
+      "email": "raahullkushwaha@gmail.com",
+      "message": "docs: add Two Auth Approaches section, add spring-session-jdbc dep\n"
+    },
+    {
+      "sha": "ecfb77c4355348aa1ac95ae34034e67da374ad3f",
+      "date": "2026-06-26T17:33:17+05:30",
+      "author": "Rahul Kushwaha",
+      "email": "raahullkushwaha@gmail.com",
+      "message": "fix: stateless JWT with embedded roles, HTTP-only cookie support\n"
+    },
+    {
+      "sha": "afae8a016a448416f09bde7e1627d3383e99a384",
+      "date": "2026-06-26T12:39:42+05:30",
+      "author": "Rahul Kushwaha",
+      "email": "raahullkushwaha@gmail.com",
+      "message": "fix: skip deployment\n"
+    },
+    {
+      "sha": "d6713a83036e4f48530c7f68bfc514fbcaeba72f",
+      "date": "2026-06-26T12:32:38+05:30",
+      "author": "Rahul Kushwaha",
+      "email": "raahullkushwaha@gmail.com",
+      "message": "fix: use Java 21 in Dockerfile\n"
+    },
+    {
+      "sha": "813c524c3036e6df656f7fb028b7d8e7c243747a",
+      "date": "2026-06-26T12:28:41+05:30",
+      "author": "Rahul Kushwaha",
+      "email": "raahullkushwaha@gmail.com",
+      "message": "fix: use Java 21 in CI pipeline\n"
+    },
+    {
+      "sha": "3e2e6a2ff2dd7927167d358ed0018d58df44272a",
+      "date": "2026-06-26T12:24:38+05:30",
+      "author": "Rahul Kushwaha",
+      "email": "raahullkushwaha@gmail.com",
+      "message": "fix: add jwt secret default for dev/test\n"
+    },
+    {
+      "sha": "fae913582c9100100c4e1888f203843a0abf6e15",
+      "date": "2026-06-26T11:29:02+05:30",
+      "author": "Rahul Kushwaha",
+      "email": "raahullkushwaha@gmail.com",
+      "message": "feat: initial Spring Boot Starter Kit\n"
+    },
+    {
+      "sha": "ca9ff93e3ee8b283335d25708677bbe642cd0807",
+      "date": "2026-06-26T11:23:16+05:30",
+      "author": "Rahul Kushwaha",
+      "email": "raahullkushwaha@gmail.com",
+      "message": "first commit\n"
+    }
+  ],
+  "commit_sha": "4aee5093293f662b09bf86d69b76431dec3f65a0",
+  "extracted_at": "2026-10-05T18:44:53.445695+00:00"
+}

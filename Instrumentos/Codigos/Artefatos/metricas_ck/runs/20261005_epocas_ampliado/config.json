@@ -1,0 +1,44 @@
+{
+  "created_at": "2026-10-05T17:51:09.054896+00:00",
+  "config": {
+    "protocol": "ck-comparison-v2-epochs-snapshot-aligned",
+    "input_sha256": "480b4a07d6f401e4072bf0c6148b456c2ccdb028e0996892116aa218baafbdca",
+    "population": 1520,
+    "jar": "/Users/gabrielferreiraamaral/Desktop/SpringTCC/Instrumentos/Codigos/codigoCKSpring/ck_tools/ck-8a1ef916.jar",
+    "ck_sha256": "5e7229715c77864449535b67ca2eaeac1c1e2beddbd674874461a4f860d324df",
+    "ck_version": "0.7.1-SNAPSHOT",
+    "java": "/opt/homebrew/Cellar/openjdk@17/17.0.20.1/libexec/openjdk.jdk/Contents/Home/bin/java",
+    "java_version": "openjdk version \"17.0.20.1\" 2026-08-18\nOpenJDK Runtime Environment Homebrew (build 17.0.20.1+0)\nOpenJDK 64-Bit Server VM Homebrew (build 17.0.20.1+0, mixed mode, sharing)",
+    "commits": 30,
+    "min_loc": 2000,
+    "heap": "2g",
+    "partition": 100,
+    "clone_timeout": 900,
+    "ck_timeout": 1800,
+    "runner_classes": "/Users/gabrielferreiraamaral/Desktop/SpringTCC/Instrumentos/Codigos/codigoCKSpring/ck_tools/classes",
+    "runner_sha256": {
+      "AuditedCKRunner$1.class": "8c76d26a87379fd1b55c780cf420d39f8cc829b5bbc3e03b332e57549e9eb9cf",
+      "AuditedCKRunner.class": "1023ae2f933e2b8e89340355537401f12d31476b78c307f06d3fad7b5b51867f"
+    },
+    "classification_sha256": null,
+    "detect_ai": true,
+    "source_scope": "tracked_java_including_tests_without_hidden_build_generated_vendor",
+    "lcom_column": "lcom*",
+    "use_jars": false,
+    "pipeline_sha256": {
+      "analisar_ck.py": "bbfbcdf6a34265b78ae027ead7b4c4c5083e322dab216ea7b2ec8fc5cf6627ce",
+      "ck_pipeline/extraction.py": "42119f1164211d7db6ee9492af462c67ece2824ca74c1a884f97934fca1fe7f2",
+      "ck_pipeline/__init__.py": "04954b4284974a678b7f0d07a0f834f53dcb9c88691cf3f1a938348de2fa8d10",
+      "detectar_agentes_ia.py": "b34a53342856588bdf9e2ddb81a6d7923c11faa17e7ab82932a16cf4c1cc238e"
+    },
+    "packages": {
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "pandas": "3.0.6",
+      "matplotlib": "3.11.2",
+      "requests": "2.34.2",
+      "python-dotenv": "1.2.4"
+    },
+    "classification_scope_size": 1520
+  }
+}

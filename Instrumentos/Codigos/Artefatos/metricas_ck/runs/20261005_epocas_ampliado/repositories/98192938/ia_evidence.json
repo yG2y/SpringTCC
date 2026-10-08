@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "bf44f45b0a6a3aabba2205795fb7bf823c22e755",
+      "date": "2018-08-10T16:04:20+02:00",
+      "author": "Marco Paga",
+      "email": "marco.paga@codecentric.de",
+      "message": "Resource setup config for minikube\n"
+    },
+    {
+      "sha": "f17bc3a05765b3e315353d0ebcd90883d8a1e70a",
+      "date": "2018-04-27T17:25:37+02:00",
+      "author": "Marco Paga",
+      "email": "marco.paga@codecentric.de",
+      "message": "HELM Init with RBAC\n"
+    },
+    {
+      "sha": "7058b938a072772695ad77b8ffece4c15a3c39e1",
+      "date": "2018-04-27T11:31:25+02:00",
+      "author": "Marco Paga",
+      "email": "marco.paga@codecentric.de",
+      "message": "Robust service startup\n\nWaiting for eureka before starting apps.\nReadiness probes added\n"
+    },
+    {
+      "sha": "5471ea01e6824ce747fc1314a006b51053bebd41",
+      "date": "2018-04-27T10:15:05+02:00",
+      "author": "Marco Paga",
+      "email": "marco.paga@codecentric.de",
+      "message": "Security disabled for the actuator endpoints\n"
+    },
+    {
+      "sha": "c54d4dc8220809c25909418cd9e4c50503b866b0",
+      "date": "2018-04-12T06:02:44+02:00",
+      "author": "Marco Paga",
+      "email": "marco.paga@codecentric.de",
+      "message": "Security improvements\n\nThe default Service Account Token will not be mounted by the containers.\nContainers will run with a readOnly Root Filesystem\n"
+    },
+    {
+      "sha": "f9bb886baab98ff1ae04a2316a08b9abff2f8056",
+      "date": "2018-04-08T15:27:37+02:00",
+      "author": "Marco Paga",
+      "email": "marco.paga@codecentric.de",
+      "message": "Resources in values defined\n"
+    },
+    {
+      "sha": "d84ff0a0dd9f9c7aa87037470eaa0b3d0c263c06",
+      "date": "2018-04-07T07:34:48+02:00",
+      "author": "Marco Paga",
+      "email": "marco.paga@codecentric.de",
+      "message": "Documentation extended\n"
+    },
+    {
+      "sha": "aea2cb747be3e97d8c8f1e97b44fa0d76027b497",
+      "date": "2018-04-06T21:10:20+02:00",
+      "author": "Marco Paga",
+      "email": "marco.paga@codecentric.de",
+      "message": "Initial Helm deployment 😀\n"
+    },
+    {
+      "sha": "b8de6c1e75f3df2695f7d56fbd801ac0ca102f2f",
+      "date": "2018-04-05T06:29:04+02:00",
+      "author": "Marco Paga",
+      "email": "marco.paga@codecentric.de",
+      "message": "Added an ingress to the k8s deployment\n"
+    },
+    {
+      "sha": "3e1db9d5ee89d81be6299bbae849c5b32366b18c",
+      "date": "2018-04-03T21:46:48+02:00",
+      "author": "Marco Paga",
+      "email": "marco.paga@codecentric.de",
+      "message": "Dominik gave some hints\n"
+    },
+    {
+      "sha": "37e4774d98b69f01762364972083ac8fbf766711",
+      "date": "2018-04-03T20:33:34+02:00",
+      "author": "Marco Paga",
+      "email": "marco.paga@codecentric.de",
+      "message": "Travis CI config added\n"
+    },
+    {
+      "sha": "d1662f74e9801bc92c61049afd9d5b4cf5b4ea23",
+      "date": "2018-02-27T12:09:15+01:00",
+      "author": "Marco Paga",
+      "email": "marco.paga@codecentric.de",
+      "message": "explicitly set the version for the images\n"
+    },
+    {
+      "sha": "bcb26711ddb95b8cfacf470c65881c53abac2b5f",
+      "date": "2018-02-19T11:39:55+01:00",
+      "author": "Marco Paga",
+      "email": "marco.paga@codecentric.de",
+      "message": "Why did I create the project?\n"
+    },
+    {
+      "sha": "a327ba7b60945de3ec866f5cc8d23510c219bc57",
+      "date": "2018-02-09T15:02:52+01:00",
+      "author": "Marco Paga",
+      "email": "marco.paga@codecentric.de",
+      "message": "Enforcing memory limit\n"
+    },
+    {
+      "sha": "77c27901c7ae7818b093c08db0b7a5ab1dcdb360",
+      "date": "2018-01-24T21:17:43+01:00",
+      "author": "Marco Paga",
+      "email": "marco.paga@codecentric.de",
+      "message": "Just expose the needed services.\n"
+    },
+    {
+      "sha": "f518de9e45ac5b2cbbad6ab3a4613f411e7b748b",
+      "date": "2018-01-24T09:53:56+01:00",
+      "author": "Marco Paga",
+      "email": "marco.paga@codecentric.de",
+      "message": "Deployment on Google cloud platform added\n"
+    },
+    {
+      "sha": "087fffca436d5da2c7969399aba7b101a14ce7e9",
+      "date": "2018-01-24T09:52:12+01:00",
+      "author": "Marco Paga",
+      "email": "marco.paga@codecentric.de",
+      "message": "Deployment on Google cloud platform added\n"
+    },
+    {
+      "sha": "14bcc29b2e892196ede09829ff6c9e48fb4ca96e",
+      "date": "2018-01-22T10:55:13+01:00",
+      "author": "Marco Paga",
+      "email": "marco.paga@codecentric.de",
+      "message": "Added the app: cloud Label for all components\n"
+    },
+    {
+      "sha": "1ef84666004b0a3e18a5bf839684a2f720a67375",
+      "date": "2018-01-22T10:33:38+01:00",
+      "author": "Marco Paga",
+      "email": "marco.paga@codecentric.de",
+      "message": "Zipkin added\n"
+    },
+    {
+      "sha": "1529e06904bf20f0d16b3411863279043821ff77",
+      "date": "2018-01-21T21:35:37+01:00",
+      "author": "Marco Paga",
+      "email": "marco.paga@codecentric.de",
+      "message": "Clear everything again\n"
+    },
+    {
+      "sha": "f6b0c9046417a194ebfcc7996d6332111edfa1d3",
+      "date": "2018-01-21T21:05:53+01:00",
+      "author": "Marco Paga",
+      "email": "marco.paga@codecentric.de",
+      "message": "Working kubernmetes deployment\n"
+    },
+    {
+      "sha": "a4b4b8b7aedc4ee7cfb64da01e780128243f25c1",
+      "date": "2018-01-21T11:47:51+01:00",
+      "author": "Marco Paga",
+      "email": "marco.paga@codecentric.de",
+      "message": "More CPU and RAM\n"
+    },
+    {
+      "sha": "df5f104e45e79bf9b78a43c8378356cef9dca592",
+      "date": "2018-01-20T09:15:48+01:00",
+      "author": "Marco Paga",
+      "email": "marco.paga@codecentric.de",
+      "message": "Some more components in kubernetes\n"
+    },
+    {
+      "sha": "97373ce7f16509b1fc9aa47082fbafece282d034",
+      "date": "2018-01-19T20:41:12+01:00",
+      "author": "Marco Paga",
+      "email": "marco.paga@codecentric.de",
+      "message": "Kubernetes Deployment and Service for the backend added\n"
+    },
+    {
+      "sha": "b955e903b289d5f4900f7e29ba18502e29492ab3",
+      "date": "2017-12-22T06:41:22+01:00",
+      "author": "Marco Paga",
+      "email": "marco.paga@codecentric.de",
+      "message": "Port type added\n"
+    },
+    {
+      "sha": "0a6afd305ba62d23f376cc8b310cf61d7d2b94ac",
+      "date": "2017-12-22T06:16:11+01:00",
+      "author": "Marco Paga",
+      "email": "marco.paga@codecentric.de",
+      "message": "setting label to app:demo\n"
+    },
+    {
+      "sha": "99f6141e4c04d972ad37580603123c38ccc9645c",
+      "date": "2017-12-03T06:39:20+01:00",
+      "author": "Marco Paga",
+      "email": "marco.paga@codecentric.de",
+      "message": "Show hostname on / to help tinkering around\n"
+    },
+    {
+      "sha": "1160b554fbacaa6634b61dae09b9bc17368ac37d",
+      "date": "2017-12-03T06:06:20+01:00",
+      "author": "Marco Paga",
+      "email": "marco.paga@codecentric.de",
+      "message": "URL creattion added\n"
+    },
+    {
+      "sha": "e7426af1b3de35481bb727ee03bb3c5906d9da31",
+      "date": "2017-12-01T22:12:49+01:00",
+      "author": "Marco Paga",
+      "email": "marco.paga@codecentric.de",
+      "message": "First tiny steps towards a k8s deployment of the boot apps\n"
+    },
+    {
+      "sha": "a3a2bd634eca061cc3e209aa383c7af19667dbbd",
+      "date": "2017-11-29T06:26:33+01:00",
+      "author": "Marco Paga",
+      "email": "marco.paga@codecentric.de",
+      "message": "Docker images published as a preparation for k8s/docker swarm to simplify things a bit\n"
+    }
+  ],
+  "commit_sha": "bf44f45b0a6a3aabba2205795fb7bf823c22e755",
+  "extracted_at": "2026-10-05T18:10:38.072439+00:00"
+}

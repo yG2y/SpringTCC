@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "0fa1eb0844e7c1dfbcc2da46957a8e890a4ab075",
+      "date": "2026-01-18T07:28:23-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Fix init-environment.sh and Upgrade to Localstack 4.12.0\n"
+    },
+    {
+      "sha": "7b8bdc5768272810a149994e991866f4b4d22dc6",
+      "date": "2026-01-17T17:44:14-03:00",
+      "author": "ivan-franchin",
+      "email": "ivan.franchin@justeattakeaway.com",
+      "message": "Project upgrade\n\n- Upgrade to Java 25\n- Upgrade to Spring Boot 4.0.1\n- Upgrade to Spring Cloud 2025.1.0\n- Upgrade to Spring Cloud AWS 4.0.0-M1\n- Upgrade to SpringDoc OpenAPI 3.0.1\n"
+    },
+    {
+      "sha": "c4e8b02b4d42f72751a4bb968eaa81149086ab0d",
+      "date": "2026-01-17T17:08:10-03:00",
+      "author": "ivan-franchin",
+      "email": "ivan.franchin@justeattakeaway.com",
+      "message": "Project upgrade\n\n- Upgrade to Spring Boot 3.5.9\n- Upgrade to Spring Cloud 2025.0.1\n- Upgrade to Spring Cloud AWS 3.4.2\n- Upgrade to Amazon AWSSDK 2.41.9\n- Upgrade to SpringDoc OpenAPI 2.8.15\n"
+    },
+    {
+      "sha": "17baaf1ad6e27f9e5d7352e5008456ffb71de9d7",
+      "date": "2025-11-01T09:38:01+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project Upgrade\n\n- Upgrade to Spring Boot 3.5.7\n- Upgrade to Spring Cloud 2025.0.0\n- Upgrade wrapperVersion to 3.3.4 and Apache Maven to 3.9.11\n- Upgrade to SpringDoc OpenAPI 2.8.13\n- Upgrade to Localstack Docker image 4.10.0\n- Upgrade to amazon-awssdk 2.36.3\n- Upgrade to spring-cloud-aws 3.4.0\n- Upgrade to opensearch-client 3.2.0\n- Upgrade to aws-lambda-java-core 1.2.3\n- Upgrade to aws-lambda-java-events 3.15.0\n"
+    },
+    {
+      "sha": "14a0ecf81be9a8512f93487d7f4a183dd63a139b",
+      "date": "2025-04-23T14:54:32+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Add .gitattributes file and update README\n"
+    },
+    {
+      "sha": "165a12915d7255b4a748783346b87b58a07407fc",
+      "date": "2025-03-08T19:33:16+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Update README file\n"
+    },
+    {
+      "sha": "f29c216938a910ecb90490e784d25672820dae38",
+      "date": "2025-03-08T18:53:15+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Refactor application packages\n"
+    },
+    {
+      "sha": "5bd0a4fd3f9a5a774233117bfc4825bd87e1501a",
+      "date": "2025-03-08T18:44:47+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Code refactor\n\n- Inject the RestClient.builder in the Bean and use it to create the RestClient;\n- Remove public keyword from Beans.\n"
+    },
+    {
+      "sha": "f3f28e06aabdc2bf2c85b0b2364499b123e9aacf",
+      "date": "2025-03-08T18:38:29+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Refactor pom.xml and docker-compose.yml files\n"
+    },
+    {
+      "sha": "400255252a6b1403c7f09e9a6607cf640ab42040",
+      "date": "2025-03-08T18:25:14+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- Upgrade to Spring Boot 3.4.3;\n- Upgrade to SpringDoc OpenAPI 2.8.5;\n- Upgrade to Spring Cloud 2024.0.0;\n- Upgrade to aws-lambda-java-events 3.15.0;\n- Upgrade to amazon-awssdk 2.30.35;\n- Upgrade to spring-cloud-aws 3.3.0;\n- Upgrade to Localstack Docker image 4.2.0;\n- Rename docker-build.sh to build-docker-images.sh;\n- Update README.\n"
+    },
+    {
+      "sha": "cb071a999151e760fd248715d1ca8334d8e77036",
+      "date": "2024-11-02T20:21:50+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Replace Jib with Paketo Buildpacks\n"
+    },
+    {
+      "sha": "32f724ee37181ca75c65efdffdffa250b522e7fd",
+      "date": "2024-11-02T20:08:50+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- upgrade to spring-boot 3.3.5;\n- upgrade project and lambda-function to Java 21;\n- upgrade wrapperVersion to 3.3.2 and apache-maven to 3.9.9;\n- upgrade to spring-cloud 2023.0.3;\n- upgrade to aws-lambda-java-events 3.14.0;\n- upgrade to springdoc-openapi 2.6.0;\n- upgrade to amazon-awssdk 2.29.3;\n- upgrade to spring-cloud-aws. 3.2.1;\n- upgrade to jib-maven-plugin 3.4.4;\n- upgrade to localstack docker image 3.8.1;\n- remove version from docker-compose.yml;\n- update README.\n"
+    },
+    {
+      "sha": "0d8addd7dae3c8bd95885cec1cb475088b2aae80",
+      "date": "2024-03-31T22:11:36+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Add two Medium articles\n"
+    },
+    {
+      "sha": "c33305e8f3f352f7d5728ec5a629e2dd291b8e35",
+      "date": "2024-03-31T22:02:06+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- upgrade to spring-boot 3.2.4;\n- upgrade to spring-cloud 2023.0.1;\n- upgrade to spring-cloud-aws 3.1.1;\n- upgrade to springdoc-openapi 2.4.0;\n- upgrade to localstack docker image 3.3.0;\n- upgrade to amazon-awssdk 2.25.21.\n"
+    },
+    {
+      "sha": "93e5ba6fcf4e73a04a7d055c781dbe3e96cca11d",
+      "date": "2024-03-31T21:59:13+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Remove waiting loop in init-localstack.sh as it is not needed anymore\n"
+    },
+    {
+      "sha": "353b960beb1132dc168d48894372339fc194d1c4",
+      "date": "2024-03-31T21:57:15+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Using RestClient instead of RestTemplate\n"
+    },
+    {
+      "sha": "a14e73242a49325ac5b16b1ca73ca94512c953d5",
+      "date": "2024-03-22T10:48:53+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Add new Medium articles in README\n"
+    },
+    {
+      "sha": "c3719ec571f5232738a31bd8f21f51becb344d2f",
+      "date": "2024-03-14T06:40:52+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Add new Medium article in README\n"
+    },
+    {
+      "sha": "8d5a6e6b07498aeaae0827eae39c5abdd45347eb",
+      "date": "2024-03-12T07:03:58+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Update README referencing another repo and adding new Medium article\n"
+    },
+    {
+      "sha": "ef8f606bc3acfca8a66ae7f68643373da3f303c5",
+      "date": "2024-03-09T09:33:47+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Small adjustments in the docker-compose.yml and the shared volume\n"
+    },
+    {
+      "sha": "c814aa5d174395b3494f8767682981faa8f0afb0",
+      "date": "2024-03-08T16:56:02+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Update README\n"
+    },
+    {
+      "sha": "5184de9ebd6e075c09989be3407bae9ff4ffd5b1",
+      "date": "2024-03-05T21:40:04+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Refactor the code to use Http Interface\n"
+    },
+    {
+      "sha": "4e1fd49d45134ca588b4a155784146ea72401144",
+      "date": "2024-03-04T12:45:20+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Simplify the use of AWS managed services with Spring Cloud AWS\n"
+    },
+    {
+      "sha": "8805a00198b28c3dcb36827ec37b1be04aaaece0",
+      "date": "2024-03-02T19:46:16+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade and code organization\n\n- upgrade to spring boot 3.2.3;\n- upgrade to spring-cloud.version 2023.0.0;\n- upgrade to amazon-awssdk 2.25.0;\n- upgrade to jib-maven-plugin 3.4.1\n- upgrade to springdoc-openapi 2.3.0;\n- upgrade to apache-maven 3.9.5;\n- upgrade dynamodb-lambda-function to java 17;\n- upgrade to localstack docker image 3.2.0;\n- upgrade to moment.js 2.30.1;\n- upgrade to aws-lambda-java-events 3.11.4;\n- upgrade to spring-boot-thin-layout 1.0.31.RELEASE.\n"
+    },
+    {
+      "sha": "032c4b64f7d8e7ce9824c2a6382a1a30e28b0a37",
+      "date": "2023-09-11T22:00:43+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade dynamodb-lambda-function\n- upgrade to amazon-awssdk 2.20.144;\n- upgrade to aws-lambda-java-core 1.2.3;\n- upgrade to aws-lambda-java-events 3.11.3;\n- upgrade to spring-boot-thin-layout 1.0.30.RELEASE.\n"
+    },
+    {
+      "sha": "6a9c2910b2f2b8d7166c11eaf813a0090ca5402d",
+      "date": "2023-09-11T18:22:23+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to localstack docker image 2.2.0 and amazon-awssdk 2.20.144\n"
+    },
+    {
+      "sha": "d12c43efd9fd72626fbaa7a213054c7fd48d2a57",
+      "date": "2023-09-11T18:09:56+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade news-producer and -consumer to spring-boot 3.1.3 and springdoc-openapi 2.2.0\n"
+    },
+    {
+      "sha": "d83a1a59567cdc658c4ee782063ce7f7c97fc4fa",
+      "date": "2023-09-11T17:10:25+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to jquery 3.7.1\n"
+    },
+    {
+      "sha": "962a6f4c5d2e93fe639b17ea0750c8f2c6c8caf9",
+      "date": "2023-09-11T15:33:43+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to apache-maven 3.9.4 and maven-wrapper 3.2.0\n"
+    },
+    {
+      "sha": "09073dd0307ab65498330419724c5b6ca244c5a0",
+      "date": "2023-09-11T15:29:18+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Migrate to Compose V2\n"
+    }
+  ],
+  "commit_sha": "0fa1eb0844e7c1dfbcc2da46957a8e890a4ab075",
+  "extracted_at": "2026-10-05T18:43:12.887476+00:00"
+}

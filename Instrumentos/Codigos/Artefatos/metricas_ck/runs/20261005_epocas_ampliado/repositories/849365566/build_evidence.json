@@ -1,0 +1,32 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "4.0.7",
+  "spring_boot_major": "4",
+  "java_versions_declared": "25",
+  "build_evidence": [
+    {
+      "file": "movie-grpc-client/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "movie-grpc-client/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "movie-grpc-server/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "movie-grpc-server/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa-test"
+    },
+    {
+      "file": "movie-grpc-server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    }
+  ]
+}

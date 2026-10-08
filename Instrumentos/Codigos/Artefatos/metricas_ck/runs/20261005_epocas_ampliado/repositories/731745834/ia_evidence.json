@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "9971d5dadc8aa391e0ca5de1fd2c104929150a86",
+      "date": "2026-09-02T12:18:14-05:00",
+      "author": "Copilot",
+      "email": "198982749+Copilot@users.noreply.github.com",
+      "message": "Quote PostgreSQL schema/table identifiers in metadata-derived SQL names (#948)\n\nQuote PostgreSQL metadata-derived schema and table identifiers so numeric-leading, case-sensitive, Unicode, and embedded-quote names render safely.\n\nAdds focused regression coverage for numeric-leading and Unicode identifiers."
+    },
+    {
+      "sha": "1803e646ff517a6973c0e45566418b159de3c213",
+      "date": "2026-05-30T09:30:17-05:00",
+      "author": "Dhrubo Kayal",
+      "email": "dhrubo.kayal@gmail.com",
+      "message": "Update project revision to 1.6.9-RC1"
+    },
+    {
+      "sha": "e2444e87083f59f94046d470a82d5e1240c1c54b",
+      "date": "2026-05-30T09:28:57-05:00",
+      "author": "Dhrubo Kayal",
+      "email": "dhrubo.kayal@gmail.com",
+      "message": "Merge pull request #949 from maheedhar100/fix/validate-read-pagination-params\n\nfix(api-rest): validate limit and offset on read endpoints"
+    },
+    {
+      "sha": "d78d2d11e12b33f27354091ee83661786ed7722a",
+      "date": "2026-05-30T07:46:28-05:00",
+      "author": "Dhrubo Kayal",
+      "email": "dhrubo.kayal@gmail.com",
+      "message": "Merge pull request #945 from sourav-18/feature/path-based-primary-key-support\n\nAdd support for path-based primary key access (including composite keys) for read API"
+    },
+    {
+      "sha": "4ea22081c9a967a5593d6abadf7eab9c88f5b45d",
+      "date": "2026-05-30T07:45:41-05:00",
+      "author": "Dhrubo Kayal",
+      "email": "dhrubo.kayal@gmail.com",
+      "message": "Merge pull request #947 from Kronos279/fix-pg-boolean-casting\n\nfix(pg): resolve boolean type casting in filters "
+    },
+    {
+      "sha": "c18a02594b0a8dc6be9e7fb661616683f69c102b",
+      "date": "2026-05-30T07:44:52-05:00",
+      "author": "Dhrubo Kayal",
+      "email": "dhrubo.kayal@gmail.com",
+      "message": "Using VERSION keeps paths consistent and avoids future breakage if the base path changes\n\nCo-authored-by: Copilot Autofix powered by AI <175728472+Copilot@users.noreply.github.com>"
+    },
+    {
+      "sha": "07cb8dda05ff77af81bdb0bfd6733bbb49d0fb0c",
+      "date": "2026-05-25T00:59:07+05:30",
+      "author": "maheedhar100",
+      "email": "f20242434@hyderabad.bits-pilani.ac.in",
+      "message": "test(api-rest): add pagination validation unit and integration tests\n\nCo-authored-by: Cursor <cursoragent@cursor.com>\n"
+    },
+    {
+      "sha": "e442fa2e37e0d96b8bdb89cb030441e118f13a3a",
+      "date": "2026-05-25T00:59:07+05:30",
+      "author": "maheedhar100",
+      "email": "f20242434@hyderabad.bits-pilani.ac.in",
+      "message": "fix(api-rest): reject invalid limit and offset on read endpoints\n\nCo-authored-by: Cursor <cursoragent@cursor.com>\n"
+    },
+    {
+      "sha": "be610ec037faa2725d61be9ea6659fd34b06a0c4",
+      "date": "2026-05-25T00:58:51+05:30",
+      "author": "maheedhar100",
+      "email": "f20242434@hyderabad.bits-pilani.ac.in",
+      "message": "feat(db2rest-common): add pagination parameter validation utility\n\nCo-authored-by: Cursor <cursoragent@cursor.com>\n"
+    },
+    {
+      "sha": "6fd0b3ce1d6f0b33a7925727397932b184257175",
+      "date": "2026-04-28T13:31:12+01:00",
+      "author": "Ashutoshy115",
+      "email": "ashutoshy115work@gmail.com",
+      "message": "fix(pg): resolve boolean type casting in filters\n\nCleaned up code\n"
+    },
+    {
+      "sha": "f61086953821df4eaf60f24191b56462e93d1173",
+      "date": "2026-04-28T13:20:14+01:00",
+      "author": "Ashutoshy115",
+      "email": "ashutoshy115work@gmail.com",
+      "message": "fix(pg): resolve boolean type casting in filters\n\nUpdated BaseDialect to return native Java Boolean objects. This prevents PostgreSQL from throwing type mismatch errors when parsing RSQL filters. Added regression test in PgReadControllerTest.\n"
+    },
+    {
+      "sha": "532eee323fdfb96512e0a6f67bc5540a4ee21370",
+      "date": "2026-03-30T17:29:30+05:30",
+      "author": "sourav-18",
+      "email": "souravhd2@gmail.com",
+      "message": "feat: add path-based primary key support with filter merge and tests\n"
+    },
+    {
+      "sha": "97d6bd1078f3332af380c85acf176250d42c09b4",
+      "date": "2026-03-30T12:11:42+05:30",
+      "author": "sourav-18",
+      "email": "souravhd2@gmail.com",
+      "message": "feat: add support for path-based primary key access for read API\n"
+    },
+    {
+      "sha": "68c8efac62ba8794e5dcec5d3f6630f3cc00c212",
+      "date": "2026-03-18T19:00:01-05:00",
+      "author": "Dhrubo Kayal",
+      "email": "dhrubo.kayal@gmail.com",
+      "message": "Merge pull request #942 from akanksharaut2662-rgb/refactor/db2rest-core-encapsulation-v2\n\nrefactor(db2rest-core): improve encapsulation and extract utility class in core validator and dto packages"
+    },
+    {
+      "sha": "e9f49ea6c83f8a780e9adaae36095c3b416e3ccc",
+      "date": "2026-03-18T15:17:19-03:00",
+      "author": "Akanksha Raut",
+      "email": "wn641065@dal.ca",
+      "message": "fic(rsql): support notin operator in BaseRSQLVisitor lookup\n"
+    },
+    {
+      "sha": "e87f7d079ff026d5a9cfc70b2a7316909378f384",
+      "date": "2026-03-18T13:47:34-03:00",
+      "author": "Akanksha Raut",
+      "email": "wn641065@dal.ca",
+      "message": "fix(rdbms-support): String handling for NotInOperatorHandler\n"
+    },
+    {
+      "sha": "1ad5eb9918c46900bc45b1ad60b6810e7e4ef9bb",
+      "date": "2026-03-18T13:30:38-03:00",
+      "author": "Akanksha Raut",
+      "email": "wn641065@dal.ca",
+      "message": "fix(rdbms-support): robust operator handler lookup for multi-symbol operators\n"
+    },
+    {
+      "sha": "ba2319d962cf858b6a1d75306414208ab648f1da",
+      "date": "2026-03-18T13:05:01-03:00",
+      "author": "Akanksha Raut",
+      "email": "wn641065@dal.ca",
+      "message": "debug(rdbms-support): add logging to NotInOperatorHandler to diagnose 400 errors\n"
+    },
+    {
+      "sha": "3e05e1ec196381c555351ba63c83be1b60c58c15",
+      "date": "2026-03-18T12:21:36-03:00",
+      "author": "Akanksha Raut",
+      "email": "wn641065@dal.ca",
+      "message": "fix(db2rest-core): resolve operator handler by iterating all symbols in BaseRSQLVisitor\n"
+    },
+    {
+      "sha": "e73e7236486a8243423a57d8ebd6f1dd2c298170",
+      "date": "2026-03-18T12:02:01-03:00",
+      "author": "Akanksha Raut",
+      "email": "wn641065@dal.ca",
+      "message": "fix(db2rest-core): register all symbols for NOT_IN_EXT operator in RSQLOperatorHandlers\n"
+    },
+    {
+      "sha": "e6f4d536eb17ce3e7d5342a93dd1bfea6e086746",
+      "date": "2026-03-18T03:52:57-03:00",
+      "author": "Akanksha Raut",
+      "email": "wn641065@dal.ca",
+      "message": "refactor(db2rest-core): remove FnUtil nested class from CreateContext\n"
+    },
+    {
+      "sha": "ab692eec6531140811894c97fec23814c1eedc5e",
+      "date": "2026-03-18T03:49:02-03:00",
+      "author": "Akanksha Raut",
+      "email": "wn641065@dal.ca",
+      "message": "refactor(db2rest-core): remove FnUtil nested class from CreateContext and update validators\n"
+    },
+    {
+      "sha": "28d49d3b8fc3eed3ef68161916f2c557d58e307e",
+      "date": "2026-03-18T03:16:47-03:00",
+      "author": "Akanksha Raut",
+      "email": "wn641065@dal.ca",
+      "message": "test(db2rest-core): add unit tests for FnUtil, CustomPlaceholderValidators and IsUUIDValidator\n"
+    },
+    {
+      "sha": "21ecff16d1c812f1bcc44ec1f33a79bcb55f5edb",
+      "date": "2026-03-18T03:16:32-03:00",
+      "author": "Akanksha Raut",
+      "email": "wn641065@dal.ca",
+      "message": "refactor(db2rest-core): extract FnUtil nested class to standalone class from CreateContext\n"
+    },
+    {
+      "sha": "ae18ab584d945ba71ab01b690a63ea72b334ef74",
+      "date": "2026-03-18T03:14:50-03:00",
+      "author": "Akanksha Raut",
+      "email": "wn641065@dal.ca",
+      "message": "refactor(db2rest-core): pull up throwConstraintViolation method to ConstraintValidator interface\n"
+    },
+    {
+      "sha": "30c68653c4dcb69bd6fbf89a0b1b3ff5f5554f5b",
+      "date": "2026-03-18T03:14:23-03:00",
+      "author": "Akanksha Raut",
+      "email": "wn641065@dal.ca",
+      "message": "refactor(db2rest-core): make validators map unmodifiable and add accessor in CustomPlaceholderValidators\n"
+    },
+    {
+      "sha": "59acac153bca0125d13f28d80f41ab78768b13eb",
+      "date": "2026-03-17T23:10:03-05:00",
+      "author": "Dhrubo Kayal",
+      "email": "dhrubo.kayal@gmail.com",
+      "message": "Merge pull request #939 from akanksharaut2662-rgb/refactor/db2rest-core-readability\n\nrefactor(db2rest-core): improve code readability in core service and validator classes"
+    },
+    {
+      "sha": "ad369eeb9e758851589b18f3799b5848424ba6df",
+      "date": "2026-03-17T23:00:54-05:00",
+      "author": "Dhrubo Kayal",
+      "email": "dhrubo.kayal@gmail.com",
+      "message": "Merge pull request #937 from mayankvirole/feature/issue-589\n\nsupport notin and out operator #589"
+    },
+    {
+      "sha": "33c3c849c60200fbd127b811fb99939f54930409",
+      "date": "2026-03-18T00:45:55-03:00",
+      "author": "Akanksha Raut",
+      "email": "wn641065@dal.ca",
+      "message": "test(db2rest-core): add unit tests for AliasGenerator, IsRequiredValidator and JdbcCreateService\n"
+    },
+    {
+      "sha": "a8d3a71667f6013520f148ec4abab0bc3aea3a7b",
+      "date": "2026-03-18T00:45:06-03:00",
+      "author": "Akanksha Raut",
+      "email": "wn641065@dal.ca",
+      "message": "refactor(db2rest-core): extract methods from save() in JdbcCreateService\n"
+    }
+  ],
+  "commit_sha": "9971d5dadc8aa391e0ca5de1fd2c104929150a86",
+  "extracted_at": "2026-10-05T17:59:04.475612+00:00"
+}

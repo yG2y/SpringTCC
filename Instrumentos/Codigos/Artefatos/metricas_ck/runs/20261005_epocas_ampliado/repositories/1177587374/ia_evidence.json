@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "ef912bf2497ac1254025d17caa0d2db3cb17f1ee",
+      "date": "2026-09-02T02:10:05+05:00",
+      "author": "Ja'farbek Yusupov",
+      "email": "github.jafarbekyusupov@gmail.com",
+      "message": "chore(dockerfile): fully qualify base images for podman compatibility | #65\n"
+    },
+    {
+      "sha": "43e41eca42c2d3ea3bc86b82e5fe152a6991c0cf",
+      "date": "2026-03-25T03:52:21+05:00",
+      "author": "Ja'farbek Yusupov",
+      "email": "github.jafarbekyusupov@gmail.com",
+      "message": "refactor(asset/history): filter out system notes | #62\n\nnew prop in AssetHistory - systemNote (by default false)\nfilter by systemNote flag\n"
+    },
+    {
+      "sha": "4fb21bdef73a500e2bf03e689aad02601d20bec0",
+      "date": "2026-03-25T03:31:43+05:00",
+      "author": "Ja'farbek Yusupov",
+      "email": "github.jafarbekyusupov@gmail.com",
+      "message": "refactor(asset/notes): filter out system notes | #62\n\n- new prop in AssetAssignment - systemNote (by default false - migration\n  V21)\n- filter by systemNote flag\n"
+    },
+    {
+      "sha": "1347928ab2829b66d05022e70ef9363a1e873ec7",
+      "date": "2026-03-25T02:40:39+05:00",
+      "author": "Ja'farbek Yusupov",
+      "email": "github.jafarbekyusupov@gmail.com",
+      "message": "revert(auth): revert sha1 layer refactor | #57\n"
+    },
+    {
+      "sha": "5388a6507e939447f37bd5a764390cee580bc64c",
+      "date": "2026-03-25T02:18:00+05:00",
+      "author": "Ja'farbek Yusupov",
+      "email": "github.jafarbekyusupov@gmail.com",
+      "message": "refactor(asset): assigned assets to be re-assigned | #59\n\nupd canBeAssigned to allow ASSIGNED assets to be re-assigned by admin\nadditionally: reduce password min size from 8 to 6\n"
+    },
+    {
+      "sha": "cf2752cd8d9b8fdf48be9dc50ead74656881b5ce",
+      "date": "2026-03-25T01:18:45+05:00",
+      "author": "Ja'farbek Yusupov",
+      "email": "github.jafarbekyusupov@gmail.com",
+      "message": "refactor(auth): double layered password hashing | #57\n\nwrap user passwords in SHA1 before standart encryption #57\n"
+    },
+    {
+      "sha": "b7972a6ff518e195dbfdcf90267deb1a41d22d30",
+      "date": "2026-03-25T01:01:32+05:00",
+      "author": "Ja'farbek Yusupov",
+      "email": "github.jafarbekyusupov@gmail.com",
+      "message": "fix(ai-chat): change fetch type for lazy proxies | #54\n"
+    },
+    {
+      "sha": "10597faa2edadb2d6fad4de0aab403b47be5c7ac",
+      "date": "2026-03-25T00:34:32+05:00",
+      "author": "Ja'farbek Yusupov",
+      "email": "github.jafarbekyusupov@gmail.com",
+      "message": "fix(ai-chat): lazy dept and branch proxies | #54\n\nerror - LazyInitializationException on department proxy inside AiChatService.buildSystemPrompt:\n- calls user.getDepartment().getName() but user is the @AuthenticationPrincipal\n(was loaded by the jtw filer hibernate session that is closed at the time of request)\n-> department and branch are lazy proxies tied to that dead session\n\nfix: same as for /stream endpoint but in regular req/req flow\n"
+    },
+    {
+      "sha": "d5fe9b6fd02c04228d310210b0f6dc1d622eeb11",
+      "date": "2026-03-25T00:23:52+05:00",
+      "author": "Ja'farbek Yusupov",
+      "email": "github.jafarbekyusupov@gmail.com",
+      "message": "fix(assignment): clear records before approval | #52\n\nbefore approval (and creation of assignment record for user)\n- close active branch/dept level assignment records\n"
+    },
+    {
+      "sha": "6dcb9a77c818505f732def1221edeae7ae9db84d",
+      "date": "2026-03-24T23:56:27+05:00",
+      "author": "Ja'farbek Yusupov",
+      "email": "github.jafarbekyusupov@gmail.com",
+      "message": "feat(ci-cd): allow manual triggering | #50\n\nadd workflow_dispatch: in deploy.yml\n"
+    },
+    {
+      "sha": "54a546ed12e4ab1ccec6c38a7c70fd78697f71a3",
+      "date": "2026-03-24T23:43:23+05:00",
+      "author": "Ja'farbek Yusupov",
+      "email": "github.jafarbekyusupov@gmail.com",
+      "message": "fix(assignment): remove old check in approve logic | #47\n\nforgot to update approve method)\n"
+    },
+    {
+      "sha": "b8d92404dc3fa7c48b6193278c0148f88a657ddb",
+      "date": "2026-03-24T23:32:02+05:00",
+      "author": "Ja'farbek Yusupov",
+      "email": "github.jafarbekyusupov@gmail.com",
+      "message": "fix(assignment-request): remove outdated ownership check | #47\n\nremove old ownership check via existance of assignment record\n(given the refactor of status system) this check is irrelevant now\n"
+    },
+    {
+      "sha": "70cb4895953374ab8da9dad6cdf3095b2ef48f81",
+      "date": "2026-03-24T21:49:49+05:00",
+      "author": "Ja'farbek Yusupov",
+      "email": "github.jafarbekyusupov@gmail.com",
+      "message": "refactor(asset-assignment): status change logic | #45\n\nstatus change now applied only in user assignment case\n- updated filters and status checks\n"
+    },
+    {
+      "sha": "56cb394f9d97b986ad5985514e6c4a29c066c472",
+      "date": "2026-03-24T19:54:39+05:00",
+      "author": "Ja'farbek Yusupov",
+      "email": "github.jafarbekyusupov@gmail.com",
+      "message": "feat(asset/notes): summarizer for asset notes | #43\n\n`POST asset/:id/notes/summarize` - new endpoint to summarize list of notes (from `GET asset/:id/notes`)\n"
+    },
+    {
+      "sha": "4126ed0c025d6d8f849d9d3437f87cb58eb0001a",
+      "date": "2026-03-24T17:52:20+05:00",
+      "author": "Ja'farbek Yusupov",
+      "email": "github.jafarbekyusupov@gmail.com",
+      "message": "feat(asset): asset notes list endpoint | #41\n\nnew endpoint: `GET asset/:id/notes`\n"
+    },
+    {
+      "sha": "e7ec0b4491208530fc20d069ca22caf293eb2602",
+      "date": "2026-03-24T17:16:39+05:00",
+      "author": "Ja'farbek Yusupov",
+      "email": "github.jafarbekyusupov@gmail.com",
+      "message": "feat(asset): return branch in asset response dto | #38\n\nbranchInfo added to AssetResponse\n"
+    },
+    {
+      "sha": "57dcfdb8182e91197e330f92350742233407a0a2",
+      "date": "2026-03-24T17:06:55+05:00",
+      "author": "Ja'farbek Yusupov",
+      "email": "github.jafarbekyusupov@gmail.com",
+      "message": "fix(asset): asset/assignable endpoint filter | #37\n\nbug: for role of `STAFF` and `DEPT_MANAGER` filter is for `REGISTERED` assets in scope of their dept\n- logic flaw: given that every asset inside of dept/branch scope (= assigned to dept/branch -> status `ASSIGNED`)\nfix: filter by `owner is NULL` and status is `ASSIGNED`\n"
+    },
+    {
+      "sha": "4987fcfdcb5875056e78167e95b9a1eb37b0d51c",
+      "date": "2026-03-23T15:37:32+05:00",
+      "author": "Ja'farbek Yusupov",
+      "email": "github.jafarbekyusupov@gmail.com",
+      "message": "feat(ai-chat): assetId list in /chat resp | #35\n\nreturn assetId list along with text in resp body\n- for req/resp (POST ai/chat):\n```json\n\"data\": {\n\t\"content\": \"We have one \\\"Macbook Neo\\\" (SN09873484) available.\",\n\t\"assetIds\": [\n\t\t\"asset-id-1\",\n\t\t\"asset-id-2\",\n\t\t\"asset-id-3\",\n\t]\n}\n```\n- for sse (POST ai/chat/stream):\n```json\nevent:assets\ndata:[\n   \"asset-id-1\",\n   \"asset-id-2\",\n   \"asset-id-3\",\n]\n```\n"
+    },
+    {
+      "sha": "830859677f6609a008d5fa94c932bfa539e55ce5",
+      "date": "2026-03-22T06:02:02+05:00",
+      "author": "Ja'farbek Yusupov",
+      "email": "github.jafarbekyusupov@gmail.com",
+      "message": "feat(ai-chat): chat system | #28\n\n- add session management endpoints | #30\n- - POST /ai/session: init new chat\n- - GET /ai/session/list: fetch list of previous chats for the sidebar\n- - GET /ai/session/:id/messages: load history when a user clicks at session\n- add gemini internal tools | #31\n- - searchAvailableAssets(query, category): find items with status=REGISTERED\n- - getMyAssets(): list assets assigned to the current user\n- - getAssetDetails(serialNumber): fetch specific specs/warranty info\n- - getAssetHistory(serialNumber): check repair/assignment logs\n- add chat endpoints and sse streaming | #32\n- - POST /ai/chat:\n- - - save user message\n- - - run the ai orchestration loop\n- - - save and return the final model resp\n- - POST /ai/chat/stream:\n- - - implemented server-sent events (sse)\n- - - stream tokens to the frontend as they are generated by gemini\n"
+    },
+    {
+      "sha": "71b684393d06c544b607db5d303cc98bb9c7fd55",
+      "date": "2026-03-22T00:36:56+05:00",
+      "author": "Ja'farbek Yusupov",
+      "email": "github.jafarbekyusupov@gmail.com",
+      "message": "feat(ai-chat/db): setup database schema | #29\n\n- add ChatMessage and ChatSession entities\n- add ChatRole enum added (user|role)\n- add ChatMessageRepo\n- add new tables and types (V19 migration):\n- - TABLE chat_sessions: id, userId, title (auto-generated from 1st message), createdAt\n- - TABLE chat_messages: id, sessionId, role (user/model), content, createdAt\n- - TYPE chat_role: user|role\n"
+    },
+    {
+      "sha": "e55cbbe271caed36cba7a647843e35c98b5607e5",
+      "date": "2026-03-21T18:36:14+05:00",
+      "author": "Ja'farbek Yusupov",
+      "email": "github.jafarbekyusupov@gmail.com",
+      "message": "refactor(user): unified update endpoint | #18\n\n- remove redundant upd endpoints and unify update logic in one api endpoint:\n- - rm PTCH /:id/role, /:id/status, /:id/dept\n- - move field update logic into PUT /:id instead\n"
+    },
+    {
+      "sha": "68ac4211f10ae33ae1ef3aed7fdaa60a5d2a60db",
+      "date": "2026-03-16T17:37:24+05:00",
+      "author": "Ja'farbek Yusupov",
+      "email": "github.jafarbekyusupov@gmail.com",
+      "message": "refactor(asset): refactor qr code handling (#22), status handling fix(#21)\n\n- pass assetId instead of url route to webpage | #22\n- logical error in assignment process | #21OA\n"
+    },
+    {
+      "sha": "0f7ed89b33d31a5712a05ea7b851f4072c1dd67b",
+      "date": "2026-03-16T16:42:13+05:00",
+      "author": "Ja'farbek Yusupov",
+      "email": "github.jafarbekyusupov@gmail.com",
+      "message": "feat(user/list): filter by deptId and branchId | #19\n\nnew optional filters | #19:\n- deptId\n- branchId\n"
+    },
+    {
+      "sha": "f539f9c4f8629a93f5921a409dfe6cb6919da0d7",
+      "date": "2026-03-16T16:35:22+05:00",
+      "author": "Ja'farbek Yusupov",
+      "email": "github.jafarbekyusupov@gmail.com",
+      "message": "fix(asset): POST asset/:id body param fix | #20\n\nmade isDev param optional in req body\n"
+    },
+    {
+      "sha": "1a61907ec2f2829b36d32aee8548f7a7dfb981d0",
+      "date": "2026-03-16T02:08:54+05:00",
+      "author": "Ja'farbek Yusupov",
+      "email": "github.jafarbekyusupov@gmail.com",
+      "message": "feat: new crud endpoints for entities (#14), other minor fixes&add-ons (#16|#15|#13|#12)\n\n- feat: update and delete endpoints for branch, dept, category, type | #14\n- - each entity type instance has to meet certain criteria to be deleted\n  (whether its a hard or soft delete); e.g for dept it is to have no\n  users and have no assets, while for branch - no active depts and same\n  requirements as for branch. TLDR: the higher entity is in hierarchy,\n  the harder it is for it to be deleted\n- - soft delete for branch and dept (using isActive flag and archivedAt\n  timestamp - V18 migration)\n- feat(category): endpoint to create category with types in one call | #15\n- bug(analytics/overview): return full data by statuses | #13\n- - overview currently returns stats by statuses of assets that exist\n- - when there are no instances of assets for specific status type, nothing is returned for that status.\n- - fix: return zero, if no assets for given status\n- feat(user): search param for user/list | #12\n- - optional search query param for GET user/list, seach done for:\n- - - department name\n- - - fullName\n- - - email\n- fix(asset/assignment): fix logical errors in status transition processes | #16\n- - let admin assign asset from one user to another (by completing and following the logical trace in the background:\n- - - close assignment record for current user\n- - - change status to registered\n- - - assign asset to new user (upd asset status to assigned again\n- - - open assignment record for the new user\n"
+    },
+    {
+      "sha": "6d0258bab9db14ce483357e8a8ce9a9afef70773",
+      "date": "2026-03-15T01:50:44+05:00",
+      "author": "Ja'farbek Yusupov",
+      "email": "github.jafarbekyusupov@gmail.com",
+      "message": "fix(deploy): force docker rebuild and ignore build artifacts #9\n\n- added --no-cache and --force-recreate to ensure new jar is deployed\n- added .dockerignore for target/, .git/, .github/\n"
+    },
+    {
+      "sha": "50c765efd549e1fc881e8b3c620d7f3e5a8163a8",
+      "date": "2026-03-15T01:09:20+05:00",
+      "author": "Ja'farbek Yusupov",
+      "email": "github.jafarbekyusupov@gmail.com",
+      "message": "feat(user): new crud endpoints, isDev prop\n\nnew endpoints for user controller:\n- PUT /:id\n- PATCH /:id/role\n- DEL /:id\nnew flag isDev for user entity (migration V17):\n- if isDev -> during registration otp confirmation skipped and user is activated, can login\n- added isDev as optional body param in POST user/:id\n"
+    },
+    {
+      "sha": "e9fc0e988959b36f574857d8281fa09e53e31e19",
+      "date": "2026-03-14T18:24:17+05:00",
+      "author": "Ja'farbek Yusupov",
+      "email": "github.jafarbekyusupov@gmail.com",
+      "message": "feat: role-based scoping, branch lvl assignment, history\n\n- new user roles: DEPT_MANAGER and BRANCH_MANAGER (V14 migration)\n- add branch-level asset assignment support with assignedToBranchId param (V15 migration)\n- rbac - enforced asset scope:\n- - GET /list\n- - (new) GET /asset/assignable\n- - POST /assignment-request\n- - allow STAFF to return their own asset via POST /asset/:id/return\n- add fromDept/toDept/fromBranch/toBranch to AssetHistory (V16 migration)\n- - so that dept and branch managers can get history in their scope\n- add AssetHistoryService/Controller:\n- - (new) GET /history/my for mobile feed\n- - moved GET /asset/:id/history from AssignmentController to AssetHistoryController\n- added new GET endpoints in catalog controller:\n- - /category/:id\n- - /type/:id\n"
+    },
+    {
+      "sha": "6b9f7bd070933237f327fe727625abf69146869f",
+      "date": "2026-03-13T03:46:13+05:00",
+      "author": "Ja'farbek Yusupov",
+      "email": "github.jafarbekyusupov@gmail.com",
+      "message": "refactor(asset/img): return raw file instead of url\n\nnew GET endpoint for asset img instead of presigned url\n"
+    },
+    {
+      "sha": "77c4b051d21d846ecaa43c5b28c3e594f5de5342",
+      "date": "2026-03-13T01:01:13+05:00",
+      "author": "Ja'farbek Yusupov",
+      "email": "github.jafarbekyusupov@gmail.com",
+      "message": "refactor(otp): migrate mail otp logic from smtp to resend api\n\n- switched from spring-boot-starter-mail to resend api\n- resolved connection timeouts on ports 587/465 caused by digitalocean vps restrictions\n- upd env vars for api-based auth\n"
+    }
+  ],
+  "commit_sha": "ef912bf2497ac1254025d17caa0d2db3cb17f1ee",
+  "extracted_at": "2026-10-05T18:14:39.319534+00:00"
+}

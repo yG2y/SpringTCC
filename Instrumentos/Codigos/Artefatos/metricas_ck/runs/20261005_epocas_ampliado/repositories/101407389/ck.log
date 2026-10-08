@@ -1,0 +1,25 @@
+CK classes=3756 callback_errors=1
+
+log4j:WARN No appenders could be found for logger (com.github.mauricioaniche.ck.CK).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+CK_FILE_ERROR: /Users/gabrielferreiraamaral/Desktop/SpringTCC/Instrumentos/Codigos/Artefatos/metricas_ck/runs/20261005_epocas_ampliado/work/101407389-j9a5akvu/source/basic-skill-registry/custom/skills/entra-springboot-react-auth/examples/JwtAuthorityMapping.java
+java.util.EmptyStackException
+	at java.base/java.util.Stack.peek(Stack.java:101)
+	at com.github.mauricioaniche.ck.CKVisitor.visit(CKVisitor.java:131)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:652)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3312)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3383)
+	at org.eclipse.jdt.core.dom.ImplicitTypeDeclaration.accept0(ImplicitTypeDeclaration.java:115)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3312)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3383)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:257)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3312)
+	at com.github.mauricioaniche.ck.MetricsExecutor.acceptAST(MetricsExecutor.java:36)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.resolve(CompilationUnitResolver.java:1135)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.resolve(CompilationUnitResolver.java:779)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver$ECJCompilationUnitResolver.resolve(CompilationUnitResolver.java:84)
+	at org.eclipse.jdt.core.dom.ASTParser.createASTs(ASTParser.java:1122)
+	at com.github.mauricioaniche.ck.CK.calculate(CK.java:109)
+	at com.github.mauricioaniche.ck.CK.calculate(CK.java:59)
+	at AuditedCKRunner.main(AuditedCKRunner.java:20)

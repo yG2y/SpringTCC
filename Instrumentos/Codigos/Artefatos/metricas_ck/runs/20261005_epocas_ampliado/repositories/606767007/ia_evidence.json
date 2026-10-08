@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "0582bfbb765ee93dea9efb3f623edbaea55e26b6",
+      "date": "2025-08-13T19:08:03-05:00",
+      "author": "Bingyang Wei",
+      "email": "weibingyang@gmail.com",
+      "message": "Merge pull request #38 from Washingtonwei/spring-boot-3.5-upgrade\n\nUpgrade to Spring Boot 3.5.4."
+    },
+    {
+      "sha": "dd1e488f808188fc996e95bfb9d5303735447590",
+      "date": "2025-08-13T18:56:04-05:00",
+      "author": "Washingtonwei",
+      "email": "weibingyang@gmail.com",
+      "message": "Upgrade to Spring Boot 3.5.4.\n"
+    },
+    {
+      "sha": "5583a615ecf9efa6b71c40f2a38317810bb31336",
+      "date": "2024-12-21T10:34:15-06:00",
+      "author": "Bingyang Wei",
+      "email": "weibingyang@gmail.com",
+      "message": "Merge pull request #35 from Washingtonwei/spring-boot-3.4-upgrade\n\nUpgrade to Spring Boot 3.4.0."
+    },
+    {
+      "sha": "3fa4e263d47117ef2a62633f2940a7b53567157c",
+      "date": "2024-12-21T10:19:20-06:00",
+      "author": "Washingtonwei",
+      "email": "weibingyang@gmail.com",
+      "message": "Upgrade to Spring Boot 3.4.0.\n"
+    },
+    {
+      "sha": "4c92522b64d6546a2060a29a970fac7f8edb1990",
+      "date": "2024-12-19T11:54:32-06:00",
+      "author": "Bingyang Wei",
+      "email": "weibingyang@gmail.com",
+      "message": "Merge pull request #33 from Washingtonwei/spring-boot-3.3-upgrade\n\nUpgrade to Spring Boot 3.3.0."
+    },
+    {
+      "sha": "d0135bd2b92309832c833724e91a7839bd44dcbf",
+      "date": "2024-12-19T11:45:20-06:00",
+      "author": "Washingtonwei",
+      "email": "weibingyang@gmail.com",
+      "message": "Upgrade to Spring Boot 3.3.0.\n"
+    },
+    {
+      "sha": "df2acc876e0377f3eeb9fb11f31685186b0f7dc9",
+      "date": "2024-07-29T11:02:48-05:00",
+      "author": "Bingyang",
+      "email": "weibingyang@gmail.com",
+      "message": "Merge pull request #32 from Washingtonwei/password-change-jwt-revocation\n\nFix some typos in test cases and reword a comment in JwtInterceptor."
+    },
+    {
+      "sha": "7c7885c7b744afee19166c8d5d0713db43994f67",
+      "date": "2024-07-29T10:58:45-05:00",
+      "author": "Washingtonwei",
+      "email": "weibingyang@gmail.com",
+      "message": "Add DirtiesContext annotation to hogwarts user integration tests.\n"
+    },
+    {
+      "sha": "39bb035c8be4ae5a40ae3faa16b735e0e37a50ba",
+      "date": "2024-07-29T10:46:46-05:00",
+      "author": "Washingtonwei",
+      "email": "weibingyang@gmail.com",
+      "message": "Fix some typos in test cases and reword a comment in JwtInterceptor.\n"
+    },
+    {
+      "sha": "3253eb500319f6f18a9bc9b51a18d6678f556f40",
+      "date": "2024-07-26T23:31:13-05:00",
+      "author": "Bingyang",
+      "email": "weibingyang@gmail.com",
+      "message": "Merge pull request #31 from Washingtonwei/password-change-jwt-revocation\n\nImplement change passwords and revoke JWTs."
+    },
+    {
+      "sha": "4e9997cc7617ba28b60a00f8b76bffef09a9e1a8",
+      "date": "2024-07-26T23:26:07-05:00",
+      "author": "Washingtonwei",
+      "email": "weibingyang@gmail.com",
+      "message": "Implement change passwords and revoke JWTs.\n"
+    },
+    {
+      "sha": "b740fd9a18f8ca80f887ee7d7ed0817018778cad",
+      "date": "2024-07-20T22:02:56-05:00",
+      "author": "Bingyang",
+      "email": "weibingyang@gmail.com",
+      "message": "Merge pull request #30 from Washingtonwei/user-specific-data-access\n\nRestrict users to access their own data."
+    },
+    {
+      "sha": "69d567f8c38eea787ad0539c898383783c176fe0",
+      "date": "2024-07-20T21:57:03-05:00",
+      "author": "Washingtonwei",
+      "email": "weibingyang@gmail.com",
+      "message": "Restrict users to access their own data.\n"
+    },
+    {
+      "sha": "c5ff791b16b7e8eb6a994f5ad17a128a8b71a961",
+      "date": "2024-07-18T08:58:01-05:00",
+      "author": "Bingyang",
+      "email": "weibingyang@gmail.com",
+      "message": "Merge pull request #29 from Washingtonwei/artifact-image-upload\n\nAdd jackson-data-format-xml back, fix handleCustomBlobStorageExceptio…"
+    },
+    {
+      "sha": "595f8ea749b0ed542517e7f10cfdd030a8db04c7",
+      "date": "2024-07-18T08:54:19-05:00",
+      "author": "Washingtonwei",
+      "email": "weibingyang@gmail.com",
+      "message": "Add jackson-data-format-xml back, fix handleCustomBlobStorageException, change artifact imageUrls in DBDataInitializer.\n"
+    },
+    {
+      "sha": "5061e75ce80e2b63d5f98ea1f0515bcd34f53aba",
+      "date": "2024-07-16T12:39:04-05:00",
+      "author": "Bingyang",
+      "email": "weibingyang@gmail.com",
+      "message": "Merge pull request #28 from Washingtonwei/artifact-image-upload-update\n\nFix issues in artifact-image-upload branch."
+    },
+    {
+      "sha": "4184a21ff3856000a6eda1f5b2ae97a3ab26f93c",
+      "date": "2024-07-16T12:35:37-05:00",
+      "author": "Washingtonwei",
+      "email": "weibingyang@gmail.com",
+      "message": "Fix issues in artifact-image-upload branch.\n"
+    },
+    {
+      "sha": "6e83294e2896d957bd57c0625512656b3ae7b74e",
+      "date": "2024-07-14T22:57:21-05:00",
+      "author": "Bingyang",
+      "email": "weibingyang@gmail.com",
+      "message": "Merge pull request #27 from Washingtonwei/artifact-image-upload\n\nImplement upload image to Azure Blob Storage."
+    },
+    {
+      "sha": "7f20cc07390f8c20e111c01ebc3f281f7fc4ecb2",
+      "date": "2024-07-14T22:52:36-05:00",
+      "author": "washingtonwei",
+      "email": "weibingyang@gmail.com",
+      "message": "Implement upload image to Azure Blob Storage.\n"
+    },
+    {
+      "sha": "87d1f03c23ae9fcd43fef1968deda17ec23f41c0",
+      "date": "2024-04-24T15:06:17-05:00",
+      "author": "washingtonwei",
+      "email": "weibingyang@gmail.com",
+      "message": "Add a comment to azure-webapps-deploy.yml to remind to change the AZURE_WEBAPP_NAME.\n"
+    },
+    {
+      "sha": "0ea57c4a8d393332087355fa4a73b1dedd905776",
+      "date": "2024-03-13T22:49:46-05:00",
+      "author": "Bingyang",
+      "email": "weibingyang@gmail.com",
+      "message": "Merge pull request #26 from Washingtonwei/specifications\n\nImplement find artifacts by search criteria with Spring Data JPA Spec…"
+    },
+    {
+      "sha": "30457abb1b19cd2d1a648ce6bc3db41255ce079c",
+      "date": "2024-03-13T22:45:56-05:00",
+      "author": "washingtonwei",
+      "email": "weibingyang@gmail.com",
+      "message": "Implement find artifacts by search criteria with Spring Data JPA Specifications.\n"
+    },
+    {
+      "sha": "e17ffccfba466ab81ab2331d2870daf5e4805552",
+      "date": "2024-03-12T20:41:44-05:00",
+      "author": "washingtonwei",
+      "email": "weibingyang@gmail.com",
+      "message": "Update GitHub Actions setup-java to v4.\n"
+    },
+    {
+      "sha": "98e040a67af11fdb17c606c0d82a0e4099a02eee",
+      "date": "2024-03-12T20:32:35-05:00",
+      "author": "Bingyang",
+      "email": "weibingyang@gmail.com",
+      "message": "Merge pull request #25 from Washingtonwei/paging-sorting\n\nPaging sorting"
+    },
+    {
+      "sha": "bfa593b3885ae69bc148fb04df46041151c66927",
+      "date": "2024-03-12T20:25:27-05:00",
+      "author": "washingtonwei",
+      "email": "weibingyang@gmail.com",
+      "message": "Fix findAllArtifacts controller method test cases.\n"
+    },
+    {
+      "sha": "44d95325962645de4b2a3f77ce121555126f8d8a",
+      "date": "2024-03-12T19:13:43-05:00",
+      "author": "washingtonwei",
+      "email": "weibingyang@gmail.com",
+      "message": "Enhance findAllArtifacts with paging and sorting.\n"
+    },
+    {
+      "sha": "a007dda193d849e01fdf9434184a724934b035a3",
+      "date": "2023-12-22T19:59:35-06:00",
+      "author": "Bingyang",
+      "email": "weibingyang@gmail.com",
+      "message": "Merge pull request #22 from Washingtonwei/artifact-summarization\n\nIntegrate OpenAI API with RestClient for artifact data summarization."
+    },
+    {
+      "sha": "b0df7a1de5e7b21e0176215f39fdd22a219f76d8",
+      "date": "2023-12-22T19:53:56-06:00",
+      "author": "washingtonwei",
+      "email": "weibingyang@gmail.com",
+      "message": "Integrate OpenAI API with RestClient for artifact data summarization.\n"
+    },
+    {
+      "sha": "5147390808b14ae653e5a7481ae93fa8891e11d6",
+      "date": "2023-12-12T18:41:28-06:00",
+      "author": "Bingyang",
+      "email": "weibingyang@gmail.com",
+      "message": "Merge pull request #21 from Washingtonwei/spring-boot-3.2-upgrade\n\nUpgrade to Spring Boot 3.2.0."
+    },
+    {
+      "sha": "2d890d26b0b6b1001ed82faf1ea5a86b3fd84048",
+      "date": "2023-12-12T18:35:06-06:00",
+      "author": "washingtonwei",
+      "email": "weibingyang@gmail.com",
+      "message": "Upgrade to Spring Boot 3.2.0.\n"
+    }
+  ],
+  "commit_sha": "0582bfbb765ee93dea9efb3f623edbaea55e26b6",
+  "extracted_at": "2026-10-05T18:05:25.636068+00:00"
+}

@@ -1,0 +1,146 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 19,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "f99338b4e012008e3859feb394392c8542f6099f",
+      "date": "2025-08-11T11:32:01+02:00",
+      "author": "Mihai Dumitrescu",
+      "email": "mihaidumitrescujee@gmail.com",
+      "message": "Fix for https://github.com/midumitrescu/tiny/issues/10 (#11)\n\n1. Add method in ExceptionsController.java for handling MethodValidationResult, as suggested by https://docs.spring.io/spring-framework/reference/web/webmvc/mvc-controller/ann-validation.html"
+    },
+    {
+      "sha": "c28b1b552da708030383455f26abff8532167bb2",
+      "date": "2025-08-11T10:45:00+02:00",
+      "author": "Mihai Dumitrescu",
+      "email": "mihaidumitrescujee@gmail.com",
+      "message": "Fix for https://github.com/midumitrescu/tiny/issues/8 (#9)\n\n1. Improved readme\n2. Enabled swagger-ui"
+    },
+    {
+      "sha": "e794bb20f7bb4df94f40287ac7bcb2b130de1529",
+      "date": "2025-08-10T21:51:34+02:00",
+      "author": "Mihai Dumitrescu",
+      "email": "mihaidumitrescujee@gmail.com",
+      "message": "Fix StatsRestTest hanging. (#7)\n\nFix for https://github.com/midumitrescu/tiny/issues/6"
+    },
+    {
+      "sha": "7929594f50415bf27cbce964f4b7663e4d07c9a8",
+      "date": "2025-08-09T23:58:02+02:00",
+      "author": "Mihai Dumitrescu",
+      "email": "mihaidumitrescujee@gmail.com",
+      "message": "Configure ci. (#5)\n\nSigned-off-by: Mihai Dumitrescu <mihaidumitrescujee@gmail.com>"
+    },
+    {
+      "sha": "c608c1f8020feba99f8ed1c9a47f5911611fdccc",
+      "date": "2025-08-09T23:48:34+02:00",
+      "author": "Mihai Dumitrescu",
+      "email": "mihaidumitrescujee@gmail.com",
+      "message": "Configured ci. (#4)\n\nConfigured ci."
+    },
+    {
+      "sha": "408314ecf0c0dc33c3c6a9774e79d44bbac066c4",
+      "date": "2025-08-09T22:45:55+02:00",
+      "author": "Mihai Dumitrescu",
+      "email": "mihaidumitrescujee@gmail.com",
+      "message": "Merge pull request #2 from midumitrescu/1-upgrade-dependencies\n\nResolved 1"
+    },
+    {
+      "sha": "69ae8bf3e796517fd73a8460fb704d05c624e48d",
+      "date": "2025-08-09T22:44:24+02:00",
+      "author": "midumitrescu",
+      "email": "mihaidumitrescujee@gmail.com",
+      "message": "Resolved\n\n1. deprecated aspectjweaver not being found for spring-boot-started-jdbc by updating to spring-boot 3.5.4\n\n2. compilation errors due to javax.persistence not exiting anymore by replacing to newer jakarta.persistence\n\n3. compilation errors due to lombok not generating classes by adding it explicitly as annotation processor to maven surefire plugin\n\n4. test errors due to spring-validation not working (removed as dependency in boot 2.3.0) by adding spring-boot-starter-validation explicitly\n\n5. Disabled test StatsRestTest because test was hanging. I prefer to enable CI before fixing this in an upcoming MR.\n"
+    },
+    {
+      "sha": "65627aadd93a378a0f83aa7a040bbb7386e587f3",
+      "date": "2017-09-01T10:32:58+02:00",
+      "author": "Mihai-Aurelian Dumitrescu",
+      "email": "mihai-aurelian.dumitrescu@zalando.de",
+      "message": "Merge branch 'master' of github.com:midumitrescu/tiny\n"
+    },
+    {
+      "sha": "65acd2bb3553885fb7f006a4f1fde51fbfda29a3",
+      "date": "2017-09-01T10:32:33+02:00",
+      "author": "Mihai-Aurelian Dumitrescu",
+      "email": "mihai-aurelian.dumitrescu@zalando.de",
+      "message": "Small package refactor\n"
+    },
+    {
+      "sha": "a756b2089ce529ae3dec903d51cf2067c07bccd2",
+      "date": "2017-09-01T10:23:35+02:00",
+      "author": "Mihai Dumitrescu",
+      "email": "mihaidumitrescujee@gmail.com",
+      "message": "Create simple readme file"
+    },
+    {
+      "sha": "02b93edaab823cf1040dc804b893180c8a64ca6b",
+      "date": "2017-09-01T10:18:10+02:00",
+      "author": "Mihai-Aurelian Dumitrescu",
+      "email": "mihai-aurelian.dumitrescu@zalando.de",
+      "message": "Audit redirects\n"
+    },
+    {
+      "sha": "90c406090d0862db0012f19b16a5ebf39de3580e",
+      "date": "2017-09-01T09:46:53+02:00",
+      "author": "Mihai-Aurelian Dumitrescu",
+      "email": "mihai-aurelian.dumitrescu@zalando.de",
+      "message": "Correct service test\n"
+    },
+    {
+      "sha": "055ba369f5b20daf03bf38a4c5bbcb4eb5462957",
+      "date": "2017-08-31T19:33:09+02:00",
+      "author": "Mihai-Aurelian Dumitrescu",
+      "email": "mihai-aurelian.dumitrescu@zalando.de",
+      "message": "small refactorings\n"
+    },
+    {
+      "sha": "7c82b583896469d5f0b3f73f0755de8fce4966f9",
+      "date": "2017-08-31T19:24:11+02:00",
+      "author": "Mihai-Aurelian Dumitrescu",
+      "email": "mihai-aurelian.dumitrescu@zalando.de",
+      "message": "Creation & Redirect of tiny URLs\n"
+    },
+    {
+      "sha": "de059c533f9258e563face7e8405b79f8cba6f23",
+      "date": "2017-08-27T18:52:14+02:00",
+      "author": "Mihai-Aurelian Dumitrescu",
+      "email": "mihai-aurelian.dumitrescu@zalando.de",
+      "message": "Added negative tests for creating a tiny url\n"
+    },
+    {
+      "sha": "18bd3688d8255870e7ce813ef894dbacb233acf3",
+      "date": "2017-08-25T18:14:17+02:00",
+      "author": "Mihai-Aurelian Dumitrescu",
+      "email": "mihai-aurelian.dumitrescu@zalando.de",
+      "message": "Add test setup\n"
+    },
+    {
+      "sha": "6029c99bc5a65ec19ad9e8ca4f8c9fbd533237de",
+      "date": "2017-08-25T17:15:27+02:00",
+      "author": "Mihai-Aurelian Dumitrescu",
+      "email": "mihai-aurelian.dumitrescu@zalando.de",
+      "message": "Add test setup\n"
+    },
+    {
+      "sha": "9d535f8b6ab20ed2178599f8d871448020f96ba4",
+      "date": "2017-08-21T20:15:36+02:00",
+      "author": "Mihai-Aurelian Dumitrescu",
+      "email": "mihai-aurelian.dumitrescu@zalando.de",
+      "message": "Added swagger file\n"
+    },
+    {
+      "sha": "183d511f4a0ede06fbea165f15ae13678cda4910",
+      "date": "2017-08-21T19:07:51+02:00",
+      "author": "Mihai-Aurelian Dumitrescu",
+      "email": "mihai-aurelian.dumitrescu@zalando.de",
+      "message": "Initialized repository\n"
+    }
+  ],
+  "commit_sha": "f99338b4e012008e3859feb394392c8542f6099f",
+  "extracted_at": "2026-10-05T18:47:20.755351+00:00"
+}

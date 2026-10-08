@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "05d6308cd3756d8561745559262faf6d4f02e553",
+      "date": "2026-07-30T12:33:26+08:00",
+      "author": "Hccake",
+      "email": "chengbohua@foxmail.com",
+      "message": ":construction_worker: 发布前校验 Central POM 元数据\n"
+    },
+    {
+      "sha": "87ba87f3935b761e951e81a7a7b7c9cb5e230f35",
+      "date": "2026-07-30T12:09:48+08:00",
+      "author": "Hccake",
+      "email": "chengbohua@foxmail.com",
+      "message": ":bug: 修复 1.x Release 发布触发\n"
+    },
+    {
+      "sha": "813e2331cfdf4ef7b3def79af3b89f0f230a071f",
+      "date": "2026-07-30T11:15:20+08:00",
+      "author": "Hccake",
+      "email": "chengbohua@foxmail.com",
+      "message": ":construction_worker: 更新 1.x 发布入口\n"
+    },
+    {
+      "sha": "252420f48d86cf921a967e556ab6cd8f4dfb6a5d",
+      "date": "2026-04-30T23:57:00+08:00",
+      "author": "Hccake",
+      "email": "chengbohua@foxmail.com",
+      "message": ":zap: (desensitize) 性能优化 & 修复非 Cloud 环境脱敏装配问题\n\n- 为正则脱敏补充 null 保护，并缓存注解规则实例以减少反射开销\n- spring-cloud-context 为 optional 时，基础自动配置不再直接依赖 RefreshScope 和 RefreshScopeRefreshedEvent\n- 按 Cloud/非 Cloud 条件拆分核心 Bean：非 Cloud 使用普通 singleton，Cloud 保留 @RefreshScope 刷新能力\n- HolderBinder 暴露 bind()，启动绑定和刷新后重绑复用同一套静态 Holder 桥接逻辑\n- 补充自动配置测试，覆盖非 Cloud 启动绑定和 Cloud refresh scope 重绑场景\n"
+    },
+    {
+      "sha": "f782672fdb2e89d2655ab2922683ae45693f267a",
+      "date": "2026-04-30T22:43:28+08:00",
+      "author": "Hccake",
+      "email": "chengbohua@foxmail.com",
+      "message": ":zap: (datascope): 潜在风险修复\n\n- 修复 DataPermissionInterceptor 异常路径下 DataScopeMatchNumHolderDeque 堆积导致的 ThreadLocal 内存泄漏\n- 修复 DataPermissionInterceptor 中 INSERT 进入匹配计数路径，导致同一 mappedStatementId 的 UPDATE/DELETE 被错误加入跳过缓存的 bug\n- MappedStatementIdsWithoutDataScope：将 HashSet<String> 替换为ConcurrentHashMap.newKeySet()，修复高并发下 HashSet 结构损坏风险\n- AnnotationUtil：将 e.printStackTrace() 替换为 log.warn()，\n"
+    },
+    {
+      "sha": "f14381f274fe5b635b10623d744ba6ee98b6d77f",
+      "date": "2026-04-30T22:41:17+08:00",
+      "author": "Hccake",
+      "email": "chengbohua@foxmail.com",
+      "message": ":bug: (mybatis-plus) 多个问题优化\n\n- 修复 ExtendServiceImpl.saveBatchSomeColumn 末批数据静默丢失的 bug（isEmpty 误用应为 isNotEmpty）\n- 修复 BaseServiceImpl 泛型反射使用了错误的 stopClass（ExtendServiceImpl -> BaseServiceImpl）\n- 修复 InsertOrUpdateByBatch.predicate 为 null 时的 NPE 风险，添加默认值\n- InsertOrUpdateFieldByBatch 添加 Javadoc 警告，禁止将用户输入直接赋值给 item.val\n"
+    },
+    {
+      "sha": "fb127a8e3c4ff638194323c6d547b858c745e55c",
+      "date": "2026-04-30T22:00:43+08:00",
+      "author": "Hccake",
+      "email": "chengbohua@foxmail.com",
+      "message": ":green_heart: 添加 spring-javaformat 插件\n"
+    },
+    {
+      "sha": "e01e4995506a51deb04bcb138a59fd72e46b7e07",
+      "date": "2026-04-30T22:00:20+08:00",
+      "author": "Hccake",
+      "email": "chengbohua@foxmail.com",
+      "message": ":see_no_evil: 忽略 .gitnexus\n"
+    },
+    {
+      "sha": "e936e97776527d0b7bf9e1cf7ba36cf1f7c9f0b0",
+      "date": "2026-04-30T21:59:45+08:00",
+      "author": "Hccake",
+      "email": "chengbohua@foxmail.com",
+      "message": ":zap: (web) 改进优化 & 问题修复\n\n- 修复 ActuatorSecurityFilter 中 Long.parseLong 未捕获 NumberFormatException，非法时间戳直接返回 false\n- ActuatorSecurityFilter 新增时钟偏差容忍（允许调用方快 30s），修复时间窗口单向判断的逻辑缺陷\n- 修复 NoticeGlobalExceptionHandler 中 requestUri 实例字段在高并发下的竞态条件，改用内部类 ThrowableWithContext 随异常一并入队\n- PageParamArgumentResolverSupport 补充 size <= 0 和 page <= 0 的下限校验，防止负数分页绕过触发全表扫描\n- TraceIdFilter 对请求头中的 TraceId 做格式白名单校验，防止换行符注入污染日志\n- 修正 AbstractAccessLogFilter 中 SLF4J 日志格式字符串（%s 替换为直接传 Throwable）\n"
+    },
+    {
+      "sha": "9e18416467d1c26cb0c17d59da5fde717b004951",
+      "date": "2026-04-30T21:40:57+08:00",
+      "author": "Hccake",
+      "email": "chengbohua@foxmail.com",
+      "message": ":bug: (websocket) 收紧自动配置装配条件\n\n- 仅在启用 map-session 时创建默认 WebSocketSessionStore。\n- 按类型退让默认 WebSocketHandler 和 WebSocketConfigurer，保留业务覆盖入口。\n- 补充自动配置上下文测试，覆盖 map-session、用户覆盖和可选依赖场景。\n"
+    },
+    {
+      "sha": "2e18fc66ed4039932cb1f6fcb28b6b22956e5986",
+      "date": "2026-04-30T21:34:08+08:00",
+      "author": "Hccake",
+      "email": "chengbohua@foxmail.com",
+      "message": ":bug: (websocket) 修复消息处理和会话管理问题\n\n- 修复 JSON 消息缺少 type 时异常中断的问题。\n- 修复会话存储器的空依赖校验和并发竞态。\n- 调整 Redis/RocketMQ 分发行为\n- redis 分发订阅降级为 ChannelTopic\n"
+    },
+    {
+      "sha": "c0f9d89c42a3c777153658810f4e023b439cc289",
+      "date": "2026-04-30T20:13:41+08:00",
+      "author": "Hccake",
+      "email": "chengbohua@foxmail.com",
+      "message": ":bug: (xss) 问题修复\n\n- 修复 XssRequestWrapper.getAttribute() 丢弃 XSS 清洗结果的 bug\n- 修复当路径不在包含的 includePaths 配置中也会错误的走 xss filter 的问题\n"
+    },
+    {
+      "sha": "dbab83de060795e29b4526b4f08b7240124d7462",
+      "date": "2026-04-30T19:57:00+08:00",
+      "author": "Hccake",
+      "email": "chengbohua@foxmail.com",
+      "message": ":lock: 安全加固\n\n- 移除 LoginPasswordDecoderFilter 错误日志中的 AES 密钥和密文明文\n- 修复 ApiSignatureFilter 中 secretKey 空检查误用 accessKey 变量的 bug\n- FieldCryptProperties 的 aesKey 字段添加 @ToString.Exclude 防止密钥泄露\n"
+    },
+    {
+      "sha": "247f93db85ee3d0d043f4be3a0a5be1e55f267d5",
+      "date": "2026-03-03T13:50:10+08:00",
+      "author": "Hccake",
+      "email": "chengbohua@foxmail.com",
+      "message": ":sparkles: (desensitize) 添加脱敏 brenchmarks 模块\n"
+    },
+    {
+      "sha": "530df6624a10da1967eed716f5f9d89e40674330",
+      "date": "2026-03-03T13:40:02+08:00",
+      "author": "Hccake",
+      "email": "chengbohua@foxmail.com",
+      "message": ":sparkles: (desensitize) 添加脱敏 starter\n"
+    },
+    {
+      "sha": "a4514da271e2ff1b7e4663beadc2a13bc37d96a9",
+      "date": "2026-03-03T11:15:01+08:00",
+      "author": "Hccake",
+      "email": "chengbohua@foxmail.com",
+      "message": ":sparkles: (desensitize) 添加 logback 脱敏模块\n"
+    },
+    {
+      "sha": "aa8f3b1e03a728d0d07171b09a2589fed2fb2a13",
+      "date": "2026-03-03T10:31:26+08:00",
+      "author": "Hccake",
+      "email": "chengbohua@foxmail.com",
+      "message": ":sparkles: (desensitize) 添加高性能的长文本脱敏处理支持\n"
+    },
+    {
+      "sha": "c723667adb3a48aa0c2bdcb430461513207a53e3",
+      "date": "2026-03-03T10:28:11+08:00",
+      "author": "Hccake",
+      "email": "chengbohua@foxmail.com",
+      "message": ":art: (desensitize) 调整 test 包名，保持一致\n"
+    },
+    {
+      "sha": "3fb114341a754dbd1e434a1f1e3cfcca37d20869",
+      "date": "2025-11-13T23:23:48+08:00",
+      "author": "Hccake",
+      "email": "chengbohua@foxmail.com",
+      "message": ":green_heart: 修正依赖 bom 引入顺序\n"
+    },
+    {
+      "sha": "3b8eab56e0279e985cf15e8dd9ebec891107e4e0",
+      "date": "2025-11-13T23:21:52+08:00",
+      "author": "Hccake",
+      "email": "chengbohua@foxmail.com",
+      "message": ":construction_worker: 添加 maven-resources-plugin 的版本管理，修复编译告警\n"
+    },
+    {
+      "sha": "1e484a831c6b72318e12f1c29b96348898494e19",
+      "date": "2025-11-13T23:19:07+08:00",
+      "author": "Hccake",
+      "email": "chengbohua@foxmail.com",
+      "message": ":sparkles: (fieldcrypt) 添加数据库字段加解密组件的 starter\n"
+    },
+    {
+      "sha": "bc413e84f8070053546acfe313a74b54437d4b55",
+      "date": "2025-11-12T23:23:16+08:00",
+      "author": "Hccake",
+      "email": "chengbohua@foxmail.com",
+      "message": ":recycle: (fieldcrypt) 优化加密代码逻辑，提升代码可读性 & 支持 Set 类型参数的加密\n"
+    },
+    {
+      "sha": "8c264507976a008dfa4141c871a43ec85f5d4dc5",
+      "date": "2025-11-10T11:41:35+08:00",
+      "author": "Hccake",
+      "email": "chengbohua@foxmail.com",
+      "message": ":art: (fieldcrypt) 优化代码结构，提升代码可读性 & 增加些许单元测试用例\n"
+    },
+    {
+      "sha": "612ad4dfa4c6922b017dd3d47ef4953c40a4b872",
+      "date": "2025-11-09T21:19:38+08:00",
+      "author": "Hccake",
+      "email": "chengbohua@foxmail.com",
+      "message": ":sparkles: (fieldcrypt) 添加数据库字段加解密组件 mybatis-plus 模块\n"
+    },
+    {
+      "sha": "a2b781196bfb37da97a40988dba0e58a14e77c8c",
+      "date": "2025-11-08T22:02:31+08:00",
+      "author": "Hccake",
+      "email": "chengbohua@foxmail.com",
+      "message": ":sparkles: (fieldcrypt) 添加数据库字段加解密组件 mybatis 模块\n"
+    },
+    {
+      "sha": "2ee75c3d01c70fcb050d141a72c987fa1590b9d7",
+      "date": "2025-11-07T21:54:06+08:00",
+      "author": "Hccake",
+      "email": "chengbohua@foxmail.com",
+      "message": ":memo: (README) 添加 SNAPSHOT 快照仓库仓库使用提示\n"
+    },
+    {
+      "sha": "5d90ba4c4ed2a92452753f33649943628de8d034",
+      "date": "2025-11-07T21:53:02+08:00",
+      "author": "Hccake",
+      "email": "chengbohua@foxmail.com",
+      "message": ":sparkles: (fieldcrypt) 完成数据库字段加解密组件的核心模块\n"
+    },
+    {
+      "sha": "d62c3540ca0dc211b6564bd67dc7b6e72d06e767",
+      "date": "2025-11-07T21:51:52+08:00",
+      "author": "Hccake",
+      "email": "chengbohua@foxmail.com",
+      "message": ":wrench: (api-signature) 修正配置文件的 prefix\n"
+    },
+    {
+      "sha": "d716a44ee86974aadd06f8eb72975412c07e6040",
+      "date": "2025-10-28T17:11:24+08:00",
+      "author": "f-404",
+      "email": "f-404@noreply.gitcode.com",
+      "message": "修复StringUtils.isAnyBlank方法的逻辑错误\n\nSigned-off-by: f-404 <f-404@noreply.gitcode.com>"
+    },
+    {
+      "sha": "ff503248c53f3ad3ad71b9f1e25200cf8bae07ed",
+      "date": "2025-11-05T18:35:57+08:00",
+      "author": "Hccake",
+      "email": "chengbohua@foxmail.com",
+      "message": ":green_heart: 升级 GPG 插件到最新版本，并将非交互式设置配置在插件中\n"
+    }
+  ],
+  "commit_sha": "05d6308cd3756d8561745559262faf6d4f02e553",
+  "extracted_at": "2026-10-05T17:57:20.687910+00:00"
+}

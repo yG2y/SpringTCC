@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "863a9509f5bab7b217f83920607102d7d390e179",
+      "date": "2026-09-18T14:02:37+08:00",
+      "author": "yangfan",
+      "email": "982465979@qq.com",
+      "message": "add version\n"
+    },
+    {
+      "sha": "5aedda61123de318b2fe2044bd317794f2e73eb3",
+      "date": "2026-09-17T16:46:09+08:00",
+      "author": "yangfan",
+      "email": "982465979@qq.com",
+      "message": "attrs清空移动到事件处理后\n"
+    },
+    {
+      "sha": "8df85c52770cd8dc118f5d478b192581257e847e",
+      "date": "2026-09-17T13:57:03+08:00",
+      "author": "yangfan",
+      "email": "982465979@qq.com",
+      "message": "数据长度为0时直接返回-1\n"
+    },
+    {
+      "sha": "2f249525b11c2e096f82e6a9febcf46e3e05b754",
+      "date": "2026-09-17T11:00:42+08:00",
+      "author": "yangfan",
+      "email": "982465979@qq.com",
+      "message": "update version\n"
+    },
+    {
+      "sha": "a93a2a78ea337e68b5be46e3edb7ac8a5c4f2f7c",
+      "date": "2026-09-17T10:55:22+08:00",
+      "author": "yangfan",
+      "email": "982465979@qq.com",
+      "message": "一出显示引入misc包\n"
+    },
+    {
+      "sha": "3cfecda5b8edea946e5bc28351af8f19cd6f8a8f",
+      "date": "2026-09-16T14:04:58+08:00",
+      "author": "yangfan",
+      "email": "982465979@qq.com",
+      "message": "fix bug: 部分方法未自动扩容问题\n"
+    },
+    {
+      "sha": "a0b7b26aeb2bd502353d8a50931bf1feefeb5971",
+      "date": "2026-08-12T17:19:55+08:00",
+      "author": "yangfan",
+      "email": "982465979@qq.com",
+      "message": "测试\n"
+    },
+    {
+      "sha": "25a283e5815b7fd21585217c748c5b798f54d886",
+      "date": "2026-08-12T16:46:14+08:00",
+      "author": "yangfan",
+      "email": "982465979@qq.com",
+      "message": "调整两个队列\n"
+    },
+    {
+      "sha": "79379719eaa19d442195d916c986bb8399edaff9",
+      "date": "2026-08-07T14:25:17+08:00",
+      "author": "yangfan",
+      "email": "982465979@qq.com",
+      "message": "ssl 移动到tcp内部\n"
+    },
+    {
+      "sha": "0724a01ed677912307a3aaa5c9217b2caa6d6cbf",
+      "date": "2026-07-28T11:13:50+08:00",
+      "author": "yangfan",
+      "email": "982465979@qq.com",
+      "message": "HttpSyncResponse 优化\n"
+    },
+    {
+      "sha": "9a30abffd5de1f9042efcb5d2c2292e07cc6358d",
+      "date": "2026-07-21T13:33:30+08:00",
+      "author": "yangfan",
+      "email": "982465979@qq.com",
+      "message": "优化有参数名取数组\n"
+    },
+    {
+      "sha": "0d16f9d28916f81a055798017825f15c7e471296",
+      "date": "2026-07-20T14:04:33+08:00",
+      "author": "yangfan",
+      "email": "982465979@qq.com",
+      "message": "清理客户端session\n"
+    },
+    {
+      "sha": "69a6fb60dc73bae71be4894eb26429416a240f68",
+      "date": "2026-07-16T16:12:43+08:00",
+      "author": "yangfan",
+      "email": "982465979@qq.com",
+      "message": "修改轮训为 HashedWheelTimer\n"
+    },
+    {
+      "sha": "29871c4b41256d58a2a30a8d522a4a2c4ce14929",
+      "date": "2026-07-16T10:27:17+08:00",
+      "author": "yangfan",
+      "email": "982465979@qq.com",
+      "message": "优化\n"
+    },
+    {
+      "sha": "f39afb0faa62acfb4f95ee8f6845abd267190221",
+      "date": "2026-07-15T18:03:37+08:00",
+      "author": "yangfan",
+      "email": "982465979@qq.com",
+      "message": "nio udp 客户端和服务端框架\n"
+    },
+    {
+      "sha": "06e112a8e663d5ce388aa843edaf99d322c7214b",
+      "date": "2026-07-15T18:00:35+08:00",
+      "author": "yangfan",
+      "email": "982465979@qq.com",
+      "message": "删掉锁 优化逻辑\n"
+    },
+    {
+      "sha": "226db5dedf13c61f7812ef9cf3d82400787fed98",
+      "date": "2026-07-15T11:17:25+08:00",
+      "author": "yangfan",
+      "email": "982465979@qq.com",
+      "message": "清理session\n"
+    },
+    {
+      "sha": "d6925a86d33b15f1a13aaaa97c8aa8a1a812e8d2",
+      "date": "2026-07-15T11:05:15+08:00",
+      "author": "yangfan",
+      "email": "982465979@qq.com",
+      "message": "udp 服务器, 广播相关\n"
+    },
+    {
+      "sha": "e355bb0bd9a03306e18c1c2f95a789f2d7bba443",
+      "date": "2026-07-15T10:58:39+08:00",
+      "author": "yangfan",
+      "email": "982465979@qq.com",
+      "message": "增加udp兼容+ IoProcess继承AutoCloseable\n"
+    },
+    {
+      "sha": "7d7496721206053cd116298ed90688c676532101",
+      "date": "2026-07-14T14:05:56+08:00",
+      "author": "yangfan",
+      "email": "982465979@qq.com",
+      "message": "广播+组播\n"
+    },
+    {
+      "sha": "b9183dffdbeba5802bc165848f6b30166ecafc66",
+      "date": "2026-07-14T14:02:27+08:00",
+      "author": "yangfan",
+      "email": "982465979@qq.com",
+      "message": "广播+组播\n"
+    },
+    {
+      "sha": "c5cf6cd72970f7c125c53cba664e6e4edd6451db",
+      "date": "2026-07-14T11:19:42+08:00",
+      "author": "yangfan",
+      "email": "982465979@qq.com",
+      "message": "增加校验\n"
+    },
+    {
+      "sha": "c45526f050cfbdccadf5ba091aaacc6342750478",
+      "date": "2026-07-10T15:58:57+08:00",
+      "author": "yangfan",
+      "email": "982465979@qq.com",
+      "message": "todo\n"
+    },
+    {
+      "sha": "2b7daaa942090ffa556c2e27d71978038c444618",
+      "date": "2026-07-10T15:58:43+08:00",
+      "author": "yangfan",
+      "email": "982465979@qq.com",
+      "message": "fix bug: 判断逻辑问题\n"
+    },
+    {
+      "sha": "cdee46868ec5b63a90620787048cb8da8e8a8192",
+      "date": "2026-07-10T15:58:20+08:00",
+      "author": "yangfan",
+      "email": "982465979@qq.com",
+      "message": "增加nio tcp客户端, 优化结构\n"
+    },
+    {
+      "sha": "af54b065403f5c9873bfe964cde9b01eb35df711",
+      "date": "2026-07-10T15:54:58+08:00",
+      "author": "yangfan",
+      "email": "982465979@qq.com",
+      "message": "优化\n"
+    },
+    {
+      "sha": "ee5c43d1bd3608aa19163551ae42452de73b7597",
+      "date": "2026-07-10T15:52:49+08:00",
+      "author": "yangfan",
+      "email": "982465979@qq.com",
+      "message": "增加websocket 帧大小限制, 默认16kb\n"
+    },
+    {
+      "sha": "1eaa8c82ea7719ebd529fef3eebfdeb29cca2c3e",
+      "date": "2026-07-10T15:51:19+08:00",
+      "author": "yangfan",
+      "email": "982465979@qq.com",
+      "message": "优化错误提示\n"
+    },
+    {
+      "sha": "0b152f5857b14a6e401228c3cf0b8f20e8248039",
+      "date": "2026-07-10T15:50:52+08:00",
+      "author": "yangfan",
+      "email": "982465979@qq.com",
+      "message": "fix bug: ???\n"
+    },
+    {
+      "sha": "513e35699c95c4822a0976d64432b3bc2f54a5ad",
+      "date": "2026-07-10T15:49:56+08:00",
+      "author": "yangfan",
+      "email": "982465979@qq.com",
+      "message": "fix bug: 逻辑判断优化\n"
+    }
+  ],
+  "commit_sha": "863a9509f5bab7b217f83920607102d7d390e179",
+  "extracted_at": "2026-10-05T18:29:45.458270+00:00"
+}

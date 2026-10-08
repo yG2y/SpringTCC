@@ -1,0 +1,36 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "4.1.0;4.1.1",
+  "spring_boot_major": "4",
+  "java_versions_declared": "",
+  "build_evidence": [
+    {
+      "file": "cosid-spring-boot-starter/build.gradle.kts",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "examples/cosid-example-proxy/build.gradle.kts",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "examples/cosid-example-redis-cosid/build.gradle.kts",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "examples/cosid-example-redis/build.gradle.kts",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "examples/cosid-example-zookeeper/build.gradle.kts",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "gradle/libs.versions.toml",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "proxy/cosid-proxy-server/build.gradle.kts",
+      "artifact": "Gradle Spring Boot declaration"
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "3cefbfe631b295b010a881ae8e2a4a045fc08067",
+      "date": "2023-12-07T18:35:50+01:00",
+      "author": "Michal Zeman",
+      "email": "zeman.michal@yahoo.com",
+      "message": "Merge pull request #9 from michalzeman/dependabot/maven/com.fasterxml.jackson.core-jackson-databind-2.12.7.1\n\nBump jackson-databind from 2.11.2 to 2.12.7.1"
+    },
+    {
+      "sha": "1fb9da5236fd6bfcc574c58be3b94dacddb5aaf7",
+      "date": "2023-03-05T09:32:35+01:00",
+      "author": "zemo",
+      "email": "zeman.michal@yahoo.com",
+      "message": "Update README typo correction\n"
+    },
+    {
+      "sha": "29327cecf749ef419ceb6bbc8a1762d9437aeb7a",
+      "date": "2022-11-16T01:47:59Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump jackson-databind from 2.11.2 to 2.12.7.1\n\nBumps [jackson-databind](https://github.com/FasterXML/jackson) from 2.11.2 to 2.12.7.1.\n- [Release notes](https://github.com/FasterXML/jackson/releases)\n- [Commits](https://github.com/FasterXML/jackson/commits)\n\n---\nupdated-dependencies:\n- dependency-name: com.fasterxml.jackson.core:jackson-databind\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "a7b801d70d2ad9ccaae13ced4aa8a09f1d456e77",
+      "date": "2022-07-30T19:10:18+02:00",
+      "author": "zemo",
+      "email": "zeman.michal@yahoo.com",
+      "message": "Update README with information and steps needed to build and run all microservices\n"
+    },
+    {
+      "sha": "82015574d40664a030cbede0b7cf7994bf6b0ef2",
+      "date": "2021-08-22T18:06:12+02:00",
+      "author": "michalzeman",
+      "email": "zeman.michal@yahoo.com",
+      "message": "Add docker-compose run script and small code clean up\n"
+    },
+    {
+      "sha": "7217bd22e5dec4ecf06f2abe3056693d6486ce03",
+      "date": "2020-09-12T14:11:08+02:00",
+      "author": "michalzeman",
+      "email": "zeman.michal@yahoo.com",
+      "message": "Add DocumentReadOnlyRepository for reading of some kafka topic as global read only storage\n\n  - shortener service uses it for reading of user document kafka topic and validation if user exists or not\n"
+    },
+    {
+      "sha": "b950d4220bf11694d479d2aa5fa03e9545f48290",
+      "date": "2020-09-01T21:40:56+02:00",
+      "author": "michalzeman",
+      "email": "zeman.michal@yahoo.com",
+      "message": "Refactor kafka API to Kafka Reactor\n\nRefactor kafka API to Kafka Reactor\n"
+    },
+    {
+      "sha": "4ea7e6d7e9fc76810e96be9e1a606d1224df365a",
+      "date": "2020-08-31T20:06:57+02:00",
+      "author": "michalzeman",
+      "email": "zeman.michal@yahoo.com",
+      "message": "Update spring boot version, fix docker configuration\n"
+    },
+    {
+      "sha": "8d9b8e38a6a8b540c8f6fcd9991c4a87adce7e21",
+      "date": "2020-08-10T07:03:05+02:00",
+      "author": "Michal Zeman",
+      "email": "",
+      "message": "correction\n"
+    },
+    {
+      "sha": "746a5f795ccd7bb28e7c085de10799d2a5591291",
+      "date": "2020-07-26T19:41:15+02:00",
+      "author": "Michal Zeman",
+      "email": "",
+      "message": "Try refactoring and small improvements\n"
+    },
+    {
+      "sha": "f82954be370491190bbbcb44709e779a868ad459",
+      "date": "2019-11-30T12:31:26+01:00",
+      "author": "Michal Zeman",
+      "email": "",
+      "message": "routes handlers refactoring\n"
+    },
+    {
+      "sha": "eed36724d47d8fec9566fadf22f07efd54741de6",
+      "date": "2019-08-10T22:55:18+02:00",
+      "author": "Michal Zeman",
+      "email": "",
+      "message": "AggregatePersistenceActor fixing of behavior for case when aggregate isn't updated\n"
+    },
+    {
+      "sha": "f52f9e0d1520fa4ad931c9bc76ae1ebab028bd2d",
+      "date": "2019-08-10T19:54:22+02:00",
+      "author": "Michal Zeman",
+      "email": "",
+      "message": "UserMapper refactoring\n"
+    },
+    {
+      "sha": "94b0807ab9189ef6d6e9b8f2a63bab7e716b7fad",
+      "date": "2019-08-04T17:01:50+02:00",
+      "author": "Michal Zeman",
+      "email": "",
+      "message": "Statistic service -> add subscriber for user-changed topic\n"
+    },
+    {
+      "sha": "c0b452607abf7308fd434db58a8018429c952a2b",
+      "date": "2019-08-04T11:24:38+02:00",
+      "author": "Michal Zeman",
+      "email": "",
+      "message": "change cardinality for User.shorteners from 0..1 to 0..N\n"
+    },
+    {
+      "sha": "91465459da56ae93895caf74057522a2ec03397d",
+      "date": "2019-07-29T07:29:52+02:00",
+      "author": "Michal Zeman",
+      "email": "zeman.michal@yahoo.com",
+      "message": "Refactoring of aggregate persistence module\n"
+    },
+    {
+      "sha": "c66d39aae90101a85acf0e054c5de76e47b8953b",
+      "date": "2019-06-26T14:21:11+02:00",
+      "author": "Michal Zeman",
+      "email": "",
+      "message": "refactoring of common api\n"
+    },
+    {
+      "sha": "0e85dd0af837c9ac9316536399a029fb20eca494",
+      "date": "2019-06-16T21:20:53+02:00",
+      "author": "Michal Zeman",
+      "email": "",
+      "message": "Java 11 migration, docker images\n"
+    },
+    {
+      "sha": "3deeb8432967db75822080368941a99df53b7b51",
+      "date": "2019-06-16T20:24:04+02:00",
+      "author": "Michal Zeman",
+      "email": "",
+      "message": "Migration to java 11 without modules\n"
+    },
+    {
+      "sha": "c2462e09809b3860e84bc2d1e39d5babccb4baf8",
+      "date": "2019-04-27T21:25:02+02:00",
+      "author": "Michal Zeman",
+      "email": "",
+      "message": "Add DomainEvent -> aggregateId for publishing into the Kafka topic's key for better partition balancing\n"
+    },
+    {
+      "sha": "5ccdda7e553befe269c049753fb1e6dcc9ec6f80",
+      "date": "2019-04-08T08:15:36+02:00",
+      "author": "Michal Zeman",
+      "email": "",
+      "message": "kafka volume\n"
+    },
+    {
+      "sha": "bb7617f41ce67b656dc33f4cf213129a3c68708a",
+      "date": "2019-04-07T14:47:28+02:00",
+      "author": "Michal Zeman",
+      "email": "",
+      "message": "Json correction for ser. of Optional improvements\n"
+    },
+    {
+      "sha": "bebf0be15771eaacbd66eabc859ad8c82a70bdfc",
+      "date": "2019-04-07T09:15:30+02:00",
+      "author": "Michal Zeman",
+      "email": "",
+      "message": "mongoDB for akka persistence\n"
+    },
+    {
+      "sha": "d60a1b54823173ed79f75dc47cad41ac381aeec9",
+      "date": "2019-04-05T16:55:19+02:00",
+      "author": "Michal Zeman",
+      "email": "",
+      "message": "add some unit tests\n"
+    },
+    {
+      "sha": "052be6a7caf873488d69d142b062715caf4730df",
+      "date": "2019-04-05T13:28:01+02:00",
+      "author": "Michal Zeman",
+      "email": "",
+      "message": "Add shortener to user\n"
+    },
+    {
+      "sha": "0cef3ffaa66b190f4e3ff20a3253f533ef1631b9",
+      "date": "2019-04-05T09:34:02+02:00",
+      "author": "Michal Zeman",
+      "email": "",
+      "message": "PersistenceFactory correction\n"
+    },
+    {
+      "sha": "5acd4afe11c675fac25e6797ea1c03c1009fe814",
+      "date": "2019-04-05T09:30:40+02:00",
+      "author": "Michal Zeman",
+      "email": "",
+      "message": "PersistenceFactory correction\n"
+    },
+    {
+      "sha": "4b89a28fae038d562b2b3dd1e2d4a1521d98310c",
+      "date": "2019-04-04T21:01:53+02:00",
+      "author": "Michal Zeman",
+      "email": "",
+      "message": "description correction\n"
+    },
+    {
+      "sha": "54ab4eb6ffc3b66e5f8b6b84688a91b4503ba6c5",
+      "date": "2019-04-04T20:59:15+02:00",
+      "author": "Michal Zeman",
+      "email": "",
+      "message": "- Add Akka persistence for true event sourcing\n- Refactoring Aggregates according to akka persistence\n- refactoring according to CQRS pattern\n"
+    },
+    {
+      "sha": "3f06adcd57afce6ccd87c389772c6aba09bd42dc",
+      "date": "2019-03-24T14:44:01+01:00",
+      "author": "Michal Zeman",
+      "email": "",
+      "message": "Match Test\n"
+    }
+  ],
+  "commit_sha": "3cefbfe631b295b010a881ae8e2a4a045fc08067",
+  "extracted_at": "2026-10-05T18:48:15.477958+00:00"
+}

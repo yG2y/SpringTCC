@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "2fea6569a735bfe4f60f5dfa78eac415aed22119",
+      "date": "2024-11-02T07:09:21+08:00",
+      "author": "rutine",
+      "email": "rutine@163.com",
+      "message": "要点\n1. 更新spring-cloud-alibaba版本依赖\n2. 更新启动脚本命令，调整打包结构\n3. core模块新增feign自定义自动配置\n"
+    },
+    {
+      "sha": "5882db820bf620e3a2aa59d37de2900cacd229a2",
+      "date": "2024-10-26T08:09:59+08:00",
+      "author": "rutine",
+      "email": "rutine@163.com",
+      "message": "要点\n1. 新增gateway网关服务模块(试验性)\n2. 引入knife4j接口文档\n3. 优化打包逻辑\n"
+    },
+    {
+      "sha": "66f2b024a136a054583b388bb2ff780b9569555f",
+      "date": "2024-09-07T21:02:33+08:00",
+      "author": "rutine",
+      "email": "rutine@163.com",
+      "message": "要点\n1. 安全风险 升级dom4j版本到2.1.4, mysql连接库到8.0.28\n"
+    },
+    {
+      "sha": "aa6bd3757605aff9f524526bd8468486f7166ba3",
+      "date": "2024-08-24T08:47:50+08:00",
+      "author": "rutine",
+      "email": "rutine@163.com",
+      "message": "要点\n1. 整体升级spring 版本位2.7.18\n2. JwtFilter 用户认证信息提取和设置上下文\n3. 更新文档说明\n"
+    },
+    {
+      "sha": "353e45fa73405db1563f4d496d2836dbbd43c6a1",
+      "date": "2024-08-18T21:08:31+08:00",
+      "author": "rutine",
+      "email": "rutine@163.com",
+      "message": "要点\n1. 新增jwt登录\n"
+    },
+    {
+      "sha": "9e978c57868e73de44da42a669466ecbf4d20778",
+      "date": "2024-08-11T21:17:46+08:00",
+      "author": "rutine",
+      "email": "rutine@163.com",
+      "message": "要点\n1. pom依赖配置bug\n"
+    },
+    {
+      "sha": "4dc594683395e8c3a78eaea838cf79c519a1ab4e",
+      "date": "2024-08-11T21:03:50+08:00",
+      "author": "rutine",
+      "email": "rutine@163.com",
+      "message": "要点\n1. 调整pom依赖scope配置\n"
+    },
+    {
+      "sha": "582e25398a50029778176f02f5796cf04ee0bf4a",
+      "date": "2024-08-04T07:08:52+08:00",
+      "author": "rutine",
+      "email": "rutine@163.com",
+      "message": "要点\n1. 去掉SQL指定schema\n2. 延迟加载和刷新权限过滤资源\n3. 整理自运行脚本和打包\n"
+    },
+    {
+      "sha": "c941e56df4286fc44adfe7c401a1b8c45d20124c",
+      "date": "2024-07-28T09:08:56+08:00",
+      "author": "rutine",
+      "email": "rutine@163.com",
+      "message": "要点\n1. 最新数据结构设计上传\n2. 更新文档说明\n3. 移除不必要类和修复一些bug\n"
+    },
+    {
+      "sha": "032641b188b3f0ab9154be2a3482687fe552f331",
+      "date": "2024-07-07T15:50:18+08:00",
+      "author": "rutine",
+      "email": "rutine@163.com",
+      "message": "要点\n1. 注册功能, 注册后自动授权体验角色\n2. 更新insert语句为动态SQL写法\n3. 用户权限不大于组织角色拥有的权限\n4. 一些类名更改和修复一些bug\n"
+    },
+    {
+      "sha": "297ec5aff4a35f7b537a1c161657e0e62c9caf16",
+      "date": "2024-06-30T20:08:11+08:00",
+      "author": "rutine",
+      "email": "rutine@163.com",
+      "message": "要点\n1. SQL增强, 通过权限注解, 自动增加租户过滤\n2. 日志记录结构小调整, 所有资源权限标识增加前缀res\n3. 修复了一些bug\n"
+    },
+    {
+      "sha": "7f53779c18269202e98821cb8355c30ec5621e21",
+      "date": "2024-06-23T11:35:03+08:00",
+      "author": "rutine",
+      "email": "rutine@163.com",
+      "message": "修改点\n1. 调整creator updator字段存储值改为用户id\n2. 登录除了手机号和邮箱外，增加支持用户号\n3. 实体string类型 set方法统一对非空值trim\n"
+    },
+    {
+      "sha": "62f845f12dfe4e74a579ebde862a90de43b710ec",
+      "date": "2024-06-20T20:34:12+08:00",
+      "author": "rutine",
+      "email": "rutine@163.com",
+      "message": "权限控制逻辑更新\n1. 操作权限更改为资源权限控制, 实现细粒度权限控制逻辑\n2. 修复分配资源不更新bug\n3. 精简vo, 尽量移动vos包装类\n"
+    },
+    {
+      "sha": "bd94b1693a913f85a9122f9dada51231aa3f1d87",
+      "date": "2024-06-16T21:16:19+08:00",
+      "author": "rutine",
+      "email": "rutine@163.com",
+      "message": "所有表统一creator, create_time, updator, update_time字段名称\n1. 统一表公共字段：creator, create_time, updator, update_time\n2. 时间改为LocalDateTime类型\n"
+    },
+    {
+      "sha": "18d1f2e258716c84829a11f0bbc5d407aefcb29c",
+      "date": "2024-06-02T21:56:27+08:00",
+      "author": "rutine",
+      "email": "rutine@163.com",
+      "message": "新增支持表头配置功能, 实现表头可配置, 为后续表头权限化增加能力支撑\n1. 增加表头配置表\n2. 自动带出表头关联字典\n"
+    },
+    {
+      "sha": "887537c9b4d49a1a4be07c1dedd087f87a6e07a4",
+      "date": "2024-05-26T22:17:55+08:00",
+      "author": "rutine",
+      "email": "rutine@163.com",
+      "message": "重新构建分页请求参数, 重写分页插件, 新创SQL拦截重写, 底层支持SQL行权限\n1. 重新构建分页请求参数, 实现标准更强兼容性分页和请求参数\n2. 重写分页插件, 内置基本默认分页参数\n3. 新创SQL拦截重写, 联合分页参数, 实现SQL动态参数\n3. 通过底层支持SQL行权限, 通过注解, 实现重写SQL，统一增加行权限(目前可以做到租户行权限), 达到数据权限过滤\n"
+    },
+    {
+      "sha": "e3dc8f3f8589f01ebdd6ea6086c7bde3a2842931",
+      "date": "2024-05-25T09:36:16+08:00",
+      "author": "rutine",
+      "email": "rutine@163.com",
+      "message": "重新梳理模块命名,以微服务模式打造\n1. 删除模块: mycuckoo-repository mycuckoo-service\n2. 重命名模块: mycuckoo-web -> mycuckoo-admin, 并将repository service迁移过来\n3. 新加模块: mycuckoo-core\n"
+    },
+    {
+      "sha": "4d0139fb3b39874d5bcff366d585adf61e31aa0c",
+      "date": "2024-05-25T06:31:40+08:00",
+      "author": "rutine",
+      "email": "rutine@163.com",
+      "message": "1. 删除机构角色\n2. 删除用户角色\n3. 增加统一登录账号\n4. 增加部门管理信息\n5. 升级机构为租户模式\n"
+    },
+    {
+      "sha": "0e8868d1d9c515d227ccf1ccb9707a75c21b28f7",
+      "date": "2024-05-22T20:36:53+08:00",
+      "author": "rutine",
+      "email": "rutine@163.com",
+      "message": "1. 升级SqlParser至4.9\n"
+    },
+    {
+      "sha": "62fe0d993c25e88aa57f5751568fe19a556c7251",
+      "date": "2024-05-17T20:44:37+08:00",
+      "author": "rutine",
+      "email": "rutine@163.com",
+      "message": "1. 用户选择接口调整\n2. 新增角色/用户分配资源权限接口\n"
+    },
+    {
+      "sha": "d866d40926fa3da5f495d1af253013cb88a76e40",
+      "date": "2024-05-12T21:47:34+08:00",
+      "author": "rutine",
+      "email": "rutine@163.com",
+      "message": "1. 修复模块分配操作去重失败导致重复问题\n2. 新增模块分配资源\n"
+    },
+    {
+      "sha": "ac9755c2c19827ad61475ea4dc9c75f020be2bbd",
+      "date": "2024-05-07T19:20:39+08:00",
+      "author": "rutine",
+      "email": "rutine@163.com",
+      "message": "1.重构角色 用户 组织数据结构\n"
+    },
+    {
+      "sha": "bd59f59da49dd8e8e89a30b364448a870a7ee054",
+      "date": "2024-05-07T16:01:49+08:00",
+      "author": "rutine",
+      "email": "rutine@163.com",
+      "message": "1.重构公告 地区 定时 日志 参数数据结构\n"
+    },
+    {
+      "sha": "9765a5a3c64911cf1ce4dfd87193c4bd6f66d6e1",
+      "date": "2024-05-07T11:58:59+08:00",
+      "author": "rutine",
+      "email": "rutine@163.com",
+      "message": "1.重构自定义编码数据结构\n"
+    },
+    {
+      "sha": "c168057553ffde955ef627d3ade01b21e33d3e71",
+      "date": "2024-05-07T07:12:08+08:00",
+      "author": "rutine",
+      "email": "rutine@163.com",
+      "message": "1.重构字典数据结构\n"
+    },
+    {
+      "sha": "2a70e7da1a30ee9166995541e668b1b6aa6ffc33",
+      "date": "2024-05-06T16:18:10+08:00",
+      "author": "rutine",
+      "email": "rutine@163.com",
+      "message": "1.重构菜单 操作数据结构\n2.新增资源管理表\n后续根据接口资源来控制接口权限\n"
+    },
+    {
+      "sha": "4a463d2ea418b55d47f2cd578eae8cf2d699bfde",
+      "date": "2024-05-03T10:46:37+08:00",
+      "author": "rutine",
+      "email": "rutine@163.com",
+      "message": "升级MySQL数据库驱动8版本\n"
+    },
+    {
+      "sha": "a3b809b602b98915cd08c6905ce1e5a2abc85757",
+      "date": "2024-05-02T22:33:58+08:00",
+      "author": "rutine",
+      "email": "rutine@163.com",
+      "message": "统一使用日志操作器记录访问操作\n"
+    },
+    {
+      "sha": "844cf24acd256557de8d259f1367d31d16703981",
+      "date": "2024-05-02T11:26:56+08:00",
+      "author": "rutine",
+      "email": "rutine@163.com",
+      "message": "系统平台表名统一改为sys_前缀\n"
+    },
+    {
+      "sha": "f694815400e0d760baf0a3108794b7751793f1f3",
+      "date": "2024-05-02T11:00:05+08:00",
+      "author": "rutine",
+      "email": "rutine@163.com",
+      "message": "调整sql格式\n"
+    }
+  ],
+  "commit_sha": "2fea6569a735bfe4f60f5dfa78eac415aed22119",
+  "extracted_at": "2026-10-05T18:42:59.707662+00:00"
+}

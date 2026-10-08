@@ -1,0 +1,40 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "2.1.1.RELEASE",
+  "spring_boot_major": "2",
+  "java_versions_declared": "${java.version};1.8",
+  "build_evidence": [
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-boot-data-aggregator-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-data-aggregator-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-data-aggregator-core/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-data-aggregator-example/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-data-aggregator-example/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "spring-boot-data-aggregator-example/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-data-aggregator-example/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    }
+  ]
+}

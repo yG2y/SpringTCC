@@ -1,0 +1,230 @@
+{
+  "ia_status": "com_evidencia",
+  "ia_level": 2,
+  "ia_agents": "Claude Code",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "c29d35a5fb39ed4d710323407309c8642f56f14a",
+      "trailer": "Claude <noreply@anthropic.com>"
+    }
+  ],
+  "commits": [
+    {
+      "sha": "2acfb6bdc6150478181f35e9c8d21cdf565a33d0",
+      "date": "2026-10-02T16:03:10+09:00",
+      "author": "Hyeon Sang Jeon",
+      "email": "wingnut0310@gmail.com",
+      "message": "feat: bound reindex jobs and deduplicate submissions (#12)\n\nRepeated POST requests previously started independent reindex jobs, and the registry retained every record indefinitely. This change lets clients recover a submission with `Idempotency-Key` and rejects new work when the configured active or retained-record limit is reached.\n\n- A new key returns 202; a retained key returns 200 with the same Location and current job state. Different options under that key return 409.\n- Defaults allow one active rebuild and 256 retained records. Terminal records and keys expire together after 15 minutes. Full capacity returns 503 with Retry-After, without evicting unexpired keys.\n- Workers claim jobs before repository access. Duplicate deliveries cannot execute again, terminal state cannot be overwritten, and a failed initial response write terminates the job without dispatch.\n- The packaged-JAR demo verifies completed/failed replay and key conflicts. The README links to a retry and overload walkthrough with settings and limitations.\n\nValidation: Maven verify passed all 30 tests, including concurrent submissions, real HTTP responses and disconnects, retention under a fake clock, and duplicate worker delivery. The packaged-JAR smoke passed. A separate packaged-JAR run verified environment overrides, active/history rejection, continued replay and fan-out, expiration, and renewed admission. Shell syntax, local documentation links, and the English copyedit fidelity check passed.\n\nThe state, limits, and keys remain local to one JVM. This does not add durable delivery, cross-instance coordination, cancellation, or exactly-once execution."
+    },
+    {
+      "sha": "373e7964e86de91337be610d01a8c7cd227902e7",
+      "date": "2026-08-21T17:19:34+09:00",
+      "author": "Hyeon Sang Jeon",
+      "email": "wingnut0310@gmail.com",
+      "message": "feat: harden async boundary reference lab (#9)\n\nAcknowledge accepted-job dispatch, expose terminal delivery failures, and make the packaged-JAR demo deterministic. Add CI and release evidence gates, then streamline the README and contributor documentation."
+    },
+    {
+      "sha": "e9a2484c169393b7a7b2d874f2212a2339e19601",
+      "date": "2026-08-13T02:12:49+09:00",
+      "author": "Hyeon Sang Jeon",
+      "email": "wingnut0310@gmail.com",
+      "message": "Merge pull request #8 from hyeonsangjeon/agent/second-modernization\n\nAdd concurrent I/O demo and quickstart"
+    },
+    {
+      "sha": "1278213d0a6071c2e31bd805cc9754f100dab78d",
+      "date": "2026-08-13T02:11:34+09:00",
+      "author": "hyeonsangjeon",
+      "email": "wingnut0310@gmail.com",
+      "message": "Add concurrent I/O demo and quickstart\n"
+    },
+    {
+      "sha": "d1f0c5c9a590b4dd1d854123f43e6d6998a75057",
+      "date": "2026-07-15T20:32:54+09:00",
+      "author": "Hyeon Sang Jeon",
+      "email": "wingnut0310@gmail.com",
+      "message": "Merge pull request #7 from hyeonsangjeon/agent/modernize-async-worker-sample\n\nModernize async worker sample"
+    },
+    {
+      "sha": "f0b22a994166f638b819da10fee62ea8fbf8f323",
+      "date": "2026-07-15T19:55:31+09:00",
+      "author": "hyeonsangjeon",
+      "email": "wingnut0310@gmail.com",
+      "message": "Modernize async worker sample\n"
+    },
+    {
+      "sha": "6ebd2ea99a252b296795eb5e6a905e586db9c0f9",
+      "date": "2026-07-02T10:49:22+09:00",
+      "author": "OpenAI Codex",
+      "email": "codex@openai.invalid",
+      "message": "Highlight Codex collaboration\n"
+    },
+    {
+      "sha": "9a07bc0600dcaf1321dd6d75f93919526bef9eb4",
+      "date": "2026-07-02T10:46:26+09:00",
+      "author": "OpenAI Codex",
+      "email": "codex@openai.invalid",
+      "message": "Add contributors acknowledgement\n"
+    },
+    {
+      "sha": "35ecde840fc359e3634408fc1cfd58aac918d722",
+      "date": "2026-07-02T10:06:34+09:00",
+      "author": "hyeonsangjeon",
+      "email": "wingnut0310@gmail.com",
+      "message": "Modernize Vert.x Spring async worker pattern\n"
+    },
+    {
+      "sha": "f09d9be4c7340831ae5b098e507b279e646fed9e",
+      "date": "2026-01-16T20:14:35+09:00",
+      "author": "Hyeon Sang Jeon",
+      "email": "wingnut0310@gmail.com",
+      "message": "Merge pull request #5 from hyeonsangjeon/dependabot/maven/io.vertx-vertx-core-4.5.24\n\nBump io.vertx:vertx-core from 4.5.22 to 4.5.24"
+    },
+    {
+      "sha": "143e86fe471f7b3687311098e51e56417f2e4702",
+      "date": "2026-01-15T22:53:13Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump io.vertx:vertx-core from 4.5.22 to 4.5.24\n\nBumps [io.vertx:vertx-core](https://github.com/eclipse/vert.x) from 4.5.22 to 4.5.24.\n- [Commits](https://github.com/eclipse/vert.x/compare/4.5.22...4.5.24)\n\n---\nupdated-dependencies:\n- dependency-name: io.vertx:vertx-core\n  dependency-version: 4.5.24\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "c29d35a5fb39ed4d710323407309c8642f56f14a",
+      "date": "2025-11-15T22:40:44+09:00",
+      "author": "hyeonsang",
+      "email": "hyeonsang@hyeonsangui-Macmini.local",
+      "message": "Add architecture flow diagram to README\n\nAdded collapsible section in README to display the detailed architecture flow map.\nThe diagram is hidden by default to keep the README clean and can be expanded on demand.\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\n"
+    },
+    {
+      "sha": "b2a43874fbd641a522bdef983b0448037b4d8bd0",
+      "date": "2025-11-15T11:34:32+09:00",
+      "author": "hyeonsang",
+      "email": "hyeonsang@hyeonsangui-Macmini.local",
+      "message": "dependancy mod\n"
+    },
+    {
+      "sha": "80efa13086d7fd3998b65e12f3030b706d06d1fa",
+      "date": "2025-11-15T11:28:53+09:00",
+      "author": "Hyeon Sang Jeon",
+      "email": "wingnut0310@gmail.com",
+      "message": "Merge pull request #4 from hyeonsangjeon/dependabot/maven/io.vertx-vertx-web-4.5.22\n\nBump io.vertx:vertx-web from 3.9.4 to 4.5.22"
+    },
+    {
+      "sha": "06614c1b8474b138756b0b2c570a15c38ece7ed2",
+      "date": "2025-10-22T19:39:29Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump io.vertx:vertx-web from 3.9.4 to 4.5.22\n\nBumps [io.vertx:vertx-web](https://github.com/vert-x3/vertx-web) from 3.9.4 to 4.5.22.\n- [Commits](https://github.com/vert-x3/vertx-web/compare/3.9.4...4.5.22)\n\n---\nupdated-dependencies:\n- dependency-name: io.vertx:vertx-web\n  dependency-version: 4.5.22\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "cd5fa2fcb92f3c31a039b3c5202fbd9751f6ce8f",
+      "date": "2025-01-06T17:08:50+09:00",
+      "author": "hyeonsangjeon",
+      "email": "wingnut0310@gmail.com",
+      "message": "venv\n"
+    },
+    {
+      "sha": "def2bc2ab1fddf2bd38ae3f86371777862bd9536",
+      "date": "2025-01-06T17:07:25+09:00",
+      "author": "hyeonsangjeon",
+      "email": "wingnut0310@gmail.com",
+      "message": "add emai;\n"
+    },
+    {
+      "sha": "b464a882315e09b471d43497c21c0cae04f66c57",
+      "date": "2025-01-06T17:04:51+09:00",
+      "author": "hyeonsangjeon",
+      "email": "wingnut0310@gmail.com",
+      "message": "commit test\n"
+    },
+    {
+      "sha": "d050b9a9608f2b2aca9b5da3b21abb66fd6f7582",
+      "date": "2022-10-22T00:01:10+09:00",
+      "author": "Hyeon Sang Jeon",
+      "email": "wingnut0310@gmail.com",
+      "message": "Merge pull request #3 from hyeonsangjeon/dependabot/maven/io.vertx-vertx-web-3.9.4\n\nBump vertx-web from 3.5.4 to 3.9.4"
+    },
+    {
+      "sha": "582c2e8551d344130669e3c2f517892bceb9bc34",
+      "date": "2022-02-11T00:22:54Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump vertx-web from 3.5.4 to 3.9.4\n\nBumps vertx-web from 3.5.4 to 3.9.4.\n\n---\nupdated-dependencies:\n- dependency-name: io.vertx:vertx-web\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "a0a94e53582beebd8c461b4c793528c05054e310",
+      "date": "2021-07-29T11:25:37+09:00",
+      "author": "Hyeon Sang Jeon",
+      "email": "wingnut0310@gmail.com",
+      "message": "Merge pull request #2 from hyeonsangjeon/dependabot/maven/org.mybatis-mybatis-3.5.6\n\nBump mybatis from 3.4.1 to 3.5.6"
+    },
+    {
+      "sha": "b1e86236e8236f4b7b00a21df13921c61a70673d",
+      "date": "2021-07-29T11:25:03+09:00",
+      "author": "Hyeon Sang Jeon",
+      "email": "wingnut0310@gmail.com",
+      "message": "Merge pull request #1 from hyeonsangjeon/dependabot/maven/junit-junit-4.13.1\n\nBump junit from 3.8.1 to 4.13.1"
+    },
+    {
+      "sha": "ded8a31189be715af4988295c8cd2af781d64862",
+      "date": "2021-04-22T16:47:03Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump mybatis from 3.4.1 to 3.5.6\n\nBumps [mybatis](https://github.com/mybatis/mybatis-3) from 3.4.1 to 3.5.6.\n- [Release notes](https://github.com/mybatis/mybatis-3/releases)\n- [Commits](https://github.com/mybatis/mybatis-3/compare/mybatis-3.4.1...mybatis-3.5.6)\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "464f710472c4e4f884100c7c7ea7a85ba2ca6cfc",
+      "date": "2020-10-12T21:13:41Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump junit from 3.8.1 to 4.13.1\n\nBumps [junit](https://github.com/junit-team/junit4) from 3.8.1 to 4.13.1.\n- [Release notes](https://github.com/junit-team/junit4/releases)\n- [Changelog](https://github.com/junit-team/junit4/blob/main/doc/ReleaseNotes4.13.1.md)\n- [Commits](https://github.com/junit-team/junit4/commits/r4.13.1)\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "5d468f87740bafe04065464265e3df033aec3090",
+      "date": "2019-02-15T12:41:09+09:00",
+      "author": "hyeonsangjeon",
+      "email": "wingnut0310@gmail.com",
+      "message": "jbdc.log4jdbc:mysql\n"
+    },
+    {
+      "sha": "aa7159c653e69bcf861b7993e4eb7b243c1d1a4d",
+      "date": "2018-10-18T11:19:42+09:00",
+      "author": "hyeonsangjeon",
+      "email": "wingnut0310@gmail.com",
+      "message": "Upgrade io.vertx:vertx-core to version 3.5.4\n"
+    },
+    {
+      "sha": "3a4e7656eeaf5f47f8c7bce53222686b8d7a1816",
+      "date": "2018-08-23T11:08:25+09:00",
+      "author": "hyeonsangjeon",
+      "email": "wingnut0310@gmail.com",
+      "message": "add ignore\n"
+    },
+    {
+      "sha": "83d45a4b7c748ad07329bd415bcc116f2ac7b171",
+      "date": "2018-06-18T16:56:40+09:00",
+      "author": "hyeonsangjeon",
+      "email": "wingnut0310@gmail.com",
+      "message": "add comment\n"
+    },
+    {
+      "sha": "7ca4c8a3074ca09c3fcb4e6ee993794cd5497840",
+      "date": "2018-06-18T16:41:39+09:00",
+      "author": "hyeonsangjeon",
+      "email": "wingnut0310@gmail.com",
+      "message": "add comment\n"
+    },
+    {
+      "sha": "159cacd1ee110f26ec6644050fbd41cdd73f2c6b",
+      "date": "2018-06-18T16:15:48+09:00",
+      "author": "hyeonsangjeon",
+      "email": "wingnut0310@gmail.com",
+      "message": "mybatis setting add\n"
+    }
+  ],
+  "commit_sha": "2acfb6bdc6150478181f35e9c8d21cdf565a33d0",
+  "extracted_at": "2026-10-05T18:13:08.947032+00:00"
+}

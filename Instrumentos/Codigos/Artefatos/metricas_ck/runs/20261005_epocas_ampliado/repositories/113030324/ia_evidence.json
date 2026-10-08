@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "7befa569299c50d5610a8695df98feb1c0a9ed9c",
+      "date": "2022-05-02T11:10:35+02:00",
+      "author": "Lorenzo Bettini",
+      "email": "lorenzo.bettini@gmail.com",
+      "message": "Merge pull request #26 from LorenzoBettini/spring-2.6.7\n\nSpring 2.6.7"
+    },
+    {
+      "sha": "02671ceb6f3d478b2cbf3db37b8f65920fb81b09",
+      "date": "2022-05-02T11:05:30+02:00",
+      "author": "Lorenzo Bettini",
+      "email": "lorenzo.bettini@gmail.com",
+      "message": "asNormalizedText() instead of asText\n\nwhich has been deprecated"
+    },
+    {
+      "sha": "cd538b05eb4e4fea43f10caa7fc7718a450f27c1",
+      "date": "2022-05-02T10:59:59+02:00",
+      "author": "Lorenzo Bettini",
+      "email": "lorenzo.bettini@gmail.com",
+      "message": "updated to Spring Boot 2.6.7"
+    },
+    {
+      "sha": "cd72802c33520f469fc98695ce899ffc30f4b76e",
+      "date": "2022-02-06T18:38:24+01:00",
+      "author": "Lorenzo Bettini",
+      "email": "lorenzo.bettini@gmail.com",
+      "message": "Merge pull request #25 from LorenzoBettini/update-webdriver\n\nUpdate webdriver"
+    },
+    {
+      "sha": "9b1eda355413b53ddc92fe205e2014f83ce59b99",
+      "date": "2022-02-06T18:27:12+01:00",
+      "author": "Lorenzo Bettini",
+      "email": "lorenzo.bettini@gmail.com",
+      "message": "cache also ~/.cache/selenium\n"
+    },
+    {
+      "sha": "c6d6da5443c0b5d166ea4d6b2211283b3117632d",
+      "date": "2022-02-06T18:17:02+01:00",
+      "author": "Lorenzo Bettini",
+      "email": "lorenzo.bettini@gmail.com",
+      "message": "webdrivermanager 5.0.3\n"
+    },
+    {
+      "sha": "50e95c418e723b1e14f102f1c0d954b94aa8f937",
+      "date": "2021-04-29T15:33:17+02:00",
+      "author": "Lorenzo Bettini",
+      "email": "lorenzo.bettini@gmail.com",
+      "message": "Merge pull request #24 from LorenzoBettini/spring-2.4.5\n\nSpring 2.4.5"
+    },
+    {
+      "sha": "1ad37eea43309118d8c9729258bf642c35b1ddad",
+      "date": "2021-04-29T15:25:19+02:00",
+      "author": "Lorenzo Bettini",
+      "email": "lorenzo.bettini@gmail.com",
+      "message": "exclude **/htmlunit/* from instrumentation\n\nTo avoid the instrumentation error (when running\nEmployeeWebControllerTest) due to the HtmlUnit class\nStyleAttributes$Definition (method too large)"
+    },
+    {
+      "sha": "4724f6ed64dd97045e740555ba8913651801961e",
+      "date": "2021-04-29T14:50:28+02:00",
+      "author": "Lorenzo Bettini",
+      "email": "lorenzo.bettini@gmail.com",
+      "message": "junit-vintage-engine\n\nTo make JUnit 4 tests compile and run"
+    },
+    {
+      "sha": "c52699521aad8dfd4af9abcb205e76cf10095c07",
+      "date": "2021-04-25T10:01:59+02:00",
+      "author": "Lorenzo Bettini",
+      "email": "lorenzo.bettini@gmail.com",
+      "message": "updated to Spring Boot 2.4.5"
+    },
+    {
+      "sha": "c12eac913f2bdae79b3d04eb24faa388c4983bbb",
+      "date": "2021-04-29T14:46:36+02:00",
+      "author": "Lorenzo Bettini",
+      "email": "lorenzo.bettini@gmail.com",
+      "message": "Merge pull request #23 from LorenzoBettini/spring-2.2.6\n\nSpring 2.2.6"
+    },
+    {
+      "sha": "5139a5896ec9b5f79288bcba27e8353a2d6114bc",
+      "date": "2020-04-23T18:46:02+02:00",
+      "author": "Lorenzo Bettini",
+      "email": "lorenzo.bettini@gmail.com",
+      "message": "use verifyNoMoreInteractions"
+    },
+    {
+      "sha": "43d5a105e9d024c637b945d458dd9d2daedf7c6f",
+      "date": "2020-04-23T18:03:36+02:00",
+      "author": "Lorenzo Bettini",
+      "email": "lorenzo.bettini@gmail.com",
+      "message": "updated to Spring Boot 2.2.6.RELEASE"
+    },
+    {
+      "sha": "10f73848b756faaea317eaa74c65d9afc1a01c70",
+      "date": "2021-04-29T14:40:54+02:00",
+      "author": "Lorenzo Bettini",
+      "email": "lorenzo.bettini@gmail.com",
+      "message": "Badges"
+    },
+    {
+      "sha": "be807e9ea3101349b0513d8f5c6af3e2e7e7c13b",
+      "date": "2021-04-29T14:37:50+02:00",
+      "author": "Lorenzo Bettini",
+      "email": "lorenzo.bettini@gmail.com",
+      "message": "Create README.md"
+    },
+    {
+      "sha": "e19b123eb698b0936790b0959d6275fcb4fcc397",
+      "date": "2021-04-29T14:35:43+02:00",
+      "author": "Lorenzo Bettini",
+      "email": "lorenzo.bettini@gmail.com",
+      "message": "ignore README.md files for GitHub Actions"
+    },
+    {
+      "sha": "9b1325fda515da12d62d82bb79ac1c8d5be44ecd",
+      "date": "2021-04-29T08:06:12+02:00",
+      "author": "Lorenzo Bettini",
+      "email": "lorenzo.bettini@gmail.com",
+      "message": "Merge pull request #22 from LorenzoBettini/integration\n\nIntegration E2e tests"
+    },
+    {
+      "sha": "b20a28b4dc194ce18eef592f9726fa630eeef1bf",
+      "date": "2021-04-24T12:04:19+02:00",
+      "author": "Lorenzo Bettini",
+      "email": "lorenzo.bettini@gmail.com",
+      "message": "run also End-to-end tests\n"
+    },
+    {
+      "sha": "ac062e3705137989d753c1c089f6fcab89db5d0b",
+      "date": "2020-04-24T09:44:57+02:00",
+      "author": "Lorenzo Bettini",
+      "email": "lorenzo.bettini@gmail.com",
+      "message": "launch configurations for running Maven"
+    },
+    {
+      "sha": "43b400d812ab0df23032bde09f88f474ed64ed29",
+      "date": "2021-04-28T08:17:51+02:00",
+      "author": "Lorenzo Bettini",
+      "email": "lorenzo.bettini@gmail.com",
+      "message": "profile for e2e-tests"
+    },
+    {
+      "sha": "e7a01a7970e8775cd213391540317fbc62fcc770",
+      "date": "2021-04-27T21:04:50+02:00",
+      "author": "Lorenzo Bettini",
+      "email": "lorenzo.bettini@gmail.com",
+      "message": "logback-test.xml"
+    },
+    {
+      "sha": "be82bdca4c4996dcbb17ff4cdbb7e204171caf5d",
+      "date": "2019-05-17T12:33:23+02:00",
+      "author": "Lorenzo Bettini",
+      "email": "lorenzo.bettini@gmail.com",
+      "message": "e2e: edit existing employee"
+    },
+    {
+      "sha": "307a2c19dd56c7a4c07e47f01df4115bbd39970c",
+      "date": "2019-05-17T11:15:37+02:00",
+      "author": "Lorenzo Bettini",
+      "email": "lorenzo.bettini@gmail.com",
+      "message": "e2e: create a new employee"
+    },
+    {
+      "sha": "76a3df2b0847ee3f37bb9ee4470c4604cb3bdd57",
+      "date": "2019-05-16T11:11:31+02:00",
+      "author": "Lorenzo Bettini",
+      "email": "lorenzo.bettini@gmail.com",
+      "message": "first e2e test"
+    },
+    {
+      "sha": "a40e83ddf0f25ab8bbc80df68c2088af1eac92df",
+      "date": "2021-04-27T18:56:20+02:00",
+      "author": "Lorenzo Bettini",
+      "email": "lorenzo.bettini@gmail.com",
+      "message": "Merge pull request #21 from LorenzoBettini/integration\n\nIntegration with web"
+    },
+    {
+      "sha": "efefb6c807cf2f88c434545e2d8ac220eb00718f",
+      "date": "2019-05-15T17:20:28+02:00",
+      "author": "Lorenzo Bettini",
+      "email": "lorenzo.bettini@gmail.com",
+      "message": "Web Controller IT with WebDriver and HtmlUnit"
+    },
+    {
+      "sha": "fc3557d492aa10434a3452cede3c1e25ee0de358",
+      "date": "2021-04-27T18:49:10+02:00",
+      "author": "Lorenzo Bettini",
+      "email": "lorenzo.bettini@gmail.com",
+      "message": "Merge branch 'web' into integration\n\nConflicts:\n\tpom.xml\n\tsrc/main/java/com/examples/spring/demo/model/Employee.java\n\tsrc/main/java/com/examples/spring/demo/services/EmployeeService.java\n"
+    },
+    {
+      "sha": "b0e7dc1d331aa1a9a8dab73d3e9e09fc27f471e5",
+      "date": "2021-04-27T16:11:25+02:00",
+      "author": "Lorenzo Bettini",
+      "email": "lorenzo.bettini@gmail.com",
+      "message": "Merge pull request #20 from LorenzoBettini/integration\n\nIntegration of rest"
+    },
+    {
+      "sha": "5be041834f65f34a8b2555ef9c3d4ef0191e710d",
+      "date": "2019-05-15T15:33:38+02:00",
+      "author": "Lorenzo Bettini",
+      "email": "lorenzo.bettini@gmail.com",
+      "message": "ignore Sonar rule java:S4684\n\n\"Persistent entities should not be used as arguments of\n\"@RequestMapping\" methods\",\nhttps://rules.sonarsource.com/java/tag/spring/RSPEC-4684"
+    },
+    {
+      "sha": "c4658da3062c8bfe557b43f72fb74bb6da5b6885",
+      "date": "2019-05-15T15:36:47+02:00",
+      "author": "Lorenzo Bettini",
+      "email": "lorenzo.bettini@gmail.com",
+      "message": "REST Controller IT"
+    }
+  ],
+  "commit_sha": "7befa569299c50d5610a8695df98feb1c0a9ed9c",
+  "extracted_at": "2026-10-05T18:40:42.990530+00:00"
+}

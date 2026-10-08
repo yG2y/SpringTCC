@@ -1,0 +1,280 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "2.2.0.RELEASE;2.2.5.RELEASE;2.3.0.RELEASE",
+  "spring_boot_major": "2",
+  "java_versions_declared": "11",
+  "build_evidence": [
+    {
+      "file": "crud/client/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "crud/client/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "crud/client/pom.xml",
+      "artifact": "spring-boot-starter-rsocket"
+    },
+    {
+      "file": "crud/client/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "crud/client/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "crud/server/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "crud/server/pom.xml",
+      "artifact": "spring-boot-starter-rsocket"
+    },
+    {
+      "file": "crud/server/pom.xml",
+      "artifact": "spring-boot-starter-data-r2dbc"
+    },
+    {
+      "file": "crud/server/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "crud/server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "integration/client-regular/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "integration/client-regular/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "integration/client-regular/pom.xml",
+      "artifact": "spring-boot-starter-rsocket"
+    },
+    {
+      "file": "integration/client-regular/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "integration/client-regular/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "integration/client/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "integration/client/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "integration/client/pom.xml",
+      "artifact": "spring-boot-starter-integration"
+    },
+    {
+      "file": "integration/client/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "integration/client/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "integration/server-regular/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "integration/server-regular/pom.xml",
+      "artifact": "spring-boot-starter-rsocket"
+    },
+    {
+      "file": "integration/server-regular/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "integration/server-regular/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "integration/server-vanilla/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "integration/server-vanilla/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "integration/server/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "integration/server/pom.xml",
+      "artifact": "spring-boot-starter-rsocket"
+    },
+    {
+      "file": "integration/server/pom.xml",
+      "artifact": "spring-boot-starter-integration"
+    },
+    {
+      "file": "integration/server/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "integration/server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "security/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "security/pom.xml",
+      "artifact": "spring-boot-starter-rsocket"
+    },
+    {
+      "file": "security/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "security/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "security/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "server-requester/client/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "server-requester/client/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "server-requester/client/pom.xml",
+      "artifact": "spring-boot-starter-rsocket"
+    },
+    {
+      "file": "server-requester/client/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "server-requester/client/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "server-requester/server/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "server-requester/server/pom.xml",
+      "artifact": "spring-boot-starter-rsocket"
+    },
+    {
+      "file": "server-requester/server/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "server-requester/server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tcp/client/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "tcp/client/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "tcp/client/pom.xml",
+      "artifact": "spring-boot-starter-rsocket"
+    },
+    {
+      "file": "tcp/client/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tcp/client/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tcp/server/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "tcp/server/pom.xml",
+      "artifact": "spring-boot-starter-rsocket"
+    },
+    {
+      "file": "tcp/server/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tcp/server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "vanilla/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "vanilla/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "vanilla/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "vanilla/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "websocket/client/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "websocket/client/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "websocket/client/pom.xml",
+      "artifact": "spring-boot-starter-rsocket"
+    },
+    {
+      "file": "websocket/client/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "websocket/client/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "websocket/server/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "websocket/server/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "websocket/server/pom.xml",
+      "artifact": "spring-boot-starter-rsocket"
+    },
+    {
+      "file": "websocket/server/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "websocket/server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

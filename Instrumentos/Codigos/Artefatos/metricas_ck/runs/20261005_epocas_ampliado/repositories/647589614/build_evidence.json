@@ -1,0 +1,44 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "3.1.0",
+  "spring_boot_major": "3",
+  "java_versions_declared": "17",
+  "build_evidence": [
+    {
+      "file": "chatgpt-assistant-server/pom.xml",
+      "artifact": "spring-boot-starter-websocket"
+    },
+    {
+      "file": "chatgpt-assistant-server/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "chatgpt-assistant-server/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "chatgpt-assistant-server/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "chatgpt-assistant-server/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "chatgpt-assistant-server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "infrastructure/infrastructure-common/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb"
+    },
+    {
+      "file": "infrastructure/infrastructure-security/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    }
+  ]
+}

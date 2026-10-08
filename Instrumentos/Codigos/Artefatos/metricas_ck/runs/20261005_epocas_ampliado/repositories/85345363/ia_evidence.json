@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "cdbc2f976947bed6a05d9ca8024809bb047d6861",
+      "date": "2017-03-20T21:43:34-07:00",
+      "author": "Daniel Song",
+      "email": "dtsong@andrew.cmu.edu",
+      "message": "Update README to add a note about DB initialization"
+    },
+    {
+      "sha": "3d68f4c2e0ad5f48e3d41cb69523f68819acd987",
+      "date": "2017-03-20T21:40:03-07:00",
+      "author": "Daniel Song",
+      "email": "dtsong@andrew.cmu.edu",
+      "message": "Update README"
+    },
+    {
+      "sha": "3d9511182529ec8993cafd6da9b806daa566cd2c",
+      "date": "2017-03-20T21:37:11-07:00",
+      "author": "Daniel Song",
+      "email": "xdtsong@gmail.com",
+      "message": "Remove unneccessary annotations from Application.java\n"
+    },
+    {
+      "sha": "5e5a8f91d23191be31a25c247cebd13c37befc0a",
+      "date": "2017-03-20T21:22:53-07:00",
+      "author": "Daniel Song",
+      "email": "xdtsong@gmail.com",
+      "message": "Add important comment regarding APILoader event\n"
+    },
+    {
+      "sha": "05725e2a3322049109fbe6fac63ce3c998d0f170",
+      "date": "2017-03-20T21:21:17-07:00",
+      "author": "Daniel Song",
+      "email": "xdtsong@gmail.com",
+      "message": "Add comments and refactor URL to not have it hardcoded\n"
+    },
+    {
+      "sha": "d71a27837936f98f87d4e8c875c83fe07cad3ae9",
+      "date": "2017-03-20T21:17:05-07:00",
+      "author": "Daniel Song",
+      "email": "xdtsong@gmail.com",
+      "message": "Add informative comments to Album and Photo models\n"
+    },
+    {
+      "sha": "b731068c699769418c85bb1f0847f8563d781fc9",
+      "date": "2017-03-20T21:10:55-07:00",
+      "author": "Daniel Song",
+      "email": "xdtsong@gmail.com",
+      "message": "Add informative comments to PhotoController\n"
+    },
+    {
+      "sha": "9f2dcf77b2f2ab15433b9a5f5c99efbfd9310e9a",
+      "date": "2017-03-20T21:06:29-07:00",
+      "author": "Daniel Song",
+      "email": "xdtsong@gmail.com",
+      "message": "Add informative comments to AlbumController\n"
+    },
+    {
+      "sha": "53426137d3f1ece44e487bc4326d39d2e8929264",
+      "date": "2017-03-20T20:28:19-07:00",
+      "author": "Daniel Song",
+      "email": "xdtsong@gmail.com",
+      "message": "Refactor imports\n"
+    },
+    {
+      "sha": "da0c7555f2623f78c3e85c66b23f1d68ac794099",
+      "date": "2017-03-20T20:23:03-07:00",
+      "author": "Daniel Song",
+      "email": "xdtsong@gmail.com",
+      "message": "minor refactor\n"
+    },
+    {
+      "sha": "e865d199754f454e8f2f3d5d45c2050f4987d117",
+      "date": "2017-03-20T20:16:44-07:00",
+      "author": "Daniel Song",
+      "email": "xdtsong@gmail.com",
+      "message": "Album and Photo both save into the DB\n"
+    },
+    {
+      "sha": "807fcb33531e1aba34ff993d32c9d190ac53bc1f",
+      "date": "2017-03-20T19:05:23-07:00",
+      "author": "Daniel Song",
+      "email": "xdtsong@gmail.com",
+      "message": "Album saves JSON, Photo doesn't yet\n"
+    },
+    {
+      "sha": "cbab2ad8ca488883d17c12081c10d20fbf0e7c3c",
+      "date": "2017-03-20T18:58:26-07:00",
+      "author": "Daniel Song",
+      "email": "xdtsong@gmail.com",
+      "message": "Move init to a Loader class that runs at Application startup\n"
+    },
+    {
+      "sha": "a7c405a2952d60ea484286d18adf864a97772092",
+      "date": "2017-03-20T18:52:06-07:00",
+      "author": "Daniel Song",
+      "email": "xdtsong@gmail.com",
+      "message": "Currently experiencing a PropertyAccessException\n"
+    },
+    {
+      "sha": "df1c88a37d2d3050cba25f721625fb6ad0858107",
+      "date": "2017-03-20T17:28:42-07:00",
+      "author": "Daniel Song",
+      "email": "xdtsong@gmail.com",
+      "message": "initial init for API\n"
+    },
+    {
+      "sha": "893d69161d02d8f610ea71776ac46d664eedd8a7",
+      "date": "2017-03-20T16:38:50-07:00",
+      "author": "Daniel Song",
+      "email": "xdtsong@gmail.com",
+      "message": "Reimplement prevent delete check and @OneToMany\n"
+    },
+    {
+      "sha": "a0b742b09524af9de1f89fa9bc94593bd903dd98",
+      "date": "2017-03-20T16:02:50-07:00",
+      "author": "Daniel Song",
+      "email": "xdtsong@gmail.com",
+      "message": "APIObjectWrapper now imports JSON data\n"
+    },
+    {
+      "sha": "e8f74fa9b7b82b160b5e7145520be27db20b5fdd",
+      "date": "2017-03-20T15:52:52-07:00",
+      "author": "Daniel Song",
+      "email": "xdtsong@gmail.com",
+      "message": "Phase out albumTitle\n"
+    },
+    {
+      "sha": "efd5f28cc9e860513b40e42eb9f214e805cdab76",
+      "date": "2017-03-20T15:06:55-07:00",
+      "author": "Daniel Song",
+      "email": "xdtsong@gmail.com",
+      "message": "Remove @ManyToOne and just use albumId\n"
+    },
+    {
+      "sha": "785d7aa757dbc85b16185f69296235f220881716",
+      "date": "2017-03-20T14:16:12-07:00",
+      "author": "Daniel Song",
+      "email": "xdtsong@gmail.com",
+      "message": "Revert to previous Photo implementation\n"
+    },
+    {
+      "sha": "7063da6708cbf8be0891b6e3bfaacf850d3ba8de",
+      "date": "2017-03-20T13:56:28-07:00",
+      "author": "Daniel Song",
+      "email": "xdtsong@gmail.com",
+      "message": "Remove unused import\n"
+    },
+    {
+      "sha": "5647f0eda2d0cbbb6e53d60a1501ac8580b4ca41",
+      "date": "2017-03-20T13:56:04-07:00",
+      "author": "Daniel Song",
+      "email": "xdtsong@gmail.com",
+      "message": "Refactor imports in Application.java\n"
+    },
+    {
+      "sha": "6ad6c82cca3194ec5ee0b09bd1f6db1fd1e491a7",
+      "date": "2017-03-20T13:55:42-07:00",
+      "author": "Daniel Song",
+      "email": "xdtsong@gmail.com",
+      "message": "Make init void\n"
+    },
+    {
+      "sha": "2be1ec640a8cac073dad470168157df564f3fdcd",
+      "date": "2017-03-20T13:55:13-07:00",
+      "author": "Daniel Song",
+      "email": "xdtsong@gmail.com",
+      "message": "Use APIObjectMapper in an init\n"
+    },
+    {
+      "sha": "459b252c906ed87f8e8f85327a3ddfc106c1dcde",
+      "date": "2017-03-20T13:44:40-07:00",
+      "author": "Daniel Song",
+      "email": "xdtsong@gmail.com",
+      "message": "Clean up imports\n"
+    },
+    {
+      "sha": "6754fec7fc0c437998ea3b3805a2f21e4b86ae71",
+      "date": "2017-03-20T13:40:11-07:00",
+      "author": "Daniel Song",
+      "email": "xdtsong@gmail.com",
+      "message": "Delete unused service interfaces\n"
+    },
+    {
+      "sha": "81cdfc980a81706cb469d1a28e11c89df530cad5",
+      "date": "2017-03-20T13:39:18-07:00",
+      "author": "Daniel Song",
+      "email": "xdtsong@gmail.com",
+      "message": "Refactor POST to use repo's save method\n"
+    },
+    {
+      "sha": "ecaf342e785cd7e2d8108454e0d6274f688b0f69",
+      "date": "2017-03-20T13:36:39-07:00",
+      "author": "Daniel Song",
+      "email": "xdtsong@gmail.com",
+      "message": "Add other http method implementations for Photo\n"
+    },
+    {
+      "sha": "a04fbbf436ac72e8b959a93449d4625e72809a1c",
+      "date": "2017-03-20T13:25:54-07:00",
+      "author": "Daniel Song",
+      "email": "xdtsong@gmail.com",
+      "message": "implement CRUD for Album in controller\n"
+    },
+    {
+      "sha": "f44786bdc51909b1b11e5b46c4910fe11c8b07d6",
+      "date": "2017-03-20T13:01:35-07:00",
+      "author": "Daniel Song",
+      "email": "xdtsong@gmail.com",
+      "message": "Refactor imports and change GET method to only need the albumId\n"
+    }
+  ],
+  "commit_sha": "cdbc2f976947bed6a05d9ca8024809bb047d6861",
+  "extracted_at": "2026-10-05T18:42:07.336454+00:00"
+}

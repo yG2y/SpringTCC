@@ -1,0 +1,932 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "2.5.0;2.6.7;2.7.1;2.7.2;2.7.3;2.7.5;3.0.0;3.0.1;3.0.2;3.0.4;3.0.5;3.0.6;3.0.7;3.1.1",
+  "spring_boot_major": "multiple",
+  "java_versions_declared": "11;17;8",
+  "build_evidence": [
+    {
+      "file": "homework/SampleStaffApp/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "homework/SampleStaffApp/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "homework/SampleStaffApp/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "homework/SampleStaffApp/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/Libraries/JavaLibs/CollectionLib/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Libraries/JavaLibs/ConsoleLib/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Libraries/JavaLibs/ConverterLib/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Libraries/JavaLibs/DataSourceLib/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Libraries/JavaLibs/DataUtilLib/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Libraries/JavaLibs/DateTimeLib/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Libraries/JavaLibs/DateTimeLibLegacyLib/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Libraries/JavaLibs/DateTimeLibLegacyLib/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Libraries/JavaLibs/ExceptionLib/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Libraries/JavaLibs/ExceptionLib/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Libraries/JavaLibs/GeneratorLib/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Libraries/JavaLibs/GenericLibIntelliJ/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Libraries/JavaLibs/MapStructUtil/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Libraries/JavaLibs/MathLib/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Libraries/JavaLibs/SchedulerLib/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Libraries/JavaLibs/TupleLib/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Libraries/JavaLibs/UtilLib/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Libraries/SpringLibs/GenericLibIntelliJ/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Libraries/SpringLibs/GenericLibIntelliJ/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "src/Projects/001-LibraryUsageProjectLocal/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Projects/001-LibraryUsageProjectLocal/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Projects/001-LibraryUsageProjectLocal/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/Projects/002-LibraryUsageMavenLocal/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Projects/002-LibraryUsageMavenLocal/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Projects/002-LibraryUsageMavenLocal/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/Projects/003-LibraryUsageMavenRemote/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Projects/003-LibraryUsageMavenRemote/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Projects/003-LibraryUsageMavenRemote/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/Projects/004-BirthDateRemainderApp/BirthDateUtilCalendarLib/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Projects/004-BirthDateRemainderApp/BirthDateUtilDateTimeLib/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Projects/004-BirthDateRemainderApp/BirthDateUtilLib/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Projects/004-BirthDateRemainderApp/ConsoleApp/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Projects/004-BirthDateRemainderApp/ConsoleApp/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Projects/004-BirthDateRemainderApp/ConsoleApp/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/Projects/004-BirthDateRemainderApp/ConsoleAppCalendar/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Projects/004-BirthDateRemainderApp/ConsoleAppCalendar/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Projects/004-BirthDateRemainderApp/ConsoleAppCalendar/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/Projects/004-BirthDateRemainderApp/ConsoleAppDateTime/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Projects/004-BirthDateRemainderApp/ConsoleAppDateTime/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Projects/004-BirthDateRemainderApp/ConsoleAppDateTime/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/Projects/005-FindMinMaxAvgApp/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Projects/005-FindMinMaxAvgApp/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Projects/005-FindMinMaxAvgApp/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/Projects/006-PeriodicRandomNumberGeneratorApp/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Projects/006-PeriodicRandomNumberGeneratorApp/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Projects/006-PeriodicRandomNumberGeneratorApp/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/Projects/007-PeriodicRandomNumberGeneratorApp/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Projects/007-PeriodicRandomNumberGeneratorApp/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Projects/007-PeriodicRandomNumberGeneratorApp/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/Projects/008-PeriodicRandomTextGeneratorApp/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Projects/008-PeriodicRandomTextGeneratorApp/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Projects/008-PeriodicRandomTextGeneratorApp/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/Projects/009-DeclaredMembersViaReflection/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Projects/009-DeclaredMembersViaReflection/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Projects/009-DeclaredMembersViaReflection/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/Projects/010-PublicMembersViaReflection/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Projects/010-PublicMembersViaReflection/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Projects/010-PublicMembersViaReflection/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/Projects/012-SwordPlayGame/Professional/CardGameLib/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Projects/012-SwordPlayGame/Professional/SwordPlayGameApp/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Projects/012-SwordPlayGame/Professional/SwordPlayGameApp/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Projects/012-SwordPlayGame/Professional/SwordPlayGameApp/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/Projects/012-SwordPlayGame/SemiProfessional/CardLib/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Projects/012-SwordPlayGame/SemiProfessional/SwordPlayGameApp/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Projects/012-SwordPlayGame/SemiProfessional/SwordPlayGameApp/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Projects/012-SwordPlayGame/SemiProfessional/SwordPlayGameApp/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/Projects/013-CarCameraInfoSimulation/CarCameraInfoLib/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Projects/013-CarCameraInfoSimulation/CarCameraInfoSimulationHashMap/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Projects/013-CarCameraInfoSimulation/CarCameraInfoSimulationHashMap/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Projects/013-CarCameraInfoSimulation/CarCameraInfoSimulationHashMap/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/Projects/013-CarCameraInfoSimulation/CarCameraInfoSimulationTreeMap/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Projects/013-CarCameraInfoSimulation/CarCameraInfoSimulationTreeMap/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Projects/013-CarCameraInfoSimulation/CarCameraInfoSimulationTreeMap/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/001-AutoCreateObjectDemo/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/001-AutoCreateObjectDemo/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/001-AutoCreateObjectDemo/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/001-AutoCreateObjectDemo/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/002-RandomPasswordGenerator/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/002-RandomPasswordGenerator/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/002-RandomPasswordGenerator/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/002-RandomPasswordGenerator/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/003-SampleCalculator/AtahanCalculatorLib/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/003-SampleCalculator/AtahanCalculatorLib/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/003-SampleCalculator/BarisOperationLib/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/003-SampleCalculator/BarisOperationLib/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/003-SampleCalculator/BusraOperationLib/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/003-SampleCalculator/BusraOperationLib/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/003-SampleCalculator/CSDCalculatorLib/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/003-SampleCalculator/CSDCalculatorLib/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/003-SampleCalculator/CanOperationLib/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/003-SampleCalculator/SedaCalculatorApp/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/003-SampleCalculator/SedaCalculatorApp/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/003-SampleCalculator/SedaCalculatorApp/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/003-SampleCalculator/SedaCalculatorApp/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/007-GreetingServiceApp/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/007-GreetingServiceApp/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/007-GreetingServiceApp/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/007-GreetingServiceApp/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/007-GreetingServiceApp/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/008-ClientInformationServiceApp/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/008-ClientInformationServiceApp/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/008-ClientInformationServiceApp/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/008-ClientInformationServiceApp/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/008-ClientInformationServiceApp/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/009-Geonames/PostalCodeService/PostalCodeSearchJSONService/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/009-Geonames/PostalCodeService/PostalCodeSearchJSONService/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/009-Geonames/PostalCodeService/PostalCodeSearchJSONService/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/009-Geonames/PostalCodeService/RepositoryLib/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/009-Geonames/PostalCodeService/ServiceLib/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/009-Geonames/PostalCodeService/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/009-Geonames/PostalCodeService/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/009-Geonames/WeatherService/WeatherInfoApp/PlaceInfoBackupCoordinateInserterService/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/009-Geonames/WeatherService/WeatherInfoApp/PlaceInfoBackupCoordinateInserterService/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/009-Geonames/WeatherService/WeatherInfoApp/PlaceInfoBackupCoordinateInserterService/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/009-Geonames/WeatherService/WeatherInfoApp/PlaceInfoBackupCoordinateInserterService/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/009-Geonames/WeatherService/WeatherInfoApp/PlaceInfoBackupCoordinateInserterService/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/009-Geonames/WeatherService/WeatherInfoApp/PlaceInfoCoordinateInserterService/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/009-Geonames/WeatherService/WeatherInfoApp/PlaceInfoCoordinateInserterService/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/009-Geonames/WeatherService/WeatherInfoApp/PlaceInfoCoordinateInserterService/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/009-Geonames/WeatherService/WeatherInfoApp/PlaceInfoCoordinateInserterService/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/009-Geonames/WeatherService/WeatherInfoApp/PlaceInfoCoordinateInserterService/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/009-Geonames/WeatherService/WeatherInfoApp/WeatherInfoBackup/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/009-Geonames/WeatherService/WeatherInfoApp/WeatherInfoBackup/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/009-Geonames/WeatherService/WeatherInfoApp/WeatherInfoBackup/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/009-Geonames/WeatherService/WeatherInfoApp/WeatherInfoBackup/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/009-Geonames/WeatherService/WeatherInfoApp/WeatherInfoBackupRepositoryLib/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/009-Geonames/WeatherService/WeatherInfoApp/WeatherInfoCollector/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/009-Geonames/WeatherService/WeatherInfoApp/WeatherInfoCollector/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/009-Geonames/WeatherService/WeatherInfoApp/WeatherInfoCollector/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/009-Geonames/WeatherService/WeatherInfoApp/WeatherInfoCollector/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/009-Geonames/WeatherService/WeatherInfoApp/WeatherInfoCollector/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/009-Geonames/WeatherService/WeatherInfoApp/WeatherInfoDailyService/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/009-Geonames/WeatherService/WeatherInfoApp/WeatherInfoDailyService/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/009-Geonames/WeatherService/WeatherInfoApp/WeatherInfoDailyService/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/009-Geonames/WeatherService/WeatherInfoApp/WeatherInfoDailyService/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/009-Geonames/WeatherService/WeatherInfoApp/WeatherInfoHistoryService/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/009-Geonames/WeatherService/WeatherInfoApp/WeatherInfoHistoryService/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/009-Geonames/WeatherService/WeatherInfoApp/WeatherInfoHistoryService/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/009-Geonames/WeatherService/WeatherInfoApp/WeatherInfoHistoryService/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/009-Geonames/WeatherService/WeatherInfoApp/WeatherInfoRepositoryLib/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/009-Geonames/WeatherService/WeatherInfoApp/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/010-SpringSecurity/PostalCodeService/PostalCodeSearchJSONService/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/010-SpringSecurity/PostalCodeService/PostalCodeSearchJSONService/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/010-SpringSecurity/PostalCodeService/PostalCodeSearchJSONService/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/010-SpringSecurity/PostalCodeService/PostalCodeSearchJSONService/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/010-SpringSecurity/PostalCodeService/RepositoryLib/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/010-SpringSecurity/PostalCodeService/ServiceLib/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/010-SpringSecurity/PostalCodeService/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/010-SpringSecurity/PostalCodeService/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/Services/AnimalGetService/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/Services/AnimalHospitalRepositoryLib/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/Services/AnimalPostService/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/Services/AnimalPostService/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/Services/OwnerGetService/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/Services/OwnerGetService/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/Services/VeterinarianAnimalPostService/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/Services/VeterinarianGetService/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/Services/VeterinarianPostService/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/Services/VeterinarianWebApplication/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/Services/VeterinarianWebApplication/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/Services/VeterinarianWebApplication/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/Services/VeterinarianWebApplication/pom.xml",
+      "artifact": "spring-boot-starter-tomcat"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/Services/VeterinarianWebApplication/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/Services/VeterinarianWebApplication/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/Services/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/Services/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/Services/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/Services/pom.xml",
+      "artifact": "spring-boot-starter-data-jdbc"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/Services/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/Services/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/Services/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/ServicesCommunicate/AnimalServiceApp/AnimalGetService/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/ServicesCommunicate/AnimalServiceApp/AnimalHospitalRepositoryLib/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/ServicesCommunicate/AnimalServiceApp/AnimalPostService/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/ServicesCommunicate/AnimalServiceApp/AnimalPostService/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/ServicesCommunicate/AnimalServiceApp/OwnerGetService/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/ServicesCommunicate/AnimalServiceApp/OwnerGetService/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/ServicesCommunicate/AnimalServiceApp/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/ServicesCommunicate/AnimalServiceApp/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/ServicesCommunicate/AnimalServiceApp/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/ServicesCommunicate/AnimalServiceApp/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/ServicesCommunicate/AnimalServiceApp/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/ServicesCommunicate/VeterinarianAnimalSchedulerApp/VeterinarianAnimalScheduler/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/ServicesCommunicate/VeterinarianAnimalSchedulerApp/VeterinarianAnimalScheduler/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/ServicesCommunicate/VeterinarianAnimalSchedulerApp/VeterinarianAnimalScheduler/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/ServicesCommunicate/VeterinarianAnimalSchedulerApp/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/ServicesCommunicate/VeterinarianAnimalSchedulerApp/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/ServicesCommunicate/VeterinarianAnimalServiceApp/VeterinarianAnimalPostService/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/ServicesCommunicate/VeterinarianAnimalServiceApp/VeterinarianAnimalRepositoryLib/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/ServicesCommunicate/VeterinarianAnimalServiceApp/VeterinarianAnimalScheduler/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/ServicesCommunicate/VeterinarianAnimalServiceApp/VeterinarianAnimalScheduler/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/ServicesCommunicate/VeterinarianAnimalServiceApp/VeterinarianAnimalScheduler/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/ServicesCommunicate/VeterinarianAnimalServiceApp/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/ServicesCommunicate/VeterinarianAnimalServiceApp/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/ServicesCommunicate/VeterinarianAnimalServiceApp/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/ServicesCommunicate/VeterinarianAnimalServiceApp/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/ServicesCommunicate/VeterinarianAnimalServiceApp/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/ServicesCommunicate/VeterinarianServiceApp/VeterinarianGetService/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/ServicesCommunicate/VeterinarianServiceApp/VeterinarianPostService/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/ServicesCommunicate/VeterinarianServiceApp/VeterinarianRepositoryLib/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/ServicesCommunicate/VeterinarianServiceApp/VeterinarianWebApplication/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/ServicesCommunicate/VeterinarianServiceApp/VeterinarianWebApplication/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/ServicesCommunicate/VeterinarianServiceApp/VeterinarianWebApplication/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/ServicesCommunicate/VeterinarianServiceApp/VeterinarianWebApplication/pom.xml",
+      "artifact": "spring-boot-starter-tomcat"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/ServicesCommunicate/VeterinarianServiceApp/VeterinarianWebApplication/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/ServicesCommunicate/VeterinarianServiceApp/VeterinarianWebApplication/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/ServicesCommunicate/VeterinarianServiceApp/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/ServicesCommunicate/VeterinarianServiceApp/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/ServicesCommunicate/VeterinarianServiceApp/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/ServicesCommunicate/VeterinarianServiceApp/pom.xml",
+      "artifact": "spring-boot-starter-data-jdbc"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/011-AnimalHospital/ServicesCommunicate/VeterinarianServiceApp/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/GenericAppIntelliJ/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/GenericAppIntelliJ/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/GenericAppIntelliJ/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/GenericAppIntelliJ/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/GenericWebAppIntelliJ/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/GenericWebAppIntelliJ/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/GenericWebAppIntelliJ/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/GenericWebAppIntelliJ/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Projects/014-SpringBoot/GenericWebAppIntelliJ/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/Projects/GenericAppIntelliJ/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/Projects/GenericAppIntelliJ/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/Projects/GenericAppIntelliJ/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/SampleCodes/CodingProblems/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/SampleCodes/Sample/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/SampleCodes/Sample/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/SampleCodes/Sample/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

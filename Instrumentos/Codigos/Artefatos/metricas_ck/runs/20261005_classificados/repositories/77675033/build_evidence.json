@@ -1,0 +1,64 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${springBootVersion};3.2.5",
+  "spring_boot_major": "3",
+  "java_versions_declared": "",
+  "build_evidence": [
+    {
+      "file": "build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "examples/cloud-eureka-server/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "examples/cloud-grpc-client/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "examples/cloud-grpc-server/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "examples/grpc-observability/backend/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "examples/grpc-observability/frontend/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "examples/local-grpc-client/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "examples/local-grpc-server/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "examples/security-grpc-client/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "examples/security-grpc-server/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "grpc-client-spring-boot-starter/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "grpc-common-spring-boot/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "grpc-server-spring-boot-starter/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "tests/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    }
+  ]
+}

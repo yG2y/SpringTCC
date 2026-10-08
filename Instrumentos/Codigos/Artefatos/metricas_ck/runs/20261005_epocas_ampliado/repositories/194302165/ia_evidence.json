@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "39294bb61512550c0f6e360f643a9713102b1ef9",
+      "date": "2026-09-23T16:47:56+02:00",
+      "author": "marco.spasiano",
+      "email": "marco.spasiano@cnr.it",
+      "message": "feat: allow concorsi group to authorization action and upgrade version of call\n"
+    },
+    {
+      "sha": "326f9b357a8285a138fb9560a174ac131737c42c",
+      "date": "2026-09-23T16:42:18+02:00",
+      "author": "marco.spasiano",
+      "email": "marco.spasiano@cnr.it",
+      "message": "Merge remote-tracking branch 'origin/master'\n"
+    },
+    {
+      "sha": "a7926f51bdc913d02b438e5149f9f4f5b977c3c6",
+      "date": "2026-09-23T16:42:04+02:00",
+      "author": "marco.spasiano",
+      "email": "marco.spasiano@cnr.it",
+      "message": "feat: allow concorsi group to authorization action and upgrade version of call\n"
+    },
+    {
+      "sha": "5c71e30b6d1b1296fb012ba2913f6a2b132896e1",
+      "date": "2026-09-21T10:59:37Z",
+      "author": "marco.spasiano",
+      "email": "marco.spasiano@cnr.it",
+      "message": "[maven-release-plugin] prepare for next development iteration\n"
+    },
+    {
+      "sha": "5e1d4ea645021a41ada998ae3c72532f5cd2e68f",
+      "date": "2026-09-21T10:59:36Z",
+      "author": "marco.spasiano",
+      "email": "marco.spasiano@cnr.it",
+      "message": "[maven-release-plugin] prepare release 5.10.15\n"
+    },
+    {
+      "sha": "3afa8515f91472d262fecb20bf8ec4bbe510406a",
+      "date": "2026-09-21T10:59:35Z",
+      "author": "marco.spasiano",
+      "email": "marco.spasiano@cnr.it",
+      "message": "changed softwareVersion and releaseDate [ci skip]\n"
+    },
+    {
+      "sha": "3aab806f836e8ad271e83fe9823be15bd2c33236",
+      "date": "2026-09-21T12:48:50+02:00",
+      "author": "marco.spasiano",
+      "email": "marco.spasiano@cnr.it",
+      "message": "fix(call): guardia null su completeList per evitare crash in modalEstraiDomande\n"
+    },
+    {
+      "sha": "e123cd635127e9cc83fd4962c5c17ab0c2a2cbc0",
+      "date": "2026-09-10T13:27:40Z",
+      "author": "marco.spasiano",
+      "email": "marco.spasiano@cnr.it",
+      "message": "[maven-release-plugin] prepare for next development iteration\n"
+    },
+    {
+      "sha": "8ad88a8674a36ca218a8e1acc226075c9ee2553b",
+      "date": "2026-09-10T13:27:38Z",
+      "author": "marco.spasiano",
+      "email": "marco.spasiano@cnr.it",
+      "message": "[maven-release-plugin] prepare release 5.10.14\n"
+    },
+    {
+      "sha": "341f3e994952da0cbc798d6b4e61a529d6848db3",
+      "date": "2026-09-10T13:27:37Z",
+      "author": "marco.spasiano",
+      "email": "marco.spasiano@cnr.it",
+      "message": "changed softwareVersion and releaseDate [ci skip]\n"
+    },
+    {
+      "sha": "43771a3a197bbe0cd910df36d6ed0684cb0343b3",
+      "date": "2026-09-10T15:08:12+02:00",
+      "author": "marco.spasiano",
+      "email": "marco.spasiano@cnr.it",
+      "message": "fix: when an prorogation document was deleted the dates were not recalculated\n"
+    },
+    {
+      "sha": "18beebc00dbf33fed6d8089192f44764e50f50c6",
+      "date": "2026-08-11T09:14:24Z",
+      "author": "marco.spasiano",
+      "email": "marco.spasiano@cnr.it",
+      "message": "[maven-release-plugin] prepare for next development iteration\n"
+    },
+    {
+      "sha": "8cc5790c0f224ca432e1f9947b6955184d4648d0",
+      "date": "2026-08-11T09:14:23Z",
+      "author": "marco.spasiano",
+      "email": "marco.spasiano@cnr.it",
+      "message": "[maven-release-plugin] prepare release 5.10.13\n"
+    },
+    {
+      "sha": "9e8a7e9090d222982ae5b351f9fca89f9eba1390",
+      "date": "2026-08-11T09:14:22Z",
+      "author": "marco.spasiano",
+      "email": "marco.spasiano@cnr.it",
+      "message": "changed softwareVersion and releaseDate [ci skip]\n"
+    },
+    {
+      "sha": "6ccb718ded5ff2cb05ec8c2444276253b34a36b8",
+      "date": "2026-08-11T10:57:16+02:00",
+      "author": "marco.spasiano",
+      "email": "marco.spasiano@cnr.it",
+      "message": "fix: if the user who performed a search does not have access to the parent, no exception is thrown but a warning is written.\n"
+    },
+    {
+      "sha": "26c570065283c680778fd3a6e78eae56b8ae6882",
+      "date": "2026-07-31T12:07:16+02:00",
+      "author": "marco.spasiano",
+      "email": "marco.spasiano@cnr.it",
+      "message": "feat: allow call winners to upload supplementary documents\n\nIntroduce a new `jconon_call_aspect_winner` aspect that lets admins\nenable an attachment upload window for winning candidates, and refactor\nshared CMIS property constants used across scoring logic.\n\n- Add jconon_call_aspect_winner CMIS model with `active` flag and\n  `elenco_file` (allowed attachment types) properties, plus a\n  dedicated `attachment` aspect for winner-submitted files.\n- Register JCONON_CALL_ASPECT_WINNER in JCONONPolicyType and expose\n  its properties via JCONONPropertyIds.\n- CallService: when the winner aspect's `active` flag changes, grant\n  or revoke Contributor ACL on confirmed winning applications so\n  candidates can/can't upload attachments during the open window.\n- CallService: restrict which call properties can be edited after\n  publication via a whitelist (changedKeysCall), including the new\n  winner properties and punteggio fields.\n- Add bulkInfo form definition (P_jconon_call_aspect_winner_aspect.xml)\n  for managing the aspect from the call admin UI.\n- Frontend (my-applications, call.js, call-labels.js, cnr.call.js):\n  add a \"winner\" action button that opens an attachment modal for\n  candidates whose application outcome is 'V' (winner) when the\n  aspect is active; wire up the elenco_file selector lists.\n- Add IT/EN labels for the new aspect fields, the winner action, and\n  a new file-size-exceeded message.\n- Refactor PrintService: remove duplicated punteggio property\n  constants in favor of centralized JCONONPropertyIds entries; replace\n  lambdas with method references where applicable.\n- Utility: add valuesEqual/numbersEqual helpers for type-safe\n  comparison of CMIS property values (numbers, Calendar, etc.) used\n  by the new change-detection logic.\n- Minor cleanups: extract header logo into logo.ftl, restrict\n  OpenApiSecurityConfig to the \"keycloak\" profile, bump\n  cool.shared.version to 4.0.68.\n"
+    },
+    {
+      "sha": "e4796b616d6eb6fc9aadfeb00171b7b4b4123299",
+      "date": "2026-07-08T16:26:21Z",
+      "author": "marco.spasiano",
+      "email": "marco.spasiano@cnr.it",
+      "message": "[maven-release-plugin] prepare for next development iteration\n"
+    },
+    {
+      "sha": "6cd0107b6b9db196311dd0fe1e47d065368bad7c",
+      "date": "2026-07-08T16:26:19Z",
+      "author": "marco.spasiano",
+      "email": "marco.spasiano@cnr.it",
+      "message": "[maven-release-plugin] prepare release 5.10.12\n"
+    },
+    {
+      "sha": "43f603a83611ab8b38cdb1f0a64548c77968ab0c",
+      "date": "2026-07-08T16:26:18Z",
+      "author": "marco.spasiano",
+      "email": "marco.spasiano@cnr.it",
+      "message": "changed softwareVersion and releaseDate [ci skip]\n"
+    },
+    {
+      "sha": "a0d22515247e912900e947ea091c0cc4039fcbcf",
+      "date": "2026-07-08T18:16:48+02:00",
+      "author": "marco.spasiano",
+      "email": "marco.spasiano@cnr.it",
+      "message": "feat: add destination structure and venue in English to call exports\n\n- Register 'i18nDisplay' Handlebars helper to dynamically switch between Italian and English text based on the active locale.\n- Update XML configuration for bulkInfo ('F_jconon_call_folder.xml') to include 'sede_en' and 'struttura_destinataria_en' column fields.\n- Integrate the 'i18nDisplay' helper into the main results Handlebars template to display localized venue and destination structure information.\n"
+    },
+    {
+      "sha": "df9ffa87fc8ed8a4fb502fb9c1bbcc115312269b",
+      "date": "2026-07-07T10:48:41Z",
+      "author": "marco.spasiano",
+      "email": "marco.spasiano@cnr.it",
+      "message": "[maven-release-plugin] prepare for next development iteration\n"
+    },
+    {
+      "sha": "db8d12bd22f84519eb691e587b773b980688f8da",
+      "date": "2026-07-07T10:48:40Z",
+      "author": "marco.spasiano",
+      "email": "marco.spasiano@cnr.it",
+      "message": "[maven-release-plugin] prepare release 5.10.11\n"
+    },
+    {
+      "sha": "80efd459c7c176075888cf048d907364a02772e8",
+      "date": "2026-07-07T10:48:39Z",
+      "author": "marco.spasiano",
+      "email": "marco.spasiano@cnr.it",
+      "message": "changed softwareVersion and releaseDate [ci skip]\n"
+    },
+    {
+      "sha": "cd2efd94539a9eb20c459cd481f791669d6edd4c",
+      "date": "2026-07-07T12:38:28+02:00",
+      "author": "marco.spasiano",
+      "email": "marco.spasiano@cnr.it",
+      "message": "add: aggiunta l'informazione della struttura destinataria e della sede in inglese nell'estrazione excel dei bandi\n"
+    },
+    {
+      "sha": "b556499fa3b3e8acc567eb4b98f1c4295e9a2bf2",
+      "date": "2026-07-02T12:26:37Z",
+      "author": "marco.spasiano",
+      "email": "marco.spasiano@cnr.it",
+      "message": "[maven-release-plugin] prepare for next development iteration\n"
+    },
+    {
+      "sha": "e28238e010f3e62072c1278d23864778d590d361",
+      "date": "2026-07-02T12:26:35Z",
+      "author": "marco.spasiano",
+      "email": "marco.spasiano@cnr.it",
+      "message": "[maven-release-plugin] prepare release 5.10.10\n"
+    },
+    {
+      "sha": "52e6b8815e2dcc14845a6a87dd157253ae6727dc",
+      "date": "2026-07-02T12:26:35Z",
+      "author": "marco.spasiano",
+      "email": "marco.spasiano@cnr.it",
+      "message": "changed softwareVersion and releaseDate [ci skip]\n"
+    },
+    {
+      "sha": "a8ac3f160adef3959abd60a28c250b5ef34161b4",
+      "date": "2026-07-02T14:02:29+02:00",
+      "author": "marco.spasiano",
+      "email": "marco.spasiano@cnr.it",
+      "message": "fix: in caso di cancellazione delle esclusioni firmate non effettuava la riammissione del candidato\n"
+    },
+    {
+      "sha": "4890add00f0aefedc8d54836da43d06b89c892ae",
+      "date": "2026-06-12T17:50:48Z",
+      "author": "marco.spasiano",
+      "email": "marco.spasiano@cnr.it",
+      "message": "Generate CHANGELOG.md [ci skip]\n"
+    },
+    {
+      "sha": "0c1a166ee01522e16353d92ff403c415f581acfb",
+      "date": "2026-06-12T17:31:46Z",
+      "author": "marco.spasiano",
+      "email": "marco.spasiano@cnr.it",
+      "message": "[maven-release-plugin] prepare for next development iteration\n"
+    }
+  ],
+  "commit_sha": "39294bb61512550c0f6e360f643a9713102b1ef9",
+  "extracted_at": "2026-10-05T18:47:16.023250+00:00"
+}

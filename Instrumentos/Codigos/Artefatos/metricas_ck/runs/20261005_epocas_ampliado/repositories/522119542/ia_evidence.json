@@ -1,0 +1,266 @@
+{
+  "ia_status": "com_evidencia",
+  "ia_level": 2,
+  "ia_agents": "Claude Code",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "203015262facee1dc469235ea2a1717ab4009b25",
+      "trailer": "Claude Opus 4.5 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "203015262facee1dc469235ea2a1717ab4009b25",
+      "trailer": "Claude Opus 4.5 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "203015262facee1dc469235ea2a1717ab4009b25",
+      "trailer": "Claude Opus 4.5 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "203015262facee1dc469235ea2a1717ab4009b25",
+      "trailer": "Claude Opus 4.5 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "b20cd810ac7807eaaedb3e96830508fa2d864447",
+      "trailer": "Claude Opus 4.5 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "b20cd810ac7807eaaedb3e96830508fa2d864447",
+      "trailer": "Claude Opus 4.5 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "b20cd810ac7807eaaedb3e96830508fa2d864447",
+      "trailer": "Claude Opus 4.5 <noreply@anthropic.com>"
+    }
+  ],
+  "commits": [
+    {
+      "sha": "36ef0743b11a627de19bb2456e3054196d64864d",
+      "date": "2026-02-02T09:58:44+05:30",
+      "author": "K Siva Prasad Reddy",
+      "email": "sivaprasadreddy.k@gmail.com",
+      "message": "Upgrade dependencies and build workflows\n"
+    },
+    {
+      "sha": "be195edc6a4da0022b3d5f62e8c67603b184465b",
+      "date": "2026-02-02T09:48:40+05:30",
+      "author": "K Siva Prasad Reddy",
+      "email": "sivaprasadreddy.k@gmail.com",
+      "message": "Upgrading spring boot and spotless\n"
+    },
+    {
+      "sha": "203015262facee1dc469235ea2a1717ab4009b25",
+      "date": "2026-02-01T23:15:55-05:00",
+      "author": "Aditya Parikh",
+      "email": "aditya.m.parikh@gmail.com",
+      "message": "Add gradle build (#213)\n\n* Upgrade to Spring Boot 4.0.1 with Testcontainers 2.0 and modular starters\n\nMigrated all Spring Boot modules from 3.5.5 to 4.0.1 using the\nspring-boot-4-migration skill (https://github.com/adityamparikh/spring-boot-4-migration-skill).\n\nKey changes across all Spring Boot modules:\n- Spring Boot 3.5.5 → 4.0.1\n- spring-boot-starter-web → spring-boot-starter-webmvc\n- Added modular test starters (webmvc-test, data-jpa-test, data-couchbase-test)\n- Added maven-compiler-plugin annotationProcessorPaths for Lombok\n- Testcontainers 2.0: junit-jupiter → testcontainers-junit-jupiter,\n  postgresql → testcontainers-postgresql, oracle package relocation\n- Package relocations: DataJpaTest, AutoConfigureTestDatabase,\n  AutoConfigureMockMvc, DataCouchbaseTest moved to Boot 4 packages\n- Jackson 3 compatibility: primitive → wrapper types for nullable JSON fields\n- spring-kafka → spring-boot-starter-kafka with spring-boot-jackson2 bridge\n- spring-cloud-aws 3.4.0 → 4.0.0-RC1 for Boot 4 compatibility\n- spring-boot-starter-flyway added for Flyway auto-configuration\n\nQuarkus and Micronaut fixes (via Junie):\n- Upgraded Testcontainers to 2.0.3\n- Updated artifact naming for TC 2.0\n- Quarkus: disabled Dev Services, re-enabled @QuarkusTestResource\n- Micronaut: switched to Testcontainers JDBC driver\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\n\n# Conflicts:\n#\ttc-docker-compose/pom.xml\n\n* Fix Flyway auto-configuration and test naming for Spring Boot 4\n\nReplace bare flyway-core with spring-boot-starter-flyway in 3 modules\n(tc-docker-compose, spring-boot-jpa-demo, spring-boot-kotlin-demo).\nIn Spring Boot 4, flyway-core alone does not include auto-configuration;\nthe starter is required for Flyway migrations to run.\n\nRename ProductControllerIT to ProductControllerTest so Maven surefire\npicks it up (surefire default includes do not match the *IT pattern).\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\n\n* Add Gradle build alongside Maven (dual-build overlay)\n\nAdd Gradle Kotlin DSL build files with version catalogs for all 18\nmodules (excluding quarkus-jpa-demo and micronaut-jpa-demo whose\nGradle plugins do not support Gradle 9).\n\n- gradle/libs.versions.toml: centralized version catalog\n- settings.gradle.kts: project structure and repository config\n- build.gradle.kts: root build with Spotless formatting\n- Per-module build.gradle.kts files mirroring Maven dependencies\n- Gradle wrapper 9.3.1 (required for Java 25 compatibility)\n- gradle.properties: daemon, parallel build, caching settings\n- .gitignore: Gradle output directories\n\nBoth build systems share the same src/ tree and produce identical\ntest results. Maven outputs to target/, Gradle to build/.\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\n\n---------\n\nCo-authored-by: Claude Opus 4.5 <noreply@anthropic.com>"
+    },
+    {
+      "sha": "b20cd810ac7807eaaedb3e96830508fa2d864447",
+      "date": "2026-02-01T22:49:52-05:00",
+      "author": "Aditya Parikh",
+      "email": "aditya.m.parikh@gmail.com",
+      "message": "Upgrade to Spring Boot 4.0.1 (#212)\n\n* Upgrade to Spring Boot 4.0.1 with Testcontainers 2.0 and modular starters\n\nMigrated all Spring Boot modules from 3.5.5 to 4.0.1 using the\nspring-boot-4-migration skill (https://github.com/adityamparikh/spring-boot-4-migration-skill).\n\nKey changes across all Spring Boot modules:\n- Spring Boot 3.5.5 → 4.0.1\n- spring-boot-starter-web → spring-boot-starter-webmvc\n- Added modular test starters (webmvc-test, data-jpa-test, data-couchbase-test)\n- Added maven-compiler-plugin annotationProcessorPaths for Lombok\n- Testcontainers 2.0: junit-jupiter → testcontainers-junit-jupiter,\n  postgresql → testcontainers-postgresql, oracle package relocation\n- Package relocations: DataJpaTest, AutoConfigureTestDatabase,\n  AutoConfigureMockMvc, DataCouchbaseTest moved to Boot 4 packages\n- Jackson 3 compatibility: primitive → wrapper types for nullable JSON fields\n- spring-kafka → spring-boot-starter-kafka with spring-boot-jackson2 bridge\n- spring-cloud-aws 3.4.0 → 4.0.0-RC1 for Boot 4 compatibility\n- spring-boot-starter-flyway added for Flyway auto-configuration\n\nQuarkus and Micronaut fixes (via Junie):\n- Upgraded Testcontainers to 2.0.3\n- Updated artifact naming for TC 2.0\n- Quarkus: disabled Dev Services, re-enabled @QuarkusTestResource\n- Micronaut: switched to Testcontainers JDBC driver\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\n\n* Remove commented-out modules from pom.xml and add output log file\n\n* Fix Flyway auto-configuration and test naming for Spring Boot 4\n\nReplace bare flyway-core with spring-boot-starter-flyway in 3 modules\n(tc-docker-compose, spring-boot-jpa-demo, spring-boot-kotlin-demo).\nIn Spring Boot 4, flyway-core alone does not include auto-configuration;\nthe starter is required for Flyway migrations to run.\n\nRename ProductControllerIT to ProductControllerTest so Maven surefire\npicks it up (surefire default includes do not match the *IT pattern).\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\n\n---------\n\nCo-authored-by: Claude Opus 4.5 <noreply@anthropic.com>"
+    },
+    {
+      "sha": "4a0140081baa4d09688d1266e05bcc77e7f8ecb5",
+      "date": "2025-08-31T18:34:48+05:30",
+      "author": "K Siva Prasad Reddy",
+      "email": "sivaprasadreddy.k@gmail.com",
+      "message": "Upgrade versions\n"
+    },
+    {
+      "sha": "baf367d7e93302d92b18971c250dd8c9cceb5a14",
+      "date": "2025-08-31T17:58:35+05:30",
+      "author": "K Siva Prasad Reddy",
+      "email": "sivaprasadreddy.k@gmail.com",
+      "message": "Upgrade versions\n"
+    },
+    {
+      "sha": "63a6abef1e4e2fff1c1b73c8b5633ef7421429cb",
+      "date": "2025-08-31T17:55:49+05:30",
+      "author": "K. Siva Prasad Reddy",
+      "email": "sivaprasadreddy.k@gmail.com",
+      "message": "Merge pull request #198 from sivaprasadreddy/renovate/maven-wrapper-3.x\n\nUpdate dependency maven-wrapper to v3.3.3"
+    },
+    {
+      "sha": "d1e458475676b36aa7475d1101ec9f8057eeca0c",
+      "date": "2025-08-31T12:19:04Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency maven-wrapper to v3.3.3"
+    },
+    {
+      "sha": "3eaa38845a662cf48d3a55c1c26c82ae8bb6ad13",
+      "date": "2025-08-31T17:41:03+05:30",
+      "author": "K Siva Prasad Reddy",
+      "email": "sivaprasadreddy.k@gmail.com",
+      "message": "Upgrade versions\n"
+    },
+    {
+      "sha": "311208329d3bd496e78c701da87e5633697a0ce0",
+      "date": "2025-01-12T11:47:46+05:30",
+      "author": "K. Siva Prasad Reddy",
+      "email": "sivaprasadreddy.k@gmail.com",
+      "message": "Update ci.yml"
+    },
+    {
+      "sha": "333f16379b7d6b11232519f730d4690c5055a436",
+      "date": "2024-12-10T20:43:13+05:30",
+      "author": "K Siva Prasad Reddy",
+      "email": "sivaprasadreddy.k@gmail.com",
+      "message": "Upgrade versions\n"
+    },
+    {
+      "sha": "0bf64ea6d1c5464e2fe312701a4119ca82c1789d",
+      "date": "2024-12-10T19:52:25+05:30",
+      "author": "K Siva Prasad Reddy",
+      "email": "sivaprasadreddy.k@gmail.com",
+      "message": "Upgrade versions\n"
+    },
+    {
+      "sha": "7bbcb2cd3eb9cc088f180df241943b8a6092befa",
+      "date": "2024-10-08T09:08:31+05:30",
+      "author": "K Siva Prasad Reddy",
+      "email": "sivaprasadreddy.k@gmail.com",
+      "message": "Upgrade versions\n"
+    },
+    {
+      "sha": "6e942eaf790bf62feca7b5958c43c966715454e9",
+      "date": "2024-09-13T20:26:48+05:30",
+      "author": "K. Siva Prasad Reddy",
+      "email": "sivaprasadreddy.k@gmail.com",
+      "message": "Upgrade dependencies\n"
+    },
+    {
+      "sha": "27e006fa748e20f85c9ada1ab0b0b33189b1f002",
+      "date": "2024-09-13T18:53:54+05:30",
+      "author": "K. Siva Prasad Reddy",
+      "email": "sivaprasadreddy.k@gmail.com",
+      "message": "Enable automerging by renovate\n"
+    },
+    {
+      "sha": "43f65a39d28a0cc5863b50a8d448eef805dd8a39",
+      "date": "2024-08-25T09:31:37+05:30",
+      "author": "K. Siva Prasad Reddy",
+      "email": "sivaprasadreddy.k@gmail.com",
+      "message": "Upgrade dependencies\n"
+    },
+    {
+      "sha": "d2bd3e35b2fb04d403713577bb334ebb3e05ffec",
+      "date": "2024-08-25T09:22:01+05:30",
+      "author": "K. Siva Prasad Reddy",
+      "email": "sivaprasadreddy.k@gmail.com",
+      "message": "Upgrade dependencies\n"
+    },
+    {
+      "sha": "03a653e963724aa6d28e4dcc704715bcaa81b7a2",
+      "date": "2024-08-25T09:16:09+05:30",
+      "author": "K. Siva Prasad Reddy",
+      "email": "sivaprasadreddy.k@gmail.com",
+      "message": "Upgrade dependencies\n"
+    },
+    {
+      "sha": "f31af75134dbcac34bdb9ba059e7d6751115f0e6",
+      "date": "2024-07-23T10:31:12+05:30",
+      "author": "K. Siva Prasad Reddy",
+      "email": "sivaprasadreddy.k@gmail.com",
+      "message": "Upgrade dependencies\n"
+    },
+    {
+      "sha": "4c7ea2fd8a6da77ef9c9fd7d80447bd4e7471f0e",
+      "date": "2024-07-19T08:59:47+05:30",
+      "author": "K. Siva Prasad Reddy",
+      "email": "sivaprasadreddy.k@gmail.com",
+      "message": "Upgrade dependencies\n"
+    },
+    {
+      "sha": "84d9d5e597b471cdc12f1319e7430a3af9851392",
+      "date": "2024-07-18T06:13:50+05:30",
+      "author": "K. Siva Prasad Reddy",
+      "email": "sivaprasadreddy.k@gmail.com",
+      "message": "Upgrade dependencies\n"
+    },
+    {
+      "sha": "c90af216c57e2864ade275bc061568a2a3137911",
+      "date": "2024-07-18T06:07:38+05:30",
+      "author": "K. Siva Prasad Reddy",
+      "email": "sivaprasadreddy.k@gmail.com",
+      "message": "Upgrade dependencies\n"
+    },
+    {
+      "sha": "c7597786b657d71493920b0a0936856cf09694d2",
+      "date": "2024-06-20T17:52:18+05:30",
+      "author": "K. Siva Prasad Reddy",
+      "email": "sivaprasadreddy.k@gmail.com",
+      "message": "Upgrade dependencies\n"
+    },
+    {
+      "sha": "ce72e57b928c7bab58e1d2f129ea92fa27147ed3",
+      "date": "2024-06-07T16:07:33+05:30",
+      "author": "K Siva Prasad Reddy",
+      "email": "sivaprasadreddy.k@gmail.com",
+      "message": "Upgrade dependencies\n"
+    },
+    {
+      "sha": "4d367ed59c1bbb956a780ea076a705931075a7f8",
+      "date": "2024-06-07T16:01:28+05:30",
+      "author": "K Siva Prasad Reddy",
+      "email": "sivaprasadreddy.k@gmail.com",
+      "message": "Upgrade dependencies\n"
+    },
+    {
+      "sha": "9fc59f1e6977b6c2693c8eee6e10aa6d6b81fdfb",
+      "date": "2024-06-07T15:33:08+05:30",
+      "author": "K Siva Prasad Reddy",
+      "email": "sivaprasadreddy.k@gmail.com",
+      "message": "Upgrade dependencies\n"
+    },
+    {
+      "sha": "215dc1779f8df7659e100f860c6ae76052ed8dfa",
+      "date": "2024-03-20T08:14:15+05:30",
+      "author": "K Siva Prasad Reddy",
+      "email": "sivaprasadreddy.k@gmail.com",
+      "message": "Upgrade dependencies\n"
+    },
+    {
+      "sha": "72ca35a12ece1a889d05d3ed6a8e26fa292014ea",
+      "date": "2024-03-20T07:59:12+05:30",
+      "author": "K Siva Prasad Reddy",
+      "email": "sivaprasadreddy.k@gmail.com",
+      "message": "Upgrade dependencies\n"
+    },
+    {
+      "sha": "9d3f11995ed818f79e745767a90d962d5b5cea0e",
+      "date": "2024-02-25T07:00:48+05:30",
+      "author": "K Siva Prasad Reddy",
+      "email": "sivaprasadreddy.k@gmail.com",
+      "message": "Upgrade dependencies\n"
+    },
+    {
+      "sha": "808ef82d1e91ff763f6a4f7a4b3c37030730b60f",
+      "date": "2024-02-25T06:40:19+05:30",
+      "author": "K Siva Prasad Reddy",
+      "email": "sivaprasadreddy.k@gmail.com",
+      "message": "Upgrade dependencies\n"
+    }
+  ],
+  "commit_sha": "36ef0743b11a627de19bb2456e3054196d64864d",
+  "extracted_at": "2026-10-05T18:13:29.316934+00:00"
+}

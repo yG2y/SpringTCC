@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "d75da121a66f8b2ae5be009a98e050fd1dc4c1e6",
+      "date": "2026-03-15T11:01:03+08:00",
+      "author": "Fan Yang",
+      "email": "fudai.yf@alibaba-inc.com",
+      "message": "feat: update README draft link and operation policy text (#21)\n\n* doc(README): update agent operation authorization IETF Draft link\n\n* feat(aoa): optimize policy operation render rules in the agent operation authorization consent page\n\n* feat(aoa): remove token expiration from operation policy text\n\n* feat(ui): add loading disable button after authorization operation\n\n* test: fix unit test\n\n* feat(config): make PAR request expiry configurable"
+    },
+    {
+      "sha": "a38ce4a487580c109f00678e584be24ac47ffecd",
+      "date": "2026-03-10T15:28:53+08:00",
+      "author": "Fan Yang",
+      "email": "fudai.yf@alibaba-inc.com",
+      "message": "feat(aoa): add LLM-based operation text rendering to the AOA consent page and improve consent page UX (#17)"
+    },
+    {
+      "sha": "b212f8abd30146cab825f0b05fa91b283ec5952e",
+      "date": "2026-03-10T09:40:04+08:00",
+      "author": "lichexb",
+      "email": "xb382376@alibaba-inc.com",
+      "message": "test(protocol): add comprehensive protocol conformance test (#20)\n\n* test(protocol): add comprehensive protocol conformance test\n\n* chore(e2e): add the protocol consistency testing steps to the CI process"
+    },
+    {
+      "sha": "b11288594a69a06736375515a974c218dc7b4a1d",
+      "date": "2026-03-09T09:29:51+08:00",
+      "author": "Fan Yang",
+      "email": "fudai.yf@alibaba-inc.com",
+      "message": "fix(dcr): make agent use DCR client assertion to execute PAR and token exchange (#15)\n\n* fix(dcr): make agent use DCR client assertion to execute PAR and token exchange\n\n* test: fix failed stater unit tests\n\n* feat(dcr): restructure OAuth DCR and OAuth client authentication process to make framework standard"
+    },
+    {
+      "sha": "76066dbe5e2d4e2c12487c41a3ef60d48d913fd4",
+      "date": "2026-03-07T15:23:10+08:00",
+      "author": "Fan Yang",
+      "email": "fudai.yf@alibaba-inc.com",
+      "message": "feat(consent): optimize agent operation authorization consent page and render user original input (#13)"
+    },
+    {
+      "sha": "91f19b0698fba71fd22efdfc43b443e382acc9ef",
+      "date": "2026-03-06T18:04:59+08:00",
+      "author": "Fan Yang",
+      "email": "fudai.yf@alibaba-inc.com",
+      "message": "feat(oauth2): standardize OAuth 2.0 error code (#12)\n\n* feat(oauth2): standardize OAuth 2.0 error code\n\n* test(oauth2): fix unit test"
+    },
+    {
+      "sha": "94508d927bf3ad6ff8464a305fefba32dbdfa262",
+      "date": "2026-03-06T17:08:44+08:00",
+      "author": "hongshen.ll",
+      "email": "hongshen.ll@alibaba-inc.com",
+      "message": "fix(npm): update dompurify and esbuild version (#11)"
+    },
+    {
+      "sha": "b10548e76e859219d4cdc37ba008bcf18a647269",
+      "date": "2026-03-06T17:02:07+08:00",
+      "author": "kongxiang-lrk",
+      "email": "liruikang.lrk@alibaba-inc.com",
+      "message": "fix(page): DOM text reinterpreted as HTML (#10)"
+    },
+    {
+      "sha": "7f12576f7b7387b101baaceb2764d10f934fe1d7",
+      "date": "2026-03-06T10:50:54+08:00",
+      "author": "Fan Yang",
+      "email": "fudai.yf@alibaba-inc.com",
+      "message": "feat(oauth2): optimize oauth2 state process (#9)\n\n* feat(oauth2): change the OAuth2 state parameter from the hard-coded format (agent:UUID:sessionId/user:UUID) to the opaque value design that conforms to the RFC 6749 Section 10.12 standard.\n\n* feat(doc): add slogan to home content page\n\n* test(e2e): add admin dashboard E2E integration tests\n\n* refactor(oauth2): redesign OAuth2 authorization request storage"
+    },
+    {
+      "sha": "fa60f0cc5c651948fcb64038e147c52c18c91279",
+      "date": "2026-03-05T22:24:22+08:00",
+      "author": "Fan Yang",
+      "email": "fudai.yf@alibaba-inc.com",
+      "message": "feat(page): optimize document page design to contain more info (#8)\n\n"
+    },
+    {
+      "sha": "da571146b3215314db92a7a9a3a3f31dec6f297b",
+      "date": "2026-03-05T21:09:20+08:00",
+      "author": "Fan Yang",
+      "email": "fudai.yf@alibaba-inc.com",
+      "message": "fix: wrong logo link of vitepress (#7)\n\n"
+    },
+    {
+      "sha": "3949f8ae4f8e799f5f04e2b2d4783460337139de",
+      "date": "2026-03-05T20:58:56+08:00",
+      "author": "Fan Yang",
+      "email": "fudai.yf@alibaba-inc.com",
+      "message": "fix: dead link of documents (#6)\n\n"
+    },
+    {
+      "sha": "bff235c49a43ac0aee0b9c113571f4e211540cc4",
+      "date": "2026-03-05T20:36:02+08:00",
+      "author": "Fan Yang",
+      "email": "fudai.yf@alibaba-inc.com",
+      "message": "feat: rewrite some documents and integrated VitePress for documentation site building (#5)\n\n* doc: redesign and rewrite the api and guide series of documents\n\n* feat(admin): support to view workload info in agent admin dashboard\n\n* chore: import vitepress to build docs package io\n\n* doc(README): update logo icon\n\n* fix(agent): fix XSS Cross-site scripting security problem\n\n* fix(admin): wrong display style of kid of public key of WIT\n\n* doc(README): update latest images of README and fix wrong style of CN README.zh-CN.md\n\n* feat(agent): optimize agent prompt design in Qwen scene\n\n* doc: optimize document page render\n\n* feat(login): remove the non-standard mechanism of embedding sessionId through the OAuth state parameter in the User Authentication scenario, and the login state is maintained in the standard session/cookie manner instead\n\n* test: update E2E integration test after user IDP session process optimization\n\n* test: add more unit tests to improve code coverage\n\n* test: fix failed unit tests\n\n* test: fix omissive failed unit tests\n\n* feat(admin): add access control for admin dashboard page\n\n* doc(readme): fix wrong document link in the README\n\n* doc(admin): add document for admin dashboard\n\n* doc(logo): remove repeated logo\n\n* feat: revise wrong audit event process"
+    },
+    {
+      "sha": "7a82c65a8ef3199948d375878efaa572d11f4e78",
+      "date": "2026-03-04T10:26:44+08:00",
+      "author": "Fan Yang",
+      "email": "fudai.yf@alibaba-inc.com",
+      "message": "feature: standardize protocols and interfaces, and provide an administrator dashboard (#4)\n\n* feat(oauth2): add id_token support in Token Response per OIDC Core 1.0 Section 3.1.3.3\n\n* feat(oidc): enforce OIDC protocol compliance - Bearer Token UserInfo, Discovery metadata, at_hash, scope-filtered claims, token revocation with full test coverage\n\n* refactor(security): add @JsonIgnore and toString redaction for WorkloadContext privateKey\n\n* refactor: decouple FrameworkOAuth2TokenClient from AuthorizationServer interface, move to DefaultAuthorizationServer impl\n\n* refactor: rename AgentAapExecutor methods to IETF standard terminology\n\n- initiateUserAuth → initiateUserAuthentication\n- exchangeUserIdToken → exchangeAuthorizationCodeForIdToken\n- exchangeAgentAuthToken → exchangeAuthorizationCodeForAoat\n- buildAuthContext → buildAuthorizationContext\n- cleanup → revokeWorkloadAndCleanup\n\nUpdated interface, implementation, all callers, and all test files.\nAll 58 related tests pass.\n\n* refactor: restore AuthorizationServer FrameworkOAuth2TokenClient, remove issueWit(String) overload, update AgentAapExecutor Javadoc\n\n- Restore AuthorizationServer extends FrameworkOAuth2TokenClient (AS acts as OAuth Client to AS User IDP)\n- Remove redundant 'implements FrameworkOAuth2TokenClient' from DefaultAuthorizationServer\n- Remove AgentIdentityProvider.issueWit(String) overload, keep only issueWit(IssueWitRequest)\n- Remove issueWit(String) implementation from DefaultAgentIdentityProvider\n- Remove issueWit(String) test cases from DefaultAgentIdentityProviderTest\n- Remove issueWit(String) from CustomAgentIdentityProvider in AgentIdpAutoConfigurationTest\n- Update AgentIdentityProvider Javadoc to reflect issueWit(IssueWitRequest) usage\n- Update AgentAapExecutor Javadoc to remove references to non-existent Executors\n- Cancel P1-1 (no need for role-specific Executors)\n\n* refactor: enhance ResourceServer with per-layer validation, extract Agent flow docs\n\nP2-1: Add five independent validation methods to ResourceServer interface\n- validateWit(): Layer 1 WIT signature and validity verification\n- validateWpt(): Layer 2 WPT signature and request integrity verification\n- validateAoat(): Layer 3 AOAT signature and validity verification\n- verifyIdentityConsistency(): Layer 4 identity consistency verification\n- evaluatePolicy(): Layer 5 OPA policy evaluation\n- Refactor DefaultResourceServer to extract buildValidationContext(),\n  findValidatorByLayer(), convertToLayerResult() helper methods\n- Refactor validateRequest() to reuse buildValidationContext()\n- Add comprehensive unit tests for all 5 new methods (15 new tests)\n\nP2-2: Streamline Agent.java Javadoc\n- Extract ~250 lines of ASCII sequence diagrams to\n  docs/architecture/protocol/agent-authorization-flow.md\n- Replace with concise 6-phase summary with @see reference\n- Agent.java reduced from 574 to ~320 lines\n- All method-level Javadoc preserved unchanged\n\n* feat(html): optimize page style of chat and authorization page\n\n* doc(architecture): reorganize the document format and content to make it more readable\n\n* doc(java): fix illegal format angle brackets\n\n* feat(ui): add admin dashboard page"
+    },
+    {
+      "sha": "fb3c126ca172f37e906ba971b44d8c7c73bbfc65",
+      "date": "2026-02-26T09:38:36+08:00",
+      "author": "Fan Yang",
+      "email": "fudai.yf@alibaba-inc.com",
+      "message": "style(autoconfig): optimize auto configuration code style (#3)\n\n* doc(README): fix wrong build status links\n\n* chore(ci): fix process test report summary trimmed warning\n\n* chore(ci): remove git-action update README code coverage job step\n\n* style(autoconfig): Optimize the consecutive calls of properties"
+    },
+    {
+      "sha": "ed623dc3ed0c61b4aa2a182ff61240d753585a00",
+      "date": "2026-02-25T19:47:54+08:00",
+      "author": "fudai.yf",
+      "email": "fudai.yf@alibaba-inc.com",
+      "message": "fix(ci): wrong format of JaCoCo coverage report\n"
+    },
+    {
+      "sha": "4d0c3c794ad638261339084387551087e6e9ec4c",
+      "date": "2026-02-25T19:37:02+08:00",
+      "author": "fudai.yf",
+      "email": "fudai.yf@alibaba-inc.com",
+      "message": "chore(test): update run-e2e-tests.sh to support Ubuntu running\n"
+    },
+    {
+      "sha": "93a05677316be993b4d2459a072e028a04e7e913",
+      "date": "2026-02-25T19:26:49+08:00",
+      "author": "fudai.yf",
+      "email": "fudai.yf@alibaba-inc.com",
+      "message": "chore(test): remove codeQL config and update CI unit test and E2E integration test config\n"
+    },
+    {
+      "sha": "59379410859d92c495e5574b161e58dc07bc50dd",
+      "date": "2026-02-25T19:01:31+08:00",
+      "author": "fudai.yf",
+      "email": "fudai.yf@alibaba-inc.com",
+      "message": "refactor(properties): add peer configurations to simplify role-based properties\n"
+    },
+    {
+      "sha": "c22d3ed550f4b0e2d7b8c93c1701c21fea517b68",
+      "date": "2026-02-25T15:55:49+08:00",
+      "author": "fudai.yf",
+      "email": "fudai.yf@alibaba-inc.com",
+      "message": "chore(github): add some workflows configuration\n"
+    },
+    {
+      "sha": "75e07901ef8d6b5a3577df03ee5c7c4184ba7f1c",
+      "date": "2026-02-25T11:16:47+08:00",
+      "author": "fudai.yf",
+      "email": "fudai.yf@alibaba-inc.com",
+      "message": "refactor(validator): decouple NimbusDS JWKSource from Validators, unify key resolution via KeyManager and extract SignatureVerificationUtils\n"
+    },
+    {
+      "sha": "2bc8ce089281e6ebbca5b3e97836bbad094e824c",
+      "date": "2026-02-25T00:49:47+08:00",
+      "author": "fudai.yf",
+      "email": "fudai.yf@alibaba-inc.com",
+      "message": "refactor(autoconfig): resolve tokenService hardcoded key from properties, add JwksConsumerKeyResolver tests, fix lazy JWKS consumer validation in tests\n"
+    },
+    {
+      "sha": "8963f3ba8d85a1f55e6ab79eca8fe9746b6f6ec8",
+      "date": "2026-02-24T23:57:02+08:00",
+      "author": "fudai.yf",
+      "email": "fudai.yf@alibaba-inc.com",
+      "message": "refactor(controller): unify endpoint keys to operation-resource style, migrate remote stores from GET to POST, remove deprecated OpenAgentAuthAuditProperties, fix sample-agent encryption-key-id config\n"
+    },
+    {
+      "sha": "e4cd7644955dfa381d814fa8e3bffaf3117908f6",
+      "date": "2026-02-24T19:48:38+08:00",
+      "author": "fudai.yf",
+      "email": "fudai.yf@alibaba-inc.com",
+      "message": "refactor(configuration): extract shared infrastructure beans into SharedCapabilityAutoConfiguration and add ConfigurationValidator for role-capability consistency validation\n"
+    },
+    {
+      "sha": "804b18558d825507b7bcfd3381eb9a79b29df54d",
+      "date": "2026-02-24T18:17:29+08:00",
+      "author": "fudai.yf",
+      "email": "fudai.yf@alibaba-inc.com",
+      "message": "refactor(configuration): decouple PAR/DCR from OAuth2 authorization server core\n"
+    },
+    {
+      "sha": "17b6dcd3c60e78001a63cbf544e116bef007344a",
+      "date": "2026-02-24T15:00:45+08:00",
+      "author": "fudai.yf",
+      "email": "fudai.yf@alibaba-inc.com",
+      "message": "refactor(properties): extract inner classes from OpenAgentAuthProperties and narrow @ComponentScan scope\n"
+    },
+    {
+      "sha": "5b8a9aaa7395f37f7147aa13dd67dc76724cf5e9",
+      "date": "2026-02-24T14:48:24+08:00",
+      "author": "fudai.yf",
+      "email": "fudai.yf@alibaba-inc.com",
+      "message": "refactor(properties): remove hardcoded service types from ServiceProperties, unify to consumers Map pattern\n"
+    },
+    {
+      "sha": "0fca6d441a7184b536002c25aa8db33e785b5d84",
+      "date": "2026-02-24T12:03:54+08:00",
+      "author": "fudai.yf",
+      "email": "fudai.yf@alibaba-inc.com",
+      "message": "refactor(autoconfig): replace hardcoded magic strings with ConfigConstants in AutoConfiguration classes\n"
+    },
+    {
+      "sha": "6aafd0be715e8c8936392720befb4739f6f78838",
+      "date": "2026-02-24T11:53:09+08:00",
+      "author": "fudai.yf",
+      "email": "fudai.yf@alibaba-inc.com",
+      "message": "refactor(autoconfigure): decompose God Class AutoConfigurations into nested configuration classes following SRP\n"
+    },
+    {
+      "sha": "48c4503826bb5b402fb841dfc4352b3559a87d88",
+      "date": "2026-02-24T10:26:54+08:00",
+      "author": "fudai.yf",
+      "email": "fudai.yf@alibaba-inc.com",
+      "message": "refactor(properties): eliminate duplicate @ConfigurationProperties binding in favor of single-root nested binding\n"
+    }
+  ],
+  "commit_sha": "d75da121a66f8b2ae5be009a98e050fd1dc4c1e6",
+  "extracted_at": "2026-10-05T18:09:21.158699+00:00"
+}

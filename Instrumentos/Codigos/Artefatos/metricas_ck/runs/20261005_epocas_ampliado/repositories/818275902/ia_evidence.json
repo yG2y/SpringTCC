@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "386840918176e4c94d85a833f00d2bdd0e721d48",
+      "date": "2025-01-05T14:23:03+09:00",
+      "author": "SeongJu Hong",
+      "email": "96187152+penrose15@users.noreply.github.com",
+      "message": "Merge pull request #470 from depromeet/refactor/469-google-sheet-retryable\n\nrefactor: 구글 스프레드 시트 API 호출 시 @Retryable 을 활용한 재처리 로직 추가"
+    },
+    {
+      "sha": "122debccfa649a5a530cd2a19ee9fe54838eb44b",
+      "date": "2025-01-03T20:27:00+09:00",
+      "author": "penrose15",
+      "email": "seongju99@naver.com",
+      "message": "refactor: 메서드 이름 변경(writeToSheet -> writeWithdrawalToSheet) (#469)\n"
+    },
+    {
+      "sha": "2d3e882824229d600359e2b655f944ab0a905393",
+      "date": "2025-01-03T20:26:04+09:00",
+      "author": "penrose15",
+      "email": "seongju99@naver.com",
+      "message": "refactor: @Retryable, @Recover 적용 (#469)\n"
+    },
+    {
+      "sha": "61b87a655c9a603ca3884f0c54a07563a01f144e",
+      "date": "2025-01-03T20:25:26+09:00",
+      "author": "penrose15",
+      "email": "seongju99@naver.com",
+      "message": "refactor: 탈퇴 사유 ErrorType와 신고 등록 ErrorType 분리 (#469)\n"
+    },
+    {
+      "sha": "2ea50843b695e568230d70c228e6d6d89ef504bd",
+      "date": "2025-01-03T20:24:43+09:00",
+      "author": "penrose15",
+      "email": "seongju99@naver.com",
+      "message": "refactor: CheckedException(IOException, GeneralSecurityException)을 감싸기 위한 스프레드 시트 전용 Exception 생성 (#469)\n"
+    },
+    {
+      "sha": "88378d345144656c9a189485c76126295dc3dc3b",
+      "date": "2025-01-03T20:23:03+09:00",
+      "author": "penrose15",
+      "email": "seongju99@naver.com",
+      "message": "refactor: 클래스 이름 변경 (ScanningPropertiesConfig -> GoogleSheetConfig) (#469)\n"
+    },
+    {
+      "sha": "cad44a9520d9a4927404de69fa05567323b45e2f",
+      "date": "2025-01-03T20:22:00+09:00",
+      "author": "penrose15",
+      "email": "seongju99@naver.com",
+      "message": "refactor: cloud-front domain 필드 주입(@Value) 방식 -> 생성자 주입 방식(@ConfigurationProperties) 로 변경 (#469)\n"
+    },
+    {
+      "sha": "e3b612c9fa88351d1cd0d798316f1ea01d84f0ed",
+      "date": "2025-01-03T20:20:10+09:00",
+      "author": "penrose15",
+      "email": "seongju99@naver.com",
+      "message": "refactor: spring-retry dependency 추가 (#469)\n"
+    },
+    {
+      "sha": "3f95085293284620c143453ab10225301eb82486",
+      "date": "2024-12-03T13:35:16+09:00",
+      "author": "Mincheol Shin",
+      "email": "48898994+its-sky@users.noreply.github.com",
+      "message": "Merge pull request #468 from depromeet/fix/467-friend-type\n\nfix: 서로 친구일 시 팔로우 로그 상태 변경 버그 수정"
+    },
+    {
+      "sha": "aa3c1d5d020219980f12303906c24a541221a11a",
+      "date": "2024-12-03T13:28:28+09:00",
+      "author": "its-sky",
+      "email": "smc9919@naver.com",
+      "message": "feat: FollowLog 도메인 타입 변경 메소드 구현 (#467)\n"
+    },
+    {
+      "sha": "504fd529e69b7457e874d46645b8ac9b337ee349",
+      "date": "2024-12-03T13:28:04+09:00",
+      "author": "its-sky",
+      "email": "smc9919@naver.com",
+      "message": "fix: FRIEND 상태일 시 기존 FOLLOW 알림을 FRIEND로 변경 (#467)\n"
+    },
+    {
+      "sha": "791001039f2bb215ca1ab6b5555ee9715a2d0e60",
+      "date": "2024-12-03T13:27:29+09:00",
+      "author": "its-sky",
+      "email": "smc9919@naver.com",
+      "message": "feat: FollowLogRepository 상태 변경 메소드 구현 (#467)\n"
+    },
+    {
+      "sha": "54e08b400a91f30b653f1b454ddeeeef950d3066",
+      "date": "2024-11-26T23:22:16+09:00",
+      "author": "hsj",
+      "email": "96187152+penrose15@users.noreply.github.com",
+      "message": "Merge pull request #465 from depromeet/test/461-friend-domain-test\n\ntest: 팔로우 도메인 테스트 코드 작성"
+    },
+    {
+      "sha": "05ea12ae9cd7081471b1785284cde899f743b1a0",
+      "date": "2024-11-19T09:54:14+09:00",
+      "author": "Wonchae Yang",
+      "email": "79977182+ywonchae1@users.noreply.github.com",
+      "message": "Merge pull request #463 from depromeet/fix/462-delete-account-npe\n\nfix: 카카오 회원 탈퇴 시 access token 조회 NPE 해결"
+    },
+    {
+      "sha": "8bd02d021124aadb3f5107b097dae1c21cc994ea",
+      "date": "2024-11-19T08:49:54+09:00",
+      "author": "ywonchae1",
+      "email": "ywonchae62@gmail.com",
+      "message": "fix: 카카오 회원 탈퇴 시 access token 조회 NPE 해결 (#462)\n"
+    },
+    {
+      "sha": "29a1825df407c1c550550d94b62d7a4a5964bc91",
+      "date": "2024-11-15T19:09:11+09:00",
+      "author": "penrose15",
+      "email": "seongju99@naver.com",
+      "message": "test: FollowingService 테스트 코드 작성 (#461)\n"
+    },
+    {
+      "sha": "de9747dfacc194624b7dbb38066f8d007407b2a3",
+      "date": "2024-11-12T16:09:41+09:00",
+      "author": "hsj",
+      "email": "96187152+penrose15@users.noreply.github.com",
+      "message": "Merge pull request #460 from depromeet/test/459-following-memory-log-domain\n\ntest: 팔로우 소식 도메인 테스트 코드 작성"
+    },
+    {
+      "sha": "ed8d76a7846b8271e42afb10e62737512755cfa4",
+      "date": "2024-11-12T16:06:55+09:00",
+      "author": "penrose15",
+      "email": "seongju99@naver.com",
+      "message": "fix: 테스트 실패 수정 (#459)\n"
+    },
+    {
+      "sha": "ee42ec0983fca242c8dd8196d9245a49569591bc",
+      "date": "2024-11-12T15:20:15+09:00",
+      "author": "penrose15",
+      "email": "seongju99@naver.com",
+      "message": "fix: 코드리뷰 반영 - FakeFollowingMemoryLogRepository의 followingMemoryLogAutoGeneratedId에 사용된 증감연산자 위치 변경 (#459)\n"
+    },
+    {
+      "sha": "9c3193ca7f463640911e7ff69e37bd8e04dd16e5",
+      "date": "2024-11-12T00:53:43+09:00",
+      "author": "penrose15",
+      "email": "seongju99@naver.com",
+      "message": "fix: FollowingMemoryLogService 삭제 메서드의 @Transactional 삭제(원복)\n"
+    },
+    {
+      "sha": "fa5009d2ffaffa331fd912b1241f300bcbf77a97",
+      "date": "2024-11-12T00:40:01+09:00",
+      "author": "penrose15",
+      "email": "seongju99@naver.com",
+      "message": "test: FollowingMemoryLog controller 테스트 추가 (#459)\n"
+    },
+    {
+      "sha": "8459407ab10284bee6b9958164bddeba26edb51a",
+      "date": "2024-11-12T00:03:47+09:00",
+      "author": "penrose15",
+      "email": "seongju99@naver.com",
+      "message": "test: FollowingMemoryLog domain-module 테스트 추가 (#459)\n"
+    },
+    {
+      "sha": "842bb62c3a41f0c3ff89f412541b94361fbe2d51",
+      "date": "2024-11-11T23:58:19+09:00",
+      "author": "penrose15",
+      "email": "seongju99@naver.com",
+      "message": "fix: delete메서드에 @Transactional 추가\n"
+    },
+    {
+      "sha": "b758681a3bae5ac3e1c9a875ca627f5397146d51",
+      "date": "2024-11-10T16:20:24+09:00",
+      "author": "penrose15",
+      "email": "seongju99@naver.com",
+      "message": "test: MemberFixture에 필요한 메서드 추가(make(... ,String role)) (#459)\n"
+    },
+    {
+      "sha": "0fab0b82945c596d3021a0185a1058e03adfca32",
+      "date": "2024-11-10T16:19:08+09:00",
+      "author": "penrose15",
+      "email": "seongju99@naver.com",
+      "message": "test: MemoryFixture 불필요한 파라미터 제거 (#459)\n"
+    },
+    {
+      "sha": "5d73986c2cc14acee071109f5172008a6fef6879",
+      "date": "2024-11-10T15:35:18+09:00",
+      "author": "penrose15",
+      "email": "seongju99@naver.com",
+      "message": "test: MemberFixture의 불필요한 파라미터 및 중복 메서드 제거 (#459)\n"
+    },
+    {
+      "sha": "dd09a93386dfec9229562e4c4aacde587a5e2e40",
+      "date": "2024-11-08T11:59:28+09:00",
+      "author": "Mincheol Shin",
+      "email": "48898994+its-sky@users.noreply.github.com",
+      "message": "Merge pull request #458 from depromeet/test/457-greeting\n\ntest: Greeting 도메인 테스트 코드 작성"
+    },
+    {
+      "sha": "66bb096c97ac0bce4f51dabfad46204981e3c689",
+      "date": "2024-11-08T11:50:30+09:00",
+      "author": "its-sky",
+      "email": "smc9919@naver.com",
+      "message": "test: GreetingController 테스트 (#457)\n"
+    },
+    {
+      "sha": "ba6a198e4c8a048ef7dc34586e3f06dacb1b48d0",
+      "date": "2024-11-08T11:49:45+09:00",
+      "author": "its-sky",
+      "email": "smc9919@naver.com",
+      "message": "chore: GreetingSuccessType 성공 코드 및 문자 변경 (#457)\n"
+    },
+    {
+      "sha": "6f24bdcef1cf9471ac509cde1d39c234eebfff42",
+      "date": "2024-11-08T11:44:46+09:00",
+      "author": "its-sky",
+      "email": "smc9919@naver.com",
+      "message": "test: GreetingService 인삿말 조회 테스트 (#457)\n"
+    }
+  ],
+  "commit_sha": "386840918176e4c94d85a833f00d2bdd0e721d48",
+  "extracted_at": "2026-10-05T18:40:17.257907+00:00"
+}

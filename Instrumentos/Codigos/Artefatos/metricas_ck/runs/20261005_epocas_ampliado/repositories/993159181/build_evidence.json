@@ -1,0 +1,664 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "4.1.0",
+  "spring_boot_major": "4",
+  "java_versions_declared": "25",
+  "build_evidence": [
+    {
+      "file": "section01/bedrock/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "section01/bedrock/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "section01/bedrock/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "section01/bedrock/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "section01/bedrock/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "section01/dockermodel/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "section01/dockermodel/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "section01/dockermodel/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "section01/dockermodel/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "section01/dockermodel/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "section01/multimodel/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "section01/multimodel/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "section01/multimodel/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "section01/multimodel/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "section01/multimodel/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "section01/ollama/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "section01/ollama/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "section01/ollama/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "section01/ollama/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "section01/ollama/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "section01/openai/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "section01/openai/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "section01/openai/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "section01/openai/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "section01/openai/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "section02/springai/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "section02/springai/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "section02/springai/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "section02/springai/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "section02/springai/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "section04/springai/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "section04/springai/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "section04/springai/pom.xml",
+      "artifact": "spring-boot-h2console"
+    },
+    {
+      "file": "section04/springai/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "section04/springai/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "section04/springai/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "section05/springai/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "section05/springai/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "section05/springai/pom.xml",
+      "artifact": "spring-boot-starter-restclient"
+    },
+    {
+      "file": "section05/springai/pom.xml",
+      "artifact": "spring-boot-h2console"
+    },
+    {
+      "file": "section05/springai/pom.xml",
+      "artifact": "spring-boot-docker-compose"
+    },
+    {
+      "file": "section05/springai/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "section05/springai/pom.xml",
+      "artifact": "spring-boot-starter-restclient-test"
+    },
+    {
+      "file": "section05/springai/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "section06/springai/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "section06/springai/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "section06/springai/pom.xml",
+      "artifact": "spring-boot-starter-restclient"
+    },
+    {
+      "file": "section06/springai/pom.xml",
+      "artifact": "spring-boot-h2console"
+    },
+    {
+      "file": "section06/springai/pom.xml",
+      "artifact": "spring-boot-docker-compose"
+    },
+    {
+      "file": "section06/springai/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "section06/springai/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "section06/springai/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "section07/mcp-elicitation/mcpclient/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "section07/mcp-elicitation/mcpclient/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "section07/mcp-elicitation/mcpclient/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "section07/mcp-elicitation/mcpclient/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "section07/mcp-elicitation/mcpclient/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "section07/mcp-elicitation/mcpserverremote/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "section07/mcp-elicitation/mcpserverremote/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "section07/mcp-elicitation/mcpserverremote/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "section07/mcp-elicitation/mcpserverremote/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "section07/mcp-elicitation/mcpserverremote/pom.xml",
+      "artifact": "spring-boot-h2console"
+    },
+    {
+      "file": "section07/mcp-elicitation/mcpserverremote/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "section07/mcp-elicitation/mcpserverremote/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "section07/mcp-logging/mcpclient/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "section07/mcp-logging/mcpclient/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "section07/mcp-logging/mcpclient/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "section07/mcp-logging/mcpclient/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "section07/mcp-logging/mcpclient/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "section07/mcp-logging/mcpserverremote/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "section07/mcp-logging/mcpserverremote/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "section07/mcp-logging/mcpserverremote/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "section07/mcp-logging/mcpserverremote/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "section07/mcp-logging/mcpserverremote/pom.xml",
+      "artifact": "spring-boot-h2console"
+    },
+    {
+      "file": "section07/mcp-logging/mcpserverremote/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "section07/mcp-logging/mcpserverremote/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "section07/mcp-progress/mcpclient/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "section07/mcp-progress/mcpclient/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "section07/mcp-progress/mcpclient/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "section07/mcp-progress/mcpclient/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "section07/mcp-progress/mcpclient/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "section07/mcp-progress/mcpserverremote/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "section07/mcp-progress/mcpserverremote/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "section07/mcp-progress/mcpserverremote/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "section07/mcp-progress/mcpserverremote/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "section07/mcp-progress/mcpserverremote/pom.xml",
+      "artifact": "spring-boot-h2console"
+    },
+    {
+      "file": "section07/mcp-progress/mcpserverremote/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "section07/mcp-progress/mcpserverremote/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "section07/mcp-sampling/mcpclient/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "section07/mcp-sampling/mcpclient/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "section07/mcp-sampling/mcpclient/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "section07/mcp-sampling/mcpclient/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "section07/mcp-sampling/mcpclient/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "section07/mcp-sampling/mcpserverremote/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "section07/mcp-sampling/mcpserverremote/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "section07/mcp-sampling/mcpserverremote/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "section07/mcp-sampling/mcpserverremote/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "section07/mcp-sampling/mcpserverremote/pom.xml",
+      "artifact": "spring-boot-h2console"
+    },
+    {
+      "file": "section07/mcp-sampling/mcpserverremote/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "section07/mcp-sampling/mcpserverremote/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "section07/mcp-tool-filter/mcpclient/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "section07/mcp-tool-filter/mcpclient/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "section07/mcp-tool-filter/mcpclient/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "section07/mcp-tool-filter/mcpclient/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "section07/mcp-tool-filter/mcpclient/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "section07/mcp-tool-filter/mcpserverremote/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "section07/mcp-tool-filter/mcpserverremote/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "section07/mcp-tool-filter/mcpserverremote/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "section07/mcp-tool-filter/mcpserverremote/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "section07/mcp-tool-filter/mcpserverremote/pom.xml",
+      "artifact": "spring-boot-h2console"
+    },
+    {
+      "file": "section07/mcp-tool-filter/mcpserverremote/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "section07/mcp-tool-filter/mcpserverremote/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "section07/mcpclient/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "section07/mcpclient/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "section07/mcpclient/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "section07/mcpclient/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "section07/mcpclient/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "section07/mcpserverremote/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "section07/mcpserverremote/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "section07/mcpserverremote/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "section07/mcpserverremote/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "section07/mcpserverremote/pom.xml",
+      "artifact": "spring-boot-h2console"
+    },
+    {
+      "file": "section07/mcpserverremote/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "section07/mcpserverremote/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "section07/mcpserverstdio/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "section07/mcpserverstdio/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "section07/mcpserverstdio/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "section07/mcpserverstdio/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "section07/mcpserverstdio/pom.xml",
+      "artifact": "spring-boot-h2console"
+    },
+    {
+      "file": "section07/mcpserverstdio/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "section07/mcpserverstdio/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "section08/springai/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "section08/springai/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "section08/springai/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "section08/springai/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "section08/springai/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "section09/springai/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "section09/springai/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "section09/springai/pom.xml",
+      "artifact": "spring-boot-starter-restclient"
+    },
+    {
+      "file": "section09/springai/pom.xml",
+      "artifact": "spring-boot-h2console"
+    },
+    {
+      "file": "section09/springai/pom.xml",
+      "artifact": "spring-boot-docker-compose"
+    },
+    {
+      "file": "section09/springai/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "section09/springai/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "section09/springai/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "section09/springai/pom.xml",
+      "artifact": "spring-boot-starter-opentelemetry"
+    },
+    {
+      "file": "section09/springai/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "section_10/springai/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "section_10/springai/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "section_10/springai/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "section_10/springai/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "section_10/springai/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "section_11/support-agent-demo/mcp-server/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "section_11/support-agent-demo/mcp-server/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "section_11/support-agent-demo/mcp-server/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "section_11/support-agent-demo/mcp-server/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "section_11/support-agent-demo/mcp-server/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa-test"
+    },
+    {
+      "file": "section_11/support-agent-demo/mcp-server/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "section_11/support-agent-demo/mcp-server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "section_11/support-agent-demo/support-agent/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "section_11/support-agent-demo/support-agent/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "section_11/support-agent-demo/support-agent/pom.xml",
+      "artifact": "spring-boot-starter-mail"
+    },
+    {
+      "file": "section_11/support-agent-demo/support-agent/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "section_11/support-agent-demo/support-agent/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "section_11/support-agent-demo/support-agent/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

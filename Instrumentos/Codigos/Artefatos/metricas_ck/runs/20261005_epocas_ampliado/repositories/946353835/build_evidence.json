@@ -1,0 +1,64 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${spring-boot.version};2.7.18;3.1.7",
+  "spring_boot_major": "multiple",
+  "java_versions_declared": "17;8",
+  "build_evidence": [
+    {
+      "file": "expression-mind-map-client-starter/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "expression-mind-map-client-starter/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "expression-mind-map-core/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "expression-mind-map-core/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "expression-mind-map-jdk17/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "expression-mind-map-jdk8/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "expression-mind-map-server/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "expression-mind-map-server/pom.xml",
+      "artifact": "spring-boot-starter-undertow"
+    },
+    {
+      "file": "expression-mind-map-server/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "expression-mind-map-server/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "expression-mind-map-server/pom.xml",
+      "artifact": "spring-boot-starter-freemarker"
+    },
+    {
+      "file": "expression-mind-map-server/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "expression-mind-map-server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-dependencies"
+    }
+  ]
+}

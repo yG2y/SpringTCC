@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "cd211a2dcc067491f199e3a298e43c3dcabf2a25",
+      "date": "2026-08-31T17:23:46+08:00",
+      "author": "mazc",
+      "email": "mazc@dibo.ltd",
+      "message": "* 优化文件访问安全检查相关提示，记录日志等\n"
+    },
+    {
+      "sha": "8cddcd837cb66cca9a7cb6701061386527801725",
+      "date": "2026-08-28T16:32:16+08:00",
+      "author": "wuy",
+      "email": "1311695042@qq.com",
+      "message": "+ 增加文件访问拦截器：统一处理文件读/写的权限检查\n"
+    },
+    {
+      "sha": "5c029d793722a82038534a668c0cd6ec965aa7f8",
+      "date": "2026-08-28T14:52:27+08:00",
+      "author": "wuy",
+      "email": "1311695042@qq.com",
+      "message": "fix 修复租户权限控制问题\n"
+    },
+    {
+      "sha": "0aa8f1dab86d1a8a2ab14fc4a8eb42c103d1098e",
+      "date": "2026-08-27T10:47:44+08:00",
+      "author": "mazc",
+      "email": "mazc@dibo.ltd",
+      "message": "* 优化load-related-data加载关联数据的安全检查\n"
+    },
+    {
+      "sha": "42e4f8da4bfa68a403678fdcc015201af5b7d3cb",
+      "date": "2026-08-26T17:00:33+08:00",
+      "author": "mazc",
+      "email": "mazc@dibo.ltd",
+      "message": "* 补充完善关键方法的@BindPermission注解\n"
+    },
+    {
+      "sha": "20a922f6a5e5adfdecc60950ed132bb4aeedb733",
+      "date": "2026-08-24T10:13:29+08:00",
+      "author": "wuy",
+      "email": "1311695042@qq.com",
+      "message": "* 批量上传增加业务写权限检查\n"
+    },
+    {
+      "sha": "cd9852fb2a20564628c51b460450b7895c4b6c74",
+      "date": "2026-08-24T10:12:22+08:00",
+      "author": "wuy",
+      "email": "1311695042@qq.com",
+      "message": "fix 修复文件下载接口缺少对象级授权导致任意文件读取\n"
+    },
+    {
+      "sha": "695d8f54f4ecdf008077cc1a396fe68493e6e95c",
+      "date": "2026-08-12T09:15:38Z",
+      "author": "dibo-software",
+      "email": "gitee@dibo.ltd",
+      "message": "!41 解决ParserCache 在kotlin环境下由协变导致获取Class失败的问题\n\nMerge pull request !41 from btown/develop-v3"
+    },
+    {
+      "sha": "39fc34703f572a283a6b01544c9ce89320f1b8f0",
+      "date": "2026-08-12T08:51:51Z",
+      "author": "btown",
+      "email": "yangchengyu@vgenomics.cn",
+      "message": "update diboot-core/src/main/java/com/diboot/core/binding/parser/ParserCache.java.\n\nSigned-off-by: btown <yangchengyu@vgenomics.cn>"
+    },
+    {
+      "sha": "b6f0c8b25f7cd8b7b799c03f3374570dcc146348",
+      "date": "2026-08-12T16:44:25+08:00",
+      "author": "Btown",
+      "email": "btown021@163.com",
+      "message": "解决ParserCache 在kotlin环境下由协变导致获取Class失败的问题\n"
+    },
+    {
+      "sha": "2167fd401380c76396ddeaf88dfabc97789d4356",
+      "date": "2026-06-23T16:14:45+08:00",
+      "author": "mazc",
+      "email": "mazc@dibo.ltd",
+      "message": "* 更新develop-v3分支Spring-boot依赖至v4\n"
+    },
+    {
+      "sha": "bda3771193ce97d2bae8fdd9a2d3dd246dc62799",
+      "date": "2026-06-23T15:53:19+08:00",
+      "author": "mazc",
+      "email": "mazc@dibo.ltd",
+      "message": "Merge branch 'detached2' into develop-v3\n\n# Conflicts:\n#\tdiboot-ai-starter/pom.xml\n#\tdiboot-core-starter/pom.xml\n#\tdiboot-core/pom.xml\n#\tdiboot-file-starter/pom.xml\n#\tdiboot-iam-starter/pom.xml\n#\tdiboot-mobile-starter/pom.xml\n#\tdiboot-notification-starter/pom.xml\n#\tdiboot-scheduler-starter/pom.xml\n#\tdiboot-tenant-starter/pom.xml\n#\tpom.xml\n#\trest-api-example/pom.xml\n"
+    },
+    {
+      "sha": "770d645266db64e3bed1a45e56930b8d41056b52",
+      "date": "2026-06-23T15:52:31+08:00",
+      "author": "mazc",
+      "email": "mazc@dibo.ltd",
+      "message": "* 添加spring启用虚拟线程配置项示例\n"
+    },
+    {
+      "sha": "cad457e52c94eb8a3a0a712264000ec20e94dfd0",
+      "date": "2026-06-23T15:51:07+08:00",
+      "author": "mazc",
+      "email": "mazc@dibo.ltd",
+      "message": "* 同步develop-v3分支变更\n"
+    },
+    {
+      "sha": "9c1e809d55268a5a76b5c4617191ebc4a498d059",
+      "date": "2026-04-09T15:24:11+08:00",
+      "author": "mazc",
+      "email": "mazc@dibo.ltd",
+      "message": "* 恢复IamUserPositionService废弃接口暂标注Deprecated\n"
+    },
+    {
+      "sha": "e6d7fcd8f1badd9d807cffb181e3318420f6a814",
+      "date": "2026-06-23T13:31:18+08:00",
+      "author": "mazc",
+      "email": "mazc@dibo.ltd",
+      "message": "* 更新devtools依赖版本\n"
+    },
+    {
+      "sha": "56f6042b8e580fe2aaf96505cf077f5487b7d8e8",
+      "date": "2026-06-23T09:18:00+08:00",
+      "author": "mazc",
+      "email": "mazc@dibo.ltd",
+      "message": "* 升级依赖组件版本\n"
+    },
+    {
+      "sha": "26197bf6de5a29796319581f6d29c115b6e66826",
+      "date": "2026-06-18T16:18:35+08:00",
+      "author": "wuy",
+      "email": "1311695042@qq.com",
+      "message": "fix 修复excel读取临时路径缺少路径分隔符\n"
+    },
+    {
+      "sha": "a832ad2291f6f89b965629eecc9720a36e51ca75",
+      "date": "2026-06-04T15:33:00+08:00",
+      "author": "mazc",
+      "email": "mazc@dibo.ltd",
+      "message": "* 工号为空不识别为重复\n"
+    },
+    {
+      "sha": "7bbe12638d7b5d64d5b645ac753d5783042cbb48",
+      "date": "2026-06-03T16:49:28+08:00",
+      "author": "mazc",
+      "email": "mazc@dibo.ltd",
+      "message": "* fix 勾选虚拟岗位后列表查询被过滤问题\n"
+    },
+    {
+      "sha": "5d5d9a47f6e968943a0202c2eff697e2c3bc91b4",
+      "date": "2026-06-02T13:48:46+08:00",
+      "author": "mazc",
+      "email": "mazc@dibo.ltd",
+      "message": "* fix I18n 翻译问题\n"
+    },
+    {
+      "sha": "931128377dab5f4533635311b7294673ae6f0b68",
+      "date": "2026-05-08T15:39:44+08:00",
+      "author": "wuy",
+      "email": "1311695042@qq.com",
+      "message": "* 用户岗位VO增加职级字段\n"
+    },
+    {
+      "sha": "7858e3c1cab91077e9b21976c0dcc79efe120f48",
+      "date": "2026-04-30T15:09:47+08:00",
+      "author": "mazc",
+      "email": "mazc@dibo.ltd",
+      "message": "* 移除dependency-check-maven\n"
+    },
+    {
+      "sha": "7e5264a2349d017664e6342aa7655382c55f5865",
+      "date": "2026-04-30T14:59:10+08:00",
+      "author": "mazc",
+      "email": "mazc@dibo.ltd",
+      "message": "Merge branch 'detached2' into develop-v3\n\n# Conflicts:\n#\tdiboot-iam-starter/src/main/java/com/diboot/iam/service/IamUserPositionService.java\n#\tdiboot-iam-starter/src/main/java/com/diboot/iam/service/impl/IamUserPositionServiceImpl.java\n"
+    },
+    {
+      "sha": "0f3b2dc08cdcc449bde00b80b35d0f6e6bde1820",
+      "date": "2026-04-30T14:55:56+08:00",
+      "author": "mazc",
+      "email": "mazc@dibo.ltd",
+      "message": "* spring boot v4升级相关配置\n"
+    },
+    {
+      "sha": "d8c8e5e2583957473787b2a98db53415611cf9d3",
+      "date": "2026-04-30T14:55:09+08:00",
+      "author": "mazc",
+      "email": "mazc@dibo.ltd",
+      "message": "* spring boot v4升级相关配置\n"
+    },
+    {
+      "sha": "b876f5a51809ad439115b4f9411afd494d8daf20",
+      "date": "2026-04-28T16:53:58+08:00",
+      "author": "mazc",
+      "email": "mazc@dibo.ltd",
+      "message": "* 树列表排序DTO新增sortField字段\n"
+    },
+    {
+      "sha": "40d67d5592a9e136c4d17b199e5b54d13a260121",
+      "date": "2026-04-28T11:14:35+08:00",
+      "author": "mazc",
+      "email": "mazc@dibo.ltd",
+      "message": "* 升级依赖组件至最新\n"
+    },
+    {
+      "sha": "3688e0762aa45e2ba4875b38ad37087452ca9fc8",
+      "date": "2026-04-24T14:51:35+08:00",
+      "author": "mazc",
+      "email": "mazc@dibo.ltd",
+      "message": "* 移除meta的长度检查\n"
+    },
+    {
+      "sha": "d2613dd47a84a2c46316143f1f387c9855ef1f08",
+      "date": "2026-04-20T10:53:08+08:00",
+      "author": "wuy",
+      "email": "1311695042@qq.com",
+      "message": "Merge remote-tracking branch 'origin/detached2' into detached2\n"
+    }
+  ],
+  "commit_sha": "cd211a2dcc067491f199e3a298e43c3dcabf2a25",
+  "extracted_at": "2026-10-05T17:58:03.477065+00:00"
+}

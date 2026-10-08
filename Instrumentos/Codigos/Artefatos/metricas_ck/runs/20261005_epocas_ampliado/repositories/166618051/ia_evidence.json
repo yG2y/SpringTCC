@@ -1,0 +1,209 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 28,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "c0ef94087efe5c5b3bf1ecb52416ac37dc992866",
+      "date": "2026-09-12T08:56:56-05:00",
+      "author": "Greg Whitaker",
+      "email": "gwhitake@gmail.com",
+      "message": "Merge pull request #9 from gregwhitaker/replicant/task-2a3e24eb-77df-42c0-8cf4-ba762f5c4994\n\nFix UUIDUtil.fromHex silently accepting overlong hexadecimal UUIDs"
+    },
+    {
+      "sha": "b18dec587cc4d51f8ee3f1377597f4c51510605b",
+      "date": "2026-09-12T13:50:39Z",
+      "author": "Replicant",
+      "email": "replicant@example.invalid",
+      "message": "Replicant candidate 547abd86-c627-4584-9c42-c8272bc40115\n\nTask: 2a3e24eb-77df-42c0-8cf4-ba762f5c4994\nPublication: cf32f9e2-f14c-4f88-86dd-e2510c10ad90\nVerified tree: e69ea2f5beef3cdf9e734978490ddc28f1c880b9\n"
+    },
+    {
+      "sha": "e8477fe8953ae1a13225bc524ab4c3cbac7aa444",
+      "date": "2026-09-09T19:33:33-05:00",
+      "author": "Greg Whitaker",
+      "email": "gwhitake@gmail.com",
+      "message": "Merge pull request #3 from gregwhitaker/replicant/task-d22406d5-bd4e-4939-bbc5-40ed1fc1ec0b\n\nValidate API key header configuration"
+    },
+    {
+      "sha": "912a8a54c5c6fe1db039e232836a1ccafa379e8b",
+      "date": "2026-09-09T19:32:54-05:00",
+      "author": "Greg Whitaker",
+      "email": "gwhitake@gmail.com",
+      "message": "Merge pull request #4 from gregwhitaker/replicant/task-3e329b4f-82b7-45ec-b987-fdfefe7a3dec\n\nReject missing API key principals"
+    },
+    {
+      "sha": "6f83c5a7f08caecb7e485ff7b74d7eaf52666cb6",
+      "date": "2026-09-09T19:32:04-05:00",
+      "author": "Greg Whitaker",
+      "email": "gwhitake@gmail.com",
+      "message": "Merge pull request #5 from gregwhitaker/replicant/task-dcedc287-8a4d-4cf1-b500-3ef3463140cf\n\nVerify hexadecimal UUID round trips"
+    },
+    {
+      "sha": "fb47be72fd3540a3f276191097b6ad95a09cb178",
+      "date": "2026-09-09T21:05:38Z",
+      "author": "Replicant",
+      "email": "replicant@example.invalid",
+      "message": "Replicant candidate 76a5d14d-f17d-406d-9df7-aaf0737a5500\n\nTask: dcedc287-8a4d-4cf1-b500-3ef3463140cf\nPublication: 1cd56a62-b92a-4b9a-8b29-53d71849c9b1\nVerified tree: 025e4794d680ed199ca23fe071fa47d8c4780ade\n"
+    },
+    {
+      "sha": "26ffb8d414ebf7c9d7fd53cb108b9af315204287",
+      "date": "2026-09-09T21:01:51Z",
+      "author": "Replicant",
+      "email": "replicant@example.invalid",
+      "message": "Replicant candidate 8a1cc2b8-4a16-4228-b91b-bfc26e12ee46\n\nTask: 3e329b4f-82b7-45ec-b987-fdfefe7a3dec\nPublication: f1af076d-5d0a-4ec5-a575-e70e1053666a\nVerified tree: 342975712547aec8f2c568f8a89d08c82e86ff54\n"
+    },
+    {
+      "sha": "e66de75c43c725527cafbefd52ff9e1d85202bb5",
+      "date": "2026-09-09T21:00:04Z",
+      "author": "Replicant",
+      "email": "replicant@example.invalid",
+      "message": "Replicant candidate 9c757cd8-08eb-47f6-a440-b109c2db2bf6\n\nTask: d22406d5-bd4e-4939-bbc5-40ed1fc1ec0b\nPublication: 788e407d-9603-46c3-a62d-b1fe6cf55f7f\nVerified tree: cc59c236d650837904b9f74e45bf22847651cab0\n"
+    },
+    {
+      "sha": "e6d78722e4b8ba70666d8767d1c8f949427900d5",
+      "date": "2020-12-04T08:58:18-08:00",
+      "author": "Greg Whitaker",
+      "email": "gwhitake@gmail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "982c8cc0f24d90344e60f9cd54b91868bed90f9e",
+      "date": "2020-12-04T08:56:28-08:00",
+      "author": "Greg Whitaker",
+      "email": "gwhitake@gmail.com",
+      "message": "Delete .travis.yml"
+    },
+    {
+      "sha": "bd5d86b1674ab3b7f3883586ae95fd169b088f7a",
+      "date": "2020-12-04T08:53:48-08:00",
+      "author": "Greg Whitaker",
+      "email": "gwhitake@gmail.com",
+      "message": "Create gradle.yml"
+    },
+    {
+      "sha": "ad6c9c7d868c470664f9931d17f8813af2564ea9",
+      "date": "2020-12-03T17:23:10-08:00",
+      "author": "Greg Whitaker",
+      "email": "gwhitake@gmail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "2ce9b0417475a9f3a3d45749086d3fc4c3ed7329",
+      "date": "2020-12-03T17:22:46-08:00",
+      "author": "Greg Whitaker",
+      "email": "gwhitake@gmail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "8877aa113cd0a4d32679e21020c47d938df98eaf",
+      "date": "2020-12-02T10:20:57-08:00",
+      "author": "Greg Whitaker",
+      "email": "gwhitake@gmail.com",
+      "message": "Update build.gradle"
+    },
+    {
+      "sha": "d52c5e88f301e492dd4c266aba37c1f90381a584",
+      "date": "2019-02-05T08:58:03-08:00",
+      "author": "gregwhitaker",
+      "email": "gwhitake@gmail.com",
+      "message": "Doing work\n"
+    },
+    {
+      "sha": "7820857a63f88b3c98434486d2913d16fdb8f07e",
+      "date": "2019-02-05T08:57:09-08:00",
+      "author": "gregwhitaker",
+      "email": "gwhitake@gmail.com",
+      "message": "Doing work\n"
+    },
+    {
+      "sha": "1949d7e750188e27fca9a5f719a828f18bea53cc",
+      "date": "2019-01-25T19:13:14-08:00",
+      "author": "gregwhitaker",
+      "email": "gwhitake@gmail.com",
+      "message": "Doing work\n"
+    },
+    {
+      "sha": "83d1bb773523f7a534002e1136375f940c82b899",
+      "date": "2019-01-25T19:05:38-08:00",
+      "author": "gregwhitaker",
+      "email": "gwhitake@gmail.com",
+      "message": "Doing work\n"
+    },
+    {
+      "sha": "9f4760950fc9bc3a370ea0afb1fd5901ccd2a6ec",
+      "date": "2019-01-25T19:03:29-08:00",
+      "author": "gregwhitaker",
+      "email": "gwhitake@gmail.com",
+      "message": "Doing work\n"
+    },
+    {
+      "sha": "4e99933909f9c6a63e6bf677e7669e757af0516a",
+      "date": "2019-01-25T18:02:23-08:00",
+      "author": "gregwhitaker",
+      "email": "gwhitake@gmail.com",
+      "message": "Doing work\n"
+    },
+    {
+      "sha": "d15a5e3fd9576a0f403dbcf4d07c42aecb82b9ee",
+      "date": "2019-01-25T17:52:16-08:00",
+      "author": "gregwhitaker",
+      "email": "gwhitake@gmail.com",
+      "message": "Doing work\n"
+    },
+    {
+      "sha": "f905b6a74c051a8418d12ff1ab013063c6104b1d",
+      "date": "2019-01-25T17:43:29-08:00",
+      "author": "gregwhitaker",
+      "email": "gwhitake@gmail.com",
+      "message": "Doing work\n"
+    },
+    {
+      "sha": "7b5fe3df8a9e93a42b28066cfa6c90d32de80afb",
+      "date": "2019-01-25T11:58:33-08:00",
+      "author": "gregwhitaker",
+      "email": "gwhitake@gmail.com",
+      "message": "Doing work\n"
+    },
+    {
+      "sha": "50a195575379c1e08dc319c7a8a9d54356768ca6",
+      "date": "2019-01-25T11:55:50-08:00",
+      "author": "gregwhitaker",
+      "email": "gwhitake@gmail.com",
+      "message": "Doing work\n"
+    },
+    {
+      "sha": "b4605890cf7cddd25f0f6a743d713aee8f6c3fbc",
+      "date": "2019-01-22T07:47:22-08:00",
+      "author": "gregwhitaker",
+      "email": "gwhitake@gmail.com",
+      "message": "Doing work\n"
+    },
+    {
+      "sha": "4d66f319f89e89b00a66107233613c88ae7fe0d4",
+      "date": "2019-01-22T07:39:26-08:00",
+      "author": "gregwhitaker",
+      "email": "gwhitake@gmail.com",
+      "message": "Doing work\n"
+    },
+    {
+      "sha": "d522a01403bee42b20aa2c1cb4cac624b837eb6f",
+      "date": "2019-01-19T19:25:31-08:00",
+      "author": "gregwhitaker",
+      "email": "gwhitake@gmail.com",
+      "message": "Doing work\n"
+    },
+    {
+      "sha": "93fadfb293928010d039dcd242fd4c2fd32b2830",
+      "date": "2019-01-19T19:21:58-08:00",
+      "author": "gregwhitaker",
+      "email": "gwhitake@gmail.com",
+      "message": "Initial Commit\n"
+    }
+  ],
+  "commit_sha": "c0ef94087efe5c5b3bf1ecb52416ac37dc992866",
+  "extracted_at": "2026-10-05T18:22:33.694247+00:00"
+}

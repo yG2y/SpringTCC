@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "2ebec64599710b073222f480a13a41eb46da1ecc",
+      "date": "2026-08-04T13:07:08+03:00",
+      "author": "Sergey Babenko",
+      "email": "113088248+riskman5@users.noreply.github.com",
+      "message": "Add Spring Boot 4 support (#27)\n\n- Upgrade spring-boot-dependencies to 4.1.0, Gradle wrapper to 8.14.5\n- Migrate to relocated auto-configurations (spring-boot-data-mongodb,\n  spring-boot-mongodb, spring-boot-transaction, spring-boot-webflux)\n- Replace @Configuration + @AutoConfigureAfter with @AutoConfiguration\n- Replace deprecated ensureIndex with createIndex\n- Replace @SpyBean with @MockitoSpyBean, migrate to Testcontainers 2\n- Add -parameters compiler flag required by Spring Framework 7\n- Register test fixtures explicitly in ConcurrentMongrationTest since\n  TestTypeExcludeFilter now applies to SpringApplication started from tests\n- Bump version to 3.0.0, document Spring Boot compatibility in README"
+    },
+    {
+      "sha": "a65265439277e73697d69f6440912e66839b834f",
+      "date": "2023-03-04T23:32:13+03:00",
+      "author": "Stepan Kuligin",
+      "email": "kuligin_stepan@mail.ru",
+      "message": "Update release.yml"
+    },
+    {
+      "sha": "b31d85f76de1b03b8a66027770e21789a3c2e70f",
+      "date": "2023-03-04T23:28:53+03:00",
+      "author": "Stepan Kuligin",
+      "email": "kuligin_stepan@mail.ru",
+      "message": "Update release.yml"
+    },
+    {
+      "sha": "d19b76c826989dec6dce6034325a6f11f653bcca",
+      "date": "2023-03-04T23:19:43+03:00",
+      "author": "Stepan Kuligin",
+      "email": "kuligin_stepan@mail.ru",
+      "message": "Update spring boot to 3.0.4\n"
+    },
+    {
+      "sha": "692f6eeb5fc2e296a4ae4a1821d0a5fbc49a6daa",
+      "date": "2023-01-14T12:35:20+01:00",
+      "author": "Stepan Kuligin",
+      "email": "kuligin_stepan@mail.ru",
+      "message": "Add spring boot 3 support (#24)\n\n"
+    },
+    {
+      "sha": "248fe9152c7b102ba7a6101d7a924785285b8d0e",
+      "date": "2021-06-14T15:46:23+03:00",
+      "author": "Stepan Kuligin",
+      "email": "kuligin_stepan@mail.ru",
+      "message": "Added support for spring's @Qualifier (#22)\n\n"
+    },
+    {
+      "sha": "02044832445d8c8282eafac8473c3b1147875009",
+      "date": "2021-05-04T14:51:28+05:00",
+      "author": "Stepan Kuligin",
+      "email": "kuligin_stepan@mail.ru",
+      "message": "1.3.2 release\n"
+    },
+    {
+      "sha": "da177e2067820cccb67e3680a9696a08ebcdd958",
+      "date": "2020-09-20T15:52:21+03:00",
+      "author": "Stepan Kuligin",
+      "email": "kuligin_stepan@mail.ru",
+      "message": "Switch to SmartInitializingSingleton (#19)\n\nSwitch to SmartInitializingSingleton"
+    },
+    {
+      "sha": "5437e49b89bb5ccd880a1cfbaaec4ae6343afe51",
+      "date": "2020-07-09T00:58:50+03:00",
+      "author": "Stepan Kuligin",
+      "email": "kuligin_stepan@mail.ru",
+      "message": "Change secrets naming\n"
+    },
+    {
+      "sha": "c970c6dbbef1293c3572543838375be813160d9e",
+      "date": "2020-06-28T20:52:46+03:00",
+      "author": "Stepan Kuligin",
+      "email": "kuligin_stepan@mail.ru",
+      "message": "Merge remote-tracking branch 'origin/master'\n\n# Conflicts:\n#\tgradle/publish.gradle\n"
+    },
+    {
+      "sha": "6939aa5f7d3b57c4febf68e403d6399ab8af9834",
+      "date": "2020-06-28T20:50:21+03:00",
+      "author": "Stepan Kuligin",
+      "email": "kuligin_stepan@mail.ru",
+      "message": "Fix build script\n"
+    },
+    {
+      "sha": "4c50297408033514fe273470ba326d43b8a49bee",
+      "date": "2020-06-28T20:42:27+03:00",
+      "author": "Stepan Kuligin",
+      "email": "kuligin_stepan@mail.ru",
+      "message": "Merge pull request #17 from KuliginStepan/1.3.0\n\nUpdate to Spring Boot 2.3.0"
+    },
+    {
+      "sha": "fb0d5f1739784adf60b2d960815566c9adc0939a",
+      "date": "2020-06-08T00:39:50+03:00",
+      "author": "Stepan Kuligin",
+      "email": "kuligin_stepan@mail.ru",
+      "message": "Remove duplicated block\n"
+    },
+    {
+      "sha": "22dbd6e6b8039e76402108b760a89e918e40fc2f",
+      "date": "2020-06-07T21:39:06+03:00",
+      "author": "Stepan Kuligin",
+      "email": "kuligin_stepan@mail.ru",
+      "message": "Improve build script\n"
+    },
+    {
+      "sha": "d40f0dd80008b29f5134031a900351b768999b20",
+      "date": "2020-06-07T21:32:36+03:00",
+      "author": "Stepan Kuligin",
+      "email": "kuligin_stepan@mail.ru",
+      "message": "Fix CI\n"
+    },
+    {
+      "sha": "d7647030fef8288b95eeb293af86e1677d148cf8",
+      "date": "2020-06-07T21:25:30+03:00",
+      "author": "Stepan Kuligin",
+      "email": "kuligin_stepan@mail.ru",
+      "message": "Fix build.gradle\n"
+    },
+    {
+      "sha": "42cf21f0ed3796c29863be848497cb66646d250e",
+      "date": "2020-06-07T21:02:10+03:00",
+      "author": "Stepan Kuligin",
+      "email": "kuligin_stepan@mail.ru",
+      "message": "Fix build.gradle\n"
+    },
+    {
+      "sha": "86f7e87bb43ec3611e3209d00bc0ac8af4111c35",
+      "date": "2020-06-07T20:57:41+03:00",
+      "author": "Stepan Kuligin",
+      "email": "kuligin_stepan@mail.ru",
+      "message": "Fix build.gradle\n"
+    },
+    {
+      "sha": "dd90ed4d09c43cffd84fd61515d2acb0be05089e",
+      "date": "2020-06-07T20:50:19+03:00",
+      "author": "Stepan Kuligin",
+      "email": "kuligin_stepan@mail.ru",
+      "message": "Fix build.gradle\n"
+    },
+    {
+      "sha": "72d23df8a6ad81e973035378a90a12dbd0d094d1",
+      "date": "2020-06-07T20:26:59+03:00",
+      "author": "Stepan Kuligin",
+      "email": "kuligin_stepan@mail.ru",
+      "message": "Update to Spring Boot 2.3.0. Closes #14, #16\n"
+    },
+    {
+      "sha": "8b8908297d894045d9d3631cb182804adf15cfc1",
+      "date": "2020-02-21T00:42:23+03:00",
+      "author": "Stepan Kuligin",
+      "email": "kuligin_stepan@mail.ru",
+      "message": "release v1.2.0\n"
+    },
+    {
+      "sha": "3173cf816afe008b0be615d5e6e0290ac58bfde0",
+      "date": "2020-02-21T00:24:54+03:00",
+      "author": "Stepan Kuligin",
+      "email": "kuligin_stepan@mail.ru",
+      "message": "Merge pull request #13 from KuliginStepan/jdk-8\n\ndowngrade to openjdk 8. closes #6 "
+    },
+    {
+      "sha": "a12f5d0042c7b3108fddfc6031c5f9c7d3ccfa17",
+      "date": "2020-02-21T00:18:53+03:00",
+      "author": "Stepan Kuligin",
+      "email": "kuligin_stepan@mail.ru",
+      "message": "downgrade to openjdk 8\n"
+    },
+    {
+      "sha": "78721a03c05e513a48a2b686f02abf0c73412915",
+      "date": "2020-02-20T23:59:25+03:00",
+      "author": "Stepan Kuligin",
+      "email": "kuligin_stepan@mail.ru",
+      "message": "Merge pull request #12 from KuliginStepan/bugfix/changelog-order\n\nfix changelog ordering"
+    },
+    {
+      "sha": "e16aad031937d7f74f1f77471eb6dd5b0754a4fc",
+      "date": "2020-02-20T23:53:53+03:00",
+      "author": "Stepan Kuligin",
+      "email": "kuligin_stepan@mail.ru",
+      "message": "fix changelog ordering\n"
+    },
+    {
+      "sha": "bb24f5095df0f28251302c569c61a67f621efe03",
+      "date": "2020-01-30T19:39:21+03:00",
+      "author": "Stepan Kuligin",
+      "email": "kuligin_stepan@mail.ru",
+      "message": "Bump version to 1.1.1\n"
+    },
+    {
+      "sha": "ed26a7ce303fd97f7366b6c8b1b558a54cedb295",
+      "date": "2020-01-30T18:33:20+03:00",
+      "author": "Stepan Kuligin",
+      "email": "kuligin_stepan@mail.ru",
+      "message": "Merge pull request #11 from orelgenya/bugfix/changesets-order\n\nFixes changesets execution order"
+    },
+    {
+      "sha": "20f47b8e668e1a3a8740ba46b1b9f2e296103157",
+      "date": "2020-01-10T10:12:50+01:00",
+      "author": "Evgenii Orel",
+      "email": "evgenii_orel@epam.com",
+      "message": "fix execution order\n"
+    },
+    {
+      "sha": "aa3d98c9691341f1661eaa54615be801f10ace53",
+      "date": "2020-01-10T10:12:28+01:00",
+      "author": "Evgenii Orel",
+      "email": "evgenii_orel@epam.com",
+      "message": "add execution order test\n"
+    },
+    {
+      "sha": "9d5666e3798dfb29c11f43cd5c00b14d14c15025",
+      "date": "2020-01-05T20:50:37+03:00",
+      "author": "Stepan Kuligin",
+      "email": "kuligin_stepan@mail.ru",
+      "message": "Fix nexus publishing\n"
+    }
+  ],
+  "commit_sha": "2ebec64599710b073222f480a13a41eb46da1ecc",
+  "extracted_at": "2026-10-05T18:43:19.543472+00:00"
+}

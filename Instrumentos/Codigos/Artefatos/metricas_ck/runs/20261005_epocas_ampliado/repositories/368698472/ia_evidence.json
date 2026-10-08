@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "2921e99cef7d2f503fdab22839fab24dcf8309e4",
+      "date": "2026-09-25T14:29:34Z",
+      "author": "码匠君",
+      "email": "pointer_v@qq.com",
+      "message": "!392 ✨ feat: v4.1.1.1\n\nMerge pull request !392 from 码匠君/develop"
+    },
+    {
+      "sha": "91fa9300568d270848110902fa39fee1d6ca9c02",
+      "date": "2026-09-25T22:29:03+08:00",
+      "author": "码匠君",
+      "email": "pointer_v@qq.com",
+      "message": "✨ feat: v4.1.1.1\n\n- 主要更新\n  - [升级] Spring Cloud Tencent 版本升级至 2.1.2.0-2025.1.1\n  - [升级] Spring Boot Admin 版本升级至 4.1.3\n  - [升级] SpringDoc 版本升级至 3.1.1\n  - [升级] Nacos 版本升级至 3.2.4\n  - [新增] 新增符合 MCP 规范(2026-07-28) 相关认证和管理功能，支持 MCP 方法动态鉴权\n- 详细更新\n  - [新增] 参照 MCP 规范(2026-07-28)，系统认证核心功能代码，新增认证出错返回 WWW-Authenticate 响应头信息内容\n  - [新增] OAuth2 以及 OIDC 客户端动态注册，增加 application_type 标识用以区分不同场景的客户端动态注册，以实现可区分的业务逻辑\n  - [新增] 新增 OAuth2 ClientId Metadata Document 支持，以支持 MCP Authorization 相关功能\n  - [新增] 新增 OAuth2.0 Resource Indicators 支持，以支持 MCP Authorization 相关功能\n  - [新增] 认证服务器配置新增 client_id_metadata_document_supported 设置标识\n  - [新增] 基于 Spring Authorization Server 的授权码授权模式，新增 iss 参数支持，以适配 MCP 规范(2026-07-28)\n  - [新增] 新增 MCP Features 功能定义扫描，统一聚合并自动转换为系统权限功能\n  - [新增] 新增 MCP Features 功能动态鉴权功能\n  - [新增] 新增 MCP 服务，以及相关配置和数据初始化脚本\n  - [新增] 参照 MCP 规范(2026-07-28)，新增 OAuth2 Resource 和 资源服务器 scopes_supported 参数管理。\n  - [新增] 新增 OAuth2 资源标识和 OAuth2 保护资源元数据管理功能菜单及数据初始化脚本\n  - [重构] 原 message-commons 模块提取为框架级别模块 messaging，提升代码内聚性以及独立性\n  - [重构] 重构框架核心模块代码放置位置，提升代码内聚性，降低独立使用耦合性\n  - [重构] OAuth2 相关代码全部增加 resource 参数支持，支持 resource 参数持久化\n  - [重构] OAuth2Application 原 ApplicationType 字段修改为 ClientType，以规避与 MCP OAuth2 协议中 application_type 产生冲突\n  - [重构] 为支持 MCP 规范(2026-07-28) 新增的 OAuth2 配置，统一放入 herodotus.oauth2.authentication.mcp 下，方便管理\n  - [重构] 重命名权限属性扫描相关实体类，去除不必要的类型继承\n  - [重构] 重命名 OAuth2 资源标识和 OAuth2 保护资源元数据相关类命名，明晰代码用途减少理解困难\n  - [修复] 修复新建 OAuth2 应用时，Resource 参数传值错误引起抛错\n  - [修复] 修复创建系统应用时，不会同步创建 OAuth2 资源，引起使用授权码模式时页面出错\n  - [修复] 修复前端通过 moment 生成的 Duration 格式字符串，后端 Duration 格式无法解析问题\n  - [修复] 修复新建应用创建的相关联表中 clientName 数据不一致问题\n  - [优化] 优化动态接口权限校验日志输出，增加 REST 版本信息输出\n  - [优化] 优化 dependencies 配置，使用统一版本控制，去除工程中间接引入的多个不同版本 httpclient 依赖\n  - [优化] 优化 Spring Authorization Server 同步类型代码，与 Spring Security 7.1.X 保持一致\n  - [优化] OAuth2 客户端动态开启和关闭 Event 增加事务一致性控制，提升异步数据一致性\n  - [优化] 前端 Duration 自定义组件增加 “周”、“月”、“年” 选项\n  - [优化] 补充 MCP 专用 OAuth2 客户端数据库初始化脚本\n  - [升级] liberica jdk 基础镜像版本升级至 25.0.4.1-1\n  - [升级] grafana docker 镜像版本升级至 13.2.2\n  - [升级] loki docker 镜像版本升级至 3.7.8\n  - [升级] emqx docker 镜像版本升级至 6.3.1\n  - [升级] influxdb docker 镜像版本升级至 3.11.5\n  - [升级] alloy docker 镜像版本升级至 1.19.2\n  - [升级] actions/setup-java 版本升级至 v6.0.1\n  - [升级] docker/setup-qemu-action 版本升级至 4.4.0\n  - [升级] docker/setup-buildx-action 版本升级至 4.4.1\n  - [升级] docker/metadata-action 版本升级至 6.2.0\n  - [升级] docker/build-push-action 版本升级至 7.4.0\n- 依赖更新\n  - [升级] querydsl 版本升级至 7.7\n  - [升级] alipay-sdk-java 版本升级至 4.40.1014.ALL\n  - [升级] bcpkix-jdk18on 版本升级至 1.86\n  - [升级] bcprov-jdk18on 版本升级至 1.86\n  - [升级] fastjson2 版本升级至 2.0.65\n  - [升级] hypersistence-utils-hibernate-73 版本升级至 3.16.0\n  - [升级] influxdb3-java 版本升级至 1.11.1\n  - [升级] langchain4j 版本升级至 1.20.0\n  - [升级] mvel2 版本升级至 2.5.4.Final\n  - [升级] operation 版本升级至 2.2.0-RC1\n  - [升级] skywalking agent 版本升级至 9.7.0\n  - [升级] software.amazon.awssdk 版本升级至 2.55.5\n  - [升级] software.amazon.awssdk.crt 版本升级至 0.48.4\n  - [升级] swagger 版本升级至 2.2.55\n  - [升级] weixin java 版本升级至 4.8.6-20260919.232150\n  - [升级] webauthn4j 版本升级至 0.31.10.RELEASE\n  - [升级] quasar webjars 版本升级至 2.33.0\n  - [升级] vue webjars 版本升级至 3.5.43\n  - [升级] tabler 版本升级至 1.6.0\n  - [升级] classgraph 版本升级至 4.8.196\n  - [升级] javassist 版本升级至 3.33.0-GA\n  - [升级] joda-time 版本升级至 2.14.4\n  - [升级] zookeeper 版本升级至 3.9.6\n"
+    },
+    {
+      "sha": "5c00d9a220f0522dcc07aaedd54e2c7edc0d4db0",
+      "date": "2026-09-25T11:32:31+08:00",
+      "author": "码匠君",
+      "email": "pointer_v@qq.com",
+      "message": "[重构] 重命名 OAuth2 资源标识和 OAuth2 保护资源元数据相关类命名，明晰代码用途减少理解困难\n"
+    },
+    {
+      "sha": "fc6954ce9d227774f91a0d9fe75ceea24cd7ab93",
+      "date": "2026-09-24T21:55:37+08:00",
+      "author": "码匠君",
+      "email": "pointer_v@qq.com",
+      "message": "[新增] 新增 OAuth2 资源标识和 OAuth2 保护资源元数据管理功能菜单及数据初始化脚本\n"
+    },
+    {
+      "sha": "5ca466043fa178c00084ebc0acd5a27da6a40376",
+      "date": "2026-09-23T14:09:15+08:00",
+      "author": "码匠君",
+      "email": "pointer_v@qq.com",
+      "message": "[新增] 新增 MCP 服务，以及相关配置和数据初始化脚本\n"
+    },
+    {
+      "sha": "af03584d2c9c8eec13b9ede9857213e024fb85d6",
+      "date": "2026-09-21T21:19:11+08:00",
+      "author": "码匠君",
+      "email": "pointer_v@qq.com",
+      "message": "[升级] emqx docker 镜像版本升级至 6.3.1\n"
+    },
+    {
+      "sha": "2a1e5cb069d2e25b08c18e915bab7bba7b99dfa1",
+      "date": "2026-09-10T19:32:09+08:00",
+      "author": "码匠君",
+      "email": "pointer_v@qq.com",
+      "message": "[升级] actions/setup-java 版本升级至 v6.0.1\n"
+    },
+    {
+      "sha": "a6593d304faf51f0d331fff7670cccc970c9e3ea",
+      "date": "2026-09-09T22:46:32+08:00",
+      "author": "码匠君",
+      "email": "pointer_v@qq.com",
+      "message": "[新增] 基于 Spring Authorization Server 的授权码授权模式，新增 iss 参数支持，以适配 MCP 规范(2026-07-28)\n"
+    },
+    {
+      "sha": "ca696925c61b3259ae8b8b079a1618087ef56e51",
+      "date": "2026-09-09T15:25:18+08:00",
+      "author": "码匠君",
+      "email": "pointer_v@qq.com",
+      "message": "[优化] 补充 MCP 专用 OAuth2 客户端数据库初始化脚本\n"
+    },
+    {
+      "sha": "e391c50f7ba19254b4e95a9aa94869192b867024",
+      "date": "2026-09-08T15:00:45+08:00",
+      "author": "码匠君",
+      "email": "pointer_v@qq.com",
+      "message": "[重构] OAuth2Application 原 ApplicationType 字段修改为 ClientType，以规避与 MCP OAuth2 协议中 application_type 产生冲突\n"
+    },
+    {
+      "sha": "8fafb239188820c5b3d909b075133f6d58a8d1b1",
+      "date": "2026-09-06T12:23:55+08:00",
+      "author": "码匠君",
+      "email": "pointer_v@qq.com",
+      "message": "[新增] 认证服务器配置新增 client_id_metadata_document_supported 设置标识\n"
+    },
+    {
+      "sha": "f5879886e05e2aeb081d9cdf52330ef2cc67fe17",
+      "date": "2026-09-02T13:26:45+08:00",
+      "author": "码匠君",
+      "email": "pointer_v@qq.com",
+      "message": "[升级] Spring Cloud Tencent 版本升级至 2.1.2.0-2025.1.1\n"
+    },
+    {
+      "sha": "855e05b6e09c0e8354cdb5bde81f93709188d155",
+      "date": "2026-08-31T22:14:41+08:00",
+      "author": "码匠君",
+      "email": "pointer_v@qq.com",
+      "message": "[重构] 重构框架核心模块代码放置位置，提升代码内聚性，降低独立使用耦合性\n"
+    },
+    {
+      "sha": "4e82c11861574db5e055e2e8b87d79ca20a2dc38",
+      "date": "2026-08-27T17:05:22+08:00",
+      "author": "码匠君",
+      "email": "pointer_v@qq.com",
+      "message": "[升级] Nacos 版本升级至 3.2.4\n"
+    },
+    {
+      "sha": "73026eaed47c5af122d4ebfee134a3348b4da1c0",
+      "date": "2026-08-25T15:16:55+08:00",
+      "author": "码匠君",
+      "email": "pointer_v@qq.com",
+      "message": "[升级] actions/setup-java 版本升级至 v6.0.0\n"
+    },
+    {
+      "sha": "986baddacb3fd6093421684880556bcaf941b117",
+      "date": "2026-08-22T16:56:55+08:00",
+      "author": "码匠君",
+      "email": "pointer_v@qq.com",
+      "message": "[升级] emqx docker 镜像版本升级至 6.2.3\n"
+    },
+    {
+      "sha": "c0335c7dfa6f1d7554fa3f35c60bdf9f2295c580",
+      "date": "2026-08-22T16:54:11+08:00",
+      "author": "码匠君",
+      "email": "pointer_v@qq.com",
+      "message": "[升级] liberica jdk 基础镜像版本升级至 25.0.4.1-1\n"
+    },
+    {
+      "sha": "ce0e5b24dfcb4574adf4024033567a418dbf0896",
+      "date": "2026-08-21T14:32:34Z",
+      "author": "码匠君",
+      "email": "pointer_v@qq.com",
+      "message": "!391  update README.md\n\nMerge pull request !391 from 码匠君/develop"
+    },
+    {
+      "sha": "b29913da5ce9c0cee598c390046d1ca64a9598ff",
+      "date": "2026-08-21T22:32:05+08:00",
+      "author": "码匠君",
+      "email": "pointer_v@qq.com",
+      "message": "📝 update README.md\n"
+    },
+    {
+      "sha": "fb6357d3075bc46c2c8cb55d611f5028403a60e1",
+      "date": "2026-08-21T09:57:53Z",
+      "author": "码匠君",
+      "email": "pointer_v@qq.com",
+      "message": "!390 ✨ feat: v4.1.1.0\n\nMerge pull request !390 from 码匠君/develop"
+    },
+    {
+      "sha": "7094c3815a0e1448fd85750f80540abe1a99718e",
+      "date": "2026-08-21T14:13:57+08:00",
+      "author": "码匠君",
+      "email": "pointer_v@qq.com",
+      "message": "✨ feat: v4.1.1.0\n\n- 主要更新\n  - [升级] Spring Boot 版本升级至 4.1.1\n  - [升级] Spring Cloud 版本升级至 2025.1.3\n  - [升级] Spring AI 版本升级至 2.0.1\n  - [升级] springdoc 版本升级至 3.1.0\n  - [升级] liberica jdk 基础镜像版本升级至 25.0.4-9\n- 其它更新\n  - [新增] 条件分页查询新增按更新时间默认排序工具方法\n  - [新增] Vuetify 版本前端新增表格线控制，支持横线、竖线、网格以及不显示四种模式\n  - [重构] 数据存储层抽象通用实体，数据审计时间字段统一修改为 LocaDateTime 类型\n  - [重构] 调整代码结构以及放置模块，提升模块代码内聚性降低耦合性\n  - [重构] SysUser 和 SysEmployee 实例配置增加 @JsonManagedReference 和 @JsonBackReference 注解，防止双向关联后 Jackson 序列化出现异常\n  - [重构] 新增状态常用常量值，并合并部分物联网应用常量值\n  - [修复] 修复数据库审计时间字段数据类型修改为 LocalDateTime 后生成时间与本地时间相差 8 小时问题\n  - [优化] 增加 asm 统一版本控制配置，消除工程中进入不同版本 asm 依赖\n  - [优化] p6spy 替换为 unikue p6spy 以支持 jdk 17\n  - [升级] actions/setup-java 版本升级至 5.6.0\n  - [升级] actions/checkout 版本升级至 7.0.1\n  - [升级] docker/login-action 版本升级至 4.6.0\n  - [升级] docker/setup-buildx-action 版本升级至 4.3.0\n  - [升级] grafana docker 镜像版本升级至 13.1.4\n  - [升级] loki docker 镜像版本升级至 3.7.6\n  - [升级] alloy docker 镜像版本升级至 1.18.1\n  - [升级] tempo docker 镜像版本升级至 3.0.3\n  - [升级] cassandra docker 镜像版本升级至 5.0.9\n  - [升级] influxdb docker 镜像版本升级至 3.10.5\n- 依赖更新\n  - [升级] querydsl 版本升级至 7.6\n  - [升级] alipay-sdk-java 版本升级至 4.40.967.ALL\n  - [升级] commons-collections4 版本升级至 4.6.0\n  - [升级] fastjson2 版本升级至 2.0.64\n  - [升级] guava 版本升级至 33.7.1\n  - [升级] hypersistence-utils-hibernate-73 版本升级至 3.15.5\n  - [升级] json-schema-validator 版本升级至 3.0.7\n  - [升级] langchain4j 版本升级至 1.19.0\n  - [升级] loki-logback-appender 版本升级至 2.1.0\n  - [升级] loki-protobuf 版本升级至 1.0.0_pb4.35.0\n  - [升级] operaton 版本升级至 2.2.0-M2\n  - [升级] redisson 版本升级至 4.7.0\n  - [升级] skywalking 相关插件版本升级至 9.7.0\n  - [升级] software.amazon.awssdk 版本升级至 2.54.1\n  - [升级] software.amazon.awssdk.crt 版本升级至 0.48.4\n  - [升级] swagger-core 版本升级至 2.2.54\n  - [升级] weixin java 版本升级至 4.8.5-20260818.151216\n  - [升级] webauthn4j 版本升级至 0.31.9.RELEASE\n  - [升级] quasar webjars 版本升级至 2.25.1\n  - [升级] vue webjars 版本升级至 3.5.41\n  - [升级] classgraph 版本升级至 4.8.193\n  - [升级] joda-time 版本升级至 2.14.3\n  - [升级] objenesis 版本升级至 3.6\n"
+    },
+    {
+      "sha": "bdb1cb761fae18e43af7b315160292692e1b4db0",
+      "date": "2026-08-19T23:52:45+08:00",
+      "author": "码匠君",
+      "email": "pointer_v@qq.com",
+      "message": "[新增] 新增物联网平台配置及服务客户端 SQL 脚本\n"
+    },
+    {
+      "sha": "12f894ca6dcdc671103947c8c0f8a3f2cc011e00",
+      "date": "2026-08-19T23:48:46+08:00",
+      "author": "码匠君",
+      "email": "pointer_v@qq.com",
+      "message": "[新增] 新增物联网平台配置及服务客户端 SQL 脚本\n"
+    },
+    {
+      "sha": "f09ab3238da8998570960b937982cee4449caa7c",
+      "date": "2026-07-30T16:06:15+08:00",
+      "author": "码匠君",
+      "email": "pointer_v@qq.com",
+      "message": "[修复] 修复数据库审计时间字段数据类型修改为 LocalDateTime 后生成时间与本地时间相差 8 小时问题\n"
+    },
+    {
+      "sha": "67ecc4fb78d25305fca0b14a4d402855b5ed6715",
+      "date": "2026-07-28T16:20:16+08:00",
+      "author": "码匠君",
+      "email": "pointer_v@qq.com",
+      "message": "[升级] liberica jdk 基础镜像版本升级至 25.0.4-9\n"
+    },
+    {
+      "sha": "590451b0cc00c8b9354377d8fbb82e75497ace2c",
+      "date": "2026-07-21T16:29:28+08:00",
+      "author": "码匠君",
+      "email": "pointer_v@qq.com",
+      "message": "[优化] 因腾讯云仓库无法下载到 Spring Cloud Tencent 相关模块，为避免使用腾讯云仓库时出现无法下载依赖的情况，临时将 Spring Cloud Tencent 相关内容删除\n"
+    },
+    {
+      "sha": "3d5e6ad8a88340c67ed317c29f85cdea66438435",
+      "date": "2026-07-21T00:00:00+08:00",
+      "author": "码匠君",
+      "email": "pointer_v@qq.com",
+      "message": "[升级] actions/checkout 版本升级至 7.0.1\n"
+    },
+    {
+      "sha": "d5636fc4a18583e6dbcdfdff12d09ada65408dce",
+      "date": "2026-07-16T13:06:50Z",
+      "author": "码匠君",
+      "email": "pointer_v@qq.com",
+      "message": "!389  update README.md\n\nMerge pull request !389 from 码匠君/develop"
+    },
+    {
+      "sha": "4bca9a3734427b1b956071c581a5368753e2472a",
+      "date": "2026-07-16T21:06:11+08:00",
+      "author": "码匠君",
+      "email": "pointer_v@qq.com",
+      "message": "📝 update README.md\n"
+    },
+    {
+      "sha": "3cea02d6b14257d85e8866a978c7baacc7c6906b",
+      "date": "2026-07-15T09:02:08Z",
+      "author": "码匠君",
+      "email": "pointer_v@qq.com",
+      "message": "!388 ♿ feat: v4.1.0.4\n\nMerge pull request !388 from 码匠君/develop"
+    }
+  ],
+  "commit_sha": "2921e99cef7d2f503fdab22839fab24dcf8309e4",
+  "extracted_at": "2026-10-05T18:00:41.668154+00:00"
+}

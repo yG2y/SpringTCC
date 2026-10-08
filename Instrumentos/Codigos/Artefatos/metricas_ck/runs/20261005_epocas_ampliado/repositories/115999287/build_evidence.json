@@ -1,0 +1,848 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${spring-boot.version};2.5.4",
+  "spring_boot_major": "2",
+  "java_versions_declared": "1.8",
+  "build_evidence": [
+    {
+      "file": "spring-boot-example/A.using/devtools/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/A.using/devtools/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "spring-boot-example/A.using/hello-world/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/A.using/hello-world/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-example/A.using/hello-world/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-boot-example/A.using/package-image/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/A.using/package-image/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-boot-example/A.using/package-war/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/A.using/package-war/pom.xml",
+      "artifact": "spring-boot-starter-tomcat"
+    },
+    {
+      "file": "spring-boot-example/A.using/package-war/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-boot-example/A.using/package-zip/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/A.using/package-zip/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-boot-example/B.features/aop/aspect/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/B.features/aop/aspect/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "spring-boot-example/B.features/aop/filter/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/B.features/aop/interceptor/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/B.features/async/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/B.features/auto-configuration/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/B.features/auto-configuration/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-example/B.features/auto-configuration/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-example/B.features/bean-validation/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "spring-boot-example/B.features/bean-validation/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/B.features/bean-validation/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-example/B.features/datasource/dynamic-datasource/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/B.features/datasource/dynamic-datasource/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "spring-boot-example/B.features/datasource/dynamic-datasource/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "spring-boot-example/B.features/datasource/dynamic-datasource/pom.xml",
+      "artifact": "spring-boot-starter-jta-atomikos"
+    },
+    {
+      "file": "spring-boot-example/B.features/datasource/multi-datasource-jpa/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/B.features/datasource/multi-datasource-jpa/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "spring-boot-example/B.features/datasource/multi-datasource-mybatis/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/B.features/datasource/multi-datasource-mybatis/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "spring-boot-example/B.features/event-listener/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/B.features/externalized-configuration/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/B.features/externalized-configuration/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-example/B.features/externalized-configuration/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-example/B.features/i18n/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/B.features/i18n/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "spring-boot-example/B.features/jdbc/spring-data-jdbc/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/B.features/jdbc/spring-data-jdbc/pom.xml",
+      "artifact": "spring-boot-starter-data-jdbc"
+    },
+    {
+      "file": "spring-boot-example/B.features/jdbc/spring-data-jpa/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/B.features/jdbc/spring-data-jpa/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "spring-boot-example/B.features/jdbc/spring-jdbc/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/B.features/jdbc/spring-jdbc/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "spring-boot-example/B.features/logging/logging-log4j2/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/B.features/logging/logging-log4j2/pom.xml",
+      "artifact": "spring-boot-starter-log4j2"
+    },
+    {
+      "file": "spring-boot-example/B.features/logging/logging-logback/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/B.features/logging/logging-tomcat-access/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/B.features/retry/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/B.features/retry/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "spring-boot-example/B.features/retry/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-example/B.features/scheduling/quartz-scheduler/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/B.features/scheduling/quartz-scheduler/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "spring-boot-example/B.features/scheduling/quartz-scheduler/pom.xml",
+      "artifact": "spring-boot-starter-quartz"
+    },
+    {
+      "file": "spring-boot-example/B.features/scheduling/spring-task/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/B.features/security/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "spring-boot-example/B.features/security/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "spring-boot-example/B.features/security/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/B.features/security/pom.xml",
+      "artifact": "spring-boot-starter-cache"
+    },
+    {
+      "file": "spring-boot-example/B.features/security/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-example/B.features/sending-email/pom.xml",
+      "artifact": "spring-boot-starter-mail"
+    },
+    {
+      "file": "spring-boot-example/B.features/sending-email/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-example/B.features/spring-web/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/B.features/spring-web/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "spring-boot-example/B.features/spring-webflux/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "spring-boot-example/B.features/spring-webflux/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-example/B.features/template/freemarker/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/B.features/template/freemarker/pom.xml",
+      "artifact": "spring-boot-starter-freemarker"
+    },
+    {
+      "file": "spring-boot-example/B.features/template/thymeleaf/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/B.features/template/thymeleaf/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "spring-boot-example/B.features/testing/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/B.features/testing/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "spring-boot-example/B.features/testing/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-example/B.features/testing/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-example/B.features/transaction/transaction-multi-datasource-jpa/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/B.features/transaction/transaction-multi-datasource-jpa/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "spring-boot-example/B.features/transaction/transaction-multi-datasource-jpa/pom.xml",
+      "artifact": "spring-boot-starter-jta-atomikos"
+    },
+    {
+      "file": "spring-boot-example/B.features/transaction/transaction-multi-datasource-mybatis/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/B.features/transaction/transaction-multi-datasource-mybatis/pom.xml",
+      "artifact": "spring-boot-starter-jta-atomikos"
+    },
+    {
+      "file": "spring-boot-example/B.features/transaction/transaction-spring-annotation/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "spring-boot-example/B.features/transaction/transaction-spring-annotation/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/B.features/transaction/transaction-spring-interceptor/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/B.features/transaction/transaction-spring-interceptor/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "spring-boot-example/B.features/web-services/pom.xml",
+      "artifact": "spring-boot-starter-web-services"
+    },
+    {
+      "file": "spring-boot-example/B.features/web-services/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-example/B.features/websocket/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "spring-boot-example/B.features/websocket/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/B.features/websocket/pom.xml",
+      "artifact": "spring-boot-starter-websocket"
+    },
+    {
+      "file": "spring-boot-example/C.starters/kaptcha-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-example/C.starters/kaptcha-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-example/C.starters/kaptcha-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-example/C.starters/kaptcha-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "spring-boot-example/C.starters/okhttp-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-example/C.starters/okhttp-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-example/C.starters/okhttp-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-example/C.starters/okhttp-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "spring-boot-example/D.integration/derby/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "spring-boot-example/D.integration/derby/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/D.integration/elastic-search/pom.xml",
+      "artifact": "spring-boot-starter-data-elasticsearch"
+    },
+    {
+      "file": "spring-boot-example/D.integration/elastic-search/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-example/D.integration/h2database/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "spring-boot-example/D.integration/h2database/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/D.integration/hsqldb/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "spring-boot-example/D.integration/hsqldb/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/D.integration/jetty/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/D.integration/jetty/pom.xml",
+      "artifact": "spring-boot-starter-jetty"
+    },
+    {
+      "file": "spring-boot-example/D.integration/kafka/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/D.integration/mongodb/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb"
+    },
+    {
+      "file": "spring-boot-example/D.integration/mongodb/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/D.integration/mysql/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "spring-boot-example/D.integration/mysql/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/D.integration/oracle/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "spring-boot-example/D.integration/oracle/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/D.integration/prometheus/prometheus-pushgateway/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/D.integration/prometheus/prometheus-pushgateway/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-boot-example/D.integration/prometheus/prometheus-simple/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/D.integration/prometheus/prometheus-simple/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-boot-example/D.integration/rabbitmq/rabbitmq-consumer/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "spring-boot-example/D.integration/rabbitmq/rabbitmq-consumer/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-example/D.integration/rabbitmq/rabbitmq-provider/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "spring-boot-example/D.integration/rabbitmq/rabbitmq-provider/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/D.integration/rabbitmq/rabbitmq-provider/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-example/D.integration/redis/pom.xml",
+      "artifact": "spring-boot-starter-cache"
+    },
+    {
+      "file": "spring-boot-example/D.integration/redis/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "spring-boot-example/D.integration/redis/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "spring-boot-example/D.integration/redis/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/D.integration/undertow/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/D.integration/undertow/pom.xml",
+      "artifact": "spring-boot-starter-undertow"
+    },
+    {
+      "file": "spring-boot-example/D.integration/zookeeper/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/D.integration/zookeeper/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-example/E.tools/alibaba-druid/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "spring-boot-example/E.tools/alibaba-druid/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/E.tools/alibaba-druid/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-example/E.tools/alibaba-easyexcel/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/E.tools/alibaba-sentinel/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/E.tools/alibaba-sentinel/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-example/E.tools/apache-dubbo/dubbo-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/E.tools/apache-dubbo/dubbo-provider/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-example/E.tools/apache-poi/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "spring-boot-example/E.tools/apache-poi/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/E.tools/browscap-java/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/E.tools/caffeine/pom.xml",
+      "artifact": "spring-boot-starter-cache"
+    },
+    {
+      "file": "spring-boot-example/E.tools/caffeine/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "spring-boot-example/E.tools/caffeine/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/E.tools/easy-captcha/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "spring-boot-example/E.tools/easy-captcha/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/E.tools/flyway/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "spring-boot-example/E.tools/flyway/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/E.tools/google-zxing/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/E.tools/google-zxing/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-example/E.tools/hikaricp/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-boot-example/E.tools/hikaricp/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "spring-boot-example/E.tools/hikaricp/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/E.tools/hikaricp/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-example/E.tools/ip2region/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/E.tools/jasypt/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-example/E.tools/jasypt/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-example/E.tools/jasypt/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-example/E.tools/jjwt/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/E.tools/jjwt/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-example/E.tools/jsch/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "spring-boot-example/E.tools/jsch/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/E.tools/jsch/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-example/E.tools/kaptcha/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "spring-boot-example/E.tools/kaptcha/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "spring-boot-example/E.tools/kaptcha/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/E.tools/liquibase/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "spring-boot-example/E.tools/liquibase/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/E.tools/macro-benchmarks/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/E.tools/macro-benchmarks/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-example/E.tools/mapstruct/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/E.tools/mapstruct/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-boot-example/E.tools/mybatis/mybatis-mapper/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/E.tools/mybatis/mybatis-pagehelper/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/E.tools/mybatis/mybatis-plus/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/E.tools/mybatis/mybatis-simple/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/E.tools/netty/netty-client/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-example/E.tools/netty/netty-client/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-example/E.tools/netty/netty-server/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-example/E.tools/netty/netty-server/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-example/E.tools/open-api/redoc/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/E.tools/open-api/redoc/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "spring-boot-example/E.tools/open-api/springdoc-openapi/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/E.tools/open-api/springdoc-openapi/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-example/E.tools/open-api/springfox-swagger/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/E.tools/open-api/springfox-swagger/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-example/E.tools/oshi-core/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/E.tools/p6spy/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-example/E.tools/p6spy/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "spring-boot-example/E.tools/redisson/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/E.tools/redisson/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "spring-boot-example/E.tools/redisson/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-example/E.tools/resilience4j/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/E.tools/resilience4j/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "spring-boot-example/E.tools/resilience4j/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-boot-example/E.tools/resilience4j/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-example/E.tools/rsocket/rsocket-client/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/E.tools/rsocket/rsocket-client/pom.xml",
+      "artifact": "spring-boot-starter-rsocket"
+    },
+    {
+      "file": "spring-boot-example/E.tools/rsocket/rsocket-client/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-example/E.tools/rsocket/rsocket-server/pom.xml",
+      "artifact": "spring-boot-starter-rsocket"
+    },
+    {
+      "file": "spring-boot-example/E.tools/rsocket/rsocket-server/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-example/E.tools/spring-boot-admin/spring-boot-admin-client/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/E.tools/spring-boot-admin/spring-boot-admin-client/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-boot-example/E.tools/spring-boot-admin/spring-boot-admin-server/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/E.tools/useragentutils/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/F.services/api-data-codec/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/F.services/distributed-scheduling-service/spring-task-distributed-scheduling-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/F.services/distributed-scheduling-service/spring-task-distributed-scheduling-service/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "spring-boot-example/F.services/distributed-scheduling-service/spring-task-distributed-scheduling-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "spring-boot-example/F.services/distributed-scheduling-service/spring-task-distributed-scheduling-service/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "spring-boot-example/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    }
+  ]
+}

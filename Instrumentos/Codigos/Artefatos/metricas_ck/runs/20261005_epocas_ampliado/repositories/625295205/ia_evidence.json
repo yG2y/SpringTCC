@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "2434dee03b9fa992144e0cf8e1f318901c668975",
+      "date": "2025-03-10T12:26:07+01:00",
+      "author": "NidhalNaffati",
+      "email": "nidhalnaffati@gmail.com",
+      "message": "fix: Implement 2-factor-authentication via sending verification code via email.\n"
+    },
+    {
+      "sha": "79dfb87d4009cdae318526d9f1e8a49a4b92c054",
+      "date": "2025-03-09T22:17:45+01:00",
+      "author": "NidhalNaffati",
+      "email": "nidhalnaffati@gmail.com",
+      "message": "fix: Configure swagger to properly handle jwt\n"
+    },
+    {
+      "sha": "b9068aa910fcb0693331784a59e656374ff931a5",
+      "date": "2025-03-09T17:11:22+01:00",
+      "author": "NidhalNaffati",
+      "email": "nidhalnaffati@gmail.com",
+      "message": "feat: Implement Swagger\n"
+    },
+    {
+      "sha": "5cbae4d865964fda10dff192378b701a02b5b779",
+      "date": "2025-03-09T16:44:48+01:00",
+      "author": "NidhalNaffati",
+      "email": "nidhalnaffati@gmail.com",
+      "message": "fix the UserDetailsImpl import from the JwtAuthorizationFilter class\n"
+    },
+    {
+      "sha": "8ad7d315f93df6991a9fe2f6a6ad4e12f15a4c6b",
+      "date": "2025-03-09T15:11:05+01:00",
+      "author": "NidhalNaffati",
+      "email": "nidhalnaffati@gmail.com",
+      "message": "add .env file to the .ignore file\n"
+    },
+    {
+      "sha": "e94c59d6851663122eccd086ff36ea60b49ab0d5",
+      "date": "2025-03-09T14:20:13+01:00",
+      "author": "NidhalNaffati",
+      "email": "nidhalnaffati@gmail.com",
+      "message": "removed model directory and moved the files into entity\n"
+    },
+    {
+      "sha": "36931d71d0bd1427d4a2283999c69eedee98ff1b",
+      "date": "2025-02-27T18:40:03+01:00",
+      "author": "NidhalNaffati",
+      "email": "nidhalnaffati@gmail.com",
+      "message": "Enabled the colored console output\n"
+    },
+    {
+      "sha": "b686a6a108c8219d334a86eff60f735653b2894e",
+      "date": "2025-02-27T13:52:28+01:00",
+      "author": "NidhalNaffati",
+      "email": "nidhalnaffati@gmail.com",
+      "message": "refactor: Removed the static User creation by the Builder function\n"
+    },
+    {
+      "sha": "30e541405f0549586a5d8f973c6f9bf4159b7e1d",
+      "date": "2025-01-24T18:04:58+01:00",
+      "author": "NidhalNaffati",
+      "email": "nidhalnaffati@gmail.com",
+      "message": "refactor: simplify AdminInitializer constructor using Lombok\n"
+    },
+    {
+      "sha": "b739b0936bc772c048b79a8ae4ea396cb0d06a25",
+      "date": "2024-04-16T15:39:56+01:00",
+      "author": "NidhalNaffati",
+      "email": "nidhalnaffati@gmail.com",
+      "message": "refactor: Add queries to the UserRepository's & TokenRepository's methods\n"
+    },
+    {
+      "sha": "5a41a0877ea00a318cb3e2498314ecd39702f88f",
+      "date": "2024-04-16T09:30:01+01:00",
+      "author": "NidhalNaffati",
+      "email": "nidhalnaffati@gmail.com",
+      "message": "refactor: Replace deprecated frameOptions usage with Customizer.withDefaults()\n"
+    },
+    {
+      "sha": "48cbdc55e5b2863389612df39fe2bd1149262323",
+      "date": "2024-04-14T23:15:50+01:00",
+      "author": "NidhalNaffati",
+      "email": "nidhalnaffati@gmail.com",
+      "message": "feat: Continue frontend implementation for admin user management\n\n - Builds upon previous commit \"feat: Implement lock and unlock users by the admin\"\n - Enables admins to view a table of users\n - Provides functionality for admins to lock or unlock users from the frontend\n"
+    },
+    {
+      "sha": "b74c7ea28db739620eac5827f47c49e7fd9228c2",
+      "date": "2024-04-13T22:23:13+01:00",
+      "author": "NidhalNaffati",
+      "email": "nidhalnaffati@gmail.com",
+      "message": "feat: Implement lock and unlock users by the admin\n"
+    },
+    {
+      "sha": "732afe871ef5acd47edb6efd4b9962e9b01ae62f",
+      "date": "2024-04-12T12:17:38+01:00",
+      "author": "NidhalNaffati",
+      "email": "nidhalnaffati@gmail.com",
+      "message": "docs: remove unnecessary docs\n"
+    },
+    {
+      "sha": "6be1208386bf2ed56f360adaf5a3534fea48b88b",
+      "date": "2024-04-12T09:52:16+01:00",
+      "author": "NidhalNaffati",
+      "email": "nidhalnaffati@gmail.com",
+      "message": "feat: Add account locking feature to validateCredentials method\n\nImplemented a feature in the validateCredentials method of UserService to lock user accounts after a specified number of failed login attempts. This feature enhances security by preventing brute-force attacks on user accounts. Added unit tests to ensure the functionality works correctly, covering scenarios such as locking an account after reaching the maximum failed login attempts and resetting the account locking state after a successful login.\n"
+    },
+    {
+      "sha": "a74f308d890dba4f600a955c55fcb2e1a99cd4cc",
+      "date": "2024-03-07T00:14:02+01:00",
+      "author": "NidhalNaffati",
+      "email": "nidhalnaffati@gmail.com",
+      "message": "feat: Add password validation\n\nImplemented password validation checks for length, inclusion of digits, lowercase and uppercase letters, and matching confirm password. The \"Create account\" button is now disabled until all password requirements are met. This ensures users cannot proceed with an invalid password.\n"
+    },
+    {
+      "sha": "c78da8f8bde58334493110e0eab486516dbfefd0",
+      "date": "2024-02-19T16:11:18+01:00",
+      "author": "NidhalNaffati",
+      "email": "nidhalnaffati@gmail.com",
+      "message": "Refactor JwtAuthorizationFilter.doFilterInternal()\n\n- Extracted methods for improved readability and maintainability.\n- Added comments for better code documentation.\n- Fixed logic to handle cases where the username extracted from JWT is null or user is already authenticated.\n"
+    },
+    {
+      "sha": "33403c1a9459df3b29b9f4de11061f3e7b95e783",
+      "date": "2024-02-18T21:05:15+01:00",
+      "author": "NidhalNaffati",
+      "email": "nidhalnaffati@gmail.com",
+      "message": "Refactor router configuration and guards\n\n- Moved router configuration to a separate file `router/index.js` for better organization.\n- Extracted navigation guards to `router/guards.js` to improve maintainability.\n- Consolidated repetitive parts and enhanced readability in the guards.\n\nThis commit improves code organization and readability, making the router setup more modular and easier to maintain.\n"
+    },
+    {
+      "sha": "635c73669cad53de64b80e27ead8ed7ec3eecc74",
+      "date": "2024-02-15T20:12:01+01:00",
+      "author": "NidhalNaffati",
+      "email": "nidhalnaffati@gmail.com",
+      "message": "Refactor: Enhance Exception Handling\n\nMove user creation inside the try block to prevent account creation in case of exceptions.\n"
+    },
+    {
+      "sha": "0bf0c547ac672458d3fe69e1e3c718af80af1998",
+      "date": "2024-02-05T16:04:42+01:00",
+      "author": "NidhalNaffati",
+      "email": "nidhalnaffati@gmail.com",
+      "message": "refactor: Set the expiration time dynamically\n"
+    },
+    {
+      "sha": "5264270e674272e9ad02c114c72a06d9f6b1e8e5",
+      "date": "2024-02-05T15:43:19+01:00",
+      "author": "NidhalNaffati",
+      "email": "nidhalnaffati@gmail.com",
+      "message": "fix: improve the exception handling when creating the registration of the user fails.\n"
+    },
+    {
+      "sha": "1fcb1032b3994bdd6081d687b7684ee84baba32a",
+      "date": "2024-02-05T15:41:04+01:00",
+      "author": "NidhalNaffati",
+      "email": "nidhalnaffati@gmail.com",
+      "message": "feat: Implement docker-compose for auto running docker-compose.yml file\n"
+    },
+    {
+      "sha": "e1064d0b75ccf5092ed35cab2608640c08626b70",
+      "date": "2024-01-24T07:34:22+01:00",
+      "author": "Nidhal Naffati",
+      "email": "nidhalnaffati@gmail.com",
+      "message": "Fix the url of the class diagram image"
+    },
+    {
+      "sha": "0712e3be20a70a075ec79d2ce22e80e80b004c47",
+      "date": "2023-12-20T13:52:17+01:00",
+      "author": "NidhalNaffati",
+      "email": "nidhalnaffati@gmail.com",
+      "message": "Added default values for Redis configuration properties, including host, port, and time-to-live, and documented them for clarity.\n"
+    },
+    {
+      "sha": "52420c975d6749942da8048c78a5ebe9b513536a",
+      "date": "2023-08-08T11:02:12+01:00",
+      "author": "NidhalNaffati",
+      "email": "nidhalnaffati@gmail.com",
+      "message": "fix: delete the README.md from the vue app.\n"
+    },
+    {
+      "sha": "d4bfb2f06d24a40ced9e3fe231793219c1263bb5",
+      "date": "2023-08-01T15:14:49+01:00",
+      "author": "NidhalNaffati",
+      "email": "nidhalnaffati@gmail.com",
+      "message": "feat: Add the docker-compose file for PostgreSQL and pgAdmin\n\nThis commit adds a docker-compose file that sets up two services: PostgreSQL and pgAdmin.\nThis docker-compose file provides an easy way to deploy and manage both PostgreSQL and pgAdmin for development and testing purposes.\n"
+    },
+    {
+      "sha": "d0c4630f9f931eb08ab85ef203d1f373a687ff0e",
+      "date": "2023-08-01T14:45:15+01:00",
+      "author": "NidhalNaffati",
+      "email": "nidhalnaffati@gmail.com",
+      "message": "feat: Add Some screenshots to README.md\n\nThis commit adds screenshots of the application to the README.md file. The screenshots provide an overview of the application's UI.\n"
+    },
+    {
+      "sha": "10fcbb4d8efcc04c9bbf0af98781f51d106e14e2",
+      "date": "2023-08-01T14:39:43+01:00",
+      "author": "NidhalNaffati",
+      "email": "nidhalnaffati@gmail.com",
+      "message": "Revert \"feat: Add Some screenshots to README.md\"\n\nThis reverts commit a6e36a209bbfe24c984e61c70d01d32e8f5fd303.\n"
+    },
+    {
+      "sha": "a6e36a209bbfe24c984e61c70d01d32e8f5fd303",
+      "date": "2023-08-01T14:34:59+01:00",
+      "author": "NidhalNaffati",
+      "email": "nidhalnaffati@gmail.com",
+      "message": "feat: Add Some screenshots to README.md\n\nThis commit adds screenshots of the application to the README.md file. The screenshots provide an overview of the application's UI.\n"
+    },
+    {
+      "sha": "5d7c5fcdc28b55dfa980e50d14b96b6048e66eeb",
+      "date": "2023-07-27T12:19:58+01:00",
+      "author": "NidhalNaffati",
+      "email": "nidhalnaffati@gmail.com",
+      "message": "feat: Add Diagram of the architecture of the application to README.md\n\nThis commit adds the Diagram of the architecture of the application to the README.md file. The diagram provides an overview of the application's architecture.\n\nThese changes aim to improve the documentation and make it easier for developers to understand the application's structure and how to work with it.\n"
+    }
+  ],
+  "commit_sha": "2434dee03b9fa992144e0cf8e1f318901c668975",
+  "extracted_at": "2026-10-05T18:09:51.800679+00:00"
+}

@@ -1,0 +1,74 @@
+{
+  "generated_at": "2026-10-05T15:55:54.193318+00:00",
+  "collection": {
+    "requested_scope": 50,
+    "requested_scope_finished": 50,
+    "requested_scope_complete": true,
+    "updated_at": "2026-10-05T15:55:52.203462+00:00",
+    "population": 38456,
+    "finished": 50,
+    "pending": 38406,
+    "complete": false,
+    "eligible": 19,
+    "statuses": {
+      "ok": 22,
+      "partial_ck": 27,
+      "error": 1
+    },
+    "ia_all_finished": {
+      "sem_evidencia_detectada": 34,
+      "com_evidencia": 16
+    },
+    "ia_eligible": {
+      "sem_evidencia_detectada": 15,
+      "com_evidencia": 4
+    },
+    "comparison_eligible": 19,
+    "epoch_eligible": {
+      "E3": 10,
+      "E2": 9
+    }
+  },
+  "analysis_n": 19,
+  "significant_primary_tests": [],
+  "unit": "repository",
+  "primary_bonferroni_m": 7,
+  "dunn_bonferroni_m": 42,
+  "interpretation": "observational_association_not_causal",
+  "partial": true,
+  "classified_scope_complete": true,
+  "exploratory_coverage95_n": 36,
+  "exploratory_coverage95_significant_tests": [
+    {
+      "family": "EXPLORATORY_coverage95_IA",
+      "metric": "avg_cbo",
+      "group_a": "sem_evidencia_detectada",
+      "group_b": "com_evidencia",
+      "n_a": 23,
+      "n_b": 13,
+      "family_tests": 7,
+      "status": "ok",
+      "p_raw": 0.003752434001398632,
+      "p_adjusted": 0.026267038009790425,
+      "cliffs_delta_a_minus_b": -0.5919732441471572,
+      "significant": true,
+      "u": 61.0
+    },
+    {
+      "family": "EXPLORATORY_coverage95_IA",
+      "metric": "avg_rfc",
+      "group_a": "sem_evidencia_detectada",
+      "group_b": "com_evidencia",
+      "n_a": 23,
+      "n_b": 13,
+      "family_tests": 7,
+      "status": "ok",
+      "p_raw": 0.002445573222249461,
+      "p_adjusted": 0.017119012555746226,
+      "cliffs_delta_a_minus_b": -0.6187290969899666,
+      "significant": true,
+      "u": 57.0
+    }
+  ],
+  "report_instrument_sha256": "44ede47b65a4e9924a1add0bf92f656caf1304f6563f52496c6eda5dbbd081ce"
+}

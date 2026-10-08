@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "fb48505a4efc5f33a3e4ba72bd90231d944ebbcf",
+      "date": "2022-10-16T18:12:23+02:00",
+      "author": "Thibaud Lepretre",
+      "email": "thibaud.lepretre@gmail.com",
+      "message": "Upgrade sample docker (#166)\n\nTo support Apple M1 and way more faster than previous version"
+    },
+    {
+      "sha": "2aafcb8035b38ea583f4586a8a86b4711c85a69f",
+      "date": "2022-07-13T17:28:19+02:00",
+      "author": "Thibaud Lepretre",
+      "email": "thibaud.lepretre@gmail.com",
+      "message": "Upgrade nexus plugin to support java 17\n"
+    },
+    {
+      "sha": "651b82dfcf5a5b274a6c7712ffebd0e3e3415cf7",
+      "date": "2022-07-13T15:12:48+02:00",
+      "author": "Thibaud Lepretre",
+      "email": "thibaud.lepretre@gmail.com",
+      "message": "Cleanup pom.xml\n"
+    },
+    {
+      "sha": "2e2bced57b0b33ec37c3a96e1f59b6d3a446dbda",
+      "date": "2022-07-13T15:07:28+02:00",
+      "author": "Thibaud Lepretre",
+      "email": "thibaud.lepretre@gmail.com",
+      "message": "Remove hardcoded jackson-databind version\n"
+    },
+    {
+      "sha": "d6718ad15945ff53754edb6192541f897e6c1e5c",
+      "date": "2022-07-13T14:58:40+02:00",
+      "author": "Thibaud Lepretre",
+      "email": "thibaud.lepretre@gmail.com",
+      "message": "Support Java 17\n"
+    },
+    {
+      "sha": "d58cb7dc6d1fb5dc2c4ef520fa3cc78642bb931b",
+      "date": "2022-07-13T14:51:14+02:00",
+      "author": "Mario Maccarini",
+      "email": "Mario.Maccarini@UGent.be",
+      "message": "Candidate for 1.1.0 with java 11 and springboot 2.6.9 (#163)\n\n* Fixes deprecated verifyZeroInteractions by using verifyNoInteractions instead\n\n* Fixes deprecated OutputCapture by using OutputCaptureRule instead\n\n* Fix pom ordering and relative part of parent\n\n* Fix pom ordering and add dependencyManagement\n\n* Fix pom ordering, parent pom and dependencyManagement\n\n* Update to java 11\n\n* Update to springboot v2.6.9\n\n* Update to springboot v2.6.9 + add integration tests for sample application\n\n* Fix property that will disappear in the future. Replacing it with the new property.\n\n* Fix comments\n\n* fix TODO .anyRequest().authenticated() + add comments\n\n* Update to springboot v2.7.1\n\n* Fix CHANGELOG.md to springboot v2.7.1\n\n* Prepare v1.1.0 with java 11 and springboot 2.6.9"
+    },
+    {
+      "sha": "682642bdae01172ac0bfcab2c604e9cb780a91d1",
+      "date": "2020-11-26T18:37:21+01:00",
+      "author": "Thibaud Lepretre",
+      "email": "thibaud.lepretre@gmail.com",
+      "message": ":bookmark: version 1.0.6\n"
+    },
+    {
+      "sha": "e816f5dc90af0321eef205a9491b12309d7fd3a0",
+      "date": "2020-11-26T18:32:48+01:00",
+      "author": "Thibaud Lepretre",
+      "email": "thibaud.lepretre@gmail.com",
+      "message": "Fix afterPropertiesSet tests\n"
+    },
+    {
+      "sha": "349631fc3bf3859064b89de6818bf9af062f14e8",
+      "date": "2020-11-26T18:26:45+01:00",
+      "author": "Thibaud Lepretre",
+      "email": "thibaud.lepretre@gmail.com",
+      "message": "Old spring secu ServiceProperties has exception (#150)\n\nAdd `try/catch` to support older"
+    },
+    {
+      "sha": "c867d60a73c352abef40383d4a9eca64bca090bd",
+      "date": "2020-11-26T16:07:20+01:00",
+      "author": "le-zell",
+      "email": "le-zell@users.noreply.github.com",
+      "message": "Support CAS client 3.6.0\n\nfix #147"
+    },
+    {
+      "sha": "433239cab7bdda8d0a8b1e826357f81cc11ee981",
+      "date": "2020-09-04T18:10:32+02:00",
+      "author": "Thibaud Lepretre",
+      "email": "thibaud.lepretre@gmail.com",
+      "message": ":bookmark: version 1.0.5\n"
+    },
+    {
+      "sha": "dc3596695bed8d3dfec1f85b2206f9c8153dbea4",
+      "date": "2020-09-04T18:04:17+02:00",
+      "author": "Thibaud Lepretre",
+      "email": "thibaud.lepretre@gmail.com",
+      "message": "Remove Lombok onMethod that break javadoc\n\nI may be use _delombok_ https://stackoverflow.com/a/51947792/636472 but for only one field I still prefer manually delombok inside source\n\nfixes #146\n"
+    },
+    {
+      "sha": "0964774ce2214db0ea996b9badf198a790fe7475",
+      "date": "2020-09-04T15:49:42+02:00",
+      "author": "Thibaud Lepretre",
+      "email": "thibaud.lepretre@gmail.com",
+      "message": ":bookmark: version 1.0.4\n"
+    },
+    {
+      "sha": "92f93a6894be079648cc4c7acc8b0811f7930594",
+      "date": "2020-09-04T15:46:14+02:00",
+      "author": "Thibaud Lepretre",
+      "email": "thibaud.lepretre@gmail.com",
+      "message": "Remove PostConstruct\n\nfixes #145\n"
+    },
+    {
+      "sha": "0118698b5d0d9c9c1065280fbcfc6db2b017bc16",
+      "date": "2020-07-30T13:39:36+02:00",
+      "author": "Thibaud Lepretre",
+      "email": "thibaud.lepretre@gmail.com",
+      "message": ":bookmark: version 1.0.3\n"
+    },
+    {
+      "sha": "5abb480ef722d7bfd438f540e738458a4bf61571",
+      "date": "2020-07-30T13:33:14+02:00",
+      "author": "Thibaud Lepretre",
+      "email": "thibaud.lepretre@gmail.com",
+      "message": "New interface ProxyCallbackUrlAwareTicketValidator\n\nif you'd like to create your own `TicketValidator` but do not\nwant to extends `Cas20ServiceTicketValidator` (or others) because they added `final` everywhere and so is impossible\nto extends...\n"
+    },
+    {
+      "sha": "280c77f5b508e64a343b32344cba9c0456af9797",
+      "date": "2020-03-18T17:43:35+01:00",
+      "author": "Thibaud Lepretre",
+      "email": "thibaud.lepretre@gmail.com",
+      "message": "Merge pull request #140 from kakawait/develop\n\nRelease 1.0.2"
+    },
+    {
+      "sha": "62f19c835a099aba519c1a3304e97443a35d364a",
+      "date": "2020-03-18T17:39:34+01:00",
+      "author": "Thibaud Lepretre",
+      "email": "thibaud.lepretre@gmail.com",
+      "message": "missing cas-extension ugrade\n"
+    },
+    {
+      "sha": "a7efa04162b8bc934d69d1e0a737f3fb5bc93932",
+      "date": "2020-03-18T17:33:04+01:00",
+      "author": "Thibaud Lepretre",
+      "email": "thibaud.lepretre@gmail.com",
+      "message": ":bookmark: version 1.0.2\n"
+    },
+    {
+      "sha": "2bec33fc50746529f25fe682b6706ecea5df3abb",
+      "date": "2020-03-18T17:31:13+01:00",
+      "author": "Thibaud Lepretre",
+      "email": "thibaud.lepretre@gmail.com",
+      "message": "Add basic release.sh script\n"
+    },
+    {
+      "sha": "d34e4cb34f990595d6a84ce49b76ae474e24ca29",
+      "date": "2020-03-18T16:49:29+01:00",
+      "author": "Thibaud Lepretre",
+      "email": "thibaud.lepretre@gmail.com",
+      "message": "Upgrade dependencies\n"
+    },
+    {
+      "sha": "f3afa3befe60febdd92fff8c469b39d6cac3bd38",
+      "date": "2020-01-31T13:03:09+01:00",
+      "author": "Thibaud Lepretre",
+      "email": "thibaud.lepretre@gmail.com",
+      "message": "Merge pull request #135 from kakawait/develop\n\nRelease 1.0.1"
+    },
+    {
+      "sha": "6815e53dba47384f2bb2ef82f499e7a4a6cca1d3",
+      "date": "2020-01-31T12:57:17+01:00",
+      "author": "Thibaud Lepretre",
+      "email": "thibaud.lepretre@gmail.com",
+      "message": ":bookmark: version 1.0.1\n"
+    },
+    {
+      "sha": "d8bac1fa5e189f7020ef3042fe42714f878d31dc",
+      "date": "2020-01-31T12:53:03+01:00",
+      "author": "Thibaud Lepretre",
+      "email": "thibaud.lepretre@gmail.com",
+      "message": "Fix afterPropertiesSet signature\n"
+    },
+    {
+      "sha": "10a44f80d86ad4fe6d766f6b2ce38d0c0b3e0c51",
+      "date": "2020-01-31T12:45:48+01:00",
+      "author": "Thibaud Lepretre",
+      "email": "thibaud.lepretre@gmail.com",
+      "message": "Bump dependencies versions\n"
+    },
+    {
+      "sha": "02e1e805998f92216753cc87c6f3e99d6f6ff17e",
+      "date": "2019-11-26T16:00:59+01:00",
+      "author": "Thibaud Lepretre",
+      "email": "thibaud.lepretre@gmail.com",
+      "message": "Add public method to retrieve casServerUrlPrefix\n"
+    },
+    {
+      "sha": "34d4a860f61bea846aa7358bba94cb9f6d2cbd84",
+      "date": "2019-11-26T16:00:40+01:00",
+      "author": "Thibaud Lepretre",
+      "email": "thibaud.lepretre@gmail.com",
+      "message": "Add sample to override default CasSecurity security\n"
+    },
+    {
+      "sha": "03f3fafa11b2780db9dd01a123918afdfd2acf88",
+      "date": "2019-11-26T15:59:47+01:00",
+      "author": "Thibaud Lepretre",
+      "email": "thibaud.lepretre@gmail.com",
+      "message": "Preparing next release 1.0.1\n"
+    },
+    {
+      "sha": "857685a9ef530e9d5f6d83a2f4a63981a1dd2f69",
+      "date": "2019-09-05T09:11:53+02:00",
+      "author": "Thibaud Lepretre",
+      "email": "thibaud.lepretre@gmail.com",
+      "message": "Add date to CHANGELOG\n"
+    },
+    {
+      "sha": "2f11ae1eb8482243c9428befac989ab67d1a34a2",
+      "date": "2019-09-05T09:09:27+02:00",
+      "author": "Thibaud Lepretre",
+      "email": "thibaud.lepretre@gmail.com",
+      "message": "Merge pull request #123 from kakawait/develop\n\nRelease 1.0.0"
+    }
+  ],
+  "commit_sha": "fb48505a4efc5f33a3e4ba72bd90231d944ebbcf",
+  "extracted_at": "2026-10-05T18:35:20.257698+00:00"
+}

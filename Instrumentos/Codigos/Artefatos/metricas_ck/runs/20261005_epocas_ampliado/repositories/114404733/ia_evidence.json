@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "78158b2dfa12976afcfb4a42c8c2c613fc82bf57",
+      "date": "2026-03-12T21:48:51+01:00",
+      "author": "Tomáš Vaněk",
+      "email": "tomix26@gmail.com",
+      "message": "Merge pull request #333 from zonkyio/#230-junit5-highlight\n\n#230 Update readme with JUnit 5 examples and docs improvements"
+    },
+    {
+      "sha": "67ad02a1fda14c343d237f3d8d5ad4f9c16f37ea",
+      "date": "2026-03-12T21:34:00+01:00",
+      "author": "Tomáš Vaněk",
+      "email": "tomix26@gmail.com",
+      "message": "#230 Update readme with JUnit 5 examples and docs improvements\n"
+    },
+    {
+      "sha": "7fa795161e24f74cc88312f53617a813352c6aa3",
+      "date": "2026-03-12T15:26:19+01:00",
+      "author": "Tomáš Vaněk",
+      "email": "tomix26@gmail.com",
+      "message": "Update README versions for 2.8.0 release\n"
+    },
+    {
+      "sha": "99eeafae832aa10bc668e4082f03c8109b611a7c",
+      "date": "2026-03-12T02:29:01Z",
+      "author": "Zonky Bot",
+      "email": "bot@zonky.com",
+      "message": "[Gradle Release Plugin] - new version commit:  'v2.9.0'.\n"
+    },
+    {
+      "sha": "a2748e6c23fb396cb2f694a465a386343ca594ee",
+      "date": "2026-03-12T02:40:02+01:00",
+      "author": "Tomáš Vaněk",
+      "email": "tomix26@gmail.com",
+      "message": "Merge pull request #332 from zonkyio/spring-database-initializer\n\n#331 Refactor Spring SQL init support to use AOP proxying"
+    },
+    {
+      "sha": "aece234d55efca13970ebfa30aa12a85ef7a9ac2",
+      "date": "2026-03-12T01:13:19+01:00",
+      "author": "Tomáš Vaněk",
+      "email": "tomix26@gmail.com",
+      "message": "#331 Refactor Spring SQL init support to use AOP proxying\n\nRename DataSourceScriptDatabase* classes to SpringScriptDatabase*,\napply AOP-based interception pattern consistent with Flyway/Liquibase\nextensions, and cache the preparer instance in the interceptor.\n"
+    },
+    {
+      "sha": "767d5b35f57ac328c9ae9d590a2b0f591a80e244",
+      "date": "2026-03-10T11:38:46+01:00",
+      "author": "Tomáš Vaněk",
+      "email": "tomix26@gmail.com",
+      "message": "Merge pull request #330 from zonkyio/embedded-postgres-2.2.2\n\n#329 Upgrade to Embedded Postgres 2.2.2"
+    },
+    {
+      "sha": "3282c8c003947e66e5becf22c3e32261610eeba7",
+      "date": "2026-03-10T11:38:31+01:00",
+      "author": "Tomáš Vaněk",
+      "email": "tomix26@gmail.com",
+      "message": "Merge pull request #328 from zonkyio/spring-database-initializer\n\nAdd support for Spring Boot's DataSourceScriptDatabaseInitializer"
+    },
+    {
+      "sha": "aa85f7bfceb226fbaf79c1329e5009a5a818c3d5",
+      "date": "2026-03-10T00:40:49+01:00",
+      "author": "Tomáš Vaněk",
+      "email": "tomix26@gmail.com",
+      "message": "#329 upgrade to embedded postgres 2.2.2\n"
+    },
+    {
+      "sha": "685e57a53f1b5ae7fc93df29e224b32b07fe1508",
+      "date": "2026-03-09T22:59:11+01:00",
+      "author": "Tomáš Vaněk",
+      "email": "tomix26@gmail.com",
+      "message": "Add support for Spring Boot's DataSourceScriptDatabaseInitializer\n\nIntercept DataSourceScriptDatabaseInitializer via BeanPostProcessor to\nintegrate with Zonky's optimized template-based database initialization.\nUses ThreadLocal DataSource pattern for parallel prefetching support.\n\n- Add DataSourceScriptDatabaseExtension (BeanPostProcessor)\n- Add DataSourceScriptDatabasePreparer with field-by-field equals/hashCode\n- Add ThreadLocalDataSource for thread-safe DataSource delegation\n- Extract AbstractDelegatingDataSource from AbstractEmbeddedDatabase\n- Add Spring Boot 4 stubs for compile-time compatibility\n- Add integration tests for both SB3 and SB4\n- Add zonky.test.database.spring.optimized-sql-init.enabled property (default: true)\n- Update configuration metadata with new property and provider deprecations\n- Update README with Spring Boot SQL Init section\n"
+    },
+    {
+      "sha": "d684bfb639ca8c71f70e8c0b3387d937bc441822",
+      "date": "2026-02-25T02:23:23+01:00",
+      "author": "Tomáš Vaněk",
+      "email": "tomix26@gmail.com",
+      "message": "Merge pull request #327 from zonkyio/embedded-postgres-2.2.1\n\n#326 Upgrade to Embedded Postgres 2.2.1"
+    },
+    {
+      "sha": "344ee1f53a95f52a10524c12fdddeed200e9240f",
+      "date": "2026-02-25T01:33:52+01:00",
+      "author": "Tomáš Vaněk",
+      "email": "tomix26@gmail.com",
+      "message": "#326 upgrade to embedded postgres 2.2.1\n"
+    },
+    {
+      "sha": "9e8bc9b9648a9bc03c4b2977f770e9d111187c88",
+      "date": "2026-02-25T00:17:46+01:00",
+      "author": "Tomáš Vaněk",
+      "email": "tomix26@gmail.com",
+      "message": "Merge pull request #325 from zonkyio/#317-upgrade-guava-fix-unsafe-warning\n\n#317 Upgrade Guava to 33.4.8 to fix sun.misc.Unsafe warning on JDK 24+"
+    },
+    {
+      "sha": "39850c0f7765b0ca0c3c8fe6f3ceaa0ecb11e8c6",
+      "date": "2026-02-24T02:05:37+01:00",
+      "author": "Tomáš Vaněk",
+      "email": "tomix26@gmail.com",
+      "message": "#317 Upgrade Guava from 32.1.3 to 33.4.8 to fix sun.misc.Unsafe warning on JDK 24+\n"
+    },
+    {
+      "sha": "980d8ea51e6ec28a968c4caff09815bdd7ef6489",
+      "date": "2026-02-24T02:51:12+01:00",
+      "author": "Tomáš Vaněk",
+      "email": "tomix26@gmail.com",
+      "message": "Merge pull request #324 from zonkyio/315-fix-maven-packaging-type\n\n#315 Fix maven packaging type from 'pom' to 'jar'"
+    },
+    {
+      "sha": "ff0c719ab4fd8888f4d4511e4f938b87bba86d75",
+      "date": "2026-02-24T02:26:42+01:00",
+      "author": "Tomáš Vaněk",
+      "email": "tomix26@gmail.com",
+      "message": "Merge pull request #323 from zonkyio/testcontainers-1.21.4\n\n#322 Upgrade to Testcontainers 1.21.4"
+    },
+    {
+      "sha": "ee099466afb0122b35b93af5873b3410a086cc77",
+      "date": "2026-02-24T01:46:33+01:00",
+      "author": "Tomáš Vaněk",
+      "email": "tomix26@gmail.com",
+      "message": "#315 fix maven packaging type from 'pom' to 'jar'\n"
+    },
+    {
+      "sha": "8082651f97d57b6550f875b12a43c5f837448a21",
+      "date": "2026-02-24T01:38:29+01:00",
+      "author": "Tomáš Vaněk",
+      "email": "tomix26@gmail.com",
+      "message": "#322 upgrade to testcontainers 1.21.4\n"
+    },
+    {
+      "sha": "18190b43a133dc9260e940fa4bd8e4100f6bd66d",
+      "date": "2026-02-24T01:39:54+01:00",
+      "author": "Tomáš Vaněk",
+      "email": "tomix26@gmail.com",
+      "message": "Merge pull request #321 from zonkyio/#319-spring-boot-4-compatibility\n\n#319 Fix Spring Boot 4 compatibility with Liquibase and Flyway"
+    },
+    {
+      "sha": "41459ee7ee7886190ffeb16909f9cb976723360d",
+      "date": "2025-11-21T15:03:51+01:00",
+      "author": "Tomáš Vaněk",
+      "email": "tomix26@gmail.com",
+      "message": "#319 Fix Spring Boot 4 compatibility with Liquibase and Flyway\n"
+    },
+    {
+      "sha": "a488214022b8cb1cb57c8fc89a21fa128fabcc52",
+      "date": "2025-11-19T18:24:20Z",
+      "author": "Zonky Bot",
+      "email": "bot@zonky.com",
+      "message": "[Gradle Release Plugin] - new version commit:  'v2.8.0'.\n"
+    },
+    {
+      "sha": "b132cd70531a55e3d3d5fb2473911c9c86dd7522",
+      "date": "2025-11-19T18:24:19Z",
+      "author": "Zonky Bot",
+      "email": "bot@zonky.com",
+      "message": "[Gradle Release Plugin] - pre tag commit:  'v2.7.1'.\n"
+    },
+    {
+      "sha": "2e835547666abd45a9ff269715f5532417663494",
+      "date": "2025-11-19T18:59:54+01:00",
+      "author": "Tomáš Vaněk",
+      "email": "tomix26@gmail.com",
+      "message": "Merge pull request #312 from zonkyio/#310-guava-failureaccess-shading\n\n#310 Add failureaccess dependency to shadow jar configuration"
+    },
+    {
+      "sha": "dec17923cc96005c607d1bd5b3723df30405f6ad",
+      "date": "2025-11-18T23:58:49Z",
+      "author": "Zonky Bot",
+      "email": "bot@zonky.com",
+      "message": "[Gradle Release Plugin] - new version commit:  'v2.8.0'.\n"
+    },
+    {
+      "sha": "18a1844e4d687c0a7f78d8f78b7293eab481352c",
+      "date": "2025-11-18T23:58:47Z",
+      "author": "Zonky Bot",
+      "email": "bot@zonky.com",
+      "message": "[Gradle Release Plugin] - pre tag commit:  'v2.7.1'.\n"
+    },
+    {
+      "sha": "c4d7878f6f74d2cc12d57b510a5da70375220379",
+      "date": "2025-11-18T22:57:56+01:00",
+      "author": "Tomáš Vaněk",
+      "email": "tomix26@gmail.com",
+      "message": "#310 add failureaccess dependency to shadow jar configuration\n\nSince Guava 27, the failureaccess library is a separate dependency\nthat needs to be included in the shadow jar alongside guava itself.\nThis fixes the ClassNotFoundException for InternalFutureFailureAccess\nthat was occurring in version 2.7.0.\n"
+    },
+    {
+      "sha": "17c667f6c29a0511758c0c99c41aa06dac4e52fd",
+      "date": "2025-11-15T00:54:47+01:00",
+      "author": "Tomáš Vaněk",
+      "email": "tomix26@gmail.com",
+      "message": "update readme\n"
+    },
+    {
+      "sha": "0f929aea214990790545f01d1f82f1afe5e518fb",
+      "date": "2025-11-14T19:12:56Z",
+      "author": "Zonky Bot",
+      "email": "bot@zonky.com",
+      "message": "[Gradle Release Plugin] - new version commit:  'v2.8.0'.\n"
+    },
+    {
+      "sha": "58e8868dd850381b20665193d7fe00c48e2c0c79",
+      "date": "2025-11-14T19:52:12+01:00",
+      "author": "Tomáš Vaněk",
+      "email": "tomix26@gmail.com",
+      "message": "Merge pull request #309 from zonkyio/dependency-upgrades\n\nUpgrade gradle dependencies"
+    },
+    {
+      "sha": "0b90f43e2d7105cd0b04a4225c2b7b9d7f723e75",
+      "date": "2025-11-14T19:10:57+01:00",
+      "author": "Tomáš Vaněk",
+      "email": "tomix26@gmail.com",
+      "message": "Merge pull request #308 from zonkyio/embedded-postgres-2.2.0\n\n#307 Upgrade to Embedded Postgres 2.2.0"
+    }
+  ],
+  "commit_sha": "78158b2dfa12976afcfb4a42c8c2c613fc82bf57",
+  "extracted_at": "2026-10-05T18:15:58.580933+00:00"
+}

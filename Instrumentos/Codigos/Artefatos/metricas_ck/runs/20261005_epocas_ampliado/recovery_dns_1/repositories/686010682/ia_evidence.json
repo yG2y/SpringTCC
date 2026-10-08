@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "9fb9631778507b95e08990b541672df8aaf2cd0d",
+      "date": "2026-05-02T20:35:21+08:00",
+      "author": "柒木",
+      "email": "2483482026@qq.com",
+      "message": "feat: 更新docker默认接口请求配置 (#36)"
+    },
+    {
+      "sha": "3db8ed78f7aaa0db45f4495b5db98c879446a4df",
+      "date": "2025-05-22T21:18:19+08:00",
+      "author": "柒木",
+      "email": "2483482026@qq.com",
+      "message": "feat: 增加接口请求参数示例值 (#33)\n\n"
+    },
+    {
+      "sha": "0da69e4c8eeeffad59cc2874255fae176b0d4faf",
+      "date": "2025-04-22T12:57:33+08:00",
+      "author": "柒木",
+      "email": "2483482026@qq.com",
+      "message": "fix: 优化获取用户数据权限 (#32)\n\n"
+    },
+    {
+      "sha": "8090c88672926ec1896ead7c6a6f0d346e04ba2f",
+      "date": "2024-12-31T11:58:09+08:00",
+      "author": "柒木",
+      "email": "2483482026@qq.com",
+      "message": "feat: 增加管理员初始账号、增加新接口发布说明文档、文档网关默认地址修复 (#30)\n\nfeat: 增加管理员初始账号、增加新接口发布说明文档\nfix: 文档网关默认地址修复"
+    },
+    {
+      "sha": "5dad6cbcdc2669942b13006712dc8b8cda09f3f4",
+      "date": "2024-12-31T00:14:58+08:00",
+      "author": "柒木",
+      "email": "2483482026@qq.com",
+      "message": "feat: 增加使用docker容器编排方式部署 (#29)\n\n* feat: 增加使用docker容器编排方式部署\n\n* docs: 增加docker容器编排方式部署说明文档"
+    },
+    {
+      "sha": "0ddaaeebbf2522248ab0aa468653cbe170e06bd2",
+      "date": "2024-12-30T14:29:21+08:00",
+      "author": "柒木",
+      "email": "2483482026@qq.com",
+      "message": "fix: 优化支付沙箱选择 (#28)\n\n* ci(issue): 配置提交issue模板\n\n* fix: 优化支付沙箱选择"
+    },
+    {
+      "sha": "07c9ddcb7fc027f3be307d48b35cbfbfae35c6f9",
+      "date": "2024-05-04T16:24:20+08:00",
+      "author": "柒木",
+      "email": "2483482026@qq.com",
+      "message": "ci(issue): 配置提交issue模板 (#26)\n\n"
+    },
+    {
+      "sha": "606477a689dbbdf3c063919e23841f8c9eb4f72b",
+      "date": "2024-05-04T14:19:18+08:00",
+      "author": "柒木",
+      "email": "2483482026@qq.com",
+      "message": "fix(腾讯云cos配置修复): 修复腾讯云cos配置中访问地址判断错误 (#23)\n\n"
+    },
+    {
+      "sha": "a4093a6bfd70c4159b1f8f488b5023da244e16d4",
+      "date": "2024-05-02T17:29:52+08:00",
+      "author": "柒木",
+      "email": "2483482026@qq.com",
+      "message": "refactor(cos文件上传,支付环境配置): 重构cos文件上传配置，支付沙箱是否启用 (#21)\n\n使用配置文件的方式管理文件上传域名，及支付环境的切换"
+    },
+    {
+      "sha": "c9468cba7e65e48fc72e85c0282570be11398fe6",
+      "date": "2024-04-20T22:54:48+08:00",
+      "author": "柒木",
+      "email": "2483482026@qq.com",
+      "message": "fix: 修复部分bug,更新本地sql文件 (#20)\n\n* fix: 补充获取用户ip工具类\n\n* fix: 修复部分bug,更新本地sql文件"
+    },
+    {
+      "sha": "8788ed202484d0214d29ac428f68bcdc4fdeb87e",
+      "date": "2024-04-02T19:58:51+08:00",
+      "author": "llsyyds",
+      "email": "98149670+llsyyds@users.noreply.github.com",
+      "message": "fix：修复文档中前端安装依赖命令格式 (#19)\n\n"
+    },
+    {
+      "sha": "56eacb68b022a3238e1ce24f22704121e0b19393",
+      "date": "2024-01-15T17:47:19+08:00",
+      "author": "柒木",
+      "email": "2483482026@qq.com",
+      "message": "fix: 补充获取用户ip工具类 (#12)\n\n"
+    },
+    {
+      "sha": "119c942ce08c318b30ae8a05ccdb495d23a8d206",
+      "date": "2024-01-13T13:16:02+08:00",
+      "author": "柒木",
+      "email": "2483482026@qq.com",
+      "message": "fix: 修复删除订单出现类型错误的问题 (#10)\n\n"
+    },
+    {
+      "sha": "e407e4aa1c73400a716d0084ba52f96736f8ceaa",
+      "date": "2023-12-19T19:43:10+08:00",
+      "author": "柒木",
+      "email": "2483482026@qq.com",
+      "message": "fix: 修复gateway网关接收POST请求接收不到请求体从而影参数校验的问题 (#7)\n\n"
+    },
+    {
+      "sha": "a90580e7d8461b94bb7161d9e718579eeb1f216c",
+      "date": "2023-10-07T20:05:44+08:00",
+      "author": "柒木",
+      "email": "93181106+qimu666@users.noreply.github.com",
+      "message": "fix: 修复sql文件中接口信息表插入数据格式错误的问题 (#6)\n\n"
+    },
+    {
+      "sha": "af5b86b5ef291b83fee107e3b7728a7cc0a842c8",
+      "date": "2023-09-27T08:26:03+08:00",
+      "author": "柒木",
+      "email": "93181106+qimu666@users.noreply.github.com",
+      "message": "fix:补充配置注释 (#5)\n\n"
+    },
+    {
+      "sha": "0c4ce8413939cf75d7a1833565746c0275967e06",
+      "date": "2023-09-25T08:41:41+08:00",
+      "author": "qimu",
+      "email": "2483482026@qq.com",
+      "message": "docs: 修改访问开发者调用凭证链接\n"
+    },
+    {
+      "sha": "a9de621dcc13eb30ff821b09e81e96a1704f3aff",
+      "date": "2023-09-25T08:29:42+08:00",
+      "author": "柒木",
+      "email": "93181106+qimu666@users.noreply.github.com",
+      "message": "fix: 修复游客无法在接口大厅查看接口的bug (#4)\n\n"
+    },
+    {
+      "sha": "26ae91896becc6caa5043786567150324aa47d77",
+      "date": "2023-09-24T10:48:34+08:00",
+      "author": "柒木",
+      "email": "93181106+qimu666@users.noreply.github.com",
+      "message": "docs: 增加管理员预览账号，补充校验\n\n"
+    },
+    {
+      "sha": "e5e0f9118ced49a79d63efdc2da883b597fe3dcd",
+      "date": "2023-09-23T21:03:15+08:00",
+      "author": "qimu",
+      "email": "2483482026@qq.com",
+      "message": "docs: 更新文档\n"
+    },
+    {
+      "sha": "910b2adfc61892c88658c3781a795ec7855699cb",
+      "date": "2023-09-23T17:17:59+08:00",
+      "author": "qimu",
+      "email": "2483482026@qq.com",
+      "message": "fix: 依赖版本升级、优化细节\n"
+    },
+    {
+      "sha": "79362d8387d49ef3241230a90486f818a7394a89",
+      "date": "2023-09-23T00:41:27+08:00",
+      "author": "柒木",
+      "email": "93181106+qimu666@users.noreply.github.com",
+      "message": "v0.0.1 \n\n* :white_check_mark: 增加dubbo,nacos做服务调用,完成网关业务\n\n* feat: 增加新的调用接口、优化在线调用、接口请求参数响应参数动态接收、网关优化\n\n增加新接口 随机毒鸡汤、随机壁纸等等\n优化在线调用、接口请求参数响应参数动态接收\n优化网关。\n\n* feat: 优化细节\n\n* feat: 支持解绑邮箱，支持订单信息查看、删除、取消订单和付款创建过的订单\n\n适配解绑邮箱，账号绑定邮箱即可使用邮箱账号获取验证码登录\n创建订单后可在我的订单界面查看订单信息，并且可以管理订单信息，查看订单的信息信息，支付已经创建的未过期的订单,取消订单以及删除订单\n修复可以创建多次活动商品订单的bug,只能购买一次活动商品\n修复若干bug，优化细节\n\n* feat: 开源脱敏\n\n* feat: 增加README项目文档描述、仓库脱敏、优化细节、补充sql\n\n* feat: 重构修改接口头像、增加更多好玩的接口、优化细节"
+    },
+    {
+      "sha": "4acca9e8cbaedd3b9a35bb27c0c586c603671124",
+      "date": "2023-09-15T17:07:57+08:00",
+      "author": "qimu",
+      "email": "2483482026@qq.com",
+      "message": "feat: 重构目录，动态添加请求参数\n"
+    },
+    {
+      "sha": "d2318e59d0a125bb9d136e548cdec8af47c28a94",
+      "date": "2023-09-13T10:39:23+08:00",
+      "author": "qimu",
+      "email": "2483482026@qq.com",
+      "message": "add 加入RedissonLock优化接口\n"
+    },
+    {
+      "sha": "44af493a50ba086989f8292b5b42ae5f7f361a9a",
+      "date": "2023-09-11T15:53:07+08:00",
+      "author": "qimu",
+      "email": "2483482026@qq.com",
+      "message": "add 活动商品只能购买一次,优化逻辑\n"
+    },
+    {
+      "sha": "9aaee8bbbe2314e150eab22c8eef19f28dc35967",
+      "date": "2023-09-10T15:39:24+08:00",
+      "author": "qimu",
+      "email": "2483482026@qq.com",
+      "message": "add 邮箱绑定,支付成功通知邮箱\n"
+    },
+    {
+      "sha": "e7f3310683f600007baf7a63b157e7f7270b3d61",
+      "date": "2023-09-09T10:31:20+08:00",
+      "author": "qimu",
+      "email": "2483482026@qq.com",
+      "message": "add 用户接口调用,优化细节\n"
+    },
+    {
+      "sha": "3ec5885eddc174fb5ab2395adc5a96a5284758cc",
+      "date": "2023-09-04T11:18:27+08:00",
+      "author": "qimu",
+      "email": "2483482026@qq.com",
+      "message": "add 优化逻辑\n"
+    },
+    {
+      "sha": "43d4ac221ad1c40a41fd636cfb51a8106e6a6352",
+      "date": "2023-09-03T23:46:19+08:00",
+      "author": "qimu",
+      "email": "2483482026@qq.com",
+      "message": "Merge branch 'dev'\n"
+    },
+    {
+      "sha": "cfacc6ea8b150406bfeb10c4145364428fa0dae5",
+      "date": "2023-09-03T23:45:52+08:00",
+      "author": "qimu",
+      "email": "2483482026@qq.com",
+      "message": "add 邮箱登录注册\n"
+    }
+  ],
+  "commit_sha": "9fb9631778507b95e08990b541672df8aaf2cd0d",
+  "extracted_at": "2026-10-05T18:14:43.500881+00:00"
+}

@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "3e8ca1cc7babba1abba1788e5b238c641fc4a0d0",
+      "date": "2026-05-12T15:21:27+02:00",
+      "author": "Saša Bolić",
+      "email": "sasa.bolic@sixhours.io",
+      "message": "Merge pull request #194 from sasabolic/update-readme\n\nUpdate README.md"
+    },
+    {
+      "sha": "e720c76790ada968fb394d1558317d47271457b8",
+      "date": "2026-05-12T12:29:02+02:00",
+      "author": "Saša Bolić",
+      "email": "sasa.bolic@sixhours.io",
+      "message": "Update README.md\n"
+    },
+    {
+      "sha": "3959e7d8df3099378851869da6d6542dbe5e4bdf",
+      "date": "2026-05-11T16:49:26+02:00",
+      "author": "Saša Bolić",
+      "email": "sasa.bolic@sixhours.io",
+      "message": "Merge pull request #192 from sasabolic/readme-update\n\nUpdate README.md"
+    },
+    {
+      "sha": "e8a7e35437739db8d9ca9e0600d357fddfec90e2",
+      "date": "2026-05-11T16:28:25+02:00",
+      "author": "Saša Bolić",
+      "email": "sasa.bolic@sixhours.io",
+      "message": "Update README.md\n"
+    },
+    {
+      "sha": "4039672c271e0534148fa84b46f9a8c2183bf62b",
+      "date": "2026-05-11T16:11:41+02:00",
+      "author": "Saša Bolić",
+      "email": "sasa.bolic@sixhours.io",
+      "message": "Merge pull request #191 from sasabolic/fix-realse-pipeline\n\nUpgrade exec method execution to Gradle 9+ in build.gradle"
+    },
+    {
+      "sha": "a9d76f5cd600eec9d0ba91cb499fad0b35d4b5be",
+      "date": "2026-05-11T16:05:24+02:00",
+      "author": "Saša Bolić",
+      "email": "sasa.bolic@sixhours.io",
+      "message": "Upgrade exec method execution to Gradle 9+ in build.gradle\n"
+    },
+    {
+      "sha": "2809b04d56dca490a9f82fe29070a7d76945c63d",
+      "date": "2026-05-11T15:07:37+02:00",
+      "author": "Saša Bolić",
+      "email": "sasa.bolic@sixhours.io",
+      "message": "Merge pull request #190 from sasabolic/improvment-java-17\n\nRefactor code to Java 17 and update README.md"
+    },
+    {
+      "sha": "9b4d26c575d032955e07326b42d9636bc3be78e3",
+      "date": "2026-05-11T13:32:28+02:00",
+      "author": "Saša Bolić",
+      "email": "sasa.bolic@sixhours.io",
+      "message": "Refactor code to Java 17 and update README.md\n"
+    },
+    {
+      "sha": "e91995e28d5e0e8da560e1af0d4289f896fcfe7c",
+      "date": "2026-05-11T11:16:20+02:00",
+      "author": "Saša Bolić",
+      "email": "sasa.bolic@sixhours.io",
+      "message": "Merge pull request #189 from sasabolic/fix-actions-gradle-wrapper-validation-sonar\n\nPin actions to a full-length commit SHA to improve security"
+    },
+    {
+      "sha": "4f4004e1090a3fc7419f3632a0851acfde3fff09",
+      "date": "2026-05-11T11:06:12+02:00",
+      "author": "Saša Bolić",
+      "email": "sasa.bolic@sixhours.io",
+      "message": "Pin actions to a full-length commit SHA to improve security\n\n- https://docs.github.com/en/actions/reference/security/secure-use\\#using-third-party-actions\n"
+    },
+    {
+      "sha": "61f67b1cec294a165212f420bf4026512e0d34e3",
+      "date": "2026-05-11T10:37:09+02:00",
+      "author": "Igor Bolic",
+      "email": "igor.bolic@sixhours.io",
+      "message": "Merge pull request #188 from igorbolic/sonar-gradle\n\nUpgrade Sonar plugin for Gradle DSL compatibitlity"
+    },
+    {
+      "sha": "fa0fd8a566283ffd566b37db97952d1aff3bbcf4",
+      "date": "2026-05-11T10:28:51+02:00",
+      "author": "Igor Bolic",
+      "email": "igor.bolic@sixhours.io",
+      "message": "Upgrade Sonar plugin for Gradle DSL compatibitlity\n"
+    },
+    {
+      "sha": "522324832b8b8067083e255fb656e0486577af6c",
+      "date": "2026-05-11T10:13:53+02:00",
+      "author": "Igor Bolic",
+      "email": "igor.bolic@sixhours.io",
+      "message": "Merge pull request #187 from igorbolic/sb-4\n\nUpgrade to Spring Boot 4.0 and Java 17"
+    },
+    {
+      "sha": "733364e18d6330c59710779255e2626baa21602e",
+      "date": "2026-05-11T09:33:32+02:00",
+      "author": "Igor Bolic",
+      "email": "igor.bolic@sixhours.io",
+      "message": "Upgrade to Spring Boot 4.0 and Java 17\n\nThis update migrates the library to support Spring Boot 4.0.x\nand Spring Framework 7.0.x. Since these versions require Java 17,\nthe library's code baseline has been changed from Java 8 to Java 17.\n"
+    },
+    {
+      "sha": "46fe1e86292ba4e86b3528747d250a2cfc16cf3f",
+      "date": "2026-05-10T11:02:44+02:00",
+      "author": "Igor Bolic",
+      "email": "igor.bolic@sixhours.io",
+      "message": "Merge pull request #186 from igorbolic/spotless\n\nUse Spotless for license headers and code formatting"
+    },
+    {
+      "sha": "707238730bde8b2ad074941e363c4e3f1ce87a9b",
+      "date": "2026-05-09T14:08:57+02:00",
+      "author": "Igor Bolic",
+      "email": "igor.bolic@sixhours.io",
+      "message": "Use Spotless for license headers and code formatting\n\nThe License Gradle Plugin depends on an older `spring-core` version\nthat conflicts with Spring Boot 4, therefore these two plugins cannot\nbe used together.\n\nReplace License Gradle Plugin with Spotless for applying license headers\nand code formatting.\n\nResolves #185\n"
+    },
+    {
+      "sha": "0751e1181b14fe058995100893b0feea9219787c",
+      "date": "2026-04-25T16:09:19+02:00",
+      "author": "Saša Bolić",
+      "email": "sasa.bolic@sixhours.io",
+      "message": "Merge pull request #183 from sixhours-team/sasabolic-patch-1\n\nUpdate README.md"
+    },
+    {
+      "sha": "6c3f0dcfb5d126efb5147f1fec6d93cc634afce3",
+      "date": "2026-04-25T16:04:25+02:00",
+      "author": "Saša Bolić",
+      "email": "sasa.bolic@sixhours.io",
+      "message": "Update README.md\n\nUpadte README.md to the new version"
+    },
+    {
+      "sha": "fd9b7c54d32804bc012fa78fea6312ea67773fbb",
+      "date": "2026-04-23T18:17:38+02:00",
+      "author": "Igor Bolic",
+      "email": "igor.bolic@sixhours.io",
+      "message": "Merge pull request #182 from igorbolic/xmemcached-client-customizer\n\nAdd support for customizing the `XMemcachedClient`"
+    },
+    {
+      "sha": "1a431db337c180b54c7f103e447cc346abbeb991",
+      "date": "2026-04-22T17:18:17+02:00",
+      "author": "Igor Bolic",
+      "email": "igor.bolic@sixhours.io",
+      "message": "Add support for customizing the `XMemcachedClient`\n\nBesides configuring the Memcached client through application properties,\nthe `XMemcachedClientCustomizer` should allow users to fine-tune the\n`XMemcachedClient` with their own configuration. This gives users more\nflexibility when the default Memcached client configuration options are\nnot sufficient for a specific use case.\n\nResolves: #180\n"
+    },
+    {
+      "sha": "6cf02b72103c3c9d3b7c059916a131598b93ea42",
+      "date": "2026-01-29T16:21:41+01:00",
+      "author": "Igor Bolic",
+      "email": "igor.bolic@sixhours.io",
+      "message": "Merge pull request #179 from sasabolic/update-doc-2.5.3\n\nUpdate readme docs and bump version to 2.5.4-SNAPSHOT"
+    },
+    {
+      "sha": "bfeb97c6a93a8b7daee20d1467be7621623d81cb",
+      "date": "2026-01-29T16:04:26+01:00",
+      "author": "Saša Bolić",
+      "email": "sasa.bolic@sixhours.io",
+      "message": "Update readme docs and bump version to 2.5.4-SNAPSHOT\n"
+    },
+    {
+      "sha": "398eb3bad85a7a8e91a1bc4f642c5d464838a8f6",
+      "date": "2026-01-29T12:54:34+01:00",
+      "author": "Igor Bolic",
+      "email": "igor.bolic@sixhours.io",
+      "message": "Merge pull request #178 from sasabolic/update-license-2026\n\nUpdate license year"
+    },
+    {
+      "sha": "e53cec088e8fb157c12aeb0768b377536244e5f9",
+      "date": "2026-01-29T12:40:56+01:00",
+      "author": "Saša Bolić",
+      "email": "sasa.bolic@sixhours.io",
+      "message": "Update license\n"
+    },
+    {
+      "sha": "b0c987032c26494dc3f23604ab8ffb459ba6662d",
+      "date": "2025-10-13T12:54:37+02:00",
+      "author": "Saša Bolić",
+      "email": "sasa.bolic@sixhours.io",
+      "message": "Merge pull request #177 from sasabolic/bump-version\n\nUpdate readme docs and bump version to 2.5.3-SNAPSHOT"
+    },
+    {
+      "sha": "a09bf42a95be99dedb8af8c8ef35fc56e8161da5",
+      "date": "2025-10-13T12:50:29+02:00",
+      "author": "Saša Bolić",
+      "email": "sasa.bolic@sixhours.io",
+      "message": "Update readme docs and bump version to 2.5.3-SNAPSHOT\n"
+    },
+    {
+      "sha": "4e70f1f3984386b4dee6deaed4a954a1f576acd8",
+      "date": "2025-10-12T19:25:11+02:00",
+      "author": "Igor Bolic",
+      "email": "igor.bolic@sixhours.io",
+      "message": "Merge pull request #176 from igorbolic/du\n\nUpgrade client libraries version"
+    },
+    {
+      "sha": "b30e417c7ae62c6e5baaffd05130dca19ef83692",
+      "date": "2025-10-12T19:19:56+02:00",
+      "author": "Igor Bolic",
+      "email": "igor.bolic@sixhours.io",
+      "message": "Upgrade client libraries version\n"
+    },
+    {
+      "sha": "c7cbc7a89a66d368b40cd34ff3baadd92ec80434",
+      "date": "2025-10-12T17:06:51+02:00",
+      "author": "Igor Bolic",
+      "email": "igor.bolic@sixhours.io",
+      "message": "Merge pull request #173 from igorbolic/ossrh-to-central-publishing-portal\n\nMigrate from OSSRH to the Central Publishing Portal"
+    },
+    {
+      "sha": "847c71fcffc7cdc603ba937bc6733ffd635d79c3",
+      "date": "2025-10-12T12:53:10+02:00",
+      "author": "Igor Bolic",
+      "email": "igor.bolic@sixhours.io",
+      "message": "Migrate from OSSRH to the Central Publishing Portal\n"
+    }
+  ],
+  "commit_sha": "3e8ca1cc7babba1abba1788e5b238c641fc4a0d0",
+  "extracted_at": "2026-10-05T18:05:29.979829+00:00"
+}

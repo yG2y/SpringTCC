@@ -1,0 +1,25 @@
+{
+  "universe": 38456,
+  "universe_sha256": "a69e784858cef9ba93d0c017020b5d4733e7ec0390f077904501c673aa88d67f",
+  "universe_by_epoch": {
+    "E1": 20,
+    "E2": 520,
+    "E3": 3063,
+    "E4": 34853
+  },
+  "planned_by_epoch": {
+    "E1": 20,
+    "E2": 500,
+    "E3": 500,
+    "E4": 500
+  },
+  "planned": 1520,
+  "selection": "first min(500,N_epoch) in original stars/push/id order, all 20 E1",
+  "processing_order": "round_robin_epochs",
+  "inclusion_min_loc": 2000,
+  "primary_coverage": 1.0,
+  "exploratory_coverage": 0.95,
+  "ia_labels": "reclassify on measured commit, two levels, 30 latest commits",
+  "not_probability_sample": true,
+  "stopping_rule": "fixed list, independent of measured CK values or p-values"
+}

@@ -1,0 +1,242 @@
+{
+  "ia_status": "com_evidencia",
+  "ia_level": 2,
+  "ia_agents": "Claude Code",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "1fbc4e2bfa0a2048f0515bc94519c126fdfb4f1a",
+      "trailer": "Claude Opus 5.5 (1M context) <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "c98209aac437a43c6dd2c4e2957d56834bf53d04",
+      "trailer": "Claude Opus 4.6 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "bd58c2b49fb5f483f5b2520552d630fcb1b89f54",
+      "trailer": "Claude Fable 5.1 <noreply@anthropic.com>"
+    }
+  ],
+  "commits": [
+    {
+      "sha": "dc50378bb4ea7480facd7e058fa8a697325c0cd7",
+      "date": "2026-10-05T08:52:47+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump software.amazon.awssdk:cloudtrail from 2.55.6 to 2.55.10 (#283)\n\nBumps software.amazon.awssdk:cloudtrail from 2.55.6 to 2.55.10.\n\n---\nupdated-dependencies:\n- dependency-name: software.amazon.awssdk:cloudtrail\n  dependency-version: 2.55.10\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "309c0a987d409a27bf721edf54d91a7cb7fa76ba",
+      "date": "2026-10-02T15:14:09+02:00",
+      "author": "Luigi De Masi",
+      "email": "ldemasi@redhat.com",
+      "message": "CAMEL-24977: Add semantic agent routing example with Camel A2A\n\nCoordinate multi-intent requests with batched semantic decisions, parallel\nspecialist calls over A2A, bounded reply checks, and a checked merge.\nKeep the coordinator and all specialists in Camel with YAML routes and\nan OpenAI-compatible generation service.\n\nProvide Maven and JBang startup, Bash and PowerShell launchers, a local\nenvironment template, fixture tests, and opt-in decision evaluations.\nDocument Jev, Laya, and Julia-1 setup and license boundaries, with a\nconceptual overview and three live Camel TUI screenshots of the routes.\n\nSigned-off-by: Luigi De Masi <ldemasi@redhat.com>\n"
+    },
+    {
+      "sha": "1fbc4e2bfa0a2048f0515bc94519c126fdfb4f1a",
+      "date": "2026-10-02T15:26:13+02:00",
+      "author": "Claus Ibsen",
+      "email": "claus.ibsen@gmail.com",
+      "message": "CAMEL-24739: Fix the spiffe example for fetchX509Svid keeping the private key off the message (#282)\n\nSince CAMEL-24739, fetchX509Svid puts only the certificate chain on the body by default and the\nSPIFFE ID in the CamelSpiffeSpiffeId header. X509SvidSummary still expected an X509Svid, the bean\ncall failed, the route's onException handled it, and IdentityRoutesTest saw the raw certificate\ninstead of the summary.\n\nDescribe the chain and the header instead, which follows the new default rather than opting back\nin to the private key with x509Response=svid. Update the route comment and the README.\n\n\nClaude-Session: https://claude.ai/code/session_01STT6whBgK1AqsSsUKrnE8m\n\nCo-authored-by: Claude Opus 5.5 (1M context) <noreply@anthropic.com>"
+    },
+    {
+      "sha": "3c21d73fd3bed1e9b0324b155466b45858df10d0",
+      "date": "2026-10-01T09:06:43Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump software.amazon.awssdk:cloudtrail from 2.55.1 to 2.55.6\n\nBumps software.amazon.awssdk:cloudtrail from 2.55.1 to 2.55.6.\n\n---\nupdated-dependencies:\n- dependency-name: software.amazon.awssdk:cloudtrail\n  dependency-version: 2.55.6\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "19ed56c8ba5305644162eaea8d6f3385311117b8",
+      "date": "2026-09-25T09:26:49+02:00",
+      "author": "Aurélien Pupier",
+      "email": "apupier@ibm.com",
+      "message": "Minio deprecation and IT test disabled\n\nMinIO was deprecated in 4.23. The upstream project is closed and\ncontainer images were aggressively removed from registries.\n\nSigned-off-by: Aurélien Pupier <apupier@ibm.com>"
+    },
+    {
+      "sha": "f52cbc73f2dc0c5b58081f9d756af603a250df92",
+      "date": "2026-09-22T05:45:06Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.apache.maven.plugins:maven-dependency-plugin\n\nBumps [org.apache.maven.plugins:maven-dependency-plugin](https://github.com/apache/maven-dependency-plugin) from 3.8.1 to 3.11.0.\n- [Release notes](https://github.com/apache/maven-dependency-plugin/releases)\n- [Commits](https://github.com/apache/maven-dependency-plugin/compare/maven-dependency-plugin-3.8.1...maven-dependency-plugin-3.11.0)\n\n---\nupdated-dependencies:\n- dependency-name: org.apache.maven.plugins:maven-dependency-plugin\n  dependency-version: 3.11.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "95c96ad4d1da44a995fb69bbfcc920f2f433aee0",
+      "date": "2026-09-22T05:44:34Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump software.amazon.awssdk:cloudtrail from 2.55.0 to 2.55.1\n\nBumps software.amazon.awssdk:cloudtrail from 2.55.0 to 2.55.1.\n\n---\nupdated-dependencies:\n- dependency-name: software.amazon.awssdk:cloudtrail\n  dependency-version: 2.55.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "391f9135b65bbc28e45f3db1b4de5e0544fa80cc",
+      "date": "2026-09-21T14:27:02+02:00",
+      "author": "Torsten Mielke",
+      "email": "tmielke@ibm.com",
+      "message": "CAMEL-22986: Use official kamelets from camel-kamelets catalog JAR\n\nPrevious commit missed to include\nsrc/main/resources/camel/my-route.camel.yaml\n"
+    },
+    {
+      "sha": "c98209aac437a43c6dd2c4e2957d56834bf53d04",
+      "date": "2026-09-17T13:27:37+02:00",
+      "author": "Torsten Mielke",
+      "email": "tmielke@ibm.com",
+      "message": "CAMEL-22986: Use official kamelets from camel-kamelets catalog JAR\n\nReworked the kamelet-chucknorris example to use the official\nchuck-norris-source kamelet from the camel-kamelets catalog JAR\ninstead of bundling a custom kamelet YAML file locally.\n\n- Added camel-kamelets dependency to load official kamelets from classpath\n- Converted route definition from XML DSL to YAML DSL\n- Removed custom chuck-norris-source.kamelet.yaml\n- Added MyApplication.java for standalone Camel Main bootstrap\n- Added explicit component dependencies (timer, http, jsonpath) needed\n  by the kamelet at runtime\n\nCo-authored-by: Claude Opus 4.6 <noreply@anthropic.com>\n"
+    },
+    {
+      "sha": "1a2a74ea8edc2ea2b254d088ca711cdc082fea0b",
+      "date": "2026-09-21T08:56:29Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump software.amazon.awssdk:cloudtrail from 2.54.16 to 2.55.0\n\nBumps software.amazon.awssdk:cloudtrail from 2.54.16 to 2.55.0.\n\n---\nupdated-dependencies:\n- dependency-name: software.amazon.awssdk:cloudtrail\n  dependency-version: 2.55.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "c23aa434df342f8cec8a8db7a6a2842c5e85c5ab",
+      "date": "2026-09-15T05:44:31Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.codehaus.mojo:build-helper-maven-plugin from 3.6.1 to 3.6.2\n\nBumps [org.codehaus.mojo:build-helper-maven-plugin](https://github.com/mojohaus/build-helper-maven-plugin) from 3.6.1 to 3.6.2.\n- [Release notes](https://github.com/mojohaus/build-helper-maven-plugin/releases)\n- [Commits](https://github.com/mojohaus/build-helper-maven-plugin/compare/3.6.1...3.6.2)\n\n---\nupdated-dependencies:\n- dependency-name: org.codehaus.mojo:build-helper-maven-plugin\n  dependency-version: 3.6.2\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "99d740fdcff4f1c5ed35e134caec939cbdb9460e",
+      "date": "2026-09-08T05:44:09Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.apache.maven.plugins:maven-dependency-plugin\n\nBumps [org.apache.maven.plugins:maven-dependency-plugin](https://github.com/apache/maven-dependency-plugin) from 3.8.1 to 3.11.0.\n- [Release notes](https://github.com/apache/maven-dependency-plugin/releases)\n- [Commits](https://github.com/apache/maven-dependency-plugin/compare/maven-dependency-plugin-3.8.1...maven-dependency-plugin-3.11.0)\n\n---\nupdated-dependencies:\n- dependency-name: org.apache.maven.plugins:maven-dependency-plugin\n  dependency-version: 3.11.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "268fb15e40286b728b804bdacb7f33bf177d0b9b",
+      "date": "2026-09-21T10:16:13+02:00",
+      "author": "Andrea Cosentino",
+      "email": "ancosen@gmail.com",
+      "message": "ci: fix main-joor example to use the java language (#270)\n\nThe joor() DSL method was removed in Camel 4.23; the jOOR-backed language is now named java and called with java(). Switch MyRouteBuilder to java(), keep the camel-joor dependency and camel-joor.properties (still read by the java language), and update the README and test wording."
+    },
+    {
+      "sha": "e4e8e66b0750190d197e56f139441be4aec59f79",
+      "date": "2026-09-17T18:09:04+02:00",
+      "author": "Andrea Cosentino",
+      "email": "ancosen@gmail.com",
+      "message": "Add AI tools example with SPIFFE identity and in-process OPA/WASM authorization (#269)\n\nA Camel LangChain4j agent whose tools are authorized before they run by an Open Policy Agent policy evaluated in-process as WebAssembly (the camel-opa wasm client), with SPIFFE (camel-spiffe) authenticating the calling workload. It shows prompt-injection containment: a caller talked into asking the model for a refund is denied by the guard, so the refund never happens."
+    },
+    {
+      "sha": "315d5779fbc834ab54ebe7f5dffc898c0591d66e",
+      "date": "2026-09-14T10:23:13+02:00",
+      "author": "Andrea Cosentino",
+      "email": "ancosen@gmail.com",
+      "message": "CAMEL-24634: Authorize with camel-opa in the camel-spiffe example (#264)\n\nSPIFFE keeps authenticating the callers; Open Policy Agent now decides\nwhat an authenticated caller may do. The shared workload identity policy\nsends the SPIFFE ID of the caller and the route id to OPA, the allow-lists\nmove from application.properties to Rego policies with their own tests,\nand Compose gains an OPA server that reloads the policies when they\nchange. A policy that cannot be evaluated is answered with HTTP 503."
+    },
+    {
+      "sha": "4285ba44c81e935e79e324b983cf7f5bedc10de8",
+      "date": "2026-09-14T05:45:49Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump software.amazon.awssdk:cloudtrail from 2.54.12 to 2.54.16\n\nBumps software.amazon.awssdk:cloudtrail from 2.54.12 to 2.54.16.\n\n---\nupdated-dependencies:\n- dependency-name: software.amazon.awssdk:cloudtrail\n  dependency-version: 2.54.16\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "ece047fb9d5d0ed3a44b4512fa5a0940afa5371d",
+      "date": "2026-09-07T21:11:39+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump software.amazon.awssdk:cloudtrail from 2.54.9 to 2.54.12 (#261)\n\nBumps software.amazon.awssdk:cloudtrail from 2.54.9 to 2.54.12.\n\n---\nupdated-dependencies:\n- dependency-name: software.amazon.awssdk:cloudtrail\n  dependency-version: 2.54.12\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "bd58c2b49fb5f483f5b2520552d630fcb1b89f54",
+      "date": "2026-09-07T16:18:43+02:00",
+      "author": "Andrea Cosentino",
+      "email": "ancosen@gmail.com",
+      "message": "CAMEL-23305: Add camel-spiffe example (workload identity with SPIFFE and SPIRE) (#260)\n\nA Docker Compose example for the camel-spiffe component: a SPIRE server\nand agent issue identities to four Camel Main applications, which\nauthenticate each other with JWT-SVIDs (fetchJwtSvid / validateJwtSvid),\nauthorize by SPIFFE ID with per-route allow-lists in a shared route\nconfiguration, make a second hop with their own identity, and log their\nrotating X.509-SVIDs (fetchX509Svid).\n\nCo-authored-by: Claude Fable 5.1 <noreply@anthropic.com>"
+    },
+    {
+      "sha": "27fbf52aff1578656e7b3a3929e650b8034a7f6e",
+      "date": "2026-09-04T05:44:07Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump software.amazon.awssdk:cloudtrail from 2.54.3 to 2.54.9\n\nBumps software.amazon.awssdk:cloudtrail from 2.54.3 to 2.54.9.\n\n---\nupdated-dependencies:\n- dependency-name: software.amazon.awssdk:cloudtrail\n  dependency-version: 2.54.9\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "fe067ca8f424166c628bdd1f33d6897d013bc553",
+      "date": "2026-09-03T05:45:09Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.apache.maven.plugins:maven-compiler-plugin\n\nBumps [org.apache.maven.plugins:maven-compiler-plugin](https://github.com/apache/maven-compiler-plugin) from 3.15.0 to 3.16.0.\n- [Release notes](https://github.com/apache/maven-compiler-plugin/releases)\n- [Commits](https://github.com/apache/maven-compiler-plugin/compare/maven-compiler-plugin-3.15.0...maven-compiler-plugin-3.16.0)\n\n---\nupdated-dependencies:\n- dependency-name: org.apache.maven.plugins:maven-compiler-plugin\n  dependency-version: 3.16.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "71cbcafc27a27e54c1bd6b6cba2988ac4092dec1",
+      "date": "2026-08-27T15:55:49+02:00",
+      "author": "Aurélien Pupier",
+      "email": "apupier@ibm.com",
+      "message": "Removal of csimple language\n\nsee https://github.com/apache/camel/pull/25807\n\nSigned-off-by: Aurélien Pupier <apupier@ibm.com>"
+    },
+    {
+      "sha": "d50a8db7fc6afdf5dc86e5ea44057a7f6657baca",
+      "date": "2026-08-28T05:44:32Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump software.amazon.awssdk:cloudtrail from 2.54.2 to 2.54.3\n\nBumps software.amazon.awssdk:cloudtrail from 2.54.2 to 2.54.3.\n\n---\nupdated-dependencies:\n- dependency-name: software.amazon.awssdk:cloudtrail\n  dependency-version: 2.54.3\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "03f89ac18cb4f7cd2340c5ac910751bbd67c3796",
+      "date": "2026-08-27T05:44:20Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump actions/setup-java from 5 to 6\n\nBumps [actions/setup-java](https://github.com/actions/setup-java) from 5 to 6.\n- [Release notes](https://github.com/actions/setup-java/releases)\n- [Commits](https://github.com/actions/setup-java/compare/v5...v6)\n\n---\nupdated-dependencies:\n- dependency-name: actions/setup-java\n  dependency-version: '6'\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "61f57ff86ba06e187c47ae7732c50f964bc9053b",
+      "date": "2026-08-25T05:44:04Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump software.amazon.awssdk:cloudtrail from 2.51.2 to 2.54.2\n\nBumps software.amazon.awssdk:cloudtrail from 2.51.2 to 2.54.2.\n\n---\nupdated-dependencies:\n- dependency-name: software.amazon.awssdk:cloudtrail\n  dependency-version: 2.54.2\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "c706350c063039f83a9265598a4e36255d9eb610",
+      "date": "2026-08-11T15:09:07+02:00",
+      "author": "Claus Ibsen",
+      "email": "claus.ibsen@gmail.com",
+      "message": "Bump for next version\n"
+    },
+    {
+      "sha": "b2607b32bf087aff3c916e306edc559b7eb9d95b",
+      "date": "2026-08-10T10:01:46+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump software.amazon.awssdk:cloudtrail from 2.49.4 to 2.51.2 (#243)\n\nBumps software.amazon.awssdk:cloudtrail from 2.49.4 to 2.51.2.\n\n---\nupdated-dependencies:\n- dependency-name: software.amazon.awssdk:cloudtrail\n  dependency-version: 2.51.2\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "c4168ba76cc735475acb4444e8ad1a2161d0097f",
+      "date": "2026-07-28T05:44:16Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump software.amazon.awssdk:cloudtrail from 2.49.3 to 2.49.4\n\nBumps software.amazon.awssdk:cloudtrail from 2.49.3 to 2.49.4.\n\n---\nupdated-dependencies:\n- dependency-name: software.amazon.awssdk:cloudtrail\n  dependency-version: 2.49.4\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "a8ed2e8938488eede4a55bbde9269225fe7e5d7b",
+      "date": "2026-07-27T05:45:31Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump software.amazon.awssdk:cloudtrail from 2.49.2 to 2.49.3\n\nBumps software.amazon.awssdk:cloudtrail from 2.49.2 to 2.49.3.\n\n---\nupdated-dependencies:\n- dependency-name: software.amazon.awssdk:cloudtrail\n  dependency-version: 2.49.3\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "3344547f8ba58de11efca3f78f4e38b0a674f73a",
+      "date": "2026-07-27T05:46:04Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.codehaus.mojo:flatten-maven-plugin from 1.7.3 to 1.8.0\n\nBumps [org.codehaus.mojo:flatten-maven-plugin](https://github.com/mojohaus/flatten-maven-plugin) from 1.7.3 to 1.8.0.\n- [Release notes](https://github.com/mojohaus/flatten-maven-plugin/releases)\n- [Commits](https://github.com/mojohaus/flatten-maven-plugin/compare/1.7.3...1.8.0)\n\n---\nupdated-dependencies:\n- dependency-name: org.codehaus.mojo:flatten-maven-plugin\n  dependency-version: 1.8.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "96b21218f9fe0da88042fc3fe5ba9a5be2ae8f4e",
+      "date": "2026-07-24T05:44:07Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump software.amazon.awssdk:cloudtrail from 2.49.1 to 2.49.2\n\nBumps software.amazon.awssdk:cloudtrail from 2.49.1 to 2.49.2.\n\n---\nupdated-dependencies:\n- dependency-name: software.amazon.awssdk:cloudtrail\n  dependency-version: 2.49.2\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    }
+  ],
+  "commit_sha": "dc50378bb4ea7480facd7e058fa8a697325c0cd7",
+  "extracted_at": "2026-10-05T18:24:08.867578+00:00"
+}

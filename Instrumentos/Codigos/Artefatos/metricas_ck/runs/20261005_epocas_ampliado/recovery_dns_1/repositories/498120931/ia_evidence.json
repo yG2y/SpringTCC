@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "0e7cc22cb0d09ed8cc5f091ecb4ad94b48d5dd6c",
+      "date": "2026-09-24T18:57:08-04:00",
+      "author": "Loiane Groner",
+      "email": "loianeg@gmail.com",
+      "message": "Merge pull request #651 from loiane/loiane/repo-improvement-suggestions\n\nBroaden RFC 7807 error handling for type mismatch and missing params"
+    },
+    {
+      "sha": "66c6b72da4861081dbd9f97cb1ab55516f257736",
+      "date": "2026-09-24T18:50:12-04:00",
+      "author": "Loiane",
+      "email": "loianeg@gmail.com",
+      "message": "feat(errors): return RFC 7807 problem details for type mismatch and missing params\n\nAdd ApplicationControllerAdvice handlers for MethodArgumentTypeMismatchException\nand MissingServletRequestParameterException so invalid @PathVariable/@RequestParam\nvalues (e.g. non-numeric id or pageSize) and missing required query params return\na consistent RFC 7807 Problem Detail body instead of Spring Boot's default error\nformat. pageSize was already capped via @Max(1000) on CourseService#findAll.\n"
+    },
+    {
+      "sha": "14e4ec5e5106f4f98f75f69f02c088af421a4273",
+      "date": "2026-09-22T11:13:47-04:00",
+      "author": "Loiane Groner",
+      "email": "loianeg@gmail.com",
+      "message": "Merge pull request #647 from loiane/dependabot/npm_and_yarn/crud-angular/prettier-3.9.8\n\nchore(deps-dev): bump prettier from 3.9.6 to 3.9.8 in /crud-angular"
+    },
+    {
+      "sha": "c7ae3c9a199818e223b5627732263400ab6b097d",
+      "date": "2026-09-22T11:13:32-04:00",
+      "author": "Loiane",
+      "email": "loianeg@gmail.com",
+      "message": "Merge remote-tracking branch 'origin/main' into dependabot/npm_and_yarn/crud-angular/prettier-3.9.8\n\n# Conflicts:\n#\tcrud-angular/package-lock.json\n#\tcrud-angular/package.json\n"
+    },
+    {
+      "sha": "fa2de74e98a3426fe97c43701c9ba3ba46cae0b1",
+      "date": "2026-09-22T11:12:32-04:00",
+      "author": "Loiane Groner",
+      "email": "loianeg@gmail.com",
+      "message": "Merge pull request #646 from loiane/dependabot/npm_and_yarn/crud-angular/pact-foundation/pact-17.1.4\n\nchore(deps-dev): bump @pact-foundation/pact from 17.1.3 to 17.1.4 in /crud-angular"
+    },
+    {
+      "sha": "e4574077d16badfadcc1c778441e29dcf7d8c6e5",
+      "date": "2026-09-22T11:12:26-04:00",
+      "author": "Loiane Groner",
+      "email": "loianeg@gmail.com",
+      "message": "Merge pull request #650 from loiane/dependabot/npm_and_yarn/crud-angular/jsdom-30.1.0\n\nchore(deps-dev): bump jsdom from 30.0.1 to 30.1.0 in /crud-angular"
+    },
+    {
+      "sha": "283c2cb44b806cf2397ce74dae455ebf50e190a4",
+      "date": "2026-09-21T19:14:26Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "chore(deps-dev): bump jsdom from 30.0.1 to 30.1.0 in /crud-angular\n\nBumps [jsdom](https://github.com/jsdom/jsdom) from 30.0.1 to 30.1.0.\n- [Release notes](https://github.com/jsdom/jsdom/releases)\n- [Commits](https://github.com/jsdom/jsdom/compare/v30.0.1...v30.1.0)\n\n---\nupdated-dependencies:\n- dependency-name: jsdom\n  dependency-version: 30.1.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "0d66ab55cfd224972d763cf4a098490c658f42f3",
+      "date": "2026-09-21T19:13:51Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "chore(deps-dev): bump prettier from 3.9.6 to 3.9.8 in /crud-angular\n\nBumps [prettier](https://github.com/prettier/prettier) from 3.9.6 to 3.9.8.\n- [Release notes](https://github.com/prettier/prettier/releases)\n- [Changelog](https://github.com/prettier/prettier/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/prettier/prettier/compare/3.9.6...3.9.8)\n\n---\nupdated-dependencies:\n- dependency-name: prettier\n  dependency-version: 3.9.8\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "05da485109ffd29ccb0d9c57af73e32b5fa77528",
+      "date": "2026-09-21T19:13:45Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "chore(deps-dev): bump @pact-foundation/pact in /crud-angular\n\nBumps [@pact-foundation/pact](https://github.com/pact-foundation/pact-js) from 17.1.3 to 17.1.4.\n- [Release notes](https://github.com/pact-foundation/pact-js/releases)\n- [Changelog](https://github.com/pact-foundation/pact-js/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/pact-foundation/pact-js/compare/v17.1.3...v17.1.4)\n\n---\nupdated-dependencies:\n- dependency-name: \"@pact-foundation/pact\"\n  dependency-version: 17.1.4\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "1cda97ec5a593dc5aed3471761877a52ae72f8f6",
+      "date": "2026-09-20T11:58:05-04:00",
+      "author": "Loiane Groner",
+      "email": "loianeg@gmail.com",
+      "message": "Merge pull request #640 from loiane/dependabot/npm_and_yarn/crud-angular/hono-4.13.7\n\nchore(deps-dev): bump hono from 4.13.1 to 4.13.7 in /crud-angular"
+    },
+    {
+      "sha": "b45624c5780e80594386f75cb2023d9eebf53a85",
+      "date": "2026-09-20T11:54:41-04:00",
+      "author": "Loiane",
+      "email": "loianeg@gmail.com",
+      "message": "Merge remote-tracking branch 'origin/main' into dependabot/npm_and_yarn/crud-angular/hono-4.13.7\n"
+    },
+    {
+      "sha": "4ff47ff80c0795567a0803156ab8455e4adfa26a",
+      "date": "2026-09-20T11:44:27-04:00",
+      "author": "Loiane Groner",
+      "email": "loianeg@gmail.com",
+      "message": "Merge pull request #643 from loiane/dependabot/maven/crud-spring/org.springdoc-springdoc-openapi-starter-webmvc-ui-3.1.1\n\nchore(deps): bump org.springdoc:springdoc-openapi-starter-webmvc-ui from 3.1.0 to 3.1.1 in /crud-spring"
+    },
+    {
+      "sha": "0461be609bfa7879b791877b39595118147d2125",
+      "date": "2026-09-20T11:29:13-04:00",
+      "author": "Loiane",
+      "email": "loianeg@gmail.com",
+      "message": "Merge remote-tracking branch 'origin/main' into dependabot/maven/crud-spring/org.springdoc-springdoc-openapi-starter-webmvc-ui-3.1.1\n"
+    },
+    {
+      "sha": "7f955553536e75b466bf7df040550916c0b853a6",
+      "date": "2026-09-18T11:31:36-04:00",
+      "author": "Loiane Groner",
+      "email": "loianeg@gmail.com",
+      "message": "Merge pull request #639 from loiane/dependabot/npm_and_yarn/crud-angular/jsdom-30.0.1\n\nchore(deps-dev): bump jsdom from 29.1.1 to 30.0.1 in /crud-angular"
+    },
+    {
+      "sha": "40e3b536bd5355b7385af0fd0ea2c8560a26b1c3",
+      "date": "2026-09-18T11:27:32-04:00",
+      "author": "Loiane Groner",
+      "email": "loianeg@gmail.com",
+      "message": "Merge pull request #645 from loiane/chore-ng-update-5508c00\n\nchore(ng-update): update angular dependencies"
+    },
+    {
+      "sha": "0ffcd5b3310ec328a661934c6ff5d56ff56c8db8",
+      "date": "2026-09-18T12:46:59Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "chore(deps-dev): bump jsdom from 29.1.1 to 30.0.1 in /crud-angular\n\nBumps [jsdom](https://github.com/jsdom/jsdom) from 29.1.1 to 30.0.1.\n- [Release notes](https://github.com/jsdom/jsdom/releases)\n- [Commits](https://github.com/jsdom/jsdom/compare/v29.1.1...v30.0.1)\n\n---\nupdated-dependencies:\n- dependency-name: jsdom\n  dependency-version: 30.0.1\n  dependency-type: direct:development\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "3923ca3a9d329f1988b74824ac485165166a06f9",
+      "date": "2026-09-18T12:46:12Z",
+      "author": "ng-update[bot]",
+      "email": "ng-update@users.noreply.github.com",
+      "message": "chore(ng-update): update angular dependencies\n"
+    },
+    {
+      "sha": "841ba775e274f054b1c2589b6b5206a7a9362804",
+      "date": "2026-09-18T08:44:44-04:00",
+      "author": "Loiane Groner",
+      "email": "loianeg@gmail.com",
+      "message": "Merge pull request #644 from loiane/loiane/ci-failure\n\nfix: align vitest with angular build"
+    },
+    {
+      "sha": "d97f0a430f9adf51017eb60879489e5f11ed2628",
+      "date": "2026-09-18T08:44:10-04:00",
+      "author": "Loiane",
+      "email": "loianeg@gmail.com",
+      "message": "fix: align vitest with angular build\n"
+    },
+    {
+      "sha": "03bf52d9d42552c0658eb162b749885c0b1c8ef8",
+      "date": "2026-09-14T19:13:13Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "chore(deps): bump org.springdoc:springdoc-openapi-starter-webmvc-ui\n\nBumps [org.springdoc:springdoc-openapi-starter-webmvc-ui](https://github.com/springdoc/springdoc-openapi) from 3.1.0 to 3.1.1.\n- [Release notes](https://github.com/springdoc/springdoc-openapi/releases)\n- [Changelog](https://github.com/springdoc/springdoc-openapi/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/springdoc/springdoc-openapi/compare/v3.1.0...v3.1.1)\n\n---\nupdated-dependencies:\n- dependency-name: org.springdoc:springdoc-openapi-starter-webmvc-ui\n  dependency-version: 3.1.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "dbaa1856b6f6b0cef5f98f46d2f276b130c343db",
+      "date": "2026-09-10T00:53:24Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "chore(deps-dev): bump hono from 4.13.1 to 4.13.7 in /crud-angular\n\nBumps [hono](https://github.com/honojs/hono) from 4.13.1 to 4.13.7.\n- [Release notes](https://github.com/honojs/hono/releases)\n- [Commits](https://github.com/honojs/hono/compare/v4.13.1...v4.13.7)\n\n---\nupdated-dependencies:\n- dependency-name: hono\n  dependency-version: 4.13.7\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "5065780a703014005a8fc63c76cbf5b9fdccb112",
+      "date": "2026-09-08T13:01:18-04:00",
+      "author": "Loiane Groner",
+      "email": "loianeg@gmail.com",
+      "message": "Merge pull request #638 from loiane/dependabot/npm_and_yarn/crud-angular/vitest-5.0.0\n\nchore(deps-dev): bump vitest from 4.1.11 to 5.0.0 in /crud-angular"
+    },
+    {
+      "sha": "667b44aa5daf2b54c235c98ac7e31339aa851219",
+      "date": "2026-09-07T19:13:13Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "chore(deps-dev): bump vitest from 4.1.11 to 5.0.0 in /crud-angular\n\nBumps [vitest](https://github.com/vitest-dev/vitest/tree/HEAD/packages/vitest) from 4.1.11 to 5.0.0.\n- [Release notes](https://github.com/vitest-dev/vitest/releases)\n- [Changelog](https://github.com/vitest-dev/vitest/blob/main/docs/releases.md)\n- [Commits](https://github.com/vitest-dev/vitest/commits/v5.0.0/packages/vitest)\n\n---\nupdated-dependencies:\n- dependency-name: vitest\n  dependency-version: 5.0.0\n  dependency-type: direct:development\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "96f4dd3f9e13c150effb9721f1be2447e768eed1",
+      "date": "2026-09-04T10:16:14-04:00",
+      "author": "Loiane Groner",
+      "email": "loianeg@gmail.com",
+      "message": "Merge pull request #630 from loiane/dependabot/npm_and_yarn/crud-angular/stryker-mutator/vitest-runner-10.0.0\n\nchore(deps-dev): bump @stryker-mutator/vitest-runner from 9.6.1 to 10.0.0 in /crud-angular"
+    },
+    {
+      "sha": "f29090963c2aa79ab5e45669f1e795d98ed3ce6f",
+      "date": "2026-09-04T10:16:10-04:00",
+      "author": "Loiane Groner",
+      "email": "loianeg@gmail.com",
+      "message": "Merge pull request #626 from loiane/dependabot/npm_and_yarn/crud-angular/stryker-mutator/core-10.0.0\n\nchore(deps-dev): bump @stryker-mutator/core from 9.6.1 to 10.0.0 in /crud-angular"
+    },
+    {
+      "sha": "55aea58afbe5a53e9ae5a95c3cad3aaf7807d2bf",
+      "date": "2026-09-04T09:45:14-04:00",
+      "author": "Loiane",
+      "email": "loianeg@gmail.com",
+      "message": "chore: align Stryker deps to v10\n"
+    },
+    {
+      "sha": "ddb25e569fb78df22b531182ea1ca35509366e85",
+      "date": "2026-09-04T09:45:10-04:00",
+      "author": "Loiane",
+      "email": "loianeg@gmail.com",
+      "message": "chore: align Stryker deps to v10\n"
+    },
+    {
+      "sha": "f8ee97fb49664fdd63e198b4ef4cdaac759110a6",
+      "date": "2026-09-04T13:40:23Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "chore(deps-dev): bump @stryker-mutator/vitest-runner in /crud-angular\n\nBumps [@stryker-mutator/vitest-runner](https://github.com/stryker-mutator/stryker-js/tree/HEAD/packages/vitest-runner) from 9.6.1 to 10.0.0.\n- [Release notes](https://github.com/stryker-mutator/stryker-js/releases)\n- [Changelog](https://github.com/stryker-mutator/stryker-js/blob/master/packages/vitest-runner/CHANGELOG.md)\n- [Commits](https://github.com/stryker-mutator/stryker-js/commits/v10.0.0/packages/vitest-runner)\n\n---\nupdated-dependencies:\n- dependency-name: \"@stryker-mutator/vitest-runner\"\n  dependency-version: 10.0.0\n  dependency-type: direct:development\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "b39c4ae575295c5f4068d9d838d936f707675d3f",
+      "date": "2026-09-04T13:40:06Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "chore(deps-dev): bump @stryker-mutator/core in /crud-angular\n\nBumps [@stryker-mutator/core](https://github.com/stryker-mutator/stryker-js/tree/HEAD/packages/core) from 9.6.1 to 10.0.0.\n- [Release notes](https://github.com/stryker-mutator/stryker-js/releases)\n- [Changelog](https://github.com/stryker-mutator/stryker-js/blob/master/packages/core/CHANGELOG.md)\n- [Commits](https://github.com/stryker-mutator/stryker-js/commits/v10.0.0/packages/core)\n\n---\nupdated-dependencies:\n- dependency-name: \"@stryker-mutator/core\"\n  dependency-version: 10.0.0\n  dependency-type: direct:development\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "3a10e6138250b314ce4d47c2b982075db8519fbc",
+      "date": "2026-09-04T09:38:12-04:00",
+      "author": "Loiane Groner",
+      "email": "loianeg@gmail.com",
+      "message": "Merge pull request #629 from loiane/dependabot/npm_and_yarn/crud-angular/pact-foundation/pact-17.1.2\n\nchore(deps-dev): bump @pact-foundation/pact from 17.0.1 to 17.1.3 in /crud-angular"
+    }
+  ],
+  "commit_sha": "0e7cc22cb0d09ed8cc5f091ecb4ad94b48d5dd6c",
+  "extracted_at": "2026-10-05T18:12:45.362103+00:00"
+}

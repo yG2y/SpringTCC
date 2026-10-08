@@ -1,0 +1,92 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "1.0.1.RELEASE;1.5.3.RELEASE;3.2.0;3.4.2",
+  "spring_boot_major": "multiple",
+  "java_versions_declared": "${java.version};1.8;11",
+  "build_evidence": [
+    {
+      "file": "boot-on-docker/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "boot-on-docker/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "boot-on-docker/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "boot-on-docker/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "boot-on-docker/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "bootWithMango/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "bootWithMango/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "bootWithMango/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb"
+    },
+    {
+      "file": "bootWithMango/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "multi-moduled-app/core/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "multi-moduled-app/core/pom.xml",
+      "artifact": "spring-boot-starter-logging"
+    },
+    {
+      "file": "multi-moduled-app/core/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "multi-moduled-app/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "multi-moduled-app/web/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "multi-moduled-app/web/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "multi-moduled-app/web/pom.xml",
+      "artifact": "spring-boot-starter-logging"
+    },
+    {
+      "file": "multi-moduled-app/web/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "multi-moduled-app/web/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-msa-mq/consumer-app/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "spring-msa-mq/producer-app/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "todo-java-api/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    }
+  ]
+}

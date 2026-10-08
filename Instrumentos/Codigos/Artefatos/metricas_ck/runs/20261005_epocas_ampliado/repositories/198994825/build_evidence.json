@@ -1,0 +1,68 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "3.3.13",
+  "spring_boot_major": "3",
+  "java_versions_declared": "${java.version};17",
+  "build_evidence": [
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "yue-library-base/pom.xml",
+      "artifact": "spring-boot-starter-json"
+    },
+    {
+      "file": "yue-library-base/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "yue-library-base/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "yue-library-base/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "yue-library-samples/yue-library-test-webflux/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "yue-library-samples/yue-library-test-webflux/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "yue-library-samples/yue-library-test-webflux/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "yue-library-samples/yue-library-test/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "yue-library-samples/yue-library-test/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "yue-library-samples/yue-library-test/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "yue-library-web/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "yue-library-web/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "yue-library-webflux/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    }
+  ]
+}

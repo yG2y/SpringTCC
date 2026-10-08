@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "bf5095fdefeba1263b39882bd9d2ae4978b801c8",
+      "date": "2026-06-25T12:31:34+08:00",
+      "author": "jonlu",
+      "email": "lujiafayx@163.com",
+      "message": "ExceptionViewBuilder的Bean定义上添加@ConditionalOnProperty注解\n"
+    },
+    {
+      "sha": "b1ce29a5f1b0f00e31f9e8f4bc215d6f10ffcdef",
+      "date": "2026-06-25T10:28:43+08:00",
+      "author": "jonlu",
+      "email": "lujiafayx@163.com",
+      "message": "fix(web): SmartErrorView 非HTML分支写 errorCode 而非空 model（修复统一异常 JSON 响应体丢失 code/message）\n"
+    },
+    {
+      "sha": "3be24c01d854157b83b9c7711f3dd07e2dee752d",
+      "date": "2026-06-25T10:04:21+08:00",
+      "author": "jonlu",
+      "email": "lujiafayx@163.com",
+      "message": "refactor(web): 抽取 ExceptionViewBuilder 统一异常视图构建，hasSuccess 上移至 BaseResponseData\n"
+    },
+    {
+      "sha": "ddfe67999b7888f82af9c37ee44776dd0aef4cee",
+      "date": "2026-06-24T17:43:52+08:00",
+      "author": "jonlu",
+      "email": "lujiafayx@163.com",
+      "message": "feat(feign): FeignRequestMappingHandlerMapping 沿用父级 ApiVersionStrategy\n\nFeignProviderAutoConfiguration 复制父 requestMappingHandlerMapping 的\napiVersionStrategy（非空才设），使显式声明 version 且配置了 API 版本机制的\nfeign 端点在 Spring 7 下也能正确发布。Spring 7 专属，仅 main 分支。\n"
+    },
+    {
+      "sha": "0de47fa2c7b28f0f1c233bdd1d59e56ae579897e",
+      "date": "2026-06-24T17:43:37+08:00",
+      "author": "jonlu",
+      "email": "lujiafayx@163.com",
+      "message": "fix: 修正 CharConstant.EMPTY 为空串（原为 NUL 字符 0x00）\n\nCharConstant.EMPTY 此前定义为 Character.toString(0x00)，即 NUL 字符而非空串，\nStringUtils.hasText 判其为\"有文本\"。Spring 7 下 FeignRequestMappingHandlerMapping\n的匿名 @RequestMapping.version() 返回该值，触发 RequestMappingInfo.build() 的\n\"API version specified, but no ApiVersionStrategy configured\" 断言，致所有\n@AutoFeign provider 上下文启动失败；该 NUL 值在 URL/路径/日志拼接处亦为隐患。\n\n改为真正空串 \"\"，并移除仅用于派生 EMPTY 的 EMPTY_CHAR 字段。\n"
+    },
+    {
+      "sha": "30c03f697250667b336e0be1a4cf1a34eb87c4bd",
+      "date": "2026-06-24T10:21:17+08:00",
+      "author": "jonlu",
+      "email": "lujiafayx@163.com",
+      "message": "feat: 升级至 4.0.0，适配 Spring Boot 4.0 / Spring Cloud 2025.1\n\n- 版本：Spring Boot 4.0.7、Spring Cloud 2025.1.0、Spring Cloud Alibaba 2025.1.0.0、\n  Redisson 4.6.1（redisson-spring-data-40）、jakarta.xml.bind-api 4.0.5、\n  commons-lang3 3.20.0、springdoc-openapi 3.0.3；项目版本 3.5.3 → 4.0.0\n- README 中英双份：徽章、BOM 示例、版本兼容性表新增 4.0.0 行、核心依赖版本更新\n- 适配 Spring Boot 4 / Spring Framework 7 破坏性变更：\n  - starter 更名 spring-boot-starter-aop → -aspectj\n  - 自动配置包拆分/类改名（DataRedisAutoConfiguration/DataRedisProperties、\n    jdbc/validation/restclient/webclient/http-converter/micrometer-metrics 等）\n  - 健康检查 API 迁至 spring-boot-health（contributor/actuate.endpoint）\n  - Jackson 3：TypeReference 迁至 tools.jackson.core.type\n  - 移除 SF7 删除的 API（useSuffixPatternMatch 等），@RequestMapping 补 version()，\n    PropertyMapper.alwaysApplying(SourceOperator)\n  - Redisson 4.x：Config.fromJSON 移除，统一 fromYAML\n  - 按需补充 spring-boot-http-client/restclient/webclient/health 依赖\n"
+    },
+    {
+      "sha": "df539fd6a28ad85f29dc0ce836c9deee2c64bc9b",
+      "date": "2026-06-23T18:11:44+08:00",
+      "author": "jonlu",
+      "email": "lujiafayx@163.com",
+      "message": "docs(web-security): 修正签名/防重放配置元数据键名与类型，补齐 README 配置项\n\n- 元数据键 houtu.web.sign.sign-source 修正为实际可绑定的 houtu.web.sign.source；\n  sign.source 与 repeat.source 的 type 由已删除的 sign.SignSource 更正为 prop.Source。\n- README/README-CN 的 web-security 配置表补齐 sign-name、sign.source、\n  additional-params、repeat.expire、repeat.fields、repeat.source 共 6 项。\n\n修复 houtu-dependencies-example/feedback.md 反馈的 [DOC] 项（71b5d82）。\n"
+    },
+    {
+      "sha": "71b5d8282aa6cf1d904f57c3003cb5bd2b8ba14a",
+      "date": "2026-06-23T16:59:01+08:00",
+      "author": "jonlu",
+      "email": "lujiafayx@163.com",
+      "message": "feat(web-security): 签名附加参数与防重放字段列表化，按 source 多字段取值\n\n签名与防重放统一引入可配置的「字段 + 来源」取值模型：\n\n- 新增 prop.Source 枚举（HEADER/BODY/BOTH，BOTH 先取请求头再取请求参数），\n  替代原 sign.SignSource 并由签名/防重放共用。\n- SignProperties 新增 signName、source、additionalParams（默认 nonce+timestamp）；\n  AbstractSignatureValidator 改造：按 source 解析签名与附加必填参数，缺失即抛\n  PARAMETER_ERROR，取自请求头的附加参数补写进参与签名计算的 params。\n- RepeatProperties 新增 fields（默认 nonce+timestamp+sign）、source；\n  AbstractRepeatRequestValidator 改造：按 source 逐字段取值并以冒号拼接为\n  cacheKey，缺失即抛异常，空字段列表则不做防重放。\n- SecurityConstant 增补 nonce/timestamp 常量。\n- 配套 SignatureConfiguration/HMacMD5SignatureValidator 改为构造注入 SignProperties。\n- utils 支撑：MapUtils 增加可指定 Map 实现的 Supplier 重载；\n  SignUtils.buildParam 复用已是 TreeMap 的入参，避免重复包装。\n- 补充 additional-spring-configuration-metadata 元数据。\n"
+    },
+    {
+      "sha": "d507eb7491dcf04ce2e88da13616d1a807ea2fad",
+      "date": "2026-06-23T09:56:16+08:00",
+      "author": "jonlu",
+      "email": "lujiafayx@163.com",
+      "message": "feat(web-security): 防重放抽取为独立校验器并支持过期时间可配置\n\n将原内联于 WebSecurityHandlerInterceptor 的防重放逻辑抽取为独立的\nRepeatRequestValidator（接口 → AbstractRepeatRequestValidator → 默认\nRedisRepeatRequestValidator），对齐 SignatureValidator 的分层风格。\n\n- 默认 Redis 实现仅在存在 redisTemplate 时装配（@ConditionalOnClass +\n  @ConditionalOnBean），并以 @ConditionalOnMissingBean 让自定义实现优先。\n- 拦截器改为持有可空校验器（ObjectProvider.getIfAvailable），为空时跳过\n  防重放处理，避免无 Redis 环境报错。\n- 过期时间独立为 houtu.web.repeat.expire（默认 15 分钟），并支持\n  @CheckRepeatRequest(expire) 按接口覆盖。\n- 修正原 setIfAbsent 返回 Boolean 直接拆箱的潜在 NPE。\n"
+    },
+    {
+      "sha": "8d658342f55cd59c60afdc00ecf50103326243ab",
+      "date": "2026-06-22T18:42:04+08:00",
+      "author": "jonlu",
+      "email": "lujiafayx@163.com",
+      "message": "fix(loadbalancer): 修复无 Nacos 时 SpringCloudNacosLoadBalancerConfiguration 触发 NoClassDefFoundError\n\nSpringCloudNacosLoadBalancerConfiguration 的 @Bean 方法入参直接使用\nNacosDiscoveryProperties，Spring 解析配置类时通过反射读取方法元数据\n会触发该类加载，发生在 @Conditional 求值之前。Nacos 为 optional 依赖，\n类不存在时抛 NoClassDefFoundError。\n\n在类级别加 @ConditionalOnClass(NacosDiscoveryProperties.class)，使 Spring\n在解析该内部类之前先做类路径检查，Nacos 缺失时整个内部类被跳过。\n"
+    },
+    {
+      "sha": "e5e3072b6a120ec50a28445f3771d70bd8f61417",
+      "date": "2026-06-22T16:08:03+08:00",
+      "author": "jonlu",
+      "email": "lujiafayx@163.com",
+      "message": "fix(data-security): 修复 SecurityWatchAspect 多项安全失效与设计缺陷\n\n- 修复 encryptParams/decryptResult 直接使用 this.securityProcessor 字段，\n  导致 processorBeanName 配置的自定义处理器完全失效\n- 修复(Bug-A) Map 默认 filterMapKeysSet 取 keySet() 活视图，setter 执行\n  map.clear() 后视图变空，加解密结果被全部丢弃（静默失加密）\n- 修复(Bug-B) Map/Collection 中嵌套 SecurityObject 的递归 build 置于 setter\n  lambda 内部，实际从不执行；改为 eager 调用，对齐 Array 分支正确模式\n- 变更 encryptMapKeys/decryptMapKeys 语义：空数组不再处理 Map（须显式配置），\n  解决非对称配置下对明文值调 SM4 解密崩溃（Bug-C）\n- 引入 OperateType(ENCRYPT/DECRYPT/RECOVERY) 参数化 build/buildSecurityParams；\n  RECOVERY 模式全量扫描 Map 所有 String 值，通过 IdentityHashMap 引用匹配还原，\n  解决方法内 Map/SecurityObject 字段值对调后密文无法恢复的问题\n- SecurityObject 字段收集从 getDeclaredFields() 改为沿继承链向上遍历（止于\n  非 SecurityObject 父类），修复父类 @SecurityParam 字段静默跳过\n"
+    },
+    {
+      "sha": "f831aef9ac10167b19fd8590c555c86e164f36e9",
+      "date": "2026-06-21T22:30:32+08:00",
+      "author": "jonlu",
+      "email": "lujiafayx@163.com",
+      "message": "fix(utils): 修复 SignUtils.verifyMd5 比较原文字节而非 MD5 摘要导致验签恒失败\n\nverifyMd5 中用 Objects.equals(sign, queryString.getBytes()) 将十六进制\n签名字符串与原文字节数组比较，类型不一致恒为 false，验签永远不通过。\n改为先 MD5Utils.hash(...).hex() 计算摘要再与 sign 比较，与 signMd5 对齐。\n"
+    },
+    {
+      "sha": "939249ec723c323950e5c73272f76080fdbcc2f4",
+      "date": "2026-06-21T20:20:55+08:00",
+      "author": "jonlu",
+      "email": "lujiafayx@163.com",
+      "message": "docs(readme): 补充 http-exchange 模块文档、修正 sentinel 模块名与版本漂移\n\n- 模块表/架构树补充 spring-cloud-houtu-http-exchange，子文档新增其用法章节；\n- 修正模块名 spring-cloud-houtu-sentinel -> spring-cloud-houtu-alibaba-sentinel；\n- 修正版本漂移：3.5.3 行 Spring Boot 3.5.14->3.5.15、Spring Cloud 2025.0.2->2025.0.3，\n  Redisson 3.51.0->3.52.0。\n"
+    },
+    {
+      "sha": "7442ec97abe1947d5316866f453f37139092fbe2",
+      "date": "2026-06-21T19:19:53+08:00",
+      "author": "jonlu",
+      "email": "lujiafayx@163.com",
+      "message": "fix(cache): 修正 @Lock 切面脆弱的 pointcut 绑定\n\n将 @Around(\"pointcut() && @annotation(lock)\") 改为单一绑定 @Around(\"@annotation(lock)\")，\n移除冗余的命名切点 pointcut()。原冗余双重绑定在 Spring AOP 织入多个被切方法时会触发\nIllegalStateException: Required to bind 2 arguments, but only bound 1 (JoinPointMatch was NOT bound)。\n"
+    },
+    {
+      "sha": "8869f2b15b4fb8ab06d197c2be5c2451c144d9f0",
+      "date": "2026-06-21T19:18:11+08:00",
+      "author": "jonlu",
+      "email": "lujiafayx@163.com",
+      "message": "fix(core): 修复 Transfer* builder 在不可变链式调用中被丢弃导致跨线程传递失效\n\nSpring 的 ThreadPoolTaskExecutorBuilder/ThreadPoolTaskSchedulerBuilder 为不可变 builder，\n每个链式方法返回基类新实例；Transfer 子类仅重写 build()，首个 wither 后即退化为基类，\n注册的 bean build() 产出普通执行器，TransferThreadPoolTaskExecutor 的父子线程上下文传递从未生效。\n改为委托式：Transfer* builder 持有已配置好的基类 builder，build() 委托 configure() 装配\nTransfer 执行器/调度器；auto-config 在基类 builder 上完成链式配置后外层包装。\n"
+    },
+    {
+      "sha": "6a62dab489f59ec1ca8621284732a6787673a21e",
+      "date": "2026-06-21T17:53:32+08:00",
+      "author": "jonlu",
+      "email": "lujiafayx@163.com",
+      "message": "fix(loadbalancer): 统一 hint 开关为 spring.cloud.loadbalancer.hint\n\n移除 BlockingSupportConfiguration/ReactiveSupportConfiguration 上多余且未文档化的\n@ConditionalOnProperty(spring.cloud.loadbalancer.hint.enable) 网关。hint 开关统一由\n已文档化的 spring.cloud.loadbalancer.hint 控制（拦截器侧 EnabledHintCondition、\nsupplier 侧 isHint()），同时修复关闭 hint 误将 weight 一并关掉的副作用。\n"
+    },
+    {
+      "sha": "57c89e056f73686f4d9f4b02acb0ddccfae5bb3f",
+      "date": "2026-06-21T16:59:52+08:00",
+      "author": "jonlu",
+      "email": "lujiafayx@163.com",
+      "message": "chore(web-security): 移除失效空壳 GatewaySecurityAutoConfiguration\n\n该类未登记在 AutoConfiguration.imports，类体为空且 @Import 已注释，\n不声明任何 bean、无人引用，属未生效的死代码。\n"
+    },
+    {
+      "sha": "1d30b0d996e18760e491a1cc671184453bc14742",
+      "date": "2026-06-21T16:36:02+08:00",
+      "author": "jonlu",
+      "email": "lujiafayx@163.com",
+      "message": "fix(access-log): 消除 AccessLogCombineModelMapConfiguration 重复定义并修正注入条件\n\n移除 AccessLogAutoConfiguration 中与顶层类同名的非 static 嵌套 @Configuration，\n统一由顶层 AccessLogCombineModelMapConfiguration 提供；该类补全 @Configuration，\n@Bean 条件由 @ConditionalOnBean({工具类, 解析器}) 改为仅依赖已注册为 bean 的\nCombineHandlerMethodArgumentResolver（WebCombineParametersSupport 为静态工具类、\n从不作为 bean 注册，原条件永不满足导致 wrapper bean 无法初始化）。\n"
+    },
+    {
+      "sha": "abc3552957c7f1b14baf3f3d69df739307c519a4",
+      "date": "2026-06-21T11:13:42+08:00",
+      "author": "jonlu",
+      "email": "lujiafayx@163.com",
+      "message": "chore(deps): 升级 Redisson 3.52.0\n"
+    },
+    {
+      "sha": "452e2f0dd6fa3a94311edbd3629999aa5739648d",
+      "date": "2026-06-21T11:07:12+08:00",
+      "author": "jonlu",
+      "email": "lujiafayx@163.com",
+      "message": "chore(deps): 升级 Spring Boot 3.5.15、Spring Cloud 2025.0.3\n"
+    },
+    {
+      "sha": "c1ba061b0ecaa0e3a1a8c947fcb9e8b2d8a08cce",
+      "date": "2026-06-21T10:31:15+08:00",
+      "author": "jonlu",
+      "email": "lujiafayx@163.com",
+      "message": "fix(http-exchange): 修正 AutoConfiguration.imports 自动配置类包路径\n"
+    },
+    {
+      "sha": "f8581741f5bd3459d2dac5fddf4daf9f0ef452e1",
+      "date": "2026-06-20T21:52:36+08:00",
+      "author": "jonlu",
+      "email": "lujiafayx@163.com",
+      "message": "fix(http-exchange): @LoadBalanced 构建器标记 defaultCandidate=false 避免普通注入歧义\n\nRestClient.Builder/WebClient.Builder 同时存在 Boot 默认与 @LoadBalanced 两个 Bean，\n普通 @Autowired 注入会因类型歧义失败。为 @LoadBalanced 构建器加 defaultCandidate=false，\n使其仅对带限定符的注入点可见：无修饰注入解析到 Boot 默认（非 LB）构建器，\n而本库按名解析（LoadBalancedBuilders）与 @LoadBalanced 限定注入均不受影响。\n"
+    },
+    {
+      "sha": "dd2d1e3ca446d554f72fc53791d15433e14cda7e",
+      "date": "2026-06-20T18:40:59+08:00",
+      "author": "jonlu",
+      "email": "lujiafayx@163.com",
+      "message": "fix(utils): 移除 DateUtils.toDate(long, ZoneId) 无效重载\n\n时间戳为绝对时刻，zoneId 对 timestamp→Date 转换不生效，该重载语义具有误导性。\n移除该重载，toDate(long) 直接返回 new Date(timestamp)。\n"
+    },
+    {
+      "sha": "316ebebabc5c958de6b9c4b86ec2207cbb038258",
+      "date": "2026-06-20T16:49:44+08:00",
+      "author": "jonlu",
+      "email": "lujiafayx@163.com",
+      "message": "docs(feign): 移除已下线的异常穿透描述\n\nFeign 异常处理模块已移除（见 1810c49），同步清理架构图与模块说明中的“异常穿透 / exception propagation”表述。\n"
+    },
+    {
+      "sha": "cc0dda80beeb74199be7a483734a6f635cfe8ccf",
+      "date": "2026-06-20T16:43:43+08:00",
+      "author": "jonlu",
+      "email": "lujiafayx@163.com",
+      "message": "chore(http-exchange): 移除测试代码（正式产物不含测试内容）\n\n删除 src/test 下集成/注册测试，及仅供测试用的 spring-boot-starter-test 依赖。\n"
+    },
+    {
+      "sha": "e53a416fbb7ee47517987ea797d0f567a4c9a720",
+      "date": "2026-06-20T16:43:43+08:00",
+      "author": "jonlu",
+      "email": "lujiafayx@163.com",
+      "message": "refactor(feign): 移除残留的 exception-source-trace 配置\n\n实现已在更早重构中移除，本次清理孤立的 FeignProperties、@EnableConfigurationProperties 装配与失效 import、配置元数据及 README 文档项。\n"
+    },
+    {
+      "sha": "1810c498f7f42a16e76dd4f3165a07c5441d8dd0",
+      "date": "2026-06-20T16:07:04+08:00",
+      "author": "jonlu",
+      "email": "lujiafayx@163.com",
+      "message": "refactor(feign): 移除Feign异常处理相关功能模块\n\n- 删除ExceptionHeader工具类及其编解码方法\n- 移除FeignConstant中的异常响应头常量定义\n- 移除FeignConsumerAutoConfiguration中的自定义解码器配置\n- 删除FeignDelegateDecoder解码器及异常检查逻辑\n- 移除FeignHandlerExceptionResolverCustomizer异常处理器\n- 删除FeignThroughBusinessException透传异常类\n- 移除FeignProviderAutoConfiguration中的异常处理器定制器配置\n"
+    },
+    {
+      "sha": "a5fa7ac95f1450c46f8d257df4ce1e66081eac14",
+      "date": "2026-06-20T15:37:11+08:00",
+      "author": "jonlu",
+      "email": "lujiafayx@163.com",
+      "message": "refactor(http-exchange): 包结构由 feign.* 迁移至 httpexchange.*\n"
+    },
+    {
+      "sha": "80cead2c4ff3193522f705f6db308801d497a2b0",
+      "date": "2026-06-20T15:37:10+08:00",
+      "author": "jonlu",
+      "email": "lujiafayx@163.com",
+      "message": "refactor(feign): 跟随 HttpClient5AutoConfiguration 改名更新 @AutoConfiguration after 引用\n"
+    },
+    {
+      "sha": "88b71dd39c5706590404043fcdc3bc59d38c6b98",
+      "date": "2026-06-20T15:37:10+08:00",
+      "author": "jonlu",
+      "email": "lujiafayx@163.com",
+      "message": "refactor(web-security): SessionClient 改用 RestClient 加载会话属性\n\n移除对已删除 HttpClients 工具的依赖，改用 RestClient + HttpMessageConverters；精简 ConditionalOnSessionClientProperty。\n"
+    }
+  ],
+  "commit_sha": "bf5095fdefeba1263b39882bd9d2ae4978b801c8",
+  "extracted_at": "2026-10-05T18:14:51.648193+00:00"
+}

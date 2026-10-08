@@ -1,0 +1,185 @@
+{
+  "ia_status": "com_evidencia",
+  "ia_level": 2,
+  "ia_agents": "Claude Code",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 21,
+  "evidence": [
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "7aa81a3f2f02d4aab7e81cd2277aff5b6e4fed3d",
+      "trailer": "Claude Opus 4.6 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "cedc7156a03a60964bf576e184725bc3b2c4c067",
+      "trailer": "Claude Opus 4.6 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "c1e8e4cd5f53984303898e9fd7b04bd8d7dcff83",
+      "trailer": "Claude Opus 4.6 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "15a1e58cd5b9efa8415802a2400ed1538be9fe71",
+      "trailer": "Claude Opus 4.6 <noreply@anthropic.com>"
+    }
+  ],
+  "commits": [
+    {
+      "sha": "635db8b131d886cbee3e1c78f1e4dd4cc3546def",
+      "date": "2026-02-13T12:00:00-08:00",
+      "author": "kbhujbal",
+      "email": "kbhujbal@usc.edu",
+      "message": "k8s\n"
+    },
+    {
+      "sha": "c83fbb13632052d8974a3925d2b6ccd0564408d5",
+      "date": "2025-12-26T12:00:00-08:00",
+      "author": "kbhujbal",
+      "email": "kbhujbal@usc.edu",
+      "message": "Makefile\n"
+    },
+    {
+      "sha": "77c1ec5b5cdd5c7a376a7df8e97fd51a3ffe9b44",
+      "date": "2026-02-11T12:00:00-08:00",
+      "author": "kbhujbal",
+      "email": "kbhujbal@usc.edu",
+      "message": "reviews service\n"
+    },
+    {
+      "sha": "1c73d4e7aaa072c3317069c14b924a4408a11fb8",
+      "date": "2026-01-07T12:00:00-08:00",
+      "author": "kbhujbal",
+      "email": "kbhujbal@usc.edu",
+      "message": "reviews service\n"
+    },
+    {
+      "sha": "87bcecd92c41429c1e86a20eabcc13c3967ff6ef",
+      "date": "2026-01-12T12:00:00-08:00",
+      "author": "kbhujbal",
+      "email": "kbhujbal@usc.edu",
+      "message": "readme update\n"
+    },
+    {
+      "sha": "5c20d70150116a4cf7b937a0e13967b9dd815438",
+      "date": "2026-01-23T12:00:00-08:00",
+      "author": "kbhujbal",
+      "email": "kbhujbal@usc.edu",
+      "message": "readme update\n"
+    },
+    {
+      "sha": "9731477ceecef69b60f10bebea34f2bd0a3ccd8e",
+      "date": "2026-01-09T12:00:00-08:00",
+      "author": "kbhujbal",
+      "email": "kbhujbal@usc.edu",
+      "message": "readme update\n"
+    },
+    {
+      "sha": "ef43397eb20ccb3fea8d87957a1bd6831b2eed51",
+      "date": "2026-01-05T12:00:00-08:00",
+      "author": "kbhujbal",
+      "email": "kbhujbal@usc.edu",
+      "message": "readme update\n"
+    },
+    {
+      "sha": "d4e6333fdc3b2b70ace71b7c0d81fa6c2dfe7cc6",
+      "date": "2026-02-02T12:00:00-08:00",
+      "author": "kbhujbal",
+      "email": "kbhujbal@usc.edu",
+      "message": "notification service bug fix\n"
+    },
+    {
+      "sha": "71b96d93f21ab48e075b244257c721fd0ab532cf",
+      "date": "2025-02-02T12:00:00-08:00",
+      "author": "kbhujbal",
+      "email": "kbhujbal@usc.edu",
+      "message": "notification service bug fix\n"
+    },
+    {
+      "sha": "ca65170f190ff414d03bccb7071774ce183470e2",
+      "date": "2026-02-05T12:00:00-08:00",
+      "author": "kbhujbal",
+      "email": "kbhujbal@usc.edu",
+      "message": "frontend\n"
+    },
+    {
+      "sha": "4c8b6bf521d3bdc06c73a36354f74611d6b45ca4",
+      "date": "2026-01-28T12:00:00-08:00",
+      "author": "kbhujbal",
+      "email": "kbhujbal@usc.edu",
+      "message": "products\n"
+    },
+    {
+      "sha": "32517d66f48b9b735207722458b58591bd496ada",
+      "date": "2026-01-20T12:00:00-08:00",
+      "author": "kbhujbal",
+      "email": "kbhujbal@usc.edu",
+      "message": "eureka replacement\n"
+    },
+    {
+      "sha": "7aa81a3f2f02d4aab7e81cd2277aff5b6e4fed3d",
+      "date": "2026-02-18T13:49:25-08:00",
+      "author": "kbhujbal",
+      "email": "kbhujbal@usc.edu",
+      "message": "Fix regression bugs: MapStruct Spring integration, MongoDB driver mismatch, and test infrastructure\n\n- Add componentModel=\"spring\" to all 7 MapStruct mappers (was missing, causing NoSuchBeanDefinition at runtime)\n- Remove conflicting mongodb-driver-sync 4.6.1 override from root pom (was causing NoClassDefFoundError with Spring Boot 3.2.3's driver 4.11.1)\n- Remove redundant spring-boot-starter-data-redis version override from root pom\n- Add -parameters flag to maven-compiler-plugin (required by Spring Boot 3.2+ for @PathVariable resolution)\n- Add embedded MongoDB (flapdoodle) test dependency to review-service for CI-compatible integration tests\n- Fix review-service application-test.yml: correct port, remove stale eureka config, configure embedded MongoDB\n- Fix integration test assertions for @RequestBody String handling\n\nCo-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>\n"
+    },
+    {
+      "sha": "cedc7156a03a60964bf576e184725bc3b2c4c067",
+      "date": "2026-02-18T13:10:22-08:00",
+      "author": "kbhujbal",
+      "email": "kbhujbal@usc.edu",
+      "message": "Replace Eureka with Kubernetes native service discovery\n\n- Remove eureka-server module entirely (4 files deleted)\n- Remove spring-cloud-starter-netflix-eureka-client from all 10 pom.xml\n- Remove eureka config blocks from all 9 application.yml files\n- Remove @EnableDiscoveryClient from all 9 Application classes\n- Replace lb:// URIs in API Gateway with config-injected direct URLs\n- Update Feign clients with explicit URL config (services.product.url, etc.)\n- Remove spring.cloud.gateway.discovery.locator (no longer needed)\n- Update docker-compose.yml: remove eureka-server, add service URL env vars\n- Add 16 Kubernetes manifests in k8s/ directory:\n  - namespace, configmap, secrets\n  - mongodb, redis, elasticsearch (Deployment + Service + PVC each)\n  - 9 application services (Deployment + Service each)\n  - ingress for external traffic routing\n- Delete outdated review-service/k8s/ manifests\n- All 11 modules compile successfully without Eureka\n\nCo-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>\n"
+    },
+    {
+      "sha": "c1e8e4cd5f53984303898e9fd7b04bd8d7dcff83",
+      "date": "2026-02-18T12:37:59-08:00",
+      "author": "kbhujbal",
+      "email": "kbhujbal@usc.edu",
+      "message": "Complete backend: add infrastructure services, JWT auth, fix bugs, and implement all features\n\n- Add Eureka Discovery Server (port 8761) for service registration\n- Add API Gateway (port 8080) with route definitions for all 9 services\n- Implement JWT authentication with login/register/refresh endpoints\n- Add JwtAuthenticationFilter in API Gateway for protected routes\n- Create JwtUtil in common module, SecurityConfig and JwtAuthFilter in user-service\n- Fix payment-service pom.xml (was empty) with all required dependencies\n- Fix Product model dual @Document annotation conflict\n- Fix ShipmentServiceImpl recursive call bug (renamed to computeCost)\n- Fix ReviewServiceImpl null Pageable bug\n- Fix Stripe SDK v24 compatibility (getLatestCharge + Charge.retrieve)\n- Fix port conflicts: order-service 8082, review-service 8088\n- Fix duplicate spring.data YAML keys in all service configs\n- Standardize application.yml with env var defaults for Docker/local\n- Complete cart-service TODOs: tax (8%), shipping ($5.99/free >$50), coupons\n- Complete notification-service: SMS/push stubs with proper status tracking\n- Complete shipping-service: weight-based cost calculation, label generation\n- Add Feign clients: ProductServiceClient, NotificationServiceClient\n- Enable @EnableFeignClients on order-service and cart-service\n- Update docker-compose.yml with correct ports, env vars, healthchecks\n- Create UserServiceApplication.java (was missing)\n\nCo-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>\n"
+    },
+    {
+      "sha": "15a1e58cd5b9efa8415802a2400ed1538be9fe71",
+      "date": "2026-02-18T12:07:30-08:00",
+      "author": "kbhujbal",
+      "email": "kbhujbal@usc.edu",
+      "message": "Add .gitignore and remove build artifacts from tracking\n\nAdded a comprehensive .gitignore for Java/Maven projects and removed\nall target/ directories from version control.\n\nCo-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>\n"
+    },
+    {
+      "sha": "b3e2ebe69ec3fc1815b2253e8020421bcb1fc039",
+      "date": "2025-03-27T18:02:52-07:00",
+      "author": "kbhujbal",
+      "email": "kbhujbal@usc.edu",
+      "message": "License\n"
+    },
+    {
+      "sha": "c52263aa2caa8220fda573a033696ab9f141bacb",
+      "date": "2025-03-27T17:54:18-07:00",
+      "author": "kbhujbal",
+      "email": "kbhujbal@usc.edu",
+      "message": "Microservices Application\n"
+    },
+    {
+      "sha": "12f9ed522ed2dc7faed1285ddc907252da7f1987",
+      "date": "2025-03-27T17:50:41-07:00",
+      "author": "kbhujbal",
+      "email": "kbhujbal@usc.edu",
+      "message": "Microservice Application\n"
+    },
+    {
+      "sha": "2062a6e0eda1fca9edf978f4d576366cedbeafa9",
+      "date": "2025-03-16T23:48:16-07:00",
+      "author": "Kunal Bhujbal",
+      "email": "156365067+kbhujbal@users.noreply.github.com",
+      "message": "Initial commit"
+    }
+  ],
+  "commit_sha": "635db8b131d886cbee3e1c78f1e4dd4cc3546def",
+  "extracted_at": "2026-10-05T18:21:24.364296+00:00"
+}

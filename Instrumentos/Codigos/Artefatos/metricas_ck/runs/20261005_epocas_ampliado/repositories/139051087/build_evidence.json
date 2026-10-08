@@ -1,0 +1,20 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "2.2.5.RELEASE",
+  "spring_boot_major": "2",
+  "java_versions_declared": "",
+  "build_evidence": [
+    {
+      "file": "dlock-examples/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "dlock-spring/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-dependencies"
+    }
+  ]
+}

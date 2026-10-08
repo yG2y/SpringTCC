@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "94b59dfb19f87a38e9bc8f466bbfe331d15ffff3",
+      "date": "2026-09-28T18:28:18+02:00",
+      "author": "Thomas Vitale",
+      "email": "ThomasVitale@users.noreply.github.com",
+      "message": "Next development version\n\nSigned-off-by: Thomas Vitale <ThomasVitale@users.noreply.github.com>\n"
+    },
+    {
+      "sha": "b96aa0e7a0c9e721d87e096f586de24f625f953d",
+      "date": "2026-09-28T18:26:12+02:00",
+      "author": "Thomas Vitale",
+      "email": "ThomasVitale@users.noreply.github.com",
+      "message": "Release 0.19.2\n\nSigned-off-by: Thomas Vitale <ThomasVitale@users.noreply.github.com>\n"
+    },
+    {
+      "sha": "ecc696437f1753e90711392234bca6ce41ee5c91",
+      "date": "2026-09-28T17:56:26+02:00",
+      "author": "Thomas Vitale",
+      "email": "ThomasVitale@users.noreply.github.com",
+      "message": "deps: Update Gradle 9.7.1 to 9.8.0\n\nSigned-off-by: Thomas Vitale <ThomasVitale@users.noreply.github.com>\n"
+    },
+    {
+      "sha": "cde7818a27eeb25a5bc3a74c11cf9febf32ed958",
+      "date": "2026-09-28T17:50:14+02:00",
+      "author": "Thomas Vitale",
+      "email": "ThomasVitale@users.noreply.github.com",
+      "message": "deps: Update ORAS Java 0.8.3 to 0.8.5\n\nSigned-off-by: Thomas Vitale <ThomasVitale@users.noreply.github.com>\n"
+    },
+    {
+      "sha": "a00018f353c3d7ca907d0250061e63516ef487eb",
+      "date": "2026-09-28T17:49:51+02:00",
+      "author": "Thomas Vitale",
+      "email": "ThomasVitale@users.noreply.github.com",
+      "message": "deps: Update JLine 3.30.16 to 3.30.17\n\nSigned-off-by: Thomas Vitale <ThomasVitale@users.noreply.github.com>\n"
+    },
+    {
+      "sha": "2cfa9852859ff7898a493909b375da73f18c60f4",
+      "date": "2026-09-28T17:48:43+02:00",
+      "author": "Thomas Vitale",
+      "email": "ThomasVitale@users.noreply.github.com",
+      "message": "build: Update Nix environment\n\nSigned-off-by: Thomas Vitale <ThomasVitale@users.noreply.github.com>\n"
+    },
+    {
+      "sha": "d53e79156b7c32a87016f8dabe79449d15b2594e",
+      "date": "2026-09-28T17:47:56+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "deps: Bump cachix/cachix-action (#165)\n\nBumps [cachix/cachix-action](https://github.com/cachix/cachix-action) from 5f2d7c5294214f71b873db4b969586b980625e71 to 38b082610b782e7e93e209c35fd730d399dee866.\n- [Release notes](https://github.com/cachix/cachix-action/releases)\n- [Changelog](https://github.com/cachix/cachix-action/blob/master/RELEASE.md)\n- [Commits](https://github.com/cachix/cachix-action/compare/5f2d7c5294214f71b873db4b969586b980625e71...38b082610b782e7e93e209c35fd730d399dee866)\n\n---\nupdated-dependencies:\n- dependency-name: cachix/cachix-action\n  dependency-version: 38b082610b782e7e93e209c35fd730d399dee866\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "97099add84f212f3f879707a2f403e7da8d3c102",
+      "date": "2026-09-28T17:47:34+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "deps: Bump graalvm/setup-graalvm from 1.6.4 to 1.6.6 (#166)\n\nBumps [graalvm/setup-graalvm](https://github.com/graalvm/setup-graalvm) from 1.6.4 to 1.6.6.\n- [Release notes](https://github.com/graalvm/setup-graalvm/releases)\n- [Commits](https://github.com/graalvm/setup-graalvm/compare/5298d94fb55a4f185c602eeac5de1b553882abe2...0426e2e191540e8514dff98dc52a5f5146a2a276)\n\n---\nupdated-dependencies:\n- dependency-name: graalvm/setup-graalvm\n  dependency-version: 1.6.6\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "07244468d9da547c1baa16a72cdbe166b6768ad7",
+      "date": "2026-09-28T17:47:08+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "deps: Bump org.graalvm.buildtools.native from 1.1.11 to 1.1.14 (#169)\n\nBumps [org.graalvm.buildtools.native](https://github.com/graalvm/native-build-tools) from 1.1.11 to 1.1.14.\n- [Release notes](https://github.com/graalvm/native-build-tools/releases)\n- [Commits](https://github.com/graalvm/native-build-tools/compare/1.1.11...1.1.14)\n\n---\nupdated-dependencies:\n- dependency-name: org.graalvm.buildtools.native\n  dependency-version: 1.1.14\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "205b7aeabb0065f924c415d7312f7e0ff446bf60",
+      "date": "2026-09-01T18:52:12+02:00",
+      "author": "Thomas Vitale",
+      "email": "ThomasVitale@users.noreply.github.com",
+      "message": "Next development version\n\nSigned-off-by: Thomas Vitale <ThomasVitale@users.noreply.github.com>\n"
+    },
+    {
+      "sha": "f26c09eba52a81c4bbda6def40802c1aeaea719c",
+      "date": "2026-09-01T12:09:02+02:00",
+      "author": "Thomas Vitale",
+      "email": "ThomasVitale@users.noreply.github.com",
+      "message": "Release 0.19.1\n\nSigned-off-by: Thomas Vitale <ThomasVitale@users.noreply.github.com>"
+    },
+    {
+      "sha": "6ba67150f6cceb5f525f75b83fbd1468be83c3c8",
+      "date": "2026-09-01T12:07:52+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "deps: Bump org.graalvm.buildtools.native from 1.1.10 to 1.1.11 (#164)\n\nBumps [org.graalvm.buildtools.native](https://github.com/graalvm/native-build-tools) from 1.1.10 to 1.1.11.\n- [Release notes](https://github.com/graalvm/native-build-tools/releases)\n- [Commits](https://github.com/graalvm/native-build-tools/compare/1.1.10...1.1.11)\n\n---\nupdated-dependencies:\n- dependency-name: org.graalvm.buildtools.native\n  dependency-version: 1.1.11\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "76cfd1c01ab5c8a15375a8bfda30108215b1466a",
+      "date": "2026-08-28T08:06:57+02:00",
+      "author": "Thomas Vitale",
+      "email": "ThomasVitale@users.noreply.github.com",
+      "message": "Next development version\n\nSigned-off-by: Thomas Vitale <ThomasVitale@users.noreply.github.com>\n"
+    },
+    {
+      "sha": "b3c0aef8d89436c9793bed51891b888da13f1b9a",
+      "date": "2026-08-28T07:22:45+02:00",
+      "author": "Thomas Vitale",
+      "email": "ThomasVitale@users.noreply.github.com",
+      "message": "Release 0.19.0\n\nSigned-off-by: Thomas Vitale <ThomasVitale@users.noreply.github.com>\n"
+    },
+    {
+      "sha": "a835609f278c59aa4ca62815390def25c2b1ac85",
+      "date": "2026-08-28T07:22:13+02:00",
+      "author": "Thomas Vitale",
+      "email": "ThomasVitale@users.noreply.github.com",
+      "message": "deps: Update ORAS Java 0.8.2 to 0.8.3\n\nSigned-off-by: Thomas Vitale <ThomasVitale@users.noreply.github.com>\n"
+    },
+    {
+      "sha": "d66fd7f6210401f8490e84dda385f15ed9c52d34",
+      "date": "2026-08-28T07:17:35+02:00",
+      "author": "Thomas Vitale",
+      "email": "ThomasVitale@users.noreply.github.com",
+      "message": "fix: Pin OpenRewrite version after removed from Maven Central\n\nModerne has stopped publishing OpenRewrite artifacts to Maven Release. They are now behind a token-locked repository. Pinning to the previous version for now, while deciding what to do.\n\nSigned-off-by: Thomas Vitale <ThomasVitale@users.noreply.github.com>\n"
+    },
+    {
+      "sha": "4f266d200de2854f9e1b3adff0ac403239a992d4",
+      "date": "2026-08-21T06:41:34+02:00",
+      "author": "Thomas Vitale",
+      "email": "ThomasVitale@users.noreply.github.com",
+      "message": "deps: Update Spring Boot 4.1.0 to 4.1.1\n\nSigned-off-by: Thomas Vitale <ThomasVitale@users.noreply.github.com>\n"
+    },
+    {
+      "sha": "cee7a4d406964a5e2f2c28e5887b6f616f0038b3",
+      "date": "2026-08-21T06:39:11+02:00",
+      "author": "Thomas Vitale",
+      "email": "ThomasVitale@users.noreply.github.com",
+      "message": "deps Update Gradle 9.7.0 to 9.7.1\n\nSigned-off-by: Thomas Vitale <ThomasVitale@users.noreply.github.com>\n"
+    },
+    {
+      "sha": "cd72d61ed6945102d79381577add9051ee0b10aa",
+      "date": "2026-08-18T17:37:58+02:00",
+      "author": "Thomas Vitale",
+      "email": "ThomasVitale@users.noreply.github.com",
+      "message": "build: Cleanup dependency config\n\nSigned-off-by: Thomas Vitale <ThomasVitale@users.noreply.github.com>\n"
+    },
+    {
+      "sha": "b4b991cb35c69e8655c87a60bc1e582b70ab471a",
+      "date": "2026-08-18T17:36:57+02:00",
+      "author": "Thomas Vitale",
+      "email": "ThomasVitale@users.noreply.github.com",
+      "message": "build: Cleanup dependency config\n\nSigned-off-by: Thomas Vitale <ThomasVitale@users.noreply.github.com>\n"
+    },
+    {
+      "sha": "4dd59ab9c3f4d78304e206fb40026cc7c122085f",
+      "date": "2026-08-18T17:35:34+02:00",
+      "author": "Thomas Vitale",
+      "email": "ThomasVitale@users.noreply.github.com",
+      "message": "docs: Update security policy\n\nSigned-off-by: Thomas Vitale <ThomasVitale@users.noreply.github.com>\n"
+    },
+    {
+      "sha": "d9ffe633ddbc1b029da4365be831dadde4859690",
+      "date": "2026-08-18T17:33:11+02:00",
+      "author": "Thomas Vitale",
+      "email": "ThomasVitale@users.noreply.github.com",
+      "message": "docs: Update quick start guide\n\nSigned-off-by: Thomas Vitale <ThomasVitale@users.noreply.github.com>\n"
+    },
+    {
+      "sha": "4bdf0f1e330e733d0ca95b69c83cd1ca4dc885b7",
+      "date": "2026-08-18T17:32:22+02:00",
+      "author": "Thomas Vitale",
+      "email": "ThomasVitale@users.noreply.github.com",
+      "message": "build: Cleanup gitignore\n\nSigned-off-by: Thomas Vitale <ThomasVitale@users.noreply.github.com>\n"
+    },
+    {
+      "sha": "15a348a6e634843896427ef04ff3ddb3fa5af948",
+      "date": "2026-08-18T17:30:16+02:00",
+      "author": "Thomas Vitale",
+      "email": "ThomasVitale@users.noreply.github.com",
+      "message": "build: Adopt Nix in commit stage workflow\n\nSigned-off-by: Thomas Vitale <ThomasVitale@users.noreply.github.com>\n"
+    },
+    {
+      "sha": "bade8a4077f44c4a416d07702b306dfcd9b549d2",
+      "date": "2026-08-18T17:12:03+02:00",
+      "author": "Thomas Vitale",
+      "email": "ThomasVitale@users.noreply.github.com",
+      "message": "build: Migrate from Flox to devenv\n\nSigned-off-by: Thomas Vitale <ThomasVitale@users.noreply.github.com>\n"
+    },
+    {
+      "sha": "729efb3dad3d913ec681eb94fdfdfcae1c4dc81b",
+      "date": "2026-08-14T08:04:14+02:00",
+      "author": "Thomas Vitale",
+      "email": "ThomasVitale@users.noreply.github.com",
+      "message": "Next development version\n\nSigned-off-by: Thomas Vitale <ThomasVitale@users.noreply.github.com>\n"
+    },
+    {
+      "sha": "6804cbc53eddbcca7081b5d8b3ecc6b974d66dd0",
+      "date": "2026-08-14T07:38:29+02:00",
+      "author": "Thomas Vitale",
+      "email": "ThomasVitale@users.noreply.github.com",
+      "message": "Release 0.18.1\n\nSigned-off-by: Thomas Vitale <ThomasVitale@users.noreply.github.com>\n"
+    },
+    {
+      "sha": "775fd5b4ea56083c8dbc9eb9b1279aae5997e820",
+      "date": "2026-08-14T00:51:17+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "deps: Bump gradle/actions/setup-gradle from 6.2.0 to 6.3.0 (#157)\n\nBumps [gradle/actions/setup-gradle](https://github.com/gradle/actions) from 6.2.0 to 6.3.0.\n- [Release notes](https://github.com/gradle/actions/releases)\n- [Commits](https://github.com/gradle/actions/compare/3f131e8634966bd73d06cc69884922b02e6faf92...9c971963bec38e04b3d30dcc455b5382be2fdbfb)\n\n---\nupdated-dependencies:\n- dependency-name: gradle/actions/setup-gradle\n  dependency-version: 6.3.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "2ef86b5085df298661f6b5e29b48ea1f30f0c47c",
+      "date": "2026-08-14T00:50:23+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "deps: Bump gradle/actions/wrapper-validation from 6.2.0 to 6.3.0 (#158)\n\nBumps [gradle/actions/wrapper-validation](https://github.com/gradle/actions) from 6.2.0 to 6.3.0.\n- [Release notes](https://github.com/gradle/actions/releases)\n- [Commits](https://github.com/gradle/actions/compare/3f131e8634966bd73d06cc69884922b02e6faf92...9c971963bec38e04b3d30dcc455b5382be2fdbfb)\n\n---\nupdated-dependencies:\n- dependency-name: gradle/actions/wrapper-validation\n  dependency-version: 6.3.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "b8a3c30c0a0a4bbad456b7f13f90bf461a0fbdb9",
+      "date": "2026-08-14T00:49:39+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "deps: Bump graalvm/setup-graalvm from 1.6.3 to 1.6.4 (#160)\n\nBumps [graalvm/setup-graalvm](https://github.com/graalvm/setup-graalvm) from 1.6.3 to 1.6.4.\n- [Release notes](https://github.com/graalvm/setup-graalvm/releases)\n- [Commits](https://github.com/graalvm/setup-graalvm/compare/0def53c0fd8534bc13416c9469f5be45265824fd...5298d94fb55a4f185c602eeac5de1b553882abe2)\n\n---\nupdated-dependencies:\n- dependency-name: graalvm/setup-graalvm\n  dependency-version: 1.6.4\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    }
+  ],
+  "commit_sha": "94b59dfb19f87a38e9bc8f466bbfe331d15ffff3",
+  "extracted_at": "2026-10-05T18:35:04.484545+00:00"
+}

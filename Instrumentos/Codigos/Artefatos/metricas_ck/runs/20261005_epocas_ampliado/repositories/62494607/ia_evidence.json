@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "8323703dd5bacccf612e8526c614630847215dc3",
+      "date": "2024-08-13T19:52:06+02:00",
+      "author": "Dawid Stankiewicz",
+      "email": "theszczypiorek@gmail.com",
+      "message": "Refactor (#14)\n\n* update example properties\n\n* update README.md\n\n* refactor section\n\n- add edit form for section\n- add deleting section\n- fix deleting sections, topics and posts using cascade\n\n* refactor post service & repository\n\n* refactor section service\n\n* refactor section service"
+    },
+    {
+      "sha": "3617a7238e3b2580ed6ee32be21e1fe75b059ba2",
+      "date": "2024-08-07T12:04:58+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump mysql:mysql-connector-java from 8.0.18 to 8.0.28 (#5)\n\nBumps [mysql:mysql-connector-java](https://github.com/mysql/mysql-connector-j) from 8.0.18 to 8.0.28.\n- [Changelog](https://github.com/mysql/mysql-connector-j/blob/release/9.x/CHANGES)\n- [Commits](https://github.com/mysql/mysql-connector-j/compare/8.0.18...8.0.28)\n\n---\nupdated-dependencies:\n- dependency-name: mysql:mysql-connector-java\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "0ad36a5cea161da819b68dcc439c49b353481489",
+      "date": "2024-08-07T12:00:46+02:00",
+      "author": "Dawid Stankiewicz",
+      "email": "theszczypiorek@gmail.com",
+      "message": "Migration to bootstrap 5 & general refactor (#4)\n\n* WIP: fix spring boot\n\n- add docker compose with mysql database (first run database and then spring application)\n- fix pom dependencies and upgrade to spring boot 2.4.2\n\ntodo:\n- fix database entities\n- fix unit tests\n- add Dockerfile\n- fix homepage\n- fix signin and signup pages\n- fix requests data validation\n\n* WIP: refactor\n\n- refactor entities\n- change project structure\n\n* WIP: refactor\n\n- refactor entities\n- add hello page, fix login & registration form\n\n* WIP: refactor & fixes\n\n- add UniqueEmail & UniqueUsername validation annotations\n- fix logging in and registration forms - fix ForumUserDetailsService\n- fix css & js resources\n- fix thymeleaf & spring security (navbar)\n- add more unit tests\n\n* add validation for UserRegistrationForm, fix messages\n\n* Fix Materialize CSS with gulp\n\n- change default color theme\n- fix sign up and sign in forms\n- fix @UniqueUsername validator\n\n* Fix Materialize CSS with gulp\n\n- add missing files\n\n* Fix Materialize CSS with gulp\n\n- add missing files\n\n* Add SectionAdminController\n\n- refactor SectionController\n- add fragment table.html\n- add section\n- fix messages.properties\n- upgrade jquery\n- add ForumModelMapper\n- add dropdown menu for admin in navbar\n\n* Add pagination, fix css\n\n* old refactoring checkpoint\n\n* optimize imports\n\n* fix mysql db default collation\n\n- change run script for mysql daemon in docker compose\n- fix routes\n- populate database with development data on app startup\n\n* migrating css to bootstrap 5.3\n\n- migrate home page\n- migrate welcome & login page\n- upgrade spring boot starter to 2.7.2\n\n* fix registration page css & confirmation page\n\n* fix new section form\n\n- replace default head with head-bootstrap\n- fix data.sql when running the app second time\n\n* refactor section page with bootstrap\n\n* refactor new topic form\n\n* fix getting images from resources\n\n* fix topic page\n\n- fix including custom css from application.scss\n\n* refactor\n\n- remove materialize files\n- remove jquery js\n- rename head-bootstrap to head.html\n- update some part of readme\n\n* refactor\n\n- fix posts displaying on a home page\n\n* refactor\n\n* use constructor DI instead of @Autowired\n\n- less automagic\n- faster\n\n* add section controller test\n\n* refactor\n\n- fix admin sections page\n- update table template to use bootstrap 5\n\n* update README.md"
+    },
+    {
+      "sha": "c1e2d497a8487b874cee38a9ff70f773d84332f2",
+      "date": "2019-07-03T18:35:12+02:00",
+      "author": "Dawid Stankiewicz",
+      "email": "theszczypiorek@gmail.com",
+      "message": "Upgrade Materializecss to v1\n"
+    },
+    {
+      "sha": "8e82af3ac3befa415258f43bcb5de629a5a3dc50",
+      "date": "2019-07-03T15:21:36+02:00",
+      "author": "Dawid Stankiewicz",
+      "email": "theszczypiorek@gmail.com",
+      "message": "Upgrade Spring Boot to 2.0.4\n\n- fix services to use Optional\n- fix tests\n- add ActivationCodeRepositoryTest\n- fix StackOverflow exception in .toString call\n"
+    },
+    {
+      "sha": "d111ff11218f3be8d68e44098ceb0e6c33f3ecb3",
+      "date": "2019-07-02T20:44:58+02:00",
+      "author": "Dawid Stankiewicz",
+      "email": "theszczypiorek@gmail.com",
+      "message": "Add example properties file, ignore application.properties file\n"
+    },
+    {
+      "sha": "24f8c7f9a0b021823a1dbe73244560fd2073ff0c",
+      "date": "2019-07-02T20:40:29+02:00",
+      "author": "Dawid Stankiewicz",
+      "email": "theszczypiorek@gmail.com",
+      "message": "Refactor User Activation function\n\n- refactor ActivationCode\n- add ActivationCodeGenerator and Sha256ActivationCodeGenerator\n- refactor ActivationCodeRepository\n- remove ActivationCodeService\n- refactor ActivationController\n- add exception handler in ActivationController\n- add ActivationMessageGenerator abstract class\n- add ThymeleafActivationMessageGenerator\n- refactor UserCreationRestController\n- add ActivationSenderService (refactored ActivationService)\n- add Access Rules for Everyone\n\n- refactor activation_message template\n- add activation_success template\n- add custom error template page\n\n- add ActivationCodeGeneratorTest\n- add tests in ActivationControllerTest\n- add ActivationControllerUnitTest\n- add ActivationSenderServiceTest\n- add ActivationServiceTest\n- add tests in SenderServiceTest\n- add base abstract class ControllerUnitTest\n- change other testing base classes to abstract\n\n- update Readme file\n"
+    },
+    {
+      "sha": "ce4ca0e3975c99cff3ea48c22758a580c5784343",
+      "date": "2019-07-01T09:02:57+02:00",
+      "author": "Dawid Stankiewicz",
+      "email": "theszczypiorek@gmail.com",
+      "message": "Refactor user CreationService, add tests\n"
+    },
+    {
+      "sha": "cce81a1e448a1a00210df91f6125a37cce56800e",
+      "date": "2019-06-30T22:14:00+02:00",
+      "author": "Dawid Stankiewicz",
+      "email": "theszczypiorek@gmail.com",
+      "message": "Fix templates and registration modal\n\n- refactor signin-signup-modal.js\n- refactor modal templates\n- fix home template\n"
+    },
+    {
+      "sha": "f9960e91e0f2c8b2b00fa445f344d6375aa4167b",
+      "date": "2019-06-30T17:56:21+02:00",
+      "author": "Dawid Stankiewicz",
+      "email": "theszczypiorek@gmail.com",
+      "message": "Add custom exceptions, refactor, add tests\n\n- add ForumApiException\n- add ForumApiExceptionResponse\n- add method handleForumApiException in GlobalExceptionHandlerController\n- add RestErrorController\n\n- refactor SecurityConfig\n- add AccessRules class\n- add CsrfConfig class\n\n- add ForumExceptionTests\n- add tests in UserCreationRestControllerExceptionsTest\n- rename and refactor Test Classes\n- enable DEBUG logging level for apache http in tests\n"
+    },
+    {
+      "sha": "b3fef4218db26809de210544a08bccb0e88e1a58",
+      "date": "2019-06-29T21:08:12+02:00",
+      "author": "Dawid Stankiewicz",
+      "email": "theszczypiorek@gmail.com",
+      "message": "Change project structure, add ForumException, add tests\n\n- group classes by features\n- change Role to enum in User field\n- remove Role repository and service\n- add user gender enum\n- refactor User entity\n- rename UserInfo to UserAdditionalInfo\n- refactor UserCreationForm\n- refactor UserDetailsServiceImpl\n- refactor UserService\n- add lombok\n- change sign up modal\n\n- refactor and add tests in UserCreationRestControllerTest\n- add User CreationRestControllerExceptionsTest\n- add UserDetailsServiceTest\n- add UserEntityTests\n- add tests in UserServiceTest\n\n- make MockMvc printing results in the integration tests\n- add UnitTestCase\n"
+    },
+    {
+      "sha": "347d00984b7e327cebac76c2f28ee519d9505368",
+      "date": "2017-10-09T20:38:23+02:00",
+      "author": "Dawid Stankiewicz",
+      "email": "theszczypiorek@gmail.com",
+      "message": "New dedicated service for creation new user\n\n- remove Sex enum\n- remove UserEditForm\n- remove NewUserForm\n- remove methods from UserService: create, remove\n- remove mapping for registration page (now registration only by modal form)\n- remove methods from UserController: deleteProfile(myprofile/delete), editMode (/myprofile/edit)\n\n- modify Role entity\n\n- add method addRole in User entity\n- add new UserCreationRestController\n- add new facade UserCreationServiceFacade\n- add new UserCreationForm with: email, password, username, name, last name and sex\n\n- update .gitignore\n"
+    },
+    {
+      "sha": "232de3afbe9919b0967514b06a0f75bd4247ffa5",
+      "date": "2017-10-09T20:25:47+02:00",
+      "author": "Dawid Stankiewicz",
+      "email": "theszczypiorek@gmail.com",
+      "message": "Activation service and activation code\n\n- add ActivationCode entity (id, username, timestamp)\n- add ActivationCodeRepository and method findByUsername (there isn't FK for user, only username)\n- add ActivationCodeService\n\n- add ActivationService for activating user account (1. create and sent activation code;\n  2. activate user after click in the activation link)\n- add ActivationController with path /users/::username/activation?id=::activation_code\n- add simple template for email with activation link\n"
+    },
+    {
+      "sha": "25d8559723c964672a0f765d73a854056608bf4e",
+      "date": "2017-10-09T20:16:20+02:00",
+      "author": "Dawid Stankiewicz",
+      "email": "theszczypiorek@gmail.com",
+      "message": "SenderService, EmailMessage and smtp properties\n\n- add sending email function by smtp server\n"
+    },
+    {
+      "sha": "ded4aa1f026df804755dc0ceeee3a99f84586a79",
+      "date": "2017-10-09T20:10:03+02:00",
+      "author": "Dawid Stankiewicz",
+      "email": "theszczypiorek@gmail.com",
+      "message": "Registration / login modal form\n\n-update materialize.css\n- remove UPPERCASE in navbar\n"
+    },
+    {
+      "sha": "8c8d50719f25898296863a07fa6c52154f9ffaff",
+      "date": "2017-10-08T15:30:55+02:00",
+      "author": "Dawid Stankiewicz",
+      "email": "theszczypiorek@gmail.com",
+      "message": "Fix tests\n\n- LoginPageTest\n- HomeControllerTest\n- SectionControllerTest\n- UserControllerTest\n- ExceptionHandlerTest\n- UserServiceTest\n- add ActivationControllerTest for ActivationService and ActivationCodeService\n- add UserCreationRestControllerTest\n- add SenderServiceTest - test by greenmail\n"
+    },
+    {
+      "sha": "7fb7ee7f9dca167af7e3015657b7960b4f3c8990",
+      "date": "2017-10-08T15:04:20+02:00",
+      "author": "Dawid Stankiewicz",
+      "email": "theszczypiorek@gmail.com",
+      "message": "Add greenmail and h2 db for tests\n\n- add properties file for tests\n"
+    },
+    {
+      "sha": "c4bb4ff6fbb98704f630b03eb3ae0410394f336d",
+      "date": "2017-08-04T11:20:47+02:00",
+      "author": "Dawid Stankiewicz",
+      "email": "theszczypiorek@gmail.com",
+      "message": "Content column definition TEXT\n"
+    },
+    {
+      "sha": "6ddaededcb24f839483c2c7ac3238491147d95a5",
+      "date": "2017-08-04T10:04:57+02:00",
+      "author": "Dawid Stankiewicz",
+      "email": "theszczypiorek@gmail.com",
+      "message": "Refactor Section, Topic and Post entities\n\n- and change all @Basic annotations to @Column for uniformity\n- remove unnecessary annotations and properties\n"
+    },
+    {
+      "sha": "74f21d429dde00ad660eed07b698763183fb3d63",
+      "date": "2017-08-04T09:27:15+02:00",
+      "author": "Dawid Stankiewicz",
+      "email": "theszczypiorek@gmail.com",
+      "message": "Refactor Role entity\n"
+    },
+    {
+      "sha": "3e88bcdaa20cc3f28d249d003ab44a377aa28351",
+      "date": "2017-08-03T23:27:29+02:00",
+      "author": "Dawid Stankiewicz",
+      "email": "theszczypiorek@gmail.com",
+      "message": "Fix @OneToOne relation User-UserInfo\n\n- add cascade for roles and info\n- add @PrimaryKeyJoinColumn for info field in User entity\n\n- add id column named 'user'\n- add @MapsId, @OneToOne and @JoinColumn for User field in UserInfo\n\n- set User for UserInfo and then set UserInto for this User in UserService\n"
+    },
+    {
+      "sha": "36eb28564a493fb130b127d7860a5d14eeadc852",
+      "date": "2017-08-03T19:02:35+02:00",
+      "author": "Dawid Stankiewicz",
+      "email": "theszczypiorek@gmail.com",
+      "message": "Refactor User entity, add UserInfo entity\n\n- Divide User class and transfer info data to UserInfo entity\n- fix user.html\n- add male and female messages\n- remove save method for save user changes in UserService\n- refactor User entity\n- remove processAndSaveChanges from UserController\n"
+    },
+    {
+      "sha": "b04b809913ade81960c2cab455445161669fd9d4",
+      "date": "2017-08-03T15:53:31+02:00",
+      "author": "Dawid Stankiewicz",
+      "email": "theszczypiorek@gmail.com",
+      "message": "Rename 'domain' package to 'entity'\n"
+    },
+    {
+      "sha": "13ffd189985dc7ced3e1a8004fe631ebffb57f3f",
+      "date": "2017-08-03T15:51:18+02:00",
+      "author": "Dawid Stankiewicz",
+      "email": "theszczypiorek@gmail.com",
+      "message": "Rename package to com.github.dawidstankiewicz.forum\n"
+    },
+    {
+      "sha": "3cef75d2b8047e5b92a0341eea2ed168c8bcc94c",
+      "date": "2017-08-03T15:46:55+02:00",
+      "author": "Dawid Stankiewicz",
+      "email": "theszczypiorek@gmail.com",
+      "message": "Fix multi language messages in templates\n\n- add new empty file messages.properties - needed for work\n- move all messages to messages folder\n- and change basename in application.properties file\n\n- fix error when null date in templates by additional condition (user.html)\n- remove code for debugging from UserDetailsServiceImpl\n"
+    },
+    {
+      "sha": "66942cd95a0b93c82d33f3496d6539b430481489",
+      "date": "2017-08-03T15:16:23+02:00",
+      "author": "Dawid Stankiewicz",
+      "email": "theszczypiorek@gmail.com",
+      "message": "Fix: static resources, hasAnyRole, templates\n\n- change 'hasAnyRole' to 'hasAnyAuthority\n- fix static resources, add static path pattern in properties and\n  change directory of static resources\n- fix error when null date in templates by additional condition\n- fix new_topic_form\n- change date in footer\n"
+    },
+    {
+      "sha": "07e70ee5f9d1648b0d5d6ece099a9bc4f91b6f79",
+      "date": "2017-08-02T22:30:38+02:00",
+      "author": "Dawid Stankiewicz",
+      "email": "theszczypiorek@gmail.com",
+      "message": "Fix logging in, remove wrong tests\n\n- change password requirements\n- refactor SecurityConfig\n- implement UserDetailService\n- add /login mapping in UserController\n- throw error when user not found by username in UserService\n\n- fix ConfigTest\n- remove wrong testLogin and testAddNewUser\n- add Rollback for SectionControllerTest\n- add ApplicationTest class\n\n- change hibernate ddl-auto from create to update\n\n- remove unused SecurityWebInitializer\n"
+    },
+    {
+      "sha": "407b07958880555b8c95f8ed97480486184d8195",
+      "date": "2017-08-02T22:19:24+02:00",
+      "author": "Dawid Stankiewicz",
+      "email": "theszczypiorek@gmail.com",
+      "message": "Fix errors with templates (Thymeleaf) and pom file\n\n- Fix security namespace for thymeleaf templates\n- Add thymeleaf-extras-springsecurity4 dependency\n- Add spring-boot-devtools dependency\n- Add maven-compiler-plugin and fix error with target Java version\n- Change parent to dependencyManagement in pom file\n"
+    },
+    {
+      "sha": "0d42bdfd643472450336de5f69c57062554b3e5c",
+      "date": "2017-08-02T22:12:02+02:00",
+      "author": "Dawid Stankiewicz",
+      "email": "theszczypiorek@gmail.com",
+      "message": "Update README\n"
+    },
+    {
+      "sha": "bb47fb7e67aebc071d78fedeb023656e265fb05b",
+      "date": "2017-08-02T15:04:32+02:00",
+      "author": "Dawid Stankiewicz",
+      "email": "theszczypiorek@gmail.com",
+      "message": "update .gitignore\n"
+    }
+  ],
+  "commit_sha": "8323703dd5bacccf612e8526c614630847215dc3",
+  "extracted_at": "2026-10-05T18:06:16.063044+00:00"
+}

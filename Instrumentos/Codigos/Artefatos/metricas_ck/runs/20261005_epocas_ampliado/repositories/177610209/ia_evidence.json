@@ -1,0 +1,23 @@
+{
+  "ia_status": "com_evidencia",
+  "ia_level": 1,
+  "ia_agents": "Coderabbit; Codex / OpenAI",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 0,
+  "evidence": [
+    {
+      "agent": "Codex / OpenAI",
+      "type": "file",
+      "path": "AGENTS.md"
+    },
+    {
+      "agent": "Coderabbit",
+      "type": "file",
+      "path": ".coderabbit.yaml"
+    }
+  ],
+  "commits": [],
+  "commit_sha": "62cda56b7178936ac07ecc6397986b6e01b0a88c",
+  "extracted_at": "2026-10-05T18:37:35.183676+00:00"
+}

@@ -1,0 +1,64 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "3.3.4",
+  "spring_boot_major": "3",
+  "java_versions_declared": "${java.version};21",
+  "build_evidence": [
+    {
+      "file": "auth-lib/pom.xml",
+      "artifact": "spring-boot-starter-oauth2-resource-server"
+    },
+    {
+      "file": "auth-lib/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "customer-svc/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "customer-svc/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "customer-svc/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "customer-svc/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "customer-svc/pom.xml",
+      "artifact": "spring-boot-starter-oauth2-resource-server"
+    },
+    {
+      "file": "customer-svc/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "customer-svc/pom.xml",
+      "artifact": "spring-boot-starter-cache"
+    },
+    {
+      "file": "customer-svc/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "customer-svc/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-test"
+    }
+  ]
+}

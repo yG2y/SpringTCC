@@ -1,0 +1,32 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "4.0.5;4.1.1",
+  "spring_boot_major": "4",
+  "java_versions_declared": "${java.version};17",
+  "build_evidence": [
+    {
+      "file": "platform-bom-demo/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "platform-bom-demo/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "platform-bom-demo/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "platform-bom-demo/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "platform-bom/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-dependencies"
+    }
+  ]
+}

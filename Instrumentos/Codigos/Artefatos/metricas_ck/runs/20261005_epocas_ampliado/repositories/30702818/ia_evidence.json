@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "2efec578ff1d4d7a33d26702ff34d8cf957412c4",
+      "date": "2026-09-17T17:47:07+02:00",
+      "author": "MediaMarco",
+      "email": "marco.geweke@gmail.com",
+      "message": "chore: Next snapshot\n"
+    },
+    {
+      "sha": "a9a7ec1b5e866545fb2a517360e57fce00f1ca6b",
+      "date": "2026-09-17T17:27:17+02:00",
+      "author": "MediaMarco",
+      "email": "marco.geweke@gmail.com",
+      "message": "Release 4.1.1\n"
+    },
+    {
+      "sha": "c408d138c578dab45e786b6425f9ac6b3ea87d68",
+      "date": "2026-09-17T17:26:55+02:00",
+      "author": "MediaMarco",
+      "email": "marco.geweke@gmail.com",
+      "message": "Update readme\n"
+    },
+    {
+      "sha": "9da049b8bd8e5961595063a6755d5298af97bab2",
+      "date": "2026-09-17T15:26:11Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps-dev): bump the vitest group across 1 directory with 2 updates\n\nBumps the vitest group with 2 updates in the /edison-jobs directory: [@vitest/coverage-v8](https://github.com/vitest-dev/vitest/tree/HEAD/packages/coverage-v8) and [vitest](https://github.com/vitest-dev/vitest/tree/HEAD/packages/vitest).\n\n\nUpdates `@vitest/coverage-v8` from 4.1.11 to 5.0.0\n- [Release notes](https://github.com/vitest-dev/vitest/releases)\n- [Changelog](https://github.com/vitest-dev/vitest/blob/main/docs/releases.md)\n- [Commits](https://github.com/vitest-dev/vitest/commits/v5.0.0/packages/coverage-v8)\n\nUpdates `vitest` from 4.1.11 to 5.0.0\n- [Release notes](https://github.com/vitest-dev/vitest/releases)\n- [Changelog](https://github.com/vitest-dev/vitest/blob/main/docs/releases.md)\n- [Commits](https://github.com/vitest-dev/vitest/commits/v5.0.0/packages/vitest)\n\n---\nupdated-dependencies:\n- dependency-name: \"@vitest/coverage-v8\"\n  dependency-version: 5.0.0\n  dependency-type: direct:development\n  update-type: version-update:semver-major\n  dependency-group: vitest\n- dependency-name: vitest\n  dependency-version: 5.0.0\n  dependency-type: direct:development\n  update-type: version-update:semver-major\n  dependency-group: vitest\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "d3b66cc8acfe8c0622c419219ea2bfdaa2650753",
+      "date": "2026-09-17T14:58:25Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps-dev): bump jsdom from 29.1.1 to 30.0.1 in /edison-jobs\n\nBumps [jsdom](https://github.com/jsdom/jsdom) from 29.1.1 to 30.0.1.\n- [Release notes](https://github.com/jsdom/jsdom/releases)\n- [Commits](https://github.com/jsdom/jsdom/compare/v29.1.1...v30.0.1)\n\n---\nupdated-dependencies:\n- dependency-name: jsdom\n  dependency-version: 30.0.1\n  dependency-type: direct:development\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "61f51ac0b24dc975aee65414334fd25d1929d48b",
+      "date": "2026-09-17T14:54:23Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump the github-actions group with 4 updates\n\nBumps the github-actions group with 4 updates: [actions/checkout](https://github.com/actions/checkout), [actions/setup-java](https://github.com/actions/setup-java), [actions/setup-node](https://github.com/actions/setup-node) and [actions/upload-artifact](https://github.com/actions/upload-artifact).\n\n\nUpdates `actions/checkout` from 6.1.0 to 7.0.1\n- [Release notes](https://github.com/actions/checkout/releases)\n- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/actions/checkout/compare/d23441a48e516b6c34aea4fa41551a30e30af803...3d3c42e5aac5ba805825da76410c181273ba90b1)\n\nUpdates `actions/setup-java` from 5.7.0 to 6.0.1\n- [Release notes](https://github.com/actions/setup-java/releases)\n- [Commits](https://github.com/actions/setup-java/compare/b6effb05e454b25005698d916606bdc6ffcbf961...de7274f081f381c8f8158605e0321c36c376e2e6)\n\nUpdates `actions/setup-node` from 4.4.0 to 7.0.0\n- [Release notes](https://github.com/actions/setup-node/releases)\n- [Commits](https://github.com/actions/setup-node/compare/49933ea5288caeca8642d1e84afbd3f7d6820020...820762786026740c76f36085b0efc47a31fe5020)\n\nUpdates `actions/upload-artifact` from 4.6.2 to 7.0.1\n- [Release notes](https://github.com/actions/upload-artifact/releases)\n- [Commits](https://github.com/actions/upload-artifact/compare/ea165f8d65b6e75b540449e92b4886f43607fa02...043fb46d1a93c77aae656e7c1c64a875d1fc6a0a)\n\n---\nupdated-dependencies:\n- dependency-name: actions/checkout\n  dependency-version: 7.0.1\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n  dependency-group: github-actions\n- dependency-name: actions/setup-java\n  dependency-version: 6.0.1\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n  dependency-group: github-actions\n- dependency-name: actions/setup-node\n  dependency-version: 7.0.0\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n  dependency-group: github-actions\n- dependency-name: actions/upload-artifact\n  dependency-version: 7.0.1\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n  dependency-group: github-actions\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "f0e6d094253bf4bdd8cefa96bb9b691066d722ac",
+      "date": "2026-09-17T16:56:00+02:00",
+      "author": "MediaMarco",
+      "email": "marco.geweke@gmail.com",
+      "message": "chore: Dependency updates for npm deps\n"
+    },
+    {
+      "sha": "b248fae5afb7a74ec22f428dc32999d4ea45eb12",
+      "date": "2026-09-17T16:49:07+02:00",
+      "author": "MediaMarco",
+      "email": "marco.geweke@gmail.com",
+      "message": "ci: Pin versions\n"
+    },
+    {
+      "sha": "ccac94bcc4b64d6bb6752e6ae074a43f286cbc5f",
+      "date": "2026-09-17T16:42:38+02:00",
+      "author": "MediaMarco",
+      "email": "marco.geweke@gmail.com",
+      "message": "chore: Update vitest\n"
+    },
+    {
+      "sha": "c1b0ead8c1d5f00eb9ed7abdc968229703993445",
+      "date": "2026-09-15T18:58:27Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump mockserver from 7.5.0 to 7.6.0\n\nBumps `mockserver` from 7.5.0 to 7.6.0.\n\nUpdates `org.mock-server:mockserver-netty` from 7.5.0 to 7.6.0\n\nUpdates `org.mock-server:mockserver-client-java` from 7.5.0 to 7.6.0\n\nUpdates `org.mock-server:mockserver-junit-jupiter` from 7.5.0 to 7.6.0\n\n---\nupdated-dependencies:\n- dependency-name: org.mock-server:mockserver-client-java\n  dependency-version: 7.6.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n- dependency-name: org.mock-server:mockserver-junit-jupiter\n  dependency-version: 7.6.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n- dependency-name: org.mock-server:mockserver-netty\n  dependency-version: 7.6.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "2f99063f0df3f2c5b72a581e4a7c25c723b9266d",
+      "date": "2026-09-16T07:59:49+02:00",
+      "author": "Florian Torkler",
+      "email": "florian.torkler@otto.de",
+      "message": "adjust build version to be in sync with spring boot\n"
+    },
+    {
+      "sha": "a507de62522f808c8cc737b8758f2d67456adbd5",
+      "date": "2026-09-15T15:22:59Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump aws-sdk from 2.54.16 to 2.54.17\n\nBumps `aws-sdk` from 2.54.16 to 2.54.17.\n\nUpdates `software.amazon.awssdk:s3` from 2.54.16 to 2.54.17\n\nUpdates `software.amazon.awssdk:ssm` from 2.54.16 to 2.54.17\n\nUpdates `software.amazon.awssdk:dynamodb` from 2.54.16 to 2.54.17\n\nUpdates `software.amazon.awssdk:imds` from 2.54.16 to 2.54.17\n\nUpdates `software.amazon.awssdk:auth` from 2.54.16 to 2.54.17\n\nUpdates `software.amazon.awssdk:netty-nio-client` from 2.54.16 to 2.54.17\n\nUpdates `software.amazon.awssdk:bom` from 2.54.16 to 2.54.17\n\n---\nupdated-dependencies:\n- dependency-name: software.amazon.awssdk:s3\n  dependency-version: 2.54.17\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n- dependency-name: software.amazon.awssdk:ssm\n  dependency-version: 2.54.17\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n- dependency-name: software.amazon.awssdk:dynamodb\n  dependency-version: 2.54.17\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n- dependency-name: software.amazon.awssdk:imds\n  dependency-version: 2.54.17\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n- dependency-name: software.amazon.awssdk:auth\n  dependency-version: 2.54.17\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n- dependency-name: software.amazon.awssdk:netty-nio-client\n  dependency-version: 2.54.17\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n- dependency-name: software.amazon.awssdk:bom\n  dependency-version: 2.54.17\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "b97cd81abf751d654997b02578760540afedbf86",
+      "date": "2026-09-15T20:04:55+02:00",
+      "author": "Florian Torkler",
+      "email": "florian.torkler@otto.de",
+      "message": "include \"since\" member in equals/hashCode to reflect expected behaviour\n"
+    },
+    {
+      "sha": "eed83e0b1f6347234f99fda45b56a34d88d593c3",
+      "date": "2026-09-15T10:01:56+02:00",
+      "author": "Florian Torkler",
+      "email": "florian.torkler@otto.de",
+      "message": "use the existing date-time-badge to represent timestamp on the status html page (and add the duration to this template to be reused)\n"
+    },
+    {
+      "sha": "3532e9bf4243e3cba9e76b65576c2a57a1a0799e",
+      "date": "2026-09-15T10:00:06+02:00",
+      "author": "Florian Torkler",
+      "email": "florian.torkler@otto.de",
+      "message": "Add 'since' timestamp to StatusDetail that marks the first occurrence of the current status\n"
+    },
+    {
+      "sha": "3e687fe38d627ac41162bc5d6c00b0d127e0d582",
+      "date": "2026-09-14T15:23:04Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump aws-sdk from 2.53.1 to 2.54.16\n\nBumps `aws-sdk` from 2.53.1 to 2.54.16.\n\nUpdates `software.amazon.awssdk:s3` from 2.53.1 to 2.54.16\n\nUpdates `software.amazon.awssdk:ssm` from 2.53.1 to 2.54.16\n\nUpdates `software.amazon.awssdk:dynamodb` from 2.53.1 to 2.54.16\n\nUpdates `software.amazon.awssdk:imds` from 2.53.1 to 2.54.16\n\nUpdates `software.amazon.awssdk:auth` from 2.53.1 to 2.54.16\n\nUpdates `software.amazon.awssdk:netty-nio-client` from 2.53.1 to 2.54.16\n\nUpdates `software.amazon.awssdk:bom` from 2.53.1 to 2.54.16\n\n---\nupdated-dependencies:\n- dependency-name: software.amazon.awssdk:s3\n  dependency-version: 2.54.16\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n- dependency-name: software.amazon.awssdk:ssm\n  dependency-version: 2.54.16\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n- dependency-name: software.amazon.awssdk:dynamodb\n  dependency-version: 2.54.16\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n- dependency-name: software.amazon.awssdk:imds\n  dependency-version: 2.54.16\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n- dependency-name: software.amazon.awssdk:auth\n  dependency-version: 2.54.16\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n- dependency-name: software.amazon.awssdk:netty-nio-client\n  dependency-version: 2.54.16\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n- dependency-name: software.amazon.awssdk:bom\n  dependency-version: 2.54.16\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "1e06e3e3f56bbad6cc0f4cf419feee57def4fbcc",
+      "date": "2026-09-03T15:23:18Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump org.jreleaser from 1.25.0 to 1.26.0\n\nBumps org.jreleaser from 1.25.0 to 1.26.0.\n\n---\nupdated-dependencies:\n- dependency-name: org.jreleaser\n  dependency-version: 1.26.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "702390a652117b5245ae6f74f2cc9505cef64797",
+      "date": "2026-08-25T06:09:17Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump togglz from 4.6.2 to 4.6.4\n\nBumps `togglz` from 4.6.2 to 4.6.4.\n\nUpdates `org.togglz:togglz-console` from 4.6.2 to 4.6.4\n\nUpdates `org.togglz:togglz-spring-web` from 4.6.2 to 4.6.4\n\nUpdates `org.togglz:togglz-spring-boot-starter` from 4.6.2 to 4.6.4\n\nUpdates `org.togglz:togglz-testing` from 4.6.2 to 4.6.4\n\n---\nupdated-dependencies:\n- dependency-name: org.togglz:togglz-console\n  dependency-version: 4.6.4\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n- dependency-name: org.togglz:togglz-spring-boot-starter\n  dependency-version: 4.6.4\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n- dependency-name: org.togglz:togglz-spring-web\n  dependency-version: 4.6.4\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n- dependency-name: org.togglz:togglz-testing\n  dependency-version: 4.6.4\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "e562aee5b00cf5edbd887b7eb83481b37fa6b571",
+      "date": "2026-08-24T15:23:09Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump spring-boot from 4.1.0 to 4.1.1\n\nBumps `spring-boot` from 4.1.0 to 4.1.1.\n\nUpdates `org.springframework.boot:spring-boot` from 4.1.0 to 4.1.1\n- [Release notes](https://github.com/spring-projects/spring-boot/releases)\n- [Commits](https://github.com/spring-projects/spring-boot/compare/v4.1.0...v4.1.1)\n\nUpdates `org.springframework.boot:spring-boot-dependencies` from 4.1.0 to 4.1.1\n- [Release notes](https://github.com/spring-projects/spring-boot/releases)\n- [Commits](https://github.com/spring-projects/spring-boot/compare/v4.1.0...v4.1.1)\n\nUpdates `org.springframework.boot` from 4.1.0 to 4.1.1\n- [Release notes](https://github.com/spring-projects/spring-boot/releases)\n- [Commits](https://github.com/spring-projects/spring-boot/compare/v4.1.0...v4.1.1)\n\n---\nupdated-dependencies:\n- dependency-name: org.springframework.boot:spring-boot\n  dependency-version: 4.1.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n- dependency-name: org.springframework.boot:spring-boot-dependencies\n  dependency-version: 4.1.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n- dependency-name: org.springframework.boot\n  dependency-version: 4.1.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "b91d07649bbcc1d641bfc8676335e42502c3d571",
+      "date": "2026-08-25T09:20:10+02:00",
+      "author": "ivoheck",
+      "email": "ivo.heck@otto.de",
+      "message": "update vitest coverage dep\n\nCo-authored-by: Ivo Heck <ivo.heck@otto.de>\n"
+    },
+    {
+      "sha": "f9631bca2d6360590127dd8f9da7adf5e1ac1296",
+      "date": "2026-08-25T09:12:23+02:00",
+      "author": "ivoheck",
+      "email": "ivo.heck@otto.de",
+      "message": "refine jobs page ui to be more consistent\n\nCo-authored-by: Ivo Heck <ivo.heck@otto.de>\n"
+    },
+    {
+      "sha": "ab02e72d0cd69d77f943b9934b670df719fc507e",
+      "date": "2026-08-24T15:23:25Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump gradle-wrapper from 9.7.0 to 9.7.1\n\nBumps [gradle-wrapper](https://github.com/gradle/gradle) from 9.7.0 to 9.7.1.\n- [Release notes](https://github.com/gradle/gradle/releases)\n- [Commits](https://github.com/gradle/gradle/compare/v9.7.0...v9.7.1)\n\n---\nupdated-dependencies:\n- dependency-name: gradle-wrapper\n  dependency-version: 9.7.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "a76f72c0bd465ec5b97a0fd3c7566e1567176aff",
+      "date": "2026-08-20T06:20:22Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump aws-sdk from 2.46.21 to 2.53.1\n\nBumps `aws-sdk` from 2.46.21 to 2.53.1.\n\nUpdates `software.amazon.awssdk:s3` from 2.46.21 to 2.53.1\n\nUpdates `software.amazon.awssdk:ssm` from 2.46.21 to 2.53.1\n\nUpdates `software.amazon.awssdk:dynamodb` from 2.46.21 to 2.53.1\n\nUpdates `software.amazon.awssdk:imds` from 2.46.21 to 2.53.1\n\nUpdates `software.amazon.awssdk:auth` from 2.46.21 to 2.53.1\n\nUpdates `software.amazon.awssdk:netty-nio-client` from 2.46.21 to 2.53.1\n\nUpdates `software.amazon.awssdk:bom` from 2.46.21 to 2.53.1\n\n---\nupdated-dependencies:\n- dependency-name: software.amazon.awssdk:auth\n  dependency-version: 2.53.1\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n- dependency-name: software.amazon.awssdk:bom\n  dependency-version: 2.53.1\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n- dependency-name: software.amazon.awssdk:dynamodb\n  dependency-version: 2.53.1\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n- dependency-name: software.amazon.awssdk:imds\n  dependency-version: 2.53.1\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n- dependency-name: software.amazon.awssdk:netty-nio-client\n  dependency-version: 2.53.1\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n- dependency-name: software.amazon.awssdk:s3\n  dependency-version: 2.53.1\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n- dependency-name: software.amazon.awssdk:ssm\n  dependency-version: 2.53.1\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "065a49dc9e102334701b43bed1b73b7c41bc216a",
+      "date": "2026-08-10T15:23:16Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump gradle-wrapper from 9.6.1 to 9.7.0\n\nBumps [gradle-wrapper](https://github.com/gradle/gradle) from 9.6.1 to 9.7.0.\n- [Release notes](https://github.com/gradle/gradle/releases)\n- [Commits](https://github.com/gradle/gradle/compare/v9.6.1...v9.7.0)\n\n---\nupdated-dependencies:\n- dependency-name: gradle-wrapper\n  dependency-version: 9.7.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "58f26eb7ee0bba564b53aadfa82e5e7728542d5d",
+      "date": "2026-07-30T15:22:48Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump mockserver from 7.4.0 to 7.5.0\n\nBumps `mockserver` from 7.4.0 to 7.5.0.\n\nUpdates `org.mock-server:mockserver-netty` from 7.4.0 to 7.5.0\n\nUpdates `org.mock-server:mockserver-client-java` from 7.4.0 to 7.5.0\n\nUpdates `org.mock-server:mockserver-junit-jupiter` from 7.4.0 to 7.5.0\n\n---\nupdated-dependencies:\n- dependency-name: org.mock-server:mockserver-netty\n  dependency-version: 7.5.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n- dependency-name: org.mock-server:mockserver-client-java\n  dependency-version: 7.5.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n- dependency-name: org.mock-server:mockserver-junit-jupiter\n  dependency-version: 7.5.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "1a0c586ea231ee91bdc5639d1f0b3d990f120f55",
+      "date": "2026-07-22T10:42:06+02:00",
+      "author": "ivoheck",
+      "email": "ivo.heck@otto.de",
+      "message": "use correct Bootstrap class for error bage\n\nCo-authored-by: Ivo Heck <ivo.heck@otto.de>\n"
+    },
+    {
+      "sha": "840c55e47939288c14531050e1b265fa4dd5689d",
+      "date": "2026-07-06T07:36:46Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump mockserver from 7.2.0 to 7.4.0\n\nBumps `mockserver` from 7.2.0 to 7.4.0.\n\nUpdates `org.mock-server:mockserver-netty` from 7.2.0 to 7.4.0\n\nUpdates `org.mock-server:mockserver-client-java` from 7.2.0 to 7.4.0\n\nUpdates `org.mock-server:mockserver-junit-jupiter` from 7.2.0 to 7.4.0\n\n---\nupdated-dependencies:\n- dependency-name: org.mock-server:mockserver-client-java\n  dependency-version: 7.3.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n- dependency-name: org.mock-server:mockserver-junit-jupiter\n  dependency-version: 7.3.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n- dependency-name: org.mock-server:mockserver-netty\n  dependency-version: 7.3.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "4f7bed55ad4e150455b9884f3a8831150b4ffb61",
+      "date": "2026-07-03T15:22:49Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump aws-sdk from 2.46.15 to 2.46.21\n\nBumps `aws-sdk` from 2.46.15 to 2.46.21.\n\nUpdates `software.amazon.awssdk:s3` from 2.46.15 to 2.46.21\n\nUpdates `software.amazon.awssdk:ssm` from 2.46.15 to 2.46.21\n\nUpdates `software.amazon.awssdk:dynamodb` from 2.46.15 to 2.46.21\n\nUpdates `software.amazon.awssdk:imds` from 2.46.15 to 2.46.21\n\nUpdates `software.amazon.awssdk:auth` from 2.46.15 to 2.46.21\n\nUpdates `software.amazon.awssdk:netty-nio-client` from 2.46.15 to 2.46.21\n\nUpdates `software.amazon.awssdk:bom` from 2.46.15 to 2.46.21\n\n---\nupdated-dependencies:\n- dependency-name: software.amazon.awssdk:s3\n  dependency-version: 2.46.21\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n- dependency-name: software.amazon.awssdk:ssm\n  dependency-version: 2.46.21\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n- dependency-name: software.amazon.awssdk:dynamodb\n  dependency-version: 2.46.21\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n- dependency-name: software.amazon.awssdk:imds\n  dependency-version: 2.46.21\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n- dependency-name: software.amazon.awssdk:auth\n  dependency-version: 2.46.21\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n- dependency-name: software.amazon.awssdk:netty-nio-client\n  dependency-version: 2.46.21\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n- dependency-name: software.amazon.awssdk:bom\n  dependency-version: 2.46.21\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "c76a8dea76d8e1503d13519068293b0c728869ae",
+      "date": "2026-06-29T15:22:46Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump org.jreleaser from 1.24.0 to 1.25.0\n\nBumps org.jreleaser from 1.24.0 to 1.25.0.\n\n---\nupdated-dependencies:\n- dependency-name: org.jreleaser\n  dependency-version: 1.25.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "401734c73839fbf1da0bf53489fed60346a8291a",
+      "date": "2026-06-26T15:23:03Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump gradle-wrapper from 9.6.0 to 9.6.1\n\nBumps [gradle-wrapper](https://github.com/gradle/gradle) from 9.6.0 to 9.6.1.\n- [Release notes](https://github.com/gradle/gradle/releases)\n- [Commits](https://github.com/gradle/gradle/compare/v9.6.0...v9.6.1)\n\n---\nupdated-dependencies:\n- dependency-name: gradle-wrapper\n  dependency-version: 9.6.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    }
+  ],
+  "commit_sha": "2efec578ff1d4d7a33d26702ff34d8cf957412c4",
+  "extracted_at": "2026-10-05T18:00:56.268125+00:00"
+}

@@ -1,0 +1,60 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "3.2.0;3.2.3",
+  "spring_boot_major": "3",
+  "java_versions_declared": "21",
+  "build_evidence": [
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "sushibar-backend-app/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "sushibar-backend-app/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb"
+    },
+    {
+      "file": "sushibar-backend-app/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "sushibar-backend-app/pom.xml",
+      "artifact": "spring-boot-starter-oauth2-client"
+    },
+    {
+      "file": "sushibar-backend-app/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "sushibar-backend-app/pom.xml",
+      "artifact": "spring-boot-docker-compose"
+    },
+    {
+      "file": "sushibar-backend-app/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "sushibar-backend-cook/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "sushibar-backend-cook/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "sushibar-backend-cook/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "sushibar-backend-cook/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

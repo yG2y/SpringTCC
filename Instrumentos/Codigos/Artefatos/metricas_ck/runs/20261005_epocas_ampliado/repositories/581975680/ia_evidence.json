@@ -1,0 +1,230 @@
+{
+  "ia_status": "com_evidencia",
+  "ia_level": 2,
+  "ia_agents": "Claude Code",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "5b221ec51b4f7aa064ab83675fdc055d577bbe23",
+      "trailer": "Claude Fable 5 <noreply@anthropic.com>"
+    }
+  ],
+  "commits": [
+    {
+      "sha": "d971616d80755f7a69ba8a06b5c6489147955801",
+      "date": "2026-07-25T21:38:19+04:00",
+      "author": "M",
+      "email": "m4spam@gmail.com",
+      "message": "[maven-release-plugin] prepare for next development iteration\n"
+    },
+    {
+      "sha": "3ae2b5b7b345e1f6b768a89db429302160e45958",
+      "date": "2026-07-25T21:37:57+04:00",
+      "author": "M",
+      "email": "m4spam@gmail.com",
+      "message": "[maven-release-plugin] prepare release v1.0.6\n"
+    },
+    {
+      "sha": "cc1c40a19c70ed7ea230abce931d1a7fa2af19b0",
+      "date": "2026-07-25T21:36:24+04:00",
+      "author": "Claude",
+      "email": "noreply@anthropic.com",
+      "message": "Document annotation API and AdminModelAction\n"
+    },
+    {
+      "sha": "809106bbeac91c780c034c3d051034e4e5fea66b",
+      "date": "2026-07-25T21:27:34+04:00",
+      "author": "Claude",
+      "email": "noreply@anthropic.com",
+      "message": "Document configuration properties at binding sites\n"
+    },
+    {
+      "sha": "89eeaf138d1bf3e4c94e389c86c235b87ef5f082",
+      "date": "2026-07-25T21:15:37+04:00",
+      "author": "M",
+      "email": "m4spam@gmail.com",
+      "message": "Bundle readme with release jar. Created auth plugin readme.\n"
+    },
+    {
+      "sha": "3b63c4861d6563ba07fcad64fb3a25457938cd36",
+      "date": "2026-07-23T16:02:18+04:00",
+      "author": "M",
+      "email": "m4spam@gmail.com",
+      "message": "[maven-release-plugin] prepare for next development iteration\n"
+    },
+    {
+      "sha": "d922e85dd2c08660e0a7ca2b589c1ca18eac5d91",
+      "date": "2026-07-23T16:01:56+04:00",
+      "author": "M",
+      "email": "m4spam@gmail.com",
+      "message": "[maven-release-plugin] prepare release v1.0.5\n"
+    },
+    {
+      "sha": "947939b2035ba3d6439d43c551f33c026640a8b5",
+      "date": "2026-07-23T16:00:28+04:00",
+      "author": "M",
+      "email": "m4spam@gmail.com",
+      "message": "Explicit order for `adminSecurityChain`\n"
+    },
+    {
+      "sha": "2dd0ee4e4e04848fa3a32bc64ad24ae70b4d2e14",
+      "date": "2026-07-23T11:33:01+04:00",
+      "author": "M",
+      "email": "m4spam@gmail.com",
+      "message": "[maven-release-plugin] prepare for next development iteration\n"
+    },
+    {
+      "sha": "aece635c87031f2586204b6c3b19359cd7550b19",
+      "date": "2026-07-23T11:32:40+04:00",
+      "author": "M",
+      "email": "m4spam@gmail.com",
+      "message": "[maven-release-plugin] prepare release v1.0.4\n"
+    },
+    {
+      "sha": "472b49ba46d5fd4f9d20aa14aed5a2cd68c86dbb",
+      "date": "2026-07-23T11:31:18+04:00",
+      "author": "M",
+      "email": "m4spam@gmail.com",
+      "message": "Explicitly exclude `demo` from publication in parent pom\n"
+    },
+    {
+      "sha": "fe863dda4802a16d498e6f4e3b77efd75b01e6ea",
+      "date": "2026-07-23T11:00:37+04:00",
+      "author": "M",
+      "email": "m4spam@gmail.com",
+      "message": "Bump dependencies\n"
+    },
+    {
+      "sha": "4db18332eeed7e4af2e0fe8533452d092a95232b",
+      "date": "2026-07-23T10:57:27+04:00",
+      "author": "M",
+      "email": "m4spam@gmail.com",
+      "message": "Relax `waitUntil` rule\n"
+    },
+    {
+      "sha": "5b221ec51b4f7aa064ab83675fdc055d577bbe23",
+      "date": "2026-07-23T10:53:43+04:00",
+      "author": "Claude Fable 5",
+      "email": "noreply@anthropic.com",
+      "message": "Document 1.0.4 features in README\n\nCover to-one autocomplete and its properties, search through relation\npaths, @AdminLink mappedBy for ambiguous references, the history log,\nKotlin support, and async JPA bootstrap; bump the BOM example to 1.0.4.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\n"
+    },
+    {
+      "sha": "4283892c94f52183ffcc92d64956239908e1a994",
+      "date": "2026-07-23T10:25:38+04:00",
+      "author": "M",
+      "email": "m4spam@gmail.com",
+      "message": "Honor `spring.jpa.bootstrap=async`\n"
+    },
+    {
+      "sha": "a5ec9ecd708804308c95ea94b0231aa9c4ca8c33",
+      "date": "2026-07-23T00:57:54+04:00",
+      "author": "M",
+      "email": "m4spam@gmail.com",
+      "message": "passWordStrength -> passwordStrength\n"
+    },
+    {
+      "sha": "94de4fb1ac78c6e9beb442b87da8e4e52e2c4172",
+      "date": "2026-07-23T00:35:53+04:00",
+      "author": "M",
+      "email": "m4spam@gmail.com",
+      "message": "HUGE refactoring and autocomplete capability for ToOne fields.\n"
+    },
+    {
+      "sha": "0cd09998d978c26984a51d7d8d06de3f634346b2",
+      "date": "2026-07-20T23:38:22+04:00",
+      "author": "M",
+      "email": "m4spam@gmail.com",
+      "message": "Harden form-field binding and link uniqueness-violation conflicts\n"
+    },
+    {
+      "sha": "afdaf256ae8e5b0ed92cc897ef4849f6d7fb3b03",
+      "date": "2026-07-20T23:26:36+04:00",
+      "author": "M",
+      "email": "m4spam@gmail.com",
+      "message": "Extract EntityOptionMapper for relation option mapping\n"
+    },
+    {
+      "sha": "443b31713774a775fa79858cc8db089d23655ef3",
+      "date": "2026-07-20T23:25:57+04:00",
+      "author": "M",
+      "email": "m4spam@gmail.com",
+      "message": "Look up admin models by entity class\n"
+    },
+    {
+      "sha": "564033d515c508e0922a82fa5d4fc8ba10fb94df",
+      "date": "2026-07-20T23:10:50+04:00",
+      "author": "M",
+      "email": "m4spam@gmail.com",
+      "message": "Accept List<? extends @Nullable Object> for list entry attributes\n"
+    },
+    {
+      "sha": "537c115b2dd8ce8fb7a75d959aec5ba44b3ba033",
+      "date": "2026-07-20T23:10:50+04:00",
+      "author": "M",
+      "email": "m4spam@gmail.com",
+      "message": "Match nothing for unconvertible filter values instead of throwing\n"
+    },
+    {
+      "sha": "2539ef502c1c9472a1bd05e5055b7140f32e44b7",
+      "date": "2026-07-20T23:03:36+04:00",
+      "author": "M",
+      "email": "m4spam@gmail.com",
+      "message": "Assert non-null authentication and user id in login success handler\n"
+    },
+    {
+      "sha": "1d30b5de68c51ededdb44e5f2791681965dcfa88",
+      "date": "2026-07-20T23:03:36+04:00",
+      "author": "M",
+      "email": "m4spam@gmail.com",
+      "message": "Return empty/unwrapped predicate from CompositeSearchPredicateFactory\n"
+    },
+    {
+      "sha": "1caea526a63c7cd09a7a22b11ef76d85bcdd633c",
+      "date": "2026-07-20T23:03:36+04:00",
+      "author": "M",
+      "email": "m4spam@gmail.com",
+      "message": "Lower-case search queries with `Locale.ROOT`\n"
+    },
+    {
+      "sha": "450d2783a42fc02e8a4486c0d71e0e1a152a9106",
+      "date": "2026-07-20T22:58:04+04:00",
+      "author": "M",
+      "email": "m4spam@gmail.com",
+      "message": "Delete entities via `em.remove` so cascades and lifecycle callbacks run\n"
+    },
+    {
+      "sha": "2f4201bce14107887484a66f17c9b533b956594e",
+      "date": "2026-07-20T22:51:39+04:00",
+      "author": "M",
+      "email": "m4spam@gmail.com",
+      "message": "Encode redirect path variables via URI templates instead of concatenation\n"
+    },
+    {
+      "sha": "8f2e1280639fc9afcc3cc40f7bcc6a3955fc2bc2",
+      "date": "2026-07-20T22:51:14+04:00",
+      "author": "M",
+      "email": "m4spam@gmail.com",
+      "message": "Fold AdminStringUtils backslash case into the parameterized escape test\n"
+    },
+    {
+      "sha": "b79273e786bb05a8ac96d6b60fa5b35361becd50",
+      "date": "2026-07-20T22:51:14+04:00",
+      "author": "M",
+      "email": "m4spam@gmail.com",
+      "message": "Add unit test for AdminUrlParamsHelper\n"
+    },
+    {
+      "sha": "ad76fc71901c4be1b450d6ae965661ec8e5f80a6",
+      "date": "2026-07-20T22:51:14+04:00",
+      "author": "M",
+      "email": "m4spam@gmail.com",
+      "message": "Add unit tests for admin history writer and compiler\n"
+    }
+  ],
+  "commit_sha": "d971616d80755f7a69ba8a06b5c6489147955801",
+  "extracted_at": "2026-10-05T18:44:37.229614+00:00"
+}

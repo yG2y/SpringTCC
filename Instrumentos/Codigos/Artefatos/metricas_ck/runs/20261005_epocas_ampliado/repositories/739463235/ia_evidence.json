@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "9b6b8af4769d2d8c6c0c1477cc33a15cf6174f86",
+      "date": "2026-10-04T11:50:57+02:00",
+      "author": "seregamorph",
+      "email": "serega.morph@gmail.com",
+      "message": "Do not include-gradle-build by default\n"
+    },
+    {
+      "sha": "d5d34c594e034b0d860d4463ab4ac943896c9d42",
+      "date": "2026-10-04T11:42:12+02:00",
+      "author": "seregamorph",
+      "email": "serega.morph@gmail.com",
+      "message": "Add Testcontainers to integration tests\n"
+    },
+    {
+      "sha": "bccb40004c122a8f304d3d63c6ef6196d518c236",
+      "date": "2026-09-22T08:17:25+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "chore: bump ch.qos.logback:logback-classic from 1.2.3 to 1.6.3 (#50)\n\nBumps [ch.qos.logback:logback-classic](https://github.com/qos-ch/logback) from 1.2.3 to 1.6.3.\n- [Release notes](https://github.com/qos-ch/logback/releases)\n- [Commits](https://github.com/qos-ch/logback/compare/v_1.2.3...v_1.6.3)\n\n---\nupdated-dependencies:\n- dependency-name: ch.qos.logback:logback-classic\n  dependency-version: 1.6.3\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "7f7ee28e3eaf0266482935530e27d62cd9a33d4b",
+      "date": "2026-09-22T08:16:08+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "chore: bump slf4j.version from 2.0.18 to 2.0.19 (#51)\n\nBumps `slf4j.version` from 2.0.18 to 2.0.19.\n\nUpdates `org.slf4j:slf4j-api` from 2.0.18 to 2.0.19\n\nUpdates `org.slf4j:slf4j-simple` from 2.0.18 to 2.0.19\n\n---\nupdated-dependencies:\n- dependency-name: org.slf4j:slf4j-api\n  dependency-version: 2.0.19\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n- dependency-name: org.slf4j:slf4j-simple\n  dependency-version: 2.0.19\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "d3a4955a87324ce792a7b7e8abbc716f71f36457",
+      "date": "2026-09-20T20:52:11+02:00",
+      "author": "seregamorph",
+      "email": "serega.morph@gmail.com",
+      "message": "Enhance gradle settings\n"
+    },
+    {
+      "sha": "c5c81adc024e1a618c044a6641209005218608a9",
+      "date": "2026-09-20T20:51:46+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "chore: bump the maven-build-plugins group across 1 directory with 6 updates (#49)\n\nBumps the maven-build-plugins group with 6 updates in the / directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [org.codehaus.mojo:build-helper-maven-plugin](https://github.com/mojohaus/build-helper-maven-plugin) | `3.6.0` | `3.6.2` |\n| [org.apache.maven.plugins:maven-jar-plugin](https://github.com/apache/maven-jar-plugin) | `3.5.0` | `3.5.1` |\n| [org.sonatype.central:central-publishing-maven-plugin](https://github.com/sonatype/central-publishing-maven-plugin) | `0.10.0` | `0.11.0` |\n| [org.apache.maven.plugins:maven-deploy-plugin](https://github.com/apache/maven-deploy-plugin) | `3.1.4` | `3.2.0` |\n| [org.codehaus.mojo:versions-maven-plugin](https://github.com/mojohaus/versions) | `2.21.0` | `2.22.0` |\n| [org.codehaus.mojo:exec-maven-plugin](https://github.com/mojohaus/exec-maven-plugin) | `3.6.3` | `3.6.4` |\n\n\n\nUpdates `org.codehaus.mojo:build-helper-maven-plugin` from 3.6.0 to 3.6.2\n- [Release notes](https://github.com/mojohaus/build-helper-maven-plugin/releases)\n- [Commits](https://github.com/mojohaus/build-helper-maven-plugin/compare/3.6.0...3.6.2)\n\nUpdates `org.apache.maven.plugins:maven-jar-plugin` from 3.5.0 to 3.5.1\n- [Release notes](https://github.com/apache/maven-jar-plugin/releases)\n- [Commits](https://github.com/apache/maven-jar-plugin/compare/maven-jar-plugin-3.5.0...maven-jar-plugin-3.5.1)\n\nUpdates `org.sonatype.central:central-publishing-maven-plugin` from 0.10.0 to 0.11.0\n- [Commits](https://github.com/sonatype/central-publishing-maven-plugin/commits)\n\nUpdates `org.apache.maven.plugins:maven-deploy-plugin` from 3.1.4 to 3.2.0\n- [Release notes](https://github.com/apache/maven-deploy-plugin/releases)\n- [Commits](https://github.com/apache/maven-deploy-plugin/compare/maven-deploy-plugin-3.1.4...maven-deploy-plugin-3.2.0)\n\nUpdates `org.codehaus.mojo:versions-maven-plugin` from 2.21.0 to 2.22.0\n- [Release notes](https://github.com/mojohaus/versions/releases)\n- [Changelog](https://github.com/mojohaus/versions/blob/master/ReleaseNotes.md)\n- [Commits](https://github.com/mojohaus/versions/compare/2.21.0...2.22.0)\n\nUpdates `org.codehaus.mojo:exec-maven-plugin` from 3.6.3 to 3.6.4\n- [Release notes](https://github.com/mojohaus/exec-maven-plugin/releases)\n- [Commits](https://github.com/mojohaus/exec-maven-plugin/compare/3.6.3...3.6.4)\n\n---\nupdated-dependencies:\n- dependency-name: org.codehaus.mojo:build-helper-maven-plugin\n  dependency-version: 3.6.2\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: maven-build-plugins\n- dependency-name: org.apache.maven.plugins:maven-jar-plugin\n  dependency-version: 3.5.1\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: maven-build-plugins\n- dependency-name: org.sonatype.central:central-publishing-maven-plugin\n  dependency-version: 0.11.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: maven-build-plugins\n- dependency-name: org.apache.maven.plugins:maven-deploy-plugin\n  dependency-version: 3.2.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: maven-build-plugins\n- dependency-name: org.codehaus.mojo:versions-maven-plugin\n  dependency-version: 2.22.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: maven-build-plugins\n- dependency-name: org.codehaus.mojo:exec-maven-plugin\n  dependency-version: 3.6.4\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: maven-build-plugins\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "9c7a0233a5e430f6ed8ae54259e530497a21f140",
+      "date": "2026-09-20T20:43:36+02:00",
+      "author": "seregamorph",
+      "email": "serega.morph@gmail.com",
+      "message": "Enhance workflow rules\n"
+    },
+    {
+      "sha": "fcf4d330b96f42eb6fad5e06642f34b0de02b09b",
+      "date": "2026-09-20T15:29:04-03:00",
+      "author": "Jainish-123",
+      "email": "114804963+Jainish-123@users.noreply.github.com",
+      "message": "Add GitHub Actions workflow for PR validation (#37)\n\nRuns ./mvnw -B clean install on pull requests, on JDK 17 and 21."
+    },
+    {
+      "sha": "53f73976d7c1e30f217b8f54cdcadd3c761562a0",
+      "date": "2026-09-20T20:17:13+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "chore: bump org.jetbrains.kotlin:kotlin-stdlib from 2.3.21 to 2.4.20 (#47)\n\nBumps [org.jetbrains.kotlin:kotlin-stdlib](https://github.com/JetBrains/kotlin) from 2.3.21 to 2.4.20.\n- [Release notes](https://github.com/JetBrains/kotlin/releases)\n- [Changelog](https://github.com/JetBrains/kotlin/blob/master/ChangeLog.md)\n- [Commits](https://github.com/JetBrains/kotlin/compare/v2.3.21...v2.4.20)\n\n---\nupdated-dependencies:\n- dependency-name: org.jetbrains.kotlin:kotlin-stdlib\n  dependency-version: 2.4.20\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "66b7c308f569076ffde7a4d11d123f6b6cd121d3",
+      "date": "2026-09-20T20:10:58+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "chore: bump org.junit:junit-bom from 6.1.0 to 6.1.3 (#46)\n\nBumps [org.junit:junit-bom](https://github.com/junit-team/junit-framework) from 6.1.0 to 6.1.3.\n- [Release notes](https://github.com/junit-team/junit-framework/releases)\n- [Commits](https://github.com/junit-team/junit-framework/compare/r6.1.0...r6.1.3)\n\n---\nupdated-dependencies:\n- dependency-name: org.junit:junit-bom\n  dependency-version: 6.1.3\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "9edb82164f075827e255c32e5a25e2abde35ca97",
+      "date": "2026-09-20T20:09:54+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "chore: bump org.mockito.kotlin:mockito-kotlin from 5.4.0 to 6.3.0 (#45)\n\nBumps [org.mockito.kotlin:mockito-kotlin](https://github.com/mockito/mockito-kotlin) from 5.4.0 to 6.3.0.\n- [Release notes](https://github.com/mockito/mockito-kotlin/releases)\n- [Commits](https://github.com/mockito/mockito-kotlin/compare/5.4.0...v6.3.0)\n\n---\nupdated-dependencies:\n- dependency-name: org.mockito.kotlin:mockito-kotlin\n  dependency-version: 6.3.0\n  dependency-type: direct:development\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "6c2aa73ba4ddf2bf386e15f9569747f443b0f4f9",
+      "date": "2026-09-20T20:09:10+02:00",
+      "author": "seregamorph",
+      "email": "serega.morph@gmail.com",
+      "message": "maven-enforcer-plugin jdk version\n"
+    },
+    {
+      "sha": "a8aeb8f2a510b88882bddbcebcd172577ed9e795",
+      "date": "2026-09-20T20:06:04+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "chore: bump org.testng:testng from 7.10.2 to 7.12.0 (#44)\n\nBumps [org.testng:testng](https://github.com/testng-team/testng) from 7.10.2 to 7.12.0.\n- [Release notes](https://github.com/testng-team/testng/releases)\n- [Changelog](https://github.com/testng-team/testng/blob/master/CHANGES.txt)\n- [Commits](https://github.com/testng-team/testng/compare/7.10.2...7.12.0)\n\n---\nupdated-dependencies:\n- dependency-name: org.testng:testng\n  dependency-version: 7.12.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "c219ac8f49e2fef0b7660e95d1648058d40fc03c",
+      "date": "2026-09-20T20:02:17+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.apache.maven.plugins:maven-compiler-plugin (#38)\n\nBumps [org.apache.maven.plugins:maven-compiler-plugin](https://github.com/apache/maven-compiler-plugin) from 3.15.0 to 3.16.0.\n- [Release notes](https://github.com/apache/maven-compiler-plugin/releases)\n- [Commits](https://github.com/apache/maven-compiler-plugin/compare/maven-compiler-plugin-3.15.0...maven-compiler-plugin-3.16.0)\n\n---\nupdated-dependencies:\n- dependency-name: org.apache.maven.plugins:maven-compiler-plugin\n  dependency-version: 3.16.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "9d228d7bec4a2ba626fa14bf6998718104d977dc",
+      "date": "2026-09-20T20:01:14+02:00",
+      "author": "seregamorph",
+      "email": "serega.morph@gmail.com",
+      "message": "Polish .github/dependabot\n"
+    },
+    {
+      "sha": "9b0a0b03cd415a08e9bc32f19fdfc2c205102dde",
+      "date": "2026-09-20T14:55:49-03:00",
+      "author": "Jainish-123",
+      "email": "114804963+Jainish-123@users.noreply.github.com",
+      "message": "Add Dependabot config for maven and github-actions (#36)\n\n* Add Dependabot configuration for Maven and GitHub Actions\n\nWeekly version updates for the root pom.xml dependencies and plugins,\nand for the actions used in workflows. Dependabot only opens pull\nrequests, every update still requires review before merge.\n\n* Reword comments in dependabot.yml"
+    },
+    {
+      "sha": "0f2c608a81f0a520012523114e86bd615eae9718",
+      "date": "2026-09-19T17:10:27+02:00",
+      "author": "seregamorph",
+      "email": "serega.morph@gmail.com",
+      "message": "Readme version\n"
+    },
+    {
+      "sha": "2635caf4dc2325873c801d0c1f3c7f87902450ee",
+      "date": "2026-09-18T20:26:38+02:00",
+      "author": "seregamorph",
+      "email": "serega.morph@gmail.com",
+      "message": "1.2-SNAPSHOT\n"
+    },
+    {
+      "sha": "3a587a06942a8b55e12f662e68485e4dc4a02f93",
+      "date": "2026-09-16T04:28:21+09:00",
+      "author": "Seokhyeon Kim",
+      "email": "67903919+brody-0125@users.noreply.github.com",
+      "message": "fix: context cleanup for skipped Jupiter test classes (#33)\n\n## Problem\nWhen a Jupiter integration test class is skipped at class level (`@Disabled`, `@DisabledIf`, execution cancellation, etc.), the shared Spring context of its group is never auto-closed. Resources such as DB connection pools stay open while unrelated test groups run.\n\n## Cause\n`SmartDirtiesContextTestExecutionListener` marks a class complete in `afterTestClass`. A skipped class never receives this callback, so its group never becomes complete.\n\n## Fix\n- Add `SmartDirtiesSkippedClassListener`, a JUnit Platform `TestExecutionListener` (auto-registered via `META-INF/services`) that handles class-level `executionSkipped` events for Jupiter and reuses the existing completion/close logic.\n- The context is closed only when no remaining class in the group needs it.\n- If the whole group is skipped, the context is not loaded (only the configuration is resolved).\n\nScope: JUnit Jupiter only. TestNG and Kotest behavior is unchanged. The listener runs through the JUnit Platform Launcher, so it does not apply to direct engine execution such as `EngineTestKit`; the new tests use `LauncherFactory` for this reason."
+    },
+    {
+      "sha": "28c61a6767b35c22ddc8cc94d2900d8415b88dce",
+      "date": "2026-08-23T10:53:38+02:00",
+      "author": "seregamorph",
+      "email": "serega.morph@gmail.com",
+      "message": "Minor enhancements\n"
+    },
+    {
+      "sha": "825fa1c18582c98f6d025663fb9124a6e4006551",
+      "date": "2026-08-22T15:14:28+02:00",
+      "author": "seregamorph",
+      "email": "serega.morph@gmail.com",
+      "message": "Shift slf4j.version\n"
+    },
+    {
+      "sha": "098338a67ea0b02bb90af65ee37ea0df159080ba",
+      "date": "2026-08-22T12:12:51+02:00",
+      "author": "seregamorph",
+      "email": "serega.morph@gmail.com",
+      "message": "demo spring-boot 4.2.0-M1\n"
+    },
+    {
+      "sha": "0480d6e8998ebb3ef2f8b7872035a03a20a13e1c",
+      "date": "2026-08-22T10:09:41+02:00",
+      "author": "seregamorph",
+      "email": "serega.morph@gmail.com",
+      "message": "demo spring-boot 4.1.1\n"
+    },
+    {
+      "sha": "aa82878f0f4c22642ab52ea8b6f931b080d02b11",
+      "date": "2026-08-22T09:56:38+02:00",
+      "author": "seregamorph",
+      "email": "serega.morph@gmail.com",
+      "message": "demo spring-boot 4.0.8\n"
+    },
+    {
+      "sha": "bde81fad2c91f90f7465198b7e0212ef4b027273",
+      "date": "2026-08-01T22:53:53+02:00",
+      "author": "seregamorph",
+      "email": "serega.morph@gmail.com",
+      "message": "slf4j-api 2.0.18\n"
+    },
+    {
+      "sha": "6090280cc0de9e5624a3255b5ef858faf8edb7d2",
+      "date": "2026-07-31T08:56:01+02:00",
+      "author": "seregamorph",
+      "email": "serega.morph@gmail.com",
+      "message": "Spring Boot 4.x version\n"
+    },
+    {
+      "sha": "e8e115ddf42e7aec92fbcf8feebe5c6472402103",
+      "date": "2026-07-07T23:09:01+02:00",
+      "author": "seregamorph",
+      "email": "serega.morph@gmail.com",
+      "message": "surefire-cached-extension 0.31\n"
+    },
+    {
+      "sha": "fbeda5b2b84f2a1ef91d496602cd17aaea204bf9",
+      "date": "2026-07-07T22:39:16+02:00",
+      "author": "seregamorph",
+      "email": "serega.morph@gmail.com",
+      "message": "central-publishing-maven-plugin 0.10.0\n"
+    },
+    {
+      "sha": "ff7d03dfe73b1a1a61f780337978feb27c77963f",
+      "date": "2026-06-16T09:55:47+02:00",
+      "author": "seregamorph",
+      "email": "serega.morph@gmail.com",
+      "message": "Demo Spring Boot 4.1\n"
+    },
+    {
+      "sha": "f717f6d44dfd5e4ccb69790f3444b20a06a4e788",
+      "date": "2026-06-15T13:18:22+02:00",
+      "author": "seregamorph",
+      "email": "serega.morph@gmail.com",
+      "message": "Demo projects readme\n"
+    }
+  ],
+  "commit_sha": "9b6b8af4769d2d8c6c0c1477cc33a15cf6174f86",
+  "extracted_at": "2026-10-05T18:19:58.745976+00:00"
+}

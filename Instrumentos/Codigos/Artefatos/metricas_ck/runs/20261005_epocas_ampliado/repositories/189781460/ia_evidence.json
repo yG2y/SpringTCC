@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "9c1ef329d0727a73d2860010ef1fede99ba4793b",
+      "date": "2026-09-02T22:58:08+02:00",
+      "author": "sebpet182",
+      "email": "sebpet182@gmail.com",
+      "message": "Migration to Spotify Web API Wrapper 10.0.0 + code maturity\n"
+    },
+    {
+      "sha": "91852335bb5f0c977c4e4b7ec476a0e87b5ddad0",
+      "date": "2026-07-20T21:21:29+02:00",
+      "author": "sebpet182",
+      "email": "sebpet182@gmail.com",
+      "message": "Fixed a stupid regression\n"
+    },
+    {
+      "sha": "49e27cbf4c9f15d3194127c1a3f8a16b3343ab0f",
+      "date": "2026-03-09T21:45:20+01:00",
+      "author": "sebpet182",
+      "email": "sebpet182@gmail.com",
+      "message": "Updated and fixed for 2026 Spotify API reworks\nSee here: https://developer.spotify.com/blog/2026-02-06-update-on-developer-access-and-platform-security\n\n- \"Appears-on\" is completely dead due to the removal of the AlbumGroup field, and all instances/attempts/references to it have been from the source. This is probably the biggest change, but I really can't be bothered to rework everything from scratch for this. RIP\n- At least the aforementioned removal allowed for quite a lot of refactoring. Where removal wasn't outright required, all instances of AlbumGroup have been replaced with AlbumType\n- User no longer exposes market, so getMarketOfCurrentUser now simply tries to guess the market through the PC's locale. This means that, should the locale not match the current Spotify user, new releases get published at incorrect times. Maybe I can improve this at some point\n- Release crawls of followed artists will now only issue two requests for albums/singles with a maximum of 10 results each. Compilations are completely ignored (they never get released anyway).\n- Get artists doesn't allow for bulk fetch anymore, only individual ones. This will slow down the crawl process a lot, but there's nothing I can do.\n- All instances of PlaylistTrack::getTrack have been changed to PlaylistTrack::getItem\n- Playlist creation endpoint has been simplified\n- Max fetch limits have been reduced new lowered values (10 instead of 50)\n- Also finally updated Java, Spring, and Gradle while I was at it\n"
+    },
+    {
+      "sha": "38015899929f250bb7c000b09d4526a8d0a835b0",
+      "date": "2025-05-10T16:53:59+02:00",
+      "author": "sebpet182",
+      "email": "sebpet182@gmail.com",
+      "message": "Fixed the login process, which broke after Spotify enforced a new standard for how the Redirect URIs must be set up (https://developer.spotify.com/documentation/web-api/concepts/redirect_uri):\n- Replaced all instances of localhost with 127.0.0.1\n- Replaced all instances of /login-callback with /callback\n- Updated Readme to accommodate the changes\n"
+    },
+    {
+      "sha": "3cb7be099b37c3a18efa3b975b896e12d1e839fe",
+      "date": "2024-08-25T14:09:49+02:00",
+      "author": "sebpet182",
+      "email": "sebpet182@gmail.com",
+      "message": "Added auto_clear_notifications feature control flag\n"
+    },
+    {
+      "sha": "a5564b8d8e4e3efc06e8a1f0502889a69c0467a5",
+      "date": "2024-08-22T14:11:13+02:00",
+      "author": "sebpet182",
+      "email": "sebpet182@gmail.com",
+      "message": "- Fixed large database insertions causing trouble\n- Getting super rate limited now halts the app with an error message\n- More robust mass-fetch\n- More detailed initial fetch details\n- Updated dependencies\n"
+    },
+    {
+      "sha": "53af8247672d278232e15d66a22eb18e4d318d45",
+      "date": "2024-03-26T11:06:02+01:00",
+      "author": "sebpet182",
+      "email": "sebpet182@gmail.com",
+      "message": "Added /clear button to the logs site\n"
+    },
+    {
+      "sha": "a65247d1f6a114777903cc64a9627e44d63c79df",
+      "date": "2024-03-15T02:46:08+01:00",
+      "author": "sebpet182",
+      "email": "sebpet182@gmail.com",
+      "message": "Improved force clearing of notifiers\n"
+    },
+    {
+      "sha": "c162bd7987c37132d9e02bf82caec21b85cf8b78",
+      "date": "2024-03-03T17:34:51+01:00",
+      "author": "sebpet182",
+      "email": "sebpet182@gmail.com",
+      "message": "Fixed tests\n"
+    },
+    {
+      "sha": "32bdcd652e86d8d7ca6aec744596dc841ca6c1d4",
+      "date": "2024-03-03T17:10:44+01:00",
+      "author": "sebpet182",
+      "email": "sebpet182@gmail.com",
+      "message": "- Fixed a critical NPE\n- Removed some verbose debug logging\n"
+    },
+    {
+      "sha": "6609477eadf09203258c3c121e4de447540ee691",
+      "date": "2024-02-02T12:14:08+01:00",
+      "author": "sebpet182",
+      "email": "sebpet182@gmail.com",
+      "message": "- Updated forwarder service to properly handle whitelisted extended album groups\n- Updated dependencies\n"
+    },
+    {
+      "sha": "43dca3b835e00e0f78ae745063856313980511e8",
+      "date": "2023-12-05T01:12:27+01:00",
+      "author": "sebpet182",
+      "email": "sebpet182@gmail.com",
+      "message": "Minor adjustments\n"
+    },
+    {
+      "sha": "6c512d1677af5d0b2e6c763e4bcbb5776eb8fe1d",
+      "date": "2023-12-05T01:03:16+01:00",
+      "author": "sebpet182",
+      "email": "sebpet182@gmail.com",
+      "message": "- Unfollowed artists are now properly removed from the database cache\n- Added a bunch of debugging log messages, logging.level.spotify=DEBUG in application.properties\n"
+    },
+    {
+      "sha": "5099c7ceb31f291b6c3ba072cdadd3fc0f4ab274",
+      "date": "2023-07-12T03:06:28+02:00",
+      "author": "sebpet182",
+      "email": "sebpet182@gmail.com",
+      "message": "Fixed rare encoding issues when trying to read the log\n"
+    },
+    {
+      "sha": "43e48382dbc293caebe9c3bc536b2819f60730f3",
+      "date": "2023-07-02T16:28:58+02:00",
+      "author": "sebpet182",
+      "email": "sebpet182@gmail.com",
+      "message": "- FeatureControl has been reworked into application.properties\n- Updated application.properties template\n- application.properties forward renamed to forwarder\n"
+    },
+    {
+      "sha": "e87b1894974541e1c60ee3bd8f499245065270c2",
+      "date": "2023-07-01T20:06:03+02:00",
+      "author": "sebpet182",
+      "email": "sebpet182@gmail.com",
+      "message": "Reworked AutoPurgerService to allow for individual days\n"
+    },
+    {
+      "sha": "b1b0557ed9765bf67768c83be26a2968389e581f",
+      "date": "2023-07-01T19:34:48+02:00",
+      "author": "sebpet182",
+      "email": "sebpet182@gmail.com",
+      "message": "Reworked BlacklistService to draw its data from application.properties\n"
+    },
+    {
+      "sha": "7db726c8c770bdc0f460bd4c5764c1b1d1bd2284",
+      "date": "2023-07-01T18:38:17+02:00",
+      "author": "sebpet182",
+      "email": "sebpet182@gmail.com",
+      "message": "RelayService has been renamed to ForwarderService and is now solely defined in application.properties\n"
+    },
+    {
+      "sha": "9cca6439c0420b2dcd32a45d0eb5481f333205e9",
+      "date": "2023-06-29T14:57:57+02:00",
+      "author": "sebpet182",
+      "email": "sebpet182@gmail.com",
+      "message": "Added AutoPurger (user request)\n"
+    },
+    {
+      "sha": "a76d61edc5f41286a771a3e3c77cbdf5395b29ca",
+      "date": "2023-06-27T13:00:41+02:00",
+      "author": "sebpet182",
+      "email": "sebpet182@gmail.com",
+      "message": "Fixed rare NPE\n"
+    },
+    {
+      "sha": "42f4ec32f45952817dd3212d643dea650f3cb7e0",
+      "date": "2023-05-10T20:12:39+02:00",
+      "author": "sebpet182",
+      "email": "sebpet182@gmail.com",
+      "message": "- Moved the notifier stuff into MiscController\n- Manual calls to /clear (renamed from /clearnotifiers) now force-unsets all notifiers, no matter what\n"
+    },
+    {
+      "sha": "b61363a807410867999f4c50942c0375c506d1a1",
+      "date": "2023-04-24T14:28:02+02:00",
+      "author": "sebpet182",
+      "email": "sebpet182@gmail.com",
+      "message": "Reworked additions to playlists to be much faster on large batches of new releases + updated dependencies\n"
+    },
+    {
+      "sha": "bed954991e64bc58cf56c9b288a9a667fa9b107e",
+      "date": "2023-04-19T16:32:36+02:00",
+      "author": "sebpet182",
+      "email": "sebpet182@gmail.com",
+      "message": "Added remark about custom cronjobs\n"
+    },
+    {
+      "sha": "50fee34a6a64d028311f08907396a97f0f39a74b",
+      "date": "2023-04-19T16:32:17+02:00",
+      "author": "sebpet182",
+      "email": "sebpet182@gmail.com",
+      "message": "- DEV_MODE.ini has been renamed to feature_control.ini and moved into config folder\n- Inverted all dev settings (from \"is..Disabled\" to \"is...Enabled\")\n- Method has been reworked into a bean, rather than static class\n- Added feature_control.ini to templates\n- Fixed rare NPE\n"
+    },
+    {
+      "sha": "7abdc8800dabae34c72239283838c254cae550eb",
+      "date": "2023-04-14T15:24:27+02:00",
+      "author": "sebpet182",
+      "email": "sebpet182@gmail.com",
+      "message": "Typo\n"
+    },
+    {
+      "sha": "24995618c8c56a6acb4d9978e1458f3a15baf75a",
+      "date": "2023-04-14T15:24:04+02:00",
+      "author": "sebpet182",
+      "email": "sebpet182@gmail.com",
+      "message": "Minor improvements\n"
+    },
+    {
+      "sha": "648bd9522340dc5a4aad8c3650229cd4e9162f7b",
+      "date": "2023-04-14T03:05:45+02:00",
+      "author": "sebpet182",
+      "email": "sebpet182@gmail.com",
+      "message": "Log now only collapses when no text is selected\n"
+    },
+    {
+      "sha": "03c8f7375df6562a04af5a8ad2b69acde5e678ba",
+      "date": "2023-04-14T02:43:18+02:00",
+      "author": "sebpet182",
+      "email": "sebpet182@gmail.com",
+      "message": "- Crawl cron can now be manually overriden in application.properties (spotify.discovery.crawl.cron)\n- Renamed DEV_MODE.txt to DEV_MODE.ini\n"
+    },
+    {
+      "sha": "94ca1a718e5e2a5101d02ea000cab986e6b45bb5",
+      "date": "2023-04-14T02:09:59+02:00",
+      "author": "sebpet182",
+      "email": "sebpet182@gmail.com",
+      "message": "One more fix for the optimized notification clearance\n"
+    },
+    {
+      "sha": "002c2761af0c95877e32dd7eac0744fbc3890833",
+      "date": "2023-04-13T00:39:10+02:00",
+      "author": "sebpet182",
+      "email": "sebpet182@gmail.com",
+      "message": "- Fixed logic by new notification clearance being inverted\n- Fixed blacklisted album groups resulting in no additions still lighting up the notification marker\n- Reduced crawl clearance to every 10 seconds again (down from 5)\n"
+    }
+  ],
+  "commit_sha": "9c1ef329d0727a73d2860010ef1fede99ba4793b",
+  "extracted_at": "2026-10-05T18:43:52.925441+00:00"
+}

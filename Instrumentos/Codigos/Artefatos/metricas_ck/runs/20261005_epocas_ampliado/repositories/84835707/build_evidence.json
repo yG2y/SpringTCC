@@ -1,0 +1,76 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "2.5.6",
+  "spring_boot_major": "2",
+  "java_versions_declared": "1.8",
+  "build_evidence": [
+    {
+      "file": "eureka-serviceregistry/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "eureka-serviceregistry/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-boot-admin/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "weatherbackend/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "weatherbackend/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "weatherbackend/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "weatherbackend/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "weatherbackend/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "weatherclient/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "weatherclient/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "weatherclient/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "weatherclient/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "weatherservice/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "weatherservice/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "zuul-edgeservice/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "zuul-edgeservice/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "c60b493e585a70158bb876c5396df244821c4b84",
+      "date": "2026-01-29T18:40:50+02:00",
+      "author": "Petros Moustopoulos",
+      "email": "pet.moustopoulos@gmail.com",
+      "message": "Updates dependency versions in pom.xml\n\nUpgraded Spring Boot to 3.5.10 and other libraries, including Springdoc OpenAPI (2.8.15), Apache POI (5.5.1), JaCoCo Maven Plugin (0.8.14), and Bucket4j JDK17 Core (8.16.0). These updates improve compatibility, stability, and ensure access to the latest features.\n"
+    },
+    {
+      "sha": "3528d4845f5ae4503276e0c8b62c78e80ac22031",
+      "date": "2025-11-22T20:24:52+02:00",
+      "author": "Petros Moustopoulos",
+      "email": "pet.moustopoulos@gmail.com",
+      "message": "Configures H2 database and updates dependencies\n\nConfigures the application to use an H2 database with PostgreSQL compatibility mode.\n\nThis includes:\n- Updating Spring Boot to version 3.5.8.\n- Configuring the H2 datasource URL for PostgreSQL compatibility and case-insensitive database names.\n- Renaming the Flyway migration scripts to remove the \"h2\" or \"postgresql\" prefixes for database agnostic migrations.\n- Updating the Flyway locations in application.yaml and application-testcontainers.yaml to classpath:db/migration.\n- Removing the old schema and data initialization SQL scripts.\n\nThese changes enhance development environment consistency and simplify database setup.\n"
+    },
+    {
+      "sha": "ed2fc182bd48b929a3897ff81e3696869f0b9a98",
+      "date": "2025-10-26T19:06:38+02:00",
+      "author": "Petros Moustopoulos",
+      "email": "pet.moustopoulos@gmail.com",
+      "message": "Updates Spring Boot to 3.5.7.\n\nUpdates Spring Boot version to the latest stable release, 3.5.7.\n\nRefactors report controller to use `ContentDisposition.attachment()` for setting HTTP headers.\nThis provides better control over filename encoding and handles special characters correctly,\nimproving compatibility with different browsers and systems.\nRemoves the old way of setting headers, leading to cleaner and more maintainable code.\n"
+    },
+    {
+      "sha": "b8f538ea295575294ab115f0042f93a3d4660a55",
+      "date": "2025-09-22T22:57:57+03:00",
+      "author": "Petros Moustopoulos",
+      "email": "pet.moustopoulos@gmail.com",
+      "message": "Updates dependencies\n\nUpdates Spring Boot and other dependencies to their latest versions.\n\nThis resolves potential security vulnerabilities and ensures compatibility with the latest features and improvements.\n"
+    },
+    {
+      "sha": "567ac0470c1e6f5ce025dec431c8d9a84c5bf3cd",
+      "date": "2025-07-20T22:49:18+03:00",
+      "author": "Petros Moustopoulos",
+      "email": "pet.moustopoulos@gmail.com",
+      "message": "Merge remote-tracking branch 'origin/snyk-upgrade-87270c72f13f0cb706456350c16ee162'\n"
+    },
+    {
+      "sha": "0f6470a1fd7d8659c2efdf4a6a6564e4a752df05",
+      "date": "2025-07-16T09:08:10Z",
+      "author": "snyk-bot",
+      "email": "snyk-bot@snyk.io",
+      "message": "fix: upgrade org.springdoc:springdoc-openapi-starter-webmvc-ui from 2.8.8 to 2.8.9\n\nSnyk has created this PR to upgrade org.springdoc:springdoc-openapi-starter-webmvc-ui from 2.8.8 to 2.8.9.\n\nSee this package in maven:\norg.springdoc:springdoc-openapi-starter-webmvc-ui\n\nSee this project in Snyk:\nhttps://app.snyk.io/org/pmoustopoulos/project/2dd0565b-edaf-4415-8f78-c7ad72073506?utm_source=github&utm_medium=referral&page=upgrade-pr"
+    },
+    {
+      "sha": "3a7b1d30ba16dcc396f56f27365c7c7d02602d71",
+      "date": "2025-07-03T23:40:20+03:00",
+      "author": "Petros Moustopoulos",
+      "email": "pet.moustopoulos@gmail.com",
+      "message": "Improves exception logging in handler\n\nEnhances the exception logging in the global exception handler\nby including the exception itself in the log message. This\nprovides more detailed information for debugging and troubleshooting\npurposes.\n"
+    },
+    {
+      "sha": "7b4a2f2baf3d744295a1554bd1fc077db7fe3547",
+      "date": "2025-05-28T00:19:46+03:00",
+      "author": "Petros Moustopoulos",
+      "email": "pet.moustopoulos@gmail.com",
+      "message": "Updates Spring Boot and Springdoc versions\n\nUpdates Spring Boot version to 3.5.0 and Springdoc to 2.8.8.\n\nThese upgrades likely include bug fixes, performance improvements, and new features provided by the updated libraries.\n"
+    },
+    {
+      "sha": "c0aa745c15bcfb794f0dce3135af14a4ae6b44ca",
+      "date": "2025-05-08T20:59:26+03:00",
+      "author": "Petros Moustopoulos",
+      "email": "pet.moustopoulos@gmail.com",
+      "message": "Fix and enable test for generating empty multi-sheet report\n\nRe-enabled the previously disabled unit test for generating an empty multi-sheet Excel report. Updated assertions and verifications to reflect changes, ensuring empty collections are properly handled and the file content is not null. Adjusted mock behaviors to improve test accuracy and coverage.\n"
+    },
+    {
+      "sha": "e7ef6d63f0276ded6ec43d6e7f98a2fb9b8079c7",
+      "date": "2025-05-08T20:49:40+03:00",
+      "author": "Petros Moustopoulos",
+      "email": "pet.moustopoulos@gmail.com",
+      "message": "Update dependency and re-enable fixed unit test\n\nUpgraded Spring Boot parent version to 3.4.5 in pom.xml for compatibility and stability improvements. Re-enabled and corrected the previously disabled test in ReportServiceImplTest to validate the generation and zipping of empty Excel reports with updated mock handling.\n"
+    },
+    {
+      "sha": "ca910fce831a4f31c25de0c63d23c5bde79ace70",
+      "date": "2025-04-23T22:10:49+03:00",
+      "author": "Petros Moustopoulos",
+      "email": "pet.moustopoulos@gmail.com",
+      "message": "Update dependency versions in pom.xml\n\nUpgraded Spring Boot and various library versions to ensure compatibility, bug fixes, and new features. Updated dependencies include Spring Boot (3.4.4), Springdoc OpenAPI (2.8.6), Apache POI (5.4.1), and JaCoCo Maven Plugin (0.8.13). This helps maintain up-to-date and stable dependencies across the project.\n"
+    },
+    {
+      "sha": "ba0281cba667ba85305e3952e39b80dfa2db05ee",
+      "date": "2025-02-24T00:02:08+02:00",
+      "author": "Petros Moustopoulos",
+      "email": "pet.moustopoulos@gmail.com",
+      "message": "Add example annotation for 'page' field in DTOs\n\nThe 'page' field in DepartmentSearchCriteriaDTO and EmployeeSearchCriteriaDTO now includes an example annotation for better API documentation. Updated the OpenAPI specification to reflect these changes and adjusted the order of some fields for consistency.\n"
+    },
+    {
+      "sha": "82ed7493dd24c4bd6d450a40097ab9591a2b8da1",
+      "date": "2025-02-23T23:36:43+02:00",
+      "author": "Petros Moustopoulos",
+      "email": "pet.moustopoulos@gmail.com",
+      "message": "Update Java version to 21 and improve logging in ServerDetails\n\nUpgraded the project to require Java 21 in `pom.xml` and `README.md`. Replaced Lombok's `@Slf4j` with a manually initialized SLF4J logger in `ServerDetails`, and improved code readability by inlining constants. These changes ensure compatibility and enhance maintainability.\n"
+    },
+    {
+      "sha": "a3d0ec157a6e4d8324eeb524a50b28a1efc09595",
+      "date": "2025-02-23T23:23:54+02:00",
+      "author": "Petros Moustopoulos",
+      "email": "pet.moustopoulos@gmail.com",
+      "message": "Replace Base64 encoding with raw byte array for file handling.\n\nEliminated unnecessary Base64 encoding/decoding in file operations by directly utilizing byte arrays. Updated `FileDTO` to store bytes instead of strings, adjusted related services, controllers, and tests accordingly, ensuring more efficient file processing.\n"
+    },
+    {
+      "sha": "7b6a65731448c4ca94369222a0bf409b7a77216e",
+      "date": "2025-02-23T23:13:21+02:00",
+      "author": "Petros Moustopoulos",
+      "email": "pet.moustopoulos@gmail.com",
+      "message": "Refactor test annotations to use `@MockitoBean` instead of `@MockBean`\n\nReplaced `@MockBean` annotations with `@MockitoBean` across various controller test classes for consistency and updated imports accordingly. This ensures compatibility with the updated test context configuration.\n"
+    },
+    {
+      "sha": "87b52cb421e690a80cbc2deef79b4ab1abe4fa74",
+      "date": "2025-02-23T23:02:37+02:00",
+      "author": "Petros Moustopoulos",
+      "email": "pet.moustopoulos@gmail.com",
+      "message": "Replace custom exceptions with standard JPA exceptions\n\nReplaced `ResourceNotFoundException` and `ResourceAlreadyExistException` with standard JPA exceptions `EntityNotFoundException` and `EntityExistsException`. Updated exception handling in `GlobalExceptionHandler`, service implementations, and associated test cases to align with these changes. Additionally, upgraded dependencies in `pom.xml` to the latest versions.\n"
+    },
+    {
+      "sha": "74c444a7a2bce1346eb55687be97eb46a1c4a4cd",
+      "date": "2024-12-10T20:24:02+02:00",
+      "author": "pmoustopoulos",
+      "email": "37026320+pmoustopoulos@users.noreply.github.com",
+      "message": "fix: upgrade org.mapstruct:mapstruct from 1.6.2 to 1.6.3 (#26)\n\nSnyk has created this PR to upgrade org.mapstruct:mapstruct from 1.6.2 to 1.6.3.\n\nSee this package in maven:\norg.mapstruct:mapstruct\n\nSee this project in Snyk:\nhttps://app.snyk.io/org/pmoustopoulos/project/2dd0565b-edaf-4415-8f78-c7ad72073506?utm_source=github&utm_medium=referral&page=upgrade-pr\n\nCo-authored-by: snyk-bot <snyk-bot@snyk.io>"
+    },
+    {
+      "sha": "a19f97bb1bd6ba9957e46952951a4e818b52e255",
+      "date": "2024-11-24T16:19:49+02:00",
+      "author": "Petros Moustopoulos",
+      "email": "pet.moustopoulos@gmail.com",
+      "message": "Switch to dynamic OpenAPI configuration\n\nReplace the static `@OpenAPIDefinition` annotation with a dynamic `OpenAPI` bean to fetch metadata from application properties. Enhanced logging by adding profile information and showing the OpenAPI docs URL during fetching attempts.\n"
+    },
+    {
+      "sha": "ade18fdf46d5cd461cc3378ef879e2aa5d223074",
+      "date": "2024-11-24T15:56:21+02:00",
+      "author": "Petros Moustopoulos",
+      "email": "pet.moustopoulos@gmail.com",
+      "message": "Update springdoc-openapi-starter-webmvc-ui to 2.7.0\n\nUpgraded the springdoc-openapi-starter-webmvc-ui dependency from version 2.6.0 to 2.7.0 in the pom.xml file. This update ensures we are using the latest features and bug fixes provided in the new version.\n"
+    },
+    {
+      "sha": "e7ed6beb24ab7e37c28104b6f132088ff1e98d27",
+      "date": "2024-11-24T15:14:37+02:00",
+      "author": "Petros Moustopoulos",
+      "email": "pet.moustopoulos@gmail.com",
+      "message": "Update Spring Boot version to 3.4.0\n\nUpgraded the parent Spring Boot dependency from version 3.3.5 to 3.4.0 in the pom.xml file. This change aims to leverage new features and improvements in the latest Spring Boot release.\n"
+    },
+    {
+      "sha": "d26fd5c7e0bd202286f3c20c9f7ad9d53797e67b",
+      "date": "2024-11-20T21:32:49+02:00",
+      "author": "Petros Moustopoulos",
+      "email": "pet.moustopoulos@gmail.com",
+      "message": "Update JasperReports version in pom.xml\n\nUpgraded net.sf.jasperreports from version 6.21.3 to 6.21.4. This change aims to incorporate the latest fixes and improvements available in the newer version of JasperReports.\n"
+    },
+    {
+      "sha": "ee90731893864765373f740d17919602d5544fd0",
+      "date": "2024-11-10T21:44:11+02:00",
+      "author": "Petros Moustopoulos",
+      "email": "pet.moustopoulos@gmail.com",
+      "message": "Upgrade Bucket4j dependency to JDK 17 compatible version\n\nUpdated the pom.xml to use `bucket4j_jdk17-core` version `8.14.0` instead of `bucket4j-core` version `8.10.1`. Adjusted the RateLimitingFilter class to reference the general Bucket4j documentation.\n"
+    },
+    {
+      "sha": "af83247e8107fe80a6ccf844f560547c04116b5f",
+      "date": "2024-11-10T18:39:56+02:00",
+      "author": "Petros Moustopoulos",
+      "email": "pet.moustopoulos@gmail.com",
+      "message": "Implement rate limiting tests\n\nAdded Bucket4j-based rate limiting configuration in application YAML files, specifying max requests and refill duration. Included integration tests to validate rate limiting functionality and ensure proper handling of \"Too Many Requests\" scenarios. Updated RateLimitingFilter to use YAML configurations.\n"
+    },
+    {
+      "sha": "2dfdac7ef30651efddfe8a523d2670fa96d3741f",
+      "date": "2024-11-10T17:53:50+02:00",
+      "author": "Petros Moustopoulos",
+      "email": "pet.moustopoulos@gmail.com",
+      "message": "Add rate limiting with Bucket4j\n\nImplemented IP-based rate limiting using Bucket4j to restrict API requests. Added supporting code and tests, and updated the README with details on the rate limiting configuration.\n"
+    },
+    {
+      "sha": "51414fe2db5a7651c608efe939483ce17d3faf78",
+      "date": "2024-10-26T00:37:53+03:00",
+      "author": "Petros Moustopoulos",
+      "email": "pet.moustopoulos@gmail.com",
+      "message": "Update Spring Boot parent version to 3.3.5\n\nUpgraded Spring Boot parent version from 3.3.3 to 3.3.5 in pom.xml. This update includes important dependency and stability improvements. Ensuring the project benefits from the latest fixes and enhancements.\n"
+    },
+    {
+      "sha": "4eac17d1b5304aaadf1de52e3dae8e02c7e75aa0",
+      "date": "2024-10-21T15:31:08+03:00",
+      "author": "Petros Moustopoulos",
+      "email": "pet.moustopoulos@gmail.com",
+      "message": "Add JacksonConfig to enable Spring Data web support\n\nCreated a new configuration class, JacksonConfig, to configure Spring Data web support. This class enables pagination serialization via DTO, enhancing the handling of paged data responses. This will fix the warning:\n\nSerializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!\n\tFor a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))\n\tor Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.\n"
+    },
+    {
+      "sha": "e111ccc88b6c2bac9dd88e73fbc6be37e21b9165",
+      "date": "2024-10-06T00:03:09+03:00",
+      "author": "Petros Moustopoulos",
+      "email": "pet.moustopoulos@gmail.com",
+      "message": "Update LoggingFilter to log client IP and change YAML placeholders\n\nEnhanced the LoggingFilter to include client IP addresses in the request logs. Updated application.yaml to replace occurrences of `@project.artifactId@` with `@project.name@`, aligning configurations with the new project naming conventions.\n"
+    },
+    {
+      "sha": "a2b43232a44dc1021200ff495d851da532313ba9",
+      "date": "2024-10-05T19:09:48+03:00",
+      "author": "Petros Moustopoulos",
+      "email": "pet.moustopoulos@gmail.com",
+      "message": "Refactor Hibernate dialect configuration\n\nMoved the Hibernate dialect configuration under jpa.properties. This ensures better organization and adherence to standard property nesting conventions.\n"
+    },
+    {
+      "sha": "a39f42e054fd2d4658410fe4ae8c48a77e207b78",
+      "date": "2024-10-05T18:51:19+03:00",
+      "author": "Petros Moustopoulos",
+      "email": "pet.moustopoulos@gmail.com",
+      "message": "Update Hibernate config and Flyway dependencies\n\nMoved Hibernate `ddl-auto` setting to correct location in `application-test.yaml`. Upgraded Spring Boot version in `pom.xml` and added Flyway PostgreSQL dependency.\n"
+    },
+    {
+      "sha": "3e5ec14d24787d9b2bf51f324ae53b2d6df91f31",
+      "date": "2024-09-20T08:51:53+03:00",
+      "author": "Petros Moustopoulos",
+      "email": "pet.moustopoulos@gmail.com",
+      "message": "Add testcontainers profile to integration tests\n\nIncluded the @ActiveProfiles annotation with \"testcontainers\" profile in EmployeeControllerIntegrationTest, EmailControllerIntegrationTest, and DepartmentControllerIntegrationTest. Also added a new application-testcontainers.yaml file to configure the testcontainers environment, setting up a PostgreSQL database and mail server mock.\n"
+    }
+  ],
+  "commit_sha": "c60b493e585a70158bb876c5396df244821c4b84",
+  "extracted_at": "2026-10-05T18:30:38.234802+00:00"
+}

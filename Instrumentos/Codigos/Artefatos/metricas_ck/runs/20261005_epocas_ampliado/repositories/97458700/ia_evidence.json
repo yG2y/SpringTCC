@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "85cd195af8cdf3a68daed95b2f9b6d586542eddb",
+      "date": "2025-07-28T00:07:06+02:00",
+      "author": "Jens Oberender",
+      "email": "burberius@users.noreply.github.com",
+      "message": "Removed db cleanup\n"
+    },
+    {
+      "sha": "8df3cb9a4243a1e973acd21b2635403b7906f6fa",
+      "date": "2025-07-28T00:03:21+02:00",
+      "author": "Jens Oberender",
+      "email": "burberius@users.noreply.github.com",
+      "message": "More tests\n"
+    },
+    {
+      "sha": "93443ca0794328a866bae42b700084a736e3209a",
+      "date": "2025-07-27T18:49:59+02:00",
+      "author": "Jens Oberender",
+      "email": "burberius@users.noreply.github.com",
+      "message": "Delete all contract data, once.\n"
+    },
+    {
+      "sha": "208af3b31e7c0f026d65b5dce24893798b92a9d3",
+      "date": "2025-07-27T18:34:24+02:00",
+      "author": "Jens Oberender",
+      "email": "burberius@users.noreply.github.com",
+      "message": "Updated to differentiate between BPCs (typeId * -1) and BPOs. Added a cache for the query of the price map.\n"
+    },
+    {
+      "sha": "9b837a1d1333b4d851aba8e9641933e4b78b9431",
+      "date": "2025-07-26T16:10:34+02:00",
+      "author": "Jens Oberender",
+      "email": "burberius@users.noreply.github.com",
+      "message": "Fix test\n"
+    },
+    {
+      "sha": "3b6429e597b4a6fa50e2a6d477fbc3f9957359da",
+      "date": "2025-07-26T16:02:25+02:00",
+      "author": "Jens Oberender",
+      "email": "burberius@users.noreply.github.com",
+      "message": "Only publish when there really were contract price queries!\n"
+    },
+    {
+      "sha": "c45a9235e918686d10b314c486cfe65e7e0c720b",
+      "date": "2025-07-15T17:06:33+02:00",
+      "author": "Jens Oberender",
+      "email": "burberius@users.noreply.github.com",
+      "message": "Added rest endpoint for the contract prices, changed logging from discord to console logging.\n"
+    },
+    {
+      "sha": "d9b01505895f523a3a65eef9a196d6c776ec2788",
+      "date": "2025-07-07T22:35:19+02:00",
+      "author": "Jens Oberender",
+      "email": "burberius@users.noreply.github.com",
+      "message": "Change cron, only use sell contracts, fix search\n"
+    },
+    {
+      "sha": "db634c5f47637d1c54f65e9d6f1f9a05c0b7529c",
+      "date": "2025-07-07T12:05:52+02:00",
+      "author": "Jens Oberender",
+      "email": "burberius@users.noreply.github.com",
+      "message": "Changed cron times and removed initial execution\n"
+    },
+    {
+      "sha": "94901066d879a662d659c9fb1477fa8bab0d6828",
+      "date": "2025-07-07T11:36:51+02:00",
+      "author": "Jens Oberender",
+      "email": "burberius@users.noreply.github.com",
+      "message": "Changed to cron\n"
+    },
+    {
+      "sha": "da5448e50910ab7b2a8506ead95988a9ca3338f8",
+      "date": "2025-07-07T11:32:36+02:00",
+      "author": "Jens Oberender",
+      "email": "burberius@users.noreply.github.com",
+      "message": "Finished contract update.\n"
+    },
+    {
+      "sha": "cc489845a37386963be8e24ff19a7014db2be8dd",
+      "date": "2025-07-02T16:29:54+02:00",
+      "author": "Jens Oberender",
+      "email": "burberius@users.noreply.github.com",
+      "message": "Updated contract service to read contracts from API\n"
+    },
+    {
+      "sha": "de6e4b7c61f37fbd63be6162cb3463a92def952f",
+      "date": "2025-05-13T23:19:40+02:00",
+      "author": "Jens Oberender",
+      "email": "burberius@users.noreply.github.com",
+      "message": "Last fixes for now\n"
+    },
+    {
+      "sha": "4e61cad8fde9ad0a278fc300dd67d21e6f9eb019",
+      "date": "2025-05-13T23:12:34+02:00",
+      "author": "Jens Oberender",
+      "email": "burberius@users.noreply.github.com",
+      "message": "Cleaned more Sonar findings.\n"
+    },
+    {
+      "sha": "6af4f501aad699bfa9103b3008dd6277599216c0",
+      "date": "2025-05-13T17:15:00+02:00",
+      "author": "Jens Oberender",
+      "email": "burberius@users.noreply.github.com",
+      "message": "More Sonar cleanup\n"
+    },
+    {
+      "sha": "9e26fd363db421212468eca8be83d8806dba24d0",
+      "date": "2025-05-12T23:08:19+02:00",
+      "author": "Jens Oberender",
+      "email": "burberius@users.noreply.github.com",
+      "message": "Some more cleanings\n"
+    },
+    {
+      "sha": "881bac240407b764f4e30a8c4e03baa9fabde6d5",
+      "date": "2025-05-12T22:49:03+02:00",
+      "author": "Jens Oberender",
+      "email": "burberius@users.noreply.github.com",
+      "message": "More code cleanups\n"
+    },
+    {
+      "sha": "d40f3333a3b22573806d073cb862cd87a5d5b47f",
+      "date": "2025-05-12T22:19:01+02:00",
+      "author": "Jens Oberender",
+      "email": "burberius@users.noreply.github.com",
+      "message": "First code cleanups\n"
+    },
+    {
+      "sha": "04ae4e8ddff8138d5254d1889137120f885b2d59",
+      "date": "2025-05-12T15:06:34+02:00",
+      "author": "Jens Oberender",
+      "email": "burberius@users.noreply.github.com",
+      "message": "Changed to OAuth V2 and get character info from JWT token.\n"
+    },
+    {
+      "sha": "b3eb72541479ff4194c57fe983a569930cf5d1c7",
+      "date": "2025-05-12T11:24:37+02:00",
+      "author": "Jens Oberender",
+      "email": "burberius@users.noreply.github.com",
+      "message": "Fixed stats, quickselect and make search case insensitive.\n"
+    },
+    {
+      "sha": "8a22c855203fd90ab7435390c96d9705e148c2e6",
+      "date": "2025-05-09T09:24:07+02:00",
+      "author": "Jens Oberender",
+      "email": "burberius@users.noreply.github.com",
+      "message": "Added ToString to Bean\n"
+    },
+    {
+      "sha": "3270faba3136ea803d50886a6504cd6e56fef876",
+      "date": "2025-05-08T15:26:31+02:00",
+      "author": "Jens Oberender",
+      "email": "burberius@users.noreply.github.com",
+      "message": "More Template errors\n"
+    },
+    {
+      "sha": "4d7e781e1b4f5243c5b9fde32d16be7fba9eaf6b",
+      "date": "2025-05-08T15:09:58+02:00",
+      "author": "Jens Oberender",
+      "email": "burberius@users.noreply.github.com",
+      "message": "Fixed another one in the template\n"
+    },
+    {
+      "sha": "60cc80018c60053ed6a46318c60c53dba2c17e5f",
+      "date": "2025-05-08T15:04:25+02:00",
+      "author": "Jens Oberender",
+      "email": "burberius@users.noreply.github.com",
+      "message": "Fixed start and end in template.\n"
+    },
+    {
+      "sha": "14f9c17f689d5fb839e6f8c287bec504a9126883",
+      "date": "2025-05-08T14:55:26+02:00",
+      "author": "Jens Oberender",
+      "email": "burberius@users.noreply.github.com",
+      "message": "Changed db fields of escalation and faction to a boolean.\n"
+    },
+    {
+      "sha": "635762e08995bc6afe1ec7b8f17643c65e6dbf63",
+      "date": "2025-05-08T13:27:36+02:00",
+      "author": "Jens Oberender",
+      "email": "burberius@users.noreply.github.com",
+      "message": "Push latest\n"
+    },
+    {
+      "sha": "9eb0d52e08f57a31104f53cd3af376d78734db56",
+      "date": "2025-05-08T13:23:42+02:00",
+      "author": "Jens Oberender",
+      "email": "burberius@users.noreply.github.com",
+      "message": "Final push docker image\n"
+    },
+    {
+      "sha": "c3b63ee464092698304235ecddfec4887b449056",
+      "date": "2025-05-08T13:20:58+02:00",
+      "author": "Jens Oberender",
+      "email": "burberius@users.noreply.github.com",
+      "message": "Next try\n"
+    },
+    {
+      "sha": "db5d471ffc3e7843904083f9d5fe4de174a0caf7",
+      "date": "2025-05-08T13:12:38+02:00",
+      "author": "Jens Oberender",
+      "email": "burberius@users.noreply.github.com",
+      "message": "Added Docker build and push\n"
+    },
+    {
+      "sha": "1524c14fcc594b846c3571f4fba9bd5a8b92c442",
+      "date": "2025-05-08T12:59:41+02:00",
+      "author": "Jens Oberender",
+      "email": "burberius@users.noreply.github.com",
+      "message": "New try\n"
+    }
+  ],
+  "commit_sha": "85cd195af8cdf3a68daed95b2f9b6d586542eddb",
+  "extracted_at": "2026-10-05T18:47:34.611888+00:00"
+}

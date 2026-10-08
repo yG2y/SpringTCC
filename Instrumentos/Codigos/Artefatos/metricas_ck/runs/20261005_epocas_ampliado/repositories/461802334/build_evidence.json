@@ -1,0 +1,72 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "3.5.0",
+  "spring_boot_major": "3",
+  "java_versions_declared": "17",
+  "build_evidence": [
+    {
+      "file": "life-authserver/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "life-base/life-common/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "life-gateway/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "life-gateway/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "life-start-parent/mail-start-life/pom.xml",
+      "artifact": "spring-boot-starter-mail"
+    },
+    {
+      "file": "life-start-parent/redis-start-life/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "life-start-parent/security-start-life/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "life-start-parent/valid-start-life/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "life-system/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "life-system/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

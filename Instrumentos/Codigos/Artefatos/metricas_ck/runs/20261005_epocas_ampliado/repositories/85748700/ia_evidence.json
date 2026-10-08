@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "c3d9d07e7fd63b59557336dfbfc5538d89eee94a",
+      "date": "2025-07-16T11:13:16-07:00",
+      "author": "Brian Kennedy",
+      "email": "brian.alex.kennedy@gmail.com",
+      "message": "Fix pipeline deploy error on type incompatibility (#147)\n\n"
+    },
+    {
+      "sha": "1cacbbc6dfbed7b162388dfb05c3f4d892fdbf89",
+      "date": "2025-07-15T19:55:03-07:00",
+      "author": "Brian Kennedy",
+      "email": "brian.alex.kennedy@gmail.com",
+      "message": "Expose updated user agent functionality from moesifapi and use, test (#146)\n\n* Expose updated user agent functionality from moesifapi and use, test\nUpdate dependent libraries and examples to 1.8.5\n\n* Version bump examples and also update separate java only dep projects or tertiary dependencies"
+    },
+    {
+      "sha": "bd258793e5778f8e4d58bdc4e4b2e1e47e98e715",
+      "date": "2024-11-19T17:34:10-08:00",
+      "author": "Brian Kennedy",
+      "email": "brian.alex.kennedy@gmail.com",
+      "message": "#188590455 Include detailed information about the config extension callbacks (#140)\n\n* Include detailed information about the call order and expected parameters of the config callbacks\n\nMinor doc fix for the jersey example readme as well\n\n* Paragraph separator new lines for consistency"
+    },
+    {
+      "sha": "5bbe989bccd0b4c4c98b8a41070a7519435fe31e",
+      "date": "2024-11-18T14:00:48-08:00",
+      "author": "Brian Kennedy",
+      "email": "brian.alex.kennedy@gmail.com",
+      "message": "#188571345 Updating Jakarta and related docs with max body limits (#139)\n\n* Update jakarta servlet implementation to use request/response body fields and update version and related version references\n\n* Doc and dep updates to use jakarta 2.2.3"
+    },
+    {
+      "sha": "611848a75d8d096921f0840b8e89c5b408a569ab",
+      "date": "2024-11-18T11:31:55-08:00",
+      "author": "Brian Kennedy",
+      "email": "brian.alex.kennedy@gmail.com",
+      "message": "#188571345 1.8.3 (#138)\n\n* 1.8.3\n\nAdding max body size to config and buffering at most that number of bytes\n\n* Spring request 1.2.1 update to resolve IDE warning about 1.2.0 version availability\n\n* Consolidate body logging related config in the config class for propagation to the lower level logging wrappers\n\n* Save body only if it is under the max limit otherwise add an error message explaining this\n\n* Format\n\n* Update skip status for responses\n\n* Also check buffer exceeded flag\n\n* Update to real max body size\n\n* Remove test fixture data\n\n* re-enable signing for CI\n\n* re-enable signing for CI\n\n* Test cleanup\n\n* Update body limit to 1 MB\n\n* Add max body size as config value\n\n* Use config.maxBodySize in error response function instead of global\n\n* Updated README\n\n* Updated servlet version\n\n* spring-boot-starter-example is directly used in the moesif-servlet/README, so updating it to use latest version of moesif-servlet as well\n\nmoesif-servlet hasn't supported Java 7 in a while, so updating mentions of that in the doc references to projects which depend on moesif-servlet in it's README\n\n* Setting requestMaxBodySize and responseMaxBodySize as separate user configurable variables\n\n* Update jakarta xml example to use latest moesif-servlet 1.8.3\n\n---------\n\nCo-authored-by: Praveen Kumar <praveen@moesif.com>"
+    },
+    {
+      "sha": "66b0584bd4a378e0937f5e61b3cb223b1bf1fd93",
+      "date": "2024-11-14T16:42:43-08:00",
+      "author": "Brian Kennedy",
+      "email": "brian.alex.kennedy@gmail.com",
+      "message": "#188571765 Additional Jersey Example using code and annotations to set up and configure (#137)\n\n* Moving jersey example to an xml specific folder and creating a Jersey 2.3.0 example using annotations\n\n* Explicitly annotate a ServletContainer to configure the application path\n\n* Cleanup"
+    },
+    {
+      "sha": "0907675129671fb36d48ec7c96cad2e68f659a75",
+      "date": "2024-10-30T19:40:57-07:00",
+      "author": "Derric Gilling",
+      "email": "9476006+dgilling@users.noreply.github.com",
+      "message": "Merge pull request #136 from Moesif/dg-bump-servlet-version\n\nBump Servlet Version"
+    },
+    {
+      "sha": "da96885eda913900d7e26b2fed4c0d830d21d504",
+      "date": "2024-10-30T19:40:33-07:00",
+      "author": "Derric Gilling",
+      "email": "derric@moesif.com",
+      "message": "Bump Servlet Version\n"
+    },
+    {
+      "sha": "d732c89be45a94faa9da65f0aa2cef1d674bd932",
+      "date": "2024-10-29T19:09:24-07:00",
+      "author": "Brian Kennedy",
+      "email": "brian.alex.kennedy@gmail.com",
+      "message": "#188476019 : Dep updates and spring-boot-servlet-example dep overhaul (#135)\n\n* Dep updates and spring-boot-servlet-example dep overhaul\n\n* Update web.xml\n\nRemove test fixture values and use placeholders\n\n* Bump up the version\n\n* Bump up the version\n\n* Bump up the version\n\n---------\n\nCo-authored-by: Praves <praveen@moesif.com>"
+    },
+    {
+      "sha": "15ad2f19b123f16658ce85ce9f65b54f2fd0fb8f",
+      "date": "2024-10-29T13:40:05-07:00",
+      "author": "Praves",
+      "email": "praveen@moesif.com",
+      "message": "Version Update (#134)\n\n* Version Update\n\nBump up the version\n\n* Update pom.xml\n\n* Update README.md\n\n* Update README.md\n\n* Update pom.xml"
+    },
+    {
+      "sha": "f8abb8f5abfdd219ec7b140cd3acbf0c19f9f903",
+      "date": "2024-10-29T13:24:03-07:00",
+      "author": "Praves",
+      "email": "praveen@moesif.com",
+      "message": "Revert - diable sign\n\nrevert last change to disable sign"
+    },
+    {
+      "sha": "dbe9c09d7ef00d099f1b04ec5a37e0db5bc349c6",
+      "date": "2024-10-29T15:57:41-04:00",
+      "author": "李洋",
+      "email": "145508543+lygg6699@users.noreply.github.com",
+      "message": "Build(deps): Bump org.apache.tomcat.embed:tomcat-embed-core (#127)\n\nBumps org.apache.tomcat.embed:tomcat-embed-core from 8.5.93 to 8.5.99.\n\n---\nupdated-dependencies:\n- dependency-name: org.apache.tomcat.embed:tomcat-embed-core\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "ee69f10fd711825c640e2b628f51c7a4fdf282fb",
+      "date": "2024-10-29T12:57:13-07:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Build(deps): Bump org.apache.tomcat.embed:tomcat-embed-core (#125)\n\nBumps org.apache.tomcat.embed:tomcat-embed-core from 8.5.93 to 8.5.99.\n\n---\nupdated-dependencies:\n- dependency-name: org.apache.tomcat.embed:tomcat-embed-core\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Praves <praveen@moesif.com>"
+    },
+    {
+      "sha": "375a62bf12bc4c9c399e9b0746b05c5d4940b32b",
+      "date": "2024-10-25T17:25:55-07:00",
+      "author": "Brian Kennedy",
+      "email": "brian.alex.kennedy@gmail.com",
+      "message": "#188476019 Dependency Updates (#130)\n\n* Updates\n\n* Dep updates"
+    },
+    {
+      "sha": "c086671ea6b64999975077e91fd94b28ff831b3a",
+      "date": "2024-08-27T21:38:07+06:00",
+      "author": "Abu Sakib",
+      "email": "mabusakib@gmail.com",
+      "message": "Use consistent image annotations (#129)\n\n"
+    },
+    {
+      "sha": "e58b8f5d6a9e3c82b2cb48e288f9c9ba95232841",
+      "date": "2024-08-27T20:27:26+06:00",
+      "author": "Abu Sakib",
+      "email": "mabusakib@gmail.com",
+      "message": "Update README (#128)\n\n* Update README\n\n* Fix casings\n\n* Fix image"
+    },
+    {
+      "sha": "ab1565d66ec6eff2076ca1e193506d0dc8de7163",
+      "date": "2024-03-22T15:04:35-07:00",
+      "author": "Derric Gilling",
+      "email": "9476006+dgilling@users.noreply.github.com",
+      "message": "Merge pull request #126 from Moesif/dg-update-readme\n\nFix: Bump moesif-servlet-jakarta in README.md"
+    },
+    {
+      "sha": "de95d9955f211084b37fa8e14aca44a1dc28aafa",
+      "date": "2024-03-22T15:04:19-07:00",
+      "author": "Derric Gilling",
+      "email": "derric@moesif.com",
+      "message": "Fix: Bump moesif-servlet-jakarta in README.md\n"
+    },
+    {
+      "sha": "cc02c8aa56384fbb30fb3cb314850a11ecaa289d",
+      "date": "2024-03-01T11:41:01-05:00",
+      "author": "Matt Tanner",
+      "email": "matthewtanner91@gmail.com",
+      "message": "Merge pull request #124 from Moesif/add-subscription-support\n\nAdded subscription support"
+    },
+    {
+      "sha": "dee3d6ffb2c22b62df78b0ff6960087fb525b4aa",
+      "date": "2024-03-01T11:31:45-05:00",
+      "author": "Matt Tanner",
+      "email": "matthewtanner91@gmail.com",
+      "message": "updated pom.xml and bumped servlet versions\n\nall written tests passing, tests added to Jakarta build as well.\n"
+    },
+    {
+      "sha": "1c204ed59cab242e3982b37c19bcee940a25e4c6",
+      "date": "2024-02-29T10:24:30-05:00",
+      "author": "Matt Tanner",
+      "email": "matthewtanner91@gmail.com",
+      "message": "Added subscription support\n\nStill requires the latest java API release (with subscription support) to be added to POM of each project. Then, this will all need to be tested.\n"
+    },
+    {
+      "sha": "d5a806bd1a55e927e59085b02546486197a265dc",
+      "date": "2023-12-11T17:30:14-08:00",
+      "author": "xiluan",
+      "email": "xinyujie0320@gmail.com",
+      "message": "#186648838 update moesif-api v1.7.7 (#121)\n\n"
+    },
+    {
+      "sha": "ebbb71ea057200388f9bfd8dee9ab63a572fb5a5",
+      "date": "2023-11-30T00:17:18Z",
+      "author": "Sean Huo",
+      "email": "sean@moesif.com",
+      "message": "#186387666 : Governance rule fix (#120)\n\n* update dependency, add a new route\n\n* use new goveranance rule API, update dependency\n\n* Updated moesifapi version, Readme and other examples.\n\n---------\n\nCo-authored-by: Praveen Kumar <praveen@moesif.com>"
+    },
+    {
+      "sha": "78fbb2dd50a830148470ab16874213738a5a5952",
+      "date": "2023-11-29T14:46:06-05:00",
+      "author": "Dylan Frankcom",
+      "email": "dylanfrankcom@icloud.com",
+      "message": "Fix broken links (#119)\n\n"
+    },
+    {
+      "sha": "15f3a57b5dd0b4f871a89c9beabc3e8ee2a882bb",
+      "date": "2023-11-27T19:24:19-08:00",
+      "author": "xiluan",
+      "email": "xinyujie0320@gmail.com",
+      "message": "#186557511: Undertow Example (#118)\n\n* Refactored jakarta servlet examples into tomcat folder.\n\n* #186557511 : Added example for jakarta servlet application using undertow instead of tomcat."
+    },
+    {
+      "sha": "af8199dd9baddb5b137597d23b8c434e93dc221a",
+      "date": "2023-10-23T23:18:17Z",
+      "author": "Sean Huo",
+      "email": "sean@moesif.com",
+      "message": "Merge pull request #117 from Moesif/examples\n\n#185690008 : Update example code"
+    },
+    {
+      "sha": "a9ce349d8902755636a2ea72b63277fd2538b964",
+      "date": "2023-10-23T16:08:33-07:00",
+      "author": "xiaokanghuo",
+      "email": "sean@moesif.com",
+      "message": "Update example code\n"
+    },
+    {
+      "sha": "df57685d572109657c2f5095c845e7ce3c7235eb",
+      "date": "2023-10-21T01:22:59Z",
+      "author": "Sean Huo",
+      "email": "sean@moesif.com",
+      "message": "#185690008 : update dependencies, support for governance rules, some performnace improvement. (#113)\n\n* update dependency\n\n* little bit safer to use unmasked event instead\n\n* governance rule blocking, remove AppConfigManager\n\n* add governance rule blocking\n\n* Add governance rule blocking\n\n* Add BlockedResponse\n\n* Add governance rule route"
+    },
+    {
+      "sha": "0db016ee7bf4af0fdf4357644d9cdc0c1c213b03",
+      "date": "2023-10-20T18:13:19-07:00",
+      "author": "Praves",
+      "email": "praveen@moesif.com",
+      "message": "Merge pull request #115 from Moesif/dependabot/maven/spring-boot-servlet-example/org.springframework.boot-spring-boot-autoconfigure-2.7.12\n\nBuild(deps): Bump org.springframework.boot:spring-boot-autoconfigure from 2.7.4 to 2.7.12 in /spring-boot-servlet-example"
+    },
+    {
+      "sha": "3a0484082b5e862a8707718106fb939423ed37fd",
+      "date": "2023-10-21T01:12:59Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Build(deps): Bump org.springframework.boot:spring-boot-autoconfigure\n\nBumps [org.springframework.boot:spring-boot-autoconfigure](https://github.com/spring-projects/spring-boot) from 2.7.4 to 2.7.12.\n- [Release notes](https://github.com/spring-projects/spring-boot/releases)\n- [Commits](https://github.com/spring-projects/spring-boot/compare/v2.7.4...v2.7.12)\n\n---\nupdated-dependencies:\n- dependency-name: org.springframework.boot:spring-boot-autoconfigure\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    }
+  ],
+  "commit_sha": "c3d9d07e7fd63b59557336dfbfc5538d89eee94a",
+  "extracted_at": "2026-10-05T18:18:44.193074+00:00"
+}

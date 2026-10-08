@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "82b75982d37584c31e01ba52f313c5fd0c1dd1dd",
+      "date": "2026-10-02T00:07:34+07:00",
+      "author": "Duke Vu",
+      "email": "155956526+dukevuzz@users.noreply.github.com",
+      "message": "EXC-370: nested inserts follow Hasura for insert-only tables, checking each row in its own statement (#95)\n\n* EXC-370: nested inserts follow Hasura for insert-only tables, checking each row in its own statement\n\n* EXC-370: nested insert parser and tests read as Sonar asks"
+    },
+    {
+      "sha": "12d4e06bee123bf9800b35fbac85588f0ebe8bbe",
+      "date": "2026-10-01T11:48:41+07:00",
+      "author": "Duke Vu",
+      "email": "155956526+dukevuzz@users.noreply.github.com",
+      "message": "EXC-370: docs and demo no longer describe Postgres role switching, which the engine dropped (#94)"
+    },
+    {
+      "sha": "131a7b61212433dfe122df36542afb39abef335c",
+      "date": "2026-10-01T10:17:16+07:00",
+      "author": "Duke Vu",
+      "email": "155956526+dukevuzz@users.noreply.github.com",
+      "message": "EXC-400: the engine drops the last exposure-grant types (#93)"
+    },
+    {
+      "sha": "d12ab9b04e7846a2f5723e3b5d4cafb33cd0be18",
+      "date": "2026-10-01T06:43:19+07:00",
+      "author": "Duke Vu",
+      "email": "155956526+dukevuzz@users.noreply.github.com",
+      "message": "EXC-370: a role with insert but no select permission can insert and gets back only the affected-row count (#92)"
+    },
+    {
+      "sha": "e8a93625b8ccb9f9ae7a8910943ebdf5cf3ca34d",
+      "date": "2026-10-01T05:42:19+07:00",
+      "author": "Duke Vu",
+      "email": "155956526+dukevuzz@users.noreply.github.com",
+      "message": "EXC-370: realtime delivers a delete to every subscriber who could see the row, and to no one else (#91)"
+    },
+    {
+      "sha": "3aa8db96f48e7e122205c87907798934269a786b",
+      "date": "2026-10-01T03:28:18+07:00",
+      "author": "Duke Vu",
+      "email": "155956526+dukevuzz@users.noreply.github.com",
+      "message": "EXC-370: only tracked functions are reachable, per role, and their rows obey the return table's select permission (#90)"
+    },
+    {
+      "sha": "70986d0952e8819df0ad96a8a08b1e2f1df25882",
+      "date": "2026-09-30T23:30:55+07:00",
+      "author": "Duke Vu",
+      "email": "155956526+dukevuzz@users.noreply.github.com",
+      "message": "EXC-370: permissions cached through a control-plane outage expire after five minutes, then only service is served (#89)"
+    },
+    {
+      "sha": "39383a02e3e2b0eb4deaf8692afa3235e8447cc4",
+      "date": "2026-09-30T10:41:51+07:00",
+      "author": "Duke Vu",
+      "email": "155956526+dukevuzz@users.noreply.github.com",
+      "message": "EXC-370: every request is enforced from the project's permissions through one access plan per role (#88)"
+    },
+    {
+      "sha": "1413fa111657b6ac87f2e454949a6f426427fdf0",
+      "date": "2026-09-30T08:36:16+07:00",
+      "author": "Duke Vu",
+      "email": "155956526+dukevuzz@users.noreply.github.com",
+      "message": "EXC-370: permission expressions compile to SQL and match rows in memory, pinned to native Postgres (#87)"
+    },
+    {
+      "sha": "69216f024a3b09b879b0cb43835138aba1e0feb7",
+      "date": "2026-09-30T07:11:48+07:00",
+      "author": "Duke Vu",
+      "email": "155956526+dukevuzz@users.noreply.github.com",
+      "message": "EXC-370: the engine reads each project's permission document, fail closed (#86)"
+    },
+    {
+      "sha": "652e1eb5f2413ebde8095b149a03c7dab52e3eab",
+      "date": "2026-09-30T05:41:41+07:00",
+      "author": "Duke Vu",
+      "email": "155956526+dukevuzz@users.noreply.github.com",
+      "message": "EXC-370: requests run as one role resolved from the token, an allowed-role header, or anon; service tokens bypass (#85)"
+    },
+    {
+      "sha": "4ea51c66e069823608e31c9207d3ade7654f05ce",
+      "date": "2026-09-30T03:38:01+07:00",
+      "author": "Duke Vu",
+      "email": "155956526+dukevuzz@users.noreply.github.com",
+      "message": "EXC-370: API permissions follow Hasura — specification (#84)"
+    },
+    {
+      "sha": "0e2c6593ef383e7c49097fec947842bcb9b0b990",
+      "date": "2026-09-28T15:23:55+07:00",
+      "author": "Duke Vu",
+      "email": "155956526+dukevuzz@users.noreply.github.com",
+      "message": "EXC-426: a project without a database is refused with 409 project_has_no_database, never cached as unknown (#83)"
+    },
+    {
+      "sha": "c7be24ee147c43f72c26de9ec02544cac13a4ee1",
+      "date": "2026-09-28T14:57:19+07:00",
+      "author": "Duke Vu",
+      "email": "155956526+dukevuzz@users.noreply.github.com",
+      "message": "EXC-410: tenant connections authenticate with the vault record's client certificate over verify-full TLS (#82)"
+    },
+    {
+      "sha": "dc2f980bfa91bf98541cb75227fc07ddfc533f03",
+      "date": "2026-09-27T20:27:35+07:00",
+      "author": "Duke Vu",
+      "email": "155956526+dukevuzz@users.noreply.github.com",
+      "message": "EXC-482: realtime row security follows SQL NULL logic and judges each row image of a change on its own (#81)"
+    },
+    {
+      "sha": "e3cd5f96e9e5cdd96a48d7a12b55e5579b23ba13",
+      "date": "2026-09-27T10:27:36+07:00",
+      "author": "Duke Vu",
+      "email": "155956526+dukevuzz@users.noreply.github.com",
+      "message": "EXC-10: the engine accepts only access tokens, so a key-management token is refused whatever the audience setting (#80)"
+    },
+    {
+      "sha": "c8094eb5b492105266fc865dc58f44567e964cc5",
+      "date": "2026-09-27T10:05:15+07:00",
+      "author": "Duke Vu",
+      "email": "155956526+dukevuzz@users.noreply.github.com",
+      "message": "EXC-512: remove PgDog from the platform (#79)"
+    },
+    {
+      "sha": "243b7b2c1196e12b63314cae309fe773fa2f94d4",
+      "date": "2026-09-27T09:53:47+07:00",
+      "author": "Duke Vu",
+      "email": "155956526+dukevuzz@users.noreply.github.com",
+      "message": "EXC-373: realtime acks a change only after handling it, drops unreadable ones and retries a failed schema reload (#78)"
+    },
+    {
+      "sha": "33ac27309adaa56feab8ae9a7ade7733e9de1455",
+      "date": "2026-09-27T06:12:12+07:00",
+      "author": "Duke Vu",
+      "email": "155956526+dukevuzz@users.noreply.github.com",
+      "message": "EXC-463, EXC-464: the URL project must be a known project, and authentication is on by default (#77)"
+    },
+    {
+      "sha": "08ca34cc161a280ff48cad34d3161b15273ec3f1",
+      "date": "2026-09-26T01:06:58+07:00",
+      "author": "Duke Vu",
+      "email": "155956526+dukevuzz@users.noreply.github.com",
+      "message": "EXC-462, EXC-465: mutation results apply RLS to related rows; GraphQL procedure calls require a token (#76)"
+    },
+    {
+      "sha": "d8e141b4af6d647b4b9bd3e5bb0999a6575ff10d",
+      "date": "2026-09-22T19:30:42+07:00",
+      "author": "Duke Vu",
+      "email": "155956526+dukevuzz@users.noreply.github.com",
+      "message": "EXC-436: CD publishes trunk tags only; latest belongs to releases (#75)"
+    },
+    {
+      "sha": "9948aadb131a014696202c6eaf7134e0f6d27e58",
+      "date": "2026-09-22T02:52:20+07:00",
+      "author": "dukevuzz",
+      "email": "ducvuminh.dev@gmail.com",
+      "message": "EXC-437: pin that a change evicts every registered cache, schema included\n"
+    },
+    {
+      "sha": "91cca28d0a9ae45cf2c2ec8c4ff931b1b0b86e3f",
+      "date": "2026-09-21T00:38:08+07:00",
+      "author": "Duke Vu",
+      "email": "155956526+dukevuzz@users.noreply.github.com",
+      "message": "EXC-324: NATS client uses scoped credentials (#73)"
+    },
+    {
+      "sha": "a91b111b0ae3fbb882ecd72ce66aeb5110c79c81",
+      "date": "2026-09-20T19:04:08+07:00",
+      "author": "Duke Vu",
+      "email": "155956526+dukevuzz@users.noreply.github.com",
+      "message": "EXC-400: exposure evaluates the caller as an end user, not by a free-form claim (#72)\n\n* EXC-400: a grant that names no role reaches nobody\n\n* EXC-400: exposure evaluates the caller as anon or authenticated, not by the role claim"
+    },
+    {
+      "sha": "5edd8d75a8c1b7408cb4f30578e830cc6326d209",
+      "date": "2026-09-20T02:59:36+07:00",
+      "author": "Duke Vu",
+      "email": "155956526+dukevuzz@users.noreply.github.com",
+      "message": "EXC-365: CORS provider reads the rotated provisioning token instead of a captured literal (#71)"
+    },
+    {
+      "sha": "28129b1f722d24d236f443fbc761d92013493bca",
+      "date": "2026-09-17T17:24:35+07:00",
+      "author": "Duke Vu",
+      "email": "155956526+dukevuzz@users.noreply.github.com",
+      "message": "EXC-370: hide ungranted tables from each caller's schema (engine half) (#70)\n\n* feat(exposure): filter each caller's schema by table grants (EXC-370)\n\n* fix(schema): fail clearly when no engine state resolves for a request"
+    },
+    {
+      "sha": "f7c34088e045f2c673fdc63537b224aa9ef1a728",
+      "date": "2026-09-17T01:03:45+07:00",
+      "author": "Duke Vu",
+      "email": "155956526+dukevuzz@users.noreply.github.com",
+      "message": "fix(schema): exclude platform-owned schemas from discovery regardless of grants (#68)\n\n* fix(schema): exclude platform-owned schemas from discovery regardless of grants\n\n* fix(schema): scope the reserved-schema denylist to postgres\n\n* test(mysql): rename the e2e database off the reserved excalibase name"
+    },
+    {
+      "sha": "a920fd445f89e0ceaa7dad87f4456bb971d4a88c",
+      "date": "2026-09-16T16:58:50+07:00",
+      "author": "Duke Vu",
+      "email": "155956526+dukevuzz@users.noreply.github.com",
+      "message": "EXC-365: provisioning token read from a file and refreshed on change (#67)\n\n* EXC-365: provisioning token read from a file and refreshed on change\n\n* refactor(security): hold the token snapshot in an AtomicReference"
+    },
+    {
+      "sha": "2bd92dd02bfe6202865be4a5f28410a10eab34a1",
+      "date": "2026-09-16T16:19:38+07:00",
+      "author": "Duke Vu",
+      "email": "155956526+dukevuzz@users.noreply.github.com",
+      "message": "test(rls): cover multi-table and multi-root mutation policy enforcement (#66)"
+    },
+    {
+      "sha": "5c30d5e88bd105c77bba3e13ed26ddd45d53b17b",
+      "date": "2026-09-16T16:07:10+07:00",
+      "author": "Duke Vu",
+      "email": "155956526+dukevuzz@users.noreply.github.com",
+      "message": "EXC-11: JWT verification requires the project audience (#65)\n\n* EXC-11: JWT verification requires the project audience\n\n* fix(e2e): auth_admin owns the auth schema so the auth service can migrate it"
+    }
+  ],
+  "commit_sha": "82b75982d37584c31e01ba52f313c5fd0c1dd1dd",
+  "extracted_at": "2026-10-05T18:31:04.613570+00:00"
+}

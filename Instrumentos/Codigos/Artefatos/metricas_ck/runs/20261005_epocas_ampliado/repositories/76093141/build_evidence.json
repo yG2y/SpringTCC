@@ -1,0 +1,272 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${springboot.version};4.0.6",
+  "spring_boot_major": "4",
+  "java_versions_declared": "21",
+  "build_evidence": [
+    {
+      "file": "goodskill-admin/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "goodskill-admin/pom.xml",
+      "artifact": "spring-boot-webmvc"
+    },
+    {
+      "file": "goodskill-admin/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "goodskill-ai/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "goodskill-ai/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "goodskill-ai/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "goodskill-ai/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "goodskill-auth/auth-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "goodskill-auth/auth-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "goodskill-auth/auth-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "goodskill-auth/auth-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "goodskill-auth/auth-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "goodskill-auth/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "goodskill-chat-provider/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "goodskill-chat-provider/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "goodskill-chat-provider/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "goodskill-common/goodskill-common-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "goodskill-common/goodskill-common-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "goodskill-common/goodskill-common-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "goodskill-common/goodskill-common-service/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb"
+    },
+    {
+      "file": "goodskill-common/goodskill-common-service/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "goodskill-common/goodskill-common-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "goodskill-common/goodskill-core/core-feign/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "goodskill-common/goodskill-core/core-orm/pom.xml",
+      "artifact": "spring-boot-autoconfigure-classic"
+    },
+    {
+      "file": "goodskill-common/goodskill-core/core-tracing/pom.xml",
+      "artifact": "spring-boot-starter-opentelemetry"
+    },
+    {
+      "file": "goodskill-gateway/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "goodskill-gateway/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "goodskill-gateway/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "goodskill-job/pom.xml",
+      "artifact": "spring-boot-jdbc"
+    },
+    {
+      "file": "goodskill-job/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "goodskill-order-provider/goodskill-order-service/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb"
+    },
+    {
+      "file": "goodskill-order-provider/goodskill-order-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "goodskill-order-provider/goodskill-order-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "goodskill-order-provider/goodskill-order-service/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "goodskill-order-provider/goodskill-order-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "goodskill-order-provider/goodskill-order-service/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "goodskill-order-provider/goodskill-order-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "goodskill-seata/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "goodskill-seata/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "goodskill-seata/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "goodskill-seata/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "goodskill-seckill-provider/goodskill-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "goodskill-seckill-provider/goodskill-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "goodskill-seckill-provider/goodskill-service/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "goodskill-seckill-provider/goodskill-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "goodskill-seckill-provider/goodskill-service/pom.xml",
+      "artifact": "spring-boot-starter-graphql"
+    },
+    {
+      "file": "goodskill-seckill-provider/goodskill-service/pom.xml",
+      "artifact": "spring-boot-starter-data-elasticsearch"
+    },
+    {
+      "file": "goodskill-seckill-provider/goodskill-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "goodskill-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "goodskill-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot"
+    },
+    {
+      "file": "goodskill-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "goodskill-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "goodskill-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "goodskill-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "goodskill-web/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "goodskill-web/pom.xml",
+      "artifact": "spring-boot-starter-websocket"
+    },
+    {
+      "file": "goodskill-web/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "goodskill-web/pom.xml",
+      "artifact": "spring-boot-test-autoconfigure"
+    },
+    {
+      "file": "goodskill-web/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "goodskill-web/pom.xml",
+      "artifact": "spring-boot-kafka"
+    },
+    {
+      "file": "goodskill-web/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "goodskill-web/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "goodskill-web/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "goodskill-web/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-opentelemetry"
+    }
+  ]
+}

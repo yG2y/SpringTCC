@@ -1,0 +1,332 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${spring-boot.version};4.0.8",
+  "spring_boot_major": "4",
+  "java_versions_declared": "21",
+  "build_evidence": [
+    {
+      "file": "mate-auth/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "mate-auth/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "mate-biz/mate-ai/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "mate-biz/mate-ai/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "mate-biz/mate-notice/pom.xml",
+      "artifact": "spring-boot-starter-mail"
+    },
+    {
+      "file": "mate-biz/mate-notice/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "mate-biz/mate-notice/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "mate-biz/mate-system/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "mate-biz/mate-system/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "mate-gateway/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "mate-monolith/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "mate-monolith/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "mate-starters-contrib/mate-ai-starter/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "mate-starters-contrib/mate-ai-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "mate-starters-contrib/mate-ai-starter/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "mate-starters-contrib/mate-flow-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "mate-starters-contrib/mate-flow-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "mate-starters-contrib/mate-gray-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "mate-starters-contrib/mate-model-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "mate-starters-contrib/mate-model-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "mate-starters-contrib/mate-rule-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "mate-starters-contrib/mate-rule-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "mate-starters-contrib/mate-seata-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "mate-starters-contrib/mate-sentinel-starter/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "mate-starters-contrib/mate-sentinel-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "mate-starters-contrib/mate-sharding-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "mate-starters-contrib/mate-sharding-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "mate-starters-contrib/mate-test-starter/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "mate-starters-contrib/mate-test-starter/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "mate-starters/mate-cache-starter/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "mate-starters/mate-cache-starter/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "mate-starters/mate-cache-starter/pom.xml",
+      "artifact": "spring-boot-starter-cache"
+    },
+    {
+      "file": "mate-starters/mate-cache-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "mate-starters/mate-channel-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "mate-starters/mate-channel-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "mate-starters/mate-channel-starter/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "mate-starters/mate-ds-starter/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "mate-starters/mate-ds-starter/pom.xml",
+      "artifact": "spring-boot-starter-flyway"
+    },
+    {
+      "file": "mate-starters/mate-ds-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "mate-starters/mate-ds-starter/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "mate-starters/mate-excel-starter/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "mate-starters/mate-excel-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "mate-starters/mate-file-oss/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "mate-starters/mate-file-oss/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "mate-starters/mate-file-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "mate-starters/mate-file-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "mate-starters/mate-job-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "mate-starters/mate-job-starter/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "mate-starters/mate-job-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "mate-starters/mate-menu-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "mate-starters/mate-menu-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "mate-starters/mate-menu-starter/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "mate-starters/mate-monitor-starter/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "mate-starters/mate-monitor-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "mate-starters/mate-mq-starter/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "mate-starters/mate-mq-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "mate-starters/mate-nacos-starter/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "mate-starters/mate-nacos-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "mate-starters/mate-rpc-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "mate-starters/mate-rpc-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "mate-starters/mate-sa-token-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "mate-starters/mate-security-starter/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "mate-starters/mate-security-starter/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "mate-starters/mate-security-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "mate-starters/mate-sms-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "mate-starters/mate-sms-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "mate-starters/mate-sms-starter/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "mate-starters/mate-sso-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "mate-starters/mate-sso-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "mate-starters/mate-sso-starter/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "mate-starters/mate-tenant-starter/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "mate-starters/mate-tenant-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "mate-starters/mate-tenant-starter/pom.xml",
+      "artifact": "spring-boot-test"
+    },
+    {
+      "file": "mate-starters/mate-web-starter/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "mate-starters/mate-web-starter/pom.xml",
+      "artifact": "spring-boot-starter-restclient"
+    },
+    {
+      "file": "mate-starters/mate-web-starter/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "mate-starters/mate-web-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "mate-starters/mate-web-starter/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "4.1.0",
+  "spring_boot_major": "4",
+  "java_versions_declared": "${java.version};17",
+  "build_evidence": [
+    {
+      "file": "demo/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "demo/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "demo/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "demo/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "lib/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "lib/pom.xml",
+      "artifact": "spring-boot-persistence"
+    },
+    {
+      "file": "lib/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "plugin/auth/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    }
+  ]
+}

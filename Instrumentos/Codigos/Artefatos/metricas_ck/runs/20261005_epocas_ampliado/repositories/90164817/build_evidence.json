@@ -1,0 +1,28 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "3.0.13-SNAPSHOT;3.0.7-SNAPSHOT",
+  "spring_boot_major": "3",
+  "java_versions_declared": "",
+  "build_evidence": [
+    {
+      "file": "build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "spring-geode-samples/intro/getting-started/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-geode-samples/intro/getting-started/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-geode-samples/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-geode-samples/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    }
+  ]
+}

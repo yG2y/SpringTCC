@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "413c634f20d1ff21a10a6f6c9ca7cc4d73ff0f3f",
+      "date": "2026-01-14T16:26:26-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Refactor build-docker-image.sh\n"
+    },
+    {
+      "sha": "480a0b22e501bd04bc8c696bab6496c8647b7e64",
+      "date": "2026-01-14T16:19:57-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Remove Gson dependency\n"
+    },
+    {
+      "sha": "a24dc7c77faca4f2ff5966c6b9f4b04abba0c6a4",
+      "date": "2026-01-14T16:14:50-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Project upgrade\n\n- Upgrade to Java 25\n- Upgrade to Spring Boot 4.0.1\n- Upgrade to Spring Shell 4.0.0\n- Upgrade to Apache Maven 3.9.12\n- Some code refactor\n"
+    },
+    {
+      "sha": "802f599516ae37d2274c4106877a249ad2fef883",
+      "date": "2025-12-11T10:59:27-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Refactor application packages\n"
+    },
+    {
+      "sha": "aee5981806cfdb9e675ad85de954713eb473a8c5",
+      "date": "2025-12-11T10:26:44-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Project upgrade\n\n- Upgrade to Spring Boot 3.5.8\n- Upgrade to Spring Shell 3.4.1\n- Upgrade wrapperVersion to 3.3.4 and Apache Maven to 3.9.11\n- Upgrade to Mongo Docker image 8.2.2\n- Add the .gitattributes file\n- Add spring.shell.script.enabled=true\n- Remove public keyword from Beans\n- Remove Docker Native image support\n- Rename docker-build.sh to build-docker-images.sh\n- Refactor pom.xml and docker-compose.yml files\n- Update README\n"
+    },
+    {
+      "sha": "3b71437de9df3a725207d3d06906df9361e1539b",
+      "date": "2024-11-15T09:22:20Z",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Replace Jib with Paketo Buildpacks\n"
+    },
+    {
+      "sha": "c00c33fe71188541daeea408e6102a6b62ee4c19",
+      "date": "2024-11-15T08:48:31Z",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- upgrade to Java 21;\n- upgrade to spring-boot 3.3.5;\n- upgrade to spring-shell 3.3.3;\n- upgrade to jib-maven-plugin 3.4.4;\n- upgrade to amazoncorretto-jdk 21.0.5;\n- upgrade to mongo docker image 7.0.14.\n"
+    },
+    {
+      "sha": "9067a347f73f7d0205f1754a3caa97b752cacd8e",
+      "date": "2024-11-15T08:07:17Z",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- upgrade wrapperVersion to 3.3.2 and apache-maven to 3.9.9;\n- update README by adding new Medium articles\n"
+    },
+    {
+      "sha": "ebc547533dbd4cdbe397f011bd1095063b40565a",
+      "date": "2024-04-13T23:53:12+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- upgrade to spring-boot 3.2.4;\n- upgrade to jib-maven-plugin 3.4.2;\n- upgrade to amazoncorretto-jdk 17.0.10;\n- upgrade to spring-shell 3.2.3;\n- upgrade to apache-maven 3.9.5.\n- upgrade to mongo docker image 7.0.6;\n- upgrade to kong docker image 2.8.4.\n- upgrade to jquery 3.7.1;\n- upgrade to moment.js 2.30.1.\n"
+    },
+    {
+      "sha": "34d3bbb0292191d58fdfdcff604baa13362d3c2a",
+      "date": "2023-08-28T23:07:07+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n- upgrade to spring-boot 3.1.3;\n- upgrade to spring-shell 3.1.3;\n- upgrade to jib 3.3.2;\n- upgrade to amazoncorretto-jdk 17.0.8;\n- updare README.\n"
+    },
+    {
+      "sha": "ae6d4177eddd4964c0e37aef467dd629cfdc3b43",
+      "date": "2023-08-28T21:59:48+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to mongo 7.0.0\n"
+    },
+    {
+      "sha": "965cf5992d678a0d65010676c82f8e819b37fb27",
+      "date": "2023-08-28T21:59:15+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to jquery 3.7.0\n"
+    },
+    {
+      "sha": "a4f0a56551d6afe0eee6dc4de2234c2faedaa627",
+      "date": "2023-08-28T21:58:30+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Migrate to Compose V2\n"
+    },
+    {
+      "sha": "28d1deab6b5f5b7b01246bd0ac73e25e94f9758d",
+      "date": "2023-08-28T21:57:54+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to apache-maven 3.9.4 and maven-wrapper 3.2.0\n"
+    },
+    {
+      "sha": "eb6e7e069d01cee2058ac2457ddb13ecae166be1",
+      "date": "2023-08-28T11:30:21+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Create FUNDING.yml\n"
+    },
+    {
+      "sha": "aefb43317daf55e128786db09d51bca13303b14a",
+      "date": "2023-08-28T10:21:51+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Add PoCs & Articles Section In README\n"
+    },
+    {
+      "sha": "db8ddabdc726d4d9b8f1f9ab6004fcc929760c20",
+      "date": "2023-03-24T14:39:20+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "remove mapstruct to keep the project simpler\n"
+    },
+    {
+      "sha": "77300c855c8bc4d0511791e18970239e546d2b97",
+      "date": "2023-03-24T11:21:46+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "project upgrade\n- upgrade to spring-boot 3.0.5;\n- upgrade to apache-maven 3.8.7 and maven-wrapper 3.1.1;\n- upgrade to jquery 3.6.4;\n- update project-diagram and README.\n"
+    },
+    {
+      "sha": "5d599e491fdc325636ba85e0835a8eb48d1d71f8",
+      "date": "2023-02-15T08:04:37+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "remove property spring.main.allow-circular-references=true as it is not needed anymore\n"
+    },
+    {
+      "sha": "5c77a5f96de9b3ff510dbee332f40c1c4eb08da1",
+      "date": "2023-02-15T07:52:08+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "project upgrade\n- upgrade to spring-boot 3.0.2;\n- upgrade to spring-shell 3.0.0;\n- upgrade to mapstruct 1.5.3.Final;\n- upgrade to jib 3.3.1;\n- upgrade to mongo docker image 6.0.4;\n- replace openjdk to amazoncorretto with version 17.0.6;\n- upgrade to jquery 3.6.3;\n- upgrade to semantic-ui 2.5.0;\n- update README.\n"
+    },
+    {
+      "sha": "39a163c594becc20f049055774db88a99601c240",
+      "date": "2022-09-18T14:31:26+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "project upgrade\n- upgrade to spring-boot 2.7.3;\n- upgrade to jib 3.3.0;\n- upgrade to spring-shell 2.1.1;\n- upgrade to mongo docker image 6.0.1;\n- upgrade to jquery 3.6.1;\n- update README.\n"
+    },
+    {
+      "sha": "b34eee40edac04f3a302547a3790c1860b3b3e18",
+      "date": "2022-08-04T09:43:39+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "project upgrade\n- upgrade to java 17;\n- upgrade to spring-boot 2.7.2;\n- upgrade to spring-native 0.12.1;\n- upgrade to native-buildtools 0.9.13;\n- upgrade to spring-shell 2.1.0;\n- upgrade to mapstruct 1.5.2.Final;\n- upgrade to maven distributionUrl 3.8.6;\n- upgrade to mongo docker image 5.0.10;\n- upgrade to moment.js 2.29.4;\n- rename groupId to com.ivanfranchin;\n- convert some classes to records;\n- rename MovieDto to MovieResponse;\n- remove lombok from movie-client-shell and movie-client-ui;\n- reduce the screenshots sizes by changing from png to jpeg;\n- update README.\n"
+    },
+    {
+      "sha": "a0dbc73b72b54d4921f2f0ad56280d4f23683ce0",
+      "date": "2022-06-09T07:04:49+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "project upgrade\n- upgrade to spring-boot 2.7.0;\n- upgrade to spring-native 0.12.0;\n- upgrade to openjdk-image 11.0.15;\n- upgrade to mongo docker image 5.0.9;\n- upgrade to sockjs-client 1.6.1;\n- upgrade to moment.js 2.29.3;\n- add NativeHint to MovieClientUiApplication;\n- update README.\n"
+    },
+    {
+      "sha": "0c18e9df451be21ca45de682f2b4af9cd082cde6",
+      "date": "2022-04-27T08:57:14+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "project update\n- upgrade to spring-boot 2.6.7;\n- upgrade to spring-native 0.11.4;\n- upgrade to native-buildtools 0.9.11;\n- upgrade to jib 3.2.1;\n- upgrade to openjdk-image 11.0.14.1;\n- upgrade to mongo docker image 5.0.7;\n- add Mapping annotation to ignore some fields in mapper class;\n- update README.\n"
+    },
+    {
+      "sha": "86b57faef67ca546e7d4bab0492aad6db2449e20",
+      "date": "2022-03-25T15:32:46+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "project upgrade\n- upgrade to spring-boot 2.6.5;\n- upgrade to spring-native 0.11.3;\n- upgrade to native-buildtools 0.9.10;\n- upgrade to mongo docker image 5.0.6.\n- update README.\n"
+    },
+    {
+      "sha": "6cae29cba593d7686e962eede04be4d401e39df2",
+      "date": "2022-01-25T17:48:22+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "project update\n- update to spring-boot 2.6.3;\n- update to jib 3.2.0;\n- update to maven-wrapper 3.8.4;\n- update README.\n"
+    },
+    {
+      "sha": "d8d9168deee7e5f705c9796affac8e827715bc56",
+      "date": "2021-12-26T10:26:19-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Merge pull request #1 from ivangfr/include-spring-native\n\nInclude spring native"
+    },
+    {
+      "sha": "aa79e9021cdc1bcd074c603f2334fb45956d89ed",
+      "date": "2021-12-26T10:24:08-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "project update\n- update to spring-boot 2.6.2;\n- update to spring-native 0.11.1;\n- update to native-buildtools 0.9.9;\n- update to mongo docker image 5.0.5;\n- add stop-server-and-ui.sh;\n- update README.\n"
+    },
+    {
+      "sha": "0ab9b8fc3bddb3b8973653891f76deeb282ea40a",
+      "date": "2021-12-09T13:44:48-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "project update\n- update to spring-native 0.11.0-RC1;\n- update to native-buildtools 0.9.8;\n- update README.\n"
+    },
+    {
+      "sha": "b822bf0137553de7835e36c0af1392d9ba0229e8",
+      "date": "2021-12-09T10:23:19-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "merge conflicts\n"
+    }
+  ],
+  "commit_sha": "413c634f20d1ff21a10a6f6c9ca7cc4d73ff0f3f",
+  "extracted_at": "2026-10-05T18:46:07.081346+00:00"
+}

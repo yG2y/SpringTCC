@@ -1,0 +1,432 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "2.2.0.RELEASE;4.0.0-M2;4.0.0-M3;4.0.5",
+  "spring_boot_major": "multiple",
+  "java_versions_declared": "${java.version};21;25",
+  "build_evidence": [
+    {
+      "file": "admin-server/pom.xml",
+      "artifact": "spring-boot-starter-cache"
+    },
+    {
+      "file": "admin-server/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "admin-server/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "admin-server/pom.xml",
+      "artifact": "spring-boot-starter-session-data-redis"
+    },
+    {
+      "file": "admin-server/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "admin-server/pom.xml",
+      "artifact": "spring-boot-starter-security-oauth2-client"
+    },
+    {
+      "file": "admin-server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "admin-server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "authentication-common/pom.xml",
+      "artifact": "spring-boot-starter-oauth2-authorization-server"
+    },
+    {
+      "file": "authentication-common/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "authentication-common/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb"
+    },
+    {
+      "file": "authentication-common/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "authentication-common/pom.xml",
+      "artifact": "spring-boot-starter-security-oauth2-client"
+    },
+    {
+      "file": "authentication-common/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "authentication-common/pom.xml",
+      "artifact": "spring-boot-starter-security-oauth2-resource-server"
+    },
+    {
+      "file": "authentication-common/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "authentication-service/pom.xml",
+      "artifact": "spring-boot-starter-mail"
+    },
+    {
+      "file": "authentication-service/pom.xml",
+      "artifact": "spring-boot-starter-security-oauth2-authorization-server"
+    },
+    {
+      "file": "authentication-service/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb"
+    },
+    {
+      "file": "authentication-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "authentication-service/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "authentication-service/pom.xml",
+      "artifact": "spring-boot-starter-security-oauth2-resource-server"
+    },
+    {
+      "file": "authentication-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "authentication-service/pom.xml",
+      "artifact": "spring-boot-starter-security-oauth2-client"
+    },
+    {
+      "file": "authentication-service/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "authentication-service/pom.xml",
+      "artifact": "spring-boot-starter-session-data-redis"
+    },
+    {
+      "file": "authentication-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "authentication-service/pom.xml",
+      "artifact": "spring-boot-testcontainers"
+    },
+    {
+      "file": "authentication-service/pom.xml",
+      "artifact": "spring-boot-security-oauth2-client"
+    },
+    {
+      "file": "authentication-service/pom.xml",
+      "artifact": "spring-boot-starter-session-data-redis-test"
+    },
+    {
+      "file": "authentication-service/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "authentication-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "authentication-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "edge-server/pom.xml",
+      "artifact": "spring-boot-starter-cache"
+    },
+    {
+      "file": "edge-server/pom.xml",
+      "artifact": "spring-boot-starter-webclient"
+    },
+    {
+      "file": "edge-server/pom.xml",
+      "artifact": "spring-boot-starter-mail"
+    },
+    {
+      "file": "edge-server/pom.xml",
+      "artifact": "spring-boot-starter-oauth2-client"
+    },
+    {
+      "file": "edge-server/pom.xml",
+      "artifact": "spring-boot-starter-security-oauth2-resource-server"
+    },
+    {
+      "file": "edge-server/pom.xml",
+      "artifact": "spring-boot-starter-opentelemetry"
+    },
+    {
+      "file": "edge-server/pom.xml",
+      "artifact": "spring-boot-starter-data-redis-reactive"
+    },
+    {
+      "file": "edge-server/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "edge-server/pom.xml",
+      "artifact": "spring-boot-starter-webflux-test"
+    },
+    {
+      "file": "edge-server/pom.xml",
+      "artifact": "spring-boot-starter-session-data-redis-test"
+    },
+    {
+      "file": "edge-server/pom.xml",
+      "artifact": "spring-boot-testcontainers"
+    },
+    {
+      "file": "edge-server/pom.xml",
+      "artifact": "spring-boot-starter-webclient-test"
+    },
+    {
+      "file": "edge-server/pom.xml",
+      "artifact": "spring-boot-starter-security-test"
+    },
+    {
+      "file": "edge-server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "edge-server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "kotlin-service/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "kotlin-service/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb"
+    },
+    {
+      "file": "kotlin-service/pom.xml",
+      "artifact": "spring-boot-starter-security-oauth2-resource-server"
+    },
+    {
+      "file": "kotlin-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "kotlin-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "kotlin-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "kotlin-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "kotlin-service/pom.xml",
+      "artifact": "spring-boot-testcontainers"
+    },
+    {
+      "file": "kotlin-service/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb-test"
+    },
+    {
+      "file": "kotlin-service/pom.xml",
+      "artifact": "spring-boot-starter-security-test"
+    },
+    {
+      "file": "kotlin-service/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "kotlin-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "openzipkin-eureka/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "openzipkin-eureka/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "openzipkin-eureka/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "person-service/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "person-service/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb"
+    },
+    {
+      "file": "person-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "person-service/pom.xml",
+      "artifact": "spring-boot-starter-security-oauth2-resource-server"
+    },
+    {
+      "file": "person-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "person-service/pom.xml",
+      "artifact": "spring-boot-testcontainers"
+    },
+    {
+      "file": "person-service/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb-test"
+    },
+    {
+      "file": "person-service/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "person-service/pom.xml",
+      "artifact": "spring-boot-starter-security-test"
+    },
+    {
+      "file": "person-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "redis-jackson-security-webauthn-otp/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "redis-jackson-security-webauthn-otp/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "redis-jackson-security-webauthn-otp/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "scala-address-service/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb-reactive"
+    },
+    {
+      "file": "scala-address-service/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "scala-address-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "scala-address-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "scala-address-service/pom.xml",
+      "artifact": "spring-boot-test-autoconfigure"
+    },
+    {
+      "file": "scala-address-service/pom.xml",
+      "artifact": "spring-boot-testcontainers"
+    },
+    {
+      "file": "scala-address-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "user-service/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "user-service/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb"
+    },
+    {
+      "file": "user-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "user-service/pom.xml",
+      "artifact": "spring-boot-starter-security-oauth2-resource-server"
+    },
+    {
+      "file": "user-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "user-service/pom.xml",
+      "artifact": "spring-boot-testcontainers"
+    },
+    {
+      "file": "user-service/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "user-service/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb-test"
+    },
+    {
+      "file": "user-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "user-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "web-common/pom.xml",
+      "artifact": "spring-boot-starter-cache"
+    },
+    {
+      "file": "web-common/pom.xml",
+      "artifact": "spring-boot-kafka"
+    },
+    {
+      "file": "web-common/pom.xml",
+      "artifact": "spring-boot-webmvc"
+    },
+    {
+      "file": "web-common/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "web-common/pom.xml",
+      "artifact": "spring-boot-starter-kafka"
+    },
+    {
+      "file": "web-common/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "web-common/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "web-common/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "web-common/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "web-common/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "web-common/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

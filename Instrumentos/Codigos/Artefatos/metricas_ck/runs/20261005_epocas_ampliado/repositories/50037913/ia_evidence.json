@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "ea1b93969ea7220143c2ac8c560042ad3353dcb4",
+      "date": "2025-12-04T09:41:58+01:00",
+      "author": "Michael Simons",
+      "email": "michael@simons.ac",
+      "message": "Polish.\n\nSigned-off-by: Michael Simons <michael@simons.ac>\n"
+    },
+    {
+      "sha": "606c7d9cb9c5428b5aac21ec1a4321658498b125",
+      "date": "2025-12-04T09:31:00+01:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.apache.maven.plugins:maven-release-plugin from 3.2.0 to 3.3.0 (#235)\n\nBumps [org.apache.maven.plugins:maven-release-plugin](https://github.com/apache/maven-release) from 3.2.0 to 3.3.0.\n- [Release notes](https://github.com/apache/maven-release/releases)\n- [Commits](https://github.com/apache/maven-release/compare/maven-release-3.2.0...maven-release-3.3.0)\n\n---\nupdated-dependencies:\n- dependency-name: org.apache.maven.plugins:maven-release-plugin\n  dependency-version: 3.3.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "622b42f50fa4894ab7a5e9f92b83bf287cfc7877",
+      "date": "2025-12-03T19:10:11+01:00",
+      "author": "Michael Simons",
+      "email": "michael@simons.ac",
+      "message": "refactor: Polish assertj bits, optimise source pattern URL.\n\n"
+    },
+    {
+      "sha": "958e5cf9959084d46c994b7a937e87e55ce4b56c",
+      "date": "2025-12-03T18:14:03+01:00",
+      "author": "Michael Simons",
+      "email": "michael@simons.ac",
+      "message": "[maven-release-plugin] prepare for next development iteration\n"
+    },
+    {
+      "sha": "2998ad1452ad20db93e2e323aa632d1c9e4e7aa3",
+      "date": "2025-12-03T18:13:59+01:00",
+      "author": "Michael Simons",
+      "email": "michael@simons.ac",
+      "message": "[maven-release-plugin] prepare release 1.0.0\n"
+    },
+    {
+      "sha": "bb77dce8c1b0895957a7dfee50e90828503a7db3",
+      "date": "2025-12-03T18:13:37+01:00",
+      "author": "Michael Simons",
+      "email": "michael@simons.ac",
+      "message": "chore: Prepare final 1.0.0 release.\n"
+    },
+    {
+      "sha": "ad5c0bca7f425a81a5df64d550bd740a5adff12f",
+      "date": "2025-12-03T18:11:59+01:00",
+      "author": "Michael Simons",
+      "email": "michael@simons.ac",
+      "message": "chore: Align project with Spring Java format as used in my other libraries.\n\nSigned-off-by: Michael Simons <michael@simons.ac>\n"
+    },
+    {
+      "sha": "32525fa987b48950e250ce333daa861ecbecf940",
+      "date": "2025-12-03T18:09:39+01:00",
+      "author": "Michael Simons",
+      "email": "michael@simons.ac",
+      "message": "build: Update Maven wrapper to 3.3.4 and Maven to 3.9.11.\n\nSigned-off-by: Michael Simons <michael@simons.ac>\n"
+    },
+    {
+      "sha": "99846176cf2190dc0e43fbd6df7cd0da7f41295e",
+      "date": "2025-12-03T17:52:07+01:00",
+      "author": "Michael Simons",
+      "email": "michael@simons.ac",
+      "message": "build: Sort pom.\n"
+    },
+    {
+      "sha": "c39b1dc92b93aef3b70c49a6f6ef71a745155db5",
+      "date": "2025-12-03T17:50:21+01:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.springframework.boot:spring-boot-starter-parent from 3.5.0 to 4.0.0 (#231)\n\n* Bump org.springframework.boot:spring-boot-starter-parent\n\nBumps [org.springframework.boot:spring-boot-starter-parent](https://github.com/spring-projects/spring-boot) from 3.5.0 to 4.0.0.\n- [Release notes](https://github.com/spring-projects/spring-boot/releases)\n- [Commits](https://github.com/spring-projects/spring-boot/compare/v3.5.0...v4.0.0)\n\n---\nupdated-dependencies:\n- dependency-name: org.springframework.boot:spring-boot-starter-parent\n  dependency-version: 4.0.0\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\n\n* Fix things.\n\n---------\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Michael Simons <michael@simons.ac>"
+    },
+    {
+      "sha": "6369dc49696cefeba878cb4e7171fff8543caef3",
+      "date": "2025-12-03T15:16:02Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump com.puppycrawl.tools:checkstyle from 10.26.1 to 12.2.0 (#232)\n\n"
+    },
+    {
+      "sha": "6ab6c95b171b67e96ca93cd10dcba7eb919519bf",
+      "date": "2025-12-03T15:13:48Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.sonarsource.scanner.maven:sonar-maven-plugin (#233)\n\n"
+    },
+    {
+      "sha": "81731a564491deaa3db1f651f8216d123dffcf7b",
+      "date": "2025-12-03T15:13:39Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.apache.maven.plugins:maven-release-plugin from 3.1.1 to 3.2.0 (#228)\n\n"
+    },
+    {
+      "sha": "8d89d620025dae16a6ef45708ef329048ad0c73f",
+      "date": "2025-12-03T15:13:34Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.jacoco:jacoco-maven-plugin from 0.8.13 to 0.8.14 (#224)\n\n"
+    },
+    {
+      "sha": "67bd896264b67928e574d3bba72ec359b84978a5",
+      "date": "2025-12-03T15:13:28Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.sonatype.central:central-publishing-maven-plugin (#221)\n\n"
+    },
+    {
+      "sha": "82b1eb8ebc60d80b68b7f79c7acc0959af722264",
+      "date": "2025-12-03T15:13:23Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.apache.maven.plugins:maven-compiler-plugin (#220)\n\n"
+    },
+    {
+      "sha": "ebd7536e4ae0817773d62af466a09d919027fb95",
+      "date": "2025-07-24T10:53:13+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump com.puppycrawl.tools:checkstyle from 10.21.3 to 10.26.1 (#215)\n\n* Bump com.puppycrawl.tools:checkstyle from 10.21.3 to 10.26.1\n\nBumps [com.puppycrawl.tools:checkstyle](https://github.com/checkstyle/checkstyle) from 10.21.3 to 10.26.1.\n- [Release notes](https://github.com/checkstyle/checkstyle/releases)\n- [Commits](https://github.com/checkstyle/checkstyle/compare/checkstyle-10.21.3...checkstyle-10.26.1)\n\n---\nupdated-dependencies:\n- dependency-name: com.puppycrawl.tools:checkstyle\n  dependency-version: 10.26.1\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\n\n* Adapt to checkstyle changes.\n\n---------\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Michael Simons <michael@simons.ac>"
+    },
+    {
+      "sha": "65c4bb90315755f5bb0d6c579db04cbe8af3beff",
+      "date": "2025-07-24T10:10:00+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.apache.maven.plugins:maven-gpg-plugin from 3.2.7 to 3.2.8 (#216)\n\nBumps [org.apache.maven.plugins:maven-gpg-plugin](https://github.com/apache/maven-gpg-plugin) from 3.2.7 to 3.2.8.\n- [Release notes](https://github.com/apache/maven-gpg-plugin/releases)\n- [Commits](https://github.com/apache/maven-gpg-plugin/compare/maven-gpg-plugin-3.2.7...maven-gpg-plugin-3.2.8)\n\n---\nupdated-dependencies:\n- dependency-name: org.apache.maven.plugins:maven-gpg-plugin\n  dependency-version: 3.2.8\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "b50f08c6f5e7f33f9850c6769a0c6f7b2841b012",
+      "date": "2025-07-24T10:09:50+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.sonatype.central:central-publishing-maven-plugin (#212)\n\nBumps [org.sonatype.central:central-publishing-maven-plugin](https://github.com/sonatype/central-publishing-maven-plugin) from 0.7.0 to 0.8.0.\n- [Commits](https://github.com/sonatype/central-publishing-maven-plugin/commits)\n\n---\nupdated-dependencies:\n- dependency-name: org.sonatype.central:central-publishing-maven-plugin\n  dependency-version: 0.8.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "a54ca1fd3819100a1bde703a907a6dd30f055223",
+      "date": "2025-06-05T16:24:26+02:00",
+      "author": "Michael J. Simons",
+      "email": "michael@simons.ac",
+      "message": "[maven-release-plugin] prepare for next development iteration\n"
+    },
+    {
+      "sha": "cb8bc5878ecc710b98bc9c0d0ba3a456c808f4d1",
+      "date": "2025-06-05T16:24:23+02:00",
+      "author": "Michael J. Simons",
+      "email": "michael@simons.ac",
+      "message": "[maven-release-plugin] prepare release 0.17.1\n"
+    },
+    {
+      "sha": "4ddbb6c344a3ddbe53b28ae1f789bfa384982477",
+      "date": "2025-06-05T16:24:07+02:00",
+      "author": "Michael J. Simons",
+      "email": "michael@simons.ac",
+      "message": "Upgrade to Spring Boot 3.5.0.\n"
+    },
+    {
+      "sha": "abc79630ab62e6a71b8fd9b78577287c21cf6f75",
+      "date": "2025-04-09T09:12:31+02:00",
+      "author": "Michael J. Simons",
+      "email": "michael@simons.ac",
+      "message": "Enable autopublish.\n"
+    },
+    {
+      "sha": "bfd3c877ebeaaa33399709cd9da7e880c5269479",
+      "date": "2025-04-09T09:08:39+02:00",
+      "author": "Michael J. Simons",
+      "email": "michael@simons.ac",
+      "message": "[maven-release-plugin] prepare for next development iteration\n"
+    },
+    {
+      "sha": "444f2aa32df20b3d290825e61709109e207f6783",
+      "date": "2025-04-09T09:08:36+02:00",
+      "author": "Michael J. Simons",
+      "email": "michael@simons.ac",
+      "message": "[maven-release-plugin] prepare release 0.16.1\n"
+    },
+    {
+      "sha": "eec854249fd34efcf43f52842ec533e273f278bb",
+      "date": "2025-04-09T09:08:18+02:00",
+      "author": "Michael J. Simons",
+      "email": "michael@simons.ac",
+      "message": "Configure new central publishing plugin.\n"
+    },
+    {
+      "sha": "26784aede37802fcd7eabe63b623752445f33392",
+      "date": "2025-04-09T09:04:31+02:00",
+      "author": "Michael J. Simons",
+      "email": "michael@simons.ac",
+      "message": "Upgrade to Spring Boot 3.4.4.\n"
+    },
+    {
+      "sha": "3f627f1e5c87b5f808c09ae8e1eba58d4bf3f3f1",
+      "date": "2025-04-09T07:01:03Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.jacoco:jacoco-maven-plugin from 0.8.12 to 0.8.13 (#207)\n\n"
+    },
+    {
+      "sha": "94f34ff40f651408c466925a5f5c8064ccdfad27",
+      "date": "2025-04-09T07:00:58Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.sonarsource.scanner.maven:sonar-maven-plugin (#205)\n\n"
+    },
+    {
+      "sha": "ab7acbe3cdf6b0b821db9a971e7d729dbdac1e40",
+      "date": "2025-03-30T10:46:31Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.apache.maven.plugins:maven-compiler-plugin (#204)\n\n"
+    }
+  ],
+  "commit_sha": "ea1b93969ea7220143c2ac8c560042ad3353dcb4",
+  "extracted_at": "2026-10-05T18:06:00.916521+00:00"
+}

@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "159974373b47ab4f0665d2d7e7ebadf230c2c0e8",
+      "date": "2026-10-05T09:05:48-04:00",
+      "author": "Ryan Baxter",
+      "email": "ryan.baxter@broadcom.com",
+      "message": "Merge pull request #4299 from spring-cloud/dependabot/maven/main/grpc.version-1.84.0\n\nBump grpc.version from 1.77.1 to 1.84.0"
+    },
+    {
+      "sha": "752fd490a64a538e344ff1adc83ece996c64b590",
+      "date": "2026-10-02T16:10:25-04:00",
+      "author": "Spencer Gibb",
+      "email": "spencer.gibb@broadcom.com",
+      "message": "Updates bucket4j to 8.21.0\n\nUses the newly published bucket4j bom\n"
+    },
+    {
+      "sha": "aadfe91bc846020e30d50ef262c8886a3774c80c",
+      "date": "2026-10-02T11:53:06-04:00",
+      "author": "Ryan Baxter",
+      "email": "ryan.baxter@broadcom.com",
+      "message": "Merge pull request #4303 from spring-cloud/maven-wrapper-update/main-3.10.0\n\nUpdate Maven wrapper to 3.10.0"
+    },
+    {
+      "sha": "6f4f5aae1550165c5b6e66edebf87869a3277b5e",
+      "date": "2026-10-01T19:46:59Z",
+      "author": "spring-builds",
+      "email": "spring-builds@users.noreply.github.com",
+      "message": "Update Maven wrapper to 3.10.0\n\nSigned-off-by: spring-builds <spring-builds@users.noreply.github.com>\n\nRemove duplicate dependency\n"
+    },
+    {
+      "sha": "7743f4cde46458c0e5dcedd6f5536aa778598323",
+      "date": "2026-10-01T18:24:43Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump grpc.version from 1.77.1 to 1.84.0\n\nBumps `grpc.version` from 1.77.1 to 1.84.0.\n\nUpdates `io.grpc:grpc-netty` from 1.77.1 to 1.84.0\n- [Release notes](https://github.com/grpc/grpc-java/releases)\n- [Commits](https://github.com/grpc/grpc-java/compare/v1.77.1...v1.84.0)\n\nUpdates `io.grpc:grpc-protobuf` from 1.77.1 to 1.84.0\n- [Release notes](https://github.com/grpc/grpc-java/releases)\n- [Commits](https://github.com/grpc/grpc-java/compare/v1.77.1...v1.84.0)\n\nUpdates `io.grpc:grpc-stub` from 1.77.1 to 1.84.0\n- [Release notes](https://github.com/grpc/grpc-java/releases)\n- [Commits](https://github.com/grpc/grpc-java/compare/v1.77.1...v1.84.0)\n\n---\nupdated-dependencies:\n- dependency-name: io.grpc:grpc-netty\n  dependency-version: 1.84.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n- dependency-name: io.grpc:grpc-protobuf\n  dependency-version: 1.84.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n- dependency-name: io.grpc:grpc-stub\n  dependency-version: 1.84.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "6653157b57dbe43b134e49de8b80e4501815c4f5",
+      "date": "2026-10-01T14:23:32-04:00",
+      "author": "Ryan Baxter",
+      "email": "ryan.baxter@broadcom.com",
+      "message": "Merge pull request #4302 from spring-cloud/dependabot/maven/main/com.google.protobuf-protobuf-java-util-4.36.2\n\nBump com.google.protobuf:protobuf-java-util from 4.33.6 to 4.36.2"
+    },
+    {
+      "sha": "bafef7a36a69838fe07849609b8530b6bced54ed",
+      "date": "2026-10-01T14:22:20-04:00",
+      "author": "Ryan Baxter",
+      "email": "ryan.baxter@broadcom.com",
+      "message": "Merge pull request #4300 from spring-cloud/dependabot/maven/main/bucket4j.version-8.20.0\n\nBump bucket4j.version from 8.15.0 to 8.20.0"
+    },
+    {
+      "sha": "733fd66b75f3c6dc8b7e6a9a01e08c4cd875db5e",
+      "date": "2026-10-01T14:18:40-04:00",
+      "author": "Ryan Baxter",
+      "email": "ryan.baxter@broadcom.com",
+      "message": "Merge pull request #4301 from spring-cloud/dependabot/maven/main/org.apache.maven.plugins-maven-jar-plugin-3.5.1\n\nBump org.apache.maven.plugins:maven-jar-plugin from 3.4.2 to 3.5.1"
+    },
+    {
+      "sha": "5db85284fc9f18d42fa70fc723e3712046ba8654",
+      "date": "2026-10-01T14:14:57Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump com.google.protobuf:protobuf-java-util from 4.33.6 to 4.36.2\n\nBumps com.google.protobuf:protobuf-java-util from 4.33.6 to 4.36.2.\n\n---\nupdated-dependencies:\n- dependency-name: com.google.protobuf:protobuf-java-util\n  dependency-version: 4.36.2\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "a87b7d9d18d766667590bc9e83a4144f6b0dd0d7",
+      "date": "2026-10-01T14:14:53Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.apache.maven.plugins:maven-jar-plugin from 3.4.2 to 3.5.1\n\nBumps [org.apache.maven.plugins:maven-jar-plugin](https://github.com/apache/maven-jar-plugin) from 3.4.2 to 3.5.1.\n- [Release notes](https://github.com/apache/maven-jar-plugin/releases)\n- [Commits](https://github.com/apache/maven-jar-plugin/compare/maven-jar-plugin-3.4.2...maven-jar-plugin-3.5.1)\n\n---\nupdated-dependencies:\n- dependency-name: org.apache.maven.plugins:maven-jar-plugin\n  dependency-version: 3.5.1\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "c9756dbda425edfacf0566736945e9c797279fc8",
+      "date": "2026-10-01T14:14:38Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump bucket4j.version from 8.15.0 to 8.20.0\n\nBumps `bucket4j.version` from 8.15.0 to 8.20.0.\n\nUpdates `com.bucket4j:bucket4j_jdk17-core` from 8.15.0 to 8.20.0\n- [Release notes](https://github.com/bucket4j/bucket4j/releases)\n- [Commits](https://github.com/bucket4j/bucket4j/compare/8.15.0...8.20.0)\n\nUpdates `com.bucket4j:bucket4j_jdk17-caffeine` from 8.15.0 to 8.20.0\n- [Release notes](https://github.com/bucket4j/bucket4j/releases)\n- [Commits](https://github.com/bucket4j/bucket4j/compare/8.15.0...8.20.0)\n\n---\nupdated-dependencies:\n- dependency-name: com.bucket4j:bucket4j_jdk17-core\n  dependency-version: 8.20.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n- dependency-name: com.bucket4j:bucket4j_jdk17-caffeine\n  dependency-version: 8.20.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "06b8d4cd6032ec8b891c6cb748697d9fad49e1f6",
+      "date": "2026-10-01T10:13:07-04:00",
+      "author": "Ryan Baxter",
+      "email": "ryan.baxter@broadcom.com",
+      "message": "Merge pull request #4298 from spring-cloud/dependabot-allow-minor-updates\n\nAllow Dependabot minor version updates on main"
+    },
+    {
+      "sha": "a972591e7b7869d3f557fda45622bb7ad80816b6",
+      "date": "2026-10-01T09:54:08-04:00",
+      "author": "Ryan Baxter",
+      "email": "ryan.baxter@broadcom.com",
+      "message": "Allow Dependabot minor version updates on main\n\nRemove the semver-minor ignore from the maven entry targeting main so\nDependabot opens PRs for minor dependency updates. Major updates remain ignored.\n"
+    },
+    {
+      "sha": "e7a46f0aad9aaba24b64a07024ec6c89513d614e",
+      "date": "2026-09-30T06:59:54-07:00",
+      "author": "Spring Builds",
+      "email": "svc.spring-builds@broadcom.com",
+      "message": "Update Antora UI bundle to v0.4.26 (#4296)\n\nSigned-off-by: spring-builds <spring-builds@users.noreply.github.com>\nCo-authored-by: spring-builds <spring-builds@users.noreply.github.com>"
+    },
+    {
+      "sha": "88a92c065767a20a5d37753437d15975a8c06c28",
+      "date": "2026-09-24T21:29:01Z",
+      "author": "Spring Builds",
+      "email": "svc.spring-builds@broadcom.com",
+      "message": "Pin spring-cloud-github-actions to v1.1.2\n"
+    },
+    {
+      "sha": "dc80c891218795ae7ea6c3582f7df1351494fd95",
+      "date": "2026-09-24T17:12:58-04:00",
+      "author": "Ryan Baxter",
+      "email": "ryan.baxter@broadcom.com",
+      "message": "Merge branch '5.0.x'\n"
+    },
+    {
+      "sha": "5f52786dac72a03c93f0e6ecbdd6bde504846646",
+      "date": "2026-09-24T17:12:37-04:00",
+      "author": "Ryan Baxter",
+      "email": "ryan.baxter@broadcom.com",
+      "message": "Merge pull request #4283 from raccoonback/dispose-upstream-connection-on-cancelled-exchange\n\n Dispose upstream connection when a cancelled exchange discards the response in `NettyRoutingFilter`"
+    },
+    {
+      "sha": "ace303aa7a2cec978c8648fbaac03d4d1dfe5ce4",
+      "date": "2026-09-24T16:43:53-04:00",
+      "author": "Ryan Baxter",
+      "email": "ryan.baxter@broadcom.com",
+      "message": "Merge pull request #4293 from ryanjbaxter/remove-deprecated-starter\n\nMove from spring-boot-starter-web to spring-boot-starter-webmvc"
+    },
+    {
+      "sha": "b2eb3d5b2f361051337e59c164857def853b3c28",
+      "date": "2026-09-24T15:57:44-04:00",
+      "author": "Spencer Gibb",
+      "email": "spencer.gibb@broadcom.com",
+      "message": "Merge branch '5.0.x'\n"
+    },
+    {
+      "sha": "81494ceeec639a0a0003712bf1faed6bfcf83e88",
+      "date": "2026-09-24T15:56:39-04:00",
+      "author": "Spencer Gibb",
+      "email": "spencer.gibb@broadcom.com",
+      "message": "Enables test\n"
+    },
+    {
+      "sha": "53002e8e193aafb340f635bc73d4555791d03824",
+      "date": "2026-08-27T17:00:48-05:00",
+      "author": "Scott Frederick",
+      "email": "scottyfred@gmail.com",
+      "message": "Do not propagate forwarded body Content-Type to the real response\n\nSuppress Content-Type propagation on the ProxyExchange wrapper to prevent\nHTTP 500 errors when the content type is not provided.\n\nSigned-off-by: Scott Frederick <scottyfred@gmail.com>\n"
+    },
+    {
+      "sha": "de77cf6f4e02ca74dc5350b99ac6171e1e77ceb5",
+      "date": "2026-09-24T14:01:45Z",
+      "author": "Spring Builds",
+      "email": "svc.spring-builds@broadcom.com",
+      "message": "Updating project versions to 2026.0.0-SNAPSHOT\n"
+    },
+    {
+      "sha": "7ac723506097df87e22c49f5c89a8daf6687e440",
+      "date": "2026-09-24T13:45:06Z",
+      "author": "Spring Builds",
+      "email": "svc.spring-builds@broadcom.com",
+      "message": "Restoring ci.yaml pr.yaml removed by the release/5.1.0-M1 merge\n"
+    },
+    {
+      "sha": "5f7cf71c66492bea6870798c5269569b131eaa63",
+      "date": "2026-09-11T13:41:09+09:00",
+      "author": "raccoonback",
+      "email": "kosb15@naver.com",
+      "message": "Dispose upstream connection on cancelled exchange\n\nAn exchange cancelled between the upstream response arriving and NettyRoutingFilter storing the connection leaks the buffered body, since nothing subscribes to the response and NettyWriteResponseFilter's cleanup has already run with no connection to dispose.\n\nSigned-off-by: raccoonback <kosb15@naver.com>\n"
+    },
+    {
+      "sha": "a3b083bd591c25e45ebd6f61ec2a82259740dda3",
+      "date": "2026-09-21T16:42:56-04:00",
+      "author": "Ryan Baxter",
+      "email": "ryan.baxter@broadcom.com",
+      "message": "Move from spring-boot-starter-web to spring-boot-starter-webmvc\n"
+    },
+    {
+      "sha": "2020088db0a3aadcb79d87cc4ae26c64da4b91b0",
+      "date": "2026-09-18T19:37:43Z",
+      "author": "spring-builds",
+      "email": "spring-builds@users.noreply.github.com",
+      "message": "Release 5.1.0-M1\n"
+    },
+    {
+      "sha": "5f7c6c644fa4541d30cb2b73b874517737ae7ec0",
+      "date": "2026-09-08T19:00:48Z",
+      "author": "Spring Builds",
+      "email": "svc.spring-builds@broadcom.com",
+      "message": "Initialize commercial release branch\n"
+    },
+    {
+      "sha": "4c3d609572052eb82ef1979bae7638e9c8500180",
+      "date": "2026-09-08T18:58:39Z",
+      "author": "Spring Builds",
+      "email": "svc.spring-builds@broadcom.com",
+      "message": "Update versions for 2026.0.0-INTERNAL-SNAPSHOT\n"
+    },
+    {
+      "sha": "0b2b9ca94fa331a764637d5486dd77acfac1c42d",
+      "date": "2026-09-08T18:56:37Z",
+      "author": "Spring Builds",
+      "email": "svc.spring-builds@broadcom.com",
+      "message": "Add commercial release CI files [skip actions]\n"
+    },
+    {
+      "sha": "45ca2fc43f445b3b0c044300068bbfb761e02675",
+      "date": "2026-09-18T12:18:25-04:00",
+      "author": "Spencer Gibb",
+      "email": "spencer.gibb@broadcom.com",
+      "message": "Reactor core retry caching (#4290)\n\n* Adds CacheFlux copied from reactor addons\n\n* Refactors from reactor.retry.Retry to reactor.util.retry.Retry\n\n* Makes deprecated method private\n\n* Removes RetryConfig.basedOnPreviousValue"
+    }
+  ],
+  "commit_sha": "159974373b47ab4f0665d2d7e7ebadf230c2c0e8",
+  "extracted_at": "2026-10-05T17:54:18.824425+00:00"
+}

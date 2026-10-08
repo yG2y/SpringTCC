@@ -1,0 +1,576 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "2.0.6.RELEASE",
+  "spring_boot_major": "2",
+  "java_versions_declared": "1.8",
+  "build_evidence": [
+    {
+      "file": "config-client-discovery-first/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "config-client-discovery-first/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "config-client-discovery-first/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "config-client-discovery-first/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "config-client-discovery-first/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "config-client/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "config-client/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "config-client/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "config-client/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "config-client/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "config-server-discovery-first/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "config-server-discovery-first/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "config-server-discovery-first/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "config-server/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "config-server/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "config-server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "consul-config/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "consul-config/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "consul-config/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "consul-config/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "consul-config/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "consul-discovery/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "consul-discovery/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "consul-discovery/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "consul-discovery/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "consul-discovery/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "contract-consumer-amqp/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "contract-consumer-amqp/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "contract-consumer-amqp/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "contract-consumer-amqp/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "contract-consumer-amqp/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "contract-consumer-integration/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "contract-consumer-integration/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "contract-consumer-integration/pom.xml",
+      "artifact": "spring-boot-starter-integration"
+    },
+    {
+      "file": "contract-consumer-integration/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "contract-consumer-integration/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "contract-consumer-reactive/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "contract-consumer-reactive/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "contract-consumer-reactive/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "contract-consumer-reactive/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "contract-consumer-rest/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "contract-consumer-rest/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "contract-consumer-rest/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "contract-consumer-rest/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "contract-consumer-stream/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "contract-consumer-stream/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "contract-consumer-stream/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "contract-consumer-stream/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "contract-producer-amqp/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "contract-producer-amqp/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "contract-producer-amqp/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "contract-producer-amqp/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "contract-producer-amqp/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "contract-producer-integration/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "contract-producer-integration/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "contract-producer-integration/pom.xml",
+      "artifact": "spring-boot-starter-integration"
+    },
+    {
+      "file": "contract-producer-integration/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "contract-producer-integration/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "contract-producer-reactive/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "contract-producer-reactive/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb-reactive"
+    },
+    {
+      "file": "contract-producer-reactive/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "contract-producer-reactive/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "contract-producer-reactive/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "contract-producer-rest-external-contracts/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "contract-producer-rest-external-contracts/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "contract-producer-rest-external-contracts/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "contract-producer-rest-external-contracts/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "contract-producer-rest-git/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "contract-producer-rest-git/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "contract-producer-rest-git/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "contract-producer-rest-git/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "contract-producer-rest-per-consumer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "contract-producer-rest-per-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "contract-producer-rest-per-consumer/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "contract-producer-rest-per-consumer/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "contract-producer-rest/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "contract-producer-rest/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "contract-producer-rest/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "contract-producer-rest/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "contract-producer-stream/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "contract-producer-stream/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "contract-producer-stream/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "contract-producer-stream/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "eureka-client/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "eureka-client/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "eureka-client/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "eureka-client/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "eureka-server/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "eureka-server/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "eureka-server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "external-contracts/com/example/contract-producer-rest-external-contracts/0.0.1-SNAPSHOT/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "netflix-hystrix-dashboard/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "netflix-hystrix-dashboard/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "netflix-hystrix-dashboard/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "netflix-hystrix-dashboard/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "netflix-hystrix-dashboard/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "netflix-hystrix-stream/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "netflix-hystrix-stream/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "netflix-hystrix-stream/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "netflix-hystrix-stream/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "netflix-hystrix/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "netflix-hystrix/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "netflix-hystrix/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "netflix-hystrix/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "netflix-hystrix/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "netflix-trubine-stream/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "netflix-trubine-stream/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "netflix-trubine-stream/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "netflix-trubine/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "netflix-trubine/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "netflix-trubine/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "oauth2-authorization-server/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "oauth2-authorization-server/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "oauth2-authorization-server/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "oauth2-authorization-server/pom.xml",
+      "artifact": "spring-boot-starter-freemarker"
+    },
+    {
+      "file": "oauth2-authorization-server/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "oauth2-authorization-server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "oauth2-client-webclient/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "oauth2-client-webclient/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "oauth2-client-webclient/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "oauth2-client-webclient/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "oauth2-client-webclient/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "oauth2-client/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "oauth2-client/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "oauth2-client/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "oauth2-client/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "oauth2-client/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "oauth2-sso/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "oauth2-sso/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "oauth2-sso/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "oauth2-sso/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "oauth2-sso/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "oauth2-sso/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "pact-consumer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "pact-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "pact-consumer/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "pact-consumer/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "pact-provider/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "pact-provider/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "pact-provider/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "pact-provider/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "pact-provider/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

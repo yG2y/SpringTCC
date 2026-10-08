@@ -1,0 +1,40 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "2.5.12;3.5.4",
+  "spring_boot_major": "multiple",
+  "java_versions_declared": "${java.version};1.8;11;17;21;25;8",
+  "build_evidence": [
+    {
+      "file": "integration-tests/src/test/resources-its/io/github/kbuntrock/it/BasicIT/nominal_test_case_jdk11/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "integration-tests/src/test/resources-its/io/github/kbuntrock/it/BasicIT/nominal_test_case_jdk17/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "integration-tests/src/test/resources-its/io/github/kbuntrock/it/BasicIT/nominal_test_case_jdk21/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "integration-tests/src/test/resources-its/io/github/kbuntrock/it/BasicIT/nominal_test_case_jdk25/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "integration-tests/src/test/resources-its/io/github/kbuntrock/it/BasicIT/nominal_test_case_jdk8/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "openapi-maven-plugin/src/test/resources-its/io/github/kbuntrock/it/BasicIT/nominal_test_case/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "openapi-maven-plugin/src/test/resources-its/io/github/kbuntrock/it/BasicIT/sealed_class/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "openapi-maven-plugin/src/test/resources-its/io/github/kbuntrock/it/CmdLineIT/cmdLine/simple_project/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    }
+  ]
+}

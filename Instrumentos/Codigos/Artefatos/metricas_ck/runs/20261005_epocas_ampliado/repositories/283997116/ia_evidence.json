@@ -1,0 +1,230 @@
+{
+  "ia_status": "com_evidencia",
+  "ia_level": 2,
+  "ia_agents": "coderabbitai[bot]",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [
+    {
+      "agent": "coderabbitai[bot]",
+      "type": "author_identity",
+      "sha": "9366809efdfbe13746a914961e6651bf6d544cbc",
+      "identity": "coderabbitai[bot] 136622811+coderabbitai[bot]@users.noreply.github.com"
+    }
+  ],
+  "commits": [
+    {
+      "sha": "fd1695e98a4dbe8f2c630cfdbfe9424f074e3fce",
+      "date": "2026-09-29T15:29:28+02:00",
+      "author": "piomin",
+      "email": "piotr.minkowski@gmail.com",
+      "message": "Add OpenCode workflow opus 4.6\n"
+    },
+    {
+      "sha": "ebf8e4139dd2130461fc4b1a8c13e6c4591bf3db",
+      "date": "2026-09-26T14:10:51+02:00",
+      "author": "Piotr Mińkowski",
+      "email": "piotr.minkowski@gmail.com",
+      "message": "Merge pull request #32 from piomin/renovate/actions-checkout-7.x\n\nUpdate actions/checkout action to v7"
+    },
+    {
+      "sha": "3cd78eaa86b8563400b2400a10b3a750e362ec95",
+      "date": "2026-09-26T14:10:38+02:00",
+      "author": "Piotr Mińkowski",
+      "email": "piotr.minkowski@gmail.com",
+      "message": "Merge pull request #30 from piomin/renovate/major-spring-boot\n\nUpdate dependency org.springframework.boot:spring-boot-starter-parent to v4"
+    },
+    {
+      "sha": "bf2d3499240e7f441c9b3f176048524fa4933bcc",
+      "date": "2026-09-26T09:11:19Z",
+      "author": "opencode-agent[bot]",
+      "email": "opencode-agent[bot]@users.noreply.github.com",
+      "message": "Migrate sample-app-netflix-dgs from DGS to spring-boot-starter-graphql for Spring Boot 4.x compatibility\n\nNetflix DGS 9.x is incompatible with Spring Boot 4.x (references\nJacksonAutoConfiguration which no longer exists). DGS 11.x/12.x which\nsupports Spring Boot 4.x is not yet published to Maven Central.\n\nChanges:\n- Replace graphql-dgs-spring-boot-starter with spring-boot-starter-graphql\n  and spring-graphql-test\n- Migrate @DgsComponent + @DgsData to @Controller + @QueryMapping/@MutationMapping\n- Remove DGS-specific EmployeeContext and EmployeeContextBuilder\n- Change int -> Integer for salary/age fields in Employee and EmployeeInput\n- Move GraphQL schemas from resources/schema/ to resources/graphql/\n- Update schemas: QueryResolver/MutationResolver -> Query/Mutation types\n- Rewrite tests using ExecutionGraphQlServiceTester instead of DgsQueryExecutor\n\nAll 9 tests pass.\n"
+    },
+    {
+      "sha": "0f1d5eaf1d152216e73185303e0786c8764fbe52",
+      "date": "2026-09-26T09:00:32Z",
+      "author": "opencode-agent[bot]",
+      "email": "opencode-agent[bot]@users.noreply.github.com",
+      "message": "Remove committed target directories and fix .gitignore\n"
+    },
+    {
+      "sha": "926b3fef459943461b10b8de55c50e19712761a8",
+      "date": "2026-09-26T06:05:21Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency maven to v2.2.0 (#34)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "3a00952296b9e469b4880040b13da003c98305a8",
+      "date": "2026-09-26T02:08:19Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency org.jacoco:jacoco-maven-plugin to v0.8.15 (#33)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "adca1e7c235416781638e13de452f37c0a56fd15",
+      "date": "2026-09-25T21:36:50Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update cimg/openjdk Docker tag to v21.0.12 (#31)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "48db05251e2cf716255a01067a8e522307edac7a",
+      "date": "2026-09-25T21:36:07Z",
+      "author": "opencode-agent[bot]",
+      "email": "opencode-agent[bot]@users.noreply.github.com",
+      "message": "Fixed Spring Boot 4.x compatibility; 20 tests pass\n\nCo-authored-by: piomin <piomin@users.noreply.github.com>\n"
+    },
+    {
+      "sha": "dbdf4b058afb72affbe01f4154293adcdcd4247e",
+      "date": "2026-09-25T21:35:52Z",
+      "author": "opencode-agent[bot]",
+      "email": "opencode-agent[bot]@users.noreply.github.com",
+      "message": "Fix tests for Spring Boot 4.x compatibility\n\n- sample-app-spring-graphql: Replace removed @AutoConfigureGraphQlTester with\n  ExecutionGraphQlServiceTester; fix primitive int fields in Employee to Integer\n  to allow null in partial GraphQL responses; update java.version to 17\n\n- sample-app-kickstart: Migrate from incompatible graphql-java-kickstart (uses\n  Jackson 2.x, incompatible with Spring Boot 4.x Jackson 3.x) to\n  spring-boot-starter-graphql; convert resolvers from GraphQLQueryResolver/\n  GraphQLMutationResolver pattern to Spring @Controller with @QueryMapping/\n  @MutationMapping; update GraphQL schemas to use standard Query/Mutation types;\n  rewrite tests using ExecutionGraphQlServiceTester; fix primitive int fields in\n  Employee to Integer\n"
+    },
+    {
+      "sha": "65f71c084a16163a8451e35f1e8affb16f2c8282",
+      "date": "2026-09-25T21:25:58Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency org.springframework.boot:spring-boot-starter-parent to v4"
+    },
+    {
+      "sha": "3cd22f6acaaf773b06ceb06786af4ed9295d354f",
+      "date": "2026-09-25T21:25:49Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update actions/checkout action to v7"
+    },
+    {
+      "sha": "5bcb73339f8d2d707c4e15d61e89760d0abda0d7",
+      "date": "2026-09-25T23:25:01+02:00",
+      "author": "Piotr Mińkowski",
+      "email": "piotr.minkowski@gmail.com",
+      "message": "Integrate git-shallow-clone into CircleCI config\n\nAdded git-shallow-clone orb for optimized cloning."
+    },
+    {
+      "sha": "33ec270865feff8cfe015bee209b02e9b69b2494",
+      "date": "2026-09-25T23:22:00+02:00",
+      "author": "piomin",
+      "email": "piotr.minkowski@gmail.com",
+      "message": "Add OpenCode workflow\n"
+    },
+    {
+      "sha": "f656f01809bb5a58ff38cb2099ba9c5d6666b04d",
+      "date": "2026-09-25T23:14:44+02:00",
+      "author": "Piotr Mińkowski",
+      "email": "piotr.minkowski@gmail.com",
+      "message": "Update SonarCloud command in CircleCI config"
+    },
+    {
+      "sha": "c49fc19b4a5319c251f3162ee41f2f56afc72fad",
+      "date": "2025-11-01T05:51:23Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "chore(deps): update cimg/openjdk docker tag to v21.0.9 (#29)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "dfc64900f0fa8f83429ba4830610bd6885766e26",
+      "date": "2025-10-12T04:46:01Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "chore(deps): update dependency org.jacoco:jacoco-maven-plugin to v0.8.14 (#28)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "e6bb1f5d6526373b39632ba0ee3c9e828e60ed61",
+      "date": "2025-07-31T01:14:03Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "chore(deps): update dependency maven to v2.1.1 (#26)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "7a4aca5fc562f93e54a4b5dfcf5119620e49ed77",
+      "date": "2025-07-30T21:51:13Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "chore(deps): update cimg/openjdk docker tag to v21.0.8 (#25)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "a8baa29093f44f0e2ca9357b12d1345e352046e6",
+      "date": "2025-07-16T00:06:52+02:00",
+      "author": "Piotr Mińkowski",
+      "email": "piotr.minkowski@gmail.com",
+      "message": "Rename readme.md to README.md"
+    },
+    {
+      "sha": "157a4d4534d368bda3d5ebdd2643dccd25d2205c",
+      "date": "2025-07-16T00:05:55+02:00",
+      "author": "Piotr Mińkowski",
+      "email": "piotr.minkowski@gmail.com",
+      "message": "Update readme.md"
+    },
+    {
+      "sha": "804718ad47c55f8e16c4e524571f35863c8a3ce7",
+      "date": "2025-07-16T00:05:12+02:00",
+      "author": "Piotr Mińkowski",
+      "email": "piotr.minkowski@gmail.com",
+      "message": "Update readme.md"
+    },
+    {
+      "sha": "54e664e42f7a771f48faf4ce0bcc8428cd06c31a",
+      "date": "2025-07-16T00:04:29+02:00",
+      "author": "Piotr Mińkowski",
+      "email": "piotr.minkowski@gmail.com",
+      "message": "Delete README.md"
+    },
+    {
+      "sha": "eb2f161b336ad22254d49ef5fe9594efb7fee235",
+      "date": "2025-07-16T00:03:01+02:00",
+      "author": "Piotr Mińkowski",
+      "email": "piotr.minkowski@gmail.com",
+      "message": "Merge pull request #24 from piomin/coderabbitai/chat/3d69ac8\n\n📝 CodeRabbit Chat: Revise README.md with comprehensive documentation for Spring Boot GraphQL demo"
+    },
+    {
+      "sha": "bb98beebe31fb19ae75a1d245d0a58457f288fdc",
+      "date": "2025-07-16T00:02:31+02:00",
+      "author": "piomin",
+      "email": "piotr.minkowski@gmail.com",
+      "message": "update circleci maven\n"
+    },
+    {
+      "sha": "9366809efdfbe13746a914961e6651bf6d544cbc",
+      "date": "2025-07-15T21:40:13Z",
+      "author": "coderabbitai[bot]",
+      "email": "136622811+coderabbitai[bot]@users.noreply.github.com",
+      "message": "📝 CodeRabbit Chat: Revise README.md with comprehensive documentation for Spring Boot GraphQL demo"
+    },
+    {
+      "sha": "3d69ac8a8f8d714ca00c908a607e62e8e430e850",
+      "date": "2025-07-15T00:04:32+02:00",
+      "author": "Piotr Mińkowski",
+      "email": "piotr.minkowski@gmail.com",
+      "message": "Merge pull request #6 from piomin/renovate/major-netflix-dgs.spring.version\n\nfix(deps): update dependency com.netflix.graphql.dgs:graphql-dgs-spring-boot-starter to v9"
+    },
+    {
+      "sha": "5e60c6a764708ddad29b948bd8ee7c913257fc93",
+      "date": "2025-07-15T00:03:15+02:00",
+      "author": "piomin",
+      "email": "piotr.minkowski@gmail.com",
+      "message": "update circleci maven\n"
+    },
+    {
+      "sha": "ef4ea2393b4da7e1caed8f6a1c18093b706045fa",
+      "date": "2025-07-14T22:01:02Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "fix(deps): update dependency com.netflix.graphql.dgs:graphql-dgs-spring-boot-starter to v9"
+    },
+    {
+      "sha": "5e64af6dc52da85b877e51be4e4284167ef50263",
+      "date": "2025-07-15T00:00:26+02:00",
+      "author": "Piotr Mińkowski",
+      "email": "piotr.minkowski@gmail.com",
+      "message": "Merge pull request #7 from piomin/renovate/major-spring-boot\n\nfix(deps): update dependency org.springframework.boot:spring-boot-starter-parent to v3"
+    }
+  ],
+  "commit_sha": "fd1695e98a4dbe8f2c630cfdbfe9424f074e3fce",
+  "extracted_at": "2026-10-05T18:21:24.303666+00:00"
+}

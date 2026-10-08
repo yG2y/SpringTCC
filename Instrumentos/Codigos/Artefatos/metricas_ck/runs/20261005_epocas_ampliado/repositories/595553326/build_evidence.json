@@ -1,0 +1,48 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${springboot.version};2.7.18",
+  "spring_boot_major": "2",
+  "java_versions_declared": "1.8",
+  "build_evidence": [
+    {
+      "file": "crane4j-example/crane4j-mybatis-plus-extension-example/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "crane4j-example/crane4j-mybatis-plus-extension-example/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "crane4j-example/crane4j-spring-boot-starter-example/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "crane4j-example/crane4j-spring-boot-starter-example/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "crane4j-example/crane4j-spring-boot-starter-example/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "crane4j-example/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "crane4j-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "crane4j-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "crane4j-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-dependencies"
+    }
+  ]
+}

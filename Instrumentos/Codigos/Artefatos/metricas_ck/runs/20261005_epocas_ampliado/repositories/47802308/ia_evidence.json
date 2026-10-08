@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "ef1560b96831ed1546f4857cd3cb55497ddde07e",
+      "date": "2024-08-14T11:33:33+08:00",
+      "author": "wayshall",
+      "email": "weishao.zeng@gmail.com",
+      "message": "Merge branch '5.2.x'\n"
+    },
+    {
+      "sha": "165508bbd6e92e61aeb726fcb14dfb53e5b56af9",
+      "date": "2024-08-14T11:30:57+08:00",
+      "author": "wayshall",
+      "email": "weishao.zeng@gmail.com",
+      "message": "fix: fix pull\n"
+    },
+    {
+      "sha": "ed73454496a3173e306514f1b25de6ad53b3542c",
+      "date": "2024-08-14T11:20:20+08:00",
+      "author": "weishao zeng",
+      "email": "weishao.zeng@gmail.com",
+      "message": "fix: fix readme\n"
+    },
+    {
+      "sha": "f221d4c54cb3ca9d5549b4051bb2f4a464178bcd",
+      "date": "2024-08-14T11:14:55+08:00",
+      "author": "weishao zeng",
+      "email": "weishao.zeng@gmail.com",
+      "message": "Merge branch '5.2.x'\n"
+    },
+    {
+      "sha": "d1ff73b5490acd12333b6609f101d93106a6bdce",
+      "date": "2024-08-13T17:00:39+08:00",
+      "author": "weishao zeng",
+      "email": "weishao.zeng@gmail.com",
+      "message": "Merge branch '5.2.x' of github.com:wayshall/onetwo into 5.2.x\n"
+    },
+    {
+      "sha": "d9763277e7cd963f87caebac75c5dc98875985b8",
+      "date": "2024-08-13T17:00:15+08:00",
+      "author": "weishao zeng",
+      "email": "weishao.zeng@gmail.com",
+      "message": "fix: 重构rocketmq事务消息部分的代码，新增专门发送事务消息的接口，不再通过事务producer实现隐式事务消息\n"
+    },
+    {
+      "sha": "21906db29e6840c16e6b371d808325aecbe8d97f",
+      "date": "2024-08-13T11:06:40+08:00",
+      "author": "wayshall",
+      "email": "weishao.zeng@gmail.com",
+      "message": "Merge branch '5.2.x' of github.com:wayshall/onetwo into 5.2.x\n"
+    },
+    {
+      "sha": "75f5029de702b6910c042f3a9dc12165f1c03589",
+      "date": "2024-08-13T11:04:32+08:00",
+      "author": "wayshall",
+      "email": "weishao.zeng@gmail.com",
+      "message": "fix: add java-version\n"
+    },
+    {
+      "sha": "f2573986af2b7a7691c250d37fdd4adf990f0879",
+      "date": "2024-08-13T02:01:04+08:00",
+      "author": "weishao zeng",
+      "email": "weishao.zeng@gmail.com",
+      "message": "fix: 增加rocketmq事务消息测试代码，修改和重构事务消息相关代码\n"
+    },
+    {
+      "sha": "4d560e070b2c62c4253dd7959b3e27b9c54b09ac",
+      "date": "2024-08-12T01:03:18+08:00",
+      "author": "weishao zeng",
+      "email": "weishao.zeng@gmail.com",
+      "message": "fix: 把版本号升级到5.2.7，2.7为spring boot 版本\n"
+    },
+    {
+      "sha": "9c21b1e104734e291772ca37132840e71b23f5a7",
+      "date": "2024-08-12T01:02:16+08:00",
+      "author": "weishao zeng",
+      "email": "weishao.zeng@gmail.com",
+      "message": "fix: 重构修改rocketmq模块的测试代码\n"
+    },
+    {
+      "sha": "b589d1302df5412120f396baeccf9a5cab69c156",
+      "date": "2024-08-11T11:50:23+08:00",
+      "author": "weishao zeng",
+      "email": "weishao.zeng@gmail.com",
+      "message": "refact: 升级rocketmq到4.9.8，因此ons支持\n"
+    },
+    {
+      "sha": "f4b613c01a7b1f6d83a413d4b85fcb0605a8981c",
+      "date": "2024-08-06T01:48:33+08:00",
+      "author": "weishao zeng",
+      "email": "weishao.zeng@gmail.com",
+      "message": "fix: add util method for dbm\n"
+    },
+    {
+      "sha": "eb085a55c01793d86b787357a3ca119eb9fd9613",
+      "date": "2024-08-05T17:00:16+08:00",
+      "author": "weishao zeng",
+      "email": "weishao.zeng@gmail.com",
+      "message": "fix: security增加allowBackSlash配置\n"
+    },
+    {
+      "sha": "510f5cf88b9a52a78b35d10e83c6a875b20e000b",
+      "date": "2024-08-05T01:35:29+08:00",
+      "author": "weishao zeng",
+      "email": "weishao.zeng@gmail.com",
+      "message": "fix: 修复最新版的zuul移除了从eureka获取服务列表代码的问题\n"
+    },
+    {
+      "sha": "a22f533939787355bed991c60ec080b93704bda1",
+      "date": "2024-08-05T01:35:20+08:00",
+      "author": "weishao zeng",
+      "email": "weishao.zeng@gmail.com",
+      "message": "fix: 修复最新版的zuul移除了从eureka获取服务列表代码的问题\n"
+    },
+    {
+      "sha": "41370ca0f9d00b62be3d1cb937e5b54840b63e1b",
+      "date": "2024-08-04T10:04:47+08:00",
+      "author": "weishao zeng",
+      "email": "weishao.zeng@gmail.com",
+      "message": "fix: 修改升级spring boot后的相关编译和运行错误\n"
+    },
+    {
+      "sha": "c8d13e01562c01ea45a513574e5b2161598f1df3",
+      "date": "2024-08-03T18:12:11+08:00",
+      "author": "weishao zeng",
+      "email": "weishao.zeng@gmail.com",
+      "message": "feat: 升级spring boot到2.7.18，重构相关代码\n"
+    },
+    {
+      "sha": "8d6516b18bc8fa0c190a19a984678f8b368f10a8",
+      "date": "2023-12-13T15:06:38+08:00",
+      "author": "weishao zeng",
+      "email": "weishao.zeng@gmail.com",
+      "message": "fix: 增加内嵌artemis broker支持\n"
+    },
+    {
+      "sha": "04380ac0fb16002f9efb34299f9bce5f3e5817ae",
+      "date": "2023-12-12T11:11:55+08:00",
+      "author": "weishao zeng",
+      "email": "weishao.zeng@gmail.com",
+      "message": "fix: 重构IdempotentListener实现\n\n-\n增加自定义的MethodJmsListenerEndpoint和MessagingMessageListenerAdapter，重新实现IdempotentListener\n\nfix: https://github.com/wayshall/onetwo/issues/97\n"
+    },
+    {
+      "sha": "85f0fc51cbf9180bcb2f9e9c7ed41d93901661d1",
+      "date": "2023-12-12T01:02:26+08:00",
+      "author": "weishao zeng",
+      "email": "weishao.zeng@gmail.com",
+      "message": "fix: 修正IdempotentListener注解的实现\n\n增加activemq使用jackson序列化消息支持\n\nfix: https://github.com/wayshall/onetwo/issues/97\n"
+    },
+    {
+      "sha": "e4b80f288123b6a31a50b73bb63c8456b836f34a",
+      "date": "2023-12-11T17:53:40+08:00",
+      "author": "weishao zeng",
+      "email": "weishao.zeng@gmail.com",
+      "message": "feat: 增加jms幂等实现\n\n重构了mq相关实现部分代码\n\nfix: https://github.com/wayshall/onetwo/issues/97\n"
+    },
+    {
+      "sha": "ef73a56d78baef7a703f0bdcc3f99879b271b050",
+      "date": "2023-12-11T14:46:24+08:00",
+      "author": "weishao zeng",
+      "email": "weishao.zeng@gmail.com",
+      "message": "fix: 增加自定义jms监听器注解\n\nfix: https://github.com/wayshall/onetwo/issues/97\n"
+    },
+    {
+      "sha": "efeab12c95038e72331c16bed575c9d0d58c9e28",
+      "date": "2023-12-08T14:52:30+08:00",
+      "author": "weishao zeng",
+      "email": "weishao.zeng@gmail.com",
+      "message": "feat: 增加activemq artmis的支持\n\nfix https://github.com/wayshall/onetwo/issues/96\n"
+    },
+    {
+      "sha": "bdf1335460049ab0f2595f9c8fb5dd23cea5651c",
+      "date": "2023-11-29T10:53:53+08:00",
+      "author": "weishao zeng",
+      "email": "weishao.zeng@gmail.com",
+      "message": "fix: 修改季度对象\n"
+    },
+    {
+      "sha": "372089040b22079cb01f4a7048e4c831abc3158d",
+      "date": "2023-11-24T15:33:10+08:00",
+      "author": "weishao zeng",
+      "email": "weishao.zeng@gmail.com",
+      "message": "fix: fix datasourceFacotryBean\n"
+    },
+    {
+      "sha": "9d39384c2156942dcdf8521fc033c8bce6f51c42",
+      "date": "2023-11-24T10:34:05+08:00",
+      "author": "weishao zeng",
+      "email": "weishao.zeng@gmail.com",
+      "message": "fix: fix datasourceFacotryBean\n"
+    },
+    {
+      "sha": "4277f37d292468e65c3111cb15ed0808b0767dd7",
+      "date": "2023-11-24T02:06:57+08:00",
+      "author": "weishao zeng",
+      "email": "weishao.zeng@gmail.com",
+      "message": "fix: fix confict\n"
+    },
+    {
+      "sha": "4c3d08163e7f1e59f5aa13174a1d7f2a23eb92ae",
+      "date": "2023-11-24T02:07:55+08:00",
+      "author": "weishao zeng",
+      "email": "weishao.zeng@gmail.com",
+      "message": "fix: fix pom\n"
+    },
+    {
+      "sha": "67eb750a3ff0e53e38d159fc8fafa738d0a69436",
+      "date": "2023-11-21T12:01:45+08:00",
+      "author": "weishao zeng",
+      "email": "weishao.zeng@gmail.com",
+      "message": "fix: add PageableRequest support\n"
+    }
+  ],
+  "commit_sha": "ef1560b96831ed1546f4857cd3cb55497ddde07e",
+  "extracted_at": "2026-10-05T18:15:34.144573+00:00"
+}

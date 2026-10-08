@@ -1,0 +1,48 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${spring-boot.version};3.1.3",
+  "spring_boot_major": "3",
+  "java_versions_declared": "17",
+  "build_evidence": [
+    {
+      "file": "ollama-java-client-starter/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "ollama-java-client-starter/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "ollama-java-client-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "ollama-java-client-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-ollama-sample/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-boot-ollama-sample/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-ollama-sample/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "spring-boot-ollama-sample/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-ollama-sample/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-ollama-sample/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

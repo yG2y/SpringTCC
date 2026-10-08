@@ -1,0 +1,36 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "4.1.0",
+  "spring_boot_major": "4",
+  "java_versions_declared": "",
+  "build_evidence": [
+    {
+      "file": "build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "clients/client-example/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "core/core-api/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "storage/db-core/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "support/logging/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "support/monitoring/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "tests/api-docs/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    }
+  ]
+}

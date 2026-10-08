@@ -1,0 +1,177 @@
+[versions]
+# Core dependencies
+jspecify = "1.0.0"
+javapoet = "0.16.0"
+lombok = "1.18.42"
+autoservice = "1.1.1"
+palantir-java-format = "2.91.0"
+
+# Testing
+junit = "6.1.0"
+assertj = "3.27.7"
+awaitility = "4.3.0"
+jqwik = "1.10.1"
+archunit = "1.4.2"
+compile-testing = "0.23.0"
+truth = "1.4.5"
+# protobuf-java's own well-known types are real generated messages, so they cover every field kind
+protobuf = "4.36.2"
+# Compiles the book's .proto with the protoc release that matches protobuf-java
+protobuf-plugin = "0.10.0"
+# A consumer's nullness checker, run over a fixture: the library's own build runs none
+errorprone = "2.50.0"
+nullaway = "0.14.2"
+
+# Benchmarking
+jmh = "1.37"
+jol = "0.17"
+# Mapping benchmarks: the comparisons for the generated mapper
+mapstruct = "1.6.3"
+hibernate-validator = "9.1.0.Final"  # as the Spring Boot BOM pins it
+
+# Spring Boot 4.1.0 (requires Java 17+, Jakarta EE 11, Servlet 6.1; Spring Framework 7.0.8)
+# Note: hkj-spring 0.2.7 supports Spring Boot 3.5.7, 0.2.8+ requires Spring Boot 4.0.1+
+spring-boot = "4.1.0"
+spring-dependency-management = "1.1.7"
+
+# Jackson 3.x (group ID changed from com.fasterxml.jackson to tools.jackson in Spring Boot 4)
+# 3.1.4 matches the tools.jackson:jackson-bom managed by Spring Boot 4.1.0
+jackson = "3.1.4"
+
+# openapi-generator's JsonNullable holder, whose 0.2.11 serialises under Jackson 3 (book proofs)
+jackson-databind-nullable = "0.2.11"
+
+# JOOQ - Database access library (for spec interface examples)
+jooq = "3.21.5"
+
+# Maven Plugin API (for hkj-maven-plugin)
+maven-plugin-api = "3.9.14"
+maven-core = "3.9.14"
+maven-plugin-annotations = "3.15.2"
+
+# Code quality
+google-java-format = "1.35.0"
+
+# Plugins
+maven-publish = "0.36.0"
+plugin-publish = "1.3.1"
+spotless = "8.6.0"
+openrewrite = "7.34.0"
+jmh-plugin = "0.7.3"
+
+# Annotation Processing
+avaje-spi = "2.17"
+
+# Optional library integrations
+eclipse-collections = "13.0.0"
+google-guava = "33.6.0-jre"
+apache-commons-collections4 = "4.5.0"
+vavr = "1.0.1"
+pcollections = "5.0.0"
+
+[libraries]
+# Core
+jspecify = { module = "org.jspecify:jspecify", version.ref = "jspecify" }
+javapoet = { module = "com.palantir.javapoet:javapoet", version.ref = "javapoet" }
+lombok = { module = "org.projectlombok:lombok", version.ref = "lombok" }
+autoservice-annotations = { module = "com.google.auto.service:auto-service-annotations", version.ref = "autoservice" }
+autoservice = { module = "com.google.auto.service:auto-service", version.ref = "autoservice" }
+palantir-java-format = { module = "com.palantir.javaformat:palantir-java-format", version.ref = "palantir-java-format" }
+
+# Testing
+junit-bom = { module = "org.junit:junit-bom", version.ref = "junit" }
+junit-jupiter = { module = "org.junit.jupiter:junit-jupiter" }
+junit-platform-launcher = { module = "org.junit.platform:junit-platform-launcher" }
+assertj-core = { module = "org.assertj:assertj-core", version.ref = "assertj" }
+jqwik = { module = "net.jqwik:jqwik", version.ref = "jqwik" }
+jqwik-engine = { module = "net.jqwik:jqwik-engine", version.ref = "jqwik" }
+awaitility = { module = "org.awaitility:awaitility", version.ref = "awaitility" }
+archunit-junit5 = { module = "com.tngtech.archunit:archunit-junit5", version.ref = "archunit" }
+compile-testing = { module = "com.google.testing.compile:compile-testing", version.ref = "compile-testing" }
+truth = { module = "com.google.truth:truth", version.ref = "truth" }
+protobuf-java = { module = "com.google.protobuf:protobuf-java", version.ref = "protobuf" }
+errorprone-core = { module = "com.google.errorprone:error_prone_core", version.ref = "errorprone" }
+nullaway = { module = "com.uber.nullaway:nullaway", version.ref = "nullaway" }
+
+# Benchmarking
+jmh-core = { module = "org.openjdk.jmh:jmh-core", version.ref = "jmh" }
+jmh-generator-annprocess = { module = "org.openjdk.jmh:jmh-generator-annprocess", version.ref = "jmh" }
+jol-core = { module = "org.openjdk.jol:jol-core", version.ref = "jol" }
+mapstruct = { module = "org.mapstruct:mapstruct", version.ref = "mapstruct" }
+mapstruct-processor = { module = "org.mapstruct:mapstruct-processor", version.ref = "mapstruct" }
+hibernate-validator = { module = "org.hibernate.validator:hibernate-validator", version.ref = "hibernate-validator" }
+
+# Spring Boot
+spring-boot-bom = { module = "org.springframework.boot:spring-boot-dependencies", version.ref = "spring-boot" }
+spring-boot-autoconfigure = { module = "org.springframework.boot:spring-boot-autoconfigure" }
+spring-boot-autoconfigure-processor = { module = "org.springframework.boot:spring-boot-autoconfigure-processor" }
+spring-boot-configuration-processor = { module = "org.springframework.boot:spring-boot-configuration-processor" }
+spring-boot-starter-web = { module = "org.springframework.boot:spring-boot-starter-web", version.ref = "spring-boot" }
+spring-boot-starter-test = { module = "org.springframework.boot:spring-boot-starter-test" }
+spring-boot-starter-actuator = { module = "org.springframework.boot:spring-boot-starter-actuator" }
+spring-boot-actuator = { module = "org.springframework.boot:spring-boot-actuator" }
+spring-boot-actuator-autoconfigure = { module = "org.springframework.boot:spring-boot-actuator-autoconfigure" }
+spring-boot-health = { module = "org.springframework.boot:spring-boot-health" }
+spring-boot-webmvc = { module = "org.springframework.boot:spring-boot-webmvc" }
+spring-boot-jackson = { module = "org.springframework.boot:spring-boot-jackson" }
+spring-boot-restclient = { module = "org.springframework.boot:spring-boot-restclient", version.ref = "spring-boot" }
+spring-boot-webmvc-test = { module = "org.springframework.boot:spring-boot-webmvc-test" }
+
+# Spring Framework
+spring-web = { module = "org.springframework:spring-web" }
+spring-webmvc = { module = "org.springframework:spring-webmvc" }
+
+# Spring Security
+spring-security-core = { module = "org.springframework.security:spring-security-core" }
+spring-security-web = { module = "org.springframework.security:spring-security-web" }
+spring-security-config = { module = "org.springframework.security:spring-security-config" }
+spring-security-oauth2-jose = { module = "org.springframework.security:spring-security-oauth2-jose" }
+
+# Jakarta
+jakarta-servlet-api = { module = "jakarta.servlet:jakarta.servlet-api" }
+
+# Jackson 3.x (Spring Boot 4.0.1+ uses Jackson 3.x with new group ID)
+# Note: jackson-annotations stays on the 2.x line — Jackson 3 reuses the 2.x annotations module
+# (the jackson-bom keeps it at 2.21), so it has no 3.x release; leave its version to the Jackson/Spring BOM.
+jackson-databind = { module = "tools.jackson.core:jackson-databind", version.ref = "jackson" }
+jackson-core = { module = "tools.jackson.core:jackson-core", version.ref = "jackson" }
+jackson-annotations = { module = "com.fasterxml.jackson.core:jackson-annotations" }
+jackson-databind-nullable = { module = "org.openapitools:jackson-databind-nullable", version.ref = "jackson-databind-nullable" }
+
+# Micrometer
+micrometer-core = { module = "io.micrometer:micrometer-core" }
+
+# Maven Plugin API
+maven-plugin-api = { module = "org.apache.maven:maven-plugin-api", version.ref = "maven-plugin-api" }
+maven-core = { module = "org.apache.maven:maven-core", version.ref = "maven-core" }
+maven-plugin-annotations = { module = "org.apache.maven.plugin-tools:maven-plugin-annotations", version.ref = "maven-plugin-annotations" }
+javax-inject = { module = "javax.inject:javax.inject", version = "1" }
+
+# JOOQ
+jooq = { module = "org.jooq:jooq", version.ref = "jooq" }
+
+# Annotation Processing
+avaje-spi = { module = "io.avaje:avaje-spi-service", version.ref="avaje-spi" }
+
+# Optional library integrations
+eclipse-collections = { module = "org.eclipse.collections:eclipse-collections", version.ref="eclipse-collections" }
+google-guava = { module = "com.google.guava:guava", version.ref = "google-guava" }
+apache-commons-collections4 = { module = "org.apache.commons:commons-collections4", version.ref = "apache-commons-collections4" }
+vavr = { module = "io.vavr:vavr", version.ref = "vavr" }
+pcollections = { module = "org.pcollections:pcollections", version.ref = "pcollections" }
+
+[plugins]
+maven-publish = { id = "com.vanniktech.maven.publish", version.ref = "maven-publish" }
+plugin-publish = { id = "com.gradle.plugin-publish", version.ref = "plugin-publish" }
+spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
+openrewrite = { id = "org.openrewrite.rewrite", version.ref = "openrewrite" }
+jmh = { id = "me.champeau.jmh", version.ref = "jmh-plugin" }
+spring-boot = { id = "org.springframework.boot", version.ref = "spring-boot" }
+spring-dependency-management = { id = "io.spring.dependency-management", version.ref = "spring-dependency-management" }
+protobuf = { id = "com.google.protobuf", version.ref = "protobuf-plugin" }
+
+[bundles]
+jqwik = ["jqwik", "jqwik-engine"]
+spring-web = ["spring-web", "spring-webmvc", "spring-boot-webmvc", "jakarta-servlet-api"]
+spring-actuator = ["spring-boot-actuator", "spring-boot-actuator-autoconfigure", "spring-boot-health", "micrometer-core"]
+spring-security = ["spring-security-core", "spring-security-web", "spring-security-config", "spring-security-oauth2-jose"]

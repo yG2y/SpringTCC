@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "2eb5f0ec0c6872ab23c9380ef69a83b226edcef1",
+      "date": "2026-01-02T14:48:40-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Project upgrade\n\n- Upgrade to Java 25\n- Upgrade to Spring Boot 4.0.1\n- Upgrade to SpringDoc OpenAPI 3.0.1\n"
+    },
+    {
+      "sha": "2cc652cc74059b21f4953ecebdb1828460ce0f7d",
+      "date": "2026-01-02T11:21:07-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Project update\n\n- Migrate from Gradle to Maven\n- Migrate from application.yml to application.properties\n"
+    },
+    {
+      "sha": "82b0c717b9e15419da3c44dbd49830b1246e82d8",
+      "date": "2026-01-02T10:21:35-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Project upgrade\n\n- Upgrade to Spring Boot 3.5.9\n- Upgrade to SpringDoc OpenAPI 2.8.15\n- Upgrade to keycloak-admin-client 26.0.7\n- Upgrade to HttpClient5 5.6\n- Upgrade to Mongo Docker image 8.2.2\n- Upgrade to Keycloak Docker image 26.4.7\n- Upgrade to Gradle 8.14.3\n"
+    },
+    {
+      "sha": "300bbaa8ffea750ae4f8b022b1b04d5682d685fb",
+      "date": "2025-04-27T08:33:31+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- Upgrade to Spring Boot 3.4.5\n- Upgrade to SpringDoc OpenAPI 2.8.6\n- Move dockerImagePrefix from build.gradle to the build-docker-images.sh\n- Upgrade to Mongo Docker Image 8.0.6\n- Upgrade to Keycloak Docker Image 26.2.1\n"
+    },
+    {
+      "sha": "8ef7732d846c7ec617b413dea252694cbcf7ed17",
+      "date": "2025-04-26T23:03:16+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Add .gitattributes file and update README\n"
+    },
+    {
+      "sha": "03e85e9ef486adb4b98e194d0ef7706b43571431",
+      "date": "2025-03-14T22:15:19+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- Upgrade to SpringBoot 3.4.3;\n- Upgrade to SpringDoc OpenAPI 2.8.5;\n- Upgrade to keycloak-admin-client 26.0.4;\n- Upgrade to keycloak Docker image 26.1.4;\n- Upgrade to mongo Docker image 8.0.5;\n- Upgrade to gradle 8.13;\n- Update README.\n"
+    },
+    {
+      "sha": "c630a5be3f6aa2ab9595744d9621a4a4aabf04b0",
+      "date": "2025-01-15T17:14:22-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Update README file\n"
+    },
+    {
+      "sha": "8e243b9645710d6f870a56a73ce6d5618ae88829",
+      "date": "2025-01-15T16:57:53-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Convert some Value annotated classes to record and small update in test cases\n"
+    },
+    {
+      "sha": "fdaed48fedcaf85ccaaf4a8c5455c917409dce78",
+      "date": "2025-01-15T16:52:55-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Refactor application packages\n"
+    },
+    {
+      "sha": "b933931aa441ad587c30fa194e4ee6d023b1314e",
+      "date": "2025-01-15T16:43:07-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Convert some DTOs from class to record\n"
+    },
+    {
+      "sha": "4d040155c73d99264355ebf0d8be5c4144e987d3",
+      "date": "2025-01-15T16:37:22-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Remove Actuator dependency\n"
+    },
+    {
+      "sha": "cd5a16e5be0a763e277361eb30672891fad03f6b",
+      "date": "2025-01-15T16:30:32-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Remove MapStruct dependency\n"
+    },
+    {
+      "sha": "09a0979ac462288dfdaaa5e196a7ebbb29930e8b",
+      "date": "2025-01-15T16:09:58-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- Upgrade to Spring Boot 3.4.1;\n- Upgrade to SpringDoc OpenAPI 2.7.0;\n- Upgrade to Gradle 8.11.1;\n- Upgrade to mapstruct 1.6.3;\n- Rename WebSecurityConfig to SecurityConfig;\n- Remove EnableWebSecurity annotation as it is not needed;\n- Upgrade to MongoDB Docker image 8.0.3;\n- Upgrade to Keycloak Docker image 26.0.7;\n- Remove public keyword from Beans;\n- Rename docker-build.sh to build-docker-images.sh;\n- Replace KEYCLOAK_ADMIN and KEYCLOAK_ADMIN_PASSWORD with the correspondent KC_;\n- Replace deprecated MockBean annotation with MockitoBean;\n- Update README file.\n"
+    },
+    {
+      "sha": "1c97369a32d838917772b8882193d6dea89b19be",
+      "date": "2024-10-27T16:49:44+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Replace Jib with Paketo Buildpacks\n"
+    },
+    {
+      "sha": "484f1d5a1561843a3babe66144d1a9478568da48",
+      "date": "2024-10-27T16:30:28+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- upgrade to spring-boot 3.3.5;\n- upgrade to Java 21;\n- upgrade to jib 3.4.4;\n- upgrade to graddle 8.10.2;\n- upgrade to mongo docker image 7.0.14;\n- upgrade to keycloak docker image 26.0.1;\n- update README.\n"
+    },
+    {
+      "sha": "b4c4d4c387609e16c1ef904c1169f88bece51a99",
+      "date": "2024-03-24T17:55:10+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Simplify AbstractTestcontainers class\n"
+    },
+    {
+      "sha": "57efdcc7fc782ec4b488ad23a2473115e2b2d5e6",
+      "date": "2024-03-24T15:32:56+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Update README and remove keycloak.jpeg\n"
+    },
+    {
+      "sha": "108345458ff485273d8b9984fb9df5934f05b380",
+      "date": "2024-03-24T14:47:41+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Improve README\n"
+    },
+    {
+      "sha": "cb7ffd94235240653211c46ce989538d5c6dbadd",
+      "date": "2024-03-24T14:47:22+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Improve init-keycloak.sh script\n"
+    },
+    {
+      "sha": "d13a8d6d1c03effda321300ef883de78011d2ad7",
+      "date": "2024-03-24T14:28:56+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Fix test cases by disabling the Require Action Verify Profile\n"
+    },
+    {
+      "sha": "76e32e11a1494cec44493b66fcff2499689366a7",
+      "date": "2024-03-24T11:21:44+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to Keycloak 24.0.1\n\n- upgrade to keycloak docker image 24.0.1;\n- update init-keycloak.sh by adding a command to disable the Verify Profile Required Action that is enabled by default in Keycloak version 24.\n"
+    },
+    {
+      "sha": "dbdc56cf2fc41d0e25ac53a3a9443b1619fabe27",
+      "date": "2024-03-24T11:20:12+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Update README in the Test using cURL and Swagger sections\n"
+    },
+    {
+      "sha": "e314017f6c3bf3c7656e6ac7072c7292f2a3ad7e",
+      "date": "2024-03-24T11:17:20+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Fix reference of Springdoc OpenAPI in build.gradle\n"
+    },
+    {
+      "sha": "2cd561a2d92e399346612d94e019d4f0c05d4a37",
+      "date": "2024-03-24T10:53:06+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Using init-environment.sh script to start containers instead of docker-compose up\n"
+    },
+    {
+      "sha": "23fc03699e3956a71a90fb602674e065baa6a4f5",
+      "date": "2024-03-24T10:30:40+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Delete get-access-token.sh as it is not used anymore\n"
+    },
+    {
+      "sha": "9addb0c894586597d020ea924b8cc1ca305de672",
+      "date": "2024-03-24T10:22:02+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- upgrade to spring-boot 3.2.4;\n- upgrade to keycloak 23.0.7;\n- upgrade to springdoc-openapi 2.4.0;\n- upgrade to jib 3.4.1;\n- upgrade to httpClient5 5.3.1;\n- upgrade to amazoncorretto-jdk 17.0.10;\n- upgrade to mongo docker image 7.0.6.\n"
+    },
+    {
+      "sha": "e64ffa79ff8988c62e258aff0ebab24fc8b09223",
+      "date": "2024-03-24T09:30:24+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to Gradle 8.6\n"
+    },
+    {
+      "sha": "cc95f76da3b28e4204b79e8c91cd4cb1b5e2f276",
+      "date": "2023-10-18T16:30:30+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n- upgrade to spring-boot 3.1.4;\n- upgrade to springdoc-openapi 2.2.0;\n- upgrade to jib 3.4.0;\n- upgrade to amazoncorretto-jdk 17.0.8.\n"
+    },
+    {
+      "sha": "b28887b6c32e06bc294281a98f7df70b4579a61c",
+      "date": "2023-10-18T16:27:38+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to Mongo docker image 7.0.2 and Keycloak 22.0.4\n"
+    },
+    {
+      "sha": "82fbe1a19c2f605a92852b52a6ef4a8a2aa555ed",
+      "date": "2023-10-18T16:25:34+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to gradle 8.3\n"
+    }
+  ],
+  "commit_sha": "2eb5f0ec0c6872ab23c9380ef69a83b226edcef1",
+  "extracted_at": "2026-10-05T18:34:26.627128+00:00"
+}

@@ -1,0 +1,111 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 14,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "40ef0f3c027dacc3160386a5fbdfc563d28bb2b3",
+      "date": "2025-12-14T19:11:02+08:00",
+      "author": "El-12stu",
+      "email": "1579545645@qq.com",
+      "message": "Feature：增加star记录。\n"
+    },
+    {
+      "sha": "9e302e59eebd5febf4d275953696e211fb7cbadf",
+      "date": "2025-12-14T18:20:05+08:00",
+      "author": "El-12stu",
+      "email": "1579545645@qq.com",
+      "message": "feat：更正docker部署方式，处理release与package关系。\n"
+    },
+    {
+      "sha": "c465735271e7f678d79bff825843c2934604e6de",
+      "date": "2025-12-14T18:18:13+08:00",
+      "author": "El-12stu",
+      "email": "1579545645@qq.com",
+      "message": "feat：更正docker部署方式，处理release与package关系。\n"
+    },
+    {
+      "sha": "3fe49909518868cc40a2fe71b29d9badf4676751",
+      "date": "2025-12-14T17:53:41+08:00",
+      "author": "El-12stu",
+      "email": "1579545645@qq.com",
+      "message": "feat：更正docker部署方式\n"
+    },
+    {
+      "sha": "6c654605648821930535e2a502314b0ea2b6f33d",
+      "date": "2025-12-14T15:30:37+08:00",
+      "author": "El-12stu",
+      "email": "1579545645@qq.com",
+      "message": "fix: 修复Dockerfile镜像标签和健康检查\n- 将 amazoncorretto:21-alpine-jre 改为 amazoncorretto:21-alpine\n- 在创建用户前安装 wget 用于健康检查\n"
+    },
+    {
+      "sha": "c92f92f3d9cb5ca6750df6224c3973286c801fc7",
+      "date": "2025-12-14T15:17:40+08:00",
+      "author": "El-12stu",
+      "email": "1579545645@qq.com",
+      "message": "feat: 完善Docker部署配置和文档\n- 添加GitHub Actions自动构建工作流\n- 添加docker-compose.prod.yml生产环境配置\n- 添加CONFIGURATION.md配置说明文档\n- 添加DEPLOYMENT.md部署指南\n- 添加GITHUB_ACTIONS_GUIDE.md操作指南\n- 添加env.example配置模板\n- 修复nginx.conf代理地址\n- 修复Dockerfile健康检查端点\n- 更新README.md Docker部署说明\n"
+    },
+    {
+      "sha": "3c0d8aa4ed87fcd97bd6b176d53f84420fe7106c",
+      "date": "2025-12-13T20:07:50+08:00",
+      "author": "El-12stu",
+      "email": "1579545645@qq.com",
+      "message": "Bugfix:修改前后端bug，并添加docker管理方式。\n"
+    },
+    {
+      "sha": "c3977419ab39c1b33fbf56459f2eb114b7925b8d",
+      "date": "2025-12-13T16:04:59+08:00",
+      "author": "El-12stu",
+      "email": "1579545645@qq.com",
+      "message": "Feature:前端生成并调试\n"
+    },
+    {
+      "sha": "eaebd7a505e5569d8469ba1d47ea3c0a8d85ca45",
+      "date": "2025-12-13T15:11:02+08:00",
+      "author": "El-12stu",
+      "email": "1579545645@qq.com",
+      "message": "Feature:使用prototype,IOC控制Manus\n"
+    },
+    {
+      "sha": "ca7251785870855d97e4f8612e0cf255ea943b7c",
+      "date": "2025-12-13T14:25:55+08:00",
+      "author": "El-12stu",
+      "email": "1579545645@qq.com",
+      "message": "Feature:使用虚拟线程异步处理，避免阻塞主线程\n"
+    },
+    {
+      "sha": "44db13a465e4065d71ce1fe9f87a0416259c4be0",
+      "date": "2025-12-12T21:19:18+08:00",
+      "author": "El-12stu",
+      "email": "1579545645@qq.com",
+      "message": "Fixbug: 修改pdf生成bug并注释非必需功能准备测试\n"
+    },
+    {
+      "sha": "47ccbab78163a00fd8a75c48172869c0f2a40463",
+      "date": "2025-12-12T17:36:04+08:00",
+      "author": "El-12stu",
+      "email": "1579545645@qq.com",
+      "message": "增加自主规划Manus功能\n"
+    },
+    {
+      "sha": "e4bdedde1da0b0702ad03faf837da04b2ef3e379",
+      "date": "2025-12-08T20:54:13+08:00",
+      "author": "El-12stu",
+      "email": "1579545645@qq.com",
+      "message": "feature：RAG和ToolCalling功能添加\n"
+    },
+    {
+      "sha": "a2ed7632530ee9f35b1281b43ed418cafea3954e",
+      "date": "2025-11-29T18:19:25+08:00",
+      "author": "El-12stu",
+      "email": "1579545645@qq.com",
+      "message": "Initial commit of RelaMind project\n"
+    }
+  ],
+  "commit_sha": "40ef0f3c027dacc3160386a5fbdfc563d28bb2b3",
+  "extracted_at": "2026-10-05T18:16:15.534489+00:00"
+}

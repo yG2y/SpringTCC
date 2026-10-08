@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "37fae587305d9e525797bdf8b2cec642bc129322",
+      "date": "2026-06-06T14:27:49-05:00",
+      "author": "Ganesh Tiwari",
+      "email": "gtiwari333@gmail.com",
+      "message": "more tests, fixed flaky e2e tests, use mysql for integration test (#28)"
+    },
+    {
+      "sha": "aa3108f53564701290d6a6ec6129ee232863d0ec",
+      "date": "2026-06-06T13:01:50-05:00",
+      "author": "Ganesh Tiwari",
+      "email": "gtiwari333@gmail.com",
+      "message": "formatting\n\nAdded service dependency map and app architecture diagram."
+    },
+    {
+      "sha": "3f7ad3e574f461b075e7c347bc9fdcd958a79bb1",
+      "date": "2026-05-23T17:35:12-05:00",
+      "author": "Ganesh Tiwari",
+      "email": "gtiwari333@gmail.com",
+      "message": "local - kubernetes deployment (#25)"
+    },
+    {
+      "sha": "0349d3b7ce31b3ffeeee8290c49330cd0c40e5da",
+      "date": "2026-05-17T15:47:00-05:00",
+      "author": "Ganesh Tiwari",
+      "email": "gtiwari333@gmail.com",
+      "message": "handling deprecation (#24)"
+    },
+    {
+      "sha": "63176b3346ac8ea969704a3791eb83e0a44bee98",
+      "date": "2026-05-17T15:46:04-05:00",
+      "author": "Ganesh Tiwari",
+      "email": "gtiwari333@gmail.com",
+      "message": "Keycloak, artemis version update (#23)"
+    },
+    {
+      "sha": "e5c1cda5f255f09adbe47d401adb4198e1d29c31",
+      "date": "2026-05-17T15:36:49-05:00",
+      "author": "Ganesh Tiwari",
+      "email": "gtiwari333@gmail.com",
+      "message": "Using DynamicPropertySource and ServiceConnection for test containers + JDK 25 + dependencies updates (#22)"
+    },
+    {
+      "sha": "4bf0fab37c20606e70fee6bfaa6b23608bb5599a",
+      "date": "2026-05-17T14:10:16-05:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.springframework.security:spring-security-core (#21)"
+    },
+    {
+      "sha": "36ce22ea0651af4324e30a179693a18ca6bbcbe2",
+      "date": "2026-05-17T13:04:22-05:00",
+      "author": "Ganesh Tiwari",
+      "email": "gtiwari333@gmail.com",
+      "message": "Clarify comments in docker-compose.yml\n\nUpdated comments to clarify the purpose of the docker-compose file and how to build images."
+    },
+    {
+      "sha": "a647f09c5f8b8f696757c1b0e1713fd4be8ab965",
+      "date": "2026-05-17T11:59:07-05:00",
+      "author": "Ganesh Tiwari",
+      "email": "gtiwari333@gmail.com",
+      "message": "Replace MappingJackson2MessageConverter with JacksonJsonMessageConverter"
+    },
+    {
+      "sha": "d315d41a13716287be9353a4a9ffdb78b0cf0de2",
+      "date": "2026-02-07T14:25:23-06:00",
+      "author": "Ganesh Tiwari",
+      "email": "gtiwari333@gmail.com",
+      "message": "Fix heading format for Screenshots section"
+    },
+    {
+      "sha": "5da57dbfc4e30eefdc74d7e85d00a7126488de4a",
+      "date": "2026-02-07T14:24:27-06:00",
+      "author": "ganesh",
+      "email": "gtiwari333@gmail.com",
+      "message": "cleanups\n"
+    },
+    {
+      "sha": "6261bd8a02bdec435da860f6a38a9022a7d4d6d9",
+      "date": "2026-02-07T14:13:00-06:00",
+      "author": "ganesh",
+      "email": "gtiwari333@gmail.com",
+      "message": "dependency updates\n"
+    },
+    {
+      "sha": "355e1aeffd0995e8494455b10e02cff1e1359435",
+      "date": "2025-12-14T15:41:32-06:00",
+      "author": "Ganesh Tiwari",
+      "email": "gtiwari333@gmail.com",
+      "message": "spring boot 4   (#20)\n\n"
+    },
+    {
+      "sha": "c7c39c3eeb3a0fa67aa61f47c0fb2a9559cd62da",
+      "date": "2025-12-13T21:13:37-06:00",
+      "author": "Ganesh Tiwari",
+      "email": "gtiwari333@gmail.com",
+      "message": "coffee"
+    },
+    {
+      "sha": "ce907d52bdda028f7233ce7c9ce05e710cd508e9",
+      "date": "2025-12-13T18:26:49-06:00",
+      "author": "ganesh",
+      "email": "gtiwari333@gmail.com",
+      "message": "fix warning\n"
+    },
+    {
+      "sha": "9f60ccc5af489a85a601b0d324287385b3664878",
+      "date": "2025-12-13T18:19:49-06:00",
+      "author": "ganesh",
+      "email": "gtiwari333@gmail.com",
+      "message": "spring boot 3.5 upgrade\n"
+    },
+    {
+      "sha": "8a1fbe700617850c78d3dc6daaa376b9bf2c4556",
+      "date": "2025-10-11T19:42:49-05:00",
+      "author": "Ganesh Tiwari",
+      "email": "gtiwari333@gmail.com",
+      "message": "Dockerize using buildpack (#19)\n\n"
+    },
+    {
+      "sha": "d94211f712b01c8681b550c01422bed453427368",
+      "date": "2025-03-08T16:59:00-06:00",
+      "author": "Ganesh Tiwari",
+      "email": "gtiwari333@gmail.com",
+      "message": "added flexy pool, better transaction management - removed unnecessary @Transactional for better performance\n"
+    },
+    {
+      "sha": "bdc874db0c5a8f9c97fd07cecfaafef2495d8d22",
+      "date": "2025-03-08T15:45:44-06:00",
+      "author": "Ganesh Tiwari",
+      "email": "gtiwari333@gmail.com",
+      "message": "swagger ui page fixed\n"
+    },
+    {
+      "sha": "0d93682fd468fa6166e3187c25c5abe4ebd83bbf",
+      "date": "2024-12-28T15:39:04-06:00",
+      "author": "Ganesh Tiwari",
+      "email": "gtiwari333@gmail.com",
+      "message": "use chrome - edge not working in github ci\n\n"
+    },
+    {
+      "sha": "fb9eab1cd2bf140954ae3beea114b316b9223e8d",
+      "date": "2024-12-28T15:05:15-06:00",
+      "author": "Ganesh Tiwari",
+      "email": "gtiwari333@gmail.com",
+      "message": "spring boot 3.4.1"
+    },
+    {
+      "sha": "ded60bca7c52134731c9c03b54aa12364f804b30",
+      "date": "2024-09-22T16:05:17-05:00",
+      "author": "ganesh",
+      "email": "gtiwari333@gmail.com",
+      "message": "new spring boot, query count test fixed\n"
+    },
+    {
+      "sha": "43161a76a50fbf4d8f3613309682ba7001143154",
+      "date": "2024-06-08T12:01:53-05:00",
+      "author": "Ganesh Tiwari",
+      "email": "gtiwari333@gmail.com",
+      "message": "test fix - wikipedia article content changed"
+    },
+    {
+      "sha": "52fdf11bd2f2859725b95726fc05f25d9273fbfb",
+      "date": "2024-02-03T19:15:07-06:00",
+      "author": "Ganesh T",
+      "email": "gtiwari333@gmail.com",
+      "message": "add back reverted code\n"
+    },
+    {
+      "sha": "effb47fba4cb0f133008cd9ce02e5f9f893d824f",
+      "date": "2024-02-03T19:13:13-06:00",
+      "author": "Ganesh Tiwari",
+      "email": "gtiwari333@gmail.com",
+      "message": "upgrade to spring boot 3.2.2 (#16)\n\n* upgrade to spring boot 3.2.2"
+    },
+    {
+      "sha": "b28a761e269fae3182406e6cfed771a1e824890f",
+      "date": "2024-02-03T17:03:38-06:00",
+      "author": "Ganesh T",
+      "email": "gtiwari333@gmail.com",
+      "message": "sonarqube warning fix\n"
+    },
+    {
+      "sha": "09a2617114815fe5d18f323bf39a690e2ad855fc",
+      "date": "2024-01-01T15:52:53-06:00",
+      "author": "Ganesh Tiwari",
+      "email": "gtiwari333@gmail.com",
+      "message": "Keycloak  oidc  (#15)\n\n\nadded back keycloak odic\nadded report-service resourceserver\n"
+    },
+    {
+      "sha": "5038c8664a14ddab9b12dcb1ef9b210624653c47",
+      "date": "2023-12-25T13:48:20-06:00",
+      "author": "Ganesh T",
+      "email": "gtiwari333@gmail.com",
+      "message": "cache fix\n"
+    },
+    {
+      "sha": "d66f26b5d5a79adf4a832d9f2cea6d9dd7e155cf",
+      "date": "2023-12-25T13:44:44-06:00",
+      "author": "Ganesh T",
+      "email": "gtiwari333@gmail.com",
+      "message": "build fix\n"
+    },
+    {
+      "sha": "a67095c975b3179ecd5ff509230cb68fc85b7a1f",
+      "date": "2023-12-25T13:28:10-06:00",
+      "author": "Ganesh T",
+      "email": "gtiwari333@gmail.com",
+      "message": "text block\n"
+    }
+  ],
+  "commit_sha": "37fae587305d9e525797bdf8b2cec642bc129322",
+  "extracted_at": "2026-10-05T18:29:30.391195+00:00"
+}

@@ -1,0 +1,964 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${spring-version};${spring3-version};4.1.0",
+  "spring_boot_major": "4",
+  "java_versions_declared": "${java-lowest-version};1.8",
+  "build_evidence": [
+    {
+      "file": "bom/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "bom/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring/officespring/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring/officespring_data/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "spring/officespring_webclient/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "spring/officespring_webflux/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "spring/officespring_webmvc/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "springboot/officefloor-rest-spring-boot-3-starter/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "springboot/officefloor-rest-spring-boot-4-starter-tests/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "springboot/officefloor-rest-spring-boot-4-starter-tests/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "springboot/officefloor-rest-spring-boot-4-starter-tests/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "springboot/officefloor-rest-spring-boot-4-starter-tests/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "springboot/officefloor-rest-spring-boot-4-starter-tests/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "springboot/officefloor-rest-spring-boot-4-starter-tests/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "springboot/officefloor-rest-spring-boot-4-starter-tests/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "springboot/officefloor-rest-spring-boot-4-starter-tests/pom.xml",
+      "artifact": "spring-boot-starter-cache"
+    },
+    {
+      "file": "springboot/officefloor-rest-spring-boot-4-starter-tests/pom.xml",
+      "artifact": "spring-boot-starter-oauth2-resource-server"
+    },
+    {
+      "file": "springboot/officefloor-rest-spring-boot-4-starter-tests/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "springboot/officefloor-rest-spring-boot-4-starter-tests/pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "springboot/officefloor-rest-spring-boot-4-starter-tests/pom.xml",
+      "artifact": "spring-boot-http-client"
+    },
+    {
+      "file": "springboot/officefloor-rest-spring-boot-4-starter-tests/pom.xml",
+      "artifact": "spring-boot-restclient"
+    },
+    {
+      "file": "springboot/officefloor-rest-spring-boot-4-starter-tests/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "springboot/officefloor-rest-spring-boot-4-starter-tests/pom.xml",
+      "artifact": "spring-boot-security-test"
+    },
+    {
+      "file": "springboot/officefloor-rest-spring-boot-4-starter/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "springboot/officefloor-rest-spring-boot-starter-tests/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "springboot/officefloor-rest-spring-boot-starter-tests/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "springboot/officefloor-rest-spring-boot-starter-tests/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "springboot/officefloor-rest-spring-boot-starter-tests/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "springboot/officefloor-rest-spring-boot-starter-tests/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "springboot/officefloor-rest-spring-boot-starter-tests/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "springboot/officefloor-rest-spring-boot-starter-tests/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "springboot/officefloor-rest-spring-boot-starter-tests/pom.xml",
+      "artifact": "spring-boot-starter-cache"
+    },
+    {
+      "file": "springboot/officefloor-rest-spring-boot-starter-tests/pom.xml",
+      "artifact": "spring-boot-starter-oauth2-resource-server"
+    },
+    {
+      "file": "springboot/officefloor-rest-spring-boot-starter-tests/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "springboot/officefloor-rest-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "springboot/officefloor-rest-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "springboot/officefloor-rest-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "springboot/officefloor-rest-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "springboot/officefloor-rest-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "springboot/officefloor-rest-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "springboot/officefloor-rest-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "springboot/officefloor-rest-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "springboot/officefloor-rest-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter-cache"
+    },
+    {
+      "file": "springboot/officefloor-rest-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter-oauth2-resource-server"
+    },
+    {
+      "file": "tutorials/features/polyglot/ZioHttpServer/pom.xml",
+      "artifact": "spring-boot-flyway"
+    },
+    {
+      "file": "tutorials/native/persistence/TransactionHttpServer/pom.xml",
+      "artifact": "spring-boot-flyway"
+    },
+    {
+      "file": "tutorials/native/persistence/TransactionHttpServer/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tutorials/reference/SpringWebFluxApp/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "tutorials/reference/SpringWebFluxApp/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tutorials/reference/SpringWebFluxApp/pom.xml",
+      "artifact": "spring-boot-webflux-test"
+    },
+    {
+      "file": "tutorials/reference/SpringWebFluxApp/pom.xml",
+      "artifact": "spring-boot-webtestclient"
+    },
+    {
+      "file": "tutorials/reference/SpringWebFluxApp/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tutorials/reference/SpringWebMvcApp/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tutorials/reference/SpringWebMvcApp/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tutorials/reference/SpringWebMvcApp/pom.xml",
+      "artifact": "spring-boot-restclient"
+    },
+    {
+      "file": "tutorials/reference/SpringWebMvcApp/pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "tutorials/reference/SpringWebMvcApp/pom.xml",
+      "artifact": "spring-boot-webmvc-test"
+    },
+    {
+      "file": "tutorials/reference/SpringWebMvcApp/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tutorials/spring_officefloor/SpringHttpServer/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tutorials/spring_officefloor/SpringWebMvcHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestActuatorHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestActuatorHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestActuatorHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestActuatorHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestActuatorHttpServer/pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestActuatorHttpServer/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestCatsHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestCatsHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestCatsHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestCatsHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestCatsHttpServer/pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestCatsHttpServer/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestCorsHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestCorsHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestCorsHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestCorsHttpServer/pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestCorsHttpServer/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestCrudHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestCrudHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestCrudHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestCrudHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestCrudHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestCrudHttpServer/pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestCrudHttpServer/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestDataJpaHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestDataJpaHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestDataJpaHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestDataJpaHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestDataJpaHttpServer/pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestDataJpaHttpServer/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestExceptionHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestExceptionHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestExceptionHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestExceptionHttpServer/pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestExceptionHttpServer/pom.xml",
+      "artifact": "spring-boot-restclient"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestFilterHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestFilterHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestFilterHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestFilterHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestFilterHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestFilterHttpServer/pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestFilterHttpServer/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestFunctionHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestFunctionHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestFunctionHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestFunctionHttpServer/pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestFunctionHttpServer/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestGettingStartedHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestGettingStartedHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestGettingStartedHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestGettingStartedHttpServer/pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestGettingStartedHttpServer/pom.xml",
+      "artifact": "spring-boot-restclient"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestGettingStartedHttpServer/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestGovernanceHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestGovernanceHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestGovernanceHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestGovernanceHttpServer/pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestGovernanceHttpServer/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestHttpServer/pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestHttpServer/pom.xml",
+      "artifact": "spring-boot-restclient"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestHttpServer/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestJavaScriptHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestJavaScriptHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestJavaScriptHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestJavaScriptHttpServer/pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestJavaScriptHttpServer/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestKotlinHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestKotlinHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestKotlinHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestKotlinHttpServer/pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestKotlinHttpServer/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestManagedObjectHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestManagedObjectHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestManagedObjectHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestManagedObjectHttpServer/pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestManagedObjectHttpServer/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestOpenApiHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestOpenApiHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestOpenApiHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestOpenApiHttpServer/pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestOpenApiHttpServer/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestProblemDetailHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestProblemDetailHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestProblemDetailHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestProblemDetailHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestProblemDetailHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestProblemDetailHttpServer/pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestProblemDetailHttpServer/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestQualifierHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestQualifierHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestQualifierHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestQualifierHttpServer/pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestQualifierHttpServer/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestRelationshipHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestRelationshipHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestRelationshipHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestRelationshipHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestRelationshipHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestRelationshipHttpServer/pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestRelationshipHttpServer/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestResolveHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestResolveHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestResolveHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestResolveHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestResolveHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestResolveHttpServer/pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestResolveHttpServer/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestScalaHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestScalaHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestScalaHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestScalaHttpServer/pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestScalaHttpServer/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestSecurityHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestSecurityHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestSecurityHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestSecurityHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestSecurityHttpServer/pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestSecurityHttpServer/pom.xml",
+      "artifact": "spring-boot-security-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestSecurityHttpServer/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestServletHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestServletHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestServletHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestServletHttpServer/pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestServletHttpServer/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestSpringBoot3HttpServer/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestSpringBoot3HttpServer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestSpringBoot3HttpServer/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestSpringBoot3HttpServer/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestSpringBoot3HttpServer/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestSupplierHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestSupplierHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestSupplierHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestSupplierHttpServer/pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestSupplierHttpServer/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestTeamHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestTeamHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestTeamHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestTeamHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestTeamHttpServer/pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestTeamHttpServer/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestTestingHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestTestingHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestTestingHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestTestingHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestTestingHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestTestingHttpServer/pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestTestingHttpServer/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestThymeleafHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestThymeleafHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestThymeleafHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestThymeleafHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestThymeleafHttpServer/pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestThymeleafHttpServer/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestValidationHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestValidationHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestValidationHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestValidationHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestValidationHttpServer/pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestValidationHttpServer/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestVariableHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestVariableHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestVariableHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestVariableHttpServer/pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestVariableHttpServer/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestZioHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestZioHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestZioHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestZioHttpServer/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestZioHttpServer/pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "tutorials/springboot/SpringRestZioHttpServer/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tutorials/springboot/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "tutorials/springboot/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "tutorials/springboot/pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "tutorials/springboot/pom.xml",
+      "artifact": "spring-boot-restclient"
+    },
+    {
+      "file": "tutorials/springboot/pom.xml",
+      "artifact": "spring-boot-security-test"
+    },
+    {
+      "file": "tutorials/springboot/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

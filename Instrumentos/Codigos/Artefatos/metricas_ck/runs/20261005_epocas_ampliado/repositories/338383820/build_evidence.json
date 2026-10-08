@@ -1,0 +1,448 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "4.1.1",
+  "spring_boot_major": "4",
+  "java_versions_declared": "21;25",
+  "build_evidence": [
+    {
+      "file": "api-gateway/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "api-gateway/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "api-gateway/pom.xml",
+      "artifact": "spring-boot-starter-aspectj"
+    },
+    {
+      "file": "api-gateway/pom.xml",
+      "artifact": "spring-boot-starter-data-redis-reactive"
+    },
+    {
+      "file": "api-gateway/pom.xml",
+      "artifact": "spring-boot-starter-cache"
+    },
+    {
+      "file": "api-gateway/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "api-gateway/pom.xml",
+      "artifact": "spring-boot-starter-actuator-test"
+    },
+    {
+      "file": "api-gateway/pom.xml",
+      "artifact": "spring-boot-starter-data-redis-reactive-test"
+    },
+    {
+      "file": "api-gateway/pom.xml",
+      "artifact": "spring-boot-testcontainers"
+    },
+    {
+      "file": "api-gateway/pom.xml",
+      "artifact": "spring-boot-starter-webflux-test"
+    },
+    {
+      "file": "api-gateway/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "catalog-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "catalog-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "catalog-service/pom.xml",
+      "artifact": "spring-boot-starter-aspectj"
+    },
+    {
+      "file": "catalog-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "catalog-service/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "catalog-service/pom.xml",
+      "artifact": "spring-boot-starter-webclient"
+    },
+    {
+      "file": "catalog-service/pom.xml",
+      "artifact": "spring-boot-starter-cache"
+    },
+    {
+      "file": "catalog-service/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "catalog-service/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "catalog-service/pom.xml",
+      "artifact": "spring-boot-starter-data-r2dbc"
+    },
+    {
+      "file": "catalog-service/pom.xml",
+      "artifact": "spring-boot-starter-liquibase"
+    },
+    {
+      "file": "catalog-service/pom.xml",
+      "artifact": "spring-boot-starter-webflux-test"
+    },
+    {
+      "file": "catalog-service/pom.xml",
+      "artifact": "spring-boot-starter-cache-test"
+    },
+    {
+      "file": "catalog-service/pom.xml",
+      "artifact": "spring-boot-micrometer-metrics-test"
+    },
+    {
+      "file": "catalog-service/pom.xml",
+      "artifact": "spring-boot-testcontainers"
+    },
+    {
+      "file": "catalog-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "config-server/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "config-server/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "config-server/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "config-server/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "config-server/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "config-server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "inventory-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "inventory-service/pom.xml",
+      "artifact": "spring-boot-micrometer-tracing"
+    },
+    {
+      "file": "inventory-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "inventory-service/pom.xml",
+      "artifact": "spring-boot-starter-aspectj"
+    },
+    {
+      "file": "inventory-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "inventory-service/pom.xml",
+      "artifact": "spring-boot-starter-jooq"
+    },
+    {
+      "file": "inventory-service/pom.xml",
+      "artifact": "spring-boot-starter-kafka"
+    },
+    {
+      "file": "inventory-service/pom.xml",
+      "artifact": "spring-boot-starter-liquibase"
+    },
+    {
+      "file": "inventory-service/pom.xml",
+      "artifact": "spring-boot-starter-restclient"
+    },
+    {
+      "file": "inventory-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "inventory-service/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "inventory-service/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "inventory-service/pom.xml",
+      "artifact": "spring-boot-micrometer-tracing-test"
+    },
+    {
+      "file": "inventory-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator-test"
+    },
+    {
+      "file": "inventory-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa-test"
+    },
+    {
+      "file": "inventory-service/pom.xml",
+      "artifact": "spring-boot-starter-jooq-test"
+    },
+    {
+      "file": "inventory-service/pom.xml",
+      "artifact": "spring-boot-starter-liquibase-test"
+    },
+    {
+      "file": "inventory-service/pom.xml",
+      "artifact": "spring-boot-starter-opentelemetry-test"
+    },
+    {
+      "file": "inventory-service/pom.xml",
+      "artifact": "spring-boot-starter-restclient-test"
+    },
+    {
+      "file": "inventory-service/pom.xml",
+      "artifact": "spring-boot-starter-validation-test"
+    },
+    {
+      "file": "inventory-service/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "inventory-service/pom.xml",
+      "artifact": "spring-boot-testcontainers"
+    },
+    {
+      "file": "inventory-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "order-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "order-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "order-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "order-service/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "order-service/pom.xml",
+      "artifact": "spring-boot-starter-restclient"
+    },
+    {
+      "file": "order-service/pom.xml",
+      "artifact": "spring-boot-starter-aspectj"
+    },
+    {
+      "file": "order-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "order-service/pom.xml",
+      "artifact": "spring-boot-starter-kafka"
+    },
+    {
+      "file": "order-service/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "order-service/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "order-service/pom.xml",
+      "artifact": "spring-boot-micrometer-tracing"
+    },
+    {
+      "file": "order-service/pom.xml",
+      "artifact": "spring-boot-starter-liquibase"
+    },
+    {
+      "file": "order-service/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "order-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa-test"
+    },
+    {
+      "file": "order-service/pom.xml",
+      "artifact": "spring-boot-micrometer-tracing-test"
+    },
+    {
+      "file": "order-service/pom.xml",
+      "artifact": "spring-boot-starter-opentelemetry-test"
+    },
+    {
+      "file": "order-service/pom.xml",
+      "artifact": "spring-boot-testcontainers"
+    },
+    {
+      "file": "order-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "payment-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "payment-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "payment-service/pom.xml",
+      "artifact": "spring-boot-starter-aspectj"
+    },
+    {
+      "file": "payment-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "payment-service/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "payment-service/pom.xml",
+      "artifact": "spring-boot-starter-restclient"
+    },
+    {
+      "file": "payment-service/pom.xml",
+      "artifact": "spring-boot-starter-kafka"
+    },
+    {
+      "file": "payment-service/pom.xml",
+      "artifact": "spring-boot-micrometer-tracing"
+    },
+    {
+      "file": "payment-service/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "payment-service/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "payment-service/pom.xml",
+      "artifact": "spring-boot-starter-jooq"
+    },
+    {
+      "file": "payment-service/pom.xml",
+      "artifact": "spring-boot-starter-liquibase"
+    },
+    {
+      "file": "payment-service/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "payment-service/pom.xml",
+      "artifact": "spring-boot-testcontainers"
+    },
+    {
+      "file": "payment-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "retail-store-webapp/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "retail-store-webapp/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "retail-store-webapp/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "retail-store-webapp/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "retail-store-webapp/pom.xml",
+      "artifact": "spring-boot-starter-restclient"
+    },
+    {
+      "file": "retail-store-webapp/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "retail-store-webapp/pom.xml",
+      "artifact": "spring-boot-starter-security-oauth2-client"
+    },
+    {
+      "file": "retail-store-webapp/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "retail-store-webapp/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "retail-store-webapp/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "retail-store-webapp/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "retail-store-webapp/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "retail-store-webapp/pom.xml",
+      "artifact": "spring-boot-starter-security-test"
+    },
+    {
+      "file": "retail-store-webapp/pom.xml",
+      "artifact": "spring-boot-testcontainers"
+    },
+    {
+      "file": "retail-store-webapp/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "service-registry/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "service-registry/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "service-registry/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "service-registry/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "service-registry/pom.xml",
+      "artifact": "spring-boot-testcontainers"
+    },
+    {
+      "file": "service-registry/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

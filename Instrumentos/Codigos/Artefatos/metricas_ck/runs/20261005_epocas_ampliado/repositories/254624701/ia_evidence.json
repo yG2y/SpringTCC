@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "abee1df635d49a4e6824dce8e6af25e86e0ebc50",
+      "date": "2026-07-25T18:29:11+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: remove AGENTS.md\n"
+    },
+    {
+      "sha": "7215b17e822e44b8ff2fd804a7c9d27b317398e6",
+      "date": "2026-07-24T23:09:16+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: downgrade react-router-dom to v7.11.0\n\n- CVE-2025-43860 (GHSA-h5cw-625j-3rxh): XSS via member/target properties\n- Pin react-router-dom to version 7.11.0 (last safe version before 7.18.1)\n- Update package-lock.json to reflect the version change\n"
+    },
+    {
+      "sha": "5a5496f7ee31657dec907443de81dc1bf2fe47a5",
+      "date": "2026-07-24T23:00:13+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: update dependencies and build tooling\n\n- Bump Postgres image to 18.4 in compose.yaml\n- Update Spotless plugin to 3.8.0 and move check to validate phase\n- Remove explicit google-java-format version in favor of Spotless default\n- Upgrade frontend dependencies: Mantine 9.4.2, React 19.2.8, Vite 8.1.5, Vitest 4.1.10\n- Update dev dependencies: @testing-library/jest-dom 7.0.0, ESLint 9.39.5, Prettier 3.9.6\n"
+    },
+    {
+      "sha": "77241a55188b73d8aaab9ecc121d34b05fa1dcaa",
+      "date": "2026-07-24T11:26:14+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "docs: update Spotless Maven plugin link in README\n\n- Change Spotless repository URL to point to plugin-maven subdirectory\n"
+    },
+    {
+      "sha": "81a2b7c2f3427664b46cc72b3fd60f1ed9265ad2",
+      "date": "2026-07-03T08:33:25-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "refactor: replace ObjectMapper with JsonMapper in controller tests\n\n- Update AuthControllerTest to use JsonMapper instead of ObjectMapper\n- Update OrderControllerTest to use JsonMapper instead of ObjectMapper\n"
+    },
+    {
+      "sha": "ca94b6d868ea13c1669cfdc922ecd2a777a3c677",
+      "date": "2026-07-01T07:26:10-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Fix package.json indentation\n"
+    },
+    {
+      "sha": "290b7a99bd394a25208630e61c6565836f2f3d04",
+      "date": "2026-07-01T07:15:00-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: update dependencies and rename project diagram\n\n- Upgrade Spring Boot from 4.0.6 to 4.1.0\n- Update Maven wrapper distribution to 3.9.16\n- Bump frontend dependencies (@mantine, axios, react, vite, etc.)\n- Rename \"Project Diagram\" section to \"Project Overview\"\n"
+    },
+    {
+      "sha": "076795bf6c7846613a695dd4fba5e3ae3bbe1ddd",
+      "date": "2026-06-24T05:44:49-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "docs: update README\n"
+    },
+    {
+      "sha": "7adf68817b3ec95173a9f379ac8522f18d1f1675",
+      "date": "2026-06-23T12:17:48-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Fix indentation in order-api pom.xml\n"
+    },
+    {
+      "sha": "06deb8a3208d15a99f11965ece657efc9859f9e6",
+      "date": "2026-06-14T15:01:46-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Add [*.java] section to .editorconfig\n"
+    },
+    {
+      "sha": "6ecbbf962092c6b1987b4391c32290fb6298f6a0",
+      "date": "2026-06-14T09:38:42-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: rename docker-compose.yml to compose.yaml\n"
+    },
+    {
+      "sha": "549e99618276fdbe8b365c2eb1acc42a11f37215",
+      "date": "2026-05-18T21:09:16+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Add project name to pom.xml\n"
+    },
+    {
+      "sha": "4d5e7306951492f3d3f32b6968e90b75938d328b",
+      "date": "2026-05-14T15:57:34+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Remove custom importOrder from Spotless and [*.java] from .editorconfig\n\n- Remove <importOrder> from pom.xml so IntelliJ google-java-format\n  plugin matches Spotless on import ordering\n- Remove [*.java] from .editorconfig to avoid overriding the\n  google-java-format plugin in the IDE\n- Run spotless:apply to reformat all Java sources with default\n  import sorting\n"
+    },
+    {
+      "sha": "45409e35a26267fde93aa658a0e3ec8030c72fa2",
+      "date": "2026-05-14T14:49:01+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "test: migrate unit tests to Spring-managed mocks\n\n- Switch from MockitoExtension to SpringExtension with @MockitoBean\n- Replace @InjectMocks with @Autowired and @Import for services and filters\n- Add verify() calls to confirm expected repository interactions\n- Add healthcheck interval, timeout, and retries to PostgreSQL service\n"
+    },
+    {
+      "sha": "8cf5067696a53c893f9f19c791c15637a626a6e4",
+      "date": "2026-05-05T14:06:23+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "style: format codebase with spotless and prettier\n\n- Add Spotless Maven plugin with Google Java Format to order-api\n- Add Prettier, eslint-config-prettier to order-ui with .prettierrc\n- Reformat all Java files to comply with Spotless conventions\n- Reformat all JavaScript/JSX files to Prettier conventions\n- Update AGENTS.md with formatting commands and version updates\n- Add Code Formatting section to README.md\n- Add format and format:check scripts to order-ui\n"
+    },
+    {
+      "sha": "81eff97cee1a6cc1103b66ec80fcfd1b0b7301bb",
+      "date": "2026-05-04T16:47:08+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: update dependencies and vite config\n\n- Update Spring Boot parent version to 4.0.6\n- Update springdoc-openapi to 3.0.3 and Maven to 3.9.15\n- Upgrade Mantine core and hooks to 9.1.1\n- Upgrade axios to 1.16.0 and react-router-dom to 7.14.\n- Update dev dependencies: eslint-plugin-react-hooks, jsdom, vite, vitest\n- Add pool: forks to vitest configuration in vite.config.js\n"
+    },
+    {
+      "sha": "872c92c8b043fa35b03db5f39d96500a79479c3d",
+      "date": "2026-04-13T13:02:09+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "build: update frontend dependencies\n\n- Upgrade @mantine/core and @mantine/hooks from 9.0.1 to 9.0.2\n- Upgrade react and react-dom from 19.2.4 to 19.2.5\n- Upgrade axios from 1.14.0 to 1.15.0\n- Upgrade vite from 8.0.7 to 8.0.8 and vitest from 4.1.3 to 4.1.4\n- Add Bash 4.0 to prerequisites in README\n- Switch test-endpoints.sh from zsh to bash\n"
+    },
+    {
+      "sha": "239a6af562f964d4e944aa2c846676c4e296054d",
+      "date": "2026-04-08T14:09:16+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore(ui): update frontend dependencies\n\n- @mantine/core and @mantine/hooks: 8.3.18 → 9.0.1\n- @tabler/icons-react: 3.40.0 → 3.41.1\n- axios: 1.13.6 → 1.14.0\n- react-router-dom: 7.13.1 → 7.14.0\n- Dev dependencies updated (vite, vitest, jsdom)\n"
+    },
+    {
+      "sha": "71d6faaddf1f45148857e02a96cedb8c76b7c457",
+      "date": "2026-04-06T11:53:27+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Merge pull request #12 from ivangfr/project-update\n\nrefactor: convert service layer from interface pattern to concrete class"
+    },
+    {
+      "sha": "ef0e144fac4247b5f48b12ea9c2b24e3a125a12c",
+      "date": "2026-04-06T11:49:19+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "refactor: convert service layer from interface pattern to concrete class\n\n- Removed OrderService and UserService interfaces, converted to concrete @Service classes\n- Deleted OrderServiceImpl and UserServiceImpl\n- Renamed test files and updated them to test concrete classes\n- Added verifyNoMoreInteractions() calls in service unit tests\n- Updated AGENTS.md documentation\n"
+    },
+    {
+      "sha": "e2e9135391d50b0b01353b1a4b81d392d008d15f",
+      "date": "2026-03-31T10:41:05+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Merge pull request #11 from ivangfr/project-update\n\nProject update"
+    },
+    {
+      "sha": "8f1ada2cbcd0c14a84dc70ca40bab6fc612e3da3",
+      "date": "2026-03-29T13:33:14+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: upgrade postgres and harden test-endpoints script\n\n- bump postgres image from 18.0 to 18.3\n- add restart: unless-stopped policy to postgres service\n- fix healthcheck to use exec form and target correct database\n- add set -euo pipefail for strict error handling\n- support configurable BASE_URL env var instead of hardcoded localhost\n- add preflight connectivity check before running tests\n- validate all token acquisition steps and fail fast on error\n- clean up existing user2 before signup to allow idempotent reruns\n- quote all variable expansions to prevent word splitting\n"
+    },
+    {
+      "sha": "d899ff2e019141bf89c70dc9cdd8f36d835fa3bc",
+      "date": "2026-03-28T23:10:25+01:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "test(security): add unit and integration tests for cors, jwt filter, and order controller\n\n- wire cors via Customizer.withDefaults() so the security filter chain honours CorsConfig\n- add CorsConfigTest covering allowed/disallowed origins, preflight, and simple requests\n- add CorsConfigMultipleOriginsTest verifying multiple allowed origins are each accepted\n- add TokenAuthenticationFilterTest covering valid token, expired/invalid token, missing\n  header, malformed prefix, and userDetailsService exception edge cases\n- add OrderControllerTest case for 404 when user is deleted between auth and order creation\n"
+    },
+    {
+      "sha": "0c9ddb104911032b23d1c80fe58df884fe2fadb7",
+      "date": "2026-03-28T19:46:19+01:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "refactor(security): use explicit UTF-8 encoding and safer token parsing\n\n- replace String.getBytes() with getBytes(StandardCharsets.UTF_8) for deterministic signing key derivation\n- replace String.replace() with substring() to strip token prefix without regex semantics\n"
+    },
+    {
+      "sha": "3a5d83841daf478c9cf736f0997bc504cfefaf57",
+      "date": "2026-03-28T19:22:03+01:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: upgrade Spring Boot to 4.0.5 and apply minor cleanups\n\n- Bump spring-boot-starter-parent from 4.0.3 → 4.0.5\n- Add @Column(nullable = false) constraints to User and Order entities\n- Guard createdAt assignment in @PrePersist to prevent overwrite on update\n- Replace String.format() with String.formatted() throughout\n- Inject ObjectMapper via @Autowired in controller tests instead of constructing manually\n- Switch ObjectMapper import to tools.jackson.databind in tests\n- Remove redundant @Repository from UserRepository and OrderRepository\n- Move TokenProvider constants to top of class; unbox jwtExpirationMinutes to long\n- Use countUsers() instead of getUsers().isEmpty() in DatabaseInitializer\n- Make DatabaseInitializer.getUsers() static\n- Add jq preflight check to test-endpoints.sh\n- Update brace-expansion to 1.1.13 and picomatch to 4.0.4 in lockfile\n- Clarify DatabaseInitializer seeding behaviour and test file naming in AGENTS.md\n"
+    },
+    {
+      "sha": "df7a080f2b74dae16f4cd0bb5a082cf1c2346b4f",
+      "date": "2026-03-28T16:38:36+01:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "refactor(security): introduce `Role` enum to replace string role constants\n\n- add `Role` enum with `ADMIN` and `USER` values in the security package\n- update `User` entity to use `Role` field with `@Enumerated(EnumType.STRING)`\n- remove `ADMIN`/`USER` string constants from `SecurityConfig`\n- update all role references across controllers, services, and initializer\n- use `role.name()` when a string authority is required by spring security\n- align `UserDto` record and `UserRepository` query to use `Role` type\n- update all tests to construct users and authorities with `Role` enum\n"
+    },
+    {
+      "sha": "c7126ce23fb8fd034033061b1e49f940aad5bca4",
+      "date": "2026-03-23T12:58:48+01:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore(ui): configure eslint with lint script and fix violations\n\nAdd ESLint flat config with browser globals, test file overrides,\nand disable prop-types/purity rules. Add `lint` npm script, set\n`\"type\": \"module\"` in package.json, remove obsolete vite esbuild\nloader workaround, and fix two lint violations in source files.\n"
+    },
+    {
+      "sha": "b2ef7fabb2b7119006fd430842fd894281a2b07a",
+      "date": "2026-03-23T10:50:02+01:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "docs(agents): update AGENTS.md\n"
+    },
+    {
+      "sha": "c5c248cfba710cb53ba64b8fd871c51f98ce39a9",
+      "date": "2026-03-23T09:50:22+01:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "feat(user): prevent self-deletion and last-admin deletion\n\nAdd guards to the delete-user endpoint that reject requests when the\nauthenticated user tries to delete their own account or when deleting\nthe only remaining admin. Introduce UserDeletionNotAllowedException,\na countByRole repository query, and a countAdmins service method to\nsupport these checks. Cover the new cases with controller and service\nunit tests.\n"
+    },
+    {
+      "sha": "53874cf99b1a24053f7c157fe1860ea727a87594",
+      "date": "2026-03-23T09:02:35+01:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "build(api): upgrade Maven wrapper and Spring Boot dependencies\n\nBump Maven wrapper from 3.9.12 to 3.9.14, Spring Boot parent from\n4.0.1 to 4.0.3, and springdoc-openapi from 3.0.1 to 3.0.2.\n"
+    }
+  ],
+  "commit_sha": "abee1df635d49a4e6824dce8e6af25e86e0ebc50",
+  "extracted_at": "2026-10-05T18:09:48.564898+00:00"
+}

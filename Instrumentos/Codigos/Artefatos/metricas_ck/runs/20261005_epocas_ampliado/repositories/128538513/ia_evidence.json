@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "ad727689ca19067e128c98cc01d56db2a3dfdbc8",
+      "date": "2026-07-25T18:29:09+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: remove AGENTS.md\n"
+    },
+    {
+      "sha": "8a50d15ba37ce35a7495b3981e8418107fc662b4",
+      "date": "2026-07-25T09:29:23+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: update dependencies and tooling\n\n- Update Spring Boot from 4.0.6 to 4.1.0\n- Update Spring Cloud from 2025.1.1 to 2025.1.2\n- Update MySQL from 9.6.0 to 9.7.1 (compose.yaml and tests)\n- Update Maven wrapper distribution to 3.9.16\n- Update Spotless from 3.4.0 to 3.8.0, remove explicit google-java-format version\n- Move Spotless check phase from verify to validate\n- Fix README to reference correct formatting phase\n"
+    },
+    {
+      "sha": "98e723cf4a509c61cbb2aaa8a47ad28f498716c3",
+      "date": "2026-07-24T10:30:14+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "refactor: replace ObjectMapper with JsonMapper in user-service\n\n- Use JsonMapper for JSON serialization/deserialization\n- Update Spotless Maven plugin link in README\n"
+    },
+    {
+      "sha": "04c8fb6598b6bcd6503d9d3caab3a06abba6c556",
+      "date": "2026-06-24T05:44:25-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "docs: update README\n"
+    },
+    {
+      "sha": "23e5c9afcbaeaf72ffada6fd3e20760e663275c6",
+      "date": "2026-06-23T12:17:49-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Remove empty description from pom.xml\n"
+    },
+    {
+      "sha": "64d02e7636f4181b965e7c513845be7eb3ad1845",
+      "date": "2026-06-14T15:01:43-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Add [*.java] section to .editorconfig\n"
+    },
+    {
+      "sha": "dfb37540fa82ea95afb4ca494c7a1ca6dbe2b2ca",
+      "date": "2026-06-14T11:14:13-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "refactor: move mapping logic from models to DTOs\n\n- Move User.from() to CreateUserRequest.toDomain() in user-service\n- Move User.updateFrom() to UpdateUserRequest.applyTo() in user-service\n- Move UserEvent.from() to UserEventService.saveUserEvent() in event-service\n- Update README with Schema Registry and script reference\n"
+    },
+    {
+      "sha": "8be3751c2f811141c97a4e8d26bda4d02db36f6f",
+      "date": "2026-06-01T23:21:33+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Update README.md\n"
+    },
+    {
+      "sha": "4de3899e40f0dae09ff464dbb68c2575e1a27f1a",
+      "date": "2026-05-31T18:40:21+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "docs: add project AGENTS.md and bump MySQL container version\n\n- Add AGENTS.md with project overview, modules, commands, and conventions\n- Bump MySQL test containers from 9.5.0 to 9.6.0\n"
+    },
+    {
+      "sha": "4ee32696314dec2e6498ea126a63a4c69faa6ace",
+      "date": "2026-05-31T13:36:23+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "style: enforce Google Java Format with Spotless plugin\n\n- Add Spotless Maven plugin with google-java-format (GOOGLE style)\n- Add .editorconfig for consistent editor settings\n- Apply auto-formatting across all Java source files (2-space indent, import ordering, annotations)\n- Remove unused wildcard imports and fix annotation formatting\n- Update README with code formatting instructions\n"
+    },
+    {
+      "sha": "e3ee386a33025028cec4d1579a0747993dc5a15d",
+      "date": "2026-05-31T10:06:00+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: enhance healthchecks and update dependencies\n\n- Add proper healthcheck interval/timeout/retries to all Docker services\n- Migrate from KafkaContainer to ConfluentKafkaContainer (port 9093)\n- Update delete user endpoint to return 204 No Content\n- Update README with Mermaid architecture diagram and new screenshots\n- Add set -e to shell scripts for fail-fast behavior\n- Simplify UserEventResponse DTO and fix test timing issues\n"
+    },
+    {
+      "sha": "886bf3f48f86955fce3450885069b1e964218d52",
+      "date": "2026-05-30T19:27:30+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: update dependencies and refactor service classes\n\n- Update Spring Boot from 4.0.0 to 4.0.6 and Spring Cloud from 2025.1.0 to 2025.1.1\n- Bump MySQL to 9.5.0, Cassandra to 5.0.8, Maven to 3.9.15, and Zipkin to 3.6.1\n- Convert UserService and UserEventService from interface+impl pattern to concrete classes\n- Restructure maven-compiler-plugin with explicit compile and testCompile executions\n- Make Cassandra keyspace/datacenter and MySQL credentials configurable via env vars\n- Remove Include.EXCEPTION from ErrorAttributesConfig in both services\n- Remove swagger screenshots and add endpoint documentation to README\n- Add MIT License file, FUNDING.yml, and badge links to README\n- Rename test classes from *ServiceImplTest to *ServiceTest\n- Improve shell script with safer variable quoting and reduced timeout\n- Rename docker-compose.yml to compose.yaml and update dependency references\n"
+    },
+    {
+      "sha": "3032c8aef7507ceba087b74a4a7fa55afb00a5f0",
+      "date": "2025-12-16T18:47:12-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Project upgrade\n\n- Upgrade to Java 25\n- Upgrade to Spring Boot 4.0.0\n- Upgrade to Spring Cloud 2025.1.0\n- Upgrade to SpringDoc OpenAPI 3.0.0\n"
+    },
+    {
+      "sha": "f015f0c36d08ba8f0047e8743b8444522582baa9",
+      "date": "2025-12-16T11:54:09-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Project upgrade\n\n- Upgrade to Spring Boot 3.5.8\n- Upgrade to Spring Cloud 2025.0.0\n- Upgrade to SpringDoc OpenAPI 2.8.14\n- Upgrade wrapperVersion to 3.3.4 and Apache Maven to 3.9.11\n- Upgrade to Avro 1.12.1\n- Upgrade to Cassandra Docker image 5.0.6\n- Upgrade to Confluentinc Docker images 7.9.5\n- Upgrade to Zipkin Docker image 3.5.1\n"
+    },
+    {
+      "sha": "1c951712af4865be12429437842ed61c6ed5d3c3",
+      "date": "2025-04-18T14:52:09+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Replace Jib with Paketo Buildpacks\n"
+    },
+    {
+      "sha": "451e87f19890edfe02679521732b7caa9f533c94",
+      "date": "2025-04-11T16:05:30+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Update README file\n"
+    },
+    {
+      "sha": "04a97a060f47b617e997abc007dca1ac6615dbda",
+      "date": "2025-04-11T15:46:22+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- Upgrade to Spring Boot 3.4.4\n- Upgrade to Spring Cloud 2024.0.1\n- Upgrade to MySQL Docker image 9.2.0\n- Upgrade to Cassandra Docker image 5.0.3\n- Upgrade to Awaitility 4.3.0\n- Upgrade to Jib 3.4.5\n- Upgrade to Zipkin Docker image 3.5.0\n- Upgrade to SpringDoc OpenAPI 2.8.6\n- Remove logging.pattern.level property\n- Add the .gitattributes file\n- In test cases, replace get(0) to getFirst()\n"
+    },
+    {
+      "sha": "980e3433daa7789d232f8a3ac5eb68a4152419d2",
+      "date": "2024-12-21T16:28:12-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Refactor application packages\n"
+    },
+    {
+      "sha": "e090e03ee0cfa35cd6522284390aa699f3656abe",
+      "date": "2024-12-21T15:44:05-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to Avro 1.12.0\n"
+    },
+    {
+      "sha": "ba11e5aa699e5177b4e55e8556b4aa1b3b39a75f",
+      "date": "2024-12-21T15:29:30-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Refactor pom.xml files\n"
+    },
+    {
+      "sha": "c4ff7fda336d19bb96bb0ed5e2498290bc127903",
+      "date": "2024-12-21T14:59:37-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Remove MapStruct dependency\n"
+    },
+    {
+      "sha": "ba71e3b61df68bf96e03c30f0f174e4bd1b4331d",
+      "date": "2024-12-21T14:31:54-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Remove public keyword from Beans; Convert some DTOs from class to record\n"
+    },
+    {
+      "sha": "1c79203aeb70cd27b251493626273db60dfc6282",
+      "date": "2024-12-21T14:09:52-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- Upgrade to Spring Boot 3.4.1;\n- Upgrade to Spring Cloud 2024.0.0;\n- Upgrade to SpringDoc OpenApi 2.7.0;\n- Upgrade to Awaitility 4.2.2;\n- Upgrade to Mapstruct 1.6.3;\n- Upgrade to Apache Maven 3.9.9;\n- Upgrade to MySQL docker image 9.1.0;\n- Upgrade to Confluentinc docker images 7.8.0\n- Upgrade to Cassandra docker image 5.0.2;\n- Rename docker-build.sh to build-docker-images.sh\n- Refactor docker-compose.yml file;\n- Replace deprecated MockBean with MockitoBean;\n- Update README.\n"
+    },
+    {
+      "sha": "b3dbe6ab6e3d53df8338f97f0a3006e771998ee0",
+      "date": "2024-08-17T09:20:37+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Update links in README\n"
+    },
+    {
+      "sha": "3c34f280b8ef0ecbdc5e681d688251ff407b6b7c",
+      "date": "2024-08-16T18:20:37+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Simplify MySQL and Cassandra Testcontainers setup\n"
+    },
+    {
+      "sha": "fafd3cc94f6d2755cef3e3e78a6d72fee00b4849",
+      "date": "2024-08-16T17:10:59+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n- upgrade to Java 21;\n- upgrade to spring-boot 3.3.2;\n- upgrade to spring-cloud 2023.0.3;\n- upgrade to springdoc-openapi 2.6.0;\n- upgrade to jib 3.4.3;\n- upgrade wrapperVersion to 3.3.2 and apache-maven to 3.9.7;\n- upgrade to mysql docker image 9.0.1;\n- upgrade to confluentinc docker images to 7.6.1\n- upgrade to cassandra docker image 4.1.5;\n- upgrade to openzipkin/zipkin docker image 3.4.1;\n- upgrade to amazoncorretto-jdk 21.0.4\n- update README.\n"
+    },
+    {
+      "sha": "385d528b74453e05634704ffe61426246fb2bd88",
+      "date": "2024-03-20T22:08:14+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to Spring Boot 3.2.3 and disabled event-service test cases\n\n- upgrade to spring-boot 3.2.3;\n- upgrade to spring-cloud 2023.0.0;\n- disable UserStreamTest and UserEventRepositoryTest because ImportTestcontainers annotation is not working properly with Cassandra https://github.com/spring-projects/spring-boot/issues/39960\n"
+    },
+    {
+      "sha": "18d962feb20e0c02d7cb231b2657de6c6f66c4bc",
+      "date": "2024-03-19T06:24:09+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- remove explicit output-bindings in user-service;\n- upgrade to spring-boot 3.1.9;\n- upgrade to spring-cloud 2022.0.5;\n- upgrade to awaitility 4.2.1;\n- upgrade to jib-maven-plugin 3.4.1;\n- upgrade to jdk-image 17.0.10;\n- upgrade to springdoc-openapi 2.4.0;\n- upgrade to mysql docker image 8.2.0;\n- upgrade to confluentinc docker images 7.5.3.\n"
+    },
+    {
+      "sha": "bb2e6925bddbe1f0f3d967755a2dc22fc5c19ae3",
+      "date": "2023-11-13T22:35:25+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Add five Medium articles\n"
+    },
+    {
+      "sha": "3230633bc5e110c68e85d16a078c263843f49820",
+      "date": "2023-11-05T22:07:07+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to spring-boot 3.1.5, avro 1.11.3 and jib 3.4.0\n"
+    }
+  ],
+  "commit_sha": "ad727689ca19067e128c98cc01d56db2a3dfdbc8",
+  "extracted_at": "2026-10-05T18:43:22.813485+00:00"
+}

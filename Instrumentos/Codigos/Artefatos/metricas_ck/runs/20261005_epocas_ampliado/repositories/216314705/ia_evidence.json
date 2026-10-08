@@ -1,0 +1,79 @@
+{
+  "ia_status": "com_evidencia",
+  "ia_level": 1,
+  "ia_agents": "Aider; Claude Code; Cline / Roo; Codex / OpenAI; Cursor; Windsurf",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 0,
+  "evidence": [
+    {
+      "agent": "Cursor",
+      "type": "gitignore",
+      "path": ".gitignore",
+      "line": ".cursor/"
+    },
+    {
+      "agent": "Cursor",
+      "type": "gitignore",
+      "path": ".gitignore",
+      "line": ".cursorignore"
+    },
+    {
+      "agent": "Cursor",
+      "type": "gitignore",
+      "path": ".gitignore",
+      "line": ".cursorrules"
+    },
+    {
+      "agent": "Windsurf",
+      "type": "gitignore",
+      "path": ".gitignore",
+      "line": ".windsurf/"
+    },
+    {
+      "agent": "Windsurf",
+      "type": "gitignore",
+      "path": ".gitignore",
+      "line": ".windsurfrules"
+    },
+    {
+      "agent": "Aider",
+      "type": "gitignore",
+      "path": ".gitignore",
+      "line": ".aider*"
+    },
+    {
+      "agent": "Aider",
+      "type": "gitignore",
+      "path": ".gitignore",
+      "line": ".aider.tags.cache.v3/"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "gitignore",
+      "path": ".gitignore",
+      "line": ".claude/"
+    },
+    {
+      "agent": "Cline / Roo",
+      "type": "gitignore",
+      "path": ".gitignore",
+      "line": ".clinerules"
+    },
+    {
+      "agent": "Cline / Roo",
+      "type": "gitignore",
+      "path": ".gitignore",
+      "line": ".roo/"
+    },
+    {
+      "agent": "Codex / OpenAI",
+      "type": "gitignore",
+      "path": ".gitignore",
+      "line": ".codex/"
+    }
+  ],
+  "commits": [],
+  "commit_sha": "d8fcfe609a385342993d2db15ebd656675827908",
+  "extracted_at": "2026-10-05T18:45:59.257463+00:00"
+}

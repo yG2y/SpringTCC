@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "236613007ccc54e9cc7dfd4cf993b8e41ecab811",
+      "date": "2026-03-23T11:55:58+01:00",
+      "author": "Daniel Rohe",
+      "email": "danielrohe@users.noreply.github.com",
+      "message": "Merge pull request #990 from zalando/maintenance-mode\n\nswitch to maintenance-mode"
+    },
+    {
+      "sha": "9b395f14d77c31303cef9d87e527a89b295b2160",
+      "date": "2026-03-23T10:49:24+01:00",
+      "author": "daniel-rohe_zse",
+      "email": "daniel.rohe@zalando.de",
+      "message": "switch to maintenance-mode\n"
+    },
+    {
+      "sha": "c8a9b250e2ef991aaf1e76ae3d04ae46512b2219",
+      "date": "2025-06-30T15:36:26+02:00",
+      "author": "lukasniemeier-zalando",
+      "email": "lukas.niemeier@zalando.de",
+      "message": "Merge pull request #976 from zalando/migrate-central-portal\n\nMigrate to Central Portal"
+    },
+    {
+      "sha": "cd281fd6b7b3ea237c8ba57d4eb3574f6a657b27",
+      "date": "2025-06-30T15:28:27+02:00",
+      "author": "lukasniemeier-zalando",
+      "email": "lukas.niemeier@zalando.de",
+      "message": "Merge pull request #975 from zalando/fix-workflows\n\nFix Github Workflows "
+    },
+    {
+      "sha": "a267c67161f200a1255df60e942f5745477e38dc",
+      "date": "2025-06-25T13:09:48+02:00",
+      "author": "Lukas Niemeier",
+      "email": "lukas.niemeier@zalando.de",
+      "message": "activate auto publishing\n"
+    },
+    {
+      "sha": "9356c1aaad823500d74c55504257bac8cb21f33f",
+      "date": "2025-06-25T13:07:16+02:00",
+      "author": "Lukas Niemeier",
+      "email": "lukas.niemeier@zalando.de",
+      "message": "migrate to central portal publishing\n"
+    },
+    {
+      "sha": "71396da390561398c096a99bd57db065c48c29c3",
+      "date": "2025-06-25T13:06:50+02:00",
+      "author": "Lukas Niemeier",
+      "email": "lukas.niemeier@zalando.de",
+      "message": "fix violations javadoc plugin\n"
+    },
+    {
+      "sha": "2c9ccca6ccfb037ffe0adc59fa53a1b6fbe0fae4",
+      "date": "2025-06-25T13:04:22+02:00",
+      "author": "Lukas Niemeier",
+      "email": "lukas.niemeier@zalando.de",
+      "message": "align java version\n"
+    },
+    {
+      "sha": "9dbf9d7fdaddf113e61a70cc090626eba42e55ac",
+      "date": "2025-06-25T12:55:34+02:00",
+      "author": "Lukas Niemeier",
+      "email": "lukas.niemeier@zalando.de",
+      "message": "fix github workflows\n"
+    },
+    {
+      "sha": "b9286313d5671df504dc46e94d754f5937cc4c21",
+      "date": "2025-03-18T07:50:17+01:00",
+      "author": "Malte",
+      "email": "malte.pickhan@zalando.de",
+      "message": "Merge pull request #970 from bocytko/upgrade-action-cache\n\nUpgrade actions/cache to v4"
+    },
+    {
+      "sha": "c644b001af94f55fe50ab3d5672fe7194e7a9a08",
+      "date": "2025-03-18T07:49:40+01:00",
+      "author": "Malte",
+      "email": "malte.pickhan@zalando.de",
+      "message": "Merge pull request #967 from bocytko/fix-build\n\nAdding jaxb-api dependency to address coveralls-maven-plugin error"
+    },
+    {
+      "sha": "d4fac5d238bee59f13a65af815ad30096a3c207c",
+      "date": "2025-03-18T07:48:45+01:00",
+      "author": "Malte",
+      "email": "malte.pickhan@zalando.de",
+      "message": "Merge pull request #971 from bocytko/fix-build-warning-dup-package\n\nFixes build warnings"
+    },
+    {
+      "sha": "36774ba2ffd1a7bc3c055056658a910d76818fa6",
+      "date": "2025-02-15T22:10:35+01:00",
+      "author": "Bartosz Ocytko",
+      "email": "bocytko@gmail.com",
+      "message": "specify version for maven-javadoc-plugin\n"
+    },
+    {
+      "sha": "ae3534263a88ebe7ffc6bf4ca13de589bba87ac7",
+      "date": "2025-02-15T22:05:08+01:00",
+      "author": "Bartosz Ocytko",
+      "email": "bocytko@gmail.com",
+      "message": "Removes duplicated package from pom.xml\n"
+    },
+    {
+      "sha": "00adf01df478a669c70cf3960428be0142fa5c05",
+      "date": "2025-02-15T22:03:25+01:00",
+      "author": "Bartosz Ocytko",
+      "email": "bocytko@gmail.com",
+      "message": "Upgrade actions/cache to v4\n"
+    },
+    {
+      "sha": "98a3acfb5391886d5a98a6cecd38026a08522b3d",
+      "date": "2025-02-15T00:31:16+01:00",
+      "author": "Bartosz Ocytko",
+      "email": "bocytko@gmail.com",
+      "message": "Adding jaxb-api dependency to address coveralls-maven-plugin error\n\n[ERROR] Failed to execute goal org.eluder.coveralls:coveralls-maven-plugin:4.3.0:report (default-cli) on project solid: Execution default-cli of goal org.eluder.coveralls:coveralls-maven-plugin:4.3.0:report failed: A required class was missing while executing org.eluder.coveralls:coveralls-maven-plugin:4.3.0:report: javax/xml/bind/DatatypeConverter\n\nhttps://github.com/trautonen/coveralls-maven-plugin/issues/141\n"
+    },
+    {
+      "sha": "da31acb922e486cebeff37d9fbd96322d70e4fc8",
+      "date": "2024-02-02T09:12:08+01:00",
+      "author": "Malte",
+      "email": "malte.pickhan@zalando.de",
+      "message": "Merge pull request #923 from zalando/dependabot/maven/jackson.version-2.15.1\n\nBump jackson.version from 2.15.0 to 2.15.1"
+    },
+    {
+      "sha": "ea14f4823fe8d410c81c0a3c79b7d0244cb997ec",
+      "date": "2024-02-02T09:11:42+01:00",
+      "author": "Malte",
+      "email": "malte.pickhan@zalando.de",
+      "message": "Merge pull request #913 from zalando/dependabot/maven/org.jacoco-jacoco-maven-plugin-0.8.10\n\nBump jacoco-maven-plugin from 0.8.9 to 0.8.10"
+    },
+    {
+      "sha": "aa4dba4dca6d87f2263610060ad9f631bf4ded46",
+      "date": "2024-02-02T09:11:16+01:00",
+      "author": "Malte",
+      "email": "malte.pickhan@zalando.de",
+      "message": "Merge pull request #936 from lucailmartini/update-rfc-readme\n\nUpdating application/problem+json rfc hyperlink"
+    },
+    {
+      "sha": "507bab9825d2ce94c6762ece7c011b5a4145bdfa",
+      "date": "2024-02-02T09:01:37+01:00",
+      "author": "Malte",
+      "email": "malte.pickhan@zalando.de",
+      "message": "Merge pull request #942 from buttilda/patch-2\n\nPick status code from `ErrorResponse` interfaces"
+    },
+    {
+      "sha": "194186005c9da96d53884592ae2b8c9e43c41453",
+      "date": "2024-01-31T15:16:23+02:00",
+      "author": "Andre Praca",
+      "email": "andre.felix91@icloud.com",
+      "message": "Fix test"
+    },
+    {
+      "sha": "f3df68048c67776529a98c81f417011feac959f0",
+      "date": "2024-01-31T15:07:31+02:00",
+      "author": "Andre Praca",
+      "email": "andre.felix91@icloud.com",
+      "message": "Add tests"
+    },
+    {
+      "sha": "b94b036378f955cec87bedc6c8045f61777f09c7",
+      "date": "2024-01-31T14:43:27+02:00",
+      "author": "Andre Praca",
+      "email": "andre.felix91@icloud.com",
+      "message": "Pick status code from `ErrorResponse` interfaces\n\nunhandled exceptions that extend spring-boot's `ErrorResponse` have a status code defined and we should use that instead of forcing it to be `500`"
+    },
+    {
+      "sha": "2b7e8b80002c5a02586c40039379a2d4ba448e1b",
+      "date": "2023-10-04T15:41:45+02:00",
+      "author": "Luca Martini",
+      "email": "luca.martini@gmail.com",
+      "message": "Updating application/problem+json rfc hyperlink"
+    },
+    {
+      "sha": "201221a6d306e17435ab4fc2a9f8deb985e79f5f",
+      "date": "2023-05-17T04:56:36Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump jackson.version from 2.15.0 to 2.15.1\n\nBumps `jackson.version` from 2.15.0 to 2.15.1.\n\nUpdates `jackson-databind` from 2.15.0 to 2.15.1\n- [Commits](https://github.com/FasterXML/jackson/commits)\n\nUpdates `jackson-dataformat-xml` from 2.15.0 to 2.15.1\n- [Commits](https://github.com/FasterXML/jackson-dataformat-xml/compare/jackson-dataformat-xml-2.15.0...jackson-dataformat-xml-2.15.1)\n\n---\nupdated-dependencies:\n- dependency-name: com.fasterxml.jackson.core:jackson-databind\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n- dependency-name: com.fasterxml.jackson.dataformat:jackson-dataformat-xml\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "fb4abc369d5f70b28e31020f630bcf24ebdb0efc",
+      "date": "2023-04-26T04:56:28Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump jacoco-maven-plugin from 0.8.9 to 0.8.10\n\nBumps [jacoco-maven-plugin](https://github.com/jacoco/jacoco) from 0.8.9 to 0.8.10.\n- [Release notes](https://github.com/jacoco/jacoco/releases)\n- [Commits](https://github.com/jacoco/jacoco/compare/v0.8.9...v0.8.10)\n\n---\nupdated-dependencies:\n- dependency-name: org.jacoco:jacoco-maven-plugin\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "1a446f4cf7d405ba7e10820e975dd9dd8e6d99dc",
+      "date": "2023-04-25T08:36:37+02:00",
+      "author": "Malte",
+      "email": "malte.pickhan@zalando.de",
+      "message": "Merge pull request #912 from zalando/fix-readme\n\nChange version of Spring boot 3 support"
+    },
+    {
+      "sha": "dcf1f86cf77a3a705cdd3ca71e56bad8e27633e8",
+      "date": "2023-04-24T09:47:11+02:00",
+      "author": "Malte",
+      "email": "malte.pickhan@zalando.de",
+      "message": "Merge pull request #909 from zalando/dependabot/maven/jackson.version-2.15.0\n\nBump jackson.version from 2.14.2 to 2.15.0"
+    },
+    {
+      "sha": "4a04201b9102339ac8e6182513ab85693dd17d3f",
+      "date": "2023-04-24T09:46:48+02:00",
+      "author": "Malte",
+      "email": "malte.pickhan@zalando.de",
+      "message": "Merge pull request #908 from zalando/dependabot/maven/spring-boot.version-3.0.6\n\nBump spring-boot.version from 3.0.5 to 3.0.6"
+    },
+    {
+      "sha": "bedf3f2860ecf394c17cfcb6c2285f7641c3029d",
+      "date": "2023-04-24T09:44:01+02:00",
+      "author": "Malte Pickhan",
+      "email": "malte.pickhan@zalando.de",
+      "message": "Change version of Spring boot 3 support\n"
+    }
+  ],
+  "commit_sha": "236613007ccc54e9cc7dfd4cf993b8e41ecab811",
+  "extracted_at": "2026-10-05T17:59:46.571902+00:00"
+}

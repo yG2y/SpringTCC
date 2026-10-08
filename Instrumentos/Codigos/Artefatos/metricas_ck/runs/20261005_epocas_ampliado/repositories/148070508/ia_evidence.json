@@ -1,0 +1,118 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 15,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "a2f010925c5624b0b1440373bdb493b54e43c16e",
+      "date": "2022-05-25T23:17:12Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump spring-security-core from 5.1.11.RELEASE to 5.5.7 in /backend\n\nBumps [spring-security-core](https://github.com/spring-projects/spring-security) from 5.1.11.RELEASE to 5.5.7.\n- [Release notes](https://github.com/spring-projects/spring-security/releases)\n- [Changelog](https://github.com/spring-projects/spring-security/blob/main/RELEASE.adoc)\n- [Commits](https://github.com/spring-projects/spring-security/compare/5.1.11.RELEASE...5.5.7)\n\n---\nupdated-dependencies:\n- dependency-name: org.springframework.security:spring-security-core\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "5feb9a9efe0ee404e9ed241ca4725b67071627ce",
+      "date": "2020-06-15T19:40:58Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump spring-security-core in /backend\n\nBumps [spring-security-core](https://github.com/spring-projects/spring-security) from 5.1.5.RELEASE to 5.1.11.RELEASE.\n- [Release notes](https://github.com/spring-projects/spring-security/releases)\n- [Commits](https://github.com/spring-projects/spring-security/compare/5.1.5.RELEASE...5.1.11.RELEASE)\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "f4b80c6cdf0a89d29b70e9cf93233d4e5c3b5a53",
+      "date": "2019-10-21T13:03:21-05:00",
+      "author": "Isaac",
+      "email": "igarza@visa.com",
+      "message": "Added node-sass to the frontend dev dependencies\n"
+    },
+    {
+      "sha": "174ae7f0942e070bdd27d3f0b9146366cd1c3e7c",
+      "date": "2019-04-30T15:13:54-05:00",
+      "author": "Isaac",
+      "email": "igarza@visa.com",
+      "message": "Updated the depdencies to resolve Github security findings\n"
+    },
+    {
+      "sha": "c2866bd95270b0807793f512354fa7d56b3ee974",
+      "date": "2019-04-30T14:44:12-05:00",
+      "author": "Isaac",
+      "email": "igarza@visa.com",
+      "message": "Added a comment to the keyManager bean in WebSecurityConfig\n\n- If a project does not require keys, EmptyKeyManager() can be used instead"
+    },
+    {
+      "sha": "f4d69a8c52472ef26e3c34e218384a956824a86f",
+      "date": "2019-01-17T00:57:14-06:00",
+      "author": "Isaac Garza",
+      "email": "isaacgarza432@gmail.com",
+      "message": "fixed the backend pom so the project builds\n"
+    },
+    {
+      "sha": "5b792a2a2c298c15008eb9dfa4a32c7e3341dd12",
+      "date": "2018-12-14T15:56:15-06:00",
+      "author": "Isaac",
+      "email": "igarza@visa.com",
+      "message": "removed frontend pom and updated frontend README\n"
+    },
+    {
+      "sha": "6c2921c38caa242108b61e5274711f250932ec1b",
+      "date": "2018-12-14T15:55:41-06:00",
+      "author": "Isaac",
+      "email": "igarza@visa.com",
+      "message": "moved maven wrapper to backend and removed super pom\n"
+    },
+    {
+      "sha": "005b308e15cbf0b8746f8a76621b778fc663856e",
+      "date": "2018-09-18T23:33:36-05:00",
+      "author": "Isaac",
+      "email": "igarza@visa.com",
+      "message": "edited the README\n"
+    },
+    {
+      "sha": "3efa03414c913c600e4b2e153b852cc7d40d97fc",
+      "date": "2018-09-18T23:07:58-05:00",
+      "author": "Isaac",
+      "email": "igarza@visa.com",
+      "message": "updated the README\n"
+    },
+    {
+      "sha": "aa3bed611677fe55a7c7abe27f68df959c4ffbb4",
+      "date": "2018-09-18T22:21:15-05:00",
+      "author": "Isaac",
+      "email": "igarza@visa.com",
+      "message": "added apache license\n"
+    },
+    {
+      "sha": "85ede214d4208fe86398c72856b53038b2f23174",
+      "date": "2018-09-18T21:24:30-05:00",
+      "author": "Isaac",
+      "email": "igarza@visa.com",
+      "message": "added README\n"
+    },
+    {
+      "sha": "06e1b552c7d5ebf661c77c38beac68384b10d5eb",
+      "date": "2018-09-18T21:13:48-05:00",
+      "author": "Isaac",
+      "email": "igarza@visa.com",
+      "message": "removed unused dependencies in the frontend\n"
+    },
+    {
+      "sha": "32d76cd1a90776b8d6bc091ceed1d4116dd53afe",
+      "date": "2018-09-18T21:13:08-05:00",
+      "author": "Isaac",
+      "email": "igarza@visa.com",
+      "message": "moved saml keystore and idp metadata to backend resources\n"
+    },
+    {
+      "sha": "20c2e1395738727663effb801ad25cbb0798bd63",
+      "date": "2018-09-18T20:28:23-05:00",
+      "author": "Isaac",
+      "email": "igarza@visa.com",
+      "message": "adding completed sample project\n"
+    }
+  ],
+  "commit_sha": "a2f010925c5624b0b1440373bdb493b54e43c16e",
+  "extracted_at": "2026-10-05T18:43:01.642071+00:00"
+}

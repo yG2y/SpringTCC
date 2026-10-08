@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "1f50b26f8867c7c6d3885ad5c6bae7ca2fbb0241",
+      "date": "2026-06-15T13:05:26+08:00",
+      "author": "trifolium.wang",
+      "email": "trifolium.wang@gmail.com",
+      "message": "针对热加载和多Context的优化\n"
+    },
+    {
+      "sha": "ac6199cf91cc774d1ac16d3fdfb94e0287b89291",
+      "date": "2026-06-15T11:53:32+08:00",
+      "author": "trifolium.wang",
+      "email": "trifolium.wang@gmail.com",
+      "message": "RedisCacheService 删除Keys改成了SCAN方式，修复默认 key 没有加全局 cachePrefix的问题\n"
+    },
+    {
+      "sha": "b45710f66d5811317cd601e07224f1d51e46747f",
+      "date": "2026-06-15T11:53:24+08:00",
+      "author": "trifolium.wang",
+      "email": "trifolium.wang@gmail.com",
+      "message": "RedisCacheService 删除Keys改成了SCAN方式，修复默认 key 没有加全局 cachePrefix的问题\n"
+    },
+    {
+      "sha": "1179829725c0b02a8e25295fc8f53eedd8bf179f",
+      "date": "2026-06-15T11:39:37+08:00",
+      "author": "trifolium.wang",
+      "email": "trifolium.wang@gmail.com",
+      "message": "@TuCacheClear 添加了beforeInvocation\n"
+    },
+    {
+      "sha": "82ada78c23724359e613f48af75d56b0f133b308",
+      "date": "2026-06-15T11:20:42+08:00",
+      "author": "trifolium.wang",
+      "email": "trifolium.wang@gmail.com",
+      "message": "本地缓存换成了Caffeine\n"
+    },
+    {
+      "sha": "e2f5fb819ed1dc28271e0e0fbe36d5d5ebc84183",
+      "date": "2026-05-12T09:34:17+08:00",
+      "author": "trifolium.wang",
+      "email": "trifolium.wang@gmail.com",
+      "message": "要饭\n"
+    },
+    {
+      "sha": "4f0531d8aa8c0ca2b4d7dc0edaf3c6ddaaeb50cd",
+      "date": "2026-04-20T16:57:56+08:00",
+      "author": "trifolium.wang",
+      "email": "trifolium.wang@gmail.com",
+      "message": "更新了READEME.md,翻译为因为，AI友好，\n添加了SKILL.md，让AI快速学会使用\n"
+    },
+    {
+      "sha": "09bea3a425744378c80f0e8e635c27bb78484edf",
+      "date": "2026-04-10T18:29:18+08:00",
+      "author": "trifolium.wang",
+      "email": "trifolium.wang@gmail.com",
+      "message": "发布1.0.6版本\n"
+    },
+    {
+      "sha": "7e6fb1e6ba81ffa97616843677472fc2dc36050e",
+      "date": "2026-04-10T17:52:37+08:00",
+      "author": "trifolium.wang",
+      "email": "trifolium.wang@gmail.com",
+      "message": "发布1.0.6版本\n"
+    },
+    {
+      "sha": "d0cc376c5adb204283fba7e61dfdb53f879d096f",
+      "date": "2026-04-10T16:57:24+08:00",
+      "author": "trifolium.wang",
+      "email": "trifolium.wang@gmail.com",
+      "message": "发布1.0.6.rc2版本进行测试\n"
+    },
+    {
+      "sha": "4ef4e00c30fa36ac8025d423c243aefb2f85e1ef",
+      "date": "2026-04-10T16:36:45+08:00",
+      "author": "trifolium.wang",
+      "email": "trifolium.wang@gmail.com",
+      "message": "优化key生成，优化一些性能相关的\n"
+    },
+    {
+      "sha": "7adce95e221ecafc95aa1511a6472912a29f0a4a",
+      "date": "2026-04-10T14:35:12+08:00",
+      "author": "trifolium.wang",
+      "email": "trifolium.wang@gmail.com",
+      "message": "修复了Redisson如法正确加载的问题\n"
+    },
+    {
+      "sha": "fa4b9a01829e695f73b6c2f41787b4a37a0fdeeb",
+      "date": "2026-04-10T11:56:38+08:00",
+      "author": "trifolium.wang",
+      "email": "trifolium.wang@gmail.com",
+      "message": "修改缓存条件未命中后方法不执行的问题。\n"
+    },
+    {
+      "sha": "c0e4270877f5af5475dc1030cf9870e7710d808d",
+      "date": "2025-04-21T10:35:30+08:00",
+      "author": "trifolium.wang",
+      "email": "trifolium.wang@foxmail.com",
+      "message": "移除掉JetBrains授权的感谢信息\n"
+    },
+    {
+      "sha": "1a6a77217f6e31d0d36709056520c5891ae94a1f",
+      "date": "2025-04-09T10:49:57+08:00",
+      "author": "trifolium.wang",
+      "email": "trifolium.wang@foxmail.com",
+      "message": "修改一些轻微bug，添加基准测试代码\n"
+    },
+    {
+      "sha": "851c8c8c0da05248d0b55f76394bb4ce7ef0ad42",
+      "date": "2025-01-03T18:08:43+08:00",
+      "author": "trifolium.wang",
+      "email": "trifolium.wang@foxmail.com",
+      "message": "更新文档\n"
+    },
+    {
+      "sha": "16a8bb74447ee447c261a66cdcbd21f34f125300",
+      "date": "2025-01-03T17:54:57+08:00",
+      "author": "trifolium.wang",
+      "email": "trifolium.wang@foxmail.com",
+      "message": "优化本地缓存代码\n"
+    },
+    {
+      "sha": "807b7f16cfba5ce18c7db822912bcb8f292b493a",
+      "date": "2025-01-03T17:34:45+08:00",
+      "author": "trifolium.wang",
+      "email": "trifolium.wang@foxmail.com",
+      "message": "优化文档\n"
+    },
+    {
+      "sha": "93533372d8a520f5ba596758e47a374b1a826631",
+      "date": "2025-01-03T17:29:09+08:00",
+      "author": "trifolium.wang",
+      "email": "trifolium.wang@foxmail.com",
+      "message": "添加了对redisson的支持，优化文档，升级到1.0.6.rc1\n"
+    },
+    {
+      "sha": "d4e2b8d2dff2d131ee9eeb81e17bd61915c07d6d",
+      "date": "2025-01-03T17:28:04+08:00",
+      "author": "trifolium.wang",
+      "email": "trifolium.wang@foxmail.com",
+      "message": "添加了对redisson的支持，优化文档，升级到1.0.6.rc1\n"
+    },
+    {
+      "sha": "18d5efde8cfa524686d496d95fd207a75424f21f",
+      "date": "2024-12-30T13:40:03+08:00",
+      "author": "trifolium.wang",
+      "email": "trifolium.wang@foxmail.com",
+      "message": "修改ChangeLog\n"
+    },
+    {
+      "sha": "536555e495ea8f3bbdb263ea1626c0a3fad1de7e",
+      "date": "2024-12-27T10:52:57+08:00",
+      "author": "trifolium.wang",
+      "email": "trifolium.wang@foxmail.com",
+      "message": "修改文档\n"
+    },
+    {
+      "sha": "a928642af8eee0ebaace4fd1d18d2ed2bd5e64da",
+      "date": "2024-12-27T10:43:00+08:00",
+      "author": "trifolium.wang",
+      "email": "trifolium.wang@foxmail.com",
+      "message": "升级版本到1.0.5\n"
+    },
+    {
+      "sha": "8f8b737bdb6f9ae61a54f09f355cd70ab950f72a",
+      "date": "2024-12-27T10:28:04+08:00",
+      "author": "trifolium.wang",
+      "email": "trifolium.wang@foxmail.com",
+      "message": "升级版本到1.0.5\n"
+    },
+    {
+      "sha": "dff23a865e5bbd6c95fcbceedb034aebd0ed1174",
+      "date": "2024-12-27T10:26:29+08:00",
+      "author": "trifolium.wang",
+      "email": "trifolium.wang@foxmail.com",
+      "message": "升级版本到1.0.5\n"
+    },
+    {
+      "sha": "d34ad4641013ebd000752a0782a4bc948a1d195a",
+      "date": "2024-12-26T18:26:22+08:00",
+      "author": "trifolium.wang",
+      "email": "trifolium.wang@foxmail.com",
+      "message": "升级版本到1.0.5\n"
+    },
+    {
+      "sha": "01d2a973dda1270da05113f73a2804c9c79957a7",
+      "date": "2024-12-26T18:23:22+08:00",
+      "author": "trifolium.wang",
+      "email": "trifolium.wang@foxmail.com",
+      "message": "升级版本到1.0.5\n"
+    },
+    {
+      "sha": "8459b5b9f1b61bf70ea986c67005eef60ca4ef84",
+      "date": "2024-12-26T18:20:56+08:00",
+      "author": "trifolium.wang",
+      "email": "trifolium.wang@foxmail.com",
+      "message": "修改文档\n"
+    },
+    {
+      "sha": "c572cfa12608f45ca7f89852eb48cb16902691ea",
+      "date": "2024-12-26T18:19:30+08:00",
+      "author": "trifolium.wang",
+      "email": "trifolium.wang@foxmail.com",
+      "message": "修改文档\n"
+    },
+    {
+      "sha": "2c8edecc780c7f615bb1b33177d8794a63d77584",
+      "date": "2024-12-26T18:04:47+08:00",
+      "author": "trifolium.wang",
+      "email": "trifolium.wang@foxmail.com",
+      "message": "修改.gitignore\n"
+    }
+  ],
+  "commit_sha": "1f50b26f8867c7c6d3885ad5c6bae7ca2fbb0241",
+  "extracted_at": "2026-10-05T18:28:05.717822+00:00"
+}

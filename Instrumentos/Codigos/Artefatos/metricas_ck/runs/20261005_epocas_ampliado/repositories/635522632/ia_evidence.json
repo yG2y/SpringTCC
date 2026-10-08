@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "799be37aa472b3c05fd0ad1ee8e5824caef776f7",
+      "date": "2026-08-28T17:04:24+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: add .editorconfig for consistent code style\n"
+    },
+    {
+      "sha": "4e10fb175d0a768e5400b99663b87f1078b581c3",
+      "date": "2026-07-25T08:49:40+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: update dependencies and build config\n\n- Bump Spring Boot from 4.0.6 to 4.1.0\n- Bump Maven wrapper from 3.9.15 to 3.9.16\n- Bump PostgreSQL image from 18.3 to 18.4\n- Bump Spotless plugin from 3.4.0 to 3.8.0, remove explicit google-java-format version\n- Move Spotless format check from verify phase to validate phase\n- Update README to reflect Spotless phase change\n"
+    },
+    {
+      "sha": "1b55cb3d6f5fa55a3c721206f1638d08e04f444b",
+      "date": "2026-07-24T10:33:29+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "docs: update Spotless Maven plugin link in README\n\n- Change Spotless repository URL to point to plugin-maven subdirectory\n"
+    },
+    {
+      "sha": "b2dcd4f0807b0a2b842294a2fc0f54219d91b11e",
+      "date": "2026-06-23T12:17:49-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Remove empty description from pom.xml\n"
+    },
+    {
+      "sha": "6384484932e69eda17d11cec879cbbbb9bb4ba61",
+      "date": "2026-06-08T07:27:22+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Add Medium article\n"
+    },
+    {
+      "sha": "9dcd573666f120c6c1585fc3c7cacc69e8139c17",
+      "date": "2026-06-06T13:29:08+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "test: add clarifying comments to test properties\n\n- Add note that hibernate.enable_lazy_load_no_trans is a test-only workaround\n- Explain the property should not be used in production\n"
+    },
+    {
+      "sha": "46e76056f25283ca6c773d9d483a65794a81ab73",
+      "date": "2026-06-04T23:32:52+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: add spotless maven plugin for code formatting\n\n- Add spotless-maven-plugin with google-java-format (GOOGLE style)\n- Configure removeUnusedImports, forbidWildcardImports, and formatAnnotations\n- Bind spotless:check to the verify phase for enforcement\n- Reformat all Java source files to conform to the new style\n- Add code formatting documentation to README\n"
+    },
+    {
+      "sha": "cf962457a57d0ae76d2014e7b049e115461b51e8",
+      "date": "2026-06-04T23:27:20+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "refactor: return 204 No Content from delete endpoints\n\n- Change delete endpoints to return void with @ResponseStatus(HttpStatus.NO_CONTENT)\n- Add null-safety checks to removeRestaurant, removePersonDetail, removeTeamDetail\n- Rename nested DTO records Writer/Book to WriterRef/BookRef\n- Fix WeaponPk composite key order in PlayerWeaponControllerTest\n- Update addPersonDetail test to expect HttpStatus.CREATED\n- Update all tests to expect 204 status and remove response body assertions\n"
+    },
+    {
+      "sha": "0b8482ecfec404bf326f47abe26e56a3814404a0",
+      "date": "2026-06-04T14:41:09+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "docs: replace png images with mermaid er diagrams\n\n- Replace PNG database diagram images with Mermaid ER diagram code blocks for all relationship types\n- Remove unused draw.io source file and PNG image files from documentation directory\n"
+    },
+    {
+      "sha": "70a788aa36075553d48b673a7646395f12e0daf0",
+      "date": "2026-06-04T14:28:52+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: add license and funding configuration\n\n- Add MIT License file\n- Add Buy Me a Coffee funding option\n- Add license and support badges to README\n- Rename docker-compose.yml to compose.yaml and enhance healthcheck\n- Remove EXCEPTION from default error attributes\n"
+    },
+    {
+      "sha": "9a4dd9c224a1c1b1e429bf4ecf3f6dddbafea0f0",
+      "date": "2026-06-04T14:12:53+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: update deps and restructure compiler plugin\n\n- Upgrade Spring Boot to 4.0.6, Maven wrapper to 3.9.15, and Postgres to 18.3\n- Update springdoc-openapi from 2.8.14 to 3.0.3\n- Add spring-boot-starter-restclient-test dependency\n- Restructure maven-compiler-plugin with separate compile and test-compile executions\n"
+    },
+    {
+      "sha": "15ddfa7873093df1d8ca0442caf6d54a1d68ddce",
+      "date": "2025-12-15T13:42:29-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Project upgrade\n\n- Upgrade to Java 25\n- Upgrade to Spring Boot 4.0.0\n- Upgrade to SpringDoc OpenAPI 3.0.0\n- Upgrade wrapperVersion to 3.3.4 and Apache Maven to 3.9.11\n"
+    },
+    {
+      "sha": "95fbda6509741f810134e7c6352c021fafeaf526",
+      "date": "2025-11-19T22:37:38+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project Upgrade\n\n- Upgrade to Spring Boot 3.5.7\n- Upgrade wrapperVersion to 3.3.4 and Apache Maven to 3.9.11\n- Upgrade to SpringDoc OpenAPI 2.8.13\n- Upgrade to Postgres Docker image 18.0\n"
+    },
+    {
+      "sha": "c3d01b64093b56f7647b62da661101a7802ab5b8",
+      "date": "2025-04-17T11:38:51+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- Upgrade to Spring Boot 3.4.4\n- Upgrade to SpringDoc OpenAPI 2.8.6\n- Add the .gitattributes file\n- Update README files\n"
+    },
+    {
+      "sha": "bf9d43c516f1ccc521e727fa8d16ea7432181ff0",
+      "date": "2024-12-17T17:38:40-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Remove public keyword from Beans\n"
+    },
+    {
+      "sha": "f02cfea040eec38ad0473846b217ae34f6f8aa4a",
+      "date": "2024-12-17T17:38:20-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Convert DTO and PK classes to record\n"
+    },
+    {
+      "sha": "27ccd99561cf0d22950d8f30dfeb1b414a9e27f2",
+      "date": "2024-12-17T17:35:17-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Update README file\n"
+    },
+    {
+      "sha": "a7d2618dedb46b11512d13096282edd4aaf3b55a",
+      "date": "2024-12-05T14:53:09-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- upgrade to Java 21;\n- upgrade to spring-boot 3.4.0;\n- upgrade to springdoc-openapi 2.7.0;\n- upgrade to mapstruct 1.6.3;\n- upgrade to postgres docker image 17.2;\n- upgrade wrapperVersion to 3.3.2 and apache-maven to 3.9.9;\n- refactor docker-compose.yml and pom.xml files;\n- update README.\n"
+    },
+    {
+      "sha": "2138912d9183ad65aef65a2567df68790bbb6ef0",
+      "date": "2024-05-25T18:30:02+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to Spring Boot 3.3.0\n"
+    },
+    {
+      "sha": "f2cdef91da0b33788717de4d83e3d4b727b5d0ea",
+      "date": "2024-04-30T14:58:11+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- Upgrade to spring-boot 3.2.5;\n- Upgrade to springdoc-openapi 2.5.0;\n- Upgrade to apache-maven 3.9.5;\n- Upgrade to postgres docker image 16.1;\n- Remove obsolete version field in docker-compose.yml;\n- Update README.\n"
+    },
+    {
+      "sha": "11b0ee06421a5fe3b1f0e054c229214f725a249f",
+      "date": "2023-09-26T14:26:27+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to spring-boot 3.1.4 and springdoc-openapi 2.2.0\n"
+    },
+    {
+      "sha": "76587f0bc62047e4c282159f95a38cb62769a64d",
+      "date": "2023-09-26T14:24:51+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to postgres docker image 15.4\n"
+    },
+    {
+      "sha": "e31091c8a59dd603185fdb8415ecad86de33075a",
+      "date": "2023-09-26T14:21:37+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to apache-maven 3.9.4\n"
+    },
+    {
+      "sha": "a9f59f1c4a6c782917a1a63a632400cd25ff6afb",
+      "date": "2023-09-26T14:20:35+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Migrate to Compose V2 and update README\n"
+    },
+    {
+      "sha": "e10df1c68503a1e64dc566ac65f7a844ce1128f1",
+      "date": "2023-09-26T14:14:54+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Add PoCs & Articles Section in README\n"
+    },
+    {
+      "sha": "955462146e84535bbd5432d86cfcf2172cf78926",
+      "date": "2023-06-15T11:34:10-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n- upgrade to spring-boot 3.1.0;\n- upgrade to postgres docker image 15.3;\n- refactor code related to Testcontainers;\n- update README.\n"
+    },
+    {
+      "sha": "639f402cb0dd379b93346085e12e0a04da6a6f2b",
+      "date": "2023-06-15T11:27:18-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Update Maven files\n"
+    },
+    {
+      "sha": "a2bc874e8e2798305fb8da2449fa6f1e9d617107",
+      "date": "2023-05-20T17:47:53-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Create FUNDING.yml\n"
+    },
+    {
+      "sha": "37c159b4e79aae74ec91907ca4aedd380303aa04",
+      "date": "2023-05-18T18:44:35+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Add new Medium articles in README\n"
+    },
+    {
+      "sha": "f81eb3aa66fc32143ea6ebc3ec968a7eb2995a13",
+      "date": "2023-05-09T00:11:54+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Add new Medium article in README\n"
+    }
+  ],
+  "commit_sha": "799be37aa472b3c05fd0ad1ee8e5824caef776f7",
+  "extracted_at": "2026-10-05T18:25:17.193708+00:00"
+}

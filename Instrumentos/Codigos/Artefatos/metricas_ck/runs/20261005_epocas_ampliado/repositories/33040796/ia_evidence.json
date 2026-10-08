@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "bd1aa40f35c954915a0ebb93d2fd0c4ba0617146",
+      "date": "2026-09-29T17:39:46+05:30",
+      "author": "Mahender Reddy Jangari",
+      "email": "108134204+mrj4001@users.noreply.github.com",
+      "message": "Merge pull request #768 from wcmc-its/fix/grant-strategy-blank-grant-master\n\nSkip blank and all-zero identity grant ids in GrantStrategy (prod)"
+    },
+    {
+      "sha": "e9f24330e615893b5a96a37403b65d0a43fc0a3f",
+      "date": "2026-09-29T17:38:49+05:30",
+      "author": "Mahender Reddy Jangari",
+      "email": "108134204+mrj4001@users.noreply.github.com",
+      "message": "Merge pull request #765 from wcmc-its/dev_master_merge\n\nDev master merge"
+    },
+    {
+      "sha": "50b9a4a449f360f97f9921c9ce08c378110f5a54",
+      "date": "2026-09-23T17:09:06-04:00",
+      "author": "paulalbert1",
+      "email": "paa2013@med.cornell.edu",
+      "message": "Skip blank and all-zero identity grant ids in GrantStrategy\n\nsanitizeIdentityGrants calls insert(2, \"-\") on every id; a blank id (or\none that strips to under 2 chars, e.g. K00) throws\nStringIndexOutOfBoundsException and the grant task fails for the whole\nperson, so none of their articles get grant evidence. 53 prod identities\ncarry such ids (mer2005, cap4010 hit it in prod on 2026-09-23).\n"
+    },
+    {
+      "sha": "463d2e03ddedea3ddb95ab21c22fcabaa4cf2c77",
+      "date": "2026-09-23T19:46:21+05:30",
+      "author": "“ved4006”",
+      "email": "ved4006@med.cornell.edu",
+      "message": "Refactor: Use isBlank() instead of isEmpty() where applicable"
+    },
+    {
+      "sha": "45c40dcb5521a2a799154d4f833ebf57a9437e8a",
+      "date": "2026-09-22T16:37:05+05:30",
+      "author": "“ved4006”",
+      "email": "ved4006@med.cornell.edu",
+      "message": "Merge remote-tracking branch 'origin/development' into\nmaster_merger_from_dev_master\n"
+    },
+    {
+      "sha": "444dc5ba825299c40dd206edc0961bb29362dbb7",
+      "date": "2026-09-18T15:29:25+05:30",
+      "author": "Mahender Reddy Jangari",
+      "email": "108134204+mrj4001@users.noreply.github.com",
+      "message": "Merge pull request #762 from wcmc-its/development_ved4006\n\nnew api for fetch identities using PostMapping"
+    },
+    {
+      "sha": "fd3c85f2aa24c4e3a7c47c36ac1bfa9a75123e94",
+      "date": "2026-09-18T08:33:51+05:30",
+      "author": "“ved4006”",
+      "email": "ved4006@med.cornell.edu",
+      "message": "new api for fetch identities using PostMapping"
+    },
+    {
+      "sha": "f7ad8fd85f94b596f96861fc25316f3b1e07d9f4",
+      "date": "2026-09-17T22:39:59+05:30",
+      "author": "veerraju",
+      "email": "ved4006@med.cornell.edu",
+      "message": "Merge pull request #757 from wcmc-its/development\n\nDevelopment"
+    },
+    {
+      "sha": "c64766339534ac6f220ba512d0a769af3a7d879c",
+      "date": "2026-09-15T20:28:30+05:30",
+      "author": "Mahender Reddy Jangari",
+      "email": "108134204+mrj4001@users.noreply.github.com",
+      "message": "Merge pull request #754 from wcmc-its/fix/752-goldstandard-patches-analysis-prod\n\nProd: patch userAssertion on the stored Analysis when the gold standard is written (#752)"
+    },
+    {
+      "sha": "db68fe0cbe4cf6a7978842ef06b40209dd897067",
+      "date": "2026-09-15T20:27:55+05:30",
+      "author": "Mahender Reddy Jangari",
+      "email": "108134204+mrj4001@users.noreply.github.com",
+      "message": "Merge pull request #751 from wcmc-its/fix/704-name-variant-double-remove\n\nFix #704: IllegalStateException in checkToIgnoreNameVariants (double iterator.remove())"
+    },
+    {
+      "sha": "cd0341fa84ebecc30d21acaa0ef1fa029dd418a4",
+      "date": "2026-09-15T19:53:20+05:30",
+      "author": "Mahender Reddy Jangari",
+      "email": "108134204+mrj4001@users.noreply.github.com",
+      "message": "Merge pull request #749 from wcmc-its/fix/esearchresult-incremental-merge\n\nMerge incremental ESearchResult upserts instead of replacing them"
+    },
+    {
+      "sha": "9eab27bb6580eba9ca182e823241ddf9f100ded4",
+      "date": "2026-09-15T08:13:39-04:00",
+      "author": "paulalbert1",
+      "email": "paa2013@med.cornell.edu",
+      "message": "Patch userAssertion on the stored Analysis when the gold standard is written (#752)\n\nThe curate tabs render userAssertion from the stored Analysis, which a\ngold-standard write never touched; an accept stayed under Suggested until\nsomething re-ran the feature generator for that person. After either\n/reciter/goldstandard handler saves, read the gold standard back, set\nuserAssertion per stored article (rejected wins, as in\nAnalysis.performAnalysis), and save the Analysis the way the feature\ngenerator does. No retrieval, no re-score. Best effort: a failure logs and\nthe next feature-generator run converges as before.\n"
+    },
+    {
+      "sha": "15cb178166ffd7e9c0cc0536ff8b3f4d68b8b153",
+      "date": "2026-09-15T08:23:08-04:00",
+      "author": "paulalbert1",
+      "email": "paa2013@med.cornell.edu",
+      "message": "Merge pull request #753 from wcmc-its/fix/752-goldstandard-patches-analysis\n\nPatch userAssertion on the stored Analysis when the gold standard is written (#752)"
+    },
+    {
+      "sha": "7b8fa228f884e0d2725d61fb77b78a8df705d010",
+      "date": "2026-09-15T08:13:39-04:00",
+      "author": "paulalbert1",
+      "email": "paa2013@med.cornell.edu",
+      "message": "Patch userAssertion on the stored Analysis when the gold standard is written (#752)\n\nThe curate tabs render userAssertion from the stored Analysis, which a\ngold-standard write never touched; an accept stayed under Suggested until\nsomething re-ran the feature generator for that person. After either\n/reciter/goldstandard handler saves, read the gold standard back, set\nuserAssertion per stored article (rejected wins, as in\nAnalysis.performAnalysis), and save the Analysis the way the feature\ngenerator does. No retrieval, no re-score. Best effort: a failure logs and\nthe next feature-generator run converges as before.\n"
+    },
+    {
+      "sha": "31d03772bdaad1c7f3c7ec4269fd730f7e540262",
+      "date": "2026-09-15T07:51:48-04:00",
+      "author": "paulalbert1",
+      "email": "paa2013@med.cornell.edu",
+      "message": "Address review: iterate a sorted key snapshot, guard the removal, test the rules by value\n\n- Walk a copied key list and look values up as we go, so a name already\n  dropped is never used as the \"full\" name that drops others.\n- Sort the snapshot fullest-name-first (then toString) so the survivor of a\n  symmetric rule-3 pair never depends on HashMap iteration order.\n- Replace the early return with a guard on the removal itself.\n- Rule 3 comment corrected: it is a case-only duplicate check; a middle\n  initial is not collapsed into a full middle name (pre-#704 behaviour).\n- Rename idenityAuthorNames -> identityAuthorNames.\n- Tests: assert which names survive, not just how many; feed alc4061's\n  shape through sanitizeIdentityAuthorNames end-to-end; prove production\n  mixes \"\" and null middle names; pin the rule-3 survivor with a\n  LinkedHashMap; cover empty/partial names.\n"
+    },
+    {
+      "sha": "8800ab05ebe6f777023956b091ed5ff94e9c26a8",
+      "date": "2026-09-15T07:46:33-04:00",
+      "author": "paulalbert1",
+      "email": "paa2013@med.cornell.edu",
+      "message": "Merge MigrationFromJDk11ToAWSCorretto17 into fix/esearchresult-incremental-merge\n\nReconcile with #737's runHadFailures union. Only a clean ALL_PUBLICATIONS\nsweep replaces the stored entry wholesale; every other upsert merges. The\n#696/E13 marker+date rule and #737's failed-sweep promotion are unchanged;\n#737's clean-incremental-replaces test now asserts the merge.\n"
+    },
+    {
+      "sha": "991aa7bcc2729554e634f2a8132085684c36ac20",
+      "date": "2026-09-15T15:36:53+05:30",
+      "author": "Mahender Reddy Jangari",
+      "email": "108134204+mrj4001@users.noreply.github.com",
+      "message": "Merge pull request #748 from wcmc-its/fix/746-name-prefix-mislabel\n\nStop labelling a first-name prefix match as full-exact (#746)"
+    },
+    {
+      "sha": "cdffef72284f01e3b6cbb5d5b88144d83c6b0d23",
+      "date": "2026-09-15T14:51:06+05:30",
+      "author": "Mahender Reddy Jangari",
+      "email": "108134204+mrj4001@users.noreply.github.com",
+      "message": "Merge pull request #745 from wcmc-its/feature/731-cwid-skip-audit-api\n\nPromote ESearchResult read APIs (#734) to the Corretto17 line"
+    },
+    {
+      "sha": "13d9a8b39c01f18c775edefe4744a80b8966aa91",
+      "date": "2026-09-15T14:48:28+05:30",
+      "author": "Mahender Reddy Jangari",
+      "email": "108134204+mrj4001@users.noreply.github.com",
+      "message": "Merge pull request #744 from wcmc-its/development_ved4006\n\nprevent null values from being processed"
+    },
+    {
+      "sha": "de63fc35108a6db75205c07301e9aeabfe0a7fa8",
+      "date": "2026-09-15T14:47:58+05:30",
+      "author": "Mahender Reddy Jangari",
+      "email": "108134204+mrj4001@users.noreply.github.com",
+      "message": "Merge pull request #743 from wcmc-its/ved4006_aws17\n\nprevent null values from being processed"
+    },
+    {
+      "sha": "acf464fb5654b5cb175409ac6004a711c906757d",
+      "date": "2026-09-14T13:12:37-04:00",
+      "author": "paulalbert1",
+      "email": "paa2013@med.cornell.edu",
+      "message": "Decide name-variant removals over a snapshot instead of mutating through live iterators\n\ncheckToIgnoreNameVariants walked the identity's name-variant map with two live\niterators inside a nested loop, and three separate blocks in the same pass could\neach call remove(). When a removed entry was the iterator's last, the 'advance\npast it' guard had nothing to advance to, and the next block's remove() threw\nIllegalStateException — a 500 on every feature-generator call for any identity\nwhose variants matched two rules in one pass. alc4061 is one: primary\n'Alberto Mario' with an empty middle name, alternates 'Alberto Mario' / null and\n'Alberto' / null. His 09-02 accept sat under Suggested for twelve days because\nneither the nightly run nor the curate page's Refresh could get past it.\n\nThe three rules are unchanged, lifted into isNameVariantToIgnore(full, candidate):\nsame last name and (1) full's first name starts with candidate's and neither has\na middle name, (2) same prefix and candidate's middle name is blank, or (3) all\nthree parts equal ignoring case. The loop now decides over a snapshot of the\nentries and removes from the map by key, never below one remaining name.\n\nCloses #704.\n"
+    },
+    {
+      "sha": "bc7c62791ead8ecb25dd658edd4f5aa0bd50d29f",
+      "date": "2026-09-07T13:32:18+05:30",
+      "author": "Mahender Reddy Jangari",
+      "email": "108134204+mrj4001@users.noreply.github.com",
+      "message": "Merge pull request #740 from wcmc-its/fix/737-no-shrink-guard-prod\n\nNever shrink a retrieval record on a run that hit PubMed failures (#737)"
+    },
+    {
+      "sha": "653e60aca7a65d6bc8cd2d87bc0dd37307a837c7",
+      "date": "2026-09-07T13:30:58+05:30",
+      "author": "Mahender Reddy Jangari",
+      "email": "108134204+mrj4001@users.noreply.github.com",
+      "message": "Merge pull request #739 from wcmc-its/feature/732-esearchresult-read\n\nAPI: ESearchResult read endpoints (#732)"
+    },
+    {
+      "sha": "a514b44ad28a0e716954caada717e7dcb8f8419c",
+      "date": "2026-09-05T16:47:19-04:00",
+      "author": "paulalbert1",
+      "email": "paa2013@med.cornell.edu",
+      "message": "Merge incremental ESearchResult upserts instead of replacing them\n\nAn incremental run's pmid list is only that night's window. upsertedStrategyEntry\nsubstituted it for the stored block whenever the stored block was not itself\nALL_PUBLICATIONS, so a strategy's pmid list shrank to whatever that one window\nreturned. initializeEngineParameters builds the scoring candidate set as the union\nof these blocks, so every dropped pmid vanished from the person's scoring input --\nwhile the article stayed in the PubMedArticle cache and in PmidProvenance, making\nthe loss invisible.\n\nMeasured on prod 2026-09-05: 1,446 authorship_review rows had lost their pmid this\nway, 1,445 of them behind a block whose stored lookupType was already incremental.\nA within-person paired control put the loss rate at 67% behind an incremental block\nversus 0% behind a full sweep, and it was still accruing -- 388 destructive block\nrewrites dated that day.\n\nNow any incoming entry that is not a genuine ALL_PUBLICATIONS sweep merges into the\nstored list. A real full sweep still replaces wholesale: it is authoritative, it is\nwhat prunes pmids the person's queries no longer match, and it bounds the merged\nlist's growth against the 400KB item cap (#640-B). The existing #696/E13 rule is\nunchanged -- when the stored entry is ALL_PUBLICATIONS the merged entry keeps that\nmarker and the sweep's retrievalDate.\n\nThis also covers the swallowed-429 case: a strategy returning zero articles tonight\nno longer erases what it found before.\n\nSize bound checked against prod rather than assumed. Over a 1,500-uid sample the\nworst case -- every strategy holding the entire per-person pmid union, which does\nnot actually happen since strategies retrieve different sets -- peaks at 87% of the\n400KB cap and 0 of 1,500 exceed it.\n\nTests: incrementalOverIncrementalReplacesTheEntry asserted the old behaviour and is\nreplaced by incrementalOverIncrementalMergesRatherThanReplacing, plus coverage for\nthe empty window, deduplication, and full-sweep pruning. mvn -o test 374/374 pass.\nReverting the guard with the tests unchanged fails exactly the 3 new merge tests\n(expected <[1, 2, 3]> but was <[]>), so they are load-bearing.\n"
+    },
+    {
+      "sha": "ff28469d9afe26c0743aa82d0cb5db2c65488384",
+      "date": "2026-09-05T13:04:46-04:00",
+      "author": "paulalbert1",
+      "email": "paa2013@med.cornell.edu",
+      "message": "Stop labelling a first-name prefix match as full-exact (#746)\n\nScoreByNameStrategy reported nameMatchFirstType=full-exact on three branches that only established a prefix or suffix relationship, not equality. A byline of \"Shuofei\" was therefore indistinguishable from a genuine exact match against a registered \"Shuo\": the compensating identitySubstringOfArticle-firstName modifier (-1.608) lands in a different feature, so nothing downstream could tell the two apart.\n\nThree honest buckets replace the over-claim, each with its own property defaulting to the full-exact value (1.852):\n  full-prefix              registered first name (>=2 chars) begins the byline first name\n  full-suffix              registered first name (>=2 chars) ends it (Cary -> MCary)\n  inferredInitials-prefix  registered first name is a single letter that begins the byline\n                           first name ('M.' -> Mayra); semantically an initial match, whose\n                           correct score is inferredInitials-exact (0.441)\n\nNo predicate changes. The single-letter class gets its own branch rather than a length guard on the prefix branch, because a guard would drop those rows through to full-conflictingAllButInitials (-2.646) -- worse than the status quo and a numeric change.\n\nVerified numerically inert. An 11,520-case enumeration of both first-name cascades, run against the pre-change source and this branch, shows 776 label changes and zero differences in nameMatchFirstScore, nameMatchMiddleScore, nameMatchLastScore, nameMatchModifierScore or nameScoreTotal; nameMatchMiddleType and nameMatchModifier are unchanged everywhere.\n\nRequires ReCiter---Scoring #23 to be deployed first: nameMatchFirstType is not only a diagnostic string, it feeds nameMatchTypeOrdinal, a numeric feature in both deployed models. Shipping this alone moves 34 of 48,337 measured article-rows, worst -18.02 points.\n"
+    },
+    {
+      "sha": "9b1d0726273e8dee1fbcdb9f8ea7c0af536f4bf4",
+      "date": "2026-09-04T15:00:36+05:30",
+      "author": "“ved4006”",
+      "email": "ved4006@med.cornell.edu",
+      "message": "fix: prevent null values from being processed"
+    },
+    {
+      "sha": "a92cd6772c14af14cc64711119bd404677feb31e",
+      "date": "2026-09-04T14:50:32+05:30",
+      "author": "veerraju",
+      "email": "ved4006@med.cornell.edu",
+      "message": "Merge pull request #742 from wcmc-its/development\n\nDevelopment"
+    },
+    {
+      "sha": "343a76cfc13a962323901c3976ba4ca55d775f7f",
+      "date": "2026-09-04T14:46:07+05:30",
+      "author": "“ved4006”",
+      "email": "ved4006@med.cornell.edu",
+      "message": "fix: prevent null values from being processed\n"
+    },
+    {
+      "sha": "5005d5e104cea69b7f0daae05394754bc479ad9e",
+      "date": "2026-09-04T14:00:03+05:30",
+      "author": "veerraju",
+      "email": "ved4006@med.cornell.edu",
+      "message": "Merge pull request #741 from wcmc-its/MigrationFromJDk11ToAWSCorretto17\n\nMigration from j dk11 to aws corretto17"
+    },
+    {
+      "sha": "16e21b595a040e8cb73c716610f0e6844d209610",
+      "date": "2026-09-03T09:17:22-04:00",
+      "author": "paulalbert1",
+      "email": "paa2013@med.cornell.edu",
+      "message": "Never shrink a retrieval record on a run that hit PubMed failures (#737)\n\nPort of PR #738 from development to the prod line. Cherry-pick of f162e6a5, applied with no conflicts; diff is identical to the source commit (5 files, +305/-34).\n"
+    }
+  ],
+  "commit_sha": "bd1aa40f35c954915a0ebb93d2fd0c4ba0617146",
+  "extracted_at": "2026-10-05T18:06:46.482913+00:00"
+}

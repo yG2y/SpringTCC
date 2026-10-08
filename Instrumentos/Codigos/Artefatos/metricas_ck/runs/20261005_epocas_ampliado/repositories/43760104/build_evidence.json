@@ -1,0 +1,624 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${spring-boot.version};2.4.1;2.4.3;2.7.11;3.4.3",
+  "spring_boot_major": "multiple",
+  "java_versions_declared": "${java.version};1.7;1.8;14;17;8",
+  "build_evidence": [
+    {
+      "file": "backend/de.metas.acct.base/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/de.metas.adempiere.adempiere/base/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "backend/de.metas.adempiere.adempiere/base/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "backend/de.metas.adempiere.adempiere/base/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "backend/de.metas.adempiere.adempiere/base/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/de.metas.adempiere.adempiere/serverRoot/de.metas.adempiere.adempiere.serverRoot.base/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "backend/de.metas.adempiere.adempiere/serverRoot/de.metas.adempiere.adempiere.serverRoot.base/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "backend/de.metas.adempiere.adempiere/serverRoot/de.metas.adempiere.adempiere.serverRoot.base/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "backend/de.metas.adempiere.adempiere/serverRoot/de.metas.adempiere.adempiere.serverRoot.base/pom.xml",
+      "artifact": "spring-boot-starter-tomcat"
+    },
+    {
+      "file": "backend/de.metas.adempiere.adempiere/serverRoot/de.metas.adempiere.adempiere.serverRoot.base/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "backend/de.metas.adempiere.adempiere/serverRoot/de.metas.adempiere.adempiere.serverRoot.base/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/de.metas.adempiere.adempiere/serverRoot/de.metas.adempiere.adempiere.serverRoot.base/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "backend/de.metas.business/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/de.metas.contracts/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/de.metas.deliveryplanning.base/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/de.metas.deliveryplanning.webui/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/de.metas.document.archive/de.metas.document.archive.base/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/de.metas.dunning/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/de.metas.dunning_gateway.api/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/de.metas.dunning_gateway.spi/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/de.metas.elasticsearch/pom.xml",
+      "artifact": "spring-boot-starter-data-elasticsearch"
+    },
+    {
+      "file": "backend/de.metas.fresh/de.metas.fresh.base/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/de.metas.handlingunits.base/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/de.metas.handlingunits.webui/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/de.metas.inbound.mail/pom.xml",
+      "artifact": "spring-boot-starter-integration"
+    },
+    {
+      "file": "backend/de.metas.inbound.mail/pom.xml",
+      "artifact": "spring-boot-starter-mail"
+    },
+    {
+      "file": "backend/de.metas.invoice_gateway.api/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/de.metas.invoice_gateway.spi/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/de.metas.manufacturing.webui/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/de.metas.manufacturing/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "backend/de.metas.manufacturing/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/de.metas.marketing/base/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "backend/de.metas.marketing/base/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/de.metas.marketing/cleverreach/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "backend/de.metas.marketing/cleverreach/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/de.metas.marketing/serialletter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "backend/de.metas.marketing/serialletter/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/de.metas.material/cockpit/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/de.metas.material/dispo-service/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "backend/de.metas.material/dispo-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/de.metas.material/planning/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/de.metas.payment.paypal/pom.xml",
+      "artifact": "spring-boot-test"
+    },
+    {
+      "file": "backend/de.metas.printing.rest-api-impl/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/de.metas.procurement.base/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "backend/de.metas.purchasecandidate.base/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/de.metas.report/metasfresh-report-service-standalone/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "backend/de.metas.report/metasfresh-report-service-standalone/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "backend/de.metas.report/metasfresh-report-service-standalone/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "backend/de.metas.report/metasfresh-report-service-standalone/pom.xml",
+      "artifact": "spring-boot-starter-tomcat"
+    },
+    {
+      "file": "backend/de.metas.report/metasfresh-report-service-standalone/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "backend/de.metas.report/metasfresh-report-service-standalone/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "backend/de.metas.report/metasfresh-report-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "backend/de.metas.salescandidate.base/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/de.metas.servicerepair.base/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/de.metas.servicerepair.webui/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/de.metas.shipper.client.nshift/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "backend/de.metas.shipper.client.nshift/pom.xml",
+      "artifact": "spring-boot-test"
+    },
+    {
+      "file": "backend/de.metas.shipper.gateway.commons/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "backend/de.metas.shipper.gateway.derkurier/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "backend/de.metas.shipper.gateway.derkurier/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/de.metas.shipper.gateway.dhl/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "backend/de.metas.shipper.gateway.dpd/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "backend/de.metas.shipper.gateway.go/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "backend/de.metas.shipper.gateway.nshift/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "backend/de.metas.swat/de.metas.swat.base/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/de.metas.ui.web.base/pom.xml",
+      "artifact": "spring-boot-starter-websocket"
+    },
+    {
+      "file": "backend/de.metas.ui.web.base/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "backend/de.metas.ui.web.base/pom.xml",
+      "artifact": "spring-boot-starter-data-elasticsearch"
+    },
+    {
+      "file": "backend/de.metas.ui.web.base/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "backend/de.metas.util.web/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "backend/de.metas.util/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "backend/de.metas.vatid/base/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "backend/de.metas.vatid/base/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/de.metas.vatid/vies/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "backend/de.metas.vatid/vies/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/de.metas.vertical.creditscore/base/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "backend/de.metas.vertical.creditscore/base/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/de.metas.vertical.creditscore/creditpass/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "backend/de.metas.vertical.creditscore/creditpass/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/de.metas.vertical.pharma.msv3.server-peer-metasfresh/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "backend/de.metas.vertical.pharma.msv3.server-peer/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "backend/de.metas.vertical.pharma.msv3.server/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "backend/de.metas.vertical.pharma.msv3.server/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "backend/de.metas.vertical.pharma.msv3.server/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "backend/de.metas.vertical.pharma.msv3.server/pom.xml",
+      "artifact": "spring-boot-starter-tomcat"
+    },
+    {
+      "file": "backend/de.metas.vertical.pharma.msv3.server/pom.xml",
+      "artifact": "spring-boot-starter-web-services"
+    },
+    {
+      "file": "backend/de.metas.vertical.pharma.msv3.server/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "backend/de.metas.vertical.pharma.msv3.server/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/de.metas.vertical.pharma.msv3.server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "backend/de.metas.vertical.pharma.vendor.gateway.msv3/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "backend/de.metas.vertical.pharma.vendor.gateway.msv3/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/de.metas.vertical.pharma/pom.xml",
+      "artifact": "spring-boot-test"
+    },
+    {
+      "file": "backend/metasfresh-dist/dist/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "backend/metasfresh-dist/serverRoot/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "backend/metasfresh-dist/swingui/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "backend/metasfresh-dist/swingui/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "backend/metasfresh-dist/swingui/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/metasfresh-dist/swingui/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "backend/metasfresh-webui-api/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "backend/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "backend/vertical-healthcare_ch/forum_datenaustausch_ch.invoice_base/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "backend/vertical-healthcare_ch/forum_datenaustausch_ch.invoice_rest-api/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "misc/services/admin/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "misc/services/admin/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "misc/services/admin/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "misc/services/camel/de-metas-camel-edi/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "misc/services/camel/de-metas-camel-edi/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "misc/services/camel/de-metas-camel-edi/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "misc/services/camel/de-metas-camel-edi/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "misc/services/camel/de-metas-camel-edi/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "misc/services/camel/de-metas-camel-externalsystems/alberta/de-metas-camel-alberta-camelroutes/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "misc/services/camel/de-metas-camel-externalsystems/alberta/de-metas-camel-alberta-camelroutes/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "misc/services/camel/de-metas-camel-externalsystems/alberta/de-metas-camel-alberta-camelroutes/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "misc/services/camel/de-metas-camel-externalsystems/alberta/de-metas-camel-alberta-camelroutes/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "misc/services/camel/de-metas-camel-externalsystems/core/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "misc/services/camel/de-metas-camel-externalsystems/core/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "misc/services/camel/de-metas-camel-externalsystems/core/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "misc/services/camel/de-metas-camel-externalsystems/core/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "misc/services/camel/de-metas-camel-externalsystems/core/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "misc/services/camel/de-metas-camel-externalsystems/core/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "misc/services/camel/de-metas-camel-externalsystems/de-metas-camel-ebay/de-metas-camel-ebay-camelroutes/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "misc/services/camel/de-metas-camel-externalsystems/de-metas-camel-ebay/de-metas-camel-ebay-camelroutes/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "misc/services/camel/de-metas-camel-externalsystems/de-metas-camel-ebay/de-metas-camel-ebay-camelroutes/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "misc/services/camel/de-metas-camel-externalsystems/de-metas-camel-ebay/de-metas-camel-ebay-camelroutes/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "misc/services/camel/de-metas-camel-externalsystems/de-metas-camel-ebay/de-metas-camel-ebay-camelroutes/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "misc/services/camel/de-metas-camel-externalsystems/de-metas-camel-grssignum/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "misc/services/camel/de-metas-camel-externalsystems/de-metas-camel-grssignum/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "misc/services/camel/de-metas-camel-externalsystems/de-metas-camel-grssignum/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "misc/services/camel/de-metas-camel-externalsystems/de-metas-camel-leichundmehl/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "misc/services/camel/de-metas-camel-externalsystems/de-metas-camel-leichundmehl/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "misc/services/camel/de-metas-camel-externalsystems/de-metas-camel-leichundmehl/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "misc/services/camel/de-metas-camel-externalsystems/de-metas-camel-pcm-file-import/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "misc/services/camel/de-metas-camel-externalsystems/de-metas-camel-pcm-file-import/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "misc/services/camel/de-metas-camel-externalsystems/de-metas-camel-printingclient/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "misc/services/camel/de-metas-camel-externalsystems/de-metas-camel-printingclient/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "misc/services/camel/de-metas-camel-externalsystems/de-metas-camel-rabbitmq/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "misc/services/camel/de-metas-camel-externalsystems/de-metas-camel-rabbitmq/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "misc/services/camel/de-metas-camel-externalsystems/de-metas-camel-scriptedadapter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "misc/services/camel/de-metas-camel-externalsystems/de-metas-camel-scriptedadapter/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "misc/services/camel/de-metas-camel-externalsystems/de-metas-camel-scriptedadapter/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "misc/services/camel/de-metas-camel-externalsystems/de-metas-camel-shopware6/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "misc/services/camel/de-metas-camel-externalsystems/de-metas-camel-shopware6/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "misc/services/camel/de-metas-camel-externalsystems/de-metas-camel-woocommerce/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "misc/services/camel/de-metas-camel-externalsystems/de-metas-camel-woocommerce/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "misc/services/camel/de-metas-camel-externalsystems/de-metas-camel-woocommerce/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "misc/services/camel/de-metas-camel-externalsystems/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "misc/services/procurement-webui/procurement-webui-backend/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "misc/services/procurement-webui/procurement-webui-backend/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "misc/services/procurement-webui/procurement-webui-backend/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "misc/services/procurement-webui/procurement-webui-backend/pom.xml",
+      "artifact": "spring-boot-starter-mail"
+    },
+    {
+      "file": "misc/services/procurement-webui/procurement-webui-backend/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "misc/services/procurement-webui/procurement-webui-backend/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "misc/services/procurement-webui/procurement-webui-backend/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "misc/services/procurement-webui/procurement-webui-backend/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

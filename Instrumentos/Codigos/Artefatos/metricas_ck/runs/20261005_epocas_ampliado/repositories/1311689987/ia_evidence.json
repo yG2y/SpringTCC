@@ -1,0 +1,90 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 11,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "adfc8c36bfce3d89ba56e0730ffa9fa7fbd2ecbd",
+      "date": "2026-07-30T20:53:02+08:00",
+      "author": "tuyue",
+      "email": "1315379336@qq.com",
+      "message": "第11天，第12天，第13天学习教程\n"
+    },
+    {
+      "sha": "41d728e5ab155a7c67a1e313763e56234cb30e9a",
+      "date": "2026-07-29T07:15:10+08:00",
+      "author": "tuyue",
+      "email": "1315379336@qq.com",
+      "message": "hotfix: 解决升级高版本启动问题\n"
+    },
+    {
+      "sha": "2bf964b0617766f06b4baa37d86ab69cb80380c2",
+      "date": "2026-07-27T20:44:41+08:00",
+      "author": "tuyue",
+      "email": "1315379336@qq.com",
+      "message": "docs(arch): 添加 Planning Agent 架构设计文档和核心概念说明\n\n- 添加 ARCHITECTURE.md 文件，详细描述 Day10 Planning Agent 整体系统架构\n- 添加 BrowserTool 实现，支持抓取 GitHub Trending 页面 HTML\n- 添加 BudgetExceededException 异常类，用于预算护栏控制\n- 添加 chapter-01.md，说明 Planning Agent 的核心价值和为什么需要规划\n- 添加 chapter-02.md，详细解释 Planning 核心概念与状态机设计\n- 定义 Planner、Executor 分离架构，实现职责单一原则\n- 建立状态机驱动的任务生命周期管理机制\n- 设计反思与重规划流程，支持动态调整执行策略\n"
+    },
+    {
+      "sha": "b8aacd5156e81cdd5c74db14955ce7e2433f1b88",
+      "date": "2026-07-26T18:57:01+08:00",
+      "author": "tuyue",
+      "email": "1315379336@qq.com",
+      "message": "feat(day09browseragent): 添加浏览器智能体模块\n\n- 新增 Browser Agent 核心功能，支持自然语言驱动浏览器操作\n- 实现浏览器会话池管理，支持并发控制和资源复用\n- 添加完整的浏览器操作工具集，包括打开页面、点击、输入、截图等功能\n- 集成 Spring AI Tool Calling，实现 LLM 自主调用浏览器动作\n- 添加 TRANSLATOR 角色支持内容翻译功能\n- 提供 REST API 接口支持原子操作和自然语言任务处理\n- 实现浏览器配置管理，支持无头模式、视口设置、超时控制等参数\n- 添加架构设计文档说明分层架构和集成方式\n"
+    },
+    {
+      "sha": "59e538cb69fff7daf89f65b8d3664709a667a384",
+      "date": "2026-07-26T11:12:37+08:00",
+      "author": "tuyue",
+      "email": "1315379336@qq.com",
+      "message": "docs(memory): 添加架构文档并重构 README 内容\n\n- 新增 Day4 Memory 架构说明文档，详细描述分层架构和请求流程\n- 新增 Day5 RAG 架构说明文档，涵盖离线索引和在线问答数据流\n- 重构 Day4 README 内容，简化结构并突出核心学习目标\n- 更新教学框架描述，优化章节安排和面试重点\n- 添加完整的八章递进式学习路径规划\n"
+    },
+    {
+      "sha": "8a420423f9cce692e51101e26dfc2e5f67226b12",
+      "date": "2026-07-26T10:39:40+08:00",
+      "author": "tuyue",
+      "email": "1315379336@qq.com",
+      "message": "Merge remote-tracking branch 'origin/main'\n"
+    },
+    {
+      "sha": "813a8567c516b2dca9bec2f70118c6504a4e4fbc",
+      "date": "2026-07-26T10:25:17+08:00",
+      "author": "tuyue",
+      "email": "1315379336@qq.com",
+      "message": "chore(env): 更新项目基础环境至 JDK 21、Spring Boot 4.1.0、Spring AI 2.0\n"
+    },
+    {
+      "sha": "c4211392fc2dad8056801f45bae41655cf71ae72",
+      "date": "2026-07-26T09:55:59+08:00",
+      "author": "zeroai",
+      "email": "49847901+zeroai525@users.noreply.github.com",
+      "message": "Update issue templates"
+    },
+    {
+      "sha": "b2cb4da48659b50aee625d5857ec01ffa245f686",
+      "date": "2026-07-26T09:33:40+08:00",
+      "author": "tuyue",
+      "email": "1315379336@qq.com",
+      "message": "docs(readme): 更新项目文档完善学习路线和技术栈介绍\n\n- 添加了详细的项目简介和最终目标说明\n- 完善了技术栈表格包括语言框架和AI相关组件\n- 新增了完整的项目结构说明和目录组织\n- 补充了30天学习路线包含已完成和规划中的模块\n- 添加了快速开始指南和环境配置说明\n- 扩展了各模块详细功能说明和设计理念\n- 新增了适合人群和许可证信息\n"
+    },
+    {
+      "sha": "97fbba52e1b4c20e98107f70b7ffb5fedd5e1c59",
+      "date": "2026-07-26T09:19:05+08:00",
+      "author": "tuyue",
+      "email": "1315379336@qq.com",
+      "message": "init\n"
+    },
+    {
+      "sha": "5aea800c8b2aaef3ae9d80d657d5f7f1e063e4e5",
+      "date": "2026-07-25T13:29:43+08:00",
+      "author": "zerogo",
+      "email": "49847901+zerogo525@users.noreply.github.com",
+      "message": "Initial commit"
+    }
+  ],
+  "commit_sha": "adfc8c36bfce3d89ba56e0730ffa9fa7fbd2ecbd",
+  "extracted_at": "2026-10-05T18:36:52.820664+00:00"
+}

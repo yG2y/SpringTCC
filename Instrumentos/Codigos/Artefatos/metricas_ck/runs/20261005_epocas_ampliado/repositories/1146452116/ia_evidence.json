@@ -1,0 +1,25 @@
+{
+  "ia_status": "com_evidencia",
+  "ia_level": 1,
+  "ia_agents": "Claude Code",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 0,
+  "evidence": [
+    {
+      "agent": "Claude Code",
+      "type": "gitignore",
+      "path": ".gitignore",
+      "line": "CLAUDE.md"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "gitignore",
+      "path": ".gitignore",
+      "line": ".claude/skills/extract-test-sql/SKILL.md"
+    }
+  ],
+  "commits": [],
+  "commit_sha": "2bbc7278ba8ca6551fc732bd3b2a453db72372dc",
+  "extracted_at": "2026-10-05T18:26:29.974765+00:00"
+}

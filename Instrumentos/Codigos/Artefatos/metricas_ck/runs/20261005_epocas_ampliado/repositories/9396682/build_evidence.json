@@ -1,0 +1,56 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "4.0.1;4.0.8",
+  "spring_boot_major": "4",
+  "java_versions_declared": "17",
+  "build_evidence": [
+    {
+      "file": "complete-kotlin/build.gradle.kts",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "complete/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "complete/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "complete/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "complete/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "complete/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "initial-kotlin/build.gradle.kts",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "initial/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "initial/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "initial/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "initial/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "initial/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

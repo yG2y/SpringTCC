@@ -1,0 +1,24 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "4.0.5",
+  "spring_boot_major": "4",
+  "java_versions_declared": "17",
+  "build_evidence": [
+    {
+      "file": "jdwp-mcp-server/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "jdwp-mcp-server/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "jdwp-mcp-server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    }
+  ]
+}

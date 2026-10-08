@@ -1,3 +1,9 @@
+# Etapa CK com classificação IA (05/10/2026)
+
+A execução ampliada está documentada em [METODOLOGIA_AMOSTRA_AMPLIADA.md](METODOLOGIA_AMOSTRA_AMPLIADA.md): 1.520 candidatos fixados, oito células época × IA, classificação alinhada ao commit e CK identificado por hash. Use `analisar_ck.py collect` para extrair, `comparar_epocas.py` para o comparativo ampliado e `auditar_ampliacao.py` para verificar o resultado contra os arquivos brutos. `recuperar_ck.py` incorpora repetições documentadas de falhas de DNS com a mesma configuração científica.
+
+O piloto de 50 repositórios permanece preservado em [METODOLOGIA_METRICAS_CK.md](METODOLOGIA_METRICAS_CK.md). O comando antigo `analisar_ck.py report` descreve esse piloto; use o comparador específico para a ampliação. Os scripts e as versões abaixo documentam instrumentos e pilotos anteriores.
+
 # Analise de Metricas de Codigo - Repositorios Java
 
 Script Python para analise automatizada de metricas de qualidade de codigo dos top 10 repositorios Java do GitHub.

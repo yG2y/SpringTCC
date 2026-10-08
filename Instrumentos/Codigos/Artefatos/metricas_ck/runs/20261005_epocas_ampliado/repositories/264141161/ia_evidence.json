@@ -1,0 +1,254 @@
+{
+  "ia_status": "com_evidencia",
+  "ia_level": 2,
+  "ia_agents": "copilot-swe-agent",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [
+    {
+      "agent": "copilot-swe-agent",
+      "type": "author_identity",
+      "sha": "748c428ef6aba258df6082784c918f2f204e66e1",
+      "identity": "copilot-swe-agent[bot] 198982749+copilot@users.noreply.github.com"
+    },
+    {
+      "agent": "copilot-swe-agent",
+      "type": "author_identity",
+      "sha": "e3d710b3f557e9fa239c6ba86108e7640b7f1e69",
+      "identity": "copilot-swe-agent[bot] 198982749+copilot@users.noreply.github.com"
+    },
+    {
+      "agent": "copilot-swe-agent",
+      "type": "author_identity",
+      "sha": "f2ffa6f30dbd1232ae13dc555df80481645e9e3c",
+      "identity": "copilot-swe-agent[bot] 198982749+copilot@users.noreply.github.com"
+    },
+    {
+      "agent": "copilot-swe-agent",
+      "type": "author_identity",
+      "sha": "78e287bee404a5a305ae79edcea87e1956e92fc7",
+      "identity": "copilot-swe-agent[bot] 198982749+copilot@users.noreply.github.com"
+    },
+    {
+      "agent": "copilot-swe-agent",
+      "type": "author_identity",
+      "sha": "7849da8245fee8e64027bd76540443a6602e2098",
+      "identity": "copilot-swe-agent[bot] 198982749+copilot@users.noreply.github.com"
+    }
+  ],
+  "commits": [
+    {
+      "sha": "9463044836109882b90d4dc85e55af6a1819587b",
+      "date": "2025-11-10T01:02:00+08:00",
+      "author": "raohanxin01",
+      "email": "raohanxin01@corp.netease.com",
+      "message": "chore: update version to 1.2.0-alpha-3 in pom.xml and fix avatar retrieval in UserInfoController\n"
+    },
+    {
+      "sha": "674ac9548799db45c2e68fdbafc8778eef4620bb",
+      "date": "2025-11-10T00:41:31+08:00",
+      "author": "raohanxin01",
+      "email": "raohanxin01@corp.netease.com",
+      "message": "chore: update version to 1.2.0-alpha-2 in pom.xml\n"
+    },
+    {
+      "sha": "9af8799b52be50328683201ceaba988e1dc04cab",
+      "date": "2025-11-10T00:26:02+08:00",
+      "author": "raohanxin01",
+      "email": "raohanxin01@corp.netease.com",
+      "message": "feat: enhance user avatar handling in UserResource and UserInfoController\n"
+    },
+    {
+      "sha": "e4094fee42bb6b98fe7936b3f65866d2bb0a2cb3",
+      "date": "2025-11-08T21:57:13+08:00",
+      "author": "raohanxin01",
+      "email": "raohanxin01@corp.netease.com",
+      "message": "Merge remote-tracking branch 'origin/master'\n"
+    },
+    {
+      "sha": "3741224b00eb50577815ee19ebae825a116fa062",
+      "date": "2025-11-08T21:56:59+08:00",
+      "author": "raohanxin01",
+      "email": "raohanxin01@corp.netease.com",
+      "message": "[UPDATE] optimize build process in docker-image.yml\n"
+    },
+    {
+      "sha": "cb395ade7ac308292b95f960e13b437d99e768fc",
+      "date": "2025-11-08T21:52:00+08:00",
+      "author": "Hansin",
+      "email": "hansin@dustlight.cn",
+      "message": "Merge pull request #30 from dustlight-cn/copilot/support-oauth2-1-openid-connect\n\nAdd OAuth 2.1 PKCE and OpenID Connect support"
+    },
+    {
+      "sha": "6a61fdd9158d17dcf2ebe848cbe8d72fb27822fd",
+      "date": "2025-11-08T21:47:28+08:00",
+      "author": "raohanxin01",
+      "email": "raohanxin01@corp.netease.com",
+      "message": "chore: -\n"
+    },
+    {
+      "sha": "2b6cc1ac862b71e68528e06adde217a2f8ca3536",
+      "date": "2025-11-08T21:44:55+08:00",
+      "author": "raohanxin01",
+      "email": "raohanxin01@corp.netease.com",
+      "message": "feat: dependencies for OAuth2 and OpenID Connect support\n"
+    },
+    {
+      "sha": "748c428ef6aba258df6082784c918f2f204e66e1",
+      "date": "2025-11-08T04:41:59Z",
+      "author": "copilot-swe-agent[bot]",
+      "email": "198982749+Copilot@users.noreply.github.com",
+      "message": "Add comprehensive OAuth 2.1 and OIDC documentation\n\n- Add Chinese documentation (OAuth2.1-OIDC.md) with complete usage guide\n- Add English documentation (OAuth2.1-OIDC-EN.md) with complete usage guide\n- Update README.md to highlight new OAuth 2.1 and OIDC features\n- Include PKCE implementation examples in JavaScript\n- Document all OIDC endpoints and scopes\n- Add security recommendations\n\nCo-authored-by: Hansin1997 <21296198+Hansin1997@users.noreply.github.com>\n"
+    },
+    {
+      "sha": "e3d710b3f557e9fa239c6ba86108e7640b7f1e69",
+      "date": "2025-11-08T04:39:43Z",
+      "author": "copilot-swe-agent[bot]",
+      "email": "198982749+Copilot@users.noreply.github.com",
+      "message": "Integrate PKCE validation into authorization and token flow\n\n- Update AuthorizationController to capture and store PKCE parameters (code_challenge, code_challenge_method)\n- Create PkceAuthorizationCodeTokenGranter to validate code_verifier\n- Update AuthorizationServerConfiguration to use PKCE-aware token granter\n- Add OIDC issuer configuration in application.yaml\n- Complete OAuth 2.1 PKCE support for authorization code flow\n\nCo-authored-by: Hansin1997 <21296198+Hansin1997@users.noreply.github.com>\n"
+    },
+    {
+      "sha": "f2ffa6f30dbd1232ae13dc555df80481645e9e3c",
+      "date": "2025-11-08T04:36:38Z",
+      "author": "copilot-swe-agent[bot]",
+      "email": "198982749+Copilot@users.noreply.github.com",
+      "message": "Add OpenID Connect and OAuth 2.1 PKCE support\n\n- Add UserInfo endpoint (GET/POST /userinfo) for OIDC\n- Add OIDC Discovery endpoint (/.well-known/openid-configuration)\n- Add OpenID Connect claims to JWT tokens (sub, name, email, phone, etc.)\n- Add PKCE service for OAuth 2.1 authorization code flow\n- Create PKCE-aware authorization code service\n- Add support for profile, email, and phone scopes\n- Add support for code_challenge and code_verifier parameters\n\nCo-authored-by: Hansin1997 <21296198+Hansin1997@users.noreply.github.com>\n"
+    },
+    {
+      "sha": "78e287bee404a5a305ae79edcea87e1956e92fc7",
+      "date": "2025-11-08T04:31:07Z",
+      "author": "copilot-swe-agent[bot]",
+      "email": "198982749+Copilot@users.noreply.github.com",
+      "message": "Update Lombok to 1.18.34 for Java 17 compatibility\n\nCo-authored-by: Hansin1997 <21296198+Hansin1997@users.noreply.github.com>\n"
+    },
+    {
+      "sha": "7849da8245fee8e64027bd76540443a6602e2098",
+      "date": "2025-11-08T04:25:51Z",
+      "author": "copilot-swe-agent[bot]",
+      "email": "198982749+Copilot@users.noreply.github.com",
+      "message": "Initial plan\n"
+    },
+    {
+      "sha": "b0334f6bfd6bb9bde8fac9e70b1036c8e31d3993",
+      "date": "2022-01-25T18:19:24+08:00",
+      "author": "Hansin1997",
+      "email": "845612500@qq.com",
+      "message": "[UPDATE] docs\n"
+    },
+    {
+      "sha": "af1e5c9733fc6ccc2df0f1f331fd32a1e15a8449",
+      "date": "2022-01-20T15:20:37+08:00",
+      "author": "Hansin1997",
+      "email": "845612500@qq.com",
+      "message": "[UPDATE] package.json\n"
+    },
+    {
+      "sha": "d5fba85a32a4bebde75b38be7e429cdec734a9bb",
+      "date": "2021-11-05T16:48:19+08:00",
+      "author": "Hansin1997",
+      "email": "845612500@qq.com",
+      "message": "Merge remote-tracking branch 'origin/master'\n"
+    },
+    {
+      "sha": "3bd9b4d592aadc127c7f4dae35443e7a5df63008",
+      "date": "2021-10-22T19:56:42+08:00",
+      "author": "Hansin1997",
+      "email": "845612500@qq.com",
+      "message": "修复通过客户端凭据获取JWT的问题。\n"
+    },
+    {
+      "sha": "99bdc141308bfe19d078c08d2b471c879b119693",
+      "date": "2021-08-31T18:26:05+08:00",
+      "author": "Hansin1997",
+      "email": "845612500@qq.com",
+      "message": "修复获取用户应用翻页问题。\n"
+    },
+    {
+      "sha": "35a284fe525fec2cfbc8c41b1b05e364b547f5db",
+      "date": "2021-08-30T12:00:46+08:00",
+      "author": "Hansin1997",
+      "email": "845612500@qq.com",
+      "message": "AccessToken 增加 member 属性，以快速判断当前用户是否应用的成员或所有者。\n"
+    },
+    {
+      "sha": "db17679f9f0154f53805959c5680f8c9cc2354cc",
+      "date": "2021-08-30T10:55:51+08:00",
+      "author": "Hansin1997",
+      "email": "845612500@qq.com",
+      "message": "允许读取用户创建或管理的应用。\n"
+    },
+    {
+      "sha": "f56b3dd7e8557574788813c93fbfd248754b0132",
+      "date": "2021-08-30T10:32:28+08:00",
+      "author": "Hansin",
+      "email": "845612500@qq.com",
+      "message": "Merge pull request #24 from dustlight-cn/1.1.1-alpha\n\n更正用户信息更新的按钮 style。"
+    },
+    {
+      "sha": "51fec0ef32ccaa9193c25a732b4dba10d2def2a4",
+      "date": "2021-08-30T10:31:38+08:00",
+      "author": "Hansin1997",
+      "email": "845612500@qq.com",
+      "message": "更正用户信息更新的按钮 style。\n"
+    },
+    {
+      "sha": "dd5cbb8c3abdb5e9496de7c1954efccb6ef53edc",
+      "date": "2021-08-30T09:56:41+08:00",
+      "author": "Hansin",
+      "email": "845612500@qq.com",
+      "message": "Merge pull request #23 from dustlight-cn/1.1.1-alpha\n\n1.1.1 alpha"
+    },
+    {
+      "sha": "ae228798cbb4821322cebb87609d01b72ea94722",
+      "date": "2021-08-30T09:55:49+08:00",
+      "author": "Hansin1997",
+      "email": "845612500@qq.com",
+      "message": "修复 reCAPTCHA 被遮挡问题，上一次修复导致 Footer 无法被点击。\n"
+    },
+    {
+      "sha": "49bf185ef79480b74b1e0d21099c0c23258cb083",
+      "date": "2021-08-30T09:48:51+08:00",
+      "author": "Hansin1997",
+      "email": "845612500@qq.com",
+      "message": "-\n"
+    },
+    {
+      "sha": "db413382f07f50bc1eb34beb99c1d603e0d0be80",
+      "date": "2021-08-28T14:35:51+08:00",
+      "author": "Hansin",
+      "email": "845612500@qq.com",
+      "message": "Merge pull request #22 from dustlight-cn/1.1.1-alpha\n\n1.1.1 alpha"
+    },
+    {
+      "sha": "3b9e175f0644454877c33707a44190bddf90a6fa",
+      "date": "2021-08-28T14:27:13+08:00",
+      "author": "Hansin1997",
+      "email": "845612500@qq.com",
+      "message": "修复 reCAPTCHA 隐私提醒被 Footer 遮挡问题。\n"
+    },
+    {
+      "sha": "0be51db2b8baa80d65da7f474a85f6da19578aa1",
+      "date": "2021-08-28T14:26:36+08:00",
+      "author": "Hansin1997",
+      "email": "845612500@qq.com",
+      "message": "🔑 增加重置密码的方式：通过手机找回密码\n"
+    },
+    {
+      "sha": "7fcaac8beb60b6ba9bb78b60b23762e38bdf656d",
+      "date": "2021-08-27T16:49:18+08:00",
+      "author": "Hansin",
+      "email": "845612500@qq.com",
+      "message": "Merge pull request #21 from dustlight-cn/1.1.1-alpha\n\n📧 SMS Config"
+    },
+    {
+      "sha": "2ea1a4b84f6b1b5754025747498079db219532db",
+      "date": "2021-08-27T16:48:47+08:00",
+      "author": "Hansin1997",
+      "email": "845612500@qq.com",
+      "message": "📧 SMS Config\n"
+    }
+  ],
+  "commit_sha": "9463044836109882b90d4dc85e55af6a1819587b",
+  "extracted_at": "2026-10-05T18:17:10.940842+00:00"
+}

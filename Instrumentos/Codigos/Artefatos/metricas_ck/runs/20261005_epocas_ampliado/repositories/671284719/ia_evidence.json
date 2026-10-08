@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "9a2e793970065a6aa3d02a0d756ee15395947735",
+      "date": "2026-09-25T04:17:41+08:00",
+      "author": "hamm",
+      "email": "admin@hamm.cn",
+      "message": "chore(version): 更新项目版本号从8.0.0到8.0.1\n\n- 更新主pom.xml中的版本号\n- 更新airpower-ai模块的版本号\n- 更新airpower-api模块的版本号\n- 更新airpower-cookie模块的版本号\n- 更新airpower-curd模块的版本号\n- 更新airpower-email模块的版本号\n- 更新airpower-exception模块的版本号\n- 更新airpower-file模块的版本号\n- 更新airpower-mqtt模块的版本号\n- 更新airpower-open模块的版本号\n- 更新airpower-redis模块的版本号\n- 更新airpower-websocket模块的版本号\n\nSigned-off-by: hamm <admin@hamm.cn>\n"
+    },
+    {
+      "sha": "7fb7d089401da7de37f270c052f393b6ea9e4efa",
+      "date": "2026-09-25T04:12:20+08:00",
+      "author": "hamm",
+      "email": "admin@hamm.cn",
+      "message": "refactor(log): 重构请求响应日志记录功能\n\n- 移除旧的请求头日志记录方式，改用配置化请求头列表\n- 删除冗余的IP地址获取逻辑和单独的日志打印方法\n- 合并请求和响应日志为统一的结构化日志输出\n- 新增请求头过滤配置支持，只记录指定的请求头信息\n- 优化日志格式为JSON结构，便于日志解析和检索\n- 统一请求响应日志打印接口，提升代码可维护性\n\nSigned-off-by: hamm <admin@hamm.cn>\n"
+    },
+    {
+      "sha": "2b776fca0e12adb85e11e3dcbc46a301c8830102",
+      "date": "2026-09-23T15:35:48+08:00",
+      "author": "Hamm",
+      "email": "admin@hamm.cn",
+      "message": "chore(version): 升级项目版本从 7.6.0 到 8.0.0\n\n- 更新 airpower-ai 模块版本到 8.0.0\n- 更新 airpower-api 模块版本到 8.0.0\n- 更新 airpower-cookie 模块版本到 8.0.0\n- 更新 airpower-curd 模块版本到 8.0.0\n- 更新 airpower-email 模块版本到 8.0.0\n- 更新 airpower-exception 模块版本到 8.0.0\n- 更新 airpower-file 模块版本到 8.0.0\n- 更新 airpower-mqtt 模块版本到 8.0.0\n- 更新 airpower-open 模块版本到 8.0.0\n- 更新 airpower-redis 模块版本到 8.0.0\n- 更新 airpower-websocket 模块版本到 8.0.0\n- 更新主 pom 版本和属性配置到 8.0\n"
+    },
+    {
+      "sha": "9e3e1da2e563a17d822848699ab890a659c289a0",
+      "date": "2026-09-23T15:33:23+08:00",
+      "author": "Hamm",
+      "email": "admin@hamm.cn",
+      "message": "chore(deps): 更新 airpower-core 依赖版本\n\n- 将 airpower-core 版本从 6.7.0 升级到 7.0.0\n- 保持项目主版本号 7.6.0 不变\n"
+    },
+    {
+      "sha": "5466b3150486ca89c0adf13b8660a9baaecf2dac",
+      "date": "2026-09-23T15:24:40+08:00",
+      "author": "Hamm",
+      "email": "admin@hamm.cn",
+      "message": "refactor(websocket): 优化 WebSocket 连接和断开逻辑\n\n- 移除不再使用的 TaskUtil 导入\n- 简化连接成功后的异步处理逻辑\n- 直接调用连接后处理方法替代异步任务\n- 移除断开连接时的异步处理包装\n- 修正连接成功的日志消息格式\n- 优化导出辅助类中的异步任务调用方式\n"
+    },
+    {
+      "sha": "2b4bd0725293f864d14714efb19e16829866d3cb",
+      "date": "2026-09-23T15:10:11+08:00",
+      "author": "Hamm",
+      "email": "admin@hamm.cn",
+      "message": "refactor(curd): 移除 TransactionHelper 中的 TaskUtil 依赖\n\n- 删除了 TaskUtil 的导入语句\n- 移除了两个 run 方法中的 @apiNote 注释\n- 简化了事务辅助类的功能实现\n- 降低了代码间的耦合度\n- 提高了代码的简洁性和可维护性\n"
+    },
+    {
+      "sha": "5bacf569b6ec538912bbe505007086effde4c450",
+      "date": "2026-09-23T15:08:15+08:00",
+      "author": "Hamm",
+      "email": "admin@hamm.cn",
+      "message": "refactor(curd): 重构CURD服务以使用事务助手\n\n- 移除TaskUtil依赖并替换为transactionHelper进行事务管理\n- 将所有数据库操作包装在事务中确保数据一致性\n- 重构add、delete、update等方法使用新的事务机制\n- 添加事务助手类支持函数式编程接口\n- 统一异常处理和回滚机制实现原子性操作\n"
+    },
+    {
+      "sha": "c7c54c6a4c689c1262b744c2ee14412695b8f50d",
+      "date": "2026-09-23T14:47:03+08:00",
+      "author": "Hamm",
+      "email": "admin@hamm.cn",
+      "message": "refactor(curd): 移除异步任务工具依赖并清理后置方法\n\n- 移除了 TaskUtil 的导入和相关调用\n- 删除了 afterAdd、afterUpdate、afterSaved、afterDelete、afterDisable、afterEnable 后置方法\n- 移除了相关的 JavaDoc 注释和 API 引用\n- 简化了控制器中添加、修改、删除、启用和禁用方法的实现逻辑\n"
+    },
+    {
+      "sha": "bec56efcc3a0c3902d1103028dce8761e7474e1a",
+      "date": "2026-09-23T13:23:39+08:00",
+      "author": "Hamm",
+      "email": "admin@hamm.cn",
+      "message": "chore(version): 升级项目版本从7.5.0到7.6.0\n\n- 更新airpower-ai模块版本号为7.6.0\n- 更新airpower-api模块版本号为7.6.0\n- 更新airpower-cookie模块版本号为7.6.0\n- 更新airpower-curd模块版本号为7.6.0\n- 更新airpower-email模块版本号为7.6.0\n- 更新airpower-exception模块版本号为7.6.0\n- 更新airpower-file模块版本号为7.6.0\n- 更新airpower-mqtt模块版本号为7.6.0\n- 更新airpower-open模块版本号为7.6.0\n- 更新airpower-redis模块版本号为7.6.0\n- 更新airpower-websocket模块版本号为7.6.0\n- 更新主pom文件版本号和airpower.version属性为7.6.0\n"
+    },
+    {
+      "sha": "17300cf029855caf31e6f0f864a51dc6c44afd48",
+      "date": "2026-09-23T13:19:03+08:00",
+      "author": "Hamm",
+      "email": "admin@hamm.cn",
+      "message": "refactor(cache): 更新缓存键前缀命名规范\n\n- 将导出任务缓存前缀从 EXPORT_CACHE_PREFIX 修改为 EXPORT_TASK_KEY_PREFIX\n- 将防重放缓存前缀从 NONCE_CACHE_PREFIX 修改为 open:nonce: 格式\n- 统一使用冒号分隔的 Redis 键命名规范以提高可读性\n"
+    },
+    {
+      "sha": "04acccd97edb088050dc05ddaddfa6c8d436d11f",
+      "date": "2026-09-22T16:04:13+08:00",
+      "author": "Hamm",
+      "email": "admin@hamm.cn",
+      "message": "chore(version): 升级项目版本号从7.4.0到7.5.0\n\n- 更新airpower-ai模块版本号为7.5.0\n- 更新airpower-api模块版本号为7.5.0\n- 更新airpower-cookie模块版本号为7.5.0\n- 更新airpower-curd模块版本号为7.5.0\n- 更新airpower-email模块版本号为7.5.0\n- 更新airpower-exception模块版本号为7.5.0\n- 更新airpower-file模块版本号为7.5.0\n- 更新airpower-mqtt模块版本号为7.5.0\n- 更新airpower-open模块版本号为7.5.0\n- 更新airpower-redis模块版本号为7.5.0\n- 更新airpower-websocket模块版本号为7.5.0\n- 更新主pom文件版本号为7.5.0并同步airpower.version属性\n"
+    },
+    {
+      "sha": "974978553781d0815283be14934e8a505edb46d4",
+      "date": "2026-09-22T15:57:36+08:00",
+      "author": "Hamm",
+      "email": "admin@hamm.cn",
+      "message": "fix(bugs): 修复了一些已知的BUG\n"
+    },
+    {
+      "sha": "1d8ec582bfdc8601588e4f54b533245e233d03dc",
+      "date": "2026-09-22T15:48:18+08:00",
+      "author": "Hamm",
+      "email": "admin@hamm.cn",
+      "message": "chore(version): 升级项目版本号从7.3.0到7.4.0\n\n- 更新airpower-ai模块版本号到7.4.0\n- 更新airpower-api模块版本号到7.4.0\n- 更新airpower-cookie模块版本号到7.4.0\n- 更新airpower-curd模块版本号到7.4.0\n- 更新airpower-email模块版本号到7.4.0\n- 更新airpower-exception模块版本号到7.4.0\n- 更新airpower-file模块版本号到7.4.0\n- 更新airpower-mqtt模块版本号到7.4.0\n- 更新airpower-open模块版本号到7.4.0\n- 更新airpower-redis模块版本号到7.4.0\n- 更新airpower-websocket模块版本号到7.4.0\n- 更新主pom文件版本号到7.4.0\n- 更新airpower.version属性值到7.4.0\n"
+    },
+    {
+      "sha": "19ced4ecaa5d8407c8572f066f4763828c55714f",
+      "date": "2026-09-22T15:45:56+08:00",
+      "author": "Hamm",
+      "email": "admin@hamm.cn",
+      "message": "refactor(file): 重构文件平台工厂抽象类并更新实现\n\n- 创建 AbstractFilePlatformFactory 抽象类作为文件平台基类\n- 将 IFilePlatform 接口替换为 AbstractFilePlatformFactory 继承结构\n- 更新阿里云OSS实现类继承新的抽象工厂类\n- 更新腾讯云COS实现类继承新的抽象工厂类\n- 创建本地文件实现类 LocalFileHelper 继承抽象工厂类\n- 重命名相关类文件以匹配新的实现命名规范\n- 统一文件上传、保存、删除等核心方法的参数类型\n- 移除原有的 IFilePlatform 接口定义\n- 优化文件操作的核心流程和异常处理机制\n"
+    },
+    {
+      "sha": "79836db92c33ca9bd92029af5cab406e83bd00d2",
+      "date": "2026-09-22T12:11:13+08:00",
+      "author": "Hamm",
+      "email": "admin@hamm.cn",
+      "message": "chore(version): 升级项目版本号从7.2.0到7.3.0\n\n- 更新airpower-ai模块版本号为7.3.0\n- 更新airpower-api模块版本号为7.3.0\n- 更新airpower-cookie模块版本号为7.3.0\n- 更新airpower-curd模块版本号为7.3.0\n- 更新airpower-email模块版本号为7.3.0\n- 更新airpower-exception模块版本号为7.3.0\n- 更新airpower-file模块版本号为7.3.0\n- 更新airpower-mqtt模块版本号为7.3.0\n- 更新airpower-open模块版本号为7.3.0\n- 更新airpower-redis模块版本号为7.3.0\n- 更新airpower-websocket模块版本号为7.3.0\n- 更新主pom文件版本号为7.3.0\n- 更新airpower.version属性值为7.3.0\n"
+    },
+    {
+      "sha": "13728fe24695f2fdb4d1d231c8d1a426fc046086",
+      "date": "2026-09-22T12:09:51+08:00",
+      "author": "Hamm",
+      "email": "admin@hamm.cn",
+      "message": "refactor(file): 重构文件存储平台注册机制\n\n- 移除 IFilePlatform 接口的 getKey 方法实现\n- 添加 FilePlatform 注解用于标记文件存储平台\n- 修改 AliyunOss、LocalFile、TencentCloudCos 使用 FilePlatform 注解\n- 在 FileHelper 中实现多平台自动注册和管理\n- 添加默认文件存储平台配置选项\n- 通过平台标识动态获取对应文件存储平台实例\n"
+    },
+    {
+      "sha": "91bb56ac72e17f3f7a7b44910dad941eb9821493",
+      "date": "2026-09-22T01:06:41+08:00",
+      "author": "hamm",
+      "email": "admin@hamm.cn",
+      "message": "chore(version): 升级项目版本号从7.1.0到7.2.0\n\n- 更新airpower-ai模块版本号\n- 更新airpower-api模块版本号\n- 更新airpower-cookie模块版本号\n- 更新airpower-curd模块版本号\n- 更新airpower-email模块版本号\n- 更新airpower-exception模块版本号\n- 更新airpower-file模块版本号\n- 更新airpower-mqtt模块版本号\n- 更新airpower-open模块版本号\n- 更新airpower-redis模块版本号\n- 更新airpower-websocket模块版本号\n- 更新根pom.xml中的项目版本号和属性配置\n"
+    },
+    {
+      "sha": "863f6b3cfe42779884b42747ed365659d008d572",
+      "date": "2026-09-22T01:03:01+08:00",
+      "author": "hamm",
+      "email": "admin@hamm.cn",
+      "message": "refactor(file): 重构文件存储平台初始化逻辑\n\n- 移除 LocalFile 的自动装配依赖\n- 删除本地文件平台的默认实例注入\n- 修改平台属性初始化方式，改为动态设置\n- 简化文件助手类的构造函数逻辑\n- 提高文件存储平台的可扩展性\n- 优化代码结构减少不必要的依赖注入\n"
+    },
+    {
+      "sha": "2d5ebb2ea5d9dfff0c095b54e5b43320451ef2cd",
+      "date": "2026-09-22T00:58:35+08:00",
+      "author": "hamm",
+      "email": "admin@hamm.cn",
+      "message": "refactor(file): 重构文件平台接口和腾讯云COS实现\n\n- 修改 IFilePlatform 接口的 getUrl 方法，添加过期时间参数\n- 重命名 TencentCloudOss 为 TencentCloudCos 并更新相关配置类\n- 更新腾讯云COS实现中的配置属性名称和客户端调用逻辑\n- 删除废弃的 FilePlatform 枚举类\n- 移除 FileHelper 中的冗余 getUrl 方法实现\n"
+    },
+    {
+      "sha": "f38460c7c4ced6b416c5e3b0d8ce4030e8f4a851",
+      "date": "2026-09-22T00:42:02+08:00",
+      "author": "hamm",
+      "email": "admin@hamm.cn",
+      "message": "refactor(file): 重构文件平台配置结构\n\n- 将阿里云OSS配置从FileConfig中分离到独立的AliyunOssConfig类\n- 将腾讯云OSS配置从FileConfig中分离到独立的TencentCloudOssConfig类\n- 将本地文件配置从FileConfig中分离到独立的LocalFileConfig类\n- 重新组织包结构，将各个平台实现移动到对应子包中\n- 修改FileHelper中的平台选择逻辑，改为直接注入平台实例\n- 为各个文件平台实现添加getKey方法以统一标识\n- 删除原有的集中式FileConfig配置类中的平台相关字段\n- 更新文件平台的包导入路径和依赖注入方式\n"
+    },
+    {
+      "sha": "e738f723657b8f9be7db38e6f9c1511ef34c7be3",
+      "date": "2026-09-10T18:24:22+08:00",
+      "author": "Hamm",
+      "email": "admin@hamm.cn",
+      "message": "chore(version): 升级项目版本从7.0.0到7.1.0\n\n- 更新父POM版本为7.1.0\n- 更新airpower-ai模块版本为7.1.0\n- 更新airpower-api模块版本为7.1.0\n- 更新airpower-cookie模块版本为7.1.0\n- 更新airpower-curd模块版本为7.1.0\n- 更新airpower-email模块版本为7.1.0\n- 更新airpower-exception模块版本为7.1.0\n- 更新airpower-file模块版本为7.1.0\n- 更新airpower-mqtt模块版本为7.1.0\n- 更新airpower-open模块版本为7.1.0\n- 更新airpower-redis模块版本为7.1.0\n- 更新airpower-websocket模块版本为7.1.0\n- 更新airpower.version属性为7.1.0\n"
+    },
+    {
+      "sha": "424e0688fbe27d3099391710e54a6516d6499de1",
+      "date": "2026-09-10T18:18:52+08:00",
+      "author": "Hamm",
+      "email": "admin@hamm.cn",
+      "message": "feat(interceptor): 增强请求日志记录功能\n\n- 添加 RequestUtil 工具类导入以获取客户端IP地址\n- 实现IP地址获取并在请求日志中显示\n- 添加异常捕获机制防止IP获取失败影响正常流程\n- 在响应拦截器中增加请求头信息记录\n- 记录授权、来源和用户代理等关键请求头信息\n- 添加请求头获取的异常处理机制\n"
+    },
+    {
+      "sha": "d11ac2776368dc34c97d72d261053b6d9226d120",
+      "date": "2026-08-12T18:51:34+08:00",
+      "author": "Hamm",
+      "email": "majhamm@qq.com",
+      "message": "fix(bugs): 修复了一些已知的BUG\n"
+    },
+    {
+      "sha": "7c29791be708d1b08cda46346b03dcd0c8c0975d",
+      "date": "2026-08-12T18:49:06+08:00",
+      "author": "Hamm",
+      "email": "majhamm@qq.com",
+      "message": "chore(deps): 更新 airpower-core 依赖版本\n\n- 将 airpower-core 版本从 6.6.0 升级到 6.7.0\n"
+    },
+    {
+      "sha": "0ece9aa1dab0c4bda2d6ee175daef5c6e70c797f",
+      "date": "2026-08-12T18:19:08+08:00",
+      "author": "Hamm",
+      "email": "majhamm@qq.com",
+      "message": "fix(bugs): 修复了一些已知的BUG\n"
+    },
+    {
+      "sha": "be4f72869d78c7782b781b26e1c381621a0a4b4c",
+      "date": "2026-08-12T18:15:42+08:00",
+      "author": "Hamm",
+      "email": "majhamm@qq.com",
+      "message": "chore(deps): 更新 airpower-core 依赖版本\n\n- 将 airpower-core 版本从 6.5.0 升级到 6.6.0\n- 保持项目整体版本配置一致\n"
+    },
+    {
+      "sha": "575445e64081726bee7a9ce60c2579eb72a7c16e",
+      "date": "2026-08-12T15:47:28+08:00",
+      "author": "Hamm",
+      "email": "majhamm@qq.com",
+      "message": "feat(core): 升级项目版本从6.7.1到6.8.0\n\n- 更新airpower-ai模块版本至6.8.0\n- 更新airpower-api模块版本至6.8.0\n- 更新airpower-cookie模块版本至6.8.0\n- 更新airpower-curd模块版本至6.8.0\n- 更新airpower-email模块版本至6.8.0\n- 更新airpower-exception模块版本至6.8.0\n- 更新airpower-file模块版本至6.8.0\n- 更新airpower-mqtt模块版本至6.8.0\n- 更新airpower-open模块版本至6.8.0\n- 更新airpower-redis模块版本至6.8.0\n- 更新airpower-websocket模块版本至6.8.0\n- 更新主pom.xml中的airpower.version属性至6.8.0\n"
+    },
+    {
+      "sha": "9af7861715a07981e768056e76358ba8f4852adf",
+      "date": "2026-08-12T15:42:20+08:00",
+      "author": "Hamm",
+      "email": "majhamm@qq.com",
+      "message": "chore(deps): 更新 airpower-core 依赖版本\n\n- 将 airpower-core 版本从 6.4.0 升级到 6.5.0\n- 保持项目主版本号 6.7.1 不变\n"
+    },
+    {
+      "sha": "e81798378b3fb9d2c0bd6cd25ac8c564805d1e1b",
+      "date": "2026-08-10T16:59:39+08:00",
+      "author": "Hamm",
+      "email": "majhamm@qq.com",
+      "message": "chore(version): 更新项目版本到 6.7.1\n\n- 将主 pom.xml 中的版本从 6.7.0 更新到 6.7.1\n- 更新 airpower-ai 模块版本到 6.7.1\n- 更新 airpower-api 模块版本到 6.7.1\n- 更新 airpower-cookie 模块版本到 6.7.1\n- 更新 airpower-curd 模块版本到 6.7.1\n- 更新 airpower-email 模块版本到 6.7.1\n- 更新 airpower-exception 模块版本到 6.7.1\n- 更新 airpower-file 模块版本到 6.7.1\n- 更新 airpower-mqtt 模块版本到 6.7.1\n- 更新 airpower-open 模块版本到 6.7.1\n- 更新 airpower-redis 模块版本到 6.7.1\n- 更新 airpower-websocket 模块版本到 6.7.1\n- 更新 server 模块依赖的父版本到 6.7.1\n"
+    },
+    {
+      "sha": "1d27d7317931738f84512241fa833b7a65f9fdc3",
+      "date": "2026-08-10T16:55:05+08:00",
+      "author": "Hamm",
+      "email": "majhamm@qq.com",
+      "message": "docs(ai): 添加 airpower-ai 模块使用文档\n\n- 新增 airpower-ai 模块详细介绍，包含 OpenAI 兼容协议的同步/流式对话功能\n- 添加 MCP 工具注册与调用功能说明，支持 Model Context Protocol JSON-RPC 2.0 服务端实现\n- 提供大模型同步调用和流式调用的使用示例，包括 Ai.request 和 Ai.requestStream 方法\n- 添加 MCP 工具协议使用指南，包含工具扫描、方法编写和 JSON-RPC 入口暴露说明\n- 提供详细的配置选项说明，包括 airpower.ai.url、key、model 等参数配置\n- 添加关键类参考和常见问题解答，便于开发者快速上手和排查问题\n\ndocs(api): 添加 airpower-api 模块使用文档\n\n- 新增 airpower-api 模块功能介绍，提供 @Api 控制器注解和控制器根类 ApiController\n- 添加 RESTful 控制器标记说明，包含 @Api 注解的使用方式\n- 提供获取当前登录用户功能说明，包括 getCurrentUserId 和 getCurrentUserVerifiedToken 方法\n- 添加 RequestUtil 工具方法介绍，包含 IP 解析、上传请求判断等功能\n- 提供应用配置说明，包括请求日志、响应日志、TraceId 等配置选项\n\ndocs(cookie): 添加 airpower-cookie 模块使用文档\n\n- 新增 airpower-cookie 模块介绍，统一封装 Cookie 的创建和安全属性配置\n- 提供 CookieHelper 使用说明，简化 HttpOnly、Secure、Path、MaxAge 等安全字段的统一约定\n- 添加应用配置说明，包含 Cookie 路径、有效期、安全设置等参数\n- 提供实际使用示例，展示如何构建认证 Cookie 和自定义 Cookie\n\ndocs(curd): 添加 airpower-curd 模块使用文档\n\n- 新增 airpower-curd 模块详细介绍，提供通用增删改查的基础组件体系\n- 添加 CURD 体系核心组件说明，包含实体基类、仓库接口、服务基类和控制器基类\n- 提供完整的业务模块定义示例，包含实体、仓库、服务和控制器的实现\n- 添加 Query 模型使用说明，支持分页和不分页查询功能\n- 提供异步导出功能说明，包含 export 和 queryExport 接口使用方式\n- 添加权限控制和拦截器链介绍，支持 RBAC 权限体系集成\n\ndocs(email): 添加 airpower-email 模块使用文档\n\n- 新增 airpower-email 模块介绍，基于 Spring JavaMailSender 的邮件发送助手\n- 提供两种邮件发送方式说明，包含自定义富文本邮件和验证码邮件发送\n- 添加 SMTP 配置说明，包含 host、port、username、password 等必要配置项\n- 提供验证码邮件模板效果展示，包含 HTML 格式和样式说明\n\ndocs(exception): 添加 airpower-exception 模块使用文档\n\n- 新增 airpower-exception 模块介绍，提供统一错误码字典与异常处理框架\n- 添加 Errors 错误码速查表，涵盖 4xx/5xx 全量业务错误码说明\n- 提供 IException 接口说明，支持业务异常枚举的链式判定能力\n- 添加常见错误码含义说明，包含参数校验、权限控制、数据操作等场景\n"
+    }
+  ],
+  "commit_sha": "9a2e793970065a6aa3d02a0d756ee15395947735",
+  "extracted_at": "2026-10-05T18:04:22.039762+00:00"
+}

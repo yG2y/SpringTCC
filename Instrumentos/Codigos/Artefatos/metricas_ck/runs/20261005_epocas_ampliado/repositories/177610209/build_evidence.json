@@ -1,0 +1,48 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "3.4.3",
+  "spring_boot_major": "3",
+  "java_versions_declared": "21",
+  "build_evidence": [
+    {
+      "file": "employee-reactive-service/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "employee-reactive-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "employee-reactive-service/pom.xml",
+      "artifact": "spring-boot-starter-data-elasticsearch"
+    },
+    {
+      "file": "employee-reactive-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "employee-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "employee-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "employee-service/pom.xml",
+      "artifact": "spring-boot-starter-data-elasticsearch"
+    },
+    {
+      "file": "employee-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

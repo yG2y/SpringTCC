@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "f455720d575e53e4d357ee248b05f34ce7842c24",
+      "date": "2024-03-25T22:09:36+04:00",
+      "author": "Danila Ponomarev",
+      "email": "122204427+Eann1S@users.noreply.github.com",
+      "message": "Merge pull request #38 from Eann1S/bugfix\n\nBugfix"
+    },
+    {
+      "sha": "ae808ead8d7cdf658557691ec62d07315234e52d",
+      "date": "2024-03-25T22:06:02+04:00",
+      "author": "Danila Ponomarev",
+      "email": "122204427+Eann1S@users.noreply.github.com",
+      "message": "Merge branch 'fork-code-camp:main' into bugfix\n"
+    },
+    {
+      "sha": "73b3f555773a05484c31586d6e20435c0343a356",
+      "date": "2023-07-24T17:33:36+04:00",
+      "author": "Eann1S",
+      "email": "122204427+Eann1S@users.noreply.github.com",
+      "message": "Bugfix pull request (#37)\n\n* [Refactor] change username filter in profile controller from request body to request param\n\n* [Bugfix] fixed data inconsistency in cache, when profile or tweet has been updated or deleted, but not in cache\n[Refactor] minor refactorings"
+    },
+    {
+      "sha": "6ce75fb4af0a0c23eb66c5095fc11e7c1aa70b2f",
+      "date": "2023-07-23T12:27:24+04:00",
+      "author": "Eann1S",
+      "email": "danilio.ponomarev7766@gmail.com",
+      "message": "[Bugfix] fixed data inconsistency in cache, when profile or tweet has been updated or deleted, but not in cache\n[Refactor] minor refactorings\n"
+    },
+    {
+      "sha": "65fcd466d701cdcd9deaf90808e0ee432ceb9549",
+      "date": "2023-07-21T20:49:25+04:00",
+      "author": "Eann1S",
+      "email": "danilio.ponomarev7766@gmail.com",
+      "message": "[Refactor] change username filter in profile controller from request body to request param\n"
+    },
+    {
+      "sha": "2bb148382a6c5f374ac6ae9b0f7e2f2e3d1d6e1f",
+      "date": "2023-07-21T12:34:13+04:00",
+      "author": "Eann1S",
+      "email": "danilio.ponomarev7766@gmail.com",
+      "message": "[Refactor] update tweet response in all services\n"
+    },
+    {
+      "sha": "e2c799bd79a301c10c375662b163ceeb5e779d2d",
+      "date": "2023-07-20T23:41:11+04:00",
+      "author": "Eann1S",
+      "email": "danilio.ponomarev7766@gmail.com",
+      "message": "[Refactor] change cache strategy; now all tweets,retweets,replies and profiles are cached, but for only 12 hours\n[Refactor] refactor tests to fit the changes\n[Refactor] update docker compose and readme files\n"
+    },
+    {
+      "sha": "7e27afc781c353b08882ee8500a29658169c9391",
+      "date": "2023-07-19T22:34:02+04:00",
+      "author": "Eann1S",
+      "email": "danilio.ponomarev7766@gmail.com",
+      "message": "[Refactor] update versions\n"
+    },
+    {
+      "sha": "eba68da205430378dd9e4ef9f27b2ecd84b9a949",
+      "date": "2023-07-19T22:30:44+04:00",
+      "author": "Eann1S",
+      "email": "danilio.ponomarev7766@gmail.com",
+      "message": "[Feature] add API to retrieve profile's banner\n"
+    },
+    {
+      "sha": "3831311118d3206823ec74ca324848f1cd163568",
+      "date": "2023-07-19T22:25:38+04:00",
+      "author": "Eann1S",
+      "email": "danilio.ponomarev7766@gmail.com",
+      "message": "[Feature] implement asynchronous processing for messages from kafka\n"
+    },
+    {
+      "sha": "09b490a0afedc3789851fa9577fbc0d10a82ca5a",
+      "date": "2023-07-18T22:49:07+04:00",
+      "author": "Eann1S",
+      "email": "danilio.ponomarev7766@gmail.com",
+      "message": "[Bugfix] fix bug when profile data wasn't updated in timeline\n[Refactor] refactor APIs for tweet and timeline services\n[Refactor] refactor representation of entities in cache, now there are IDs instead of entities themselves\n[Refactor] update docker compose file\n"
+    },
+    {
+      "sha": "ad99fd07a740a9a74b67b7b1fa0a2087a370741e",
+      "date": "2023-07-18T21:32:29+04:00",
+      "author": "Eann1S",
+      "email": "danilio.ponomarev7766@gmail.com",
+      "message": "[Refactor] Add jvm flags to jib plugin configuration, which provide less memory usage by containers and faster start up\n[Refactor] Add new TestContainers annotation for base class along with Container annotation for each container in tests, so that now they are starting faster\n"
+    },
+    {
+      "sha": "0e1b83d80a7b2a4180b10b08500e083731994b55",
+      "date": "2023-07-17T21:59:36+04:00",
+      "author": "Eann1S",
+      "email": "danilio.ponomarev7766@gmail.com",
+      "message": "[Refactor] update spring boot, gson, jib and test-containers versions\n"
+    },
+    {
+      "sha": "4fc7f2ace9deeb2ce1f3eb3f524bef2c62b4e5a3",
+      "date": "2023-07-07T01:50:18+04:00",
+      "author": "Eann1S",
+      "email": "122204427+Eann1S@users.noreply.github.com",
+      "message": "update docker compose and add new field to tweet response dto in all services (#35)\n\n* [Refactor] add isBelongs field to tweet response in all services\n\n* [Refactor] change versions and update docker compose"
+    },
+    {
+      "sha": "9211fdbc84c3dfe8136bf4d5ffa1960cd538eb83",
+      "date": "2023-07-06T18:29:15+02:00",
+      "author": "Viacheslav",
+      "email": "114475465+chudnovskyi@users.noreply.github.com",
+      "message": "Front-end Requested Feature Addition (#33)\n\n* [Feature] implement profiles/me endpoint to get auth profile by JWT\n\n* [Feature] add field in TweetResponse indicating if it belongs to auth user"
+    },
+    {
+      "sha": "b8dc0d57e7e8975d7bbc4aaebe707a53eaeb06c6",
+      "date": "2023-06-28T19:56:30+02:00",
+      "author": "Viacheslav",
+      "email": "114475465+chudnovskyi@users.noreply.github.com",
+      "message": "Merge pull request #32 from Eann1S/timeline-service\n\nImplemented asynchronous communication between tweet service and fanout service using apache kafka"
+    },
+    {
+      "sha": "cd6712c57caa886d5f193fd29f50b06b6d237ba7",
+      "date": "2023-06-28T21:51:50+04:00",
+      "author": "Eann1S",
+      "email": "danilio.ponomarev7766@gmail.com",
+      "message": "[Refactor] update readme and architecture diagram picture\n"
+    },
+    {
+      "sha": "158d4af07ce913adad0345d88d095751b25141af",
+      "date": "2023-06-28T21:17:29+04:00",
+      "author": "Eann1S",
+      "email": "danilio.ponomarev7766@gmail.com",
+      "message": "[Feature] move fanout logic into separate service\n[Feature] connect fanout service and tweet service with kafka message queue\n[Refactor] add isRetweeted and isLiked fields in tweet response dto for authenticated user\n[Bugfix] fix bug when updated tweet was not updated in cache causing inconsistent data\n[Refactor] update docker compose\n"
+    },
+    {
+      "sha": "8ab277c45654975aaee2f78cbaa025b397bafd5a",
+      "date": "2023-06-24T15:52:30+04:00",
+      "author": "Eann1S",
+      "email": "danilio.ponomarev7766@gmail.com",
+      "message": "Merge branch 'main' into timeline-service\n"
+    },
+    {
+      "sha": "185371ae4d8360d55032a5f5cba497825024be6d",
+      "date": "2023-06-24T15:45:12+04:00",
+      "author": "Eann1S",
+      "email": "122204427+Eann1S@users.noreply.github.com",
+      "message": "Merge pull request #31 from fork-code-camp/chudnovskyi\n\nJWT Token-Based Profile Image Extraction and Username Profile Search Pull Request"
+    },
+    {
+      "sha": "f95c4a2eb0a63ec370e0adcf6f142c6d994164a5",
+      "date": "2023-06-23T19:13:32+02:00",
+      "author": "Chudnovskyi",
+      "email": "chudnovskiy0@gmail.com",
+      "message": "[Feature] add Profile searching by username\n"
+    },
+    {
+      "sha": "ae0b4f8a8af81ae2f524d94b07a8facb5f0293df",
+      "date": "2023-06-23T16:28:59+02:00",
+      "author": "Chudnovskyi",
+      "email": "chudnovskiy0@gmail.com",
+      "message": "[Feature] endpoint to retrieve authenticated user's profile avatar URL\n"
+    },
+    {
+      "sha": "2a6287c5e3404763af1d63c8b1412ceaf169b8c2",
+      "date": "2023-06-23T18:02:36+04:00",
+      "author": "Eann1S",
+      "email": "danilio.ponomarev7766@gmail.com",
+      "message": "[Bugfix] fixed bug when deleting tweet doesn't mean deleting all relations with it\n"
+    },
+    {
+      "sha": "05d7ef1c6620db136bb7df8a299f2767551cdb4f",
+      "date": "2023-06-22T22:27:53+04:00",
+      "author": "Eann1S",
+      "email": "danilio.ponomarev7766@gmail.com",
+      "message": "[Feature] add endpoints that allows retrieve user timeline for specific user\n[Refactor] refactor namings\n"
+    },
+    {
+      "sha": "eac4234cecc7c2e871ef40a2eec608391ab2133a",
+      "date": "2023-06-18T23:05:07+02:00",
+      "author": "Chudnovskyi",
+      "email": "chudnovskiy0@gmail.com",
+      "message": "refactor readme\n"
+    },
+    {
+      "sha": "adfba46e50344c45cd973811d65b16aabd6f0cec",
+      "date": "2023-06-18T15:43:45+02:00",
+      "author": "Viacheslav Chudnovskyi",
+      "email": "114475465+lwantPizza@users.noreply.github.com",
+      "message": "Merge pull request #29 from Eann1S/timeline-service\n\n[Feature] add readme for project"
+    },
+    {
+      "sha": "a7d8984437b76fd53126e67a89b51293b26795ba",
+      "date": "2023-06-18T17:26:25+04:00",
+      "author": "Eann1S",
+      "email": "danilio.ponomarev7766@gmail.com",
+      "message": "[Feature] add readme for project\n[Bugfix] fix bugs in tests\n[Refactor] update docker compose\n"
+    },
+    {
+      "sha": "b058132d58fd03b0d0037588a19b2a09bcc98620",
+      "date": "2023-06-16T17:09:18+02:00",
+      "author": "Viacheslav Chudnovskyi",
+      "email": "114475465+lwantPizza@users.noreply.github.com",
+      "message": "Merge pull request #28 from Eann1S/timeline-service\n\nTimeline service"
+    },
+    {
+      "sha": "3f65ca48dbfb7c63eeeca7d07ed0f66b7e657949",
+      "date": "2023-06-16T18:52:30+04:00",
+      "author": "Eann1S",
+      "email": "danilio.ponomarev7766@gmail.com",
+      "message": "[Feature] add deploy configuration for storage-service and timeline-service to docker-compose\n"
+    },
+    {
+      "sha": "d80b6c82a8ff1dcd464a18b3b4a2450eb61ca455",
+      "date": "2023-06-16T18:38:13+04:00",
+      "author": "Eann1S",
+      "email": "danilio.ponomarev7766@gmail.com",
+      "message": "[Bugfix] small bugfix\n"
+    }
+  ],
+  "commit_sha": "f455720d575e53e4d357ee248b05f34ce7842c24",
+  "extracted_at": "2026-10-05T18:48:22.222779+00:00"
+}

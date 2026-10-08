@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "b61a8cf05d065e6090f0e96a739acd840163c229",
+      "date": "2026-04-24T17:43:59+08:00",
+      "author": "keweizhuazuki",
+      "email": "kewei.zhu@outlook.com",
+      "message": "docs: refine README project description\n"
+    },
+    {
+      "sha": "ed6c7ccbf58776044b79b80a813fea920dcb7087",
+      "date": "2026-04-24T17:41:26+08:00",
+      "author": "keweizhuazuki",
+      "email": "kewei.zhu@outlook.com",
+      "message": "docs: make README intro more natural\n"
+    },
+    {
+      "sha": "b2fa4a97ff7fe7fc79b7773e088ce1fe12ab839a",
+      "date": "2026-04-24T17:36:46+08:00",
+      "author": "keweizhuazuki",
+      "email": "kewei.zhu@outlook.com",
+      "message": "docs: sync README with procedure updates\n"
+    },
+    {
+      "sha": "628a61801892585c5f3270eef7964f9f98ca106b",
+      "date": "2026-04-13T18:09:02+08:00",
+      "author": "keweizhuazuki",
+      "email": "kewei.zhu@outlook.com",
+      "message": "docs: complete procedure milestone summaries\n"
+    },
+    {
+      "sha": "aa47d701c82f1ee2973a760dc983568dbc9ab603",
+      "date": "2026-04-12T21:48:23+08:00",
+      "author": "keweizhuazuki",
+      "email": "kewei.zhu@outlook.com",
+      "message": "docs: clean up public repository workflow\n"
+    },
+    {
+      "sha": "e640fae8d6b9ec1103bcdcda2097377f729cdc61",
+      "date": "2026-04-12T20:13:18+08:00",
+      "author": "keweizhuazuki",
+      "email": "kewei.zhu@outlook.com",
+      "message": "chore: remove config defaults and redact mcp key\n"
+    },
+    {
+      "sha": "f84126dfc7f95d4b0b8cc3a9ba5587f58aa93d66",
+      "date": "2026-04-12T20:07:20+08:00",
+      "author": "keweizhuazuki",
+      "email": "kewei.zhu@outlook.com",
+      "message": "feat: add long-term memory tools\n"
+    },
+    {
+      "sha": "07932a8cbe17f8c73c142843ae7d3e1ceef3730f",
+      "date": "2026-03-09T10:00:00+08:00",
+      "author": "keweizhuazuki",
+      "email": "kewei.zhu@outlook.com",
+      "message": "add OpenClawResearchTool for delegating web research; update ManusSessionService to include research domain; enhance KeweiManus prompts for atomic todo steps; add tests for OpenClaw integration\n"
+    },
+    {
+      "sha": "596fc0df69b98788b3d7d34965680dc79b3cbcef",
+      "date": "2026-03-09T10:00:00+08:00",
+      "author": "keweizhuazuki",
+      "email": "kewei.zhu@outlook.com",
+      "message": "add OpenClawResearchTool for delegating web research; update ManusSessionService to include research domain; enhance KeweiManus prompts for atomic todo steps; add tests for OpenClaw integration\n"
+    },
+    {
+      "sha": "c600e144a0219deceecd07e0da895a695925afbf",
+      "date": "2026-03-08T10:00:00+08:00",
+      "author": "keweizhuazuki",
+      "email": "kewei.zhu@outlook.com",
+      "message": "add AskUserQuestionTool for handling user input; implement waiting state in AgentState; enhance chat functionality with skills integration; update PptWriterTool for generating presentations\n"
+    },
+    {
+      "sha": "9ddda74b75c3ceb509f061050885433477abd3d3",
+      "date": "2026-03-08T10:00:00+08:00",
+      "author": "keweizhuazuki",
+      "email": "kewei.zhu@outlook.com",
+      "message": "add TodoWrite tool for task planning; implement TodoDemoApp for demo purposes; enhance ManusSessionStore with todo snapshot management; update frontend to display todo progress\n"
+    },
+    {
+      "sha": "e3b92c3b6e3e205cebf083f626457d394950a694",
+      "date": "2026-02-28T10:00:00+08:00",
+      "author": "keweizhuazuki",
+      "email": "kewei.zhu@outlook.com",
+      "message": "add MySqlChatMemory implementation for persistent chat message storage and retrieval; update LoveApp to use ChatMemory interface\n"
+    },
+    {
+      "sha": "ec5f70f48058614a341ced9b2b253b328a885933",
+      "date": "2026-02-28T10:00:00+08:00",
+      "author": "keweizhuazuki",
+      "email": "kewei.zhu@outlook.com",
+      "message": "add MyRedisChatMemory implementation for persistent chat message storage and retrieval; update ChatMemoryConfig to support Redis and MySQL configurations\n"
+    },
+    {
+      "sha": "66850d33401c6db10c11b5e88244d00dfd0b9000",
+      "date": "2026-02-28T10:00:00+08:00",
+      "author": "keweizhuazuki",
+      "email": "kewei.zhu@outlook.com",
+      "message": "add FileBaseChatMemory for persistent chat message storage and retrieval\n"
+    },
+    {
+      "sha": "946dba83c1b8f5438e52bea925b926e34f5aa513",
+      "date": "2026-03-07T10:00:00+08:00",
+      "author": "keweizhuazuki",
+      "email": "kewei.zhu@outlook.com",
+      "message": "add AskUserQuestionTool for handling user input; implement waiting state in AgentState; enhance chat functionality with skills integration; update PptWriterTool for generating presentations\n"
+    },
+    {
+      "sha": "31306e14d7c2861464acaeb9770d21cf69b6184a",
+      "date": "2026-03-06T10:00:00+08:00",
+      "author": "keweizhuazuki",
+      "email": "kewei.zhu@outlook.com",
+      "message": "add OpenClawResearchTool for delegating web research; update ManusSessionService to include research domain; enhance KeweiManus prompts for atomic todo steps; add tests for OpenClaw integration\n"
+    },
+    {
+      "sha": "886fcc5b85ff3db00007cbf7b4c8efd3a41bfbd5",
+      "date": "2026-03-06T10:00:00+08:00",
+      "author": "keweizhuazuki",
+      "email": "kewei.zhu@outlook.com",
+      "message": "add TodoWrite tool for task planning; implement TodoDemoApp for demo purposes; enhance ManusSessionStore with todo snapshot management; update frontend to display todo progress\n"
+    },
+    {
+      "sha": "30d5d859deb82b041fea43e4f4077f34bf53de06",
+      "date": "2026-03-06T10:00:00+08:00",
+      "author": "keweizhuazuki",
+      "email": "kewei.zhu@outlook.com",
+      "message": "add Maven wrapper and configuration files; implement error handling improvements in exception classes; normalize search parameters in WebSearchTool; add ReActAgent class for reasoning and acting patterns\n"
+    },
+    {
+      "sha": "9a6202580ca4ee0d5a7b2f1ff58188634e9280bb",
+      "date": "2026-02-24T10:00:00+08:00",
+      "author": "keweizhuazuki",
+      "email": "kewei.zhu@outlook.com",
+      "message": "finished loggerAdvisor and reReadingAdvisor\n"
+    },
+    {
+      "sha": "c8cee0ea7197acfc15cbf33221743153e4fcd9ef",
+      "date": "2026-03-10T20:48:25+08:00",
+      "author": "keweizhuazuki",
+      "email": "kewei.zhu@outlook.com",
+      "message": "update README.md\n"
+    },
+    {
+      "sha": "f2fb536bf8215480633332d9d726734d1686cf48",
+      "date": "2026-03-09T23:33:41+08:00",
+      "author": "keweizhuazuki",
+      "email": "kewei.zhu@outlook.com",
+      "message": "update README.md\n"
+    },
+    {
+      "sha": "8ddf6946e2ad7ba9fdde953a3561bb399e95d6df",
+      "date": "2026-03-09T22:56:59+08:00",
+      "author": "keweizhuazuki",
+      "email": "kewei.zhu@outlook.com",
+      "message": "refactor architecture diagram in README.md for improved clarity and structure\n"
+    },
+    {
+      "sha": "ba11bfc1fed6b2f389f041f5acd25d571fddef52",
+      "date": "2026-03-09T22:52:09+08:00",
+      "author": "keweizhuazuki",
+      "email": "kewei.zhu@outlook.com",
+      "message": "refactor architecture diagram in README.md for improved clarity and structure\n"
+    },
+    {
+      "sha": "6fa4cffeafe05876a67e2e8510e16c40a9044ee3",
+      "date": "2026-03-09T22:49:15+08:00",
+      "author": "keweizhuazuki",
+      "email": "kewei.zhu@outlook.com",
+      "message": "add detailed architecture overview and component descriptions to README.md\n"
+    },
+    {
+      "sha": "0af58f3b94b92e1692949c0497e48646c859a296",
+      "date": "2026-03-09T22:41:50+08:00",
+      "author": "keweizhuazuki",
+      "email": "kewei.zhu@outlook.com",
+      "message": "add README.md to document project overview, architecture, and features\n"
+    },
+    {
+      "sha": "4a01eb3af0205415beeb834a2b271fd1cc0357c6",
+      "date": "2026-03-09T20:47:19+08:00",
+      "author": "keweizhuazuki",
+      "email": "kewei.zhu@outlook.com",
+      "message": "rename README.md to PROCEDURES.md for improved clarity on document purpose\n"
+    },
+    {
+      "sha": "4c4b28ee6b07bdee8b87566453a6a60e3617320d",
+      "date": "2026-03-09T20:45:47+08:00",
+      "author": "keweizhuazuki",
+      "email": "kewei.zhu@outlook.com",
+      "message": "add OpenClawResearchTool for delegating web research; update ManusSessionService to include research domain; enhance KeweiManus prompts for atomic todo steps; add tests for OpenClaw integration\n"
+    },
+    {
+      "sha": "7036c93851d816980854a1e747ae1a9525ddceaf",
+      "date": "2026-03-09T20:30:16+08:00",
+      "author": "keweizhuazuki",
+      "email": "kewei.zhu@outlook.com",
+      "message": "add OpenClawResearchTool for delegating web research; update ManusSessionService to include research domain; enhance KeweiManus prompts for atomic todo steps; add tests for OpenClaw integration\n"
+    },
+    {
+      "sha": "c4a53536c63291f566fcb6a3bdfdde0ddfc6ffbb",
+      "date": "2026-03-09T20:26:50+08:00",
+      "author": "keweizhuazuki",
+      "email": "kewei.zhu@outlook.com",
+      "message": "add OpenClawResearchTool for delegating web research; update ManusSessionService to include research domain; enhance KeweiManus prompts for atomic todo steps; add tests for OpenClaw integration\n"
+    },
+    {
+      "sha": "514f53d443e9cd16e9a0b07e8f8c4ff25e1323e2",
+      "date": "2026-03-08T00:04:04+08:00",
+      "author": "keweizhuazuki",
+      "email": "kewei.zhu@outlook.com",
+      "message": "add TodoWrite tool for task planning; implement TodoDemoApp for demo purposes; enhance ManusSessionStore with todo snapshot management; update frontend to display todo progress\n"
+    }
+  ],
+  "commit_sha": "b61a8cf05d065e6090f0e96a739acd840163c229",
+  "extracted_at": "2026-10-05T18:47:41.104359+00:00"
+}

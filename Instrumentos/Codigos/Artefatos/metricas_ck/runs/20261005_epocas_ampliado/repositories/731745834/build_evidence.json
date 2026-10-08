@@ -1,0 +1,68 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "3.5.5",
+  "spring_boot_major": "3",
+  "java_versions_declared": "21",
+  "build_evidence": [
+    {
+      "file": "db2rest-api/api-rest/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "db2rest-api/api-rest/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "db2rest-api/api-rest/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "db2rest-api/api-rest/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "db2rest-api/api-rest/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "db2rest-api/api-rest/pom.xml",
+      "artifact": "spring-boot-testcontainers"
+    },
+    {
+      "file": "db2rest-api/api-rest/pom.xml",
+      "artifact": "spring-boot-test-autoconfigure"
+    },
+    {
+      "file": "db2rest-api/api-rest/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "db2rest-api/rest-common/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "db2rest-api/rest-common/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "db2rest-auth/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "db2rest-auth/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "db2rest-core/rdbms-support/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "db2rest-dialects/db2-dialect/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    }
+  ]
+}

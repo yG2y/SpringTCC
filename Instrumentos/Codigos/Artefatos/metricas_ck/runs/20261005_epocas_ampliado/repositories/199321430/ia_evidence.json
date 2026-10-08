@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "55c6983a39f828cd92990dfb1fd327ca5a0bd37a",
+      "date": "2025-04-01T11:01:48+01:00",
+      "author": "Lidiane Taquehara",
+      "email": "lidi.mayra@gmail.com",
+      "message": "Include a link to the DZone article in the README\n\nThis tutorial was published on DZone.com yesterday.\n"
+    },
+    {
+      "sha": "1b5b2b2d24030994ed7603873139b89584a73c89",
+      "date": "2025-01-10T22:46:41Z",
+      "author": "Lidiane Taquehara",
+      "email": "lidi.mayra@gmail.com",
+      "message": "Fix commit hash ref\n"
+    },
+    {
+      "sha": "b18d533ee7224049983cb8096e4f75b8b801fc27",
+      "date": "2025-01-10T22:45:11Z",
+      "author": "Lidiane M",
+      "email": "lidi.mayra@gmail.com",
+      "message": "Merge pull request #2 from lidimayra/lidimayra/update-app-version\n\nUpdate Java version"
+    },
+    {
+      "sha": "34219ed03792dba158970dc3a9277774610bcdea",
+      "date": "2025-01-10T22:32:43Z",
+      "author": "Lidiane Taquehara",
+      "email": "lidi.mayra@gmail.com",
+      "message": "Update docs\n"
+    },
+    {
+      "sha": "62a986c91f35e8107b38a0bbd324c4de6f916ab0",
+      "date": "2025-01-10T21:56:31Z",
+      "author": "Lidiane Taquehara",
+      "email": "lidi.mayra@gmail.com",
+      "message": "Enable post to be deleted\n"
+    },
+    {
+      "sha": "8b33fbe29829b43bf0d358458c8ae9b713daf4bb",
+      "date": "2025-01-10T21:42:59Z",
+      "author": "Lidiane Taquehara",
+      "email": "lidi.mayra@gmail.com",
+      "message": "Fix references\n"
+    },
+    {
+      "sha": "0aa88c3429b45cba04aba95d2b353315a9f07c6e",
+      "date": "2025-01-10T21:40:22Z",
+      "author": "Lidiane Taquehara",
+      "email": "lidi.mayra@gmail.com",
+      "message": "Enable show for posts\n"
+    },
+    {
+      "sha": "b65da3a17a47678ae6f535bec95c8ed5560921d6",
+      "date": "2025-01-10T10:20:50Z",
+      "author": "Lidiane Taquehara",
+      "email": "lidi.mayra@gmail.com",
+      "message": "Fix references\n"
+    },
+    {
+      "sha": "a4e83e43f4966075bbb3446a54fb2cdbe7a0e92b",
+      "date": "2025-01-10T01:01:03Z",
+      "author": "Lidiane Taquehara",
+      "email": "lidi.mayra@gmail.com",
+      "message": "Enable a post to be edited\n\n- Add post/edit template\n- Add logic responsible for updating a post to the controller\n- Add a link to edit page to each post displayed in index page\n"
+    },
+    {
+      "sha": "ae3fa74d4b002e5a8cd9fdaf109a4079fd69c28f",
+      "date": "2025-01-10T00:58:57Z",
+      "author": "Lidiane Taquehara",
+      "email": "lidi.mayra@gmail.com",
+      "message": "Fix references\n"
+    },
+    {
+      "sha": "da63ee6f30bf46dd7cc5fa1904ee3d545ec2dead",
+      "date": "2025-01-10T00:57:08Z",
+      "author": "Lidiane Taquehara",
+      "email": "lidi.mayra@gmail.com",
+      "message": "Display posts list in /posts page\n\nAdjust BlogController and index.html to display a list of posts when\naccessing `/posts`\n"
+    },
+    {
+      "sha": "ab7c032f84fa03a079c1e1ccdb7267c0b138c733",
+      "date": "2025-01-10T00:54:51Z",
+      "author": "Lidiane Taquehara",
+      "email": "lidi.mayra@gmail.com",
+      "message": "Fix commit references\n"
+    },
+    {
+      "sha": "415ed6d9c2e9035780dd20ba7e5a71e12bcfbbee",
+      "date": "2025-01-10T00:42:46Z",
+      "author": "Lidiane Taquehara",
+      "email": "lidi.mayra@gmail.com",
+      "message": "Create a new post\n\nAdd a form to blog/new.html containing Post fields (title and content)\nand adjust blog controller to handle its creation using JPA Repository.\n"
+    },
+    {
+      "sha": "1f6170f3515d20b173d3bf3f72861951342dfcad",
+      "date": "2025-01-10T00:23:10Z",
+      "author": "Lidiane Taquehara",
+      "email": "lidi.mayra@gmail.com",
+      "message": "Fix references in readme\n"
+    },
+    {
+      "sha": "6b9e0e375f704a01bef99f1a85924cebe048079b",
+      "date": "2025-01-10T00:20:41Z",
+      "author": "Lidiane Taquehara",
+      "email": "lidi.mayra@gmail.com",
+      "message": "Add Post representation using JPA\n\nJPA Entities are POJOs associated to data that can be persisted to\ndatabase. `Post` Entity represents a table of posts in the DB. Therefore\nan instance of a `Post` can be used to manage a row in this table.\n\nPostRepository it's an interface that extends JPARepository. By doing\nthat, it inherits different methods that can be used for common\npersistence operations.\n"
+    },
+    {
+      "sha": "4244a06ff9a34f10e831d23c5d9e7522d581afb5",
+      "date": "2025-01-10T00:16:55Z",
+      "author": "Lidiane Taquehara",
+      "email": "lidi.mayra@gmail.com",
+      "message": "Fix ref\n"
+    },
+    {
+      "sha": "9636d6fc5fef5f74e564e6c8cf5e993e21f751b4",
+      "date": "2025-01-10T00:14:37Z",
+      "author": "Lidiane Taquehara",
+      "email": "lidi.mayra@gmail.com",
+      "message": "Setup a blog controller containing the seven RESTful routes:\n\n- index\n- new\n- create\n- show\n- edit\n- update\n- destroy\n"
+    },
+    {
+      "sha": "ad4bc9ef8cd8384dae437725cc01859d3982eadf",
+      "date": "2025-01-10T00:10:03Z",
+      "author": "Lidiane Taquehara",
+      "email": "lidi.mayra@gmail.com",
+      "message": "Fix readme references\n"
+    },
+    {
+      "sha": "623e0e8a31185bb22c8daf74d047f87d35c0936d",
+      "date": "2025-01-09T23:43:59Z",
+      "author": "Lidiane Taquehara",
+      "email": "lidi.mayra@gmail.com",
+      "message": "Add controller and view example\n\nWhen accessing http://localhost:8080/foo, the bar.html page is\nrendered\n"
+    },
+    {
+      "sha": "a6f59d9ccfe309a4a0a8f8760d6ebfa707d6c5c6",
+      "date": "2025-01-10T00:05:18Z",
+      "author": "Lidiane Taquehara",
+      "email": "lidi.mayra@gmail.com",
+      "message": "Adding dependencies\n"
+    },
+    {
+      "sha": "36d83b453115f274a84e98016ff52ca6655a469f",
+      "date": "2025-01-09T23:50:58Z",
+      "author": "Lidiane Taquehara",
+      "email": "lidi.mayra@gmail.com",
+      "message": "Add spring-boot-devtools as a dependency\n\nhttps://docs.spring.io/spring-boot/reference/using/devtools.html\n"
+    },
+    {
+      "sha": "a9ed0e91c6df5fdc31b92b5a3510fe5094885da0",
+      "date": "2025-01-09T23:17:04Z",
+      "author": "Lidiane Taquehara",
+      "email": "lidi.mayra@gmail.com",
+      "message": "Replace commit hash references on README for App initialization\n"
+    },
+    {
+      "sha": "3719c29f25e497020ad4e7f7438581b1fe353f91",
+      "date": "2025-01-09T23:13:41Z",
+      "author": "Lidiane Taquehara",
+      "email": "lidi.mayra@gmail.com",
+      "message": "App initialization\n"
+    },
+    {
+      "sha": "1c2cb11736dc0d885e61e350e24880722a103ec0",
+      "date": "2025-01-09T23:12:02Z",
+      "author": "Lidiane Taquehara",
+      "email": "lidi.mayra@gmail.com",
+      "message": "Delete the entire app\n\nThe code corresponding to the app here was based on a very outdated\nversion. Delete the whole app so I can start again.\n"
+    },
+    {
+      "sha": "55ea3b7c1a061c324ae89834aea4729f2da75862",
+      "date": "2025-01-09T21:44:20Z",
+      "author": "Lidiane Taquehara",
+      "email": "lidi.mayra@gmail.com",
+      "message": "Specify maven when initializing the app\n\nSpring boot now sets Gradle by default.\nSpecify Maven here due to its Convention of Configuration principle,\nwhich makes it simpler for engineers familiar with Rails.\n"
+    },
+    {
+      "sha": "7d027e8657b369b36e08b072e95ad190b08901f8",
+      "date": "2020-02-16T19:57:30-03:00",
+      "author": "Lidiane Taquehara",
+      "email": "lidi.mayra@gmail.com",
+      "message": "Add delete section to README\n"
+    },
+    {
+      "sha": "cb38bf77701b00d340ebc91b799e732b9509153f",
+      "date": "2020-02-16T19:47:02-03:00",
+      "author": "Lidiane Taquehara",
+      "email": "lidi.mayra@gmail.com",
+      "message": "Enable post to be deleted\n"
+    },
+    {
+      "sha": "3d8cbe3db9da42cde7b8b1e745112ef0a8c0c31a",
+      "date": "2020-02-16T19:09:08-03:00",
+      "author": "Lidiane Taquehara",
+      "email": "lidi.mayra@gmail.com",
+      "message": "Add Show section to README\n"
+    },
+    {
+      "sha": "dd98c1d308353fc8139ae750ba8e532f671cf59f",
+      "date": "2020-02-16T18:50:32-03:00",
+      "author": "Lidiane Taquehara",
+      "email": "lidi.mayra@gmail.com",
+      "message": "Enable show for posts\n"
+    },
+    {
+      "sha": "511bdd441860d15ea829ea2e98b0243a0ee83c4b",
+      "date": "2020-02-16T18:01:02-03:00",
+      "author": "Lidiane Taquehara",
+      "email": "lidi.mayra@gmail.com",
+      "message": "Add Edit/Update section to README\n"
+    }
+  ],
+  "commit_sha": "55c6983a39f828cd92990dfb1fd327ca5a0bd37a",
+  "extracted_at": "2026-10-05T18:25:47.381384+00:00"
+}

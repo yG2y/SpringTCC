@@ -1,0 +1,544 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${spring.version};2.3.12.RELEASE;3.4.0",
+  "spring_boot_major": "multiple",
+  "java_versions_declared": "11;21",
+  "build_evidence": [
+    {
+      "file": "spring-server/api/api-mapper/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-server/api/api-mapper/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "spring-server/api/api-mapper/pom.xml",
+      "artifact": "spring-boot-starter-data-neo4j"
+    },
+    {
+      "file": "spring-server/api/api-mapper/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "spring-server/api/api-mapper/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-server/api/api-mapper/pom.xml",
+      "artifact": "spring-boot-starter-data-elasticsearch"
+    },
+    {
+      "file": "spring-server/api/api-mapper/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb"
+    },
+    {
+      "file": "spring-server/api/api-mapper/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-server/api/api-mapper/pom.xml",
+      "artifact": "spring-boot-test"
+    },
+    {
+      "file": "spring-server/api/api-model/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-server/api/api-model/pom.xml",
+      "artifact": "spring-boot-starter-data-neo4j"
+    },
+    {
+      "file": "spring-server/api/api-model/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "spring-server/api/api-model/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-server/api/api-model/pom.xml",
+      "artifact": "spring-boot-starter-data-elasticsearch"
+    },
+    {
+      "file": "spring-server/api/api-model/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb"
+    },
+    {
+      "file": "spring-server/api/api-model/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-server/api/api-model/pom.xml",
+      "artifact": "spring-boot-test"
+    },
+    {
+      "file": "spring-server/api/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "spring-server/base/netty-socket/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-server/base/netty-socket/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "spring-server/base/netty-socket/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "spring-server/base/netty-socket/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "spring-server/base/netty-socket/pom.xml",
+      "artifact": "spring-boot-starter-json"
+    },
+    {
+      "file": "spring-server/base/netty-socket/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-server/base/netty-socket/pom.xml",
+      "artifact": "spring-boot-test"
+    },
+    {
+      "file": "spring-server/base/oss-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-server/base/oss-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-server/base/oss-service/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-server/base/oss-service/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "spring-server/base/oss-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "spring-server/base/oss-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-server/base/oss-service/pom.xml",
+      "artifact": "spring-boot-test"
+    },
+    {
+      "file": "spring-server/base/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "spring-server/base/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "spring-server/business/ai-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-server/business/ai-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-server/business/ai-service/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb"
+    },
+    {
+      "file": "spring-server/business/ai-service/pom.xml",
+      "artifact": "spring-boot-starter-data-neo4j"
+    },
+    {
+      "file": "spring-server/business/ai-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-server/business/ai-service/pom.xml",
+      "artifact": "spring-boot-test"
+    },
+    {
+      "file": "spring-server/business/feature-log-offline-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-server/business/feature-log-offline-service/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-server/business/feature-log-offline-service/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "spring-server/business/feature-log-offline-service/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb"
+    },
+    {
+      "file": "spring-server/business/feature-log-offline-service/pom.xml",
+      "artifact": "spring-boot-starter-data-elasticsearch"
+    },
+    {
+      "file": "spring-server/business/feature-log-offline-service/pom.xml",
+      "artifact": "spring-boot-starter-data-neo4j"
+    },
+    {
+      "file": "spring-server/business/feature-log-offline-service/pom.xml",
+      "artifact": "spring-boot-starter-json"
+    },
+    {
+      "file": "spring-server/business/feature-log-offline-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-server/business/feature-log-offline-service/pom.xml",
+      "artifact": "spring-boot-test"
+    },
+    {
+      "file": "spring-server/business/medicine-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-server/business/medicine-service/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-server/business/medicine-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "spring-server/business/medicine-service/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "spring-server/business/medicine-service/pom.xml",
+      "artifact": "spring-boot-starter-data-neo4j"
+    },
+    {
+      "file": "spring-server/business/medicine-service/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "spring-server/business/medicine-service/pom.xml",
+      "artifact": "spring-boot-starter-data-elasticsearch"
+    },
+    {
+      "file": "spring-server/business/medicine-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-server/business/medicine-service/pom.xml",
+      "artifact": "spring-boot-test"
+    },
+    {
+      "file": "spring-server/business/message-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-server/business/message-service/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-server/business/message-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "spring-server/business/message-service/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "spring-server/business/message-service/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb"
+    },
+    {
+      "file": "spring-server/business/message-service/pom.xml",
+      "artifact": "spring-boot-starter-data-elasticsearch"
+    },
+    {
+      "file": "spring-server/business/message-service/pom.xml",
+      "artifact": "spring-boot-starter-data-neo4j"
+    },
+    {
+      "file": "spring-server/business/message-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-server/business/message-service/pom.xml",
+      "artifact": "spring-boot-test"
+    },
+    {
+      "file": "spring-server/business/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "spring-server/business/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "spring-server/business/post-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-server/business/post-service/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-server/business/post-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "spring-server/business/post-service/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "spring-server/business/post-service/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb"
+    },
+    {
+      "file": "spring-server/business/post-service/pom.xml",
+      "artifact": "spring-boot-starter-data-elasticsearch"
+    },
+    {
+      "file": "spring-server/business/post-service/pom.xml",
+      "artifact": "spring-boot-starter-data-neo4j"
+    },
+    {
+      "file": "spring-server/business/post-service/pom.xml",
+      "artifact": "spring-boot-starter-json"
+    },
+    {
+      "file": "spring-server/business/post-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-server/business/post-service/pom.xml",
+      "artifact": "spring-boot-test"
+    },
+    {
+      "file": "spring-server/business/purchase-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-server/business/purchase-service/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-server/business/purchase-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "spring-server/business/purchase-service/pom.xml",
+      "artifact": "spring-boot-starter-data-neo4j"
+    },
+    {
+      "file": "spring-server/business/purchase-service/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "spring-server/business/purchase-service/pom.xml",
+      "artifact": "spring-boot-starter-data-elasticsearch"
+    },
+    {
+      "file": "spring-server/business/purchase-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-server/business/purchase-service/pom.xml",
+      "artifact": "spring-boot-test"
+    },
+    {
+      "file": "spring-server/business/user-auth-relation-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-server/business/user-auth-relation-service/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-server/business/user-auth-relation-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "spring-server/business/user-auth-relation-service/pom.xml",
+      "artifact": "spring-boot-starter-data-neo4j"
+    },
+    {
+      "file": "spring-server/business/user-auth-relation-service/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "spring-server/business/user-auth-relation-service/pom.xml",
+      "artifact": "spring-boot-starter-data-elasticsearch"
+    },
+    {
+      "file": "spring-server/business/user-auth-relation-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-server/business/user-auth-relation-service/pom.xml",
+      "artifact": "spring-boot-test"
+    },
+    {
+      "file": "spring-server/gateways/gateway/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-server/gateways/gateway/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "spring-server/gateways/gateway/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "spring-server/gateways/gateway/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-server/gateways/gateway/pom.xml",
+      "artifact": "spring-boot-test"
+    },
+    {
+      "file": "spring-server/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-server/tests/import-model/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-server/tests/import-model/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-server/tests/import-model/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb"
+    },
+    {
+      "file": "spring-server/tests/import-model/pom.xml",
+      "artifact": "spring-boot-starter-data-elasticsearch"
+    },
+    {
+      "file": "spring-server/tests/import-model/pom.xml",
+      "artifact": "spring-boot-starter-data-neo4j"
+    },
+    {
+      "file": "spring-server/tests/import-model/pom.xml",
+      "artifact": "spring-boot-starter-json"
+    },
+    {
+      "file": "spring-server/tests/import-model/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "spring-server/tests/import-model/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-server/tests/import-model/pom.xml",
+      "artifact": "spring-boot-test"
+    },
+    {
+      "file": "spring-server/tests/test-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-server/tests/test-service/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-server/tests/test-service/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "spring-server/tests/test-service/pom.xml",
+      "artifact": "spring-boot-starter-json"
+    },
+    {
+      "file": "spring-server/tests/test-service/pom.xml",
+      "artifact": "spring-boot-starter-data-elasticsearch"
+    },
+    {
+      "file": "spring-server/tests/test-service/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "spring-server/tests/test-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "spring-server/tests/test-service/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "spring-server/tests/test-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-server/tests/test-service/pom.xml",
+      "artifact": "spring-boot-test"
+    },
+    {
+      "file": "spring-server/utils/CommonUtils/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-server/utils/MinioUtils/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-server/utils/MinioUtils/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-server/utils/MinioUtils/pom.xml",
+      "artifact": "spring-boot-test"
+    },
+    {
+      "file": "spring-server/utils/RabbitMqUtils/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "spring-server/utils/RedisUtils/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "spring-server/utils/SpringUtils/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-server/utils/SpringUtils/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "spring-server/utils/SpringUtils/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-server/utils/SpringUtils/pom.xml",
+      "artifact": "spring-boot-test"
+    },
+    {
+      "file": "spring-server/utils/SpringWebfluxUtils/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "spring-server/utils/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "spring-server/utils/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    }
+  ]
+}

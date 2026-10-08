@@ -1,0 +1,97 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 12,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "cd1d4eeb8ea55692512bb737db123ee6cad58eb6",
+      "date": "2022-11-17T04:30:05-05:00",
+      "author": "David Ivins",
+      "email": "davidivins@gmail.com",
+      "message": "update deprecated java:8 image to openjdk:8 (#7)\n\nCo-authored-by: David Ivins <david_ivins@cable.comast.com>"
+    },
+    {
+      "sha": "6ebf445f59e941467fff18c0f23d291c95531ca8",
+      "date": "2018-08-15T02:04:59-04:00",
+      "author": "Jeffrey Doto",
+      "email": "jeffdoto@gmail.com",
+      "message": "Add MAVEN_OPTS arg, data type change (#5)\n\n* Change type of cache metrics from int to long\n\n* Add MAVEN_OPTS arg\n\nThis commit allows the user building this container to provide proxy\nconfiguration to maven.  For instance:\n\n\tdocker build -t apache-traffic-server-exporter --build-arg MAVEN_ARGS=\"-Dhttp.proxyHost=proxy -Dhttp.proxyPort=1234 -Dhttps.proxyHost=proxy -Dhttps.proxyPort=1234\" .\n\nIf no --build-arg parameters are provided, the original, default maven\nconfiguration applies.\n"
+    },
+    {
+      "sha": "ae2052b508ab8bda74d3e40087a3e3ab13d4532d",
+      "date": "2018-03-29T13:49:49+03:00",
+      "author": "Erdem Günay",
+      "email": "e.gunay@gmail.com",
+      "message": "append documentation (#3)\n\n* append documentation for build process and grafana configuration\n\n* append documentation for build process and grafana configuration\n\n* append documentation for build process and grafana configuration\n\n* append documentation for build process and grafana configuration\n\n* append documentation for build process and grafana configuration\n\n* append documentation for build process and grafana configuration\n\n* append documentation for build process and grafana configuration\n\n* append documentation for build process and grafana configuration\n\n* append documentation for build process and grafana configuration\n"
+    },
+    {
+      "sha": "75cded6361f365e05442c2275430e5a1ff749fab",
+      "date": "2018-01-10T13:11:37+03:00",
+      "author": "Sarp",
+      "email": "burak.sarp@turkcell.com.tr",
+      "message": "adding build state is added to README.md\n"
+    },
+    {
+      "sha": "473221cfe05b46baa4dbe62df01c4cceb93e690a",
+      "date": "2018-01-09T14:35:33+03:00",
+      "author": "Sarp",
+      "email": "burak.sarp@turkcell.com.tr",
+      "message": "travis CI support\n"
+    },
+    {
+      "sha": "2fd53460131c63c1571095b69510d3ae344a927e",
+      "date": "2018-01-09T14:20:59+03:00",
+      "author": "Sarp",
+      "email": "burak.sarp@turkcell.com.tr",
+      "message": "adding travis CI\n"
+    },
+    {
+      "sha": "1b2a501e68f3633771622359a89e64cd09e58cc4",
+      "date": "2018-01-09T14:00:43+03:00",
+      "author": "Sarp",
+      "email": "burak.sarp@turkcell.com.tr",
+      "message": "improvements and minor fixes\n"
+    },
+    {
+      "sha": "d9aee188da9887543cd11d9cfdff91d8bbc006c4",
+      "date": "2018-01-08T17:45:30Z",
+      "author": "Jeffrey Doto",
+      "email": "jeffdoto@gmail.com",
+      "message": "Change type of cache metrics from int to long (#2)\n\n"
+    },
+    {
+      "sha": "9d84f4e9714695e6b4bbcf1f60fea54687fe41b2",
+      "date": "2018-01-08T14:24:16Z",
+      "author": "Jeffrey Doto",
+      "email": "jeffdoto@gmail.com",
+      "message": "Add ATS uptime metrics, various fixes (#1)\n\n* Logs failed ObjectMapper readValue calls\n\n* Throws NPE when ObjectMapper readValue calls fail\n\n* Fixes incorrect Prometheus metric help messages\n\n* Collect ATS uptime metrics\n"
+    },
+    {
+      "sha": "c99922bf0ab512a4a28a82d0af8008de4985c462",
+      "date": "2017-08-13T13:22:34+03:00",
+      "author": "buraksarp",
+      "email": "sarp_burak@yahoo.com",
+      "message": "README update\n"
+    },
+    {
+      "sha": "f592e0c2a2bea1f582347ef5e19d525ada922a62",
+      "date": "2017-08-13T13:20:29+03:00",
+      "author": "buraksarp",
+      "email": "sarp_burak@yahoo.com",
+      "message": "README update\n"
+    },
+    {
+      "sha": "86202e11190491ad30fdc2bbe6da6d74fec7929c",
+      "date": "2017-08-13T13:17:06+03:00",
+      "author": "buraksarp",
+      "email": "sarp_burak@yahoo.com",
+      "message": "first commit\n"
+    }
+  ],
+  "commit_sha": "cd1d4eeb8ea55692512bb737db123ee6cad58eb6",
+  "extracted_at": "2026-10-05T18:22:40.656273+00:00"
+}

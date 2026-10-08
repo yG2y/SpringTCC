@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "984ac5c71a41a93346aaccbeed03ac70c492af64",
+      "date": "2019-11-12T09:37:37-08:00",
+      "author": "Josh Turner",
+      "email": "turner.josh@gmail.com",
+      "message": "Updated manual maven shield\n"
+    },
+    {
+      "sha": "300039aab1853d17c94d81c10dc831382a811f34",
+      "date": "2019-08-21T10:15:37-07:00",
+      "author": "Josh Turner",
+      "email": "turner.josh@gmail.com",
+      "message": "Updated Manual\n"
+    },
+    {
+      "sha": "c1f5fad05bc5a65e8f8bfcac4d344aba7a75c6a9",
+      "date": "2019-08-21T08:08:22-07:00",
+      "author": "Josh Turner",
+      "email": "turner.josh@gmail.com",
+      "message": "Updated Manual\n"
+    },
+    {
+      "sha": "88f960160caccd9f2bca95c49fdf4123651234b5",
+      "date": "2019-08-20T14:18:27-07:00",
+      "author": "Josh Turner",
+      "email": "turner.josh@gmail.com",
+      "message": "2.0-RELEASE - 08/20/2019\n* Complete rewrite to correspond to 4.0 OSS Datastax Driver\n* Moved to annotation processing based code generation\n* Split projects to separate spring, tests, and generator from core driver\n* New Feature: FailoverPolicy to enable custom failover policies\n* New Feature: Rest DAO generation\n* New Hugo based manual - https://tmobile.github.io/casquatch/\n* New Travis CI Integration - https://travis-ci.com/tmobile/casquatch\n"
+    },
+    {
+      "sha": "1aede43ab4437615fa5b282a55a7f2eb26ba2211",
+      "date": "2019-08-20T13:29:34-07:00",
+      "author": "Josh Turner",
+      "email": "turner.josh@gmail.com",
+      "message": "Updated travis shield to master branch\n"
+    },
+    {
+      "sha": "f1882b8e5b591f6c44b95a4601af68175d580638",
+      "date": "2019-08-20T11:57:45-07:00",
+      "author": "Josh Turner",
+      "email": "turner.josh@gmail.com",
+      "message": "Updated timeout in integration_tests\n"
+    },
+    {
+      "sha": "0e49de073fdc61dc5a05f1554c07a9342076ee2c",
+      "date": "2019-08-20T13:09:57-07:00",
+      "author": "Josh Turner",
+      "email": "turner.josh@gmail.com",
+      "message": "Updated admin scripts for consistency and new release\n"
+    },
+    {
+      "sha": "ccf20597dd5fdfe8a1456c7eb214b0a6e196f9fd",
+      "date": "2019-08-20T13:04:43-07:00",
+      "author": "Josh Turner",
+      "email": "turner.josh@gmail.com",
+      "message": "Removed redundant plugin\n"
+    },
+    {
+      "sha": "8c1d08d62758db0a580cbb837fc6e8f442bcd4a3",
+      "date": "2019-08-20T12:32:44-07:00",
+      "author": "Josh Turner",
+      "email": "turner.josh@gmail.com",
+      "message": "Updated loadtest example configuration to be more verbose and informative\n"
+    },
+    {
+      "sha": "2029248271c6e3385afca308dc663739509cc8b6",
+      "date": "2019-08-20T10:53:47-07:00",
+      "author": "Josh Turner",
+      "email": "turner.josh@gmail.com",
+      "message": "Updated springrest example to full tutorial\n"
+    },
+    {
+      "sha": "c07877bc99bc76d8a1a55da266b32a459cd62ca2",
+      "date": "2019-08-20T09:59:15-07:00",
+      "author": "Josh Turner",
+      "email": "turner.josh@gmail.com",
+      "message": "Added concepts page\n"
+    },
+    {
+      "sha": "ab00b0bd906418f1bc20d72997c575a2810a9670",
+      "date": "2019-08-20T09:38:48-07:00",
+      "author": "Josh Turner",
+      "email": "turner.josh@gmail.com",
+      "message": "Added maven_docker to gitignore\n"
+    },
+    {
+      "sha": "7bd3df7d5b7934b8bf03e776529184fea0289e06",
+      "date": "2019-08-20T09:37:59-07:00",
+      "author": "Josh Turner",
+      "email": "turner.josh@gmail.com",
+      "message": "Minified springreset example\n"
+    },
+    {
+      "sha": "16b054a729f10c962d6d3cbfdacb1803ee3d7d54",
+      "date": "2019-08-20T09:37:46-07:00",
+      "author": "Josh Turner",
+      "email": "turner.josh@gmail.com",
+      "message": "Added minify and createTests flags for generator\n"
+    },
+    {
+      "sha": "43ab4b363e9ec38d3c41b60bd30bd7b83df525e2",
+      "date": "2019-08-20T09:11:37-07:00",
+      "author": "Josh Turner",
+      "email": "turner.josh@gmail.com",
+      "message": "Removed unused option\n"
+    },
+    {
+      "sha": "032b8488d0b4ce3e1835f611a2ccb1be8d879771",
+      "date": "2019-08-20T08:59:29-07:00",
+      "author": "Josh Turner",
+      "email": "turner.josh@gmail.com",
+      "message": "Added default implementation of keys\n"
+    },
+    {
+      "sha": "f6d24d15a5030d02956a44ff3b99d16adae7fb70",
+      "date": "2019-08-19T11:51:02-07:00",
+      "author": "Josh Turner",
+      "email": "turner.josh@gmail.com",
+      "message": "Moved travis scripts into stages and .admin/integration_tests.sh\n"
+    },
+    {
+      "sha": "6b03b679325b317831a2ecd1b187c5f988f9041e",
+      "date": "2019-08-20T07:27:39-07:00",
+      "author": "Josh Turner",
+      "email": "turner.josh@gmail.com",
+      "message": "Resynced CasquatchDaoBuilder\n"
+    },
+    {
+      "sha": "5e4606e9eabeb033f26df62fe681f686f828a0cf",
+      "date": "2019-08-19T11:27:56-07:00",
+      "author": "Josh Turner",
+      "email": "turner.josh@gmail.com",
+      "message": "Added back in helper scripts for examples\n"
+    },
+    {
+      "sha": "c6dc61a19c846f98f82963737c721cff7096fdc9",
+      "date": "2019-08-19T11:18:37-07:00",
+      "author": "Josh Turner",
+      "email": "turner.josh@gmail.com",
+      "message": "Modified solrObject tests to only compare keys\n"
+    },
+    {
+      "sha": "5bdc7ba317468784ace9bbdb461563c3f4ea881c",
+      "date": "2019-08-19T10:47:11-07:00",
+      "author": "Josh Turner",
+      "email": "turner.josh@gmail.com",
+      "message": "Modified to use isNull instead of try/catch.\n"
+    },
+    {
+      "sha": "a8c339d6df187db804b52496fad884dfa38634bb",
+      "date": "2019-08-19T08:35:39-07:00",
+      "author": "Josh Turner",
+      "email": "turner.josh@gmail.com",
+      "message": "Modified trace messages, replaced excess stacks with just message\n"
+    },
+    {
+      "sha": "e680688bcdf2711345ff6bfa631712acec3a8e21",
+      "date": "2019-08-16T10:53:55-07:00",
+      "author": "Josh Turner",
+      "email": "turner.josh@gmail.com",
+      "message": "Reworked test enities to a SimpleTable and a TortureTable to include all data types. Includes bugfixes found while testing TortureTable.\n"
+    },
+    {
+      "sha": "fa1fe9cd45e69202324f54fcfbe4384a45d93f6a",
+      "date": "2019-08-16T10:25:18-07:00",
+      "author": "Josh Turner",
+      "email": "turner.josh@gmail.com",
+      "message": "Fixed typo in load test pom\n"
+    },
+    {
+      "sha": "87df346c277cf401df2c5118a49d337996b47cb9",
+      "date": "2019-08-16T08:13:01-07:00",
+      "author": "Josh Turner",
+      "email": "turner.josh@gmail.com",
+      "message": "Added a random port forward for troubleshooting with docker\n"
+    },
+    {
+      "sha": "ddd110a3c4930964281ee2dfc72d9a1741b71b97",
+      "date": "2019-08-15T14:22:25-07:00",
+      "author": "Josh Turner",
+      "email": "turner.josh@gmail.com",
+      "message": "Cleaned up solr tracing, fixed bug in solr version, updated waitForSolrIndex to support 5.x with solr_query\n"
+    },
+    {
+      "sha": "f8ffd19ef7eab8ece63cecfe4c799ef99fb344cd",
+      "date": "2019-08-15T11:52:33-07:00",
+      "author": "Josh Turner",
+      "email": "turner.josh@gmail.com",
+      "message": "Added keyspace to CasquatchTrace\n"
+    },
+    {
+      "sha": "443abc9203f29774c3f6d1a615f394ad99e6d7bf",
+      "date": "2019-08-15T09:52:15-07:00",
+      "author": "Josh Turner",
+      "email": "turner.josh@gmail.com",
+      "message": "Set default logging of generator to INFO\n"
+    },
+    {
+      "sha": "eb0f1f8bb38f834fe894a24de4be11f45a2e157f",
+      "date": "2019-08-15T09:51:47-07:00",
+      "author": "Josh Turner",
+      "email": "turner.josh@gmail.com",
+      "message": "Made generator fail for Tuples and Counters as these cannot be supported as of now\n"
+    },
+    {
+      "sha": "a3edb3a39546e4e63f9a5bd077bb2f683f47d444",
+      "date": "2019-08-15T09:35:00-07:00",
+      "author": "Josh Turner",
+      "email": "turner.josh@gmail.com",
+      "message": "Corrected path when package is false\n"
+    }
+  ],
+  "commit_sha": "984ac5c71a41a93346aaccbeed03ac70c492af64",
+  "extracted_at": "2026-10-05T18:46:57.680548+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${springBootVersion};3.3.5",
+  "spring_boot_major": "3",
+  "java_versions_declared": "",
+  "build_evidence": [
+    {
+      "file": "avni-rule-server/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "avni-server-api/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "avni-server-data/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    }
+  ]
+}

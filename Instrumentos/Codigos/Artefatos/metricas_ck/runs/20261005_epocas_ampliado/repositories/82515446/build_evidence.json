@@ -1,0 +1,44 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "3.0.4",
+  "spring_boot_major": "3",
+  "java_versions_declared": "1.8",
+  "build_evidence": [
+    {
+      "file": "custom-jpa-auto-configure/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "custom-jpa-auto-configure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "custom-jpa-auto-configure/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "custom-jpa-sample/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "custom-jpa-sample/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "custom-jpa-sample/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "custom-jpa-starter/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "custom-jpa/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "custom-jpa/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    }
+  ]
+}

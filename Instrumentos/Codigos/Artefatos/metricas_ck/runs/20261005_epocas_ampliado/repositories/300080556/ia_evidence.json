@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "328711561bf96de8bfa0bc4255b0f76ef7097009",
+      "date": "2026-09-29T21:52:30+02:00",
+      "author": "MatejNedic",
+      "email": "matejnedic1@gmail.com",
+      "message": " Back to 4.3.0-SNAPSHOT (#1708)"
+    },
+    {
+      "sha": "49e652efeadaf96f63edf562fdd3b1195b61e869",
+      "date": "2026-09-28T20:13:49+02:00",
+      "author": "matejnedic",
+      "email": "matejnedic1@gmail.com",
+      "message": "Release pipeline\n"
+    },
+    {
+      "sha": "230b05f074e6748b9bd5c94a06eba7db7229064a",
+      "date": "2026-09-26T17:41:21+02:00",
+      "author": "MatejNedic",
+      "email": "matejnedic1@gmail.com",
+      "message": "Release 4.2.0 (#1707)"
+    },
+    {
+      "sha": "b4d7c4005feaaac36645d2fdb8e0b3a01234fd16",
+      "date": "2026-09-20T21:31:12+05:30",
+      "author": "Shubham Asthana",
+      "email": "99900937+shubham-asthana@users.noreply.github.com",
+      "message": "docs(sqs): clarify acknowledgementMode interaction with custom container factory beans (#1683)\n\nWhen a custom SqsMessageListenerContainerFactory bean is declared under a\nname other than defaultSqsListenerContainerFactory, Spring Boot's\nautoconfiguration backs off, so @SqsListener methods relying on the\ndefault factory (e.g. to set acknowledgementMode) fail at startup with\nan unhelpful IllegalArgumentException. Document the workaround via\nfactory or SqsListenerConfigurer#setDefaultListenerContainerFactoryBeanName,\nand add the missing setDefaultListenerContainerFactoryBeanName entry to\nthe registrar attribute list.\n\nFixes #971"
+    },
+    {
+      "sha": "76d330d0b00d4ceba4d90cdfc065be6629c9164d",
+      "date": "2026-09-12T10:22:23-05:00",
+      "author": "Hector Ventura",
+      "email": "hectorvent@gmail.com",
+      "message": "Use floci/floci image in Docker Compose documentation (#1702)"
+    },
+    {
+      "sha": "cfcc24fc20aaaaf24bc94569fe882ea894f022d7",
+      "date": "2026-09-07T21:07:26+02:00",
+      "author": "MatejNedic",
+      "email": "matejnedic1@gmail.com",
+      "message": "Update readme.md after 4.1.x release (#1700)"
+    },
+    {
+      "sha": "90cafe04c0b575810b896b2485555d36e55e6a15",
+      "date": "2026-09-07T15:03:06-03:00",
+      "author": "José Iêdo",
+      "email": "98621042+joseiedo@users.noreply.github.com",
+      "message": "Add support for SqsTemplate to send more than 10 messages at once (#1659)\n\nAdd support to send more than 10 messages in a single call\n\nAdd more tests\n\nsimplifying tests\n\nstop sequential send when a failure occurs\n\n* fix typo in javadoc sqstemplate\n\n* Add message in skipped messages\n\n* remove redundant completable future\n\n* refactor tests for batchs\n\n* add bin-packing for batches grouping\n\n* fix generics compilation error\n\n* backward compatibility with get(0) instead of getFirst()\n\n* cleanup\n\n* Handle batch exceptions in partitioned batches\n\n* make binPackSmallFifoGroups a private method\n\n* use EXCEPTION_PARAMETER_NAME instead of ERROR_CODE_PARAMETER_NAME for failed batch results\n\n* create separate queue for shouldSendMoreThan10MessagesAtOnce test\n\n* test auto-generated group ids binpacking\n\n* formatting\n\n* update documentation for the automatic partition feature for sqs messages batches\n\n* update additional information for failed batch results to include exception object\n\n* Add original exception as a fallback for exceptionParameter value\n\n* Document batch partitioning behavior\n\n* Adjust wording in sqs doc"
+    },
+    {
+      "sha": "b432c402bd7db0058e3a035aef49cf953d343581",
+      "date": "2026-09-04T21:10:35+02:00",
+      "author": "MatejNedic",
+      "email": "matejnedic1@gmail.com",
+      "message": "AppConfig fix refresh token not refreshed in original object #1697 (#1698)"
+    },
+    {
+      "sha": "e2e1739d57f9d7737ebc45352934225b803dd260",
+      "date": "2026-08-30T17:38:19-03:00",
+      "author": "Bruno Augusto",
+      "email": "97524059+brun0-4ugusto@users.noreply.github.com",
+      "message": "Support nested generic payload types in @SqsListener methods (#1666)\n\nPass listener MethodParameter metadata through the container and message source as a SmartMessageConverter conversion hint so Jackson can resolve complete generic payload types. Add unit, converter, batch, and LocalStack integration coverage for wrappers and nested collections.\n\nFixes gh-1597"
+    },
+    {
+      "sha": "6442a0bfb814eb29fcb8c20e4c4771a711696ddb",
+      "date": "2026-08-31T05:29:14+09:00",
+      "author": "Bill Kim (김빌)",
+      "email": "billkimjh@gmail.com",
+      "message": "GH-1143 Add IGNORE QueueNotFoundStrategy option for SQS (#1640)\n\nRestore the Spring Cloud AWS 2.x behavior where a missing SQS queue at\nlistener startup did not fail the application context. In 3.x today the\ntwo strategies are FAIL (throws on missing queue, blocks startup) and\nCREATE (calls CreateQueue on missing, requires sqs:CreateQueue IAM and\ncan interfere with externally-managed queue configuration); neither\nfits the common case where a queue may legitimately be absent in some\ndeployments — for example an optional feature queue, or a multi-region\nrollout that hasn't created the queue yet.\n\nAdd a third strategy, IGNORE, that logs a warning and skips starting\nthe listener container's message source for that queue. Subsequent\npolls return empty so the application keeps running cleanly.\n\nWiring:\n- QueueNotFoundStrategy gets a new IGNORE constant with Javadoc that\n  cross-references the 2.x default behavior.\n- QueueAttributesResolver.handleException, on\n  QueueDoesNotExistException + IGNORE, logs a warning and fails the\n  future with a new QueueNotFoundException (subtype of\n  QueueAttributesResolvingException so existing catch sites keep\n  working; the dedicated subtype is what the source uses to recognize\n  the IGNORE signal). The CREATE path is unchanged.\n- QueueAttributesResolver.wrapException passes QueueNotFoundException\n  through unwrapped instead of re-wrapping in\n  QueueAttributesResolvingException, so the source sees the typed\n  signal rather than a generic resolver failure.\n- AbstractSqsMessageSource.doStart catches CompletionException with\n  QueueNotFoundException as its cause, flips a `skipped` flag, logs a\n  warning, and returns without setting queueAttributes/queueUrl or\n  configuring the conversion context.\n- AbstractSqsMessageSource.doPollForMessages short-circuits to an empty\n  future when `skipped`, so the polling loop is a no-op for the\n  lifetime of the source.\n\nTests:\n- QueueAttributesResolverIntegrationTests#shouldIgnoreQueueWhenStrategyIsIgnore\n  mirrors the existing #shouldNotCreateQueue pattern against LocalStack,\n  asserting that resolving a non-existent queue with IGNORE surfaces a\n  QueueNotFoundException whose cause is QueueDoesNotExistException\n  (rather than the generic QueueAttributesResolvingException that FAIL\n  produces).\n- The full QueueAttributesResolverIntegrationTests class (7 tests)\n  passes locally on LocalStack.\n\nDocs:\n- sqs.adoc table entry for queueNotFoundStrategy gets a sentence on\n  the IGNORE behavior next to the existing FAIL note.\n\nThe property binding for `spring.cloud.aws.sqs.queue-not-found-strategy`\npicks up IGNORE automatically because SqsProperties already exposes the\nenum directly.\n\nCloses #1143.\n\nSigned-off-by: BK202503 <199436087+BK202503@users.noreply.github.com>\n\n* Lift IGNORE guard to AbstractPollingMessageSource\n\nAddress review from @tomazfernandes on #1640. Handling the missing queue\ninside AbstractSqsMessageSource.doStart alone left the container in a\nhalf-started state: the acknowledgement processor still initialised and\nthrew IllegalArgumentException: acknowledgementExecutor not set, and the\npolling thread kept spinning on a source that would only ever return\nempty batches.\n\nMove the guard up to AbstractPollingMessageSource.start(). doStart() now\npropagates QueueNotFoundException; the base start() catches it, logs a\nwarning, sets running=false, and returns before wiring the ack processor\nor starting the polling thread. The source-level skipped flag and the\nshort-circuit in doPollForMessages go away with it.\n\nSigned-off-by: BK202503 <199436087+BK202503@users.noreply.github.com>\n\n* Signal IGNORE via QueueAttributesResolvingException flag\n\nFold the \"queue was ignored\" signal into a boolean on\nQueueAttributesResolvingException instead of a dedicated QueueNotFoundException\nsubtype, per review feedback. QueueAttributesResolver sets the flag on the\nIGNORE branch; AbstractPollingMessageSource inspects the wrapped\nQueueAttributesResolvingException at start() and skips the source when the flag\nis set. Restores original AbstractSqsMessageSource.doStart() and keeps\nSqsTemplate exception semantics identical between IGNORE and FAIL.\n\n* Move IGNORE exception creation to wrapException\n\n* Address IGNORE queue review follow-ups\n\n---------\n\nSigned-off-by: BK202503 <199436087+BK202503@users.noreply.github.com>\nCo-authored-by: BK202503 <199436087+BK202503@users.noreply.github.com>"
+    },
+    {
+      "sha": "9cc0ed86b647d393d4c4da7eebefcdd9ac88f894",
+      "date": "2026-08-30T17:22:56-03:00",
+      "author": "Tomaz Fernandes",
+      "email": "76525045+tomazfernandes@users.noreply.github.com",
+      "message": "Apply Spotless formatting to BatchingAcknowledgementProcessor (#1694)\n\nRunning spotless:apply on main reformats the unbufferedAcks Javadoc in\nBatchingAcknowledgementProcessor."
+    },
+    {
+      "sha": "98f0f4dedf9b6fae9b28117adc9560fe4362aa1c",
+      "date": "2026-08-16T13:54:21-03:00",
+      "author": "Tomaz Fernandes",
+      "email": "76525045+tomazfernandes@users.noreply.github.com",
+      "message": "Speed up the Kinesis test suite (#1674)\n\nThe module had no parallel execution configured, so its classes ran one after\nanother even though each uses its own streams, tables and consumer group.\nEnable concurrent classes and keep methods on the same thread.\n\nThe shared Localstack container start is now guarded, since Testcontainers does\nnot document start() as thread safe and several @BeforeAll methods can reach it\nat once.\n\nConcurrent CreateStream calls can also exceed the limit for streams being\ncreated at the same time. Creation goes through a helper that allows three at\nonce rather than retrying: CreateStream is not idempotent and Kinesis answers\nResourceInUseException once the stream exists, so retrying a call that had\nalready succeeded surfaced a second error that is not retryable either. Gating\nkeeps the suite under the limit instead of reacting after it is hit.\n\nThe KCL classes are single test fixtures whose time is scheduler startup rather\nthan assertions, and they ran with the library defaults for parent shard\npolling of 10 seconds, failover of 10 seconds, scheduler initialization backoff\nof 1 second and task backoff of 500 milliseconds. A single worker against\nLocalstack has no fleet to coordinate with, so those intervals are latency with\nnothing to buy."
+    },
+    {
+      "sha": "8faa6f7105dce2b05747abbd54c26560fa6cf371",
+      "date": "2026-08-16T13:53:57-03:00",
+      "author": "Tomaz Fernandes",
+      "email": "76525045+tomazfernandes@users.noreply.github.com",
+      "message": "Speed up the Kinesis binder test suite (#1681)\n\nThe module had no parallel execution configured, so its five classes ran one\nafter another: 83 seconds of class time in a 90 second module, with the longest\nclass at 42 seconds. Run two at a time.\n\nKinesisTestBinder.cleanup() listed the account and deleted every stream it\nfound. While the classes ran one at a time that was merely broad; running two,\nit removes streams another class is still using. Record what the provisioner\ncreates and delete that.\n\nLocalstack only creates a few streams at a time and the provisioner creates one\nper binding, so gate provisioning to three at once. Retrying instead is not\ncorrect here: CreateStream is not idempotent and Kinesis answers\nResourceInUseException once the stream exists.\n\nKinesisBinderFunctionalTests reads the binding's lifecycle straight after the\ncontext starts, and under a concurrent class the binding is not yet running. A\nread lock on the other four lets them overlap each other while the functional\ntest holds the write lock alone.\n\ncleanup() also waited on waitUntilStreamNotExists with SDK defaults, which back\noff in flat 10 second steps, so every deletion cost at least 10 seconds across\nroughly 13 tests. Poll once per second instead, mirroring what\nKinesisStreamProvisioner already does for creation."
+    },
+    {
+      "sha": "a701622954c61c263de3f1338ed6fa07f7b0b73d",
+      "date": "2026-08-09T19:07:40-03:00",
+      "author": "Tomaz Fernandes",
+      "email": "76525045+tomazfernandes@users.noreply.github.com",
+      "message": "Disable flaky Kinesis binder test (#1680)\n\nKinesisBinderTests.testAnonymousGroup test\n\nSee gh-1667"
+    },
+    {
+      "sha": "df72150bdf8311341c5be12a92c635be4cbdf9c5",
+      "date": "2026-08-09T15:15:39-03:00",
+      "author": "Tomaz Fernandes",
+      "email": "76525045+tomazfernandes@users.noreply.github.com",
+      "message": "Speed up the SQS test suite (#1679)\n\n* Give the SQS test factories explicit shutdown timeouts\n\nEvery integration class paid the production defaults of a twenty second\nlistener shutdown and a twenty second acknowledgement shutdown when its context\nclosed. Set both to zero on the factories the tests already declare, so the\nsetting is visible where it applies and a test can opt out, rather than through\na global customizer that would override every class silently.\n\nThe SQS module goes from about 2:05 to about 1:22 across the three JDKs.\n\nAcknowledgement batching is left alone. Zeroing the interval and threshold as\nwell was measured and bought nothing: it turns every acknowledgement into its\nown call and the added load failed the interceptor and back pressure tests in\nboth runs it was tried in.\n\nSqsIntegrationTests keeps its default factory untouched so its listeners still\nexercise the production defaults.\n\n* Start Localstack off the SQS test worker threads\n\nThe container start ran inside a synchronized @BeforeAll, so the first classes\nscheduled held their worker threads for its whole duration. A plain blocking\nwait does not make the pool compensate with another thread, so the module spent\nits first twenty seconds with one or two tests in flight while five hundred\nunit tests that need no container waited behind it.\n\nStart it when discovery orders the classes, and order the classes that need no\ncontainer first so they fill that window. The start is asked for only when a\nclass in the run needs it, so a run of unit tests alone still starts nothing.\n\nThe test phase goes from 74.7 to 65.9 seconds, and the first ten seconds go\nfrom one or two tests in flight to five to seven.\n\n* Shrink the error handler backoff windows in the SQS tests\n\nThe class is the tail of the module and its longest methods are spent waiting\nout real backoff: linear ran 2+4+6 seconds and the jittered exponential 2+4+8\nbefore the fourth delivery.\n\nThe listeners derive their expected elapsed time from the same constants and\nassert with '>=', so the contract that backoff delays redelivery is unchanged,\nand the arithmetic itself is covered by JitterStrategiesTest and\nJitterContextTest. #1676 removed the assertion floors; this reduces the wait\nthose assertions were measuring.\n\nThe test phase goes from 57.9 to 50.5 seconds.\n\n* Stop three SQS unit tests waiting on real time\n\nThese have no container and no IO, so the time they spend is simulated rather\nthan waited on.\n\nCompositeBackPressureHandlerTest configured a five second no-permits timeout\nfor a test that asserts the wait lasted at least one second, and slept a fixed\n200ms to let a thread reach a blocking state. Use a two second timeout, which\nstill proves the assertion, and observe the thread's state instead of guessing\nhow long it takes to get there.\n\nMessageGroupingSinkTests and BatchingAcknowledgementProcessorTests sleep for a\nrandom interval to vary completion order. The variation is the point, not its\nmagnitude, so shorten the range.\n\nThe sleep whose length decides whether acknowledgements are still in flight\nwhen the processor stops is left alone, since the assertion depends on it."
+    },
+    {
+      "sha": "03370691a2c0e0287fbbda120ee10b2840f384dd",
+      "date": "2026-08-09T13:48:59-03:00",
+      "author": "Tomaz Fernandes",
+      "email": "76525045+tomazfernandes@users.noreply.github.com",
+      "message": "Improve SQS tests resilience under concurrent load (#1678)\n\n* Make the throughput mode adaptation test deterministic\n\nThe test asserted the throughput mode from inside the polling callback, which\nraces with the adaptation it checks: the mode is raised by the release that\nfollows a partial fetch and lowered again by the next empty poll, so a poll can\nobserve either value. It failed on CI, where it ran for the first time after\nthe Abstract* surefire exclusion was lifted.\n\nRecord the mode right after each release instead, on the thread that performed\nit, and assert which release caused which transition. Sampling for the raised\nmode is not an option either, since it only lasts until the next poll.\n\n(cherry picked from commit 62f46d7ea63cac5d30aa6010af927a58d4620d1d)\n\n* Widen the SQS test deadlines that expire under load\n\nSeveral tests wait a fixed time for work to finish, with budgets that only\nhold when the machine is fast: 10 seconds for 100 messages that need at\nleast a second of sleep, 5 seconds for a semaphore handed over by another\nthread, a 21 party barrier, and a drain loop polling for in flight messages.\nUnder a busy CI runner they expire and the test fails while the code under\ntest is correct.\n\nWiden those, which costs no time when they pass, and wait on the latches in\nthe SNS tests directly rather than blocking on them inside an awaitility\nblock, where the outcome depends on which of the two budgets runs out first.\nThe assertions that check an event does not occur keep their short timeouts,\nsince those are spent on every run.\n\n* Cap the two longest SQS test waits at thirty seconds\n\nA latch waited ten minutes and another a thousand seconds. Neither costs time\nwhile the test passes, but on failure they burn the job's budget instead of\nreporting it, and the work they wait on completes in seconds. Thirty seconds is\nwell clear of a loaded runner.\n\n* Wait for the redelivery in observesError instead of failing the assertion\n\nThe test indexes the second 'receive' observation context, which only exists\nafter the message is redelivered. Awaitility retries AssertionError only, so\nindexing an absent element left the wait with an ArrayIndexOutOfBoundsException\nrather than another attempt: the test failed on a loaded runner while the\nredelivery was still in flight.\n\n* Widen the remaining SQS latch deadlines\n\nSame reasoning as the deadlines commit, applied to the classes it did not\nreach: eighty two presence assertions still gave the work ten seconds, which\nholds on an idle machine and does not on a loaded runner. A latch returns as\nsoon as it is counted down, so a green run takes exactly as long either way.\n\nThe two assertions that check an event does not occur keep their short\ntimeouts, since those are spent on every run."
+    },
+    {
+      "sha": "0ad4211815e3454980754ed8a516cef708308781",
+      "date": "2026-08-08T18:00:28-03:00",
+      "author": "Tomaz Fernandes",
+      "email": "76525045+tomazfernandes@users.noreply.github.com",
+      "message": "Speed up SQS error handler tests (#1676)\n\nThe backoff tests wait on real SQS visibility timeouts, and the full jitter\nsequence alone accounted for 63 seconds of waiting.\n\nFail for three retries in every backoff listener rather than four, five or\nsix, and lower the initial value for the plain exponential listener from two\nseconds to one. Three retries still exercise the growth of the sequence.\n\nDrop the minimum wait from the test methods. The listeners already compare\nthe elapsed time reported by SQS against the expected backoff total and only\ncount the latch down when it is met, so awaiting a minimum duration asserted\nthe same property a second time while setting a wall clock floor."
+    },
+    {
+      "sha": "6eeeccac46ee4d27437bc40440e7b3d42e4c780b",
+      "date": "2026-08-08T17:22:07-03:00",
+      "author": "Tomaz Fernandes",
+      "email": "76525045+tomazfernandes@users.noreply.github.com",
+      "message": "Add unit tests for Jitter strategies and context (#1675)\n\nJitter is currently covered only through the error handler tests, which\nexercise it indirectly and never reach its validation paths.\n\nCover the three strategies directly, including the lower bound for HALF with\nodd timeouts and the minimum value of 1 that all of them enforce, along with\nJitter.Context construction and its argument validation."
+    },
+    {
+      "sha": "15846c8c764c7e166aab545589614260524e4a4b",
+      "date": "2026-08-08T14:49:18-03:00",
+      "author": "Tomaz Fernandes",
+      "email": "76525045+tomazfernandes@users.noreply.github.com",
+      "message": "Run SQS test classes named after Abstract* production classes (#1669)\n\nspring-cloud-build configures surefire with an '**/Abstract*.java' exclude,\nassuming classes with that prefix are test base classes. This module has\nseveral concrete test classes named after the Abstract* production classes\nthey cover, so they were silently skipped by the build and only ever ran in\nthe IDE.\n\nClear the exclude for this module. Genuine abstract base classes are not\nexecutable by JUnit, so they stay effectively excluded."
+    },
+    {
+      "sha": "131e94197cc9b107c2fc54c9357ae43f1bf7dd1d",
+      "date": "2026-08-08T23:05:33+05:30",
+      "author": "Baqirrizvidev",
+      "email": "114152937+Baqirrizvidev@users.noreply.github.com",
+      "message": "fix(sqs): prevent ConcurrentModificationException on container stop (#1632)\n\n* fix(sqs): prevent ConcurrentModificationException on container stop\n\nWhen an SQS message listener container is stopped, AbstractPollingMessageSource.stop() iterates over this.pollingFutures to cancel active polls. Each future has a whenComplete callback registered in managePollingFuture that synchronously/concurrently removes itself from the pollingFutures collection. Iterating over the collection while elements are being removed throws a ConcurrentModificationException.\n\nThis commit prevents the exception by taking a shallow snapshot copy of the pollingFutures collection before iterating and cancelling the futures.\n\nFixes #1594\n\n* test(sqs): add regression test for ConcurrentModificationException on container stop\n\nCancelling an in-flight polling future during stop() runs the whenComplete\ncallback registered in managePollingFuture inline on the stopping thread,\nremoving the future from pollingFutures while the collection is iterated.\nThe synchronizedCollection mutex is reentrant, so synchronization alone\ncannot prevent this; iterating a snapshot copy does.\n\nRegression introduced in #1455 by replacing thenRun with whenComplete,\nfirst released in 3.4.1 and 4.0.0.\n\n---------\n\nCo-authored-by: Tomaz Fernandes <tomaz.fernandes.se@gmail.com>"
+    },
+    {
+      "sha": "80c0400955e4795e3e6f80b13c6bf8e573885010",
+      "date": "2026-08-08T13:48:25-03:00",
+      "author": "Tomaz Fernandes",
+      "email": "76525045+tomazfernandes@users.noreply.github.com",
+      "message": "Disable flaky DynamoDbStreamToKinesisIntegrationTests.fromDynamoDbStreamToKinesis (#1668)\n\nSee gh-1667"
+    },
+    {
+      "sha": "4aac178a8223963c830c13a57a381010051a8e0c",
+      "date": "2026-08-08T12:26:08-03:00",
+      "author": "Tomaz Fernandes",
+      "email": "76525045+tomazfernandes@users.noreply.github.com",
+      "message": "Enable parallel Maven reactor builds in CI (#1665)\n\nRun the CI verify with -T 1C so independent modules build concurrently.\nThe reactor currently runs ~15 min sequentially while the test suites are\nwait-bound, not CPU-bound; building modules in parallel cuts wall-clock to\nroughly the longest dependency chain, currently at ~9 minutes."
+    },
+    {
+      "sha": "423f8b7a78e435537637b843adc7c20b6d4fdee5",
+      "date": "2026-08-03T00:06:14+09:00",
+      "author": "송형근(Hyeongguen Song) /Growth",
+      "email": "87850472+hyeongguen-song@users.noreply.github.com",
+      "message": "Account for acknowledgements not yet added to the buffer on shutdown (#1664)\n\nhasAcksLeft() decided whether the shutdown wait was done by looking at\nthe ack queue and the buffer. A message the polling thread has already\ntaken off the queue but not yet added to the buffer is in neither:\n\n    Message<T> polledMessage = this.acks.poll(1, TimeUnit.SECONDS);\n    if (polledMessage != null) {\n        addMessageToBuffer(polledMessage);\n\nIf the wait loop sampled in that window it saw nothing left and returned,\nwaitAcknowledgementsToFinish() then set isTimeoutElapsed and cleared the\nbuffer, and the polling thread added the message to a buffer nothing\nwould ever flush. Unlike the shutdown timeout case, this dropped the\nmessage with no warning at all.\n\nTrack the messages that have been received but are not in the queue nor\nthe buffer yet, and include them in hasAcksLeft(). The counter is\nincremented before the message is offered to the queue and decremented\nafter it has been added to the buffer, so it is never undercounted; the\nbrief double counting while the message sits in the buffer only makes the\nwait more conservative.\n\nAt most one message per shutdown can be in this window, but it widens\nwhenever addMessageToBuffer() has to wait on the buffer lock, which\nhappens while an execution is being dispatched - and for\nAcknowledgementOrdering.ORDERED, that dispatch takes the ordered\nexecution lock while holding the buffer lock.\n\nFollow-up to #1663."
+    },
+    {
+      "sha": "40721dae973091da0cfbeda687c65e17e135931f",
+      "date": "2026-08-02T13:05:46+09:00",
+      "author": "송형근(Hyeongguen Song) /Growth",
+      "email": "87850472+hyeongguen-song@users.noreply.github.com",
+      "message": "Flush buffered acknowledgements from the shutdown wait (#1663)\n\nMessages left in the acknowledgement buffer below the acknowledgement\nthreshold were never flushed on shutdown. The processor spun for the\nwhole acknowledgementShutdownTimeout, logged\n\n  Acknowledgements did not finish in 20000 ms. Proceeding with shutdown.\n\nand then cleared the buffer, so those messages were never deleted from\nSQS and were redelivered once the visibility timeout expired.\n\nDrain the buffer from the shutdown wait loop instead, which makes the\nflush a guarantee of the shutdown path itself rather than something that\ndepends on a scheduled execution being armed. This also covers\nacknowledgementInterval = ZERO with a positive threshold, where no\nscheduled execution is ever created and a remainder was lost on every\nshutdown.\n\nThe flush waits for the ack queue to drain so batches are not needlessly\nsplit, and it is retried on every iteration of the wait loop: the polling\nthread may be holding a message it has already polled but not yet added\nto the buffer, in which case the queue looks empty while the message is\nin neither the queue nor the buffer.\n\nAlso make running volatile in AbstractOrderingAcknowledgementProcessor.\nIt is written under lifecycleMonitor but read without synchronization\nfrom the polling and scheduler threads, so those threads had no\nguarantee of observing stop().\n\nIssue #1661"
+    },
+    {
+      "sha": "1757f57dcb1c7cde2ce98f961cdea88f4f627c95",
+      "date": "2026-08-02T02:04:42+09:00",
+      "author": "송형근(Hyeongguen Song) /DnP",
+      "email": "87850472+hyeongguen-song@users.noreply.github.com",
+      "message": "Use Collectors.toList() in CollectionUtils#partition\n\nStream.toList() is not generic, so U in mapToObj() is inferred solely\nfrom the lambda body as List<T>. That is not assignable to the declared\nList<Collection<T>> return type:\n\n  CollectionUtils.java:[30,40] incompatible types:\n  java.util.List<java.util.List<T>> cannot be converted to\n  java.util.List<java.util.Collection<T>>\n\nCollectors.toList() is generic, which lets the target type propagate back\ninto mapToObj()."
+    },
+    {
+      "sha": "a1235192a54a9a19c0d19806e602509781a53bc0",
+      "date": "2026-07-26T01:47:08+09:00",
+      "author": "Bill Kim (김빌)",
+      "email": "billkimjh@gmail.com",
+      "message": "Fix duplicate DeleteMessageBatchRequestEntry ids when SQS redelivers a message within one ack batch (#1654)\n\nStandard SQS queues can redeliver the same message before the acknowledgement\nbatch is flushed. SqsAcknowledgementExecutor was using MessageHeaderUtils.getId\n(the Spring message id derived from the SQS messageId) as the batch entry id,\nso a duplicate delivery within the same batch produced two entries with the\nsame DeleteMessageBatchRequestEntry.id — AWS then rejected the whole batch\nwith BatchEntryIdsNotDistinctException.\n\nSwitch to a positional-index id. The batch entry id is only a request-local\ncorrelation token, so a per-request unique value is sufficient. Partial-failure\ncorrelation now maps failed ids back to messages by index; if AWS returns an\nid that isn't a valid index the executor still falls back to the\n\"cannot correlate all failure ids\" path.\n\nFixes #1634\n\nSigned-off-by: BK202503 <199436087+BK202503@users.noreply.github.com>\nCo-authored-by: BK202503 <199436087+BK202503@users.noreply.github.com>"
+    },
+    {
+      "sha": "bcde157771c36a0b92be2ca782d262a4b17ec34c",
+      "date": "2026-07-25T22:15:36+05:30",
+      "author": "Baqirrizvidev",
+      "email": "114152937+Baqirrizvidev@users.noreply.github.com",
+      "message": "refactor(sqs): modernize stream collector in SqsContainerOptions (#1629)"
+    },
+    {
+      "sha": "0364eed60514767bf2983626963c3a736b13f325",
+      "date": "2026-07-25T22:13:26+05:30",
+      "author": "Baqirrizvidev",
+      "email": "114152937+Baqirrizvidev@users.noreply.github.com",
+      "message": "refactor(sqs): modernize stream collector in QueueMessageVisibility (#1628)"
+    },
+    {
+      "sha": "71abc526263c33c01040436660d72b6945ffd918",
+      "date": "2026-07-25T22:13:09+05:30",
+      "author": "Baqirrizvidev",
+      "email": "114152937+Baqirrizvidev@users.noreply.github.com",
+      "message": "refactor(sqs): modernize stream collector in MessageHeaderUtils (#1627)"
+    },
+    {
+      "sha": "b3cfb566f665833fc1da4da59c4155b579adb5b7",
+      "date": "2026-07-25T22:12:39+05:30",
+      "author": "Baqirrizvidev",
+      "email": "114152937+Baqirrizvidev@users.noreply.github.com",
+      "message": "refactor(sqs): modernize stream collector in CollectionUtils (#1626)"
+    }
+  ],
+  "commit_sha": "328711561bf96de8bfa0bc4255b0f76ef7097009",
+  "extracted_at": "2026-10-05T17:59:47.254069+00:00"
+}

@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "8d7bd54a624feee9b2f4e46c4c56b59efbdd0f72",
+      "date": "2025-03-09T14:16:46+08:00",
+      "author": "李智维",
+      "email": "13434615275@163.com",
+      "message": "feat：代码沙箱执行结果就算是空串也保存下来，部分测试用例的输出结果就是空串\n"
+    },
+    {
+      "sha": "42abc4657e2d3602e7a32757d0d15ad435737acd",
+      "date": "2025-02-27T23:15:42+08:00",
+      "author": "李智维",
+      "email": "13434615275@163.com",
+      "message": "feat: 文章内容长度上限上调\n"
+    },
+    {
+      "sha": "7339b00df7eba53f6d452e2913c5af4b95c7b65a",
+      "date": "2025-02-27T00:56:54+08:00",
+      "author": "李智维",
+      "email": "13434615275@163.com",
+      "message": "chore: 优化后端启动脚本 app.sh\n\n原脚本执行时报错了，原因是脚本中的函数定义语法与使用的Shell解释器不兼容导致的。/bin/sh在某些系统（如Ubuntu）中链接到dash\n\n，而dash不支持function关键字。\n\n主要修改如下：\n\n移除了所有function关键字，改用POSIX标准函数定义语法\n\n规范了代码格式，增加可读性\n\n增强了引号使用，避免文件名包含空格时出错\n\n改进了PID检测逻辑，使用更可靠的ps -p检查进程存在\n\n优化了状态检查，使用数值比较代替字符串比较\n\n注意：在 jdk11 或以上的版本执行没问题，低版本不确定是否兼容。\n"
+    },
+    {
+      "sha": "cb167fa9cc68502f2aa9a2ef517e52220edbd77b",
+      "date": "2025-02-27T00:50:50+08:00",
+      "author": "李智维",
+      "email": "13434615275@163.com",
+      "message": "refactor: 把配置都抽取到配置文件中，提高可配置性\n"
+    },
+    {
+      "sha": "2b4acad351ed8e494ef3f161354a25e1925a671d",
+      "date": "2025-01-06T00:27:53+08:00",
+      "author": "李智维",
+      "email": "13434615275@163.com",
+      "message": "chore: 完善文档\n"
+    },
+    {
+      "sha": "392a249c8820c80f492c5cc5c3d3c5ce300e0345",
+      "date": "2025-01-05T23:19:23+08:00",
+      "author": "李智维",
+      "email": "13434615275@163.com",
+      "message": "chore: 补充代码沙箱的说明文档\n"
+    },
+    {
+      "sha": "3346e1d5950cdd6cf8c337893cc7035a371aee72",
+      "date": "2025-01-05T22:06:24+08:00",
+      "author": "李智维",
+      "email": "13434615275@163.com",
+      "message": "chore: 完善项目文档\n"
+    },
+    {
+      "sha": "6d4f7719acf2eb0ed1d9466644a60ae7e9772113",
+      "date": "2025-01-05T19:36:22+08:00",
+      "author": "李智维",
+      "email": "13434615275@163.com",
+      "message": "chore: 整理、更新 sql 脚本\n"
+    },
+    {
+      "sha": "2d5d4ff820b76f0bfe879f398da7d6003ddde60e",
+      "date": "2025-01-04T15:15:58+08:00",
+      "author": "李智维",
+      "email": "13434615275@163.com",
+      "message": "chore: 完善 README.md 文档\n"
+    },
+    {
+      "sha": "098e2233eaf52ded38707338cf730b423f04858d",
+      "date": "2025-01-04T12:27:19+08:00",
+      "author": "李智维",
+      "email": "13434615275@163.com",
+      "message": "feat: 添加代码沙箱各种语言代码执行镜像构建用到的 Dockerfile 和相关脚本\n"
+    },
+    {
+      "sha": "97dbe54e5d21a95973f2f2260c83377906e53886",
+      "date": "2025-01-02T23:12:16+08:00",
+      "author": "李智维",
+      "email": "13434615275@163.com",
+      "message": "chore: 添加项目启动脚本\n"
+    },
+    {
+      "sha": "08862483899cc31dc1790d83518ad320c5e33721",
+      "date": "2025-01-02T00:52:25+08:00",
+      "author": "李智维",
+      "email": "13434615275@163.com",
+      "message": "feat: 不再使用数据库表自动生成工具 table-creator，提高项目通用性\n\ncom.lemon.util.table-creator 是本人开发的一款数据库自动生成工具，用于根据实体类定义自动生成数据库表，\n\n但是目前该工具尚未部署到 MAVEN 中心仓库，要使用的话则需要先将该工具代码拉到本地，再在目标项目中进行引入及使用，\n\n否则项目会因找不到对应依赖而报错，所以是比较麻烦的。同时，短期内也抽不出精力对该工具进行维护以及部署，因此决定在本项目\n\n暂时不再依赖该工具，方便他人部署使用。\n"
+    },
+    {
+      "sha": "7ffd2f4165d4dd7bab581233487c025c808e5b10",
+      "date": "2025-01-01T23:07:11+08:00",
+      "author": "李智维",
+      "email": "13434615275@163.com",
+      "message": "chore：删除不再使用的文档图片\n"
+    },
+    {
+      "sha": "3733efc62c5889140644589ffa8908c7959948a3",
+      "date": "2025-01-01T01:05:40+08:00",
+      "author": "李智维",
+      "email": "13434615275@163.com",
+      "message": "chore: 完善项目文档\n"
+    },
+    {
+      "sha": "8cab995d04e5c36e1562961ed136cdf44a361a27",
+      "date": "2024-12-31T00:41:31+08:00",
+      "author": "李智维",
+      "email": "13434615275@163.com",
+      "message": "chore: 补充文档说明\n"
+    },
+    {
+      "sha": "51124df67b9d9690adfecaa9cc4eed2e6ecf25df",
+      "date": "2024-12-08T20:56:52+08:00",
+      "author": "李智维",
+      "email": "13434615275@163.com",
+      "message": "chore: 更正 .gitignore 的配置\n"
+    },
+    {
+      "sha": "f36c19e5a75cb6cb55299d32341081341767434e",
+      "date": "2024-12-08T20:38:20+08:00",
+      "author": "李智维",
+      "email": "13434615275@163.com",
+      "message": "chore: 移除 idea 生成的文件\n"
+    },
+    {
+      "sha": "f84639ffd5624c380713d050718e8fe2ccc5e163",
+      "date": "2024-12-08T20:32:21+08:00",
+      "author": "李智维",
+      "email": "13434615275@163.com",
+      "message": "chore: 代码沙箱版本管理排除根目录下的 config 目录\n"
+    },
+    {
+      "sha": "1246e911aaebb6ee797096d8f77563b4ee340d5f",
+      "date": "2024-12-08T20:17:37+08:00",
+      "author": "李智维",
+      "email": "13434615275@163.com",
+      "message": "chore: 添加代码沙箱程序的启停脚本\n"
+    },
+    {
+      "sha": "93c8bff81cf6fb5fe46046989d7c9371e06eddc9",
+      "date": "2024-12-08T20:09:26+08:00",
+      "author": "李智维",
+      "email": "13434615275@163.com",
+      "message": "feat: 修改代码沙箱和 docker 的地址（后续优化，独立到配置文件中配置）\n"
+    },
+    {
+      "sha": "37a143b4e765221781e29f773a5329a1cab9d2df",
+      "date": "2024-12-08T18:55:37+08:00",
+      "author": "李智维",
+      "email": "13434615275@163.com",
+      "message": "chore: 存放前端提交的作答代码目录不纳入版本管理\n"
+    },
+    {
+      "sha": "79e51b799faeccd3810602fddf4ed31f22a4c6f1",
+      "date": "2024-12-08T18:35:43+08:00",
+      "author": "李智维",
+      "email": "13434615275@163.com",
+      "message": "chore: 删除测试代码沙箱时遗留的代码文件\n"
+    },
+    {
+      "sha": "df6ebbe900df7d439ba0f9c3891457e925be1fec",
+      "date": "2024-12-08T18:33:12+08:00",
+      "author": "李智维",
+      "email": "13434615275@163.com",
+      "message": "chore: 父项目添加 .gitignore 文件, 并添加忽略规则\n"
+    },
+    {
+      "sha": "a68ae0f1a4ebfeafe9e0f0102c7fca2b4ea63d3a",
+      "date": "2024-10-29T00:24:40+08:00",
+      "author": "李智维",
+      "email": "13434615275@163.com",
+      "message": "test: 添加用于给代码沙箱执行的测试代码\n"
+    },
+    {
+      "sha": "9b5f5f7c4ae200287c4e58c2a24127bf0d5b8def",
+      "date": "2024-10-29T00:23:18+08:00",
+      "author": "李智维",
+      "email": "13434615275@163.com",
+      "message": "chore: 更新创建 ES 索引的请求\n"
+    },
+    {
+      "sha": "3257c8bc8cf56c9760e43918cb1a64c6f8d1d30e",
+      "date": "2024-10-29T00:15:53+08:00",
+      "author": "李智维",
+      "email": "13434615275@163.com",
+      "message": "chore: 项目配置文件不纳入版本管理\n"
+    },
+    {
+      "sha": "5fa3d596970cbac5ff2fb1a83f13ded6d2627071",
+      "date": "2024-10-28T23:56:55+08:00",
+      "author": "李智维",
+      "email": "13434615275@163.com",
+      "message": "chore: 将 .idea 目录不纳入版本管理\n"
+    },
+    {
+      "sha": "47a666b3455c90cf7ee3cf942b933c0fddd25f00",
+      "date": "2024-10-28T23:56:18+08:00",
+      "author": "李智维",
+      "email": "13434615275@163.com",
+      "message": "chore: 移除不必要的文件\n"
+    },
+    {
+      "sha": "51fc289a3cb6497662707e1bcb028d0fa2ad6082",
+      "date": "2024-05-21T18:40:28+08:00",
+      "author": "lemon",
+      "email": "13434615275@163.com",
+      "message": "整理代码\n"
+    },
+    {
+      "sha": "aac5e53f5cacc395109430ef53a90349f25dd06f",
+      "date": "2024-04-25T13:13:05+08:00",
+      "author": "lemon",
+      "email": "13434615275@163.com",
+      "message": "修复上线后出现的一些bug\n"
+    }
+  ],
+  "commit_sha": "8d7bd54a624feee9b2f4e46c4c56b59efbdd0f72",
+  "extracted_at": "2026-10-05T18:33:35.969262+00:00"
+}

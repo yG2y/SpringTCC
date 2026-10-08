@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "0eba43491ac9c3b78f83bb59207f7939d03a97cd",
+      "date": "2024-02-19T08:07:02+01:00",
+      "author": "Joel Messerli",
+      "email": "git@pegnu.dev",
+      "message": "fix: improve no mealplan detection\n"
+    },
+    {
+      "sha": "090f919d678ffd82a5daf8e960fbb190dbd1c76d",
+      "date": "2023-10-31T15:24:16+01:00",
+      "author": "Joel Messerli",
+      "email": "git@pegnu.dev",
+      "message": "feat: user-agent from build info\n\nexpose build info in actuator\n"
+    },
+    {
+      "sha": "d91fe4c764aa3103141ea23abfc12eccbbb0a50e",
+      "date": "2023-10-31T14:10:25+01:00",
+      "author": "Joel Messerli",
+      "email": "git@pegnu.dev",
+      "message": "refactor: make svrestaurant immutable\n"
+    },
+    {
+      "sha": "2dd5a43a80299f0cf87414ea9866883e414917e2",
+      "date": "2023-10-31T13:56:41+01:00",
+      "author": "Joel Messerli",
+      "email": "git@pegnu.dev",
+      "message": "refactor: use records, sonar issues\n"
+    },
+    {
+      "sha": "f19948af6d5256d7322d8693c28d578f07d29d9d",
+      "date": "2023-10-31T13:25:57+01:00",
+      "author": "Joel Messerli",
+      "email": "git@pegnu.dev",
+      "message": "refactor: extract repository for meal plan\n"
+    },
+    {
+      "sha": "eaa49b57e16bfb9479ae6a73a441615de668ef52",
+      "date": "2023-10-31T12:55:26+01:00",
+      "author": "Joel Messerli",
+      "email": "git@pegnu.dev",
+      "message": "refactor: extract repository for restaurant search\n"
+    },
+    {
+      "sha": "630def9ee7f862794d1b23bfcbbe76040e3051e0",
+      "date": "2023-10-31T12:42:48+01:00",
+      "author": "Joel Messerli",
+      "email": "git@pegnu.dev",
+      "message": "chore: small codestyle fixes\n"
+    },
+    {
+      "sha": "83f74d219b2e839854e411df7b8e7196e6455b56",
+      "date": "2023-10-31T12:37:53+01:00",
+      "author": "Joel Messerli",
+      "email": "git@pegnu.dev",
+      "message": "refactor: move to app/domain/infrastructure\n\nWithout interfaces yet\n"
+    },
+    {
+      "sha": "e7989c6732323fd1386cabb066cf99aae3b83d7d",
+      "date": "2023-10-31T09:52:29+01:00",
+      "author": "Joel Messerli",
+      "email": "git@pegnu.dev",
+      "message": "chore: spring boot 3, replace cache implementation\n"
+    },
+    {
+      "sha": "0b59a2a5b8e0d9ace581b2e482c11f6718ab142a",
+      "date": "2023-10-31T09:10:54+01:00",
+      "author": "Joel Messerli",
+      "email": "git@pegnu.dev",
+      "message": "chore: dependency & java update\n"
+    },
+    {
+      "sha": "79fcdcce256c2381d3d7122d63353aa570292004",
+      "date": "2023-10-02T10:21:49+02:00",
+      "author": "Joel Messerli",
+      "email": "git@pegnu.dev",
+      "message": "chore: set version\n"
+    },
+    {
+      "sha": "c1ee48056f138e87d1a2236413dc541f5acee93c",
+      "date": "2023-10-02T10:00:58+02:00",
+      "author": "Joel Messerli",
+      "email": "git@pegnu.dev",
+      "message": "fix: DateUtilTest being year dependent\n"
+    },
+    {
+      "sha": "945f039a38ec1b3f5799b083609f14dda919792d",
+      "date": "2023-10-02T09:49:06+02:00",
+      "author": "Yannick Huggler",
+      "email": "yannick.huggler@polypoint.ch",
+      "message": "feat: Add dietary restrictions parser\n"
+    },
+    {
+      "sha": "901a0e59f5fb9c7e4fd476e3f52ff2b4a2ff0fdd",
+      "date": "2023-10-02T09:48:14+02:00",
+      "author": "Yannick Huggler",
+      "email": "yannick.huggler@polypoint.ch",
+      "message": "feat: Add dietary restrictions parser\n"
+    },
+    {
+      "sha": "2866a076bb7f579a863b55f4553cd87f98351e5c",
+      "date": "2022-12-16T01:39:07+01:00",
+      "author": "Joel Messerli",
+      "email": "git@pegnu.dev",
+      "message": "fix: date parsing when range starts before today\n"
+    },
+    {
+      "sha": "8da069c65ee4f6adeb302b3c524feca62090ffb2",
+      "date": "2022-12-15T22:49:44+01:00",
+      "author": "Joel Messerli",
+      "email": "git@pegnu.dev",
+      "message": "fix: set Java version for buildpack\n"
+    },
+    {
+      "sha": "3454c0ae80e5938a29d00e6e2de282750f920a09",
+      "date": "2022-12-15T22:14:22+01:00",
+      "author": "Joel Messerli",
+      "email": "git@pegnu.dev",
+      "message": "Fix docker login (?)"
+    },
+    {
+      "sha": "51efc715187880ad3e2238adede5bae5044f7b88",
+      "date": "2022-12-15T22:07:49+01:00",
+      "author": "Joel Messerli",
+      "email": "git@pegnu.dev",
+      "message": "Add publish to CI"
+    },
+    {
+      "sha": "03f3b71f94776ed961527b4ebc3d32331d62a84c",
+      "date": "2022-12-15T21:43:54+01:00",
+      "author": "Joel Messerli",
+      "email": "git@pegnu.dev",
+      "message": "Add github actions ci"
+    },
+    {
+      "sha": "06de6deff7ae576b5923c007707885aedc45018d",
+      "date": "2022-12-09T23:02:24+01:00",
+      "author": "Joel Messerli",
+      "email": "git@pegnu.dev",
+      "message": "chore: set release version 4.0.0\n"
+    },
+    {
+      "sha": "ec7568f29a4eb6d8946d30d46ea58d236ed14392",
+      "date": "2022-12-09T23:01:20+01:00",
+      "author": "Joel Messerli",
+      "email": "git@pegnu.dev",
+      "message": "feat!: return all available meal plans when called without offset\n"
+    },
+    {
+      "sha": "73192b1a2afc5bf70e353f76339d4a98673b3472",
+      "date": "2022-11-30T00:23:41+01:00",
+      "author": "Joel Messerli",
+      "email": "git@pegnu.dev",
+      "message": "fix: docker java version mismatch\n"
+    },
+    {
+      "sha": "16e29a8cc81375ab8b79cd61345a52ad6ab7a9bc",
+      "date": "2022-11-29T23:12:49+01:00",
+      "author": "Joel Messerli",
+      "email": "git@pegnu.dev",
+      "message": "chore: set release version 3.0.0\n"
+    },
+    {
+      "sha": "1f7ee674a4fbf196b625d99e5e318d56a841ee73",
+      "date": "2022-11-29T23:11:18+01:00",
+      "author": "Joel Messerli",
+      "email": "git@pegnu.dev",
+      "message": "chore: improve internal price detection\n"
+    },
+    {
+      "sha": "1f41e2f8d1770fadffbed200089bff356f3ef85e",
+      "date": "2022-11-29T23:03:58+01:00",
+      "author": "Joel Messerli",
+      "email": "git@pegnu.dev",
+      "message": "chore: lombok all the things, replace response entity with exceptions\n"
+    },
+    {
+      "sha": "5747e860062eedb96a08902e01f444b620e39f28",
+      "date": "2022-11-29T22:20:19+01:00",
+      "author": "Joel Messerli",
+      "email": "git@pegnu.dev",
+      "message": "chore: remove unused proxy stuff\n"
+    },
+    {
+      "sha": "a9e972519500edc7d11244f3be9d4ff2023fd319",
+      "date": "2022-11-29T22:17:05+01:00",
+      "author": "Joel Messerli",
+      "email": "git@pegnu.dev",
+      "message": "chore: remove gson and just use jackson\n"
+    },
+    {
+      "sha": "016bdc9ffd329e5d2d3bbbd2f2ff02de1fbeceea",
+      "date": "2022-11-29T22:10:48+01:00",
+      "author": "Joel Messerli",
+      "email": "git@pegnu.dev",
+      "message": "chore: replace own converter with spring converter infra\n"
+    },
+    {
+      "sha": "5bf9fe851990bac62aad807d4f9eaee13e19c4ee",
+      "date": "2022-11-29T22:06:35+01:00",
+      "author": "Joel Messerli",
+      "email": "git@pegnu.dev",
+      "message": "chore: reformat using google code style\n"
+    },
+    {
+      "sha": "e94f6e939be0cd07e556059c73364c5d46a84709",
+      "date": "2022-11-29T21:59:28+01:00",
+      "author": "Joel Messerli",
+      "email": "git@pegnu.dev",
+      "message": "chore: upgrade to spring 2.7\n"
+    }
+  ],
+  "commit_sha": "0eba43491ac9c3b78f83bb59207f7939d03a97cd",
+  "extracted_at": "2026-10-05T18:20:38.537438+00:00"
+}

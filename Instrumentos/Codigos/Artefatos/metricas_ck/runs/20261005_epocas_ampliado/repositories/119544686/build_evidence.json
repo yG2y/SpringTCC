@@ -1,0 +1,100 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "2.4.5;2.6.2",
+  "spring_boot_major": "2",
+  "java_versions_declared": "11;17",
+  "build_evidence": [
+    {
+      "file": "account-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "account-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "account-service/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "config-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "customer-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "customer-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "discovery-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "gateway-service/pom.xml",
+      "artifact": "spring-boot-starter-data-redis-reactive"
+    },
+    {
+      "file": "gateway-service/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "gateway-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "kubernetes/sample-db-vault/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "kubernetes/sample-db-vault/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "kubernetes/sample-db-vault/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "kubernetes/sample-db-vault/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "kubernetes/sample-db-vault/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "order-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "order-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "order-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "order-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "product-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "product-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "product-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

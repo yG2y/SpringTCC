@@ -1,0 +1,224 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${spring-boot.version};4.1.1",
+  "spring_boot_major": "4",
+  "java_versions_declared": "17;8",
+  "build_evidence": [
+    {
+      "file": "core/grantforge-agent-core/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "core/grantforge-audit/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "core/grantforge-audit/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa-test"
+    },
+    {
+      "file": "core/grantforge-audit/pom.xml",
+      "artifact": "spring-boot-starter-liquibase"
+    },
+    {
+      "file": "core/grantforge-authz/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "core/grantforge-authz/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa-test"
+    },
+    {
+      "file": "core/grantforge-authz/pom.xml",
+      "artifact": "spring-boot-starter-liquibase"
+    },
+    {
+      "file": "core/grantforge-common/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "core/grantforge-identity/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "core/grantforge-identity/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "core/grantforge-identity/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "core/grantforge-identity/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa-test"
+    },
+    {
+      "file": "core/grantforge-identity/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "core/grantforge-identity/pom.xml",
+      "artifact": "spring-boot-starter-liquibase"
+    },
+    {
+      "file": "core/grantforge-oauth/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "core/grantforge-oauth/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa-test"
+    },
+    {
+      "file": "core/grantforge-oauth/pom.xml",
+      "artifact": "spring-boot-starter-liquibase"
+    },
+    {
+      "file": "core/grantforge-persistence/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "core/grantforge-persistence/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "core/grantforge-persistence/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa-test"
+    },
+    {
+      "file": "core/grantforge-persistence/pom.xml",
+      "artifact": "spring-boot-starter-liquibase"
+    },
+    {
+      "file": "core/grantforge-plugin-api/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "core/grantforge-plugin-host/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "core/grantforge-plugin-host/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa-test"
+    },
+    {
+      "file": "core/grantforge-plugin-host/pom.xml",
+      "artifact": "spring-boot-starter-liquibase"
+    },
+    {
+      "file": "core/grantforge-policy-engine/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "core/grantforge-server/pom.xml",
+      "artifact": "spring-boot-starter-liquibase"
+    },
+    {
+      "file": "core/grantforge-server/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "core/grantforge-server/pom.xml",
+      "artifact": "spring-boot-starter-session-jdbc"
+    },
+    {
+      "file": "core/grantforge-server/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "core/grantforge-server/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "core/grantforge-server/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "core/grantforge-server/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "core/grantforge-server/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "core/grantforge-server/pom.xml",
+      "artifact": "spring-boot-starter-security-test"
+    },
+    {
+      "file": "core/grantforge-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "core/grantforge-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa-test"
+    },
+    {
+      "file": "core/grantforge-service/pom.xml",
+      "artifact": "spring-boot-starter-liquibase"
+    },
+    {
+      "file": "core/grantforge-test-support/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "perf/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "plugins/grantforge-agent-hdfs/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "plugins/grantforge-plugin-example/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "plugins/grantforge-plugin-hdfs/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "samples/notes/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "samples/notes/pom.xml",
+      "artifact": "spring-boot-starter-oauth2-client"
+    },
+    {
+      "file": "samples/notes/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "samples/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "samples/shop/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "samples/shop/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "samples/shop/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "sdk/grantforge-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "sdk/grantforge-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "sdk/grantforge-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa-test"
+    }
+  ]
+}

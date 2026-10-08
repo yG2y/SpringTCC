@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "30a32f1745ef1053fe0fab82ee0fd067d2ae9539",
+      "date": "2026-09-30T22:16:49+02:00",
+      "author": "Alessandro Schwaiger",
+      "email": "aless2003@gmx.at",
+      "message": "v2.0.1\n"
+    },
+    {
+      "sha": "f3a693a88dc111da902fed975a6c084a2ea511f1",
+      "date": "2026-09-30T21:33:12+02:00",
+      "author": "Alessandro Schwaiger",
+      "email": "46018087+aless2003@users.noreply.github.com",
+      "message": "Merge pull request #169 from Suwayomi/support-default-category\n\nUpdate default category handling to isDefaultCategory"
+    },
+    {
+      "sha": "c761a4222ec62531c56870980ab3ce8ffb6c6b28",
+      "date": "2026-09-30T17:55:59Z",
+      "author": "deepsource-autofix[bot]",
+      "email": "62050782+deepsource-autofix[bot]@users.noreply.github.com",
+      "message": "style: format code with Google Java Format\n\nThis commit fixes the style issues introduced in 1621917 according to the output\nfrom Google Java Format.\n\nDetails: https://github.com/Suwayomi/Suwayomi-VaadinUI/pull/169"
+    },
+    {
+      "sha": "1621917a1e571f2e47c2d150c2258be78f477794",
+      "date": "2026-09-30T18:19:42+02:00",
+      "author": "Alessandro Schwaiger",
+      "email": "aless2003@gmx.at",
+      "message": "Update default category handling to isDefaultCategory\n\n- Update schema.graphqls and CategoryOperations.graphql with isDefaultCategory\n\n- Add isDefaultCategory to Category model with id == 0 fallback\n\n- Map isDefaultCategory in CategoryClient\n\n- Update CategoryTab and RootView to check isDefaultCategory instead of id == 0\n\n- Add CategoryTest unit tests\n"
+    },
+    {
+      "sha": "726cd12bbc28143c96753dd72d44c02c2f1800d1",
+      "date": "2026-09-20T23:58:17+02:00",
+      "author": "Alessandro Schwaiger",
+      "email": "aless2003@gmx.at",
+      "message": "ci: support workflow_dispatch and auto fork sync in winget release\n"
+    },
+    {
+      "sha": "19d818f82d305b48382af023170fae388df4d07d",
+      "date": "2026-09-20T22:29:24+02:00",
+      "author": "Alessandro Schwaiger",
+      "email": "aless2003@gmx.at",
+      "message": "Fix PWA build and memory constraints in CI release workflow\n"
+    },
+    {
+      "sha": "60b30b2cf798b090a26908f72729159ac1872ab8",
+      "date": "2026-09-20T22:08:57+02:00",
+      "author": "Alessandro Schwaiger",
+      "email": "aless2003@gmx.at",
+      "message": "Fix compilation error with NoArgsConstructor on ServerVersion record\n"
+    },
+    {
+      "sha": "be353877aada08eb9a5038d5d2e218c2fdc97d45",
+      "date": "2026-09-19T05:14:27+02:00",
+      "author": "Alessandro Schwaiger",
+      "email": "46018087+aless2003@users.noreply.github.com",
+      "message": "Merge pull request #167 from Suwayomi/2.0.0\n\n2.0.0"
+    },
+    {
+      "sha": "750e9a5659f596e2c05c80f5adf4219d62016a2a",
+      "date": "2026-09-19T05:13:29+02:00",
+      "author": "Alessandro Schwaiger",
+      "email": "aless2003@gmx.at",
+      "message": "Fix static analysis issues\n"
+    },
+    {
+      "sha": "0030deba9df9f0bdea122b52853dc8fbbc7fcc09",
+      "date": "2026-09-19T04:52:41+02:00",
+      "author": "Alessandro Schwaiger",
+      "email": "aless2003@gmx.at",
+      "message": "Update installer and application name to Suwayomi VaadinUI\n"
+    },
+    {
+      "sha": "2120ea181d6d0323ecfb8662e79129b49f4f7389",
+      "date": "2026-09-19T03:51:46+02:00",
+      "author": "Alessandro Schwaiger",
+      "email": "aless2003@gmx.at",
+      "message": "Update appdata.xml\n"
+    },
+    {
+      "sha": "7962b22260bcc7feaedbca31ceb0f4154ec649f2",
+      "date": "2026-09-19T03:30:30+02:00",
+      "author": "Alessandro Schwaiger",
+      "email": "aless2003@gmx.at",
+      "message": "Update screenshots to new UI design\n"
+    },
+    {
+      "sha": "11ccc95c724a97423d0f299b56cec6eea58a10cd",
+      "date": "2026-09-19T03:13:04+02:00",
+      "author": "Alessandro Schwaiger",
+      "email": "aless2003@gmx.at",
+      "message": "manga card visual fixes\n"
+    },
+    {
+      "sha": "343f1e28b2abe2bceabd90c643409156070fcffd",
+      "date": "2026-09-19T01:29:21+02:00",
+      "author": "Alessandro Schwaiger",
+      "email": "aless2003@gmx.at",
+      "message": "GQL 2.3 Compliance\n"
+    },
+    {
+      "sha": "68a16ab839d70df207bdd80ff17da89f3d8832a2",
+      "date": "2026-07-17T16:05:28+02:00",
+      "author": "Alessandro Schwaiger",
+      "email": "aless2003@gmx.at",
+      "message": "Handle empty/corrupted trackers/tokens JSON files gracefully on startup\n"
+    },
+    {
+      "sha": "e14eec34890ca3b8d655ea08fb7aa5900c82b1d7",
+      "date": "2026-07-17T15:34:47+02:00",
+      "author": "Alessandro Schwaiger",
+      "email": "aless2003@gmx.at",
+      "message": "Change Java toolchain vendor to ADOPTIUM to fix jpackage\n"
+    },
+    {
+      "sha": "7e795d3a451878b769dec6fd5eb4dafc26b06f03",
+      "date": "2026-07-17T15:13:32+02:00",
+      "author": "Alessandro Schwaiger",
+      "email": "aless2003@gmx.at",
+      "message": "Revert \"Update to Java 25\"\n\nThis reverts commit a8d0995ec86ac7d74df2468bf496f346af228811.\n"
+    },
+    {
+      "sha": "37281a6c4ac8f8b94c700e886e5c6977bc70b389",
+      "date": "2026-07-14T14:42:49+02:00",
+      "author": "Alessandro Schwaiger",
+      "email": "aless2003@gmx.at",
+      "message": "Added Search Loading Spinner\n"
+    },
+    {
+      "sha": "866224a9e115be18705cd42841c9422b61ef96c2",
+      "date": "2026-07-14T13:37:57+02:00",
+      "author": "Alessandro Schwaiger",
+      "email": "aless2003@gmx.at",
+      "message": "Add Jar Validation to avoid silent errors\n"
+    },
+    {
+      "sha": "ac8c9d8a495cc1b8ba63e69d39a489b68687d1d1",
+      "date": "2026-07-14T09:45:53+02:00",
+      "author": "Alessandro Schwaiger",
+      "email": "aless2003@gmx.at",
+      "message": "Prefer IPv4 because of issues I've experienced with github without it\n"
+    },
+    {
+      "sha": "899adbafed2837e0ae1acbba8c7d94fb6bf43d3c",
+      "date": "2026-07-14T05:19:22+02:00",
+      "author": "Alessandro Schwaiger",
+      "email": "aless2003@gmx.at",
+      "message": "Serialization Fallback on corrupted meta.json\n"
+    },
+    {
+      "sha": "b6577bca025fff135d4451b31e0c2646cd4b6588",
+      "date": "2026-07-14T05:18:55+02:00",
+      "author": "Alessandro Schwaiger",
+      "email": "aless2003@gmx.at",
+      "message": "V2 text\n"
+    },
+    {
+      "sha": "a8d0995ec86ac7d74df2468bf496f346af228811",
+      "date": "2026-07-14T03:34:47+02:00",
+      "author": "Alessandro Schwaiger",
+      "email": "aless2003@gmx.at",
+      "message": "Update to Java 25\n"
+    },
+    {
+      "sha": "36853214fb34df6f4443584b687f97eef9080b8b",
+      "date": "2026-07-14T02:38:28+02:00",
+      "author": "Alessandro Schwaiger",
+      "email": "aless2003@gmx.at",
+      "message": "Update gitignore\n"
+    },
+    {
+      "sha": "4362cc2f867f5f569afb33ad1625ec1a142c443e",
+      "date": "2026-06-19T19:02:07+02:00",
+      "author": "Alessandro Schwaiger",
+      "email": "aless2003@gmx.at",
+      "message": "Updated Suwayomi Starting Behavior\n"
+    },
+    {
+      "sha": "53a095372a15439b9512410f303c3a6cdd7fe4d8",
+      "date": "2026-06-19T01:56:13+02:00",
+      "author": "Alessandro Schwaiger",
+      "email": "aless2003@gmx.at",
+      "message": "new Splide Based Page Viewer\n"
+    },
+    {
+      "sha": "a85fde8d1e182d3decf40b6d2d5853b66f99bcb4",
+      "date": "2026-06-17T23:51:06+02:00",
+      "author": "Alessandro Schwaiger",
+      "email": "aless2003@gmx.at",
+      "message": "New Reader Safepoint\n"
+    },
+    {
+      "sha": "6eb163515ce3398e71881c88f5164b50bfdd9803",
+      "date": "2026-06-16T18:44:05+02:00",
+      "author": "Alessandro Schwaiger",
+      "email": "aless2003@gmx.at",
+      "message": "Fix Reader View hiding toolbars on drag\n"
+    },
+    {
+      "sha": "e92a637a060dc6228ca21865c1c41095ede1d900",
+      "date": "2026-06-16T00:00:22+02:00",
+      "author": "Alessandro Schwaiger",
+      "email": "aless2003@gmx.at",
+      "message": "Small Code Cleanup\n"
+    },
+    {
+      "sha": "6e4bc4f20a13e535cca6725520b8e2332debffd9",
+      "date": "2026-06-15T23:51:47+02:00",
+      "author": "Alessandro Schwaiger",
+      "email": "aless2003@gmx.at",
+      "message": "Bugfixes\n"
+    }
+  ],
+  "commit_sha": "30a32f1745ef1053fe0fab82ee0fd067d2ae9539",
+  "extracted_at": "2026-10-05T18:23:43.072791+00:00"
+}

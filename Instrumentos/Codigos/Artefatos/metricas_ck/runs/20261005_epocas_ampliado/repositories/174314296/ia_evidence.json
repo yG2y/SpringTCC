@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "740ddbe35d79f05a684abb10b58475f77e2d932c",
+      "date": "2026-10-04T20:49:13+05:30",
+      "author": "ANN JOY",
+      "email": "annmariyajoy@gmail.com",
+      "message": "Upgrade Quarkus from 3.33.3.2 to 3.33.4 (#2251)\n\n- Bump quarkusPluginVersion and quarkusPlatformVersion to 3.33.4\n  in both Gradle examples gradle.properties files"
+    },
+    {
+      "sha": "1541eaab33adefc739f4f7a14fd948b21282cfde",
+      "date": "2026-09-25T20:27:04+05:30",
+      "author": "ANN JOY",
+      "email": "annmariyajoy@gmail.com",
+      "message": "Upgrade Spring Boot from 4.0.8 to 4.1.1 (#2249)\n\n* Upgrade Spring Boot from 4.0.8 to 4.1.1\n\n* Fix onboarding-springboot: disable Kubernetes discovery to prevent live cluster connection"
+    },
+    {
+      "sha": "a03108c1a7a9c17552057777e7a4d1e617d63dbe",
+      "date": "2026-09-10T16:59:51+02:00",
+      "author": "Yeser Amer",
+      "email": "yeser.amer@ibm.com",
+      "message": "fix(onboarding-quarkus): disable HTTPS on KubernetesMockServer to fix flaky IT on JDK 17 (#2248)"
+    },
+    {
+      "sha": "928e4b3df1681e9d81a1a0b51b61a948e76ba630",
+      "date": "2026-09-08T17:40:02+05:30",
+      "author": "Nithin R Krishnan",
+      "email": "nithin.r.krishnan@ibm.com",
+      "message": "[incubator-kie-6902] Upgrade Quarkus to 3.33.3.2 (LTS)- #3987 (#2245)\n\n* pinning versions for gradle and jave examplesz\n\n* build(kogito-quarkus-gradle-examples): bump quarkus plugin and platform to 3.33.3.1\n\n* chore: re-trigger CI\n\n* build(kogito-quarkus-gradle-examples): bump quarkus plugin and platform to 3.33.3.2\n\n* chore(kogito-quarkus-gradle-examples): remove obsolete pin comments\n\n* build: remove JKube plugin version property and plugin management entries\n\n* build(kogito-quarkus-examples): replace quarkus-junit5 with quarkus-junit"
+    },
+    {
+      "sha": "73b625c4b7d423f49fc7747e7e8a388c1a9e3e6e",
+      "date": "2026-09-07T20:56:50+05:30",
+      "author": "Jijo Thomas K",
+      "email": "34750480+jeejz@users.noreply.github.com",
+      "message": "spring patch version upgrade (#2246)\n\nCo-authored-by: Jijo Thomas K <Jijo.Thomas.K@ibm.com>"
+    },
+    {
+      "sha": "0f4075b372ef59aed785e892724068c6ac159432",
+      "date": "2026-09-02T00:03:57+05:30",
+      "author": "Nithin R Krishnan",
+      "email": "nithin.r.krishnan@ibm.com",
+      "message": "[incubator-kie-6902] Inherit the platform versions from the kie stack BOMs (Quarkus and Spring Boot examples) (#2244)\n\n* build(kogito-quarkus-examples): remove explicit quarkus-bom and plugin version properties\n\n* build(onboarding-example): remove redundant quarkus-maven-plugin management\n\n* build(kogito-springboot-examples): remove explicit spring-boot-maven-plugin version\n\n* build(kogito-quarkus-examples): remove redundant quarkus platform properties and hardcode groupId\n\n* refactor: move shared build config from root pom into quarkus and springboot aggregators\n\n* docs: clarify Gradle version pinning vs Maven examples in pom comments\n\n* chore: remove empty properties/dependencyManagement blocks and use plugin version properties\n\n* chore(kogito-quarkus-examples): use quarkus.http.cors.enabled"
+    },
+    {
+      "sha": "10557534bccad69b5760df4c1e72096a56870604",
+      "date": "2026-08-27T08:18:46+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump actions/setup-java from 5 to 6 (#2243)\n\nBumps [actions/setup-java](https://github.com/actions/setup-java) from 5 to 6.\n- [Release notes](https://github.com/actions/setup-java/releases)\n- [Commits](https://github.com/actions/setup-java/compare/v5...v6)\n\n---\nupdated-dependencies:\n- dependency-name: actions/setup-java\n  dependency-version: '6'\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "287b3536a7e758bfdead608f45254ddb02eb47a3",
+      "date": "2026-08-14T16:58:55+05:30",
+      "author": "athirakm94",
+      "email": "Athira.K.M@ibm.com",
+      "message": "[NO-ISSUE]: chore: upgrade Maven from 3.9.11 to 3.9.16 (#2226)\n\n* chore: upgrade Maven from 3.9.11 to 3.9.16\n\n- Update Maven Wrapper distributionUrl to apache-maven-3.9.16\n- Update Maven version prerequisite in all example README files\n  (97 README files across kogito-quarkus-examples and kogito-springboot-examples)\n\n* chore: update Java prerequisite from 11 to 17 in README files\n\nUpdate all README prerequisite sections from 'Java 11+' to 'Java 17+'\nacross kogito-springboot-examples and gradle-examples (38 files).\n\nFixes review comment on kogito-springboot-examples/onboarding-springboot/README.md"
+    },
+    {
+      "sha": "356d9abe400477b964f52d311091f5e670b48276",
+      "date": "2026-08-12T19:09:54+05:30",
+      "author": "ANN JOY",
+      "email": "annmariyajoy@gmail.com",
+      "message": "NO-ISSUE:Upgrade Quarkus from 3.27.4.1 to 3.27.5.1 , Netty 4.2.15.Final to 4.2.16.final (#2223)\n\n* chore: upgrade Quarkus 3.27.3/3.27.4.1→3.27.5.1, Netty 4.2.12.Final→4.2.16.Final\n\n* chore: update gradle.properties comments 3.27.4.1→3.27.5.1\n\n* Fix quarkus.platform.version to 3.27.5.1 in process-decisions-rules-quarkus-yaml"
+    },
+    {
+      "sha": "44593c82a1980dc427aaa3e5c9a74efddfd4badc",
+      "date": "2026-08-07T16:52:29+02:00",
+      "author": "Kbowers",
+      "email": "92726146+kbowers-ibm@users.noreply.github.com",
+      "message": "[kie-issues#2285]: EPIC - 10.3.x+ stream - Update CI to remove outdated build-chain automations  (#2225)\n\n* update ci and update to account for renames\n\n* remove max-parallel\n\n* fix concurrency issue\n\n* fix squence\n\n* update pathing\n\n* update springboot examples to be activeByDefault\n\n* revert springboot change"
+    },
+    {
+      "sha": "f5fec31981276c34a5cbec5f0166c691ff48202b",
+      "date": "2026-07-03T15:53:23+05:30",
+      "author": "athirakm94",
+      "email": "Athira.K.M@ibm.com",
+      "message": "Upgrade Quarkus from 3.27.4 to 3.27.4.1 (#2222)"
+    },
+    {
+      "sha": "31f189c50ff5695793b8f8575d00aa6c71ed0d88",
+      "date": "2026-06-25T19:47:38+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump actions/checkout from 6 to 7 (#2220)\n\nBumps [actions/checkout](https://github.com/actions/checkout) from 6 to 7.\n- [Release notes](https://github.com/actions/checkout/releases)\n- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/actions/checkout/compare/v6...v7)\n\n---\nupdated-dependencies:\n- dependency-name: actions/checkout\n  dependency-version: '7'\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "6fc9f6653c1b49491b464b6863e6d5b601bcdc86",
+      "date": "2026-06-18T18:06:21+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump zulip/github-actions-zulip from 2.0.1 to 2.0.2 (#2219)\n\nBumps [zulip/github-actions-zulip](https://github.com/zulip/github-actions-zulip) from 2.0.1 to 2.0.2.\n- [Release notes](https://github.com/zulip/github-actions-zulip/releases)\n- [Changelog](https://github.com/zulip/github-actions-zulip/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/zulip/github-actions-zulip/compare/bd8ec52de371d139ae8313661b7d8318c19266aa...f675f2b4eb2a95fae974215476dcb7ad8dfeff6b)\n\n---\nupdated-dependencies:\n- dependency-name: zulip/github-actions-zulip\n  dependency-version: 2.0.2\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "358574da2bff3ea7237178a902025db3b21d48b7",
+      "date": "2026-06-17T15:53:04+05:30",
+      "author": "Jijo Thomas K",
+      "email": "34750480+jeejz@users.noreply.github.com",
+      "message": "Spring boot Patch version upgrade to 4.0.7 (#2218)\n\nCo-authored-by: Jijo Thomas K <Jijo.Thomas.K@ibm.com>"
+    },
+    {
+      "sha": "630374067863b254e1bf66d1e74287edbc86408b",
+      "date": "2026-06-17T05:22:49-05:00",
+      "author": "The Apache Software Foundation",
+      "email": "root-asf-gitbox-commits@apache.org",
+      "message": "Set up default protection ruleset for default and release branches (#2212)"
+    },
+    {
+      "sha": "a524516793f72f700fcdc763604d5c83a1c2ce4c",
+      "date": "2026-06-17T12:22:26+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump zulip/github-actions-zulip (#2214)\n\nBumps [zulip/github-actions-zulip](https://github.com/zulip/github-actions-zulip) from d49c9ccdadd884e5b0caf7d4d3955d2bfe510273 to bd8ec52de371d139ae8313661b7d8318c19266aa.\n- [Release notes](https://github.com/zulip/github-actions-zulip/releases)\n- [Changelog](https://github.com/zulip/github-actions-zulip/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/zulip/github-actions-zulip/compare/d49c9ccdadd884e5b0caf7d4d3955d2bfe510273...bd8ec52de371d139ae8313661b7d8318c19266aa)\n\n---\nupdated-dependencies:\n- dependency-name: zulip/github-actions-zulip\n  dependency-version: bd8ec52de371d139ae8313661b7d8318c19266aa\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "36c5919d09bafd9b856699f815d0df267460740a",
+      "date": "2026-06-08T23:56:59+05:30",
+      "author": "ChinchuAjith",
+      "email": "Chinchu.P.Shaji@ibm.com",
+      "message": "CVE-2024-6763, CVE-2025-11143, CVE-2026-2332 jetty upgrade (#2217)\n\n* cve-jetty fix\n\n* removing wiremock version as it inherits from parent\n\n* removing version declaraton"
+    },
+    {
+      "sha": "2c37df73696be02d2f960613c47b86a3f51a02bb",
+      "date": "2026-06-08T12:21:20+05:30",
+      "author": "ANN JOY",
+      "email": "annmariyajoy@gmail.com",
+      "message": "[CVE]Upgrade Quarkus to 3.27.4 (#2216)\n\n* Upgrade Quarkus to 3.27.4\n\n* Update Quarkus version from 3.27.3 to 3.27.4 in gradle examples"
+    },
+    {
+      "sha": "48f348eded3b632b873d1ee80e74082b1e9684d6",
+      "date": "2026-06-04T16:37:43+05:30",
+      "author": "Nithin R Krishnan",
+      "email": "nithin.r.krishnan@ibm.com",
+      "message": "fix(security): bump Spring Boot 4.0.5 → 4.0.6 to remediate Spring CVEs (#2215)"
+    },
+    {
+      "sha": "d0d409a35967e4f52253f523cd7eb3beae491285",
+      "date": "2026-05-21T12:27:05Z",
+      "author": "Gabriele Cardosi",
+      "email": "gabriele.cardosi@gmail.com",
+      "message": "[incubator-kie-issues#2029] Dependency management simplification (#2197)\n\n* [incubator-kie-issues#2261] Fix kogito framework-specific bom imports\n\n* [incubator-kie-issues#2261] Disable enforcerer rules on examples\n\n* [incubator-kie-issues#2029] Minor cleanup\n\n* [incubator-kie-issues#2029] Minor cleanup\n\n* [incubator-kie-issues#2029] Minor cleanup\n\n* [incubator-kie-issues#2029] Adapt examples importing required boms\n\n* [incubator-kie-issues#2029] Fix bom reference and quarkus version in gradle quarkus examples. Updated springboot\n\n* [incubator-kie-issues#2029] Temporary use\nremove_unwanted_reproducible kogito-pipeline branch\n\n* [incubator-kie-issues#2029] Restore build chain definition file\n\n* [incubator-kie-issues#2029] Fix SB 4 merge\n\n* [incubator-kie-issues#2029] Fix SB 4 merge\n\n* [incubator-kie-issues#2029] Fix SB 4 merge\n\n---------\n\nCo-authored-by: Gabriele-Cardosi <gabriele.cardosi@ibm.com>"
+    },
+    {
+      "sha": "da4600414a60dce0f99d3514f404909816185807",
+      "date": "2026-05-18T14:04:46+05:30",
+      "author": "Nithin R Krishnan",
+      "email": "nithin.r.krishnan@ibm.com",
+      "message": "[incubator-kie-issues#2288] - Springboot 4.0.x upgrade  (#2210)\n\n* Upgrade to Spring Boot 4.0.5 and adjust configurations for compatibility; update dependencies and remove deprecated observability annotations.\n\n* Update Gradle and POM configurations for Spring Boot 4 compatibility; pin Groovy version and adjust dependencies for observability and caching.\n\n* Refine comments in CacheAutoConfiguration for clarity; update Netty version description in POM file.\n\n* Refactor comments in JacksonHttpMessageConverterConfig for clarity and consistency\n\n* ci: retrigger\n\n* ci: retrigger"
+    },
+    {
+      "sha": "f3fcb6c327570cd1d0dd9cd64136d49ec606b9ec",
+      "date": "2026-05-14T13:27:47+05:30",
+      "author": "ANN JOY",
+      "email": "annmariyajoy@gmail.com",
+      "message": "Update Spring Boot version from 3.5.12 to 3.5.14 in gradle examples (#2211)"
+    },
+    {
+      "sha": "36986aa9308a19d422e563d6eaffdad7fb0ae8fb",
+      "date": "2026-04-29T17:38:09-04:00",
+      "author": "Tiago Bento",
+      "email": "1584568+tiagobento@users.noreply.github.com",
+      "message": "kie-issues#2285: 10.3.x+ stream: Removing Serverless Workflow and SonataFlow (#2205)"
+    },
+    {
+      "sha": "e96e070ef47583d29720510c5dcba75434e8ae12",
+      "date": "2026-04-29T14:22:20Z",
+      "author": "Gabriele Cardosi",
+      "email": "gabriele.cardosi@gmail.com",
+      "message": "[incubator-kie-issues#2164] Implement quarkus example to verify loading properties from YaML (#2206)\n\n* [incubator-kie-issues#2164] Implement quarkus example to verify loading properties from YaML\n\n* [incubator-kie-issues#2164] Implement quarkus example to verify loading properties from YaML\n\n---------\n\nCo-authored-by: Gabriele-Cardosi <gabriele.cardosi@ibm.com>"
+    },
+    {
+      "sha": "4f8c79a08b18c5f1e1e39c477a6df441d9c0cc0a",
+      "date": "2026-04-27T15:20:51+05:30",
+      "author": "athirakm94",
+      "email": "Athira.K.M@ibm.com",
+      "message": "Updagrading Quarkus to 3.27.3 to address security vulnerability (#2209)\n\n* Updagrading Quarkus to 3.27.3 to address security vulnerability\n\n* Updagrading Quarkus to 3.27.3 in gradle.properties"
+    },
+    {
+      "sha": "636f552b606e9e315e4e68807f4dab5aba9452c6",
+      "date": "2026-04-24T16:39:37+05:30",
+      "author": "Kusuma04-dev",
+      "email": "kusumachinnamatli@gmail.com",
+      "message": "springboot version  upgrade (#2208)\n\nCo-authored-by: Kusuma <kusuma-latha@ibm.com>"
+    },
+    {
+      "sha": "98a6626866ef349ea2138fb1fc57ac229f541555",
+      "date": "2026-04-16T10:32:08Z",
+      "author": "Gabriele Cardosi",
+      "email": "gabriele.cardosi@gmail.com",
+      "message": "[incubator-kie-issues#2163] Implement springboot example to verify loading properties from YaML (#2203)\n\nCo-authored-by: Gabriele-Cardosi <gabriele.cardosi@ibm.com>"
+    },
+    {
+      "sha": "5ae0c2bbbdd930c48c28624ea87f7d1117cd9384",
+      "date": "2026-04-08T13:30:44+02:00",
+      "author": "Gonzalo Muñoz",
+      "email": "gonzalo51429@gmail.com",
+      "message": "[Fix_#2200] Fix OpenTelemetry tests in CI by setting otel.traces.exporter to none (#2201)"
+    },
+    {
+      "sha": "ad928a641206a67baa4a5d1d5f902a15a0fdb9cd",
+      "date": "2026-04-03T12:02:15+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump lodash (#2199)\n\nBumps [lodash](https://github.com/lodash/lodash) from 4.17.23 to 4.18.1.\n- [Release notes](https://github.com/lodash/lodash/releases)\n- [Commits](https://github.com/lodash/lodash/compare/4.17.23...4.18.1)\n\n---\nupdated-dependencies:\n- dependency-name: lodash\n  dependency-version: 4.18.1\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "b002a95358e569ec548c8688772f9358aa0398ac",
+      "date": "2026-04-03T12:01:41+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump lodash-es (#2198)\n\nBumps [lodash-es](https://github.com/lodash/lodash) from 4.17.23 to 4.18.1.\n- [Release notes](https://github.com/lodash/lodash/releases)\n- [Commits](https://github.com/lodash/lodash/compare/4.17.23...4.18.1)\n\n---\nupdated-dependencies:\n- dependency-name: lodash-es\n  dependency-version: 4.18.1\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    }
+  ],
+  "commit_sha": "740ddbe35d79f05a684abb10b58475f77e2d932c",
+  "extracted_at": "2026-10-05T18:03:33.604260+00:00"
+}

@@ -1,0 +1,24 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "3.3.2",
+  "spring_boot_major": "3",
+  "java_versions_declared": "17",
+  "build_evidence": [
+    {
+      "file": "bitdive-testing-core/pom.xml",
+      "artifact": "spring-boot"
+    },
+    {
+      "file": "bitdive-testing-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "bitdive-testing-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-dependencies"
+    }
+  ]
+}

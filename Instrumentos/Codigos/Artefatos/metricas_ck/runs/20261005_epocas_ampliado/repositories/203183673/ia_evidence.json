@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "775b0172f3b1d3f68aabca727ef7e083e6bd5aa5",
+      "date": "2026-08-09T20:20:27+08:00",
+      "author": "zhaojun",
+      "email": "873019219@qq.com",
+      "message": "更新 github issue 规范\n"
+    },
+    {
+      "sha": "0ca309ef87eaa8e6cb2ed2cea22bf081965c13d8",
+      "date": "2026-08-09T20:19:49+08:00",
+      "author": "zhaojun",
+      "email": "873019219@qq.com",
+      "message": "替换示例图为最新版本，并描述新版本情况\n"
+    },
+    {
+      "sha": "469b9d45555a93a99057bf622d729e475cb09182",
+      "date": "2026-05-16T20:27:10+08:00",
+      "author": "zhaojun",
+      "email": "873019219@qq.com",
+      "message": "fix(storage): 修复 OneDrive/115 下载二次拼接用户根目录致分享/直链下载路径错误\n"
+    },
+    {
+      "sha": "46f77df0eacb301aa0b645b547930d9129d2c774",
+      "date": "2026-05-14T21:56:36+08:00",
+      "author": "zhaojun",
+      "email": "873019219@qq.com",
+      "message": "fix(onlyoffice): 修复用户根目录下保存路径错误\n"
+    },
+    {
+      "sha": "e4386b1a45b1e336012ae32f13b0b9faf7497ec0",
+      "date": "2026-05-14T21:29:46+08:00",
+      "author": "zhaojun",
+      "email": "873019219@qq.com",
+      "message": "新增分享场景下的 OnlyOffice 预览接口\n\n- ShareLinkController 暴露 /api/share/onlyOffice/config/token, 复用 OnlyOfficeConfigService 生成配置\n- 校验分享有效性与分享密码后, 通过 ShareAccessContext 走分享 basePath 解析文件\n- 分享场景强制 allowEdit=false, 缓存用户身份固定为分享发起人, 防止回调身份伪造\n"
+    },
+    {
+      "sha": "604cae54e56052c87351da83b8e73f116a8a2e40",
+      "date": "2026-05-14T21:29:19+08:00",
+      "author": "zhaojun",
+      "email": "873019219@qq.com",
+      "message": "修复 OnlyOffice 回调存在的 SSRF 与权限绕过问题\n\n- 强制 secret 已配置, 校验回调 body 中 key/status/url/users 与 JWT payload 绑定, 拒绝任意伪造\n- 用预览时缓存的服务端 userId 建立回调上下文, 不再信任回调里的 users\n- 回调拉取 url 严格白名单(scheme/host/port), 限制重定向次数与超/读超时\n- 写回文件前再次校验缓存用户对应存储源的 UPLOAD 权限\n"
+    },
+    {
+      "sha": "f44074a03beb1f33d001538e20d1c687f2915f4d",
+      "date": "2026-05-14T20:56:49+08:00",
+      "author": "zhaojun",
+      "email": "873019219@qq.com",
+      "message": "修复本地存储路径/文件名校验对 .. 检查不完整的 bug\n\n- checkPathSecurity 改为按 / 和 \\ 拆段后比较, 拦截 \"test/..\", \"..\", \"..\\\\foo\" 等原有子串匹配漏掉的形态.\n- checkNameSecurity 增加对 name 等于 \".\" 或 \"..\" 的拦截, 避免拼接后落到当前/父级目录.\n"
+    },
+    {
+      "sha": "29178181fba717ceb46513cc6e2909108d1f8f07",
+      "date": "2026-05-14T20:34:34+08:00",
+      "author": "zhaojun",
+      "email": "873019219@qq.com",
+      "message": "S3 存储源新增 aws-chunked 分块编码开关 (#823)\n\n部分 S3 兼容存储 (如 MinIO、Ceph、阿里云 OSS 等) 不支持 AWS SDK 默认开启的\naws-chunked 分块编码, 会导致代理上传报错. 新增开关允许用户在存储源配置中\n关闭该特性以提升兼容性. 默认值与 SDK 内置默认一致 (true), 历史存储源行为不变.\n"
+    },
+    {
+      "sha": "6afb6046623e5255f25e2f2c9d87fd9bd408462e",
+      "date": "2026-05-14T20:22:17+08:00",
+      "author": "zhaojun",
+      "email": "873019219@qq.com",
+      "message": "修复代理下载未校验签名导致路径隔离绕过的 bug (#821)\n"
+    },
+    {
+      "sha": "da4493bf46f7477ff0308d7e4f34f5b424e14fa4",
+      "date": "2026-05-11T20:49:03+08:00",
+      "author": "zhaojun",
+      "email": "873019219@qq.com",
+      "message": "修复登录日志未正常记录的 bug\n"
+    },
+    {
+      "sha": "9cbf110d4c1f293b1a0a1df54ec4483eaac32758",
+      "date": "2026-05-11T20:06:36+08:00",
+      "author": "zhaojun",
+      "email": "873019219@qq.com",
+      "message": "Google Drive 中转下载时统一使用RequestHolder.writeFile\n"
+    },
+    {
+      "sha": "3fe5f5b0b97ddcf1d4e32e51b4f19c746880f37b",
+      "date": "2026-02-27T09:12:27+08:00",
+      "author": "zhao jun",
+      "email": "873019219@qq.com",
+      "message": "Update README.md by removing sponsors section\n\nRemoved sponsor information and adjusted formatting."
+    },
+    {
+      "sha": "6e8a791c4660d5070cc0d5f8e4fedf20cc771902",
+      "date": "2025-11-09T15:40:34+08:00",
+      "author": "zhaojun",
+      "email": "873019219@qq.com",
+      "message": "修复 s3 对象存储加载签名器异常 bug\n"
+    },
+    {
+      "sha": "67b02fdd6de4dd728f805b65191db6e85aaaef2e",
+      "date": "2025-11-09T14:42:44+08:00",
+      "author": "zhaojun",
+      "email": "873019219@qq.com",
+      "message": "管理员可删除其他用户的分享\n"
+    },
+    {
+      "sha": "2049308b51eab0c0f35b8ab642c4849a34c793c1",
+      "date": "2025-11-09T14:02:30+08:00",
+      "author": "zhaojun",
+      "email": "873019219@qq.com",
+      "message": "修复分享文件夹启用权限校验 bug\n"
+    },
+    {
+      "sha": "ce6dbe026d83d884c5e0ff30bfd151951cfad0a3",
+      "date": "2025-11-08T14:26:41+08:00",
+      "author": "zhaojun",
+      "email": "873019219@qq.com",
+      "message": "分享列表默认降序排序。\n"
+    },
+    {
+      "sha": "0f05b50522cc9e1fc925341d7b253a1f47cf11ac",
+      "date": "2025-11-06T20:51:19+08:00",
+      "author": "zhaojun",
+      "email": "873019219@qq.com",
+      "message": "升级版本号到 4.5.0\n"
+    },
+    {
+      "sha": "a0c4e9dec38dee8173659ed711b5e0fa27e17f2c",
+      "date": "2025-11-06T20:50:48+08:00",
+      "author": "zhaojun",
+      "email": "873019219@qq.com",
+      "message": "修复阿里云，谷歌云，文件名前后包含空格时获取下载地址异常的 bug\n"
+    },
+    {
+      "sha": "743e828c9b387abc0543b409be005a43c51506f3",
+      "date": "2025-11-06T20:50:24+08:00",
+      "author": "zhaojun",
+      "email": "873019219@qq.com",
+      "message": "为管理员默认分配自定义分享链接，自定义分享链接 key权限\n"
+    },
+    {
+      "sha": "bd8c924eb99571e916ddfb33578d4caf5991c9fe",
+      "date": "2025-11-06T20:49:34+08:00",
+      "author": "zhaojun",
+      "email": "873019219@qq.com",
+      "message": "增加下载、打包下载、批量下载确认弹窗开关\n"
+    },
+    {
+      "sha": "879d41ba6e9990d8e9c483ead21141868d66173e",
+      "date": "2025-11-06T20:48:55+08:00",
+      "author": "zhaojun",
+      "email": "873019219@qq.com",
+      "message": "修复本地存储/代理下载返回的文件名在 safari 上乱码的 bug\n"
+    },
+    {
+      "sha": "70152d0cbbe73ba1611d3551f236714ef8413087",
+      "date": "2025-11-06T20:46:37+08:00",
+      "author": "zhaojun",
+      "email": "873019219@qq.com",
+      "message": "获取 headers 接口\n"
+    },
+    {
+      "sha": "b82c43be073a5985b6e963bbad0a018b13834aa8",
+      "date": "2025-11-06T20:46:21+08:00",
+      "author": "zhaojun",
+      "email": "873019219@qq.com",
+      "message": "S3 存储仅下载使用指定域名，避免某些厂商不支持加速域名上传的 bug\n"
+    },
+    {
+      "sha": "aa26d5f835eb01dc0fd615c84a59b79c21460b34",
+      "date": "2025-11-06T20:45:55+08:00",
+      "author": "zhaojun",
+      "email": "873019219@qq.com",
+      "message": "登录安全入口功能\n"
+    },
+    {
+      "sha": "5eece197318c9be5d3a38424bca460105a9f8184",
+      "date": "2025-11-06T20:43:09+08:00",
+      "author": "zhaojun",
+      "email": "873019219@qq.com",
+      "message": "分享文件夹功能开发\n"
+    },
+    {
+      "sha": "4a8692d0b3d5299429768a2cced7f11551e4c5ae",
+      "date": "2025-11-06T20:38:57+08:00",
+      "author": "zhaojun",
+      "email": "873019219@qq.com",
+      "message": "修复 webdav 存储源获取单个文件/文件夹时的 bug\n"
+    },
+    {
+      "sha": "66ef3f9e2b143d04ca3896b3cf2e014be854c0a5",
+      "date": "2025-09-15T18:01:17+08:00",
+      "author": "zhaojun",
+      "email": "873019219@qq.com",
+      "message": "修复对某些 webdav 返回的 content-length 兼容性问题\n"
+    },
+    {
+      "sha": "788d935634026efae79b66478061e447ec7d32b2",
+      "date": "2025-09-09T19:33:42+08:00",
+      "author": "zhaojun",
+      "email": "873019219@qq.com",
+      "message": "修复对服务器地址检测的 bug\n"
+    },
+    {
+      "sha": "63b033212786ab8e055c85d8b9d251430ffc0615",
+      "date": "2025-09-01T20:13:04+08:00",
+      "author": "zhaojun",
+      "email": "873019219@qq.com",
+      "message": "修复 Open115 启用代理下载保存失败的 bug\n"
+    },
+    {
+      "sha": "f61fbe0f09d1af196b48fcd4cc6761b3355b31cd",
+      "date": "2025-08-24T16:12:19+08:00",
+      "author": "zhaojun",
+      "email": "873019219@qq.com",
+      "message": "修复 115 编译失败的 bug\n"
+    }
+  ],
+  "commit_sha": "775b0172f3b1d3f68aabca727ef7e083e6bd5aa5",
+  "extracted_at": "2026-10-05T17:53:20.521662+00:00"
+}

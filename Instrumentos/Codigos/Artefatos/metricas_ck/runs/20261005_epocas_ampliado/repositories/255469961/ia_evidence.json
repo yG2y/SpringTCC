@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "b18dc942f161b94940fe2be16616f3bd4be0495f",
+      "date": "2024-06-12T15:38:39+10:00",
+      "author": "Sebastian Luehr",
+      "email": "sebastian.luehr@everest.engineering",
+      "message": "Downgrade to older Gradle plugin for Docker to accomodate build server\n"
+    },
+    {
+      "sha": "aadabac1a2f51214d0f24e12931f4ad749def9d2",
+      "date": "2024-06-12T11:07:17+10:00",
+      "author": "Sebastian Luehr",
+      "email": "sebastian.luehr@everest.engineering",
+      "message": "Updated Jypter notebook\n"
+    },
+    {
+      "sha": "b2a6a0b16a5770fdf2e49ef2320265a73b653a49",
+      "date": "2024-06-12T10:12:22+10:00",
+      "author": "Sebastian Luehr",
+      "email": "sebastian.luehr@everest.engineering",
+      "message": "Updated to Keycloak 25.0; removed sensible but cumbersome to update Keycloak theme for user display names\n"
+    },
+    {
+      "sha": "13d787ef3899a127cee4add1c0994036e85765da",
+      "date": "2024-06-11T14:49:59+10:00",
+      "author": "Sebastian Luehr",
+      "email": "sebastian.luehr@everest.engineering",
+      "message": "General dependency updates\n"
+    },
+    {
+      "sha": "d74b82b2a365bac3232957bc009e5c2b16b16248",
+      "date": "2024-06-11T12:41:12+10:00",
+      "author": "Sebastian Luehr",
+      "email": "sebastian.luehr@everest.engineering",
+      "message": "Update to Spring Boot 3.3\n"
+    },
+    {
+      "sha": "a3a3c333c1f25ecde85381d10a7b2e233a3c3c0c",
+      "date": "2024-01-10T14:54:02+05:30",
+      "author": "Prasanna",
+      "email": "lakshmiprasanna@everest.engineering",
+      "message": "Add write service for photos persistence\n"
+    },
+    {
+      "sha": "bab85e34f89126d19c1896bd1bed7143873609e6",
+      "date": "2024-01-03T15:54:04+05:30",
+      "author": "Prasanna",
+      "email": "lakshmiprasanna@everest.engineering",
+      "message": "Add write service for competitions persistence\n"
+    },
+    {
+      "sha": "cc31639e3073133ff4e5fac7801514219b4e3208",
+      "date": "2023-12-01T11:13:16+05:30",
+      "author": "Lakshmi Prasanna",
+      "email": "lakshmiprasanna@everest.engineering",
+      "message": "Implement secret key repository from crypto shredding library (Crypshrd/issue-9)\n\n"
+    },
+    {
+      "sha": "129e0a9fe5b285f99719907d091f3293cb848b13",
+      "date": "2023-11-17T19:46:09+05:30",
+      "author": "Prasanna",
+      "email": "lakshmiprasanna@everest.engineering",
+      "message": "Upgrade axon server version to 2023.2.1-jdk-17\n"
+    },
+    {
+      "sha": "1151b0c2c0b9de6256a1a5091d10851fdc505124",
+      "date": "2023-11-16T15:09:19+05:30",
+      "author": "Prasanna",
+      "email": "lakshmiprasanna@everest.engineering",
+      "message": "Upgrade axon server version to 4.6.11-dev\n"
+    },
+    {
+      "sha": "5d843c2a47f2058cc47920027d0896c32a07010c",
+      "date": "2023-11-16T15:00:45+05:30",
+      "author": "Prasanna",
+      "email": "lakshmiprasanna@everest.engineering",
+      "message": "Upgrade Keycloak to 22.0\n"
+    },
+    {
+      "sha": "d95f49730303ab4d13266bf203dd4bf19e084d40",
+      "date": "2023-11-16T14:32:56+05:30",
+      "author": "Prasanna",
+      "email": "lakshmiprasanna@everest.engineering",
+      "message": "Remove depricated spring security methods\n"
+    },
+    {
+      "sha": "ebb3cb8f28a694fe57b3a213b0bbef03238cd8d7",
+      "date": "2023-11-16T10:19:33+05:30",
+      "author": "Prasanna",
+      "email": "lakshmiprasanna@everest.engineering",
+      "message": "Upgrade spring version to 3.1.5\n"
+    },
+    {
+      "sha": "e22382235c155c3a3f23d521b1a9cefed552a1da",
+      "date": "2023-11-15T17:22:44+05:30",
+      "author": "Prasanna",
+      "email": "lakshmiprasanna@everest.engineering",
+      "message": "Update README with notebook instructions\n"
+    },
+    {
+      "sha": "f6b3f26c5a173a71207b6da13951464c1c3eb4c9",
+      "date": "2023-11-15T17:01:36+05:30",
+      "author": "Prasanna",
+      "email": "lakshmiprasanna@everest.engineering",
+      "message": "Upgrade grdle version to 8.4\n"
+    },
+    {
+      "sha": "0e9566c9ede0ab4117b69749f97f61eb155a8096",
+      "date": "2023-11-15T16:59:11+05:30",
+      "author": "Prasanna",
+      "email": "lakshmiprasanna@everest.engineering",
+      "message": "Bring up dependencies before running the application\n"
+    },
+    {
+      "sha": "8efe5c4b279d4f985e3a8ad7ac340966aed7537f",
+      "date": "2023-04-01T18:30:07+05:30",
+      "author": "Prasanna",
+      "email": "lakshmiprasanna@everest.engineering",
+      "message": "[Refactor] Use correct file id naming for photo upload and downloads\n"
+    },
+    {
+      "sha": "0e75a3b13317f0da21d619f5a303c9eaf60b5167",
+      "date": "2023-03-17T08:53:23+11:00",
+      "author": "Sebastian Luehr",
+      "email": "sebastian.luehr@everest.engineering",
+      "message": "Fix Sonarqube build failure\n"
+    },
+    {
+      "sha": "fdd32d9404d50480db24e3e54b2d2261d4f2eb09",
+      "date": "2023-03-03T14:15:43+11:00",
+      "author": "Sebastian Luehr",
+      "email": "sebastian.luehr@everest.engineering",
+      "message": "Dependency updates\n"
+    },
+    {
+      "sha": "47f2f2202204d6bf0ad2be0de7cb3e3009c91f0c",
+      "date": "2023-02-20T20:42:32+11:00",
+      "author": "sluehr",
+      "email": "sebastian.luehr@everest.engineering",
+      "message": "Axon event serialisation default to using primary object mapper\n"
+    },
+    {
+      "sha": "a466f0289d66c60338c1f5b4252feb1246a302e3",
+      "date": "2023-02-09T16:55:14+11:00",
+      "author": "Sebastian Luehr",
+      "email": "sebastian.luehr@everest.engineering",
+      "message": "Build tool updates. Added JVM options to build pack configuration\n"
+    },
+    {
+      "sha": "93d75a6bd6b580dfa1405596089e99b29d60781b",
+      "date": "2023-02-09T09:30:19+11:00",
+      "author": "Sebastian Luehr",
+      "email": "sebastian.luehr@everest.engineering",
+      "message": "Update to Axon crypto shredding 1.2.0\n"
+    },
+    {
+      "sha": "18b7857694f10d2cc3280d83f6b013e27d2eb02c",
+      "date": "2023-02-03T12:27:58+11:00",
+      "author": "Sebastian Luehr",
+      "email": "sebastian.luehr@everest.engineering",
+      "message": "Remove docker tag from Buildkite pipeline\n"
+    },
+    {
+      "sha": "3d4773959899dc633d6d266898b33d8572737afc",
+      "date": "2023-02-03T12:07:05+11:00",
+      "author": "Sebastian Luehr",
+      "email": "sebastian.luehr@everest.engineering",
+      "message": "Remove deprecated EnableGlobalMethodSecurity in API tests\n"
+    },
+    {
+      "sha": "f8c265b1d779f8d30a7a31cc8a0672e41b5b851d",
+      "date": "2023-02-03T11:57:36+11:00",
+      "author": "Sebastian Luehr",
+      "email": "sebastian.luehr@everest.engineering",
+      "message": "Update Buildkite pipeline with Java 17 build node dependency\n"
+    },
+    {
+      "sha": "3e67bf345e795d2af2c950c19603c68cb3217602",
+      "date": "2023-02-03T10:40:58+11:00",
+      "author": "Sebastian Luehr",
+      "email": "sebastian.luehr@everest.engineering",
+      "message": "Minor Gradle tidy up\n"
+    },
+    {
+      "sha": "f860a51ad67534063f54605138df553a9d03970d",
+      "date": "2023-02-02T17:01:47+11:00",
+      "author": "Sebastian Luehr",
+      "email": "sebastian.luehr@everest.engineering",
+      "message": "Update to Spring Boot 3.0\n"
+    },
+    {
+      "sha": "8ee9e807dcb9cd0caad8ae8b6683bf89e74b48be",
+      "date": "2023-01-25T13:06:16+11:00",
+      "author": "Sebastian Luehr",
+      "email": "sebastian.luehr@everest.engineering",
+      "message": "Update to Axon 4.6.3, Axon Sever 4.6.7 and Keycloak 20.0.3\n"
+    },
+    {
+      "sha": "72aeb73bc568c066775710ce0f8540bb58f1e5be",
+      "date": "2023-01-25T13:02:33+11:00",
+      "author": "Sebastian Luehr",
+      "email": "sebastian.luehr@everest.engineering",
+      "message": "Use Liquibase configuration in persistence integration tests and simply configuration\n"
+    },
+    {
+      "sha": "947de1f6a295fdfcac234a512fb964a4287c074f",
+      "date": "2022-12-07T14:24:14+05:30",
+      "author": "Nitin K S",
+      "email": "nitin.ks@everest.engineering",
+      "message": "Using platform independant docker image for axon server\n"
+    }
+  ],
+  "commit_sha": "b18dc942f161b94940fe2be16616f3bd4be0495f",
+  "extracted_at": "2026-10-05T18:36:11.491481+00:00"
+}

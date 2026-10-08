@@ -1,0 +1,201 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "@project.version@;{{version}}",
+  "spring_boot_major": "unknown",
+  "java_versions_declared": "1.8;@java.version@",
+  "build_evidence": [
+    {
+      "file": ".github/actions/publish-gradle-plugin/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "build-plugin/spring-boot-gradle-plugin/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "build-plugin/spring-boot-maven-plugin/src/docs/antora/modules/maven-plugin/examples/aot-native-profile-buildpacks/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "build-plugin/spring-boot-maven-plugin/src/docs/antora/modules/maven-plugin/examples/aot-native/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "build-plugin/spring-boot-maven-plugin/src/docs/antora/modules/maven-plugin/examples/aot/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "build-plugin/spring-boot-maven-plugin/src/docs/antora/modules/maven-plugin/examples/build-info/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "build-plugin/spring-boot-maven-plugin/src/docs/antora/modules/maven-plugin/examples/getting-started/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "build-plugin/spring-boot-maven-plugin/src/docs/antora/modules/maven-plugin/examples/integration-tests/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "build-plugin/spring-boot-maven-plugin/src/docs/antora/modules/maven-plugin/examples/packaging-oci-image/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "build-plugin/spring-boot-maven-plugin/src/intTest/projects/aot-arguments/pom.xml",
+      "artifact": "spring-boot"
+    },
+    {
+      "file": "build-plugin/spring-boot-maven-plugin/src/intTest/projects/aot-class-proxy/pom.xml",
+      "artifact": "spring-boot"
+    },
+    {
+      "file": "build-plugin/spring-boot-maven-plugin/src/intTest/projects/aot-compiler-arguments/pom.xml",
+      "artifact": "spring-boot"
+    },
+    {
+      "file": "build-plugin/spring-boot-maven-plugin/src/intTest/projects/aot-exclude-devtools/pom.xml",
+      "artifact": "spring-boot"
+    },
+    {
+      "file": "build-plugin/spring-boot-maven-plugin/src/intTest/projects/aot-exclude-devtools/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "build-plugin/spring-boot-maven-plugin/src/intTest/projects/aot-jdk-proxy/pom.xml",
+      "artifact": "spring-boot"
+    },
+    {
+      "file": "build-plugin/spring-boot-maven-plugin/src/intTest/projects/aot-jvm-arguments/pom.xml",
+      "artifact": "spring-boot"
+    },
+    {
+      "file": "build-plugin/spring-boot-maven-plugin/src/intTest/projects/aot-module-info/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "build-plugin/spring-boot-maven-plugin/src/intTest/projects/aot-module-info/pom.xml",
+      "artifact": "spring-boot"
+    },
+    {
+      "file": "build-plugin/spring-boot-maven-plugin/src/intTest/projects/aot-profile/pom.xml",
+      "artifact": "spring-boot"
+    },
+    {
+      "file": "build-plugin/spring-boot-maven-plugin/src/intTest/projects/aot-release/pom.xml",
+      "artifact": "spring-boot"
+    },
+    {
+      "file": "build-plugin/spring-boot-maven-plugin/src/intTest/projects/aot-resource-generation/pom.xml",
+      "artifact": "spring-boot"
+    },
+    {
+      "file": "build-plugin/spring-boot-maven-plugin/src/intTest/projects/aot-system-properties/pom.xml",
+      "artifact": "spring-boot"
+    },
+    {
+      "file": "build-plugin/spring-boot-maven-plugin/src/intTest/projects/aot-test-exclude-devtools/pom.xml",
+      "artifact": "spring-boot"
+    },
+    {
+      "file": "build-plugin/spring-boot-maven-plugin/src/intTest/projects/aot-test-exclude-devtools/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "build-plugin/spring-boot-maven-plugin/src/intTest/projects/aot-test-exclude-devtools/pom.xml",
+      "artifact": "spring-boot-test"
+    },
+    {
+      "file": "build-plugin/spring-boot-maven-plugin/src/intTest/projects/aot-test-skip/pom.xml",
+      "artifact": "spring-boot"
+    },
+    {
+      "file": "build-plugin/spring-boot-maven-plugin/src/intTest/projects/aot-test-skip/pom.xml",
+      "artifact": "spring-boot-test"
+    },
+    {
+      "file": "build-plugin/spring-boot-maven-plugin/src/intTest/projects/aot-test/pom.xml",
+      "artifact": "spring-boot"
+    },
+    {
+      "file": "build-plugin/spring-boot-maven-plugin/src/intTest/projects/aot-test/pom.xml",
+      "artifact": "spring-boot-test"
+    },
+    {
+      "file": "build-plugin/spring-boot-maven-plugin/src/intTest/projects/aot/pom.xml",
+      "artifact": "spring-boot"
+    },
+    {
+      "file": "build-plugin/spring-boot-maven-plugin/src/intTest/projects/jar-custom-layout/custom/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "build-plugin/spring-boot-maven-plugin/src/intTest/projects/jar-custom-layout/default/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "build-plugin/spring-boot-maven-plugin/src/intTest/projects/jar-custom-layout/layout/pom.xml",
+      "artifact": "spring-boot-loader-tools"
+    },
+    {
+      "file": "build-plugin/spring-boot-maven-plugin/src/maven/resources/pom.xml",
+      "artifact": "spring-boot-maven-plugin",
+      "kind": "framework_source"
+    },
+    {
+      "file": "build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "configuration-metadata/spring-boot-configuration-metadata-changelog-generator/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "integration-test/spring-boot-loader-integration-tests/spring-boot-loader-tests-app/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "integration-test/spring-boot-loader-integration-tests/spring-boot-loader-tests-signed-jar-rsa/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "integration-test/spring-boot-loader-integration-tests/spring-boot-loader-tests-signed-jar/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "integration-test/spring-boot-loader-integration-tests/spring-boot-loader-tests-war/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "integration-test/spring-boot-server-integration-tests/spring-boot-server-tests-app/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "integration-test/spring-boot-sni-integration-tests/spring-boot-sni-client-app/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "integration-test/spring-boot-sni-integration-tests/spring-boot-sni-reactive-app/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "integration-test/spring-boot-sni-integration-tests/spring-boot-sni-servlet-app/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "platform/spring-boot-dependencies/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "smoke-test/spring-boot-smoke-test-log4j2/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "starter/spring-boot-starter-parent/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "system-test/spring-boot-deployment-system-tests/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    }
+  ]
+}

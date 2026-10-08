@@ -1,0 +1,24 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "2.1.7.RELEASE;2.3.5.RELEASE;2.5.15;2.7.18",
+  "spring_boot_major": "2",
+  "java_versions_declared": "1.8;8",
+  "build_evidence": [
+    {
+      "file": "spring-async-bean-core/pom.xml",
+      "artifact": "spring-boot"
+    },
+    {
+      "file": "spring-async-bean-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-async-bean-starter/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-async-bean-starter/pom.xml",
+      "artifact": "spring-boot-test"
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "381bb8432a054d25bd6c9d6bbfe729f54d983568",
+      "date": "2026-08-20T15:21:14+01:00",
+      "author": "Alejandro Arroyo",
+      "email": "41422777+arroyoAle@users.noreply.github.com",
+      "message": "RAS-2032 Migrate collection-exercise to WIF (#377)\n\n* migrating to wif\n\n* auto patch increment\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "5e2a907a0698e76201dddcd76046a1f0774d76ba",
+      "date": "2026-07-14T14:44:23+01:00",
+      "author": "matthew-robinson-ons",
+      "email": "113037557+matthew-robinson-ons@users.noreply.github.com",
+      "message": "update version (#376)"
+    },
+    {
+      "sha": "e868dce8b3c18a9528d4bef6e350226a75904939",
+      "date": "2026-07-14T12:07:46+01:00",
+      "author": "matthew-robinson-ons",
+      "email": "113037557+matthew-robinson-ons@users.noreply.github.com",
+      "message": "Update alpine-curl to 3.24.1 (#374)\n\n* update apline-curl to 3.24.1\n\n* auto patch increment\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "728633b73b73459b5835e27d56e1a3e5bc48dd18",
+      "date": "2026-07-14T11:16:49+01:00",
+      "author": "Jacob Harrison",
+      "email": "35296832+JacobHarrisonONS@users.noreply.github.com",
+      "message": "bump cloud proxy (#375)\n\n* bump cloud proxy\n\n* auto patch increment\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "0d6f59c6baa5846f1510c180f9ddef5258236822",
+      "date": "2026-04-28T15:11:34+01:00",
+      "author": "Jacob Harrison",
+      "email": "35296832+JacobHarrisonONS@users.noreply.github.com",
+      "message": "Update CE end topic for DFTS (#372)\n\n* add period and survey id to collection exercise end DTO\n\n* formatting\n\n* auto patch increment\n\n* use correct endpont to fetch surveyDTO\n\n* correct java version\n\n* add supplementary dataset id and end date\n\n* format\n\n* add supplementary data entity to event service test\n\n* refactor methods to lower params\n\n* allow supplementaty data to be null\n\n* add test for no supp data collection end\n\n* only add extra data is sup data exists\n\n---------\n\nCo-authored-by: Alejandro <alejandro.arroyo@ons.gov.uk>\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "9d9ed2b69862351c5894a0857f4a493ad1a7dc1e",
+      "date": "2026-03-24T09:22:21Z",
+      "author": "LJBabbage",
+      "email": "lewis.babbage@ons.gov.uk",
+      "message": "RAS-1806 resolve database migration errors in Postgres 15+ (#371)\n\n* RAS-1806 resolve database migration errors in Postgres 15+"
+    },
+    {
+      "sha": "036966cd3cafad32de4adf3b398e08a9c92d7334",
+      "date": "2026-03-16T10:34:07Z",
+      "author": "anwilkie",
+      "email": "47449873+anwilkie@users.noreply.github.com",
+      "message": "update jackson to 2.19.2 (#370)\n\n* update jackson to 2.20.0\n\n* small tweak to version\n\n* small tweak to version 2\n\n* small tweak to version 3\n\n* small tweak to version 4\n\n* auto patch increment\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "3e7fd204e97bc0d6372904ef27ec827b61606488",
+      "date": "2026-02-17T12:44:34Z",
+      "author": "Alejandro Arroyo",
+      "email": "41422777+arroyoAle@users.noreply.github.com",
+      "message": "RAS-1833 BUG: Roll back collection exercise logging and fix bug (#368)\n\n* trying to understand where the issue actually happens\n\n* auto patch increment\n\n* adding a kv pair to the log line\n\n* formatting\n\n* removing dto\n\n* cleaning up\n\n* trying a different log\n\n* trying a different log\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "26766522a948801d67548fbb0689b176cb207aa4",
+      "date": "2026-01-29T15:13:30Z",
+      "author": "Alejandro Arroyo",
+      "email": "41422777+arroyoAle@users.noreply.github.com",
+      "message": "Replace deprecated logging package (#367)\n\n* replacing godaddy logger\n\n* fixing failing tests\n\n* auto patch increment\n\n* fixing broken logs because it can't parse the objects\n\n* I didn't actually do the to string right\n\n* formatting\n\n* fixing another log line\n\n* updating log\n\n* cleaning up final log\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "89550b1b71b4b6b79ffc26868148ccadebd3d126",
+      "date": "2025-11-05T12:54:04Z",
+      "author": "matthew-robinson-ons",
+      "email": "113037557+matthew-robinson-ons@users.noreply.github.com",
+      "message": "Upgrade to Java21 Springboot3 (#358)\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>\nCo-authored-by: Mark Price <mark.price@ons.gov.uk>\nCo-authored-by: Mark Price <pricem14pc@users.noreply.github.com>"
+    },
+    {
+      "sha": "1276faac429a7599b68d97377eb246350cfc741e",
+      "date": "2025-10-31T10:10:20Z",
+      "author": "anwilkie",
+      "email": "47449873+anwilkie@users.noreply.github.com",
+      "message": "remove dependabot-specific workflow (#365)\n\n* fix dependabot workflow\n\n* auto patch increment\n\n* test workflow\n\n* remove check\n\n* remove check 2\n\n* remove dependabot checks from workflow\n\n* rename step again\n\n* auto patch increment\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "61734eb2e974cc45467c753cb12d49fcbd5bdd01",
+      "date": "2025-10-28T13:39:23Z",
+      "author": "matthew-robinson-ons",
+      "email": "113037557+matthew-robinson-ons@users.noreply.github.com",
+      "message": "bump chart version (#366)\n\n"
+    },
+    {
+      "sha": "72739c224759d84d58797a995808db74df82c881",
+      "date": "2025-10-27T13:44:38Z",
+      "author": "matthew-robinson-ons",
+      "email": "113037557+matthew-robinson-ons@users.noreply.github.com",
+      "message": "IntroduceArchiveExemption.txt (#363)\n\n* IntroduceArchiveExemption.txt\n\n* auto patch increment\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "3589479b714179ca77a6ac4ea6d30e660db0bf24",
+      "date": "2025-10-20T13:45:47+01:00",
+      "author": "Mark Price",
+      "email": "pricem14pc@users.noreply.github.com",
+      "message": "Use alpine-curl image (#362)\n\n* Use RASRM managed alpine-curl image\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "a526e0ab137bce97b4cbe56cdc2377ce7c3f8ebf",
+      "date": "2025-08-06T12:32:07+01:00",
+      "author": "anwilkie",
+      "email": "47449873+anwilkie@users.noreply.github.com",
+      "message": "add dependabot workflow (#357)\n\n* add dependabot workflow\n\n* auto patch increment\n\n* fix typo\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "723d5c124a7ce61cea95ac1e8aeea26d59e3601a",
+      "date": "2025-06-16T13:59:10+01:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.springframework.security:spring-security-crypto from 5.7.1 to 6.3.8 in the maven group across 1 directory (#356)\n\n* Bump org.springframework.security:spring-security-crypto\n\nBumps the maven group with 1 update in the / directory: [org.springframework.security:spring-security-crypto](https://github.com/spring-projects/spring-security).\n\n\nUpdates `org.springframework.security:spring-security-crypto` from 5.7.1 to 6.3.8\n- [Release notes](https://github.com/spring-projects/spring-security/releases)\n- [Changelog](https://github.com/spring-projects/spring-security/blob/main/RELEASE.adoc)\n- [Commits](https://github.com/spring-projects/spring-security/compare/5.7.1...6.3.8)\n\n---\nupdated-dependencies:\n- dependency-name: org.springframework.security:spring-security-crypto\n  dependency-version: 6.3.8\n  dependency-type: direct:production\n  dependency-group: maven\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\n\n* bump chart version\n\n---------\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Adam Wilkie <Adam.Wilkie@ons.gov.uk>"
+    },
+    {
+      "sha": "6d171f1775fa43d896f260a0c1559425e7e395bd",
+      "date": "2025-05-13T12:52:58+01:00",
+      "author": "Alejandro Arroyo",
+      "email": "41422777+arroyoAle@users.noreply.github.com",
+      "message": "RAS-1418 EPIC: Unpinned tag for a non-immutable Action in workflow (#355)\n\n* pinning gha to commit refs\n\n* auto patch increment\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "7c0cacd2ec465df01cef97d7b26ca7f9091bbb3b",
+      "date": "2025-03-06T10:44:20Z",
+      "author": "Alejandro Arroyo",
+      "email": "41422777+arroyoAle@users.noreply.github.com",
+      "message": "Extend get ces for surveys (#354)\n\n* Extend get ces for surveys\n\n* auto patch increment\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "8066287ac6f5580f4fd7558ad54a0d39ea620507",
+      "date": "2025-02-25T11:09:54Z",
+      "author": "matthew-robinson-ons",
+      "email": "113037557+matthew-robinson-ons@users.noreply.github.com",
+      "message": "Revert \"Extend get ces for surveys\" (#353)\n\n* Revert \"Extend get ces for surveys (#351)\"\n\nThis reverts commit 905c2db689d889a2a1870d863498253ce827753b.\n\n* correct version"
+    },
+    {
+      "sha": "905c2db689d889a2a1870d863498253ce827753b",
+      "date": "2025-02-24T09:01:59Z",
+      "author": "Alejandro Arroyo",
+      "email": "41422777+arroyoAle@users.noreply.github.com",
+      "message": "Extend get ces for surveys (#351)\n\n* reverting pubsub upgrade\n\n* Extending get collection exercises for survey ids\n\n* auto patch increment\n\n* updating return variable\n\n* adding no content return when there are no linked CEs\n\n* adding check for survey ids and return no content as there will be no CEs to return\n\n* auto patch increment\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "ad8b1813c7069758279df53f0f2e72a27200627f",
+      "date": "2025-02-10T09:34:14Z",
+      "author": "Mark Price",
+      "email": "pricem14pc@users.noreply.github.com",
+      "message": "Use migrated GAR pubsub-emulator image (#352)\n\n* Use migrated GAR pubsub-emulator image\n\n* auto patch increment\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "d64b7911671be05698190ccf392c9aae5e792a2e",
+      "date": "2025-01-16T14:16:49Z",
+      "author": "matthew-robinson-ons",
+      "email": "113037557+matthew-robinson-ons@users.noreply.github.com",
+      "message": "Upgrade actions cache (#350)\n\n* upgrade actions/cache to v4\n\n* add codeowners file\n\n* auto patch increment\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "23b966d28b2c72e7d44745e834496f4fbdf9143f",
+      "date": "2024-11-18T15:25:20Z",
+      "author": "matthew-robinson-ons",
+      "email": "113037557+matthew-robinson-ons@users.noreply.github.com",
+      "message": "Update survey image ref to GAR (#349)\n\n* update survey image ref to GAR\n\n* use pr image\n\n* auto patch increment\n\n* revert to latest\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "8ad2340f8f9108e6783c5f27c8ae4f0193405913",
+      "date": "2024-11-11T12:28:49Z",
+      "author": "matthew-robinson-ons",
+      "email": "113037557+matthew-robinson-ons@users.noreply.github.com",
+      "message": "resolve chart conflict (#348)\n\n"
+    },
+    {
+      "sha": "0cc58d4fb757b09371f5b0c6647d7b37e198cf14",
+      "date": "2024-11-11T12:09:50Z",
+      "author": "matthew-robinson-ons",
+      "email": "113037557+matthew-robinson-ons@users.noreply.github.com",
+      "message": "Migrate GCR to GAR (#346)\n\n* update gcr references to gar\n\n* fix auth\n\n* add auth for gcr and gar\n\n* test after updating secret\n\n* re add auth for gcr\n\n* auto patch increment\n\n* updating manual.yml\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "71604ce7f88b43fe6178c4819008962f77e7462b",
+      "date": "2024-11-08T13:06:31Z",
+      "author": "anwilkie",
+      "email": "47449873+anwilkie@users.noreply.github.com",
+      "message": "disable load balancer (#347)\n\n* disable load balancer\n\n* auto patch increment\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "73e13a4b999695342f7900eb0d63c47fdad5d307",
+      "date": "2024-10-28T08:21:48Z",
+      "author": "Alejandro Arroyo",
+      "email": "41422777+arroyoAle@users.noreply.github.com",
+      "message": "RAS-1310 Upgrade liquibase dependency in collection exercise service (#345)\n\n* updating liquibase, adding commons io, and updating pubsub starter\n\n* auto patch increment\n\n* removing test commons io pkg\n\n* reverting pubsub upgrade\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "5c2d4861eb8688a0ae97d4e9d02b9ec50005b7c9",
+      "date": "2024-10-01T15:37:14+01:00",
+      "author": "anwilkie",
+      "email": "47449873+anwilkie@users.noreply.github.com",
+      "message": "update springboot to 2.7 (#344)\n\n* update springboot to 2.7\n\n* auto patch increment\n\n* more dependency upgrades\n\n* undo codehaus.mojo upgrade\n\n* Revert \"more dependency upgrades\"\n\nThis reverts commit 45d687bfdad4c092a43c51164bd464aeb5bfd2c7.\n\n* Revert \"undo codehaus.mojo upgrade\"\n\nThis reverts commit 89d5ddfacb03f34eca7e6e81b04b841e283c271f.\n\n* update springboot to 2.7.18\n\n* update spring cloud\n\n* adding RELEASE to spring cloud\n\n* change spring cloud to 4.7.0\n\n* change to gcp-starter-pubsub\n\n* change to gcp-starter-pubsub 2\n\n* changing back spring cloud gcp version\n\n* version upgrades 1\n\n* version upgrades 2\n\n* Revert \"version upgrades 2\"\n\nThis reverts commit e327553feb45636b1ab7d6acc219393e906783ef.\n\n* version upgrades 3\n\n* revert wiremock\n\n* version upgrades 4\n\n* revert liquibase\n\n* put mockito back to 5.13\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "e3e42926943b6ac029e88a7db52af36b786b9260",
+      "date": "2024-08-23T10:57:21+02:00",
+      "author": "Alejandro Arroyo",
+      "email": "41422777+arroyoAle@users.noreply.github.com",
+      "message": "making collection exercise load balancer configurable (#343)\n\n* making collection exercise load balancer configurable\n\n* auto patch increment\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "4ee9b4d385dd7aaf4ce12762bcf899a98450e002",
+      "date": "2024-08-09T15:30:18+02:00",
+      "author": "Alejandro Arroyo",
+      "email": "41422777+arroyoAle@users.noreply.github.com",
+      "message": "RAS-1238 Update to docker compose from docker-compose (#342)\n\n* replacing docker compose plugin\n\n* moving chmod to the test task and some ls\n\n* removing chmod for a test"
+    }
+  ],
+  "commit_sha": "381bb8432a054d25bd6c9d6bbfe729f54d983568",
+  "extracted_at": "2026-10-05T18:27:43.703621+00:00"
+}

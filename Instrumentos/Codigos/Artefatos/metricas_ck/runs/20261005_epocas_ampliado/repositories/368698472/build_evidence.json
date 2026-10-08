@@ -1,0 +1,52 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "",
+  "spring_boot_major": "unknown",
+  "java_versions_declared": "${java.version};25",
+  "build_evidence": [
+    {
+      "file": "dante-cloud-packages/facility-alibaba-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "dante-cloud-packages/facility-alibaba-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "dante-cloud-platform/dante-cloud-gateway/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "dante-cloud-platform/dante-cloud-message/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "dante-cloud-platform/dante-cloud-monitor/pom.xml",
+      "artifact": "spring-boot-starter-oauth2-client"
+    },
+    {
+      "file": "dante-cloud-platform/dante-cloud-monitor/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "dante-cloud-platform/dante-cloud-uaa/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "dante-cloud-platform/dante-cloud-upms/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "dante-cloud-services/dante-cloud-bpmn-ability/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "dante-cloud-services/dante-cloud-oss-ability/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "dante-cloud-services/dante-monolith-application/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

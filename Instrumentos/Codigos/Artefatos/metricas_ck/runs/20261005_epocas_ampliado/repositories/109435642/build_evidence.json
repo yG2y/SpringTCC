@@ -1,0 +1,28 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "2.7.5;3.4.0",
+  "spring_boot_major": "multiple",
+  "java_versions_declared": "21",
+  "build_evidence": [
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "e0859734d0fc11b4a68243c4bd5eaa99e146196d",
+      "date": "2026-10-05T01:57:04+09:00",
+      "author": "이상민",
+      "email": "lsmin3388_@naver.com",
+      "message": "Merge pull request #28 from reqover-labs/fix/export-across-test-contexts\n\nfix: findings from applying Reqover to a production Spring Boot service"
+    },
+    {
+      "sha": "c4e6ad93320956c5c02f459c4388a565fe1c480f",
+      "date": "2026-10-05T01:54:46+09:00",
+      "author": "lsmin3388",
+      "email": "lsmin3388_@naver.com",
+      "message": "fix(agent): narrow the Hibernate proxy marker and keep Lombok defaults\n\nMatch $HibernateProxy only at the end of the class name so a class such\nas Order$HibernateProxyFactory is still instrumented. Drop the $default$\nexclusion: a @Builder.Default initializer is the field's own expression\nand can hold real logic. Document how long accumulated exports are kept.\n"
+    },
+    {
+      "sha": "97db3d27e19f9d0bad8410d6e9a1044a38209f29",
+      "date": "2026-10-05T01:28:12+09:00",
+      "author": "lsmin3388",
+      "email": "lsmin3388_@naver.com",
+      "message": "fix(agent): drop Hibernate 6, Mockito and builder noise; add accessors=record\n\nRunning the agent over a real Lombok/JPA service turned up noise that the\nearlier filter missed:\n\n- Hibernate 6 names its proxy Order$HibernateProxy with no suffix.\n- Mockito mocks ($MockitoMock$) were recorded as application code.\n- Lombok builder methods (store the argument, return this) made up a fifth\n  of the reverse index; Lombok's $default$ initializers ran on every build.\n\nSkipping accessors has a cost: a class made only of them, such as a\nrequest DTO record, disappears from impact analysis. accessors=record keeps\nthem for a CI recording; on that service it cut unmatched changed files\nfrom 33 to 21 over the last 12 commits. The default is unchanged.\n"
+    },
+    {
+      "sha": "d3929ae5b5f5f3e0367648fb8b7c2399bc6f6f5f",
+      "date": "2026-10-05T01:22:59+09:00",
+      "author": "lsmin3388",
+      "email": "lsmin3388_@naver.com",
+      "message": "fix(starter): keep every test context's requests in the exported report\n\nSpring's test context cache keeps one application context per distinct\ntest configuration and closes them all at JVM exit. Each context's\nReqoverReportExporter overwrote the same file, so the report covered only\nwhichever context closed last. Applied to a real Spring Boot service\n(167 tests, five contexts), the report listed 20 of the 50 endpoints the\ntests called.\n\nExports to one path in the same JVM now accumulate. The first export of a\nrun still replaces the file, so an earlier run never leaks in. The request\nid sequence is JVM-wide so the merged report does not repeat req-1.\n\nDocument attaching the agent to the test JVM in the CI guide.\n"
+    },
+    {
+      "sha": "c5a41ee41b7f15d0d0bc7799bd48a10af5cf3bb0",
+      "date": "2026-10-05T01:20:54+09:00",
+      "author": "lsmin3388",
+      "email": "lsmin3388_@naver.com",
+      "message": "chore: store gradlew.bat with LF in the index\n\nThe gradle-wrapper bump committed gradlew.bat with CRLF in the index.\n.gitattributes converts *.bat to CRLF only in the working tree, so every\nfresh checkout showed the file as modified.\n"
+    },
+    {
+      "sha": "22e796428616ec93684cfe529c6c12be71b0baaf",
+      "date": "2026-10-05T01:20:14+09:00",
+      "author": "이상민",
+      "email": "lsmin3388_@naver.com",
+      "message": "Merge pull request #24 from reqover-labs/fix/report-noise\n\nfix: drop proxy, accessor and unmapped-URL noise from reports"
+    },
+    {
+      "sha": "efbc3a8a2e96cf71cc9fc2644d61e00e6e25eac6",
+      "date": "2026-10-05T01:17:20+09:00",
+      "author": "이상민",
+      "email": "lsmin3388_@naver.com",
+      "message": "Merge branch 'main' into fix/report-noise"
+    },
+    {
+      "sha": "bee75905335fa393de5070f0ab0c921e2ba49f70",
+      "date": "2026-10-05T01:17:15+09:00",
+      "author": "이상민",
+      "email": "lsmin3388_@naver.com",
+      "message": "Merge pull request #23 from reqover-labs/dependabot/gradle/gradle-wrapper-9.8.0\n\nbuild(deps): bump gradle-wrapper from 9.7.1 to 9.8.0"
+    },
+    {
+      "sha": "1e0b31812b726a776eba19bec432e7ec5d4b92f5",
+      "date": "2026-10-05T01:14:43+09:00",
+      "author": "이상민",
+      "email": "lsmin3388_@naver.com",
+      "message": "Merge branch 'main' into dependabot/gradle/gradle-wrapper-9.8.0"
+    },
+    {
+      "sha": "2ad81d248594e13e2c7b5afd7f912d0908bf4266",
+      "date": "2026-10-05T01:14:39+09:00",
+      "author": "이상민",
+      "email": "lsmin3388_@naver.com",
+      "message": "Merge pull request #21 from reqover-labs/dependabot/github_actions/actions/setup-java-6.0.1\n\nbuild(deps): bump actions/setup-java from 5.7.0 to 6.0.1"
+    },
+    {
+      "sha": "63380ac4e2024328f9e660ab5079b9241c9cba5e",
+      "date": "2026-10-05T01:12:07+09:00",
+      "author": "이상민",
+      "email": "lsmin3388_@naver.com",
+      "message": "Merge branch 'main' into dependabot/github_actions/actions/setup-java-6.0.1"
+    },
+    {
+      "sha": "3d645d54c2e5a2b173d57e05aa476a28a293e52a",
+      "date": "2026-10-05T01:11:36+09:00",
+      "author": "이상민",
+      "email": "lsmin3388_@naver.com",
+      "message": "Merge pull request #22 from reqover-labs/dependabot/github_actions/google/osv-scanner-action/dot-github/workflows/osv-scanner-reusable.yml-2.6.0\n\nbuild(deps): bump google/osv-scanner-action/.github/workflows/osv-scanner-reusable.yml from 2.5.1 to 2.6.0"
+    },
+    {
+      "sha": "6508a3ceac15f1168fdaa89b111fa2500a558890",
+      "date": "2026-10-05T01:09:54+09:00",
+      "author": "lsmin3388",
+      "email": "lsmin3388_@naver.com",
+      "message": "Merge remote-tracking branch 'origin/main' into fix/report-noise\n"
+    },
+    {
+      "sha": "6b17c808e4a0fb6406605d22b7981c7e6ce5f3e5",
+      "date": "2026-10-05T01:09:47+09:00",
+      "author": "lsmin3388",
+      "email": "lsmin3388_@naver.com",
+      "message": "fix: keep request handlers and mapped resource handlers in reports\n\nThe accessor filter matched on bytecode shape alone, so a controller\nmethod such as `String status() { return status; }` lost its probe.\nMethods with a Spring web annotation and every method of a\n@Controller/@RestController are now kept.\n\nThe resource-handler skip dropped every request served by\nResourceHttpRequestHandler/ResourceWebHandler, including ones mapped to\nan application pattern like /downloads/**. Only Boot's catch-all /**\nmapping is skipped now.\n"
+    },
+    {
+      "sha": "4a3567e7c09dbb102d42fb2699c2701d70a100ee",
+      "date": "2026-10-04T16:08:48Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump gradle-wrapper from 9.7.1 to 9.8.0\n\nBumps [gradle-wrapper](https://github.com/gradle/gradle) from 9.7.1 to 9.8.0.\n- [Release notes](https://github.com/gradle/gradle/releases)\n- [Commits](https://github.com/gradle/gradle/compare/v9.7.1...v9.8.0)\n\n---\nupdated-dependencies:\n- dependency-name: gradle-wrapper\n  dependency-version: 9.8.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "04ecc8cd5193f1e0f6dc2ce3c88490069746590c",
+      "date": "2026-10-04T16:08:27Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump actions/setup-java from 5.7.0 to 6.0.1\n\nBumps [actions/setup-java](https://github.com/actions/setup-java) from 5.7.0 to 6.0.1.\n- [Release notes](https://github.com/actions/setup-java/releases)\n- [Commits](https://github.com/actions/setup-java/compare/b6effb05e454b25005698d916606bdc6ffcbf961...de7274f081f381c8f8158605e0321c36c376e2e6)\n\n---\nupdated-dependencies:\n- dependency-name: actions/setup-java\n  dependency-version: 6.0.1\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "3c33c166b11775b2eecf94d9e6b843a48a46a216",
+      "date": "2026-10-04T16:08:24Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump google/osv-scanner-action/.github/workflows/osv-scanner-reusable.yml\n\nBumps [google/osv-scanner-action/.github/workflows/osv-scanner-reusable.yml](https://github.com/google/osv-scanner-action) from 2.5.1 to 2.6.0.\n- [Release notes](https://github.com/google/osv-scanner-action/releases)\n- [Commits](https://github.com/google/osv-scanner-action/compare/6e4298ebc4db23e847df9b2e2de2939d6f066c67...a345acffa64b0eaede81a3d9aae6141214d9c8fc)\n\n---\nupdated-dependencies:\n- dependency-name: google/osv-scanner-action/.github/workflows/osv-scanner-reusable.yml\n  dependency-version: 2.6.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "a35f84097792cbb562f3367faf7889c5deea12e4",
+      "date": "2026-10-05T01:07:24+09:00",
+      "author": "이상민",
+      "email": "lsmin3388_@naver.com",
+      "message": "Merge pull request #26 from reqover-labs/fix/osv-jackson-tomcat\n\nfix(security): patch Jackson and embedded Tomcat dependencies"
+    },
+    {
+      "sha": "16427f4be954c29284106f56bd4b34f34e9b3a3f",
+      "date": "2026-10-04T19:08:28+09:00",
+      "author": "TaeHuiKKIM",
+      "email": "1043tae@naver.com",
+      "message": "fix(security): patch Jackson and embedded Tomcat dependencies\n\nAlign Jackson to 2.21.7 and embedded Tomcat core/EL/WebSocket to 10.1.60\nin the MVC sample and the starter's test runtime. This clears the three\nTomcat and seven Jackson advisories that fail the OSV dependency scan on\nmain. Published starter consumers get no new Tomcat constraint.\n\nRegenerate the SBOM lock. The blocking scan policy is unchanged.\n\nSplit out of #25 (bee4533) so the security fix can land on its own.\n"
+    },
+    {
+      "sha": "55749200561623462156abea5776a35e349f29d0",
+      "date": "2026-10-02T08:05:58+09:00",
+      "author": "lsmin3388",
+      "email": "lsmin3388_@naver.com",
+      "message": "fix: drop proxy, accessor and unmapped-URL noise from reports\n\nAttaching Reqover to a real Spring Boot service (a Lombok-heavy MVC app)\nshowed three kinds of noise that buried the code that matters:\n\n- Runtime proxy classes (`$$SpringCGLIB$$`, `$HibernateProxy$`,\n  `$ByteBuddy$`) live in the application's package, so an include\n  matched them and every proxied service was listed next to its own\n  `$$SpringCGLIB$$0` twin. AgentOptions now always excludes them; the\n  real method behind the proxy is still recorded.\n- Trivial accessors run whenever Jackson serializes the object, so a\n  shared response envelope's getters topped the reverse lookup as \"used\n  by every API\". TrivialAccessorScanner finds methods whose whole body\n  reads or writes one of the class's own instance fields, by bytecode\n  shape rather than by name, and the instrumenter skips them. A getter\n  that computes anything is still recorded.\n- Spring Boot maps a static resource handler to `/**`, so every URL that\n  matched no controller piled up under one `GET /**` endpoint. The MVC\n  interceptor and the WebFlux filter now skip requests served by\n  ResourceHttpRequestHandler / ResourceWebHandler.\n\nOn that service the busiest endpoint went from 19 classes / 62 methods to\n8 / 15, and the top shared method in the reverse lookup went from a\nresponse getter to the domain rule that three APIs really share.\n\nThe WebFlux agent E2E test proved the parallel-thread hop through the\nresponse record's accessors only. The sample now maps through a\n`toResponse` method, and the test asserts both that method and that the\nrecord's accessors are no longer recorded.\n"
+    },
+    {
+      "sha": "3207397adf7b4467576c2d1f7fe020a537d43d19",
+      "date": "2026-09-02T15:39:03+09:00",
+      "author": "이상민",
+      "email": "lsmin3388_@naver.com",
+      "message": "Merge pull request #15 from VedantMadane/fix/issue-14-coverage-store\n\nfeat: CoverageStore contract test and configurable eviction"
+    },
+    {
+      "sha": "276d7df2ac6e1e0aa22805a99b242eba3cb16178",
+      "date": "2026-09-02T15:35:11+09:00",
+      "author": "lsmin3388",
+      "email": "lsmin3388_@naver.com",
+      "message": "refactor(core): drop the unreachable eviction-policy parser\n\nSpring's relaxed binding already turns `oldest-first` and\n`reject-when-full` into the enum constants, so `fromProperty` had no\ncaller in main and was a second parser that could drift from the first.\nIt also lower-cased with the default locale, which turns `OLDEST_FIRST`\ninto `oldest-fırst` under tr_TR and throws.\n\nWhile finishing the review of #15: the Korean integration guide gets the\nsame two property rows and the retention paragraph, the changelog\nrecords the feature under Unreleased, the English guide stops attributing\nthe policy to 0.2.0, and the two configuration classes lose a trailing\nblank line.\n"
+    },
+    {
+      "sha": "05c953e453e43725a23587d6e0726aa5b7243537",
+      "date": "2026-08-25T21:59:28+09:00",
+      "author": "이상민",
+      "email": "lsmin3388_@naver.com",
+      "message": "Merge branch 'main' into fix/issue-14-coverage-store"
+    },
+    {
+      "sha": "36c790f568754fe347f66935ba7eb3dd53aa5216",
+      "date": "2026-08-25T21:14:56+09:00",
+      "author": "이상민",
+      "email": "lsmin3388_@naver.com",
+      "message": "Merge pull request #18 from reqover-labs/chore/post-submission-hardening\n\nMeasure the agent's real overhead, and write the policy Central needs"
+    },
+    {
+      "sha": "7b641ee062bb89b24658404ca2f6ab9833ef70c6",
+      "date": "2026-08-25T20:58:34+09:00",
+      "author": "lsmin3388",
+      "email": "lsmin3388_@naver.com",
+      "message": "Merge remote-tracking branch 'origin/main' into chore/post-submission-hardening\n"
+    },
+    {
+      "sha": "c311c2e978938b4f07477c822d588ea412517494",
+      "date": "2026-08-25T20:56:41+09:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump google/osv-scanner-action/.github/workflows/osv-scanner-reusable.yml (#17)\n\nBumps [google/osv-scanner-action/.github/workflows/osv-scanner-reusable.yml](https://github.com/google/osv-scanner-action) from 2.5.0 to 2.5.1.\n- [Release notes](https://github.com/google/osv-scanner-action/releases)\n- [Commits](https://github.com/google/osv-scanner-action/compare/8deb546fdb875b9996d27d4950be7312dac076a1...6e4298ebc4db23e847df9b2e2de2939d6f066c67)\n\n---\nupdated-dependencies:\n- dependency-name: google/osv-scanner-action/.github/workflows/osv-scanner-reusable.yml\n  dependency-version: 2.5.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "4e924cbb5d122964173218ef32e7e9dd688216ab",
+      "date": "2026-08-25T20:56:37+09:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump gradle-wrapper from 9.7.0 to 9.7.1 (#16)\n\nBumps [gradle-wrapper](https://github.com/gradle/gradle) from 9.7.0 to 9.7.1.\n- [Release notes](https://github.com/gradle/gradle/releases)\n- [Commits](https://github.com/gradle/gradle/compare/v9.7.0...v9.7.1)\n\n---\nupdated-dependencies:\n- dependency-name: gradle-wrapper\n  dependency-version: 9.7.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "7960cbea0d127febd5d87cc377884438eeec987a",
+      "date": "2026-08-25T20:53:18+09:00",
+      "author": "lsmin3388",
+      "email": "lsmin3388_@naver.com",
+      "message": "docs(changelog): record the unreleased changes\n"
+    },
+    {
+      "sha": "cf0d976474c6f30efe0a27f9ed2c026d1acb711a",
+      "date": "2026-08-25T20:52:35+09:00",
+      "author": "lsmin3388",
+      "email": "lsmin3388_@naver.com",
+      "message": "docs(perf): replace the retired measurement with one that has a slope\n\nThe 2026-08-10 capture reported the agent as faster than the baseline,\nwhich is what a single-order run produces when drift points the same way.\nIt is retired rather than reinterpreted.\n\nMeasures four endpoint shapes over six alternating rounds each. At four\ninstrumented entries the cost is inside the noise floor; at a thousand\nand above every round agrees, giving about 24 ns per instrumented method\nentry. Lists what the measurement does not cover — concurrency, GC,\nstartup — because those are where a surprise would come from.\n\nAdds a roadmap, so the order we intend to work in is arguable in public.\n"
+    },
+    {
+      "sha": "8a004266710fb684721e717ff77b7d68c59cdb48",
+      "date": "2026-08-25T20:30:44+09:00",
+      "author": "lsmin3388",
+      "email": "lsmin3388_@naver.com",
+      "message": "docs: give questions a place that isn't the issue tracker\n\nEnables Discussions and points the issue chooser at Q&A and Show and\ntell, so \"does this fit my case\" stops arriving as a bug report. SUPPORT\ncollects where to go and what a report we can act on contains.\n\nCITATION.cff so the project can be cited without guessing at the\nmetadata.\n"
+    }
+  ],
+  "commit_sha": "e0859734d0fc11b4a68243c4bd5eaa99e146196d",
+  "extracted_at": "2026-10-05T18:25:04.950486+00:00"
+}

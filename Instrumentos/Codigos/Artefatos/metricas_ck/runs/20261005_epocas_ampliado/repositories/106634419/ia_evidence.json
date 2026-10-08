@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "a9d9b9bb6f7f2c27b0f060b9b5caf05e88b6d416",
+      "date": "2026-08-06T16:01:13-03:00",
+      "author": "murraco",
+      "email": "mauriurraco@gmail.com",
+      "message": "Update README.md\n"
+    },
+    {
+      "sha": "88eeedfb085185599715b573ef1fa5b47611561a",
+      "date": "2026-08-03T20:06:13Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump actions/setup-java from 5.6.0 to 5.7.0 in the github-actions group\n\nBumps the github-actions group with 1 update: [actions/setup-java](https://github.com/actions/setup-java).\n\n\nUpdates `actions/setup-java` from 5.6.0 to 5.7.0\n- [Release notes](https://github.com/actions/setup-java/releases)\n- [Commits](https://github.com/actions/setup-java/compare/v5.6.0...v5.7.0)\n\n---\nupdated-dependencies:\n- dependency-name: actions/setup-java\n  dependency-version: 5.7.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: github-actions\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "3779d07fbabb6272742daf65e28ff4aa5f034cdc",
+      "date": "2026-08-01T02:27:27Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump the github-actions group across 1 directory with 2 updates\n\nBumps the github-actions group with 2 updates in the / directory: [actions/checkout](https://github.com/actions/checkout) and [actions/setup-java](https://github.com/actions/setup-java).\n\n\nUpdates `actions/checkout` from 4 to 7\n- [Release notes](https://github.com/actions/checkout/releases)\n- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/actions/checkout/compare/v4...v7)\n\nUpdates `actions/setup-java` from 4 to 5.6.0\n- [Release notes](https://github.com/actions/setup-java/releases)\n- [Commits](https://github.com/actions/setup-java/compare/v4...v5.6.0)\n\n---\nupdated-dependencies:\n- dependency-name: actions/checkout\n  dependency-version: '7'\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n  dependency-group: github-actions\n- dependency-name: actions/setup-java\n  dependency-version: 5.6.0\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n  dependency-group: github-actions\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "2146405dc1cb6e8d722a1af7e5d8d77b5ca41578",
+      "date": "2026-07-31T23:26:29-03:00",
+      "author": "murraco",
+      "email": "mauriurraco@gmail.com",
+      "message": "Reduce update PR noise with grouped dependencies\n"
+    },
+    {
+      "sha": "f10df129cf16940e655a4a300cff4a6c306da0ad",
+      "date": "2026-07-31T22:35:54-03:00",
+      "author": "murraco",
+      "email": "mauriurraco@gmail.com",
+      "message": "Configure Dependabot for Maven dependencies\n"
+    },
+    {
+      "sha": "120a44861e828fe6f2bc3d472bf14babd5c19a82",
+      "date": "2026-07-31T21:54:38-03:00",
+      "author": "murraco",
+      "email": "mauriurraco@gmail.com",
+      "message": "Add rotating refresh token support\n"
+    },
+    {
+      "sha": "a18b44dc9f20ed0afb7eb04c1799371d114bbd94",
+      "date": "2026-07-31T21:21:51-03:00",
+      "author": "murraco",
+      "email": "mauriurraco@gmail.com",
+      "message": "Add GitHub Actions workflow for Maven tests\n"
+    },
+    {
+      "sha": "cc9c1bdba115f03ead6316228900c3400b166c0f",
+      "date": "2026-04-15T23:53:37-03:00",
+      "author": "murraco",
+      "email": "mauriurraco@gmail.com",
+      "message": "Remove .DS_Store and add to .gitignore\n"
+    },
+    {
+      "sha": "89ed9174eca9c19ac00380b6d6cf1adee815b89c",
+      "date": "2026-04-05T13:41:39-03:00",
+      "author": "murraco",
+      "email": "mauriurraco@gmail.com",
+      "message": "Replace Springfox with SpringDoc and align Docker + README\n"
+    },
+    {
+      "sha": "5a8bcf0ef85026f6d3fb58c2fab49c3b77c99bcd",
+      "date": "2026-04-05T12:49:43-03:00",
+      "author": "murraco",
+      "email": "mauriurraco@gmail.com",
+      "message": "Migrate to Jakarta EE, Spring Security 6 filter chain, and jjwt 0.12\n"
+    },
+    {
+      "sha": "01ba2161116c698cf742ec95f1ceac606e7bb90d",
+      "date": "2026-04-05T09:47:37-03:00",
+      "author": "murraco",
+      "email": "mauriurraco@gmail.com",
+      "message": "Bump deps to Spring Boot 3.5.13, JDK 17, SpringDoc, jjwt 0.12, MySQL connector-j\n"
+    },
+    {
+      "sha": "f53883fe600110058946a0c40e48f0f4b19454ab",
+      "date": "2026-04-04T19:27:59-03:00",
+      "author": "murraco",
+      "email": "mauriurraco@gmail.com",
+      "message": "Improve security, config, testing, docker support and API consistency\n"
+    },
+    {
+      "sha": "821f8c996bcf6241707d0375062a2ad2c283da72",
+      "date": "2024-08-26T16:28:28Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump io.springfox:springfox-swagger-ui from 2.9.2 to 2.10.0\n\nBumps [io.springfox:springfox-swagger-ui](https://github.com/springfox/springfox) from 2.9.2 to 2.10.0.\n- [Release notes](https://github.com/springfox/springfox/releases)\n- [Changelog](https://github.com/springfox/springfox/blob/master/docs/release-notes.md)\n- [Commits](https://github.com/springfox/springfox/compare/2.9.2...2.10.0)\n\n---\nupdated-dependencies:\n- dependency-name: io.springfox:springfox-swagger-ui\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "069311eca7840d38e95ef23d69ea17ff018fe244",
+      "date": "2024-08-19T17:45:15-03:00",
+      "author": "Mauricio Urraco",
+      "email": "mauriurraco@gmail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "81046d23b8c741e48ec2aaa2f7752cada6ff2a73",
+      "date": "2024-07-28T11:55:18-03:00",
+      "author": "Mauricio Urraco",
+      "email": "mauriurraco@gmail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "05897e26b9ba4f95cd9d0f12320c0e7467003382",
+      "date": "2024-07-28T11:25:31-03:00",
+      "author": "Mauricio Urraco",
+      "email": "mauriurraco@gmail.com",
+      "message": "Update FUNDING.yml"
+    },
+    {
+      "sha": "b9a33ee49f5eaad042ef2bab6bc81c22a73a312d",
+      "date": "2024-04-12T11:13:19-03:00",
+      "author": "Mauricio Urraco",
+      "email": "mauriurraco@gmail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "1f61275ab55be494fac2a02c58a2c659cec261e9",
+      "date": "2023-12-12T23:14:52-03:00",
+      "author": "Mauricio Urraco",
+      "email": "mauriurraco@gmail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "cf2ebed0cd21bab16c21d28b7ca602b1a05fe025",
+      "date": "2022-03-01T15:41:33-03:00",
+      "author": "Mauricio Urraco",
+      "email": "mauriurraco@gmail.com",
+      "message": "Create FUNDING.yml"
+    },
+    {
+      "sha": "af7c9559fbe049b6ce9c8200b07a2bd3ec097228",
+      "date": "2022-02-16T15:31:34-03:00",
+      "author": "Mauricio Urraco",
+      "email": "mauriurraco@gmail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "f4aebc2eba7d4f0282cb3ea05e5ba33f600f638b",
+      "date": "2021-09-24T02:14:07+03:00",
+      "author": "Ilya Rafailov",
+      "email": "51456309+SanoranX@users.noreply.github.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "e9186360be0614873ae6d8e69c8e4d0948e09faa",
+      "date": "2021-09-24T01:45:58+03:00",
+      "author": "SanoranX",
+      "email": "ilyarafailov32@gmail.com",
+      "message": "Update dependencies\n"
+    },
+    {
+      "sha": "ef4f753e0350c03b70b840cfd1a9f60fec5f1162",
+      "date": "2021-09-24T01:22:15+03:00",
+      "author": "SanoranX",
+      "email": "ilyarafailov32@gmail.com",
+      "message": "User is now AppUser because of Postgres reservation\n"
+    },
+    {
+      "sha": "41d25faa8fc7cc13a2aff48401ba40e159181481",
+      "date": "2021-09-24T01:20:06+03:00",
+      "author": "SanoranX",
+      "email": "ilyarafailov32@gmail.com",
+      "message": "Update Spring boot to the latest version\n"
+    },
+    {
+      "sha": "81867c69a13fe91f504b9c2f017ed44c3c1555f9",
+      "date": "2021-09-24T01:17:18+03:00",
+      "author": "SanoranX",
+      "email": "ilyarafailov32@gmail.com",
+      "message": "Added Lombok to keep code nice and clean\n"
+    },
+    {
+      "sha": "29d33af2f0f3af7fb8dd135d3768a4e74a014634",
+      "date": "2020-09-04T00:01:08-03:00",
+      "author": "Mauricio Urraco",
+      "email": "mauriurraco@gmail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "e2747252b28176a1877e7a570bf1aedcaa468251",
+      "date": "2020-07-23T12:47:14-03:00",
+      "author": "Mauricio Urraco",
+      "email": "mauriurraco@gmail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "9a9b97c65bba9d600c1bf3a5b36d64776cb2f93e",
+      "date": "2020-07-23T00:13:32-03:00",
+      "author": "murraco",
+      "email": "mauriurraco@gmail.com",
+      "message": "Update README.md\n"
+    },
+    {
+      "sha": "bee3831c688b0243dd8095db581c26d796d6efbc",
+      "date": "2020-07-22T23:57:17-03:00",
+      "author": "murraco",
+      "email": "mauriurraco@gmail.com",
+      "message": "Set h2 as default database for testing\n"
+    },
+    {
+      "sha": "5f83c3a75c0abc9fe70c9dcb7fa4e1c184dfb102",
+      "date": "2020-07-21T17:12:32-03:00",
+      "author": "Mauricio Urraco",
+      "email": "mauriurraco@gmail.com",
+      "message": "Update README.md"
+    }
+  ],
+  "commit_sha": "a9d9b9bb6f7f2c27b0f060b9b5caf05e88b6d416",
+  "extracted_at": "2026-10-05T17:58:00.012334+00:00"
+}

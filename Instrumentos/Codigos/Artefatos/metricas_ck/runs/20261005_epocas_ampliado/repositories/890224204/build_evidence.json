@@ -1,0 +1,56 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${spring-boot.version};4.0.3",
+  "spring_boot_major": "4",
+  "java_versions_declared": "25",
+  "build_evidence": [
+    {
+      "file": "iot-common/iot-core/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "iot-common/iot-core/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "iot-server/pom.xml",
+      "artifact": "spring-boot-starter-mail"
+    },
+    {
+      "file": "iot-server/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "iot-server/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "iot-server/pom.xml",
+      "artifact": "spring-boot-starter-websocket"
+    },
+    {
+      "file": "iot-server/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "iot-server/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "iot-server/pom.xml",
+      "artifact": "spring-boot-starter-cache"
+    },
+    {
+      "file": "iot-server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

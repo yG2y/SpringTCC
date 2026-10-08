@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "d0d289f1590267404b6e77d3bb8da4625ac61512",
+      "date": "2024-10-16T10:47:08+08:00",
+      "author": "linjiacheng",
+      "email": "1507906763@qq.com",
+      "message": "fix: websocket不要在handshake期间认证，在消息中认证\n"
+    },
+    {
+      "sha": "dc3672955db2dd3224adfbe93710a5be572fbdb0",
+      "date": "2023-11-11T09:24:13+08:00",
+      "author": "qifan",
+      "email": "1507906763@qq.com",
+      "message": "feat: gpt4模型\n"
+    },
+    {
+      "sha": "aee23a3b390d325550d56fb1fc323d770f458214",
+      "date": "2023-07-01T20:59:59+08:00",
+      "author": "qifan",
+      "email": "1507906763@qq.com",
+      "message": "refactor: 类名修改\n"
+    },
+    {
+      "sha": "766b2dfd326bc290dfb3b4decd1fcd278b3dbf48",
+      "date": "2023-07-01T20:58:57+08:00",
+      "author": "qifan",
+      "email": "1507906763@qq.com",
+      "message": "Merge branch 'master'\n\n# Conflicts:\n#\tchatgpt-assistant-client/package-lock.json\n#\tchatgpt-assistant-client/package.json\n#\tchatgpt-assistant-client/src/main.ts\n#\tchatgpt-assistant-client/src/views/home/HomeView.vue\n#\tchatgpt-assistant-client/src/views/home/components/MessageInput.vue\n#\tchatgpt-assistant-client/src/views/home/components/MessageRow.vue\n#\tchatgpt-assistant-client/src/views/home/components/SessionItem.vue\n#\tchatgpt-assistant-client/typings/index.d.ts\n"
+    },
+    {
+      "sha": "8f9d1c3dada31a5898b50301b4abd6dee830a73e",
+      "date": "2023-07-01T20:54:10+08:00",
+      "author": "qifan",
+      "email": "1507906763@qq.com",
+      "message": "feat: 第十期 消息发送和markdown显示消息记录\n"
+    },
+    {
+      "sha": "1da3a115bd82c2c840f261b33dd881f15b29d37a",
+      "date": "2023-06-27T21:40:02+08:00",
+      "author": "qifan",
+      "email": "1507906763@qq.com",
+      "message": "feat: 第九期 Vue3/ElementUI Plus 实现聊天面板\n"
+    },
+    {
+      "sha": "bcf11dc4507749c9eb4fd158c2ceb6a5a7d98d02",
+      "date": "2023-06-24T20:04:34+08:00",
+      "author": "qifan",
+      "email": "1507906763@qq.com",
+      "message": "Merge branch 'master'\n\n# Conflicts:\n#\tchatgpt-assistant-client/src/router/index.ts\n#\tchatgpt-assistant-client/src/views/home/HomeView.vue\n#\tchatgpt-assistant-client/src/views/index/IndexView.vue\n#\tchatgpt-assistant-client/src/views/user/UserSettingView.vue\n#\tchatgpt-assistant-client/src/views/user/gpt/GPTSettingView.vue\n#\tchatgpt-assistant-client/typings/index.d.ts\n#\tchatgpt-assistant-server/pom.xml\n#\tchatgpt-assistant-server/src/main/java/io/qifan/chatgpt/assistant/gpt/config/ChatConfig.java\n#\tchatgpt-assistant-server/src/main/java/io/qifan/chatgpt/assistant/gpt/config/controller/ChatConfigController.java\n#\tchatgpt-assistant-server/src/main/java/io/qifan/chatgpt/assistant/gpt/config/dto/request/ChatConfigCreateRequest.java\n#\tchatgpt-assistant-server/src/main/java/io/qifan/chatgpt/assistant/gpt/config/dto/request/ChatConfigQueryRequest.java\n#\tchatgpt-assistant-server/src/main/java/io/qifan/chatgpt/assistant/gpt/config/dto/request/ChatConfigUpdateRequest.java\n#\tchatgpt-assistant-server/src/main/java/io/qifan/chatgpt/assistant/gpt/config/dto/response/ChatConfigCommonResponse.java\n#\tchatgpt-assistant-server/src/main/java/io/qifan/chatgpt/assistant/gpt/config/mapper/ChatConfigMapper.java\n#\tchatgpt-assistant-server/src/main/java/io/qifan/chatgpt/assistant/gpt/config/service/ChatConfigService.java\n#\tchatgpt-assistant-server/src/main/java/io/qifan/chatgpt/assistant/gpt/message/ChatMessage.java\n#\tchatgpt-assistant-server/src/main/java/io/qifan/chatgpt/assistant/gpt/message/controller/WebsocketChatMessageController.java\n#\tchatgpt-assistant-server/src/main/java/io/qifan/chatgpt/assistant/gpt/message/mapper/ChatMessageMapper.java\n#\tchatgpt-assistant-server/src/main/java/io/qifan/chatgpt/assistant/gpt/message/service/domainservice/SendMessageService.java\n#\tchatgpt-assistant-server/src/main/java/io/qifan/chatgpt/assistant/gpt/session/ChatSession.java\n#\tchatgpt-assistant-server/src/main/java/io/qifan/chatgpt/assistant/gpt/session/controller/ChatSessionController.java\n#\tchatgpt-assistant-server/src/main/java/io/qifan/chatgpt/assistant/gpt/session/mapper/ChatSessionMapper.java\n#\tchatgpt-assistant-server/src/main/java/io/qifan/chatgpt/assistant/gpt/session/service/ChatSessionService.java\n#\tchatgpt-assistant-server/src/main/java/io/qifan/chatgpt/assistant/infrastructure/gpt/GPTProperty.java\n#\tchatgpt-assistant-server/src/main/java/io/qifan/chatgpt/assistant/infrastructure/websocket/WebSocketConfig.java\n#\tchatgpt-assistant-server/src/main/resources/application-dev.yml\n"
+    },
+    {
+      "sha": "34524a3b2fa5ee08b932a73cb8727de5f8fe4713",
+      "date": "2023-06-23T22:30:15+08:00",
+      "author": "qifan",
+      "email": "1507906763@qq.com",
+      "message": "feat: 第八期 Steam请求/Websocket推送\n"
+    },
+    {
+      "sha": "fca11dbf587d3bd3791baf2539b675a0123d5c62",
+      "date": "2023-06-23T22:29:40+08:00",
+      "author": "qifan",
+      "email": "1507906763@qq.com",
+      "message": "fix: 第七期的websocket配置bug\n"
+    },
+    {
+      "sha": "68bd6b635e04693b6d9c81d5f72af486c1d73b7a",
+      "date": "2023-06-22T23:38:03+08:00",
+      "author": "起凡",
+      "email": "1507906763@qq.com",
+      "message": "feat: 第八期-1 前端未调试\n"
+    },
+    {
+      "sha": "0f63137f1629c7322ee40407941aa9d7b472e95a",
+      "date": "2023-06-19T11:27:47Z",
+      "author": "qifan777",
+      "email": "58900282+qifan777@users.noreply.github.com",
+      "message": "fix: mapstruct版本错误，重复保存chatConfig配置\n"
+    },
+    {
+      "sha": "94c7ae8798b646b7c7c8df37088837023130609f",
+      "date": "2023-06-18T22:23:36+08:00",
+      "author": "qifan",
+      "email": "1507906763@qq.com",
+      "message": "feat: 第七期，聊天会话，消息，websocket接入\n"
+    },
+    {
+      "sha": "069c4642f0f438f168d421529a59be42403afa84",
+      "date": "2023-06-17T21:26:39+08:00",
+      "author": "qifan",
+      "email": "1507906763@qq.com",
+      "message": "feat: markdown显示消息\n"
+    },
+    {
+      "sha": "61d08494f6490bc6a956b91c68ea005af3eadea9",
+      "date": "2023-06-15T22:17:50+08:00",
+      "author": "qifan",
+      "email": "1507906763@qq.com",
+      "message": "feat: 第六期GPT配置\n"
+    },
+    {
+      "sha": "2e7beabb1cecf7d451583b448a40c317bb154d16",
+      "date": "2023-06-14T22:13:36+08:00",
+      "author": "qifan",
+      "email": "1507906763@qq.com",
+      "message": "refactor: 聊天会话，聊天历史记录完成\n"
+    },
+    {
+      "sha": "b63e2f03976a7c8b546f4572520e65ff780ef4dd",
+      "date": "2023-06-12T21:10:38+08:00",
+      "author": "qifan",
+      "email": "1507906763@qq.com",
+      "message": "feat: 后端基本完成+前端基础联调\n"
+    },
+    {
+      "sha": "acbcb26c0c161a5f3850af0f32aa23832d78c110",
+      "date": "2023-06-11T19:15:43+08:00",
+      "author": "qifan",
+      "email": "1507906763@qq.com",
+      "message": "feat: GPT配置\n"
+    },
+    {
+      "sha": "91fb688a92f869893c020e729cda94568b7d0ecf",
+      "date": "2023-06-10T23:15:58+08:00",
+      "author": "qifan",
+      "email": "1507906763@qq.com",
+      "message": "refactor: 第五期修改一些命名\n"
+    },
+    {
+      "sha": "c583f2095d299bdbf2fc4c6054e8416d2907f9d2",
+      "date": "2023-06-09T22:06:16+08:00",
+      "author": "qifan",
+      "email": "1507906763@qq.com",
+      "message": "refactor: 页面过度效果\n"
+    },
+    {
+      "sha": "390dadccfb0a72845b84db4f2d30e1eb128cd9d3",
+      "date": "2023-06-08T22:01:01+08:00",
+      "author": "qifan",
+      "email": "1507906763@qq.com",
+      "message": "feat: 阿里云oss，头像上传\n"
+    },
+    {
+      "sha": "4e13040d3cd0138c33836131f2a79143f29a7813",
+      "date": "2023-06-08T20:24:57+08:00",
+      "author": "qifan",
+      "email": "1507906763@qq.com",
+      "message": "feat: 菜单栏路由嵌套，用户设置界面，个人信息设置。\n"
+    },
+    {
+      "sha": "cbfeb6147537c1b3e08bae19d56f82a0330d2e6e",
+      "date": "2023-06-07T19:38:15+08:00",
+      "author": "qifan",
+      "email": "1507906763@qq.com",
+      "message": "feat: 页面切换，页头\n"
+    },
+    {
+      "sha": "788695219b861e42162b2262d630b39fafb5ff16",
+      "date": "2023-06-07T13:51:37+08:00",
+      "author": "qifan",
+      "email": "1507906763@qq.com",
+      "message": "feat: 认证拦截，全局异常，返回结果包装\n"
+    },
+    {
+      "sha": "d775c988e9306c70fb1473723fc36a1220ef8269",
+      "date": "2023-06-04T13:58:20+08:00",
+      "author": "qifan",
+      "email": "1507906763@qq.com",
+      "message": "feat: 登录注册功能\n"
+    },
+    {
+      "sha": "1fceea85a3ecd925aee5dc36744f7b42fd1f2d02",
+      "date": "2023-06-03T18:47:46+08:00",
+      "author": "qifan",
+      "email": "1507906763@qq.com",
+      "message": "refactor: readme拼写错误\n"
+    },
+    {
+      "sha": "08eb764333a5472c08ee71e89331491be55b40ff",
+      "date": "2023-06-03T18:35:44+08:00",
+      "author": "qifan",
+      "email": "1507906763@qq.com",
+      "message": "doc: 添加项目介绍\n"
+    },
+    {
+      "sha": "60f6de36d5c452f6f420d27ba0c49706026dab7d",
+      "date": "2023-06-03T17:58:54+08:00",
+      "author": "qifan",
+      "email": "1507906763@qq.com",
+      "message": "refactor: 修改模块名称\n"
+    },
+    {
+      "sha": "99a8809db2377f125657d5ccb6e345f80304d91a",
+      "date": "2023-06-03T13:48:23+08:00",
+      "author": "qifan",
+      "email": "1507906763@qq.com",
+      "message": "feat: 登陆功能\n"
+    },
+    {
+      "sha": "6f78c8ae75df425ee91ae8338db065e9a6a9068f",
+      "date": "2023-06-03T13:43:14+08:00",
+      "author": "qifan",
+      "email": "1507906763@qq.com",
+      "message": "feat: 登陆功能\n"
+    },
+    {
+      "sha": "329d04676288fa40342f8afccc2dd2927ca25008",
+      "date": "2023-06-02T21:19:39+08:00",
+      "author": "qifan",
+      "email": "1507906763@qq.com",
+      "message": "feat: 基础架构搭建\n"
+    }
+  ],
+  "commit_sha": "d0d289f1590267404b6e77d3bb8da4625ac61512",
+  "extracted_at": "2026-10-05T18:10:10.516623+00:00"
+}

@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "8ecf8608d10e33a5a4aec8ad81463edd08888743",
+      "date": "2026-06-15T22:19:35+02:00",
+      "author": "albonidrizi",
+      "email": "albonidrizi@gmail.com",
+      "message": "fix(security): update vulnerable frontend transitive dependencies\n"
+    },
+    {
+      "sha": "da79907239d2c239d5df490c8571019af0004dad",
+      "date": "2026-06-15T22:14:41+02:00",
+      "author": "albonidrizi",
+      "email": "albonidrizi@gmail.com",
+      "message": "docs: replace stale CI warning with public evidence\n"
+    },
+    {
+      "sha": "cc450581be37bec00f6c92996bb1eecb35520391",
+      "date": "2026-06-13T23:23:02+02:00",
+      "author": "Albon Idrizi",
+      "email": "65398478+albonidrizi@users.noreply.github.com",
+      "message": "Merge pull request #16 from albonidrizi/codex/prmirso-code-sage-n-1010\n\nfix(security): resolve dependency vulnerabilities"
+    },
+    {
+      "sha": "1d08ed9163db1c41de63f92c23a5f292692b0a13",
+      "date": "2026-06-13T23:20:27+02:00",
+      "author": "albonidrizi",
+      "email": "albonidrizi@gmail.com",
+      "message": "fix(ci): isolate Trivy cache from secret scan\n"
+    },
+    {
+      "sha": "6e7261d8c9bec43be66927156520a8925864c4e3",
+      "date": "2026-06-13T23:06:58+02:00",
+      "author": "albonidrizi",
+      "email": "albonidrizi@gmail.com",
+      "message": "fix(security): resolve dependency vulnerabilities\n"
+    },
+    {
+      "sha": "fba20613df59c61472178fe6c8ab4cc35de31d8d",
+      "date": "2026-06-13T22:33:15+02:00",
+      "author": "albonidrizi",
+      "email": "albonidrizi@gmail.com",
+      "message": "fix(security): remove committed demo credentials\n"
+    },
+    {
+      "sha": "6b8df981fd66ae154a7ab35d8c6466707a438e1f",
+      "date": "2026-06-13T22:07:30+02:00",
+      "author": "albonidrizi",
+      "email": "albonidrizi@gmail.com",
+      "message": "feat(ai): add remote provider adapters\n"
+    },
+    {
+      "sha": "555ada7f01445bf7289566e797d1b247a8230e7f",
+      "date": "2026-06-13T21:49:59+02:00",
+      "author": "albonidrizi",
+      "email": "albonidrizi@gmail.com",
+      "message": "fix(backend): harden GitHub demo fallback\n"
+    },
+    {
+      "sha": "89ed4f41197e0717d3127d28a6c0454d6feea763",
+      "date": "2026-06-13T21:23:43+02:00",
+      "author": "albonidrizi",
+      "email": "albonidrizi@gmail.com",
+      "message": "ci: enforce security gates and document evidence\n"
+    },
+    {
+      "sha": "39400fcfb0388e047461b33cb07ee38e5a50e2c8",
+      "date": "2026-06-13T21:23:36+02:00",
+      "author": "albonidrizi",
+      "email": "albonidrizi@gmail.com",
+      "message": "test(frontend): enforce interaction coverage gates\n"
+    },
+    {
+      "sha": "77b84a2125957d2a1f6352c3962ca72bf33aa889",
+      "date": "2026-06-13T21:23:27+02:00",
+      "author": "albonidrizi",
+      "email": "albonidrizi@gmail.com",
+      "message": "feat(backend): add secure deterministic review workflow\n"
+    },
+    {
+      "sha": "79df45a7cac3f6f8eb114db6742665e735df67ce",
+      "date": "2026-06-13T21:11:40+02:00",
+      "author": "albonidrizi",
+      "email": "albonidrizi@gmail.com",
+      "message": "feat(frontend): redesign review command center\n"
+    },
+    {
+      "sha": "f74cc993c6f8d600ba5a472900a89df4db3f0824",
+      "date": "2025-12-13T23:55:50+01:00",
+      "author": "albonidrizi",
+      "email": "albonidrizi@gmail.com",
+      "message": "ci: guard docker build on secrets and relax Trivy exit code, add SARIF permissions\n"
+    },
+    {
+      "sha": "1e401ae457d537956eb71ec5c63846b039c052a2",
+      "date": "2025-12-13T23:49:45+01:00",
+      "author": "albonidrizi",
+      "email": "albonidrizi@gmail.com",
+      "message": "chore: harden .gitignore to exclude sensitive and build files\n"
+    },
+    {
+      "sha": "12f6c1953ab2422ba28d9e7b91c9caa69a0d990b",
+      "date": "2025-12-09T17:01:35+01:00",
+      "author": "albonidrizi",
+      "email": "albonidrizi@gmail.com",
+      "message": "chore: add remaining project files and configuration\n"
+    },
+    {
+      "sha": "3b2e03613a4b7d0c71b85da2bcdd74a50797d20c",
+      "date": "2025-12-09T17:00:02+01:00",
+      "author": "albonidrizi",
+      "email": "albonidrizi@gmail.com",
+      "message": "docs: clarify fork instructions for external contributors\n"
+    },
+    {
+      "sha": "69ebfb09842ed3d7333f90247ecea31a02cae8af",
+      "date": "2025-12-09T16:54:45+01:00",
+      "author": "albonidrizi",
+      "email": "albonidrizi@gmail.com",
+      "message": "chore: add frontend gitignore\n"
+    },
+    {
+      "sha": "c329a17d7a1547be0986fdb412c1c918b3492e1e",
+      "date": "2025-12-09T16:54:19+01:00",
+      "author": "albonidrizi",
+      "email": "albonidrizi@gmail.com",
+      "message": "docs: add comprehensive deployment and GitHub integration guides\n"
+    },
+    {
+      "sha": "520d736ab2b38a452f63db00ecfde8fb9693215e",
+      "date": "2025-12-09T16:53:49+01:00",
+      "author": "albonidrizi",
+      "email": "albonidrizi@gmail.com",
+      "message": "ci: update docker-compose with production configuration\n"
+    },
+    {
+      "sha": "c0a02e8278874a783cad68032f8616ce56670536",
+      "date": "2025-12-09T16:50:54+01:00",
+      "author": "albonidrizi",
+      "email": "albonidrizi@gmail.com",
+      "message": "chore: add git automation scripts and strategy documentation\n"
+    },
+    {
+      "sha": "bce01c42e30c8a20e97fe410dca719a685f4bab6",
+      "date": "2025-12-09T16:50:16+01:00",
+      "author": "albonidrizi",
+      "email": "albonidrizi@gmail.com",
+      "message": "docs: enhance README with architecture diagram and setup instructions\n"
+    },
+    {
+      "sha": "4853aa97525d6de37e613e512850aa4cf3088280",
+      "date": "2025-12-09T16:50:14+01:00",
+      "author": "albonidrizi",
+      "email": "albonidrizi@gmail.com",
+      "message": "ci: setup GitHub Actions pipeline with testing and security scanning\n"
+    },
+    {
+      "sha": "7308144a95ea6359427a7ba51354c68767f929e3",
+      "date": "2025-12-09T16:50:11+01:00",
+      "author": "albonidrizi",
+      "email": "albonidrizi@gmail.com",
+      "message": "feat: add mock data mode for development without backend\n"
+    },
+    {
+      "sha": "16ed6efdd99bb7313217aaa355c9f0a2dcc9b30b",
+      "date": "2025-12-09T16:50:09+01:00",
+      "author": "albonidrizi",
+      "email": "albonidrizi@gmail.com",
+      "message": "feat: create API client with axios and error handling\n"
+    },
+    {
+      "sha": "5481b7e19cd1cedc4e624413f65bc8e09e9ab115",
+      "date": "2025-12-09T16:50:07+01:00",
+      "author": "albonidrizi",
+      "email": "albonidrizi@gmail.com",
+      "message": "feat: add webhook controller and signature verification\n"
+    },
+    {
+      "sha": "bff0205cfd5a2733b0132cd6517daefd00c18805",
+      "date": "2025-12-09T16:50:05+01:00",
+      "author": "albonidrizi",
+      "email": "albonidrizi@gmail.com",
+      "message": "feat: add Claude fallback and retry logic to AI service\n"
+    },
+    {
+      "sha": "96de56e1d2c0e238b922363d4dda292b136b57cd",
+      "date": "2025-12-09T16:50:02+01:00",
+      "author": "albonidrizi",
+      "email": "albonidrizi@gmail.com",
+      "message": "feat: implement REST API with pagination and health checks\n"
+    },
+    {
+      "sha": "a3c9ba2679cdfaf0fccf31f4d43e1d4c2083012d",
+      "date": "2025-12-09T16:50:00+01:00",
+      "author": "albonidrizi",
+      "email": "albonidrizi@gmail.com",
+      "message": "feat: add comprehensive exception handling with GlobalExceptionHandler\n"
+    },
+    {
+      "sha": "a449dc7b4b2488decba629831b9329ae7252c88a",
+      "date": "2025-12-09T16:49:58+01:00",
+      "author": "albonidrizi",
+      "email": "albonidrizi@gmail.com",
+      "message": "feat: add Review and ReviewIssue domain models with JPA annotations\n"
+    },
+    {
+      "sha": "1a9de09a0d8edc71c49a1f51d7fc757b2ee1ee98",
+      "date": "2025-12-09T16:49:55+01:00",
+      "author": "albonidrizi",
+      "email": "albonidrizi@gmail.com",
+      "message": "feat: configure Spring Boot backend with PostgreSQL and RabbitMQ\n"
+    }
+  ],
+  "commit_sha": "8ecf8608d10e33a5a4aec8ad81463edd08888743",
+  "extracted_at": "2026-10-05T18:44:57.870372+00:00"
+}

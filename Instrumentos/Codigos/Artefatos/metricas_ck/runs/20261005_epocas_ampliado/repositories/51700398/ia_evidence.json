@@ -1,0 +1,181 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 24,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "edfd76f91740a08a86a21ed299fcfe1140903a85",
+      "date": "2025-11-22T13:55:14+01:00",
+      "author": "Yoann Manvieu",
+      "email": "ymanvieu@users.noreply.github.com",
+      "message": "Update live demo link in README"
+    },
+    {
+      "sha": "ca1d301d3b96053220f7322593acbf4cc60fb1f0",
+      "date": "2023-12-24T10:03:02+01:00",
+      "author": "ymanvieu",
+      "email": "ymanvieu@users.noreply.github.com",
+      "message": "feat!: upgrade to 5.0.0\n\n[FEAT]\n* Angular: Switch to PrimeNG UI instead of Clarity Design\n\n[TEST]\n* Add Cypress Component tests\n* Add Cypress end-to-end tests\n\n[TECH]\n* upgrade to Angular 17\n* upgrade to JDK 21\n* upgrade to Spring-boot 3.2\n* add Docker / docker-compose configuration\n"
+    },
+    {
+      "sha": "03c8ab031b06b976c183951e8c0db847d84e9eed",
+      "date": "2023-01-22T16:28:56+01:00",
+      "author": "ymanvieu",
+      "email": "ymanvieu@users.noreply.github.com",
+      "message": "feat!: upgrade to 4.0.0\n\n[FEAT]\n* Admin : can remove a symbol completely (including history)\n\n[TECH]\n* spring-boot upgraded (3.0)\n* angular upgraded (15.0)\n\nBREAKING CHANGES: license switch (LGPL -> MIT)\n"
+    },
+    {
+      "sha": "5ecc3e3593c18f669e41924f571d23385110a038",
+      "date": "2021-11-13T18:28:30+01:00",
+      "author": "Yoann Manvieu",
+      "email": "ymanvieu@users.noreply.github.com",
+      "message": "Merge pull request #3 from ymanvieu/feat/update-to-3.3.0\n\nfeat!: Upgrade to 3.3.0"
+    },
+    {
+      "sha": "edd08e99facbcb5056e23a863df8bb3419f3ddab",
+      "date": "2021-11-13T17:59:16+01:00",
+      "author": "Yoann Manvieu",
+      "email": "ymanvieu@users.noreply.github.com",
+      "message": "feat!: Upgrade to 3.3.0\n\n[FEAT]\n* Can now login with Google/Github Oauth 2.0\n\n[TECH]\n* Switch DBMS : MySQL -> PostgreSQL (13+ compatibility)\n* Angular upgraded (12.2)\n* Spring-boot updated (2.5)\n\nBREAKING CHANGE: underlying DBMS used is now PostgreSQL\n"
+    },
+    {
+      "sha": "d6474565847a6be1aac1cd2dc7a7f61b08fe0796",
+      "date": "2020-06-22T09:19:28+02:00",
+      "author": "Yoann Manvieu",
+      "email": "ymanvieu@users.noreply.github.com",
+      "message": "Renaming + dependencies upgrade\n\n* trading-ng2 -> trading-ng\n* spring-boot upgraded to 2.3\n* angular upgraded to 9.1\n"
+    },
+    {
+      "sha": "cca97d9cbfc7ce15cd6407cd0b710dfb8d014ce8",
+      "date": "2019-10-31T14:34:48+01:00",
+      "author": "Yoann Manvieu",
+      "email": "ymanvieu@users.noreply.github.com",
+      "message": "V3: Angular 8 / Java 11\n\n* Drop AngularJS and Thymleaf\n* Use Clarity Design instead of Boostrap\n* Use Spring-boot 2.2 instead of 1.5\n"
+    },
+    {
+      "sha": "91fa33657a87ab8a802178e2e8babe4e35dffb18",
+      "date": "2017-02-25T19:00:30+01:00",
+      "author": "Yoann Manvieu",
+      "email": "ymanvieu@users.noreply.github.com",
+      "message": "- remove duplicated class"
+    },
+    {
+      "sha": "251df5e6d977615a8c5df6bc547835855e44bfd2",
+      "date": "2017-02-25T18:59:25+01:00",
+      "author": "Yoann Manvieu",
+      "email": "ymanvieu@users.noreply.github.com",
+      "message": "- fix recaptcha not enabled even if recaptcha.enabled=true\n- move test related classes to own maven module\n- use Java8 Date/Time API instead of Joda-time\n- use JunitParams instead of Junit-dataprovider\n"
+    },
+    {
+      "sha": "5bdc9c3aaa38d0d8364c8a40dc29e3a6dca2618d",
+      "date": "2017-02-16T23:49:40+01:00",
+      "author": "Yoann Manvieu",
+      "email": "ymanvieu@users.noreply.github.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "9f9a85788f61fe6c419676f3a5604b5d1904dadf",
+      "date": "2017-02-16T23:46:35+01:00",
+      "author": "Yoann Manvieu",
+      "email": "ymanvieu@users.noreply.github.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "f4f13789befceaf5bf3c752b7b00eaebb7e277fb",
+      "date": "2017-02-16T23:44:23+01:00",
+      "author": "Yoann Manvieu",
+      "email": "ymanvieu@users.noreply.github.com",
+      "message": "Update README.md\n\nfix layout"
+    },
+    {
+      "sha": "a54a9a31bf6358794f620289114acb762bfaa1dc",
+      "date": "2017-02-16T23:42:48+01:00",
+      "author": "Yoann Manvieu",
+      "email": "ymanvieu@users.noreply.github.com",
+      "message": "Update README.md\n\nfix layout"
+    },
+    {
+      "sha": "5b3c4f0897c2fc3f2ebba8d61068721bd197f7db",
+      "date": "2017-02-16T23:40:07+01:00",
+      "author": "Yoann Manvieu",
+      "email": "ymanvieu@users.noreply.github.com",
+      "message": "Update README.md\n\nwrong path"
+    },
+    {
+      "sha": "d271842b44df5538663deb26689e19662c04bf31",
+      "date": "2017-02-16T23:34:17+01:00",
+      "author": "Yoann Manvieu",
+      "email": "ymanvieu@users.noreply.github.com",
+      "message": "- refactor to be multi-modules\n- some business logic moved to domain model (DDD)\n- move to Java 1.8\n- move to Spring-boot 1.5\n- use Querydsl\n- use Spring-session (hash-map in Dev, jdbc otherwise)\n- use Spring-security-messaging to allow more fine-grained access with Stomp\n- use built-in Spring ApplicationContextPublisher instead of Guava's bus\n- use JdbcToken for persisting remember-me tokens\n- switch @version entities column to long (datetime precision with potential fails)\n- add @Transactional on most repositories and services\n- use of CDN for most JS dependencies\n- add spring-retry to avoid Yahoo bad QoS (404/502/504 error response)\n- add ActiveMQ JMS support for notification between trading-data-collect and trading-webapp\n- use Lombok in DTO\n- use Mapstruct instead of ModelMapper\n- recaptcha feature can be disabled in configuration"
+    },
+    {
+      "sha": "1443aa035a81956360b6d06928c454c4874d6f40",
+      "date": "2017-02-16T23:21:29+01:00",
+      "author": "Yoann Manvieu",
+      "email": "ymanvieu@users.noreply.github.com",
+      "message": ""
+    },
+    {
+      "sha": "c5df564df1f32417b03136807f80830ae5bea57c",
+      "date": "2016-10-01T19:00:15+02:00",
+      "author": "Yoann Manvieu",
+      "email": "ymanvieu@users.noreply.github.com",
+      "message": "fix url"
+    },
+    {
+      "sha": "6d8626cfa5f9560618d9f36832f570718bbb5778",
+      "date": "2016-10-01T19:00:00+02:00",
+      "author": "Yoann Manvieu",
+      "email": "ymanvieu@users.noreply.github.com",
+      "message": "change demo URL"
+    },
+    {
+      "sha": "ea4849b4f340754835296ce9052132eb13504663",
+      "date": "2016-07-05T19:25:16+02:00",
+      "author": "Yoann Manvieu",
+      "email": "ymanvieu@users.noreply.github.com",
+      "message": ""
+    },
+    {
+      "sha": "fecf43d62c7c66931255c5badbcb56e117afb685",
+      "date": "2016-07-05T19:22:12+02:00",
+      "author": "Yoann Manvieu",
+      "email": "ymanvieu@users.noreply.github.com",
+      "message": "/!\\ version change 1.1.0 -> 2.0.0 /!\\\nApp name / package structure changed (\"package by feature\" instead of \"package by layer\")\n\n- user can buy/sell stocks and currencies\n- almost full-responsive design (tables too large in smallest screen portrait mode) \n- default currency when creating user can be changed\n- multiple providers can be used simultaneously\n- data collect of wider range of symbols \n- cron scheduler is used by default instead of fixedRate\n- refactor symbol/portofolio pages by using JQuery's Datatable\n\n\n[REMOVE] minor/deprecated currencies"
+    },
+    {
+      "sha": "120f88a33805a404c4772022dfdf84cd172924a7",
+      "date": "2016-03-27T16:56:44+02:00",
+      "author": "Yoann Manvieu",
+      "email": "ymanvieu@users.noreply.github.com",
+      "message": "- can now add/remove stock on /admin page (login/pwd : admin/password) \n(stock codes are those from yahoo finance, example for Ubisoft -> UBI.PA, Toyota -> TM)\n- websocket : Latest rate updates uses Stomp.js instead of raw websocket. (see chartControler.js and RatesStompHandler.java)"
+    },
+    {
+      "sha": "c5dc5606b5856fb0a65f544a0f080cda55617def",
+      "date": "2016-02-14T16:59:54+01:00",
+      "author": "Yoann Manvieu",
+      "email": "ymanvieu@users.noreply.github.com",
+      "message": ""
+    },
+    {
+      "sha": "808c8daf408781d70290c2ddc281363410c8973e",
+      "date": "2016-02-14T16:54:47+01:00",
+      "author": "Yoann Manvieu",
+      "email": "ymanvieu@users.noreply.github.com",
+      "message": "first commit on github"
+    },
+    {
+      "sha": "c5614ec79eba5e88155d867ff30b6ed995eeff27",
+      "date": "2016-02-14T16:38:55+01:00",
+      "author": "Yoann Manvieu",
+      "email": "ymanvieu@users.noreply.github.com",
+      "message": "Initial commit"
+    }
+  ],
+  "commit_sha": "edfd76f91740a08a86a21ed299fcfe1140903a85",
+  "extracted_at": "2026-10-05T18:22:07.514528+00:00"
+}

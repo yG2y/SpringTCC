@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "31d73a40625f04c8d7dd39d226ec2288baa63ea6",
+      "date": "2024-11-21T18:08:08+05:30",
+      "author": "Pradeep Arya",
+      "email": "impradeeparya@yahoo.com",
+      "message": "Merge pull request #1 from impradeeparya/snyk-fix-94baba81c971f2b0ff8d14861ae58b96\n\n[Snyk] Fix for 143 vulnerabilities"
+    },
+    {
+      "sha": "b01fc17793b31feeceaeb2687af84893f4aa434a",
+      "date": "2024-11-21T12:37:44Z",
+      "author": "snyk-bot",
+      "email": "snyk-bot@snyk.io",
+      "message": "fix: pom.xml to reduce vulnerabilities\n\nThe following vulnerabilities are fixed with an upgrade:\n- https://snyk.io/vuln/SNYK-JAVA-ORGHIBERNATE-1041788\n- https://snyk.io/vuln/SNYK-JAVA-ORGHIBERNATE-451605\n- https://snyk.io/vuln/SNYK-JAVA-ORGHIBERNATE-568162\n- https://snyk.io/vuln/SNYK-JAVA-ORGHIBERNATE-569100\n- https://snyk.io/vuln/SNYK-JAVA-ORGHIBERNATE-584563\n- https://snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORK-1009832\n- https://snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORK-2329097\n- https://snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORK-2330878\n- https://snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORK-2434828\n- https://snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORK-2436751\n- https://snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORK-2689634\n- https://snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORK-2823313\n- https://snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORK-31332\n- https://snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORK-32202\n- https://snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORK-3369749\n- https://snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORK-536316\n- https://snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORK-5422217\n- https://snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORK-6261586\n- https://snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORK-6444790\n- https://snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORK-6597980\n- https://snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORK-72470\n- https://snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORK-7687447\n- https://snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORK-7945490\n- https://snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORK-8230364\n- https://snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORK-8230365\n- https://snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORK-8230366\n- https://snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORK-8230368\n- https://snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORK-8230373\n- https://snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORKBOOT-2438287\n- https://snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORKBOOT-5564390\n- https://snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORKDATA-174140\n- https://snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORKDATA-31335\n- https://snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORKDATA-32219\n- https://snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORKDATA-32231\n- https://snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORKDATA-451633\n- https://snyk.io/vuln/SNYK-JAVA-ORGYAML-2806360\n- https://snyk.io/vuln/SNYK-JAVA-ORGYAML-3016888\n- https://snyk.io/vuln/SNYK-JAVA-ORGYAML-3016889\n- https://snyk.io/vuln/SNYK-JAVA-ORGYAML-3016891\n- https://snyk.io/vuln/SNYK-JAVA-ORGYAML-3113851\n- https://snyk.io/vuln/SNYK-JAVA-ORGYAML-3152153\n- https://snyk.io/vuln/SNYK-JAVA-ORGYAML-537645\n- https://snyk.io/vuln/SNYK-JAVA-ORGYAML-6056527\n- https://snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-5953331\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-450917\n- https://snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-451515\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-467015\n- https://snyk.io/vuln/SNYK-JAVA-CHQOSLOGBACK-30208\n- https://snyk.io/vuln/SNYK-JAVA-CHQOSLOGBACK-31407\n- https://snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-451505\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-1054588\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-1056416\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-1056418\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-1056420\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-1056421\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-1056426\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-1056427\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-174736\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-31507\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-32043\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-548451\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-559094\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-560762\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-561585\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-608664\n- https://snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-451526\n- https://snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-31420\n- https://snyk.io/vuln/SNYK-JAVA-DOM4J-174153\n- https://snyk.io/vuln/SNYK-JAVA-MYSQL-451464\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-7569538\n- https://snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-7430175\n- https://snyk.io/vuln/SNYK-JAVA-MYSQL-31399\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-1009829\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-1047324\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-1056414\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-1056417\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-1056419\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-1056424\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-1056425\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-467016\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-560766\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-561362\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-561373\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-561586\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-561587\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-564887\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-564888\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-570625\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-572300\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-572314\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-572316\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-72445\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-72446\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-72447\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-72448\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-72449\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-72450\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-72451\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-72882\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-72883\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-72884\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-1052449\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-1052450\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-1061931\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-31573\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-32044\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-32111\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-455617\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-467014\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-469674\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-469676\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-471943\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-472980\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-540500\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-6056407\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-2421244\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONDATATYPE-173759\n- https://snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-1728264\n- https://snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-31432\n- https://snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-451508\n- https://snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-451519\n- https://snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-451521\n- https://snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-451527\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-3038424\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-3038426\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-450207\n- https://snyk.io/vuln/SNYK-JAVA-DOM4J-2812975\n- https://snyk.io/vuln/SNYK-JAVA-MYSQL-1766958\n- https://snyk.io/vuln/SNYK-JAVA-CHQOSLOGBACK-6094942\n- https://snyk.io/vuln/SNYK-JAVA-CHQOSLOGBACK-6094943\n- https://snyk.io/vuln/SNYK-JAVA-CHQOSLOGBACK-6097492\n- https://snyk.io/vuln/SNYK-JAVA-CHQOSLOGBACK-6097493\n- https://snyk.io/vuln/SNYK-JAVA-MYSQL-2386864\n- https://snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-451510\n- https://snyk.io/vuln/SNYK-JAVA-MYSQL-31580\n- https://snyk.io/vuln/SNYK-JAVA-MYSQL-174574\n- https://snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-30988\n- https://snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-451511\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-31519\n- https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-31520\n- https://snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-451529\n- https://snyk.io/vuln/SNYK-JAVA-CHQOSLOGBACK-1726923\n- https://snyk.io/vuln/SNYK-JAVA-MYSQL-31449"
+    },
+    {
+      "sha": "fd69492b001c8a1a72f929802ce40a7e265be30e",
+      "date": "2016-07-20T21:26:34+05:30",
+      "author": "Pradeep Arya",
+      "email": "parya@xebia.com",
+      "message": "logs removed\n"
+    },
+    {
+      "sha": "6bcc68f0c9379618f56d0347a5e38e68942b9a01",
+      "date": "2016-07-20T21:03:02+05:30",
+      "author": "Pradeep Arya",
+      "email": "parya@xebia.com",
+      "message": "registration form UI a bit changes\n"
+    },
+    {
+      "sha": "2b62878845a0c435dba2280606be0fd32f3e66c7",
+      "date": "2016-07-20T20:50:15+05:30",
+      "author": "Pradeep Arya",
+      "email": "parya@xebia.com",
+      "message": "login UI a bit fix, not a expert\n"
+    },
+    {
+      "sha": "21721dfb767f801e8e007d31ab85a17c2bbc0b9e",
+      "date": "2016-07-19T23:27:03+05:30",
+      "author": "Pradeep Arya",
+      "email": "parya@xebia.com",
+      "message": "url routing and dashboard view changes\n"
+    },
+    {
+      "sha": "bc695eebe848f853883b389a95d4346c23f473fc",
+      "date": "2016-07-19T21:19:13+05:30",
+      "author": "Pradeep Arya",
+      "email": "parya@xebia.com",
+      "message": "logout icon added and change in dashboard screen\n"
+    },
+    {
+      "sha": "a6c285eb5245bb8f46371c07289a7e733da46b91",
+      "date": "2016-07-19T20:50:46+05:30",
+      "author": "Pradeep Arya",
+      "email": "parya@xebia.com",
+      "message": "registration form added and integrated with registration services\n"
+    },
+    {
+      "sha": "b9e86692d5b90bbf556911755f2549bea44e8963",
+      "date": "2016-07-19T20:44:28+05:30",
+      "author": "Pradeep Arya",
+      "email": "parya@xebia.com",
+      "message": "login page changes\n"
+    },
+    {
+      "sha": "80fe53b231a8dc3986a43dbb7bd1b264dea69797",
+      "date": "2016-07-17T17:48:38Z",
+      "author": "Pradeep Arya",
+      "email": "impradeeparya@gmail.com",
+      "message": "README.md edited online with Bitbucket"
+    },
+    {
+      "sha": "6492b637ec1e1c2141406dee2db948e311167ce1",
+      "date": "2016-07-17T17:43:50Z",
+      "author": "Pradeep Arya",
+      "email": "impradeeparya@gmail.com",
+      "message": "README.md edited online with Bitbucket"
+    },
+    {
+      "sha": "775596b59ab33dc66ae0adca9749d9c3fce596ce",
+      "date": "2016-07-17T17:42:08Z",
+      "author": "Pradeep Arya",
+      "email": "impradeeparya@gmail.com",
+      "message": "README.md edited online with Bitbucket"
+    },
+    {
+      "sha": "11f8efb4c996dbc8ab6e41587c181fd4220fadf3",
+      "date": "2016-07-17T17:41:08Z",
+      "author": "Pradeep Arya",
+      "email": "impradeeparya@gmail.com",
+      "message": "README.md edited online with Bitbucket"
+    },
+    {
+      "sha": "ee66b458adca9c69de06c37ba7ae26d51f25a225",
+      "date": "2016-07-17T17:39:18Z",
+      "author": "Pradeep Arya",
+      "email": "impradeeparya@gmail.com",
+      "message": "README.md edited online with Bitbucket"
+    },
+    {
+      "sha": "8691fccc647a6faa33be3dff334ee188edafe12a",
+      "date": "2016-07-17T17:37:58Z",
+      "author": "Pradeep Arya",
+      "email": "impradeeparya@gmail.com",
+      "message": "README.md edited online with Bitbucket"
+    },
+    {
+      "sha": "5b5f5e1965a4700fdd39d96db540a0b6e7d5cbb1",
+      "date": "2016-07-17T22:51:28+05:30",
+      "author": "Pradeep Arya",
+      "email": "parya@xebia.com",
+      "message": "add instruction to run application\n"
+    },
+    {
+      "sha": "aae20df78bb617ce7ff0312aef2fdfa6f306ab08",
+      "date": "2016-07-17T16:56:03Z",
+      "author": "Pradeep Arya",
+      "email": "impradeeparya@gmail.com",
+      "message": "README.md edited online with Bitbucket"
+    },
+    {
+      "sha": "107433c2d2345e9e38a5d5d77b7d3a5aa723634b",
+      "date": "2016-07-17T21:50:15+05:30",
+      "author": "Pradeep Arya",
+      "email": "parya@xebia.com",
+      "message": "logout service intergration with ui\n"
+    },
+    {
+      "sha": "cf1e1798ab56740f018d9574f3793549b04d7edf",
+      "date": "2016-07-17T21:37:51+05:30",
+      "author": "Pradeep Arya",
+      "email": "parya@xebia.com",
+      "message": "tweet service integration with ui\n"
+    },
+    {
+      "sha": "7fbffea7bccc0d6c45feee3c2c92a5b6f01d13a6",
+      "date": "2016-07-17T21:06:17+05:30",
+      "author": "Pradeep Arya",
+      "email": "parya@xebia.com",
+      "message": "integrate fetch tweets service with ui\n"
+    },
+    {
+      "sha": "f3aaf52c91a32292c91e5b372eed4d5e6270bff0",
+      "date": "2016-07-17T18:31:27+05:30",
+      "author": "Pradeep Arya",
+      "email": "parya@xebia.com",
+      "message": "validate token to acces authorized url integrated with backend service\n"
+    },
+    {
+      "sha": "b8ba6814302b0948254301bd40d892d057a573c6",
+      "date": "2016-07-17T18:24:41+05:30",
+      "author": "Pradeep Arya",
+      "email": "parya@xebia.com",
+      "message": "integrate logon service with front end\n"
+    },
+    {
+      "sha": "dfb52c44fd1cf3a663365f965f49bb708a700ad4",
+      "date": "2016-07-17T16:53:02+05:30",
+      "author": "Pradeep Arya",
+      "email": "parya@xebia.com",
+      "message": "front end base structure and login form added\n"
+    },
+    {
+      "sha": "3791baa7696a121eb1c36a1061f859c2579ab548",
+      "date": "2016-07-17T15:13:59+05:30",
+      "author": "Pradeep Arya",
+      "email": "parya@xebia.com",
+      "message": "fetch tweets service added\n"
+    },
+    {
+      "sha": "d3bf7fbc273af56dbe6cb040fd1ab1538d500158",
+      "date": "2016-07-17T14:58:35+05:30",
+      "author": "Pradeep Arya",
+      "email": "parya@xebia.com",
+      "message": "tweet service added\n"
+    },
+    {
+      "sha": "c3a97cafec32518f8946348323c20ae4e8c6036f",
+      "date": "2016-07-16T21:20:02+05:30",
+      "author": "Pradeep Arya",
+      "email": "parya@xebia.com",
+      "message": "registration service added\n"
+    },
+    {
+      "sha": "c20c9ddcd9ae1ea3e186354f4699b346208955a3",
+      "date": "2016-07-16T20:08:41+05:30",
+      "author": "Pradeep Arya",
+      "email": "parya@xebia.com",
+      "message": "validate token service added\n"
+    },
+    {
+      "sha": "79e3224ff14fccf02ae822e3994160777a1d836d",
+      "date": "2016-07-16T19:30:04+05:30",
+      "author": "Pradeep Arya",
+      "email": "parya@xebia.com",
+      "message": "logout service added\n"
+    },
+    {
+      "sha": "bcea763347c34d996c353ced74ba3172c27c5906",
+      "date": "2016-07-16T19:10:06+05:30",
+      "author": "Pradeep Arya",
+      "email": "parya@xebia.com",
+      "message": "hibernate integration with spring data and logon module added\n"
+    },
+    {
+      "sha": "79a50510932cccc13dc0351fb8bcba93a4202591",
+      "date": "2016-07-15T22:17:25+05:30",
+      "author": "Pradeep Arya",
+      "email": "parya@xebia.com",
+      "message": "Base project structure added, created with spring boot\n"
+    }
+  ],
+  "commit_sha": "31d73a40625f04c8d7dd39d226ec2288baa63ea6",
+  "extracted_at": "2026-10-05T18:48:39.311759+00:00"
+}

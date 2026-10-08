@@ -1,0 +1,230 @@
+{
+  "ia_status": "com_evidencia",
+  "ia_level": 2,
+  "ia_agents": "Claude Code",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "ca677461d455786f498632cd9cee0690441f27f4",
+      "trailer": "Claude Opus 4.8 <noreply@anthropic.com>"
+    }
+  ],
+  "commits": [
+    {
+      "sha": "ca677461d455786f498632cd9cee0690441f27f4",
+      "date": "2026-07-27T07:47:11+02:00",
+      "author": "Philip Riecks",
+      "email": "14176609+rieckpil@users.noreply.github.com",
+      "message": "pin MockServer testcontainer to the maintained mockserver/mockserver image (#244)\n\nThe review-microshed-testing integration tests used the deprecated no-arg\nMockServerContainer() constructor, which defaults to the legacy\njamesdbloom/mockserver Docker Hub namespace. Pin the image explicitly to the\nmaintained mockserver/mockserver repository via DockerImageName, kept at the\nsame 5.5.4 tag so it stays aligned with the mockserver-client-java dependency.\n\nNote: the nightly failure that surfaced this\n(https://github.com/rieckpil/blog-tutorials/actions/runs/30150668359) was a\ntransient Docker Hub registry timeout (\"Status 500 ... registry-1.docker.io ...\nClient.Timeout exceeded\"), not a missing image - the legacy tag still resolves.\nThis change is the durable hardening: it moves off the deprecated image\nnamespace and constructor so the module no longer depends on the abandoned\njamesdbloom repository.\n\nCo-authored-by: Claude Opus 4.8 <noreply@anthropic.com>"
+    },
+    {
+      "sha": "3f6e467452d4c862659995393e6298ce38464b59",
+      "date": "2026-07-25T10:11:39+02:00",
+      "author": "Philip Riecks",
+      "email": "14176609+rieckpil@users.noreply.github.com",
+      "message": "fix nightly CI failures and update deprecated GitHub Actions (#243)"
+    },
+    {
+      "sha": "cc20cab53eeb73c404b9bcc4a22b169571f4b403",
+      "date": "2025-03-10T08:35:27+01:00",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency com.h2database:h2 to v1.4.200 (#227)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "a61f0e1b11f9649ceab54959dd8b16879a5ca792",
+      "date": "2024-08-13T15:53:44+02:00",
+      "author": "Philip Riecks",
+      "email": "mail@philipriecks.de",
+      "message": "bump node version"
+    },
+    {
+      "sha": "a549a30cff8fc0fdc109a73521d21456b153e788",
+      "date": "2024-08-13T15:53:04+02:00",
+      "author": "Philip Riecks",
+      "email": "mail@philipriecks.de",
+      "message": "remove dead links"
+    },
+    {
+      "sha": "8da8359f65bbdaa478705bd7aec5418586e7cb8a",
+      "date": "2024-08-13T19:20:49+05:30",
+      "author": "Hardik Singh Behl",
+      "email": "hardik.behl7444@gmail.com",
+      "message": "adding new article links (#239)\n\n"
+    },
+    {
+      "sha": "2b245a970045bf6ef10dd25cdc05a2a1d515abfd",
+      "date": "2024-06-17T20:11:06+05:30",
+      "author": "Hardik Singh Behl",
+      "email": "hardik.behl7444@gmail.com",
+      "message": "add codebase/reducing-testcontainers-execution-time (#234)\n\nCo-authored-by: Philip Riecks <mail@philipriecks.de>"
+    },
+    {
+      "sha": "21616f814506512388e2fb0918f092ae0b638ba3",
+      "date": "2024-06-17T20:09:18+05:30",
+      "author": "Hardik Singh Behl",
+      "email": "hardik.behl7444@gmail.com",
+      "message": "add codebase for instancio article\n\n"
+    },
+    {
+      "sha": "034a9dcc5ba938f474f26ed02221a0c683f07fb7",
+      "date": "2024-06-17T11:20:36+02:00",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency com.fasterxml.jackson.core:jackson-databind to v2.17.1 (#230)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "02b435c3366fdf49dfc384d3873cee98d8539100",
+      "date": "2024-06-17T11:20:24+02:00",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency com.fasterxml.jackson.core:jackson-databind to v2.17.1 (#231)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "df0707f293df10cd7c07fda15b40fbe9dc1b95fc",
+      "date": "2024-06-11T16:43:09+05:30",
+      "author": "Hardik Singh Behl",
+      "email": "hardik.behl7444@gmail.com",
+      "message": "upgrading to spring boot version 3.3.0 (#233)\n\n"
+    },
+    {
+      "sha": "076cf2cf6464a9e960569b2847c8537420152bed",
+      "date": "2024-06-11T10:46:39+02:00",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update aws-java-sdk monorepo to v1.12.740 (#215)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "507dd01b43fdda7229dfd227574bdafacb8f5e59",
+      "date": "2024-06-11T10:46:22+02:00",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency com.amazonaws:aws-lambda-java-runtime-interface-client to v1.1.0 (#223)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "a08498ff6215c24914ffbfb2cf139cef46fe3feb",
+      "date": "2024-06-11T10:46:10+02:00",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency com.codeborne:selenide to v6.19.1 (#226)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "09e9f056c9a2ac4aefd34d8144967f43c1a21ceb",
+      "date": "2024-06-11T09:51:49+02:00",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update openjdk Docker tag (#210)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "44a59f091504e872b02d141bb2951f2195f83bce",
+      "date": "2024-06-11T09:46:49+02:00",
+      "author": "Philip Riecks",
+      "email": "mail@philipriecks.de",
+      "message": "update renovate.json"
+    },
+    {
+      "sha": "f0a2ee3d11f43740e8166efaec476ec1306d185b",
+      "date": "2024-06-11T09:46:03+02:00",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency com.amazonaws:aws-lambda-java-events to v3.11.5 (#222)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "9c06dbeafb907211788555cf7d56bd3548c1aae9",
+      "date": "2024-06-11T09:45:40+02:00",
+      "author": "Philip Riecks",
+      "email": "mail@philipriecks.de",
+      "message": "only provide PRs for Java"
+    },
+    {
+      "sha": "6178b6467f0bdd2b1f0f269e7d3a778be47d6db5",
+      "date": "2024-06-11T07:40:19+02:00",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency @semantic-ui-react/css-patch to v1.1.3 (#219)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "ba150760d525079d242505b489bbfaa4f08677d9",
+      "date": "2024-06-11T07:40:11+02:00",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency @types/jest to v27.5.2 (#220)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "cbeb845b82fb2fd9e6597e4afe5bba6881bb2262",
+      "date": "2024-06-10T08:51:16+02:00",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update aws-cdk monorepo to v1.204.0 (#217)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "226bdaad0859f0cc86c3023329fa9b047166aa61",
+      "date": "2024-06-08T10:51:14+02:00",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update wiremock.version (#216)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "851313218df8cd2424d15546c738cf22a8a2b7e1",
+      "date": "2024-06-08T07:46:30+02:00",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency react-scripts to v2.1.8 (#205)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "68774c113697fff8b4328f8a6ad37fe4b0492979",
+      "date": "2024-06-08T07:46:20+02:00",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency react-scripts to v5.0.1 (#206)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "6a0c4fbe2e10624cab8565f65c5d07516c36e848",
+      "date": "2024-06-08T07:45:45+02:00",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update greenmail.version to v1.6.15 (#209)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "9767973de7ac3a564c58b84677e7c41223ea67e3",
+      "date": "2024-06-07T10:13:36+02:00",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency org.apache.maven.plugins:maven-deploy-plugin to v2.8.2 (#195)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "9cec54fe101fd14c46e59d2a7e930abe17183356",
+      "date": "2024-06-07T10:12:37+02:00",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency org.eclipse.persistence:eclipselink to v2.7.15 (#199)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "1423f42336546411dacf670e450b56fb76659ca4",
+      "date": "2024-06-07T10:12:25+02:00",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency org.apache.pdfbox:pdfbox to v2.0.31 (#198)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "f5ca79a262059f0e1b1e0fe79b79ac3695cb8bcb",
+      "date": "2024-06-07T09:40:50+02:00",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency org.slf4j:slf4j-log4j12 to v1.7.36 (#202)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "edec51b4489a26c919d6e78f9e238847ffc18804",
+      "date": "2024-06-07T09:40:37+02:00",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency io.hypersistence:hypersistence-utils-hibernate-63 to v3.7.6 (#191)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    }
+  ],
+  "commit_sha": "ca677461d455786f498632cd9cee0690441f27f4",
+  "extracted_at": "2026-10-05T18:12:18.268688+00:00"
+}

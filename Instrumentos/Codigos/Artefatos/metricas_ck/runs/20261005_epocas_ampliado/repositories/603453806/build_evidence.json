@@ -1,0 +1,32 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "2.6.7",
+  "spring_boot_major": "2",
+  "java_versions_declared": "17",
+  "build_evidence": [
+    {
+      "file": "graph_db/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "graph_db/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "graph_db/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "graph_db/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "graph_db/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "graph_db/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

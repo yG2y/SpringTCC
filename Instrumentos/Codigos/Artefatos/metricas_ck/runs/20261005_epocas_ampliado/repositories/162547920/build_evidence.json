@@ -1,0 +1,220 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "3.5.15;3.5.3",
+  "spring_boot_major": "3",
+  "java_versions_declared": "${java.version};21",
+  "build_evidence": [
+    {
+      "file": "backend/cache-template/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/n2o/n2o-access/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "backend/n2o/n2o-api/pom.xml",
+      "artifact": "spring-boot-test"
+    },
+    {
+      "file": "backend/n2o/n2o-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "backend/n2o/n2o-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "backend/n2o/n2o-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-websocket"
+    },
+    {
+      "file": "backend/n2o/n2o-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb"
+    },
+    {
+      "file": "backend/n2o/n2o-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "backend/n2o/n2o-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/n2o/n2o-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "backend/n2o/n2o-autotest/pom.xml",
+      "artifact": "spring-boot-starter-websocket"
+    },
+    {
+      "file": "backend/n2o/n2o-autotest/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/n2o/n2o-sandbox/pom.xml",
+      "artifact": "spring-boot-starter-data-rest"
+    },
+    {
+      "file": "backend/n2o/n2o-sandbox/pom.xml",
+      "artifact": "spring-boot-starter-websocket"
+    },
+    {
+      "file": "backend/n2o/n2o-sandbox/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb"
+    },
+    {
+      "file": "backend/n2o/n2o-sandbox/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "backend/n2o/n2o-sandbox/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/n2o/n2o-test/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/n2o/n2o-test/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb"
+    },
+    {
+      "file": "backend/n2o/n2o-test/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "backend/n2o/n2o-test/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "demo/server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "demo/server/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "demo/server/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "demo/server/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "examples/bpm/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "examples/bpm/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "examples/bpm/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "examples/crud-java/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "examples/crud-java/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "examples/crud-java/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "examples/crud-java/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "examples/crud-rest/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "examples/crud-rest/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "examples/crud-rest/pom.xml",
+      "artifact": "spring-boot-starter-data-rest"
+    },
+    {
+      "file": "examples/crud-rest/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "examples/crud-rest/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "examples/crud-rest/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "examples/crud-sql/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "examples/crud-sql/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "examples/crud-sql/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "examples/crud-sql/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "examples/crud/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "examples/crud/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "examples/crud/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "examples/hello-world/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "examples/hello-world/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "examples/hello-world/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "sandbox/server/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "sandbox/server/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "sandbox/server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

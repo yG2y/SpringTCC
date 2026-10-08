@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "bae8feb29d5500ea790104e4ee6208165c0a0a8b",
+      "date": "2023-12-30T01:28:31+09:00",
+      "author": "JFe",
+      "email": "33208246+Go-Jaecheol@users.noreply.github.com",
+      "message": "[BE] refactor: 상품 자동 완성 API 페이징 방식 변경 (#757)\n\n* refactor: 상품 자동 완성 API 커서 기반 페이징으로 변경\n\n* test: 상품 자동 완성 repository 테스트 추가\n\n* test: 상품 자동 완성 인수 테스트 수정\n\n* style: import 정렬 순서 변경\n\n* refactor: SearchProductsResponse 생성자 private으로 수정\n\n* refactor: PageRequest 생성 방식 변경\n\n* refactor: 상품 자동 완성 조회 쿼리 수정"
+    },
+    {
+      "sha": "c6e61aa6bb9e76d1c291ce1ed6a4197aff05eee8",
+      "date": "2023-11-19T22:20:45+09:00",
+      "author": "sᴏʟʙɪ ☔️",
+      "email": "solbi2004@naver.com",
+      "message": "fix: toast 디자인 시스템에서 import하도록 수정 (#847)\n\n"
+    },
+    {
+      "sha": "70f34f143e76c67625d69467a120f0e66dd4e009",
+      "date": "2023-11-19T22:07:35+09:00",
+      "author": "sᴏʟʙɪ ☔️",
+      "email": "solbi2004@naver.com",
+      "message": "[FE] refactor: 디자인 시스템 컴포넌트로 교체 (#841)\n\n* chore: 디자인 시스템 버전 업\n\n* refactor: 캐러셀 교체\n\n* refactor: input 교체\n\n* refactor: 토스트 교체"
+    },
+    {
+      "sha": "b88ee376cb032b4b40c097daef6c106dd5a0c9da",
+      "date": "2023-11-15T20:18:14+09:00",
+      "author": "Taeeun Kim",
+      "email": "xodms0309@naver.com",
+      "message": "[FE] feat: 리뷰, 꿀조합 좋아요에 낙관적 업데이트 적용 (#839)\n\n* feat: 리뷰 좋아요에 낙관적 업데이트 적용\n\n* feat: 리뷰 좋아요 버튼 컴포넌트 분리\n\n* feat: 꿀조합 좋아요에 낙관적 업데이트 적용\n\n* feat: client state로 좋아요를 관리하게끔 수정\n\n* feat: 꿀조합 좋아요는 server state를 동기화하도록 수정\n\n* style: console.log 제거\n\n* feat: 토스트 에러 메시지 수정\n\n* feat: 좋아요 개수도 업데이트\n\n* fix: 객체 destructing이 안되어 수정"
+    },
+    {
+      "sha": "a0793f3c61e4bc702bb181cb2d3b0d352c3ccb45",
+      "date": "2023-10-19T22:30:43+09:00",
+      "author": "Leejin Yang",
+      "email": "ejin1996@gmail.com",
+      "message": "[FE] fix: 상품 아이템 null 처리 제거 (#832)\n\n"
+    },
+    {
+      "sha": "4f9469c8d0bc17c01c4351eaa5a611da09817bb7",
+      "date": "2023-10-19T22:03:13+09:00",
+      "author": "Hanuel Lee",
+      "email": "91522259+hanueleee@users.noreply.github.com",
+      "message": "[BE] hotfix: 기본 이미지로 업데이트 로직에 환경변수 제거 (#830)\n\n* fix: 기본 이미지로 업데이트시 null\n\n* refactor: 상수 추출"
+    },
+    {
+      "sha": "25efbfed86e024f53a1dcc33c56539fad3194121",
+      "date": "2023-10-19T21:16:20+09:00",
+      "author": "sᴏʟʙɪ ☔️",
+      "email": "solbi2004@naver.com",
+      "message": "[ALL] docs: 로고 이미지 수정 (#827)\n\n* refactor: 로고 이미지 수정\n\n* docs: 이미지 크기 수정"
+    },
+    {
+      "sha": "a5b52e74ade391e8c544a55d82ae1fd0723e4d8b",
+      "date": "2023-10-19T21:11:09+09:00",
+      "author": "Leejin Yang",
+      "email": "ejin1996@gmail.com",
+      "message": "[FE] feat: 랭킹 상대 시간 추가 (#826)\n\n* feat: 꿀조합 랭킹 상대 날짜 추가\n\n* feat: 리뷰 랭킹 상대 시간 추가"
+    },
+    {
+      "sha": "9b00964e75f7e742e2d2e0f24ab89de439d599f7",
+      "date": "2023-10-19T21:08:40+09:00",
+      "author": "Leejin Yang",
+      "email": "ejin1996@gmail.com",
+      "message": "[FE] feat: PB 상품 목록에서 상품 썸네일 삼김이로 수정 (#818)\n\n"
+    },
+    {
+      "sha": "a7d28e0016606aa8d792738742b9972fef3f4420",
+      "date": "2023-10-19T20:51:28+09:00",
+      "author": "Leejin Yang",
+      "email": "ejin1996@gmail.com",
+      "message": "[ALL] docs: README 작성 (#823)\n\n* docs: README 작성\n\n* docs: 위키 아이콘 수정\n\n* docs: 수정"
+    },
+    {
+      "sha": "114abf1c23540ef42ae8e09efc907a0b71547beb",
+      "date": "2023-10-19T19:56:53+09:00",
+      "author": "Dabeen Jeong",
+      "email": "hello70825@gmail.com",
+      "message": "[BE] refactor: 프로덕션 로그인 쿠키 이름과 테스트 로그인 쿠키 이름 통일 (#819)\n\n"
+    },
+    {
+      "sha": "e214528724e569718b0e120f10340c9990d9319f",
+      "date": "2023-10-19T19:53:39+09:00",
+      "author": "JFe",
+      "email": "33208246+Go-Jaecheol@users.noreply.github.com",
+      "message": "[BE] refactor: 리뷰 및 꿀조합 랭킹 Response 수정 (#821)\n\n* refactor: RankingReviewDto에 createdAt 추가\n\n* refactor: RankingRecipeDto에 createdAt 추가"
+    },
+    {
+      "sha": "7575a5c1389eb197f7f3a37c0b1d711c14b036c3",
+      "date": "2023-10-19T19:42:35+09:00",
+      "author": "Hanuel Lee",
+      "email": "91522259+hanueleee@users.noreply.github.com",
+      "message": "[BE] fix: 상품에 이미지가 있는 리뷰가 없을 경우 기본 이미지로 설정 (#822)\n\n* feat: 설정파일에 기본 이미지 경로 추가\n\n* fix: 상품에 사진이 있는 리뷰가 하나도 없을 경우 기본 이미지 설정\n\n* refactor: 설정파일에서 actuator 포트 옵션 제거"
+    },
+    {
+      "sha": "a51d2b7ec2b575dc86165191e899793850c986ee",
+      "date": "2023-10-19T17:33:34+09:00",
+      "author": "Leejin Yang",
+      "email": "ejin1996@gmail.com",
+      "message": "[FE] feat: 꿀조합 페이지 접속 시 이전 페이지 로컬스토리지에 경로 저장 (#814)\n\n"
+    },
+    {
+      "sha": "48a20c9a1bfdb2df8d2fb080931a5d4ffaa6564a",
+      "date": "2023-10-19T17:01:57+09:00",
+      "author": "Hanuel Lee",
+      "email": "91522259+hanueleee@users.noreply.github.com",
+      "message": "fix: 리뷰 삭제시 썸네일 업데이트 로직 순서 변경 (#815)\n\n"
+    },
+    {
+      "sha": "800f563775bad2bfd9c176fd57b99d418a50c9fb",
+      "date": "2023-10-19T15:35:11+09:00",
+      "author": "Dabeen Jeong",
+      "email": "hello70825@gmail.com",
+      "message": "[BE] fix: 좋아요 취소도 좋아요를 누르지 않은 것으로 설정 (#808)\n\n"
+    },
+    {
+      "sha": "c4bb04fefbfe5da1b3f9ba2cc26db208838172bc",
+      "date": "2023-10-19T15:20:59+09:00",
+      "author": "Hanuel Lee",
+      "email": "91522259+hanueleee@users.noreply.github.com",
+      "message": "[BE] feat: 리뷰 삭제시 상품 정보 업데이트 로직 추가 (#803)\n\n* refactor: 상품 상세 조회시 리뷰 데이터 조회 대신 상품 속 reviewCount 사용하도록 개선\n\n* feat: 리뷰 삭제시 상품 정보 갱신 로직 추가"
+    },
+    {
+      "sha": "9e928b3d50b2a5ebd0c351fb665c4656a4a1290c",
+      "date": "2023-10-19T15:17:46+09:00",
+      "author": "Taeeun Kim",
+      "email": "xodms0309@naver.com",
+      "message": "[FE] router 리팩터링 (#806)\n\n* fix: RecipeDetail 페이지를 AuthLayout아래로 이동\n\n* style: 각각 Router 아래에 주석 작성"
+    },
+    {
+      "sha": "69c744c49b22e8b3c8042b3033437827c5d7f017",
+      "date": "2023-10-19T15:03:53+09:00",
+      "author": "Leejin Yang",
+      "email": "ejin1996@gmail.com",
+      "message": "[FE] feat: 꿀조합 상세 이미지 크기 조정 (#805)\n\n"
+    },
+    {
+      "sha": "08aeb2ff2b5f9d907e4e82af0ea106ff18298499",
+      "date": "2023-10-19T14:38:56+09:00",
+      "author": "Taeeun Kim",
+      "email": "xodms0309@naver.com",
+      "message": "[FE] fix: totalElements와 comments 변수를 destructing 하는 방법 수정 (#801)\n\n"
+    },
+    {
+      "sha": "c832bb43569a2cde2e2a9408064cd7da19147368",
+      "date": "2023-10-19T14:35:57+09:00",
+      "author": "sᴏʟʙɪ ☔️",
+      "email": "solbi2004@naver.com",
+      "message": "fix: 꿀조합 등록 토스트 위치 이동 (#800)\n\n"
+    },
+    {
+      "sha": "52cf2ee7f7cc6b9625bc9dcc9b1292748adadba8",
+      "date": "2023-10-19T13:25:27+09:00",
+      "author": "Leejin Yang",
+      "email": "ejin1996@gmail.com",
+      "message": "[FE] feat: 배너 조회 API 연결 및 배너 컴포넌트 작성 (#790)\n\n* feat: 배너 조회 API 연결 쿼리 작성\n\n* feat: 배너 컴포넌트 작성"
+    },
+    {
+      "sha": "b91e7751236b7b9eacdd9378be99f26a37ec8c64",
+      "date": "2023-10-19T10:54:47+09:00",
+      "author": "Dabeen Jeong",
+      "email": "hello70825@gmail.com",
+      "message": "[BE] feat: HikariCP 옵션 설정 (#795)\n\n"
+    },
+    {
+      "sha": "3f77bf1d39cb7066c7ba2008db80535d8a64041e",
+      "date": "2023-10-19T10:50:44+09:00",
+      "author": "sᴏʟʙɪ ☔️",
+      "email": "solbi2004@naver.com",
+      "message": "fix: 리뷰 상세 api 수정 (#796)\n\n"
+    },
+    {
+      "sha": "826e7138363b7809e8d324f33c5f86539a06186e",
+      "date": "2023-10-18T22:19:58+09:00",
+      "author": "우가",
+      "email": "dnr3655@naver.com",
+      "message": "[BE] feat: Banner entity 구현, Banner 전체 조회 구현 (#791)\n\n* feat: Banner entity 구현, Banner 전체 조회 구현\n\n* remove: 리뷰 비동기 테스트 삭제\n\n* refactor: 리뷰 반영"
+    },
+    {
+      "sha": "4d299d790e51277a5e66955275b786b7b6263d16",
+      "date": "2023-10-18T22:10:10+09:00",
+      "author": "JFe",
+      "email": "33208246+Go-Jaecheol@users.noreply.github.com",
+      "message": "[BE] feat: 리뷰 상세 조회 API 구현 (#758)\n\n* feat: 리뷰 상세 조회 기능 구현\n\n* test: 리뷰 상세 조회 테스트 추가\n\n* refactor: ReviewDetailResponse에 상품 정보 추가\n\n* style: import 정렬 순서 변경\n\n* style: 불필요한 import 제거"
+    },
+    {
+      "sha": "3f1dd1be1e17a80d5b361ed45568de13a30c6200",
+      "date": "2023-10-18T20:50:48+09:00",
+      "author": "Hanuel Lee",
+      "email": "91522259+hanueleee@users.noreply.github.com",
+      "message": "[BE ]test: 비동기 로직 검증 테스트 제거 (#788)\n\n"
+    },
+    {
+      "sha": "ef2ee7328868e20ca74f6342d8a854e2a8b69ad8",
+      "date": "2023-10-18T20:17:17+09:00",
+      "author": "sᴏʟʙɪ ☔️",
+      "email": "solbi2004@naver.com",
+      "message": "refactor: alert를 toast로 변경 (#789)\n\n"
+    },
+    {
+      "sha": "6fc930b12a34814bab1f56ea4b4b39d6e8235c2f",
+      "date": "2023-10-18T17:10:17+09:00",
+      "author": "sᴏʟʙɪ ☔️",
+      "email": "solbi2004@naver.com",
+      "message": "[FE] refactor: 이미지 압축 라이브러리 도입 (#786)\n\n* refactor: alert를 toast로 수정\n\n* refactor: dialog 컨테이너 div 추가\n\n* refactor: dialog 컨테이너 div 추가\n\n* chore: 디자인 시스템 버전 업\n\n* refactor: dialog 업데이트\n\n* refactor: 이미지 압축 구현\n\n* refactor: 이미지 압축 구현"
+    },
+    {
+      "sha": "87c5ac8057f8391954d4bf1fe173d04d668c5915",
+      "date": "2023-10-18T13:30:42+09:00",
+      "author": "JFe",
+      "email": "33208246+Go-Jaecheol@users.noreply.github.com",
+      "message": "[BE] refactor: 상품 랭킹 알고리즘 개선 (#756)\n\n* refactor: 상품 랭킹 조회 시 기간 설정\n\n* test: 상품 랭킹 관련 Repository 테스트 추가 및 수정\n\n* test: 상품 랭킹 관련 서비스 테스트 수정\n\n* style: import 정렬 순서 변경\n\n* fix: 충돌 해결"
+    }
+  ],
+  "commit_sha": "bae8feb29d5500ea790104e4ee6208165c0a0a8b",
+  "extracted_at": "2026-10-05T18:27:47.725013+00:00"
+}

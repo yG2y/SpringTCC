@@ -1,0 +1,20 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${springboot.version}",
+  "spring_boot_major": "unknown",
+  "java_versions_declared": "1.8",
+  "build_evidence": [
+    {
+      "file": "modules/junit4/spring-boot-system-test/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/junit4/spring-boot-system-test/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "modules/junit4/spring-boot-system-test/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    }
+  ]
+}

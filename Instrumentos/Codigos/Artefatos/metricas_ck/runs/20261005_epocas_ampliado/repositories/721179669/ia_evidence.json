@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "3adef25f00ae9d60e5890708ba5c7364652f2ec6",
+      "date": "2026-07-23T15:10:36+09:00",
+      "author": "char-yb",
+      "email": "uiurihappy@naver.com",
+      "message": "[Fix] 피드 조회 성능 및 커서 페이지네이션 개선\n"
+    },
+    {
+      "sha": "10e75d6e3a183e1435d6398db62656d139a73de3",
+      "date": "2026-07-23T15:09:24+09:00",
+      "author": "char-yb",
+      "email": "uiurihappy@naver.com",
+      "message": "[Fix] PostgreSQL 댓글 테이블 매핑 수정\n"
+    },
+    {
+      "sha": "89db3f02436723fdfac14cdfc22f434fb3ba57d4",
+      "date": "2026-07-16T16:57:51+09:00",
+      "author": "char-yb",
+      "email": "uiurihappy@naver.com",
+      "message": "[Chore] PostgreSQL 데이터베이스로 전환\n"
+    },
+    {
+      "sha": "518f0047df384dac4921c19a20943264bce5cf19",
+      "date": "2025-09-26T21:08:24+09:00",
+      "author": "yb__char",
+      "email": "68099546+char-yb@users.noreply.github.com",
+      "message": "fix: Remove presignedUrl ACL (#441)\n\n* fix: remove presignedUrl ACL\n\n* fix: remove legacy createPresignedUrl"
+    },
+    {
+      "sha": "04ce8e77a91798d330a9a42d2ee94c8639dbb7a1",
+      "date": "2025-09-26T00:48:28+09:00",
+      "author": "Jaehyun An",
+      "email": "91878695+uwoobeat@users.noreply.github.com",
+      "message": "hotfix: 프로덕션 도커 빌드 시 amd64 이미지 같이 생성 (#439)\n\n* hotfix: 도커 이미지를 arm64 플랫폼으로 빌드하도록 수정 (#401)\n\nchore: 도커 이미지를 arm64 플랫폼으로 빌드하도록 수정\n\n* chore: 빌드 시 amd64 이미지 같이 생성\n\n---------\n\nCo-authored-by: 도모 <dongho5088@naver.com>\nCo-authored-by: yb__char <68099546+uiurihappy@users.noreply.github.com>\nCo-authored-by: yb__char <68099546+char-yb@users.noreply.github.com>"
+    },
+    {
+      "sha": "f1017bdfe828fdc63f6e764b1cf3a1aa9ab79cdc",
+      "date": "2025-09-26T00:27:45+09:00",
+      "author": "Jaehyun An",
+      "email": "91878695+uwoobeat@users.noreply.github.com",
+      "message": "feat: R2 이미지 업로드 로직 변경 (#436)\n\n* chore: S3 의존성 추가\n\n* chore: S3Client, S3Presigner 사용하도록 변경\n\n* feat: 이미지 유틸리티 구현\n\n* chore: 기존 의존성 임시 활성화\n\n* refactor: 이미지 유틸리티를 사용하도록 개선\n\n* feat: 미사용 코드 제거\n\n* chore: 기존 aws 의존성 제거\n\n* chore: 환경변수에 디폴트 값 지정\n\n* chore: sonar 제거"
+    },
+    {
+      "sha": "74816c8c4069c52b17d0be4ae28832cac4fa87f0",
+      "date": "2025-07-14T16:10:07+09:00",
+      "author": "도모",
+      "email": "dongho5088@naver.com",
+      "message": "chore: 스토리지 AWS S3 → Cloudflare R2 변경 (#433)\n\nchore: storage 환경변수 범용 키(STORAGE_*)로 통일 및 설정 정리"
+    },
+    {
+      "sha": "dd0e36826292936a6c0e502c2552bef441b4421c",
+      "date": "2025-06-09T22:20:08+09:00",
+      "author": "Jaehyun Ahn",
+      "email": "91878695+uwoobeat@users.noreply.github.com",
+      "message": "chore: Oracle 데이터베이스 마이그레이션 (#431)\n\n* chore: 오라클 DB 의존성 변경\n\n* feat: 오라클 예약어 피하기 위해 COMMENTS로 변경\n\n* chore: 오라클 문법에 맞게 네이티브 쿼리 변경\n\n* chore: 오라클 드라이버 및 접속 정보 변경\n\n* chore: 오라클 기본 스키마에 맞게 대문자로 변경"
+    },
+    {
+      "sha": "49860fa81e7c9729790fcfc6bbc33dcccc600411",
+      "date": "2025-06-05T02:14:08+09:00",
+      "author": "Jaehyun Ahn",
+      "email": "91878695+uwoobeat@users.noreply.github.com",
+      "message": "chore: PostgreSQL 마이그레이션 (#428)\n\n* chore: PostgreSQL 의존성 추가\n\n* chore: 여러 소스 / 타깃을 참조할 수 있으므로 일대다 매핑으로 변경\n\n* refactor: on conflict do update로 변경\n\n* chore: 드라이버 및 환경변수 이름 변경\n\n* chore: H2 컨테이너 호환성 모드 변경 및 인자 추가\n\n* test: H2 호환성 모드에서는 on conflict do update 미지원하므로 모킹\n\n* refactor: postgresql 방식에 맞게 클리너 로직 변경"
+    },
+    {
+      "sha": "3e07bf46166687de51c09a3ff13dff2d7ae1bca3",
+      "date": "2025-02-26T12:08:21+09:00",
+      "author": "yb__char",
+      "email": "uiurihappy@naver.com",
+      "message": "fix: spotless Apply\n"
+    },
+    {
+      "sha": "9eecc30c81f5c83366c4e9e46b25ee5031fde56d",
+      "date": "2025-02-26T12:00:45+09:00",
+      "author": "yb__char",
+      "email": "68099546+char-yb@users.noreply.github.com",
+      "message": "Fix: feed visibility none condition\n\n피드 기록에서 비공개가 노출되는 현상 방지"
+    },
+    {
+      "sha": "2a42726ab1025212bff174f424f2fbda3e0a5c37",
+      "date": "2024-12-12T01:14:16+09:00",
+      "author": "yb__char",
+      "email": "68099546+char-yb@users.noreply.github.com",
+      "message": "fix: Java 21 swagger 버전 이슈 (#422)\n\n"
+    },
+    {
+      "sha": "3191ae6dcaeffdb0e250c0edefcdae14e94fb85a",
+      "date": "2024-12-11T23:46:51+09:00",
+      "author": "yb__char",
+      "email": "uiurihappy@naver.com",
+      "message": "fix: dependencyManagement 삭제\n"
+    },
+    {
+      "sha": "d3af6f4ec251a406018cd8a99e32751c9b711c13",
+      "date": "2024-12-11T23:39:41+09:00",
+      "author": "yb__char",
+      "email": "uiurihappy@naver.com",
+      "message": "fix: swagger version\n"
+    },
+    {
+      "sha": "3ce8a821722bcb10262a45b7c721c62759c01149",
+      "date": "2024-12-11T18:52:49+08:00",
+      "author": "yb__char",
+      "email": "68099546+char-yb@users.noreply.github.com",
+      "message": "chore: Java 21 (#420)\n\n"
+    },
+    {
+      "sha": "36cdaf04d61cb6739e3149371d9294021cda1341",
+      "date": "2024-12-10T22:01:53+09:00",
+      "author": "yb__char",
+      "email": "uiurihappy@naver.com",
+      "message": "refactor: Generational ZGC\n"
+    },
+    {
+      "sha": "3b64b6081360adc245856f47fa234e15e2b29517",
+      "date": "2024-12-10T21:40:09+09:00",
+      "author": "yb__char",
+      "email": "uiurihappy@naver.com",
+      "message": "fix: corretto jdk\n"
+    },
+    {
+      "sha": "af11eea720c44032defc6a8cc48cb7a5cb27bfeb",
+      "date": "2024-12-10T20:29:57+09:00",
+      "author": "yb__char",
+      "email": "uiurihappy@naver.com",
+      "message": "refactor: 버전 변경에 따른 spotless version up\n"
+    },
+    {
+      "sha": "5fe2c8fc6b17265520b2fc72f5690f76f8109add",
+      "date": "2024-12-10T20:28:17+09:00",
+      "author": "yb__char",
+      "email": "uiurihappy@naver.com",
+      "message": "chore: java 21 version\n"
+    },
+    {
+      "sha": "8c43debb960ea987778d93d0b13b5005b1e7b887",
+      "date": "2024-12-10T20:27:54+09:00",
+      "author": "yb__char",
+      "email": "uiurihappy@naver.com",
+      "message": "chore: spring boot 3.4.0에 따라 MockBean(Deprecated) -> MockitoBean으로 변경\n"
+    },
+    {
+      "sha": "06d153b5ca1e3b6c9d77a79f2de5d40ecd74eb9f",
+      "date": "2024-12-07T10:42:48+08:00",
+      "author": "yb__char",
+      "email": "68099546+char-yb@users.noreply.github.com",
+      "message": "전체 피드 미션 visibility 조건 추가 (#417)\n\n"
+    },
+    {
+      "sha": "44181849172ed15d6c93d2d3e383218b55a7f0c0",
+      "date": "2024-12-06T02:24:43+08:00",
+      "author": "yb__char",
+      "email": "uiurihappy@naver.com",
+      "message": "fix: spotlessApply\n"
+    },
+    {
+      "sha": "d6d7fd532e9c228a6cf15878e4c2a05b56f91750",
+      "date": "2024-12-06T02:24:25+08:00",
+      "author": "yb__char",
+      "email": "uiurihappy@naver.com",
+      "message": "fix: BooleanExpression NullPointerException\n"
+    },
+    {
+      "sha": "de170dedc2a15096f2cf2cee013c47cd9a56234f",
+      "date": "2024-12-06T02:17:09+08:00",
+      "author": "yb__char",
+      "email": "uiurihappy@naver.com",
+      "message": "fix: spotlessApply\n"
+    },
+    {
+      "sha": "876fc6eea551c25f47394240f2dbbd0094bba2f2",
+      "date": "2024-12-06T02:14:16+08:00",
+      "author": "yb__char",
+      "email": "uiurihappy@naver.com",
+      "message": "fix: feed 비공개 미션 미노출 test 코드\n"
+    },
+    {
+      "sha": "7f1f4713d1c4e4fee48ee74443239d74ffba05d9",
+      "date": "2024-12-06T02:11:18+08:00",
+      "author": "yb__char",
+      "email": "uiurihappy@naver.com",
+      "message": "fix: feed 비공개 미션 미노출\n"
+    },
+    {
+      "sha": "5747f90c870cea7144450e8d8172ae80dd6d4df8",
+      "date": "2024-12-05T10:52:14+09:00",
+      "author": "yb__char",
+      "email": "68099546+char-yb@users.noreply.github.com",
+      "message": "chore: 서버 도메인 이전 (#414)\n\n* chore: today -> site 변경\n\n* fix: 차윤범 git id 변경\n\n* fix: on PR docker compose\n\n* fix: build-deploy yml docker compose"
+    },
+    {
+      "sha": "5dc5415aded3a3a646fa7435037c559777527171",
+      "date": "2024-06-21T19:11:30+09:00",
+      "author": "yb__char",
+      "email": "68099546+char-yb@users.noreply.github.com",
+      "message": "chore: pre-commit 시 spotlessApply 실행 (#412)\n\n* fix: pre-commit test"
+    },
+    {
+      "sha": "dcbe7529f7cae197730693c68521753a2ddfb0b2",
+      "date": "2024-06-17T17:13:07+09:00",
+      "author": "도모",
+      "email": "dongho5088@naver.com",
+      "message": "feat: 알림센터 Message추가와 클릭 시 대상으로 이동할 수 있도록 자원 ID와 추가 (#410)\n\n* feat: 알림센터 Message추가와 클릭 시 대상으로 이동할 수 있도록 자원 ID와 추가\n\n* style: spotless"
+    },
+    {
+      "sha": "4ad8b81c0ef215de96c131ca4d72c3d37a2637eb",
+      "date": "2024-06-16T22:20:25+09:00",
+      "author": "yb__char",
+      "email": "68099546+char-yb@users.noreply.github.com",
+      "message": "test: Database cleaner 리팩토링 (#389)\n\n* test: Database cleaner JUnit extension으로 변환\n\n* fix: DatabaseCleaner 유틸리티 클래스 private 생성자 추가\n\n* refactor: auto Detection\n\n* fix: DataJpaTest 검증\n\n* fix: spotlessApply\n\n* fix: spotlessApply"
+    }
+  ],
+  "commit_sha": "3adef25f00ae9d60e5890708ba5c7364652f2ec6",
+  "extracted_at": "2026-10-05T18:15:23.674136+00:00"
+}

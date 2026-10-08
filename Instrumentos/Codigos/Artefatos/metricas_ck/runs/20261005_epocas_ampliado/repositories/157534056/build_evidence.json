@@ -1,0 +1,104 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${spring-boot-maven-plugin-version};2.3.7.RELEASE",
+  "spring_boot_major": "2",
+  "java_versions_declared": "1.7;1.8",
+  "build_evidence": [
+    {
+      "file": "mini-admin/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "mini-admin/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "mini-admin/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "mini-admin/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "mini-admin/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "mini-common/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "mini-discovery/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "mini-gateway/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "mini-gateway/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "mini-gateway/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "mini-oauth-client/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/mini-auth/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/mini-item/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/mini-user/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "modules/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-test"
+    }
+  ]
+}

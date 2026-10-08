@@ -1,0 +1,288 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${spring-boot.version};3.5.10",
+  "spring_boot_major": "3",
+  "java_versions_declared": "17",
+  "build_evidence": [
+    {
+      "file": "ems-bootstrap/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "ems-bootstrap/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "ems-bootstrap/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "ems-business/ems-business-account/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "ems-business/ems-business-account/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "ems-business/ems-business-account/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "ems-business/ems-business-aggregation/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "ems-business/ems-business-aggregation/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "ems-business/ems-business-aggregation/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "ems-business/ems-business-billing/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "ems-business/ems-business-billing/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "ems-business/ems-business-billing/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "ems-business/ems-business-device/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "ems-business/ems-business-device/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "ems-business/ems-business-device/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "ems-business/ems-business-lease/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "ems-business/ems-business-lease/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "ems-business/ems-business-lease/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "ems-business/ems-business-order/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "ems-business/ems-business-order/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "ems-business/ems-business-order/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "ems-business/ems-business-plan/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "ems-business/ems-business-plan/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "ems-business/ems-business-plan/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "ems-business/ems-business-report/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "ems-business/ems-business-report/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "ems-common/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "ems-components/ems-components-context/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "ems-components/ems-components-context/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "ems-components/ems-components-datasource/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "ems-components/ems-components-lock/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "ems-components/ems-components-lock/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "ems-components/ems-components-redis/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "ems-components/ems-components-redis/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "ems-components/ems-components-translate-core/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "ems-components/ems-components-translate-web/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "ems-components/ems-components-translate-web/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "ems-foundation/ems-foundation-integration/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "ems-foundation/ems-foundation-integration/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "ems-foundation/ems-foundation-organization/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "ems-foundation/ems-foundation-organization/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "ems-foundation/ems-foundation-organization/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "ems-foundation/ems-foundation-space/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "ems-foundation/ems-foundation-space/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "ems-foundation/ems-foundation-space/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "ems-foundation/ems-foundation-system/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "ems-foundation/ems-foundation-system/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "ems-foundation/ems-foundation-system/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "ems-foundation/ems-foundation-user/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "ems-foundation/ems-foundation-user/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "ems-foundation/ems-foundation-user/pom.xml",
+      "artifact": "spring-boot-starter-cache"
+    },
+    {
+      "file": "ems-foundation/ems-foundation-user/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "ems-iot-simulator/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "ems-iot-simulator/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "ems-iot-simulator/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "ems-iot/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "ems-iot/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "ems-iot/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "ems-iot/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "ems-iot/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "ems-mq/ems-mq-api/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "ems-mq/ems-mq-api/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "ems-mq/ems-mq-rabbitmq/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "ems-mq/ems-mq-rabbitmq/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "ems-mq/ems-mq-rabbitmq/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "ems-schedule/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "ems-schedule/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "ems-web/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "ems-web/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-dependencies"
+    }
+  ]
+}

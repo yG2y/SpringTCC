@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "52b866a56232ea8dac896224ebeb191ae81406d1",
+      "date": "2025-08-23T10:15:09+02:00",
+      "author": "1kevinson",
+      "email": "kevinkouomeu@icloud.com",
+      "message": "Stop tracking and delete .DS_Store files and directories\n"
+    },
+    {
+      "sha": "ad27bfeddc2674fcf20c4296b2cf98023200e551",
+      "date": "2025-08-23T10:14:55+02:00",
+      "author": "1kevinson",
+      "email": "kevinkouomeu@icloud.com",
+      "message": "update readme + added scripts\n"
+    },
+    {
+      "sha": "33920db187a015474aa59c0d099d22393e9fa91a",
+      "date": "2025-08-19T08:26:19+02:00",
+      "author": "1kevinson",
+      "email": "kevinkouomeu@icloud.com",
+      "message": "changement du fichier readme\n"
+    },
+    {
+      "sha": "3f3b602d77af97022f46770ae936ea38e87b9e4c",
+      "date": "2025-01-21T06:43:01+01:00",
+      "author": "1kevinson",
+      "email": "kevinkouomeu@icloud.com",
+      "message": "How to Effectively Display Java Logs Using JSON Format\n"
+    },
+    {
+      "sha": "91506d6375a5191b9f443c61d241310a61393cd1",
+      "date": "2024-10-02T23:54:16+02:00",
+      "author": "1kevinson",
+      "email": "kevinkouomeu@icloud.com",
+      "message": "remove pull script\n"
+    },
+    {
+      "sha": "397f3f185f59e81af19c3342d9e9f42676a26ef4",
+      "date": "2024-10-02T23:53:19+02:00",
+      "author": "1kevinson",
+      "email": "kevinkouomeu@icloud.com",
+      "message": "update links\n"
+    },
+    {
+      "sha": "f9c15c08133b87ca322d3ac39d3c815a10d0a53b",
+      "date": "2024-09-27T09:48:07+02:00",
+      "author": "Kevin Kouomeu",
+      "email": "kevinkouomeu@icloud.com",
+      "message": "🚀 Refactor Book and Author classes, Rename Packages\n\n- Split classes to reduce instance variables\n- Added BookRefacto and AuthorRefacto classes\n- Renamed packages for clarity and organization\n\nRefactored `Book` and `Author` into `BookRefacto` and `AuthorRefacto` to adhere to the principle of no class having more than two instance variables. Also, reorganized packages to improve code maintainability. This ensures cleaner, more modular code structure.\n"
+    },
+    {
+      "sha": "f78f09b34d232640dbf55621bd3b5927cc0afb4e",
+      "date": "2024-09-20T01:54:12+02:00",
+      "author": "1kevinson",
+      "email": "kevinkouomeu@icloud.com",
+      "message": "🚀 Refactor class names and error handling\n\n- Renamed `Practice` to `Service`\n- Replaced `addFlash` with `throwException`\n- Updated `Employee` class usage\n\nThis commit improves clarity by using more descriptive class names. Additionally, it changes error handling in `Authentication.java` to throw an exception instead of adding a flash message, thereby improving error management and making the codebase more maintainable.\n"
+    },
+    {
+      "sha": "a0f3359bbdcc290866e57b2e5c41770966961dc4",
+      "date": "2024-09-14T07:36:05+02:00",
+      "author": "1kevinson",
+      "email": "kevinkouomeu@icloud.com",
+      "message": "🚀 Rename Board to Grid for naming consistency\n\n- Renamed `Board.java` to `Grid.java`\n- Updated method `displayBoard` to `displayGrid`\n- Renamed `BoardValid.java` to `GridValid.java`\n\nThese changes were applied to enhance clarity and maintain consistent naming conventions within the codebase, making it more intuitive and aligned with the grid-based terminology used in the project.\n"
+    },
+    {
+      "sha": "17b6eb5591a3592333055d99f325e263f7d25e20",
+      "date": "2024-09-12T14:00:27+02:00",
+      "author": "Kevin Kouomeu",
+      "email": "kevinkouomeu@icloud.com",
+      "message": "✨ Refactor Distance toKilometer method\n\n- Change method to return new Distance object\n- Fix incorrect unit conversion\n- Maintain immutability of Distance objects\n"
+    },
+    {
+      "sha": "fca8d73e5091768689334fa168df842fb92fe2a7",
+      "date": "2024-09-09T10:11:38+02:00",
+      "author": "1kevinson",
+      "email": "kevinkouomeu@icloud.com",
+      "message": "🚀 Add Wallet and WalletValid classes without getter/setter\n\n- Introduce Wallet class with simple balance management.\n- Create WalletValid class with custom methods for business logic.\n- Both classes handle BigDecimal for financial calculations.\n\nThese changes introduce two new classes: Wallet and WalletValid, designed to manage financial balances. Wallet includes traditional getter and setter methods, while WalletValid omits setters in favor of custom methods (`increaseMoney` and `totalAmount`) to align with specific business rules.\n"
+    },
+    {
+      "sha": "e3e8154316faf1fe49e68ef587521e44653e3edf",
+      "date": "2024-09-09T10:05:57+02:00",
+      "author": "1kevinson",
+      "email": "kevinkouomeu@icloud.com",
+      "message": "🚀 Add valid implementations for clean code practices\n\n- Add classes following clean code principles\n- Refactor existing classes with improved structure\n- Ensure better readability and maintainability\n\nThis commit introduces new classes and refactors existing ones to adhere to clean code practices, such as minimizing indentation levels, avoiding the use of 'else', ensuring single responsibility, and better structuring. These changes improve the overall code readability, maintainability, and follow best practices for clean and efficient code architecture.\n"
+    },
+    {
+      "sha": "ed2ff95efdd65639451bd6288642839eb979d74e",
+      "date": "2024-09-08T22:23:08+02:00",
+      "author": "1kevinson",
+      "email": "kevinkouomeu@icloud.com",
+      "message": "🚀 Add authentication and JWT support\n\n- Implement JWT-based authentication\n- Add User entity and repository\n- Create AuthenticationController with login and signup\n\nThis commit integrates JWT-based authentication into the project. It includes creating the `User` entity, implementing `UserRepository`, and setting up the `AuthenticationService` and `JwtService`. These changes provide secure user management and token-based authentication for the application.\n"
+    },
+    {
+      "sha": "d76f327b142e244196930434078689441839b74e",
+      "date": "2024-09-04T09:28:46+02:00",
+      "author": "Kevin Kouomeu",
+      "email": "kevinkouomeu@icloud.com",
+      "message": "🚀 Initialize Maven project with basic structure\n\n- Add primary App class\n- Include unit test for App class\n- Configure Maven with pom.xml\n\nThis commit initializes a new Maven project, adds a basic \"Hello World\" application, and includes a simple unit test for it. The `pom.xml` file is configured to manage dependencies, ensuring the project is ready for development and testing.\n"
+    },
+    {
+      "sha": "4a48b3eec5708c9260a5c8598c83b41e960242bc",
+      "date": "2024-08-31T22:01:16+02:00",
+      "author": "Kevin Kouomeu",
+      "email": "kevinkouomeu@icloud.com",
+      "message": "🛠️ Adapt error handling with exceptions\n\n- Throw exceptions for validation errors\n- Remove unnecessary comments\n- Clean up unused imports\n\nThe main adjustment involves replacing return statements with exceptions to handle validation errors. This ensures that registration will not proceed if any validation fails, making the code more robust. Unnecessary comments and imports were also removed to streamline the code.\n"
+    },
+    {
+      "sha": "498f53067e35fd8b2881bfd2ebfb93c97a8befab",
+      "date": "2024-08-31T21:04:55+02:00",
+      "author": "Kevin Kouomeu",
+      "email": "kevinkouomeu@icloud.com",
+      "message": "🚀 Remove redundant comments from pom.xml\n\n- Deleted two unnecessary dependency comments\n- Improved readability of the pom.xml\n- No impact on functionality\n\nThe comments referring to the Maven repository URLs for dependencies were removed to clean up the pom.xml file. These changes enhance the readability of the configuration, making it easier to manage without affecting the build process or functionality.\n"
+    },
+    {
+      "sha": "f5944d24cf99f76a6c0a9d0fc495ac147847d05b",
+      "date": "2024-08-31T13:14:09+02:00",
+      "author": "Kevin Kouomeu",
+      "email": "kevinkouomeu@icloud.com",
+      "message": "🚀 Introduce User Registration with Guard and Supporting Files\n\n- Add User guards for registration validation\n- Include Maven dependencies in pom.xml\n- Create .gitignore for local files\n\nThis commit introduces `UserRegistrationWithGuard` to enhance user input validation using helper methods in `UserGuard`. Additionally, it configures essential dependencies in `pom.xml` for project management and includes a `.gitignore` file to keep the project directory clean. These changes aim to improve code organization and validation logic.\n"
+    },
+    {
+      "sha": "efaa64e14e4c4c5bdcc1d25b6205d295e4d506d7",
+      "date": "2024-08-25T09:04:26+02:00",
+      "author": "1kevinson",
+      "email": "kevinkouomeu@icloud.com",
+      "message": "update sql scripts\n"
+    },
+    {
+      "sha": "afb6b7bd3a1535bed261f089e17f9436d07e9e43",
+      "date": "2024-08-25T05:39:20+02:00",
+      "author": "1kevinson",
+      "email": "kevinkouomeu@icloud.com",
+      "message": "update docker compose file for mysql article\n"
+    },
+    {
+      "sha": "e5140ee35effd2c168a90c3d4a58c6f45466b9ed",
+      "date": "2024-08-23T09:09:29+02:00",
+      "author": "Kevin Kouomeu",
+      "email": "kevinkouomeu@icloud.com",
+      "message": "mysql docker container\n"
+    },
+    {
+      "sha": "085ca324d4c36f5b316bbf2a40bdbe622edfe9aa",
+      "date": "2024-08-09T14:42:42+02:00",
+      "author": "1kevinson",
+      "email": "kevinkouomeu@icloud.com",
+      "message": "🔒 Add JWT dependencies\n\nAdded three JWT libraries (jjwt-api, jjwt-impl, and jjwt-jackson) in the POM file. This integration is essential for handling JSON Web Tokens within the application. Ensure to test authentication mechanisms thoroughly with these additions.\n"
+    },
+    {
+      "sha": "f3ff85a8e30d72961114ce6d8fe65bfe8d1ccccd",
+      "date": "2024-08-09T13:48:25+02:00",
+      "author": "1kevinson",
+      "email": "kevinkouomeu@icloud.com",
+      "message": "🔄 Rename project to `auth-jwt-api` and switch to MySQL\n\nRenamed project files and packages from `jwt-tuto` to `auth-jwt-api`. Updated `application.yml` with MySQL configurations and replaced PostgreSQL dependency with MySQL in `pom.xml`.\n"
+    },
+    {
+      "sha": "ba69e242f451ede063a151d3a1b9f98760bc89fc",
+      "date": "2024-08-06T08:40:17+02:00",
+      "author": "1kevinson",
+      "email": "kevinkouomeu@icloud.com",
+      "message": "Rename JwtTutoApplication to JwtTutorialApplication\n\nUpdated the main application class and test class names for clarity and consistency. This change should make the purpose and usage of these classes more understandable.\n"
+    },
+    {
+      "sha": "e8ac59c727615452419d29e53761808977fa08cf",
+      "date": "2024-08-06T08:15:10+02:00",
+      "author": "1kevinson",
+      "email": "kevinkouomeu@icloud.com",
+      "message": "Initialize Spring Boot project with Maven Wrapper\n\nAdded basic Spring Boot application structure with `JwtTutoApplication`, Maven wrapper files for consistent build environment, and initial dependencies in `pom.xml`. Included a `.gitignore` to exclude unnecessary files from version control.\n"
+    },
+    {
+      "sha": "cfce9af1298e41c1c3411b8536fb32934631c516",
+      "date": "2024-07-22T08:20:09+02:00",
+      "author": "1kevinson",
+      "email": "kevinkouomeu@icloud.com",
+      "message": "🔄 Removed UserController, added UserDto, enhanced tests\n\nRemoved UserController.java as part of a codebase cleanup effort. Introduced new UserDto.java and updated ProjecionsTest.java with additional checks. Further enhancements include adjusted inspection settings and adding full name to the UserView interface.\n"
+    },
+    {
+      "sha": "7fe45322d70c27b1546a7f0ed40b3775899154c6",
+      "date": "2024-07-21T01:31:44+02:00",
+      "author": "1kevinson",
+      "email": "kevinkouomeu@icloud.com",
+      "message": "🗑️ Remove SQL scripts and tweak test setup\n\nThe SQL scripts (`delete.sql` and `insert.sql`) were deleted from the project. The setup in `ProjectionsTest.java` was adjusted to create fewer test users, and an additional assertion was added in the `testFetchUserByEmailServer()` method to verify the user's email.\n"
+    },
+    {
+      "sha": "30baf1b18f2c50d082a32656fa70a14fde6f0d6e",
+      "date": "2024-07-20T21:27:31+02:00",
+      "author": "Kevin Kouomeu",
+      "email": "kevinkouomeu@icloud.com",
+      "message": "Remove Address entity and adjust related code\n\nThe Address entity was removed from the project, resulting in adjustments to the User entity and related tests. Also, new SQL scripts for data manipulation were added. This is part of a refactoring effort to simplify the user management model.\n"
+    },
+    {
+      "sha": "17e169464e3c33db3d7e504d79f2c5f5844d5c07",
+      "date": "2024-07-18T23:01:49+02:00",
+      "author": "Kevin Kouomeu",
+      "email": "kevinkouomeu@icloud.com",
+      "message": "Add User entity and related files, update project settings\n\nImplemented the User entity along with necessary repository, service, and controller classes. Improved the project setup by updating asset files and the dependencies in pom.xml. Also, renamed 'application.yml' to 'application-test.yml' for better clarity. Optimized the project for PostgreSQL database use.\n"
+    },
+    {
+      "sha": "6de321e906d10a8c684e72c7c2b17c69496f69f6",
+      "date": "2024-07-15T12:13:04+02:00",
+      "author": "Kevin Kouomeu",
+      "email": "kevinkouomeu@icloud.com",
+      "message": "Update JDK version and reconfigure application settings\n\nThe ProjectRootManager component in the misc.xml file is updated to use JDK 20 from JDK 11. Additionally, the database configuration settings initially located in the test directory application.yml file have been moved to the main directory. The Postgres dependency has also been added to the pom.xml file.\n"
+    },
+    {
+      "sha": "a6cdaf88524dee417cb0f551bf78bc05c12d8c21",
+      "date": "2024-07-14T08:41:35+02:00",
+      "author": "1kevinson",
+      "email": "kevinkouomeu@icloud.com",
+      "message": "🚀 Initialize project with Spring Boot\n\nThis commit introduces the initial setup for the Spring Boot project. It includes the necessary configuration files for the IDE and editor, as well as setting up Maven for dependency management.\nMoreover, the DemoApplication and its corresponding test file are also being generated.\n"
+    }
+  ],
+  "commit_sha": "52b866a56232ea8dac896224ebeb191ae81406d1",
+  "extracted_at": "2026-10-05T18:35:39.053996+00:00"
+}

@@ -4,6 +4,20 @@
 
 Os resultados da reunião de 17/09 foram preservados. Esta continuação está em [20260920_java](Instrumentos/Codigos/Artefatos/selecao_spring_boot/runs/20260920_java/), e o [relatório atualizado](RELATORIO_COLETA_JAVA.md) resume os resultados. A retomada acrescentou **53.577 registros únicos** aos 42.317 já salvos.
 
+## Ampliação CK por épocas — 05/10/2026
+
+A nova execução percorre uma lista fixada de **1.520 candidatos** da seleção final: todos os 20 de E1 e 500 por época E2/E3/E4. A classificação de IA e as métricas usam o mesmo commit. O CK atualizado e o adaptador são comuns a toda a nova amostra; não são concatenados aos valores do piloto.
+
+**Resultado concluído:** 879 elegíveis, sendo 187 com evidência de IA e 692 sem evidência detectada; 132 pares no controle por época, versão e tamanho. Consulte a [interpretação dos resultados](RELATORIO_AMPLIACAO_CK.md) e o [relatório com 18 gráficos](Instrumentos/Codigos/Artefatos/metricas_ck/runs/20261005_epocas_ampliado/report.html).
+
+Consulte o [protocolo da ampliação](Instrumentos/Codigos/codigoCKSpring/METODOLOGIA_AMOSTRA_AMPLIADA.md) e o [estado da coleta](Instrumentos/Codigos/Artefatos/metricas_ck/runs/20261005_epocas_ampliado/status.json). O comparativo final usa `comparar_epocas.py`, que exige a coleta e as recuperações operacionais concluídas.
+
+## Piloto CK — 50 repositórios já classificados
+
+A etapa de métricas está implementada em `Instrumentos/Codigos/codigoCKSpring/analisar_ck.py`. O CSV de classificação fornecido contém **50 repositórios da seleção final**, com 16 positivos para evidência de IA e 34 negativos para os sinais procurados. Os rótulos foram preservados; os outros 38.406 selecionados não foram classificados nesta etapa.
+
+O [protocolo de extração e comparação](Instrumentos/Codigos/codigoCKSpring/METODOLOGIA_METRICAS_CK.md) registra o CK real (0.7.0), a correção de `lcom` para `lcom*`, o corte de 2.000 LOC totais por repositório, contadas uma vez por arquivo, a auditoria de cobertura, as análises estatísticas e os comandos de reprodução. Os resultados e limitações estão no [relatório da execução](Instrumentos/Codigos/Artefatos/metricas_ck/runs/20261005_classificados/report.html), e a cobertura em [status.json](Instrumentos/Codigos/Artefatos/metricas_ck/runs/20261005_classificados/status.json). Consulte o estado da execução antes de citar números.
+
 ## 1. Como foi contado o universo
 
 A consulta à API de busca de repositórios do GitHub é:

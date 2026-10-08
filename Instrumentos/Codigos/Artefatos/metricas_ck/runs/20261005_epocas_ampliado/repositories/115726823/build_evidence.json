@@ -1,0 +1,56 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "2.0.0.RELEASE",
+  "spring_boot_major": "2",
+  "java_versions_declared": "1.8",
+  "build_evidence": [
+    {
+      "file": "gungnir-rpc-example/consumer-1/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "gungnir-rpc-example/consumer-1/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "gungnir-rpc-example/consumer-1/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "gungnir-rpc-example/consumer-1/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "gungnir-rpc-example/provider-1/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "gungnir-rpc-example/provider-1/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "gungnir-rpc-example/provider-1/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "gungnir-rpc-example/provider-2/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "gungnir-rpc-example/provider-2/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "gungnir-rpc-example/provider-2/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "gungnir-rpc/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "gungnir-rpc/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    }
+  ]
+}

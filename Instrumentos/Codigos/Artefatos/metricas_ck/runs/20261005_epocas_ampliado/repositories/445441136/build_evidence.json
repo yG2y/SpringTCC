@@ -1,0 +1,24 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "3.1.1",
+  "spring_boot_major": "3",
+  "java_versions_declared": "17",
+  "build_evidence": [
+    {
+      "file": "oplog-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "oplog-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "oplog-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-dependencies"
+    }
+  ]
+}

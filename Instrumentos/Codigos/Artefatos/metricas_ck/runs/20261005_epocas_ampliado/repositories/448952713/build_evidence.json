@@ -1,0 +1,24 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "3.1.8",
+  "spring_boot_major": "3",
+  "java_versions_declared": "",
+  "build_evidence": [
+    {
+      "file": "services/gateway/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "services/habit/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "services/report/build.gradle.kts",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "services/track/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    }
+  ]
+}

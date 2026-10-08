@@ -1,0 +1,36 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "2.1.3.RELEASE",
+  "spring_boot_major": "2",
+  "java_versions_declared": "10",
+  "build_evidence": [
+    {
+      "file": "auth-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "auth-service/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb"
+    },
+    {
+      "file": "auth-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "auth-service/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "auth-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "auth-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "auth-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

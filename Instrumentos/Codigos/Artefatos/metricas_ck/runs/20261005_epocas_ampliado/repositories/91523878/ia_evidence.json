@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "2ced526f8d208bf3368d55e830fed3f001090f3e",
+      "date": "2024-04-03T23:45:41-05:00",
+      "author": "Vinayak Menon",
+      "email": "hitoshura25@users.noreply.github.com",
+      "message": "Update Dockerfile (#6)\n\n"
+    },
+    {
+      "sha": "aa1c29238c7132aa3d74f918820284bdb5c786a9",
+      "date": "2021-06-13T13:46:21-05:00",
+      "author": "Vinayak Menon",
+      "email": "hitoshura25@users.noreply.github.com",
+      "message": "Merge pull request #3 from hitoshura25/vmenon/episode_length_nullable\n\nMaking sure length is null if not set vs defaulting to 0"
+    },
+    {
+      "sha": "b05ffd71898f1ae1259756ea8c6af3c81d82491a",
+      "date": "2021-06-13T13:44:48-05:00",
+      "author": "Vinayak Menon",
+      "email": "vviswana@gmail.com",
+      "message": "Making sure length is null if not set vs defaulting to 0\n"
+    },
+    {
+      "sha": "74efcdb1787ceedf5715b68ce3e03d20abc2b0a6",
+      "date": "2021-06-08T21:53:09-05:00",
+      "author": "Vinayak Menon",
+      "email": "hitoshura25@users.noreply.github.com",
+      "message": "Merge pull request #2 from hitoshura25/vmenon/create_user\n\nCreate a user and get details"
+    },
+    {
+      "sha": "01ba1092a4af5035c90ddd2540e45189d80c3f42",
+      "date": "2021-06-08T21:34:05-05:00",
+      "author": "Vinayak Menon",
+      "email": "vviswana@gmail.com",
+      "message": "Need to disable CSRF for register_user to work\n"
+    },
+    {
+      "sha": "366d095a8c49e7b30ae965a5c90c267fc9c99757",
+      "date": "2021-06-08T21:15:56-05:00",
+      "author": "Vinayak Menon",
+      "email": "vviswana@gmail.com",
+      "message": "Hopefully forcing https\n"
+    },
+    {
+      "sha": "d8720c4d3bebe178ae0552cfada7930791db736c",
+      "date": "2021-06-08T21:00:43-05:00",
+      "author": "Vinayak Menon",
+      "email": "vviswana@gmail.com",
+      "message": "Setting up security filter\n"
+    },
+    {
+      "sha": "d113b08f6beb9d898d1d6d53d7ef8ff214ea494e",
+      "date": "2021-06-08T14:53:09-05:00",
+      "author": "Vinayak Menon",
+      "email": "vviswana@gmail.com",
+      "message": "Minor touchups\n"
+    },
+    {
+      "sha": "e2210502c58bb7e91675c44377b7e0931acaa3d4",
+      "date": "2021-06-08T14:36:46-05:00",
+      "author": "Vinayak Menon",
+      "email": "vviswana@gmail.com",
+      "message": "Adding user creation, along with endpoint to get user info (which is secured via Octa/OAuth)\n"
+    },
+    {
+      "sha": "21336f4a7f031c90c8a4031b6a869086ad31c2ae",
+      "date": "2021-06-08T14:29:41-05:00",
+      "author": "Vinayak Menon",
+      "email": "vviswana@gmail.com",
+      "message": "Adding user creation, along with endpoint to get user info (which is secured via Octa/OAuth)\n"
+    },
+    {
+      "sha": "5171b7e8164cc1ccc65d646ab090135716b80423",
+      "date": "2021-06-07T09:29:56-05:00",
+      "author": "Vinayak Menon",
+      "email": "vviswana@gmail.com",
+      "message": "WIP, adding new user creation\n"
+    },
+    {
+      "sha": "09645b048a0f42990225aea5cc43168173634781",
+      "date": "2020-06-27T23:00:20-05:00",
+      "author": "Vinayak Menon",
+      "email": "vviswana@gmail.com",
+      "message": "Ensuring published dates are timestamps\n"
+    },
+    {
+      "sha": "8bed00c7a8164d7592428d98307b008f9f6891ea",
+      "date": "2020-06-27T22:31:37-05:00",
+      "author": "Vinayak Menon",
+      "email": "hitoshura25@users.noreply.github.com",
+      "message": "Merge pull request #1 from hitoshura25/vmenon/fix_null_on_episode_description\n\nFixing null pointer when reading out Episode description"
+    },
+    {
+      "sha": "ecf8ebc5c8db00330aa426ad21b987f28c796530",
+      "date": "2020-06-27T22:30:16-05:00",
+      "author": "Vinayak Menon",
+      "email": "vviswana@gmail.com",
+      "message": "Fixing null pointer when reading out Episode description\n"
+    },
+    {
+      "sha": "04a368dc78b98e5ef26155c37a0d406a3ab9eb1a",
+      "date": "2017-10-20T13:13:56-05:00",
+      "author": "Vinayak Menon",
+      "email": "vviswana@gmail.com",
+      "message": "Using bigger resolution image from iTunes if available\n"
+    },
+    {
+      "sha": "b239385648279a091b9416fe35a1d4dea40a66af",
+      "date": "2017-10-17T19:29:36-05:00",
+      "author": "Vinayak Menon",
+      "email": "vviswana@gmail.com",
+      "message": "Fixing episode length, enclosure length is actually file size. Now looking at both RSS Media or iTunes modules for length and artwork\n"
+    },
+    {
+      "sha": "205cf09e4868700962b437fc0ba01c7dd6327144",
+      "date": "2017-10-16T19:34:42-05:00",
+      "author": "Vinayak Menon",
+      "email": "vviswana@gmail.com",
+      "message": "Setting episode length from media module if entry did not have it\n"
+    },
+    {
+      "sha": "16b29a075b922e842046cb7e3020c840157b15f6",
+      "date": "2017-05-16T21:34:23-05:00",
+      "author": "Vinayak Menon",
+      "email": "hitoshura25@users.noreply.github.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "3a9785abd72902e2fbbb99f484373afd5bfabb49",
+      "date": "2017-05-16T21:27:00-05:00",
+      "author": "Vinayak Menon",
+      "email": "hitoshura25@users.noreply.github.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "8a79ed3eb263462fa91b3fab919d9aa68e39aada",
+      "date": "2017-05-16T21:24:35-05:00",
+      "author": "Vinayak Menon",
+      "email": "hitoshura25@users.noreply.github.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "10150f029530ac4eeafe36c456d6d7a52ed865fd",
+      "date": "2017-05-16T21:17:32-05:00",
+      "author": "Vinayak Menon",
+      "email": "hitoshura25@users.noreply.github.com",
+      "message": "Create License.md"
+    },
+    {
+      "sha": "16e84bb983861bd54b2ee8a8ee556fc3de49aad6",
+      "date": "2017-04-28T14:27:35-05:00",
+      "author": "Vinayak Menon",
+      "email": "vviswana@gmail.com",
+      "message": "Refactoring docker setup so it can be used with heroku\n"
+    },
+    {
+      "sha": "e9c48dce74f7699927ff2b581bd7e7672b949dd5",
+      "date": "2016-05-29T18:57:19-05:00",
+      "author": "Vinayak Menon",
+      "email": "vviswana@gmail.com",
+      "message": "Adding endpoint for getting update to a podcast and enforcing JSON media types\n"
+    },
+    {
+      "sha": "7761bd0a9c1966560ca267474445702f43716c87",
+      "date": "2016-05-25T11:59:56-05:00",
+      "author": "Vinayak Menon",
+      "email": "vviswana@gmail.com",
+      "message": "Adding episode artwork url to response\n"
+    },
+    {
+      "sha": "2ca6d3131b6c1ba92c0103cbe38e71e1408646f5",
+      "date": "2016-05-20T16:59:50-05:00",
+      "author": "Vinayak Menon",
+      "email": "vviswana@gmail.com",
+      "message": "Using rome-tools api to parse RSS feed\n"
+    },
+    {
+      "sha": "bffafaa1607ce9a7ed33d885f79f98b501782846",
+      "date": "2016-05-20T14:49:39-05:00",
+      "author": "Vinayak Menon",
+      "email": "vviswana@gmail.com",
+      "message": "Adding initial integration with docker\n"
+    },
+    {
+      "sha": "38e336cfe2357edab077326a0981cf661bcd3dae",
+      "date": "2016-05-19T13:56:04-05:00",
+      "author": "Vinayak Menon",
+      "email": "vviswana@gmail.com",
+      "message": "Committing initial integration with iTunes search engine\n"
+    },
+    {
+      "sha": "90b078aaece4dd7d0f58843d0854111fc373f9d1",
+      "date": "2016-05-18T15:05:58-05:00",
+      "author": "Vinayak Menon",
+      "email": "vviswana@gmail.com",
+      "message": "Adding initial controller\n"
+    },
+    {
+      "sha": "a77b01c1e58580abf3ad530a385fbcf28258b3d1",
+      "date": "2016-05-17T23:10:03-05:00",
+      "author": "Vinayak Menon",
+      "email": "vviswana@gmail.com",
+      "message": "Adding gradle file\n"
+    },
+    {
+      "sha": "1f82e32bcad125547db80ec3348565d98e3c577d",
+      "date": "2016-05-18T03:30:17Z",
+      "author": "Vinayak Menon",
+      "email": "vviswana@gmail.com",
+      "message": "README.md edited online with Bitbucket"
+    }
+  ],
+  "commit_sha": "2ced526f8d208bf3368d55e830fed3f001090f3e",
+  "extracted_at": "2026-10-05T18:41:50.887086+00:00"
+}

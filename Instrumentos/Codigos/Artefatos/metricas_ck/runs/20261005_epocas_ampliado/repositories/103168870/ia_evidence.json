@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "c08063e05ad29d31391eb9e690c1dd7df7bb8396",
+      "date": "2023-10-28T23:15:08+02:00",
+      "author": "Oleg Nenashev",
+      "email": "o.v.nenashev@gmail.com",
+      "message": "Merge pull request #2 from DanPerovich/patch-1\n\nUpdate README.md"
+    },
+    {
+      "sha": "8448e8e700683169549e88483e7194d644f7fb24",
+      "date": "2023-10-28T23:14:47+02:00",
+      "author": "Oleg Nenashev",
+      "email": "o.v.nenashev@gmail.com",
+      "message": "Merge pull request #3 from DanPerovich/patch-2\n\nUpdate application.yml"
+    },
+    {
+      "sha": "ab02208d5ddddbf5f42b2796b361fc6debb56f04",
+      "date": "2023-10-24T19:34:32+01:00",
+      "author": "Dan Perovich",
+      "email": "6865659+DanPerovich@users.noreply.github.com",
+      "message": "Update application.yml\n\nupdated mocklab.io hostnames to wiremockapi.cloud"
+    },
+    {
+      "sha": "93e1aeeddc299530f342b63f7b93469763593928",
+      "date": "2023-10-24T19:30:53+01:00",
+      "author": "Dan Perovich",
+      "email": "6865659+DanPerovich@users.noreply.github.com",
+      "message": "Update README.md\n\nUpdated localhost link to proper port and made changes to reflect rebrand."
+    },
+    {
+      "sha": "edd8406f650c68c891d66c3c0f701ae7f54eb36c",
+      "date": "2022-03-28T10:21:00+01:00",
+      "author": "Tom Akehurst",
+      "email": "t.m.akehurst@gmail.com",
+      "message": "Made config parameter for base URL more suitably named\n"
+    },
+    {
+      "sha": "66972093bec9272cb7b32886e26a94e6664db84c",
+      "date": "2022-03-10T11:39:46Z",
+      "author": "Tom Akehurst",
+      "email": "t.m.akehurst@gmail.com",
+      "message": "Updated dependencies and changed app port number to avoid conflicts with Studio\n"
+    },
+    {
+      "sha": "20a3f472ac2229e54955b29ad9d9d69e8bfe6148",
+      "date": "2020-03-10T12:14:39Z",
+      "author": "Tom Akehurst",
+      "email": "tom@wiremock.org",
+      "message": "Minor tweaks to OAuth2 WireMock login test\n"
+    },
+    {
+      "sha": "94266ce19c75645a49749bed8a0d2bfa6ebb7137",
+      "date": "2020-03-10T11:45:25Z",
+      "author": "Tom Akehurst",
+      "email": "tom@wiremock.org",
+      "message": "Added a WireMock OAuth2 login test\n"
+    },
+    {
+      "sha": "746cabfd3a8b67c451db039ce7720a8794a0929b",
+      "date": "2020-03-05T15:14:18Z",
+      "author": "Tom Akehurst",
+      "email": "tom@wiremock.org",
+      "message": "Changed OAuth login demo flow to a toggle between real and mock Google login\n"
+    },
+    {
+      "sha": "72431c6dd5cb1f1b873bb548169174e319715b54",
+      "date": "2020-03-05T13:57:38Z",
+      "author": "Tom Akehurst",
+      "email": "tom@wiremock.org",
+      "message": "Redirect to /user after login instead of root\n"
+    },
+    {
+      "sha": "6e0543610e9bcde97cd1bcea2ae6eb2b8f2cd028",
+      "date": "2020-03-03T17:21:44Z",
+      "author": "Tom Akehurst",
+      "email": "tom@wiremock.org",
+      "message": "Removed APP_ENV requirement\n"
+    },
+    {
+      "sha": "2dc88f0a2cf733d960aaebb164e1126744f89b03",
+      "date": "2020-03-03T17:12:37Z",
+      "author": "Tom Akehurst",
+      "email": "tom@wiremock.org",
+      "message": "Removed bad link and set logout success URL to /login\n"
+    },
+    {
+      "sha": "5a2c7e3fd3b04796a8e22d31212f80af92febdec",
+      "date": "2020-03-03T15:40:11Z",
+      "author": "Tom Akehurst",
+      "email": "tom@wiremock.org",
+      "message": "Fixed ignored buildSrc files\n"
+    },
+    {
+      "sha": "e1d6e6243a1a8ae876ddcdd4b62f75b4322c4663",
+      "date": "2020-03-03T15:25:39Z",
+      "author": "Tom Akehurst",
+      "email": "tom@wiremock.org",
+      "message": "Skip tests in Circle build\n"
+    },
+    {
+      "sha": "05d43ba956c56acc352500375ccb2e0ddfc35fa5",
+      "date": "2020-03-03T15:21:36Z",
+      "author": "Tom Akehurst",
+      "email": "tom@wiremock.org",
+      "message": "Added a CircleCI config\n"
+    },
+    {
+      "sha": "beecdee0e59d242125a23159b969b0bcad128625",
+      "date": "2020-03-03T14:35:36Z",
+      "author": "Tom Akehurst",
+      "email": "tom@wiremock.org",
+      "message": "Switched to the oauth domain for the OAuth2 example configs\n"
+    },
+    {
+      "sha": "43b83814bca0cd95d0e98d3acf98cdaeb326d838",
+      "date": "2020-03-03T11:34:16Z",
+      "author": "Tom Akehurst",
+      "email": "tom@wiremock.org",
+      "message": "Restored the to do list demo\n"
+    },
+    {
+      "sha": "de592a5fc683dba33592298b77bd519f1e1ff773",
+      "date": "2020-03-03T11:22:26Z",
+      "author": "Tom Akehurst",
+      "email": "tom@wiremock.org",
+      "message": "Made pages a bit more mobile friendly\n"
+    },
+    {
+      "sha": "59310cc5d1e5da2e904681ef06c69de57080d0d6",
+      "date": "2020-03-02T17:24:38Z",
+      "author": "Tom Akehurst",
+      "email": "tom@wiremock.org",
+      "message": "More copy and style tweaks\n"
+    },
+    {
+      "sha": "3effc018bcb6c1341042f0154e4119552cfa2641",
+      "date": "2020-02-28T11:56:23Z",
+      "author": "Tom Akehurst",
+      "email": "tom@wiremock.org",
+      "message": "More styling and copy tweaks\n"
+    },
+    {
+      "sha": "9729f7e94ac553ebdedd3be5a2b450a4d40d7a22",
+      "date": "2020-02-27T16:03:02Z",
+      "author": "Tom Akehurst",
+      "email": "tom@wiremock.org",
+      "message": "More styling\n"
+    },
+    {
+      "sha": "2264b351439be9ce1be36eb313d8b7aacff988bd",
+      "date": "2020-02-27T14:54:28Z",
+      "author": "Tom Akehurst",
+      "email": "tom@wiremock.org",
+      "message": "Added Spring hot reload. Added layout and basic styling.\n"
+    },
+    {
+      "sha": "246eb28dd8342b91a098c29cf1a09346b7e2aa1e",
+      "date": "2020-02-26T19:17:36Z",
+      "author": "Tom Akehurst",
+      "email": "tom@wiremock.org",
+      "message": "Added working but not very styled OAuth2/OIDC demo\n"
+    },
+    {
+      "sha": "a735456967bd9c3ebc5c956d1a203ba7c59c6113",
+      "date": "2018-06-06T14:45:25+01:00",
+      "author": "Tom Akehurst",
+      "email": "t.m.akehurst@googlemail.com",
+      "message": "Added ability to specify an amount when performing a Paypal payment\n"
+    },
+    {
+      "sha": "43550dbb21ee1360f43eca35d60c91436d37c78f",
+      "date": "2018-06-04T10:59:42+01:00",
+      "author": "Tom Akehurst",
+      "email": "t.m.akehurst@googlemail.com",
+      "message": "Switched to mock API (from Paypal sandbox)\n"
+    },
+    {
+      "sha": "223b55b97a9aca05ad8c3ce9ee211d95abbeabee",
+      "date": "2018-04-15T20:26:00+01:00",
+      "author": "Tom Akehurst",
+      "email": "t.m.akehurst@googlemail.com",
+      "message": "Added beginnings of Paypal example via MockLab\n"
+    },
+    {
+      "sha": "e5b28e4f730ea97ed45c840df8e3be93cb093dbb",
+      "date": "2018-02-25T17:31:20Z",
+      "author": "Tom Akehurst",
+      "email": "t.m.akehurst@googlemail.com",
+      "message": "Fixed configuration problem (timeout not being passed from props). Added notes.\n"
+    },
+    {
+      "sha": "2000ec686ba46d920d0869b7935d98f7306b2f3f",
+      "date": "2018-02-23T20:27:10Z",
+      "author": "Tom Akehurst",
+      "email": "t.m.akehurst@googlemail.com",
+      "message": "Added some readability aids to the test case\n"
+    },
+    {
+      "sha": "745d1d06910eb27904aebe99de930302a2a0dfd3",
+      "date": "2018-02-23T20:21:57Z",
+      "author": "Tom Akehurst",
+      "email": "t.m.akehurst@googlemail.com",
+      "message": "Made test use Chromedriver. Added socket timeout setting. Improved error messaging.\n"
+    },
+    {
+      "sha": "029c3da5e1bb4c143d5a5d35dee13a3669cb048b",
+      "date": "2017-09-13T09:39:44+01:00",
+      "author": "Tom Akehurst",
+      "email": "t.m.akehurst@googlemail.com",
+      "message": "Send mocklab-demo-app-1 as the UA string so that this can be identified in analytics\n"
+    }
+  ],
+  "commit_sha": "c08063e05ad29d31391eb9e690c1dd7df7bb8396",
+  "extracted_at": "2026-10-05T18:22:33.341495+00:00"
+}

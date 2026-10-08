@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "77a2761952871c0638516c09d87769880788fb42",
+      "date": "2026-05-07T15:05:32+02:00",
+      "author": "menyhartsamuel-wise",
+      "email": "samuel.menyhart@wise.com",
+      "message": "Bump idempotence4j version to 2.0.0 (#56)"
+    },
+    {
+      "sha": "946c81109b3a21b92ba010c6eadd2912ba768878",
+      "date": "2026-01-22T13:07:39Z",
+      "author": "Denis Lebedev",
+      "email": "d2.lebedev@gmail.com",
+      "message": "chore: modernize build tooling + fix MariaDB Lock Exception regression (#54)\n\n"
+    },
+    {
+      "sha": "4e30ba00d5c4dce63dfd5f6faef1e23e3d6343a2",
+      "date": "2022-06-08T17:33:01+01:00",
+      "author": "Petro Turovskyy",
+      "email": "39484134+pturovsk@users.noreply.github.com",
+      "message": "Bump idempotence4j version to 1.7.2 (#48)\n\n"
+    },
+    {
+      "sha": "bf8d9607aec8d53059555031303496598e4d3db3",
+      "date": "2022-06-08T12:27:17-04:00",
+      "author": "Antonio Lopez",
+      "email": "58680519+antonio-lopez-tw@users.noreply.github.com",
+      "message": "Merge pull request #47 from transferwise/db_scheduler_update\n\nBump db-scheduler version to 11.0"
+    },
+    {
+      "sha": "80dc670c76d7baacfe3f324673f7add4e50bf6a8",
+      "date": "2022-06-08T17:23:18+01:00",
+      "author": "Petro Turovskyy",
+      "email": "petro.turovskyy@transferwise.com",
+      "message": "Bump db-scheduler version to 11.0\n"
+    },
+    {
+      "sha": "d870c0cd131ba5c729e3a059ff1dc8a729ca5acc",
+      "date": "2022-05-03T14:42:18+01:00",
+      "author": "Petro Turovskyy",
+      "email": "39484134+pturovsk@users.noreply.github.com",
+      "message": "Bump jackson-datatype version to close vulnerability (#45)\n\n"
+    },
+    {
+      "sha": "bd686d803382d7d759bfe86b1e89ce12648ae065",
+      "date": "2022-05-03T13:03:40+03:00",
+      "author": "Ivan Parker",
+      "email": "45566309+ivanparker@users.noreply.github.com",
+      "message": "Bump cron-utils to fix vulnerability (#44)\n\n"
+    },
+    {
+      "sha": "ad92396439e57bb64321a1dbabc85b991e879838",
+      "date": "2022-04-19T15:02:19+01:00",
+      "author": "Phil Dobson",
+      "email": "philip.dobson@transferwise.com",
+      "message": "v1.7.0 - Enable action deletion by type and client (#42)\n\n* Make batchSize non-nullable on deleteOlderThan method\n\n* Begin returning results of deletion queries\n\n* Rename SQL variable name\n\n* Improve deleteOlderThan efficiency on mariadb\n\n* Add ability to delete by type and client\n\n* Release 1.7.0"
+    },
+    {
+      "sha": "aef65867913ccf61057bdfbf16e9cbadf2d1b303",
+      "date": "2022-04-12T16:27:12+01:00",
+      "author": "Petro Turovskyy",
+      "email": "39484134+pturovsk@users.noreply.github.com",
+      "message": "Build configuration and dependencies update (#41)\n\n* Include javadoc and sources on publishing\n\n* Update gradle & spock"
+    },
+    {
+      "sha": "abddf64c1fda083a34cd63e08da511531986044f",
+      "date": "2022-04-12T14:16:08+01:00",
+      "author": "Petro Turovskyy",
+      "email": "39484134+pturovsk@users.noreply.github.com",
+      "message": "Remove dynamic snapshot versioning (#40)\n\n"
+    },
+    {
+      "sha": "fa58350ce431ef45b00de141cb0cfbe5b1fd01f1",
+      "date": "2022-04-11T15:42:47+01:00",
+      "author": "Petro Turovskyy",
+      "email": "39484134+pturovsk@users.noreply.github.com",
+      "message": "Fix GitHub Package maven publish configuration (#39)\n\n"
+    },
+    {
+      "sha": "0d39511f4b0d83ab8b425db1c43ae251222a17b8",
+      "date": "2022-04-11T14:37:24+01:00",
+      "author": "Dave King",
+      "email": "66261692+daveking-tw@users.noreply.github.com",
+      "message": "Expose deleteByIds method in ActionRepository (#37)\n\n"
+    },
+    {
+      "sha": "c5d216772bbd5c95531f73325b719ed172322dbe",
+      "date": "2022-04-11T14:01:15+01:00",
+      "author": "Petro Turovskyy",
+      "email": "39484134+pturovsk@users.noreply.github.com",
+      "message": "Migrate from circleci to GitHub Actions (#38)\n\n* Migrate from circleci to GitHub Actions\n\n* Remove circle configuration\n\n* Add maven package signing"
+    },
+    {
+      "sha": "373c591c479dbdf20f07d3bf92be562e50c8085f",
+      "date": "2021-09-13T14:33:34+03:00",
+      "author": "Petro Turovskyy",
+      "email": "39484134+pturovsk@users.noreply.github.com",
+      "message": "Enforce using gradle wrapper in GA build (#36)\n\n"
+    },
+    {
+      "sha": "5eab5182ab527c11859cdb2a272a1317b49d9448",
+      "date": "2021-09-09T17:02:33+01:00",
+      "author": "Petro Turovskyy",
+      "email": "39484134+pturovsk@users.noreply.github.com",
+      "message": "Fix EphemeralIdempotenceService retry lambda invokation (#35)\n\n"
+    },
+    {
+      "sha": "6e9e73f85fabaa7293de565246e24b3899fe0670",
+      "date": "2021-02-10T14:54:12+02:00",
+      "author": "Vijayendra Nigam (VJ)",
+      "email": "44022673+vijayendra-nigam@users.noreply.github.com",
+      "message": "Merge pull request #33 from transferwise/fix-MariaDbAutoConfiguration-props\n\nFix MariaDbAutoConfiguration props"
+    },
+    {
+      "sha": "d0ba10101eafc292a0ed7c08b0e57fb2cd20c9ad",
+      "date": "2021-02-10T14:39:41+02:00",
+      "author": "Vijayendra Nigam",
+      "email": "vijayendra.nigam@transferwise.com",
+      "message": "Fix MariaDbAutoConfiguration props\n"
+    },
+    {
+      "sha": "0e5ffb20cc7b2cf41c4abe45694dacb1bcbaf00b",
+      "date": "2020-10-22T09:42:22+01:00",
+      "author": "Petro Turovskyy",
+      "email": "39484134+pturovsk@users.noreply.github.com",
+      "message": "Deleting gradle release plugin (#31)\n\n"
+    },
+    {
+      "sha": "db88c2afd7d676b9877307bf709684b9d454ddc5",
+      "date": "2020-10-21T16:15:22+01:00",
+      "author": "Petro Turovskyy",
+      "email": "39484134+pturovsk@users.noreply.github.com",
+      "message": "Update gradle-publish.yml"
+    },
+    {
+      "sha": "88121b7ad79ea8a9066351512db21207dfb63485",
+      "date": "2020-10-21T16:06:18+01:00",
+      "author": "Petro Turovskyy",
+      "email": "39484134+pturovsk@users.noreply.github.com",
+      "message": "Create gradle-publish.yml"
+    },
+    {
+      "sha": "25b7c7a96d94237a55e24a9b7317e996368c884e",
+      "date": "2020-10-21T16:04:57+01:00",
+      "author": "Petro Turovskyy",
+      "email": "39484134+pturovsk@users.noreply.github.com",
+      "message": "Enable maven publishing to GitHubPackages (#30)\n\n"
+    },
+    {
+      "sha": "4b571493301223a5bd6efb5f62793a942f28d5e1",
+      "date": "2020-10-21T14:13:15+01:00",
+      "author": "Petro Turovskyy",
+      "email": "39484134+pturovsk@users.noreply.github.com",
+      "message": "Configure build repositories (#29)\n\n"
+    },
+    {
+      "sha": "9ea23c4c991936dbf5b93789c7a8dca7f2a9074a",
+      "date": "2020-10-21T11:10:31+01:00",
+      "author": "Petro Turovskyy",
+      "email": "39484134+pturovsk@users.noreply.github.com",
+      "message": "Fix artifactory url (#28)\n\n"
+    },
+    {
+      "sha": "22ea15b12cb627d52585d11697ff73a4c1c3d3c1",
+      "date": "2020-10-21T10:46:19+01:00",
+      "author": "Petro Turovskyy",
+      "email": "39484134+pturovsk@users.noreply.github.com",
+      "message": "Add license, contribution guidelines and code of conduct (#27)\n\n"
+    },
+    {
+      "sha": "19b28c2eb976a21e530fd7e1f7f983d19ab289b9",
+      "date": "2020-10-20T14:32:18+01:00",
+      "author": "Petro Turovskyy",
+      "email": "39484134+pturovsk@users.noreply.github.com",
+      "message": "Extract maven publication logic (#26)\n\n"
+    },
+    {
+      "sha": "0679bb79c8a9900f917b5e509313fad6f2971ed4",
+      "date": "2020-10-20T11:25:45+01:00",
+      "author": "Petro Turovskyy",
+      "email": "39484134+pturovsk@users.noreply.github.com",
+      "message": "Docker compose (#25)\n\n"
+    },
+    {
+      "sha": "29acf8febd0ba48d709ebb99e3c995145f0f7779",
+      "date": "2020-10-19T19:25:39+01:00",
+      "author": "Petro Turovskyy",
+      "email": "39484134+pturovsk@users.noreply.github.com",
+      "message": "Adding idempotence4j-benchmarks (#24)\n\n"
+    },
+    {
+      "sha": "9204a8b92be99637441f8d8f7407a16d8cc71211",
+      "date": "2020-09-28T13:54:53+01:00",
+      "author": "Petro Turovskyy",
+      "email": "39484134+pturovsk@users.noreply.github.com",
+      "message": "Add MariaDb module (#23)\n\n"
+    },
+    {
+      "sha": "28f19b161dd477846d6b3e1d172fed977fdee72b",
+      "date": "2020-09-15T17:34:33+01:00",
+      "author": "Petro Turovskyy",
+      "email": "39484134+pturovsk@users.noreply.github.com",
+      "message": "Add support for a idempotent action retention (#22)\n\n"
+    },
+    {
+      "sha": "547fc6e71403001d3769644b30f06bdb80e2ca09",
+      "date": "2020-08-14T13:58:37+01:00",
+      "author": "Petro Turovskyy",
+      "email": "39484134+pturovsk@users.noreply.github.com",
+      "message": "Bump version in README"
+    }
+  ],
+  "commit_sha": "77a2761952871c0638516c09d87769880788fb42",
+  "extracted_at": "2026-10-05T18:21:26.368135+00:00"
+}

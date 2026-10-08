@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "a6566d7a90364f8cb0e82ec013720b644926dffe",
+      "date": "2026-02-22T14:33:55+01:00",
+      "author": "Heiko Scherrer",
+      "email": "scherrer@openwms.org",
+      "message": "Upgrade parent 27.7.1 and added new profile for OTLP\n"
+    },
+    {
+      "sha": "58267ee938312cbbe5fb96d9ec09b62327a2a6fe",
+      "date": "2026-02-16T23:13:56+01:00",
+      "author": "Heiko Scherrer",
+      "email": "scherrer@openwms.org",
+      "message": "sonar needs to have a running rabbit\n"
+    },
+    {
+      "sha": "97b82fa7b494b5d0aabae14c4e3530f92b38e3f6",
+      "date": "2026-02-16T23:10:20+01:00",
+      "author": "Heiko Scherrer",
+      "email": "scherrer@openwms.org",
+      "message": "Aligned ci build\n"
+    },
+    {
+      "sha": "a570f2e42755f60b80d373d27ffecc91d51e945a",
+      "date": "2026-02-16T23:04:54+01:00",
+      "author": "Heiko Scherrer",
+      "email": "scherrer@openwms.org",
+      "message": "Aligned ci build\n"
+    },
+    {
+      "sha": "66ebf33c94140c564de39a767df9c77f51eae969",
+      "date": "2026-02-16T23:00:40+01:00",
+      "author": "Heiko Scherrer",
+      "email": "scherrer@openwms.org",
+      "message": "#128 CI should run continuously\n"
+    },
+    {
+      "sha": "6155ab60f242903e8722ba647c2abd2a5fc6938c",
+      "date": "2026-02-16T22:58:04+01:00",
+      "author": "Heiko Scherrer",
+      "email": "scherrer@openwms.org",
+      "message": "#128 changed the PATCH of a LocationGroup to a PUT\n"
+    },
+    {
+      "sha": "b9c6742a83e42a228771fc19ce884071ba22689b",
+      "date": "2026-01-20T22:52:39+01:00",
+      "author": "Heiko Scherrer",
+      "email": "scherrer@openwms.org",
+      "message": "Other improvements and not related to the AMQP renaming\n"
+    },
+    {
+      "sha": "e89eff5d6d0364bb8836bc9350a1cae302f74a00",
+      "date": "2026-01-20T22:34:02+01:00",
+      "author": "Heiko Scherrer",
+      "email": "scherrer@openwms.org",
+      "message": "#127 OpenAPI generation\n"
+    },
+    {
+      "sha": "dbf723d170126a2f0607b935d302c3d3f52b7e13",
+      "date": "2026-01-20T21:10:19+01:00",
+      "author": "Heiko Scherrer",
+      "email": "scherrer@openwms.org",
+      "message": "Simplified workflows and merged them. Trigger is now part of the build worklflow not separate\n"
+    },
+    {
+      "sha": "e1b334b704940b615dd73ef125a2edb166f047f4",
+      "date": "2026-01-20T20:51:50+01:00",
+      "author": "Heiko Scherrer",
+      "email": "scherrer@openwms.org",
+      "message": "Simplified workflows and merged them. Trigger is now part of the build worklflow not separate\n"
+    },
+    {
+      "sha": "080e41f4367c09e4fc44f669785b607359ac8720",
+      "date": "2026-01-20T20:35:45+01:00",
+      "author": "Heiko Scherrer",
+      "email": "scherrer@openwms.org",
+      "message": "Remove CVE analysis and only trigger manually, because it breaks with rate-limiting errors\n"
+    },
+    {
+      "sha": "def37eb4ea3018a88538f9cf80ab13d9922d68e6",
+      "date": "2026-01-20T13:45:06+01:00",
+      "author": "Heiko Scherrer",
+      "email": "scherrer@openwms.org",
+      "message": "Added CVE analysis and split up build_job\n"
+    },
+    {
+      "sha": "268210a0ed504b2a97a5100a0ee62a064996c665",
+      "date": "2025-09-11T15:47:03+02:00",
+      "author": "Heiko Scherrer",
+      "email": "scherrer@openwms.org",
+      "message": "#125 Upgrade to SpringBoot 3.5.5 and new Central deployment strategy\n"
+    },
+    {
+      "sha": "4c424a3f3355f10bbe5d93ce949a9ff6e7701b1f",
+      "date": "2025-09-11T15:20:29+02:00",
+      "author": "Heiko Scherrer",
+      "email": "scherrer@openwms.org",
+      "message": "#125 Upgrade to SpringBoot 3.5.5 and new Central deployment strategy\n"
+    },
+    {
+      "sha": "24468823d18ab611e13fe417cc57ded9e4e4efd8",
+      "date": "2025-06-06T22:30:15+02:00",
+      "author": "Heiko Scherrer",
+      "email": "scherrer@openwms.org",
+      "message": "Removed stacktrace output\n"
+    },
+    {
+      "sha": "950288631c3330c9fc522853856f7b1833632dfb",
+      "date": "2025-05-25T11:25:39+02:00",
+      "author": "Heiko Scherrer",
+      "email": "scherrer@openwms.org",
+      "message": "Only trigger downstream builds when the docs job succeeds\n"
+    },
+    {
+      "sha": "5c5d8b2ab022f474b2543396b87a3cb40334cb15",
+      "date": "2025-05-21T07:44:59+02:00",
+      "author": "Heiko Scherrer",
+      "email": "scherrer@openwms.org",
+      "message": "#122 Upgraded to parent 27.3\n"
+    },
+    {
+      "sha": "87115dd9bc57b1f442d614568b8030a0c16383e8",
+      "date": "2025-05-18T22:35:45+02:00",
+      "author": "Heiko Scherrer",
+      "email": "scherrer@openwms.org",
+      "message": "minor changes\n"
+    },
+    {
+      "sha": "95885b29e997a215d3905d90c59f8343b5948587",
+      "date": "2025-03-25T23:58:45+01:00",
+      "author": "Heiko Scherrer",
+      "email": "scherrer@openwms.org",
+      "message": "Updated GitHub cache action plugin\n"
+    },
+    {
+      "sha": "cddada9bda894c571cb6dfac11552119f617c59e",
+      "date": "2025-03-17T17:44:49+01:00",
+      "author": "Heiko Scherrer",
+      "email": "scherrer@openwms.org",
+      "message": "Fixed site link\n"
+    },
+    {
+      "sha": "ae4c84bbd7f24d16fe57f2fdf3f9761c712cc497",
+      "date": "2025-03-11T23:56:04-04:00",
+      "author": "Heiko Scherrer",
+      "email": "scherrer@openwms.org",
+      "message": "polishing\n"
+    },
+    {
+      "sha": "ddfe051439f95ab83f71baa02620e1d96b6e14d7",
+      "date": "2025-03-05T09:17:42+01:00",
+      "author": "Heiko Scherrer",
+      "email": "scherrer@openwms.org",
+      "message": "Fixing CI build and updating action versions\n"
+    },
+    {
+      "sha": "704f622efe3dbd0120026020c69e3589706b0363",
+      "date": "2025-03-04T22:20:29+01:00",
+      "author": "Heiko Scherrer",
+      "email": "scherrer@openwms.org",
+      "message": "Updated arch unit library\n"
+    },
+    {
+      "sha": "e0f38808d714b2dcde23a38e63d51c5d22ca4376",
+      "date": "2025-02-12T17:05:08+01:00",
+      "author": "Heiko Scherrer",
+      "email": "scherrer@openwms.org",
+      "message": "Schemaspy test.arch patch upgrade\n"
+    },
+    {
+      "sha": "3f56882ec0989959696da6703f0e2a59b12d6095",
+      "date": "2025-02-12T16:37:41+01:00",
+      "author": "Heiko Scherrer",
+      "email": "scherrer@openwms.org",
+      "message": "Working on CI build fix\n"
+    },
+    {
+      "sha": "767e20a429402fcd7a26055fc00d644734dd600c",
+      "date": "2025-02-05T21:41:06+01:00",
+      "author": "Heiko Scherrer",
+      "email": "scherrer@openwms.org",
+      "message": "added config param\n"
+    },
+    {
+      "sha": "d4d5084234e5d23e194dd0f47ccc183a10ce5ea4",
+      "date": "2025-02-02T20:55:28+01:00",
+      "author": "Heiko Scherrer",
+      "email": "scherrer@openwms.org",
+      "message": "Moved to next development version\n"
+    },
+    {
+      "sha": "5b001a024d6596c1dc4700ab3b0435d7bae6161f",
+      "date": "2025-02-02T20:19:55+01:00",
+      "author": "Heiko Scherrer",
+      "email": "scherrer@openwms.org",
+      "message": "Release version 3.0.0\n"
+    },
+    {
+      "sha": "9193b9d57b3902587f033f8c64638788950be950",
+      "date": "2025-02-02T20:16:44+01:00",
+      "author": "Heiko Scherrer",
+      "email": "scherrer@openwms.org",
+      "message": "Removed unused sonar.properties file\n"
+    },
+    {
+      "sha": "9710a007baecd21c0793d7caf07172de8870c39b",
+      "date": "2025-02-02T20:06:59+01:00",
+      "author": "Heiko Scherrer",
+      "email": "scherrer@openwms.org",
+      "message": "Updated to parent 27.2 and removed SNAPSHOT versions to prepare release\n"
+    }
+  ],
+  "commit_sha": "a6566d7a90364f8cb0e82ec013720b644926dffe",
+  "extracted_at": "2026-10-05T18:32:28.414240+00:00"
+}

@@ -1,0 +1,552 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "3.3.2;4.0.2",
+  "spring_boot_major": "multiple",
+  "java_versions_declared": "21;25",
+  "build_evidence": [
+    {
+      "file": "automation-ui/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "automation-ui/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "automation-ui/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "automation-ui/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "automation-ui/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backoffice-bff/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "backoffice-bff/pom.xml",
+      "artifact": "spring-boot-starter-security-oauth2-client"
+    },
+    {
+      "file": "backoffice-bff/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "backoffice-bff/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "cart/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "cart/pom.xml",
+      "artifact": "spring-boot-starter-security-oauth2-resource-server"
+    },
+    {
+      "file": "cart/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "cart/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "cart/pom.xml",
+      "artifact": "spring-boot-starter-liquibase"
+    },
+    {
+      "file": "cart/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "cart/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "common-library/pom.xml",
+      "artifact": "spring-boot-starter-security-oauth2-authorization-server"
+    },
+    {
+      "file": "common-library/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "common-library/pom.xml",
+      "artifact": "spring-boot-starter-aspectj"
+    },
+    {
+      "file": "common-library/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "common-library/pom.xml",
+      "artifact": "spring-boot-starter-kafka"
+    },
+    {
+      "file": "customer/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "customer/pom.xml",
+      "artifact": "spring-boot-starter-security-oauth2-resource-server"
+    },
+    {
+      "file": "customer/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "customer/pom.xml",
+      "artifact": "spring-boot-starter-liquibase"
+    },
+    {
+      "file": "customer/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "customer/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "customer/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "inventory/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "inventory/pom.xml",
+      "artifact": "spring-boot-starter-security-oauth2-resource-server"
+    },
+    {
+      "file": "inventory/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "inventory/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "inventory/pom.xml",
+      "artifact": "spring-boot-starter-aspectj"
+    },
+    {
+      "file": "inventory/pom.xml",
+      "artifact": "spring-boot-starter-liquibase"
+    },
+    {
+      "file": "inventory/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "location/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "location/pom.xml",
+      "artifact": "spring-boot-starter-security-oauth2-resource-server"
+    },
+    {
+      "file": "location/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "location/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "location/pom.xml",
+      "artifact": "spring-boot-starter-aspectj"
+    },
+    {
+      "file": "location/pom.xml",
+      "artifact": "spring-boot-starter-liquibase"
+    },
+    {
+      "file": "location/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "media/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "media/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "media/pom.xml",
+      "artifact": "spring-boot-starter-security-oauth2-resource-server"
+    },
+    {
+      "file": "media/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "media/pom.xml",
+      "artifact": "spring-boot-starter-liquibase"
+    },
+    {
+      "file": "media/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "order/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "order/pom.xml",
+      "artifact": "spring-boot-starter-security-oauth2-resource-server"
+    },
+    {
+      "file": "order/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "order/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "order/pom.xml",
+      "artifact": "spring-boot-starter-aspectj"
+    },
+    {
+      "file": "order/pom.xml",
+      "artifact": "spring-boot-starter-liquibase"
+    },
+    {
+      "file": "order/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "payment-paypal/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "payment-paypal/pom.xml",
+      "artifact": "spring-boot-starter-security-oauth2-resource-server"
+    },
+    {
+      "file": "payment-paypal/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "payment-paypal/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "payment-paypal/pom.xml",
+      "artifact": "spring-boot-starter-aspectj"
+    },
+    {
+      "file": "payment-paypal/pom.xml",
+      "artifact": "spring-boot-starter-integration"
+    },
+    {
+      "file": "payment/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "payment/pom.xml",
+      "artifact": "spring-boot-starter-security-oauth2-resource-server"
+    },
+    {
+      "file": "payment/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "payment/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "payment/pom.xml",
+      "artifact": "spring-boot-starter-aspectj"
+    },
+    {
+      "file": "payment/pom.xml",
+      "artifact": "spring-boot-starter-liquibase"
+    },
+    {
+      "file": "payment/pom.xml",
+      "artifact": "spring-boot-starter-integration"
+    },
+    {
+      "file": "payment/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-jackson"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-restclient"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-jackson-test"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-restclient-test"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-testcontainers"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "product/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "product/pom.xml",
+      "artifact": "spring-boot-starter-security-oauth2-resource-server"
+    },
+    {
+      "file": "product/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "product/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "product/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "product/pom.xml",
+      "artifact": "spring-boot-starter-aspectj"
+    },
+    {
+      "file": "product/pom.xml",
+      "artifact": "spring-boot-starter-liquibase"
+    },
+    {
+      "file": "product/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "promotion/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "promotion/pom.xml",
+      "artifact": "spring-boot-starter-security-oauth2-resource-server"
+    },
+    {
+      "file": "promotion/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "promotion/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "promotion/pom.xml",
+      "artifact": "spring-boot-starter-aspectj"
+    },
+    {
+      "file": "promotion/pom.xml",
+      "artifact": "spring-boot-starter-liquibase"
+    },
+    {
+      "file": "promotion/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "rating/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "rating/pom.xml",
+      "artifact": "spring-boot-starter-security-oauth2-resource-server"
+    },
+    {
+      "file": "rating/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "rating/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "rating/pom.xml",
+      "artifact": "spring-boot-starter-aspectj"
+    },
+    {
+      "file": "rating/pom.xml",
+      "artifact": "spring-boot-starter-liquibase"
+    },
+    {
+      "file": "rating/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "recommendation/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "recommendation/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "recommendation/pom.xml",
+      "artifact": "spring-boot-starter-kafka"
+    },
+    {
+      "file": "recommendation/pom.xml",
+      "artifact": "spring-boot-starter-security-oauth2-resource-server"
+    },
+    {
+      "file": "recommendation/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "sampledata/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "sampledata/pom.xml",
+      "artifact": "spring-boot-starter-security-oauth2-resource-server"
+    },
+    {
+      "file": "sampledata/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "sampledata/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "sampledata/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "search/pom.xml",
+      "artifact": "spring-boot-starter-kafka"
+    },
+    {
+      "file": "search/pom.xml",
+      "artifact": "spring-boot-starter-data-elasticsearch"
+    },
+    {
+      "file": "search/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "search/pom.xml",
+      "artifact": "spring-boot-starter-security-oauth2-resource-server"
+    },
+    {
+      "file": "search/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "search/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "storefront-bff/pom.xml",
+      "artifact": "spring-boot-starter-security-oauth2-client"
+    },
+    {
+      "file": "storefront-bff/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "storefront-bff/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "storefront-bff/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tax/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "tax/pom.xml",
+      "artifact": "spring-boot-starter-security-oauth2-resource-server"
+    },
+    {
+      "file": "tax/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "tax/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "tax/pom.xml",
+      "artifact": "spring-boot-starter-aspectj"
+    },
+    {
+      "file": "tax/pom.xml",
+      "artifact": "spring-boot-starter-liquibase"
+    },
+    {
+      "file": "tax/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "webhook/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "webhook/pom.xml",
+      "artifact": "spring-boot-starter-security-oauth2-resource-server"
+    },
+    {
+      "file": "webhook/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "webhook/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "webhook/pom.xml",
+      "artifact": "spring-boot-starter-aspectj"
+    },
+    {
+      "file": "webhook/pom.xml",
+      "artifact": "spring-boot-starter-kafka"
+    },
+    {
+      "file": "webhook/pom.xml",
+      "artifact": "spring-boot-starter-liquibase"
+    },
+    {
+      "file": "webhook/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

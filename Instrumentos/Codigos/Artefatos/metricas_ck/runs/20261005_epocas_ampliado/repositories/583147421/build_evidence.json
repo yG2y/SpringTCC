@@ -1,0 +1,124 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "2.0.0.RELEASE;2.7.10;2.7.18;2.7.8;3.0.0",
+  "spring_boot_major": "multiple",
+  "java_versions_declared": "11;17",
+  "build_evidence": [
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot"
+    },
+    {
+      "file": "samples/gradle/kotlin-simple-grade-project/build.gradle.kts",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "samples/gradle/multi-module-gradle-project/gradle-multi-module-a/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "samples/gradle/multi-module-gradle-project/gradle-multi-module-b/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "samples/gradle/simple-gradle-project/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "samples/multi-module/multi-module-a/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "samples/multi-module/multi-module-a/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "samples/multi-module/multi-module-a/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "samples/multi-module/multi-module-a/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "samples/multi-module/multi-module-b/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "samples/multi-module/multi-module-b/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "samples/multi-module/multi-module-b/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "samples/multi-module/multi-module-c/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "samples/multi-module/multi-module-c/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "samples/multi-module/multi-module-c/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "samples/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "samples/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "samples/quarkus-spring-boot-single-module/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "samples/single-module/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "samples/single-module/pom.xml",
+      "artifact": "spring-boot-actuator"
+    },
+    {
+      "file": "samples/single-module/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "samples/single-module/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "samples/single-module/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "samples/single-module/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-configuration-property-documenter-core/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-configuration-property-documenter-core/pom.xml",
+      "artifact": "spring-boot"
+    },
+    {
+      "file": "spring-configuration-property-documenter-gradle-plugin/pom.xml",
+      "artifact": "spring-boot"
+    },
+    {
+      "file": "spring-configuration-property-documenter-maven-plugin/pom.xml",
+      "artifact": "spring-boot"
+    }
+  ]
+}

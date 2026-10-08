@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "30e97ff343f020e71140622e63972d422086d8d5",
+      "date": "2026-09-25T14:36:12+02:00",
+      "author": "Joso Zrilić",
+      "email": "59481581+jzrilic@users.noreply.github.com",
+      "message": "Merge pull request #256 from croz-ltd/bugfix_allowNullArgumentsForEncrptionEndpoints\n\nAllow null arguments on encryption endpoints"
+    },
+    {
+      "sha": "b14654e3c7c347ad22bcc188370b78f94c0cfbcd",
+      "date": "2026-05-19T08:30:12+02:00",
+      "author": "agrancaric",
+      "email": "agrancaric@croz.net",
+      "message": "Allow null arguments on encryption endpoints\n"
+    },
+    {
+      "sha": "88f331f08fedfa5c308b51bee48c273300757966",
+      "date": "2026-09-25T13:34:29+02:00",
+      "author": "Joso Zrilić",
+      "email": "59481581+jzrilic@users.noreply.github.com",
+      "message": "Merge pull request #251 from croz-ltd/bugfix_searchOperatorLocaleRoot\n\nAdd missing Locale.ROOT to DefaultSearchOperator"
+    },
+    {
+      "sha": "cb28eb6b75c255a80bd0fb6a0d37be34b1cfab04",
+      "date": "2026-05-14T12:37:44+02:00",
+      "author": "agrancaric",
+      "email": "agrancaric@croz.net",
+      "message": "Add missing Locale.ROOT to DefaultSearchOperator\n"
+    },
+    {
+      "sha": "61d594ef46147fca0e8ea1125584230ac33ac288",
+      "date": "2026-06-30T14:24:35+02:00",
+      "author": "Joso Zrilić",
+      "email": "59481581+jzrilic@users.noreply.github.com",
+      "message": "Merge pull request #262 from croz-ltd/bugfix_keyRegistryConfigurationCacheByLocale\n\nFix caching in DefaultRegistryConfigurationService to also use locale"
+    },
+    {
+      "sha": "052e011322906c70e45ab9d3521b4c8089b182dd",
+      "date": "2026-05-20T13:28:05+02:00",
+      "author": "agrancaric",
+      "email": "agrancaric@croz.net",
+      "message": "Update cache key to use formIdList instead of hashCode to avoid colisions\n"
+    },
+    {
+      "sha": "1639ea57be24de5d0b7faf4ae3153e608a7fa200",
+      "date": "2026-05-20T13:06:41+02:00",
+      "author": "agrancaric",
+      "email": "agrancaric@croz.net",
+      "message": "Fix caching in DefaultRegistryConfigurationService to also use locale\n"
+    },
+    {
+      "sha": "5bc658ad49b86868829ca457c3fa8c603a0e3846",
+      "date": "2026-03-23T11:59:46+01:00",
+      "author": "Joso Zrilić",
+      "email": "59481581+jzrilic@users.noreply.github.com",
+      "message": "Merge pull request #243 from croz-ltd/bugfix_fixFormConfigurationNestedPaths\n\nFix deeply nested paths in form configuration"
+    },
+    {
+      "sha": "cef30ca53b7cdb6f2756f5a5f62b683b73755945",
+      "date": "2026-03-23T10:45:04+01:00",
+      "author": "agrancaric",
+      "email": "agrancaric@croz.net",
+      "message": "Fix deeply nested paths in form configuration\n"
+    },
+    {
+      "sha": "9e5ef0e0a690891bb3feead8671b3634391ecd1b",
+      "date": "2026-03-23T11:52:03+01:00",
+      "author": "Joso Zrilić",
+      "email": "59481581+jzrilic@users.noreply.github.com",
+      "message": "Merge pull request #240 from croz-ltd/feature_moveFieldErrorMessageResolverServiceToApiModule\n\nMove FieldErrorMessageResolverService to nrich-form-configuration-api"
+    },
+    {
+      "sha": "101ae9877fe32257d3cdf942408f20767f808e07",
+      "date": "2025-12-01T09:34:01+01:00",
+      "author": "agrancaric",
+      "email": "agrancaric@croz.net",
+      "message": "Move FieldErrorMessageResolverService to nrich-form-configuration-api module to enable easier overriding\n"
+    },
+    {
+      "sha": "5ca0fda476ac57b7265e79c5c5dcb305cf0c5122",
+      "date": "2026-03-23T10:58:57+01:00",
+      "author": "Joso Zrilić",
+      "email": "59481581+jzrilic@users.noreply.github.com",
+      "message": "Merge pull request #242 from croz-ltd/feature_addSearchOperatorOverrideListToSubqueryConfiguration\n\nAdd searchOperatorOverrideList to subquery configuration"
+    },
+    {
+      "sha": "e796e726d8796c1984ee72f7a137f34acdc217c1",
+      "date": "2025-12-08T10:12:44+01:00",
+      "author": "agrancaric",
+      "email": "agrancaric@croz.net",
+      "message": "Add searchOperatorOverrideList to subquery configuration thus enabling overriding of subquery restrictions\n"
+    },
+    {
+      "sha": "ad686386f1c5a8b746eb60777439f3a5e658dbc4",
+      "date": "2025-11-13T14:27:08+01:00",
+      "author": "Joso Zrilić",
+      "email": "59481581+jzrilic@users.noreply.github.com",
+      "message": "Merge pull request #239 from croz-ltd/feature_loggingServiceEnhancments\n\nFeature logging service enhancments"
+    },
+    {
+      "sha": "8c96ce3bad99d7b28a745e00c8815033a6b4d65d",
+      "date": "2025-11-13T13:51:59+01:00",
+      "author": "Damir Murat",
+      "email": "damir.murat.git@gmail.com",
+      "message": "Polishing README.md\n"
+    },
+    {
+      "sha": "b574f8b59fddf410ead14b97cead21b2e0c6bf76",
+      "date": "2025-11-13T10:45:17+01:00",
+      "author": "Damir Murat",
+      "email": "damir.murat.git@gmail.com",
+      "message": "Update README.md with new formats for FULL and COMPACT logging verbosity levels\n"
+    },
+    {
+      "sha": "053c9e0e8081f058d532f15b1206fb9e6a74bd8e",
+      "date": "2025-11-12T18:25:42+01:00",
+      "author": "Damir Murat",
+      "email": "damir.murat.git@gmail.com",
+      "message": "Proposed changes for the full level exception logging format\n\nThere are also minor changes for the compact format\n"
+    },
+    {
+      "sha": "45bf0e94099f150f48b4781869e16b7186e63b51",
+      "date": "2025-11-12T09:23:40+01:00",
+      "author": "agrancaric",
+      "email": "agrancaric@croz.net",
+      "message": "Add a new method to LoggingService that supports customization of logging and verbosity levels per exception basis\n"
+    },
+    {
+      "sha": "38690eeedec941b455bb2d8e6bb5cd09e406e392",
+      "date": "2025-11-11T13:26:43+01:00",
+      "author": "agrancaric",
+      "email": "agrancaric@croz.net",
+      "message": "Adjust exception logging level full format\n"
+    },
+    {
+      "sha": "52cb53088074d1dc1acb37a4fe037ba6fb6325ba",
+      "date": "2025-11-11T13:25:31+01:00",
+      "author": "agrancaric",
+      "email": "agrancaric@croz.net",
+      "message": "Fix wrong property name in logging module README.MD\n"
+    },
+    {
+      "sha": "1a27207cac92ca738508ecf99c8e1bdcfd388186",
+      "date": "2025-11-13T10:10:55+01:00",
+      "author": "Joso Zrilić",
+      "email": "59481581+jzrilic@users.noreply.github.com",
+      "message": "Merge pull request #236 from croz-ltd/feature_upgradeDependencies\n\nUpgrade dependencies"
+    },
+    {
+      "sha": "e6de83f9257ed10d8c43ab0555dc4150a43ff46c",
+      "date": "2025-11-03T10:45:15+01:00",
+      "author": "agrancaric",
+      "email": "agrancaric@croz.net",
+      "message": "Upgrade aggregate-javadoc-legacy to 8.14.2\n"
+    },
+    {
+      "sha": "cccfc3cb795aed9d6e2056bb0d008f85556bcee3",
+      "date": "2025-11-03T10:43:27+01:00",
+      "author": "agrancaric",
+      "email": "agrancaric@croz.net",
+      "message": "Upgrade ModelMapper to version 3.2.5\n"
+    },
+    {
+      "sha": "d880e024fc398253ffe5110bb019c0e6ab1d95c8",
+      "date": "2025-11-03T10:41:42+01:00",
+      "author": "agrancaric",
+      "email": "agrancaric@croz.net",
+      "message": "Upgrade Spring Boot to version 3.5.7 and fix builds and tests\n"
+    },
+    {
+      "sha": "b0ea4045cb3ca3f2ae641c251e1ed82222dd2ef6",
+      "date": "2025-11-03T10:40:11+01:00",
+      "author": "agrancaric",
+      "email": "agrancaric@croz.net",
+      "message": "Upgrade gradle to version 8.14.3\n"
+    },
+    {
+      "sha": "15a25d80767380c5e51718a9597c83afd030d13c",
+      "date": "2025-11-13T09:49:49+01:00",
+      "author": "Joso Zrilić",
+      "email": "59481581+jzrilic@users.noreply.github.com",
+      "message": "Merge pull request #237 from croz-ltd/feature_addNotificationMessageCode\n\nAdd code to Notification to enable easier checking of error types"
+    },
+    {
+      "sha": "ecddcc7643ff7e8afb76c9c6f156a880dc0506f4",
+      "date": "2025-11-03T14:34:10+01:00",
+      "author": "agrancaric",
+      "email": "agrancaric@croz.net",
+      "message": "Add code to Notification to enable easier checking of error types on caller side\n"
+    },
+    {
+      "sha": "4b9c5385a3ee1b9d0dc23f754bf19a1da89ccd86",
+      "date": "2025-11-12T11:50:19+01:00",
+      "author": "Joso Zrilić",
+      "email": "59481581+jzrilic@users.noreply.github.com",
+      "message": "Merge pull request #238 from croz-ltd/feature_updateValidationNotificationFailureTestWithList\n\nAdd list failure example in validation failure notification  test"
+    },
+    {
+      "sha": "1a830860db2ba893f4c5ca3d5d29e4b1c9944323",
+      "date": "2025-11-07T10:26:58+01:00",
+      "author": "agrancaric",
+      "email": "agrancaric@croz.net",
+      "message": "Add list failure example in validation failure notification test\n"
+    },
+    {
+      "sha": "4c2553ef5115b18c50f9e1e5d21dbdf48c96270f",
+      "date": "2025-11-12T11:29:38+01:00",
+      "author": "Joso Zrilić",
+      "email": "59481581+jzrilic@users.noreply.github.com",
+      "message": "Merge pull request #235 from croz-ltd/feature_addMissingValidationProperties\n\nAdded NrichValidationProperties to enable generating of spring-configuration-metadata.json"
+    }
+  ],
+  "commit_sha": "30e97ff343f020e71140622e63972d422086d8d5",
+  "extracted_at": "2026-10-05T18:27:16.367934+00:00"
+}

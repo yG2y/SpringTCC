@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "8d96e496d3d685a602d13e49536ff138f5aa708c",
+      "date": "2025-06-17T18:03:12+08:00",
+      "author": "yizzuide",
+      "email": "fu837014586@163.com",
+      "message": "fix(sundial): fixed `@Sundial` don't work with `@Transactional`.\n"
+    },
+    {
+      "sha": "7e603c77a032daecc28b3f31f54607d6ef43d65f",
+      "date": "2025-06-10T14:58:19+08:00",
+      "author": "yizzuide",
+      "email": "fu837014586@163.com",
+      "message": "fix(sundial): fixed add custom data source with driver class name.\n"
+    },
+    {
+      "sha": "088968ff91c1e59a94ce8428f163ac67a32b65a2",
+      "date": "2025-06-02T18:06:49+08:00",
+      "author": "yizzuide",
+      "email": "fu837014586@163.com",
+      "message": "feat(comet): add counter tag collector.\n"
+    },
+    {
+      "sha": "8c6384285afd0ba1ea84261b88ee9ead7c44e880",
+      "date": "2025-05-22T11:22:04+08:00",
+      "author": "Yizzuide",
+      "email": "fu837014586@163.com",
+      "message": "Update README_zh-CN.md"
+    },
+    {
+      "sha": "8acaf0be4c5d938c3570c5d503a0bdeccf477c75",
+      "date": "2025-05-22T11:21:16+08:00",
+      "author": "Yizzuide",
+      "email": "fu837014586@163.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "b1b31694db4a6bd669387d666029a974970ee50e",
+      "date": "2025-05-19T17:38:38+08:00",
+      "author": "yizzuide",
+      "email": "fu837014586@163.com",
+      "message": "feat(orbit): add `@OrbitProxy` to support dynamic proxy method with args mirror into advice of handler.\n"
+    },
+    {
+      "sha": "4aaadff007dc8fd81dfe9c7319e89055aac84994",
+      "date": "2025-05-16T18:37:45+08:00",
+      "author": "yizzuide",
+      "email": "fu837014586@163.com",
+      "message": "fix(halo): fixed param value is null.\n"
+    },
+    {
+      "sha": "f5701680c29090ff2ade0df1708b4c8e45cbba36",
+      "date": "2025-05-09T10:36:07+08:00",
+      "author": "yizzuide",
+      "email": "fu837014586@163.com",
+      "message": "feat(halo): add non-parametric `sql` in halo meta.\n"
+    },
+    {
+      "sha": "2ad6e3b5c659bc9807f1465fd111ef1338b023b1",
+      "date": "2025-05-04T15:14:24+08:00",
+      "author": "yizzuide",
+      "email": "fu837014586@163.com",
+      "message": "feat(europa): add europa module to enable L1 + L2 cache with Spring Cache.\n\n[light]: Sync key cache in L1 in distributed deployment environment.\n"
+    },
+    {
+      "sha": "cd5fca2123f0be8105aaa41fce6aa7942ccde8c2",
+      "date": "2025-05-01T02:41:50+08:00",
+      "author": "yizzuide",
+      "email": "fu837014586@163.com",
+      "message": "refactor(atom): Move the redisson configuration to the top layer\n"
+    },
+    {
+      "sha": "0e764da26a8e6d165610eace10b1f90792f08510",
+      "date": "2024-12-15T22:39:21+08:00",
+      "author": "yizzuide",
+      "email": "fu837014586@163.com",
+      "message": "release 3.20.0\n"
+    },
+    {
+      "sha": "3fc4c11856a28064055721eb52684ba5540cc660",
+      "date": "2024-12-15T22:15:46+08:00",
+      "author": "yizzuide",
+      "email": "fu837014586@163.com",
+      "message": "chore(doc): update doc\n"
+    },
+    {
+      "sha": "6caddf04177f324cbdd936c525c8d05299878933",
+      "date": "2024-12-15T22:12:10+08:00",
+      "author": "yizzuide",
+      "email": "fu837014586@163.com",
+      "message": "Merge remote-tracking branch 'refs/remotes/origin/dependabot/maven/MilkomedaDemo/org.redisson-redisson-3.22.0'\n\n# Conflicts:\n#\tMilkomedaDemo/pom.xml\n"
+    },
+    {
+      "sha": "c48e6e73f6d68c376bcf5ffcd8e43fb210bbe56d",
+      "date": "2024-12-15T22:11:23+08:00",
+      "author": "yizzuide",
+      "email": "fu837014586@163.com",
+      "message": "Merge remote-tracking branch 'refs/remotes/origin/dependabot/maven/MilkomedaDemo/org.apache.zookeeper-zookeeper-3.7.2'\n\n# Conflicts:\n#\tMilkomedaDemo/pom.xml\n"
+    },
+    {
+      "sha": "6522c28556289d6dfba07c8bee1167b2e66a73e0",
+      "date": "2024-08-05T21:32:22Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "chore(deps): bump org.redisson:redisson in /MilkomedaDemo\n\nBumps [org.redisson:redisson](https://github.com/redisson/redisson) from 3.17.7 to 3.22.0.\n- [Release notes](https://github.com/redisson/redisson/releases)\n- [Changelog](https://github.com/redisson/redisson/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/redisson/redisson/compare/redisson-3.17.7...redisson-3.22.0)\n\n---\nupdated-dependencies:\n- dependency-name: org.redisson:redisson\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "5285f73570a51ed5b89c166dfce59fafa80ce919",
+      "date": "2024-06-20T23:45:58+08:00",
+      "author": "yizzuide",
+      "email": "fu837014586@163.com",
+      "message": "feat(quark): support config topic handler chain\n"
+    },
+    {
+      "sha": "e9067a17531d0ca8c1b9068d7671c5d2b9044e01",
+      "date": "2024-05-04T21:21:15+08:00",
+      "author": "yizzuide",
+      "email": "fu837014586@163.com",
+      "message": "feat(comet): support load handler automatically which annotated `@AliasBinder` and autoload is enable\n"
+    },
+    {
+      "sha": "85f46d933729a73ac9cd15ddb09cf94f6c199edd",
+      "date": "2024-05-04T14:54:59+08:00",
+      "author": "yizzuide",
+      "email": "fu837014586@163.com",
+      "message": "feat(light): cache instance support get data locked with config `data-generate-mutex`\n"
+    },
+    {
+      "sha": "6fa180bf66d7ac4f2f2f21f38b90547801df0794",
+      "date": "2024-05-04T01:51:03+08:00",
+      "author": "yizzuide",
+      "email": "fu837014586@163.com",
+      "message": "feat(atom): Add support `autoLock` within `Atom`\n"
+    },
+    {
+      "sha": "6ac09e5eff675439dff8daf577441ee9048103a4",
+      "date": "2024-05-03T20:59:55+08:00",
+      "author": "yizzuide",
+      "email": "fu837014586@163.com",
+      "message": "feat(orbit): Add support set the order of advisor\n"
+    },
+    {
+      "sha": "709b2702e7d39590a4c8e3c914a421f15c4e48e8",
+      "date": "2024-05-02T21:19:04+08:00",
+      "author": "yizzuide",
+      "email": "fu837014586@163.com",
+      "message": "fix(redis): fix redis setNX unlock bug\n"
+    },
+    {
+      "sha": "99c2688c386fb5f132c8914f3b65c39854faf43f",
+      "date": "2024-04-15T20:52:59+08:00",
+      "author": "yizzuide",
+      "email": "fu837014586@163.com",
+      "message": "feat(all): sync update code from dev_4.0\n"
+    },
+    {
+      "sha": "fac3d191de36122fcb5a8e533053ab72dd50ed2a",
+      "date": "2023-12-22T02:34:38+08:00",
+      "author": "yizzuide",
+      "email": "fu837014586@163.com",
+      "message": "pref(particle): Token bucket limit only used redis lua.\n"
+    },
+    {
+      "sha": "6f55bdd361bb924cf29c54a88f75328958cd6c90",
+      "date": "2023-12-21T02:37:11+08:00",
+      "author": "yizzuide",
+      "email": "fu837014586@163.com",
+      "message": "chore(doc): update doc\n"
+    },
+    {
+      "sha": "160509a182cb67121042185062460aeb918245cb",
+      "date": "2023-12-21T02:23:21+08:00",
+      "author": "yizzuide",
+      "email": "fu837014586@163.com",
+      "message": "chore(doc): update demo\n"
+    },
+    {
+      "sha": "1c95fa3466fc2098a099b3c865ad32c3c802a6ec",
+      "date": "2023-12-15T14:48:08+08:00",
+      "author": "yizzuide",
+      "email": "fu837014586@163.com",
+      "message": "fix(sirius): fixed select page all\n"
+    },
+    {
+      "sha": "b3ae6b15c251f31cb6669d1c6c2de1a6d1b962d1",
+      "date": "2023-11-23T15:18:50+08:00",
+      "author": "yizzuide",
+      "email": "fu837014586@163.com",
+      "message": "fix(moon): Fixed get phase error with percent type\n"
+    },
+    {
+      "sha": "66b8c44ec5317a77094a4d01f8f6cb1f41b51dbd",
+      "date": "2023-11-22T17:28:31+08:00",
+      "author": "yizzuide",
+      "email": "fu837014586@163.com",
+      "message": "chore(*): merge dev_3.15.0\n"
+    },
+    {
+      "sha": "a0326a40293092129c83774027caa22bbd9ba9d7",
+      "date": "2023-11-22T17:20:41+08:00",
+      "author": "yizzuide",
+      "email": "fu837014586@163.com",
+      "message": "fix(sirius): Fixed find page all error\n"
+    },
+    {
+      "sha": "fd950056d9a54842a04d06491c301cda0b935ad9",
+      "date": "2023-11-03T15:30:41+08:00",
+      "author": "yizzuide",
+      "email": "fu837014586@163.com",
+      "message": "feat(sirius): Add unix time query with `PrefectType.PageUnixTime`\n"
+    }
+  ],
+  "commit_sha": "8d96e496d3d685a602d13e49536ff138f5aa708c",
+  "extracted_at": "2026-10-05T18:13:15.305519+00:00"
+}

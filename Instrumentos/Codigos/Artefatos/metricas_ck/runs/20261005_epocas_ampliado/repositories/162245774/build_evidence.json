@@ -1,0 +1,68 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "3.5.0",
+  "spring_boot_major": "3",
+  "java_versions_declared": "17",
+  "build_evidence": [
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "roncoo-education-common/roncoo-education-common-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "roncoo-education-common/roncoo-education-common-service/pom.xml",
+      "artifact": "spring-boot-starter-cache"
+    },
+    {
+      "file": "roncoo-education-common/roncoo-education-common-service/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "roncoo-education-common/roncoo-education-common-service/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "roncoo-education-common/roncoo-education-common-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "roncoo-education-common/roncoo-education-common-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "roncoo-education-gateway/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "roncoo-education-gateway/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "roncoo-education-gateway/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "roncoo-education-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "roncoo-education-service/roncoo-education-service-course/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "roncoo-education-service/roncoo-education-service-system/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "roncoo-education-service/roncoo-education-service-user/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "a0906a9dc51133240d221ec810d9cb9e191d6119",
+      "date": "2026-09-29T22:32:54+09:00",
+      "author": "김준언",
+      "email": "juneon0830@naver.com",
+      "message": "Release 2.18.1\n\nRelease 2.18.1"
+    },
+    {
+      "sha": "1f679b684adb3dcb338e006c62caa16fc5e82bbc",
+      "date": "2026-09-29T21:41:39+09:00",
+      "author": "김준언",
+      "email": "juneon0830@naver.com",
+      "message": "Merge: main 브랜치 변경사항을 develop에 동기화\n\nMerge: main 브랜치 변경사항을 develop에 동기화"
+    },
+    {
+      "sha": "df443822e2ae24c5cf7511b880939313273cad13",
+      "date": "2026-09-23T11:04:14+09:00",
+      "author": "juneon",
+      "email": "juneon0830@naver.com",
+      "message": "Merge: main 브랜치 변경사항을 develop에 반영\n"
+    },
+    {
+      "sha": "34d7505808a41fc5bc3acea236c252ffc3fd1bb5",
+      "date": "2026-09-23T10:14:09+09:00",
+      "author": "김준언",
+      "email": "juneon0830@naver.com",
+      "message": "Fix: 학사일정 Outlook ICS URL 변경 및 Canary 테스트 추가\n\n* Fix: 학사일정 Outlook ICS 수집 URL 변경\n\n* Test: Outlook 학사일정 ICS 수집 Canary 테스트 추가\n\n* Test: Canary에서 외부 학사일정 URL 검증 활성화\n\n* Test: IcsScraperCanaryTest에 VEVENT가 하나 이상 포함되는지 검증 추가"
+    },
+    {
+      "sha": "cc31ead42daaaaf2eab92b7ae879a42bac28c56b",
+      "date": "2026-08-26T23:59:11+09:00",
+      "author": "kimjuneon",
+      "email": "juneon0830@naver.com",
+      "message": "Release 2.18.0\n\n* [fix]: 동아리 목록 조회 api 응답에 recruitmentStatus 필드 추가 (#384)\n\n* [fix]: 동아리 목록 조회 api 응답에 recruitmentStatus 필드 추가\n\n* [refactor]: 시간 계산 한번만 하도록 수정\n\n* Feat : 어드민 동아리 업로드 API 구현 (#353)\n\n* feat : club icon_image_path 컬럼 마이그레이션 추가\n\n* feat : 동아리 생성 성공 응답 코드 추가\n\n* feat : 동아리 중복 생성 에러 코드 추가\n\n* feat : 어드민 동아리 생성 요청 DTO 확장\n\n* feat : 어드민 동아리 생성 응답 DTO 추가\n\n* feat : 어드민 동아리 생성 API 추가\n\n* feat : 동아리 생성 유스케이스 인터페이스 추가\n\n* feat : 동아리 생성 커맨드 정의 추가\n\n* feat : 동아리 생성 CommandPort 메서드 추가\n\n* feat : 동아리 생성 이벤트 포트 확장\n\n* feat : 동아리 중복 조회 포트 메서드 추가\n\n* feat : 동아리 이름 소속 중복 조회 리포지토리 메서드 추가\n\n* feat : ClubSns JPA Repository 구현 추가\n\n* feat : 동아리 생성 중복체크 persistence 구현 추가\n\n* feat : 동아리 생성 필드 및 생성자 확장\n\n* feat : 동아리 카테고리 한글 매핑 지원 추가\n\n* feat : 동아리 소속 한글 매핑 지원 추가\n\n* feat : 동아리 SNS URL 도메인 객체 매핑 추가\n\n* feat : SNS URL 기반 타입 판별 로직 추가\n\n* feat : 스토리지 업로드 유스케이스 인터페이스 정의\n\n* feat : 다중 파일 업로드 커맨드 모델 추가\n\n* feat : 단일 이미지 업로드 커맨드 모델 추가\n\n* feat : 이미지 삭제 이벤트 모델 확장\n\n* feat : 동아리 생성 이미지 업로드 이벤트 구현\n\n* feat : 동아리 생성 후 이미지 업로드 이벤트 리스너 추가\n\n* feat : 동아리 생성 이벤트 발행 어댑터 구현\n\n* fix : 파일 스트림 업로드 처리 및 예외 로깅 보강\n\n* feat : 동아리 생성 서비스 로직 및 검증 구현\n\n* test : 어드민 동아리 생성 요청 응답 스텝 추가\n\n* test : 어드민 동아리 정보 업로드 인수테스트 추가\n\n* test : ClubCategory 변환 테스트 정리\n\n* test : ClubDivision 변환 테스트 정리\n\n* fix : 스토리지 Mock 어댑터 프로필 설정 조정\n\n* fix : 스토리지 S3 어댑터 프로필 설정 조정\n\n* refactor : logoImage를 iconImage 이름 통일\n\n* fix : posterImage Null 분기 처리\n\n* fix : 주석처리 해놓은 어노테이션 제거\n\n* refactor : 동아리 등록 API 파라미터명 변경\n\n* fix : 이벤트 생성 간 path 중복 사용 해결\n\n* remove : 불필요 파일 제거\n\n* remove : 미사용 파일 제거\n\n* fix : reference type 대신 primitive type 사용하도록 수정\n\n* fix : ClubSnsType 매핑 과정 구체화 및 예외 케이스 처리\n\n* test : ClubSnsType 도메인 테스트 추가\n\n* fix : ClubSnsType NPE 예외 처리\n\n* feat : club icon_image_path 컬럼 마이그레이션 추가\n\n* feat : 동아리 생성 성공 응답 코드 추가\n\n* feat : 동아리 중복 생성 에러 코드 추가\n\n* feat : 어드민 동아리 생성 요청 DTO 확장\n\n* feat : 어드민 동아리 생성 응답 DTO 추가\n\n* feat : 어드민 동아리 생성 API 추가\n\n* feat : 동아리 생성 유스케이스 인터페이스 추가\n\n* feat : 동아리 생성 커맨드 정의 추가\n\n* feat : 동아리 생성 CommandPort 메서드 추가\n\n* feat : 동아리 생성 이벤트 포트 확장\n\n* feat : 동아리 중복 조회 포트 메서드 추가\n\n* feat : 동아리 이름 소속 중복 조회 리포지토리 메서드 추가\n\n* feat : ClubSns JPA Repository 구현 추가\n\n* feat : 동아리 생성 중복체크 persistence 구현 추가\n\n* feat : 동아리 카테고리 한글 매핑 지원 추가\n\n* feat : 동아리 소속 한글 매핑 지원 추가\n\n* feat : 동아리 SNS URL 도메인 객체 매핑 추가\n\n* feat : SNS URL 기반 타입 판별 로직 추가\n\n* feat : 스토리지 업로드 유스케이스 인터페이스 정의\n\n* feat : 다중 파일 업로드 커맨드 모델 추가\n\n* feat : 단일 이미지 업로드 커맨드 모델 추가\n\n* feat : 이미지 삭제 이벤트 모델 확장\n\n* feat : 동아리 생성 이미지 업로드 이벤트 구현\n\n* feat : 동아리 생성 후 이미지 업로드 이벤트 리스너 추가\n\n* feat : 동아리 생성 이벤트 발행 어댑터 구현\n\n* fix : 파일 스트림 업로드 처리 및 예외 로깅 보강\n\n* feat : 동아리 생성 서비스 로직 및 검증 구현\n\n* test : 어드민 동아리 생성 요청 응답 스텝 추가\n\n* test : 어드민 동아리 정보 업로드 인수테스트 추가\n\n* test : ClubCategory 변환 테스트 정리\n\n* test : ClubDivision 변환 테스트 정리\n\n* fix : 스토리지 Mock 어댑터 프로필 설정 조정\n\n* fix : 스토리지 S3 어댑터 프로필 설정 조정\n\n* refactor : logoImage를 iconImage 이름 통일\n\n* fix : posterImage Null 분기 처리\n\n* fix : 주석처리 해놓은 어노테이션 제거\n\n* refactor : 동아리 등록 API 파라미터명 변경\n\n* fix : 이벤트 생성 간 path 중복 사용 해결\n\n* remove : 불필요 파일 제거\n\n* remove : 미사용 파일 제거\n\n* fix : reference type 대신 primitive type 사용하도록 수정\n\n* fix : ClubSnsType 매핑 과정 구체화 및 예외 케이스 처리\n\n* test : ClubSnsType 도메인 테스트 추가\n\n* fix : ClubSnsType NPE 예외 처리\n\n* [fix]: 중복 마이그레이션 파일 제거\n\n* [feat]: club 생성자 추가 및 building 엔티티 분리 적용\n\n* [fix]: 동아리 생성 api @RequestPart → @RequestParam로 수정\n\n* [fix]: 동아리 생성 테스트 posterimage 필드명 통일\n\n* [fix]: data에 AdminClubCreateResponse 반환하도록 수정\n\n* [fix]: data에 AdminClubCreateResponse 반환하도록 수정\n\n---------\n\nCo-authored-by: jiyun921 <ryn0921@naver.com>\n\n* [fix] Rename \bprod-kr.yml to prod-kr.yml (#394)\n\n* Feat: 캠퍼스맵 mock 조회 API 구현\n\n* Feat: 캠퍼스맵 장소 및 운영시간 도메인 타입 추가\n\n* Feat: 캠퍼스맵 조회 응답 모델 추가\n\n* Feat: 캠퍼스맵 mock 조회 API 구현\n\n* fix: 캠퍼스맵 건물 상세 조회 404 응답 형식 수정\n\n* Test: 캠퍼스맵 조회 API 인수 테스트 추가\n\n* Refactor: 캠퍼스맵 V2 API 경로 및 응답 DTO 정리\n\n* Refactor: 캠퍼스맵 mock 데이터 및 건물 상세 응답 보강\n\n* Test: 캠퍼스맵 V2 API 경로 반영\n\n* Refactor: 캠퍼스맵 응답 구조 개선 및 mock 데이터 추가\n\n* Refactor: 캠퍼스맵 mock API 응답 및 데이터 구조 개선\n\n* Feat: 캠퍼스맵 mock 시설 및 검색 키워드 보강\n\n* Fix: 실외 캠퍼스 시설 층 정보 수정\n\n* Feat: 캠퍼스맵 장소 및 운영시간 도메인 구현\n\n* Feat: 캠퍼스맵 장소 및 운영시간 도메인 구현\n\n* Test: 캠퍼스맵 핵심 도메인 테스트 보강\n\n* Fix: 캠퍼스 시설 소유 건물 검증 추가\n\n* Refactor: 캠퍼스맵 도메인 에러 코드 분리\n\n* Fix: 캠퍼스 시설 노출 순서 검증 추가\n\n* Feat: 캠퍼스맵 카테고리 목록 조회 API 구현\n\n* Refactor: 캠퍼스맵 mock 조회 API 분리\n\n* Feat: 캠퍼스맵 카테고리 목록 조회 API 구현\n\n* Test: 캠퍼스맵 카테고리 목록 조회 테스트 추가\n\n* Refactor: 캠퍼스맵 카테고리 조회 ReadModel 적용\n\n* Test: 캠퍼스맵 카테고리 ReadModel 조회 테스트 수정\n\n* Feat: 캠퍼스맵 전체 건물 목록 조회 API 구현\n\n* Feat: 캠퍼스맵 전체 건물 목록 조회 API 구현\n\n* Refactor: 캠퍼스맵 건물 목록 조회 ReadModel 적용\n\n* Chore: 캠퍼스맵 데이터 소스 기본값 설정\n\n* Test: 캠퍼스맵 전체 건물 목록 조회 테스트 추가\n\n* Feat: 캠퍼스맵 건물 키워드 검색 API 구현\n\n* Feat: 캠퍼스맵 건물 키워드 검색 API 구현\n\n* Test: 캠퍼스맵 건물 키워드 검색 테스트 추가\n\n* Refactor: 캠퍼스맵 건물 키워드 검색 쿼리 개선\n\n* Test: 캠퍼스맵 건물 키워드 검색 테스트 보완\n\n* Feat: 캠퍼스맵 카테고리 기반 시설 목록 조회 API 구현\n\n* Feat: 캠퍼스맵 카테고리 기반 시설 목록 조회 API 구현\n\n* Test: 캠퍼스맵 카테고리 기반 시설 목록 조회 테스트 추가\n\n* Fix: 캠퍼스맵 시설 카테고리 요청값 검증 강화\n\n* Refactor: 캠퍼스맵 시설 카테고리 정규화 로직 수정\n\n* Feat: 캠퍼스맵 운영기간 fallback 로직 추가\n\n* Refactor: 캠퍼스맵 주말 판단 로직 공통 유틸 분리\n\n* Refactor: 캠퍼스맵 운영기간 조회 구조 개선\n\n* Test: 캠퍼스맵 조회 테스트 구조 보완\n\n* Test: 캠퍼스맵 실제 조회 API 인수 테스트 추가\n\n* Feat: 캠퍼스맵 건물 상세 조회 API 구현\n\n* Feat: 캠퍼스맵 건물 상세 조회 API 구현\n\n* Chore: 개발 환경 캠퍼스맵 데이터 소스 설정\n\n* Test: 캠퍼스맵 건물 상세 조회 테스트 추가\n\n* Refactor: 캠퍼스맵 건물 상세 조회 예외 처리 개선\n\n* Refactor: 캠퍼스맵 mock 조회 API 제거\n\n* Feat: 캠퍼스맵 건물 노출 우선순위 조회 구현\n\n* Feat: 캠퍼스맵 건물 노출 우선순위 조회 구현\n\n* Test: 캠퍼스맵 건물 노출 우선순위 조회 테스트 추가\n\n* Fix: 캠퍼스맵 건물 노출 우선순위 정렬 수정\n\n* Test: 캠퍼스맵 건물 노출 우선순위 정렬 테스트 추가\n\n* Feat: 캠퍼스맵 건물 및 시설 통합 검색 API 구현\n\n* Feat: 캠퍼스맵 시설 키워드 검색 구현\n\n* Feat: 캠퍼스맵 건물 및 시설 통합 검색 API 구현\n\n* Test: 캠퍼스맵 통합 검색 테스트 추가\n\n* Refactor: 캠퍼스맵 시설 검색 정렬 로직 분리\n\n* Test: 캠퍼스맵 통합 검색 인수 테스트 추가\n\n* Refactor: 캠퍼스맵 시설 이미지를 건물 이미지로 통합\n\n* Refactor: 캠퍼스맵 시설 이미지를 건물 이미지로 통합\n\n* Refactor: 캠퍼스 시설 건물 이미지 경로 조회 캡슐화\n\n* Test: Building 도메인 아키텍처 경계 검증 추가\n\n* Test: 캠퍼스맵 통합 검색 시설 이미지 응답 검증 추가\n\n* Feat: 캠퍼스맵 검색 건물 이미지 응답 추가\n\n* Feat: 캠퍼스맵 검색 건물 이미지 응답 추가\n\n* Test: 캠퍼스맵 검색 건물 이미지 응답 테스트 추가\n\n* Refactor: 캠퍼스맵 검색 이미지 URL 중복 생성 방지\n\n* Fix: 계절학기 개강 운영기간 판정 수정\n\n* Refactor: 사용하지 않는 건물 요약 변환 메서드 제거\n\n---------\n\nCo-authored-by: 양지윤 <155087951+jiyun921@users.noreply.github.com>\nCo-authored-by: HanJu Kim <56250226+rlagkswn00@users.noreply.github.com>\nCo-authored-by: jiyun921 <ryn0921@naver.com>"
+    },
+    {
+      "sha": "946acc73263accf3b4ee5828dfd841c208087d08",
+      "date": "2026-08-25T14:14:38+09:00",
+      "author": "kimjuneon",
+      "email": "juneon0830@naver.com",
+      "message": "Feat: 캠퍼스맵 검색 건물 이미지 응답 추가\n\n* Feat: 캠퍼스맵 검색 건물 이미지 응답 추가\n\n* Test: 캠퍼스맵 검색 건물 이미지 응답 테스트 추가\n\n* Refactor: 캠퍼스맵 검색 이미지 URL 중복 생성 방지"
+    },
+    {
+      "sha": "a32f89e9538937170a0ee43102f9888ce4f60bb6",
+      "date": "2026-08-17T19:46:47+09:00",
+      "author": "kimjuneon",
+      "email": "juneon0830@naver.com",
+      "message": "Refactor: 캠퍼스맵 시설 이미지를 건물 이미지로 통합\n\n* Refactor: 캠퍼스맵 시설 이미지를 건물 이미지로 통합\n\n* Refactor: 캠퍼스 시설 건물 이미지 경로 조회 캡슐화\n\n* Test: Building 도메인 아키텍처 경계 검증 추가\n\n* Test: 캠퍼스맵 통합 검색 시설 이미지 응답 검증 추가"
+    },
+    {
+      "sha": "8e927a83d8dfc08e49e3c325c13e3e84a3cfb7ec",
+      "date": "2026-08-16T00:27:33+09:00",
+      "author": "kimjuneon",
+      "email": "juneon0830@naver.com",
+      "message": "Feat: 캠퍼스맵 건물 및 시설 통합 검색 API 구현\n\n* Feat: 캠퍼스맵 시설 키워드 검색 구현\n\n* Feat: 캠퍼스맵 건물 및 시설 통합 검색 API 구현\n\n* Test: 캠퍼스맵 통합 검색 테스트 추가\n\n* Refactor: 캠퍼스맵 시설 검색 정렬 로직 분리\n\n* Test: 캠퍼스맵 통합 검색 인수 테스트 추가"
+    },
+    {
+      "sha": "ecf2fd9477f821f8b293fd6e8a7075a3f6884bd4",
+      "date": "2026-08-11T22:53:09+09:00",
+      "author": "kimjuneon",
+      "email": "juneon0830@naver.com",
+      "message": "Feat: 캠퍼스맵 건물 노출 우선순위 조회 구현\n\n* Feat: 캠퍼스맵 건물 노출 우선순위 조회 구현\n\n* Test: 캠퍼스맵 건물 노출 우선순위 조회 테스트 추가\n\n* Fix: 캠퍼스맵 건물 노출 우선순위 정렬 수정\n\n* Test: 캠퍼스맵 건물 노출 우선순위 정렬 테스트 추가"
+    },
+    {
+      "sha": "ea4d6a2dbcd4866361a47aa6d278aafc6036c6dd",
+      "date": "2026-08-10T21:25:42+09:00",
+      "author": "kimjuneon",
+      "email": "juneon0830@naver.com",
+      "message": "Refactor: 캠퍼스맵 mock 조회 API 제거"
+    },
+    {
+      "sha": "e841a51fead10171452d0ef554c6edcb3a55287b",
+      "date": "2026-08-06T12:25:04+09:00",
+      "author": "kimjuneon",
+      "email": "juneon0830@naver.com",
+      "message": "Feat: 캠퍼스맵 건물 상세 조회 API 구현\n\n* Feat: 캠퍼스맵 건물 상세 조회 API 구현\n\n* Chore: 개발 환경 캠퍼스맵 데이터 소스 설정\n\n* Test: 캠퍼스맵 건물 상세 조회 테스트 추가\n\n* Refactor: 캠퍼스맵 건물 상세 조회 예외 처리 개선"
+    },
+    {
+      "sha": "2149c9c96b7286054ee8c95df71f0b2a5dd8bbe1",
+      "date": "2026-08-05T21:15:23+09:00",
+      "author": "kimjuneon",
+      "email": "juneon0830@naver.com",
+      "message": "Feat: 캠퍼스맵 카테고리 기반 시설 목록 조회 API 구현\n\n* Feat: 캠퍼스맵 카테고리 기반 시설 목록 조회 API 구현\n\n* Test: 캠퍼스맵 카테고리 기반 시설 목록 조회 테스트 추가\n\n* Fix: 캠퍼스맵 시설 카테고리 요청값 검증 강화\n\n* Refactor: 캠퍼스맵 시설 카테고리 정규화 로직 수정\n\n* Feat: 캠퍼스맵 운영기간 fallback 로직 추가\n\n* Refactor: 캠퍼스맵 주말 판단 로직 공통 유틸 분리\n\n* Refactor: 캠퍼스맵 운영기간 조회 구조 개선\n\n* Test: 캠퍼스맵 조회 테스트 구조 보완\n\n* Test: 캠퍼스맵 실제 조회 API 인수 테스트 추가"
+    },
+    {
+      "sha": "8cde7caca9ee389aca5d72e47e427861ecc5e0d7",
+      "date": "2026-08-04T13:57:52+09:00",
+      "author": "kimjuneon",
+      "email": "juneon0830@naver.com",
+      "message": "Feat: 캠퍼스맵 건물 키워드 검색 API 구현\n\n* Feat: 캠퍼스맵 건물 키워드 검색 API 구현\n\n* Test: 캠퍼스맵 건물 키워드 검색 테스트 추가\n\n* Refactor: 캠퍼스맵 건물 키워드 검색 쿼리 개선\n\n* Test: 캠퍼스맵 건물 키워드 검색 테스트 보완"
+    },
+    {
+      "sha": "7f34b7856e83726155ca07c838c40a3e74716130",
+      "date": "2026-08-03T20:14:47+09:00",
+      "author": "kimjuneon",
+      "email": "juneon0830@naver.com",
+      "message": "Feat: 캠퍼스맵 전체 건물 목록 조회 API 구현\n\n* Feat: 캠퍼스맵 전체 건물 목록 조회 API 구현\n\n* Refactor: 캠퍼스맵 건물 목록 조회 ReadModel 적용\n\n* Chore: 캠퍼스맵 데이터 소스 기본값 설정\n\n* Test: 캠퍼스맵 전체 건물 목록 조회 테스트 추가"
+    },
+    {
+      "sha": "ef2f52d6605c710cdd256fb10b9662ee22280d4f",
+      "date": "2026-08-03T17:51:43+09:00",
+      "author": "kimjuneon",
+      "email": "juneon0830@naver.com",
+      "message": "Feat: 캠퍼스맵 카테고리 목록 조회 API 구현\n\n* Refactor: 캠퍼스맵 mock 조회 API 분리\n\n* Feat: 캠퍼스맵 카테고리 목록 조회 API 구현\n\n* Test: 캠퍼스맵 카테고리 목록 조회 테스트 추가\n\n* Refactor: 캠퍼스맵 카테고리 조회 ReadModel 적용\n\n* Test: 캠퍼스맵 카테고리 ReadModel 조회 테스트 수정"
+    },
+    {
+      "sha": "e6b388473adf55515fa7b8dce28212464cf1bd01",
+      "date": "2026-07-30T16:17:28+09:00",
+      "author": "kimjuneon",
+      "email": "juneon0830@naver.com",
+      "message": "Feat: 캠퍼스맵 장소 및 운영시간 도메인 구현\n\n* Feat: 캠퍼스맵 장소 및 운영시간 도메인 구현\n\n* Test: 캠퍼스맵 핵심 도메인 테스트 보강\n\n* Fix: 캠퍼스 시설 소유 건물 검증 추가\n\n* Refactor: 캠퍼스맵 도메인 에러 코드 분리\n\n* Fix: 캠퍼스 시설 노출 순서 검증 추가"
+    },
+    {
+      "sha": "ebb8d7c8d633a0c292961198d4a424c12821e7e0",
+      "date": "2026-07-30T15:40:09+09:00",
+      "author": "kimjuneon",
+      "email": "juneon0830@naver.com",
+      "message": "Refactor: 캠퍼스맵 응답 구조 개선 및 mock 데이터 추가\n\n* Refactor: 캠퍼스맵 mock API 응답 및 데이터 구조 개선\n\n* Feat: 캠퍼스맵 mock 시설 및 검색 키워드 보강\n\n* Fix: 실외 캠퍼스 시설 층 정보 수정"
+    },
+    {
+      "sha": "4e8203dff359d29e3ebb717c86a2ec6a0480fe65",
+      "date": "2026-07-23T21:42:50+09:00",
+      "author": "kimjuneon",
+      "email": "juneon0830@naver.com",
+      "message": "Feat: 캠퍼스맵 mock 조회 API 구현\n\n* Feat: 캠퍼스맵 장소 및 운영시간 도메인 타입 추가\n\n* Feat: 캠퍼스맵 조회 응답 모델 추가\n\n* Feat: 캠퍼스맵 mock 조회 API 구현\n\n* fix: 캠퍼스맵 건물 상세 조회 404 응답 형식 수정\n\n* Test: 캠퍼스맵 조회 API 인수 테스트 추가\n\n* Refactor: 캠퍼스맵 V2 API 경로 및 응답 DTO 정리\n\n* Refactor: 캠퍼스맵 mock 데이터 및 건물 상세 응답 보강\n\n* Test: 캠퍼스맵 V2 API 경로 반영"
+    },
+    {
+      "sha": "b7581a4c5ef236457dbd28dbc0603bdd853e95b0",
+      "date": "2026-07-20T21:14:44+09:00",
+      "author": "양지윤",
+      "email": "155087951+jiyun921@users.noreply.github.com",
+      "message": "Release 2.17.6 (#395)\n\n* [fix]: 동아리 목록 조회 api 응답에 recruitmentStatus 필드 추가 (#384)\n\n* [fix]: 동아리 목록 조회 api 응답에 recruitmentStatus 필드 추가\n\n* [refactor]: 시간 계산 한번만 하도록 수정\n\n* Feat : 어드민 동아리 업로드 API 구현 (#353)\n\n* feat : club icon_image_path 컬럼 마이그레이션 추가\n\n* feat : 동아리 생성 성공 응답 코드 추가\n\n* feat : 동아리 중복 생성 에러 코드 추가\n\n* feat : 어드민 동아리 생성 요청 DTO 확장\n\n* feat : 어드민 동아리 생성 응답 DTO 추가\n\n* feat : 어드민 동아리 생성 API 추가\n\n* feat : 동아리 생성 유스케이스 인터페이스 추가\n\n* feat : 동아리 생성 커맨드 정의 추가\n\n* feat : 동아리 생성 CommandPort 메서드 추가\n\n* feat : 동아리 생성 이벤트 포트 확장\n\n* feat : 동아리 중복 조회 포트 메서드 추가\n\n* feat : 동아리 이름 소속 중복 조회 리포지토리 메서드 추가\n\n* feat : ClubSns JPA Repository 구현 추가\n\n* feat : 동아리 생성 중복체크 persistence 구현 추가\n\n* feat : 동아리 생성 필드 및 생성자 확장\n\n* feat : 동아리 카테고리 한글 매핑 지원 추가\n\n* feat : 동아리 소속 한글 매핑 지원 추가\n\n* feat : 동아리 SNS URL 도메인 객체 매핑 추가\n\n* feat : SNS URL 기반 타입 판별 로직 추가\n\n* feat : 스토리지 업로드 유스케이스 인터페이스 정의\n\n* feat : 다중 파일 업로드 커맨드 모델 추가\n\n* feat : 단일 이미지 업로드 커맨드 모델 추가\n\n* feat : 이미지 삭제 이벤트 모델 확장\n\n* feat : 동아리 생성 이미지 업로드 이벤트 구현\n\n* feat : 동아리 생성 후 이미지 업로드 이벤트 리스너 추가\n\n* feat : 동아리 생성 이벤트 발행 어댑터 구현\n\n* fix : 파일 스트림 업로드 처리 및 예외 로깅 보강\n\n* feat : 동아리 생성 서비스 로직 및 검증 구현\n\n* test : 어드민 동아리 생성 요청 응답 스텝 추가\n\n* test : 어드민 동아리 정보 업로드 인수테스트 추가\n\n* test : ClubCategory 변환 테스트 정리\n\n* test : ClubDivision 변환 테스트 정리\n\n* fix : 스토리지 Mock 어댑터 프로필 설정 조정\n\n* fix : 스토리지 S3 어댑터 프로필 설정 조정\n\n* refactor : logoImage를 iconImage 이름 통일\n\n* fix : posterImage Null 분기 처리\n\n* fix : 주석처리 해놓은 어노테이션 제거\n\n* refactor : 동아리 등록 API 파라미터명 변경\n\n* fix : 이벤트 생성 간 path 중복 사용 해결\n\n* remove : 불필요 파일 제거\n\n* remove : 미사용 파일 제거\n\n* fix : reference type 대신 primitive type 사용하도록 수정\n\n* fix : ClubSnsType 매핑 과정 구체화 및 예외 케이스 처리\n\n* test : ClubSnsType 도메인 테스트 추가\n\n* fix : ClubSnsType NPE 예외 처리\n\n* feat : club icon_image_path 컬럼 마이그레이션 추가\n\n* feat : 동아리 생성 성공 응답 코드 추가\n\n* feat : 동아리 중복 생성 에러 코드 추가\n\n* feat : 어드민 동아리 생성 요청 DTO 확장\n\n* feat : 어드민 동아리 생성 응답 DTO 추가\n\n* feat : 어드민 동아리 생성 API 추가\n\n* feat : 동아리 생성 유스케이스 인터페이스 추가\n\n* feat : 동아리 생성 커맨드 정의 추가\n\n* feat : 동아리 생성 CommandPort 메서드 추가\n\n* feat : 동아리 생성 이벤트 포트 확장\n\n* feat : 동아리 중복 조회 포트 메서드 추가\n\n* feat : 동아리 이름 소속 중복 조회 리포지토리 메서드 추가\n\n* feat : ClubSns JPA Repository 구현 추가\n\n* feat : 동아리 생성 중복체크 persistence 구현 추가\n\n* feat : 동아리 카테고리 한글 매핑 지원 추가\n\n* feat : 동아리 소속 한글 매핑 지원 추가\n\n* feat : 동아리 SNS URL 도메인 객체 매핑 추가\n\n* feat : SNS URL 기반 타입 판별 로직 추가\n\n* feat : 스토리지 업로드 유스케이스 인터페이스 정의\n\n* feat : 다중 파일 업로드 커맨드 모델 추가\n\n* feat : 단일 이미지 업로드 커맨드 모델 추가\n\n* feat : 이미지 삭제 이벤트 모델 확장\n\n* feat : 동아리 생성 이미지 업로드 이벤트 구현\n\n* feat : 동아리 생성 후 이미지 업로드 이벤트 리스너 추가\n\n* feat : 동아리 생성 이벤트 발행 어댑터 구현\n\n* fix : 파일 스트림 업로드 처리 및 예외 로깅 보강\n\n* feat : 동아리 생성 서비스 로직 및 검증 구현\n\n* test : 어드민 동아리 생성 요청 응답 스텝 추가\n\n* test : 어드민 동아리 정보 업로드 인수테스트 추가\n\n* test : ClubCategory 변환 테스트 정리\n\n* test : ClubDivision 변환 테스트 정리\n\n* fix : 스토리지 Mock 어댑터 프로필 설정 조정\n\n* fix : 스토리지 S3 어댑터 프로필 설정 조정\n\n* refactor : logoImage를 iconImage 이름 통일\n\n* fix : posterImage Null 분기 처리\n\n* fix : 주석처리 해놓은 어노테이션 제거\n\n* refactor : 동아리 등록 API 파라미터명 변경\n\n* fix : 이벤트 생성 간 path 중복 사용 해결\n\n* remove : 불필요 파일 제거\n\n* remove : 미사용 파일 제거\n\n* fix : reference type 대신 primitive type 사용하도록 수정\n\n* fix : ClubSnsType 매핑 과정 구체화 및 예외 케이스 처리\n\n* test : ClubSnsType 도메인 테스트 추가\n\n* fix : ClubSnsType NPE 예외 처리\n\n* [fix]: 중복 마이그레이션 파일 제거\n\n* [feat]: club 생성자 추가 및 building 엔티티 분리 적용\n\n* [fix]: 동아리 생성 api @RequestPart → @RequestParam로 수정\n\n* [fix]: 동아리 생성 테스트 posterimage 필드명 통일\n\n* [fix]: data에 AdminClubCreateResponse 반환하도록 수정\n\n* [fix]: data에 AdminClubCreateResponse 반환하도록 수정\n\n---------\n\nCo-authored-by: jiyun921 <ryn0921@naver.com>\n\n* [fix] Rename \bprod-kr.yml to prod-kr.yml (#394)\n\n---------\n\nCo-authored-by: HanJu Kim <56250226+rlagkswn00@users.noreply.github.com>"
+    },
+    {
+      "sha": "b6df0094cd20ddf9714a49103a018655fb5addf4",
+      "date": "2026-07-20T20:51:55+09:00",
+      "author": "양지윤",
+      "email": "155087951+jiyun921@users.noreply.github.com",
+      "message": "[fix] Rename \bprod-kr.yml to prod-kr.yml (#394)"
+    },
+    {
+      "sha": "58a9ae378638e53b498b51e984b7196f5704c00e",
+      "date": "2026-07-07T10:31:51+09:00",
+      "author": "양지윤",
+      "email": "155087951+jiyun921@users.noreply.github.com",
+      "message": "Revert \"Release 2.17.6 (#389)\" (#390)\n\nThis reverts commit 5dc1ca1bbc9d61657b393caca1256d243e6add4b."
+    },
+    {
+      "sha": "5dc1ca1bbc9d61657b393caca1256d243e6add4b",
+      "date": "2026-07-07T10:08:48+09:00",
+      "author": "양지윤",
+      "email": "155087951+jiyun921@users.noreply.github.com",
+      "message": "Release 2.17.6 (#389)\n\n* [fix]: 동아리 목록 조회 api 응답에 recruitmentStatus 필드 추가 (#384)\n\n* [fix]: 동아리 목록 조회 api 응답에 recruitmentStatus 필드 추가\n\n* [refactor]: 시간 계산 한번만 하도록 수정\n\n* Feat : 어드민 동아리 업로드 API 구현 (#353)\n\n* feat : club icon_image_path 컬럼 마이그레이션 추가\n\n* feat : 동아리 생성 성공 응답 코드 추가\n\n* feat : 동아리 중복 생성 에러 코드 추가\n\n* feat : 어드민 동아리 생성 요청 DTO 확장\n\n* feat : 어드민 동아리 생성 응답 DTO 추가\n\n* feat : 어드민 동아리 생성 API 추가\n\n* feat : 동아리 생성 유스케이스 인터페이스 추가\n\n* feat : 동아리 생성 커맨드 정의 추가\n\n* feat : 동아리 생성 CommandPort 메서드 추가\n\n* feat : 동아리 생성 이벤트 포트 확장\n\n* feat : 동아리 중복 조회 포트 메서드 추가\n\n* feat : 동아리 이름 소속 중복 조회 리포지토리 메서드 추가\n\n* feat : ClubSns JPA Repository 구현 추가\n\n* feat : 동아리 생성 중복체크 persistence 구현 추가\n\n* feat : 동아리 생성 필드 및 생성자 확장\n\n* feat : 동아리 카테고리 한글 매핑 지원 추가\n\n* feat : 동아리 소속 한글 매핑 지원 추가\n\n* feat : 동아리 SNS URL 도메인 객체 매핑 추가\n\n* feat : SNS URL 기반 타입 판별 로직 추가\n\n* feat : 스토리지 업로드 유스케이스 인터페이스 정의\n\n* feat : 다중 파일 업로드 커맨드 모델 추가\n\n* feat : 단일 이미지 업로드 커맨드 모델 추가\n\n* feat : 이미지 삭제 이벤트 모델 확장\n\n* feat : 동아리 생성 이미지 업로드 이벤트 구현\n\n* feat : 동아리 생성 후 이미지 업로드 이벤트 리스너 추가\n\n* feat : 동아리 생성 이벤트 발행 어댑터 구현\n\n* fix : 파일 스트림 업로드 처리 및 예외 로깅 보강\n\n* feat : 동아리 생성 서비스 로직 및 검증 구현\n\n* test : 어드민 동아리 생성 요청 응답 스텝 추가\n\n* test : 어드민 동아리 정보 업로드 인수테스트 추가\n\n* test : ClubCategory 변환 테스트 정리\n\n* test : ClubDivision 변환 테스트 정리\n\n* fix : 스토리지 Mock 어댑터 프로필 설정 조정\n\n* fix : 스토리지 S3 어댑터 프로필 설정 조정\n\n* refactor : logoImage를 iconImage 이름 통일\n\n* fix : posterImage Null 분기 처리\n\n* fix : 주석처리 해놓은 어노테이션 제거\n\n* refactor : 동아리 등록 API 파라미터명 변경\n\n* fix : 이벤트 생성 간 path 중복 사용 해결\n\n* remove : 불필요 파일 제거\n\n* remove : 미사용 파일 제거\n\n* fix : reference type 대신 primitive type 사용하도록 수정\n\n* fix : ClubSnsType 매핑 과정 구체화 및 예외 케이스 처리\n\n* test : ClubSnsType 도메인 테스트 추가\n\n* fix : ClubSnsType NPE 예외 처리\n\n* feat : club icon_image_path 컬럼 마이그레이션 추가\n\n* feat : 동아리 생성 성공 응답 코드 추가\n\n* feat : 동아리 중복 생성 에러 코드 추가\n\n* feat : 어드민 동아리 생성 요청 DTO 확장\n\n* feat : 어드민 동아리 생성 응답 DTO 추가\n\n* feat : 어드민 동아리 생성 API 추가\n\n* feat : 동아리 생성 유스케이스 인터페이스 추가\n\n* feat : 동아리 생성 커맨드 정의 추가\n\n* feat : 동아리 생성 CommandPort 메서드 추가\n\n* feat : 동아리 생성 이벤트 포트 확장\n\n* feat : 동아리 중복 조회 포트 메서드 추가\n\n* feat : 동아리 이름 소속 중복 조회 리포지토리 메서드 추가\n\n* feat : ClubSns JPA Repository 구현 추가\n\n* feat : 동아리 생성 중복체크 persistence 구현 추가\n\n* feat : 동아리 카테고리 한글 매핑 지원 추가\n\n* feat : 동아리 소속 한글 매핑 지원 추가\n\n* feat : 동아리 SNS URL 도메인 객체 매핑 추가\n\n* feat : SNS URL 기반 타입 판별 로직 추가\n\n* feat : 스토리지 업로드 유스케이스 인터페이스 정의\n\n* feat : 다중 파일 업로드 커맨드 모델 추가\n\n* feat : 단일 이미지 업로드 커맨드 모델 추가\n\n* feat : 이미지 삭제 이벤트 모델 확장\n\n* feat : 동아리 생성 이미지 업로드 이벤트 구현\n\n* feat : 동아리 생성 후 이미지 업로드 이벤트 리스너 추가\n\n* feat : 동아리 생성 이벤트 발행 어댑터 구현\n\n* fix : 파일 스트림 업로드 처리 및 예외 로깅 보강\n\n* feat : 동아리 생성 서비스 로직 및 검증 구현\n\n* test : 어드민 동아리 생성 요청 응답 스텝 추가\n\n* test : 어드민 동아리 정보 업로드 인수테스트 추가\n\n* test : ClubCategory 변환 테스트 정리\n\n* test : ClubDivision 변환 테스트 정리\n\n* fix : 스토리지 Mock 어댑터 프로필 설정 조정\n\n* fix : 스토리지 S3 어댑터 프로필 설정 조정\n\n* refactor : logoImage를 iconImage 이름 통일\n\n* fix : posterImage Null 분기 처리\n\n* fix : 주석처리 해놓은 어노테이션 제거\n\n* refactor : 동아리 등록 API 파라미터명 변경\n\n* fix : 이벤트 생성 간 path 중복 사용 해결\n\n* remove : 불필요 파일 제거\n\n* remove : 미사용 파일 제거\n\n* fix : reference type 대신 primitive type 사용하도록 수정\n\n* fix : ClubSnsType 매핑 과정 구체화 및 예외 케이스 처리\n\n* test : ClubSnsType 도메인 테스트 추가\n\n* fix : ClubSnsType NPE 예외 처리\n\n* [fix]: 중복 마이그레이션 파일 제거\n\n* [feat]: club 생성자 추가 및 building 엔티티 분리 적용\n\n* [fix]: 동아리 생성 api @RequestPart → @RequestParam로 수정\n\n* [fix]: 동아리 생성 테스트 posterimage 필드명 통일\n\n* [fix]: data에 AdminClubCreateResponse 반환하도록 수정\n\n* [fix]: data에 AdminClubCreateResponse 반환하도록 수정\n\n---------\n\nCo-authored-by: jiyun921 <ryn0921@naver.com>\n\n---------\n\nCo-authored-by: HanJu Kim <56250226+rlagkswn00@users.noreply.github.com>"
+    },
+    {
+      "sha": "0f6ff4692caf974cfdc9ac7f73efd8d2400872cb",
+      "date": "2026-07-04T02:04:35+09:00",
+      "author": "HanJu Kim",
+      "email": "56250226+rlagkswn00@users.noreply.github.com",
+      "message": "Feat : 어드민 동아리 업로드 API 구현 (#353)\n\n* feat : club icon_image_path 컬럼 마이그레이션 추가\n\n* feat : 동아리 생성 성공 응답 코드 추가\n\n* feat : 동아리 중복 생성 에러 코드 추가\n\n* feat : 어드민 동아리 생성 요청 DTO 확장\n\n* feat : 어드민 동아리 생성 응답 DTO 추가\n\n* feat : 어드민 동아리 생성 API 추가\n\n* feat : 동아리 생성 유스케이스 인터페이스 추가\n\n* feat : 동아리 생성 커맨드 정의 추가\n\n* feat : 동아리 생성 CommandPort 메서드 추가\n\n* feat : 동아리 생성 이벤트 포트 확장\n\n* feat : 동아리 중복 조회 포트 메서드 추가\n\n* feat : 동아리 이름 소속 중복 조회 리포지토리 메서드 추가\n\n* feat : ClubSns JPA Repository 구현 추가\n\n* feat : 동아리 생성 중복체크 persistence 구현 추가\n\n* feat : 동아리 생성 필드 및 생성자 확장\n\n* feat : 동아리 카테고리 한글 매핑 지원 추가\n\n* feat : 동아리 소속 한글 매핑 지원 추가\n\n* feat : 동아리 SNS URL 도메인 객체 매핑 추가\n\n* feat : SNS URL 기반 타입 판별 로직 추가\n\n* feat : 스토리지 업로드 유스케이스 인터페이스 정의\n\n* feat : 다중 파일 업로드 커맨드 모델 추가\n\n* feat : 단일 이미지 업로드 커맨드 모델 추가\n\n* feat : 이미지 삭제 이벤트 모델 확장\n\n* feat : 동아리 생성 이미지 업로드 이벤트 구현\n\n* feat : 동아리 생성 후 이미지 업로드 이벤트 리스너 추가\n\n* feat : 동아리 생성 이벤트 발행 어댑터 구현\n\n* fix : 파일 스트림 업로드 처리 및 예외 로깅 보강\n\n* feat : 동아리 생성 서비스 로직 및 검증 구현\n\n* test : 어드민 동아리 생성 요청 응답 스텝 추가\n\n* test : 어드민 동아리 정보 업로드 인수테스트 추가\n\n* test : ClubCategory 변환 테스트 정리\n\n* test : ClubDivision 변환 테스트 정리\n\n* fix : 스토리지 Mock 어댑터 프로필 설정 조정\n\n* fix : 스토리지 S3 어댑터 프로필 설정 조정\n\n* refactor : logoImage를 iconImage 이름 통일\n\n* fix : posterImage Null 분기 처리\n\n* fix : 주석처리 해놓은 어노테이션 제거\n\n* refactor : 동아리 등록 API 파라미터명 변경\n\n* fix : 이벤트 생성 간 path 중복 사용 해결\n\n* remove : 불필요 파일 제거\n\n* remove : 미사용 파일 제거\n\n* fix : reference type 대신 primitive type 사용하도록 수정\n\n* fix : ClubSnsType 매핑 과정 구체화 및 예외 케이스 처리\n\n* test : ClubSnsType 도메인 테스트 추가\n\n* fix : ClubSnsType NPE 예외 처리\n\n* feat : club icon_image_path 컬럼 마이그레이션 추가\n\n* feat : 동아리 생성 성공 응답 코드 추가\n\n* feat : 동아리 중복 생성 에러 코드 추가\n\n* feat : 어드민 동아리 생성 요청 DTO 확장\n\n* feat : 어드민 동아리 생성 응답 DTO 추가\n\n* feat : 어드민 동아리 생성 API 추가\n\n* feat : 동아리 생성 유스케이스 인터페이스 추가\n\n* feat : 동아리 생성 커맨드 정의 추가\n\n* feat : 동아리 생성 CommandPort 메서드 추가\n\n* feat : 동아리 생성 이벤트 포트 확장\n\n* feat : 동아리 중복 조회 포트 메서드 추가\n\n* feat : 동아리 이름 소속 중복 조회 리포지토리 메서드 추가\n\n* feat : ClubSns JPA Repository 구현 추가\n\n* feat : 동아리 생성 중복체크 persistence 구현 추가\n\n* feat : 동아리 카테고리 한글 매핑 지원 추가\n\n* feat : 동아리 소속 한글 매핑 지원 추가\n\n* feat : 동아리 SNS URL 도메인 객체 매핑 추가\n\n* feat : SNS URL 기반 타입 판별 로직 추가\n\n* feat : 스토리지 업로드 유스케이스 인터페이스 정의\n\n* feat : 다중 파일 업로드 커맨드 모델 추가\n\n* feat : 단일 이미지 업로드 커맨드 모델 추가\n\n* feat : 이미지 삭제 이벤트 모델 확장\n\n* feat : 동아리 생성 이미지 업로드 이벤트 구현\n\n* feat : 동아리 생성 후 이미지 업로드 이벤트 리스너 추가\n\n* feat : 동아리 생성 이벤트 발행 어댑터 구현\n\n* fix : 파일 스트림 업로드 처리 및 예외 로깅 보강\n\n* feat : 동아리 생성 서비스 로직 및 검증 구현\n\n* test : 어드민 동아리 생성 요청 응답 스텝 추가\n\n* test : 어드민 동아리 정보 업로드 인수테스트 추가\n\n* test : ClubCategory 변환 테스트 정리\n\n* test : ClubDivision 변환 테스트 정리\n\n* fix : 스토리지 Mock 어댑터 프로필 설정 조정\n\n* fix : 스토리지 S3 어댑터 프로필 설정 조정\n\n* refactor : logoImage를 iconImage 이름 통일\n\n* fix : posterImage Null 분기 처리\n\n* fix : 주석처리 해놓은 어노테이션 제거\n\n* refactor : 동아리 등록 API 파라미터명 변경\n\n* fix : 이벤트 생성 간 path 중복 사용 해결\n\n* remove : 불필요 파일 제거\n\n* remove : 미사용 파일 제거\n\n* fix : reference type 대신 primitive type 사용하도록 수정\n\n* fix : ClubSnsType 매핑 과정 구체화 및 예외 케이스 처리\n\n* test : ClubSnsType 도메인 테스트 추가\n\n* fix : ClubSnsType NPE 예외 처리\n\n* [fix]: 중복 마이그레이션 파일 제거\n\n* [feat]: club 생성자 추가 및 building 엔티티 분리 적용\n\n* [fix]: 동아리 생성 api @RequestPart → @RequestParam로 수정\n\n* [fix]: 동아리 생성 테스트 posterimage 필드명 통일\n\n* [fix]: data에 AdminClubCreateResponse 반환하도록 수정\n\n* [fix]: data에 AdminClubCreateResponse 반환하도록 수정\n\n---------\n\nCo-authored-by: jiyun921 <ryn0921@naver.com>"
+    },
+    {
+      "sha": "bc78076b7f793cb8d31c433a9779fe4d3ea61af3",
+      "date": "2026-05-29T09:01:54+09:00",
+      "author": "양지윤",
+      "email": "155087951+jiyun921@users.noreply.github.com",
+      "message": "[fix]: 동아리 목록 조회 api 응답에 recruitmentStatus 필드 추가 (#384)\n\n* [fix]: 동아리 목록 조회 api 응답에 recruitmentStatus 필드 추가\n\n* [refactor]: 시간 계산 한번만 하도록 수정"
+    },
+    {
+      "sha": "b4ee7f935eefb012aab07d85ba20eb89cb3e6477",
+      "date": "2026-05-27T12:03:18+09:00",
+      "author": "HanJu Kim",
+      "email": "56250226+rlagkswn00@users.noreply.github.com",
+      "message": "version 2.17.5\n\n## #️⃣ 이슈\n\nRelease `2.17.5`\n\n## 📌 요약\n\n이번 배포는 Java 21 런타임 기준 전환, 개발/배포 환경 안정화, club legacy 위치 컬럼 제거를 포함합니다.\n\n## 🛠️ 상세\n\n## Infra\n- Java 런타임 기준을 17에서 21로 전환했습니다. Gradle Wrapper, JaCoCo, ArchUnit, GitHub Actions JDK 설정도 Java 21 기준으로 정리했습니다. (#385)\n- 개발 서버 배포 시 비대화식 SSH 세션에서도 `~/.bash_profile` 환경변수가 로드되도록 수정하고, 백그라운드 Java 프로세스의 stdin을 분리해 배포 타임아웃 가능성을 줄였습니다. (#386)\n- dev 배포 SSH 세션이 백그라운드 Java 프로세스에 붙어 대기하지 않도록 추가로 보정했습니다.\n\n## Chore / Refactor\n- building backfill 완료 이후 더 이상 사용하지 않는 club legacy 위치 컬럼(`club.building`, `club.lat`, `club.lon`)을 제거했습니다. (#381)\n\n## Deploy\n- version: 2.17.5\n- base: main\n- head: develop\n- merge method: merge commit\n- release tag: 2.17.5\n- release title: v2.17.5\n\n## 💬 기타\n\n- 포함 범위: `origin/main..origin/develop`\n- 포함 커밋: #385, #386, #381, `30b29786`\n- 이 PR은 `develop -> main` 배포 PR이며, merge commit 방식으로 머지합니다."
+    },
+    {
+      "sha": "30b29786dc3c41d823c15c7b5cfd1ca8c07d4507",
+      "date": "2026-05-27T11:28:27+09:00",
+      "author": "HanJu Kim",
+      "email": "56250226+rlagkswn00@users.noreply.github.com",
+      "message": "Fix: dev 배포 SSH timeout 방지\n\nThe dev deployment starts Spring Boot over SSH and should finish the GitHub Actions step immediately after spawning the process. The previous command kept the remote shell attached to the background Java process, so the app could start successfully while the ssh-action waited until command_timeout and marked the deployment failed.\n\nConstraint: Dev deployment still runs the application directly from the workflow instead of systemd.\n\nConstraint: GitHub Actions Node 20 runtime is being deprecated, so first-party actions are moved to their Node 24 major versions.\n\nRejected: Increase command_timeout | masks the hanging SSH session instead of detaching the process.\n\nConfidence: high\n\nScope-risk: narrow\n\nDirective: Keep long-running Java process stdin detached from SSH sessions in deployment workflows.\n\nTested: Parsed .github/workflows/dev.yml with Ruby YAML loader.\n\nNot-tested: GitHub Actions workflow execution against the dev server.\n\nCo-authored-by: OmX <omx@oh-my-codex.dev>"
+    },
+    {
+      "sha": "1b09cc9607be423e940a88f7155f76c13b9e2fbf",
+      "date": "2026-05-26T23:15:43+09:00",
+      "author": "HanJu Kim",
+      "email": "56250226+rlagkswn00@users.noreply.github.com",
+      "message": "chore: building backfill 이후 club legacy 위치 컬럼 제거 (#381)\n\nclub 상세 위치 조회가 building_id 기반으로 전환되고 dev/main backfill이 완료된 상태라 legacy 위치 컬럼을 별도 drop migration으로 정리한다.\n\nConstraint: base branch is develop\n\nConstraint: club.room and building.name/lat/lon remain active schema\n\nRejected: include place or facility modeling | outside this cleanup PR\n\nRejected: commit the planning document | user requested local plan artifacts not remain in the branch\n\nConfidence: high\n\nScope-risk: narrow\n\nDirective: do not deploy this migration before verifying legacy club.building rows are mapped to building_id\n\nTested: ClubQueryServiceTest and BuildingTest\n\nTested: dev GET https://dev.ku-ring.com/api/v2/clubs/5 returned location from building\n\nTested: main GET https://ku-ring.com/api/v2/clubs/1..5 returned 200\n\nNot-tested: full ./gradlew test blocked by missing Firebase admin SDK JSON in local test classpath\n\nCo-authored-by: OmX <omx@oh-my-codex.dev>"
+    },
+    {
+      "sha": "6c14598d93a8b2abbb9aee5db2094f37c199bf5c",
+      "date": "2026-05-26T23:03:05+09:00",
+      "author": "HanJu Kim",
+      "email": "56250226+rlagkswn00@users.noreply.github.com",
+      "message": "Fix: 개발 서버 배포 시 bash_profile 환경변수 로드하도록 수정 (#386)"
+    },
+    {
+      "sha": "8a60f1a88d49fc27073a7122e88eed8d607a62a6",
+      "date": "2026-05-26T22:26:40+09:00",
+      "author": "HanJu Kim",
+      "email": "56250226+rlagkswn00@users.noreply.github.com",
+      "message": "Chore: Java 21 런타임 기준 전환 (#385)\n\n* chore: Java 21 런타임 기준으로 전환\n\nSpring Boot 3.2.3 상태에서 Java 21을 먼저 적용해 이후 Spring Boot 3.5, Java 25, Boot 4 전환의 기준점을 분리한다. Gradle wrapper와 CI/CD 빌드 JDK를 함께 맞추고 배포 런타임 버전 로그를 남긴다.\n\nConstraint: Spring Boot 3.2.3에서 Java 25를 바로 기준으로 삼지 않고 Java 21 지원 조합을 먼저 확정한다.\n\nRejected: Virtual Thread 적용 포함 | 런타임 버전 전환과 성능/동시성 정책 변경 원인을 분리하기 어렵다.\n\nRejected: Spring Boot 업그레이드 포함 | Java 전환 회귀 범위를 작게 유지하기 어렵다.\n\nConfidence: medium\n\nScope-risk: moderate\n\nReversibility: clean\n\nDirective: 서버 런타임 JDK 21 준비 여부를 확인한 뒤 배포해야 한다.\n\nTested: JAVA_HOME=azul-21.0.6 ./gradlew clean compileJava\n\nTested: JAVA_HOME=azul-21.0.6 ./gradlew compileTestJava\n\nTested: JAVA_HOME=azul-21.0.6 ./gradlew clean build -x test\n\nTested: JAVA_HOME=azul-21.0.6 ./gradlew test --tests com.kustacks.kuring.archunit.DependencyRuleTests\n\nNot-tested: 전체 ./gradlew test는 로컬 워크트리에 복호화된 Firebase credential JSON이 없어 ApplicationContext 초기화에서 실패\n\nCo-authored-by: OmX <omx@oh-my-codex.dev>\n\n* chore: Java 버전 확인 로그 제거\n\nJava 21 마이그레이션에 필요한 빌드와 CI JDK 설정만 남기고, 확인 목적의 java -version 출력과 배포 런타임 환경 로그를 제거한다.\n\nConstraint: 이번 PR은 마이그레이션에 필요한 최소 변경만 포함한다.\n\nRejected: 배포 스크립트 런타임 버전 로그 유지 | 마이그레이션 필수 변경이 아니고 PR 범위를 넓힌다.\n\nConfidence: high\n\nScope-risk: narrow\n\nReversibility: clean\n\nTested: rg -n \"Print Java version|java -version|JAVA_HOME=|PATH=|Java runtime version\" .github scripts 결과 없음\n\nTested: git diff --check\n\nNot-tested: 빌드 재실행 없음, 로그 제거만 수행\n\nCo-authored-by: OmX <omx@oh-my-codex.dev>\n\n* chore: Sonar Gradle 플러그인 호환성 보정\n\nGradle Wrapper를 8.7로 올린 뒤 기존 SonarQube Gradle plugin 3.5.0이 reporting API 호출에서 실패해 CI의 sonarqube task가 깨졌다. Java 21 마이그레이션 빌드 환경을 유지하기 위해 Gradle 8 호환 4.x 플러그인으로 보정한다.\n\nConstraint: Java 21 PR 범위를 유지하기 위해 Spring Boot와 런타임 의존성은 변경하지 않는다.\n\nRejected: Gradle Wrapper 다운그레이드 | Java 21 빌드 기준을 명확히 유지하기 어렵다.\n\nRejected: Sonar task 제거 | CI 품질 게이트를 우회하게 된다.\n\nConfidence: medium\n\nScope-risk: narrow\n\nReversibility: clean\n\nTested: JAVA_HOME=azul-21.0.6 ./gradlew jacocoTestCoverageVerification sonarqube --info 실행 시 기존 Report.getOutputLocation 오류 없이 Sonar 분석 단계 진입\n\nNot-tested: 로컬 SONAR_TOKEN 권한/프로젝트 접근 문제로 SonarCloud 업로드 완료까지는 확인하지 못함\n\nCo-authored-by: OmX <omx@oh-my-codex.dev>\n\n---------\n\nCo-authored-by: OmX <omx@oh-my-codex.dev>"
+    },
+    {
+      "sha": "d77cc542306bb7ba87bcebbb2f83da6cb28cce05",
+      "date": "2026-05-21T22:38:36+09:00",
+      "author": "HanJu Kim",
+      "email": "56250226+rlagkswn00@users.noreply.github.com",
+      "message": "version 2.17.4 (#377)\n\n* Chore: Renovate와 CI Canary 설정 추가 (#376)\n\n* chore: Renovate와 CI Canary 설정 추가\n\n* chore: Renovate 보안 취약점 알림 설정 추가\n\n* Feat: building 도메인 분리 및 club 위치 참조 전환 (#373)\n\n* feat: building 도메인 분리 기반 추가\n\n* refactor: club building 참조 조회 전환\n\n* test: building 도메인 테스트 추가\n\n* refactor: building 이름 유니크 제약 추가"
+    }
+  ],
+  "commit_sha": "a0906a9dc51133240d221ec810d9cb9e191d6119",
+  "extracted_at": "2026-10-05T18:42:00.807548+00:00"
+}

@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "b1c4e50a17ce30f2fe71e1d50bc75736842d647f",
+      "date": "2026-08-16T13:02:54Z",
+      "author": "github-actions[bot]",
+      "email": "41898282+github-actions[bot]@users.noreply.github.com",
+      "message": "Prepare next development iteration (bump to 0.1.1-SNAPSHOT)\n"
+    },
+    {
+      "sha": "3026b72d9492dfaba635a75cf6120c74ca0f7d80",
+      "date": "2026-08-16T13:02:32Z",
+      "author": "github-actions[bot]",
+      "email": "41898282+github-actions[bot]@users.noreply.github.com",
+      "message": "Release v0.1.0\n"
+    },
+    {
+      "sha": "018ad17f114b54e6da02be38ebbce5cf222b2035",
+      "date": "2026-08-16T14:57:30+02:00",
+      "author": "EH Palumbo",
+      "email": "ehpalumbo@gmail.com",
+      "message": "Evict removed features on refresh; gate startup on first load (#27)\n\n* Refresh README with current usage, container and docs overview\n\n* Evict removed features on refresh; back cache with a ConcurrentMap\n\nReplace the Spring CaffeineCache abstraction with a plain ConcurrentMap\n(the live asMap() view of a Caffeine cache), keeping Caffeine confined to\ninfra and letting the application layer read/write the store directly.\n\nCachingFeatureService becomes InMemoryFeatureService, now a Subscriber\nfed by the load pipeline: per refresh tick it tracks the ids seen,\ncaches each parsed feature, and on tick completion evicts every cached\nfeature no longer present, so features deleted from the repository stop\nbeing served on the next poll. A failed tick leaves the cache untouched;\nthe TTL remains as a backstop. Drop the now-unused spring-context-support\ndependency.\n\nFeatureLoader runs one tick immediately and then one per completed tick\nplus a fixed delay (Mono.defer(tick).delayElement(refresh).repeat()), so\nticks never overlap even when a refresh is slow. Each read is wrapped in\nMono.defer(...).onErrorResume(...) so a single malformed file is skipped\nwithout aborting the tick.\n\nTests: rename/extend InMemoryFeatureServiceTest with subscriber scenarios,\nadd FeatureLoaderTest for tickFlux, and add an integration scenario\ndeleting a feature from the origin repo and asserting a 404 after the\nnext refresh.\n\n* Make integration tests order-independent without Thread.sleep\n\nRemove @TestMethodOrder/@Order and replace polling sleep loops with\nAwaitility, which spring-boot-starter-test already provides. The removal\ntest now creates and removes its own dedicated feature so no test mutates\nstate another test reads.\n\n* Split refresh scheduling into infra; gate startup on first load\n\nMove the fixed-delay refresh lifecycle out of the application layer:\nFeatureLoader now exposes only Mono<Void> load(), while a new\nFeatureRefreshScheduler (infra.scheduling) owns cadence and lifecycle.\nThe scheduler runs a first tick that blocks startup and retries with\nexponential backoff (features.refresh.backoff.*, default PT1S/PT1M/5),\nso the app is ready only once the cache is populated, then keeps a\nfixed-delay loop whose ticks tolerate failures.\n\n* Complete load Mono only after the cache is reconciled\n\nThe load pipeline emitted the done signal upstream of the cache sink, so\nthe returned Mono completed before InMemoryFeatureService.onComplete()\nevicted removed features. Wrap the sink in a LoadRun subscriber that\nforwards every signal first and only then completes the Mono, and cover\nthe ordering with a regression test.\n\n* Refactor refresh scheduler as SmartLifecycle with configurable timeouts\n\n* Document that load completes only after cache reconciliation"
+    },
+    {
+      "sha": "777fe1ea0ddb616eb1d93a39ca9fc0ea5535f4ce",
+      "date": "2026-08-15T17:53:50+02:00",
+      "author": "EH Palumbo",
+      "email": "ehpalumbo@gmail.com",
+      "message": "Shallow Git clones to improve startup time (#26)\n\n* Refresh git clone via fetch + hard reset instead of pull\n\nThe local clone is a read-only mirror of the latest committed feature files,\nso a merge-based pull is unnecessary and fails on shallow clones (no shared\nhistory to compute a merge base). Fetch the tracked branch and hard-reset the\nworking tree to its remote tip, which works identically on full and shallow\nclones.\n\n* Clone the feature repo shallowly by default\n\nAdd a configurable clone depth (features.git.clone.depth, default 1) so the\nstartup clone transfers only the most recent commit instead of the full\nhistory, reducing startup time. Set it to 0 for a full-history clone. The\ndepth is preserved across refresh fetches so the clone stays shallow.\n\nJGit rejects setDepth(0), so depth is applied only when > 0.\n\n* Document configurable shallow clone depth\n\n* Document fetch+reset refresh and shallow clone in architecture docs\n\n* Optimize clone and refresh in GitRepoManager\n\n- Drop the lsRemote round-trip used to resolve the default branch before\n  cloning; JGit's clone already checks out HEAD when no branch is set, so a\n  branch override is only set when configured. Removes the HEAD-not-symbolic\n  master fallback.\n- Only reconcile the tracked branch when opening an existing clone; a fresh\n  clone already checks out the tracked branch, so the call is a no-op there.\n- Fetch only the tracked branch during update() via a branch-scoped refspec,\n  reducing transfer on multi-branch repositories.\n\n* Keep all fetches shallow and document the ls-remote clone narrowing\n\nApply the shallow clone depth to the branch-override reconciliation fetch so\nrestarting with a changed features.git.remote.branch does not transfer the new\nbranch's full history. Document that the ls-remote probe exists to name the\nbranch for branchesToClone, since JGit clones every remote branch otherwise.\nAdd tests asserting the clone is narrowed to the tracked branch only and stays\nshallow across an override switch.\n\n* Add debug logging for branch listing in GitRepoManager"
+    },
+    {
+      "sha": "89ed417d1d457c67caf9613aefc08f41d3c3a57e",
+      "date": "2026-08-14T23:53:13+02:00",
+      "author": "EH Palumbo",
+      "email": "ehpalumbo@gmail.com",
+      "message": "Require git remote URL outside the dev profile (#24)\n\nRemove the hardcoded development repository URI from application.yaml so\nproduction never silently clones it. The URL is now mandatory in every\nenvironment except local development: when missing, startup aborts with a\nclear error naming features.git.remote.url. Local runs keep using the\ndevelopment repository via the new dev profile (application-dev.yaml)."
+    },
+    {
+      "sha": "15edda80fbc1ffbcc5f9959ce506fbaab900e0b2",
+      "date": "2026-08-14T22:56:52+02:00",
+      "author": "EH Palumbo",
+      "email": "ehpalumbo@gmail.com",
+      "message": "Track remote default branch with configurable override (#23)\n\n* Track remote default branch with configurable override\n\n* Reconcile branch override on existing clone at startup"
+    },
+    {
+      "sha": "42e48698c89cc82d7b4bd0a6847bedc0bfd31e30",
+      "date": "2026-08-14T20:54:48+02:00",
+      "author": "EH Palumbo",
+      "email": "ehpalumbo@gmail.com",
+      "message": "Reactive file repository: offload blocking I/O to boundedElastic (#22)\n\n* Make local feature file scanning reactive\n\nOffload the blocking filesystem enumeration (directory listing and file\nattribute checks) to a bounded-elastic scheduler via Mono.fromCallable,\ncollecting listings with try-with-resources. Content reads stay on the\nreactive DataBufferUtils.read path; file-name ordering is preserved with\nflatMapSequential.\n\n* Offload blocking git update to boundedElastic scheduler\n\n* Document boundedElastic offloading in reactive data flow docs\n\n* Manage DirectoryStream lifecycle with Flux.using\n\nReplace Mono.fromCallable + try-with-resources with Flux.using (eager),\nwhich closes each DirectoryStream on completion, downstream error, or\ncancellation. The checked IOException from close() is unwrapped via a\nsmall Consumer helper."
+    },
+    {
+      "sha": "ddc9db3f300050cfc0c3bf9998d74f5d05bd48f7",
+      "date": "2026-08-14T17:39:48+02:00",
+      "author": "EH Palumbo",
+      "email": "ehpalumbo@gmail.com",
+      "message": "Add GitHub Actions release pipeline (#19) (#20)\n\n* Add GitHub Actions release pipeline (#19)\n\n- Add Release workflow (release.yml): workflow_dispatch + workflow_call,\n  optional semver input (blank derives from gradle.properties), builds and\n  publishes ghcr.io/ehpalumbo/feature-valves image (latest only from\n  master), creates v<version> tag and GitHub Release, and opens a PR to\n  bump the next snapshot version\n- Move project version to gradle.properties; build.gradle reads it via\n  Gradle convention and -Pversion overrides it for release builds\n- Drop master-only image artifact save/upload from CI workflow; keep\n  bootBuildImage as build validation\n- Document the release process in docs/operations/release.md and update\n  index and container-image docs\n\n* Address release pipeline review comments (#20)\n\n- Derive the image name from github.repository and keep it in a job-level\n  IMAGE_NAME variable (registry in REGISTRY), instead of hardcoding\n  ghcr.io/ehpalumbo/feature-valves\n- Enable auto-generated release notes on the GitHub Release\n- Replace the bump-PR with direct version commits pushed via a\n  write-capable deploy key that bypasses the branch ruleset; commit the\n  release version before tagging so v<version> points at a released\n  version, then commit the next snapshot\n- Drop pull-requests permission; gitignore the deploy key files\n\n* Harden release workflow for idempotent reruns and pin version before build"
+    },
+    {
+      "sha": "5fd501c048b3d0c6ea88a5652bb70df0ef570fc7",
+      "date": "2026-08-13T23:36:41+02:00",
+      "author": "EH Palumbo",
+      "email": "ehpalumbo@gmail.com",
+      "message": "Add Docker image build via Spring Boot buildpacks with AOT processing (#6) (#18)\n\nBuild an OCI image with the bootBuildImage Gradle task (Paketo tiny/Ubuntu\nNoble run image), applying the spring-boot-aot plugin so the JVM image runs\nAOT-processed (spring.aot.enabled=true baked into JAVA_TOOL_OPTIONS). Test AOT\nis disabled as it is only needed for GraalVM native test runs.\n\nCI builds the image in the existing build job on every run (reusing compiled\noutputs) and docker-saves the image as an artifact on master only. JDK\ndistribution switched to Liberica to match the runtime JRE in the image.\n\nDocument the approach, base-image rationale, and run instructions in the README\nand a new operations doc page."
+    },
+    {
+      "sha": "2eabc91c88cf7265b7b89347029ba6a9e3fce5ab",
+      "date": "2026-08-13T00:21:39+02:00",
+      "author": "EH Palumbo",
+      "email": "ehpalumbo@gmail.com",
+      "message": "Introduce packages to improve modularity (#14) (#17)\n\n* Introduce packages to improve modularity (#14)\n\n* Document package/layer structure in architecture overview (#14)"
+    },
+    {
+      "sha": "685b2d9e498a7c2e9ec3ebf103840447792f969a",
+      "date": "2026-08-12T23:20:05+02:00",
+      "author": "EH Palumbo",
+      "email": "ehpalumbo@gmail.com",
+      "message": "Add JaCoCo coverage and publish reports as CI artifacts (#7) (#16)"
+    },
+    {
+      "sha": "984a12bc4b4944ad6d347f02f38fdd6734884017",
+      "date": "2026-08-12T23:05:12+02:00",
+      "author": "EH Palumbo",
+      "email": "ehpalumbo@gmail.com",
+      "message": "Leverage Lombok where applicable (#12) (#15)\n\n* Leverage Lombok where applicable (#12)\n\nReduce boilerplate with Lombok annotations:\n- @RequiredArgsConstructor for constructor injection in CachingFeatureService,\n  FeatureCheckController, and GitFeatureFileRepository\n- @Slf4j for logging in CachingFeatureService and FeatureLoader\n- @EqualsAndHashCode in ExpositionLevel\n\nLeave manual equals/hashCode in Feature (identity by id), and manual\nconstructors that transform @Value strings (LocalFeatureFileRepository,\nGitRepoManager, FeatureLoader) intact to avoid over-application.\n\n* Reformat and reorganize imports"
+    },
+    {
+      "sha": "145f5422dd40a8c96e24d3eab48733183b953088",
+      "date": "2026-08-12T22:46:57+02:00",
+      "author": "EH Palumbo",
+      "email": "ehpalumbo@gmail.com",
+      "message": "Enhance javadoc throughout the project (#11) (#13)\n\n* Enhance javadoc throughout the project (#11)\n\n* Clarify Javadoc for FeatureValve matches method description\n\n* Refactor hash calculation in HashingEvaluator\n\n* Remove no-op constructors; disable javadoc missing-member lint\n\nReview comments (#13) noted the explicit no-arg constructors added for\nwarning-free javadoc are unnecessary. Remove them from Application,\nCacheConfig, and YamlFileFeatureFactory, and instead disable javadoc's\n'missing' doclint check in build.gradle so the build stays warning-free\nwithout polluting code with no-op constructors."
+    },
+    {
+      "sha": "be88fe10091364c41926753452f45d138ace4146",
+      "date": "2026-08-12T17:51:52+02:00",
+      "author": "EH Palumbo",
+      "email": "ehpalumbo@gmail.com",
+      "message": "Remove Guava: vanilla Java + Spring utils, records, Lombok, Caffeine cache (#10)\n\n* Remove Guava in favor of vanilla Java, Spring utils, records, and Lombok\n\nReplace the Guava dependency across main and tests: Guava's Cache is swapped\nfor Caffeine wrapped in Spring's CaffeineCache (same write-side TTL), pure\ndata carriers become Java records, behavior-bearing classes use Lombok, and\nremaining API calls map to java.util and org.springframework.util equivalents.\nUpdate embedded architecture docs to drop Guava references.\n\n* Address review: inject cache via config class, Duration TTL, newlines, BOM cleanup"
+    },
+    {
+      "sha": "c7960604c3a0a3440f78af3a88d9cf353b9190c1",
+      "date": "2026-08-12T14:44:25+02:00",
+      "author": "EH Palumbo",
+      "email": "ehpalumbo@gmail.com",
+      "message": "Upgrade utility dependencies (Guava, JGit) and CI helper actions (#8)\n\n* Upgrade to Guava 33.6.0 and JGit 7.7.1 latest stable\n\n* Upgrade CI helper actions to latest majors"
+    },
+    {
+      "sha": "a4c0847ab90c2c10d85eb453411655baa5a8eb4e",
+      "date": "2026-08-12T01:10:34+02:00",
+      "author": "EH Palumbo",
+      "email": "ehpalumbo@gmail.com",
+      "message": "Upgrade to Spring Boot 4.1.0 / Spring Framework 7 / Gradle 9 / JDK 25 (#3)\n\n* Add SIA for Spring Boot 4 upgrade with pre-upgrade test coverage gate\n\n* Add implementation plan for Spring Boot 4 upgrade\n\n* Add pre-upgrade test coverage gate for Spring Boot 4 upgrade\n\nAuthor 44-test JUnit 4 suite on the current Boot 2.0.0.M4 / JDK 8 stack:\nunit tests over the domain/engine, identifier and value objects, Jackson\nPOJOs, service/factory, and repository layers, plus a full-context\nREST integration test (RANDOM_PORT + WebTestClient) driven by a real\nlocal JGit repo. This suite is the no-regression proof for the Boot\n4.1.0 jump.\n\nDeviation from plan (approved): LocalFeatureFileRepository.filesOf\npaired sorted ids with async flatMap reads via zipWith, which could\nreorder buffers and made the pre-existing testLoadAll flaky. Rewritten\nto a single-pass, order-preserving flatMapSequential.\n\nAlso corrects SIA finding #3: FeatureCheckRequest's single-arg\n@JsonCreator(Map) is a delegate creator, so the request body is a flat\ntag map, not {\"tags\":{...}}; tests and plan docs updated accordingly.\n\n* Upgrade to Spring Boot 4.1.0 with JUnit Jupiter test migration\n\nPhase 1 (Boot 4.1.0 / Gradle 9.7 / JDK 25):\n- Rewrite build.gradle: plugins block, spring-boot-dependencies platform,\n  implementation/testImplementation configurations, sourceCompatibility 25,\n  useJUnitPlatform, remove io.spring.dependency-management and snapshot repos\n- Regenerate Gradle wrapper to 9.7.0\n- Replace removed DataBufferUtils.read(AsynchronousFileChannel, ...) overload\n  with the Path-based read (LocalFeatureFileRepository)\n- Refresh CI workflow to v4 actions on JDK 25 with gradle/actions/setup-gradle\n\nPhase 2 (JUnit 4 -> Jupiter migration, zero assertion changes):\n- Migrate all 12 test classes to JUnit Jupiter; TemporaryFolder -> @TempDir,\n  syncBody -> bodyValue, drop SpringRunner\n- Add spring-boot-webtestclient dependency; AutoConfigureWebTestClient moved to\n  org.springframework.boot.webtestclient.autoconfigure in Boot 4\n- Jackson 3: test mapper imports -> tools.jackson.databind.ObjectMapper\n- Fix flat-map request contract on Jackson 3: explicit\n  @JsonCreator(mode = DELEGATING) since single-arg @JsonCreator becomes\n  property-based when compiled with -parameters\n- Update plan README with Phase 2 corrections\n\nFull ./gradlew build green on JDK 25 (44 tests, no assertion changes).\n\n* Remove completed SIA and implementation plan docs\n\nThe Spring Boot 4.1.0 upgrade is delivered; drop the planning artifacts\nand the stale index link.\n\n* Modernize tests with text blocks, var, and final\n\n* Update architecture docs for Spring Boot 4.1.0 and Java 25 upgrade\n\n* Replace system properties with @DynamicPropertySource in integration test\n\n* Bump version to 0.1.0-SNAPSHOT\n\n* Publish test results to GitHub Actions"
+    },
+    {
+      "sha": "8b72dee5f248f992513ad69e436e043b3dfc1bf1",
+      "date": "2026-08-11T23:11:42+02:00",
+      "author": "EH Palumbo",
+      "email": "ehpalumbo@gmail.com",
+      "message": "Add codebase-embedded architecture docs (#2)"
+    },
+    {
+      "sha": "e356579118f5bc1f8cd019c0fc402dd22a7c6883",
+      "date": "2021-08-09T11:16:59+02:00",
+      "author": "Ezequiel Palumbo",
+      "email": "ehpalumbo@gmail.com",
+      "message": "Setup GitHub actions build workflow (#1)\n\n* Setup GitHub actions build workflow\n\n* Add gradle-executable option"
+    },
+    {
+      "sha": "6973290be8f6223a8dda7c82e5dda5dd85359a77",
+      "date": "2017-09-26T21:41:53-03:00",
+      "author": "Ezequiel Palumbo",
+      "email": "ezequiel.palumbo@mercadolibre.com",
+      "message": "Update README.md - add example data"
+    },
+    {
+      "sha": "569ba7006af9b8dd2b5f413606d38328a19eb1a3",
+      "date": "2017-09-26T00:46:26-03:00",
+      "author": "Ezequiel Palumbo",
+      "email": "ezequiel.palumbo@mercadolibre.com",
+      "message": "Create README.md"
+    },
+    {
+      "sha": "06e30fc6bcbea4a9eaf3ddd40c9af74be3f3985d",
+      "date": "2017-09-18T12:42:11-03:00",
+      "author": "ehpalumbo",
+      "email": "ehpalumbo@gmail.com",
+      "message": "Extracted feature file repository interface to customize file providers.\n"
+    },
+    {
+      "sha": "5a269608b46d89c0d250607cee83dbbefb5062d9",
+      "date": "2017-09-17T22:32:41-03:00",
+      "author": "ehpalumbo",
+      "email": "ehpalumbo@gmail.com",
+      "message": "Ensure order when listing files.\n"
+    },
+    {
+      "sha": "6795a8ca0a20b33b91cd577efa5bd7693ecbfa45",
+      "date": "2017-09-17T21:53:49-03:00",
+      "author": "ehpalumbo",
+      "email": "ehpalumbo@gmail.com",
+      "message": "Fix gradle wrapper.\n"
+    },
+    {
+      "sha": "92a8a17e07fea11ef2df99281d42743b8173abb8",
+      "date": "2017-09-17T21:14:55-03:00",
+      "author": "ehpalumbo",
+      "email": "ehpalumbo@gmail.com",
+      "message": "Using Java 8 Duration format to configure intervals.\n"
+    },
+    {
+      "sha": "dd04fae9d189bf2590126ec052ebec10ef53d971",
+      "date": "2017-09-17T21:03:15-03:00",
+      "author": "ehpalumbo",
+      "email": "ehpalumbo@gmail.com",
+      "message": "Fix gradle wrapper.\n"
+    },
+    {
+      "sha": "83b2194fb4a0bf8ee527d31ab583cb5ee297c06b",
+      "date": "2017-09-17T19:42:06-03:00",
+      "author": "ehpalumbo",
+      "email": "ehpalumbo@gmail.com",
+      "message": "Update test feature file.\n"
+    },
+    {
+      "sha": "c1bab730600549ea1b63285172797247dd741515",
+      "date": "2017-09-17T19:31:13-03:00",
+      "author": "ehpalumbo",
+      "email": "ehpalumbo@gmail.com",
+      "message": "Add feature files for testing.\n"
+    },
+    {
+      "sha": "e9349dcf91b9ac310260220b0b6afa05411363ee",
+      "date": "2017-09-17T19:28:57-03:00",
+      "author": "ehpalumbo",
+      "email": "ehpalumbo@gmail.com",
+      "message": "Add Git management to pull remote feature files.\n"
+    },
+    {
+      "sha": "c059fa00f0aa6d71897929b7b4433f7c939163a7",
+      "date": "2017-09-17T18:33:05-03:00",
+      "author": "ehpalumbo",
+      "email": "ehpalumbo@gmail.com",
+      "message": "Async loading of features from local folder.\n"
+    },
+    {
+      "sha": "cf1eef8e2a9c03a0030171cbba263ebe4eb4bb62",
+      "date": "2017-09-17T10:44:57-03:00",
+      "author": "ehpalumbo",
+      "email": "ehpalumbo@gmail.com",
+      "message": "Ignore IDE files\n"
+    }
+  ],
+  "commit_sha": "b1c4e50a17ce30f2fe71e1d50bc75736842d647f",
+  "extracted_at": "2026-10-05T18:43:45.114546+00:00"
+}

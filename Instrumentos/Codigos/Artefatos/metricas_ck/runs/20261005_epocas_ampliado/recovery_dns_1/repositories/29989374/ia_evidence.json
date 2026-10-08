@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "9e1d760208d91408587a914bad110f53d7f9c1b3",
+      "date": "2026-10-01T12:55:35-07:00",
+      "author": "Spring Builds",
+      "email": "svc.spring-builds@broadcom.com",
+      "message": "Update Maven wrapper to 3.10.0 (#468)\n\nSigned-off-by: spring-builds <spring-builds@users.noreply.github.com>\nCo-authored-by: spring-builds <spring-builds@users.noreply.github.com>"
+    },
+    {
+      "sha": "ccf9d6b6351ad13aaa9fd9810c1e4fba6c22351e",
+      "date": "2026-10-01T10:15:55-04:00",
+      "author": "Ryan Baxter",
+      "email": "ryan.baxter@broadcom.com",
+      "message": "Merge pull request #466 from spring-cloud/dependabot-allow-minor-updates\n\nAllow Dependabot minor version updates on main"
+    },
+    {
+      "sha": "2362dafcf1786a673758ef717d8e0af0a7c3824a",
+      "date": "2026-10-01T09:54:50-04:00",
+      "author": "Ryan Baxter",
+      "email": "ryan.baxter@broadcom.com",
+      "message": "Allow Dependabot minor version updates on main\n\nRemove the semver-minor ignore from the maven entry targeting main so\nDependabot opens PRs for minor dependency updates. Major updates remain ignored.\n"
+    },
+    {
+      "sha": "f540cc48cb066458e667f13760d439a5e39635a7",
+      "date": "2026-09-24T15:00:19-07:00",
+      "author": "Spring Builds",
+      "email": "svc.spring-builds@broadcom.com",
+      "message": "Update Antora UI bundle to v0.4.26 (#464)\n\nSigned-off-by: spring-builds <spring-builds@users.noreply.github.com>\nCo-authored-by: spring-builds <spring-builds@users.noreply.github.com>"
+    },
+    {
+      "sha": "8a9bc2bc34a734916a1e487c60a366ad1c57fe2e",
+      "date": "2026-09-24T21:30:16Z",
+      "author": "Spring Builds",
+      "email": "svc.spring-builds@broadcom.com",
+      "message": "Pin spring-cloud-github-actions to v1.1.2\n"
+    },
+    {
+      "sha": "db79e5f73589db4442c08bd1c9a627b8aec46032",
+      "date": "2026-09-24T14:02:06Z",
+      "author": "Spring Builds",
+      "email": "svc.spring-builds@broadcom.com",
+      "message": "Updating project versions to 2026.0.0-SNAPSHOT\n"
+    },
+    {
+      "sha": "9b0f90d8eb47cdb4b8e14507599cd7709695a4c7",
+      "date": "2026-09-24T13:45:33Z",
+      "author": "Spring Builds",
+      "email": "svc.spring-builds@broadcom.com",
+      "message": "Restoring ci.yaml pr.yaml removed by the release/5.1.0-M1 merge\n"
+    },
+    {
+      "sha": "2e66eb61801b461d22f72891da165d9fed8e3111",
+      "date": "2026-09-18T20:10:31Z",
+      "author": "spring-builds",
+      "email": "spring-builds@users.noreply.github.com",
+      "message": "Release 5.1.0-M1\n"
+    },
+    {
+      "sha": "b55e9624226846ee71c03b2f6024e19f93f9f3b7",
+      "date": "2026-09-08T18:58:13Z",
+      "author": "Spring Builds",
+      "email": "svc.spring-builds@broadcom.com",
+      "message": "Initialize commercial release branch\n"
+    },
+    {
+      "sha": "1a19f587efd0dbc81251e6becce9736b60525928",
+      "date": "2026-09-08T18:56:41Z",
+      "author": "Spring Builds",
+      "email": "svc.spring-builds@broadcom.com",
+      "message": "Update versions for 2026.0.0-INTERNAL-SNAPSHOT\n"
+    },
+    {
+      "sha": "9090c573db1f1c3f33b1d5b3cd37c02a184ed360",
+      "date": "2026-09-08T18:56:35Z",
+      "author": "Spring Builds",
+      "email": "svc.spring-builds@broadcom.com",
+      "message": "Add commercial release CI files [skip actions]\n"
+    },
+    {
+      "sha": "cafff8cab25d7122ccf45933b218bd269ccf70f6",
+      "date": "2026-09-08T09:05:18-04:00",
+      "author": "Ryan Baxter",
+      "email": "ryan.baxter@broadcom.com",
+      "message": "Merge pull request #460 from AzazelSensei/docs/acl-auth-customizer-239\n\nFix ACL authentication docs #239"
+    },
+    {
+      "sha": "e75aed539f5641c2dd04bf64a2850692c8ec4ce9",
+      "date": "2026-09-08T11:29:47+01:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump antora from 3.2.0-rc.3 to 3.2.0 in /docs (#462)\n\nBumps [antora](https://gitlab.com/antora/antora/tree/HEAD/packages/antora) from 3.2.0-rc.3 to 3.2.0.\n- [Changelog](https://gitlab.com/antora/antora/blob/main/CHANGELOG.adoc)\n- [Commits](https://gitlab.com/antora/antora/compare/v3.2.0-rc.3...v3.2.0)\n\n---\nupdated-dependencies:\n- dependency-name: antora\n  dependency-version: 3.2.0\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "488c4efa904e97a9b4e8a1be5529fab8979c4960",
+      "date": "2026-09-03T22:55:40Z",
+      "author": "Abdullah",
+      "email": "89297042+AzazelSensei@users.noreply.github.com",
+      "message": "Fix ACL docs to use CuratorFrameworkCustomizer\n\nThe snippets called addAuthInfo on a new CuratorFramework, which does\nnot compile. Document the customizer that #244 added and the\nauthorization() builder API.\n\nFixes gh-239\nSigned-off-by: Abdullah <89297042+AzazelSensei@users.noreply.github.com>\n"
+    },
+    {
+      "sha": "d98bd864799a7a968b653a8c6a6f197e49349256",
+      "date": "2026-09-03T18:10:26-04:00",
+      "author": "Ryan Baxter",
+      "email": "ryan.baxter@broadcom.com",
+      "message": "Revert \"Retarget workflow triggers to 5.0.x [skip actions]\"\n\nThis reverts commit c77a6fca4db0ec3d0892399af4e17a29018f1af5.\n"
+    },
+    {
+      "sha": "1c20392fa4af1f23d7ad52b5db8f515e7531bc5c",
+      "date": "2026-09-03T18:10:14-04:00",
+      "author": "Ryan Baxter",
+      "email": "ryan.baxter@broadcom.com",
+      "message": "Merge remote-tracking branch 'origin/5.0.x'\n"
+    },
+    {
+      "sha": "0bc0c2e5ef3880a1f48c27533337b08184d65663",
+      "date": "2026-08-31T19:09:43Z",
+      "author": "Spring Builds",
+      "email": "svc.spring-builds@broadcom.com",
+      "message": "Updating project versions to 2026.0.0-SNAPSHOT\n"
+    },
+    {
+      "sha": "07324782dcee907d64bb36c058fb642e75678ebd",
+      "date": "2026-08-31T19:09:39Z",
+      "author": "Spring Builds",
+      "email": "svc.spring-builds@broadcom.com",
+      "message": "Add Dependabot entries for 5.0.x\n"
+    },
+    {
+      "sha": "c77a6fca4db0ec3d0892399af4e17a29018f1af5",
+      "date": "2026-08-31T19:09:36Z",
+      "author": "Spring Builds",
+      "email": "svc.spring-builds@broadcom.com",
+      "message": "Retarget workflow triggers to 5.0.x [skip actions]\n"
+    },
+    {
+      "sha": "44e0c855aaf0caabb3f53548cd08b0b4c7ffd232",
+      "date": "2026-08-26T20:23:55Z",
+      "author": "Spring Builds",
+      "email": "svc.spring-builds@broadcom.com",
+      "message": "Pin spring-cloud-github-actions to v1.1.1\n"
+    },
+    {
+      "sha": "b230e519d18bb4c74c83398a88e6e6d141906a19",
+      "date": "2026-08-21T19:05:48+01:00",
+      "author": "Spring Builds",
+      "email": "svc.spring-builds@broadcom.com",
+      "message": "Update Maven wrapper to 3.9.16 (#459)\n\nSigned-off-by: spring-builds <spring-builds@users.noreply.github.com>\nCo-authored-by: spring-builds <spring-builds@users.noreply.github.com>"
+    },
+    {
+      "sha": "87a53dbc9dac47ea9f5b0c1d1a97d03649b0f6f3",
+      "date": "2026-08-21T11:30:33+01:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump antora from 3.2.0-rc.2 to 3.2.0-rc.3 in /docs (#457)\n\nBumps [antora](https://gitlab.com/antora/antora) from 3.2.0-rc.2 to 3.2.0-rc.3.\n- [Changelog](https://gitlab.com/antora/antora/blob/main/CHANGELOG.adoc)\n- [Commits](https://gitlab.com/antora/antora/compare/v3.2.0-rc.2...v3.2.0-rc.3)\n\n---\nupdated-dependencies:\n- dependency-name: antora\n  dependency-version: 3.2.0-rc.3\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "61621d2ee2cad58e6f41eb63e1d4f7765c23a003",
+      "date": "2026-08-20T19:14:14Z",
+      "author": "Spring Builds",
+      "email": "svc.spring-builds@broadcom.com",
+      "message": "Updating project versions to 2025.1.4-SNAPSHOT\n"
+    },
+    {
+      "sha": "b1b6d4fe05f82edfb1cba2dce6fca2dcb1c5612e",
+      "date": "2026-08-03T20:11:00-04:00",
+      "author": "Ryan Baxter",
+      "email": "ryan.baxter@broadcom.com",
+      "message": "Merge pull request #454 from spring-cloud/dependabot/npm_and_yarn/docs/main/springio/antora-extensions-1.14.13"
+    },
+    {
+      "sha": "e8ef169357ce31533c4cc770b76e7a7ede7c9b0a",
+      "date": "2026-08-03T23:03:59Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump @springio/antora-extensions from 1.14.12 to 1.14.13 in /docs\n\nBumps [@springio/antora-extensions](https://github.com/spring-io/antora-extensions) from 1.14.12 to 1.14.13.\n- [Changelog](https://github.com/spring-io/antora-extensions/blob/main/CHANGELOG.adoc)\n- [Commits](https://github.com/spring-io/antora-extensions/compare/v1.14.12...v1.14.13)\n\n---\nupdated-dependencies:\n- dependency-name: \"@springio/antora-extensions\"\n  dependency-version: 1.14.13\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "4928e9a7e74a2be63a96b4b369ad8bc4453eef6f",
+      "date": "2026-07-30T21:42:04Z",
+      "author": "Spring Builds",
+      "email": "svc.spring-builds@broadcom.com",
+      "message": "Use canonical deploy-docs trigger workflow [skip actions]\n"
+    },
+    {
+      "sha": "6118f7ab6f9164ccf7c5a900a50f610deb6808f6",
+      "date": "2026-07-22T19:14:20-04:00",
+      "author": "Ryan Baxter",
+      "email": "ryan.baxter@broadcom.com",
+      "message": "Merge pull request #453 from spring-cloud/dependabot/maven/main/org.apache.maven.plugins-maven-jar-plugin-3.5.1"
+    },
+    {
+      "sha": "e10222b0bbaefe99b462e092924157f2c17d9b37",
+      "date": "2026-07-22T23:03:58Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.apache.maven.plugins:maven-jar-plugin from 3.5.0 to 3.5.1\n\nBumps [org.apache.maven.plugins:maven-jar-plugin](https://github.com/apache/maven-jar-plugin) from 3.5.0 to 3.5.1.\n- [Release notes](https://github.com/apache/maven-jar-plugin/releases)\n- [Commits](https://github.com/apache/maven-jar-plugin/compare/maven-jar-plugin-3.5.0...maven-jar-plugin-3.5.1)\n\n---\nupdated-dependencies:\n- dependency-name: org.apache.maven.plugins:maven-jar-plugin\n  dependency-version: 3.5.1\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "b17690a4f144250835f0312278271dea677d779f",
+      "date": "2026-07-20T21:05:27Z",
+      "author": "spring-builds",
+      "email": "spring-builds@users.noreply.github.com",
+      "message": "Update generated GitHub Actions workflow files [skip actions]\n"
+    },
+    {
+      "sha": "03ae3ab1487c07cf25d2f9e929fee6a4d7e7df3f",
+      "date": "2026-07-17T17:45:43Z",
+      "author": "spring-builds",
+      "email": "spring-builds@users.noreply.github.com",
+      "message": "Update generated GitHub Actions workflow files [skip actions]\n"
+    }
+  ],
+  "commit_sha": "9e1d760208d91408587a914bad110f53d7f9c1b3",
+  "extracted_at": "2026-10-05T18:14:15.892032+00:00"
+}

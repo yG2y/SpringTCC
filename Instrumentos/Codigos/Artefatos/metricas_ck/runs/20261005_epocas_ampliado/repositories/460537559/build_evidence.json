@@ -1,0 +1,500 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${spring-boot.version};1.5.4.RELEASE;2.3.9.RELEASE;2.4.12;2.4.4;2.5.5;2.6.3;2.7.0;2.7.1;2.7.3;2.7.5;3.1.1;3.1.2",
+  "spring_boot_major": "multiple",
+  "java_versions_declared": "${java.version};1.7;1.8;11;17;7",
+  "build_evidence": [
+    {
+      "file": "applications/spring-boot-upgrade/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "applications/spring-boot-upgrade/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "applications/spring-boot-upgrade/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "applications/spring-boot-upgrade/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "applications/spring-boot-upgrade/src/test/resources/testcode/boot-migration-27-30/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "applications/spring-boot-upgrade/src/test/resources/testcode/boot-migration-27-30/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "applications/spring-boot-upgrade/src/test/resources/testcode/boot-migration-27-30/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "applications/spring-boot-upgrade/src/test/resources/testcode/boot-migration-27-30/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "applications/spring-boot-upgrade/src/test/resources/testcode/boot-migration-27-30/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "applications/spring-shell/pom.xml",
+      "artifact": "spring-boot-starter-json"
+    },
+    {
+      "file": "applications/spring-shell/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "applications/spring-shell/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "applications/spring-shell/src/test/resources/testcode/boot-migration-27-30-manual-managed/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "applications/spring-shell/src/test/resources/testcode/boot-migration-27-30-manual-managed/spring-app/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "applications/spring-shell/src/test/resources/testcode/boot-migration-27-30-manual-managed/spring-app/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "applications/spring-shell/src/test/resources/testcode/boot-migration-27-30-manual-managed/spring-app/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "applications/spring-shell/src/test/resources/testcode/boot-migration-27-30-multi-module/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "applications/spring-shell/src/test/resources/testcode/boot-migration-27-30-multi-module/spring-app/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "applications/spring-shell/src/test/resources/testcode/boot-migration-27-30-multi-module/spring-app/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "applications/spring-shell/src/test/resources/testcode/boot-migration-27-30-multi-module/spring-app/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "applications/spring-shell/src/test/resources/testcode/boot-migration-27-30-multi-module/spring-app/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "applications/spring-shell/src/test/resources/testcode/boot-migration-27-30/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "applications/spring-shell/src/test/resources/testcode/boot-migration-27-30/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "applications/spring-shell/src/test/resources/testcode/boot-migration-27-30/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "applications/spring-shell/src/test/resources/testcode/boot-migration-27-30/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "applications/spring-shell/src/test/resources/testcode/boot-migration-27-30/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "applications/spring-shell/src/test/resources/testcode/spring-petclinic-1x/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "applications/spring-shell/src/test/resources/testcode/spring-petclinic-1x/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "applications/spring-shell/src/test/resources/testcode/spring-petclinic-1x/pom.xml",
+      "artifact": "spring-boot-starter-cache"
+    },
+    {
+      "file": "applications/spring-shell/src/test/resources/testcode/spring-petclinic-1x/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "applications/spring-shell/src/test/resources/testcode/spring-petclinic-1x/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "applications/spring-shell/src/test/resources/testcode/spring-petclinic-1x/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "applications/spring-shell/src/test/resources/testcode/spring-petclinic-1x/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "applications/spring-shell/src/test/resources/testcode/spring-petclinic-1x/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "applications/spring-shell/src/test/resources/testcode/spring-petclinic-1x/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "components/openrewrite-spring-recipes/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "components/openrewrite-spring-recipes/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "components/openrewrite-spring-recipes/testcode/boot-23-app/given/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "components/openrewrite-spring-recipes/testcode/boot-23-app/given/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "components/openrewrite-spring-recipes/testcode/boot-23-app/given/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "components/openrewrite-spring-recipes/testcode/boot-23-app/given/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "components/openrewrite-spring-recipes/testcode/boot-24-app/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "components/openrewrite-spring-recipes/testcode/boot-24-app/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "components/openrewrite-spring-recipes/testcode/boot-24-app/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "components/openrewrite-spring-recipes/testcode/boot-24-app/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "components/recipe-test-support/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "components/recipe-test-support/pom.xml",
+      "artifact": "spring-boot-starter-freemarker"
+    },
+    {
+      "file": "components/sbm-core/pom.xml",
+      "artifact": "spring-boot-starter-freemarker"
+    },
+    {
+      "file": "components/sbm-core/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "components/sbm-core/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components/sbm-openrewrite/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "components/sbm-recipes-boot-upgrade/pom.xml",
+      "artifact": "spring-boot-starter-freemarker"
+    },
+    {
+      "file": "components/sbm-recipes-boot-upgrade/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "components/sbm-recipes-boot-upgrade/testcode/spring-boot-2.4-to-2.5-example/given/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "components/sbm-recipes-boot-upgrade/testcode/spring-boot-2.4-to-2.5-example/given/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "components/sbm-recipes-boot-upgrade/testcode/spring-boot-2.4-to-2.5-example/given/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "components/sbm-recipes-boot-upgrade/testcode/spring-boot-2.4-to-2.5-example/given/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "components/sbm-recipes-boot-upgrade/testcode/spring-boot-2.4-to-2.5-example/given/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "components/sbm-recipes-jee-to-boot/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "components/sbm-recipes-mule-to-boot/pom.xml",
+      "artifact": "spring-boot-starter-freemarker"
+    },
+    {
+      "file": "components/sbm-recipes-mule-to-boot/testcode/demo-rabitmq-spring-integration/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "components/sbm-recipes-mule-to-boot/testcode/demo-rabitmq-spring-integration/pom.xml",
+      "artifact": "spring-boot-starter-integration"
+    },
+    {
+      "file": "components/sbm-recipes-mule-to-boot/testcode/raml-application/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components/sbm-recipes-mule-to-boot/testcode/raml-application/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "components/sbm-recipes-mule-to-boot/testcode/raml-application/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "components/sbm-recipes-mule-to-boot/testcode/raml-application/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "components/sbm-recipes-mule-to-boot/testcode/raml-application/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "components/sbm-recipes-spring-cloud/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "components/sbm-recipes-spring-cloud/testcode/sccs-client/expected/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "components/sbm-recipes-spring-cloud/testcode/sccs-client/expected/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "components/sbm-recipes-spring-cloud/testcode/sccs-client/expected/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "components/sbm-recipes-spring-cloud/testcode/sccs-client/expected/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "components/sbm-recipes-spring-cloud/testcode/sccs-client/given/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "components/sbm-recipes-spring-cloud/testcode/sccs-client/given/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "components/sbm-recipes-spring-cloud/testcode/sccs-client/given/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "components/sbm-recipes-spring-cloud/testcode/sccs-client/given/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "components/sbm-recipes-spring-framework/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "components/sbm-recipes-spring-framework/pom.xml",
+      "artifact": "spring-boot-starter-freemarker"
+    },
+    {
+      "file": "components/sbm-recipes-spring-framework/pom.xml",
+      "artifact": "spring-boot-loader"
+    },
+    {
+      "file": "components/sbm-recipes-spring-framework/testcode/spring-xml-java-config/spring-petclinic/expected/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components/sbm-recipes-spring-framework/testcode/spring-xml-java-config/spring-petclinic/expected/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "components/sbm-support-boot/pom.xml",
+      "artifact": "spring-boot-starter-freemarker"
+    },
+    {
+      "file": "components/sbm-support-boot/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "components/sbm-support-boot/testcode/empty-project/expected/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "components/sbm-support-boot/testcode/empty-project/expected/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components/sbm-support-boot/testcode/empty-project/expected/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "components/sbm-support-boot/testcode/empty-project/expected/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "components/sbm-support-boot/testcode/multi-module-simple/expected/module1/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components/sbm-support-boot/testcode/multi-module-simple/expected/module1/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "components/sbm-support-boot/testcode/multi-module-simple/expected/module1/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "components/sbm-support-boot/testcode/multi-module-simple/expected/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "components/sbm-support-boot/testcode/simple-boot/expected/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "components/sbm-support-boot/testcode/simple-boot/expected/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components/sbm-support-boot/testcode/simple-boot/expected/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "components/sbm-support-boot/testcode/simple-boot/expected/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "components/sbm-support-boot/testcode/simple-boot/given/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "components/sbm-support-boot/testcode/simple-boot/given/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components/sbm-support-boot/testcode/simple-boot/given/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "components/sbm-support-boot/testcode/simple-boot/given/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "components/sbm-support-jee/pom.xml",
+      "artifact": "spring-boot-starter-freemarker"
+    },
+    {
+      "file": "components/sbm-support-jee/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "components/sbm-support-weblogic/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "components/sbm-utils/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "components/test-helper/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "demos/demo-introduce-spring-cloud-config/testcode/given/demo-application/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "demos/demo-introduce-spring-cloud-config/testcode/given/demo-application/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "demos/demo-introduce-spring-cloud-config/testcode/given/demo-application/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "demos/demo-introduce-spring-cloud-config/testcode/given/demo-application/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "demos/demo-introduce-spring-cloud-config/testcode/given/sccs-client-config-server/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "demos/demo-introduce-spring-cloud-config/testcode/given/sccs-client-config-server/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "demos/demo-introduce-spring-cloud-config/testcode/given/sccs-client-config-server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "sbm-gradle-tooling-model/demo/build.gradle.kts",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "sbm-support-rewrite/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "sbm-support-rewrite/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "sbm-support-rewrite/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "sbm-support-rewrite/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "sbm-support-rewrite/testcode/maven-projects/multi-module-1/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "sbm-support-rewrite/testcode/maven-projects/simple-spring-boot/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "sbm-support-rewrite/testcode/maven-projects/simple-spring-boot/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "sbm-support-rewrite/testcode/maven-projects/simple-spring-boot/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "sbm-support-rewrite/testcode/maven-projects/simple-spring-boot/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

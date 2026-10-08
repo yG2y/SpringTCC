@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "64050904eeb0e6a9eee941688dc7eb50714261c8",
+      "date": "2026-10-05T12:56:41-04:00",
+      "author": "Ryan Baxter",
+      "email": "rbaxter85@gmail.com",
+      "message": "Merge pull request #4611 from spring-cloud/dependabot/maven/main/jersey.version-4.0.3\n\nBump jersey.version from 4.0.2 to 4.0.3"
+    },
+    {
+      "sha": "00daf1b1adf5bb3c897104bcc7c3b7a3e3d6dd10",
+      "date": "2026-10-05T16:43:45Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump jersey.version from 4.0.2 to 4.0.3\n\nBumps `jersey.version` from 4.0.2 to 4.0.3.\n\nUpdates `org.glassfish.jersey.containers:jersey-container-servlet` from 4.0.2 to 4.0.3\n\nUpdates `org.glassfish.jersey.core:jersey-server` from 4.0.2 to 4.0.3\n\nUpdates `org.glassfish.jersey.core:jersey-client` from 4.0.2 to 4.0.3\n\nUpdates `org.glassfish.jersey.inject:jersey-hk2` from 4.0.2 to 4.0.3\n\n---\nupdated-dependencies:\n- dependency-name: org.glassfish.jersey.containers:jersey-container-servlet\n  dependency-version: 4.0.3\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n- dependency-name: org.glassfish.jersey.core:jersey-server\n  dependency-version: 4.0.3\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n- dependency-name: org.glassfish.jersey.core:jersey-client\n  dependency-version: 4.0.3\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n- dependency-name: org.glassfish.jersey.inject:jersey-hk2\n  dependency-version: 4.0.3\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "34040d9f8fcb161ae633aa555abc623a269e5d52",
+      "date": "2026-10-02T10:15:28-04:00",
+      "author": "Ryan Baxter",
+      "email": "rbaxter85@gmail.com",
+      "message": "Merge pull request #4606 from Akhil-1527/gh-3841-eureka-pause-handler\n\nAdd a PauseHandler for Eureka clients"
+    },
+    {
+      "sha": "9949efbc512157bd99455d6922400ef3af7d9aab",
+      "date": "2026-10-01T12:54:28-07:00",
+      "author": "Spring Builds",
+      "email": "svc.spring-builds@broadcom.com",
+      "message": "Update Maven wrapper to 3.10.0 (#4610)\n\nSigned-off-by: spring-builds <spring-builds@users.noreply.github.com>\nCo-authored-by: spring-builds <spring-builds@users.noreply.github.com>"
+    },
+    {
+      "sha": "58099165b6d187c4a82fb8dfefa88ae2636b0125",
+      "date": "2026-10-01T14:19:14-04:00",
+      "author": "Ryan Baxter",
+      "email": "rbaxter85@gmail.com",
+      "message": "Merge pull request #4608 from spring-cloud/dependabot/maven/main/org.webjars.npm-bootstrap-5.3.8\n\nBump org.webjars.npm:bootstrap from 5.1.3 to 5.3.8"
+    },
+    {
+      "sha": "de53b20ed831522be74945f4ea81d20ecd0b387a",
+      "date": "2026-10-01T14:14:36Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.webjars.npm:bootstrap from 5.1.3 to 5.3.8\n\nBumps [org.webjars.npm:bootstrap](https://github.com/twbs/bootstrap) from 5.1.3 to 5.3.8.\n- [Release notes](https://github.com/twbs/bootstrap/releases)\n- [Commits](https://github.com/twbs/bootstrap/compare/v5.1.3...v5.3.8)\n\n---\nupdated-dependencies:\n- dependency-name: org.webjars.npm:bootstrap\n  dependency-version: 5.3.8\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "ddb898873a21b968fbaaf41c7d2d0d167ec015ab",
+      "date": "2026-10-01T10:13:46-04:00",
+      "author": "Ryan Baxter",
+      "email": "rbaxter85@gmail.com",
+      "message": "Merge pull request #4607 from spring-cloud/dependabot-allow-minor-updates\n\nAllow Dependabot minor version updates on main"
+    },
+    {
+      "sha": "e946db68bccc75327c0b78d778caa770ac77e3e2",
+      "date": "2026-10-01T09:54:18-04:00",
+      "author": "Ryan Baxter",
+      "email": "ryan.baxter@broadcom.com",
+      "message": "Allow Dependabot minor version updates on main\n\nRemove the semver-minor ignore from the maven entry targeting main so\nDependabot opens PRs for minor dependency updates. Major updates remain ignored.\n"
+    },
+    {
+      "sha": "1885cbc7f02a28d132a7b47c90324f1764164f9f",
+      "date": "2026-09-30T11:49:20-04:00",
+      "author": "Ryan Baxter",
+      "email": "rbaxter85@gmail.com",
+      "message": "Merge pull request #4605 from spring-cloud/antora-ui-bundle-update/main-v0.4.26\n\nUpdate Antora UI bundle to v0.4.26"
+    },
+    {
+      "sha": "4a5b557f0a6001a2b9e6474484469ad69dffcad6",
+      "date": "2026-09-28T21:16:04-04:00",
+      "author": "Akhil CH",
+      "email": "200716675+Akhil-1527@users.noreply.github.com",
+      "message": "Add a PauseHandler for Eureka clients\n\nCalling /actuator/pause now sets the instance status to OUT_OF_SERVICE\nin Eureka, and /actuator/resume cancels that override. The handler is\nonly created when spring-cloud-context is on the classpath, auto\nregistration is enabled and the instance registers with Eureka.\n\nFixes gh-3841\n\nSigned-off-by: Akhil CH <200716675+Akhil-1527@users.noreply.github.com>\n"
+    },
+    {
+      "sha": "97b2f3f4b99fc9fba790ea61ae469c52870b852e",
+      "date": "2026-09-24T21:49:32Z",
+      "author": "spring-builds",
+      "email": "spring-builds@users.noreply.github.com",
+      "message": "Update Antora UI bundle to v0.4.26\n\nSigned-off-by: spring-builds <spring-builds@users.noreply.github.com>"
+    },
+    {
+      "sha": "da9e36d4c26b107e554da1dc920b75b25e9ca399",
+      "date": "2026-09-24T21:29:21Z",
+      "author": "Spring Builds",
+      "email": "svc.spring-builds@broadcom.com",
+      "message": "Pin spring-cloud-github-actions to v1.1.2\n"
+    },
+    {
+      "sha": "9490150444b60ea4a553c770fdca480d6a2b9047",
+      "date": "2026-09-24T17:09:00-04:00",
+      "author": "Ryan Baxter",
+      "email": "ryan.baxter@broadcom.com",
+      "message": "Merge branch '5.0.x'\n"
+    },
+    {
+      "sha": "3cf103dd5e698ef362ab244a01a8189b06ca9ab6",
+      "date": "2026-09-24T17:07:43-04:00",
+      "author": "Ryan Baxter",
+      "email": "rbaxter85@gmail.com",
+      "message": "Merge pull request #4556 from yashdotdev13/docs/eureka-replication-auth\n\nDocument securing Eureka replication requests with custom filters"
+    },
+    {
+      "sha": "0da4842a4ed45bcc24624ec0399099f64b4e72b9",
+      "date": "2026-09-24T17:07:43-04:00",
+      "author": "Ryan Baxter",
+      "email": "rbaxter85@gmail.com",
+      "message": "Merge pull request #4556 from yashdotdev13/docs/eureka-replication-auth\n\nDocument securing Eureka replication requests with custom filters"
+    },
+    {
+      "sha": "ccd2d2ac16982d67949692a563b2663788e94f8d",
+      "date": "2026-09-24T14:01:59Z",
+      "author": "Spring Builds",
+      "email": "svc.spring-builds@broadcom.com",
+      "message": "Updating project versions to 2026.0.0-SNAPSHOT\n"
+    },
+    {
+      "sha": "bc8ee338088843124d13d141badcdd262203721d",
+      "date": "2026-09-24T13:45:23Z",
+      "author": "Spring Builds",
+      "email": "svc.spring-builds@broadcom.com",
+      "message": "Restoring ci.yaml pr.yml removed by the release/5.1.0-M1 merge\n"
+    },
+    {
+      "sha": "bf4af14a76ba5f3d3af47f25dfbf51929c69ebe6",
+      "date": "2026-04-04T09:50:06+05:30",
+      "author": "98001yash",
+      "email": "yashchauhan.gaya@gmail.com",
+      "message": "Document securing Eureka replication requests with custom filters\n\nSigned-off-by: 98001yash <yashchauhan.gaya@gmail.com>\n"
+    },
+    {
+      "sha": "4a0bf3e7f9815b2c05ee8a7c71b3f7057755ddf2",
+      "date": "2026-09-18T20:07:18Z",
+      "author": "spring-builds",
+      "email": "spring-builds@users.noreply.github.com",
+      "message": "Release 5.1.0-M1\n"
+    },
+    {
+      "sha": "196841942a3ccfeadddb25a2b5fb0867a764db61",
+      "date": "2026-09-08T18:56:47Z",
+      "author": "Spring Builds",
+      "email": "svc.spring-builds@broadcom.com",
+      "message": "Initialize commercial release branch\n"
+    },
+    {
+      "sha": "088763ae913da46fcb370412f312443c5a076c90",
+      "date": "2026-09-08T18:55:07Z",
+      "author": "Spring Builds",
+      "email": "svc.spring-builds@broadcom.com",
+      "message": "Update versions for 2026.0.0-INTERNAL-SNAPSHOT\n"
+    },
+    {
+      "sha": "c3c15bd8ba4ff5bf51285d60e86e53cf71206c4d",
+      "date": "2026-09-08T18:55:02Z",
+      "author": "Spring Builds",
+      "email": "svc.spring-builds@broadcom.com",
+      "message": "Add commercial release CI files [skip actions]\n"
+    },
+    {
+      "sha": "85b29b436cf27b9eb253f3a414026a944440adf3",
+      "date": "2026-09-17T15:10:13-04:00",
+      "author": "Ryan Baxter",
+      "email": "ryan.baxter@broadcom.com",
+      "message": "Merge branch '5.0.x'\n"
+    },
+    {
+      "sha": "f501e887be31f7d1af9a697847d8a2311df7d0ce",
+      "date": "2026-09-17T15:09:32-04:00",
+      "author": "Ryan Baxter",
+      "email": "rbaxter85@gmail.com",
+      "message": "Merge pull request #4603 from yashdotdev13/issue-3793-cert-authentication-5.0.x\n\nFix TLS configuration for WebClient Eureka transport.  Fixes #3793"
+    },
+    {
+      "sha": "afbb8fd97abe63f690f750d46675d8807f9dcec2",
+      "date": "2026-09-17T20:12:47+05:30",
+      "author": "98001yash",
+      "email": "yashchauhan.gaya@gmail.com",
+      "message": "Fix TLS configuration for WebClient Eureka transport\n\nSigned-off-by: 98001yash <yashchauhan.gaya@gmail.com>\n"
+    },
+    {
+      "sha": "3ce1e124af5a83c6ee6c91e6292bf3ee71a499ec",
+      "date": "2026-09-17T02:57:55+05:30",
+      "author": "98001yash",
+      "email": "yashchauhan.gaya@gmail.com",
+      "message": "Fix hostname verification for WebClient transport\n\nSigned-off-by: 98001yash <yashchauhan.gaya@gmail.com>\n"
+    },
+    {
+      "sha": "c89d7f13d6dfe9abe6d68dc2b0a704b4f05ddd40",
+      "date": "2026-09-17T01:06:20+05:30",
+      "author": "98001yash",
+      "email": "yashchauhan.gaya@gmail.com",
+      "message": "Wire hostname verifier into WebClient transport\n\nSigned-off-by: 98001yash <yashchauhan.gaya@gmail.com>\n"
+    },
+    {
+      "sha": "f6795eefebf218e516410f79cccbf24f5b563ec3",
+      "date": "2026-09-16T21:33:59+05:30",
+      "author": "98001yash",
+      "email": "yashchauhan.gaya@gmail.com",
+      "message": "Enable hostname verification for WebClient TLS\n\nSigned-off-by: 98001yash <yashchauhan.gaya@gmail.com>\n"
+    },
+    {
+      "sha": "06549800244ab492e1f038c42ef018d0fb0601b7",
+      "date": "2026-09-10T18:37:02+05:30",
+      "author": "Prahlad Bhakat",
+      "email": "prahladbhakat05@gmail.com",
+      "message": "Add test verifying newClient() rebuilds after shutdown\n\nSigned-off-by: Prahlad Bhakat <prahladbhakat05@gmail.com>\n"
+    },
+    {
+      "sha": "9ebf9cff585646661bd9cd625706eebe0ac6656a",
+      "date": "2026-09-09T15:23:21+05:30",
+      "author": "Prahlad Bhakat",
+      "email": "prahladbhakat05@gmail.com",
+      "message": "Move shared HTTP client caching from supplier to transport factory\n\nSigned-off-by: Prahlad Bhakat <prahladbhakat05@gmail.com>\n"
+    }
+  ],
+  "commit_sha": "64050904eeb0e6a9eee941688dc7eb50714261c8",
+  "extracted_at": "2026-10-05T17:53:48.695586+00:00"
+}

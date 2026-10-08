@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "0594405a26983e78d5296298964d3b08f4e1c72b",
+      "date": "2026-09-30T14:57:44-05:00",
+      "author": "Jerry Ocanas",
+      "email": "jerry77oz@gmail.com",
+      "message": "BroadleafCommerce/QA#5495 - Set admin audit creation data for entities with an embedded auditable (#3147)"
+    },
+    {
+      "sha": "5036306fcbd95180135a9ce0dc16b574f032936b",
+      "date": "2026-06-26T22:55:46+03:00",
+      "author": "StanislavFedorov",
+      "email": "42337700+StanislavFedorov@users.noreply.github.com",
+      "message": "Update messages for System Property management (#5479) (#3135)"
+    },
+    {
+      "sha": "8645873661b34fe0954cebe382aba59336714db0",
+      "date": "2026-05-04T21:57:46Z",
+      "author": "Broadleaf",
+      "email": "infrastructure@broadleafcommerce.com",
+      "message": "[maven-release-plugin] prepare for next development iteration\n"
+    },
+    {
+      "sha": "179117fddfb05a9bb302dc63cda07291f4fed781",
+      "date": "2026-05-04T21:57:46Z",
+      "author": "Broadleaf",
+      "email": "infrastructure@broadleafcommerce.com",
+      "message": "[maven-release-plugin] prepare release broadleaf-7.0.7-GA\n"
+    },
+    {
+      "sha": "162db36b30ba0e735bf1705043f7a34803ca3f4f",
+      "date": "2026-05-04T16:24:42-05:00",
+      "author": "Ritesh Adhikari",
+      "email": "radhikari@broadleafcommerce.com",
+      "message": "Update BLC dependencies\n"
+    },
+    {
+      "sha": "d7bcd8c747ae2a90e0455d535717d879323cba11",
+      "date": "2026-05-04T20:55:33+05:30",
+      "author": "Pasham Shivanagu Reddy",
+      "email": "shivapasham55@gmail.com",
+      "message": "Fix Performance degradation and deep-pagination overhead during CMS Page SiteMap generation. (#3118)"
+    },
+    {
+      "sha": "b42a60945e0e564c51e852a637172f83ad48d365",
+      "date": "2026-05-01T12:23:57-05:00",
+      "author": "Ritesh Adhikari",
+      "email": "radhikari@broadleafcommerce.com",
+      "message": "Replace deprecated method\n"
+    },
+    {
+      "sha": "0502f38ad28df9d0ca704d4ac947082e9d5d29bd",
+      "date": "2026-04-30T20:34:12+03:00",
+      "author": "StanislavFedorov",
+      "email": "42337700+StanislavFedorov@users.noreply.github.com",
+      "message": "Escape JSON special characters in request parameters (#5470) (#3119)"
+    },
+    {
+      "sha": "8285fff8517b664fdffd30003ea27f6329a1d814",
+      "date": "2026-04-27T15:22:13-05:00",
+      "author": "Ritesh Adhikari",
+      "email": "radhikari@broadleafcommerce.com",
+      "message": "More lib upgrades\n"
+    },
+    {
+      "sha": "85ce8052b5486f83fa7d309760ecbcd92f62a60a",
+      "date": "2026-04-27T12:14:14-05:00",
+      "author": "Ritesh Adhikari",
+      "email": "radhikari@broadleafcommerce.com",
+      "message": "Define zookeeper version in parent pom, re-organized properties and upgrade libs to latest patches\n"
+    },
+    {
+      "sha": "86900d3525e97eb1f288821776f396d2cbd9450b",
+      "date": "2026-04-27T11:49:38-05:00",
+      "author": "Ritesh Adhikari",
+      "email": "radhikari@broadleafcommerce.com",
+      "message": "Replace the usage of common-lang with lang3 and exclude it from ESAPI\n"
+    },
+    {
+      "sha": "3d0dcd1a0ad980eb6d6c6ebdb5cd3b522090b23d",
+      "date": "2026-04-08T15:51:04-05:00",
+      "author": "Ritesh Adhikari",
+      "email": "radhikari@broadleafcommerce.com",
+      "message": "Fix the convergence errors  picked by enforcer plugin\n"
+    },
+    {
+      "sha": "26884f7e469d2979648c1e094f3a906bd27f76b2",
+      "date": "2026-04-08T23:18:37+03:00",
+      "author": "StanislavFedorov",
+      "email": "42337700+StanislavFedorov@users.noreply.github.com",
+      "message": "Strip image sources from content outside the target tab to prevent broken requests (#5463) (#3111)"
+    },
+    {
+      "sha": "3ee0024efbeaef911585b375e63873ea62e60f5d",
+      "date": "2026-04-08T22:49:30+03:00",
+      "author": "StanislavFedorov",
+      "email": "42337700+StanislavFedorov@users.noreply.github.com",
+      "message": "Skip repeated class transformation (#3107)\n\n* Skip repeated class transformation\n\n* Fix description formatting in pom.xml\n\n---------\n\nCo-authored-by: Ritesh Adhikari <35038090+riteshadhikari17@users.noreply.github.com>"
+    },
+    {
+      "sha": "240ecb09d2abdd5aee81003ad18c742c380c7da0",
+      "date": "2026-04-08T22:48:20+03:00",
+      "author": "StanislavFedorov",
+      "email": "42337700+StanislavFedorov@users.noreply.github.com",
+      "message": "Upgrade zookeeper and zookeeper-jute version (#5459) (#3110)"
+    },
+    {
+      "sha": "dae7802da132fe75c28b9525889ea8fc8e9ebaa0",
+      "date": "2026-04-08T14:39:52-05:00",
+      "author": "Ritesh Adhikari",
+      "email": "radhikari@broadleafcommerce.com",
+      "message": "Revert \"Remove the add-ons from the offer rules dropdown (#5453) (#3103)\"\n\nThis reverts commit 54ab2a950b429ed5f06ce38af104b658342ce3ac.\n"
+    },
+    {
+      "sha": "095fd472575c0766b465ea5c21f633284d069665",
+      "date": "2026-04-07T14:58:14-05:00",
+      "author": "Ritesh Adhikari",
+      "email": "radhikari@broadleafcommerce.com",
+      "message": "Upgrade few libs for security\n"
+    },
+    {
+      "sha": "26208e01deb48ffd46151ed9479697369e91d943",
+      "date": "2026-03-23T15:07:18-05:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump springframework security from 6.5.5 to 6.5.9."
+    },
+    {
+      "sha": "0dbaa6702481e041bbe2b72796232420a8aa6f44",
+      "date": "2026-03-23T14:55:43-05:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.springframework from 6.2.11 to 6.2.17 (#3113)"
+    },
+    {
+      "sha": "6e87db188eaff6c477efc930bca294e57f933fca",
+      "date": "2026-03-18T15:03:10+02:00",
+      "author": "StanislavFedorov",
+      "email": "42337700+StanislavFedorov@users.noreply.github.com",
+      "message": "Use ESAPI validation in UrlUtil (#3108)\n\nhttps://github.com/BroadleafCommerce/QA/issues/5458"
+    },
+    {
+      "sha": "85d372a973c54d90149163829359fddf5481b2bd",
+      "date": "2026-02-25T23:42:22+02:00",
+      "author": "StanislavFedorov",
+      "email": "42337700+StanislavFedorov@users.noreply.github.com",
+      "message": "Add postAddSubCollectionEntity and postUpdateSubCollectionEntity hooks (#3096)\n\nhttps://github.com/BroadleafCommerce/QA/issues/5445"
+    },
+    {
+      "sha": "54ab2a950b429ed5f06ce38af104b658342ce3ac",
+      "date": "2026-02-25T23:35:46+02:00",
+      "author": "StanislavFedorov",
+      "email": "42337700+StanislavFedorov@users.noreply.github.com",
+      "message": "Remove the add-ons from the offer rules dropdown (#5453) (#3103)\n\n"
+    },
+    {
+      "sha": "7077cf5a97d2d5d1208914affeb64502f2df9241",
+      "date": "2026-02-25T23:00:49+02:00",
+      "author": "StanislavFedorov",
+      "email": "42337700+StanislavFedorov@users.noreply.github.com",
+      "message": "Do not update DateCreated and CreatedBy on Update operation (#3106)\n\nhttps://github.com/BroadleafCommerce/QA/issues/5442"
+    },
+    {
+      "sha": "cfcf0a10d2f77ce26dbc3ab197818ba1d64be575",
+      "date": "2026-02-25T22:34:29+02:00",
+      "author": "StanislavFedorov",
+      "email": "42337700+StanislavFedorov@users.noreply.github.com",
+      "message": "Use a batch approach to reindex the orders (#3095)\n\nhttps://github.com/BroadleafCommerce/QA/issues/5441"
+    },
+    {
+      "sha": "e764d25155d055f12dc7a73cd5ea5218c61fcc0f",
+      "date": "2026-02-25T22:28:30+02:00",
+      "author": "StanislavFedorov",
+      "email": "42337700+StanislavFedorov@users.noreply.github.com",
+      "message": "Fix for the issue Site customer does not login automatically after successful registration (#3093)\n\nhttps://github.com/BroadleafCommerce/QA/issues/5434"
+    },
+    {
+      "sha": "c5d8601eea5927531244e2d1f140006e6f117a56",
+      "date": "2026-02-25T22:24:24+02:00",
+      "author": "StanislavFedorov",
+      "email": "42337700+StanislavFedorov@users.noreply.github.com",
+      "message": "Decode html tooltip in listgrid (#3092)\n\nhttps://github.com/BroadleafCommerce/QA/issues/5426"
+    },
+    {
+      "sha": "202787654d3725f1d1b9025e470155e4cb59c2c7",
+      "date": "2026-02-25T22:23:30+02:00",
+      "author": "StanislavFedorov",
+      "email": "42337700+StanislavFedorov@users.noreply.github.com",
+      "message": "Add validation to prevent usage of special characters in offer targeters (#3091)\n\nhttps://github.com/BroadleafCommerce/QA/issues/5424"
+    },
+    {
+      "sha": "7a0cbe75bc62ffcee03917c481b947eff5ecedbe",
+      "date": "2026-02-20T14:08:06-06:00",
+      "author": "Ritesh Adhikari",
+      "email": "radhikari@broadleafcommerce.com",
+      "message": "Update references\n"
+    },
+    {
+      "sha": "8b81fc4022f1daf2ab5023ffa00150b1f5f2e524",
+      "date": "2026-02-05T16:08:51+02:00",
+      "author": "StanislavFedorov",
+      "email": "42337700+StanislavFedorov@users.noreply.github.com",
+      "message": "Update jquery-ui to version 1.13.3 (#3105)\n\nhttps://github.com/BroadleafCommerce/QA/issues/5315"
+    },
+    {
+      "sha": "85bffbae768dee48b552440f8d8205b85ea77dee",
+      "date": "2026-01-30T20:23:08+02:00",
+      "author": "StanislavFedorov",
+      "email": "42337700+StanislavFedorov@users.noreply.github.com",
+      "message": "Fix for the listgrid data alignment when adding a new row to an empty listgrid (#3098)\n\nhttps://github.com/BroadleafCommerce/QA/issues/5444"
+    }
+  ],
+  "commit_sha": "0594405a26983e78d5296298964d3b08f4e1c72b",
+  "extracted_at": "2026-10-05T17:52:42.376951+00:00"
+}

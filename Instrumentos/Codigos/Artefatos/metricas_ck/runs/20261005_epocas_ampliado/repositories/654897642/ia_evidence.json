@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "eb3490bb6a3d6e3cc259cdfe8cc75151a6e63d35",
+      "date": "2026-03-24T09:12:35+05:30",
+      "author": "Rajveer Singh",
+      "email": "raj14.1984@gmail.com",
+      "message": "TraceProvider path corrected in README.md\n"
+    },
+    {
+      "sha": "83a3b92cfccbae0e6bb5e17f882acdfcb718a5e3",
+      "date": "2026-03-17T16:05:40+05:30",
+      "author": "Rajveer Singh",
+      "email": "raj14.1984@gmail.com",
+      "message": "version updated in README.md\n"
+    },
+    {
+      "sha": "a1b624200c016f47b262e1292922eb9f86b2b9b1",
+      "date": "2026-03-17T16:03:49+05:30",
+      "author": "Rajveer Singh",
+      "email": "raj14.1984@gmail.com",
+      "message": "- UsernameNotFound error code bug fixed\n"
+    },
+    {
+      "sha": "5ae9933509225a2eb0ea1595ae452f3db65d50ae",
+      "date": "2026-03-17T16:01:23+05:30",
+      "author": "Rajveer Singh",
+      "email": "raj14.1984@gmail.com",
+      "message": "- version changed to 1.10.6\n- UsernameNotFound error code bug fixed\n"
+    },
+    {
+      "sha": "e2c8524d6b4f9e087045cf145b4672d9d46ccdf0",
+      "date": "2026-03-16T19:15:37+05:30",
+      "author": "Rajveer Singh",
+      "email": "raj14.1984@gmail.com",
+      "message": "version changed to 1.10.5\n"
+    },
+    {
+      "sha": "1336b61913b439b49214a7de305f6b520017e9e7",
+      "date": "2026-03-16T19:03:29+05:30",
+      "author": "Rajveer Singh",
+      "email": "raj14.1984@gmail.com",
+      "message": "Security advices added/updated\n"
+    },
+    {
+      "sha": "ccc79b71fd920f9243a38b00852b0813ca8edad8",
+      "date": "2026-01-20T16:40:42+05:30",
+      "author": "Rajveer Singh",
+      "email": "raj14.1984@gmail.com",
+      "message": "Java Docs updated\n"
+    },
+    {
+      "sha": "ee88c18fc8f3dfb4c0717f20831c74dba1e8aef5",
+      "date": "2026-01-20T16:39:04+05:30",
+      "author": "Rajveer Singh",
+      "email": "raj14.1984@gmail.com",
+      "message": "Java Docs updated\n"
+    },
+    {
+      "sha": "23fb2c9aab16a839dce5c47c178dee869f3cd333",
+      "date": "2026-01-20T16:09:29+05:30",
+      "author": "Rajveer Singh",
+      "email": "raj14.1984@gmail.com",
+      "message": "Merge pull request #13 from officiallysingh/java-docs\n\nJava docs added"
+    },
+    {
+      "sha": "ddfc1d6ad4f4d5d28fec68a8c2a45674abc4a526",
+      "date": "2026-01-20T16:05:02+05:30",
+      "author": "Rajveer Singh",
+      "email": "raj14.1984@gmail.com",
+      "message": "Java Docs updated\n"
+    },
+    {
+      "sha": "6dd26131c75532d42de4b2fe4c9a8079fe9621c4",
+      "date": "2026-01-20T15:57:31+05:30",
+      "author": "Rajveer Singh",
+      "email": "raj14.1984@gmail.com",
+      "message": "Merge branch 'main' into java-docs\n"
+    },
+    {
+      "sha": "b5ec3ec5c2c5c647495b445541ef43b0a01cd6a2",
+      "date": "2026-01-20T15:55:27+05:30",
+      "author": "Rajveer Singh",
+      "email": "raj14.1984@gmail.com",
+      "message": "Micrometer Trace Id support improvised and AI generated Java docs added to all classes\n"
+    },
+    {
+      "sha": "493402f2e8b249af4b157633da76543f1816cc43",
+      "date": "2026-01-20T15:45:15+05:30",
+      "author": "Rajveer Singh",
+      "email": "raj14.1984@gmail.com",
+      "message": "Merge pull request #12 from oiltea/main\n\nfeat(core): add detailArgs support to ProblemUtils.toMessage"
+    },
+    {
+      "sha": "709b03b3f092a14a242c4d0b9c15818a653ae75b",
+      "date": "2026-01-20T15:48:38+08:00",
+      "author": "oiltea",
+      "email": "d15881156994@gmail.com",
+      "message": "feat(core): add detailArgs support to ProblemUtils.toMessage\n\n- Add new parameter `detailArgs` to `ProblemUtils.toMessage` method signature\n- Update `ApplicationException` and `ApplicationProblem` factory methods to pass `detailArgs` to `ProblemUtils.toMessage`\n- Use `ProblemMessageProvider.getMessage` to resolve message with `detailArgs` instead of raw `defaultDetail`\n\nSigned-off-by: oiltea <d15881156994@gmail.com>\n"
+    },
+    {
+      "sha": "5b4acb63bebfc66fa12659c33ae2f35595f1c9e6",
+      "date": "2026-01-20T09:52:16+05:30",
+      "author": "Rajveer Singh",
+      "email": "raj14.1984@gmail.com",
+      "message": "Micrometer Trace Id support added\n"
+    },
+    {
+      "sha": "230bf5430da44a6415cd08ff3b473d8f04dd5d16",
+      "date": "2026-01-20T09:33:13+05:30",
+      "author": "Rajveer Singh",
+      "email": "raj14.1984@gmail.com",
+      "message": "Micrometer Trace Id support added\n"
+    },
+    {
+      "sha": "55f5afdae3f0ec5a664a16aee8b2ab6f4397261a",
+      "date": "2026-01-19T18:22:19+05:30",
+      "author": "Rajveer Singh",
+      "email": "raj14.1984@gmail.com",
+      "message": "Micrometer Trace Id support added\n"
+    },
+    {
+      "sha": "a1039ab2e6458053e15ce39983d86439df0f2669",
+      "date": "2026-01-01T10:32:36+05:30",
+      "author": "Rajveer Singh",
+      "email": "raj14.1984@gmail.com",
+      "message": "maven wrapper updated\n"
+    },
+    {
+      "sha": "fb1fecabb962c2b4ab2902383a9807c33adae699",
+      "date": "2026-01-01T10:27:32+05:30",
+      "author": "Rajveer Singh",
+      "email": "raj14.1984@gmail.com",
+      "message": "Merge pull request #10\n\nUpgraded to Spring boot 4, Jackson 3.x and upgraded other dependencies to their latest versions"
+    },
+    {
+      "sha": "0c1917428d894b628652bdc737bbfeb62f592f12",
+      "date": "2026-01-01T10:26:32+05:30",
+      "author": "Rajveer Singh",
+      "email": "raj14.1984@gmail.com",
+      "message": "Upgraded to Spring boot 4, Jackson 3.x and upgraded other dependencies to their latest versions\n"
+    },
+    {
+      "sha": "14f1e5bd02d2e34c53fb41a899427a4c978a2b87",
+      "date": "2025-04-20T12:49:54+05:30",
+      "author": "Rajveer Singh",
+      "email": "raj14.1984@gmail.com",
+      "message": "Readme updated\n"
+    },
+    {
+      "sha": "15ccd7fcd367f4ce5d42afc570115a94dcb7d374",
+      "date": "2025-04-20T12:12:52+05:30",
+      "author": "Rajveer Singh",
+      "email": "raj14.1984@gmail.com",
+      "message": "Readme updated\n"
+    },
+    {
+      "sha": "a1c3fc4d12ef17e6146fa05723cd736b554ce759",
+      "date": "2025-04-20T12:12:12+05:30",
+      "author": "Rajveer Singh",
+      "email": "raj14.1984@gmail.com",
+      "message": "Readme updated\n"
+    },
+    {
+      "sha": "af42b053b8933698bb6d9bac2503655cba7a0ec5",
+      "date": "2025-04-20T12:11:26+05:30",
+      "author": "Rajveer Singh",
+      "email": "raj14.1984@gmail.com",
+      "message": "Readme updated\n"
+    },
+    {
+      "sha": "4bb290d457a943235398fc521fc82568ecbfe67c",
+      "date": "2025-04-20T12:10:50+05:30",
+      "author": "Rajveer Singh",
+      "email": "raj14.1984@gmail.com",
+      "message": "Readme updated\n"
+    },
+    {
+      "sha": "d19c02292f6b94619c72caefe838a92141c0eeaf",
+      "date": "2025-04-20T11:21:39+05:30",
+      "author": "Rajveer Singh",
+      "email": "raj14.1984@gmail.com",
+      "message": "i18n issue fixed, security advices message code and title bugs fixed, spring boot problem properties autocomplete issue fixed. Dependencies versions upgraded to latest\n"
+    },
+    {
+      "sha": "cba1cf290ffec7974a9156fbbaab123815d4b683",
+      "date": "2025-04-14T13:25:36+05:30",
+      "author": "Rajveer Singh",
+      "email": "raj14.1984@gmail.com",
+      "message": "version upgraded\n"
+    },
+    {
+      "sha": "c9035c2906397ea2628f9e9a89d73efc8426ea64",
+      "date": "2025-04-13T23:19:28+05:30",
+      "author": "Rajveer Singh",
+      "email": "raj14.1984@gmail.com",
+      "message": "Merge pull request #9 from officiallysingh/with_metadata\n\ni18n issue fixed"
+    },
+    {
+      "sha": "976a0f09e6a56ea306b86dbc89c5644f6f28a412",
+      "date": "2025-04-13T23:18:18+05:30",
+      "author": "Rajveer Singh",
+      "email": "raj14.1984@gmail.com",
+      "message": "i18n issue fixed\n"
+    },
+    {
+      "sha": "eb307881ff2b5465f146fef94fc44d9b5b566354",
+      "date": "2025-01-20T16:51:06+05:30",
+      "author": "Rajveer Singh",
+      "email": "raj14.1984@gmail.com",
+      "message": "README updated\n"
+    }
+  ],
+  "commit_sha": "eb3490bb6a3d6e3cc259cdfe8cc75151a6e63d35",
+  "extracted_at": "2026-10-05T18:25:24.914420+00:00"
+}

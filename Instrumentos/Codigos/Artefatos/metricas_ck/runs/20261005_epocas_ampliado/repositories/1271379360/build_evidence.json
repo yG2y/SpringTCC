@@ -1,0 +1,492 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${spring-boot.version};3.5.16",
+  "spring_boot_major": "3",
+  "java_versions_declared": "${java.version};21",
+  "build_evidence": [
+    {
+      "file": "backend/agent-client/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "backend/agent-common/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/agent-common/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "backend/agent-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "backend/agent-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "backend/agent-service/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "backend/agent-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "backend/agent-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "backend/agent-service/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "backend/agent-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/agent-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "backend/auth-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "backend/auth-service/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "backend/auth-service/pom.xml",
+      "artifact": "spring-boot-starter-oauth2-client"
+    },
+    {
+      "file": "backend/auth-service/pom.xml",
+      "artifact": "spring-boot-starter-oauth2-resource-server"
+    },
+    {
+      "file": "backend/auth-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "backend/auth-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "backend/auth-service/pom.xml",
+      "artifact": "spring-boot-starter-mail"
+    },
+    {
+      "file": "backend/auth-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "backend/auth-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/auth-service/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "backend/auth-service/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "backend/auth-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "backend/catalog-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "backend/catalog-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "backend/catalog-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jdbc"
+    },
+    {
+      "file": "backend/catalog-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "backend/catalog-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "backend/catalog-service/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "backend/catalog-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/catalog-service/pom.xml",
+      "artifact": "spring-boot-starter-data-redis-reactive"
+    },
+    {
+      "file": "backend/catalog-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "backend/common-lib/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "backend/common-lib/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "backend/common-lib/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "backend/common-lib/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "backend/common-lib/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "backend/common-lib/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "backend/common-lib/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/common-security/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/common-storage-service/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "backend/common-storage-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "backend/common-storage-service/pom.xml",
+      "artifact": "spring-boot-starter-cache"
+    },
+    {
+      "file": "backend/common-storage-service/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "backend/common-storage-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/conversation-client/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/conversation-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "backend/conversation-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "backend/conversation-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "backend/conversation-service/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "backend/conversation-service/pom.xml",
+      "artifact": "spring-boot-starter-data-redis-reactive"
+    },
+    {
+      "file": "backend/conversation-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "backend/conversation-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/conversation-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "backend/credential-client/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/datasource-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "backend/datasource-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "backend/datasource-service/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "backend/datasource-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "backend/datasource-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "backend/datasource-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/datasource-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "backend/interface-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "backend/interface-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "backend/interface-service/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "backend/interface-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "backend/interface-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "backend/interface-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/interface-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "backend/migration-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "backend/migration-service/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "backend/migration-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "backend/migration-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/migration-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "backend/monolith-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "backend/monolith-service/pom.xml",
+      "artifact": "spring-boot-starter-websocket"
+    },
+    {
+      "file": "backend/monolith-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "backend/monolith-service/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "backend/monolith-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "backend/monolith-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "backend/monolith-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/monolith-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "backend/orchestrator-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "backend/orchestrator-service/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "backend/orchestrator-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "backend/orchestrator-service/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "backend/orchestrator-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "backend/orchestrator-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/orchestrator-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "backend/orchestrator-service/pom.xml",
+      "artifact": "spring-boot-starter-cache"
+    },
+    {
+      "file": "backend/orchestrator-service/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "backend/orchestrator-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "backend/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "backend/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "backend/publication-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "backend/publication-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "backend/publication-service/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "backend/publication-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "backend/publication-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "backend/publication-service/pom.xml",
+      "artifact": "spring-boot-starter-cache"
+    },
+    {
+      "file": "backend/publication-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/publication-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "backend/shared-agent-lib/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "backend/shared-agent-lib/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/shared-sse-lib/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "backend/shared-sse-lib/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/storage-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "backend/storage-service/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "backend/storage-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "backend/storage-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "backend/storage-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "backend/storage-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/storage-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "backend/test-support/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/trigger-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "backend/trigger-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "backend/trigger-service/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "backend/trigger-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "backend/trigger-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "backend/trigger-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/trigger-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

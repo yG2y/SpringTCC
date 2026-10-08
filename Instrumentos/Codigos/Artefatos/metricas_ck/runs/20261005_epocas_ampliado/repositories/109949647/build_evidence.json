@@ -1,0 +1,36 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "4.1.1",
+  "spring_boot_major": "4",
+  "java_versions_declared": "21",
+  "build_evidence": [
+    {
+      "file": "ignite-rest-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "ignite-rest-service/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "ignite-rest-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "ignite-rest-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "ignite-rest-service/pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "ignite-rest-service/pom.xml",
+      "artifact": "spring-boot-restclient"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    }
+  ]
+}

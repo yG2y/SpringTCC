@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "783e412b8ed9986bc88411bc93fab89e65a76408",
+      "date": "2026-06-21T12:30:14+08:00",
+      "author": "zhule",
+      "email": "zhule0601@gmail.com",
+      "message": "Update index.html"
+    },
+    {
+      "sha": "68e6b479e48b936123f882b93ff0cec57ec300ed",
+      "date": "2026-06-21T12:15:29+08:00",
+      "author": "zhule",
+      "email": "zhule0601@gmail.com",
+      "message": "Create index.html\n\n11123"
+    },
+    {
+      "sha": "ee1b05d2fc7a22686a69b0c2f6f1b4e8b3840c5b",
+      "date": "2021-06-13T23:07:48+08:00",
+      "author": "zhule0601",
+      "email": "zhule0601@gmail.com",
+      "message": "update mysql README.md\n"
+    },
+    {
+      "sha": "c78ecd546c0a718460a75519777b579240abab0b",
+      "date": "2021-06-13T22:57:39+08:00",
+      "author": "zhule0601",
+      "email": "zhule0601@gmail.com",
+      "message": "Merge branch 'master' of https://github.com/zhule0601/fula\n"
+    },
+    {
+      "sha": "a2baaa2d77460aa36b32de31e2c78f54632d0da0",
+      "date": "2021-02-03T17:00:26+08:00",
+      "author": "zhule0601",
+      "email": "zhule0601@gmail.com",
+      "message": "add thymeleaf\n"
+    },
+    {
+      "sha": "95b40e80e40948dcdb327b326dd23880048d269f",
+      "date": "2021-02-20T17:49:58+08:00",
+      "author": "zhule",
+      "email": "zhuleaiziji@163.com",
+      "message": "返回 body 中带上 requestId (#21)\n\n"
+    },
+    {
+      "sha": "09e7327fc5037f2b93f991f556c8a2c8e65d028c",
+      "date": "2021-02-20T17:28:02+08:00",
+      "author": "zhule",
+      "email": "zhuleaiziji@163.com",
+      "message": "redis component (#20)\n\nredis component"
+    },
+    {
+      "sha": "e783e2fc8dfb6a48e951a189a6f1b6f37d89c958",
+      "date": "2021-02-04T14:24:59+08:00",
+      "author": "zhule",
+      "email": "zhuleaiziji@163.com",
+      "message": "Feat/reactor v1 (#19)\n\n* 增加 lombok 注解\n* 修改 maven 日志级别\n* 添加 MDC RequestID, 修改日志输出方式为异步输出"
+    },
+    {
+      "sha": "f991b6ed7c8df11ea77d9928866084f6eb76781e",
+      "date": "2021-01-20T19:49:56+08:00",
+      "author": "zhule0601",
+      "email": "zhule0601@gmail.com",
+      "message": "跟踪 spring 启动过程\n"
+    },
+    {
+      "sha": "c0d3cc935976238aa76a059f3ba5210af7641807",
+      "date": "2021-01-10T14:58:07+08:00",
+      "author": "zhule0601",
+      "email": "zhule0601@gmail.com",
+      "message": "把定时任务的 cron 抽取到配置文件中\n"
+    },
+    {
+      "sha": "10f90e6540a19249d2362adaeb550698cad179b1",
+      "date": "2021-01-08T19:36:55+08:00",
+      "author": "zhule",
+      "email": "zhuleaiziji@163.com",
+      "message": "Feat/kafka component (#18)\n\n* 增加 kafka component\n* kafka 模拟生成浏览数据"
+    },
+    {
+      "sha": "316f0a39d45bb6f17e4ac32c03cb112dde2daaa9",
+      "date": "2021-01-04T17:38:32+08:00",
+      "author": "zhule",
+      "email": "zhuleaiziji@163.com",
+      "message": "Feat/zookeeper component (#17)\n\n* add zookeeper 基本接口调用\n* 增加常用工具的 pom"
+    },
+    {
+      "sha": "f22417a7d00d387321b0539a637d8143ce8c0403",
+      "date": "2020-12-13T10:40:29+08:00",
+      "author": "zhule",
+      "email": "zhuleaiziji@163.com",
+      "message": "mysql-backup 改造. 与数据库分离 (#16)\n\n"
+    },
+    {
+      "sha": "543c01e7d09e13b1aea014353bb00bd58ced02f6",
+      "date": "2020-12-12T20:33:25+08:00",
+      "author": "zhule",
+      "email": "zhuleaiziji@163.com",
+      "message": "Fix/change machine (#15)\n\n部署时拉取最新升级脚本并执行\n上传文件 action 采用 fork 仓库的\nglados 签到改为 docker exec"
+    },
+    {
+      "sha": "f3ad365af66e04d22cd2c155711914163374e00a",
+      "date": "2020-11-02T15:03:28+08:00",
+      "author": "zhule",
+      "email": "zhule0601@gmail.com",
+      "message": "Feat/user controller (#14)\n\n组件增加开关\n角色权限表设计\n用户查询注册"
+    },
+    {
+      "sha": "3303676425ab3cf9fd469a1a3ed8447848b626b9",
+      "date": "2020-10-29T13:00:26+08:00",
+      "author": "zhule",
+      "email": "zhule0601@gmail.com",
+      "message": "Feat/docker image (#13)\n\n* add centos-for-java image\n* add mysql-backup image\n* add tg-client image"
+    },
+    {
+      "sha": "d33702f0ff89ab1e2fdd4e0ffed7c172504e4494",
+      "date": "2020-10-23T11:05:55+08:00",
+      "author": "zhule",
+      "email": "zhule0601@gmail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "48cdcc4ec11da7fc4fb7157e3fd369526bc1d76c",
+      "date": "2020-10-22T16:07:04+08:00",
+      "author": "zhule",
+      "email": "zhuleaiziji@163.com",
+      "message": "Update master-release-build.yml"
+    },
+    {
+      "sha": "829388007ccf1eb6b2fd4169662722b408068027",
+      "date": "2020-10-22T16:05:28+08:00",
+      "author": "zhule",
+      "email": "zhuleaiziji@163.com",
+      "message": "Feat/test case (#12)\n\n增加单元测试例子"
+    },
+    {
+      "sha": "0c5fdb4dbb0901383281fff220d80e68a70d0681",
+      "date": "2020-10-21T16:31:05+08:00",
+      "author": "zhule",
+      "email": "zhule0601@gmail.com",
+      "message": "add test-image\n"
+    },
+    {
+      "sha": "d5ab864de4510f308b83619876f2719aaf03145c",
+      "date": "2020-10-15T15:10:22+08:00",
+      "author": "zhule",
+      "email": "zhuleaiziji@163.com",
+      "message": "Feature/tg bot (#11)\n\nadd feature tg_bot"
+    },
+    {
+      "sha": "fb591779320ced65e010604ee408ce50a2606b1b",
+      "date": "2020-10-09T09:33:46+08:00",
+      "author": "zhule",
+      "email": "zhuleaiziji@163.com",
+      "message": "add auto upgrade server shell script (#9)\n\n"
+    },
+    {
+      "sha": "984cb9f1dc401226e7dbb7de73de397482462b03",
+      "date": "2020-10-08T16:50:17+08:00",
+      "author": "zhule",
+      "email": "zhuleaiziji@163.com",
+      "message": "Feature/databse docker backup (#8)\n\n* database auto backup\n\n* 整合mybatis\n\n* 全局异常处理\n\n* glados auto checkin"
+    },
+    {
+      "sha": "6191f212dec8a57ded01bafecd67a04fd19d3a4b",
+      "date": "2020-09-13T13:51:01+08:00",
+      "author": "zhule",
+      "email": "zhuleaiziji@163.com",
+      "message": "打包规范化 (#6)\n\n"
+    },
+    {
+      "sha": "6a2e108e505630f664b519a49d9717df7488ddc5",
+      "date": "2020-09-12T13:43:45+08:00",
+      "author": "zhule0601",
+      "email": "zhule0601@gmail.com",
+      "message": "打包规范化\n"
+    },
+    {
+      "sha": "373686505803cbb67b8561eae48b1c8a03d61eb3",
+      "date": "2020-09-07T21:59:06+08:00",
+      "author": "zhule0601",
+      "email": "zhule0601@gmail.com",
+      "message": "add github ci\n"
+    },
+    {
+      "sha": "70a340a50c78f92cdd313d7095ef191875015275",
+      "date": "2020-09-07T21:58:52+08:00",
+      "author": "zhule",
+      "email": "zhuleaiziji@163.com",
+      "message": "Feature/assembly package (#3)\n\n* 打包规范化"
+    },
+    {
+      "sha": "e1b0667287c65a977c10fca5bff12521a8c4a99b",
+      "date": "2020-09-07T21:31:14+08:00",
+      "author": "zhule",
+      "email": "zhuleaiziji@163.com",
+      "message": "Create main.yml\n"
+    },
+    {
+      "sha": "e012eb2c3004033237230e7661390daa53cd11e7",
+      "date": "2020-08-29T18:26:29+08:00",
+      "author": "zl",
+      "email": "291928588@qq.com",
+      "message": "增加 glados 自动签到功能\n"
+    },
+    {
+      "sha": "6d8c67b33979327e99d5e495419a457326376e05",
+      "date": "2020-08-29T18:22:57+08:00",
+      "author": "zl",
+      "email": "291928588@qq.com",
+      "message": "支持微信公众号回复信息\n"
+    }
+  ],
+  "commit_sha": "783e412b8ed9986bc88411bc93fab89e65a76408",
+  "extracted_at": "2026-10-05T18:27:52.930740+00:00"
+}

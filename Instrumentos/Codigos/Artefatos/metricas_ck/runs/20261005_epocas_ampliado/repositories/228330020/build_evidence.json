@@ -1,0 +1,2080 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${spring-boot-version}",
+  "spring_boot_major": "unknown",
+  "java_versions_declared": "${jdk.version}",
+  "build_evidence": [
+    {
+      "file": "components-starter/camel-a2a-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-a2a-starter/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "components-starter/camel-activemq-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-activemq-starter/pom.xml",
+      "artifact": "spring-boot-activemq"
+    },
+    {
+      "file": "components-starter/camel-activemq6-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-ai-observability-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-ai-observability-starter/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "components-starter/camel-ai-resource-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-ai-tool-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-ai-tool-starter/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "components-starter/camel-alibaba-eventbridge-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-alibaba-fc-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-alibaba-kms-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-alibaba-mns-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-alibaba-oss-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-alibaba-ots-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-alibaba-sls-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-alibaba-sms-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-amqp-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-arangodb-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-as2-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-asn1-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-asterisk-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-atmosphere-websocket-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-atom-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-avro-rpc-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-avro-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-avro-starter/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "components-starter/camel-aws-bedrock-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-aws-cloudtrail-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-aws-config-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-aws-parameter-store-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-aws-secrets-manager-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-aws-secrets-manager-starter/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "components-starter/camel-aws-security-hub-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-aws2-athena-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-aws2-comprehend-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-aws2-cw-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-aws2-ddb-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-aws2-ec2-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-aws2-ecs-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-aws2-eks-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-aws2-eventbridge-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-aws2-iam-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-aws2-kinesis-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-aws2-kms-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-aws2-lambda-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-aws2-mq-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-aws2-msk-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-aws2-polly-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-aws2-redshift-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-aws2-rekognition-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-aws2-s3-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-aws2-s3-vectors-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-aws2-ses-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-aws2-sns-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-aws2-sqs-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-aws2-step-functions-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-aws2-sts-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-aws2-textract-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-aws2-timestream-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-aws2-transcribe-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-aws2-translate-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-azure-cosmosdb-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-azure-eventgrid-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-azure-eventhubs-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-azure-files-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-azure-functions-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-azure-key-vault-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-azure-key-vault-starter/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "components-starter/camel-azure-servicebus-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-azure-storage-blob-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-azure-storage-datalake-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-azure-storage-queue-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-barcode-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-base64-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-bean-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-bean-validator-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-beanio-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-bindy-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-bonita-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-box-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-braintree-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-browse-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-caffeine-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-camunda-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-cassandraql-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-cbor-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-chatscript-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-chunk-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-clickhouse-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-clickup-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-cloudevents-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-cm-sms-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-coap-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-cometd-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-console-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-consul-cluster-service-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-consul-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-controlbus-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-core-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-couchbase-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-couchdb-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-cron-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-crypto-pgp-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-crypto-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-csv-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-cxf-rest-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-cxf-soap-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-cxf-transport-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-cyberark-vault-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-dapr-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-dataformat-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-dataset-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-datasonnet-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-debezium-db2-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-debezium-mongodb-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-debezium-mysql-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-debezium-oracle-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-debezium-postgres-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-debezium-sqlserver-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-debug-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-dfdl-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-dhis2-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-diagram-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-direct-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-disruptor-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-djl-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-dns-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-docker-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-docling-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-drill-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-dropbox-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-duckdb-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-dynamic-router-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-ehcache-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-elasticsearch-rest-client-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-elasticsearch-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-event-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-exec-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-fastjson-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-fhir-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-fhir-starter/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "components-starter/camel-file-cluster-service-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-file-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-file-watch-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-flatpack-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-flink-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-flowable-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-fop-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-fory-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-freemarker-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-ftp-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-geocoder-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-git-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-github2-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-google-bigquery-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-google-calendar-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-google-drive-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-google-firestore-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-google-functions-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-google-mail-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-google-pubsub-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-google-secret-manager-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-google-secret-manager-starter/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "components-starter/camel-google-sheets-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-google-speech-to-text-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-google-storage-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-google-text-to-speech-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-google-vertexai-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-google-vision-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-graphql-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-grok-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-groovy-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-grpc-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-gson-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-hashicorp-vault-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-hashicorp-vault-starter/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "components-starter/camel-hazelcast-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-hivemq-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-hl7-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-http-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-huaweicloud-dms-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-huaweicloud-frs-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-huaweicloud-functiongraph-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-huaweicloud-iam-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-huaweicloud-imagerecognition-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-huaweicloud-obs-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-huaweicloud-smn-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-huggingface-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-ibm-cos-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-ibm-secrets-manager-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-ibm-secrets-manager-starter/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "components-starter/camel-ibm-watson-discovery-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-ibm-watson-language-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-ibm-watson-speech-to-text-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-ibm-watson-text-to-speech-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-ibm-watsonx-ai-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-ibm-watsonx-data-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-ical-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-iggy-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-ignite-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-infinispan-cluster-service-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-infinispan-embedded-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-infinispan-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-influxdb-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-influxdb2-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-iso8583-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-jackson-avro-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-jackson-protobuf-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-jackson-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-jackson3-avro-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-jackson3-protobuf-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-jackson3-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-jackson3xml-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-jacksonxml-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-jactl-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-jandex-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-jasypt-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-javascript-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-jaxb-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-jcache-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-jcr-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-jdbc-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-jetty-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-jfr-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-jgroups-raft-cluster-service-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-jgroups-raft-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-jgroups-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-jira-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-jira-starter/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "components-starter/camel-jms-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-jmx-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-jolokia-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-jolokia-starter/pom.xml",
+      "artifact": "spring-boot-actuator-autoconfigure"
+    },
+    {
+      "file": "components-starter/camel-jolokia-starter/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "components-starter/camel-jolt-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-jooq-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-joor-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-jpa-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-jq-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-jsch-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-jslt-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-json-validator-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-jsonapi-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-jsonata-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-jsonb-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-jsonpath-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-jsoup-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-jt400-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-jte-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-kafka-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-kafka-starter/pom.xml",
+      "artifact": "spring-boot-kafka"
+    },
+    {
+      "file": "components-starter/camel-kafka-starter/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "components-starter/camel-kamelet-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-kamelet-starter/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "components-starter/camel-keycloak-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-knative-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-kserve-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-kubernetes-cluster-service-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-kubernetes-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-kudu-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-langchain4j-agent-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-langchain4j-chat-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-langchain4j-embeddings-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-langchain4j-embeddingstore-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-langchain4j-ingest-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-langchain4j-tokenizer-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-langchain4j-web-search-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-language-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-ldap-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-ldif-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-log-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-lra-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-lucene-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-lumberjack-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-lzf-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-mail-microsoft-oauth-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-mail-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-management-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-mapstruct-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-master-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-master-starter/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "components-starter/camel-mcp-server-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-mcp-server-starter/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "components-starter/camel-mdc-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-metrics-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-micrometer-observability-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-micrometer-observability-starter/pom.xml",
+      "artifact": "spring-boot-actuator-autoconfigure"
+    },
+    {
+      "file": "components-starter/camel-micrometer-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-micrometer-starter/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "components-starter/camel-micrometer-starter/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "components-starter/camel-milo-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-milvus-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-mina-sftp-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-mina-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-minio-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-mllp-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-mock-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-mongodb-gridfs-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-mongodb-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-mustache-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-mvel-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-mybatis-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-nats-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-neo4j-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-netty-http-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-netty-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-oaipmh-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-observability-services-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-observability-services-starter/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "components-starter/camel-observation-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-observation-starter/pom.xml",
+      "artifact": "spring-boot-actuator-autoconfigure"
+    },
+    {
+      "file": "components-starter/camel-observation-starter/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "components-starter/camel-observation-starter/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "components-starter/camel-observation-starter/pom.xml",
+      "artifact": "spring-boot-restclient"
+    },
+    {
+      "file": "components-starter/camel-ocsf-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-odata-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-ognl-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-olingo2-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-olingo4-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-once-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-opa-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-openai-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-openapi-java-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-openapi-validator-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-openfga-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-opensearch-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-openstack-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-opentelemetry-metrics-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-opentelemetry-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-opentelemetry2-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-optaplanner-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-paho-mqtt5-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-paho-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-parquet-avro-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-pdf-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-pg-replication-slot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-pgevent-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-pgvector-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-pinecone-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-platform-http-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-platform-http-starter/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "components-starter/camel-platform-http-starter/pom.xml",
+      "artifact": "spring-boot-starter-security-oauth2-client"
+    },
+    {
+      "file": "components-starter/camel-platform-http-starter/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "components-starter/camel-platform-http-starter/pom.xml",
+      "artifact": "spring-boot-security-oauth2-client"
+    },
+    {
+      "file": "components-starter/camel-platform-http-starter/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "components-starter/camel-platform-http-starter/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "components-starter/camel-platform-http-starter/pom.xml",
+      "artifact": "spring-boot-restclient"
+    },
+    {
+      "file": "components-starter/camel-platform-http-starter/pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "components-starter/camel-platform-http-starter/pom.xml",
+      "artifact": "spring-boot-starter-restclient-test"
+    },
+    {
+      "file": "components-starter/camel-platform-http-starter/pom.xml",
+      "artifact": "spring-boot-webmvc-test"
+    },
+    {
+      "file": "components-starter/camel-plc4x-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-pqc-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-printer-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-protobuf-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-pubnub-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-pulsar-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-python-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-python3-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-qdrant-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-quartz-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-quickfix-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-quickjs-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-reactive-streams-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-reactor-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-ref-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-resilience4j-micrometer-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-resilience4j-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-rest-openapi-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-rest-postman-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-rest-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-robotframework-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-rocketmq-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-rss-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-rxjava-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-saga-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-salesforce-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-sap-netweaver-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-saxon-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-scheduler-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-schematron-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-seda-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-servicenow-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-servlet-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-servlet-starter/pom.xml",
+      "artifact": "spring-boot-servlet"
+    },
+    {
+      "file": "components-starter/camel-servlet-starter/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "components-starter/camel-shell-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-shiro-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-sjms-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-sjms2-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-slack-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-smb-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-smooks-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-smpp-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-snakeyaml-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-snmp-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-soap-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-solr-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-spiffe-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-splunk-hec-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-spring-ai-chat-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-spring-ai-embeddings-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-spring-ai-image-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-spring-ai-vector-store-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-spring-batch-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-spring-cloud-config-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-spring-jdbc-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-spring-jdbc-starter/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "components-starter/camel-spring-ldap-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-spring-rabbitmq-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-spring-redis-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-spring-security-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-spring-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-spring-ws-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-spring-ws-starter/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "components-starter/camel-springdoc-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-sql-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-sql-starter/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "components-starter/camel-ssh-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-state-store-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-stax-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-stitch-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-stream-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-stringtemplate-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-stripe-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-stub-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-swift-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-syslog-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-tahu-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-tarfile-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-telegram-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-telemetry-dev-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-tensorflow-serving-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-thrift-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-thymeleaf-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-tika-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-timer-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-toon-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-twilio-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-twitter-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-typesafe-ai-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-ubl-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-undertow-spring-security-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-undertow-spring-security-starter/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "components-starter/camel-undertow-spring-security-starter/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "components-starter/camel-undertow-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-univocity-parsers-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-validator-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-velocity-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-vertx-http-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-vertx-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-vertx-websocket-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-wasm-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-weather-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-weaviate-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-web3j-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-webhook-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-whatsapp-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-wordpress-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-workday-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-xchange-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-xj-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-xml-jaxb-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-xml-jaxb-starter/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "components-starter/camel-xml-jaxp-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-xmlsecurity-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-xmpp-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-xpath-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-xslt-saxon-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-xslt-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-zendesk-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-zip-deflater-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-zipfile-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-zookeeper-cluster-service-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-zookeeper-master-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/camel-zookeeper-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "components-starter/pom.xml",
+      "artifact": "spring-boot"
+    },
+    {
+      "file": "components-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "components-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "components-starter/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "components-starter/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "core-starter/camel-spring-boot-engine-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "core-starter/camel-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "core/camel-spring-boot-xml/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "core/camel-spring-boot-xml/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "core/camel-spring-boot-xml/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "core/camel-spring-boot-xml/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "core/camel-spring-boot/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "core/camel-spring-boot/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "core/camel-spring-boot/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "core/camel-spring-boot/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "core/camel-spring-boot/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "core/camel-spring-boot/pom.xml",
+      "artifact": "spring-boot-starter-tomcat"
+    },
+    {
+      "file": "core/camel-spring-boot/pom.xml",
+      "artifact": "spring-boot-starter-restclient"
+    },
+    {
+      "file": "core/camel-spring-boot/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "dsl-starter/camel-cli-connector-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "dsl-starter/camel-cli-connector-starter/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "dsl-starter/camel-cli-connector-starter/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "dsl-starter/camel-cli-connector-starter/pom.xml",
+      "artifact": "spring-boot-starter-websocket"
+    },
+    {
+      "file": "dsl-starter/camel-cli-debug-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "dsl-starter/camel-componentdsl-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "dsl-starter/camel-dsl-modeline-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "dsl-starter/camel-endpointdsl-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "dsl-starter/camel-java-joor-dsl-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "dsl-starter/camel-xml-io-dsl-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "dsl-starter/camel-xml-jaxb-dsl-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "dsl-starter/camel-yaml-dsl-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "dsl-starter/camel-yaml-io-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "tests/camel-itest-spring-boot-farjar/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "tests/camel-itest-spring-boot-farjar/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "tests/camel-itest-spring-boot-farjar/pom.xml",
+      "artifact": "spring-boot-test"
+    },
+    {
+      "file": "tests/camel-itest-spring-boot/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "tooling/camel-spring-boot-config-generator-maven-plugin/pom.xml",
+      "artifact": "spring-boot"
+    },
+    {
+      "file": "tooling/camel-spring-boot-config-generator-maven-plugin/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "tooling/camel-spring-boot-generator-maven-plugin/pom.xml",
+      "artifact": "spring-boot"
+    },
+    {
+      "file": "tooling/camel-spring-boot-generator-maven-plugin/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "tooling/camel-starter-parent/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    }
+  ]
+}

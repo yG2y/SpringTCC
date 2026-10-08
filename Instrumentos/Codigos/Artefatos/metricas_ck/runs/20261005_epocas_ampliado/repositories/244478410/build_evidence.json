@@ -1,0 +1,32 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "3.2.1",
+  "spring_boot_major": "3",
+  "java_versions_declared": "11",
+  "build_evidence": [
+    {
+      "file": "djl-spring-boot-console-sample/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "djl-spring-boot-console-sample/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "djl-spring-boot-starter-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "djl-spring-boot-starter-parent/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "djl-spring-boot-starter-parent/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "djl-spring-boot-starter-parent/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    }
+  ]
+}

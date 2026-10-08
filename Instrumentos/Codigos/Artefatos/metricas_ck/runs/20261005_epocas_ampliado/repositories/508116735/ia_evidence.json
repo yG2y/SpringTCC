@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "ad5d63c8973bca56b3843a3ca38a31d140d25cf2",
+      "date": "2024-01-31T21:51:52+09:00",
+      "author": "장원석 Marco",
+      "email": "59413128+wonsss@users.noreply.github.com",
+      "message": "feat: (fe) docker 설정 추가 (#673)\n\n* fix: 서비스워커에서 navigate 에러 원인 주석처리\n\n* feat: 도커파일 추가"
+    },
+    {
+      "sha": "d4151b563b077daf13efd044cb48a91729fc32df",
+      "date": "2022-11-04T17:09:11+09:00",
+      "author": "Woo seung",
+      "email": "52148907+woose28@users.noreply.github.com",
+      "message": "Merge pull request #656 from woowacourse-teams/develop\n\nVersion 4.3.1 배포"
+    },
+    {
+      "sha": "1ea60922653be95c7b8fe4b35523a0cb0c68d9c7",
+      "date": "2022-11-04T17:02:38+09:00",
+      "author": "Woo seung",
+      "email": "52148907+woose28@users.noreply.github.com",
+      "message": "feat: (fe) serviceworker 버전 업그레이드 (#655)\n\n- 캐시 버스팅을 위해 serviceworker 버전 증가"
+    },
+    {
+      "sha": "3ccbfe517d04d8eaa5febd9c6138b6ff59df6881",
+      "date": "2022-11-04T17:01:15+09:00",
+      "author": "Marco",
+      "email": "59413128+wonsss@users.noreply.github.com",
+      "message": "feat: (fe) 프론트엔드 CI 컴포넌트 테스트 yaml 깃허브 액션 설정 (#654)\n\n"
+    },
+    {
+      "sha": "384ca897861bccefe35eba31a5656f3d05edfe12",
+      "date": "2022-11-04T16:24:17+09:00",
+      "author": "Woo seung",
+      "email": "52148907+woose28@users.noreply.github.com",
+      "message": "Merge pull request #652 from woowacourse-teams/develop\n\nVersion 4.3.0 배포"
+    },
+    {
+      "sha": "6dcae80562ac83d66fe6de0c0a4ed45020c27b7c",
+      "date": "2022-11-04T16:23:19+09:00",
+      "author": "JoJo Green",
+      "email": "82805588+jojogreen91@users.noreply.github.com",
+      "message": "docs: README.md 업데이트 (#653)\n\n* docs: README.md 업데이트\n\n* docs: README.md 구분선 제거\n\n* docs: README.md 이미지 업로드\n\n* docs: README.md 수정"
+    },
+    {
+      "sha": "f15d3b21801a7ca5a04cb2e20067c4731b6e6bb3",
+      "date": "2022-11-04T16:09:51+09:00",
+      "author": "Marco",
+      "email": "59413128+wonsss@users.noreply.github.com",
+      "message": "fix: (fe) 테스트 코드 작동 정상화 (#651)\n\n* chore: 테스트 환경설정을 위한 설치(ts-node, msw0.47.3, fake-indexeddb)\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\nCo-authored-by: ronci <ronci@users.noreply.github.com>\n\n* fix: code splitting으로 인한 테스트코드 이슈 해결(isolateModules, doMock, babel-plugin-dynamic-import-code)\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\nCo-authored-by: ronci <ronci@users.noreply.github.com>"
+    },
+    {
+      "sha": "bacd0c685e6682e5d51147969cf82d3bd081707f",
+      "date": "2022-11-04T16:04:00+09:00",
+      "author": "Woo seung",
+      "email": "52148907+woose28@users.noreply.github.com",
+      "message": "feat: (fe) 챌린지 페이지 탭 순서 변경 (#649)\n\n* feat: 챌린지 탭 하위 탭의 순서 변경\n\n- 추천, 인기, 검색, 이벤트 순서로 변경\n\n* feat: 챌린지 탭 터치 시 추천 챌린지 페이지로 이동하도록 구현\n\n* feat: 우테코 이벤트 챌린지 페이지의 상세 설명 수정"
+    },
+    {
+      "sha": "fa5a6009f53d19282287daec2f7b9f6efc475b26",
+      "date": "2022-11-04T15:26:59+09:00",
+      "author": "Woo seung",
+      "email": "52148907+woose28@users.noreply.github.com",
+      "message": "refactor: (fe) CommentInput 컴포넌트에서 멘션 기능 MentionableInput을 분리하고 CertFormPage에도 멘션 기능 추가 (#646)\n\n* refactor: CommentInput 컴포넌트에서 MentionableInput을 분리\n\n* refactor: MentionableInput 컴포넌트에 editableElement를 전달하는 방식으로 멘션 기능 리팩터링\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: commentInputRef를 editableElementRef로 이름 변경\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* feat: 인증 메세지 작성 시 멘션 가능하도록 기능 추가\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* feat: 인증 메세지에서 멘션 시 알림 전송\n\npost 요청의 응답값으로cycleDetailId를 받아서 pathId로 전달\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: 불필요한 코드 제거\n\n* test: (be) 인수 테스트 작성 (#632)\n\n* test: 토큰 요청 id 기반으로 변경\n\n* test: 챌린지 인수 테스트 작성\n\n* test: 사이클 인수 테스트 작성\n\n* test: 토큰 미리 생성하도록 변경\n\n* test: 피드 인수 테스트 작성\n\n* test: 댓글 인수 테스트 작성\n\n* test: oauth 인수 테스트 작성\n\n* test: 회원 인수 테스트 작성\n\n* test: 알림 인수 테스트 작성\n\n* test: 랭킹 인수 테스트 작성\n\n* refactor: 코드 스멜 제거\n\n* refactor: 테스트 컨테이너 5개로 줄임\n\n* refactor: 코드 스멜 제거\n\n* feat: (fe) 컴포넌트 구조 개선 (#641)\n\n* refactor: CycleDetailPage에서만 사용되는 컴포넌트들을 해당 디렉터리 내로 이동\n\nCo-authored-by: ronci <ronci@users.noreply.github.com>\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: 불필요한 index.ts 제거\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: CommentInput 컴포넌트를 FeedDetailPage 안으로 이동\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: InstallPrompt 컴포넌트를 LandingPage 내부로 이동\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: UserWithdrawalModal 컴포넌트를 ProfileEditPage 내부로 이동\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: CardBox와 CardGridContainer 컴포넌트를 ProfilePage 내부로 이동\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: RankingPage 내부로 컴포넌트(UserRanking, RankingItem, RankingList, RankingPeriodItem) 이동\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: SearchBar 컴포넌트를 SearchPage 내부로 이동\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: Dropdown 컴포넌트를 shared로 이동\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* fix: 다크모드버튼 checked 스타일 적용되도록 수정\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: DarkModeButton 컴포넌트를 shared로 이동\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: InfiniteScroll 컴포넌트를 shared로 이동\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: FixedButton 컴포넌트를 shared로 이동\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: Input 컴포넌트를 shared로 이동\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: LoadingButton, LoadingSpinner 컴포넌트를 shared로 이동\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: ScrollToTop, Popover, LinkText 컴포넌트를 shared로 이동\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: ShareButton 컴포넌트를 shared로 이동\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: Tooltip 컴포넌트를 shared로 이동\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: ToggleButton 컴포넌트를 shared로 이동\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: UnderLine 컴포넌트를 shared로 이동\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: Tabs 컴포넌트를 shared로 이동\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: SRonly 컴포넌트를 shared로 이동\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: SnackBar 컴포넌트를 shared로 이동\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: Timer 컴포넌트를 shared로 이동\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: ErrorBoundary 컴포넌트를 shared로 이동\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: ErrorFallbackLoginButton 컴포넌트를 Header로 이동\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: ErrorFallbackSubscriptionButton, ErrorFallbackNotificationButton 컴포넌트를 Header로 이동\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: Header 컴포넌트를 내부에 여러 컴포넌트로 분리\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: 스토리북 경로 수정\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\nCo-authored-by: ronci <ronci@users.noreply.github.com>\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: CommentInput 컴포넌트에서 MentionableInput을 분리\n\n* refactor: MentionableInput 컴포넌트에 editableElement를 전달하는 방식으로 멘션 기능 리팩터링\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* feat: 인증 메세지 작성 시 멘션 가능하도록 기능 추가\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* chore: 불필요한 코드 정리\n\n* refactor: MembersPopover를 MentionableInput 내부로 이동\n\n* chore: 불필요한 코드 제거\n\n* Merge branch 'develop' into feature/fe/refactor-mention\n\n* fix: conflict 해결\n\nCo-authored-by: Marco <bigdatajang@gmail.com>\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\nCo-authored-by: DOES <78652144+ldk980130@users.noreply.github.com>\nCo-authored-by: Marco <59413128+wonsss@users.noreply.github.com>\nCo-authored-by: ronci <ronci@users.noreply.github.com>"
+    },
+    {
+      "sha": "4d91255290d3d38cd6ee3652c168d8bacda801c4",
+      "date": "2022-11-04T10:49:27+09:00",
+      "author": "DOES",
+      "email": "78652144+ldk980130@users.noreply.github.com",
+      "message": "feat: 사이클 진척도 증가시 cycleDetailId 추가 (#645)\n\n"
+    },
+    {
+      "sha": "f2d831d39bf31a912ed75ca03ea1db5557e718c2",
+      "date": "2022-11-03T18:41:03+09:00",
+      "author": "Marco",
+      "email": "59413128+wonsss@users.noreply.github.com",
+      "message": "refactor: (fe) useInstallApp 리팩터링 (#647)\n\n"
+    },
+    {
+      "sha": "9e4ca7eb9a733d77f6b3cf549917a4a4e5fff164",
+      "date": "2022-11-03T16:11:44+09:00",
+      "author": "Marco",
+      "email": "59413128+wonsss@users.noreply.github.com",
+      "message": "feat: (fe) 컴포넌트 구조 개선 (#641)\n\n* refactor: CycleDetailPage에서만 사용되는 컴포넌트들을 해당 디렉터리 내로 이동\n\nCo-authored-by: ronci <ronci@users.noreply.github.com>\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: 불필요한 index.ts 제거\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: CommentInput 컴포넌트를 FeedDetailPage 안으로 이동\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: InstallPrompt 컴포넌트를 LandingPage 내부로 이동\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: UserWithdrawalModal 컴포넌트를 ProfileEditPage 내부로 이동\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: CardBox와 CardGridContainer 컴포넌트를 ProfilePage 내부로 이동\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: RankingPage 내부로 컴포넌트(UserRanking, RankingItem, RankingList, RankingPeriodItem) 이동\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: SearchBar 컴포넌트를 SearchPage 내부로 이동\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: Dropdown 컴포넌트를 shared로 이동\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* fix: 다크모드버튼 checked 스타일 적용되도록 수정\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: DarkModeButton 컴포넌트를 shared로 이동\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: InfiniteScroll 컴포넌트를 shared로 이동\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: FixedButton 컴포넌트를 shared로 이동\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: Input 컴포넌트를 shared로 이동\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: LoadingButton, LoadingSpinner 컴포넌트를 shared로 이동\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: ScrollToTop, Popover, LinkText 컴포넌트를 shared로 이동\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: ShareButton 컴포넌트를 shared로 이동\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: Tooltip 컴포넌트를 shared로 이동\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: ToggleButton 컴포넌트를 shared로 이동\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: UnderLine 컴포넌트를 shared로 이동\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: Tabs 컴포넌트를 shared로 이동\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: SRonly 컴포넌트를 shared로 이동\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: SnackBar 컴포넌트를 shared로 이동\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: Timer 컴포넌트를 shared로 이동\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: ErrorBoundary 컴포넌트를 shared로 이동\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: ErrorFallbackLoginButton 컴포넌트를 Header로 이동\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: ErrorFallbackSubscriptionButton, ErrorFallbackNotificationButton 컴포넌트를 Header로 이동\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: Header 컴포넌트를 내부에 여러 컴포넌트로 분리\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\n* refactor: 스토리북 경로 수정\n\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>\n\nCo-authored-by: ronci <ronci@users.noreply.github.com>\nCo-authored-by: Woo seung <woose28@users.noreply.github.com>"
+    },
+    {
+      "sha": "c743f98e249c5ec6194bdb45be93aec1580b1a57",
+      "date": "2022-11-03T12:53:33+09:00",
+      "author": "DOES",
+      "email": "78652144+ldk980130@users.noreply.github.com",
+      "message": "test: (be) 인수 테스트 작성 (#632)\n\n* test: 토큰 요청 id 기반으로 변경\n\n* test: 챌린지 인수 테스트 작성\n\n* test: 사이클 인수 테스트 작성\n\n* test: 토큰 미리 생성하도록 변경\n\n* test: 피드 인수 테스트 작성\n\n* test: 댓글 인수 테스트 작성\n\n* test: oauth 인수 테스트 작성\n\n* test: 회원 인수 테스트 작성\n\n* test: 알림 인수 테스트 작성\n\n* test: 랭킹 인수 테스트 작성\n\n* refactor: 코드 스멜 제거\n\n* refactor: 테스트 컨테이너 5개로 줄임\n\n* refactor: 코드 스멜 제거"
+    },
+    {
+      "sha": "50d4bcb236e5a0d057f1106bfc651837fcd1f2f9",
+      "date": "2022-11-01T16:38:53+09:00",
+      "author": "Woo seung",
+      "email": "52148907+woose28@users.noreply.github.com",
+      "message": "feature: (fe) 웹 접근성 추가 개선 (#639)\n\n"
+    },
+    {
+      "sha": "64e0d02020121828adf8648eb4429929273ad3f7",
+      "date": "2022-11-01T16:30:37+09:00",
+      "author": "Marco",
+      "email": "59413128+wonsss@users.noreply.github.com",
+      "message": "Merge pull request #636 from woowacourse-teams/feature/fe/modify-typescript-module-readme\n\n"
+    },
+    {
+      "sha": "eb8726ccfde0953d65731a3621557a0797673bd9",
+      "date": "2022-11-01T16:29:21+09:00",
+      "author": "Marco",
+      "email": "59413128+wonsss@users.noreply.github.com",
+      "message": "feat: (fe) webpack 설정 리팩터링(babel-loader 적용 및 최적화 등) (#634)\n\n* chore: webpack devtool 옵션 변경\n\n- development 환경에서 eval-cheap-module-source-map 사용\n\nCo-authored-by: ronci <ronci@users.noreply.github.com>\n\n* chore: webpack 필요없는 플러그인 제거\n\n- ProvidePlugin, HotModuleReplacementPlugin 제거\n- ESBuildMinifyPlugin의 css 옵션 제거\n\nCo-authored-by: ronci <ronci@users.noreply.github.com>\n\n* chore: 실행 환경에  따라 웹팩 설정 파일 분리 및 스크립트 명렁어 수정\n\nCo-authored-by: Marco <wonsss@users.noreply.github.com>\nCo-authored-by: ronci <ronci@users.noreply.github.com>\n\n* chore: 실행 환경에  따라 번들 파일 이름 설정 변경\n\n- dev 일 때는 파일 이름 추가\n\nCo-authored-by: Marco <wonsss@users.noreply.github.com>\nCo-authored-by: ronci <ronci@users.noreply.github.com>\n\n* chore: webpack Production 환경일 때 babel-loader 적용\n\nCo-authored-by: Marco <wonsss@users.noreply.github.com>\nCo-authored-by: ronci <ronci@users.noreply.github.com>\n\n* chore: 빌드 속도 최적화 적용\n\n- runtimeChunks\n- cache fileSystem 적용\n\nCo-authored-by: Marco <wonsss@users.noreply.github.com>\nCo-authored-by: ronci <ronci@users.noreply.github.com>\n\n* feat: ForkTsCheckerWebpackPlugin로 타입체킹\n\nprod 빌드하면서 tsc와 타입체킹 속도를 비교해봤는데, tsc는 53초였고 fork ts는 38초로 더 빨랐다.\n\nCo-authored-by: ronci <ronci@users.noreply.github.com>\n\n* feat: 빌드 시 styled components 관련 displayName 및 minify 설정\n\n- dev에서는 displayName 표시\n- prod에서는 최적화를 위해 minify와 pure 설정 적용하고 transpileTemplateLiterals도 적용\n\nCo-authored-by: ronci <ronci@users.noreply.github.com>\n\n* feat: 웹팩 clean 설정 추가\n\n웹팩 캐시는 dist 폴더가 아닌 node_modules의 cache 폴더를 통해 작동하므로, dist 폴더를 정리해도 캐시에는 영향 없음\n\n* remove: optimization runtimeChunk의 성능을 알 수 없어 제거\n\n* feat: webpack의 devServer 옵션을 common 설정으로 이동\n\ndevServer의 HMR은 dev나 prod에서 webpack serve(start)시 모두 적용되어야 하는 옵션이고 build 결과물에는 영향이 없으므로, 공통 설정으로 적용되는 것이 적절하다고 판단됨.\n\n* remove: 웹팩 prod 설정에서 splitChunks 옵션 제거\n\nsplitChunks 옵션이 빌드 속도 개선을 체감할 수 없고 설명하기에 애매한 옵션이라 판단됨\n\n* feat: .browserslistrc 추가\n\n'@babel/preset-env'의  targets 옵션을 .browserslistrc로 대체\n\n또한 타겟 브라우저 목록도 한국에서 0.5% 이상 사용점유율의 브라우저로 변경\n\n* remove: 사용 안되는 패키지 제거\n\n- esbuild-loader 제거\n- webpack-bundle-analyzer 제거\n\nCo-authored-by: woose28 <dldntmdsla@naver.com>\nCo-authored-by: ronci <ronci@users.noreply.github.com>\nCo-authored-by: Marco <wonsss@users.noreply.github.com>"
+    },
+    {
+      "sha": "40fb07494d96a30126325f404729836569309c5a",
+      "date": "2022-10-30T09:30:21+09:00",
+      "author": "woose28",
+      "email": "dldntmdsla@naver.com",
+      "message": "chore: script 명령어 수정\n\n- test 명령어 실행 시 빌드된 결과를 불러올 수 없는 문제 해결\n"
+    },
+    {
+      "sha": "81c03bf642303e3275ee64e3b0e6e565b99e7292",
+      "date": "2022-10-30T09:29:09+09:00",
+      "author": "woose28",
+      "email": "dldntmdsla@naver.com",
+      "message": "docs: README 수정\n\n- PickType 사용법 추가\n"
+    },
+    {
+      "sha": "a4896a275e4d97546dddbfd8af59c378d03d7ab4",
+      "date": "2022-10-27T15:40:05+09:00",
+      "author": "Woo seung",
+      "email": "52148907+woose28@users.noreply.github.com",
+      "message": "feat: (fe) 로그인 후 Feed 페이지로 리다이렉션 되도록 구현 (#631)\n\nCo-authored-by: ronci <ronci@users.noreply.github.com>\n\nCo-authored-by: ronci <ronci@users.noreply.github.com>"
+    },
+    {
+      "sha": "d49fb40926cbe55e52b1509c86e3cb2af5332737",
+      "date": "2022-10-26T17:28:11+09:00",
+      "author": "Marco",
+      "email": "59413128+wonsss@users.noreply.github.com",
+      "message": "Merge pull request #630 from woowacourse-teams/develop\n\n"
+    },
+    {
+      "sha": "b5a608dcf56f00c78b1ca97bba92ab15dff04ed1",
+      "date": "2022-10-26T17:27:46+09:00",
+      "author": "Marco",
+      "email": "59413128+wonsss@users.noreply.github.com",
+      "message": "Merge branch 'main' into develop"
+    },
+    {
+      "sha": "bf4cc048ea88651907be87fbc01d22cc90bcb717",
+      "date": "2022-10-26T16:56:10+09:00",
+      "author": "Marco",
+      "email": "59413128+wonsss@users.noreply.github.com",
+      "message": "fix: (fe) 푸시알림 아이콘 뱃지 이미지 적용 및 미지원 브라우저에 대응한 BroadcastChannel 재적용 (#629)\n\n"
+    },
+    {
+      "sha": "3c865e8dad60923a3880f6a7a040d67472cbd67e",
+      "date": "2022-10-26T15:25:10+09:00",
+      "author": "Marco",
+      "email": "59413128+wonsss@users.noreply.github.com",
+      "message": "docs: 로컬 실행 방법 추가 (#627)\n\n"
+    },
+    {
+      "sha": "64d87bc1714e8f8a6e86865fe2f75fc50191a75c",
+      "date": "2022-10-25T17:59:36+09:00",
+      "author": "JoJo Green",
+      "email": "82805588+jojogreen91@users.noreply.github.com",
+      "message": "refactor: 불필요한 파일 제거, 메서드 이름 변경, 포매팅 (#628)\n\n* refactor: 불필요한 파일 제거, 메서드 이름 변경, 포매팅\n\n* refactor: pathVariable과 param 타입이 안맞을 경우 400 예외 반환하도록 변경\n\n* refactor: 알림 전송 로그 추가\n\n* docs: api 문서 최신화\n\n* refactor: 불필요한 라인 제거\n\nCo-authored-by: DOES <ldk980130@gmail.com>"
+    },
+    {
+      "sha": "9c8a574bebaba44335b3901c7a33740eb2dd0c4c",
+      "date": "2022-10-21T23:11:22+09:00",
+      "author": "Marco",
+      "email": "59413128+wonsss@users.noreply.github.com",
+      "message": "feat: (fe) 구글플레이스토어 인증을 위한 assetlinks 코드 추가 (#620)\n\n"
+    },
+    {
+      "sha": "3b26775a2d241747ee1bf610342fa2cefabe68e3",
+      "date": "2022-10-21T22:22:23+09:00",
+      "author": "wonsss",
+      "email": "bigdatajang@gmail.com",
+      "message": "feat: 구글플레이스토어 인증을 위한 assetlinks 코드 추가\n"
+    },
+    {
+      "sha": "081331e6dfd87e922b49d59291f4d8b7b601d465",
+      "date": "2022-10-21T10:10:36+09:00",
+      "author": "Marco",
+      "email": "59413128+wonsss@users.noreply.github.com",
+      "message": "Merge pull request #618 from woowacourse-teams/hotfix/fe/mention\n\n"
+    },
+    {
+      "sha": "66d1e06097f34c21986776286bad423ea41c8c75",
+      "date": "2022-10-21T10:06:23+09:00",
+      "author": "Marco",
+      "email": "bigdatajang@gmail.com",
+      "message": "feat: manifest shortcuts 추가\n"
+    },
+    {
+      "sha": "a393c3a95e27e69005a28d2049d6a9cb7056111c",
+      "date": "2022-10-21T00:01:36+09:00",
+      "author": "Marco",
+      "email": "bigdatajang@gmail.com",
+      "message": "fix: 멘션하고 뒤에 쓴 글을 수정하려고 지우면 전체 삭제됨 에러 해결\n"
+    },
+    {
+      "sha": "24b42e4bd875c8aff945b582856646661acb916e",
+      "date": "2022-10-20T23:53:50+09:00",
+      "author": "Marco",
+      "email": "bigdatajang@gmail.com",
+      "message": "fix: manifest에서 검색 url 변경\n"
+    }
+  ],
+  "commit_sha": "ad5d63c8973bca56b3843a3ca38a31d140d25cf2",
+  "extracted_at": "2026-10-05T18:16:43.721429+00:00"
+}

@@ -1,0 +1,118 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 15,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "0f0c5f5725201d5b7de648edea5300f7079075ad",
+      "date": "2024-01-12T08:26:39+09:00",
+      "author": "Se-young Hwang",
+      "email": "nahwasa@gmail.com",
+      "message": "@EnableWebSecurity 추가\n"
+    },
+    {
+      "sha": "7c115064c866923eb29fbdd9e763cf3b748f05ad",
+      "date": "2023-02-18T20:38:48+09:00",
+      "author": "Se-young Hwang",
+      "email": "nahwasa@gmail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "086360244dc845fe5a06af745440bcdbadb2716a",
+      "date": "2023-02-10T23:48:25+09:00",
+      "author": "Se-young Hwang",
+      "email": "nahwasa@gmail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "0a5247e92b82ca8c82900867f0de933d27060d96",
+      "date": "2023-02-05T16:30:24+09:00",
+      "author": "nahwasa",
+      "email": "nahwasa@gmail.com",
+      "message": "리팩토링 - 회원가입 시 비밀번호 암호화하는 책임을 도메인에서 가져가도록 변경. 다만 PasswordEncoder는 주입해주는걸루.\n"
+    },
+    {
+      "sha": "0558f48bc8b793bb87e25d7d076f3fcb8ef7bc3b",
+      "date": "2023-02-04T18:19:30+09:00",
+      "author": "nahwasa",
+      "email": "nahwasa@gmail.com",
+      "message": "코드 정리 및 권한에 따른 제어 추가.\n"
+    },
+    {
+      "sha": "f2b9fdaefd542bc8c5061d580d1851a69cbeca0c",
+      "date": "2023-02-04T17:10:43+09:00",
+      "author": "nahwasa",
+      "email": "nahwasa@gmail.com",
+      "message": "코드 정리 및 회원가입 기능 추가\n"
+    },
+    {
+      "sha": "8b3aa888dac3e7780eb2cd83ded0a4758e9ec54a",
+      "date": "2023-02-04T13:59:29+09:00",
+      "author": "Se-young Hwang",
+      "email": "nahwasa@gmail.com",
+      "message": "Create README.md"
+    },
+    {
+      "sha": "6528b4e0cbe5cd8ed56449d2f8401a8462af239e",
+      "date": "2023-02-04T13:58:02+09:00",
+      "author": "nahwasa",
+      "email": "nahwasa@gmail.com",
+      "message": "권한 설정 커스텀 어노테이션 처리\n"
+    },
+    {
+      "sha": "f0d538a22956226c5635cf5ed43ed03ab1cf545f",
+      "date": "2023-02-04T13:55:41+09:00",
+      "author": "nahwasa",
+      "email": "nahwasa@gmail.com",
+      "message": "API 권한 설정 예시\n"
+    },
+    {
+      "sha": "669dbb4fe878a19b6175e2be0c487bdfa0781bc7",
+      "date": "2023-02-04T13:53:59+09:00",
+      "author": "nahwasa",
+      "email": "nahwasa@gmail.com",
+      "message": "커스텀 UserDetailService 적용 및 BCrypt 암호화로 비밀번호 암호화 처리.\n"
+    },
+    {
+      "sha": "e1191c1a789d3c382d3ebc8ba3a79517f9f12a60",
+      "date": "2023-02-04T13:24:31+09:00",
+      "author": "nahwasa",
+      "email": "nahwasa@gmail.com",
+      "message": "커스텀 로그인 페이지 및 진입 페이지 구현.\n기본적인 로그인 및 로그아웃 가능.\n"
+    },
+    {
+      "sha": "a70c749fe4190881bb45af15ca86b490c239c2e7",
+      "date": "2023-02-04T13:22:58+09:00",
+      "author": "nahwasa",
+      "email": "nahwasa@gmail.com",
+      "message": "시큐리티 기본 로그인 페이지만 뜨도록 설정\n"
+    },
+    {
+      "sha": "777a35e235ce2606bf4b0e5b02a725629371133f",
+      "date": "2023-02-04T09:51:41+09:00",
+      "author": "nahwasa",
+      "email": "nahwasa@gmail.com",
+      "message": "예시용으로 사용할 메모리 DB H2 추가, data-jpa로 일단 설정\n"
+    },
+    {
+      "sha": "d3271c2dad7d88344636cc94e52598c2cc3ee45d",
+      "date": "2023-02-04T09:24:56+09:00",
+      "author": "nahwasa",
+      "email": "nahwasa@gmail.com",
+      "message": "security 일단 끄고 예시 웹 페이지 및 통과시켜야 할 상태 체크 부분 테스트 생성\n"
+    },
+    {
+      "sha": "3e603026410210170eb98cd0af037e151df21dea",
+      "date": "2023-02-03T19:00:48+09:00",
+      "author": "nahwasa",
+      "email": "nahwasa@gmail.com",
+      "message": "spring initializr 기본 세팅. security, web만 디펜던시 추가.\n"
+    }
+  ],
+  "commit_sha": "0f0c5f5725201d5b7de648edea5300f7079075ad",
+  "extracted_at": "2026-10-05T18:13:12.662864+00:00"
+}

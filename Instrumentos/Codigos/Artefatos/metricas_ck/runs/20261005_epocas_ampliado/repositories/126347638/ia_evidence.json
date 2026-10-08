@@ -1,0 +1,230 @@
+{
+  "ia_status": "com_evidencia",
+  "ia_level": 2,
+  "ia_agents": "copilot-swe-agent",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [
+    {
+      "agent": "copilot-swe-agent",
+      "type": "author_identity",
+      "sha": "4c019670cf2504a0347cc5a96525a32dec6a1bc3",
+      "identity": "copilot-swe-agent[bot] 198982749+copilot@users.noreply.github.com"
+    }
+  ],
+  "commits": [
+    {
+      "sha": "e2158cc2b8212ce9108df9f0bdff9e6c8db42487",
+      "date": "2026-09-27T22:51:01+08:00",
+      "author": "xuxueli",
+      "email": "931591021@qq.com",
+      "message": "feat: update docker-compose.yml to set container names for xxl-ai-api, xxl-ai-sample-mcp, and xxl-ai-ui\n"
+    },
+    {
+      "sha": "b75b8006b8cd61a8d77c5d0e5cb286fc9373c837",
+      "date": "2026-08-08T05:00:55+08:00",
+      "author": "xuxueli",
+      "email": "931591021@qq.com",
+      "message": "refactor: update\n"
+    },
+    {
+      "sha": "cde6322591ff027d0e0b62b410a5787425bb9cdb",
+      "date": "2026-08-08T04:35:54+08:00",
+      "author": "xuxueli",
+      "email": "931591021@qq.com",
+      "message": "update version\n"
+    },
+    {
+      "sha": "2c60fafd1a6cf311ba9919066895d13d42ecfb99",
+      "date": "2026-08-07T23:27:11+08:00",
+      "author": "xuxueli",
+      "email": "931591021@qq.com",
+      "message": "update version\n"
+    },
+    {
+      "sha": "4b83e3b28ee5ee257f2c02ab54c35e2cb477bb89",
+      "date": "2026-08-07T23:18:37+08:00",
+      "author": "xuxueli",
+      "email": "931591021@qq.com",
+      "message": "update version\n"
+    },
+    {
+      "sha": "04615470fcf91c8726ed7ea8cb713c5a45199ce8",
+      "date": "2026-08-07T23:13:39+08:00",
+      "author": "xuxueli",
+      "email": "931591021@qq.com",
+      "message": "WebFlux 支持：登录认证组件（Auth）新增WebFlux相关组件，并提供接入示例项目（xxl-sso-sample-reactive-cas/web/native）；\n"
+    },
+    {
+      "sha": "4bae4be2348d9af696e0d54b07ee0ed141b7c0ea",
+      "date": "2026-08-07T19:29:04+08:00",
+      "author": "xuxueli",
+      "email": "931591021@qq.com",
+      "message": "upgrade dependencies\n"
+    },
+    {
+      "sha": "38835d595e801d76a7e58502f68ce7b64091fd10",
+      "date": "2026-07-25T13:15:42+08:00",
+      "author": "xuxueli",
+      "email": "931591021@qq.com",
+      "message": "update\n"
+    },
+    {
+      "sha": "1a6f6da8f1a680baf32092bd5922aec1f78f7a15",
+      "date": "2026-06-28T03:57:08+08:00",
+      "author": "xuxueli",
+      "email": "931591021@qq.com",
+      "message": "update\n"
+    },
+    {
+      "sha": "169a04b497e0eb0573a38f7da8cea4fb3ee1937f",
+      "date": "2026-06-28T02:36:49+08:00",
+      "author": "xuxueli",
+      "email": "931591021@qq.com",
+      "message": "feat(helper): 添加基于请求头的登出功能\n"
+    },
+    {
+      "sha": "a90d9342261eecfb9dd4c0ab80d428e2bb253403",
+      "date": "2026-06-28T00:44:13+08:00",
+      "author": "xuxueli",
+      "email": "931591021@qq.com",
+      "message": "票据超时时间单位问题修复；\n"
+    },
+    {
+      "sha": "b6484180044cb418c35a4a2561dbe08872073a33",
+      "date": "2026-06-21T17:10:29+08:00",
+      "author": "xuxueli",
+      "email": "931591021@qq.com",
+      "message": "refactor(admin): UI框架组件重构\n"
+    },
+    {
+      "sha": "1bee99bc1ec82cd246e9ed204326cd46cea84fba",
+      "date": "2026-06-13T13:57:55+08:00",
+      "author": "xuxueli",
+      "email": "931591021@qq.com",
+      "message": "升级版本；\n"
+    },
+    {
+      "sha": "c996ece1f06cbcc18acb8eaee97eb7828f7f9255",
+      "date": "2026-06-13T10:07:21+08:00",
+      "author": "xuxueli",
+      "email": "931591021@qq.com",
+      "message": "update doc\n"
+    },
+    {
+      "sha": "d40f86bfb6f2e72095684578770bd347252b91f9",
+      "date": "2026-06-13T01:49:26+08:00",
+      "author": "xuxueli",
+      "email": "931591021@qq.com",
+      "message": "升级多项依赖至较新版本；\n"
+    },
+    {
+      "sha": "20e77a9d6e672aa07aca1423f2f54fb4f4d99d7b",
+      "date": "2026-06-13T01:33:22+08:00",
+      "author": "xuxueli",
+      "email": "931591021@qq.com",
+      "message": "项目结构重构，提升项目可读性与可维护性；\n"
+    },
+    {
+      "sha": "e5056461c9175dea67bd7ea92e8f5967012f143f",
+      "date": "2026-06-13T01:33:20+08:00",
+      "author": "xuxueli",
+      "email": "931591021@qq.com",
+      "message": "项目结构重构，提升项目可读性与可维护性；\n"
+    },
+    {
+      "sha": "c895882ffeb06093843157248a056367d0bafabb",
+      "date": "2026-06-13T01:28:21+08:00",
+      "author": "xuxueli",
+      "email": "931591021@qq.com",
+      "message": "update doc\n"
+    },
+    {
+      "sha": "48fac8e5eff3654a460702d4e8c782f17d06b340",
+      "date": "2026-05-11T01:21:56+08:00",
+      "author": "许雪里",
+      "email": "931591021@qq.com",
+      "message": "Merge pull request #87 from xuxueli/copilot/update-image-urls"
+    },
+    {
+      "sha": "4c019670cf2504a0347cc5a96525a32dec6a1bc3",
+      "date": "2026-05-10T17:08:25Z",
+      "author": "copilot-swe-agent[bot]",
+      "email": "198982749+Copilot@users.noreply.github.com",
+      "message": "docs: migrate xuxueli image links from /doc/ to /project/\n\nAgent-Logs-Url: https://github.com/xuxueli/xxl-sso/sessions/523f1435-c688-4f80-8d63-baa6270aabe5\n\nCo-authored-by: xuxueli <10633817+xuxueli@users.noreply.github.com>\n"
+    },
+    {
+      "sha": "a86260073ff60af60152f6a68b6d46e55d657961",
+      "date": "2026-04-05T22:12:15+08:00",
+      "author": "xuxueli",
+      "email": "931591021@qq.com",
+      "message": "chore(version): 更新版本号为 2.4.1-SNAPSHOT 并添加新示例项目\n"
+    },
+    {
+      "sha": "a90bf42ff24f4e4e88de314f26bd1b1da8dc9410",
+      "date": "2026-04-05T22:07:03+08:00",
+      "author": "xuxueli",
+      "email": "931591021@qq.com",
+      "message": "SSO操作提示优化，明确错误提示原因，提升问题的定位效率；\n"
+    },
+    {
+      "sha": "49ff744572db51ec19976655fc2abe249ec2b13d",
+      "date": "2026-04-05T21:52:51+08:00",
+      "author": "xuxueli",
+      "email": "931591021@qq.com",
+      "message": "升级多项依赖至较新版本，如 jedis、xxl-tool、spring 等；\n"
+    },
+    {
+      "sha": "52a74b9475e96c56c28e78159edafa83719ebfc7",
+      "date": "2025-12-28T20:04:58+08:00",
+      "author": "xuxueli",
+      "email": "931591021@qq.com",
+      "message": "chore(version): 更新项目版本到 2.3.3-SNAPSHOT\n\n- 更新主 pom.xml 中的版本号从 2.3.2 到 2.3.3-SNAPSHOT\n- 更新 xxl-sso-core 模块的父版本到 2.3.3-SNAPSHOT\n- 更新所有 sample 模块的父版本到 2.3.3-SNAPSHOT\n- 更新 server 模块的父版本到 2.3.3-SNAPSHOT\n- 更新所有前端页面中的版本显示信息到 2.3.3-SNAPSHOT\n"
+    },
+    {
+      "sha": "960dcbad19ef8759468675894c81971eea81ce42",
+      "date": "2025-12-28T19:55:28+08:00",
+      "author": "xuxueli",
+      "email": "931591021@qq.com",
+      "message": "chore(version): 移除SNAPSHOT后缀发布正式版本\n\n- 更新主pom.xml中的版本号从2.3.2-SNAPSHOT到2.3.2\n- 更新xxl-sso-core模块的父版本号\n- 更新所有示例模块的版本号，包括filter和interceptor相关模块\n- 更新服务端模块的版本号\n- 更新前端模板中的版本显示，移除SNAPSHOT标识\n"
+    },
+    {
+      "sha": "c01510abc69a23ca361197775192d3b09e082129",
+      "date": "2025-12-28T19:54:01+08:00",
+      "author": "xuxueli",
+      "email": "931591021@qq.com",
+      "message": "重构项目依赖管理，将依赖版本统一到父级pom；\n"
+    },
+    {
+      "sha": "413a3aa4197696d91ba1ad08e5b841ee10707c82",
+      "date": "2025-12-28T19:13:54+08:00",
+      "author": "xuxueli",
+      "email": "931591021@qq.com",
+      "message": "chore(deps): 更新 xxl-tool 依赖版本\n"
+    },
+    {
+      "sha": "d5706d9f3c5ee8144b34a1a01627e36d59769309",
+      "date": "2025-12-21T20:02:48+08:00",
+      "author": "xuxueli",
+      "email": "931591021@qq.com",
+      "message": "update doc\n"
+    },
+    {
+      "sha": "120d402bc9f233ec344c160e0c553a685c91384d",
+      "date": "2025-12-20T21:27:26+08:00",
+      "author": "xuxueli",
+      "email": "931591021@qq.com",
+      "message": "update doc\n"
+    },
+    {
+      "sha": "0bba907afa8dbb0b45d934ed8821af3ba21789af",
+      "date": "2025-12-20T12:33:43+08:00",
+      "author": "xuxueli",
+      "email": "931591021@qq.com",
+      "message": "chore(version): 升级项目版本至 2.3.2-SNAPSHOT\n"
+    }
+  ],
+  "commit_sha": "e2158cc2b8212ce9108df9f0bdff9e6c8db42487",
+  "extracted_at": "2026-10-05T17:56:30.867852+00:00"
+}

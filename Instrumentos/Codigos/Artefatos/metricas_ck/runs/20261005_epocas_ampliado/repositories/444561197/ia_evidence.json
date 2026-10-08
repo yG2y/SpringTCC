@@ -1,0 +1,236 @@
+{
+  "ia_status": "com_evidencia",
+  "ia_level": 2,
+  "ia_agents": "Claude Code",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "3c091350ec7315d91c1411ee082ff2c975afebff",
+      "trailer": "Claude <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "429ee3797d447d430aec07c16ddbb3e81fc715fe",
+      "trailer": "Claude <noreply@anthropic.com>"
+    }
+  ],
+  "commits": [
+    {
+      "sha": "d9d20c095eec097280b904e926d3055506bdde41",
+      "date": "2026-06-20T11:33:38+03:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump actions/checkout from 6 to 7 (#199)\n\nBumps [actions/checkout](https://github.com/actions/checkout) from 6 to 7.\n- [Release notes](https://github.com/actions/checkout/releases)\n- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/actions/checkout/compare/v6...v7)\n\n---\nupdated-dependencies:\n- dependency-name: actions/checkout\n  dependency-version: '7'\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "3c091350ec7315d91c1411ee082ff2c975afebff",
+      "date": "2026-06-12T18:27:19+03:00",
+      "author": "Yurii D.",
+      "email": "yurii.dubinka@gmail.com",
+      "message": "Add new rule AvoidMixingJunit4AndJunit5 (#147) (#198)\n\nIntroduce an XPath-based PMD rule that flags a test class mixing JUnit 4\n(org.junit.*) and JUnit 5 (org.junit.jupiter.*) annotations or imports in\nthe same class, which silently causes some tests/lifecycle callbacks to be\nignored by the configured engine.\n\nThe rule lives in a new testing ruleset\nio/github/dgroup/arch4u/pmd/testing/junit.xml and is wired into the\naggregate arch4u-ruleset.xml. Detection covers imported and fully-qualified\nannotations as well as static imports. Adds 10 test cases and a readme entry.\n\nCloses #147\n\nhttps://claude.ai/code/session_012p4bAJd2Ck8Zic6jUuch1y\n\nCo-authored-by: Claude <noreply@anthropic.com>"
+    },
+    {
+      "sha": "429ee3797d447d430aec07c16ddbb3e81fc715fe",
+      "date": "2026-06-12T18:13:00+03:00",
+      "author": "Yurii D.",
+      "email": "yurii.dubinka@gmail.com",
+      "message": "Upgrade pmd-java/pmd-test dependencies from 7.8.0 to 7.25.0 (#197)\n\nBump net.sourceforge.pmd:pmd-java and pmd-test (pmd.rules.version)\nto the latest stable release 7.25.0 and update the readme references\naccordingly. All tests pass and the qulice build succeeds.\n\nhttps://claude.ai/code/session_012p4bAJd2Ck8Zic6jUuch1y\n\nCo-authored-by: Claude <noreply@anthropic.com>"
+    },
+    {
+      "sha": "5c7ae3582d00412da223c652a65c4d63737f7b7c",
+      "date": "2026-06-12T18:11:59+03:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump actions/checkout from 4 to 6 (#194)\n\nBumps [actions/checkout](https://github.com/actions/checkout) from 4 to 6.\n- [Release notes](https://github.com/actions/checkout/releases)\n- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/actions/checkout/compare/v4...v6)\n\n---\nupdated-dependencies:\n- dependency-name: actions/checkout\n  dependency-version: '6'\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "6fcf701e0106d4f653492156979516872073120c",
+      "date": "2026-06-12T18:11:40+03:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump github/codeql-action from 3 to 4 (#193)\n\nBumps [github/codeql-action](https://github.com/github/codeql-action) from 3 to 4.\n- [Release notes](https://github.com/github/codeql-action/releases)\n- [Changelog](https://github.com/github/codeql-action/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/github/codeql-action/compare/v3...v4)\n\n---\nupdated-dependencies:\n- dependency-name: github/codeql-action\n  dependency-version: '4'\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "98ff5d28472a7ff33206e93d38eb17aa1ab09368",
+      "date": "2026-06-12T18:11:20+03:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump actions/cache from 4 to 5 (#195)\n\nBumps [actions/cache](https://github.com/actions/cache) from 4 to 5.\n- [Release notes](https://github.com/actions/cache/releases)\n- [Changelog](https://github.com/actions/cache/blob/main/RELEASES.md)\n- [Commits](https://github.com/actions/cache/compare/v4...v5)\n\n---\nupdated-dependencies:\n- dependency-name: actions/cache\n  dependency-version: '5'\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "e5be4599c4986eeaceea756fe6a8d148d9b3c46b",
+      "date": "2026-06-12T17:57:39+03:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump actions/setup-java from 4 to 5 (#192)\n\nBumps [actions/setup-java](https://github.com/actions/setup-java) from 4 to 5.\n- [Release notes](https://github.com/actions/setup-java/releases)\n- [Commits](https://github.com/actions/setup-java/compare/v4...v5)\n\n---\nupdated-dependencies:\n- dependency-name: actions/setup-java\n  dependency-version: '5'\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "de67b82c27900790862ae2501dea02daf137a0fc",
+      "date": "2026-06-12T17:57:13+03:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.assertj:assertj-core from 3.22.0 to 3.27.7 (#196)\n\nBumps [org.assertj:assertj-core](https://github.com/assertj/assertj) from 3.22.0 to 3.27.7.\n- [Release notes](https://github.com/assertj/assertj/releases)\n- [Commits](https://github.com/assertj/assertj/compare/assertj-core-3.22.0...assertj-build-3.27.7)\n\n---\nupdated-dependencies:\n- dependency-name: org.assertj:assertj-core\n  dependency-version: 3.27.7\n  dependency-type: direct:development\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "3185c088ac7c63f46472321f9330ab4445c51008",
+      "date": "2024-12-28T04:12:35+02:00",
+      "author": "Yurii Dubinka",
+      "email": "yurii.dubinka@gmail.com",
+      "message": "fix: upgrade net.sourceforge.pmd:pmd-java from 7.7.0 to 7.8.0 (#187)\n\nSnyk has created this PR to upgrade net.sourceforge.pmd:pmd-java from 7.7.0 to 7.8.0.\n\nSee this package in maven:\nnet.sourceforge.pmd:pmd-java\n\nSee this project in Snyk:\nhttps://app.snyk.io/org/dgroup/project/c8b51bb3-7683-41c8-9a4e-b32a6f9069b6?utm_source=github&utm_medium=referral&page=upgrade-pr\n\nCo-authored-by: snyk-bot <snyk-bot@snyk.io>"
+    },
+    {
+      "sha": "b071d5f0567ee652e4cdce1c46d9fd6893154ef4",
+      "date": "2024-11-25T07:09:15+02:00",
+      "author": "Yurii Dubinka",
+      "email": "yurii.dubinka@gmail.com",
+      "message": "fix: upgrade net.sourceforge.pmd:pmd-java from 7.6.0 to 7.7.0 (#186)\n\nSnyk has created this PR to upgrade net.sourceforge.pmd:pmd-java from 7.6.0 to 7.7.0.\n\nSee this package in maven:\nnet.sourceforge.pmd:pmd-java\n\nSee this project in Snyk:\nhttps://app.snyk.io/org/dgroup/project/c8b51bb3-7683-41c8-9a4e-b32a6f9069b6?utm_source=github&utm_medium=referral&page=upgrade-pr\n\nCo-authored-by: snyk-bot <snyk-bot@snyk.io>"
+    },
+    {
+      "sha": "6a3acb7187d576afeff6a1b2d9f919682fbb5342",
+      "date": "2024-10-31T12:22:25+02:00",
+      "author": "Yurii Dubinka",
+      "email": "yurii.dubinka@gmail.com",
+      "message": "#168 wip pmd 7.x (#184)\n\n* #168: Upgrade to pmd7 (#178)\n\n* AvoidProhibitedMethodsUsage - Fix deprecated warnings\n\n* MissingMandatoryAnnotation - Fix deprecated warnings\n\n* ObfuscationRequired - Fix deprecated warnings\n\n* PotentiallyThreadLocalPollutionByMdc - Fix deprecated warnings\n\n* UseExistingConstant - Fix deprecated warnings\n\n* WrongRestMethodSignature - Fix deprecated warnings\n\n* Checkstyle fixes\n\n* Optimize imports\n\n* Ignore rule tests\n\n* Upgrade PMD dependency version to 7.4.0\n\n* Fix AvoidProhibitedMethodsUsage rule\n\n* Fix AvoidProhibitedClasses rule - from XPath to Java\n\n* Fix ObfuscationRequired rule\n\n* Fix AvoidMdcOutsideTryStatement rule - from XPath to Java\n\n* Fix PotentiallyThreadLocalPollutionByMdc rule\n\n* Fix AvoidUsingObjectMapperAsALocalVariable rule - from XPath to Java\n\n* Update Copyright\n\n* Update RestEndpointsWithoutExposedMetrics rule\n\n* Fix UseConstantAsMetricName rule - from XPath to Java\n\n* Reformat code\n\n---------\n\nCo-authored-by: Yurii Dubinka <yurii.dubinka@gmail.com>\n\n* Apply generic formatting\n\n* qulice fixes\n\n* Ignore qulice checkstyle & pmd for now\n\n* Enable jacoco and tests execution\n\n* Fixed pmd issues\n\n* Fixed few checkstyle issues\n\n* fix UseOpenApiInRestEndpoints, NoMandatoryConstructorInExceptionClass (xpath), UseExistingConstant\n\n* fix ruleset rules\n\n* fix checkstyle in UseExistingConstant\n\n* enable tests\n\n* remove checkstyle exclude in qulice\n\n* fix qulice PotentiallyThreadLocalPollutionByMdc\n\n* fix qulice WrongRestMethodSignature\n\n* fix qulice AvoidTypeAsLocalVariable\n\n* fix qulice UseConstantAsMetricName\n\n* fix qulice AvoidProhibitedMethodsUsage\n\n* fix qulice AvoidMdcOutsideTryStatement\n\n* fix qulice AvoidProhibitedClasses\n\n* fix qulice UseExistingConstant\n\n* fix qulice ObfuscationRequired\n\n* Fixed few checkstyle issues\n\n* Increase code quality thresholds\n\n* change pmd version in readme\n\n* Upgrade JDK8 in CI\n\n* Upgrade JDK8 in CI\n\n* Upgrade JDK8 in CI\n\n* mvn verbose\n\n* upgrade mvn surefire, failsafe plugins\n\n* Use JDK11 for CI\n\n* Sonarqube fixes\n\n---------\n\nCo-authored-by: Oleksii Dykov <dykovoleksii@gmail.com>"
+    },
+    {
+      "sha": "4ebe092d5044d1f1c97142912c4f6f99cbc02fd8",
+      "date": "2024-02-03T08:48:16+02:00",
+      "author": "Yurii Dubinka",
+      "email": "yurii.dubinka@gmail.com",
+      "message": "#175: Migrate sonarqube from JDK11 to JDK17 (#176)\n\n"
+    },
+    {
+      "sha": "84f5a3f5e2b0c9991cdb99a0b12ef785a0793f8e",
+      "date": "2024-02-03T08:44:07+02:00",
+      "author": "Oleksii Dykov",
+      "email": "dykovoleksii@gmail.com",
+      "message": "#170: Fix deprecated warnings in Java Rules\n\n* AvoidProhibitedMethodsUsage - Fix deprecated warnings\n\n* MissingMandatoryAnnotation - Fix deprecated warnings\n\n* ObfuscationRequired - Fix deprecated warnings\n\n* PotentiallyThreadLocalPollutionByMdc - Fix deprecated warnings\n\n* UseExistingConstant - Fix deprecated warnings\n\n* WrongRestMethodSignature - Fix deprecated warnings\n\n* Checkstyle fixes\n\n* Optimize imports (pmd)\n\n---------\n\nCo-authored-by: Yurii Dubinka <yurii.dubinka@gmail.com>"
+    },
+    {
+      "sha": "2ac6c888c17bc5f79826a09733e3adcbe90ac8f7",
+      "date": "2024-02-03T08:42:04+02:00",
+      "author": "Yurii Dubinka",
+      "email": "yurii.dubinka@gmail.com",
+      "message": "#173: Use telegram notification for master only \n\n"
+    },
+    {
+      "sha": "b5e94b99fe58e9c8a580f2e524174dc16f986791",
+      "date": "2024-02-03T08:20:12+02:00",
+      "author": "Yurii Dubinka",
+      "email": "yurii.dubinka@gmail.com",
+      "message": "#172: Enable CI build on PR (opened, sync, reopened) and push to master\n\n"
+    },
+    {
+      "sha": "e3bf5fc076ab754a2ac353ecb7225489f54306e3",
+      "date": "2024-02-03T07:42:38+02:00",
+      "author": "Yurii Dubinka",
+      "email": "yurii.dubinka@gmail.com",
+      "message": "#171: Enabled static analysis during CI\n\n"
+    },
+    {
+      "sha": "bd775bd695f5d88aff47bdad22a221e1ffa93113",
+      "date": "2024-02-03T07:38:07+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump github/codeql-action from 2 to 3 (#167)\n\nBumps [github/codeql-action](https://github.com/github/codeql-action) from 2 to 3.\n- [Release notes](https://github.com/github/codeql-action/releases)\n- [Changelog](https://github.com/github/codeql-action/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/github/codeql-action/compare/v2...v3)\n\n---\nupdated-dependencies:\n- dependency-name: github/codeql-action\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "09395bcb68f72b9a04e048e26588ca46546137b7",
+      "date": "2024-02-03T07:37:39+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump actions/setup-java from 3 to 4 (#166)\n\nBumps [actions/setup-java](https://github.com/actions/setup-java) from 3 to 4.\n- [Release notes](https://github.com/actions/setup-java/releases)\n- [Commits](https://github.com/actions/setup-java/compare/v3...v4)\n\n---\nupdated-dependencies:\n- dependency-name: actions/setup-java\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "5cbdf58b7b9e97e714dd8e3ba78d4292377d964d",
+      "date": "2024-02-02T20:59:24+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump actions/cache from 3 to 4 (#169)\n\nBumps [actions/cache](https://github.com/actions/cache) from 3 to 4.\n- [Release notes](https://github.com/actions/cache/releases)\n- [Changelog](https://github.com/actions/cache/blob/main/RELEASES.md)\n- [Commits](https://github.com/actions/cache/compare/v3...v4)\n\n---\nupdated-dependencies:\n- dependency-name: actions/cache\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "c719e56a49a851a31f0c2f4d1c3378d387d919f8",
+      "date": "2023-09-11T19:20:51+03:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "#165: Bump actions/checkout from 3 to 4\n\nBumps [actions/checkout](https://github.com/actions/checkout) from 3 to 4.\n- [Release notes](https://github.com/actions/checkout/releases)\n- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/actions/checkout/compare/v3...v4)\n\n---\nupdated-dependencies:\n- dependency-name: actions/checkout\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "39c0ebfa5c6ec5778529c23667c1e41296859413",
+      "date": "2023-08-25T18:13:03+03:00",
+      "author": "Yurii Dubinka",
+      "email": "yurii.dubinka@gmail.com",
+      "message": "#164: upgrade org.openjdk.jmh:jmh-generator-annprocess from 1.36 to 1.37\n\nSnyk has created this PR to upgrade org.openjdk.jmh:jmh-generator-annprocess from 1.36 to 1.37.\n\nSee this package in Maven Repository:\nhttps://mvnrepository.com/artifact/org.openjdk.jmh/jmh-generator-annprocess/\n\nSee this project in Snyk:\nhttps://app.snyk.io/org/dgroup/project/c8b51bb3-7683-41c8-9a4e-b32a6f9069b6?utm_source=github&utm_medium=referral&page=upgrade-pr\n\nCo-authored-by: snyk-bot <snyk-bot@snyk.io>"
+    },
+    {
+      "sha": "60585f65e440d7024caed1e48e329398d97d0a54",
+      "date": "2023-07-28T21:52:12+02:00",
+      "author": "emouty",
+      "email": "erwan.moutymbo@gmail.com",
+      "message": "#162: remove deleted rule BeanMembersShouldSerialize (#163)\n\n"
+    },
+    {
+      "sha": "8c0ea5fe117b74a19df4327818814863f45f442c",
+      "date": "2023-06-18T22:45:04+03:00",
+      "author": "Yurii Dubinka",
+      "email": "yurii.dubinka@gmail.com",
+      "message": "#161: upgrade net.sourceforge.pmd:pmd-java from 6.46.0 to 6.55.0\n\nSnyk has created this PR to upgrade net.sourceforge.pmd:pmd-java from 6.46.0 to 6.55.0.\n\nSee this package in Maven Repository:\nhttps://mvnrepository.com/artifact/net.sourceforge.pmd/pmd-java/\n\nSee this project in Snyk:\nhttps://app.snyk.io/org/dgroup/project/c8b51bb3-7683-41c8-9a4e-b32a6f9069b6?utm_source=github&utm_medium=referral&page=upgrade-pr\n\nCo-authored-by: snyk-bot <snyk-bot@snyk.io>"
+    },
+    {
+      "sha": "2ca31b5141069f50d32a73855b9750bf9da473ac",
+      "date": "2023-06-13T21:44:13+03:00",
+      "author": "Yurii Dubinka",
+      "email": "yurii.dubinka@gmail.com",
+      "message": "#159: Remove cactoos lib due to useless dependency (#160)\n\nFixed #159"
+    },
+    {
+      "sha": "f76ec25caf7db5ef6c3b9024eb69b2236616890a",
+      "date": "2023-06-12T16:35:35+03:00",
+      "author": "Yurii Dubinka",
+      "email": "yurii.dubinka@gmail.com",
+      "message": "#157: Set version to v0.0.0"
+    },
+    {
+      "sha": "7e3782f7ad511125925dcfe0fead7bf6a8ad0978",
+      "date": "2023-06-12T16:09:41+03:00",
+      "author": "Yurii Dubinka",
+      "email": "yurii.dubinka@gmail.com",
+      "message": "#157: Remove TodoFormat rule (#158)\n\nFixed #157"
+    },
+    {
+      "sha": "fe3607dc146b7927e19f4328ed64950b7c4b742c",
+      "date": "2023-06-12T15:47:56+03:00",
+      "author": "Yurii Dubinka",
+      "email": "yurii.dubinka@gmail.com",
+      "message": "#155: Merge all rules to single ruleset arch4u-pmd.xml (#156)\n\nFixed #155"
+    },
+    {
+      "sha": "35241d6d6e27809db940e8c7d5a79ba39f3313a7",
+      "date": "2023-06-12T15:01:34+03:00",
+      "author": "Yurii Dubinka",
+      "email": "yurii.dubinka@gmail.com",
+      "message": "#153: Remove requires.io badge as this system not exists anymore"
+    },
+    {
+      "sha": "7a4166f65c07d4c4ede3128f35a3df5c00194856",
+      "date": "2023-06-12T14:56:43+03:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "#154: Bump jackson-databind from 2.13.2.1 to 2.13.4.2\n\nBumps [jackson-databind](https://github.com/FasterXML/jackson) from 2.13.2.1 to 2.13.4.2.\n- [Release notes](https://github.com/FasterXML/jackson/releases)\n- [Commits](https://github.com/FasterXML/jackson/commits)\n\n---\nupdated-dependencies:\n- dependency-name: com.fasterxml.jackson.core:jackson-databind\n  dependency-type: direct:development\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "d8231bc688f9c63a57d068ac3ad2a365744a637b",
+      "date": "2023-06-12T14:56:15+03:00",
+      "author": "Yurii Dubinka",
+      "email": "yurii.dubinka@gmail.com",
+      "message": "#149: upgrade net.sourceforge.pmd:pmd-java from 6.45.0 to 6.46.0\n\nSnyk has created this PR to upgrade net.sourceforge.pmd:pmd-java from 6.45.0 to 6.46.0.\n\nSee this package in Maven Repository:\nhttps://mvnrepository.com/artifact/net.sourceforge.pmd/pmd-java/\n\nSee this project in Snyk:\nhttps://app.snyk.io/org/dgroup/project/c8b51bb3-7683-41c8-9a4e-b32a6f9069b6?utm_source=github&utm_medium=referral&page=upgrade-pr\n\nCo-authored-by: snyk-bot <snyk-bot@snyk.io>"
+    }
+  ],
+  "commit_sha": "d9d20c095eec097280b904e926d3055506bdde41",
+  "extracted_at": "2026-10-05T18:33:51.751284+00:00"
+}

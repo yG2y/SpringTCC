@@ -1,0 +1,40 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "2.1.4.RELEASE",
+  "spring_boot_major": "2",
+  "java_versions_declared": "1.8",
+  "build_evidence": [
+    {
+      "file": "backend/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "backend/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "backend/pom.xml",
+      "artifact": "spring-boot-starter-data-rest"
+    },
+    {
+      "file": "backend/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "backend/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "backend/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/pom.xml",
+      "artifact": "spring-boot-starter-freemarker"
+    },
+    {
+      "file": "backend/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

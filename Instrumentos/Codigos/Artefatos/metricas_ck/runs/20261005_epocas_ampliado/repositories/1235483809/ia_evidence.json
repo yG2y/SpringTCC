@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "5cdf91aa756e1c08239103af4e8d9f61b7541529",
+      "date": "2026-09-02T21:54:32+08:00",
+      "author": "juanjuandog",
+      "email": "z13795891939@gmail.com",
+      "message": "docs: automate contributor updates (#93)"
+    },
+    {
+      "sha": "fd5a5f06534a093f986f233161ab1a5ab304ba77",
+      "date": "2026-09-01T13:15:31+08:00",
+      "author": "Inference_",
+      "email": "68734681+Inference1@users.noreply.github.com",
+      "message": "fix(rag): handle null questions during intent parsing (#92)\n\nSigned-off-by: Inference1 <3617237115@qq.com>\nCo-authored-by: juanjuandog <z13795891939@gmail.com>"
+    },
+    {
+      "sha": "5f31f4b972515494e2e98141bf9a53f6daf6800a",
+      "date": "2026-09-01T13:12:22+08:00",
+      "author": "Inference_",
+      "email": "68734681+Inference1@users.noreply.github.com",
+      "message": "fix(api): reject spoofed rate-limit identities (#91)\n\nSigned-off-by: Inference1 <3617237115@qq.com>\nCo-authored-by: juanjuandog <z13795891939@gmail.com>"
+    },
+    {
+      "sha": "506ff4a38f4ed7e45e60fae31385d97318ac5c17",
+      "date": "2026-09-01T12:31:44+08:00",
+      "author": "Inference_",
+      "email": "68734681+Inference1@users.noreply.github.com",
+      "message": "fix(api): rate limit password reset endpoints (#90)\n\nSigned-off-by: Inference1 <3617237115@qq.com>\nCo-authored-by: juanjuandog <z13795891939@gmail.com>"
+    },
+    {
+      "sha": "3f19ff72b4f010b30fbc45a9608c29181f121a0d",
+      "date": "2026-09-01T12:29:24+08:00",
+      "author": "Inference_",
+      "email": "68734681+Inference1@users.noreply.github.com",
+      "message": "fix(market): normalize cache invalidation symbols (#89)\n\nSigned-off-by: Inference1 <3617237115@qq.com>\nCo-authored-by: juanjuandog <z13795891939@gmail.com>"
+    },
+    {
+      "sha": "662992e190a61c9065d7197fa6a8a97c25266700",
+      "date": "2026-09-01T12:26:22+08:00",
+      "author": "Inference_",
+      "email": "68734681+Inference1@users.noreply.github.com",
+      "message": "fix(market): support exchange-prefixed symbols (#88)\n\nSigned-off-by: Inference1 <3617237115@qq.com>"
+    },
+    {
+      "sha": "57504629f9c8ef76b73dbaf2319b17d90917b731",
+      "date": "2026-08-23T22:06:28+08:00",
+      "author": "juanjuandog",
+      "email": "z13795891939@gmail.com",
+      "message": "feat(reports): add diff view and Markdown/PDF export (#86)"
+    },
+    {
+      "sha": "2f96d1c3257749ba516f31e92ded473f19691db4",
+      "date": "2026-08-23T17:32:29+08:00",
+      "author": "juanjuandog",
+      "email": "z13795891939@gmail.com",
+      "message": "test: add Testcontainers integration suite (#85)\n\n* test: add Testcontainers integration harness\n\n* fix: bind audit timestamps for PostgreSQL\n\n* test: cover persistent infrastructure contracts\n\n* ci: run and enforce the integration matrix\n\n* ci: update GitHub Actions runtimes\n\n* fix: stabilize integration matrix across CI\n\n* fix: eliminate integration test flakiness"
+    },
+    {
+      "sha": "d380c064067666e6d552853e3189e584aa589b0b",
+      "date": "2026-08-22T23:38:35+08:00",
+      "author": "juanjuandog",
+      "email": "z13795891939@gmail.com",
+      "message": "docs: enlarge contributor avatars (#84)"
+    },
+    {
+      "sha": "1ea0c6e2f1b9bb93ce69f1491967218bc0022ea8",
+      "date": "2026-08-22T23:29:47+08:00",
+      "author": "juanjuandog",
+      "email": "z13795891939@gmail.com",
+      "message": "docs: add dynamic contributors section (#83)"
+    },
+    {
+      "sha": "7585d1391771c233689cd206ad360914e536d1bc",
+      "date": "2026-08-22T23:16:56+08:00",
+      "author": "ShinyHero666",
+      "email": "160204855+ShinyHero666@users.noreply.github.com",
+      "message": "fix(repo): make historical market fallback explicit (#82)\n\nCo-authored-by: ShinyHero666 <ShinyHero666@users.noreply.github.com>"
+    },
+    {
+      "sha": "643df9097b6cc43a68732618a87e18bf744ebccb",
+      "date": "2026-08-20T14:56:47+10:00",
+      "author": "Neon549",
+      "email": "yulingyu08@gmail.com",
+      "message": "chore: add benchmark CLI help (#81)\n\nCo-authored-by: juanjuandog <z13795891939@gmail.com>"
+    },
+    {
+      "sha": "490ae1b94266ef9e33f2791b1f1c0f30dfdc773e",
+      "date": "2026-08-20T14:54:02+10:00",
+      "author": "Neon549",
+      "email": "yulingyu08@gmail.com",
+      "message": "test: cover normalized exchange symbols (#80)\n\nCo-authored-by: juanjuandog <z13795891939@gmail.com>"
+    },
+    {
+      "sha": "72845ed1a8d6c37b6e794dd340782c7a4f08bfc9",
+      "date": "2026-08-20T14:51:50+10:00",
+      "author": "Neon549",
+      "email": "yulingyu08@gmail.com",
+      "message": "test: cover exchange-prefixed stock codes (#79)\n\nCo-authored-by: juanjuandog <z13795891939@gmail.com>"
+    },
+    {
+      "sha": "ef5d7c85664ffc9b01ebe9eb993a12951b318f87",
+      "date": "2026-08-20T14:49:44+10:00",
+      "author": "Neon549",
+      "email": "yulingyu08@gmail.com",
+      "message": "docs: clarify temporary backend port override (#78)\n\nCo-authored-by: juanjuandog <z13795891939@gmail.com>"
+    },
+    {
+      "sha": "b32cd13e304b69f9e4690b84f1e6b3db5f67fbcc",
+      "date": "2026-08-20T14:46:12+10:00",
+      "author": "Neon549",
+      "email": "yulingyu08@gmail.com",
+      "message": "docs: add AI service health check (#77)"
+    },
+    {
+      "sha": "7cec5248a26935c3d3e7af9d53485484766df2ba",
+      "date": "2026-08-13T21:29:59+08:00",
+      "author": "juanjuandog",
+      "email": "z13795891939@gmail.com",
+      "message": "Merge pull request #45 from liuzedongqq/rfc-010-investment-signal-backtest-engine\n\ndocs(rfc): RFC 010 - Investment Signal Backtest Engine"
+    },
+    {
+      "sha": "b7a234affa699d742bd1b5f74554f5f4ffb640c7",
+      "date": "2026-08-13T21:27:28+08:00",
+      "author": "juanjuandog",
+      "email": "z13795891939@gmail.com",
+      "message": "Merge branch 'master' into rfc-010-investment-signal-backtest-engine"
+    },
+    {
+      "sha": "02f9625b1d4ddcd68e220b2e7712c540e1dc96e3",
+      "date": "2026-08-13T21:27:01+08:00",
+      "author": "juanjuandog",
+      "email": "z13795891939@gmail.com",
+      "message": "Merge pull request #44 from liuzedongqq/rfc-009-event-sourcing-workflow-state\n\ndocs(rfc): RFC 009 - Event Sourcing for Workflow State"
+    },
+    {
+      "sha": "8e6bc5ec0404eef7c0718a1d490c198527ab3086",
+      "date": "2026-08-13T21:23:53+08:00",
+      "author": "juanjuandog",
+      "email": "z13795891939@gmail.com",
+      "message": "Merge branch 'master' into rfc-009-event-sourcing-workflow-state"
+    },
+    {
+      "sha": "17656e7e562dbb729841710611e85640f23f0720",
+      "date": "2026-08-13T21:22:10+08:00",
+      "author": "juanjuandog",
+      "email": "z13795891939@gmail.com",
+      "message": "Merge pull request #43 from liuzedongqq/rfc-008-llm-and-data-source-plugins\n\ndocs(rfc): RFC 008 - LLM Provider & Data Source Plugin System"
+    },
+    {
+      "sha": "b8d06b52ce03b09171fbfc241bc1d9b1844f1b84",
+      "date": "2026-08-13T21:20:48+08:00",
+      "author": "juanjuandog",
+      "email": "z13795891939@gmail.com",
+      "message": "Merge branch 'master' into rfc-008-llm-and-data-source-plugins"
+    },
+    {
+      "sha": "6ef614215e89cb2baf54c74ee7f3b83d19c3a29e",
+      "date": "2026-08-13T21:16:57+08:00",
+      "author": "juanjuandog",
+      "email": "z13795891939@gmail.com",
+      "message": "Merge pull request #42 from liuzedongqq/rfc-007-rbac-workspaces-teams\n\ndocs(rfc): RFC 007 - RBAC + Workspaces + Team Membership"
+    },
+    {
+      "sha": "1e35f76b55032bba6a55384231bcb4852f074a2c",
+      "date": "2026-08-13T21:07:23+08:00",
+      "author": "juanjuandog",
+      "email": "z13795891939@gmail.com",
+      "message": "Merge branch 'master' into rfc-007-rbac-workspaces-teams"
+    },
+    {
+      "sha": "6692f8b917b3fc547806cb7ce67dafde20db1c70",
+      "date": "2026-08-13T21:06:50+08:00",
+      "author": "juanjuandog",
+      "email": "z13795891939@gmail.com",
+      "message": "Merge pull request #41 from liuzedongqq/rfc-006-multi-market-data-layer\n\ndocs(rfc): RFC 006 - Multi-Market Data Abstraction Layer"
+    },
+    {
+      "sha": "ffb91c46d9257cc14ce27682a2c6864c6f2f9cba",
+      "date": "2026-08-13T21:03:01+08:00",
+      "author": "juanjuandog",
+      "email": "z13795891939@gmail.com",
+      "message": "Merge branch 'master' into rfc-006-multi-market-data-layer"
+    },
+    {
+      "sha": "bd72f889a325a5d9a1b4ea89a75c36a9aa169ee0",
+      "date": "2026-08-13T20:56:30+08:00",
+      "author": "juanjuandog",
+      "email": "z13795891939@gmail.com",
+      "message": "Merge pull request #39 from liuzedongqq/rfc-005-frontend-spa-modularization\n\ndocs(rfc): RFC 005 - Frontend SPA Modularization (TypeScript + Vite)"
+    },
+    {
+      "sha": "701f9e0a13654443a7e390de02aa5d2091c413a7",
+      "date": "2026-08-13T20:54:01+08:00",
+      "author": "juanjuandog",
+      "email": "z13795891939@gmail.com",
+      "message": "Merge branch 'master' into rfc-005-frontend-spa-modularization"
+    },
+    {
+      "sha": "ac94ef04a533e67f924381f647724485dd330267",
+      "date": "2026-08-13T20:53:32+08:00",
+      "author": "juanjuandog",
+      "email": "z13795891939@gmail.com",
+      "message": "Merge pull request #38 from liuzedongqq/rfc-004-report-diff-and-export\n\ndocs(rfc): RFC 004 - Report Diff View + Markdown / PDF Export"
+    },
+    {
+      "sha": "bdb36b7a18075f54f8171d6508d704ca20d4a279",
+      "date": "2026-08-13T20:49:05+08:00",
+      "author": "juanjuandog",
+      "email": "z13795891939@gmail.com",
+      "message": "Merge branch 'master' into rfc-004-report-diff-and-export"
+    }
+  ],
+  "commit_sha": "5cdf91aa756e1c08239103af4e8d9f61b7541529",
+  "extracted_at": "2026-10-05T17:55:01.721107+00:00"
+}

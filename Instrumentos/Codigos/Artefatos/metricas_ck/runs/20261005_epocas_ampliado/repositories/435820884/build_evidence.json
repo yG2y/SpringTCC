@@ -1,0 +1,20 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${spring.boot.autoconfigure};2.1.3.RELEASE",
+  "spring_boot_major": "2",
+  "java_versions_declared": "1.8;8",
+  "build_evidence": [
+    {
+      "file": "brief-samples/brief-mybatis-sample/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "brief-samples/brief-mybatis-sample/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "brief-support/brief-mybatis/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    }
+  ]
+}

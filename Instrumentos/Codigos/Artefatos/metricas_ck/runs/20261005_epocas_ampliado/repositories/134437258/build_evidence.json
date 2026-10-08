@@ -1,0 +1,44 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${spring-boot.version};2.1.6.RELEASE",
+  "spring_boot_major": "2",
+  "java_versions_declared": "1.8",
+  "build_evidence": [
+    {
+      "file": "casquatch-driver-spring/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "casquatch-driver-tests/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "casquatch-examples/springconfigserver/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "casquatch-examples/springconfigserver/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "casquatch-examples/springconfigserver/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "casquatch-examples/springrest/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "casquatch-examples/springrest/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "casquatch-examples/springrest/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "casquatch-examples/springrest/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

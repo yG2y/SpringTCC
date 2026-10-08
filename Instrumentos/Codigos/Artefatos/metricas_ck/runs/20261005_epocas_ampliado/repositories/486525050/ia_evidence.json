@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "f580862f26e2a343e86745799dc87122c2354450",
+      "date": "2026-09-11T17:26:46+08:00",
+      "author": "Nathan",
+      "email": "370788475@qq.com",
+      "message": "Remove unnecessary comment header from install.ps1"
+    },
+    {
+      "sha": "68ecca6aee347c8e28b05da30045f39795f5bb19",
+      "date": "2026-09-11T17:07:02+08:00",
+      "author": "Nathan",
+      "email": "370788475@qq.com",
+      "message": "Update install.ps1"
+    },
+    {
+      "sha": "e071f39cfc552f326aeca6ad7b8e6b23e69ca22a",
+      "date": "2026-09-02T16:20:06+08:00",
+      "author": "Nathan",
+      "email": "370788475@qq.com",
+      "message": "Fix local storage token authorization (#722)\n\n## Summary\n- reject fabricated LOCAL storage tokens and enforce issued token\npermissions, expiry, and file scope\n- generate an unpredictable center token by default and strictly parse\nBearer authorization headers\n- prevent traversal in storage file resolution and screenshot token\nissuance\n- preserve compatibility for agents that cannot refresh write tokens\nduring rolling deployment\n\n## Testing\n- `./gradlew.bat :common:test :center:test --no-daemon --console=plain`\n- Added regression coverage for arbitrary tokens, read/write\npermissions, file scope, expiry, Bearer parsing, traversal, screenshot\nscope, and agent token compatibility\n\nCo-authored-by: Copilot App <223556219+Copilot@users.noreply.github.com>"
+    },
+    {
+      "sha": "e84477ce0cd4dcb9cf91a6b768c89a8271ee92fc",
+      "date": "2026-08-24T17:41:25+04:00",
+      "author": "Abhishek Bedi",
+      "email": "abhishekbedi1432@yahoo.com",
+      "message": "feat(ios): Migrate from tidevice to pymobiledevice3 for iOS 17+ support (#717)\n\n## Description\n\nComplete migration of iOS device management from\n[tidevice](https://github.com/alibaba/taobao-iphone-device) to\n[pymobiledevice3](https://github.com/doronz88/pymobiledevice3) to\nrestore iOS 17+ device support.\n\n**Why**: tidevice is incompatible with iOS 17+ because Apple replaced\nthe `lockdownd`-based developer image mounting with\nCoreDevice/RemoteXPC. tidevice development has stalled since 2021.\npymobiledevice3 is actively maintained and supports both legacy (iOS <\n17) and modern (iOS 17+) protocols.\n\n**What**: This PR spans 7 phases of incremental changes covering CLI\nmigration, video recording fixes, WDA launch for iOS 17+, XCTest runner\nimprovements, auto device detection polling, iOS file pull\nimplementation, and comprehensive documentation.\n\n### Linked GitHub issue ID: N/A (internal iOS 17+ support requirement)\n\n## Pull Request Checklist\n\n- [ ] Tests for the changes have been added (for bug fixes / features)\n- [x] Code compiles correctly with all tests are passed.\n- [x] I've read the [contributing\nguide](https://github.com/microsoft/HydraLab/blob/main/CONTRIBUTING.md#making-changes-to-the-code)\nand followed the recommended practices.\n- [x] [Wikis](https://github.com/microsoft/HydraLab/wiki) or\n[README](https://github.com/microsoft/HydraLab/blob/main/README.md) have\nbeen reviewed and added / updated if needed (for bug fixes / features)\n\n### Does this introduce a breaking change?\n*No breaking changes. All changes are backward compatible:*\n- *JSON parsing supports both tidevice and pymobiledevice3 field names*\n- *iOS < 17 devices continue to use `dvt launch` for WDA*\n- *Android device management is unchanged*\n\n- [ ] Yes\n- [x] No\n\n## How you tested it\n\nTested on real hardware throughout all 7 phases:\n- **iOS device**: iPhone X (UDID\n`c7ad90190806994c5c4d62117b4761adc37674c9`), iOS 26.2\n- **Android device**: Realme RMX3834 (serial `0R15205I23100583`),\nAndroid 13\n- **Test package**: `com.6alabat.cuisineApp` (iOS), `com.talabat`\n(Android)\n\n| Scenario | Status |\n|---|---|\n| Device discovery (pymobiledevice3) | Pass |\n| App install/uninstall | Pass |\n| XCTest execution via xcodebuild | Pass |\n| Video recording (ffmpeg + MJPEG) | Pass |\n| Screenshot capture | Pass |\n| Port forwarding (WDA, MJPEG) | Pass |\n| Crash report collection | Pass |\n| Syslog collection | Pass |\n| Auto device detection (60s polling) | Pass |\n| pullFileFromDevice (iOS, subfolder) | Pass |\n| pullFileFromDevice (Android, adb pull) | Pass |\n| Multi-device safety (UDID-scoped kills) | Pass |\n| XCTest early completion detection | Pass |\n\nPlease check the type of change your PR introduces:\n- [x] Bugfix\n- [x] Feature\n- [ ] Technical design\n- [ ] Build related changes\n- [ ] Refactoring (no functional changes, no api changes)\n- [x] Code style update (formatting, renaming) or Documentation content\nchanges\n- [ ] Other (please describe):\n\n### Feature UI screenshots or Technical design diagrams\n\n#### Architecture: Before (tidevice)\n```\nHydraLab Agent\n  +-- IOSUtils.java\n       +-- tidevice CLI (Python)\n            +-- lockdownd / DeveloperDiskImage protocol\n                 +-- iOS device (USB)\n```\n- Device discovery: `tidevice list --json`\n- Device watcher: `tidevice usbmux watch` (continuous event stream ->\nIOSDeviceWatcher thread)\n- WDA launch: `tidevice xctest` (instrument protocol over usbmux)\n- Video recording: Appium `startRecordingScreen()` (internal ffmpeg +\nMJPEG)\n\n#### Architecture: After (pymobiledevice3)\n```\nHydraLab Agent\n  +-- IOSUtils.java\n       +-- pymobiledevice3 CLI (Python)\n            |-- lockdownd protocol (iOS < 17)\n            +-- CoreDevice/RemoteXPC protocol (iOS 17+)\n                 +-- iOS device (USB)\n\n  +-- IOSDeviceDriver.java\n       +-- pullFileFromDevice() --> pymobiledevice3 apps pull (AFC protocol)\n\n  +-- ScheduledDeviceControlTasks.java\n       +-- @Scheduled(60s) --> updateAllDeviceInfo() (polling replaces event stream)\n\n  +-- XCTestRunner.java\n       +-- xcodebuild test-without-building (iOS 17+ WDA + test execution)\n```\n\n#### Key Architectural Differences\n\n| Aspect | tidevice (Before) | pymobiledevice3 (After) |\n|---|---|---|\n| Device discovery | `tidevice list --json` | `pymobiledevice3 usbmux\nlist` |\n| Device watcher | `tidevice usbmux watch` (event stream) | `@Scheduled`\npolling every 60s (no watch equivalent) |\n| WDA launch (< iOS 17) | `tidevice xctest` (instrument protocol) |\n`pymobiledevice3 developer dvt launch` |\n| WDA launch (iOS 17+) | Not supported | `xcodebuild\ntest-without-building` (XCUITest session) |\n| Video recording (Mac) | Appium built-in `startRecordingScreen()` |\nDirect ffmpeg via pymobiledevice3 MJPEG port forward |\n| File pull (iOS) | Not implemented | `pymobiledevice3 apps pull` (AFC\nprotocol) with subfolder org |\n| Test completion | Blocked on `proc.waitFor()` (hung ~600s on iOS 17+)\n| Polling loop detects completion markers, 30s grace then force-kill |\n| iOS 17+ support | Broken (SIGABRT on DeveloperDiskImage mount) | Full\nsupport via CoreDevice/RemoteXPC |\n\n---\n\n### Changes by Phase\n\n**Phase 1 - Core CLI Migration** (`9cf52178`): Replace all `tidevice`\nCLI invocations in `IOSUtils.java` with `pymobiledevice3` equivalents\n(usbmux list, lockdown info, apps install/uninstall/list, developer dvt\nlaunch/screenshot, syslog live, crash pull, usbmux forward). Updated\n`IOSDeviceDriver.parseJsonToDevice()` for pymobiledevice3 JSON fields\nwith fallback to tidevice field names. Added `pymobiledevice3` to\n`EnvCapability`.\n\n**Phase 2 - Video Recording Fix** (`0e54ad41`, `0be2f9ce`): Fixed 0-byte\nvideo files caused by race condition (pymobiledevice3 port forwarding\nnot ready when ffmpeg connected). Added `waitForPortToBeListening()`\npolling. Switched Mac recording from Appium built-in to direct ffmpeg +\npymobiledevice3 MJPEG forwarding. Removed conflicting `mjpegServerPort`\nAppium capability.\n\n**Phase 3 - Zip Bomb Protection** (`b0656788`): Fixed zip bomb detection\nlogic in `ZipBombChecker.java`.\n\n**Phase 4 - iOS 17 WDA Launch & Video** (`b0b40b1a`): iOS\nversion-branched WDA launch (`dvt launch` for iOS < 17, `xcodebuild\ntest-without-building` for iOS 17+). iOS 17+ ffmpeg uses\n`scale=720:-2,setsar=1 -pix_fmt yuv420p` for QuickTime compatibility.\nAdded `isIOS17OrAbove()`, `getWdaProjectPath()` helpers. Added scripts:\n`install_wda.sh`, `install_wda_below_ios_17.sh`, `cleanup_ios_ports.sh`.\n\n**Phase 5 - XCTest Runner Cleanup** (`564b06d7`): Fixed XCTest hanging\n~600s after tests complete on iOS 17+. Added early completion detection\nin `XCTestCommandReceiver`. Replaced blocking `waitFor()` with polling\nloop + 30s grace. Wrapped `finishTest()` in try/finally. Handle ObjC\ntest format (`-[ClassName testMethodName]`). Scoped `killProxyWDA()` to\ndevice UDID for multi-device safety.\n\n**Phase 6 - Auto Device Detection** (`11d2e5d3`): Added\n`@Scheduled(fixedDelay=60000, initialDelay=30000)` polling in\n`ScheduledDeviceControlTasks` to replace missing `tidevice usbmux watch`\nequivalent.\n\n**Phase 7 - iOS pullFileFromDevice** (`b074d368`): Implemented\n`IOSDeviceDriver.pullFileFromDevice()` (was no-op stub). Parses\n`bundleId:/path` format. New `IOSUtils.pullFileFromApp()` wraps\n`pymobiledevice3 apps pull` (AFC protocol). Subfolder organization:\npulled files go into named subfolder matching remote path (e.g.\n`/Documents/` -> `Documents/`) for parity with Android `adb pull`.\n\n---\n\n### Files Changed (22 files, +3492 -100)\n\n**Java Source**\n| File | Phase | Change |\n|---|---|---|\n| `common/.../util/IOSUtils.java` | 1,2,4,7 | All CLI commands, port\nwait, WDA helpers, file pull |\n| `common/.../device/impl/IOSDeviceDriver.java` | 1,7 | JSON parsing,\npullFileFromDevice implementation |\n| `common/.../entity/agent/EnvCapability.java` | 1 | Added\npymobiledevice3 keyword |\n| `common/.../management/AppiumServerManager.java` | 2 | Removed\nmjpegServerPort capability |\n| `common/.../screen/IOSAppiumScreenRecorderForMac.java` | 2,4 |\nffmpeg-based recording, iOS 17 video format |\n| `common/.../util/ZipBombChecker.java` | 3 | Zip bomb detection fix |\n| `agent/.../runner/xctest/XCTestRunner.java` | 5 | Completion\ndetection, try/finally, ObjC format |\n| `agent/.../runner/xctest/XCTestCommandReceiver.java` | 5 | Early\ncompletion markers |\n| `agent/.../scheduled/ScheduledDeviceControlTasks.java` | 6 |\n@Scheduled polling task |\n| `agent/.../service/DeviceControlService.java` | 6 | updateDeviceList()\nmethod |\n\n**Scripts**\n| File | Description |\n|---|---|\n| `scripts/install_wda.sh` | WDA installation for iOS 17+ via xcodebuild\n|\n| `scripts/install_wda_below_ios_17.sh` | WDA installation for iOS < 17\n|\n| `scripts/cleanup_ios_ports.sh` | Cleanup stale pymobiledevice3 port\nforwards |\n\n**Documentation**\n| File | Description |\n|---|---|\n| `CHANGELOG.md` | 7-phase migration changelog with detailed what/why |\n| `TIDEVICE_TO_PYMOBILEDEVICE3_MIGRATION.md` | Command-by-command\nmigration reference |\n| `docs/API-Reference.md` | Full REST API reference with curl examples\n(Android + iOS) |\n| `docs/Android-Testing-Guide.md` | Comprehensive Android testing guide\n|\n| `docs/iOS-Testing-Guide.md` | Comprehensive iOS testing guide with\ndevice onboarding |\n| `TODO.md` | Known issues and future improvements |\n\n### Dependencies\n\n- **pymobiledevice3**: Must be installed (`pip3 install\npymobiledevice3`)\n- **ffmpeg**: Required for iOS video recording on Mac\n- **Xcode**: Required for iOS 17+ WDA launch (`xcodebuild`)\n\nCo-Authored-By: Warp <agent@warp.dev>\n\n---------\n\nCo-authored-by: Warp <agent@warp.dev>"
+    },
+    {
+      "sha": "156e7cd7ce2d1f8956b0a302ebae60c11610e3a3",
+      "date": "2026-08-24T09:39:31-04:00",
+      "author": "Dan Fiedler",
+      "email": "151573964+danfiedler-msft@users.noreply.github.com",
+      "message": "Pin GitHub Actions to full-length commit SHAs (#720)\n\n## Summary\n\nThis PR pins GitHub Actions to full-length commit SHAs for improved\nsecurity and reproducibility and adds a 7 day cooldown to Dependabot\nconfiguration for GitHub Actions. This work is described in more detail\nat https://aka.ms/action-pinning.\n\n## Why?\n\nPinning actions to commit SHAs prevents supply-chain attacks where a tag\ncould be moved to point to malicious code. This is a recommended\nsecurity best practice per the [GitHub Actions security hardening\nguide](https://docs.github.com/en/actions/security-for-github-actions/security-guides/security-hardening-for-github-actions#using-third-party-actions).\n\nThis change mitigates the risk of tag retargeting to malicious code as\nseen in incidents like the [tj-actions/changed-files action\ncompromise](https://www.stepsecurity.io/blog/harden-runner-detection-tj-actions-changed-files-action-is-compromised)\nor [codfish/semantic-release-action\ncompromise](https://www.stepsecurity.io/blog/supply-chain-compromise-codfish-semantic-release-action)\nand improves the integrity and reproducibility of the CI/CD pipeline.\n\n## What changed?\n\n**Action pinning:** Third-party action references in\n`.github/workflows/` that used mutable tag-based references (e.g.,\n`actions/checkout@v4`) have been updated to full-length commit SHAs with\na version comment (e.g., `actions/checkout@<sha> # v4`) using the\n[pinact](https://github.com/suzuki-shunsuke/pinact) tool. References\nthat were already pinned to a SHA, or that used immutable release tags,\nwere left unchanged.\n\n**Dependabot configuration:** `.github/dependabot.yml` has been updated\nto ensure a `github-actions` package-ecosystem section is present with a\n`cooldown` configuration (`default-days: 7`). If the file did not exist,\nit was created. If a `github-actions` section already existed, only the\n`cooldown` block was added or its `default-days` value was increased to\n7 if it was lower. The 7-day cooldown provides a window for the\ncommunity to detect and report compromised releases before they are\nautomatically proposed as updates, reducing exposure to supply-chain\nattacks via newly published malicious versions.\n\n## Is this safe to merge?\n\nYes. The pinned SHAs correspond to the same commits that the existing\ntags pointed to. No behavioral changes in action execution are\nintroduced. You can verify the pinned SHA value using the GitHub REST\nAPI (e.g., the commit hash for `actions/checkout@v7` can be found in the\n`sha` property in the JSON response for `GET\nhttps://api.github.com/repos/actions/checkout/commits/v7`).\n\n## Additional Information\n\nFor more information, please see https://aka.ms/action-pinning"
+    },
+    {
+      "sha": "383df1b3580ae16ade28835b848361ec28dfd9a3",
+      "date": "2026-08-06T15:25:15+08:00",
+      "author": "Nathan",
+      "email": "370788475@qq.com",
+      "message": "Update installer version and enhance installation process\n\nUpdated installer version to 1.12.1 and added optional prompt function for user input. Enhanced installation process for X-Tester by building a wheel first and improved error handling for package installation."
+    },
+    {
+      "sha": "00a5b2324329ddacb35f6016202be50cbc1b6545",
+      "date": "2026-07-31T10:01:31+08:00",
+      "author": "Nathan",
+      "email": "370788475@qq.com",
+      "message": "Enhance installer with test feed and version checks\n\nAdded support for a test feed and updated package handling. Enhanced Node.js version checks and improved installer logging."
+    },
+    {
+      "sha": "4363693df4f6810c2408512320784a267fd855b1",
+      "date": "2026-06-24T15:54:00+08:00",
+      "author": "Nathan",
+      "email": "370788475@qq.com",
+      "message": "Update installer version and add MSYS2 detection\n\nUpdate installer version to 1.11.1 and add function to detect MSYS2/MinGW Python installations."
+    },
+    {
+      "sha": "0b2b6e85148b434ec516c4de5e6a4a2f6a60cf8b",
+      "date": "2026-06-22T19:00:45+08:00",
+      "author": "Nathan",
+      "email": "370788475@qq.com",
+      "message": "Update print statement from 'Hello' to 'Goodbye'"
+    },
+    {
+      "sha": "fb2a0acec5371b18fc9eb0cc3f30ec7894e06e9c",
+      "date": "2026-06-16T00:22:47+08:00",
+      "author": "Nathan",
+      "email": "370788475@qq.com",
+      "message": "Update InstallerVersion to 1.10.1"
+    },
+    {
+      "sha": "f405a1dd055a8057549dc4c2736f707e138edc0d",
+      "date": "2026-06-16T00:15:58+08:00",
+      "author": "Nathan",
+      "email": "370788475@qq.com",
+      "message": "Update installer version and add plugin update prompt"
+    },
+    {
+      "sha": "67d09f1f4d2fa84da7f71a995afbf76320771e34",
+      "date": "2026-06-10T20:28:22+08:00",
+      "author": "Nathan",
+      "email": "370788475@qq.com",
+      "message": "Update installer version and add JSON comment removal"
+    },
+    {
+      "sha": "06310e5e933cf3fba0a56bce336f1b04b7ae6b47",
+      "date": "2026-06-09T19:52:56+08:00",
+      "author": "Nathan",
+      "email": "370788475@qq.com",
+      "message": "Update install.ps1"
+    },
+    {
+      "sha": "fbf109e665b40a253331aae864f45b3b761aef85",
+      "date": "2026-06-04T14:25:40+08:00",
+      "author": "Nathan",
+      "email": "370788475@qq.com",
+      "message": "Update install.ps1"
+    },
+    {
+      "sha": "8f946cdecf92f9a6c8257af97409f2f6a78bf8e6",
+      "date": "2026-06-04T12:51:41+08:00",
+      "author": "Nathan",
+      "email": "370788475@qq.com",
+      "message": "Update install.ps1"
+    },
+    {
+      "sha": "3561126b99ef9a890251a366cdabf06cd43bdba9",
+      "date": "2026-06-03T18:26:41+08:00",
+      "author": "Nathan",
+      "email": "370788475@qq.com",
+      "message": "Update installer version to 1.9.4 and refactor code"
+    },
+    {
+      "sha": "b05870d7a46ac5c0720f0deb3e6f09d0db902d28",
+      "date": "2026-06-03T18:14:00+08:00",
+      "author": "Nathan",
+      "email": "370788475@qq.com",
+      "message": "Update install.ps1"
+    },
+    {
+      "sha": "0ce120096353458100a1110a2c5ec76dbb1c2222",
+      "date": "2026-05-08T10:23:06+08:00",
+      "author": "Nathan",
+      "email": "370788475@qq.com",
+      "message": "Update installer version and add tool installation checks\n\nUpdated installer version to 1.9.0 and added functions to ensure adb and ffmpeg are installed via winget."
+    },
+    {
+      "sha": "07dda10b8df218f2c74cbb47cfd6729c8f201426",
+      "date": "2026-04-28T08:22:05+08:00",
+      "author": "Nathan",
+      "email": "370788475@qq.com",
+      "message": "Update install.ps1"
+    },
+    {
+      "sha": "34e181eccf2f13a70e343e9cac12a590e42e2e76",
+      "date": "2026-04-28T08:02:44+08:00",
+      "author": "Nathan",
+      "email": "370788475@qq.com",
+      "message": "Update installer version to 1.5.0 and enhance Python detection"
+    },
+    {
+      "sha": "da95094eb4daaa5b8b17e60c0b50c045b5cce21a",
+      "date": "2026-04-28T07:58:44+08:00",
+      "author": "Nathan",
+      "email": "370788475@qq.com",
+      "message": "Update install.ps1"
+    },
+    {
+      "sha": "2616d120035f382139461c78772f2587517e215b",
+      "date": "2026-04-28T07:49:32+08:00",
+      "author": "Nathan",
+      "email": "370788475@qq.com",
+      "message": "Update installer version to 1.3.0"
+    },
+    {
+      "sha": "957c312cb2899cb38ce3cabe1c9da8a32a8ac4cf",
+      "date": "2026-04-28T07:49:17+08:00",
+      "author": "Nathan",
+      "email": "370788475@qq.com",
+      "message": "Add functions to check Windows ARM64 Python support"
+    },
+    {
+      "sha": "000c79e0bd645698871b8a8ad56ff1953e5a964a",
+      "date": "2026-04-27T18:10:45+08:00",
+      "author": "Nathan",
+      "email": "370788475@qq.com",
+      "message": "Update installer version to 1.2.0 and improve output"
+    },
+    {
+      "sha": "faabd7acff82b2a92840c1d7d2b7c38d45504517",
+      "date": "2026-04-27T18:08:00+08:00",
+      "author": "Nathan",
+      "email": "370788475@qq.com",
+      "message": "Update install.ps1"
+    },
+    {
+      "sha": "8388215148adcda7d3bb282bae08b2e57f4c2584",
+      "date": "2026-04-27T07:51:54+08:00",
+      "author": "Nathan",
+      "email": "370788475@qq.com",
+      "message": "Create install.ps1"
+    },
+    {
+      "sha": "7f6b41bbc6e411102c7ef4d636feedfe0d64178c",
+      "date": "2026-04-23T17:05:47+08:00",
+      "author": "Nathan",
+      "email": "370788475@qq.com",
+      "message": "Update private-install-v2.ps1"
+    },
+    {
+      "sha": "08406686063dee0e353f434e395b999c4b566083",
+      "date": "2026-04-23T14:54:25+08:00",
+      "author": "Nathan",
+      "email": "370788475@qq.com",
+      "message": "Update installer version to 2.7 and add NVM detection"
+    },
+    {
+      "sha": "13ef3e5dcb7b7f6630ce85d1153ffc8042b66520",
+      "date": "2026-04-13T17:20:30+08:00",
+      "author": "Nathan",
+      "email": "370788475@qq.com",
+      "message": "Enhance logging and update installer version\n\nAdded logging functionality and updated installer version to 2.6."
+    },
+    {
+      "sha": "1e36fd9a24059e492f1a1ecef3be6112a84698bc",
+      "date": "2026-04-11T08:57:30+08:00",
+      "author": "Nathan",
+      "email": "370788475@qq.com",
+      "message": "Enhance logging and error handling in installer\n\nAdded logging functionality and improved error handling in the installer script."
+    }
+  ],
+  "commit_sha": "f580862f26e2a343e86745799dc87122c2354450",
+  "extracted_at": "2026-10-05T17:55:10.418771+00:00"
+}

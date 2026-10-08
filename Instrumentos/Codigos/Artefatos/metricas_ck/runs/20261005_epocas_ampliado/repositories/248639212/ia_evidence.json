@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "c429b634b05ea971d8022bc4da17e86ebaf4e6d0",
+      "date": "2024-05-30T11:55:26+08:00",
+      "author": "hb0730",
+      "email": "1278032416@qq.com",
+      "message": "docs: code generator\n"
+    },
+    {
+      "sha": "607c86fe41c3cf1042dded536408c5a883adaecb",
+      "date": "2024-05-30T11:19:08+08:00",
+      "author": "hb0730",
+      "email": "1278032416@qq.com",
+      "message": "feat: code generator\n"
+    },
+    {
+      "sha": "daef089f7c4485596e9b33d3189ac8986ae33830",
+      "date": "2024-05-29T11:28:00+08:00",
+      "author": "hb0730",
+      "email": "1278032416@qq.com",
+      "message": "feat: code generator init\n"
+    },
+    {
+      "sha": "e4a41e55d0aeb789773d024d68dce9824d6e53c5",
+      "date": "2024-05-17T14:52:55+08:00",
+      "author": "hb0730",
+      "email": "1278032416@qq.com",
+      "message": "fix: 参数校验问题\n"
+    },
+    {
+      "sha": "643e61bc33abd25a107c8c679cdeaf4106b6727f",
+      "date": "2024-05-17T08:47:03+08:00",
+      "author": "hb0730",
+      "email": "1278032416@qq.com",
+      "message": "fix: #29\n1. JsfPage 中的setSize 赋值错误\n2.  QueryHelper.toPage(query) 新增current,size不允许小于等于0\n"
+    },
+    {
+      "sha": "1f6d17d2c1434260092f4e2ef2292efc361861a5",
+      "date": "2024-05-15T17:55:50+08:00",
+      "author": "hb0730",
+      "email": "1278032416@qq.com",
+      "message": "feat: sql\n"
+    },
+    {
+      "sha": "e316a26742eff96d0d4d1fa5457c54bdbab3641c",
+      "date": "2024-05-15T17:49:16+08:00",
+      "author": "hb0730",
+      "email": "1278032416@qq.com",
+      "message": "feat: 角色-数据范围\n"
+    },
+    {
+      "sha": "a6127f14442cede29fe20b8d2542136a75e2a52c",
+      "date": "2024-05-15T11:53:17+08:00",
+      "author": "hb0730",
+      "email": "1278032416@qq.com",
+      "message": "fix: tenantId导致租户端查询问题\n"
+    },
+    {
+      "sha": "a19520e34defad7bd2af6aed0f76ef94abf84286",
+      "date": "2024-05-15T10:18:24+08:00",
+      "author": "hb0730",
+      "email": "1278032416@qq.com",
+      "message": "fix: 参数校验\n"
+    },
+    {
+      "sha": "9b100997e357ce1bec89ed34ec5632bd52ff7a2d",
+      "date": "2024-05-15T08:50:12+08:00",
+      "author": "hb0730",
+      "email": "1278032416@qq.com",
+      "message": "fix: mvn package error\n"
+    },
+    {
+      "sha": "7615298d0e2f0a14f5e0e90348a2218a42c755bd",
+      "date": "2024-05-14T17:24:34+08:00",
+      "author": "hb0730",
+      "email": "1278032416@qq.com",
+      "message": "refactor: 移除基于sql拦截方式区分租户，采用Hibernate的TenantId进行区分\n"
+    },
+    {
+      "sha": "56773e2092fc159f9cef355fef4490b652a7ada7",
+      "date": "2024-05-14T09:36:59+08:00",
+      "author": "hb0730",
+      "email": "1278032416@qq.com",
+      "message": "feat: 个人中心\n"
+    },
+    {
+      "sha": "9c4665c5011bf85a76c848fcf107c905f6259065",
+      "date": "2024-05-12T10:15:07+08:00",
+      "author": "hb0730",
+      "email": "1278032416@qq.com",
+      "message": "fix: path is null\n"
+    },
+    {
+      "sha": "c6cb4a796eec05bb40d75a44a744925cca7e4857",
+      "date": "2024-05-11T13:33:21+08:00",
+      "author": "hb0730",
+      "email": "1278032416@qq.com",
+      "message": "feat: 附件管理\n"
+    },
+    {
+      "sha": "259ca29626db759a405441b3a2770503dd1ff11f",
+      "date": "2024-05-11T10:05:35+08:00",
+      "author": "hb0730",
+      "email": "1278032416@qq.com",
+      "message": "feat: 基础数据-地区\n"
+    },
+    {
+      "sha": "d53965f6c4bf9580363ddc2cf0f75b50149f63ab",
+      "date": "2024-05-10T13:17:26+08:00",
+      "author": "hb0730",
+      "email": "1278032416@qq.com",
+      "message": "fix: aliyun oss protocol\n"
+    },
+    {
+      "sha": "4f9c7d2feb3aa927a2e049607ba85cc9c7ff4d31",
+      "date": "2024-05-10T11:35:31+08:00",
+      "author": "hb0730",
+      "email": "1278032416@qq.com",
+      "message": "feat: sql\n"
+    },
+    {
+      "sha": "d86154068d3080fb423a41ccea7bc694f987e2e5",
+      "date": "2024-05-10T11:32:52+08:00",
+      "author": "hb0730",
+      "email": "1278032416@qq.com",
+      "message": "feat: rename\n"
+    },
+    {
+      "sha": "75f186dd6ea04d5559fb86cc8c88bbbe648767d3",
+      "date": "2024-05-10T11:32:41+08:00",
+      "author": "hb0730",
+      "email": "1278032416@qq.com",
+      "message": "feat: 支持商户logo\n"
+    },
+    {
+      "sha": "805223f3337a2cab1f200e18169f820977aa8b57",
+      "date": "2024-05-10T11:32:28+08:00",
+      "author": "hb0730",
+      "email": "1278032416@qq.com",
+      "message": "feat: 完善oss\n"
+    },
+    {
+      "sha": "908d751a48f6a15fa0077dcdc69a049c664e607e",
+      "date": "2024-05-09T11:59:35+08:00",
+      "author": "hb0730",
+      "email": "1278032416@qq.com",
+      "message": "chore: rename\n"
+    },
+    {
+      "sha": "7a04678519e21e8208739a16ac1f393fee9cfb49",
+      "date": "2024-05-09T11:58:24+08:00",
+      "author": "hb0730",
+      "email": "1278032416@qq.com",
+      "message": "feat: 完善oss\n"
+    },
+    {
+      "sha": "72cd7cdbaf556f0357bd4ba607ccd30f3a48cf60",
+      "date": "2024-05-08T18:04:18+08:00",
+      "author": "hb0730",
+      "email": "1278032416@qq.com",
+      "message": "feat: 完善oss\n"
+    },
+    {
+      "sha": "c7f40bb3b8299ed91d3078f0d1c301deb6323d82",
+      "date": "2024-05-08T17:12:09+08:00",
+      "author": "hb0730",
+      "email": "1278032416@qq.com",
+      "message": "feat: 完善oss\n"
+    },
+    {
+      "sha": "27f55d12d8f18248336e17b67acf7a25bd39d79b",
+      "date": "2024-05-08T11:08:03+08:00",
+      "author": "hb0730",
+      "email": "1278032416@qq.com",
+      "message": "feat: 当前用户新增商户信息\n"
+    },
+    {
+      "sha": "1ebd024e19b2b7b48107ad0ac31b45b4369d55f2",
+      "date": "2024-05-08T08:55:27+08:00",
+      "author": "hb0730",
+      "email": "1278032416@qq.com",
+      "message": "feat: 用户岗位\n"
+    },
+    {
+      "sha": "2488dc86241ab3a58eb78ad3e58a33b93adc4500",
+      "date": "2024-05-07T18:18:38+08:00",
+      "author": "hb0730",
+      "email": "1278032416@qq.com",
+      "message": "fix: #27\n"
+    },
+    {
+      "sha": "d5b17253d491dbc2a112840f40fa0e58b57031e8",
+      "date": "2024-05-07T18:11:53+08:00",
+      "author": "hb0730",
+      "email": "1278032416@qq.com",
+      "message": "chore: 清理\n"
+    },
+    {
+      "sha": "1d1bf21f429d002afa03958e0af049b719646135",
+      "date": "2024-05-07T18:06:06+08:00",
+      "author": "hb0730",
+      "email": "1278032416@qq.com",
+      "message": "feat: 完善相关功能\n"
+    },
+    {
+      "sha": "dd90f5ccaed76fde8b0de2474258573390e2a61d",
+      "date": "2024-05-07T18:04:54+08:00",
+      "author": "hb0730",
+      "email": "1278032416@qq.com",
+      "message": "feat: 新增岗位管理\n"
+    }
+  ],
+  "commit_sha": "c429b634b05ea971d8022bc4da17e86ebaf4e6d0",
+  "extracted_at": "2026-10-05T18:01:12.772369+00:00"
+}

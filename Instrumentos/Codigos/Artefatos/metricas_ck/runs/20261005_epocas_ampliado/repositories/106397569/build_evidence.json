@@ -1,0 +1,80 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "2.4.1",
+  "spring_boot_major": "2",
+  "java_versions_declared": "1.8",
+  "build_evidence": [
+    {
+      "file": "core-batch/pom.xml",
+      "artifact": "spring-boot-starter-batch"
+    },
+    {
+      "file": "core-bom/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "core-cache/pom.xml",
+      "artifact": "spring-boot-starter-cache"
+    },
+    {
+      "file": "core-data-access/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "core-rest/core-rest-api/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "core-rest/core-rest-api/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "core-rest/core-rest-api/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "core-rest/core-rest-reactive/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "core-rest/core-rest-reactive/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "core-rest/core-rest-reactive/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "core-security-jwt/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "core-security-jwt/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "core-security-oauth2/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "core-security-oauth2/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "core-service/core-service-cassandra/pom.xml",
+      "artifact": "spring-boot-starter-data-cassandra-reactive"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-test"
+    }
+  ]
+}

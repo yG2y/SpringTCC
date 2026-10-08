@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "23b86fb107016333f0e7c57077f5133e60aab9e1",
+      "date": "2026-10-03T08:36:40+02:00",
+      "author": "Tom Seidel",
+      "email": "tom.seidel@remus-software.org",
+      "message": "Merge pull request #449 from tmseidel/release/1.27.0\n\nRelease/1.27.0"
+    },
+    {
+      "sha": "cebdb3e112dbc61accadf8faf0917484779c1c32",
+      "date": "2026-10-03T08:17:08+02:00",
+      "author": "Tom Seidel",
+      "email": "tom.seidel@remus-software.org",
+      "message": "feat(release): set release-versions\n"
+    },
+    {
+      "sha": "f0b3617e2ee3a02c02519abf3e98e927a6e4da42",
+      "date": "2026-10-03T07:41:16+02:00",
+      "author": "Tom Seidel",
+      "email": "tom.seidel@remus-software.org",
+      "message": "Merge pull request #446 from tmseidel/feature/ai-limit\n\nfeat(ai-integration): cap parallel jobs per AI integration"
+    },
+    {
+      "sha": "71e5172d99ef31d8479ba1074e017a98e54610c7",
+      "date": "2026-10-02T20:48:46+02:00",
+      "author": "Tom Seidel",
+      "email": "tom.seidel@remus-software.org",
+      "message": "feat(ai-integration): fixed review findings\n"
+    },
+    {
+      "sha": "4ff18e13eea40c0bd8fbf7f2142a9e7c255b3581",
+      "date": "2026-10-02T18:24:05+02:00",
+      "author": "Tom Seidel",
+      "email": "tom.seidel@remus-software.org",
+      "message": "Merge pull request #447 from tmseidel/ai-tests/pr-446-r428\n\nAdd E2E tests for PR #446"
+    },
+    {
+      "sha": "40e119a89d19733b25719c400fe020eafccb361f",
+      "date": "2026-10-02T17:05:52+02:00",
+      "author": "Tom Seidel",
+      "email": "tom.seidel@remus-software.org",
+      "message": "Merge pull request #448 from bc3tech/brandonh-msft/pr-review-request-acknowledgment\n\nfix(webhooks): acknowledge review-requested PRs"
+    },
+    {
+      "sha": "63bbba9a3d17b7f5a03a2af8f607016833ef9a6e",
+      "date": "2026-10-02T07:48:45-07:00",
+      "author": "Brandon🌩️H",
+      "email": "bc3tech@users.noreply.github.com",
+      "message": "fix(webhooks): acknowledge review-requested PRs\n\nAdd the eyes reaction when a pull request review is requested, matching the opened-PR workflow.\n\nCo-authored-by: Copilot App <223556219+Copilot@users.noreply.github.com>\n"
+    },
+    {
+      "sha": "13bc2993ed9c944c637a8acf4b97da937f3b56be",
+      "date": "2026-10-02T13:52:05Z",
+      "author": "AI-Git-Bot",
+      "email": "ai-git-bot@local",
+      "message": "test(e2e): generated tests for PR #446\n"
+    },
+    {
+      "sha": "d5441e78ae63ff1d37561b07bb19c5b40e9cf563",
+      "date": "2026-10-02T14:27:29+02:00",
+      "author": "Tom Seidel",
+      "email": "tom.seidel@remus-software.org",
+      "message": "feat(ai-integration): fixed UI bug\n"
+    },
+    {
+      "sha": "9d09b302ee8a6280ccaf82cb587db98a83229b72",
+      "date": "2026-10-02T13:44:14+02:00",
+      "author": "Tom Seidel",
+      "email": "tom.seidel@remus-software.org",
+      "message": "feat(ai-integration): small ui-imrovements\n"
+    },
+    {
+      "sha": "6c7fe6c55f7b9f1864e10110c62128f8cb1a5a16",
+      "date": "2026-10-02T13:18:13+02:00",
+      "author": "Tom Seidel",
+      "email": "tom.seidel@remus-software.org",
+      "message": "feat(ai-integration): small ui-imrovements\n"
+    },
+    {
+      "sha": "9e6bccba3ada0058c24445f8904aa75d40147c51",
+      "date": "2026-10-02T12:50:43+02:00",
+      "author": "Tom Seidel",
+      "email": "tom.seidel@remus-software.org",
+      "message": "feat(ai-integration): cap parallel jobs per AI integration\n\nLet operators bound how many jobs run at once against a single AI integration, so self-hosted or resource-constrained providers (a local vLLM / llama.cpp backend) are not flooded by concurrent review jobs.\n"
+    },
+    {
+      "sha": "9abf41782ad1ce77c1de2fb59421a24d4bf83de8",
+      "date": "2026-10-02T09:07:11+02:00",
+      "author": "Tom Seidel",
+      "email": "tom.seidel@remus-software.org",
+      "message": "Merge pull request #445 from tmseidel/feature/round-display\n\nfeat(usage): show the agent-loop round of every AI interaction"
+    },
+    {
+      "sha": "2413f7910519bcfd870cddd3cfe4621a4bd65044",
+      "date": "2026-10-02T08:46:28+02:00",
+      "author": "Tom Seidel",
+      "email": "tom.seidel@remus-software.org",
+      "message": "feat(usage): show the agent-loop round of every AI interaction\n\nThe Usage page audits every AI call but cannot say how deep into an agent loop a call happened: ten rounds of one coding run and ten unrelated one-shot calls look identical in the table, so the per-round token cost and the loop depth cannot be read off it. The round is already known inside the loops — AgentLoop's counter (coding, writer, triage, agentic review) and the four PR-workflow agent runners (E2E, unit-test, README-sync, i18n coverage) — it just never reached the audit record.\n"
+    },
+    {
+      "sha": "89a32ed760c8eadfcf949725d51f3ce9e7c68d88",
+      "date": "2026-10-02T08:34:47+02:00",
+      "author": "Tom Seidel",
+      "email": "tom.seidel@remus-software.org",
+      "message": "Merge pull request #441 from tmseidel/feature/tool-custom-validation\n\n feat(agent): add execute validation tool for repository-provided scripts"
+    },
+    {
+      "sha": "5d794ec901970967e608177c6a47db96f8720503",
+      "date": "2026-10-02T08:12:59+02:00",
+      "author": "Tom Seidel",
+      "email": "tom.seidel@remus-software.org",
+      "message": "feat(ai): fixed review findings\n"
+    },
+    {
+      "sha": "6a522af0c5d16c4475f9944d63bf306548922672",
+      "date": "2026-10-02T07:58:07+02:00",
+      "author": "Tom Seidel",
+      "email": "tom.seidel@remus-software.org",
+      "message": "Merge pull request #436 from myluoluo/codex/readme-sync-write-guard\n\nfix(readme-sync): stop stale PR writeback and show generated diffs"
+    },
+    {
+      "sha": "1e31bad5e74e7e6ef20288d3f2a83620ad09c894",
+      "date": "2026-10-02T07:57:38+02:00",
+      "author": "Tom Seidel",
+      "email": "tom.seidel@remus-software.org",
+      "message": "Merge pull request #443 from bc3tech/feat/assigned-issue-eyes-reaction\n\nfeat(webhooks): react to issue assignments"
+    },
+    {
+      "sha": "ecb3b00a61e717cd8108d9e8dbb9af93cf574b7b",
+      "date": "2026-10-01T15:22:55-07:00",
+      "author": "Brandon🌩️H",
+      "email": "bc3tech@users.noreply.github.com",
+      "message": "feat(webhooks): react to issue assignments\n\nCo-authored-by: Copilot App <223556219+Copilot@users.noreply.github.com>\n"
+    },
+    {
+      "sha": "8e5c5b3ac7ca24e016f80666a2c2e97bc24860cf",
+      "date": "2026-10-01T19:36:10+02:00",
+      "author": "Tom Seidel",
+      "email": "tom.seidel@remus-software.org",
+      "message": "Merge pull request #438 from bc3tech/brandonh-msft/issue-432-implementation\n\nfix(llamacpp): support router mode"
+    },
+    {
+      "sha": "3c4b42b29614eda37b69bcda2160a7044a42cd54",
+      "date": "2026-10-01T10:12:27-07:00",
+      "author": "Brandon🌩️H",
+      "email": "bc3tech@users.noreply.github.com",
+      "message": "fix(llamacpp): preserve fallback for empty completions\n\nTreat a completed but textless response as empty so review requests retain their user-facing fallback.\n\nCo-authored-by: Copilot App <223556219+Copilot@users.noreply.github.com>\n"
+    },
+    {
+      "sha": "64c8cdd5c7dcd3682d3d364ea0148669703f8878",
+      "date": "2026-10-01T19:03:31+02:00",
+      "author": "Tom Seidel",
+      "email": "tom.seidel@remus-software.org",
+      "message": "feat(ai): fixed review findings\n"
+    },
+    {
+      "sha": "7ef6ae133e5458a5a646ba76509757bb20c12f53",
+      "date": "2026-10-01T09:26:50-07:00",
+      "author": "Brandon🌩️H",
+      "email": "bc3tech@users.noreply.github.com",
+      "message": "test(llamacpp): format empty-response SSE fixture\n\nExpand the newline format token before sending the completed empty-choice SSE payload so the fixture contains valid JSON.\n\nCo-authored-by: Copilot App <223556219+Copilot@users.noreply.github.com>\n"
+    },
+    {
+      "sha": "15d973bc64a0e0c2c8e4bcdeb04ef7ced0a40889",
+      "date": "2026-10-01T18:20:08+02:00",
+      "author": "Tom Seidel",
+      "email": "tom.seidel@remus-software.org",
+      "message": "Merge pull request #437 from bc3tech/brandonh-msft/fix-issue-435\n\nfeat(webhook): add 👀 reaction to newly opened pull requests"
+    },
+    {
+      "sha": "c75eaaace0b5b555081bc08bfe49aa4cd9cc3304",
+      "date": "2026-10-01T18:16:09+02:00",
+      "author": "Tom Seidel",
+      "email": "tom.seidel@remus-software.org",
+      "message": "feat(agent): add execute validation tool for repository-provided scripts\nRepositories whose success is not decided by a language toolchain (documentation-only, CI/CD, infrastructure) had nothing to validate with:the coding agent resolves validation from a fixed list of build/testcommands. execute hands that decision to the repository by naming a script committed inside it.\n"
+    },
+    {
+      "sha": "4615251abba44718423e4a6d5487e91b1ce666d1",
+      "date": "2026-10-01T08:16:35-07:00",
+      "author": "Brandon🌩️H",
+      "email": "bc3tech@users.noreply.github.com",
+      "message": "fix(webhook): address low review findings\n\nShare PR workflow key resolution, sort imports, document PullRequestReactions, and include exception type in reaction failure logs.\n\nCo-authored-by: Copilot App <223556219+Copilot@users.noreply.github.com>\n"
+    },
+    {
+      "sha": "19e3b3bfbde8dcb8d10f46f99e586c97f606a39c",
+      "date": "2026-10-01T16:50:45+02:00",
+      "author": "Tom Seidel",
+      "email": "tom.seidel@remus-software.org",
+      "message": "Merge pull request #433 from Postremus/refactor/remove-parse-requested-files\n\nrefactor(agent): remove unused AiResponseParser.parseRequestedFiles"
+    },
+    {
+      "sha": "c3d50575cbf27c1cb6929863ecbb717bd912f30f",
+      "date": "2026-10-01T07:37:52-07:00",
+      "author": "Brandon🌩️H",
+      "email": "bc3tech@users.noreply.github.com",
+      "message": "fix(webhook): address PR reaction review feedback\n\nAdd provider request tests, avoid reactions for empty workflows or missing repository identity, and name the eyes reaction.\n\nCo-authored-by: Copilot App <223556219+Copilot@users.noreply.github.com>\n"
+    },
+    {
+      "sha": "c62e315d240d3790c39aa4b8ca24d8dcd2a0dd34",
+      "date": "2026-10-01T07:34:46-07:00",
+      "author": "Brandon🌩️H",
+      "email": "bc3tech@users.noreply.github.com",
+      "message": "chore(llamacpp): clean up review leftovers\n\nNormalize import ordering and remove a redundant token-usage comment.\n\nCo-authored-by: Copilot App <223556219+Copilot@users.noreply.github.com>\n"
+    },
+    {
+      "sha": "0e2e1aca5bd7ae05bc9c61a9acaaa3f1c5de1a20",
+      "date": "2026-10-01T07:32:12-07:00",
+      "author": "Brandon🌩️H",
+      "email": "bc3tech@users.noreply.github.com",
+      "message": "docs(llamacpp): document usage counter compatibility\n\nClarify that GBNF grammar uses the OpenAI-compatible endpoint and explain the optional streaming usage-counter support expected from current llama.cpp builds.\n\nCo-authored-by: Copilot App <223556219+Copilot@users.noreply.github.com>\n"
+    }
+  ],
+  "commit_sha": "23b86fb107016333f0e7c57077f5133e60aab9e1",
+  "extracted_at": "2026-10-05T18:20:30.274354+00:00"
+}

@@ -1,0 +1,16 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "2.5.6",
+  "spring_boot_major": "2",
+  "java_versions_declared": "${java.version};1.8;8",
+  "build_evidence": [
+    {
+      "file": "spring-brick-bootstrap/pom.xml",
+      "artifact": "spring-boot"
+    },
+    {
+      "file": "spring-brick/pom.xml",
+      "artifact": "spring-boot"
+    }
+  ]
+}

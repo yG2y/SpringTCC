@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "b821d1d7d7a2501441e3772652ee93c060941c5f",
+      "date": "2026-10-05T09:04:40-04:00",
+      "author": "Ryan Baxter",
+      "email": "ryan.baxter@broadcom.com",
+      "message": "Merge pull request #1739 from hutiefang76/frank/discovery-client-order\n\nAdd opt-in ordered reactive discovery"
+    },
+    {
+      "sha": "2bd4b2afb561e58ad33234460eca8cc7a5358159",
+      "date": "2026-10-05T04:18:42-07:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump antora from 3.2.0 to 3.2.1 in /docs (#1761)\n\nBumps [antora](https://gitlab.com/antora/antora/tree/HEAD/packages/antora) from 3.2.0 to 3.2.1.\n- [Changelog](https://gitlab.com/antora/antora/blob/main/CHANGELOG.adoc)\n- [Commits](https://gitlab.com/antora/antora/compare/v3.2.0...v3.2.1)\n\n---\nupdated-dependencies:\n- dependency-name: antora\n  dependency-version: 3.2.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "0f8b7929f1c292022bfd8ad4340036275c679c52",
+      "date": "2026-10-05T03:34:51-07:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump @antora/atlas-extension in /docs (#1763)\n\nBumps [@antora/atlas-extension](https://gitlab.com/antora/antora-atlas-extension) from 1.0.0-alpha.5 to 1.0.0-alpha.6.\n- [Changelog](https://gitlab.com/antora/antora-atlas-extension/blob/main/CHANGELOG.adoc)\n- [Commits](https://gitlab.com/antora/antora-atlas-extension/compare/v1.0.0-alpha.5...v1.0.0-alpha.6)\n\n---\nupdated-dependencies:\n- dependency-name: \"@antora/atlas-extension\"\n  dependency-version: 1.0.0-alpha.6\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "9c3ddf4f3baf3e427bf79a91878cffcb6c4e4b59",
+      "date": "2026-10-05T07:50:13+08:00",
+      "author": "hutiefang76",
+      "email": "137664623+hutiefang76@users.noreply.github.com",
+      "message": "Use constructor injection and expose reactive discovery enablement\n\nInject reactive discovery properties through the auto-configuration constructor and expose the existing reactive.enabled switch in generated metadata. Cover default enablement and disabled property binding.\n\nValidation: 316 module tests, 313 passed and 3 skipped; Spring formatting, Checkstyle and diff checks passed.\nSigned-off-by: hutiefang76 <137664623+hutiefang76@users.noreply.github.com>"
+    },
+    {
+      "sha": "2381d96f6bc44261a9dbec1a7175b0dd20bcb21b",
+      "date": "2026-10-03T13:57:29+08:00",
+      "author": "hutiefang76",
+      "email": "137664623+hutiefang76@users.noreply.github.com",
+      "message": "Use configuration properties for reactive discovery ordering (#1739)\n\nReplace @Value with typed properties and generate metadata automatically.\nPreserve the public bean method and default behavior; cover camelCase and environment binding.\n\nValidation: 315 module tests, 312 passed and 3 skipped; formatting and Checkstyle passed.\nFull reactor test-support dependency resolution was blocked by Maven Central DNS.\n\nSigned-off-by: hutiefang76 <137664623+hutiefang76@users.noreply.github.com>"
+    },
+    {
+      "sha": "2eead2501f86d944862ff18c912f20e42895e57b",
+      "date": "2026-10-03T13:57:13+08:00",
+      "author": "hutiefang76",
+      "email": "137664623+hutiefang76@users.noreply.github.com",
+      "message": "Make reactive discovery client ordering opt-in\n\nSigned-off-by: hutiefang76 <137664623+hutiefang76@users.noreply.github.com>"
+    },
+    {
+      "sha": "589f31d58ea7979fad5fa330d1976e9f1fbcc08e",
+      "date": "2026-10-01T12:53:30-07:00",
+      "author": "Spring Builds",
+      "email": "svc.spring-builds@broadcom.com",
+      "message": "Update Maven wrapper to 3.10.0 (#1757)\n\nSigned-off-by: spring-builds <spring-builds@users.noreply.github.com>\nCo-authored-by: spring-builds <spring-builds@users.noreply.github.com>"
+    },
+    {
+      "sha": "b3d6c25a2d9a6e6fabe2191ab7e440343068c496",
+      "date": "2026-10-01T15:07:06-04:00",
+      "author": "Ryan Baxter",
+      "email": "ryan.baxter@broadcom.com",
+      "message": "Merge pull request #1754 from spring-cloud/dependabot/maven/main/org.apache.maven-maven-resolver-provider-3.10.0\n\nBump org.apache.maven:maven-resolver-provider from 3.9.16 to 3.10.0"
+    },
+    {
+      "sha": "ba36b2a08cbd9ccf118d76ffae7215f581b2a629",
+      "date": "2026-10-01T15:04:56-04:00",
+      "author": "Ryan Baxter",
+      "email": "ryan.baxter@broadcom.com",
+      "message": "Merge branch '5.0.x'\n"
+    },
+    {
+      "sha": "d23446d02d1f1f5302075705f3737b890062906e",
+      "date": "2026-10-01T15:04:35-04:00",
+      "author": "Ryan Baxter",
+      "email": "ryan.baxter@broadcom.com",
+      "message": "Merge pull request #1749 from Akhil-1527/fix-resume-after-pause\n\nCall PauseHandler resume from the resume endpoint"
+    },
+    {
+      "sha": "8a0f6a103ef8448cc6af356422dea7b4afff682b",
+      "date": "2026-10-01T14:58:44-04:00",
+      "author": "Ryan Baxter",
+      "email": "ryan.baxter@broadcom.com",
+      "message": "Updates to support maven-resolver-provider 3.10.0\n"
+    },
+    {
+      "sha": "d0e6002d27327322971ec0eb39b3e882cb50e832",
+      "date": "2026-10-01T14:28:15-04:00",
+      "author": "Ryan Baxter",
+      "email": "ryan.baxter@broadcom.com",
+      "message": "Merge pull request #1755 from spring-cloud/dependabot/maven/main/org.apache.commons-commons-lang3-3.21.0\n\nBump org.apache.commons:commons-lang3 from 3.18.0 to 3.21.0"
+    },
+    {
+      "sha": "0bf62b3cb14be3ea94b6d5e39d020007b6026a5e",
+      "date": "2026-10-01T14:25:56-04:00",
+      "author": "Ryan Baxter",
+      "email": "ryan.baxter@broadcom.com",
+      "message": "Merge pull request #1753 from spring-cloud/dependabot/maven/main/org.bouncycastle-bc-jdk18on-bom-1.86.1\n\nBump org.bouncycastle:bc-jdk18on-bom from 1.85.2 to 1.86.1"
+    },
+    {
+      "sha": "b04f75dafad8eb5306685f4e537fb1c271079f86",
+      "date": "2026-10-01T13:06:22-04:00",
+      "author": "Akhil CH",
+      "email": "200716675+Akhil-1527@users.noreply.github.com",
+      "message": "Only mark the endpoint paused when a PauseHandler ran\n\nWith no PauseHandler beans, /actuator/pause still set paused = true,\nso /actuator/resume returned true even though nothing was paused.\n\nSigned-off-by: Akhil CH <200716675+Akhil-1527@users.noreply.github.com>\n"
+    },
+    {
+      "sha": "96ee2953986fc1dc7302ce0e33ca2088dd684f7d",
+      "date": "2026-10-01T14:09:14Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.apache.commons:commons-lang3 from 3.18.0 to 3.21.0\n\nBumps org.apache.commons:commons-lang3 from 3.18.0 to 3.21.0.\n\n---\nupdated-dependencies:\n- dependency-name: org.apache.commons:commons-lang3\n  dependency-version: 3.21.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "a81817b89e7fd92ce5eb7318d54df9fb81965e9b",
+      "date": "2026-10-01T14:08:34Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.apache.maven:maven-resolver-provider from 3.9.16 to 3.10.0\n\nBumps org.apache.maven:maven-resolver-provider from 3.9.16 to 3.10.0.\n\n---\nupdated-dependencies:\n- dependency-name: org.apache.maven:maven-resolver-provider\n  dependency-version: 3.10.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "8c4992d458907b570280b7ea5a633639ccf814e8",
+      "date": "2026-10-01T14:08:30Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.bouncycastle:bc-jdk18on-bom from 1.85.2 to 1.86.1\n\nBumps [org.bouncycastle:bc-jdk18on-bom](https://github.com/bcgit/bc-java) from 1.85.2 to 1.86.1.\n- [Changelog](https://github.com/bcgit/bc-java/blob/main/docs/releasenotes.md)\n- [Commits](https://github.com/bcgit/bc-java/commits)\n\n---\nupdated-dependencies:\n- dependency-name: org.bouncycastle:bc-jdk18on-bom\n  dependency-version: 1.86.1\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "ab675c9c342b5caa1af07ed0b1ef27b8aeb478f2",
+      "date": "2026-10-01T10:07:34-04:00",
+      "author": "Ryan Baxter",
+      "email": "ryan.baxter@broadcom.com",
+      "message": "Merge pull request #1752 from spring-cloud/dependabot-allow-minor-updates\n\nAllow Dependabot minor version updates on main"
+    },
+    {
+      "sha": "70ea778d43b5f6b56251f020f47bc032be481831",
+      "date": "2026-10-01T09:53:50-04:00",
+      "author": "Ryan Baxter",
+      "email": "ryan.baxter@broadcom.com",
+      "message": "Allow Dependabot minor version updates on main\n\nRemove the semver-minor ignore from the maven entry targeting main so\nDependabot opens PRs for minor dependency updates. Major updates remain ignored.\n"
+    },
+    {
+      "sha": "064b056b38fe46cd05c82fbdcfbd7d98a64fbcd4",
+      "date": "2026-09-30T12:40:38-04:00",
+      "author": "Akhil CH",
+      "email": "200716675+Akhil-1527@users.noreply.github.com",
+      "message": "Reset pause state when the context restarts\n\nAfter /actuator/pause then /actuator/restart the endpoint kept\npaused = true and still held the PauseHandler beans of the closed\ncontext. Clear both when the context closes and collect the\nhandlers again from the new context.\n\nSigned-off-by: Akhil CH <200716675+Akhil-1527@users.noreply.github.com>\n"
+    },
+    {
+      "sha": "f99560a6805d8802750e22494ef4fc22f8adb847",
+      "date": "2026-09-30T08:55:54-04:00",
+      "author": "Ryan Baxter",
+      "email": "ryan.baxter@broadcom.com",
+      "message": "Merge branch '5.0.x'\n"
+    },
+    {
+      "sha": "f63183d45fff55be3611c9cdcdfd865c4dd96441",
+      "date": "2026-09-30T08:55:34-04:00",
+      "author": "Ryan Baxter",
+      "email": "ryan.baxter@broadcom.com",
+      "message": "Merge pull request #1751 from ryanjbaxter/reset-stackoverflow\n\nImprovements to reset to defaults logic.\n\nPrevent stack overflow when resetting creates new objects.\n\nWhen Maps and Collections throw exceptions log them as warnings.\n\nDo not reset values that have not changed.\n\nFixes #1750"
+    },
+    {
+      "sha": "2ea1d2507fa753b615a64a359437dc7331b94832",
+      "date": "2026-09-29T11:43:52-04:00",
+      "author": "Ryan Baxter",
+      "email": "ryan.baxter@broadcom.com",
+      "message": "Prevent stack overflow, log exceptions as warnings, reset only when necessary\n\nImprovements to reset to defaults logic.\n\nPrevent stack overflow when resetting creates new objects.\n\nWhen Maps and Collections throw exceptions log them as warnings.\n\nDo not reset values that have not changed.\n"
+    },
+    {
+      "sha": "9e01b398938e7fd21f601d2e6d9bdc54b9b70164",
+      "date": "2026-09-28T21:10:28-04:00",
+      "author": "Akhil CH",
+      "email": "200716675+Akhil-1527@users.noreply.github.com",
+      "message": "Call PauseHandler resume from the resume endpoint\n\nThe resume endpoint only called doResume() when the context was not\nrunning. The pause endpoint no longer stops the context, so\n/actuator/resume never reached the PauseHandler beans after\n/actuator/pause. Track the paused state and resume when it is set.\n\nSigned-off-by: Akhil CH <200716675+Akhil-1527@users.noreply.github.com>\n"
+    },
+    {
+      "sha": "8c4bb871702b1cbae476c06aa3a00ee25eaff650",
+      "date": "2026-09-26T09:59:19-04:00",
+      "author": "Ryan Baxter",
+      "email": "ryan.baxter@broadcom.com",
+      "message": "Merge branch '5.0.x'\n"
+    },
+    {
+      "sha": "9d80d0a002930da9012f64230e03002f4ec81246",
+      "date": "2026-09-26T09:58:38-04:00",
+      "author": "Ryan Baxter",
+      "email": "ryan.baxter@broadcom.com",
+      "message": "Merge pull request #1741 from arimu1/fix/1687-configtree-refresh-equals\n\nCompare config tree values by content on refresh\nFixes gh-1687"
+    },
+    {
+      "sha": "92fdef62879b059ce94b88adc0e3408a7a5b2ea8",
+      "date": "2026-09-26T10:03:13+07:00",
+      "author": "arimu1",
+      "email": "19286898+arimu1@users.noreply.github.com",
+      "message": "Compare config tree values by bytes on refresh\n\nUse byte-level comparison for ConfigTreePropertySource values so binary\nmounts (certs/keystores) are handled correctly. Treat missing or\nunreadable files during comparison as a change instead of failing refresh.\n\nRetargeted to 5.0.x per review.\n\nSigned-off-by: arimu1 <19286898+arimu1@users.noreply.github.com>\n"
+    },
+    {
+      "sha": "d572462649cf3d683b804a94136aca12d676a802",
+      "date": "2026-09-25T22:16:44+07:00",
+      "author": "Tran Ngoc Nhan",
+      "email": "ngocnhan.tran1996@gmail.com",
+      "message": "Fix typos (#1748)\n\nSigned-off-by: Tran Ngoc Nhan <ngocnhan.tran1996@gmail.com>"
+    },
+    {
+      "sha": "6d840966af0162c2bdc364d367a93a38db520d71",
+      "date": "2026-09-25T09:38:20-04:00",
+      "author": "Ryan Baxter",
+      "email": "ryan.baxter@broadcom.com",
+      "message": "Merge branch '5.0.x'\n"
+    },
+    {
+      "sha": "0d3b94366a6c831ffe2c7b9a396bee64324c85a9",
+      "date": "2026-09-25T09:37:55-04:00",
+      "author": "Ryan Baxter",
+      "email": "ryan.baxter@broadcom.com",
+      "message": "Merge pull request #1747 from ngocnhan-tran1996/pattern-matching\n\nApply pattern matching for `instanceof`"
+    }
+  ],
+  "commit_sha": "b821d1d7d7a2501441e3772652ee93c060941c5f",
+  "extracted_at": "2026-10-05T18:12:14.202343+00:00"
+}

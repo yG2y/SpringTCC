@@ -1,0 +1,195 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 26,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "f1d96019f65985707ba852f1f4676a3a1f61aa12",
+      "date": "2026-09-01T09:07:22+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Add Medium article\n"
+    },
+    {
+      "sha": "c4b6ca3b38ad2cedd12b113e2fb31f661964dab1",
+      "date": "2026-08-29T21:39:48+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "docs: optimize documentation and project files\n\n- Optimize documentation GIFs to reduce file sizes\n- Document GIF optimization approach in README\n- Add Buy Me a Coffee link to FUNDING.yml\n- Clean up Mockito imports in test class\n"
+    },
+    {
+      "sha": "b8043d921bb10abf9ccf9ac76da08e596b682af6",
+      "date": "2026-08-28T17:12:57+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "style: add spotless code formatting with google-java-format\n\n- Add .editorconfig for consistent editor settings\n- Configure spotless-maven-plugin with Google Java Format style\n- Reformat all Java source files to 2-space indentation\n- Add formatting documentation and commands to README\n"
+    },
+    {
+      "sha": "a6f0cfa11eebf76007d9775ab94bf322573f7354",
+      "date": "2026-08-28T16:50:53+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "test: add unit tests and refactor for testability\n\n- Extract UserService to encapsulate user registration and lookup logic\n- Add comprehensive unit tests for controller, security, and services\n- Remove disabled application context test\n- Add test execution instructions to README\n"
+    },
+    {
+      "sha": "2dbcb5ff0a71b2ebb99a9c521dcd26b00b455fdc",
+      "date": "2026-08-28T14:39:51+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "refactor: add validation and extract constants\n\n- Add spring-boot-starter-validation dependency\n- Create Authorities constants class for role strings\n- Add @NotBlank and @Email validation to RegisterUserDto\n- Apply @Valid annotation to registration endpoint\n- Add logging and error handling to EmailService\n- Improve User entity equals/hashCode configuration\n- Fix typo in register.html (Usernane -> Username)\n"
+    },
+    {
+      "sha": "e9c4ea8bf434816d6054a49bacb03892495b89f9",
+      "date": "2026-08-28T14:08:22+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: update project dependencies and add license\n\n- Update Spring Boot from 4.0.0 to 4.1.1\n- Update Maven wrapper from 3.9.11 to 3.9.16\n- Add MIT License file\n- Update README with badges, project overview diagram, and support section\n- Refactor Docker Compose with health checks and rename to compose.yml\n- Simplify Maven plugin configurations and remove unused throws clause\n"
+    },
+    {
+      "sha": "423cda5cfb86ef2528ba0604ce4d4854d689f045",
+      "date": "2025-12-17T17:38:29-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Upgrade to Java 25 and Spring Boot 4.0.0\n"
+    },
+    {
+      "sha": "5e9c0669c56ba029da4ead4ab26d5179a81a5027",
+      "date": "2025-12-17T17:31:42-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Project upgrade\n\n- Upgrade to Spring Boot 3.5.8\n- Upgrade wrapperVersion to 3.3.4 and Apache Maven to 3.9.11\n- Upgrade to PostgreSQL Docker image 18.0\n- Upgrade to MailPit Docker image v1.28.0\n"
+    },
+    {
+      "sha": "f3cf3885bf5b0019ea1c8977d11f6247ff3a3bdc",
+      "date": "2025-04-18T16:45:29+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- Upgrade to Spring Boot 3.4.4\n- Upgrade to Mailpit Docker image v1.24.1\n- Update README file\n"
+    },
+    {
+      "sha": "c75897ca57dadd110cabaaa115187c849e0e3bee",
+      "date": "2025-01-02T16:06:15-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Add authorities to /movies endpoint\n"
+    },
+    {
+      "sha": "bbcd6d7a80845c607762ca4f6b6dbcbae740561f",
+      "date": "2025-01-02T15:33:33-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to Spring Boot 3.4.1\n"
+    },
+    {
+      "sha": "a4232e1e97cf292c6122a13927375190122381a4",
+      "date": "2024-12-12T16:22:03-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Small update in README\n"
+    },
+    {
+      "sha": "5d010388c1c4974e8b6783c0d991c58f89523128",
+      "date": "2024-12-11T07:01:15-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Add Medium article\n"
+    },
+    {
+      "sha": "d4bf7b513180e721e64ad15085ec2838660c83db",
+      "date": "2024-12-11T06:41:09-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Remove unnecessary annotation in SecurityConfig\n"
+    },
+    {
+      "sha": "622644150e3baaf344a9f7f7dd37e7af0e58d373",
+      "date": "2024-12-11T06:34:12-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Update GIF files\n"
+    },
+    {
+      "sha": "a80396f8c51b4a6dd61ff602ecf6371588ba39a9",
+      "date": "2024-12-10T17:22:24-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project update\n\n- Add users page;\n- Add DatabaseInitializer class to create admin in database;\n- Remove UserService. For simplicity, using UserRepository directly.\n"
+    },
+    {
+      "sha": "15b6cec08abec99d875d01a135ea2ee23f71c61f",
+      "date": "2024-12-10T15:10:11-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Add note in README\n"
+    },
+    {
+      "sha": "b3eab9811bd89b9a5ce073ba7b537c93255da41b",
+      "date": "2024-12-10T15:09:31-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Rename SecurityConfig and add PasswordEncoderFactories.createDelegatingPasswordEncoder()\n"
+    },
+    {
+      "sha": "007c754622495b8b053e3080dd4fb92a215c5b83",
+      "date": "2024-12-10T07:25:45-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Apply some adjustments\n"
+    },
+    {
+      "sha": "e0db93959989143d0e5a5ea8ffc0227ac8ad56c1",
+      "date": "2024-12-03T21:35:39-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Rename project name\n"
+    },
+    {
+      "sha": "4e5a0be83d7acbf64293269d7d63373cd7527a33",
+      "date": "2024-12-03T21:27:56-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Update README\n"
+    },
+    {
+      "sha": "a54f2d87b5ac41b9f420ee4c0b860841a86c7a5d",
+      "date": "2024-12-03T21:23:18-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Create FUNDING.yml and small update in README\n"
+    },
+    {
+      "sha": "45f89832148a52afd685f0a568064a4381c308ca",
+      "date": "2024-12-03T21:21:28-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Update README\n"
+    },
+    {
+      "sha": "32d8ef1cc5454bd6bb074c95b73706ab8b515ffc",
+      "date": "2024-12-03T20:42:06-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Update README\n"
+    },
+    {
+      "sha": "62a5c835206dfa2b66821d7891f00600d84859aa",
+      "date": "2024-12-03T19:06:18-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Add movies-apps implementation and docker-compose.yml\n"
+    },
+    {
+      "sha": "d22f57ea827a66d76b755949bbe9fab6ce46e10a",
+      "date": "2024-12-03T18:56:46-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Initial commit\n"
+    }
+  ],
+  "commit_sha": "f1d96019f65985707ba852f1f4676a3a1f61aa12",
+  "extracted_at": "2026-10-05T18:44:26.436846+00:00"
+}

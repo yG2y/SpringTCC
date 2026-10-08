@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "b60920901d6a2ff19e5cf13684845757696fdf09",
+      "date": "2026-07-11T11:52:46+04:00",
+      "author": "Aleksandr Tarasov",
+      "email": "aatarasoff@gmail.com",
+      "message": "Merge pull request #51 from rpajaziti/upstream-pr\n\nUpgrade to Spring Boot 3 / Java 17 and add ThriftClientHeaderCustomizer hook"
+    },
+    {
+      "sha": "df90b2d02468d2c81abbc70ea14a6e77266a890b",
+      "date": "2026-03-26T11:53:43+01:00",
+      "author": "Ramadan Pajaziti",
+      "email": "ramadan.pajazati@compactsmartsolutions.com",
+      "message": "Restored README information to previous version\n"
+    },
+    {
+      "sha": "6a576d0832addbcbd81b267a63105670e7a04d48",
+      "date": "2026-03-26T11:50:47+01:00",
+      "author": "Ramadan Pajaziti",
+      "email": "ramadan.pajazati@compactsmartsolutions.com",
+      "message": "Point repository URLs to aatarasoff/spring-thrift-starter for upstream PR\n"
+    },
+    {
+      "sha": "8a4e33028e9bcffe23c4280802d2fe12302d4886",
+      "date": "2026-03-25T22:24:51+01:00",
+      "author": "Ramadan Pajaziti",
+      "email": "ramadan.pajazati@compactsmartsolutions.com",
+      "message": "Pin all api dependency versions in starter to ensure consumers resolve correctly without a BOM\n"
+    },
+    {
+      "sha": "9330b520687fca3a658c70bc3cb5a092fa1b4bb5",
+      "date": "2026-03-25T21:40:31+01:00",
+      "author": "Ramadan Pajaziti",
+      "email": "ramadan.pajazati@compactsmartsolutions.com",
+      "message": "Remove the javax.annotation\n"
+    },
+    {
+      "sha": "738501c11703bbbf763d294cd4f222aba5d53361",
+      "date": "2026-03-25T21:37:51+01:00",
+      "author": "Ramadan Pajaziti",
+      "email": "ramadan.pajazati@compactsmartsolutions.com",
+      "message": "Regenerate Thrift sources with Thrift compiler 0.22.0 for libthrift compatibility\n"
+    },
+    {
+      "sha": "f90ad8700bf844ec2f5fe34fbcf70bb3184ebbe9",
+      "date": "2026-03-25T21:16:50+01:00",
+      "author": "Ramadan Pajaziti",
+      "email": "ramadan.pajazati@compactsmartsolutions.com",
+      "message": "update README for Spring Boot 3 fork: add fork notice, what's new section, header customizer docs, and fix dependency declaration\n"
+    },
+    {
+      "sha": "a34a939a0e087279814fd10d14893b27a0075cc2",
+      "date": "2026-03-25T21:09:09+01:00",
+      "author": "Ramadan Pajaziti",
+      "email": "ramadan.pajazati@compactsmartsolutions.com",
+      "message": "  Upgrade to Spring Boot 3 / Java 17 and add header propagation support\n\n  - Upgrade Spring Boot to 3.2.5 and Spring Cloud to 2023.0.2\n  - Migrate from Java 11 to Java 17 (sourceCompatibility, CI workflows)\n  - Replace spring-cloud-sleuth with micrometer-tracing (Brave bridge)\n  - Replace Nebula plugins with standard java-library + maven-publish\n  - Migrate @Autowired field injection to constructor injection (@RequiredArgsConstructor)\n  - Add ThriftClientHeaderCustomizer SPI for propagating custom headers\n  - Add @ConditionalOnClass(LoadBalancerClient.class) for optional load balancer support\n  - Migrate Spring Boot auto-configuration to new spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports\n  - Update Gradle wrapper and dependency versions\n  - Fix publish workflow JDK version from 11 to 17\n"
+    },
+    {
+      "sha": "fda9ba1ba592509df5a6f92e6955637ed193413d",
+      "date": "2022-05-26T20:57:42+04:00",
+      "author": "Aleksandr Tarasov",
+      "email": "aatarasoff@gmail.com",
+      "message": "add gradle build for each commit or pr"
+    },
+    {
+      "sha": "f112fc3a3d3bf03c2f5521fff2e659b4a364ef4c",
+      "date": "2022-05-26T20:55:10+04:00",
+      "author": "Aleksandr Tarasov",
+      "email": "aatarasoff@gmail.com",
+      "message": "add codeql analysis"
+    },
+    {
+      "sha": "739499fc5c35e56804511807b98f7277c19ba0e5",
+      "date": "2022-05-26T17:21:46+04:00",
+      "author": "aatarasoff",
+      "email": "aatarasoff@gmail.com",
+      "message": "rollup version\n"
+    },
+    {
+      "sha": "ae1a7a2a3e718c92bee922ed560d180407c28e8d",
+      "date": "2022-05-26T17:15:36+04:00",
+      "author": "aatarasoff",
+      "email": "aatarasoff@gmail.com",
+      "message": "fix dependencies, test and more\n"
+    },
+    {
+      "sha": "0e6d1ffeeb982a5f9a1caf6568a594310b43a00b",
+      "date": "2022-05-25T12:32:06+04:00",
+      "author": "Aleksandr Tarasov",
+      "email": "aatarasoff@gmail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "c9b04f911d655522701e93f5c8991fe9f847576b",
+      "date": "2022-05-25T12:30:50+04:00",
+      "author": "Aleksandr Tarasov",
+      "email": "aatarasoff@gmail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "afe161dcc1a2574dc22deeee865e6ca0fa69a958",
+      "date": "2022-05-25T12:18:09+04:00",
+      "author": "aatarasoff",
+      "email": "aatarasoff@gmail.com",
+      "message": "fix github publish\n"
+    },
+    {
+      "sha": "307c9d5cf5a277f291b4c724f0aeb2e78b89bc6f",
+      "date": "2022-05-25T12:03:27+04:00",
+      "author": "aatarasoff",
+      "email": "aatarasoff@gmail.com",
+      "message": "remove thrift protocol auto creation\n"
+    },
+    {
+      "sha": "92d97d97b98e67e79dd46b24af8e3553ab39fc0d",
+      "date": "2022-05-25T11:44:48+04:00",
+      "author": "Aleksandr Tarasov",
+      "email": "aatarasoff@gmail.com",
+      "message": "Create gradle-publish.yml"
+    },
+    {
+      "sha": "ddb839da29dcb8ed6b966eadb121567044e9e908",
+      "date": "2022-05-25T11:40:53+04:00",
+      "author": "aatarasoff",
+      "email": "aatarasoff@gmail.com",
+      "message": "update on the latest spring cloud\n"
+    },
+    {
+      "sha": "58d1243c2b280a2247aef6ef3fbe998495e80365",
+      "date": "2020-09-29T12:35:21+03:00",
+      "author": "aatarasoff",
+      "email": "aatarasoff@gmail.com",
+      "message": "rollup version\n"
+    },
+    {
+      "sha": "3f5df012046225078fdbcf7b76bfff219a5c50be",
+      "date": "2020-09-29T12:25:41+03:00",
+      "author": "Aleksandr Tarasov",
+      "email": "aatarasoff@gmail.com",
+      "message": "Merge pull request #49 from driver733/fix/bean-thrift-client\n\nFix/bean thrift client"
+    },
+    {
+      "sha": "0fe87bff1549c51dc27f059ed801eee4da87d214",
+      "date": "2020-09-28T21:16:51+03:00",
+      "author": "Mikhail Yakushin",
+      "email": "driver733@gmail.com",
+      "message": "fix: comments\n"
+    },
+    {
+      "sha": "25a21e054d662b9895f373fb95c22288e414b8f6",
+      "date": "2020-09-28T21:15:20+03:00",
+      "author": "Mikhail Yakushin",
+      "email": "driver733@gmail.com",
+      "message": "fix: version\n"
+    },
+    {
+      "sha": "1f552762b80c2f1aefc236e1d9869be5ad5c99fa",
+      "date": "2020-09-28T21:12:59+03:00",
+      "author": "Mikhail Yakushin",
+      "email": "driver733@gmail.com",
+      "message": "fix: regression\n"
+    },
+    {
+      "sha": "1f1251ebd45a3bd5f186abfb39f68bba0965582e",
+      "date": "2020-06-08T15:13:42+03:00",
+      "author": "Aleksandr Tarasov",
+      "email": "aatarasoff@gmail.com",
+      "message": "Merge pull request #47 from driver733/fix/bean-thrift-client\n\nfix: thrift client type check"
+    },
+    {
+      "sha": "abf973241966bda76def0f3ce026219de48512aa",
+      "date": "2020-06-02T12:42:36+03:00",
+      "author": "Mikhail Yakushin",
+      "email": "driver733@gmail.com",
+      "message": "fix: thrift client type check\n"
+    },
+    {
+      "sha": "504e302a9d1254f81a1b590bdbb97fbc1ddb40f3",
+      "date": "2020-05-14T12:13:23+03:00",
+      "author": "aatarasoff",
+      "email": "aatarasoff@gmail.com",
+      "message": "rollup version\n"
+    },
+    {
+      "sha": "d81562232e270cebec4e654e19807a1ee06a53f0",
+      "date": "2020-05-14T12:10:09+03:00",
+      "author": "Aleksandr Tarasov",
+      "email": "aatarasoff@gmail.com",
+      "message": "Merge pull request #46 from driver733/fix/bean-thrift-client\n\nfix: make bean thrift client post processor run before bean instantiation"
+    },
+    {
+      "sha": "c4677f3ca4007937b7115a3dfe792cffefca65b7",
+      "date": "2020-05-13T22:39:29+03:00",
+      "author": "Mikhail Yakushin",
+      "email": "driver733@gmail.com",
+      "message": "fix: make bean thrift client post processor run before bean instantiation\n"
+    },
+    {
+      "sha": "f8ef271c0e5c66e5d60a9728158d4759d14905da",
+      "date": "2020-05-13T14:50:01+03:00",
+      "author": "aatarasoff",
+      "email": "aatarasoff@gmail.com",
+      "message": "rollup version\n"
+    },
+    {
+      "sha": "bc6276b5b5c73cd97ab05469b2cc25836eb02604",
+      "date": "2020-05-13T13:56:36+03:00",
+      "author": "aatarasoff",
+      "email": "aatarasoff@gmail.com",
+      "message": "fix tests and go on\n"
+    }
+  ],
+  "commit_sha": "b60920901d6a2ff19e5cf13684845757696fdf09",
+  "extracted_at": "2026-10-05T18:32:07.517120+00:00"
+}

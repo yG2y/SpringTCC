@@ -1,0 +1,230 @@
+{
+  "ia_status": "com_evidencia",
+  "ia_level": 2,
+  "ia_agents": "copilot-swe-agent",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [
+    {
+      "agent": "copilot-swe-agent",
+      "type": "author_identity",
+      "sha": "9699df57bb589bf7a4ecb49e16918b3aa5c59d5a",
+      "identity": "copilot-swe-agent[bot] 198982749+copilot@users.noreply.github.com"
+    }
+  ],
+  "commits": [
+    {
+      "sha": "50b06b73df00436d4425d1c2307c8347b135039a",
+      "date": "2026-04-09T00:19:10+08:00",
+      "author": "huangchengxing",
+      "email": "huangchengxing@huangchengxingdeMacBook-Pro.local",
+      "message": "fix(ci): update actions version and fix GPG skip property\n"
+    },
+    {
+      "sha": "8f8e52d0b212d81868a2eb822660ef64f5a53208",
+      "date": "2026-04-08T23:39:11+08:00",
+      "author": "huangchengxing",
+      "email": "huangchengxing@huangchengxingdemacbook-pro.local",
+      "message": "release 2.10.0\n"
+    },
+    {
+      "sha": "9699df57bb589bf7a4ecb49e16918b3aa5c59d5a",
+      "date": "2026-04-03T08:23:57Z",
+      "author": "copilot-swe-agent[bot]",
+      "email": "198982749+Copilot@users.noreply.github.com",
+      "message": "fix: declare namedComponentAliasProcessor as static to avoid BeanPostProcessor warning\n\nAgent-Logs-Url: https://github.com/opengoofy/crane4j/sessions/3b35884c-9ca9-42ea-b4a4-5231477995b4\n\nCo-authored-by: Createsequence <49221670+Createsequence@users.noreply.github.com>\n"
+    },
+    {
+      "sha": "7077b38657ef256e416ba97522e804299d6692ce",
+      "date": "2025-07-16T21:19:12+08:00",
+      "author": "huangchengxing",
+      "email": "huangchengxing.hcx@taobao.com",
+      "message": "fix(AssembleOperationHandler): collection type data cannot be handled correctly when batch populating\n"
+    },
+    {
+      "sha": "6afe8649d0a9b5b3ec17e17319be4d87b3ab84c9",
+      "date": "2025-05-07T16:59:57+08:00",
+      "author": "Paul",
+      "email": "paulzaq@yeah.net",
+      "message": "Bump hutool from 5.8.26 to 5.8.37\n\nBump hutool from 5.8.26 to 5.8.37"
+    },
+    {
+      "sha": "bfc292cbcb272bc40f8c2fc6295ba9b8ac3efdc1",
+      "date": "2024-09-23T01:26:20+08:00",
+      "author": "huangchengxing",
+      "email": "841396397@qq.com",
+      "message": "update doc\n"
+    },
+    {
+      "sha": "5508ea5bce5eb2155710bed8cd670451e1534dc4",
+      "date": "2024-09-23T01:07:15+08:00",
+      "author": "huangchengxing",
+      "email": "841396397@qq.com",
+      "message": "doc: 添加ICP备案，网站标题与域名备案暂时保持一致\n"
+    },
+    {
+      "sha": "23c3dd34838d6cbfc41fc4865215b6007955d455",
+      "date": "2024-09-23T01:06:52+08:00",
+      "author": "huangchengxing",
+      "email": "841396397@qq.com",
+      "message": "doc: fix example (GitHub #322)\n"
+    },
+    {
+      "sha": "78b7c520dfffc89fd1f39f94162e174add860271",
+      "date": "2024-07-10T21:51:18+08:00",
+      "author": "huangchengxing",
+      "email": "841396397@qq.com",
+      "message": "chore: change the role of Crane4jAutoConfiguration to BeanDefinition.ROLE_INFRASTRUCTURE (GitHub #318)\n"
+    },
+    {
+      "sha": "afe129999f819695e0a92ea46a4bc4d57fba26db",
+      "date": "2024-07-16T00:14:33+08:00",
+      "author": "huangchengxing",
+      "email": "841396397@qq.com",
+      "message": "update README.md\n"
+    },
+    {
+      "sha": "8bba14200d38b3b96c3a89226511c26c2c14924e",
+      "date": "2024-07-15T15:11:04+08:00",
+      "author": "huangchengxing",
+      "email": "841396397@qq.com",
+      "message": "optimize code\n"
+    },
+    {
+      "sha": "94f449062959355dc75c0fe1a979e7bb8bc0d25e",
+      "date": "2024-07-15T00:04:45+08:00",
+      "author": "huangchengxing",
+      "email": "841396397@qq.com",
+      "message": "update doc\n"
+    },
+    {
+      "sha": "f1863ad6213773140a054411a2858a11a4cf0380",
+      "date": "2024-07-14T23:17:37+08:00",
+      "author": "huangchengxing",
+      "email": "841396397@qq.com",
+      "message": "feat(AssembleMp): add default implementation for afterInvoke method\n"
+    },
+    {
+      "sha": "679c58f06f7c74f8a06bed19e4c08b85f8cc0957",
+      "date": "2024-07-08T00:45:14+08:00",
+      "author": "huangchengxing",
+      "email": "841396397@qq.com",
+      "message": "doc: fix tip\n"
+    },
+    {
+      "sha": "8d1fb1a98035c10dbfe01e520dedf494fbe9d57d",
+      "date": "2024-07-08T00:39:16+08:00",
+      "author": "huangchengxing",
+      "email": "841396397@qq.com",
+      "message": "doc(executor): update doc\n"
+    },
+    {
+      "sha": "7ef60786bd3a551cc91d4e63150547754116da28",
+      "date": "2024-06-30T19:07:37+08:00",
+      "author": "huangchengxing",
+      "email": "841396397@qq.com",
+      "message": "update doc\n"
+    },
+    {
+      "sha": "3624c4ff97b62799f8fc81733424a9e48d6649fc",
+      "date": "2024-06-30T00:22:03+08:00",
+      "author": "huangchengxing",
+      "email": "841396397@qq.com",
+      "message": "release 2.9.0\n"
+    },
+    {
+      "sha": "85eca329e5dd120a692215128181ad2c308de679",
+      "date": "2024-06-30T00:17:18+08:00",
+      "author": "huangchengxing",
+      "email": "841396397@qq.com",
+      "message": "update changelog\n"
+    },
+    {
+      "sha": "cea7834b17fa0af1f75a9e28a966dab10106649c",
+      "date": "2024-06-29T17:52:52+08:00",
+      "author": "huangchengxing",
+      "email": "841396397@qq.com",
+      "message": "refactor(query): refactor crane4j-extension-query module\n"
+    },
+    {
+      "sha": "96e4af0a8bc90081853a360e12e09a925c12ea7f",
+      "date": "2024-06-27T23:58:10+08:00",
+      "author": "huangchengxing",
+      "email": "841396397@qq.com",
+      "message": "feat(LimitedContainer): support for dynamically updating cached data in LimitedContainer (GitHub #316)\n"
+    },
+    {
+      "sha": "2fde83353724f41c4ba85ca69401020b73803ba4",
+      "date": "2024-06-25T12:39:25+08:00",
+      "author": "huangchengxing",
+      "email": "841396397@qq.com",
+      "message": "code: improve the description information when throwing exceptions\n"
+    },
+    {
+      "sha": "23cfd02eb661ae60d552fa975e2e9f1dae2aa300",
+      "date": "2024-06-23T21:01:58+08:00",
+      "author": "huangchengxing",
+      "email": "841396397@qq.com",
+      "message": "feat(BeanOperationExecutor): support for performing operations in a recursive manner (GitHub #311)\n"
+    },
+    {
+      "sha": "3323494b799195d92b38315c196b0cd7031b4be8",
+      "date": "2024-06-21T21:17:08+08:00",
+      "author": "huangchengxing",
+      "email": "841396397@qq.com",
+      "message": "refactor(BeanOperationExecutor): refactor AbstractBeanOperationExecutor\n"
+    },
+    {
+      "sha": "75ceede142606ede6150a03728e4aaaf3ff6923d",
+      "date": "2024-06-20T19:30:41+08:00",
+      "author": "huangchengxing",
+      "email": "841396397@qq.com",
+      "message": "feat(ContainerMethod): method container supports null values in filter parameters (GitHub #312)\n"
+    },
+    {
+      "sha": "19bb16743547d5705aa2d828c470ed193a779bcc",
+      "date": "2024-06-18T00:30:31+08:00",
+      "author": "huangchengxing",
+      "email": "841396397@qq.com",
+      "message": "feat(PropertyMappingStrategy): property mapping strategy that supports concatenating collections with bit strings (GitHub #307)\n"
+    },
+    {
+      "sha": "c6a7c76cae15cefac1c11edba5b508cfaa459918",
+      "date": "2024-06-16T19:20:14+08:00",
+      "author": "huangchengxing",
+      "email": "841396397@qq.com",
+      "message": "update change log\n"
+    },
+    {
+      "sha": "47db9b3d4ba4e65a2719ec1d4826b71bb89d40ca",
+      "date": "2024-06-15T16:37:31+08:00",
+      "author": "Createsequence",
+      "email": "cn.createsequence@gmail.com",
+      "message": "Update issue templates\n\nUpdate issue templates (GitHub #112)"
+    },
+    {
+      "sha": "197a3795a2a0cd1bf9b92be230dc2c4809c698ec",
+      "date": "2024-06-14T00:12:04+08:00",
+      "author": "huangchengxing",
+      "email": "841396397@qq.com",
+      "message": "fix(cache): cache not effective (GitHub #304, GitHub #305)\n"
+    },
+    {
+      "sha": "40ce5d7aa5c59304f18057c23966c062d8e41047",
+      "date": "2024-06-11T22:52:03+08:00",
+      "author": "huangchengxing",
+      "email": "841396397@qq.com",
+      "message": "refactor(AssembleMp): refactoring components for data filling based on MybatisPlus (GitHub #234)\n"
+    },
+    {
+      "sha": "43c9c7b194596a431dad7ea557f497606c17dcb3",
+      "date": "2024-06-08T17:47:18+08:00",
+      "author": "huangchengxing",
+      "email": "841396397@qq.com",
+      "message": "feat(AssembleDb): Provide @AssembleDB annotation to support populating after querying data through custom SQL (GitHub #40)\n"
+    }
+  ],
+  "commit_sha": "50b06b73df00436d4425d1c2307c8347b135039a",
+  "extracted_at": "2026-10-05T18:12:54.501780+00:00"
+}

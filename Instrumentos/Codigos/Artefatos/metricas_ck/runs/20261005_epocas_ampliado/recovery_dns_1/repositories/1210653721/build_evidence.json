@@ -1,0 +1,36 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "4.1.0",
+  "spring_boot_major": "4",
+  "java_versions_declared": "17",
+  "build_evidence": [
+    {
+      "file": "verification/behavior/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "verification/behavior/pom.xml",
+      "artifact": "${web.starter}"
+    },
+    {
+      "file": "verification/behavior/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "verification/behavior/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "verification/behavior/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "verification/behavior/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "verification/spring-boot-4-mcp/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "3.0.0;3.1.2;3.2.0;3.4.0",
+  "spring_boot_major": "3",
+  "java_versions_declared": "",
+  "build_evidence": [
+    {
+      "file": "example/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "jetty/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "jetty/tests-spring-3.0/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "jetty/tests-spring-3.2/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "tests-common/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "tomcat/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "tomcat/tests-spring-3.0/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "tomcat/tests-spring-3.2/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    }
+  ]
+}

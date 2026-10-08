@@ -1,0 +1,720 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "2.0.0.RELEASE;2.0.1.RELEASE;2.0.2.RELEASE;2.0.3.RELEASE;2.0.4.RELEASE;2.1.1.RELEASE;2.1.2.RELEASE;2.2.3.RELEASE;2.3.2.RELEASE;2.3.3.RELEASE;2.3.4.RELEASE;2.5.6;2.6.6;2.7.1;2.7.4;3.1.1;3.2.2;3.3.1;3.4.4;3.5.3",
+  "spring_boot_major": "multiple",
+  "java_versions_declared": "1.8;11;17;20",
+  "build_evidence": [
+    {
+      "file": "1-spring-boot-HelloWorld/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "1-spring-boot-HelloWorld/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "1-spring-boot-HelloWorld/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "1-spring-boot-HelloWorld/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "1-spring-boot-HelloWorld/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "2-spring-boot-view-JSP-File-1/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "2-spring-boot-view-JSP-File-1/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "2-spring-boot-view-JSP-File-1/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "2-spring-boot-view-JSP-File-1/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "2-spring-boot-view-JSP-File-1/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "3-spring-boot-view-Error-Page/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "3-spring-boot-view-Error-Page/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "3-spring-boot-view-Error-Page/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "3-spring-boot-view-Error-Page/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "3-spring-boot-view-Error-Page/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "4-springboot-(REST_API_QUERY)/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "4-springboot-(REST_API_QUERY)/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "4-springboot-(REST_API_QUERY)/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "4-springboot-(REST_API_QUERY)/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "4-springboot-(REST_API_QUERY)/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "4-springboot-(REST_API_QUERY)/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "5-springboot-with-h2-database(REST_API_QUERY)/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "5-springboot-with-h2-database(REST_API_QUERY)/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "5-springboot-with-h2-database(REST_API_QUERY)/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "5-springboot-with-h2-database(REST_API_QUERY)/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "5-springboot-with-h2-database(REST_API_QUERY)/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "5-springboot-with-h2-database(REST_API_QUERY)/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "5-springboot-with-h2-database(REST_API_QUERY)/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "6-springboot-jpa-with-h2-database (REST_API_QUERY)/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "6-springboot-jpa-with-h2-database (REST_API_QUERY)/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "6-springboot-jpa-with-h2-database (REST_API_QUERY)/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "6-springboot-jpa-with-h2-database (REST_API_QUERY)/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "6-springboot-jpa-with-h2-database (REST_API_QUERY)/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "6-springboot-jpa-with-h2-database (REST_API_QUERY)/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "6-springboot-jpa-with-h2-database (REST_API_QUERY)/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "6-springboot-jpa-with-h2-database (REST_API_QUERY)/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "7-springboot-simple-security-example/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "7-springboot-simple-security-example/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "7-springboot-simple-security-example/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "7-springboot-simple-security-example/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "7-springboot-simple-security-example/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "7-springboot-simple-security-example/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "7-springboot-simple-security-example/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "7-springboot-simple-security-example/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "7-springboot-simple-security-example/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "8-SpringJPA-PostgreSQL-Example/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "8-SpringJPA-PostgreSQL-Example/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "8-SpringJPA-PostgreSQL-Example/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "8-SpringJPA-PostgreSQL-Example/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "8-SpringJPA-PostgreSQL-Example/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "9-springboot-security-with-h2-example/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "9-springboot-security-with-h2-example/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "9-springboot-security-with-h2-example/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "9-springboot-security-with-h2-example/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "9-springboot-security-with-h2-example/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "9-springboot-security-with-h2-example/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "9-springboot-security-with-h2-example/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "9-springboot-security-with-h2-example/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "9-springboot-security-with-h2-example/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "Spring-Boot-10-JPA-PostgreSQL-CRUD-RESTful Services-And-Jsp/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "Spring-Boot-10-JPA-PostgreSQL-CRUD-RESTful Services-And-Jsp/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "Spring-Boot-10-JPA-PostgreSQL-CRUD-RESTful Services-And-Jsp/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "Spring-Boot-10-JPA-PostgreSQL-CRUD-RESTful Services-And-Jsp/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "Spring-Boot-10-JPA-PostgreSQL-CRUD-RESTful Services-And-Jsp/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "Spring-Boot-10-JPA-PostgreSQL-CRUD-RESTful Services-And-Jsp/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "Spring-Boot-11-SpringData-1-JPA-PostgreSQL/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "Spring-Boot-11-SpringData-1-JPA-PostgreSQL/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "Spring-Boot-11-SpringData-1-JPA-PostgreSQL/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "Spring-Boot-11-SpringData-1-JPA-PostgreSQL/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "Spring-Boot-11-SpringData-1-JPA-PostgreSQL/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "Spring-Boot-12-SpringData-2-JPA-PostgreSQL/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "Spring-Boot-12-SpringData-2-JPA-PostgreSQL/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "Spring-Boot-12-SpringData-2-JPA-PostgreSQL/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "Spring-Boot-12-SpringData-2-JPA-PostgreSQL/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "Spring-Boot-12-SpringData-2-JPA-PostgreSQL/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "Spring-Boot-12-SpringData-2-JPA-PostgreSQL/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "Spring-Boot-13-SpringData-3-JPA-Hibernate-PostgreSQL/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "Spring-Boot-13-SpringData-3-JPA-Hibernate-PostgreSQL/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "Spring-Boot-13-SpringData-3-JPA-Hibernate-PostgreSQL/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "Spring-Boot-13-SpringData-3-JPA-Hibernate-PostgreSQL/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "Spring-Boot-13-SpringData-3-JPA-Hibernate-PostgreSQL/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "Spring-Boot-13-SpringData-3-JPA-Hibernate-PostgreSQL/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "Spring-Boot-14-SpringData-4-Thymeleaf-JPA-PostgreSQL/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "Spring-Boot-14-SpringData-4-Thymeleaf-JPA-PostgreSQL/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "Spring-Boot-14-SpringData-4-Thymeleaf-JPA-PostgreSQL/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "Spring-Boot-14-SpringData-4-Thymeleaf-JPA-PostgreSQL/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "Spring-Boot-14-SpringData-4-Thymeleaf-JPA-PostgreSQL/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "Spring-Boot-14-SpringData-4-Thymeleaf-JPA-PostgreSQL/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "Spring-Boot-14-SpringData-4-Thymeleaf-JPA-PostgreSQL/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "Spring-Boot-15-SpringSecurity-(Simple)-JPA-PostgreSQL/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "Spring-Boot-15-SpringSecurity-(Simple)-JPA-PostgreSQL/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "Spring-Boot-15-SpringSecurity-(Simple)-JPA-PostgreSQL/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "Spring-Boot-15-SpringSecurity-(Simple)-JPA-PostgreSQL/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "Spring-Boot-15-SpringSecurity-(Simple)-JPA-PostgreSQL/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "Spring-Boot-15-SpringSecurity-(Simple)-JPA-PostgreSQL/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "Spring-Boot-15-SpringSecurity-(Simple)-JPA-PostgreSQL/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "Spring-Boot-15-SpringSecurity-(Simple)-JPA-PostgreSQL/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "Spring-Boot-16-SpringData-5-Thymeleaf-JPA-PostgreSQL/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "Spring-Boot-16-SpringData-5-Thymeleaf-JPA-PostgreSQL/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "Spring-Boot-16-SpringData-5-Thymeleaf-JPA-PostgreSQL/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "Spring-Boot-16-SpringData-5-Thymeleaf-JPA-PostgreSQL/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "Spring-Boot-16-SpringData-5-Thymeleaf-JPA-PostgreSQL/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "Spring-Boot-16-SpringData-5-Thymeleaf-JPA-PostgreSQL/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "Spring-Boot-16-SpringData-5-Thymeleaf-JPA-PostgreSQL/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "Spring-Boot-17-SpringSecurity-Jpa-PostgreSQL/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "Spring-Boot-17-SpringSecurity-Jpa-PostgreSQL/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "Spring-Boot-17-SpringSecurity-Jpa-PostgreSQL/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "Spring-Boot-17-SpringSecurity-Jpa-PostgreSQL/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "Spring-Boot-17-SpringSecurity-Jpa-PostgreSQL/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "Spring-Boot-17-SpringSecurity-Jpa-PostgreSQL/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "Spring-Boot-17-SpringSecurity-Jpa-PostgreSQL/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "Spring-Boot-17-SpringSecurity-Jpa-PostgreSQL/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "Spring-Boot-18-Mongodb/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "Spring-Boot-18-Mongodb/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb"
+    },
+    {
+      "file": "Spring-Boot-18-Mongodb/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "Spring-Boot-18-Mongodb/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "Spring-Boot-18-Mongodb/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "Spring-Boot-18-Mongodb/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "Spring-Boot-19-RabbitMQ/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "Spring-Boot-19-RabbitMQ/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "Spring-Boot-19-RabbitMQ/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "Spring-Boot-19-RabbitMQ/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "Spring-Boot-20-React-JWT-without-Redux/backend/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "Spring-Boot-20-React-JWT-without-Redux/backend/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "Spring-Boot-20-React-JWT-without-Redux/backend/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "Spring-Boot-20-React-JWT-without-Redux/backend/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "Spring-Boot-20-React-JWT-without-Redux/backend/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "Spring-Boot-20-React-JWT-without-Redux/backend/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "Spring-Boot-20-React-JWT-without-Redux/backend/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "Spring-Boot-20-React-JWT-without-Redux/backend/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "Spring-Boot-21-React-JWT-with-Redux/backend/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "Spring-Boot-21-React-JWT-with-Redux/backend/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "Spring-Boot-21-React-JWT-with-Redux/backend/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "Spring-Boot-21-React-JWT-with-Redux/backend/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "Spring-Boot-21-React-JWT-with-Redux/backend/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "Spring-Boot-21-React-JWT-with-Redux/backend/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "Spring-Boot-21-React-JWT-with-Redux/backend/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "Spring-Boot-21-React-JWT-with-Redux/backend/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "Spring-Boot-21-React-JWT-with-Redux/backend/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "Spring-Boot-22-Role-Based-JWT/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "Spring-Boot-22-Role-Based-JWT/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "Spring-Boot-22-Role-Based-JWT/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "Spring-Boot-22-Role-Based-JWT/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "Spring-Boot-22-Role-Based-JWT/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "Spring-Boot-22-Role-Based-JWT/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "Spring-Boot-22-Role-Based-JWT/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "Spring-Boot-22-Role-Based-JWT/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "Spring-Boot-23-Base-Model-Inheritance/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "Spring-Boot-24-Unit-Test/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "Spring-Boot-24-Unit-Test/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "Spring-Boot-24-Unit-Test/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "Spring-Boot-24-Unit-Test/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "Spring-Boot-25-Elastic-Search/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "Spring-Boot-25-Elastic-Search/pom.xml",
+      "artifact": "spring-boot-starter-data-elasticsearch"
+    },
+    {
+      "file": "Spring-Boot-25-Elastic-Search/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "Spring-Boot-25-Elastic-Search/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "Spring-Boot-25-Elastic-Search/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "Spring-Boot-26-Kafka-Producer-Consuöer-Scheduled/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "Spring-Boot-26-Kafka-Producer-Consuöer-Scheduled/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "Spring-Boot-26-Kafka-Producer-Consuöer-Scheduled/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "Spring-Boot-26-Kafka-Producer-Consuöer-Scheduled/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "Spring-Boot-27-PostgreSQL-Trigger-Java-Listener/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "Spring-Boot-27-PostgreSQL-Trigger-Java-Listener/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "Spring-Boot-27-PostgreSQL-Trigger-Java-Listener/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "Spring-Boot-27-PostgreSQL-Trigger-Java-Listener/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "Spring-Boot-27-PostgreSQL-Trigger-Java-Listener/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "Spring-Boot-28-ReactJS-WebSocket/backend/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "Spring-Boot-28-ReactJS-WebSocket/backend/pom.xml",
+      "artifact": "spring-boot-starter-websocket"
+    },
+    {
+      "file": "Spring-Boot-28-ReactJS-WebSocket/backend/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "Spring-Boot-28-ReactJS-WebSocket/backend/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "Spring-Boot-29-Logging/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "Spring-Boot-29-Logging/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "Spring-Boot-29-Logging/pom.xml",
+      "artifact": "spring-boot-starter-log4j2"
+    },
+    {
+      "file": "Spring-Boot-29-Logging/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "Spring-Boot-29-Logging/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "Spring-Boot-30-BaseRequest-BaseEntity-BaseResponse/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "Spring-Boot-31-WebFlux-Security-MongoDB-RateLimit-Configuration/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "Spring-Boot-32-Security-WebFlux-Logging-RateLimit-MongoDB/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    }
+  ]
+}

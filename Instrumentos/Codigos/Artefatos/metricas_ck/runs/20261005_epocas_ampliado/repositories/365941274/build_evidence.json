@@ -1,0 +1,44 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "3.3.5",
+  "spring_boot_major": "3",
+  "java_versions_declared": "17",
+  "build_evidence": [
+    {
+      "file": "demo-spring-boot-jpa/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "demo-spring-boot-log/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "demo-spring-boot-mybatis/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "demo-spring-boot-sharding-jdbc/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "demo-spring-boot-swagger/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "demo-spring-boot-validation/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "demo-spring-boot-validation/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "demo-spring-boot-validation/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    }
+  ]
+}

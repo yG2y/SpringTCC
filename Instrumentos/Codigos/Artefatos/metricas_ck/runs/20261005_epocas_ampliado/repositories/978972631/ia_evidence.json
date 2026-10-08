@@ -1,0 +1,278 @@
+{
+  "ia_status": "com_evidencia",
+  "ia_level": 2,
+  "ia_agents": "Claude Code",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "7ae1877822a5d15b11bcdba13d40a3c4d9011aa7",
+      "trailer": "Claude Opus 5.5 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "75af2466d4ba80e4ccc4f7032bc6923b22a04241",
+      "trailer": "Claude Opus 5.5 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "8e32932663ce10d852672cc7553b9e540d5d4134",
+      "trailer": "Claude Opus 5.5 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "2e5e103aebc4a7a9e78fb6f58969b26e550fea00",
+      "trailer": "Claude Opus 5.5 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "46a4d973a857ab30b0a2487b57412ea650f40d1c",
+      "trailer": "Claude Opus 5.5 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "567904f2c814eacfd89ceb835243d24bda5872f5",
+      "trailer": "Claude Opus 5 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "fafc3ad37c1bb0ed62815b337e136ef74d8e93bc",
+      "trailer": "Claude Opus 5 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "db0c432e48fed1df01b0748037cc968222760e37",
+      "trailer": "Claude Opus 5 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "92909597cd90263e0964756f378525ca9df84320",
+      "trailer": "Claude Opus 5 <noreply@anthropic.com>"
+    }
+  ],
+  "commits": [
+    {
+      "sha": "f0e3bca5951ad525c74a26c97e6d0f71bca03600",
+      "date": "2026-10-02T18:10:53+05:30",
+      "author": "Hazel Vilina Ratna",
+      "email": "146364852+hazelr125@users.noreply.github.com",
+      "message": "fix: private group access (#374)\n\n* fix: private group access\n\n* fix: resolve authorization feedback, fix member lookup, and expand test coverage\""
+    },
+    {
+      "sha": "f2d1cc7a5cbb4da9c250566abb4229e8f9faaf81",
+      "date": "2026-09-27T13:29:45+02:00",
+      "author": "Deniz Altunkapan",
+      "email": "deniz.altunkapan@outlook.com",
+      "message": "Replace password manager UI with Vaultwarden launcher\n"
+    },
+    {
+      "sha": "94ea2f78d2763d3bbb8accafbea51a4700a64ab5",
+      "date": "2026-09-27T12:07:46+02:00",
+      "author": "Deniz Altunkapan",
+      "email": "deniz.altunkapan@outlook.com",
+      "message": "Report clean agent reviews\n"
+    },
+    {
+      "sha": "dc7f1da35e63e0db26e8cf6ade3e9bdc12baeb40",
+      "date": "2026-09-26T10:21:48+02:00",
+      "author": "Deniz Altunkapan",
+      "email": "deniz.altunkapan@outlook.com",
+      "message": "Improve agentic workflow automation\n"
+    },
+    {
+      "sha": "7ae1877822a5d15b11bcdba13d40a3c4d9011aa7",
+      "date": "2026-09-25T22:26:30+02:00",
+      "author": "Deniz Altunkapan",
+      "email": "deniz.altunkapan@outlook.com",
+      "message": "feat(agents): repair failing CI on agent pull requests automatically\n\nCI repair used to wait for a maintainer to apply the agent-repair label.\nIt now reacts on its own when Backend CI or Frontend CI fails on an\nagent branch, and pushes the fix to that pull request's branch.\n\nThe coding agent names its branches agent/issue-<n>-<slug>, and CI\nrepair only runs for those branches. Before the model is invoked it also\nrequires:\n\n- the branch to live in this repository, not a fork;\n- an open pull request from it labelled agent-managed;\n- that pull request not to have used its final attempt (agent-reentry-2).\n\nIt stops after two attempts and hands over to a maintainer. It never\npushes to main and never merges; merging stays a human step. The branch\nname is used only in the deterministic gates, never interpolated into\nthe prompt; the agent finds the pull request by commit SHA.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\n"
+    },
+    {
+      "sha": "75af2466d4ba80e4ccc4f7032bc6923b22a04241",
+      "date": "2026-09-25T16:05:01+02:00",
+      "author": "Deniz Altunkapan",
+      "email": "deniz.altunkapan@outlook.com",
+      "message": "feat(agents): route issues between contributors and agents\n\nThe audit, triage and coding agents now hand work to each other, while\ncontributors keep first claim on anything they want to do.\n\n- The audit and triage agents write through the vault-web-agents app, so\n  the issues and labels they create raise events other workflows see.\n  GITHUB_TOKEN writes do not, which is why audit issues never reached\n  triage before.\n- Triage decides who an issue is for: \"good first issue\" for\n  contributors, \"help wanted\" for larger work, \"agent-ready\" only for\n  narrow mechanical changes nobody has claimed.\n- The coding agent reacts to \"agent-ready\" from the app, stops if the\n  issue is assigned, linked to a pull request, claimed in a comment or\n  labelled \"good first issue\", and never runs with more than three open\n  agent pull requests.\n- An outside contributor's issue stays unreadable to the coding agent\n  until a maintainer adds \"agent-approved\". Triage cannot set that\n  label, so untrusted text never reaches the agent that writes code\n  without a human decision. Issues from the audit app are trusted.\n\nEvery agent pull request is a draft and is merged by a maintainer. The\nREADME explains the labels for contributors.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\n"
+    },
+    {
+      "sha": "199652761acbf6c9c0d4f999a06a7f31f3dee36d",
+      "date": "2026-09-24T22:08:59+02:00",
+      "author": "Shadi Abedinpour",
+      "email": "114850111+shmoonwalker@users.noreply.github.com",
+      "message": "fix(groups): restrict private group details and members to members (#358)\n\n* test: reproduce private group access leak\n\n* fix(groups): restrict private group details and members to members"
+    },
+    {
+      "sha": "8e32932663ce10d852672cc7553b9e540d5d4134",
+      "date": "2026-09-24T21:53:51+02:00",
+      "author": "Deniz Altunkapan",
+      "email": "deniz.altunkapan@outlook.com",
+      "message": "fix(agents): let review and triage read first-time contributions\n\nBoth agents ran with tools.github.min-integrity: approved. A first-time\ncontributor sits at integrity \"none\", so the integrity filter denied the\nagents the very PRs and issues they exist to handle. On a real external\nPR the reviewer spent its turns working around the denials and was then\ncut off at its 40-credit cap, which the proxy reports as an HTTP 403\n\"authentication failed\".\n\nLower min-integrity to none on both agents. Strict mode then requires an\nexplicit shell allowlist, so replace the implicit allow-all-tools with\nread-only commands. Raise the review cap to 150 credits (450/day) and\ntriage to 80, since a real code review costs more than the trivial diff\nthe old cap was sized on.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\n"
+    },
+    {
+      "sha": "2e5e103aebc4a7a9e78fb6f58969b26e550fea00",
+      "date": "2026-09-24T21:41:45+02:00",
+      "author": "Deniz Altunkapan",
+      "email": "deniz.altunkapan@outlook.com",
+      "message": "fix(agents): review fork PRs via pull_request_target\n\nIn a public repository a pull_request run from a fork receives no\nsecrets, so COPILOT_GITHUB_TOKEN is empty and the review agent failed in\nactivation (\"None of the following secrets are set\"). roles: all let the\nrun start but could not get it past that point.\n\nSwitch the reviewer to pull_request_target, which runs in the base\nrepository context with secrets. Fork code is never checked out: the\nagent checkout is pinned to the PR base SHA and the other checkouts\ndefault to the base branch; the agent reads the diff through the GitHub\nAPI. gh-aw refuses to compile pull_request_target with a normal\ncheckout, and this is the base-only pattern it recommends.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\n"
+    },
+    {
+      "sha": "46a4d973a857ab30b0a2487b57412ea650f40d1c",
+      "date": "2026-09-24T21:36:05+02:00",
+      "author": "Deniz Altunkapan",
+      "email": "deniz.altunkapan@outlook.com",
+      "message": "fix(agents): let outside contributors trigger review and triage\n\ngh-aw only runs a workflow for users with admin, maintainer or write\naccess unless the workflow says otherwise. The review and triage agents\nset forks: [\"*\"] but no roles, so fork PRs passed the fork filter and\nwere then dropped by the role check. Since rollout the reviewer has not\nrun on a single external PR; PR #358 from a first-time contributor was\nskipped with \"permission read does not meet requirements\".\n\nSet roles: all on both agents. Because anyone can now start a run, add\na per-user limit of three runs an hour so one account cannot drain the\ncredit budget. The coding and CI repair agents keep their maintainer\ngate.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\n"
+    },
+    {
+      "sha": "567904f2c814eacfd89ceb835243d24bda5872f5",
+      "date": "2026-09-23T11:26:37+02:00",
+      "author": "Deniz Altunkapan",
+      "email": "deniz.altunkapan@outlook.com",
+      "message": "ci: move frontend to Node 22 and tighten workflow permissions\n\nNode 18 reached end of life in April 2025 and no longer receives\nsecurity updates. Angular 19.2 supports Node 18.19, 20 and 22, so 22 is\nthe newest version this project can take — not 24.\n\nVerified locally on Node 22.23.2: npm ci, npm run build and\nnpm run prettier:check all pass.\n\nAlso declare permissions explicitly. Both CI workflows only read the\nrepository, so contents: read is enough. The Javadoc workflow had\npull-requests: write without opening any pull request — it pushes to\ngh-pages and nothing else — so that is dropped.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>\n"
+    },
+    {
+      "sha": "fafc3ad37c1bb0ed62815b337e136ef74d8e93bc",
+      "date": "2026-09-22T10:49:13+02:00",
+      "author": "Deniz Altunkapan",
+      "email": "deniz.altunkapan@outlook.com",
+      "message": "chore(agents): cut credit spend and drop injection warnings\n\nThe first day of real runs cost about 324 of the 1,500 monthly AI\ncredits across two repositories, and the two repository audits were 83%\nof that. Measured: audit 157 and 112 credits, pull request reviews 9 to\n25.\n\nMove the audit to every 14 days and halve the review cap to 40, which\nstill leaves headroom over what the real reviews consumed. Expected\nspend drops to roughly 350 credits a month instead of 600 to 800.\n\nAlso remove the lines telling the reviewer and the triage agent to treat\ncontributor input as untrusted data. The agents are deliberately left in\ntheir default state here so that trust propagation can be observed\nrather than suppressed. The structural controls are unchanged: the agent\njob is read-only, every mutation goes through a safe output, and branch\nrules still require review before anything merges.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>\n"
+    },
+    {
+      "sha": "db0c432e48fed1df01b0748037cc968222760e37",
+      "date": "2026-09-21T13:37:46+02:00",
+      "author": "Deniz Altunkapan",
+      "email": "deniz.altunkapan@outlook.com",
+      "message": "fix(agents): skip review of generated DIRECTORY.md updates\n\nThe directory workflow opens its pull request with a personal access\ntoken, so the actor is a human account and skip-bots does not catch it.\nA first live run confirmed this: the reviewer started on the generated\nPR, correctly found nothing worth saying, and stayed silent — but the\nrun still cost credits.\n\nIgnore DIRECTORY.md so a pull request that only regenerates it no longer\ntriggers a review.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>\n"
+    },
+    {
+      "sha": "92909597cd90263e0964756f378525ca9df84320",
+      "date": "2026-09-21T12:58:02+02:00",
+      "author": "Deniz Altunkapan",
+      "email": "deniz.altunkapan@outlook.com",
+      "message": "chore: add agentic workflows\n\nAdd five gh-aw agentic workflows covering pull request review, issue\ntriage, a weekly repository audit, an opt-in coding agent and CI repair.\n\nThe agent job itself is read-only in every workflow; all mutations go\nthrough explicitly declared safe outputs, which gh-aw executes in\nseparate permission-scoped jobs.\n\nPull request review opts into fork pull requests, since most\ncontributions here come from forks. It runs alongside the existing\nCopilot Code Review and is scoped to deeper correctness, security and\nregression findings.\n\nThe coding agent and CI repair only run when a maintainer applies a\nlabel, and CI repair additionally requires the pull request to carry\nagent-managed. Its re-entry limit is enforced before the model is\ninvoked, not by the prompt.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>\n"
+    },
+    {
+      "sha": "4eb638c73430e25304d1aa3f67f8985239ca1732",
+      "date": "2026-09-16T14:00:53+05:30",
+      "author": "anubhavSingh",
+      "email": "anubhavas75@gmail.com",
+      "message": "Feature issue#281 (#355)\n\n* Adding media stream url for cross config\n\n* Adding Media Token Service\n\n* Adding Media Token Controller\n\n* Adding frontend for handling mp4 media\n\n* Adding tests for media\n\n* Correcting test files\n\n* Correcting application.properties\n\n* Prettier formatting"
+    },
+    {
+      "sha": "06a3931e554a1d4a455283426eab698e720c531b",
+      "date": "2026-09-13T16:13:27+05:30",
+      "author": "Arnab Nandy",
+      "email": "arnab_nandy7@yahoo.com",
+      "message": "fix: prevent concurrent duplicate poll votes (#348)\n\nSigned-off-by: Arnab Nandy <arnab_nandy7@yahoo.com>"
+    },
+    {
+      "sha": "4e8051a8c7c669c4ac21fe71e22369b283c1e9fa",
+      "date": "2026-09-13T15:51:08+05:30",
+      "author": "Arnab Nandy",
+      "email": "arnab_nandy7@yahoo.com",
+      "message": "fix: batch dashboard private chat summary queries (#347)\n\nSigned-off-by: Arnab Nandy <arnab_nandy7@yahoo.com>"
+    },
+    {
+      "sha": "fd5d059bf7282d9c5261a620bc2d7ef222470752",
+      "date": "2026-09-12T13:39:32+05:30",
+      "author": "anubhavSingh",
+      "email": "anubhavas75@gmail.com",
+      "message": "Feature issue#342 (#346)\n\n* Adding trusted identity via authService.getCurrentUser()\n\n* Adding relevant tests"
+    },
+    {
+      "sha": "acd2ede408b778e3c6d6d5d0743997334d67ecc5",
+      "date": "2026-09-11T23:32:28+05:30",
+      "author": "anubhavSingh",
+      "email": "anubhavas75@gmail.com",
+      "message": "Feature issue#341 (#345)\n\n* Adding participant-check method\n\n* Inject PrivateChatRepository and sendPrivateMessage a Principal param:\n\n* test file\n\n* Resolving compile errors\n\n* Retrieving javaDoc"
+    },
+    {
+      "sha": "84df644915ab2b4f51a8e7990a03c389ce1b9072",
+      "date": "2026-09-08T03:08:47+05:30",
+      "author": "anubhavSingh",
+      "email": "anubhavas75@gmail.com",
+      "message": "Feature issue#155 (#335)\n\n* repository changes for deletion state\n\n* Affected by repository changes\n\n* Deletion logic by clientMessageID\n\n* model and dto changes\n\n* controller for deletion\n\n* controller and ChatMessageDeletedDto for deletion feature\n\n* Changes in repository\n\n* Adding delete function\n\n* Adding Chat Message Deleted Dto\n\n* editing private-chat-dialog.component\n\n* setting up websocket for deletion\n\n* Adding tests\n\n* pointer-coarse:opacity-70 applies unconditionally\n\n* adding chatError dtos\n\n* adding chatError dtos\n\n* editing controller for error subs\n\n* changes for error subs\n\n* Adding tests"
+    },
+    {
+      "sha": "b6962ccab214a238f0e485a4d0d86526e42cee7c",
+      "date": "2026-09-01T14:40:10+05:30",
+      "author": "Hazel Vilina Ratna",
+      "email": "146364852+hazelr125@users.noreply.github.com",
+      "message": "fix(auth): validate stored JWT server-side before allowing protected navigation (#334)"
+    },
+    {
+      "sha": "8df0d703692d5e49adf9306a3b0fd83457885dd8",
+      "date": "2026-09-01T14:37:14+05:30",
+      "author": "anubhavSingh",
+      "email": "anubhavas75@gmail.com",
+      "message": "Feature issue#303 (#331)\n\n* Adding emoji-data.ts to extract emoji data\n\n* Adding emoji-picker component\n\n* Integrating emoji picker with private-chat-dialog.component\n\n* Fixing css of emoji-picker\n\n* Applying npx prettier\n\n* Applying npx prettier\n\n* Adding package-lock.json and package.json\n\n* adjusting the budget\n\n* adding the test files"
+    },
+    {
+      "sha": "6d5d0f6824fd8470601515ae9b1d061344719795",
+      "date": "2026-08-29T17:25:19+05:30",
+      "author": "Prashant Maurya",
+      "email": "prashantpiyush1111@gmail.com",
+      "message": "feat(chat): add rich-text Markdown support (#329)\n\n* feat(chat): add safe markdown renderer for messages\n\n* feat(chat): enable markdown renderer in chat\n\n* test(chat): cover markdown rendering and sanitization\n\n* fix(chat): format Markdown renderer with Prettier\n\n* fix(chat): make Markdown parsing synchronous\n\n* fix(chat): make Markdown formatter synchronous\n\n* fix(chat): remove markdown side-effect import\n\n* fix(chat): wire Markdown formatter directly into component\n\n* test(chat): cover Markdown formatter wiring and cache\n\n* test(chat): simplify Markdown formatter test setup\n\n* fix(chat): preserve safe link behavior in Markdown"
+    },
+    {
+      "sha": "aa5242ae659177b5f17f38e11fd79d7d5de20b30",
+      "date": "2026-08-29T14:12:04+05:30",
+      "author": "Prashant Maurya",
+      "email": "prashantpiyush1111@gmail.com",
+      "message": "fix: auto-lock vault after idle timeout (#328)"
+    },
+    {
+      "sha": "6437dc114c9fc9801740e8aa78343e49f68f720d",
+      "date": "2026-08-28T23:24:26+05:30",
+      "author": "anubhavSingh",
+      "email": "anubhavas75@gmail.com",
+      "message": "Feature issue#292 (#325)\n\n* Password-generator html,css and ts\n\n* Password-manager component changes\n\n* Deleting separate passowrd-generator files\n\n* Adding password-generator methods to ts file\n\n* Adding HTML and CSS for password-generator\n\n* Adding HTML and CSS for password-generator\n\n* Adding HTML and CSS for password-generator"
+    },
+    {
+      "sha": "d1c6bbfe4c94f5455fd7c764fe84fbabc745f59e",
+      "date": "2026-08-25T21:23:46+05:30",
+      "author": "anubhavSingh",
+      "email": "anubhavas75@gmail.com",
+      "message": "Feature issue#111 (#324)\n\n* Adding Never label\n\n* Adding LastAccessedAt to response, creating never expiry link and adding delete feature\n\n* Adding LastAccessedAt and expiresAt to have null\n\n* html and css changes"
+    },
+    {
+      "sha": "afa9038a445d934415496ea45401c1845c401243",
+      "date": "2026-08-21T13:56:30+05:30",
+      "author": "Hazel Vilina Ratna",
+      "email": "146364852+hazelr125@users.noreply.github.com",
+      "message": "fix(cloud): apply ::ng-deep to markdown preview styles (#299) (#321)"
+    },
+    {
+      "sha": "63fef9b83024c3e384df80a8c8fd5436ef45129e",
+      "date": "2026-08-21T13:55:26+05:30",
+      "author": "Hazel Vilina Ratna",
+      "email": "146364852+hazelr125@users.noreply.github.com",
+      "message": "fix(frontend): add scroll area to security activity timeline (#319)"
+    },
+    {
+      "sha": "f4a3d1eb824c58915fc2149795e42a831d915f59",
+      "date": "2026-08-21T13:54:10+05:30",
+      "author": "anubhavSingh",
+      "email": "anubhavas75@gmail.com",
+      "message": "Fix editor reloading folder while typing (#300) (#320)\n\n* Fixing autoSave glitch\n\n* Test cases for autoSave glitch fix"
+    },
+    {
+      "sha": "645d3733bfed2931e953e22564297f61ae8efe8f",
+      "date": "2026-08-19T13:27:39+05:30",
+      "author": "anubhavSingh",
+      "email": "anubhavas75@gmail.com",
+      "message": "Fix duplicate message shown to sender in group and private chats (#298) (#318)\n\n* Fixing Backend\n\n* Fixing Frontend\n\n* Adding test cases\n\n* style: fix prettier formatting"
+    }
+  ],
+  "commit_sha": "f0e3bca5951ad525c74a26c97e6d0f71bca03600",
+  "extracted_at": "2026-10-05T18:31:15.870402+00:00"
+}

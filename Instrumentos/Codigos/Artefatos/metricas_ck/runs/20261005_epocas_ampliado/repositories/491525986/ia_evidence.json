@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "7ad74a21e062781262d3499d6251eebf185ef1ea",
+      "date": "2026-05-04T20:08:29+08:00",
+      "author": "mxsm",
+      "email": "mxsm@apache.org",
+      "message": "[ISSUE #14] Clock-backward wait, admin RBAC, segment backpressure, constructor injection\n"
+    },
+    {
+      "sha": "e8a65012353ae7ecf9659c551b12d113ec5a6787",
+      "date": "2026-05-04T19:37:34+08:00",
+      "author": "mxsm",
+      "email": "mxsm@apache.org",
+      "message": "[ISSUE #12] Production hardening: observability, security, async prefetch, Flyway, Kubernetes\n"
+    },
+    {
+      "sha": "01a2152eed11391b59aa67653dbea6f8130a9963",
+      "date": "2026-05-04T18:45:10+08:00",
+      "author": "mxsm",
+      "email": "mxsm@apache.org",
+      "message": "[ISSUE #10] Upgrade Java 11->25, Spring Boot 2.6.7->4.0.6 and all related dependencies\n"
+    },
+    {
+      "sha": "3f16dbd28a31845888b605a55a9fa747e1ac3ebc",
+      "date": "2026-05-04T18:31:57+08:00",
+      "author": "mxsm",
+      "email": "mxsm@apache.org",
+      "message": "[ISSUE #8] Fix machine ID validation logic and remove hardcoded test description\n"
+    },
+    {
+      "sha": "f4121740e542c8c86921a7d8ea7374ff83c921b6",
+      "date": "2022-11-03T19:25:21+08:00",
+      "author": "antcarryele",
+      "email": "ljbmxsm@163.com",
+      "message": "Merge pull request #5 from mxsm/rain-4\n\n[ISSUE #4]Add english document"
+    },
+    {
+      "sha": "1ad9cb0ccd55b58d1a03b246826097b1472345a1",
+      "date": "2022-11-03T19:20:55+08:00",
+      "author": "mxsm",
+      "email": "ljbmxsm@gmail.com",
+      "message": "[ISSUE #4]Add english document\n"
+    },
+    {
+      "sha": "7cbc89fc5e118e82f305e6c482497bbe05a5419d",
+      "date": "2022-06-04T15:25:12+08:00",
+      "author": "mxsm",
+      "email": "ljbmxsm@gmail.com",
+      "message": "[mxsm-rain-version]chanage version to 1.0.1\n"
+    },
+    {
+      "sha": "90db231b3d15df30d3cace2dc88ceab2fd0b8ffa",
+      "date": "2022-06-04T15:23:01+08:00",
+      "author": "mxsm",
+      "email": "ljbmxsm@gmail.com",
+      "message": "[mxsm-rain-modify] upload image\n"
+    },
+    {
+      "sha": "b5358e3193bded80a36c2af67bf1a31f98dff760",
+      "date": "2022-06-04T15:12:58+08:00",
+      "author": "mxsm",
+      "email": "ljbmxsm@gmail.com",
+      "message": "[rain-mxsm-modify] modify documents\n"
+    },
+    {
+      "sha": "ad0028c8ef7b806894fdbd37b50c73783c5483b2",
+      "date": "2022-05-28T22:54:49+08:00",
+      "author": "mxsm",
+      "email": "ljbmxsm@gmail.com",
+      "message": "[mxsm-rain-optimize] optimize code structure\n"
+    },
+    {
+      "sha": "da40010a186d0eda48434344a4c0ec92c5f022e6",
+      "date": "2022-05-21T14:18:50+08:00",
+      "author": "mxsm",
+      "email": "ljbmxsm@gmail.com",
+      "message": "[mxsm-rain-jmh] add benchmark test for client\n"
+    },
+    {
+      "sha": "285d1656b6e20115a3499823bb4fee025c0d0bf0",
+      "date": "2022-05-21T11:04:27+08:00",
+      "author": "mxsm",
+      "email": "ljbmxsm@gmail.com",
+      "message": "[mxsm-rain-fixed] fixed NullPointerException bug when currentSegment is null\n"
+    },
+    {
+      "sha": "1440f00b9dab052c61362003e60447c3d95a89b2",
+      "date": "2022-05-21T10:45:29+08:00",
+      "author": "mxsm",
+      "email": "ljbmxsm@gmail.com",
+      "message": "[mxsm-rain-maven] remove junit4 dependences, add junit5 dependences\n"
+    },
+    {
+      "sha": "6a02a9584453d392a1779d1802bf464b2ed7ea56",
+      "date": "2022-05-21T10:42:35+08:00",
+      "author": "mxsm",
+      "email": "ljbmxsm@gmail.com",
+      "message": "[mxsm-rain-fixbug] fixed http request no parameters\n"
+    },
+    {
+      "sha": "55cbbd0089125a950559dc684225e5270c49aea8",
+      "date": "2022-05-20T21:56:53+08:00",
+      "author": "mxsm",
+      "email": "ljbmxsm@gmail.com",
+      "message": "[mxsm-rain-shell] add start ran server shell script\n"
+    },
+    {
+      "sha": "5a54194704d0f8fac4423f82221d56c3ee3211fe",
+      "date": "2022-05-15T22:14:29+08:00",
+      "author": "mxsm",
+      "email": "ljbmxsm@gmail.com",
+      "message": "[mxsm-rain-maven] add maven-assembly-plugin to package jar\n"
+    },
+    {
+      "sha": "37cd926540e48e73bd2d843b074c668a08023a7f",
+      "date": "2022-05-15T16:54:11+08:00",
+      "author": "mxsm",
+      "email": "ljbmxsm@gmail.com",
+      "message": "[mxsm-rain-maven] add maven-shade-plugin version 3.2.1\n"
+    },
+    {
+      "sha": "7481c2e055060e2f3c7cbb2d42a5d01a10dd96cb",
+      "date": "2022-05-15T16:41:47+08:00",
+      "author": "mxsm",
+      "email": "ljbmxsm@gmail.com",
+      "message": "Update maven-publish.yml"
+    },
+    {
+      "sha": "38efe1f8a672875f865038b8a68ff1c4d1703efc",
+      "date": "2022-05-15T16:32:11+08:00",
+      "author": "mxsm",
+      "email": "ljbmxsm@gmail.com",
+      "message": "Merge branch 'develop' of https://github.com/mxsm/rain into develop\n"
+    },
+    {
+      "sha": "5bd6eb8bf4fe8c288c595ac7f65dab6c04c08893",
+      "date": "2022-05-15T16:32:05+08:00",
+      "author": "mxsm",
+      "email": "ljbmxsm@gmail.com",
+      "message": "[mxsm-rain-maven] maven deploy config\n"
+    },
+    {
+      "sha": "ad562acc3ce62103605af65f0efd07b03dc5d22e",
+      "date": "2022-05-15T16:31:06+08:00",
+      "author": "mxsm",
+      "email": "ljbmxsm@gmail.com",
+      "message": "Update maven-publish.yml"
+    },
+    {
+      "sha": "63debd77fec4c715cb49956d6562530cc28ad650",
+      "date": "2022-05-15T15:49:52+08:00",
+      "author": "mxsm",
+      "email": "ljbmxsm@gmail.com",
+      "message": "[mxsm-rain-version]  Updated to official version 1.0.0\n"
+    },
+    {
+      "sha": "6d8a80aef8a6d7c42a0f326f77e1328789c29483",
+      "date": "2022-05-15T15:47:54+08:00",
+      "author": "mxsm",
+      "email": "ljbmxsm@gmail.com",
+      "message": "[mxsm-rain-maven] add plugin flatten-maven-plugin\n"
+    },
+    {
+      "sha": "e46d10d94ff9eccbc39b397187fd67f9c5696ff8",
+      "date": "2022-05-15T15:46:36+08:00",
+      "author": "mxsm",
+      "email": "ljbmxsm@gmail.com",
+      "message": "[mxsm-rain-optimize] add Comments\n"
+    },
+    {
+      "sha": "0c69d983d30fb34c365eead3a6e67fa647de78a6",
+      "date": "2022-05-14T22:48:50+08:00",
+      "author": "mxsm",
+      "email": "ljbmxsm@gmail.com",
+      "message": "Update maven-publish.yml"
+    },
+    {
+      "sha": "2b819b2303bcf3e977f06a4d80d915d4469bcb96",
+      "date": "2022-05-14T22:30:01+08:00",
+      "author": "mxsm",
+      "email": "ljbmxsm@gmail.com",
+      "message": "[mxsm-rain-develop]develop SnowflakeClientLocalBenchmark\n"
+    },
+    {
+      "sha": "f77a8e278fbeb2afefa4b9ef4714a6cdd5492b61",
+      "date": "2022-05-14T21:48:08+08:00",
+      "author": "mxsm",
+      "email": "ljbmxsm@gmail.com",
+      "message": "[mxsm-rain-maven] change compiler version 11\n"
+    },
+    {
+      "sha": "5ac9d528a3c6e5756ba0ce8af795b229c92af84a",
+      "date": "2022-05-14T21:14:39+08:00",
+      "author": "mxsm",
+      "email": "ljbmxsm@gmail.com",
+      "message": "[mxsm-rain-docs] add markdown about rain id generator\n"
+    },
+    {
+      "sha": "f4e430eb19e627c48d3c8f13c3be61c99366f8db",
+      "date": "2022-05-14T16:34:19+08:00",
+      "author": "mxsm",
+      "email": "ljbmxsm@gmail.com",
+      "message": "[mxsm-rain-fixed]modify groupId\n"
+    },
+    {
+      "sha": "8e5ed5a3f1e5f21aa209645f486dad069ce13f6f",
+      "date": "2022-05-14T15:58:24+08:00",
+      "author": "mxsm",
+      "email": "ljbmxsm@gmail.com",
+      "message": "Merge branch 'main' of https://github.com/mxsm/rain\n"
+    }
+  ],
+  "commit_sha": "7ad74a21e062781262d3499d6251eebf185ef1ea",
+  "extracted_at": "2026-10-05T18:40:45.895026+00:00"
+}

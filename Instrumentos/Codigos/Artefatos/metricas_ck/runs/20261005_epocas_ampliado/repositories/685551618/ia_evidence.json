@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "a06b5d6af2f6e2b145d524a85c71b43539e20538",
+      "date": "2026-08-04T14:19:21+05:00",
+      "author": "Areeb Gillani",
+      "email": "areebthecomsian@gmail.com",
+      "message": "- readme update\n"
+    },
+    {
+      "sha": "abe08b463d972ddf51323a8dbd3febcffd1b6b02",
+      "date": "2026-08-04T14:03:46+05:00",
+      "author": "Areeb Gillani",
+      "email": "areebthecomsian@gmail.com",
+      "message": "- foojay removed\n"
+    },
+    {
+      "sha": "d133bc8c58819df17e01cf2b304e72f505869a85",
+      "date": "2026-08-04T13:56:09+05:00",
+      "author": "Areeb Gillani",
+      "email": "areebthecomsian@gmail.com",
+      "message": "Upgrade to Vert.x 5.1.5 and JDK 25\n- vertxVersion 4.5.8 -> 5.1.5, JDK toolchain 17 -> 25, Gradle wrapper 8.3 -> 9.5.1\n- io.vertx.core.impl.logging -> io.vertx.core.internal.logging (removed from\n  vertx-core in V5, moved to separate vertx-core-logging artifact) - fixed in\n  Booster, BoostApplication, HttpServerVerticle, AbstractController,\n  AbstractService, BoosterEventBusUtils, CustomCodec, VertxClusterUtils\n- io.vertx.core.Launcher moved out of vertx-core into vertx-launcher-legacy-cli\n  - added as a dependency, no code change needed (same package/class name)\n- HttpServerVerticle: SSLOptions -> ServerSSLOptions for updateSSLOptions()\n- VertxClusterUtils: VertxOptions.setClusterManager() removed in V5 - switched\n  to Vertx.builder().withClusterManager(...).buildClustered()\n- HttpRequest: removed getResponseHandler() (Handler<AsyncResult<Message<T>>>\n  callback overloads of EventBus.request/send are gone in V5) - replaced with\n  reply(Future<Message<Object>>), same intent via the Future-only API\n- README: updated the 4 examples using the old callback-style EventBus calls,\n  bumped dependency version snippets to 2.0.0\n- settings.gradle.kts: added foojay-resolver-convention for JDK 25 toolchain\n  auto-provisioning\n- jitpack.yml: JDK 17 -> 25\nVersion: 1.1.1 -> 2.0.0\n"
+    },
+    {
+      "sha": "95a87e2af93747e62e2b9ab7bd811776c64646a0",
+      "date": "2026-03-25T21:22:39+05:00",
+      "author": "Areeb Gillani",
+      "email": "areebthecomsian@gmail.com",
+      "message": "- Performance matrix added\n"
+    },
+    {
+      "sha": "b1582a19e359c6340d65b418554bbd21a04316e7",
+      "date": "2026-03-04T13:58:40+05:00",
+      "author": "Awais Ayub",
+      "email": "muhammadawaisayub@gmail.com",
+      "message": "- Codecs registration implemented.\n"
+    },
+    {
+      "sha": "a6f56c8e61f31a92467315b0381c26a6a61fab3c",
+      "date": "2026-01-23T20:42:10+05:00",
+      "author": "Awais Ayub",
+      "email": "muhammadawaisayub@gmail.com",
+      "message": "- Version updated to 1.1.1 for jitpack build.\n"
+    },
+    {
+      "sha": "ebcdfc933b85ba5aeaba55d61125815eb5f60f67",
+      "date": "2026-01-23T20:24:06+05:00",
+      "author": "Areeb Gillani",
+      "email": "areebthecomsian@gmail.com",
+      "message": "- Bug fixed: 204 should not be sent when controller's return type is void. Controller should return within its body\n"
+    },
+    {
+      "sha": "8120059ad7030168e40862b216d60418fe9b6a11",
+      "date": "2026-01-23T14:44:15+05:00",
+      "author": "Areeb Gillani",
+      "email": "areebthecomsian@gmail.com",
+      "message": "Documentation enhancements:\n- Highlevel Architecture\n- Request Flow\n- Threading Model\n- Responsibility Table\n- Design Philosphy\n"
+    },
+    {
+      "sha": "cff4fd7dfd8f51b7a634fa6018a98dabde19ac33",
+      "date": "2026-01-23T13:01:07+05:00",
+      "author": "Areeb Gillani",
+      "email": "areebthecomsian@gmail.com",
+      "message": "fix: resolve multiple Boost framework issues\n- Fix Vertx instance mismatch: use localVertx for service/HTTP deployments\n- Fix method overload collision: include parameter types in cache key\n- Fix @Autowired inheritance: traverse class hierarchy for field injection\n- Fix codec registration: use concrete types instead of interfaces\n- Remove unnecessary vertx field reassignment in HttpServerVerticle\n"
+    },
+    {
+      "sha": "ad4965d73c33da6deaabfb1be5ec56a6de4bcff2",
+      "date": "2026-01-23T12:46:04+05:00",
+      "author": "Areeb Gillani",
+      "email": "areebthecomsian@gmail.com",
+      "message": "Fixed Issues:\n- Unsafe Verticle cast - No validation before casting\n- GET parameter handling - ArrayIndexOutOfBoundsException\n- No exception handling in routes - Crashes event loop\n- NullPointerException - Missing ServiceUnits config\n- Wrong cache key - methodBluePrint uses wrong class name\n- Missing HTTP verbs - No PUT, DELETE, PATCH\n- Hardcoded content-type - Should be application/json\n- Clustered mode error handling - Ignores failures\n"
+    },
+    {
+      "sha": "5da592c585e0e6b85792b08b280377ba7e3ffb5c",
+      "date": "2026-01-03T23:41:46+05:00",
+      "author": "Awais Ayub",
+      "email": "muhammadawaisayub@gmail.com",
+      "message": "- Configurations override via command line and environment variables implemented.\n"
+    },
+    {
+      "sha": "88107d557d34ad725b8848df7a397fb420efb94e",
+      "date": "2025-01-12T16:32:07+05:00",
+      "author": "mawaisayub",
+      "email": "muhammadawaisayub@gmail.com",
+      "message": "- Default value of repository annotation changed to \"Primary\"."
+    },
+    {
+      "sha": "85a6ed9dd134a15ff876194fe3b3ceec2008a301",
+      "date": "2024-12-26T21:36:58+05:00",
+      "author": "M. Areeb Gillani",
+      "email": "areebthecomsian@gmail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "1c423eaaebaf22d1caed9e21eeaf5363244ea238",
+      "date": "2024-12-26T02:54:47+05:00",
+      "author": "M. Areeb Gillani",
+      "email": "areebthecomsian@gmail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "1d7974b1f1cedd3d230409e57a0ee2362f0eaa52",
+      "date": "2024-12-26T02:38:23+05:00",
+      "author": "M. Areeb Gillani",
+      "email": "areebthecomsian@gmail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "756202ccd87cc8047b9e579c37c5d16654111859",
+      "date": "2024-12-26T02:34:33+05:00",
+      "author": "Areeb Gillani",
+      "email": "areebthecomsian@gmail.com",
+      "message": "- Threading model support added\n- Worker naming convention changed to service units after the new threading model support\n"
+    },
+    {
+      "sha": "70f84d67419a20ca84a52915fcbd9aff476e5d46",
+      "date": "2024-12-26T02:21:27+05:00",
+      "author": "Areeb Gillani",
+      "email": "areebthecomsian@gmail.com",
+      "message": "- Threading model support added on service level\n- Redundant code removal\n"
+    },
+    {
+      "sha": "5f888246e91e4ee6fa94c4698bb5abbe0a930b0e",
+      "date": "2024-09-29T00:44:07+05:00",
+      "author": "Awais Ayub",
+      "email": "muhammadawaisayub@gmail.com",
+      "message": "Merge branch 'main' of https://github.com/Areeb-Gillani/vertx-boost\n"
+    },
+    {
+      "sha": "b13d83babdcc38fc96f6050b3518376661850820",
+      "date": "2024-09-29T00:44:03+05:00",
+      "author": "Awais Ayub",
+      "email": "muhammadawaisayub@gmail.com",
+      "message": "- Cors Enabled.\n"
+    },
+    {
+      "sha": "dcad04734f9c005d4ad5666d6c0318044aaa8483",
+      "date": "2024-09-28T06:44:07+05:00",
+      "author": "M. Areeb Gillani",
+      "email": "areebthecomsian@gmail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "096ca2722f59406cf7e387a3a5d5be9aaa22b5f7",
+      "date": "2024-09-28T03:20:24+05:00",
+      "author": "Awais Ayub",
+      "email": "muhammadawaisayub@gmail.com",
+      "message": "- Router configuration fixed.\n"
+    },
+    {
+      "sha": "628a88612207058808f6b00500e5befe9ad43f12",
+      "date": "2024-09-28T01:11:10+05:00",
+      "author": "Awais Ayub",
+      "email": "muhammadawaisayub@gmail.com",
+      "message": "- Event Bus fixes.\n- Server sharing logging fixes.\n"
+    },
+    {
+      "sha": "4cc8f17bdcabe926949daf9116cca31a617498a7",
+      "date": "2024-09-26T08:48:55+05:00",
+      "author": "Awais Ayub",
+      "email": "muhammadawaisayub@gmail.com",
+      "message": "- Minimum Http servers changed to 1.\n"
+    },
+    {
+      "sha": "a3b18f1b3a1e76a78204f76892747e686f3b9bee",
+      "date": "2024-09-15T04:40:22+05:00",
+      "author": "M. Areeb Gillani",
+      "email": "areebthecomsian@gmail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "cb46cd1b796a3faa9e7c58e2040643a4babb2cd5",
+      "date": "2024-09-14T22:10:37+05:00",
+      "author": "M. Areeb Gillani",
+      "email": "areebthecomsian@gmail.com",
+      "message": "Update build.gradle.kts"
+    },
+    {
+      "sha": "c3e1a5af75577c65c1b5b1ea84d8571c68673ffa",
+      "date": "2024-09-14T22:03:05+05:00",
+      "author": "Areeb Gillani",
+      "email": "areebthecomsian@gmail.com",
+      "message": "- HTTP server sharing feature added\n- Fast HTTP connection enabled\n"
+    },
+    {
+      "sha": "1e8e69234a71c0cbe6f1b76c9cc08878f7917d6f",
+      "date": "2024-09-13T08:42:47+05:00",
+      "author": "Areeb Gillani",
+      "email": "areebthecomsian@gmail.com",
+      "message": "- router exposed for native implementation\n- httpserver fast open, ack, noDelay option configured by default\n"
+    },
+    {
+      "sha": "c44875cf746d7304a3fd1f2f227fdb55f014bfd5",
+      "date": "2024-09-08T02:46:40+05:00",
+      "author": "M. Areeb Gillani",
+      "email": "areebthecomsian@gmail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "82cab94886b4a62bfed3d02b587af709017db650",
+      "date": "2024-09-08T00:18:42+05:00",
+      "author": "M. Areeb Gillani",
+      "email": "areebthecomsian@gmail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "fe80e7eda9de76e07312614b0c489845b3bbbcec",
+      "date": "2024-09-08T00:11:10+05:00",
+      "author": "Areeb Gillani",
+      "email": "areebthecomsian@gmail.com",
+      "message": "- Vertx version upgrade from 4.4.5 to 4.5.8 because of the following dependency's vulnerabilities\n- CVE-2024-1300\n- CVE-2024-1023\n- CVE-2023-6378\n- CVE-2023-45860\n- CVE-2023-45859\n- CVE-2023-33265\n- CVE-2023-33264\n"
+    }
+  ],
+  "commit_sha": "a06b5d6af2f6e2b145d524a85c71b43539e20538",
+  "extracted_at": "2026-10-05T18:36:50.779566+00:00"
+}

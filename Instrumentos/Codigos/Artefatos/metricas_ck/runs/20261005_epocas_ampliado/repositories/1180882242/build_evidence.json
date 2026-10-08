@@ -1,0 +1,440 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "3.1.5;3.3.5",
+  "spring_boot_major": "3",
+  "java_versions_declared": "21",
+  "build_evidence": [
+    {
+      "file": "erp-ai-assistant-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "erp-ai-assistant-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "erp-ai-assistant-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "erp-ai-assistant-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "erp-ai-assistant-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "erp-ai-assistant-service/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "erp-ai-assistant-service/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "erp-ai-assistant-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "erp-analytics-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "erp-analytics-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "erp-analytics-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "erp-analytics-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "erp-anomaly-detection-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "erp-anomaly-detection-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "erp-anomaly-detection-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "erp-anomaly-detection-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "erp-anomaly-detection-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "erp-assembly/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "erp-common/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "erp-common/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "erp-common/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "erp-common/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "erp-customer-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "erp-customer-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "erp-customer-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "erp-finance-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "erp-finance-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "erp-finance-service/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "erp-finance-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "erp-gateway/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "erp-gateway/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "erp-inventory-alert-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "erp-inventory-alert-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "erp-inventory-alert-service/pom.xml",
+      "artifact": "spring-boot-starter-mail"
+    },
+    {
+      "file": "erp-inventory-alert-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "erp-inventory-prediction-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "erp-inventory-prediction-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "erp-inventory-prediction-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "erp-inventory-prediction-service/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "erp-inventory-prediction-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "erp-inventory-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "erp-inventory-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "erp-inventory-service/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "erp-inventory-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "erp-order-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "erp-order-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "erp-order-service/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "erp-order-service/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "erp-order-service/pom.xml",
+      "artifact": "spring-boot-starter-data-elasticsearch"
+    },
+    {
+      "file": "erp-order-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "erp-order-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "erp-order-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "erp-platform-api/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "erp-platform-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "erp-platform-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "erp-platform-service/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "erp-platform-service/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "erp-platform-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "erp-platform-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "erp-platform-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "erp-pricing-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "erp-pricing-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "erp-pricing-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "erp-pricing-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "erp-product-description-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "erp-product-description-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "erp-product-description-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "erp-product-description-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "erp-product-description-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "erp-product-description-service/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "erp-product-description-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "erp-product-recommendation-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "erp-product-recommendation-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "erp-product-recommendation-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "erp-product-recommendation-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "erp-product-recommendation-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "erp-product-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "erp-product-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "erp-product-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "erp-purchase-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "erp-reporting-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "erp-social-commerce-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "erp-social-commerce-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "erp-social-commerce-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "erp-social-commerce-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "erp-social-commerce-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "erp-supplier-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "erp-supplier-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "erp-supplier-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "erp-tenant-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "erp-tenant-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "erp-tenant-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "erp-tenant-service/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "erp-tenant-service/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "erp-tenant-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "erp-tenant-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "erp-user-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "erp-user-service/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "erp-user-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "erp-user-service/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "erp-user-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "erp-warehouse-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "erp-warehouse-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "erp-warehouse-service/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "erp-warehouse-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

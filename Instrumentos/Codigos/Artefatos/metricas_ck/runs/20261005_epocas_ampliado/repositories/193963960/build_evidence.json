@@ -1,0 +1,28 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "3.0.11",
+  "spring_boot_major": "3",
+  "java_versions_declared": "",
+  "build_evidence": [
+    {
+      "file": "step1-hello-spring-boot/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "step2-hello-root/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "step3-hello-rootless/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "step4-hello-rootless-jib/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "step5-hello-paketo/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    }
+  ]
+}

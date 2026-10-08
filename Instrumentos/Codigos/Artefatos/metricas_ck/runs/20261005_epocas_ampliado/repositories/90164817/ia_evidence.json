@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "b0ffcdd1194050dedc9c3bdab92d768555a721c8",
+      "date": "2023-10-31T14:36:57-07:00",
+      "author": "John Blum",
+      "email": "jblum@vmware.com",
+      "message": "Remove explicit, test runtime-only dependency on org.springframework.boot:spring-boot-starter-jetty from the spring-geode-autoconfigure module.\n"
+    },
+    {
+      "sha": "51e735b6545eb1b654f8f5f724de202dc01ed3c5",
+      "date": "2023-10-31T14:19:28-07:00",
+      "author": "John Blum",
+      "email": "jblum@vmware.com",
+      "message": "Add (disabled, by default) dependency management for Apache Tomcat overridding Spring Boot's declared Apache Tomcat version for testing purposes.\n"
+    },
+    {
+      "sha": "ba00e3150c95dc540c19013f21ea24685123ee18",
+      "date": "2023-10-31T14:18:28-07:00",
+      "author": "John Blum",
+      "email": "jblum@vmware.com",
+      "message": "Declare 'tomcatVersion' property in gradle.properties.\n"
+    },
+    {
+      "sha": "7c620894e82fe83192752651e43482736db92d7b",
+      "date": "2023-10-31T09:58:18-07:00",
+      "author": "John Blum",
+      "email": "jblum@vmware.com",
+      "message": "Upgrade to Testcontainers 1.19.1.\n"
+    },
+    {
+      "sha": "1fd2ed49bb92a9255f7404023694bb2d0d441ac3",
+      "date": "2023-10-31T09:57:20-07:00",
+      "author": "John Blum",
+      "email": "jblum@vmware.com",
+      "message": "Upgrade to Spring Session BOM 3.0.4.\n"
+    },
+    {
+      "sha": "7f45c02ebb5409fc57376042905b29e9b213239e",
+      "date": "2023-10-31T09:52:12-07:00",
+      "author": "John Blum",
+      "email": "jblum@vmware.com",
+      "message": "Upgrade to Spring Data BOM 2022.0.11.\n"
+    },
+    {
+      "sha": "ec970d64d742ca73b3a6d1ff9ea171cf3fbcde5f",
+      "date": "2023-10-31T09:49:44-07:00",
+      "author": "John Blum",
+      "email": "jblum@vmware.com",
+      "message": "Set Srping Boot version to 3.0.13-SNAPSHOT.\n"
+    },
+    {
+      "sha": "3629de1f20c8f3b7737c724c50b37327fecfed48",
+      "date": "2023-10-31T09:48:48-07:00",
+      "author": "John Blum",
+      "email": "jblum@vmware.com",
+      "message": "Upgrade to Spring Framework 6.0.13.\n"
+    },
+    {
+      "sha": "fdc5e94f5dfd001bb5fa8c34c5a017dc6320f8ce",
+      "date": "2023-10-31T09:48:15-07:00",
+      "author": "John Blum",
+      "email": "jblum@vmware.com",
+      "message": "Upgrade to VMware GemFire 9.15.9.\n"
+    },
+    {
+      "sha": "84d3d6f52c815be1002a4cdba55583837af2341d",
+      "date": "2023-10-31T09:47:32-07:00",
+      "author": "John Blum",
+      "email": "jblum@vmware.com",
+      "message": "Upgrade to VMware GemFire for TAS (Pivotal Cloud Cache) 1.14.9.\n"
+    },
+    {
+      "sha": "7a8ea1a0ccea8a56c0bf13f4f07849be0607f6a1",
+      "date": "2023-09-07T11:02:06-07:00",
+      "author": "John Blum",
+      "email": "jblum@vmware.com",
+      "message": "Edit Jenkins CI pipeline properties and upgrade to JDK 17.0.8.\n"
+    },
+    {
+      "sha": "22362c6be737d6364fa1cfec3bde47b48ddbd16e",
+      "date": "2023-06-02T21:09:35-07:00",
+      "author": "John Blum",
+      "email": "jblum@vmware.com",
+      "message": "Use logic from Spring Boot AsciidoctorConventions.\n"
+    },
+    {
+      "sha": "bdab127deda007ff62a6f642caf6ed34a9d02486",
+      "date": "2023-06-01T16:51:30-07:00",
+      "author": "John Blum",
+      "email": "jblum@vmware.com",
+      "message": "Change 'master' branch ref to 'main'.\n"
+    },
+    {
+      "sha": "494979f08c24e42f733714d445ee9c38cc4df03d",
+      "date": "2023-06-01T16:44:15-07:00",
+      "author": "John Blum",
+      "email": "jblum@vmware.com",
+      "message": "Add JVM fork options to Asciidoctor Convention Plugin.\n"
+    },
+    {
+      "sha": "9b648ad528db2bd0bf324a1783de4f9dde313b4a",
+      "date": "2023-06-01T15:19:27-07:00",
+      "author": "John Blum",
+      "email": "jblum@vmware.com",
+      "message": "Upgrade to io.spring.asciidoctor:spring-asciidoctor-extensions-block-switch dependency version 0.6.1.\n\nPull dependency from Maven Central.\n"
+    },
+    {
+      "sha": "626d6ca28f87d6759abb0900f543564636223fd0",
+      "date": "2023-06-01T15:04:59-07:00",
+      "author": "John Blum",
+      "email": "jblum@vmware.com",
+      "message": "Switch to io.spring.asciidoctor.backends:spring-asciidoctor-backends.\n\nReplaces io.spring.docresources:spring-doc-resources.\n"
+    },
+    {
+      "sha": "863decd09d405670cb3261089a4f8ed4f2bd32a8",
+      "date": "2023-05-31T12:18:27-07:00",
+      "author": "John Blum",
+      "email": "jblum@vmware.com",
+      "message": "Attempt to resolve Spring Documentation Resources from repo.spring.io/libs-milestone.\n"
+    },
+    {
+      "sha": "181e3eecefca95e220f2513c4f87fd59554479ae",
+      "date": "2023-05-31T11:07:32-07:00",
+      "author": "John Blum",
+      "email": "jblum@vmware.com",
+      "message": "Setup Spring Artifactory Repository authentication for the main build.\n"
+    },
+    {
+      "sha": "c45eeefb89b60fee1eb229c642e03b960695198c",
+      "date": "2023-06-01T15:13:42-07:00",
+      "author": "John Blum",
+      "email": "jblum@vmware.com",
+      "message": "Define 'ARTIFACTORY' environment variable in all Jenkin CI build pipeline stages (build, deploy docs, deploy artifacts).\n"
+    },
+    {
+      "sha": "8ff6f9f4d331a12719618bf95f4c6149a07fdeaf",
+      "date": "2023-05-31T10:17:55-07:00",
+      "author": "John Blum",
+      "email": "jblum@vmware.com",
+      "message": "Authenticate when pulling io.spring.docresources:spring-doc-resources from Arifactory repo.spring.io/release repository.\n"
+    },
+    {
+      "sha": "54a1e94df9f3dbdefddba83460b51731ba6997f4",
+      "date": "2023-05-17T12:18:32-07:00",
+      "author": "John Blum",
+      "email": "jblum@vmware.com",
+      "message": "Increase Jenkins CI build timeout to 30 minutes.\n"
+    },
+    {
+      "sha": "1c1cb1bfac61d1915ffb712c8bd7ad339481b46d",
+      "date": "2023-05-13T19:00:33-07:00",
+      "author": "John Blum",
+      "email": "jblum@vmware.com",
+      "message": "Distinguish between official (library) and non-official Docker Images in VMware Harbor Proxy (DockerHub cache).\n"
+    },
+    {
+      "sha": "117460c12d452adefcd308ba445853fa7addbe4c",
+      "date": "2023-05-13T18:11:13-07:00",
+      "author": "John Blum",
+      "email": "jblum@vmware.com",
+      "message": "Fix bug in VMware Harbor Proxy, Offical Docker Image access, which originates in: harbor-repo.vmware.com/dockerhub-proxy-cache/library/.\n"
+    },
+    {
+      "sha": "0412d9fe8cabdd9061c4ea6069742831b515500c",
+      "date": "2023-05-13T13:47:35-07:00",
+      "author": "John Blum",
+      "email": "jblum@vmware.com",
+      "message": "Fix bug in VmwHarborProxyImageNameSubstitutor when resolving Spring-managed Docker Images in VMware Harbor Proxy.\n"
+    },
+    {
+      "sha": "441d3a4bcff4ac025f78f8fec9148d2915d24262",
+      "date": "2023-05-13T12:35:11-07:00",
+      "author": "John Blum",
+      "email": "jblum@vmware.com",
+      "message": "Fix bug in VmwHarborProxyImageNameSubstitutor when resolving non-Spring Docker Images in VMware Harbor Proxy.\n"
+    },
+    {
+      "sha": "c41796e94083761a2d85ed5320a9172a57978983",
+      "date": "2023-05-13T11:49:58-07:00",
+      "author": "John Blum",
+      "email": "jblum@vmware.com",
+      "message": "Refactor the TestcontainersCassandraConfiguration class to resolve non-Spring Docker Images from 'dockerhub-proxy-cache' context in the VMware Harbor Proxy.\n"
+    },
+    {
+      "sha": "2c69d9dff57d8b88fa86e2e2bce5959243c8f70c",
+      "date": "2023-05-13T10:35:18-07:00",
+      "author": "John Blum",
+      "email": "jblum@vmware.com",
+      "message": "Refactor TestcontainersCassandraConfiguration class to use the springci cached Java 17/Cassandra-3.11 Docker Image in VMW Harbor Proxy.\n"
+    },
+    {
+      "sha": "29187eb3e330d5af58c3f81553751d0c43256f4b",
+      "date": "2023-05-12T21:40:12-07:00",
+      "author": "John Blum",
+      "email": "jblum@vmware.com",
+      "message": "Refactor spring-geoode/build.gradle to evaluate the Gradle project property 'jenkins' correctly.\n"
+    },
+    {
+      "sha": "54ab0fb789ddccc172854bf1a6d94b921c370563",
+      "date": "2023-05-12T20:21:08-07:00",
+      "author": "John Blum",
+      "email": "jblum@vmware.com",
+      "message": "Refactor Testcontainers configuration for Apache Cassandra and image name substitution.\n"
+    },
+    {
+      "sha": "68a9ab6650d41fc80978476dc14d9268d12dc586",
+      "date": "2023-05-12T19:31:45-07:00",
+      "author": "John Blum",
+      "email": "jblum@vmware.com",
+      "message": "Use System.getProperty(name, defaultValue) to get the 'jenkin's JVM System property value to configure the test task.\n"
+    }
+  ],
+  "commit_sha": "b0ffcdd1194050dedc9c3bdab92d768555a721c8",
+  "extracted_at": "2026-10-05T18:07:22.756920+00:00"
+}

@@ -1,0 +1,83 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 10,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "4c3a1a0a7d88d503c9ccd536511ebf8c4f0c2ba7",
+      "date": "2026-06-18T12:17:29+08:00",
+      "author": "DevYangJC",
+      "email": "923584731@qq.com",
+      "message": "@\nfeat: 新增 Python 版本后端 (FastAPI + SQLAlchemy)\n\n- 新增 dataloom-server-python/ 目录，完整 FastAPI 后端实现\n- 支持 Excel 上传解析、分块存储、REST API\n- 含 Java 开发者迁移指南 (README_Java_Developer.md)\n- 更新 .gitignore，排除 __pycache__、.pyc、test_*.xlsx\n@\n"
+    },
+    {
+      "sha": "bdbf25a8316b4a4207ae0000117fdbaeccfc09a3",
+      "date": "2026-06-16T15:38:30+08:00",
+      "author": "DevYangJC",
+      "email": "923584731@qq.com",
+      "message": "feat: 修复 Luckysheet 图表渲染崩溃并支持文档重命名与导出文件名优化\n\n1. 修复 (luckysheet-chart):\n   - 引入本地修补版 luckysheet.umd.js，在 index.html 预加载 Vue2/Vuex/ElementUI/ECharts 依赖。\n   - 增加 chartmixDefaultOption 兜底配置，避免加载缺失属性的图表导致 chartmix 崩溃。\n   - 重构 serializeWorkbook (图表保存策略四步法)，利用活跃 ECharts 实例动态抓取配置，过滤僵尸图表，保证安全序列化。\n\n2. 功能 (document-rename):\n   - 仪表盘新增“重命名”操作按钮及弹窗，支持对文档进行重命名。\n   - 编辑器顶部文档名称支持点击/双击激活重命名输入框，实现无缝重命名及保存。\n\n3. 优化 (backend-refactor):\n   - 移除已废弃的后端导出接口及单单元格增量更新接口，由批量增量接口全权接管。\n   - 优化 workbook 全量快照保存逻辑，使 replaceWorkbook 接口返回 sheetIdMap，前端据此同步本地 sheet ID，确保后续增量保存不失效。\n\n4. 修复 (export):\n   - 修复 export.js 导出 Excel 时出现重复 `.xlsx.xlsx` 后缀的 Bug。\n"
+    },
+    {
+      "sha": "dc3520d9d548e44418acabdc15e492d63a2c5b91",
+      "date": "2026-06-15T10:50:38+08:00",
+      "author": "DevYangJC",
+      "email": "923584731@qq.com",
+      "message": "Merge remote project cleanup\n"
+    },
+    {
+      "sha": "2ae1e6722316ca410e5fb8f82bedadae256ff5f0",
+      "date": "2026-06-15T10:48:21+08:00",
+      "author": "DevYangJC",
+      "email": "923584731@qq.com",
+      "message": "feat: 支持超链接、图片、条件格式与图表保存，并修复图片删除残留与图表 404 错误\n\n- 数据库(H2/MySQL)：在 excel_sheet 表结构中同步补全 hyperlink_config_json、images_config_json、condition_format_json 和 chart_json 多个 JSON 字段，并新增 ALTER TABLE 自动更新机制。\n- 后端服务：在实体类、Controller 详情接口和 Service (replaceWorkbook) 中打通超链接、图片、条件格式与图表数据的反序列化及快照覆盖写入。\n- 图表与条件格式：前端启用 chart 插件，并修正 pluginsUrl 至正确的 CDN 根路径，解决依赖文件加载 404 及 ga.createChart 未定义报错，打通历史图表与条件格式加载。\n- 图片删除同步：前端重构并增强 imageDeleteAfter 钩子，引入 ID、数据 src 及坐标尺寸三重防御性匹配清理策略，彻底解决已删图片在快照保存重载后重复出现的 Bug。\n- 配置优化：在 .gitignore 中排除官方示范文件夹。\n"
+    },
+    {
+      "sha": "524fc1395c7e0b7e46e2a0daaffb5079af9ca5bb",
+      "date": "2026-06-15T08:50:11+08:00",
+      "author": "杨纪聪",
+      "email": "sj-yjc@dimpt.com",
+      "message": "Rename DataLoom frontend and backend projects\n"
+    },
+    {
+      "sha": "450c251ed93c3ab9afacfed93f482140ab48558e",
+      "date": "2026-06-15T08:41:47+08:00",
+      "author": "杨纪聪",
+      "email": "sj-yjc@dimpt.com",
+      "message": "Remove Luckysheet reference submodules\n"
+    },
+    {
+      "sha": "7b6dfa87d279f6877b3e58ddbfd0c427cbc248ff",
+      "date": "2026-06-08T15:43:30+08:00",
+      "author": "DevYangJC",
+      "email": "923584731@qq.com",
+      "message": "修复多sheet保存无法通过的问题\n"
+    },
+    {
+      "sha": "14e76081c2b69086aa4bfe1847056f3b7c03ce57",
+      "date": "2026-06-04T18:36:47+08:00",
+      "author": "DevYangJC",
+      "email": "923584731@qq.com",
+      "message": "@\ndocs: 技术帖新增 GitHub 项目地址链接\n\n- 标题下方新增项目地址引语块\n- \"项目价值\"章节结尾补充 clone 指引\n- 总结结尾改为可点击的 GitHub 链接\n@\n"
+    },
+    {
+      "sha": "5213ebe6da37ff99a0fd34c10b5b5c1ebb852779",
+      "date": "2026-06-04T17:31:39+08:00",
+      "author": "DevYangJC",
+      "email": "923584731@qq.com",
+      "message": "@\nfeat: Vue 3 迁移 + README 重写 + 技术帖\n\n前端迁移:\n- Vue 2 → Vue 3.5 (Composition API + <script setup>)\n- Webpack → Vite 6\n- Element UI → Element Plus 2\n- 组件全部重构为 setup 语法\n\n文档:\n- README.md 参考 GitHub 优秀项目重写 (Mermaid 架构图 + 徽章 + 分块存储)\n- 新增 \"从零构建在线Excel.md\" 技术帖 (含 5 张 Mermaid 流程/时序/状态/甘特图)\n\n配置:\n- .gitignore 新增 .workbuddy/\n@\n"
+    },
+    {
+      "sha": "7483a5a901c74395039f21d1d3d1d79280dfbc73",
+      "date": "2026-06-04T16:25:29+08:00",
+      "author": "杨纪聪",
+      "email": "sj-yjc@dimpt.com",
+      "message": "Initial public release\n"
+    }
+  ],
+  "commit_sha": "4c3a1a0a7d88d503c9ccd536511ebf8c4f0c2ba7",
+  "extracted_at": "2026-10-05T18:33:14.277693+00:00"
+}

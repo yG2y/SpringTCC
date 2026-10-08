@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "a6fb976f638e072d9cd0451b2b0678ff836112c4",
+      "date": "2026-10-05T10:33:19+08:00",
+      "author": "zhouhailin",
+      "email": "zhouhailin555@aliyun.com",
+      "message": "docs(readme): 更新文档以反映新的依赖项和功能\n\n- 添加 Spring Boot 版本徽章显示支持 2.x、3.x 和 4.x\n- 更新 Maven 中央仓库链接指向新的 artifacts\n- 添加 Spring Boot 版本兼容性说明\n- 新增 AI 技能部分介绍 Qoder 插件的使用\n- 提供详细的安装和使用指南\n- 更新 Maven 配置示例并指明最新版本 2.2.0\n"
+    },
+    {
+      "sha": "66d9ee15116d6c5a1684a1c7b6b9d8b807433f82",
+      "date": "2025-03-27T15:58:56+08:00",
+      "author": "zhouhailin",
+      "email": "zhouhailin555@aliyun.com",
+      "message": "build(freeswitch-esl):移除 logback-core 依赖- 从 freeswitch-esl模块的 pom.xml 文件中删除了 logback-core 依赖\n- 此更改减少了项目中的冗余依赖，可能减轻了项目的大小和复杂性\n"
+    },
+    {
+      "sha": "3f719556d998826436599ff4d7324a686cb031a3",
+      "date": "2025-03-27T15:45:17+08:00",
+      "author": "Hailin Zhou",
+      "email": "zhouhailin555@aliyun.com",
+      "message": "Merge pull request #44 from hani-code-explorer/v2.2-dev\n\nfeat(inbound): 增加对 BACKGROUND_JOB 事件的订阅控制"
+    },
+    {
+      "sha": "893f74617f84acecc8e56b7260bc69e0d65540cf",
+      "date": "2025-03-27T14:31:13+08:00",
+      "author": "hani-code-explorer",
+      "email": "hani-code-explorer@aliyun.com",
+      "message": "feat(inbound): 增加对 BACKGROUND_JOB 事件的订阅控制\n\n- 在 InboundClient 接口中添加 subscribeBackgroundJob 方法\n- 在 NettyInboundClient 类中实现该方法，并根据事件订阅情况动态设置订阅状态\n- 更新配置示例，添加新的 FreeSWITCH 地址\n- 优化性能计算逻辑，移除不必要的变量初始化\n- 更新 README，明确 JDK版本支持\n- 添加 spring.factories 文件，支持 Spring Boot 自动配置\n"
+    },
+    {
+      "sha": "e89488434282b8461eac3ea432aeb91f2daa8f7f",
+      "date": "2024-12-19T15:52:27+08:00",
+      "author": "zhouhailin",
+      "email": "zhouhailin555@aliyun.com",
+      "message": "[Add] : contains method to StringUtils\n"
+    },
+    {
+      "sha": "95a149e3a9e8cf9f1c83183c9a63b9fc4d37e098",
+      "date": "2024-12-19T15:50:04+08:00",
+      "author": "zhouhailin",
+      "email": "zhouhailin555@aliyun.com",
+      "message": "[SNAPSHOT] : 2.3.0-SNAPSHOT and cdr modules.\n"
+    },
+    {
+      "sha": "990b25a429c85fcaf3e4c75df75495fbc23199ec",
+      "date": "2024-12-19T15:05:35+08:00",
+      "author": "zhouhailin",
+      "email": "zhouhailin555@aliyun.com",
+      "message": "[Release] : 2.2.0\n"
+    },
+    {
+      "sha": "6acb67bf994e2e20b730b05e5643550a9361f0b4",
+      "date": "2024-02-21T00:36:14+08:00",
+      "author": "zhouhailin",
+      "email": "zhouhailin555@aliyun.com",
+      "message": "[release]: 2.1.0\n"
+    },
+    {
+      "sha": "ecdf4e55696fcb712281138f06ab175908e8c7c2",
+      "date": "2024-02-20T21:56:20+08:00",
+      "author": "zhouhailin",
+      "email": "zhouhailin555@aliyun.com",
+      "message": "[Update]: example config info.\n"
+    },
+    {
+      "sha": "bd1d2fea7785ab3ea007e7aa9ea24f03abe7f8f2",
+      "date": "2024-02-20T21:49:21+08:00",
+      "author": "zhouhailin",
+      "email": "zhouhailin555@aliyun.com",
+      "message": "[Update]: spring boot 3.2.2\n"
+    },
+    {
+      "sha": "9133e616784a38e87159ff7de16861e13916fc11",
+      "date": "2024-02-16T09:37:52+08:00",
+      "author": "Hailin Zhou",
+      "email": "zhouhailin555@aliyun.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "2fbe7afd771cefc73c10f1ccd8af4491f678fb38",
+      "date": "2023-10-20T10:14:39+08:00",
+      "author": "zhouhailin",
+      "email": "zhouhailin555@aliyun.com",
+      "message": "[Update]: merge rename project commit and resolve conflict\n"
+    },
+    {
+      "sha": "45fe2f9c355bdcde36367e9be5dbe28fcb47c84c",
+      "date": "2023-10-20T10:12:05+08:00",
+      "author": "zhouhailin",
+      "email": "zhouhailin555@aliyun.com",
+      "message": "Merge branch 'v1.8-dev' into v2.1-dev\n\n# Conflicts:\n#\tfreeswitch-esl-example/pom.xml\n#\tfreeswitch-esl-spring-boot-starter-example/pom.xml\n#\tfreeswitch-esl-spring-boot-starter/pom.xml\n#\tfreeswitch-esl/pom.xml\n#\tfreeswitch-esl/src/main/java/link/thingscloud/freeswitch/esl/InboundClientBootstrap.java\n#\tpom.xml\n"
+    },
+    {
+      "sha": "4175daf391f26f3870ce846301fb81532cd074fc",
+      "date": "2023-10-20T10:06:12+08:00",
+      "author": "zhouhailin",
+      "email": "zhouhailin555@aliyun.com",
+      "message": "[Update]: rename project to freeswitch-externals\n"
+    },
+    {
+      "sha": "acbac8149227c3e265f6031ac1becc79afda1693",
+      "date": "2023-10-20T01:35:43+08:00",
+      "author": "zhouhailin",
+      "email": "zhouhailin555@aliyun.com",
+      "message": "[Update] : README.md\n"
+    },
+    {
+      "sha": "5bf5644e4b821f6492b65b039c0f81db3bd5fe29",
+      "date": "2023-10-20T01:41:48+08:00",
+      "author": "zhouhailin",
+      "email": "zhouhailin555@aliyun.com",
+      "message": "[Update] : README.md\n"
+    },
+    {
+      "sha": "d832f75c2b1bdb370d68375389cbd4e5e2f26eac",
+      "date": "2023-10-20T00:58:56+08:00",
+      "author": "zhouhailin",
+      "email": "zhouhailin555@aliyun.com",
+      "message": "[Add] : InboundClientBootstrap for freeswitch api\n"
+    },
+    {
+      "sha": "e40766be595ee1b9da6c2432a3222e3d6c5a0c9e",
+      "date": "2023-10-20T00:53:42+08:00",
+      "author": "zhouhailin",
+      "email": "zhouhailin555@aliyun.com",
+      "message": "[Update] : format and copyright\n"
+    },
+    {
+      "sha": "c47f036af37a10653c52757b590f674a6e633646",
+      "date": "2023-10-20T00:44:48+08:00",
+      "author": "zhouhailin",
+      "email": "zhouhailin555@aliyun.com",
+      "message": "[Add] : InboundClientBootstrap for freeswitch api\n"
+    },
+    {
+      "sha": "eb6cdfdaa3562bf7f8fbe248d0967552416d9009",
+      "date": "2023-10-20T00:14:58+08:00",
+      "author": "zhouhailin",
+      "email": "zhouhailin555@aliyun.com",
+      "message": "[Update] : format and copyright\n"
+    },
+    {
+      "sha": "996cb4f062e48c9288d33836da5d2e774726c80a",
+      "date": "2023-10-20T00:12:01+08:00",
+      "author": "zhouhailin",
+      "email": "zhouhailin555@aliyun.com",
+      "message": "[Update] : pom.xml\n"
+    },
+    {
+      "sha": "f1633359befd435c1f70fbd7947f871b9ed9cd38",
+      "date": "2023-10-20T00:06:05+08:00",
+      "author": "zhouhailin",
+      "email": "zhouhailin555@aliyun.com",
+      "message": "[Update] : 1.8.0-SNAPSHOT\n"
+    },
+    {
+      "sha": "33c61c1ccae93ccce0a83f41cca69a77ff06d6c7",
+      "date": "2023-10-19T23:57:53+08:00",
+      "author": "zhouhailin",
+      "email": "zhouhailin555@aliyun.com",
+      "message": "[Update] : 2.1.0-SNAPSHOT\n"
+    },
+    {
+      "sha": "0ff0f03ffae020c791f7bc72bcd50648859410a0",
+      "date": "2023-05-30T22:42:30+08:00",
+      "author": "zhouhailin",
+      "email": "zhouhailin555@aliyun.com",
+      "message": "[Update] : Release 1.7.0\n"
+    },
+    {
+      "sha": "b506bb30c0d7dde8db94e7efe8eb0c30cf74429f",
+      "date": "2023-05-30T22:29:12+08:00",
+      "author": "zhouhailin",
+      "email": "zhouhailin555@aliyun.com",
+      "message": "[Update] : JDK Version in README.md\n"
+    },
+    {
+      "sha": "88d2a5070653d91d0cf67d3a25399535c4d85cd2",
+      "date": "2023-05-30T22:14:02+08:00",
+      "author": "zhouhailin",
+      "email": "zhouhailin555@aliyun.com",
+      "message": "[Update] : release 2.0.0\n"
+    },
+    {
+      "sha": "516c67047c91b1ef6a43321406a53df698e7ca1a",
+      "date": "2023-05-27T23:51:49+08:00",
+      "author": "zhouhailin",
+      "email": "zhouhailin555@aliyun.com",
+      "message": "Merge remote-tracking branch 'gitee/master'\n"
+    },
+    {
+      "sha": "e3149b25314a48bd0ab245ed3fb2b6e5c22090b5",
+      "date": "2023-05-27T23:46:06+08:00",
+      "author": "zhouhailin",
+      "email": "zhouhailin555@aliyun.com",
+      "message": "Merge branch 'v1.7-dev'\n"
+    },
+    {
+      "sha": "71c36d46458ff0344ea2d5e53eb2e4a12820ffbe",
+      "date": "2023-05-27T23:38:01+08:00",
+      "author": "zhouhailin",
+      "email": "zhouhailin555@aliyun.com",
+      "message": "FIXED : fix codacy issues.\n"
+    },
+    {
+      "sha": "08ab5442cd074b2548032ca64285ff2f205a0aa3",
+      "date": "2023-05-27T22:47:00+08:00",
+      "author": "zhouhailin",
+      "email": "zhouhailin555@aliyun.com",
+      "message": "UPDATE: delete test case\n"
+    }
+  ],
+  "commit_sha": "a6fb976f638e072d9cd0451b2b0678ff836112c4",
+  "extracted_at": "2026-10-05T18:06:46.500732+00:00"
+}

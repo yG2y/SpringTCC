@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "a2b7060b2acd196516420ed3c77ed36699a78418",
+      "date": "2026-09-25T18:19:47+08:00",
+      "author": "Yeauty",
+      "email": "YeautyYE@gmail.com",
+      "message": "ci: update pinned actions to Node 24 releases\n"
+    },
+    {
+      "sha": "91248fc9e6303754db4811b4b8e0defe73facd69",
+      "date": "2026-09-25T17:54:02+08:00",
+      "author": "Yeauty",
+      "email": "YeautyYE@gmail.com",
+      "message": "Prepare 1.0.0 release with runtime hardening, consumer tests and Central publishing\n"
+    },
+    {
+      "sha": "9b33c0e17922dc238f62cf53833ce9676ebb3f7d",
+      "date": "2026-09-25T07:46:33+08:00",
+      "author": "Yeauty",
+      "email": "YeautyYE@gmail.com",
+      "message": "feat: 适配 Spring Boot 4.1.1 / JDK 17 / Netty 4.2.18.Final\n\n完成 Spring Boot 4 / Spring Framework 7 / Netty 4.2 适配，补充自动装配、参数解析、生命周期和 WebSocket 集成测试。"
+    },
+    {
+      "sha": "4934d3db57698432e856d332f0ccaed3bbc94897",
+      "date": "2026-09-24T10:02:34+08:00",
+      "author": "lht",
+      "email": "304529864@qq.com",
+      "message": "fix: 分阶段等待线程池真正终止后再停止业务执行器\n\nshutdownGracefully 只发出关闭请求并立即返回。上一版仅调整调用顺序并统一\n追加 awaitTermination，boss/worker 与业务执行器仍几乎同时开始停止：业务\n执行器度过静默期即终止，而 worker 尚未转发的关闭事件仍会被投递到已终止的\n执行器，导致 @OnClose 丢失并抛出 RejectedExecutionException。\n\n生产代码:\n- WebsocketServer.destroy(): 关闭监听并处理完活跃连接后，先关闭 boss/worker\n  并各自等待 terminationFuture() 真正完成，形成网络线程退出屏障；网络线程\n  全部退出后不会再有新事件提交给业务执行器\n- 之后才关闭业务执行器并等待其排空已排队的回调，保证 destroy() 返回时\n  @OnClose 已执行完毕\n- awaitTermination 返回 false 时不再记为正常停止，改为列出未终止的线程池\n  并明确报告；整个停机共享 5s 预算（原为每阶段各 5s）\n\n测试:\n- 新增 DelayedCloseEndpoint: 在 @OnOpen 中加入 inbound handler，将网络侧\n  channelInactive 的转发延迟 600ms，模拟关闭事件转发晚于业务执行器静默期\n- 新增 HandshakeGateEndpoint: @BeforeHandshake 暂停，覆盖握手中止路径\n- NettyWebSocketLifecycleTest 增加两条回归用例: 延迟转发断言 @OnClose 恰好\n  执行一次且会话集合清空; 握手中止断言 @OnOpen 已执行且执行器未提前终止\n\n验证: clean verify 25/25 通过，默认顺序与 MethodOrderer$MethodName 两种\n顺序均通过，日志无 RejectedExecutionException; 回滚主代码到上一版后两条\n新用例均失败，确认其有效性。JDK 17 需由 CI/Reviewer 复跑（本机仅有 JDK 21）\n"
+    },
+    {
+      "sha": "2bef6fbd51a670fecf020664b848ff304bc318db",
+      "date": "2026-09-23T13:55:36+08:00",
+      "author": "lht",
+      "email": "304529864@qq.com",
+      "message": "fix: 修复停机丢失 @OnClose 与端口测试共享状态问题\n\n生产代码:\n- WebsocketServer: 用 ChannelGroup 登记已握手连接；destroy() 改为\n  关监听 -> 关闭活跃连接 -> boss/worker -> 业务执行器 -> awaitTermination，\n  避免 worker 关闭连接时业务执行器已停导致 RejectedExecutionException 并丢弃 @OnClose\n- WebsocketServer: bind 改为同步等待结果，失败释放线程池并抛 DeploymentException；\n  ServerEndpointExporter 记日志后包装为 IllegalStateException，端口冲突直接启动失败\n- ServerEndpointConfig/PojoEndpointServer: 新增 isRandomPort()，关闭时只回收真正\n  使用随机端口的服务缓存，避免误清同一 host 上仍在运行的其他服务\n- WebSocketServerHandler.channelInactive: 补 super.channelInactive(ctx)\n- support: 抽出 AnnotationNameSupport 统一 @PathVariable/@RequestParam 的\n  value/name 别名解析，Map 版 supportsParameter 同步支持两种简写\n\n测试:\n- 新增 org.yeauty.lifecycle 独立端点与 NettyWebSocketLifecycleTest（端口由用例显式\n  注入，不触碰随机端口缓存）: 端口释放、保持活跃连接关闭容器时执行 @OnClose、\n  多服务均绑定成功、端口冲突启动失败\n- 新增 AliasEndpoint 及集成用例覆盖 value 简写、查询参数别名与 defaultValue\n- 新增 AnnotationNameSupportTest 覆盖别名解析\n- 移除依赖全局缓存清理的 contextCloseReleasesPort，同步修订 PathEndpoint 注释\n\n验证: JDK 21 下 mvn clean verify 与按方法名排序两种顺序均 23/23 通过，\n日志中无 BindException / RejectedExecutionException\n"
+    },
+    {
+      "sha": "038470a8c1591faff0d4bb6dc50d630af0d3f601",
+      "date": "2026-09-22T10:48:53+08:00",
+      "author": "lht",
+      "email": "304529864@qq.com",
+      "message": "docs: 中英文 README 明确 JDK 17 要求与 Spring Boot 4 说明\n\n- 要求改为 jdk 17 及以上，与 Spring Boot 4 的最低要求一致，并注明本项目在 jdk 21 上构建与测试\n\n- 避免把本项目的编译基线归因于框架要求，同步更新 1.0 更新日志\n"
+    },
+    {
+      "sha": "c53c1d192949b129b48ad6b59c65e9d3494c6212",
+      "date": "2026-09-22T10:48:53+08:00",
+      "author": "lht",
+      "email": "304529864@qq.com",
+      "message": "test: 补充自动装配与 WebSocket 收发回归测试\n\n- 覆盖默认自动装配、自定义 ServerEndpointExporter 时自动配置退让、组合注解启动、无默认包兜底\n\n- 覆盖握手、路径与查询参数绑定、文本与二进制收发、广播与压缩端点\n\n- 验证：JDK 21.0.4 + Maven 3.9.16，mvn clean verify 13/13 通过\n"
+    },
+    {
+      "sha": "da7f09df7b1d7e5d9df280094b7f526fcfd3eea3",
+      "date": "2026-09-22T10:48:52+08:00",
+      "author": "lht",
+      "email": "304529864@qq.com",
+      "message": "fix: 参数解析器补齐 name() -> value() -> 参数名 兜底\n\n- PathVariable、PathVariableMap、RequestParam、RequestParamMap 四个解析器此前只读取 name()，而 value() 与 name() 互为 @AliasFor，不走注解合成时读不到对方的值\n\n- Spring 7 移除 LocalVariableTableParameterNameDiscoverer 后，未开启 -parameters 时拿不到参数名，导致 @PathVariable(id) 这类写法失效\n"
+    },
+    {
+      "sha": "eab94a6348693f61586ba4971fe80c4bd4805629",
+      "date": "2026-09-22T10:48:52+08:00",
+      "author": "lht",
+      "email": "304529864@qq.com",
+      "message": "fix: 修复未使用 @SpringBootApplication 时启动抛出 ArrayIndexOutOfBoundsException\n\n- 扫描包解析改为四级回退链：显式 scanBasePackages > @SpringBootApplication > AutoConfigurationPackages > 无包则告警跳过\n\n- 修复 @SpringBootConfiguration + @EnableAutoConfiguration 组合启动时查询注解结果为空却直接访问下标 0 的问题\n\n- 同时完成该类在 Spring Framework 7 下的 API 适配\n"
+    },
+    {
+      "sha": "ad8ff12b8e9ca5cd82c16d6934f23da841b2b496",
+      "date": "2026-09-22T10:48:52+08:00",
+      "author": "lht",
+      "email": "304529864@qq.com",
+      "message": "refactor: 适配 Netty 4.2 与 Spring Framework 7 的 API 变更\n\n- 替换 HttpServerHandler、WebsocketServer 中已变更或移除的 Netty / Spring API 调用\n\n- ServerEndpointConfig 补充随机端口查询与清理，供 port=0 场景与测试使用\n"
+    },
+    {
+      "sha": "33fb339df79a05c82ca95912c38666102070cd90",
+      "date": "2026-09-22T10:48:52+08:00",
+      "author": "lht",
+      "email": "304529864@qq.com",
+      "message": "build: 升级依赖与编译配置至 Spring Boot 4 / Netty 4.2\n\n- netty 4.2.18.Final、spring-boot 4.1.1、junit-jupiter 5.10.2、surefire 3.5.4\n\n- maven.compiler.release 设为 17，与 Spring Boot 4 的最低要求对齐，产出 class major 61\n\n- 开启 -parameters，保证反射可读取参数名\n"
+    },
+    {
+      "sha": "bcf7f4b552053fb32763f6814a212a906c81a0b1",
+      "date": "2026-09-21T18:37:18+08:00",
+      "author": "lht",
+      "email": "304529864@qq.com",
+      "message": "refactor: 移除 Spring 7 / Netty 4.2 已弃用 API 调用\n\n- NioEventLoopGroup -> MultiThreadIoEventLoopGroup(NioIoHandler.newFactory())- WebSocketServerCompressionHandler() -> WebSocketServerCompressionHandler(6)- ClassUtils.isCglibProxyClass -> ClassUtils.CGLIB_CLASS_SEPARATOR 判断- 移除已弃用的 org.springframework.lang.Nullable- pipeline.addLast(EventExecutorGroup, ...) 在 4.2 中所有重载均标记弃用且无替代，保持原样\n"
+    },
+    {
+      "sha": "48ee1d1aae4ef42df292b5c41efe2c777e0a0748",
+      "date": "2026-09-21T17:23:09+08:00",
+      "author": "lht",
+      "email": "304529864@qq.com",
+      "message": "feat: 适配 Spring Boot 4.1.1 / JDK 21 / Netty 4.2.18.Final\n\n- spring-boot 依赖升级至 4.1.1，编译目标 JDK 17 -> 21\n- netty 升级至 4.2.18.Final\n- 自动配置注册由 META-INF/spring.factories 迁移为 META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports\n- 适配 Spring Boot 4 / Netty 4.2 变更后的 API\n- 版本号升级至 1.0\n"
+    },
+    {
+      "sha": "eb4d0a6b2b117285519b3c6f256cdb35ab13e056",
+      "date": "2025-04-24T15:55:26+08:00",
+      "author": "Yeauty",
+      "email": "YeautyYE@gmail.com",
+      "message": "docs: update jdk version to 17\n"
+    },
+    {
+      "sha": "f701088927372394a6cd60b1a527dee694a90c5a",
+      "date": "2025-04-15T22:41:40+08:00",
+      "author": "Yeauty",
+      "email": "YeautyYE@gmail.com",
+      "message": "chore: bump version to 0.13.0\n"
+    },
+    {
+      "sha": "d3fbcd7fc255fa19d7dc0a9927ca9b975b6abcb9",
+      "date": "2025-04-15T22:10:02+08:00",
+      "author": "Yeauty",
+      "email": "YeautyYE@gmail.com",
+      "message": "chore: bump version to 0.13.0\n"
+    },
+    {
+      "sha": "90cb28b1b3361695f6bbca5d91f508e3350437d9",
+      "date": "2025-04-15T21:59:21+08:00",
+      "author": "Yeauty",
+      "email": "YeautyYE@gmail.com",
+      "message": "chore: bump version to 0.13.0\n"
+    },
+    {
+      "sha": "0ae4789d5f17e152623d1f5474b7e728629faf18",
+      "date": "2025-04-15T21:54:41+08:00",
+      "author": "Yeauty",
+      "email": "YeautyYE@gmail.com",
+      "message": "feat: send `bye` on close()\n"
+    },
+    {
+      "sha": "a4d5755c635ea263194bce249f3ef617eab56e86",
+      "date": "2025-04-15T18:13:16+08:00",
+      "author": "Yeauty",
+      "email": "YeautyYE@gmail.com",
+      "message": "Merge pull request #275 from tangsb123/fix-websocket-compress\n\nBug fixed: WebSocketServerCompressionHandler invalid"
+    },
+    {
+      "sha": "ca6a6f16a5e5c8f77a8c246337e6381f631575dc",
+      "date": "2025-04-15T18:12:56+08:00",
+      "author": "Yeauty",
+      "email": "YeautyYE@gmail.com",
+      "message": "Merge branch 'master' into fix-websocket-compress"
+    },
+    {
+      "sha": "0ac1f0588cac7d8e54867326ad35c60eed1c17e0",
+      "date": "2025-04-15T18:11:55+08:00",
+      "author": "Yeauty",
+      "email": "YeautyYE@gmail.com",
+      "message": "Merge pull request #256 from zihangii/dev-1.0\n\n添加websocket响应头Sec-WebSocket-Protocol返回"
+    },
+    {
+      "sha": "f417ead8c61ab734cfc25eb9b01cdbdc4630ed8a",
+      "date": "2025-04-15T18:00:29+08:00",
+      "author": "Yeauty",
+      "email": "YeautyYE@gmail.com",
+      "message": "Merge pull request #276 from YeautyYE/dependabot/maven/io.netty-netty-handler-4.1.118.Final\n\nBump io.netty:netty-handler from 4.1.86.Final to 4.1.118.Final"
+    },
+    {
+      "sha": "f468aacb1fd771c4755acaff298b711b38b6f54e",
+      "date": "2025-04-15T09:59:50Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump io.netty:netty-handler from 4.1.86.Final to 4.1.118.Final\n\nBumps [io.netty:netty-handler](https://github.com/netty/netty) from 4.1.86.Final to 4.1.118.Final.\n- [Commits](https://github.com/netty/netty/compare/netty-4.1.86.Final...netty-4.1.118.Final)\n\n---\nupdated-dependencies:\n- dependency-name: io.netty:netty-handler\n  dependency-version: 4.1.118.Final\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "cc42a97d08722c6f421897e069a322dab5b9e7c4",
+      "date": "2025-04-15T17:58:57+08:00",
+      "author": "Yeauty",
+      "email": "YeautyYE@gmail.com",
+      "message": "Merge pull request #271 from cola-dragon/master\n\nfeat: 升级支持spring-boot3"
+    },
+    {
+      "sha": "f73fd0b820a0fa0bb8b7e78a30d88ce1dca3ec29",
+      "date": "2025-04-15T17:58:41+08:00",
+      "author": "Yeauty",
+      "email": "YeautyYE@gmail.com",
+      "message": "Merge branch 'master' into master"
+    },
+    {
+      "sha": "bdf3f6060784c3b93d7108f9f2a36047ecc42245",
+      "date": "2025-04-15T17:56:56+08:00",
+      "author": "Yeauty",
+      "email": "YeautyYE@gmail.com",
+      "message": "Merge pull request #244 from YeautyYE/dependabot/maven/io.netty-netty-codec-http-4.1.86.Final\n\nBump netty-codec-http from 4.1.67.Final to 4.1.86.Final"
+    },
+    {
+      "sha": "b4256a6ac793cdcddb40ef3273202c55ce850fe1",
+      "date": "2025-04-15T10:46:13+08:00",
+      "author": "Tangshengbo",
+      "email": "shengbo.tang@innodealing.com",
+      "message": "Bug fixed: WebSocketServerCompressionHandler invalid\n"
+    },
+    {
+      "sha": "1e7cf192e43d89c3e96b186a15445701873f7f58",
+      "date": "2024-11-29T17:20:55+08:00",
+      "author": "cola",
+      "email": "zhanghuilong@tcsec.com.cn",
+      "message": "feat: 升级支持spring-boot3\n"
+    },
+    {
+      "sha": "e23cf7c9eb5ebc55e30001f913e8fff7f4f449a1",
+      "date": "2023-09-04T09:30:01+08:00",
+      "author": "温子航",
+      "email": "1617036662@qq.com",
+      "message": "添加websocket响应头Sec-WebSocket-Protocol返回，前端带token放在请求头，后端要将此token放在响应头返回，不然前端直接断开连接\n"
+    },
+    {
+      "sha": "70370ddcf751eba4729ba8f0d524a7f31ffad767",
+      "date": "2022-12-12T21:42:46Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump netty-codec-http from 4.1.67.Final to 4.1.86.Final\n\nBumps [netty-codec-http](https://github.com/netty/netty) from 4.1.67.Final to 4.1.86.Final.\n- [Release notes](https://github.com/netty/netty/releases)\n- [Commits](https://github.com/netty/netty/compare/netty-4.1.67.Final...netty-4.1.86.Final)\n\n---\nupdated-dependencies:\n- dependency-name: io.netty:netty-codec-http\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    }
+  ],
+  "commit_sha": "a2b7060b2acd196516420ed3c77ed36699a78418",
+  "extracted_at": "2026-10-05T17:56:35.833168+00:00"
+}

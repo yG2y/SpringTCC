@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "2a46dd091badfcd99e052873b3dea2217dbbc1d3",
+      "date": "2024-01-21T10:39:54-08:00",
+      "author": "Frank Liu",
+      "email": "frankfliu2000@gmail.com",
+      "message": "[ci] Fixes JDK 17 maven deploy issue (#37)\n\n"
+    },
+    {
+      "sha": "dc8f99ae6cf170f80927a819a59ddbd41008e7ff",
+      "date": "2024-01-19T02:23:54+01:00",
+      "author": "Christian Tzolov",
+      "email": "christian.tzolov@gmail.com",
+      "message": "Update djl, boot and java versions (#35)\n\n* Update djl, boot and java versions\n\n - Update djl from 0.23.0 to 0.26.0\n - Update Spring Boot from 2.7.x to latest 3.2.1 (fix @Resource package issue)\n - Update all ai.djl.spring version from 0.23-SN to 0.26-SN to make the version in pair with the ajl version.\n - Add missing Criteria properies to DjlConfigurationProperties\n \n---------\n\nCo-authored-by: Frank Liu <frankfliu2000@gmail.com>"
+    },
+    {
+      "sha": "d42ec16010add3e819e906dfd0bc4fcf78cb6cc7",
+      "date": "2023-08-04T10:38:01-07:00",
+      "author": "Xin Yang",
+      "email": "105740670+xyang16@users.noreply.github.com",
+      "message": "Update to DJL 0.23.0 (#34)\n\n"
+    },
+    {
+      "sha": "ea7917859776aaa6f692788b13eca8e8b4eda058",
+      "date": "2023-02-28T09:59:35-08:00",
+      "author": "Frank Liu",
+      "email": "frankfliu2000@gmail.com",
+      "message": "[ci] Update github actions version (#32)\n\n"
+    },
+    {
+      "sha": "fb3263e2aad99976c571d28a9ba756f7ded77916",
+      "date": "2023-02-27T22:46:06-08:00",
+      "author": "Frank Liu",
+      "email": "frankfliu2000@gmail.com",
+      "message": "Upgrade DJL to 0.21.0 (#31)\n\n"
+    },
+    {
+      "sha": "d3682db09580933264046a8de5cfc5a794c31c62",
+      "date": "2022-11-30T18:06:13-08:00",
+      "author": "Xin Yang",
+      "email": "105740670+xyang16@users.noreply.github.com",
+      "message": "Update to DJL 0.20.0 (#30)\n\n"
+    },
+    {
+      "sha": "3aae402c95aef40d6b692793dbb0db1009ef4dc0",
+      "date": "2022-09-30T20:35:07-07:00",
+      "author": "Xin Yang",
+      "email": "105740670+xyang16@users.noreply.github.com",
+      "message": "Upgrade to 0.19 (#28)\n\n"
+    },
+    {
+      "sha": "1e27163c12d19380cf2a8a89cf733550c4737d42",
+      "date": "2022-09-15T11:02:52-07:00",
+      "author": "Xin Yang",
+      "email": "105740670+xyang16@users.noreply.github.com",
+      "message": "Update links (#27)\n\n"
+    },
+    {
+      "sha": "1a30522d2378bbea8ee7eab318fcc878529647b4",
+      "date": "2022-09-15T09:26:47-07:00",
+      "author": "Xin Yang",
+      "email": "105740670+xyang16@users.noreply.github.com",
+      "message": "Update to DJL 0.19.0 (#26)\n\n"
+    },
+    {
+      "sha": "a12defb85bbea5441b5242bec340c52db31c8d2d",
+      "date": "2022-08-19T21:20:56+02:00",
+      "author": "Dennis Kieselhorst",
+      "email": "mail@dekies.de",
+      "message": "Upgrade to Spring Boot 2.7.3 (#25)\n\n"
+    },
+    {
+      "sha": "7b9b84cd46a65b0658cc2cb2760d77ef1f604a1f",
+      "date": "2022-07-19T11:43:29-07:00",
+      "author": "Siddharth Venkatesan",
+      "email": "siddhave@amazon.com",
+      "message": "Update to DJL 0.18.0 (#24)\n\n"
+    },
+    {
+      "sha": "baa0371d8c0ba1a00c60b3893425aba28534fbff",
+      "date": "2022-05-18T08:33:04+08:00",
+      "author": "James Zow",
+      "email": "jameszow@163.com",
+      "message": "update djl-springboot-version 0.16 -> 0.17 (#22)\n\n* update djl-springboot-version 0.16 -> 0.17\n\n* Create maven.yml"
+    },
+    {
+      "sha": "60784f036b8a265b086e35c89e93a9fa78475d62",
+      "date": "2022-04-11T09:15:08-07:00",
+      "author": "Frank Liu",
+      "email": "frankfliu2000@gmail.com",
+      "message": "[api] Uses new DJL api to load model (#21)\n\n"
+    },
+    {
+      "sha": "ec9191a8fee721ff26b553bd22ad3a1d118f2a43",
+      "date": "2022-03-02T10:59:27-08:00",
+      "author": "Frank Liu",
+      "email": "frankfliu2000@gmail.com",
+      "message": "Release djl-spring-boot-starter 0.15 (#20)\n\n* [maven-release-plugin] prepare release djl-spring-boot-starter-project-0.15\n\n* [maven-release-plugin] prepare for next development iteration"
+    },
+    {
+      "sha": "21aa95f862307bcda5af6370e615d73cd6871be9",
+      "date": "2022-03-01T20:36:42+01:00",
+      "author": "Dennis Kieselhorst",
+      "email": "mail@dekies.de",
+      "message": "Upgrade to DJL 0.15.0 (#18)\n\n* Upgrade to DJL 0.15.0\n\n* Add djl-spring-boot-starter-mxnet-auto dependency back\n\nCo-authored-by: Frank Liu <frankfliu2000@gmail.com>"
+    },
+    {
+      "sha": "e89544e49a812e847bb34b43f47ccb90bb58dfc4",
+      "date": "2022-03-01T19:44:10+01:00",
+      "author": "Dennis Kieselhorst",
+      "email": "mail@dekies.de",
+      "message": "Upgrade to Spring Boot 2.6.4 (#19)\n\n"
+    },
+    {
+      "sha": "7963dcadaab66c7f67a2adc1b7e677d029fe4425",
+      "date": "2021-12-20T13:53:22-08:00",
+      "author": "Frank Liu",
+      "email": "frankfliu2000@gmail.com",
+      "message": "Add djl-admin as codeowners (#17)\n\n"
+    },
+    {
+      "sha": "c3a36c1ceeac1a6d16d112264d1c0a20ede9d1cf",
+      "date": "2021-12-20T10:38:03-08:00",
+      "author": "Frank Liu",
+      "email": "frankfliu2000@gmail.com",
+      "message": "Upgrade spring-boot-starter-parent to 2.5.7 (#16)\n\n"
+    },
+    {
+      "sha": "a3bdcabcc4682aaf39f313c61e26c139e20a40cb",
+      "date": "2021-12-18T01:50:48+08:00",
+      "author": "James Zow",
+      "email": "jameszow@163.com",
+      "message": "[Update] djl-spring-boot version (#15)\n\n* [Update] update pom file version 0.12-SNAPSHOT -> 0.14.0\n\nCo-authored-by: Frank Liu <frankfliu2000@gmail.com>\n\n* Remove unnecessary tensorflow-api dependency\n\nCo-authored-by: James Zow <wei.zhao@iston.ai>\nCo-authored-by: Frank Liu <frankfliu2000@gmail.com>"
+    },
+    {
+      "sha": "beaff812ae58bfef87ff0aad984e333d4031072d",
+      "date": "2021-11-09T14:52:32-08:00",
+      "author": "Zach Kimberg",
+      "email": "zachary@kimberg.com",
+      "message": "Merge pull request #14 from zachgk/own\n\nAdd codeowners"
+    },
+    {
+      "sha": "9e8b5a75835a481da02bd8f1e607630a3e33c664",
+      "date": "2021-11-09T14:47:54-08:00",
+      "author": "Zach Kimberg",
+      "email": "kimbergz@amazon.com",
+      "message": "Add codeowners\n"
+    },
+    {
+      "sha": "8dea4feb647ae31543d5401425a93b3b54aea73e",
+      "date": "2021-06-26T13:03:06-07:00",
+      "author": "Frank Liu",
+      "email": "frankfliu2000@gmail.com",
+      "message": "[maven-release-plugin] prepare for next development iteration\n"
+    },
+    {
+      "sha": "803667c3a437b23a3184528baa22005205cf7dcd",
+      "date": "2021-06-26T13:03:00-07:00",
+      "author": "Frank Liu",
+      "email": "frankfliu2000@gmail.com",
+      "message": "[maven-release-plugin] prepare release djl-spring-boot-starter-project-0.11\n"
+    },
+    {
+      "sha": "147d9fcbb639b0b04f41642a5dda1143732d6791",
+      "date": "2021-06-26T13:28:12-07:00",
+      "author": "Frank Liu",
+      "email": "frankfliu2000@gmail.com",
+      "message": "upgrade springboot to 2.5.2\n"
+    },
+    {
+      "sha": "f87408074d030d43e5c680ae5136782c1c80e807",
+      "date": "2021-06-26T13:16:01-07:00",
+      "author": "Frank Liu",
+      "email": "frankfliu2000@gmail.com",
+      "message": "Trigger release with workflow_dispatch\n"
+    },
+    {
+      "sha": "6b8ce60e319784355bc3b58c562fd26ec4fa894f",
+      "date": "2021-06-26T12:47:00-07:00",
+      "author": "Frank Liu",
+      "email": "frankfliu2000@gmail.com",
+      "message": "Upgrade to djl 0.11.0\n"
+    },
+    {
+      "sha": "2ba6ac912abe4c9f6d99faca450c2eed1cfc89e8",
+      "date": "2021-04-27T20:50:55-07:00",
+      "author": "Frank Liu",
+      "email": "frankfliu2000@gmail.com",
+      "message": "Upgrade to 0.11.0-SNAPSHOT\n"
+    },
+    {
+      "sha": "2323c3477f29082c13fe38c09586d5d37ef34c74",
+      "date": "2021-02-03T12:10:18-05:00",
+      "author": "Mikhail Shapirov",
+      "email": "shapirov@amazon.com",
+      "message": "Fixed #12 added references to documentation to deploy on EKS and PCF\n"
+    },
+    {
+      "sha": "d50e0f8536c0411fbd8a5880ce3ab16243c00965",
+      "date": "2021-01-29T17:21:40-05:00",
+      "author": "Mikhail Shapirov",
+      "email": "shapirov@amazon.com",
+      "message": "type in application.yml\n"
+    },
+    {
+      "sha": "b197722f118cb16ab0758f40e3c2283248c7dae1",
+      "date": "2021-01-29T17:08:37-05:00",
+      "author": "Mikhail Shapirov",
+      "email": "shapirov@amazon.com",
+      "message": "Fixed #13 - indirect dfix through upgrade of version. Added tests\n"
+    }
+  ],
+  "commit_sha": "2a46dd091badfcd99e052873b3dea2217dbbc1d3",
+  "extracted_at": "2026-10-05T18:14:21.114151+00:00"
+}

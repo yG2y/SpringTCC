@@ -1,0 +1,52 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${spring-boot.version};2.5.2",
+  "spring_boot_major": "2",
+  "java_versions_declared": "17",
+  "build_evidence": [
+    {
+      "file": "consumer/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "consumer/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "rpc-client/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "rpc-client/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "rpc-client/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "rpc-server/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "rpc-server/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "rpc-server/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    }
+  ]
+}

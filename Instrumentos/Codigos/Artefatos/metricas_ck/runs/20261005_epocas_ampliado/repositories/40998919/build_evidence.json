@@ -1,0 +1,24 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${spring-boot.version};3.0.6",
+  "spring_boot_major": "3",
+  "java_versions_declared": "17",
+  "build_evidence": [
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "problem-spring-web-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "problem-spring-web-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "problem-spring-web-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    }
+  ]
+}

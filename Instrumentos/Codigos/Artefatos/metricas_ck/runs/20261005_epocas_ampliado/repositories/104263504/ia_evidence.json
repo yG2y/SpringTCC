@@ -1,0 +1,41 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 4,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "26ea2dfef9f7ecc110861169304918667ba5a743",
+      "date": "2026-01-26T10:02:37+01:00",
+      "author": "Prasad Subrahmanya",
+      "email": "prasadus92@gmail.com",
+      "message": "Merge pull request #1 from prasadus92/claude/refactor-codebase-enterprise-Afcva\n\nrefactor: Complete enterprise-grade architecture overhaul"
+    },
+    {
+      "sha": "8dea7ca9286a5795bd6b70c661c73bea9cf807ca",
+      "date": "2026-01-25T23:27:59Z",
+      "author": "Claude",
+      "email": "noreply@anthropic.com",
+      "message": "refactor: Complete enterprise-grade architecture overhaul\n\nMajor refactoring of Game of Three implementation:\n\nArchitecture:\n- Migrated from Spring Boot 1.3.3 to Spring Boot 3.2.1 with Java 17\n- Implemented Clean Architecture (Hexagonal) with proper layer separation\n- Applied Domain-Driven Design patterns throughout\n- Replaced deprecated Velocity templates with Thymeleaf\n\nDomain Layer (pure Java, no dependencies):\n- Value Objects: GameId, PlayerId, PlayerNumber\n- Entities: Game (aggregate root), Player, Move\n- Domain Events: PlayerJoinedEvent, GameStartedEvent, MoveMadeEvent, GameFinishedEvent\n- Custom exceptions with error codes\n\nApplication Layer:\n- Use Cases: CreateGameUseCase, MakeMoveUseCase, GetGameUseCase\n- Input/Output Ports for dependency inversion\n- Service implementations with proper transaction boundaries\n\nInfrastructure Layer:\n- REST API with OpenAPI/Swagger documentation\n- WebSocket support with STOMP for real-time gameplay\n- In-memory repository with ConcurrentHashMap\n- Global exception handling with standardized error responses\n\nTesting:\n- Comprehensive unit tests for domain models\n- Use case tests with mocks\n- Integration tests for REST API\n- Architecture tests using ArchUnit\n\nDevOps:\n- Multi-stage Dockerfile for optimized images\n- Docker Compose configuration\n- GitHub Actions CI/CD pipeline with test coverage\n\nDocumentation:\n- Comprehensive README with architecture diagrams\n- API reference documentation\n- Configuration guide\n"
+    },
+    {
+      "sha": "17df65ef207b033ee76ba185efb9fa7948afcffa",
+      "date": "2017-09-21T01:57:36+05:30",
+      "author": "Prasad",
+      "email": "prasadus92@gmail.com",
+      "message": "Updated README.\n"
+    },
+    {
+      "sha": "1c49123d87f6a561a3738bb7b38984e39a6d417b",
+      "date": "2017-09-21T01:40:23+05:30",
+      "author": "Prasad",
+      "email": "prasadus92@gmail.com",
+      "message": "Creating a Git repo for the project.\n"
+    }
+  ],
+  "commit_sha": "26ea2dfef9f7ecc110861169304918667ba5a743",
+  "extracted_at": "2026-10-05T18:40:03.058064+00:00"
+}

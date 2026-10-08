@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "f1194f0e4da8e73f42d49d7d09ab1f607addac25",
+      "date": "2026-09-15T17:32:16Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "chore(deps): update dependency java-jdk to v25.0.4+101.0.lts (#28)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "aa809c54fcfa7d92004628f7104876023844309e",
+      "date": "2026-08-20T16:31:59Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "fix(deps): update dependency org.springframework.ai:spring-ai-bom to v2.0.1 (#27)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "55c58d56d515f92128efb63628fb9ea124e8a79b",
+      "date": "2026-06-12T18:51:27Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "fix(deps): update spring-ai.version to v2.0.0 (#26)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "3094b004f7f793b4041458e684d8bd72a90e42c6",
+      "date": "2026-06-09T23:00:36Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "fix(deps): update spring-ai.version to v2.0.0-rc2 (#25)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "7f969aa430399243649048110a8d122ec364bf1f",
+      "date": "2026-06-06T01:10:21Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "fix(deps): update spring-ai.version to v2.0.0-rc1 (#24)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "7e9f7cb836cc0495a8fe6c733fd5e75a9a426eb6",
+      "date": "2026-06-05T21:44:09Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "chore(deps): update jacoco-maven-plugin.version to v0.8.15 (#23)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "a2fc685b7822ae508cf7a3dda20454f657d22797",
+      "date": "2026-05-27T19:31:42Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "fix(deps): update dependency org.springframework.ai:spring-ai-bom to v2.0.0-m8 (#22)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "df832ce674958d2d133df4ed63da49804f729ea5",
+      "date": "2026-05-22T20:09:47Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "fix(deps): update dependency org.springframework.ai:spring-ai-bom to v2.0.0-m7 (#21)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "cd023af3fbd4c7b3e1a38a243d876cf724230bea",
+      "date": "2026-05-20T15:17:43+08:00",
+      "author": "zhijunio",
+      "email": "zhijun.lab@gmail.com",
+      "message": "Delete .DS_Store"
+    },
+    {
+      "sha": "dea882c9f4b7878bdf64b438334775ea1aa30db8",
+      "date": "2026-05-20T15:17:05+08:00",
+      "author": "zhijunio",
+      "email": "zhijun.lab@gmail.com",
+      "message": "fix(core): 更新.gitignore文件\n\n• 为.gitignore文件添加.DS_Store忽略规则\n• 更新.gitignore文件以忽略macOS默认文件\n\n变更模式为单文件变更，仅修改了.gitignore文件。\n"
+    },
+    {
+      "sha": "5639d234ccb890080234a073b6425b9f5c07d911",
+      "date": "2026-05-20T15:14:25+08:00",
+      "author": "zhijunio",
+      "email": "zhijun.lab@gmail.com",
+      "message": "refactor(core): 代码重构和优化\n\n• 修改database-schema.sql，table-columns.sql和table-names.sql文件，优化SQL查询逻辑\n• 更新pom.xml文件，调整jacoco.minimum.coverage配置\n• 优化代码结构和性能，提高可维护性\n\n注意：本次提交主要涉及代码重构和优化，旨在提高代码可维护性和性能。\n"
+    },
+    {
+      "sha": "e27695dc42a79e7d3df8e94730590c130b8d76ad",
+      "date": "2026-05-20T15:08:37+08:00",
+      "author": "zhijunio",
+      "email": "zhijun.lab@gmail.com",
+      "message": "feat(core): 添加数据库模式和表结构文件\n\n• 添加数据库模式文件 database-schema.sql\n• 添加表结构文件 table-columns.sql 和 table-names.sql\n• 更新 SQL 语言支持\n\n变更模式：功能开发\n涉及文件：3 个 SQL 文件\n\n注意：此次提交添加了数据库模式和表结构文件，用于支持项目的功能开发。\n"
+    },
+    {
+      "sha": "877a8bfcb030ad4c3deb02397d747dad95ac68c0",
+      "date": "2026-05-20T15:06:38+08:00",
+      "author": "zhijunio",
+      "email": "zhijun.lab@gmail.com",
+      "message": "docs(core): 更新 README.md 文档\n\n• 更新 GitHub Workflow Status 图标\n• 修复 README.md 中的链接地址\n• 优化文档格式和内容\n\n变更类型：单文件变更\n影响文档：1 个文件（README.md）\n"
+    },
+    {
+      "sha": "aaf56be7b2217125073e9fef41ba52d89d2f76e3",
+      "date": "2026-05-20T15:05:43+08:00",
+      "author": "zhijunio",
+      "email": "zhijun.lab@gmail.com",
+      "message": "refactor(test): 代码重构和优化\n\n• 更新测试代码，删除冗余代码，优化测试逻辑\n• 修改pom.xml，更新依赖版本\n• 调整application-test.yml，优化配置项\n\n变更模式：代码重构\n测试代码：4个文件\n配置文件：1个文件\n主要修改文件：BaseIT.java、pom.xml、application-test.yml\n\n注意：此次提交主要目的是优化测试代码和配置项，提高项目的可维护性和稳定性。\n"
+    },
+    {
+      "sha": "3301ab8ac661b2e6f7be5b3a997a5209ce506c23",
+      "date": "2026-05-20T15:03:03+08:00",
+      "author": "zhijunio",
+      "email": "zhijun.lab@gmail.com",
+      "message": "Merge remote-tracking branch 'origin/main'\n"
+    },
+    {
+      "sha": "ec3dde2693f5c90060a1b1662a90f1e824101f0f",
+      "date": "2026-05-20T14:53:20+08:00",
+      "author": "zhijunio",
+      "email": "zhijun.lab@gmail.com",
+      "message": "refactor(core): 重构数据库Schema服务和测试代码\n\n• 修改DatabaseTool.java，简化数据库Schema服务\n• 更新schema.sql，添加员工表结构\n• 增加测试代码，包括BaseIT.java和TestApplication.java\n\n注意：本次提交重构了数据库Schema服务和测试代码，改进了代码结构和可读性。\n"
+    },
+    {
+      "sha": "a255a7f2673a2e9b2b5410f7f598fb86e2f0f0f6",
+      "date": "2026-05-20T06:20:10Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "chore(deps): update dependency maven to v3.9.16 (#20)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "42a997173a804065b0b4eb12efa903a3dd7a12a6",
+      "date": "2026-05-20T14:19:06+08:00",
+      "author": "zhijunio",
+      "email": "zhijun.lab@gmail.com",
+      "message": "feat(core): 实现自然语言转 SQL 查询\n\n• 添加 mvnw 和 mvnw.cmd 脚本\n• 添加 Taskfile.yml 和 build.yml 配置文件\n• 更新 README.md 文档\n\n注：本次提交实现了自然语言转 SQL 查询的功能，并更新了相关文档和配置文件。\n"
+    },
+    {
+      "sha": "8580d89ac42b1cc6fe5188b1d30ff149a4ae75ae",
+      "date": "2026-05-09T09:13:10Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "fix(deps): update dependency org.springframework.boot:spring-boot-starter-parent to v4.0.6 (#19)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "37e65b41cc95dbfdbf472ff908e19b0899be2112",
+      "date": "2026-05-09T09:12:59Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "fix(deps): update dependency org.springframework.ai:spring-ai-bom to v1.1.6 (#18)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "8dfe7099b667bb6787b9a3f1f63a798ff565269b",
+      "date": "2026-04-23T13:21:58+08:00",
+      "author": "zhijunio",
+      "email": "zhijun.lab@gmail.com",
+      "message": "docs(readme): 重构代码\n"
+    },
+    {
+      "sha": "bc8a74c6de0ccf9994fdcb21475f4d5616d91fd2",
+      "date": "2026-04-17T11:18:28+08:00",
+      "author": "zhijunio",
+      "email": "zhijun.lab@gmail.com",
+      "message": "Update .sdkmanrc and README\n"
+    },
+    {
+      "sha": "a5fa5c45bce7339798b1c7906e66573a64646ade",
+      "date": "2026-03-30T12:18:58+08:00",
+      "author": "chensoul",
+      "email": "ichensoul@gmail.com",
+      "message": "chore: push code\n"
+    },
+    {
+      "sha": "be23cdf5c2483999b6cd24040122259b126de00f",
+      "date": "2026-03-26T17:14:45Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "fix(deps): update dependency org.springframework.ai:spring-ai-bom to v1.1.4 (#17)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "2f3f9e52f5c921b04e22a7cbc30406c81fb3cad5",
+      "date": "2026-03-26T12:32:59Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "fix(deps): update dependency org.springframework.boot:spring-boot-starter-parent to v3.5.13 (#16)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "e1f92ee4fd1e94c25ab5374d9e88ea1bd25e6677",
+      "date": "2026-03-19T14:10:35Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "fix(deps): update dependency org.springframework.boot:spring-boot-starter-parent to v3.5.12 (#15)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "a12318430b8ffb333dacf3df6bada01bb083951f",
+      "date": "2026-03-16T21:23:40Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "fix(deps): update dependency org.springframework.ai:spring-ai-bom to v1.1.3 (#14)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "f03ddb2fea59cfd5be3ca4142715646075a62332",
+      "date": "2026-02-19T13:45:53Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "fix(deps): update dependency org.springframework.boot:spring-boot-starter-parent to v3.5.11 (#13)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "9649e881a6c61b9fc5b9e5495b2526d74139a3e2",
+      "date": "2026-02-03T18:01:41+08:00",
+      "author": "chensoul",
+      "email": "ichensoul@gmail.com",
+      "message": "Merge remote-tracking branch 'origin/main'\n"
+    },
+    {
+      "sha": "0792fd96955300faf48bbe2115c1333b7712ccff",
+      "date": "2026-02-03T18:01:15+08:00",
+      "author": "chensoul",
+      "email": "ichensoul@gmail.com",
+      "message": "docs(readme): 更新功能特性与技术栈描述\n"
+    }
+  ],
+  "commit_sha": "f1194f0e4da8e73f42d49d7d09ab1f607addac25",
+  "extracted_at": "2026-10-05T18:48:55.189592+00:00"
+}

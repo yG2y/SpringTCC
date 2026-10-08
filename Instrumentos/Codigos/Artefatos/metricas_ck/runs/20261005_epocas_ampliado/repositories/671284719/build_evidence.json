@@ -1,0 +1,56 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${spring-boot-starter-aop.version};${spring-boot-starter-data-jpa.version};${spring-boot-starter-validation.version};${spring-boot.version};${springboot.version};3.4.4",
+  "spring_boot_major": "3",
+  "java_versions_declared": "17",
+  "build_evidence": [
+    {
+      "file": "airpower-api/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "airpower-curd/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "airpower-curd/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "airpower-exception/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "airpower-mqtt/pom.xml",
+      "artifact": "spring-boot"
+    },
+    {
+      "file": "airpower-mqtt/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "airpower-open/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "airpower-redis/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-integration"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    }
+  ]
+}

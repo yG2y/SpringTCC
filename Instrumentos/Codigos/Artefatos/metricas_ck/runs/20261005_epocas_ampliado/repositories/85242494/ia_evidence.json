@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "6fe79d0dc2258dc71efd2467224134d239f37328",
+      "date": "2026-09-08T17:38:52+02:00",
+      "author": "Riccardo Melioli",
+      "email": "richkmeli@gmail.com",
+      "message": "Merge pull request #26 from richkmeli/dependabot/maven/org.postgresql-postgresql-42.7.12\n\nBump org.postgresql:postgresql from 42.5.4 to 42.7.12"
+    },
+    {
+      "sha": "e8d0daf94ea79a8fe7616f2dcb82aab47256552a",
+      "date": "2026-09-08T15:37:10Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.postgresql:postgresql from 42.5.4 to 42.7.12\n\nBumps [org.postgresql:postgresql](https://github.com/pgjdbc/pgjdbc) from 42.5.4 to 42.7.12.\n- [Release notes](https://github.com/pgjdbc/pgjdbc/releases)\n- [Changelog](https://github.com/pgjdbc/pgjdbc/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/pgjdbc/pgjdbc/compare/REL42.5.4...REL42.7.12)\n\n---\nupdated-dependencies:\n- dependency-name: org.postgresql:postgresql\n  dependency-version: 42.7.12\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "3fcb723f68af2cbc22a3b345e1ad67023666a896",
+      "date": "2026-07-19T20:16:52+02:00",
+      "author": "Riccardo Melioli",
+      "email": "richkmeli@gmail.com",
+      "message": "Merge pull request #25 from richkmeli/fix/hardcoded-secrets-12599741022791555771\n\n🛡️ Sentinel: [CRITICAL/SECRET] Remove hardcoded default credentials and keys"
+    },
+    {
+      "sha": "d925bbfc35f05f1203611e0c451fe6c97d432c32",
+      "date": "2026-02-05T23:13:51Z",
+      "author": "google-labs-jules[bot]",
+      "email": "161369871+google-labs-jules[bot]@users.noreply.github.com",
+      "message": "🛡️ Sentinel: [CRITICAL/SECRET] Remove hardcoded default credentials and keys\n\nRemoved hardcoded default values for DB_PASSWORD and ENCRYPTION_KEY in:\n- Dockerfile\n- docker-compose.yml\n- src/main/resources/configuration.properties\n- src/main/resources/application-docker.properties\n\nUpdated .env.example with descriptive placeholders.\nAdded security journal entry in .jules/sentinel.md.\n\nCo-authored-by: richkmeli <7313162+richkmeli@users.noreply.github.com>\n"
+    },
+    {
+      "sha": "55d71189fca618d1b8349a6cae8c16f6b073720e",
+      "date": "2026-01-21T00:24:37+01:00",
+      "author": "Riccardo Melioli",
+      "email": "richkmeli@gmail.com",
+      "message": "Merge pull request #10 from richkmeli/palette-accessible-device-buttons-8914673801807735269\n\n🎨 Palette: Improve accessibility of device action buttons"
+    },
+    {
+      "sha": "f699a5529550bcdb42a50db78daf5ef77ba3683c",
+      "date": "2026-01-20T23:17:06Z",
+      "author": "google-labs-jules[bot]",
+      "email": "161369871+google-labs-jules[bot]@users.noreply.github.com",
+      "message": "🎨 Palette: Improve accessibility of device action buttons\n\nRefactored the device list's \"Actions\" to be more accessible and user-friendly.\n\n- Replaced the popover with three distinct, icon-only buttons for \"Commands\", \"View Output\", and \"Delete\".\n- Added `title` attributes to each button to provide tooltips on hover.\n- Added `aria-label` attributes to each button to ensure they are accessible to screen readers.\n- Updated the table header to match the new, cleaner layout, consistent with the project's README screenshot.\n"
+    },
+    {
+      "sha": "472df2b2056915323eb6c96fa654499a2e0d5930",
+      "date": "2025-12-28T16:55:36+01:00",
+      "author": "richkmeli",
+      "email": "richkmeli@gmail.com",
+      "message": "refactor: Improve data model robustness with null checks, correct JSON serialization, and safer test data initialization.\n"
+    },
+    {
+      "sha": "9870e662f00e12ea89e575a59d4c7fb73d82f99f",
+      "date": "2025-12-28T16:11:50+01:00",
+      "author": "richkmeli",
+      "email": "richkmeli@gmail.com",
+      "message": "fix: add null checks to prevent NPE in rmc association and increment version to 1.1.5\n"
+    },
+    {
+      "sha": "45c2bb79ef9f401102a9d45077b54351a73eb86f",
+      "date": "2025-12-28T15:20:02+01:00",
+      "author": "richkmeli",
+      "email": "richkmeli@gmail.com",
+      "message": "chore: Update jframework dependency to 1.2.16 and add a release note comment to the build workflow.\n"
+    },
+    {
+      "sha": "1cc2db3b4abea09724b0b89652a839c20796ee8e",
+      "date": "2025-12-28T15:09:15+01:00",
+      "author": "richkmeli",
+      "email": "richkmeli@gmail.com",
+      "message": "feat: Add GitHub Actions workflow to create releases on tag pushes with WAR artifact.\n"
+    },
+    {
+      "sha": "5e632848c8192ab8d498447cda648caadbb91a06",
+      "date": "2025-12-28T14:32:03+01:00",
+      "author": "richkmeli",
+      "email": "richkmeli@gmail.com",
+      "message": "fix: Update GitHub Actions workflow to configure Maven for GitHub Packages and improve test result handling\n"
+    },
+    {
+      "sha": "caaa065559eb8c1627614cb7c73bae0f8ea457ec",
+      "date": "2025-12-28T14:29:26+01:00",
+      "author": "richkmeli",
+      "email": "richkmeli@gmail.com",
+      "message": "feat: Migrate database from MySQL to PostgreSQL; update Docker and application configurations\n"
+    },
+    {
+      "sha": "077b4bd0cd91712023c36a66d0c66030394523e0",
+      "date": "2025-12-28T04:15:53+01:00",
+      "author": "richkmeli",
+      "email": "richkmeli@gmail.com",
+      "message": "Add signup and user management pages with corresponding JavaScript functionality\n\n- Implemented signup.html for user registration with form validation and submission handling.\n- Created users.html for displaying user list with options to edit and delete users.\n- Developed account.js to manage user session and navigation based on login status.\n- Added devices.js for device management, including loading device data and handling commands.\n- Introduced login.js for user authentication with password hashing.\n- Implemented reverseCommands.js and reverseCommandsOutput.js for managing device commands and outputs.\n- Created rmcs.js for managing RMCs with functionality to load and delete RMC entries.\n- Added signup.js for handling user registration logic and validation.\n- Updated users.js for loading user data and managing user actions.\n"
+    },
+    {
+      "sha": "6e1afaf6835fdc7af1e8c59a38522a3e92bdd274",
+      "date": "2025-12-28T02:33:27+01:00",
+      "author": "richkmeli",
+      "email": "richkmeli@gmail.com",
+      "message": "fix: Update build configuration for Maven and Docker; modify repository settings in pom.xml\n"
+    },
+    {
+      "sha": "be413ba26b39134679406c7b9a3748fde3a5f6dc",
+      "date": "2025-12-28T02:23:06+01:00",
+      "author": "richkmeli",
+      "email": "richkmeli@gmail.com",
+      "message": "fix: Update MySQL connector version and clean up error handling in RmsErrorController\n"
+    },
+    {
+      "sha": "55789178d7d2ab28c499494836b1cefed1f3592d",
+      "date": "2025-12-27T20:45:54+01:00",
+      "author": "richkmeli",
+      "email": "richkmeli@gmail.com",
+      "message": "feat: Update project to support Java 17, enhance Docker configuration, and improve security practices\n"
+    },
+    {
+      "sha": "ee3b1ee44d8669e3f67842b2b4e67e179bd99e84",
+      "date": "2025-12-27T19:34:22+01:00",
+      "author": "richkmeli",
+      "email": "richkmeli@gmail.com",
+      "message": "chore: add secureData*.txt, logfile.txt, and rmc_log.txt to .gitignore\n"
+    },
+    {
+      "sha": "d459310837977f8e77a796169801e4c65ecd35b4",
+      "date": "2025-12-27T19:31:17+01:00",
+      "author": "richkmeli",
+      "email": "richkmeli@gmail.com",
+      "message": "fix: Correct RMC association with authenticated users and update webapp resource and navigation paths to relative.\n"
+    },
+    {
+      "sha": "45419e3aa0c6244948d7a755b20166d1a36e3260",
+      "date": "2025-12-27T17:58:44+01:00",
+      "author": "richkmeli",
+      "email": "richkmeli@gmail.com",
+      "message": "chore: Update JFramework dependency version and groupId; docs: Improve README clarity, formatting, and deployment instructions.\n"
+    },
+    {
+      "sha": "7da133edb02bcf748bd0ec9e75d66bc51cc8e6b2",
+      "date": "2025-12-27T17:46:42+01:00",
+      "author": "richkmeli",
+      "email": "richkmeli@gmail.com",
+      "message": "feat: Upgrade Java to 11, update Docker image to Tomcat 9 with JDK 11, and improve Docker deployment documentation.\n"
+    },
+    {
+      "sha": "efcc21f0be148941e9e16434a61c4078b40cabf0",
+      "date": "2021-03-21T14:41:26+01:00",
+      "author": "Riccardo Melioli",
+      "email": "richkmeli@gmail.com",
+      "message": "add DeviceInfo and Location for the android Device. update DB structure.\n"
+    },
+    {
+      "sha": "f4da53a34582b85113784b2733110231c15ff1aa",
+      "date": "2021-03-05T23:15:29+01:00",
+      "author": "Riccardo Melioli",
+      "email": "richkmeli@gmail.com",
+      "message": "released version 1.1.4\n"
+    },
+    {
+      "sha": "9783fca212dd7fad052ff9a992db42074675fad4",
+      "date": "2021-03-05T23:05:25+01:00",
+      "author": "Riccardo Melioli",
+      "email": "richkmeli@gmail.com",
+      "message": "released version 1.1.3\n"
+    },
+    {
+      "sha": "2d4230917268bdafd3401b73b24ae71dbe76959f",
+      "date": "2021-03-05T00:17:10+01:00",
+      "author": "Riccardo Melioli",
+      "email": "richkmeli@gmail.com",
+      "message": "add fields for Richkware Android. add Geolocation with MapBox. add popover dialog for passwords.\n"
+    },
+    {
+      "sha": "8bbc3cd9725de00d4dfd6724d071e6df109a7fd4",
+      "date": "2021-03-01T22:29:45+01:00",
+      "author": "Riccardo Melioli",
+      "email": "richkmeli@gmail.com",
+      "message": "add codecov\n"
+    },
+    {
+      "sha": "0c3cc44028c386f92267353ae22f95fbdce554eb",
+      "date": "2021-03-01T01:24:01+01:00",
+      "author": "Riccardo Melioli",
+      "email": "richkmeli@gmail.com",
+      "message": "update jframework lib (1.2.12).\n"
+    },
+    {
+      "sha": "a269d6d109f8018a1d053ece2477d72c3f4796b2",
+      "date": "2021-02-27T03:26:47+01:00",
+      "author": "Riccardo Melioli",
+      "email": "richkmeli@gmail.com",
+      "message": "add status service.\n"
+    },
+    {
+      "sha": "3ab5f1a0ca71e3ac9b8ca05969086a3567f60dc9",
+      "date": "2021-02-27T00:44:10+01:00",
+      "author": "Riccardo Melioli",
+      "email": "richkmeli@gmail.com",
+      "message": "redirect all not mapped resources to index.html. fix connections among resources.\n"
+    },
+    {
+      "sha": "986c1b80f09655456c16c00faae83e57b9151ba4",
+      "date": "2021-02-21T21:20:05+01:00",
+      "author": "Riccardo Melioli",
+      "email": "richkmeli@gmail.com",
+      "message": "moved all stuff about servlet management outside the v1 package.\n"
+    },
+    {
+      "sha": "4a619dd769eee2d791490b8a1def7b2456ef2af6",
+      "date": "2021-02-21T21:10:25+01:00",
+      "author": "Riccardo Melioli",
+      "email": "richkmeli@gmail.com",
+      "message": "migrated to v2 (spring annotations). remapping resources to avoid collision between resources and services.\n"
+    }
+  ],
+  "commit_sha": "6fe79d0dc2258dc71efd2467224134d239f37328",
+  "extracted_at": "2026-10-05T18:15:26.422131+00:00"
+}

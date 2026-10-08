@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "d0f1337c190b5bfa353372271cda3b79f5d0ca43",
+      "date": "2024-07-09T12:06:28+09:00",
+      "author": "moonheekim0118",
+      "email": "hellomooneekim@gmail.com",
+      "message": "chore: 스토리북 주소 변경"
+    },
+    {
+      "sha": "7046413504da643e4840ddccafa73340733abd09",
+      "date": "2023-02-18T19:35:58+09:00",
+      "author": "yeonLog",
+      "email": "53105735+yeon-06@users.noreply.github.com",
+      "message": "refactor: SlackEventServiceFinder 로직 개선 (#710)\n\n* refactor: SlackEventServiceFinder 캐싱 방식으로 변경\n\n* test: SlackEventServiceFinder를 통해 Service를 찾는 로직 테스트\n\n* refactor: HashMap 대신 EnumMap 사용\n\n* style: Service -> EventHandler 네이밍 변경\n\n* test: 메서드 순서 변경"
+    },
+    {
+      "sha": "fa8bc5cf6af6519c174a6cb30a4d4520c17660ae",
+      "date": "2023-01-07T14:44:44+09:00",
+      "author": "Jaejeung Ko",
+      "email": "jaejeung3210@gmail.com",
+      "message": "feat: frontend-deploy yml 파일 생성 (#717)\n\n"
+    },
+    {
+      "sha": "3dca307806a88dd5f9ad0f37e1f2a677ec3623f4",
+      "date": "2022-12-13T17:28:22+09:00",
+      "author": "봄",
+      "email": "55357130+JangBomi@users.noreply.github.com",
+      "message": "chore: submodule 업데이트 (#715)\n\n"
+    },
+    {
+      "sha": "0632c53bb0d7f5fff98a9eef22eb165814d3bbb8",
+      "date": "2022-11-13T21:40:43+09:00",
+      "author": "Jaejeung Ko",
+      "email": "jaejeung3210@gmail.com",
+      "message": "Merge pull request #702 from woowacourse-teams/fe/test\n\ntest: 프론트엔드 테스트 추가 및 CI 설정 수정"
+    },
+    {
+      "sha": "722a68b92838fcd70d57d0f7307e0b364e9b785f",
+      "date": "2022-11-13T21:31:52+09:00",
+      "author": "써머(최혜원)",
+      "email": "80666066+hyewoncc@users.noreply.github.com",
+      "message": "refactor: n+1 발생 jpql 쿼리에 join fetch 적용 (#709)\n\n"
+    },
+    {
+      "sha": "cfb5e236b60f1263a0a34269b67b08d3b0ecd765",
+      "date": "2022-11-13T15:56:52+09:00",
+      "author": "봄",
+      "email": "55357130+JangBomi@users.noreply.github.com",
+      "message": "fix: channel subscription에서 발생하는 n+1 쿼리 해결 (#708)\n\n* fix: n+1 쿼리 해결\n\n* refactor: 메서드 이름 변경"
+    },
+    {
+      "sha": "c6eb10b2959a14d5964202720c8abd707a881779",
+      "date": "2022-11-13T15:46:22+09:00",
+      "author": "yeonLog",
+      "email": "53105735+yeon-06@users.noreply.github.com",
+      "message": "fix: ReminderSender에서 N+1 문제 개선 (#707)\n\n* fix: 리마인더 전송을 위한 리마인더 목록 조회 시 발생하는 N+1 문제 해결\n\n* fix: 날짜를 통해 리마인더 삭제 시 delete가 N번 나가는 버그 개선\n\n* refactor: 삭제 시 in절 사용하도록 개선"
+    },
+    {
+      "sha": "58ab3b8551d68ac96c7f3798889b70eba8164b01",
+      "date": "2022-11-12T13:06:57+09:00",
+      "author": "yeonLog",
+      "email": "53105735+yeon-06@users.noreply.github.com",
+      "message": "docs: 문서 위치 이동 (#706)\n\n* docs: 리드미 링크 업데이트\n\n* docs: 불필요한 문서 삭제"
+    },
+    {
+      "sha": "0b2c3f4924d9c8bbc046e6c97251e383b6756ed3",
+      "date": "2022-11-12T01:32:10+09:00",
+      "author": "봄",
+      "email": "55357130+JangBomi@users.noreply.github.com",
+      "message": "refactor: 메시지 text에서 멘션 아이디를 대체하는 부분 리팩토링 (#693)\n\n* feat: MessageService에서 멘션 아이디를 대치하는 기능 추가\n\n* feat: @MentionIdReplaceable 어노테이션을 통해 멘션 아이디 분리\n\n* refactor: 사용하지 않는 코드 삭제\n\n* refactor: 리플렉션을 사용하여 개선\n\n* refactor: ThrowingFunction, FunctionWrapper 삭제\n\n* refactor: 코드리뷰 반영\n\n* refactor: Utils private 기본생성자 추가"
+    },
+    {
+      "sha": "d5d2bdbce11fa6df929baa50f76d02e41f3ba389",
+      "date": "2022-11-05T22:51:07+09:00",
+      "author": "moonheekim0118",
+      "email": "hellomooneekim@gmail.com",
+      "message": "chore: storybook CI yml 파일 node modules 캐싱 적용\n"
+    },
+    {
+      "sha": "a55a3865cbf956e96f822a3a52a38368ecb3b0d7",
+      "date": "2022-11-05T22:50:03+09:00",
+      "author": "moonheekim0118",
+      "email": "hellomooneekim@gmail.com",
+      "message": "chore: package.json name 을 영어로 수정\n"
+    },
+    {
+      "sha": "84600ba7863dbc00695a976af6d9583aba5fb5a2",
+      "date": "2022-11-05T22:32:08+09:00",
+      "author": "moonheekim0118",
+      "email": "hellomooneekim@gmail.com",
+      "message": "chore: CI 캐싱 로직 주석 제거\n"
+    },
+    {
+      "sha": "28e04c1b956a32b4ec8c1be113e2b9bb5e297b42",
+      "date": "2022-11-05T22:30:25+09:00",
+      "author": "moonheekim0118",
+      "email": "hellomooneekim@gmail.com",
+      "message": "chore: 불필요한 패키지 제거\n"
+    },
+    {
+      "sha": "1bfc8d0e7e8ee84f5f1fbc5d0f58818c9ff91d57",
+      "date": "2022-11-05T22:29:24+09:00",
+      "author": "moonheekim0118",
+      "email": "hellomooneekim@gmail.com",
+      "message": "chore: 임시적으로 CI 캐시 로직 중단\n"
+    },
+    {
+      "sha": "81871c9f41bc453caaeb126d9fdfe2b8e3c500c4",
+      "date": "2022-11-05T22:27:48+09:00",
+      "author": "moonheekim0118",
+      "email": "hellomooneekim@gmail.com",
+      "message": "chore: CI 이름 수정\n"
+    },
+    {
+      "sha": "fd7de7586db9969cd30d069aad1aaf5a0918052d",
+      "date": "2022-11-05T22:26:44+09:00",
+      "author": "moonheekim0118",
+      "email": "hellomooneekim@gmail.com",
+      "message": "chore: jest 설정 수정 및 불필요한 패키지 제거\n"
+    },
+    {
+      "sha": "510c239784b0867d108f4cbedf33c128350cb893",
+      "date": "2022-11-05T22:17:19+09:00",
+      "author": "moonheekim0118",
+      "email": "hellomooneekim@gmail.com",
+      "message": "infra: github action CI에 npm cache 사용하는 로직 추가\n"
+    },
+    {
+      "sha": "badbbd7e030d0c405d8d0f44a9a7fe0b3c77a82a",
+      "date": "2022-11-05T22:14:33+09:00",
+      "author": "moonheekim0118",
+      "email": "hellomooneekim@gmail.com",
+      "message": "chore: unit test CI 파일 수정 및 package.json 스크립트 수정\n"
+    },
+    {
+      "sha": "9e443d4aa23a7143396241dc1be123ec725d346d",
+      "date": "2022-11-05T22:12:54+09:00",
+      "author": "moonheekim0118",
+      "email": "hellomooneekim@gmail.com",
+      "message": "chore: 불필요한 ci 파일 제거\n- lighthouse ci 제거\n"
+    },
+    {
+      "sha": "0e484d56169f3e2b82154cf778720cb054529f7b",
+      "date": "2022-11-05T22:10:22+09:00",
+      "author": "moonheekim0118",
+      "email": "hellomooneekim@gmail.com",
+      "message": "test: 특정 날짜 피드 페이지 테스트 작성\n- 특정 날짜 메시지 렌더 여부 작성\n- 상향 무한스크롤 로직 렌더 여부 작성 (미완성)\n"
+    },
+    {
+      "sha": "aaf7ec2bc476241e5113e5c5508d540ec6226285",
+      "date": "2022-11-05T22:09:48+09:00",
+      "author": "moonheekim0118",
+      "email": "hellomooneekim@gmail.com",
+      "message": "refactor: MSW message api 수정\n- 누락된 파람 추가\n"
+    },
+    {
+      "sha": "ca5cb55b587554d0766213fd957bb26ef8bb9b88",
+      "date": "2022-11-05T22:09:20+09:00",
+      "author": "moonheekim0118",
+      "email": "hellomooneekim@gmail.com",
+      "message": "chore: jest 설정 수정\n- resetMocks false 로 수정\n"
+    },
+    {
+      "sha": "5b7b4dd094be490dce50e2fc739b2782331ca8cb",
+      "date": "2022-11-05T20:45:18+09:00",
+      "author": "moonheekim0118",
+      "email": "hellomooneekim@gmail.com",
+      "message": "refactor: 무한스크롤 관련 msw 모킹 수정\n- 서버에서 변경된 쿼리파람 적용\n- 목 데이터 수정\n"
+    },
+    {
+      "sha": "0f19458c9b36e4d65a1e4b69065dcc92d83d99a4",
+      "date": "2022-11-05T20:44:47+09:00",
+      "author": "moonheekim0118",
+      "email": "hellomooneekim@gmail.com",
+      "message": "test: 일반 피드 페이지 테스트 작성\n- 메시지 첫 렌더링 테스트\n- 날짜 드랍다운 렌더링 테스트\n- 검색창 포커스 시, 검색 옵션 컴포넌트 렌더링 테스트\n"
+    },
+    {
+      "sha": "40d66985d02531101157bed0989655bccf42cb3d",
+      "date": "2022-11-05T17:13:15+09:00",
+      "author": "moonheekim0118",
+      "email": "hellomooneekim@gmail.com",
+      "message": "chore: 테스트 환경 셋팅 추가\n- IntersectionObserver Mocking 추가\n- fileMock 위치 수정\n"
+    },
+    {
+      "sha": "73a025d80aaad76af1f18f873359d731d5521085",
+      "date": "2022-11-05T17:05:03+09:00",
+      "author": "moonheekim0118",
+      "email": "hellomooneekim@gmail.com",
+      "message": "chore: 불필요한 import 제거\n"
+    },
+    {
+      "sha": "c310b183b69c135b49a6de4a719162024b805f04",
+      "date": "2022-11-05T16:58:53+09:00",
+      "author": "moonheekim0118",
+      "email": "hellomooneekim@gmail.com",
+      "message": "chore: RTL, jest 테스트 환경 설정\n- 관련 라이브러리 dev dependency 로 설치\n- jest.config.ts 설정\n- setUpTests 설정\n- tsConfig 설정\n- msw 구동을 위한 server 파일 추가\n- asset 파일 모킹을 위한 fileMock 추가\n"
+    },
+    {
+      "sha": "3aa3a2703b91a5ebe42088da492e49580b63d91f",
+      "date": "2022-11-04T15:00:53+09:00",
+      "author": "Jaejeung Ko",
+      "email": "jaejeung3210@gmail.com",
+      "message": "refactor: package.json scripts 변경 (#699)\n\n- dev, prod build시 타입 체크 실패할 경우 빌드 되지 못하도록 추가 설정"
+    },
+    {
+      "sha": "50b605b760707aaddde35d35f7c71fc7b4fc9a58",
+      "date": "2022-11-03T17:49:16+09:00",
+      "author": "Jaejeung Ko",
+      "email": "jaejeung3210@gmail.com",
+      "message": "refactor: 기존 font -> subset font로 변경 (#698)\n\n* refactor: subset 적용되지 않는 font 제거\n\n* refactor: subset이 적용된 fonts 설정\n\n* fix: DefinePlugin dev, prod로 분리"
+    }
+  ],
+  "commit_sha": "d0f1337c190b5bfa353372271cda3b79f5d0ca43",
+  "extracted_at": "2026-10-05T18:09:19.481014+00:00"
+}

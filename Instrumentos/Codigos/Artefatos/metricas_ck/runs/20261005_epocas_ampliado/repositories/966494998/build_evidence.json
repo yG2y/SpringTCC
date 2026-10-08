@@ -1,0 +1,52 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "4.1.0",
+  "spring_boot_major": "4",
+  "java_versions_declared": "17",
+  "build_evidence": [
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "server2mcp-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "server2mcp-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "server2mcp-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "server2mcp-core/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "server2mcp-spring-boot-starters/server2mcp-starter-webflux/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "server2mcp-spring-boot-starters/server2mcp-starter-webmvc/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "server2mcp-test/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "server2mcp-test/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "server2mcp-test/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "server2mcp-test/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

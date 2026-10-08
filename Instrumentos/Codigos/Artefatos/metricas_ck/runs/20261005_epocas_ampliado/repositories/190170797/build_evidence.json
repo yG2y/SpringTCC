@@ -1,0 +1,764 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "2.2.13.RELEASE;2.2.4.RELEASE;2.3.12.RELEASE",
+  "spring_boot_major": "2",
+  "java_versions_declared": "1.7;1.8",
+  "build_evidence": [
+    {
+      "file": "actuator/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "actuator/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "actuator/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "admin/admin-client/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "admin/admin-client/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "admin/admin-server/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "admin/admin-server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "aop/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "aop/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "bean/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "bean/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "cloud-alibaba/ali-nacos-config-client/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "cloud-alibaba/ali-nacos-config-client/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "cloud-alibaba/ali-nacos-config-client/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "cloud-alibaba/ali-nacos-config-server/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "cloud-alibaba/ali-nacos-config-server/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "cloud-alibaba/ali-nacos-config-server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "cloud-alibaba/ali-nacos-consumer-feign/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "cloud-alibaba/ali-nacos-consumer-feign/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "cloud-alibaba/ali-nacos-consumer-feign/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "cloud-alibaba/ali-nacos-consumer-ribbon/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "cloud-alibaba/ali-nacos-consumer-ribbon/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "cloud-alibaba/ali-nacos-consumer-ribbon/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "cloud-alibaba/ali-nacos-dubbo-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "cloud-alibaba/ali-nacos-dubbo-consumer/pom.xml",
+      "artifact": "spring-boot-actuator"
+    },
+    {
+      "file": "cloud-alibaba/ali-nacos-dubbo-consumer/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "cloud-alibaba/ali-nacos-dubbo-provider/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "cloud-alibaba/ali-nacos-dubbo-provider/pom.xml",
+      "artifact": "spring-boot-actuator"
+    },
+    {
+      "file": "cloud-alibaba/ali-nacos-dubbo-provider/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "cloud-alibaba/ali-nacos-provider/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "cloud-alibaba/ali-nacos-provider/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "cloud-alibaba/ali-nacos-provider/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "cloud-alibaba/ali-nacos-sentinel-feign/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "cloud-alibaba/ali-nacos-sentinel-feign/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "cloud-alibaba/ali-nacos-sentinel-feign/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "cloud-alibaba/ali-rocketmq-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "cloud-alibaba/ali-rocketmq-consumer/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "cloud-alibaba/ali-rocketmq-consumer/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "cloud-alibaba/ali-rocketmq-producer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "cloud-alibaba/ali-rocketmq-producer/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "cloud-alibaba/ali-rocketmq-producer/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "cloud-alibaba/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "cloud-config/cloud-config-client/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "cloud-config/cloud-config-client/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "cloud-config/cloud-config-client/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "cloud-config/cloud-config-server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "cloud-feign/eureka-server/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "cloud-feign/eureka-server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "cloud-feign/feign-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "cloud-feign/feign-consumer/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "cloud-feign/feign-consumer/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "cloud-feign/hello-service-01/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "cloud-feign/hello-service-01/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "cloud-feign/hello-service-01/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "cloud-feign/hello-service-02/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "cloud-feign/hello-service-02/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "cloud-feign/hello-service-02/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "cloud-feign/hello-service-03/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "cloud-feign/hello-service-03/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "cloud-feign/hello-service-03/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "cloud-feign/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "cloud-gateway/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "cloud-hystrix/hystrix-eureka-server/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "cloud-hystrix/hystrix-eureka-server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "cloud-hystrix/hystrix-service-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "cloud-hystrix/hystrix-service-consumer/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "cloud-hystrix/hystrix-service-consumer/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "cloud-hystrix/hystrix-service-provider/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "cloud-hystrix/hystrix-service-provider/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "cloud-hystrix/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "cloud-oauth2-auth-code/auth-server/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "cloud-oauth2-auth-code/auth-server/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "cloud-oauth2-auth-code/auth-server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "cloud-oauth2-auth-code/resource-server/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "cloud-oauth2-auth-code/resource-server/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "cloud-oauth2-auth-code/resource-server/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "cloud-oauth2-auth-code/resource-server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "cloud-zuul/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "cloud-zuul/zuul-eureka-server/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "cloud-zuul/zuul-eureka-server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "cloud-zuul/zuul-server-gateway/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "cloud-zuul/zuul-server-gateway/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "cloud-zuul/zuul-server-gateway/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "cloud-zuul/zuul-server-provider/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "cloud-zuul/zuul-server-provider/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "cloud-zuul/zuul-server-provider/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "cloud-zuul/zuul-server-provider2/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "cloud-zuul/zuul-server-provider2/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "cloud-zuul/zuul-server-provider2/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "data-redis/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "data-redis/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "data-redis/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "data-redis/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "data-redisearch/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "data-redisearch/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "data-redisearch/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "data-redisearch/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "docker/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "docker/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "docker/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "docker/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "email/pom.xml",
+      "artifact": "spring-boot-starter-mail"
+    },
+    {
+      "file": "email/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "email/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "encoder/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "encoder/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "encoder/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "hello-world/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "hello-world/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "hello-world/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "jGit/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "jGit/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "license3j/license-client/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "license3j/license-client/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "license3j/license-client/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "mq-redis/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "mq-redis/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "mq-redis/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "mq-redis/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "mqtt/mqtt-publisher/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "mqtt/mqtt-subscriber/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "mqtt/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "mybatis-multi-datasource/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "mybatis-multi-datasource/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "mybatis-multi-datasource/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "mybatis-multi-datasource/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "mybatis-multi-datasource/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "mybatis-plus-crud/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "mybatis-plus-crud/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "mybatis-plus-crud/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "mybatis-plus-generator/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "mybatis-plus-generator/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "mybatis-plus-generator/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "mybatis-plus-generator/pom.xml",
+      "artifact": "spring-boot-starter-freemarker"
+    },
+    {
+      "file": "mybatis-plus-generator/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "netty/java-tcp/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "netty/java-tcp/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "netty/netty-client/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "netty/netty-client/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "netty/netty-server/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "netty/netty-server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "netty/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "netty/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "proguard/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "proguard/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "proguard/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "quartz/pom.xml",
+      "artifact": "spring-boot-starter-quartz"
+    },
+    {
+      "file": "quartz/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "quartz/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "quartz/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "security-oauth2-auth-code/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "security-oauth2-auth-code/soac-client1/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "security-oauth2-auth-code/soac-client1/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "security-oauth2-auth-code/soac-server/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "security-oauth2-auth-code/soac-server/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "security-oauth2-auth-code/soac-server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "security-oauth2-credentials/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "security-oauth2-credentials/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "security-oauth2-credentials/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "security-oauth2-credentials/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "security-oauth2-credentials/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "security-oauth2-credentials/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "security/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "security/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "security/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "security/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "shiro/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "shiro/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "shiro/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "shiro/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "shiro/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "shiro/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "shiro/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "sign/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "sign/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "sign/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "template-thymeleaf/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "template-thymeleaf/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "template-thymeleaf/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "template-thymeleaf/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "web-magic/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "web-magic/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "web/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "web/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "web/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "web/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "web/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

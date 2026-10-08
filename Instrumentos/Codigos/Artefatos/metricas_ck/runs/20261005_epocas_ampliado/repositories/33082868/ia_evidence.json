@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "6bb2cf9ddbca980b664d3edbb6ff775d75369278",
+      "date": "2021-11-15T15:36:16-08:00",
+      "author": "Alexander Lukyanchikov",
+      "email": "sqshq@sqshq.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "d1522dd4dccb0faa16755f9da7e9505b8a98f178",
+      "date": "2021-11-11T22:39:39-08:00",
+      "author": "Alexander Lukyanchikov",
+      "email": "sqshq@sqshq.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "fd5ee3c555ea9cd6067eacf3f2a3e8b85fe4fe77",
+      "date": "2021-01-19T12:08:06-08:00",
+      "author": "Alexander Lukyanchikov",
+      "email": "sqshq@sqshq.com",
+      "message": "Merge pull request #64 from ramazansakin/master\n\nUpdate README.md"
+    },
+    {
+      "sha": "8df591dffa5513423a288d863f5e35b31e5eeb40",
+      "date": "2021-01-19T21:25:21+03:00",
+      "author": "Ramazan Sakin",
+      "email": "ramazansakin63@gmail.com",
+      "message": "Update README.md\n\ntypo fix"
+    },
+    {
+      "sha": "ad4fabed06d83e83dc2a82e2afc3be085cb286a8",
+      "date": "2020-02-01T23:29:38-05:00",
+      "author": "Alexander Lukyanchikov",
+      "email": "sqshq@sqshq.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "f935a0731523e5a6c0daffb28a2b6b7f1036f2d7",
+      "date": "2020-02-01T23:17:01-05:00",
+      "author": "Alexander Lukyanchikov",
+      "email": "sqshq@sqshq.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "cf6eac005582b538127ca8f33b0cc1d0636ce312",
+      "date": "2019-12-21T18:37:24-05:00",
+      "author": "Alexander Lukyanchikov",
+      "email": "sqshq@sqshq.com",
+      "message": "Update .travis.yml"
+    },
+    {
+      "sha": "70133dc1ad871f1754e999c756376090e9a68cee",
+      "date": "2019-12-21T18:09:36-05:00",
+      "author": "Alexander Lukyanchikov",
+      "email": "sqshq@sqshq.com",
+      "message": "Add dist:trusty to travis.yml"
+    },
+    {
+      "sha": "81924fc28e87a364d11c4278388f49aff809adb0",
+      "date": "2019-09-15T16:00:33-04:00",
+      "author": "Alexander Lukyanchikov",
+      "email": "sqshq@sqshq.com",
+      "message": "Merge pull request #57 from spiashko/env-file\n\nadd env file for faster docker-compose bootstrapping"
+    },
+    {
+      "sha": "3817a047fa89f5e5e88a04305c2b62657d3e11aa",
+      "date": "2019-09-15T14:14:18+03:00",
+      "author": "Siarhei Piashko",
+      "email": "Siarhei.Piashko@seavus.com",
+      "message": "adjust readme for .env file usage\n"
+    },
+    {
+      "sha": "73840b4f192326416c563b7970dbef6e4c9d32ce",
+      "date": "2019-09-14T13:06:23-04:00",
+      "author": "Alexander Lukyanchikov",
+      "email": "sqshq@sqshq.com",
+      "message": "Merge pull request #56 from spiashko/master\n\nRevert \"Fix Monitoring server port missing\""
+    },
+    {
+      "sha": "aaf8e174d7a56e71780897f5c84757bcd26067f6",
+      "date": "2019-09-14T18:57:24+03:00",
+      "author": "Siarhei Piashko",
+      "email": "Siarhei.Piashko@seavus.com",
+      "message": "add env file for faster docker-compose bootstrapping\n"
+    },
+    {
+      "sha": "fd32bf935bbf154376b8326cd31533e4c67b8d3c",
+      "date": "2019-09-14T18:42:23+03:00",
+      "author": "Siarhei Piashko",
+      "email": "Siarhei.Piashko@seavus.com",
+      "message": "Revert \"Fix Monitoring server port missing\"\n\nThis reverts commit d3beabc5\n\ndocker-compose ports section has mapping <host>:<container>\nso specified port with 9000 brought to wrong port mapping therefore dashboard is not available\n"
+    },
+    {
+      "sha": "0ea268e8c10edafcf4ef1f84517db900f098a750",
+      "date": "2019-07-30T10:18:01-04:00",
+      "author": "Alexander Lukyanchikov",
+      "email": "sqshq@sqshq.com",
+      "message": "Merge pull request #52 from elkolotfi/fixReadme\n\nFix readme broken link"
+    },
+    {
+      "sha": "48d822a70fef85d8fcbb4b272efc717c15b57b57",
+      "date": "2019-07-30T10:17:31-04:00",
+      "author": "Alexander Lukyanchikov",
+      "email": "sqshq@sqshq.com",
+      "message": "Merge pull request #53 from elkolotfi/windowsMacContribute\n\nMongoDB container for windows (and mac) contributors"
+    },
+    {
+      "sha": "55ed483298b429cbf4c993f1333e5e3099556023",
+      "date": "2019-07-26T14:41:33+02:00",
+      "author": "elkolotfi",
+      "email": "elkolotfi@gmail.com",
+      "message": "Fix MongoDb containers [init.sh]\n"
+    },
+    {
+      "sha": "49c2d6a901e3e227ea7e89a34e0826e77f3a6ea1",
+      "date": "2019-07-18T16:11:05+02:00",
+      "author": "elkolotfi",
+      "email": "elkolotfi@gmail.com",
+      "message": "fix hystrix dashboard repo link on README.md\n"
+    },
+    {
+      "sha": "20237e62b4305dc888aa55b61e1e103fbd3856bf",
+      "date": "2019-04-07T21:03:57-04:00",
+      "author": "Alexander Lukyanchikov",
+      "email": "sqshq@sqshq.com",
+      "message": "Merge pull request #48 from zuzhi/master\n\nFix Monitoring server port missing"
+    },
+    {
+      "sha": "d3beabc5461cd591331cca1dbd4d7b04c1bfe233",
+      "date": "2019-04-04T17:25:14+08:00",
+      "author": "zuzhi",
+      "email": "476513451@qq.com",
+      "message": "Fix Monitoring server port missing\n\nIt should be 9000 according to README\n"
+    },
+    {
+      "sha": "07a86f3665062653c22ab2db824dff91d2849632",
+      "date": "2019-04-01T22:54:39-04:00",
+      "author": "Alexander Lukyanchikov",
+      "email": "sqshq@sqshq.com",
+      "message": "Merge pull request #46 from Sam-WEI/master\n\nfix a typo in README.md"
+    },
+    {
+      "sha": "ac05b97babfc05e880e8ae010ffa6e7a39ded442",
+      "date": "2019-03-09T14:17:49-05:00",
+      "author": "Sam Wei",
+      "email": "shengkunwei@gmail.com",
+      "message": "Fix a typo in README.md"
+    },
+    {
+      "sha": "3fe6e1555c18422d8fcf1fca82ebc82ecb4ebd3b",
+      "date": "2019-03-09T11:51:53-05:00",
+      "author": "Sam Wei",
+      "email": "shengkunwei@gmail.com",
+      "message": "Fix a typo in README.md"
+    },
+    {
+      "sha": "0409199b2a674ed458953114fd5ed61211ba109e",
+      "date": "2019-03-09T11:22:50-05:00",
+      "author": "Sam Wei",
+      "email": "shengkunwei@gmail.com",
+      "message": "fix a typo in README.md"
+    },
+    {
+      "sha": "8ce92fe723a701bca9545b5dc5e0cdc8b0c7bd50",
+      "date": "2019-02-03T14:49:42-05:00",
+      "author": "Alexander Lukyanchikov",
+      "email": "sqshq@sqshq.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "e7b982836f73ffa3d1a679498bfca5b727881e44",
+      "date": "2018-11-27T23:16:55-05:00",
+      "author": "Alexander Lukyanchikov",
+      "email": "sqshq@sqshq.com",
+      "message": "Update README with a link to the piggymetrics.tk"
+    },
+    {
+      "sha": "836a97f2b387ff921591f967e601145c2001c0dc",
+      "date": "2018-09-25T08:55:19-04:00",
+      "author": "sqshq",
+      "email": "sqshq@sqshq.com",
+      "message": "fixed exchange rates test after the provider API change\n"
+    },
+    {
+      "sha": "480ce4a2ee5adfe6eb23c367c7e691ca8352cb06",
+      "date": "2018-09-23T14:35:40-04:00",
+      "author": "Alexander Lukyanchikov",
+      "email": "sqshq@sqshq.com",
+      "message": "Merge pull request #43 from clevertension/add-eclipse-ignore\n\nadd eclipse ignore files"
+    },
+    {
+      "sha": "018a3e42e7428e3909fda9f49d57673290352b91",
+      "date": "2018-09-22T18:01:53+08:00",
+      "author": "clevertension",
+      "email": "zdan0803@gmail.com",
+      "message": "add eclipse ignore files\n"
+    },
+    {
+      "sha": "b8baaf40b63752f0256921c9aa3ea819d28b0f51",
+      "date": "2018-09-16T08:22:06-04:00",
+      "author": "Alexander Lukyanchikov",
+      "email": "sqshq@sqshq.com",
+      "message": "update travis.yml to support changes in docker login command"
+    },
+    {
+      "sha": "20e23d1701671841940f1cd55f4647fcf40871a1",
+      "date": "2018-09-15T18:30:43-04:00",
+      "author": "Alexander Lukyanchikov",
+      "email": "sqshq@sqshq.com",
+      "message": "update README.md"
+    }
+  ],
+  "commit_sha": "6bb2cf9ddbca980b664d3edbb6ff775d75369278",
+  "extracted_at": "2026-10-05T17:52:19.884991+00:00"
+}

@@ -1,0 +1,32 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "4.0.3",
+  "spring_boot_major": "4",
+  "java_versions_declared": "21;25",
+  "build_evidence": [
+    {
+      "file": "spring-microservice/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-microservice/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-microservice/pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "spring-microservice/pom.xml",
+      "artifact": "spring-boot-starter-restclient-test"
+    },
+    {
+      "file": "spring-microservice/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-microservice/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

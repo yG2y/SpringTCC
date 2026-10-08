@@ -1,0 +1,139 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 18,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "fd4543bf097897a130335a4c0948c97c8ccab1f9",
+      "date": "2024-11-06T18:01:55-08:00",
+      "author": "Eli",
+      "email": "elirenato2000@gmail.com",
+      "message": "Fix env example\n"
+    },
+    {
+      "sha": "bd2855256fb696a75c6e9b17b19373a87f0bd1d9",
+      "date": "2024-11-05T19:45:00-08:00",
+      "author": "Eli",
+      "email": "elirenato2000@gmail.com",
+      "message": "Small adjusts and typo fix\n"
+    },
+    {
+      "sha": "199281a1433280206b9f8ce6697f77a4106f5a61",
+      "date": "2024-10-27T19:06:41-07:00",
+      "author": "Eli Barbosa",
+      "email": "elirenato2000@gmail.com",
+      "message": "Develop (#9)\n\nUsing the Organization Feature of the Latest Keycloak Version\n\nKeycloak has introduced a \"new\" feature called Organization for multi-tenancy. I am updating the project to utilize this feature and assign the customer entity to the organization that the authenticated user belongs to. As part of these changes, I am moving the common code used in the authentication flow to a separate library called auth-lib, which can be reused for better cohesion.\n\nAdditionally, I am adding Hibernate's second-level cache and integrating Spring Cache using Redis."
+    },
+    {
+      "sha": "4ec51a6d597d24c625fb75e8664d4cad88286a25",
+      "date": "2024-10-14T16:52:48-07:00",
+      "author": "Eli Barbosa",
+      "email": "elirenato2000@gmail.com",
+      "message": "Merge pull request #6 from elirenato/develop\n\nFixed version and shorted the name of the projects"
+    },
+    {
+      "sha": "ebb2faf4009c7d3fc799a16b49c08bd0b96a6b2f",
+      "date": "2024-10-14T16:30:10-07:00",
+      "author": "Eli",
+      "email": "elirenato2000@gmail.com",
+      "message": "Fixed version and shorted the name of the projects\n"
+    },
+    {
+      "sha": "0975e3ec138c274a264e433cfd3f08809b9867a6",
+      "date": "2024-10-13T17:20:59-07:00",
+      "author": "Eli Barbosa",
+      "email": "elirenato2000@gmail.com",
+      "message": "Merge pull request #5 from elirenato/re-organizing\n\nUpdating Spring Boot Version and Re-organizing code"
+    },
+    {
+      "sha": "6a1a4b669236b9a93141ffc1ceae662d5ba0c07b",
+      "date": "2024-06-15T19:56:06-07:00",
+      "author": "Eli barbosa",
+      "email": "elirenato2000@gmail.com",
+      "message": "Updating Spring Boot Version and Re-organizing code\n\nIn progress\n"
+    },
+    {
+      "sha": "04481312255b7c5a3db06b5e32ea58870423e730",
+      "date": "2023-05-05T21:47:18-07:00",
+      "author": "Eli Barbosa",
+      "email": "elirenato2000@gmail.com",
+      "message": "Fix path of Jenkinsfile on Readme file\n\n"
+    },
+    {
+      "sha": "7b0c184a714f05d3c2291ad5850b9a95ac2ea81f",
+      "date": "2023-05-05T21:40:56-07:00",
+      "author": "Eli Barbosa",
+      "email": "elirenato2000@gmail.com",
+      "message": "Multi module monorepo (#4)\n\n* Improved the code organization of the project to have more cohesion.\n* Improved the README documentation. Tested from the scratch."
+    },
+    {
+      "sha": "bc377d1332251e592cffc328a6b1c35566fc87e2",
+      "date": "2023-02-24T23:28:44-08:00",
+      "author": "Eli Barbosa",
+      "email": "elirenato2000@gmail.com",
+      "message": "Kubernetes (#2)\n\n* Build the image and deploy to Kubernetes"
+    },
+    {
+      "sha": "ca627da8a11165e57f928f99c7ac2de3fba6e25d",
+      "date": "2023-02-15T21:49:38-08:00",
+      "author": "Eli Barbosa",
+      "email": "elirenato2000@gmail.com",
+      "message": "Jenkins (#1)\n\nAdded Jenkins configuration to test and build an image with the application"
+    },
+    {
+      "sha": "348171ca2a9a77467d41230dbe1d02856749c7b3",
+      "date": "2023-02-04T16:40:24-08:00",
+      "author": "Eli Barbosa",
+      "email": "elirenato2000@gmail.com",
+      "message": "Added Customer REST endpoint\n\n"
+    },
+    {
+      "sha": "2e2056fe96e022c5bddca7171ceab260aea4a0d5",
+      "date": "2023-01-27T18:56:01-08:00",
+      "author": "Eli Barbosa",
+      "email": "elirenato2000@gmail.com",
+      "message": "Added State Provinces REST endpoint\n\n"
+    },
+    {
+      "sha": "e6297021eb0af9fc2c0d363411ea062ffda5fcd4",
+      "date": "2023-01-27T18:02:33-08:00",
+      "author": "Eli Barbosa",
+      "email": "elirenato2000@gmail.com",
+      "message": "Move to recommend construction injection approach\n\n"
+    },
+    {
+      "sha": "5ecd11413774cc4558c691957326819972dd2179",
+      "date": "2023-01-17T21:08:53-08:00",
+      "author": "Eli Barbosa",
+      "email": "elirenato2000@gmail.com",
+      "message": "Spring Data JPA and Liquibase\n\n"
+    },
+    {
+      "sha": "b340cd2f6723c627bdb87fd08756f08957161461",
+      "date": "2023-01-17T06:45:48-08:00",
+      "author": "Eli Barbosa",
+      "email": "elirenato2000@gmail.com",
+      "message": "Testcontainers starting\n\n"
+    },
+    {
+      "sha": "4a946f7cdc41b5278e02e7bf96c103d874419ca3",
+      "date": "2023-01-17T06:12:33-08:00",
+      "author": "Eli Barbosa",
+      "email": "elirenato2000@gmail.com",
+      "message": "Security config working with tests\n\n"
+    },
+    {
+      "sha": "6532c4f48b4f85fffd4c725ecb8c58d826505fbe",
+      "date": "2023-01-17T06:10:30-08:00",
+      "author": "Eli Barbosa",
+      "email": "elirenato2000@gmail.com",
+      "message": "Initial commit"
+    }
+  ],
+  "commit_sha": "fd4543bf097897a130335a4c0948c97c8ccab1f9",
+  "extracted_at": "2026-10-05T18:38:24.414869+00:00"
+}

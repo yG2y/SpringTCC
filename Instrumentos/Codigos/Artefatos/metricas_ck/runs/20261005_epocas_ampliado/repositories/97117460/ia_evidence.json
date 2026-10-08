@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "62b504025eba8111962b2d057dd692d727627d13",
+      "date": "2026-02-09T15:03:17+08:00",
+      "author": "YiHui",
+      "email": "bangzewu@126.com",
+      "message": "udpate info\n"
+    },
+    {
+      "sha": "900562a6e70996c20fc318f2b359ab2b8e323dda",
+      "date": "2025-10-15T15:07:48+08:00",
+      "author": "YiHui",
+      "email": "bangzewu@126.com",
+      "message": "update commons-io version\n"
+    },
+    {
+      "sha": "f593dea97d3fd94700a6d014dcc2b398085ca39c",
+      "date": "2025-10-15T15:06:34+08:00",
+      "author": "YiHui",
+      "email": "bangzewu@126.com",
+      "message": "feat: 支持ico格式图片加载\n"
+    },
+    {
+      "sha": "c1d3382b08a3b90ccbbeaa35747fd6a110688229",
+      "date": "2025-07-09T15:50:39+08:00",
+      "author": "YiHui",
+      "email": "bangzewu@126.com",
+      "message": "feat: 支持代理访问\n"
+    },
+    {
+      "sha": "3f5e16ba32967d7a878e57f7e5c77eb4a1a6d32f",
+      "date": "2025-06-17T10:39:22+08:00",
+      "author": "YiHui",
+      "email": "bangzewu@126.com",
+      "message": "feat: 新增基于边缘检测的线图提取算法\n"
+    },
+    {
+      "sha": "32de2da2d4b040ce1e251dc7a122229261a20234",
+      "date": "2025-06-05T20:10:31+08:00",
+      "author": "YiHui",
+      "email": "bangzewu@126.com",
+      "message": "feat: 添加线图处理\n"
+    },
+    {
+      "sha": "29c078450ad2865c7ad196c658cacfab55b207ee",
+      "date": "2025-05-15T18:00:12+08:00",
+      "author": "YiHui",
+      "email": "bangzewu@126.com",
+      "message": "Merge pull request #122 from simei2k/patch-1\n\nFix Buffer Write Security Vulnerabilities"
+    },
+    {
+      "sha": "4d89ab436d59c8d9b06eba31c4d2b100e48e05b7",
+      "date": "2025-05-15T17:59:40+08:00",
+      "author": "YiHui",
+      "email": "bangzewu@126.com",
+      "message": "Merge pull request #123 from simei2k/patch-2\n\nFix Buffer Overflow Vulnerability in PNG Codec"
+    },
+    {
+      "sha": "3970e967f6661328a5544fd0b977dac1a35e380b",
+      "date": "2025-05-11T12:33:47+08:00",
+      "author": "Lim Sim Yee",
+      "email": "137663782+simei2k@users.noreply.github.com",
+      "message": "Fix Buffer Overflow Vulnerability in PNG Codec\n\nThis PR addresses a critical security vulnerability in the write() method implementation within the Batik PNG codec. The improved implementation adds comprehensive input validation to prevent buffer overflow attacks and other memory-related security issues.\n\nSecurity Issue Fixed\nThe original implementation had incomplete bounds checking which could lead to:\n1. Integer overflow vulnerabilities through improper array bounds calculations\n2. Array index out-of-bounds exceptions\n3. Buffer overflow exploits when handling malicious PNG data\n4. Potential arbitrary code execution through carefully crafted inputs\nThis vulnerability was also found in ReadyTalk/avian@0871979 and fixed.\n\nReferences:\n1. https://nvd.nist.gov/vuln/detail/cve-2022-36056\n2. ReadyTalk/avian@0871979"
+    },
+    {
+      "sha": "e52fceee32775a6be8ed1e394fbe94f4f8db036a",
+      "date": "2025-05-11T12:29:09+08:00",
+      "author": "Lim Sim Yee",
+      "email": "137663782+simei2k@users.noreply.github.com",
+      "message": "Fix Buffer Write Security Vulnerabilities\n\nThis PR addresses security vulnerabilities in the write() method implementation by adding proper input validation and ensuring secure buffer handling.\n\nThis vulnerability was also identified and fixed in ReadyTalk/avian@0871979.\n\nReferences:\n1. https://nvd.nist.gov/vuln/detail/cve-2022-42889\n2. ReadyTalk/avian@0871979"
+    },
+    {
+      "sha": "0c0789e95559c84c8b4fa00f4e7b2a8bb237bfce",
+      "date": "2025-03-25T11:04:40+08:00",
+      "author": "YiHui",
+      "email": "bangzewu@126.com",
+      "message": "update md2img\n"
+    },
+    {
+      "sha": "95aed63185d76eedec04bea9fa06eeb789050655",
+      "date": "2025-02-28T18:45:51+08:00",
+      "author": "YiHui",
+      "email": "bangzewu@126.com",
+      "message": "feat: 图片像素块矩阵支持\n"
+    },
+    {
+      "sha": "0398a08e8a795060d83611e872ea605031a02381",
+      "date": "2025-02-11T16:50:12+08:00",
+      "author": "YiHui",
+      "email": "bangzewu@126.com",
+      "message": "feat: 添加像素使用姿势\n"
+    },
+    {
+      "sha": "5b6d3fcce21bf0c6fa8511083b6b2da25296d633",
+      "date": "2025-02-11T14:24:12+08:00",
+      "author": "YiHui",
+      "email": "bangzewu@126.com",
+      "message": "feat: svg相关使用姿势改造\n"
+    },
+    {
+      "sha": "b563cec4c37702141abb45c6e2925bf02be70720",
+      "date": "2025-02-05T11:06:43+08:00",
+      "author": "YiHui",
+      "email": "bangzewu@126.com",
+      "message": "更新图片处理\n"
+    },
+    {
+      "sha": "564b3614663d23434026f4c32fc996353e56c67d",
+      "date": "2025-01-24T11:13:53+08:00",
+      "author": "YiHui",
+      "email": "bangzewu@126.com",
+      "message": "update test method name\n"
+    },
+    {
+      "sha": "4973c92b72910388ae8737edb7888b790a28d773",
+      "date": "2025-01-24T11:13:11+08:00",
+      "author": "YiHui",
+      "email": "bangzewu@126.com",
+      "message": "feat: 图片边缘检测\n"
+    },
+    {
+      "sha": "244b3c6ae08e6c12230d19c2e0a41849ffaee740",
+      "date": "2025-01-10T18:37:08+08:00",
+      "author": "YiHui",
+      "email": "bangzewu@126.com",
+      "message": "feat: 更新测试用例\n"
+    },
+    {
+      "sha": "6be627991f0b051154dd2cde1ddd59a834e82b5e",
+      "date": "2025-01-10T16:25:45+08:00",
+      "author": "YiHui",
+      "email": "bangzewu@126.com",
+      "message": "feat: 边框判断优化\n"
+    },
+    {
+      "sha": "670de7a2ec6422ffffa10dc4345eee074fd784a3",
+      "date": "2025-01-10T15:17:42+08:00",
+      "author": "YiHui",
+      "email": "bangzewu@126.com",
+      "message": "图片轮毂转字符\n"
+    },
+    {
+      "sha": "b0e98d66274891952a978ee5c76b6bf6addfe969",
+      "date": "2025-01-10T11:03:33+08:00",
+      "author": "YiHui",
+      "email": "bangzewu@126.com",
+      "message": "feat: 添加图片边框文字化输出\n"
+    },
+    {
+      "sha": "9992f50025efb4b2a56eae0311e81f2fcb050e1f",
+      "date": "2024-12-27T09:18:25+08:00",
+      "author": "YiHui",
+      "email": "bangzewu@126.com",
+      "message": "fix: 调整泛型返回写法\n"
+    },
+    {
+      "sha": "5d5719affa353fea78b013d63dfeb833572ee48d",
+      "date": "2024-10-30T14:39:08+08:00",
+      "author": "YiHui",
+      "email": "bangzewu@126.com",
+      "message": "feat: pom配置更新\n"
+    },
+    {
+      "sha": "ec2f32a44c0d65572783d5c3eeb72d059ec188bc",
+      "date": "2024-10-25T18:39:23+08:00",
+      "author": "YiHui",
+      "email": "bangzewu@126.com",
+      "message": "feat: 调整判定\n"
+    },
+    {
+      "sha": "26269ce41eb7f80c20ef371c0834fe5d8640d4b7",
+      "date": "2024-09-18T14:19:26+08:00",
+      "author": "YiHui",
+      "email": "bangzewu@126.com",
+      "message": "feat: 调整默认的保存地址;\n"
+    },
+    {
+      "sha": "e47bbd485f3f7538b2f76b83bee51378242c2f72",
+      "date": "2024-08-05T17:49:24+08:00",
+      "author": "YiHui",
+      "email": "bangzewu@126.com",
+      "message": "feat: 添加新的接口\n"
+    },
+    {
+      "sha": "e0519dc504d307fbc318b2442163471a82c537bc",
+      "date": "2024-07-26T10:58:48+08:00",
+      "author": "YiHui",
+      "email": "bangzewu@126.com",
+      "message": "update version\n"
+    },
+    {
+      "sha": "d2acb7c81cbd710a1faeca862dbcbf3567020b38",
+      "date": "2024-07-26T10:58:08+08:00",
+      "author": "YiHui",
+      "email": "bangzewu@126.com",
+      "message": "update version\n"
+    },
+    {
+      "sha": "1c00fb3800e683b535019a4af8e84a326f2ae376",
+      "date": "2024-07-26T10:57:02+08:00",
+      "author": "YiHui",
+      "email": "bangzewu@126.com",
+      "message": "feat: 新增语音\n"
+    },
+    {
+      "sha": "02d669a874785ee56673867459f71931d062c36d",
+      "date": "2024-07-12T16:30:47+08:00",
+      "author": "YiHui",
+      "email": "bangzewu@126.com",
+      "message": "feat: 语音库\n"
+    }
+  ],
+  "commit_sha": "62b504025eba8111962b2d057dd692d727627d13",
+  "extracted_at": "2026-10-05T18:00:27.921987+00:00"
+}

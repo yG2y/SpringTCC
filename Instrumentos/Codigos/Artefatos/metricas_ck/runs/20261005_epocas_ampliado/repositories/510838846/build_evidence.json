@@ -1,0 +1,332 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${spring-boot.version};4.2.0-M2",
+  "spring_boot_major": "4",
+  "java_versions_declared": "17",
+  "build_evidence": [
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "spring-modulith-actuator/pom.xml",
+      "artifact": "spring-boot-actuator"
+    },
+    {
+      "file": "spring-modulith-actuator/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-modulith-actuator/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-modulith-api/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-modulith-apt/pom.xml",
+      "artifact": "spring-boot"
+    },
+    {
+      "file": "spring-modulith-core/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-modulith-core/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-modulith-docs/pom.xml",
+      "artifact": "spring-boot"
+    },
+    {
+      "file": "spring-modulith-docs/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-modulith-events/spring-modulith-events-amqp/pom.xml",
+      "artifact": "spring-boot-rabbitmq"
+    },
+    {
+      "file": "spring-modulith-events/spring-modulith-events-amqp/pom.xml",
+      "artifact": "spring-boot-starter-json"
+    },
+    {
+      "file": "spring-modulith-events/spring-modulith-events-amqp/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-modulith-events/spring-modulith-events-amqp/pom.xml",
+      "artifact": "spring-boot-testcontainers"
+    },
+    {
+      "file": "spring-modulith-events/spring-modulith-events-core/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-modulith-events/spring-modulith-events-core/pom.xml",
+      "artifact": "spring-boot-test-autoconfigure"
+    },
+    {
+      "file": "spring-modulith-events/spring-modulith-events-jdbc/pom.xml",
+      "artifact": "spring-boot-sql"
+    },
+    {
+      "file": "spring-modulith-events/spring-modulith-events-jdbc/pom.xml",
+      "artifact": "spring-boot-jdbc"
+    },
+    {
+      "file": "spring-modulith-events/spring-modulith-events-jdbc/pom.xml",
+      "artifact": "spring-boot-starter-jdbc-test"
+    },
+    {
+      "file": "spring-modulith-events/spring-modulith-events-jms/pom.xml",
+      "artifact": "spring-boot-jms"
+    },
+    {
+      "file": "spring-modulith-events/spring-modulith-events-jms/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-modulith-events/spring-modulith-events-jms/pom.xml",
+      "artifact": "spring-boot-artemis"
+    },
+    {
+      "file": "spring-modulith-events/spring-modulith-events-jobrunr/pom.xml",
+      "artifact": "spring-boot-jdbc"
+    },
+    {
+      "file": "spring-modulith-events/spring-modulith-events-jobrunr/pom.xml",
+      "artifact": "spring-boot-test"
+    },
+    {
+      "file": "spring-modulith-events/spring-modulith-events-jpa/pom.xml",
+      "artifact": "spring-boot-hibernate"
+    },
+    {
+      "file": "spring-modulith-events/spring-modulith-events-jpa/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-modulith-events/spring-modulith-events-jpa/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "spring-modulith-events/spring-modulith-events-kafka/pom.xml",
+      "artifact": "spring-boot-kafka"
+    },
+    {
+      "file": "spring-modulith-events/spring-modulith-events-kafka/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-modulith-events/spring-modulith-events-messaging/pom.xml",
+      "artifact": "spring-boot-integration"
+    },
+    {
+      "file": "spring-modulith-events/spring-modulith-events-messaging/pom.xml",
+      "artifact": "spring-boot-starter-json"
+    },
+    {
+      "file": "spring-modulith-events/spring-modulith-events-messaging/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-modulith-events/spring-modulith-events-mongodb/pom.xml",
+      "artifact": "spring-boot-data-mongodb"
+    },
+    {
+      "file": "spring-modulith-events/spring-modulith-events-mongodb/pom.xml",
+      "artifact": "spring-boot-transaction"
+    },
+    {
+      "file": "spring-modulith-events/spring-modulith-events-mongodb/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb-test"
+    },
+    {
+      "file": "spring-modulith-events/spring-modulith-events-mongodb/pom.xml",
+      "artifact": "spring-boot-testcontainers"
+    },
+    {
+      "file": "spring-modulith-events/spring-modulith-events-neo4j/pom.xml",
+      "artifact": "spring-boot-starter-data-neo4j-test"
+    },
+    {
+      "file": "spring-modulith-examples/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-modulith-examples/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-modulith-examples/pom.xml",
+      "artifact": "spring-boot-starter-json"
+    },
+    {
+      "file": "spring-modulith-examples/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-modulith-examples/spring-modulith-example-epr-jdbc/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "spring-modulith-examples/spring-modulith-example-epr-jdbc/pom.xml",
+      "artifact": "spring-boot-testcontainers"
+    },
+    {
+      "file": "spring-modulith-examples/spring-modulith-example-epr-mongodb/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb"
+    },
+    {
+      "file": "spring-modulith-examples/spring-modulith-example-epr-mongodb/pom.xml",
+      "artifact": "spring-boot-testcontainers"
+    },
+    {
+      "file": "spring-modulith-examples/spring-modulith-example-epr-neo4j/pom.xml",
+      "artifact": "spring-boot-starter-data-neo4j"
+    },
+    {
+      "file": "spring-modulith-examples/spring-modulith-example-epr-neo4j/pom.xml",
+      "artifact": "spring-boot-testcontainers"
+    },
+    {
+      "file": "spring-modulith-examples/spring-modulith-example-full/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-modulith-examples/spring-modulith-example-full/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-modulith-examples/spring-modulith-example-full/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "spring-modulith-examples/spring-modulith-example-kafka/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "spring-modulith-examples/spring-modulith-example-outbox/pom.xml",
+      "artifact": "spring-boot-starter-data-jdbc"
+    },
+    {
+      "file": "spring-modulith-integration-test/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-modulith-integration-test/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-modulith-integration-test/pom.xml",
+      "artifact": "spring-boot-webtestclient"
+    },
+    {
+      "file": "spring-modulith-integration-test/pom.xml",
+      "artifact": "spring-boot-starter-webflux-test"
+    },
+    {
+      "file": "spring-modulith-junit/pom.xml",
+      "artifact": "spring-boot-test"
+    },
+    {
+      "file": "spring-modulith-junit/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-modulith-moments/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-modulith-moments/pom.xml",
+      "artifact": "spring-boot-jackson"
+    },
+    {
+      "file": "spring-modulith-moments/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-modulith-moments/pom.xml",
+      "artifact": "spring-boot-starter-jackson-test"
+    },
+    {
+      "file": "spring-modulith-observability/spring-modulith-observability-core/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-modulith-observability/spring-modulith-observability-core/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-modulith-observability/spring-modulith-observability-core/pom.xml",
+      "artifact": "spring-boot-starter-actuator-test"
+    },
+    {
+      "file": "spring-modulith-observability/spring-modulith-observability-core/pom.xml",
+      "artifact": "spring-boot-micrometer-tracing-test"
+    },
+    {
+      "file": "spring-modulith-runtime/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-modulith-runtime/pom.xml",
+      "artifact": "spring-boot-flyway"
+    },
+    {
+      "file": "spring-modulith-runtime/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-modulith-runtime/pom.xml",
+      "artifact": "spring-boot-actuator-autoconfigure"
+    },
+    {
+      "file": "spring-modulith-runtime/pom.xml",
+      "artifact": "spring-boot-data-jdbc-test"
+    },
+    {
+      "file": "spring-modulith-runtime/pom.xml",
+      "artifact": "spring-boot-data-jpa-test"
+    },
+    {
+      "file": "spring-modulith-runtime/pom.xml",
+      "artifact": "spring-boot-data-r2dbc-test"
+    },
+    {
+      "file": "spring-modulith-runtime/pom.xml",
+      "artifact": "spring-boot-jooq-test"
+    },
+    {
+      "file": "spring-modulith-runtime/pom.xml",
+      "artifact": "spring-boot-jpa-test"
+    },
+    {
+      "file": "spring-modulith-starters/spring-modulith-starter-core/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-modulith-starters/spring-modulith-starter-insight/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-modulith-starters/spring-modulith-starter-test/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-modulith-test/pom.xml",
+      "artifact": "spring-boot-test-autoconfigure"
+    },
+    {
+      "file": "spring-modulith-test/pom.xml",
+      "artifact": "spring-boot-persistence"
+    },
+    {
+      "file": "spring-modulith-test/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    }
+  ]
+}

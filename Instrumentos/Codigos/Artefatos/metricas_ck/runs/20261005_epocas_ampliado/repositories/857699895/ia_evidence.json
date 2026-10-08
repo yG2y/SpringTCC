@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "1e4903e601b4c11c3d172511d29476e457e51ed7",
+      "date": "2024-09-18T10:28:42+03:00",
+      "author": "SoGood",
+      "email": "108363656+sogutemir@users.noreply.github.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "07cfc4bbb2748d5c3dd3a6a38fbf2443a51e5c64",
+      "date": "2024-09-17T17:24:23+03:00",
+      "author": "sogutemir",
+      "email": "108363656+sogutemir@users.noreply.github.com",
+      "message": "Update README.md\n"
+    },
+    {
+      "sha": "77389e466c94981b3b24741c68e86566d9fe7564",
+      "date": "2024-09-17T17:20:04+03:00",
+      "author": "sogutemir",
+      "email": "108363656+sogutemir@users.noreply.github.com",
+      "message": "Added outbox pattern to project\n\nI had to commit collectively because there was a change in the common use functions\n"
+    },
+    {
+      "sha": "af5ca2a2f864081d09ffe1fdbf30ff205b2f9914",
+      "date": "2024-09-17T12:15:35+03:00",
+      "author": "sogutemir",
+      "email": "108363656+sogutemir@users.noreply.github.com",
+      "message": "Created Sheduler for outbox\n"
+    },
+    {
+      "sha": "f5e56fc29ad5a78bbe7563fdcad7d623cbe347a3",
+      "date": "2024-09-17T12:11:16+03:00",
+      "author": "sogutemir",
+      "email": "108363656+sogutemir@users.noreply.github.com",
+      "message": "Fix bugs\n"
+    },
+    {
+      "sha": "a7d31474e6ad9de8b8c54de10e44cae751fc0919",
+      "date": "2024-09-17T12:09:25+03:00",
+      "author": "sogutemir",
+      "email": "108363656+sogutemir@users.noreply.github.com",
+      "message": "for outbox created ports\n"
+    },
+    {
+      "sha": "46de76f651900f8231a34d55ad439a55cec85d72",
+      "date": "2024-09-17T12:07:37+03:00",
+      "author": "sogutemir",
+      "email": "108363656+sogutemir@users.noreply.github.com",
+      "message": "Created OutBox models\n"
+    },
+    {
+      "sha": "08c7f46d7fc3e9a669850c8146476e78683fcbf9",
+      "date": "2024-09-17T12:06:45+03:00",
+      "author": "sogutemir",
+      "email": "108363656+sogutemir@users.noreply.github.com",
+      "message": "Config saga and outbox\n"
+    },
+    {
+      "sha": "bf965366d6e2421729a628c5decb458f3e801de1",
+      "date": "2024-09-17T10:40:59+03:00",
+      "author": "sogutemir",
+      "email": "108363656+sogutemir@users.noreply.github.com",
+      "message": "Created outbox-module and Table\n"
+    },
+    {
+      "sha": "7d4a7989140d5e34df8a3cb370fe5656a66ddb96",
+      "date": "2024-09-16T21:59:51+03:00",
+      "author": "sogutemir",
+      "email": "108363656+sogutemir@users.noreply.github.com",
+      "message": "Update README.md\n"
+    },
+    {
+      "sha": "20b32a5e9a58dc56d241aa0a1c3b7c299dfcfdf2",
+      "date": "2024-09-16T19:19:14+03:00",
+      "author": "sogutemir",
+      "email": "108363656+sogutemir@users.noreply.github.com",
+      "message": "Delete application.properties\n\ndont need app.prop bcz we have a container\n"
+    },
+    {
+      "sha": "f08d74abf41b3428492fc0f6f9b7740a8e1b0271",
+      "date": "2024-09-16T16:40:58+03:00",
+      "author": "sogutemir",
+      "email": "108363656+sogutemir@users.noreply.github.com",
+      "message": "Fixed Java Version\n"
+    },
+    {
+      "sha": "cb09476e6753f65c861844a7a20e2b898351c791",
+      "date": "2024-09-16T16:16:01+03:00",
+      "author": "sogutemir",
+      "email": "108363656+sogutemir@users.noreply.github.com",
+      "message": "Java version will be removed and relocated because it is incorrect\n"
+    },
+    {
+      "sha": "dd3f0e2297feb5d84b887f28ac136a4a8779ce84",
+      "date": "2024-09-16T15:44:58+03:00",
+      "author": "sogutemir",
+      "email": "108363656+sogutemir@users.noreply.github.com",
+      "message": "Implement Saga for RestaurantApprovalResponseMessageListenerImpl\n"
+    },
+    {
+      "sha": "3e711e0854bc90a961ec5fce84f879ac41ad0abb",
+      "date": "2024-09-16T15:41:43+03:00",
+      "author": "sogutemir",
+      "email": "108363656+sogutemir@users.noreply.github.com",
+      "message": "Created OrderApprovalSaga and OrderSagaHelper(for duplicate methods)\n"
+    },
+    {
+      "sha": "10c3c22ec9bf34fb82602a63e88a54b95ab22fe9",
+      "date": "2024-09-16T15:37:12+03:00",
+      "author": "sogutemir",
+      "email": "108363656+sogutemir@users.noreply.github.com",
+      "message": "OrderPaymentSaga Created\n"
+    },
+    {
+      "sha": "625110fd38bfa14195c4055ac10c25125046904f",
+      "date": "2024-09-16T15:24:02+03:00",
+      "author": "sogutemir",
+      "email": "108363656+sogutemir@users.noreply.github.com",
+      "message": "Created SagaStepInterface\n"
+    },
+    {
+      "sha": "aca91d56bb87169dbd328000ee3472b1955993be",
+      "date": "2024-09-16T15:22:31+03:00",
+      "author": "sogutemir",
+      "email": "108363656+sogutemir@users.noreply.github.com",
+      "message": "Add Saga Module Base\n"
+    },
+    {
+      "sha": "f3dbd6ae67877f29a6acebf22ed95c52c6851e96",
+      "date": "2024-09-16T14:30:57+03:00",
+      "author": "sogutemir",
+      "email": "108363656+sogutemir@users.noreply.github.com",
+      "message": "Created restaurant-container module\n"
+    },
+    {
+      "sha": "e57b06b3ad27188afd694c847acd7790ee08d6fe",
+      "date": "2024-09-16T14:29:14+03:00",
+      "author": "sogutemir",
+      "email": "108363656+sogutemir@users.noreply.github.com",
+      "message": "Created restaurant-messaging module\n"
+    },
+    {
+      "sha": "ccf8140f4481258d0fbc254db1fee8ef7b057177",
+      "date": "2024-09-16T14:28:23+03:00",
+      "author": "sogutemir",
+      "email": "108363656+sogutemir@users.noreply.github.com",
+      "message": "Created restaurant-dataaccess module\n"
+    },
+    {
+      "sha": "567b12e232ff190fe5fbdb9445af760ee59bad78",
+      "date": "2024-09-16T14:27:25+03:00",
+      "author": "sogutemir",
+      "email": "108363656+sogutemir@users.noreply.github.com",
+      "message": "Created restaurant-domain / restaurant-application-service\n"
+    },
+    {
+      "sha": "249f40bfe89555b3eab9f4b5c970cdc029484cf0",
+      "date": "2024-09-16T14:25:48+03:00",
+      "author": "sogutemir",
+      "email": "108363656+sogutemir@users.noreply.github.com",
+      "message": "Created restaurant-domain-core module\n"
+    },
+    {
+      "sha": "8b54d9bd5aeb1ec6b40e5b76804c0babdc7e4246",
+      "date": "2024-09-16T14:22:43+03:00",
+      "author": "sogutemir",
+      "email": "108363656+sogutemir@users.noreply.github.com",
+      "message": "Created Restaurant Project Base\n"
+    },
+    {
+      "sha": "ec97beb797479adedbaa1b7886d3032fd20c5fd0",
+      "date": "2024-09-16T14:04:53+03:00",
+      "author": "sogutemir",
+      "email": "108363656+sogutemir@users.noreply.github.com",
+      "message": "Created payment-container module\n"
+    },
+    {
+      "sha": "b1e9ad129af7d21fc37a21db12775b36e7cca92d",
+      "date": "2024-09-16T14:00:05+03:00",
+      "author": "sogutemir",
+      "email": "108363656+sogutemir@users.noreply.github.com",
+      "message": "Created payment-messaging module\n"
+    },
+    {
+      "sha": "584b5af2f690f829a354d842e07dda0c52aea599",
+      "date": "2024-09-16T13:54:34+03:00",
+      "author": "sogutemir",
+      "email": "108363656+sogutemir@users.noreply.github.com",
+      "message": "Created payment-dataaccess module\n"
+    },
+    {
+      "sha": "230f8da2b44775b338afdd7b7aa6a853f517d148",
+      "date": "2024-09-16T13:49:49+03:00",
+      "author": "sogutemir",
+      "email": "108363656+sogutemir@users.noreply.github.com",
+      "message": "Created payment-domain / payment-application-service module\n"
+    },
+    {
+      "sha": "10f2c7978f3e18465636a8b6a82ebf3d7d33382e",
+      "date": "2024-09-16T13:28:50+03:00",
+      "author": "sogutemir",
+      "email": "108363656+sogutemir@users.noreply.github.com",
+      "message": "Created payment-domain-core module\n"
+    },
+    {
+      "sha": "a2bb5563fc168dde47a9cd786451836d1eccf319",
+      "date": "2024-09-16T12:27:28+03:00",
+      "author": "sogutemir",
+      "email": "108363656+sogutemir@users.noreply.github.com",
+      "message": "Created Payment Service Modules\n"
+    }
+  ],
+  "commit_sha": "1e4903e601b4c11c3d172511d29476e457e51ed7",
+  "extracted_at": "2026-10-05T18:48:13.846663+00:00"
+}

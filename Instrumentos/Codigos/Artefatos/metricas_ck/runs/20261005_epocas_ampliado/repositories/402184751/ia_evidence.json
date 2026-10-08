@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "56eccbbb68369ec348ebe19bd1f6677a2067f680",
+      "date": "2025-12-19T08:38:57-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Project upgrade\n\n- Upgrade to Java 25\n- Upgrade to Spring Boot 4.0.1\n- Upgrade to Spring Cloud 2025.1.0\n"
+    },
+    {
+      "sha": "b8539d3a587c14dbde4014009413eee0fe0470d4",
+      "date": "2025-12-18T18:36:48-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Project upgrade\n\n- Upgrade to Spring Boot 3.5.9\n- Upgrade to Spring Cloud 2025.0.1\n- Upgrade to wrapperVersion to 3.3.4 and Apache Maven to 3.9.12\n- Upgrade to Confluentinc Docker image 7.9.5\n- Upgrade to Kafdrop Docker image 4.2.0\n- Refactor pom.xml files\n- Remove NativeRuntimeHintsRegistrar as it is not needed\n"
+    },
+    {
+      "sha": "14688b5b6ab51260323dca2de410fdef0ef8ba33",
+      "date": "2025-08-15T10:54:16+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- Upgrade to Spring Boot 3.5.4\n- Upgrade Apache Maven to 3.9.11\n- Refactor build-docker-images.sh\n- Update README file\n"
+    },
+    {
+      "sha": "1b14e4eff07932930df00a962ea6401bfaa2dffa",
+      "date": "2025-07-01T13:38:32+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n- Upgrade to Spring Boot 3.5.3\n- Upgrade to Spring Cloud 2025.0.0\n- Upgrade to kafdrop Docker image 4.1.0\n"
+    },
+    {
+      "sha": "bd67ab3980ce9430668e25ab3c7c5b68b5219b4f",
+      "date": "2025-07-01T09:49:05+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Update the README file and add the .gitattributes file\n"
+    },
+    {
+      "sha": "9ef60c2b6e5df9612618c2786cc85cf52cbd1194",
+      "date": "2024-12-15T15:29:19-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Refactor application packages\n"
+    },
+    {
+      "sha": "23dfda2a2a75a5ee8ae592d24c185f75d79f810e",
+      "date": "2024-12-15T14:13:30-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Rename docker-build.sh to build-docker-images.sh\n"
+    },
+    {
+      "sha": "dd113e63b45315d9464d896a5b523af2e6c485b2",
+      "date": "2024-12-11T15:29:11-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- upgrade to spring-boot 3.4.0;\n- upgrade to spring-cloud 2024.0.0;\n- replace deprecated MockBean with MockitoBean;\n- refactor pom.xml and docker-compose.yml files;\n- remove actuator dependency as it is not essencial to the project;\n- remove public keyword from the Beans;\n- update README.\n"
+    },
+    {
+      "sha": "3b18c1490e2d644c435b0b0476ec43a62ad5194a",
+      "date": "2024-11-02T14:23:54+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Small fixes\n\n- remove the docker-image.prefix property in the main pom.xml;\n- uncomment natie consumer-service build in docker-build.sh.\n"
+    },
+    {
+      "sha": "d655cb0c08d456a28d16ab5ec1ffd24a6dba2fd5",
+      "date": "2024-11-01T13:28:01+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Fix Reflection Issue with Native producer-service\n"
+    },
+    {
+      "sha": "3c0a1f4c3a23a22936c862399540c6878a9011da",
+      "date": "2024-11-01T13:27:35+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Replace Jib with Paketo Buildpacks\n"
+    },
+    {
+      "sha": "800d4e1e905ca8a85059da347a16f8ab08155675",
+      "date": "2024-11-01T11:32:15+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- upgrade to spring-boot 3.3.5;\n- upgrade to Java 21;\n- upgrade to jib 3.4.4;\n- upgrade wrapperVersion to 3.3.2 and apache-maven to 3.9.9;\n- upgrade to spring-cloud 2023.0.3;\n- upgrade to cloudevents 4.0.1;\n- upgrade to confluentinc docker images 7.6.1;\n- update README.\n"
+    },
+    {
+      "sha": "1f12119c8952276aeae973d1dc81ee1dcfbbdf43",
+      "date": "2024-04-06T18:13:31+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- upgrade to spring-boot 3.2.4\n- upgrade to spring-cloud 2023.0.1;\n- upgrade to cloudevents 3.0.0;\n- upgrade to jib-maven-plugin 3.4.1;\n- upgrade to confluentinc docker images 7.5.3;\n- fix spring.cloud.stream.output-bindings property.\n"
+    },
+    {
+      "sha": "b793f1ca1ca1c5cba6c573a882884a094f1364f8",
+      "date": "2023-12-22T16:53:52-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to spring-boot 3.2.1 and spring-cloud 2023.0.0\n"
+    },
+    {
+      "sha": "8fcf9b5b3b9e93fd501598820a249bd2f7987ee0",
+      "date": "2023-12-22T12:44:43-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to kafdrop docker image 4.0.1\n"
+    },
+    {
+      "sha": "7d80c9e28fefc56bca7c720de9a2a79c2227e5c4",
+      "date": "2023-12-22T12:43:57-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to jib-maven-plugin 3.4.0\n"
+    },
+    {
+      "sha": "ff86da249f9b4266f2bfc80c292ed1cb1afeb5db",
+      "date": "2023-12-22T12:36:52-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to apache-maven 3.9.5\n"
+    },
+    {
+      "sha": "9f5501c614146afd0550dd9f918ef8bdf17aa1e5",
+      "date": "2023-11-13T22:33:14+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Add five Medium articles\n"
+    },
+    {
+      "sha": "299f899e289d439b9df9d2a3900c94dc850477e8",
+      "date": "2023-09-01T18:32:03+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Update README including the producer-service docker native build exception\n"
+    },
+    {
+      "sha": "679f9e6e41462f0eb28c2ff82246b72d678ad2a7",
+      "date": "2023-09-01T16:50:32+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to cloudevents 2.5.0\n"
+    },
+    {
+      "sha": "ca08498d72ea091eb5f9938d580b6f5a426a88f7",
+      "date": "2023-09-01T16:48:22+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to spring-boot 3.1.3 and spring-cloud 2022.0.4\n"
+    },
+    {
+      "sha": "1fe5c2aec1bddc20cd535f44683bfbb96b7357b9",
+      "date": "2023-09-01T16:47:04+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to confluentinc Docker images 7.4.1 and kafdrop 3.31.0\n"
+    },
+    {
+      "sha": "b9819554bd0a731e333974fbbb98662a306f5558",
+      "date": "2023-09-01T16:42:38+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to Jib 3.3.2\n"
+    },
+    {
+      "sha": "f6229cc51fe39f683e94cdccc7f5a8460c42a6d9",
+      "date": "2023-09-01T16:35:41+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to apache-maven 3.9.4 and maven-wrapper 3.2.0\n"
+    },
+    {
+      "sha": "6e6cd94d8e797b4975a384fe36c73b09e2cc7c1c",
+      "date": "2023-09-01T16:35:08+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Migrate to Compose V2\n"
+    },
+    {
+      "sha": "34f465f514a89f956d13a8e7d92ddb7aaa29839e",
+      "date": "2023-09-01T16:34:17+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Update README\n"
+    },
+    {
+      "sha": "15d933542eb2bbfd13cc1e8c408df8543202a205",
+      "date": "2023-09-01T16:32:04+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Add PoCs & Articles Section In README\n"
+    },
+    {
+      "sha": "2fa4409bede50dac20765d32db368ac260d4662e",
+      "date": "2023-05-20T17:58:52-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Create FUNDING.yml\n"
+    },
+    {
+      "sha": "12ea1f7fe5ec9e8f966732c99304bba6e61afdcc",
+      "date": "2023-04-24T22:19:22+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Update README with new Medium article\n"
+    },
+    {
+      "sha": "c570be27fcba62106fddbdc66e36ac2f3c0068e2",
+      "date": "2023-04-24T18:21:39+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Set the routingMap in application.properties\n"
+    }
+  ],
+  "commit_sha": "56eccbbb68369ec348ebe19bd1f6677a2067f680",
+  "extracted_at": "2026-10-05T18:44:24.467900+00:00"
+}

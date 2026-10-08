@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "9c507e9acabe6b23f1d5faadd792ede875bd671b",
+      "date": "2026-09-14T08:20:46+01:00",
+      "author": "motouom",
+      "email": "motouomvictor@gmail.com",
+      "message": "Run CI for workflow changes\n"
+    },
+    {
+      "sha": "3c6bb73c4239ad87d03278b8ea21db34c691b3c3",
+      "date": "2026-09-14T08:19:23+01:00",
+      "author": "motouom",
+      "email": "motouomvictor@gmail.com",
+      "message": "Fix Codecov upload workflow\n"
+    },
+    {
+      "sha": "96be17a87e1f0e91b6310ac5970e9221ce265987",
+      "date": "2026-09-14T08:12:23+01:00",
+      "author": "motouom",
+      "email": "motouomvictor@gmail.com",
+      "message": "Revert \"Merge pull request #1490 from adorsys/1336-helm-keycloak-readiness-check\"\n\nThis reverts commit 85125532c120e84d8dabb48d6b2590d34300cf76, reversing\nchanges made to 910728c97377d2a8dd85be8e6340043a0715a9ef.\n"
+    },
+    {
+      "sha": "85125532c120e84d8dabb48d6b2590d34300cf76",
+      "date": "2026-09-10T11:56:51+01:00",
+      "author": "Motouom Victoire",
+      "email": "149515567+Motouom@users.noreply.github.com",
+      "message": "Merge pull request #1490 from adorsys/1336-helm-keycloak-readiness-check\n\nhelm keycloak readiness check"
+    },
+    {
+      "sha": "910728c97377d2a8dd85be8e6340043a0715a9ef",
+      "date": "2026-05-29T08:22:53+01:00",
+      "author": "Motouom Victoire",
+      "email": "149515567+Motouom@users.noreply.github.com",
+      "message": "Merge pull request #1611 from jsarem/issue-1610\n\nFix Keycloak FGAP version detection using wrong feature names"
+    },
+    {
+      "sha": "6cfed0fd3184f388163feb393b39dc9e3fafe2b7",
+      "date": "2026-05-25T13:43:00+03:00",
+      "author": "Janne Saukkio",
+      "email": "janne.saukkio@remion.com",
+      "message": "docs(changelog): document fix for FGAP V2 version detection\n"
+    },
+    {
+      "sha": "599930b01d7684705a0209ec8eff38fc43cf24cb",
+      "date": "2026-05-25T13:42:41+03:00",
+      "author": "Janne Saukkio",
+      "email": "janne.saukkio@remion.com",
+      "message": "fix(authz): Fix Keycloak FGAP version detection using wrong feature names\n"
+    },
+    {
+      "sha": "e476abeae83c351fb5b6ad554774a47d76b27c45",
+      "date": "2026-05-22T16:49:03+01:00",
+      "author": "Assah Bismark",
+      "email": "134822946+AssahBismarkabah@users.noreply.github.com",
+      "message": "Merge pull request #1581 from adorsys/dependabot/github_actions/codecov/codecov-action-6.0.1\n\nbuild(deps): bump codecov/codecov-action from 5.5.2 to 6.0.1"
+    },
+    {
+      "sha": "99a5767c5b379bc87adc085e2da8bb1cecfbb588",
+      "date": "2026-05-22T16:47:52+01:00",
+      "author": "Assah Bismark",
+      "email": "134822946+AssahBismarkabah@users.noreply.github.com",
+      "message": "Merge pull request #1588 from adorsys/dependabot/maven/org.keycloak-keycloak-parent-26.6.2\n\nbuild(deps): bump org.keycloak:keycloak-parent from 26.5.5 to 26.6.2"
+    },
+    {
+      "sha": "b87f17195dbf5217d90e960fcf00092c60c1f1ab",
+      "date": "2026-05-22T16:45:10+01:00",
+      "author": "Assah Bismark",
+      "email": "134822946+AssahBismarkabah@users.noreply.github.com",
+      "message": "Merge pull request #1593 from adorsys/dependabot/maven/org.mock-server-mockserver-spring-test-listener-6.0.0\n\nbuild(deps-dev): bump org.mock-server:mockserver-spring-test-listener from 5.15.0 to 6.0.0"
+    },
+    {
+      "sha": "9c520cd10c7cd4c48bce2fd1e917a6bc4e8aa1b2",
+      "date": "2026-05-22T16:43:37+01:00",
+      "author": "Assah Bismark",
+      "email": "134822946+AssahBismarkabah@users.noreply.github.com",
+      "message": "Merge pull request #1599 from adorsys/dependabot/github_actions/docker/build-push-action-7.2.0\n\nbuild(deps): bump docker/build-push-action from 7.0.0 to 7.2.0"
+    },
+    {
+      "sha": "686b75fe8546dd7a2d50ffd55f648f1e67200d67",
+      "date": "2026-05-22T16:41:47+01:00",
+      "author": "Motouom Victoire",
+      "email": "149515567+Motouom@users.noreply.github.com",
+      "message": "Merge pull request #1603 from adorsys/release/v6.5.1\n\nRelease v6.5.1"
+    },
+    {
+      "sha": "b2e753587af28c2f657afffa7d00a5d095094e9e",
+      "date": "2026-05-22T16:30:39+01:00",
+      "author": "Assah Bismark",
+      "email": "assah9799@gmail.com",
+      "message": "[maven-release-plugin] prepare for next development iteration\n"
+    },
+    {
+      "sha": "90c97fc0f8968286400be7bcb27f8165581003f2",
+      "date": "2026-05-22T16:30:36+01:00",
+      "author": "Assah Bismark",
+      "email": "assah9799@gmail.com",
+      "message": "[maven-release-plugin] prepare release v6.5.1\n"
+    },
+    {
+      "sha": "0456bc32fcac39132326d65c773565ce9c3a381f",
+      "date": "2026-05-22T11:01:47+01:00",
+      "author": "Motouom Victoire",
+      "email": "149515567+Motouom@users.noreply.github.com",
+      "message": "Merge pull request #1595 from Nkwenti-Severian-Ndongtsop/fix/1492-postbrokerlogin-server-error\n\nResolve post broker login recreate bug"
+    },
+    {
+      "sha": "acf512a02153440ce48759b2f372d30b87cadc1d",
+      "date": "2026-05-22T11:00:32+01:00",
+      "author": "Motouom Victoire",
+      "email": "149515567+Motouom@users.noreply.github.com",
+      "message": "Merge pull request #1587 from Nkwenti-Severian-Ndongtsop/fix/1514-removing-ldap-default-mappers\n\nremoving ldap default mappers"
+    },
+    {
+      "sha": "62e00bff288fa0325c6addf3ec576dbf1f0c0b51",
+      "date": "2026-05-22T10:18:15+01:00",
+      "author": "@Nkwenti @Severian",
+      "email": "halamadrid651643565@gmail.com",
+      "message": "Merge branch 'main' into fix/1514-removing-ldap-default-mappers"
+    },
+    {
+      "sha": "664117162e324d7876d55a9f9accc7e9081edfc7",
+      "date": "2026-05-21T19:43:13Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump docker/build-push-action from 7.0.0 to 7.2.0\n\nBumps [docker/build-push-action](https://github.com/docker/build-push-action) from 7.0.0 to 7.2.0.\n- [Release notes](https://github.com/docker/build-push-action/releases)\n- [Commits](https://github.com/docker/build-push-action/compare/v7.0.0...v7.2.0)\n\n---\nupdated-dependencies:\n- dependency-name: docker/build-push-action\n  dependency-version: 7.2.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "9e92c22bd78aad502f421aa4c8bae696ba4928d1",
+      "date": "2026-05-21T12:35:40+01:00",
+      "author": "@Nkwenti @Severian",
+      "email": "halamadrid651643565@gmail.com",
+      "message": "Merge pull request #1586 from Nkwenti-Severian-Ndongtsop/fix/1526-resource-bare-id\n\nfix(authz): preserve full resource names for custom clients in FGAP V2"
+    },
+    {
+      "sha": "c37c9095e70a6fc8a8c75d3c080808ea1536ef27",
+      "date": "2026-05-21T12:32:44+01:00",
+      "author": "@Nkwenti @Severian",
+      "email": "halamadrid651643565@gmail.com",
+      "message": "Apply suggestion from @ianwallen\n\nCo-authored-by: Ian <ianwallen@hotmail.com>"
+    },
+    {
+      "sha": "9c57f73b014c6eace7982750537f39ad73c3a294",
+      "date": "2026-05-21T10:53:15+01:00",
+      "author": "Nkwenti-Severian-Ndongtsop",
+      "email": "severiannkwenti@gmail.com",
+      "message": "chore: update changelog – fix post broker login flow recreation error (#1492)\n"
+    },
+    {
+      "sha": "e88559a5b86d587905c81657e57f699517bdf0a2",
+      "date": "2026-05-21T09:55:09+01:00",
+      "author": "Nkwenti-Severian-Ndongtsop",
+      "email": "severiannkwenti@gmail.com",
+      "message": "fix(auth-flows): resolve post broker login recreate bug by setting flow to null\n"
+    },
+    {
+      "sha": "6ed27aa3cbfa6564d5b19e9153eae8dd205457e2",
+      "date": "2026-05-20T22:39:36Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps-dev): bump org.mock-server:mockserver-spring-test-listener\n\nBumps org.mock-server:mockserver-spring-test-listener from 5.15.0 to 6.0.0.\n\n---\nupdated-dependencies:\n- dependency-name: org.mock-server:mockserver-spring-test-listener\n  dependency-version: 6.0.0\n  dependency-type: direct:development\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "6496d79a080386ab384943f1c45c275611bfb601",
+      "date": "2026-05-20T02:43:11Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump org.keycloak:keycloak-parent from 26.5.5 to 26.6.2\n\nBumps [org.keycloak:keycloak-parent](https://github.com/keycloak/keycloak) from 26.5.5 to 26.6.2.\n- [Release notes](https://github.com/keycloak/keycloak/releases)\n- [Commits](https://github.com/keycloak/keycloak/compare/26.5.5...26.6.2)\n\n---\nupdated-dependencies:\n- dependency-name: org.keycloak:keycloak-parent\n  dependency-version: 26.6.2\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "47216949e16cec91a3fb5775bf01c0aa3147efc2",
+      "date": "2026-05-19T12:20:27+01:00",
+      "author": "Nkwenti-Severian-Ndongtsop",
+      "email": "severiannkwenti@gmail.com",
+      "message": "fix: LDAP default mappers deletion on initial creation (#1514)\n"
+    },
+    {
+      "sha": "2359a54779c0098a9720ed7c599e324a5456e4ab",
+      "date": "2026-05-19T10:35:53+01:00",
+      "author": "Nkwenti-Severian-Ndongtsop",
+      "email": "severiannkwenti@gmail.com",
+      "message": "docs(changelog): document fix for FGAP V2 custom client resource regression\n"
+    },
+    {
+      "sha": "daf24b71626d42a90f6919e0d31b215baee36ce9",
+      "date": "2026-05-19T09:59:02+01:00",
+      "author": "Nkwenti-Severian-Ndongtsop",
+      "email": "severiannkwenti@gmail.com",
+      "message": "fix(authz): preserve full resource names for custom clients in FGAP V2\n"
+    },
+    {
+      "sha": "bb903e956987f4a205c11096658f4b863eebb187",
+      "date": "2026-05-19T04:14:58Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump codecov/codecov-action from 5.5.2 to 6.0.1\n\nBumps [codecov/codecov-action](https://github.com/codecov/codecov-action) from 5.5.2 to 6.0.1.\n- [Release notes](https://github.com/codecov/codecov-action/releases)\n- [Changelog](https://github.com/codecov/codecov-action/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/codecov/codecov-action/compare/v5.5.2...v6.0.1)\n\n---\nupdated-dependencies:\n- dependency-name: codecov/codecov-action\n  dependency-version: 6.0.1\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "91ebb2ff525b65e8b0950f5ce305655062964e30",
+      "date": "2026-05-18T10:47:22+01:00",
+      "author": "Motouom Victoire",
+      "email": "149515567+Motouom@users.noreply.github.com",
+      "message": "Merge pull request #1331 from Motouom/Improve-validation-config\n\nfeat: Improve config validation with JSON schema"
+    },
+    {
+      "sha": "98199769ff88cf93b625f96567abba90258d32e9",
+      "date": "2026-05-18T10:43:53+01:00",
+      "author": "Motouom Victoire",
+      "email": "149515567+Motouom@users.noreply.github.com",
+      "message": "Merge pull request #1573 from Nkwenti-Severian-Ndongtsop/feat/1568-added-baseline-config-from-keycloak\n\nAdded baseline config for new keycloak versions"
+    }
+  ],
+  "commit_sha": "9c507e9acabe6b23f1d5faadd792ede875bd671b",
+  "extracted_at": "2026-10-05T17:59:40.608113+00:00"
+}

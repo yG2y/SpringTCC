@@ -1,0 +1,76 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${spring.boot.version};3.3.5",
+  "spring_boot_major": "3",
+  "java_versions_declared": "${java.version};17",
+  "build_evidence": [
+    {
+      "file": "examples/telegram-bot-advanced-sample-long-polling/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "examples/telegram-bot-advanced-sample-long-polling/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "telegram-bot-dependencies/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "telegram-bot-long-polling/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "telegram-bot-long-polling/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "telegram-bot-observability/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "telegram-bot-observability/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "telegram-bot-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "telegram-bot-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "telegram-bot-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "telegram-bot-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "telegram-bot-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "telegram-bot-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "telegram-bot-webhook/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "telegram-bot-webhook/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "telegram-bot-webhook/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    }
+  ]
+}

@@ -1,0 +1,520 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${springBootVersion};${version.org.springframework.boot};4.1.1",
+  "spring_boot_major": "4",
+  "java_versions_declared": "17",
+  "build_evidence": [
+    {
+      "file": "gradle-examples/kogito-springboot-gradle-examples/dmn-springboot-gradle/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "gradle-examples/kogito-springboot-gradle-examples/process-decisions-rules-springboot-gradle/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "kogito-springboot-examples/decisiontable-springboot-example/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "kogito-springboot-examples/decisiontable-springboot-example/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "kogito-springboot-examples/decisiontable-springboot-example/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "kogito-springboot-examples/dmn-15-springboot-example/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "kogito-springboot-examples/dmn-15-springboot-example/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "kogito-springboot-examples/dmn-15-springboot-example/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "kogito-springboot-examples/dmn-drools-springboot-metrics/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "kogito-springboot-examples/dmn-drools-springboot-metrics/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "kogito-springboot-examples/dmn-event-driven-springboot/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "kogito-springboot-examples/dmn-event-driven-springboot/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "kogito-springboot-examples/dmn-event-driven-springboot/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "kogito-springboot-examples/dmn-listener-springboot/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "kogito-springboot-examples/dmn-listener-springboot/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "kogito-springboot-examples/dmn-listener-springboot/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "kogito-springboot-examples/dmn-pmml-springboot-example/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "kogito-springboot-examples/dmn-pmml-springboot-example/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "kogito-springboot-examples/dmn-pmml-springboot-example/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "kogito-springboot-examples/dmn-resource-jar-springboot-example/dmn-springboot-consumer-example/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "kogito-springboot-examples/dmn-resource-jar-springboot-example/dmn-springboot-consumer-example/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "kogito-springboot-examples/dmn-resource-jar-springboot-example/dmn-springboot-consumer-example/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "kogito-springboot-examples/dmn-springboot-example/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "kogito-springboot-examples/dmn-springboot-example/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "kogito-springboot-examples/dmn-springboot-example/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "kogito-springboot-examples/dmn-tracing-springboot/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "kogito-springboot-examples/dmn-tracing-springboot/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "kogito-springboot-examples/dmn-tracing-springboot/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "kogito-springboot-examples/flexible-process-springboot/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "kogito-springboot-examples/flexible-process-springboot/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "kogito-springboot-examples/flexible-process-springboot/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "kogito-springboot-examples/onboarding-springboot/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "kogito-springboot-examples/onboarding-springboot/pom.xml",
+      "artifact": "spring-boot-cache"
+    },
+    {
+      "file": "kogito-springboot-examples/onboarding-springboot/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "kogito-springboot-examples/onboarding-springboot/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "kogito-springboot-examples/pmml-event-driven-springboot/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "kogito-springboot-examples/pmml-event-driven-springboot/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "kogito-springboot-examples/pmml-springboot-example/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "kogito-springboot-examples/pmml-springboot-example/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "kogito-springboot-examples/pmml-springboot-example/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "kogito-springboot-examples/process-business-calendar-springboot-example/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "kogito-springboot-examples/process-business-calendar-springboot-example/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "kogito-springboot-examples/process-business-calendar-springboot-example/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "kogito-springboot-examples/process-business-rules-springboot/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "kogito-springboot-examples/process-business-rules-springboot/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "kogito-springboot-examples/process-business-rules-springboot/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "kogito-springboot-examples/process-decisions-rest-springboot/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "kogito-springboot-examples/process-decisions-rest-springboot/pom.xml",
+      "artifact": "spring-boot-restclient"
+    },
+    {
+      "file": "kogito-springboot-examples/process-decisions-rest-springboot/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "kogito-springboot-examples/process-decisions-rest-springboot/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "kogito-springboot-examples/process-decisions-rules-springboot-yaml/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "kogito-springboot-examples/process-decisions-rules-springboot-yaml/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "kogito-springboot-examples/process-decisions-rules-springboot-yaml/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "kogito-springboot-examples/process-decisions-rules-springboot/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "kogito-springboot-examples/process-decisions-rules-springboot/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "kogito-springboot-examples/process-decisions-rules-springboot/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "kogito-springboot-examples/process-decisions-springboot/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "kogito-springboot-examples/process-decisions-springboot/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "kogito-springboot-examples/process-decisions-springboot/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "kogito-springboot-examples/process-infinispan-persistence-springboot/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "kogito-springboot-examples/process-infinispan-persistence-springboot/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "kogito-springboot-examples/process-infinispan-persistence-springboot/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "kogito-springboot-examples/process-kafka-multi-springboot/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "kogito-springboot-examples/process-kafka-multi-springboot/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "kogito-springboot-examples/process-kafka-multi-springboot/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "kogito-springboot-examples/process-kafka-quickstart-springboot/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "kogito-springboot-examples/process-kafka-quickstart-springboot/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "kogito-springboot-examples/process-kafka-quickstart-springboot/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "kogito-springboot-examples/process-mongodb-persistence-springboot/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "kogito-springboot-examples/process-mongodb-persistence-springboot/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb"
+    },
+    {
+      "file": "kogito-springboot-examples/process-mongodb-persistence-springboot/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "kogito-springboot-examples/process-mongodb-persistence-springboot/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "kogito-springboot-examples/process-monitoring-springboot/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "kogito-springboot-examples/process-monitoring-springboot/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "kogito-springboot-examples/process-outbox-mongodb-springboot/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "kogito-springboot-examples/process-outbox-mongodb-springboot/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb"
+    },
+    {
+      "file": "kogito-springboot-examples/process-outbox-mongodb-springboot/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "kogito-springboot-examples/process-outbox-mongodb-springboot/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "kogito-springboot-examples/process-performance-springboot/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "kogito-springboot-examples/process-performance-springboot/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "kogito-springboot-examples/process-performance-springboot/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "kogito-springboot-examples/process-performance-springboot/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "kogito-springboot-examples/process-postgresql-persistence-springboot/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "kogito-springboot-examples/process-postgresql-persistence-springboot/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "kogito-springboot-examples/process-postgresql-persistence-springboot/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "kogito-springboot-examples/process-postgresql-persistence-springboot/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "kogito-springboot-examples/process-rest-service-call-springboot/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "kogito-springboot-examples/process-rest-service-call-springboot/pom.xml",
+      "artifact": "spring-boot-restclient"
+    },
+    {
+      "file": "kogito-springboot-examples/process-rest-service-call-springboot/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "kogito-springboot-examples/process-rest-service-call-springboot/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "kogito-springboot-examples/process-scripts-springboot/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "kogito-springboot-examples/process-scripts-springboot/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "kogito-springboot-examples/process-scripts-springboot/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "kogito-springboot-examples/process-service-calls-springboot/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "kogito-springboot-examples/process-service-calls-springboot/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "kogito-springboot-examples/process-service-calls-springboot/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "kogito-springboot-examples/process-springboot-example/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "kogito-springboot-examples/process-springboot-example/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "kogito-springboot-examples/process-springboot-example/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "kogito-springboot-examples/process-timer-springboot/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "kogito-springboot-examples/process-timer-springboot/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "kogito-springboot-examples/process-usertasks-custom-lifecycle-springboot/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "kogito-springboot-examples/process-usertasks-custom-lifecycle-springboot/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "kogito-springboot-examples/process-usertasks-custom-lifecycle-springboot/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "kogito-springboot-examples/process-usertasks-springboot/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "kogito-springboot-examples/process-usertasks-springboot/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "kogito-springboot-examples/process-usertasks-springboot/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "kogito-springboot-examples/process-usertasks-with-security-oidc-springboot/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "kogito-springboot-examples/process-usertasks-with-security-oidc-springboot/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "kogito-springboot-examples/process-usertasks-with-security-oidc-springboot/pom.xml",
+      "artifact": "spring-boot-starter-oauth2-resource-server"
+    },
+    {
+      "file": "kogito-springboot-examples/process-usertasks-with-security-oidc-springboot/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "kogito-springboot-examples/process-usertasks-with-security-oidc-springboot/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "kogito-springboot-examples/process-usertasks-with-security-springboot/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "kogito-springboot-examples/process-usertasks-with-security-springboot/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "kogito-springboot-examples/process-usertasks-with-security-springboot/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "kogito-springboot-examples/process-usertasks-with-security-springboot/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "kogito-springboot-examples/rules-legacy-scesim-springboot-example/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "kogito-springboot-examples/rules-legacy-scesim-springboot-example/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "kogito-springboot-examples/rules-legacy-scesim-springboot-example/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "kogito-springboot-examples/rules-legacy-springboot-example/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "kogito-springboot-examples/rules-legacy-springboot-example/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "kogito-springboot-examples/rules-legacy-springboot-example/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "kogito-springboot-examples/ruleunit-event-driven-springboot/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "kogito-springboot-examples/ruleunit-event-driven-springboot/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "kogito-springboot-examples/ruleunit-event-driven-springboot/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "kogito-springboot-examples/ruleunit-springboot-example/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "kogito-springboot-examples/ruleunit-springboot-example/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "kogito-springboot-examples/ruleunit-springboot-example/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

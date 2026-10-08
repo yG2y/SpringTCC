@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "fd8c626eb259d2cc89c472b527ff05e7cc7e48a3",
+      "date": "2026-09-15T16:51:39+02:00",
+      "author": "joseegman-idoneea",
+      "email": "jose.garcia@idoneea.com",
+      "message": "fix: generate proper request body for schemas with required properties (#90)\n\n* fix: generate proper request body for schemas with required properties\n\n- Update processEmptyObject to handle schemas with properties but no type\n- Include required properties in generated request body\n- Fixes issue #87 (similar to #86)\n\nCloses #87\n\n* build: fix compilation on Java 21\n\n- Update spring-cloud-contract dependencies to 4.2.1 (fixes invalid POM)\n- Update Lombok to 1.18.34 (Java 21 compatibility)\n- Add maven-compiler-plugin 3.13.0 with release 17 config\n- Fix generics issue in processEmptyObject\n\n* ci: trigger workflow\n\n* build: bump commons-lang3 to 3.15.0\n\nSpring Cloud Contract 4.2.1 pulls commons-text 1.11.0, which calls\nRange.of() added in commons-lang3 3.13.0. Version 3.12.0 pinned in pom\ncaused NoSuchMethodError in OpenApiContractConverterTest#testRefsInsideArrays.\n\n---------\n\nCo-authored-by: joseegarcia <jose.garcia@disashop.com>"
+    },
+    {
+      "sha": "7c310124d7e4b1e9f4528151f5e1244df71c210d",
+      "date": "2026-02-04T08:05:21+01:00",
+      "author": "Jose E. Garcia Maciñeiras",
+      "email": "68995937+jemacineiras@users.noreply.github.com",
+      "message": "Fix Readme (#85)\n\n"
+    },
+    {
+      "sha": "b279f55866e72b978e5ad69f64e98528bafa22a0",
+      "date": "2024-02-28T09:45:17+01:00",
+      "author": "ramilsngular",
+      "email": "148767544+ramilsngular@users.noreply.github.com",
+      "message": "FIxing \"string schema cannot be cast to array schema\" (#84)\n\n* Fixed: StringSchema cannot be cast to class ArraySchema\n\n* Minor version update in pom.xml\n\n* Version update in README.md\n\n* Update java Version\n\n---------\n\nCo-authored-by: Jose E. Garcia Maciñeiras <68995937+jemacineiras@users.noreply.github.com>\nCo-authored-by: José Enrique García Maciñeiras <joseenrique.garcia@sngular.com>"
+    },
+    {
+      "sha": "d265456b3fe52889df64a9e13c2a9f80cecb2ec4",
+      "date": "2024-02-08T04:01:06+01:00",
+      "author": "Jose Enrique Garcia",
+      "email": "joseenrique.garcia@sngular.com",
+      "message": "Fix Duplicate operation Id\n"
+    },
+    {
+      "sha": "6fdd2f9c7c19c7fd40ffb6935fc68d7f489da695",
+      "date": "2024-02-08T03:59:17+01:00",
+      "author": "Jose Enrique Garcia",
+      "email": "joseenrique.garcia@sngular.com",
+      "message": "Fix Duplicate operation Id\n"
+    },
+    {
+      "sha": "7f8cbddb999be593dcf320b9c515f9d956cc3fcd",
+      "date": "2023-05-09T09:27:09+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump jackson-databind from 2.13.4.1 to 2.13.4.2 (#81)\n\nBumps [jackson-databind](https://github.com/FasterXML/jackson) from 2.13.4.1 to 2.13.4.2.\n- [Release notes](https://github.com/FasterXML/jackson/releases)\n- [Commits](https://github.com/FasterXML/jackson/commits)\n\n---\nupdated-dependencies:\n- dependency-name: com.fasterxml.jackson.core:jackson-databind\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "6db32b070deb92440610af5fc97abb195858b15c",
+      "date": "2023-04-18T13:55:36+02:00",
+      "author": "OlgaCalderon",
+      "email": "127837946+OlgaCalderon@users.noreply.github.com",
+      "message": "79 Associate GitHub actions to PR tags (#80)\n\n"
+    },
+    {
+      "sha": "4ba98c2b5611a406b716426bf2532c2272fc499a",
+      "date": "2022-12-20T16:30:30+01:00",
+      "author": "dianaGomezGar",
+      "email": "106666451+dianaGomezGar@users.noreply.github.com",
+      "message": "Refactor for migration (#78)\n\n"
+    },
+    {
+      "sha": "ab991cadad066c404ceba79301576035739bb6bf",
+      "date": "2022-11-05T14:18:38+01:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump jackson-databind from 2.13.3 to 2.13.4.1 (#77)\n\n* Bump jackson-databind from 2.13.3 to 2.13.4.1\n\nBumps [jackson-databind](https://github.com/FasterXML/jackson) from 2.13.3 to 2.13.4.1.\n- [Release notes](https://github.com/FasterXML/jackson/releases)\n- [Commits](https://github.com/FasterXML/jackson/commits)\n\n---\nupdated-dependencies:\n- dependency-name: com.fasterxml.jackson.core:jackson-databind\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\n\n* 001 Dependabot update\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Jose Enrique García Maciñeiras <jegarcia@corunet.com>"
+    },
+    {
+      "sha": "78dc266b229567df8caa5b099afadfd18e5e861b",
+      "date": "2022-10-27T13:44:40+02:00",
+      "author": "Jose Enrique García Maciñeiras",
+      "email": "jegarcia@corunet.com",
+      "message": "001 Fix Deployment\n"
+    },
+    {
+      "sha": "756c973f599fb51147c06b0aa0f720a9aa2ed396",
+      "date": "2022-10-27T10:33:49+02:00",
+      "author": "Jose E. Garcia Maciñeiras",
+      "email": "68995937+jemacineiras@users.noreply.github.com",
+      "message": "58 support arrays to produce or consume (#76)\n\n"
+    },
+    {
+      "sha": "97ba4ef649b68f16a84168da90aa5a26dea877e8",
+      "date": "2022-10-17T17:28:09+02:00",
+      "author": "Jose E. Garcia Maciñeiras",
+      "email": "68995937+jemacineiras@users.noreply.github.com",
+      "message": "#71 Fix AsyncApi Message testing. (#75)\n\n"
+    },
+    {
+      "sha": "777a99dbd6bcd36dd0216ea074277439b3891aa5",
+      "date": "2022-10-10T16:45:25+02:00",
+      "author": "Jose E. Garcia Maciñeiras",
+      "email": "68995937+jemacineiras@users.noreply.github.com",
+      "message": "71 failed to execute goal generatetests while trying to generate contracts from an openapi yaml document (#73)\n\n"
+    },
+    {
+      "sha": "b2b785b7c14d1ef59515a978d0ebf3e5092dd7d9",
+      "date": "2022-10-06T11:20:46+02:00",
+      "author": "Isabel López Ulloa",
+      "email": "104004411+IsaUlloa@users.noreply.github.com",
+      "message": "#71 solved null pointer exception (#72)\n\n* #71 solved null pointer exception\n\n* #71 fixed test refs\n\n* #71 changed greetings yml\n\n* #71 changed greetings workflow"
+    },
+    {
+      "sha": "c05b0187192570f7bc8de96285d8dc84e637306a",
+      "date": "2022-10-03T12:31:16+02:00",
+      "author": "Jose E. Garcia Maciñeiras",
+      "email": "68995937+jemacineiras@users.noreply.github.com",
+      "message": "53 scc multiapi converteropenapi rewrite the logic for anyofs (#70)\n\n"
+    },
+    {
+      "sha": "adf1670e9389d767827c5ef49f8f50b525ec8941",
+      "date": "2022-08-02T16:31:05+02:00",
+      "author": "Rivarsal",
+      "email": "59642284+Rivarsal@users.noreply.github.com",
+      "message": "59 scc multiapi converteropenapi fix the behaviour when a simple schema is defined as an array (#67)\n\n* First Changes. Still WIP\n\n* Update OpenApiContractConverter\n\n* Update README.md"
+    },
+    {
+      "sha": "34a7863c6bc4190a175082df96751245a88cd596",
+      "date": "2022-07-29T14:13:58+02:00",
+      "author": "mortizam",
+      "email": "106297639+mortizam@users.noreply.github.com",
+      "message": "Added actions-project-version-check step @maven-pr (#69)\n\n"
+    },
+    {
+      "sha": "e43ce9d6c5e75b1c85d2dc47e3a9688fcd580980",
+      "date": "2022-07-29T10:13:00+02:00",
+      "author": "Marcin Słowiak",
+      "email": "marcin.slowiak.007@gmail.com",
+      "message": "Add OpenApi example first name and last name (#63)\n\n"
+    },
+    {
+      "sha": "d43d3a9afe0c5603dd07e9c248e1dd7e6b8644ee",
+      "date": "2022-07-28T11:43:29+02:00",
+      "author": "mortizam",
+      "email": "106297639+mortizam@users.noreply.github.com",
+      "message": "point to the right branch and the right repo at checkout action  (#66)\n\n"
+    },
+    {
+      "sha": "111d37ddc6d140944d9b3666a93e3cdec682b13c",
+      "date": "2022-07-26T12:23:28+02:00",
+      "author": "Fer Campos",
+      "email": "94556651+fcampostato@users.noreply.github.com",
+      "message": "60 Apply check-style and refactor (#61)\n\n* Apply check-style and refactor\n\n* Fix duplication and float parse"
+    },
+    {
+      "sha": "96c22f825143e8d547c2ddc81f44ad5271ecf580",
+      "date": "2022-07-18T12:00:00+02:00",
+      "author": "Fer Campos",
+      "email": "94556651+fcampostato@users.noreply.github.com",
+      "message": "Fix behavior for array of refs (#55)\n\n* Fix behavior for array of refs\n\n* Fixed array behaviour for refs with arrays of refs\n\n* Updated Readme version\n\n* Updated Readme\n\n* Update Pom version\n\nCo-authored-by: Pablo José López Rivadulla <59642284+Rivarsal@users.noreply.github.com>"
+    },
+    {
+      "sha": "7bed4327b3b13752f04f1125cc338bce4854eb56",
+      "date": "2022-07-15T12:27:52+02:00",
+      "author": "Rivarsal",
+      "email": "59642284+Rivarsal@users.noreply.github.com",
+      "message": "#56 Changed package from public to protected (#57)\n\n"
+    },
+    {
+      "sha": "57feb250d4f404449fd04e9d9bbc8c39aab1cae5",
+      "date": "2022-07-13T16:22:17+02:00",
+      "author": "Javier Mejuto",
+      "email": "97289720+jmejutovazquez@users.noreply.github.com",
+      "message": "#50 Asyncapi support external files (#52)\n\n* #50 Add support to reference external files\n\n* #50 Update pom version\n\n* #50 Fix objects creation in the contracts\n\n* #50 Reuse variable\n\n* #50 Support for external files and fix tests\n\n* #50 Update pom version\n\n* #50 Fix codacy errors and refactor tests\n\n* #50 Fix codacy issues\n\n* #50 Fix array of objects\n\n* #50 Fix codacy issue\n\n* #50 Check that there are no references and properties at the same level and refactor code\n\n* #50 Fix variables to be final"
+    },
+    {
+      "sha": "45e193006c0c20a5c2e0f442236051d555ba79a0",
+      "date": "2022-06-21T17:39:59+02:00",
+      "author": "Rivarsal",
+      "email": "59642284+Rivarsal@users.noreply.github.com",
+      "message": "#49 Added Support for External Files (#51)\n\n* #49 Added Support for External Files\n\n* Fixed AnyOfGeneration\n\n* Small fix for readability"
+    },
+    {
+      "sha": "fe16920e52602c0d4df6fb25b32906897eca8139",
+      "date": "2022-06-13T15:52:39+02:00",
+      "author": "Rivarsal",
+      "email": "59642284+Rivarsal@users.noreply.github.com",
+      "message": "#47 Added explanation for Parameters (#48)\n\n"
+    },
+    {
+      "sha": "fd45d4e2c17b90cba9e3e30b053e5e94820fdec5",
+      "date": "2022-06-08T13:40:42+02:00",
+      "author": "Rivarsal",
+      "email": "59642284+Rivarsal@users.noreply.github.com",
+      "message": "#43 Added support for parameters in path (#46)\n\n* #43 Added support for parameters in path\n\n* Fixed pom"
+    },
+    {
+      "sha": "5a692a953dc7f203f20df23bed381a8d318a5d92",
+      "date": "2022-06-08T13:14:46+02:00",
+      "author": "Javier Mejuto",
+      "email": "97289720+jmejutovazquez@users.noreply.github.com",
+      "message": "#44 Add Maven central badge (#45)\n\n"
+    },
+    {
+      "sha": "b19c653c98dd1db2a976c33cca9b4dd92caecf85",
+      "date": "2022-06-08T09:34:01+02:00",
+      "author": "Javier Mejuto",
+      "email": "97289720+jmejutovazquez@users.noreply.github.com",
+      "message": "#40 fix issue pr message (#42)\n\n* #40 Fix issue and pr mesasges\n\n* #40 Increase pom version"
+    },
+    {
+      "sha": "c0a680165d7d7d95639c64b5091aeb46f35ed822",
+      "date": "2022-06-07T18:03:40+02:00",
+      "author": "Jose E. Garcia Maciñeiras",
+      "email": "68995937+jemacineiras@users.noreply.github.com",
+      "message": "Merge pull request #41 from corunet/38-delivery-fix-maven-central-deployment\n\n#38 Fix pom due delivery problem"
+    },
+    {
+      "sha": "30597da5f416c4fb0dc3f332dcfc9c7548a2b688",
+      "date": "2022-06-07T18:00:17+02:00",
+      "author": "Jose Enrique García Maciñeiras",
+      "email": "jegarcia@corunet.com",
+      "message": "#38 Fix pom due delivery problem\n"
+    }
+  ],
+  "commit_sha": "fd8c626eb259d2cc89c472b527ff05e7cc7e48a3",
+  "extracted_at": "2026-10-05T18:14:18.975539+00:00"
+}

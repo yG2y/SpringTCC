@@ -1,0 +1,230 @@
+{
+  "ia_status": "com_evidencia",
+  "ia_level": 2,
+  "ia_agents": "Claude Code",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "befbbb47e948ef6ef3539dd4e9b84950353f4e93",
+      "trailer": "Claude <noreply@anthropic.com>"
+    }
+  ],
+  "commits": [
+    {
+      "sha": "1225ef272648151cbc3d94824567407676ff0fd5",
+      "date": "2025-11-25T13:10:41+01:00",
+      "author": "lpandzic",
+      "email": "lovro.pandzic@infobip.com",
+      "message": "updated maven badge in README.md\n"
+    },
+    {
+      "sha": "73dad55b444f8b36dfacaea9a84ee9db7b512768",
+      "date": "2025-11-21T07:27:06Z",
+      "author": "infobip-ci",
+      "email": "infobip-ci@infobip.com",
+      "message": "[maven-release-plugin] prepare for next development iteration\n"
+    },
+    {
+      "sha": "a74c8aaa26fb2e15c7c2bc8aa2ac08d76c593ee4",
+      "date": "2025-11-21T07:27:03Z",
+      "author": "infobip-ci",
+      "email": "infobip-ci@infobip.com",
+      "message": "[maven-release-plugin] prepare release infobip-bean-validation-4.0.0\n"
+    },
+    {
+      "sha": "e6174b344dec4f056753c27e25d262e74532bcd4",
+      "date": "2025-11-21T08:26:14+01:00",
+      "author": "lpandzic",
+      "email": "lovro.pandzic@infobip.com",
+      "message": "upgraded to spring boot 4\n"
+    },
+    {
+      "sha": "db9794173673ce2f27d4a2c875606aac948112fb",
+      "date": "2025-11-19T12:07:57Z",
+      "author": "infobip-ci",
+      "email": "infobip-ci@infobip.com",
+      "message": "[maven-release-plugin] prepare for next development iteration\n"
+    },
+    {
+      "sha": "21bf183cce6721268cc0566dab41d538e3d02665",
+      "date": "2025-11-19T12:07:54Z",
+      "author": "infobip-ci",
+      "email": "infobip-ci@infobip.com",
+      "message": "[maven-release-plugin] prepare release infobip-bean-validation-4.0.0-RC2\n"
+    },
+    {
+      "sha": "fac164c69d9d9917f7f5ab9151515259c4e5f062",
+      "date": "2025-11-19T13:07:11+01:00",
+      "author": "lpandzic",
+      "email": "lovro.pandzic@infobip.com",
+      "message": "added name\n"
+    },
+    {
+      "sha": "d8b1092b18449056e8137464e728ce852326b1ff",
+      "date": "2025-11-19T11:59:21Z",
+      "author": "infobip-ci",
+      "email": "infobip-ci@infobip.com",
+      "message": "[maven-release-plugin] prepare for next development iteration\n"
+    },
+    {
+      "sha": "8efd7426a06690937ea6449cba804985cf42f64d",
+      "date": "2025-11-19T11:59:18Z",
+      "author": "infobip-ci",
+      "email": "infobip-ci@infobip.com",
+      "message": "[maven-release-plugin] prepare release infobip-bean-validation-4.0.0-RC1\n"
+    },
+    {
+      "sha": "13a761afafcc96c4b5c284ff3216d6801ac0b2c3",
+      "date": "2025-11-19T12:09:15+01:00",
+      "author": "lpandzic",
+      "email": "lovro.pandzic@infobip.com",
+      "message": "new release process preparation\n"
+    },
+    {
+      "sha": "34160d697d0d5b72c39f4b7e906b45977ff468c3",
+      "date": "2025-11-19T11:23:28+01:00",
+      "author": "lpandzic",
+      "email": "lovro.pandzic@infobip.com",
+      "message": "updated .gitignore\n"
+    },
+    {
+      "sha": "61f6683d493d9487345d8cb75766ad4021445fff",
+      "date": "2025-11-19T11:23:08+01:00",
+      "author": "lpandzic",
+      "email": "lovro.pandzic@infobip.com",
+      "message": "removed .java-version\n"
+    },
+    {
+      "sha": "befbbb47e948ef6ef3539dd4e9b84950353f4e93",
+      "date": "2025-11-19T10:30:39+01:00",
+      "author": "lpandzic",
+      "email": "lovro.pandzic@infobip.com",
+      "message": "Replace RestAssured with Spring Boot RestClient for testing\n\n- Removed RestAssured and Groovy dependencies from pom.xml\n- Rewrote TestBase to use RestClient instead of RestAssured\n- Updated ValidatedRestControllerTest to use RestClient API\n- Upgraded JaCoCo Maven plugin from 0.8.8 to 0.8.14\n- Set local Java version to 21 via jenv\n\nAll tests passing (7/7).\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\n"
+    },
+    {
+      "sha": "443e70e0afd5a2b0783ad91599b05872c9d065ef",
+      "date": "2025-11-11T13:15:42+01:00",
+      "author": "dario-ib",
+      "email": "55133042+dario-ib@users.noreply.github.com",
+      "message": "Upgrade cache action from v2 to v4"
+    },
+    {
+      "sha": "8090d1fc59f925f494fb81b2b363bc8ab8282eca",
+      "date": "2025-11-06T15:42:43+01:00",
+      "author": "Dario Englert",
+      "email": "dario.englert@infobip.com",
+      "message": "prepare for spring boot 4 release\n"
+    },
+    {
+      "sha": "1cd20e5ebca8bf7a4410940b206d8e9e0767e804",
+      "date": "2023-01-23T09:50:35+01:00",
+      "author": "lpandzic",
+      "email": "lovro.pandzic@infobip.com",
+      "message": "converted IntegerWrapper and LongWrapper to records\n"
+    },
+    {
+      "sha": "b5b8f48b6689f639b656c0e7d4070cd8bcbefdc4",
+      "date": "2023-01-23T09:49:09+01:00",
+      "author": "lpandzic",
+      "email": "lovro.pandzic@infobip.com",
+      "message": "updated README.md\n"
+    },
+    {
+      "sha": "0d200c14210ca9b6ba97d1e5874f4e46cab054a1",
+      "date": "2022-11-25T08:20:27Z",
+      "author": "infobip-ci",
+      "email": "infobip-ci@infobip.com",
+      "message": "[maven-release-plugin] prepare for next development iteration\n"
+    },
+    {
+      "sha": "7f449a69de7c2292c4d57689e82539745a35d593",
+      "date": "2022-11-25T08:20:23Z",
+      "author": "infobip-ci",
+      "email": "infobip-ci@infobip.com",
+      "message": "[maven-release-plugin] prepare release infobip-bean-validation-3.0.0\n"
+    },
+    {
+      "sha": "d55b6a398d64769828b3d61d2a9de429ba63bd26",
+      "date": "2022-11-25T09:18:06+01:00",
+      "author": "Lovro Pandžić",
+      "email": "4463380+lpandzic@users.noreply.github.com",
+      "message": "Merge pull request #12 from infobip/spring-boot-3.0.0\n\nSpring boot 3.0.0"
+    },
+    {
+      "sha": "615b4050d86ab997fd1b4760edc5a1ddc00e6bef",
+      "date": "2022-11-25T09:16:33+01:00",
+      "author": "lpandzic",
+      "email": "4463380+lpandzic@users.noreply.github.com",
+      "message": "fixed failing build\n"
+    },
+    {
+      "sha": "91a3f6b30a5fdc59bee41ef67aeece7bea8a9c96",
+      "date": "2022-11-25T08:51:25+01:00",
+      "author": "lpandzic",
+      "email": "4463380+lpandzic@users.noreply.github.com",
+      "message": "removed spring milestones repository\n"
+    },
+    {
+      "sha": "1d33086bb958cc2f26ddba45f4e30336681c5429",
+      "date": "2022-11-25T08:43:20+01:00",
+      "author": "lpandzic",
+      "email": "4463380+lpandzic@users.noreply.github.com",
+      "message": "upgraded to Spring Boot 3.0.0\nupgraded failsafe and surefire plugins\n"
+    },
+    {
+      "sha": "93147bc332f6ec73effd24abd2a09f6a553e5650",
+      "date": "2022-11-23T15:02:16Z",
+      "author": "infobip-ci",
+      "email": "infobip-ci@infobip.com",
+      "message": "[maven-release-plugin] prepare for next development iteration\n"
+    },
+    {
+      "sha": "63c1237de922f04ce47530edffcc8b1cdbaa7553",
+      "date": "2022-11-23T15:02:12Z",
+      "author": "infobip-ci",
+      "email": "infobip-ci@infobip.com",
+      "message": "[maven-release-plugin] prepare release infobip-bean-validation-3.0.0-RC2\n"
+    },
+    {
+      "sha": "26b4fa0d03a5e2eaaaea2232f13aed0a0a49ecea",
+      "date": "2022-11-23T15:57:29+01:00",
+      "author": "lpandzic",
+      "email": "4463380+lpandzic@users.noreply.github.com",
+      "message": "Merge remote-tracking branch 'origin/spring-boot-3.0.0' into spring-boot-3.0.0\n"
+    },
+    {
+      "sha": "efe05c5395fb8205f2e3ccec8672a7aa061c8606",
+      "date": "2022-11-23T15:57:22+01:00",
+      "author": "lpandzic",
+      "email": "4463380+lpandzic@users.noreply.github.com",
+      "message": "migrated to new spring boot auto configuration discovery mechanism\n"
+    },
+    {
+      "sha": "c21662cdec2bfb6b513c16d981c59d5fdd301b61",
+      "date": "2022-10-27T07:29:28Z",
+      "author": "infobip-ci",
+      "email": "infobip-ci@infobip.com",
+      "message": "[maven-release-plugin] prepare for next development iteration\n"
+    },
+    {
+      "sha": "4504b8aaa7ecf8332d3cb0dbd71886c9ab7ece11",
+      "date": "2022-10-27T07:29:24Z",
+      "author": "infobip-ci",
+      "email": "infobip-ci@infobip.com",
+      "message": "[maven-release-plugin] prepare release infobip-bean-validation-3.0.0-M5\n"
+    },
+    {
+      "sha": "7d47f1d984f3756fa9903f0cf44d521c9bfa0182",
+      "date": "2022-10-25T12:12:22Z",
+      "author": "infobip-ci",
+      "email": "infobip-ci@infobip.com",
+      "message": "[maven-release-plugin] prepare for next development iteration\n"
+    }
+  ],
+  "commit_sha": "1225ef272648151cbc3d94824567407676ff0fd5",
+  "extracted_at": "2026-10-05T18:17:25.928701+00:00"
+}

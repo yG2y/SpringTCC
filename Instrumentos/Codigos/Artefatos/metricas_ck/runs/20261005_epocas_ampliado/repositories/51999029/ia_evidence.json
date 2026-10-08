@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "61030ec78b68db686c1f86f7af1c81f366ef86a1",
+      "date": "2026-09-22T14:24:45+02:00",
+      "author": "Lars Bårdgard Åstveit",
+      "email": "5196432+larsbard@users.noreply.github.com",
+      "message": "MOVE-0000 Bump common to 3.1.4 (#511)\n\n* Migrate dependabot credentials, bump spring boot and clean trivyignore\n\n* Bump jdk15on til jdk18on, pin versjon av bouncycastle for å unngå kritiske CVE fordi jdkon pinner til en lavere versjon, oppdater trivyfil\n\n* Bump move common [deploy-to-dev]\n\n* [deploy-to-dev]\n\n* [deploy-to-dev]\n\n* Update deploy to dev workflow [deploy-to-dev]"
+    },
+    {
+      "sha": "e7b5ffd47eba84a323186250b0652d26ecdaf3d2",
+      "date": "2026-09-22T11:41:12+02:00",
+      "author": "Lars Bårdgard Åstveit",
+      "email": "5196432+larsbard@users.noreply.github.com",
+      "message": "MOVE-165 update credentials (#508)\n\n* Migrate dependabot credentials, bump spring boot and clean trivyignore\n\n* Bump jdk15on til jdk18on, pin versjon av bouncycastle for å unngå kritiske CVE fordi jdkon pinner til en lavere versjon, oppdater trivyfil"
+    },
+    {
+      "sha": "02f4bf4a974e17bb316e4e7fb0cc6bd960fa7c44",
+      "date": "2026-09-09T10:19:08+02:00",
+      "author": "Frode Bjerkholt",
+      "email": "46349741+FrodeBjerkholt@users.noreply.github.com",
+      "message": "MOVE-3780 Legga inn BSD 3-lisens på efm-service-registry (#506)"
+    },
+    {
+      "sha": "74c49205660c3f982d71564b3240884656863fd1",
+      "date": "2026-09-09T09:56:38+02:00",
+      "author": "Frode Bjerkholt",
+      "email": "frode.bjerkholt@digdir.no",
+      "message": "MOVE-3780 Legga inn BSD 3-lisens på efm-service-registry\n"
+    },
+    {
+      "sha": "d148fcff8fea1077725a796dcc4aa513dc1a9862",
+      "date": "2026-09-09T09:38:45+02:00",
+      "author": "Frode Bjerkholt",
+      "email": "frode.bjerkholt@digdir.no",
+      "message": "MOVE-3780 Legga inn BSD 3-lisens på efm-service-registry\n"
+    },
+    {
+      "sha": "417e6d910bd1ef2c277c594440a9cfac2e7ce065",
+      "date": "2026-08-13T09:40:00+02:00",
+      "author": "Håvard England",
+      "email": "hme@digdir.no",
+      "message": "Bump oxalis-libs.version from 4.4.0 to 4.5.0 (#501)\n\nBumps `oxalis-libs.version` from 4.4.0 to 4.5.0.\nUpdates `network.oxalis.vefa:peppol-lookup` from 4.4.0 to 4.5.0\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a\nhref=\"https://github.com/OxalisCommunity/vefa-peppol/releases\">network.oxalis.vefa:peppol-lookup's\nreleases</a>.</em></p>\n<blockquote>\n<h2>4.5.0</h2>\n<ul>\n<li>Migrate SML default domain from EC to OpenPeppol</li>\n<li>OpenPeppol eDEC Code Lists v9.7</li>\n</ul>\n<p><strong>Full Changelog</strong>: <a\nhref=\"https://github.com/OxalisCommunity/vefa-peppol/compare/v4.4.0...v4.5.0\">https://github.com/OxalisCommunity/vefa-peppol/compare/v4.4.0...v4.5.0</a></p>\n</blockquote>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a\nhref=\"https://github.com/OxalisCommunity/vefa-peppol/commit/7ad0a75ab9d4f75f89f1e8c2e61e7a0d072dde1b\"><code>7ad0a75</code></a>\n[maven-release-plugin] prepare release v4.5.0</li>\n<li><a\nhref=\"https://github.com/OxalisCommunity/vefa-peppol/commit/74d99ef9757832f8516927fac545996dac1cd24d\"><code>74d99ef</code></a>\nOpenPeppol eDEC Code Lists v9.7</li>\n<li><a\nhref=\"https://github.com/OxalisCommunity/vefa-peppol/commit/3d810480a5cb5cd11aeeddbd52ede1d0b0b5710f\"><code>3d81048</code></a>\nMigrate SML default domain from EC to OpenPeppol</li>\n<li><a\nhref=\"https://github.com/OxalisCommunity/vefa-peppol/commit/2db40218fb8a8514b9d6b74a98e2949c018af5c9\"><code>2db4021</code></a>\n[maven-release-plugin] prepare for next development iteration</li>\n<li>See full diff in <a\nhref=\"https://github.com/OxalisCommunity/vefa-peppol/compare/v4.4.0...v4.5.0\">compare\nview</a></li>\n</ul>\n</details>\n<br />\n\nUpdates `network.oxalis.vefa:commons-busdox` from 4.4.0 to 4.5.0\n\nUpdates `network.oxalis.vefa:commons-bdxr` from 4.4.0 to 4.5.0"
+    },
+    {
+      "sha": "487c1c57a20e8e29e57abd2de29a7949d26681de",
+      "date": "2026-08-12T08:03:42Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump oxalis-libs.version from 4.4.0 to 4.5.0\n\nBumps `oxalis-libs.version` from 4.4.0 to 4.5.0.\n\nUpdates `network.oxalis.vefa:peppol-lookup` from 4.4.0 to 4.5.0\n- [Release notes](https://github.com/OxalisCommunity/vefa-peppol/releases)\n- [Changelog](https://github.com/OxalisCommunity/vefa-peppol/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/OxalisCommunity/vefa-peppol/compare/v4.4.0...v4.5.0)\n\nUpdates `network.oxalis.vefa:commons-busdox` from 4.4.0 to 4.5.0\n\nUpdates `network.oxalis.vefa:commons-bdxr` from 4.4.0 to 4.5.0\n\n---\nupdated-dependencies:\n- dependency-name: network.oxalis.vefa:commons-bdxr\n  dependency-version: 4.5.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n- dependency-name: network.oxalis.vefa:commons-busdox\n  dependency-version: 4.5.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n- dependency-name: network.oxalis.vefa:peppol-lookup\n  dependency-version: 4.5.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "47f442b7f49babf3ce98808ae79b277b0e8b2824",
+      "date": "2026-08-12T10:01:32+02:00",
+      "author": "Lars Bårdgard Åstveit",
+      "email": "5196432+larsbard@users.noreply.github.com",
+      "message": "MOVE-4785 Remove use of snapshot repository, remove old unused profile"
+    },
+    {
+      "sha": "d1f30428e7c1ef838fd3cad7484052dde06e1f64",
+      "date": "2026-08-05T13:04:01+02:00",
+      "author": "Randi Eggum",
+      "email": "randi.eggum@digdir.no",
+      "message": "MOVE- Update spring-boot-dependencies to match spring-boot-starter-parent (#503)\n\nUpdate spring-boot-dependencies to match spring-boot-starter-parent"
+    },
+    {
+      "sha": "eeb4f4ef4f1ba64ccfe4b52d17a359770836a389",
+      "date": "2026-07-24T13:34:03+02:00",
+      "author": "Randi Eggum",
+      "email": "randi.eggum@digdir.no",
+      "message": "MOVE-trivy (#502)\n\ntrivy"
+    },
+    {
+      "sha": "5f458846454df42945565e8b8482c05adf0f8efb",
+      "date": "2026-07-24T12:25:17+02:00",
+      "author": "Randi Eggum",
+      "email": "randi.eggum@digdir.no",
+      "message": "MOVE-4750 Fjern kode for DPFIO (#499)"
+    },
+    {
+      "sha": "83599c6536cfe2029c8bd1179ad9b9d4e926e894",
+      "date": "2026-07-20T13:30:00+02:00",
+      "author": "Lars Bårdgard Åstveit",
+      "email": "5196432+larsbard@users.noreply.github.com",
+      "message": "Bump spring boot, PF-2462 migrate workflows (#500)\n\n* PF-2462 migrate workflows\n\n* Bump SB 4.0.6 to 4.1.0, wipe trivyignore\n\n* update trivyignore"
+    },
+    {
+      "sha": "d2fc67c72a7e1a54e0692797587bcae0dc991f18",
+      "date": "2026-06-23T12:38:54+02:00",
+      "author": "Frode Bjerkholt",
+      "email": "46349741+FrodeBjerkholt@users.noreply.github.com",
+      "message": "Bump oxalis-libs.version from 4.2.1 to 4.4.0 (#494)\n\nBumps `oxalis-libs.version` from 4.2.1 to 4.4.0.\nUpdates `network.oxalis.vefa:peppol-lookup` from 4.2.1 to 4.4.0\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a\nhref=\"https://github.com/OxalisCommunity/vefa-peppol/releases\">network.oxalis.vefa:peppol-lookup's\nreleases</a>.</em></p>\n<blockquote>\n<h2>4.4.0</h2>\n<p>✨ Enhancements</p>\n<ul>\n<li>Added support for OpenPeppol eDEC Code Lists v9.6</li>\n<li>Introduced full read/write support for Peppol Message Level Status\n(MLS)</li>\n</ul>\n<p>🛠️ Changes</p>\n<ul>\n<li>Dropped support for Peppol G2 PKI</li>\n<li>Updated test cases to align with recent lookup changes</li>\n<li>Bumped dependency versions: commons-certvalidator and Jakarta\nMail</li>\n</ul>\n<p><strong>Full Changelog</strong>: <a\nhref=\"https://github.com/OxalisCommunity/vefa-peppol/compare/v4.3.0...v4.4.0\">https://github.com/OxalisCommunity/vefa-peppol/compare/v4.3.0...v4.4.0</a></p>\n<h2>4.4.0-RC1</h2>\n<p>✨ Enhancements</p>\n<ul>\n<li>Added support for OpenPeppol eDEC Code Lists v9.6</li>\n<li>Introduced read/write support for Peppol Message Level Status\n(MLS)</li>\n</ul>\n<p>🛠️ Changes</p>\n<ul>\n<li>Removed support for Peppol G2 PKI</li>\n<li>Updated and adjusted failing test cases to align with recent lookup\nchanges</li>\n</ul>\n<p><strong>Full Changelog</strong>: <a\nhref=\"https://github.com/OxalisCommunity/vefa-peppol/compare/v4.3.0...v4.4.0-RC1\">https://github.com/OxalisCommunity/vefa-peppol/compare/v4.3.0...v4.4.0-RC1</a></p>\n<h2>4.3.0</h2>\n<ul>\n<li><strong>OpenPeppol eDEC Code Lists</strong>: Added support for\nOpenPeppol eDEC Code Lists v9.5</li>\n<li><strong>TICC-174</strong>: Replace string equality with semantic DN\ncomparison</li>\n<li>Relax validation to allow non-Peppol document type identifier with\nwarning</li>\n<li>Fixed failing test-cases due to invalid/outdated period in\ntest-files</li>\n</ul>\n<p><strong>Full Changelog</strong>: <a\nhref=\"https://github.com/OxalisCommunity/vefa-peppol/compare/v4.2.1...v4.3.0\">https://github.com/OxalisCommunity/vefa-peppol/compare/v4.2.1...v4.3.0</a></p>\n<h2>4.2.2</h2>\n<p>This tag release introduces explicit handling for &quot;<em>BEAst\ndocument profiles&quot;</em>. BEAst profiles that currently do not\nconform to OpenPeppol eDEC code lists are supported with a warning and\nare treated as non-Peppol document types.</p>\n</blockquote>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a\nhref=\"https://github.com/OxalisCommunity/vefa-peppol/commit/88f1512c17784cd984d74b2218acc60a3748aaac\"><code>88f1512</code></a>\n[maven-release-plugin] prepare release v4.4.0</li>\n<li><a\nhref=\"https://github.com/OxalisCommunity/vefa-peppol/commit/0d968b2a463caac4c66c3f0c52e0a1c29b598ad7\"><code>0d968b2</code></a>\nBump commons-certvalidator and jakarta mail version</li>\n<li><a\nhref=\"https://github.com/OxalisCommunity/vefa-peppol/commit/ae8034fc75e549ee86ae89d8bd67b12eb50d0b30\"><code>ae8034f</code></a>\n[maven-release-plugin] prepare for next development iteration</li>\n<li><a\nhref=\"https://github.com/OxalisCommunity/vefa-peppol/commit/99b97f719c2fe55b175d64330e1305a7754007d2\"><code>99b97f7</code></a>\n[maven-release-plugin] prepare release v4.4.0-RC1</li>\n<li><a\nhref=\"https://github.com/OxalisCommunity/vefa-peppol/commit/34f93d0daadedc55e8ebb805492438b7ef33f817\"><code>34f93d0</code></a>\nRemove support for Peppol G2 PKI</li>\n<li><a\nhref=\"https://github.com/OxalisCommunity/vefa-peppol/commit/f41f89e2947678e5be2db960bf8d32d14e69860d\"><code>f41f89e</code></a>\nOpenPeppol eDEC Code Lists v9.6 [RELEASE-NOTE]</li>\n<li><a\nhref=\"https://github.com/OxalisCommunity/vefa-peppol/commit/13e1e3975109b2bd8f0fa67c23450e7f94e3213a\"><code>13e1e39</code></a>\nFixed failing test case by adding expected exception for CNAME\nlookup</li>\n<li><a\nhref=\"https://github.com/OxalisCommunity/vefa-peppol/commit/970b74ceeae20fda3dc4d7de8b62d4aab03d6739\"><code>970b74c</code></a>\nFix failing test</li>\n<li><a\nhref=\"https://github.com/OxalisCommunity/vefa-peppol/commit/274dcd3e2fccb34c34b9b7d479c8ffd2e1a50af3\"><code>274dcd3</code></a>\nAdd support for read/write and marshal/unmarshal Peppol Message Level\nStatus ...</li>\n<li><a\nhref=\"https://github.com/OxalisCommunity/vefa-peppol/commit/beb9170f951ba2c49cb9d108e64fbb0aa6e68ab1\"><code>beb9170</code></a>\n[maven-release-plugin] prepare for next development iteration</li>\n<li>Additional commits viewable in <a\nhref=\"https://github.com/OxalisCommunity/vefa-peppol/compare/v4.2.1...v4.4.0\">compare\nview</a></li>\n</ul>\n</details>\n<br />\n\nUpdates `network.oxalis.vefa:commons-busdox` from 4.2.1 to 4.4.0\n\nUpdates `network.oxalis.vefa:commons-bdxr` from 4.2.1 to 4.4.0"
+    },
+    {
+      "sha": "0b43533af68a65d3d72b22f420b0d3afafa6e216",
+      "date": "2026-06-23T09:17:17+02:00",
+      "author": "Frode Bjerkholt",
+      "email": "46349741+FrodeBjerkholt@users.noreply.github.com",
+      "message": "Merge branch 'main' into dependabot/maven/oxalis-libs.version-4.4.0"
+    },
+    {
+      "sha": "762dc38cd0f22d7902671cb898f20b4af5c23744",
+      "date": "2026-06-23T09:16:31+02:00",
+      "author": "Frode Bjerkholt",
+      "email": "46349741+FrodeBjerkholt@users.noreply.github.com",
+      "message": "Bump org.openapitools:openapi-generator-maven-plugin from 7.19.0 to 7.23.0 (#496)\n\nBumps org.openapitools:openapi-generator-maven-plugin from 7.19.0 to\n7.23.0.\n\n\n[![Dependabot compatibility\nscore](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=org.openapitools:openapi-generator-maven-plugin&package-manager=maven&previous-version=7.19.0&new-version=7.23.0)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\n\nDependabot will resolve any conflicts with this PR as long as you don't\nalter it yourself. You can also trigger a rebase manually by commenting\n`@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits\nthat have been made to it\n- `@dependabot show <dependency name> ignore conditions` will show all\nof the ignore conditions of the specified dependency\n- `@dependabot ignore this major version` will close this PR and stop\nDependabot creating any more for this major version (unless you reopen\nthe PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop\nDependabot creating any more for this minor version (unless you reopen\nthe PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop\nDependabot creating any more for this dependency (unless you reopen the\nPR or upgrade to it yourself)\n\n\n</details>"
+    },
+    {
+      "sha": "f1dd7323dcebdaa24bef7ca5c1d353cdf6b5ba1b",
+      "date": "2026-06-15T08:04:13Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.openapitools:openapi-generator-maven-plugin\n\nBumps org.openapitools:openapi-generator-maven-plugin from 7.19.0 to 7.23.0.\n\n---\nupdated-dependencies:\n- dependency-name: org.openapitools:openapi-generator-maven-plugin\n  dependency-version: 7.23.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "2af181dd6e72638ffa1288864cbcf92791c51848",
+      "date": "2026-06-15T07:16:18Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump oxalis-libs.version from 4.2.1 to 4.4.0\n\nBumps `oxalis-libs.version` from 4.2.1 to 4.4.0.\n\nUpdates `network.oxalis.vefa:peppol-lookup` from 4.2.1 to 4.4.0\n- [Release notes](https://github.com/OxalisCommunity/vefa-peppol/releases)\n- [Changelog](https://github.com/OxalisCommunity/vefa-peppol/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/OxalisCommunity/vefa-peppol/compare/v4.2.1...v4.4.0)\n\nUpdates `network.oxalis.vefa:commons-busdox` from 4.2.1 to 4.4.0\n\nUpdates `network.oxalis.vefa:commons-bdxr` from 4.2.1 to 4.4.0\n\n---\nupdated-dependencies:\n- dependency-name: network.oxalis.vefa:commons-bdxr\n  dependency-version: 4.4.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n- dependency-name: network.oxalis.vefa:commons-busdox\n  dependency-version: 4.4.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n- dependency-name: network.oxalis.vefa:peppol-lookup\n  dependency-version: 4.4.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "e8b996cf32e5b497a82b6169671d1dce5bd14f18",
+      "date": "2026-06-15T09:14:08+02:00",
+      "author": "Frode Bjerkholt",
+      "email": "46349741+FrodeBjerkholt@users.noreply.github.com",
+      "message": "Bump org.apache.maven.plugins:maven-resources-plugin from 3.4.0 to 3.5.0 (#493)\n\nBumps\n[org.apache.maven.plugins:maven-resources-plugin](https://github.com/apache/maven-resources-plugin)\nfrom 3.4.0 to 3.5.0.\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a\nhref=\"https://github.com/apache/maven-resources-plugin/releases\">org.apache.maven.plugins:maven-resources-plugin's\nreleases</a>.</em></p>\n<blockquote>\n<h2>3.5.0</h2>\n<!-- raw HTML omitted -->\n<ul>\n<li>Cleanup deps (<a\nhref=\"https://redirect.github.com/apache/maven-resources-plugin/pull/463\">#463</a>)\n<a href=\"https://github.com/cstamas\"><code>@​cstamas</code></a></li>\n</ul>\n<h2>🚀 New features and improvements</h2>\n<ul>\n<li>Bug: use change detecton strategies (<a\nhref=\"https://redirect.github.com/apache/maven-resources-plugin/pull/462\">#462</a>)\n<a href=\"https://github.com/cstamas\"><code>@​cstamas</code></a></li>\n</ul>\n<h2>👻 Maintenance</h2>\n<ul>\n<li>Add IT for <a\nhref=\"https://redirect.github.com/apache/maven-resources-plugin/issues/444\">#444</a>\nissue (<a\nhref=\"https://redirect.github.com/apache/maven-resources-plugin/pull/446\">#446</a>)\n<a\nhref=\"https://github.com/slawekjaranowski\"><code>@​slawekjaranowski</code></a></li>\n<li>Migration to JUnit 5 - avoid using AbstractMojoTestCase (<a\nhref=\"https://redirect.github.com/apache/maven-resources-plugin/pull/449\">#449</a>)\n<a\nhref=\"https://github.com/slawekjaranowski\"><code>@​slawekjaranowski</code></a></li>\n<li>Migration to JUnit 5 - avoid using AbstractMojoTestCase (<a\nhref=\"https://redirect.github.com/apache/maven-resources-plugin/pull/447\">#447</a>)\n<a\nhref=\"https://github.com/slawekjaranowski\"><code>@​slawekjaranowski</code></a></li>\n</ul>\n<h2>📦 Dependency updates</h2>\n<ul>\n<li>Bump org.apache.maven.plugin-testing:maven-plugin-testing-harness\nfrom 3.5.0 to 3.5.1 (<a\nhref=\"https://redirect.github.com/apache/maven-resources-plugin/pull/461\">#461</a>)\n@<a href=\"https://github.com/apps/dependabot\">dependabot[bot]</a></li>\n<li>Bump org.apache.maven.plugins:maven-plugins from 45 to 47 (<a\nhref=\"https://redirect.github.com/apache/maven-resources-plugin/pull/459\">#459</a>)\n@<a href=\"https://github.com/apps/dependabot\">dependabot[bot]</a></li>\n<li>Bump org.apache.maven.plugin-testing:maven-plugin-testing-harness\nfrom 3.4.0 to 3.5.0 (<a\nhref=\"https://redirect.github.com/apache/maven-resources-plugin/pull/457\">#457</a>)\n@<a href=\"https://github.com/apps/dependabot\">dependabot[bot]</a></li>\n<li>Bump mavenVersion from 3.9.11 to 3.9.12 (<a\nhref=\"https://redirect.github.com/apache/maven-resources-plugin/pull/452\">#452</a>)\n@<a href=\"https://github.com/apps/dependabot\">dependabot[bot]</a></li>\n</ul>\n</blockquote>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a\nhref=\"https://github.com/apache/maven-resources-plugin/commit/ce485a0360dc1b4f548bd3c32d3f817661ae31ff\"><code>ce485a0</code></a>\n[maven-release-plugin] prepare release maven-resources-plugin-3.5.0</li>\n<li><a\nhref=\"https://github.com/apache/maven-resources-plugin/commit/bfadfff31a4f2e720d7783c5faffddba371cbcb3\"><code>bfadfff</code></a>\nUse maven-filtering 3.5.0 (staged)</li>\n<li><a\nhref=\"https://github.com/apache/maven-resources-plugin/commit/3f74ba2a16d14ee4b0b0c0ad924877869b0e1f16\"><code>3f74ba2</code></a>\nDrop commons-io; unused</li>\n<li><a\nhref=\"https://github.com/apache/maven-resources-plugin/commit/caefcde4cbcf0f46c8d9b0adeecc5b04c6d08c62\"><code>caefcde</code></a>\nBug: use change detecton strategies (<a\nhref=\"https://redirect.github.com/apache/maven-resources-plugin/issues/462\">#462</a>)</li>\n<li><a\nhref=\"https://github.com/apache/maven-resources-plugin/commit/38534e3ed803ee076f6bd6d7404728a06afec874\"><code>38534e3</code></a>\nCleanup deps (<a\nhref=\"https://redirect.github.com/apache/maven-resources-plugin/issues/463\">#463</a>)</li>\n<li><a\nhref=\"https://github.com/apache/maven-resources-plugin/commit/0814ec74015bb1d4216b4544d4f9dae9c9c17d34\"><code>0814ec7</code></a>\nBump org.apache.maven.plugin-testing:maven-plugin-testing-harness (<a\nhref=\"https://redirect.github.com/apache/maven-resources-plugin/issues/461\">#461</a>)</li>\n<li><a\nhref=\"https://github.com/apache/maven-resources-plugin/commit/e2f91353fd2e81a8202aee7eda3fb58039bbbc7c\"><code>e2f9135</code></a>\nBump org.apache.maven.plugins:maven-plugins from 45 to 47 (<a\nhref=\"https://redirect.github.com/apache/maven-resources-plugin/issues/459\">#459</a>)</li>\n<li><a\nhref=\"https://github.com/apache/maven-resources-plugin/commit/a050be3e8d71d9679f6fd1eefe1fb5682a7d71ce\"><code>a050be3</code></a>\nBump org.apache.maven.plugin-testing:maven-plugin-testing-harness (<a\nhref=\"https://redirect.github.com/apache/maven-resources-plugin/issues/457\">#457</a>)</li>\n<li><a\nhref=\"https://github.com/apache/maven-resources-plugin/commit/1825b2ad5a89b53a6c0f6a509a2f82e77e23e3d5\"><code>1825b2a</code></a>\nBump mavenVersion from 3.9.11 to 3.9.12 (<a\nhref=\"https://redirect.github.com/apache/maven-resources-plugin/issues/452\">#452</a>)</li>\n<li><a\nhref=\"https://github.com/apache/maven-resources-plugin/commit/ad31b557b0d30e3f7b42cfcc542e272f2570e10b\"><code>ad31b55</code></a>\nAdd IT for <a\nhref=\"https://redirect.github.com/apache/maven-resources-plugin/issues/444\">#444</a>\nissue</li>\n<li>Additional commits viewable in <a\nhref=\"https://github.com/apache/maven-resources-plugin/compare/v3.4.0...maven-resources-plugin-3.5.0\">compare\nview</a></li>\n</ul>\n</details>\n<br />"
+    },
+    {
+      "sha": "4ebe07768390adec0e3b86fcc2f78575382fb221",
+      "date": "2026-06-15T06:57:07Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.apache.maven.plugins:maven-resources-plugin from 3.4.0 to 3.5.0\n\nBumps [org.apache.maven.plugins:maven-resources-plugin](https://github.com/apache/maven-resources-plugin) from 3.4.0 to 3.5.0.\n- [Release notes](https://github.com/apache/maven-resources-plugin/releases)\n- [Commits](https://github.com/apache/maven-resources-plugin/compare/v3.4.0...maven-resources-plugin-3.5.0)\n\n---\nupdated-dependencies:\n- dependency-name: org.apache.maven.plugins:maven-resources-plugin\n  dependency-version: 3.5.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "151fee670e0b20273f1189d8241d8f8acf505478",
+      "date": "2026-06-15T06:55:02Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump com.sun.xml.bind:jaxb-impl from 4.0.6 to 4.0.9 (#492)\n\nBumps com.sun.xml.bind:jaxb-impl from 4.0.6 to 4.0.9.\n\n---\nupdated-dependencies:\n- dependency-name: com.sun.xml.bind:jaxb-impl\n  dependency-version: 4.0.9\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "c3e06c8b31da455820016f44fc51f778f913e0d1",
+      "date": "2026-06-15T08:47:23+02:00",
+      "author": "Frode Bjerkholt",
+      "email": "46349741+FrodeBjerkholt@users.noreply.github.com",
+      "message": "Bump org.owasp:dependency-check-maven from 12.1.9 to 12.2.2 (#485)\n\nBumps\n[org.owasp:dependency-check-maven](https://github.com/dependency-check/DependencyCheck)\nfrom 12.1.9 to 12.2.2.\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a\nhref=\"https://github.com/dependency-check/DependencyCheck/releases\">org.owasp:dependency-check-maven's\nreleases</a>.</em></p>\n<blockquote>\n<h2>Version 12.2.2</h2>\n<p>Refer to the <a\nhref=\"https://github.com/dependency-check/DependencyCheck/blob/main/CHANGELOG.md#change-log\">CHANGELOG.md</a>\nfor information about improvements and upgrade notes.</p>\n<h2>Version 12.2.1</h2>\n<p>Refer to the <a\nhref=\"https://github.com/dependency-check/DependencyCheck/blob/main/CHANGELOG.md#change-log\">CHANGELOG.md</a>\nfor information about improvements and upgrade notes.</p>\n<h2>Version 12.2.0</h2>\n<p>Refer to the <a\nhref=\"https://github.com/dependency-check/DependencyCheck/blob/main/CHANGELOG.md#change-log\">CHANGELOG.md</a>\nfor information about improvements and upgrade notes.</p>\n</blockquote>\n</details>\n<details>\n<summary>Changelog</summary>\n<p><em>Sourced from <a\nhref=\"https://github.com/dependency-check/DependencyCheck/blob/main/CHANGELOG.md\">org.owasp:dependency-check-maven's\nchangelog</a>.</em></p>\n<blockquote>\n<h2><a\nhref=\"https://github.com/dependency-check/DependencyCheck/releases/tag/v12.2.2\">Version\n12.2.2</a> (2026-05-03)</h2>\n<p><strong>NOTE</strong>: The database schema was updated to fix <a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/pull/8466\">#8466</a>\n- if using an external database the update scripts must be run!</p>\n<ul>\n<li>feat: improve Sonatype Guide / OSS Index cache handling and\ninsufficient credits error reporting (<a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/pull/8451\">#8451</a>)</li>\n<li>feat: support and prefer githubID vuln identifiers from RetireJS (<a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/pull/8419\">#8419</a>)</li>\n<li>fix(db): widen reference URL column to handle long Mozilla CVE URLs\n(<a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/pull/8467\">#8467</a>)</li>\n<li>fix: add corepack to docker image (<a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/pull/8386\">#8386</a>)</li>\n<li>fix: bump open-vulnerability-clients to resolve NVD timestamp\nparsing errors (<a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/pull/8427\">#8427</a>)</li>\n<li>fix: de-duplicate and sort both <code>includedBy</code> and\n<code>projectReferences</code> in reports (<a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/pull/8440\">#8440</a>)</li>\n<li>fix: migrate default OSS Index API URL to Sonatype Guide; supporting\noptional username (<a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/pull/8404\">#8404</a>)</li>\n<li>docs: correct missing documentation for Gradle plugin (<a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/pull/8431\">#8431</a>)</li>\n<li>docs: tweak docs site structure; documenting missing analyzers (<a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/pull/8462\">#8462</a>)</li>\n<li>chore: remove spurious bundle-audit log line when there are no\nerrors (<a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/pull/8454\">#8454</a>)</li>\n<li>chore: tidy CHANGELOG formatting (<a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/pull/8414\">#8414</a>)</li>\n<li>chore(fp): remove duplicate log4j FP suppressions (<a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/pull/8468\">#8468</a>)</li>\n<li>build(deps): bump apache.ant.version from 1.10.16 to 1.10.17 (<a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/pull/8416\">#8416</a>)</li>\n<li>build(deps): bump com.fasterxml.jackson:jackson-bom from 2.21.2 to\n2.21.3 (<a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/pull/8465\">#8465</a>)</li>\n<li>build(deps): bump com.google.guava:guava from 33.5.0-jre to\n33.6.0-jre (<a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/pull/8420\">#8420</a>)</li>\n<li>build(deps): bump com.mysql:mysql-connector-j from 9.6.0 to 9.7.0\n(<a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/pull/8445\">#8445</a>)</li>\n<li>build(deps): bump commons-codec:commons-codec from 1.21.0 to 1.22.0\n(<a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/pull/8453\">#8453</a>)</li>\n<li>build(deps): bump commons-io:commons-io from 2.21.0 to 2.22.0 (<a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/pull/8448\">#8448</a>)</li>\n<li>build(deps): bump httpcomponents.client.version from 5.6 to 5.6.1\n(<a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/pull/8432\">#8432</a>)</li>\n<li>build(deps): bump joda-time:joda-time from 2.14.1 to 2.14.2 (<a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/pull/8464\">#8464</a>)</li>\n<li>build(deps): bump org.apache.maven.plugins:maven-invoker-plugin from\n3.9.1 to 3.10.0 (<a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/pull/8452\">#8452</a>)</li>\n<li>build(deps): bump org.jsoup:jsoup from 1.22.1 to 1.22.2 (<a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/pull/8437\">#8437</a>)</li>\n<li>build(deps): bump org.postgresql:postgresql from 42.7.10 to 42.7.11\n(<a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/pull/8463\">#8463</a>)</li>\n<li>build(deps): bump the actions-deps group with 8 updates (<a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/pull/8472\">#8472</a>)</li>\n</ul>\n<p>See the full listing of <a\nhref=\"https://github.com/dependency-check/DependencyCheck/milestone/106?closed=1\">changes</a></p>\n<h2><a\nhref=\"https://github.com/dependency-check/DependencyCheck/releases/tag/v12.2.1\">Version\n12.2.1</a> (2026-04-11)</h2>\n<ul>\n<li>fix(core): correct xml schema validation handling without needing\nexternal access (<a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/pull/8272\">#8272</a>)</li>\n<li>fix(deps): upgrade slf4j and logback (<a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/pull/8306\">#8306</a>)</li>\n<li>fix(test): disable pnpm analyzer during test (<a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/pull/8305\">#8305</a>)</li>\n<li>fix: Correct published/hosted suppressions namespace header and\nindent (<a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/pull/8258\">#8258</a>)</li>\n<li>fix: Suppress noisy WARN logging from Apache Lucene within Maven and\nAnt plugins (<a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/pull/8248\">#8248</a>)</li>\n<li>fix: <a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/pull/8140\">#8140</a>\nAssemblyAnalyzer version resolution issue (<a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/pull/8352\">#8352</a>)</li>\n<li>fix: <a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/pull/8140\">#8140</a>\nfix version resolution</li>\n<li>fix: <a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/pull/8140\">#8140</a>\nhint azure_identity_library_for_.net</li>\n<li>fix: <a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/pull/8356\">#8356</a>\nnarrow down VersionFilterAnalyzer scope to JAR files (<a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/pull/8358\">#8358</a>)</li>\n<li>fix: correct parsing for CVSSv4 strings with Provider Urgency (<a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/pull/8377\">#8377</a>)</li>\n<li>fix: evidence source in Retire JS analyzer (<a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/pull/8303\">#8303</a>)</li>\n<li>fix: exclude deprecations from Yarn Berry audit results (<a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/pull/8380\">#8380</a>)</li>\n<li>fix: improve PEAnalyzer reliability by migrating to maintained\nPE/COFF 4J library fork (<a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/pull/8245\">#8245</a>)</li>\n<li>fix: improve configuration consistency (casing) (<a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/pull/8355\">#8355</a>)</li>\n<li>fix: improve logging of unexpected Java Errors during processing of\nNVD (<a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/pull/8250\">#8250</a>)</li>\n<li>fix: raw type warning in ProcessReader (<a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/pull/8324\">#8324</a>)</li>\n<li>fix: suppress false positives for zabbix-utils <a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/pull/8087\">#8087</a>\n(<a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/pull/8218\">#8218</a>)</li>\n</ul>\n<!-- raw HTML omitted -->\n</blockquote>\n<p>... (truncated)</p>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a\nhref=\"https://github.com/dependency-check/DependencyCheck/commit/b51290fd340722350b130c5c9549268969062756\"><code>b51290f</code></a>\nbuild: prepare release v12.2.2</li>\n<li><a\nhref=\"https://github.com/dependency-check/DependencyCheck/commit/70070a9a04c6d3835bce982247e80aa654546721\"><code>70070a9</code></a>\ndocs: release 12.2.2</li>\n<li><a\nhref=\"https://github.com/dependency-check/DependencyCheck/commit/47aa0c7705b9ef956fe552809bdb654e8254f3e6\"><code>47aa0c7</code></a>\nfix: widen reference URL column to handle long Mozilla CVE URLs (<a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/issues/8467\">#8467</a>)</li>\n<li><a\nhref=\"https://github.com/dependency-check/DependencyCheck/commit/1de40c0e916b3d9012a827649f4a1d86081e3961\"><code>1de40c0</code></a>\nbuild(deps): bump the actions-deps group with 8 updates (<a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/issues/8472\">#8472</a>)</li>\n<li><a\nhref=\"https://github.com/dependency-check/DependencyCheck/commit/74678b046b977551c0bff9157c2d42cd8eaade3e\"><code>74678b0</code></a>\nbuild(deps): bump com.fasterxml.jackson:jackson-bom from 2.21.2 to\n2.21.3 (<a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/issues/8\">#8</a>...</li>\n<li><a\nhref=\"https://github.com/dependency-check/DependencyCheck/commit/3f83d807a180b47345729b6740d30d924e50f752\"><code>3f83d80</code></a>\nbuild(deps): bump org.postgresql:postgresql from 42.7.10 to 42.7.11 (<a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/issues/8463\">#8463</a>)</li>\n<li><a\nhref=\"https://github.com/dependency-check/DependencyCheck/commit/04387c334c39249d76541eaa43449e2a926e30cf\"><code>04387c3</code></a>\nbuild(deps): bump commons-codec:commons-codec from 1.21.0 to 1.22.0 (<a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/issues/8453\">#8453</a>)</li>\n<li><a\nhref=\"https://github.com/dependency-check/DependencyCheck/commit/11e17710cfdb89e0fba07f3bbd80e8e0b809352e\"><code>11e1771</code></a>\nbuild(deps): bump org.apache.maven.plugins:maven-invoker-plugin from\n3.9.1 to...</li>\n<li><a\nhref=\"https://github.com/dependency-check/DependencyCheck/commit/e8505458d30a169c4550fb60089d7892ea8a7ff5\"><code>e850545</code></a>\nchore(fp): remove duplicate log4j FP suppressions (<a\nhref=\"https://redirect.github.com/dependency-check/DependencyCheck/issues/8468\">#8468</a>)</li>\n<li><a\nhref=\"https://github.com/dependency-check/DependencyCheck/commit/9acbb3392e13213eddb597fdfb11c76ad099160a\"><code>9acbb33</code></a>\nfeat: improve Sonatype Guide / OSS Index cache handling and insufficient\ncred...</li>\n<li>Additional commits viewable in <a\nhref=\"https://github.com/dependency-check/DependencyCheck/compare/v12.1.9...v12.2.2\">compare\nview</a></li>\n</ul>\n</details>\n<br />"
+    },
+    {
+      "sha": "a3d65d372ed84282ca786d32683f75b0e5a0bb63",
+      "date": "2026-06-15T08:27:11+02:00",
+      "author": "Frode Bjerkholt",
+      "email": "46349741+FrodeBjerkholt@users.noreply.github.com",
+      "message": "Merge branch 'main' into dependabot/maven/org.owasp-dependency-check-maven-12.2.2"
+    },
+    {
+      "sha": "4c8a7c9ad97c2e978a09c67cce5477c32682ca21",
+      "date": "2026-06-15T06:21:00Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.jvnet.jaxb:jaxb-maven-plugin from 4.0.12 to 4.0.16 (#491)\n\nBumps [org.jvnet.jaxb:jaxb-maven-plugin](https://github.com/highsource/jaxb-tools) from 4.0.12 to 4.0.16.\n- [Release notes](https://github.com/highsource/jaxb-tools/releases)\n- [Commits](https://github.com/highsource/jaxb-tools/compare/4.0.12...4.0.16)\n\n---\nupdated-dependencies:\n- dependency-name: org.jvnet.jaxb:jaxb-maven-plugin\n  dependency-version: 4.0.16\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Frode Bjerkholt <46349741+FrodeBjerkholt@users.noreply.github.com>"
+    },
+    {
+      "sha": "a9ab9a96306d479beb298aa94851c79576d73b82",
+      "date": "2026-06-15T08:14:00+02:00",
+      "author": "Frode Bjerkholt",
+      "email": "46349741+FrodeBjerkholt@users.noreply.github.com",
+      "message": "Bump commons-io:commons-io from 2.21.0 to 2.22.0 (#490)\n\nBumps commons-io:commons-io from 2.21.0 to 2.22.0."
+    },
+    {
+      "sha": "af35e56f88558c4f2773c7cf9598e4921b714c52",
+      "date": "2026-06-15T08:13:25+02:00",
+      "author": "Frode Bjerkholt",
+      "email": "46349741+FrodeBjerkholt@users.noreply.github.com",
+      "message": "Merge branch 'main' into dependabot/maven/org.owasp-dependency-check-maven-12.2.2"
+    },
+    {
+      "sha": "3e015fa7b9f229be8280df117ac8733e8da19fb2",
+      "date": "2026-06-12T08:13:33Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump commons-io:commons-io from 2.21.0 to 2.22.0\n\nBumps commons-io:commons-io from 2.21.0 to 2.22.0.\n\n---\nupdated-dependencies:\n- dependency-name: commons-io:commons-io\n  dependency-version: 2.22.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "f1359db4f37111eae41923fbd256ddab262f4c92",
+      "date": "2026-06-12T08:11:33Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.openapitools:jackson-databind-nullable from 0.2.6 to 0.2.10 (#489)\n\nBumps [org.openapitools:jackson-databind-nullable](https://github.com/OpenAPITools/jackson-databind-nullable) from 0.2.6 to 0.2.10.\n- [Release notes](https://github.com/OpenAPITools/jackson-databind-nullable/releases)\n- [Commits](https://github.com/OpenAPITools/jackson-databind-nullable/compare/v0.2.6...v0.2.10)\n\n---\nupdated-dependencies:\n- dependency-name: org.openapitools:jackson-databind-nullable\n  dependency-version: 0.2.10\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "310fd20d8cc6e0ae83f16e28e79ba88ddb557923",
+      "date": "2026-06-11T12:08:41+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.yaml:snakeyaml from 2.5 to 2.6 (#487)\n\nBumps [org.yaml:snakeyaml](https://bitbucket.org/snakeyaml/snakeyaml) from 2.5 to 2.6.\n- [Commits](https://bitbucket.org/snakeyaml/snakeyaml/branches/compare/snakeyaml-2.6..snakeyaml-2.5)\n\n---\nupdated-dependencies:\n- dependency-name: org.yaml:snakeyaml\n  dependency-version: '2.6'\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Lars Bårdgard Åstveit <5196432+larsbard@users.noreply.github.com>"
+    },
+    {
+      "sha": "71c74177c076ef29116b642556e1036791ad10c6",
+      "date": "2026-06-11T11:43:56+02:00",
+      "author": "Frode Bjerkholt",
+      "email": "46349741+FrodeBjerkholt@users.noreply.github.com",
+      "message": "Merge branch 'main' into dependabot/maven/org.owasp-dependency-check-maven-12.2.2"
+    },
+    {
+      "sha": "e6dae04ebc443d2a517c2a90a3f59f87069d7927",
+      "date": "2026-06-11T11:38:18+02:00",
+      "author": "Lars Bårdgard Åstveit",
+      "email": "5196432+larsbard@users.noreply.github.com",
+      "message": "MOVE-4761 Update on-pr-label workflow (dependabot triggered) with per… (#488)\n\nMOVE-4761 Update on-pr-label workflow (dependabot triggered) with permissions"
+    }
+  ],
+  "commit_sha": "61030ec78b68db686c1f86f7af1c81f366ef86a1",
+  "extracted_at": "2026-10-05T18:43:14.268037+00:00"
+}

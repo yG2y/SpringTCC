@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "b83afe68cef63edc7dfeec694bc279956bbc8c3d",
+      "date": "2024-10-27T22:52:49+08:00",
+      "author": "Michael Zhang",
+      "email": "yidongnan@gmail.com",
+      "message": "Merge pull request #1105 from grpc-ecosystem/renovate/io.spring.dependency-management-1.x\n\nUpdate plugin io.spring.dependency-management to v1.1.6"
+    },
+    {
+      "sha": "890d629bfc3eaf5d78cdf5e9b62b8586980581bc",
+      "date": "2024-10-27T14:52:33Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update plugin io.spring.dependency-management to v1.1.6"
+    },
+    {
+      "sha": "ee810d126ca18515b4a67a552055768120e5f3ab",
+      "date": "2024-10-27T22:52:08+08:00",
+      "author": "Michael Zhang",
+      "email": "yidongnan@gmail.com",
+      "message": "Merge pull request #1132 from batsura-sa/feature/deadline_property\n\nFeat(defaultRequestTimeout) add defaultRequestTimeout property for the client"
+    },
+    {
+      "sha": "abf7fb80bb61132d7fd632d0ac774805a474d2c6",
+      "date": "2024-10-27T22:34:04+08:00",
+      "author": "Michael Zhang",
+      "email": "yidongnan@gmail.com",
+      "message": "Merge pull request #1103 from charlesmst/actuator-healthcheck\n\nActuator healthcheck"
+    },
+    {
+      "sha": "13ece45c409cd41a327c61326800d209292d5053",
+      "date": "2024-10-27T22:29:27+08:00",
+      "author": "Michael Zhang",
+      "email": "yidongnan@gmail.com",
+      "message": "Update grpc-server-spring-boot-starter/src/main/java/net/devh/boot/grpc/server/health/ActuatorGrpcHealth.java"
+    },
+    {
+      "sha": "c1b1ced1df578ef3c59fb063c013aab5117aae1e",
+      "date": "2024-10-27T16:03:04+03:00",
+      "author": "Sergei Batsura",
+      "email": "batsura.sa@gmail.com",
+      "message": "Merge branch 'master' into feature/deadline_property"
+    },
+    {
+      "sha": "f2c458e74ddc13be5a7d1378b4e383aecdda3250",
+      "date": "2024-10-27T20:48:03+08:00",
+      "author": "Michael Zhang",
+      "email": "yidongnan@gmail.com",
+      "message": "Merge branch 'master' into actuator-healthcheck"
+    },
+    {
+      "sha": "48073aba80cc40e953b5feea376f93b829b93e21",
+      "date": "2024-10-27T20:33:31+08:00",
+      "author": "Michael Zhang",
+      "email": "yidongnan@gmail.com",
+      "message": "Merge pull request #1102 from codeofbox/fix-in-process\n\nfix miss in-process"
+    },
+    {
+      "sha": "d889053f410db081d4787786a902aa21bad08fab",
+      "date": "2024-10-24T10:54:40+08:00",
+      "author": "Michael Zhang",
+      "email": "yidongnan@gmail.com",
+      "message": "Merge pull request #1094 from grpc-ecosystem/java21-support\n\nAdd Java 21 compilation to CI"
+    },
+    {
+      "sha": "4363260732fca2037a1e3ff6633e69df75b4fb46",
+      "date": "2024-10-24T10:51:25+08:00",
+      "author": "Michael Zhang",
+      "email": "yidongnan@gmail.com",
+      "message": "Merge pull request #1125 from anderruiz/patch-1\n\nUpdate deploy.gradle to fix repos"
+    },
+    {
+      "sha": "da2f32cacd43b249deb827540eb49a76ea1ee042",
+      "date": "2024-09-07T04:48:20+03:00",
+      "author": "Sergei Batsura",
+      "email": "batsura.sa@gmail.com",
+      "message": "Update grpc-client-spring-boot-starter/src/main/java/net/devh/boot/grpc/client/config/GrpcChannelProperties.java\n\nCo-authored-by: ST-DDT <ST-DDT@gmx.de>"
+    },
+    {
+      "sha": "102d09e921b0e54070e8914af20057430a9fabec",
+      "date": "2024-09-06T15:42:09+03:00",
+      "author": "Бацура Сергей Александрович",
+      "email": "Sergey.Batsura@rosbank.ru",
+      "message": "Feat(timeout) changed the name of timeout property to defaultRequestTimeout\n"
+    },
+    {
+      "sha": "9db699801738e0a71dd22f9b8557e76c07ab849b",
+      "date": "2024-09-06T12:46:17+03:00",
+      "author": "Бацура Сергей Александрович",
+      "email": "Sergey.Batsura@rosbank.ru",
+      "message": "Feat(timeout) constructor and test changed.\n"
+    },
+    {
+      "sha": "20dc1975b404e9c72e019a46573099163660dd7e",
+      "date": "2024-09-06T12:13:43+03:00",
+      "author": "Sergei Batsura",
+      "email": "batsura.sa@gmail.com",
+      "message": "Update grpc-client-spring-boot-starter/src/main/resources/META-INF/additional-spring-configuration-metadata.json\n\nCo-authored-by: ST-DDT <ST-DDT@gmx.de>"
+    },
+    {
+      "sha": "e6403b682545827ab9c01877c529781dbfb3e2cd",
+      "date": "2024-09-06T12:13:12+03:00",
+      "author": "Sergei Batsura",
+      "email": "batsura.sa@gmail.com",
+      "message": "Update grpc-client-spring-boot-starter/src/main/java/net/devh/boot/grpc/client/interceptor/TimeoutSetupClientInterceptor.java\n\nCo-authored-by: ST-DDT <ST-DDT@gmx.de>"
+    },
+    {
+      "sha": "6ab4d0d65bd22ceda7a196555794388165945c84",
+      "date": "2024-09-06T12:11:51+03:00",
+      "author": "Sergei Batsura",
+      "email": "batsura.sa@gmail.com",
+      "message": "Update grpc-client-spring-boot-starter/src/main/java/net/devh/boot/grpc/client/autoconfigure/GrpcClientTimeoutAutoConfiguration.java\n\nCo-authored-by: ST-DDT <ST-DDT@gmx.de>"
+    },
+    {
+      "sha": "0ebcc0a6312a43959a6b989333b03075917a59b1",
+      "date": "2024-09-06T12:11:30+03:00",
+      "author": "Sergei Batsura",
+      "email": "batsura.sa@gmail.com",
+      "message": "Update grpc-client-spring-boot-starter/src/main/java/net/devh/boot/grpc/client/autoconfigure/GrpcClientTimeoutAutoConfiguration.java\n\nCo-authored-by: ST-DDT <ST-DDT@gmx.de>"
+    },
+    {
+      "sha": "650a978539bb444d1dce24054260b564bf9e663e",
+      "date": "2024-09-06T09:54:17+03:00",
+      "author": "Бацура Сергей Александрович",
+      "email": "Sergey.Batsura@rosbank.ru",
+      "message": "Feat(timeout) changed the name of deadline property to timeout.\n"
+    },
+    {
+      "sha": "f365af7ff5bc09541d95c1b6836a1928805fb46c",
+      "date": "2024-09-05T15:14:57+03:00",
+      "author": "Бацура Сергей Александрович",
+      "email": "Sergey.Batsura@rosbank.ru",
+      "message": "Feat(deadline) add a test showing that the manually configured deadline takes precedence of the config one.\n"
+    },
+    {
+      "sha": "dd26ff42b6f881dd06229bfd196c51674a46fb19",
+      "date": "2024-09-05T13:42:27+03:00",
+      "author": "Sergei Batsura",
+      "email": "batsura.sa@gmail.com",
+      "message": "Update grpc-client-spring-boot-starter/src/main/java/net/devh/boot/grpc/client/config/GrpcChannelProperties.java\n\nCo-authored-by: ST-DDT <ST-DDT@gmx.de>"
+    },
+    {
+      "sha": "24928659f4055e145f8b39f02870bb147382fff9",
+      "date": "2024-09-05T13:42:01+03:00",
+      "author": "Sergei Batsura",
+      "email": "batsura.sa@gmail.com",
+      "message": "Update grpc-client-spring-boot-starter/src/main/java/net/devh/boot/grpc/client/autoconfigure/GrpcClientDeadlineAutoConfiguration.java\n\nCo-authored-by: ST-DDT <ST-DDT@gmx.de>"
+    },
+    {
+      "sha": "5a219a70d0335db1dca41b01590e4be321b37f22",
+      "date": "2024-09-05T13:41:42+03:00",
+      "author": "Sergei Batsura",
+      "email": "batsura.sa@gmail.com",
+      "message": "Update grpc-client-spring-boot-starter/src/main/java/net/devh/boot/grpc/client/autoconfigure/GrpcClientDeadlineAutoConfiguration.java\n\nCo-authored-by: ST-DDT <ST-DDT@gmx.de>"
+    },
+    {
+      "sha": "a8bbe07c5415f4a18c6cf22a2433d8a6abe72cbe",
+      "date": "2024-09-05T08:54:49+03:00",
+      "author": "Бацура Сергей Александрович",
+      "email": "Sergey.Batsura@rosbank.ru",
+      "message": "Feat(deadline) replaced bean deadlineStubTransformer with deadlineGrpcChannelConfigurer\n"
+    },
+    {
+      "sha": "809bc5b276ad3d90186d8c7cc4388450f63a28ba",
+      "date": "2024-09-05T08:15:49+03:00",
+      "author": "Sergei Batsura",
+      "email": "batsura.sa@gmail.com",
+      "message": "Update grpc-client-spring-boot-starter/src/main/java/net/devh/boot/grpc/client/interceptor/DeadlineSetupClientInterceptor.java\n\nCo-authored-by: ST-DDT <ST-DDT@gmx.de>"
+    },
+    {
+      "sha": "42ebf40ef80b1f871caea50292709b23473132e4",
+      "date": "2024-09-05T08:15:40+03:00",
+      "author": "Sergei Batsura",
+      "email": "batsura.sa@gmail.com",
+      "message": "Update grpc-client-spring-boot-starter/src/main/java/net/devh/boot/grpc/client/interceptor/DeadlineSetupClientInterceptor.java\n\nCo-authored-by: ST-DDT <ST-DDT@gmx.de>"
+    },
+    {
+      "sha": "7505c7d7e2669bd8aed7ff26eacc4696f9a17966",
+      "date": "2024-09-04T15:53:09+03:00",
+      "author": "Бацура Сергей Александрович",
+      "email": "Sergey.Batsura@rosbank.ru",
+      "message": "Feat(deadline) removed wasted DeadlineSetupClientInterceptor calls in runtime\n"
+    },
+    {
+      "sha": "e14b9fe2ea4093116ff3f8247b00d5b188a2513b",
+      "date": "2024-09-04T09:19:35+03:00",
+      "author": "Бацура Сергей Александрович",
+      "email": "Sergey.Batsura@rosbank.ru",
+      "message": "Feat(deadline) changed zero deadline behavior, javadoc corrections\n"
+    },
+    {
+      "sha": "3b295c7889e5c48c94c8a95b0b312ed79ec1a360",
+      "date": "2024-09-04T08:18:13+03:00",
+      "author": "Sergei Batsura",
+      "email": "batsura.sa@gmail.com",
+      "message": "Update grpc-client-spring-boot-starter/src/main/java/net/devh/boot/grpc/client/config/GrpcChannelProperties.java\n\nCo-authored-by: ST-DDT <ST-DDT@gmx.de>"
+    },
+    {
+      "sha": "0da4da704c3a8271a65725c0f047160b4a17970e",
+      "date": "2024-09-04T08:17:58+03:00",
+      "author": "Sergei Batsura",
+      "email": "batsura.sa@gmail.com",
+      "message": "Update grpc-client-spring-boot-starter/src/main/java/net/devh/boot/grpc/client/config/GrpcChannelProperties.java\n\nCo-authored-by: ST-DDT <ST-DDT@gmx.de>"
+    },
+    {
+      "sha": "28b073d8431fadac30ecafa298bdfaf5a6ae6d38",
+      "date": "2024-08-03T15:27:43+03:00",
+      "author": "Бацура Сергей Александрович",
+      "email": "Sergey.Batsura@rosbank.ru",
+      "message": "Feat(deadline) add deadline property for client\n"
+    }
+  ],
+  "commit_sha": "b83afe68cef63edc7dfeec694bc279956bbc8c3d",
+  "extracted_at": "2026-10-05T17:54:46.967358+00:00"
+}

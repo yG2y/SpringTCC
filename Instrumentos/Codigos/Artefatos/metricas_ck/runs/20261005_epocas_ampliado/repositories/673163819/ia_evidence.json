@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "c1011a6f12a7b8e194050c8bdbf6ff2ea8c15d7b",
+      "date": "2026-06-22T06:29:56+08:00",
+      "author": "AutismSuperman",
+      "email": "fulinlin9527@outlook.com",
+      "message": "docs: complete product guides and feature flows\n"
+    },
+    {
+      "sha": "5e13f3e65203dc5cea75c7742a5056022a9944e8",
+      "date": "2026-06-21T22:09:06+08:00",
+      "author": "AutismSuperman",
+      "email": "fulinlin9527@outlook.com",
+      "message": "feat: expand starter extensions and docs\n"
+    },
+    {
+      "sha": "00a871d8abc059ad80f03b00ee898b4947e5df65",
+      "date": "2026-06-21T21:51:11+08:00",
+      "author": "AutismSuperman",
+      "email": "fulinlin9527@outlook.com",
+      "message": "docs: refresh README for 1.0.0\n"
+    },
+    {
+      "sha": "4f0a6c6f2fbfe2c8673c1f2765a1c0e71744120c",
+      "date": "2026-06-21T21:31:05+08:00",
+      "author": "AutismSuperman",
+      "email": "fulinlin9527@outlook.com",
+      "message": "feat: refresh ArmorAuth branding assets\n"
+    },
+    {
+      "sha": "557a6835d9f723b78f65e9e437ef5239a74f2a82",
+      "date": "2026-06-21T20:22:39+08:00",
+      "author": "AutismSuperman",
+      "email": "fulinlin9527@outlook.com",
+      "message": "feat: enhance account security and SAS admin UX\n"
+    },
+    {
+      "sha": "764368573218712e83eeaacb8113ac5dd029fb96",
+      "date": "2026-06-21T12:35:01+08:00",
+      "author": "AutismSuperman",
+      "email": "fulinlin9527@outlook.com",
+      "message": "feat: add SAS admin features and samples\n"
+    },
+    {
+      "sha": "b85d78b522ed094a1de12e982a4274acec3f41d7",
+      "date": "2026-06-21T00:10:41+08:00",
+      "author": "AutismSuperman",
+      "email": "fulinlin9527@outlook.com",
+      "message": "Fix sessions page responsive layout\n"
+    },
+    {
+      "sha": "ca29f6d4d3361dbd03b89d30fc723c70b22aab80",
+      "date": "2026-06-21T00:05:59+08:00",
+      "author": "AutismSuperman",
+      "email": "fulinlin9527@outlook.com",
+      "message": "Refine identity provider management UI\n"
+    },
+    {
+      "sha": "bef3ba2a6ebe4f640bb4937244c66814bedde659",
+      "date": "2026-05-25T15:49:58+08:00",
+      "author": "AutismSuperman",
+      "email": "fulinlin9527@outlook.com",
+      "message": "Split Spring Boot starter auto-configuration\n"
+    },
+    {
+      "sha": "8e3478936547d2578a12ad286760f05b108f708a",
+      "date": "2026-05-25T12:15:01+08:00",
+      "author": "AutismSuperman",
+      "email": "fulinlin9527@outlook.com",
+      "message": "chore: squash flyway migrations\n"
+    },
+    {
+      "sha": "25f48257b213d42a9e91774ed5abcf2c365cc472",
+      "date": "2026-05-25T11:10:43+08:00",
+      "author": "AutismSuperman",
+      "email": "fulinlin9527@outlook.com",
+      "message": "docs: add Chinese documentation set\n"
+    },
+    {
+      "sha": "87df95a1e9381e573da3895afd1972288a5a1de7",
+      "date": "2026-05-25T10:55:50+08:00",
+      "author": "AutismSuperman",
+      "email": "fulinlin9527@outlook.com",
+      "message": "feat: polish identity workflows and docs\n"
+    },
+    {
+      "sha": "593fdf21f6bf282d69a842e23a53c179c4af611b",
+      "date": "2026-05-24T21:51:20+08:00",
+      "author": "AutismSuperman",
+      "email": "fulinlin9527@outlook.com",
+      "message": "feat: add mock profile and admin UI polish\n"
+    },
+    {
+      "sha": "dbab475297cb1f65116cdb0869147877efc34639",
+      "date": "2026-05-24T20:45:22+08:00",
+      "author": "AutismSuperman",
+      "email": "fulinlin9527@outlook.com",
+      "message": "feat: configure federated login providers\n"
+    },
+    {
+      "sha": "65bb55ee59284da6d281cd6a674f529df54369e9",
+      "date": "2026-05-24T16:09:34+08:00",
+      "author": "AutismSuperman",
+      "email": "fulinlin9527@outlook.com",
+      "message": "Complete ArmorAuth roadmap implementation\n"
+    },
+    {
+      "sha": "7d77563d515d2125a5203225fd1a30804c75c5f8",
+      "date": "2026-05-05T14:23:50+08:00",
+      "author": "AutismSuperman",
+      "email": "fulinlin9527@outlook.com",
+      "message": "docs: 更新数据库依赖说明及脚本，移除 MariaDB 支持，统一使用 MySQL\n\n- 将 README.md 中的数据库依赖从 \"MariaDB / MySQL\" 更新为 \"MySQL\"\n- 修改应用配置说明，明确数据源指向本地 MySQL\n- 更新 sas-schema.sql 脚本，将字符集统一调整为 utf8mb4，移除 MariaDB 相关配置\n- 调整 pom.xml 依赖，确保与 MySQL 8.x 兼容\n"
+    },
+    {
+      "sha": "9baa761ba09fe68643a1e4948f5700e1858ce1aa",
+      "date": "2026-04-29T23:56:14+08:00",
+      "author": "AutismSuperman",
+      "email": "fulinlin9527@outlook.com",
+      "message": "style(armorauth-ui): 优化主题切换图标并更新前端资源版本\n"
+    },
+    {
+      "sha": "2cc81e54252ff655a638fd9ba1ba1e0c6b4e898d",
+      "date": "2026-04-28T19:33:05+08:00",
+      "author": "AutismSuperman",
+      "email": "fulinlin9527@outlook.com",
+      "message": "style(armorauth-ui): 更新前端资源引用并优化主题切换图标\n\n- 为 CSS 和 JS 资源添加版本号缓存控制\n- 将主题切换图标从 Unicode 符号改为中文字符\n- 简化主题切换逻辑，默认使用浅色主题\n- 调整登录页面结构，优化视觉层次和布局\n"
+    },
+    {
+      "sha": "7a2310f0aec0303b2d6894fc8ccf262884287689",
+      "date": "2026-04-23T13:06:19+08:00",
+      "author": "AutismSuperman",
+      "email": "fulinlin9527@outlook.com",
+      "message": "feature(armorauth-federation): 新增钉钉、企业微信和飞书联邦登录支持\n"
+    },
+    {
+      "sha": "18721152a8e1271fed66bba1954274333b6b944b",
+      "date": "2026-04-23T00:49:24+08:00",
+      "author": "AutismSuperman",
+      "email": "fulinlin9527@outlook.com",
+      "message": "refactor(armorauth-federation): 重构抖音和支付宝令牌响应参数提取逻辑\n\n- 将抖音和支付宝的令牌响应参数提取逻辑抽取为独立方法 extractTokenParameters，提升代码复用性和可读性\n- 统一处理响应中嵌套数据结构的逻辑，确保参数映射一致性\n- 优化代码结构，减少重复代码，增强可维护性\n"
+    },
+    {
+      "sha": "cd79320746611e1784aa6f9a7bde2e47859a806e",
+      "date": "2026-04-23T00:41:36+08:00",
+      "author": "AutismSuperman",
+      "email": "fulinlin9527@outlook.com",
+      "message": "feature(armorauth-federation): 新增抖音和支付宝联邦登录支持\n\n新增抖音和支付宝联邦登录功能，包括 OAuth2 客户端配置、授权请求转换器、访问令牌模板及用户服务实现，并更新登录页面 UI 以支持新平台图标展示。同时完善测试用例，确保新接入平台功能正常。\n"
+    },
+    {
+      "sha": "ace887ac3f77ed64a6e98219ca2a2f9c7b3b35c1",
+      "date": "2026-04-23T00:28:12+08:00",
+      "author": "AutismSuperman",
+      "email": "fulinlin9527@outlook.com",
+      "message": "feature(armorauth-federation): 新增多平台联邦登录支持\n\n新增对 Microsoft、GitLab、Discord、Slack、LinkedIn、Apple、Weibo、Baidu 和 OSChina 的联邦登录支持，完善 OAuth2 客户端注册配置与属性映射逻辑，提升系统身份认证扩展能力。\n"
+    },
+    {
+      "sha": "5ab796f739439e82c27ce40d938505a861a94af6",
+      "date": "2026-04-22T23:53:56+08:00",
+      "author": "AutismSuperman",
+      "email": "fulinlin9527@outlook.com",
+      "message": "refactor(armorauth-security): 增强登录与登出日志记录及请求缓存逻辑\n\n- 在 DefaultSecurityConfig 中引入 SecurityAuditUtils 记录登录/登出审计日志\n- 优化 RequestCache 实现，增加可缓存路径判断逻辑，避免重定向到静态资源或登录页\n- 重构 formAuthenticationSuccessHandler，支持更精确的跳转目标记录\n- 在 FederatedAuthenticationSuccessHandler 中添加联邦登录成功日志\n- 新增 SecurityAuditUtils 工具类用于统一获取认证名称与远程地址\n"
+    },
+    {
+      "sha": "e5babd32dce171239301d2053f4c207a026bfd93",
+      "date": "2026-04-21T13:14:58+08:00",
+      "author": "FuLin",
+      "email": "fulinlin9527@outlook.com",
+      "message": "docs(armorauth-samples): 更新样例配置与文档，统一使用 armorauth-demo 域名避免回调失败\n\n将 OIDC 和 PKCE 样例的测试配置文件中的 redirect-uri 从 127.0.0.1 改为 armorauth-demo，确保与访问域名一致，防止 OAuth2 state 对应的 session cookie 丢失导致回调失败。同时在 README 中添加相关说明，强调访问域名与回调地址需保持一致。\n"
+    },
+    {
+      "sha": "81597e95d7d18e8cbf0a2822c8df432bb1024956",
+      "date": "2026-04-21T12:59:21+08:00",
+      "author": "FuLin",
+      "email": "fulinlin9527@outlook.com",
+      "message": "refactor(armorauth-federation): 增强联邦登录模块日志记录与账户信息脱敏处理\n\n- 在 CaptchaAuthenticationProvider 中添加日志记录，包含验证码认证成功/失败情况及账户信息脱敏显示\n- 在 UserFederatedBindingService 中增加绑定创建、更新及并发处理的详细日志\n- 在各 OAuth2UserService 实现类（Gitee、QQ、微信）中添加用户信息加载过程的日志记录，包含注册ID和异常捕获日志\n- 新增 maskAccount 方法用于统一处理账户信息脱敏，保护用户隐私\n"
+    },
+    {
+      "sha": "f380d44f06c2918846946ac8f7bb437b6b8bec4e",
+      "date": "2026-04-21T12:17:25+08:00",
+      "author": "FuLin",
+      "email": "fulinlin9527@outlook.com",
+      "message": "refactor(armorauth-federation): 移除联邦登录相关冗余代码与测试\n\n- 删除 AbstractIdentityConfigurer 及其子类实现\n- 移除 DelegateAccessTokenResponseClient 及相关转换器、RestTemplate 实现\n- 删除 FederatedAuthenticationEntryPoint、FederatedAuthenticationSuccessHandler 等联邦认证处理器\n- 移除 FederatedAuthorizationConfigurer、FederatedLoginOrchestrator 等联邦授权核心逻辑\n- 清理 FederationProperties 配置类及 ExtendedOAuth2ClientProvider/Mapper\n- 删除 Gitee、QQ、微信等第三方联邦登录的具体实现\n- 移除所有相关单元测试文件\n- 更新 DefaultSecurityConfig 以移除对已删除组件的引用\n- 调整 DeviceClientAuthenticationProvider 和 FailureAuthenticationEntryPoint 中的依赖调用\n\n此重构简化了联邦登录架构，移除了未使用的第三方集成代码，为后续模块化重构做准备。\n"
+    },
+    {
+      "sha": "57d4e070e6d418658805122e76b3864a41ae4286",
+      "date": "2026-04-20T20:09:17+08:00",
+      "author": "AutismSuperman",
+      "email": "fulinlin9527@outlook.com",
+      "message": "chore(brand): 统一品牌视觉资源，采用橡果盾牌新 logo 并更新相关文档说明\n"
+    },
+    {
+      "sha": "9c1398254b6f3976fbf5f37e0f829ebba2f8676e",
+      "date": "2026-04-20T19:19:27+08:00",
+      "author": "AutismSuperman",
+      "email": "fulinlin9527@outlook.com",
+      "message": "refactor(armorauth-server): 清理静态资源文件并移除冗余前端代码\n\n删除旧的 Bootstrap、jQuery 及自定义 JS/CSS 文件，包括登录、授权、设备激活等页面的静态资源。\n移除备份模板文件（`/bak/` 目录），统一使用新版 UI 模板。\n仅保留 `armorauth-server-ui` 中的 `login.ftlh` 修改，确保与当前前端架构一致。\n"
+    },
+    {
+      "sha": "83d62e9a116ded2571581bf1db8cd3c24b0fb7ca",
+      "date": "2026-04-20T17:53:23+08:00",
+      "author": "FuLin",
+      "email": "fulinlin9527@outlook.com",
+      "message": "refactor(armorauth-samples): 移除冗余转换器并增强 OIDC/PKCE 样例的登出处理逻辑\n"
+    },
+    {
+      "sha": "1712d404b3d10b8664f90b0bfac120dcbc5f69d0",
+      "date": "2026-04-20T15:15:09+08:00",
+      "author": "FuLin",
+      "email": "fulinlin9527@outlook.com",
+      "message": "feat(armorauth-server-ui): 优化登录、首页及联邦确认页面的 UI 设计与品牌一致性\n\n- 将登录页的品牌标识从文字“A”替换为 SVG Logo，提升视觉识别度\n- 重构登录页英雄区域，采用动态展示面板替代原有仪表盘插图，明确传达“统一登录、授权确认、设备激活”三大核心能力\n- 更新首页和联邦确认页的品牌标识为 SVG 图标，统一视觉语言\n- 在各页面底部新增统一页脚，包含平台名称、功能说明及辅助导航信息\n- 调整部分表单按钮布局类名（如 action-row-stacked、action-row-between），增强响应式体验\n- 优化联邦确认页信息结构，引入“待确认账号”徽章与“第三方-本地账号”连接桥接视觉元素，提升流程清晰度\n"
+    }
+  ],
+  "commit_sha": "c1011a6f12a7b8e194050c8bdbf6ff2ea8c15d7b",
+  "extracted_at": "2026-10-05T18:40:09.780639+00:00"
+}

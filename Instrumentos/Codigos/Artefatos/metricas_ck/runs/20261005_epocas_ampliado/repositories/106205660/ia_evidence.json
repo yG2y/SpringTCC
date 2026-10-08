@@ -1,0 +1,195 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 26,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "c4c596b378b2cdf82247ad198b71ed74d32b76a6",
+      "date": "2026-05-06T20:50:32+02:00",
+      "author": "Philipp Wagner",
+      "email": "pwag86@googlemail.com",
+      "message": "Merge pull request #4 from bytefish/dependabot/maven/SpringBootMultiTenancy/org.postgresql-postgresql-42.7.11\n\nBump org.postgresql:postgresql from 42.2.12 to 42.7.11 in /SpringBootMultiTenancy"
+    },
+    {
+      "sha": "0aa17677ba54a115027f16e96b497a470eecb0f1",
+      "date": "2026-05-06T13:08:23Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.postgresql:postgresql in /SpringBootMultiTenancy\n\nBumps [org.postgresql:postgresql](https://github.com/pgjdbc/pgjdbc) from 42.2.12 to 42.7.11.\n- [Release notes](https://github.com/pgjdbc/pgjdbc/releases)\n- [Changelog](https://github.com/pgjdbc/pgjdbc/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/pgjdbc/pgjdbc/compare/REL42.2.12...REL42.7.11)\n\n---\nupdated-dependencies:\n- dependency-name: org.postgresql:postgresql\n  dependency-version: 42.7.11\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "b0c8e0c52b5c64b9864af5e1910666e057478a2a",
+      "date": "2021-11-20T22:12:58+01:00",
+      "author": "Philipp Wagner",
+      "email": "pwag86@googlemail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "1da6898f05697eb8ace92a53cfb9e0fe10938aaf",
+      "date": "2020-11-08T13:48:02+01:00",
+      "author": "Philipp Wagner",
+      "email": "pwag86@googlemail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "a4804acdc7572405d6cb9a5028a9967514063283",
+      "date": "2020-11-08T13:47:44+01:00",
+      "author": "Philipp Wagner",
+      "email": "pwag86@googlemail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "f98b1963f036a329f04385fbc32dee2a7cb02c02",
+      "date": "2020-04-29T20:37:47+02:00",
+      "author": "Philipp Wagner",
+      "email": "pwag86@googlemail.com",
+      "message": "Cosmetic Changes\n"
+    },
+    {
+      "sha": "024b3fa17217aaceee61a22252c8bd6f686dcc82",
+      "date": "2020-04-29T20:14:31+02:00",
+      "author": "Philipp Wagner",
+      "email": "pwag86@googlemail.com",
+      "message": "Move Configuration to Properties Files\n"
+    },
+    {
+      "sha": "9438d0836c19341aef93833f9fdbdae0024e5c67",
+      "date": "2020-04-29T18:14:56+02:00",
+      "author": "Philipp Wagner",
+      "email": "pwag86@googlemail.com",
+      "message": "Update Postgres JDBC Driver\n"
+    },
+    {
+      "sha": "9c15729927689cb423fbe22205adba9e615609c1",
+      "date": "2020-04-29T18:13:32+02:00",
+      "author": "Philipp Wagner",
+      "email": "pwag86@googlemail.com",
+      "message": "Update to latest Spring Boot 2.2.2\n"
+    },
+    {
+      "sha": "9476ef5767bbf71b624f9e9e4a07cccef644486f",
+      "date": "2020-04-29T18:00:21+02:00",
+      "author": "Philipp Wagner",
+      "email": "pwag86@googlemail.com",
+      "message": "Set Sane Defaults for the ThreadPool to avoid Blocking\n"
+    },
+    {
+      "sha": "70c837faf45f5c3083b765153e6a023652679a83",
+      "date": "2020-04-29T17:49:46+02:00",
+      "author": "Philipp Wagner",
+      "email": "pwag86@googlemail.com",
+      "message": "Set the Tenant as null in afterCompletion Handler\n\nLet's respect the RequestScope and null out the Tenant once the Request\nis finished.\n"
+    },
+    {
+      "sha": "60599192684b3ca2f3f598a81649988b438ee44b",
+      "date": "2020-04-29T11:13:42+02:00",
+      "author": "Philipp Wagner",
+      "email": "pwag86@googlemail.com",
+      "message": "Do not return the CompletableFuture\n"
+    },
+    {
+      "sha": "c4272bdae2564c01ef5e66897f5c12876e7cadd3",
+      "date": "2020-04-29T11:08:40+02:00",
+      "author": "Philipp Wagner",
+      "email": "pwag86@googlemail.com",
+      "message": "Simplify Code\n"
+    },
+    {
+      "sha": "a77789aa37918f8c128cff7d6800c019e9e1c4a3",
+      "date": "2020-04-29T09:30:01+02:00",
+      "author": "Philipp Wagner",
+      "email": "pwag86@googlemail.com",
+      "message": "Update Interceptor\n"
+    },
+    {
+      "sha": "96cf747fc33a1126408d3de2fb3da2743be2b88a",
+      "date": "2020-04-29T09:27:05+02:00",
+      "author": "Philipp Wagner",
+      "email": "pwag86@googlemail.com",
+      "message": "Add Asynchronous Example\n"
+    },
+    {
+      "sha": "852a0ea75ee53286395d81e6fa15fb7b28c919a9",
+      "date": "2020-04-29T09:05:56+02:00",
+      "author": "Philipp Wagner",
+      "email": "pwag86@googlemail.com",
+      "message": "Added a TaskDecorator for Async Processing\n"
+    },
+    {
+      "sha": "7cc15004ca7ce4ba13cf1bccb31bdf9fb7948886",
+      "date": "2020-04-27T09:20:36+02:00",
+      "author": "Philipp Wagner",
+      "email": "pwag86@googlemail.com",
+      "message": "Adding Copyrights to clarify License\n"
+    },
+    {
+      "sha": "ea4cf9b4b0bb29bda4115a53b8898cd44445cf87",
+      "date": "2020-04-26T21:35:42+02:00",
+      "author": "Philipp Wagner",
+      "email": "pwag86@googlemail.com",
+      "message": "Remove Jersey\n\nA lot more people will be using Spring Boot MVC instead of Jersey. So I\nhave rewritten the code to use Spring MVC.\n"
+    },
+    {
+      "sha": "2260e6dd03f56a54f52339b975f3356f751f34a0",
+      "date": "2020-04-19T15:31:02+02:00",
+      "author": "Philipp Wagner",
+      "email": "pwag86@googlemail.com",
+      "message": "Adding LICENSE Header\n"
+    },
+    {
+      "sha": "adef3b2cd726add61ae1f27b4b070916d5948653",
+      "date": "2020-04-15T17:53:25+02:00",
+      "author": "Philipp Wagner",
+      "email": "pwag86@googlemail.com",
+      "message": "Remove Devtool Dependencies\n"
+    },
+    {
+      "sha": "ef3156ae2bd08d63ca17b9963acf09b31dba5191",
+      "date": "2020-04-15T17:53:00+02:00",
+      "author": "Philipp Wagner",
+      "email": "pwag86@googlemail.com",
+      "message": "Added a more Dynamic Routing to prevent Reboots\n"
+    },
+    {
+      "sha": "95690ec94eaa1ff5aaa7e95b619a414619113763",
+      "date": "2017-10-15T10:29:59+02:00",
+      "author": "Philipp Wagner",
+      "email": "bytefish@gmx.de",
+      "message": "Link to Blog Post added\n"
+    },
+    {
+      "sha": "655d6ae71d8e34a8cb321e7d4cd3b203ac712636",
+      "date": "2017-10-15T09:18:06+02:00",
+      "author": "Philipp Wagner",
+      "email": "bytefish@gmx.de",
+      "message": "Cosmetics\n"
+    },
+    {
+      "sha": "c4ec504ea280903b790a9a2608b8e1d54ea1c80b",
+      "date": "2017-10-08T22:03:42+02:00",
+      "author": "Philipp Wagner",
+      "email": "bytefish@gmx.de",
+      "message": "Fix Bash Script\n"
+    },
+    {
+      "sha": "e5bb1ff66e7896c207e3ee96261c3d045f564444",
+      "date": "2017-10-08T22:02:23+02:00",
+      "author": "Philipp Wagner",
+      "email": "bytefish@gmx.de",
+      "message": "README\n"
+    },
+    {
+      "sha": "c9034d162ee189f097e31d5f01e9769883d26bb6",
+      "date": "2017-10-08T21:59:59+02:00",
+      "author": "Philipp Wagner",
+      "email": "bytefish@gmx.de",
+      "message": "Initial Commit\n"
+    }
+  ],
+  "commit_sha": "c4c596b378b2cdf82247ad198b71ed74d32b76a6",
+  "extracted_at": "2026-10-05T18:44:23.080962+00:00"
+}

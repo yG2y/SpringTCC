@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "ea8381e686ede2e37707f2a837336fc9074dc6cf",
+      "date": "2026-05-28T00:11:58+08:00",
+      "author": "Moshow郑锴",
+      "email": "moshowgame@126.com",
+      "message": "Merge pull request #9 from moshowgame/dependabot/maven/io.springfox-springfox-swagger-ui-2.10.0\n\nBump io.springfox:springfox-swagger-ui from 2.8.0 to 2.10.0"
+    },
+    {
+      "sha": "5ed1d7fcba9e7a8011e718abe13797f9633d2b9e",
+      "date": "2026-05-28T00:11:40+08:00",
+      "author": "Moshow郑锴",
+      "email": "moshowgame@126.com",
+      "message": "Merge pull request #8 from moshowgame/dependabot/maven/cn.hutool-hutool-all-5.8.21\n\nBump cn.hutool:hutool-all from 4.3.2 to 5.8.21"
+    },
+    {
+      "sha": "3ce0e7943f5478cbe484e9c601608b6ee94c1e7c",
+      "date": "2026-05-28T00:11:18+08:00",
+      "author": "Moshow郑锴",
+      "email": "moshowgame@126.com",
+      "message": "Merge pull request #10 from safer-bot/safer-result\n\nUpdated pom.xml by Safer"
+    },
+    {
+      "sha": "0b841c13e4c2e466e0fb7bf94286df1d2d028541",
+      "date": "2025-07-16T03:16:43-03:00",
+      "author": "safer-bot",
+      "email": "safer.bot2025@gmail.com",
+      "message": "add new pom.xml updated by Safer\n"
+    },
+    {
+      "sha": "cb2cc33611dfd376e9c213e5d65e45eb76d13af4",
+      "date": "2024-09-06T01:45:55Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump io.springfox:springfox-swagger-ui from 2.8.0 to 2.10.0\n\nBumps [io.springfox:springfox-swagger-ui](https://github.com/springfox/springfox) from 2.8.0 to 2.10.0.\n- [Release notes](https://github.com/springfox/springfox/releases)\n- [Changelog](https://github.com/springfox/springfox/blob/master/docs/release-notes.md)\n- [Commits](https://github.com/springfox/springfox/compare/2.8.0...2.10.0)\n\n---\nupdated-dependencies:\n- dependency-name: io.springfox:springfox-swagger-ui\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "0220e789bc78f162a5ca76d471f6296d53c88cee",
+      "date": "2024-05-16T17:15:39Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump cn.hutool:hutool-all from 4.3.2 to 5.8.21\n\nBumps [cn.hutool:hutool-all](https://github.com/looly/hutool) from 4.3.2 to 5.8.21.\n- [Release notes](https://github.com/looly/hutool/releases)\n- [Changelog](https://github.com/dromara/hutool/blob/v5-master/CHANGELOG.md)\n- [Commits](https://github.com/looly/hutool/commits/5.8.21)\n\n---\nupdated-dependencies:\n- dependency-name: cn.hutool:hutool-all\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "1667783c1920121296bafed1a3cde7e9f6706405",
+      "date": "2023-12-17T13:52:41+08:00",
+      "author": "Moshow郑锴",
+      "email": "moshowgame@126.com",
+      "message": "Merge pull request #7 from BulkSecurityGeneratorProjectV2/fix/JLL/use_https_to_resolve_dependencies_maven\n\n[SECURITY] Use HTTPS to resolve dependencies in Maven Build\n"
+    },
+    {
+      "sha": "0d7a31d7e735af5f093169e82e1c3ebb800bd6ca",
+      "date": "2023-12-17T13:52:30+08:00",
+      "author": "Moshow郑锴",
+      "email": "moshowgame@126.com",
+      "message": "Merge pull request #6 from moshowgame/dependabot/maven/spring-cloud-study-drools/org.drools-drools-core-7.69.0.Final\n\nBump org.drools:drools-core from 7.60.0.Final to 7.69.0.Final in /spring-cloud-study-drools"
+    },
+    {
+      "sha": "e6d54ee8e493d604df0c5e9a4ef8a3a11a31e771",
+      "date": "2023-12-17T05:19:59Z",
+      "author": "Jonathan Leitschuh",
+      "email": "Jonathan.Leitschuh@gmail.com",
+      "message": "vuln-fix: Use HTTPS instead of HTTP to resolve deps CVE-2021-26291\n\n\nThis fixes a security vulnerability in this project where the `pom.xml`\nfiles were configuring Maven to resolve dependencies over HTTP instead of\nHTTPS.\n\nWeakness: CWE-829: Inclusion of Functionality from Untrusted Control Sphere\nSeverity: High\nCVSS: 8.1\nDetection: CodeQL & OpenRewrite (https://app.moderne.io/recipes/org.openrewrite.maven.security.UseHttpsForRepositories)\n\nReported-by: Jonathan Leitschuh <Jonathan.Leitschuh@gmail.com>\nSigned-off-by: Jonathan Leitschuh <Jonathan.Leitschuh@gmail.com>\n\nBug-tracker: https://github.com/JLLeitschuh/security-research/issues/8\nDetection: CodeQL (https://codeql.github.com/codeql-query-help/java/java-maven-non-https-url/) & OpenRewrite (https://app.moderne.io/recipes/org.openrewrite.maven.security.UseHttpsForRepositories)\n\nReported-by: Jonathan Leitschuh <Jonathan.Leitschuh@gmail.com>\nSigned-off-by: Jonathan Leitschuh <Jonathan.Leitschuh@gmail.com>\n\nBug-tracker: https://github.com/JLLeitschuh/security-research/issues/8\n\n\nUse this link to re-run the recipe: https://app.moderne.io/recipes/builder/IfHkrYfxx?organizationId=QWxsIEdpdEh1Yg%3D%3D\n\nCo-authored-by: Moderne <team@moderne.io>"
+    },
+    {
+      "sha": "02941b74f2633cdf3aac5671501c14b6538ff2f9",
+      "date": "2023-09-12T13:56:50Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.drools:drools-core in /spring-cloud-study-drools\n\nBumps [org.drools:drools-core](https://github.com/kiegroup/drools) from 7.60.0.Final to 7.69.0.Final.\n- [Release notes](https://github.com/kiegroup/drools/releases)\n- [Commits](https://github.com/kiegroup/drools/compare/7.60.0.Final...7.69.0.Final)\n\n---\nupdated-dependencies:\n- dependency-name: org.drools:drools-core\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "80e1896aae081e6f99aad01a4dbd0d10302ab547",
+      "date": "2022-07-02T10:22:07+08:00",
+      "author": "Moshow郑锴",
+      "email": "moshowgame@126.com",
+      "message": "Merge pull request #5 from moshowgame/dependabot/maven/spring-cloud-study-drools/org.drools-drools-core-7.60.0.Final\n\nBump drools-core from 7.24.0.Final to 7.60.0.Final in /spring-cloud-study-drools"
+    },
+    {
+      "sha": "d47ecf8e0fa59c7d5896a9df3634896b4409f312",
+      "date": "2022-07-02T10:21:58+08:00",
+      "author": "Moshow郑锴",
+      "email": "moshowgame@126.com",
+      "message": "Merge pull request #4 from moshowgame/dependabot/maven/com.alibaba-fastjson-1.2.83\n\nBump fastjson from 1.2.44 to 1.2.83"
+    },
+    {
+      "sha": "1599c77c9ca838cff2ddc261c5e30406b43f82c2",
+      "date": "2022-06-17T22:19:39Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump drools-core in /spring-cloud-study-drools\n\nBumps [drools-core](https://github.com/kiegroup/drools) from 7.24.0.Final to 7.60.0.Final.\n- [Release notes](https://github.com/kiegroup/drools/releases)\n- [Commits](https://github.com/kiegroup/drools/compare/7.24.0.Final...7.60.0.Final)\n\n---\nupdated-dependencies:\n- dependency-name: org.drools:drools-core\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "ae85bd818f42e9ad588ef4536e0636bc74fba712",
+      "date": "2022-06-17T01:54:51Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump fastjson from 1.2.44 to 1.2.83\n\nBumps [fastjson](https://github.com/alibaba/fastjson) from 1.2.44 to 1.2.83.\n- [Release notes](https://github.com/alibaba/fastjson/releases)\n- [Commits](https://github.com/alibaba/fastjson/compare/1.2.44...1.2.83)\n\n---\nupdated-dependencies:\n- dependency-name: com.alibaba:fastjson\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "d9407254a55ecf6b0bf31b773c92c703d7c46441",
+      "date": "2020-10-24T09:16:47+08:00",
+      "author": "MOSHOW郑锴",
+      "email": "moshowgame@126.com",
+      "message": "delete idea setting\n\ndelete idea setting\n"
+    },
+    {
+      "sha": "3aac42ed775f275b8f23ca0787a548fe19886a73",
+      "date": "2020-10-24T09:12:39+08:00",
+      "author": "MOSHOW郑锴",
+      "email": "moshowgame@126.com",
+      "message": "1024 程序员节快乐！ - 优化部分依赖版本 - 新增ehcache模块，强大的java缓存框架，提供方便快捷的缓存功能\n"
+    },
+    {
+      "sha": "8f07b5c08ea54bb63bfc0440706a2431e16a31d2",
+      "date": "2020-01-15T23:59:58+08:00",
+      "author": "MOSHOW.K.ZHENG",
+      "email": "moshowgame@126.com",
+      "message": "websocket-cluster\n"
+    },
+    {
+      "sha": "eed944cc8d92178e770a0b464dea1c40b0e62e6a",
+      "date": "2020-01-15T00:00:49+08:00",
+      "author": "MOSHOW.K.ZHENG",
+      "email": "moshowgame@126.com",
+      "message": "websocket-cluster(undone)\n"
+    },
+    {
+      "sha": "ebd56e067e3a6b978496e008df96d856e65416dc",
+      "date": "2020-01-14T23:59:12+08:00",
+      "author": "MOSHOW.K.ZHENG",
+      "email": "moshowgame@126.com",
+      "message": "websocket-cluster(undone)\n"
+    },
+    {
+      "sha": "fce3b047b147e4f6948a3237475e8117bbab7138",
+      "date": "2020-01-14T23:53:42+08:00",
+      "author": "MOSHOW.K.ZHENG",
+      "email": "moshowgame@126.com",
+      "message": "websocket-cluster(undone)\n"
+    },
+    {
+      "sha": "c4fb625b108eedcd9d26df9ad18440d1abd5d519",
+      "date": "2020-01-05T19:48:32+08:00",
+      "author": "MOSHOW.K.ZHENG",
+      "email": "moshowgame@126.com",
+      "message": "update\n\nupdate\n"
+    },
+    {
+      "sha": "bd14808e0fa285613ac5ff8e9cd92c76678ff70e",
+      "date": "2020-01-05T19:17:21+08:00",
+      "author": "MOSHOW.K.ZHENG",
+      "email": "moshowgame@126.com",
+      "message": "update\n\nupdate\n"
+    },
+    {
+      "sha": "44f568ed632c026bf454593e8e876ffe4b1a9c14",
+      "date": "2020-01-05T17:55:02+08:00",
+      "author": "MOSHOW.K.ZHENG",
+      "email": "moshowgame@126.com",
+      "message": "springboot2+websocket,整合基于IM的优化版本\n\nspringboot2+websocket,整合基于IM的优化版本\n"
+    },
+    {
+      "sha": "c9f29f455ee9f5e44802ac4c849ba6ba72ed9cbe",
+      "date": "2019-08-11T23:02:14+08:00",
+      "author": "Moshow郑锴",
+      "email": "moshowgame@126.com",
+      "message": "new pieline"
+    },
+    {
+      "sha": "0d99b30dc5329d4daaf299f1bdaaf1202f45a270",
+      "date": "2019-08-11T23:01:08+08:00",
+      "author": "Moshow郑锴",
+      "email": "moshowgame@126.com",
+      "message": "new pieline\n\nnew pieline"
+    },
+    {
+      "sha": "4f643b13760ac787887dbd7eefd2da0d4872a2c1",
+      "date": "2019-08-11T22:56:04+08:00",
+      "author": "Moshow郑锴",
+      "email": "moshowgame@126.com",
+      "message": "new pieline"
+    },
+    {
+      "sha": "0afcfe8949253314047787270782d2600ee9c40a",
+      "date": "2019-08-11T22:55:37+08:00",
+      "author": "Moshow郑锴",
+      "email": "moshowgame@126.com",
+      "message": "new pieline\n\nnew pieline"
+    },
+    {
+      "sha": "c2bc6459403665ab03484db42d89e8373907d9f9",
+      "date": "2019-08-11T22:52:35+08:00",
+      "author": "Moshow郑锴",
+      "email": "moshowgame@126.com",
+      "message": "new pieline"
+    },
+    {
+      "sha": "28f4a47df971c916456883b304eb95d44a785eef",
+      "date": "2019-08-11T22:46:01+08:00",
+      "author": "Moshow郑锴",
+      "email": "moshowgame@126.com",
+      "message": "new pieline\n\nnew pieline"
+    },
+    {
+      "sha": "bcc54d254223bf55f11c6375b0526ccfd42f0554",
+      "date": "2019-08-11T21:07:08+08:00",
+      "author": "Moshow郑锴",
+      "email": "moshowgame@126.com",
+      "message": "Added Jenkinsfile"
+    }
+  ],
+  "commit_sha": "ea8381e686ede2e37707f2a837336fc9074dc6cf",
+  "extracted_at": "2026-10-05T18:12:51.642221+00:00"
+}

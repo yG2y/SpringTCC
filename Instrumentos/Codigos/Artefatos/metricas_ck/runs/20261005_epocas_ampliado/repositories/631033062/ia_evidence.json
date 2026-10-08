@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "93f1ba9055286d2c7565a7712aaac0c0b88dca30",
+      "date": "2024-12-30T00:37:43+09:00",
+      "author": "siyeonSon",
+      "email": "87802191+siyeonSon@users.noreply.github.com",
+      "message": "✨ feat(api): count items filtered by location (#535)\n\n* :sparkles: feat(api): count user items group by location\n\n* :sparkles: feat(api): count user liked items group by location\n\n* :bug: fix(api): korean grammar correction"
+    },
+    {
+      "sha": "73221b4919d61fbf95a89a709440ce0eea4f427d",
+      "date": "2024-12-29T14:04:45+09:00",
+      "author": "siyeonSon",
+      "email": "87802191+siyeonSon@users.noreply.github.com",
+      "message": "🐛 fix(api): cannot find user items filtered by location (#533)\n\n* :recycle: refactor(api): extract private method ordering by ItemOrderType\n\n* :bug: fix(api): cannot find user items filtered by location"
+    },
+    {
+      "sha": "d97752edea73e75555129b964baf09ff6d3c17e8",
+      "date": "2024-10-26T17:35:16+09:00",
+      "author": "siyeonSon",
+      "email": "87802191+siyeonSon@users.noreply.github.com",
+      "message": ":bug: fix(batch): add flyway location (#531)\n\n"
+    },
+    {
+      "sha": "2521d54c4293f95bb23af479a459dfdf632e7fc6",
+      "date": "2024-10-26T16:06:17+09:00",
+      "author": "Jung Seonghun",
+      "email": "80201773+seonghun-dev@users.noreply.github.com",
+      "message": "add SECURITY.md (#530)\n\n"
+    },
+    {
+      "sha": "9acc527be4ad47042da331ffd5c428e1f73b6d19",
+      "date": "2024-10-26T16:01:58+09:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump the npm_and_yarn group across 1 directory with 6 updates (#529)\n\nBumps the npm_and_yarn group with 6 updates in the /backend/streetdrop-admin/streetdrop-admin-web directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [axios](https://github.com/axios/axios) | `1.7.4` | `1.7.7` |\n| [d3-color](https://github.com/d3/d3-color) | `2.0.0` | `3.1.0` |\n| [@nivo/bar](https://github.com/plouc/nivo/tree/HEAD/packages/bar) | `0.83.1` | `0.87.0` |\n| [@nivo/core](https://github.com/plouc/nivo/tree/HEAD/packages/core) | `0.83.1` | `0.87.0` |\n| [@nivo/line](https://github.com/plouc/nivo/tree/HEAD/packages/line) | `0.83.1` | `0.87.0` |\n| [@nivo/pie](https://github.com/plouc/nivo/tree/HEAD/packages/pie) | `0.83.1` | `0.87.0` |\n\n\n\nUpdates `axios` from 1.7.4 to 1.7.7\n- [Release notes](https://github.com/axios/axios/releases)\n- [Changelog](https://github.com/axios/axios/blob/v1.x/CHANGELOG.md)\n- [Commits](https://github.com/axios/axios/compare/v1.7.4...v1.7.7)\n\nUpdates `d3-color` from 2.0.0 to 3.1.0\n- [Release notes](https://github.com/d3/d3-color/releases)\n- [Commits](https://github.com/d3/d3-color/compare/v2.0.0...v3.1.0)\n\nUpdates `@nivo/bar` from 0.83.1 to 0.87.0\n- [Release notes](https://github.com/plouc/nivo/releases)\n- [Changelog](https://github.com/plouc/nivo/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/plouc/nivo/commits/v0.87.0/packages/bar)\n\nUpdates `@nivo/core` from 0.83.1 to 0.87.0\n- [Release notes](https://github.com/plouc/nivo/releases)\n- [Changelog](https://github.com/plouc/nivo/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/plouc/nivo/commits/v0.87.0/packages/core)\n\nUpdates `@nivo/line` from 0.83.1 to 0.87.0\n- [Release notes](https://github.com/plouc/nivo/releases)\n- [Changelog](https://github.com/plouc/nivo/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/plouc/nivo/commits/v0.87.0/packages/line)\n\nUpdates `@nivo/pie` from 0.83.1 to 0.87.0\n- [Release notes](https://github.com/plouc/nivo/releases)\n- [Changelog](https://github.com/plouc/nivo/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/plouc/nivo/commits/v0.87.0/packages/pie)\n\n---\nupdated-dependencies:\n- dependency-name: axios\n  dependency-type: direct:production\n  dependency-group: npm_and_yarn\n- dependency-name: d3-color\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n- dependency-name: \"@nivo/bar\"\n  dependency-type: direct:production\n  dependency-group: npm_and_yarn\n- dependency-name: \"@nivo/core\"\n  dependency-type: direct:production\n  dependency-group: npm_and_yarn\n- dependency-name: \"@nivo/line\"\n  dependency-type: direct:production\n  dependency-group: npm_and_yarn\n- dependency-name: \"@nivo/pie\"\n  dependency-type: direct:production\n  dependency-group: npm_and_yarn\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "d2825abb58b9029003541c3d9e81dd93de43d0c9",
+      "date": "2024-10-26T15:56:06+09:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump the npm_and_yarn group across 3 directories with 26 updates (#528)\n\nBumps the npm_and_yarn group with 19 updates in the /backend/streetdrop-admin/streetdrop-admin-web directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [axios](https://github.com/axios/axios) | `1.4.0` | `1.7.4` |\n| [http-proxy-middleware](https://github.com/chimurai/http-proxy-middleware) | `2.0.6` | `2.0.7` |\n| [@adobe/css-tools](https://github.com/adobe/css-tools) | `4.2.0` | `4.4.0` |\n| [semver](https://github.com/npm/node-semver) | `6.3.0` | `6.3.1` |\n| [@babel/traverse](https://github.com/babel/babel/tree/HEAD/packages/babel-traverse) | `7.22.5` | `7.25.9` |\n| [body-parser](https://github.com/expressjs/body-parser) | `1.20.1` | `1.20.3` |\n| [express](https://github.com/expressjs/express) | `4.18.2` | `4.21.1` |\n| [braces](https://github.com/micromatch/braces) | `3.0.2` | `3.0.3` |\n| [d3-color](https://github.com/d3/d3-color) | `2.0.0` | `3.1.0` |\n| [@nivo/bar](https://github.com/plouc/nivo/tree/HEAD/packages/bar) | `0.83.0` | `0.83.1` |\n| [@nivo/core](https://github.com/plouc/nivo/tree/HEAD/packages/core) | `0.83.0` | `0.83.1` |\n| [@nivo/line](https://github.com/plouc/nivo/tree/HEAD/packages/line) | `0.83.0` | `0.83.1` |\n| [@nivo/pie](https://github.com/plouc/nivo/tree/HEAD/packages/pie) | `0.83.0` | `0.83.1` |\n| [ejs](https://github.com/mde/ejs) | `3.1.9` | `3.1.10` |\n| [micromatch](https://github.com/micromatch/micromatch) | `4.0.5` | `4.0.8` |\n| [rollup](https://github.com/rollup/rollup) | `2.79.1` | `2.79.2` |\n| [webpack](https://github.com/webpack/webpack) | `5.87.0` | `5.95.0` |\n| [webpack-dev-middleware](https://github.com/webpack/webpack-dev-middleware) | `5.3.3` | `5.3.4` |\n| [word-wrap](https://github.com/jonschlinkert/word-wrap) | `1.2.3` | `1.2.5` |\n\nBumps the npm_and_yarn group with 6 updates in the /backend/streetdrop-admin/streetdrop-admin-web-server directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [http-proxy-middleware](https://github.com/chimurai/http-proxy-middleware) | `2.0.6` | `2.0.7` |\n| [body-parser](https://github.com/expressjs/body-parser) | `1.18.3` | `1.20.3` |\n| [express](https://github.com/expressjs/express) | `4.16.4` | `4.21.1` |\n| [braces](https://github.com/micromatch/braces) | `3.0.2` | `3.0.3` |\n| [follow-redirects](https://github.com/follow-redirects/follow-redirects) | `1.15.2` | `1.15.9` |\n| [micromatch](https://github.com/micromatch/micromatch) | `4.0.5` | `4.0.8` |\n\nBumps the npm_and_yarn group with 9 updates in the /docs directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [http-proxy-middleware](https://github.com/chimurai/http-proxy-middleware) | `2.0.6` | `2.0.7` |\n| [@babel/traverse](https://github.com/babel/babel/tree/HEAD/packages/babel-traverse) | `7.22.8` | `7.25.9` |\n| [braces](https://github.com/micromatch/braces) | `3.0.2` | `3.0.3` |\n| [express](https://github.com/expressjs/express) | `4.18.2` | `4.21.1` |\n| [follow-redirects](https://github.com/follow-redirects/follow-redirects) | `1.15.2` | `1.15.9` |\n| [micromatch](https://github.com/micromatch/micromatch) | `4.0.5` | `4.0.8` |\n| [postcss](https://github.com/postcss/postcss) | `8.4.27` | `8.4.47` |\n| [webpack](https://github.com/webpack/webpack) | `5.88.2` | `5.95.0` |\n| [webpack-dev-middleware](https://github.com/webpack/webpack-dev-middleware) | `5.3.3` | `5.3.4` |\n\n\n\nUpdates `axios` from 1.4.0 to 1.7.4\n- [Release notes](https://github.com/axios/axios/releases)\n- [Changelog](https://github.com/axios/axios/blob/v1.x/CHANGELOG.md)\n- [Commits](https://github.com/axios/axios/compare/v1.4.0...v1.7.4)\n\nUpdates `http-proxy-middleware` from 2.0.6 to 2.0.7\n- [Release notes](https://github.com/chimurai/http-proxy-middleware/releases)\n- [Changelog](https://github.com/chimurai/http-proxy-middleware/blob/v2.0.7/CHANGELOG.md)\n- [Commits](https://github.com/chimurai/http-proxy-middleware/compare/v2.0.6...v2.0.7)\n\nUpdates `@adobe/css-tools` from 4.2.0 to 4.4.0\n- [Changelog](https://github.com/adobe/css-tools/blob/main/History.md)\n- [Commits](https://github.com/adobe/css-tools/commits)\n\nUpdates `semver` from 6.3.0 to 6.3.1\n- [Release notes](https://github.com/npm/node-semver/releases)\n- [Changelog](https://github.com/npm/node-semver/blob/v6.3.1/CHANGELOG.md)\n- [Commits](https://github.com/npm/node-semver/compare/v6.3.0...v6.3.1)\n\nUpdates `@babel/traverse` from 7.22.5 to 7.25.9\n- [Release notes](https://github.com/babel/babel/releases)\n- [Changelog](https://github.com/babel/babel/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/babel/babel/commits/v7.25.9/packages/babel-traverse)\n\nUpdates `body-parser` from 1.20.1 to 1.20.3\n- [Release notes](https://github.com/expressjs/body-parser/releases)\n- [Changelog](https://github.com/expressjs/body-parser/blob/master/HISTORY.md)\n- [Commits](https://github.com/expressjs/body-parser/compare/1.20.1...1.20.3)\n\nUpdates `express` from 4.18.2 to 4.21.1\n- [Release notes](https://github.com/expressjs/express/releases)\n- [Changelog](https://github.com/expressjs/express/blob/4.21.1/History.md)\n- [Commits](https://github.com/expressjs/express/compare/4.18.2...4.21.1)\n\nUpdates `braces` from 3.0.2 to 3.0.3\n- [Changelog](https://github.com/micromatch/braces/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/micromatch/braces/compare/3.0.2...3.0.3)\n\nUpdates `cookie` from 0.5.0 to 0.7.1\n- [Release notes](https://github.com/jshttp/cookie/releases)\n- [Commits](https://github.com/jshttp/cookie/compare/v0.5.0...v0.7.1)\n\nUpdates `d3-color` from 2.0.0 to 3.1.0\n- [Release notes](https://github.com/d3/d3-color/releases)\n- [Commits](https://github.com/d3/d3-color/compare/v2.0.0...v3.1.0)\n\nUpdates `@nivo/bar` from 0.83.0 to 0.83.1\n- [Release notes](https://github.com/plouc/nivo/releases)\n- [Changelog](https://github.com/plouc/nivo/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/plouc/nivo/commits/v0.83.1/packages/bar)\n\nUpdates `@nivo/core` from 0.83.0 to 0.83.1\n- [Release notes](https://github.com/plouc/nivo/releases)\n- [Changelog](https://github.com/plouc/nivo/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/plouc/nivo/commits/v0.83.1/packages/core)\n\nUpdates `@nivo/line` from 0.83.0 to 0.83.1\n- [Release notes](https://github.com/plouc/nivo/releases)\n- [Changelog](https://github.com/plouc/nivo/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/plouc/nivo/commits/v0.83.1/packages/line)\n\nUpdates `@nivo/pie` from 0.83.0 to 0.83.1\n- [Release notes](https://github.com/plouc/nivo/releases)\n- [Changelog](https://github.com/plouc/nivo/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/plouc/nivo/commits/v0.83.1/packages/pie)\n\nUpdates `ejs` from 3.1.9 to 3.1.10\n- [Release notes](https://github.com/mde/ejs/releases)\n- [Commits](https://github.com/mde/ejs/compare/v3.1.9...v3.1.10)\n\nUpdates `express` from 4.18.2 to 4.21.1\n- [Release notes](https://github.com/expressjs/express/releases)\n- [Changelog](https://github.com/expressjs/express/blob/4.21.1/History.md)\n- [Commits](https://github.com/expressjs/express/compare/4.18.2...4.21.1)\n\nUpdates `follow-redirects` from 1.15.2 to 1.15.9\n- [Release notes](https://github.com/follow-redirects/follow-redirects/releases)\n- [Commits](https://github.com/follow-redirects/follow-redirects/compare/v1.15.2...v1.15.9)\n\nUpdates `micromatch` from 4.0.5 to 4.0.8\n- [Release notes](https://github.com/micromatch/micromatch/releases)\n- [Changelog](https://github.com/micromatch/micromatch/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/micromatch/micromatch/compare/4.0.5...4.0.8)\n\nUpdates `path-to-regexp` from 0.1.7 to 0.1.10\n- [Release notes](https://github.com/pillarjs/path-to-regexp/releases)\n- [Changelog](https://github.com/pillarjs/path-to-regexp/blob/master/History.md)\n- [Commits](https://github.com/pillarjs/path-to-regexp/compare/v0.1.7...v0.1.10)\n\nUpdates `qs` from 6.11.0 to 6.13.0\n- [Changelog](https://github.com/ljharb/qs/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/ljharb/qs/compare/v6.11.0...v6.13.0)\n\nUpdates `rollup` from 2.79.1 to 2.79.2\n- [Release notes](https://github.com/rollup/rollup/releases)\n- [Changelog](https://github.com/rollup/rollup/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/rollup/rollup/compare/v2.79.1...v2.79.2)\n\nUpdates `send` from 0.18.0 to 0.19.0\n- [Release notes](https://github.com/pillarjs/send/releases)\n- [Changelog](https://github.com/pillarjs/send/blob/master/HISTORY.md)\n- [Commits](https://github.com/pillarjs/send/compare/0.18.0...0.19.0)\n\nUpdates `serve-static` from 1.15.0 to 1.16.2\n- [Release notes](https://github.com/expressjs/serve-static/releases)\n- [Changelog](https://github.com/expressjs/serve-static/blob/v1.16.2/HISTORY.md)\n- [Commits](https://github.com/expressjs/serve-static/compare/v1.15.0...v1.16.2)\n\nUpdates `webpack` from 5.87.0 to 5.95.0\n- [Release notes](https://github.com/webpack/webpack/releases)\n- [Commits](https://github.com/webpack/webpack/compare/v5.87.0...v5.95.0)\n\nUpdates `webpack-dev-middleware` from 5.3.3 to 5.3.4\n- [Release notes](https://github.com/webpack/webpack-dev-middleware/releases)\n- [Changelog](https://github.com/webpack/webpack-dev-middleware/blob/v5.3.4/CHANGELOG.md)\n- [Commits](https://github.com/webpack/webpack-dev-middleware/compare/v5.3.3...v5.3.4)\n\nUpdates `word-wrap` from 1.2.3 to 1.2.5\n- [Release notes](https://github.com/jonschlinkert/word-wrap/releases)\n- [Commits](https://github.com/jonschlinkert/word-wrap/compare/1.2.3...1.2.5)\n\nUpdates `http-proxy-middleware` from 2.0.6 to 2.0.7\n- [Release notes](https://github.com/chimurai/http-proxy-middleware/releases)\n- [Changelog](https://github.com/chimurai/http-proxy-middleware/blob/v2.0.7/CHANGELOG.md)\n- [Commits](https://github.com/chimurai/http-proxy-middleware/compare/v2.0.6...v2.0.7)\n\nUpdates `body-parser` from 1.18.3 to 1.20.3\n- [Release notes](https://github.com/expressjs/body-parser/releases)\n- [Changelog](https://github.com/expressjs/body-parser/blob/master/HISTORY.md)\n- [Commits](https://github.com/expressjs/body-parser/compare/1.20.1...1.20.3)\n\nUpdates `express` from 4.16.4 to 4.21.1\n- [Release notes](https://github.com/expressjs/express/releases)\n- [Changelog](https://github.com/expressjs/express/blob/4.21.1/History.md)\n- [Commits](https://github.com/expressjs/express/compare/4.18.2...4.21.1)\n\nUpdates `braces` from 3.0.2 to 3.0.3\n- [Changelog](https://github.com/micromatch/braces/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/micromatch/braces/compare/3.0.2...3.0.3)\n\nUpdates `cookie` from 0.3.1 to 0.7.1\n- [Release notes](https://github.com/jshttp/cookie/releases)\n- [Commits](https://github.com/jshttp/cookie/compare/v0.5.0...v0.7.1)\n\nUpdates `express` from 4.16.4 to 4.21.1\n- [Release notes](https://github.com/expressjs/express/releases)\n- [Changelog](https://github.com/expressjs/express/blob/4.21.1/History.md)\n- [Commits](https://github.com/expressjs/express/compare/4.18.2...4.21.1)\n\nUpdates `follow-redirects` from 1.15.2 to 1.15.9\n- [Release notes](https://github.com/follow-redirects/follow-redirects/releases)\n- [Commits](https://github.com/follow-redirects/follow-redirects/compare/v1.15.2...v1.15.9)\n\nUpdates `micromatch` from 4.0.5 to 4.0.8\n- [Release notes](https://github.com/micromatch/micromatch/releases)\n- [Changelog](https://github.com/micromatch/micromatch/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/micromatch/micromatch/compare/4.0.5...4.0.8)\n\nUpdates `path-to-regexp` from 0.1.7 to 0.1.10\n- [Release notes](https://github.com/pillarjs/path-to-regexp/releases)\n- [Changelog](https://github.com/pillarjs/path-to-regexp/blob/master/History.md)\n- [Commits](https://github.com/pillarjs/path-to-regexp/compare/v0.1.7...v0.1.10)\n\nUpdates `qs` from 6.5.2 to 6.13.0\n- [Changelog](https://github.com/ljharb/qs/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/ljharb/qs/compare/v6.11.0...v6.13.0)\n\nUpdates `send` from 0.16.2 to 0.19.0\n- [Release notes](https://github.com/pillarjs/send/releases)\n- [Changelog](https://github.com/pillarjs/send/blob/master/HISTORY.md)\n- [Commits](https://github.com/pillarjs/send/compare/0.18.0...0.19.0)\n\nUpdates `serve-static` from 1.13.2 to 1.16.2\n- [Release notes](https://github.com/expressjs/serve-static/releases)\n- [Changelog](https://github.com/expressjs/serve-static/blob/v1.16.2/HISTORY.md)\n- [Commits](https://github.com/expressjs/serve-static/compare/v1.15.0...v1.16.2)\n\nUpdates `http-proxy-middleware` from 2.0.6 to 2.0.7\n- [Release notes](https://github.com/chimurai/http-proxy-middleware/releases)\n- [Changelog](https://github.com/chimurai/http-proxy-middleware/blob/v2.0.7/CHANGELOG.md)\n- [Commits](https://github.com/chimurai/http-proxy-middleware/compare/v2.0.6...v2.0.7)\n\nUpdates `@babel/traverse` from 7.22.8 to 7.25.9\n- [Release notes](https://github.com/babel/babel/releases)\n- [Changelog](https://github.com/babel/babel/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/babel/babel/commits/v7.25.9/packages/babel-traverse)\n\nUpdates `braces` from 3.0.2 to 3.0.3\n- [Changelog](https://github.com/micromatch/braces/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/micromatch/braces/compare/3.0.2...3.0.3)\n\nUpdates `express` from 4.18.2 to 4.21.1\n- [Release notes](https://github.com/expressjs/express/releases)\n- [Changelog](https://github.com/expressjs/express/blob/4.21.1/History.md)\n- [Commits](https://github.com/expressjs/express/compare/4.18.2...4.21.1)\n\nUpdates `follow-redirects` from 1.15.2 to 1.15.9\n- [Release notes](https://github.com/follow-redirects/follow-redirects/releases)\n- [Commits](https://github.com/follow-redirects/follow-redirects/compare/v1.15.2...v1.15.9)\n\nUpdates `micromatch` from 4.0.5 to 4.0.8\n- [Release notes](https://github.com/micromatch/micromatch/releases)\n- [Changelog](https://github.com/micromatch/micromatch/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/micromatch/micromatch/compare/4.0.5...4.0.8)\n\nUpdates `path-to-regexp` from 0.1.7 to 0.1.10\n- [Release notes](https://github.com/pillarjs/path-to-regexp/releases)\n- [Changelog](https://github.com/pillarjs/path-to-regexp/blob/master/History.md)\n- [Commits](https://github.com/pillarjs/path-to-regexp/compare/v0.1.7...v0.1.10)\n\nUpdates `postcss` from 8.4.27 to 8.4.47\n- [Release notes](https://github.com/postcss/postcss/releases)\n- [Changelog](https://github.com/postcss/postcss/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/postcss/postcss/compare/8.4.27...8.4.47)\n\nUpdates `qs` from 6.11.0 to 6.13.0\n- [Changelog](https://github.com/ljharb/qs/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/ljharb/qs/compare/v6.11.0...v6.13.0)\n\nUpdates `send` from 0.18.0 to 0.19.0\n- [Release notes](https://github.com/pillarjs/send/releases)\n- [Changelog](https://github.com/pillarjs/send/blob/master/HISTORY.md)\n- [Commits](https://github.com/pillarjs/send/compare/0.18.0...0.19.0)\n\nUpdates `serve-static` from 1.15.0 to 1.16.2\n- [Release notes](https://github.com/expressjs/serve-static/releases)\n- [Changelog](https://github.com/expressjs/serve-static/blob/v1.16.2/HISTORY.md)\n- [Commits](https://github.com/expressjs/serve-static/compare/v1.15.0...v1.16.2)\n\nUpdates `webpack` from 5.88.2 to 5.95.0\n- [Release notes](https://github.com/webpack/webpack/releases)\n- [Commits](https://github.com/webpack/webpack/compare/v5.87.0...v5.95.0)\n\nUpdates `webpack-dev-middleware` from 5.3.3 to 5.3.4\n- [Release notes](https://github.com/webpack/webpack-dev-middleware/releases)\n- [Changelog](https://github.com/webpack/webpack-dev-middleware/blob/v5.3.4/CHANGELOG.md)\n- [Commits](https://github.com/webpack/webpack-dev-middleware/compare/v5.3.3...v5.3.4)\n\n---\nupdated-dependencies:\n- dependency-name: axios\n  dependency-type: direct:production\n  dependency-group: npm_and_yarn\n- dependency-name: http-proxy-middleware\n  dependency-type: direct:production\n  dependency-group: npm_and_yarn\n- dependency-name: \"@adobe/css-tools\"\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n- dependency-name: semver\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n- dependency-name: \"@babel/traverse\"\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n- dependency-name: body-parser\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n- dependency-name: express\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n- dependency-name: braces\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n- dependency-name: cookie\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n- dependency-name: d3-color\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n- dependency-name: \"@nivo/bar\"\n  dependency-type: direct:production\n  dependency-group: npm_and_yarn\n- dependency-name: \"@nivo/core\"\n  dependency-type: direct:production\n  dependency-group: npm_and_yarn\n- dependency-name: \"@nivo/line\"\n  dependency-type: direct:production\n  dependency-group: npm_and_yarn\n- dependency-name: \"@nivo/pie\"\n  dependency-type: direct:production\n  dependency-group: npm_and_yarn\n- dependency-name: ejs\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n- dependency-name: express\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n- dependency-name: follow-redirects\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n- dependency-name: micromatch\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n- dependency-name: path-to-regexp\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n- dependency-name: qs\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n- dependency-name: rollup\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n- dependency-name: send\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n- dependency-name: serve-static\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n- dependency-name: webpack\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n- dependency-name: webpack-dev-middleware\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n- dependency-name: word-wrap\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n- dependency-name: http-proxy-middleware\n  dependency-type: direct:production\n  dependency-group: npm_and_yarn\n- dependency-name: body-parser\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n- dependency-name: express\n  dependency-type: direct:production\n  dependency-group: npm_and_yarn\n- dependency-name: braces\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n- dependency-name: cookie\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n- dependency-name: express\n  dependency-type: direct:production\n  dependency-group: npm_and_yarn\n- dependency-name: follow-redirects\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n- dependency-name: micromatch\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n- dependency-name: path-to-regexp\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n- dependency-name: qs\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n- dependency-name: send\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n- dependency-name: serve-static\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n- dependency-name: http-proxy-middleware\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n- dependency-name: \"@babel/traverse\"\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n- dependency-name: braces\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n- dependency-name: express\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n- dependency-name: follow-redirects\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n- dependency-name: micromatch\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n- dependency-name: path-to-regexp\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n- dependency-name: postcss\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n- dependency-name: qs\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n- dependency-name: send\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n- dependency-name: serve-static\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n- dependency-name: webpack\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n- dependency-name: webpack-dev-middleware\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "28b19c6254f2315585a9697ce01452c58bbf678f",
+      "date": "2024-10-26T15:51:50+09:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump the npm_and_yarn group across 1 directory with 2 updates (#520)\n\nBumps the npm_and_yarn group with 2 updates in the /backend/streetdrop-admin/streetdrop-admin-web directory: [serve-static](https://github.com/expressjs/serve-static) and [express](https://github.com/expressjs/express).\n\n\nUpdates `serve-static` from 1.15.0 to 1.16.2\n- [Release notes](https://github.com/expressjs/serve-static/releases)\n- [Changelog](https://github.com/expressjs/serve-static/blob/v1.16.2/HISTORY.md)\n- [Commits](https://github.com/expressjs/serve-static/compare/v1.15.0...v1.16.2)\n\nUpdates `express` from 4.18.2 to 4.21.1\n- [Release notes](https://github.com/expressjs/express/releases)\n- [Changelog](https://github.com/expressjs/express/blob/4.21.1/History.md)\n- [Commits](https://github.com/expressjs/express/compare/4.18.2...4.21.1)\n\n---\nupdated-dependencies:\n- dependency-name: serve-static\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n- dependency-name: express\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "53dd36f2e55e1cc54d641de84d54a79a45f46ff0",
+      "date": "2024-10-26T15:51:20+09:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump http-proxy-middleware (#519)\n\nBumps the npm_and_yarn group with 1 update in the /backend/streetdrop-admin/streetdrop-admin-web directory: [http-proxy-middleware](https://github.com/chimurai/http-proxy-middleware).\n\n\nUpdates `http-proxy-middleware` from 2.0.6 to 2.0.7\n- [Release notes](https://github.com/chimurai/http-proxy-middleware/releases)\n- [Changelog](https://github.com/chimurai/http-proxy-middleware/blob/v2.0.7/CHANGELOG.md)\n- [Commits](https://github.com/chimurai/http-proxy-middleware/compare/v2.0.6...v2.0.7)\n\n---\nupdated-dependencies:\n- dependency-name: http-proxy-middleware\n  dependency-type: direct:production\n  dependency-group: npm_and_yarn\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "6522dcb14fb0b334f94fc64ecda5712152fd663a",
+      "date": "2024-10-26T15:46:54+09:00",
+      "author": "Jung Seonghun",
+      "email": "80201773+seonghun-dev@users.noreply.github.com",
+      "message": "🐛 fix: fix coverage workflow file not woriking in gradle init (#518)\n\n"
+    },
+    {
+      "sha": "698f759c13ca467b40112d4fb396c91c10896dc6",
+      "date": "2024-10-21T15:26:56+09:00",
+      "author": "siyeonSon",
+      "email": "87802191+siyeonSon@users.noreply.github.com",
+      "message": ":sparkles: feat(api): add post recommendation sentence API (#517)\n\n* :sparkles: feat(api): add post recommendation sentence API\n\n* :white_check_mark: test(api): add post recommendation sentence\n\n* :sparkles: feat(api): get once a day\n\n* :white_check_mark: test(api): get once a day\n\n* :recycle: refactor(api): remove unnecessary codes\n\n* :recycle: refactor(api): rename UserTimestampRepository -> UserReadRepository\n\n* :recycle: refactor(api): rename UserReadRepository -> userRecommendSendHistoryRepository"
+    },
+    {
+      "sha": "30df5d30f05955c46a9e0a8c49dc4dc60c273443",
+      "date": "2024-10-19T16:14:20+09:00",
+      "author": "Jung Seonghun",
+      "email": "80201773+seonghun-dev@users.noreply.github.com",
+      "message": ":sparkles: feat: add user item add isliked in response dto (#515)\n\n"
+    },
+    {
+      "sha": "40306b3c00154037eeed85dbfa49f2c9785b93f1",
+      "date": "2024-10-19T15:45:31+09:00",
+      "author": "siyeonSon",
+      "email": "87802191+siyeonSon@users.noreply.github.com",
+      "message": ":recycle: refactor(api): change response results (#516)\n\n* :recycle: refactor(api): change response results\n\n* :recycle: refactor(api): change response data \"\" -> null\n\n* :recycle: refactor(api): wrap the content field with a type field"
+    },
+    {
+      "sha": "301c194295275a8f7a1a6f04e497a218ca14707e",
+      "date": "2024-10-03T22:36:12+09:00",
+      "author": "siyeonSon",
+      "email": "87802191+siyeonSon@users.noreply.github.com",
+      "message": ":bug: fix(api): add apple-music settings to yml (#510)\n\n* :bug: fix(api): add apple-music settings to yml\n\n* :bug: fix(api): add apple-music settings to dev-yml"
+    },
+    {
+      "sha": "e09643cf7238a1a2f62cf9a82ba46f4599ddd526",
+      "date": "2024-10-03T22:30:29+09:00",
+      "author": "Jung Seonghun",
+      "email": "80201773+seonghun-dev@users.noreply.github.com",
+      "message": ":sparkles: feat: add like order (#512)\n\n"
+    },
+    {
+      "sha": "fd6ef8c37d7b78060829819effdaa0385e22b579",
+      "date": "2024-09-23T19:05:35+09:00",
+      "author": "siyeonSon",
+      "email": "87802191+siyeonSon@users.noreply.github.com",
+      "message": "feat: post recommendation API (#508)\n\n* :heavy_plus_sign: config(api): add spring cloud dependency\n\n* :sparkles: feat(api): get 50 popular songs using Apple Music API\n\n* :sparkles: chore(api): change songs limit 50 -> 30\n\n* :sparkles: feat(api): get recent posted songs\n\n* :sparkles: feat(api): recommend artists\n\n* :sparkles: feat(api): recommend artists\n\n* :sparkles: feat(api): recommend recent posted songs and popular songs and popular artists\n\n* :sparkles: refactor(api): manage constants in RecommendType enum class\n\n* :sparkles: refactor(api): refactor the getCategoryChart()\n\n* :sparkles: refactor(api): refactor query of findRecentSongs()\n\n* :sparkles: refactor(api): refactor query of findRecentSongs() with JPQL\n\n* :sparkles: refactor(api): get only one duplicate music\n\n* :sparkles: refactor(api): change RecommendType name CHART_SONGS -> POPULAR_CHART_SONG\n\n* :sparkles: refactor(api): change RecommendType title according to the design\n\n* :sparkles: refactor(api): disable logging\n\n* :recycle: refactor(api): refactor if-else -> switch case"
+    },
+    {
+      "sha": "7784e53ba32315dc96341c2df38de85e94fb9898",
+      "date": "2024-09-22T20:13:16+09:00",
+      "author": "Jung Seonghun",
+      "email": "80201773+seonghun-dev@users.noreply.github.com",
+      "message": ":sparkles: feat: add item city and state filtering add (#509)\n\n"
+    },
+    {
+      "sha": "27ee1b239ca893abb4d20a6d90b71a420626a7b8",
+      "date": "2024-09-08T18:32:30+09:00",
+      "author": "siyeonSon",
+      "email": "87802191+siyeonSon@users.noreply.github.com",
+      "message": ":bug: fix(api): AppleMusicConfig import failed (#506)\n\n"
+    },
+    {
+      "sha": "0ef9f18c7fcd54e79e9a175a77b03b82f5f4fd15",
+      "date": "2024-09-02T19:13:08+09:00",
+      "author": "Jung Seonghun",
+      "email": "80201773+seonghun-dev@users.noreply.github.com",
+      "message": ":recycle: refactor: refactor search to api server (#505)\n\n* :recycle: refactor: refactor search to api server\n\n* :recycle: refactor(api): move AppleMusicConfig\n\n---------\n\nCo-authored-by: siyeonSon <siyeon0209@naver.com>"
+    },
+    {
+      "sha": "6486fa350232c3a41f719b98de4787ced3b91767",
+      "date": "2024-08-06T22:35:53+09:00",
+      "author": "Jung Seonghun",
+      "email": "80201773+seonghun-dev@users.noreply.github.com",
+      "message": ":sparkles: feat: add location filter on user items (#501)\n\n* :sparkles: feat: add location count\n\n* :recycle: refactor(api): move ItemXxx -> ItemLocationXxx\n\n* :recycle: refactor(api): separate JpaRepository and QueryDslRepository\n\n* :recycle: refactor(api): count items by location\n\n* :recycle: refactor(api): remove unnecessary join\n\n* :recycle: feat(api): find user items by location\n\n* :recycle: chore(api): revert commit\n\n---------\n\nCo-authored-by: siyeonSon <siyeon0209@naver.com>"
+    },
+    {
+      "sha": "2981630176c42a2dbdeabe25b4093a0fd0b0ffbb",
+      "date": "2024-07-23T23:29:30+09:00",
+      "author": "Jung Seonghun",
+      "email": "80201773+seonghun-dev@users.noreply.github.com",
+      "message": ":sparkles: feat(api): add user drop item order (#496)\n\n* :sparkles: Feat: add user drop item order\n\n* :sparkles: Feat: add user like recent, oldest"
+    },
+    {
+      "sha": "d846e110144cd6b70ea6798822d468361e1ade6c",
+      "date": "2024-07-23T23:12:03+09:00",
+      "author": "siyeonSon",
+      "email": "87802191+siyeonSon@users.noreply.github.com",
+      "message": ":wrench: config: upgrade java 19 -> 21 (#500)\n\n"
+    },
+    {
+      "sha": "3cb3b27f1f617f3375961ea25bcf852245213506",
+      "date": "2024-07-20T18:06:27+09:00",
+      "author": "yunyoung1819",
+      "email": "yunyoung1819@hanmail.net",
+      "message": ":bug: fix(domain): modify AWS S3 Image URL at level policy\n"
+    },
+    {
+      "sha": "e33ef318924352b1e60e667b003a871b620d9045",
+      "date": "2024-07-06T15:27:52+09:00",
+      "author": "siyeonSon",
+      "email": "87802191+siyeonSon@users.noreply.github.com",
+      "message": "🐛 fix(api, batch, search): korean encoding not working on Safari browser (#495)\n\n* :bug: fix(api): korean encoding not working on Safari browser\n\n* :bug: fix(batch): korean encoding not working on Safari browser\n\n* :bug: fix(search): korean encoding not working on Safari browser\n\n* :bug: fix(search): korean encoding not working on Safari browser"
+    },
+    {
+      "sha": "b1425a0715e18e118f1b8c199407a808e660478b",
+      "date": "2024-07-04T17:37:07+09:00",
+      "author": "siyeonSon",
+      "email": "87802191+siyeonSon@users.noreply.github.com",
+      "message": "♻️ refactor(domain): change name announcement -> notice (#493)\n\n* :recycle: refactor(domain): change name announcement -> notice\n\n* :recycle: refactor(api): change name announcement -> notice\n\n* :recycle: refactor(admin): change name announcement -> notice"
+    },
+    {
+      "sha": "687ae9998de07dbee6be84e6adc80a232a907c08",
+      "date": "2024-06-28T22:01:41+09:00",
+      "author": "siyeonSon",
+      "email": "87802191+siyeonSon@users.noreply.github.com",
+      "message": "♻️ refactor(api): change name announcement -> notice (#490)\n\n* :recycle: refactor(api): change name announcement -> notice\n\n* :recycle: refactor(admin): change name announcement -> notice\n\n* :recycle: refactor(admin): do not change name announcement -> notice"
+    },
+    {
+      "sha": "c819e136d76b0caf202ced342e330801fda63e51",
+      "date": "2024-06-26T02:33:50+09:00",
+      "author": "Jung Seonghun",
+      "email": "80201773+seonghun-dev@users.noreply.github.com",
+      "message": ":sparkles: feat: add new announcement check api (#488)\n\n* :sparkles: feat: add new announcement check api\n\n* :white_check_mark: test: add announcement new test"
+    },
+    {
+      "sha": "c9f37361e1d7f4f7c77af4f329f7c4cbb5272c86",
+      "date": "2024-06-14T10:27:51+09:00",
+      "author": "Jung Seonghun",
+      "email": "80201773+seonghun-dev@users.noreply.github.com",
+      "message": ":ambulance: hotfix: hotfix announcement list response test (#486)\n\n"
+    },
+    {
+      "sha": "003e1b9753a0fe9ce622de99460eca05cc2ebfa3",
+      "date": "2024-06-14T10:24:07+09:00",
+      "author": "Jung Seonghun",
+      "email": "80201773+seonghun-dev@users.noreply.github.com",
+      "message": ":ambulance: hotfix: hotfix announcement list response (#485)\n\n"
+    },
+    {
+      "sha": "23be312e268869b013a1a28f3e5eac5ce48c3ec5",
+      "date": "2024-06-14T00:53:04+09:00",
+      "author": "siyeonSon",
+      "email": "87802191+siyeonSon@users.noreply.github.com",
+      "message": ":ambulance: hotfix: resolve can't parse JSON in infinite scroll (#483)\n\n"
+    },
+    {
+      "sha": "1c2450abae4c5484d900213d38f2214b074681b2",
+      "date": "2024-06-14T00:52:54+09:00",
+      "author": "siyeonSon",
+      "email": "87802191+siyeonSon@users.noreply.github.com",
+      "message": ":sparkles: feat(api): get announcement (#476)\n\n"
+    }
+  ],
+  "commit_sha": "93f1ba9055286d2c7565a7712aaac0c0b88dca30",
+  "extracted_at": "2026-10-05T18:03:34.225170+00:00"
+}

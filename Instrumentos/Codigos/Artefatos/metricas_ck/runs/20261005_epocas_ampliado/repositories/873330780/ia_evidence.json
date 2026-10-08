@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "b06d169ea6dfcdaf29a1a670102d55c80b00fb4e",
+      "date": "2026-09-23T19:50:17-07:00",
+      "author": "msslulu",
+      "email": "1484036491@qq.com",
+      "message": "refactor: simplify column and token validation checks (#329)\n\n重构字段类型与 Token 校验逻辑，消除 PMD 圈复杂度（CyclomaticComplexity）告警并提升代码质量。\n\n主要改动：\n- DynamicModelService\n  - 提取 COLUMN_TYPES 常量集合与 SIZED_VARCHAR 预编译正则，避免每次校验重复编译正则。\n  - 拆分出私有方法 isValidColumnType，简化 requireColumnType 的复杂多重条件判断，将圈复杂度从 11 降至 2。\n\n- AiChatServiceImpl\n  - 抽取私有方法 isSafeTokenCharacter，解耦字符白名单判定逻辑，降低 isSafeToken 圈复杂度（从 11 降至 2）。\n  - 安全移除类级别 @SuppressWarnings 中的 \"PMD.CyclomaticComplexity\" 抑制注解。\n\n验证与兼容性：\n- 行为等价性：保持原有 7 种列类型白名单、变长 VARCHAR 语法规则及 Token 字符范围（A-Z, a-z, 0-9, _, ., -）完全一致。\n- 静态检查：通过 PMD 扫描校验，相关方法复杂度告警清零。\n- 无 Breaking Change，不对外暴露任何 API 变更。"
+    },
+    {
+      "sha": "c43ef6449e6990d1a6ee495e69b5ddf69b2ed4ec",
+      "date": "2026-09-15T18:52:54-07:00",
+      "author": "msslulu",
+      "email": "1484036491@qq.com",
+      "message": "fix: resolve multiple CodeQL security scan findings\n\n针对 CodeQL 扫描告警做安全整改，覆盖动态 SQL 注入、API 密钥加密、SSRF 与文件路径四类问题。\n\n动态 SQL 与 OGNL 注入\n- DynamicSqlProvider 的表名、列名与排序字段全部经标识符校验，orderType 限定 ASC/DESC，条件值、数据值与分页参数改用 MyBatis 参数绑定。\n- DynamicModelService 与 DynamicService 的查询、计数与 DDL 入口统一调用 SqlIdentifierValidator。\n- SqlIdentifierValidator 新增 requireValidIdentifier、isValidIdentifier、isValidOrderType 与 escapeSqlLiteral；标识符判定由正则改为字符遍历。\n- BlockServiceImpl 的标签过滤由字符串拼接改为 queryWrapper 参数绑定。\n\nAPI 密钥加密\n- SM4 由 ECB 升级为 GCM：12 字节随机 nonce、128 位认证标签、GCM1: 版本前缀、密钥长度校验为 128 位。\n- 无 GCM1: 前缀的密文先尝试 GCM 解密，失败后回退 ECB，已签发的 EKEY_ token 保持可用。该回退是迁移期措施，待历史 token 轮换完成后移除。\n\nSSRF 与文件路径\n- validateFinalUrl 返回解析后的 URI 并直接用于发起请求，消除校验地址与实际请求地址的解析差异，同时拒绝携带 userInfo 与 fragment 的地址。\n- StorageService 的文档路径经规范化与根目录包含检查，并用 toRealPath() 处理软链接；文档根目录由 RAGConfig.documentRoot 统一提供，取自环境变量 FOLDER_PATH。\n\nReDoS\n- BlockServiceImpl 的 appId 判定与 AiChatServiceImpl 的消息内容匹配均改为非正则实现。\n\n构建与 CI\n- 新增 codeql.yml 增量扫描与 codeql-full.yml 周期全量扫描，两者均配置 config-file 排除测试与生成目录。\n- 新增 pmd/errorprone-ruleset.xml；pmd-check 以 minimumPriority=4、failurePriority=2、maxAllowedViolations=51 承接历史违规基线，cpd-check 的 failOnViolation 置为 false。遗留代码的 PMD 抑制注解后续逐步清理。\n\n测试与格式\n- 新增 SM4UtilsTest、ModelServiceImplTest，扩充 SqlIdentifierValidatorTest、DynamicModelServiceTest、AiChatV1ServiceImplTest，全量单测 647 个通过。\n- DatabaseCleanupService、SM4Utils、VectorStoreConfig、StorageService、AiChatV1ServiceImpl、ModelServiceImpl 六个文件同时做了 CRLF 转 LF 与整文件重排版，diff 中约 2400 行删除为纯空白差异。"
+    },
+    {
+      "sha": "af0756b0b5993656caabf5e07b1dbdbeb8ec21e1",
+      "date": "2026-08-20T23:26:19-07:00",
+      "author": "msslulu",
+      "email": "1484036491@qq.com",
+      "message": "fix:code check plugin(Checkstyle +PMD+SpotBugs) (#324)"
+    },
+    {
+      "sha": "11a007c8da8542f9fa1756b19729ba0fc867d53e",
+      "date": "2026-07-29T20:52:54-07:00",
+      "author": "msslulu",
+      "email": "1484036491@qq.com",
+      "message": "feat: Add CodeQL analysis workflow configuration (#322)"
+    },
+    {
+      "sha": "0045f62ff50b965a0973df496fa1ef10a0d241dc",
+      "date": "2026-07-06T04:12:19-07:00",
+      "author": "msslulu",
+      "email": "1484036491@qq.com",
+      "message": "fix: return existing resource on duplicate upload (#320)\n\n优化资源重复上传的判定与处理逻辑：\n\n- 精准查重：联合 hash、appId 与 tenantId 查询资源，避免跨应用或跨租户产生误判。\n- 平滑处理：命中已存资源时，直接返回原资源，不再抛出“重复数据”异常。\n- 完善隔离：新建资源时自动补充 tenantId，确保底层数据满足租户级别的隔离要求。"
+    },
+    {
+      "sha": "4a82d4a4378ee4da40934ec0abca4a4d7b6e5f8b",
+      "date": "2026-07-02T04:21:54-07:00",
+      "author": "msslulu",
+      "email": "1484036491@qq.com",
+      "message": "fix:upload block (#319)"
+    },
+    {
+      "sha": "089876923a92d1d34cdbe341e31d10aaf113b7e7",
+      "date": "2026-06-30T23:48:10-07:00",
+      "author": "msslulu",
+      "email": "1484036491@qq.com",
+      "message": "fix: jsonUtil ut  code check fix (#318)"
+    },
+    {
+      "sha": "a7706057a0e1d03151988ebefbad6627ca276987",
+      "date": "2026-06-30T07:52:06-07:00",
+      "author": "msslulu",
+      "email": "1484036491@qq.com",
+      "message": "ut: login service ut,jsonUtil ut (#317)"
+    },
+    {
+      "sha": "e24a8eb41e5691ea4fe155f1d770721f428bb0fc",
+      "date": "2026-05-29T02:33:57-07:00",
+      "author": "msslulu",
+      "email": "1484036491@qq.com",
+      "message": "fix: standardize charset encoding in test fixtures (#313)"
+    },
+    {
+      "sha": "56c1f3a7053055909bcb217ad45492230a7f9672",
+      "date": "2026-05-29T01:03:50-07:00",
+      "author": "msslulu",
+      "email": "1484036491@qq.com",
+      "message": "fix: zip cross directory attack vulnerability (#312)"
+    },
+    {
+      "sha": "b7bf798a2b73965f5271f72d33939aad103ca37c",
+      "date": "2026-04-30T03:51:05-07:00",
+      "author": "msslulu",
+      "email": "1484036491@qq.com",
+      "message": "fix:code check(remove redundant log) (#311)"
+    },
+    {
+      "sha": "ee9d0244d7b78608ae707ccd148cc5e3f6c1bac2",
+      "date": "2026-04-30T02:47:10-07:00",
+      "author": "msslulu",
+      "email": "1484036491@qq.com",
+      "message": "test: add Jwt, SM2Encryption and SM3Password util test. (#310)\n\n增加 JWT、SM2Encryption、SM3Password 的 ut 测试用例"
+    },
+    {
+      "sha": "36730b18d85aaf19e05e419f27b42f467fee4d59",
+      "date": "2026-04-29T20:55:36+08:00",
+      "author": "Hexqi",
+      "email": "wu_12556@126.com",
+      "message": "fix: resolve code check issues (#308)"
+    },
+    {
+      "sha": "b8b6258cc6dbd241cec4d1a49ba085b59ceed8e1",
+      "date": "2026-04-29T08:31:04+08:00",
+      "author": "Hexqi",
+      "email": "wu_12556@126.com",
+      "message": "fix(jwt): improve JWT secret configuration handling (#307)"
+    },
+    {
+      "sha": "4a10aa574e85258ca22d93ce84c4532df666431c",
+      "date": "2026-04-29T08:30:37+08:00",
+      "author": "Hexqi",
+      "email": "wu_12556@126.com",
+      "message": "fix(ai): prevent SSRF in AI chat endpoints (#306)\n\n* fix: prevent SSRF in AI chat endpoints via URL validation\n\n* fix(ai): update allowed hosts and stricter validation for AI services\n\n* fix(ai): enforce host restrictions for AI services"
+    },
+    {
+      "sha": "d02daa9b98efd6362bc7ec554cf7f1cdcc2bc8e5",
+      "date": "2026-04-25T14:03:17+08:00",
+      "author": "Hexqi",
+      "email": "wu_12556@126.com",
+      "message": "fix(login): remove model-data endpoint from SSO interceptor (#303)"
+    },
+    {
+      "sha": "caa07a6ab528aef20edc1dc3d88293724967f2b0",
+      "date": "2026-04-25T14:01:46+08:00",
+      "author": "Hexqi",
+      "email": "wu_12556@126.com",
+      "message": "fix: prevent SQL injection in model-data API (#304)\n\n* fix: prevent SQL injection in model-data API via identifier validation\n\n* fix: add model metadata whitelist validation to DynamicModelService\n\n* fix: resolve circular dependency between DynamicModelService and ModelServiceImpl\n\n* fix: make orderType and orderBy case-insensitive across validation layers\n\n* fix: allow queryWithPage with null/empty params for list-all queries"
+    },
+    {
+      "sha": "c5147b909f8e12859037fb395e40a41f2d32bbc5",
+      "date": "2026-04-17T19:24:24+08:00",
+      "author": "Hexqi",
+      "email": "wu_12556@126.com",
+      "message": "fix: require explicit JWT secret configuration (#301)"
+    },
+    {
+      "sha": "0cad53a37b7dd4195a902589b8392547b2bde691",
+      "date": "2026-03-31T06:10:28-07:00",
+      "author": "msslulu",
+      "email": "1484036491@qq.com",
+      "message": "test: add DynamicModelServiceTest (#300)"
+    },
+    {
+      "sha": "2b97f64bffb588ab996467eae54796ba7a52d1ac",
+      "date": "2026-02-28T02:20:32-08:00",
+      "author": "msslulu",
+      "email": "1484036491@qq.com",
+      "message": "Add comprehensive unit tests for PlatformHistoryServiceImpl (#297)\n\n* fix: add PlatformHistoryServiceImplTest\n\n* fix: remove unused"
+    },
+    {
+      "sha": "c30544d207fd14040c5d18b5b2fc4c71cc29f5d5",
+      "date": "2026-02-26T22:31:55-08:00",
+      "author": "msslulu",
+      "email": "1484036491@qq.com",
+      "message": "fix: code check fix (#296)\n\n"
+    },
+    {
+      "sha": "131bd0f0fd668fbdc9d23f784ae4865c6e580c0b",
+      "date": "2026-02-25T00:18:48-08:00",
+      "author": "msslulu",
+      "email": "1484036491@qq.com",
+      "message": "fix: model-data endpoint unauthentication  and improve error handling for authentication and model operations (#294)\n\n"
+    },
+    {
+      "sha": "0223b20d4786a30e672c33a17c7bd2d4a97f54a7",
+      "date": "2026-01-30T01:05:14-08:00",
+      "author": "msslulu",
+      "email": "1484036491@qq.com",
+      "message": "fix:  code check (#293)\n\n"
+    },
+    {
+      "sha": "7bd9c6e9f7c81d816ef82a22e00ee5683b3f2c35",
+      "date": "2026-01-30T00:13:23-08:00",
+      "author": "msslulu",
+      "email": "1484036491@qq.com",
+      "message": "fix code check (#292)\n\n"
+    },
+    {
+      "sha": "1c63658d58d314fd5eb8266f6210ccc9e6700ccd",
+      "date": "2026-01-29T18:59:15-08:00",
+      "author": "msslulu",
+      "email": "1484036491@qq.com",
+      "message": "feat: implement model-driven data API with dynamic SQL operations (#290)\n\n"
+    },
+    {
+      "sha": "4222f273887645b0b4bf7eb4cd00afd4c98c4284",
+      "date": "2026-01-29T18:57:55-08:00",
+      "author": "msslulu",
+      "email": "1484036491@qq.com",
+      "message": "fix:  exclude resource/download ssoInterceptor (#289)\n\n"
+    },
+    {
+      "sha": "e57d8cc853ea881b7d5c8dfade428657d0549960",
+      "date": "2026-01-12T17:29:48-08:00",
+      "author": "msslulu",
+      "email": "1484036491@qq.com",
+      "message": "fix: remove sensitive fields from user API response and improve home page error handling (#288)\n\n"
+    },
+    {
+      "sha": "d60612aa71e0fb2c227af33aa668b541d205b7ae",
+      "date": "2025-12-29T22:39:36-08:00",
+      "author": "lu-yg",
+      "email": "128358973+lu-yg@users.noreply.github.com",
+      "message": "fix: modify app set tenant (#287)\n\n* fix: modify resource upload\n\n* fix: modify resource upload\n\n* fix: modify resource upload\n\n* fix: modify resource upload\n\n* fix: modify app API\n\n* fix: modify app API\n\n* fix: modify tenant API\n\n* fix: modify tenant API\n\n* fix: modify tenant API\n\n* fix: modify tenant API\n\n* fix: modify tenant API\n\n* fix: modify tenant API\n\n* fix: modify tenant API\n\n* fix: modify tenant API\n\n* fix: modify login set tenant\n\n* fix: modify login set tenant\n\n* fix: modify login set tenant\n\n* fix: modify app set tenant"
+    },
+    {
+      "sha": "41916639a4c13060938aef64f7e1a3f5a92c5749",
+      "date": "2025-12-29T19:26:04-08:00",
+      "author": "lu-yg",
+      "email": "128358973+lu-yg@users.noreply.github.com",
+      "message": "fix: modify login set tenant (#286)\n\n* fix: modify resource upload\n\n* fix: modify resource upload\n\n* fix: modify resource upload\n\n* fix: modify resource upload\n\n* fix: modify app API\n\n* fix: modify app API\n\n* fix: modify tenant API\n\n* fix: modify tenant API\n\n* fix: modify tenant API\n\n* fix: modify tenant API\n\n* fix: modify tenant API\n\n* fix: modify tenant API\n\n* fix: modify tenant API\n\n* fix: modify tenant API\n\n* fix: modify login set tenant\n\n* fix: modify login set tenant\n\n* fix: modify login set tenant"
+    },
+    {
+      "sha": "0f2ef7ba169f4c502dea62846f23b11ce5f82c55",
+      "date": "2025-12-29T18:22:16-08:00",
+      "author": "msslulu",
+      "email": "1484036491@qq.com",
+      "message": "Fix: code check  (#285)\n\n"
+    }
+  ],
+  "commit_sha": "b06d169ea6dfcdaf29a1a670102d55c80b00fb4e",
+  "extracted_at": "2026-10-05T18:01:43.595353+00:00"
+}

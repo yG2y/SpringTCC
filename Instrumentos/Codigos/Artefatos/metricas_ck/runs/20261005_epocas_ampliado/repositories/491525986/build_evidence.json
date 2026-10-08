@@ -1,0 +1,40 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "4.0.6",
+  "spring_boot_major": "4",
+  "java_versions_declared": "${java.version};25",
+  "build_evidence": [
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "rain-uidgenerator-server/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "rain-uidgenerator-server/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "rain-uidgenerator-server/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "rain-uidgenerator-server/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "rain-uidgenerator-server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "rain-uidgenerator-server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

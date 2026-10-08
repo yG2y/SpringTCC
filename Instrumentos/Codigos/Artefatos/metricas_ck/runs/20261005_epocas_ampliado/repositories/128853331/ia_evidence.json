@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "e0a0cc89232f93a9e72c6fac32eb1e0c6c76808b",
+      "date": "2025-03-16T19:55:00+08:00",
+      "author": "yadong.zhang",
+      "email": "yadong.zhang0415@gmail.com",
+      "message": "Merge branch 'dev'\n\n# Conflicts:\n#\tdocs/bin/version.txt\n"
+    },
+    {
+      "sha": "ac1c801f06a595dab6d3a9c26d4a130b0ca5fac2",
+      "date": "2025-03-16T19:53:30+08:00",
+      "author": "yadong.zhang",
+      "email": "yadong.zhang0415@gmail.com",
+      "message": ":bookmark: 发布 2.3.9\n"
+    },
+    {
+      "sha": "759aabe1ef090a823daf0780b7b304a2a0edec45",
+      "date": "2025-03-02T15:15:41+08:00",
+      "author": "yadong.zhang",
+      "email": "yadong.zhang0415@gmail.com",
+      "message": ":bulb: 修改 logback 配置\n"
+    },
+    {
+      "sha": "6650baac29e15bd4ee588860a8d4ab722306c1e7",
+      "date": "2025-03-02T15:08:23+08:00",
+      "author": "yadong.zhang",
+      "email": "yadong.zhang0415@gmail.com",
+      "message": ":bulb: 优化 article_look 表逻辑\n"
+    },
+    {
+      "sha": "656d8ef51bcfeb0d27a202a524a8ad99f0968e4b",
+      "date": "2025-03-01T22:55:48+08:00",
+      "author": "yadong.zhang",
+      "email": "yadong.zhang0415@gmail.com",
+      "message": ":bulb: 拆分 article 表中的两个内容字段到独立表，提高查询性能\n"
+    },
+    {
+      "sha": "8fb2302206acb39ef8a7db0be0d8c5772fd80d7d",
+      "date": "2025-02-04T21:28:56+08:00",
+      "author": "yadong.zhang",
+      "email": "yadong.zhang0415@gmail.com",
+      "message": ":bulb: websocket 改为可配置手动开启的功能\n"
+    },
+    {
+      "sha": "8669276e538762d72d733fae44a6d68416bdc7de",
+      "date": "2025-01-05T23:18:06+08:00",
+      "author": "yadong.zhang",
+      "email": "yadong.zhang0415@gmail.com",
+      "message": ":bookmark: 发布 2.3.8\n"
+    },
+    {
+      "sha": "4ce335e19dc8e7dc721f9caefc755928b5d4bf04",
+      "date": "2025-01-05T18:24:47+08:00",
+      "author": "yadong.zhang",
+      "email": "yadong.zhang0415@gmail.com",
+      "message": ":bookmark: 控制台侧的css/js文件默认使用本地资源，防止CDN异常导致服务不可用\n"
+    },
+    {
+      "sha": "d1db05d2e055d12aca5974467034a82baba2f88c",
+      "date": "2024-09-01T00:47:34+08:00",
+      "author": "yadong.zhang",
+      "email": "yadong.zhang0415@gmail.com",
+      "message": ":bookmark: 发布 2.3.7\n"
+    },
+    {
+      "sha": "34bd7caffed56042d97248382ae2c2068354507f",
+      "date": "2024-08-31T21:31:41+08:00",
+      "author": "yadong.zhang",
+      "email": "yadong.zhang0415@gmail.com",
+      "message": ":bookmark: 发布 2.3.7\n"
+    },
+    {
+      "sha": "cabfc20375f184b37dbd769d43bc8a4ab59a1da8",
+      "date": "2024-08-31T21:30:56+08:00",
+      "author": "yadong.zhang",
+      "email": "yadong.zhang0415@gmail.com",
+      "message": ":bulb: 文章详情页支持内嵌广告\n"
+    },
+    {
+      "sha": "c73aedb478b707eb878d3c83d48e21835b1daed7",
+      "date": "2024-08-31T21:30:15+08:00",
+      "author": "yadong.zhang",
+      "email": "yadong.zhang0415@gmail.com",
+      "message": ":bulb: 限制 sitemap 中的文章条数为 500\n"
+    },
+    {
+      "sha": "c33cad029de538034131bd83f56ea071b7e0be3e",
+      "date": "2024-07-21T23:15:01+08:00",
+      "author": "yadong.zhang",
+      "email": "yadong.zhang0415@gmail.com",
+      "message": ":bulb: 支持文章详情页内嵌广告\n"
+    },
+    {
+      "sha": "cbf565ad8bdd1660a3c24d1f164cc0ca44b28ebd",
+      "date": "2024-07-21T16:50:17+08:00",
+      "author": "yadong.zhang",
+      "email": "yadong.zhang0415@gmail.com",
+      "message": ":bulb: 更新 WangEditor 编辑器为最新版本\n"
+    },
+    {
+      "sha": "6743ad587315cf1a694c42efc8f5a4ce86f2d49f",
+      "date": "2024-07-07T18:34:00+08:00",
+      "author": "yadong.zhang",
+      "email": "yadong.zhang0415@gmail.com",
+      "message": ":bulb: 未开启评论时不显式评论框和侧边栏中的近期评论列表\n"
+    },
+    {
+      "sha": "332662df10dcc436517eddc46c3a26b668c44983",
+      "date": "2024-07-07T18:32:39+08:00",
+      "author": "yadong.zhang",
+      "email": "yadong.zhang0415@gmail.com",
+      "message": ":bulb: 增加管理员操作示例\n"
+    },
+    {
+      "sha": "2492a527a7e6f528bd0b7cf21101aed2cd70f1c9",
+      "date": "2024-07-06T21:32:21+08:00",
+      "author": "yadong.zhang",
+      "email": "yadong.zhang0415@gmail.com",
+      "message": ":bulb: 增加文章详情页顶部广告位、增加管理员操作示例\n"
+    },
+    {
+      "sha": "31140719047bb35df99f845c2988f38fc3beaf35",
+      "date": "2024-07-06T20:19:48+08:00",
+      "author": "yadong.zhang",
+      "email": "yadong.zhang0415@gmail.com",
+      "message": ":bulb: 去除文章搬运工功能\n"
+    },
+    {
+      "sha": "a763f27d13a689b1067b23b41526c4b17869d56d",
+      "date": "2024-06-23T23:11:09+08:00",
+      "author": "yadong.zhang",
+      "email": "yadong.zhang0415@gmail.com",
+      "message": ":bookmark: 发布 2.3.6，修复已知 BUG\n"
+    },
+    {
+      "sha": "9c212d6770a74ca420b6153ede4ea0f53e7fac9a",
+      "date": "2024-06-23T22:26:18+08:00",
+      "author": "yadong.zhang",
+      "email": "yadong.zhang0415@gmail.com",
+      "message": ":bookmark: 发布 2.3.6，修复已知 BUG\n"
+    },
+    {
+      "sha": "998789452f3b850de7b543c8344f224f66084a3a",
+      "date": "2024-06-23T18:08:20+08:00",
+      "author": "yadong.zhang",
+      "email": "yadong.zhang0415@gmail.com",
+      "message": ":bookmark: hutool 升级到 5.8.28\n"
+    },
+    {
+      "sha": "ea8e5014604154dd46e09da8ac2fd33dcd2e94d4",
+      "date": "2024-06-23T18:03:35+08:00",
+      "author": "yadong.zhang",
+      "email": "yadong.zhang0415@gmail.com",
+      "message": ":bulb: 增加 pushdev 的脚本\n"
+    },
+    {
+      "sha": "398f440f647c4156e4379ac116f3f87f28cbe303",
+      "date": "2024-06-23T17:58:45+08:00",
+      "author": "yadong.zhang",
+      "email": "yadong.zhang0415@gmail.com",
+      "message": ":memo: 编写文档\n"
+    },
+    {
+      "sha": "9deba287b0c18d9166d4a75aa44a5cb932945db4",
+      "date": "2024-06-23T17:58:08+08:00",
+      "author": "yadong.zhang",
+      "email": "yadong.zhang0415@gmail.com",
+      "message": "Merge branch 'master' of github.com:zhangyd-c/OneBlog into dev\n"
+    },
+    {
+      "sha": "1d478555c3785e9fc567c782af6570be6892f5da",
+      "date": "2024-06-23T17:57:14+08:00",
+      "author": "yadong.zhang",
+      "email": "yadong.zhang0415@gmail.com",
+      "message": "Merge pull request #32 from zhangyd-c/dependabot/maven/cn.hutool-hutool-core-5.8.19\n\n⬆️ Bump hutool-core from 5.5.7 to 5.8.19"
+    },
+    {
+      "sha": "cdcd210865262845618db59f520eef2c3a04bb5e",
+      "date": "2024-06-23T17:56:17+08:00",
+      "author": "yadong.zhang",
+      "email": "yadong.zhang0415@gmail.com",
+      "message": "Merge pull request #31 from gqlin/master\n\n解决asyncSaveSystemLog所在子线程在主线程执行完成后，无法获取主线程本次请求相关内容的问题"
+    },
+    {
+      "sha": "cec834244432c03f9d8b390d8dac645e934ebaa3",
+      "date": "2024-06-23T16:53:49+08:00",
+      "author": "yadong.zhang",
+      "email": "yadong.zhang0415@gmail.com",
+      "message": ":bulb: 优化页面内容\n"
+    },
+    {
+      "sha": "5c4671c2f90de0a23bfa538f463f00404bef8b7e",
+      "date": "2024-06-23T16:09:22+08:00",
+      "author": "yadong.zhang",
+      "email": "yadong.zhang0415@gmail.com",
+      "message": "Merge branch 'master' into dev\n"
+    },
+    {
+      "sha": "759bda1c34c4d6f8f133d2c883e5ea9675a0ec15",
+      "date": "2024-06-23T16:02:39+08:00",
+      "author": "yadong.zhang",
+      "email": "yadong.zhang0415@gmail.com",
+      "message": "Merge branch 'master' of gitee.com:yadong.zhang/DBlog\n"
+    },
+    {
+      "sha": "807fe663738676841faf1db7cbd281d9af66e304",
+      "date": "2024-06-23T16:02:28+08:00",
+      "author": "yadong.zhang",
+      "email": "yadong.zhang0415@gmail.com",
+      "message": ":bulb: 优化页面内容\n"
+    }
+  ],
+  "commit_sha": "e0a0cc89232f93a9e72c6fac32eb1e0c6c76808b",
+  "extracted_at": "2026-10-05T17:59:53.669068+00:00"
+}

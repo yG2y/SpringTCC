@@ -1,0 +1,12 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${spring-boot-version}",
+  "spring_boot_major": "unknown",
+  "java_versions_declared": "${jdk.version};17;21",
+  "build_evidence": [
+    {
+      "file": "tooling/maven/camel-repackager-maven-plugin/pom.xml",
+      "artifact": "spring-boot-loader-tools"
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "1250917ef11c61514bc8bd1ef26e71fcdc200906",
+      "date": "2024-03-26T18:58:06+09:00",
+      "author": "He Jow Moon",
+      "email": "81742959+Hejow@users.noreply.github.com",
+      "message": "\bMerge(.security): apply interceptor from aspect, handlerResolver form utility class (#201)\n\n"
+    },
+    {
+      "sha": "4b0a30fb37fe42e9922559165afd68afdc694233",
+      "date": "2024-03-26T07:26:36+09:00",
+      "author": "Hejow",
+      "email": "gmlwh124@naver.com",
+      "message": "Test: add counter test\n"
+    },
+    {
+      "sha": "59daf7cd2a78729c745ddd760b1dc6bfcdd862f4",
+      "date": "2024-03-26T06:53:01+09:00",
+      "author": "Hejow",
+      "email": "gmlwh124@naver.com",
+      "message": "Refactor(.remind): 불필요한 클래스 삭제\n"
+    },
+    {
+      "sha": "66c9f8a622f3970f83a5e14ea04850a27725f55b",
+      "date": "2024-03-26T06:22:43+09:00",
+      "author": "Hejow",
+      "email": "gmlwh124@naver.com",
+      "message": "Fix(.test): setting null on interceptor\n"
+    },
+    {
+      "sha": "2e25261bb96be6f3d5f591f9979ecfbdf20e52d6",
+      "date": "2024-03-22T17:21:58+09:00",
+      "author": "juwoong kim",
+      "email": "wwong7247@gmail.com",
+      "message": "Add(.footprint): 발자취 확정된 컬럼 반영\n\n<!-- PR 내용\n어떤 작업을 했는지 작성해주세요!\nPR이 너무 크면 너무 많은 내용이 들어가겠죠? -->\n# 🔍 어떤 PR인가요?\n- 확정된 발자취 항목을 도메인과 엔티티에 반영했습니다.\n- 아좌좌 템플릿, 이모티콘 숫자를 반영했습니다.\n\n<!-- 리뷰어에게\n어떤 부분을 자세하게 리뷰할지 서술해주세요. -->\n# 😋 To Reviewer\n- 필요한 컬럼을 추가하고 도메인, 엔티티, DTO, 매퍼, 테스트 코드에 반영했습니다.\n\n- 조회, 수정기능 구현 전 발자취 도메인을 점검하기 위해 pr을 생성했습니다.\n   놓친점 또는 우려되는 점 위주로 피드백 주시면 감사하겠습니다.\n\n- 기존 유형에 크게 벗어 나지 않도록 하기위헤 plan 도메인을 참조했습니다.\n하지만 BaseTime, AjajaEntitiy의 필요성을 느끼지 못해 억지로 추가하지 않았습니다.\n기능을 구현하며 필요하다면 추가해보도록 하겠습니다.\n미리 조언해주셔도 괜찮을 것 같습니다.\n\n\n\n\n<!-- 관련 이슈\n프론트에서 작성해준 이슈와 연관되는 PR이라면 \n주석을 풀고 작성해주세요! --> \n\n[//]: # (# 🫡 관련 Issue )"
+    },
+    {
+      "sha": "54a4431c358e5a077552afff61fc8ce2921b848b",
+      "date": "2024-03-22T16:25:41+09:00",
+      "author": "juwoong kim",
+      "email": "wwong7247@gmail.com",
+      "message": "Update: 발자취 항목을 value 로 변경\n"
+    },
+    {
+      "sha": "b6c0b1889a8406a224bd0d53f2f11b425c41c3cb",
+      "date": "2024-03-21T21:46:39+09:00",
+      "author": "Hejow",
+      "email": "gmlwh124@naver.com",
+      "message": "Chore(.user): delete todos on user\n"
+    },
+    {
+      "sha": "196885c1e13b428e2d4bdea10f9e99276fb79090",
+      "date": "2024-03-21T21:41:09+09:00",
+      "author": "Hejow",
+      "email": "gmlwh124@naver.com",
+      "message": "Chore: rename bearer util\n"
+    },
+    {
+      "sha": "8129e86d398497e5a1b4301ca2f78dda0f68b66f",
+      "date": "2024-03-21T21:39:46+09:00",
+      "author": "Hejow",
+      "email": "gmlwh124@naver.com",
+      "message": "Refactor(.aop): simplify api logging\n"
+    },
+    {
+      "sha": "31d5b723161b51cfed6e5f51952fd798e4d343a3",
+      "date": "2024-03-21T21:17:27+09:00",
+      "author": "Hejow",
+      "email": "gmlwh124@naver.com",
+      "message": "Add(.security): parse authenticated id from handler resolver\n"
+    },
+    {
+      "sha": "18e1f69e08666f9afae23c8c505c2fb2b8d760d0",
+      "date": "2024-03-21T21:13:03+09:00",
+      "author": "juwoong kim",
+      "email": "wwong7247@gmail.com",
+      "message": "Chore: 발자취 필드 네이밍 수정 및 flyway 스크립트 통일\n"
+    },
+    {
+      "sha": "8787dfd0cccdd1bf27382076b72336e6c6378bbf",
+      "date": "2024-03-21T20:37:58+09:00",
+      "author": "Hejow",
+      "email": "gmlwh124@naver.com",
+      "message": "Add(.security): authorize request by interceptor from aspect\n"
+    },
+    {
+      "sha": "b8171db37551aeec1cec4cdda04c04bdec647b45",
+      "date": "2024-03-21T19:29:44+09:00",
+      "author": "Hejow",
+      "email": "gmlwh124@naver.com",
+      "message": "Chore: move exception util package\n"
+    },
+    {
+      "sha": "631b0c874617ba85d2246b34bb5ae9fd6417ba23",
+      "date": "2024-03-19T16:51:24+09:00",
+      "author": "juwoong kim",
+      "email": "wwong7247@gmail.com",
+      "message": "Add: 발자취 아이콘 컬럼 추가\n"
+    },
+    {
+      "sha": "b698f95f630af72d8963da3a916f4b6b9bcdb5f5",
+      "date": "2024-03-19T16:21:11+09:00",
+      "author": "juwoong kim",
+      "email": "wwong7247@gmail.com",
+      "message": "Update: 아좌좌 회고 내용 수정 반영\n"
+    },
+    {
+      "sha": "0b2ad4550715d67012f2b79493a8721784144d9c",
+      "date": "2024-03-19T16:14:38+09:00",
+      "author": "juwoong kim",
+      "email": "wwong7247@gmail.com",
+      "message": "Update: 아좌좌 회고 내용 수정 반영\n"
+    },
+    {
+      "sha": "3d846c91e901934713aa5305081e12241f73b186",
+      "date": "2024-03-14T20:14:50+09:00",
+      "author": "Hejow",
+      "email": "gmlwh124@naver.com",
+      "message": "Chore: dockerfile typo2\n"
+    },
+    {
+      "sha": "837c897671ed63535ff9c984425e1e4adf741d50",
+      "date": "2024-03-14T19:20:01+09:00",
+      "author": "Hejow",
+      "email": "gmlwh124@naver.com",
+      "message": "Chore: dockerfile typ\n"
+    },
+    {
+      "sha": "c9aea3309f762bb2ae6ef02bfb06f18c78b04c8c",
+      "date": "2024-03-14T18:59:33+09:00",
+      "author": "He Jow Moon",
+      "email": "81742959+Hejow@users.noreply.github.com",
+      "message": "Merge: change email service to SMTP (#195)\n\n<!-- PR 내용\n어떤 작업을 했는지 작성해주세요!\nPR이 너무 크면 너무 많은 내용이 들어가겠죠? -->\n# 🔍 어떤 PR인가요?\n- SES를 사용하던 방식에서 SMTP로 수정되었습니다.\n\n<!-- 리뷰어에게\n어떤 부분을 자세하게 리뷰할지 서술해주세요. -->\n# 😋 To Reviewer\n- 현재 **Feign 무한 retry 버그**가 있습니다. 서버가 터질 위험이 존재하므로 이후 수정해보도록 하겠습니다.\n- @Async로 다른 쓰레드를 사용하는 경우 **메인 쓰레드로 예외가 전파되지 않습니다**. 이 경우 깜빡하여 별도의 예외\n핸들러를 추가했습니다.\n- 웹훅으로 경고 전송 시에 2000자가 넘어가면 정상적으로 발송되지 않아서 **메시지를 자르는 로직을 반영**하였습니다.\n- Spring Mail은 **서버가 시작할 때 바로 property를 요구하기 때문에 jasypt를 사용할 수 없습니다**.\n따라서 외부에서 주입받도록 수정했습니다."
+    },
+    {
+      "sha": "aec5d7d1605ff7c0ebf6327282512800a84612e9",
+      "date": "2024-03-14T18:26:02+09:00",
+      "author": "Hejow",
+      "email": "gmlwh124@naver.com",
+      "message": "Chore(.github): update CD flows, dockerfile\n"
+    },
+    {
+      "sha": "2a3454efec6830aadf3298dc709ece49de29f3ad",
+      "date": "2024-03-14T18:17:25+09:00",
+      "author": "Hejow",
+      "email": "gmlwh124@naver.com",
+      "message": "Add: async exception handler\n"
+    },
+    {
+      "sha": "79d57555ae09c8712284bede8e213ed35980fe99",
+      "date": "2024-03-14T18:17:20+09:00",
+      "author": "Hejow",
+      "email": "gmlwh124@naver.com",
+      "message": "Update(.exception): truncate exception trace\n"
+    },
+    {
+      "sha": "1adee4dfa935f4211c095d0eaf39ca39e18a123c",
+      "date": "2024-03-14T18:17:06+09:00",
+      "author": "Hejow",
+      "email": "gmlwh124@naver.com",
+      "message": "Add(.infra): change email send service\n"
+    },
+    {
+      "sha": "b4304236d077602df749b33eb2549d2938ae71ac",
+      "date": "2024-03-13T15:25:46+09:00",
+      "author": "juwoong kim",
+      "email": "wwong7247@gmail.com",
+      "message": "Add(.footprint) : 발자취 태그 생성 기능 추가 \n\n<!-- PR 내용\n어떤 작업을 했는지 작성해주세요!\nPR이 너무 크면 너무 많은 내용이 들어가겠죠? -->\n# 🔍 어떤 PR인가요?\n- 태그 및 중간 테이블 태그 생성 기능을 헥사고날 아키텍처에 맞게 적용했습니다.\n\n<!-- 리뷰어에게\n어떤 부분을 자세하게 리뷰할지 서술해주세요. -->\n# 😋 To Reviewer\n- 다른 도메인의 태그 도메인 사용을 헥사고날 형식에 맞게 적용해서 의존성을 한 방향으로 흐르도록 했습니다. \n\n- 자연스럽게 태그 도메인이 헥사고날 구조를 가지게 되었지만 도메인 자체는 jpa Entity로 두었습니다.\n   태그 도메인이 핵사고날 구조를 가지게 되었지만 아직 도메인과 엔티티를 분리할 필요성이 있나 싶습니다.\n   이 부분은  여러분들과 같이 논의하고 싶어서 일단 놔두었습니다. \n\n- 도메인 별 데이터 저장을 위해 레포지토리 분기처리가 필요합니다. 타입으로 두었고 타입을 UseCase에 두었습니다. 그리고\n분기로직은 port에서 합니다. 아마 킹받으실 수 있는데 의견 들어보고 개선해보죠!!!\n\n- 태그 생성 반환값을 void로 두었습니다. 기존 update와 같이 사용해서 반환값을 두었으나 분리하는게 적절하다고\n생각이듭니다.\n   이부분도 같이 논의해보시져!!\n\n- 우선 발자취 부분만 적용하고 플랜 부분은 적용하지 않았습니다. 의견을 들어보고 확정된 뒤 플랜쪽에 적용하는 것도 좋아보입니다.\n\n\n\n<!-- 테스트 \n반영한 테스트 메서드 이름과 어떤 테스트를 했는지 작성해주세요.\n(ex. save_Fail_ByDuplicateEmail) -->\n# ✅ 작성한 테스트\n테스트는 하나만 작성했습니다. \n메서드 마다 다 작성했으나 의미없는 테스트라고 판단해서 지웠습니다.\n아래 태스트와 별도로 구현한 기능 자체는 @Springboot 테스트를 해봤을 때 정상 작동합니다. \n\n- [x] createFootprintTag_Success\n\n<!-- 관련 이슈\n프론트에서 작성해준 이슈와 연관되는 PR이라면 \n주석을 풀고 작성해주세요! --> \n\n[//]: # (# 🫡 관련 Issue )"
+    },
+    {
+      "sha": "9b8f6e29c9449a2dc9d3b803b1356d64ce343e3f",
+      "date": "2024-03-13T15:20:05+09:00",
+      "author": "juwoong kim",
+      "email": "wwong7247@gmail.com",
+      "message": "Chore: 태그 레포지토리 도메인 패키지로 변경\n"
+    },
+    {
+      "sha": "047e2e74a016c94fec698a060cb7edc62d470209",
+      "date": "2024-03-08T05:14:06+09:00",
+      "author": "He Jow Moon",
+      "email": "81742959+Hejow@users.noreply.github.com",
+      "message": "Merge branch 'prod' into dev"
+    },
+    {
+      "sha": "bad1ed898e252fe34eb8cfe9715520820570308e",
+      "date": "2024-03-08T05:09:52+09:00",
+      "author": "Hejow",
+      "email": "gmlwh124@naver.com",
+      "message": "Fix: invalid db source\n"
+    },
+    {
+      "sha": "d370aa4f0406141ac1c51f7724f1186368741556",
+      "date": "2024-03-08T04:39:12+09:00",
+      "author": "He Jow Moon",
+      "email": "81742959+Hejow@users.noreply.github.com",
+      "message": "Relase 1.3.2 (#193)\n\n* Add: spring actuator\n\n* Chore: change db source"
+    },
+    {
+      "sha": "6cea61639479fd33018370a894167ffb11e75c38",
+      "date": "2024-03-08T04:34:57+09:00",
+      "author": "Hejow",
+      "email": "gmlwh124@naver.com",
+      "message": "Merge: resolve conflicts dev to prod\n"
+    },
+    {
+      "sha": "73d3a46551559ecaff651d8611cc568a88206c6a",
+      "date": "2024-03-08T04:22:33+09:00",
+      "author": "Hejow",
+      "email": "gmlwh124@naver.com",
+      "message": "Chore: change db source\n"
+    }
+  ],
+  "commit_sha": "1250917ef11c61514bc8bd1ef26e71fcdc200906",
+  "extracted_at": "2026-10-05T18:37:31.904908+00:00"
+}

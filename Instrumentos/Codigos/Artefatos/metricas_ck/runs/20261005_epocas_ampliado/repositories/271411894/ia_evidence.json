@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "648b784ffdbb7f2ef8f968a23640e35eac6cac88",
+      "date": "2025-07-15T22:23:52+02:00",
+      "author": "Subhrodip Mohanta",
+      "email": "contact@subhrodip.com",
+      "message": "Remove CircleCI configuration, unused dependencies, and redundant annotations\n\n- Deleted `.circle/config.yml` to fully migrate from CircleCI.\n- Removed unused `spring-boot-starter-jdbc` dependency from `pom.xml`.\n- Eliminated redundant `@Service` annotation in `UserService` interface.\n"
+    },
+    {
+      "sha": "3f277d4a3f17b542dc803acfc965d0100bfee5b1",
+      "date": "2025-07-10T22:42:31+02:00",
+      "author": "Subhrodip Mohanta",
+      "email": "contact@subhrodip.com",
+      "message": "Update CI badge link in README for better visibility and accuracy\n"
+    },
+    {
+      "sha": "01e204bfe7b9776211c5086e58beea6b9823e10e",
+      "date": "2025-07-10T22:37:47+02:00",
+      "author": "Subhrodip Mohanta",
+      "email": "contact@subhrodip.com",
+      "message": "Upgrade MySQL Connector and Testcontainers versions in `pom.xml`\n\n- Updated `mysql-connector.version` to 9.1.0 for improved compatibility and features.\n- Updated `testcontainers.version` to 1.20.6 for latest fixes and enhancements.\n"
+    },
+    {
+      "sha": "75e5139284508ad374ddf89e0f6943484f231180",
+      "date": "2025-07-10T22:34:32+02:00",
+      "author": "Subhrodip Mohanta",
+      "email": "contact@subhrodip.com",
+      "message": "Upgrade Spring Boot version and enhance CI workflows\n\n- Updated Spring Boot version in `pom.xml` to 3.4.4 for latest features and compatibility.\n- Refactored GitHub Actions workflows:\n  - Renamed `build` job to `build-jar` and added artifact upload step.\n  - Introduced `build-and-push-images` job with dependency on `build-jar`.\n  - Improved container registry login and image deployment process for DockerHub and GitHub Container Registry.\n"
+    },
+    {
+      "sha": "7941577b0026269d5e2278820cd6753ebc0def7f",
+      "date": "2025-07-10T22:28:07+02:00",
+      "author": "Subhrodip Mohanta",
+      "email": "contact@subhrodip.com",
+      "message": "Refactor Dockerfile, workflows, and dependencies for optimization\n\n- Migrated base images in Dockerfile to Amazon Corretto for better performance and support.\n- Updated Maven build commands to skip tests during packaging for efficiency.\n- Added OCI-compliant label for repository source in Dockerfile.\n- Fixed MySQL Connector dependency group/artifact IDs in `pom.xml`.\n- Improved GitHub Actions YAML indentation and consistency.\n- Introduced SonarQube cache in GitHub workflows for better CI performance.\n"
+    },
+    {
+      "sha": "2974d503608f365e337304bce9892e0309a26083",
+      "date": "2025-07-10T19:41:05+02:00",
+      "author": "Subhrodip Mohanta",
+      "email": "contact@subhrodip.com",
+      "message": "Update README and workflows for improved setup clarity and Java 21 migration\n\n- Enhanced README with detailed installation options and updated Docker Compose instructions.\n- Replaced `docker-compose` with `docker compose` commands in README for consistency.\n- Updated GitHub Actions workflows to use Java 21 (migrated from JDK 11) with Microsoft distribution.\n- Removed redundant dependencies, database container setup, and cache configurations in workflows for streamlined CI.\n- Ensured compatibility with the latest Docker CLI and project standardizations.\n"
+    },
+    {
+      "sha": "025d0313e4a08637a4eba14c244b4b9484427e49",
+      "date": "2025-07-10T19:18:34+02:00",
+      "author": "Subhrodip Mohanta",
+      "email": "contact@subhrodip.com",
+      "message": "Upgrade dependencies and improve testing suite\n\n- Updated `pom.xml` with version properties for Spring Boot, MySQL Connector, Testcontainers, Liquibase Maven Plugin, and JaCoCo.\n- Consolidated repetitive version definitions in dependencies to use placeholders.\n- Added unit tests for `UserServiceImpl`, `TransactionServiceImpl`, `AdminServiceImpl`, and `AccountServiceImpl`.\n- Enhanced `pom.xml` configuration with JaCoCo Maven Plugin for code coverage reporting.\n"
+    },
+    {
+      "sha": "3340d3cc9c0610ddd8d48626a2074f852c4e0011",
+      "date": "2025-07-10T19:17:57+02:00",
+      "author": "Subhrodip Mohanta",
+      "email": "contact@subhrodip.com",
+      "message": "Migrate project to Java 21 and Jakarta EE\n\n- Updated to Java 21 across the project (Dockerfile, Maven workflows, and POM).\n- Replaced `javax.persistence` imports with `jakarta.persistence`.\n- Upgraded Hibernate dialect to `MySQLDialect` in `application.properties`.\n- Refactored `SecurityConfig` to remove `WebSecurityConfigurerAdapter` in favor of modern `SecurityFilterChain`.\n- Simplified `UserServiceImpl` account creation logic, removing dependencies on `AccountService`.\n- Streamlined `HomeController` by removing deprecated error handling methods.\n- Updated Testcontainers dependencies to latest versions.\n- Revised MySQL connector dependency version for improved compatibility.\n"
+    },
+    {
+      "sha": "b3ceadf4e351bb11f9ace1e0ef03e5842c96da6a",
+      "date": "2025-07-10T19:17:23+02:00",
+      "author": "Subhrodip Mohanta",
+      "email": "contact@subhrodip.com",
+      "message": "Update GitHub Actions and Workflow Configuration\n\n- Upgraded actions to the latest versions (e.g., `actions/checkout@v4`, `actions/setup-java@v4`, `actions/cache@v4`, `docker/build-push-action@v5`).\n- Introduced Docker Buildx and improved DockerHub login setup.\n- Enhanced environment configuration using GitHub secrets for database credentials.\n- Added new ENV variable `SPRING_PROFILES_ACTIVE=prod` in `Dockerfile`.\n- Commented out unused database connection properties in `application.properties`.\n"
+    },
+    {
+      "sha": "aa97805db946ab92ccdf0044ba4e1d863d34d6c5",
+      "date": "2025-07-10T19:16:13+02:00",
+      "author": "Subhrodip Mohanta",
+      "email": "contact@subhrodip.com",
+      "message": "Vibe with Gemini\nAdd Docker Compose support for development, production & testing setup\n\n- Created `docker-compose.dev.yml` and `docker-compose.prod.yml` for local and production environments.\n- Added a standard `docker-compose.yml` for general setup.\n- Updated `Dockerfile` to include multi-stage build for optimized container image.\n- Integrated Liquibase for database migrations with MySQL in both environments.\n- Enhanced testing with Testcontainers included in `ApplicationTests`.\n- Expanded README.md to provide thorough setup, usage, and contribution guidelines.\n"
+    },
+    {
+      "sha": "9917b1358840765a2537879ef6c1eb8ae3e8eb4c",
+      "date": "2021-05-14T19:09:13+05:30",
+      "author": "Subhrodip Mohanta",
+      "email": "hello@subho.xyz",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "e89117132a9313dda94dc1890ab20151d033e678",
+      "date": "2021-03-04T10:08:13+05:30",
+      "author": "Subhrodip Mohanta",
+      "email": "hello@subho.xyz",
+      "message": "Merge pull request #49 from charlesfinley/patch-1\n\nUpdate Dockerfile"
+    },
+    {
+      "sha": "addcdc5fe220cf255103fa64c726f082043daee6",
+      "date": "2021-03-03T11:48:22-05:00",
+      "author": "CF",
+      "email": "6307904+charlesfinley@users.noreply.github.com",
+      "message": "Update Dockerfile\n\nMinor typo in artifact label"
+    },
+    {
+      "sha": "dea580c38cbcdddd99669188fd4f6d60de96fb95",
+      "date": "2020-10-05T09:24:21+05:30",
+      "author": "Subhrodip Mohanta",
+      "email": "subhrodipmohanta@gmail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "4fc9317969b874c3dde90f6a755a038cfb13fae5",
+      "date": "2020-10-05T09:24:03+05:30",
+      "author": "Subhrodip Mohanta",
+      "email": "subhrodipmohanta@gmail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "66c3e233342dc931d855b8cb7cf3f3b15061ec39",
+      "date": "2020-10-05T09:14:51+05:30",
+      "author": "Subhrodip Mohanta",
+      "email": "subhrodipmohanta@gmail.com",
+      "message": "Update CONTRIBUTING.md"
+    },
+    {
+      "sha": "a666be05e2d38609691bf3bdfe6b1309169ff21d",
+      "date": "2020-10-05T09:07:46+05:30",
+      "author": "Subhrodip Mohanta",
+      "email": "subhrodipmohanta@gmail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "0c74c8ede43bcac85a806d3d295c6a2e536511be",
+      "date": "2020-10-05T08:59:18+05:30",
+      "author": "Subhrodip Mohanta",
+      "email": "subhrodipmohanta@gmail.com",
+      "message": "Update CONTRIBUTING.md"
+    },
+    {
+      "sha": "ff51f236a05dbd5e8cdfdbb406ef35550987a5e1",
+      "date": "2020-10-03T19:52:20+05:30",
+      "author": "Subhrodip Mohanta",
+      "email": "subhrodipmohanta@gmail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "7d597bf06c9fe06b77f876f5849413c49c10bb98",
+      "date": "2020-10-03T19:47:11+05:30",
+      "author": "Subhrodip Mohanta",
+      "email": "subhrodipmohanta@gmail.com",
+      "message": "Create CONTRIBUTING.md"
+    },
+    {
+      "sha": "651d3ade2926759b3c80033d7a7a7a7fc354f6cf",
+      "date": "2020-10-03T19:45:03+05:30",
+      "author": "Subhrodip Mohanta",
+      "email": "subhrodipmohanta@gmail.com",
+      "message": "Create CODE_OF_CONDUCT.md"
+    },
+    {
+      "sha": "c90b543dc7a4d411a116c51abf643778ccfb58b0",
+      "date": "2020-10-03T19:44:02+05:30",
+      "author": "Subhrodip Mohanta",
+      "email": "subhrodipmohanta@gmail.com",
+      "message": "Update issue templates"
+    },
+    {
+      "sha": "66f3e1a6d2fdb067a75836e6549a40e32977d1f2",
+      "date": "2020-09-15T23:39:05+05:30",
+      "author": "Subhrodip Mohanta",
+      "email": "subhrodip.mohanta@greenfieldsoft.com",
+      "message": "updated workflows\n\n"
+    },
+    {
+      "sha": "9e29f51f76cc87c5689e324beeb2a1f76ad07ae5",
+      "date": "2020-09-15T23:00:58+05:30",
+      "author": "Subhrodip Mohanta",
+      "email": "subhrodipmohanta@gmail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "d21a3a07a58299d02165dfd85928549210bd3112",
+      "date": "2020-09-15T22:52:16+05:30",
+      "author": "Subhrodip Mohanta",
+      "email": "subhrodip.mohanta@greenfieldsoft.com",
+      "message": "added cahce\n\n"
+    },
+    {
+      "sha": "8a1db29de408a5766217f04dad2b5a592217d428",
+      "date": "2020-09-15T22:44:47+05:30",
+      "author": "Subhrodip Mohanta",
+      "email": "subhrodip.mohanta@greenfieldsoft.com",
+      "message": "update workflows\n\n"
+    },
+    {
+      "sha": "812dc74d9ddbb269ab5829231556ce33dceb1b7c",
+      "date": "2020-09-12T10:22:46+05:30",
+      "author": "Subhrodip Mohanta",
+      "email": "subhrodipmohanta@gmail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "da88c9f240ea70f837ab07eee8e3f83443bcd51a",
+      "date": "2020-08-30T13:50:24+05:30",
+      "author": "Subhrodip Mohanta",
+      "email": "subhrodipmohanta@gmail.com",
+      "message": "Update maven-ci.yml"
+    },
+    {
+      "sha": "7d1b94f19e566537db050b204e560d76b3e7adb0",
+      "date": "2020-08-30T13:44:09+05:30",
+      "author": "Subhrodip Mohanta",
+      "email": "subhrodip.mohanta@greenfieldsoft.com",
+      "message": "add docs directory\n\n"
+    },
+    {
+      "sha": "bf42bf9ba5bce233faa71762d579f45a93654ac5",
+      "date": "2020-08-30T02:21:14+05:30",
+      "author": "Subhrodip Mohanta",
+      "email": "subhrodipmohanta@gmail.com",
+      "message": "Update maven.yml"
+    }
+  ],
+  "commit_sha": "648b784ffdbb7f2ef8f968a23640e35eac6cac88",
+  "extracted_at": "2026-10-05T18:26:33.637596+00:00"
+}

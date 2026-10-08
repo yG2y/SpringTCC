@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "5e471acb7df73a9c1aabf586d9d9a9a66ebfad5e",
+      "date": "2026-09-23T15:56:26+08:00",
+      "author": "Zhang Ji",
+      "email": "125540670@qq.com",
+      "message": "fix(proxy): 避免动态代理生成争用全局类池 (#368)"
+    },
+    {
+      "sha": "b2cfc85a57c70bf5b5cf6e7edae2d37102652ec8",
+      "date": "2026-09-04T18:19:52+08:00",
+      "author": "老周",
+      "email": "zh.sqy@qq.com",
+      "message": "feat(authorization): 扩展 OAuth2 客户端与响应式令牌认证 (#367)\n\n* feat(oauth2)!: 扩展客户端认证与凭证授权\n\n增加响应式客户端认证 SPI，并按已认证客户端类型路由 client_credentials 授权处理器。\n\n保留历史构造器和自定义 granter 覆盖行为，补充真实 WebFlux HTTP 集成测试。\n\nBREAKING CHANGE: /oauth2/token 不再向 granter 或 handler 传递 client_secret，旧扩展需迁移到客户端认证器。\n\n* docs(oauth2): 回填客户端认证交付信息\n\n* feat(authorization): 扩展响应式令牌认证\n\n增加按令牌类型唯一调度的响应式认证 Provider，并保留既有有状态用户令牌与第三方权限加载链路。\n\n固定响应式 Token Parser 的执行顺序，补充无回退、重复类型及旧链兼容测试。\n\n* fix(authorization): 补齐 EasyORM 测试依赖\n\n为 authorization-basic 的 EasyORM 测试装配增加 PostgreSQL R2DBC 测试依赖，避免方言初始化时缺少 PostgresqlObjectId。\n\n保持依赖仅作用于测试 classpath，并回填 CI 同范围验证结果。\n\n* feat(oauth2): 支持可信客户端类型配置\n\n将服务端配置的 clientType 传播到认证上下文和授权处理器，并保持脱敏客户端视图一致。\n\n为 OAuth2 客户端实体增加兼容旧表和旧更新请求的可空持久化字段，补充 HTTP 与实体契约测试。\n\n* fix(crud): 修正 EasyORM 驱动依赖边界\n\n* fix(oauth2): 兼容组件扫描下的客户端认证\n\n* feat(oauth2): 扩展客户端认证编排\n\n* feat(oauth2): 标准化令牌响应与客户端认证结果\n\n补齐标准 token_type 和可选 scope 响应，并在客户端认证结果中传播已验证的认证方法。\n\n保留既有构造器和授权流程兼容性，补充 DTO、认证 Provider 与真实 WebFlux 端点测试。"
+    },
+    {
+      "sha": "2d925fa2d79d1f05075b71e12d0e9ee553a653bf",
+      "date": "2026-08-12T19:16:20+08:00",
+      "author": "Zhang Ji",
+      "email": "125540670@qq.com",
+      "message": "fix(认证): 优先使用响应式上下文认证 (#365)\n\n* fix(认证): 优先使用响应式上下文认证\n\n* refactor(认证): 简化上下文认证读取"
+    },
+    {
+      "sha": "3946e3d290489e105b6fd045b85635b49e823d1c",
+      "date": "2026-08-12T14:20:09+08:00",
+      "author": "老周",
+      "email": "zh.sqy@qq.com",
+      "message": "fix(file): 修复文件上传扩展名校验绕过 (#364)\n\nRefs: #362"
+    },
+    {
+      "sha": "5c821006718ee7c7e12449038899a9945e2ae4bc",
+      "date": "2026-08-07T14:18:45+08:00",
+      "author": "老周",
+      "email": "zh.sqy@qq.com",
+      "message": "feat(webflux): 支持ResponseMessage流式响应 (#361)\n\n* feat(webflux)!: 支持ResponseMessage流式响应\n\n移除普通 JSON Flux 的无界收集，委托 Spring Jackson 编码器增量输出。\n\n通过 Micrometer ContextSnapshot 恢复所有已注册的响应式上下文。\n\nBREAKING CHANGE: 普通 JSON Flux 改为增量传输，不再保证 Content-Length；首元素写出后的异常将终止响应，无法改写为完整错误 ResponseMessage。\n\n* feat(crud): 增加分页查询聚合保护策略\n\n* build(starter): 补齐EasyORM测试驱动依赖"
+    },
+    {
+      "sha": "c87b0a6f3928d707f219b886fcc9fe2e881167d4",
+      "date": "2026-07-22T15:50:05+08:00",
+      "author": "zhou-hao",
+      "email": "zh.sqy@qq.com",
+      "message": "build(maven): 升级fastjson版本\n"
+    },
+    {
+      "sha": "d927ec6452d5521628547750c277262ab7c27f9a",
+      "date": "2026-07-16T14:28:29+08:00",
+      "author": "老周(AI)",
+      "email": "zhouhao@jetlinks.cn",
+      "message": "fix(crud): 统一查询分析器列名解析 (#359)\n\n* fix(crud): 统一查询分析器列名解析\n\n* test(crud): 补齐查询测试运行依赖\n\n* fix(crud): 修复 CTE 条件列别名解析\n\n---------\n\nCo-authored-by: zhou-hao <zh.sqy@qq.com>"
+    },
+    {
+      "sha": "c33f18d6144dd420ba4d6a636224d337c549e45c",
+      "date": "2026-07-14T18:51:01+08:00",
+      "author": "老周",
+      "email": "zh.sqy@qq.com",
+      "message": "feat(bean): 支持FastBeanCopier复制record (#358)\n\n* feat(bean): 支持FastBeanCopier复制record\n\n* ci: 仅测试PR变更模块"
+    },
+    {
+      "sha": "578a071336a076d5f41da4148079fdc02d83b34f",
+      "date": "2026-07-10T18:22:07+08:00",
+      "author": "zhou-hao",
+      "email": "zh.sqy@qq.com",
+      "message": "refactor: 移除事务readonly配置\n"
+    },
+    {
+      "sha": "5e9e4a2c711b49850f66de0b58e78cabe04c6f49",
+      "date": "2026-07-07T18:50:28+08:00",
+      "author": "gyl",
+      "email": "80454341+goten7@users.noreply.github.com",
+      "message": "fix: 修复FastBeanCopier父类泛型字段复制 (#356)"
+    },
+    {
+      "sha": "418c1a94b2d9083076d59bc5b3ef658938c4c28c",
+      "date": "2026-06-25T19:12:45+08:00",
+      "author": "zhou-hao",
+      "email": "zh.sqy@qq.com",
+      "message": "refactor: 优化权限逻辑\n"
+    },
+    {
+      "sha": "d0a2822316ad53bfa4c4d559110c37a5dff434df",
+      "date": "2026-06-23T19:08:12+08:00",
+      "author": "zhou-hao",
+      "email": "zh.sqy@qq.com",
+      "message": "refactor: 优化close\n"
+    },
+    {
+      "sha": "33891b409b88c8fd0c897721abf456b730ee3290",
+      "date": "2026-06-18T16:57:12+08:00",
+      "author": "zhou-hao",
+      "email": "zh.sqy@qq.com",
+      "message": "feat: 增加释放逻辑\n"
+    },
+    {
+      "sha": "6594066aeffe3e4c9efd820c4543bed313993e29",
+      "date": "2026-06-12T13:44:13+08:00",
+      "author": "zhou-hao",
+      "email": "zh.sqy@qq.com",
+      "message": "fix(指令模块): 修复RPC指令参数序列化潜在阻塞问题\n"
+    },
+    {
+      "sha": "c2882679a9125cea52678151af5ae213cbd52579",
+      "date": "2026-05-19T14:42:19+08:00",
+      "author": "老周(AI)",
+      "email": "zhouhao@jetlinks.cn",
+      "message": "fix(oauth2): 修复 redirect_uri 校验绕过 (#355)\n\n* fix(oauth2): 修复 redirect_uri 校验绕过\n\n* fix(oauth2): 配置化 redirect_uri 严格校验\n\n---------\n\nCo-authored-by: zhou-hao <zh.sqy@qq.com>"
+    },
+    {
+      "sha": "3843e1bbb4799f34c372e07fc35117199f6c6376",
+      "date": "2026-05-14T14:06:10+08:00",
+      "author": "老周",
+      "email": "zh.sqy@qq.com",
+      "message": "fix(bean): 修复FastBeanCopier对CharSequence属性的复制支持 (#353)\n\n* fix(bean): 修复FastBeanCopier对CharSequence属性的复制支持\n\n* test(bean): 补充CharSequence复制回归测试"
+    },
+    {
+      "sha": "5e8f7358954d5d9606e553c0ccc194532fa4cc1c",
+      "date": "2026-04-25T19:20:38+08:00",
+      "author": "PengyuDeng",
+      "email": "89559616+PengyuDeng@users.noreply.github.com",
+      "message": "fix(crud): 修复多 CTE 查询重写缺少逗号 (#349)"
+    },
+    {
+      "sha": "4f9129cd8cfddc646da2af63203c36a04f90158e",
+      "date": "2026-04-03T15:41:54+08:00",
+      "author": "gyl",
+      "email": "80454341+goten7@users.noreply.github.com",
+      "message": "feat: 排序解析支持FunctionFragmentBuilder (#348)"
+    },
+    {
+      "sha": "5460f8b4d27dcd4ff1c33f2074dfa1c641056408",
+      "date": "2026-03-26T16:24:15+08:00",
+      "author": "gyl",
+      "email": "80454341+goten7@users.noreply.github.com",
+      "message": "refactor: 优化接口权限 (#347)\n\n* refactor: 优化接口权限\n\n* refactor: 优化"
+    },
+    {
+      "sha": "47573d460bdf6ceda9fd4f122831a2f8d126aff7",
+      "date": "2026-03-10T18:54:30+08:00",
+      "author": "zhouhao",
+      "email": "zh.sqy@qq.com",
+      "message": "fix(dict): 修复枚举遍历时空指针异常问题，添加空值校验\n"
+    },
+    {
+      "sha": "5fbd79782a9bdae614e8507be53544d89193436f",
+      "date": "2026-03-05T12:10:04+08:00",
+      "author": "zhouhao",
+      "email": "zh.sqy@qq.com",
+      "message": "Merge branch '5.0.x' of github.com:/hs-web/hsweb-framework into 5.0.x\n"
+    },
+    {
+      "sha": "a8e159a31af561d22c63d2b153da9c72c926a785",
+      "date": "2026-03-05T12:08:36+08:00",
+      "author": "zhouhao",
+      "email": "zh.sqy@qq.com",
+      "message": "fix(crud): 增加setExtensions方法，修复extensions为空时的赋值逻辑\n"
+    },
+    {
+      "sha": "fab04072dd244866bf0546e0dad5e3e2cf4dc9f0",
+      "date": "2026-02-15T10:15:06+08:00",
+      "author": "Sosoorin",
+      "email": "100989320+sosoorin@users.noreply.github.com",
+      "message": "fix(auth): 修复RedisTokenAuthenticationManager中的令牌删除问题 (#346)\n\n- 修改令牌删除逻辑，添加了\"token-auth:\"前缀以匹配正确的Redis键格式"
+    },
+    {
+      "sha": "ac06290568bcd1a8e1282721b2f654dff211c9f4",
+      "date": "2026-02-12T18:32:11+08:00",
+      "author": "zz23333",
+      "email": "35102155+zz23333@users.noreply.github.com",
+      "message": "feat(crud): 使用KingbaseMysql专用方言和SchemaMetadata (#345)\n\nCo-authored-by: zhaotao5 <zhaotao5@hisense.com>"
+    },
+    {
+      "sha": "8e679a5395a6174b85e786e0f71e1b524e0992ee",
+      "date": "2026-02-12T15:12:25+08:00",
+      "author": "zhouhao",
+      "email": "zh.sqy@qq.com",
+      "message": "Merge branch '5.0.x' of github.com:/hs-web/hsweb-framework into 5.0.x\n"
+    },
+    {
+      "sha": "4e68a76e8ccb29a03c96dd9cc5e9b19faeb2d332",
+      "date": "2026-02-12T15:11:28+08:00",
+      "author": "zhouhao",
+      "email": "zh.sqy@qq.com",
+      "message": "fix(auth): 修复用户创建和更新逻辑，增加事件发布支持\n"
+    },
+    {
+      "sha": "d6e093ebba01ecfe6f881547aa0aa067fb89b190",
+      "date": "2026-02-07T13:10:34+08:00",
+      "author": "zhouhao",
+      "email": "zh.sqy@qq.com",
+      "message": "fix(crud): 完善QueryAnalyzerImplTest单元测试，优化断言逻辑并添加更多SQL场景覆盖\n"
+    },
+    {
+      "sha": "3bc4201877c51899441d901b76a80904c64bc5d2",
+      "date": "2026-02-06T13:09:49+08:00",
+      "author": "zhouhao",
+      "email": "zh.sqy@qq.com",
+      "message": "fix: 修复union 指定别名错误问题\n"
+    },
+    {
+      "sha": "18dd4c655a6b73596a421c7d6239b26e5a60e09c",
+      "date": "2026-02-06T11:52:04+08:00",
+      "author": "zhouhao",
+      "email": "zh.sqy@qq.com",
+      "message": "fix: 修复union 指定别名错误问题\n"
+    },
+    {
+      "sha": "f38e88d99d0a72b967cee1214a08aa2fa8a4053f",
+      "date": "2026-01-27T15:51:29+08:00",
+      "author": "zhouhao",
+      "email": "zh.sqy@qq.com",
+      "message": "fix(auth): 修复权限维度合并逻辑，避免键冲突异常\n"
+    }
+  ],
+  "commit_sha": "5e471acb7df73a9c1aabf586d9d9a9a66ebfad5e",
+  "extracted_at": "2026-10-05T17:53:15.013250+00:00"
+}

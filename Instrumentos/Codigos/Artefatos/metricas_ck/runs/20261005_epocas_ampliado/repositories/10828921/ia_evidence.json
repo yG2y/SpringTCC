@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "a7125b178dbb70020b6e3495961a18e55ffd11d5",
+      "date": "2026-09-30T13:31:09-07:00",
+      "author": "zdong2",
+      "email": "163212576+zdong2@users.noreply.github.com",
+      "message": "Fix agent file stream permit leak (#1263)"
+    },
+    {
+      "sha": "923ea15f963849b3594e1403c4a47ea8c80ac151",
+      "date": "2026-07-13T16:02:52-07:00",
+      "author": "Binbing Hou",
+      "email": "houbinbing.cs.hust@gmail.com",
+      "message": "Enable concurrent genie push and genie snapshot workflows (#1261)\n\nCo-authored-by: Binbing Hou <bhou@netflix.com>"
+    },
+    {
+      "sha": "17fbef492f17cddd766b2225f6c491dd8fc34606",
+      "date": "2026-07-13T14:47:10-07:00",
+      "author": "Binbing Hou",
+      "email": "houbinbing.cs.hust@gmail.com",
+      "message": "Add opt-in per-submission-mode breakdown for user metrics (#1259)\n\nCo-authored-by: Binbing Hou <bhou@netflix.com>"
+    },
+    {
+      "sha": "06f5733f3c6894ea6e62718c03ab1860cd6219fb",
+      "date": "2026-07-08T14:00:53-07:00",
+      "author": "zdong2",
+      "email": "163212576+zdong2@users.noreply.github.com",
+      "message": "Upgrade tika-core to address CVE-2025-66516 (#1258)"
+    },
+    {
+      "sha": "13995836cd472dc599e1516593aaa85cf7729563",
+      "date": "2026-06-10T15:31:59-07:00",
+      "author": "zdong2",
+      "email": "163212576+zdong2@users.noreply.github.com",
+      "message": "Surface error msg when failing to launch titus agent (#1256)"
+    },
+    {
+      "sha": "9756f15d62fe64843388613c694d739f9839f033",
+      "date": "2026-06-09T11:32:54-07:00",
+      "author": "Roberto Perez Alcolea",
+      "email": "rperezalcolea@netflix.com",
+      "message": "Update Github Actions to use latest NetflixOSS recommendations (#1252)"
+    },
+    {
+      "sha": "81f36f93b02fe47ee78493039fc1a8dd8c3154eb",
+      "date": "2025-08-05T16:46:31-07:00",
+      "author": "zdong2",
+      "email": "163212576+zdong2@users.noreply.github.com",
+      "message": "Make Genie agent container's entry point and command dynamic (#1251)\n\n* Make Genie agent container's entry point and command dynamic\n\n* Update doc"
+    },
+    {
+      "sha": "1566e8fa5565b4a4567bd91578f2d03cded6c7b8",
+      "date": "2025-07-21T20:26:48-07:00",
+      "author": "Binbing Hou",
+      "email": "houbinbing.cs.hust@gmail.com",
+      "message": "Improve S3AsyncClient multipart upload for large files (#1250)\n\n* set S3AsyncClient with multipartEnabled=true\n\n* update the python image of genie demo to 3.10-slim\n\n* set chunk size to 256 MB for large files\n\n* set chunk size to 256 MB for large files\n\n* nit\n\n---------\n\nCo-authored-by: Binbing Hou <bhou@netflix.com>"
+    },
+    {
+      "sha": "e596781a14cacaeba79893b42e8753609cd3840b",
+      "date": "2025-07-11T10:32:10-07:00",
+      "author": "Martin Chalupa",
+      "email": "mchalupa@netflix.com",
+      "message": "Upgrade groovy, spock and lombok for JDK 21 compatibility (#1249)\n\n"
+    },
+    {
+      "sha": "9125088c397b4d8a8c70bfca1ec7f2b7bc0e0075",
+      "date": "2025-07-09T15:11:35-07:00",
+      "author": "Binbing Hou",
+      "email": "houbinbing.cs.hust@gmail.com",
+      "message": "Address IllegalStateException for uploading attachments (#1248)\n\n* Address IllegalStateException for uploading attachments\n\n* Revert \"Fix the issue of concurrent pushes to the gh-pages branch (#1246)\"\n\nThis reverts commit 09ccec54c0e630c6b445ea40f998bb0866165ba9.\n\n* Minor refactor\n\n---------\n\nCo-authored-by: Binbing Hou <bhou@netflix.com>"
+    },
+    {
+      "sha": "75ba4f0b12ee309aa3fd76fa9e9b3393d2406ffc",
+      "date": "2025-07-08T19:18:58-07:00",
+      "author": "Binbing Hou",
+      "email": "houbinbing.cs.hust@gmail.com",
+      "message": "downgrade awssdk from 2.30.17 to 2.30.16 (#1247)\n\n* Fix the issue of concurrent pushes to the gh-pages branch\n\n* downgrade awssdk from 2.30.17 to 2.30.16\n\n---------\n\nCo-authored-by: Binbing Hou <bhou@netflix.com>"
+    },
+    {
+      "sha": "09ccec54c0e630c6b445ea40f998bb0866165ba9",
+      "date": "2025-07-07T20:44:03-07:00",
+      "author": "Binbing Hou",
+      "email": "houbinbing.cs.hust@gmail.com",
+      "message": "Fix the issue of concurrent pushes to the gh-pages branch (#1246)\n\nCo-authored-by: Binbing Hou <bhou@netflix.com>"
+    },
+    {
+      "sha": "41a43768882be59d72275b248a37961398d41930",
+      "date": "2025-07-07T12:01:23-07:00",
+      "author": "Binbing Hou",
+      "email": "houbinbing.cs.hust@gmail.com",
+      "message": "Genie Web SBN3 Minor Fixes (#1245)\n\n* improve agent push for job log manifest\n\n* improve manifest error handling\n\n* implement a custom RangeErrorController to work around the spring boot issue for handling 416 errors\n\n* Improve manifest cache management\n\n* Fix the Spring Trigger and improve agent manifest push\n\n* Handle IllegalStateException of S3AttachmentServiceImpl\n\n* bypass Spring 3 ContentCachingResponseWrapper 2GB limit\n\n---------\n\nCo-authored-by: Binbing Hou <bhou@netflix.com>"
+    },
+    {
+      "sha": "cb6dc39bfa3a01cbf036ed5268fc02b8101c503c",
+      "date": "2025-07-02T12:51:07-07:00",
+      "author": "Binbing Hou",
+      "email": "houbinbing.cs.hust@gmail.com",
+      "message": "Genie SBN3 Upgrade Improvements (#1231)\n\n* improve agent push for job log manifest\n\n* improve manifest error handling\n\n* implement a custom RangeErrorController to work around the spring boot issue for handling 416 errors\n\n* Improve manifest cache management\n\n* Fix the Spring Trigger and improve agent manifest push\n\n---------\n\nCo-authored-by: Binbing Hou <bhou@netflix.com>"
+    },
+    {
+      "sha": "0df220537d62bf48f205da158762a88065a6da6d",
+      "date": "2025-06-20T15:41:58-07:00",
+      "author": "OdysseusLives",
+      "email": "achipman@netflix.com",
+      "message": "Update nebula.netflixoss use sonatype central portal (#1241)\n\n* Use com.netflix.nebula.netflixoss 11.6.0 to move publishing to Sonatype Central Portal from Sonatype Legacy OSSRH\n\n* Github action: checkout v4"
+    },
+    {
+      "sha": "4329b76fe3220d3f90a125f62a1ac6ae97961fe0",
+      "date": "2025-06-20T13:12:50-07:00",
+      "author": "Binbing Hou",
+      "email": "houbinbing.cs.hust@gmail.com",
+      "message": "Add NPE check before cancelling agent scheduled task (#1242)\n\nCo-authored-by: Binbing Hou <bhou@netflix.com>"
+    },
+    {
+      "sha": "4b645e531e6bad82dd64748bb1e2c065f310a521",
+      "date": "2025-06-12T10:36:38-07:00",
+      "author": "Binbing Hou",
+      "email": "houbinbing.cs.hust@gmail.com",
+      "message": "reduce the frequency of build codeCoverageReport (#1240)\n\nCo-authored-by: Binbing Hou <bhou@netflix.com>"
+    },
+    {
+      "sha": "ed578d8e85af182bcebbc219750e5ebacbcbb690",
+      "date": "2025-06-11T15:38:23-07:00",
+      "author": "Binbing Hou",
+      "email": "houbinbing.cs.hust@gmail.com",
+      "message": "Update codeCoverageReport dependsOn and Fix gitPublishPush (#1239)\n\n* Genie OSS Spring Boot 3 Upgrade Minor Fix: Update codeCoverageReport dependsOn\n\n* Genie OSS SBN 3 Upgrade Minor Fix: Update codeCoverageReport dependsOn\n\n* Minor Fix for Genie OSS SBN 3 Upgrade: Update codeCoverageReport dependsOn\n\n* Genie OSS SBN 3 Upgrade Minor Fix: Update codeCoverageReport dependsOn\n\n* Fix gitPublishPush\n\n* Update codeCoverageReport dependsOn\n\n* Update codeCoverageReport dependsOn\n\n* Fix gitPublishPush\n\n* cleanup\n\n---------\n\nCo-authored-by: Binbing Hou <bhou@netflix.com>"
+    },
+    {
+      "sha": "491fd381bf6ca2007e6760488ec897df15b051a5",
+      "date": "2025-06-11T14:14:29-07:00",
+      "author": "Binbing Hou",
+      "email": "houbinbing.cs.hust@gmail.com",
+      "message": "Genie OSS SBN 3 Upgrade Minor Fix: Update codeCoverageReport dependsOn (#1238)\n\n* Genie OSS Spring Boot 3 Upgrade Minor Fix: Update codeCoverageReport dependsOn\n\n* Genie OSS SBN 3 Upgrade Minor Fix: Update codeCoverageReport dependsOn\n\n* Minor Fix for Genie OSS SBN 3 Upgrade: Update codeCoverageReport dependsOn\n\n* Genie OSS SBN 3 Upgrade Minor Fix: Update codeCoverageReport dependsOn\n\n* Fix gitPublishPush\n\n* Update codeCoverageReport dependsOn\n\n---------\n\nCo-authored-by: Binbing Hou <bhou@netflix.com>"
+    },
+    {
+      "sha": "22b3a0832daf2ec195f403f793ce86cda6869c74",
+      "date": "2025-06-10T19:44:56-07:00",
+      "author": "Binbing Hou",
+      "email": "houbinbing.cs.hust@gmail.com",
+      "message": "Genie OSS SBN 3 Upgrade Minor Fix: Update codeCoverageReport dependsOn (#1237)\n\n* Genie OSS Spring Boot 3 Upgrade Minor Fix: Update codeCoverageReport dependsOn\n\n* Genie OSS SBN 3 Upgrade Minor Fix: Update codeCoverageReport dependsOn\n\n* Minor Fix for Genie OSS SBN 3 Upgrade: Update codeCoverageReport dependsOn\n\n---------\n\nCo-authored-by: Binbing Hou <bhou@netflix.com>"
+    },
+    {
+      "sha": "543b23eaf7c8272545362c9f5448de76dfb272cb",
+      "date": "2025-06-10T18:39:59-07:00",
+      "author": "Binbing Hou",
+      "email": "houbinbing.cs.hust@gmail.com",
+      "message": "Genie OSS SBN 3 Upgrade Minor Fix: Update codeCoverageReport dependsOn (#1236)\n\n* Genie OSS Spring Boot 3 Upgrade Minor Fix: Update codeCoverageReport dependsOn\n\n* Genie OSS SBN 3 Upgrade Minor Fix: Update codeCoverageReport dependsOn\n\n---------\n\nCo-authored-by: Binbing Hou <bhou@netflix.com>"
+    },
+    {
+      "sha": "54d4f2ef2a2203720ea847df0b8d598a6db60b29",
+      "date": "2025-06-10T17:49:00-07:00",
+      "author": "Binbing Hou",
+      "email": "houbinbing.cs.hust@gmail.com",
+      "message": "Genie OSS Spring Boot 3 Upgrade Minor Fix: Update codeCoverageReport dependsOn (#1235)\n\nCo-authored-by: Binbing Hou <bhou@netflix.com>"
+    },
+    {
+      "sha": "b5e39ad0b6cb7580eb4776f9379c43533c27aa97",
+      "date": "2025-06-10T15:05:42-07:00",
+      "author": "Binbing Hou",
+      "email": "houbinbing.cs.hust@gmail.com",
+      "message": "Genie OSS Spring Boot 3 Upgrade (#1229)\n\n* Upgrade genie-common-internal to io.awspring.cloud:spring-cloud-aws-dependencies: 3.2.1\n\n* upgrade genie-agent and genie-web to spring boot 3\n\n* change the org.springframework.boot to 3.4.2\n\n* move the subprojects block to the configure block\n\n* upgrade genie-common-internal to JDK 17\n\n* Revert \"upgrade genie-common-internal to JDK 17\"\n\nThis reverts commit 32270579c04a8baefed91f59a0ef6f05620f073d.\n\n* replace javax with jakarta\n\n* replace jakarta with javax\n\n* Fix status code in TitusAgentLauncherImpl\n\n* javadoc and other minor fixes\n\n* Remove TaskExecutorCustomizer&TaskSchedulerCustomizer in favor of ThreadLocalTaskExecutorCustomizer&ThreadLocalTaskSchedulerCustomizer\n\n* move to new autoconfiguration registration\n\n* enable debug mode to see autoconfiguration conditions report\n\n* Fix genie-agent-app smoke tests\n\n* Fix genie-app smoke test unsupported classes and methods\n\nFix genie-agent smoke test unsupported classes and methods\n\n* Fix hibernate issues\n\n* Move to new autoconfiguration registration for genie-app smoke test\n\n* Upgrade to AWS SDK v2\n\n* Fix threadSafe dependency\n\n* Fix DigestUtils dependency\n\n* Fix EC2MetadataUtils dependency\n\n* getHostname by checking AWS environment\n\n* Upgrade AwsAutoConfiguration\n\n* Upgrade S3ProtocolResolverRegistrar\n\n* Upgrade S3JobArchiverImpl\n\n* S3TransferManagerFactory for creating and managing S3TransferManager instances with S3AsyncClient\n\n* use S3TransferManagerFactory in S3JobArchiverImpl for sync uploading\n\n* Fix ArgumentValidators\n\n* Upgrade httpclient and commons-codec\n\n* Upgrade AWSAutoConfiguration and RetryProperties for AWS SNS\n\n* Amend ArgumentValidators\n\n* remove unused imports\n\n* Amend AwsAutoConfiguration\n\n* Remove used imports\n\n* Amend AwsAutoConfiguration\n\n* Fix region not found error for GenieAgentApplicationSmokeTest\n\n* dependecy updates with spring-boot-starter-web\n\n* fix region not found error in GenieAgentApplicationSmokeTest\n\n* fix sharedAgentTaskExecutor in AgentAutoConfiguration\n\n* fix failures in GenieAppSmokeTest\n\n* cleanup / refactor unused code\n\n* fix setRegion in BucketProperties\n\n* update BucketPropertiesSpec\n\n* update S3ProtocolResolverSpec\n\n* create S3TransferManagerFactorySpec\n\n* update S3ClientFactory and S3ClientFactorySpec\n\n* update SimpleStorageRangeResourceSpec\n\n* remove S3ResourceLoaderProperties as it is not needed\n\n* use different Spock BOM version for Spring Boot 2 and 3 modules to avoid compatibility issues with JUnit4\n\n* Fix S3ProtocolResolverRegistrar and S3ProtocolResolverRegistrarSpec.groovy\n\n* Fix S3JobArchiverImplSpec.groovy\n\n* Fix AwsAutoConfigurationSpec.groovy\n\n* Fix AwsAutoConfigurationTest\n\n* Fix CommonServicesAutoConfigurationTest\n\n* Fix AwsAutoConfigurationTest\n\n* Fix :genie-common-internal:checkstyleMain\n\n* Fix UserRestControllerSpec.groovy\n\n* Fix AWSAutoConfigurationTest\n\n* Fix GenieExceptionMapperTest\n\n* Fix genie-web groovy test\n\n* Fix Snippets\n\n* Fix JobStateChangeSNSPublisherSpec.groovy\n\n* Fix GenieCpuHealthIndicatorSpec.groovy\n\n* Fix S3AttachmentServiceImplSpec.groovy\n\n* Fix ClusterLeaderServiceCuratorImplSpec\n\n* Fix ZookeeperAutoConfiguration\n\n* Fix genie-web tests\n\n* Fix JpaPersistenceServiceIntegrationTestBase\n\n* Update rest-assured dependencies\n\n* Fix application, cluster, command, job, criterion entities\n\n* Fix jpa job repository\n\n* Fix JpaPersistenceServiceImpl\n\n* Fix JpaPersistenceServiceIntegrationTestBase\n\n* Fix RestControllerIntegrationTestBase\n\n* migrate off deprecated @MockBean annotation\n\n* remove explicit aws.region property\n\n* exclude S3TransferManagerAutoConfiguration from integration tests\n\n* exclude S3TransferManagerAutoConfiguration from the genie-agent app\n\n* exclude S3TransferManagerAutoConfiguration from the genie app\n\n* checkstyle\n\n* update io.zipkin.brave:brave to v6 that's aligned with Spring Boot 3\n\n* update to latest Spring Boot 3\n\n* Add threshold to avoid infinite loop waiting for job running and job done\n\n* use deep stubs for mocks and disable bean overriding\n\n* remove AutoConfiguration.imports from licencing\n\n* use MySQLDialect for hibernate as MySQL8Dialect is deprecated\n\n* Fix testForTooManyCommandArgs\n\n* Fix canHandleBadInputToCreateCommand\n\n* update grpc proto and other oss dependency versions\n\n* add sleep to validate an assumption that requests are made too early\n\n* exclude jetty from genie-web integration test\n\n* reduce the max iterations from 100 to 60\n\n* exclude CommonTracingAutoConfiguration.class from import to avoid bean conflicts with the custom mock\n\n* use Spring Boot BOM recommendation and update relocated libraries\n\n* remove redundant exclude\n\n* Fix canCreateClusterWithoutId in ClusterRestControllerIntegrationTest\n\n* Amend JobRestControllerIntegrationTest\n\n* Amend ClusterRestControllerIntegrationTest\n\n* Revert \"add sleep to validate an assumption that requests are made too early\"\n\nThis reverts commit 04349353a0f8f0ec1c0c712f3196a6f4da7f130e.\n\n* Amend ClusterRestControllerIntegrationTest\n\n* upgrade grpc_version=1.50.2 and netty_version=4.1.86.Final\n\n* cleanup\n\n* Fix GRpcAgentJobKillServiceImpl and GRpcAgentJobKillServiceImplSpec\n\n* Fix S3JobArchiverImpl and S3JobArchiverImplSpec\n\n* Fix JobRestControllerIntegrationTest\n\n* update to OSS Spring Boot 3.4.5 and align Netty version with OSS\n\n* set netty_version=4.1.100.Final\n\n* upgrade grpc_version to 1.63.1\n\n* upgrade protobuf_version to 3.25.5\n\n* patch update of protobuf plugin version\n\n* fix some deprecation warnings\n\n* migrate off deprecated Gradle Enterprise plugin\n\n* update rest assured deps\n\n* fix warn message placeholder\n\n* fix some Gradle deprecation warnings\n\n* turn off html.required for test reports\n\n* Fix testSubmitJobMethodSuccess in JobRestControllerIntegrationTest\n\n* clean up comments\n\n* Turn off spring.jpa.hibernate.ddl-auto for now\n\n* Add org.flywaydb:flyway-database-postgresql\n\n* Revert \"turn off html.required for test reports\"\n\nThis reverts commit 9343acd55d7ccc269712cf5d112c6b227fd8bdb9.\n\n* Update GRADLE_OPTS in genie-build.yml\n\n* Fix to the Snippets issue\n\n* Revert \"update rest assured deps\"\n\nThis reverts commit 02d62f3b849914eeb7388c023f96c2f80982386d.\n\n* Fix to the Snippets issue\n\n* Fix to the Snippets issue\n\n* Turn off html.enabled for test reports\n\n* update org.hibernate.validator:hibernate-validator\n\n* update rest assured deps\n\n* fix AWSCredentialsProvider bean creation\n\n* Amend LeaderElectionActuator\n\n* Fix spring actuators package-info with jakarta\n\n* Rebuild LeaderElectionActuator\n\n* Amend LeaderElectionActuator to throw exceptions\n\n* Amend GRpcAgentJobKillServiceImpl\n\n* update SpringDoc as version 1 is incompatible with Spring Boot 3 (#1232)\n\n* pick up OSS Spring Boot 3.4.6 (#1233)\n\n---------\n\nCo-authored-by: Binbing Hou <bhou@netflix.com>\nCo-authored-by: Iuliia Sobolevska <isobolevska@netflix.com>\nCo-authored-by: Zhuoran Dong <zdong@netflix.com>"
+    },
+    {
+      "sha": "b7ad90770d602d49a9f4682669e03c71733ca6cf",
+      "date": "2025-02-12T10:18:00-08:00",
+      "author": "Iuliia Sobolevska",
+      "email": "juliasobolevska@gmail.com",
+      "message": "update Gradle version and use JDK 17 to invoke Gradle commands (#1226)\n\n* update Gradle version and use JDK 17 to invoke Gradle commands\n\n* update Nebula Gradle plugins version"
+    },
+    {
+      "sha": "dc3bb6c6ae11f932d0608fdd44cdb37bd636e05b",
+      "date": "2025-01-27T12:12:45-08:00",
+      "author": "Roberto Perez Alcolea",
+      "email": "rperezalcolea@netflix.com",
+      "message": "refactor: Change GitHub Action version to address deprecation (#1221)\n\nUse this link to re-run the recipe: https://app.moderne.io/recipes/org.openrewrite.github.ChangeActionVersion?organizationId=TmV0ZmxpeA%3D%3D#defaults=W3sidmFsdWUiOiJhY3Rpb25zL2NhY2hlIiwibmFtZSI6ImFjdGlvbiJ9LHsidmFsdWUiOiJ2NCIsIm5hbWUiOiJ2ZXJzaW9uIn1d\n\nCo-authored-by: Moderne <team@moderne.io>"
+    },
+    {
+      "sha": "bc772a5204b49ca978c07cc620e2f16dce71cae7",
+      "date": "2025-01-27T12:01:12-08:00",
+      "author": "Binbing Hou",
+      "email": "houbinbing.cs.hust@gmail.com",
+      "message": "Genie agent JDK17 upgrade (#1223)\n\nCo-authored-by: Binbing Hou <bhou@netflix.com>"
+    },
+    {
+      "sha": "f113b68ef24747e8e50cfb7bcfb6666e8a701cb8",
+      "date": "2024-09-20T11:23:35-07:00",
+      "author": "zdong2",
+      "email": "163212576+zdong2@users.noreply.github.com",
+      "message": "Improve delete unused tags to be able to process in chunks (#1220)\n\n* Improve delete unused tags to be able to process in chunks"
+    },
+    {
+      "sha": "f4b464b026f3a04c5feaa7032f8e01d20ef883eb",
+      "date": "2024-06-26T17:35:37-05:00",
+      "author": "sbock-slack",
+      "email": "154373073+sbock-slack@users.noreply.github.com",
+      "message": "add prometheus metrics for Genie (#1203)\n\n"
+    },
+    {
+      "sha": "3b2df6a178698c59df8ef2ca63b42f8d9e8a81cf",
+      "date": "2024-06-05T23:12:03-07:00",
+      "author": "John Zhuge",
+      "email": "jzhuge@apache.org",
+      "message": "Set env var BD_USER\n"
+    },
+    {
+      "sha": "6bad017d8078c94e80d6c6fe8abd693910bf55cf",
+      "date": "2024-05-07T13:13:05-07:00",
+      "author": "Binbing Hou",
+      "email": "houbinbing.cs.hust@gmail.com",
+      "message": "Amend the check on IllegalAttachmentFileNameException (#1217)\n\nCo-authored-by: bhou <bhou@netflix.com>"
+    }
+  ],
+  "commit_sha": "a7125b178dbb70020b6e3495961a18e55ffd11d5",
+  "extracted_at": "2026-10-05T17:53:12.184413+00:00"
+}

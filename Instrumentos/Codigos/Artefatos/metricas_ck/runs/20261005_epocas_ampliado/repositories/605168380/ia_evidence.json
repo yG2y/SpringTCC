@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "cb6ce90d732771e9d63e0508079b5a47aa81c465",
+      "date": "2026-08-07T23:56:26+08:00",
+      "author": "svnlab",
+      "email": "xuzhaoah@163.com",
+      "message": "fix: close compensate, transfer, and lock races that drop events\n\nCorrect inverted compensate windows and include TRANSFER_SUCCESS for redrive;\nstop Kafka commit-on-failure and RabbitMQ poison requeue loops; harden local\nlocks, interceptor lists, processingFailed CAS, and compensate query bounds.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>\n"
+    },
+    {
+      "sha": "2f60433e821aca6830865635262e038ec980c0bb",
+      "date": "2026-08-07T23:36:45+08:00",
+      "author": "svnlab",
+      "email": "xuzhaoah@163.com",
+      "message": "fix: harden event lifecycle, transfer ack, and admin retry paths\n\nFix join-transaction rollback, startProcessing CAS, consumer poison-message\nhandling, and related reliability bugs, with unit tests covering the changes.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>\n"
+    },
+    {
+      "sha": "9923f7f3a11349024b0e0fdaad62f4ef55fb445a",
+      "date": "2026-08-04T21:51:50+08:00",
+      "author": "svnlab",
+      "email": "97527612+svnlab@users.noreply.github.com",
+      "message": "Merge pull request #9 from Siborne/bugfix/send-result-and-utils\n\nfix: never mark failed sends as TRANSFER_SUCCESS and misc core fixes"
+    },
+    {
+      "sha": "3c3638ce8a2bbe27a1b4051e21d40b44d4446bae",
+      "date": "2026-08-04T21:50:21+08:00",
+      "author": "svnlab",
+      "email": "97527612+svnlab@users.noreply.github.com",
+      "message": "Merge pull request #8 from Siborne/fix/admin-parent-pom-version\n\nfix: sync easyevent-admin parent version with root revision"
+    },
+    {
+      "sha": "6ec0e9566fd9d690f8b95fcf831c21bec67861c8",
+      "date": "2026-08-04T17:02:28+08:00",
+      "author": "Siborne",
+      "email": "bo7785888@gmail.com",
+      "message": "fix: correct DataUtils error codes and ThreadFactoryBuilder assertion\n\n- DataUtils.checkUpdateOne/checkDeleteOne delegated to checkInsertNums, so\n  update/delete failures were reported as \"save failed\" (INSERT_ERROR)\n  instead of UPDATE_ERROR/DELETE_ERROR.\n- ThreadFactoryBuilder.setThreadFactory asserted on the unrelated\n  uncaughtExceptionHandler field instead of its own backingThreadFactory\n  argument, rejecting valid factories and accepting null.\n\nAdd regression tests for both.\n"
+    },
+    {
+      "sha": "207885605b2ee2fcbf34637b463245b394c9cab5",
+      "date": "2026-08-04T17:02:27+08:00",
+      "author": "Siborne",
+      "email": "bo7785888@gmail.com",
+      "message": "fix: invoke publisher afterCompletion after event dispatch\n\nsyncPublish called PublisherInterceptorChain.triggerAfterCompletion before\nEventBus.post, so interceptor cleanup/teardown ran before subscribers were\ninvoked, and a post exception never reached afterCompletion. Align with\nasyncPublish: invoke afterCompletion after dispatch, passing the exception\nwhen dispatch fails.\n"
+    },
+    {
+      "sha": "9d1c5ac05e01b06aef3bb7ac60a062f31447d148",
+      "date": "2026-08-04T17:02:26+08:00",
+      "author": "Siborne",
+      "email": "bo7785888@gmail.com",
+      "message": "fix: prevent failed sends from being marked as successful\n\nTwo bugs in the send path caused events that actually failed to send to be\npersisted as TRANSFER_SUCCESS and silently lost (that state is not covered\nby the compensation scanner):\n\n1. AbstractSenderAdapter.doSyncSendMessage: the catch block recorded the\n   failure via sendFailed but lacked a return, so sendComplete ran right\n   after and overwrote TRANSFER_FAILED back to TRANSFER_SUCCESS.\n\n2. BatchSendResult.addFailedIndex: a copy-paste error appended failed\n   indexes to sendCompletedIndexList instead of sendFailedIndexList, so\n   AbstractSenderAdapter.sendList only ever saw an empty failed list and\n   marked every event as completed.\n\nAlso add the missing junit test dependency to easyevent-transfer-api and\nregression tests for BatchSendResult.\n"
+    },
+    {
+      "sha": "c9e778ea940a5dbda5d4c6b8bf363d4b77d52871",
+      "date": "2026-08-04T16:45:28+08:00",
+      "author": "Siborne",
+      "email": "bo7785888@gmail.com",
+      "message": "test: add regression test for pom parent version consistency\n\nVerifies that every pom.xml whose <parent> belongs to com.openquartz\nreferences the root ${revision} placeholder (or its concrete value), so a\nfuture version bump can never silently desync a module again.\n"
+    },
+    {
+      "sha": "17c5c6dc96d258feabe6d95d0ce70a3f4b9c5703",
+      "date": "2026-08-04T16:45:28+08:00",
+      "author": "Siborne",
+      "email": "bo7785888@gmail.com",
+      "message": "fix: sync easyevent-admin parent version with root revision\n\nThe root pom.xml uses the CI-friendly placeholder ${revision} (currently\n1.6.0-beta), but easyevent-admin and easyevent-admin-server hard-coded\n1.5.0-beta as their parent version. The mismatch made Maven fall back to\nresolving com.openquartz:easy-event:1.5.0-beta from remote repositories,\nwhich fails with a FATAL \"Non-resolvable parent POM\" error and breaks the\nwhole reactor build.\n\nAlign both poms with every other module by using ${revision}.\n"
+    },
+    {
+      "sha": "0e64cd9f7b2eaee857e887f1b6829a695e438a6c",
+      "date": "2026-04-29T23:08:43+08:00",
+      "author": "svnlab",
+      "email": "xuzhaoah@163.com",
+      "message": "fix(Admin): 统一语义\n"
+    },
+    {
+      "sha": "f806599ac0ac7b204123bf1b837d03c74d1d6725",
+      "date": "2026-04-16T23:33:16+08:00",
+      "author": "svnlab",
+      "email": "xuzhaoah@163.com",
+      "message": "fix(Admin): 升级版本\n"
+    },
+    {
+      "sha": "e118f1d853d69a6d54f5f904db738948377f4fce",
+      "date": "2026-02-23T21:18:27+08:00",
+      "author": "svnlab",
+      "email": "xuzhaoah@163.com",
+      "message": "fix(Admin): 升级版本\n"
+    },
+    {
+      "sha": "7efc9d03d79512ac17e3771b570c81945cf14111",
+      "date": "2026-02-22T22:24:01+08:00",
+      "author": "svnlab",
+      "email": "xuzhaoah@163.com",
+      "message": "chore: remove .DS_Store files and ensure they are ignored\n"
+    },
+    {
+      "sha": "6f279df568469fb4064260addd4dd72a6b46db74",
+      "date": "2026-02-22T22:19:42+08:00",
+      "author": "svnlab",
+      "email": "xuzhaoah@163.com",
+      "message": "fix(Admin): 升级版本\n"
+    },
+    {
+      "sha": "ec98087cf0881a8806780a122e767777d605cde0",
+      "date": "2026-02-22T22:16:58+08:00",
+      "author": "svnlab",
+      "email": "xuzhaoah@163.com",
+      "message": "feat: remove history feature and refine event time tracking\n\n- Database: Remove ee_bus_event_history table and related schema scripts.\n- Backend: Remove BusEventHistoryEntity and related VOs/DAOs.\n- Backend: Fix startExecutionTime and executionSuccessTime update logic in BusEventEntityMapper.\n- Frontend: Remove history list from UI and update i18n for event detail.\n- Test: Update unit tests for BusEventEntityMapper.\n"
+    },
+    {
+      "sha": "3d0c4e2d1baf26161ae3ec07d148e946cc6af811",
+      "date": "2026-02-20T16:21:25+08:00",
+      "author": "svnlab",
+      "email": "xuzhaoah@163.com",
+      "message": "fix(Admin): clean code\n"
+    },
+    {
+      "sha": "fc2e56cd0c328934df494fba548b9f8956348a91",
+      "date": "2026-02-20T15:31:42+08:00",
+      "author": "svnlab",
+      "email": "xuzhaoah@163.com",
+      "message": "feat(admin): Fix 404 error, add i18n, and improve event detail display\n\n- Fix 404 error caused by JS number precision loss by serializing IDs as strings\n- Add i18n support for event detail page (zh/en)\n- Display start/complete execution times in event detail\n- Use VO for API responses with standardized date format (yyyy-MM-dd HH:mm:ss)\n- Update frontend to use string IDs and localized status display\n"
+    },
+    {
+      "sha": "771d8899ff9b7b1604020a75341814e076c8a658",
+      "date": "2026-02-20T14:35:53+08:00",
+      "author": "svnlab",
+      "email": "xuzhaoah@163.com",
+      "message": "feat: Add execution time tracking with idempotent state transitions (v1.6.0 schema update)\n"
+    },
+    {
+      "sha": "025ecda816bf140a6bd21cb4b0254bc108fa1330",
+      "date": "2026-02-20T14:20:41+08:00",
+      "author": "svnlab",
+      "email": "xuzhaoah@163.com",
+      "message": "feat(admin): refine event detail business logic and enhance admin support\n"
+    },
+    {
+      "sha": "f1484b6deaf0b6d8aa85d05beb495daca7ce9216",
+      "date": "2026-02-19T21:14:08+08:00",
+      "author": "svnlab",
+      "email": "xuzhaoah@163.com",
+      "message": "fix(admin-ui): 修复事件状态显示为中文的问题\n\n- 在国际化文件中添加了缺失的事件状态翻译键值\n- 更新了 EventList.vue 组件的状态标签颜色映射\n- 添加了 PROCESSING, IN_PROCESSING, TRANSFER_SUCCESS, TRANSFER_FAILED 状态的中文显示\n\nCloses #事件状态显示问题\n"
+    },
+    {
+      "sha": "e295f624894254443fb7779c86090e01ad2a4a07",
+      "date": "2026-02-18T23:08:54+08:00",
+      "author": "svnlab",
+      "email": "xuzhaoah@163.com",
+      "message": "refactor: restructure easyevent-admin module\n"
+    },
+    {
+      "sha": "f7736a0cac1d8019aecfcb272ae40387928d191a",
+      "date": "2026-02-18T22:58:22+08:00",
+      "author": "svnlab",
+      "email": "xuzhaoah@163.com",
+      "message": "feat: add easyevent-admin module with vue3 ui and docker support\n"
+    },
+    {
+      "sha": "f9755fbf2117752a7989cdd30a544cbaf47d3f7c",
+      "date": "2026-01-20T23:35:38+08:00",
+      "author": "svnlab",
+      "email": "xuzhaoah@163.com",
+      "message": "fix(SoaEvent): SoaEvent Example工程\n"
+    },
+    {
+      "sha": "e2b2d12f814710adbaf5cfb0ea681066c2ff713f",
+      "date": "2026-01-19T00:06:28+08:00",
+      "author": "svnlab",
+      "email": "xuzhaoah@163.com",
+      "message": "feat(代码优化): 优化readme.md\n"
+    },
+    {
+      "sha": "d1a45d2d9367e66331e0880db876217501525e5b",
+      "date": "2026-01-18T23:56:30+08:00",
+      "author": "svnlab",
+      "email": "xuzhaoah@163.com",
+      "message": "feat(代码优化): 代码优化\n"
+    },
+    {
+      "sha": "2c11131ec69940e31907c112d75e006b89fe0e9a",
+      "date": "2025-12-14T14:01:05+08:00",
+      "author": "svnlab",
+      "email": "xuzhaoah@163.com",
+      "message": "feat(RabbitMQ): RabbitMQ 接入支持\n"
+    },
+    {
+      "sha": "948e67d906b5d22dd057330dc8a3ccefe9bfd64a",
+      "date": "2025-12-14T13:01:17+08:00",
+      "author": "svnlab",
+      "email": "xuzhaoah@163.com",
+      "message": "feat(RabbitMQ): RabbitMQ 接入支持\n"
+    },
+    {
+      "sha": "2100493d5cdc65dd839c7b117284b5c1d0b834ea",
+      "date": "2025-12-13T21:59:07+08:00",
+      "author": "svnlab",
+      "email": "xuzhaoah@163.com",
+      "message": "feat(RabbitMQ): RabbitMQ 接入支持\n"
+    },
+    {
+      "sha": "6515490cab865bfaebaa7c1ed3f963b3728eb883",
+      "date": "2025-12-13T21:36:37+08:00",
+      "author": "svnlab",
+      "email": "xuzhaoah@163.com",
+      "message": "feat(RabbitMQ): RabbitMQ 接入支持\n"
+    },
+    {
+      "sha": "d324f5af9c863267b5dcd1858300151b0bde49fd",
+      "date": "2025-12-13T21:36:28+08:00",
+      "author": "svnlab",
+      "email": "xuzhaoah@163.com",
+      "message": "feat(RabbitMQ): RabbitMQ 接入支持\n"
+    }
+  ],
+  "commit_sha": "cb6ce90d732771e9d63e0508079b5a47aa81c465",
+  "extracted_at": "2026-10-05T18:29:07.979781+00:00"
+}

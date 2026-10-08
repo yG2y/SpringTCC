@@ -1,0 +1,596 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "3.0.3;3.3.1",
+  "spring_boot_major": "3",
+  "java_versions_declared": "${java.version};17",
+  "build_evidence": [
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tomato-bom/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "tomato-book/tomato-book-redis/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "tomato-book/tomato-book-redis/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "tomato-book/tomato-book-redis/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tomato-example/bytebuddy-agent/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tomato-example/micrometer-prometheus/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tomato-example/micrometer-prometheus/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "tomato-example/mybatis-generator/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tomato-example/mybatis-generator/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tomato-example/spring-authorization-server/auth-client/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tomato-example/spring-authorization-server/auth-client/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "tomato-example/spring-authorization-server/auth-client/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "tomato-example/spring-authorization-server/auth-client/pom.xml",
+      "artifact": "spring-boot-starter-oauth2-client"
+    },
+    {
+      "file": "tomato-example/spring-authorization-server/auth-gateway/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "tomato-example/spring-authorization-server/auth-gateway/pom.xml",
+      "artifact": "spring-boot-starter-oauth2-resource-server"
+    },
+    {
+      "file": "tomato-example/spring-authorization-server/auth-gateway/pom.xml",
+      "artifact": "spring-boot-starter-data-redis-reactive"
+    },
+    {
+      "file": "tomato-example/spring-authorization-server/auth-resource/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tomato-example/spring-authorization-server/auth-resource/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "tomato-example/spring-authorization-server/auth-resource/pom.xml",
+      "artifact": "spring-boot-starter-oauth2-resource-server"
+    },
+    {
+      "file": "tomato-example/spring-authorization-server/auth-server/pom.xml",
+      "artifact": "spring-boot-starter-oauth2-authorization-server"
+    },
+    {
+      "file": "tomato-example/spring-authorization-server/auth-server/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "tomato-example/spring-authorization-server/auth-server/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tomato-example/spring-authorization-server/auth-server/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tomato-example/spring-authorization-server/auth-server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tomato-example/spring-boot-tracing/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tomato-example/spring-boot-tracing/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "tomato-example/spring-modulith/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tomato-example/spring-modulith/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "tomato-example/spring-modulith/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "tomato-example/spring-modulith/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "tomato-example/spring-modulith/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "tomato-example/spring-modulith/pom.xml",
+      "artifact": "spring-boot-starter-json"
+    },
+    {
+      "file": "tomato-example/spring-modulith/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tomato-example/spring-security-jwt/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "tomato-example/spring-security-jwt/pom.xml",
+      "artifact": "spring-boot-starter-log4j2"
+    },
+    {
+      "file": "tomato-example/spring-security-jwt/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tomato-example/spring-security-jwt/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "tomato-example/spring-security-jwt/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "tomato-example/spring-security-jwt/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tomato-example/spring-security/pom.xml",
+      "artifact": "spring-boot-starter-oauth2-resource-server"
+    },
+    {
+      "file": "tomato-example/spring-security/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tomato-example/tomato-dynamic-db-example/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tomato-example/tomato-dynamic-db-example/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "tomato-framework/tomato-banner-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "tomato-framework/tomato-cache/tomato-cache-guava-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "tomato-framework/tomato-cache/tomato-cache-guava-starter/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "tomato-framework/tomato-cache/tomato-cache-guava-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "tomato-framework/tomato-cache/tomato-cache-guava-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "tomato-framework/tomato-cache/tomato-redis-starter/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "tomato-framework/tomato-cache/tomato-redis-starter/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tomato-framework/tomato-cache/tomato-redis-starter/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "tomato-framework/tomato-captcha/tomato-captcha-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "tomato-framework/tomato-cloud/tomato-cloud-alibaba-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "tomato-framework/tomato-cloud/tomato-cloud-alibaba-starter/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "tomato-framework/tomato-cloud/tomato-cloud-alibaba-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "tomato-framework/tomato-cloud/tomato-cloud-core/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "tomato-framework/tomato-cloud/tomato-cloud-core/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "tomato-framework/tomato-cloud/tomato-cloud-core/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "tomato-framework/tomato-cloud/tomato-cloud-feign-sentinel-starter/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tomato-framework/tomato-cloud/tomato-cloud-feign-sentinel-starter/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "tomato-framework/tomato-cloud/tomato-cloud-gateway-sentinel-starter/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tomato-framework/tomato-cloud/tomato-cloud-gateway-sentinel-starter/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "tomato-framework/tomato-cloud/tomato-cloud-gateway-starter/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "tomato-framework/tomato-common-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "tomato-framework/tomato-common-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "tomato-framework/tomato-common-starter/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "tomato-framework/tomato-common-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "tomato-framework/tomato-data/tomato-jpa-starter/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "tomato-framework/tomato-dynamic-db/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "tomato-framework/tomato-dynamic-db/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "tomato-framework/tomato-dynamic-db/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "tomato-framework/tomato-dynamic-db/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tomato-framework/tomato-dynamic-thread-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "tomato-framework/tomato-dynamic-thread-starter/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "tomato-framework/tomato-id-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "tomato-framework/tomato-id-starter/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "tomato-framework/tomato-idempotent-starter/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "tomato-framework/tomato-jackson-starter/pom.xml",
+      "artifact": "spring-boot-starter-json"
+    },
+    {
+      "file": "tomato-framework/tomato-jackson-starter/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "tomato-framework/tomato-jackson-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "tomato-framework/tomato-lock/tomato-lock-core/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "tomato-framework/tomato-monitor/tomato-monitor-common/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "tomato-framework/tomato-mq/tomato-rabbitmq-starter/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "tomato-framework/tomato-oauth2/tomato-oauth2-authentication/pom.xml",
+      "artifact": "spring-boot-starter-oauth2-authorization-server"
+    },
+    {
+      "file": "tomato-framework/tomato-oauth2/tomato-oauth2-core/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tomato-framework/tomato-operator-log-starter/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "tomato-framework/tomato-pay/tomato-pay-common/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "tomato-framework/tomato-pay/tomato-pay-common/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "tomato-framework/tomato-pay/tomato-pay-common/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tomato-framework/tomato-security-starter/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "tomato-framework/tomato-security-starter/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "tomato-framework/tomato-security-starter/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tomato-framework/tomato-springdoc-starter/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "tomato-framework/tomato-tracing-starter/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "tomato-framework/tomato-utils/tomato-utils-spring/pom.xml",
+      "artifact": "spring-boot-starter-logging"
+    },
+    {
+      "file": "tomato-framework/tomato-validator-starter/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "tomato-framework/tomato-web-starter/tomato-web-core/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tomato-framework/tomato-web-starter/tomato-web-core/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "tomato-framework/tomato-web-starter/tomato-web-core/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "tomato-gateway/tomato-gateway-web/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "tomato-gateway/tomato-gateway-web/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tomato-module/tomato-module-account/tomato-module-account-start/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tomato-module/tomato-module-account/tomato-module-account-start/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tomato-module/tomato-module-auth/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tomato-module/tomato-module-auth/pom.xml",
+      "artifact": "spring-boot-starter-oauth2-authorization-server"
+    },
+    {
+      "file": "tomato-module/tomato-module-auth/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "tomato-module/tomato-module-auth/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "tomato-module/tomato-module-auth/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "tomato-module/tomato-module-auth/pom.xml",
+      "artifact": "spring-boot-starter-oauth2-client"
+    },
+    {
+      "file": "tomato-module/tomato-module-auth/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tomato-module/tomato-module-channel/tomato-module-channel-start/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tomato-module/tomato-module-channel/tomato-module-channel-start/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tomato-module/tomato-module-demo/tomato-module-demo-controller/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tomato-module/tomato-module-doc/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tomato-module/tomato-module-doc/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tomato-module/tomato-module-gen/tomato-module-gen-biz/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tomato-module/tomato-module-gen/tomato-module-gen-mp/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tomato-module/tomato-module-gen/tomato-module-gen-mp/pom.xml",
+      "artifact": "spring-boot-starter-freemarker"
+    },
+    {
+      "file": "tomato-module/tomato-module-goods/tomato-module-goods-biz/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tomato-module/tomato-module-job/tomato-module-job-quartz/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tomato-module/tomato-module-job/tomato-module-job-quartz/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "tomato-module/tomato-module-job/tomato-module-job-quartz/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "tomato-module/tomato-module-job/tomato-module-job-quartz/pom.xml",
+      "artifact": "spring-boot-starter-quartz"
+    },
+    {
+      "file": "tomato-module/tomato-module-job/tomato-module-job-quartz/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tomato-module/tomato-module-job/tomato-module-job-quartz/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tomato-module/tomato-module-merchant/tomato-module-merchant-start/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tomato-module/tomato-module-merchant/tomato-module-merchant-start/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tomato-module/tomato-module-monitor/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "tomato-module/tomato-module-monitor/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tomato-module/tomato-module-monitor/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "tomato-module/tomato-module-monitor/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tomato-module/tomato-module-notice/tomato-module-notice-merchant/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tomato-module/tomato-module-notice/tomato-module-notice-service/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "tomato-module/tomato-module-notice/tomato-module-notice-start/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tomato-module/tomato-module-notice/tomato-module-notice-start/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tomato-module/tomato-module-order/tomato-module-order-application/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tomato-module/tomato-module-order/tomato-module-order-start/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tomato-module/tomato-module-order/tomato-module-order-start/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tomato-module/tomato-module-pay/tomato-module-pay-boot/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tomato-module/tomato-module-reconciliation/tomato-module-reconciliation-boot/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tomato-module/tomato-module-seckill/tomato-module-seckill-biz/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tomato-module/tomato-module-seckill/tomato-module-seckill-goods/seckill-goods-starter/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tomato-module/tomato-module-sys/tomato-module-sys-boot/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tomato-module/tomato-module-sys/tomato-module-sys-boot/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tomato-module/tomato-module-sys/tomato-module-sys-infrastructure/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "tomato-module/tomato-module-sys/tomato-module-sys-infrastructure/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    }
+  ]
+}

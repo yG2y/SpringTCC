@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "e62cf4b56bda7736d525d8c6a36969f716c76c7e",
+      "date": "2025-10-12T09:51:21+01:00",
+      "author": "Colin But",
+      "email": "colin.but@outlook.com",
+      "message": "Merge pull request #17 from colinbut/dependabot/npm_and_yarn/sales-order-system/multi-a6db014156\n\nBump cross-spawn and react-scripts in /sales-order-system"
+    },
+    {
+      "sha": "24a550d834018a4d77404bb6ca8432ba494092b3",
+      "date": "2024-11-18T21:55:51Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump cross-spawn and react-scripts in /sales-order-system\n\nBumps [cross-spawn](https://github.com/moxystudio/node-cross-spawn) to 7.0.6 and updates ancestor dependency [react-scripts](https://github.com/facebook/create-react-app/tree/HEAD/packages/react-scripts). These dependencies need to be updated together.\n\n\nUpdates `cross-spawn` from 6.0.5 to 7.0.6\n- [Changelog](https://github.com/moxystudio/node-cross-spawn/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/moxystudio/node-cross-spawn/compare/v6.0.5...v7.0.6)\n\nUpdates `react-scripts` from 3.4.0 to 5.0.1\n- [Release notes](https://github.com/facebook/create-react-app/releases)\n- [Changelog](https://github.com/facebook/create-react-app/blob/main/CHANGELOG-3.x.md)\n- [Commits](https://github.com/facebook/create-react-app/commits/react-scripts@5.0.1/packages/react-scripts)\n\n---\nupdated-dependencies:\n- dependency-name: cross-spawn\n  dependency-type: indirect\n- dependency-name: react-scripts\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "b4ad305e8f63db0773f2d84341c025c96b8a241d",
+      "date": "2024-09-10T14:29:20+01:00",
+      "author": "Colin But",
+      "email": "colin.but@outlook.com",
+      "message": "Merge branch 'master' of https://github.com/colinbut/sales-order-system-2 into master\n"
+    },
+    {
+      "sha": "704e1a2f516196c09a67e944c0b4f276142f4c63",
+      "date": "2024-09-10T14:28:48+01:00",
+      "author": "Colin But",
+      "email": "colin.but@outlook.com",
+      "message": "build: env config for prod\n"
+    },
+    {
+      "sha": "a3134fdcf7ff6a6cbad64baaaeea12c858f3d597",
+      "date": "2024-09-10T14:28:04+01:00",
+      "author": "Colin But",
+      "email": "colin.but@outlook.com",
+      "message": "build: package.json\n"
+    },
+    {
+      "sha": "a09132b6fcda140f1f6cbc69dd359030c749cedc",
+      "date": "2023-07-05T21:29:34+01:00",
+      "author": "Colin But",
+      "email": "colin.but@outlook.com",
+      "message": "Merge pull request #3 from Riduidel/bugfixes/2_docker_compose_doesnt_build\n\nFixes #2"
+    },
+    {
+      "sha": "8bb3074efb71b2a26467182a77c1b9f71406bc52",
+      "date": "2023-06-29T16:46:44+02:00",
+      "author": "Nicolas Delsaux",
+      "email": "nicolas.delsaux@gmx.fr",
+      "message": "Fixes #2\n\nNone of the docker file contained any build instruction.\nThis PR provides multi-staged build for each microservice.\nAdditionnaly, the .dockerignore files, which prevented most of the data to be added to docker containers, were also simplified\n"
+    },
+    {
+      "sha": "33c11e7d5a779abfa3ef096cce965464709a80c2",
+      "date": "2021-09-09T23:43:33+01:00",
+      "author": "Colin But",
+      "email": "colin.but@outlook.com",
+      "message": "fixing a typo and some grammer in readme\n"
+    },
+    {
+      "sha": "7bd46c69e888a67e8b1ccaecda9aaaeca0738ae9",
+      "date": "2021-01-18T14:17:39Z",
+      "author": "Colin But",
+      "email": "colin.but@outlook.com",
+      "message": "fixed link in README"
+    },
+    {
+      "sha": "242ed3e6022b9b79f610927308afbee6ff8fcfdb",
+      "date": "2020-11-14T22:17:03Z",
+      "author": "Colin But",
+      "email": "colin.but@outlook.com",
+      "message": "add author into user-service README"
+    },
+    {
+      "sha": "34436de49659b44c9888a4c9096233c757464afb",
+      "date": "2020-05-12T10:32:57+01:00",
+      "author": "Colin But",
+      "email": "colin.but@outlook.com",
+      "message": "tidied up summary section of the README"
+    },
+    {
+      "sha": "fe239bda9831e5f78880b9d10b965111242c187b",
+      "date": "2020-05-12T10:30:15+01:00",
+      "author": "Colin But",
+      "email": "colin.but@outlook.com",
+      "message": "added screenshots for reference"
+    },
+    {
+      "sha": "2798594ef88dc8e218cbfd2aaa0d8403bd15883b",
+      "date": "2020-04-26T11:24:51+01:00",
+      "author": "Colin But",
+      "email": "colin.but@outlook.com",
+      "message": "removed extra bracket"
+    },
+    {
+      "sha": "90b90d12f029f592e457ee503c9b54895f80930e",
+      "date": "2020-04-25T20:13:25+01:00",
+      "author": "Colin But",
+      "email": "colin.but@outlook.com",
+      "message": "README update\n"
+    },
+    {
+      "sha": "6b1e17be08dff0543576d14defe7809527041d70",
+      "date": "2020-04-19T15:11:48+01:00",
+      "author": "Colin But",
+      "email": "colin.but@outlook.com",
+      "message": "change to serve app from Apache Httpd rather than Nginx\n"
+    },
+    {
+      "sha": "a131bb0c7632b6ec0c491bc33c725cba724d80d6",
+      "date": "2020-04-16T11:28:32+01:00",
+      "author": "Colin But",
+      "email": "colin.but@outlook.com",
+      "message": "added more logging into customer-service\n"
+    },
+    {
+      "sha": "8b7ad2ad201e82246c6f11148e9e9ed962afaa0a",
+      "date": "2020-04-15T18:17:04+01:00",
+      "author": "Colin But",
+      "email": "colin.but@outlook.com",
+      "message": "ProductService: added extra logging\n"
+    },
+    {
+      "sha": "0a2cbcc2ba9ae57f051c41128ef84c5dd4f89cf9",
+      "date": "2020-04-15T18:15:52+01:00",
+      "author": "Colin But",
+      "email": "colin.but@outlook.com",
+      "message": "OrderService: added profile support for staging & prod plus extra logging\n"
+    },
+    {
+      "sha": "3c703184d7ffe7c1f0ebe1ca7136407ad243f348",
+      "date": "2020-04-14T23:25:26+01:00",
+      "author": "Colin But",
+      "email": "colin.but@outlook.com",
+      "message": "Adding support for prod profile\n"
+    },
+    {
+      "sha": "484819f3cd51d6e2271cf10bb74f73b8fe137e72",
+      "date": "2020-04-08T16:42:30+01:00",
+      "author": "Colin But",
+      "email": "colin.but@outlook.com",
+      "message": "Added custom banners\n"
+    },
+    {
+      "sha": "171ac4270d14d30699108c4583349dd560947555",
+      "date": "2020-04-07T22:11:06+01:00",
+      "author": "Colin But",
+      "email": "colin.but@outlook.com",
+      "message": "Authenticating user not extracted from JwtRequestFilter\n"
+    },
+    {
+      "sha": "56cfcd46de1379d77572f4c4ed29b16bd4170a39",
+      "date": "2020-04-06T16:30:53+01:00",
+      "author": "Colin But",
+      "email": "colin.but@outlook.com",
+      "message": "Fixing order-service jenkinsfile to use gradlew commands instead of maven\n"
+    },
+    {
+      "sha": "30e366f483fb08bfc66c6ee6eb26413aab51e82e",
+      "date": "2020-04-06T16:15:55+01:00",
+      "author": "Colin But",
+      "email": "colin.but@outlook.com",
+      "message": "Jenkinsfile for frontend client\n"
+    },
+    {
+      "sha": "8744b5a7f84c505a83b3be860389bad985fded66",
+      "date": "2020-04-06T16:05:13+01:00",
+      "author": "Colin But",
+      "email": "colin.but@outlook.com",
+      "message": "Finished off Jenkinsfile so can build each backend microservice\n"
+    },
+    {
+      "sha": "fed433612fae87c8a36add0086737c2e62ad23c7",
+      "date": "2020-04-05T22:45:51+01:00",
+      "author": "Colin But",
+      "email": "colin.but@outlook.com",
+      "message": "change dir before every stage for user-service\n"
+    },
+    {
+      "sha": "0d069f835a2126d200c5924a665494582a24c068",
+      "date": "2020-04-04T21:32:21+01:00",
+      "author": "Colin But",
+      "email": "colin.but@outlook.com",
+      "message": "revert prev hack\n"
+    },
+    {
+      "sha": "e85f84c453ab120f76244056cc8541769c154a11",
+      "date": "2020-04-04T21:24:37+01:00",
+      "author": "Colin But",
+      "email": "colin.but@outlook.com",
+      "message": "hack jenkinsfile temporary\n"
+    },
+    {
+      "sha": "c3ec8fa75ec12a153a7d4301ddbc2b07a4ed7388",
+      "date": "2020-04-04T21:21:49+01:00",
+      "author": "Colin But",
+      "email": "colin.but@outlook.com",
+      "message": "Change dir user-service jenkinsfile\n"
+    },
+    {
+      "sha": "5dbcdfb91be8a38e5136969433034467aaf8afbc",
+      "date": "2020-04-04T21:17:04+01:00",
+      "author": "Colin But",
+      "email": "colin.but@outlook.com",
+      "message": "Fixing jenkinsfile syntax error for user-service\n"
+    },
+    {
+      "sha": "63506afe2deec487c7b6b0d98197d52e45b9c9cc",
+      "date": "2020-04-04T21:16:05+01:00",
+      "author": "Colin But",
+      "email": "colin.but@outlook.com",
+      "message": "Change dir user-service jenkinsfile\n"
+    }
+  ],
+  "commit_sha": "e62cf4b56bda7736d525d8c6a36969f716c76c7e",
+  "extracted_at": "2026-10-05T18:29:42.737972+00:00"
+}

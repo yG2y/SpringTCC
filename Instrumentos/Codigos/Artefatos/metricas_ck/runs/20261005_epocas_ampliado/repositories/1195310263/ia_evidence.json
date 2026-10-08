@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "416383fa28713a2d31b5a541c80dea376afac5ff",
+      "date": "2026-08-29T22:49:39+08:00",
+      "author": "however",
+      "email": "however-yir@users.noreply.github.com",
+      "message": "fix: apply final RC review findings (P0 startup, routing fail-safe, idempotency lease)\n\n- P0: AgentServiceImpl keeps a single @Autowired constructor (Spring requires one\n  required ctor); the test-compat 4-arg ctor no longer annotated\n- P1: illegal nextAgent values are rewritten to HUMAN_HANDOFF before the ROUTE event\n  with a rejection reason and a handoff ticket (regression test added)\n- P1: idempotency is owner-token based: tryAcquire returns a token, complete/release use\n  compare-and-swap (Redis Lua / in-memory token slot), and the claim lease now covers the\n  full runtime budget + margin; stale executors cannot overwrite or release others' claims\n- P2: removed dead toolBudgetExceeded() logic; RouteDatasetContractTest now drives the\n  production RouteSafetyPolicy across all 160 dataset cases (vocabulary aligned:\n  ambiguous/\"骗\" wording added); JaCoCo core gate includes com.tianji.aigc.tools.*;\n  Helm values document the Redis idempotency store switch; manifest policyVersion bumped\n- CHANGELOG: Fixed section for the final RC review\n"
+    },
+    {
+      "sha": "73376a5db83f42421ec063b725a5feb5f8f8ff19",
+      "date": "2026-08-29T18:33:23+08:00",
+      "author": "however",
+      "email": "however-yir@users.noreply.github.com",
+      "message": "fix: final release candidate audit findings\n\n- Security (P1): session read/delete now enforce ownership when an authenticated\n  user context is present (403 on cross-user access); demo modes without auth keep\n  documented behavior.\n- Reliability (P1): frontend SSE parser normalizes CRLF framing before splitting\n  frames, so proxies/encoders that emit \\r\\n can no longer drop DATA/ROUTE events;\n  adds parser fuzz tests (partial JSON split across chunks, CRLF framing, unknown\n  event types, garbage lines, late-data-after-STOP suppression).\n- Supply chain (P2): .dockerignore whitelists only src/tjxt (context no longer ships\n  .git, node_modules, target); advisory npm audit job added to CI.\n- Docs: docs/provenance.md (upstream vs original split), THIRD_PARTY_NOTICES.md,\n  docs/known-limitations.md, docs/maintenance-policy.md, evidence final invariant\n  mapping, README positioning freeze + limitation/provenance links.\n- Internal link checker (scripts/check_internal_links.py) wired as a blocking CI step.\n- Accessibility (P2): aria-labels on icon-only feedback buttons.\n"
+    },
+    {
+      "sha": "7297b600a7ac3429a2d8d66aab2d926be60e320f",
+      "date": "2026-08-29T18:13:24+08:00",
+      "author": "however",
+      "email": "however-yir@users.noreply.github.com",
+      "message": "build: retry maven fetch in image build on transient registry errors\n"
+    },
+    {
+      "sha": "15724d07bc4df83678034239771593c3b07b4e2c",
+      "date": "2026-08-29T18:10:03+08:00",
+      "author": "however",
+      "email": "however-yir@users.noreply.github.com",
+      "message": "test: budget guard harness coverage (deny, loop, isolation, policy bypass)\n"
+    },
+    {
+      "sha": "3f8cef186706094e3d4e6ccbfbf018b6007857e9",
+      "date": "2026-08-29T18:09:55+08:00",
+      "author": "however",
+      "email": "however-yir@users.noreply.github.com",
+      "message": "docs: agentops governance, upgrade policy, retention and evidence pack\n\n- docs/agentops.md: execution governance, prompt governance, model runtime, run records,\n  replay and upgrade comparison explained\n- docs/agent-upgrade-policy.md: safety-first upgrade rules (unsafe-route + golden-run\n  regressions block; accuracy tolerance; tradeoffs)\n- docs/data-retention.md + docs/testing-matrix.md + docs/observability/agentops-dashboard.md\n- ADR-001..004 (deterministic governance, no chain-of-thought, versioned prompts,\n  offline-before-live)\n- Evidence Pack III (8 AgentOps interview Q&A); README AgentOps section and CI evidence\n  rows; CHANGELOG Unreleased\n"
+    },
+    {
+      "sha": "68582d620a82a9ed1d895e66b3e4c092fc0c908a",
+      "date": "2026-08-29T18:09:48+08:00",
+      "author": "however",
+      "email": "however-yir@users.noreply.github.com",
+      "message": "feat(agentops): replay, feedback loop and release manifest gates\n\n- Golden runs: 9 fixtures under tests/golden-runs covering route/policy/budget/loop\n  contracts; replayed by scripts/replay_agent_run.py (blocking in CI) and\n  GoldenRunReplayTest (Java, policy + reason codes)\n- Feedback: POST /feedback (run existence, rating/reason validation, redacted capped\n  comments, upsert per message) + frontend thumbs-up/down on assistant messages;\n  negative feedback becomes review-pending candidate cases, never an automatic dataset\n- Agent release manifest: deterministic generator (prompt checksums, dataset hash,\n  golden-run hash, versions, metrics) + --verify gate; generated in CI as artifact\n- Upgrade comparison: baseline vs candidate script enforcing the safety-first policy\n- Developer entry points: scripts/agentops.py, Makefile, scripts/verify.sh\n"
+    },
+    {
+      "sha": "63bba4a95f15e38746d051a110d8085f285dedb2",
+      "date": "2026-08-29T18:09:38+08:00",
+      "author": "however",
+      "email": "however-yir@users.noreply.github.com",
+      "message": "feat(aigc): bounded execution, prompt governance and run evidence\n\n- ExecutionBudget: per-request caps (model/tool calls, runtime deadline, tool time),\n  duplicate + A-B-A-B loop detection enforced at runtime (BudgetState in request holder);\n  denial becomes a FAILED observation with a reason code and still terminates with STOP\n- PromptRegistry: versioned prompts under resources/prompts/*/v<n>.md with SHA-256\n  checksums; Nacos stays a controlled override (trace records overridden flag); fixed\n  safety segments (buy state machine, knowledge trust boundary) are appended outside any\n  override\n- AgentRunRecord + RunRecorder + InMemoryAgentRunRepository: prompt/model/budget/actions\n  metadata per run (no reasoning, no credentials, no chat payload); token usage captured\n  from provider metadata; cost estimated only when pricing is configured (costKnown flag)\n- ModelProfile: deterministic agent->profile mapping (router/general/knowledge) with\n  request-level override preserved\n- Memory governance: max-turns trim, configurable TTL, redaction on write, session\n  deletion (DELETE /session/{id}) clears session + memory\n- Reason codes on policy decisions (PAYMENT_NOT_ALLOWED / PRIVILEGED_ACTION /\n  UNKNOWN_ACTION / VALIDATION_FAILED / AUTH_CONTEXT_MISSING) surfacing in traces\n"
+    },
+    {
+      "sha": "1705216a6b2cb5bfbd71bf6d5ea43f1ef1da9043",
+      "date": "2026-08-29T17:22:54+08:00",
+      "author": "however",
+      "email": "however-yir@users.noreply.github.com",
+      "message": "test: mark fake credential fixtures with gitleaks:allow\n\nThe redaction test intentionally carries clearly-fake credentials; gitleaks\ncorrectly flagged them, so the line is annotated per its documented allow\nmechanism instead of weakening the assertions.\n"
+    },
+    {
+      "sha": "b66193b393a4de6ec076a0de3754f9240046bf79",
+      "date": "2026-08-29T17:19:53+08:00",
+      "author": "however",
+      "email": "however-yir@users.noreply.github.com",
+      "message": "docs: align README, changelog and evidence pack with the hardened system\n\n- README: CI evidence table (blocking vs advisory), 关键行为契约 section\n  (idempotency, handoff, fault matrix), dependency-baseline link, Helm\n  securityContext + immutable image tag notes, 关键类 table extension\n- CHANGELOG: Unreleased section for this hardening round (no fabricated versions)\n- Evidence index: interview Q&A pack (7 questions, each pointing at code/CI/docs)\n"
+    },
+    {
+      "sha": "fafff90bec8d785a09c812038b1b77e2a341e5c2",
+      "date": "2026-08-29T17:19:47+08:00",
+      "author": "however",
+      "email": "however-yir@users.noreply.github.com",
+      "message": "ci: add helm gates, supply-chain evidence and hermetic performance profile\n\n- Blocking helm-chart job (helm lint + template); helm coverage never changes\n- Container publish: explicit SBOM + provenance, immutable sha-<git-sha> tag\n  (metadata-action) and image digest written to the workflow summary\n- Dockerfile: non-root user (uid 10001) and HEALTHCHECK against /actuator/health\n- Helm: runAsNonRoot securityContext (uid 10001), revisionHistoryLimit, and the\n  production recommendation to pin immutable image tags\n- performance/sse_load_test.py: hermetic concurrency profile (smoke/10/50/100)\n  against a dev-demo service; measures P50/P95/P99, SSE completion and\n  missing-STOP rate; covered by the ruffed Python gate\n"
+    },
+    {
+      "sha": "2b918dbe4bf5e5fad02e83d164929b87f71e164d",
+      "date": "2026-08-29T17:19:38+08:00",
+      "author": "however",
+      "email": "however-yir@users.noreply.github.com",
+      "message": "feat(aigc): harden distributed execution semantics\n\n- IdempotencyStore: atomically claim (user, actionId) execution; in-memory for\n  tests, Redis SET NX EX for production (tj.ai.harness.idempotency.store=redis);\n  duplicate order.preview never double-executes, failures release for retry, and\n  an unavailable store fails closed instead of silently duplicating\n- Human handoff contract: HandoffRequest (HF- ticket, REQUESTED/ACKNOWLEDGED/\n  RESOLVED lifecycle, redacted summary, 7-day TTL) generated on HUMAN_HANDOFF\n  routes and riding the ROUTE event; frontend renders 已转人工 + handoffId\n- Fault injection: profile-scoped injector (course/order/RAG timeout, HTTP 500,\n  malformed response, slow response); docs/failure-matrix.md maps every failure\n  class to behavior, metric and test\n- SSE hardening: bounded backpressure buffer via tj.ai.streaming.buffer-size,\n  overflow drops intermediate chunks with a warning; race tests prove STOP is\n  emitted exactly once and no data follows the terminal event; envelope gains\n  version=1 (clients tolerate unknown fields)\n- API contract: blank question rejected with 400-class exception before the\n  model pipeline (ChatControllerContractTest)\n"
+    },
+    {
+      "sha": "d0d0f4c3b2b6185cfdda1e937a5ab83ca0083529",
+      "date": "2026-08-29T17:19:22+08:00",
+      "author": "however",
+      "email": "however-yir@users.noreply.github.com",
+      "message": "build: migrate Spring AI to 1.0.9 GA and DashScope via OpenAI-compatible endpoint\n\n- spring-ai-bom 1.0.0-M6 -> 1.0.9 (1.0.x GA line); starter artifacts renamed\n  to spring-ai-starter-model-openai / -vector-store-elasticsearch\n- Drop the milestone spring-ai-alibaba-starter (M6.1; no stable starter exists\n  on Maven Central) and reach DashScope through spring.ai.openai.base-url\n  https://dashscope.aliyuncs.com/compatible-mode/v1\n- GA API migrations: RetrievalAugmentationAdvisor + VectorStoreDocumentRetriever,\n  builder-only MessageChatMemoryAdvisor, ChatMemory.get(String) with a kept\n  windowed overload, Media -> org.springframework.ai.content, local constant for\n  chat_memory_conversation_id, deletion of the project-local\n  MyChatClientAutoConfiguration fork (GA ships the official one)\n- Why not 1.1.x/2.x yet: documented in docs/dependency-baseline.md (Boot 3.3 +\n  Spring Cloud 2023 across 16 modules must move together; Alibaba stable line is\n  BOM-only, its starter has no GA version)\n"
+    },
+    {
+      "sha": "a4f63431aac9645f1ca908f6d85e1e527283818d",
+      "date": "2026-08-29T16:35:45+08:00",
+      "author": "however",
+      "email": "however-yir@users.noreply.github.com",
+      "message": "fix(ci): comply with ruff 0.16.5 rules and pin its version\n\n- TRY004: dataset validation raises TypeError for invalid field types\n- RUF100: drop obsolete S310 noqa (rule not enabled)\n- PYI041: use float instead of int | float in the evaluator signature\n- ISC004: flatten implicit string concatenation in acceptance command args\n- EXE001: restore exec bit on route predictor and acceptance scripts\n- Pin ruff==0.16.5 in CI so lint results are reproducible across runs\n"
+    },
+    {
+      "sha": "38dec8d44dda6df52782be7619ce9b8f7785e245",
+      "date": "2026-08-29T16:30:58+08:00",
+      "author": "however",
+      "email": "however-yir@users.noreply.github.com",
+      "message": "feat: enforce Java quality gates and wire offline regression into blocking CI\n\n- Checkstyle: clear 60 violations (right-curly formatting, unused imports,\n  star imports, constant names) and promote Checkstyle to a blocking job\n- SpotBugs: fix real defects (MyAssistantMessage equals/hashCode parity,\n  InMemoryAttachmentService reboxing), suppress only DTO/transfer-carrier\n  EI_EXPOSE_REP noise, promote the gate to blocking\n- JaCoCo: core-line coverage rule (>=90% on route/harness/sse/observability/\n  AgentServiceImpl) bound to verify; add AgentMetrics, AgentRuntime and\n  policy-branch tests; core coverage 83.4% -> 93.5%\n- CI: offline route regression gate (98% accuracy, 0 unsafe routes) and\n  one-click acceptance suite are now blocking; Ruff, Gitleaks, Checkstyle\n  and SpotBugs promoted from advisory; OWASP/Trivy stay advisory\n- Fix HarnessEventRecorder lock-eviction race that made the concurrency\n  test flaky (unlock-then-remove could hand out a replaced lock)\n- README: document blocking vs advisory gates and coverage threshold\n"
+    },
+    {
+      "sha": "4323713d6b76f5cfb8ac9d2cc67f08b88c8d4465",
+      "date": "2026-08-29T16:05:24+08:00",
+      "author": "however",
+      "email": "however-yir@users.noreply.github.com",
+      "message": "chore: restore executable bit on route evaluation script\n"
+    },
+    {
+      "sha": "baf35610379d252ba61a4f5f99d55c44afba6301",
+      "date": "2026-08-29T16:04:51+08:00",
+      "author": "however",
+      "email": "however-yir@users.noreply.github.com",
+      "message": "feat(aigc): fold offline route contract, observability and acceptance gates into the codebase\n\n- RouteSafetyPolicy: deterministic low-confidence / payment / privilege / injection\n  escalation to HUMAN_HANDOFF, now shared by production routing and unit tests\n- AgentMetrics: route, handoff, action-denied, runtime and SSE completion counters\n- SseEventContract: terminal STOP guarantee, sanitized TRACE on failure\n- ActionPolicyGuard: payment/admin/export/price actions rejected deterministically\n- Offline route contract: 160-case dataset, 98.75% accuracy / 98.57% Macro-F1,\n  0% unsafe route, 40 high-risk cases all hand off to humans; documented as\n  offline contract, not an online LLM benchmark\n- Acceptance suite: scripts/acceptance.sh + run_acceptance.py (no-LLM, reproducible)\n- Frontend: non-empty DATA contract and missing-STOP failure state\n- Docs: SSE contract, evidence index, SLO/alerting, evaluation checklist\n"
+    },
+    {
+      "sha": "8f74dd00d5c47bfae70aeb6dbed8331615a3c697",
+      "date": "2026-08-26T02:03:44+08:00",
+      "author": "zhuoran",
+      "email": "zhuoran@example.com",
+      "message": "fix(aigc): harden routing, tool calling, SSE terminal guarantees and harness race\n\nMajor Agent-engineering reliability fixes (no breaking API changes):\n\n1. Routing — AgentServiceImpl\n   - Catch RouteAgent runtime failures (model timeout / Nacos / JSON parse)\n     and degrade to HUMAN_HANDOFF with HIGH risk, so a flaky routing layer\n     no longer breaks the entire SSE stream.\n   - Plain-text fallback in parseRouteResult no longer leaks the raw\n     user-facing text into candidateAgents; it now correctly falls back\n     to HUMAN_HANDOFF when the LLM violates the JSON contract.\n\n2. Tool calling — OrderTools\n   - Guard against null ToolContext and null/empty courseIds, so the\n     Spring AI dispatcher can no longer trigger an NPE or fire a Feign\n     call with a missing requestId/userId.\n\n3. SSE terminal guarantee — AbstractAgent\n   - Replace takeWhile+concatWith with a Sinks.Many-based stream so\n     PARAM/TRACE/STOP events are emitted on every terminal path\n     (complete / cancel / error). Previously, when the user hit /chat/stop,\n     takeWhile cancelled the upstream and the concatWith branch never\n     ran, so the front-end never received a STOP event.\n   - Persist the assistant reply to chat memory on the normal completion\n     path too. Previously only doOnCancel saved history, which meant the\n     normal end-to-end run never wrote the assistant turn.\n   - Drop the dead ToolResultHolder.put(messageId, requestId) line that\n     was carried over from the legacy ChatServiceImpl and did nothing\n     in the current request-id-keyed flow.\n\n4. Harness — HarnessEventRecorder\n   - Per-request ReentrantLock around the read-modify-write of the trace\n     list. Parallel tool calls in the same model response were losing\n     traces due to a race; this is exercised by a new concurrency test.\n\n5. Harness — AgentHarnessService\n   - Log runtime exceptions (Feign / network / NPE) instead of silently\n     returning a failed observation, so production issues are visible.\n\nTests:\n- New HarnessEventRecorderConcurrencyTest: 32 parallel trace writers, asserts\n  every trace is preserved.\n- New shouldFallbackToHumanHandoffWhenRouteAgentThrows\n- New shouldNotExposeRawPlainTextAsCandidateWhenRouteIsNotStructured\n- New shouldCaptureRuntimeExceptionAsFailedObservation\n- New shouldNotThrowWhenToolContextIsNull, shouldNotInvokeFeignWhenCourseIdsIsEmpty\n- 39 tests passing (was 33).\n"
+    },
+    {
+      "sha": "dcefc86995c00af91ed3a631ae9215c56dd74f69",
+      "date": "2026-08-23T15:08:16+08:00",
+      "author": "however",
+      "email": "however-yir@users.noreply.github.com",
+      "message": "fix: pin vulnerable npm dependencies and upgrade MySQL driver\n\n- Add package.json overrides for @babel/core 7.29.6, brace-expansion\n  1.1.18/5.0.9, js-yaml 4.3.1, nanoid 3.3.18, postcss 8.5.23,\n  undici 7.29.0 (transitive Dependabot alerts)\n- Bump mermaid to 11.16.1 and vite to 8.0.16 and regenerate lockfile\n- Upgrade mysql-connector-j from 8.2.0 to 26.7.0 (current coordinates\n  already in use; service unit tests pass)\n"
+    },
+    {
+      "sha": "f012caa483d0093320cf528e08be323ceb1ec2b8",
+      "date": "2026-08-23T13:18:26+08:00",
+      "author": "however-yir",
+      "email": "however-yir@users.noreply.github.com",
+      "message": "fix: resolve security and reliability issues from bug review (2H/9M/12L)\n\nHigh severity:\n- Mermaid XSS: render with securityLevel \"strict\" and sanitize the\n  rendered SVG with DOMPurify (added as a direct dependency) before\n  injecting it into the DOM (web/chat-ui RichMarkdown.tsx).\n- Arbitrary file write via attachment OCR: generate the temp file name\n  server-side (fixed name + extension from a whitelist) instead of\n  resolving the client-controlled originalFilename (InMemoryAttachmentService).\n\nMedium severity:\n- ThreadLocal pollution: OrderTools.prePlaceOrder and\n  AgentRuntime.previewOrder now clear UserContext in try/finally so\n  reused streaming threads cannot leak one user's identity into the\n  next request (test updated to assert cleanup).\n- KnowledgeOpsClient: wire connect/read timeouts from properties into\n  the RestTemplate and URL-encode query params (user question included).\n- Multipart limits: set spring.servlet.multipart max-file-size 8MB /\n  max-request-size 20MB so the 8MB attachment check is reachable.\n- Actuator: drop unauthorized /actuator/env from exposure.\n- Embedding write endpoint: guarded by\n  tj.aigc.embedding-write.enabled (default false) to prevent any\n  logged-in user from poisoning the shared vector store.\n- Empty question: reject blank /chat questions with 400 and make\n  attachment validation errors visible as 400 (BadRequestException)\n  instead of falling into the generic 500 handler; dev-demo\n  buildParams is now null-safe.\n- Routing: fall back to HUMAN_HANDOFF when nextAgent is missing or\n  unknown so users always get an answer; AttachmentContextHolder now\n  expires stale entries (1h TTL) to stop unbounded growth.\n- Direct-access auth boundary documented: non-dev-demo profiles trust\n  the gateway-injected user-info header and must sit behind tj-gateway\n  or a private network (README security note).\n- ChatClient beans: resolve builders lazily via ObjectProvider with\n  cross-provider fallback so a disabled openai provider no longer\n  breaks context startup in the local profile.\n- JWT access-token TTL restored to 30 minutes (refresh flow via\n  HttpOnly cookie already exists in tj-auth) instead of 30 days.\n\nLow severity:\n- ModelOptionsHolder is now cleared on the same request thread that\n  set it (doFinally cleared the wrong thread).\n- RedisChatMemory sets a rolling 30-day TTL on conversation keys.\n- Rate limiter evicts stale IP counters once the map grows large.\n- TTS emitter completion is guarded against double-complete races.\n- Frontend shows a warning banner and keeps the draft/attachments when\n  attachment upload fails.\n- Removed duplicate empty `prompt:` key in application.yml.\n- System prompts fall back to a built-in default when Nacos config is\n  missing instead of null.\n- SignUtils: NoSuchAlgorithmException now propagates instead of\n  returning an empty token; verification parses AK containing dashes.\n- Weather demo tools validate numeric city ids and use HTTP timeouts.\n- Disabled ChatServiceImpl marked as not-in-use legacy code.\n- README/demo docs aligned with the actual voice-input implementation\n  (browser Web Speech API; /audio endpoints unused by the UI).\n- Session example counts are clamped (and null-safe) in\n  ChatSessionServiceImpl.\n\nVerified: tjxt -pl tj-aigc -am install, tj-aigc unit tests (33),\nmy-spring-ai / openai-java-demo packages, chat-ui lint + vitest + build,\npytest smoke tests and enterprise launch validation all pass locally.\n"
+    },
+    {
+      "sha": "bda3395de7b32a6236edf0ffcc8a3c883f0c4380",
+      "date": "2026-08-09T11:28:01+08:00",
+      "author": "however",
+      "email": "however-yir@users.noreply.github.com",
+      "message": "ci: remove obsolete Dependabot check\n"
+    },
+    {
+      "sha": "48f007b09dc95584473282e0478566625ce31dae",
+      "date": "2026-08-09T11:19:22+08:00",
+      "author": "然而",
+      "email": "liuhowever@gmail.com",
+      "message": "chore: disable Dependabot version updates"
+    },
+    {
+      "sha": "248517b820c210994fc7c5818bbedeef4a702423",
+      "date": "2026-08-07T13:23:03+08:00",
+      "author": "however",
+      "email": "however-yir@users.noreply.github.com",
+      "message": "fix: harden gateway identity relay and rate limiting\n"
+    },
+    {
+      "sha": "d41589e37332ebe64bb11d7dbef7225c00a1eb85",
+      "date": "2026-06-21T21:20:08+08:00",
+      "author": "however",
+      "email": "however-yir@users.noreply.github.com",
+      "message": "docs: remove résumé/interview packaging artifacts and their enforcement scaffolding\n\nRemove interview-notes.md, resume-upgrade-checklist.md, and\nenterprise-roadmap-300.md (plus the test_enterprise_launch.py assertions and\nvalidate_enterprise_launch.sh checks that locked the 300-item roadmap and its\nREADME links in place). These exposed a 'packaged for résumé/interview' framing\nthat undercut the project's credibility; legitimate governance, helm,\nobservability, and agent-harness checks are preserved.\n"
+    },
+    {
+      "sha": "5c3c9210894b5f5ebba8ff1f8af124b66d406a10",
+      "date": "2026-05-26T16:34:34+08:00",
+      "author": "however-yir",
+      "email": "however-yir@users.noreply.github.com",
+      "message": "Patch vulnerable dependencies\n"
+    },
+    {
+      "sha": "3e67e0675c3f9412e4ca58a56fc235c645df2597",
+      "date": "2026-05-26T16:01:25+08:00",
+      "author": "however-yir",
+      "email": "however-yir@users.noreply.github.com",
+      "message": "Add enterprise launch readiness package\n"
+    },
+    {
+      "sha": "a2ea2b9e9c5800345022f5800589ac994908901d",
+      "date": "2026-05-26T14:27:46+08:00",
+      "author": "however-yir",
+      "email": "however-yir@users.noreply.github.com",
+      "message": "Add governed agent harness\n"
+    },
+    {
+      "sha": "0e684b4f0d67bb5756e32ec6c4cca9ae0b35c606",
+      "date": "2026-05-22T15:52:24+08:00",
+      "author": "however",
+      "email": "however-yir@users.noreply.github.com",
+      "message": "fix: update mermaid security dependency\n"
+    },
+    {
+      "sha": "bf667bb7ea12e06cd5cff00127745d968a461fbd",
+      "date": "2026-05-22T15:31:33+08:00",
+      "author": "however",
+      "email": "however-yir@users.noreply.github.com",
+      "message": "ci: add Dependabot required check\n"
+    },
+    {
+      "sha": "aa60fbb59b729abe9e6b9127108dc7ecac0f411f",
+      "date": "2026-05-22T15:06:06+08:00",
+      "author": "however",
+      "email": "however-yir@users.noreply.github.com",
+      "message": "feat: add RouteAgent evaluation report\n"
+    },
+    {
+      "sha": "e8cc1513fd34afe967eba98e3079050d9b2c7045",
+      "date": "2026-05-22T13:29:51+08:00",
+      "author": "然而",
+      "email": "liuhowever@gmail.com",
+      "message": "Add RouteAgent evaluation and handoff trace\n\nAdd RouteAgent dataset/eval script, enrich ROUTE trace metadata, add BuyAgent business state machine, and update frontend cards/README."
+    }
+  ],
+  "commit_sha": "416383fa28713a2d31b5a541c80dea376afac5ff",
+  "extracted_at": "2026-10-05T18:21:04.551065+00:00"
+}

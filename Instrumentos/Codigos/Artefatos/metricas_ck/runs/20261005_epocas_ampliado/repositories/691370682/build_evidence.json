@@ -1,0 +1,84 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "3.1.0",
+  "spring_boot_major": "3",
+  "java_versions_declared": "17",
+  "build_evidence": [
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "watermelon-authorization/watermelon-authorization-oauth2-client/pom.xml",
+      "artifact": "spring-boot-starter-oauth2-client"
+    },
+    {
+      "file": "watermelon-authorization/watermelon-authorization-server/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "watermelon-authorization/watermelon-authorization-server/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "watermelon-authorization/watermelon-authorization-server/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "watermelon-authorization/watermelon-authorization-server/pom.xml",
+      "artifact": "spring-boot-starter-undertow"
+    },
+    {
+      "file": "watermelon-authorization/watermelon-authorization-server/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "watermelon-authorization/watermelon-authorization-server/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "watermelon-authorization/watermelon-authorization-server/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "watermelon-common/watermelon-common-redis/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "watermelon-gateway/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "watermelon-gateway/pom.xml",
+      "artifact": "spring-boot-starter-oauth2-client"
+    },
+    {
+      "file": "watermelon-tenant-user/watermelon-tenant-user-server/pom.xml",
+      "artifact": "spring-boot-starter-oauth2-resource-server"
+    },
+    {
+      "file": "watermelon-tenant-user/watermelon-tenant-user-server/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "watermelon-tenant-user/watermelon-tenant-user-server/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "watermelon-tenant-user/watermelon-tenant-user-server/pom.xml",
+      "artifact": "spring-boot-starter-undertow"
+    },
+    {
+      "file": "watermelon-tenant-user/watermelon-tenant-user-server/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "45a7798ed0b39daed2208ed8fdc955b3b49011b1",
+      "date": "2026-05-31T22:23:38+03:00",
+      "author": "Hassan Ibrahem",
+      "email": "eng.hibrahem@gmail.com",
+      "message": "docs: add AgDR-0001 for the JWT secret rotation (#44)\n\n- Decision: rotate the leaked auth.secretKey, replace literal with\n  ${AUTH_SECRET_KEY}, do NOT rewrite git history\n- Rationale: 5-month public exposure means the value is already in\n  GH public-data, BigQuery mirrors, third-party clones; history\n  rewrite is theatre against that threat. Rotation closes the actual\n  exposure in 3 minutes.\n- Captures the full incident timeline, the rejected alternatives,\n  and the persistent ruleset changes made to unblock the merge\n\nCloses TechMentors-LLC/charity_hub#32"
+    },
+    {
+      "sha": "4c512f244bf385c3b356afd6813922c18d2cfdf0",
+      "date": "2026-05-31T17:59:31+03:00",
+      "author": "Hassan Ibrahem",
+      "email": "eng.hibrahem@gmail.com",
+      "message": "feat: Update application properties to use environment variables for secret key and admin accounts (#34)\n\nCo-authored-by: ha-ibrahim <h.ibrahim@foodics.com>"
+    },
+    {
+      "sha": "720a46a091dce5b5a6d5ee48ebe519137cfac15b",
+      "date": "2026-05-29T15:42:10+03:00",
+      "author": "Hassan Ibrahem",
+      "email": "eng.hibrahem@gmail.com",
+      "message": "Merge pull request #31 from TechMentors-LLC/chore/GH-30-restore-secrets-gitignore\n\nchore(#30): restore secrets gitignore block"
+    },
+    {
+      "sha": "b3988ad71f71feb62894e76b1ff93e5c677c8d84",
+      "date": "2026-05-29T15:01:52+03:00",
+      "author": "hibrahem",
+      "email": "eng.hibrahem@gmail.com",
+      "message": "chore: restore secrets gitignore block\n\n- Re-add ### Secrets ### section removed after commit 9339fb27 (2025-12-08)\n- Cover secrets.properties, cert/, deployment/kubernetes/cert/\n- Add inline comment explaining the regression so it isn't dropped again\n- No key rotation needed: audit confirmed the on-disk Firebase admin SDK\n  blob never existed in any git object (refs, tags, stashes, reflog)\n\nCloses TechMentors-LLC/charity_hub#30\n"
+    },
+    {
+      "sha": "a47763aca5f6564b04d8647d207a09daa404f5b2",
+      "date": "2025-12-08T01:33:59+02:00",
+      "author": "M16",
+      "email": "moh.medh.tem1@gmail.com",
+      "message": "Merge pull request #27 from TechMentors-LLC/EnhanceCI\n\nEnhance CI with caching and build options"
+    },
+    {
+      "sha": "9dc98a0fedcfc1fa9eb4c44bda383b4840f1a410",
+      "date": "2025-12-08T01:33:24+02:00",
+      "author": "M16",
+      "email": "moh.medh.tem1@gmail.com",
+      "message": "Merge pull request #28 from TechMentors-LLC/RemoveDocs\n\nDelete docs directory"
+    },
+    {
+      "sha": "ec892543aef66fe9c926acc07fbd5fcd502e7941",
+      "date": "2025-12-08T01:30:58+02:00",
+      "author": "M16",
+      "email": "moh.medh.tem1@gmail.com",
+      "message": "Remove Gradle cache from test workflow\n\nRemoved Gradle caching from the setup."
+    },
+    {
+      "sha": "adbbf449ef354adc769a353c489dee2a3437ecf9",
+      "date": "2025-12-08T01:24:20+02:00",
+      "author": "M16",
+      "email": "moh.medh.tem1@gmail.com",
+      "message": "Delete TEST_SUITE_SUMMARY.md"
+    },
+    {
+      "sha": "f9ec17c44723f51085a5985c62686614a1caeb40",
+      "date": "2025-12-08T01:23:41+02:00",
+      "author": "M16",
+      "email": "moh.medh.tem1@gmail.com",
+      "message": "Delete docs directory"
+    },
+    {
+      "sha": "6adf66ec00eb4dd56d8acfe34b9e22674cb3b6fa",
+      "date": "2025-12-08T01:17:59+02:00",
+      "author": "M16",
+      "email": "moh.medh.tem1@gmail.com",
+      "message": "Enhance CI with caching and build options"
+    },
+    {
+      "sha": "3899a399bb418c5a83f2930701feeff0dadcd254",
+      "date": "2025-12-08T01:12:28+02:00",
+      "author": "M16",
+      "email": "moh.medh.tem1@gmail.com",
+      "message": "Merge pull request #26 from TechMentors-LLC/M0Hatem-patch-1\n\nUpgrade Gradle and JRE versions in Dockerfile"
+    },
+    {
+      "sha": "ff150bbe89628b7576b4991e6e2087ce8a8b9f2b",
+      "date": "2025-12-08T01:09:15+02:00",
+      "author": "M16",
+      "email": "moh.medh.tem1@gmail.com",
+      "message": "Upgrade Gradle and JRE versions in Dockerfile\n\nUpdated base images to use Gradle 8.7 with JDK 21 and Eclipse Temurin 21."
+    },
+    {
+      "sha": "eae85250e41e9bf59ac23aeae266a1cb4fd34c47",
+      "date": "2025-12-08T01:05:08+02:00",
+      "author": "M16",
+      "email": "moh.medh.tem1@gmail.com",
+      "message": "Merge pull request #25 from TechMentors-LLC/migration/virtual-threads\n\nMigration/virtual threads"
+    },
+    {
+      "sha": "25016f2c14232d23cace998b17c4cb3952f69e51",
+      "date": "2025-12-08T01:00:20+02:00",
+      "author": "hassanibrahim",
+      "email": "eng.hibrahem@gmail.com",
+      "message": "Add unit and integration tests for ledger functionality\n\n- Implement tests for GetLedgerSummaryController to validate successful retrieval of ledger summary and user ID handling.\n- Create tests for GetOwnLedgerController to ensure correct retrieval of user's own ledger and contributions.\n- Add unit tests for GetLedgerHandler to verify contribution retrieval and status mapping.\n- Implement tests for GetLedgerSummaryHandler to check contribution calculations and connection ledger handling.\n- Add tests for Member domain model to validate member creation and ancestor management.\n- Create integration tests for MembersNetworkRepo to ensure CRUD operations work as expected with MongoDB.\n- Implement tests for GlobalExceptionHandler to validate exception handling and response formatting.\n"
+    },
+    {
+      "sha": "8090caa530221338ae47a8a979dfb5ab1a5a90e7",
+      "date": "2025-12-07T22:34:14+02:00",
+      "author": "hassanibrahim",
+      "email": "eng.hibrahem@gmail.com",
+      "message": "refactor: Simplify MongoDBContainer initialization and enhance connection timeout settings\n"
+    },
+    {
+      "sha": "006b5b3b157b8962be76e3a30cab9ea99eec4c4d",
+      "date": "2025-12-07T22:17:29+02:00",
+      "author": "hassanibrahim",
+      "email": "eng.hibrahem@gmail.com",
+      "message": "Enhance logging across various command handlers and repositories\n\n- Added detailed logging for account blocking/unblocking actions in BlockAccountHandler.\n- Improved permission change logging in ChangePermissionHandler.\n- Enhanced invitation handling logging in InviteAccountHandler.\n- Added logging for token refresh actions in RefreshTokenHandler.\n- Improved FCM token registration logging in RegisterNotificationTokenHandler.\n- Enhanced basic info update logging in UpdateBasicInfoHandler.\n- Added logging for account retrieval and saving in AccountRepo.\n- Improved invitation retrieval and saving logging in InvitationRepo.\n- Enhanced account retrieval logging in ReadAccountRepo.\n- Added logging for token mapping in TokenMapper.\n- Improved account retrieval logging in AccountsAPIs.\n- Enhanced case status change logging in ChangeCaseStatusHandler.\n- Improved contribution processing logging in ContributeHandler.\n- Added logging for case creation in CreateCaseHandler.\n- Enhanced draft case deletion logging in DeleteDraftCaseHandler.\n- Improved case update logging in UpdateCaseHandler.\n- Added detailed logging for case retrieval in CaseReadRepo.\n- Enhanced case saving and deletion logging in CaseRepo.\n- Improved member retrieval and saving logging in MembersNetworkRepo.\n- Enhanced notification sending logging in FCMService.\n- Improved global exception handling logging in GlobalExceptionHandler.\n- Updated test to verify empty payment proof handling in PayContributionControllerTest.\n"
+    },
+    {
+      "sha": "d1eadf43d0c5050aefdfb40354d6532ae50579e3",
+      "date": "2025-12-07T18:24:50+02:00",
+      "author": "hassanibrahim",
+      "email": "eng.hibrahem@gmail.com",
+      "message": "feat: Add conditional property for FirebaseAuth initialization and update FirebaseAuthProviderStub for test mode\n"
+    },
+    {
+      "sha": "ea5f51a7c06fbeb4bd56f304ab77815046aa8d7e",
+      "date": "2025-12-07T18:19:09+02:00",
+      "author": "hassanibrahim",
+      "email": "eng.hibrahem@gmail.com",
+      "message": "feat: Implement repository methods in CaseReadRepo and update CasesAPI to utilize them\n"
+    },
+    {
+      "sha": "e0364aea02c180aabccf602a3eaa416b144b4914",
+      "date": "2025-12-07T17:59:40+02:00",
+      "author": "hassanibrahim",
+      "email": "eng.hibrahem@gmail.com",
+      "message": "feat: Enhance CI workflow with Testcontainers for MongoDB and update test properties\n"
+    },
+    {
+      "sha": "311e4ff2b5d3e99ae54b96e75a24bdd7654f6dcb",
+      "date": "2025-12-07T17:50:24+02:00",
+      "author": "hassanibrahim",
+      "email": "eng.hibrahem@gmail.com",
+      "message": "feat: Update Gradle version to 8.7 and enhance test result handling in CI workflow\n"
+    },
+    {
+      "sha": "ced95d0fe5e5ef10939a3cdf7255d1be63963f0b",
+      "date": "2025-12-07T17:43:03+02:00",
+      "author": "hassanibrahim",
+      "email": "eng.hibrahem@gmail.com",
+      "message": "feat: Update JDK version from 17 to 21 in CI workflow\n"
+    },
+    {
+      "sha": "69b269747bb145a2f99132dc4b6ba58eef4170ff",
+      "date": "2025-12-07T17:41:31+02:00",
+      "author": "hassanibrahim",
+      "email": "eng.hibrahem@gmail.com",
+      "message": "feat: Add Testcontainers support for MongoDB and enhance integration test setup\n"
+    },
+    {
+      "sha": "5b5a126b5f081aaeaff05e1b80afd6ba692b243b",
+      "date": "2025-12-07T16:37:56+02:00",
+      "author": "hassanibrahim",
+      "email": "eng.hibrahem@gmail.com",
+      "message": "feat: Implement repository methods in CaseReadRepo and update CasesAPI to utilize them\n"
+    },
+    {
+      "sha": "0fc2aecc3c7804e29815817c761ec96dec1a1af3",
+      "date": "2025-12-07T05:01:40+02:00",
+      "author": "hassanibrahim",
+      "email": "eng.hibrahem@gmail.com",
+      "message": "Refactor event handlers and services to remove CompletableFuture usage\n\n- Updated ContributionRemindedHandler to handle events synchronously.\n- Refactored GetLedgerHandler and GetLedgerSummaryHandler to return results directly instead of CompletableFuture.\n- Modified INotificationService and its implementation to use synchronous methods.\n- Changed AccountsGateway and CasesGateway to return results directly instead of CompletableFuture.\n- Simplified AccountCreatedHandler to handle events synchronously.\n- Refactored MembersNetworkRepo to remove CompletableFuture from methods.\n- Updated NotificationService to use synchronous methods for notifications.\n- Removed unnecessary CompletableFuture usage in CommandHandler and QueryHandler interfaces.\n- Cleaned up tests to reflect changes in method signatures and behavior.\n"
+    },
+    {
+      "sha": "5b73a1f6d175f4e7a0aa5269ecc53f3d0479fa82",
+      "date": "2025-12-07T03:48:24+02:00",
+      "author": "hassanibrahim",
+      "email": "eng.hibrahem@gmail.com",
+      "message": "Refactor controllers and handlers to remove DeferredResult usage\n\n- Updated DeleteDraftCaseController, GetAllCasesController, GetCaseController, GetDraftCasesController, PayContributionController, and UpdateCaseController to return ResponseEntity directly instead of using DeferredResult.\n- Modified command handlers (ContributeHandler, CreateCaseHandler, DeleteDraftCaseHandler, PayContributionHandler, UpdateCaseHandler) to handle commands synchronously instead of returning CompletableFuture.\n- Introduced ICaseReadRepo interface for read operations and implemented it in CaseReadRepo.\n- Updated query handlers (GetAllCasesHandler, GetCaseHandler, GetDraftCasesHandler) to use the new ICaseReadRepo interface.\n- Added temporary methods for synchronous operations in repositories and updated existing methods to use them.\n- Adjusted the CasesAPI to use the new ICaseReadRepo for fetching contributions and cases.\n"
+    },
+    {
+      "sha": "9a8388d0cc67f47be4c3c66f312cd61d5e9fc9a9",
+      "date": "2025-12-07T03:12:11+02:00",
+      "author": "hassanibrahim",
+      "email": "eng.hibrahem@gmail.com",
+      "message": "feat: Refactor account and invitation repositories to include temporary methods for fetching and saving data\n\n- Added temporary methods in IAccountRepo and IInvitationRepo for fetching accounts and invitations by ID and mobile number.\n- Implemented temporary save methods in both repositories to allow for immediate data persistence.\n- Updated GetConnectionsHandler to use the new IAccountReadRepo for synchronous fetching of connections.\n- Refactored controllers to return ResponseEntity directly instead of using DeferredResult for better clarity and performance.\n- Introduced new CommandHandlerTemp and QueryHandlerTemp abstractions for handling commands and queries without CompletableFuture.\n- Updated application properties to support environment variable-based MongoDB credentials and enhanced management configurations.\n"
+    },
+    {
+      "sha": "6c6402644eb93a786855449422c3e52652f9e12c",
+      "date": "2025-12-07T03:06:57+02:00",
+      "author": "hassanibrahim",
+      "email": "eng.hibrahem@gmail.com",
+      "message": "feat: Add initial implementations for account read repository and mappers\n"
+    },
+    {
+      "sha": "aa321158c8c9a2e8d73e22c76ba4d99d7abfb16c",
+      "date": "2025-11-13T15:45:28+02:00",
+      "author": "M16",
+      "email": "moh.medh.tem1@gmail.com",
+      "message": "remove useless commits\n"
+    },
+    {
+      "sha": "f2bb9b7f29e4f3d1058af2082c0a2da8e918aa24",
+      "date": "2025-10-19T20:37:25+03:00",
+      "author": "M16",
+      "email": "moh.medh.tem1@gmail.com",
+      "message": "ء\n"
+    },
+    {
+      "sha": "c7088643091a5c598f01d68ee318e2c452888c46",
+      "date": "2025-10-16T08:11:24+03:00",
+      "author": "M16",
+      "email": "moh.medh.tem1@gmail.com",
+      "message": "Defines module boundaries and adds modularity tests\n\nIntroduces explicit modular structure by annotating package-info files,\nremoves legacy module annotations, and adds tests to verify and document\nmodule boundaries. Improves maintainability and enforces modular design\nprinciples across the codebase.\n"
+    }
+  ],
+  "commit_sha": "45a7798ed0b39daed2208ed8fdc955b3b49011b1",
+  "extracted_at": "2026-10-05T18:26:01.320924+00:00"
+}

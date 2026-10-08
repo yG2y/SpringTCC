@@ -1,0 +1,48 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "3.3.3",
+  "spring_boot_major": "3",
+  "java_versions_declared": "17",
+  "build_evidence": [
+    {
+      "file": "application/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "application/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "infrastructure/datastore-mysql/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "ms-launcher/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "ms-launcher/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "ms-launcher/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "ms-launcher/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-testcontainers"
+    }
+  ]
+}

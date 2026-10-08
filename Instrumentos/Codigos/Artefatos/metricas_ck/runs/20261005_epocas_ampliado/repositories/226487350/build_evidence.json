@@ -1,0 +1,32 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "2.7.14",
+  "spring_boot_major": "2",
+  "java_versions_declared": "1.8",
+  "build_evidence": [
+    {
+      "file": "netty-spring-boot-starter-samples/server-example/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "netty-spring-boot-starter-samples/server-example/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "netty-spring-boot-starter-samples/server-example/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "netty-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "netty-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "netty-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-loader"
+    }
+  ]
+}

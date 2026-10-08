@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "285e00b80f7c508864fe2d723e453f882ff2b0aa",
+      "date": "2026-10-04T14:35:31+11:00",
+      "author": "Daniel Tse",
+      "email": "danieltse@gmail.com",
+      "message": "Merge pull request #280 from dtkmn/dev\n\nfeat: align Spring Boot and CycloneDX build-tool Jackson dependencies"
+    },
+    {
+      "sha": "6a2860abe17e46edfdcccf6b27ce5e69635f423e",
+      "date": "2026-10-04T14:11:50+11:00",
+      "author": "0xdant",
+      "email": "danieltse@gmail.com",
+      "message": "feat: align Spring Boot and CycloneDX build-tool Jackson dependencies to 3.1.7 and 2.22.3; update changelog\n"
+    },
+    {
+      "sha": "3d635a6e0d1b5721e3922abb1aafbea6a0a37ad4",
+      "date": "2026-10-04T13:13:28+11:00",
+      "author": "Daniel Tse",
+      "email": "danieltse@gmail.com",
+      "message": "Merge pull request #279 from dtkmn/dev\n\nfeat: implement OpenAPI content import feature"
+    },
+    {
+      "sha": "1645d69b5ef673e7bcfb3cdacc21ab6953dfe81f",
+      "date": "2026-10-04T12:54:08+11:00",
+      "author": "0xdant",
+      "email": "danieltse@gmail.com",
+      "message": "feat: refactor OpenAPI content handling by introducing constants for definition types and source kinds; enhance validation logic\n"
+    },
+    {
+      "sha": "b781a8cd067dc9a7330d0dc79ca5de22337e8880",
+      "date": "2026-10-04T11:57:46+11:00",
+      "author": "0xdant",
+      "email": "danieltse@gmail.com",
+      "message": "feat: enhance OpenAPI content import service with improved directory iteration and update DocumentWalker visibility; add null check in integration test\n"
+    },
+    {
+      "sha": "17de6ffa66710344a7f42ed7a88a01daedf023da",
+      "date": "2026-10-04T09:54:57+11:00",
+      "author": "0xdant",
+      "email": "danieltse@gmail.com",
+      "message": "feat: implement OpenAPI content import feature with staging and configuration; add tests for integration and service logic\n"
+    },
+    {
+      "sha": "87260f38468e21e547c459fb4dd44fec551b0b10",
+      "date": "2026-10-03T21:52:29+10:00",
+      "author": "Daniel Tse",
+      "email": "danieltse@gmail.com",
+      "message": "Merge pull request #277 from dtkmn/dev\n\nDependency Security Documentation updates"
+    },
+    {
+      "sha": "ca5f5e5508783f6d1a1c126060a4bfdd2066050d",
+      "date": "2026-10-03T21:27:40+10:00",
+      "author": "0xdant",
+      "email": "danieltse@gmail.com",
+      "message": "feat: update action scripts to use GITHUB_ACTION_PATH variable; add dependency security status documentation\n"
+    },
+    {
+      "sha": "8cbcd1a455e2307f029537d99a6df34bd9f9146d",
+      "date": "2026-10-03T19:54:48+10:00",
+      "author": "Daniel Tse",
+      "email": "danieltse@gmail.com",
+      "message": "Merge pull request #276 from dtkmn/dev\n\nv0.14.0. release preparation"
+    },
+    {
+      "sha": "ffe0d6cc5a561c7ccece133634d22942ec61590d",
+      "date": "2026-10-03T19:42:55+10:00",
+      "author": "0xdant",
+      "email": "danieltse@gmail.com",
+      "message": "feat: add unit tests for Helm migration, security, and shared workspace configurations\n"
+    },
+    {
+      "sha": "b23383945baec2223efdd1d10c9e4e4145747774",
+      "date": "2026-10-03T18:48:31+10:00",
+      "author": "0xdant",
+      "email": "danieltse@gmail.com",
+      "message": "feat: add TypeScript declaration for virtual Starlight user configuration module\n"
+    },
+    {
+      "sha": "b69f44d156df8b056ed1da0ffb66fbd7b0d0334b",
+      "date": "2026-10-03T18:33:08+10:00",
+      "author": "0xdant",
+      "email": "danieltse@gmail.com",
+      "message": "feat: update production checklist and README for improved MCP and Helm configurations; add audit-ci usage details\n"
+    },
+    {
+      "sha": "1b35a4714f9277b58e7f84e97da7c74a26332891",
+      "date": "2026-10-03T18:31:21+10:00",
+      "author": "0xdant",
+      "email": "danieltse@gmail.com",
+      "message": "feat: update @astrojs/starlight to version 0.42.5 and add audit-ci as a dev dependency\n"
+    },
+    {
+      "sha": "ef5852394bd77908c8771a86b6ede6b4644fcca8",
+      "date": "2026-10-03T18:25:15+10:00",
+      "author": "0xdant",
+      "email": "danieltse@gmail.com",
+      "message": "feat: replace npm audit with audit-ci for improved dependency auditing; add configuration file\n"
+    },
+    {
+      "sha": "9e1537c326a25baccd51aa1a439f61f8621850b5",
+      "date": "2026-10-03T18:18:53+10:00",
+      "author": "0xdant",
+      "email": "danieltse@gmail.com",
+      "message": "feat: add Helm setup step to CI configuration\n"
+    },
+    {
+      "sha": "10d9b18980241543dfe392c87ab5456c7e1c8a54",
+      "date": "2026-10-03T18:18:39+10:00",
+      "author": "0xdant",
+      "email": "danieltse@gmail.com",
+      "message": "feat: enhance Helm chart with shared workspace support, JWT revocation validation, and migration hook improvements; update documentation for storage and configuration changes\n"
+    },
+    {
+      "sha": "8476498ffe9334f1e2844b25c7c483cbd6b5319a",
+      "date": "2026-10-03T16:11:19+10:00",
+      "author": "0xdant",
+      "email": "danieltse@gmail.com",
+      "message": "chore: package-lock.json updates\n"
+    },
+    {
+      "sha": "120ecaffafe118501339b9444f1d47ad03169c17",
+      "date": "2026-10-03T12:25:15+10:00",
+      "author": "0xdant",
+      "email": "danieltse@gmail.com",
+      "message": "chore: bump version to 0.14.0; update documentation and configuration for new features and changes\n"
+    },
+    {
+      "sha": "10a8871908010a1ae801ad7f51561fec2b469a17",
+      "date": "2026-10-03T00:18:58+10:00",
+      "author": "Daniel Tse",
+      "email": "danieltse@gmail.com",
+      "message": "Merge pull request #274 from dtkmn/dev\n\nSecurity and Authentication Improvements"
+    },
+    {
+      "sha": "cc049369a449e8b6c1910ad6a6176994c5aeeaae",
+      "date": "2026-10-02T23:57:00+10:00",
+      "author": "0xdant",
+      "email": "danieltse@gmail.com",
+      "message": "test: add unit tests for MCP NetworkPolicy rendering; validate ingress rules and configurations\n"
+    },
+    {
+      "sha": "50cd1c5196238b5b801f6163eaf1f3acd5721fa7",
+      "date": "2026-10-02T23:49:37+10:00",
+      "author": "0xdant",
+      "email": "danieltse@gmail.com",
+      "message": "feat: update CI configurations to use Ubuntu 24.04 for all jobs\n"
+    },
+    {
+      "sha": "7d1e1f92fea21962aab3bf05f83df1f6bd0fc90c",
+      "date": "2026-10-02T23:49:11+10:00",
+      "author": "0xdant",
+      "email": "danieltse@gmail.com",
+      "message": "feat: add destination policy validation for Automation Framework plans; enforce full HTTP(S) URLs and reject unsupported jobs or authentication\n"
+    },
+    {
+      "sha": "974043c6e8a35f01adbd6fdbc949ef9aab0cfa5e",
+      "date": "2026-10-02T23:48:30+10:00",
+      "author": "0xdant",
+      "email": "danieltse@gmail.com",
+      "message": "test: add unit tests for URL validation in automation plans; ensure unsafe plans are rejected and allowlist/blacklist functionality works\n"
+    },
+    {
+      "sha": "cae6d14c1a9074a1a16aa4494ed304eb7b7ac591",
+      "date": "2026-10-02T23:48:01+10:00",
+      "author": "0xdant",
+      "email": "danieltse@gmail.com",
+      "message": "feat: implement destination policy validation for automation plans; add support for URL checks and reject invalid destinations\n"
+    },
+    {
+      "sha": "2c607c00c16fb9702f4221e984ed89030083dd1a",
+      "date": "2026-10-02T23:47:41+10:00",
+      "author": "0xdant",
+      "email": "danieltse@gmail.com",
+      "message": "feat: enhance MCP network policy to allow same namespace ingress and define extra ingress peers; update documentation for clarity\n"
+    },
+    {
+      "sha": "14d3b84d75c9db74820ebf3bdd79676876952f2f",
+      "date": "2026-10-02T22:52:06+10:00",
+      "author": "0xdant",
+      "email": "danieltse@gmail.com",
+      "message": "feat: add OpenAPI target policy validation for URL and file imports; enforce full target URLs and reject invalid overrides\n"
+    },
+    {
+      "sha": "098beb0c670f6f609ab7d1385577ac5aa3bb10a6",
+      "date": "2026-10-02T22:32:41+10:00",
+      "author": "0xdant",
+      "email": "danieltse@gmail.com",
+      "message": "feat: apply destination policy to OpenAPI target overrides; enforce full HTTP(S) targets and reject scheme-only/path-only overrides\n"
+    },
+    {
+      "sha": "3125e8a29d8ed597640a8dac85ddf0e284c51178",
+      "date": "2026-10-02T21:24:39+10:00",
+      "author": "0xdant",
+      "email": "danieltse@gmail.com",
+      "message": "feat: implement shared timestamp policy for JWT validation and revocation retention; add tests for revocation lifetime and behavior under various conditions\n"
+    },
+    {
+      "sha": "585a516fd3efd0c2d5a9235489172cf0265d0be3",
+      "date": "2026-10-02T21:19:33+10:00",
+      "author": "0xdant",
+      "email": "danieltse@gmail.com",
+      "message": "feat: enforce JWT expiration and revocation lifetime; reject tokens without `exp` and maintain revocation effectiveness through existing clock-skew allowance\n"
+    },
+    {
+      "sha": "885d143da4b914c6caf7305b28644c2d1e82c2c0",
+      "date": "2026-10-02T19:42:26+10:00",
+      "author": "0xdant",
+      "email": "danieltse@gmail.com",
+      "message": "feat: enforce PostgreSQL as the authoritative backend for JWT revocation and refresh-token consumption; remove local fallback and default failFast to true\n"
+    }
+  ],
+  "commit_sha": "285e00b80f7c508864fe2d723e453f882ff2b0aa",
+  "extracted_at": "2026-10-05T18:11:35.107894+00:00"
+}

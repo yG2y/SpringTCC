@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "72ea6323c0e4ec4df1312bf07e97f40317b3d5ae",
+      "date": "2026-09-06T19:37:51+08:00",
+      "author": "888newstep",
+      "email": "18951975797@163.com",
+      "message": "docs: improve README discoverability and evidence\n"
+    },
+    {
+      "sha": "d1fa76ce829c012d99c0104b2f8f66b5b3b013a5",
+      "date": "2026-09-04T16:55:27+08:00",
+      "author": "888newstep",
+      "email": "18951975797@163.com",
+      "message": "docs: enhance README badges\n"
+    },
+    {
+      "sha": "0cfac11b60044131a70909cb26987def4ec08c97",
+      "date": "2026-09-04T16:25:08+08:00",
+      "author": "888newstep",
+      "email": "18951975797@163.com",
+      "message": "security: remove vulnerable Tomcat and upgrade Netty\n\n- Replace embedded Tomcat with Jetty because patched Tomcat 10.1.58 is not yet published to Maven Central\n- Upgrade Netty to 4.1.137.Final for the CORS Vary header fix\n- Migrate server thread and connection settings to Jetty properties\n- Keep Java 17 compatibility and verify security/web tests plus packaging\n"
+    },
+    {
+      "sha": "7b8d92a170b3fc0c20e76db668853a439c2f6a24",
+      "date": "2026-09-04T10:09:58+08:00",
+      "author": "888newstep",
+      "email": "18951975797@163.com",
+      "message": "refactor: simplify ecommerce generation and import workflows\n\n- Extract ecommerce import batch steps for clearer responsibilities\n- Map embeddings by record hash to prevent vector mismatch after conflict skips\n- Consolidate generator model and output constants without changing prompts or budgets\n- Add JDK 17 characterization tests for JSONL parsing, normalization and hashing\n"
+    },
+    {
+      "sha": "cd44c2d2f7cff320d0a5df805c1f61ba04e58daf",
+      "date": "2026-09-01T10:28:58+08:00",
+      "author": "888newstep",
+      "email": "18951975797@163.com",
+      "message": "security: harden auth, evaluation, upload and JWT handling\n\n- Add local non-destructive security probe (localhost-only, no credential reading)\n- Sandbox evaluation dataset paths with toRealPath() and size/case budgets\n- Bound topKs and reject oversized/NaN input\n- Use constant-time comparison for admin API key\n- Add JWT issuer/audience validation on generation and parsing\n- Limit concurrent evaluation runs with a semaphore\n- Reject empty/oversized uploads at servlet and service layers\n- Validate PDF/DOCX magic bytes on document upload\n- Document the attack surface audit and hardening measures\n"
+    },
+    {
+      "sha": "642edfbf8db71abf8c7a534d4df0e322b8e2e284",
+      "date": "2026-08-28T15:58:24+08:00",
+      "author": "888newstep",
+      "email": "18951975797@163.com",
+      "message": "docs: rewrite README from user perspective\n\n- Remove interview-oriented sections (面试价值, self-proclaimed 面试导向)\n- Restructure around problems solved + core capabilities with measured results\n- Surface RAG evaluation evidence (FAQ R@1 98.3%, 372 tests, JaCoCo 64%)\n- Keep real assets: quickstart, API examples, security, release notes, contributors\n"
+    },
+    {
+      "sha": "57794455d633a7cc69e01a8ba4e4a7e31cc2d37a",
+      "date": "2026-08-27T13:24:24+08:00",
+      "author": "888newstep",
+      "email": "18951975797@163.com",
+      "message": "docs: sync README test count (372) and coverage gate (64%) with current baseline\n"
+    },
+    {
+      "sha": "0d765d0874feaa9970cfae723c805ee46e9c3482",
+      "date": "2026-08-27T11:31:11+08:00",
+      "author": "888newstep",
+      "email": "18951975797@163.com",
+      "message": "docs: publish RAG evaluation summary, snapshots and silver-v2 datasets for verifiability\n\n- Add RAG_EVALUATION_SUMMARY_2026-08-27.md covering R@1 47.5% (raw single-gold) to 98.3% (FAQ-first + multi-gold) with category breakdown and honest caveats\n- Add evaluation snapshots for both baselines (docs/evaluation-snapshots/)\n- Add silver-v2 evaluation datasets (single-gold + multi-gold + holdout series) to make eval reproducible\n"
+    },
+    {
+      "sha": "6703a17483d8eb8933235a1bfd940fb8357c6b98",
+      "date": "2026-08-27T11:17:57+08:00",
+      "author": "888newstep",
+      "email": "18951975797@163.com",
+      "message": "feat: FAQ-first priority retrieval, QA classifier and data cleaning pipeline\n\n- MultiRecallService: FAQ-first lookup with vector threshold hit, fallback to raw hybrid retrieval\n- MilvusQaVectorStoreService/VectorStoreService: support FAQ collection and knowledge import tuning\n- Add QaClassifier + DataCleaner with unit tests\n- Add eval baselines and FAQ startup script\n"
+    },
+    {
+      "sha": "7f9b0d925f6e875204d307064a28e83fc07d4cc8",
+      "date": "2026-08-25T22:28:54+08:00",
+      "author": "888newstep",
+      "email": "18951975797@163.com",
+      "message": "docs: archive RAG retrieval evaluation\n"
+    },
+    {
+      "sha": "721c90a351d03392b21851c3b075728452460ed1",
+      "date": "2026-08-25T22:26:40+08:00",
+      "author": "888newstep",
+      "email": "18951975797@163.com",
+      "message": "feat: add cross-encoded hybrid QA retrieval\n"
+    },
+    {
+      "sha": "ea13ef3810d7f40771f0e94e6f3fc69e86dfd3ad",
+      "date": "2026-08-25T17:25:08+08:00",
+      "author": "888newstep",
+      "email": "18951975797@163.com",
+      "message": "feat: harden customer support and knowledge RAG\n"
+    },
+    {
+      "sha": "eb14d04f7557458f8116d532be126d8ff020a762",
+      "date": "2026-08-17T15:53:58+08:00",
+      "author": "888newstep",
+      "email": "18951975797@163.com",
+      "message": "fix: suppress remaining type safety and null pointer warnings\n"
+    },
+    {
+      "sha": "4d5d6b1a3335e99c3ad8e281c344f4d4e938543d",
+      "date": "2026-08-17T15:16:56+08:00",
+      "author": "888newstep",
+      "email": "18951975797@163.com",
+      "message": "fix: resolve null type safety warnings and clean up unused imports\n"
+    },
+    {
+      "sha": "ab522e2c2b5305efb3252ba21cc3a9a7783bded2",
+      "date": "2026-08-17T14:29:28+08:00",
+      "author": "888newstep",
+      "email": "18951975797@163.com",
+      "message": "docs: add English Introduction and v1.0.0 Release Notes to README\n"
+    },
+    {
+      "sha": "cebbb33b6c75ce2b29ae97865b46a08641769fc1",
+      "date": "2026-08-17T12:46:43+08:00",
+      "author": "888newstep",
+      "email": "18951975797@163.com",
+      "message": "fix(deps): 修复 dependabot 报告的 5 个 moderate 漏洞\n\n- bcprov-jdk15on 1.70（hadoop-client 传递依赖，无修复版本）：从 milvus-sdk-java 排除，改用项目已有的 bcprov-jdk18on 1.84（同 provider 类的新 artifact 名），修复 GHSA-4h8f-2wvx-gg5w（DNS 投毒）、GHSA-8xfc-gm6g-vgpv（CPU 高占用）、GHSA-wjxj-5m7g-mg7q（DoS）\n- log4j-api 2.24.3 -> 2.25.5：修复 GHSA-qv9r-c865-cp47（MapMessage JSON 序列化非有限浮点编码问题）\n- commons-compress 1.26.0 -> 1.26.2：修复 CVE-2024-26308 / CVE-2024-25710\n"
+    },
+    {
+      "sha": "9c336fa42962eb87a8c26f77a415bde3248c0292",
+      "date": "2026-08-17T12:07:56+08:00",
+      "author": "888newstep",
+      "email": "18951975797@163.com",
+      "message": "fix: 移除 .env.example 的 UTF-8 BOM，修复 CI dotenv 解析失败\n\nCI 中 cp .env.example .env 后，java-dotenv 因首行 BOM 报\nDotenvException: Malformed entry，导致 3 个 Spring 上下文测试类\n（AiAgentApplicationTests / ObservabilityEndpointsTest / SecurityConfigTest）\n共 13 个测试全部失败。已移除 BOM 并统一为 LF 行尾。\n"
+    },
+    {
+      "sha": "f47352db81cc442276530c055c26d57127c5435e",
+      "date": "2026-08-17T11:10:56+08:00",
+      "author": "888newstep",
+      "email": "18951975797@163.com",
+      "message": "ci: 重新触发 CI（本地全量测试已通过 254/0）\n"
+    },
+    {
+      "sha": "1e5aed38b44dc54f6e32ee204b6324a5c6f9484f",
+      "date": "2026-08-17T10:49:36+08:00",
+      "author": "888newstep",
+      "email": "18951975797@163.com",
+      "message": "docs: README 增加架构图与英文简介\n\n- 开头增加英文简介（面向海外 GitHub 访客）\n- 新增架构总览区块：ASCII 架构图 + Mermaid flowchart，展示核心链路\n"
+    },
+    {
+      "sha": "1f3487620bd10c3e4a942e955baf7d11dccce879",
+      "date": "2026-08-17T10:32:59+08:00",
+      "author": "888newstep",
+      "email": "18951975797@163.com",
+      "message": "feat: RAG 评测增强与压测/预检工具链\n\n- RagEvaluationService 评测结果空安全处理（null 检索 → 空列表）\n- run-rag-evaluation.ps1 支持 DatasetKind 校验（unknown/sample/smoke/independent-human-labeled）\n- 新增 validate-rag-dataset.ps1（结构校验）、replay-adaptive-rag.ps1（Adaptive RAG 批量回放）、check-infrastructure.ps1（混合部署预检）、run-jmeter-smoke.ps1（JMeter 烟雾压测）\n- 新增 docs/JMETER_LOAD_TEST.md 压测文档、tests/jmeter/agent-smoke.jmx 参数化压测计划\n- 更新 docs/RAG_BENCHMARK.md / docs/TECH_OPTIMIZATION_PLAN.md / docs/observability.md\n- RagEvaluationServiceTest 覆盖新路径\n"
+    },
+    {
+      "sha": "29e7d4e150eb2143987ebcb4c299114b34638f5a",
+      "date": "2026-08-17T10:32:35+08:00",
+      "author": "888newstep",
+      "email": "18951975797@163.com",
+      "message": "feat: Milvus 只读模式与混合部署配置化增强\n\n- AiProperties 增加 milvus databaseName（默认 cs_agent）\n- MilvusInitConfig 用 aiProperties 替换硬编码 host/port，切换条件改为 @ConditionalOnProperty(type=milvus)\n- MilvusAdminService / MilvusQaVectorStoreService / MilvusVectorStoreService 注入 AiProperties，按配置的 database 探测 collection（支持只读复用）\n- CsDataImportService / EcommerceKnowledgeImportService 构造器注入 AiProperties，使用配置的 database 名\n- application.yml：REDIS_DATABASE 默认 1、MILVUS_DATABASE_NAME=cs_agent\n- .env.example：混合部署注释与 REDIS_DATABASE=1\n- 新增 Milvus 只读模式 / 条件 Bean 测试\n"
+    },
+    {
+      "sha": "26b3ced06774d29d4f0d3a9d57d2df9b3fc20244",
+      "date": "2026-08-17T10:32:17+08:00",
+      "author": "888newstep",
+      "email": "18951975797@163.com",
+      "message": "docs: README 优化（why-choose / Contributors）并合并官方摘要修复\n\n- README 新增\"为什么选择 AI Agent Platform\"定位表（对比 Spring AI / 低代码平台 / Demo）\n- README 末尾新增 Contributors 区块，感谢首个外部 PR 贡献者 codeAnqiang-ma\n- README 调整内容顺序：适用人群前移到定位之后\n- LongContextManager 摘要触发改用累计消息计数（ai:turns: 计数），与滑动窗口解耦\n- 同步官方回归测试 LongContextManagerSummaryIntervalTest 及已有用例 stub\n\nRefs: #1 官方 PR 修复已从 origin/main 合入工作区\n"
+    },
+    {
+      "sha": "71ff60860f750d0cf9226e817db20a4f13393d41",
+      "date": "2026-08-17T10:07:21+08:00",
+      "author": "888newstep",
+      "email": "18951975797@163.com",
+      "message": "Merge pull request #2 from codeAnqiang-ma/fix/summary-interval-decouple-from-sliding-window\n\nfix: 会话摘要触发改用累计消息计数，与滑动窗口解耦"
+    },
+    {
+      "sha": "cbcd996315279d4cd2008658c7e177e6c0c67689",
+      "date": "2026-08-13T00:20:38+08:00",
+      "author": "codeAnqiang-ma",
+      "email": "273298913+codeAnqiang-ma@users.noreply.github.com",
+      "message": "fix: 会话摘要触发改用累计消息计数，与滑动窗口解耦\n\n滑动窗口会把 messages.size() 截断到固定上限，窗口填满后\n\"每 N 条消息生成一次摘要\"退化为常量条件：默认配置（10/5）下\n每条消息都触发一次摘要 LLM 调用，间隔不整除窗口时摘要永久停止。\n改为基于 Redis 原子自增的累计消息计数取模，并在 clearSession\n中一并清理计数 key，摘要条目的 round 字段恢复为真实轮次。\n\nFixes #1\n\nCo-authored-by: Cursor <cursoragent@cursor.com>\n"
+    },
+    {
+      "sha": "abf9846a86a6effa7b5320b1e153f96e75abe98e",
+      "date": "2026-08-10T22:49:56+08:00",
+      "author": "888newstep",
+      "email": "18951975797@163.com",
+      "message": "fix: bump avro and snappy-java to fix moderate CVEs\n\navro 1.11.4 -> 1.12.1 (CVE-2025-33042), snappy-java 1.1.10.4 -> 1.1.10.8 (CVE-2024-23454).\n"
+    },
+    {
+      "sha": "77930c1a61f9866396ef9a38e48959f51474ae42",
+      "date": "2026-08-10T22:31:51+08:00",
+      "author": "888newstep",
+      "email": "18951975797@163.com",
+      "message": "fix: make bm25 an independent corpus recall path\n\n- Add VectorStoreService.fetchAllChunks and implement it in the QA adapter\n  (Milvus query) and in-memory store; LangChain4j store degrades gracefully.\n- MultiRecallService now builds a TTL-cached BM25 index over the full corpus\n  and fuses it with the vector Top-20 via RRF, instead of re-ranking only the\n  vector candidate pool. Falls back to candidate-pool BM25 when the corpus is\n  unavailable.\n- Switch Chinese tokenization from single characters to overlapping bigrams\n  to reduce over-matching and improve lexical precision.\n- Update MultiRecallServiceTest for the independent recall path.\n"
+    },
+    {
+      "sha": "e59b381d067ab50056b04801615177129985905b",
+      "date": "2026-08-10T21:55:50+08:00",
+      "author": "888newstep",
+      "email": "18951975797@163.com",
+      "message": "fix: harden rag benchmark data boundaries\n"
+    },
+    {
+      "sha": "4d9c2aee706f3073b2c8bad53845fc4c4c514f54",
+      "date": "2026-08-10T20:45:36+08:00",
+      "author": "888newstep",
+      "email": "18951975797@163.com",
+      "message": "fix: restore garbled user-facing text\n"
+    },
+    {
+      "sha": "8fdd3bc4a9aee85359790a7b8b806a1bf4845fbf",
+      "date": "2026-08-10T20:26:35+08:00",
+      "author": "888newstep",
+      "email": "18951975797@163.com",
+      "message": "chore: record rag benchmark provenance\n"
+    },
+    {
+      "sha": "dc98a756d057921efa8681855dcf6effbc83e7e8",
+      "date": "2026-08-10T20:17:51+08:00",
+      "author": "888newstep",
+      "email": "18951975797@163.com",
+      "message": "feat: expand rag evaluation metrics\n"
+    }
+  ],
+  "commit_sha": "72ea6323c0e4ec4df1312bf07e97f40317b3d5ae",
+  "extracted_at": "2026-10-05T18:03:23.054481+00:00"
+}

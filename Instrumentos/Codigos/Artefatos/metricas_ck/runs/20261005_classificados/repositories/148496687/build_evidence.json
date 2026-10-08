@@ -1,0 +1,4600 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "1.5.16.RELEASE;1.5.9.RELEASE;2.1.10.RELEASE;2.1.11.RELEASE;2.1.13.RELEASE;2.1.3.RELEASE;2.2.0.RELEASE;2.2.1.RELEASE;2.2.11.RELEASE;2.2.2.RELEASE;2.2.4.RELEASE;2.6.4",
+  "spring_boot_major": "multiple",
+  "java_versions_declared": "1.8",
+  "build_evidence": [
+    {
+      "file": "lab-01-spring-security/lab-01-springsecurity-demo-role/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-01-spring-security/lab-01-springsecurity-demo-role/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-01-spring-security/lab-01-springsecurity-demo-role/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "lab-01-spring-security/lab-01-springsecurity-demo/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-01-spring-security/lab-01-springsecurity-demo/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-01-spring-security/lab-01-springsecurity-demo/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "lab-02-spring-security-oauth/authorization-code-server/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-02-spring-security-oauth/authorization-code-server/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-02-spring-security-oauth/authorization-code-server/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "lab-02-spring-security-oauth/client-credentials-server/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-02-spring-security-oauth/client-credentials-server/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-02-spring-security-oauth/client-credentials-server/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "lab-02-spring-security-oauth/implicit-server/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-02-spring-security-oauth/implicit-server/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-02-spring-security-oauth/implicit-server/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "lab-02-spring-security-oauth/resource-owner-password-credentials-server-by-jdbc-token-store/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-02-spring-security-oauth/resource-owner-password-credentials-server-by-jdbc-token-store/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-02-spring-security-oauth/resource-owner-password-credentials-server-by-jdbc-token-store/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "lab-02-spring-security-oauth/resource-owner-password-credentials-server-with-refresh-token/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-02-spring-security-oauth/resource-owner-password-credentials-server-with-refresh-token/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-02-spring-security-oauth/resource-owner-password-credentials-server-with-refresh-token/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "lab-02-spring-security-oauth/resource-owner-password-credentials-server-with-revoke-token/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-02-spring-security-oauth/resource-owner-password-credentials-server-with-revoke-token/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-02-spring-security-oauth/resource-owner-password-credentials-server-with-revoke-token/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "lab-02-spring-security-oauth/resource-owner-password-credentials-server/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-02-spring-security-oauth/resource-owner-password-credentials-server/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-02-spring-security-oauth/resource-owner-password-credentials-server/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "lab-03-kafka/lab-03-kafka-demo-ack/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-03-kafka/lab-03-kafka-demo-ack/pom.xml",
+      "artifact": "spring-boot-starter-json"
+    },
+    {
+      "file": "lab-03-kafka/lab-03-kafka-demo-ack/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-03-kafka/lab-03-kafka-demo-batch-consume/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-03-kafka/lab-03-kafka-demo-batch-consume/pom.xml",
+      "artifact": "spring-boot-starter-json"
+    },
+    {
+      "file": "lab-03-kafka/lab-03-kafka-demo-batch-consume/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-03-kafka/lab-03-kafka-demo-batch/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-03-kafka/lab-03-kafka-demo-batch/pom.xml",
+      "artifact": "spring-boot-starter-json"
+    },
+    {
+      "file": "lab-03-kafka/lab-03-kafka-demo-batch/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-03-kafka/lab-03-kafka-demo-broadcast/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-03-kafka/lab-03-kafka-demo-broadcast/pom.xml",
+      "artifact": "spring-boot-starter-json"
+    },
+    {
+      "file": "lab-03-kafka/lab-03-kafka-demo-broadcast/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-03-kafka/lab-03-kafka-demo-concurrency/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-03-kafka/lab-03-kafka-demo-concurrency/pom.xml",
+      "artifact": "spring-boot-starter-json"
+    },
+    {
+      "file": "lab-03-kafka/lab-03-kafka-demo-concurrency/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-03-kafka/lab-03-kafka-demo-transaction/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-03-kafka/lab-03-kafka-demo-transaction/pom.xml",
+      "artifact": "spring-boot-starter-json"
+    },
+    {
+      "file": "lab-03-kafka/lab-03-kafka-demo-transaction/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-03-kafka/lab-03-kafka-demo/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-03-kafka/lab-03-kafka-demo/pom.xml",
+      "artifact": "spring-boot-starter-json"
+    },
+    {
+      "file": "lab-03-kafka/lab-03-kafka-demo/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-03-kafka/lab-03-kafka-native/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-03-kafka/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-04-rabbitmq/lab-04-rabbitmq-consume-retry/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-04-rabbitmq/lab-04-rabbitmq-consume-retry/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "lab-04-rabbitmq/lab-04-rabbitmq-consume-retry/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-04-rabbitmq/lab-04-rabbitmq-demo-ack/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-04-rabbitmq/lab-04-rabbitmq-demo-ack/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "lab-04-rabbitmq/lab-04-rabbitmq-demo-ack/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-04-rabbitmq/lab-04-rabbitmq-demo-batch-consume-02/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-04-rabbitmq/lab-04-rabbitmq-demo-batch-consume-02/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "lab-04-rabbitmq/lab-04-rabbitmq-demo-batch-consume-02/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-04-rabbitmq/lab-04-rabbitmq-demo-batch-consume/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-04-rabbitmq/lab-04-rabbitmq-demo-batch-consume/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "lab-04-rabbitmq/lab-04-rabbitmq-demo-batch-consume/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-04-rabbitmq/lab-04-rabbitmq-demo-batch/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-04-rabbitmq/lab-04-rabbitmq-demo-batch/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "lab-04-rabbitmq/lab-04-rabbitmq-demo-batch/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-04-rabbitmq/lab-04-rabbitmq-demo-concurrency/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-04-rabbitmq/lab-04-rabbitmq-demo-concurrency/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "lab-04-rabbitmq/lab-04-rabbitmq-demo-concurrency/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-04-rabbitmq/lab-04-rabbitmq-demo-confirm-async/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-04-rabbitmq/lab-04-rabbitmq-demo-confirm-async/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "lab-04-rabbitmq/lab-04-rabbitmq-demo-confirm-async/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-04-rabbitmq/lab-04-rabbitmq-demo-confirm/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-04-rabbitmq/lab-04-rabbitmq-demo-confirm/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "lab-04-rabbitmq/lab-04-rabbitmq-demo-confirm/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-04-rabbitmq/lab-04-rabbitmq-demo-delay/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-04-rabbitmq/lab-04-rabbitmq-demo-delay/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "lab-04-rabbitmq/lab-04-rabbitmq-demo-delay/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-04-rabbitmq/lab-04-rabbitmq-demo-error-handler/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-04-rabbitmq/lab-04-rabbitmq-demo-error-handler/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "lab-04-rabbitmq/lab-04-rabbitmq-demo-error-handler/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-04-rabbitmq/lab-04-rabbitmq-demo-json/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-04-rabbitmq/lab-04-rabbitmq-demo-json/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "lab-04-rabbitmq/lab-04-rabbitmq-demo-json/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-04-rabbitmq/lab-04-rabbitmq-demo-message-model/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-04-rabbitmq/lab-04-rabbitmq-demo-message-model/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "lab-04-rabbitmq/lab-04-rabbitmq-demo-message-model/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-04-rabbitmq/lab-04-rabbitmq-demo-orderly/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-04-rabbitmq/lab-04-rabbitmq-demo-orderly/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "lab-04-rabbitmq/lab-04-rabbitmq-demo-orderly/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-04-rabbitmq/lab-04-rabbitmq-demo-rpc/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-04-rabbitmq/lab-04-rabbitmq-demo-rpc/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "lab-04-rabbitmq/lab-04-rabbitmq-demo-rpc/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-04-rabbitmq/lab-04-rabbitmq-demo-transaction/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-04-rabbitmq/lab-04-rabbitmq-demo-transaction/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "lab-04-rabbitmq/lab-04-rabbitmq-demo-transaction/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-04-rabbitmq/lab-04-rabbitmq-demo/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-04-rabbitmq/lab-04-rabbitmq-demo/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "lab-04-rabbitmq/lab-04-rabbitmq-demo/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-04-rabbitmq/lab-04-rabbitmq-native/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-05-benchmark-tomcat-jetty-undertow/lab-05-jetty/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-05-benchmark-tomcat-jetty-undertow/lab-05-jetty/pom.xml",
+      "artifact": "spring-boot-starter-jetty"
+    },
+    {
+      "file": "lab-05-benchmark-tomcat-jetty-undertow/lab-05-jetty/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "lab-05-benchmark-tomcat-jetty-undertow/lab-05-tomcat-apr/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-05-benchmark-tomcat-jetty-undertow/lab-05-tomcat-apr/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "lab-05-benchmark-tomcat-jetty-undertow/lab-05-tomcat/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-05-benchmark-tomcat-jetty-undertow/lab-05-tomcat/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "lab-05-benchmark-tomcat-jetty-undertow/lab-05-undertow/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-05-benchmark-tomcat-jetty-undertow/lab-05-undertow/pom.xml",
+      "artifact": "spring-boot-starter-undertow"
+    },
+    {
+      "file": "lab-05-benchmark-tomcat-jetty-undertow/lab-05-undertow/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "lab-05-benchmark-tomcat-jetty-undertow/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-06/lab-06-springmvc-tomcat/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-06/lab-06-springmvc-tomcat/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "lab-06/lab-06-webflux-netty/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "lab-06/lab-06-webflux-netty/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "lab-06/lab-06-webflux-tomcat/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "lab-06/lab-06-webflux-tomcat/pom.xml",
+      "artifact": "spring-boot-starter-tomcat"
+    },
+    {
+      "file": "lab-06/lab-06-webflux-tomcat/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "lab-06/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-07/lab-07-spring-cloud-gateway/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-07/lab-07-spring-cloud-gateway/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "lab-07/lab-07-spring-cloud-gateway/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-07/lab-07-spring-cloud-gateway/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "lab-07/lab-07-zuul/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-07/lab-07-zuul/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "lab-07/lab-07-zuul/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-07/lab-07-zuul/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-07/lab-07-zuul/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "lab-11-spring-data-redis/lab-07-spring-data-redis-unit-test/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-11-spring-data-redis/lab-07-spring-data-redis-unit-test/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-11-spring-data-redis/lab-07-spring-data-redis-with-jedis/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-11-spring-data-redis/lab-07-spring-data-redis-with-jedis/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "lab-11-spring-data-redis/lab-07-spring-data-redis-with-jedis/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-11-spring-data-redis/lab-07-spring-data-redis-with-redisson/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-11-spring-data-redis/lab-07-spring-data-redis-with-redisson/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-12-mybatis/lab-12-mybatis-annotation/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-12-mybatis/lab-12-mybatis-annotation/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "lab-12-mybatis/lab-12-mybatis-annotation/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-12-mybatis/lab-12-mybatis-plus-tenant/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-12-mybatis/lab-12-mybatis-plus-tenant/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "lab-12-mybatis/lab-12-mybatis-plus-tenant/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-12-mybatis/lab-12-mybatis-plus/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-12-mybatis/lab-12-mybatis-plus/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "lab-12-mybatis/lab-12-mybatis-plus/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-12-mybatis/lab-12-mybatis-tk/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-12-mybatis/lab-12-mybatis-tk/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "lab-12-mybatis/lab-12-mybatis-tk/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-12-mybatis/lab-12-mybatis-xml/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-12-mybatis/lab-12-mybatis-xml/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "lab-12-mybatis/lab-12-mybatis-xml/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-13-spring-data-jpa/lab-13-jpa/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-13-spring-data-jpa/lab-13-jpa/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "lab-13-spring-data-jpa/lab-13-jpa/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "lab-13-spring-data-jpa/lab-13-jpa/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-14-spring-jdbc-template/lab-14-jdbctemplate/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-14-spring-jdbc-template/lab-14-jdbctemplate/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "lab-14-spring-jdbc-template/lab-14-jdbctemplate/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-15-spring-data-es/lab-15-spring-data-elasticsearch/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-15-spring-data-es/lab-15-spring-data-elasticsearch/pom.xml",
+      "artifact": "spring-boot-starter-data-elasticsearch"
+    },
+    {
+      "file": "lab-15-spring-data-es/lab-15-spring-data-elasticsearch/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-15-spring-data-es/lab-15-spring-data-jest/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-15-spring-data-es/lab-15-spring-data-jest/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-16-spring-data-mongo/lab-16-spring-data-mongodb/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-16-spring-data-mongo/lab-16-spring-data-mongodb/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb"
+    },
+    {
+      "file": "lab-16-spring-data-mongo/lab-16-spring-data-mongodb/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-17/lab-17-dynamic-datasource-baomidou-01/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-17/lab-17-dynamic-datasource-baomidou-01/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "lab-17/lab-17-dynamic-datasource-baomidou-01/pom.xml",
+      "artifact": "spring-boot-actuator"
+    },
+    {
+      "file": "lab-17/lab-17-dynamic-datasource-baomidou-01/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-17/lab-17-dynamic-datasource-baomidou-02/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-17/lab-17-dynamic-datasource-baomidou-02/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "lab-17/lab-17-dynamic-datasource-baomidou-02/pom.xml",
+      "artifact": "spring-boot-actuator"
+    },
+    {
+      "file": "lab-17/lab-17-dynamic-datasource-baomidou-02/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-17/lab-17-dynamic-datasource-jdbctemplate/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-17/lab-17-dynamic-datasource-jdbctemplate/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "lab-17/lab-17-dynamic-datasource-jdbctemplate/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-17/lab-17-dynamic-datasource-mybatis/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-17/lab-17-dynamic-datasource-mybatis/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "lab-17/lab-17-dynamic-datasource-mybatis/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-17/lab-17-dynamic-datasource-sharding-jdbc-01/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-17/lab-17-dynamic-datasource-sharding-jdbc-01/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "lab-17/lab-17-dynamic-datasource-sharding-jdbc-01/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-17/lab-17-dynamic-datasource-sharding-jdbc-02/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-17/lab-17-dynamic-datasource-sharding-jdbc-02/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "lab-17/lab-17-dynamic-datasource-sharding-jdbc-02/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-17/lab-17-dynamic-datasource-springdatajpa/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-17/lab-17-dynamic-datasource-springdatajpa/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "lab-17/lab-17-dynamic-datasource-springdatajpa/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "lab-17/lab-17-dynamic-datasource-springdatajpa/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-18/lab-18-sharding-datasource-01/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-18/lab-18-sharding-datasource-01/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "lab-18/lab-18-sharding-datasource-01/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-18/lab-18-sharding-datasource-02/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-18/lab-18-sharding-datasource-02/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "lab-18/lab-18-sharding-datasource-02/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-19/lab-19-datasource-pool-druid-multiple/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-19/lab-19-datasource-pool-druid-multiple/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "lab-19/lab-19-datasource-pool-druid-multiple/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-19/lab-19-datasource-pool-druid-multiple/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-19/lab-19-datasource-pool-druid-single/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-19/lab-19-datasource-pool-druid-single/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "lab-19/lab-19-datasource-pool-druid-single/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-19/lab-19-datasource-pool-druid-single/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-19/lab-19-datasource-pool-hikaricp-multiple/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-19/lab-19-datasource-pool-hikaricp-multiple/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "lab-19/lab-19-datasource-pool-hikaricp-multiple/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-19/lab-19-datasource-pool-hikaricp-single/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-19/lab-19-datasource-pool-hikaricp-single/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "lab-19/lab-19-datasource-pool-hikaricp-single/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-20/lab-20-database-version-control-flyway/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-20/lab-20-database-version-control-flyway/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "lab-20/lab-20-database-version-control-liquibase/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-20/lab-20-database-version-control-liquibase/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "lab-21/lab-21-cache-demo/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-21/lab-21-cache-demo/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "lab-21/lab-21-cache-demo/pom.xml",
+      "artifact": "spring-boot-starter-cache"
+    },
+    {
+      "file": "lab-21/lab-21-cache-demo/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-21/lab-21-cache-ehcache/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-21/lab-21-cache-ehcache/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "lab-21/lab-21-cache-ehcache/pom.xml",
+      "artifact": "spring-boot-starter-cache"
+    },
+    {
+      "file": "lab-21/lab-21-cache-ehcache/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-21/lab-21-cache-redis/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-21/lab-21-cache-redis/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "lab-21/lab-21-cache-redis/pom.xml",
+      "artifact": "spring-boot-starter-cache"
+    },
+    {
+      "file": "lab-21/lab-21-cache-redis/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "lab-21/lab-21-cache-redis/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-22/lab-22-validation-01/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-22/lab-22-validation-01/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-22/lab-22-validation-01/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-23/lab-springmvc-23-01/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-23/lab-springmvc-23-01/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-23/lab-springmvc-23-01/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-23/lab-springmvc-23-02/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-23/lab-springmvc-23-02/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-23/lab-springmvc-23-02/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-24/lab-24-apidoc-japidocs/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-24/lab-24-apidoc-japidocs/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-24/lab-24-apidoc-showdoc/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-24/lab-24-apidoc-showdoc/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-24/lab-24-apidoc-swagger-knife4j/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-24/lab-24-apidoc-swagger-knife4j/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-24/lab-24-apidoc-swagger-starter/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-24/lab-24-apidoc-swagger-starter/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-24/lab-24-apidoc-swagger/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-24/lab-24-apidoc-swagger/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-25/lab-websocket-25-01/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-25/lab-websocket-25-01/pom.xml",
+      "artifact": "spring-boot-starter-websocket"
+    },
+    {
+      "file": "lab-25/lab-websocket-25-02/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-25/lab-websocket-25-02/pom.xml",
+      "artifact": "spring-boot-starter-websocket"
+    },
+    {
+      "file": "lab-25/lab-websocket-25-03/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-25/lab-websocket-25-03/pom.xml",
+      "artifact": "spring-boot-starter-websocket"
+    },
+    {
+      "file": "lab-26/lab-26-distributed-session-01/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-26/lab-26-distributed-session-01/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-26/lab-26-distributed-session-01/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "lab-26/lab-26-distributed-session-02/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-26/lab-26-distributed-session-02/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-26/lab-26-distributed-session-02/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb"
+    },
+    {
+      "file": "lab-26/lab-26-distributed-session-springsecurity/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-26/lab-26-distributed-session-springsecurity/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-26/lab-26-distributed-session-springsecurity/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "lab-26/lab-26-distributed-session-springsecurity/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "lab-27/lab-27-webflux-01/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-27/lab-27-webflux-01/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "lab-27/lab-27-webflux-01/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-27/lab-27-webflux-02/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-27/lab-27-webflux-02/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "lab-27/lab-27-webflux-02/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-27/lab-27-webflux-03/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-27/lab-27-webflux-03/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "lab-27/lab-27-webflux-03/pom.xml",
+      "artifact": "spring-boot-starter-tomcat"
+    },
+    {
+      "file": "lab-27/lab-27-webflux-03/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-27/lab-27-webflux-elasticsearch/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-27/lab-27-webflux-elasticsearch/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "lab-27/lab-27-webflux-elasticsearch/pom.xml",
+      "artifact": "spring-boot-starter-data-elasticsearch"
+    },
+    {
+      "file": "lab-27/lab-27-webflux-elasticsearch/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-27/lab-27-webflux-mongodb/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-27/lab-27-webflux-mongodb/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "lab-27/lab-27-webflux-mongodb/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb-reactive"
+    },
+    {
+      "file": "lab-27/lab-27-webflux-mongodb/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-27/lab-27-webflux-r2dbc/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-27/lab-27-webflux-r2dbc/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "lab-27/lab-27-webflux-r2dbc/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-27/lab-27-webflux-redis/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-27/lab-27-webflux-redis/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "lab-27/lab-27-webflux-redis/pom.xml",
+      "artifact": "spring-boot-starter-data-redis-reactive"
+    },
+    {
+      "file": "lab-27/lab-27-webflux-redis/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-28/lab-28-task-demo/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-28/lab-28-task-demo/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-28/lab-28-task-quartz-jdbc/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-28/lab-28-task-quartz-jdbc/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "lab-28/lab-28-task-quartz-jdbc/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-28/lab-28-task-quartz-jdbc/pom.xml",
+      "artifact": "spring-boot-starter-quartz"
+    },
+    {
+      "file": "lab-28/lab-28-task-quartz-jdbc/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-28/lab-28-task-quartz-memory/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-28/lab-28-task-quartz-memory/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-28/lab-28-task-quartz-memory/pom.xml",
+      "artifact": "spring-boot-starter-quartz"
+    },
+    {
+      "file": "lab-28/lab-28-task-xxl-job/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-28/lab-28-task-xxl-job/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-29/lab-29-async-demo/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-29/lab-29-async-demo/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "lab-29/lab-29-async-demo/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-29/lab-29-async-two/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-29/lab-29-async-two/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "lab-29/lab-29-async-two/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-30/lab-30-dubbo-annotations-demo/user-rpc-service-consumer-02/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-30/lab-30-dubbo-annotations-demo/user-rpc-service-consumer-02/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "lab-30/lab-30-dubbo-annotations-demo/user-rpc-service-provider-02/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-30/lab-30-dubbo-annotations-demo/user-rpc-service-provider-02/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "lab-30/lab-30-dubbo-annotations-nacos/user-rpc-service-consumer-03/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-30/lab-30-dubbo-annotations-nacos/user-rpc-service-consumer-03/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "lab-30/lab-30-dubbo-annotations-nacos/user-rpc-service-provider-03/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-30/lab-30-dubbo-annotations-nacos/user-rpc-service-provider-03/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "lab-30/lab-30-dubbo-annotations-sentinel/user-rpc-service-consumer-04/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-30/lab-30-dubbo-annotations-sentinel/user-rpc-service-consumer-04/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-30/lab-30-dubbo-annotations-sentinel/user-rpc-service-provider-04/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-30/lab-30-dubbo-annotations-sentinel/user-rpc-service-provider-04/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "lab-30/lab-30-dubbo-xml-demo/user-rpc-service-consumer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-30/lab-30-dubbo-xml-demo/user-rpc-service-consumer/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "lab-30/lab-30-dubbo-xml-demo/user-rpc-service-provider/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-30/lab-30-dubbo-xml-demo/user-rpc-service-provider/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "lab-31/lab-31-rocketmq-demo/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-31/lab-31-rocketmq-demo/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-31/lab-31-rocketmq-ons/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-31/lab-31-rocketmq-ons/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-32/lab-32-activemq-demo-concurrency/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-32/lab-32-activemq-demo-concurrency/pom.xml",
+      "artifact": "spring-boot-starter-activemq"
+    },
+    {
+      "file": "lab-32/lab-32-activemq-demo-concurrency/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-32/lab-32-activemq-demo-consume-retry/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-32/lab-32-activemq-demo-consume-retry/pom.xml",
+      "artifact": "spring-boot-starter-activemq"
+    },
+    {
+      "file": "lab-32/lab-32-activemq-demo-consume-retry/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-32/lab-32-activemq-demo-delay/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-32/lab-32-activemq-demo-delay/pom.xml",
+      "artifact": "spring-boot-starter-activemq"
+    },
+    {
+      "file": "lab-32/lab-32-activemq-demo-delay/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-32/lab-32-activemq-demo-message-model/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-32/lab-32-activemq-demo-message-model/pom.xml",
+      "artifact": "spring-boot-starter-activemq"
+    },
+    {
+      "file": "lab-32/lab-32-activemq-demo-message-model/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-32/lab-32-activemq-demo-orderly/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-32/lab-32-activemq-demo-orderly/pom.xml",
+      "artifact": "spring-boot-starter-activemq"
+    },
+    {
+      "file": "lab-32/lab-32-activemq-demo-orderly/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-32/lab-32-activemq-demo/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-32/lab-32-activemq-demo/pom.xml",
+      "artifact": "spring-boot-starter-activemq"
+    },
+    {
+      "file": "lab-32/lab-32-activemq-demo/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-33/lab-33-shiro-demo/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-33/lab-33-shiro-demo/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-34/lab-34-actuator-demo-auditevents/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-34/lab-34-actuator-demo-auditevents/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-34/lab-34-actuator-demo-auditevents/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "lab-34/lab-34-actuator-demo-auditevents/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "lab-34/lab-34-actuator-demo-custom-endpoint/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-34/lab-34-actuator-demo-custom-endpoint/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-34/lab-34-actuator-demo-custom-endpoint/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "lab-34/lab-34-actuator-demo-health/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-34/lab-34-actuator-demo-health/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-34/lab-34-actuator-demo-health/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "lab-34/lab-34-actuator-demo-httptrace/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-34/lab-34-actuator-demo-httptrace/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-34/lab-34-actuator-demo-httptrace/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "lab-34/lab-34-actuator-demo-info/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-34/lab-34-actuator-demo-info/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-34/lab-34-actuator-demo-info/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "lab-34/lab-34-actuator-demo-info/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "lab-34/lab-34-actuator-demo-metrics/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-34/lab-34-actuator-demo-metrics/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-34/lab-34-actuator-demo-metrics/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "lab-34/lab-34-actuator-demo-security/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-34/lab-34-actuator-demo-security/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-34/lab-34-actuator-demo-security/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "lab-34/lab-34-actuator-demo-security/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "lab-34/lab-34-actuator-demo/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-34/lab-34-actuator-demo/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-34/lab-34-actuator-demo/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "lab-34/lab-34-actuator-test/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-34/lab-34-actuator-test/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-34/lab-34-actuator-test/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "lab-35/lab-35-admin-01-adminserver/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-35/lab-35-admin-01-demo-application/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-35/lab-35-admin-01-demo-application/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-35/lab-35-admin-01-demo-application/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "lab-35/lab-35-admin-02-adminserver/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-35/lab-35-admin-02-demo-application/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-35/lab-35-admin-02-demo-application/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-35/lab-35-admin-02-demo-application/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "lab-35/lab-35-admin-02-eurekaserver/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-35/lab-35-admin-03-adminserver/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-35/lab-35-admin-03-adminserver/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "lab-35/lab-35-admin-03-demo-application/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-35/lab-35-admin-03-demo-application/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-35/lab-35-admin-03-demo-application/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "lab-35/lab-35-admin-03-demo-application/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "lab-35/lab-35-admin-04-adminserver/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-35/lab-35-admin-04-adminserver/pom.xml",
+      "artifact": "spring-boot-starter-mail"
+    },
+    {
+      "file": "lab-35/lab-35-admin-05-adminserver/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-36/lab-36-prometheus-demo/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-36/lab-36-prometheus-demo/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-36/lab-36-prometheus-demo/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "lab-37/lab-37-logging-actuator/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-37/lab-37-logging-actuator/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-37/lab-37-logging-actuator/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "lab-37/lab-37-logging-aop/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-37/lab-37-logging-aop/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-37/lab-37-logging-aop/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "lab-37/lab-37-logging-debug/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-37/lab-37-logging-debug/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-37/lab-37-logging-demo/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-37/lab-37-logging-demo/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-37/lab-37-logging-log4j2/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-37/lab-37-logging-log4j2/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "lab-37/lab-37-logging-log4j2/pom.xml",
+      "artifact": "spring-boot-starter-log4j2"
+    },
+    {
+      "file": "lab-37/lab-37-logging-log4j2/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-37/lab-37-logging-logback/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-37/lab-37-logging-logback/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-37/lab-37-logging-multi-env/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-37/lab-37-logging-multi-env/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-38/lab-38-elk-demo/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-38/lab-38-elk-demo/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-39/lab-39-activemq/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-39/lab-39-activemq/pom.xml",
+      "artifact": "spring-boot-starter-activemq"
+    },
+    {
+      "file": "lab-39/lab-39-activemq/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-39/lab-39-async/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-39/lab-39-async/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-39/lab-39-demo/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-39/lab-39-demo/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-39/lab-39-demo/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "lab-39/lab-39-elasticsearch-jest/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-39/lab-39-elasticsearch-jest/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-39/lab-39-elasticsearch/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-39/lab-39-elasticsearch/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-39/lab-39-elasticsearch/pom.xml",
+      "artifact": "spring-boot-starter-data-elasticsearch"
+    },
+    {
+      "file": "lab-39/lab-39-kafka/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-39/lab-39-kafka/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-39/lab-39-logback/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-39/lab-39-logback/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-39/lab-39-mongodb/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-39/lab-39-mongodb/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-39/lab-39-mongodb/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb"
+    },
+    {
+      "file": "lab-39/lab-39-mysql/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-39/lab-39-mysql/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-39/lab-39-mysql/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "lab-39/lab-39-opentracing/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-39/lab-39-opentracing/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-39/lab-39-rabbitmq-demo/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-39/lab-39-rabbitmq-demo/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "lab-39/lab-39-rabbitmq-demo/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-39/lab-39-redis/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-39/lab-39-redis/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-39/lab-39-redis/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "lab-39/lab-39-rocketmq/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-39/lab-39-rocketmq/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-39/lab-39-skywalking-dubbo/lab-39-skywalking-dubbo-consumer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-39/lab-39-skywalking-dubbo/lab-39-skywalking-dubbo-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-39/lab-39-skywalking-dubbo/lab-39-skywalking-dubbo-provider/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-39/lab-39-skywalking-dubbo/lab-39-skywalking-dubbo-provider/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "lab-39/lab-39-springmvc/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-39/lab-39-springmvc/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-39/lab-39-trace-annotations/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-39/lab-39-trace-annotations/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-40/lab-40-activemq/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-40/lab-40-activemq/pom.xml",
+      "artifact": "spring-boot-starter-activemq"
+    },
+    {
+      "file": "lab-40/lab-40-activemq/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-40/lab-40-demo/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-40/lab-40-demo/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-40/lab-40-demo/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "lab-40/lab-40-elasticsearch/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-40/lab-40-elasticsearch/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-40/lab-40-elasticsearch/pom.xml",
+      "artifact": "spring-boot-starter-data-elasticsearch"
+    },
+    {
+      "file": "lab-40/lab-40-kafka/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-40/lab-40-kafka/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-40/lab-40-logback/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-40/lab-40-logback/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-40/lab-40-mongodb/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-40/lab-40-mongodb/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-40/lab-40-mongodb/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb"
+    },
+    {
+      "file": "lab-40/lab-40-mysql/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-40/lab-40-mysql/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-40/lab-40-mysql/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "lab-40/lab-40-opentracing/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-40/lab-40-opentracing/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-40/lab-40-rabbitmq/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-40/lab-40-rabbitmq/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "lab-40/lab-40-rabbitmq/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-40/lab-40-redis/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-40/lab-40-redis/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-40/lab-40-redis/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "lab-40/lab-40-springmvc/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-40/lab-40-springmvc/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-40/lab-40-zipkin-dubbo/lab-40-zipkin-dubbo-consumer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-40/lab-40-zipkin-dubbo/lab-40-zipkin-dubbo-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-40/lab-40-zipkin-dubbo/lab-40-zipkin-dubbo-provider/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-40/lab-40-zipkin-dubbo/lab-40-zipkin-dubbo-provider/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "lab-41/lab-41-demo01/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-41/lab-41-demo01/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-41/lab-41-demo01/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "lab-41/lab-41-demo01/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "lab-41/lab-41-demo02/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-41/lab-41-demo02/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-41/lab-41-demo02/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "lab-41/lab-41-demo02/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "lab-42/lab-42-demo01/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-42/lab-42-demo01/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-42/lab-42-demo01/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "lab-42/lab-42-demo01/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-42/lab-42-demo02/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-42/lab-42-demo02/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-42/lab-42-demo02/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "lab-42/lab-42-demo02/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-43/lab-43-demo-configname/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-43/lab-43-demo-configname/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "lab-43/lab-43-demo-jasypt/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-43/lab-43-demo-jasypt/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "lab-43/lab-43-demo-jasypt/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-43/lab-43-demo-profiles/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-43/lab-43-demo-profiles/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-43/lab-43-demo/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-43/lab-43-demo/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "lab-43/lab-43-demo/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "lab-44/lab-44-nacos-config-demo-actuator/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-44/lab-44-nacos-config-demo-actuator/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-44/lab-44-nacos-config-demo-actuator/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "lab-44/lab-44-nacos-config-demo-auto-refresh/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-44/lab-44-nacos-config-demo-auto-refresh/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-44/lab-44-nacos-config-demo-jasypt/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-44/lab-44-nacos-config-demo-jasypt/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-44/lab-44-nacos-config-demo-jasypt/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-44/lab-44-nacos-config-demo-multi/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-44/lab-44-nacos-config-demo-multi/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-44/lab-44-nacos-config-demo-profiles/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-44/lab-44-nacos-config-demo-profiles/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-44/lab-44-nacos-config-demo/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-44/lab-44-nacos-config-demo/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "lab-44/lab-44-nacos-discovery-demo/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-44/lab-44-nacos-discovery-demo/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-45/lab-45-apollo-demo-auto-refresh/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-45/lab-45-apollo-demo-auto-refresh/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-45/lab-45-apollo-demo-jasypt/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-45/lab-45-apollo-demo-jasypt/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-45/lab-45-apollo-demo-jasypt/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-45/lab-45-apollo-demo-multi/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-45/lab-45-apollo-demo-multi/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-45/lab-45-apollo-demo-profiles/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-45/lab-45-apollo-demo-profiles/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-45/lab-45-apollo-demo/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-45/lab-45-apollo-demo/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "lab-46/lab-46-sentinel-demo-apollo/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-46/lab-46-sentinel-demo-apollo/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-46/lab-46-sentinel-demo-file/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-46/lab-46-sentinel-demo-file/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-46/lab-46-sentinel-demo-nacos/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-46/lab-46-sentinel-demo-nacos/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-46/lab-46-sentinel-demo/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-46/lab-46-sentinel-demo/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-47/yunai-server-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "lab-48-hot-swap/lab-48-demo/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-48-hot-swap/lab-48-demo/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-49/lab-49-lombok-demo/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-49/lab-49-lombok-demo/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "lab-49/lab-49-lombok-demo/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-50/lab-50-demo/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-50/lab-50-demo/pom.xml",
+      "artifact": "spring-boot-starter-mail"
+    },
+    {
+      "file": "lab-50/lab-50-demo/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-51/lab-51-sentry-logback/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-51/lab-51-sentry-logback/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-51/lab-51-sentry-spring/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-52/lab-52-multiple-datasource/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-52/lab-52-multiple-datasource/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-52/lab-52-multiple-datasource/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "lab-52/lab-52-seata-at-httpclient-demo/lab-52-seata-at-httpclient-demo-account-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-52/lab-52-seata-at-httpclient-demo/lab-52-seata-at-httpclient-demo-account-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-52/lab-52-seata-at-httpclient-demo/lab-52-seata-at-httpclient-demo-account-service/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "lab-52/lab-52-seata-at-httpclient-demo/lab-52-seata-at-httpclient-demo-order-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-52/lab-52-seata-at-httpclient-demo/lab-52-seata-at-httpclient-demo-order-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-52/lab-52-seata-at-httpclient-demo/lab-52-seata-at-httpclient-demo-order-service/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "lab-52/lab-52-seata-at-httpclient-demo/lab-52-seata-at-httpclient-demo-product-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-52/lab-52-seata-at-httpclient-demo/lab-52-seata-at-httpclient-demo-product-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-52/lab-52-seata-at-httpclient-demo/lab-52-seata-at-httpclient-demo-product-service/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "lab-53/lab-53-seata-at-dubbo-demo/lab-53-seata-at-dubbo-demo-account-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-53/lab-53-seata-at-dubbo-demo/lab-53-seata-at-dubbo-demo-account-service/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "lab-53/lab-53-seata-at-dubbo-demo/lab-53-seata-at-dubbo-demo-account-service/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "lab-53/lab-53-seata-at-dubbo-demo/lab-53-seata-at-dubbo-demo-order-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-53/lab-53-seata-at-dubbo-demo/lab-53-seata-at-dubbo-demo-order-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-53/lab-53-seata-at-dubbo-demo/lab-53-seata-at-dubbo-demo-order-service/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "lab-53/lab-53-seata-at-dubbo-demo/lab-53-seata-at-dubbo-demo-product-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-53/lab-53-seata-at-dubbo-demo/lab-53-seata-at-dubbo-demo-product-service/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "lab-53/lab-53-seata-at-dubbo-demo/lab-53-seata-at-dubbo-demo-product-service/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "lab-54/lab-54-demo/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-54/lab-54-demo/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-56/lab-56-demo01/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-56/lab-56-demo01/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-57/lab-57-hystrix-demo01/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-57/lab-57-hystrix-demo01/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-57/lab-57-hystrix-dubbo-demo/lab-57-hystrix-dubbo-demo-application/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-57/lab-57-hystrix-dubbo-demo/lab-57-hystrix-dubbo-demo-application/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-57/lab-57-hystrix-dubbo-demo/lab-57-hystrix-dubbo-demo-user-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-57/lab-57-hystrix-dubbo-demo/lab-57-hystrix-dubbo-demo-user-service/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "lab-57/lab-57-user-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-57/lab-57-user-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-58/lab-58-feign-demo/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-58/lab-58-feign-demo/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-58/lab-58-user-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-58/lab-58-user-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-59/lab-59-resilience4j-actuator/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-59/lab-59-resilience4j-actuator/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-59/lab-59-resilience4j-actuator/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "lab-59/lab-59-resilience4j-demo01/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-59/lab-59-resilience4j-demo01/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-59/lab-59-user-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-59/lab-59-user-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-60/lab-60-soul-dubbo-demo/lab-60-soul-dubbo-demo-user-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-60/lab-60-soul-dubbo-demo/lab-60-soul-dubbo-demo-user-service/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "lab-60/lab-60-soul-spring-boot-demo/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-60/lab-60-soul-spring-boot-demo/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-60/lab-60-soul-spring-cloud-demo/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-60/lab-60-soul-spring-cloud-demo/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-61/lab-61-cat-opentracing-demo/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-61/lab-61-cat-opentracing-demo/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-61/lab-61-demo/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-61/lab-61-demo/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-61/lab-61-logback/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-61/lab-61-logback/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-61/lab-61-springmvc/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-61/lab-61-springmvc/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-62/lab-62-sofarpc-annotations-demo/lab-62-sofarpc-annotations-demo-user-rpc-service-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-62/lab-62-sofarpc-annotations-demo/lab-62-sofarpc-annotations-demo-user-rpc-service-provider/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "lab-62/lab-62-sofarpc-xml-demo/lab-62-sofarpc-xml-demo-user-rpc-service-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-62/lab-62-sofarpc-xml-demo/lab-62-sofarpc-xml-demo-user-rpc-service-provider/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "lab-63/lab-63-motan-annotations-demo/lab-63-motan-annotations-demo-user-rpc-service-consumer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-63/lab-63-motan-annotations-demo/lab-63-motan-annotations-demo-user-rpc-service-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-63/lab-63-motan-annotations-demo/lab-63-motan-annotations-demo-user-rpc-service-provider/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-63/lab-63-motan-annotations-demo/lab-63-motan-annotations-demo-user-rpc-service-provider/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "lab-63/lab-63-motan-xml-demo/lab-63-motan-xml-demo-user-rpc-service-consumer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-63/lab-63-motan-xml-demo/lab-63-motan-xml-demo-user-rpc-service-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-63/lab-63-motan-xml-demo/lab-63-motan-xml-demo-user-rpc-service-provider/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-63/lab-63-motan-xml-demo/lab-63-motan-xml-demo-user-rpc-service-provider/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "lab-64/lab-64-grpc-demo/lab-64-grpc-demo-application/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-64/lab-64-grpc-demo/lab-64-grpc-demo-application/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-64/lab-64-grpc-demo/lab-64-grpc-demo-user-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-64/lab-64-grpc-demo/lab-64-grpc-demo-user-service/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "lab-64/lab-64-grpc-starter/lab-64-grpc-starter-application/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-64/lab-64-grpc-starter/lab-64-grpc-starter-application/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-64/lab-64-grpc-starter/lab-64-grpc-starter-user-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-64/lab-64-grpc-starter/lab-64-grpc-starter-user-service/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "lab-65/lab-65-cxf-ws-demo/lab-65-cxf-ws-demo-application/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-65/lab-65-cxf-ws-demo/lab-65-cxf-ws-demo-user-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-65/lab-65-spring-ws-demo/lab-65-spring-ws-demo-application/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-65/lab-65-spring-ws-demo/lab-65-spring-ws-demo-application/pom.xml",
+      "artifact": "spring-boot-starter-web-services"
+    },
+    {
+      "file": "lab-65/lab-65-spring-ws-demo/lab-65-spring-ws-demo-user-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-65/lab-65-spring-ws-demo/lab-65-spring-ws-demo-user-service/pom.xml",
+      "artifact": "spring-boot-starter-web-services"
+    },
+    {
+      "file": "lab-65/lab-65-ws-feign-client/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-65/lab-65-ws-feign-client/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-66/lab-66-spring-data-solr/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-66/lab-66-spring-data-solr/pom.xml",
+      "artifact": "spring-boot-starter-data-solr"
+    },
+    {
+      "file": "lab-66/lab-66-spring-data-solr/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "lab-67/lab-67-netty-demo/lab-67-netty-demo-client/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-67/lab-67-netty-demo/lab-67-netty-demo-client/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-67/lab-67-netty-demo/lab-67-netty-demo-server/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-67/lab-67-netty-demo/lab-67-netty-demo-server/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "lab-68-spring-security-oauth/lab-68-demo01-authorization-code-server/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-68-spring-security-oauth/lab-68-demo01-authorization-code-server/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-68-spring-security-oauth/lab-68-demo01-client-credentials-server/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-68-spring-security-oauth/lab-68-demo01-client-credentials-server/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-68-spring-security-oauth/lab-68-demo01-implicit-server/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-68-spring-security-oauth/lab-68-demo01-implicit-server/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-68-spring-security-oauth/lab-68-demo01-resource-owner-password-credentials-server/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-68-spring-security-oauth/lab-68-demo01-resource-owner-password-credentials-server/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-68-spring-security-oauth/lab-68-demo02-authorization-server-with-authorization-code/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-68-spring-security-oauth/lab-68-demo02-authorization-server-with-authorization-code/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-68-spring-security-oauth/lab-68-demo02-authorization-server-with-client-credentials/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-68-spring-security-oauth/lab-68-demo02-authorization-server-with-client-credentials/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-68-spring-security-oauth/lab-68-demo02-authorization-server-with-implicit/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-68-spring-security-oauth/lab-68-demo02-authorization-server-with-implicit/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-68-spring-security-oauth/lab-68-demo02-authorization-server-with-resource-owner-password-credentials/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-68-spring-security-oauth/lab-68-demo02-authorization-server-with-resource-owner-password-credentials/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-68-spring-security-oauth/lab-68-demo02-resource-server/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-68-spring-security-oauth/lab-68-demo02-resource-server/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-68-spring-security-oauth/lab-68-demo03-authorization-server-with-resource-owner-password-credentials/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-68-spring-security-oauth/lab-68-demo03-authorization-server-with-resource-owner-password-credentials/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-68-spring-security-oauth/lab-68-demo11-authorization-server-by-jdbc-store/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-68-spring-security-oauth/lab-68-demo11-authorization-server-by-jdbc-store/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-68-spring-security-oauth/lab-68-demo11-authorization-server-by-jdbc-store/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "lab-68-spring-security-oauth/lab-68-demo11-authorization-server-by-jwt-store/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-68-spring-security-oauth/lab-68-demo11-authorization-server-by-jwt-store/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-68-spring-security-oauth/lab-68-demo11-authorization-server-by-redis-store/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-68-spring-security-oauth/lab-68-demo11-authorization-server-by-redis-store/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-68-spring-security-oauth/lab-68-demo11-authorization-server-by-redis-store/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "lab-68-spring-security-oauth/lab-68-demo21-authorization-server-on-sso/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-68-spring-security-oauth/lab-68-demo21-authorization-server-on-sso/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-68-spring-security-oauth/lab-68-demo21-authorization-server-on-sso/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "lab-68-spring-security-oauth/lab-68-demo21-resource-server-on-sso/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-68-spring-security-oauth/lab-68-demo21-resource-server-on-sso/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-71-http-debug/lab-71-idea-http-client/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-71-http-debug/lab-71-idea-http-client/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "lab-72-minio/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "lab-72-minio/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-01-spring-cloud-alibaba-nacos-discovery/labx-01-sca-nacos-discovery-demo01-consumer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-01-spring-cloud-alibaba-nacos-discovery/labx-01-sca-nacos-discovery-demo01-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-01-spring-cloud-alibaba-nacos-discovery/labx-01-sca-nacos-discovery-demo01-provider/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-01-spring-cloud-alibaba-nacos-discovery/labx-01-sca-nacos-discovery-demo01-provider/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-01-spring-cloud-alibaba-nacos-discovery/labx-01-sca-nacos-discovery-demo02-consumer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-01-spring-cloud-alibaba-nacos-discovery/labx-01-sca-nacos-discovery-demo02-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-01-spring-cloud-alibaba-nacos-discovery/labx-01-sca-nacos-discovery-demo02-provider/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-01-spring-cloud-alibaba-nacos-discovery/labx-01-sca-nacos-discovery-demo02-provider/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-01-spring-cloud-alibaba-nacos-discovery/labx-01-sca-nacos-discovery-demo03-consumer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-01-spring-cloud-alibaba-nacos-discovery/labx-01-sca-nacos-discovery-demo03-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-01-spring-cloud-alibaba-nacos-discovery/labx-01-sca-nacos-discovery-demo03-consumer/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "labx-02-spring-cloud-netflix-ribbon/labx-02-scn-ribbon-demo01-consumer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-02-spring-cloud-netflix-ribbon/labx-02-scn-ribbon-demo01-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-02-spring-cloud-netflix-ribbon/labx-02-scn-ribbon-demo01-provider/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-02-spring-cloud-netflix-ribbon/labx-02-scn-ribbon-demo01-provider/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-02-spring-cloud-netflix-ribbon/labx-02-scn-ribbon-demo02A-consumer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-02-spring-cloud-netflix-ribbon/labx-02-scn-ribbon-demo02A-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-02-spring-cloud-netflix-ribbon/labx-02-scn-ribbon-demo02B-consumer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-02-spring-cloud-netflix-ribbon/labx-02-scn-ribbon-demo02B-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-02-spring-cloud-netflix-ribbon/labx-02-scn-ribbon-demo03-consumer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-02-spring-cloud-netflix-ribbon/labx-02-scn-ribbon-demo03-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-02-spring-cloud-netflix-ribbon/labx-02-scn-ribbon-demo04-consumer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-02-spring-cloud-netflix-ribbon/labx-02-scn-ribbon-demo04-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-02-spring-cloud-netflix-ribbon/labx-02-scn-ribbon-demo05-consumer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-02-spring-cloud-netflix-ribbon/labx-02-scn-ribbon-demo05-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-02-spring-cloud-netflix-ribbon/labx-02-scn-ribbon-demo06-consumer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-02-spring-cloud-netflix-ribbon/labx-02-scn-ribbon-demo06-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-03-spring-cloud-feign/labx-03-sc-feign-demo01-consumer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-03-spring-cloud-feign/labx-03-sc-feign-demo01-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-03-spring-cloud-feign/labx-03-sc-feign-demo01-provider/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-03-spring-cloud-feign/labx-03-sc-feign-demo01-provider/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-03-spring-cloud-feign/labx-03-sc-feign-demo02A-consumer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-03-spring-cloud-feign/labx-03-sc-feign-demo02A-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-03-spring-cloud-feign/labx-03-sc-feign-demo02B-consumer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-03-spring-cloud-feign/labx-03-sc-feign-demo02B-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-03-spring-cloud-feign/labx-03-sc-feign-demo03-consumer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-03-spring-cloud-feign/labx-03-sc-feign-demo03-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-03-spring-cloud-feign/labx-03-sc-feign-demo03-provider/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-03-spring-cloud-feign/labx-03-sc-feign-demo03-provider/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-03-spring-cloud-feign/labx-03-sc-feign-demo04-consumer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-03-spring-cloud-feign/labx-03-sc-feign-demo04-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-03-spring-cloud-feign/labx-03-sc-feign-demo04-provider/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-03-spring-cloud-feign/labx-03-sc-feign-demo04-provider/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-03-spring-cloud-feign/labx-03-sc-feign-demo05-consumer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-03-spring-cloud-feign/labx-03-sc-feign-demo05-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-03-spring-cloud-feign/labx-03-sc-feign-demo06A-consumer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-03-spring-cloud-feign/labx-03-sc-feign-demo06A-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-03-spring-cloud-feign/labx-03-sc-feign-demo06B-consumer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-03-spring-cloud-feign/labx-03-sc-feign-demo06B-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-03-spring-cloud-feign/labx-03-sc-feign-demo07-consumer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-03-spring-cloud-feign/labx-03-sc-feign-demo07-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-04-spring-cloud-alibaba-sentinel/labx-04-sca-sentinel-actuator-provider/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-04-spring-cloud-alibaba-sentinel/labx-04-sca-sentinel-actuator-provider/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-04-spring-cloud-alibaba-sentinel/labx-04-sca-sentinel-actuator-provider/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "labx-04-spring-cloud-alibaba-sentinel/labx-04-sca-sentinel-apollo-provider/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-04-spring-cloud-alibaba-sentinel/labx-04-sca-sentinel-apollo-provider/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-04-spring-cloud-alibaba-sentinel/labx-04-sca-sentinel-demo01-provider/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-04-spring-cloud-alibaba-sentinel/labx-04-sca-sentinel-demo01-provider/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-04-spring-cloud-alibaba-sentinel/labx-04-sca-sentinel-feign-consumer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-04-spring-cloud-alibaba-sentinel/labx-04-sca-sentinel-feign-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-04-spring-cloud-alibaba-sentinel/labx-04-sca-sentinel-file-provider/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-04-spring-cloud-alibaba-sentinel/labx-04-sca-sentinel-file-provider/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-04-spring-cloud-alibaba-sentinel/labx-04-sca-sentinel-nacos-provider/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-04-spring-cloud-alibaba-sentinel/labx-04-sca-sentinel-nacos-provider/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-04-spring-cloud-alibaba-sentinel/labx-04-sca-sentinel-resttemplate-consumer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-04-spring-cloud-alibaba-sentinel/labx-04-sca-sentinel-resttemplate-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-05-spring-cloud-alibaba-nacos-config/labx-05-sca-nacos-config-auto-refresh/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-05-spring-cloud-alibaba-nacos-config/labx-05-sca-nacos-config-auto-refresh/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-05-spring-cloud-alibaba-nacos-config/labx-05-sca-nacos-config-demo-actuator/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-05-spring-cloud-alibaba-nacos-config/labx-05-sca-nacos-config-demo-actuator/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-05-spring-cloud-alibaba-nacos-config/labx-05-sca-nacos-config-demo-actuator/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "labx-05-spring-cloud-alibaba-nacos-config/labx-05-sca-nacos-config-demo-jasypt/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-05-spring-cloud-alibaba-nacos-config/labx-05-sca-nacos-config-demo-jasypt/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-05-spring-cloud-alibaba-nacos-config/labx-05-sca-nacos-config-demo-jasypt/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "labx-05-spring-cloud-alibaba-nacos-config/labx-05-sca-nacos-config-demo-multi/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-05-spring-cloud-alibaba-nacos-config/labx-05-sca-nacos-config-demo-multi/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-05-spring-cloud-alibaba-nacos-config/labx-05-sca-nacos-config-demo-profiles/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-05-spring-cloud-alibaba-nacos-config/labx-05-sca-nacos-config-demo-profiles/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-05-spring-cloud-alibaba-nacos-config/labx-05-sca-nacos-config-demo/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-05-spring-cloud-alibaba-nacos-config/labx-05-sca-nacos-config-demo/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-06-spring-cloud-stream-rocketmq/labx-06-sca-stream-rocketmq-consumer-actuator/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-06-spring-cloud-stream-rocketmq/labx-06-sca-stream-rocketmq-consumer-actuator/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-06-spring-cloud-stream-rocketmq/labx-06-sca-stream-rocketmq-consumer-actuator/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "labx-06-spring-cloud-stream-rocketmq/labx-06-sca-stream-rocketmq-consumer-aliyun/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-06-spring-cloud-stream-rocketmq/labx-06-sca-stream-rocketmq-consumer-aliyun/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-06-spring-cloud-stream-rocketmq/labx-06-sca-stream-rocketmq-consumer-broadcasting/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-06-spring-cloud-stream-rocketmq/labx-06-sca-stream-rocketmq-consumer-broadcasting/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-06-spring-cloud-stream-rocketmq/labx-06-sca-stream-rocketmq-consumer-demo/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-06-spring-cloud-stream-rocketmq/labx-06-sca-stream-rocketmq-consumer-demo/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-06-spring-cloud-stream-rocketmq/labx-06-sca-stream-rocketmq-consumer-error-handler/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-06-spring-cloud-stream-rocketmq/labx-06-sca-stream-rocketmq-consumer-error-handler/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-06-spring-cloud-stream-rocketmq/labx-06-sca-stream-rocketmq-consumer-filter/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-06-spring-cloud-stream-rocketmq/labx-06-sca-stream-rocketmq-consumer-filter/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-06-spring-cloud-stream-rocketmq/labx-06-sca-stream-rocketmq-consumer-orderly/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-06-spring-cloud-stream-rocketmq/labx-06-sca-stream-rocketmq-consumer-orderly/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-06-spring-cloud-stream-rocketmq/labx-06-sca-stream-rocketmq-consumer-retry/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-06-spring-cloud-stream-rocketmq/labx-06-sca-stream-rocketmq-consumer-retry/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-06-spring-cloud-stream-rocketmq/labx-06-sca-stream-rocketmq-producer-actuator/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-06-spring-cloud-stream-rocketmq/labx-06-sca-stream-rocketmq-producer-actuator/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-06-spring-cloud-stream-rocketmq/labx-06-sca-stream-rocketmq-producer-actuator/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "labx-06-spring-cloud-stream-rocketmq/labx-06-sca-stream-rocketmq-producer-aliyun/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-06-spring-cloud-stream-rocketmq/labx-06-sca-stream-rocketmq-producer-aliyun/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-06-spring-cloud-stream-rocketmq/labx-06-sca-stream-rocketmq-producer-demo/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-06-spring-cloud-stream-rocketmq/labx-06-sca-stream-rocketmq-producer-demo/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-06-spring-cloud-stream-rocketmq/labx-06-sca-stream-rocketmq-producer-orderly/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-06-spring-cloud-stream-rocketmq/labx-06-sca-stream-rocketmq-producer-orderly/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-06-spring-cloud-stream-rocketmq/labx-06-sca-stream-rocketmq-producer-transaction/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-06-spring-cloud-stream-rocketmq/labx-06-sca-stream-rocketmq-producer-transaction/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-07-spring-cloud-alibaba-dubbo/labx-07-sca-dubbo-demo01/labx-07-sca-dubbo-demo01-consumer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-07-spring-cloud-alibaba-dubbo/labx-07-sca-dubbo-demo01/labx-07-sca-dubbo-demo01-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-07-spring-cloud-alibaba-dubbo/labx-07-sca-dubbo-demo01/labx-07-sca-dubbo-demo01-provider/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-07-spring-cloud-alibaba-dubbo/labx-07-sca-dubbo-demo02/labx-07-sca-dubbo-demo02-consumer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-07-spring-cloud-alibaba-dubbo/labx-07-sca-dubbo-demo02/labx-07-sca-dubbo-demo02-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-07-spring-cloud-alibaba-dubbo/labx-07-sca-dubbo-demo02/labx-07-sca-dubbo-demo02-provider-rest/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-07-spring-cloud-alibaba-dubbo/labx-07-sca-dubbo-demo02/labx-07-sca-dubbo-demo02-provider-springmvc/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-07-spring-cloud-alibaba-dubbo/labx-07-sca-dubbo-demo02/labx-07-sca-dubbo-demo02-provider-springmvc/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-07-spring-cloud-alibaba-dubbo/labx-07-sca-dubbo-demo02/labx-07-sca-dubbo-demo02-provider-springmvc/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "labx-07-spring-cloud-alibaba-dubbo/labx-07-sca-dubbo-demo03-validation/labx-07-sca-dubbo-demo03-consumer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-07-spring-cloud-alibaba-dubbo/labx-07-sca-dubbo-demo03-validation/labx-07-sca-dubbo-demo03-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-07-spring-cloud-alibaba-dubbo/labx-07-sca-dubbo-demo03-validation/labx-07-sca-dubbo-demo03-provider/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-07-spring-cloud-alibaba-dubbo/labx-07-sca-dubbo-demo04-filter/labx-07-sca-dubbo-demo04-consumer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-07-spring-cloud-alibaba-dubbo/labx-07-sca-dubbo-demo04-filter/labx-07-sca-dubbo-demo04-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-07-spring-cloud-alibaba-dubbo/labx-07-sca-dubbo-demo04-filter/labx-07-sca-dubbo-demo04-provider/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-07-spring-cloud-alibaba-dubbo/labx-07-sca-dubbo-demo05-sentinel/labx-07-sca-dubbo-demo05-consumer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-07-spring-cloud-alibaba-dubbo/labx-07-sca-dubbo-demo05-sentinel/labx-07-sca-dubbo-demo05-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-07-spring-cloud-alibaba-dubbo/labx-07-sca-dubbo-demo05-sentinel/labx-07-sca-dubbo-demo05-provider/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-08-spring-cloud-gateway/labx-08-sc-gateway-demo01-test/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-08-spring-cloud-gateway/labx-08-sc-gateway-demo01/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-08-spring-cloud-gateway/labx-08-sc-gateway-demo02-registry/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-08-spring-cloud-gateway/labx-08-sc-gateway-demo03-config-apollo/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-08-spring-cloud-gateway/labx-08-sc-gateway-demo03-config-nacos/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-08-spring-cloud-gateway/labx-08-sc-gateway-demo04/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-08-spring-cloud-gateway/labx-08-sc-gateway-demo05-custom-gateway-filter/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-08-spring-cloud-gateway/labx-08-sc-gateway-demo06-rate-limiter/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-08-spring-cloud-gateway/labx-08-sc-gateway-demo06-rate-limiter/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "labx-08-spring-cloud-gateway/labx-08-sc-gateway-demo07-hystrix/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-08-spring-cloud-gateway/labx-08-sc-gateway-demo07-sentinel/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-08-spring-cloud-gateway/labx-08-sc-gateway-demo08-custom-global-filter/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-08-spring-cloud-gateway/labx-08-sc-gateway-demo09-actuator/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-08-spring-cloud-gateway/labx-08-sc-gateway-demo09-actuator/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "labx-08-spring-cloud-gateway/labx-08-sc-gateway-demo10-troubleshooting/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-08-spring-cloud-gateway/labx-08-sc-user-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-08-spring-cloud-gateway/labx-08-sc-user-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-09-spring-cloud-apollo/labx-09-sc-apollo-demo-auto-refresh/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-09-spring-cloud-apollo/labx-09-sc-apollo-demo-auto-refresh/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-09-spring-cloud-apollo/labx-09-sc-apollo-demo-jasypt/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-09-spring-cloud-apollo/labx-09-sc-apollo-demo-jasypt/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-09-spring-cloud-apollo/labx-09-sc-apollo-demo-jasypt/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "labx-09-spring-cloud-apollo/labx-09-sc-apollo-demo-multi/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-09-spring-cloud-apollo/labx-09-sc-apollo-demo-multi/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-09-spring-cloud-apollo/labx-09-sc-apollo-demo-profiles/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-09-spring-cloud-apollo/labx-09-sc-apollo-demo-profiles/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-09-spring-cloud-apollo/labx-09-sc-apollo-demo/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-09-spring-cloud-apollo/labx-09-sc-apollo-demo/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-10-spring-cloud-stream-rabbitmq/labx-10-sc-stream-rabbitmq-consumer-ack/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-10-spring-cloud-stream-rabbitmq/labx-10-sc-stream-rabbitmq-consumer-ack/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-10-spring-cloud-stream-rabbitmq/labx-10-sc-stream-rabbitmq-consumer-actuator/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-10-spring-cloud-stream-rabbitmq/labx-10-sc-stream-rabbitmq-consumer-actuator/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-10-spring-cloud-stream-rabbitmq/labx-10-sc-stream-rabbitmq-consumer-actuator/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "labx-10-spring-cloud-stream-rabbitmq/labx-10-sc-stream-rabbitmq-consumer-batch/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-10-spring-cloud-stream-rabbitmq/labx-10-sc-stream-rabbitmq-consumer-batch/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-10-spring-cloud-stream-rabbitmq/labx-10-sc-stream-rabbitmq-consumer-broadcasting/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-10-spring-cloud-stream-rabbitmq/labx-10-sc-stream-rabbitmq-consumer-broadcasting/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-10-spring-cloud-stream-rabbitmq/labx-10-sc-stream-rabbitmq-consumer-concurrency/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-10-spring-cloud-stream-rabbitmq/labx-10-sc-stream-rabbitmq-consumer-concurrency/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-10-spring-cloud-stream-rabbitmq/labx-10-sc-stream-rabbitmq-consumer-delay/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-10-spring-cloud-stream-rabbitmq/labx-10-sc-stream-rabbitmq-consumer-delay/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-10-spring-cloud-stream-rabbitmq/labx-10-sc-stream-rabbitmq-consumer-demo/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-10-spring-cloud-stream-rabbitmq/labx-10-sc-stream-rabbitmq-consumer-demo/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-10-spring-cloud-stream-rabbitmq/labx-10-sc-stream-rabbitmq-consumer-error-handler/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-10-spring-cloud-stream-rabbitmq/labx-10-sc-stream-rabbitmq-consumer-error-handler/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-10-spring-cloud-stream-rabbitmq/labx-10-sc-stream-rabbitmq-consumer-filter/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-10-spring-cloud-stream-rabbitmq/labx-10-sc-stream-rabbitmq-consumer-filter/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-10-spring-cloud-stream-rabbitmq/labx-10-sc-stream-rabbitmq-consumer-partitioning/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-10-spring-cloud-stream-rabbitmq/labx-10-sc-stream-rabbitmq-consumer-partitioning/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-10-spring-cloud-stream-rabbitmq/labx-10-sc-stream-rabbitmq-consumer-retry/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-10-spring-cloud-stream-rabbitmq/labx-10-sc-stream-rabbitmq-consumer-retry/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-10-spring-cloud-stream-rabbitmq/labx-10-sc-stream-rabbitmq-producer-actuator/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-10-spring-cloud-stream-rabbitmq/labx-10-sc-stream-rabbitmq-producer-actuator/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-10-spring-cloud-stream-rabbitmq/labx-10-sc-stream-rabbitmq-producer-actuator/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "labx-10-spring-cloud-stream-rabbitmq/labx-10-sc-stream-rabbitmq-producer-batch/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-10-spring-cloud-stream-rabbitmq/labx-10-sc-stream-rabbitmq-producer-batch/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-10-spring-cloud-stream-rabbitmq/labx-10-sc-stream-rabbitmq-producer-confirm/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-10-spring-cloud-stream-rabbitmq/labx-10-sc-stream-rabbitmq-producer-confirm/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-10-spring-cloud-stream-rabbitmq/labx-10-sc-stream-rabbitmq-producer-delay/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-10-spring-cloud-stream-rabbitmq/labx-10-sc-stream-rabbitmq-producer-delay/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-10-spring-cloud-stream-rabbitmq/labx-10-sc-stream-rabbitmq-producer-demo/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-10-spring-cloud-stream-rabbitmq/labx-10-sc-stream-rabbitmq-producer-demo/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-10-spring-cloud-stream-rabbitmq/labx-10-sc-stream-rabbitmq-producer-partitioning/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-10-spring-cloud-stream-rabbitmq/labx-10-sc-stream-rabbitmq-producer-partitioning/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-10-spring-cloud-stream-rabbitmq/labx-10-sc-stream-rabbitmq-producer-transaction/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-10-spring-cloud-stream-rabbitmq/labx-10-sc-stream-rabbitmq-producer-transaction/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-11-spring-cloud-stream-kafka/labx-11-sc-stream-kafka-consumer-ack/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-11-spring-cloud-stream-kafka/labx-11-sc-stream-kafka-consumer-ack/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-11-spring-cloud-stream-kafka/labx-11-sc-stream-kafka-consumer-actuator/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-11-spring-cloud-stream-kafka/labx-11-sc-stream-kafka-consumer-actuator/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-11-spring-cloud-stream-kafka/labx-11-sc-stream-kafka-consumer-actuator/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "labx-11-spring-cloud-stream-kafka/labx-11-sc-stream-kafka-consumer-batch/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-11-spring-cloud-stream-kafka/labx-11-sc-stream-kafka-consumer-batch/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-11-spring-cloud-stream-kafka/labx-11-sc-stream-kafka-consumer-broadcasting/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-11-spring-cloud-stream-kafka/labx-11-sc-stream-kafka-consumer-broadcasting/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-11-spring-cloud-stream-kafka/labx-11-sc-stream-kafka-consumer-concurrency/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-11-spring-cloud-stream-kafka/labx-11-sc-stream-kafka-consumer-concurrency/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-11-spring-cloud-stream-kafka/labx-11-sc-stream-kafka-consumer-demo/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-11-spring-cloud-stream-kafka/labx-11-sc-stream-kafka-consumer-demo/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-11-spring-cloud-stream-kafka/labx-11-sc-stream-kafka-consumer-error-handler/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-11-spring-cloud-stream-kafka/labx-11-sc-stream-kafka-consumer-error-handler/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-11-spring-cloud-stream-kafka/labx-11-sc-stream-kafka-consumer-filter/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-11-spring-cloud-stream-kafka/labx-11-sc-stream-kafka-consumer-filter/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-11-spring-cloud-stream-kafka/labx-11-sc-stream-kafka-consumer-partitioning/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-11-spring-cloud-stream-kafka/labx-11-sc-stream-kafka-consumer-partitioning/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-11-spring-cloud-stream-kafka/labx-11-sc-stream-kafka-consumer-retry/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-11-spring-cloud-stream-kafka/labx-11-sc-stream-kafka-consumer-retry/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-11-spring-cloud-stream-kafka/labx-11-sc-stream-kafka-consumer-transaction/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-11-spring-cloud-stream-kafka/labx-11-sc-stream-kafka-consumer-transaction/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-11-spring-cloud-stream-kafka/labx-11-sc-stream-kafka-producer-actuator/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-11-spring-cloud-stream-kafka/labx-11-sc-stream-kafka-producer-actuator/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-11-spring-cloud-stream-kafka/labx-11-sc-stream-kafka-producer-actuator/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "labx-11-spring-cloud-stream-kafka/labx-11-sc-stream-kafka-producer-batch/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-11-spring-cloud-stream-kafka/labx-11-sc-stream-kafka-producer-batch/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-11-spring-cloud-stream-kafka/labx-11-sc-stream-kafka-producer-demo/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-11-spring-cloud-stream-kafka/labx-11-sc-stream-kafka-producer-demo/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-11-spring-cloud-stream-kafka/labx-11-sc-stream-kafka-producer-partitioning/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-11-spring-cloud-stream-kafka/labx-11-sc-stream-kafka-producer-partitioning/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-11-spring-cloud-stream-kafka/labx-11-sc-stream-kafka-producer-transaction/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-11-spring-cloud-stream-kafka/labx-11-sc-stream-kafka-producer-transaction/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-12-spring-cloud-config/labx-12-sc-config-server-demo/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-12-spring-cloud-config/labx-12-sc-config-server-demo/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-12-spring-cloud-config/labx-12-sc-config-server-git-auto-refresh-by-bus/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-12-spring-cloud-config/labx-12-sc-config-server-git-auto-refresh-by-bus/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-12-spring-cloud-config/labx-12-sc-config-server-git-nacos/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-12-spring-cloud-config/labx-12-sc-config-server-git/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-12-spring-cloud-config/labx-12-sc-config-user-application-auto-refresh-by-actuator/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-12-spring-cloud-config/labx-12-sc-config-user-application-auto-refresh-by-actuator/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-12-spring-cloud-config/labx-12-sc-config-user-application-auto-refresh-by-actuator/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "labx-12-spring-cloud-config/labx-12-sc-config-user-application-auto-refresh-by-bus/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-12-spring-cloud-config/labx-12-sc-config-user-application-auto-refresh-by-bus/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-12-spring-cloud-config/labx-12-sc-config-user-application-nacos/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-12-spring-cloud-config/labx-12-sc-config-user-application-nacos/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-12-spring-cloud-config/labx-12-sc-config-user-application/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-12-spring-cloud-config/labx-12-sc-config-user-application/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-13/labx-13-sc-sleuth-db-elasticsearch/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-13/labx-13-sc-sleuth-db-elasticsearch/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-13/labx-13-sc-sleuth-db-elasticsearch/pom.xml",
+      "artifact": "spring-boot-starter-data-elasticsearch"
+    },
+    {
+      "file": "labx-13/labx-13-sc-sleuth-db-mongodb/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-13/labx-13-sc-sleuth-db-mongodb/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-13/labx-13-sc-sleuth-db-mongodb/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb"
+    },
+    {
+      "file": "labx-13/labx-13-sc-sleuth-db-mysql/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-13/labx-13-sc-sleuth-db-mysql/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-13/labx-13-sc-sleuth-db-mysql/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "labx-13/labx-13-sc-sleuth-db-redis/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-13/labx-13-sc-sleuth-db-redis/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-13/labx-13-sc-sleuth-db-redis/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "labx-13/labx-13-sc-sleuth-dubbo/labx-13-sc-sleuth-dubbo-consumer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-13/labx-13-sc-sleuth-dubbo/labx-13-sc-sleuth-dubbo-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-13/labx-13-sc-sleuth-dubbo/labx-13-sc-sleuth-dubbo-provider/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-13/labx-13-sc-sleuth-feign/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-13/labx-13-sc-sleuth-feign/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-13/labx-13-sc-sleuth-logback/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-13/labx-13-sc-sleuth-logback/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-13/labx-13-sc-sleuth-mq-activemq/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-13/labx-13-sc-sleuth-mq-activemq/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-13/labx-13-sc-sleuth-mq-activemq/pom.xml",
+      "artifact": "spring-boot-starter-activemq"
+    },
+    {
+      "file": "labx-13/labx-13-sc-sleuth-mq-kafka/labx-13-sc-sleuth-mq-kafka-producer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-13/labx-13-sc-sleuth-mq-kafka/labx-13-sc-sleuth-mq-kafka-producer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-13/labx-13-sc-sleuth-mq-kafka/labx-13-sc-stream-mq-kafka-consumer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-13/labx-13-sc-sleuth-mq-kafka/labx-13-sc-stream-mq-kafka-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-13/labx-13-sc-sleuth-mq-rabbitmq/labx-13-sc-sleuth-mq-rabbitmq-producer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-13/labx-13-sc-sleuth-mq-rabbitmq/labx-13-sc-sleuth-mq-rabbitmq-producer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-13/labx-13-sc-sleuth-mq-rabbitmq/labx-13-sc-stream-mq-rabbitmq-consumer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-13/labx-13-sc-sleuth-mq-rabbitmq/labx-13-sc-stream-mq-rabbitmq-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-13/labx-13-sc-sleuth-opentracing/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-13/labx-13-sc-sleuth-opentracing/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-13/labx-13-sc-sleuth-sampler/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-13/labx-13-sc-sleuth-sampler/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-13/labx-13-sc-sleuth-springcloudgateway/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-13/labx-13-sc-sleuth-springmvc/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-13/labx-13-sc-sleuth-springmvc/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-13/labx-13-sc-sleuth-zipkin-server-demo-in-memory/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-13/labx-13-sc-sleuth-zipkin-server-demo-in-memory/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-14/labx-14-sc-skywalking-dubbo/labx-14-sc-skywalking-dubbo-consumer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-14/labx-14-sc-skywalking-dubbo/labx-14-sc-skywalking-dubbo-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-14/labx-14-sc-skywalking-dubbo/labx-14-sc-skywalking-dubbo-provider/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-14/labx-14-sc-skywalking-feign/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-14/labx-14-sc-skywalking-feign/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-14/labx-14-sc-skywalking-mq-kafka/labx-14-sc-skywalking-mq-kafka-consumer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-14/labx-14-sc-skywalking-mq-kafka/labx-14-sc-skywalking-mq-kafka-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-14/labx-14-sc-skywalking-mq-kafka/labx-14-sc-skywalking-mq-kafka-producer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-14/labx-14-sc-skywalking-mq-kafka/labx-14-sc-skywalking-mq-kafka-producer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-14/labx-14-sc-skywalking-mq-rabbitmq/labx-14-sc-skywalking-mq-rabbitmq-consumer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-14/labx-14-sc-skywalking-mq-rabbitmq/labx-14-sc-skywalking-mq-rabbitmq-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-14/labx-14-sc-skywalking-mq-rabbitmq/labx-14-sc-skywalking-mq-rabbitmq-producer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-14/labx-14-sc-skywalking-mq-rabbitmq/labx-14-sc-skywalking-mq-rabbitmq-producer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-14/labx-14-sc-skywalking-mq-rocketmq/labx-14-sc-skywalking-mq-rocketmq-consumer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-14/labx-14-sc-skywalking-mq-rocketmq/labx-14-sc-skywalking-mq-rocketmq-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-14/labx-14-sc-skywalking-mq-rocketmq/labx-14-sc-skywalking-mq-rocketmq-producer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-14/labx-14-sc-skywalking-mq-rocketmq/labx-14-sc-skywalking-mq-rocketmq-producer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-14/labx-14-sc-skywalking-springcloudgateway/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-14/labx-14-sc-skywalking-springmvc/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-14/labx-14-sc-skywalking-springmvc/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-15/labx-15-admin-02-adminserver/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-15/labx-15-admin-02-demo-application/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-15/labx-15-admin-02-demo-application/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-15/labx-15-admin-02-demo-application/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "labx-15/labx-15-admin-03-adminserver/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-15/labx-15-admin-03-adminserver/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "labx-15/labx-15-admin-03-demo-application/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-15/labx-15-admin-03-demo-application/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-15/labx-15-admin-03-demo-application/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "labx-15/labx-15-admin-03-demo-application/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "labx-15/labx-15-admin-04-adminserver-custom/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-15/labx-15-admin-04-adminserver-mail/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-15/labx-15-admin-04-adminserver-mail/pom.xml",
+      "artifact": "spring-boot-starter-mail"
+    },
+    {
+      "file": "labx-16/labx-16-demo-01/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-16/labx-16-demo-01/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-16/labx-16-demo-01/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "labx-16/labx-16-demo-01/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "labx-17/labx-17-sc-seata-at-feign-demo/labx-17-sc-seata-at-feign-demo-account-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-17/labx-17-sc-seata-at-feign-demo/labx-17-sc-seata-at-feign-demo-account-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-17/labx-17-sc-seata-at-feign-demo/labx-17-sc-seata-at-feign-demo-account-service/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "labx-17/labx-17-sc-seata-at-feign-demo/labx-17-sc-seata-at-feign-demo-order-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-17/labx-17-sc-seata-at-feign-demo/labx-17-sc-seata-at-feign-demo-order-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-17/labx-17-sc-seata-at-feign-demo/labx-17-sc-seata-at-feign-demo-order-service/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "labx-17/labx-17-sc-seata-at-feign-demo/labx-17-sc-seata-at-feign-demo-product-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-17/labx-17-sc-seata-at-feign-demo/labx-17-sc-seata-at-feign-demo-product-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-17/labx-17-sc-seata-at-feign-demo/labx-17-sc-seata-at-feign-demo-product-service/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "labx-17/labx-17-sca-seata-at-dubbo-demo/labx-17-sca-seata-at-dubbo-demo-account-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-17/labx-17-sca-seata-at-dubbo-demo/labx-17-sca-seata-at-dubbo-demo-account-service/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "labx-17/labx-17-sca-seata-at-dubbo-demo/labx-17-sca-seata-at-dubbo-demo-account-service/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "labx-17/labx-17-sca-seata-at-dubbo-demo/labx-17-sca-seata-at-dubbo-demo-order-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-17/labx-17-sca-seata-at-dubbo-demo/labx-17-sca-seata-at-dubbo-demo-order-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-17/labx-17-sca-seata-at-dubbo-demo/labx-17-sca-seata-at-dubbo-demo-order-service/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "labx-17/labx-17-sca-seata-at-dubbo-demo/labx-17-sca-seata-at-dubbo-demo-product-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-17/labx-17-sca-seata-at-dubbo-demo/labx-17-sca-seata-at-dubbo-demo-product-service/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "labx-17/labx-17-sca-seata-at-dubbo-demo/labx-17-sca-seata-at-dubbo-demo-product-service/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "labx-18/labx-18-sc-bus-rabbitmq-demo-listener-actuator/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-18/labx-18-sc-bus-rabbitmq-demo-listener-actuator/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-18/labx-18-sc-bus-rabbitmq-demo-listener-actuator/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "labx-18/labx-18-sc-bus-rabbitmq-demo-listener/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-18/labx-18-sc-bus-rabbitmq-demo-listener/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-18/labx-18-sc-bus-rabbitmq-demo-publisher-actuator/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-18/labx-18-sc-bus-rabbitmq-demo-publisher-actuator/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-18/labx-18-sc-bus-rabbitmq-demo-publisher-actuator/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "labx-18/labx-18-sc-bus-rabbitmq-demo-publisher/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-18/labx-18-sc-bus-rabbitmq-demo-publisher/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-19/labx-19-sc-bus-kafka-demo-listener-actuator/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-19/labx-19-sc-bus-kafka-demo-listener-actuator/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-19/labx-19-sc-bus-kafka-demo-listener-actuator/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "labx-19/labx-19-sc-bus-kafka-demo-listener/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-19/labx-19-sc-bus-kafka-demo-listener/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-19/labx-19-sc-bus-kafka-demo-publisher-actuator/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-19/labx-19-sc-bus-kafka-demo-publisher-actuator/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-19/labx-19-sc-bus-kafka-demo-publisher-actuator/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "labx-19/labx-19-sc-bus-kafka-demo-publisher/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-19/labx-19-sc-bus-kafka-demo-publisher/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-19/labx-19-sc-config-server-git-auto-refresh-by-bus/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-19/labx-19-sc-config-server-git-auto-refresh-by-bus/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-19/labx-19-sc-config-user-application-auto-refresh-by-bus/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-19/labx-19-sc-config-user-application-auto-refresh-by-bus/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-20/labx-20-sc-config-server-git-auto-refresh-by-bus/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-20/labx-20-sc-config-server-git-auto-refresh-by-bus/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-20/labx-20-sc-config-user-application-auto-refresh-by-bus/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-20/labx-20-sc-config-user-application-auto-refresh-by-bus/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-20/labx-20-sca-bus-rocketmq-demo-listener-actuator/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-20/labx-20-sca-bus-rocketmq-demo-listener-actuator/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-20/labx-20-sca-bus-rocketmq-demo-listener-actuator/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "labx-20/labx-20-sca-bus-rocketmq-demo-listener/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-20/labx-20-sca-bus-rocketmq-demo-listener/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-20/labx-20-sca-bus-rocketmq-demo-publisher-actuator/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-20/labx-20-sca-bus-rocketmq-demo-publisher-actuator/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-20/labx-20-sca-bus-rocketmq-demo-publisher-actuator/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "labx-20/labx-20-sca-bus-rocketmq-demo-publisher/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-20/labx-20-sca-bus-rocketmq-demo-publisher/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-21/labx-21-sc-user-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-21/labx-21-sc-user-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-21/labx-21-sc-zuul-demo01/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-21/labx-21-sc-zuul-demo02-registry/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-21/labx-21-sc-zuul-demo03-config-apollo/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-21/labx-21-sc-zuul-demo03-config-nacos/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-21/labx-21-sc-zuul-demo05-custom-zuul-filter/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-21/labx-21-sc-zuul-demo07-hystrix/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-21/labx-21-sc-zuul-demo07-sentinel/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-21/labx-21-sc-zuul-demo09-actuator/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-22/labx-22-scn-eureka-demo01-consumer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-22/labx-22-scn-eureka-demo01-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-22/labx-22-scn-eureka-demo01-provider/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-22/labx-22-scn-eureka-demo01-provider/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-22/labx-22-scn-eureka-demo02-consumer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-22/labx-22-scn-eureka-demo02-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-22/labx-22-scn-eureka-demo02-provider/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-22/labx-22-scn-eureka-demo02-provider/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-22/labx-22-scn-eureka-demo03-consumer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-22/labx-22-scn-eureka-demo03-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-22/labx-22-scn-eureka-demo03-provider/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-22/labx-22-scn-eureka-demo03-provider/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-22/labx-22-scn-eureka-server-cluster/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-22/labx-22-scn-eureka-server-security/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-22/labx-22-scn-eureka-server-security/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "labx-22/labx-22-scn-eureka-server-standalone/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-23/labx-23-scn-hystrix-actuator/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-23/labx-23-scn-hystrix-actuator/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-23/labx-23-scn-hystrix-actuator/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "labx-23/labx-23-scn-hystrix-dashboard-turbine/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-23/labx-23-scn-hystrix-dashboard-turbine/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-23/labx-23-scn-hystrix-dashboard/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-23/labx-23-scn-hystrix-dashboard/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-23/labx-23-scn-hystrix-demo01-cluster/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-23/labx-23-scn-hystrix-demo01-cluster/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-23/labx-23-scn-hystrix-demo01-cluster/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "labx-23/labx-23-scn-hystrix-demo01/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-23/labx-23-scn-hystrix-demo01/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-23/labx-23-scn-hystrix-dubbo-demo/labx-23-scn-hystrix-dubbo-demo-application/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-23/labx-23-scn-hystrix-dubbo-demo/labx-23-scn-hystrix-dubbo-demo-application/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-23/labx-23-scn-hystrix-dubbo-demo/labx-23-scn-hystrix-dubbo-demo-user-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-23/labx-23-scn-hystrix-feign/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-23/labx-23-scn-hystrix-feign/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-23/labx-23-user-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-23/labx-23-user-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-24/labx-24-resilience4j-demo01/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-24/labx-24-resilience4j-demo01/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-24/labx-24-resilience4j-demo02/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-24/labx-24-resilience4j-demo02/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-24/labx-24-user-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-24/labx-24-user-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-25/labx-25-sc-zookeeper-discovery-demo01-consumer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-25/labx-25-sc-zookeeper-discovery-demo01-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-25/labx-25-sc-zookeeper-discovery-demo01-provider/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-25/labx-25-sc-zookeeper-discovery-demo01-provider/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-26/labx-26-sc-zookeeper-config-auto-refresh/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-26/labx-26-sc-zookeeper-config-auto-refresh/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-26/labx-26-sc-zookeeper-config-demo/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-26/labx-26-sc-zookeeper-config-demo/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-27/labx-27-sc-consul-discovery-demo01-consumer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-27/labx-27-sc-consul-discovery-demo01-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-27/labx-27-sc-consul-discovery-demo01-consumer/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "labx-27/labx-27-sc-consul-discovery-demo01-provider/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-27/labx-27-sc-consul-discovery-demo01-provider/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-27/labx-27-sc-consul-discovery-demo01-provider/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "labx-28/labx-28-sc-consul-config-auto-refresh/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-28/labx-28-sc-consul-config-auto-refresh/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-28/labx-28-sc-consul-config-demo/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-28/labx-28-sc-consul-config-demo/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-29-spring-cloud-consul-bus/labx-29-sc-bus-consul-demo-listener-actuator/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-29-spring-cloud-consul-bus/labx-29-sc-bus-consul-demo-listener-actuator/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-29-spring-cloud-consul-bus/labx-29-sc-bus-consul-demo-listener-actuator/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "labx-29-spring-cloud-consul-bus/labx-29-sc-bus-consul-demo-listener/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-29-spring-cloud-consul-bus/labx-29-sc-bus-consul-demo-listener/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-29-spring-cloud-consul-bus/labx-29-sc-bus-consul-demo-publisher/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-29-spring-cloud-consul-bus/labx-29-sc-bus-consul-demo-publisher/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-29-spring-cloud-consul-bus/labx-29-sc-config-server-git-auto-refresh-by-bus/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-29-spring-cloud-consul-bus/labx-29-sc-config-server-git-auto-refresh-by-bus/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-29-spring-cloud-consul-bus/labx-29-sc-config-user-application-auto-refresh-by-bus/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-29-spring-cloud-consul-bus/labx-29-sc-config-user-application-auto-refresh-by-bus/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-30-spring-cloud-grpc/labx-30-grpc-cloud/labx-30-grpc-cloud-application/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-30-spring-cloud-grpc/labx-30-grpc-cloud/labx-30-grpc-cloud-application/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "labx-30-spring-cloud-grpc/labx-30-grpc-cloud/labx-30-grpc-cloud-user-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "labx-30-spring-cloud-grpc/labx-30-grpc-cloud/labx-30-grpc-cloud-user-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "17e6754f23137f2bc8c440bb384ee5f69678c25e",
+      "date": "2025-12-20T17:25:08-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Project upgrade\n\n- Upgrade to Java 25\n- Upgrade to Spring Boot 4.0.1\n- Update Project Diagram\n"
+    },
+    {
+      "sha": "e191ccd4ce5e4902ab597bfb2c756013b024fd16",
+      "date": "2025-12-20T16:31:28-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Project upgrade\n\n- Upgrade to Spring Boot 3.5.9\n- Upgrade to wrapperVersion to 3.3.4 and Apache Maven to 3.9.12\n- Upgrade to Logstash-Logback Encoder 9.0\n- Upgrade to Prometheus Docker image v3.8.1\n- Upgrade to Grafana Docker image 12.3.1\n- Small adjustment in filebeat.yml and README.md\n"
+    },
+    {
+      "sha": "ad28da8b1b31d1d69139e121731cc7040b564658",
+      "date": "2025-06-01T10:27:13+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Set back docker config to filebeat in docker-compose.yml\n"
+    },
+    {
+      "sha": "38eb8c787698dcbc29e218f871ed8781f0d4d3fd",
+      "date": "2025-06-01T00:23:51+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Rename movie field from imdb to imdbId\n"
+    },
+    {
+      "sha": "ca48e42ea7e608cab76b75f6e210f2f85e36d525",
+      "date": "2025-05-31T23:45:25+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Remove SpringDoc OpenAPI dependency\n"
+    },
+    {
+      "sha": "df0f97ca14f2d439e1405dd903e32accb76b6f47",
+      "date": "2025-05-31T21:05:54+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Refactor application packages\n"
+    },
+    {
+      "sha": "e0b569f325507c2979d27a8c6e1ba28a6d0c99f3",
+      "date": "2025-05-31T20:51:13+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project update\n- Remove public keyword from Beans\n- Convert some DTOs from class to record\n- Refactor the mappings using the from() method in the classes or records\n"
+    },
+    {
+      "sha": "4fa1c1f34e7e513f3692a9185f77cfdcd885fbf4",
+      "date": "2025-05-31T08:05:35+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n- Upgrade to Spring Boot 3.5.0\n- Upgrade to SpringDoc OpenAPI 2.8.8\n- Upgrade to logstash-logback-encoder 8.1\n- Upgrade to MySQL Docker Image 9.2.0\n- Upgrade to elastic Docker images 7.17.28\n- Upgrade to Prometheus Docker image v3.4.0\n- Upgrade to Grafana Docker image 12.0.1\n- Refactor pom.xml and docker-compose.yml files\n- Remove logging.pattern.level property present in application.properties\n"
+    },
+    {
+      "sha": "a257c8b96b3d8ee2099afb7e1082fb59165784f7",
+      "date": "2025-05-30T22:25:49+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Rename docker-build.sh to build-docker-images.sh\n"
+    },
+    {
+      "sha": "1e4d79c79da1c886e17aec909e8c84df5d368cb1",
+      "date": "2025-05-30T22:23:08+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Add the .gitattributes file, update README and refactor docker-build.sh\n"
+    },
+    {
+      "sha": "a5d445ee1655feb41310ccfb37c3fde2d9e1397f",
+      "date": "2024-11-08T16:00:34+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Replace Jib with Paketo Buildpacks\n"
+    },
+    {
+      "sha": "1367ba2782125a5222ba88eea4f9c77b1ec84cdb",
+      "date": "2024-11-08T12:21:35+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- upgrade to Java 21;\n- upgrade to spring-boot 3.3.5;\n- upgrade to springdoc-openapi 2.6.0;\n- upgrade to spring-boot 3.3.5;\n- upgrade to jib-maven-plugin 3.4.4;\n- upgrade to logstash-logback-encoder 8.0;\n- upgrade to mysql docker images 9.0.1;\n- upgrade to elastic docker images 7.17.25;\n- upgrade to prometheus docker images v2.55.1;\n- upgrade to grafana docker images 11.3.0;\n- update README.\n"
+    },
+    {
+      "sha": "9b6176568112f4429711d3fd2d982923c2df1cc6",
+      "date": "2024-11-08T11:50:19+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to apache-maven 3.9.9\n"
+    },
+    {
+      "sha": "b59cc9800b834666fd909d70ecb49cdf69424f7c",
+      "date": "2024-08-17T12:58:19+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Update links in README\n"
+    },
+    {
+      "sha": "b9c51cc0e5548d0dad7c5a4223fe4c6dddd05fde",
+      "date": "2024-07-10T11:36:24+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- upgrade to spring-boot 3.3.1;\n- upgrade to jib-maven-plugin 3.4.3;\n- upgrade wrapperVersion to 3.3.2 and apache-maven to 3.9.7;\n- upgrade to springdoc-openapi 2.6.0;\n- upgrade to mysql docker image 8.4.0;\n- remove version in docker-compose.yml as it is deprecated;\n- update README.\n"
+    },
+    {
+      "sha": "ca0f63e1393dc13cc443aab512f174e523ff7520",
+      "date": "2024-01-12T15:33:45-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to spring-boot 3.2.1, springdoc-openapi 2.3.0 and logstash-logback-encoder 7.4\n"
+    },
+    {
+      "sha": "a3653b4bde40826d3411ecfa227fa6583bed7824",
+      "date": "2024-01-12T15:22:50-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade docker images and update movies-api-dashboard.json\n"
+    },
+    {
+      "sha": "016759d7ef02dbebdeb2ec4af7b4cfebb6f969ab",
+      "date": "2024-01-12T15:00:43-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to jib-maven-plugin 3.4.0\n"
+    },
+    {
+      "sha": "e79507a171e4b520593c4227e8813eec6f84996b",
+      "date": "2024-01-12T14:59:16-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to apache-maven 3.9.5\n"
+    },
+    {
+      "sha": "90ce58a46ad75bf1d522f515d59e25ec29ce22da",
+      "date": "2023-10-16T15:29:15+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Add two Medium articles\n"
+    },
+    {
+      "sha": "ea6f2fa5b7bd2c6a141fe5dd62918db135ebeab1",
+      "date": "2023-08-14T00:03:50+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Migrate to Compose V2\n"
+    },
+    {
+      "sha": "96559018f44a15d87ee9082020f0ab11b5d58d30",
+      "date": "2023-08-13T23:53:54+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to spring-boot 3.1.2, jib 3.3.2 and springdoc-openapi 2.1.0\n"
+    },
+    {
+      "sha": "bd40dc88d6027c262bb93b241f0bd50b31969933",
+      "date": "2023-08-13T23:52:53+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to MySQL docker image 8.0.33\n"
+    },
+    {
+      "sha": "f65a4d9b626e7f18b8b6c9d51a300e7a9efb4f66",
+      "date": "2023-08-13T23:44:10+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to apache-maven 3.9.3 and maven-wrapper 3.2.0\n"
+    },
+    {
+      "sha": "7ff2458a4f2b6d958bdb23dd677b6cd375a013db",
+      "date": "2023-08-13T23:42:18+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Add PoCs & Articles Section In README\n"
+    },
+    {
+      "sha": "0f4a93ecf6738ba65fb3166acce691c5582be6c4",
+      "date": "2023-05-20T17:42:59-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Create FUNDING.yml\n"
+    },
+    {
+      "sha": "8ddc819871f0692b87ad311fe5f36970a770730e",
+      "date": "2023-03-21T10:28:28+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "remove mapstruct to keep the project simpler and update project-diagram\n"
+    },
+    {
+      "sha": "f0c87607a6f94a865d828af9d5f3aba1cda2295d",
+      "date": "2023-03-21T08:54:05+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "project upgrade\n- upgrade to spring-boot 3.0.4;\n- upgrade to springdoc-openapi 2.0.4;\n- upgrade to apache-maven 3.8.7 and maven-wrapper 3.1.1;\n- add project-diagram.\n"
+    },
+    {
+      "sha": "79e9cf084bd7ceba8a3ced1dd37eac79efa51856",
+      "date": "2023-02-13T21:59:36+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "downgrade to elastic.co docker images 7.x\nthe reason is because in 8.x, it is more complicated to connect filebeat-logstash-elasticsearch secure communication with ES.\n"
+    },
+    {
+      "sha": "3f3e081448ef842dcdbb6929bc0a5de69761e035",
+      "date": "2023-02-07T08:57:25+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "enable the building of native docker image\n"
+    }
+  ],
+  "commit_sha": "17e6754f23137f2bc8c440bb384ee5f69678c25e",
+  "extracted_at": "2026-10-05T18:20:19.587503+00:00"
+}

@@ -1,0 +1,230 @@
+{
+  "ia_status": "com_evidencia",
+  "ia_level": 2,
+  "ia_agents": "Claude Code",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "b9adc1c38106b0a491b83a80dd0b33ccffb8de7c",
+      "trailer": "Claude Sonnet 4.6 <noreply@anthropic.com>"
+    }
+  ],
+  "commits": [
+    {
+      "sha": "9058f704ecca494c6297cb28e4bb5fc2797795cf",
+      "date": "2026-07-13T19:13:51-03:00",
+      "author": "Jony Santos",
+      "email": "jonyfs@users.noreply.github.com",
+      "message": "Merge pull request #2 from jonyfs/claude/modernize-java-21-LAgtY\n\nModernize to Java 21 and Spring Boot 3.3.6, fix all CVEs"
+    },
+    {
+      "sha": "b9adc1c38106b0a491b83a80dd0b33ccffb8de7c",
+      "date": "2026-07-13T09:28:45Z",
+      "author": "Claude",
+      "email": "noreply@anthropic.com",
+      "message": "Fix integration tests and update README for Java 21 / Spring Boot 3.3.6\n\n- Replace flapdoodle embedded MongoDB (blocked by proxy) with mongo-java-server\n  (pure Java in-memory MongoDB, no binary download required)\n- Add MongoTestConfig @TestConfiguration for integration tests\n- Fix Logback config: replace removed SizeAndTimeBasedFNATP with\n  SizeAndTimeBasedRollingPolicy (Logback 1.3+ compatible)\n- Remove ambiguous @ExceptionHandler for MaxUploadSizeExceededException\n  (now handled by ResponseEntityExceptionHandler in Spring Framework 6)\n- Fix PaymentControllerV2/V3: replace EntityModel<String> (can't @JsonUnwrapped)\n  with PaymentResource to fix HTTP 500 on POST /payments\n- Fix REST Docs field documentation: add nested fields for store, products,\n  errors arrays, and _links; use ignored() for null id field\n- Update README: reflect Java 21, Spring Boot 3.3.6, updated dependencies,\n  replace outdated port/embedmongo-spring references\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01WettTkVx7KcBkRnR6gF2re\n"
+    },
+    {
+      "sha": "bd2938fc98305b898032d9b412e1d10a7dc5a8a2",
+      "date": "2026-04-21T00:17:35-03:00",
+      "author": "Jony Santos",
+      "email": "jonyfs@users.noreply.github.com",
+      "message": "Fix JDK version formatting in Maven workflow"
+    },
+    {
+      "sha": "839a49bb1d925dd2fdffbcee51d122089cfa80e5",
+      "date": "2026-04-21T00:16:40-03:00",
+      "author": "Jony Santos",
+      "email": "jonyfs@users.noreply.github.com",
+      "message": "Update JDK version from 17 to 21 in workflow"
+    },
+    {
+      "sha": "318e347772ada3d34b45f6334cc36e86577315ff",
+      "date": "2026-04-21T00:14:40-03:00",
+      "author": "Jony Santos",
+      "email": "jonyfs@users.noreply.github.com",
+      "message": "Add Java CI workflow with Maven support\n\nThis workflow builds a Java project using Maven and caches dependencies for improved execution time."
+    },
+    {
+      "sha": "3248b8eaca0ab9315e0d8d81178a21861b89520a",
+      "date": "2026-04-21T00:14:09-03:00",
+      "author": "Jony Santos",
+      "email": "jonyfs@users.noreply.github.com",
+      "message": "Merge pull request #1 from jonyfs/claude/modernize-java-21-LAgtY\n\nModernize project to Java 21 and Spring Boot 3.3.6"
+    },
+    {
+      "sha": "cb4d205673591be37ed569697ba46624ced93053",
+      "date": "2026-04-21T03:09:22Z",
+      "author": "Claude",
+      "email": "noreply@anthropic.com",
+      "message": "Modernize project to Java 21 and Spring Boot 3.3.6\n\n- Upgrade Spring Boot 1.3.5 → 3.3.6 (removes all known CVEs)\n- Upgrade Java 1.8 → 21 (LTS)\n- Upgrade Maven wrapper 3.3.3 → 3.9.9\n- Migrate javax.* → jakarta.* across all source files\n- Update Spring HATEOAS 0.x API → 2.x:\n  ResourceSupport → RepresentationModel\n  Resource<T> → EntityModel<T>\n  PagedResources<T> → PagedModel<T>\n  ResourceAssemblerSupport → RepresentationModelAssemblerSupport\n  ControllerLinkBuilder → WebMvcLinkBuilder\n  toResource() → toModel(), createResourceWithId() → createModelWithId()\n  CurieProvider moved to org.springframework.hateoas.mediatype.hal\n  RelProvider → LinkRelationProvider\n  EntityLinks.linkToSingleResource() → linkToItemResource()\n- Replace cz.jirutka embedmongo-spring and pjl-comp-filter with\n  de.flapdoodle.embed.mongo.spring31x 4.11.0 (Spring Boot 3.1+ integration)\n- Fix PaymentServiceImpl: findOne() → findById().orElse(null)\n- Remove @EnableWebMvc and @EnableEntityLinks from Config (auto-configured)\n- Migrate tests: JUnit 4 → JUnit 5 (ExtendWith, BeforeEach, Assertions)\n- Replace @Rule RestDocumentation with RestDocumentationExtension\n- Update application.properties: remove deprecated Spring Boot 1.x properties\n- Replace explicit JUnit 4 dependency with junit-platform-suite\n\nhttps://claude.ai/code/session_01WettTkVx7KcBkRnR6gF2re\n"
+    },
+    {
+      "sha": "3a11a77e46ea3ea1662fd4ad13a0032d9e528e3f",
+      "date": "2020-04-07T22:10:57-03:00",
+      "author": "Jony Santos",
+      "email": "jonyfs@users.noreply.github.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "0ccd8b0121d9ea2b18adb440f86a82a9472969c5",
+      "date": "2016-06-09T19:10:03-03:00",
+      "author": "Jony Santos",
+      "email": "jonyferreira@hotmail.com",
+      "message": "some updates"
+    },
+    {
+      "sha": "141d59a62e27fa48793e140a9cfd03cf61fd899a",
+      "date": "2016-06-09T19:09:34-03:00",
+      "author": "Jony Santos",
+      "email": "jonyferreira@hotmail.com",
+      "message": "some updates"
+    },
+    {
+      "sha": "5e411dbb92c354ae0bc5bd9e2e952fe0237bda82",
+      "date": "2016-01-16T17:00:37-02:00",
+      "author": "Jony Santos",
+      "email": "jonyferreira@hotmail.com",
+      "message": "some updates"
+    },
+    {
+      "sha": "b1daf01b227ef1dc28de231e75c0fffbf516ee38",
+      "date": "2016-01-15T22:14:40-02:00",
+      "author": "Jony",
+      "email": "jonyfs@users.noreply.github.com",
+      "message": "update version"
+    },
+    {
+      "sha": "1d55a621027a126a2c79548115931713dc7914e9",
+      "date": "2016-01-06T11:30:24-02:00",
+      "author": "Jony",
+      "email": "jonyfs@users.noreply.github.com",
+      "message": "update version"
+    },
+    {
+      "sha": "eee208b0492ee3f70a1ae61fda0908ad103af3f6",
+      "date": "2016-01-04T10:15:48-02:00",
+      "author": "Jony",
+      "email": "jonyfs@users.noreply.github.com",
+      "message": "update version"
+    },
+    {
+      "sha": "251f1b5cebc7dbafcaee45d2c7d7936364e58750",
+      "date": "2015-12-23T13:14:55-02:00",
+      "author": "Jony Santos",
+      "email": "jonyferreira@hotmail.com",
+      "message": "some updates"
+    },
+    {
+      "sha": "aeac49d90eb79f2822eaa8f1ce6cedec45f5ba4b",
+      "date": "2015-12-23T13:10:30-02:00",
+      "author": "Jony Santos",
+      "email": "jonyferreira@hotmail.com",
+      "message": "some updates"
+    },
+    {
+      "sha": "cce9b3093d4e1f8354eca95d9c5807e72919a9bc",
+      "date": "2015-12-23T13:00:27-02:00",
+      "author": "Jony Santos",
+      "email": "jonyferreira@hotmail.com",
+      "message": "some updates"
+    },
+    {
+      "sha": "0ca6c4efd6790ab06b7d092bbbec9a61e4556a95",
+      "date": "2015-12-22T21:27:46-02:00",
+      "author": "jonyferreira@hotmail.com",
+      "email": "",
+      "message": "some updates"
+    },
+    {
+      "sha": "28732c71cc214db0ee48f58693e8048c7a1ab1b7",
+      "date": "2015-12-21T09:34:45-02:00",
+      "author": "Jony Santos",
+      "email": "jonyferreira@hotmail.com",
+      "message": "some updates"
+    },
+    {
+      "sha": "60653c9c4ca92184a7da56e2cbd99210da22c696",
+      "date": "2015-12-21T08:42:58-02:00",
+      "author": "Jony",
+      "email": "jonyfs@users.noreply.github.com",
+      "message": "Some updates"
+    },
+    {
+      "sha": "b7cd57b448b6c9740bc4adbae4f9c54f7a0b051b",
+      "date": "2015-12-21T08:28:27-02:00",
+      "author": "Jony",
+      "email": "jonyfs@users.noreply.github.com",
+      "message": "Some updates"
+    },
+    {
+      "sha": "609b8dac5fc216a0e4026d596afb9e9cb8610e58",
+      "date": "2015-12-20T21:25:54-02:00",
+      "author": "Jony Santos",
+      "email": "jonyferreira@hotmail.com",
+      "message": "some updates"
+    },
+    {
+      "sha": "014b2708378b75a7b207887c2fa379df98db6291",
+      "date": "2015-12-20T21:21:31-02:00",
+      "author": "Jony Santos",
+      "email": "jonyferreira@hotmail.com",
+      "message": "some updates"
+    },
+    {
+      "sha": "80749a07a55ead84e562a95159a2648da86838a0",
+      "date": "2015-12-20T12:17:28-02:00",
+      "author": "Jony Santos",
+      "email": "jonyferreira@hotmail.com",
+      "message": "some updates"
+    },
+    {
+      "sha": "351ccf32a758e1a631ee93b6263223884e6a08d6",
+      "date": "2015-12-18T02:24:50-02:00",
+      "author": "Jony Santos",
+      "email": "jonyferreira@hotmail.com",
+      "message": "some updates"
+    },
+    {
+      "sha": "006f8a669937e25428c81ddbf9fdf212add24ccb",
+      "date": "2015-12-18T02:24:07-02:00",
+      "author": "Jony Santos",
+      "email": "jonyferreira@hotmail.com",
+      "message": "some updates"
+    },
+    {
+      "sha": "f7a19607d7ad4a94fbe91321e39b9a98264309f1",
+      "date": "2015-12-18T01:51:42-02:00",
+      "author": "Jony Santos",
+      "email": "jonyferreira@hotmail.com",
+      "message": "some updates"
+    },
+    {
+      "sha": "728c27c4ab1b01447ad877d0ef669af0373b8e49",
+      "date": "2015-12-17T18:30:40-02:00",
+      "author": "Jony Santos",
+      "email": "jony.santos@bematech.com.br",
+      "message": "some updates\n"
+    },
+    {
+      "sha": "568286698eee12760dbdd7ee9280b002165f115d",
+      "date": "2015-12-17T14:22:39-02:00",
+      "author": "Jony Santos",
+      "email": "jony.santos@bematech.com.br",
+      "message": "some updates\n"
+    },
+    {
+      "sha": "929b6c6a5dc6eeb8def25197d0c5bdca402e18bb",
+      "date": "2015-12-17T11:36:44-02:00",
+      "author": "Jony Santos",
+      "email": "jony.santos@bematech.com.br",
+      "message": "some updates\n"
+    }
+  ],
+  "commit_sha": "9058f704ecca494c6297cb28e4bb5fc2797795cf",
+  "extracted_at": "2026-10-05T18:15:18.725474+00:00"
+}

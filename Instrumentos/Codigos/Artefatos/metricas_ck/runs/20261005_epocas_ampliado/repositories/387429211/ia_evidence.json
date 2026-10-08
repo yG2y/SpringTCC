@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "6c0dc936f10f54b1119c2cc8be1140b9bfc362a9",
+      "date": "2026-10-04T19:13:09+08:00",
+      "author": "Yang Luo",
+      "email": "hsluoyz@gmail.com",
+      "message": "fix: skip integration tests when publishing to Maven Central\n"
+    },
+    {
+      "sha": "de48208ce8d53553ab6369fa0e9d02377ec50700",
+      "date": "2026-10-04T19:10:17+08:00",
+      "author": "Yang Luo",
+      "email": "hsluoyz@gmail.com",
+      "message": "feat: rewrite for Spring Boot 3 and 4, add Spring Security OAuth2 login and resource server\n\nBREAKING CHANGE: requires Spring Boot 3.0+ and Java 17+\n"
+    },
+    {
+      "sha": "27aecdbc65e0936a1bdd1cd5e93f8b1c053212dd",
+      "date": "2026-10-04T14:17:30+08:00",
+      "author": "Yang Luo",
+      "email": "hsluoyz@gmail.com",
+      "message": "feat: upgrade casdoor-java-sdk to 1.47.0, register all its services and run tests in CI\n"
+    },
+    {
+      "sha": "82bc0ca13caf3cf41b0e5871f9a709f31dcb759f",
+      "date": "2026-10-03T22:26:31+08:00",
+      "author": "Yang Luo",
+      "email": "hsluoyz@gmail.com",
+      "message": "docs: update links to casdoor.ai\n"
+    },
+    {
+      "sha": "9681527fef23468b044eb845314a67a7befd3254",
+      "date": "2024-10-18T17:52:29+05:30",
+      "author": "MonishK2002",
+      "email": "163740566+MonishK2002@users.noreply.github.com",
+      "message": "feat: update Casdoor Java SDK to version 1.34.0 (#51)\n\nThis PR updates the Casdoor Java SDK dependency in the pom.xml file from version 1.33.0 to version 1.34.0.\n\n### Reason for Update\nVersion 1.33.0 of the Casdoor Java SDK had an issue with the Buy Product API, which was not functioning correctly. The issue has been resolved in version 1.34.0, as confirmed by the Casdoor team.\n\n### Changes Made\n- Updated the `casdoor-java-sdk` dependency in the `pom.xml` file to version 1.34.0.\n\n### Testing\n- Verified that the Buy Product API now works as expected with version 1.34.0.\n- Ran existing tests to ensure no other functionality is broken by the update.\n\n### Impact\nThis update ensures that users of the Spring Boot Casdoor SDK can utilize the Buy Product API without encountering the previously reported issue."
+    },
+    {
+      "sha": "2c2681663423be439ed305a523a36deecdc0ffde",
+      "date": "2024-10-14T17:02:50+08:00",
+      "author": "Yang Luo",
+      "email": "hsluoyz@qq.com",
+      "message": " feat: update casdoor-java-sdk dependency to v1.33.0"
+    },
+    {
+      "sha": "14cd3e0f5c8b2d74afcfe7a630d76f68a9a8c9bf",
+      "date": "2024-10-13T21:39:28+08:00",
+      "author": "Yang Luo",
+      "email": "hsluoyz@qq.com",
+      "message": "feat: update casdoor-java-sdk dependency to v1.32.0"
+    },
+    {
+      "sha": "0c5e4169d2d50ed0efe64f434f64cc93e83e6900",
+      "date": "2024-09-27T22:30:39+08:00",
+      "author": "Liao Xin",
+      "email": "93535922+liewstar@users.noreply.github.com",
+      "message": "feat: fix pom.xml to fix CI for publishing to https://central.sonatype.com (#42)\n\n* feat: fix pom.xml to fix CI for publishing to https://central.sonatype.com\n\n* feat: modify the version of node in CI from 18 to 20"
+    },
+    {
+      "sha": "777b93af02cd7444d4dff178edc359e2dc1478b7",
+      "date": "2024-09-27T22:26:06+08:00",
+      "author": "Yang Luo",
+      "email": "hsluoyz@qq.com",
+      "message": "feat: upgrade CI Node.js version to 20"
+    },
+    {
+      "sha": "444aad31b96cffdf10de7f4c87bb93e602db3128",
+      "date": "2023-10-25T17:02:16+08:00",
+      "author": "Yang Luo",
+      "email": "hsluoyz@qq.com",
+      "message": "feat: fix CI test issue\n"
+    },
+    {
+      "sha": "bf62a35b15ffac5bd6bd23bec4f4de7502bb4095",
+      "date": "2023-10-25T11:52:01+08:00",
+      "author": "Yang Luo",
+      "email": "hsluoyz@qq.com",
+      "message": "feat: upgrade casdoor-java-sdk to v1.22.0 to add more APIs\n"
+    },
+    {
+      "sha": "1f307ab6951d814ae37c55a9ba8ac2163eb931a8",
+      "date": "2023-08-08T14:02:55+08:00",
+      "author": "YunShu",
+      "email": "im@yunshu.site",
+      "message": "fix: fix broken links (#37)\n\n"
+    },
+    {
+      "sha": "80f8c8c99d1f6742b9f1ca2fa95382c4ba54dd0e",
+      "date": "2023-08-05T18:21:11+08:00",
+      "author": "hsluoyz",
+      "email": "hsluoyz@qq.com",
+      "message": "feat: upgrade casdoor-java-sdk to v1.16.1 to fix JWT parse bug"
+    },
+    {
+      "sha": "60c1e2a1da9e53ae46e3b754d044f6bca2a125cb",
+      "date": "2023-07-28T23:49:55+08:00",
+      "author": "zeekrs",
+      "email": "git@zeekrs.dev",
+      "message": "feat: upgrade casdoor-java-sdk to v1.16.0 & add several getXxxServices (#33)\n\n* feat: upgrade new version for casdoor-java-sdk & add mission services\n\n* Update pom.xml\n\n---------\n\nCo-authored-by: hsluoyz <hsluoyz@qq.com>"
+    },
+    {
+      "sha": "9e62ec06699e23379323714cddf6bb4a7cbe8c01",
+      "date": "2023-07-25T20:50:06+08:00",
+      "author": "Chang Jing Chen",
+      "email": "107469948+D1zzzY1@users.noreply.github.com",
+      "message": "fix: Resolve Maven alerts by updating dependencies (#32)\n\n"
+    },
+    {
+      "sha": "a4564092c2fe4c5737ab3a120a8cbc243914dfdc",
+      "date": "2023-07-06T17:47:42+08:00",
+      "author": "YunShu",
+      "email": "YunShuEmail@foxmail.com",
+      "message": "docs: replace gitter links with discord (#30)\n\n* docs: replace gitter links with discord\n\n* fix: build failed"
+    },
+    {
+      "sha": "7b696b2c7a6cd36209c35480f6bfe0a5255a0f7a",
+      "date": "2022-12-07T17:55:07+08:00",
+      "author": "wht",
+      "email": "101807499+OutOfEastGate@users.noreply.github.com",
+      "message": "feat: support for springboot-3.0 (#27)\n\n"
+    },
+    {
+      "sha": "0760067894ffb361da999b5b3f2ea2e0071cb20c",
+      "date": "2022-11-07T21:00:15+08:00",
+      "author": "Bingchang Chen",
+      "email": "19990626.love@163.com",
+      "message": "feat: bump java sdk to 1.11.0 (#25)\n\n"
+    },
+    {
+      "sha": "274958a7f3d19b91b91e2ccef2aaa2abc8130221",
+      "date": "2022-10-02T18:15:50+08:00",
+      "author": "Taoning Ge",
+      "email": "gtn1024o@outlook.com",
+      "message": "fix: bump java sdk to 1.10.1 (#22)\n\n"
+    },
+    {
+      "sha": "8a1d2cc022c512d82b49cad92ebf4679b70d3568",
+      "date": "2022-10-02T14:26:42+08:00",
+      "author": "Taoning Ge",
+      "email": "gtn1024o@outlook.com",
+      "message": "feat: bump casdoor-sdk to 1.10.0 (#21)\n\n"
+    },
+    {
+      "sha": "7c035d9a9a9461ce9c000ad86a9fdef8de5ed3cc",
+      "date": "2022-09-24T16:21:13+08:00",
+      "author": "Zerek-Cheng",
+      "email": "16066557+Zerek-Cheng@users.noreply.github.com",
+      "message": "feat: update casdoor-java-sdk version to 1.9.1 (#20)\n\n"
+    },
+    {
+      "sha": "379e68d890404a8b67fd06407720d151064344eb",
+      "date": "2022-09-08T11:04:04+08:00",
+      "author": "Zerek",
+      "email": "16066557+Zerek-Cheng@users.noreply.github.com",
+      "message": "fix: update casdoor-java-sdk version (#18)\n\nfix: update casdoor-java-sdk version"
+    },
+    {
+      "sha": "e4aae03967ab1a607120365680a870a82bdaf199",
+      "date": "2022-08-25T16:58:27+08:00",
+      "author": "conghuhu",
+      "email": "56248584+conghuhu@users.noreply.github.com",
+      "message": "fix: update the parameter from jwtPublicKey to certificate (#17)\n\n"
+    },
+    {
+      "sha": "347ee8f4c5f2b8e4d52597b0fe82d4f7a6958873",
+      "date": "2022-08-23T17:53:17+08:00",
+      "author": "conghuhu",
+      "email": "56248584+conghuhu@users.noreply.github.com",
+      "message": "feat: update casdoor-java-sdk version (#16)\n\n"
+    },
+    {
+      "sha": "3398060ac21d82cf4e0304bebdc956239f09cf7a",
+      "date": "2022-07-20T21:34:59+08:00",
+      "author": "Yixiang Zhao",
+      "email": "seriouszyx@foxmail.com",
+      "message": "fix: upgrade jackson for CVE-2020-36518 (#13)\n\nSigned-off-by: Yixiang Zhao <seriouszyx@foxmail.com>"
+    },
+    {
+      "sha": "d77c01ed653f2cb140e4fdf3438a2fdc59d9613d",
+      "date": "2022-02-14T11:56:49+08:00",
+      "author": "Yixiang Zhao",
+      "email": "seriouszyx@foxmail.com",
+      "message": "feat: upgrade casdoor-java-sdk to 1.5.1 and add docs for proposal of start.spring.io (#11)\n\nSigned-off-by: Yixiang Zhao <seriouszyx@foxmail.com>"
+    },
+    {
+      "sha": "b2a42f770746ff3801ef5e3d06c7959abb7a27a7",
+      "date": "2021-11-21T14:02:04+08:00",
+      "author": "Yang Luo",
+      "email": "hsluoyz@qq.com",
+      "message": "Merge pull request #10 from seriouszyx/dev\n\nfeat: upgrade casdoor-java-sdk and add getCasdoorSmsService, getCasdoorEmailService, getCasdoorResourceService APIs"
+    },
+    {
+      "sha": "566c911cbf531ee39c2c98d944feb0000434e8d7",
+      "date": "2021-11-21T13:22:11+08:00",
+      "author": "Yixiang Zhao",
+      "email": "seriouszyx@foxmail.com",
+      "message": "feat: upgrade casdoor-java-sdk and add getCasdoorSmsService, getCasdoorEmailService, getCasdoorResourceService APIs\n\nSigned-off-by: Yixiang Zhao <seriouszyx@foxmail.com>\n"
+    },
+    {
+      "sha": "00cefd39ef9b69930931c1e5f74346f4cc9b6d71",
+      "date": "2021-11-12T23:41:20+08:00",
+      "author": "Yang Luo",
+      "email": "hsluoyz@qq.com",
+      "message": "Merge pull request #9 from seriouszyx/dev\n\nfix: update unit tests for the 1.3.0 version of casdoor-java-sdk"
+    },
+    {
+      "sha": "66a09a881505a1da01a6e0c42d177f1fd2330a2e",
+      "date": "2021-11-12T21:09:57+08:00",
+      "author": "“seriouszyx”",
+      "email": "seriouszyx@foxmail.com",
+      "message": "fix: update unit tests for the 1.3.0 version of casdoor-java-sdk\n\nSigned-off-by: “seriouszyx” <seriouszyx@foxmail.com>\n"
+    }
+  ],
+  "commit_sha": "6c0dc936f10f54b1119c2cc8be1140b9bfc362a9",
+  "extracted_at": "2026-10-05T18:44:56.292057+00:00"
+}

@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "e6daf497fbc7ca843abcafe8379e80a80f383b62",
+      "date": "2025-05-28T22:50:06+09:00",
+      "author": "Minseong Park",
+      "email": "52368015+pminsung12@users.noreply.github.com",
+      "message": "docs: update readme"
+    },
+    {
+      "sha": "fc9c06def2002f2096a495daa9965de883118ea9",
+      "date": "2024-11-21T10:28:41+09:00",
+      "author": "Minseong Park",
+      "email": "52368015+pminsung12@users.noreply.github.com",
+      "message": "[No-jira] 낙관락과 Spring Retry를 통한 리뷰 좋아요 동시성 제어 (#208)\n\n* feat: 리뷰 엔티티와 도메인에 @version 컬럼 추가\n\n* feat: 리뷰 엔티티에 likesCount 증감 메서드 추가\n\n* feat: 리뷰 레포지토리에 낙관락 기반으로 좋아요 수 업데이트 구현\n\n* feat: 리뷰엔티티 version 컬럼 디폴트 0L 설정\n\n* feat: 리뷰 좋아요 토글 메서드에 낙관락 및 재시도 로직 구현\n\n* test: 멀티스레드 낙관락 정합성 테스트\n\n* feat: setter로 hibernate 변경 감지 가능하도록 변경\n\n* feat: spring retry 적용헤 재시도 로직 구현"
+    },
+    {
+      "sha": "98a3998057366e8dd301367a6b4d6ccb2cc32c99",
+      "date": "2024-11-14T13:21:14+09:00",
+      "author": "Minseong Park",
+      "email": "52368015+pminsung12@users.noreply.github.com",
+      "message": "No jira dev deploy (#207)\n\n* style: 엔터추가\n\n* feat: DistributedLockAop 빈에서 삭제\n\n* test: 리뷰 좋아요 테스트 주석처리\n\n* feat: redis 설정 파일 주석 처리\n\n* feat: 설정파일에서 redis 연결부분 삭제\n\n* feat: redis 설정 다 삭제"
+    },
+    {
+      "sha": "0ba293cbbbb6a1a8abc4c5c3d30c2c263b002ca1",
+      "date": "2024-11-14T12:27:55+09:00",
+      "author": "Minseong Park",
+      "email": "52368015+pminsung12@users.noreply.github.com",
+      "message": "[NO-JIRA] dev deploy 5th (#206)\n\n* style: 엔터추가\n\n* feat: DistributedLockAop 빈에서 삭제\n\n* test: 리뷰 좋아요 테스트 주석처리\n\n* feat: redis 설정 파일 주석 처리\n\n* feat: 설정파일에서 redis 연결부분 삭제"
+    },
+    {
+      "sha": "e36589eb7232956570f6224e6d67cfd69d822a44",
+      "date": "2024-11-14T12:07:12+09:00",
+      "author": "Minseong Park",
+      "email": "52368015+pminsung12@users.noreply.github.com",
+      "message": "[NO-JIRA] 개발 서버 재배포 4th (#205)\n\n* style: 엔터추가\n\n* feat: DistributedLockAop 빈에서 삭제\n\n* test: 리뷰 좋아요 테스트 주석처리\n\n* feat: redis 설정 파일 주석 처리"
+    },
+    {
+      "sha": "4c3f806bf1f408a5f9904ecfb16b26d9dfbb88f2",
+      "date": "2024-11-14T11:46:20+09:00",
+      "author": "Minseong Park",
+      "email": "52368015+pminsung12@users.noreply.github.com",
+      "message": "[NO-JIRA] 개발 서버 재배포 3rd (#204)\n\n* style: 엔터추가\n\n* feat: DistributedLockAop 빈에서 삭제\n\n* test: 리뷰 좋아요 테스트 주석처리"
+    },
+    {
+      "sha": "8240ab14f0f91291919c1831b02d381d9cad0ccb",
+      "date": "2024-11-14T11:35:31+09:00",
+      "author": "Minseong Park",
+      "email": "52368015+pminsung12@users.noreply.github.com",
+      "message": "[NO-JIRA] 개발 서버 재배포 2nd (#203)\n\n* style: 엔터추가\n\n* feat: DistributedLockAop 빈에서 삭제"
+    },
+    {
+      "sha": "093e405ed87eb45e73d82f673681ede935475cb9",
+      "date": "2024-11-14T10:44:23+09:00",
+      "author": "Minseong Park",
+      "email": "52368015+pminsung12@users.noreply.github.com",
+      "message": "[No-JIRA] 개발 서버 재배포\n\n"
+    },
+    {
+      "sha": "68ede1cf93ea1fbb81423204b51f84ca11d07984",
+      "date": "2024-10-18T14:54:35+09:00",
+      "author": "junwon",
+      "email": "67488973+wjdwnsdnjs13@users.noreply.github.com",
+      "message": "refactor : 폰트 스타일 변경 (#201)\n\n"
+    },
+    {
+      "sha": "3493e4c5dde22f7be8a429c4a2cb6ed52d7a43eb",
+      "date": "2024-10-18T14:12:29+09:00",
+      "author": "junwon",
+      "email": "67488973+wjdwnsdnjs13@users.noreply.github.com",
+      "message": "[NO_JIRA] 멤버 수 확인 API 추가 (#200)\n\n* feat : 멤버 수 API 추가\n\n* feat : 멤버가 존재하지 않을 경우 Exception 추가\n\n* feat : 멤버 수 API 화이트 리스트 추가\n\n* refactor : 복수 표현으로 변경"
+    },
+    {
+      "sha": "fc7edea3f13611f49f7f098f19d25d48d92a4607",
+      "date": "2024-10-08T16:34:20+09:00",
+      "author": "junwon",
+      "email": "67488973+wjdwnsdnjs13@users.noreply.github.com",
+      "message": "refactor : memory resize(1024 -> 768 && T2.small -> T2.micro) (#199)\n\n"
+    },
+    {
+      "sha": "329c88b16cfbdc46daa2d21d3f80cb4ce4933bdd",
+      "date": "2024-09-14T12:15:01+09:00",
+      "author": "junwon",
+      "email": "67488973+wjdwnsdnjs13@users.noreply.github.com",
+      "message": "[NO-JIRA] mixpanel remove (#198)\n\n* refactor : mixpanel 제거\n\n* refactor : 커넥션 풀 50개"
+    },
+    {
+      "sha": "6b3d73031c6ca08bd49cbe476d34a89088cad03c",
+      "date": "2024-09-14T10:46:58+09:00",
+      "author": "junwon",
+      "email": "67488973+wjdwnsdnjs13@users.noreply.github.com",
+      "message": "refactor : 커넥션 풀 최대 300으로 설정 (#197)\n\n"
+    },
+    {
+      "sha": "361649ff200e224d1ce475a4417c8d743be2503f",
+      "date": "2024-09-14T02:16:52+09:00",
+      "author": "junwon",
+      "email": "67488973+wjdwnsdnjs13@users.noreply.github.com",
+      "message": "refactor : 메모리 업 (#196)\n\n"
+    },
+    {
+      "sha": "2bff74a0cd213be636313fba6ce6f110b077df79",
+      "date": "2024-09-14T02:02:25+09:00",
+      "author": "junwon",
+      "email": "67488973+wjdwnsdnjs13@users.noreply.github.com",
+      "message": "refactor : 메모리 업 (#195)\n\n"
+    },
+    {
+      "sha": "78b256a857c8d087dd1a0bf5c24c3bfd8a04fbe6",
+      "date": "2024-09-11T14:42:24+09:00",
+      "author": "junwon",
+      "email": "67488973+wjdwnsdnjs13@users.noreply.github.com",
+      "message": "[BSVR-254] 탈퇴 시 리뷰 삭제 구현 (#190)\n\n* feat : 회원 탈퇴 시 리뷰 삭제 구현\n\n* refactor : jwtToken 생성 prod에서 제외"
+    },
+    {
+      "sha": "9f10e52a87f4fec0822e562766a68aaeb2f72b48",
+      "date": "2024-09-11T02:16:17+09:00",
+      "author": "junwon",
+      "email": "67488973+wjdwnsdnjs13@users.noreply.github.com",
+      "message": "refactor : Loki 로그에 Spring profile fix (#194)\n\n"
+    },
+    {
+      "sha": "9b1aaae8307b40c0619ce7e6c3c3891371745e77",
+      "date": "2024-09-10T04:10:11+09:00",
+      "author": "Minseong Park",
+      "email": "52368015+pminsung12@users.noreply.github.com",
+      "message": "fix: actions 스크립트에 LOKI_URL 주입 (#193)\n\n"
+    },
+    {
+      "sha": "52ede149b0b434cf5f8bedc2d5a526308cbcaaaa",
+      "date": "2024-09-10T00:21:34+09:00",
+      "author": "우디",
+      "email": "38103085+EunjiShin@users.noreply.github.com",
+      "message": "feat: heic 이미지 확장자 추가 (#191)\n\n"
+    },
+    {
+      "sha": "c024ffd7404824ac1e84120a860e95a2dc3b1c02",
+      "date": "2024-09-10T00:08:06+09:00",
+      "author": "Minseong Park",
+      "email": "52368015+pminsung12@users.noreply.github.com",
+      "message": "[BSVR-256] 환경변수 관리를 위한 AWS Secret Manger 도입 - V2 (#187)\n\n* build: secret manager 관련 의존성 추가\n\n* feat: secret manager spring config 설정\n\n* chore: gitignore 업데이트\n\n* feat: yml 파일들에 secret manager 적용\n\n* ci: github actions 파일 업데이트"
+    },
+    {
+      "sha": "6c57eeb5eae34cfec30fd142816653c0137586b8",
+      "date": "2024-09-09T20:51:35+09:00",
+      "author": "junwon",
+      "email": "67488973+wjdwnsdnjs13@users.noreply.github.com",
+      "message": "refactor : Loki 로그에 Spring profile 추가, 사용하지 않는 app 제거 (#189)\n\n"
+    },
+    {
+      "sha": "4a2442cd939b85bbd13d5586f0bb1953fccf3e80",
+      "date": "2024-09-09T18:52:45+09:00",
+      "author": "junwon",
+      "email": "67488973+wjdwnsdnjs13@users.noreply.github.com",
+      "message": "[BSVR-253] Mixpanel Event Listener 사용하도록 리팩토링 (#186)\n\n* refactor : 롤백, TODO 재정의\n\n* feat : MixpanelEvent 구현\n\n* refactor : MixpanelEventListener 사용\n\n* refactor : MixpanelEvent 비즈니스 로직과 분리\n\n* refactor : 불필요한 코드 제거\n\n* refactor : MixpanelRepository 의존성 제거"
+    },
+    {
+      "sha": "aa1fa16bd5ed45db80bde57abf438caa282b23a1",
+      "date": "2024-09-09T17:59:58+09:00",
+      "author": "Minseong Park",
+      "email": "52368015+pminsung12@users.noreply.github.com",
+      "message": "[BSVR-260] 리뷰 수정 isLiked, isScrapped 버그 해결 (#188)\n\n* feat: isLiked, isScrapped 조회 메서드 구현\n\n* feat: 업데이트 시 isLiked, isScrapped 상태 조회\n\n* chore: ReadReviewService 주석 삭제"
+    },
+    {
+      "sha": "586fcbdc02db5fffe3a171d6780ad432b6741011",
+      "date": "2024-09-09T03:00:45+09:00",
+      "author": "Minseong Park",
+      "email": "52368015+pminsung12@users.noreply.github.com",
+      "message": "[BSVR-257] 리뷰 수정 API 업데이트 - 요청 필드 추가, nullable 처리 (#185)\n\n* feat: spring 디폴트 프로필 local로 변경\n\n* feat: UpdateReviewRequest에 stadiumId, rowNumber, reviewType 추가\n\n* feat: UpdateReviewCommand에 stadiumId, rowNumber, reviewType 추가\n\n* refactor: findByBlockIdAndSeatNumber 메서드 이름 변경\n\n* feat: block id와 number로 BlockRow 엔티티 조회해오는 repository 메서드 구현\n\n* feat: 리팩토링 위한 ReviewLocationInfo 도메인 생성\n\n* feat: ReviewDataProcessor에 업데이트 로직 이관\n\n* feat: ReviewDataProcessor에 업데이트된 리뷰 생성 로직 이관\n\n* feat: processReviewDetails 메서드 reviewCreationProcessor로 리팩토링\n\n* feat: ReviewKeywordProcessor에 업데이트쪽 updateBlockTopKeywords 메서드 이동\n\n* feat: Processor를 적용해 UpdatteReviewService 리팩토링\n\n* refactor: 더이상 사용하지 않는 UpdateReviewService 필드 삭제"
+    },
+    {
+      "sha": "1687b42e425a08862cf22db0a11fbf0b66c19a0c",
+      "date": "2024-09-08T14:35:37+09:00",
+      "author": "우디",
+      "email": "38103085+EunjiShin@users.noreply.github.com",
+      "message": "[BSVR-255] Readme.md 작성 (#184)\n\n* docs: readme 초안 작성\n\n* docs: 불필요한 라인 삭제\n\n* docs: 트러블슈팅 작성\n\n* docs: 기술적 의사결정 작성\n\n* docs: 기술적 의사결정 링크 수정\n\n---------\n\nCo-authored-by: Minseong Park <pminsung12@gmail.com>"
+    },
+    {
+      "sha": "eeca5ac709e4eea8e34bb012fb2a9480d74dbd43",
+      "date": "2024-09-01T22:53:05+09:00",
+      "author": "junwon",
+      "email": "67488973+wjdwnsdnjs13@users.noreply.github.com",
+      "message": "[BSVR-232] 믹스패널 이벤트 추가 (#165)\n\n* feat : mixpanel 추가\n\n* feat : mixpanel 추가\n\n* feat : mixpanel 설정 추가\n\n* feat : mixpanel 구현(연동 확인 완료)\n\n* feat : 믹스패널 이벤트 Enum 추가\n\n* feat : 믹스패널 이벤트 추가\n\n* remove : 믹스패널 확인용 controller 제거\n\n* refactor : 믹스패널 패키지 구조 리팩토링"
+    },
+    {
+      "sha": "4643b3aa53f22320a8ea3c7f85acaf72457d9bcd",
+      "date": "2024-08-30T04:39:58+09:00",
+      "author": "Minseong Park",
+      "email": "52368015+pminsung12@users.noreply.github.com",
+      "message": "build: multipart size 지정 (#181)\n\n"
+    },
+    {
+      "sha": "94033c095ce91d6d209ed2d773a8bb89dc8b0ff8",
+      "date": "2024-08-30T00:07:22+09:00",
+      "author": "junwon",
+      "email": "67488973+wjdwnsdnjs13@users.noreply.github.com",
+      "message": "[NO_JIRA] login fix (#179)\n\n* fix : 기본 프로필 이미지 값 주입 변경(userInfoEntity는 빈이 아니라서 주입이 안됨)\n\n* fix : 멀티스레드 리뷰 공감 Test에 문제 없도록 수정\n\n* fix : 기본 프로필 이미지 url 값 추가"
+    },
+    {
+      "sha": "f3484e6116e04d1da982e90f575a20a2f117f536",
+      "date": "2024-08-29T19:43:38+09:00",
+      "author": "junwon",
+      "email": "67488973+wjdwnsdnjs13@users.noreply.github.com",
+      "message": "[NO_JIRA] login fix (#177)\n\n* refactor : 이미 가입 된 유저의 경우 해당 정보 리턴하도록 변경\n\n* refactor : v2 oauth 부분도 맞춰서 수정\n\n* fix : v2 google 오류 fix\n\n* refactor : accessToken 사용하도록 다시 변경\n\n* feat : Oauth call back url 추가\n\n* refactor : 이미 가입된 회원은 MEMBER_CONFLICT Exception 발생"
+    },
+    {
+      "sha": "5c1b3582f0649571d770bff819731b1bff95d7b1",
+      "date": "2024-08-29T14:44:16+09:00",
+      "author": "junwon",
+      "email": "67488973+wjdwnsdnjs13@users.noreply.github.com",
+      "message": "[NO_JIRA] 기본 프로필 이미지 변경 (#176)\n\n* refactor : 기본 프로필 이미지 변경\n\n* refactor : 기본 프로필 이미지 환경 변수로 처리"
+    }
+  ],
+  "commit_sha": "e6daf497fbc7ca843abcafe8379e80a80f383b62",
+  "extracted_at": "2026-10-05T18:11:47.864653+00:00"
+}

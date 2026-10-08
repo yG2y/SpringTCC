@@ -1,0 +1,230 @@
+{
+  "ia_status": "com_evidencia",
+  "ia_level": 2,
+  "ia_agents": "Claude Code",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "c177810bedcbfdc6bc40a21386568905520190e9",
+      "trailer": "Claude <noreply@anthropic.com>"
+    }
+  ],
+  "commits": [
+    {
+      "sha": "a069069b07027613bf0e7f571736be86f431faee",
+      "date": "2025-10-27T18:43:30+08:00",
+      "author": "十三",
+      "email": "1034683568@qq.com",
+      "message": "Merge pull request #102 from Peterpanpan/claude/generate-qa-content-011CUPXvnG58EdaofMXKSkdK\n\n:memo: 添加项目文档"
+    },
+    {
+      "sha": "f5e3ab727c42411c840908b5ca537f681f0d8f37",
+      "date": "2025-10-27T18:42:22+08:00",
+      "author": "十三",
+      "email": "1034683568@qq.com",
+      "message": "Merge pull request #96 from forward-forever/dev\n\nrefactor(admin): 优化商品分类查询逻辑"
+    },
+    {
+      "sha": "c177810bedcbfdc6bc40a21386568905520190e9",
+      "date": "2025-10-23T05:00:33Z",
+      "author": "Claude",
+      "email": "noreply@anthropic.com",
+      "message": "添加项目文档\n\n- 添加 FAQ.md: 包含常见问题及解答，涵盖环境配置、项目启动、功能使用、开发调试、部署运维等方面\n- 添加 API.md: 详细的 API 接口文档，包含前台商城接口和后台管理接口的完整说明\n- 添加 DEVELOPMENT.md: 开发指南文档，包含技术栈、项目结构、开发环境搭建、开发规范、核心功能实现等内容\n\n这些文档为开发者提供了全面的参考资料，便于快速上手和深入开发。\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\n"
+    },
+    {
+      "sha": "86c43fce4d76aabb87afc11c60491724256a42fb",
+      "date": "2025-03-18T18:06:00+08:00",
+      "author": "hao",
+      "email": "1002607298@qq.com",
+      "message": "refactor(admin): 优化商品分类查询逻辑\n- 修正变量名拼写错误（firstCategory）\n"
+    },
+    {
+      "sha": "613a662adf1da7623ec34459bc83e3c1b12d8ce7",
+      "date": "2023-10-09T13:27:23+08:00",
+      "author": "十三",
+      "email": "2449207463@qq.com",
+      "message": ":lipstick: 订单列表页面显示内容修改\n"
+    },
+    {
+      "sha": "7a9fc20c20b373665a1594712ab3a38af53fa2dd",
+      "date": "2023-05-31T16:52:50+08:00",
+      "author": "十三",
+      "email": "2449207463@qq.com",
+      "message": ":arrow_up: 版本升级\n"
+    },
+    {
+      "sha": "1d9b9ffb4550cbf805a5cf82f45bd9d8c2d92c83",
+      "date": "2023-05-29T18:47:18+08:00",
+      "author": "十三",
+      "email": "2449207463@qq.com",
+      "message": ":bug: wangEditor 全屏状态遮盖问题处理\n"
+    },
+    {
+      "sha": "7db53ac28dee78713987763c9b9410abeef1ccbc",
+      "date": "2023-02-12T20:21:28+08:00",
+      "author": "十三",
+      "email": "1034683568@qq.com",
+      "message": ":fire: remove useless code\n"
+    },
+    {
+      "sha": "d407128d2b8df929a2743d3f110c1f0b890469d6",
+      "date": "2022-12-27T15:13:45+08:00",
+      "author": "十三",
+      "email": "2449207463@qq.com",
+      "message": ":tada: spring boot 3.x 版本\n"
+    },
+    {
+      "sha": "aeb43d7ca02c58be124e6397f8ff13574119f0d0",
+      "date": "2022-12-26T18:35:30+08:00",
+      "author": "十三",
+      "email": "2449207463@qq.com",
+      "message": ":zap: 代码优化\n"
+    },
+    {
+      "sha": "deb506c135eed754a40728d524fed9be324a1e8f",
+      "date": "2022-12-22T22:37:15+08:00",
+      "author": "十三",
+      "email": "1034683568@qq.com",
+      "message": ":arrow_up: 版本升级&代码优化\n"
+    },
+    {
+      "sha": "0d1ff1b9f4aedc0ccdac5d22014a351554dfb81e",
+      "date": "2022-11-03T16:48:12+08:00",
+      "author": "十三",
+      "email": "2449207463@qq.com",
+      "message": ":bug: Fixing a bug ##https://github.com/newbee-ltd/newbee-mall/issues/64\n"
+    },
+    {
+      "sha": "4f8948579ddd6843a2e313fdd55aafc809246f63",
+      "date": "2022-11-03T16:47:51+08:00",
+      "author": "十三",
+      "email": "2449207463@qq.com",
+      "message": ":bug: Fixing a bug ##https://github.com/newbee-ltd/newbee-mall/issues/75 ##https://github.com/newbee-ltd/newbee-mall/issues/76\n"
+    },
+    {
+      "sha": "a3aff8b6223c348eb723beda78c918a27941b1b2",
+      "date": "2022-11-03T16:45:42+08:00",
+      "author": "十三",
+      "email": "2449207463@qq.com",
+      "message": ":bug: Fixing a bug ##https://github.com/newbee-ltd/newbee-mall/issues/63\n"
+    },
+    {
+      "sha": "1f2c2dfea53491f59a39942483fae72b5d101b83",
+      "date": "2022-10-27T14:56:27+08:00",
+      "author": "十三",
+      "email": "1034683568@qq.com",
+      "message": ":arrow_up: 版本升级\n"
+    },
+    {
+      "sha": "7412da0b90a4fddf0cb8a3f2c8e9e42502838531",
+      "date": "2022-09-21T17:53:47+08:00",
+      "author": "十三",
+      "email": "2449207463@qq.com",
+      "message": "Merge branch 'master' of https://github.com/newbee-ltd/newbee-mall\n"
+    },
+    {
+      "sha": "2c031c1016cfc5fe7d1582c62ed60285a0500773",
+      "date": "2022-09-21T17:51:40+08:00",
+      "author": "十三",
+      "email": "2449207463@qq.com",
+      "message": ":zap: 完善代码\n"
+    },
+    {
+      "sha": "1441d7cecae18107a25dcfaf5ab566ee6a3509ae",
+      "date": "2022-09-21T13:29:09+08:00",
+      "author": "十三",
+      "email": "2449207463@qq.com",
+      "message": ":memo: UPDATE README.md\n"
+    },
+    {
+      "sha": "6328f4ec349879cf7bc1d69187f1db44da3895f4",
+      "date": "2022-09-20T15:36:48+08:00",
+      "author": "十三",
+      "email": "1034683568@qq.com",
+      "message": ":arrow_up: 依赖升级\n"
+    },
+    {
+      "sha": "01c472a1115033c94a51b34103129680b76c601f",
+      "date": "2022-09-13T23:57:53+08:00",
+      "author": "十三",
+      "email": "1034683568@qq.com",
+      "message": ":memo: UPDATE README.md"
+    },
+    {
+      "sha": "15e49544116b8144b1536ab794a55d9d0fb088d6",
+      "date": "2022-06-15T23:09:34+08:00",
+      "author": "十三",
+      "email": "1034683568@qq.com",
+      "message": "newbee-mall-cloud 微服务版本\n\n:tada: newbee-mall-cloud 微服务版本开源啦"
+    },
+    {
+      "sha": "57cd1232f5842a4dba723b65de588b7e97f6b0eb",
+      "date": "2022-06-15T23:08:10+08:00",
+      "author": "十三",
+      "email": "1034683568@qq.com",
+      "message": ":tada: newbee-mall-cloud 微服务版本开源啦"
+    },
+    {
+      "sha": "64dde8d93ae982eb7ce266038fe9f04de287d34a",
+      "date": "2022-05-25T16:26:17+08:00",
+      "author": "十三",
+      "email": "1034683568@qq.com",
+      "message": "Merge branch 'spring-boot-2.6.x'\n"
+    },
+    {
+      "sha": "7cac2f8c70e0e3aca9b67324a64d1fd85dbb0ddc",
+      "date": "2022-05-25T16:22:15+08:00",
+      "author": "十三",
+      "email": "1034683568@qq.com",
+      "message": ":memo: UPDATE README.md\n"
+    },
+    {
+      "sha": "77452e6147e481c2005813793e526f1d35abe46f",
+      "date": "2022-03-04T15:20:17+08:00",
+      "author": "十三",
+      "email": "1034683568@qq.com",
+      "message": "Merge pull request #65 from newbee-ltd/spring-boot-2.6.x\n\nSpring boot 2.6.3"
+    },
+    {
+      "sha": "6419c30977c428ba50f515d534b6ec46c5a291e3",
+      "date": "2022-03-04T15:18:57+08:00",
+      "author": "十三",
+      "email": "1034683568@qq.com",
+      "message": ":memo: UPDATE README.md\n"
+    },
+    {
+      "sha": "337164fa465578bd62d2a28def2917a1ad1aeff0",
+      "date": "2022-03-04T15:12:58+08:00",
+      "author": "十三",
+      "email": "1034683568@qq.com",
+      "message": ":lipstick: 验证码生成规则修改\n"
+    },
+    {
+      "sha": "c10939ec98e7a8d5524952ffc48fc0e58d53a82f",
+      "date": "2022-03-04T15:04:18+08:00",
+      "author": "十三",
+      "email": "1034683568@qq.com",
+      "message": ":arrow_up: spring-boot升级至2.6.3 mybatis-stater升级至2.2.2\n"
+    },
+    {
+      "sha": "59354e6e91eefa18168fb7528c1d4b462196575f",
+      "date": "2022-02-11T20:31:40+08:00",
+      "author": "十三",
+      "email": "1034683568@qq.com",
+      "message": ":arrow_up: mysql-connector-java升级至8.0.27\n"
+    },
+    {
+      "sha": "f473ce24a055e74feaf40339dab95943841e5149",
+      "date": "2022-02-05T23:19:19+08:00",
+      "author": "十三",
+      "email": "1034683568@qq.com",
+      "message": ":pencil2: 管理系统端登录时验证码大小写问题\n"
+    }
+  ],
+  "commit_sha": "a069069b07027613bf0e7f571736be86f431faee",
+  "extracted_at": "2026-10-05T17:53:07.467402+00:00"
+}

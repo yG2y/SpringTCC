@@ -1,0 +1,236 @@
+{
+  "ia_status": "com_evidencia",
+  "ia_level": 2,
+  "ia_agents": "Claude Code",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "53fd89679d39b16b1cff3f4348d0b6dac3a42b6c",
+      "trailer": "Claude Opus 4.7 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "53fd89679d39b16b1cff3f4348d0b6dac3a42b6c",
+      "trailer": "Claude Opus 4.7 <noreply@anthropic.com>"
+    }
+  ],
+  "commits": [
+    {
+      "sha": "34d92b7b8f4c401c0f1bb4072a6788cb619c34d4",
+      "date": "2026-10-05T05:17:15-04:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump com.google.cloud:libraries-bom from 26.89.0 to 26.90.0 (#3329)\n\nBumps [com.google.cloud:libraries-bom](https://github.com/googleapis/google-cloud-java) from 26.89.0 to 26.90.0.\n- [Release notes](https://github.com/googleapis/google-cloud-java/releases)\n- [Changelog](https://github.com/googleapis/google-cloud-java/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/googleapis/google-cloud-java/compare/libraries-bom/v26.89.0...libraries-bom/v26.90.0)\n\n---\nupdated-dependencies:\n- dependency-name: com.google.cloud:libraries-bom\n  dependency-version: 26.90.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "e6a31d6b00e424e38be432cc88ced12cb1307346",
+      "date": "2026-10-05T05:16:20-04:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump software.amazon.awssdk:bom from 2.55.7 to 2.55.10 (#3330)\n\nBumps software.amazon.awssdk:bom from 2.55.7 to 2.55.10.\n\n---\nupdated-dependencies:\n- dependency-name: software.amazon.awssdk:bom\n  dependency-version: 2.55.10\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "d5f8e4e00e229c9b4b21f0f967f15dfd19f3e33e",
+      "date": "2026-10-03T09:41:37-04:00",
+      "author": "Ryan Baxter",
+      "email": "ryan.baxter@broadcom.com",
+      "message": "Merge branch '5.0.x'\n"
+    },
+    {
+      "sha": "b2fad8f18dd43188ff0f0eb203f5c087a98208bb",
+      "date": "2026-10-03T19:10:59+05:30",
+      "author": "Yash chauhan",
+      "email": "157263242+yashdotdev13@users.noreply.github.com",
+      "message": "Fix Asciidoctor attribute replacements in quickstart (#3327)\n\nSigned-off-by: 98001yash <yashchauhan.gaya@gmail.com>"
+    },
+    {
+      "sha": "fd4f1d2c539e4b6d03eb2b00cfa71c27ef76f395",
+      "date": "2026-10-03T19:10:59+05:30",
+      "author": "Yash chauhan",
+      "email": "157263242+yashdotdev13@users.noreply.github.com",
+      "message": "Fix Asciidoctor attribute replacements in quickstart (#3327)\n\nSigned-off-by: 98001yash <yashchauhan.gaya@gmail.com>"
+    },
+    {
+      "sha": "7ef6c6054319a1c798629a6fc21cc3470e3a598d",
+      "date": "2026-10-03T02:04:45+05:30",
+      "author": "Yash chauhan",
+      "email": "157263242+yashdotdev13@users.noreply.github.com",
+      "message": "Fix RSA key management documentation (#3326)\n\nSigned-off-by: 98001yash <yashchauhan.gaya@gmail.com>"
+    },
+    {
+      "sha": "d20765f29cbfdd20121e42bff6eb6731f9b1ec58",
+      "date": "2026-10-02T12:45:03-04:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump com.github.dasniko:testcontainers-keycloak from 3.4.0 to 3.9.1 (#3324)\n\nBumps [com.github.dasniko:testcontainers-keycloak](https://github.com/dasniko/testcontainers-keycloak) from 3.4.0 to 3.9.1.\n- [Release notes](https://github.com/dasniko/testcontainers-keycloak/releases)\n- [Commits](https://github.com/dasniko/testcontainers-keycloak/compare/3.4.0...v3.9.1)\n\n---\nupdated-dependencies:\n- dependency-name: com.github.dasniko:testcontainers-keycloak\n  dependency-version: 3.9.1\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\n\nFix to upgrade dependency\n\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "6a961d7e6772ed51ecb45563896a2a24c18d822f",
+      "date": "2026-10-02T05:18:23-04:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump software.amazon.awssdk:bom from 2.55.6 to 2.55.7 (#3323)\n\nBumps software.amazon.awssdk:bom from 2.55.6 to 2.55.7.\n\n---\nupdated-dependencies:\n- dependency-name: software.amazon.awssdk:bom\n  dependency-version: 2.55.7\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "b1dd5c69b46b1f22ad1f26e2126d98d38f909c35",
+      "date": "2026-10-02T05:17:06-04:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump commons-io:commons-io from 2.20.0 to 2.22.0 (#3325)\n\nBumps commons-io:commons-io from 2.20.0 to 2.22.0.\n\n---\nupdated-dependencies:\n- dependency-name: commons-io:commons-io\n  dependency-version: 2.22.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "53fd89679d39b16b1cff3f4348d0b6dac3a42b6c",
+      "date": "2026-10-01T16:58:13-07:00",
+      "author": "prafsoni",
+      "email": "prafsoni@users.noreply.github.com",
+      "message": "Add OAuth2 support in spring-config-client (#3129)\n\n* feat: Add initial implementation for oauth2 support in the spring cloud config client\n\nSigned-off-by: prafsoni <prafsoni@gmail.com>\n\n* test: Add integration tests for config client oauth2 support\n\nSigned-off-by: prafsoni <prafsoni@gmail.com>\n\n* test: Add integration tests for config client oauth2 support using issuer uri\n\nSigned-off-by: prafsoni <prafsoni@gmail.com>\n\n* docs: Update client docs to add an example for oauth2 client config\n\nSigned-off-by: prafsoni <prafsoni@gmail.com>\n\n* test: fix pom version after rebase\n\nSigned-off-by: prafsoni <prafsoni@gmail.com>\n\n* chore: fix pom version after rebase\n\nSigned-off-by: prafsoni <prafsoni@gmail.com>\n\n* refactor: Make config-client OAuth2 support pluggable and optional\n\nMove OAuth2 wiring into a new oauth2 sub-package gated by ClassUtils.isPresent\nso spring-boot-starter-security-oauth2-client is genuinely optional. Replace the\nduplicate spring.cloud.config.oauth2 registration/provider schema with a\nclient-registration-id that points at a standard Spring Security registration\nunder spring.security.oauth2.client.*.\n\nConfigClientRequestTemplateFactory no longer references Spring Security; it just\naccepts additional interceptors. The interceptor is wired for both the Config\nData flow (ConfigClientOAuth2Support.registerInterceptor via the bootstrap\ncontext, with the bind handler threaded so encrypted/placeholder secrets\nresolve) and the legacy bootstrap flow (ConfigClientOAuth2BootstrapConfiguration\nbeans). Every collaborator (ClientRegistrationRepository,\nOAuth2AuthorizedClientManager, ClientRegistrationIdResolver, and the interceptor\nitself) is overridable, and the default repository is built lazily so a\nuser-supplied manager makes it unnecessary.\n\nSigned-off-by: prafsoni <prafsoni@gmail.com>\nCo-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>\nSigned-off-by: prafsoni <prafsoni@gmail.com>\n\n* chore: fix checkstyle errors after rebase\n\nSigned-off-by: prafsoni <prafsoni@gmail.com>\n\n* chore: fix pom version after rebase\n\nSigned-off-by: prafsoni <prafsoni@gmail.com>\n\n* chore: address PR comments\n\nSigned-off-by: prafsoni <prafsoni@gmail.com>\n\n* chore: address PR comment regarding refresh token grant type\n\nSigned-off-by: prafsoni <prafsoni@gmail.com>\n\n* chore: add missed tests for ConfigClientOAuth2BootstrapConfiguration\n\nSigned-off-by: prafsoni <prafsoni@gmail.com>\n\n---------\n\nSigned-off-by: prafsoni <prafsoni@gmail.com>\nCo-authored-by: Claude Opus 4.7 <noreply@anthropic.com>"
+    },
+    {
+      "sha": "954a1da36259df9ff72738dcc3ed9b7b7c153d71",
+      "date": "2026-10-01T13:17:27-07:00",
+      "author": "Spring Builds",
+      "email": "svc.spring-builds@broadcom.com",
+      "message": "Update Maven wrapper to 3.10.0 (#3322)\n\nSigned-off-by: spring-builds <spring-builds@users.noreply.github.com>\nCo-authored-by: spring-builds <spring-builds@users.noreply.github.com>"
+    },
+    {
+      "sha": "3d6e43438be19b81428a937786b2a51d116bca37",
+      "date": "2026-10-01T13:17:26-07:00",
+      "author": "Spring Builds",
+      "email": "svc.spring-builds@broadcom.com",
+      "message": "Update Maven wrapper to 3.10.0 (#3321)\n\nSigned-off-by: spring-builds <spring-builds@users.noreply.github.com>\nCo-authored-by: spring-builds <spring-builds@users.noreply.github.com>"
+    },
+    {
+      "sha": "a71c1e2969146a6f87c5e4213bc7963fc739321e",
+      "date": "2026-10-01T14:27:00-04:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump software.amazon.awssdk:bom from 2.39.6 to 2.55.6 (#3318)\n\nBumps software.amazon.awssdk:bom from 2.39.6 to 2.55.6.\n\n---\nupdated-dependencies:\n- dependency-name: software.amazon.awssdk:bom\n  dependency-version: 2.55.6\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "c2d46bd8efb678a4eaa303d86530ae0ad459ba70",
+      "date": "2026-10-01T14:25:21-04:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump com.google.cloud:libraries-bom from 26.71.0 to 26.89.0 (#3320)\n\nBumps [com.google.cloud:libraries-bom](https://github.com/googleapis/google-cloud-java) from 26.71.0 to 26.89.0.\n- [Release notes](https://github.com/googleapis/google-cloud-java/releases)\n- [Changelog](https://github.com/googleapis/google-cloud-java/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/googleapis/google-cloud-java/commits/libraries-bom/v26.89.0)\n\n---\nupdated-dependencies:\n- dependency-name: com.google.cloud:libraries-bom\n  dependency-version: 26.89.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "0b6412fc1a2869ed4e7cc00f578d6df8b702c255",
+      "date": "2026-10-01T14:22:45-04:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump jgit.version from 7.4.0.202509020913-r to 7.8.0.202609011348-r (#3319)\n\nBumps `jgit.version` from 7.4.0.202509020913-r to 7.8.0.202609011348-r.\n\nUpdates `org.eclipse.jgit:org.eclipse.jgit` from 7.4.0.202509020913-r to 7.8.0.202609011348-r\n- [Commits](https://github.com/eclipse-jgit/jgit/compare/v7.4.0.202509020913-r...v7.8.0.202609011348-r)\n\nUpdates `org.eclipse.jgit:org.eclipse.jgit.junit.http` from 7.4.0.202509020913-r to 7.8.0.202609011348-r\n- [Commits](https://github.com/eclipse-jgit/jgit/compare/v7.4.0.202509020913-r...v7.8.0.202609011348-r)\n\nUpdates `org.eclipse.jgit:org.eclipse.jgit.http.apache` from 7.4.0.202509020913-r to 7.8.0.202609011348-r\n- [Commits](https://github.com/eclipse-jgit/jgit/compare/v7.4.0.202509020913-r...v7.8.0.202609011348-r)\n\nUpdates `org.eclipse.jgit:org.eclipse.jgit.ssh.apache` from 7.4.0.202509020913-r to 7.8.0.202609011348-r\n- [Commits](https://github.com/eclipse-jgit/jgit/compare/v7.4.0.202509020913-r...v7.8.0.202609011348-r)\n\n---\nupdated-dependencies:\n- dependency-name: org.eclipse.jgit:org.eclipse.jgit\n  dependency-version: 7.8.0.202609011348-r\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n- dependency-name: org.eclipse.jgit:org.eclipse.jgit.junit.http\n  dependency-version: 7.8.0.202609011348-r\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n- dependency-name: org.eclipse.jgit:org.eclipse.jgit.http.apache\n  dependency-version: 7.8.0.202609011348-r\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n- dependency-name: org.eclipse.jgit:org.eclipse.jgit.ssh.apache\n  dependency-version: 7.8.0.202609011348-r\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "4761f102189a3af06dd7fa68cf6351c473ec8255",
+      "date": "2026-10-01T14:21:51-04:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.bouncycastle:bcpkix-jdk18on from 1.83 to 1.86 (#3317)\n\nBumps [org.bouncycastle:bcpkix-jdk18on](https://github.com/bcgit/bc-java) from 1.83 to 1.86.\n- [Changelog](https://github.com/bcgit/bc-java/blob/main/docs/releasenotes.md)\n- [Commits](https://github.com/bcgit/bc-java/commits)\n\n---\nupdated-dependencies:\n- dependency-name: org.bouncycastle:bcpkix-jdk18on\n  dependency-version: '1.86'\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "e765a9e61d3554309fb1a38f3875257dc8a10361",
+      "date": "2026-10-01T10:10:49-04:00",
+      "author": "Ryan Baxter",
+      "email": "ryan.baxter@broadcom.com",
+      "message": "Allow Dependabot minor version updates on main (#3316)\n\nRemove the semver-minor ignore from the maven entry targeting main so\nDependabot opens PRs for minor dependency updates. Major updates remain ignored."
+    },
+    {
+      "sha": "22973ccd20fec3297d1792c82f5387f8b6a01e32",
+      "date": "2026-09-30T08:20:32-07:00",
+      "author": "Spring Builds",
+      "email": "svc.spring-builds@broadcom.com",
+      "message": "Update Antora UI bundle to v0.4.26 (#3305)\n\nSigned-off-by: spring-builds <spring-builds@users.noreply.github.com>\nCo-authored-by: spring-builds <spring-builds@users.noreply.github.com>"
+    },
+    {
+      "sha": "acbd1d210d474ee9f8ac7362f6c42fecf6a47cf6",
+      "date": "2026-09-28T16:29:36-04:00",
+      "author": "Ryan Baxter",
+      "email": "ryan.baxter@broadcom.com",
+      "message": "Merge branch '5.0.x'\n"
+    },
+    {
+      "sha": "9d995a19e7d103ac281da866ebfcf02eaeb3e8d5",
+      "date": "2026-09-28T16:29:14-04:00",
+      "author": "Ryan Baxter",
+      "email": "ryan.baxter@broadcom.com",
+      "message": "Handle empty profiles and name property sources correctly in S3 (#3314)\n\nFixes #3313"
+    },
+    {
+      "sha": "30f6ed827c045b1d416d4bb1c2940a6033b05755",
+      "date": "2026-09-26T10:08:41-04:00",
+      "author": "Ryan Baxter",
+      "email": "ryan.baxter@broadcom.com",
+      "message": "Merge branch '5.0.x'\n"
+    },
+    {
+      "sha": "6a6da8103fab8180f2da7d13ec2522cfee47fbba",
+      "date": "2026-09-26T10:08:22-04:00",
+      "author": "Ryan Baxter",
+      "email": "ryan.baxter@broadcom.com",
+      "message": "Update README\n"
+    },
+    {
+      "sha": "2de550a7edc08b3f84fbb96686c6912879d1b61c",
+      "date": "2026-09-26T21:06:52+07:00",
+      "author": "Tran Ngoc Nhan",
+      "email": "ngocnhan.tran1996@gmail.com",
+      "message": "Polish `AwsCodeCommitCredentialProvider` (#3310)\n\n* Simplify a condition.\n* Avoid hiding the field with a pattern variable.\n* Replace the deprecated `DefaultCredentialsProvider#create` method.\n\nSigned-off-by: Tran Ngoc Nhan <ngocnhan.tran1996@gmail.com>"
+    },
+    {
+      "sha": "762041015a87a2f8c91e85e5b754e903b9cc228e",
+      "date": "2026-09-26T21:05:23+07:00",
+      "author": "Tran Ngoc Nhan",
+      "email": "ngocnhan.tran1996@gmail.com",
+      "message": "Remove unnecessary cast to null (#3309)\n\nSigned-off-by: Tran Ngoc Nhan <ngocnhan.tran1996@gmail.com>"
+    },
+    {
+      "sha": "75b8330d01d56d721d957f24a295614f26668951",
+      "date": "2026-09-26T21:03:49+07:00",
+      "author": "Tran Ngoc Nhan",
+      "email": "ngocnhan.tran1996@gmail.com",
+      "message": "Remove unnecessary backslash in references (#3274)\n\nSigned-off-by: Tran Ngoc Nhan <ngocnhan.tran1996@gmail.com>"
+    },
+    {
+      "sha": "2ffc02807a39c52f9e4f885d2f4ce5dd9271d47e",
+      "date": "2026-09-26T01:03:29+07:00",
+      "author": "Tran Ngoc Nhan",
+      "email": "ngocnhan.tran1996@gmail.com",
+      "message": "Use pattern matching for `AzureDevOpsWorkloadIdentitySupport`'s `instanceof` checks (#3307)\n\nReplace `instanceof` checks with Java pattern matching to bind the matched object directly.\n\nSigned-off-by: Tran Ngoc Nhan <ngocnhan.tran1996@gmail.com>"
+    },
+    {
+      "sha": "85a0dabd280124710d5a2e5c226882181e98690c",
+      "date": "2026-09-25T14:02:44-04:00",
+      "author": "Ryan Baxter",
+      "email": "ryan.baxter@broadcom.com",
+      "message": "Merge branch '5.0.x'\n"
+    },
+    {
+      "sha": "97702863d7539dbe066244be4220bc076065c8e3",
+      "date": "2026-09-26T01:02:21+07:00",
+      "author": "Tran Ngoc Nhan",
+      "email": "ngocnhan.tran1996@gmail.com",
+      "message": "Apply pattern matching for `instanceof` (#3308)\n\nReplace `instanceof` checks with Java pattern matching to bind the matched object directly.\n\nSigned-off-by: Tran Ngoc Nhan <ngocnhan.tran1996@gmail.com>"
+    },
+    {
+      "sha": "b6b6eb900047a42a623d594a1d30d5e7cf6acce0",
+      "date": "2026-09-25T16:17:29+04:00",
+      "author": "Mahammad Eminov",
+      "email": "64434582+Emin0v@users.noreply.github.com",
+      "message": "Migrate Config Client to Spring Framework native retry (#3303)\n\n* Migrate Config Client to Spring Framework retry\n\nFixes gh-3261\n\nSigned-off-by: Mahammad Eminov <mahammad.eminov.a@gmail.com>\n\n* Address retry migration review feedback\n\n- Keep class-based proxies for the retry targets via\n  @Proxyable(ProxyType.TARGET_CLASS), as @EnableRetry(proxyTargetClass = true)\n  did, without forcing class-based proxies application wide.\n- Support the enabled parameter on configserver: import URLs so retry can\n  be turned off for profile-specific imports.\n- Regenerate _configprops.adoc for spring.cloud.config.retry.enabled.\n\nSee gh-3261\n\nSigned-off-by: Mahammad Eminov <mahammad.eminov.a@gmail.com>\n\n* Preserve legacy bootstrap retry compatibility\n\nKeep legacy backoff handling lenient, allow the retry advisor to be overridden, and document the single-attempt opt-out.\n\nSee gh-3261\n\nSigned-off-by: Mahammad Eminov <mahammad.eminov.a@gmail.com>\n\n* Preserve opt-in Config Client retry behavior\n\nKeep native retry opt-in, link to the Spring Framework retry documentation, and remove the unsupported config import URL parameter.\n\nSee gh-3261\n\nSigned-off-by: Mahammad Eminov <mahammad.eminov.a@gmail.com>\n\n---------\n\nSigned-off-by: Mahammad Eminov <mahammad.eminov.a@gmail.com>"
+    },
+    {
+      "sha": "f5ff75528fba993e0d6fc0ba81ec049c8588799d",
+      "date": "2026-09-24T14:58:14-07:00",
+      "author": "Spring Builds",
+      "email": "svc.spring-builds@broadcom.com",
+      "message": "Update Antora UI bundle to v0.4.26 (#3306)\n\nSigned-off-by: spring-builds <spring-builds@users.noreply.github.com>\nCo-authored-by: spring-builds <spring-builds@users.noreply.github.com>"
+    }
+  ],
+  "commit_sha": "34d92b7b8f4c401c0f1bb4072a6788cb619c34d4",
+  "extracted_at": "2026-10-05T17:57:00.074025+00:00"
+}

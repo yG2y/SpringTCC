@@ -1,0 +1,242 @@
+{
+  "ia_status": "com_evidencia",
+  "ia_level": 2,
+  "ia_agents": "Claude Code",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "9fb0de1e73958274c20c3fbc89f49fb84a9d0405",
+      "trailer": "Claude Opus 4.6 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "dd67ebbc1ac240b5ce063f9d1fcff9709bb9f77a",
+      "trailer": "Claude Opus 4.6 (1M context) <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "294768ae1c4ce168324b4a4683af2cfa62059adf",
+      "trailer": "Claude Opus 4.6 (1M context) <noreply@anthropic.com>"
+    }
+  ],
+  "commits": [
+    {
+      "sha": "68b5b024ff33ca53e3340e8855f8f1bd6299a963",
+      "date": "2026-06-08T15:33:21+08:00",
+      "author": "jonlu",
+      "email": "jonlu@yeahka.com",
+      "message": "fix(locale): 修正中文语言代码格式\n\n- 将语言代码从 'zhCn' 更新为标准格式 'zh-CN'\n"
+    },
+    {
+      "sha": "e8b29e027bcc56a943d1665f33499a638738d705",
+      "date": "2026-05-20T17:46:08+08:00",
+      "author": "jonlu",
+      "email": "jonlu@yeahka.com",
+      "message": "pom.xml commons-lang3\n"
+    },
+    {
+      "sha": "9a38cfe1ef5e3db5f2b32fc1eee57dacfa8ec3c8",
+      "date": "2026-04-16T16:58:43+08:00",
+      "author": "jonlu",
+      "email": "jonlu@yeahka.com",
+      "message": "chore(project): 统一 groupId 和包名从 com.houtu 到 com.xx\n"
+    },
+    {
+      "sha": "9fb0de1e73958274c20c3fbc89f49fb84a9d0405",
+      "date": "2026-04-15T14:45:25+08:00",
+      "author": "jonlu",
+      "email": "jonlu@yeahka.com",
+      "message": "chore: 更新 houtu.dependencies.version 至 3.5.2\n\nCo-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>\n"
+    },
+    {
+      "sha": "dd67ebbc1ac240b5ce063f9d1fcff9709bb9f77a",
+      "date": "2026-04-10T15:41:43+08:00",
+      "author": "jonlu",
+      "email": "jonlu@yeahka.com",
+      "message": "docs: 添加英文版 README 并将中文版移至 README-CN.md\n\n将原中文 README.md 内容迁移至 README-CN.md，新增英文版 README.md，两个文件互相提供语言切换链接。\n\nCo-Authored-By: Claude Opus 4.6 (1M context) <noreply@anthropic.com>\n"
+    },
+    {
+      "sha": "294768ae1c4ce168324b4a4683af2cfa62059adf",
+      "date": "2026-04-09T16:40:53+08:00",
+      "author": "jonlu",
+      "email": "jonlu@yeahka.com",
+      "message": "docs: 重构 README.md 并添加 LICENSE 和界面截图\n\n- 重写 README.md：完善功能特性、技术架构、快速开始、项目结构等内容\n- 添加 MIT LICENSE 文件\n- 添加界面预览截图（登录页、MFA认证、主页面、个人中心）\n- 更新开发环境端口和 MFA 配置\n\nCo-Authored-By: Claude Opus 4.6 (1M context) <noreply@anthropic.com>\n"
+    },
+    {
+      "sha": "29513238efe9e977a0b399a8e575a4288e4f9624",
+      "date": "2026-03-09T14:16:17+08:00",
+      "author": "jonlu",
+      "email": "jonlu@yeahka.com",
+      "message": "chore(project): 更新项目包名从com.houtu到com.xx\n\n- 修改所有Java文件中的package声明\n- 更新配置类中的MapperScan注解包路径\n- 修改日志配置文件中的logger名称\n- 更新XML映射文件中的命名空间\n- 移除EmailVerifyProcessor中未使用的导入包\n"
+    },
+    {
+      "sha": "34a5d5c029dce6a5393b7f32a8fd6cc4655f5e43",
+      "date": "2026-03-06T23:07:20+08:00",
+      "author": "jonlu",
+      "email": "jonlu@yeahka.com",
+      "message": "chore(dependencies): 更新依赖包路径配置\n\n- 将 com.houtu 包路径替换为 io.github.lujiafa.houtu\n- 更新 pom.xml 中的依赖版本号配置\n- 修改所有 Java 文件中的 import 语句路径\n- 统一核心组件包名前缀变更\n"
+    },
+    {
+      "sha": "0417371ecfe2e921351eca23c902f470081ae44c",
+      "date": "2026-01-26T17:08:08+08:00",
+      "author": "jonlu",
+      "email": "jonlu@yeahka.com",
+      "message": "添加企业微信验证码验证处理器\n"
+    },
+    {
+      "sha": "826c9771c52287b8b0752e73397e51ad8a6124c3",
+      "date": "2025-11-19T15:22:12+08:00",
+      "author": "jonlu",
+      "email": "jonlu@yeahka.com",
+      "message": "参考官方文档调优配置\n"
+    },
+    {
+      "sha": "c3583d9664e1959bb12a0360a7e4125d31332be1",
+      "date": "2025-11-17T18:13:16+08:00",
+      "author": "jonlu",
+      "email": "jonlu@yeahka.com",
+      "message": "feat(security): 添加 actuator 端点的访问权限配置\n\n- 在 Spring Security 配置中允许 /actuator/** 路径的匿名访问-保持原有 Swagger UI 和 API 文档路径的公开访问设置\n- 确保 MFA 相关端点在启用 MFA 时仍可被访问\n"
+    },
+    {
+      "sha": "e2d8a5d4433d02f345dd9039d41a90b67ea448e8",
+      "date": "2025-11-12T16:14:39+08:00",
+      "author": "jonlu",
+      "email": "jonlu@yeahka.com",
+      "message": "chore(deps): 更新依赖版本并移除日志配置\n\n- 将 com.houtu.dependencies.version 从 3.5.1-SNAPSHOT降级至3.5.0-SNAPSHOT- 移除 application.yml 中的 logging 配置项\n- 删除 log4j2-dev.xml 配置文件引用\n- 清理冗余的日志级别和文件路径设置\n"
+    },
+    {
+      "sha": "248c08d830228b30858a4921239ea229838db76b",
+      "date": "2025-11-03T16:49:23+08:00",
+      "author": "jonlu",
+      "email": "jonlu@yeahka.com",
+      "message": "chore(deps): 更新MySQL驱动和相关配置\n\n- 移除旧版mysql-connector-java依赖\n- 添加新版mysql-connector-j依赖\n- 删除冗余的MySQL版本属性配置- 清理不必要的空行和缩进配置\n- 移除重复的依赖管理标签\n"
+    },
+    {
+      "sha": "696b94e8cbd15a0a8bbb16b801b6be2522a0d15d",
+      "date": "2025-11-01T11:29:57+08:00",
+      "author": "jonlu",
+      "email": "jonlu@yeahka.com",
+      "message": "feat(login): 更新验证码URL生成方式以支持环境变量配置\n\n- 修改验证码图片请求地址的构建逻辑\n- 使用VITE_BASE_API_URL环境变量拼接完整API路径\n- 确保开发和生产环境下都能正确加载验证码接口\n"
+    },
+    {
+      "sha": "b77b49917900e7c7632d810cd358d245de7c7003",
+      "date": "2025-11-01T10:56:14+08:00",
+      "author": "jonlu",
+      "email": "jonlu@yeahka.com",
+      "message": "fix(i18n): 修复用户中心语言包导入错误\n\n- 修正了英文环境下用户中心语言包的错误导入路径- 统一使用英文语言包替代中文语言包引用\n\nrefactor(config): 更新API基础URL环境变量\n\n- 将baseURL配置从VUE_APP_BASE_API更改为VITE_BASE_API_URL\n- 适配Vite构建工具的环境变量命名规范\n"
+    },
+    {
+      "sha": "2efb1713cf3b149ca1e11d3b9f63230f0dcee818",
+      "date": "2025-11-01T08:53:47+08:00",
+      "author": "jonlu",
+      "email": "jonlu@yeahka.com",
+      "message": "feat(config): 配置Redis会话存储- 在application-dev.yml中添加Redis会话存储配置- 设置会话超时时间为1800秒- 启用Redis作为会话持久化存储后端\n"
+    },
+    {
+      "sha": "9bc601a17a7a4e96c3c9a80e5e02072c44486a9d",
+      "date": "2025-11-01T08:51:26+08:00",
+      "author": "jonlu",
+      "email": "jonlu@yeahka.com",
+      "message": "feat(security): 引入Spring Session Redis支持并优化会话管理\n\n- 添加spring-session-data-redis依赖以支持分布式会话\n- 注释掉BizSecurityContextRepository的自定义实现，改为使用Spring Session默认机制\n- 移除对BizSecurityContextRepository的注入和调用\n- 修改验证码配置：字符长度从5调整为4，字符间距从6调整为8\n- 在SessionContext中新增update方法用于手动更新会话中的安全上下文-修复MFA控制器中使用SessionContext替代旧的安全上下文保存方式\n- 更新\n"
+    },
+    {
+      "sha": "963a72eed4f6aacde7e639498b9741b05d6478e1",
+      "date": "2025-10-30T17:19:17+08:00",
+      "author": "jonlu",
+      "email": "jonlu@yeahka.com",
+      "message": "feat(security):优化会话管理和登出逻辑- 添加StringUtils导入以支持会话ID校验\n- 改进saveContext方法处理逻辑，区分登录与登出场景\n- 登出时根据请求中的sessionId删除Redis缓存- 登录时仅在认证成功后存储会话信息\n- 修复可能因sessionId变化导致的登出失败问题\n-为Swagger UI和API文档端点添加免认证访问权限\n"
+    },
+    {
+      "sha": "29581ff92d23aeda67e213dba4e8a8ccda741e0a",
+      "date": "2025-10-30T11:06:28+08:00",
+      "author": "jonlu",
+      "email": "jonlu@yeahka.com",
+      "message": "优化一些已知问题\n"
+    },
+    {
+      "sha": "8fb1219479e417e5950d6062aafcc639a5c4adb1",
+      "date": "2025-10-30T08:27:46+08:00",
+      "author": "jonlu",
+      "email": "jonlu@yeahka.com",
+      "message": "优化已知问题\n"
+    },
+    {
+      "sha": "ec85cac7e31103e4dc031956c8b17ab2dcee8ce4",
+      "date": "2025-07-24T08:53:01+08:00",
+      "author": "jonlu",
+      "email": "jonlu@yeahka.com",
+      "message": "优化类引用\n"
+    },
+    {
+      "sha": "2a56434be92dddb29ceaab03f7ac21616bb4b0c4",
+      "date": "2025-07-11T10:08:33+08:00",
+      "author": "jonlu",
+      "email": "jonlu@yeahka.com",
+      "message": "优化字典内容\n"
+    },
+    {
+      "sha": "97716c0100c2386d140df2e50cc2ebdd30b3892b",
+      "date": "2025-07-11T10:07:22+08:00",
+      "author": "jonlu",
+      "email": "jonlu@yeahka.com",
+      "message": "优化字典内容\n"
+    },
+    {
+      "sha": "c5b77640bf50dec4d996dfb3f0170655e63db996",
+      "date": "2025-07-08T18:07:40+08:00",
+      "author": "jonlu",
+      "email": "jonlu@yeahka.com",
+      "message": "优化登录限频次\n"
+    },
+    {
+      "sha": "777030d925862fd2add14fce2cec310629272951",
+      "date": "2025-07-08T15:43:03+08:00",
+      "author": "jonlu",
+      "email": "jonlu@yeahka.com",
+      "message": "优化普通管理有与超管之间权限限制\n"
+    },
+    {
+      "sha": "cfcd220a7c506f292ca6cde86bab6a655314983b",
+      "date": "2025-07-07T19:44:44+08:00",
+      "author": "jonlu",
+      "email": "jonlu@yeahka.com",
+      "message": "优化角色菜单问题\n"
+    },
+    {
+      "sha": "6b2ddc71b31becd1ffe982ef905ec5320f51d71b",
+      "date": "2025-07-05T10:32:24+08:00",
+      "author": "jonlu",
+      "email": "jonlu@yeahka.com",
+      "message": "优化个人中心面板\n"
+    },
+    {
+      "sha": "1f86be32413af1aecc7b7ebd99850d0644ce1e8d",
+      "date": "2025-07-04T23:51:56+08:00",
+      "author": "jonlu",
+      "email": "jonlu@yeahka.com",
+      "message": "优化个人中心展示问题\n"
+    },
+    {
+      "sha": "f6683657ba50be8b682cc8e1355b7172c1cf5ac1",
+      "date": "2025-07-04T18:06:35+08:00",
+      "author": "jonlu",
+      "email": "jonlu@yeahka.com",
+      "message": "1.增加用户个人中心\n2.优化一些已知问题\n"
+    },
+    {
+      "sha": "8b1d89c087f3075641dd383ad75ff9372e153274",
+      "date": "2025-07-04T16:26:00+08:00",
+      "author": "jonlu",
+      "email": "jonlu@yeahka.com",
+      "message": "1.增加用户个人中心\n2.优化一些已知问题\n"
+    }
+  ],
+  "commit_sha": "68b5b024ff33ca53e3340e8855f8f1bd6299a963",
+  "extracted_at": "2026-10-05T18:27:11.843042+00:00"
+}

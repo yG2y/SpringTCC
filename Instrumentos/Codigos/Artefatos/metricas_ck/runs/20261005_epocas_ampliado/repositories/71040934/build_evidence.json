@@ -1,0 +1,44 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${spring-boot.version};1.5.5.RELEASE",
+  "spring_boot_major": "1",
+  "java_versions_declared": "1.8",
+  "build_evidence": [
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "server/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "server/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "server/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "server/pom.xml",
+      "artifact": "spring-boot-starter-data-rest"
+    },
+    {
+      "file": "server/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "server/pom.xml",
+      "artifact": "spring-boot-starter-websocket"
+    },
+    {
+      "file": "server/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

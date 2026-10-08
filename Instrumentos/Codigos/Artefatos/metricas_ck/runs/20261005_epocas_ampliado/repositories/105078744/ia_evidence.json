@@ -1,0 +1,174 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 23,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "b52c3686d46bd170fa47b98e2ffed73cdee5658e",
+      "date": "2018-03-01T13:21:45Z",
+      "author": "Jesus",
+      "email": "jesusgsdev@gmail.com",
+      "message": "Updated SpringBoot to 2.0.0 Release version.\n"
+    },
+    {
+      "sha": "83f9f5de6895f0c1f4b5acce1d0baae63faa4cf1",
+      "date": "2017-12-04T23:05:37Z",
+      "author": "jesusgsdev",
+      "email": "jesusgarciasalinas@gmail.com",
+      "message": "Removed TODO from Readme file.\n"
+    },
+    {
+      "sha": "0d77db3946b3c1f5d283b77449fb659d5b8e883b",
+      "date": "2017-12-04T22:52:56Z",
+      "author": "jesusgsdev",
+      "email": "jesusgarciasalinas@gmail.com",
+      "message": "Updated Apache Commons to 3.7 from 3.4. Fixed some endpoints, added extra ones for Books. Rebuilt the Postman collection with examples to test all endpoints.\n"
+    },
+    {
+      "sha": "b9761a7154eb63f0d6515c2d4dc898cdc3a64f09",
+      "date": "2017-12-03T21:43:02Z",
+      "author": "jesusgsdev",
+      "email": "jesusgarciasalinas@gmail.com",
+      "message": "Updated Springboot to version 2.0.0M7, jUnit to 5.0.2, jUnit Platform to 1.0.2, added two new entities Customer and Purchase as well as repositories, services, facades and controllers. Updated tests to make them pass after changes.\n"
+    },
+    {
+      "sha": "3c46916612aa84c8531d81fc1a564e5e34d626f9",
+      "date": "2017-10-14T11:35:04+01:00",
+      "author": "jesusgsdev",
+      "email": "jesusgarciasalinas@gmail.com",
+      "message": "Updated Springboot to version 2.0.0M5\n"
+    },
+    {
+      "sha": "f8756b21ad5ceac5f38ea75262fd0face38fc4a4",
+      "date": "2017-10-03T23:28:04+01:00",
+      "author": "jesusgsdev",
+      "email": "jesusgarciasalinas@gmail.com",
+      "message": "Added pom on the root of all the modules and added the three projects as modules\n"
+    },
+    {
+      "sha": "d5d1b6a583b3301ec205f9b1cfc471e7de426147",
+      "date": "2017-10-03T23:17:52+01:00",
+      "author": "jesusgsdev",
+      "email": "jesusgarciasalinas@gmail.com",
+      "message": "Added Postman Collection to hit the current endpoints. Added an endpoint to get all books. Added annotation to ignore null fields in the BookDTO object.\n"
+    },
+    {
+      "sha": "a233fc06ace08b07a8a7da357ebd9e106d2593f4",
+      "date": "2017-10-03T19:43:41+01:00",
+      "author": "jesusgsdev",
+      "email": "jesusgarciasalinas@gmail.com",
+      "message": "Fixed typo in Readme file.\n"
+    },
+    {
+      "sha": "ef51a65a9617be30cf6561d57629307939b6ba3a",
+      "date": "2017-10-03T19:42:25+01:00",
+      "author": "jesusgsdev",
+      "email": "jesusgarciasalinas@gmail.com",
+      "message": "Updated Readme file with more details of what is the project about and what is the responsability of each module.\n"
+    },
+    {
+      "sha": "73864fa6f4f71758a6cbf2cfb1353c9025c893c8",
+      "date": "2017-10-03T19:38:11+01:00",
+      "author": "jesusgsdev",
+      "email": "jesusgarciasalinas@gmail.com",
+      "message": "Rebuild the project into three modules.\n"
+    },
+    {
+      "sha": "2ac62b19aae6cecc13f0adb7a1b0057e126091f7",
+      "date": "2017-10-03T18:49:01+01:00",
+      "author": "jesusgsdev",
+      "email": "jesusgarciasalinas@gmail.com",
+      "message": "Updated main project groupId, artifactId, name and description\n"
+    },
+    {
+      "sha": "2a36469b9dc533f80690dacfe77b6a364885a415",
+      "date": "2017-10-03T15:47:53+01:00",
+      "author": "Jesus",
+      "email": "jesusgsdev@gmail.com",
+      "message": "Updated jUnit from 5.0.0 to 5.0.1.\n"
+    },
+    {
+      "sha": "b0c728884d0dc471075e1e15844d9e5fab2df91b",
+      "date": "2017-10-03T13:51:58+01:00",
+      "author": "Jesus",
+      "email": "jesusgsdev@gmail.com",
+      "message": "Added BaseEntity with created and updated date as well as set all modules to work in UTC mode.\n"
+    },
+    {
+      "sha": "4a7e56ec90fb70f62e200ea27ab93d83ad0e7a20",
+      "date": "2017-10-03T13:31:20+01:00",
+      "author": "Jesus",
+      "email": "jesusgsdev@gmail.com",
+      "message": "Added two modules to represent two different books providers. Added Mapper for help mapping between entities and dtos.\n"
+    },
+    {
+      "sha": "c209f66750a0b0f36fd958bc33ce189abaf34bf6",
+      "date": "2017-10-03T11:39:57+01:00",
+      "author": "Jesus",
+      "email": "jesusgsdev@gmail.com",
+      "message": "Updated Book entity to support different providers.\n"
+    },
+    {
+      "sha": "c1216b4a5025e9d78500a9acc86f2239a1b53a69",
+      "date": "2017-10-03T11:22:44+01:00",
+      "author": "Jesus",
+      "email": "jesusgsdev@gmail.com",
+      "message": "Created three folders for e2e, integration and unit tests.\n"
+    },
+    {
+      "sha": "1133242711af684255cbfd7f95345d69214dec43",
+      "date": "2017-10-01T18:45:08+01:00",
+      "author": "jesusgsdev",
+      "email": "jesusgarciasalinas@gmail.com",
+      "message": "Added more methods in the service and created a facade to be used by the controller.\n"
+    },
+    {
+      "sha": "b9cd0947c343d7902d7221ae260ddb8834dcbeaa",
+      "date": "2017-09-28T23:18:12+01:00",
+      "author": "jesusgsdev",
+      "email": "jesusgarciasalinas@gmail.com",
+      "message": "By mistake I was using jUnit 4 instead of 5 in Test so I changed them to jUnit 5 and used @DisplayName annotation. As well I tested the new functionality of returning a Stream in a Repository as well as assertAll new assertion from jUnit 5.\n"
+    },
+    {
+      "sha": "5663f4f9cc33e1284083e33351a4430734636d01",
+      "date": "2017-09-28T00:40:03+01:00",
+      "author": "jesusgsdev",
+      "email": "jesusgarciasalinas@gmail.com",
+      "message": "Removed typo in Readme.md file\n"
+    },
+    {
+      "sha": "a58a0527458723f6fdeaae1354f33590ff7bb979",
+      "date": "2017-09-28T00:38:51+01:00",
+      "author": "jesusgsdev",
+      "email": "jesusgarciasalinas@gmail.com",
+      "message": "Added build status on Readme.md file\n"
+    },
+    {
+      "sha": "43525e4118d6e4c24f28f517b5212585685d0cbf",
+      "date": "2017-09-28T00:33:14+01:00",
+      "author": "jesusgsdev",
+      "email": "jesusgarciasalinas@gmail.com",
+      "message": "Added travis file to include it in Travis CI\n"
+    },
+    {
+      "sha": "71948998d57d1ea3da2052357a0c0d14bcb2774e",
+      "date": "2017-09-28T00:30:04+01:00",
+      "author": "jesusgsdev",
+      "email": "jesusgarciasalinas@gmail.com",
+      "message": "First commit having working SpringBoot 2, jUnit 5, H2 database and one test using jUnit5 for testing all is working.\n"
+    },
+    {
+      "sha": "0991bd394dfbe86f456147d70318e09dbf17ea87",
+      "date": "2017-09-28T00:12:52+01:00",
+      "author": "Jesus GS",
+      "email": "jesusgsdev@gmail.com",
+      "message": "Initial commit"
+    }
+  ],
+  "commit_sha": "b52c3686d46bd170fa47b98e2ffed73cdee5658e",
+  "extracted_at": "2026-10-05T18:36:51.189540+00:00"
+}

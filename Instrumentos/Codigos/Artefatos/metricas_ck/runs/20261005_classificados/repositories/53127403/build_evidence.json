@@ -1,0 +1,104 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "4.1.1",
+  "spring_boot_major": "4",
+  "java_versions_declared": "17;8",
+  "build_evidence": [
+    {
+      "file": "apollo-adminservice/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "apollo-assembly/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "apollo-audit/apollo-audit-impl/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "apollo-audit/apollo-audit-impl/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "apollo-audit/apollo-audit-impl/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "apollo-audit/apollo-audit-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "apollo-build-sql-converter/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "apollo-common/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "apollo-common/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "apollo-common/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "apollo-common/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "apollo-common/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "apollo-common/pom.xml",
+      "artifact": "spring-boot-h2console"
+    },
+    {
+      "file": "apollo-configservice/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "apollo-portal/pom.xml",
+      "artifact": "spring-boot-starter-oauth2-client"
+    },
+    {
+      "file": "apollo-portal/pom.xml",
+      "artifact": "spring-boot-starter-oauth2-resource-server"
+    },
+    {
+      "file": "apollo-portal/pom.xml",
+      "artifact": "spring-boot-jackson2"
+    },
+    {
+      "file": "apollo-portal/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "apollo-portal/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "apollo-portal/pom.xml",
+      "artifact": "spring-boot-starter-security-test"
+    },
+    {
+      "file": "apollo-portal/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

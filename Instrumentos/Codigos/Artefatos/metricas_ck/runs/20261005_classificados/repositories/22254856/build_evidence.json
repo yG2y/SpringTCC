@@ -1,0 +1,276 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${spring-boot.version};4.1.1",
+  "spring_boot_major": "4",
+  "java_versions_declared": "${java.version};17",
+  "build_evidence": [
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-boot-admin-build/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "spring-boot-admin-client/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-admin-client/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-boot-admin-client/pom.xml",
+      "artifact": "spring-boot-starter-restclient"
+    },
+    {
+      "file": "spring-boot-admin-client/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "spring-boot-admin-client/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "spring-boot-admin-client/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "spring-boot-admin-client/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-admin-client/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-admin-samples/spring-boot-admin-sample-consul/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "spring-boot-admin-samples/spring-boot-admin-sample-consul/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "spring-boot-admin-samples/spring-boot-admin-sample-consul/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-admin-samples/spring-boot-admin-sample-consul/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-boot-admin-samples/spring-boot-admin-sample-eureka/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "spring-boot-admin-samples/spring-boot-admin-sample-eureka/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "spring-boot-admin-samples/spring-boot-admin-sample-eureka/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-admin-samples/spring-boot-admin-sample-eureka/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-boot-admin-samples/spring-boot-admin-sample-hazelcast/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "spring-boot-admin-samples/spring-boot-admin-sample-hazelcast/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "spring-boot-admin-samples/spring-boot-admin-sample-hazelcast/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-admin-samples/spring-boot-admin-sample-hazelcast/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-boot-admin-samples/spring-boot-admin-sample-mcp/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-boot-admin-samples/spring-boot-admin-sample-reactive/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "spring-boot-admin-samples/spring-boot-admin-sample-reactive/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-admin-samples/spring-boot-admin-sample-reactive/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "spring-boot-admin-samples/spring-boot-admin-sample-reactive/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-boot-admin-samples/spring-boot-admin-sample-servlet-graalvm/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-boot-admin-samples/spring-boot-admin-sample-servlet-graalvm/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-boot-admin-samples/spring-boot-admin-sample-servlet/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "spring-boot-admin-samples/spring-boot-admin-sample-servlet/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "spring-boot-admin-samples/spring-boot-admin-sample-servlet/pom.xml",
+      "artifact": "spring-boot-starter-mail"
+    },
+    {
+      "file": "spring-boot-admin-samples/spring-boot-admin-sample-servlet/pom.xml",
+      "artifact": "spring-boot-starter-quartz"
+    },
+    {
+      "file": "spring-boot-admin-samples/spring-boot-admin-sample-servlet/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-admin-samples/spring-boot-admin-sample-servlet/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-boot-admin-samples/spring-boot-admin-sample-war/pom.xml",
+      "artifact": "spring-boot-starter-tomcat"
+    },
+    {
+      "file": "spring-boot-admin-samples/spring-boot-admin-sample-war/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "spring-boot-admin-samples/spring-boot-admin-sample-war/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "spring-boot-admin-samples/spring-boot-admin-sample-war/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-boot-admin-samples/spring-boot-admin-sample-zookeeper/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "spring-boot-admin-samples/spring-boot-admin-sample-zookeeper/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "spring-boot-admin-samples/spring-boot-admin-sample-zookeeper/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-admin-samples/spring-boot-admin-sample-zookeeper/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-boot-admin-server-cloud/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "spring-boot-admin-server-cloud/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-admin-server-cloud/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-admin-server-cloud/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "spring-boot-admin-server-mcp/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "spring-boot-admin-server-mcp/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-admin-server-mcp/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-admin-server-ui/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "spring-boot-admin-server-ui/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "spring-boot-admin-server-ui/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-admin-server-ui/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-admin-server-ui/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "spring-boot-admin-server/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-admin-server/pom.xml",
+      "artifact": "spring-boot-starter-webclient"
+    },
+    {
+      "file": "spring-boot-admin-server/pom.xml",
+      "artifact": "spring-boot-starter-hazelcast"
+    },
+    {
+      "file": "spring-boot-admin-server/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "spring-boot-admin-server/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "spring-boot-admin-server/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "spring-boot-admin-server/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-boot-admin-server/pom.xml",
+      "artifact": "spring-boot-starter-mail"
+    },
+    {
+      "file": "spring-boot-admin-server/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "spring-boot-admin-server/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-admin-server/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-admin-server/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    }
+  ]
+}

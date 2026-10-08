@@ -1,0 +1,19 @@
+{
+  "ia_status": "com_evidencia",
+  "ia_level": 1,
+  "ia_agents": "Codex / OpenAI",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 0,
+  "evidence": [
+    {
+      "agent": "Codex / OpenAI",
+      "type": "gitignore",
+      "path": ".gitignore",
+      "line": "AGENTS.md"
+    }
+  ],
+  "commits": [],
+  "commit_sha": "efe1af36dd2cd7b5818f7f7c68c611f8b75581ef",
+  "extracted_at": "2026-10-05T18:00:15.199949+00:00"
+}

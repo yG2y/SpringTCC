@@ -1,0 +1,40 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${spring-boot.version};3.5.3",
+  "spring_boot_major": "3",
+  "java_versions_declared": "${java.version};17",
+  "build_evidence": [
+    {
+      "file": "aspect/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-example/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-example/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "spring-boot-example/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    }
+  ]
+}

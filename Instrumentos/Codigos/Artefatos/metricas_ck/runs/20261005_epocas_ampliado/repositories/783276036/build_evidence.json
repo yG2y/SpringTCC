@@ -1,0 +1,156 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "4.1.1",
+  "spring_boot_major": "4",
+  "java_versions_declared": "${java.version};25",
+  "build_evidence": [
+    {
+      "file": "sz-build/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "sz-build/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "sz-common/sz-common-core/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "sz-common/sz-common-db-core/pom.xml",
+      "artifact": "spring-boot"
+    },
+    {
+      "file": "sz-common/sz-common-db-mysql/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "sz-common/sz-common-db-postgresql/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "sz-common/sz-common-db-redis/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "sz-common/sz-common-db-redis/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "sz-common/sz-common-excel/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "sz-common/sz-common-log/pom.xml",
+      "artifact": "spring-boot"
+    },
+    {
+      "file": "sz-common/sz-common-oss/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "sz-common/sz-common-oss/pom.xml",
+      "artifact": "spring-boot"
+    },
+    {
+      "file": "sz-common/sz-common-resource/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "sz-common/sz-common-resource/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "sz-common/sz-common-resource/pom.xml",
+      "artifact": "spring-boot"
+    },
+    {
+      "file": "sz-common/sz-common-resource/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "sz-common/sz-common-security/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "sz-common/sz-common-security/pom.xml",
+      "artifact": "spring-boot"
+    },
+    {
+      "file": "sz-common/sz-common-security/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "sz-common/sz-common-wechat/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "sz-common/sz-common-wechat/pom.xml",
+      "artifact": "spring-boot"
+    },
+    {
+      "file": "sz-common/sz-common-wechat/pom.xml",
+      "artifact": "spring-boot-http-client"
+    },
+    {
+      "file": "sz-common/sz-common-wechat/pom.xml",
+      "artifact": "spring-boot-restclient"
+    },
+    {
+      "file": "sz-module/sz-module-admin/pom.xml",
+      "artifact": "spring-boot-starter-freemarker"
+    },
+    {
+      "file": "sz-module/sz-module-admin/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "sz-module/sz-module-admin/pom.xml",
+      "artifact": "spring-boot"
+    },
+    {
+      "file": "sz-module/sz-module-admin/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "sz-module/sz-module-audit/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "sz-module/sz-module-generator/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "sz-module/sz-module-generator/pom.xml",
+      "artifact": "spring-boot-starter-freemarker"
+    },
+    {
+      "file": "sz-module/sz-module-generator/pom.xml",
+      "artifact": "spring-boot"
+    },
+    {
+      "file": "sz-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "sz-service/sz-service-admin/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "sz-service/sz-service-admin/pom.xml",
+      "artifact": "spring-boot-starter-liquibase"
+    },
+    {
+      "file": "sz-service/sz-service-admin/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "sz-service/sz-service-admin/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "sz-service/sz-service-websocket/pom.xml",
+      "artifact": "spring-boot-starter-websocket"
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "f87bcea560585f55d24ebef8fbe92e45138f9449",
+      "date": "2026-10-05T17:41:12+02:00",
+      "author": "Stéphane Nicoll",
+      "email": "stephane.nicoll@broadcom.com",
+      "message": "Merge branch '4.1.x'\n"
+    },
+    {
+      "sha": "dd378bcc6eb8a4d5c91c07e7dffbdf72b7c1358a",
+      "date": "2026-10-05T17:41:04+02:00",
+      "author": "Stéphane Nicoll",
+      "email": "stephane.nicoll@broadcom.com",
+      "message": "Merge branch '4.0.x' into 4.1.x\n"
+    },
+    {
+      "sha": "e732f6a0cb4ee51a546786cb6c71e21e25b310b4",
+      "date": "2026-10-05T17:25:56+02:00",
+      "author": "Stéphane Nicoll",
+      "email": "stephane.nicoll@broadcom.com",
+      "message": "Start building against Spring Data Bom 2025.1.8 snapshots\n\nSee gh-51955\n"
+    },
+    {
+      "sha": "8e26658e4ad770f2f6f38ef6f5d05885baa7fe58",
+      "date": "2026-10-05T16:46:33+02:00",
+      "author": "Stéphane Nicoll",
+      "email": "stephane.nicoll@broadcom.com",
+      "message": "Start building against Spring WS 5.0.3 snapshots\n\nSee gh-51954\n"
+    },
+    {
+      "sha": "6c61d5772d9b7ebae65d95e8e01d6baaa52286d6",
+      "date": "2026-10-05T16:46:29+02:00",
+      "author": "Stéphane Nicoll",
+      "email": "stephane.nicoll@broadcom.com",
+      "message": "Start building against Spring RESTDocs 4.0.2 snapshots\n\nSee gh-51953\n"
+    },
+    {
+      "sha": "b4a61d0fc5d0c20636cce975f883abb85766fe14",
+      "date": "2026-10-05T16:46:25+02:00",
+      "author": "Stéphane Nicoll",
+      "email": "stephane.nicoll@broadcom.com",
+      "message": "Start building against Spring Kafka 4.0.8 snapshots\n\nSee gh-51952\n"
+    },
+    {
+      "sha": "2c10a0a9dd19ce08449cf9e04b53b105f27ff06d",
+      "date": "2026-10-05T16:46:20+02:00",
+      "author": "Stéphane Nicoll",
+      "email": "stephane.nicoll@broadcom.com",
+      "message": "Start building against Spring Framework 7.0.10 snapshots\n\nSee gh-51951\n"
+    },
+    {
+      "sha": "0920e36db9a8699f346b0dba0038bd7ba3b5ef1e",
+      "date": "2026-10-05T16:46:15+02:00",
+      "author": "Stéphane Nicoll",
+      "email": "stephane.nicoll@broadcom.com",
+      "message": "Start building against Spring AMQP 4.0.6 snapshots\n\nSee gh-51950\n"
+    },
+    {
+      "sha": "2ad19e44980bc1f31e119b81a838e9829295aa4f",
+      "date": "2026-10-05T10:18:45+01:00",
+      "author": "Andy Wilkinson",
+      "email": "andy.wilkinson@broadcom.com",
+      "message": "Merge branch '4.1.x'\n\nCloses gh-51947\n"
+    },
+    {
+      "sha": "85fcb5db742b3a51de4efedcfa3b90b28405a8e9",
+      "date": "2026-10-05T10:18:30+01:00",
+      "author": "Andy Wilkinson",
+      "email": "andy.wilkinson@broadcom.com",
+      "message": "Merge branch '4.0.x' into 4.1.x\n\nCloses gh-51946\n"
+    },
+    {
+      "sha": "4a424936754e033086c89c29de3142e6943b024a",
+      "date": "2026-10-05T10:13:53+01:00",
+      "author": "Andy Wilkinson",
+      "email": "andy.wilkinson@broadcom.com",
+      "message": "Use --release-train as source of release date\n\nWhen the milestone is unscheduled, use the configured release train as\na source of the release date. This allows moveToSnapshots to be used\nbefore joining the train, when the milestone is typically unscheduled.\n\nFixes gh-51942\n"
+    },
+    {
+      "sha": "70ffc5343feedd8a0186ce5c00876e428d6c5f09",
+      "date": "2026-10-05T10:55:06+02:00",
+      "author": "Stéphane Nicoll",
+      "email": "stephane.nicoll@broadcom.com",
+      "message": "Merge branch '4.1.x'\n\nCloses gh-51945\n"
+    },
+    {
+      "sha": "d83b8fafaabb2762725fa052e6b5c7c0053edcb0",
+      "date": "2026-10-05T10:50:57+02:00",
+      "author": "Stéphane Nicoll",
+      "email": "stephane.nicoll@broadcom.com",
+      "message": "Merge branch '4.0.x' into 4.1.x\n\nCloses gh-51944\n"
+    },
+    {
+      "sha": "511bbc03d9e8709cc59f6dc404096d3a19325cf4",
+      "date": "2026-10-05T10:48:15+02:00",
+      "author": "Stéphane Nicoll",
+      "email": "stephane.nicoll@broadcom.com",
+      "message": "Apply release train infrastructure\n\nThis commit moves our previous release process using dedicated workflows\nto the use of the release orchestrator. The necessary workflows have\nbeen added in this commit as well as the two goals required to build\nand test the release.\n\nPost-release actions have been moved to a publicize-release workflow.\n\nCloses gh-51883\n"
+    },
+    {
+      "sha": "f6142c9f47591b70949391d1848c1f81503006db",
+      "date": "2026-10-02T18:22:28+01:00",
+      "author": "Andy Wilkinson",
+      "email": "andy.wilkinson@broadcom.com",
+      "message": "Merge branch '4.1.x'\n\nCloses gh-51934\n"
+    },
+    {
+      "sha": "1958b3921404651e0f83c881dd506961dd731ca3",
+      "date": "2026-08-21T15:09:50+01:00",
+      "author": "Andy Wilkinson",
+      "email": "andy.wilkinson@broadcom.com",
+      "message": "Use new isEnabled methods when testing CBOR and XML feature config\n\nCloses gh-47774\n"
+    },
+    {
+      "sha": "7f9eef2c33c768b82c5294680c2dd8447a28c7d9",
+      "date": "2026-10-01T12:30:15+01:00",
+      "author": "Andy Wilkinson",
+      "email": "andy.wilkinson@broadcom.com",
+      "message": "Merge branch '4.1.x'\n"
+    },
+    {
+      "sha": "f67ec6b3ca711a964fa695ad5e1e30a01bf4cc98",
+      "date": "2026-10-01T12:30:09+01:00",
+      "author": "Andy Wilkinson",
+      "email": "andy.wilkinson@broadcom.com",
+      "message": "Merge branch '4.0.x' into 4.1.x\n"
+    },
+    {
+      "sha": "1d9b5d5a663b645b2fc217697c2c2b11892255e3",
+      "date": "2026-10-01T12:30:00+01:00",
+      "author": "Andy Wilkinson",
+      "email": "andy.wilkinson@broadcom.com",
+      "message": "Polish\n"
+    },
+    {
+      "sha": "fba03d89f6148b89d4d0dc62921372e522c67a96",
+      "date": "2026-10-01T12:04:34+01:00",
+      "author": "Andy Wilkinson",
+      "email": "andy.wilkinson@broadcom.com",
+      "message": "Merge branch '4.1.x'\n\nCloses gh-51926\n"
+    },
+    {
+      "sha": "721f93fb6ed8c961049183b8481b72fdd2b394fa",
+      "date": "2026-10-01T12:04:25+01:00",
+      "author": "Andy Wilkinson",
+      "email": "andy.wilkinson@broadcom.com",
+      "message": "Merge branch '4.0.x' into 4.1.x\n\nCloses gh-51925\n"
+    },
+    {
+      "sha": "47d4b222827148e780ea7e5118b88676659a753d",
+      "date": "2026-10-01T12:04:18+01:00",
+      "author": "Andy Wilkinson",
+      "email": "andy.wilkinson@broadcom.com",
+      "message": "Merge pull request #50489 from galenzo17\n\nCloses gh-50489\n\n* gh-50489:\n  Polish \"Preserve property descriptions during Gradle incremental compilation\"\n  Preserve property descriptions during Gradle incremental compilation\n"
+    },
+    {
+      "sha": "8c457932e7343b135c7e7cf8005a2e8e05e73bd7",
+      "date": "2026-10-01T11:54:57+01:00",
+      "author": "Andy Wilkinson",
+      "email": "andy.wilkinson@broadcom.com",
+      "message": "Polish \"Preserve property descriptions during Gradle incremental compilation\"\n\nSee gh-50489\n\nSigned-off-by: Andy Wilkinson <andy.wilkinson@broadcom.com>\n"
+    },
+    {
+      "sha": "f135b3fb88df75265d62b22ef52d41e0b57e26b1",
+      "date": "2026-05-23T15:11:56-04:00",
+      "author": "Agustin Bereciartua",
+      "email": "bereciartua.agustin@gmail.com",
+      "message": "Preserve property descriptions during Gradle incremental compilation\n\nCache descriptions in a location outside CLASS_OUTPUT so that Gradle's\nincremental compilation does not lose javadoc-based descriptions for\ntypes passed as .class files.\n\nSee gh-50489\n\nSigned-off-by: Agustin Bereciartua <bereciartua.agustin@gmail.com>\n"
+    },
+    {
+      "sha": "dff420e8d7604a9e5a73a27965e8e21dd611c1ec",
+      "date": "2026-10-01T11:21:21+01:00",
+      "author": "Andy Wilkinson",
+      "email": "andy.wilkinson@broadcom.com",
+      "message": "Merge branch '4.1.x'\n\nCloses gh-51923\n"
+    },
+    {
+      "sha": "267707e2bc895aa9a99145276e6005c91f824473",
+      "date": "2026-10-01T11:20:14+01:00",
+      "author": "Andy Wilkinson",
+      "email": "andy.wilkinson@broadcom.com",
+      "message": "Merge branch '4.0.x' into 4.1.x\n\nCloses gh-51924\n"
+    },
+    {
+      "sha": "01afdc8dc738d1c016bcbc572b2376d270dc3335",
+      "date": "2026-10-01T11:20:03+01:00",
+      "author": "Andy Wilkinson",
+      "email": "andy.wilkinson@broadcom.com",
+      "message": "Merge pull request #51893 from scottfrederick\n\nCloses gh-51893\n\n* gh-51893:\n  Check distro instead of stack ID for run image\n"
+    },
+    {
+      "sha": "b46fe745c0184f6b08cf4993582af6640fd882aa",
+      "date": "2026-09-28T09:05:50-05:00",
+      "author": "Scott Frederick",
+      "email": "scottyfred@gmail.com",
+      "message": "Check distro instead of stack ID for run image\n\nStack IDs are deprecated since Platform API 0.12 in favor of target\ndata. Comparing them produced false warnings for valid combinations,\ne.g. the default builder with its tiny run image ('resolute' vs\n'resolute.tiny').\n\nCompare the OS distribution instead, read from the\nio.buildpacks.base.distro.* labels with a fallback to the\nio.buildpacks.stack.distro.* labels set by Paketo images. A missing\nname or version matches any value, as in the lifecycle.\n\nCo-authored-by: Moritz Halbritter <moritz.halbritter@broadcom.com>\nSigned-off-by: Scott Frederick <scottyfred@gmail.com>\n\nSee gh-51893\n"
+    },
+    {
+      "sha": "4b6493f4f2531cd5cbbfae28cd3b5369190fcf81",
+      "date": "2026-10-01T12:14:30+02:00",
+      "author": "Moritz Halbritter",
+      "email": "moritz.halbritter@broadcom.com",
+      "message": "Merge branch '4.1.x'\n\nCloses gh-51921\n"
+    },
+    {
+      "sha": "d08663b9e8d14bf4d44dc56a0f98b748aada595b",
+      "date": "2026-10-01T12:13:53+02:00",
+      "author": "Moritz Halbritter",
+      "email": "moritz.halbritter@broadcom.com",
+      "message": "Merge branch '4.0.x' into 4.1.x\n\nCloses gh-51920\n"
+    }
+  ],
+  "commit_sha": "f87bcea560585f55d24ebef8fbe92e45138f9449",
+  "extracted_at": "2026-10-05T17:51:09.077027+00:00"
+}

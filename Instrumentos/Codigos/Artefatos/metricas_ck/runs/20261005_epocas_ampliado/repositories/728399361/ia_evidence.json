@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "44de4cefa3f2ce022ca7052c46e4095a60549983",
+      "date": "2026-09-05T17:43:11+09:00",
+      "author": "Park",
+      "email": "park@junhyung.kr",
+      "message": "지운 자동설정을 imports 에서도 뺀다\n"
+    },
+    {
+      "sha": "29be238d099b707f54e9e1a290712f3464ed8a46",
+      "date": "2026-09-05T17:10:42+09:00",
+      "author": "Park",
+      "email": "park@junhyung.kr",
+      "message": "velocity 도 기동에 실패하면 프로세스를 끈다\n"
+    },
+    {
+      "sha": "136943ff7ace71e95f472145ba8603ed814e3a14",
+      "date": "2026-09-05T17:10:42+09:00",
+      "author": "Park",
+      "email": "park@junhyung.kr",
+      "message": "paper 구현에 매인 기능을 걷어내고 API 만 본다\n"
+    },
+    {
+      "sha": "cd9123b9103acdb9839dfcc48a0df9295f44127d",
+      "date": "2026-09-05T17:09:55+09:00",
+      "author": "Park",
+      "email": "park@junhyung.kr",
+      "message": "discovery 를 mainframe 에서 걷어낸다\n"
+    },
+    {
+      "sha": "3a1d22aa2fa6f0b1de9f39eb0a48302c31f202f3",
+      "date": "2026-08-16T18:29:19+09:00",
+      "author": "Park",
+      "email": "park@junhyung.kr",
+      "message": "Add disguise framework backed by ModelEngine\n"
+    },
+    {
+      "sha": "1f3b7ecce746f089e44893c74dc0e0f77892e192",
+      "date": "2026-08-16T03:00:08+09:00",
+      "author": "Park",
+      "email": "park@junhyung.kr",
+      "message": "Register nametag passengers in the same tick a model is added\n"
+    },
+    {
+      "sha": "b532d0e4c257ab4ea9a3c18d81b7898317cc1c1a",
+      "date": "2026-08-15T21:30:11+09:00",
+      "author": "Park",
+      "email": "park@junhyung.kr",
+      "message": "Keep nametag passengers when a ModelEngine model is removed\n"
+    },
+    {
+      "sha": "4379565c328c755c01cde050463cf4ebb136d6d2",
+      "date": "2026-08-15T21:20:10+09:00",
+      "author": "Park",
+      "email": "park@junhyung.kr",
+      "message": "Reattach nametags immediately when remounting\n"
+    },
+    {
+      "sha": "c773ff8c6aeb6e1c156089e9937897f17367f4d0",
+      "date": "2026-08-15T21:11:27+09:00",
+      "author": "Park",
+      "email": "park@junhyung.kr",
+      "message": "Remount nametags when a ModelEngine model is removed\n"
+    },
+    {
+      "sha": "cb261b1a3086a6a7e788a5a38d7c739f7008d693",
+      "date": "2026-08-15T20:50:20+09:00",
+      "author": "Park",
+      "email": "park@junhyung.kr",
+      "message": "Mount nametags on ModelEngine disguises\n"
+    },
+    {
+      "sha": "58c4379c48e6b08aa2d1ef3452cb11b6e45010ca",
+      "date": "2026-08-14T17:14:00+09:00",
+      "author": "Park",
+      "email": "park@junhyung.kr",
+      "message": "Add hologram framework\n"
+    },
+    {
+      "sha": "269cbcc067300483f112be29998da8a9091ccf80",
+      "date": "2026-08-12T21:41:02+09:00",
+      "author": "Park",
+      "email": "park@junhyung.kr",
+      "message": "Extend player presence system to include player skins\n"
+    },
+    {
+      "sha": "e2122bbf794f335b95394dfcb76a41cf2a1ae1c9",
+      "date": "2026-08-06T18:55:09+09:00",
+      "author": "Park",
+      "email": "park@junhyung.kr",
+      "message": "Add player presence to the framework\n"
+    },
+    {
+      "sha": "cca6143aa527bc341ddfaea666bb43ed0c60a06d",
+      "date": "2026-08-06T10:52:49+09:00",
+      "author": "Park",
+      "email": "park@junhyung.kr",
+      "message": "Polish gameserver discovery codes\n"
+    },
+    {
+      "sha": "0fafc9fa73cc974660c9612e90ac3b6b8103fa87",
+      "date": "2026-07-19T08:11:57+09:00",
+      "author": "Park",
+      "email": "park@junhyung.kr",
+      "message": "Add gameserver discovery and registration framework\n"
+    },
+    {
+      "sha": "f058813879bffa731db52702223919adaa1cf6dd",
+      "date": "2026-07-19T08:10:02+09:00",
+      "author": "Park",
+      "email": "park@junhyung.kr",
+      "message": "Add Micrometer metrics integration\n"
+    },
+    {
+      "sha": "9227575f17ee32a19a4c4c527634041e42a6b0c8",
+      "date": "2026-07-17T14:05:38+09:00",
+      "author": "Park",
+      "email": "park@junhyung.kr",
+      "message": "Handle application startup failure by killing jvm\n"
+    },
+    {
+      "sha": "f2133773334b315f835eae1e3b3a89a8ef77518a",
+      "date": "2026-07-14T13:06:22+09:00",
+      "author": "junhyung",
+      "email": "park@junhyung.kr",
+      "message": "Rewrite mainframe as a Java platform (#6)"
+    },
+    {
+      "sha": "c13fcdf9e48cde534ea5779f699fbaa6b9c6cd3e",
+      "date": "2025-06-25T15:41:27+09:00",
+      "author": "Junhyung Park",
+      "email": "park@junhyung.kr",
+      "message": "Implement delegated command handling with permission support\n"
+    },
+    {
+      "sha": "5083edc0b5c4c612a7177f45169364e38a99ea7d",
+      "date": "2025-06-23T14:03:38+09:00",
+      "author": "Junhyung Park",
+      "email": "park@junhyung.kr",
+      "message": "Add Jackson Kotlin module dependency\n"
+    },
+    {
+      "sha": "3b7b5783482ddf54afce5166594705c6c9c58b36",
+      "date": "2025-06-23T12:34:53+09:00",
+      "author": "Junhyung Park",
+      "email": "park@junhyung.kr",
+      "message": "Initial commit\n"
+    },
+    {
+      "sha": "9770784916f25d44e132410c76a982640e422f0f",
+      "date": "2024-04-18T11:20:14+09:00",
+      "author": "junhyung",
+      "email": "park@junhyung.kr",
+      "message": "Polish codes\n"
+    },
+    {
+      "sha": "f21dbf3639d8cdd9d18d622b3fb27a2ed954300f",
+      "date": "2024-04-16T02:18:42+09:00",
+      "author": "junhyung",
+      "email": "park@junhyung.kr",
+      "message": "Initial commit\n"
+    },
+    {
+      "sha": "9cfb018147cf4254f8118c024b30e15446482894",
+      "date": "2024-02-05T18:09:27+09:00",
+      "author": "junhyung",
+      "email": "park@junhyung.kr",
+      "message": "Fix shutdown issue when server is reloaded\n"
+    },
+    {
+      "sha": "617112cd9015cab97b08ecd08a36b94b4dd2eddb",
+      "date": "2024-02-05T10:18:44+09:00",
+      "author": "junhyung",
+      "email": "park@junhyung.kr",
+      "message": "Fix similar commands registration issue\n"
+    },
+    {
+      "sha": "c91e38ad84e021144ae9f6788de2314608be0ddc",
+      "date": "2024-02-04T20:27:34+09:00",
+      "author": "junhyung",
+      "email": "park@junhyung.kr",
+      "message": "Update Spring/Spring Boot versions\n"
+    },
+    {
+      "sha": "b0c51c689352e53ab552568a9b319b6eb0ef0b45",
+      "date": "2024-02-04T13:54:20+09:00",
+      "author": "junhyung",
+      "email": "park@junhyung.kr",
+      "message": "Fix improperly overridden method\n"
+    },
+    {
+      "sha": "a1e0860a0b6b1d1c89a1e2202caf285f7fdd1bf7",
+      "date": "2024-02-02T07:53:16+09:00",
+      "author": "junhyung",
+      "email": "park@junhyung.kr",
+      "message": "Add metadata reader to allow Spring Boot can read another plugin jar's classpath resources\n"
+    },
+    {
+      "sha": "6318bb0d6089665bcddd7ffb259dec6383ae3cc8",
+      "date": "2024-01-27T15:48:28+09:00",
+      "author": "junhyung",
+      "email": "park@junhyung.kr",
+      "message": "Migrate bukkit main dispatcher to updated scheduler\n"
+    },
+    {
+      "sha": "56e516774cbfcad7c194a768cdbd5b5265e41838",
+      "date": "2024-01-27T15:40:56+09:00",
+      "author": "junhyung",
+      "email": "park@junhyung.kr",
+      "message": "Add bukkit async scheduler support\n"
+    }
+  ],
+  "commit_sha": "44de4cefa3f2ce022ca7052c46e4095a60549983",
+  "extracted_at": "2026-10-05T18:49:01.967843+00:00"
+}

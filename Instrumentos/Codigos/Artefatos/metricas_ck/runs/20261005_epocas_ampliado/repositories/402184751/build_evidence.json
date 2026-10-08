@@ -1,0 +1,52 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "4.0.1",
+  "spring_boot_major": "4",
+  "java_versions_declared": "25",
+  "build_evidence": [
+    {
+      "file": "consumer-service/pom.xml",
+      "artifact": "spring-boot-starter-kafka"
+    },
+    {
+      "file": "consumer-service/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "consumer-service/pom.xml",
+      "artifact": "spring-boot-starter-kafka-test"
+    },
+    {
+      "file": "consumer-service/pom.xml",
+      "artifact": "spring-boot-starter-webflux-test"
+    },
+    {
+      "file": "consumer-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "producer-service/pom.xml",
+      "artifact": "spring-boot-starter-kafka"
+    },
+    {
+      "file": "producer-service/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "producer-service/pom.xml",
+      "artifact": "spring-boot-starter-kafka-test"
+    },
+    {
+      "file": "producer-service/pom.xml",
+      "artifact": "spring-boot-starter-webflux-test"
+    },
+    {
+      "file": "producer-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

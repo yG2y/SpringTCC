@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "9dfcaf4b790122d494542e5c3c7f3b67b2dcb3ba",
+      "date": "2026-09-03T19:41:33+03:00",
+      "author": "Yusuf",
+      "email": "torshid@gmail.com",
+      "message": "Merge pull request #536 from turkraft/4.x.x\n\nPom fix"
+    },
+    {
+      "sha": "c2fa3f9458463a3a192aeeca0b4fbfc1c4d02d91",
+      "date": "2026-09-03T19:39:53+03:00",
+      "author": "torshid",
+      "email": "torshid@gmail.com",
+      "message": "Pom fix\n"
+    },
+    {
+      "sha": "f86f8f01b9cfb22a7b654851a27b528bdfa48086",
+      "date": "2026-09-03T15:36:52+03:00",
+      "author": "Yusuf",
+      "email": "torshid@gmail.com",
+      "message": "Merge pull request #535 from turkraft/4.x.x\n\nRegistration, parsing and escaping fixes"
+    },
+    {
+      "sha": "c28e0c7b0d49a806392111156f24e01fc8e3cea4",
+      "date": "2026-09-03T15:28:03+03:00",
+      "author": "torshid",
+      "email": "torshid@gmail.com",
+      "message": "Registration, parsing and escaping fixes\n"
+    },
+    {
+      "sha": "16ec12c975af2983528e8935977aebdbb16e8fbd",
+      "date": "2026-09-02T18:18:48+03:00",
+      "author": "Yusuf",
+      "email": "torshid@gmail.com",
+      "message": "Merge pull request #534 from turkraft/4.x.x\n\nCollection and conversion fixes"
+    },
+    {
+      "sha": "800bebd64b816129f2fbe5f6bb05e800f79cd708",
+      "date": "2026-09-02T18:07:07+03:00",
+      "author": "torshid",
+      "email": "torshid@gmail.com",
+      "message": "Collection and conversion fixes\n"
+    },
+    {
+      "sha": "5f1483b9c975f27be174e44d31707a357af2935a",
+      "date": "2026-08-29T14:06:46+03:00",
+      "author": "Yusuf",
+      "email": "torshid@gmail.com",
+      "message": "Sponsor"
+    },
+    {
+      "sha": "141e441e7110522fc4f61d981d5183e8364e20aa",
+      "date": "2026-08-29T05:36:03+03:00",
+      "author": "Yusuf",
+      "email": "torshid@gmail.com",
+      "message": "Merge pull request #528 from turkraft/4.x.x\n\nVersions"
+    },
+    {
+      "sha": "806a1dea119eabc6631a204a9f8cb759198402d0",
+      "date": "2026-08-29T05:35:31+03:00",
+      "author": "torshid",
+      "email": "torshid@gmail.com",
+      "message": "Versions\n"
+    },
+    {
+      "sha": "7f3d0d78d84d1b94983956ae0bdf9de0aa16d49b",
+      "date": "2026-08-29T05:16:13+03:00",
+      "author": "Yusuf",
+      "email": "torshid@gmail.com",
+      "message": "Merge pull request #527 from marcopag90/feature/524-bson-transformer\n\nMongo: build Document and Query filters from typed BSON values"
+    },
+    {
+      "sha": "aeb75aa0bc7249abab7ea7aa45b52428f8cc7ddb",
+      "date": "2026-08-28T16:52:10-04:00",
+      "author": "Marco Pagan",
+      "email": "marcopag90@gmail.com",
+      "message": "Mongo: build Document and Query filters from typed BSON values\n\nFilter values were rendered to JSON text and parsed back with Document.parse,\nso dates ended up as strings and comparisons against date fields returned\nwrong results. Document and Query parameters, and the new FilterQueryConverter,\nare now built directly from BSON values: dates, ObjectIds, UUIDs and numbers\nkeep their type. ObjectNode parameters keep using the JSON transformer.\n\nAlso fixes placeholder processor injection, resolves ObjectId fields like\nString ids, and drops the application.properties shipped in the jar.\n"
+    },
+    {
+      "sha": "b095fe94bf777027acd532e7a1a5264034bd41d1",
+      "date": "2026-08-28T17:54:55+03:00",
+      "author": "Yusuf",
+      "email": "torshid@gmail.com",
+      "message": "Merge pull request #526 from turkraft/4.x.x\n\n4.x.x"
+    },
+    {
+      "sha": "280b06e5a60cb686b27e32208af85a9001e489ad",
+      "date": "2026-08-28T17:40:33+03:00",
+      "author": "torshid",
+      "email": "torshid@gmail.com",
+      "message": "Xor fixes\n"
+    },
+    {
+      "sha": "6b46955997b47e66213974264585f5096218276f",
+      "date": "2026-08-28T17:32:04+03:00",
+      "author": "torshid",
+      "email": "torshid@gmail.com",
+      "message": "DBRef + DocumentReference support\n"
+    },
+    {
+      "sha": "492d85391c1263bfa840808ba78a46b3b723544a",
+      "date": "2026-08-25T07:00:19+03:00",
+      "author": "torshid",
+      "email": "torshid@gmail.com",
+      "message": "Promote release\n"
+    },
+    {
+      "sha": "3eb8619e506c0750cb425ce6426bc7894e388d60",
+      "date": "2026-08-25T06:30:15+03:00",
+      "author": "Yusuf",
+      "email": "torshid@gmail.com",
+      "message": "Merge pull request #525 from turkraft/4.x.x\n\nInstall lib in workflow"
+    },
+    {
+      "sha": "343f28fb5dd7d03fa78cc4834e76dacfdc2612d5",
+      "date": "2026-08-25T06:26:49+03:00",
+      "author": "torshid",
+      "email": "torshid@gmail.com",
+      "message": "Install lib in workflow\n"
+    },
+    {
+      "sha": "7621c75f5dfa9ca8a4dfcff4fd76740f2455d009",
+      "date": "2026-08-24T21:51:37+03:00",
+      "author": "Yusuf",
+      "email": "torshid@gmail.com",
+      "message": "Merge pull request #523 from turkraft/4.x.x\n\nFilter maps in mongo"
+    },
+    {
+      "sha": "796240b6019224342320653f4b64bfc59f5d26fd",
+      "date": "2026-08-24T21:49:22+03:00",
+      "author": "torshid",
+      "email": "torshid@gmail.com",
+      "message": "Filter maps in mongo\n"
+    },
+    {
+      "sha": "1f9f675c9dd4fd880568d90d627b447f5662799e",
+      "date": "2026-08-24T17:37:28+03:00",
+      "author": "torshid",
+      "email": "torshid@gmail.com",
+      "message": "Filter maps in mongo\n"
+    },
+    {
+      "sha": "ee52eb508771606f8250e663bf15941bc80a5c9f",
+      "date": "2026-08-23T22:08:13+03:00",
+      "author": "Yusuf",
+      "email": "torshid@gmail.com",
+      "message": "Update dependency versions from 4.0.5 to 4.0.7"
+    },
+    {
+      "sha": "4b4be668d5c801f606c308b2ae73980fef8ac82c",
+      "date": "2026-08-23T22:07:25+03:00",
+      "author": "Yusuf",
+      "email": "torshid@gmail.com",
+      "message": "Merge pull request #522 from turkraft/4.x.x\n\n4.x.x"
+    },
+    {
+      "sha": "c2d085ff3a67b1f4d8e4500089d538fdaad9b539",
+      "date": "2026-08-23T22:06:50+03:00",
+      "author": "torshid",
+      "email": "torshid@gmail.com",
+      "message": "Flapdoodle fix\n"
+    },
+    {
+      "sha": "55a392bc77ebbc7014696874635745e181510994",
+      "date": "2026-08-23T22:06:29+03:00",
+      "author": "torshid",
+      "email": "torshid@gmail.com",
+      "message": "Jackson 3 fixes\n"
+    },
+    {
+      "sha": "95ed2450c7e3ef49926ae2bc36efd065407fed29",
+      "date": "2026-08-23T17:53:35+03:00",
+      "author": "Yusuf",
+      "email": "torshid@gmail.com",
+      "message": "Merge pull request #521 from marcopag90/remove-jackson2\n\nMigrate mongo module from Jackson 2 to Jackson 3"
+    },
+    {
+      "sha": "355d73c39c29b224935fbfae5a3f0f11893985e6",
+      "date": "2026-08-22T23:19:20-04:00",
+      "author": "Marco Pagan",
+      "email": "marcopag90@gmail.com",
+      "message": "Migrate mongo module from Jackson 2 to Jackson 3\n\nThe mongo module was the last one compiling against Jackson 2\n(com.fasterxml.jackson.core:jackson-databind). Move it to Jackson 3\n(tools.jackson.core:jackson-databind, managed by the Spring Boot 4 BOM)\nso that no springfilter module declares or imports Jackson 2 anymore.\n\nChanges:\n- mongo/pom.xml: swap jackson-databind groupId to tools.jackson.core\n- Swap com.fasterxml.jackson.databind.* imports to tools.jackson.databind.*\n  across the transformer, helper, argument resolver and all 22 processors\n- Rename textNode()/asText() to stringNode()/asString() (TextNode is\n  StringNode in Jackson 3, and the old aliases are deprecated)\n- Create value nodes through getNodeFactory() instead of the previous\n  createObjectNode().textNode(...) idiom, which allocated a throwaway\n  ObjectNode per call just to reach the factory method\n- Tests: provide the mapper bean via JsonMapper.builder().build() and drop\n  the try/catch around readTree(), which now throws unchecked\n  JacksonException instead of IOException\n\nThis also fixes a latent DI mismatch: the auto-configured beans injected a\nJackson 2 ObjectMapper, but Spring Boot 4 only auto-configures the Jackson 3\nJsonMapper, so the mongo auto-configuration could not start on a default\nBoot 4 context.\n\nJackson annotations (com.fasterxml.jackson.annotation.*) are intentionally\nuntouched: Jackson 3 keeps using that package. The Jackson 2 jars still\nreachable transitively through springdoc/swagger-core in the example modules\nstay until swagger-core ships a Jackson 3 line.\n"
+    },
+    {
+      "sha": "8187687651b5f835216cb6b400dddccd44f61052",
+      "date": "2026-08-16T04:23:58+03:00",
+      "author": "Yusuf",
+      "email": "torshid@gmail.com",
+      "message": "Merge pull request #520 from turkraft/4.x.x\n\n4.x.x"
+    },
+    {
+      "sha": "6f256ab57e31985bacb0244f86a0c24beadd7732",
+      "date": "2026-08-15T21:23:01+03:00",
+      "author": "torshid",
+      "email": "torshid@gmail.com",
+      "message": "Checks + better auto config for conversion service\n"
+    },
+    {
+      "sha": "a775e5e79c32d7bc5028d1e4780e1078d76e3bef",
+      "date": "2026-08-15T21:03:55+03:00",
+      "author": "torshid",
+      "email": "torshid@gmail.com",
+      "message": "Fix examples + add auto imports\n"
+    },
+    {
+      "sha": "3af9a0474f9dccd937b0c357381120ffc34d957a",
+      "date": "2026-08-12T18:23:22+03:00",
+      "author": "torshid",
+      "email": "torshid@gmail.com",
+      "message": "Auto config\n"
+    }
+  ],
+  "commit_sha": "9dfcaf4b790122d494542e5c3c7f3b67b2dcb3ba",
+  "extracted_at": "2026-10-05T18:03:46.164069+00:00"
+}

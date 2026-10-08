@@ -1,0 +1,24 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "2.1.15.RELEASE",
+  "spring_boot_major": "2",
+  "java_versions_declared": "1.8",
+  "build_evidence": [
+    {
+      "file": "dataloom-server/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "dataloom-server/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "dataloom-server/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "dataloom-server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

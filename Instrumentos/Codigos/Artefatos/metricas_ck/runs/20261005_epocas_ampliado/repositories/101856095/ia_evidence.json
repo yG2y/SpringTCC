@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "4ebad3ba88706a09587d975d3f8e5a3005643a2c",
+      "date": "2026-09-29T09:14:12+01:00",
+      "author": "damongreen123",
+      "email": "damon.green@btinternet.com",
+      "message": "Pin the INfra to 2.9.0 per platops advice (#3531)"
+    },
+    {
+      "sha": "6fc2efd8c3006914475b349c89e62bf2f4926ab2",
+      "date": "2026-09-16T09:39:56+01:00",
+      "author": "Matt Goodwin",
+      "email": "matt.goodwin@solirius.com",
+      "message": "DTSCCI-6459 Enforce new auto-merge schedule out of hours (#3527)"
+    },
+    {
+      "sha": "ca7edeb9d1c6ca198a4cf62ce939194212edabbd",
+      "date": "2026-09-07T16:07:37+01:00",
+      "author": "Matt Goodwin",
+      "email": "matt.goodwin@solirius.com",
+      "message": "DTSCCI-6223 Fix Renovate PRs not auto-merging (#3521)\n\n* DTSCCI-6223 Fix Renovate PRs not auto-merging"
+    },
+    {
+      "sha": "56f0565b690d6edcc9f6490fb801353bdfd54968",
+      "date": "2026-09-07T08:58:04+01:00",
+      "author": "rakeshchiluka14",
+      "email": "59172762+rakeshchiluka14@users.noreply.github.com",
+      "message": "Dtscci 6193 fix cv es (#3522) Bump fortify-client and springdoc to clear runtime CVEs"
+    },
+    {
+      "sha": "bc3cf86ee7b85806eba8a2a4523dee44a8a5904c",
+      "date": "2026-09-03T12:28:52+01:00",
+      "author": "Matt Goodwin",
+      "email": "matt.goodwin@solirius.com",
+      "message": "DTSCCI-6319 Fix dependency security scan failures in cmc-citizen-frontend and cmc-claim-store (#3525)"
+    },
+    {
+      "sha": "e1397a5e4fd52a4435258a9eecb7f1a15517fb2a",
+      "date": "2026-08-24T16:30:33+01:00",
+      "author": "Nigel Dunne",
+      "email": "12184413+nigeldunne@users.noreply.github.com",
+      "message": "Upgrade gradle (#3519)\n\n* Upgrade gradle\n\n* Remove deprecated FileNameFinder\n\n* Remove deprecated testSourceDirs\n\n* useJUnitPlatform()\n\n* Disable failing tests\n\n* update sonarqube\n\n* Fix tests"
+    },
+    {
+      "sha": "e61155bd07076694e8f03ae61e0e97064b051d92",
+      "date": "2026-07-31T15:44:18+01:00",
+      "author": "Sabah u Din Irfan",
+      "email": "sabah.irfan@gmail.com",
+      "message": "DSCCI-6014 Upgrade transitive dependencies to clear suppressed CVEs (#3513)"
+    },
+    {
+      "sha": "fb0bbad00dcbbb450945729e3b789b56c3695c0d",
+      "date": "2026-07-30T11:22:20+01:00",
+      "author": "Sabah u Din Irfan",
+      "email": "sabah.irfan@gmail.com",
+      "message": "DTSCCI-1302: Fix cmc_defendant provider pact verification (#3510)"
+    },
+    {
+      "sha": "eba4737accc33ea06092223da7a488c6404e0a2c",
+      "date": "2026-07-29T10:27:31Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update actions/stale action to v11 (#3508)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "0f5057b34379f6163a759fcd85514cf59616e79b",
+      "date": "2026-07-29T10:01:05+01:00",
+      "author": "Sabah u Din Irfan",
+      "email": "sabah.irfan@gmail.com",
+      "message": "DTSCCI-1301: fix cmc_claimant provider pact verification (#3506)"
+    },
+    {
+      "sha": "47f968f4d237197f36aece115c8501e566da05f5",
+      "date": "2026-06-05T11:51:42Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update guava monorepo to v33 (#3500)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "c56311883c59ae1f99c90d20f9f7445db8a4eabb",
+      "date": "2026-05-25T07:07:20Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency com.github.hmcts:idam-java-client to v4 (#3488)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "ace23025b12ae39e8980b0224f3578ef49b84243",
+      "date": "2026-05-22T14:39:20+01:00",
+      "author": "Ruban",
+      "email": "ruban72@hotmail.com",
+      "message": "DTSCCI-5447: Preserve Bearer prefix when calling auth provider /details (#3496)\n\nAfter PR #3493, S2sAuthFilter still returned 401 on prod callbacks\nbecause extractBearerToken stripped the \"Bearer \" prefix before calling\ngetServiceName(token). The Feign client forwards that string as the\nAuthorization header on GET /details, and rpe-service-auth-provider\nrejected it as \"Invalid authorization header\".\n\nMatch the library's stock ServiceAuthFilter, which always passes a\n\"Bearer <token>\" string to getServiceName(). Prepend \"Bearer \" when\nthe incoming header is missing it.\n\nChart bumped 4.1.60 -> 4.1.61."
+    },
+    {
+      "sha": "c51c2cc2ab817b8f34d4a3ac814d401cb7db1ff9",
+      "date": "2026-05-22T13:21:20Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update versions.restAssuredVersion to v6 (#3495)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "e04e08047369f7d2fd8c62905d73616a492534c0",
+      "date": "2026-05-22T10:35:22+01:00",
+      "author": "Ruban",
+      "email": "ruban72@hotmail.com",
+      "message": "DTSCCI-5447: Hotfix - drop redundant S2S validate() call breaking callbacks in prod (#3493)\n\n* DTSCC-5388: Hotfix - drop redundant validate() call breaking S2S auth\n\nThe custom S2sAuthFilter was calling authTokenValidator.validate(token)\nbefore getServiceName(token). validate(token) (no roles overload) hits\nthe auth provider's /authorisation-check?role= endpoint which no longer\nexists on the Spring Boot 3 rpe-service-auth-provider, returning 404.\n\nCCD callbacks (e.g. /cases/callbacks/about-to-submit) started failing\nwith 401 in prod after IDAM_S2S_AUTH_SERVICES_ALLOWED was set in\nabeb0254e, which activated the previously short-circuited filter path.\n\ngetServiceName(token) already throws InvalidTokenException for invalid\ntokens via the /details endpoint, matching the library's stock\nServiceAuthFilter behaviour.\n\n* DTSCC-5388: Suppress Tomcat 10.1.52 CVEs blocking hotfix\n\nCVE-2026-41293, -43512, -43513, -43515 all fixed in Tomcat 10.1.55.\nSuppress to unblock the S2S callback hotfix; follow-up needed to bump\nSpring Boot (or Tomcat directly) once a release containing 10.1.55 is\navailable."
+    },
+    {
+      "sha": "53e62a91129ee149bdfde82ef5755cbb5f40cb5a",
+      "date": "2026-05-15T11:08:45+01:00",
+      "author": "bharatkumarpatel1",
+      "email": "Bharatkumar.Patel1@HMCTS.NET",
+      "message": "DTSCCI-5370 - added cve Suppression (#3490)"
+    },
+    {
+      "sha": "abeb0254e91eb64a1eaa0684e3ee70c02f3f2b56",
+      "date": "2026-05-15T10:32:16+01:00",
+      "author": "Ruban",
+      "email": "ruban72@hotmail.com",
+      "message": "DTSCC-5388: Fix callback issue (#3487)\n\n* DTSCC-5388: Fix callback issue\n\n* Bumping chart version/ fixing aliases\n\n---------\n\nCo-authored-by: hmcts-jenkins-a-to-c <62422075+hmcts-jenkins-a-to-c[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "d07a8b640fe4710573aee5e36d8df906ee5e8446",
+      "date": "2026-05-13T13:14:32+01:00",
+      "author": "bharatkumarpatel1",
+      "email": "Bharatkumar.Patel1@HMCTS.NET",
+      "message": "DTSCCI-5370 - reverted DTSCII-4008 to fix call back 401 error. (#3484)\n\n* DTSCCI-5370 - reverted to fix call back 401 error."
+    },
+    {
+      "sha": "c70fdd19c3975b9bd981d6ea681b44360fba3308",
+      "date": "2026-03-26T16:28:40Z",
+      "author": "Ruban",
+      "email": "ruban72@hotmail.com",
+      "message": "DTSCC-3095: Fix Payments client issue\n"
+    },
+    {
+      "sha": "a508d297b07938fbde7486d32fd6edca39dfdec1",
+      "date": "2026-03-26T15:59:10Z",
+      "author": "Ruban",
+      "email": "ruban72@hotmail.com",
+      "message": "DTSCC-3095: Fix Payments client issue\n"
+    },
+    {
+      "sha": "40ffb9492c4ec88ee57e89255bc35337d751e8e7",
+      "date": "2026-03-26T14:32:40Z",
+      "author": "Ruban",
+      "email": "ruban72@hotmail.com",
+      "message": "DTSCC-3095: Fix flyway issue 4\n"
+    },
+    {
+      "sha": "431019c61fa64840f9a02bd71e64e65417982309",
+      "date": "2026-03-26T14:06:14Z",
+      "author": "Ruban",
+      "email": "ruban72@hotmail.com",
+      "message": "DTSCC-3095: Fix flyway issue 3\n"
+    },
+    {
+      "sha": "3f2ee1be299d34cef11d005c95e6ee32c59e4078",
+      "date": "2026-03-26T13:31:21Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency com.microsoft.azure:applicationinsights-core to v3 (#3481)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "90db65dff9e96dbc16d3f476b4c8aacc3da1d67c",
+      "date": "2026-03-26T13:27:17Z",
+      "author": "Ruban",
+      "email": "ruban72@hotmail.com",
+      "message": "DTSCC-3095: Fix flyway issue\n"
+    },
+    {
+      "sha": "69fb721c04de0694ff94bbecf9c33ba3f0b5429a",
+      "date": "2026-03-26T11:49:34Z",
+      "author": "Ruban",
+      "email": "ruban72@hotmail.com",
+      "message": "DTSCC-3095: Fix flyway issue\n"
+    },
+    {
+      "sha": "7cdf9eef80594e194c1d6bc4c64024e76aca879e",
+      "date": "2026-03-26T11:25:40Z",
+      "author": "Ruban",
+      "email": "ruban72@hotmail.com",
+      "message": "DTSCC-3095: Fix flyway issue\n"
+    },
+    {
+      "sha": "dcd645d8d376d09dc6cda6362917f299dd5fe027",
+      "date": "2026-03-26T10:26:30Z",
+      "author": "Ruban",
+      "email": "ruban72@hotmail.com",
+      "message": "DTSCC-3095: Fix flyway issue (#3478)\n\n* DTSCC-3095: Fix flyway issue"
+    },
+    {
+      "sha": "e713240e3fc41acdb92f7d0a15931d7252483424",
+      "date": "2026-03-26T09:31:44Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency jakarta.el:jakarta.el-api to v6 (#3476)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "65742daa9891633a11a8776354e40aa6d0e12a3c",
+      "date": "2026-03-26T08:41:30Z",
+      "author": "Ruban",
+      "email": "ruban72@hotmail.com",
+      "message": "DTSCCI-3095: java spring upgrade from master (#3450)\n\n* DTSCC-3095: Java/Spring upgrade\n\n---------\n\nCo-authored-by: hmcts-jenkins-a-to-c <62422075+hmcts-jenkins-a-to-c[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "0eb0e50949626d40831b4d24f4117472299a4410",
+      "date": "2026-03-23T12:43:12Z",
+      "author": "bharatkumarpatel1",
+      "email": "Bharatkumar.Patel1@HMCTS.NET",
+      "message": "DTSCCI-4008 - Removed  \"/cases/callbacks/**\" and   \"/support/**\" from… (#3467)\n\n* DTSCCI-4008 - Removed  \"/cases/callbacks/**\" and   \"/support/**\" from whitelisting"
+    }
+  ],
+  "commit_sha": "4ebad3ba88706a09587d975d3f8e5a3005643a2c",
+  "extracted_at": "2026-10-05T18:20:09.335934+00:00"
+}

@@ -1,0 +1,174 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 23,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "ee9747a76a4a9b2e2f27c311b23e6ff214b8acbf",
+      "date": "2025-09-05T18:28:26+02:00",
+      "author": "Fabrice Yopa",
+      "email": "yopa.f@sfeir.com",
+      "message": "upgrade test reporter to v2.\n"
+    },
+    {
+      "sha": "d3948c02fa136f8e1c17292f651c592d9d40fa60",
+      "date": "2025-09-05T18:23:33+02:00",
+      "author": "Fabrice Yopa",
+      "email": "yopa.f@sfeir.com",
+      "message": "fix HttpError: Request body length does not match content-length header\n"
+    },
+    {
+      "sha": "54909e5ff507b0d166c432feaa6e964ddba3d673",
+      "date": "2025-09-05T16:55:28+02:00",
+      "author": "Fabrice Yopa",
+      "email": "yopa.f@sfeir.com",
+      "message": "switch from google formatter to elipse formatter.\n\nI also created a licence formatter to automatically apply one when spotless apply\n"
+    },
+    {
+      "sha": "1be21a724cb8e6893778f37e298ccb3d3f275a7a",
+      "date": "2025-09-05T13:48:41+02:00",
+      "author": "Fabrice Yopa",
+      "email": "yopa.f@sfeir.com",
+      "message": "refactor test to use abstract class\n"
+    },
+    {
+      "sha": "e5934d90741d2f547566ab088a52143769a23017",
+      "date": "2025-09-01T15:45:31+02:00",
+      "author": "Fabrice Yopa",
+      "email": "yopa.f@sfeir.com",
+      "message": "remove codecov\n"
+    },
+    {
+      "sha": "f36aed597b26e28b11d7c104c4a1d6d3a08d116f",
+      "date": "2025-09-01T15:44:16+02:00",
+      "author": "Fabrice Yopa",
+      "email": "yopa.f@sfeir.com",
+      "message": "remove build status\n"
+    },
+    {
+      "sha": "d6feffd08715e66ca95bc797a171cd9855724345",
+      "date": "2025-08-31T21:58:04+02:00",
+      "author": "Fabrice Yopa",
+      "email": "yopa.f@sfeir.com",
+      "message": "reduce code coverage ratio\n"
+    },
+    {
+      "sha": "5484aa05b334a30df695e866a851d11f2cc1a98f",
+      "date": "2025-08-31T21:50:58+02:00",
+      "author": "Fabrice Yopa",
+      "email": "yopa.f@sfeir.com",
+      "message": "add tests coverage a jacoco\n"
+    },
+    {
+      "sha": "8835fdd4c13db1119508013aaeb8947c29fcb261",
+      "date": "2025-08-31T21:35:29+02:00",
+      "author": "Fabrice Yopa",
+      "email": "yopa.f@sfeir.com",
+      "message": "fix test and entity primary keys\n"
+    },
+    {
+      "sha": "d895dd80a23f4f006090fb24c4ae475e98775b2c",
+      "date": "2025-08-31T21:00:15+02:00",
+      "author": "Fabrice Yopa",
+      "email": "yopa.f@sfeir.com",
+      "message": "add docker compose support\n"
+    },
+    {
+      "sha": "22e9277c8d83a3802e8c2161d65dd8c6b1d44fdf",
+      "date": "2025-08-31T20:39:43+02:00",
+      "author": "Fabrice Yopa",
+      "email": "yopa.f@sfeir.com",
+      "message": "add spotless plugin\n"
+    },
+    {
+      "sha": "7987951193d437ac1a226ea9bf7c5603f526d882",
+      "date": "2025-08-31T20:10:14+02:00",
+      "author": "Fabrice Yopa",
+      "email": "yopa.f@sfeir.com",
+      "message": "add sdkman to follow java version\n"
+    },
+    {
+      "sha": "482a181cd7f37d6fa6564155d74793dba9d64456",
+      "date": "2025-08-31T19:53:22+02:00",
+      "author": "Fabrice Yopa",
+      "email": "yopa.f@sfeir.com",
+      "message": "update github action to java 21\n"
+    },
+    {
+      "sha": "4db7aac0dafc4849969b675ac36485eda3f9a44f",
+      "date": "2025-08-31T19:49:02+02:00",
+      "author": "Fabrice Yopa",
+      "email": "yopa.f@sfeir.com",
+      "message": "upgrade Spring Boot 3.3.3 and java 21\n"
+    },
+    {
+      "sha": "bf6c9939e419dd68e19eb8e33193d8fb05fb5794",
+      "date": "2025-08-31T19:34:23+02:00",
+      "author": "Fabrice Yopa",
+      "email": "fabrice_yopa@yahoo.fr",
+      "message": "cleanup README.md"
+    },
+    {
+      "sha": "7f291555e5e463b393ed2d18ff068ed64a68d20d",
+      "date": "2023-07-21T10:10:36+01:00",
+      "author": "Fabrice Yopa",
+      "email": "fabrice_yopa@yahoo.fr",
+      "message": "skip Tests"
+    },
+    {
+      "sha": "70245b5c5036f20e298c573f9b83726fa6350ed3",
+      "date": "2023-07-21T10:08:55+01:00",
+      "author": "Fabrice Yopa",
+      "email": "fabrice_yopa@yahoo.fr",
+      "message": "Update build.yml"
+    },
+    {
+      "sha": "ba310b2117c3402c5366ff697b1fce31aba5a679",
+      "date": "2023-07-21T10:07:01+01:00",
+      "author": "Fabrice Yopa",
+      "email": "fabrice_yopa@yahoo.fr",
+      "message": "switch to java 1.8"
+    },
+    {
+      "sha": "e48098a9e77ca586d996d79518fd687e9b49c16b",
+      "date": "2023-07-21T10:05:00+01:00",
+      "author": "Fabrice Yopa",
+      "email": "fabrice_yopa@yahoo.fr",
+      "message": "Create build.yml"
+    },
+    {
+      "sha": "8c74da9c082b53386d23e5fd993801c27c46397b",
+      "date": "2023-07-21T10:03:47+01:00",
+      "author": "Fabrice Yopa",
+      "email": "fabrice_yopa@yahoo.fr",
+      "message": "Update pom.xml\n\nadd sonarCloud infos"
+    },
+    {
+      "sha": "a8406924e4e2b18af490663a8fb0f0288c0e0fe1",
+      "date": "2017-12-08T14:57:01+01:00",
+      "author": "Fabrice Yopa",
+      "email": "fabrice_yopa@yahoo.fr",
+      "message": "Fix text\n"
+    },
+    {
+      "sha": "5bb6def34a8cd073fc1b994c2928907230cded18",
+      "date": "2017-12-08T14:55:01+01:00",
+      "author": "Fabrice Yopa",
+      "email": "fabrice_yopa@yahoo.fr",
+      "message": "Fix github markdown\n"
+    },
+    {
+      "sha": "099cb6c4710de1fd6dbc8c90e8c2aa0e28963e7c",
+      "date": "2017-12-08T14:53:02+01:00",
+      "author": "Fabrice Yopa",
+      "email": "fabrice_yopa@yahoo.fr",
+      "message": "Initial commit\n"
+    }
+  ],
+  "commit_sha": "ee9747a76a4a9b2e2f27c311b23e6ff214b8acbf",
+  "extracted_at": "2026-10-05T18:33:29.696610+00:00"
+}

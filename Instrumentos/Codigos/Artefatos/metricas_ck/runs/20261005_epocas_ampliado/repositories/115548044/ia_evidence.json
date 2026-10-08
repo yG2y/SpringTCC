@@ -1,0 +1,230 @@
+{
+  "ia_status": "com_evidencia",
+  "ia_level": 2,
+  "ia_agents": "GitHub Copilot",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [
+    {
+      "agent": "GitHub Copilot",
+      "type": "coauthor",
+      "sha": "21488dc3b5062af69624bc531f25b847a6b2d161",
+      "trailer": "copilot-swe-agent[bot] <198982749+Copilot@users.noreply.github.com>"
+    }
+  ],
+  "commits": [
+    {
+      "sha": "363bee70a2bb5868bae2045e0478b5f1d808662d",
+      "date": "2026-07-09T09:29:12+01:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump io.gatling:gatling-maven-plugin from 4.21.7 to 4.21.8 (#790)\n\nBumps [io.gatling:gatling-maven-plugin](https://github.com/gatling/gatling-maven-plugin) from 4.21.7 to 4.21.8.\n- [Commits](https://github.com/gatling/gatling-maven-plugin/compare/v4.21.7...v4.21.8)\n\n---\nupdated-dependencies:\n- dependency-name: io.gatling:gatling-maven-plugin\n  dependency-version: 4.21.8\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "b2e0b1b37e23dc71456ad8d105a9c54ef904d7a3",
+      "date": "2026-07-09T09:28:45+01:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.pitest:pitest-maven from 1.25.5 to 1.25.6 (#789)\n\nBumps [org.pitest:pitest-maven](https://github.com/hcoles/pitest) from 1.25.5 to 1.25.6.\n- [Release notes](https://github.com/hcoles/pitest/releases)\n- [Commits](https://github.com/hcoles/pitest/compare/1.25.5...1.25.6)\n\n---\nupdated-dependencies:\n- dependency-name: org.pitest:pitest-maven\n  dependency-version: 1.25.6\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "d1b85a632a1398726b5a284c8182ef8ec4302858",
+      "date": "2026-07-09T09:28:13+01:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.springframework.boot:spring-boot-starter-parent (#786)\n\nBumps [org.springframework.boot:spring-boot-starter-parent](https://github.com/spring-projects/spring-boot) from 4.0.7 to 4.1.0.\n- [Release notes](https://github.com/spring-projects/spring-boot/releases)\n- [Commits](https://github.com/spring-projects/spring-boot/compare/v4.0.7...v4.1.0)\n\n---\nupdated-dependencies:\n- dependency-name: org.springframework.boot:spring-boot-starter-parent\n  dependency-version: 4.1.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "f5ffce5da9913aa6aeb1f13c6b4a25490dd74f70",
+      "date": "2026-07-08T21:33:57+01:00",
+      "author": "Aidan Whiteley",
+      "email": "github@aidanwhiteley.com",
+      "message": "Java idomatic code (#792)"
+    },
+    {
+      "sha": "2489217be09b38a8b97ddd3588b58fa2e16ecc53",
+      "date": "2026-07-08T20:40:03+01:00",
+      "author": "Aidan Whiteley",
+      "email": "github@aidanwhiteley.com",
+      "message": "Tidying imports flagged by Sonar\n"
+    },
+    {
+      "sha": "2a6e7457636f279cd62ec137923ea1784c884fb2",
+      "date": "2026-07-08T20:31:37+01:00",
+      "author": "Aidan Whiteley",
+      "email": "github@aidanwhiteley.com",
+      "message": "Chore/sb4 refactorings (#791)\n\n* Refactorings to make use of Spring Boot 4 functionality\n\n* Fix for test cookie reuser issue with 4.1 SB upgrade\n\n* Working through Sonar issues\n\n* Sonar and dependency updates\n\n---------\n\nCo-authored-by: Aidan Whiteley <aidan.whiteley@gmail.com>"
+    },
+    {
+      "sha": "a64874b50c2ba1495240ad5392a8309f991df348",
+      "date": "2026-07-06T21:36:36+01:00",
+      "author": "Aidan Whiteley",
+      "email": "github@aidanwhiteley.com",
+      "message": "Merge branch 'master' into develop"
+    },
+    {
+      "sha": "73a9f0c9481c42dfe8df1ed16d684d6508f30000",
+      "date": "2026-07-06T21:23:45+01:00",
+      "author": "Aidan Whiteley",
+      "email": "github@aidanwhiteley.com",
+      "message": "Added specific error message for Google Books API key and Thymeleaf security fix (#787)"
+    },
+    {
+      "sha": "4676fa9f93ff78fcd9c22cf0ed44a4359eae144c",
+      "date": "2026-06-22T16:20:24+01:00",
+      "author": "Aidan Whiteley",
+      "email": "aidan.whiteley@gmail.com",
+      "message": "Back leveling SB version due to Spring Cloud version mismatch\n"
+    },
+    {
+      "sha": "f3fe0a3e7d147ce37534e5f0bcf732e689b02f48",
+      "date": "2026-06-22T16:15:22+01:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.pitest:pitest-maven from 1.23.1 to 1.25.5 (#785)\n\nBumps [org.pitest:pitest-maven](https://github.com/hcoles/pitest) from 1.23.1 to 1.25.5.\n- [Release notes](https://github.com/hcoles/pitest/releases)\n- [Commits](https://github.com/hcoles/pitest/compare/1.23.1...1.25.5)\n\n---\nupdated-dependencies:\n- dependency-name: org.pitest:pitest-maven\n  dependency-version: 1.25.5\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "23bfadc15efed7950eea7b9ecc6637c949bf6457",
+      "date": "2026-06-22T16:15:03+01:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump io.gatling:gatling-maven-plugin from 4.21.5 to 4.21.7 (#784)\n\nBumps [io.gatling:gatling-maven-plugin](https://github.com/gatling/gatling-maven-plugin) from 4.21.5 to 4.21.7.\n- [Commits](https://github.com/gatling/gatling-maven-plugin/compare/v4.21.5...v4.21.7)\n\n---\nupdated-dependencies:\n- dependency-name: io.gatling:gatling-maven-plugin\n  dependency-version: 4.21.7\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "00322bbfd80f385f2e463c647a22d6a5d8ae7653",
+      "date": "2026-06-22T16:14:45+01:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.springframework.cloud:spring-cloud-dependencies (#783)\n\nBumps [org.springframework.cloud:spring-cloud-dependencies](https://github.com/spring-cloud/spring-cloud-release) from 2025.1.1 to 2025.1.2.\n- [Release notes](https://github.com/spring-cloud/spring-cloud-release/releases)\n- [Commits](https://github.com/spring-cloud/spring-cloud-release/compare/v2025.1.1...v2025.1.2)\n\n---\nupdated-dependencies:\n- dependency-name: org.springframework.cloud:spring-cloud-dependencies\n  dependency-version: 2025.1.2\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "adbb2d81642674634cf690ce2d0d665486243035",
+      "date": "2026-06-22T16:14:24+01:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.springframework.boot:spring-boot-starter-parent (#781)\n\nBumps [org.springframework.boot:spring-boot-starter-parent](https://github.com/spring-projects/spring-boot) from 4.0.5 to 4.1.0.\n- [Release notes](https://github.com/spring-projects/spring-boot/releases)\n- [Commits](https://github.com/spring-projects/spring-boot/compare/v4.0.5...v4.1.0)\n\n---\nupdated-dependencies:\n- dependency-name: org.springframework.boot:spring-boot-starter-parent\n  dependency-version: 4.1.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "f5d365474d4fe2c1636ccc661a1b5f2b19fe8c46",
+      "date": "2026-06-22T16:14:01+01:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.jacoco:jacoco-maven-plugin from 0.8.14 to 0.8.15 (#780)\n\nBumps [org.jacoco:jacoco-maven-plugin](https://github.com/jacoco/jacoco) from 0.8.14 to 0.8.15.\n- [Release notes](https://github.com/jacoco/jacoco/releases)\n- [Commits](https://github.com/jacoco/jacoco/compare/v0.8.14...v0.8.15)\n\n---\nupdated-dependencies:\n- dependency-name: org.jacoco:jacoco-maven-plugin\n  dependency-version: 0.8.15\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "1831a56f30b280c58889af3dac203dd0ebc9bbc1",
+      "date": "2026-06-22T16:13:40+01:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump com.icegreen:greenmail from 2.1.8 to 2.1.9 (#779)\n\nBumps [com.icegreen:greenmail](https://github.com/greenmail-mail-test/greenmail) from 2.1.8 to 2.1.9.\n- [Release notes](https://github.com/greenmail-mail-test/greenmail/releases)\n- [Commits](https://github.com/greenmail-mail-test/greenmail/compare/release-2.1.8...release-2.1.9)\n\n---\nupdated-dependencies:\n- dependency-name: com.icegreen:greenmail\n  dependency-version: 2.1.9\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "762fdeb9c2198617e898e661a8bcd3bd9f2717db",
+      "date": "2026-06-22T16:13:02+01:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.springdoc:springdoc-openapi-starter-webmvc-ui (#773)\n\nBumps [org.springdoc:springdoc-openapi-starter-webmvc-ui](https://github.com/springdoc/springdoc-openapi) from 2.8.14 to 3.0.3.\n- [Release notes](https://github.com/springdoc/springdoc-openapi/releases)\n- [Changelog](https://github.com/springdoc/springdoc-openapi/blob/v3.0.3/CHANGELOG.md)\n- [Commits](https://github.com/springdoc/springdoc-openapi/compare/v2.8.14...v3.0.3)\n\n---\nupdated-dependencies:\n- dependency-name: org.springdoc:springdoc-openapi-starter-webmvc-ui\n  dependency-version: 3.0.3\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "4e556a7856fc58d216f7314464b5d0b5e6c34dbf",
+      "date": "2026-06-15T15:47:35+01:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump io.gatling.highcharts:gatling-charts-highcharts (#778)\n\nBumps [io.gatling.highcharts:gatling-charts-highcharts](https://github.com/gatling/gatling-highcharts) from 3.15.0 to 3.15.1.\n- [Commits](https://github.com/gatling/gatling-highcharts/compare/v3.15.0...v3.15.1)\n\n---\nupdated-dependencies:\n- dependency-name: io.gatling.highcharts:gatling-charts-highcharts\n  dependency-version: 3.15.1\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "2bab9cbdb6294c1ef0a25745b2e7ff8c2934c31c",
+      "date": "2026-06-13T11:38:40+01:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.pitest:pitest-maven from 1.23.0 to 1.23.1 (#775)\n\nBumps [org.pitest:pitest-maven](https://github.com/hcoles/pitest) from 1.23.0 to 1.23.1.\n- [Release notes](https://github.com/hcoles/pitest/releases)\n- [Commits](https://github.com/hcoles/pitest/compare/1.23.0...1.23.1)\n\n---\nupdated-dependencies:\n- dependency-name: org.pitest:pitest-maven\n  dependency-version: 1.23.1\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "92fc1ee237281eed70a004bee85e45c194f73df2",
+      "date": "2026-06-13T11:37:42+01:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.jsoup:jsoup from 1.22.1 to 1.22.2 (#774)\n\nBumps [org.jsoup:jsoup](https://github.com/jhy/jsoup) from 1.22.1 to 1.22.2.\n- [Release notes](https://github.com/jhy/jsoup/releases)\n- [Changelog](https://github.com/jhy/jsoup/blob/master/CHANGES.md)\n- [Commits](https://github.com/jhy/jsoup/compare/jsoup-1.22.1...jsoup-1.22.2)\n\n---\nupdated-dependencies:\n- dependency-name: org.jsoup:jsoup\n  dependency-version: 1.22.2\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "d3c1625660594306f3a30840c1fdd61ba168e101",
+      "date": "2026-06-13T11:36:58+01:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.springframework.boot:spring-boot-starter-parent (#772)\n\nBumps [org.springframework.boot:spring-boot-starter-parent](https://github.com/spring-projects/spring-boot) from 4.0.1 to 4.0.5.\n- [Release notes](https://github.com/spring-projects/spring-boot/releases)\n- [Commits](https://github.com/spring-projects/spring-boot/compare/v4.0.1...v4.0.5)\n\n---\nupdated-dependencies:\n- dependency-name: org.springframework.boot:spring-boot-starter-parent\n  dependency-version: 4.0.5\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "439b23fd7f4da72e99e2686f7e63d1ad7912b9d7",
+      "date": "2026-06-13T11:36:17+01:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump io.gatling:gatling-maven-plugin from 4.20.16 to 4.21.5 (#770)\n\nBumps [io.gatling:gatling-maven-plugin](https://github.com/gatling/gatling-maven-plugin) from 4.20.16 to 4.21.5.\n- [Commits](https://github.com/gatling/gatling-maven-plugin/compare/v4.20.16...v4.21.5)\n\n---\nupdated-dependencies:\n- dependency-name: io.gatling:gatling-maven-plugin\n  dependency-version: 4.21.5\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "e7717b354b677fdce1f98f3a08f265ff982ce322",
+      "date": "2026-06-13T11:35:49+01:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.wiremock.integrations:wiremock-spring-boot from 4.0.9 to 4.2.1 (#766)\n\nBumps [org.wiremock.integrations:wiremock-spring-boot](https://github.com/wiremock/wiremock-spring-boot) from 4.0.9 to 4.2.1.\n- [Release notes](https://github.com/wiremock/wiremock-spring-boot/releases)\n- [Commits](https://github.com/wiremock/wiremock-spring-boot/compare/4.0.9...4.2.1)\n\n---\nupdated-dependencies:\n- dependency-name: org.wiremock.integrations:wiremock-spring-boot\n  dependency-version: 4.2.1\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "16bfcf28386985a0df3021f4a054d0c41256e87b",
+      "date": "2026-06-13T11:35:14+01:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump io.gatling.highcharts:gatling-charts-highcharts (#763)\n\nBumps [io.gatling.highcharts:gatling-charts-highcharts](https://github.com/gatling/gatling-highcharts) from 3.14.9 to 3.15.0.\n- [Commits](https://github.com/gatling/gatling-highcharts/compare/v3.14.9...v3.15.0)\n\n---\nupdated-dependencies:\n- dependency-name: io.gatling.highcharts:gatling-charts-highcharts\n  dependency-version: 3.15.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "e708aac1384c2973eff1f9f60b4ccfbbabbef9c2",
+      "date": "2026-06-13T11:34:39+01:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.springframework.cloud:spring-cloud-dependencies (#758)\n\nBumps [org.springframework.cloud:spring-cloud-dependencies](https://github.com/spring-cloud/spring-cloud-release) from 2025.1.0 to 2025.1.1.\n- [Release notes](https://github.com/spring-cloud/spring-cloud-release/releases)\n- [Commits](https://github.com/spring-cloud/spring-cloud-release/compare/v2025.1.0...v2025.1.1)\n\n---\nupdated-dependencies:\n- dependency-name: org.springframework.cloud:spring-cloud-dependencies\n  dependency-version: 2025.1.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "21488dc3b5062af69624bc531f25b847a6b2d161",
+      "date": "2026-06-11T20:41:38+01:00",
+      "author": "Copilot",
+      "email": "198982749+Copilot@users.noreply.github.com",
+      "message": "Code quality: fix bugs, modernise idioms, remove dead/redundant code (#776)\n\n* chore: initial progress checkpoint before code quality fixes\n\n* Code quality improvements: fix bugs, modernise Java idioms, remove redundant code\n\n* Fix remaining Yoda condition in BookController.findBySearch\n\n---------\n\nCo-authored-by: copilot-swe-agent[bot] <198982749+Copilot@users.noreply.github.com>"
+    },
+    {
+      "sha": "ecc04d8a8eb59fc108220f6c25c4dffd105b0ddd",
+      "date": "2026-06-11T19:14:44+01:00",
+      "author": "Aidan Whiteley",
+      "email": "github@aidanwhiteley.com",
+      "message": "Adding Books API key support (#777)"
+    },
+    {
+      "sha": "ef0ca62f5ddd0d384c659aedd4fc8f1b15d2416d",
+      "date": "2026-04-18T11:59:50+01:00",
+      "author": "Aidan Whiteley",
+      "email": "aidan.whiteley@gmail.com",
+      "message": "Dependency updates\n"
+    },
+    {
+      "sha": "3d58399ecdd32b6dada80a92bf1c0210bb773b2d",
+      "date": "2026-04-14T10:20:21+01:00",
+      "author": "Aidan Whiteley",
+      "email": "aidan.whiteley@gmail.com",
+      "message": "AGENTS.md and sitemap.xml\n"
+    },
+    {
+      "sha": "0557b688309cf077577c24aa9db481196dd1cac0",
+      "date": "2026-02-15T08:49:54Z",
+      "author": "Aidan Whiteley",
+      "email": "aidan.whiteley@gmail.com",
+      "message": "Fix for MongoDb verswion in GitHub Action\n"
+    },
+    {
+      "sha": "bddfc433aa83ef4250428dce1f28579b3508d092",
+      "date": "2026-01-21T18:44:42Z",
+      "author": "Aidan Whiteley",
+      "email": "github@aidanwhiteley.com",
+      "message": "Latest to master (#756)\n\n* Additional not null check\n\n* Feature - add GoodReads format export (#685)\n\n* Initial goodreads export commit\n\n* Adding ISBN details from Google books - part 1\n\n* Basic version of Goodreads export\n\n* First working version of GoodReads format export\n\n---------\n\nCo-authored-by: Aidan Whiteley <aidan.whiteley@gmail.com>\n\n* Code quality fixups (#686)\n\n* Initial goodreads export commit\n\n* Adding ISBN details from Google books - part 1\n\n* Basic version of Goodreads export\n\n* First working version of GoodReads format export\n\n* Pre-dinner commit - working on code quality fix ups\n\n* Code quality fix ups\n\n* Code quality fix ups - part 2\n\n---------\n\nCo-authored-by: Aidan Whiteley <aidan.whiteley@gmail.com>\n\n* Code quality fixups - part 3\n\n* RSS feed link and permalink fix\n\n* Bump com.icegreen:greenmail from 2.1.4 to 2.1.5 (#688)\n\nBumps [com.icegreen:greenmail](https://github.com/greenmail-mail-test/greenmail) from 2.1.4 to 2.1.5.\n- [Release notes](https://github.com/greenmail-mail-test/greenmail/releases)\n- [Commits](https://github.com/greenmail-mail-test/greenmail/compare/release-2.1.4...release-2.1.5)\n\n---\nupdated-dependencies:\n- dependency-name: com.icegreen:greenmail\n  dependency-version: 2.1.5\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\n\n* Bump io.jsonwebtoken:jjwt from 0.12.6 to 0.13.0 (#694)\n\nBumps [io.jsonwebtoken:jjwt](https://github.com/jwtk/jjwt) from 0.12.6 to 0.13.0.\n- [Release notes](https://github.com/jwtk/jjwt/releases)\n- [Changelog](https://github.com/jwtk/jjwt/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/jwtk/jjwt/compare/0.12.6...0.13.0)\n\n---\nupdated-dependencies:\n- dependency-name: io.jsonwebtoken:jjwt\n  dependency-version: 0.13.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\n\n* Bump org.jsoup:jsoup from 1.21.1 to 1.21.2 (#698)\n\nBumps [org.jsoup:jsoup](https://github.com/jhy/jsoup) from 1.21.1 to 1.21.2.\n- [Release notes](https://github.com/jhy/jsoup/releases)\n- [Changelog](https://github.com/jhy/jsoup/blob/master/CHANGES.md)\n- [Commits](https://github.com/jhy/jsoup/compare/jsoup-1.21.1...jsoup-1.21.2)\n\n---\nupdated-dependencies:\n- dependency-name: org.jsoup:jsoup\n  dependency-version: 1.21.2\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\n\n* Bump org.springdoc:springdoc-openapi-starter-webmvc-ui (#701)\n\nBumps [org.springdoc:springdoc-openapi-starter-webmvc-ui](https://github.com/springdoc/springdoc-openapi) from 2.8.9 to 2.8.13.\n- [Release notes](https://github.com/springdoc/springdoc-openapi/releases)\n- [Changelog](https://github.com/springdoc/springdoc-openapi/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/springdoc/springdoc-openapi/compare/v2.8.9...v2.8.13)\n\n---\nupdated-dependencies:\n- dependency-name: org.springdoc:springdoc-openapi-starter-webmvc-ui\n  dependency-version: 2.8.13\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\n\n* Bump org.apache.maven.plugins:maven-surefire-plugin from 3.5.3 to 3.5.4 (#703)\n\nBumps [org.apache.maven.plugins:maven-surefire-plugin](https://github.com/apache/maven-surefire) from 3.5.3 to 3.5.4.\n- [Release notes](https://github.com/apache/maven-surefire/releases)\n- [Commits](https://github.com/apache/maven-surefire/compare/surefire-3.5.3...surefire-3.5.4)\n\n---\nupdated-dependencies:\n- dependency-name: org.apache.maven.plugins:maven-surefire-plugin\n  dependency-version: 3.5.4\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\n\n* Bump org.pitest:pitest-maven from 1.20.0 to 1.20.3 (#705)\n\nBumps [org.pitest:pitest-maven](https://github.com/hcoles/pitest) from 1.20.0 to 1.20.3.\n- [Release notes](https://github.com/hcoles/pitest/releases)\n- [Commits](https://github.com/hcoles/pitest/compare/1.20.0...1.20.3)\n\n---\nupdated-dependencies:\n- dependency-name: org.pitest:pitest-maven\n  dependency-version: 1.20.3\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\n\n* Bump io.gatling:gatling-maven-plugin from 4.20.0 to 4.20.4 (#706)\n\nBumps [io.gatling:gatling-maven-plugin](https://github.com/gatling/gatling-maven-plugin) from 4.20.0 to 4.20.4.\n- [Commits](https://github.com/gatling/gatling-maven-plugin/compare/v4.20.0...v4.20.4)\n\n---\nupdated-dependencies:\n- dependency-name: io.gatling:gatling-maven-plugin\n  dependency-version: 4.20.4\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\n\n* Bump de.codecentric:spring-boot-admin-starter-client from 3.5.0 to 3.5.5 (#708)\n\nBumps [de.codecentric:spring-boot-admin-starter-client](https://github.com/codecentric/spring-boot-admin) from 3.5.0 to 3.5.5.\n- [Release notes](https://github.com/codecentric/spring-boot-admin/releases)\n- [Commits](https://github.com/codecentric/spring-boot-admin/compare/3.5.0...3.5.5)\n\n---\nupdated-dependencies:\n- dependency-name: de.codecentric:spring-boot-admin-starter-client\n  dependency-version: 3.5.5\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\n\n* Bump io.gatling.highcharts:gatling-charts-highcharts (#709)\n\nBumps [io.gatling.highcharts:gatling-charts-highcharts](https://github.com/gatling/gatling-highcharts) from 3.14.3 to 3.14.4.\n- [Commits](https://github.com/gatling/gatling-highcharts/compare/v3.14.3...v3.14.4)\n\n---\nupdated-dependencies:\n- dependency-name: io.gatling.highcharts:gatling-charts-highcharts\n  dependency-version: 3.14.4\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\n\n* Bump org.springframework.boot:spring-boot-starter-parent (#710)\n\nBumps [org.springframework.boot:spring-boot-starter-parent](https://github.com/spring-projects/spring-boot) from 3.5.3 to 3.5.6.\n- [Release notes](https://github.com/spring-projects/spring-boot/releases)\n- [Commits](https://github.com/spring-projects/spring-boot/compare/v3.5.3...v3.5.6)\n\n---\nupdated-dependencies:\n- dependency-name: org.springframework.boot:spring-boot-starter-parent\n  dependency-version: 3.5.6\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\n\n* Back level Spring Boot Admin and docker tag uplift\n\n* Removed console.debug logging\n\n* Remove defer on htmx.js\n\n* Bump org.apache.maven.plugins:maven-compiler-plugin (#711)\n\nBumps [org.apache.maven.plugins:maven-compiler-plugin](https://github.com/apache/maven-compiler-plugin) from 3.14.0 to 3.14.1.\n- [Release notes](https://github.com/apache/maven-compiler-plugin/releases)\n- [Commits](https://github.com/apache/maven-compiler-plugin/compare/maven-compiler-plugin-3.14.0...maven-compiler-plugin-3.14.1)\n\n---\nupdated-dependencies:\n- dependency-name: org.apache.maven.plugins:maven-compiler-plugin\n  dependency-version: 3.14.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\n\n* Bump de.codecentric:spring-boot-admin-starter-client from 3.5.0 to 3.5.5 (#712)\n\nBumps [de.codecentric:spring-boot-admin-starter-client](https://github.com/codecentric/spring-boot-admin) from 3.5.0 to 3.5.5.\n- [Release notes](https://github.com/codecentric/spring-boot-admin/releases)\n- [Commits](https://github.com/codecentric/spring-boot-admin/compare/3.5.0...3.5.5)\n\n---\nupdated-dependencies:\n- dependency-name: de.codecentric:spring-boot-admin-starter-client\n  dependency-version: 3.5.5\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\n\n* Bump org.apache.maven.plugins:maven-dependency-plugin (#717)\n\nBumps [org.apache.maven.plugins:maven-dependency-plugin](https://github.com/apache/maven-dependency-plugin) from 3.8.1 to 3.9.0.\n- [Release notes](https://github.com/apache/maven-dependency-plugin/releases)\n- [Commits](https://github.com/apache/maven-dependency-plugin/compare/maven-dependency-plugin-3.8.1...maven-dependency-plugin-3.9.0)\n\n---\nupdated-dependencies:\n- dependency-name: org.apache.maven.plugins:maven-dependency-plugin\n  dependency-version: 3.9.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\n\n* Bump com.icegreen:greenmail from 2.1.5 to 2.1.7 (#719)\n\nBumps [com.icegreen:greenmail](https://github.com/greenmail-mail-test/greenmail) from 2.1.5 to 2.1.7.\n- [Release notes](https://github.com/greenmail-mail-test/greenmail/releases)\n- [Commits](https://github.com/greenmail-mail-test/greenmail/compare/release-2.1.5...release-2.1.7)\n\n---\nupdated-dependencies:\n- dependency-name: com.icegreen:greenmail\n  dependency-version: 2.1.7\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\n\n* Bump org.jacoco:jacoco-maven-plugin from 0.8.13 to 0.8.14 (#722)\n\nBumps [org.jacoco:jacoco-maven-plugin](https://github.com/jacoco/jacoco) from 0.8.13 to 0.8.14.\n- [Release notes](https://github.com/jacoco/jacoco/releases)\n- [Commits](https://github.com/jacoco/jacoco/compare/v0.8.13...v0.8.14)\n\n---\nupdated-dependencies:\n- dependency-name: org.jacoco:jacoco-maven-plugin\n  dependency-version: 0.8.14\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\n\n* Bump org.pitest:pitest-maven from 1.20.3 to 1.21.0 (#724)\n\nBumps [org.pitest:pitest-maven](https://github.com/hcoles/pitest) from 1.20.3 to 1.21.0.\n- [Release notes](https://github.com/hcoles/pitest/releases)\n- [Commits](https://github.com/hcoles/pitest/compare/1.20.3...1.21.0)\n\n---\nupdated-dependencies:\n- dependency-name: org.pitest:pitest-maven\n  dependency-version: 1.21.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\n\n* Bump io.gatling:gatling-maven-plugin from 4.20.4 to 4.20.8 (#726)\n\nBumps [io.gatling:gatling-maven-plugin](https://github.com/gatling/gatling-maven-plugin) from 4.20.4 to 4.20.8.\n- [Commits](https://github.com/gatling/gatling-maven-plugin/compare/v4.20.4...v4.20.8)\n\n---\nupdated-dependencies:\n- dependency-name: io.gatling:gatling-maven-plugin\n  dependency-version: 4.20.8\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\n\n* Bump org.springframework.boot:spring-boot-starter-parent (#727)\n\nBumps [org.springframework.boot:spring-boot-starter-parent](https://github.com/spring-projects/spring-boot) from 3.5.6 to 3.5.7.\n- [Release notes](https://github.com/spring-projects/spring-boot/releases)\n- [Commits](https://github.com/spring-projects/spring-boot/compare/v3.5.6...v3.5.7)\n\n---\nupdated-dependencies:\n- dependency-name: org.springframework.boot:spring-boot-starter-parent\n  dependency-version: 3.5.7\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\n\n* Bump io.gatling.highcharts:gatling-charts-highcharts (#728)\n\nBumps [io.gatling.highcharts:gatling-charts-highcharts](https://github.com/gatling/gatling-highcharts) from 3.14.4 to 3.14.7.\n- [Commits](https://github.com/gatling/gatling-highcharts/compare/v3.14.4...v3.14.7)\n\n---\nupdated-dependencies:\n- dependency-name: io.gatling.highcharts:gatling-charts-highcharts\n  dependency-version: 3.14.7\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\n\n* Back levelled Sprint Boot Admin due to test dailures\n\n* Added defer back to htms.js load\n\n* Github code scanning fix\n\n* Updated Lighthouse report\n\n* Added Caddy to docker compose to run HTMX pages locally\n\n* mentioned blog post about React to HTMX/Thymeleaf\n\n* Bump com.jayway.jsonpath:json-path from 2.9.0 to 2.10.0 (#730)\n\nBumps [com.jayway.jsonpath:json-path](https://github.com/jayway/JsonPath) from 2.9.0 to 2.10.0.\n- [Release notes](https://github.com/jayway/JsonPath/releases)\n- [Changelog](https://github.com/json-path/JsonPath/blob/master/changelog.md)\n- [Commits](https://github.com/jayway/JsonPath/compare/json-path-2.9.0...json-path-2.10.0)\n\n---\nupdated-dependencies:\n- dependency-name: com.jayway.jsonpath:json-path\n  dependency-version: 2.10.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\n\n* Bump org.pitest:pitest-maven from 1.21.0 to 1.21.1 (#732)\n\nBumps [org.pitest:pitest-maven](https://github.com/hcoles/pitest) from 1.21.0 to 1.21.1.\n- [Release notes](https://github.com/hcoles/pitest/releases)\n- [Commits](https://github.com/hcoles/pitest/compare/1.21.0...1.21.1)\n\n---\nupdated-dependencies:\n- dependency-name: org.pitest:pitest-maven\n  dependency-version: 1.21.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\n\n* Bump org.springdoc:springdoc-openapi-starter-webmvc-ui (#733)\n\nBumps [org.springdoc:springdoc-openapi-starter-webmvc-ui](https://github.com/springdoc/springdoc-openapi) from 2.8.13 to 2.8.14.\n- [Release notes](https://github.com/springdoc/springdoc-openapi/releases)\n- [Changelog](https://github.com/springdoc/springdoc-openapi/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/springdoc/springdoc-openapi/compare/v2.8.13...v2.8.14)\n\n---\nupdated-dependencies:\n- dependency-name: org.springdoc:springdoc-openapi-starter-webmvc-ui\n  dependency-version: 2.8.14\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\n\n* Bump io.gatling.highcharts:gatling-charts-highcharts (#734)\n\nBumps [io.gatling.highcharts:gatling-charts-highcharts](https://github.com/gatling/gatling-highcharts) from 3.14.7 to 3.14.9.\n- [Commits](https://github.com/gatling/gatling-highcharts/compare/v3.14.7...v3.14.9)\n\n---\nupdated-dependencies:\n- dependency-name: io.gatling.highcharts:gatling-charts-highcharts\n  dependency-version: 3.14.9\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\n\n* Work in progress - correcting ISBN updates\n\n* Goodreads, ISBN and TTL index\n\n* Trying to fix Goodreads export/import\n\n* Fixed NPE when book has no images at all\n\n* Sonar fix up\n\n* Removed println and Sonar fixups\n\n* Adding back updates mistakenly pushed to master first\n\n* Working through Sonar complaints\n\n* Bump com.google.cloud.tools:jib-maven-plugin from 3.4.6 to 3.5.1 (#736)\n\nBumps [com.google.cloud.tools:jib-maven-plugin](https://github.com/GoogleContainerTools/jib) from 3.4.6 to 3.5.1.\n- [Release notes](https://github.com/GoogleContainerTools/jib/releases)\n- [Commits](https://github.com/GoogleContainerTools/jib/commits)\n\n---\nupdated-dependencies:\n- dependency-name: com.google.cloud.tools:jib-maven-plugin\n  dependency-version: 3.5.1\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\n\n* Bump org.pitest:pitest-maven from 1.21.1 to 1.22.0 (#737)\n\nBumps [org.pitest:pitest-maven](https://github.com/hcoles/pitest) from 1.21.1 to 1.22.0.\n- [Release notes](https://github.com/hcoles/pitest/releases)\n- [Commits](https://github.com/hcoles/pitest/compare/1.21.1...1.22.0)\n\n---\nupdated-dependencies:\n- dependency-name: org.pitest:pitest-maven\n  dependency-version: 1.22.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\n\n* Bump org.springdoc:springdoc-openapi-starter-webmvc-ui (#738)\n\nBumps [org.springdoc:springdoc-openapi-starter-webmvc-ui](https://github.com/springdoc/springdoc-openapi) from 2.8.14 to 3.0.0.\n- [Release notes](https://github.com/springdoc/springdoc-openapi/releases)\n- [Changelog](https://github.com/springdoc/springdoc-openapi/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/springdoc/springdoc-openapi/compare/v2.8.14...v3.0.0)\n\n---\nupdated-dependencies:\n- dependency-name: org.springdoc:springdoc-openapi-starter-webmvc-ui\n  dependency-version: 3.0.0\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\n\n* Revert \"Bump org.springdoc:springdoc-openapi-starter-webmvc-ui (#738)\" (#750)\n\nThis reverts commit 6be466eced0409037986e048c721a3a2878da146.\n\n* Bump com.icegreen:greenmail from 2.1.7 to 2.1.8 (#743)\n\nBumps [com.icegreen:greenmail](https://github.com/greenmail-mail-test/greenmail) from 2.1.7 to 2.1.8.\n- [Release notes](https://github.com/greenmail-mail-test/greenmail/releases)\n- [Commits](https://github.com/greenmail-mail-test/greenmail/compare/release-2.1.7...release-2.1.8)\n\n---\nupdated-dependencies:\n- dependency-name: com.icegreen:greenmail\n  dependency-version: 2.1.8\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\n\n* Bump io.gatling:gatling-maven-plugin from 4.20.8 to 4.20.16 (#747)\n\nBumps [io.gatling:gatling-maven-plugin](https://github.com/gatling/gatling-maven-plugin) from 4.20.8 to 4.20.16.\n- [Commits](https://github.com/gatling/gatling-maven-plugin/compare/v4.20.8...v4.20.16)\n\n---\nupdated-dependencies:\n- dependency-name: io.gatling:gatling-maven-plugin\n  dependency-version: 4.20.16\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\n\n* Bump org.jsoup:jsoup from 1.21.2 to 1.22.1 (#749)\n\nBumps [org.jsoup:jsoup](https://github.com/jhy/jsoup) from 1.21.2 to 1.22.1.\n- [Release notes](https://github.com/jhy/jsoup/releases)\n- [Changelog](https://github.com/jhy/jsoup/blob/master/CHANGES.md)\n- [Commits](https://github.com/jhy/jsoup/compare/jsoup-1.21.2...jsoup-1.22.1)\n\n---\nupdated-dependencies:\n- dependency-name: org.jsoup:jsoup\n  dependency-version: 1.22.1\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\n\n* Sonar fix ups\n\n* Chore/sb4updates (#752)\n\n* Production code now compiling under Spring Boot 4\n\n* Code and test compiling but not running!!\n\n* All tests passing on SB4 apart from Rome feed\n\n* All tests now passing on Spring Boot 4 - yay!\n\n* Fixes - rss content type, google books preview link, actuator enablement\n\n* Minor JS fixups\n\n---------\n\nCo-authored-by: Aidan Whiteley <aidan.whiteley@gmail.com>\n\n* Sonar fixes and CI env vars exposure\n\n* Bump org.wiremock.integrations:wiremock-spring-boot from 4.0.8 to 4.0.9 (#755)\n\nBumps [org.wiremock.integrations:wiremock-spring-boot](https://github.com/wiremock/wiremock-spring-boot) from 4.0.8 to 4.0.9.\n- [Release notes](https://github.com/wiremock/wiremock-spring-boot/releases)\n- [Commits](https://github.com/wiremock/wiremock-spring-boot/compare/4.0.8...4.0.9)\n\n---\nupdated-dependencies:\n- dependency-name: org.wiremock.integrations:wiremock-spring-boot\n  dependency-version: 4.0.9\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\n\n* New code test coverage gaps flagged by Sonar\n\n* New code test coverage gaps flagged by Sonar\n\n---------\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: Aidan Whiteley <aidan.whiteley@gmail.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    }
+  ],
+  "commit_sha": "363bee70a2bb5868bae2045e0478b5f1d808662d",
+  "extracted_at": "2026-10-05T18:02:52.116755+00:00"
+}

@@ -1,0 +1,64 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${spring-boot.version};2.7.18",
+  "spring_boot_major": "2",
+  "java_versions_declared": "1.8",
+  "build_evidence": [
+    {
+      "file": "cool-jconon-backend/pom.xml",
+      "artifact": "spring-boot-starter-jersey"
+    },
+    {
+      "file": "cool-jconon-backend/pom.xml",
+      "artifact": "spring-boot-starter-tomcat"
+    },
+    {
+      "file": "cool-jconon-backend/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "cool-jconon-backend/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "cool-jconon-backend/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "cool-jconon-io/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "cool-jconon-io/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "cool-jconon-keycloak/pom.xml",
+      "artifact": "spring-boot-starter-oauth2-resource-server"
+    },
+    {
+      "file": "cool-jconon-pagopa/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "cool-jconon-pagopa/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "cool-jconon-spid/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "cool-jconon-webapp/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "cool-jconon-webapp/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot"
+    }
+  ]
+}

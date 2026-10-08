@@ -1,0 +1,84 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "2.3.0.M4;2.4.0-M1",
+  "spring_boot_major": "2",
+  "java_versions_declared": "15",
+  "build_evidence": [
+    {
+      "file": "store-base/store-build-chassis/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "store-base/store-build-chassis/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "store-base/store-build-chassis/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "store-base/store-build-chassis/pom.xml",
+      "artifact": "spring-boot-properties-migrator"
+    },
+    {
+      "file": "store-base/store-build-chassis/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "store-base/store-cloud-chassis/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "store-base/store-cloud-chassis/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "store-base/store-cloud-chassis/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "store-cloud-infra/authorization-server/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "store-cloud-infra/config-server/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "store-cloud-infra/edge-server/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "store-cloud-infra/edge-server/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "store-cloud-infra/eureka-server/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "store-common/store-api/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "store-services/product-service/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb-reactive"
+    },
+    {
+      "file": "store-services/recommendation-service/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb-reactive"
+    },
+    {
+      "file": "store-services/review-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "store-services/review-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "store-services/store-service/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    }
+  ]
+}

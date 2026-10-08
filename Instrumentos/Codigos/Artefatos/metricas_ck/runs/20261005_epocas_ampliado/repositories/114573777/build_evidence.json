@@ -1,0 +1,32 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "3.1.5",
+  "spring_boot_major": "3",
+  "java_versions_declared": "1.8",
+  "build_evidence": [
+    {
+      "file": "SimpleService/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "SimpleService/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "SimpleService/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "SimpleService/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "SimpleService/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "SimpleService/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

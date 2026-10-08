@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "9f62de811d478b3ab6b27438efd58e2c4fdb4c31",
+      "date": "2025-05-16T14:19:38+08:00",
+      "author": "Ray Hao",
+      "email": "1490493387@qq.com",
+      "message": "Merge pull request #126 from JasonYHZ/master\n\n🩹fix(auth): 修复 OAuth2 refresh_token 时反序列化 attributes 字段出错的问题"
+    },
+    {
+      "sha": "794f063eb5fba74082fba3466a1d0b66fff5286c",
+      "date": "2025-05-16T14:15:55+08:00",
+      "author": "JasonYHZ",
+      "email": "coderyu2018@gmail.com",
+      "message": "🩹fix(auth): 修复 OAuth2 refresh_token 时反序列化 attributes 字段出错的问题\n\n该问题出现在使用 MemberDetails 对象作为认证用户详情时，由于未将相关类添加至反序列化白名单，导致在使用 refresh_token 刷新令牌时抛出异常。\n\n修复内容包括：\n- 将 MemberDetails 类添加至反序列化白名单，避免抛出 “MemberDetails is not in the allowlist” 异常。\n- 将 java.util.Collections$EmptySet 添加至白名单，解决 “The class with java.util.Collections$EmptySet is not in the allowlist” 异常。\n\n该修复确保 OAuth2 授权流程中 refresh_token 能够正常工作，避免反序列化失败导致认证中断。\n"
+    },
+    {
+      "sha": "4c44b738f6868518b34cb0cc74441eb8c3f6a1cf",
+      "date": "2024-11-10T21:24:41+08:00",
+      "author": "ray",
+      "email": "1490493387@qq.com",
+      "message": "fix: 优惠券分页列表路径纠正\n"
+    },
+    {
+      "sha": "7fb61fd55a3fefeb334006184cd79be1582e8814",
+      "date": "2024-11-10T12:32:15Z",
+      "author": "郝先瑞",
+      "email": "1490493387@qq.com",
+      "message": "update README.md.\n\nSigned-off-by: 郝先瑞 <1490493387@qq.com>"
+    },
+    {
+      "sha": "ba704245920be66780f56ab6ef4df7042e4cdcfb",
+      "date": "2024-11-10T20:26:18+08:00",
+      "author": "ray",
+      "email": "1490493387@qq.com",
+      "message": "feat: 添加 docker-compose 搭建中间件的脚本\n"
+    },
+    {
+      "sha": "395dfdfd2d4caac21ce820768a0e765bc6bbe462",
+      "date": "2024-10-18T01:34:00Z",
+      "author": "郝先瑞",
+      "email": "1490493387@qq.com",
+      "message": "fix(mall_sms.sql): Update sms_advert table: pic_url → image_url, begin_time → start_time\n\nSigned-off-by: 郝先瑞 <1490493387@qq.com>"
+    },
+    {
+      "sha": "41f6bf04a64de870f04771dc989542c5e613e225",
+      "date": "2024-10-18T01:33:27Z",
+      "author": "郝先瑞",
+      "email": "1490493387@qq.com",
+      "message": "fix(mall_sms.sql): Update sms_advert table: pic_url → image_url, begin_time → start_time\n\nSigned-off-by: 郝先瑞 <1490493387@qq.com>"
+    },
+    {
+      "sha": "a01606e8a16232f9d09b5ea0e1289a965ab2c2da",
+      "date": "2024-08-11T19:23:54+08:00",
+      "author": "Ray.Hao",
+      "email": "1490493387@qq.com",
+      "message": "docs: 文档优化\n"
+    },
+    {
+      "sha": "4d096cf30edff35f6e60db3c1acbdfc510bb454a",
+      "date": "2024-08-11T18:06:15+08:00",
+      "author": "Ray.Hao",
+      "email": "1490493387@qq.com",
+      "message": "docs: 文档更新\n"
+    },
+    {
+      "sha": "8a6800cc88904a1d7e8d601dbe85ac90ca44f499",
+      "date": "2024-08-11T18:03:51+08:00",
+      "author": "Ray.Hao",
+      "email": "1490493387@qq.com",
+      "message": "docs: 文档更新\n"
+    },
+    {
+      "sha": "8424592834d50becb4e21a7067757314a9e10560",
+      "date": "2024-08-11T17:58:35+08:00",
+      "author": "Ray.Hao",
+      "email": "1490493387@qq.com",
+      "message": "docs: 文档更新\n"
+    },
+    {
+      "sha": "744594f43aa50dbbff34fa91c967335a92d52374",
+      "date": "2024-08-11T15:53:41+08:00",
+      "author": "Ray.Hao",
+      "email": "1490493387@qq.com",
+      "message": "docs: 文档更新\n"
+    },
+    {
+      "sha": "0356f1b60e7325ef784c618999fa18a8684eed30",
+      "date": "2024-08-01T18:47:05+08:00",
+      "author": "Ray.Hao",
+      "email": "1490493387@qq.com",
+      "message": "Merge branch 'master' of https://gitee.com/youlaitech/youlai-mall\n"
+    },
+    {
+      "sha": "9bbb67bfc551178e0aebfda38213aa0e05413742",
+      "date": "2024-08-01T18:46:22+08:00",
+      "author": "Ray.Hao",
+      "email": "1490493387@qq.com",
+      "message": "fix: 品牌分页列表前后端路径不一致问题修复\n"
+    },
+    {
+      "sha": "47159475fbd5723e3d2918e1f2a14197b347ebee",
+      "date": "2024-05-15T23:26:50+08:00",
+      "author": "Ray.Hao",
+      "email": "1490493387@qq.com",
+      "message": "fix: 权限校验注解不生效问题修复\n"
+    },
+    {
+      "sha": "622277f35a59ae48dbde0cfae4d846eb6a71abdf",
+      "date": "2024-04-04T00:04:42+08:00",
+      "author": "hxr",
+      "email": "1490493387@qq.com",
+      "message": "Merge branch 'master' of github.com:youlaitech/youlai-mall\n"
+    },
+    {
+      "sha": "e0926e931c9a085fcad663ba144869ebf43b6628",
+      "date": "2024-04-03T22:46:33+08:00",
+      "author": "Ray Hao",
+      "email": "1490493387@qq.com",
+      "message": "Merge pull request #117 from ross-dev2024/master\n\n获取字典类型的数据项API调用 "
+    },
+    {
+      "sha": "f0bbb626ae8711ced9ddc4c3730893e628a7ec69",
+      "date": "2024-03-31T23:56:54+08:00",
+      "author": "hxr",
+      "email": "1490493387@qq.com",
+      "message": "refactor: 购物车重构\n"
+    },
+    {
+      "sha": "21fcd02ed2ee3c4b40a792e86ace7c2052aa69be",
+      "date": "2024-03-28T22:57:02+09:00",
+      "author": "ross-dev",
+      "email": "164890337+ross-dev2024@users.noreply.github.com",
+      "message": "Merge pull request #1 from ross-dev2024/fix/local-dev-sql-script\n\n[fix] 获取字典类型的数据项API getDictOptions"
+    },
+    {
+      "sha": "ad780ee6c8aa7e91fe91cb64a59407188a72744f",
+      "date": "2024-03-28T22:55:59+09:00",
+      "author": "wangjw",
+      "email": "mail@gmail.com",
+      "message": "[fix] 获取字典类型的数据项API getDictOptions\n"
+    },
+    {
+      "sha": "7a31ed3a7b062d00ac95f53e2ba6ad4a85dd3a30",
+      "date": "2024-03-25T22:20:47+08:00",
+      "author": "Ray Hao",
+      "email": "1490493387@qq.com",
+      "message": "Merge pull request #116 from ross-dev2024/fix/local-dev-sql-script\n\n[fix] sql script execution error (oauth2_authorization2)"
+    },
+    {
+      "sha": "56be114a3066b6d89bc297f304ad012b655197d7",
+      "date": "2024-03-25T23:03:19+09:00",
+      "author": "wangjw",
+      "email": "mail@gmail.com",
+      "message": "[fix] sql script execution error (mysql 5.7)\n\nSQL script execution error in mysql 5.7\nInvalid default value for 'authorization_code_issued_at'\n"
+    },
+    {
+      "sha": "a1c68b15dcf4c9936704ef066207eae653e9f352",
+      "date": "2024-03-23T16:21:23+08:00",
+      "author": "hxr",
+      "email": "1490493387@qq.com",
+      "message": "refactor: 优化oauth2授权扩展\n"
+    },
+    {
+      "sha": "09359627a0f1f9aa2f6d95070c021a36dd612efb",
+      "date": "2024-03-23T16:18:47+08:00",
+      "author": "hxr",
+      "email": "1490493387@qq.com",
+      "message": "build(Dockerfile): 更新构建镜像jdk8 → jdk17\n"
+    },
+    {
+      "sha": "888ab6e61e815b92a740f5dbf0c46e9f19104779",
+      "date": "2024-03-23T16:17:48+08:00",
+      "author": "hxr",
+      "email": "1490493387@qq.com",
+      "message": "chore(bootstrap-prod.yml): 更新 prod 环境 nacos 的命名空间\n"
+    },
+    {
+      "sha": "b784dca0212fac6e5adf988ce175969b47c2fc0d",
+      "date": "2024-03-23T15:24:08+08:00",
+      "author": "hxr",
+      "email": "1490493387@qq.com",
+      "message": "chore(pom.xml): 更新项目版本号至 `3.2.1`\n"
+    },
+    {
+      "sha": "aa4ca98a04cee4f4e2d2ef42750c3dd01902b41f",
+      "date": "2024-03-23T15:22:59+08:00",
+      "author": "hxr",
+      "email": "1490493387@qq.com",
+      "message": "chore(oauth2_server.sql): 更细 oauth2 client 的 grant_type\n"
+    },
+    {
+      "sha": "ddcc72b18880409492e159b9910a75d908d24823",
+      "date": "2024-03-13T23:03:05+08:00",
+      "author": "hxr",
+      "email": "1490493387@qq.com",
+      "message": "feat(logback-spring.xml): 日志配置文件补充\n"
+    },
+    {
+      "sha": "572a756d93ed1caf0f3e13654367758d1e7904b9",
+      "date": "2024-03-08T00:13:10+08:00",
+      "author": "hxr",
+      "email": "1490493387@qq.com",
+      "message": "refactor: 日志打印优化\n"
+    },
+    {
+      "sha": "e846a808a52f6a59cdd8ff74dfe4e7694c3333da",
+      "date": "2024-03-08T00:12:35+08:00",
+      "author": "hxr",
+      "email": "1490493387@qq.com",
+      "message": "chore: 移动端自定义授权模式`grant_type`修改\n"
+    }
+  ],
+  "commit_sha": "9f62de811d478b3ab6b27438efd58e2c4fdb4c31",
+  "extracted_at": "2026-10-05T17:55:48.222398+00:00"
+}

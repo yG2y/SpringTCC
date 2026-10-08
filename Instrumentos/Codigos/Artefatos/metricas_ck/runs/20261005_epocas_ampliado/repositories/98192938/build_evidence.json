@@ -1,0 +1,76 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "1.5.4.RELEASE;1.5.6.RELEASE",
+  "spring_boot_major": "1",
+  "java_versions_declared": "1.8",
+  "build_evidence": [
+    {
+      "file": "backend/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "backend/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "backend/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "backend/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "configserver/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "configserver/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "configserver/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "edgeservice/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "edgeservice/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "edgeservice/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "eureka/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "eureka/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "eureka/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "frontend/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "frontend/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "frontend/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "frontend/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

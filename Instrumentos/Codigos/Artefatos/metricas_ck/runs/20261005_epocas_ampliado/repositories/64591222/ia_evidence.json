@@ -1,0 +1,23 @@
+{
+  "ia_status": "com_evidencia",
+  "ia_level": 1,
+  "ia_agents": "Claude Code; Windsurf",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 0,
+  "evidence": [
+    {
+      "agent": "Claude Code",
+      "type": "file",
+      "path": "CLAUDE.md"
+    },
+    {
+      "agent": "Windsurf",
+      "type": "file",
+      "path": ".windsurfrules"
+    }
+  ],
+  "commits": [],
+  "commit_sha": "ce0f98ffa691e42ca7db69b3e4baa99d177bd019",
+  "extracted_at": "2026-10-05T18:14:41.218861+00:00"
+}

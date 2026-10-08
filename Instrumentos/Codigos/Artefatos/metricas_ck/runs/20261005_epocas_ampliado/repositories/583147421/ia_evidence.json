@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "39675fd68d163ebe3cf96ffe9e859b1ffc77383e",
+      "date": "2025-09-03T23:27:45+02:00",
+      "author": "Nándor Holozsnyák",
+      "email": "nandor.holozsnyak@gmail.com",
+      "message": "fix(core): Release process is being fixed (#122)\n\n"
+    },
+    {
+      "sha": "c7ceb76aa10d366c7502bf6bba10d9650b2072da",
+      "date": "2025-08-20T23:22:42+02:00",
+      "author": "Nándor Holozsnyák",
+      "email": "nandor.holozsnyak@gmail.com",
+      "message": "chore(core): Regression test for validating additional-spring-configuration-metadata-javers.json (#119)\n\n"
+    },
+    {
+      "sha": "454d719b68802f18e384d6cef1d3977214451bc9",
+      "date": "2025-08-20T23:07:39+02:00",
+      "author": "Nándor Holozsnyák",
+      "email": "nandor.holozsnyak@gmail.com",
+      "message": "fix(core): Property's type should be nullable (#117)\n\n"
+    },
+    {
+      "sha": "d033b380a401fe9abd50579b7fa9342553224657",
+      "date": "2025-05-09T18:02:21+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump commons-io:commons-io from 2.11.0 to 2.14.0 (#106)\n\nBumps commons-io:commons-io from 2.11.0 to 2.14.0.\n\n---\nupdated-dependencies:\n- dependency-name: commons-io:commons-io\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "54750ada235cf39b7d65d386a734337476cef37d",
+      "date": "2025-05-09T18:01:19+02:00",
+      "author": "Wouter Langerak",
+      "email": "wouter.langerak@gmail.com",
+      "message": "docs: fix service loader file name in template-customization.adoc (#108)\n\n"
+    },
+    {
+      "sha": "b3a9c8d14ce0a17da7c23ca74d255bbaf1b26239",
+      "date": "2024-01-28T17:09:27+01:00",
+      "author": "Nándor Holozsnyák",
+      "email": "nandor.holozsnyak@gmail.com",
+      "message": "fix(core): Propetry 'failOnMissingInput' of type boolean shouldn't be annotated with @Optional. -  #98 (#101)\n\n- @Optional is removed from two boolean properties in the different Gradle tasks\n- Kotlin based example is added"
+    },
+    {
+      "sha": "f0831cb5da50a8ef57729bf56dbdd53b480fd631",
+      "date": "2023-12-03T17:37:43+01:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump ch.qos.logback:logback-classic from 1.2.11 to 1.3.12 (#100)\n\nBumps [ch.qos.logback:logback-classic](https://github.com/qos-ch/logback) from 1.2.11 to 1.3.12.\n- [Commits](https://github.com/qos-ch/logback/compare/v_1.2.11...v_1.3.12)\n\n---\nupdated-dependencies:\n- dependency-name: ch.qos.logback:logback-classic\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "74a930da7ea3056e9bdfd4f8f11f0a188eedfb8d",
+      "date": "2023-12-03T17:37:07+01:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump org.springframework.boot:spring-boot (#99)\n\nBumps [org.springframework.boot:spring-boot](https://github.com/spring-projects/spring-boot) from 2.7.8 to 2.7.18.\n- [Release notes](https://github.com/spring-projects/spring-boot/releases)\n- [Commits](https://github.com/spring-projects/spring-boot/compare/v2.7.8...v2.7.18)\n\n---\nupdated-dependencies:\n- dependency-name: org.springframework.boot:spring-boot\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "02c0d0f7ff7e01f7c7ae13666bdb4116bf10272a",
+      "date": "2023-09-09T16:17:45+02:00",
+      "author": "Nándor Holozsnyák",
+      "email": "nandor.holozsnyak@gmail.com",
+      "message": "fix(core): Replace special characters with a post processing step (#78) (#84)\n\n* fix(core): Replace special characters with a post processing step (#78)\n\n- Markup language related special characters are being replaced\n- toString changes\n- Now some classes are havin NonNull and Nullable annotations\n- Tests passes again.\n\n* fix(core): XSD version is invalid in the templates (#83)\n\n- Using latest XSD version\n\n"
+    },
+    {
+      "sha": "02398e39a147ea585d44852d5955995084d52f25",
+      "date": "2023-09-09T15:42:38+02:00",
+      "author": "Nándor Holozsnyák",
+      "email": "nandor.holozsnyak@gmail.com",
+      "message": "feat(core): Generate an empty file if the input file is missing (#68) (#76)\n\n* feat(core): Generate an empty file if the input file is missing (#68)\n\n- Generate an empty file if the input file is missing\n- Extra documentation about the failOnMissingInput\n- gradle profile is always active\n- pre-commit change\n- latest-version change for release preparation"
+    },
+    {
+      "sha": "41120ac2a76f525ab5872a6c5e5463f1b6012910",
+      "date": "2023-07-23T20:40:35+02:00",
+      "author": "allcontributors[bot]",
+      "email": "46447321+allcontributors[bot]@users.noreply.github.com",
+      "message": "docs: add ParkerM as a contributor for code (#90)\n\n* docs: update CONTRIBUTORS.md [skip ci]\n\n* docs: update .all-contributorsrc [skip ci]\n\n---------\n\nCo-authored-by: allcontributors[bot] <46447321+allcontributors[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "1c3d6ef0a732f0345031c96b92b86980bd66bd19",
+      "date": "2023-07-23T14:37:22-04:00",
+      "author": "Parker Mauney",
+      "email": "parkermauney@gmail.com",
+      "message": "build(plugin): Activate gradle repos by submodule (#89)\n\nThis removes the \"gradle-build\" profile used to add repositories for the\ngradle-plugin submodule, and instead declares the repositories directly.\nThe profile only affects a single independent submodule that will fail\nto build unless the profile is active, so it seems redundant."
+    },
+    {
+      "sha": "b6476568d553394a15e8332a8c257201c56b605a",
+      "date": "2023-07-13T20:46:15+02:00",
+      "author": "Nándor Holozsnyák",
+      "email": "nandor.holozsnyak@gmail.com",
+      "message": "docs(core): Extend README.ADOC with quick usage sections (#85) (#86)\n\n- Readme is extended with a section where the maven plugin usage is presented via a simple terminal call"
+    },
+    {
+      "sha": "cce0c2e1f32e14f34d9e660777fe5257b882ac37",
+      "date": "2023-07-13T18:03:34+02:00",
+      "author": "Nándor Holozsnyák",
+      "email": "nandor.holozsnyak@gmail.com",
+      "message": "feat(core): Add extra localizations (#48) (#77)\n\n- Extra localizations (French,German,Dutch, Romanian, Italian)"
+    },
+    {
+      "sha": "7cc22995d7a3aa15d41a1630c04a28aadf7cb528",
+      "date": "2023-07-12T19:21:10+02:00",
+      "author": "Nándor Holozsnyák",
+      "email": "nandor.holozsnyak@gmail.com",
+      "message": "fix(core): When using @ConfigurationProperties without a prefix  (#79) (#82)\n\n- Properties with groups without name is now properly rendered"
+    },
+    {
+      "sha": "e5a9a8fc3e8f7dcd891adb98b5da2d8acd0b3e8a",
+      "date": "2023-07-06T20:56:17+02:00",
+      "author": "Nándor Holozsnyák",
+      "email": "nandor.holozsnyak@gmail.com",
+      "message": "fix(core): Multiple use of nested configuration results in multiple properties (#71) (#73)\n\n- Multiple nested properties with the same base prefix was being collected under each other, now properties are only being put inside a property group if the properties start with the groups prefix, of course the unknown group is an exception"
+    },
+    {
+      "sha": "ccfb189e1d715715c7e88f16e28e1014a233b803",
+      "date": "2023-05-14T21:10:37+02:00",
+      "author": "Nándor Holozsnyák",
+      "email": "nandor.holozsnyak@gmail.com",
+      "message": "docs(core): Documentation links are broken (#67)\n\n- Documentation links are having different path on GitHub"
+    },
+    {
+      "sha": "bf713976fda96c96cbc6e44e9f021a5952e3f528",
+      "date": "2023-04-16T15:05:10+02:00",
+      "author": "Nándor Holozsnyák",
+      "email": "nandor.holozsnyak@gmail.com",
+      "message": "chore(release): Early-access/SNAPSHOT release configuration #41 (#64)\n\n* chore(release): Early-access/SNAPSHOT release configuration\n\n- Early-access/SNAPSHOT release configuration on master build, except real release.\n"
+    },
+    {
+      "sha": "dafd2d26cb9346f67bdfe1b6c72cbce4974853e1",
+      "date": "2023-04-15T22:40:24+02:00",
+      "author": "Nándor Holozsnyák",
+      "email": "nandor.holozsnyak@gmail.com",
+      "message": "feat(core): Compact mode introduction #59 (#63)\n\n* feat(core): Compact mode\n\n- Compact mode introduction\n- Template rework\n- Test for compact mode documents\n- Compact mode introduction with different templates and easy of extension\n- Template mode is introduced to support the compact mode next to the standard\n- IT tests reworked\n- First IT test for the Maven plugin\n- Maven Wrapper update\n- build profile renamed to gradle-build in gradle module\n- Docs for template mode with examples"
+    },
+    {
+      "sha": "74c4cbaa41b57f51788181d2c6067908ccbffdfb",
+      "date": "2023-04-08T18:52:35+02:00",
+      "author": "Nándor Holozsnyák",
+      "email": "nandor.holozsnyak@gmail.com",
+      "message": "docs(core): Antora introduction (#62)\n\n- Antora introduction and docs rework"
+    },
+    {
+      "sha": "0d97dea95fb1936f2af06c5c7d0d09de6029a85a",
+      "date": "2023-04-02T20:12:56+02:00",
+      "author": "Nándor Holozsnyák",
+      "email": "nandor.holozsnyak@gmail.com",
+      "message": "feat(core)!: Make the headers toggle-able in every template #58 (#60)\n\n- Headers are toggle-able\n- Gradle plugin is having standalone classes for customizations to make sure the core and the plugin are detached from each other\n- Documentation about the toggle feature and breaking changes\n\nBREAKING CHANGE: includeEnvFormat is available in a different way"
+    },
+    {
+      "sha": "18020024efddc6adf54e1376bfcc602a4a6b9b99",
+      "date": "2023-03-27T22:52:22+02:00",
+      "author": "Nándor Holozsnyák",
+      "email": "nandor.holozsnyak@gmail.com",
+      "message": "fix(plugin): Gradle plugin is not working with Gradle 7+\n\n- Missing getters and annotations were added\n"
+    },
+    {
+      "sha": "2a0f83a220b8748080746585a173fa7397ed9deb",
+      "date": "2023-03-27T22:04:11+02:00",
+      "author": "Nándor Holozsnyák",
+      "email": "nandor.holozsnyak@gmail.com",
+      "message": "feat: Gradle plugin implementation (#53)\n\n- Prototype for the single documentation generation\n- Simple documentation task\n- Aggregation task\n- With samples\n- Documentation and changed samples\n- Some typo fixes in the Maven plugin documentation\n- Changes in the CI steps and README.adoc\n\n---------\n\nCo-authored-by: tkhadiradeo <tayeb.khadir@ext.adeo.com>"
+    },
+    {
+      "sha": "5e8ec2241d5e97c76fbab26e21b06152b3eff5da",
+      "date": "2023-03-26T22:06:00+02:00",
+      "author": "allcontributors[bot]",
+      "email": "46447321+allcontributors[bot]@users.noreply.github.com",
+      "message": "docs: add tkhadir as a contributor for code (#54)\n\n* docs: update CONTRIBUTORS.md [skip ci]\n\n* docs: update .all-contributorsrc [skip ci]\n\n---------\n\nCo-authored-by: allcontributors[bot] <46447321+allcontributors[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "3bb6ef5dd13c93196d7e199cd1f7f2b9af7ea93d",
+      "date": "2023-03-26T18:42:56+02:00",
+      "author": "Nándor Holozsnyák",
+      "email": "nandor.holozsnyak@gmail.com",
+      "message": "fix(core): 0.4.0 XSD is not handling properly the properties attribute\n\n- New XSD is introduced to fix the problem\n"
+    },
+    {
+      "sha": "d17a5683763c44659c8af77079c648b6eb83b8fc",
+      "date": "2023-03-26T18:42:03+02:00",
+      "author": "Nándor Holozsnyák",
+      "email": "nandor.holozsnyak@gmail.com",
+      "message": "fix(core): AggregationDocumenter setups properly the exclusion and inclusion lists\n\n- AggregationDocumenter setups properly the exclusion and inclusion lists\n"
+    },
+    {
+      "sha": "574af2f33b576bfee9589341f9e273bd2f8d7091",
+      "date": "2023-03-10T14:18:32+01:00",
+      "author": "Nándor Holozsnyák",
+      "email": "nandor.holozsnyak@gmail.com",
+      "message": "docs: Initial contribution guidelines\n"
+    },
+    {
+      "sha": "332c750d071296755e89d2beca49e6684a8eaf06",
+      "date": "2023-03-04T20:10:01+01:00",
+      "author": "Nándor Holozsnyák",
+      "email": "nandor.holozsnyak@gmail.com",
+      "message": "feat(core): i18n capabilities in the templates (#46) #38\n\n- Localized templates\n- Multiple new template customization option\n- Updated docs and samples"
+    },
+    {
+      "sha": "bb315e4338f1c92351adf8c39587acf54a359f95",
+      "date": "2023-03-04T14:14:05+01:00",
+      "author": "Nándor Holozsnyák",
+      "email": "nandor.holozsnyak@gmail.com",
+      "message": "feat(core): Ability to include/exclude groups and properties from the… (#45)\n\n* feat(core): Ability to include/exclude groups and properties from the final results\n\n- New configuration options to include or exclude groups and properties from the final document\n- Samples are extended\n- Extracted logic for post processing groups and properties"
+    },
+    {
+      "sha": "dbcb66d6a0d205b23733ad66218fe53b835b89c3",
+      "date": "2023-03-03T23:44:23+01:00",
+      "author": "Nándor Holozsnyák",
+      "email": "nandor.holozsnyak@gmail.com",
+      "message": "feat(core): Templates with optional environment variable property format #37 (#43)\n\n* feat(core): Templates with optional environment variable property format\n\n- Downgrading Spring Boot version to make sure the used classes are working on Java 11 too.\n- Using the new `as_env` helper with the help of the `include_env_format` helper\n- Feature is hidden behind a new configuration key that can be used with the maven plugin\n- Generation date can be turned of via a new configuration key\n- New XSD for the XML template\n- IT tests for the generation parts\n- Documentation updates\n- JBang script is not updated with the changes (yet)\n- TemplateData interface implementations now must implement get and set template customization to make sure the Handlebars templates can use the new helpers in the aggregated forms as well.\n- AggregationDocumenterIT introduced\n- Extended NPE check in the IncludeEnvironmentVariableFormatHelper\n- Marking spring-boot dependency in the pom.xml as compile scope\n\n---------\n\nCo-authored-by: allsimon <simon.allegraud@gmail.com>"
+    }
+  ],
+  "commit_sha": "39675fd68d163ebe3cf96ffe9e859b1ffc77383e",
+  "extracted_at": "2026-10-05T18:19:02.655336+00:00"
+}

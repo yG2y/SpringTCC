@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "0fcc910e8c040be0a2a8c2777cada36744eb1bd0",
+      "date": "2024-11-12T12:23:23+07:00",
+      "author": "Aleksandr",
+      "email": "strtmg@gmail.com",
+      "message": "Update tests\n"
+    },
+    {
+      "sha": "b04849cd9bc43d2522d6cfe73ab140a002620405",
+      "date": "2024-09-15T20:41:58+07:00",
+      "author": "Aleksandr",
+      "email": "strtmg@gmail.com",
+      "message": "v3.3.2\n\n- Fix linter notices\n"
+    },
+    {
+      "sha": "f89d556d13cad99a92079b262f2ceba13ab09156",
+      "date": "2024-06-28T22:33:16+07:00",
+      "author": "Aleksandr",
+      "email": "strtmg@gmail.com",
+      "message": "Update infrastructure\n\n- Change PostgreSQL settings\n"
+    },
+    {
+      "sha": "456b67d0e9169e85a5cb1e10a092c2868cb41b6e",
+      "date": "2024-06-27T17:44:00+07:00",
+      "author": "Aleksandr",
+      "email": "strtmg@gmail.com",
+      "message": "3.3.1\n\n- Fix tests\n"
+    },
+    {
+      "sha": "85d4e3260a357ba6b483828e28c38f2c6e4c404d",
+      "date": "2024-06-12T22:24:00+07:00",
+      "author": "Aleksandr",
+      "email": "strtmg@gmail.com",
+      "message": "Fix Makefile\n"
+    },
+    {
+      "sha": "d7812130b4833ae2c52656779f2f6adf9f1e4ee6",
+      "date": "2024-06-11T20:20:12+07:00",
+      "author": "Aleksandr",
+      "email": "strtmg@gmail.com",
+      "message": "Change settings for metrics\n"
+    },
+    {
+      "sha": "412943fc2abbfff2a17c2d7711d7714f7e68d756",
+      "date": "2024-06-11T14:17:45+07:00",
+      "author": "Aleksandr",
+      "email": "strtmg@gmail.com",
+      "message": "Add additional OTLP options\n"
+    },
+    {
+      "sha": "611847281adbabcb8cc44cc1574dd95961770cc8",
+      "date": "2024-06-11T05:08:04+07:00",
+      "author": "Aleksandr",
+      "email": "strtmg@gmail.com",
+      "message": "Update infrastructure (#1)\n\n- Update README.md\n- Use Flyway migrations for DB changes\n- Properly configure tracing with Data Prepper and Opensearch\n- Actualize codebase"
+    },
+    {
+      "sha": "6ae74f1f4f12c5d7b9228e18ffe02db4084ab081",
+      "date": "2024-02-25T17:48:51+07:00",
+      "author": "Aleksandr",
+      "email": "strtmg@gmail.com",
+      "message": "Update infrastructure\n\n- Move to UUID identifiers instead of numeric\n- Use Liquibase for database migrations\n- Refactor docker-compose.yml\n- Add Lombok\n- Add OpenTelemetry Java Agent in repository\n- Remove old unneeded schemas\n"
+    },
+    {
+      "sha": "65d0abe7322eadd0daf2cfa5c0483e0b646c91f2",
+      "date": "2022-12-04T17:24:29+07:00",
+      "author": "Aleksandr",
+      "email": "strtmg@gmail.com",
+      "message": "Reformat code in favor of use 4 spaces\n"
+    },
+    {
+      "sha": "00b275e216a3517fe651218f7c8a97581267e037",
+      "date": "2022-12-04T16:02:54+07:00",
+      "author": "Aleksandr",
+      "email": "strtmg@gmail.com",
+      "message": "Update dependencies\n\n- Move to Spring Boot 3\n- Update ORM mapping for Hibernate 6\n- Correct security configuration for Spring Security 6\n"
+    },
+    {
+      "sha": "7f73e6362e0563fe062abe1830ab6b1d1f81e759",
+      "date": "2022-12-03T23:43:28+07:00",
+      "author": "Aleksandr",
+      "email": "strtmg@gmail.com",
+      "message": "Update dependencies\n"
+    },
+    {
+      "sha": "8cba5a5a400b78925005194179fc4404fde0e2b1",
+      "date": "2022-10-15T12:05:31+07:00",
+      "author": "Aleksandr",
+      "email": "strtmg@gmail.com",
+      "message": "Update dependencies\n"
+    },
+    {
+      "sha": "dc5e7b1db2adc1b0f75084405b3aa4a24a783bd4",
+      "date": "2022-09-25T23:19:48+07:00",
+      "author": "Aleksandr",
+      "email": "strtmg@gmail.com",
+      "message": "Rename webclient folder\n"
+    },
+    {
+      "sha": "6cc6c4eb96939cfd32b7e41ef4a65543bfb37c1c",
+      "date": "2022-03-30T01:52:15+07:00",
+      "author": "Aleksandr",
+      "email": "strtmg@gmail.com",
+      "message": "Add opentelemetry agent and use Zipkin as collector\n"
+    },
+    {
+      "sha": "5e469580687244935e4fd9c948e47e7cf99cb5cf",
+      "date": "2022-02-05T00:02:33+07:00",
+      "author": "Aleksandr",
+      "email": "strtmg@gmail.com",
+      "message": "Rewrite auth more proper Spring Security way\n"
+    },
+    {
+      "sha": "6237637eb5810c383cb81a832bf88e00e8e31c05",
+      "date": "2022-02-03T00:37:26+07:00",
+      "author": "Aleksandr",
+      "email": "strtmg@gmail.com",
+      "message": "Implement login with Google and Facebook\n\n- Describe additional database schemas for used identities\n- Refactor security system\n- Update dependencies in pom.xml\n- Implement OAuth2 login with Google and Facebook\n- Implement storing the data about logged users\n"
+    },
+    {
+      "sha": "982d1cddfa61488473d129e816307c125a64d7f5",
+      "date": "2021-11-24T13:58:58+07:00",
+      "author": "Aleksandr",
+      "email": "strtmg@gmail.com",
+      "message": "Fix database schema\n"
+    },
+    {
+      "sha": "e9dd66d3cd6cd790dd0c7340e1f1b7226168fefb",
+      "date": "2021-11-23T23:03:01+07:00",
+      "author": "Aleksandr",
+      "email": "strtmg@gmail.com",
+      "message": "Update system.properties file\n"
+    },
+    {
+      "sha": "d582f42091c439a23febab9197d2f5b9f6e476ce",
+      "date": "2021-11-23T22:52:21+07:00",
+      "author": "Aleksandr",
+      "email": "strtmg@gmail.com",
+      "message": "Deep refactoring\n\n- Reconsider development infrastructure, fix scripts/configs/etc\n- Switch to Java 17\n- Remove Lombok from project\n- Refactor backend to provide more correct and stable API\n- Rewrite web application from scratch in favor of TypeScript using\n"
+    },
+    {
+      "sha": "e034e50dffdc829ce0d757e251e6e624d3f26690",
+      "date": "2018-11-05T22:53:06+07:00",
+      "author": "alersrt",
+      "email": "strtmg@yandex.ru",
+      "message": "Fix Maven command in Makefile\n"
+    },
+    {
+      "sha": "40f6041e7b8517ed781878a73e94c49908ed34c1",
+      "date": "2018-10-25T01:22:35+07:00",
+      "author": "alersrt",
+      "email": "strtmg@yandex.ru",
+      "message": "Change Procfile for deploying to Heroku\n"
+    },
+    {
+      "sha": "f82684ef8b248b59358731eb2a42aa48c6a756a1",
+      "date": "2018-10-25T01:09:29+07:00",
+      "author": "alersrt",
+      "email": "strtmg@yandex.ru",
+      "message": "Once more trying via moving of password encoder's bean to RootConfig\n"
+    },
+    {
+      "sha": "d7136ac5b590f01123b03660b3c1083515be37f6",
+      "date": "2018-10-25T01:02:05+07:00",
+      "author": "alersrt",
+      "email": "strtmg@yandex.ru",
+      "message": "Try to fix cyclic dependency via user service and security config\n"
+    },
+    {
+      "sha": "797f812aa4281d64472beddf468adf6e65edb7ef",
+      "date": "2018-10-25T00:51:01+07:00",
+      "author": "alersrt",
+      "email": "strtmg@yandex.ru",
+      "message": "Remove REST description from README.md\n"
+    },
+    {
+      "sha": "02856c6d44e206f1556e460df89ba805a69d6664",
+      "date": "2018-10-25T00:43:11+07:00",
+      "author": "alersrt",
+      "email": "strtmg@yandex.ru",
+      "message": "Create default error controller and clear unnecessary mvc configuration\n"
+    },
+    {
+      "sha": "e5f8a1457138bdb02290134194112e476eb75553",
+      "date": "2018-10-24T23:35:12+07:00",
+      "author": "alersrt",
+      "email": "strtmg@yandex.ru",
+      "message": "Add configuration for Springfox Swagger\n"
+    },
+    {
+      "sha": "17143a178721f92b2e054ad42cb3174ada11d663",
+      "date": "2018-10-24T23:30:48+07:00",
+      "author": "alersrt",
+      "email": "strtmg@yandex.ru",
+      "message": "Add Springfox Swagger dependency and update versions of another dependencies\n"
+    },
+    {
+      "sha": "65116629877854f749e626d67fd17f0335e525d8",
+      "date": "2018-09-25T15:07:05+07:00",
+      "author": "alersrt",
+      "email": "strtmg@yandex.ru",
+      "message": "Remove webjars from dependencies\n"
+    },
+    {
+      "sha": "7886d7a229360f6d84b1e2edeeb900558113ac6c",
+      "date": "2018-09-21T09:41:03+07:00",
+      "author": "alersrt",
+      "email": "strtmg@yandex.ru",
+      "message": "Update version to 2.0\n\n- Change database background from MongoDB to PostgreSQL\n- Deep refactoring of backend\n- Full rewriting of webclient with help of React and Redux\n"
+    }
+  ],
+  "commit_sha": "0fcc910e8c040be0a2a8c2777cada36744eb1bd0",
+  "extracted_at": "2026-10-05T18:36:20.325937+00:00"
+}

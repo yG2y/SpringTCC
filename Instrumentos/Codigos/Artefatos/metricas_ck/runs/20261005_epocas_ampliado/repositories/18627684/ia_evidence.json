@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "d1f7afeedd5b17170b3828689e47bbaef1ad1244",
+      "date": "2022-07-23T17:21:48+09:00",
+      "author": "pio",
+      "email": "vhgksl@daum.net",
+      "message": "Add junit for rabbitmq (#377)\n\n* SpringRabbitTest 추가\n* __TypeId__ 헤더 불일치 이슈 JUnit 추가\n\nCo-authored-by: Jang,Pyohwan <pyohwan.jang@navercorp.com>"
+    },
+    {
+      "sha": "43b9a9219a6bd2e1216df6d61ad6b8ae79921d9d",
+      "date": "2022-06-04T22:55:17+09:00",
+      "author": "pio",
+      "email": "vhgksl@daum.net",
+      "message": "db_migration.txt 는 jakduk-wiki 로 옮긴다 (#376)\n\nCo-authored-by: Jang,Pyohwan <pyohwan.jang@navercorp.com>"
+    },
+    {
+      "sha": "36e067226a6a812ba4af067fb3b823e4035c3cbd",
+      "date": "2022-06-04T20:21:47+09:00",
+      "author": "pio",
+      "email": "vhgksl@daum.net",
+      "message": "JUnit 시 Embedded MongoDB 도입 (#375)\n\n* JUnit 시 Embedded MongoDB 도입"
+    },
+    {
+      "sha": "7eb18575cf29e2ab13cb8e2c06d6dd4e7d44f2b3",
+      "date": "2022-04-15T22:35:22+09:00",
+      "author": "pio",
+      "email": "vhgksl@daum.net",
+      "message": "Merge pull request #374 from JakduK/asciidoctor\n\nAsciidoctor 안되는것 고침"
+    },
+    {
+      "sha": "c220f32d86908747fd5aa6eb65ca90cae87b219f",
+      "date": "2022-04-15T22:34:09+09:00",
+      "author": "Jang,Pyohwan",
+      "email": "pyohwan.jang@navercorp.com",
+      "message": "Doc Writer 고침\n"
+    },
+    {
+      "sha": "ffb7be6b9fc34baf54ecdda73b3309dbaee6ff63",
+      "date": "2022-04-15T22:21:52+09:00",
+      "author": "Jang,Pyohwan",
+      "email": "pyohwan.jang@navercorp.com",
+      "message": "asciidoctor 안되는 현상 고침\n"
+    },
+    {
+      "sha": "da02607e19b9e1197fd86f654ea38f41fb67fe14",
+      "date": "2022-04-13T22:23:35+09:00",
+      "author": "Jang,Pyohwan",
+      "email": "pyohwan.jang@navercorp.com",
+      "message": "boot 2.4 에선 org.junit.vintage 가 deprecated 됨\n"
+    },
+    {
+      "sha": "ba145f676a59ea76f9f449041aa31210f2843745",
+      "date": "2022-04-12T23:34:41+09:00",
+      "author": "Jang,Pyohwan",
+      "email": "pyohwan.jang@navercorp.com",
+      "message": "mongodb uri\n"
+    },
+    {
+      "sha": "8f4cce52d5ad0b7deee0de26af1c8b732fb8915f",
+      "date": "2022-04-07T10:04:24+09:00",
+      "author": "pio",
+      "email": "vhgksl@daum.net",
+      "message": "Merge pull request #373 from JakduK/profile_dev\n\ndev profile 정상화"
+    },
+    {
+      "sha": "c5ef211faf9f2b1425cfc3c29947289aa2d8adc4",
+      "date": "2022-04-03T23:41:07+09:00",
+      "author": "Jang,Pyohwan",
+      "email": "pyohwan.jang@navercorp.com",
+      "message": "disable console logging\n"
+    },
+    {
+      "sha": "22b31f63eb0889addc92b0941daf1fc3d9e9d23a",
+      "date": "2022-04-03T23:33:31+09:00",
+      "author": "Jang,Pyohwan",
+      "email": "pyohwan.jang@navercorp.com",
+      "message": "logging.file.name 고침\n"
+    },
+    {
+      "sha": "edf3c18e1dd481cdea7b1782c6471d9ea5fd660e",
+      "date": "2022-04-03T23:06:01+09:00",
+      "author": "Jang,Pyohwan",
+      "email": "pyohwan.jang@navercorp.com",
+      "message": "dev Work Dir 바꿈\n"
+    },
+    {
+      "sha": "550a16cfc2b1acbbfc6388f80285e4705a0e4b5b",
+      "date": "2022-04-03T00:51:40+09:00",
+      "author": "Jang,Pyohwan",
+      "email": "pyohwan.jang@navercorp.com",
+      "message": "dev profile 반영\n"
+    },
+    {
+      "sha": "965edfa835271abf7652130658e45d2a1f285b2e",
+      "date": "2022-03-30T22:31:17+09:00",
+      "author": "pio",
+      "email": "vhgksl@daum.net",
+      "message": "Merge pull request #372 from JakduK/naver_formater\n\nNaver formater 적용"
+    },
+    {
+      "sha": "a1689a65ae5b52276036525731a40c8d7dd092d7",
+      "date": "2022-03-30T22:28:12+09:00",
+      "author": "Jang,Pyohwan",
+      "email": "pyohwan.jang@navercorp.com",
+      "message": "Naver formater 적용\n\n(cherry picked from commit 29f17074ced6c975e203eabe46fe8ed88d798ca5)\n"
+    },
+    {
+      "sha": "bd826358a0a0fd4c586a8080d2f84a7224de5a82",
+      "date": "2022-03-30T22:29:18+09:00",
+      "author": "Jang,Pyohwan",
+      "email": "pyohwan.jang@navercorp.com",
+      "message": "Revert \"Naver formater 적용\"\n\nThis reverts commit 29f17074ced6c975e203eabe46fe8ed88d798ca5.\n"
+    },
+    {
+      "sha": "29f17074ced6c975e203eabe46fe8ed88d798ca5",
+      "date": "2022-03-30T22:28:12+09:00",
+      "author": "Jang,Pyohwan",
+      "email": "pyohwan.jang@navercorp.com",
+      "message": "Naver formater 적용\n"
+    },
+    {
+      "sha": "537f74ab93fe47493da5d4208283d5692c914f0c",
+      "date": "2022-03-30T22:15:39+09:00",
+      "author": "pio",
+      "email": "vhgksl@daum.net",
+      "message": "Merge pull request #371 from JakduK/remove_deprecated\n\nRemove deprecated"
+    },
+    {
+      "sha": "2d44d51ca18efaa6f996bf09f68b6717105d2f23",
+      "date": "2022-03-30T22:14:57+09:00",
+      "author": "Jang,Pyohwan",
+      "email": "pyohwan.jang@navercorp.com",
+      "message": "안쓰는 설정 지움\n"
+    },
+    {
+      "sha": "259d95e22906734a7c2a3b9cf0a26e7d1aefedb7",
+      "date": "2022-03-29T22:45:57+09:00",
+      "author": "Jang,Pyohwan",
+      "email": "pyohwan.jang@navercorp.com",
+      "message": "Deprecated 없앰\n"
+    },
+    {
+      "sha": "5f145201f3ab573c4fb3887234ff9514efa65fd6",
+      "date": "2022-03-29T09:16:01+09:00",
+      "author": "pio",
+      "email": "vhgksl@daum.net",
+      "message": "Merge pull request #370 from JakduK/no-issue/spring-boot-upgrade\n\nNo issue/spring boot upgrade"
+    },
+    {
+      "sha": "0e1aed9adc8197051eadec29770add1afe1e09f1",
+      "date": "2022-03-28T22:35:14+09:00",
+      "author": "Jang,Pyohwan",
+      "email": "pyohwan.jang@navercorp.com",
+      "message": "SpringBoot 2.2.2 to 2.4.13\n"
+    },
+    {
+      "sha": "b7a9de0eb0a984864b3fbfca0ac9a0a55aa3d09e",
+      "date": "2022-03-27T19:15:03+09:00",
+      "author": "Jang,Pyohwan",
+      "email": "pyohwan.jang@navercorp.com",
+      "message": "Merge branch 'master' of https://github.com/JakduK/jakduk-api into no-issue/spring-boot-upgrade\n\n\u0001 Conflicts:\n\u0001\tsrc/main/resources/application-default.yml\n"
+    },
+    {
+      "sha": "fc15e26b46b9f135beeea6891e291c6b179a1daf",
+      "date": "2022-03-19T22:24:10+09:00",
+      "author": "pio",
+      "email": "vhgksl@daum.net",
+      "message": "Merge pull request #368 from JakduK/change_authentication_info\n\nRemote 시스템 계정 정보 바꿈"
+    },
+    {
+      "sha": "524f00416d6c9be99916375efb59392732ba806c",
+      "date": "2022-03-19T20:14:09+09:00",
+      "author": "Jang,Pyohwan",
+      "email": "pyohwan.jang@navercorp.com",
+      "message": "Remote 시스템 계정 정보 바꿈\n"
+    },
+    {
+      "sha": "f0ef2fdbcc9bf13801911cc78544b0b202437535",
+      "date": "2020-01-01T01:18:46+09:00",
+      "author": "Jang,Pyohwan",
+      "email": "phjang1983@daum.net",
+      "message": "#364 Elasticsearch 6.x API 적용 (Tests 코드 수행 안됨)\n"
+    },
+    {
+      "sha": "3593914c52ab6b328f24a2d88956f069cf270e50",
+      "date": "2019-12-27T23:05:00+09:00",
+      "author": "Jang,Pyohwan",
+      "email": "phjang1983@daum.net",
+      "message": "#364 Elasticsearch 6.x 로 변경 (근데 lombok이 안됨)\n"
+    },
+    {
+      "sha": "855f10ea4768349ca665ef20f519dcce3303e375",
+      "date": "2019-12-24T00:37:07+09:00",
+      "author": "Jang,Pyohwan",
+      "email": "phjang1983@daum.net",
+      "message": "#364 SpringBoot 2.2 도입\n"
+    },
+    {
+      "sha": "7786f32ba8272dfb089b35585411f70760aa1ee5",
+      "date": "2019-12-22T00:11:42+09:00",
+      "author": "pio",
+      "email": "phjang1983@daum.net",
+      "message": "Merge pull request #363 from JakduK/issue-357/revoke-to-delete-jsoup\n\n#360 jsoup 복원"
+    },
+    {
+      "sha": "f7364ee23aa078eb13438bc6a6d1d3b8ff5bef85",
+      "date": "2019-12-21T23:49:42+09:00",
+      "author": "Jang,Pyohwan",
+      "email": "phjang1983@daum.net",
+      "message": "#360 jsoup 복원\n"
+    }
+  ],
+  "commit_sha": "d1f7afeedd5b17170b3828689e47bbaef1ad1244",
+  "extracted_at": "2026-10-05T18:15:11.317471+00:00"
+}

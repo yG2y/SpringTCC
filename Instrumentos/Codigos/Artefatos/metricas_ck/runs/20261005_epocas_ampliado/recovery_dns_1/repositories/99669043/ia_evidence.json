@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "ec67942fe7d730886d701758940f354831437c7e",
+      "date": "2022-04-20T23:29:21+08:00",
+      "author": "liuxx",
+      "email": "liuxx-u@outlook.com",
+      "message": "fix bug.\n"
+    },
+    {
+      "sha": "7fa8b22b413d1e111a722d1069fb477d01f49156",
+      "date": "2022-04-05T08:48:33+08:00",
+      "author": "liuxx",
+      "email": "liuxx-u@outlook.com",
+      "message": "optimize.\n"
+    },
+    {
+      "sha": "b0870f325848fe72739112a331bd7d56a7c8f157",
+      "date": "2022-03-11T09:44:24+08:00",
+      "author": "liuxx-u",
+      "email": "liuxx-u@outlook.com",
+      "message": "fix #9\n"
+    },
+    {
+      "sha": "d8d60ed58b84cf819ebc5d83494ce5d4f5a6166f",
+      "date": "2022-03-03T18:10:05+08:00",
+      "author": "liuxx",
+      "email": "liuxx-u@outlook.com",
+      "message": "filter the logic delete data when query grid list.\n"
+    },
+    {
+      "sha": "340dd84d877d027deda8c7f044f76b0aa946c943",
+      "date": "2022-03-03T15:37:29+08:00",
+      "author": "liuxx",
+      "email": "liuxx-u@outlook.com",
+      "message": "ignore the null value when insert by grid.\n"
+    },
+    {
+      "sha": "80c3943d6fea95ebd04d4c3fae29b3b644dfe71c",
+      "date": "2022-02-26T22:32:31+08:00",
+      "author": "liuxx",
+      "email": "liuxx-u@outlook.com",
+      "message": "optimize.\n"
+    },
+    {
+      "sha": "e1d523328fe846271be8a0ecc563cf817ab44b86",
+      "date": "2022-02-26T21:22:21+08:00",
+      "author": "liuxx",
+      "email": "liuxx-u@outlook.com",
+      "message": "optimize.\n"
+    },
+    {
+      "sha": "5afaad65e4c58ef02e75678fb4537bb425225106",
+      "date": "2022-02-26T11:51:00+08:00",
+      "author": "liuxx",
+      "email": "liuxx-u@outlook.com",
+      "message": "optimize.\n"
+    },
+    {
+      "sha": "0952217d9abf295bb79551ee66941c5fc0f759ad",
+      "date": "2022-02-22T21:47:08+08:00",
+      "author": "liuxx",
+      "email": "liuxx-u@outlook.com",
+      "message": "Remove unused listByIds function.\n"
+    },
+    {
+      "sha": "54feb84a6b61b0d5b0a1674b13ee80ca27d89779",
+      "date": "2022-02-20T21:48:41+08:00",
+      "author": "liuxx",
+      "email": "liuxx-u@outlook.com",
+      "message": "Remove trace log for the mybatis.\n"
+    },
+    {
+      "sha": "a8d33891338ac7ab21546ff82c9efa9376fc607b",
+      "date": "2022-02-20T21:11:20+08:00",
+      "author": "liuxx",
+      "email": "liuxx-u@outlook.com",
+      "message": "createAt -> createdAt\n"
+    },
+    {
+      "sha": "03745a91bd7470244f5dcdc545d913c65631e193",
+      "date": "2022-01-22T12:39:40+08:00",
+      "author": "liuxx-u",
+      "email": "liuxx-u@outlook.com",
+      "message": "refactor service-support module.\n"
+    },
+    {
+      "sha": "be4dedca70d2c144945608c952032dfa1588df5c",
+      "date": "2022-01-22T11:36:53+08:00",
+      "author": "liuxx-u",
+      "email": "liuxx-u@outlook.com",
+      "message": "optimize the default config of redis lock.\n"
+    },
+    {
+      "sha": "9eea81955d6f9359712e5f80a1a902008caddb6e",
+      "date": "2022-01-22T11:21:14+08:00",
+      "author": "liuxx-u",
+      "email": "liuxx-u@outlook.com",
+      "message": "add tag to the trace log.\n"
+    },
+    {
+      "sha": "372a7b027b83badb2539641694bf5710c95fca42",
+      "date": "2021-11-15T15:01:46+08:00",
+      "author": "liuxx-u",
+      "email": "liuxx-u@outlook.com",
+      "message": "change the default configuration for the DistributedLock\n"
+    },
+    {
+      "sha": "08f446ce4d1190ab40899b9d12f5220bf2da944a",
+      "date": "2021-11-15T12:33:38+08:00",
+      "author": "liuxx-u",
+      "email": "liuxx-u@outlook.com",
+      "message": "fix bug and use lua script set expiration time for lock key\n"
+    },
+    {
+      "sha": "605bda21fa81f871c49ef83930f003e9aaa4700b",
+      "date": "2021-11-12T17:05:25+08:00",
+      "author": "liuxx-u",
+      "email": "liuxx-u@outlook.com",
+      "message": "reformat code\n"
+    },
+    {
+      "sha": "03bc9bf7337dda12ed05f1ed33d70872c59565e3",
+      "date": "2021-11-12T17:04:37+08:00",
+      "author": "liuxx-u",
+      "email": "liuxx-u@outlook.com",
+      "message": "add watch dog for redis lock\n"
+    },
+    {
+      "sha": "aec5247c24cffca6678696f141d3fd2c79ca3bbd",
+      "date": "2021-11-11T15:54:30+08:00",
+      "author": "liuxx-u",
+      "email": "liuxx-u@outlook.com",
+      "message": "optimize RedisLockAutoConfiguration\n"
+    },
+    {
+      "sha": "518fe5a35bf1348515830c9eb622b4bd7b42e927",
+      "date": "2021-11-08T11:44:00+08:00",
+      "author": "liuxx-u",
+      "email": "liuxx-u@outlook.com",
+      "message": "optimize\n"
+    },
+    {
+      "sha": "40ac510f6833c3c335e84ea33721cf7936790568",
+      "date": "2021-11-05T18:30:30+08:00",
+      "author": "liuxx-u",
+      "email": "liuxx-u@outlook.com",
+      "message": "use lua script to release redis lock.\n"
+    },
+    {
+      "sha": "828ed866b80a2796592d17b2db2cd0067035e5ca",
+      "date": "2021-10-18T18:03:45+08:00",
+      "author": "liuxx-u",
+      "email": "liuxx-u@outlook.com",
+      "message": "2.1.0-SNAPSHOT\n"
+    },
+    {
+      "sha": "418745d87c96546e9203057c3e39eae1e5b183d4",
+      "date": "2021-10-18T14:54:50+08:00",
+      "author": "liuxx-u",
+      "email": "liuxx-u@outlook.com",
+      "message": "2.1.0-SNAPSHOT\n"
+    },
+    {
+      "sha": "739480b34ed30ba49e8f9ac4dd6f57522defba16",
+      "date": "2021-08-20T13:53:49+08:00",
+      "author": "liuxx",
+      "email": "liuxx-u@outlook.com",
+      "message": "Merge pull request #8 from liuxx-u/dependabot/maven/bird-web-sso/bird-web-sso-core/org.apache.httpcomponents-httpclient-4.5.13\n\nBump httpclient from 4.5.6 to 4.5.13 in /bird-web-sso/bird-web-sso-core"
+    },
+    {
+      "sha": "6ed64a6771d2fd4737d3eb7b930eacb31220c24e",
+      "date": "2021-06-04T02:44:21Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump httpclient from 4.5.6 to 4.5.13 in /bird-web-sso/bird-web-sso-core\n\nBumps httpclient from 4.5.6 to 4.5.13.\n\n---\nupdated-dependencies:\n- dependency-name: org.apache.httpcomponents:httpclient\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "5db3965cf4b867feb6044adcf4d895ccad4bd7de",
+      "date": "2021-05-17T17:20:27+08:00",
+      "author": "liuxx-u",
+      "email": "liuxx-u@outlook.com",
+      "message": "update README.md\n"
+    },
+    {
+      "sha": "4927f2d5d05f2d471b779e1af28971e843ac5f77",
+      "date": "2021-05-12T16:30:55+08:00",
+      "author": "liuxx-u",
+      "email": "liuxx-u@outlook.com",
+      "message": "update README.md\n"
+    },
+    {
+      "sha": "a8b70833ccf8ea7d79652439447df9af519ec9a0",
+      "date": "2021-05-12T15:43:53+08:00",
+      "author": "liuxx-u",
+      "email": "liuxx-u@outlook.com",
+      "message": "support StateHandler annotation\n"
+    },
+    {
+      "sha": "9824842fcc94af1e587097e2ceeb2c6e721f310d",
+      "date": "2021-05-12T14:55:13+08:00",
+      "author": "liuxx-u",
+      "email": "liuxx-u@outlook.com",
+      "message": "String is replaced with `State`\n"
+    },
+    {
+      "sha": "08c62fdeff757540339bf5919e8d42fa78d7da80",
+      "date": "2021-05-11T16:47:58+08:00",
+      "author": "liuxx-u",
+      "email": "liuxx-u@outlook.com",
+      "message": "adjust event name\n"
+    }
+  ],
+  "commit_sha": "ec67942fe7d730886d701758940f354831437c7e",
+  "extracted_at": "2026-10-05T18:31:05.726806+00:00"
+}

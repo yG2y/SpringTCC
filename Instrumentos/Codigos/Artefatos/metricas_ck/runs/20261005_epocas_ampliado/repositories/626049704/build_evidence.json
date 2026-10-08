@@ -1,0 +1,16 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "3.3.5",
+  "spring_boot_major": "3",
+  "java_versions_declared": "1.8;17",
+  "build_evidence": [
+    {
+      "file": "examples/check-pwd-policy/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "examples/management-cli/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

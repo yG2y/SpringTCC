@@ -1,0 +1,60 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${spring-boot.version};4.0.6",
+  "spring_boot_major": "4",
+  "java_versions_declared": "1.8;17;21;8",
+  "build_evidence": [
+    {
+      "file": "hofund-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "hofund-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "hofund-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-actuator-autoconfigure"
+    },
+    {
+      "file": "hofund-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-micrometer-metrics"
+    },
+    {
+      "file": "hofund-spring-boot-e2e/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "hofund-spring-boot-e2e/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "hofund-spring-boot-e2e/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "hofund-spring-boot-e2e/pom.xml",
+      "artifact": "spring-boot-starter-restclient-test"
+    },
+    {
+      "file": "hofund-spring-boot-e2e/pom.xml",
+      "artifact": "spring-boot-starter-actuator-test"
+    },
+    {
+      "file": "hofund-spring-boot-e2e/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "hofund-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "hofund-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-dependencies"
+    }
+  ]
+}

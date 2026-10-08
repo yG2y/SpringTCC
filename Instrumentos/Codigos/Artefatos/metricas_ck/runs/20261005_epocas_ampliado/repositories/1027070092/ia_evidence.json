@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "24e3dc64b50c579a32fcbb220a6aeb314b8ad7d5",
+      "date": "2026-07-28T15:58:19+08:00",
+      "author": "稚名不带撇",
+      "email": "3566983494@qq.com",
+      "message": "Merge pull request #293 from zmbdp/develop\n\nDevelop"
+    },
+    {
+      "sha": "7511e6967084a6d598abf9f84a8b5091be201123",
+      "date": "2026-07-28T15:57:40+08:00",
+      "author": "稚名不带撇",
+      "email": "3566983494@qq.com",
+      "message": "Merge pull request #292 from zmbdp/feature/zmbdp_base\n\nrefactor(config): 调整spring ansi输出配置位置"
+    },
+    {
+      "sha": "88c38a90c0549a96f6ecbab06288ea09d16ea2e3",
+      "date": "2026-07-28T15:36:16+08:00",
+      "author": "稚名不带撇",
+      "email": "3566983494@qq.com",
+      "message": "refactor(config): 调整spring ansi输出配置位置\n\n- 将spring output ansi enabled配置从各服务bootstrap.yml中移除\n- 统一添加spring output ansi enabled配置到多个环境共享的yaml文件中\n- 清理各服务配置文件，简化配置结构\n- 保持操作日志配置及应用名配置不变\n"
+    },
+    {
+      "sha": "03a800772bd8afee7706f3c7a3b9bc1f8f3efc54",
+      "date": "2026-07-28T15:30:44+08:00",
+      "author": "稚名不带撇",
+      "email": "3566983494@qq.com",
+      "message": "Merge pull request #291 from zmbdp/develop\n\nDevelop"
+    },
+    {
+      "sha": "c181f698df88c91b57e7517df2ea73acd474446a",
+      "date": "2026-07-28T15:29:26+08:00",
+      "author": "稚名不带撇",
+      "email": "3566983494@qq.com",
+      "message": "Merge pull request #290 from zmbdp/feature/zmbdp_base\n\nrefactor(message): 统一验证码发送开关配置及变量命名"
+    },
+    {
+      "sha": "bb28a2f235f7be0c5a31c39b0f66b0cdf7b972ed",
+      "date": "2026-07-28T13:45:37+08:00",
+      "author": "稚名不带撇",
+      "email": "3566983494@qq.com",
+      "message": "refactor(message): 统一验证码发送开关配置及变量命名\n\n- 将验证码随机开关配置由 captcha.send-message 修改为 captcha.random.enabled\n- 统一短信发送开关变量命名为 sendSmsMessage，配置保持 sms.send-message\n- 统一邮件发送开关变量命名为 sendMailMessage，配置保持 mail.send-message\n- 调整验证码发送逻辑，移除旧的 sendMessage 条件判断\n- 优化 AliSmsServiceStrategy 和 EmailCodeServiceStrategy 中发送开关判断逻辑和日志输出\n"
+    },
+    {
+      "sha": "7e038b164240b79d5df7906130fb6bb89f10ce90",
+      "date": "2026-07-28T13:11:42+08:00",
+      "author": "稚名不带撇",
+      "email": "3566983494@qq.com",
+      "message": "Merge pull request #289 from zmbdp/develop\n\nDevelop"
+    },
+    {
+      "sha": "553bb71f1c08df78f9aa4ccbb74b33f48297e257",
+      "date": "2026-07-28T13:11:07+08:00",
+      "author": "稚名不带撇",
+      "email": "3566983494@qq.com",
+      "message": "Merge pull request #288 from zmbdp/feature/zmbdp_base\n\nchore(config): 更新验证码邮件配置及启用随机验证码发送"
+    },
+    {
+      "sha": "803034eca9a6ceef0ea081558901cbc8db1614da",
+      "date": "2026-07-28T12:34:48+08:00",
+      "author": "稚名不带撇",
+      "email": "3566983494@qq.com",
+      "message": "chore(config): 更新验证码邮件配置及启用随机验证码发送\n\n- 在多个环境配置文件中添加 send-message 字段以开启随机验证码发送\n- 移除 captcha.sender.type 中的邮件发送类型配置\n- 更新邮件标题列表，新增更具表达力的安全验证码通知标题\n- 邮件内容模板改用支持 HTML 格式的多样化模板，增强用户体验\n- 各环境代码保持一致，统一验证码相关配置项\n"
+    },
+    {
+      "sha": "9f4f051793a3307b4966365a0af8cb745dcc57b8",
+      "date": "2026-07-21T02:16:08+08:00",
+      "author": "稚名不带撇",
+      "email": "3566983494@qq.com",
+      "message": "Merge pull request #287 from zmbdp/develop\n\nDevelop"
+    },
+    {
+      "sha": "f8b853bb8349b933b6d81f6e84ff0f61fc4fbbbe",
+      "date": "2026-07-21T02:15:33+08:00",
+      "author": "稚名不带撇",
+      "email": "3566983494@qq.com",
+      "message": "Merge pull request #286 from zmbdp/feature/zmbdp_base\n\nchore(docs): 更新Javadoc完善序列化版本号说明"
+    },
+    {
+      "sha": "9703276dd6c39e2bb0aa36731c0526c85f6344ac",
+      "date": "2026-07-21T02:14:25+08:00",
+      "author": "稚名不带撇",
+      "email": "3566983494@qq.com",
+      "message": "chore(docs): 更新Javadoc完善序列化版本号说明\n\n- 在多个DTO和VO类的serialVersionUID字段添加了“序列化版本号”说明\n- 涉及的包包括appuser和config模块中的domain.dto、domain.vo及feign包\n"
+    },
+    {
+      "sha": "fb2f467fcf584fa263f7b8c849f994a204dbfecb",
+      "date": "2026-07-21T02:06:39+08:00",
+      "author": "稚名不带撇",
+      "email": "3566983494@qq.com",
+      "message": "Merge pull request #285 from zmbdp/develop\n\nDevelop"
+    },
+    {
+      "sha": "fe72611285b70f7261758c2f025658a12f5c02ed",
+      "date": "2026-07-21T02:06:01+08:00",
+      "author": "稚名不带撇",
+      "email": "3566983494@qq.com",
+      "message": "Merge pull request #284 from zmbdp/feature/zmbdp_base\n\ndocs(readme): 更新一键式环境部署及功能描述"
+    },
+    {
+      "sha": "314c796aacba01a9db121c90cc850ad9c91a430d",
+      "date": "2026-07-21T02:04:44+08:00",
+      "author": "稚名不带撇",
+      "email": "3566983494@qq.com",
+      "message": "docs(readme): 更新一键式环境部署及功能描述\n\n- 增加 AlertManager 和 XXL-JOB Admin 中间件支持\n- 删除“5 分钟”时间描述，优化环境搭建表达\n- 修改三级缓存描述，突出降低数据库压力\n- 调整快速开发描述，去除具体时间限制\n- 更新相关服务监控和告警测试链接说明\n"
+    },
+    {
+      "sha": "823f9b43772dddb371ff94391544f0a74785223b",
+      "date": "2026-07-21T00:58:47+08:00",
+      "author": "稚名不带撇",
+      "email": "3566983494@qq.com",
+      "message": "Merge pull request #283 from zmbdp/develop\n\nDevelop"
+    },
+    {
+      "sha": "2143f6fa19e29f3273779fb8cf2a09b9194f1443",
+      "date": "2026-07-21T00:58:11+08:00",
+      "author": "稚名不带撇",
+      "email": "3566983494@qq.com",
+      "message": "Merge pull request #282 from zmbdp/feature/zmbdp_base\n\nchore(deploy): 统一修改环境部署配置与文档内容"
+    },
+    {
+      "sha": "62ba4903f3f43aab0098f3c2bbb86667c5190d15",
+      "date": "2026-07-21T00:56:16+08:00",
+      "author": "稚名不带撇",
+      "email": "3566983494@qq.com",
+      "message": "chore(deploy): 统一修改环境部署配置与文档内容\n\n- 将所有环境 docker-compose 中 nginx 镜像替换为私有仓库镜像\n- 统一调整文档中 `frameworkJava` 命名规范为 `FrameworkJava` 或小写 `frameworkjava`\n- 更新所有环境的 Docker 容器名及服务名为统一小写命名风格\n- 降级业务服务基础镜像至 eclipse-temurin:17-jre 并切换为私有仓库镜像\n- 规范 SQL 脚本目录与数据库命名，统一为小写格式\n- 优化日志配置文档，补充数据库存储示例及配置说明\n- 修正网关配置命名空间及服务相关参数\n- 修正 README 和部署文档中的命令行示例及网络命名\n- 清理与调整多处配置注释及排版，提升统一性与可读性\n"
+    },
+    {
+      "sha": "3d4c931557020a036c0629ab9add70a9d02fde22",
+      "date": "2026-07-21T00:07:49+08:00",
+      "author": "稚名不带撇",
+      "email": "3566983494@qq.com",
+      "message": "Merge pull request #281 from zmbdp/develop\n\nDevelop"
+    },
+    {
+      "sha": "c7d99e38c8081ee60c2069d34afae65a4b641d66",
+      "date": "2026-07-21T00:07:01+08:00",
+      "author": "稚名不带撇",
+      "email": "3566983494@qq.com",
+      "message": "Merge pull request #280 from zmbdp/feature/zmbdp_base\n\ndocs(serializable): 为多个 DTO 和 VO 类添加序列化版本号"
+    },
+    {
+      "sha": "5b749d73c994c38988dd83a32eaab6d015cdd405",
+      "date": "2026-07-20T23:14:03+08:00",
+      "author": "稚名不带撇",
+      "email": "3566983494@qq.com",
+      "message": "docs(serializable): 为多个 DTO 和 VO 类添加序列化版本号\n\n- 为 AppUserDTO、AppUserListReqDTO、UserEditReqDTO、AppUserVO、PasswordLoginDTO、SysUserListReqDTO、SysUserVO、BaseEntity、LoginUserVO、TreeNode、LogTestDTO、User 等类新增 serialVersionUID 字段\n- 规范代码注释，说明序列化版本号的作用\n\ndocs(javadoc): 补充接口和方法的异常抛出说明\n\n- 为 SysDictionaryServiceImpl、SysSysArgumentServiceImpl、QQMapServiceImpl、AppUserController、AppUserServiceImpl、SysUserServiceImpl、BasePageDTO、OSSAutoConfiguration、OSSFileServiceImpl 等类的方法补充 ServiceException 和其他异常的抛出 javadoc说明\n- 统一异常文档注释格式，增加异常场景描述\n\ndocs(logging): 完善日志工具和日志测试示例的注释\n\n- 为 LogExceptionUtil 添加私有构造函数注释和 getStackTrace 方法详细说明\n- 丰富 mstemplate 服务中 TestLogServiceImpl 的日志测试方法注释，涵盖参数记录、\n  返回值记录、异常记录、条件记录、表达式支持、敏感字段脱敏、模块业务分类、void 返回值的日志记录示例\n- 增加 RabbitMQ 消费者和生产者类中方法的参数和异常说明注释\n- 补充幂等性和限流测试接口的参数和返回值说明文档注释\n\nstyle(permissions): 优化 TestOrderMapper 数据权限注释\n\n- 增加所有查询方法的注释，说明数据权限类型和查询范围\n- 详细描述每个方法对应的数据权限过滤含义及参数用途\n- 确保接口文档完整，便于理解和维护\n"
+    },
+    {
+      "sha": "6e002aa43b5cef85e3e1b5d3b259c801bbe06699",
+      "date": "2026-07-20T20:54:22+08:00",
+      "author": "稚名不带撇",
+      "email": "3566983494@qq.com",
+      "message": "Merge pull request #279 from zmbdp/develop\n\nDevelop"
+    },
+    {
+      "sha": "e64e8f2db80aef0337ee678844105ea72cbfddd6",
+      "date": "2026-07-20T20:53:52+08:00",
+      "author": "稚名不带撇",
+      "email": "3566983494@qq.com",
+      "message": "Merge pull request #278 from zmbdp/feature/zmbdp_base\n\nrefactor(sql): 统一添加审计字段并优化MySQL表结构"
+    },
+    {
+      "sha": "e29caf25874c5d184452ef7561135e6011f763ff",
+      "date": "2026-07-20T02:30:05+08:00",
+      "author": "稚名不带撇",
+      "email": "3566983494@qq.com",
+      "message": "refactor(sql): 统一添加审计字段并优化MySQL表结构\n\n- 为测试订单表、行政区划表、系统参数表、字典类型表、字典数据表、应用端人员表和管理端人员表添加创建人和修改人ID字段\n- 为上述表添加创建时间和修改时间字段，替换旧的时间字段定义\n- 增加相关索引以优化基于创建时间和创建人的查询性能\n- 统一调整MySQL字段类型为大写格式，增强代码规范性\n- 删除部分旧的SQL建表和初始化脚本，迁移相关SQL文件至新目录结构\n- 修改docker-compose网络配置，替换旧网络名称为统一的network_dev\n- 优化连接池配置文件中的注释格式，提升可读性\n"
+    },
+    {
+      "sha": "14d7d6c7472ea2ecb9a085c1e098999fa3c28dc4",
+      "date": "2026-07-18T22:32:14+08:00",
+      "author": "稚名不带撇",
+      "email": "3566983494@qq.com",
+      "message": "Merge pull request #277 from zmbdp/develop\n\nDevelop"
+    },
+    {
+      "sha": "1bb8ccd70fece242d5e7e68eb7621879c3ef0452",
+      "date": "2026-07-18T02:55:35+08:00",
+      "author": "稚名不带撇",
+      "email": "3566983494@qq.com",
+      "message": "Merge pull request #276 from zmbdp/feature/zmbdp_base\n\nstyle(sql): 优化数据库表结构与初始化脚本格式"
+    },
+    {
+      "sha": "4f71efa573615692763cdcfe08d7f698d9ad8a6f",
+      "date": "2026-07-18T02:55:10+08:00",
+      "author": "稚名不带撇",
+      "email": "3566983494@qq.com",
+      "message": "Merge pull request #275 from zmbdp/develop\n\nDevelop"
+    },
+    {
+      "sha": "f71be425ffee3e6f8fd7142d4d1dbbc56f9eb83f",
+      "date": "2026-07-18T02:54:25+08:00",
+      "author": "稚名不带撇",
+      "email": "3566983494@qq.com",
+      "message": "style(sql): 优化数据库表结构与初始化脚本格式\n\n- 调整所有 create table 语句主键 id 字段，改为使用雪花算法生成的主键，移除 auto_increment\n- 统一修改数据库和用户创建脚本的关键字大写格式，保证一致性\n- 所有表引擎声明添加 ROW_FORMAT = DYNAMIC，优化行格式设置\n- 规范注释内容和对齐格式，提升脚本可读性\n- 修改部分初始化数据的插入语句，明确指定主键 ID 值，保证数据一致性\n- 修正 commit 关键字为大写，符合 SQL 标准写法\n- 删除部分不必要的空行，保持代码整洁\n"
+    },
+    {
+      "sha": "c7c354d625174600184c654857ac09f20c1e272d",
+      "date": "2026-07-18T02:54:14+08:00",
+      "author": "稚名不带撇",
+      "email": "3566983494@qq.com",
+      "message": "Merge pull request #274 from zmbdp/feature/zmbdp_base\n\nFeature/zmbdp base"
+    },
+    {
+      "sha": "c92ac5257b7fdf5f99bc702a71314273185ece09",
+      "date": "2026-07-18T01:13:26+08:00",
+      "author": "稚名不带撇",
+      "email": "3566983494@qq.com",
+      "message": "chore(build): 更新所有模块版本号至1.0正式版\n\n- 将docker-compose部署配置中的镜像标签从1.0-SNAPSHOT改为1.0\n- 更新文档依赖版本号为1.0，替换1.0-SNAPSHOT\n- 修改各模块pom.xml中的父项目及依赖版本为1.0正式版本\n- 涉及模块包括admin、common、file、gateway、mstemplate等\n- 确保依赖统一指向正式版本，便于发布和稳定运行\n"
+    }
+  ],
+  "commit_sha": "24e3dc64b50c579a32fcbb220a6aeb314b8ad7d5",
+  "extracted_at": "2026-10-05T18:47:27.630265+00:00"
+}

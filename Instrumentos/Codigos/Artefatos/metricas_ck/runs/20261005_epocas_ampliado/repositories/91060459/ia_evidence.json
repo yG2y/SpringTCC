@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "9cff812e1a71e399bc231ce8323107d1283b9505",
+      "date": "2025-10-09T17:10:42+02:00",
+      "author": "Ham Vocke",
+      "email": "ham@hamvocke.com",
+      "message": "update circleci java version\n"
+    },
+    {
+      "sha": "55b269d610cf7148b1e9267406f7ae0ee24b5b91",
+      "date": "2025-10-09T17:06:21+02:00",
+      "author": "Ham Vocke",
+      "email": "ham@hamvocke.com",
+      "message": "updgrade to java 25\n"
+    },
+    {
+      "sha": "ac408e13a7408609325bb58214020ba4e4a6f4fe",
+      "date": "2025-10-09T16:57:18+02:00",
+      "author": "Ham Vocke",
+      "email": "ham@hamvocke.com",
+      "message": "update gradle wrapper\n"
+    },
+    {
+      "sha": "29b5eeb4293d11573c3c56670e317e54cedb2b0f",
+      "date": "2025-10-09T15:56:18+02:00",
+      "author": "Ham Vocke",
+      "email": "ham@hamvocke.com",
+      "message": "Update to Java 21, update to spring boot 3.5, update deps\n"
+    },
+    {
+      "sha": "8bc5e9d9c79c408d67a9eb1abb5478d37c248634",
+      "date": "2025-02-07T12:59:53+01:00",
+      "author": "Ham Vocke",
+      "email": "ham@hamvocke.com",
+      "message": "gitignore direnv/\n"
+    },
+    {
+      "sha": "e488862d78fd0c4ea0c4e173dc086f42eb524f7b",
+      "date": "2024-10-26T17:06:20+02:00",
+      "author": "Ham Vocke",
+      "email": "ham@hamvocke.com",
+      "message": "add flake lock\n"
+    },
+    {
+      "sha": "a0607708f72a235d8f2ecd367ecf8c255a302024",
+      "date": "2024-10-26T16:45:41+02:00",
+      "author": "Ham Vocke",
+      "email": "ham@hamvocke.com",
+      "message": "ignore direnv directory\n"
+    },
+    {
+      "sha": "67a5a2762919815344a1d838bfb17908052ce247",
+      "date": "2024-10-26T16:45:15+02:00",
+      "author": "Ham Vocke",
+      "email": "ham@hamvocke.com",
+      "message": "switch to more portable shebang line\n"
+    },
+    {
+      "sha": "c0d8adaf816a1c7403d573814d584958a386e717",
+      "date": "2024-10-26T16:24:14+02:00",
+      "author": "Ham Vocke",
+      "email": "ham@hamvocke.com",
+      "message": "update build status badge\n"
+    },
+    {
+      "sha": "831be9f62f7850b283f99a48d051b2854473ca96",
+      "date": "2024-10-26T12:55:02+02:00",
+      "author": "Ham Vocke",
+      "email": "ham@hamvocke.com",
+      "message": "add nix flake\n"
+    },
+    {
+      "sha": "805a16da117c5f16e95dd5af75c779f61149a933",
+      "date": "2023-11-01T13:48:30+01:00",
+      "author": "Ham Vocke",
+      "email": "ham@hamvocke.com",
+      "message": "update readme\n"
+    },
+    {
+      "sha": "e8528238115f21cdbb8ca9bd8d41ca0190bac3b6",
+      "date": "2023-11-01T13:39:46+01:00",
+      "author": "Ham Vocke",
+      "email": "ham@hamvocke.com",
+      "message": "upgrade pact some more...\n"
+    },
+    {
+      "sha": "5f7e366724ee904b1d62090826f39bd57a5db79e",
+      "date": "2023-11-01T13:12:40+01:00",
+      "author": "Ham Vocke",
+      "email": "ham@hamvocke.com",
+      "message": "downgrade pact version again\n\nsomething's off when we're trying to set a port on the mock server\n"
+    },
+    {
+      "sha": "1b46d67892444d301058bc82065ca28fe6223c08",
+      "date": "2023-11-01T12:04:25+01:00",
+      "author": "Ham Vocke",
+      "email": "ham@hamvocke.com",
+      "message": "update javax.persistence imports\n"
+    },
+    {
+      "sha": "a8d628d298be440600442b8009c14c72b798bccd",
+      "date": "2023-11-01T11:38:43+01:00",
+      "author": "Ham Vocke",
+      "email": "ham@hamvocke.com",
+      "message": "update dependencies, gradle to 8.4\n"
+    },
+    {
+      "sha": "62dcc1b81ff9fa68ae14440cdaf570c35f2b778d",
+      "date": "2022-03-14T22:04:27+01:00",
+      "author": "Ham Vocke",
+      "email": "hermann.vocke@gmail.com",
+      "message": "add reference to consumer test in comment\n"
+    },
+    {
+      "sha": "52965aba0a833703dac072f1cb496bfe51cd82d2",
+      "date": "2022-03-14T21:37:10+01:00",
+      "author": "Ham Vocke",
+      "email": "hermann.vocke@gmail.com",
+      "message": "remove chrome options\n\ndon't need them now that we install chrome explicitly\n"
+    },
+    {
+      "sha": "1c4c29af4f10d6cf82081faa2dd0eaaa1fa758ef",
+      "date": "2022-03-14T21:33:57+01:00",
+      "author": "Ham Vocke",
+      "email": "hermann.vocke@gmail.com",
+      "message": "try running chrome without the fudge\n"
+    },
+    {
+      "sha": "92c3d4a4cbd49596713ec96d87558f14c851139b",
+      "date": "2022-03-14T21:29:01+01:00",
+      "author": "Ham Vocke",
+      "email": "hermann.vocke@gmail.com",
+      "message": "try installin chrome directly\n"
+    },
+    {
+      "sha": "2c137e1299cd2ef3b9830efdd96a5cde5e6f0608",
+      "date": "2022-03-14T21:07:58+01:00",
+      "author": "Ham Vocke",
+      "email": "hermann.vocke@gmail.com",
+      "message": "even more fudging\n"
+    },
+    {
+      "sha": "41a521065437cba8e5870f130f74b439ebdf093e",
+      "date": "2022-03-14T21:02:42+01:00",
+      "author": "Ham Vocke",
+      "email": "hermann.vocke@gmail.com",
+      "message": "remove unnecessary extendwith annotations\n"
+    },
+    {
+      "sha": "4ec6f9cb93249eb378149a0dfd2f67427befee66",
+      "date": "2022-03-14T20:46:11+01:00",
+      "author": "Ham Vocke",
+      "email": "hermann.vocke@gmail.com",
+      "message": "more fudging\n"
+    },
+    {
+      "sha": "5edfd9f129cc7a168c59c71ab06237236a555e49",
+      "date": "2022-03-14T20:05:12+01:00",
+      "author": "Ham Vocke",
+      "email": "hermann.vocke@gmail.com",
+      "message": "install extra deps\n"
+    },
+    {
+      "sha": "6a9db5ef302701085e19d89e21460a1b2082abe3",
+      "date": "2022-03-14T12:28:21+01:00",
+      "author": "Ham Vocke",
+      "email": "hermann.vocke@gmail.com",
+      "message": "debug cci build\n"
+    },
+    {
+      "sha": "c3c20345f11c31ba497a3f75f78b43813d349d1b",
+      "date": "2022-03-14T12:14:28+01:00",
+      "author": "Ham Vocke",
+      "email": "hermann.vocke@gmail.com",
+      "message": "YAML...\n"
+    },
+    {
+      "sha": "9a05f6923f7933e58a877d5155d9299794a3c018",
+      "date": "2022-03-14T11:51:05+01:00",
+      "author": "Ham Vocke",
+      "email": "hermann.vocke@gmail.com",
+      "message": "fix chrome issue in selenium test\n"
+    },
+    {
+      "sha": "5c819c9f818a7f4d52a7ae210c51ae4717c000e9",
+      "date": "2022-03-14T11:32:00+01:00",
+      "author": "Ham Vocke",
+      "email": "hermann.vocke@gmail.com",
+      "message": "tweal cci config\n"
+    },
+    {
+      "sha": "d5af2e1109cf361c0b2f21579860add77f0e4bea",
+      "date": "2022-03-14T11:30:00+01:00",
+      "author": "Ham Vocke",
+      "email": "hermann.vocke@gmail.com",
+      "message": "fix provider test\n"
+    },
+    {
+      "sha": "20ef27bbf59a170a1de60b34d9bb051b40fe9b18",
+      "date": "2022-03-14T11:13:20+01:00",
+      "author": "Ham Vocke",
+      "email": "hermann.vocke@gmail.com",
+      "message": "update pact, fix weather client consumer test\n"
+    },
+    {
+      "sha": "cb3741b5d644f77144008455d47f09ea0907a2d8",
+      "date": "2022-03-14T10:39:23+01:00",
+      "author": "Ham Vocke",
+      "email": "hermann.vocke@gmail.com",
+      "message": "migrate tests to junit 5 properly\n"
+    }
+  ],
+  "commit_sha": "9cff812e1a71e399bc231ce8323107d1283b9505",
+  "extracted_at": "2026-10-05T17:59:25.686848+00:00"
+}

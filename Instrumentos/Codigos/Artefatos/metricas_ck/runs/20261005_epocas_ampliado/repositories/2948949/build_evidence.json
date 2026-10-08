@@ -1,0 +1,28 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${spring.boot.version};3.5.14",
+  "spring_boot_major": "3",
+  "java_versions_declared": "",
+  "build_evidence": [
+    {
+      "file": "common/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "common/pom.xml",
+      "artifact": "spring-boot-test"
+    },
+    {
+      "file": "integration/pom.xml",
+      "artifact": "spring-boot-test"
+    },
+    {
+      "file": "integration/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    }
+  ]
+}

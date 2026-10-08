@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "dd36247de6b89af4bf9a57ea5bb0d70e8b68137d",
+      "date": "2023-11-23T14:40:42+09:00",
+      "author": "Gabriel Ju Hyun, Yoon",
+      "email": "gabrielyoon7@gmail.com",
+      "message": "fix: 잘못된 import 경로로 인해 빌드가 되지 않는 문제를 수정한다 (#931)\n\n[#930]"
+    },
+    {
+      "sha": "ce2f3b1d3009500e3f0ae4e769d9df8fc5844eb3",
+      "date": "2023-11-09T15:43:57+09:00",
+      "author": "YoungWoo Kim",
+      "email": "77326660+kyw0716@users.noreply.github.com",
+      "message": "refactor: 마커 렌더링 방식을 개선한다 (#924)\n\n* feat: 마커 렌더링 훅 추가\n\n- 기본 마커 렌더링\n- 카페인 마커 렌더링\n\n[#914]\n\n* feat: useLayoutEffect를 사용한 방식 적용\n\n- 다음의 복잡한 처리들을 리액트에 위임하는 구조로 변경 (기존에는 훅이 이를 대체했음)\n  - 중복 마커 생성 방지\n  - 영역 밖 마커 삭제\n\n[#914]\n\n* refactor: 마커 렌더러 컴포넌트 폴더 위치 수정\n\n[#914]\n\n* comment: TODO 주석 추가\n\n- 현재는 infoWindow를 특정 메서드를 통해 직접 제어하는 방식을 사용했지만, 마커 컴포넌트에 isOpen props를 넘겨 이를 제어하는 방식으로 해보고자 함.\n\n[#914]\n\n* refactor: 검색 결과 마커 생성 방식 수정\n\n- 검색 결과로 화면에 존재하지 않는 마커를 생성할 때의 과정 수정\n- 마커가 렌더링 될 때 마커 인스턴스 전역 상태에 지금 렌더링 하려는 마커가 포함되어 있다면 재생성을 하지 않는 로직 추가\n\n[#914]\n\n* feat: 클러스터 마커 렌더링 기능 추가\n\n[#914]\n\n* refactor: 클러스터 마커 렌더링 방식 수정\n\n[#914]\n\n* refactor: 마커 컴포넌트 폴더 구조 개선\n\n[#914]\n\n* refactor: 지역 마커 렌더링 훅 변경\n\n[#914]\n\n* refactor: 리액트 쿼리 사용 훅 이름 수정\n\n[#914]\n\n* refactor: 변수명 개선\n\n[#914]\n\n* refactor: animation 관련 함수 공통 함수로 분리\n\n[#914]\n\n* refactor: getChargerCountsAndAvailability 함수에 availableCount 추가\n\n[#914]\n\n* rename: 파일 이름 변경\n\n[#914]\n\n* refactor: index에서 접근할 수 있게 변경\n\n[#914]\n\n* rename: useRenderMarker -> useMarker 이름 변경\n\n[#914]\n\n* comment: 필요없는 주석 제거\n\n[#914]\n\n---------\n\nCo-authored-by: feb-dain <feb.dain@gmail.com>"
+    },
+    {
+      "sha": "146c492cf728e690c5d35a3ab6d8aee9dc1172c5",
+      "date": "2023-11-09T12:20:02+09:00",
+      "author": "Gabriel Ju Hyun, Yoon",
+      "email": "gabrielyoon7@gmail.com",
+      "message": "fix: 충전소 리스트에서 로딩을 보여주지 않아도 되는 상황에 보여지는 현상을 개선한다 (#923)\n\n[#922]\n\nCo-authored-by: YoungWoo Kim <77326660+kyw0716@users.noreply.github.com>\nCo-authored-by: feb-dain <feb.dain@gmail.com>"
+    },
+    {
+      "sha": "fcaedd177346f57372c2bcbe4365334855c8262d",
+      "date": "2023-11-09T10:40:55+09:00",
+      "author": "Dain Lee",
+      "email": "108778921+feb-dain@users.noreply.github.com",
+      "message": "refactor: 필요없는 코드 제거한다 (#921)\n\n* refactor: inline style 제거\n\n[#920]\n\n* refactor: 필요없는 코드 제거\n\n[#920]"
+    },
+    {
+      "sha": "857ded2f0f69d8c6c4c3c8c3e76baeec6d97ea56",
+      "date": "2023-10-31T18:12:02+09:00",
+      "author": "Gabriel Ju Hyun, Yoon",
+      "email": "gabrielyoon7@gmail.com",
+      "message": "fix: 데스크톱 모드에서 충전소 상세정보 보기 버튼이 항상 보여지는 문제를 수정한다 (#917)\n\n"
+    },
+    {
+      "sha": "f765cf04cd2e79d8cf078b92af9b71a4e4b40b01",
+      "date": "2023-10-29T00:02:30+09:00",
+      "author": "YoungWoo Kim",
+      "email": "77326660+kyw0716@users.noreply.github.com",
+      "message": "fix: 폰트 preload 에러를 개선한다 (#909)\n\n[#908]"
+    },
+    {
+      "sha": "ba6fc138e5ae9c6fb82629f0b4f01daf6cd84233",
+      "date": "2023-10-27T12:25:22+09:00",
+      "author": "Gabriel Ju Hyun, Yoon",
+      "email": "gabrielyoon7@gmail.com",
+      "message": "chore: robots.txt 추가 (#913)\n\n"
+    },
+    {
+      "sha": "4390673c9652cc91e31a5fdf1f1ab11b33661ab4",
+      "date": "2023-10-27T00:31:29+09:00",
+      "author": "Kiara Kim",
+      "email": "101039161+kiarakim@users.noreply.github.com",
+      "message": "feat: 대한민국을 2km단위로 나눠 해당 지역의 충전소 개수를 계산한다 (#880)\n\n* feat: 적당히 자르는 기능 구현\n\n[#819]\n\n* feat: 대한민국을 자르는 기능 구현\n\n[#819]\n\n* feat: grid 내의 충전소 개수를 저장하는 기능 추가\n\n[#819]\n\n* feat: 클러스터 기능 추가\n\n* fix: 실패하는 테스트 수정\n\n* feat: 혼잡도 계산 로직 중지\n\n* refactor: 코드 리팩토링\n\n* refactor: 코드 리팩토링\n\n* refactor: 그리드 충전소 지정 속도 개선\n\n* refactor: final 추가\n\n* refactor: final 추가 및 불필요한 어노테이션 제거\n\n* refactor: 메서드 분리 및 상수화\n\n* refactor: 메서드 분리\n\n* refactor: given-when-then 주석 추가\n\n* refactor: 빈줄 삭제\n\n* refactor: 반복 횟수 변경\n\n* feat: grid의 마커 위치 정확도 수정\n\n[#819]\n\n* feat: 위도 경도 변경\n\n[#819]\n\n* infra: hikari CP size 변경\n\n[#819]\n\n* fix: 실패하는 테스트 수정\n\n[#819]\n\n* refactor: 메서드 분리\n\n[#819]\n\n* refactor: 싱글 스레드로 변경\n\n[#819]\n\n* refactor: 초기화 방식 변경\n\n[#819]\n\n* refactor: 초기화 방식 변경\n\n[#819]\n\n---------\n\nCo-authored-by: drunkenhw <drunkenhw@gmail.com>"
+    },
+    {
+      "sha": "987a02e16e54134d2c8d1bd4fea264c351bb8420",
+      "date": "2023-10-26T22:55:35+09:00",
+      "author": "Gabriel Ju Hyun, Yoon",
+      "email": "gabrielyoon7@gmail.com",
+      "message": "docs: readme에 gif를 추가한다 (#911)\n\n* docs: readme 파일 위치 개선 및 gif 추가\n\n[#910]\n\n* docs: 사진 위치 수정\n\n* \bdocs: 사진 순서 변경"
+    },
+    {
+      "sha": "c821d97caee0bf53b69f49c9c46556b8bc8fa1d0",
+      "date": "2023-10-26T13:08:45+09:00",
+      "author": "YoungWoo Kim",
+      "email": "77326660+kyw0716@users.noreply.github.com",
+      "message": "refactor: 폰트 로딩을 최적화한다  (#907)\n\n* refactor: 폰트 preload 설정을 개선한다\n\n[#906]\n\n* refactor: 폰트 preload 설정 개선\n\n[#906]\n\n* fix: 잘못 적은 부분 수정\n\n[#906]"
+    },
+    {
+      "sha": "10b5c01a983fc420f4ad507515f0c498be5ab512",
+      "date": "2023-10-26T10:19:40+09:00",
+      "author": "Gabriel Ju Hyun, Yoon",
+      "email": "gabrielyoon7@gmail.com",
+      "message": "chore: 일부 dependencies를 devDependencies로 이전한다 (#905)\n\n* chore: 잘못된 패키지 위치 수정\n\n[#904]\n\n* docs: 리드미 일부 수정\n\n[#904]\n\n* fix: 타입 누락 문제 해결\n\n[#904]"
+    },
+    {
+      "sha": "2e7257fa9d8053ac852f98afe4338db92ae3b405",
+      "date": "2023-10-25T18:27:38+09:00",
+      "author": "Gabriel Ju Hyun, Yoon",
+      "email": "gabrielyoon7@gmail.com",
+      "message": "docs: readme를 작성한다 (#902)\n\n* docs: 리드미 기본 구조 이식\n\n[#874]\n\n* docs: 리드미 1차 수정\n\nCo-authored-by: YoungWoo Kim <kyw0716@users.noreply.github.com>\nCo-authored-by: Dain Lee <feb-dain@users.noreply.github.com>\n\n[#874]\n\n* docs: 리드미 수정\n\nCo-authored-by: YoungWoo Kim <kyw0716@users.noreply.github.com>\nCo-authored-by: Dain Lee <feb-dain@users.noreply.github.com>\n\n[#874]\n\n* docs: 리드미 수정\n\nCo-authored-by: YoungWoo Kim <kyw0716@users.noreply.github.com>\nCo-authored-by: Dain Lee <feb-dain@users.noreply.github.com>\n\n[#874]\n\n* docs: 리드미 수정\n\nCo-authored-by: YoungWoo Kim <kyw0716@users.noreply.github.com>\nCo-authored-by: Dain Lee <feb-dain@users.noreply.github.com>\n\n[#874]\n\n* docs: 리드미 수정\n\nCo-authored-by: YoungWoo Kim <kyw0716@users.noreply.github.com>\nCo-authored-by: Dain Lee <feb-dain@users.noreply.github.com>\n\n[#874]\n\n* docs: 사진을 추가한다\n\n[#874]\n\n* refactor: SEO 개선 시도\n\n[#874]\n\n* docs: readme 개선\n\n[#874]\n\n* Update README.md\n\n* docs: 메인 화면 이미지 추가\n\n[#874]\n\n* Update README.md\n\n* docs: ga4 문서 추가\n\n[#874]\n\n* docs: 리드미 수정\n\n---------\n\nCo-authored-by: YoungWoo Kim <77326660+kyw0716@users.noreply.github.com>"
+    },
+    {
+      "sha": "8ed5424a25e03e34b064ff7d27969b2824282cb4",
+      "date": "2023-10-24T19:57:52+09:00",
+      "author": "Dain Lee",
+      "email": "108778921+feb-dain@users.noreply.github.com",
+      "message": "refactor: 앱 설치 버튼 구현 및 버튼 누르면 나오는 설치 방법 설명 모달 구현한다 (#900)\n\n* refactor: pwa service worker 다시 살리기\n\n[#899]\n\n* feat: 앱 설치 버튼 구현 및 버튼 누르면 나오는 설치 방법 모달 구현\n\n[#899]\n\n* design: 패딩 추가\n\n[#899]\n\n* design: 모달 닫기 버튼 위치 조정\n\n[#899]"
+    },
+    {
+      "sha": "bc59856fd12aa05e8399886ac510bb450383aaaa",
+      "date": "2023-10-23T14:33:17+09:00",
+      "author": "Dain Lee",
+      "email": "108778921+feb-dain@users.noreply.github.com",
+      "message": "refactor: husky를 개선한다 (#886)\n\n* refactor: husky 개선\n\n[#885]\n\n* fix: 커밋 메시지 postfix 사라지는 문제 개선\n\n[#885]\n\n* fix: husky script 변경\n\n[#885]\n\n* chore: window용 husky 스크립트 추가\n\n[#885]\n\n* docs: 문서 설명 개선\n\n[#885]"
+    },
+    {
+      "sha": "2ca3a449db378f7d581ecc17883b872d8170185f",
+      "date": "2023-10-23T14:29:06+09:00",
+      "author": "Dain Lee",
+      "email": "108778921+feb-dain@users.noreply.github.com",
+      "message": "feat: 메뉴 토글 기능 구현한다 (#898)\n\n* feat: 메뉴 토글 기능 구현\n\n[#897]\n\n* refactor: 변수명 구체적으로 변경\n\n[#897]"
+    },
+    {
+      "sha": "ba38908e83306aaa5b352642d9435f125199f027",
+      "date": "2023-10-21T21:12:07+09:00",
+      "author": "Jaeyoon Lee",
+      "email": "63213487+sosow0212@users.noreply.github.com",
+      "message": "feat: 무중단 배포를 위해 스크립트를 수정합니다 (#875)\n\n* infra: 무중단배포 스크립트 작성\n\n* infra: 무중단배포 스크립트 작성\n\n* infra: 무중단배포 스크립트 작성\n\n* infra: 무중단배포 스크립트 작성\n\n* infra: 무중단배포 스크립트 작성\n\n* infra: 무중단배포 스크립트 작성\n\n* infra: 무중단배포 스크립트 작성\n\n* infra: 무중단배포 스크립트 작성\n\n* infra: 무중단배포 스크립트 작성\n\n* infra: 무중단배포 스크립트 작성\n\n* infra: 무중단배포 스크립트 작성\n\n* infra: 무중단배포 스크립트 작성\n\n* infra: 무중단배포 스크립트 작성\n\n* infra: 무중단배포 스크립트 작성"
+    },
+    {
+      "sha": "ff49e5ae4d9744c195eaa09cb69b4c0dd168d513",
+      "date": "2023-10-20T15:43:52+09:00",
+      "author": "Dain Lee",
+      "email": "108778921+feb-dain@users.noreply.github.com",
+      "message": "feat: 카페인 공통 컴포넌트 분리 후 npm 배포한 것 사용 (#891)\n\n"
+    },
+    {
+      "sha": "404ded080229d923dbb96e1abe185ea52a9a1a1f",
+      "date": "2023-10-20T09:39:39+09:00",
+      "author": "Gabriel Ju Hyun, Yoon",
+      "email": "gabrielyoon7@gmail.com",
+      "message": "fix: 충전기 필터 버튼 색상이 hover에 의해 가려지는 문제를 수정한다 (#893)\n\n* fix: 충전 필터 버튼 색상이 hover에 의해 가려지는 문제를 수정한다\n\n[#892]\n\n* refactor: 서버 필터링 상단 버튼 순서를 바꾼다\n\n[#892]\n\n* fix: 모바일에서 호버 생기지 않도록 개선\n\n[#892]\n\n* design: 사소한 디자인 개선\n\n[#892]\n\n* design: 스켈레톤 개선 전까지 임시 로더 보여주도록 함\n\n[#892]\n\n* fix: 웹에서 필터 헤더 좌우 간격이 없어진 문제 해결\n\n[#892]\n\n---------\n\nCo-authored-by: feb-dain <feb.dain@gmail.com>"
+    },
+    {
+      "sha": "efcc715175187fe962d5e5047d0b9013b33e8204",
+      "date": "2023-10-20T01:30:44+09:00",
+      "author": "Gabriel Ju Hyun, Yoon",
+      "email": "gabrielyoon7@gmail.com",
+      "message": "refactor: 차량 선택 기능 진입 버튼을 제거한다 (#896)\n\n* refactor: 차량 선택 기능 진입 버튼을 제거한다\n\n[#895]\n\n* test: 사라진 기능 테스트를 제거한다\n\n[#895]\n\n* test: 사라진 기능 테스트를 제거한다\n\n[#895]\n\n* test: 임시 테스트를 추가한다\n\n[#895]"
+    },
+    {
+      "sha": "b451628420cf1a85c4772e7bb9f0040bbb16a81c",
+      "date": "2023-10-19T18:32:39+09:00",
+      "author": "Gabriel Ju Hyun, Yoon",
+      "email": "gabrielyoon7@gmail.com",
+      "message": "refactor: StationInfoWindow의 Layout Shift 현상 제거 (#889)\n\n"
+    },
+    {
+      "sha": "c60f6ccac601fa0f178a6782702e2dc6ca11face",
+      "date": "2023-10-19T17:36:41+09:00",
+      "author": "Gabriel Ju Hyun, Yoon",
+      "email": "gabrielyoon7@gmail.com",
+      "message": "refactor: 서버 클러스링 마커 클릭 시 줌을 적당하게 확대하도록 개선한다 (#888)\n\n* refactor: 서버 클러스링 마커 클릭 시 줌을 적당하게 조절하도록 개선한다\n\n[#887]\n\n* refactor: 피드백 반영\n\n[#887]"
+    },
+    {
+      "sha": "e9915d100e7dc9ad3a206ceb7238b8b81b210689",
+      "date": "2023-10-19T16:38:08+09:00",
+      "author": "Dain Lee",
+      "email": "108778921+feb-dain@users.noreply.github.com",
+      "message": "feat: 길찾기 기능을 구현한다 (#881)\n\n* refactor: 필요없는 파일 제거\n\n[#879]\n\n* feat: 길찾기 컴포넌트 구현\n\n[#879]\n\n* feat: 길찾기 컴포넌트 인포 윈도우 안에 넣기\n\n[#879]\n\n* refactor: 길찾기 컴포넌트에 속성 추가\n\n[#879]\n"
+    },
+    {
+      "sha": "e7d5a9ffadc68ccc543cdca3a40a30ccab332c5e",
+      "date": "2023-10-19T16:35:57+09:00",
+      "author": "YoungWoo Kim",
+      "email": "77326660+kyw0716@users.noreply.github.com",
+      "message": "fix: 서버 클러스터 마커를 클릭했을 때 충전소 마커가 나오지 않고 위치만 이동하는 오류를 개선한다 (#884)\n\n* fix: 충전소 마커 요청을 보내는 초기 영역 상수 수정\n\n[#883]\n\n* test: 영역 값 변경에 따른 테스트 코드 수정\n\n[#883]"
+    },
+    {
+      "sha": "5a5c11f08ecf805073daebc253fca28b36367130",
+      "date": "2023-10-18T16:14:05+09:00",
+      "author": "YoungWoo Kim",
+      "email": "77326660+kyw0716@users.noreply.github.com",
+      "message": "fix: 로그인 에러 수정 (#878)\n\n- 잘못된 라우터 경로 설정 수정\n\n[#877]"
+    },
+    {
+      "sha": "dfaa7d7cc0cd5eaef81206b595dfcfb4fd61d59c",
+      "date": "2023-10-18T13:13:28+09:00",
+      "author": "Gabriel Ju Hyun, Yoon",
+      "email": "gabrielyoon7@gmail.com",
+      "message": "refactor: 서버 클러스터 마커 디자인을 개선합니다. (#876)\n\n* rename: FooMarker 이름 변경\n\n[#872]\n\n* design: 클러스터 마커 디자인 개선\n\n[#872]\n\n* refactor: 클러스터 마커 수 길이 제한 제거\n\n[#872]\n\n* refactor: p 감소\n\n[#872]\n\n* refactor: 서버 클러스터 사이즈 조절\n\n[#872]\n\n* fix: ClusterMarkerType 수정\n\n[#872]\n\n* refactor: FlexBox 원복\n\n[#872]\n\n* refactor: ClusterMarkerInterface으로 개명\n\n[#872]\n\n* rename: StyledClusterMarker으로 개명\n\n[#872]\n\n* rename: ClusterMarker으로 개명\n\n[#872]"
+    },
+    {
+      "sha": "e53eccd765ef9cfd3f44fab329e00236a91b4930",
+      "date": "2023-10-18T10:00:28+09:00",
+      "author": "YoungWoo Kim",
+      "email": "77326660+kyw0716@users.noreply.github.com",
+      "message": "fix: 서버 클러스터링 캐싱에 의해 줌 레벨 변화에 재 요청을 보내지 않는 오류를 수정한다 (#873)\n\n* refactor: 초기 줌 레벨을 로컬 스토리지에 저장\n\n[#860]\n\n* fix: 서버 클러스터링 오류 수정\n\n- 큰 영역을 보고 있다가 작은 영역을 보려 할 때 서버 클러스터링 요청이 캐싱에 의해 다시 발생하지 않는 문제가 있었습니다.\n- 이를 해결하기 위해 줌 레벨을 활용했습니다.\n- 줌 레벨을 저장하는 수단으로 원래 마지막으로 접속했던 센터 좌표를 기억하기 위해 사용하던 로컬 스토리지의 공간을 활용했습니다.\n- 현재 줌 레벨이 로컬스토리지에 저장된 값과 비교해서 1 이상 차이가 나게 되면 그때 현재 줌 레벨을 로컬스토리지에 저장합니다.\n- 지도를 렌더링 하기 위해 가장 먼저 호출되는 메서드에 줌 레벨 초기화 코드를 추가해주었습니다 (로컬 스토리지에 있는 줌 레벨)\n\n[#860]\n\n* refactor: 메서드 네이밍 수정\n\n[#860]\n\n* refactor: 로컬스토리지에 저장하는 지도 위치 정보 타입 수정\n\n[#860]\n\n* comment: 주석 수정\n\n[#860]"
+    },
+    {
+      "sha": "209b6fb06766ea416f45be711095511a56ca95c6",
+      "date": "2023-10-17T12:41:43+09:00",
+      "author": "Gabriel Ju Hyun, Yoon",
+      "email": "gabrielyoon7@gmail.com",
+      "message": "refactor: 마커 애니메이션을 추가한다 (#870)\n\n* design: 마커 애니메이션 추가\n\n[#867]\n\n* design: 마커 애니메이션 추가\n\n[#867]\n\n* refactor: 불필요한 코드 제거\n\n[#867]\n\n* style: prettier 적용\n\n[#867]\n\n* style: prettier 적용\n\n[#867]\n\n* refactor: IntersectionObserver 제거\n\n[#867]\n\n* feat: 모든 마커에 애니메이션 적용\n\n[#867]\n\n* fix: 도시 마커를 클릭했을 때 줌이 제대로 동작하지 않는 문제를 수정\n\n[#867]\n\n* refactor: 혼잡도 그래프에서 정보가 없는 경우의 색상을 조절\n\n[#867]\n\n* design: 스켈레톤 색상 조절\n\n[#867]\n\n* refactor: 서버 마커 클러스터링 요청 개선\n\n[#867]\n\n* refactor: 지역 위치 개선\n\n[#867]\n\n* feat: ClusterMarkers 클릭 시 확대되는 기능 구현\n\n[#867]\n\n* style: prettier 전체 적용\n\n[#867]\n\n* style: prettier 전체 적용\n\n[#867]\n\n* refactor: 피드백 반영\n\n[#867]"
+    },
+    {
+      "sha": "1408b9683835fd9392bef63bd0ce54135f6f5194",
+      "date": "2023-10-16T21:09:28+09:00",
+      "author": "Dain Lee",
+      "email": "108778921+feb-dain@users.noreply.github.com",
+      "message": "fix: 절대 경로 추가한다 (#869)\n\n[#868]"
+    },
+    {
+      "sha": "2bbe149cea40c64dd2ef12dbca614c6fec6e8731",
+      "date": "2023-10-16T17:00:26+09:00",
+      "author": "Dain Lee",
+      "email": "108778921+feb-dain@users.noreply.github.com",
+      "message": "fix: 주변 충전소가 없습니다 컴포넌트 잘리는 문제 개선한다 (#866)\n\n* fix: 주변 충전소가 없습니다 컴포넌트 잘리는 문제 개선\n\n[#859]\n\n* refactor: 필요없는 코드 제거\n\n[#859]"
+    },
+    {
+      "sha": "b986dee91a21771468b60ebd7f24519c09f02fb2",
+      "date": "2023-10-16T16:44:13+09:00",
+      "author": "Dain Lee",
+      "email": "108778921+feb-dain@users.noreply.github.com",
+      "message": "fix: 사용량 통계 부분 렌더링을 개선한다 (#864)\n\n* refactor: 도메인 함수 분리\n\n[#863]\n\n* fix: 요일 변할 때마다 버튼이 없어졌다 나타나는 문제 개선\n\n[#863]\n\n* fix: 스토리북 배포 에러 개선\n\n[#863]\n\n* fix: 수정된 절대 경로 반영\n\n[#863]\n\n* refactor: chargers를 prop으로 받지 않고 컴포넌트 내부에서 재요청\n\n[#863]"
+    }
+  ],
+  "commit_sha": "dd36247de6b89af4bf9a57ea5bb0d70e8b68137d",
+  "extracted_at": "2026-10-05T18:11:38.726635+00:00"
+}

@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "308ef2a9d5d59889aa6d480637208ef747dc7683",
+      "date": "2025-02-10T23:01:14+09:00",
+      "author": "JaeSeo Yang",
+      "email": "96044622+psychology50@users.noreply.github.com",
+      "message": "chore: conflicts are fixed\n"
+    },
+    {
+      "sha": "c26006348ba8c3aecdb96af2837fb9662d607302",
+      "date": "2025-02-08T22:31:13+09:00",
+      "author": "JaeSeo Yang",
+      "email": "96044622+psychology50@users.noreply.github.com",
+      "message": "release: ✨ Demo Account for Review (#239)\n\n* chore: add admin account environment\n\n* feat: admin mode phone verification\n\n* chore: add default value to admin env"
+    },
+    {
+      "sha": "b245fef06741853f9af100ed57906bbd57940e8c",
+      "date": "2025-02-08T00:52:37+09:00",
+      "author": "JaeSeo Yang",
+      "email": "96044622+psychology50@users.noreply.github.com",
+      "message": "fix: 🐛 Reduce distributed lock duration by separating domain logic (#238)\n\n* chore: cut log max history back 7 to 3\n\n* refactor: impl chat-member-join-operation\n\n* feat: add chat member join command & result\n\n* fix: type fix in the opration constructor\n\n* refactor: separate chat room business logic from the api service\n\n* fix: change from chat-room-id to chat-room-entity in the join result dto\n\n* fix: add member-name field and plus current-member-count in the join result dto\n\n* refactor: chat-member-join-helper\n\n* refactor: apply helper to usecase\n\n* fix: match-password validation bug\n\n* test: chat-member-join-operation-test\n\n* test: chat-member-join-service integration test\n\n* refactor: delete original services and unit test\n\n* fix: extend lease time to 10 seconds\n\n* feat: add read chat member method by chat room id\n\n* feat: add create and read by chat member id method to rdb service\n\n* refactor: modify method to check the current member number\n\n* refactor: move current member count to domain logic\n\n* fix: change user field from refrence to value type in the chat-member entity\n\n* fix: handle change propagation\n\n* style: remove unnecesary step\n\n* fix: add unactivated member filtering"
+    },
+    {
+      "sha": "a66568dd599b5d11a771a9c2577654f15461a72f",
+      "date": "2025-02-06T22:14:59+09:00",
+      "author": "JaeSeo Yang",
+      "email": "96044622+psychology50@users.noreply.github.com",
+      "message": "fix: 🐛 Distributed Lock Failure Causing Duplicate Chat Room Joins (#236)\n\n* feat: add aready joined error code to chat room error code\n\n* fix: add joined member validation in chat member join service\n\n* fix: rollback chat room error code\n\n* test: the same user's multi requests thest"
+    },
+    {
+      "sha": "96eed43b3e28d67b4696fb31ef00ba06abda468f",
+      "date": "2025-02-05T18:03:26+09:00",
+      "author": "JaeSeo Yang",
+      "email": "96044622+psychology50@users.noreply.github.com",
+      "message": "fix: 🔧 Move the Date Field to the Payload in Spending Sharing Message (#235)\n\n* fix: move date to payload\n\n* chore: add jackson config to socket module"
+    },
+    {
+      "sha": "60ec395def85becb87ff2244f3cb071416ee9764",
+      "date": "2025-02-04T13:35:28+09:00",
+      "author": "JaeSeo Yang",
+      "email": "96044622+psychology50@users.noreply.github.com",
+      "message": "fix: 🐛 Remove Prefix During S3 Image Validation & Fix Infinite Invitation Messages (#234)\n\n* fix: substring s3 prefix from image url in the chat room image exist validation\n\n* fix: infinity message send error handle\n\n* test: remove obj prefix from mock test"
+    },
+    {
+      "sha": "dc8c0c2ce34750e9183a0289a9af3ad478ad5deb",
+      "date": "2025-01-31T16:12:10+09:00",
+      "author": "JaeSeo Yang",
+      "email": "96044622+psychology50@users.noreply.github.com",
+      "message": "feat: ✨ Spending History Sharing API (#233)\n\n* feat: add spending list read method with day to spending repository\n\n* feat: add spending list read method with day to spending service\n\n* feat: impl daily spending aggregate service\n\n* test: aggregate slice test\n\n* fix: change return type to pair\n\n* rename: fix test name\n\n* feat: spending-chat-share-event\n\n* feat: add spending-chat-share-exchange-properties\n\n* chore: add spending chat share property to infra yml\n\n* feat: impl spending chat share event handler\n\n* fix: spending-on-dates type error in the spending-chat-share-event\n\n* feat: impl spending-chat-share-helper\n\n* feat: add share-to-chat-room to spending usecase\n\n* feat: add invalid share type error code to spending-error-code\n\n* feat: impl spending share enum type\n\n* feat: add spending-chat-share-query dto\n\n* feat: add missing-share-param error code to spending error code\n\n* feat: add share-spending api to controller\n\n* docs: write swagger docs about spending share api\n\n* chore: apply binder & queue & event handler for share to chat room\n\n* fix: invalid validation in the spending chat share event's name field\n\n* feat: add share constant to the message category type\n\n* feat: add default create message method to the send-message-command\n\n* fix: add sender id field to spending-chat-share-event\n\n* fix: add user id to event parameter when publish event\n\n* feat: impl sending-share-event listener\n\n* fix: add headers to send message command\n\n* refactor: convert spending-share-event-listener to kotlin\n\n* fix: add date field to spending-chat-share-event\n\n* fix: add date to chat message's header"
+    },
+    {
+      "sha": "bf5dbd13f37fc7e83437706d4da8b9790076e946",
+      "date": "2025-01-24T17:46:55+09:00",
+      "author": "JaeSeo Yang",
+      "email": "96044622+psychology50@users.noreply.github.com",
+      "message": "fix: 🐛 Added Missing Field in the Chat Member Detail Response (#232)\n\n* fix: delete chat-member-search-service\n\n* fix: add profile-img field to the result view\n\n* fix: handle to aftermatch by deleting chat-member-search-serivce\n\n* test: add profile image url parameter\n\n* fix: add profile image url to chat-member-res\n\n* fix: replace method to create member detail with function\n\n* fix: replace method to create member detail with function in chat-member-mapper\n\n* fix: add object-prefix to mapper\n\n* test: add aws s3 adapter dependency\n\n* fix: add profile image field to custom-chat-member-repo-impl"
+    },
+    {
+      "sha": "2c97f9bda6b113decc0a69c0f08fa55a3f031e6a",
+      "date": "2025-01-24T15:51:54+09:00",
+      "author": "JaeSeo Yang",
+      "email": "96044622+psychology50@users.noreply.github.com",
+      "message": "feat: ✨ Chat Room Admin Delegation API (#231)\n\n* feat: add delegate action to the chat member entity\n\n* feat: chat room admin delegate operation\n\n* fix: apply correct error type to the chat member's delegate method\n\n* test: add exceptional scenario to the test\n\n* feat: delegate service\n\n* rename: add log field to chat-member's to-string()\n\n* test: happy path integration test\n\n* feat: add exception for trying delete to member who joined other chat room\n\n* test: about delegating chat member who joined other chat romm\n\n* feat: add filter to check active member\n\n* feat: apply distributed lock in the delete method before start with\n\n* fix: apply command to the service parameter\n\n* feat: delegate usecase\n\n* feat: delegate controller\n\n* feat: add not_same_chat_room error code to chat-member-error-code\n\n* fix: chat member will throw 409 error when try to delegate chat member who joined other chat room\n\n* docs: write swagger\n\n* test: fix expected error when try to delegate other chat room's member\n\n* fix: distributed lock's key is null due to changing parameter type"
+    },
+    {
+      "sha": "452276ac2eeadbc63694919099e2f78b4610e50d",
+      "date": "2025-01-23T18:37:56+09:00",
+      "author": "JaeSeo Yang",
+      "email": "96044622+psychology50@users.noreply.github.com",
+      "message": "fix: 🔧 Remove Chat Member Id from Leave Chat Room API Spec (#230)\n\n* fix: change chat member search method in the leave service\n\n* fix: change parameter controller and use case\n\n* docs: fix leave chat room api's swagger docs\n\n* test: fix test"
+    },
+    {
+      "sha": "4ee1d560ab56983bcd5cf4c046179ed85309eebb",
+      "date": "2025-01-23T18:14:52+09:00",
+      "author": "JaeSeo Yang",
+      "email": "96044622+psychology50@users.noreply.github.com",
+      "message": "fix: 🐛 Fix Chat Room Background Image Process Logic (#229)\n\n* feat: add method is-object-exist in the aws-s3-adapter\n\n* fix: delete background-image url validation condition\n\n* fix: apply chat room image change scenario in the chat-room-patch-helper\n\n* fix: all static factory method delete from the chat room res dto\n\n* fix: apply object-prefix to the chat room's background-image-url\n\n* fix: wrong validation of chatroom-patch-helper-test background image url\n\n* test: apply modification about chat room detail's static factory method are deleted\n\n* fix: add get-object-prefix in the chat-member usecase\n\n* test: chat-room-patch-helper s3 flow check\n\n* feat: add 422 error to storage error code\n\n* fix: helper class's exception handling\n\n* test: apply prefix test to create chat room\n\n* style: change to var keyword"
+    },
+    {
+      "sha": "f1af051223b748f6152a68a28e9d43c8b302e6be",
+      "date": "2025-01-22T20:02:58+09:00",
+      "author": "JaeSeo Yang",
+      "email": "96044622+psychology50@users.noreply.github.com",
+      "message": "fix: 🐛 Add \"Is Null\" Filter on the Foreign Entity in the Chat Room Entity (#228)\n\n* fix: add restriction to filter deleted_at is null in the chat-room\n\n* test: check that added 'is null' query into the count query"
+    },
+    {
+      "sha": "b21f338ff349b7deaf9ec2adc4b01ef67df3255d",
+      "date": "2025-01-22T18:45:52+09:00",
+      "author": "JaeSeo Yang",
+      "email": "96044622+psychology50@users.noreply.github.com",
+      "message": "fix: move notify_enabled select to my_rooms_query (#227)\n\n"
+    },
+    {
+      "sha": "2a12a8fa6be2cdadaa67538a2fbf3fa464b9a51b",
+      "date": "2025-01-22T17:59:43+09:00",
+      "author": "JaeSeo Yang",
+      "email": "96044622+psychology50@users.noreply.github.com",
+      "message": "feat: ✨ Turn On/Off Chat Room's Notification Setting API (#226)\n\n* feat: add chat-room-toggle-command\n\n* feat: impl chat-room-notification-toggle-service\n\n* feat: add static factory method $ validator in command\n\n* test: service layer slice test for transation verifying\n\n* feat: add notification turn on/off usecase\n\n* style: move toggle service from chat-member-usecase to chat-room-usecase\n\n* feat: open notification turn on/off api\n\n* docs: write notification turn on/off api swagger"
+    },
+    {
+      "sha": "9598bd9fcfd1dd8315ad30309f5d792e5e9233dc",
+      "date": "2025-01-22T16:48:43+09:00",
+      "author": "JaeSeo Yang",
+      "email": "96044622+psychology50@users.noreply.github.com",
+      "message": "fix: 🐛 The NotifyEnabled field has been added to the Get Chat Room API in Version 2 (#225)\n\n* fix: add notify_enabled field into the chat-room-detail\n\n* fix: add notify_enabled select field when chat-member select query\n\n* feat: add chat-room detail response dto for v2\n\n* feat: add method to map entity to detail dto v2\n\n* feat: add v2 usecase\n\n* docs: write about getting chat room v2 api swagger\n\n* feat: impl v2 chat room controller\n\n* fix: deprecate v2 get-my-chat-rooms api\n\n* test: fix given clauses for chat-room-detail"
+    },
+    {
+      "sha": "3d8d5f859e6996ebf7b201109b17bc6233515d08",
+      "date": "2025-01-21T21:07:55+09:00",
+      "author": "JaeSeo Yang",
+      "email": "96044622+psychology50@users.noreply.github.com",
+      "message": "feat: ✨ Retrieve Chatroom Information in Admin Mode (#224)\n\n* feat: add chatroom-read method for admin view in the chat-room-search-service\n\n* feat: add get-chatroom method for admin view in the usecase\n\n* feat: add admin view dto in the chat room res\n\n* feat: add mappter to convert chatroom entity to admin-view res dto\n\n* feat: add api which get chatroom for admin"
+    },
+    {
+      "sha": "34bede3f590f13d3564465a07bf7a0c84c79fb26",
+      "date": "2025-01-17T20:04:41+09:00",
+      "author": "JaeSeo Yang",
+      "email": "96044622+psychology50@users.noreply.github.com",
+      "message": "fix: 🐛 Improvement of Log System and Update Chat Room API (#223)\n\n* fix: change from id to user_id in the has-admin-permission method\n\n* fix: revising external-api log policy\n\n* fix: revising socket log policy\n\n* fix: delete chat-room-id field in chat room update request\n\n* fix: add chat-room-id parameter"
+    },
+    {
+      "sha": "da91ad0df506f690fbb5c1c0c65ab3e318e52a2c",
+      "date": "2025-01-16T21:46:35+09:00",
+      "author": "JaeSeo Yang",
+      "email": "96044622+psychology50@users.noreply.github.com",
+      "message": "feat: ✨ Chat Room Delete API (#222)\n\n* feat: add chat-room-delete-command\n\n* feat: chat-member delete by chat-room-id query\n\n* feat: impl service logic\n\n* style: using var key-word\n\n* fix: add static factory method to the command\n\n* rename: from find-by-chat-room-id to find-by-chat-member-id in chat-member-repository\n\n* style: add chat-room-delete-status-log in the delete-service\n\n* test: chat-room-delete-service-integration-test\n\n* rename: from delete-chat-room to execute in the chat-room-delete-service\n\n* feat: chat room delete usecase\n\n* feat: chat-room-delete controller\n\n* docs: chat-room delete api swagger\n\n* chore: fix log setting simple"
+    },
+    {
+      "sha": "0c3a98f00ea2da41e9baa7f105a18b788fe1fc5b",
+      "date": "2025-01-15T12:16:56+09:00",
+      "author": "JaeSeo Yang",
+      "email": "96044622+psychology50@users.noreply.github.com",
+      "message": "feat: ✨ Log System Implementation (#221)\n\n* chore: ignore log directory\n\n* feat: logging xml\n\n* chore: add log property in the external-api-module\n\n* chore: external-api logging setting\n\n* chore: external-api logback-spring.xml\n\n* fix: external-api log total-size-cap to 10mb\n\n* chore: add file max capacity\n\n* chore: ignore logs directory\n\n* chore: socket log config setting\n\n* chore: socket server logback setting"
+    },
+    {
+      "sha": "dd5456923a3aa9f54671a22ae4007accc720b74b",
+      "date": "2025-01-14T20:30:49+09:00",
+      "author": "JaeSeo Yang",
+      "email": "96044622+psychology50@users.noreply.github.com",
+      "message": "fix: 🐛 Revising the Refresh Event Handler (#220)\n\n"
+    },
+    {
+      "sha": "e9df0c80d11ca4d4f46e2387b3f95e19a53b5b01",
+      "date": "2025-01-14T18:43:26+09:00",
+      "author": "JaeSeo Yang",
+      "email": "96044622+psychology50@users.noreply.github.com",
+      "message": "fix: 🐛 Fix Put Device API throws NonUniqueResultException (#219)\n\n* docs: fix leave chat room exception wrong constant\n\n* style: extract user validation check rule from the business collection\n\n* test: update test"
+    },
+    {
+      "sha": "be531054a4c8cfcf42e122ac92a6e40722845235",
+      "date": "2025-01-12T19:32:52+09:00",
+      "author": "JaeSeo Yang",
+      "email": "96044622+psychology50@users.noreply.github.com",
+      "message": "feat: ✨ Patch Chat Room Information API (#218)\n\n* feat: create chat-room-patch-command\n\n* feat: add update method to chat-room-rdb-service\n\n* feat: impl chat-room-patch-service\n\n* fix: add static factory method to command\n\n* feat: add chatroom-req update dto\n\n* feat: impl chat-room-patch-helper\n\n* feat: add update chat room usecase\n\n* feat: add has_admin_permission method to the chat-room-manager\n\n* feat: impl chat-room update controller\n\n* docs: write swagger"
+    },
+    {
+      "sha": "74ae7fb5fad8b3044d4eab6dfd1d90be507b7433",
+      "date": "2025-01-11T19:44:22+09:00",
+      "author": "JaeSeo Yang",
+      "email": "96044622+psychology50@users.noreply.github.com",
+      "message": "feat: ✨ Ban Chat Member API (#217)\n\n* feat: chat-member-ban-command\n\n* rename: modify admin-id to user-id cause it isn't identicated already\n\n* feat: add not-admin errorcode\n\n* feat: impl chat-member-ban-service\n\n* feat: add ban-chat-member usecase\n\n* feat: ban-chat-member controller\n\n* docs: chat member ban api swagger"
+    },
+    {
+      "sha": "5dee6f8bf207eab085a5373440bf5211be93872d",
+      "date": "2025-01-08T19:38:18+09:00",
+      "author": "JaeSeo Yang",
+      "email": "96044622+psychology50@users.noreply.github.com",
+      "message": "refactor: 🔧 30x Performance Improvement in PreAuthorize AOP (#216)\n\n* chore: add kotlin reflection dependency in the socket module\n\n* style: remove unnecessary log in preauthorize-spel-parser\n\n* feat: impl pre-authorizer using kolin trailing lambda\n\n* test: authorization test\n\n* chore: add logback xml in socket test module\n\n* test: pre-authorize benchmark"
+    },
+    {
+      "sha": "389509c5e40571f7f30014b662b1fc60df85c833",
+      "date": "2025-01-08T11:56:57+09:00",
+      "author": "JaeSeo Yang",
+      "email": "96044622+psychology50@users.noreply.github.com",
+      "message": "feat: ✨ Leave Chat Room API (#215)\n\n* feat: add chat-member-delete method in rdb-service\n\n* feat: add read-chat-member-by-chat-member-id method in rdb-service and repository\n\n* fix: when search chat-member entity by chat-member-id, exclude chat-room-id\n\n* fix: delete sql-delete annotation in the chat-member entity\n\n* fix: remove delete method and add update method in chat-member-rdb-service\n\n* feat: impl chat-room-leave-service\n\n* feat: add chatroom leave usecase\n\n* feat: add is-exists method with chat-room-id, user-id, chat-member-id in repository\n\n* feat: impl is-exists method in rdb service for adding chat-member-id condition\n\n* feat: add authorization method in the chat-member-service\n\n* feat: add chat leave controller\n\n* feat: add is_admin method in chat-member entity\n\n* feat: add check chat-member-size to leave admin in the chat-room entity\n\n* fix: add admin leave validation rule\n\n* feat: add chat room delete method in chat-room-rdb-service\n\n* feat: add admin-cannot-leave error code\n\n* fix: sperate business logic from service\n\n* style: add log to alter normal member status is changed\n\n* feat: add association mapping helper method chat-room with chat-member\n\n* test: chat room leave collection unit test\n\n* test: chat room leave integration test\n\n* docs: chatroom leave controller swagger docs\n\n* test: disable chat-room-detaill-integration-test temporarily\n\n* test: resolve chat-room-detail-integration test error"
+    },
+    {
+      "sha": "092e7aab20a070ebde3f94613e5622170e364904",
+      "date": "2025-01-07T15:42:49+09:00",
+      "author": "JaeSeo Yang",
+      "email": "96044622+psychology50@users.noreply.github.com",
+      "message": "fix: 🔧 The server sends a success message after a chat message is saved successfully (#214)\n\n* fix: add sender-name & message-id-header field in the send-message-command\n\n* fix: success message send to client after finished chat send process\n\n* fix: extract x-message-id header at the send-message-controller\n\n* fix: convert header parameter type to string\n\n* style: convert send-message-service like kotlin"
+    },
+    {
+      "sha": "7303258ebfdb234139e1e5f15cfaa3f154690de6",
+      "date": "2024-12-31T21:54:57+09:00",
+      "author": "JaeSeo Yang",
+      "email": "96044622+psychology50@users.noreply.github.com",
+      "message": "fix: It Allows the Aspect Class to Return null (#213)\n\n"
+    },
+    {
+      "sha": "6cb496daf4f709b5dd1ed0bfc14e4ec8ccb7bc4b",
+      "date": "2024-12-31T21:31:45+09:00",
+      "author": "JaeSeo Yang",
+      "email": "96044622+psychology50@users.noreply.github.com",
+      "message": "fix: ✏️ Add Send Message Headers to the Error Message (#212)\n\n* feat: add default server error handler\n\n* feat: add message-id in the error response's header\n\n* fix: include request message headers in the error message"
+    },
+    {
+      "sha": "30524c5e0bbe9cd29d7d3e7788ceee6351b59bab",
+      "date": "2024-12-26T19:17:12+09:00",
+      "author": "JaeSeo Yang",
+      "email": "96044622+psychology50@users.noreply.github.com",
+      "message": "refactor: 🔧 Migrating the Socket Module from Java to Kotlin (#211)\n\n* rename: application file java to kotlin\n\n* chore: convert language from java to kotlin in the socket module\n\n* fix: change application file to kotlin style\n\n* fix: move @post-construct method function into the class\n\n* feat: add kotlin log util\n\n* refactor: convert auth_service from java to kotlin\n\n* refactor: convert chat_message_send_service from java to kotlin\n\n* refactor: convert stomp-message-util from java to kotlin\n\n* refactor: convert last-message-id-save-service from java to kotlin\n\n* refactor: convert status-service from java to kotlin\n\n* refactor: convert chat-message-relay-service from java to kotlin\n\n* refactor: convert auth-controller from java to kotlin\n\n* refactor: convert chat-message-controller from java to kotlin\n\n* refactor: convert status-controller from java to kotlin\n\n* refactor: convert pre-authorized-spel-parser & aspect from java to kotlin\n\n* refactor: convert user-principal from java to kotlin\n\n* fix: principal.expired cannot use(lombok compile time), so convert domain method\n\n* fix: add jvm-static annotation at create-method in the stomp-message-util\n\n* rename: add evaluate prameter name\n\n* fix: modify is_authenticated to static method\n\n* chore: modify kotlin compile option cause method parameter data lost\n\n* fix: divide evaluate logic from execution logic"
+    },
+    {
+      "sha": "09336ff46a15191cd5d69e4cbee1bcb70d6d1acb",
+      "date": "2024-12-20T16:19:03+09:00",
+      "author": "JaeSeo Yang",
+      "email": "96044622+psychology50@users.noreply.github.com",
+      "message": "refactor: 🔧 Seperate Business Logic From DeviceTokenRegisterService (#210)\n\n* feat: add device_token_collection\n\n* test: new device token register test\n\n* feat: add device_token owner update logic\n\n* test: device_token owner update test\n\n* rename: device_token_collection to device_token_register_collection\n\n* feat: all business rule input in the device-token-reigster-collection\n\n* test: device-token-register-collection test\n\n* refactor: apply first-level object at the service\n\n* rename: minimalize service's javadoc\n\n* fix: add persistence logic in service\n\n* test: fix device-token-register-service integration test\n\n* test: add db verify test code\n\n* rename: add status change log in the collection"
+    }
+  ],
+  "commit_sha": "308ef2a9d5d59889aa6d480637208ef747dc7683",
+  "extracted_at": "2026-10-05T18:18:26.546886+00:00"
+}

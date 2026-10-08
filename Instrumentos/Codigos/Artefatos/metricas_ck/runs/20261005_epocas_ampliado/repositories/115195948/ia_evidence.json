@@ -1,0 +1,284 @@
+{
+  "ia_status": "com_evidencia",
+  "ia_level": 2,
+  "ia_agents": "copilot-swe-agent",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [
+    {
+      "agent": "copilot-swe-agent",
+      "type": "author_identity",
+      "sha": "877084175ac3a130ce4a6ad42b4caafbc8a1079a",
+      "identity": "copilot-swe-agent[bot] 198982749+copilot@users.noreply.github.com"
+    },
+    {
+      "agent": "copilot-swe-agent",
+      "type": "author_identity",
+      "sha": "61150623d70137e97dda87298dd25ca56bb26ca4",
+      "identity": "copilot-swe-agent[bot] 198982749+copilot@users.noreply.github.com"
+    },
+    {
+      "agent": "copilot-swe-agent",
+      "type": "author_identity",
+      "sha": "e2c7fe551fb217b1e6091b1c0f5520c26d282d13",
+      "identity": "copilot-swe-agent[bot] 198982749+copilot@users.noreply.github.com"
+    },
+    {
+      "agent": "copilot-swe-agent",
+      "type": "author_identity",
+      "sha": "cd0dae5fbdcadd4e2ea4ce519ed237bf0e22d5ba",
+      "identity": "copilot-swe-agent[bot] 198982749+copilot@users.noreply.github.com"
+    },
+    {
+      "agent": "copilot-swe-agent",
+      "type": "author_identity",
+      "sha": "3142fc19ddb5e9a110ecc9ea2cefe68f55925465",
+      "identity": "copilot-swe-agent[bot] 198982749+copilot@users.noreply.github.com"
+    },
+    {
+      "agent": "copilot-swe-agent",
+      "type": "author_identity",
+      "sha": "0cfe55f6b8a3cea2f7b4f33b43212bbb1a7cc2a9",
+      "identity": "copilot-swe-agent[bot] 198982749+copilot@users.noreply.github.com"
+    },
+    {
+      "agent": "copilot-swe-agent",
+      "type": "author_identity",
+      "sha": "60fc2108c8a596dee077251780f2bb550521485d",
+      "identity": "copilot-swe-agent[bot] 198982749+copilot@users.noreply.github.com"
+    },
+    {
+      "agent": "copilot-swe-agent",
+      "type": "author_identity",
+      "sha": "c3adfdf6a70f8c7b57f60f391375c6c7af64951a",
+      "identity": "copilot-swe-agent[bot] 198982749+copilot@users.noreply.github.com"
+    },
+    {
+      "agent": "copilot-swe-agent",
+      "type": "author_identity",
+      "sha": "4980f64b37aeb2aab7f5189ae90a276b0db9f595",
+      "identity": "copilot-swe-agent[bot] 198982749+copilot@users.noreply.github.com"
+    },
+    {
+      "agent": "copilot-swe-agent",
+      "type": "author_identity",
+      "sha": "d36a2ac1ed7fe96f11bdbf36889c9afd9d345052",
+      "identity": "copilot-swe-agent[bot] 198982749+copilot@users.noreply.github.com"
+    }
+  ],
+  "commits": [
+    {
+      "sha": "608edd52d8e8c046e8246de04ba3cf92014e7e34",
+      "date": "2026-09-03T20:27:44Z",
+      "author": "semantic-release-bot",
+      "email": "semantic-release-bot@martynus.net",
+      "message": "chore(release): v1.17.0 [skip ci]\n"
+    },
+    {
+      "sha": "b96e47ce827ecb97beacae2d0a61691065324733",
+      "date": "2026-09-03T22:26:03+02:00",
+      "author": "Marcel Hendrich",
+      "email": "inpercima@gmail.com",
+      "message": "Merge pull request #114 from inpercima/copilot/optimize-lunch-menu-prompt\n\nfeat: upgrade to gpt-5.6-luna, split prompts by content type, add image pre-cropping"
+    },
+    {
+      "sha": "94f4aff34aa385735c74d7d79f89a05cd0a6f4bc",
+      "date": "2026-09-03T22:14:32+02:00",
+      "author": "Marcel Hendrich",
+      "email": "inpercima@gmail.com",
+      "message": "feat: optimize and summarize prompts\n"
+    },
+    {
+      "sha": "7be4348a7a7fb1f67e6195c03951ed7891b080cf",
+      "date": "2026-08-31T19:50:08Z",
+      "author": "semantic-release-bot",
+      "email": "semantic-release-bot@martynus.net",
+      "message": "chore(release): v1.16.4 [skip ci]\n"
+    },
+    {
+      "sha": "5c122a44efda6329c9782a7dbf92b774c0d123d6",
+      "date": "2026-08-31T21:48:23+02:00",
+      "author": "Marcel Hendrich",
+      "email": "inpercima@gmail.com",
+      "message": "fix: fix code warnings\n"
+    },
+    {
+      "sha": "877084175ac3a130ce4a6ad42b4caafbc8a1079a",
+      "date": "2026-08-31T21:02:33Z",
+      "author": "copilot-swe-agent[bot]",
+      "email": "198982749+Copilot@users.noreply.github.com",
+      "message": "refactor: split AiService prompts into shared fragments and compose them\n\nCo-authored-by: inpercima <10551931+inpercima@users.noreply.github.com>\n"
+    },
+    {
+      "sha": "61150623d70137e97dda87298dd25ca56bb26ca4",
+      "date": "2026-08-31T20:50:37Z",
+      "author": "copilot-swe-agent[bot]",
+      "email": "198982749+Copilot@users.noreply.github.com",
+      "message": "refactor: merge resolveMimeTypeFromUrl and resolveMimeTypeFromValue into single method in ContentService\n\nCo-authored-by: inpercima <10551931+inpercima@users.noreply.github.com>\n"
+    },
+    {
+      "sha": "6280bd58120a6141c373f54f9ff2599d1887483a",
+      "date": "2026-08-31T19:50:08Z",
+      "author": "semantic-release-bot",
+      "email": "semantic-release-bot@martynus.net",
+      "message": "chore(release): v1.16.4 [skip ci]\n"
+    },
+    {
+      "sha": "60db2881dff80fce5028c9f12f2a7186f05f7fd4",
+      "date": "2026-08-31T21:48:23+02:00",
+      "author": "Marcel Hendrich",
+      "email": "inpercima@gmail.com",
+      "message": "fix: fix code warnings\n"
+    },
+    {
+      "sha": "e2c7fe551fb217b1e6091b1c0f5520c26d282d13",
+      "date": "2026-08-30T06:37:49Z",
+      "author": "copilot-swe-agent[bot]",
+      "email": "198982749+Copilot@users.noreply.github.com",
+      "message": "feat: apply crop pipeline to PDF page images before AI extraction\n\nCo-authored-by: inpercima <10551931+inpercima@users.noreply.github.com>\n"
+    },
+    {
+      "sha": "cd0dae5fbdcadd4e2ea4ce519ed237bf0e22d5ba",
+      "date": "2026-07-15T12:56:30Z",
+      "author": "copilot-swe-agent[bot]",
+      "email": "198982749+Copilot@users.noreply.github.com",
+      "message": "refactor: replace boolean isCropped with ImageSourceType enum, fix imports\n\n- Add ImageSourceType enum (CROPPED / FULL_PAGE)\n- AiService: extractDishesFromImages / buildFromImage use ImageSourceType\n- LunchService: pass ImageSourceType.CROPPED / FULL_PAGE explicitly\n- ContentService: add URI and URISyntaxException imports, remove FQCNs\n"
+    },
+    {
+      "sha": "3142fc19ddb5e9a110ecc9ea2cefe68f55925465",
+      "date": "2026-07-15T12:54:20Z",
+      "author": "copilot-swe-agent[bot]",
+      "email": "198982749+Copilot@users.noreply.github.com",
+      "message": "fix: clamp crop coordinates, add PROMPT_PDF for full-page images\n\n- ContentService: clamp x/y to image bounds before getSubimage()\n- AiService: add PROMPT_PDF for PDF type (full-page, no 'Ausschnitt' wording)\n- AiService: extractDishesFromImages gains isCropped flag to select correct prompt\n- LunchService: IMAGE type passes isCropped=true, PDF type passes isCropped=false\n"
+    },
+    {
+      "sha": "0cfe55f6b8a3cea2f7b4f33b43212bbb1a7cc2a9",
+      "date": "2026-07-15T12:51:35Z",
+      "author": "copilot-swe-agent[bot]",
+      "email": "198982749+Copilot@users.noreply.github.com",
+      "message": "fix: use precise MIME-type detection, narrow catch clauses in AiService\n\n- ContentService: parse URL via URI to extract path extension instead of substring search\n- AiService: catch JsonProcessingException instead of generic Exception in extractCropBox\n- AiService: catch InvalidMimeTypeException and IllegalArgumentException instead of generic Exception in resolveMimeTypeFromValue\n"
+    },
+    {
+      "sha": "60fc2108c8a596dee077251780f2bb550521485d",
+      "date": "2026-07-15T12:49:22Z",
+      "author": "copilot-swe-agent[bot]",
+      "email": "198982749+Copilot@users.noreply.github.com",
+      "message": "feat: upgrade model to gpt-5.6-luna, split image/text prompts, add image crop pre-step\n\n- Update AI model in application.yml from gpt-5-nano to gpt-5.6-luna\n- Add CropBox record (percentage-based crop coordinates)\n- Add PROMPT_IMAGE (new image-specific prompt, split from PROMPT_TEXT)\n- Add PROMPT_CROP (minimal crop-analysis prompt)\n- Add AiService.extractCropBox() for two-step image cropping\n- Add ContentService.downloadImageAsDataUri() and cropDataUri()\n- Update LunchService IMAGE type: download → crop analysis → crop → extract\n"
+    },
+    {
+      "sha": "e29f0d7cd6e0519a721f66fc51dad623690df264",
+      "date": "2026-08-31T14:00:32+02:00",
+      "author": "Marcel Hendrich",
+      "email": "inpercima@gmail.com",
+      "message": "chore(deps): update root dependencies and fix audit in frontend\n"
+    },
+    {
+      "sha": "56cb23323e824c829170bcef856049344aa327b7",
+      "date": "2026-08-31T10:55:30Z",
+      "author": "semantic-release-bot",
+      "email": "semantic-release-bot@martynus.net",
+      "message": "chore(release): v1.16.3 [skip ci]\n"
+    },
+    {
+      "sha": "0d266bf22a813171d48b9be65b46167cc238c7e3",
+      "date": "2026-08-31T12:54:19+02:00",
+      "author": "Marcel Hendrich",
+      "email": "inpercima@gmail.com",
+      "message": "Merge pull request #116 from inpercima/copilot/fix-failing-github-actions-job\n\nFix Java 25 CI compile failure by forcing Maven annotation processing"
+    },
+    {
+      "sha": "c3adfdf6a70f8c7b57f60f391375c6c7af64951a",
+      "date": "2026-08-31T10:42:31Z",
+      "author": "copilot-swe-agent[bot]",
+      "email": "198982749+Copilot@users.noreply.github.com",
+      "message": "build: configure Lombok as explicit annotation processor\n\nCo-authored-by: inpercima <10551931+inpercima@users.noreply.github.com>\n"
+    },
+    {
+      "sha": "4980f64b37aeb2aab7f5189ae90a276b0db9f595",
+      "date": "2026-08-31T09:57:33Z",
+      "author": "copilot-swe-agent[bot]",
+      "email": "198982749+Copilot@users.noreply.github.com",
+      "message": "fix: enable annotation processing for Java 25 builds\n\nCo-authored-by: inpercima <10551931+inpercima@users.noreply.github.com>\n"
+    },
+    {
+      "sha": "d36a2ac1ed7fe96f11bdbf36889c9afd9d345052",
+      "date": "2026-08-31T09:55:25Z",
+      "author": "copilot-swe-agent[bot]",
+      "email": "198982749+Copilot@users.noreply.github.com",
+      "message": "Initial plan\n"
+    },
+    {
+      "sha": "89b742edcf1ae0e213fa794a08eb79a51556d15f",
+      "date": "2026-08-30T16:48:15+02:00",
+      "author": "Marcel Hendrich",
+      "email": "inpercima@gmail.com",
+      "message": "chore(deps): update java to 25 in github pipeline\n"
+    },
+    {
+      "sha": "861c9a843897b5818f3bb465e770a66d8207af09",
+      "date": "2026-08-30T16:44:00+02:00",
+      "author": "Marcel Hendrich",
+      "email": "inpercima@gmail.com",
+      "message": "chore(deps): update java to 25 and maven wrapper to 3.9.16\n"
+    },
+    {
+      "sha": "5b70900db2a43e5580291bba0fcc9a5174aaa6d3",
+      "date": "2026-08-30T16:43:13+02:00",
+      "author": "Marcel Hendrich",
+      "email": "inpercima@gmail.com",
+      "message": "chore(deps): downgrade mysql-connector-j to 9.7.0 to avoid the parameter allowPublicKeyRetrieval\n"
+    },
+    {
+      "sha": "bf06a695f58fe6e50fd452a8f93577071f39db4f",
+      "date": "2026-08-30T06:21:23Z",
+      "author": "semantic-release-bot",
+      "email": "semantic-release-bot@martynus.net",
+      "message": "chore(release): v1.16.2 [skip ci]\n"
+    },
+    {
+      "sha": "263ea6b350e33f02db94f86071ef338c4ef3aeae",
+      "date": "2026-08-30T08:20:00+02:00",
+      "author": "Marcel Hendrich",
+      "email": "inpercima@gmail.com",
+      "message": "fix: remove unused allowPublicKeyRetrieval parameter\n"
+    },
+    {
+      "sha": "fa3fafe07e4b3fad91f08548cec4f0ed1cc8d3b4",
+      "date": "2026-08-29T08:36:28+02:00",
+      "author": "Marcel Hendrich",
+      "email": "inpercima@gmail.com",
+      "message": "chore(deps): update frontend and backend dependencies\n\n@angular/cli to 22.1.6 and spring-boot to 4.1.1.\n"
+    },
+    {
+      "sha": "3a2dfb226c4c2e4ae7b25047d1d4612e1cf8a475",
+      "date": "2026-07-14T23:27:25+02:00",
+      "author": "Marcel Hendrich",
+      "email": "inpercima@gmail.com",
+      "message": "Fix image prompt variable substitution by using PromptTemplate instead of formatted"
+    },
+    {
+      "sha": "fa4b239609924f9ba5fb1afc094aedcab9eb3df8",
+      "date": "2026-07-14T21:15:39Z",
+      "author": "semantic-release-bot",
+      "email": "semantic-release-bot@martynus.net",
+      "message": "chore(release): v1.16.1 [skip ci]\n"
+    },
+    {
+      "sha": "dd49315e2505249574ced4925f3ada6c3ba61630",
+      "date": "2026-07-14T23:13:56+02:00",
+      "author": "Marcel Hendrich",
+      "email": "inpercima@gmail.com",
+      "message": "fix: update test\n"
+    },
+    {
+      "sha": "513e93e177825eb03b874b42acfcc1cec58a8921",
+      "date": "2026-07-14T21:10:29Z",
+      "author": "semantic-release-bot",
+      "email": "semantic-release-bot@martynus.net",
+      "message": "chore(release): v1.16.0 [skip ci]\n"
+    }
+  ],
+  "commit_sha": "608edd52d8e8c046e8246de04ba3cf92014e7e34",
+  "extracted_at": "2026-10-05T18:31:50.633770+00:00"
+}

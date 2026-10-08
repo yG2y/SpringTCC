@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "a80d2d7d407f66b3464f2ddf271953893ab582e5",
+      "date": "2026-09-28T00:25:08Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump eclipse-temurin in the container-images group (#143)\n\nBumps the container-images group with 1 update: eclipse-temurin.\n\n\nUpdates `eclipse-temurin` from `8878012` to `c7d5863`\n\n---\nupdated-dependencies:\n- dependency-name: eclipse-temurin\n  dependency-version: 21.0.12_8-jdk-jammy\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: container-images\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "391c9b57112c3a8b958006c6d8946b76ccd41e4a",
+      "date": "2026-09-14T00:25:24Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump eclipse-temurin in the container-images group (#140)\n\nBumps the container-images group with 1 update: eclipse-temurin.\n\n\nUpdates `eclipse-temurin` from `ce5767b` to `8878012`\n\n---\nupdated-dependencies:\n- dependency-name: eclipse-temurin\n  dependency-version: 21.0.12_8-jdk-jammy\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: container-images\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "e41a16503f29dd78b640b1c0ee7306b56e3a52c3",
+      "date": "2026-09-14T00:23:26Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump the maven-dependencies group with 2 updates (#139)\n\nBumps the maven-dependencies group with 2 updates: [org.springdoc:springdoc-openapi-starter-webmvc-ui](https://github.com/springdoc/springdoc-openapi) and [com.diffplug.spotless:spotless-maven-plugin](https://github.com/diffplug/spotless).\n\n\nUpdates `org.springdoc:springdoc-openapi-starter-webmvc-ui` from 3.1.0 to 3.1.1\n- [Release notes](https://github.com/springdoc/springdoc-openapi/releases)\n- [Changelog](https://github.com/springdoc/springdoc-openapi/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/springdoc/springdoc-openapi/compare/v3.1.0...v3.1.1)\n\nUpdates `com.diffplug.spotless:spotless-maven-plugin` from 3.10.1 to 3.10.2\n- [Release notes](https://github.com/diffplug/spotless/releases)\n- [Changelog](https://github.com/diffplug/spotless/blob/main/CHANGES.md)\n- [Commits](https://github.com/diffplug/spotless/compare/maven/3.10.1...maven/3.10.2)\n\n---\nupdated-dependencies:\n- dependency-name: org.springdoc:springdoc-openapi-starter-webmvc-ui\n  dependency-version: 3.1.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: maven-dependencies\n- dependency-name: com.diffplug.spotless:spotless-maven-plugin\n  dependency-version: 3.10.2\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: maven-dependencies\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "d997e9ad87778443e04dd947190b2f307d86d736",
+      "date": "2026-09-05T01:07:42+03:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "ci(deps): bump the github-actions group with 3 updates (#138)\n\nBumps the github-actions group with 3 updates: [github/codeql-action/init](https://github.com/github/codeql-action), [actions/setup-java](https://github.com/actions/setup-java) and [github/codeql-action/analyze](https://github.com/github/codeql-action).\n\n\nUpdates `github/codeql-action/init` from 4.37.8 to 4.37.9\n- [Release notes](https://github.com/github/codeql-action/releases)\n- [Changelog](https://github.com/github/codeql-action/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/github/codeql-action/compare/db488ddef3bf6cb639b32c2e9a7c0a7ea8271d28...cdf488f595d80d6e07e03d4674febd5ab45fa938)\n\nUpdates `actions/setup-java` from 5.7.0 to 6.0.0\n- [Release notes](https://github.com/actions/setup-java/releases)\n- [Commits](https://github.com/actions/setup-java/compare/b6effb05e454b25005698d916606bdc6ffcbf961...dd06d9cba3e5552c54d9f8ea23572deb30010f7c)\n\nUpdates `github/codeql-action/analyze` from 4.37.8 to 4.37.9\n- [Release notes](https://github.com/github/codeql-action/releases)\n- [Changelog](https://github.com/github/codeql-action/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/github/codeql-action/compare/db488ddef3bf6cb639b32c2e9a7c0a7ea8271d28...cdf488f595d80d6e07e03d4674febd5ab45fa938)\n\n---\nupdated-dependencies:\n- dependency-name: github/codeql-action/init\n  dependency-version: 4.37.9\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: github-actions\n- dependency-name: actions/setup-java\n  dependency-version: 6.0.0\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n  dependency-group: github-actions\n- dependency-name: github/codeql-action/analyze\n  dependency-version: 4.37.9\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: github-actions\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "c6b8cea6ef5e5fc878e5b866a731d10c24ab01e2",
+      "date": "2026-08-31T00:27:43Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump eclipse-temurin in the container-images group (#137)\n\nBumps the container-images group with 1 update: eclipse-temurin.\n\n\nUpdates `eclipse-temurin` from 21.0.11_10-jdk-jammy to 21.0.12_8-jdk-jammy\n\n---\nupdated-dependencies:\n- dependency-name: eclipse-temurin\n  dependency-version: 21.0.12_8-jdk-jammy\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: container-images\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "208acdbb023921c772ef0b99256d80466b83704e",
+      "date": "2026-08-31T00:23:15Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump com.diffplug.spotless:spotless-maven-plugin (#136)\n\nBumps the maven-dependencies group with 1 update: [com.diffplug.spotless:spotless-maven-plugin](https://github.com/diffplug/spotless).\n\n\nUpdates `com.diffplug.spotless:spotless-maven-plugin` from 3.10.0 to 3.10.1\n- [Release notes](https://github.com/diffplug/spotless/releases)\n- [Changelog](https://github.com/diffplug/spotless/blob/main/CHANGES.md)\n- [Commits](https://github.com/diffplug/spotless/compare/maven/3.10.0...maven/3.10.1)\n\n---\nupdated-dependencies:\n- dependency-name: com.diffplug.spotless:spotless-maven-plugin\n  dependency-version: 3.10.1\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: maven-dependencies\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "819fcbda1a1321a5fe0b6d851eac8d48dbd45690",
+      "date": "2026-08-27T01:17:09+03:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "ci(deps): bump the github-actions group with 3 updates (#135)\n\nBumps the github-actions group with 3 updates: [github/codeql-action/init](https://github.com/github/codeql-action), [github/codeql-action/analyze](https://github.com/github/codeql-action) and [docker/setup-buildx-action](https://github.com/docker/setup-buildx-action).\n\n\nUpdates `github/codeql-action/init` from 4.37.7 to 4.37.8\n- [Release notes](https://github.com/github/codeql-action/releases)\n- [Changelog](https://github.com/github/codeql-action/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/github/codeql-action/compare/ff2f1c621b7f889edc0d3c761ac2e6a3f8cdb0dd...db488ddef3bf6cb639b32c2e9a7c0a7ea8271d28)\n\nUpdates `github/codeql-action/analyze` from 4.37.7 to 4.37.8\n- [Release notes](https://github.com/github/codeql-action/releases)\n- [Changelog](https://github.com/github/codeql-action/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/github/codeql-action/compare/ff2f1c621b7f889edc0d3c761ac2e6a3f8cdb0dd...db488ddef3bf6cb639b32c2e9a7c0a7ea8271d28)\n\nUpdates `docker/setup-buildx-action` from 4.2.0 to 4.3.0\n- [Release notes](https://github.com/docker/setup-buildx-action/releases)\n- [Commits](https://github.com/docker/setup-buildx-action/compare/bb05f3f5519dd87d3ba754cc423b652a5edd6d2c...37fe631027851001ddb9b187196cc803df7f5f0e)\n\n---\nupdated-dependencies:\n- dependency-name: github/codeql-action/init\n  dependency-version: 4.37.8\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: github-actions\n- dependency-name: github/codeql-action/analyze\n  dependency-version: 4.37.8\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: github-actions\n- dependency-name: docker/setup-buildx-action\n  dependency-version: 4.3.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: github-actions\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "dd6028b6d3d035574a34cf3627886b309482ce92",
+      "date": "2026-08-27T01:17:06+03:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump the maven-dependencies group with 2 updates (#133)\n\nBumps the maven-dependencies group with 2 updates: [org.springframework.boot:spring-boot-starter-parent](https://github.com/spring-projects/spring-boot) and [com.diffplug.spotless:spotless-maven-plugin](https://github.com/diffplug/spotless).\n\n\nUpdates `org.springframework.boot:spring-boot-starter-parent` from 4.1.0 to 4.1.1\n- [Release notes](https://github.com/spring-projects/spring-boot/releases)\n- [Commits](https://github.com/spring-projects/spring-boot/compare/v4.1.0...v4.1.1)\n\nUpdates `com.diffplug.spotless:spotless-maven-plugin` from 3.9.0 to 3.10.0\n- [Release notes](https://github.com/diffplug/spotless/releases)\n- [Changelog](https://github.com/diffplug/spotless/blob/main/CHANGES.md)\n- [Commits](https://github.com/diffplug/spotless/compare/maven/3.9.0...maven/3.10.0)\n\n---\nupdated-dependencies:\n- dependency-name: org.springframework.boot:spring-boot-starter-parent\n  dependency-version: 4.1.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: maven-dependencies\n- dependency-name: com.diffplug.spotless:spotless-maven-plugin\n  dependency-version: 3.10.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: maven-dependencies\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "f80980c097c175ef23f23ff2fce730589baad453",
+      "date": "2026-08-24T00:25:40Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump eclipse-temurin in the container-images group (#134)\n\nBumps the container-images group with 1 update: eclipse-temurin.\n\n\nUpdates `eclipse-temurin` from `55fb9bf` to `dbfd085`\n\n---\nupdated-dependencies:\n- dependency-name: eclipse-temurin\n  dependency-version: 21.0.11_10-jdk-jammy\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: container-images\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "89367564db0afdbd50167d88faf24071617910fc",
+      "date": "2026-08-17T00:28:56Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "ci(deps): bump the github-actions group with 2 updates (#132)\n\nBumps the github-actions group with 2 updates: [github/codeql-action/init](https://github.com/github/codeql-action) and [github/codeql-action/analyze](https://github.com/github/codeql-action).\n\n\nUpdates `github/codeql-action/init` from 4.37.6 to 4.37.7\n- [Release notes](https://github.com/github/codeql-action/releases)\n- [Changelog](https://github.com/github/codeql-action/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/github/codeql-action/compare/5595ccaf912efad79be6eef63a5619ff05969be3...ff2f1c621b7f889edc0d3c761ac2e6a3f8cdb0dd)\n\nUpdates `github/codeql-action/analyze` from 4.37.6 to 4.37.7\n- [Release notes](https://github.com/github/codeql-action/releases)\n- [Changelog](https://github.com/github/codeql-action/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/github/codeql-action/compare/5595ccaf912efad79be6eef63a5619ff05969be3...ff2f1c621b7f889edc0d3c761ac2e6a3f8cdb0dd)\n\n---\nupdated-dependencies:\n- dependency-name: github/codeql-action/init\n  dependency-version: 4.37.7\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: github-actions\n- dependency-name: github/codeql-action/analyze\n  dependency-version: 4.37.7\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: github-actions\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "571fe44f46e55b92edd3bbe1cee10c688551e0e8",
+      "date": "2026-08-17T00:23:03Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump org.apache.maven:apache-maven (#131)\n\nBumps the maven-dependencies group with 1 update: org.apache.maven:apache-maven.\n\n\nUpdates `org.apache.maven:apache-maven` from 3.9.12 to 3.9.16\n\n---\nupdated-dependencies:\n- dependency-name: org.apache.maven:apache-maven\n  dependency-version: 3.9.16\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: maven-dependencies\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "5465e27df30fe70b3da6f33c8fc74c8c8936a198",
+      "date": "2026-08-12T18:25:19+03:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "ci(deps): bump actions/checkout (#129)\n\nBumps the github-actions group with 1 update in the / directory: [actions/checkout](https://github.com/actions/checkout).\n\n\nUpdates `actions/checkout` from 6.0.2 to 7.0.1\n- [Release notes](https://github.com/actions/checkout/releases)\n- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/actions/checkout/compare/v6.0.2...3d3c42e5aac5ba805825da76410c181273ba90b1)\n\n---\nupdated-dependencies:\n- dependency-name: actions/checkout\n  dependency-version: 7.0.1\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n  dependency-group: github-actions\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "5a5fc392c84edf51bb8e0250f3a48464c61e43c2",
+      "date": "2026-08-12T12:25:24Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump eclipse-temurin in the container-images group (#130)\n\nBumps the container-images group with 1 update: eclipse-temurin.\n\n\nUpdates `eclipse-temurin` from 21.0.8_9-jdk-jammy to 21.0.11_10-jdk-jammy\n\n---\nupdated-dependencies:\n- dependency-name: eclipse-temurin\n  dependency-version: 21.0.11_10-jdk-jammy\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: container-images\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "1fc199aab0cbb427ca9fa1efe242a9d7a5338663",
+      "date": "2026-08-12T15:24:14+03:00",
+      "author": "Rahil",
+      "email": "rahilrshk@gmail.com",
+      "message": "fix(ci): keep container build on Java 21\n"
+    },
+    {
+      "sha": "e0e510562cce8171f6fd3f10fd0c067abffb9f36",
+      "date": "2026-08-12T14:38:04+03:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "ci(deps): bump the github-actions group with 8 updates (#128)\n\nBumps the github-actions group with 8 updates:\n\n| Package | From | To |\n| --- | --- | --- |\n| [dependabot/fetch-metadata](https://github.com/dependabot/fetch-metadata) | `2.5.0` | `3.1.0` |\n| [actions/checkout](https://github.com/actions/checkout) | `6.0.2` | `7.0.1` |\n| [github/codeql-action/init](https://github.com/github/codeql-action) | `9e3211c9a3b9311dfe05da2ed48eea3386f042dd` | `5595ccaf912efad79be6eef63a5619ff05969be3` |\n| [github/codeql-action/analyze](https://github.com/github/codeql-action) | `9e3211c9a3b9311dfe05da2ed48eea3386f042dd` | `5595ccaf912efad79be6eef63a5619ff05969be3` |\n| [actions/dependency-review-action](https://github.com/actions/dependency-review-action) | `4.8.2` | `5.0.0` |\n| [docker/build-push-action](https://github.com/docker/build-push-action) | `7.0.0` | `7.3.0` |\n| [aquasecurity/trivy-action](https://github.com/aquasecurity/trivy-action) | `0.33.1` | `0.36.0` |\n| [docker/login-action](https://github.com/docker/login-action) | `4.0.0` | `4.6.0` |\n\n\nUpdates `dependabot/fetch-metadata` from 2.5.0 to 3.1.0\n- [Release notes](https://github.com/dependabot/fetch-metadata/releases)\n- [Commits](https://github.com/dependabot/fetch-metadata/compare/21025c705c08248db411dc16f3619e6b5f9ea21a...25dd0e34f4fe68f24cc83900b1fe3fe149efef98)\n\nUpdates `actions/checkout` from 6.0.2 to 7.0.1\n- [Release notes](https://github.com/actions/checkout/releases)\n- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/actions/checkout/compare/de0fac2e4500dabe0009e67214ff5f5447ce83dd...3d3c42e5aac5ba805825da76410c181273ba90b1)\n\nUpdates `github/codeql-action/init` from 9e3211c9a3b9311dfe05da2ed48eea3386f042dd to 5595ccaf912efad79be6eef63a5619ff05969be3\n- [Release notes](https://github.com/github/codeql-action/releases)\n- [Changelog](https://github.com/github/codeql-action/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/github/codeql-action/compare/9e3211c9a3b9311dfe05da2ed48eea3386f042dd...5595ccaf912efad79be6eef63a5619ff05969be3)\n\nUpdates `github/codeql-action/analyze` from 9e3211c9a3b9311dfe05da2ed48eea3386f042dd to 5595ccaf912efad79be6eef63a5619ff05969be3\n- [Release notes](https://github.com/github/codeql-action/releases)\n- [Changelog](https://github.com/github/codeql-action/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/github/codeql-action/compare/9e3211c9a3b9311dfe05da2ed48eea3386f042dd...5595ccaf912efad79be6eef63a5619ff05969be3)\n\nUpdates `actions/dependency-review-action` from 4.8.2 to 5.0.0\n- [Release notes](https://github.com/actions/dependency-review-action/releases)\n- [Commits](https://github.com/actions/dependency-review-action/compare/3c4e3dcb1aa7874d2c16be7d79418e9b7efd6261...a1d282b36b6f3519aa1f3fc636f609c47dddb294)\n\nUpdates `docker/build-push-action` from 7.0.0 to 7.3.0\n- [Release notes](https://github.com/docker/build-push-action/releases)\n- [Commits](https://github.com/docker/build-push-action/compare/d08e5c354a6adb9ed34480a06d141179aa583294...53b7df96c91f9c12dcc8a07bcb9ccacbed38856a)\n\nUpdates `aquasecurity/trivy-action` from 0.33.1 to 0.36.0\n- [Release notes](https://github.com/aquasecurity/trivy-action/releases)\n- [Commits](https://github.com/aquasecurity/trivy-action/compare/b6643a29fecd7f34b3597bc6acb0a98b03d33ff8...ed142fd0673e97e23eac54620cfb913e5ce36c25)\n\nUpdates `docker/login-action` from 4.0.0 to 4.6.0\n- [Release notes](https://github.com/docker/login-action/releases)\n- [Commits](https://github.com/docker/login-action/compare/b45d80f862d83dbcd57f89517bcf500b2ab88fb2...dbcb813823bdd20940b903addbd779551569679f)\n\n---\nupdated-dependencies:\n- dependency-name: dependabot/fetch-metadata\n  dependency-version: 3.1.0\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n  dependency-group: github-actions\n- dependency-name: actions/checkout\n  dependency-version: 7.0.1\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n  dependency-group: github-actions\n- dependency-name: github/codeql-action/init\n  dependency-version: 5595ccaf912efad79be6eef63a5619ff05969be3\n  dependency-type: direct:production\n  dependency-group: github-actions\n- dependency-name: github/codeql-action/analyze\n  dependency-version: 5595ccaf912efad79be6eef63a5619ff05969be3\n  dependency-type: direct:production\n  dependency-group: github-actions\n- dependency-name: actions/dependency-review-action\n  dependency-version: 5.0.0\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n  dependency-group: github-actions\n- dependency-name: docker/build-push-action\n  dependency-version: 7.3.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: github-actions\n- dependency-name: aquasecurity/trivy-action\n  dependency-version: 0.36.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: github-actions\n- dependency-name: docker/login-action\n  dependency-version: 4.6.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: github-actions\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "b99130347e771714e26cddc06c2953ec4d1538f1",
+      "date": "2026-08-12T14:37:33+03:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump the maven-dependencies group with 3 updates (#127)\n\nBumps the maven-dependencies group with 3 updates: [com.tngtech.archunit:archunit-junit5](https://github.com/TNG/ArchUnit), [org.apache.maven.plugins:maven-enforcer-plugin](https://github.com/apache/maven-enforcer) and [com.diffplug.spotless:spotless-maven-plugin](https://github.com/diffplug/spotless).\n\n\nUpdates `com.tngtech.archunit:archunit-junit5` from 1.4.1 to 1.5.0\n- [Release notes](https://github.com/TNG/ArchUnit/releases)\n- [Commits](https://github.com/TNG/ArchUnit/compare/v1.4.1...v1.5.0)\n\nUpdates `org.apache.maven.plugins:maven-enforcer-plugin` from 3.6.2 to 3.6.3\n- [Release notes](https://github.com/apache/maven-enforcer/releases)\n- [Commits](https://github.com/apache/maven-enforcer/compare/enforcer-3.6.2...enforcer-3.6.3)\n\nUpdates `com.diffplug.spotless:spotless-maven-plugin` from 3.4.0 to 3.9.0\n- [Release notes](https://github.com/diffplug/spotless/releases)\n- [Changelog](https://github.com/diffplug/spotless/blob/main/CHANGES.md)\n- [Commits](https://github.com/diffplug/spotless/compare/maven/3.4.0...maven/3.9.0)\n\n---\nupdated-dependencies:\n- dependency-name: com.tngtech.archunit:archunit-junit5\n  dependency-version: 1.5.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: maven-dependencies\n- dependency-name: org.apache.maven.plugins:maven-enforcer-plugin\n  dependency-version: 3.6.3\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: maven-dependencies\n- dependency-name: com.diffplug.spotless:spotless-maven-plugin\n  dependency-version: 3.9.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: maven-dependencies\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "ac59a3596cbc290df1d5a20194d8760bbf1c0ede",
+      "date": "2026-08-12T14:37:15+03:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump eclipse-temurin in the container-images group (#126)\n\nBumps the container-images group with 1 update: eclipse-temurin.\n\n\nUpdates `eclipse-temurin` from 21.0.8_9-jdk-jammy to 22.0.2_9-jdk-jammy\n\n---\nupdated-dependencies:\n- dependency-name: eclipse-temurin\n  dependency-version: 22.0.2_9-jdk-jammy\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n  dependency-group: container-images\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "c555d4889253638bdf56c670d90fcf3cdb58d607",
+      "date": "2026-08-12T14:36:23+03:00",
+      "author": "Rahil S",
+      "email": "rahilrshk@gmail.com",
+      "message": "fix(platform): close final production audit gaps (#124)\n\n* test(http): cover distributed runtime boundaries\n\n* fix(platform): close final production audit gaps"
+    },
+    {
+      "sha": "a1ec83ebf50d9c019f66b32d2a54ed152ab59610",
+      "date": "2026-08-12T14:35:23+03:00",
+      "author": "Rahil S",
+      "email": "rahilrshk@gmail.com",
+      "message": "fix(webhooks): pin validated delivery targets (#123)\n\n* fix(api): bound streamed request bodies\n\n* fix(platform): reconcile distributed ride state\n\n* test(outbox): cover ride stream publication\n\n* fix(webhooks): pin validated delivery targets"
+    },
+    {
+      "sha": "521bf93dd6d248d5b0c06850a00a10c076eb624c",
+      "date": "2026-08-12T14:35:18+03:00",
+      "author": "Rahil S",
+      "email": "rahilrshk@gmail.com",
+      "message": "fix(platform): harden distributed runtime boundaries (#122)\n\n* fix(api): bound streamed request bodies\n\n* fix(platform): reconcile distributed ride state\n\n* test(outbox): cover ride stream publication"
+    },
+    {
+      "sha": "ce010f28671a35a3d5384eb503ecd63db56a502d",
+      "date": "2026-08-12T14:35:10+03:00",
+      "author": "Rahil S",
+      "email": "rahilrshk@gmail.com",
+      "message": "fix(trust): make support and safety workflows atomic (#121)\n\n* fix(trust): make case workflows atomic\n\n* test(notifications): protect incident privacy\n\n* test(http): verify atomic case updates"
+    },
+    {
+      "sha": "6929274786c509bcdbe598bf2f8286ab9c2a5f6d",
+      "date": "2026-08-12T14:34:51+03:00",
+      "author": "Rahil S",
+      "email": "rahilrshk@gmail.com",
+      "message": "fix(payments): add reconciliation safety controls (#120)"
+    },
+    {
+      "sha": "10d47e575e88d42a0291ad85c4cec5eb0b813f23",
+      "date": "2026-08-12T14:34:43+03:00",
+      "author": "Rahil S",
+      "email": "rahilrshk@gmail.com",
+      "message": "fix(platform): enforce domain readiness contracts (#119)\n\n* fix(api): enforce domain consistency contracts\n\n* fix(platform): enforce retention and secret boundaries\n\n* test(http): cover production readiness contracts"
+    },
+    {
+      "sha": "20217c03ac7784f00140afc51af8032540299e80",
+      "date": "2026-08-12T14:34:27+03:00",
+      "author": "Rahil S",
+      "email": "rahilrshk@gmail.com",
+      "message": "fix(platform): establish production runtime foundations (#118)\n\n* fix(deploy): separate migrations and validate production\n\n* feat(tenancy): add invitations and abuse protection"
+    },
+    {
+      "sha": "3ac5dc2e5c5ec501c5b636678437fb80c473ccdd",
+      "date": "2026-08-12T14:34:19+03:00",
+      "author": "Rahil S",
+      "email": "rahilrshk@gmail.com",
+      "message": "fix(payments): preserve financial settlement invariants (#117)"
+    },
+    {
+      "sha": "39a34db2e0d472e573f4d6e72b5497aeee3476d0",
+      "date": "2026-08-12T14:34:00+03:00",
+      "author": "Rahil S",
+      "email": "rahilrshk@gmail.com",
+      "message": "fix(dispatch): recover supply and exhausted offers (#116)"
+    },
+    {
+      "sha": "4539af7513d28583c126728aaec9de5d197cf580",
+      "date": "2026-08-12T14:33:44+03:00",
+      "author": "Rahil S",
+      "email": "rahilrshk@gmail.com",
+      "message": "feat(operations): run fenced outbox delivery (#115)"
+    },
+    {
+      "sha": "c9a36f698f1b85bf4cdeca268813fb5bb5acf905",
+      "date": "2026-08-12T14:33:25+03:00",
+      "author": "Rahil S",
+      "email": "rahilrshk@gmail.com",
+      "message": "feat(drivers): add compliance documents and ride events (#114)"
+    },
+    {
+      "sha": "9fcdcf25e8b0848f21107a538263fe1466162bac",
+      "date": "2026-08-12T14:33:03+03:00",
+      "author": "Rahil S",
+      "email": "rahilrshk@gmail.com",
+      "message": "feat(tenancy): enforce PostgreSQL row-level security (#113)\n\n* refactor!: complete legacy prototype removal\n\n* feat(tenancy): enforce PostgreSQL row-level security"
+    },
+    {
+      "sha": "e31a8f1fff6b24281e50375845c28e33135c62b6",
+      "date": "2026-08-12T14:30:06+03:00",
+      "author": "Rahil S",
+      "email": "rahilrshk@gmail.com",
+      "message": "refactor!: complete legacy prototype removal (#112)"
+    }
+  ],
+  "commit_sha": "a80d2d7d407f66b3464f2ddf271953893ab582e5",
+  "extracted_at": "2026-10-05T18:42:49.337524+00:00"
+}

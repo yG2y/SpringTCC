@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "b584dbeedd59bb85ad2da2340b04661b3cd8ac29",
+      "date": "2026-09-28T14:44:55+02:00",
+      "author": "Vincent Paturet",
+      "email": "vincent.paturet@entur.org",
+      "message": "Increase memory resources\n"
+    },
+    {
+      "sha": "ea2b11607abfbb80c0990e597e7da8191434b72f",
+      "date": "2026-09-28T11:18:14+02:00",
+      "author": "henrik242",
+      "email": "henrik242@users.noreply.github.com",
+      "message": "Upgrade Camel to 4.22.1 (#844)\n\nDrops the workarounds for CAMEL-24315 and CAMEL-24351. Binary downloads turn off json binding, which since CAMEL-24001 overrides produces()."
+    },
+    {
+      "sha": "c415a565b2705350808122e17983c8721f31fcb5",
+      "date": "2026-09-21T13:01:03+02:00",
+      "author": "Vincent Paturet",
+      "email": "46598384+vpaturet@users.noreply.github.com",
+      "message": "Add FLT to the DatedServiceJourney codespaces (#843)\n\nFlytoget upgraded its NeTEx import to 1.16 and publishes DatedServiceJourney\nreplacements with the 1.16 structure (replacedJourneys/DatedVehicleJourneyRef).\nFLT was not in netex.dsj.codespaces, so hasDsjReplacements() returned false and\nboth the legacy export and the legacy copy of the original dataset sent to Nisaba\nwere plain copies of the 1.16 dataset: outbound/netex-dsj-legacy/, the default\noutbound/netex/ folder, the aggregated Norway export built from them, and the\nimported/ and imported-dsj-legacy/ folders that nuska serves as the legacy\nvariant all carried replacedJourneys.\n\nProduction OTP reads the default folder with netex-java-model 2.0.15.4 and cannot\nread that structure.\n\nVerified in dev, where the property was patched in the config map ahead of this\nchange: the legacy variants of the 2026-09-21 FLT dataset are NeTEx 1.15 with\n1 169 DatedServiceJourneyRef and no replacedJourneys, and the new variants are\nunchanged 1.16 with 2 338 replacedJourneys."
+    },
+    {
+      "sha": "8cfb5b72ee7f83936a6ba05a36f6c6aa6776158c",
+      "date": "2026-09-18T15:51:07+02:00",
+      "author": "Vincent Paturet",
+      "email": "46598384+vpaturet@users.noreply.github.com",
+      "message": "chore(renovate): keep Camel minor out of the aggregate PR (#841)\n\nThe shared ror-renovate-config extends group:allNonMajor, which folds\nevery minor and patch into the all-minor-patch aggregate PR. The\nexisting Camel rule only set automerge to false, so a Camel minor still\nlanded in that PR (see #816, Camel 4.21.0 -> 4.22.1).\n\nCamel is not SemVer compliant, so a minor may carry breaking changes and\ndeserves to be reviewed and tested on its own. Override groupName for\nCamel major and minor so they get a dedicated PR, leaving only Camel\npatches in the aggregate. Both artifacts resolve camel.version, so they\nare grouped together rather than ungrouped, which would produce two\nbranches editing the same line."
+    },
+    {
+      "sha": "b93506574f62143944e55feb601a602adac22987",
+      "date": "2026-09-18T14:22:59+02:00",
+      "author": "Vincent Paturet",
+      "email": "46598384+vpaturet@users.noreply.github.com",
+      "message": "Build the aggregated Norway export without recompressing it (#838)\n\n* perf(netex): build the aggregated Norway export without recompressing it\n\nThe per-provider exports are already deflated and the aggregation only repackages them,\nyet it unpacked all 62 onto disk and re-deflated the whole tree: 186 s on average, on the\ncritical path of every OTP2 graph build. RawZipMerger now copies the entries still\ncompressed with commons-compress, which takes a variant from 134.5 s to 1.3 s on the\nproduction inputs with content-equal output. A corrupt export fails the merge with its\nname, and the plan owns and closes its source archives.\n\n* fix(netex): check the missing DSJ exports against the providers the aggregation read\n\ndirect:distributeMissingDsjNetexExports re-read the provider cache after\ndirect:otp2ExportMergedNetex had snapshotted it, so a provider dropping out of the cache\nbetween the two reads was neither distributed nor recorded as missing, and both variants\nwere silently built without it. The distribution now checks the snapshot carried in the\nexchange. The published-provider filter and the export file name are each defined once,\nin BaseRouteBuilder and NetexDsjExportConfig.\n\n* chore(netex): drop the stream caching of the merge route, whose body is a File\n\nStream caching only acts on InputStream bodies, and the body of direct:otp2MergeNetex has\nbeen a java.io.File since before the raw copy. The flag never did anything.\n\n* Improve Javadoc"
+    },
+    {
+      "sha": "44a5efc46656b7519bd2efe5f78835fc07c25826",
+      "date": "2026-09-17T15:37:44+02:00",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update actions/checkout action from vv4.4.0 to v7 (#826)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "d02b464e4b5c9cefbbb7714e83de304dca980d31",
+      "date": "2026-09-17T15:37:26+02:00",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update actions/setup-java action from vv5.7.0 to v6 (#829)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "bd2ad337350eb356351275a340f5f8a6bdf7cd27",
+      "date": "2026-09-17T13:58:57+02:00",
+      "author": "Vincent Paturet",
+      "email": "46598384+vpaturet@users.noreply.github.com",
+      "message": "chore(deps): upgrade entur-helpers to 7.4.0 (#840)\n\nAll five entur-helpers modules used here (entur-google-pubsub,\nstorage-gcp-gcs, organisation, oauth2, permission-store-proxy) share\nthe entur.helpers.version property, so one bump moves them together.\n\n7.4.0 is the latest release on Maven Central. It still pins\nspring-cloud-gcp 5.11.3 and leaks spring-boot-loader-tools, so the\ndependencyManagement override and the exclusion in this pom both stay."
+    },
+    {
+      "sha": "345b6423742d198a596c4508c52ba0517c4a04be",
+      "date": "2026-09-16T12:13:49+02:00",
+      "author": "Vincent Paturet",
+      "email": "46598384+vpaturet@users.noreply.github.com",
+      "message": "fix(netex): stop the DSJ backfill from reporting provider job events (#839)\n\nThe batches that distribute the NeTEx exports of every provider to the legacy\nand new DatedServiceJourney folders report an EXPORT_NETEX_LEGACY job event per\nprovider, built by JobEvent.providerJobBuilder from the exchange they run in.\nBoth batches run in a single exchange, so all these events carry the same\ncorrelation id: the one of the aggregated export for\ndirect:distributeMissingDsjNetexExports, the one allocated by the admin endpoint\nfor direct:distributeAllDsjNetexExports.\n\nNabu aggregates timetable job events by correlation id alone and takes the\nprovider, the file name and the user of a job from the first event of the group.\nThe tst nightly run of 2026-09-16 therefore produced a single job out of the 92\nevents of the 46 providers distributed by the aggregated export: attributed to\nrb_atb, without a file name, from 09:27:47 to 09:28:10. Ninkasi renders it as a\n\"Validation\" row of AtB with every pipeline step greyed out, since it names a\njob without a file name \"Validation\" and drops the actions that are not steps of\nthe import pipeline. Nothing was wrong with the run itself: the 46 providers\nwere distributed, the aggregated export completed and the graph build started.\n\nA batch is a system action that belongs to no provider's import job: it now\nreports nothing. The new PROP_REPORT_JOB_EVENTS property is cleared by the two\nbatch routes before the split, the way PROP_IGNORE_DISTRIBUTION_FAILURES already\nis, and the four EXPORT_NETEX_LEGACY events are reported through\ndirect:reportDsjNetexExportJobEvent, which filters on it. That route also exists\nso that the event is not built when it is not reported: JobEvent.build()\nserialises the event into the body, and an event body that nobody publishes is\nwhat #837 had to fix. The distribution itself is unchanged, and so is the\nreporting of the publication pipeline, of the admin endpoint for a single\nprovider, which allocates its own correlation id, and of the blocks export."
+    },
+    {
+      "sha": "0a53aed8996fe622eef7cbf3841b20ace780a301",
+      "date": "2026-09-15T15:25:46+02:00",
+      "author": "Vincent Paturet",
+      "email": "46598384+vpaturet@users.noreply.github.com",
+      "message": "fix(netex): keep the blocks post-validation job event alive through the DSJ distribution (#837)\n\nThe EXPORT_NETEX_BLOCKS_POSTVALIDATION branch of direct:antuNetexValidationComplete\nbuilt its OK job event before calling direct:distributeDsjNetexBlocksExport, which\n#833 added. JobEvent.build() serialises the event into the exchange body and\ndirect:updateStatus publishes the body and nothing else, but\ndirect:doDistributeDsjNetexBlocksExport blanks the body in its doFinally. Marduk\ntherefore published an empty message on JobEventQueue and Nabu never saw the OK\nevent: every block dataset validation stayed unfinished in Ninkasi, without a single\nERROR in the logs.\n\nBuild the event after the distribution instead, the way\nChouetteExportNetexBlocksRouteBuilder already does. It sits between the end of the\nchouette.enablePostValidation filter and endChoice(), so that the event is still\nproduced when post-validation is enabled and the filtered block is skipped.\n\nAlso stop the two DSJ side routes from clobbering the exchange they are handed:\ndoDistributeDsjNetexBlocksExport and doDistributeOriginalDatasetToNisaba now save the\nbody and restore it in doFinally, exactly as they already do for FILE_HANDLE. A route\nthat is a no-op when the dual export is disabled should leave the exchange as it found\nit when it is enabled.\n\nObserved in dev after the nightly run of 2026-09-14: five providers reached\nEXPORT_NETEX_BLOCKS_POSTVALIDATION/STARTED and none reached OK. tst and prd would have\nlost the same events on their first nightly run after #833 was deployed, since\nchouette.enablePostValidation=false and netex.dsj.enabled=true in all three\nenvironments.\n\nThe regression went unnoticed because src/test/resources/application.properties leaves\nchouette.enablePostValidation at its true default, which closes the filter and hides\nthe faulty path. The new test class sets it to false; a second test keeps the\nflag-on variant covered.\n\nNote: the OK event now carries the username \"System\" on untriggered runs, where it\npreviously carried none, because doDistributeDsjNetexBlocksExport defaults the\nusername and the event is built after it. Consistent with #834."
+    },
+    {
+      "sha": "f104e31412898ed38b5b4250336acfaf155ae394",
+      "date": "2026-09-15T12:07:12+02:00",
+      "author": "Vincent Paturet",
+      "email": "46598384+vpaturet@users.noreply.github.com",
+      "message": "feat(netex): keep the uploaded dataset before upgrading it to NeTEx 1.16 (#836)\n\nThe upgrade added by #833 replaces the stored dataset in place: direct:upgradeNetexDataset\ndownloads the blob at FILE_HANDLE, converts it and uploads the result to the same object.\nThe bytes the provider submitted are then gone, and there is no way back to them if the\nXSLT turns out to mangle something or a provider disputes what was imported. #835 widened\nthe reach of that overwrite: the nightly validation runs the same upgrade, so a stored\ndataset can be replaced months after its upload, with no upload event left to replay.\n\nThe dataset is now copied as it was uploaded before it is overwritten, next to the\nupgraded one and under the same name postfixed by -original-v115\n(inbound/received/rb_vyg/netex.zip -> inbound/received/rb_vyg/netex-original-v115.zip).\nThe copy is a server-side copy through direct:copyInternalBlobInBucket, taken while the\nstored object still holds the original: the dataset is neither downloaded nor uploaded a\nsecond time, and the body, the upgraded archive waiting to be uploaded, is untouched.\n\nIt is taken only when the upgrade actually converted a file, so a dataset already in\nNeTEx 1.16, one of a codespace without replacement information and a non-NeTEx file leave\nno copy - nothing was overwritten, so there is nothing to keep. It runs inside the doTry()\nof the calling route, so a failed copy fails the upgrade before the original is\noverwritten, which the nightly validation already reports as a failed PREVALIDATION.\n\nThe copy is a regular file of the provider's folder: it is listed and downloaded through\nthe timetable API like the dataset itself, and can be re-imported. A later upgrade of the\nsame dataset replaces it, so it always mirrors the dataset currently stored.\n\nNo new property: the copy is part of the upgrade step and is taken exactly when\nnetex.import.dsj.upgrade.enabled is set."
+    },
+    {
+      "sha": "fa56949051ecae8b46640d2bda82a5297bb734af",
+      "date": "2026-09-14T20:27:10+02:00",
+      "author": "Vincent Paturet",
+      "email": "46598384+vpaturet@users.noreply.github.com",
+      "message": "fix(netex): upgrade the stored dataset to NeTEx 1.16 before the nightly validation (#835)\n\nThe NeTEx 1.16 upgrade added by #833 was wired into the upload path only:\ndirect:upgradeNetexDatasetIfNeeded had a single caller, direct:processValidFile.\nThe nightly validation reuses the dataset stored by the last upload\n(NightlyValidationFileProcessor) and sends it straight to the validation bucket, so a\nprovider that has not uploaded since the pipeline moved to NeTEx 1.16 has its pre-1.16\ndataset validated and re-imported as it is. For VYG, GOA and SJN that means Antu fails\nthe run on the deprecated DatedServiceJourneyRef, and on an Antu without that rule the\ndataset reaches a NeTEx 1.16 Chouette, which drops every replacement reference silently.\n\nThe nightly validation now runs the same upgrade before copying the dataset to the\nvalidation bucket, so the whole chain reads the upgraded dataset. The upgrade replaces\nthe stored dataset in place, so the first nightly run heals it and the following ones\nconvert nothing.\n\n* the upgrade no longer requires a FILE_TYPE header. It is set by the classification of\n  an uploaded file; the nightly validation reuses a stored dataset and never classifies\n  it, and its candidates are not necessarily NeTEx providers. An absent header is\n  therefore not a reason to skip the upgrade - the codespace decides - while a header\n  naming another type still skips it.\n* a dataset that cannot be upgraded fails that provider's nightly run and is reported as\n  a failed pre-validation, rather than being validated as it is: falling back to the\n  stored dataset is exactly the silent degradation the upgrade prevents. The other\n  providers of the nightly run are unaffected.\n* the failure is reported with doTry/doCatch rather than an onException on the nightly\n  route: the exception is raised in another route, whose error handler marks the exchange\n  as failure-handled before it returns, so the caller's failure processor never runs.\n  rethrowCaughtException moves to BaseRouteBuilder, where both users can reach it.\n\nVerified end to end on the local stack with the VYG dataset of 2026-09-11 (NeTEx 1.15,\n25 839 DatedServiceJourneyRef) stored as the last uploaded file: before the change the\nnightly run sent it unconverted and Antu failed it on the deprecated ref; after it, the\nnightly upgraded all 25 files, Antu validated it with no error, the Chouette validation\nand transfer jobs ran, and an import of the upgraded dataset left 25 839 replacement\nreferences in Chouette."
+    },
+    {
+      "sha": "a04fdd96ae6dfa58a9962edadeba7214dce83636",
+      "date": "2026-09-14T18:39:09+02:00",
+      "author": "Vincent Paturet",
+      "email": "46598384+vpaturet@users.noreply.github.com",
+      "message": "fix(netex): report the system as the user of an untriggered DSJ export (#834)\n\nThe job events of the DatedServiceJourney export carried no username when\nno user triggered the export, and Ninkasi renders such an event as an empty\nentry. This happens on every aggregated export: the OTP2 merged export\ndistributes the provider exports that are missing from the legacy or new\nfolder, and those exchanges carry no RutebankenUsername header.\n\nDefault the header to \"System\" on the two routes that report\nEXPORT_NETEX_LEGACY events, the way the routes that fan out over all\nproviders in ChouetteValidationRouteBuilder already do. The header is only\nfilled in when it is absent, so an export triggered from the admin API,\nwhich runs through direct:setUsername, is still reported as triggered by\nthat user."
+    },
+    {
+      "sha": "7eb786c8c8adf747fbf796b5a5766d01490edc35",
+      "date": "2026-09-14T13:47:49+02:00",
+      "author": "Vincent Paturet",
+      "email": "46598384+vpaturet@users.noreply.github.com",
+      "message": "Dual NeTEx 1.15/1.16 export for the DatedServiceJourney transition (#833)\n\n* feat(netex): dual NeTEx 1.15/1.16 export for the DatedServiceJourney transition\n\nNeTEx 1.16 changes how a DatedServiceJourney references the journeys it replaces: the\nadditional DatedServiceJourneyRef elements become a replacedJourneys container holding\nDatedVehicleJourneyRef. Chouette and Antu move to 1.16, but consumers of the published\ndatasets, OTP included, still read 1.15. Publish both versions from the same pipeline so\nthat each consumer migrates on its own schedule.\n\nWhile netex.export.dsj.enabled is set, every published dataset is stored in three folders\nof the public bucket: netex-dsj-new (as exported by the pipeline, 1.16), netex-dsj-legacy\n(downgraded to 1.15) and the default folder netex, which receives the variant selected by\nnetex.export.dsj.default.variant. Phase 1 serves legacy from the default folder, phase 2\nflips it to new, and the folders disappear once the transition is over. The private blocks\nexport and the original dataset sent to Nisaba are stored the same way; the timetable API\npicks a variant with the dsjcompatibility request parameter.\n\nDatasets uploaded by a provider are upgraded to 1.16 in place when\nnetex.import.dsj.upgrade.enabled is set, so that the import pipeline sees a single\nversion. Both conversions are XSLT transformations maintained in\nno.rutebanken.marduk.netex.conversion; netex-java-model is only used by their tests, to\nvalidate the converted documents against the schemas.\n\nOnly the codespaces listed in netex.dsj.codespaces produce DatedServiceJourneys with\nreplacement information (VYG, SJN, GOA); the datasets of the others are copied between the\nfolders unchanged. The conversions are selected on the version number declared by the\ndocument rather than on a literal prefix, since these codespaces publish a spread of\nversions: the upgrade converts everything older than 1.16 and the downgrade everything\nnewer than 1.15.\n\n* fix(netex): fail the publication instead of silently skipping a DSJ variant\n\nReview follow-up on the dual NeTEx 1.15/1.16 export.\n\nA failed distribution was swallowed in three places, each leaving one\nfolder silently out of step with the others:\n\n* the per-provider backfill skipped a provider whose export could not be\n  distributed, and the aggregated Norway export was then built from a\n  folder missing that provider and copied into the default folder, which\n  is also the OTP graph input. The backfill now only tolerates a failure\n  when it is not feeding an aggregated export, and every variant of the\n  aggregated export is checked to cover the same providers as the\n  previous one.\n* the original dataset sent to Nisaba: the imported/ copy is written by\n  that route alone, so swallowing the failure left the import without an\n  original dataset for good.\n* the NeTEx blocks export: the legacy copy is overwritten in place and\n  the timetable API cannot tell a stale copy from a current one, so a\n  swallowed failure made it serve the previous run's dataset as current.\n\nconvertZip now rejects a source holding no entry, which otherwise\nproduced an empty archive silently.\n\nDocumentation: \"legacy\" names the DatedServiceJourney replacement\nstructure, not the NeTEx version of the dataset. A dataset without\nreplacement information is copied between the folders unchanged and keeps\nthe version the pipeline exported, which is NeTEx 1.16 once Chouette has\nmigrated; the OpenAPI description, the dsjcompatibility parameter, the\nfolder javadoc and the README all claimed otherwise. Also drops FLT from\nthe codespace list in the README and the stale netex-java-model\nattribution for the converters, which now live in marduk.\n\n* chore(helm): enable the NeTEx 1.16 upgrade on import in every environment\n\nChouette and Antu move to NeTEx 1.16 when this PR is merged, so rollout\nstep 2 is configured together with step 1: uploaded datasets of the\nDatedServiceJourney codespaces that still declare a version older than\n1.16 are upgraded in place, and the pipeline sees a single NeTEx version.\n\n* fix(netex): resolve the configured DatedServiceJourney variants at startup\n\nnetex.export.dsj.api.default.variant was only read while serving a\ndownload, and outside the try/catch of resolveApiVariant, so an\nunparseable value started normally and then turned every dataset download\ninto a 400 naming no property. The same typo in\nnetex.export.dsj.default.variant aborted the context at boot instead,\nbecause the route builder reads it while building routes.\n\nBoth are now resolved once in a @PostConstruct and fail the context with a\nmessage naming the property at fault. parseVariant is package-private so\nthat the parsing is unit-tested directly rather than through a context\nthat refuses to start."
+    },
+    {
+      "sha": "fabdedce70281e8355dce35ab55284daa76af105",
+      "date": "2026-09-11T21:42:27Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Pin dependencies (#825)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "d23a4c9c94a8285e1df2ba078c4fa32dec475685",
+      "date": "2026-09-09T11:05:13+02:00",
+      "author": "Vincent Paturet",
+      "email": "46598384+vpaturet@users.noreply.github.com",
+      "message": "feat(otp2): publish the new graph under a stable name per serialization version (#832)\n\nIn addition to the timestamped graph file and the pointer files, copy the published OTP2 graph\nto netex-otp2/<serialization version>/Graph-otp2-current.obj. OTP instances can then load the\ngraph for their own serialization version directly (OTP substitutes\n${otp.serialization.version.id} in build-config.json) instead of resolving the pointer file in\nan entrypoint script, which lets the OTP image run without a shell.\n\nThe copy happens before the pointer files are written, since those trigger the redeployment of\nthe OTP instances. The stable copy is excluded from the graph listing (Otp2ListGraphRouteBuilder)\nbecause it duplicates the timestamped file."
+    },
+    {
+      "sha": "106095ee8fde7f2cfe2ef4504fc9475b4f7e2355",
+      "date": "2026-09-07T13:51:44+02:00",
+      "author": "Henrik Brautaset Aronsen",
+      "email": "henrik.brautaset.aronsen@entur.org",
+      "message": "ignore .claude\n\n[ci skip]\n"
+    },
+    {
+      "sha": "7b45c1dc55b8d24483e08201e229d314fcc6795c",
+      "date": "2026-09-04T11:58:03+02:00",
+      "author": "Henrik Brautaset Aronsen",
+      "email": "henrik.brautaset.aronsen@entur.org",
+      "message": "Update publiccode.yml to schema version 0.7.0\n\n[ci skip]\n"
+    },
+    {
+      "sha": "4bec545eae2e58acabde27fa895c71bec138c28a",
+      "date": "2026-09-04T11:37:50+02:00",
+      "author": "Henrik Brautaset Aronsen",
+      "email": "henrik.brautaset.aronsen@entur.org",
+      "message": "Add publiccode.yml\n\n[ci skip]\n"
+    },
+    {
+      "sha": "fbeb4865057252f904efb4770637354652245dac",
+      "date": "2026-09-02T18:28:01+02:00",
+      "author": "henrik242",
+      "email": "henrik242@users.noreply.github.com",
+      "message": "Move the readiness probe off the application port (#831)\n\ncamel-kubernetes derives cluster membership from pod readiness, so a stall on\nplatform-http's shared task executor could drop a pod out of the cluster and\nflap leadership. Also raises renew-deadline-millis, which is what expired on\nthe leader before the 2026-09-01 flap. Neither is proven to explain the\nRejectedExecutionException storm that followed."
+    },
+    {
+      "sha": "50a026a9d8564108005c05ea7ea977154c2cb739",
+      "date": "2026-09-01T21:35:10Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update all non-major dependencies (#823)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "a50cf80293743be2945ea7f9e81f8e82a67c6cd6",
+      "date": "2026-08-26T11:44:27+02:00",
+      "author": "Henrik Brautaset Aronsen",
+      "email": "henrik.brautaset.aronsen@entur.org",
+      "message": "update CLAUDE.md\n\n[ci skip]\n"
+    },
+    {
+      "sha": "090fc3812ce46534ece51db467a484bfbf0186a7",
+      "date": "2026-08-26T11:42:16+02:00",
+      "author": "henrik242",
+      "email": "henrik242@users.noreply.github.com",
+      "message": "Poll the graph builder job status when the pod watch stalls (#828)\n\nA fabric8 pod watch can stop delivering events without raising an error, so\nrunJob() blocked on a latch that was never released and wedged the graph build\nroute for the whole timeout. Poll the job status every 60s as a backstop and\nlog a warning when the poll, not the watch, detects the terminal state.\n\nCut the timeout from 12000 to 5400. Observed builds are 16-20 minutes for\nnetex and 18-32 for base."
+    },
+    {
+      "sha": "7948f2c1a54dbf55b3dac14fca436e10bbe009f5",
+      "date": "2026-08-19T12:47:29+02:00",
+      "author": "Assad Riaz",
+      "email": "assad.riaz@entur.org",
+      "message": "update gha config for github cd migration\n"
+    },
+    {
+      "sha": "168d901101da4edcdcb653fe394116e52972d0ae",
+      "date": "2026-08-19T12:41:27+02:00",
+      "author": "Assad Riaz",
+      "email": "assad.riaz@entur.org",
+      "message": "update terraform config for github cd migration\n"
+    },
+    {
+      "sha": "e09a91e38275cb56670b2330cdfb740e285cf9a3",
+      "date": "2026-08-19T12:11:53+02:00",
+      "author": "Assad Riaz",
+      "email": "assad.riaz@entur.org",
+      "message": "update helm chart, add labels and annoations for github cd migration\n"
+    },
+    {
+      "sha": "d6433adbad424700eb07c1de97401efb9b3875c3",
+      "date": "2026-08-13T10:52:34+02:00",
+      "author": "henrik242",
+      "email": "henrik242@users.noreply.github.com",
+      "message": "Report an incomplete Antu validation as TIMEOUT (#822)\n\nAntu can now say it never finished the validation, as opposed to the dataset being invalid, and the error code says which. An unknown status is logged rather than discarded silently, and an unknown validation stage no longer falls through to the job event queue with the raw status as its body. Deploy before Antu starts sending the new status."
+    },
+    {
+      "sha": "5c6599a173b145025db479aed023622fee6b6b20",
+      "date": "2026-08-05T20:46:43Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Pin dependencies (#801)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "0afef1a82ea36ad5bf8cdbdecccee428da5a9053",
+      "date": "2026-08-05T13:54:31+02:00",
+      "author": "Henrik Brautaset Aronsen",
+      "email": "henrik.brautaset.aronsen@entur.org",
+      "message": "Guard kubernetes-client against renovate\n\nkubernetes-client is held at the version camel-kubernetes pins; a bump ahead of\nCamel splits the fabric8 stack and only fails at runtime.\n"
+    },
+    {
+      "sha": "e184d2c0521a6322efd387059b9543da9f82c7ad",
+      "date": "2026-08-05T11:40:33+02:00",
+      "author": "Henrik Brautaset Aronsen",
+      "email": "henrik.brautaset.aronsen@entur.org",
+      "message": "Harden the docker smoke gate and drop a dead RBAC rule\n\nIgnoreUnrecognizedVMOptions keeps the chart deployable against a pre-JDK-24\nimage, where --sun-misc-unsafe-memory-access does not exist and kills the\nlauncher before any log line. The smoke job now reads the options with yq and\nasserts on them, so a broken lift fails instead of silently running the image\nwith no flags, and it gates docker-push rather than docker-build. Leader\nelection uses a Lease, so the marduk-leaders configmaps grant was dead.\n"
+    }
+  ],
+  "commit_sha": "b584dbeedd59bb85ad2da2340b04661b3cd8ac29",
+  "extracted_at": "2026-10-05T18:29:38.886553+00:00"
+}

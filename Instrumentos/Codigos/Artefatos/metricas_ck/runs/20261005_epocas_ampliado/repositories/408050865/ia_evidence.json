@@ -1,0 +1,167 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 22,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "9cf5e390e558ed240ce80feae445fff4b6739d67",
+      "date": "2026-03-05T22:32:15+05:30",
+      "author": "Imesha Sudasingha",
+      "email": "imesha.sudasingha@gmail.com",
+      "message": "Update README with API docs, RBAC matrix, demo users, and version history\n"
+    },
+    {
+      "sha": "72fc9e36c69796860749f5fb86dc561d5b9abfe0",
+      "date": "2026-03-05T17:05:09+05:30",
+      "author": "Imesha Sudasingha",
+      "email": "imesha.sudasingha@gmail.com",
+      "message": "Merge pull request #3 from IMS94/claude/audit-dependencies-springboot-Ce7JU\n\nUpgrade to Spring Boot 3.5.0 and Spring Security 6"
+    },
+    {
+      "sha": "0b4e56c0a393a56e8196455a722c480fb01bdca3",
+      "date": "2026-03-05T17:04:17+05:30",
+      "author": "Imesha Sudasingha",
+      "email": "imesha.sudasingha@gmail.com",
+      "message": "Fix security configuration for Spring Boot 3.x migration\n\n- Add explicit CorsConfigurationSource bean to ensure CORS works at\n  the security filter level (Spring Security 6 no longer delegates to\n  MVC @CrossOrigin for preflight requests)\n- Use explicit AntPathRequestMatcher for /error and /login to avoid\n  ambiguous matcher selection between Ant and MVC matchers\n- Set server.error.include-message=always to preserve error reason\n  messages in ResponseStatusException responses (Boot 3 defaults to\n  NEVER)\n- Make @EnableMethodSecurity(prePostEnabled = true) explicit to clearly\n  document RBAC enforcement\n- Add Lombok annotation processor path for maven-compiler-plugin 3.14+\n- Add spring-security-test dependency for MockMvc JWT testing\n- Fix test files: update renamed method, constructor, and deprecated\n  @MockBean annotation\n"
+    },
+    {
+      "sha": "bf0a65ff309d1afdd861cf3a5b90d71693154fba",
+      "date": "2025-12-17T06:15:42Z",
+      "author": "Claude",
+      "email": "noreply@anthropic.com",
+      "message": "Remove dependency audit report\n"
+    },
+    {
+      "sha": "c0293152be8d5725c3db367576abc2b18a5ff293",
+      "date": "2025-12-17T06:11:39Z",
+      "author": "Claude",
+      "email": "noreply@anthropic.com",
+      "message": "Upgrade to Spring Boot 3.5.0 and Spring Security 6\n\nMajor changes:\n- Upgrade Spring Boot from 2.5.3 to 3.5.0\n- Upgrade Java from 1.8 to 17 (required for Spring Boot 3.x)\n- Upgrade Auth0 java-jwt from 3.11.0 to 4.4.0\n- Remove junit-vintage-engine exclusion (not needed in Boot 3.x)\n\nSecurity configuration changes:\n- Replace WebSecurityConfigurerAdapter with SecurityFilterChain bean\n- Replace @EnableGlobalMethodSecurity with @EnableMethodSecurity\n- Replace authorizeRequests() with authorizeHttpRequests()\n- Replace antMatchers() with requestMatchers()\n- Update to lambda-based security DSL\n\nUpdate README with:\n- Java 17 requirement\n- Spring Boot 3.x migration documentation\n- Code examples for the new security configuration pattern\n"
+    },
+    {
+      "sha": "4c194590ac484b67280b413dc2a131f1f4ed0440",
+      "date": "2025-12-17T06:04:53Z",
+      "author": "Claude",
+      "email": "noreply@anthropic.com",
+      "message": "Add dependency audit report for Spring Boot JWT authorization project\n\nAnalyzes current dependencies vs latest versions and documents\nall deprecations that would require changes for a Spring Boot 3.x\nmigration, including WebSecurityConfigurerAdapter, @EnableGlobalMethodSecurity,\nauthorizeRequests(), and antMatchers().\n"
+    },
+    {
+      "sha": "e3f3fb15983375cb0672e77066f1b29c1a4fca93",
+      "date": "2026-03-05T16:53:33+05:30",
+      "author": "Imesha Sudasingha",
+      "email": "imesha.sudasingha@gmail.com",
+      "message": "Add RBAC unit tests and JWT authority converter tests\n"
+    },
+    {
+      "sha": "8a2a484746127a8ea11bbba8e12a006b9ca38ac9",
+      "date": "2021-12-17T07:53:27+05:30",
+      "author": "Imesha Sudasingha",
+      "email": "imesha.sudasingha@gmail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "bc3a1c41181321e87bc8547ecdeb0c3eea492b70",
+      "date": "2021-09-20T11:07:07+05:30",
+      "author": "Imesha Sudasingha",
+      "email": "imesha.sudasingha@gmail.com",
+      "message": "Add authorization overview\n"
+    },
+    {
+      "sha": "d5841a32913c9d044d08d5741285eda8671fd7dd",
+      "date": "2021-09-19T17:33:38+05:30",
+      "author": "Imesha Sudasingha",
+      "email": "imesha.sudasingha@gmail.com",
+      "message": "Add images and updated readme\n"
+    },
+    {
+      "sha": "6df55f7d6002777f1accd60c437cd947d2837a4f",
+      "date": "2021-09-19T17:05:37+05:30",
+      "author": "Imesha Sudasingha",
+      "email": "imesha.sudasingha@gmail.com",
+      "message": "Remove frontend code\n"
+    },
+    {
+      "sha": "b7fe64cff86582dc6e8e4973cdee3b74aa289456",
+      "date": "2021-09-19T17:05:02+05:30",
+      "author": "Imesha Sudasingha",
+      "email": "imesha.sudasingha@gmail.com",
+      "message": "Implement authorization with JWT\n"
+    },
+    {
+      "sha": "cb57a4c1e5f7783f31b91d73186040f43add8a55",
+      "date": "2021-08-05T20:41:22+05:30",
+      "author": "Imesha Sudasingha",
+      "email": "imesha.sudasingha@gmail.com",
+      "message": "Remove unused directory\n"
+    },
+    {
+      "sha": "9b097f2843c3d62a4767dc9fc4fb6e0b8ec9298d",
+      "date": "2021-08-05T20:40:38+05:30",
+      "author": "Imesha Sudasingha",
+      "email": "imesha.sudasingha@gmail.com",
+      "message": "Update spring boot version and added an example ReactJs app to consume the API\n"
+    },
+    {
+      "sha": "5f874ab112e70fa0e3925aef55f017958ce49ce4",
+      "date": "2020-10-29T13:45:34+05:30",
+      "author": "Imesha Sudasingha",
+      "email": "imesha.sudasingha@gmail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "c32fa840f0ffd4505ac109fc832bc02292baa99d",
+      "date": "2020-10-26T15:51:10+05:30",
+      "author": "imesha",
+      "email": "imesha.sudasingha@gmail.com",
+      "message": "Merge remote-tracking branch 'origin/master'\n"
+    },
+    {
+      "sha": "13ad98ac40a58255a687ef866cfec474ec80466e",
+      "date": "2020-10-26T15:50:57+05:30",
+      "author": "imesha",
+      "email": "imesha.sudasingha@gmail.com",
+      "message": "Removed unnecessary line\n"
+    },
+    {
+      "sha": "cda84e3d05ce3056627f2e44da84871a347f319b",
+      "date": "2020-10-26T15:46:18+05:30",
+      "author": "Imesha Sudasingha",
+      "email": "imesha.sudasingha@gmail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "ed89f0e46a758ab6c4370f508ed881247d6ed6be",
+      "date": "2020-10-26T15:41:07+05:30",
+      "author": "imesha",
+      "email": "imesha.sudasingha@gmail.com",
+      "message": "Added solution overview\n"
+    },
+    {
+      "sha": "57edcbdaaf4314f42d7ac1cf2eb95228e949fd1b",
+      "date": "2020-10-26T13:45:26+05:30",
+      "author": "imesha",
+      "email": "imesha.sudasingha@gmail.com",
+      "message": "Added README.md\n"
+    },
+    {
+      "sha": "de4d51e1dc4e753819c6f8237294e0f1b7d72b15",
+      "date": "2020-10-26T10:55:34+05:30",
+      "author": "imesha",
+      "email": "imesha.sudasingha@gmail.com",
+      "message": "Added \"/login\" endpoint and JWT generation logic\n"
+    },
+    {
+      "sha": "ae3730f424a0ae7c27d3376885ee8794986329b2",
+      "date": "2020-10-25T16:02:45+05:30",
+      "author": "imesha",
+      "email": "imesha.sudasingha@gmail.com",
+      "message": "Initial commit\n"
+    }
+  ],
+  "commit_sha": "9cf5e390e558ed240ce80feae445fff4b6739d67",
+  "extracted_at": "2026-10-05T18:17:51.922450+00:00"
+}

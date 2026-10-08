@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "a5fbc073141554bd03af6964654daeb2c4b5bf34",
+      "date": "2025-07-16T14:37:25+02:00",
+      "author": "Etienne Girondel",
+      "email": "etienne_girondel@connect-tech.sncf",
+      "message": "Merge pull request #900 from sncf-connect-tech/fix-doc\n\n:wrench: Fix GitHub org"
+    },
+    {
+      "sha": "0838c6895430d50f56752e7466114aae23765ba0",
+      "date": "2025-07-16T09:45:25+02:00",
+      "author": "Girondel Etienne",
+      "email": "egirondel@oui.sncf",
+      "message": ":wrench: Fix GitHub org\n"
+    },
+    {
+      "sha": "90995d20e0a213cf4e98457ab7958aa35393164d",
+      "date": "2024-09-04T15:35:24+02:00",
+      "author": "Etienne Girondel",
+      "email": "etienne_girondel@connect-tech.sncf",
+      "message": "Merge pull request #899 from sncf-connect-tech/ldap-fix\n\nFix LDAP"
+    },
+    {
+      "sha": "b6ba61ad824adf40ce495a14e8495b1c54c99f53",
+      "date": "2024-09-04T14:05:20+02:00",
+      "author": "Girondel Etienne",
+      "email": "egirondel@oui.sncf",
+      "message": "Fix: Encoder correctement le CN où nécessaire\n"
+    },
+    {
+      "sha": "88e1a229251a0f2763b77283c0d7180d5b8225e7",
+      "date": "2024-09-04T14:02:42+02:00",
+      "author": "Girondel Etienne",
+      "email": "egirondel@oui.sncf",
+      "message": "Tag un test dépendant de la disponibilité d'un utilisateur sans groupe\n"
+    },
+    {
+      "sha": "96ccbd5ea35b0f804ba0c470739ecfa15dbc3984",
+      "date": "2024-09-04T10:38:39+02:00",
+      "author": "Girondel Etienne",
+      "email": "egirondel@oui.sncf",
+      "message": "Ne pas créer un jar pour les test d'integration AD\n"
+    },
+    {
+      "sha": "390f9727fb3e094fadddf113c825eeecd5ada6b3",
+      "date": "2022-08-17T17:56:02+02:00",
+      "author": "Thomas L'Hostis",
+      "email": "thomas.lhostis@gmail.com",
+      "message": "Mise à jour de Spring Boot en version 2.7 et Axon en version 4\n"
+    },
+    {
+      "sha": "6a0c528a0f477927ccb7c385b061c1e12d26704d",
+      "date": "2022-03-01T14:07:31+01:00",
+      "author": "Lucas Cimon",
+      "email": "925560+Lucas-C@users.noreply.github.com",
+      "message": "Github Actions pipeline: now using MongoDB v4.2 (#886)\n\nCo-authored-by: Girondel Etienne <egirondel@oui.sncf>"
+    },
+    {
+      "sha": "9b00f89dbe0931000d3de76e4ca13c1597741e15",
+      "date": "2021-12-14T08:36:46+01:00",
+      "author": "Lucas Cimon",
+      "email": "925560+Lucas-C@users.noreply.github.com",
+      "message": "Updating log4j version (#882)\n\n"
+    },
+    {
+      "sha": "db6bd82e6324dd0d7b6eb28bb8a492ee61adf16d",
+      "date": "2021-08-19T15:10:36+02:00",
+      "author": "Lucas Cimon",
+      "email": "925560+Lucas-C@users.noreply.github.com",
+      "message": "Ajout de lightweight-architecture-decision-records/spring-actuator-endpoints.md\n"
+    },
+    {
+      "sha": "0c8bba0380325bea11d1c17d22e6509567d66d1b",
+      "date": "2021-07-15T13:02:41+02:00",
+      "author": "Lucas Cimon",
+      "email": "925560+Lucas-C@users.noreply.github.com",
+      "message": "Docker: made listening HTTP port configurable through $PORT env var\n"
+    },
+    {
+      "sha": "673f138f6b69003cd95701f5e0a56905cc554fc2",
+      "date": "2021-07-15T12:32:37+02:00",
+      "author": "Lucas Cimon",
+      "email": "925560+Lucas-C@users.noreply.github.com",
+      "message": "Docker: using a numeric ID when specifying user to run-as\n"
+    },
+    {
+      "sha": "fbc322b7ff709ef2cfd0689f02b1d06973a5f7ae",
+      "date": "2021-07-15T09:45:12+02:00",
+      "author": "Lucas Cimon",
+      "email": "925560+Lucas-C@users.noreply.github.com",
+      "message": "Docker: running backend image as non-root user\n"
+    },
+    {
+      "sha": "b6ed7cb4684bea9787bc2109adbba16aa9f0984d",
+      "date": "2021-01-28T09:55:54+01:00",
+      "author": "Thomas L'Hostis",
+      "email": "thomas.lhostis@gmail.com",
+      "message": "Fix #872 : Recherche de propriétés par nom et/ou valeur partielle + regex\n"
+    },
+    {
+      "sha": "f232c4069fdbb2389459854f25e1eddee49b7912",
+      "date": "2021-06-13T14:56:14+02:00",
+      "author": "Lucas Cimon",
+      "email": "925560+Lucas-C@users.noreply.github.com",
+      "message": "Minor README.md fixups\n"
+    },
+    {
+      "sha": "ddd30d32bd480b16bde75488a3251d211bde7ea5",
+      "date": "2021-06-13T09:55:05+02:00",
+      "author": "Lucas Cimon",
+      "email": "925560+Lucas-C@users.noreply.github.com",
+      "message": "Heroku deployment configuration fixups\n"
+    },
+    {
+      "sha": "e5690f1eb77020e3261aed341bbc40fb1a768fe1",
+      "date": "2021-06-13T09:55:05+02:00",
+      "author": "Lucas Cimon",
+      "email": "925560+Lucas-C@users.noreply.github.com",
+      "message": "Adding heroku.yml\n"
+    },
+    {
+      "sha": "e37f6cc3c2faf30bdfaece8936586608e9b4e145",
+      "date": "2021-05-26T17:21:02+02:00",
+      "author": "Lucas Cimon",
+      "email": "925560+Lucas-C@users.noreply.github.com",
+      "message": "Updating CHANGELOG.md & adding \"maintainer\" Docker label\n"
+    },
+    {
+      "sha": "0da1eaa482885e56150b59f8c298167edaeb48fb",
+      "date": "2021-05-26T16:32:04+02:00",
+      "author": "Suzie",
+      "email": "40024898+vrenaudeau@users.noreply.github.com",
+      "message": "Add simple ldap support (#878)\n\n* Add simple ldap support\n\n* Fix check bind dn and password\n\nCo-authored-by: Renaudeau Valentin <vrenaudeau@macompta.fr>"
+    },
+    {
+      "sha": "441b5df790e66439aa3467501c714b04c9dd1b7c",
+      "date": "2021-05-18T20:28:28Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump xstream from 1.4.16 to 1.4.17\n\nBumps [xstream](https://github.com/x-stream/xstream) from 1.4.16 to 1.4.17.\n- [Release notes](https://github.com/x-stream/xstream/releases)\n- [Commits](https://github.com/x-stream/xstream/commits)\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "0f74cf0257b64c6d7e9e770a35a0d29b6dc71b4b",
+      "date": "2021-04-26T17:50:28Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump commons-io from 2.6 to 2.7\n\nBumps commons-io from 2.6 to 2.7.\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "eefd0238bdcdf4f2e745bfc3f7e3c866b327bc87",
+      "date": "2021-03-23T00:15:32Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump xstream from 1.4.15 to 1.4.16\n\nBumps [xstream](https://github.com/x-stream/xstream) from 1.4.15 to 1.4.16.\n- [Release notes](https://github.com/x-stream/xstream/releases)\n- [Commits](https://github.com/x-stream/xstream/commits)\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "876141ec99ceccbe8c29ae2159e0ec57b44ddd85",
+      "date": "2021-01-26T09:52:13+01:00",
+      "author": "Thomas L'Hostis",
+      "email": "thomas.lhostis@gmail.com",
+      "message": "Add: Documentation workflow_dispatch (#871)\n\n"
+    },
+    {
+      "sha": "afb83e823bac33a54c3a82ea57d340e1277c83d7",
+      "date": "2021-01-20T10:05:18+01:00",
+      "author": "Lucas Cimon",
+      "email": "925560+Lucas-C@users.noreply.github.com",
+      "message": "Update search_properties.md"
+    },
+    {
+      "sha": "66c924171e73610fc9a9d8f59ef1f117bc076388",
+      "date": "2021-01-15T06:24:21+01:00",
+      "author": "Thomas L'Hostis",
+      "email": "thomas.lhostis@gmail.com",
+      "message": "Mise en place de GitHub Actions + Suppression de Travis\n"
+    },
+    {
+      "sha": "4f7f6ccdbea39dc80415d896730cf6aafeabb051",
+      "date": "2020-12-21T17:00:13Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump xstream from 1.4.14 to 1.4.15\n\nBumps [xstream](https://github.com/x-stream/xstream) from 1.4.14 to 1.4.15.\n- [Release notes](https://github.com/x-stream/xstream/releases)\n- [Commits](https://github.com/x-stream/xstream/commits)\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "44641e779181334765781b504f69e2787a762f03",
+      "date": "2020-12-03T16:44:48+01:00",
+      "author": "Thomas L'Hostis",
+      "email": "thomas.lhostis@gmail.com",
+      "message": "Add #384: Recherche de propriétés (#867)\n\n"
+    },
+    {
+      "sha": "e5eef483ddd27304ba6b87d5b25c86a8fa62bd50",
+      "date": "2020-11-24T10:35:42+01:00",
+      "author": "Lucas Cimon",
+      "email": "925560+Lucas-C@users.noreply.github.com",
+      "message": "chores: Travis CI: allowing to set $PUBLISH_BRANCH in order to trigger publishing of a Docker image from a branch\n"
+    },
+    {
+      "sha": "02d342145b1f6085792cf63f579f1fd74c155f99",
+      "date": "2020-11-22T11:52:57+01:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump xstream from 1.4.11.1 to 1.4.14 (#866)\n\n* Bump xstream from 1.4.11.1 to 1.4.13-java7\n\nBumps [xstream](https://github.com/x-stream/xstream) from 1.4.11.1 to 1.4.13-java7.\n- [Release notes](https://github.com/x-stream/xstream/releases)\n- [Commits](https://github.com/x-stream/xstream/commits)\n\nSigned-off-by: dependabot[bot] <support@github.com>\n\n* Mise à jour de XStream en version 1.4.14\n\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Thomas L'Hostis <thomas.lhostis@gmail.com>"
+    },
+    {
+      "sha": "e5c7d57c7711bd0ba333a685d18685eff9b32272",
+      "date": "2020-10-23T09:18:20+02:00",
+      "author": "Thomas L'Hostis",
+      "email": "thomas.lhostis@gmail.com",
+      "message": "Fix #863 : La recherche des technos ignore la casse\n"
+    }
+  ],
+  "commit_sha": "a5fbc073141554bd03af6964654daeb2c4b5bf34",
+  "extracted_at": "2026-10-05T18:09:47.786500+00:00"
+}

@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "d601d3a8fa481e67676f67beda790e0d6bda701d",
+      "date": "2026-01-07T19:22:14+01:00",
+      "author": "Andrey Belyaev",
+      "email": "belyaev.andrey@gmail.com",
+      "message": "Migrated to Spring Boot 4.0.1 (#22)\n\n* Migrated to Spring Boot 4.0.1\n\n* Updated GitHub actions to the latest versions\n\n* Bumped UI library version to the latest possible for less compiler\n\n* Reverted formatting"
+    },
+    {
+      "sha": "ff7668cae2ea17b133dded82eaadf7565c0ff290",
+      "date": "2025-04-18T16:26:44+02:00",
+      "author": "Maciej Walkowiak",
+      "email": "walkowiak.maciej@yahoo.com",
+      "message": "Upgrade dependencies & polish code (#21)\n\n- Spring Boot 3.4.4\n- MySQL 9.2"
+    },
+    {
+      "sha": "8ed306c215aa8020b51e530e370fd1d4f4b8306f",
+      "date": "2023-03-28T07:14:13+02:00",
+      "author": "Maciej Walkowiak",
+      "email": "walkowiak.maciej@yahoo.com",
+      "message": "Upgrade to Spring Boot 3.0 (#16)\n\n"
+    },
+    {
+      "sha": "1811d822485d55fbce13923d7e4b17241bc1a9c6",
+      "date": "2023-03-28T06:28:14+02:00",
+      "author": "Sébastien Deleuze",
+      "email": "sdeleuze@users.noreply.github.com",
+      "message": "2022 updates (#14)\n\n* Remove observability\n\nWill be restored after Spring Boot 3 update with a more up-to-date solution\n\n* Use Java 17 instead of 16\n\nBetter to use LTS\n\n* Update docker-compose.yml\n\nTo make it compatible with recent versions of docker-compose\n\n* Upgrade to Spring Boot 2.7.5\n\n* Use WebJars versioned URLs\n\nIn order to improve efficiency (see spring-projects/spring-framework#27619)\nand allow native image compatibility, this commit uses WebJars versioned URLs\nwhich are supported out of the box on Spring Boot via /META-INF/resources\ndefault resource location configuration, removing the need to use\nwebjars-locator-core dependency and WebJarsResourceResolver.\n\nI have been able to measure a consistent 5% startup time improvement on\nthe JVM with that simple change on my local machine.\n\n* Remove unneeded configuration properties"
+    },
+    {
+      "sha": "ea3147810a16607d75fe72ab084b8d8bc3dcff94",
+      "date": "2021-05-28T01:20:39+02:00",
+      "author": "Maciej Walkowiak",
+      "email": "walkowiak.maciej@yahoo.com",
+      "message": "Upgrade to MySQL 8.0.25 (#12)\n\n"
+    },
+    {
+      "sha": "9a21cae6a3d6e33e810c3f6ab8787bcc3c4e613b",
+      "date": "2021-05-28T00:41:29+02:00",
+      "author": "Maciej Walkowiak",
+      "email": "walkowiak.maciej@yahoo.com",
+      "message": "Upgrade Maven to 3.8.1 (#11)\n\n* Upgrade Maven to 3.8.1\n\n* Use Maven wrapper in Github Actions."
+    },
+    {
+      "sha": "d30f22686d3210b3c74dba07aed14c53183d6096",
+      "date": "2021-05-28T00:34:59+02:00",
+      "author": "Maciej Walkowiak",
+      "email": "walkowiak.maciej@yahoo.com",
+      "message": "Use Spotless for autoformatting. (#10)\n\n"
+    },
+    {
+      "sha": "af9732c3e69988071f153a3c4dc6a26112e97080",
+      "date": "2021-05-28T00:08:08+02:00",
+      "author": "Maciej Walkowiak",
+      "email": "walkowiak.maciej@yahoo.com",
+      "message": "Merge pull request #9 from spring-petclinic/java-16\n\nUpgrade to Java 16."
+    },
+    {
+      "sha": "b108df098746132bf369ec34b2dd524a6431ce52",
+      "date": "2021-05-28T00:03:07+02:00",
+      "author": "Maciej Walkowiak",
+      "email": "walkowiak.maciej@yahoo.com",
+      "message": "Set Github Actions to use Java 16\n"
+    },
+    {
+      "sha": "a50ae3b08c662a9587ab81864efbd04deedf7272",
+      "date": "2021-05-28T00:02:24+02:00",
+      "author": "Maciej Walkowiak",
+      "email": "walkowiak.maciej@yahoo.com",
+      "message": "Upgrade to Java 16.\n"
+    },
+    {
+      "sha": "35f8d1b4d60cf830353859a5b7e77a717a4243a4",
+      "date": "2021-05-27T23:51:47+02:00",
+      "author": "Maciej Walkowiak",
+      "email": "walkowiak.maciej@yahoo.com",
+      "message": "Merge pull request #8 from spring-petclinic/drop-travis\n\nRemove unused Travis and Sonar files."
+    },
+    {
+      "sha": "a0a368dfd86497544c78ab5379e3614eb0d0f95e",
+      "date": "2021-05-27T23:26:56+02:00",
+      "author": "Maciej Walkowiak",
+      "email": "walkowiak.maciej@yahoo.com",
+      "message": "Remove unused Travis and Sonar files.\n"
+    },
+    {
+      "sha": "bd5a44a7aef2f4fb0875809741ad2a96e2c94386",
+      "date": "2021-05-27T23:25:55+02:00",
+      "author": "Maciej Walkowiak",
+      "email": "walkowiak.maciej@yahoo.com",
+      "message": "Merge pull request #7 from spring-petclinic/spring-boot-2.5.0\n\nUpgrade to Spring Boot 2.5.0"
+    },
+    {
+      "sha": "7c5f99cb74414920b3aca6986c5cb6329aaebc94",
+      "date": "2021-05-27T23:20:47+02:00",
+      "author": "Maciej Walkowiak",
+      "email": "walkowiak.maciej@yahoo.com",
+      "message": "Upgrade to Spring Boot 2.5.0\n"
+    },
+    {
+      "sha": "0f5992e7392405700473699cac3543a862d6e1fd",
+      "date": "2020-08-18T09:28:14+02:00",
+      "author": "Maciej Walkowiak",
+      "email": "walkowiak.maciej@yahoo.com",
+      "message": "Merge pull request #6 from spring-petclinic/feature/arey-github-action-badge\n\nAdd GitHub action status badge"
+    },
+    {
+      "sha": "4e76baf33bc27c5ce386c21f06d81403d9a9fe15",
+      "date": "2020-05-24T12:01:33+02:00",
+      "author": "Antoine Rey",
+      "email": "antoine.rey@gmail.com",
+      "message": "Add GitHub action status badge"
+    },
+    {
+      "sha": "a8b667194acd1953b1e303f7bff4f8f4f0534ce9",
+      "date": "2020-05-08T16:28:25+02:00",
+      "author": "Maciej Walkowiak",
+      "email": "walkowiak.maciej@yahoo.com",
+      "message": "Merge pull request #4 from spring-petclinic/upgrade\n\n🚀 Modernize and Upgrade"
+    },
+    {
+      "sha": "5cdd47f42cccdae7fb796ad02c7730f4a7f59c8c",
+      "date": "2020-05-08T16:18:52+02:00",
+      "author": "Maciej Walkowiak",
+      "email": "walkowiak.maciej@yahoo.com",
+      "message": "Add Github actions configuration.\n"
+    },
+    {
+      "sha": "dba5a2e729c1f3689303ed16f2583f0042a16b92",
+      "date": "2020-05-08T16:16:25+02:00",
+      "author": "Maciej Walkowiak",
+      "email": "walkowiak.maciej@yahoo.com",
+      "message": "Update readme.\n"
+    },
+    {
+      "sha": "02b5bc0b2913c00134b68d801920a474432f5b3a",
+      "date": "2020-05-08T16:12:38+02:00",
+      "author": "Maciej Walkowiak",
+      "email": "walkowiak.maciej@yahoo.com",
+      "message": "Integrate Wavefront observability platform.\n"
+    },
+    {
+      "sha": "100ed0c0931bb1d78c5f4ac9ed155ef77161ef93",
+      "date": "2020-05-08T16:11:32+02:00",
+      "author": "Maciej Walkowiak",
+      "email": "walkowiak.maciej@yahoo.com",
+      "message": "Reformat pom.xml\n"
+    },
+    {
+      "sha": "84b263e4b62ee955b45c02a6f8c7e7f8d4d1dbae",
+      "date": "2020-05-08T16:03:16+02:00",
+      "author": "Maciej Walkowiak",
+      "email": "walkowiak.maciej@yahoo.com",
+      "message": "Replaced Ehcache with Caffeine\n"
+    },
+    {
+      "sha": "a89134714fac7c995da0c652b7efe41d379ed5bd",
+      "date": "2020-05-08T15:39:43+02:00",
+      "author": "Maciej Walkowiak",
+      "email": "walkowiak.maciej@yahoo.com",
+      "message": "Use TestContainers during integration tests.\n"
+    },
+    {
+      "sha": "31d77caad5877006dab5c1bad4d0ac49bc0a9ba3",
+      "date": "2020-05-08T15:24:20+02:00",
+      "author": "Maciej Walkowiak",
+      "email": "walkowiak.maciej@yahoo.com",
+      "message": "Replace JUnit 4 with JUnit 5\n"
+    },
+    {
+      "sha": "5e6f6052a25d1aa463c1813f096ae523613e3559",
+      "date": "2020-05-08T14:53:42+02:00",
+      "author": "Maciej Walkowiak",
+      "email": "walkowiak.maciej@yahoo.com",
+      "message": "Remove hsqldb, use Flyway\n"
+    },
+    {
+      "sha": "ffc85e3c7c19c3c117f7cfe4a70185f13069b7a9",
+      "date": "2020-05-08T14:36:33+02:00",
+      "author": "Maciej Walkowiak",
+      "email": "walkowiak.maciej@yahoo.com",
+      "message": "Update Spring Boot to 2.3.RC1\n"
+    },
+    {
+      "sha": "177f66d8e0923f8fd8be75f8d0380fff441d9f2b",
+      "date": "2019-02-24T15:24:06+01:00",
+      "author": "Maciej Walkowiak",
+      "email": "walkowiak.maciej@yahoo.com",
+      "message": "Merge pull request #3 from spring-petclinic/spring-boot-2.1.3\n\nUpgrade to Spring Boot 2.1.3"
+    },
+    {
+      "sha": "4fee0fc4489a12508caee62959a6c3b1a7a3f526",
+      "date": "2019-02-24T15:15:49+01:00",
+      "author": "Maciej Walkowiak",
+      "email": "walkowiak.maciej@yahoo.com",
+      "message": "Upgrade to Spring Boot 2.1.3\n"
+    },
+    {
+      "sha": "a7002768fc617637730ba8229169e08effc38216",
+      "date": "2018-11-21T11:33:42+01:00",
+      "author": "Maciej Walkowiak",
+      "email": "walkowiak.maciej@yahoo.com",
+      "message": "Merge pull request #2 from arey/feature/sync\n\nSynchronize with original spring-projects/spring-petclinic"
+    },
+    {
+      "sha": "c81eb4d7675b2a56c9c0b1d225d6a2a75adaf4c0",
+      "date": "2018-11-19T10:49:13+01:00",
+      "author": "Antoine Rey",
+      "email": "antoine.rey@gmail.com",
+      "message": "Merge remote-tracking branch 'canonical/master' into feature/sync\n\n# Conflicts:\n#\treadme.md\n"
+    }
+  ],
+  "commit_sha": "d601d3a8fa481e67676f67beda790e0d6bda701d",
+  "extracted_at": "2026-10-05T18:15:16.891241+00:00"
+}

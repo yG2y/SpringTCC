@@ -1,0 +1,28 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${spring-boot.version};2.0.4.RELEASE",
+  "spring_boot_major": "2",
+  "java_versions_declared": "",
+  "build_evidence": [
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "spring-influxdb-orm-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-influxdb-orm-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-influxdb-orm-autoconfigure/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "spring-influxdb-orm-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    }
+  ]
+}

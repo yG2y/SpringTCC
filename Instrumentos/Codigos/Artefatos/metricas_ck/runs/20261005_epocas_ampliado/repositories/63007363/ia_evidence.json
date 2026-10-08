@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "261ce2ffb78d982326bceae0096b57804b324a89",
+      "date": "2026-09-30T06:28:33+03:00",
+      "author": "Lyuben Blagoev",
+      "email": "lblagoev@gmail.com",
+      "message": "Implement workspaces\n"
+    },
+    {
+      "sha": "d59127a31e37b3f3e1364c5cfe8f02b2230ca045",
+      "date": "2026-09-24T14:07:43+03:00",
+      "author": "Lyuben Blagoev",
+      "email": "lblagoev@gmail.com",
+      "message": "Add Liquibase for database migrations\n"
+    },
+    {
+      "sha": "d8a130e9ec8dbf33d257e76fc43013eed1f0b45b",
+      "date": "2026-09-21T06:45:20+03:00",
+      "author": "Lyuben Blagoev",
+      "email": "lblagoev@gmail.com",
+      "message": "Add the missing h2console dependency after the spring-boot update\n"
+    },
+    {
+      "sha": "feef4aa2105317ca5ae85218c33310df1c2172c1",
+      "date": "2026-09-21T06:23:44+03:00",
+      "author": "Lyuben Blagoev",
+      "email": "lblagoev@gmail.com",
+      "message": "Implement domain-summaries endpoints to retrieve domain aggregation values\n"
+    },
+    {
+      "sha": "534d0c658085cdfe3de0bd14153f54622846ed44",
+      "date": "2026-09-20T18:13:26+03:00",
+      "author": "Lyuben Blagoev",
+      "email": "lblagoev@gmail.com",
+      "message": "Implement endpoints to retrieve scoped history for domain or account\n"
+    },
+    {
+      "sha": "9a62f4deba8d99786a60f95e534d6373db4dc235",
+      "date": "2026-09-19T07:38:02+03:00",
+      "author": "Lyuben Blagoev",
+      "email": "lblagoev@gmail.com",
+      "message": "Implement audit-log\n"
+    },
+    {
+      "sha": "e12867b39e00eea1e08ff2c6878b414e12c06a82",
+      "date": "2026-09-18T07:17:09+03:00",
+      "author": "Lyuben Blagoev",
+      "email": "lblagoev@gmail.com",
+      "message": "Update dependencies\n"
+    },
+    {
+      "sha": "2af8b04975523b4d583a3c6ef058fbb47650f8d2",
+      "date": "2026-04-09T08:17:56+03:00",
+      "author": "Lyuben Blagoev",
+      "email": "lblagoev@gmail.com",
+      "message": "Add Maven assembly plugin for release distributions\n\n- Add maven-assembly-plugin to generate zip/tar.gz on package\n- Add src/dist/ with wrapper script and systemd service\n- Use filtered fileSet for version substitution in wrapper\n"
+    },
+    {
+      "sha": "97df0341399fdcd06401fe85a6698bad256b45a0",
+      "date": "2026-04-09T08:08:13+03:00",
+      "author": "Lyuben Blagoev",
+      "email": "lblagoev@gmail.com",
+      "message": "Bump version to 0.2.4\n"
+    },
+    {
+      "sha": "f0286df6f00b821ef08ccba2e9598e2d6054e3b1",
+      "date": "2026-04-09T07:57:51+03:00",
+      "author": "Lyuben Blagoev",
+      "email": "lblagoev@gmail.com",
+      "message": "Bump commons-lang to 3.18.0 to fix CVE-2025-48924\n\nUpgraded from vulnerable commons-lang:commons-lang:2.6 to\norg.apache.commons:commons-lang3:3.18.0 to address the\nUncontrolled Recursion vulnerability (StackOverflowError on\nlong inputs via ClassUtils.getClass).\n"
+    },
+    {
+      "sha": "d40fba57277a2f3e0cce691a0b3c070496815c88",
+      "date": "2023-07-10T11:41:28+03:00",
+      "author": "Lyuben Blagoev",
+      "email": "lblagoev@gmail.com",
+      "message": "Merge pull request #8 from lyubenblagoev/dependabot/maven/com.h2database-h2-2.2.220\n\nBump h2 from 2.1.210 to 2.2.220"
+    },
+    {
+      "sha": "f4a1bc2560c81770ff0289ab31e2ac1d40fdc6f6",
+      "date": "2023-07-07T21:53:45Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump h2 from 2.1.210 to 2.2.220\n\nBumps [h2](https://github.com/h2database/h2database) from 2.1.210 to 2.2.220.\n- [Release notes](https://github.com/h2database/h2database/releases)\n- [Commits](https://github.com/h2database/h2database/compare/version-2.1.210...version-2.2.220)\n\n---\nupdated-dependencies:\n- dependency-name: com.h2database:h2\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "13e75301751eae40e70aa274ef7881faa3946e16",
+      "date": "2022-01-22T18:36:27+02:00",
+      "author": "Lyuben Blagoev",
+      "email": "lblagoev@gmail.com",
+      "message": "Merge pull request #7 from lyubenblagoev/dependabot/maven/com.h2database-h2-2.1.210\n\nBump h2 from 2.0.206 to 2.1.210"
+    },
+    {
+      "sha": "9c681a2a75a19e783efa4608cf0a1055b3d2cb9e",
+      "date": "2022-01-21T23:46:46Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump h2 from 2.0.206 to 2.1.210\n\nBumps [h2](https://github.com/h2database/h2database) from 2.0.206 to 2.1.210.\n- [Release notes](https://github.com/h2database/h2database/releases)\n- [Commits](https://github.com/h2database/h2database/compare/version-2.0.206...version-2.1.210)\n\n---\nupdated-dependencies:\n- dependency-name: com.h2database:h2\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "612d4fa6df442ba28f1b5ee9bfed7aae151f9ff2",
+      "date": "2022-01-12T16:18:36+02:00",
+      "author": "Lyuben Blagoev",
+      "email": "lblagoev@gmail.com",
+      "message": "Append ;MODE=LEGACY to JDBC URL for H2 as a workaround to a bug with identity columns\n\nReferences:\n\n    * https://github.com/h2database/h2database/issues/3325\n    * https://hibernate.atlassian.net/browse/HHH-14985\n"
+    },
+    {
+      "sha": "4f76d603ed0fffda6dd96eae3b86724abaa0ad81",
+      "date": "2022-01-12T16:09:47+02:00",
+      "author": "Lyuben Blagoev",
+      "email": "lblagoev@gmail.com",
+      "message": "Update to Sprint Boot 2.6.2\n"
+    },
+    {
+      "sha": "d70a08fd34514c2eea9401aaec7fde17e47dc9fb",
+      "date": "2022-01-07T10:40:10+02:00",
+      "author": "Lyuben Blagoev",
+      "email": "lblagoev@gmail.com",
+      "message": "Increment version number\n\nFixes critical vulnerability in H2\n"
+    },
+    {
+      "sha": "fd7f37d5e4c6baac4b4cc520bc8d0a563162b202",
+      "date": "2022-01-07T10:39:50+02:00",
+      "author": "Lyuben Blagoev",
+      "email": "lblagoev@gmail.com",
+      "message": "Fix request method in documentation\n"
+    },
+    {
+      "sha": "789b7b2929f0dcc20c04e3c1912d114d8c676235",
+      "date": "2022-01-07T10:32:32+02:00",
+      "author": "Lyuben Blagoev",
+      "email": "lblagoev@gmail.com",
+      "message": "Merge pull request #6 from lyubenblagoev/dependabot/maven/com.h2database-h2-2.0.206\n\nBump h2 from 1.4.200 to 2.0.206"
+    },
+    {
+      "sha": "2b7c564fca25b38b3d15d1faae37ae778f5cd397",
+      "date": "2022-01-07T00:37:35Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump h2 from 1.4.200 to 2.0.206\n\nBumps [h2](https://github.com/h2database/h2database) from 1.4.200 to 2.0.206.\n- [Release notes](https://github.com/h2database/h2database/releases)\n- [Commits](https://github.com/h2database/h2database/compare/version-1.4.200...version-2.0.206)\n\n---\nupdated-dependencies:\n- dependency-name: com.h2database:h2\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "a7285a8960e0ad033574f66ae982fc1eb31fee3d",
+      "date": "2021-05-05T10:28:36+03:00",
+      "author": "Lyuben Blagoev",
+      "email": "lblagoev@gmail.com",
+      "message": "Add the Postfix REST Server Control Panel (web UI) to the list of clients\n"
+    },
+    {
+      "sha": "96768a512f423ec49864a42d639817db77b3a131",
+      "date": "2021-05-04T09:01:16+03:00",
+      "author": "Lyuben Blagoev",
+      "email": "lblagoev@gmail.com",
+      "message": "Fix several formatting issues in README.md\n"
+    },
+    {
+      "sha": "4766cd12cf860224f3f90385e2754546790b81e3",
+      "date": "2021-05-04T08:59:41+03:00",
+      "author": "Lyuben Blagoev",
+      "email": "lblagoev@gmail.com",
+      "message": "Fix headers rendering in README.md\n"
+    },
+    {
+      "sha": "24efba39f692eea32b7a1ac8069f98538602c4c9",
+      "date": "2021-05-04T08:57:26+03:00",
+      "author": "Lyuben Blagoev",
+      "email": "lblagoev@gmail.com",
+      "message": "Describe the 'enabled' parameter\n"
+    },
+    {
+      "sha": "cb47030e93d2e8a44077e8308cae94174435d6ae",
+      "date": "2021-05-03T18:34:28+03:00",
+      "author": "Lyuben Blagoev",
+      "email": "lblagoev@gmail.com",
+      "message": "Improve API documentation and describe the parameters\n"
+    },
+    {
+      "sha": "17ec0df4fa2168f7439b88dc0ec2fedddc780bff",
+      "date": "2021-04-24T11:34:16+03:00",
+      "author": "Lyuben Blagoev",
+      "email": "lblagoev@gmail.com",
+      "message": "Synchronize the User <-> Device associations\n"
+    },
+    {
+      "sha": "812ce66b42b31dae381198810f3efc69373d6791",
+      "date": "2021-04-24T10:43:56+03:00",
+      "author": "Lyuben Blagoev",
+      "email": "lblagoev@gmail.com",
+      "message": "Increment patch version number\n"
+    },
+    {
+      "sha": "9aa77f34fe15d68e62a11d353ffea583271f72a0",
+      "date": "2021-04-24T10:43:30+03:00",
+      "author": "Lyuben Blagoev",
+      "email": "lblagoev@gmail.com",
+      "message": "Fix device removal on logout\n"
+    },
+    {
+      "sha": "79078f70b5f884423bbf967aab6c9cd388800c4d",
+      "date": "2021-03-20T10:52:07+02:00",
+      "author": "Lyuben Blagoev",
+      "email": "lblagoev@gmail.com",
+      "message": "Update version of jar file in readme\n"
+    },
+    {
+      "sha": "91a7f3eb691a3592c78c963c457a4ac562f100b8",
+      "date": "2021-03-20T10:31:33+02:00",
+      "author": "Lyuben Blagoev",
+      "email": "lblagoev@gmail.com",
+      "message": "Increment patch version - 0.2.1\n"
+    }
+  ],
+  "commit_sha": "261ce2ffb78d982326bceae0096b57804b324a89",
+  "extracted_at": "2026-10-05T18:09:35.850676+00:00"
+}

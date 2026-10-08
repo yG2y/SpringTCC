@@ -1,0 +1,960 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "1.3.5.RELEASE;1.4.2.RELEASE;1.5.4.RELEASE;1.5.6.RELEASE;1.5.7.RELEASE;1.5.8.RELEASE;1.5.9.RELEASE",
+  "spring_boot_major": "1",
+  "java_versions_declared": "${java.version};1.8",
+  "build_evidence": [
+    {
+      "file": "spring-boot/lesson-1/spring-boot-lesson-1/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-boot/lesson-1/spring-boot-lesson-1/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot/lesson-1/spring-boot-lesson-1/pom.xml",
+      "artifact": "spring-boot-starter-ws"
+    },
+    {
+      "file": "spring-boot/lesson-1/spring-boot-lesson-1/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-boot/lesson-1/spring-boot-lesson-1/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot/lesson-1/spring-boot-lesson-1/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-boot/lesson-10/spring-boot-lesson-10/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-boot/lesson-10/spring-boot-lesson-10/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-boot/lesson-10/spring-boot-lesson-10/pom.xml",
+      "artifact": "spring-boot-starter-cache"
+    },
+    {
+      "file": "spring-boot/lesson-10/spring-boot-lesson-10/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "spring-boot/lesson-10/spring-boot-lesson-10/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot/lesson-10/spring-boot-lesson-10/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot/lesson-10/spring-boot-lesson-10/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-boot/lesson-11/spring-boot-lesson-11/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-boot/lesson-11/spring-boot-lesson-11/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-boot/lesson-11/spring-boot-lesson-11/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot/lesson-11/spring-boot-lesson-11/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot/lesson-11/spring-boot-lesson-11/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-boot/lesson-12/spring-boot-lesson-12/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-boot/lesson-12/spring-boot-lesson-12/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-boot/lesson-12/spring-boot-lesson-12/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "spring-boot/lesson-12/spring-boot-lesson-12/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot/lesson-12/spring-boot-lesson-12/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot/lesson-12/spring-boot-lesson-12/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-boot/lesson-13/spring-boot-lesson-13-async/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-boot/lesson-13/spring-boot-lesson-13-async/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot/lesson-13/spring-boot-lesson-13-async/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot/lesson-13/spring-boot-lesson-13-async/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-boot/lesson-13/spring-boot-lesson-13/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-boot/lesson-13/spring-boot-lesson-13/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-boot/lesson-13/spring-boot-lesson-13/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot/lesson-13/spring-boot-lesson-13/pom.xml",
+      "artifact": "spring-boot-starter-websocket"
+    },
+    {
+      "file": "spring-boot/lesson-13/spring-boot-lesson-13/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot/lesson-13/spring-boot-lesson-13/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-boot/lesson-14/spring-boot-lesson-14-plus/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-boot/lesson-14/spring-boot-lesson-14-plus/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot/lesson-14/spring-boot-lesson-14-plus/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot/lesson-14/spring-boot-lesson-14-plus/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-boot/lesson-14/spring-boot-lesson-14/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-boot/lesson-14/spring-boot-lesson-14/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-boot/lesson-14/spring-boot-lesson-14/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot/lesson-14/spring-boot-lesson-14/pom.xml",
+      "artifact": "spring-boot-starter-web-services"
+    },
+    {
+      "file": "spring-boot/lesson-14/spring-boot-lesson-14/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot/lesson-14/spring-boot-lesson-14/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-boot/lesson-15/spring-boot-lesson-15/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-boot/lesson-15/spring-boot-lesson-15/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-boot/lesson-15/spring-boot-lesson-15/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "spring-boot/lesson-15/spring-boot-lesson-15/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "spring-boot/lesson-15/spring-boot-lesson-15/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot/lesson-15/spring-boot-lesson-15/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot/lesson-15/spring-boot-lesson-15/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-boot/lesson-16/spring-boot-lesson-16/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "spring-boot/lesson-16/spring-boot-lesson-16/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot/lesson-16/spring-boot-lesson-16/pom.xml",
+      "artifact": "spring-boot-actuator"
+    },
+    {
+      "file": "spring-boot/lesson-17/spring-boot-lesson-17/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-boot/lesson-17/spring-boot-lesson-17/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-boot/lesson-17/spring-boot-lesson-17/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot/lesson-17/spring-boot-lesson-17/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot/lesson-17/spring-boot-lesson-17/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-boot/lesson-18/spring-boot-lesson-18/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-boot/lesson-18/spring-boot-lesson-18/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-boot/lesson-18/spring-boot-lesson-18/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot/lesson-18/spring-boot-lesson-18/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot/lesson-18/spring-boot-lesson-18/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-boot/lesson-19/spring-boot-lesson-19/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-boot/lesson-19/spring-boot-lesson-19/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-boot/lesson-19/spring-boot-lesson-19/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot/lesson-19/spring-boot-lesson-19/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot/lesson-19/spring-boot-lesson-19/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-boot/lesson-20/spring-boot-lesson-20/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-boot/lesson-20/spring-boot-lesson-20/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-boot/lesson-20/spring-boot-lesson-20/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot/lesson-20/spring-boot-lesson-20/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "spring-boot/lesson-20/spring-boot-lesson-20/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "spring-boot/lesson-20/spring-boot-lesson-20/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot/lesson-20/spring-boot-lesson-20/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot/lesson-20/spring-boot-lesson-20/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-boot/lesson-3/spring-boot-lesson3/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-boot/lesson-3/spring-boot-lesson3/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-boot/lesson-3/spring-boot-lesson3/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot/lesson-3/spring-boot-lesson3/pom.xml",
+      "artifact": "spring-boot-starter-hateoas"
+    },
+    {
+      "file": "spring-boot/lesson-3/spring-boot-lesson3/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot/lesson-3/spring-boot-lesson3/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-boot/lesson-4/spring-boot-lesson4/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-boot/lesson-4/spring-boot-lesson4/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot/lesson-4/spring-boot-lesson4/pom.xml",
+      "artifact": "spring-boot-starter-tomcat"
+    },
+    {
+      "file": "spring-boot/lesson-4/spring-boot-lesson4/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot/lesson-4/spring-boot-lesson4/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-boot/lesson-5/spring-boot-lesson-5/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-boot/lesson-5/spring-boot-lesson-5/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot/lesson-5/spring-boot-lesson-5/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot/lesson-5/spring-boot-lesson-5/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-boot/lesson-6/spring-boot-lesson-6/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-boot/lesson-6/spring-boot-lesson-6/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "spring-boot/lesson-6/spring-boot-lesson-6/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot/lesson-6/spring-boot-lesson-6/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot/lesson-6/spring-boot-lesson-6/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-boot/lesson-7/spring-boot-lesson-7/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-boot/lesson-7/spring-boot-lesson-7/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-boot/lesson-7/spring-boot-lesson-7/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "spring-boot/lesson-7/spring-boot-lesson-7/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot/lesson-7/spring-boot-lesson-7/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot/lesson-7/spring-boot-lesson-7/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-boot/lesson-8/spring-boot-lesson-8/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-boot/lesson-8/spring-boot-lesson-8/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-boot/lesson-8/spring-boot-lesson-8/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "spring-boot/lesson-8/spring-boot-lesson-8/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot/lesson-8/spring-boot-lesson-8/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot/lesson-8/spring-boot-lesson-8/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-boot/lesson-9/spring-boot-lesson-9/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-boot/lesson-9/spring-boot-lesson-9/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-boot/lesson-9/spring-boot-lesson-9/pom.xml",
+      "artifact": "spring-boot-starter-data-elasticsearch"
+    },
+    {
+      "file": "spring-boot/lesson-9/spring-boot-lesson-9/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot/lesson-9/spring-boot-lesson-9/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot/lesson-9/spring-boot-lesson-9/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-cloud/lesson-1/spring-cloud-lesson-1/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-cloud/lesson-1/spring-cloud-lesson-1/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-cloud/lesson-1/spring-cloud-lesson-1/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-cloud/lesson-1/spring-cloud-lesson-1/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-cloud/lesson-1/spring-cloud-lesson-1/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-cloud/lesson-10/spring-cloud-lesson-10/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "spring-cloud/lesson-10/spring-cloud-lesson-10/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-cloud/lesson-10/spring-cloud-lesson-10/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-cloud/lesson-10/spring-cloud-lesson-10/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-cloud/lesson-10/spring-cloud-lesson-10/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-cloud/lesson-11/spring-cloud-lesson-11/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "spring-cloud/lesson-11/spring-cloud-lesson-11/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-cloud/lesson-11/spring-cloud-lesson-11/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-cloud/lesson-11/spring-cloud-lesson-11/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-cloud/lesson-11/spring-cloud-lesson-11/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-cloud/lesson-12/spring-cloud-lesson-12/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "spring-cloud/lesson-12/spring-cloud-lesson-12/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-cloud/lesson-12/spring-cloud-lesson-12/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-cloud/lesson-12/spring-cloud-lesson-12/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-cloud/lesson-12/spring-cloud-lesson-12/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-cloud/lesson-13/spring-cloud-lesson-13/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "spring-cloud/lesson-13/spring-cloud-lesson-13/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-cloud/lesson-13/spring-cloud-lesson-13/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-cloud/lesson-13/spring-cloud-lesson-13/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-cloud/lesson-13/spring-cloud-lesson-13/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-cloud/lesson-13/spring-cloud-lesson-13/stream-binder-activemq/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-cloud/lesson-13/spring-cloud-lesson-13/stream-binder-activemq/pom.xml",
+      "artifact": "spring-boot-starter-activemq"
+    },
+    {
+      "file": "spring-cloud/lesson-13/spring-cloud-lesson-13/user-service-client/pom.xml",
+      "artifact": "spring-boot-starter-activemq"
+    },
+    {
+      "file": "spring-cloud/lesson-13/spring-cloud-lesson-13/user-service-provider/pom.xml",
+      "artifact": "spring-boot-starter-activemq"
+    },
+    {
+      "file": "spring-cloud/lesson-14/spring-cloud-lesson-14/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "spring-cloud/lesson-14/spring-cloud-lesson-14/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-cloud/lesson-14/spring-cloud-lesson-14/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-cloud/lesson-14/spring-cloud-lesson-14/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-cloud/lesson-14/spring-cloud-lesson-14/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-cloud/lesson-14/spring-cloud-lesson-14/stream-binder-activemq/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-cloud/lesson-14/spring-cloud-lesson-14/stream-binder-activemq/pom.xml",
+      "artifact": "spring-boot-starter-activemq"
+    },
+    {
+      "file": "spring-cloud/lesson-14/spring-cloud-lesson-14/user-service-client/pom.xml",
+      "artifact": "spring-boot-starter-activemq"
+    },
+    {
+      "file": "spring-cloud/lesson-14/spring-cloud-lesson-14/user-service-provider/pom.xml",
+      "artifact": "spring-boot-starter-activemq"
+    },
+    {
+      "file": "spring-cloud/lesson-15/spring-cloud-lesson-15/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "spring-cloud/lesson-15/spring-cloud-lesson-15/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-cloud/lesson-15/spring-cloud-lesson-15/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-cloud/lesson-15/spring-cloud-lesson-15/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-cloud/lesson-15/spring-cloud-lesson-15/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-cloud/lesson-15/spring-cloud-lesson-15/stream-binder-activemq/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-cloud/lesson-15/spring-cloud-lesson-15/stream-binder-activemq/pom.xml",
+      "artifact": "spring-boot-starter-activemq"
+    },
+    {
+      "file": "spring-cloud/lesson-15/spring-cloud-lesson-15/user-service-client/pom.xml",
+      "artifact": "spring-boot-starter-activemq"
+    },
+    {
+      "file": "spring-cloud/lesson-15/spring-cloud-lesson-15/user-service-provider/pom.xml",
+      "artifact": "spring-boot-starter-activemq"
+    },
+    {
+      "file": "spring-cloud/lesson-15/spring-cloud-lesson-15/zipkin-server/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-cloud/lesson-2/spring-cloud-lesson-2/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-cloud/lesson-2/spring-cloud-lesson-2/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-cloud/lesson-2/spring-cloud-lesson-2/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-cloud/lesson-2/spring-cloud-lesson-2/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-cloud/lesson-2/spring-cloud-lesson-2/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-cloud/lesson-3/spring-cloud-lesson-3-config-client/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-cloud/lesson-3/spring-cloud-lesson-3-config-client/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-cloud/lesson-3/spring-cloud-lesson-3-config-client/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-cloud/lesson-3/spring-cloud-lesson-3-config-client/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-cloud/lesson-3/spring-cloud-lesson-3-config-client/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-cloud/lesson-3/spring-cloud-lesson-3-config-server/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-cloud/lesson-3/spring-cloud-lesson-3-config-server/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-cloud/lesson-3/spring-cloud-lesson-3-config-server/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-cloud/lesson-3/spring-cloud-lesson-3-config-server/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-cloud/lesson-3/spring-cloud-lesson-3-config-server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-cloud/lesson-4/spring-cloud-lesson-4-config-server/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-cloud/lesson-4/spring-cloud-lesson-4-config-server/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-cloud/lesson-4/spring-cloud-lesson-4-config-server/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-cloud/lesson-4/spring-cloud-lesson-4-config-server/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-cloud/lesson-4/spring-cloud-lesson-4-config-server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-cloud/lesson-4/spring-cloud-lesson-4-eureka-client/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-cloud/lesson-4/spring-cloud-lesson-4-eureka-client/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-cloud/lesson-4/spring-cloud-lesson-4-eureka-client/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-cloud/lesson-4/spring-cloud-lesson-4-eureka-client/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-cloud/lesson-4/spring-cloud-lesson-4-eureka-client/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-cloud/lesson-4/spring-cloud-lesson-4-eureka-server/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-cloud/lesson-4/spring-cloud-lesson-4-eureka-server/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-cloud/lesson-4/spring-cloud-lesson-4-eureka-server/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-cloud/lesson-4/spring-cloud-lesson-4-eureka-server/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-cloud/lesson-4/spring-cloud-lesson-4-eureka-server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-cloud/lesson-5/spring-cloud-lesson-5-consul-client/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-cloud/lesson-5/spring-cloud-lesson-5-consul-client/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-cloud/lesson-5/spring-cloud-lesson-5-consul-client/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-cloud/lesson-5/spring-cloud-lesson-5-consul-client/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-cloud/lesson-5/spring-cloud-lesson-5-consul-client/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-cloud/lesson-5/spring-cloud-lesson-5-eureka-client/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-cloud/lesson-5/spring-cloud-lesson-5-eureka-client/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-cloud/lesson-5/spring-cloud-lesson-5-eureka-client/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-cloud/lesson-5/spring-cloud-lesson-5-eureka-client/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-cloud/lesson-5/spring-cloud-lesson-5-eureka-client/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-cloud/lesson-5/spring-cloud-lesson-5-eureka-server/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-cloud/lesson-5/spring-cloud-lesson-5-eureka-server/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-cloud/lesson-5/spring-cloud-lesson-5-eureka-server/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-cloud/lesson-5/spring-cloud-lesson-5-eureka-server/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-cloud/lesson-5/spring-cloud-lesson-5-eureka-server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-cloud/lesson-6/spring-cloud-lesson-6-eureka-server/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-cloud/lesson-6/spring-cloud-lesson-6-eureka-server/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-cloud/lesson-6/spring-cloud-lesson-6-eureka-server/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-cloud/lesson-6/spring-cloud-lesson-6-eureka-server/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-cloud/lesson-6/spring-cloud-lesson-6-eureka-server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-cloud/lesson-6/spring-cloud-lesson-6-service-provider/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-cloud/lesson-6/spring-cloud-lesson-6-service-provider/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-cloud/lesson-6/spring-cloud-lesson-6-service-provider/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-cloud/lesson-6/spring-cloud-lesson-6-service-provider/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-cloud/lesson-6/spring-cloud-lesson-6-service-provider/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-cloud/lesson-6/spring-cloud-lesson-6/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-cloud/lesson-6/spring-cloud-lesson-6/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-cloud/lesson-6/spring-cloud-lesson-6/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-cloud/lesson-6/spring-cloud-lesson-6/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-cloud/lesson-6/spring-cloud-lesson-6/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-cloud/lesson-7/spring-cloud-lesson-7/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-cloud/lesson-7/spring-cloud-lesson-7/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-cloud/lesson-7/spring-cloud-lesson-7/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-cloud/lesson-7/spring-cloud-lesson-7/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-cloud/lesson-7/spring-cloud-lesson-7/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-cloud/lesson-8/spring-cloud-lesson-8/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "spring-cloud/lesson-8/spring-cloud-lesson-8/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-cloud/lesson-8/spring-cloud-lesson-8/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-cloud/lesson-8/spring-cloud-lesson-8/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-cloud/lesson-8/spring-cloud-lesson-8/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-cloud/lesson-9/spring-cloud-lesson-9/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-cloud/lesson-9/spring-cloud-lesson-9/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-cloud/lesson-9/spring-cloud-lesson-9/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-cloud/lesson-9/spring-cloud-lesson-9/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-cloud/lesson-9/spring-cloud-lesson-9/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

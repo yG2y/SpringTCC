@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "3431136e6c47125167fa828b2a81647371745ba9",
+      "date": "2026-05-16T10:26:54+02:00",
+      "author": "Antoine Rey",
+      "email": "antoine.rey@free.fr",
+      "message": "Spring boot 4 and Lagchain4j 1.15.0 upgrade"
+    },
+    {
+      "sha": "264b86bb3879c21c2a5cb5c55be8a3cde3b5248b",
+      "date": "2026-05-16T10:23:28+02:00",
+      "author": "Antoine Rey",
+      "email": "antoine.rey@free.fr",
+      "message": "Spring Boot 4 upgrade: use Spring Boot 4 dependencies from the langchain4j-bom\n"
+    },
+    {
+      "sha": "662a63f558ccb2397b28acf0886873264530572c",
+      "date": "2026-05-03T22:07:29+02:00",
+      "author": "Antoine Rey",
+      "email": "antoine.rey@free.fr",
+      "message": "Spring Boot 4 upgrade (gradle part)\n"
+    },
+    {
+      "sha": "89c235d28d76ef1a20508c43442c531bf4f340ae",
+      "date": "2026-05-03T21:59:29+02:00",
+      "author": "Antoine Rey",
+      "email": "antoine.rey@free.fr",
+      "message": "Merge branch 'main' into feature/sync-spring-boot-4\n\n# Conflicts:\n#\tpom.xml\n"
+    },
+    {
+      "sha": "068ac120c2ffa5538e6ae14a5708ad1437f1fc55",
+      "date": "2026-03-04T20:59:25+01:00",
+      "author": "Antoine Rey",
+      "email": "antoine.rey@free.fr",
+      "message": "Spring Boot 4 upgrade\n"
+    },
+    {
+      "sha": "9f274745b3ad6dc5943ef6899fede25477b5a72e",
+      "date": "2025-12-23T17:44:34+01:00",
+      "author": "Antoine Rey",
+      "email": "antoine.rey@free.fr",
+      "message": "Merge remote-tracking branch 'canonical/main' into feature/sync-spring-boot-4\n\n# Conflicts:\n#\tREADME.md\n#\tbuild.gradle\n#\tpom.xml\n#\tsrc/main/java/org/springframework/samples/petclinic/model/NamedEntity.java\n#\tsrc/main/java/org/springframework/samples/petclinic/model/Person.java\n#\tsrc/main/java/org/springframework/samples/petclinic/owner/Owner.java\n#\tsrc/main/java/org/springframework/samples/petclinic/owner/OwnerController.java\n#\tsrc/main/java/org/springframework/samples/petclinic/owner/Pet.java\n#\tsrc/test/java/org/springframework/samples/petclinic/PostgresIntegrationTests.java\n#\tsrc/test/java/org/springframework/samples/petclinic/system/CrashControllerIntegrationTests.java\n"
+    },
+    {
+      "sha": "7c55066a2700434c4ab24efa45156ef7e1854dbd",
+      "date": "2025-12-23T16:37:05+01:00",
+      "author": "Antoine Rey",
+      "email": "antoine.rey@free.fr",
+      "message": "Merge pull request #29 from arey/feature/langchain4j-1.9.1\n\nLangChain4j version upgrade to 1.9.1"
+    },
+    {
+      "sha": "86df11971ca848f3d7a6fd476ef25ac2b54fc4d5",
+      "date": "2025-12-23T16:29:03+01:00",
+      "author": "Antoine Rey",
+      "email": "antoine.rey@free.fr",
+      "message": "LangChain4j version upgrade to 1.9.1\n"
+    },
+    {
+      "sha": "fd4361b118931e07a7a1bde04750ec32a5fdb56e",
+      "date": "2025-12-20T22:32:00+01:00",
+      "author": "Philippe Marschall",
+      "email": "philippe.marschall@gmail.com",
+      "message": "Use snake case physical naming strategy\n\nUse snake case physical naming strategy to reduce the need to specify\ncolumn names.\n\nSigned-off-by: Philippe Marschall <philippe.marschall@gmail.com>"
+    },
+    {
+      "sha": "3e1ce239f4488f20abda24441388a515ea55a815",
+      "date": "2025-11-26T19:56:03+01:00",
+      "author": "Stéphane Nicoll",
+      "email": "stephane.nicoll@broadcom.com",
+      "message": "Polish\n"
+    },
+    {
+      "sha": "134c5a3f9dae78e4ca3e0ac8c6c236c49695b572",
+      "date": "2025-11-26T14:55:27Z",
+      "author": "Dave Syer",
+      "email": "david.syer@broadcom.com",
+      "message": "Use more specific test dependencies\n"
+    },
+    {
+      "sha": "44d5f2100b1b829bc9fa10248ee841f5d1b28b2d",
+      "date": "2025-11-26T14:22:44Z",
+      "author": "Dave Syer",
+      "email": "david.syer@broadcom.com",
+      "message": "Remove jspecify annotations\n"
+    },
+    {
+      "sha": "a9b7c6b4cdaae88a385935679672d040b786a71a",
+      "date": "2025-11-26T14:14:27Z",
+      "author": "Dave Syer",
+      "email": "david.syer@broadcom.com",
+      "message": "Use canonical starter name for Boot 4.0\n"
+    },
+    {
+      "sha": "828940e5a1bc51ce1e49410bc1dcf6c4139ea51f",
+      "date": "2025-11-26T10:38:36Z",
+      "author": "Dave Syer",
+      "email": "david.syer@broadcom.com",
+      "message": "Support building with Java 17\n\nNeeded to remove ErrorProne and Nullaway compiler plugins\n\nFixes #2136\n"
+    },
+    {
+      "sha": "fc1c7490edb484dddcf39d336422d308925c04a4",
+      "date": "2025-11-26T10:01:16+01:00",
+      "author": "Stéphane Nicoll",
+      "email": "stephane.nicoll@broadcom.com",
+      "message": "Revert removal of --release 17\n\nSee gh-2133\n"
+    },
+    {
+      "sha": "8f08b38f2c8412b9298f63e79e5e830ae247cd6e",
+      "date": "2025-10-29T18:55:36-03:00",
+      "author": "henribon",
+      "email": "henribonrec@gmail.com",
+      "message": "fix: update MySQL user creation for MySQL 8.0+ compatibility\n\nSigned-off-by: henribon <henribonrec@gmail.com>\n"
+    },
+    {
+      "sha": "37d53152a08a5de9d225c7f25f41b77c5d8b3cae",
+      "date": "2025-11-22T17:03:50+01:00",
+      "author": "Patrick Baumgartner",
+      "email": "contact@patbaumgartner.com",
+      "message": "Upgrade to Spring Boot 4.0.0\n\nSigned-off-by: Patrick Baumgartner <contact@patbaumgartner.com>\n"
+    },
+    {
+      "sha": "b5a630b1994b5b2f3f590d1c398612cf6b955a59",
+      "date": "2025-11-12T13:59:58+01:00",
+      "author": "Stéphane Nicoll",
+      "email": "stephane.nicoll@broadcom.com",
+      "message": "Remove outdated wrapper\n"
+    },
+    {
+      "sha": "9725f6d15450cd7838168209cd04b7d446936821",
+      "date": "2025-11-12T13:57:01+01:00",
+      "author": "Stéphane Nicoll",
+      "email": "stephane.nicoll@broadcom.com",
+      "message": "Upgrade to Gradle 9.2.0\n"
+    },
+    {
+      "sha": "645c85278bed6dac6aa2c521cfd07498e7756fb4",
+      "date": "2025-11-12T13:50:07+01:00",
+      "author": "Stéphane Nicoll",
+      "email": "stephane.nicoll@broadcom.com",
+      "message": "Upgrad to Spring Boot 4.0.0-RC2\n"
+    },
+    {
+      "sha": "ceeeda37706621ba1f4c4ab96323c151f7091b90",
+      "date": "2025-10-21T20:06:16+02:00",
+      "author": "Antoine Rey",
+      "email": "antoine.rey@free.fr",
+      "message": "Merge pull request #28 from arey/feature/langchain4j-1.7\n\nUpdate LangChain4j version to 1.7.1"
+    },
+    {
+      "sha": "3b0abea9f531396bf70c0476aa1cc635ae5f11fd",
+      "date": "2025-10-19T17:51:51+02:00",
+      "author": "Antoine Rey",
+      "email": "antoine.rey@free.fr",
+      "message": "LangChain4j version upgrade to 1.7.1: use LangChain4j BOM and rename ChatLanguageModel to ChatModel\n"
+    },
+    {
+      "sha": "6feeae0f13e0e258eedc99832416b42bb13779b1",
+      "date": "2025-10-14T12:35:15+02:00",
+      "author": "Stéphane Nicoll",
+      "email": "stephane.nicoll@broadcom.com",
+      "message": "Switch to building the project with Java 25\n\nCloses gh-2101\n"
+    },
+    {
+      "sha": "7deaa78575fa9f967256302cc6a5e2487bb31162",
+      "date": "2025-10-14T12:30:53+02:00",
+      "author": "Stéphane Nicoll",
+      "email": "stephane.nicoll@broadcom.com",
+      "message": "Upgrade to Gradle 9.1.0\n\nCloses gh-2100\n"
+    },
+    {
+      "sha": "684adfe2ba18bf376046db35ffc23a8dca1bd530",
+      "date": "2025-10-14T12:26:25+02:00",
+      "author": "Stéphane Nicoll",
+      "email": "stephane.nicoll@broadcom.com",
+      "message": "Merge pull request #2016 from mhalbritter\n\n* pr/2016:\n  Upgrade to Spring Boot 4.0.0-M3\n  Add NullAway and JSpecify annotations\n  Upgrade to Spring Boot 4.0.0-M2\n\nCloses gh-2016\n"
+    },
+    {
+      "sha": "47be0ea24f3dc33975d8a68173697a144c59a08c",
+      "date": "2025-10-14T12:14:25+02:00",
+      "author": "Stéphane Nicoll",
+      "email": "stephane.nicoll@broadcom.com",
+      "message": "Upgrade to Spring Boot 4.0.0-M3\n\nOn the heels of the Spring Boot 4 upgrade, this commit upgrade to the\nlatest milestone and align the errorprone and NullAway versions.\n\nSee gh-2016\n"
+    },
+    {
+      "sha": "a0aea8e8f8ccc8ff85e97f418484ca9d0d29012f",
+      "date": "2025-09-02T13:12:56+02:00",
+      "author": "Moritz Halbritter",
+      "email": "moritz.halbritter@broadcom.com",
+      "message": "Add NullAway and JSpecify annotations\n\nSee gh-2016\n\nSigned-off-by: Moritz Halbritter <moritz.halbritter@broadcom.com>\n"
+    },
+    {
+      "sha": "3aa79e3944ab1b626288f5d0629e61643ab8fb4a",
+      "date": "2025-09-01T17:42:56+02:00",
+      "author": "Moritz Halbritter",
+      "email": "moritz.halbritter@broadcom.com",
+      "message": "Upgrade to Spring Boot 4.0.0-M2\n\nSee gh-2016\n\nSigned-off-by: Moritz Halbritter <moritz.halbritter@broadcom.com>\n"
+    },
+    {
+      "sha": "66747e344ec6d4ec5fce2c603c1b61eeeadda8ff",
+      "date": "2025-07-31T16:08:17+09:00",
+      "author": "jang8584",
+      "email": "jang8584@gmail.com",
+      "message": "feat: enhance error page with localized messages for status codes(1)\n\nSigned-off-by: jang8584 <jang8584@gmail.com>\n"
+    },
+    {
+      "sha": "b2aee1d14ac2792be6bbd80f0fc6842227ae187b",
+      "date": "2025-07-31T16:03:40+09:00",
+      "author": "jang8584",
+      "email": "jang8584@gmail.com",
+      "message": "feat: enhance error page with localized messages for status codes\n\nSigned-off-by: jang8584 <jang8584@gmail.com>\n"
+    }
+  ],
+  "commit_sha": "3431136e6c47125167fa828b2a81647371745ba9",
+  "extracted_at": "2026-10-05T18:40:15.451981+00:00"
+}

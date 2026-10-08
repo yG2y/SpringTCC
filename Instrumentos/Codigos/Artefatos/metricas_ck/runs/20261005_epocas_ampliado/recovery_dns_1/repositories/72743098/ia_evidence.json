@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "8cdf39ca2624329c497949554e096ed5cea79504",
+      "date": "2025-11-24T22:54:08+09:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump net.logstash.logback:logstash-logback-encoder (#1093)\n\nBumps [net.logstash.logback:logstash-logback-encoder](https://github.com/logfellow/logstash-logback-encoder) from 8.1 to 9.0.\n- [Release notes](https://github.com/logfellow/logstash-logback-encoder/releases)\n- [Commits](https://github.com/logfellow/logstash-logback-encoder/compare/logstash-logback-encoder-8.1...logstash-logback-encoder-9.0)\n\n---\nupdated-dependencies:\n- dependency-name: net.logstash.logback:logstash-logback-encoder\n  dependency-version: '9.0'\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "34f933940344ebfb26e6f1bb5b6babee0f6830e6",
+      "date": "2025-11-24T22:53:50+09:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump poiVersion from 5.4.1 to 5.5.0 (#1097)\n\nBumps `poiVersion` from 5.4.1 to 5.5.0.\n\nUpdates `org.apache.poi:poi-ooxml` from 5.4.1 to 5.5.0\n\nUpdates `org.apache.poi:poi` from 5.4.1 to 5.5.0\n\n---\nupdated-dependencies:\n- dependency-name: org.apache.poi:poi-ooxml\n  dependency-version: 5.5.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n- dependency-name: org.apache.poi:poi\n  dependency-version: 5.5.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "c3f476ecb008529c64dd438d4944676e91b2b497",
+      "date": "2025-11-24T22:53:29+09:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump software.amazon.awssdk:bom from 2.36.2 to 2.39.2 (#1098)\n\nBumps software.amazon.awssdk:bom from 2.36.2 to 2.39.2.\n\n---\nupdated-dependencies:\n- dependency-name: software.amazon.awssdk:bom\n  dependency-version: 2.39.2\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "24733856eea0b1facb9dde0df7a29f364bdd86b9",
+      "date": "2025-11-24T22:53:07+09:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump actions/checkout from 5 to 6 (#1096)\n\nBumps [actions/checkout](https://github.com/actions/checkout) from 5 to 6.\n- [Release notes](https://github.com/actions/checkout/releases)\n- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/actions/checkout/compare/v5...v6)\n\n---\nupdated-dependencies:\n- dependency-name: actions/checkout\n  dependency-version: '6'\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "d660cfbf8a77990cb9d7ab04d117ea770a228813",
+      "date": "2025-10-27T16:47:32+09:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump protobufVersion from 4.32.1 to 4.33.0 (#1088)\n\nBumps `protobufVersion` from 4.32.1 to 4.33.0.\n\nUpdates `com.google.protobuf:protobuf-java-util` from 4.32.1 to 4.33.0\n\nUpdates `com.google.protobuf:protoc` from 4.32.1 to 4.33.0\n- [Release notes](https://github.com/protocolbuffers/protobuf/releases)\n- [Changelog](https://github.com/protocolbuffers/protobuf/blob/main/protobuf_release.bzl)\n- [Commits](https://github.com/protocolbuffers/protobuf/commits)\n\n---\nupdated-dependencies:\n- dependency-name: com.google.protobuf:protobuf-java-util\n  dependency-version: 4.33.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n- dependency-name: com.google.protobuf:protoc\n  dependency-version: 4.33.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "09603444f6e2e2e1a778bbdcd0c1d0cd3fb207f0",
+      "date": "2025-10-27T16:47:24+09:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump org.springframework.boot from 3.5.6 to 3.5.7 (#1089)\n\nBumps [org.springframework.boot](https://github.com/spring-projects/spring-boot) from 3.5.6 to 3.5.7.\n- [Release notes](https://github.com/spring-projects/spring-boot/releases)\n- [Commits](https://github.com/spring-projects/spring-boot/compare/v3.5.6...v3.5.7)\n\n---\nupdated-dependencies:\n- dependency-name: org.springframework.boot\n  dependency-version: 3.5.7\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "bda5ecf72a8a850a6ca36de48b67ee2cde7a1675",
+      "date": "2025-10-27T16:47:15+09:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump software.amazon.awssdk:bom from 2.35.5 to 2.36.2 (#1090)\n\nBumps software.amazon.awssdk:bom from 2.35.5 to 2.36.2.\n\n---\nupdated-dependencies:\n- dependency-name: software.amazon.awssdk:bom\n  dependency-version: 2.36.2\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "5ec3a98b986a73216448e40f42a99070e4e2bc7f",
+      "date": "2025-10-27T16:47:03+09:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump actions/upload-artifact from 4 to 5 (#1091)\n\nBumps [actions/upload-artifact](https://github.com/actions/upload-artifact) from 4 to 5.\n- [Release notes](https://github.com/actions/upload-artifact/releases)\n- [Commits](https://github.com/actions/upload-artifact/compare/v4...v5)\n\n---\nupdated-dependencies:\n- dependency-name: actions/upload-artifact\n  dependency-version: '5'\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "94f07e6781a1891e22efaeda319cb421480837a4",
+      "date": "2025-10-13T23:55:48+09:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump github/codeql-action from 3 to 4 (#1083)\n\nBumps [github/codeql-action](https://github.com/github/codeql-action) from 3 to 4.\n- [Release notes](https://github.com/github/codeql-action/releases)\n- [Changelog](https://github.com/github/codeql-action/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/github/codeql-action/compare/v3...v4)\n\n---\nupdated-dependencies:\n- dependency-name: github/codeql-action\n  dependency-version: '4'\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "025d282e7ac8996692173a4ff2ad25e59a31e1e7",
+      "date": "2025-10-13T23:55:27+09:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump software.amazon.awssdk:bom from 2.35.0 to 2.35.5 (#1084)\n\nBumps software.amazon.awssdk:bom from 2.35.0 to 2.35.5.\n\n---\nupdated-dependencies:\n- dependency-name: software.amazon.awssdk:bom\n  dependency-version: 2.35.5\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "b083dbc1e7eae00d97bc1d7fcf85ee34c5bc359e",
+      "date": "2025-10-13T23:55:09+09:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump io.grpc:protoc-gen-grpc-java from 1.75.0 to 1.76.0 (#1085)\n\nBumps [io.grpc:protoc-gen-grpc-java](https://github.com/grpc/grpc-java) from 1.75.0 to 1.76.0.\n- [Release notes](https://github.com/grpc/grpc-java/releases)\n- [Commits](https://github.com/grpc/grpc-java/compare/v1.75.0...v1.76.0)\n\n---\nupdated-dependencies:\n- dependency-name: io.grpc:protoc-gen-grpc-java\n  dependency-version: 1.76.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "71c2519ef65b99e4b447f3a2008197f70d43de47",
+      "date": "2025-10-06T14:44:43+09:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump software.amazon.awssdk:bom from 2.34.0 to 2.35.0 (#1082)\n\nBumps software.amazon.awssdk:bom from 2.34.0 to 2.35.0.\n\n---\nupdated-dependencies:\n- dependency-name: software.amazon.awssdk:bom\n  dependency-version: 2.35.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "d4990ddd016fd7d1107e66c4a168f3cde98e0a86",
+      "date": "2025-10-06T01:21:23+09:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump org.webjars:bootstrap from 5.3.7 to 5.3.8 (#1081)\n\nBumps [org.webjars:bootstrap](https://github.com/webjars/bootstrap) from 5.3.7 to 5.3.8.\n- [Commits](https://github.com/webjars/bootstrap/compare/bootstrap-5.3.7...bootstrap-5.3.8)\n\n---\nupdated-dependencies:\n- dependency-name: org.webjars:bootstrap\n  dependency-version: 5.3.8\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "e2172ad4e6eff5e795387d9ce7a4196331338a45",
+      "date": "2025-10-06T01:20:58+09:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump protobufVersion from 4.32.0 to 4.32.1 (#1080)\n\nBumps `protobufVersion` from 4.32.0 to 4.32.1.\n\nUpdates `com.google.protobuf:protobuf-java-util` from 4.32.0 to 4.32.1\n\nUpdates `com.google.protobuf:protoc` from 4.32.0 to 4.32.1\n- [Release notes](https://github.com/protocolbuffers/protobuf/releases)\n- [Changelog](https://github.com/protocolbuffers/protobuf/blob/main/protobuf_release.bzl)\n- [Commits](https://github.com/protocolbuffers/protobuf/commits)\n\n---\nupdated-dependencies:\n- dependency-name: com.google.protobuf:protobuf-java-util\n  dependency-version: 4.32.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n- dependency-name: com.google.protobuf:protoc\n  dependency-version: 4.32.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "8d82590a2817405737f6738682963d9e1e1bed59",
+      "date": "2025-10-06T01:20:16+09:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump org.springframework.boot from 3.5.4 to 3.5.6 (#1079)\n\nBumps [org.springframework.boot](https://github.com/spring-projects/spring-boot) from 3.5.4 to 3.5.6.\n- [Release notes](https://github.com/spring-projects/spring-boot/releases)\n- [Commits](https://github.com/spring-projects/spring-boot/compare/v3.5.4...v3.5.6)\n\n---\nupdated-dependencies:\n- dependency-name: org.springframework.boot\n  dependency-version: 3.5.6\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "5bb2fd0ce0ae2b499ec201a60d8456408dbdd4ab",
+      "date": "2025-09-23T23:48:55+09:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump org.mybatis.spring.boot:mybatis-spring-boot-starter (#1072)\n\nBumps [org.mybatis.spring.boot:mybatis-spring-boot-starter](https://github.com/mybatis/spring-boot-starter) from 3.0.4 to 3.0.5.\n- [Release notes](https://github.com/mybatis/spring-boot-starter/releases)\n- [Commits](https://github.com/mybatis/spring-boot-starter/compare/mybatis-spring-boot-3.0.4...mybatis-spring-boot-3.0.5)\n\n---\nupdated-dependencies:\n- dependency-name: org.mybatis.spring.boot:mybatis-spring-boot-starter\n  dependency-version: 3.0.5\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "85e1af9137781e096920051ef454935ad1de10e8",
+      "date": "2025-09-23T23:48:30+09:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump io.grpc:protoc-gen-grpc-java from 1.74.0 to 1.75.0 (#1074)\n\nBumps [io.grpc:protoc-gen-grpc-java](https://github.com/grpc/grpc-java) from 1.74.0 to 1.75.0.\n- [Release notes](https://github.com/grpc/grpc-java/releases)\n- [Commits](https://github.com/grpc/grpc-java/compare/v1.74.0...v1.75.0)\n\n---\nupdated-dependencies:\n- dependency-name: io.grpc:protoc-gen-grpc-java\n  dependency-version: 1.75.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "9ea11feb218ad44394b39ee58621a5bdbca73a88",
+      "date": "2025-09-23T23:48:06+09:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump software.amazon.awssdk:bom from 2.32.29 to 2.34.0 (#1078)\n\nBumps software.amazon.awssdk:bom from 2.32.29 to 2.34.0.\n\n---\nupdated-dependencies:\n- dependency-name: software.amazon.awssdk:bom\n  dependency-version: 2.34.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "326f6182ca83727a30c4ca2ee689829da59dbf5b",
+      "date": "2025-08-25T12:00:24+09:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump actions/checkout from 4 to 5 (#1064)\n\nBumps [actions/checkout](https://github.com/actions/checkout) from 4 to 5.\n- [Release notes](https://github.com/actions/checkout/releases)\n- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/actions/checkout/compare/v4...v5)\n\n---\nupdated-dependencies:\n- dependency-name: actions/checkout\n  dependency-version: '5'\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "60372825fc85e24a1b8b2c87c1e1d0ccec9b47b4",
+      "date": "2025-08-25T12:00:03+09:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump protobufVersion from 4.31.1 to 4.32.0 (#1066)\n\nBumps `protobufVersion` from 4.31.1 to 4.32.0.\n\nUpdates `com.google.protobuf:protobuf-java-util` from 4.31.1 to 4.32.0\n\nUpdates `com.google.protobuf:protoc` from 4.31.1 to 4.32.0\n- [Release notes](https://github.com/protocolbuffers/protobuf/releases)\n- [Changelog](https://github.com/protocolbuffers/protobuf/blob/main/protobuf_release.bzl)\n- [Commits](https://github.com/protocolbuffers/protobuf/commits)\n\n---\nupdated-dependencies:\n- dependency-name: com.google.protobuf:protobuf-java-util\n  dependency-version: 4.32.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n- dependency-name: com.google.protobuf:protoc\n  dependency-version: 4.32.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "357954222b22fd471375c8e308da4a1366a4af12",
+      "date": "2025-08-25T11:59:40+09:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump actions/setup-java from 4 to 5 (#1070)\n\nBumps [actions/setup-java](https://github.com/actions/setup-java) from 4 to 5.\n- [Release notes](https://github.com/actions/setup-java/releases)\n- [Commits](https://github.com/actions/setup-java/compare/v4...v5)\n\n---\nupdated-dependencies:\n- dependency-name: actions/setup-java\n  dependency-version: '5'\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "312cfb5fb308e7777641dec1c11ce7f455f49a69",
+      "date": "2025-08-25T11:59:05+09:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump software.amazon.awssdk:bom from 2.32.19 to 2.32.29 (#1071)\n\nBumps software.amazon.awssdk:bom from 2.32.19 to 2.32.29.\n\n---\nupdated-dependencies:\n- dependency-name: software.amazon.awssdk:bom\n  dependency-version: 2.32.29\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "cd89708572811cc06f9d376d4f84927c9d63e5f6",
+      "date": "2025-08-25T11:58:47+09:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump org.testcontainers:junit-jupiter from 1.21.1 to 1.21.3 (#1069)\n\nBumps [org.testcontainers:junit-jupiter](https://github.com/testcontainers/testcontainers-java) from 1.21.1 to 1.21.3.\n- [Release notes](https://github.com/testcontainers/testcontainers-java/releases)\n- [Changelog](https://github.com/testcontainers/testcontainers-java/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/testcontainers/testcontainers-java/compare/1.21.1...1.21.3)\n\n---\nupdated-dependencies:\n- dependency-name: org.testcontainers:junit-jupiter\n  dependency-version: 1.21.3\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "39c1907ee49068033a6de6456110f77590be34b8",
+      "date": "2025-08-11T15:34:11+09:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump software.amazon.awssdk:bom from 2.32.14 to 2.32.19 (#1060)\n\nBumps software.amazon.awssdk:bom from 2.32.14 to 2.32.19.\n\n---\nupdated-dependencies:\n- dependency-name: software.amazon.awssdk:bom\n  dependency-version: 2.32.19\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "88384f17ab8c98dcd588bae8895a21852d5ac85a",
+      "date": "2025-08-11T15:34:02+09:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump io.grpc:protoc-gen-grpc-java from 1.73.0 to 1.74.0 (#1062)\n\nBumps [io.grpc:protoc-gen-grpc-java](https://github.com/grpc/grpc-java) from 1.73.0 to 1.74.0.\n- [Release notes](https://github.com/grpc/grpc-java/releases)\n- [Commits](https://github.com/grpc/grpc-java/compare/v1.73.0...v1.74.0)\n\n---\nupdated-dependencies:\n- dependency-name: io.grpc:protoc-gen-grpc-java\n  dependency-version: 1.74.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "8bc0c1ec5a993922a5f575c165b04eb86da1454d",
+      "date": "2025-08-11T15:33:48+09:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump org.springframework.statemachine:spring-statemachine-bom (#1059)\n\nBumps [org.springframework.statemachine:spring-statemachine-bom](https://github.com/spring-projects/spring-statemachine) from 4.0.0 to 4.0.1.\n- [Release notes](https://github.com/spring-projects/spring-statemachine/releases)\n- [Commits](https://github.com/spring-projects/spring-statemachine/compare/v4.0.0...v4.0.1)\n\n---\nupdated-dependencies:\n- dependency-name: org.springframework.statemachine:spring-statemachine-bom\n  dependency-version: 4.0.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "f9b5184d546c19ea9f5594da0f0b4ce42d46c7f1",
+      "date": "2025-08-07T06:45:07+03:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump com.google.cloud.tools.jib from 3.4.4 to 3.4.5 (#1045)\n\nBumps com.google.cloud.tools.jib from 3.4.4 to 3.4.5.\n\n---\nupdated-dependencies:\n- dependency-name: com.google.cloud.tools.jib\n  dependency-version: 3.4.5\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "dab4b75765001935bb958230ecb86692bca3632f",
+      "date": "2025-08-07T06:44:50+03:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump software.amazon.awssdk:bom from 2.31.59 to 2.32.14 (#1058)\n\nBumps software.amazon.awssdk:bom from 2.31.59 to 2.32.14.\n\n---\nupdated-dependencies:\n- dependency-name: software.amazon.awssdk:bom\n  dependency-version: 2.32.14\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "7c9143df3555eebffd961639d4a14ad30795ba49",
+      "date": "2025-08-07T06:44:28+03:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump org.webjars:bootstrap from 5.3.6 to 5.3.7 (#1048)\n\nBumps [org.webjars:bootstrap](https://github.com/webjars/bootstrap) from 5.3.6 to 5.3.7.\n- [Commits](https://github.com/webjars/bootstrap/compare/bootstrap-5.3.6...bootstrap-5.3.7)\n\n---\nupdated-dependencies:\n- dependency-name: org.webjars:bootstrap\n  dependency-version: 5.3.7\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "1bb0709c92ba3bb2d0586b8d47e8d464efa8d47b",
+      "date": "2025-08-07T06:44:08+03:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump org.springframework.boot from 3.4.5 to 3.5.4 (#1057)\n\nBumps [org.springframework.boot](https://github.com/spring-projects/spring-boot) from 3.4.5 to 3.5.4.\n- [Release notes](https://github.com/spring-projects/spring-boot/releases)\n- [Commits](https://github.com/spring-projects/spring-boot/compare/v3.4.5...v3.5.4)\n\n---\nupdated-dependencies:\n- dependency-name: org.springframework.boot\n  dependency-version: 3.5.4\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    }
+  ],
+  "commit_sha": "8cdf39ca2624329c497949554e096ed5cea79504",
+  "extracted_at": "2026-10-05T18:36:13.624515+00:00"
+}

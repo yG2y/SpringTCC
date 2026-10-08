@@ -1,0 +1,52 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "2.2.4.RELEASE;2.7.5",
+  "spring_boot_major": "2",
+  "java_versions_declared": "14",
+  "build_evidence": [
+    {
+      "file": "docs/archive/game-bill/build.gradle.kts",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "game-common/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb"
+    },
+    {
+      "file": "game-common/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "game-manage/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "game-manage/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "game-manage/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "game-manage/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "game-manage/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "game-res/archive/game-bill/build.gradle.kts",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter"
+    }
+  ]
+}

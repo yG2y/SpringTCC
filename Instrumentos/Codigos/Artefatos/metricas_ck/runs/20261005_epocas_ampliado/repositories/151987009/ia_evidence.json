@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "82cf7640596e799b028e9ab9eeef495732fc9f4b",
+      "date": "2026-01-12T11:30:05-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Update README adding Zipkin UI screenshot\n"
+    },
+    {
+      "sha": "13fd58451110278dea078739b4059b28b59f43de",
+      "date": "2026-01-12T11:20:37-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Replace OpenFeign with Rest Client\n"
+    },
+    {
+      "sha": "2ad3c2ee522908a99559d07b1bdf665a70d4460d",
+      "date": "2026-01-11T17:53:08-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Project upgrade\n\n- Upgrade to Java 25\n- Upgrade to Spring Boot 4.0.1\n- Upgrade to Spring Cloud 2025.1.0\n- Upgrade to SpringDoc OpenAPI 3.0.1\n- Add DEBUG logging level for GraphQL\n"
+    },
+    {
+      "sha": "b214ff5183e8e7ec96376a21fde38ddc6252a920",
+      "date": "2026-01-11T17:07:18-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Project upgrade\n\n- Upgrade to Spring Boot 3.5.9\n- Upgrade to Spring Cloud 2025.0.1\n- Upgrade to SpringDoc OpenAPI 2.8.15\n- Upgrade to Maven wrapperVersion 3.3.4\n- Upgrade to Apache Maven 3.9.12\n- Upgrade to MySQL Docker image 9.5.0\n- Upgrade to bitnami/mongodb Docker image latest\n- Remove Spring Webflux dependendy in test scope as it is not added anymore using Spring Initializer\n- Add DEBUG logging level for Mongo\n"
+    },
+    {
+      "sha": "c0afeb54a2241b267d7e52b07fa951afa8b74704",
+      "date": "2025-08-24T19:13:41+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- Upgrade to Spring Boot 3.5.5\n- Upgrade to SpringDoc OpenAPI 2.8.11\n- Upgrade to Spring Cloud 2025.0.0\n- Upgrade to MySQL 9.4.0\n- Upgrade to MongoDB 8.0.13\n- Upgrade to Zipkin 3.5.1\n"
+    },
+    {
+      "sha": "36696ddc84700a8cf401abc2a24362e18066ba5d",
+      "date": "2025-08-24T18:39:42+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- Add the .gitattributes file\n- Upgrade Apache Maven to 3.9.11\n- Update README files\n"
+    },
+    {
+      "sha": "c117a014f700a17dd503f6825e096ed6f769f170",
+      "date": "2024-12-20T17:18:34-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to Spring Boot 3.4.1\n"
+    },
+    {
+      "sha": "1ea1e694493aacc3dc7c21b6b589665bc63efafd",
+      "date": "2024-12-20T17:13:41-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Refactor pom.xml files; Add Actuator back because of Zipkin\n"
+    },
+    {
+      "sha": "6f703fb68db658943341565ac2175be40e09e7f9",
+      "date": "2024-12-20T16:54:11-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Move CorsConfig class to config package\n"
+    },
+    {
+      "sha": "ece0d4d5261dd33e032e6a6c00b6922d0d01ded2",
+      "date": "2024-12-20T16:39:03-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Remove some Actuator references that were left behind\n"
+    },
+    {
+      "sha": "e6e5c2ba1d0cbbaf8f9a67576b76954fc79b2436",
+      "date": "2024-12-20T16:37:27-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Remove MapStruct dependency\n"
+    },
+    {
+      "sha": "8012baf55b2929eb7c8b0f33c7d3e38edd150ff0",
+      "date": "2024-12-20T16:03:11-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Replace LocalDateTime with Instant\n"
+    },
+    {
+      "sha": "cee90551c52fc2f3849a4ac96b8d12ed7edf91cb",
+      "date": "2024-12-20T15:53:15-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Convert DTO classes to record\n"
+    },
+    {
+      "sha": "3f8b960e302f00b068ca58c340ab2e464b147a15",
+      "date": "2024-12-20T15:30:40-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Remove public keyword from Beans\n"
+    },
+    {
+      "sha": "1a9f04d662a5ac16f097d3b588acc91e157a8afd",
+      "date": "2024-12-20T15:22:09-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Remove Actuator dependency as it is not essential to the project\n"
+    },
+    {
+      "sha": "1eda8dc4d0c38274eb4e4014424e89a191a355a4",
+      "date": "2024-12-20T15:15:43-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Rename docker-build.sh to build-docker-images.sh; Update README\n"
+    },
+    {
+      "sha": "463738056652b9fe33b62393167d3bbc128a6b4d",
+      "date": "2024-12-04T14:28:22-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to Zipkin 3.4.1 and small code adjustment\n"
+    },
+    {
+      "sha": "bf8b92963973664c96f4a9ef7d7fab0fbe2ae3ab",
+      "date": "2024-12-04T07:06:51-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- upgrade to spring-boot 3.4.0;\n- upgrade to spring-cloud 2024.0.0;\n- upgrade to springdoc-openapi 2.7.0;\n- upgrade to mysql docker image 9.1.0;\n- upgrade to bitnami/mongodb docker image 8.0.3;\n- refactor pom.xml files, docker-compose.yml and docker-build.sh;\n- update README.\n"
+    },
+    {
+      "sha": "dbf91f1b158e6f4caf9bc909599456b9d252ea0b",
+      "date": "2024-11-24T15:13:20+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Remove logging.pattern.level property\n"
+    },
+    {
+      "sha": "f4e72751d12446b0cf1470764adbb3ae032e04b6",
+      "date": "2024-11-24T14:44:05+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Replace Jib with Paketo Buildpacks\n"
+    },
+    {
+      "sha": "f208667f3dfd4fe388abb3eac29b6c02cc3f366c",
+      "date": "2024-11-24T12:52:52+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- upgrade to Java 21;\n- upgrade to spring-boot 3.3.6;\n- upgrade to spring-cloud 2023.0.3;\n- upgrade to springdoc-openapi 2.6.0;\n- upgrade to MapStruct 1.6.3;\n- upgrade to jib-maven-plugin 3.4.4;\n- upgrade to amazoncorretto-jdk 21.0.5;\n- upgrade wrapperVersion to 3.3.2 and apache-maven to 3.9.9;\n- upgrade to mysql docker image 9.0.1;\n- upgrade to bitnami/mongodb docker image 7.0.14;\n- update README.\n"
+    },
+    {
+      "sha": "9e1c2cb4a0b21b15c3af5e52ebf6e11354aec0ec",
+      "date": "2024-05-16T13:21:52+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- Upgrade to spring-boot 3.2.5;\n- Upgrade to springdoc-openapi 2.5.0;\n- Upgrade to spring-cloud 2023.0.1;\n- Upgrade to jib-maven-plugin 3.4.2;\n- Upgrade to upgrade to amazoncorretto-jdk 17.0.10;\n- Upgrade to apache-maven 3.9.6;\n- Upgrade to mysql docker image 8.3.0;\n- Upgrade to bitnami/mongodb docker image 7.0.6;\n- Update README.\n"
+    },
+    {
+      "sha": "ed9cfefbeb0fc72e109868bfe1ad366c3e1e3631",
+      "date": "2023-10-03T11:35:52+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to spring-boot 3.1.4, spring-cloud 2022.0.4 and springdoc-openapi 2.2.0\n"
+    },
+    {
+      "sha": "1b93e8de4106ff0183331be6c75f7fa9f94bc5c3",
+      "date": "2023-10-03T11:34:57+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade docker images: mysql 8.1.0, mongo 7.0.2 and zipkin 2.24.3\n"
+    },
+    {
+      "sha": "e93ed2a863cdc2c873a18b4e3a17dd577aedbc19",
+      "date": "2023-10-03T11:15:12+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to jib-maven-plugin 3.4.0 and amazoncorretto-jdk 17.0.8\n"
+    },
+    {
+      "sha": "bf3106c70e7eef6f7ce56dd7add390230b4830d9",
+      "date": "2023-10-03T11:11:51+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to apache-maven 3.9.4\n"
+    },
+    {
+      "sha": "a1d0b87c402c8f47d83afe3253dc71e0b6748308",
+      "date": "2023-10-03T11:09:34+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Migrate to Compose V2\n"
+    },
+    {
+      "sha": "6f5e7ff7271ec68de6d183ed6d3a7b85e446362e",
+      "date": "2023-07-17T17:31:02+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Add Medium article\n"
+    },
+    {
+      "sha": "f9a52dd33b4a443a776a95af193a48129ab9a378",
+      "date": "2023-07-06T22:30:19+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Update README with PoCs & Article link and new Medium article\n"
+    },
+    {
+      "sha": "d7859da12ab9ea085cbc4494411e1041e18deb94",
+      "date": "2023-05-31T12:31:15-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Create FUNDING.yml\n"
+    }
+  ],
+  "commit_sha": "82cf7640596e799b028e9ab9eeef495732fc9f4b",
+  "extracted_at": "2026-10-05T18:41:29.987997+00:00"
+}

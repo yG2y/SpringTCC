@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "b230f52833e973f6268b2733bf5212f15a903368",
+      "date": "2026-09-18T10:47:47Z",
+      "author": "github-actions[bot]",
+      "email": "41898282+github-actions[bot]@users.noreply.github.com",
+      "message": "chore(main): release 3.2.1-SNAPSHOT (#31)\n\nCo-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "1c48a38464bbd6ede853ff38260f21266fd753da",
+      "date": "2026-09-18T10:44:24Z",
+      "author": "github-actions[bot]",
+      "email": "41898282+github-actions[bot]@users.noreply.github.com",
+      "message": "chore(main): release 3.2.0 (#30)\n\nCo-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "e2968f4205bd77457cfde78a52fbbacca87da44e",
+      "date": "2026-09-18T10:32:35Z",
+      "author": "Giles Junior",
+      "email": "juniorbgj20@gmail.com",
+      "message": "fix: resolve multiple SpringBootConfiguration ambiguity in IdempotencyTest\n\n- Add @SpringBootConfiguration to nested TestConfig class\n- Prevents Spring from finding multiple @SpringBootConfiguration classes\n- All 176 tests now passing\n"
+    },
+    {
+      "sha": "b2d48cc7daa09b5e5e2a926a057ab7f469852aa8",
+      "date": "2026-09-18T10:20:12Z",
+      "author": "Giles Junior",
+      "email": "juniorbgj20@gmail.com",
+      "message": "fix: register IdempotencyProperties as Spring configuration bean\n\n- Add IdempotencyProperties.class to @EnableConfigurationProperties\n- Fixes Spring Boot context startup failure in tests\n- IdempotencyService now receives required properties bean\n"
+    },
+    {
+      "sha": "a68633f7486809894707c4af42409499267da2d8",
+      "date": "2026-09-15T15:11:39Z",
+      "author": "Giles Junior",
+      "email": "juniorbgj20@gmail.com",
+      "message": "test: add idempotency tests and complete Sprint 3 documentation\n\nSprint 3 - Polish & Documentation:\n- IdempotencyTest: 6 unit tests covering duplicate requests, conflicts (path/method/body), JSON normalization, expiration cleanup, headers serialization\n- docs/idempotency.md: user guide with JavaScript/Java examples, validation errors, FAQ\n- docs/oracle-compatibility.md: complete Oracle guide with sequences, allocation size, performance tips, troubleshooting\n- docs/audit-strategies.md: comparison of JPA audit vs FlashAPI audit trail, 3 strategies (JPA only, FlashAPI only, both), retention policies\n\nAll documentation cross-referenced for easy navigation.\n"
+    },
+    {
+      "sha": "d1b848fd8918ebc8c97be4bba4ea8c611fc7eee2",
+      "date": "2026-09-15T13:43:30Z",
+      "author": "Giles Junior",
+      "email": "juniorbgj20@gmail.com",
+      "message": "feat: implement idempotency keys for duplicate request prevention\n\nComplete implementation of Stripe-style idempotency:\n- IdempotencyRecord entity with indexed lookup table\n- IdempotencyRepository for CRUD + cleanup\n- IdempotencyService with conflict detection and response replay\n- IdempotencyInterceptor middleware (preHandle + afterCompletion)\n- IdempotencyProperties for YAML configuration\n- IdempotencyAutoConfiguration with scheduled cleanup (6h interval)\n- ConflictException for key reuse with different path/method/body\n- README: added idempotency to production features list\n\nConfiguration:\n  flashapi.idempotency.enabled: true\n  flashapi.idempotency.ttl-hours: 24 (default)\n  flashapi.idempotency.cleanup-interval-hours: 6 (default)\n\nUsage: add header \"Idempotency-Key: <uuid>\" to POST/PUT/DELETE requests\nResponse: includes \"Idempotency-Replay: true\" when replayed\n"
+    },
+    {
+      "sha": "f8a633c53712955f638180a216cfcd09aff730d2",
+      "date": "2026-09-15T13:40:09Z",
+      "author": "Giles Junior",
+      "email": "juniorbgj20@gmail.com",
+      "message": "feat: reposition as production SaaS framework with comprehensive guides\n\nSprint 1 - Repositioning:\n- README: new tagline \"production SaaS framework\", comparison table vs Spring Data REST\n- README: added \"Why FlashAPI?\" section explaining hidden costs of DIY\n- README: concrete Invoice example showing multi-tenant + audit + security in 3 annotations\n- docs/vs-spring-data-rest.md: complete comparison guide with migration path\n- docs/best-practices.md: BaseEntity pattern with @Version + JPA audit + Oracle compatibility\n- docs/pdf-templates.md: JasperReports custom templates guide with example .jrxml\n\nSprint 2 - Idempotency (partial):\n- @FlashEntity: audit now defaults to true (opt-out instead of opt-in)\n- docs/idempotency-spec.md: complete technical specification for idempotency keys\n- idempotency package: IdempotencyRecord entity, repository, and exception classes\n"
+    },
+    {
+      "sha": "ebe6373b8ac0ee096495178139631fd924efdf7d",
+      "date": "2026-09-05T16:35:02Z",
+      "author": "Giles Junior",
+      "email": "juniorbgj20@gmail.com",
+      "message": "fix: ownership, currentUserField, softDelete and cache resilience\n\nBug 1 (critical): ownerField with @ManyToOne always returned 403.\nresolvePrincipalIdentifier() fell back to auth.getName() (username\nstring) compared against the owner's @Id (Long) — never matched.\nFix: auto-extract @Id from principal when it's a JPA entity.\n\nBug 2 (critical): currentUserField with @ManyToOne threw\nNumberFormatException. resolveCurrentUserIdentifier() tried to parse\na username as Long. Fix: same @Id auto-extraction from principal.\n\nBug 5: findById/findByLookupField ignored soft-deleted entities.\nGET /entity/{id} returned soft-deleted records. Fix: check\ndeletedAt field in findById, add WHERE clause in findByLookupField.\n\nBug 4: cache backend failure (Redis down) crashed requests.\nFix: try/catch around all cache operations with warn-and-bypass.\n\nBug 9: comma-separated roles in @FlashSecured (e.g. \"ADMIN,MOD\")\nwere compared as a single literal string. Fix: split on comma.\n"
+    },
+    {
+      "sha": "779aa151d99005ed00aaa0f62b6e77c54c794bb1",
+      "date": "2026-09-05T10:00:24Z",
+      "author": "Giles Junior",
+      "email": "juniorbgj20@gmail.com",
+      "message": "fix: auto-register AuditEntry entity for Hibernate scanning\n\nConsumers whose @SpringBootApplication is in a different package than\nFlashAPI would get \"Unable to locate persister: AuditEntry\" because\nHibernate only scans the application's own packages by default.\n\nAdd @AutoConfigurationPackage for the audit package so the AuditEntry\nentity is automatically discovered without requiring @EntityScan.\n"
+    },
+    {
+      "sha": "802e5d3357dad20f6a5627343523e5b523ce16b5",
+      "date": "2026-09-05T09:30:46Z",
+      "author": "github-actions[bot]",
+      "email": "41898282+github-actions[bot]@users.noreply.github.com",
+      "message": "chore(main): release 3.1.3-SNAPSHOT (#29)\n\nCo-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "8d0eb42fe34d903de5d2613dcf59a400f34d66bb",
+      "date": "2026-09-05T09:21:35Z",
+      "author": "Giles Junior",
+      "email": "juniorbgj20@gmail.com",
+      "message": "chore: sync README version to 3.1.2\n"
+    },
+    {
+      "sha": "56f1356023bce3254fcaa24dabc540207eaeeb4d",
+      "date": "2026-09-05T09:18:57Z",
+      "author": "github-actions[bot]",
+      "email": "41898282+github-actions[bot]@users.noreply.github.com",
+      "message": "chore(main): release 3.1.2 (#28)\n\nCo-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "39d74e787de16b9af6e409efc51c8644843ad754",
+      "date": "2026-09-04T21:34:09Z",
+      "author": "Giles Junior",
+      "email": "juniorbgj20@gmail.com",
+      "message": "fix: resolve ClassLoader mismatch with Spring Boot DevTools\n\nDevTools uses a Restart ClassLoader that creates new Class instances on\neach restart. FlashAPI stored Class<?> references at startup that became\nstale after a DevTools reload, causing IllegalArgumentException from\nHibernate's metamodel when those stale references were passed to\nEntityManager methods.\n\nTwo-layer fix:\n- EntityScanner now uses Thread Context ClassLoader for Class.forName,\n  ensuring fresh Class refs on each context rebuild\n- EntityMetadata.resolvedEntityClass() re-resolves through the current\n  TCCL as a safety net for all JPA/reflection call sites\n- ServiceResolver uses name-based comparison instead of Class identity\n"
+    },
+    {
+      "sha": "62f4e592818f0307d2fa2e02906dfbf9fcfd412c",
+      "date": "2026-09-04T07:57:58Z",
+      "author": "Giles Junior",
+      "email": "juniorbgj20@gmail.com",
+      "message": "chore: sync README version to 3.1.1\n"
+    },
+    {
+      "sha": "410a5360b2bad35aaa6aa7be4361876395b65a71",
+      "date": "2026-09-04T07:51:21Z",
+      "author": "github-actions[bot]",
+      "email": "41898282+github-actions[bot]@users.noreply.github.com",
+      "message": "chore(main): release 3.1.2-SNAPSHOT (#27)\n\nCo-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "19af3421e2755bcbe21c1ae631f719d0f01a6fad",
+      "date": "2026-09-04T07:46:06Z",
+      "author": "github-actions[bot]",
+      "email": "41898282+github-actions[bot]@users.noreply.github.com",
+      "message": "chore(main): release 3.1.1 (#26)\n\nCo-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "3eb5d4647d8bfe97b904279db37c106bca48afb4",
+      "date": "2026-09-04T07:17:45Z",
+      "author": "Giles Junior",
+      "email": "juniorbgj20@gmail.com",
+      "message": "fix: auto-configure HookRegistry bean instead of relying on component scan\n\nLibrary consumers don't scan FlashAPI's package, so @Component on\nHookRegistry was invisible. Move bean creation to FlashAutoConfiguration\nwith @ConditionalOnMissingBean so it works out of the box.\n"
+    },
+    {
+      "sha": "96a0ea0dda6e21daedcc1a52d45038f65b87a579",
+      "date": "2026-09-03T15:27:31Z",
+      "author": "Giles Junior",
+      "email": "juniorbgj20@gmail.com",
+      "message": "test: add integration test with Spring Security filters enabled\n\nProves @FlashSecured works correctly when SecurityFilterChain is active\nwith .anyRequest().authenticated(). Covers Bug 1 (write role enforcement)\nand Bug 2 (anonymous blocked before FlashAPI evaluates permitAll).\n"
+    },
+    {
+      "sha": "ce52717edf2f93c1016e24d340e8a68501f25ee7",
+      "date": "2026-09-03T09:25:50Z",
+      "author": "Giles Junior",
+      "email": "juniorbgj20@gmail.com",
+      "message": "fix: improve error handling for currentUserField injection and add write-protection tests\n\n- Log WARN when FlashPrincipalResolver fails instead of silently returning null\n- Log WARN when resolved user ID is null (prevents opaque FK constraint 500)\n- Catch all exceptions in injectCurrentUser with diagnostic message including\n  resolved value, type, target field, and expected type\n- Add WriteProtectedItem entity and tests confirming @FlashSecured(write) works\n"
+    },
+    {
+      "sha": "c8be3a2c170d428286bd4e7c395420022b120481",
+      "date": "2026-09-02T18:49:37Z",
+      "author": "Giles Junior",
+      "email": "juniorbgj20@gmail.com",
+      "message": "chore: sync README dependency version to 3.1.0\n"
+    },
+    {
+      "sha": "97e911290ee32002391f18b0253dfa4787b92f1c",
+      "date": "2026-09-02T18:41:06Z",
+      "author": "github-actions[bot]",
+      "email": "41898282+github-actions[bot]@users.noreply.github.com",
+      "message": "chore(main): release 3.1.1-SNAPSHOT (#25)\n\nCo-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "89b3ef36d2fa349d685fd8f4cb6b8af9be20e41f",
+      "date": "2026-09-02T18:38:42Z",
+      "author": "github-actions[bot]",
+      "email": "41898282+github-actions[bot]@users.noreply.github.com",
+      "message": "chore(main): release 3.1.0 (#24)\n\nCo-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "934b1f60d01ceb908cbce3ee7b4715667b209f75",
+      "date": "2026-09-02T17:52:29Z",
+      "author": "Giles Junior",
+      "email": "juniorbgj20@gmail.com",
+      "message": "feat: add FlashPrincipalResolver for type-safe ownership and user injection (Closes #23)\n\nOwnership checks and currentUserField injection now use a pluggable\nFlashPrincipalResolver instead of relying solely on auth.getName().\nLogs a WARN at startup when ownerField is configured without a resolver.\n"
+    },
+    {
+      "sha": "d9b5708652b985c04207ec7a1168fa5905c66182",
+      "date": "2026-09-01T18:59:16Z",
+      "author": "Giles Junior",
+      "email": "juniorbgj20@gmail.com",
+      "message": "chore: sync README dependency version to 3.0.1\n"
+    },
+    {
+      "sha": "33b187592fcbd044f0fbc43002c610cf6bbc338b",
+      "date": "2026-09-01T18:51:03Z",
+      "author": "github-actions[bot]",
+      "email": "41898282+github-actions[bot]@users.noreply.github.com",
+      "message": "chore(main): release 3.0.2-SNAPSHOT (#22)\n\nCo-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "d1172c44399ccc8015f29022f8aceed95560d25e",
+      "date": "2026-09-01T18:46:17Z",
+      "author": "github-actions[bot]",
+      "email": "41898282+github-actions[bot]@users.noreply.github.com",
+      "message": "chore(main): release 3.0.1 (#21)\n\nCo-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "7fe3cc39164e4c9442148d53b01b3b0be8f692c0",
+      "date": "2026-09-01T18:42:53Z",
+      "author": "Giles Junior",
+      "email": "juniorbgj20@gmail.com",
+      "message": "fix: update README version to 3.0.0 and fix release-please marker placement\n\nThe x-release-please-version marker must be on the same line as the\nversion string for the generic updater to detect it.\n"
+    },
+    {
+      "sha": "dcd5308fffd9347d6796cb06e7a1cd4e8966bf85",
+      "date": "2026-09-01T18:15:57Z",
+      "author": "github-actions[bot]",
+      "email": "41898282+github-actions[bot]@users.noreply.github.com",
+      "message": "chore(main): release 3.0.1-SNAPSHOT (#20)\n\nCo-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "d654c6e3dd766eed3e4aab104d261e64d09324a1",
+      "date": "2026-09-01T18:08:21Z",
+      "author": "github-actions[bot]",
+      "email": "41898282+github-actions[bot]@users.noreply.github.com",
+      "message": "chore(main): release 3.0.0 (#15)\n\nCo-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "6d3f23721c8f41067db2493614d358cf2a73efa2",
+      "date": "2026-09-01T08:56:04Z",
+      "author": "Giles Junior",
+      "email": "juniorbgj20@gmail.com",
+      "message": "refactor!: consolidate @FlashAudit, @FlashMultiTenant, @FlashWebhook, @FeatureGuard into @FlashEntity (Closes #19)\n\nBREAKING CHANGE: @FlashAudit, @FlashMultiTenant, @FlashWebhook, and\n@FeatureGuard are deprecated. Use @FlashEntity attributes instead:\naudit/trackFields, tenantField, webhook/webhookEvents, maxRecords.\nOld annotations still work but will be removed in the next major version.\n"
+    }
+  ],
+  "commit_sha": "b230f52833e973f6268b2733bf5212f15a903368",
+  "extracted_at": "2026-10-05T18:10:47.900097+00:00"
+}

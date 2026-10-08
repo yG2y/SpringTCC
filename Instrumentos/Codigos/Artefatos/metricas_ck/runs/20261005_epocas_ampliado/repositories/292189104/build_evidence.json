@@ -1,0 +1,40 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "2.7.10",
+  "spring_boot_major": "2",
+  "java_versions_declared": "1.8",
+  "build_evidence": [
+    {
+      "file": "examples/localstack-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "examples/localstack-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "examples/localstack-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "examples/localstack-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-test"
+    }
+  ]
+}

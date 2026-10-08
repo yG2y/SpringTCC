@@ -1,0 +1,195 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 26,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "8c45e00629f24a6558b003a756ab904e94b9fe3f",
+      "date": "2024-10-07T22:32:09+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump asm.version from 9.7 to 9.7.1 (#14)\n\nBumps `asm.version` from 9.7 to 9.7.1.\n\nUpdates `org.ow2.asm:asm` from 9.7 to 9.7.1\n\nUpdates `org.ow2.asm:asm-tree` from 9.7 to 9.7.1\n\n---\nupdated-dependencies:\n- dependency-name: org.ow2.asm:asm\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n- dependency-name: org.ow2.asm:asm-tree\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "d4e3bcbdb71020ea874375436ef2815d6331a345",
+      "date": "2024-09-19T22:11:35+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.springframework.boot:spring-boot-starter-parent (#13)\n\nBumps [org.springframework.boot:spring-boot-starter-parent](https://github.com/spring-projects/spring-boot) from 3.3.3 to 3.3.4.\n- [Release notes](https://github.com/spring-projects/spring-boot/releases)\n- [Commits](https://github.com/spring-projects/spring-boot/compare/v3.3.3...v3.3.4)\n\n---\nupdated-dependencies:\n- dependency-name: org.springframework.boot:spring-boot-starter-parent\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "63c6054fe6c4337d177c855aeda9bc76c6a87291",
+      "date": "2024-09-14T00:49:49+02:00",
+      "author": "Abhinav Sonkar",
+      "email": "xsabhinav@gmail.com",
+      "message": "feat: dependency visualization (#12)\n\n* Add tabbed navigation for result display\n\nIntroduced new styles and a tabbed interface for displaying scan results. The tabs allow for future expansion with additional content areas. A JavaScript function ensures the correct tab is shown after the scan request completes.\n\n* Add package dependencies visualization\n\nIntroduced a new \"Package Dependencies\" tab in the UI with a dropdown for selecting packages and a force-directed graph visualization of dependencies. Stored metrics data globally to facilitate this functionality and updated the existing scripts to generate interactive visuals using D3.js.\n\n* Refactor dropdown and search functionality\n\nEnhanced the appearance and structure of dropdown elements using new wrappers and CSS styling. Improved the search functionality for class names by adding a hierarchical highlighting mechanism for better visibility of matching nodes and their connections.\n\n* Add loading spinner to scan form\n\nImplemented a loading spinner to indicate progress during the scan form submission. The spinner appears when the request starts and hides once the request completes, enhancing user experience by providing visual feedback.\n\n* Add dependency visualization section\n\nUpdated the README to include a new \"Dependency Visualization\" section. Added a screenshot to illustrate this feature and highlighted its inclusion in the list of features."
+    },
+    {
+      "sha": "f50f3f26ab44ead0f8b771ed123178762acdf31f",
+      "date": "2024-09-13T23:45:08+02:00",
+      "author": "Abhinav Sonkar",
+      "email": "xsabhinav@gmail.com",
+      "message": "Fix Ce and Ca calculation by counting classes instead of packages (#10)\n\n* Fix Ce and Ca calculation by counting classes instead of packages. Include external libraries as dependencies\n\n* New screenshot"
+    },
+    {
+      "sha": "1ce0c77b2054cc8ee28c2f4e933b99f6bbca741c",
+      "date": "2024-09-12T12:51:50+02:00",
+      "author": "Daniel Florescu",
+      "email": "44919636+dko1905@users.noreply.github.com",
+      "message": "Add nix flake and update README (#9)\n\n"
+    },
+    {
+      "sha": "c782a63ed1326f7a367d02ee2f0d97906c07ef53",
+      "date": "2024-09-10T11:16:17+02:00",
+      "author": "Abhinav Sonkar",
+      "email": "xsabhinav@gmail.com",
+      "message": "Add detailed package metrics and display on graph click (#7)\n\n* Add detailed package metrics and display on graph click\n\nRefactored package scanning to return a PackageMetrics object and implemented endpoint to fetch metrics for a specific package. Updated frontend to handle clicks on graph plots and display detailed metrics in a dedicated panel.\n\n* Update README.md"
+    },
+    {
+      "sha": "678f461cea37547503a562a33620b3326a1b4e9f",
+      "date": "2024-09-10T01:50:30+02:00",
+      "author": "Abhinav Sonkar",
+      "email": "xsabhinav@gmail.com",
+      "message": "Refactor JavaClassAnalyzer to include classes in subpackages recursively for Ce and Ca calculation (#5)\n\nUpdated JavaClassAnalyzer to consolidate dependency analysis at the top-level package. Adjusted relevant method signatures and logic to support the change, ensuring accurate counting and dependency tracking. Added corresponding test cases in JavaClassAnalyzerTest to verify this behavior."
+    },
+    {
+      "sha": "5753740cbf8c392416e32f2ece76cc76d2ba6e42",
+      "date": "2024-09-10T00:54:06+02:00",
+      "author": "Abhinav Sonkar",
+      "email": "xsabhinav@gmail.com",
+      "message": "Add method to find packages in ProjectPathTraverser\n\nImplemented `findPackages` method in `ProjectPathTraverser` to locate all directories within a given path. Updated `PackageLocator` to utilize this new method for package discovery, thereby simplifying and improving the package location process.\n"
+    },
+    {
+      "sha": "ada5947edcb41da6cb850a3e8fbd3bf0ed98512f",
+      "date": "2024-09-09T23:36:08+02:00",
+      "author": "Abhinav Sonkar",
+      "email": "xsabhinav@gmail.com",
+      "message": "Set property for ASM version and configure Dependabot\n\nDefined asm.version property in pom.xml to centralize ASM version configuration. Updated Dependabot to use Maven as the package ecosystem for automatic dependency management.\n"
+    },
+    {
+      "sha": "c6066debd8d02a29188a96699bd8de6749572246",
+      "date": "2024-09-09T23:31:43+02:00",
+      "author": "Abhinav Sonkar",
+      "email": "xsabhinav@gmail.com",
+      "message": "Create build maven.yml (#3)\n\n* Create maven.yml\n\n* Add write permission\n\n* Update maven.yml"
+    },
+    {
+      "sha": "a4313f657092297d487909469cee5561c47763cc",
+      "date": "2024-09-09T23:31:26+02:00",
+      "author": "Abhinav Sonkar",
+      "email": "xsabhinav@gmail.com",
+      "message": "Create dependabot.yml (#4)\n\n"
+    },
+    {
+      "sha": "cd499090fbb671ecc8f35ee984ff6a81f7ae6efd",
+      "date": "2024-09-09T23:14:17+02:00",
+      "author": "Abhinav Sonkar",
+      "email": "xsabhinav@gmail.com",
+      "message": "Create maven-publish.yml (#2)\n\n"
+    },
+    {
+      "sha": "46f2c60ec2064617bc4b388f0f3dc8f4f67f775c",
+      "date": "2024-09-09T23:08:48+02:00",
+      "author": "Abhinav Sonkar",
+      "email": "xsabhinav@gmail.com",
+      "message": "Merge pull request #1 from xsreality/bugfix/ignore-test-classes\n\nfix: Remove debug logging and filter out test class files."
+    },
+    {
+      "sha": "83299e689b2a406c3b37829f2a066b78a0e024d1",
+      "date": "2024-09-09T23:06:21+02:00",
+      "author": "Abhinav Sonkar",
+      "email": "xsabhinav@gmail.com",
+      "message": "Remove debug logging and filter out test class files.\n\nRemoved the debug log statement from `containsSpringBootApplication` to reduce clutter in log files. Added a filter method to exclude test class files from being analyzed, ensuring only main application classes are considered.\n"
+    },
+    {
+      "sha": "ab8dd85b6c0218957269bf592d82bf3618c7c2d5",
+      "date": "2024-09-09T18:45:24+02:00",
+      "author": "Abhinav Sonkar",
+      "email": "xsabhinav@gmail.com",
+      "message": "Update README.md for Spring Modulith and top-level packages\n\nClarify that the application now supports Spring Boot projects and follows Spring Modulith principles by analyzing only top-level packages at the same level as the `@SpringBootApplication` annotated class. This change helps ensure packages are functional layers, not just technical layers.\n"
+    },
+    {
+      "sha": "58fc98b54cf75ea251488cb8fba3a75c2670fe44",
+      "date": "2024-09-09T18:40:22+02:00",
+      "author": "Abhinav Sonkar",
+      "email": "xsabhinav@gmail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "32f8e4f430f103008d487f294075e2cdbf826a52",
+      "date": "2024-09-09T18:38:18+02:00",
+      "author": "Abhinav Sonkar",
+      "email": "xsabhinav@gmail.com",
+      "message": "Create LICENSE"
+    },
+    {
+      "sha": "c37279f460297e8e3dcfb12f214e0130c4a82b67",
+      "date": "2024-09-09T18:33:38+02:00",
+      "author": "Abhinav Sonkar",
+      "email": "xsabhinav@gmail.com",
+      "message": "Refactor class analysis logic and update package structure\n\nCentralize class analysis in JavaClassAnalyzer and clean up related classes. Deleted PackageLocatorTest.java and commented out irrelevant parts of JavaClassAnalyzerTest.java. Also modified pom.xml and other files to reflect the project's new scope and structure.\n"
+    },
+    {
+      "sha": "e3633ab2901c4df9026bfa3c28000874b07d1c03",
+      "date": "2024-09-09T13:07:19+02:00",
+      "author": "Abhinav Sonkar",
+      "email": "abhinav@axual.com",
+      "message": "Refactor package finding logic and remove obsolete classes\n\nReplaced PackageFinder with a more modular approach using PackageLocator, JavaClassAnalyzer, and ProjectPathTraverser for better separation of concerns. Updated related classes and controllers to handle new exceptions and integrate with the refactored package finding logic. Deleted obsolete tests and classes no longer needed.\n"
+    },
+    {
+      "sha": "82ca5e994094117b214497b72bba323dd9d5c038",
+      "date": "2024-09-09T11:47:31+02:00",
+      "author": "Abhinav Sonkar",
+      "email": "abhinav@axual.com",
+      "message": "Refactor package structure and rename variables\n\nReorganized packages to follow a cleaner structure under 'softwaremetrics'. Updated variable names from 'dependencies' to 'outgoingDependencies' for clarity in dependency tracking.\n"
+    },
+    {
+      "sha": "aaf4671e989a630aa0c9a3974a9176adb0fc57ed",
+      "date": "2024-09-09T10:03:03+02:00",
+      "author": "Abhinav Sonkar",
+      "email": "abhinav@axual.com",
+      "message": "Update HTMX script, add README, and integration tests\n\nUpdated the HTMX script to version 2.0.2 in the index.html file. Added a detailed README.md to guide the usage of the project. Introduced integration tests for the PackageScannerController to ensure the application works as expected.\n"
+    },
+    {
+      "sha": "8e45c57a2f1d4b77a0efe0c4c76016ac59af02e6",
+      "date": "2024-09-09T09:36:17+02:00",
+      "author": "Abhinav Sonkar",
+      "email": "abhinav@axual.com",
+      "message": "Enhance package discovery tests in PackageFinderTest\n\nRefactor package discovery tests to include new methods for testing main package and top-level package discovery. Consolidate repetitive mock project creation into a utility method, improving code readability and maintainability.\n"
+    },
+    {
+      "sha": "c4f3c89ba0277c0e2011fdb5f32f8fdb9b7650d9",
+      "date": "2024-09-08T23:24:38+02:00",
+      "author": "Abhinav Sonkar",
+      "email": "abhinav@axual.com",
+      "message": "Refactor package scanning to use dependency injection\n\nReplaced static package scanning methods with dependency-injected components to improve modularity and testability. Introduced `PackageFinder` and `InstabilityCalculator` components. Updated controllers and application class to reflect these changes.\n"
+    },
+    {
+      "sha": "6f22c3bd75bd8084bb1b3e2a43638d493cf646bd",
+      "date": "2024-09-08T16:15:12+02:00",
+      "author": "Abhinav Sonkar",
+      "email": "abhinav@axual.com",
+      "message": "Add zone plugin and stylistic adjustments to graph\n\nImplemented a zone plugin to highlight specific areas in the graph such as \"Zone of Pain\" and \"Zone of Uselessness\". Adjusted canvas aspect ratio to ensure the chart is square and modified CSS for better styling and responsiveness.\n"
+    },
+    {
+      "sha": "84ef973ee7eb6b9e969532a365ecee0d5323bd4f",
+      "date": "2024-09-08T14:49:48+02:00",
+      "author": "Abhinav Sonkar",
+      "email": "abhinav@axual.com",
+      "message": "Update graph UI, add logging, and configure project details\n\nIntroduce a responsive container for the graph and improve CSS styles for consistency. Enhance the Java code with SLF4J logging for better debugging capabilities. Update dependencies and application configuration files to support the new features.\n"
+    },
+    {
+      "sha": "2995977a4bcdccb62b335120478b83cbecf3697d",
+      "date": "2024-09-08T14:14:30+02:00",
+      "author": "Abhinav Sonkar",
+      "email": "abhinav@axual.com",
+      "message": "Add package scanner functionality\n\nIntroduced a new Spring Boot application to scan packages and analyze their instability and abstractness metrics. Included controllers, templates, main application, and utility classes. Added dependencies for Spring Boot web, Thymeleaf, ASM, and JFreeChart to 'pom.xml'.\n"
+    }
+  ],
+  "commit_sha": "8c45e00629f24a6558b003a756ab904e94b9fe3f",
+  "extracted_at": "2026-10-05T18:45:17.151937+00:00"
+}

@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "55fbf705956949697dbd68bf9003776609d3d029",
+      "date": "2026-05-09T17:40:28+08:00",
+      "author": "Jie Zheng",
+      "email": "201507802@qq.com",
+      "message": "refactor: 优化异步处理线程池和角色级别验证逻辑，修复 PUT /api/roles 权限检查绕过，修复 isAdmin标志导致垂直越权。\nclose https://github.com/elunez/eladmin/issues/897\nclose https://github.com/elunez/eladmin/issues/898\n"
+    },
+    {
+      "sha": "a6a335d5d2748435fed7c286d67453aba309c026",
+      "date": "2026-05-09T17:26:33+08:00",
+      "author": "pcshao",
+      "email": "shaocover@163.com",
+      "message": "数据库连接串不起作用\n\n* fix:修复自定义@Async线程池的线程命名总是为el-async-1的问题\n\n* fix:SqlUtils获取连接的私有方法无需关闭连接，在其他使用的地方已有关闭连接的写法，否则executeFile执行时获取连接后连接被关闭则无法真正执行sql。"
+    },
+    {
+      "sha": "be2f1370f3b9cd2e9c1369a8026f3a54073edda5",
+      "date": "2026-03-13T17:05:14+08:00",
+      "author": "Jie Zheng",
+      "email": "201507802@qq.com",
+      "message": "Merge branch 'master' of github.com:elunez/eladmin\n"
+    },
+    {
+      "sha": "ad336fbe53da69a1d5fb9e2b80c31840c8ddc07f",
+      "date": "2026-03-13T17:02:47+08:00",
+      "author": "Jie Zheng",
+      "email": "201507802@qq.com",
+      "message": "feat: 添加 CSV/XLSX 注入防护功能，新增 sanitizeCellValue 方法\n\nclose https://github.com/elunez/eladmin/issues/886\n"
+    },
+    {
+      "sha": "ed54f18dfe00bb6881be0a4b6f5cb061ecd1218d",
+      "date": "2026-03-13T16:50:10+08:00",
+      "author": "pcshao",
+      "email": "shaocover@163.com",
+      "message": "fix:修复自定义@Async线程池的线程命名总是为el-async-1的问题 (#887)"
+    },
+    {
+      "sha": "5e25ba6f8414d28243eb8873bc306e06ec2f6480",
+      "date": "2025-07-03T14:38:28+08:00",
+      "author": "Jie Zheng",
+      "email": "201507802@qq.com",
+      "message": "fix: ✨️使用 Jackson 序列化对象时，Menu对象中 iFrame 属性名的大小写问题\n\nJackson 因此序列化时，属性会被默认输出为 IFrame（大写的 I），导致与前端代码期望的 iFrame（小写的 i）不一致\n"
+    },
+    {
+      "sha": "8c398e003c7b0373eaed04add2ed51ed2a81941e",
+      "date": "2025-06-25T16:21:02+08:00",
+      "author": "Jie Zheng",
+      "email": "201507802@qq.com",
+      "message": "feat: 移除七牛云存储相关依赖，更新pom.xml文件\n"
+    },
+    {
+      "sha": "696e4c24b6a540207223d4262e08b83d85384b15",
+      "date": "2025-06-25T16:20:19+08:00",
+      "author": "Jie Zheng",
+      "email": "201507802@qq.com",
+      "message": "docs: 更新README.md\n"
+    },
+    {
+      "sha": "2af6d064ebae8fcd9fb65ede57fb19a8dad3cb3e",
+      "date": "2025-06-25T15:58:58+08:00",
+      "author": "Jie Zheng",
+      "email": "201507802@qq.com",
+      "message": "feat: 添加亚马逊S3协议云存储支持，移除七牛云相关代码和配置文件，更新Sql文件\n"
+    },
+    {
+      "sha": "7728306d5a2ea1af22f5c0b798d07e0f7a8aee5f",
+      "date": "2025-06-25T15:58:42+08:00",
+      "author": "Jie Zheng",
+      "email": "201507802@qq.com",
+      "message": "feat: 添加亚马逊S3协议云存储支持，移除七牛云相关代码和配置文件，更新Sql文件\n"
+    },
+    {
+      "sha": "50140d8a2c61fe4b227b757387cee240def1240a",
+      "date": "2025-06-24T10:02:34+08:00",
+      "author": "Jie Zheng",
+      "email": "201507802@qq.com",
+      "message": "refactor: 🧬️优化启动类中打印端口硬编码问题\n"
+    },
+    {
+      "sha": "e602b759bbdc4e89aeb327fd40048a32a4de1e5e",
+      "date": "2025-06-20T11:29:39+08:00",
+      "author": "Jie Zheng",
+      "email": "201507802@qq.com",
+      "message": "fix: 增加应用名称特殊字符校验与命令执行安全性优化，避免潜在恶意攻击风险，关联 #873\n\nclose https://github.com/elunez/eladmin/issues/873\n"
+    },
+    {
+      "sha": "caa7c6698fb5cb4ba0c93b2e79f8f19eea38ec02",
+      "date": "2025-06-19T17:47:29+08:00",
+      "author": "Jie Zheng",
+      "email": "201507802@qq.com",
+      "message": "fix: TokenProvider类中复用JwtBuilder实例导致并发环境下Token生成错误\nclose https://github.com/elunez/eladmin/issues/870\n"
+    },
+    {
+      "sha": "92522cb5f4d79d62016977b2c6a63dc11c0f7409",
+      "date": "2025-06-19T17:18:00+08:00",
+      "author": "Jie Zheng",
+      "email": "201507802@qq.com",
+      "message": "Merge branch 'master' of github.com:elunez/eladmin\n"
+    },
+    {
+      "sha": "7f618b6475beb7242ca78c6da1a3206d46735f5f",
+      "date": "2025-06-19T17:17:40+08:00",
+      "author": "Jie Zheng",
+      "email": "201507802@qq.com",
+      "message": "feat: 优化RedisUtils反序列化逻辑，支持非目标类型的值转换为目标类型\n"
+    },
+    {
+      "sha": "c31c9c04b4d9f4ade5fe7bfd35d577b6f2a823e9",
+      "date": "2025-06-19T16:47:10+08:00",
+      "author": "pcshao",
+      "email": "shaocover@163.com",
+      "message": "fix and close https://github.com/elunez/eladmin/issues/874 (#880)\n\n"
+    },
+    {
+      "sha": "332cf6c5fada54ad20a142b1a8f75517972de503",
+      "date": "2025-02-18T15:50:04+08:00",
+      "author": "Jie Zheng",
+      "email": "201507802@qq.com",
+      "message": "fix: 移除JwtUserDto中的密码字段，确保密码不被序列化\n"
+    },
+    {
+      "sha": "6226763f47c83688c0a14761b678e82972a9387f",
+      "date": "2025-02-11T17:35:32+08:00",
+      "author": "Jie Zheng",
+      "email": "201507802@qq.com",
+      "message": "fix: ✨️导出excel使用LinkedHashMap替代HashMap以保持插入顺序\n"
+    },
+    {
+      "sha": "429f375f8274023ee55e94f01f334777415001d8",
+      "date": "2025-01-25T14:43:27+08:00",
+      "author": "Jie Zheng",
+      "email": "201507802@qq.com",
+      "message": "feat: ✨️升级mysql-connector至9.2.0\n"
+    },
+    {
+      "sha": "61f8dc32cf80e1091fe6c046783a0ccadb056da7",
+      "date": "2025-01-25T13:43:20+08:00",
+      "author": "Jie Zheng",
+      "email": "201507802@qq.com",
+      "message": "feat: 优化Redis配置，添加AutoConfigureBefore注解\n"
+    },
+    {
+      "sha": "0a51ae51233e11641f820938818a5679656c6131",
+      "date": "2025-01-25T13:39:10+08:00",
+      "author": "Jie Zheng",
+      "email": "201507802@qq.com",
+      "message": "feat: 优化Redis配置，添加AutoConfigureBefore注解\n"
+    },
+    {
+      "sha": "41ccc1f6e6cdba523be3c459854ef316a4d5dcd8",
+      "date": "2025-01-25T10:19:56+08:00",
+      "author": "Jie Zheng",
+      "email": "201507802@qq.com",
+      "message": "refactor: 从CacheConfig注解中移除keyGenerator，优化Redis配置\n"
+    },
+    {
+      "sha": "4e4ca2082867a4c4cd425e6e5c9e98a59832d0d0",
+      "date": "2025-01-22T10:17:28+08:00",
+      "author": "Jie Zheng",
+      "email": "201507802@qq.com",
+      "message": "feat: 升级部分依赖于优化代码（升级fastjson2，不再兼容fastjson1），其他升级看详情\n升级 hutool：5.8.35\n升级 oshi-core：6.6.5\n升级 mica-ip2region：2.7.18.9\n升级 poi：5.4.0\n升级 commons-text：1.13.0\n"
+    },
+    {
+      "sha": "f9799cdfb3776b9cc1b5712b6a56ef94f25a4a6b",
+      "date": "2025-01-21T16:35:40+08:00",
+      "author": "Jie Zheng",
+      "email": "201507802@qq.com",
+      "message": "style: 📚️更新 README.md\n"
+    },
+    {
+      "sha": "8e4f44a670356c794464ee70ffb42943b058b21c",
+      "date": "2025-01-21T16:31:25+08:00",
+      "author": "Jie Zheng",
+      "email": "201507802@qq.com",
+      "message": "style: 📚️添加Spring日志级别控制为warn\n"
+    },
+    {
+      "sha": "0edf43c78e988f3afe9539dad1bdec3fe422ee52",
+      "date": "2025-01-21T16:00:41+08:00",
+      "author": "Jie Zheng",
+      "email": "201507802@qq.com",
+      "message": "feat: ✨️更新Spring Boot版本至2.7.18并重构安全配置\n"
+    },
+    {
+      "sha": "b6295a7bdfc7320d67b8dd74d86b0e30abcf3ffa",
+      "date": "2025-01-21T15:35:20+08:00",
+      "author": "Jie Zheng",
+      "email": "201507802@qq.com",
+      "message": "fix: 修复重置密码后，未删除缓存的问题\nclose https://github.com/elunez/eladmin/issues/866\n"
+    },
+    {
+      "sha": "31b033afe89356950c2cf19672047455b99a8d1b",
+      "date": "2025-01-21T15:20:02+08:00",
+      "author": "Jie Zheng",
+      "email": "201507802@qq.com",
+      "message": "perf: 优化用户缓存管理，统一转换为小写\nclose https://github.com/elunez/eladmin/issues/866\n"
+    },
+    {
+      "sha": "db63c953d49e100b38f65d13b3fc17ead5a831ec",
+      "date": "2025-01-21T15:00:44+08:00",
+      "author": "Jie Zheng",
+      "email": "201507802@qq.com",
+      "message": "perf: 添加权限检查，优化角色缓存及命名\n"
+    },
+    {
+      "sha": "0a91748fd246e566d09beac1b9593dcd532e17c8",
+      "date": "2025-01-18T18:03:56+08:00",
+      "author": "Jie Zheng",
+      "email": "201507802@qq.com",
+      "message": "perf: 优化Token生成\n"
+    }
+  ],
+  "commit_sha": "55fbf705956949697dbd68bf9003776609d3d029",
+  "extracted_at": "2026-10-05T17:51:54.037578+00:00"
+}

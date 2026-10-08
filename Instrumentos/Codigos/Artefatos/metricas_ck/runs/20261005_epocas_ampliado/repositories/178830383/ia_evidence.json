@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "355b58d8fc39515a424a0c3439619857fed634bd",
+      "date": "2025-11-09T13:25:54+01:00",
+      "author": "Maxim Grischenko",
+      "email": "Grischenko.Maxim@gmail.com",
+      "message": "Fix develop pipeline (#643)\n\n* use actions/cache@v4\n\n* update jacoco-maven-plugin\n\n* comment out sonar and openshift in CI\n\n* comment out deploy to github registry\n\n* update Dockerfile"
+    },
+    {
+      "sha": "1cd9a0088919458504a2f4cf5b96d4ece8ccbf3f",
+      "date": "2025-05-13T08:44:32+01:00",
+      "author": "NDOUM Saïd",
+      "email": "83331010+NdSaid@users.noreply.github.com",
+      "message": "Merge pull request #641 from ADORSYS-GIS/upgrade/0.x/ksc-upgrade-java-and-spring-boot-version\n\nUpgrade/0.x/ksc upgrade java and spring boot version"
+    },
+    {
+      "sha": "6e241bd575753916fdd15a445bc92b00b4512c50",
+      "date": "2025-03-24T15:21:25+01:00",
+      "author": "Kouam Schekina",
+      "email": "146363175+kouamschekina@users.noreply.github.com",
+      "message": "Update pull-request.yml"
+    },
+    {
+      "sha": "d2fdcf4fb4b63ecb40fbca6b20001a875a769f11",
+      "date": "2025-03-24T15:19:09+01:00",
+      "author": "Kouam Schekina",
+      "email": "146363175+kouamschekina@users.noreply.github.com",
+      "message": "Update pull-request.yml"
+    },
+    {
+      "sha": "11159d6cbc282e09902c537450f033825423b93a",
+      "date": "2025-03-20T10:35:33+01:00",
+      "author": "kouamschekina",
+      "email": "kouamdelphine82@gmail.com",
+      "message": "fix: update imports in CodeGenerator and bump dependency versions\n"
+    },
+    {
+      "sha": "a5e53188648cfb501ee0ba661aa12ce6bd1a36d6",
+      "date": "2025-03-18T16:10:54+01:00",
+      "author": "kouamschekina",
+      "email": "kouamdelphine82@gmail.com",
+      "message": "chore(ci): upgrade java version and GitHub Actions\n"
+    },
+    {
+      "sha": "3f6a1d8daef6b6b13cd36d66797c6e8c710f5d44",
+      "date": "2025-03-18T08:55:24+01:00",
+      "author": "kouamschekina",
+      "email": "kouamdelphine82@gmail.com",
+      "message": "test: disabled DeutscheBank tests\n"
+    },
+    {
+      "sha": "70e47b847278bc71c68ae8707920faad9ff87c14",
+      "date": "2025-03-18T08:29:39+01:00",
+      "author": "kouamschekina",
+      "email": "kouamdelphine82@gmail.com",
+      "message": "chore(pom): add dependency and plugin versions as properties in parent POM\n"
+    },
+    {
+      "sha": "f389bcb3d05188da29e7a53f7d5e9d41844120cc",
+      "date": "2025-03-17T11:15:03+01:00",
+      "author": "kouamschekina",
+      "email": "kouamdelphine82@gmail.com",
+      "message": "chore(deps): update vulnerable dependencies\n"
+    },
+    {
+      "sha": "e98740ddc4fdbf48d93ee1b510bd47c3281835a4",
+      "date": "2025-03-17T11:07:22+01:00",
+      "author": "kouamschekina",
+      "email": "kouamdelphine82@gmail.com",
+      "message": "build: upgrade to java 21, spring boot 3.4.3, and related dependencies\n"
+    },
+    {
+      "sha": "4831bd9892c03d95beb56840d31bcd866bb317ea",
+      "date": "2022-06-08T15:01:10+03:00",
+      "author": "Serhii",
+      "email": "semyonich@users.noreply.github.com",
+      "message": "Merge pull request #638 from adorsys/feature/sse_changed_release_policy\n\nrelease policy change"
+    },
+    {
+      "sha": "2a03c4ce2087710405ecccec6e1bf6ad693c90bb",
+      "date": "2022-06-08T14:17:21+03:00",
+      "author": "semenykhin",
+      "email": "sse@golden-dimension.com",
+      "message": "release policy has changed\n"
+    },
+    {
+      "sha": "d8c3aa2bdc11857ae6ad9d3bf38941dcde030f8f",
+      "date": "2022-01-25T14:31:17+02:00",
+      "author": "HryhoriiHevorkian",
+      "email": "64079106+HryhoriiHevorkian@users.noreply.github.com",
+      "message": "#1736 new license. (#635)\n\n* #1736 new license.\n\n* #1736 new license.\n\nCo-authored-by: Hryhorii Hevorkian <hhe@adorsys.com.ua>"
+    },
+    {
+      "sha": "b6b36350069a14c9f42b373ab83e998c7538c1f1",
+      "date": "2021-12-30T10:23:15+02:00",
+      "author": "tsehelnyk",
+      "email": "58398447+tsehelnyk@users.noreply.github.com",
+      "message": "Start next iteration with 0.1.18-SNAPSHOT\n"
+    },
+    {
+      "sha": "7d54b9713174e594478bd00f98ce700a4baa96e7",
+      "date": "2021-12-30T10:21:43+02:00",
+      "author": "tsehelnyk",
+      "email": "58398447+tsehelnyk@users.noreply.github.com",
+      "message": "Prepare release 0.1.18-alpha-release-candidate\n"
+    },
+    {
+      "sha": "edb75574e764ec206e5808597e98e626e05822c8",
+      "date": "2021-12-30T10:17:59+02:00",
+      "author": "tsehelnyk",
+      "email": "58398447+tsehelnyk@users.noreply.github.com",
+      "message": "Added Realease notes for 0.1.18-alpha-release-candidate\n"
+    },
+    {
+      "sha": "8e0bde6d9886b0eaafe617c8d437ce9ffd548762",
+      "date": "2021-12-29T20:34:15+01:00",
+      "author": "Clovis Gakam",
+      "email": "clovis.gakam@gmail.com",
+      "message": "add support  forBg api V1.3.9 (#631)\n\n* add support  Bg api V1.3.9 headers\n\n* generate xs2a Bg v1.3.9 api and models\n\n* fixed checkstyles issues\n\n* 1.3.8 API was replaced with 1.3.9\nfixed tests, changes according to the new models\n\n* fixed merge conflicts\n\n* add converter configuration to FeignConfiguration\n\nCo-authored-by: tsehelnyk <58398447+tsehelnyk@users.noreply.github.com>"
+    },
+    {
+      "sha": "c23742f2bd57b32d9bb05ab59a47a9f5ed62708a",
+      "date": "2021-12-22T14:06:19+02:00",
+      "author": "tsehelnyk",
+      "email": "58398447+tsehelnyk@users.noreply.github.com",
+      "message": "Extending Fiducia booking statuses list  (#633)\n\n* add new supported booking status to FiduciaAccountInformationService\nadd test to check supported statuses validation\n\n* deleted unused import and commented code"
+    },
+    {
+      "sha": "abf9f8778f7b77c810b6038049429fc3eaa34367",
+      "date": "2021-12-02T20:05:46+02:00",
+      "author": "tsehelnyk",
+      "email": "58398447+tsehelnyk@users.noreply.github.com",
+      "message": "Start next iteration with 0.1.18-SNAPSHOT\n"
+    },
+    {
+      "sha": "334ecc1404032d4e9aa7587042169f10c8bd0c3f",
+      "date": "2021-12-02T20:00:35+02:00",
+      "author": "tsehelnyk",
+      "email": "58398447+tsehelnyk@users.noreply.github.com",
+      "message": "Prepare release 0.1.17\n"
+    },
+    {
+      "sha": "e03a04de205f3595a2ba41af3a34dc2b6f6071e1",
+      "date": "2021-12-02T19:54:47+02:00",
+      "author": "tsehelnyk",
+      "email": "58398447+tsehelnyk@users.noreply.github.com",
+      "message": "Prepare to release 0.1.17\n"
+    },
+    {
+      "sha": "702692ac041f24e37d0cef6e4d24d893af7b3bbb",
+      "date": "2021-12-02T15:35:45+02:00",
+      "author": "tsehelnyk",
+      "email": "58398447+tsehelnyk@users.noreply.github.com",
+      "message": "Commerzbank adapter was updated according to new API (#630)\n\n* Commerzbank adapter was updated according to new Commerzbank API\n\n* Commerzbank adapter was cleaned up from unnecessary models and mappers"
+    },
+    {
+      "sha": "4a9d9075fbd7bd05bd87702dd65a5b2ccac311af",
+      "date": "2021-10-18T17:41:42+03:00",
+      "author": "Olga",
+      "email": "86299452+OlgaLevandovska@users.noreply.github.com",
+      "message": "Changes to roadmap for release 0.1.16 and Adapter license policy update (#629)\n\n* Changes to roadmap for release 0.1.16 and Adapter license policy update\n\n* Changes to roadmap for release 0.1.16 and Adapter license policy update\n\n* Changes to roadmap for release 0.1.16 and Adapter license policy update - corrected based on comments\n\nCo-authored-by: olgalevandovska <ole@golden-dimension.com>"
+    },
+    {
+      "sha": "0f6de7e1feff4d83b98c7d3aa4fab51cf97b3fe2",
+      "date": "2021-10-04T18:13:05+03:00",
+      "author": "berezkin88",
+      "email": "berezkin05@gmail.com",
+      "message": "Start next iteration with 0.1.17-SNAPSHOT\n"
+    },
+    {
+      "sha": "20b54d6eed954ae52470cc23b4f2c2e144dfcfdb",
+      "date": "2021-10-04T18:11:32+03:00",
+      "author": "berezkin88",
+      "email": "berezkin05@gmail.com",
+      "message": "Prepare release 0.1.16\n"
+    },
+    {
+      "sha": "21f74ca7adc2c8ae263d66cf497ab92db1f18b44",
+      "date": "2021-10-04T18:09:37+03:00",
+      "author": "berezkin88",
+      "email": "berezkin05@gmail.com",
+      "message": "release 0.1.16\n"
+    },
+    {
+      "sha": "7ab466c3082c417dbca75bf4e64e8d6a200f00a1",
+      "date": "2021-09-27T10:56:55+03:00",
+      "author": "Alexander Berezkin",
+      "email": "berezkin05@gmail.com",
+      "message": "Commerzbank and Comdirect wiremock (#627)\n\n* added ais stubs for commerzbank\n\n* added pis sepa payments stubs for commerzbank\n\n* added ais stubs for comdirect\n\n* added pis sepa payments stubs for comdirect\n\n* added notes into docs"
+    },
+    {
+      "sha": "178f9168d3c859eee7901586dfaae0d672f0b907",
+      "date": "2021-09-22T12:36:27+03:00",
+      "author": "Alexander Berezkin",
+      "email": "berezkin05@gmail.com",
+      "message": "Unicredit wiremock (#626)\n\n* added ais stubs for unicredit\n\n* added PIS payments and periodic-payments stubs\n\n* return updatePaymentPsuData\n\n* disabled one test"
+    },
+    {
+      "sha": "e987ef48d5e0d4e79ac5958e3460b52d8d8c29d6",
+      "date": "2021-09-17T12:33:54+03:00",
+      "author": "Alexander Berezkin",
+      "email": "berezkin05@gmail.com",
+      "message": "Fix sparkasse wiremock stubs (#625)\n\n* updated sparkasse stubs\n\n* release notes"
+    },
+    {
+      "sha": "6dcebe8732871945b7e60a7a3f8deb25871b615f",
+      "date": "2021-09-17T10:22:47+03:00",
+      "author": "Alexander Berezkin",
+      "email": "berezkin05@gmail.com",
+      "message": "fixed release script (#624)\n\n"
+    }
+  ],
+  "commit_sha": "355b58d8fc39515a424a0c3439619857fed634bd",
+  "extracted_at": "2026-10-05T18:33:03.179778+00:00"
+}

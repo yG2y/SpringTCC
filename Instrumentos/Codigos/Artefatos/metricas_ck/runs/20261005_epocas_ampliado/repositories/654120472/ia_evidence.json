@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "3cb2ef460c98d210569a3f75a0644f1ece901380",
+      "date": "2026-10-02T11:03:39+02:00",
+      "author": "Paul Wannenmacher",
+      "email": "paul.wannenmacher@frachtwerk.de",
+      "message": "feat: handle unknown sort or filter properties with HTTP 400 response\n"
+    },
+    {
+      "sha": "da376fb55da9a21070caec342a76c0955885f8a0",
+      "date": "2026-09-18T19:20:25+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump the patch-updates group (#1031)\n\nBumps the patch-updates group in /essencium-backend with 2 updates: [org.wiremock.integrations:wiremock-spring-boot](https://github.com/wiremock/wiremock-spring-boot) and [org.codehaus.mojo:build-helper-maven-plugin](https://github.com/mojohaus/build-helper-maven-plugin).\n\n\nUpdates `org.wiremock.integrations:wiremock-spring-boot` from 4.2.2 to 4.2.3\n- [Release notes](https://github.com/wiremock/wiremock-spring-boot/releases)\n- [Commits](https://github.com/wiremock/wiremock-spring-boot/compare/4.2.2...4.2.3)\n\nUpdates `org.codehaus.mojo:build-helper-maven-plugin` from 3.6.1 to 3.6.2\n- [Release notes](https://github.com/mojohaus/build-helper-maven-plugin/releases)\n- [Commits](https://github.com/mojohaus/build-helper-maven-plugin/compare/3.6.1...3.6.2)\n\n---\nupdated-dependencies:\n- dependency-name: org.wiremock.integrations:wiremock-spring-boot\n  dependency-version: 4.2.3\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: patch-updates\n- dependency-name: org.codehaus.mojo:build-helper-maven-plugin\n  dependency-version: 3.6.2\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: patch-updates\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "da1984f3dbc360a20197f94e752e6168707091ed",
+      "date": "2026-09-15T10:12:38+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump the minor-updates group across 1 directory with 2 updates (#1026)\n\n* build(deps): bump the minor-updates group across 1 directory with 2 updates\n\nBumps the minor-updates group with 2 updates in the /essencium-backend directory: [io.sentry:sentry-spring-boot-4](https://github.com/getsentry/sentry-java) and [org.sonarsource.scanner.maven:sonar-maven-plugin](https://github.com/SonarSource/sonar-scanner-maven).\n\n\nUpdates `io.sentry:sentry-spring-boot-4` from 8.55.0 to 8.56.0\n- [Release notes](https://github.com/getsentry/sentry-java/releases)\n- [Changelog](https://github.com/getsentry/sentry-java/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/getsentry/sentry-java/compare/8.55.0...8.56.0)\n\nUpdates `org.sonarsource.scanner.maven:sonar-maven-plugin` from 5.7.0.6970 to 5.8.0.7211\n- [Release notes](https://github.com/SonarSource/sonar-scanner-maven/releases)\n- [Commits](https://github.com/SonarSource/sonar-scanner-maven/compare/5.7.0.6970...5.8.0.7211)\n\n---\nupdated-dependencies:\n- dependency-name: io.sentry:sentry-spring-boot-4\n  dependency-version: 8.56.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: minor-updates\n- dependency-name: org.sonarsource.scanner.maven:sonar-maven-plugin\n  dependency-version: 5.8.0.7211\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: minor-updates\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\n\n* chore: update CHANGELOG for io.sentry:sentry-spring-boot-4 upgrade to 8.56.0\n\n---------\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Paul Wannenmacher <paul.wannenmacher@frachtwerk.de>"
+    },
+    {
+      "sha": "e22f0e1129e978e9f5ccfffb630b6b879ada4bc2",
+      "date": "2026-09-15T09:12:24+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump next from 15.5.21 to 15.5.24 in /docs (#1021)\n\nBumps [next](https://github.com/vercel/next.js) from 15.5.21 to 15.5.24.\n- [Release notes](https://github.com/vercel/next.js/releases)\n- [Commits](https://github.com/vercel/next.js/compare/v15.5.21...v15.5.24)\n\n---\nupdated-dependencies:\n- dependency-name: next\n  dependency-version: 15.5.24\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "4581de96874b526237f2e77e9022e9eaad268331",
+      "date": "2026-09-14T19:19:53+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump github/codeql-action in the minor-updates group (#1029)\n\nBumps the minor-updates group with 1 update: [github/codeql-action](https://github.com/github/codeql-action).\n\n\nUpdates `github/codeql-action` from 4.37.9 to 4.38.0\n- [Release notes](https://github.com/github/codeql-action/releases)\n- [Changelog](https://github.com/github/codeql-action/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/github/codeql-action/compare/v4.37.9...v4.38.0)\n\n---\nupdated-dependencies:\n- dependency-name: github/codeql-action\n  dependency-version: 4.38.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: minor-updates\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "d078466af1532f33dba0bd1d919d4fc665e955e6",
+      "date": "2026-09-10T18:19:44+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump the patch-updates group across 1 directory with 2 updates (#1018)\n\n* build(deps): bump the patch-updates group across 1 directory with 2 updates\n\nBumps the patch-updates group with 2 updates in the /essencium-backend directory: [org.springdoc:springdoc-openapi-starter-webmvc-ui](https://github.com/springdoc/springdoc-openapi) and [com.diffplug.spotless:spotless-maven-plugin](https://github.com/diffplug/spotless).\n\n\nUpdates `org.springdoc:springdoc-openapi-starter-webmvc-ui` from 3.1.0 to 3.1.1\n- [Release notes](https://github.com/springdoc/springdoc-openapi/releases)\n- [Changelog](https://github.com/springdoc/springdoc-openapi/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/springdoc/springdoc-openapi/compare/v3.1.0...v3.1.1)\n\nUpdates `com.diffplug.spotless:spotless-maven-plugin` from 3.10.1 to 3.10.2\n- [Release notes](https://github.com/diffplug/spotless/releases)\n- [Changelog](https://github.com/diffplug/spotless/blob/main/CHANGES.md)\n- [Commits](https://github.com/diffplug/spotless/compare/maven/3.10.1...maven/3.10.2)\n\n---\nupdated-dependencies:\n- dependency-name: org.springdoc:springdoc-openapi-starter-webmvc-ui\n  dependency-version: 3.1.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: patch-updates\n- dependency-name: com.diffplug.spotless:spotless-maven-plugin\n  dependency-version: 3.10.2\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: patch-updates\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\n\n* chore: update changelog for version 4.0.1 release with new dependency upgrades\n\n---------\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Paul Wannenmacher <paul.wannenmacher@frachtwerk.de>"
+    },
+    {
+      "sha": "7a92daa1812f4b5029c9b86725cba5b7bdb76500",
+      "date": "2026-09-08T17:16:16+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump com.h2database:h2 (#1012)\n\nBumps the minor-updates group with 1 update in the /essencium-backend-development-uuid directory: [com.h2database:h2](https://github.com/h2database/h2database).\n\n\nUpdates `com.h2database:h2` from 2.4.240 to 2.5.250\n- [Release notes](https://github.com/h2database/h2database/releases)\n- [Commits](https://github.com/h2database/h2database/compare/version-2.4.240...version-2.5.250)\n\n---\nupdated-dependencies:\n- dependency-name: com.h2database:h2\n  dependency-version: 2.5.250\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: minor-updates\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "673944d5e706d8b0da03af72fa494c5e530459c5",
+      "date": "2026-09-08T17:15:59+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump com.h2database:h2 (#1011)\n\nBumps the minor-updates group with 1 update in the /essencium-backend-development directory: [com.h2database:h2](https://github.com/h2database/h2database).\n\n\nUpdates `com.h2database:h2` from 2.4.240 to 2.5.250\n- [Release notes](https://github.com/h2database/h2database/releases)\n- [Commits](https://github.com/h2database/h2database/compare/version-2.4.240...version-2.5.250)\n\n---\nupdated-dependencies:\n- dependency-name: com.h2database:h2\n  dependency-version: 2.5.250\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: minor-updates\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "0cf37e1a9ade7be919f2e9ef136be313442e6eb1",
+      "date": "2026-09-07T17:07:54+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump io.sentry:sentry-spring-boot-4 from 8.54.0 to 8.55.0 in /essencium-backend in the minor-updates group (#1009)\n\n* build(deps): bump io.sentry:sentry-spring-boot-4\n\nBumps the minor-updates group in /essencium-backend with 1 update: [io.sentry:sentry-spring-boot-4](https://github.com/getsentry/sentry-java).\n\n\nUpdates `io.sentry:sentry-spring-boot-4` from 8.54.0 to 8.55.0\n- [Release notes](https://github.com/getsentry/sentry-java/releases)\n- [Changelog](https://github.com/getsentry/sentry-java/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/getsentry/sentry-java/compare/8.54.0...8.55.0)\n\n---\nupdated-dependencies:\n- dependency-name: io.sentry:sentry-spring-boot-4\n  dependency-version: 8.55.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: minor-updates\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\n\n* chore: update parent version to 4.0.2-SNAPSHOT in pom.xml\n\n* chore: update changelog for version 4.0.2-SNAPSHOT\n\n---------\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Paul Wannenmacher <paul.wannenmacher@frachtwerk.de>"
+    },
+    {
+      "sha": "674d0d1ecab04cdafa2166db4088227d6862a64b",
+      "date": "2026-09-04T09:59:20+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump the minor-updates group (#1006)\n\nBumps the minor-updates group in /essencium-backend-development with 2 updates: [org.apache.maven.plugins:maven-surefire-plugin](https://github.com/apache/maven-surefire) and [org.apache.maven.plugins:maven-failsafe-plugin](https://github.com/apache/maven-surefire).\n\n\nUpdates `org.apache.maven.plugins:maven-surefire-plugin` from 3.5.6 to 3.6.0\n- [Release notes](https://github.com/apache/maven-surefire/releases)\n- [Commits](https://github.com/apache/maven-surefire/compare/surefire-3.5.6...surefire-3.6.0)\n\nUpdates `org.apache.maven.plugins:maven-failsafe-plugin` from 3.5.6 to 3.6.0\n- [Release notes](https://github.com/apache/maven-surefire/releases)\n- [Commits](https://github.com/apache/maven-surefire/compare/surefire-3.5.6...surefire-3.6.0)\n\n---\nupdated-dependencies:\n- dependency-name: org.apache.maven.plugins:maven-surefire-plugin\n  dependency-version: 3.6.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: minor-updates\n- dependency-name: org.apache.maven.plugins:maven-failsafe-plugin\n  dependency-version: 3.6.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: minor-updates\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "41bf8ce8217b5790bdba52778e222f504c30a3f5",
+      "date": "2026-09-04T09:58:46+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump the minor-updates group (#1007)\n\nBumps the minor-updates group in /essencium-backend with 2 updates: [org.apache.maven.plugins:maven-surefire-plugin](https://github.com/apache/maven-surefire) and [org.apache.maven.plugins:maven-failsafe-plugin](https://github.com/apache/maven-surefire).\n\n\nUpdates `org.apache.maven.plugins:maven-surefire-plugin` from 3.5.6 to 3.6.0\n- [Release notes](https://github.com/apache/maven-surefire/releases)\n- [Commits](https://github.com/apache/maven-surefire/compare/surefire-3.5.6...surefire-3.6.0)\n\nUpdates `org.apache.maven.plugins:maven-failsafe-plugin` from 3.5.6 to 3.6.0\n- [Release notes](https://github.com/apache/maven-surefire/releases)\n- [Commits](https://github.com/apache/maven-surefire/compare/surefire-3.5.6...surefire-3.6.0)\n\n---\nupdated-dependencies:\n- dependency-name: org.apache.maven.plugins:maven-surefire-plugin\n  dependency-version: 3.6.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: minor-updates\n- dependency-name: org.apache.maven.plugins:maven-failsafe-plugin\n  dependency-version: 3.6.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: minor-updates\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "09f8e31199b8302c5753ddb0ec48d752212e93dd",
+      "date": "2026-09-03T12:00:38+02:00",
+      "author": "Paul Wannenmacher",
+      "email": "paul.wannenmacher@frachtwerk.de",
+      "message": "chore: update documentation\n"
+    },
+    {
+      "sha": "0445e7a173b800bd3bd4ae8494aaa1d461f98996",
+      "date": "2026-09-03T10:41:35+02:00",
+      "author": "Paul Wannenmacher",
+      "email": "paul.wannenmacher@frachtwerk.de",
+      "message": "chore: update parent version to 4.0.1 in pom.xml\n"
+    },
+    {
+      "sha": "66b2ce1f4dd3687d0d3d1e970443bee6c89f3508",
+      "date": "2026-09-03T10:41:25+02:00",
+      "author": "Paul Wannenmacher",
+      "email": "paul.wannenmacher@frachtwerk.de",
+      "message": "chore: update changelog for version 4.0.1 release\n"
+    },
+    {
+      "sha": "958bd512868322095ddd9ad8f903b90f33de00c1",
+      "date": "2026-09-03T10:40:59+02:00",
+      "author": "Paul Wannenmacher",
+      "email": "paul.wannenmacher@frachtwerk.de",
+      "message": "chore: update migration guide for version 4.0.0 release\n"
+    },
+    {
+      "sha": "ba6f3335a600be441186da490a68632cfbf22fe3",
+      "date": "2026-09-03T10:40:53+02:00",
+      "author": "Paul Wannenmacher",
+      "email": "paul.wannenmacher@frachtwerk.de",
+      "message": "chore: remove outdated comments regarding Spring Boot 4 in Dockerfiles\n"
+    },
+    {
+      "sha": "bbfc2f8a609c4df03263b1d42e2100ed4ea5347e",
+      "date": "2026-09-03T09:24:43+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps-dev): bump org.apache.maven.plugins:maven-compiler-plugin (#1004)\n\nBumps the minor-updates group with 1 update in the /essencium-backend-development-uuid directory: [org.apache.maven.plugins:maven-compiler-plugin](https://github.com/apache/maven-compiler-plugin).\n\n\nUpdates `org.apache.maven.plugins:maven-compiler-plugin` from 3.15.0 to 3.16.0\n- [Release notes](https://github.com/apache/maven-compiler-plugin/releases)\n- [Commits](https://github.com/apache/maven-compiler-plugin/compare/maven-compiler-plugin-3.15.0...maven-compiler-plugin-3.16.0)\n\n---\nupdated-dependencies:\n- dependency-name: org.apache.maven.plugins:maven-compiler-plugin\n  dependency-version: 3.16.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: minor-updates\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "7515b80ac248f4f1fd289712aadd0ebaa29f545f",
+      "date": "2026-09-03T09:24:20+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps-dev): bump org.apache.maven.plugins:maven-compiler-plugin (#1005)\n\nBumps the minor-updates group with 1 update in the /essencium-backend-development directory: [org.apache.maven.plugins:maven-compiler-plugin](https://github.com/apache/maven-compiler-plugin).\n\n\nUpdates `org.apache.maven.plugins:maven-compiler-plugin` from 3.15.0 to 3.16.0\n- [Release notes](https://github.com/apache/maven-compiler-plugin/releases)\n- [Commits](https://github.com/apache/maven-compiler-plugin/compare/maven-compiler-plugin-3.15.0...maven-compiler-plugin-3.16.0)\n\n---\nupdated-dependencies:\n- dependency-name: org.apache.maven.plugins:maven-compiler-plugin\n  dependency-version: 3.16.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: minor-updates\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "fbb9fa4546de2487bf09882c71a7c6ed2233a9e6",
+      "date": "2026-09-03T08:39:17+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump io.sentry:sentry-spring-boot-4 from 8.53.0 to 8.54.0 in /essencium-backend in the minor-updates group across 1 directory (#1000)\n\n* build(deps): bump io.sentry:sentry-spring-boot-4\n\nBumps the minor-updates group with 1 update in the /essencium-backend directory: [io.sentry:sentry-spring-boot-4](https://github.com/getsentry/sentry-java).\n\n\nUpdates `io.sentry:sentry-spring-boot-4` from 8.53.0 to 8.54.0\n- [Release notes](https://github.com/getsentry/sentry-java/releases)\n- [Changelog](https://github.com/getsentry/sentry-java/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/getsentry/sentry-java/compare/8.53.0...8.54.0)\n\n---\nupdated-dependencies:\n- dependency-name: io.sentry:sentry-spring-boot-4\n  dependency-version: 8.54.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: minor-updates\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\n\n* chore: update sentry-spring-boot-4 version to 8.54.0 in changelog\n\n---------\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Paul Wannenmacher <paul.wannenmacher@frachtwerk.de>"
+    },
+    {
+      "sha": "9d76bd09cc7e20bc36582e239ddec728d9c334c2",
+      "date": "2026-09-02T19:06:08+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump the patch-updates group (#999)\n\nBumps the patch-updates group in /essencium-backend with 2 updates: [org.springframework.boot:spring-boot-starter-parent](https://github.com/spring-projects/spring-boot) and [com.diffplug.spotless:spotless-maven-plugin](https://github.com/diffplug/spotless).\n\nUpdates `org.springframework.boot:spring-boot-starter-parent` from 4.1.0 to 4.1.1\n- [Release notes](https://github.com/spring-projects/spring-boot/releases)\n- [Commits](https://github.com/spring-projects/spring-boot/compare/v4.1.0...v4.1.1)\n\nUpdates `com.diffplug.spotless:spotless-maven-plugin` from 3.10.0 to 3.10.1\n- [Release notes](https://github.com/diffplug/spotless/releases)\n- [Changelog](https://github.com/diffplug/spotless/blob/main/CHANGES.md)\n- [Commits](https://github.com/diffplug/spotless/compare/maven/3.10.0...maven/3.10.1)\n\n---\nupdated-dependencies:\n- dependency-name: org.springframework.boot:spring-boot-starter-parent\n  dependency-version: 4.1.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: patch-updates\n- dependency-name: com.diffplug.spotless:spotless-maven-plugin\n  dependency-version: 3.10.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: patch-updates\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "9fde733a06fc72a32ed8f4b3d1d65549394fda51",
+      "date": "2026-09-02T18:59:33+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump actions/setup-java in the major-updates group (#1002)\n\nBumps the major-updates group with 1 update: [actions/setup-java](https://github.com/actions/setup-java).\n\n\nUpdates `actions/setup-java` from 5 to 6\n- [Release notes](https://github.com/actions/setup-java/releases)\n- [Commits](https://github.com/actions/setup-java/compare/v5...v6)\n\n---\nupdated-dependencies:\n- dependency-name: actions/setup-java\n  dependency-version: '6'\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n  dependency-group: major-updates\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "638434cfd1a7efe7d355329ae0cf15662e8b6622",
+      "date": "2026-09-02T18:59:09+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump github/codeql-action in the patch-updates group (#1001)\n\nBumps the patch-updates group with 1 update: [github/codeql-action](https://github.com/github/codeql-action).\n\n\nUpdates `github/codeql-action` from 4.37.8 to 4.37.9\n- [Release notes](https://github.com/github/codeql-action/releases)\n- [Changelog](https://github.com/github/codeql-action/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/github/codeql-action/compare/v4.37.8...v4.37.9)\n\n---\nupdated-dependencies:\n- dependency-name: github/codeql-action\n  dependency-version: 4.37.9\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: patch-updates\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "bf749bb1d633cdec0f719f0a9709981812f3036e",
+      "date": "2026-09-02T18:57:28+02:00",
+      "author": "Paul Wannenmacher",
+      "email": "34417690+pwannenmacher@users.noreply.github.com",
+      "message": "ci: add workflow_dispatch trigger to release workflow (#1003)\n\n* ci: add workflow_dispatch trigger to release workflow\n\nAllows re-running the release pipeline manually (dispatched from a tag ref) when a tag push did not trigger it, e.g. tags created with GITHUB_TOKEN.\n\n* fix(docker): drop COPY of empty Spring Boot 4 layers\n\nSpring Boot 4's 'jarmode=tools extract --layers' no longer emits content into the spring-boot-loader and snapshot-dependencies layers. The empty directories are silently dropped by upload-artifact, so the artifact-based docker builds (release, experimental) failed on 'COPY /target/extracted/spring-boot-loader/': not found."
+    },
+    {
+      "sha": "a118332eacb107c04572e0e3def9c5387bbe2129",
+      "date": "2026-09-02T08:39:12+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump the minor-updates group in /essencium-backend with 3 updates (#992)\n\n* build(deps): bump the minor-updates group\n\nBumps the minor-updates group in /essencium-backend with 3 updates: [org.springdoc:springdoc-openapi-starter-webmvc-ui](https://github.com/springdoc/springdoc-openapi), [io.sentry:sentry-spring-boot-4](https://github.com/getsentry/sentry-java) and [com.diffplug.spotless:spotless-maven-plugin](https://github.com/diffplug/spotless).\n\n\nUpdates `org.springdoc:springdoc-openapi-starter-webmvc-ui` from 3.0.3 to 3.1.0\n- [Release notes](https://github.com/springdoc/springdoc-openapi/releases)\n- [Changelog](https://github.com/springdoc/springdoc-openapi/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/springdoc/springdoc-openapi/compare/v3.0.3...v3.1.0)\n\nUpdates `io.sentry:sentry-spring-boot-4` from 8.50.1 to 8.53.0\n- [Release notes](https://github.com/getsentry/sentry-java/releases)\n- [Changelog](https://github.com/getsentry/sentry-java/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/getsentry/sentry-java/compare/8.50.1...8.53.0)\n\nUpdates `com.diffplug.spotless:spotless-maven-plugin` from 3.9.0 to 3.10.0\n- [Release notes](https://github.com/diffplug/spotless/releases)\n- [Changelog](https://github.com/diffplug/spotless/blob/main/CHANGES.md)\n- [Commits](https://github.com/diffplug/spotless/compare/maven/3.9.0...maven/3.10.0)\n\n---\nupdated-dependencies:\n- dependency-name: org.springdoc:springdoc-openapi-starter-webmvc-ui\n  dependency-version: 3.1.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: minor-updates\n- dependency-name: io.sentry:sentry-spring-boot-4\n  dependency-version: 8.53.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: minor-updates\n- dependency-name: com.diffplug.spotless:spotless-maven-plugin\n  dependency-version: 3.10.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: minor-updates\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\n\n* chore: update changelog for version 4.1.0-SNAPSHOT with dependency upgrades\n\n---------\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Paul Wannenmacher <paul.wannenmacher@frachtwerk.de>"
+    },
+    {
+      "sha": "d7e9406640a3a984f872e42e92ba9fc2d90c1d40",
+      "date": "2026-09-02T08:27:21+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump github/codeql-action in the patch-updates group (#994)\n\nBumps the patch-updates group with 1 update: [github/codeql-action](https://github.com/github/codeql-action).\n\n\nUpdates `github/codeql-action` from 4.37.7 to 4.37.8\n- [Release notes](https://github.com/github/codeql-action/releases)\n- [Changelog](https://github.com/github/codeql-action/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/github/codeql-action/compare/v4.37.7...v4.37.8)\n\n---\nupdated-dependencies:\n- dependency-name: github/codeql-action\n  dependency-version: 4.37.8\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: patch-updates\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "61dd23632886cc8025ce1e9276d5923f1f893f83",
+      "date": "2026-09-02T08:26:58+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "build(deps): bump eclipse-temurin (#995)\n\nBumps eclipse-temurin from 26-jre-alpine-3.23 to 26-jre-alpine-3.24.\n\n---\nupdated-dependencies:\n- dependency-name: eclipse-temurin\n  dependency-version: 26-jre-alpine-3.24\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "90cdfe6f28d959f30bd0a687efdc492ef4cd1453",
+      "date": "2026-08-19T11:21:00+02:00",
+      "author": "Paul Wannenmacher",
+      "email": "paul.wannenmacher@frachtwerk.de",
+      "message": "chore: update changelog for version 4.0.0 release\n"
+    },
+    {
+      "sha": "ccc30f2f5c62a7bb4615b268b39b3565c4cc3930",
+      "date": "2026-08-19T11:07:01+02:00",
+      "author": "Paul Wannenmacher",
+      "email": "paul.wannenmacher@frachtwerk.de",
+      "message": "chore: update version to 4.0.0\n"
+    },
+    {
+      "sha": "816e0f614b1fe91b2a1570e10c2dda9dec26261c",
+      "date": "2026-08-19T11:03:28+02:00",
+      "author": "Paul Wannenmacher",
+      "email": "34417690+pwannenmacher@users.noreply.github.com",
+      "message": "fix: keep framework status codes in ProblemDetail error handling (#990)\n\n* fix: keep framework status codes in ProblemDetail error handling\n\nThe Exception catch-all in GlobalExceptionHandler turned AccessDeniedException\nand the Spring MVC exceptions into 500. It now extends ResponseEntityExceptionHandler\nand maps AccessDeniedException to 403/401. ResponseStatusException reasons and\nmissing-cookie messages no longer bypass include-message.\n\n* chore: remove dead server.error key from integration test config\n\nSpring Boot 4 moved ErrorProperties to WebProperties; spring.web.error is already\nconfigured in the same file.\n\n* test: use @InjectMocks for GlobalExceptionHandler in tests\n\n* test: update assertions in ProblemDetailFactoryTest for type and instance\n\n* refactor: move the exception catch-all into a fallback advice\n\n@ExceptionHandler(Exception.class) matches every exception, and Spring only walks\ngetCause() when the thrown type has no mapping. In GlobalExceptionHandler it therefore\nsuppressed cause resolution, which two manual findCause calls partly compensated. The\ncatch-all now sits in FallbackExceptionHandler at LOWEST_PRECEDENCE, so a wrapped\nexception reaches its specific handler again.\n\n* fix: address the review findings on the ProblemDetail error handling\n\n- an exception carrying only a status reports the code matching it, so a 401 is\n  AUTHENTICATION_FAILED instead of INVALID_INPUT; mapping shared via ErrorCode.forStatus\n- @ResponseStatus on an exception class is honoured again instead of becoming 500\n- ResponseStatusException without a reason no longer leaks the \"404 NOT_FOUND\" prefix\n- fieldErrors follow include-binding-errors instead of include-message\n- errors from the security filter chain are problem+json (ProblemDetailWriter)\n- InternalAuthenticationServiceException yields 500 and is logged, not a silent 401\n- handleExceptionInternal delegates to createResponseEntity, honours a committed\n  response and resolves detail through MessageSource\n- createProblemDetail is the single creation point behind every path\n- 4xx logged at DEBUG, access denials at INFO\n\n* refactor: improve field error handling in ParameterValidationResult"
+    },
+    {
+      "sha": "69a6495b0bb545fdf820669a4e81b6ca3af2d2fd",
+      "date": "2026-08-18T10:15:28+02:00",
+      "author": "Lukas Wydra",
+      "email": "31655006+lwydra@users.noreply.github.com",
+      "message": "fix: prevent PATCH of id, updatedBy and updatedAt (#971)\n\n* fix: prevent PATCH of id, updatedBy and updatedAt\n\n* chore: use JPA metamodels and static Set for patch protected fields\n\n* chore: add and use Identifiable#ID_FIELD for patch protected fields\n\n* fix: adjust AbstractEntityService#patchPreProcessing to support operating on unmodifiable maps\n\n* feat: move PATCH-protection for users into AbstractUserService"
+    }
+  ],
+  "commit_sha": "3cb2ef460c98d210569a3f75a0644f1ece901380",
+  "extracted_at": "2026-10-05T18:46:40.630863+00:00"
+}

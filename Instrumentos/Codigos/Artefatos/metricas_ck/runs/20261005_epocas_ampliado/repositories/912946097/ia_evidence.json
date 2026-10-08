@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "79734aa243ad834c7a013d4b3a4d43dd20a1d74c",
+      "date": "2026-09-30T10:23:44+02:00",
+      "author": "JExcellence | Justin",
+      "email": "justin.eiletz@outlook.com",
+      "message": "fix(entity): map UuidEntity id via SqlTypes.UUID so it works on PostgreSQL\n\n@Column(columnDefinition=\"BINARY(16)\") forced a raw DDL literal into CREATE\nTABLE; PostgreSQL has no BINARY type, so table creation failed there entirely.\nUse @JdbcTypeCode(SqlTypes.UUID) for the dialect-native type: uuid on\nPostgreSQL/H2, binary(16) on MySQL/MariaDB, uniqueidentifier on SQL Server.\n\nMySQL/MariaDB storage unchanged (binary(16)); H2 type name changes\nBINARY(16) -> UUID (migration note in CHANGELOG for existing H2 data).\n\nGuarded by IntegrationTest.uuidIdMapsToNativeDialectType.\n"
+    },
+    {
+      "sha": "bfbacbed5030c33487bea7b1e6fec7f9d7db3ebc",
+      "date": "2026-08-06T09:41:21+02:00",
+      "author": "JExcellence | Justin",
+      "email": "justin.eiletz@outlook.com",
+      "message": "fix(entity): make @Version column nullable so hbm2ddl=update can add it to populated tables\n\nBaseEntity.version was a primitive int -> NOT NULL column. Adopting BaseEntity/LongIdEntity/\nUuidEntity/StringIdEntity on an existing populated table made hbm2ddl=update emit\n\"add column version integer not null\", which fails the H2/MySQL table rebuild on existing rows\n(logged as a WARNING and swallowed, leaving the column missing and later writes broken).\n\n- version is now Integer (nullable column), defaulted to 0 so a freshly constructed detached\n  entity still carries version 0 and merges cleanly (createOrUpdate path).\n- public int getVersion() unchanged and null-safe (legacy rows read as 0); toString via getter.\n- @Version on Integer is permitted by the JPA spec; no @Column(nullable=false)/columnDefinition.\n- Audited: LongIdEntity/UuidEntity/StringIdEntity don't shadow version. JEHibernateRevisionEntity\n  keeps int id / long timestamp (dedicated Envers table created whole, PK/timestamp correctly\n  non-null) — flagged, not changed.\n- VersionMigrationTest: update adds nullable column to a populated table, existing rows read 0,\n  fresh schema starts at 0, optimistic locking still throws, stricter NOT NULL column still works.\n\nBump to 4.0.1.\n"
+    },
+    {
+      "sha": "5e22948b0cd5b24531478d82fa11a120cfd537bd",
+      "date": "2026-08-05T12:44:14+02:00",
+      "author": "JExcellence | Justin",
+      "email": "justin.eiletz@outlook.com",
+      "message": "build: publish all modules to Maven Central + fix release workflow\n\nPublishing was configured only for jehibernate-core and the release workflow used a\ntask that no longer exists, so 4.0 could not be released.\n\n- Add com.vanniktech.maven.publish + POM + in-memory signing to all four modules\n  (core, spring-boot, plugin, testing). Coordinates: de.jexcellence.hibernate:<module>:4.0.0.\n  Verified via publishToMavenLocal (jar/sources/javadoc/pom/module + signatures).\n- Remove manual withSourcesJar/withJavadocJar from the root subprojects block — the\n  vanniktech plugin produces those and the outputs collided.\n- settings.gradle.kts: add foojay-resolver so CI can auto-provision the Java 24 toolchain.\n- release.yml: fix version detection (version now lives indented in allprojects {}),\n  replace the non-existent closeAndReleaseSonatypeStagingRepository with\n  publishAndReleaseToMavenCentral, pass credentials/signing as ORG_GRADLE_PROJECT_* env,\n  drop the manual GPG import (in-memory key).\n\nFull build green; publishAndReleaseToMavenCentral present for all modules.\n"
+    },
+    {
+      "sha": "16642087863b2d201d7beacc740a608575385897",
+      "date": "2026-08-05T09:29:40+02:00",
+      "author": "JExcellence | Justin",
+      "email": "justin.eiletz@outlook.com",
+      "message": "feat: map legacy hibernate.connection.pool_size to HikariCP maximumPoolSize\n\nSince 4.0 connections are pooled by HikariCP (owned DataSource, ADR-0003), the old\nHibernate built-in-pool property hibernate.connection.pool_size was silently ignored.\nPoolConfig.fromProperties now maps it to maximumPoolSize so 3.x consumers keep their\nconfigured pool size on upgrade. Precedence: jehibernate.pool.maximumPoolSize >\nhibernate.connection.pool_size > default.\n\nPoolConfigTest covers the mapping, precedence, and default fallback.\n"
+    },
+    {
+      "sha": "0b39fbecf6e534428678b339cd9de40f19769ec4",
+      "date": "2026-06-04T12:08:34+02:00",
+      "author": "JExcellence | Justin",
+      "email": "justin.eiletz@outlook.com",
+      "message": "feat: Envers audit trail (TODO-4)\n\nOpt-in change history via Hibernate Envers (optional compileOnly dependency).\n\n- Entities opt in with @org.hibernate.envers.Audited; ConfigurationBuilder.enableAudit()\n  registers JEHibernateRevisionEntity (revision_id, timestamp, user_id, source_ip, tenant_id).\n- AuditUserResolver SPI + AuditContext holder (Envers instantiates the listener with no DI);\n  JEHibernateRevisionListener records the resolved user/IP and current TenantContext tenant.\n- Audit query helper: getRevisions / getRevisionNumbers / getRevisionInfo.\n- AuditIntegrationTest (own package so @Audited doesn't bleed into other suites): a revision\n  per change, history queryable, user+tenant captured. 2/2; core 97/97 green.\n- ADR-0005 + docs/audit-guide.md with DSGVO retention/erasure guidance (Art. 5/17/32, §26 BDSG).\n\nDeliberately omitted (documented): built-in retention/purge job and the non-Envers\nAuditEventListener hook — Envers covers the audit need; unwired code would be dead.\n\n"
+    },
+    {
+      "sha": "ffddeb1eba0c0c18d33c6c293756a561014a2df4",
+      "date": "2026-06-04T12:01:59+02:00",
+      "author": "JExcellence | Justin",
+      "email": "justin.eiletz@outlook.com",
+      "message": "feat: @JEHibernateRepositoryTest slice (@DataJpaTest analog)\n\nComposed slice annotation in jehibernate-spring-boot: BootstrapWith +\nSpringExtension + OverrideAutoConfiguration(enabled=false) + ImportAutoConfiguration\n+ PropertyMapping(\"jehibernate\"). Boots a minimal context with only the DataSource\nauto-config (embedded H2 when on the classpath) and the JEHibernate auto-config.\nAttributes (database, ddlAuto, scanPackages, migrationEnabled) map to jehibernate.*.\n\n- META-INF/spring/<annotation-fqn>.imports lists the two auto-configurations.\n- Slice infra deps added as compileOnly (consumers get them via\n  spring-boot-starter-test at test scope).\n- SpringUserRepositorySliceTest: boots on embedded H2 with no datasource props,\n  repository round-trips. PASSED.\n\n"
+    },
+    {
+      "sha": "0a15cadddf52abce32ce58201bcff79ce419b665",
+      "date": "2026-06-04T11:50:08+02:00",
+      "author": "JExcellence | Justin",
+      "email": "justin.eiletz@outlook.com",
+      "message": "feat: Spring Boot auto-configuration for jehibernate-spring-boot\n\nTurns the module from a dependency skeleton into a real starter.\n\n- JEHibernateAutoConfiguration (@AutoConfiguration after DataSourceAutoConfiguration):\n  registers a JEHibernate bean that reuses the application DataSource (Spring's pool,\n  never closed by JEHibernate) plus a RepositoryRegistry bean. Conditional on a\n  DataSource bean; backs off via @ConditionalOnMissingBean; gated by jehibernate.enabled.\n- JEHibernateProperties binds jehibernate.* (database, url, scan-packages, ddl-auto,\n  migration-enabled, multi-tenancy, enabled). Migration defaults off (Spring owns Flyway).\n  SCHEMA/DISCRIMINATOR supported via properties; DATABASE requires programmatic config.\n- Registered via META-INF/spring/...AutoConfiguration.imports.\n- Spring context test (H2, no Docker): Spring builds the DataSource, JEHibernate is\n  auto-wired from it (same instance asserted), repository round-trips. PASSED.\n- README Spring quickstart rewritten to the starter; CHANGELOG updated.\n- Fixed an em-dash mojibake in a core log line.\n\nFull build green.\n\n"
+    },
+    {
+      "sha": "6521fa51e77e8a37ad6d47f386ed49fe3cf4ffc4",
+      "date": "2026-06-04T10:50:31+02:00",
+      "author": "JExcellence | Justin",
+      "email": "justin.eiletz@outlook.com",
+      "message": "chore: stop tracking local .claude settings\n\n.claude is already listed in .gitignore but settings.local.json was tracked from\nearlier commits; it holds machine-local paths and permissions. Untrack it so git\nhonors the ignore rule. The files remain on disk.\n\n"
+    },
+    {
+      "sha": "286566447331a4ef7ba29da51cf4439c33b805db",
+      "date": "2026-06-04T10:44:52+02:00",
+      "author": "JExcellence | Justin",
+      "email": "justin.eiletz@outlook.com",
+      "message": "fix: resolve all 13 GitRoll code-quality issues\n\nBLOCKER/CRITICAL:\n- SchemaMultiTenantConnectionProvider.getConnection: close connection on the\n  failure path (no resource leak if setSchema throws).\n- MultiTenancyConfig: extract duplicated \"PUBLIC\" literal into DEFAULT_SCHEMA.\n- Demo files moved into package-matching paths (com/example/{demo,plugin}).\n\nMAJOR:\n- jehibernate-core deps grouped strictly by configuration (api / implementation /\n  compileOnly / test); slf4j-api no longer sits after the compileOnly block.\n- LiquibaseMigrationRunner: drop the dead `instanceof InterruptedException` branch\n  (update()/getConnection() never throw it) instead of an instanceof-in-catch.\n- Example entities: proper id-based equals/hashCode (Java24FeaturesExample.Product,\n  SpringBootExample.User/Product) instead of useless super-delegation / missing.\n- Removed commented-out code from the Spring demo.\n\nINFO:\n- Reworded \"TODO-N\" references in comments (main + tests) so they are not flagged\n  as open TODO tasks; they referred to spec sections, not pending work.\n\nFull build green.\n\n"
+    },
+    {
+      "sha": "89b05c816ff730e16016303027c94d49aa6fd883",
+      "date": "2026-06-03T17:19:07+02:00",
+      "author": "JExcellence | Justin",
+      "email": "justin.eiletz@outlook.com",
+      "message": "Merge: JEHibernate 4.0 — multi-module enterprise refactor\n\nBreaking major release. Core coordinate -> de.jexcellence.hibernate:jehibernate-core.\n\n- Multi-module: jehibernate-{core,spring-boot,plugin,testing}\n- TODO-1 HikariCP pool (owned DataSource, getPoolHealth, clean shutdown)\n- TODO-2 Flyway migrations (Liquibase opt-in); ddl-auto default -> validate\n- TODO-3 EntityGraph fetch helpers (single-query N+1 avoidance)\n- TODO-5 multi-tenancy (DISCRIMINATOR/SCHEMA/DATABASE, strict leak guard)\n- TODO-6 jehibernate-testing (@JEHibernateTest, Testcontainers, fixtures)\n- TODO-7 plugin-bias decoupling (PluginPropertyLoader, slf4j-api bundled)\n- Per-database CRUD ITs (H2 runs; PG/MySQL/MariaDB via Testcontainers)\n\nSkipped: TODO-4 (Envers audit). jehibernate-spring-boot is a dependency\nskeleton (auto-configuration not yet implemented).\n"
+    },
+    {
+      "sha": "b6ef9d6535ab28962a0a3d50027f04d8e8684952",
+      "date": "2026-06-03T09:31:47+02:00",
+      "author": "JExcellence | Justin",
+      "email": "justin.eiletz@outlook.com",
+      "message": "test: per-database CRUD ITs (H2, PostgreSQL, MySQL, MariaDB)\n\nShared AbstractCrudAcrossDatabasesIT (create/find/update/delete/query + batch) run per\ndatabase by H2CrudIT, PostgresCrudIT, MySqlCrudIT, MariaDbCrudIT via @JEHibernateTest.\nReplaces the standalone PostgresJEHibernateExtensionIT.\n\n- H2CrudIT runs everywhere (verifies CRUD + IDENTITY id generation on H2).\n- Container ITs skip (not fail) without Docker; run against real DBs in CI / locally.\n- Added MySQL + MariaDB JDBC drivers as testRuntimeOnly (Postgres already present).\n\n"
+    },
+    {
+      "sha": "463b576fe727e89cead4e416238a8eb6721ff192",
+      "date": "2026-06-02T20:01:40+02:00",
+      "author": "JExcellence | Justin",
+      "email": "justin.eiletz@outlook.com",
+      "message": "feat: jehibernate-testing module + plugin-bias decoupling (TODO-6, TODO-7)\n\nTODO-6 (testing):\n- New jehibernate-testing module. @JEHibernateTest + JEHibernateExtension (JUnit5)\n  boot JEHibernate against H2 or a Testcontainers container (PG/MySQL/MariaDB/MSSQL),\n  inject JEHibernate/EntityManagerFactory as test params, reset DB after each test.\n- TestDatabase, DatabaseReset (FK-aware via Hibernate SchemaManager), Fixtures +\n  Fixtures.Builder fixture pattern.\n- Container tests skip (not fail) without Docker.\n- Tests: H2JEHibernateExtensionTest (boot + reset between tests, 3/3),\n  PostgresJEHibernateExtensionIT (Testcontainers, skipped here without Docker).\n- docs/testing-guide.md. Spring @JEHibernateRepositoryTest slice deferred until the\n  Spring Boot auto-config exists (documented).\n\nTODO-7 (plugin-bias decoupling):\n- PropertyLoader.fromClasspath(String)/fromFile(Path) in core; PluginPropertyLoader\n  .fromPluginDataFolder(...) in jehibernate-plugin (File/data-folder convenience moved).\n- slf4j-api compileOnly -> implementation in core (standalone/Spring get the facade;\n  plugins already have it from Paper).\n- examples/spring-boot-demo (<50 lines) + examples/spigot-plugin-demo (unchanged API).\n- jehibernate-plugin targets Java 21 (Paper 1.21 runtime); core stays release 17.\n- Repositories declared centrally in settings (root subprojects repos block removed) so\n  the Paper repo reaches the plugin module.\n\nFull multi-module build green (core 95/95; testing 3 pass + 1 Docker-skipped).\n\n"
+    },
+    {
+      "sha": "c42d3a066cbb7ff094f0d4147f507aaeb5479b63",
+      "date": "2026-06-02T19:31:14+02:00",
+      "author": "JExcellence | Justin",
+      "email": "justin.eiletz@outlook.com",
+      "message": "feat: native multi-tenancy (DISCRIMINATOR/SCHEMA/DATABASE) (TODO-5)\n\nAdds opt-in multi-tenancy, off by default (single-tenant unchanged). ADR-0004.\n\nCore SPI:\n- MultiTenancyStrategy {NONE, DATABASE, SCHEMA, DISCRIMINATOR}; MultiTenancyConfig\n  (factories + builder-style copies); ConfigurationBuilder.multiTenancy(...).\n- TenantContext: thread-local with nesting AutoCloseable scope (safe in-thread\n  tenant switch). TenantResolver SPI (default reads TenantContext).\n- TenantContextResolver: adapts to Hibernate CurrentTenantIdentifierResolver with a\n  strict leak guard — throws when no tenant is bound instead of running untenanted.\n\nConnection providers (shared HikariCP pool, no pool-per-tenant):\n- SchemaMultiTenantConnectionProvider: per-tenant setSchema, reset on release.\n- DatabaseMultiTenantConnectionProvider: tenant -> DataSource routing.\n- Wired in ConfigurationBuilder: resolver for all enabled strategies; MTCP for\n  SCHEMA/DATABASE; DISCRIMINATOR uses @TenantId + resolver only. Plain DataSource\n  slot omitted when an MTCP is active.\n\nTests (95/95 core green):\n- DiscriminatorMultiTenancyTest (own package to avoid @TenantId leaking into other\n  suites' scans): tenant isolation, leak-guard throws, thread switch, shared pool.\n- MultiTenantConnectionProviderTest: SCHEMA/DATABASE provider unit coverage.\n\nDocs: ADR-0004, docs/multi-tenancy-guide.md, README + CHANGELOG.\n\nNote: TODO-4 (Envers audit) skipped per request; the planned tenant_id column on the\naudit revision entity is deferred with it.\n\n"
+    },
+    {
+      "sha": "fadd9ad90edbca58a12bebaf7128337e68f6dd98",
+      "date": "2026-06-02T19:10:34+02:00",
+      "author": "JExcellence | Justin",
+      "email": "justin.eiletz@outlook.com",
+      "message": "feat: EntityGraph fetch helpers + lazy-loading guide (TODO-3)\n\nAdds opt-in N+1 avoidance alongside the existing session-scoping path:\n- AbstractCrudRepository.findByIdWithGraph(id, paths...), findAllWithGraph(paths...),\n  findByIdWithNamedGraph(id, name) — fetch listed associations in a single query via a\n  JPA loadgraph hint; dot-separated paths build nested subgraphs.\n- EntityGraphIntegrationTest: ShopOrder + items loaded in exactly one prepared\n  statement, verified via Hibernate Statistics.\n- docs/lazy-loading-guide.md: decision table (withSession vs withReadOnly vs\n  EntityGraph vs OSIV). withReadOnly/withSession already exist and stay primary;\n  OSIV documented as a last-resort copy-ready pattern, deliberately not shipped\n  as a bean (session-per-operation model makes scoping/EntityGraph the right tool).\n\nFull build green: 86/86 core tests.\n\n"
+    },
+    {
+      "sha": "110e79aee00e2d502a5c87d8468d837bac9d61c2",
+      "date": "2026-06-02T18:59:31+02:00",
+      "author": "JExcellence | Justin",
+      "email": "justin.eiletz@outlook.com",
+      "message": "feat!: multi-module split + HikariCP pool + Flyway migrations (4.0.0)\n\nBREAKING CHANGE: restructure into jehibernate-{core,spring-boot,plugin,testing};\ncore coordinate is now de.jexcellence.hibernate:jehibernate-core. ddl-auto\ndefaults to validate (was update); connectionPool() now configures HikariCP.\n\nTODO-1 (HikariCP, ADR-0003):\n- JEHibernate owns a HikariDataSource (handed to Hibernate via nonJtaDataSource)\n  to enable getPoolHealth(), clean shutdown, and external-DataSource reuse.\n- PoolConfig record (+ jehibernate.pool.* properties), PoolHealth,\n  HikariDataSourceFactory, ConfigurationBuilder.pool()/dataSource().\n- PoolIntegrationTest: 50 parallel queries do not block; defaults; health. 3/3.\n\nTODO-2 (migration, ADR-0002):\n- Flyway default, Liquibase opt-in, both optional (Class.forName guard -> no-op).\n- MigrationConfig/Tool/Runner/Support, runs before SessionFactory.build().\n- jehibernate.migration.* properties; V001__init.sql fixture.\n- MigrationIntegrationTest: apply-on-empty, no-op-on-restart, disabled, config. 4/4.\n\nFixes (pre-existing, blocked the suite):\n- Entity/RepositoryScanner now also enumerate the package via the classloader,\n  not only the code-source URL, so test/non-shaded consumer classes are found.\n- IntegrationTest: equal() -> equalTo() (renamed in 3.x, broke compilation).\n\nMulti-module Gradle build with version catalog + ADRs + CHANGELOG + README\nquickstarts. Full build green: 85/85 core tests.\n\n"
+    },
+    {
+      "sha": "161b59a0a09f1c526dc1afad34e6c10599fbba5c",
+      "date": "2026-05-11T15:19:35+02:00",
+      "author": "JExcellence | Justin",
+      "email": "justin.eiletz@outlook.com",
+      "message": "refactor: reduce code duplication in core classes\n\n- Streamline applySorting method in QueryBuilder using functional approach\n- Standardize rollbackQuietly formatting across JEHibernate and AbstractCrudRepository\n- Reduce duplicate lines from 2.1% to improve code maintainability\n"
+    },
+    {
+      "sha": "2d92703a6ab64e508ef4a19c1b0714e2561a81df",
+      "date": "2026-04-24T13:21:09+02:00",
+      "author": "JExcellence | Justin",
+      "email": "justin.eiletz@outlook.com",
+      "message": "fixing code smells\n"
+    },
+    {
+      "sha": "ba6ec03b2ec5bc1d0215fceef56f4105c5e7251b",
+      "date": "2026-04-23T18:38:58+02:00",
+      "author": "JExcellence | Justin",
+      "email": "justin.eiletz@outlook.com",
+      "message": "version update 3.0.4\n"
+    },
+    {
+      "sha": "9d68507204ff2205c3c86eb5d6dc12c7e2f42b5d",
+      "date": "2026-04-21T11:05:22+02:00",
+      "author": "JExcellence | Justin",
+      "email": "justin.eiletz@outlook.com",
+      "message": "fix: resolve remaining code smells from gitroll.io scan\n\nbuild.gradle.kts:\n- Extract hardcoded agroal-pool version \"2.5\" to val agroalVersion constant\n\nexamples/BukkitPluginExample.java:\n- Add explanatory comment and UnsupportedOperationException to empty\n  onEnableWithProperties() method\n- Remove unused EconomyService local variable (createWithInjection result\n  was discarded; now truly discarded to match intent)\n- Remove two-line commented-out Bukkit scheduler code block\n\nexamples/QuickStartExample.java:\n- Add equals()/hashCode() override to UserRepository\n\nexamples/SpringBootExample.java:\n- Add equals()/hashCode() override to UserRepository and ProductRepository\n- Extract repeated \"email\" string literal to FIELD_EMAIL constant in\n  UserService; replace all 3 occurrences\n\nsrc/main/java/.../AbstractCrudRepository.java:\n- Rename lambda parameter `_unused` → `existing` to comply with\n  ^[a-z][a-zA-Z0-9]*$ naming convention\n\nsrc/main/java/.../InjectionProcessor.java:\n- Add @SuppressWarnings(\"java:S3011\") to injectField() to document that\n  reflective field access is the intentional design of the DI processor\n"
+    },
+    {
+      "sha": "87d2910a295327b319b9160de046deff674a5b29",
+      "date": "2026-04-21T10:09:25+02:00",
+      "author": "JExcellence | Justin",
+      "email": "justin.eiletz@outlook.com",
+      "message": "fix: resolve all code smells reported by gitroll.io\n\nGeneric type parameters:\n- Rename type param `ID` → `I` across all repository interfaces and\n  abstract classes to comply with the ^[A-Z][0-9]?$ convention\n  (Repository, CrudRepository, AsyncRepository, QueryableRepository,\n  AbstractCrudRepository, AbstractCachedRepository, RepositoryRegistry,\n  Identifiable, BaseEntity)\n- Rename `CK, CV` → `C, V` in AbstractCachedRepository.buildCache()\n\nEntity subclasses:\n- Add explicit equals()/hashCode() overrides to LongIdEntity, StringIdEntity,\n  UuidEntity, and all example entity classes delegating to BaseEntity\n\nBaseEntity:\n- Reorder modifiers to JLS order: `private final transient UUID identityToken`\n\nExceptions:\n- Add @SuppressWarnings(\"java:S110\") to EntityNotFoundException and\n  OptimisticLockRetryException to acknowledge intentional hierarchy depth\n\nReflection access:\n- Replace Field.setAccessible(true) with trySetAccessible() in\n  InjectionProcessor; throw RepositoryException on false return\n- Replace Constructor.setAccessible(true) with trySetAccessible() in\n  RepositoryFactory; remove unused LOGGER field\n\nDedicated exception:\n- Replace generic RuntimeException in OptimisticLockRetry.sleep() with\n  OptimisticLockRetryException\n\nCognitive complexity:\n- Extract scanPackage(), extractFirstTypeArg(), extractEntityFromInterface()\n  helpers from RepositoryScanner to keep each method under complexity 15\n\nNested try block:\n- Extract inner try from ConfigurationBuilder.build() into buildWithRegistry()\n\nExamples — System.out, string constants, equals/hashCode:\n- Replace all System.out.println with SLF4J LOGGER.info in all example files\n  (QuickStartExample, AdvancedQueryExample, BukkitPluginExample,\n  Java24FeaturesExample, SpringBootExample)\n- Extract repeated string literals to constants: STATUS_PENDING,\n  STATUS_COMPLETED, FIELD_STATUS, FIELD_AMOUNT, FIELD_PRICE,\n  CATEGORY_ELECTRONICS\n- Split combined field declarations in Warp: x,y,z and yaw,pitch\n- Remove unused economyService field in BukkitPluginExample; make local\n- Remove commented-out code block from onEnableWithProperties()\n"
+    },
+    {
+      "sha": "4f1c4dcc616a64f787c923a06b36c4076adc91a8",
+      "date": "2026-04-21T09:41:57+02:00",
+      "author": "JExcellence | Justin",
+      "email": "justin.eiletz@outlook.com",
+      "message": "fix: resolve code smells flagged by static analysis\n\n- Rename Specifications.equal() → equalTo() and notEqual() → notEqualTo()\n  to avoid confusion with Object.equals(); update all call sites and Javadoc\n- Guard against NPE in OptimisticLockRetry.extractCauseType() when throwable is null\n- Extract all hardcoded dependency version strings to named val constants in build.gradle.kts\n- Add explicit equals()/hashCode() overrides to example Order class (delegates to BaseEntity)\n- Remove dead buildCacheBuilder() method from AbstractCachedRepository\n"
+    },
+    {
+      "sha": "dbb06a60b72aada5bce8d6a5a52e1a39765ea907",
+      "date": "2026-04-20T13:27:19+02:00",
+      "author": "JExcellence | Justin",
+      "email": "justin.eiletz@outlook.com",
+      "message": "fix: use plugin classloader in RepositoryScanner for async thread safety\n\nRepositoryScanner was using Reflections with no explicit classloader,\ncausing it to fall back to the ForkJoinPool worker thread's TCCL (the\nJEDependency library classloader) which has no visibility into the plugin\nJAR. This meant 0 repositories were discovered and every repos.get() call\nthrew RepositoryException.\n\nFixed by mirroring the existing EntityScanner approach: use\nRepositoryScanner.class.getClassLoader() + the plugin JAR URL from\nProtectionDomain.getCodeSource().getLocation() so Reflections always\nscans the correct JAR regardless of which thread calls build().\n\nAlso bump version to 3.0.3.\n"
+    },
+    {
+      "sha": "90cfba7375e8e35042af8b1d46673e3e2ca9b739",
+      "date": "2026-04-15T15:34:10+02:00",
+      "author": "JExcellence | Justin",
+      "email": "justin.eiletz@outlook.com",
+      "message": "update to 3.0.1\n"
+    },
+    {
+      "sha": "34f3ea919dc5d7cd5d54e1457a14aa4b7ee82cc8",
+      "date": "2026-04-15T15:31:35+02:00",
+      "author": "JExcellence | Justin",
+      "email": "justin.eiletz@outlook.com",
+      "message": "fix(cache): implement proper caching strategies per industry best practices\n\nAudit and fix caching implementation against cache-aside, write-through,\nthundering herd prevention, and stale-while-revalidate patterns.\n\nThundering herd prevention:\n- findById() and findByKey() now use Caffeine's get(key, loader) which\n  coalesces concurrent cache misses into a single DB query. Previously\n  used getIfPresent() + manual put, meaning N concurrent misses for the\n  same key caused N parallel database queries.\n\nTTL jitter (mass expiry prevention):\n- Cache expiration times now include configurable random jitter (default\n  10% of TTL). A 30-minute TTL becomes 27-33 minutes. Prevents stampede\n  when preload() writes thousands of entries at the same instant and they\n  all expire together.\n\nStale-while-revalidate:\n- New refreshAfterWrite option in CacheConfig. When set, expired entries\n  serve stale data immediately while Caffeine triggers an async background\n  reload. Users never block on cache revalidation. Leverages Caffeine's\n  native refresh mechanism.\n\nBounded preload:\n- Added preload(int limit) and preloadAsync(int limit) for large tables.\n  Previous preload() loaded the entire table into memory with no safety\n  bound.\n\nCache observability:\n- Added logCacheStats() method that logs hit rate, hit/miss counts,\n  eviction count, and cache size per layer at INFO level. Stats were\n  recorded via recordStats() but never surfaced.\n\nCache contract documentation:\n- Documented staleness window, invalidation strategy, cold start\n  behavior, and consistency model in class javadoc.\n\nCross-population:\n- findById() now cross-populates the key cache on hit, and findByKey()\n  cross-populates the ID cache. Previously each layer was only populated\n  through its own lookup path.\n\nCacheConfig additions:\n- refreshAfterWrite (Duration) — stale-while-revalidate trigger\n- jitterPercent (int, 0-50) — TTL jitter percentage\n"
+    },
+    {
+      "sha": "761582d4cd6834330df2377e34c139474f883a4e",
+      "date": "2026-04-15T11:28:48+02:00",
+      "author": "JExcellence | Justin",
+      "email": "justin.eiletz@outlook.com",
+      "message": "update README.md\n"
+    },
+    {
+      "sha": "d01db1b9fb6dff5d77a0da82c171157a177ca53b",
+      "date": "2026-04-15T11:02:02+02:00",
+      "author": "JExcellence | Justin",
+      "email": "justin.eiletz@outlook.com",
+      "message": "refactor!: JEHibernate 3.0 — complete overhaul with Java 17+ support\n\nComprehensive refactoring addressing critical bugs in entity lifecycle,\ncaching, query consistency, and session management. Adds Java 17/21/24\ncompatibility, session-scoped lazy loading, enhanced query builder,\nand production-ready configuration.\n\nBREAKING CHANGES:\n- Minimum Java version lowered from 24 to 17 (broader compatibility)\n- BaseEntity.setVersion() changed from public to protected\n- QueryBuilder.orderBy()/orderByDesc() now accumulate (multi-sort)\n  instead of replacing the previous sort\n- DatabaseType.MSSQL_SERVER prefix changed from \"mssql_server\" to \"mssql\"\n- AbstractCachedRepository constructor accepts CacheConfig record\n  instead of raw Duration/int parameters (old constructor still works)\n\nCritical bug fixes:\n- BaseEntity equals/hashCode: added transient UUID identityToken so\n  unpersisted entities are no longer all \"equal\" in HashSet/HashMap\n- save(): uses Identifiable.isNew() instead of em.contains() which\n  always returned false due to fresh EntityManager per call\n- createAll/updateAll: removed em.clear() mid-batch that caused\n  detached entity corruption in returned result lists\n- OptimisticLockRetry: walks full cause chain to catch Hibernate-wrapped\n  StaleObjectStateException, StaleStateException, LockAcquisitionException\n- QueryBuilder.getPage(): count + data query now execute in single\n  EntityManager for consistent pagination results\n- RepositoryRegistry.get(): replaced synchronized block with\n  ConcurrentHashMap.computeIfAbsent() for better concurrency\n- AbstractCachedRepository: replaced reflection-based getId() with\n  direct Identifiable interface cast (was calling getMethod on every\n  cache operation)\n- Cache invalidation: added missing overrides for updateAll(),\n  deleteAll(), saveAll(), deleteEntity() to maintain consistency\n- fromProperties(): now reads {prefix}.driver and {prefix}.dialect\n  overrides from properties files (were silently ignored before)\n\nSession management (lazy loading):\n- New SessionContext class wrapping an open EntityManager\n- withSession()/withSessionVoid(): transactional session scope where\n  lazy-loaded associations work correctly\n- withReadOnly(): read-only session scope without transaction overhead\n- Available on both repositories and JEHibernate entry point\n\nQuery builder enhancements:\n- Multi-field sorting: orderBy()/orderByDesc() accumulate sort orders\n- OR conditions: or(), orWhere(), orLike() combined as\n  AND(and_specs) AND OR(or_specs)\n- Fetch joins: fetch()/fetchLeft() for N+1 query prevention\n- Streaming: stream() with try-with-resources for large datasets\n- Built-in slow query logging (warns above 500ms threshold)\n\nNew repository methods:\n- saveAll(Collection): batch save detecting new vs existing entities\n- deleteEntity(T): delete by entity reference\n- refresh(T): re-read entity from database discarding in-memory changes\n- existsBy(Specification): specification-based existence check\n- Async variants: saveAllAsync(), deleteEntityAsync()\n\nCaching improvements:\n- CacheConfig record with builder: expiration, maxSize, expireAfterAccess\n- Full cache consistency on all mutation paths\n- Eliminated reflection-based ID extraction\n\nConfiguration and performance:\n- Connection pooling: connectionPool(min, max) for Agroal\n- Second-level cache: enableSecondLevelCache() for JCache\n- Better Hibernate defaults: batch_size=25, order_inserts/updates=true,\n  query_plan_cache=2048, connection_provider_disables_autocommit=true\n- Bukkit-friendly loading: PropertyLoader.load(File, String...)\n  and JEHibernate.fromProperties(File, String...)\n\nInfrastructure:\n- TransactionTemplate: added executeReadOnly(), public classifyException()\n  used across all exception handling (eliminated duplication)\n- QueryLogger: configurable slow query threshold with WARN logging\n- RepositoryFactory: tries multiple constructor signatures for flexibility\n- Fixed signing config to support both signingKey and signingInMemoryKey\n  property naming conventions\n\nJava 17/21/24 compatibility:\n- Compile target set to Java 17 (records, sealed interfaces standard)\n- Pattern matching switches replaced with if/else instanceof chains\n- List.getFirst() replaced with get(0)\n- Virtual threads detected at runtime via reflection — automatic on\n  Java 21+, falls back to cached thread pool on Java 17-20\n- Removed --enable-preview flag\n\nDocumentation:\n- Complete README.md rewrite with all features documented\n- Example hibernate.properties with all database types\n- Example simplelogger.properties for SLF4J configuration\n- Updated BukkitPluginExample with properties-based setup\n- New SpringBootExample with full service layer patterns\n- 20 new tests covering all refactored features (78 total, 0 failures)\n"
+    },
+    {
+      "sha": "d0d9b615588ea8652507984c90322c9b6ccdcb68",
+      "date": "2026-02-17T16:29:32+01:00",
+      "author": "JExcellence | Justin",
+      "email": "justin.eiletz@outlook.com",
+      "message": "Merge remote-tracking branch 'origin/master'\n\n# Conflicts:\n#\tREADME.md\n"
+    },
+    {
+      "sha": "bd9305523ed0ae81d97925ec6a140def179a2504",
+      "date": "2026-02-17T16:29:17+01:00",
+      "author": "JExcellence | Justin",
+      "email": "justin.eiletz@outlook.com",
+      "message": "refactor: major repository system overhaul with improved naming and caching\n\n- Rename classes for clarity:\n  - AbstractEntity → BaseEntity\n  - AbstractCRUDRepository → BaseRepository\n  - GenericCachedRepository → CachedRepository\n  - HibernateConfigManager → ConfigLoader\n  - HibernateConnectionFactory → ConnectionFactory\n\n- Enhance hibernate.properties with database-prefixed format:\n  - Support for H2, MySQL, MariaDB, PostgreSQL, Oracle, SQL Server\n  - Clear sectioned configuration per database type\n\n- Improve BaseRepository with:\n  - Batch operations (saveAll, deleteAll, updateAll)\n  - Fluent QueryBuilder API\n  - count() and exists() methods\n\n- Upgrade CachedRepository with:\n  - Dual cache strategy (ID + custom key)\n  - Configurable cache expiration\n  - Cache statistics and preload functionality\n\n- Simplify RepositoryManager:\n  - Static get() method for easy access\n  - createWithInjection() for DI scenarios\n\n- Add comprehensive test suite (58 unit tests)\n"
+    },
+    {
+      "sha": "e5129dbe2c1ddad3296373d4b30ab95fd9cfaad6",
+      "date": "2025-12-16T18:18:35+01:00",
+      "author": "JExcellence | Justin",
+      "email": "justin.eiletz@outlook.com",
+      "message": "Update README.md\n\nEnhance example of properties file\n"
+    },
+    {
+      "sha": "3d470a5d577426caff6232d8a84ba78cc3fe7c4f",
+      "date": "2025-12-16T18:15:50+01:00",
+      "author": "JExcellence | Justin",
+      "email": "justin.eiletz@outlook.com",
+      "message": "refactor: major repository system overhaul with improved naming and caching\n\n- Rename classes for clarity:\n  - AbstractEntity → BaseEntity\n  - AbstractCRUDRepository → BaseRepository\n  - GenericCachedRepository → CachedRepository\n  - HibernateConfigManager → ConfigLoader\n  - HibernateConnectionFactory → ConnectionFactory\n\n- Enhance hibernate.properties with database-prefixed format:\n  - Support for H2, MySQL, MariaDB, PostgreSQL, Oracle, SQL Server\n  - Clear sectioned configuration per database type\n\n- Improve BaseRepository with:\n  - Batch operations (saveAll, deleteAll, updateAll)\n  - Fluent QueryBuilder API\n  - count() and exists() methods\n\n- Upgrade CachedRepository with:\n  - Dual cache strategy (ID + custom key)\n  - Configurable cache expiration\n  - Cache statistics and preload functionality\n\n- Simplify RepositoryManager:\n  - Static get() method for easy access\n  - createWithInjection() for DI scenarios\n\n- Add comprehensive test suite (58 unit tests)\n"
+    }
+  ],
+  "commit_sha": "79734aa243ad834c7a013d4b3a4d43dd20a1d74c",
+  "extracted_at": "2026-10-05T18:21:10.912905+00:00"
+}

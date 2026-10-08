@@ -1,0 +1,48 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "3.5.3",
+  "spring_boot_major": "3",
+  "java_versions_declared": "17",
+  "build_evidence": [
+    {
+      "file": "dynamo-spring-core/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "dynamo-spring-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "dynamo-spring-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "dynamo-spring-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "dynamo-spring-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "dynamo-spring-test/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "dynamo-spring-test/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "dynamo-spring-test/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

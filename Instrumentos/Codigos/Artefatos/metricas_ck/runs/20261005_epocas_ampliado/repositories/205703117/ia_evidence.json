@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "322b809f66bfe35c96ca4084a23e1b144b74cdd4",
+      "date": "2026-01-16T21:42:23-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Project upgrade\n\n- Upgrade to Java 25\n- Upgrade to Spring Boot 4.0.1\n- Upgrade to Spring Shell 4.0.0\n- Upgrade to Apache Maven 3.9.12\n- Apply some code adjustments\n- Remove Gson dependency\n- Add dependency netty-resolver-dns-native-macos to client-shell to remove the ERROR log: Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library.\n"
+    },
+    {
+      "sha": "536bff87966d9f05186422effd595da18e47bca6",
+      "date": "2026-01-16T21:41:54-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Project upgrade\n\n- Upgrade to Java 25\n- Upgrade to Spring Boot 4.0.1\n- Upgrade to Spring Shell 4.0.0\n- Upgrade to Apache Maven 3.9.12\n- Apply some code adjustments\n- Remove Gson dependency\n- Add dependency netty-resolver-dns-native-macos to client-shell to remove the ERROR log: Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library.\n"
+    },
+    {
+      "sha": "379b4df64f75fa71656ff63614a5985bb3337ec9",
+      "date": "2025-12-15T11:02:57-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Project upgrade\n\n- Upgrade to Spring Boot 3.5.8\n- Upgrade to SpringDoc OpenAPI 2.8.14\n- Upgrade to Spring Shell 3.4.1\n- Upgrade wrapperVersion to 3.3.4 and Apache Maven to 3.9.11\n- Upgrade to Cassandra Docker image 5.0.6\n- Upgrade to Mongo Docker image 8.2.2\n- Upgrade to Postgres Docker image 18.0\n"
+    },
+    {
+      "sha": "7d5ccc607d54b10d0d580f59cb292788a23c273a",
+      "date": "2025-04-03T22:58:23+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Small adjustment in README\n"
+    },
+    {
+      "sha": "52bc364f1dea38e1f9ab91135aa1bd1e7cae3ba0",
+      "date": "2025-04-03T21:32:55+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Refactor application packages\n"
+    },
+    {
+      "sha": "42760d2a9ac091c5060592441309abb365726645",
+      "date": "2025-04-03T11:28:01+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project update\n\n- Remove MapStruct dependency\n- Refactor how the mappings among classes and records are done\n"
+    },
+    {
+      "sha": "e6eef90722ac4a59d65a49b0599c06eead61f53d",
+      "date": "2025-04-02T17:21:30+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Convert some DTOs from class to record\n"
+    },
+    {
+      "sha": "239a96141dbaacfed08a704f54e91e5ed68d5910",
+      "date": "2025-04-01T22:18:58+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project update\n\n- Remove public keyword from Beans\n- Remove --health-cmd parameter of docker run command as it does not work with paketobuildpacks/builder-jammy-java-tiny image\n- Add the .gitattributes file\n"
+    },
+    {
+      "sha": "7b32a339ea7a7cb77d1f89a88fd74ae952a419cb",
+      "date": "2025-04-01T18:08:21+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Refactor pom.xml files and build-docker-images.sh\n"
+    },
+    {
+      "sha": "0edf96e8ff5f01840b8dc5e0dedf31dd13f43549",
+      "date": "2025-04-01T12:38:07+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- Upgrade to Spring Boot 3.4.4\n- Upgrade to Springdoc OpenAPI 2.8.6\n- Upgrade to Spring Shell 3.4.0\n- Upgrade to Mapstruct 1.6.3\n- Upgrade to r2dbc-mysql 1.4.0\n- Upgrade to Cassandra Docker image 5.0.3\n- Upgrade to MySQL Docker image 9.2.0\n- Upgrade to MongoDB Docker image 8.0.6\n- Upgrade to PostgreSQL Docker image 17.2\n- Rename docker-build.sh to build-docker-images.sh\n- Update README file\n"
+    },
+    {
+      "sha": "a98244ef77d16f211163a9469fb871e01c043b62",
+      "date": "2024-11-06T13:04:25+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Using ConnectionFactoryInitializer to initialize notification-api database\n"
+    },
+    {
+      "sha": "791cd002a9d4d6936ffd8ec01f72def107cd160a",
+      "date": "2024-11-06T12:38:36+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Replace Jib with Paketo Buildpacks\n"
+    },
+    {
+      "sha": "879d9978c583a525acc0cd6beef96a5b93af412a",
+      "date": "2024-11-06T09:44:57+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Use an auto-configured WebClient.Builder for trace propagation when needed.\n"
+    },
+    {
+      "sha": "d79bb6896070ca3db6a0c5c949e82f63894a08ed",
+      "date": "2024-11-06T09:41:22+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgraded\n\n- Upgrade to Java 21;\n- Upgrade to spring-noot 3.3.5;\n- Upgrade to spring-shell 3.3.3;\n- Upgrade to springdoc-openapi 2.6.0;\n- Upgrade to r2dbc-mysql 1.3.0;\n- Upgrade to jib-maven-plugin 3.4.4;\n- Upgrade to amazoncorretto-jdk 21.0.5;\n- Upgrade to Cassandra docker image 5.0.2;\n- Upgrade to MySQL docker image 9.0.1;\n- Upgrade to MongoDB docker image 7.0.14;\n- Upgrade to PostgreSQL docker image 17.0;\n- Update README.\n"
+    },
+    {
+      "sha": "ca15782f59ca90da0ea9c18b0f874e5a04a91e6e",
+      "date": "2024-11-06T08:29:09+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Add link to Medium library\n"
+    },
+    {
+      "sha": "abbc38bf337a5db685274d5785c97e2c20a4a5b6",
+      "date": "2024-11-06T08:28:19+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade wrapperVersion to 3.3.2 and apache-maven to 3.9.9\n"
+    },
+    {
+      "sha": "edf244d50e43298fe02f2f3e719574c34bf4e208",
+      "date": "2024-04-13T21:40:35+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- upgrade to spring-boot 3.2.4;\n- upgrade to spring-shell 3.2.3;\n- upgrade to springdoc-openapi 2.5.0;\n- upgrade to r2dbc-mysql 1.1.3;\n- upgrade to apache-maven 3.9.5;\n- upgrade to jib-maven-plugin 3.4.2;\n- upgrade to amazoncorretto-jdk 17.0.10;\n- upgrade to postgres docker image 16.1;\n- upgrade to cassandra docker image 4.1.3;\n- upgrade to mysql docker image 8.3.0;\n- upgrade to mongo docker image 7.0.6.\n"
+    },
+    {
+      "sha": "c13ca831434c1eb8dd55b7e5ded18bb3a43a640b",
+      "date": "2023-08-03T22:06:08+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Create FUNDING.yml\n"
+    },
+    {
+      "sha": "d5159bf8a35d7f0cef978cacbc392926e39ade17",
+      "date": "2023-08-03T12:32:08+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Remove reference to docker-compose in README as it is not used\n"
+    },
+    {
+      "sha": "6b9d07c93c31263487eb5a2de977d50cfbfa83e6",
+      "date": "2023-08-03T12:26:04+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Add PoCs & Articles Section In README\n"
+    },
+    {
+      "sha": "765d68d0bdc84b30d6522fb05dd74268db34f0ce",
+      "date": "2023-08-03T12:24:03+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n- upgrade to spring-boot 3.1.2;\n- upgrade to springdoc-openapi 2.1.0;\n- upgrade to jib 3.2.2;\n- upgrade to jdk-image 17.0.7;\n- upgrade to mapstruct 1.5.5.Final;\n- upgrade to spring-shell 3.1.3;\n- replace dev.miku:r2dbc-mysql dependency to io.asyncer:r2dbc-mysql.\n"
+    },
+    {
+      "sha": "4ddda9329d550af5114c8843dcbf4ba6f911a8b7",
+      "date": "2023-08-03T12:21:11+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to database docker images\n"
+    },
+    {
+      "sha": "272b25f9b6ae5b57f3dcb4d451d5d522e32daa3a",
+      "date": "2023-08-03T12:18:40+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to apache-maven 3.9.3 and maven-wrapper 3.2.0\n"
+    },
+    {
+      "sha": "05316b3358c96bec68e3b8432f8e73204e30159f",
+      "date": "2023-03-18T19:58:40+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "refactor code to use http interface\n"
+    },
+    {
+      "sha": "4ab40c6f1e829f7fbf93bf25da8fb3250f4ba33b",
+      "date": "2023-03-18T14:28:16+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "project upgrade\n- upgrade to spring-boot 3.0.4;\n- upgrade to springdoc-openapi 2.0.4;\n- upgrade to apache-maven 3.8.7 and maven-wrapper 3.1.1;\n- updade project-diagram and README.\n"
+    },
+    {
+      "sha": "e3a795c5620ca091ceba1d11aadfadd559b6b024",
+      "date": "2023-02-22T15:26:33+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "project upgrade\n- upgrade to spring-boot 3.0.2;\n- upgrade to springdoc-openapi 2.0.2;\n- upgrade to spring-shell 3.0.0;\n- add init-environment and shutdown-environment scripts and remove docker-compose.yml;\n- refactor start-apis and start-shell scripts;\n- update README.\n"
+    },
+    {
+      "sha": "c58e4ae6f7e401bf47a4467e7b45b6af45817f87",
+      "date": "2023-02-15T08:36:53+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "remove property spring.main.allow-circular-references=true as it is not needed anymore\n"
+    },
+    {
+      "sha": "e277e360076dc7d88c82bccc20614c79c7093df3",
+      "date": "2023-02-15T08:17:46+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "project upgrade\n- upgrade to spring-boot 2.7.8;\n- upgrade to spring-shell 2.1.5;\n- upgrade to mapstruct 1.5.3.Final;\n- upgrade to springdoc-openapi 1.6.14;\n- upgrade to jib- 3.3.1;\n- replace openjdk to amazoncorretto with version 17.0.6;\n- upgrade to mongo docker image 6.0.4;\n- upgrade to postgres docker image 15.2;\n- upgrade to cassandra docker image 4.1.0;\n- upgrade to mysql docker image 8.0.32.\n"
+    },
+    {
+      "sha": "9f538a5537ee29d251995803e2e08adce118394e",
+      "date": "2022-09-18T11:00:38+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "project upgrade\n- upgrade to Java 17;\n- upgrade to spring-boot 2.7.3;\n- upgrade to jib 3.3.0;\n- upgrade to springdoc-openapi 1.6.11;\n- upgrade to spring-shell 2.1.1;\n- upgrade to r2dbc-postgresql 0.8.13.RELEASE;\n- upgrade to mysql docker image 8.0.30;\n- upgrade to mongo docker image 6.0.1;\n- upgrade to postgres docker image 14.5;\n- upgrade to cassandra docker image 4.0.6;\n- refactor some classes to records;\n- remove lombok from client-shell;\n- update README.\n"
+    },
+    {
+      "sha": "18acfd315a9d8e86c2688573e9d93174b5a9489a",
+      "date": "2022-07-22T12:10:22+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "project upgrade\n- upgrade to spring-boot 2.7.2;\n- upgrade to maven distributionUrl 3.8.6;\n- upgrade to postgres 14.4;\n- upgrade to cassandra 4.0.5;\n- rename groupId to com.ivanfranchin;\n- update README.\n"
+    }
+  ],
+  "commit_sha": "322b809f66bfe35c96ca4084a23e1b144b74cdd4",
+  "extracted_at": "2026-10-05T18:39:25.469982+00:00"
+}

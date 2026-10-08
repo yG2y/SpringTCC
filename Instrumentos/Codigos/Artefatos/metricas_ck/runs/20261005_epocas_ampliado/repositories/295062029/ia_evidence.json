@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "80becfa375db9e929243e27ee2e32620f5dae8ab",
+      "date": "2025-06-08T12:42:00+08:00",
+      "author": "Pace Zhou",
+      "email": "meet.pace@foxmail.com",
+      "message": "Merge pull request #43 from hiparker/development\n\nMerge: 修复修改个人信息时会清空手机邮箱问题 & 优化用户提醒"
+    },
+    {
+      "sha": "d0df97004b9bedb48a0152f2ec3345c242381055",
+      "date": "2025-06-08T12:13:36+08:00",
+      "author": "Parker",
+      "email": "meet.parker@foxmail.com",
+      "message": "Merge remote-tracking branch 'origin/development' into development\n"
+    },
+    {
+      "sha": "79a1fe296481f532f88e4bbb9dda157232621615",
+      "date": "2025-06-08T11:30:38+08:00",
+      "author": "Parker",
+      "email": "meet.parker@foxmail.com",
+      "message": "feat: 修复修改个人信息时会清空手机邮箱问题 & 优化用户提醒\n"
+    },
+    {
+      "sha": "ff53026f2eaece1754a9dc4e79d313abd2a1a78c",
+      "date": "2025-06-02T20:48:58+08:00",
+      "author": "Pace Zhou",
+      "email": "meet.pace@foxmail.com",
+      "message": "Merge pull request #42 from hiparker/development\n\nfeat: 支持springboot3, 修复相关CVE漏洞"
+    },
+    {
+      "sha": "2e2b47f53a4727cd2b17a48deb14957c0531e6ff",
+      "date": "2025-06-02T20:48:41+08:00",
+      "author": "Pace Zhou",
+      "email": "meet.pace@foxmail.com",
+      "message": "Merge branch 'master' into development"
+    },
+    {
+      "sha": "7eef6ae9c66cc62a2e3a6de58f6e1ab9653353a7",
+      "date": "2025-06-02T17:58:52+08:00",
+      "author": "Parker",
+      "email": "meet.parker@foxmail.com",
+      "message": "feat: 支持springboot3, 修复相关CVE漏洞\n"
+    },
+    {
+      "sha": "a07589a68c4579fbc88ea0673534a810b3c3beb2",
+      "date": "2025-06-02T18:00:33+08:00",
+      "author": "Pace Zhou",
+      "email": "meet.pace@foxmail.com",
+      "message": "Merge pull request #41 from hiparker/development\n\nfeat: 支持springboot3, 修复相关CVE漏洞"
+    },
+    {
+      "sha": "7eac7084ff7f88eaa1d5d67fd8de67f8783fc0da",
+      "date": "2025-06-02T17:58:52+08:00",
+      "author": "Parker",
+      "email": "meet.parker@foxmail.com",
+      "message": "feat: 支持springboot3, 修复相关CVE漏洞\n"
+    },
+    {
+      "sha": "386c5e8af41444716b358e2b6db9a45b28218bf0",
+      "date": "2025-06-02T17:51:38+08:00",
+      "author": "Pace Zhou",
+      "email": "meet.pace@foxmail.com",
+      "message": "Merge pull request #40 from hiparker/development\n\nfeat: 支持springboot3, 修复相关CVE漏洞"
+    },
+    {
+      "sha": "25dbdcdb437be11574b954a09a4b5bb9414e8af5",
+      "date": "2025-06-02T17:49:30+08:00",
+      "author": "Parker",
+      "email": "meet.parker@foxmail.com",
+      "message": "feat: 支持springboot3, 修复相关CVE漏洞\n"
+    },
+    {
+      "sha": "9dd05924457210f691c15723158e9c5b2329d5a4",
+      "date": "2024-03-28T23:17:29+08:00",
+      "author": "Anthony Parker",
+      "email": "meet.parker@foxmail.com",
+      "message": "Merge pull request #39 from hiparker/development\n\nfix: 修复极端情况下 服务启动报错初始化失败异常"
+    },
+    {
+      "sha": "190d035f241c246b43369a63e1e755680a428333",
+      "date": "2024-03-28T23:16:00+08:00",
+      "author": "Parker",
+      "email": "meet.parker@foxmail.com",
+      "message": "fix: 修复极端情况下 服务启动报错初始化失败异常\n"
+    },
+    {
+      "sha": "e59dd0c8a8efbd5110f09b044ae08209b5a69c43",
+      "date": "2023-09-19T23:23:53+08:00",
+      "author": "Anthony Parker",
+      "email": "meet.parker@foxmail.com",
+      "message": "Merge pull request #37 from hiparker/development\n\nfix: 修复登录过程中验证Jwt异常后 无法正常拦截问题"
+    },
+    {
+      "sha": "6feaaca93aa2ae1a40990fc6321979fab332f802",
+      "date": "2023-09-19T23:21:43+08:00",
+      "author": "Parker",
+      "email": "meet.parker@foxmail.com",
+      "message": "fix: 修复登录过程中验证Jwt异常后 无法正常拦截问题\n"
+    },
+    {
+      "sha": "1d29d0ea4fddf6f0ee66de374aab145cf1daf61c",
+      "date": "2023-09-16T10:41:05+08:00",
+      "author": "Anthony Parker",
+      "email": "meet.parker@foxmail.com",
+      "message": "Merge pull request #36 from hiparker/development\n\nfix: 修复登录过程中验证Jwt异常后 无法正常拦截问题"
+    },
+    {
+      "sha": "9ddf9961bb4d1e9e6cac8557b20154f4b62796ec",
+      "date": "2023-09-16T10:39:43+08:00",
+      "author": "Parker",
+      "email": "meet.parker@foxmail.com",
+      "message": "fix: 修复登录过程中验证Jwt异常后 无法正常拦截问题\n"
+    },
+    {
+      "sha": "453e3960b1d6793b59c016ffe63b57ec03002fe9",
+      "date": "2023-07-12T17:14:43+08:00",
+      "author": "Anthony Parker",
+      "email": "meet.parker@foxmail.com",
+      "message": "Merge pull request #35 from hiparker/development\n\nDevelopment"
+    },
+    {
+      "sha": "5cdbf140cc52af48ed36d244bf29c289ea7bbd68",
+      "date": "2023-07-12T17:13:51+08:00",
+      "author": "Parker",
+      "email": "meet.parker@foxmail.com",
+      "message": "fix: 升级Guava 修复 CVE-2020-8908\n"
+    },
+    {
+      "sha": "78c15f42ff3dfffbd650641c627a1296ab2ba7d6",
+      "date": "2023-07-12T17:06:33+08:00",
+      "author": "Parker",
+      "email": "meet.parker@foxmail.com",
+      "message": "fix: 修复数据库文件\n"
+    },
+    {
+      "sha": "0a049d3d8ced71df8e7a29f30ce33cade60be9b4",
+      "date": "2023-07-03T16:11:56+08:00",
+      "author": "Anthony Parker",
+      "email": "meet.parker@foxmail.com",
+      "message": "Merge pull request #33 from PiFrancis/oscs_fix_ci95dd0au51qt1nt0jh0\n\nfix(sec): upgrade org.yaml:snakeyaml to 1.32"
+    },
+    {
+      "sha": "18e0758b4aef050ef8e7cb92f8e248001edddc16",
+      "date": "2023-06-21T09:47:38+08:00",
+      "author": "PiFrancis",
+      "email": "pfrancis@qq.com",
+      "message": "update org.yaml:snakeyaml 1.27 to 2.0\n"
+    },
+    {
+      "sha": "6000f9b6a2463b727bd78bcaafce62eab93af061",
+      "date": "2023-06-02T16:44:41+08:00",
+      "author": "Parker",
+      "email": "meet.parker@foxmail.com",
+      "message": "fix: 修复数据文件 没更上2.0版本问题\n"
+    },
+    {
+      "sha": "6f8c70662d97473b2d368a18b9d5c1a141653eca",
+      "date": "2023-06-02T16:43:33+08:00",
+      "author": "Parker",
+      "email": "meet.parker@foxmail.com",
+      "message": "fix: 放开本地上传路径\n"
+    },
+    {
+      "sha": "ee341b113c1a1c27408b88c714ccf3f7e651df8e",
+      "date": "2023-05-31T10:50:46+08:00",
+      "author": "Parker",
+      "email": "meet.parker@foxmail.com",
+      "message": "Merge pull request #32 from hiparker/development\n\nDevelopment"
+    },
+    {
+      "sha": "535a5da781cdb37db027cbad5f478abcd17eb852",
+      "date": "2023-05-31T10:50:14+08:00",
+      "author": "Parker",
+      "email": "meet.parker@foxmail.com",
+      "message": "fix: 优化代码\n"
+    },
+    {
+      "sha": "9ca9dea72adc9ba155c45ff5243df9e8ea0c4f3c",
+      "date": "2023-05-30T20:59:22+08:00",
+      "author": "Parker",
+      "email": "meet.parker@foxmail.com",
+      "message": "fix: 修复租户组织为空，进入租户列表报错问题\n"
+    },
+    {
+      "sha": "4376dab83e92455b77e18e586a3428cb1adab76e",
+      "date": "2023-05-15T19:12:37+08:00",
+      "author": "Parker",
+      "email": "meet.parker@foxmail.com",
+      "message": "Merge pull request #31 from hiparker/development\n\nfeat: 更新README"
+    },
+    {
+      "sha": "0bb84a56475dcaa67422fd446231132748ffea2d",
+      "date": "2023-05-15T19:10:53+08:00",
+      "author": "Parker",
+      "email": "meet.parker@foxmail.com",
+      "message": "feat: 更新README\n"
+    },
+    {
+      "sha": "09fcc6d2988c99d8fdc3825a827023eb9972798f",
+      "date": "2023-04-25T13:48:36+08:00",
+      "author": "Parker",
+      "email": "meet.parker@foxmail.com",
+      "message": "Merge pull request #30 from hiparker/development\n\nfix: 升级springboot 版本为 2.7.10, 修复 CVE-2023-20860"
+    },
+    {
+      "sha": "098dd26f258157864d6f6690af2ee5622072f74f",
+      "date": "2023-04-24T18:52:57+08:00",
+      "author": "Parker",
+      "email": "meet.parker@foxmail.com",
+      "message": "fix: 升级springboot 版本为 2.7.10, 修复 CVE-2023-20860\n"
+    }
+  ],
+  "commit_sha": "80becfa375db9e929243e27ee2e32620f5dae8ab",
+  "extracted_at": "2026-10-05T17:59:58.893025+00:00"
+}

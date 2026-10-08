@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "5644f57a63440152af0eddf0b4335a784b670120",
+      "date": "2025-11-24T23:54:08+08:00",
+      "author": "Yang Luo",
+      "email": "hsluoyz@gmail.com",
+      "message": "feat: upgrade to Spring Boot 4.0.0\n\nBREAKING CHANGE: Requires Java 17+ (previously Java 8). Spring Boot upgraded from 2.7.12 to 4.0.0\n"
+    },
+    {
+      "sha": "13ed2cd174222e1be89824877ed5ebefacd4fd1f",
+      "date": "2025-04-28T11:35:56+08:00",
+      "author": "Yang Luo",
+      "email": "hsluoyz@gmail.com",
+      "message": "feat: upgrade jcasbin dependency to v1.81.0\n"
+    },
+    {
+      "sha": "bea05b9277b14020053bf63d9bd416f510114c70",
+      "date": "2024-10-01T10:18:10+08:00",
+      "author": "Yang Luo",
+      "email": "hsluoyz@gmail.com",
+      "message": "feat: improve README badges\n"
+    },
+    {
+      "sha": "5838e526a84198f90e5eeee4ec57af36a369a0f9",
+      "date": "2024-09-30T22:40:50+08:00",
+      "author": "Liao Xin",
+      "email": "93535922+liewstar@users.noreply.github.com",
+      "message": "feat: migrate from Gradle to Maven (#106)\n\n* feat: migrate from Gradle to Maven\n\n* feat: delete gradle-ci.yml\n\n* feat: disable comment checking"
+    },
+    {
+      "sha": "b100f55286bcf8a472dac944cb33c33594e6b815",
+      "date": "2024-08-01T17:36:57+08:00",
+      "author": "Liao Xin",
+      "email": "93535922+liewstar@users.noreply.github.com",
+      "message": "feat: update casbin jdbc and jcasbin dependencies (#104)\n\n"
+    },
+    {
+      "sha": "dbfc31cc3074b27ca97a1278c9dcab838614608c",
+      "date": "2024-06-29T21:42:14-04:00",
+      "author": "Jay Patel",
+      "email": "36803168+jay-babu@users.noreply.github.com",
+      "message": "feat: add DistributedEnforcer auto-configuration via useDistributedEnforcer (#102)\n\n"
+    },
+    {
+      "sha": "aef3b87d4af0b8b5eb486f6ee55efe1d00ca9b79",
+      "date": "2024-06-07T22:41:37+08:00",
+      "author": "Mouse Wang",
+      "email": "34568564+mouse9527@users.noreply.github.com",
+      "message": "feat: one transaction is notified only once (#100)\n\n"
+    },
+    {
+      "sha": "d1b6524faa2d0cc8f9a52bfb0117f97fbcbd88fe",
+      "date": "2024-06-06T15:26:55+08:00",
+      "author": "Mouse Wang",
+      "email": "34568564+mouse9527@users.noreply.github.com",
+      "message": "feat: add TxWatcher (#99)\n\n* support spring tx\n\n* Revert \"support spring tx\"\n\nThis reverts commit 94dd06805bd1c2319c9943b54af1ee2753c9170d.\n\n* feat: add TxWatcher (#98)\n\n* fix: add the new usage to README.md"
+    },
+    {
+      "sha": "a5221b0b4549e87259afdd2c16bcfe51ea7a8a05",
+      "date": "2024-03-10T11:35:36+01:00",
+      "author": "loukkyy",
+      "email": "servan.fichet@gmail.com",
+      "message": "feat: fix jcasbin dependency conflict in gradle (#94)\n\n"
+    },
+    {
+      "sha": "d0991e77541b5e12c27765bd6ea053a886ffb50f",
+      "date": "2024-03-09T10:06:32+08:00",
+      "author": "Yang Luo",
+      "email": "hsluoyz@qq.com",
+      "message": "fix: upgrade CI Node.js version to 20\n"
+    },
+    {
+      "sha": "c24ff1b7d7a9ed6d9cb89a6a304076edcfa81001",
+      "date": "2023-09-21T21:13:36+08:00",
+      "author": "ShingmoYeung",
+      "email": "525032303@qq.com",
+      "message": "feat: add Lettuce Redis watcher (#89)\n\n* Update dependencies and configuration for Casbin:\n- Update `org.casbin:jcasbin` from version 1.30.1 to 1.35.0\n- Update `org.casbin:jcasbin-redis-watcher` from version 1.4.1 to 1.4.2\n- Update `org.casbin:jdbc-adapter` from version 2.3.3 to 2.4.1\n- Update `mysql:mysql-connector-java` from version 8.0.30 to 8.0.33\n\nAdd new configuration properties for Lettuce Redis Type in `CasbinProperties.java`:\n- Add `watcherLettuceRedisType` property with the default value of NONE\n\nUpdate getter and setter methods for `watcherLettuceRedisType` in `CasbinProperties.java`\n\nAdd new class `CasbinWatcherLettuceRedisType.java`\n\nUpdate `CasbinRedisWatcherAutoConfiguration.java`:\n- Add import statement for `org.casbin.watcher.lettuce.LettuceRedisWatcher`\n- Add new conditional bean configuration for Lettuce Redis Watcher\n\n* Refactor build.gradle dependencies and update Casbin classes\n\n* Add Lettuce Redis watcher support to Casbin AutoConfiguration\n\nThe LettuceRedisWatcher class is imported, and a conditional statement is added to check the watcher type. If the type is \"standalone\", a new LettuceRedisWatcher instance is created and set as the watcher. If the type is \"cluster\", a new LettuceRedisWatcher instance is created with the cluster nodes and set as the watcher. If the watcher type is unsupported, a CasbinWatcherLettuceTypeUnsupportedException is thrown.\n\n* Update dependencies version and fix unsupported watcher type exception in CasbinRedisWatcherAutoConfiguration.java."
+    },
+    {
+      "sha": "03a7f3581f4ec913a04852426d8dcb5330b14d52",
+      "date": "2023-08-02T14:03:06+08:00",
+      "author": "ShingmoYeung",
+      "email": "525032303@qq.com",
+      "message": "feat: fix RedisWatcher bug in starter (#87)\n\nupdated CasbinRedisWatcherAutoConfiguration.java: added casbinProperties parameter to redisWatcher method\nupdated application.yml: changed property names to kebab-case and added single quotes around policy-topic value"
+    },
+    {
+      "sha": "b608b3efe29e6c028dcfacf7b9d133e30c4af5fc",
+      "date": "2023-07-29T11:43:52+08:00",
+      "author": "Gucheng Wang",
+      "email": "nomeguy@qq.com",
+      "message": "Improve docs\n"
+    },
+    {
+      "sha": "09ce724328f1814a53aba6775a5672f109547457",
+      "date": "2023-07-29T11:41:22+08:00",
+      "author": "hsluoyz",
+      "email": "hsluoyz@qq.com",
+      "message": "docs: update maven badge link"
+    },
+    {
+      "sha": "f0341eeb963a70ee94d0134ab1b785cfaa81be85",
+      "date": "2023-07-25T20:48:55+08:00",
+      "author": "Chang Jing Chen",
+      "email": "107469948+D1zzzY1@users.noreply.github.com",
+      "message": "fix: Resolve Maven alerts by updating dependencies (#85)\n\n"
+    },
+    {
+      "sha": "ae3eb9e348823a470eb76905feb57197a7f96408",
+      "date": "2023-07-20T21:19:21+08:00",
+      "author": "hsluoyz",
+      "email": "hsluoyz@qq.com",
+      "message": "feat: release v1.0.0 (#83)\n\nBREAKING CHANGE: release v1.0.0"
+    },
+    {
+      "sha": "de1fdaaa43c1849942805cd0ee929c2dc6890603",
+      "date": "2023-07-20T16:23:29+08:00",
+      "author": "Chen Changjing",
+      "email": "107469948+D1zzzY1@users.noreply.github.com",
+      "message": "feat: fix Casbin Starter Can't Use Dynamic Data Source (#80)\n\n* fix: fix Can't Use Dynamic Data Source\n\n* fix: fix Can't Use Dynamic Data Source"
+    },
+    {
+      "sha": "014277cbf602d73eeecce5555f0d7aa4eb4ee00e",
+      "date": "2023-07-20T16:20:07+08:00",
+      "author": "hsluoyz",
+      "email": "hsluoyz@qq.com",
+      "message": "ci: fix CI node version to 18"
+    },
+    {
+      "sha": "34dece1a53bfeb62c8cd4728def756de27370437",
+      "date": "2022-12-07T15:58:31+08:00",
+      "author": "wht",
+      "email": "101807499+OutOfEastGate@users.noreply.github.com",
+      "message": "feat: support for springboot-3.0 (#77)\n\n"
+    },
+    {
+      "sha": "b9007e3de792434561f98d053af653f89dd0df8c",
+      "date": "2022-10-30T06:21:39Z",
+      "author": "Hamid Mortazavi",
+      "email": "hamid.mortazavi@gmail.com",
+      "message": "fix: jcasbin was not included when published, with api it's letting Gradle know that the module wants to transitively export that dependency to other modules, so that it's available to them at both runtime and compile time. This configuration behaves just like compile (which is now deprecated) (#74)\n\n"
+    },
+    {
+      "sha": "49f4dd9dc9e9786d429ce6a5e87384812982a303",
+      "date": "2022-10-11T16:36:53+01:00",
+      "author": "Hamid Mortazavi",
+      "email": "hamid.mortazavi@gmail.com",
+      "message": "feat: upgraded spring and polish (#72)\n\n"
+    },
+    {
+      "sha": "e7a050781b870a06301faa85c4b7fc58549f82ed",
+      "date": "2022-10-11T15:17:38+01:00",
+      "author": "Hamid Mortazavi",
+      "email": "hamid.mortazavi@gmail.com",
+      "message": "fix: upgraded gradle since new version of spring boot requires gradle 7.x (#71)\n\n* upgraded gradle since new version of spring boot requires gradle 7.x\n\n* fixed tests"
+    },
+    {
+      "sha": "cf227aca0237de8f168510da0262bb97c74acf53",
+      "date": "2022-09-25T14:27:03+08:00",
+      "author": "imp2002",
+      "email": "imp07@qq.com",
+      "message": "fix: auto generate spring-configuration-metadata.json (#70)\n\n"
+    },
+    {
+      "sha": "6b4eef91dc9cafcf9bf2ceb4be2ad984d3f6db8f",
+      "date": "2022-09-07T19:35:17+08:00",
+      "author": "稻谷",
+      "email": "gumingfeng@live.com",
+      "message": "fix: update the way to get the driver (#69)\n\nBecause if the user does not configure the driver class name, a null pointer will be thrown\n\nCo-authored-by: gumingfeng@Live.com <gmf1988mingfeng>"
+    },
+    {
+      "sha": "b90f9615f813b09ba0edfc4421d4451f852d4995",
+      "date": "2022-07-06T19:37:21+08:00",
+      "author": "imp2002",
+      "email": "imp07@qq.com",
+      "message": "fix: replace built-in adapter and watcher with official jdbc-adapter and redis-watcher (#68)\n\n* fix: remove built-in adapter and watcher\n\n* fix: add official jdbc-adapter and redis-watcher"
+    },
+    {
+      "sha": "1aadca5827baa16c6f465d6ae2b07409e8b7cdb1",
+      "date": "2022-06-12T23:39:01+08:00",
+      "author": "Yang Tang",
+      "email": "tangyang9464@163.com",
+      "message": "ci: add semantic.yml (#66)\n\n"
+    },
+    {
+      "sha": "96918ae022403fcb4f058c4d5a81e42bfe1488e5",
+      "date": "2022-02-10T21:24:54+08:00",
+      "author": "Yixiang Zhao",
+      "email": "seriouszyx@foxmail.com",
+      "message": "fix: org.h2.jdbc.JdbcSQLSyntaxErrorException after H2 version upgrade (#62)\n\nSigned-off-by: Yixiang Zhao <seriouszyx@foxmail.com>"
+    },
+    {
+      "sha": "33baa2cce08ddcd01574dd3e53593732afda9be2",
+      "date": "2022-01-04T21:10:32+08:00",
+      "author": "Yixiang Zhao",
+      "email": "seriouszyx@foxmail.com",
+      "message": "fix: use mavenCentral as default repository instead of aliyun (#60)\n\nSigned-off-by: Yixiang Zhao <seriouszyx@foxmail.com>"
+    },
+    {
+      "sha": "5564a6232c82892c961b3c5dd44d8c13509474e3",
+      "date": "2022-01-04T20:09:13+08:00",
+      "author": "Yixiang Zhao",
+      "email": "674965440@qq.com",
+      "message": "feat: upgrade jcasbin version to 1.21.0 and fix the bugs about filter and redis-watcher (#58)\n\nSigned-off-by: Yixiang Zhao <seriouszyx@foxmail.com>"
+    },
+    {
+      "sha": "207d74175fa8e7b2519952ff520d3cbd36c73826",
+      "date": "2021-12-13T10:25:51+08:00",
+      "author": "Fabian Bao",
+      "email": "fabian4@163.com",
+      "message": "feat: support customized redis topic (#55)\n\nSigned-off-by: fabian4 <fabian4@163.com>"
+    }
+  ],
+  "commit_sha": "5644f57a63440152af0eddf0b4335a784b670120",
+  "extracted_at": "2026-10-05T18:06:02.741440+00:00"
+}

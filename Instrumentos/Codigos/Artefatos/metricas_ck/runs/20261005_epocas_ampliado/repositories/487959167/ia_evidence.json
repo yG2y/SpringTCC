@@ -1,0 +1,242 @@
+{
+  "ia_status": "com_evidencia",
+  "ia_level": 2,
+  "ia_agents": "Claude Code",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "89afb464ef3971664fae18e65fdeadd6d9a14ca4",
+      "trailer": "Claude Opus 5.5 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "0188e9b01a759f4a2db36fb89772a666dbcf4be4",
+      "trailer": "Claude Opus 5.5 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "d62983ef4fcd1f070b39a513cf0c1e7baa4e484c",
+      "trailer": "Claude Opus 5.5 <noreply@anthropic.com>"
+    }
+  ],
+  "commits": [
+    {
+      "sha": "e7733b00bfc80edd603e8914018cbc069672966d",
+      "date": "2026-10-05T17:06:28+02:00",
+      "author": "Sascha Woo",
+      "email": "sascha.woo@gmail.com",
+      "message": "Merge pull request #196 from xhaggi/htmx-v4\n\nAdd support for htmx 4.x and drop support for 2.x"
+    },
+    {
+      "sha": "974eb164c813e79e36cc87d473b788d1a6f49d35",
+      "date": "2026-03-23T09:41:48+01:00",
+      "author": "xhaggi",
+      "email": "sascha.woo@gmail.com",
+      "message": "Add support for htmx 4.x and drop support for 2.x\n"
+    },
+    {
+      "sha": "8a0de60a9cc3453cb56dc8a87166306abb8f3d9e",
+      "date": "2026-10-05T15:28:46+02:00",
+      "author": "Sascha Woo",
+      "email": "sascha.woo@gmail.com",
+      "message": "Merge pull request #204 from xhaggi/feature/spring-boot-4.1\n\nUpgrade to Spring Boot 4.1.1"
+    },
+    {
+      "sha": "bcce058de84e0f3f555e4986e52c2abb9f8871bf",
+      "date": "2026-10-05T11:15:36+02:00",
+      "author": "xhaggi",
+      "email": "sascha.woo@gmail.com",
+      "message": "Migrate to JSpecify, NullAway via Error Prone for null safety support\n\nSee https://docs.spring.io/spring-framework/reference/core/null-safety.html\n"
+    },
+    {
+      "sha": "daccf7dee961c6c20fe854aceaa242585e352dc9",
+      "date": "2026-10-05T11:11:52+02:00",
+      "author": "xhaggi",
+      "email": "sascha.woo@gmail.com",
+      "message": "Upgrade to Spring Boot 4.1.1\n"
+    },
+    {
+      "sha": "0e54ccddab153dae006ab6173122d295d762c653",
+      "date": "2026-10-02T13:17:50+02:00",
+      "author": "Wim Deblauwe",
+      "email": "wim.deblauwe@gmail.com",
+      "message": "Update compatibility table with 5.x releases\n"
+    },
+    {
+      "sha": "89afb464ef3971664fae18e65fdeadd6d9a14ca4",
+      "date": "2026-10-02T13:05:43+02:00",
+      "author": "Wim Deblauwe",
+      "email": "wim.deblauwe@gmail.com",
+      "message": "Redirect htmx requests to the current page when the session has expired\n\nHxRedirectToPageAuthenticationEntryPoint and HxRedirectToPageAccessDeniedHandler answer an htmx request that needs\nauthentication, or whose CSRF token went with the expired session, with HX-Redirect to the page it was made from\n(HX-Current-URL, or the link itself for a boosted link). The browser then makes a normal navigation, the application's\nown entry point asks the user to sign in, and the page is the request to return to; the htmx request is removed from\nthe request cache. Other requests and other denials go to the application's entry point and access denied handler.\n\nThe README's Spring Security section now says which classes are alternatives and which combine.\n\nCloses #202\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\n"
+    },
+    {
+      "sha": "cdde048b52b05c4e92caf0e29d67c8ec0dea5876",
+      "date": "2026-10-01T06:27:33+02:00",
+      "author": "Wim Deblauwe",
+      "email": "wim.deblauwe@gmail.com",
+      "message": "build: Upgrade to Spring Boot 4.0.8\n"
+    },
+    {
+      "sha": "0188e9b01a759f4a2db36fb89772a666dbcf4be4",
+      "date": "2026-10-01T06:18:26+02:00",
+      "author": "Wim Deblauwe",
+      "email": "wim.deblauwe@gmail.com",
+      "message": "Escape non-ASCII characters in JSON header values\n\nTomcat drops a response header whose value holds a character outside\nLatin-1, so an HX-Trigger event detail with e.g. \"Łukasz\" made the whole\nheader disappear. Enable JsonWriteFeature.ESCAPE_NON_ASCII on the mappers\nthat write HX-Trigger* and HX-Location, so the header values are pure\nASCII and htmx's JSON.parse restores the original characters.\n\nFixes #197\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\n"
+    },
+    {
+      "sha": "d62983ef4fcd1f070b39a513cf0c1e7baa4e484c",
+      "date": "2026-10-01T06:17:16+02:00",
+      "author": "Wim Deblauwe",
+      "email": "wim.deblauwe@gmail.com",
+      "message": "Keep the order of HX-Trigger events with details\n\nCollect the triggers in a LinkedHashMap instead of a HashMap, so the\nevents in the JSON header fire in the order they were added.\n\nFixes #198\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\n"
+    },
+    {
+      "sha": "09890361627760bbc38d63b083f8fa2fd07d8b0a",
+      "date": "2026-09-16T10:14:37+02:00",
+      "author": "xhaggi",
+      "email": "sascha.woo@gmail.com",
+      "message": "Bump version to 6.0.0-SNAPSHOT\n"
+    },
+    {
+      "sha": "b9cc86e94c5456838acfb68172d838b7e2bc3944",
+      "date": "2026-09-02T07:23:04+02:00",
+      "author": "Wim Deblauwe",
+      "email": "wim.deblauwe@gmail.com",
+      "message": "docs: Add link to Crafting Spring Boot Starters\n"
+    },
+    {
+      "sha": "3c10a2ee121d2e72bb51a2ee361fcc21542d1aa5",
+      "date": "2026-03-14T18:02:18+01:00",
+      "author": "Wim Deblauwe",
+      "email": "wim.deblauwe@gmail.com",
+      "message": "Bump version to 5.2.0-SNAPSHOT\n"
+    },
+    {
+      "sha": "aecc2bfb754fdaec48fcaaa035dba796ac29311a",
+      "date": "2026-03-14T17:08:51+01:00",
+      "author": "Wim Deblauwe",
+      "email": "wim.deblauwe@gmail.com",
+      "message": "Release 5.1.0\n"
+    },
+    {
+      "sha": "f2814f2de5966333956d5e2db355035e6f279283",
+      "date": "2026-03-14T17:05:08+01:00",
+      "author": "Wim Deblauwe",
+      "email": "wim.deblauwe@gmail.com",
+      "message": "Merge pull request #195 from wimdeblauwe/feature/gh-164_hx-vals-null-forwardport\n\nfeat: Do not serialize null values with hx-vals"
+    },
+    {
+      "sha": "fa80cdfd71d10c19dbe51d627e694c571cd69d38",
+      "date": "2026-03-14T06:29:39+01:00",
+      "author": "Wim Deblauwe",
+      "email": "wim.deblauwe@gmail.com",
+      "message": "feat: Do not serialize null values with hx-vals\n\nFixes #164\n"
+    },
+    {
+      "sha": "a7390e1d4437fab13f1c3ec3d9b86c391329ed1c",
+      "date": "2026-02-25T10:21:03+01:00",
+      "author": "Wim Deblauwe",
+      "email": "wim.deblauwe@gmail.com",
+      "message": "Merge pull request #192 from wimdeblauwe/feature/spring-boot-4.0.3\n\nbuild: Upgrade to Spring Boot 4.0.3"
+    },
+    {
+      "sha": "e1783403fb33557ed8fe653e636e54cc0f0b865e",
+      "date": "2026-02-25T10:19:29+01:00",
+      "author": "Wim Deblauwe",
+      "email": "wim.deblauwe@gmail.com",
+      "message": "build: Upgrade central-publishing-maven-plugin to 0.10.0\n"
+    },
+    {
+      "sha": "2c62b1dea50eb0179ccc0d4eb285acc847aaa7bc",
+      "date": "2026-02-25T10:18:59+01:00",
+      "author": "Wim Deblauwe",
+      "email": "wim.deblauwe@gmail.com",
+      "message": "build: Upgrade to Spring Boot 4.0.3\n"
+    },
+    {
+      "sha": "a5da2f7b5f5c36ca0f886550c6e2276b5dd13766",
+      "date": "2026-02-24T21:36:02+01:00",
+      "author": "Wim Deblauwe",
+      "email": "wim.deblauwe@gmail.com",
+      "message": "Merge pull request #188 from lcnicolau/htmx-csrf-token\n\nAdd support for automatic CSRF token injection"
+    },
+    {
+      "sha": "114fe75084221e15a7f4177c8a95f5a9c92a0a0c",
+      "date": "2026-02-20T13:39:48+01:00",
+      "author": "Wim Deblauwe",
+      "email": "wim.deblauwe@gmail.com",
+      "message": "Merge pull request #191 from xhaggi/reswap-show-scroll-position-none\n\nMake swap style optional and add support to define “none” for scroll and show in HX-Reswap"
+    },
+    {
+      "sha": "2e744bdb07a2b9bf5019efb0a4b78a2c4793b37d",
+      "date": "2026-02-18T11:30:42+01:00",
+      "author": "xhaggi",
+      "email": "sascha.woo@gmail.com",
+      "message": "Add support to define “none” for scroll and show in HX-Reswap\n\nSee https://htmx.org/attributes/hx-swap/\n"
+    },
+    {
+      "sha": "e1780dd459e080c2720c3205182c191a2dd0d4d4",
+      "date": "2026-02-18T11:47:36+01:00",
+      "author": "xhaggi",
+      "email": "sascha.woo@gmail.com",
+      "message": "Make swap style optional in HX-Reswap\n"
+    },
+    {
+      "sha": "ba8bc1d9df1c0b43ddabf1ec565686eb075470be",
+      "date": "2026-01-12T09:17:24+01:00",
+      "author": "xhaggi",
+      "email": "sascha.woo@gmail.com",
+      "message": "[readme] adjust maven badge to new DNS address and sonatype-central\n\nSee https://github.com/softwaremill/maven-badges?tab=readme-ov-file#a-new-dns-address\n"
+    },
+    {
+      "sha": "4512230ea73ce97232417834278f868a9a34bf40",
+      "date": "2025-12-06T14:27:23-03:00",
+      "author": "Leonardo Cabrera",
+      "email": "lcnicolau@gmx.com",
+      "message": "Switch CSRF token injection from payload to headers\n"
+    },
+    {
+      "sha": "d31033e7b38d12ed96f07de2610c697e6f72081c",
+      "date": "2025-12-05T15:53:55-03:00",
+      "author": "Leonardo Cabrera",
+      "email": "lcnicolau@gmx.com",
+      "message": "Add support for automatic CSRF token injection\n"
+    },
+    {
+      "sha": "79ce44a22da08ac5bbc1ad529b6bcc9abfdb5838",
+      "date": "2025-11-27T21:40:22+01:00",
+      "author": "Wim Deblauwe",
+      "email": "wim.deblauwe@gmail.com",
+      "message": "Set version to 5.1.0-SNAPSHOT for next release\n"
+    },
+    {
+      "sha": "0a82d26be61a5c604580fa9b560a9c04aa19d572",
+      "date": "2025-11-27T21:34:40+01:00",
+      "author": "Wim Deblauwe",
+      "email": "wim.deblauwe@gmail.com",
+      "message": "Release 5.0.0\n"
+    },
+    {
+      "sha": "c4dfae42672b31b859efcc6d51a1db85913347eb",
+      "date": "2025-11-27T21:34:07+01:00",
+      "author": "Wim Deblauwe",
+      "email": "wim.deblauwe@gmail.com",
+      "message": "docs: Update Spring Boot compatibility table\n"
+    },
+    {
+      "sha": "c52f8e66e430134844a40751c454d309a61bbcce",
+      "date": "2025-11-27T21:30:43+01:00",
+      "author": "Wim Deblauwe",
+      "email": "wim.deblauwe@gmail.com",
+      "message": "Merge pull request #169 from lcnicolau/htmx-redirect-pattern\n\nAdd support for native htmx redirects in Spring Security"
+    }
+  ],
+  "commit_sha": "e7733b00bfc80edd603e8914018cbc069672966d",
+  "extracted_at": "2026-10-05T17:56:38.135642+00:00"
+}

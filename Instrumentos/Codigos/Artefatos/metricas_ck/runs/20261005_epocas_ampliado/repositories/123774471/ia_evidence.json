@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "f45e72c1f71ed5ed81a2003d467c4ab065b48568",
+      "date": "2026-07-25T18:29:10+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: remove AGENTS.md\n"
+    },
+    {
+      "sha": "ca1e260375b1faac74160e536c09d074baf607a6",
+      "date": "2026-07-24T16:25:52+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: remove unused google-java-format version property\n\n- Remove `google-java-format.version` property from pom.xml\n- Remove version reference from Spotless googleJavaFormat config\n"
+    },
+    {
+      "sha": "68de09f438039f894831fc920716193156b273e4",
+      "date": "2026-07-24T15:40:58+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: Upgrade Spring Boot to 4.1.0 and refactor JWT converter\n\n- Upgrade Spring Boot to 4.1.0, PostgreSQL to 18.4, Keycloak to 26.7.0\n- Upgrade Spotless Maven plugin to 3.8.0 and move to validate phase\n- Replace Optional-based role extraction with null-safe guard checks\n- Add null-safe principal name fallback in JWT authentication converter\n- Fix README to reflect Spotless runs during test phase\n"
+    },
+    {
+      "sha": "d49096dbcf9f30f4215801fc97dc435378333e65",
+      "date": "2026-07-24T10:34:57+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "docs: update Spotless Maven plugin link in README\n\n- Change Spotless repository URL to point to plugin-maven subdirectory\n"
+    },
+    {
+      "sha": "0aa7bcaee5966f5d99dc58ac53737a43ffe81695",
+      "date": "2026-06-24T05:44:37-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "docs: update README\n"
+    },
+    {
+      "sha": "ee23ea363447b6e899ed754c48bdbf3b5b4d0422",
+      "date": "2026-06-14T15:01:42-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Add [*.java] section to .editorconfig\n"
+    },
+    {
+      "sha": "2462d7bbe97f15c7a6856160695939ff3593c913",
+      "date": "2026-06-14T09:38:41-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: rename docker-compose.yml to compose.yaml\n"
+    },
+    {
+      "sha": "719ed003c43ccbc17ff9199550bda95482391aea",
+      "date": "2026-05-21T15:18:03+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "docs: add note about formatting enforced during verify\n"
+    },
+    {
+      "sha": "a697037dcfe055fe1061a078293a0c3ae2c175a2",
+      "date": "2026-05-18T21:17:05+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: remove Spring Boot demo description from pom.xml\n"
+    },
+    {
+      "sha": "c02b859c6df4bd1d900ae9fa393852ff6dbb9147",
+      "date": "2026-05-14T15:57:32+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Remove custom importOrder from Spotless and [*.java] from .editorconfig\n\n- Remove <importOrder> from pom.xml so IntelliJ google-java-format\n  plugin matches Spotless on import ordering\n- Remove [*.java] from .editorconfig to avoid overriding the\n  google-java-format plugin in the IDE\n- Run spotless:apply to reformat all Java sources with default\n  import sorting\n"
+    },
+    {
+      "sha": "c9e166be2c7a2784817ba60eb285d39d4687966c",
+      "date": "2026-05-14T14:57:56+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: remove set -e in remove-docker-images.sh\n\n- Remove set -e so script does not abort if image does not exist\n"
+    },
+    {
+      "sha": "3527d5f9f5c3aaab84de88dcaa7f08068edb47da",
+      "date": "2026-05-14T13:36:02+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: add funding config and minor cleanup\n\n- Add Buy Me a Coffee link to FUNDING.yml\n- Simplify \"Running Tests\" section in README\n- Quote `unless-stopped` values in docker-compose.yml for consistency\n"
+    },
+    {
+      "sha": "ddeda24236c0e4b0869107a30e8bc43b2be0f60c",
+      "date": "2026-05-09T13:43:42+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Add AGENTS.md\n"
+    },
+    {
+      "sha": "d94b45efdaff82c27e3d2c8e3a9e2e22c594853f",
+      "date": "2026-05-09T09:29:31+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: add Spotless plugin for code formatting\n\n- Add .editorconfig for consistent editor settings\n- Add Spotless Maven plugin with google-java-format (GOOGLE style)\n- Update README with code formatting instructions\n- Format all Java source files with Spotless\n"
+    },
+    {
+      "sha": "1d8ac3415fad348a93ac6ae02e4c545b1cee45af",
+      "date": "2026-05-09T09:09:53+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: migrate database from MySQL to PostgreSQL\n\n- Replace MySQL 9.6.0 with PostgreSQL 18.3 in docker-compose.yml\n- Update Keycloak database configuration to use PostgreSQL\n- Add MIT license to the project\n- Add license badge and support section to README\n- Update project diagram name from \"Project Diagram\" to \"Project Overview\"\n- Convert documentation images from JPEG to PNG format\n- Rename excalidraw diagram file to match new naming convention\n- Add section for running unit tests with Maven wrapper\n"
+    },
+    {
+      "sha": "bf3363f0c5f704926f79b8ab8a537275c13172ad",
+      "date": "2026-05-08T23:35:41+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: update dependencies and improve scripts\n\n- Update Maven wrapper to 3.9.15 and Spring Boot to 4.0.6\n- Update Keycloak to 26.5.5 and MySQL to 9.6.0\n- Update springdoc-openapi to 3.0.3\n- Add error handling to build and remove scripts\n- Refactor controller to use ResponseEntity for better HTTP response handling\n- Refactor JWT converter to use Optional for cleaner null handling\n- Add controller unit tests and enable application tests\n- Improve docker-compose with restart policies and health checks\n"
+    },
+    {
+      "sha": "7456258bb19583c67b77cd81670859b7b27df0dc",
+      "date": "2026-01-09T18:26:16-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Project upgrade\n\n- Upgrade to Java 25\n- Upgrade to Spring Boot 4.0.1\n- Upgrade to SpringDoc OpenAPI 3.0.1\n- Upgrade to Apache Maven 3.9.12\n- Upgrade to MySQL Docker image 9.5.0\n- Upgrade to Keycloak Docker image 26.4.7\n- Add restart unless-stopped to Keycloak service in docker-compose.yml\n"
+    },
+    {
+      "sha": "60852c32ff8d70f8b5e765e873f2de322b3da5d1",
+      "date": "2025-10-26T14:15:34+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project Upgrade\n\n- Upgrade to Spring Boot 3.5.7\n- Upgrade wrapperVersion to 3.3.4 and Apache Maven to 3.9.11\n- Upgrade to Keycloak 26.4.1\n- Upgrade to MySQL 9.4.0\n"
+    },
+    {
+      "sha": "b7e3e3eb905ffd14f30b38b6c6f0cd48bee8f640",
+      "date": "2025-04-24T23:43:24+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Add .gitattributes file and update README\n"
+    },
+    {
+      "sha": "02ab292ade84db0546517c58ca738a2d86564079",
+      "date": "2025-03-02T20:00:13+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to Keycloak 26.1.3; small adjustments in README\n"
+    },
+    {
+      "sha": "b0c42390467ccc5038b1c30db0ae634960a54f2c",
+      "date": "2025-03-02T19:41:22+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- Upgrade to Spring Boot 3.4.3;\n- Upgrade to SpringDoc OpenAPI 2.8.5;\n- Upgrade to Keycloak Docker image 26.0.8;\n- Apply small adjustments and fixes;\n- Update README.\n"
+    },
+    {
+      "sha": "6311335bcd0bcb62cf6d7948dd574afa00c502d1",
+      "date": "2024-12-20T14:36:57-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to Keycloak 26.0.7\n"
+    },
+    {
+      "sha": "b3a3d1a165738655f0981a64b3281c006d9d8f8b",
+      "date": "2024-12-20T14:36:17-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Remove some Actuator references that were left behind\n"
+    },
+    {
+      "sha": "1146a8e51d462f1bbb0ca84b0b10c3474dbc0855",
+      "date": "2024-12-15T15:45:08-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Rename docker-build.sh to build-docker-images.sh; Update README\n"
+    },
+    {
+      "sha": "38533e9224973ee5367217bda4eedab6e0119277",
+      "date": "2024-12-11T15:38:08-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project update\n\n- rename WebSecurityConfig to SecurityConfig;\n- remove actuator dependency as it is not essencial to the project;\n- remove public keyword from the Beans;\n- update README.\n"
+    },
+    {
+      "sha": "175675f7d51a2c65865a0be7196a6671d1f7dbfa",
+      "date": "2024-12-08T17:34:37-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Remove unnecessary annotation in WebSecurityConfig\n"
+    },
+    {
+      "sha": "b98e4e6f3a068c30f2aa16bb1d8d5a5e5a6d47a5",
+      "date": "2024-12-08T17:33:35-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- upgrade to spring-boot 3.4.0;\n- upgrade to springdoc-openapi 2.7.0;\n- upgrade to keycloak docker image 26.0.6;\n- upgrade to mysql docker image 9.1.0;\n- refactor pom.xml and docker-compose.yml;\n- update README.\n"
+    },
+    {
+      "sha": "f5bb6f854f6b8f6e3b69d7b24c638d7ee25470e2",
+      "date": "2024-11-07T23:13:22+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Replace Jib with Paketo Buildpacks and change Keycloak healthcheck in docker-compose\n"
+    },
+    {
+      "sha": "0eea37755ca25d22042d9ab0acc6e0e45f00fe85",
+      "date": "2024-11-07T21:45:55+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- Upgrade to Java 21;\n- Upgrade to spring-boot 3.3.5;\n- Upgrade to Keycloak 26.0.5;\n- Upgrade to springdoc-openapi 2.6.0;\n- Upgrade to spring-boot 3.3.5;\n- Upgrade to jib-maven-plugin 3.4.4;\n- Upgrade to MySQL docker image 9.0.1\n"
+    },
+    {
+      "sha": "67f5ff23bd12a7d091db94ea2c841b0a89a21810",
+      "date": "2024-11-07T09:45:41+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to apache-maven 3.9.9\n"
+    }
+  ],
+  "commit_sha": "f45e72c1f71ed5ed81a2003d467c4ab065b48568",
+  "extracted_at": "2026-10-05T18:10:16.172535+00:00"
+}

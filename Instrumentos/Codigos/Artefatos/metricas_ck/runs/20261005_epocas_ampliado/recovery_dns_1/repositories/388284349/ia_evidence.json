@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "1c5b7e0ee11eabc0dc44cf5a286ce126c87cae39",
+      "date": "2026-04-28T15:03:24+09:00",
+      "author": "KyungJoon Park",
+      "email": "kyungjoon.park@linecorp.com",
+      "message": "Return fake credential for empty auth options (#83)"
+    },
+    {
+      "sha": "1dc5a13841ce7d745c29898eac8401f6636861f0",
+      "date": "2026-04-28T15:03:04+09:00",
+      "author": "KyungJoon Park",
+      "email": "kyungjoon.park@linecorp.com",
+      "message": "Remove RS1 and standardize ES256K COSE algorithm value (#82)"
+    },
+    {
+      "sha": "04cf0772d7b97e65146e78d1d7e34c6107908a0c",
+      "date": "2026-04-25T23:01:03+09:00",
+      "author": "Gibeom Gwon",
+      "email": "gibeom.gwon@linecorp.com",
+      "message": "Do not allow invalid length credential id (#81)"
+    },
+    {
+      "sha": "dfded113b5def9b7aa06487ce77f19d7952c666c",
+      "date": "2026-04-25T11:00:45-03:00",
+      "author": "Hérson Reis Rezende dos Santos",
+      "email": "62779767+hrezend@users.noreply.github.com",
+      "message": "feat(MdsV3ServiceImpl): adjusting checkLatestDataExist causing lock (#80)"
+    },
+    {
+      "sha": "56bd13f1a71ee8ceda8ce28d776c42844bd66940",
+      "date": "2026-04-16T13:07:52+09:00",
+      "author": "Gibeom Gwon",
+      "email": "gibeom.gwon@linecorp.com",
+      "message": "Add WebAuthn Backup Eligibility/State flag support in AuthenticatorData (#79)"
+    },
+    {
+      "sha": "1bb9b7a87eb4229395b36f1162bc7455eb870d7a",
+      "date": "2026-04-16T08:39:10+09:00",
+      "author": "Gibeom Gwon",
+      "email": "gibeom.gwon@linecorp.com",
+      "message": "Restrict COSE algorithms to allowed list during attestation registration (#78)"
+    },
+    {
+      "sha": "4b02a0f33541ec825123408c471ee80af9fdc42a",
+      "date": "2026-04-08T19:31:31+09:00",
+      "author": "Gibeom Gwon",
+      "email": "gibeom.gwon@linecorp.com",
+      "message": "Upgrade gradle version to 8.12.1 (#77)"
+    },
+    {
+      "sha": "fa5ca1f44eb946417d4939fac307953e9cd58154",
+      "date": "2026-04-08T09:08:23+09:00",
+      "author": "Gibeom Gwon",
+      "email": "gibeom.gwon@linecorp.com",
+      "message": "Update enums comply with webauthn level 3 (#76)"
+    },
+    {
+      "sha": "e1f5430f4d630e71ed3c48e2fcf080a9de6aea3b",
+      "date": "2026-04-08T08:35:17+09:00",
+      "author": "Ken Watanabe",
+      "email": "51844896+dorakemon@users.noreply.github.com",
+      "message": "fix: validate crossOrigin field in clientDataJSON (#74)"
+    },
+    {
+      "sha": "90510f41cd76f30f49bf3f1c61f924b81dd3304c",
+      "date": "2026-04-07T16:36:37+09:00",
+      "author": "Gibeom Gwon",
+      "email": "gibeom.gwon@linecorp.com",
+      "message": "Implement CredentialMediationRequirement and update RP server get options response (#75)"
+    },
+    {
+      "sha": "653d4a227f512e597543854f3c79ab8e4cc825a8",
+      "date": "2026-04-06T22:48:44+09:00",
+      "author": "Ken Watanabe",
+      "email": "51844896+dorakemon@users.noreply.github.com",
+      "message": "fix: prevent username enumeration in authentication options endpoint (#73)"
+    },
+    {
+      "sha": "96b50a1890abb0bfba6bb05682d111061c0417bf",
+      "date": "2026-04-06T22:03:59+09:00",
+      "author": "Ken Watanabe",
+      "email": "51844896+dorakemon@users.noreply.github.com",
+      "message": "fix: enforce User Presence (UP) flag validation during registration (#72)"
+    },
+    {
+      "sha": "a95c0d416e4396673d29ce2179a585104f91d31a",
+      "date": "2026-02-02T14:35:02+09:00",
+      "author": "KyungJoon Park",
+      "email": "kyungjoon.park@linecorp.com",
+      "message": "Add new root certificate (#71)\n\n"
+    },
+    {
+      "sha": "34cc4cf5baeb1a671301cab0ff6b5a8098acdd79",
+      "date": "2025-09-23T18:37:25+09:00",
+      "author": "KyungJoon Park",
+      "email": "kyungjoon.park@linecorp.com",
+      "message": "Update origin verification flow (#68)\n\n"
+    },
+    {
+      "sha": "e0048350a3b16804f2fcddeef1cf7396fff7767c",
+      "date": "2025-09-03T11:46:16+09:00",
+      "author": "GGoMak",
+      "email": "kia0097@naver.com",
+      "message": "Implement session revoke function (#67)\n\n"
+    },
+    {
+      "sha": "863b47731797c36c461bede194464b28123b7adc",
+      "date": "2025-04-30T11:53:19+09:00",
+      "author": "Gibeom Gwon",
+      "email": "gb.gwon@stackframe.dev",
+      "message": "Support PRF extension (#63)\n\n"
+    },
+    {
+      "sha": "0cef98123d4be5999b5b6fcf10c13a7839441bed",
+      "date": "2025-04-16T19:34:49+09:00",
+      "author": "Gibeom Gwon",
+      "email": "gb.gwon@stackframe.dev",
+      "message": "Update AuthenticatedAt even if the sign counter is zero (#64)\n\n"
+    },
+    {
+      "sha": "2f9ff08e9ff151f78829f6adaa576f4fc12987be",
+      "date": "2025-04-16T19:34:26+09:00",
+      "author": "Gibeom Gwon",
+      "email": "gb.gwon@stackframe.dev",
+      "message": "Add maven publish task for common and fido2-core module (#62)\n\nPublish common and fido2-core modules into user-defined maven repo by running below command.\n./gradlew publish -Ppublish.maven.url={Repo URL} \\\n-Ppublish.maven.username={username} \\\n-Ppublish.maven.password={password}\n\nArtifacts will be published as com.linecorp.line.auth.fido.fido2:{common,fido2-core}"
+    },
+    {
+      "sha": "1a9f8defdf20800a4c3a76dc16cbc0926bd906b9",
+      "date": "2025-04-16T13:50:10+09:00",
+      "author": "Doyeon Kim",
+      "email": "doyeon.kim@kaist.ac.kr",
+      "message": "Add associated domain to support passkey (#65)\n\n"
+    },
+    {
+      "sha": "c9b3338f94fc5c1db3f3f2c9637df6aea7536a2a",
+      "date": "2024-11-03T21:44:37-03:00",
+      "author": "nic",
+      "email": "nic@users.noreply.github.com",
+      "message": "Update AndroidSafetyNetAttestationVerifier.java (#52)\n\n"
+    },
+    {
+      "sha": "5e0c24a46281e934c770e6c47c92d7b34eddbdbc",
+      "date": "2024-11-01T11:35:52+09:00",
+      "author": "MunGyu Choi",
+      "email": "cinari4@korea.ac.kr",
+      "message": "Fix: Correct API endpoint mismatch in CredentialController (#50)\n\n"
+    },
+    {
+      "sha": "f66f30c1730e0381cc387dc74fe191770e229f1b",
+      "date": "2024-11-01T11:30:41+09:00",
+      "author": "Jinwoo An",
+      "email": "silrairon@naver.com",
+      "message": " Add omitted AuthenticatorTransport Option \"hybrid\" (#35)\n\n"
+    },
+    {
+      "sha": "a2e93effbf44de754c7fb44c7365e4323eb6655e",
+      "date": "2024-11-01T11:08:24+09:00",
+      "author": "KyungJoon Park",
+      "email": "kyungjoon.park@linecorp.com",
+      "message": "Upgrade Spring Boot 2.7.3,Java 11 and LINE Webauthn Client support (#56)\n\n"
+    },
+    {
+      "sha": "98614b3adc1596367dc14a316e99a5009717dc3e",
+      "date": "2022-12-06T21:30:07+09:00",
+      "author": "KyungJoon Park",
+      "email": "kyungjoon.park@linecorp.com",
+      "message": "Update to support metadata service v3 (#33)\n\nResolved https://github.com/line/line-fido2-server/issues/11"
+    },
+    {
+      "sha": "a22f3887c3a40699b24ae4fd7a2dc879538e241a",
+      "date": "2022-09-16T14:07:03+09:00",
+      "author": "KyungJoon Park",
+      "email": "kyungjoon.park@linecorp.com",
+      "message": "Bugs/fix tpm parser (#31)\n\n* Modify pubArea for ECC alg parsing error of TPM Attestation\n\n* Refactor TPM PubArea extraction code\n\n* Add unit test for TPM ECC attestation"
+    },
+    {
+      "sha": "78f78c6cc50586560d35b85777a8fef71446d321",
+      "date": "2022-08-25T15:52:06+09:00",
+      "author": "KyungJoon Park",
+      "email": "kyungjoon.park@linecorp.com",
+      "message": "Fix incorrect settings for h2 console (#30)\n\n* Fix incorrect settings for h2 console\n\n* Update README.md"
+    },
+    {
+      "sha": "9a77853993eae8d0a31bec9ae32469d14e85ae37",
+      "date": "2022-08-25T15:51:45+09:00",
+      "author": "KyungJoon Park",
+      "email": "kyungjoon.park@linecorp.com",
+      "message": "Add Webauthn spec link (#29)\n\n"
+    },
+    {
+      "sha": "7ad6e867b3faaab133ef950c16da37cda8a9d9e9",
+      "date": "2022-04-28T11:40:11+09:00",
+      "author": "Eric Lai",
+      "email": "25084249+ericlai616@users.noreply.github.com",
+      "message": "Use debug level logging to avoid performance impact (#23) (#24)\n\n"
+    },
+    {
+      "sha": "d4eefa3433a7890cef4632b1eb26162d5f873878",
+      "date": "2021-12-01T07:59:26+09:00",
+      "author": "KyungJoon Park",
+      "email": "kyungjoon.park@linecorp.com",
+      "message": "Add unit tests for Bean validation (#22)\n\n* Add unit tests for Bean validation"
+    },
+    {
+      "sha": "6a0ccd3f84bc6336da7341f74f0810448ea0f91c",
+      "date": "2021-11-26T17:51:48+09:00",
+      "author": "Seito Tanaka",
+      "email": "seito.tanaka.dev@gmail.com",
+      "message": "Improve message validation check (#20)\n\n* Replace ChallengeController validation with Bean Validation\n\n* Replace ResponseController validation with Bean Validation\n\n* Add error handling\n\n* Add comment to hibernate-validator dependency\n\n* Fix maximum userid length"
+    }
+  ],
+  "commit_sha": "1c5b7e0ee11eabc0dc44cf5a286ce126c87cae39",
+  "extracted_at": "2026-10-05T18:19:05.210232+00:00"
+}

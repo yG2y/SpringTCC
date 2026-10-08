@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "179e813568c345bad3fce985088b5535e57481aa",
+      "date": "2026-06-12T15:44:04+07:00",
+      "author": "Thien Nguyen Le Quynh",
+      "email": "nlqthien@gmail.com",
+      "message": "Allow gitleaks for Keycloak client secrets on local env (#1552)\n\nAdded gitleaks:allow comments to Keycloak client secrets."
+    },
+    {
+      "sha": "3609845c8248f24f6d5ccf7df645d5e94ae4294b",
+      "date": "2026-03-10T08:57:39+07:00",
+      "author": "Phung Quang Minh Tri",
+      "email": "12363317+minhtridn2001@users.noreply.github.com",
+      "message": "Upgrade to Java 25 and align Docker, CI and OpenTelemetry agent (#1301) (#1317)\n\n* Upgrade to Java 25 and align Docker, CI and OpenTelemetry agent (#1301)\n\n* Update README to reflect Java 25 and Spring Boot 4.0 upgrade\n\n---------\n\nCo-authored-by: Tri Phung Quang Minh <tri.phungquangminh@nashtechglobal.com>"
+    },
+    {
+      "sha": "9cdb07edb6596662e37dbc1e20820e02ca1f69c7",
+      "date": "2026-03-05T15:09:20+07:00",
+      "author": "Phung Quang Minh Tri",
+      "email": "12363317+minhtridn2001@users.noreply.github.com",
+      "message": "Align Elasticsearch versions across runtime and tests (#1321)\n\nCo-authored-by: Tri Phung Quang Minh <tri.phungquangminh@nashtechglobal.com>"
+    },
+    {
+      "sha": "4fb205d1a541295208adcd15458a9fc29dfed0af",
+      "date": "2026-02-24T09:58:46+07:00",
+      "author": "Phung Quang Minh Tri",
+      "email": "12363317+minhtridn2001@users.noreply.github.com",
+      "message": "Upgrade to Spring Boot 4 (#1307)\n\n* Upgrade Spring Boot to 3.5.10 as migration baseline (#1300)\n\n* Upgrade parent BOM and common-library to Spring Boot 4 (#1300)\n\n* Upgrade to Spring Boot 4: BFF services (#1300)\n\n* Upgrade to Spring Boot 4: cart service (#1300)\n\n* Upgrade to Spring Boot 4: customer service (#1300)\n\n* Upgrade to Spring Boot 4: inventory service (#1300)\n\n* Upgrade to Spring Boot 4: recommendation service (#1300)\n\n* Upgrade to Spring Boot 4: location service (#1300)\n\n* Upgrade to Spring Boot 4: order, media services (#1300)\n\n* Upgrade to Spring Boot 4: payment service (#1300)\n\n* Upgrade to Spring Boot 4: product service (#1300)\n\n* Upgrade to Spring Boot 4: promotion and rating services (#1300)\n\n* Upgrade to Spring Boot 4: webhook, sample services, minor fixes (#1300)\n\n* Upgrade to Spring Boot 4: make ordering deterministic and apply minor fixes (#1300)\n\n* refactor: fix Sonar issue\n\n---------\n\nCo-authored-by: Tri Phung Quang Minh <tri.phungquangminh@nashtechglobal.com>"
+    },
+    {
+      "sha": "7454ad289212e32fa59ae79947e007037a742628",
+      "date": "2024-12-13T11:15:29+07:00",
+      "author": "duylv",
+      "email": "47024529+duylv27@users.noreply.github.com",
+      "message": "#1171 - Get payment providers (#1270)\n\n* - Get payment providers\n* - Update payment API & config\n* - Fix checkstyle, add UT\n---------\n\nCo-authored-by: Duy Le Van <duy.levan@nashtechglobal.com>\nCo-authored-by: Tri Phung Quang Minh <tri.phungquangminh@nashtechglobal.com>"
+    },
+    {
+      "sha": "9b4e16d60f1fcce166fb885b4bbcaa22bc00c7ab",
+      "date": "2024-12-13T11:12:50+07:00",
+      "author": "Phung Quang Minh Tri",
+      "email": "12363317+minhtridn2001@users.noreply.github.com",
+      "message": "Move AuditingEntityListener to common (#1286)\n\nCo-authored-by: Tri Phung Quang Minh <tri.phungquangminh@nashtechglobal.com>"
+    },
+    {
+      "sha": "08871360bb72e2433f2f04dfbc92bd9d95b31fec",
+      "date": "2024-12-07T06:01:52+07:00",
+      "author": "Thien Nguyen",
+      "email": "thienn@outlook.com",
+      "message": "#1271 turn off webhook and recommendation by default\nIt looks like kafka-ui doesn't support domain name other than localhost\n"
+    },
+    {
+      "sha": "a33b83167d33c8893b17fc118c2225b8ce76064e",
+      "date": "2024-12-06T06:12:08+07:00",
+      "author": "Thien Nguyen Le Quynh",
+      "email": "nlqthien@gmail.com",
+      "message": "fix changing from akhq to kafka-ui (#1282)\n\n"
+    },
+    {
+      "sha": "3945ce6decbadd0c440ebfac0bfd85375cb523bd",
+      "date": "2024-12-03T02:54:29+07:00",
+      "author": "NhatTranMinh15",
+      "email": "Nhat.TranMinh@nashtechglobal.com",
+      "message": "Update \"create checkout\" follows new design (#1224)\n\n* Update Models and Vms\n\n* Call to product service\n\n* Update create checkout\n\n* Update tests\n\n* Improve code readability\n\n---------\n\nCo-authored-by: Tri Phung Quang Minh <tri.phungquangminh@nashtechglobal.com>"
+    },
+    {
+      "sha": "cd2a655e320ef4ab970698de5981a5a75a0beb92",
+      "date": "2024-12-02T12:55:48+07:00",
+      "author": "toannguyenk",
+      "email": "111260780+toannguyenk@users.noreply.github.com",
+      "message": "fix recommendation itegration test failed (#1280)\n\n"
+    },
+    {
+      "sha": "05b37d7101d54949f5a4220c5d93ace2b0b30ddc",
+      "date": "2024-12-02T06:16:35+07:00",
+      "author": "Thien Nguyen",
+      "email": "thienn@outlook.com",
+      "message": "#1271 less verbose log\n"
+    },
+    {
+      "sha": "de9165dd485106846e0fa534aac6926fa6c4c78c",
+      "date": "2024-12-02T06:13:59+07:00",
+      "author": "Thien Nguyen",
+      "email": "thienn@outlook.com",
+      "message": "sample data - add datasource config to docker compose\n"
+    },
+    {
+      "sha": "9cf9cefa523d483f20b742f5eca7d71808c028fb",
+      "date": "2024-11-22T09:24:32+07:00",
+      "author": "toannguyenk",
+      "email": "111260780+toannguyenk@users.noreply.github.com",
+      "message": "fix CSRF sample data (#1279)\n\n"
+    },
+    {
+      "sha": "12c999026df4a771bd6089c6cb4d25444bc1a4d5",
+      "date": "2024-11-19T17:22:00+07:00",
+      "author": "Nguyễn Trí Hải",
+      "email": "mochacr0@gmail.com",
+      "message": "[Checkout] Allow on-demand address creation on checkout screen (#1272)\n\n"
+    },
+    {
+      "sha": "7f3f85f3e1c5b6c09c802c62c1bdf916bc6d0275",
+      "date": "2024-11-18T10:08:25+07:00",
+      "author": "toannguyenk",
+      "email": "111260780+toannguyenk@users.noreply.github.com",
+      "message": "edit and delete customer (#1262)\n\n* edit and delete customer\n\n* fix sonar issue"
+    },
+    {
+      "sha": "978b3802f4a915372e895d23954816f6925b701f",
+      "date": "2024-11-14T09:11:32+07:00",
+      "author": "Khanh Du",
+      "email": "110228244+khanhduzz@users.noreply.github.com",
+      "message": "#1183 Feat: Modal for selecting the display-type of Product Option and configuring the Storefront view to integrate with the display-type (#1263)\n\n* feat: Add selector for product option value display\n\n* fix prettier check\n\n* fix prettier and sonar\n\n* fix prettier check\n\n* remove sonar warn\n\n* fix backoffice sonar check\n\n* fix sonar clound check\n\n* refactor naming and enhance UI\n\n* refactor prettier"
+    },
+    {
+      "sha": "197d6f4e23e4ea07b8a7a3606019ffebf492d4bd",
+      "date": "2024-11-11T16:28:41+07:00",
+      "author": "duylv",
+      "email": "47024529+duylv27@users.noreply.github.com",
+      "message": "#1227 - Handling hard delete data from Sample Data (#1252)\n\n* #1227 - Handling hard delete data from Sample Data\n\n- Support ser/de CDC message key.\n- Update product sync services to handle hard delete in case.\n- Add kafka-ui image.\n\n* #1227 - Handling hard delete data from Sample Data\n\n- Support ser/de CDC message key.\n- Update product sync services to handle hard delete in case.\n- Add kafka-ui image.\n\n* #1227 - Handling hard delete data from Sample Data\n\n---------\n\nCo-authored-by: Duy Le Van <duy.levan@nashtechglobal.com>"
+    },
+    {
+      "sha": "d95476f2a0e999856f2dffbcd18116190e6aed08",
+      "date": "2024-11-11T07:48:52+07:00",
+      "author": "Diep Nguyen Ngoc",
+      "email": "104879500+nashtech-diepnguyenngoc1@users.noreply.github.com",
+      "message": "#1135 - Revise helm charts and update k8s deployment (#1266)\n\n"
+    },
+    {
+      "sha": "8a93fb3a6f5d8cb56b189a0b683b9fbf478d2c12",
+      "date": "2024-11-08T13:22:52+07:00",
+      "author": "toannguyenk",
+      "email": "111260780+toannguyenk@users.noreply.github.com",
+      "message": "disable warning react-hooks/exhaustive-deps (#1265)\n\n"
+    },
+    {
+      "sha": "db997a94494f3fee419193027a3fccb547eea088",
+      "date": "2024-11-06T09:51:53+07:00",
+      "author": "chinhduongthi",
+      "email": "Chinh.DuongThi@nashtechglobal.com",
+      "message": "Integration test for recommendation. (#1257)\n\n* #1199 - IT for recommendation service\n\n- add integration test\n\n---------\n\nCo-authored-by: Chinh Duong <chinh.duongthi@harveynash.vn>"
+    },
+    {
+      "sha": "7bcc8a610f394962ec2f47021773d94fc95cb27e",
+      "date": "2024-11-05T11:39:36+07:00",
+      "author": "atuan21",
+      "email": "79851373+HnKnA@users.noreply.github.com",
+      "message": "Catch average star error in product detail page (#1253)\n\n"
+    },
+    {
+      "sha": "af2c9421030761ec4eccb0994a6c576592be113b",
+      "date": "2024-11-04T15:45:43+07:00",
+      "author": "Diep Nguyen Ngoc",
+      "email": "104879500+nashtech-diepnguyenngoc1@users.noreply.github.com",
+      "message": "#1135 - Revise helm charts and update k8s deployment (#1256)\n\n"
+    },
+    {
+      "sha": "1e78a141f1f09731556fae137f3c76b34ae9fa69",
+      "date": "2024-11-04T15:43:52+07:00",
+      "author": "Thien Nguyen Le Quynh",
+      "email": "nlqthien@gmail.com",
+      "message": "fix previous commit had re-added payment-paypal service (#1258)\n\n"
+    },
+    {
+      "sha": "59461da70c7901f496b5713be09e605024c24e67",
+      "date": "2024-11-01T15:53:35+07:00",
+      "author": "nashtech-tuannguyenhuu1",
+      "email": "105196741+nashtech-tuannguyenhuu1@users.noreply.github.com",
+      "message": "#1249: Refactor entity relationship 1-n (#1255)\n\nCo-authored-by: tuannguyenh1 <tuannguyenh1@nashtechglobal.com>"
+    },
+    {
+      "sha": "c8b3afc33a335af1ac3cc1640be60888c34e2fce",
+      "date": "2024-11-01T11:22:43+07:00",
+      "author": "LoanNguyenT5",
+      "email": "104417443+LoanNguyenT5@users.noreply.github.com",
+      "message": "#1174: Apply promotion code when checkout (#1247)\n\n* #1174: Apply promotion code when checkout, update table count usage after apply code\n\n* #1174: Fix build\n\n* #1174: Fix build\n\n* #1174: Fix IT test\n\n* #1174: Fix Checkstyle\n\n* #1174: Fix Checkstyle 2\n\n* #1174: Fix Checkstyle 3\n\n* #1174: Fix checkstyle\n\n---------\n\nCo-authored-by: loannguyent5 <loannguyent5@nashtechglobal.com>"
+    },
+    {
+      "sha": "9e9e80f9709b4192dd0ec71053c08695c072f678",
+      "date": "2024-11-01T10:01:27+07:00",
+      "author": "duylv",
+      "email": "47024529+duylv27@users.noreply.github.com",
+      "message": "#1199 - Add UT for recommendation service (#1207)\n\n* #1199 - add UT\n\n* #1199 - sonar fix\n\n---------\n\nCo-authored-by: Duy Le Van <duy.levan@nashtechglobal.com>"
+    },
+    {
+      "sha": "fd49ac94e73b7959695f2934c5ab1b7b166726f7",
+      "date": "2024-10-31T17:26:50+07:00",
+      "author": "atuan21",
+      "email": "79851373+HnKnA@users.noreply.github.com",
+      "message": "Add validate vs dirty check to price field (#1250)\n\n"
+    },
+    {
+      "sha": "f3de5650d14046df9efa9b3f61c1e774f785b195",
+      "date": "2024-10-31T15:14:59+07:00",
+      "author": "khanhtrand",
+      "email": "khanhtrand141@gmail.com",
+      "message": "Feature/1003 payment provider (#1243)\n\n* [Payment] Embedded Payment-Paypal project into Payment project like a dependency #1003\n\n* [Payment] Embedded Payment-Paypal project into Payment project like a dependency #1003\n\n* [Payment] Embedded Payment-Paypal project into Payment project like a dependency #1003\n\n* [Payment] Embedded Payment-Paypal project into Payment project like a dependency #1003\n\n* [Payment] Embedded Payment-Paypal project into Payment project like a dependency #1003\n\n* [Payment] Embedded Payment-Paypal project into Payment project like a dependency #1003\n\n* [Payment] Embedded Payment-Paypal project into Payment project like a dependency #1003\n\n* [Payment] Embedded Payment-Paypal project into Payment project like a dependency #1003\n\n---------\n\nCo-authored-by: khanhtranduy <130121475+khanhtranduy@users.noreply.github.com>"
+    },
+    {
+      "sha": "ddef30e7a77ce35761974989781ebc89bb856b8e",
+      "date": "2024-10-31T09:48:31+07:00",
+      "author": "toannguyenk",
+      "email": "111260780+toannguyenk@users.noreply.github.com",
+      "message": "[BackOffice][Add/Edit product] Should validate length > width (#1245)\n\n"
+    },
+    {
+      "sha": "0a49d700b9f243e3ffd5b1a5d15599d81531e647",
+      "date": "2024-10-30T11:21:33+07:00",
+      "author": "nguyenvanhadncntt",
+      "email": "35553635+nguyenvanhadncntt@users.noreply.github.com",
+      "message": "#1206 product: Allow admin to add multiple values for option (#1244)\n\n"
+    }
+  ],
+  "commit_sha": "179e813568c345bad3fce985088b5535e57481aa",
+  "extracted_at": "2026-10-05T17:52:42.268332+00:00"
+}

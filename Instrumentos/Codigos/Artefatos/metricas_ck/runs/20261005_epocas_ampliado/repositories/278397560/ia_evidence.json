@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "02594cb3430f1a354e3810051e94e0ec69bc109a",
+      "date": "2026-09-24T17:47:11-03:00",
+      "author": "Gabriel Roldan",
+      "email": "gabriel.roldan@camptocamp.com",
+      "message": "fix(gateway) SCG MVC breaks on non standard content-type from GML responses\n\nSpring Cloud Gateway Server MVC parses the Content-Type of responses and rejects\nthe GML 2 and GML 3.1 media types required by the OGC specifications, such as\n\"text/xml; subtype=gml/3.1.1\" and \"application/vnd.ogc.gml/3.1.1\".\n\nSince 3.0.0 every WFS 1.x GML response, WMS GML GetFeatureInfo and WPS raw feature\ncollection answered with HTTP 500 through the gateway (#1002).\n\nThe gateway now relays a response with an unparsable Content-Type unchanged,\nwith the header forwarded verbatim, while parseable responses keep the default\nbehavior.\n\non-behalf-of: @camptocamp <info@camptocamp.com>\n"
+    },
+    {
+      "sha": "c1820fd4b02ebba8f5a61f6bd928272332cc81c7",
+      "date": "2026-09-25T14:54:36-03:00",
+      "author": "Gabriel Roldan",
+      "email": "gabriel.roldan@camptocamp.com",
+      "message": "Update acceptance tests to python-geoservercloud:0.8.14\n\n- fix: force the psycopg2 driver in the acceptance tests database URL, which defaults to psycopg now\n"
+    },
+    {
+      "sha": "e57eb81391106f2d929b8fc15570e443304fdaea",
+      "date": "2026-09-23T19:34:29-03:00",
+      "author": "Gabriel Roldan",
+      "email": "gabriel.roldan@camptocamp.com",
+      "message": "Update acceptance tests to python-geoservercloud:0.8.13\n\n- Report missing GWC tile layers and gridsets as not found when GeoServer answers 500\n- Replace cascaded WMS and WMTS layer update method of DELETE + POST to single PUT\n"
+    },
+    {
+      "sha": "96554cebd6c847aa5ded5ea164127c234096bb99",
+      "date": "2026-09-23T11:18:43-03:00",
+      "author": "Gabriel Roldan",
+      "email": "gabriel.roldan@camptocamp.com",
+      "message": "test: Catch tile layer removals that leave the stored configuration behind\n\nThe tile layer lifecycle assertions looked a tile layer up by name before\nremoving its layer. A lookup by name resolves the layer published by the tile\nlayer and keeps that result, which leaves the tile layer resolvable even once\nits layer is gone. The assertions about the removal passed against a build that\nleft the stored configuration behind.\n\nCheck the tile layer storage after removing a layer with no lookup beforehand,\nand cover the removal after a lookup as well.\n\non-behalf-of: @camptocamp <info@camptocamp.com>\n"
+    },
+    {
+      "sha": "4be0d84cc301f0845879f42bb7a3a891e157ac36",
+      "date": "2026-09-18T15:01:30-03:00",
+      "author": "Gabriel Roldan",
+      "email": "groldan@multivers.io",
+      "message": "Upgrade cloud-dependencies-bom to 1.1.0\n\nUpgrades cloud storage SDK dependencies:\n\n- AWS SDK 2.41.32 -> 2.54.16\n- Azure SDK BOM 1.3.3 -> 1.3.8 (azure-storage-blob 12.32.0 -> 12.35.0)\n- google-cloud-storage 2.67.0 -> 2.73.0\n\nSee\n- https://github.com/tileverse-io/cloud-dependencies-bom/pull/10\n"
+    },
+    {
+      "sha": "958dabf89c71cfbb44364a81ccdf88e27bafdd7a",
+      "date": "2026-09-16T00:04:53-03:00",
+      "author": "Gabriel Roldan",
+      "email": "gabriel.roldan@camptocamp.com",
+      "message": "Stop layer deletions from leaving their tile layers behind\n\nForce deleting a layer to delete its tile layer, drop its cached tiles,\nand evict it from the other services.\n\nfd35e636c, from #914 and its backports introduced a bug where deleting a layer\nleft its tile layer configuration behind on the data-directory backend,\ntied to the id of a layer that no longer exists and still holding its name.\nA client recreating layers by DELETE followed by POST accumulated one orphan per\nround, each contending for the name with the tile layer of the recreated layer.\n\non-behalf-of: @camptocamp <info@camptocamp.com>\n"
+    },
+    {
+      "sha": "84436816637ce25e315375218075f3c7861efaf4",
+      "date": "2026-09-16T01:22:34-03:00",
+      "author": "Gabriel Roldan",
+      "email": "gabriel.roldan@camptocamp.com",
+      "message": "Stop the Spring cache adapter from substituting a different cache\n\nMake SpringCaffeineCacheManagerAdapter preserve cache instances created\nby builders.\n\nSpring receives that native cache only for the actuator endpoints, and a\nname already registered there no longer displaces the builder's weigher,\nquota and expiry.\n\non-behalf-of: @camptocamp <info@camptocamp.com>\n"
+    },
+    {
+      "sha": "cafc989ee60e4505bdb6867b45b3c8c11309cc38",
+      "date": "2026-09-10T18:52:20-03:00",
+      "author": "Gabriel Roldan",
+      "email": "groldan@multivers.io",
+      "message": "Fix the SonarCloud issues reported on new code\n"
+    },
+    {
+      "sha": "048faf82e7c7afd01d682eb03a28539b47d7b090",
+      "date": "2026-09-10T18:32:52-03:00",
+      "author": "Gabriel Roldan",
+      "email": "groldan@multivers.io",
+      "message": "Merge pull request #948 from jurgispods/fix/catalog-cache-recursive-update\n\nPrevent \"IllegalStateException: Recursive update\" errors in pgconfig cache"
+    },
+    {
+      "sha": "7942d9e65663900960afe27bca78b01b0a1be896",
+      "date": "2026-09-10T16:28:06-03:00",
+      "author": "Gabriel Roldan",
+      "email": "groldan@multivers.io",
+      "message": "fix: Gateway double-encodes non-ASCII characters in browser form posts\n\nDeclare UTF-8 as the request encoding of form posts that do not specify a charset,\nright before Spring Cloud Gateway's FormFilter rebuilds their body.\n\nFormFilter parses the body through Tomcat, which falls back to ISO-8859-1 without a charset,\nand re-encodes it as UTF-8, mangling non-ASCII characters on the way to the backend services.\n\nBrowser form submissions never declare a charset, while Wicket Ajax requests do, hence Save\ncorrupted a title that Apply kept intact.\n\nFixes #981\n\non-behalf-of: @multiversio <info@multivers.io>\n"
+    },
+    {
+      "sha": "7bd01dc0db232c157350b2dd9de378e20d73d564",
+      "date": "2026-09-10T16:55:44-03:00",
+      "author": "Gabriel Roldan",
+      "email": "groldan@multivers.io",
+      "message": "Skip caching a value loaded before a concurrent eviction of its key\n\nKeep an eviction counter that get(), getByName() and the default lookups read before loading,\nand only cache the result when no eviction happened in between.\nThe value is still returned, and the next request loads it again.\n\ncache.get(key, loader) did more than avoid recursion: an eviction for a key being\nloaded had to wait, and then removed the freshly loaded entry.\n\nRemote events rely on that. Another pod changes an object, the event evicts it here,\nand the next request reads the new version.\n\nWith load-then-put, an eviction arriving mid-load finds nothing to remove, and the\nold value is cached afterwards until the object changes again, leaving the pod\nserving the stale version.\n\non-behalf-of: @multiversio <info@multivers.io>\n"
+    },
+    {
+      "sha": "43806f4b9befef7729d371e817732a1b58219911",
+      "date": "2026-08-31T17:03:10+02:00",
+      "author": "Jurgis Pods",
+      "email": "229516936+pederpansen@users.noreply.github.com",
+      "message": "fix: Prevent \"IllegalStateException: Recursive update\" errors in pgconfig cache\n\nLoading a nested LayerGroupInfo re-enters CachingCatalogFacadeContainmentSupport.get(),\nwhich Cache.get(Object, Callable) forbids: the backing ConcurrentHashMap throws\n'IllegalStateException: Recursive update' when the nested key falls in the bin the outer load\nreserved, failing cascade layer deletes and layer group queries.\n\nThis is fixed if we run the loader outside the cache's compute function, as getByName() already does.\n"
+    },
+    {
+      "sha": "3ffeaec9bc41a2017a1518987c97aabcd71e6590",
+      "date": "2026-09-10T12:18:06-03:00",
+      "author": "Gabriel Roldan",
+      "email": "groldan@multivers.io",
+      "message": "fix: Gateway returns 500 when query values contain a bare equals sign\n\nBuild the stripped URI in StripBasePath from the raw request components\ninstead of delegating to Spring Cloud Gateway's stripPrefix.\n\nThe upstream version rebuilds the URI with UriComponentsBuilder.build(true),\nits validation rejects a bare '=' inside a query value, as in `CQL_FILTER=a=1`\nor `viewparams=a:b=c`, and the whole request fails with a 500 that the service\nitself would have accepted. Keep recording the original URL though, the\nX-Forwarded-Prefix header depends on it.\n\nFixes #693\n\non-behalf-of: @multiversio <info@multivers.io>\n"
+    },
+    {
+      "sha": "3eca6e69e7fa135dffc273a83bc7d44ebaafd688",
+      "date": "2026-08-31T17:04:03+02:00",
+      "author": "Jurgis Pods",
+      "email": "229516936+pederpansen@users.noreply.github.com",
+      "message": "fix: Preserve the workspace of a style referenced across workspaces in pgconfig\n\nCatalogInfoRowMapper.loadStyle() adopted the row's workspace column for the style it\ndecoded. That column holds the queried object's workspace, so a layer referencing a style\nfrom another workspace came back with the style renamed to <layerWorkspace>:<styleName>.\n"
+    },
+    {
+      "sha": "70a4ddbfabf78d3dad430517971abb1a66828cf6",
+      "date": "2026-09-10T11:01:41-03:00",
+      "author": "Gabriel Roldan",
+      "email": "groldan@multivers.io",
+      "message": "fix: Bus events dropped for layer group changes with default styles\n\nEncode a resolving proxy without reference as null, like done by the creation event,\nand cover the patch round trip.\n\nXStream builds a ResolvingProxy with an empty reference for an empty <style/> element as\nthe placeholder for a layer group's default style, and the modification patch is built\nbefore the catalog resolves it to null.\n\nThe reference mapper accepted the empty id, the bus mapper's non-empty inclusion stripped\nit from the JSON, and the receiving pods could not construct a reference without id\nand dropped the whole event, leaving their caches, GWC and datadir replicas stale.\n\nFixes #986\n\non-behalf-of: @multiversio <info@multivers.io>\n"
+    },
+    {
+      "sha": "4d32fe084b8fcc199dc119b57c149673e3733f55",
+      "date": "2026-09-10T10:02:13-03:00",
+      "author": "Gabriel Roldan",
+      "email": "groldan@multivers.io",
+      "message": "fix: Default style change ignored by pods on warm catalog cache\n\nMake the cascade match the modified layer itself, and cover the id-and-name\neviction path and the remote event in the cache tests.\n\nCatalog.getLayerByName(prefixedName) resolves the resource and then\ncalls getLayers(resource), and the caching facade keeps that list under\na per-resource key. The eviction caused by a remote CatalogInfoModified\nevent only cascades to cached objects that can reference the modified layer,\nand the predicate admitted layer groups alone. A pod that had already\nserved a layer kept rendering it with the previous default style, unless\nan unrelated change evicted the list.\n\nFixes #781\n\non-behalf-of: @multiversio <info@multivers.io>\n"
+    },
+    {
+      "sha": "aed28b4d8740a02fdc1d6cc09664af0b14e3cf62",
+      "date": "2026-09-09T23:28:23-03:00",
+      "author": "Gabriel Roldan",
+      "email": "groldan@multivers.io",
+      "message": "Add GeoParquet and Arrow IPC WFS output formats\n\nAuto-configure the parquetry plugin's geoparquet and arrow-ipc GetFeature\noutput formats in the WFS and WebUI services, each with its own switch,\nand group the extension's properties under geoserver.extension.tileverse.parquetry\nwith an umbrella switch for the whole plugin.\n\nDocumented both formats in the user guide.\n\non-behalf-of: @multiversio <info@multivers.io>\n"
+    },
+    {
+      "sha": "cc3f37d51a53c6e3c1fe166c0ff4df80e9bf3c0f",
+      "date": "2026-09-09T23:51:03-03:00",
+      "author": "Gabriel Roldan",
+      "email": "groldan@multivers.io",
+      "message": "fix: NPE posting a layer group without <style> elements\n\nResolve the collections first, assign default styles to layer groups\nadded without styles, otherwise it reaches the catalog with a null\nstyles list since XStream bypasses field initializers.\n\non-behalf-of: @multiversio <info@multivers.io>\n"
+    },
+    {
+      "sha": "cef0e7b7d14df5f04db3c20501eb118f12df06d9",
+      "date": "2026-09-08T23:57:49-03:00",
+      "author": "Gabriel Roldan",
+      "email": "groldan@multivers.io",
+      "message": "fix: User creation via WebUI not propagated to REST API\n\nBroadcast user, group and role changes over the event bus.\n\nThe security manager only published SecurityConfigChanged when a security\nservice configuration was saved, saving a user group or role store go\nthrough a different path.\n\nAdd the UsersAndGroupsChanged and RolesChanged events, and decorate the\nuser group and role services loaded through the security manager with\nevent firing and handling stores. On the receiving side reload only the named\nservice instead of the whole security configuration.\n\nThe new events extend GeoServerEvent directly: a user or role change\nalters nothing described by a capabilities document, and must neither\nbump the update sequence nor evict the configuration caches.\n\nFixes #702\n\non-behalf-of: @multiversio <info@multivers.io>\n"
+    },
+    {
+      "sha": "6c07d2b91c549b8ae33a3d41a6fbeb2012dbe5e2",
+      "date": "2026-09-09T20:29:38-03:00",
+      "author": "Gabriel Roldan",
+      "email": "groldan@multivers.io",
+      "message": "deps: update tileverse dependencies to current snapshot versions\n\ncloud-dependencies-bom.version -> 1.0-SNAPSHOT\ntileverse.version -> 2.1-SNAPSHOT\n"
+    },
+    {
+      "sha": "70cf08256322c8f5e2ad4d870335dbda3aa5d3dd",
+      "date": "2026-09-07T17:49:36-03:00",
+      "author": "Gabriel Roldan",
+      "email": "groldan@multivers.io",
+      "message": "fix: Serve the access denied page from the classpath\n\nGeoServer's filePublisher needs the page as a real file and answers a 500\nwhen it sits inside a jar. Make gs-cloud-main ship the single copy and a\nhandler serving it from the classpath, and drop the seven per-service\ncopies. Register the page through GeoServerExtensionsHelper for tests on\nthe mock servlet context, to keep the filter from logging that it cannot\nfind it.\n\non-behalf-of: @multiversio <info@multivers.io>\n"
+    },
+    {
+      "sha": "758b6090496ce072018963ef6674c4315b7c5f9d",
+      "date": "2026-09-07T10:22:14-03:00",
+      "author": "Gabriel Roldan",
+      "email": "groldan@multivers.io",
+      "message": "Pin flatbuffers-java:25.2.10 for dependency convergence\n\ngt-flatgeobuf -> org.wololo:flatgeobuf:3.28.2 -> flatbuffers-java:24.12.23\ntileverse-geoserver-parquetry -> parquetry-arrow -> org.apache.arrow:arrow-format:19.0.0 -> flatbuffers-java:25.2.10\n"
+    },
+    {
+      "sha": "4c48ad223ee076bc9218bdb0567110b07b777913",
+      "date": "2026-09-02T22:20:49-03:00",
+      "author": "Gabriel Roldan",
+      "email": "groldan@multivers.io",
+      "message": "Register XStream persister initializers in every service\n\nThe restconfig service lacked XStreamPersister initializers that handle\ncomplext metadatamap values, because they were only reachable through\nservice-conditionals on the services that used them.\n\nFor example:\n- a GET plus PUT round trip on /rest/services/wfs/settings\nreplaced the OGC API Features conformance object with a string and broke\nthe WFS service with a ClassCastException.\n- Cascaded stored query configurations and OGC API link were corrupted same way\n- TheINSPIRE initializer was not registered at all.\n\nUse an auto-configuration conditional on class only for the initializers,\ncontributed by the owning modules and excluded from the transpiled\nservice configuration.\n\nAlso adds the missing propertySelection field to the Jackson conformances\nmodule, which silently dropped it on the pgconfig backend.\n\nFixes #872\n\non-behalf-of: @multiversio <info@multivers.io>\n"
+    },
+    {
+      "sha": "f3612838049bce7546f6d99d84960739995413e4",
+      "date": "2026-09-02T15:04:59-03:00",
+      "author": "Gabriel Roldan",
+      "email": "groldan@multivers.io",
+      "message": "Declare jakarta.servlet-api once in the root pom\n\nUpstream moved jakarta.servlet-api to provided scope.\nThe 43 resulting declarations had drifted apart: 28 provided, 14 compile and one test.\n\nReplace them with a single provided declaration inherited from the root pom,\nand exlcuded from the applications classpaths through\nspring-boot-maven-plugin:repackage\n\non-behalf-of: @multiversio <info@multivers.io>\n"
+    },
+    {
+      "sha": "22430f1e62cb55228eb5b0078d743cc89dce3af8",
+      "date": "2026-09-02T13:30:23-03:00",
+      "author": "Gabriel Roldan",
+      "email": "groldan@multivers.io",
+      "message": "Upgrade to latest GeoServer 3.1.x\n\nUpstream moved jakarta.servlet-api to provided scopei and broke\ngs-spring-configuration: annotationProcessorPaths resolves its own\ndependency tree, where provided scope is not transitive, leaving the\ntranspiler without the servlet API it needs to reflect on constructor\nsignatures. Declare it explicitly as a processor path.\n\nAlso stop the transpiler from initializing the classes it loads. It only\nreads signatures, assignability and identity, none of which need a static\ninitializer to run; initializing them executes application code at\nannotation-processing time, which reaches for runtime services the\nprocessor classpath does not provide.\n\non-behalf-of: @multiversio <info@multivers.io>\n"
+    },
+    {
+      "sha": "8eeed6512a0d89fe5367e4f1e38ee7149e701ae8",
+      "date": "2026-09-01T21:39:35-03:00",
+      "author": "Gabriel Roldan",
+      "email": "gabriel.roldan@camptocamp.com",
+      "message": "Upgrade GeoServer ACL 3.0.3\n\nUpgraded to Jackson 3.2.2, springdoc-openapi to 3.1.0\n"
+    },
+    {
+      "sha": "16a7aab3f4a6de2a29b7ccab3663cac060579e3c",
+      "date": "2026-09-01T22:06:05-03:00",
+      "author": "Gabriel Roldan",
+      "email": "groldan@multivers.io",
+      "message": "Merge pull request #957 from groldan/chore/pr-template\n\nAdd a pull request template adapted from upstream GeoServer"
+    },
+    {
+      "sha": "7d0dcd1ef109d9fb68840dd0072a6b5f88972ead",
+      "date": "2026-09-01T22:01:48-03:00",
+      "author": "Gabriel Roldan",
+      "email": "groldan@multivers.io",
+      "message": "Add a pull request template adapted from upstream GeoServer\n\nRetargets the checklist at this repository: links to its CONTRIBUTING.md\nand docs/src, GitHub issues in place of Jira, and no [GEOS-XYZWV] commit\ntitle rule. The REST API docs item does not apply here and is dropped.\n\non-behalf-of: @multiversio <info@multivers.io>\n"
+    },
+    {
+      "sha": "b7aab1c99d332392200ae50e5c80a8c63296cb23",
+      "date": "2026-09-01T10:24:05-03:00",
+      "author": "Gabriel Roldan",
+      "email": "gabriel.roldan@camptocamp.com",
+      "message": "deps: upgrade com.rabbitmq:amqp-client:5.30.0 -> 5.35.0\n\npinned ahead of the 5.30.0 managed by spring-boot-dependencies 4.1.1.\nRemove once the managed version catches up.\n\non-behalf-of: @camptocamp <info@camptocamp.com>\n"
+    },
+    {
+      "sha": "529cf8847d173356d1a40d16cd556507e870ffb1",
+      "date": "2026-08-31T11:45:08-03:00",
+      "author": "Gabriel Roldan",
+      "email": "gabriel.roldan@camptocamp.com",
+      "message": "Upgrade to Spring Boot 4.1.1 and Spring Cloud 2025.1.3\n\nBoot 4.1.1 manages the same Spring Framework 7.0.9, Security 7.1.1 and\nIntegration 7.1.1 that upstream GeoServer builds against, and moves\nseveral transitive dependencies forward.\n\nIts spring-amqp is 4.1.1, ahead of the 4.1.0 pinned here to satisfy\nspring-integration, which lets that BOM import go. Its BOM also manages\nflyway-core and flyway-database-postgresql, the two artifacts the\npgconfig backend uses, at 12.4.0: one less version to track here.\n\non-behalf-of: @camptocamp <info@camptocamp.com>\n"
+    }
+  ],
+  "commit_sha": "02594cb3430f1a354e3810051e94e0ec69bc109a",
+  "extracted_at": "2026-10-05T18:02:28.552696+00:00"
+}

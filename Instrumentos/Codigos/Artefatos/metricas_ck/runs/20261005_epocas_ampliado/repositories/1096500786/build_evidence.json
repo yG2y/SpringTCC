@@ -1,0 +1,48 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "4.1.1",
+  "spring_boot_major": "4",
+  "java_versions_declared": "21;25",
+  "build_evidence": [
+    {
+      "file": "examples/infobip-sms-mock-mcp/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "examples/open-meteo-mcp/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "infobip-openapi-mcp-core/pom.xml",
+      "artifact": "spring-boot"
+    },
+    {
+      "file": "infobip-openapi-mcp-core/pom.xml",
+      "artifact": "spring-boot-starter-logback"
+    },
+    {
+      "file": "infobip-openapi-mcp-core/pom.xml",
+      "artifact": "spring-boot-test"
+    },
+    {
+      "file": "infobip-openapi-mcp-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "infobip-openapi-mcp-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "infobip-openapi-mcp-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "infobip-openapi-mcp-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-restclient"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-dependencies"
+    }
+  ]
+}

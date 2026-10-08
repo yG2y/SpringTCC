@@ -1,0 +1,92 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "2.7.8;2.7.9",
+  "spring_boot_major": "2",
+  "java_versions_declared": "${java.version};1.8;8",
+  "build_evidence": [
+    {
+      "file": "ddd-archetypes/ddd-microservice-archetype/src/main/resources/archetype-resources/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "ddd-archetypes/ddd-microservice/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "ddd-boot/ddd-boot-dependencies/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "ddd-boot/ddd-boot-mybatis/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "ddd-boot/ddd-boot-mybatis/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "ddd-boot/ddd-boot-mybatis/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "ddd-boot/ddd-boot-nacos-config/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "ddd-boot/ddd-boot-nacos-config/pom.xml",
+      "artifact": "spring-boot-starter-logging"
+    },
+    {
+      "file": "ddd-boot/ddd-boot-nacos-config/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "ddd-boot/ddd-boot-nacos-config/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "ddd-boot/ddd-boot-openfeign/pom.xml",
+      "artifact": "spring-boot"
+    },
+    {
+      "file": "ddd-boot/ddd-boot-openfeign/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "ddd-boot/ddd-boot-openfeign/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "ddd-boot/ddd-boot-openfeign/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "ddd-boot/ddd-boot-openfeign/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "ddd-boot/ddd-boot-test/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "ddd-boot/ddd-boot-web/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "ddd-boot/ddd-boot-web/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "ddd-boot/ddd-boot-web/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "ddd-example/ddd-example-user/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "ddd-example/ddd-example-workspace/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

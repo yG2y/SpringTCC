@@ -1,0 +1,40 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "3.5.16",
+  "spring_boot_major": "3",
+  "java_versions_declared": "${java.version};21",
+  "build_evidence": [
+    {
+      "file": "mateclaw-server/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "mateclaw-server/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "mateclaw-server/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "mateclaw-server/pom.xml",
+      "artifact": "spring-boot-starter-websocket"
+    },
+    {
+      "file": "mateclaw-server/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "mateclaw-server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "cac4f3d6f36a7faa76c0cfc350442d2412267b96",
+      "date": "2025-09-25T00:42:22-04:00",
+      "author": "natf17",
+      "email": "natfar.dev@gmail.com",
+      "message": "Removed old files\n"
+    },
+    {
+      "sha": "c9930bc2c6bbb1ec9f2f3096bd23b981b38ace9e",
+      "date": "2025-09-24T22:10:02-04:00",
+      "author": "natf17",
+      "email": "natfar.dev@gmail.com",
+      "message": "Don't forget to implement the webhooks\n"
+    },
+    {
+      "sha": "c1ca494a945d2eed2070e5c71d5fc1f63d7b1716",
+      "date": "2025-09-24T22:06:15-04:00",
+      "author": "natf17",
+      "email": "natfar.dev@gmail.com",
+      "message": "Minor updates to readme\n"
+    },
+    {
+      "sha": "c376e9c4690d9317202eb3222cf05d6337a921c1",
+      "date": "2025-09-23T13:13:12-04:00",
+      "author": "natf17",
+      "email": "natfar.dev@gmail.com",
+      "message": "Correctly validates shop name, the request object has https scheme\n"
+    },
+    {
+      "sha": "b2dc5f9c86e568f7e98082a826e4d4457a5028f3",
+      "date": "2025-09-23T10:36:16-04:00",
+      "author": "natf17",
+      "email": "natfar.dev@gmail.com",
+      "message": "Live tested up to secure cookie check when verifying request with authorization code\n"
+    },
+    {
+      "sha": "0ba8d7921b7a58e8e2f934506bb2ad9365d61759",
+      "date": "2025-09-22T15:15:32-04:00",
+      "author": "natf17",
+      "email": "natfar.dev@gmail.com",
+      "message": "Working redirect\n"
+    },
+    {
+      "sha": "9b4df4cb11cf4259a59724b08fd8b02d867b06cd",
+      "date": "2025-09-22T12:28:50-04:00",
+      "author": "natf17",
+      "email": "natfar.dev@gmail.com",
+      "message": "OAuth flow tested live up to actual redirect for authorization\n"
+    },
+    {
+      "sha": "21885d7ad135c12339d9840f2e8f13f15f16054f",
+      "date": "2025-09-20T09:03:09-04:00",
+      "author": "natf17",
+      "email": "natfar.dev@gmail.com",
+      "message": "Fixed hex encoding issue when calculating the hmac\n"
+    },
+    {
+      "sha": "7de81c762f507677f780511298df9a893fb922a8",
+      "date": "2025-09-19T23:42:01-04:00",
+      "author": "natf17",
+      "email": "natfar.dev@gmail.com",
+      "message": "Logging added to classes involved in receiving the authentication code and processing the token\n"
+    },
+    {
+      "sha": "23ec9c2910b79356ad9d3691eea670c29b8b2afb",
+      "date": "2025-09-19T22:04:04-04:00",
+      "author": "natf17",
+      "email": "natfar.dev@gmail.com",
+      "message": "Logging added to classes involved in steps up to the redirect to the authorization server\n"
+    },
+    {
+      "sha": "0a60eb5e040d76c6b76faee58c9de957b50e97c5",
+      "date": "2025-09-19T18:39:11-04:00",
+      "author": "natf17",
+      "email": "natfar.dev@gmail.com",
+      "message": "First integration test\n"
+    },
+    {
+      "sha": "06bd068116bf3a3e7377464b2a9c3520511ebe0e",
+      "date": "2025-09-19T11:49:42-04:00",
+      "author": "natf17",
+      "email": "natfar.dev@gmail.com",
+      "message": "Fixed AuthenticationManager bug, started adding logging logic\n"
+    },
+    {
+      "sha": "0ef33ea672636070344210f3701f1d978b3981d0",
+      "date": "2025-09-18T02:00:42-04:00",
+      "author": "natf17",
+      "email": "natfar.dev@gmail.com",
+      "message": "Tokens can be saved and retrieved via our custom authorizedClientService\n"
+    },
+    {
+      "sha": "b59596a470595253ac0e3d758325fab2ce9e3a71",
+      "date": "2025-09-17T21:40:41-04:00",
+      "author": "natf17",
+      "email": "natfar.dev@gmail.com",
+      "message": "Removed outdates classes and documentation\n"
+    },
+    {
+      "sha": "9260c2180103d00b56a36a8312bb1f0476bf0ca6",
+      "date": "2025-09-17T17:36:03-04:00",
+      "author": "natf17",
+      "email": "natfar.dev@gmail.com",
+      "message": "Consolidate in ShopifyUtils\n"
+    },
+    {
+      "sha": "745b52f2d1af1d82b58ccebbf198830241f1c2ff",
+      "date": "2025-09-17T15:45:11-04:00",
+      "author": "natf17",
+      "email": "natfar.dev@gmail.com",
+      "message": "Relocated code that directly interacts with shopify params into one place, documentation improvements\n"
+    },
+    {
+      "sha": "e6922afad96042fe859d31d3ade605cd01be96e9",
+      "date": "2025-09-17T14:34:04-04:00",
+      "author": "natf17",
+      "email": "natfar.dev@gmail.com",
+      "message": "Verifying that a request comes from Shopify is treated as authentication\n"
+    },
+    {
+      "sha": "e30370727b553e849ea6c794aa6dc62fc6d46f19",
+      "date": "2025-09-16T21:42:42-04:00",
+      "author": "natf17",
+      "email": "natfar.dev@gmail.com",
+      "message": "Improved project description\n"
+    },
+    {
+      "sha": "1997bb7c3815de3311afba9f2d194be8ca360dfa",
+      "date": "2025-09-16T01:06:17-04:00",
+      "author": "natf17",
+      "email": "natfar.dev@gmail.com",
+      "message": "Configured db for test and dev profiles; spring boot app starts up\n"
+    },
+    {
+      "sha": "28bc112d0d73eba196c6750fcc0cf909a2414e33",
+      "date": "2025-09-13T08:34:16-04:00",
+      "author": "natf17",
+      "email": "natfar.dev@gmail.com",
+      "message": "Forward to landing page\n"
+    },
+    {
+      "sha": "9e24a1d226aca2d69939e392d2fd8b5243623c91",
+      "date": "2025-09-12T17:29:07-04:00",
+      "author": "natf17",
+      "email": "natfar.dev@gmail.com",
+      "message": "Static html landing page\n"
+    },
+    {
+      "sha": "b1c8faa20481500a4262b585976a93ad6f0399f0",
+      "date": "2025-09-12T17:16:16-04:00",
+      "author": "natf17",
+      "email": "natfar.dev@gmail.com",
+      "message": "Redirect to app's ui\n"
+    },
+    {
+      "sha": "118107bbadc31b94413ce955432b2584ccf441af",
+      "date": "2025-09-10T13:07:29-04:00",
+      "author": "natf17",
+      "email": "natfar.dev@gmail.com",
+      "message": "Custom converter corrects the scopes read from the token response\n"
+    },
+    {
+      "sha": "e778d11ab6ffc3f3937e23633371ef7429b7747c",
+      "date": "2025-09-10T12:07:47-04:00",
+      "author": "natf17",
+      "email": "natfar.dev@gmail.com",
+      "message": "Verify scopes, and use custom RestClient to obtain token\n"
+    },
+    {
+      "sha": "79da5f71ad796a69608c1f3fd4a1d79281e83588",
+      "date": "2025-09-09T20:23:26-04:00",
+      "author": "natf17",
+      "email": "natfar.dev@gmail.com",
+      "message": "Validates response from auth server with authorization code\n"
+    },
+    {
+      "sha": "997e333b9d7f3815646704b8c05b25fd56bca609",
+      "date": "2025-09-09T12:01:22-04:00",
+      "author": "natf17",
+      "email": "natfar.dev@gmail.com",
+      "message": "Overview of authentication steps\n"
+    },
+    {
+      "sha": "a006bfde933dea3185944ee214746e0f7805ace9",
+      "date": "2025-09-08T12:52:04-04:00",
+      "author": "natf17",
+      "email": "natfar.dev@gmail.com",
+      "message": "Add the client registration as an attribute when rebuilding OAuth2AuthorizationRequest\n"
+    },
+    {
+      "sha": "f8219024d7cbce05e7043488a066f96b47c809ec",
+      "date": "2025-09-04T18:22:03-04:00",
+      "author": "natf17",
+      "email": "natfar.dev@gmail.com",
+      "message": "OAuth2AuthorizationRequests are saved in a secure cookie\n"
+    },
+    {
+      "sha": "e40172ef91199d34d6895d5b2f5297686d59daf8",
+      "date": "2025-09-03T01:54:55-04:00",
+      "author": "natf17",
+      "email": "natfar.dev@gmail.com",
+      "message": "Correct authorization uri query params are included\n"
+    },
+    {
+      "sha": "481162cf4770ad58b92f5a2f5a855b8d68cb7525",
+      "date": "2025-09-03T01:32:38-04:00",
+      "author": "natf17",
+      "email": "natfar.dev@gmail.com",
+      "message": "Initial implementation of initial oauth redirect behavior\n"
+    }
+  ],
+  "commit_sha": "cac4f3d6f36a7faa76c0cfc350442d2412267b96",
+  "extracted_at": "2026-10-05T18:44:35.243344+00:00"
+}

@@ -1,0 +1,174 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 23,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "7f0ef56b8759f793f6a36aab9dd303acdd20c8ae",
+      "date": "2024-07-02T02:15:23+02:00",
+      "author": "Miloš Vukmanović",
+      "email": "vukmanovic.milos@gmail.com",
+      "message": "remove files\n"
+    },
+    {
+      "sha": "e35f55842ef3e1bac4e21b3b01718e0d08033104",
+      "date": "2024-07-02T02:07:14+02:00",
+      "author": "Miloš Vukmanović",
+      "email": "vukmanovic.milos@gmail.com",
+      "message": "create readme\n"
+    },
+    {
+      "sha": "0cecfb9d5b04bc5a185e57c456819fcbcc848d2b",
+      "date": "2024-07-02T02:07:01+02:00",
+      "author": "Miloš Vukmanović",
+      "email": "vukmanovic.milos@gmail.com",
+      "message": "change java version\n"
+    },
+    {
+      "sha": "ffd5b18019b84b924ea345bd38d28bb9b6370b09",
+      "date": "2024-06-19T01:46:44+02:00",
+      "author": "Miloš Vukmanović",
+      "email": "vukmanovic.milos@gmail.com",
+      "message": "create RAG\n"
+    },
+    {
+      "sha": "c9e2691590705063f112633a62e5ac337008fbc6",
+      "date": "2024-06-17T23:37:32+02:00",
+      "author": "Miloš Vukmanović",
+      "email": "vukmanovic.milos@gmail.com",
+      "message": "refactor - rename ms openAI to open-ai\n"
+    },
+    {
+      "sha": "3be747b1970770f32f13fb004833299487682196",
+      "date": "2024-06-16T02:46:56+02:00",
+      "author": "Miloš Vukmanović",
+      "email": "vukmanovic.milos@gmail.com",
+      "message": "refactor - create new microservice openAI\n"
+    },
+    {
+      "sha": "7114db509ddbe5dc86533c4afcb623fd18c22a95",
+      "date": "2024-06-16T01:25:43+02:00",
+      "author": "Miloš Vukmanović",
+      "email": "vukmanovic.milos@gmail.com",
+      "message": "refactor for new version openAI\n"
+    },
+    {
+      "sha": "fb716de25cccab3ea6b0f806ccf82a198ff9f20c",
+      "date": "2024-06-16T01:23:55+02:00",
+      "author": "Miloš Vukmanović",
+      "email": "vukmanovic.milos@gmail.com",
+      "message": "upgrade spring boot version to 3.3.0 and corresponding dependencies\n"
+    },
+    {
+      "sha": "e1feb6e9cf082101e63763959d424ec122695b7a",
+      "date": "2024-06-16T01:21:20+02:00",
+      "author": "Miloš Vukmanović",
+      "email": "vukmanovic.milos@gmail.com",
+      "message": "add more data via liquibase\n"
+    },
+    {
+      "sha": "d54e9c41ca2502531cbcced0ab8ce83ab2f3577f",
+      "date": "2023-11-26T01:18:24+01:00",
+      "author": "Miloš Vukmanović",
+      "email": "milos.vukmanovic@mi-system.rs",
+      "message": "dockerize microservices\n"
+    },
+    {
+      "sha": "3de567fbc599c0166cda56bd4891792ce1804236",
+      "date": "2023-11-26T01:17:50+01:00",
+      "author": "Miloš Vukmanović",
+      "email": "milos.vukmanovic@mi-system.rs",
+      "message": "add actuator\n"
+    },
+    {
+      "sha": "3a1e9e705dbdbc74cf29d9f9e491356921630a1c",
+      "date": "2023-11-23T23:49:42+01:00",
+      "author": "Miloš Vukmanović",
+      "email": "milos.vukmanovic@mi-system.rs",
+      "message": "optimize imports\n"
+    },
+    {
+      "sha": "3c09214a08e9004df4bb63895435b4104364e5e2",
+      "date": "2023-11-23T23:48:50+01:00",
+      "author": "Miloš Vukmanović",
+      "email": "milos.vukmanovic@mi-system.rs",
+      "message": "setup kafka consumer and modify other kafka options\n"
+    },
+    {
+      "sha": "d78e9f8e1f9479fca356a20abc33bf58269eb52b",
+      "date": "2023-11-23T00:39:03+01:00",
+      "author": "Miloš Vukmanović",
+      "email": "milos.vukmanovic@mi-system.rs",
+      "message": "setup kafka producer\n"
+    },
+    {
+      "sha": "b6d79000f18ba0c9a4d8312126416730064f4ef8",
+      "date": "2023-11-22T23:34:06+01:00",
+      "author": "Miloš Vukmanović",
+      "email": "milos.vukmanovic@mi-system.rs",
+      "message": "setup docker kafka and create topic\n"
+    },
+    {
+      "sha": "daa2b122aa46b2bdb747d12e1c9956e1ad51b03f",
+      "date": "2023-11-21T23:14:42+01:00",
+      "author": "Miloš Vukmanović",
+      "email": "milos.vukmanovic@mi-system.rs",
+      "message": "generate report summary with open AI\n"
+    },
+    {
+      "sha": "cabbcb9b9eab91474124cdf10f8e7e2c09bb8f31",
+      "date": "2023-10-26T00:00:22+02:00",
+      "author": "Miloš Vukmanović",
+      "email": "milos.vukmanovic@mi-system.rs",
+      "message": "create config-ms\n"
+    },
+    {
+      "sha": "1257d2dc5490944245ac0f6e10eee623c9670753",
+      "date": "2023-10-25T23:38:33+02:00",
+      "author": "Miloš Vukmanović",
+      "email": "milos.vukmanovic@mi-system.rs",
+      "message": "create api-gateway\n"
+    },
+    {
+      "sha": "b4ead7c722d17d06026442cb28f62861c512885e",
+      "date": "2023-10-24T15:05:32+02:00",
+      "author": "Miloš Vukmanović",
+      "email": "milos.vukmanovic@mi-system.rs",
+      "message": "create report ms, register with eureka and connect with faculty ms\n"
+    },
+    {
+      "sha": "04bf5a948b7429d0a8e51a2db55ab640dd1e21a2",
+      "date": "2023-10-23T23:59:57+02:00",
+      "author": "Miloš Vukmanović",
+      "email": "milos.vukmanovic@mi-system.rs",
+      "message": "create eureka ms and regeister faculty ms to it\n"
+    },
+    {
+      "sha": "4fd8bc024c3cfaf2ffad9d5ecb84a2b7c04e2211",
+      "date": "2023-10-23T23:28:47+02:00",
+      "author": "Miloš Vukmanović",
+      "email": "milos.vukmanovic@mi-system.rs",
+      "message": "create faculty ms logic\n"
+    },
+    {
+      "sha": "0963627046c3f94f4dc56a72692585d6ff0ae727",
+      "date": "2023-10-22T14:59:41+02:00",
+      "author": "Miloš Vukmanović",
+      "email": "milos.vukmanovic@mi-system.rs",
+      "message": "create faculty ms\n"
+    },
+    {
+      "sha": "05d3632e2781097c6426b8ad585233c2cee5db2f",
+      "date": "2023-10-13T00:03:41+02:00",
+      "author": "Miloš Vukmanović",
+      "email": "milos.vukmanovic@mi-system.rs",
+      "message": "init commit\n"
+    }
+  ],
+  "commit_sha": "7f0ef56b8759f793f6a36aab9dd303acdd20c8ae",
+  "extracted_at": "2026-10-05T18:39:21.690888+00:00"
+}

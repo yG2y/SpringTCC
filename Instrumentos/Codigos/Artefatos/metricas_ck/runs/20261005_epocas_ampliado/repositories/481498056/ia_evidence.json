@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "1c4e20cafaf98981285609d2193e7b692d790b6e",
+      "date": "2026-01-09T07:16:29-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Update Simulation section in README\n"
+    },
+    {
+      "sha": "c8aa3201cf4e766114c610dff60aa4c48f0101d5",
+      "date": "2026-01-08T18:57:31-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Project upgrade\n\n- Upgrade to Java 25\n- Upgrade to Spring Boot 4.0.1\n- Upgrade to Spring Cloud 2025.1.0\n"
+    },
+    {
+      "sha": "8706be43fd04f847dd93c481591c2a21967ead4f",
+      "date": "2026-01-08T18:27:42-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Project upgrade\n\n- Upgrade to Spring Boot 3.5.9\n- Upgrade to Spring Cloud 2025.0.1\n- Upgrade to Apache Maven 3.9.12\n- Upgrade to Maven wrapperVersion 3.3.4\n- Upgrade to MySQL Docker image 9.5.0\n- Upgrade to Confluentinc Docker images 7.9.5\n- Upgrade to Kafdrop Docker image 4.2.0\n- Rename init-kafka-topics.sh to create-kafka-topics.sh\n"
+    },
+    {
+      "sha": "235d687df95e76bb6824d3e5ce0d2909c4af4dcc",
+      "date": "2025-06-08T21:37:32+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to Spring Boot 3.5.0 and Spring Cloud 2025.0.0\n"
+    },
+    {
+      "sha": "4fdd8f77bd793065d10e69b693797ac70ec0d70c",
+      "date": "2025-06-08T20:24:18+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade the MySQL Docker image to 9.2.0 and Kafdrop to 4.1.0\n"
+    },
+    {
+      "sha": "09a58556be570ecdf944179f96d17877c4ba1df6",
+      "date": "2025-06-08T20:22:01+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Replace Jib with Paketo Buildpacks\n"
+    },
+    {
+      "sha": "d20638530ae8b7bc6f3b3ff8978b0d1edca547ac",
+      "date": "2025-06-08T19:55:26+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Add .gitattributes file\n"
+    },
+    {
+      "sha": "5be0bf0f05d387c5892fdc0a8b62881d53dfe8b5",
+      "date": "2025-06-08T19:55:07+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Update README file\n"
+    },
+    {
+      "sha": "5f554ebb9f33a90cfde561e5b90485709fe928ad",
+      "date": "2024-12-15T12:02:15-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Uncomment cadvisor in docker-compose.yml\n"
+    },
+    {
+      "sha": "465e495929311b7e215953aefcd8e1e7714d1861",
+      "date": "2024-12-15T11:51:46-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Remove Service to simplify; Refactor packages\n"
+    },
+    {
+      "sha": "86572dedc2584e6ad31be7cbd07e30b345d68413",
+      "date": "2024-12-15T11:41:39-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Remove actuator dependency; Remove public keyword from Beans\n"
+    },
+    {
+      "sha": "d78dbfb1f3936ae3420e546f4dd992fe1b8448cf",
+      "date": "2024-12-15T11:35:34-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Refactor the way docker images are built; remane spring that builds Docker images\n"
+    },
+    {
+      "sha": "80d744e06d55d585f878cf1ac6bf38fed29f6813",
+      "date": "2024-12-15T11:23:23-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- Upgrade to Spring Boot 3.4.0;\n- Upgrade to Spring Cloud 2024.0.0;\n- Upgrade to MySQL Docker image 9.1.0;\n- Upgrade to Confluentinc Docker image 7.8.0;\n- Upgrade to Kafdrop Docker image 4.0.1;\n- Upgrade to Cadvisor Docker image v0.49.2;\n- Upgrade to Jib Maven Plugin 3.4.4\n- Upgrade to apache-maven 3.9.9\n- Refactor pom.xml and docker-compose.yml files.\n"
+    },
+    {
+      "sha": "cd78298bcc20d38e28330e53860fa67d98408e99",
+      "date": "2024-08-17T09:30:10+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Update links in README\n"
+    },
+    {
+      "sha": "f85aac201c82542cc704c32d0a5d2268420d2eac",
+      "date": "2024-08-16T16:24:24+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n- upgrade to Java 21;\n- upgrade to spring-boot 3.3.2;\n- upgrade to spring-cloud 2023.0.3;\n- upgrade to jib 3.4.3;\n- upgrade wrapperVersion to 3.3.2 and apache-maven to 3.9.7;\n- upgrade to mysql docker image 9.0.1;\n- upgrade to confluentinc docker images to 7.6.1\n- upgrade to cadvisor docker image v0.49.1;\n- update README.\n"
+    },
+    {
+      "sha": "f6d16a8f4f5b305adf03eabf6e320ff02e4f34f1",
+      "date": "2024-02-19T11:54:54+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- Upgrade to spring-boot 3.2.2;\n- Upgrade to spring-cloud 2023.0.0;\n- Upgrade to r2dbc-mysql 1.1.1;\n- Upgrade to mysql docker image 8.2.0;\n- Upgrade to confluentinc docker images 7.5.3;\n- Upgrade to kafdrop docker image 4.0.1;\n- Upgrade to cadvisor docker image v0.47.2;\n- Change kafdrop port to 9001.\n"
+    },
+    {
+      "sha": "c982472ac4a685c582968abbb440e8b0096af931",
+      "date": "2024-02-19T11:32:07+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to jib-maven-plugin 3.4.0\n"
+    },
+    {
+      "sha": "8505914037470c1daf8d38e46c3371a1df2f29af",
+      "date": "2024-02-19T11:29:10+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to apache-maven 3.9.5\n"
+    },
+    {
+      "sha": "f9c125749c0517276a889899ca6cc5969c3c8eb6",
+      "date": "2023-07-23T21:30:07+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Migrate some missed parts to Compose V2\n"
+    },
+    {
+      "sha": "24fbb2889824d51eb0cf97679e0b375beab329d8",
+      "date": "2023-07-23T18:33:45+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Remove native-maven-plugin\n"
+    },
+    {
+      "sha": "0814da5efa12f0185554c843ada6593440dd738d",
+      "date": "2023-07-23T16:47:32+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Add Proof-of-Concepts & Articles section\n"
+    },
+    {
+      "sha": "d65b808f6289918d28ef3cc3436b5bbcca68a26c",
+      "date": "2023-07-23T16:46:26+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Replace dev.miku:r2dbc-mysql dependency to io.asyncer:r2dbc-mysql\n"
+    },
+    {
+      "sha": "f16c69fd7ddab417a12d05b11534759f15542dbf",
+      "date": "2023-07-23T16:42:33+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to spring-boot 3.1.2, spring-cloud 2022.0.3 and jib 3.3.2\n"
+    },
+    {
+      "sha": "2fdd32284d8b2e942c00822a94add3a3b9627583",
+      "date": "2023-07-23T16:36:38+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Migrate to Compose V2\n"
+    },
+    {
+      "sha": "47c39c73c656d78c0444986e96955c8542c7e830",
+      "date": "2023-07-23T16:35:41+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to MySQL docker image 8.0.33\n"
+    },
+    {
+      "sha": "d639c5e631d0951838dad68c9f0e7ccf4029bbc3",
+      "date": "2023-07-23T16:34:51+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Update Maven files\n"
+    },
+    {
+      "sha": "ffc4539cfff3e03821d5a965c145a5c4f6c328c5",
+      "date": "2023-05-20T18:00:49-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Create FUNDING.yml\n"
+    },
+    {
+      "sha": "0a68e07e11fd40004a6616d92bb9031ca7e422b3",
+      "date": "2023-03-31T15:01:22+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "project upgrade\n- upgrade to spring-boot 3.0.5;\n- upgrade to spring-cloud 2022.0.2;\n- update README.\n"
+    },
+    {
+      "sha": "40661b2b206932df9597d84850f4c5f267c233d7",
+      "date": "2023-03-16T11:20:46+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "project upgrade\n- upgrade to spring-boot 3.0.4;\n- upgrade to spring-cloud 2022.0.1;\n- upgrade to apache-maven 3.8.7 and maven-wrapper 3.1.1;\n- upgrade to confluentinc docker images 7.3.1;\n- upgrade to mysql docker image 8.0.32;\n- upgrade to cadvisor docker image v0.47.1;\n- rename kafka topics, the ending to singular;\n- remove property spring.cloud.stream.source as it was creating a kafka topics with name customers;\n- add project-diagram in README.\n"
+    },
+    {
+      "sha": "6849993357f7806ec1aafa2ceb5b977de7f0fa70",
+      "date": "2023-01-19T17:19:16-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "add native image building alternative\n"
+    }
+  ],
+  "commit_sha": "1c4e20cafaf98981285609d2193e7b692d790b6e",
+  "extracted_at": "2026-10-05T18:25:30.067907+00:00"
+}

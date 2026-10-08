@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "ad754f162b0140cc1f81bea8c8cc9e8a35ce4001",
+      "date": "2018-04-05T17:20:45+02:00",
+      "author": "Dušan Reljić",
+      "email": "reljicd@gmail.com",
+      "message": "refactored to use Model instead of ModelAndView. formatting\n"
+    },
+    {
+      "sha": "aba3c8dc18b28e9b26deb0385081287e7bc37642",
+      "date": "2018-04-05T17:16:52+02:00",
+      "author": "Dušan Reljić",
+      "email": "reljicd@gmail.com",
+      "message": "reusing posts from pager\n"
+    },
+    {
+      "sha": "29e88802fcde1c3411eb7205e9d34a37c85112a1",
+      "date": "2018-04-04T14:16:27+02:00",
+      "author": "Dušan Reljić",
+      "email": "reljicd@gmail.com",
+      "message": "refactored reused functionality to isPrincipalOwnerOfPost method\n"
+    },
+    {
+      "sha": "5a1dc7e39624280d6336833df10ce38de26c73fd",
+      "date": "2018-04-04T14:15:54+02:00",
+      "author": "Dušan Reljić",
+      "email": "reljicd@gmail.com",
+      "message": "removed redundant this calls\n"
+    },
+    {
+      "sha": "6b1cee0684e97c2dd28773a58f8ed5171838a822",
+      "date": "2018-03-29T12:44:15+02:00",
+      "author": "Dušan Reljić",
+      "email": "reljicd@gmail.com",
+      "message": "removed unused import\n"
+    },
+    {
+      "sha": "50c5366d3e1dca18229cb5381a05748c3e5b478b",
+      "date": "2018-03-29T12:42:28+02:00",
+      "author": "Dušan Reljić",
+      "email": "reljicd@gmail.com",
+      "message": "moved page index calculation to PostServiceImp.java, and removed Optionals from method parameters\n"
+    },
+    {
+      "sha": "e2a1bba67810cf0cb6d646e4db4daef06a3f9f0a",
+      "date": "2018-03-28T11:19:05+02:00",
+      "author": "Dušan Reljić",
+      "email": "reljicd@gmail.com",
+      "message": "refactoring methods and variables names, and some methods signatures\n"
+    },
+    {
+      "sha": "3aa39e63d614e8a87b99f325462a3cd49df6c549",
+      "date": "2018-03-23T17:19:45+01:00",
+      "author": "Dušan Reljić",
+      "email": "reljicd@gmail.com",
+      "message": "fix for HAL Browser\n"
+    },
+    {
+      "sha": "4d7476c28e2ad7d8fa9b0162b8ae61ce38d36804",
+      "date": "2018-03-23T15:49:14+01:00",
+      "author": "Dušan Reljić",
+      "email": "reljicd@gmail.com",
+      "message": "refactoring for Optional, and cleanup\n"
+    },
+    {
+      "sha": "e918857fedddda312d4adf8e4929e228cdf7e5a9",
+      "date": "2018-03-23T15:48:08+01:00",
+      "author": "Dušan Reljić",
+      "email": "reljicd@gmail.com",
+      "message": "deleting unused files\n"
+    },
+    {
+      "sha": "e3ca03a5141bd2c9983fc5a6478db7e95ef2487d",
+      "date": "2018-03-23T15:47:07+01:00",
+      "author": "Dušan Reljić",
+      "email": "reljicd@gmail.com",
+      "message": "added BlogErrorController\n"
+    },
+    {
+      "sha": "0d234f76cadfea666745774c062ae44e5e1e4d1f",
+      "date": "2018-03-23T15:46:47+01:00",
+      "author": "Dušan Reljić",
+      "email": "reljicd@gmail.com",
+      "message": "modified security configuration\n"
+    },
+    {
+      "sha": "135980300e7038e74f319cdf019a92245e61f9ac",
+      "date": "2018-03-23T15:44:00+01:00",
+      "author": "Dušan Reljić",
+      "email": "reljicd@gmail.com",
+      "message": "moved ErrorController to config package, and renamed it\n"
+    },
+    {
+      "sha": "95870c496810b98acc7d89aec6e3307a4f13ea6a",
+      "date": "2018-03-23T14:03:36+01:00",
+      "author": "Dušan Reljić",
+      "email": "reljicd@gmail.com",
+      "message": "refactored annotations to fields\n"
+    },
+    {
+      "sha": "da6344931e07050e836d413feda488a6b6cdb5c5",
+      "date": "2018-03-23T13:41:11+01:00",
+      "author": "Dušan Reljić",
+      "email": "reljicd@gmail.com",
+      "message": "cleanup\n"
+    },
+    {
+      "sha": "33bc84705b9897a7d7ef5e7f0c34ae31412cf18d",
+      "date": "2018-03-23T13:32:42+01:00",
+      "author": "Dušan Reljić",
+      "email": "reljicd@gmail.com",
+      "message": "refactoring to use Optional, and cleanup\n"
+    },
+    {
+      "sha": "591ac2f08320bbef17cab2f35936e649f6f13305",
+      "date": "2018-03-23T13:30:17+01:00",
+      "author": "Dušan Reljić",
+      "email": "reljicd@gmail.com",
+      "message": "moved MyAccessDeniedHandler.java to config package\n"
+    },
+    {
+      "sha": "a6af28c0848fd02dee3e02cf469a0673cae2565e",
+      "date": "2018-03-23T13:21:58+01:00",
+      "author": "Dušan Reljić",
+      "email": "reljicd@gmail.com",
+      "message": "cleanup\n"
+    },
+    {
+      "sha": "69670eb5b0a9dd0a9e44d53ba8cc859126be8786",
+      "date": "2018-03-22T17:09:53+01:00",
+      "author": "Dušan Reljić",
+      "email": "reljicd@gmail.com",
+      "message": "refactoring for constructor DI\n"
+    },
+    {
+      "sha": "a509138c8be76159d8c5d3d7cd19814299271bd9",
+      "date": "2018-03-22T14:51:04+01:00",
+      "author": "Dušan Reljić",
+      "email": "reljicd@gmail.com",
+      "message": "additional style fixes\n"
+    },
+    {
+      "sha": "6db14610ed4edc6332ad7bb23e897f8c6c46418c",
+      "date": "2018-03-22T14:39:57+01:00",
+      "author": "Dušan Reljić",
+      "email": "reljicd@gmail.com",
+      "message": "added screenshots\n"
+    },
+    {
+      "sha": "eaa3889f211397e549c4c3aee6f4febb05fd56de",
+      "date": "2018-03-22T14:35:19+01:00",
+      "author": "Dušan Reljić",
+      "email": "reljicd@gmail.com",
+      "message": "cleanup\n"
+    },
+    {
+      "sha": "116a116aa5b256a437833cfb11461bd739a92cb5",
+      "date": "2018-03-22T14:30:30+01:00",
+      "author": "Dušan Reljić",
+      "email": "reljicd@gmail.com",
+      "message": "various style fixes\n"
+    },
+    {
+      "sha": "edb7fb1eba73b60b01c51f8306a1b659696100a9",
+      "date": "2018-03-22T13:53:22+01:00",
+      "author": "Dušan Reljić",
+      "email": "reljicd@gmail.com",
+      "message": "pagination fix\n"
+    },
+    {
+      "sha": "600ac125de0f4fb1f67eb4212b21de6a59b9d8f0",
+      "date": "2018-03-21T17:04:38+01:00",
+      "author": "Dušan Reljić",
+      "email": "reljicd@gmail.com",
+      "message": "fixed thymeleaf template resolution\n"
+    },
+    {
+      "sha": "e76292a3cdf80d27a87228afb979280777c6122b",
+      "date": "2018-03-21T17:03:19+01:00",
+      "author": "Dušan Reljić",
+      "email": "reljicd@gmail.com",
+      "message": "updated README.md\n"
+    },
+    {
+      "sha": "31e6630fa66e0e71a3325601c5225cad5c6c512c",
+      "date": "2018-03-21T17:03:03+01:00",
+      "author": "Dušan Reljić",
+      "email": "reljicd@gmail.com",
+      "message": "added run_docker.sh util script\n"
+    },
+    {
+      "sha": "c6ebd1199d26f58d92a5b5d906928f3e76fae9a1",
+      "date": "2018-03-21T17:02:49+01:00",
+      "author": "Dušan Reljić",
+      "email": "reljicd@gmail.com",
+      "message": "added Dockerfile\n"
+    },
+    {
+      "sha": "d1654f2eb5e8271234a245b33b7d84c78862aea0",
+      "date": "2018-03-21T17:02:41+01:00",
+      "author": "Dušan Reljić",
+      "email": "reljicd@gmail.com",
+      "message": "moved mvnw scripts to scripts folder\n"
+    },
+    {
+      "sha": "567281c05fd2ee2332cbe6da23cb6129b452ac56",
+      "date": "2018-03-21T16:57:48+01:00",
+      "author": "Dušan Reljić",
+      "email": "reljicd@gmail.com",
+      "message": "centering fixes\n"
+    }
+  ],
+  "commit_sha": "ad754f162b0140cc1f81bea8c8cc9e8a35ce4001",
+  "extracted_at": "2026-10-05T18:29:58.622050+00:00"
+}

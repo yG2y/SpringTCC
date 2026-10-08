@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "48354b549702adb12908ae824cb9b84fa06aa850",
+      "date": "2026-09-14T08:31:41+08:00",
+      "author": "Evan",
+      "email": "suzukaze.haduki@gmail.com",
+      "message": "Merge pull request #47 from houko/fix/code-review-bugs\n\nfix: 修复全仓库代码审查发现的 bug"
+    },
+    {
+      "sha": "b4a670e7120f1c7cda11f45de89534dd4badf46a",
+      "date": "2026-09-14T09:13:47+09:00",
+      "author": "Evan Hu",
+      "email": "e-hu@unext.jp",
+      "message": "fix(socket): HTML-encode user messages before broadcast to prevent XSS\n"
+    },
+    {
+      "sha": "1251a9c3730e4a37fd388e501852a5a3e6d930ee",
+      "date": "2026-09-14T09:13:47+09:00",
+      "author": "Evan Hu",
+      "email": "e-hu@unext.jp",
+      "message": "fix(crawler): guard against empty selections in onmyouji spider\n"
+    },
+    {
+      "sha": "5f035133467633fd23a2d21a57a94f18ab4bfee9",
+      "date": "2026-09-14T09:13:47+09:00",
+      "author": "Evan Hu",
+      "email": "e-hu@unext.jp",
+      "message": "fix(website): fix register/login flow and drop plaintext password emails\n"
+    },
+    {
+      "sha": "a53a0390465219ac24825259693d00928d77e11f",
+      "date": "2026-09-14T09:13:47+09:00",
+      "author": "Evan Hu",
+      "email": "e-hu@unext.jp",
+      "message": "fix(core): fix multiple bugs in utility classes and add regression tests\n"
+    },
+    {
+      "sha": "8a94ccfd2cdc130f6d7527bd5e65dc06eabcb304",
+      "date": "2026-09-14T01:36:30+08:00",
+      "author": "Evan",
+      "email": "suzukaze.haduki@gmail.com",
+      "message": "Merge pull request #46 from houko/feat/more-examples-2\n\nfeat: add four dependency-based example modules (kafka, mail, elasticsearch, flyway)"
+    },
+    {
+      "sha": "607aa00816aac875010674972b4f2ee31f7090fc",
+      "date": "2026-09-14T01:08:11+09:00",
+      "author": "Evan Hu",
+      "email": "e-hu@unext.jp",
+      "message": "fix: make actuator health check deterministic regardless of disk space\n"
+    },
+    {
+      "sha": "37f566c086a2773d3183b806148902723097c923",
+      "date": "2026-09-14T01:08:11+09:00",
+      "author": "Evan Hu",
+      "email": "e-hu@unext.jp",
+      "message": "feat: add four dependency-based example modules (kafka, mail, elasticsearch, flyway)\n"
+    },
+    {
+      "sha": "5795251540fbb97888932939e125e9a40ffc0111",
+      "date": "2026-09-13T23:33:26+08:00",
+      "author": "Evan",
+      "email": "suzukaze.haduki@gmail.com",
+      "message": "Merge pull request #45 from houko/feat/more-examples-2\n\nfeat: add five more example modules (aop, httpinterface, i18n, ratelimit, graphql)"
+    },
+    {
+      "sha": "0f426e5862df478c73aef11f096e4118da8abe5a",
+      "date": "2026-09-14T00:25:20+09:00",
+      "author": "Evan Hu",
+      "email": "e-hu@unext.jp",
+      "message": "feat: add five more example modules (aop, httpinterface, i18n, ratelimit, graphql)\n\n- aop: @Loggable annotation + @Aspect to log invocation cost/count (note:\n  Spring Boot 4 renamed the starter to spring-boot-starter-aspectj)\n- httpinterface: @HttpExchange + HttpServiceProxyFactory declarative HTTP\n  client, tested with MockRestServiceServer\n- i18n: MessageSource + AcceptHeaderLocaleResolver multi-language messages\n- ratelimit: HandlerInterceptor + fixed time window; Clock is a bean so the\n  test injects a @Primary mutable clock and never relies on sleep\n- graphql: @QueryMapping + .graphqls schema exposing /graphql, tested via\n  MockMvc POST\n\nAll five modules need no external service and ship with runnable tests.\nAlso updates Readme.md (21 -> 26 modules) and changeLog.md.\n"
+    },
+    {
+      "sha": "9c3310441622c7baede8014667fb3626ac9f6bac",
+      "date": "2026-09-09T12:39:55+09:00",
+      "author": "Evan",
+      "email": "suzukaze.haduki@gmail.com",
+      "message": "Merge pull request #44 from houko/fix/codeql-security-alerts\n\nfix: resolve all six CodeQL security alerts"
+    },
+    {
+      "sha": "0597a65a79e5eef6455bfd9a91022cfb516df5a3",
+      "date": "2026-09-09T12:33:44+09:00",
+      "author": "Evan Hu",
+      "email": "e-hu@unext.jp",
+      "message": "fix: resolve all six CodeQL security alerts\n\nCodeQL 在本仓库首次完整扫描后报出 6 条告警(3 high / 2 medium / 1 high), 全部来自既有代码。逐条修复:\n\nHttpUtil 的 TLS 校验(#11 high, #9 medium)\nMyX509TrustManager 的 checkServerTrusted 是空实现、getAcceptedIssuers 返回 null, TrustAnyHostnameVerifier 的 verify 永远返回 true。两者合起来等于把 https 的安全性完全关掉, 任何中间人都能解密和篡改流量。现移除这两个类, 不再覆盖 SSLSocketFactory 与 HostnameVerifier, 交回 JDK 默认实现。\n\n这是行为变更: 面向自签名或过期证书的服务端会开始连接失败。这正是应当暴露的问题, 正确做法是把证书加进信任库而不是关掉校验。\n\nCookie 缺少 secure(#10 medium)\nsetCookie 只设了 httpOnly。补上 secure(禁止明文链路发送)与 SameSite=Lax(缓解 CSRF)。注意本地用 http 调试时浏览器不会回传该 cookie。\n\nFileUtil 路径注入(#8 high)\ngetNewFileName 用 email 前缀和文件扩展名拼文件名, 两段都来自用户输入。按\"最后一个点之后\"取扩展名时, a.b/../../evil 这样的文件名会把整段路径带进来。现在两段都只保留 [A-Za-z0-9_-], 落盘再用 normalize + startsWith 限制在 upload 目录内。\n\n顺带修掉同一段代码里 savePath 为空串的问题 —— 原先文件是写进进程工作目录的。\n\n不安全的随机数(#12, #13 high)\n根源在 RandomUtil: getTonken / randomPwd / createSalt 都走 RandomStringUtils.random(), 底层是 java.util.Random, 种子只有 48 位且算法公开, 观察到少量输出即可推算后续全部结果。这些值被用作密码盐值和 token, 可预测等于形同虚设。改用 RandomStringUtils.secure()(SecureRandom 支撑)。\n\nCodeQL 把告警报在 UserModel / AdminModel 的 @Data 上, 是因为 salt 经由 Lombok 生成的 setter 流入模型字段, 真正的源头在 RandomUtil。\n\n新增 SecurityHardeningTest 覆盖文件名过滤、cookie 标志、盐值与 token 的取值质量。\n"
+    },
+    {
+      "sha": "bb5f6a2f469aaa87adadbfba3669cee1a58f3efa",
+      "date": "2026-09-09T12:21:43+09:00",
+      "author": "Evan",
+      "email": "suzukaze.haduki@gmail.com",
+      "message": "Merge pull request #43 from houko/feat/more-examples\n\nfeat: add five example modules, fix the async example, and fix a runtime-only -parameters bug"
+    },
+    {
+      "sha": "b058ae6ffe2b0885c36336f9cac4414f0098a83c",
+      "date": "2026-09-09T10:53:16+09:00",
+      "author": "Evan Hu",
+      "email": "e-hu@unext.jp",
+      "message": "fix: use the canonical normalize + startsWith guard for path resolution\n\n上一版用正则白名单把污染数据挡在路径之外, 但 CodeQL 的污点分析不把正则校验当作净化器, 告警仍在。\n\n改用 normalize() 之后 startsWith(root) 这一标准写法, 集中到 resolveWithinRoot 一处。normalize 折叠掉 .., startsWith 保证结果落在根目录内, 无论输入是什么。正则白名单保留作为纵深防御。\n"
+    },
+    {
+      "sha": "b0222acfd366d41c547692a2c1e96dc2f7b96050",
+      "date": "2026-09-09T10:47:14+09:00",
+      "author": "Evan Hu",
+      "email": "e-hu@unext.jp",
+      "message": "fix: keep untrusted input out of file path expressions\n\nCodeQL 在 PR #43 上报了两处 high 级别的 \"Uncontrolled data used in path expression\", 是对的。\n\n问题出在 extensionOf: 它取\"最后一个点之后的全部内容\"作为扩展名, 而原始文件名来自客户端。形如 a.b/../../evil 的名字会得到扩展名 .b/../../evil, 整段路径被拼进落盘路径。原先靠 normalize() 之后比对父目录来兜底, 虽然拦得住, 但属于先把污染数据拼进路径再回头检查, 既脆弱也难以论证。\n\n改成让污染数据根本进不了路径表达式:\n- 取扩展名时先剥掉所有目录成分(兼容 windows 反斜线), 再要求匹配白名单 \\.[A-Za-z0-9]{1,10}, 不匹配就整个丢弃\n- 读取时要求文件名完全匹配 store 生成的形状(UUID + 可选安全扩展名), 含分隔符或 .. 的输入直接拒绝\n\n补三个测试: 原始文件名里的穿越片段不得混入扩展名、不符合存储命名格式的文件名被拒绝、合法扩展名仍被保留。\n"
+    },
+    {
+      "sha": "8aba8120b293bad1d5b88ab2c3ed5e8c8cf3f67a",
+      "date": "2026-09-09T10:29:12+09:00",
+      "author": "Evan Hu",
+      "email": "e-hu@unext.jp",
+      "message": "docs: document the new modules and the -parameters pitfall\n\nReadme 模块表补上 validation / fileupload / restclient / cache / actuator 五个模块, 技术栈补上 caffeine 与 micrometer, 快速开始补上跑测试的命令, 并标出哪些模块自带可运行的测试。\n\nchangeLog.md 记录本次新增, 并单独说明 -parameters 这个只在运行时暴露的坑。\n"
+    },
+    {
+      "sha": "c9e5f78358cef9cf770dc31dbb94c449c4c2b5d2",
+      "date": "2026-09-09T10:29:05+09:00",
+      "author": "Evan Hu",
+      "email": "e-hu@unext.jp",
+      "message": "feat: add five example modules for common scenarios\n\n每个模块都不依赖任何外部服务, 因此都带了可以直接跑的测试 —— 这些测试同时也是各自技术点的可执行文档。\n\n- validation: @Valid 校验请求体 / @Validated 校验路径参数, 配合 @RestControllerAdvice 做全局异常处理, 保证出错时也返回统一的 Result 结构\n- fileupload: 单文件与多文件上传、下载。存储时用随机文件名而非客户端传来的原始文件名, 并校验落点在存储根目录之下, 防路径穿越\n- restclient: 用 spring 6.1 引入的 RestClient(RestTemplate 的替代)调用外部 HTTP 服务, 针对 4xx 转成语义明确的异常。测试用 MockRestServiceServer 拦截请求, 不依赖网络\n- cache: spring cache 抽象 + caffeine 本地缓存, 演示 @Cacheable / @CachePut / @CacheEvict。测试通过\"方法体被执行了几次\"来断言缓存行为\n- actuator: 健康检查、自定义 HealthIndicator、以及用 micrometer 注册的业务指标\n\n同时修复一个只在运行时才会暴露的问题: 给 maven-compiler-plugin 加上 -parameters。\n\nspring framework 6.1 移除了从调试符号推断参数名的 LocalVariableTableParameterNameDiscoverer, 因此不带该标志时, 未显式命名的 @PathVariable / @RequestParam 会在请求到达时抛 IllegalArgumentException, 而编译期没有任何提示。项目中共有 40 处这样的写法(BaseController、AuthOperate 以及 website 下的多个控制器), 也就是说升级到 spring boot 4 之后这些端点全部会 500。\n\nspring-boot-starter-parent 默认会加这个标志, 但本项目是导入 spring-boot-dependencies BOM 而非继承 parent, 所以需要自己配置。这个问题是新模块的测试跑起来之后才暴露出来的。\n\n.gitignore 补上 upload(fileupload 模块的默认存储目录)与 .DS_Store, 并修掉文件末尾缺失的换行。\n"
+    },
+    {
+      "sha": "f05fd231f80188552d6ea2c5396087be1cb92071",
+      "date": "2026-09-09T10:28:49+09:00",
+      "author": "Evan Hu",
+      "email": "e-hu@unext.jp",
+      "message": "refactor: make the async example actually about @Async\n\nasync/TestController 继承 BaseController, 被迫实现 9 个与异步毫无关系的 CRUD 方法, 全部 return null。结果是 90 行空实现淹没了 10 行真正想演示的东西。这个模块的存在意义就是展示 @Async, 现在让它只展示 @Async。\n\n- 删除 TestController(整类都是空实现), 新增 AsyncController 只保留异步演示\n- 不再继承 BaseController\n- AsyncResult 在 spring 6 已废弃, 换成 CompletableFuture.completedFuture\n- 去掉 while(true) + Thread.sleep(1000) 的自旋等待, 改用 CompletableFuture::join。原写法不仅浪费 CPU, 1 秒的轮询粒度还让打印出来的\"总耗时\"最多偏差一秒\n- System.out.println 换成 logger; static Random 换成 ThreadLocalRandom\n- 补上 @EnableAsync —— 原先根本没加, 也就是说这个\"异步示例\"里的 @Async 一直没有生效\n- 新增测试, 断言三个任务确实并发执行且调用方不被阻塞\n\n同时修正若干复制粘贴的 javadoc: security / mongodb / javase / socket 四个启动类的 Description 都写着别的模块的名字。\n\nBaseController 上的 @RestController 也一并去掉 —— 抽象基类不应该是 @RestController, 其抽象方法上的 @PathVariable / @RequestBody 在没有 @RequestMapping 的情况下也不起任何作用。\n"
+    },
+    {
+      "sha": "f52d94bbeef9ceea6c2cc6b39a63558288fa049e",
+      "date": "2026-09-09T10:12:55+09:00",
+      "author": "Evan",
+      "email": "suzukaze.haduki@gmail.com",
+      "message": "Merge pull request #42 from houko/chore/cleanup-secrets-tests-and-readme\n\nfix: remove committed oauth secrets, correct package typos, enable tests, rewrite readme"
+    },
+    {
+      "sha": "498c5c4febb82c75ef7c51348ef582b826dff47a",
+      "date": "2026-09-09T10:07:07+09:00",
+      "author": "Evan Hu",
+      "email": "e-hu@unext.jp",
+      "message": "docs: rewrite readme and add changelog entry\n\n原 Readme 缺少这个项目最需要的东西: 16 个模块分别在演示什么。补上模块一览表(演示内容 / 启动类 / 需要的外部服务), 并修正了若干过时或错误的内容:\n\n- 技术栈与版本更新到当前实际值, 端口差异(socket 用 8081)明确写出\n- 快速开始给出可直接复制的 mvn / java 命令, 均已实测\n- API 文档地址更新为 springdoc 的 /swagger-ui.html 与 /v3/api-docs\n- 码云链接的 git.oschina.net 旧域名更新为 gitee.com\n- 问题反馈的编号 1/2/4 修正, License 由整段正文改为指向 LICENSE 文件\n- 徽章补上 CodeQL / Spring Boot / JDK, 并指向新的构建 workflow\n- 更新日志改为只保留主要节点并链到 changeLog.md, 完整记录同步补进 changeLog.md\n- 顺带修掉 changeLog.md 里 http://localhost:808/doc.html 少一位数字的笔误\n"
+    },
+    {
+      "sha": "e9f0ee0f7c79a2e7b7022e52e031c9199205bb8c",
+      "date": "2026-09-09T10:07:07+09:00",
+      "author": "Evan Hu",
+      "email": "e-hu@unext.jp",
+      "message": "test: enable test execution and fix the rabbitmq test\n\nparent pom 里的 surefire 配置了 skipTests=true, 全项目的测试从来不会执行。既然现在有了构建 CI, 这个开关就该拿掉。\n\n唯一的测试 RabbitMqTests 此前没有 @SpringBootTest, @Autowired 的 sender 实际是 null, 一旦执行就会 NPE —— 正是因为测试从不执行, 这个问题一直没有暴露。现改为:\n- 补上 @SpringBootTest(classes = RabbitMqMain.class)\n- 加 @Disabled 并注明需要一台可连接的 RabbitMQ, 而不是留一个必然失败的用例\n- 从 package test 移到 info.xiaomo.rabbitmq, 与主代码包结构对齐\n"
+    },
+    {
+      "sha": "204ef64c7b03e62c363ec46a42e62a61c16c4ccb",
+      "date": "2026-09-09T10:07:07+09:00",
+      "author": "Evan Hu",
+      "email": "e-hu@unext.jp",
+      "message": "fix: remove committed oauth secrets and correct package name typos\n\ncore/src/main/resources/config/oauth.properties 里提交了 QQ / 微博 / 百度 / 人人 / 开源中国 / 豆瓣的真实第三方登录密钥, 自 2016 年起一直暴露在公开仓库中。该文件没有被任何 java 代码引用。现全部替换为占位符。\n\n注意: 这些密钥仍存在于 git 历史中, 本次提交并不能撤销泄露, 必须到各平台吊销重发。\n\n同时修正两处包名拼写错误:\n- info.xiaomo.anysc -> info.xiaomo.async\n- info.xiaomo.core.untils -> info.xiaomo.core.utils\n"
+    },
+    {
+      "sha": "f01e3836553763321f617e0b643228932ce3525d",
+      "date": "2026-09-09T10:00:06+09:00",
+      "author": "Evan",
+      "email": "xiaomo@xiaomo.info",
+      "message": "Merge pull request #41 from houko/chore/upgrade-all-dependencies\n\nbuild: upgrade all dependencies to latest (Spring Boot 2.5 to 4.1)"
+    },
+    {
+      "sha": "b66658711d544b6f92a7e40e250c7eada6b75fb6",
+      "date": "2026-09-09T09:55:48+09:00",
+      "author": "Evan Hu",
+      "email": "e-hu@unext.jp",
+      "message": "ci: allow codeql workflow to be triggered manually\n\n该 workflow 自 2022 年加入以来一次都没运行过, 加上 workflow_dispatch 便于手动验证和排查。\n"
+    },
+    {
+      "sha": "01aded0917f9b06cb105b03ede421f9058ae311e",
+      "date": "2026-09-09T09:52:57+09:00",
+      "author": "Evan Hu",
+      "email": "e-hu@unext.jp",
+      "message": "ci: add maven build workflow\n\n仓库此前没有任何构建 CI: 唯一的 workflow 是 CodeQL(安全扫描), 而 Readme 上的\nTravis 徽章指向 travis-ci.org —— 该站 2021 年 6 月已关停, 徽章长期是死链。\n也就是说没有任何 CI 会去编译这个项目。\n\n新增 build workflow, 在 JDK 21(编译目标) 和 25(当前 LTS) 上跑 mvn clean install,\n并把 Readme 徽章换成该 workflow 的状态。\n\n保留 .travis.yml 未动(本次已同步更新其 jdk 版本), 是否弃用 travis 由仓库主人决定。\n"
+    },
+    {
+      "sha": "346a7ca92f4f402d217084d8e6c1d2de87372ce3",
+      "date": "2026-09-09T09:46:21+09:00",
+      "author": "Evan Hu",
+      "email": "e-hu@unext.jp",
+      "message": "ci: update github actions and document new toolchain requirements\n\n- actions/checkout v3 -> v7, github/codeql-action v2 -> v4  (v2 已停止服务)\n- 新增 actions/setup-java 固定 JDK 21, 不再依赖 runner 镜像的默认 JDK,\n  否则 spring boot 4 所需的 JDK 17+ 无法保证\n- travis: oraclejdk11 -> openjdk21, dist trusty -> jammy\n- Readme 环境说明与更新日志同步到本次升级\n"
+    },
+    {
+      "sha": "f200db769891aa743b88da37652d2072c6a7c7ad",
+      "date": "2026-09-09T09:46:21+09:00",
+      "author": "Evan Hu",
+      "email": "e-hu@unext.jp",
+      "message": "fix: update renamed spring boot properties and hibernate dialect\n\n这些配置编译期不会报错, 但在 spring boot 4 上会静默失效或直接启动失败。\n\n- spring.redis.* -> spring.data.redis.*  (spring boot 2.4 起改名)\n- spring.redis.pool.* -> spring.data.redis.lettuce.pool.*  (原写法是 spring boot 1.x 的名字, 早已失效)\n- org.hibernate.dialect.MySQL5Dialect -> MySQLDialect  (MySQL5Dialect 在 hibernate 6 已被移除, 当前为 7.4.5)\n"
+    },
+    {
+      "sha": "2ff99ed0e84b9eedf1f93e590e6eacd2908ed395",
+      "date": "2026-09-09T09:46:13+09:00",
+      "author": "Evan Hu",
+      "email": "e-hu@unext.jp",
+      "message": "refactor: migrate to jakarta namespace and spring boot 4 APIs\n\nspring boot 3 起 javax.* 全面迁移到 jakarta.*, 同时 spring boot 4 拆分了\nautoconfigure 模块并默认改用 jackson 3, 一并适配。\n\n- javax.persistence/servlet/mail/websocket -> jakarta.*  (javax.sql / javax.net / javax.swing 属 JDK 自带, 保持不变)\n- @EntityScan -> org.springframework.boot.persistence.autoconfigure\n- DataSourceAutoConfiguration -> org.springframework.boot.jdbc.autoconfigure\n- HibernateJpaAutoConfiguration -> org.springframework.boot.hibernate.autoconfigure\n- jackson 2 -> 3: com.fasterxml.jackson.databind.JsonSerializer -> tools.jackson.databind.ValueSerializer,\n  SerializerProvider -> SerializationContext, serialize 不再抛受检异常\n- poi 5: HSSFCell.CELL_TYPE_* 常量 -> CellType 枚举, HSSFDateUtil -> DateUtil\n- fastjson -> fastjson2 (JSON / JSONObject 用法一致, 仅换包)\n- security: WebSecurityConfigurerAdapter 已被移除, 改用 SecurityFilterChain + UserDetailsService Bean。\n  内存用户密码补上 {noop} 前缀 —— 原先未指定编码器, 在 spring security 5 之后登录时会直接抛异常\n- springfox Docket + ApiInfo -> springdoc GroupedOpenApi + OpenAPI Bean, 保留原有的 basePackage 分组范围\n- swagger 注解升级到 OpenAPI 3: @Api -> @Tag, @ApiOperation -> @Operation,\n  @ApiImplicitParam -> @Parameter, @ApiModelProperty -> @Schema, @ApiIgnore -> @Hidden\n- 唯一的测试从 JUnit 4 迁移到 JUnit 5\n"
+    },
+    {
+      "sha": "abeccd0390e1c6be4654b3db87e4809098b4f768",
+      "date": "2026-09-09T09:45:59+09:00",
+      "author": "Evan Hu",
+      "email": "e-hu@unext.jp",
+      "message": "build: upgrade spring boot to 4.1.1 and all dependencies to latest\n\n将 spring-boot-starter-parent 的伪导入换成 spring-boot-dependencies BOM 导入,\n统一由 BOM 管理 spring / jackson / hibernate / junit 等版本。\n\n- spring boot 2.5.12 -> 4.1.1, JDK 11 -> 21\n- springfox-swagger 2.2.2 -> springdoc-openapi 3.1.1 (springfox 已停止维护且不支持 jakarta)\n- mysql:mysql-connector-java 8.0.28 -> com.mysql:mysql-connector-j 26.7.0 (groupId 变更)\n- dom4j:dom4j 1.6.1 -> org.dom4j:dom4j 2.2.0 (groupId 变更)\n- com.alibaba:fastjson -> com.alibaba.fastjson2:fastjson2 2.0.65\n- poi 3.17 -> 5.5.1, jsoup -> 1.23.2, commons-io -> 2.22.0, commons-lang3 -> 3.20.0\n- lombok -> 1.18.48, slf4j -> 2.0.19, zxing -> 3.5.4, mybatis-spring-boot -> 4.1.0\n- maven 插件: compiler 3.5.1 -> 3.16.0, surefire 2.19.1 -> 3.6.0, source 3.2.0 -> 3.4.0\n\n同时修掉三个既有问题:\n- jsoup.version 属性重复定义, 后一处 1.9.2 覆盖了前一处 1.14.2, 导致之前的 jsoup 升级实际未生效\n- fastjson 和 commons-fileupload 使用开区间版本 [x,), 构建不可复现, 现已全部钉死\n- 移除未被任何代码引用且不兼容 jakarta 的 commons-fileupload, 以及被 spring-boot-starter-test 取代的 junit4\n\nknife4j (swagger-bootstrap-ui 的后继) 最新版 4.5.0 仍锁定 spring boot 3.0.4 与 springdoc 2.x,\n无法与 spring boot 4 共存, 故移除, 改用 springdoc 自带的 swagger-ui。\n"
+    },
+    {
+      "sha": "1dc515467091e0f60f0a2045f65d42bb70de15a0",
+      "date": "2026-09-09T09:30:12+09:00",
+      "author": "Evan",
+      "email": "xiaomo@xiaomo.info",
+      "message": "Merge pull request #40 from houko/chore/rename-default-branch-to-main\n\nchore: update branch references after renaming master to main"
+    }
+  ],
+  "commit_sha": "48354b549702adb12908ae824cb9b84fa06aa850",
+  "extracted_at": "2026-10-05T18:00:36.487811+00:00"
+}

@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "db26bd1b09155799378e9f64addf80a01915749e",
+      "date": "2025-04-23T08:47:00+08:00",
+      "author": "shichenyang",
+      "email": "gyv12345@163.com",
+      "message": "feat(modules): 添加知识库模块并更新相关配置\n\n- 新增 yt4j-knowledge 模块，包含应用配置、启动类、日志配置等\n- 更新 yt4j-modules/pom.xml，添加 yt4j-knowledge 子模块\n- 更新根 pom.xml，升级 Spring Boot、Spring Cloud 等依赖版本\n- 添加 Spring AI相关依赖\n"
+    },
+    {
+      "sha": "ff56ce21c69137e78ad943374483163b8c96e0bd",
+      "date": "2024-11-12T16:52:34+08:00",
+      "author": "shichenyang",
+      "email": "gyv12345@163.com",
+      "message": "feat: 增加coze的调用，为之后使用AI做准备\n"
+    },
+    {
+      "sha": "e3754a9042af1b71b11373db417dc541cf03fde0",
+      "date": "2024-10-11T11:49:32+08:00",
+      "author": "shichenyang",
+      "email": "gyv12345@163.com",
+      "message": "perf: 更新依赖\n"
+    },
+    {
+      "sha": "00590e0e668008a8c67e94be7075996447c14b44",
+      "date": "2024-10-11T09:20:25+08:00",
+      "author": "shichenyang",
+      "email": "gyv12345@163.com",
+      "message": "refactor: docker修改\n"
+    },
+    {
+      "sha": "18ed3b0955a9b7927eaeb0663ccb98b5cfbc1fc5",
+      "date": "2024-10-10T10:59:58+08:00",
+      "author": "shichenyang",
+      "email": "gyv12345@163.com",
+      "message": "docs: 依赖升级\n"
+    },
+    {
+      "sha": "166b199be4adde6ba661d3677a0189a101505180",
+      "date": "2024-09-23T09:44:57+08:00",
+      "author": "shichenyang",
+      "email": "gyv12345@163.com",
+      "message": "Merge pull request #11 from Gyv12345/devlop\n\nrefactor: 依赖升级"
+    },
+    {
+      "sha": "328c3d40b4072c73cf78321be17e7c81395f0c30",
+      "date": "2024-09-23T09:44:03+08:00",
+      "author": "shichenyang",
+      "email": "gyv12345@163.com",
+      "message": "refactor: 依赖升级\n"
+    },
+    {
+      "sha": "e567a327cd8511492801e326fe7fc05062e02f59",
+      "date": "2024-09-11T15:19:45+08:00",
+      "author": "shichenyang",
+      "email": "gyv12345@163.com",
+      "message": "Merge pull request #10 from Gyv12345/devlop\n\nrefactor: 依赖升级"
+    },
+    {
+      "sha": "28dabc7f68e98d63f37d28339bed8237ad3c45d0",
+      "date": "2024-09-11T15:19:14+08:00",
+      "author": "shichenyang",
+      "email": "gyv12345@163.com",
+      "message": "refactor: 依赖升级\n"
+    },
+    {
+      "sha": "c2d120f02269eb577ed44af23ceed244ac3901b7",
+      "date": "2024-09-10T16:54:25+08:00",
+      "author": "shichenyang",
+      "email": "gyv12345@163.com",
+      "message": "Merge pull request #9 from Gyv12345/devlop\n\nrefactor: 数据权限按照mp最新代码修改"
+    },
+    {
+      "sha": "7992a2a61bd94216a0035e602032a697bb80fadb",
+      "date": "2024-09-10T16:49:39+08:00",
+      "author": "shichenyang",
+      "email": "gyv12345@163.com",
+      "message": "refactor: 数据权限按照mp最新代码修改\n"
+    },
+    {
+      "sha": "fab44cd0fd3e9f38b7fbe10db843daaff71c309f",
+      "date": "2024-09-09T19:34:57+08:00",
+      "author": "shichenyang",
+      "email": "gyv12345@163.com",
+      "message": "docs: 增加注释\n"
+    },
+    {
+      "sha": "5337335a8119ad4d9057f89e8177419c2af062ff",
+      "date": "2024-09-07T10:43:21+08:00",
+      "author": "shichenyang",
+      "email": "gyv12345@163.com",
+      "message": "perf: 升级依赖\n"
+    },
+    {
+      "sha": "b64320a5396b482766c7b8a7cd4d7d016d07841f",
+      "date": "2024-08-26T11:02:02+08:00",
+      "author": "shichenyang",
+      "email": "gyv12345@163.com",
+      "message": "```feat(nginx): 配置HTTPS并更新证书\n\n-启用nginx中的HTTPS监听。\n- 更新证书路径和协议配置，以确保与最新标准兼容。\n-明确证书文件的名称，以便在 /docker/nginx/cert/目录中直接存放。\n\nfix(pom): 更新Spring Boot和Spring Cloud版本\n\n- 将Spring Boot版本从3.2.3升级到3.2.5。\n-将Spring Cloud版本从2023.0.0升级到2023.0.1。这带来了最新的安全修补和功能改进。\n```\n"
+    },
+    {
+      "sha": "e1efeb0a5cb5d7fe3dcb6e36124140b245c72433",
+      "date": "2024-04-08T09:45:32+08:00",
+      "author": "shichenyang",
+      "email": "gyv12345@163.com",
+      "message": "feat: 新的UI pure-admin\n"
+    },
+    {
+      "sha": "dfad2ae8ed4c4cc7fc89e220b3ebb75a391a6cea",
+      "date": "2024-03-28T09:19:56+08:00",
+      "author": "shichenyang",
+      "email": "gyv12345@163.com",
+      "message": "feat: 新的UI pure-admin\n"
+    },
+    {
+      "sha": "f684a98ff768427dbb878db1801f9f31a60eb959",
+      "date": "2024-03-25T09:30:39+08:00",
+      "author": "shichenyang",
+      "email": "gyv12345@163.com",
+      "message": "feat: 新的UI pure-admin\n"
+    },
+    {
+      "sha": "fca3e9c3183a19be9caf2218cb92ece29f68bef8",
+      "date": "2024-03-23T17:22:22+08:00",
+      "author": "shichenyang",
+      "email": "gyv12345@163.com",
+      "message": "feat: 增加gitlab ci cd\n"
+    },
+    {
+      "sha": "71e7faedf91ae10aa763feadb85db1583c1069a2",
+      "date": "2024-03-23T17:06:31+08:00",
+      "author": "shichenyang",
+      "email": "gyv12345@163.com",
+      "message": "feat: 增加gitlab ci cd\n"
+    },
+    {
+      "sha": "1a5f9cd0ab903c93b50274adf9a5da1c6164d9e7",
+      "date": "2024-03-23T17:06:12+08:00",
+      "author": "shichenyang",
+      "email": "gyv12345@163.com",
+      "message": "feat: 增加gitlab ci cd\n"
+    },
+    {
+      "sha": "07d4db6cc2f52fa13c7de892d68c4dc45ede9e50",
+      "date": "2024-03-23T16:57:20+08:00",
+      "author": "shichenyang",
+      "email": "gyv12345@163.com",
+      "message": "feat: 增加gitlab ci cd\n"
+    },
+    {
+      "sha": "191000461ee6c22ca1821bd326a36a06eb294e78",
+      "date": "2024-03-23T16:51:57+08:00",
+      "author": "shichenyang",
+      "email": "gyv12345@163.com",
+      "message": "feat: 增加gitlab ci cd\n"
+    },
+    {
+      "sha": "98d3272b1000d7d3e0a8398663e72668157ad6a6",
+      "date": "2024-03-23T08:46:56Z",
+      "author": "Administrator",
+      "email": "admin@example.com",
+      "message": "更新.gitlab-ci.yml文件"
+    },
+    {
+      "sha": "d4adbdb030be01daf8b96bda510e774414e88734",
+      "date": "2024-03-23T07:06:59Z",
+      "author": "Administrator",
+      "email": "admin@example.com",
+      "message": "Merge branch 'main' into 'master'\n\n# Conflicts:\n#   README.md"
+    },
+    {
+      "sha": "1782e75423cba861be805098d01dd3851ddc4e63",
+      "date": "2024-03-23T07:03:32Z",
+      "author": "Administrator",
+      "email": "admin@example.com",
+      "message": "Initial commit"
+    },
+    {
+      "sha": "1c95eb5bf432842581c04c86e8a4f2c38be95518",
+      "date": "2024-03-15T16:27:08+08:00",
+      "author": "shichenyang",
+      "email": "gyv12345@163.com",
+      "message": "fix: 改了服务名称\n"
+    },
+    {
+      "sha": "ac312cdd68c47266f9c84b0a1ccb1cebff4ab69e",
+      "date": "2024-03-15T16:27:01+08:00",
+      "author": "shichenyang",
+      "email": "gyv12345@163.com",
+      "message": "fix: 改了服务名称\n"
+    },
+    {
+      "sha": "909114f490e21472abd080b477fc33e884be8d9f",
+      "date": "2024-03-15T14:39:30+08:00",
+      "author": "shichenyang",
+      "email": "gyv12345@163.com",
+      "message": "refactor: 格式化\n"
+    },
+    {
+      "sha": "07917b9f5193baa6fae19e3534ce3323e3a5925a",
+      "date": "2024-03-15T10:36:39+08:00",
+      "author": "shichenyang",
+      "email": "gyv12345@163.com",
+      "message": "docs: readme\n"
+    },
+    {
+      "sha": "c18575c84564a59725feb7cda0c1cd220a2eeff6",
+      "date": "2024-03-13T19:37:51+08:00",
+      "author": "shichenyang",
+      "email": "gyv12345@163.com",
+      "message": "feat: 企业im,飞书\n"
+    }
+  ],
+  "commit_sha": "db26bd1b09155799378e9f64addf80a01915749e",
+  "extracted_at": "2026-10-05T18:41:45.737562+00:00"
+}

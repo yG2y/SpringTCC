@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "1ce578f355ff959a1d172e6b0d1f96d48a020b1a",
+      "date": "2024-04-25T18:34:10+08:00",
+      "author": "miaoyinjun",
+      "email": "312656362@qq.com",
+      "message": "squashing 'release/2.0.8' into 'master'"
+    },
+    {
+      "sha": "7da91d2f1d8e23a5e0035f383654384989f1c813",
+      "date": "2024-04-25T18:28:37+08:00",
+      "author": "miaoyinjun",
+      "email": "312656362@qq.com",
+      "message": "Conflicts:\n\tjjche-boot/jjche-boot-demo/pom.xml\n\tjjche-boot/jjche-boot-parent/jjche-boot-base-api/jjche-system-cloud-api/pom.xml\n\tjjche-boot/jjche-boot-parent/jjche-boot-base-api/jjche-system-local-api/pom.xml\n\tjjche-boot/jjche-boot-parent/jjche-boot-base-api/pom.xml\n\tjjche-boot/jjche-boot-parent/jjche-boot-common/pom.xml\n\tjjche-boot/jjche-boot-parent/jjche-boot-eladmin/jjche-boot-eladmin-generator/pom.xml\n\tjjche-boot/jjche-boot-parent/jjche-boot-eladmin/jjche-boot-eladmin-logging/pom.xml\n\tjjche-boot/jjche-boot-parent/jjche-boot-eladmin/jjche-boot-eladmin-tools/pom.xml\n\tjjche-boot/jjche-boot-parent/jjche-boot-eladmin/pom.xml\n\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-cache-starter/pom.xml\n\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-cat-starter/pom.xml\n\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-cat-starter/src/main/java/com/dianping/cat/Cat.java\n\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-cat-starter/src/main/java/com/dianping/cat/configuration/ClientConfigProvider.java\n\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-cat-starter/src/main/java/com/dianping/cat/configuration/client/Constants.java\n\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-cat-starter/src/main/java/com/dianping/cat/configuration/property/Constants.java\n\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-cat-starter/src/main/java/com/dianping/cat/configuration/property/IEntity.java\n\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-cat-starter/src/main/java/com/dianping/cat/configuration/property/transform/DefaultLinker.java\n\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-cat-starter/src/main/java/com/dianping/cat/configuration/property/transform/ILinker.java\n\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-cat-starter/src/main/java/com/dianping/cat/message/Event.java\n\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-cat-starter/src/main/java/com/dianping/cat/message/spi/codec/BufferWriter.java\n\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-cat-starter/src/main/java/com/dianping/cat/status/model/Constants.java\n\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-cat-starter/src/main/java/com/dianping/cat/status/model/transform/DefaultSaxMaker.java\n\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-cat-starter/src/main/java/org/jjche/cat/annotation/AnnotationProcessorRegister.java\n\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-cat-starter/src/main/java/org/jjche/cat/conf/MybatisAutoConfig.java\n\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-cloud-gray-starter/pom.xml\n\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-cloud-starter/pom.xml\n\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-core-starter/pom.xml\n\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-filter-starter/pom.xml\n\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-log-starter/pom.xml\n\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-minio-starter/pom.xml\n\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-mybatis-starter/pom.xml\n\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-sba-starter/pom.xml\n\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-security-starter/pom.xml\n\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-serialize-starter/pom.xml\n\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-shardingsphere-starter/pom.xml\n\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-starter/pom.xml\n\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-swagger-starter/pom.xml\n\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-system-starter/pom.xml\n\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-userdetail-starter/pom.xml\n\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-xxl-job-starter/pom.xml\n\tjjche-boot/jjche-boot-parent/jjche-boot-starters/pom.xml\n\tjjche-boot/jjche-boot-parent/pom.xml\n\tjjche-boot/jjche-cloud/jjche-cloud-demo-provider/jjche-cloud-demo-provider-api/pom.xml\n\tjjche-boot/jjche-cloud/jjche-cloud-demo-provider/jjche-cloud-demo-provider-biz/pom.xml\n\tjjche-boot/jjche-cloud/jjche-cloud-demo-provider/pom.xml\n\tjjche-boot/jjche-cloud/jjche-cloud-gateway/pom.xml\n\tjjche-boot/jjche-cloud/jjche-cloud-minio/pom.xml\n\tjjche-boot/jjche-cloud/jjche-cloud-monitor/pom.xml\n\tjjche-boot/jjche-cloud/jjche-cloud-nacos/pom.xml\n\tjjche-boot/jjche-cloud/jjche-cloud-sentinel/pom.xml\n\tjjche-boot/jjche-cloud/jjche-cloud-system/pom.xml\n\tjjche-boot/jjche-cloud/jjche-cloud-xxljob/pom.xml\n\tjjche-boot/jjche-cloud/pom.xml\n\tjjche-boot/pom.xml\n"
+    },
+    {
+      "sha": "20833af689548f39d634332a9617d03758aca837",
+      "date": "2023-02-21T16:09:08+08:00",
+      "author": "miaoyinjun",
+      "email": "312656362@qq.com",
+      "message": "update-sentinel.version\n"
+    },
+    {
+      "sha": "58a24615a62d7eed4c6da6d0d2fa1f431e61916b",
+      "date": "2023-02-21T14:00:15+08:00",
+      "author": "miaoyinjun",
+      "email": "312656362@qq.com",
+      "message": "Merge branch 'release/2.0.7'\n\n# Conflicts:\n#\tjjche-boot/jjche-boot-demo/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-base-api/jjche-system-cloud-api/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-base-api/jjche-system-local-api/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-base-api/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-common/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-eladmin/jjche-boot-eladmin-generator/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-eladmin/jjche-boot-eladmin-logging/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-eladmin/jjche-boot-eladmin-tools/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-eladmin/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-cache-starter/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-cat-starter/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-cloud-gray-starter/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-cloud-starter/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-core-starter/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-filter-starter/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-log-starter/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-minio-starter/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-mybatis-starter/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-sba-starter/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-security-starter/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-serialize-starter/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-shardingsphere-starter/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-starter/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-swagger-starter/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-system-starter/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-userdetail-starter/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-xxl-job-starter/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-starters/pom.xml\n#\tjjche-boot/jjche-boot-parent/pom.xml\n#\tjjche-boot/jjche-cloud/jjche-cloud-demo-provider/jjche-cloud-demo-provider-api/pom.xml\n#\tjjche-boot/jjche-cloud/jjche-cloud-demo-provider/jjche-cloud-demo-provider-biz/pom.xml\n#\tjjche-boot/jjche-cloud/jjche-cloud-demo-provider/pom.xml\n#\tjjche-boot/jjche-cloud/jjche-cloud-gateway/pom.xml\n#\tjjche-boot/jjche-cloud/jjche-cloud-minio/pom.xml\n#\tjjche-boot/jjche-cloud/jjche-cloud-monitor/pom.xml\n#\tjjche-boot/jjche-cloud/jjche-cloud-nacos/pom.xml\n#\tjjche-boot/jjche-cloud/jjche-cloud-sentinel/pom.xml\n#\tjjche-boot/jjche-cloud/jjche-cloud-system/pom.xml\n#\tjjche-boot/jjche-cloud/jjche-cloud-xxljob/pom.xml\n#\tjjche-boot/jjche-cloud/pom.xml\n#\tjjche-boot/pom.xml\n"
+    },
+    {
+      "sha": "a3f21c95648a08e5614666b9e2f603b505a78a61",
+      "date": "2023-02-21T13:59:47+08:00",
+      "author": "miaoyinjun",
+      "email": "312656362@qq.com",
+      "message": "add new\n"
+    },
+    {
+      "sha": "2d79a6af2d8dac710e7ac3ba055009668cba82d2",
+      "date": "2023-02-21T13:51:19+08:00",
+      "author": "miaoyinjun",
+      "email": "312656362@qq.com",
+      "message": "updating poms for branch'release/2.0.7' with non-snapshot versions"
+    },
+    {
+      "sha": "e2fa9cd8dc7039682e14281dc3b9fe9419bc7abb",
+      "date": "2023-02-21T13:46:04+08:00",
+      "author": "miaoyinjun",
+      "email": "312656362@qq.com",
+      "message": "updating poms for branch'release/2.0.7' with non-snapshot versions"
+    },
+    {
+      "sha": "3ae145ea19a40bbdc0d5b0219a4b86b6a5a3f052",
+      "date": "2023-02-21T13:42:59+08:00",
+      "author": "miaoyinjun",
+      "email": "312656362@qq.com",
+      "message": "updating poms for branch'release/2.0.7' with non-snapshot versions"
+    },
+    {
+      "sha": "81557df83838d8a2542947ca77f07d06b9f3b4e9",
+      "date": "2023-02-21T13:37:36+08:00",
+      "author": "miaoyinjun",
+      "email": "312656362@qq.com",
+      "message": "fixed-version.sentinel-parent\n"
+    },
+    {
+      "sha": "e78bdea2d0e451f2a20b65c8589e27bb36c29a1b",
+      "date": "2023-02-21T13:31:23+08:00",
+      "author": "miaoyinjun",
+      "email": "312656362@qq.com",
+      "message": "updating poms for 2.0.7 branch with snapshot versions"
+    },
+    {
+      "sha": "6729f61aed135044fc94409169b0a722ca1c2d13",
+      "date": "2023-02-21T10:39:34+08:00",
+      "author": "miaoyinjun",
+      "email": "312656362@qq.com",
+      "message": "优化-引入sentinel-parent\n"
+    },
+    {
+      "sha": "1630144dd61dac07eb2225de82f6cbe44540a999",
+      "date": "2023-02-21T09:14:35+08:00",
+      "author": "miaoyinjun",
+      "email": "312656362@qq.com",
+      "message": "优化-docker字体\n"
+    },
+    {
+      "sha": "e206c862e57e5162148bca427ab1676e9353c677",
+      "date": "2023-02-20T13:17:47+08:00",
+      "author": "miaoyinjun",
+      "email": "312656362@qq.com",
+      "message": "添加-docker-compose对minio支持\n"
+    },
+    {
+      "sha": "7630d4989ef49828e02c540aacdbe8d9ee2637fb",
+      "date": "2023-02-17T16:56:05+08:00",
+      "author": "miaoyinjun",
+      "email": "312656362@qq.com",
+      "message": "添加-docker-compose对xxljob和sentinel支持\n"
+    },
+    {
+      "sha": "0f5e89037cff4bcc6083f4dd27c9f969fb108d27",
+      "date": "2023-02-17T14:21:37+08:00",
+      "author": "miaoyinjun",
+      "email": "312656362@qq.com",
+      "message": "添加-sentinel的dist静态文件\n"
+    },
+    {
+      "sha": "c403f0dd3f86513fc2d48f3d430bc9a81c3aab38",
+      "date": "2023-02-17T14:16:42+08:00",
+      "author": "miaoyinjun",
+      "email": "312656362@qq.com",
+      "message": "添加-xxjob的dist静态文件\n"
+    },
+    {
+      "sha": "127cfee8bdc9b2e34d0f1ab5e43f58789db3ba8a",
+      "date": "2023-02-16T10:21:57+08:00",
+      "author": "miaoyinjun",
+      "email": "312656362@qq.com",
+      "message": "优化-使用docker-maven-plugin替换dockerfile-maven-plugin解决win10打包失败问题\n删除-dockerFile和wait-for.sh的调用\n"
+    },
+    {
+      "sha": "27e1759db132ffeef56ce52cc826b2fecbf43a00",
+      "date": "2023-02-11T17:51:35+08:00",
+      "author": "miaoyinjun",
+      "email": "312656362@qq.com",
+      "message": "优化-定时器-动作-由redis订阅完成-完成\n"
+    },
+    {
+      "sha": "1afc00433eb98ebeaf6c5b7790c6c9f424a7bcb9",
+      "date": "2023-02-07T15:39:53+08:00",
+      "author": "miaoyinjun",
+      "email": "312656362@qq.com",
+      "message": "优化-定时器-动作-由redis订阅完成-未修改完成\n"
+    },
+    {
+      "sha": "6da75c8e27a539740b146cd3718570423da6c9f9",
+      "date": "2023-02-07T13:04:47+08:00",
+      "author": "miaoyinjun",
+      "email": "312656362@qq.com",
+      "message": "优化-redisson前缀为项目名\n"
+    },
+    {
+      "sha": "477772363e43eaaf19d208ffff8c1bd33ddb6a91",
+      "date": "2023-02-06T09:58:27+08:00",
+      "author": "miaoyinjun",
+      "email": "312656362@qq.com",
+      "message": "增加-redisson注解（Jlock、JRepeat），参考自jeecg-boot\n"
+    },
+    {
+      "sha": "716324045854cd0e20bb17175cfa3c1f6859d7f6",
+      "date": "2023-02-01T10:38:11+08:00",
+      "author": "miaoyinjun",
+      "email": "312656362@qq.com",
+      "message": "修改-redis.lettuce替换为redisson\n"
+    },
+    {
+      "sha": "d00477e9ae143a0904085fdfaccad1794424b4cd",
+      "date": "2023-01-30T09:01:05+08:00",
+      "author": "miaoyinjun",
+      "email": "312656362@qq.com",
+      "message": "增加-404-405异常捕捉\n"
+    },
+    {
+      "sha": "a6f753b858e7512d27154a2f5bd4872287b68468",
+      "date": "2023-01-29T09:38:07+08:00",
+      "author": "miaoyinjun",
+      "email": "312656362@qq.com",
+      "message": "优化-AnonymousAccess重命名IgnoreAccess\n"
+    },
+    {
+      "sha": "b7d80c8e8bdceb216628b292e0c56fe55d0c8cd1",
+      "date": "2023-01-29T09:15:48+08:00",
+      "author": "miaoyinjun",
+      "email": "312656362@qq.com",
+      "message": "新增-BusinessException作为业务逻辑异常\n"
+    },
+    {
+      "sha": "ad24c79c7dcb54d716ae48c05dd9e0995a9e86fb",
+      "date": "2023-01-04T17:28:14+08:00",
+      "author": "miaoyinjun",
+      "email": "312656362@qq.com",
+      "message": "updating poms for 2.0.7-SNAPSHOT development\n"
+    },
+    {
+      "sha": "1d1c37456202e65216e6d442ce08ba29a76454f6",
+      "date": "2023-01-04T17:26:14+08:00",
+      "author": "miaoyinjun",
+      "email": "312656362@qq.com",
+      "message": "Merge branch 'release/2.0.6'\n\n# Conflicts:\n#\tjjche-boot/jjche-boot-demo/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-base-api/jjche-system-cloud-api/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-base-api/jjche-system-local-api/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-base-api/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-common/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-eladmin/jjche-boot-eladmin-generator/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-eladmin/jjche-boot-eladmin-logging/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-eladmin/jjche-boot-eladmin-tools/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-eladmin/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-cache-starter/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-cat-starter/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-cloud-gray-starter/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-cloud-starter/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-core-starter/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-filter-starter/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-log-starter/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-mybatis-starter/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-sba-starter/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-security-starter/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-serialize-starter/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-shardingsphere-starter/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-starter/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-swagger-starter/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-system-starter/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-starters/jjche-boot-userdetail-starter/pom.xml\n#\tjjche-boot/jjche-boot-parent/jjche-boot-starters/pom.xml\n#\tjjche-boot/jjche-boot-parent/pom.xml\n#\tjjche-boot/jjche-cloud/jjche-cloud-demo-provider/jjche-cloud-demo-provider-api/pom.xml\n#\tjjche-boot/jjche-cloud/jjche-cloud-demo-provider/jjche-cloud-demo-provider-biz/pom.xml\n#\tjjche-boot/jjche-cloud/jjche-cloud-demo-provider/pom.xml\n#\tjjche-boot/jjche-cloud/jjche-cloud-gateway/pom.xml\n#\tjjche-boot/jjche-cloud/jjche-cloud-monitor/pom.xml\n#\tjjche-boot/jjche-cloud/jjche-cloud-nacos/pom.xml\n#\tjjche-boot/jjche-cloud/jjche-cloud-system/pom.xml\n#\tjjche-boot/jjche-cloud/pom.xml\n#\tjjche-boot/pom.xml\n"
+    },
+    {
+      "sha": "f225261c4bc74ea692f708747caef520b74520ed",
+      "date": "2023-01-04T17:25:43+08:00",
+      "author": "miaoyinjun",
+      "email": "312656362@qq.com",
+      "message": "updating poms for 2.0.6 branch with snapshot versions\n"
+    },
+    {
+      "sha": "79d9a8db107914145efbb5abad962c1884ea7d71",
+      "date": "2023-01-04T13:35:54+08:00",
+      "author": "miaoyinjun",
+      "email": "312656362@qq.com",
+      "message": "增加-模块-xxljob\n"
+    },
+    {
+      "sha": "ab75e1e665813d397a98ca751d7f06becabf44a6",
+      "date": "2023-01-03T15:12:31+08:00",
+      "author": "miaoyinjun",
+      "email": "312656362@qq.com",
+      "message": "增加-模块-sentinel\n"
+    }
+  ],
+  "commit_sha": "1ce578f355ff959a1d172e6b0d1f96d48a020b1a",
+  "extracted_at": "2026-10-05T18:28:45.164412+00:00"
+}

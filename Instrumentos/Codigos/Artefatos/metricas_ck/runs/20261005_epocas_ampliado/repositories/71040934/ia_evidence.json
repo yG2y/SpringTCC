@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "c5eacce489d527d64809d35057e21445aa045e2d",
+      "date": "2019-11-23T12:18:57+01:00",
+      "author": "Marcel Szalbach",
+      "email": "marcel.szalbach@googlemail.com",
+      "message": " - updated some more dependencies\n"
+    },
+    {
+      "sha": "9253f23dca8a45c58df97d73b53f569ce35a7a36",
+      "date": "2019-11-22T20:32:55+01:00",
+      "author": "Marcel Szalbach",
+      "email": "marcel.szalbach@googlemail.com",
+      "message": " - changed client to use new node, react and npm so it works again\n"
+    },
+    {
+      "sha": "bda4d9a79a2b6e7d21e9de5e27cbc6775486d9df",
+      "date": "2019-05-09T21:18:21+02:00",
+      "author": "Marcel Szalbach",
+      "email": "4-bar-killa@web.de",
+      "message": "Update package.json"
+    },
+    {
+      "sha": "b05fa476d6d5abc67a07953813869a9ded75a45b",
+      "date": "2017-09-11T11:41:22+02:00",
+      "author": "mszalbach",
+      "email": "4-bar-killa@web.de",
+      "message": " - reverted to old selenium because 3.4 did not work correctly\n"
+    },
+    {
+      "sha": "c679cf12a2bb10700734ec1c46c4fc10e2ddb64e",
+      "date": "2017-07-27T10:23:08+02:00",
+      "author": "mszalbach",
+      "email": "4-bar-killa@web.de",
+      "message": "- removed not needed groovy dependencies\n"
+    },
+    {
+      "sha": "da32b00a56440781d47cdcbe57f411544aef26a5",
+      "date": "2017-07-27T10:08:07+02:00",
+      "author": "mszalbach",
+      "email": "4-bar-killa@web.de",
+      "message": "- moved spring dependeices to server to not influence the other modules\n"
+    },
+    {
+      "sha": "513c55a4577f167249330df96eaf610dd958e663",
+      "date": "2017-07-27T10:00:46+02:00",
+      "author": "mszalbach",
+      "email": "4-bar-killa@web.de",
+      "message": "- updated selenium and serenity\n- added dependencies which needs to be overwritten from spring boot\n"
+    },
+    {
+      "sha": "e8b06b608c8d23989a8ebb3d1452c61b0e3eea80",
+      "date": "2017-07-26T15:45:10+02:00",
+      "author": "mszalbach",
+      "email": "4-bar-killa@web.de",
+      "message": " -corrected name in test to not have the same as an other test\n - corrected menu test to work even it needs an Router\n"
+    },
+    {
+      "sha": "f8d77502661261c8588a68e40d0faf6c2b1cd72b",
+      "date": "2017-07-26T14:50:32+02:00",
+      "author": "mszalbach",
+      "email": "4-bar-killa@web.de",
+      "message": " -updated react dependencies\n"
+    },
+    {
+      "sha": "2539152b014a13d8a5dcc5c5aaebc43f8f88b199",
+      "date": "2017-07-26T14:38:17+02:00",
+      "author": "mszalbach",
+      "email": "4-bar-killa@web.de",
+      "message": " -updated non react frameworks used in client\n"
+    },
+    {
+      "sha": "be295e61e4383bb4d9fad480d87bd6853b782dce",
+      "date": "2017-07-26T14:36:18+02:00",
+      "author": "mszalbach",
+      "email": "4-bar-killa@web.de",
+      "message": " -updated testing framework\n"
+    },
+    {
+      "sha": "0b04e2e0d634156789958fb8706287602a0efa16",
+      "date": "2017-07-26T14:34:29+02:00",
+      "author": "mszalbach",
+      "email": "4-bar-killa@web.de",
+      "message": " -updated webpack\n"
+    },
+    {
+      "sha": "d6a90024cb45fa1f92944671453cf4ebf1b3659d",
+      "date": "2017-07-26T14:27:25+02:00",
+      "author": "mszalbach",
+      "email": "4-bar-killa@web.de",
+      "message": " -corrected ordering\n"
+    },
+    {
+      "sha": "a395d36dd21aa636fe778077883273d970fe50eb",
+      "date": "2017-07-26T14:24:53+02:00",
+      "author": "mszalbach",
+      "email": "4-bar-killa@web.de",
+      "message": " -updated spring-boot\n"
+    },
+    {
+      "sha": "7099316549821f919e566d1c586a5438fc8925ee",
+      "date": "2017-07-26T14:14:24+02:00",
+      "author": "mszalbach",
+      "email": "4-bar-killa@web.de",
+      "message": " -updated frontend plugin\n  - disabled karam tests which fail but were ignored because of error in frontend plugin\n - updated node and yarn\n"
+    },
+    {
+      "sha": "a4dc2737bb066ab5013899865b70a102f4762f61",
+      "date": "2017-07-12T14:54:13+02:00",
+      "author": "mszalbach",
+      "email": "4-bar-killa@web.de",
+      "message": "- disabled docker for circle ci\n"
+    },
+    {
+      "sha": "10002ccf31af84787faf14a8feed2deb0c50e7f0",
+      "date": "2017-07-12T14:52:02+02:00",
+      "author": "mszalbach",
+      "email": "4-bar-killa@web.de",
+      "message": "- tried to enable docker testing on circleci\n"
+    },
+    {
+      "sha": "daf0a7798f954b4dbfc4fa239286110888ef083f",
+      "date": "2017-07-12T14:49:15+02:00",
+      "author": "mszalbach",
+      "email": "4-bar-killa@web.de",
+      "message": "- tried to switch to circleci 2.0\n"
+    },
+    {
+      "sha": "148b6884c1ad58024e442c308c39237d50cc9835",
+      "date": "2017-06-06T09:43:38+02:00",
+      "author": "mszalbach",
+      "email": "4-bar-killa@web.de",
+      "message": "- updated yarn\n- updated client dependencies\n"
+    },
+    {
+      "sha": "7d2997aef8826243029e5242594deab0b8c0babe",
+      "date": "2017-05-30T08:55:25+02:00",
+      "author": "Marcel Szalbach",
+      "email": "4-bar-killa@web.de",
+      "message": "Update Readme.md"
+    },
+    {
+      "sha": "f75f91e8ce335cd64a773b100dabd702fe324c17",
+      "date": "2017-05-30T08:55:05+02:00",
+      "author": "Marcel Szalbach",
+      "email": "4-bar-killa@web.de",
+      "message": "Update Readme.md"
+    },
+    {
+      "sha": "1e14ef9e5e8f4eb599c6d30de80dd21fd85f685f",
+      "date": "2017-05-30T08:51:57+02:00",
+      "author": "Marcel Szalbach",
+      "email": "4-bar-killa@web.de",
+      "message": "- fixed typos"
+    },
+    {
+      "sha": "b1092011f643b6ecd4b6233fe6b7a0953d7df60a",
+      "date": "2017-05-23T14:06:03+02:00",
+      "author": "mszalbach",
+      "email": "4-bar-killa@web.de",
+      "message": "- switched to react-router v4\n"
+    },
+    {
+      "sha": "e1a88ad4c6550811c520ca0b14a501979be4d187",
+      "date": "2017-05-23T10:13:24+02:00",
+      "author": "mszalbach",
+      "email": "4-bar-killa@web.de",
+      "message": "- updated react router to newest 3er version, because the 4er will change the code dramatically\n"
+    },
+    {
+      "sha": "cab90d9c74abad2178c06d4f79a7339a5e337656",
+      "date": "2017-05-23T08:57:29+02:00",
+      "author": "mszalbach",
+      "email": "4-bar-killa@web.de",
+      "message": "- updated redux-toastr and corrected css import\n"
+    },
+    {
+      "sha": "0f3b8c9258cc1a63c630bc3dbda1699bf3c4f213",
+      "date": "2017-05-23T08:52:14+02:00",
+      "author": "mszalbach",
+      "email": "4-bar-killa@web.de",
+      "message": "- updated not conflicting packages\n"
+    },
+    {
+      "sha": "8df6b9e2e2478c98c4d06d1ccad66a544ade8317",
+      "date": "2017-05-23T08:50:48+02:00",
+      "author": "mszalbach",
+      "email": "4-bar-killa@web.de",
+      "message": "- updated not conflicting packages\n"
+    },
+    {
+      "sha": "aedfdfeb1008793578e29f483cb85a449283a139",
+      "date": "2017-05-23T08:49:22+02:00",
+      "author": "mszalbach",
+      "email": "4-bar-killa@web.de",
+      "message": "- updated not conflicting packages\n"
+    },
+    {
+      "sha": "d67fd540624cd2f70241db8e1dba8d71992052d1",
+      "date": "2017-05-23T08:39:07+02:00",
+      "author": "mszalbach",
+      "email": "4-bar-killa@web.de",
+      "message": "- updated spring-boot dependencies to newest version\n"
+    },
+    {
+      "sha": "38c99a65f1fc2be947176f1d365b1c3c422de14b",
+      "date": "2017-05-23T08:21:42+02:00",
+      "author": "mszalbach",
+      "email": "4-bar-killa@web.de",
+      "message": "- removed Intellij template\n"
+    }
+  ],
+  "commit_sha": "c5eacce489d527d64809d35057e21445aa045e2d",
+  "extracted_at": "2026-10-05T18:39:53.566358+00:00"
+}

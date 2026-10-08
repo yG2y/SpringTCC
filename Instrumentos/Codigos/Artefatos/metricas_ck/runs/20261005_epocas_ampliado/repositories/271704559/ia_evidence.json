@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "71b12a04df1c943752adb5f241151f493762b4a0",
+      "date": "2021-10-27T22:13:48-03:00",
+      "author": "Mario Rezende",
+      "email": "mariorez@gmail.com",
+      "message": "test: add faker library\n"
+    },
+    {
+      "sha": "5a239734bc955533cb4a39d1bff52621a86be203",
+      "date": "2021-10-22T08:59:28-03:00",
+      "author": "Mario Rezende",
+      "email": "mariorez@gmail.com",
+      "message": "build: upgrade Spring Boot version 2.5.6\n"
+    },
+    {
+      "sha": "75ee437c938f2bbbaaa3d8f66d07ba343333bdc9",
+      "date": "2020-07-25T09:42:26-03:00",
+      "author": "Mario Rezende",
+      "email": "mariorez@gmail.com",
+      "message": "update versions: Spring-Boot 2.3.2 and Cloud Hoxton.SR6\n"
+    },
+    {
+      "sha": "ff15c34e53c782d53dcd0dd47544b8ea1256ce6d",
+      "date": "2020-07-24T18:21:29-03:00",
+      "author": "Mario Rezende",
+      "email": "mariorez@gmail.com",
+      "message": "rename Event to InternalEvent as better description\n"
+    },
+    {
+      "sha": "a02021f3c385db342e71091b6fc509eca8f4c12e",
+      "date": "2020-07-24T16:32:06-03:00",
+      "author": "Mario Rezende",
+      "email": "mariorez@gmail.com",
+      "message": "refactoring: add ServiceBus to replace CommandBus and QueryBus\n"
+    },
+    {
+      "sha": "90fd1b38a427609a3235b72d38df77fb9511d931",
+      "date": "2020-07-24T15:52:22-03:00",
+      "author": "Mario Rezende",
+      "email": "mariorez@gmail.com",
+      "message": "pom cleanup\n"
+    },
+    {
+      "sha": "8bc0b221fe2c4d5b133d5b2c77309b1e6d20d749",
+      "date": "2020-07-22T12:40:58-03:00",
+      "author": "Mario Rezende",
+      "email": "mariorez@gmail.com",
+      "message": "improve integration tests\n"
+    },
+    {
+      "sha": "81f3b357e220ad225e13d33184e0f8cd3bee8e35",
+      "date": "2020-07-22T12:23:08-03:00",
+      "author": "Mario Rezende",
+      "email": "mariorez@gmail.com",
+      "message": "improve DataSourceHelper\n"
+    },
+    {
+      "sha": "f3bf8482ed07eb6f186df23d08ed653b53e0a043",
+      "date": "2020-07-21T21:24:32-03:00",
+      "author": "Mario Rezende",
+      "email": "mariorez@gmail.com",
+      "message": "update documentation\n"
+    },
+    {
+      "sha": "1409c2785917bf98b94298b1814d9f94f002549e",
+      "date": "2020-07-21T16:30:01-03:00",
+      "author": "Mario Rezende",
+      "email": "mariorez@gmail.com",
+      "message": "add query bub\n"
+    },
+    {
+      "sha": "25a822af615936a679cf2af5c8863fc085af9893",
+      "date": "2020-07-21T15:47:02-03:00",
+      "author": "Mario Rezende",
+      "email": "mariorez@gmail.com",
+      "message": "setup self validation to card command\n"
+    },
+    {
+      "sha": "79417252fb9bafc28fdfb09cf4ee549eb25b1e10",
+      "date": "2020-07-21T15:14:29-03:00",
+      "author": "Mario Rezende",
+      "email": "mariorez@gmail.com",
+      "message": "logging improvements\n"
+    },
+    {
+      "sha": "d64254d6f61f0e14e63019f3d9418bceeb5a3f3c",
+      "date": "2020-07-21T14:03:45-03:00",
+      "author": "Mario Rezende",
+      "email": "mariorez@gmail.com",
+      "message": "refactoring rename uuid to externalId\n"
+    },
+    {
+      "sha": "c7000bb992e2dca8d6503a76999a65b5d5156a31",
+      "date": "2020-07-21T13:06:27-03:00",
+      "author": "Mario Rezende",
+      "email": "mariorez@gmail.com",
+      "message": "add move bucket endpoint\n"
+    },
+    {
+      "sha": "85c11722afcbe340c69f1ca7dfc08565592fb3b3",
+      "date": "2020-07-21T12:38:50-03:00",
+      "author": "Mario Rezende",
+      "email": "mariorez@gmail.com",
+      "message": "refactoring bucket update flow to only change name\n"
+    },
+    {
+      "sha": "4087e757cf84a39863a332daa68c4321a3a15845",
+      "date": "2020-07-21T10:50:59-03:00",
+      "author": "Mario Rezende",
+      "email": "mariorez@gmail.com",
+      "message": "fix docs\n"
+    },
+    {
+      "sha": "f53883a348d07b3e18366e97cea82ffefb10f0d6",
+      "date": "2020-07-21T10:10:06-03:00",
+      "author": "Mario Rezende",
+      "email": "mariorez@gmail.com",
+      "message": "add self validating behavior to commands\n"
+    },
+    {
+      "sha": "cb15e79fad1e0a2d59da585b2b632044bd0c989f",
+      "date": "2020-07-21T09:27:55-03:00",
+      "author": "Mario Rezende",
+      "email": "mariorez@gmail.com",
+      "message": "improve handlers name\n"
+    },
+    {
+      "sha": "f945b5a9cd73f95234c7c60185a5e5c2dcfe9ec9",
+      "date": "2020-07-21T09:18:32-03:00",
+      "author": "Mario Rezende",
+      "email": "mariorez@gmail.com",
+      "message": "improve command event\n"
+    },
+    {
+      "sha": "1a89483d7ca409b3bd46676a56061fdf1340f8fe",
+      "date": "2020-07-12T13:35:13-03:00",
+      "author": "Mario Rezende",
+      "email": "mariorez@gmail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "8773e25e56df787dc79494f3d87cae668f0d261e",
+      "date": "2020-07-02T11:51:07-03:00",
+      "author": "Mario Rezende",
+      "email": "mariorez@gmail.com",
+      "message": "minor test improvement\n"
+    },
+    {
+      "sha": "f149325494463f5dcc060a24936ce7fdd2298050",
+      "date": "2020-07-01T23:30:27-03:00",
+      "author": "Mario Rezende",
+      "email": "mariorez@gmail.com",
+      "message": "configure log saas\n"
+    },
+    {
+      "sha": "8a92d2d97b0ab9bef67f98b26ac07fbd8dec31ba",
+      "date": "2020-07-01T22:55:41-03:00",
+      "author": "Mario Rezende",
+      "email": "mariorez@gmail.com",
+      "message": "improve test scenarios for bucket update\n"
+    },
+    {
+      "sha": "c61a66e46596466a907214d71f5e04bfd9085c89",
+      "date": "2020-06-30T23:35:34-03:00",
+      "author": "Mario Rezende",
+      "email": "mariorez@gmail.com",
+      "message": "improve tests scenarios for bucket creation\n"
+    },
+    {
+      "sha": "238d10be9328ed63f3dc84703fb655baa83bb15a",
+      "date": "2020-06-30T14:41:39-03:00",
+      "author": "Mario Rezende",
+      "email": "mariorez@gmail.com",
+      "message": "improve bucket validation using groups\n"
+    },
+    {
+      "sha": "cb0fca04c3570f55578990374e60aa30653ae75e",
+      "date": "2020-06-30T01:27:12-03:00",
+      "author": "Mario Rezende",
+      "email": "mariorez@gmail.com",
+      "message": "place records dtos inside controllers\n"
+    },
+    {
+      "sha": "5d781480f4db31f233c6d71463ed74bf4003fffe",
+      "date": "2020-06-29T23:42:44-03:00",
+      "author": "Mario Rezende",
+      "email": "mariorez@gmail.com",
+      "message": "improve test scnarios for bucket creation\n"
+    },
+    {
+      "sha": "b9f60c667febe54e532e76bca6b01064028c1e78",
+      "date": "2020-06-28T20:03:38-03:00",
+      "author": "Mario Rezende",
+      "email": "mariorez@gmail.com",
+      "message": "remove value object for id\n"
+    },
+    {
+      "sha": "0db28170fb34bd64198daa4ce8710f99055133a0",
+      "date": "2020-06-28T13:49:52-03:00",
+      "author": "Mario Rezende",
+      "email": "mariorez@gmail.com",
+      "message": "update slides\n"
+    },
+    {
+      "sha": "5977a3722b72c7a5d614d8c364137fcad6ad9a26",
+      "date": "2020-06-27T14:07:01-03:00",
+      "author": "Mario Rezende",
+      "email": "mariorez@gmail.com",
+      "message": "remove travis ci and sonar cloud (not support Java 14)\n"
+    }
+  ],
+  "commit_sha": "71b12a04df1c943752adb5f241151f493762b4a0",
+  "extracted_at": "2026-10-05T18:25:29.676777+00:00"
+}

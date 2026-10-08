@@ -1,0 +1,76 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${springboot.version};2.3.12.RELEASE",
+  "spring_boot_major": "2",
+  "java_versions_declared": "1.8;8",
+  "build_evidence": [
+    {
+      "file": "easy-spring-boot-api-base/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "easy-spring-boot-api-base/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "easy-spring-boot-api-base/pom.xml",
+      "artifact": "spring-boot-starter-logging"
+    },
+    {
+      "file": "easy-spring-boot-api-base/pom.xml",
+      "artifact": "spring-boot-starter-json"
+    },
+    {
+      "file": "easy-spring-boot-api-client/pom.xml",
+      "artifact": "spring-boot-starter-json"
+    },
+    {
+      "file": "easy-spring-boot-api-client/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "easy-spring-boot-api-client/pom.xml",
+      "artifact": "spring-boot-starter-logging"
+    },
+    {
+      "file": "easy-spring-boot-api-dao/pom.xml",
+      "artifact": "spring-boot-starter-json"
+    },
+    {
+      "file": "easy-spring-boot-api-dao/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "easy-spring-boot-api-service/pom.xml",
+      "artifact": "spring-boot-starter-mail"
+    },
+    {
+      "file": "easy-spring-boot-api/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "easy-spring-boot-api/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "easy-spring-boot-api/pom.xml",
+      "artifact": "spring-boot-starter-undertow"
+    },
+    {
+      "file": "easy-spring-boot-api/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "easy-spring-boot-api/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-test"
+    }
+  ]
+}

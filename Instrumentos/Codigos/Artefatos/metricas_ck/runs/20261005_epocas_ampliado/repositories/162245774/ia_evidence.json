@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "77b2e0b9d1929be5b82d09e8e222f792f41b342e",
+      "date": "2026-06-14T18:19:23+08:00",
+      "author": "fengyw",
+      "email": "fengyw@roncoo.com",
+      "message": "docs(README): 更新说明\n"
+    },
+    {
+      "sha": "f0e1d01f84dcdad0772a80ea383a1577d57bb5a7",
+      "date": "2026-06-04T13:16:51+08:00",
+      "author": "fengyw",
+      "email": "fengyw@roncoo.com",
+      "message": "docs(README): 更新项目介绍内容\n"
+    },
+    {
+      "sha": "2a46435de605ab5c9a8eee4c77e2ddab3359f0b3",
+      "date": "2026-06-04T13:16:03+08:00",
+      "author": "fengyw",
+      "email": "fengyw@roncoo.com",
+      "message": "docs(README): 更新项目介绍内容\n"
+    },
+    {
+      "sha": "10a8795da3d70f8c282e7e616c8f40a984a752e4",
+      "date": "2026-05-29T11:02:35+08:00",
+      "author": "fengyw",
+      "email": "fengyw@roncoo.com",
+      "message": "docs(homepage): 增加功能演示\n"
+    },
+    {
+      "sha": "70d1d7942584dcbdf5eac8a817ced77484f9a1b9",
+      "date": "2026-05-29T11:02:21+08:00",
+      "author": "fengyw",
+      "email": "fengyw@roncoo.com",
+      "message": "docs(homepage): 增加功能演示\n"
+    },
+    {
+      "sha": "836dd9493dd29cf81c1193964cb32ee09d0fcce3",
+      "date": "2026-05-29T10:59:59+08:00",
+      "author": "fengyw",
+      "email": "fengyw@roncoo.com",
+      "message": "Merge branch 'dev' of https://code.roncoos.com/opens/roncoo-education\n"
+    },
+    {
+      "sha": "4a3601b0b7a26b9fd23c1079879151786cab48b4",
+      "date": "2026-05-29T10:58:18+08:00",
+      "author": "fengyw",
+      "email": "fengyw@roncoo.com",
+      "message": "docs(homepage): 增加功能演示\n"
+    },
+    {
+      "sha": "ab1bc214ac94be1d004e79fbfed85306355814b0",
+      "date": "2026-05-29T10:36:04+08:00",
+      "author": "fengyw",
+      "email": "fengyw@roncoo.com",
+      "message": "fix(ai): 增加AI服务请求失败时的错误处理\n"
+    },
+    {
+      "sha": "ddc514a430b82ee5034f0ba71b6fa882e1c30e9b",
+      "date": "2026-05-29T08:31:45+08:00",
+      "author": "fengyw",
+      "email": "fengyw@roncoo.com",
+      "message": "docs(README): 更新技术栈版本信息\n"
+    },
+    {
+      "sha": "b78939f18659887851ef78918ecb10807267e279",
+      "date": "2026-05-28T16:29:58+08:00",
+      "author": "fengyw",
+      "email": "fengyw@roncoo.com",
+      "message": "docs(readme): 升级项目依赖版本\n"
+    },
+    {
+      "sha": "19f5b47fd07d4ac88257e5f8e892b66a8efd75bc",
+      "date": "2026-05-28T09:55:47+08:00",
+      "author": "fengyw",
+      "email": "fengyw@roncoo.com",
+      "message": "refactor(system): 优化AI写作服务的HTTP客户端配置\n\n- 将HttpClient构建移到try语句外部避免资源管理问题\n- 添加30秒连接超时配置提高请求稳定性\n- 调整代码结构增强可读性和维护性\n"
+    },
+    {
+      "sha": "03b00df1e1e5edf45c062937f50eb72954d4262f",
+      "date": "2026-05-28T09:17:23+08:00",
+      "author": "fengyw",
+      "email": "fengyw@roncoo.com",
+      "message": "fix(course): 修复课程进度计算中的空指针异常\n\n- 添加了对学习总时长和课时总数的空值检查\n- 避免当学习数据为空时出现除零或空指针异常\n- 确保课程进度计算的安全性\n- 统一了小数点后两位的精度处理\n- 优化了计算逻辑的执行流程\n"
+    },
+    {
+      "sha": "4d48a14ff2836cef30d6b270fde131a235a6c831",
+      "date": "2026-05-28T09:04:26+08:00",
+      "author": "fengyw",
+      "email": "fengyw@roncoo.com",
+      "message": "chore(config): 更新开发环境服务实例名称配置\n\n- 将 system-server 实例名称更改为 service-system\n- 将 user-server 实例名称更改为 service-user\n- 将 course-server 实例名称更改为 service-course\n- 保持服务端口配置不变，继续使用本地地址访问\n"
+    },
+    {
+      "sha": "e5adb9d8aa8dd60e93442bc98adb555007679bcb",
+      "date": "2026-05-28T07:42:22+08:00",
+      "author": "fengyw",
+      "email": "fengyw@roncoo.com",
+      "message": "docs(changelog): 更新版本发布说明\n"
+    },
+    {
+      "sha": "2978ed12b28b4ca244431f877419372e8c513ad6",
+      "date": "2026-05-28T07:30:48+08:00",
+      "author": "fengyw",
+      "email": "fengyw@roncoo.com",
+      "message": "refactor(system): 优化AI写作服务的HTTP客户端资源管理\n\n- 使用try-with-resources语法确保HttpClient连接自动关闭\n- 在AdminGlobalFilter中移除不必要的null初始化\n- 更新注释文档添加返回值说明\n"
+    },
+    {
+      "sha": "239fd0ef9ee73bd550e3eb91fbd26f4b037eab10",
+      "date": "2026-05-28T07:28:44+08:00",
+      "author": "fengyw",
+      "email": "fengyw@roncoo.com",
+      "message": "fix(system): 修复SSE消息中换行符编码问题\n\n- 修正了SSE协议中换行符编码逻辑，避免内容中的反斜杠被错误处理\n- 更新了编码规则为先转义反斜杠再处理换行符\n- 确保SSE每条消息以\\\\n\\\\n结尾的协议格式正确性\n"
+    },
+    {
+      "sha": "b48ce35365da3a932532460e03b1aef35180bd5b",
+      "date": "2026-05-28T07:28:22+08:00",
+      "author": "fengyw",
+      "email": "fengyw@roncoo.com",
+      "message": "fix(auth): 修复当前用户获取逻辑并增强空值处理\n\n- 在 AdminSysUserController 的 currentView 方法中添加用户ID空值检查\n- 当用户ID为空时返回错误提示\"未获取到登录信息，请重新登录\"\n- 修改 ThreadContext.userId() 方法以支持返回 null 而非抛出异常\n- 更新 JavaDoc 注释说明 userId() 方法在未登录时返回 null\n- 优化 ThreadContext 中的字符串转长整型逻辑以避免潜在的转换异常\n"
+    },
+    {
+      "sha": "fc472af29849edb18f9d29a305d8eb62eb2b5702",
+      "date": "2026-05-28T07:27:52+08:00",
+      "author": "fengyw",
+      "email": "fengyw@roncoo.com",
+      "message": "fix(gateway): 修复管理员全局过滤器中请求头传递问题\n\n- 调整 ResultEnum 导入位置以符合代码规范\n- 重构请求头修改逻辑，正确构建变异的 ServerWebExchange 对象\n- 修复用户ID请求头传递机制，确保下游服务能正确获取用户信息\n- 确保过滤器链使用正确的交换对象进行后续处理\n"
+    },
+    {
+      "sha": "290c95f266f4a5be47676c71d1b18a4d9ecdbae9",
+      "date": "2026-05-27T21:23:02+08:00",
+      "author": "fengyw",
+      "email": "fengyw@roncoo.com",
+      "message": "refactor(system): 升级Swagger注解版本\n"
+    },
+    {
+      "sha": "915987f9b60867294ddfc75ce678c6c1cb355faa",
+      "date": "2026-05-27T21:02:18+08:00",
+      "author": "fengyw",
+      "email": "fengyw@roncoo.com",
+      "message": "refactor(system): 升级Swagger注解版本\n"
+    },
+    {
+      "sha": "33c6d39349062ebb4ca9189014b045529227f5e6",
+      "date": "2026-05-26T13:08:33+08:00",
+      "author": "fengyw",
+      "email": "fengyw@roncoo.com",
+      "message": "Merge branch 'master' of https://code.roncoos.com/opens/roncoo-education into dev\n"
+    },
+    {
+      "sha": "63b1342a8772d5095f7746ac3bd3c039484b41e3",
+      "date": "2026-05-26T13:05:27+08:00",
+      "author": "fengyw",
+      "email": "fengyw@roncoo.com",
+      "message": "feat(system): 新增AI写作功能支持SSE流式输出\n\n- 实现AdminAiWriteBiz业务类，提供AI写作任务创建和流式内容获取功能\n- 添加AdminAiWriteCreateReq和AdminAiWriteCompletionsReq请求参数类\n- 创建AdminAiWriteController控制器，提供创建任务和SSE流式接口\n- 集成OpenAI兼容API，支持多种写作类型包括课程简介、文章、营销文案等\n- 实现基于token的任务状态管理和缓存机制\n- 添加WriteTypeEnum枚举定义五种AI写作类型\n- 支持Markdown格式输出和流式响应处理\n"
+    },
+    {
+      "sha": "9bd21f78b94de3f179f63dd79339bc82dcecd076",
+      "date": "2026-05-26T13:05:06+08:00",
+      "author": "fengyw",
+      "email": "fengyw@roncoo.com",
+      "message": "feat(core): 升级到v26.0.0\n\n- 将Spring Boot版本从3.2.4升级到3.5.0，要求JDK>=17\n- 将Spring Cloud版本从2023.0.1升级到2025.0.0\n- 将xxl-job版本从3.1.1升级到3.4.0\n- 将nacos版本从2.3.2升级到3.0.3\n- 将seata版本从2.0.0升级到2.5.0\n- 更新所有子模块的版本号到26.0.0-RELEASE\n"
+    },
+    {
+      "sha": "ef496f766bf4fe5cd5a1a6c00912b382bc7a9dfa",
+      "date": "2026-05-26T12:23:09+08:00",
+      "author": "fengyw",
+      "email": "fengyw@roncoo.com",
+      "message": "chore(config): 统一配置文件并升级依赖版本\n\n- 将各个模块的 bootstrap.properties 配置文件统一引入公共配置\n- 移除各模块中的 Nacos 相关配置项\n- 在 common-core 模块中添加 Nacos 依赖\n- 升级 Spring Boot 版本从 3.2.4 到 3.5.0\n- 升级 Spring Cloud 版本从 2023.0.1 到 2025.0.0\n- 升级 Spring Cloud Alibaba 版本从 2023.0.1.0 到 2025.0.0.0\n- 更新 MyBatis 版本从 3.0.3 到 3.0.5\n"
+    },
+    {
+      "sha": "37127e8de457f702b2f8c7b38ae3b955637da7d6",
+      "date": "2026-05-06T09:10:09+08:00",
+      "author": "fengyw",
+      "email": "fengyw@roncoo.com",
+      "message": "docs(README): 更新说明\n"
+    },
+    {
+      "sha": "efeacb53d95bd8f30acbcde3bd681f546cb9d7e3",
+      "date": "2026-04-22T20:42:24+08:00",
+      "author": "fengyw",
+      "email": "fengyw@roncoo.com",
+      "message": "docs(README): 更新使用须知\n"
+    },
+    {
+      "sha": "61a344a04178a75ec0e938d47ee953f143250ab5",
+      "date": "2026-04-22T20:40:16+08:00",
+      "author": "fengyw",
+      "email": "fengyw@roncoo.com",
+      "message": "docs(README): 更新使用须知\n"
+    },
+    {
+      "sha": "188aeecf0db4a7b8310346e06b936d9a2c809da1",
+      "date": "2026-04-22T20:16:35+08:00",
+      "author": "fengyw",
+      "email": "fengyw@roncoo.com",
+      "message": "docs(README): 更新使用须知\n"
+    },
+    {
+      "sha": "c83ee7dfdee4183240c818f7c69f2159de203c78",
+      "date": "2026-04-22T12:04:28Z",
+      "author": "夏天飘过的风",
+      "email": "297115770@qq.com",
+      "message": "更新开源协议\n\nSigned-off-by: 夏天飘过的风 <297115770@qq.com>"
+    },
+    {
+      "sha": "f25daee29e41e928138bccf56a257f82222f9255",
+      "date": "2026-04-14T08:24:29+08:00",
+      "author": "fengyw",
+      "email": "fengyw@roncoo.com",
+      "message": "chore(log): 更新日志配置文件格式\n"
+    }
+  ],
+  "commit_sha": "77b2e0b9d1929be5b82d09e8e222f792f41b342e",
+  "extracted_at": "2026-10-05T17:58:47.908439+00:00"
+}

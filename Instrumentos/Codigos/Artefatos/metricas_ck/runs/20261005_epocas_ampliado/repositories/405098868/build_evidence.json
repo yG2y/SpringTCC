@@ -1,0 +1,52 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${spring-boot.version};2.7.7",
+  "spring_boot_major": "2",
+  "java_versions_declared": "1.8",
+  "build_evidence": [
+    {
+      "file": "hugo-admin-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "hugo-common/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "hugo-common/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "hugo-common/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "hugo-framework/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "hugo-framework/pom.xml",
+      "artifact": "spring-boot-starter-undertow"
+    },
+    {
+      "file": "hugo-framework/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "hugo-framework/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "hugo-framework/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "hugo-ms/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-dependencies"
+    }
+  ]
+}

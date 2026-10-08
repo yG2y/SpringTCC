@@ -1,0 +1,44 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "2.7.18;2.7.3",
+  "spring_boot_major": "2",
+  "java_versions_declared": "1.8;8",
+  "build_evidence": [
+    {
+      "file": "database-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "database-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "database-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "database-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "database-tests/database-spring-boot-starter-hikari-test/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "database-tests/database-spring-boot-starter-mybatis-test/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "database-tests/database-spring-boot-starter-test/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "database-tests/database-spring-boot-starter-test/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "database-tests/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    }
+  ]
+}

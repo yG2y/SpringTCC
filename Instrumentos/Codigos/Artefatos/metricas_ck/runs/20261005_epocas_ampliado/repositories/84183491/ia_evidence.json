@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "b4f6601ff5c1be2e9d6044d094abb7093f50d15c",
+      "date": "2026-10-02T01:09:38+02:00",
+      "author": "Fabrice Daugan",
+      "email": "fabrice.daugan@gmail.com",
+      "message": "feat: Update SecuritySpringDataListener and tests to enhance inGroup2 and inCompany2 functions with improved logic for container membership checks\n"
+    },
+    {
+      "sha": "3aa1733bbbc67dd8f69d2b6a449c89559bda0ad1",
+      "date": "2026-10-02T01:00:10+02:00",
+      "author": "Fabrice Daugan",
+      "email": "fabrice.daugan@gmail.com",
+      "message": "feat: Enhance SubscriptionRepository methods to improve clarity and functionality of project subscription queries\n"
+    },
+    {
+      "sha": "bdacab83027169ffe208c933a1013a62714e8415",
+      "date": "2026-10-02T00:35:23+02:00",
+      "author": "Fabrice Daugan",
+      "email": "fabrice.daugan@gmail.com",
+      "message": "feat: Update documentation and deprecate outdated methods in repositories for improved clarity and functionality\n"
+    },
+    {
+      "sha": "6576e4fc453a18628ddc906778847d260a2e88d2",
+      "date": "2026-10-01T23:29:13+02:00",
+      "author": "Fabrice Daugan",
+      "email": "fabrice.daugan@gmail.com",
+      "message": "feat: Add pagination and status filtering for visible tasks in TaskStatusResource and repositories\n"
+    },
+    {
+      "sha": "748e5241b5012137b458036dc2713e04ed08f57e",
+      "date": "2026-10-01T23:29:07+02:00",
+      "author": "Fabrice Daugan",
+      "email": "fabrice.daugan@gmail.com",
+      "message": "feat: Enhance subscription visibility checks and refresh functionality with batch processing\n"
+    },
+    {
+      "sha": "7c5b506bacf839e05ebce3d0b1b397cfd4265953",
+      "date": "2026-10-01T23:27:17+02:00",
+      "author": "Fabrice Daugan",
+      "email": "fabrice.daugan@gmail.com",
+      "message": "feat: Update query in ProjectRepository to improve visibility checks for projects with subscriptions\n"
+    },
+    {
+      "sha": "2585a312127859280337a10a9345b8a2fd42ddbf",
+      "date": "2026-10-01T23:26:39+02:00",
+      "author": "Fabrice Daugan",
+      "email": "fabrice.daugan@gmail.com",
+      "message": "feat: Add event retention and purge functionality with last event checks\n"
+    },
+    {
+      "sha": "026f0aeea0ff11f27c4c1f9506ddd39b39ba6eb5",
+      "date": "2026-10-01T22:23:03+02:00",
+      "author": "Fabrice Daugan",
+      "email": "fabrice.daugan@gmail.com",
+      "message": "feat: Deprecate GET status refresh methods and introduce POST alternatives for subscription status updates\n"
+    },
+    {
+      "sha": "fecc05a5e5d7e9fe6ac0369c56ce6f311160c7e4",
+      "date": "2026-10-01T22:22:43+02:00",
+      "author": "Fabrice Daugan",
+      "email": "fabrice.daugan@gmail.com",
+      "message": "feat: Ensure project creation ignores existing identifier to prevent overwriting\n"
+    },
+    {
+      "sha": "7f472c2b44c272dfb41eed6efbe3ed13a6ee364d",
+      "date": "2026-10-01T20:18:54+02:00",
+      "author": "Fabrice Daugan",
+      "email": "fabrice.daugan@gmail.com",
+      "message": "feat: Implement database locking for task management and enhance pagination handling\n"
+    },
+    {
+      "sha": "a292d6f368c89b5b89d2f523be3d38669b55a6bb",
+      "date": "2026-10-01T20:18:46+02:00",
+      "author": "Fabrice Daugan",
+      "email": "fabrice.daugan@gmail.com",
+      "message": "feat: Enhance subscription and node management with visibility checks and caching improvements\n"
+    },
+    {
+      "sha": "1eb481ce80e3496d37dd859c5ebff73dbe200db4",
+      "date": "2026-10-01T20:17:17+02:00",
+      "author": "Fabrice Daugan",
+      "email": "fabrice.daugan@gmail.com",
+      "message": "feat: Add user log retention and purge functionality with scheduled deletion\n"
+    },
+    {
+      "sha": "0c793c18fbc99aa4e38ace9244851f3b557fcc05",
+      "date": "2026-10-01T20:06:48+02:00",
+      "author": "Fabrice Daugan",
+      "email": "fabrice.daugan@gmail.com",
+      "message": "feat: Enhance subscription and node management with visibility checks and caching improvements\n"
+    },
+    {
+      "sha": "2e765c0fa15773cbe834b8e988538b94d5f13b5a",
+      "date": "2026-10-01T20:04:28+02:00",
+      "author": "Fabrice Daugan",
+      "email": "fabrice.daugan@gmail.com",
+      "message": "feat: add indexes to database tables and create IndexesTest for validation\n"
+    },
+    {
+      "sha": "d68df911a407cfd28ee90d3c9492074595166102",
+      "date": "2026-10-01T19:43:04+02:00",
+      "author": "Fabrice Daugan",
+      "email": "fabrice.daugan@gmail.com",
+      "message": "fix: documentation consistency\n"
+    },
+    {
+      "sha": "cb75fed82679ea99ba49c5bc8522113ef100ee95",
+      "date": "2026-10-01T19:42:02+02:00",
+      "author": "Fabrice Daugan",
+      "email": "fabrice.daugan@gmail.com",
+      "message": "fix: remove empty plugins.home property from application.properties\n"
+    },
+    {
+      "sha": "e540600b4e0f1b68357cf77fe2a9eca3e9266dab",
+      "date": "2026-10-01T19:41:47+02:00",
+      "author": "Fabrice Daugan",
+      "email": "fabrice.daugan@gmail.com",
+      "message": "fix: update SonarCloud project version reference to use environment variable\n"
+    },
+    {
+      "sha": "aefdbcae9fbcfec5cce7a3487c29de05ce51ad9b",
+      "date": "2026-10-01T19:41:38+02:00",
+      "author": "Fabrice Daugan",
+      "email": "fabrice.daugan@gmail.com",
+      "message": "fix: update POM descriptions and URLs for consistency across modules\n"
+    },
+    {
+      "sha": "1b52c3b7f7e518edea6fca733bc56fbe7dee211a",
+      "date": "2026-10-01T19:40:35+02:00",
+      "author": "Fabrice Daugan",
+      "email": "fabrice.daugan@gmail.com",
+      "message": "fix: remove CodeClimate configuration and update README with module details and build instructions\n"
+    },
+    {
+      "sha": "f971210afd661d16ebd95d7d9e1abf9622cd6bb8",
+      "date": "2026-10-01T19:22:56+02:00",
+      "author": "Fabrice Daugan",
+      "email": "fabrice.daugan@gmail.com",
+      "message": "fix: clarify uniqueness constraint for role names in IamSystemUserDetailsProvider\n"
+    },
+    {
+      "sha": "d74144934fd38c758dcdfd73bc866cc1ed69cfb0",
+      "date": "2026-10-01T19:22:47+02:00",
+      "author": "Fabrice Daugan",
+      "email": "fabrice.daugan@gmail.com",
+      "message": "fix: update SubscriptionEditionVo to clarify subscription identifier usage and ensure proper JSON property access\n"
+    },
+    {
+      "sha": "5655c85400cd3d6629f4bbbd267dfb1c0c1ca85d",
+      "date": "2026-10-01T19:22:40+02:00",
+      "author": "Fabrice Daugan",
+      "email": "fabrice.daugan@gmail.com",
+      "message": "fix: enhance project visibility checks during updates and add corresponding test\n"
+    },
+    {
+      "sha": "24f67ecffcbf929589bb03001bcd3a1852c5e3f4",
+      "date": "2026-10-01T19:21:42+02:00",
+      "author": "Fabrice Daugan",
+      "email": "fabrice.daugan@gmail.com",
+      "message": "fix: add method to retrieve a visible delegate and enhance related tests\n"
+    },
+    {
+      "sha": "528d69e0efd522841b8671b1309e7b02e22c2fa9",
+      "date": "2026-10-01T19:21:28+02:00",
+      "author": "Fabrice Daugan",
+      "email": "fabrice.daugan@gmail.com",
+      "message": "fix: enforce admin access control in findAll method and add corresponding test\n"
+    },
+    {
+      "sha": "45c38beda223dab24427b9165ac03a21f3d96ed1",
+      "date": "2026-10-01T19:20:31+02:00",
+      "author": "Fabrice Daugan",
+      "email": "fabrice.daugan@gmail.com",
+      "message": "fix: require managed subscription check before cancelling task\n"
+    },
+    {
+      "sha": "d39c60f7b6a50df42e13f0bf9bc416bc11810b9f",
+      "date": "2026-10-01T19:20:14+02:00",
+      "author": "Fabrice Daugan",
+      "email": "fabrice.daugan@gmail.com",
+      "message": "fix: enhance delegate management and validation in creation and update processes\n"
+    },
+    {
+      "sha": "55796164787bd843a21d452feb53b57d7ff645b6",
+      "date": "2026-10-01T19:19:56+02:00",
+      "author": "Fabrice Daugan",
+      "email": "fabrice.daugan@gmail.com",
+      "message": "fix: add method to retrieve managed configured entities and update deletion logic\n"
+    },
+    {
+      "sha": "15d4e4aba5495214cbfe2d80ab1e63a594f21c97",
+      "date": "2026-10-01T19:19:37+02:00",
+      "author": "Fabrice Daugan",
+      "email": "fabrice.daugan@gmail.com",
+      "message": "fix: add checks for managed subscriptions and ensure identifier is not overwritten during creation\n"
+    },
+    {
+      "sha": "2055e1d34ba5de1320860adf7df6bd0f062472eb",
+      "date": "2026-10-01T19:19:00+02:00",
+      "author": "Fabrice Daugan",
+      "email": "fabrice.daugan@gmail.com",
+      "message": "fix: enforce writable node check for task cancellation\n"
+    },
+    {
+      "sha": "f0b4f8e536e7554a8c4fd7a5281d4c4c4d33ef24",
+      "date": "2026-10-01T19:18:13+02:00",
+      "author": "Fabrice Daugan",
+      "email": "fabrice.daugan@gmail.com",
+      "message": "fix: update query conditions to use RIGHT function for DN matching\n"
+    }
+  ],
+  "commit_sha": "b4f6601ff5c1be2e9d6044d094abb7093f50d15c",
+  "extracted_at": "2026-10-05T18:26:45.805782+00:00"
+}

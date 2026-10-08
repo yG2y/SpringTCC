@@ -1,0 +1,236 @@
+{
+  "ia_status": "com_evidencia",
+  "ia_level": 2,
+  "ia_agents": "Claude Code",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "f3c2227533a9da407db4f84e2f1f81ddf8371380",
+      "trailer": "Claude Fable 5 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "fed63406c32d479c6a89d4c8c9a64fdefa1b37e7",
+      "trailer": "Claude Fable 5 <noreply@anthropic.com>"
+    }
+  ],
+  "commits": [
+    {
+      "sha": "f3c2227533a9da407db4f84e2f1f81ddf8371380",
+      "date": "2026-08-13T15:04:36+02:00",
+      "author": "Philip Riecks",
+      "email": "14176609+rieckpil@users.noreply.github.com",
+      "message": "integrate TestLens for flaky test detection (#501)\n\nAdd the setup-testlens GitHub Action to the Maven workflow so\nSurefire and Failsafe test results are reported to TestLens.\n\nCo-authored-by: Claude Fable 5 <noreply@anthropic.com>"
+    },
+    {
+      "sha": "fed63406c32d479c6a89d4c8c9a64fdefa1b37e7",
+      "date": "2026-08-03T12:55:59+02:00",
+      "author": "Philip Riecks",
+      "email": "14176609+rieckpil@users.noreply.github.com",
+      "message": "replace markdown-link-check with lychee for link checking (#497)\n\nThe markdown-link-check based workflow started crashing in CI without\nany output before checking a single link. The tool is pinned to a 2022\nrelease and barely maintained, so switch to the actively maintained\nlychee-action instead.\n\n- localhost links are skipped via --exclude-loopback\n- the root-relative /pom.xml link is now resolved via --root-dir\n  instead of being ignored\n- GITHUB_TOKEN avoids rate limiting for the github.com links\n- remove the now obsolete .broken-link-config.json\n\nCo-authored-by: Claude Fable 5 <noreply@anthropic.com>"
+    },
+    {
+      "sha": "3f604263b50763ff265c9ee1fba57b6d521e7b27",
+      "date": "2026-08-03T12:45:40+02:00",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency digital.pragmatech.testing:spring-test-profiler to v0.2.3 (#495)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "feb9affa047f80b1e11aadca1b87e244c1f3e375",
+      "date": "2026-06-24T14:58:15+02:00",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update testcontainers-java monorepo to v2.0.5 (#491)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "c2a516de6677d86227d9cdf8d26abb13927356d6",
+      "date": "2026-06-03T08:54:15+02:00",
+      "author": "Philip Riecks",
+      "email": "mail@philipriecks.de",
+      "message": "fix local verification on CI (#494)"
+    },
+    {
+      "sha": "863d5de50fb781526b17ee11ae0c0d14cfe85e59",
+      "date": "2026-05-02T08:54:53+02:00",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update actions/upload-artifact action to v7 (#492)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "8b635948fd9a3ee2945fb23b1f10f4801f77aff4",
+      "date": "2026-03-23T07:27:50+01:00",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update actions/checkout action to v6 (#489)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "69ff95db1e40d81ee740904612519f203ec32909",
+      "date": "2026-03-23T07:27:37+01:00",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update actions/setup-node action to v6 (#490)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "e5c1f956e6324b617168ac43eb3021a8012a5616",
+      "date": "2026-03-17T08:22:15+01:00",
+      "author": "Philip Riecks",
+      "email": "mail@philipriecks.de",
+      "message": "showcase new Testcontainers features (#486)"
+    },
+    {
+      "sha": "c74bcc45574bd65cb4bbe8c2054edebc0967853c",
+      "date": "2026-03-14T14:20:14+01:00",
+      "author": "Philip Riecks",
+      "email": "mail@philipriecks.de",
+      "message": "migrate frontend to React 19 (#487)\n\nMigrate frontend to React 19.2, TypeScript 5.9, and Vite 8\n\nBump React to 19.2.4, react-dom to 19.2.4\nBump TypeScript to 5.9.3 (@types/react 19, @types/react-dom 19)\nBump Vite to 8.0, @vitejs/plugin-react to 5.2, vitest to 4.1\nBump @testing-library/react to 16.3 (required for React 19)\nBump @mantine/core + @mantine/hooks to 7.17 (React 19 peer dep)\nBump react-redux to 9.2, add explicit redux 5.0 dependency\nBump react-router-dom to 6.30.3, @tabler/icons-react to 3.40\nBump jsdom to 28, @types/node to 24\nFix Redux 5 type-stricter breaking changes:\n\nAdd [key: string]: unknown index signature to LoginAction/LogoutAction\nso they satisfy Redux 5's UnknownAction requirement\nCast reducers via as unknown as Reducer<RootState, AuthenticationActionTypes>\nto reconcile combineReducers' 3-param Reducer type with createStore's 2-param overload\nSwitch DevTools enhancer from && idiom to optional chaining (?.)\nso the type is StoreEnhancer | undefined instead of false | StoreEnhancer\nFix test/config changes for vitest 4 and React Router v6 future flags:\n\nReplace vi.fn().mockImplementation(() => ...) with class for ResizeObserver mock\n(vitest 4 requires function/class, not arrow, for constructors called with new)\nUse regular function for matchMedia mock to silence vitest 4 warning\nSwitch vite.config.mts to import defineConfig from vitest/config (v4 style)\nAdd v7_startTransition + v7_relativeSplatPath future flags to HashRouter and\nMemoryRouter to silence React Router v6 deprecation warnings"
+    },
+    {
+      "sha": "d1673278f2b5ffaf812eceb4c750c4ac8eafa90e",
+      "date": "2026-03-11T07:56:22+01:00",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency com.github.eirslett:frontend-maven-plugin to v1.15.4 (#475)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "1c5d7cbf0147707447e64eeca08b1eb861a25211",
+      "date": "2026-03-11T07:56:00+01:00",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency maven to v3.9.13 (#483)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "39c48c545aa05b3598460b55f17fcc73c8fbeac4",
+      "date": "2026-03-10T07:02:36+01:00",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency digital.pragmatech.testing:spring-test-profiler to v0.0.16 (#481)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "82d700e9484029af129006f2e13ffc2189e621fa",
+      "date": "2026-03-09T07:33:01+01:00",
+      "author": "Philip Riecks",
+      "email": "mail@philipriecks.de",
+      "message": "add reference to Spring Boot 3\n"
+    },
+    {
+      "sha": "fc36eb9eaf5173d8d4b30c790828151f8a4165d2",
+      "date": "2026-03-09T07:30:35+01:00",
+      "author": "Philip Riecks",
+      "email": "mail@philipriecks.de",
+      "message": "update version\n"
+    },
+    {
+      "sha": "3fe845555f82cf017b42c70f11efaa728d105fea",
+      "date": "2026-03-09T07:17:14+01:00",
+      "author": "Philip Riecks",
+      "email": "mail@philipriecks.de",
+      "message": "upgrade to Spring Boot 4.0 (#482)"
+    },
+    {
+      "sha": "84c585c7e042a6c82ee4d6277b4a332f6df06947",
+      "date": "2025-12-04T10:54:21+01:00",
+      "author": "Philip Riecks",
+      "email": "mail@philipriecks.de",
+      "message": "update docs\n"
+    },
+    {
+      "sha": "e93a06ebed2ddb37deead0a744827f0fda346f50",
+      "date": "2025-12-04T10:31:32+01:00",
+      "author": "Philip Riecks",
+      "email": "mail@philipriecks.de",
+      "message": "remove Maven extension\n"
+    },
+    {
+      "sha": "e8e3cd418c052cbb1fa0b2ca965b10eca6cc7656",
+      "date": "2025-12-04T10:30:00+01:00",
+      "author": "Philip Riecks",
+      "email": "mail@philipriecks.de",
+      "message": "add proxy info\n"
+    },
+    {
+      "sha": "5897b1d3a855bd0c3927bf9fa248cbf0c2f2ee2c",
+      "date": "2025-11-20T08:04:28+01:00",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency org.apache.maven.plugins:maven-failsafe-plugin to v3.5.4 (#478)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "51f26fc201fae4c61e2493720a8ae77e87eed654",
+      "date": "2025-10-15T13:27:36+02:00",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency maven-wrapper to v3.3.4 (#477)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "6762984d7eee9e54b3553543eb9bbb4b4a8596b6",
+      "date": "2025-10-15T13:03:31+02:00",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency digital.pragmatech.testing:spring-test-profiler to v0.0.13 (#476)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "9818cf8f374e24abc88f628a33eccab7c4d1ea10",
+      "date": "2025-10-15T09:35:44+02:00",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency maven to v3.9.11 (#474)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "c50061d68de526711126898f128a7043a1fe7333",
+      "date": "2025-10-15T08:15:25+02:00",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update localstack/localstack Docker tag to v4.9.2 (#472)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "7e0d3ff800e384fdf98014a7b48bdb5b4f798fe9",
+      "date": "2025-09-18T14:04:35+03:00",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency org.testcontainers:testcontainers-bom to v1.21.3 (#471)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "1c408d1a9213cbaf74d758b62655c9bc301889b4",
+      "date": "2025-09-18T09:39:43+03:00",
+      "author": "Philip Riecks",
+      "email": "mail@philipriecks.de",
+      "message": "update Spring Test Profiler\n"
+    },
+    {
+      "sha": "ef631e1556efcadd6f245f338f4dfc87936db493",
+      "date": "2025-08-18T08:17:29+02:00",
+      "author": "Philip Riecks",
+      "email": "mail@philipriecks.de",
+      "message": "update testimonials\n"
+    },
+    {
+      "sha": "9025e087451d96d36ec6cfee24550ae330ce4c17",
+      "date": "2025-08-18T08:13:38+02:00",
+      "author": "Philip Riecks",
+      "email": "mail@philipriecks.de",
+      "message": "update Node version\n"
+    },
+    {
+      "sha": "d1c160967a28f99ea3c62778b9ab09b4361e8700",
+      "date": "2025-08-18T07:47:07+02:00",
+      "author": "Philip Riecks",
+      "email": "mail@philipriecks.de",
+      "message": "update Spring Test Profiler\n"
+    },
+    {
+      "sha": "f093c7b732ec057591e8b2b0001ff979d3d6eb8b",
+      "date": "2025-07-24T08:57:46+02:00",
+      "author": "Philip Riecks",
+      "email": "mail@philipriecks.de",
+      "message": "include the Spring Test Profiler\n"
+    }
+  ],
+  "commit_sha": "f3c2227533a9da407db4f84e2f1f81ddf8371380",
+  "extracted_at": "2026-10-05T18:01:19.047840+00:00"
+}

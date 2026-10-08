@@ -1,0 +1,80 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "3.0.6",
+  "spring_boot_major": "3",
+  "java_versions_declared": "",
+  "build_evidence": [
+    {
+      "file": "account-api/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb"
+    },
+    {
+      "file": "account-api/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "account-api/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "api-gateway/pom.xml",
+      "artifact": "spring-boot-starter-oauth2-resource-server"
+    },
+    {
+      "file": "api-gateway/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "asset-management-api/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "asset-management-api/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "asset-management-api/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "discovery-server/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "notification-api/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "transaction-api/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "transaction-api/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "transaction-api/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "transaction-api/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    }
+  ]
+}

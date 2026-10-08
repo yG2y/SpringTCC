@@ -1,0 +1,167 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 22,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "1e0a1dca024fa283e55e730c74ef551059fcc0ce",
+      "date": "2023-11-20T16:50:43+08:00",
+      "author": "byh",
+      "email": "hy@.1023",
+      "message": "说明文档更新\n"
+    },
+    {
+      "sha": "6323c19378c831d5ebf9632a80d466fb9c576b02",
+      "date": "2023-11-20T16:41:59+08:00",
+      "author": "byh",
+      "email": "hy@.1023",
+      "message": "jwt信息扩展\n"
+    },
+    {
+      "sha": "f95f1f50453b448aff4f342fd134bd338a3064c1",
+      "date": "2023-10-30T18:03:04+08:00",
+      "author": "byh",
+      "email": "hy@.1023",
+      "message": "密码模式下 登陆错误缺失 DaoAuthenticationProvider 注入 bug 修复\n"
+    },
+    {
+      "sha": "caf91d89f4977fede112ea3e167b086d82f6cc99",
+      "date": "2023-10-26T18:33:18+08:00",
+      "author": "byh",
+      "email": "hy@.1023",
+      "message": "1:短信授权码模式(刷新tokenbug修复)\n2:自定义token Generator (用这个改的地方太多了)\n3:生成固定的私钥和公钥(jwt使用解决每次启动服务都是重新生成的问题)\n"
+    },
+    {
+      "sha": "29fe61fcf1bfc9a3b6e9416aca75a4e9096c6f31",
+      "date": "2023-10-26T10:54:43+08:00",
+      "author": "byh",
+      "email": "hy@.1023",
+      "message": "1:目录机构调整\n2:验证码逻辑校验完善\n"
+    },
+    {
+      "sha": "44f8b6f2c4e9b36f62df74f9d42d0354e2c28c6b",
+      "date": "2023-10-23T15:56:56+08:00",
+      "author": "byh",
+      "email": "hy@.1023",
+      "message": "JdbcOAuth2AuthorizationService 查询授权信息时 PhoneCaptchaAuthenticationToken 无法序列化问题解决\n"
+    },
+    {
+      "sha": "ea40da3620afedd2426de6da425b0f618dff56c8",
+      "date": "2023-10-15T15:14:43+08:00",
+      "author": "byh",
+      "email": "hy@.1023",
+      "message": "Merge branch 'feautue'\n"
+    },
+    {
+      "sha": "f19b17a918b37e0ac8676caa6bca54678a26f223",
+      "date": "2023-10-15T14:55:41+08:00",
+      "author": "byh",
+      "email": "hy@.1023",
+      "message": "还原nacos 配置\n"
+    },
+    {
+      "sha": "9033bfcde9a6db5ebb134d0c32257e7ac1494fbf",
+      "date": "2023-10-15T14:46:07+08:00",
+      "author": "byh",
+      "email": "hy@.1023",
+      "message": "Merge branch 'feautue'\n"
+    },
+    {
+      "sha": "36a846b696f81eb9be019fa703b5856ab6dd6068",
+      "date": "2023-10-15T14:45:50+08:00",
+      "author": "byh",
+      "email": "hy@.1023",
+      "message": "默认登录方式扩展\n"
+    },
+    {
+      "sha": "dc215d9d12a455ae61e3ccf0988c1f324b2383a5",
+      "date": "2023-09-21T14:48:03+08:00",
+      "author": "byh",
+      "email": "hy@.1023",
+      "message": "Merge branch 'dev'\n"
+    },
+    {
+      "sha": "d6751524301649767f33922a042e775507fd71ba",
+      "date": "2023-09-21T14:47:47+08:00",
+      "author": "byh",
+      "email": "hy@.1023",
+      "message": "代码优化\n"
+    },
+    {
+      "sha": "e98f81e413d8cb727ccdba546390e8ecbf289091",
+      "date": "2023-09-21T11:51:56+08:00",
+      "author": "byh",
+      "email": "hy@.1023",
+      "message": "Merge branch 'dev'\n\n# Conflicts:\n#\twatermelon-authorization/watermelon-authorization-user-core/doc/sql/postgrepsql/sys_registered_client.sql\n#\twatermelon-authorization/watermelon-authorization-user-core/doc/sql/postgrepsql/sys_third_user.sql\n#\twatermelon-authorization/watermelon-authorization-user-core/doc/sql/postgrepsql/sys_user.sql\n"
+    },
+    {
+      "sha": "ef17c0b18e9489b4b636010ac601f0f984029b69",
+      "date": "2023-09-21T11:51:09+08:00",
+      "author": "byh",
+      "email": "hy@.1023",
+      "message": "1：第三方平台账号存储stater完善\n2：authorization服务中完善用户存储逻辑\n"
+    },
+    {
+      "sha": "738beaf7a3b115d8053efddeb5ffb1d35350d01b",
+      "date": "2023-09-20T10:56:28+08:00",
+      "author": "byh",
+      "email": "hy@.1023",
+      "message": "整理了下代码和说明文档\n"
+    },
+    {
+      "sha": "2f4b2721c9b355e06bd9c6e12eefd45ed28f0ae8",
+      "date": "2023-09-19T16:52:48+08:00",
+      "author": "byh",
+      "email": "hy@.1023",
+      "message": "sql 位置整理\n"
+    },
+    {
+      "sha": "ed1eda9183768b840576e1d3db7bd8b3c6e00104",
+      "date": "2023-09-19T16:52:13+08:00",
+      "author": "byh",
+      "email": "hy@.1023",
+      "message": "手机+验证码登录模式完善\n"
+    },
+    {
+      "sha": "471e5b55f14b2477cf3110b9218fcdd5daabb098",
+      "date": "2023-09-15T18:23:41+08:00",
+      "author": "byh",
+      "email": "hy@.1023",
+      "message": "pg:用户基础、第三方用户、客户端数据表sql脚本\n"
+    },
+    {
+      "sha": "de00bc7d5c1ecd5b39c116661576cf4ce893a223",
+      "date": "2023-09-15T18:12:38+08:00",
+      "author": "byh",
+      "email": "hy@.1023",
+      "message": "1：watermelon-cloud 工程结构优化\n2：RegisteredClientRepository、UserDetailsService、UserDetails扩展\n"
+    },
+    {
+      "sha": "6e2bb92f7a02973fc527efd08bcb6a30bf830470",
+      "date": "2023-09-15T18:12:23+08:00",
+      "author": "byh",
+      "email": "hy@.1023",
+      "message": "1：watermelon-cloud 工程结构优化\n2：RegisteredClientRepository、UserDetailsService、UserDetails扩展\n"
+    },
+    {
+      "sha": "d6f236c63377aa5a0b7f839eed6b5f85000d5810",
+      "date": "2023-09-14T17:59:27+08:00",
+      "author": "byh",
+      "email": "hy@.1023",
+      "message": "watermelon-cloud 初始化\n"
+    },
+    {
+      "sha": "6f00284fb6a572ca31af241827c9bbc56b51fa58",
+      "date": "2023-09-14T11:35:10+08:00",
+      "author": "watermelon",
+      "email": "48990981+WatermelonPlanet@users.noreply.github.com",
+      "message": "Initial commit"
+    }
+  ],
+  "commit_sha": "1e0a1dca024fa283e55e730c74ef551059fcc0ce",
+  "extracted_at": "2026-10-05T18:48:37.985029+00:00"
+}

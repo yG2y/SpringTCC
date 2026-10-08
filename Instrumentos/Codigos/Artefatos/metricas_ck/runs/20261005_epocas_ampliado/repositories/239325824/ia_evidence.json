@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "3fc25bd8c10c73db2e7230809b322127eac554e3",
+      "date": "2022-11-29T19:17:18+08:00",
+      "author": "Colorful",
+      "email": "fujiale3@qq.com",
+      "message": "Dev (#314)\n\n* Refactor/replace deprecated usage (#236)\n\n* chore: 修正README锚点不跳转的问题\n\n* fix:#190\n\n* fix:#184\n\n* chore(deps-dev): bump freemarker from 2.3.30 to 2.3.31\n\nBumps freemarker from 2.3.30 to 2.3.31.\n\nSigned-off-by: dependabot[bot] <support@github.com>\n\n* chore(deps): bump lin-cms-spring-boot-starter\n\nBumps [lin-cms-spring-boot-starter](https://github.com/TaleLin/lin-cms-java-core) from 0.2.0-RC2 to 0.2.0-RELEASE.\n- [Release notes](https://github.com/TaleLin/lin-cms-java-core/releases)\n- [Commits](https://github.com/TaleLin/lin-cms-java-core/commits)\n\nSigned-off-by: dependabot[bot] <support@github.com>\n\n* Chore/upgrade version (#200)\n\n* chore: 修正README锚点不跳转的问题\n\n* fix:#190\n\n* fix:#184\n\n* chore: 升级主工程以及核心库版本号\n\nCo-authored-by: ToWeLong <1191430240@qq.com>\n\n* chore(deps): bump spring-boot-starter-parent from 2.4.3 to 2.5.0\n\nBumps [spring-boot-starter-parent](https://github.com/spring-projects/spring-boot) from 2.4.3 to 2.5.0.\n- [Release notes](https://github.com/spring-projects/spring-boot/releases)\n- [Commits](https://github.com/spring-projects/spring-boot/compare/v2.4.3...v2.5.0)\n\nSigned-off-by: dependabot[bot] <support@github.com>\n\n* Dev (#226)\n\n* chore(deps): bump spring-boot-starter-parent from 2.5.0 to 2.5.2 (#220)\n\nBumps [spring-boot-starter-parent](https://github.com/spring-projects/spring-boot) from 2.5.0 to 2.5.2.\n- [Release notes](https://github.com/spring-projects/spring-boot/releases)\n- [Commits](https://github.com/spring-projects/spring-boot/compare/v2.5.0...v2.5.2)\n\n---\nupdated-dependencies:\n- dependency-name: org.springframework.boot:spring-boot-starter-parent\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\n\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\n\n* refactor: optimize ci action config\n\n* Update maven.yml\n\n* Update maven.yml\n\n* fix issue #131\n\n* chore(deps): bump qiniu-java-sdk from 7.4.0 to 7.8.0\n\nBumps [qiniu-java-sdk](https://github.com/qiniu/java-sdk) from 7.4.0 to 7.8.0.\n- [Release notes](https://github.com/qiniu/java-sdk/releases)\n- [Changelog](https://github.com/qiniu/java-sdk/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/qiniu/java-sdk/compare/v7.4.0...v7.8.0)\n\n---\nupdated-dependencies:\n- dependency-name: com.qiniu:qiniu-java-sdk\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\n\n* Chore/replace expired configurations (#222)\n\n* chore: 修正README锚点不跳转的问题\n\n* fix:#190\n\n* fix:#184\n\n* chore: 替换过期的配置项\n\n* test: 临时解决 CI 单元测试异常（原因未明）\n\nCo-authored-by: ToWeLong <1191430240@qq.com>\nCo-authored-by: 华钦 <lucky.gui@clpsglobal.com>\n\n* Docs/upgrade readme (#225)\n\n* chore: 修正README锚点不跳转的问题\n\n* fix:#190\n\n* fix:#184\n\n* docs: 更新 readme 中 springboot 版本号\n\nCo-authored-by: ToWeLong <1191430240@qq.com>\nCo-authored-by: 华钦 <lucky.gui@clpsglobal.com>\n\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: dengliming <liming.d.pro@gmail.com>\nCo-authored-by: fuhao <fuhao@ifengyu.com>\nCo-authored-by: ToWeLong <1191430240@qq.com>\nCo-authored-by: 华钦 <lucky.gui@clpsglobal.com>\n\n* refactor: 替换jackson已过期的配置引用\n\nCo-authored-by: ToWeLong <1191430240@qq.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: 华钦 <lucky.gui@clpsglobal.com>\nCo-authored-by: dengliming <liming.d.pro@gmail.com>\nCo-authored-by: fuhao <fuhao@ifengyu.com>\n\n* chore(pom.xml): 升级框架版本为0.2.1-RELEASE\n\n* fix #223 & test去除deprecated api等问题修复\n\n* fix: #247\n\n* fix: 反代后IP获取错误\n\n* feat: 登录验证码\n\n* fix: 无用字段\n\n* fix: 不开启验证码时要求header的错误\n\n* fix: sout clean\n\n* fix: aes192 to 256\n\n* fix: 修复错误修改的配置\n\n* fix: 增加aes配置校验，避免输入参数不合法\n\n* fix: 部分情况下fileMap.size()不可靠&校验信息不需要${}\n\n* fix: 属性前缀\n\n* fix: fix #264\n\n配置文件中未配置字段时，spring不会调用set方法\n\n* chore(application-dev.yml): 默认关闭验证码\n\n* refactor: 数据库新增 is_deleted 字段，作为删除标识\n\n* refactor: non null copy (#300)\n\n* Refactor/code specification (#312)\n\n* refactor: 数据库新增 is_deleted 字段，作为删除标识\n\n* refactor: 整理代码规范\n\n* refactor: 整理代码规范\n\nCo-authored-by: ToWeLong <1191430240@qq.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: 华钦 <lucky.gui@clpsglobal.com>\nCo-authored-by: dengliming <liming.d.pro@gmail.com>\nCo-authored-by: fuhao <fuhao@ifengyu.com>\nCo-authored-by: Gadfly <gadfly@gadfly.vip>"
+    },
+    {
+      "sha": "417a3e427bf2b35b88f995717fb829436c07fb0d",
+      "date": "2022-11-20T21:56:13+08:00",
+      "author": "Colorful",
+      "email": "fujiale3@qq.com",
+      "message": "Dev (#303)\n\n* Refactor/replace deprecated usage (#236)\n\n* chore: 修正README锚点不跳转的问题\n\n* fix:#190\n\n* fix:#184\n\n* chore(deps-dev): bump freemarker from 2.3.30 to 2.3.31\n\nBumps freemarker from 2.3.30 to 2.3.31.\n\nSigned-off-by: dependabot[bot] <support@github.com>\n\n* chore(deps): bump lin-cms-spring-boot-starter\n\nBumps [lin-cms-spring-boot-starter](https://github.com/TaleLin/lin-cms-java-core) from 0.2.0-RC2 to 0.2.0-RELEASE.\n- [Release notes](https://github.com/TaleLin/lin-cms-java-core/releases)\n- [Commits](https://github.com/TaleLin/lin-cms-java-core/commits)\n\nSigned-off-by: dependabot[bot] <support@github.com>\n\n* Chore/upgrade version (#200)\n\n* chore: 修正README锚点不跳转的问题\n\n* fix:#190\n\n* fix:#184\n\n* chore: 升级主工程以及核心库版本号\n\nCo-authored-by: ToWeLong <1191430240@qq.com>\n\n* chore(deps): bump spring-boot-starter-parent from 2.4.3 to 2.5.0\n\nBumps [spring-boot-starter-parent](https://github.com/spring-projects/spring-boot) from 2.4.3 to 2.5.0.\n- [Release notes](https://github.com/spring-projects/spring-boot/releases)\n- [Commits](https://github.com/spring-projects/spring-boot/compare/v2.4.3...v2.5.0)\n\nSigned-off-by: dependabot[bot] <support@github.com>\n\n* Dev (#226)\n\n* chore(deps): bump spring-boot-starter-parent from 2.5.0 to 2.5.2 (#220)\n\nBumps [spring-boot-starter-parent](https://github.com/spring-projects/spring-boot) from 2.5.0 to 2.5.2.\n- [Release notes](https://github.com/spring-projects/spring-boot/releases)\n- [Commits](https://github.com/spring-projects/spring-boot/compare/v2.5.0...v2.5.2)\n\n---\nupdated-dependencies:\n- dependency-name: org.springframework.boot:spring-boot-starter-parent\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\n\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\n\n* refactor: optimize ci action config\n\n* Update maven.yml\n\n* Update maven.yml\n\n* fix issue #131\n\n* chore(deps): bump qiniu-java-sdk from 7.4.0 to 7.8.0\n\nBumps [qiniu-java-sdk](https://github.com/qiniu/java-sdk) from 7.4.0 to 7.8.0.\n- [Release notes](https://github.com/qiniu/java-sdk/releases)\n- [Changelog](https://github.com/qiniu/java-sdk/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/qiniu/java-sdk/compare/v7.4.0...v7.8.0)\n\n---\nupdated-dependencies:\n- dependency-name: com.qiniu:qiniu-java-sdk\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\n\n* Chore/replace expired configurations (#222)\n\n* chore: 修正README锚点不跳转的问题\n\n* fix:#190\n\n* fix:#184\n\n* chore: 替换过期的配置项\n\n* test: 临时解决 CI 单元测试异常（原因未明）\n\nCo-authored-by: ToWeLong <1191430240@qq.com>\nCo-authored-by: 华钦 <lucky.gui@clpsglobal.com>\n\n* Docs/upgrade readme (#225)\n\n* chore: 修正README锚点不跳转的问题\n\n* fix:#190\n\n* fix:#184\n\n* docs: 更新 readme 中 springboot 版本号\n\nCo-authored-by: ToWeLong <1191430240@qq.com>\nCo-authored-by: 华钦 <lucky.gui@clpsglobal.com>\n\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: dengliming <liming.d.pro@gmail.com>\nCo-authored-by: fuhao <fuhao@ifengyu.com>\nCo-authored-by: ToWeLong <1191430240@qq.com>\nCo-authored-by: 华钦 <lucky.gui@clpsglobal.com>\n\n* refactor: 替换jackson已过期的配置引用\n\nCo-authored-by: ToWeLong <1191430240@qq.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: 华钦 <lucky.gui@clpsglobal.com>\nCo-authored-by: dengliming <liming.d.pro@gmail.com>\nCo-authored-by: fuhao <fuhao@ifengyu.com>\n\n* chore(pom.xml): 升级框架版本为0.2.1-RELEASE\n\n* fix #223 & test去除deprecated api等问题修复\n\n* fix: #247\n\n* fix: 反代后IP获取错误\n\n* feat: 登录验证码\n\n* fix: 无用字段\n\n* fix: 不开启验证码时要求header的错误\n\n* fix: sout clean\n\n* fix: aes192 to 256\n\n* fix: 修复错误修改的配置\n\n* fix: 增加aes配置校验，避免输入参数不合法\n\n* fix: 部分情况下fileMap.size()不可靠&校验信息不需要${}\n\n* fix: 属性前缀\n\n* fix: fix #264\n\n配置文件中未配置字段时，spring不会调用set方法\n\n* chore(application-dev.yml): 默认关闭验证码\n\n* refactor: 数据库新增 is_deleted 字段，作为删除标识\n\nCo-authored-by: ToWeLong <1191430240@qq.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: 华钦 <lucky.gui@clpsglobal.com>\nCo-authored-by: dengliming <liming.d.pro@gmail.com>\nCo-authored-by: fuhao <fuhao@ifengyu.com>\nCo-authored-by: Gadfly <gadfly@gadfly.vip>"
+    },
+    {
+      "sha": "faccb4b9eb4eca36806904437cb0309d048a1721",
+      "date": "2021-11-20T04:15:45+08:00",
+      "author": "Gadfly",
+      "email": "gadfly@gadfly.vip",
+      "message": "fix: 增加aes配置校验，避免输入参数不合法\n\n"
+    },
+    {
+      "sha": "a814104d40d65143fa5b0dd73551f951d04f4613",
+      "date": "2021-11-19T18:45:27+08:00",
+      "author": "Gadfly",
+      "email": "gadfly@gadfly.vip",
+      "message": "fix: 修复错误修改的配置\n\n"
+    },
+    {
+      "sha": "e6105af4948875943dadf524876170e21885e952",
+      "date": "2021-11-19T18:44:46+08:00",
+      "author": "Gadfly",
+      "email": "gadfly@gadfly.vip",
+      "message": "fix: aes192 to 256\n\n"
+    },
+    {
+      "sha": "9dfbb8439105fe29e40bcb19ff8d9b1ef8685f24",
+      "date": "2021-11-19T17:59:17+08:00",
+      "author": "Gadfly",
+      "email": "gadfly@gadfly.vip",
+      "message": "fix: sout clean\n\n"
+    },
+    {
+      "sha": "e01a8a2f3d4755c5fe409a965d6c0fc6e66322a6",
+      "date": "2021-11-19T17:15:40+08:00",
+      "author": "Gadfly",
+      "email": "gadfly@gadfly.vip",
+      "message": "fix: 不开启验证码时要求header的错误\n\n"
+    },
+    {
+      "sha": "360f7aa8bae3074e4f063802dca94e8e3a9d1246",
+      "date": "2021-11-19T17:08:01+08:00",
+      "author": "Gadfly",
+      "email": "gadfly@gadfly.vip",
+      "message": "fix: 无用字段\n\n"
+    },
+    {
+      "sha": "c8380179f8ff71104f97350e09781a0e7432d936",
+      "date": "2021-11-19T17:05:27+08:00",
+      "author": "Gadfly",
+      "email": "gadfly@gadfly.vip",
+      "message": "feat: 登录验证码\n\n"
+    },
+    {
+      "sha": "af53c67c42efce910602024df0b9d509dd7a6674",
+      "date": "2021-11-15T17:31:57+08:00",
+      "author": "Gadfly",
+      "email": "gadfly@gadfly.vip",
+      "message": "fix: 反代后IP获取错误\n\n"
+    },
+    {
+      "sha": "247c27215ce4c9cf74a121a29466478cbdcd648d",
+      "date": "2021-11-14T11:51:56+08:00",
+      "author": "towelong",
+      "email": "1191430240@qq.com",
+      "message": "fix: #247\n"
+    },
+    {
+      "sha": "04ba8b903898a33c472071e71d442b9ce83dd863",
+      "date": "2021-07-14T18:01:48+08:00",
+      "author": "Gadfly",
+      "email": "gadfly@gadfly.vip",
+      "message": "fix #223 & test去除deprecated api等问题修复\n\n"
+    },
+    {
+      "sha": "aea6b3bcead54ba1498b6baf2b97d94a5048d1a0",
+      "date": "2021-07-10T09:28:45+08:00",
+      "author": "Colorful",
+      "email": "fujiale3@qq.com",
+      "message": "chore(pom.xml): 升级框架版本为0.2.1-RELEASE\n"
+    },
+    {
+      "sha": "0a9361deab57c62790ba2db21cf7e01188d3ef26",
+      "date": "2021-07-06T18:28:53+08:00",
+      "author": "Colorful",
+      "email": "fujiale3@qq.com",
+      "message": "Refactor/replace deprecated usage (#236)\n\n* chore: 修正README锚点不跳转的问题\n\n* fix:#190\n\n* fix:#184\n\n* chore(deps-dev): bump freemarker from 2.3.30 to 2.3.31\n\nBumps freemarker from 2.3.30 to 2.3.31.\n\nSigned-off-by: dependabot[bot] <support@github.com>\n\n* chore(deps): bump lin-cms-spring-boot-starter\n\nBumps [lin-cms-spring-boot-starter](https://github.com/TaleLin/lin-cms-java-core) from 0.2.0-RC2 to 0.2.0-RELEASE.\n- [Release notes](https://github.com/TaleLin/lin-cms-java-core/releases)\n- [Commits](https://github.com/TaleLin/lin-cms-java-core/commits)\n\nSigned-off-by: dependabot[bot] <support@github.com>\n\n* Chore/upgrade version (#200)\n\n* chore: 修正README锚点不跳转的问题\n\n* fix:#190\n\n* fix:#184\n\n* chore: 升级主工程以及核心库版本号\n\nCo-authored-by: ToWeLong <1191430240@qq.com>\n\n* chore(deps): bump spring-boot-starter-parent from 2.4.3 to 2.5.0\n\nBumps [spring-boot-starter-parent](https://github.com/spring-projects/spring-boot) from 2.4.3 to 2.5.0.\n- [Release notes](https://github.com/spring-projects/spring-boot/releases)\n- [Commits](https://github.com/spring-projects/spring-boot/compare/v2.4.3...v2.5.0)\n\nSigned-off-by: dependabot[bot] <support@github.com>\n\n* Dev (#226)\n\n* chore(deps): bump spring-boot-starter-parent from 2.5.0 to 2.5.2 (#220)\n\nBumps [spring-boot-starter-parent](https://github.com/spring-projects/spring-boot) from 2.5.0 to 2.5.2.\n- [Release notes](https://github.com/spring-projects/spring-boot/releases)\n- [Commits](https://github.com/spring-projects/spring-boot/compare/v2.5.0...v2.5.2)\n\n---\nupdated-dependencies:\n- dependency-name: org.springframework.boot:spring-boot-starter-parent\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\n\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\n\n* refactor: optimize ci action config\n\n* Update maven.yml\n\n* Update maven.yml\n\n* fix issue #131\n\n* chore(deps): bump qiniu-java-sdk from 7.4.0 to 7.8.0\n\nBumps [qiniu-java-sdk](https://github.com/qiniu/java-sdk) from 7.4.0 to 7.8.0.\n- [Release notes](https://github.com/qiniu/java-sdk/releases)\n- [Changelog](https://github.com/qiniu/java-sdk/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/qiniu/java-sdk/compare/v7.4.0...v7.8.0)\n\n---\nupdated-dependencies:\n- dependency-name: com.qiniu:qiniu-java-sdk\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\n\n* Chore/replace expired configurations (#222)\n\n* chore: 修正README锚点不跳转的问题\n\n* fix:#190\n\n* fix:#184\n\n* chore: 替换过期的配置项\n\n* test: 临时解决 CI 单元测试异常（原因未明）\n\nCo-authored-by: ToWeLong <1191430240@qq.com>\nCo-authored-by: 华钦 <lucky.gui@clpsglobal.com>\n\n* Docs/upgrade readme (#225)\n\n* chore: 修正README锚点不跳转的问题\n\n* fix:#190\n\n* fix:#184\n\n* docs: 更新 readme 中 springboot 版本号\n\nCo-authored-by: ToWeLong <1191430240@qq.com>\nCo-authored-by: 华钦 <lucky.gui@clpsglobal.com>\n\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: dengliming <liming.d.pro@gmail.com>\nCo-authored-by: fuhao <fuhao@ifengyu.com>\nCo-authored-by: ToWeLong <1191430240@qq.com>\nCo-authored-by: 华钦 <lucky.gui@clpsglobal.com>\n\n* refactor: 替换jackson已过期的配置引用\n\nCo-authored-by: ToWeLong <1191430240@qq.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: 华钦 <lucky.gui@clpsglobal.com>\nCo-authored-by: dengliming <liming.d.pro@gmail.com>\nCo-authored-by: fuhao <fuhao@ifengyu.com>"
+    },
+    {
+      "sha": "fd5470cf3d00cd8a70325e43c5a419f01490f601",
+      "date": "2021-07-06T01:19:54+08:00",
+      "author": "Colorful",
+      "email": "fujiale3@qq.com",
+      "message": "Merge branch 'dev'\n"
+    },
+    {
+      "sha": "48d624ecf9b4aa87b16396f74fa6020611dd7e09",
+      "date": "2021-07-06T01:19:45+08:00",
+      "author": "Colorful",
+      "email": "fujiale3@qq.com",
+      "message": "Merge branch 'master' into dev\n"
+    },
+    {
+      "sha": "6aa56cb9a80d115fe50f3ebf5d53b61146a47279",
+      "date": "2021-07-05T21:53:54+08:00",
+      "author": "Colorful",
+      "email": "fujiale3@qq.com",
+      "message": "refactor: 修改高级版代码生成器模板\n"
+    },
+    {
+      "sha": "4b0d9b58a2308b9bf97e22e6d2ffd69ea2709932",
+      "date": "2021-06-28T20:48:55+08:00",
+      "author": "Colorful",
+      "email": "fujiale3@qq.com",
+      "message": "refactor: 使用dto代替接口的查询参数形参列表\n"
+    },
+    {
+      "sha": "d773d83c427fa9b0ef19777a0df847927273cc05",
+      "date": "2021-06-28T19:18:14+08:00",
+      "author": "Gadfly",
+      "email": "gadfly@gadfly.vip",
+      "message": "bind method异常处理合并\n\n"
+    },
+    {
+      "sha": "ab64f7b2a9f5a381763cc7a5c500a247b17b4aa5",
+      "date": "2021-06-28T19:07:51+08:00",
+      "author": "Gadfly",
+      "email": "gadfly@gadfly.vip",
+      "message": "分页查询参数绑定bean（部分），修正mp分页插件的注释错误\n\n"
+    },
+    {
+      "sha": "e15c57d17368244d652bbea9ba66154dd5006e8a",
+      "date": "2021-06-27T19:24:23+08:00",
+      "author": "Colorful",
+      "email": "fujiale3@qq.com",
+      "message": "Dev (#226)\n\n* chore(deps): bump spring-boot-starter-parent from 2.5.0 to 2.5.2 (#220)\n\nBumps [spring-boot-starter-parent](https://github.com/spring-projects/spring-boot) from 2.5.0 to 2.5.2.\n- [Release notes](https://github.com/spring-projects/spring-boot/releases)\n- [Commits](https://github.com/spring-projects/spring-boot/compare/v2.5.0...v2.5.2)\n\n---\nupdated-dependencies:\n- dependency-name: org.springframework.boot:spring-boot-starter-parent\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\n\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\n\n* refactor: optimize ci action config\n\n* Update maven.yml\n\n* Update maven.yml\n\n* fix issue #131\n\n* chore(deps): bump qiniu-java-sdk from 7.4.0 to 7.8.0\n\nBumps [qiniu-java-sdk](https://github.com/qiniu/java-sdk) from 7.4.0 to 7.8.0.\n- [Release notes](https://github.com/qiniu/java-sdk/releases)\n- [Changelog](https://github.com/qiniu/java-sdk/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/qiniu/java-sdk/compare/v7.4.0...v7.8.0)\n\n---\nupdated-dependencies:\n- dependency-name: com.qiniu:qiniu-java-sdk\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\n\n* Chore/replace expired configurations (#222)\n\n* chore: 修正README锚点不跳转的问题\n\n* fix:#190\n\n* fix:#184\n\n* chore: 替换过期的配置项\n\n* test: 临时解决 CI 单元测试异常（原因未明）\n\nCo-authored-by: ToWeLong <1191430240@qq.com>\nCo-authored-by: 华钦 <lucky.gui@clpsglobal.com>\n\n* Docs/upgrade readme (#225)\n\n* chore: 修正README锚点不跳转的问题\n\n* fix:#190\n\n* fix:#184\n\n* docs: 更新 readme 中 springboot 版本号\n\nCo-authored-by: ToWeLong <1191430240@qq.com>\nCo-authored-by: 华钦 <lucky.gui@clpsglobal.com>\n\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: dengliming <liming.d.pro@gmail.com>\nCo-authored-by: fuhao <fuhao@ifengyu.com>\nCo-authored-by: ToWeLong <1191430240@qq.com>\nCo-authored-by: 华钦 <lucky.gui@clpsglobal.com>"
+    },
+    {
+      "sha": "02a26c42ae0bb537a00a99747f45e871d0d08bcb",
+      "date": "2021-06-27T19:18:42+08:00",
+      "author": "Colorful",
+      "email": "fujiale3@qq.com",
+      "message": "Docs/upgrade readme (#225)\n\n* chore: 修正README锚点不跳转的问题\n\n* fix:#190\n\n* fix:#184\n\n* docs: 更新 readme 中 springboot 版本号\n\nCo-authored-by: ToWeLong <1191430240@qq.com>\nCo-authored-by: 华钦 <lucky.gui@clpsglobal.com>"
+    },
+    {
+      "sha": "681eafe4df58d51d642d5f7b9749fb2c7d16dce6",
+      "date": "2021-06-27T17:40:58+08:00",
+      "author": "Colorful",
+      "email": "fujiale3@qq.com",
+      "message": "Chore/replace expired configurations (#222)\n\n* chore: 修正README锚点不跳转的问题\n\n* fix:#190\n\n* fix:#184\n\n* chore: 替换过期的配置项\n\n* test: 临时解决 CI 单元测试异常（原因未明）\n\nCo-authored-by: ToWeLong <1191430240@qq.com>\nCo-authored-by: 华钦 <lucky.gui@clpsglobal.com>"
+    },
+    {
+      "sha": "f9aabe735be82c98d32b85caae67687f730c9a02",
+      "date": "2021-06-23T05:01:52Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "chore(deps): bump qiniu-java-sdk from 7.4.0 to 7.8.0\n\nBumps [qiniu-java-sdk](https://github.com/qiniu/java-sdk) from 7.4.0 to 7.8.0.\n- [Release notes](https://github.com/qiniu/java-sdk/releases)\n- [Changelog](https://github.com/qiniu/java-sdk/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/qiniu/java-sdk/compare/v7.4.0...v7.8.0)\n\n---\nupdated-dependencies:\n- dependency-name: com.qiniu:qiniu-java-sdk\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "942b1a6e419a739933a9d80cdb2edd57a27109c6",
+      "date": "2021-06-01T13:47:00+08:00",
+      "author": "fuhao",
+      "email": "fuhao@ifengyu.com",
+      "message": "fix issue #131\n"
+    },
+    {
+      "sha": "bfcf21eab34ae7b6a72275eaefbbbe90932c597c",
+      "date": "2021-06-23T09:44:47+08:00",
+      "author": "dengliming",
+      "email": "liming.d.pro@gmail.com",
+      "message": "Update maven.yml"
+    },
+    {
+      "sha": "59e36c18c6384b9bef9e8d01f48a2f9c4bd381b0",
+      "date": "2021-06-21T12:47:56+08:00",
+      "author": "dengliming",
+      "email": "liming.d.pro@gmail.com",
+      "message": "Update maven.yml"
+    },
+    {
+      "sha": "27cd99b1746dfa057282e94f44e74f1b0bd0ca9e",
+      "date": "2021-06-21T12:44:10+08:00",
+      "author": "dengliming",
+      "email": "liming.d.pro@gmail.com",
+      "message": "refactor: optimize ci action config"
+    },
+    {
+      "sha": "b0644f6867d671e1a9619562191904c623d72781",
+      "date": "2021-06-27T16:24:46+08:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "chore(deps): bump spring-boot-starter-parent from 2.5.0 to 2.5.2 (#220)\n\nBumps [spring-boot-starter-parent](https://github.com/spring-projects/spring-boot) from 2.5.0 to 2.5.2.\n- [Release notes](https://github.com/spring-projects/spring-boot/releases)\n- [Commits](https://github.com/spring-projects/spring-boot/compare/v2.5.0...v2.5.2)\n\n---\nupdated-dependencies:\n- dependency-name: org.springframework.boot:spring-boot-starter-parent\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\n\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "2ff4bf8bf1a2d347af3a1f70416a121481a45add",
+      "date": "2021-06-24T12:38:16+08:00",
+      "author": "华钦",
+      "email": "lucky.gui@clpsglobal.com",
+      "message": "Merge branch 'master' of https://github.com/TaleLin/lin-cms-spring-boot\n"
+    }
+  ],
+  "commit_sha": "3fc25bd8c10c73db2e7230809b322127eac554e3",
+  "extracted_at": "2026-10-05T18:11:45.634239+00:00"
+}

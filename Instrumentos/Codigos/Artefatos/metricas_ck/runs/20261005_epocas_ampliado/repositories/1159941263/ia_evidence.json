@@ -1,0 +1,332 @@
+{
+  "ia_status": "com_evidencia",
+  "ia_level": 2,
+  "ia_agents": "Claude Code",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "aeaff0ea268b7bd19838741871cd7adb69fee62b",
+      "trailer": "Claude Fable 5 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "aeaff0ea268b7bd19838741871cd7adb69fee62b",
+      "trailer": "Claude Opus 5 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "aeaff0ea268b7bd19838741871cd7adb69fee62b",
+      "trailer": "Claude Fable 5 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "aeaff0ea268b7bd19838741871cd7adb69fee62b",
+      "trailer": "Claude Fable 5 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "aeaff0ea268b7bd19838741871cd7adb69fee62b",
+      "trailer": "Claude Opus 5 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "aeaff0ea268b7bd19838741871cd7adb69fee62b",
+      "trailer": "Claude Opus 5 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "aeaff0ea268b7bd19838741871cd7adb69fee62b",
+      "trailer": "Claude Opus 5 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "aeaff0ea268b7bd19838741871cd7adb69fee62b",
+      "trailer": "Claude Opus 5 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "aeaff0ea268b7bd19838741871cd7adb69fee62b",
+      "trailer": "Claude Opus 5 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "aeaff0ea268b7bd19838741871cd7adb69fee62b",
+      "trailer": "Claude Opus 5 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "aeaff0ea268b7bd19838741871cd7adb69fee62b",
+      "trailer": "Claude Opus 5 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "aeaff0ea268b7bd19838741871cd7adb69fee62b",
+      "trailer": "Claude Fable 5 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "f49fa388972c8d41c5d6ab9b2e9ef7d3232f05d2",
+      "trailer": "Claude Opus 5 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "1f665390f7db79121732939cb55857a6dac233ee",
+      "trailer": "Claude Opus 5 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "f13d04b7ae7b150d4ca4489b9785aa443dfe3958",
+      "trailer": "Claude Opus 5 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "fda98707a6d5171cd792a402d729177702e06f5c",
+      "trailer": "Claude Opus 5 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "33e6fd9c8d80e4cabef88a42d45afa285b0e40ca",
+      "trailer": "Claude Opus 5 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "c784148482e7f144b9e16dedfd9381ca5f7f8f2d",
+      "trailer": "Claude Opus 5 <noreply@anthropic.com>"
+    }
+  ],
+  "commits": [
+    {
+      "sha": "45a149c62029d7d24c6fa9d5302db49074ec4993",
+      "date": "2026-10-05T10:18:33+02:00",
+      "author": "Philipp Kirchner",
+      "email": "philipp.kirchner@soptim.de",
+      "message": "fix: fixed association updates being shown incorrectly (RDFA- 753, #279)"
+    },
+    {
+      "sha": "aeaff0ea268b7bd19838741871cd7adb69fee62b",
+      "date": "2026-09-30T11:39:12+02:00",
+      "author": "Jan-Hendrik Spahn",
+      "email": "jan-hendrik.spahn@soptim.de",
+      "message": "feat: deep link to classes, attributes, associations and enum entries; embeddable-session handshake (#252, RDFA-690)\n\n* feat(frontend): deep-link classes, attributes, associations and enum entries\n\nA `class` URL parameter on /mainpage (an IRI or rdfa:uuid) selects a class and\nopens its package diagram; when it names an attribute, association or enum\nentry instead, the declaring class opens with that row revealed and briefly\nhighlighted. `dataset` and `graph` narrow the lookup and either works on its\nown, so `graph` alone lets an external tool open a term in the profile it\nknows without having to guess what the dataset is called in this session.\nSnapshot links forward these parameters after loading.\n\nThe search bar's result navigation is extracted into a shared\nmodel-navigation helper and reused by the deep link.\n\nAlso lets an embedding host (e.g. the CIMNotebook IDE extensions) ask this\napp which backend session it is using over postMessage, gated behind the\nopt-in PUBLIC_EMBED_SESSION_HANDSHAKE deployment flag: datasets live in a\nsession, so a tool outside the browser can only read the ones you are\nediting by addressing that exact session.\n\nEnables 'Open in RDFArchitect' from the CIMNotebook IDE extensions\n(SOPTIM/OpenCGMES#38).\n\nCo-authored-by: Claude Fable 5 <noreply@anthropic.com>\nCo-authored-by: Claude Opus 5 <noreply@anthropic.com>\nSigned-off-by: Jan-Hendrik Spahn <jan-hendrik.spahn@soptim.de>\n\n* docs: document /mainpage deep-link URL parameters\n\nCovers dataset/graph/package/class parameters and combining them with\nsnapshot links (SOPTIM/OpenCGMES#38).\n\nCo-authored-by: Claude Fable 5 <noreply@anthropic.com>\nSigned-off-by: Jan-Hendrik Spahn <jan-hendrik.spahn@soptim.de>\n\n* feat(backend): fall back to in-memory snapshots when Fuseki is unavailable\n\nSnapshot creation previously hard-required a running Fuseki server, which\nthe default docker-compose deployment does not include. SnapshotPort gains\nan isAvailable() probe (Fuseki: admin ping); PortConfig now wires a\nFallbackSnapshotAdapter that prefers the persistent Fuseki store and falls\nback to a new InMemorySnapshotAdapter — a process-global map of deep-copied,\nUUID-stripped graphs plus the prefix mapping, shared across sessions but\nlost on restart. Loaded snapshots land read-only in the session, matching\nthe Fuseki path.\n\nEnables the CIMNotebook IDE extensions' snapshot-based schema handoff\nagainst Fuseki-less deployments (SOPTIM/OpenCGMES#38).\n\nCo-authored-by: Claude Fable 5 <noreply@anthropic.com>\nSigned-off-by: Jan-Hendrik Spahn <jan-hendrik.spahn@soptim.de>\n\n* fix(backend): fall back to in-memory snapshots when Fuseki rejects the request\n\nisAvailable() only probes reachability, and Fuseki's stock shiro.ini serves /$/ping\nanonymously while restricting the rest of /$/** to localhost. A containerised backend\ntherefore got a green ping and a 403 on dataset creation, so FallbackSnapshotAdapter\nchose the Fuseki path and surfaced a 500 instead of degrading.\n\ncreateSnapshot and snapshotExists now treat a DatabaseException from the primary the\nsame as an unreachable primary and fall through to the in-memory store.\n\nFound by running the CIMNotebook schema handoff (SOPTIM/OpenCGMES#38) against a real\nFuseki 6.1.0.\n\nCo-authored-by: Claude Opus 5 <noreply@anthropic.com>\nSigned-off-by: Jan-Hendrik Spahn <jan-hendrik.spahn@soptim.de>\n\n* docs: document the session cookie policy for embedding RDFArchitect\n\nA cross-site iframe host (e.g. the CIMNotebook VS Code panel) gets no session cookie\nunder the default same-site: lax, so the embedded app reports that no schemas were\nimported. Documents same-site: none + secure: true, and notes that Secure cookies are\naccepted from http://localhost.\n\nCo-authored-by: Claude Opus 5 <noreply@anthropic.com>\nSigned-off-by: Jan-Hendrik Spahn <jan-hendrik.spahn@soptim.de>\n\n* docs: document deep-linking attributes, associations and enum entries\n\n`class` now accepts more than classes: an attribute, association or enum\nentry's IRI opens the class that declares it, with that row revealed.\n\nCo-authored-by: Claude Opus 5 <noreply@anthropic.com>\nSigned-off-by: Jan-Hendrik Spahn <jan-hendrik.spahn@soptim.de>\n\n* feat(backend): expose the id of the current session\n\nDatasets belong to a session, so a tool outside the browser can only work with the datasets\na user is editing if it addresses that session — and to do that it needs the session id.\nOnly DELETE existed on /api/session; this adds the GET that reports it.\n\nThe id is the session cookie's value, so it grants full access to the session. Whether it\nmay be handed to an embedding host is a separate, opt-in decision on the frontend side.\n\nSigned-off-by: Jan-Hendrik Spahn <jan-hendrik.spahn@soptim.de>\n\n* docs: document the embedded-session handshake opt-in\n\nCovers the postMessage handshake an embedding host uses to learn this app's\nbackend session id, and the PUBLIC_EMBED_SESSION_HANDSHAKE flag that gates it.\n\nCo-authored-by: Claude Opus 5 <noreply@anthropic.com>\nSigned-off-by: Jan-Hendrik Spahn <jan-hendrik.spahn@soptim.de>\n\n* docs: record the session handshake as a capability, not just a setting\n\nThe security page enumerates what in RDFArchitect is a bearer capability — snapshot links so\nfar. A session id handed to an embedding host is another, and a stronger one, so it belongs\nin the same list rather than only in the configuration reference.\n\nCo-authored-by: Claude Opus 5 <noreply@anthropic.com>\nSigned-off-by: Jan-Hendrik Spahn <jan-hendrik.spahn@soptim.de>\n\n* docs: let a deep link name the graph without the dataset\n\n`graph` alone now narrows a `class` deep link's search, matching the code:\nan external tool can say which profile a term should open in without\nknowing what the dataset is called in this session.\n\nCo-authored-by: Claude Opus 5 <noreply@anthropic.com>\nSigned-off-by: Jan-Hendrik Spahn <jan-hendrik.spahn@soptim.de>\n\n* fix(backend): regenerate openapi.json from a clean build\n\n* fix(frontend): reran linting\n\nSigned-off-by: Jan-Hendrik Spahn <jan-hendrik.spahn@soptim.de>\n\n* docs: call a workspace a workspace where this branch says dataset\n\nThe product renamed datasets to workspaces, but the embedding docs, the\nsession handshake's JSDoc and `GET /api/session`'s description still\ndescribed the thing a session holds as a dataset — the wording a user\nmeets when reading why the handshake exists.\n\nOnly prose moves. `dataset` stays wherever it names something real: the\n`/api/datasets` paths, the `?dataset=` deep-link parameter, `datasetName`\narguments, and the Fuseki datasets a snapshot is stored in, which `main`\nalso still calls datasets.\n\nRenaming the \"live datasets\" heading moves its anchor, so the two links\ninto it were updated with it. `openapi.json` is regenerated rather than\nhand-edited.\n\nCo-authored-by: Claude Opus 5 <noreply@anthropic.com>\nSigned-off-by: Jan-Hendrik Spahn <jan-hendrik.spahn@soptim.de>\n\n* fix(frontend): open the declaring class for a property deep link\n\nSigned-off-by: Jan-Hendrik Spahn <jan-hendrik.spahn@soptim.de>\n\n---------\n\nSigned-off-by: Jan-Hendrik Spahn <jan-hendrik.spahn@soptim.de>\nCo-authored-by: Claude Fable 5 <noreply@anthropic.com>"
+    },
+    {
+      "sha": "ac2d4111a4d5e93f6391d6c7df5e025f4177783b",
+      "date": "2026-09-30T11:29:36+02:00",
+      "author": "Maximilian Reisch",
+      "email": "maximilian.reisch@soptim.de",
+      "message": "feat: resolve namespace-prefix conflicts on import (#277, RDFA-591)\n\nWhen importing a new schema that has a namespace conflicting with an existing one, the user is prompted to rename one of them.\n\n---------\n\nSigned-off-by: Maximilian Reisch <maximilian.reisch@soptim.de>"
+    },
+    {
+      "sha": "76febb6325e8e9942b8b09391f93f1601060d682",
+      "date": "2026-09-29T10:44:37+02:00",
+      "author": "Maximilian Reisch",
+      "email": "maximilian.reisch@soptim.de",
+      "message": "feat: workspace validation (#275, RDFA-700)\n\n* implemented backend structure and frontend to create and display rules for validating a workspace\n\n* added rule that checks whether classes inherit the same way in every schema\n\n* added rule that checks whether a datatype is a different kind of class in another schema\n\n* added rule that checks whether CIM datatypes are defined identically in every schema\n\n* added rule that checks whether a property is defined in several schemas\n\n* added rule that checks whether the schemas of a workspace use the same CIM version\n\n* added rule that checks whether keyword and version IRI are unique per schema\n\n* added rule that checks whether an association has the same inverse in every schema\n\n* added rule that checks whether an enum entry belongs to the same enumeration everywhere\n\n* added rule that checks whether labels are the same in every schema\n\n---------\n\nSigned-off-by: Maximilian Reisch <maximilian.reisch@soptim.de>"
+    },
+    {
+      "sha": "ae7119b877d1036ec48c9c8eb962b0ae6edab04c",
+      "date": "2026-09-29T10:40:44+02:00",
+      "author": "Philipp Kirchner",
+      "email": "philipp.kirchner@soptim.de",
+      "message": "fix: fixed profile header deletion not working correctly (#278, RDFA-752)"
+    },
+    {
+      "sha": "f49fa388972c8d41c5d6ab9b2e9ef7d3232f05d2",
+      "date": "2026-09-24T11:49:02+02:00",
+      "author": "Jan-Hendrik Spahn",
+      "email": "jan-hendrik.spahn@soptim.de",
+      "message": "feat(import): import in the background with progress in the dialog (#243, RDFA-471)\n\nImporting schemas used to close the dialog and do all the work in one request, with a\ntoast at the end as the only feedback - easy to miss, and silent for anything from 5 to\n60 seconds.\n\nThe import is now a background job the dialog follows, and the part that made it slow is gone.\n\n## Progress in the dialog\n\n`POST .../graphs/content/imports` starts a job and answers with its id,\n`GET .../imports/{jobId}` reports the progress, `DELETE .../imports/{jobId}` stops it\nafter the file it is currently on. Zip archives are expanded into their graph files\nbefore anything is imported, so the counts and percentages are real, and each file\nreports the step it is in (reading, checking, storing).\n\nThe dialog stays open and polls that status:\n\n- a progress bar and one row per file — spinner while it runs, check when it is in\n- files that could not be imported keep their row with the reason next to them\n- properties that were stored but will not be displayed are listed in the dialog\n  instead of a toast that is easy to miss\n- cancelling stops after the current file and keeps the schemas that made it\n- closing the dialog opens the first imported schema, as before\n\nThe synchronous `PUT .../graphs/content` is removed.\n\n## Faster import\n\nImporting the 11 CGMES CurrentRelease profiles took **17.0 s**, of which only 0.6 s was\nparsing and storing. The rest was `createDiagramLayout`: it converted the whole graph to\na CIM collection once per package, and `insertDiagramObjectPoint` re-queries every\nexisting point of the diagram on each insert, which makes it quadratic in the classes of\na package.\n\nEverything it wrote was redundant. Each point sat at (0,0), which is exactly what the\neditor reads as \"not laid out yet\": it runs the ELK layout and persists the result\nthrough `updateClassPositions`, which creates the diagram, diagram objects and points on\ndemand. So neither the import, nor replacing a graph's content, nor session start needs\nto prepare them, and `CreateDiagramLayoutUseCase` with its only implementation\n`UpdateDiagramLayoutService` is gone. `deletePackageLayoutData` now skips classes without\na diagram object instead of dereferencing null, and `GraphBulkImportService`, a\ncaller-less duplicate of `ImportGraphsService`, is removed as well.\n\n**17.0 s → 0.6 s.** The same applies to replacing one graph's content and to every new\nbrowser session, which used to run the layout creation for every graph of every dataset.\n\nSigned-off-by: Jan-Hendrik Spahn <jan-hendrik.spahn@soptim.de>\nCo-authored-by: Claude Opus 5 <noreply@anthropic.com>"
+    },
+    {
+      "sha": "00023bbfdb71583f628af12fc09ff7cb0dc0d945",
+      "date": "2026-09-23T12:28:49+02:00",
+      "author": "Haider Abbas",
+      "email": "haider.abbas@soptim.de",
+      "message": "fix(edge-label-backend-refactor): refactored backend and frontend logic concerning label layout data (#266)\n\n* fix(edge-label-backend-refactor): refactored backend and frontend logic concerning label layout data"
+    },
+    {
+      "sha": "bf6d0985b686ca20bcea778bd166975d7756a224",
+      "date": "2026-09-22T10:48:16+02:00",
+      "author": "Maximilian Reisch",
+      "email": "maximilian.reisch@soptim.de",
+      "message": "feat: open editors from diagram elements (#272, RDFA-636)\n\n* added option to show associations as text inside the classnode in the uml\n\n* added option to allow hiding association labels to reduce information load\n\n* added open api spec\n\n* properties are now clickable to open their respective editor.\n\n---------\n\nSigned-off-by: Maximilian Reisch <maximilian.reisch@soptim.de>"
+    },
+    {
+      "sha": "f0be1583cbea0b40efecdbb1bb78b305ef006733",
+      "date": "2026-09-21T08:23:39Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "fix(deps): update all non-major dependencies (#263)\n\n* fix(deps): update all non-major dependencies\n\n* chore: update frontend LICENSES-THIRD-PARTY.md\n\n* chore: update backend LICENSES-THIRD-PARTY.md\n\n---------\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>\nCo-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "e6278c4f5e862cd1b2605203faaccd49973c43ed",
+      "date": "2026-09-21T08:22:32Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "chore(deps): update dependency vitest to v5 (#268)\n\n* chore(deps): update dependency vitest to v5\n\n* chore: update frontend LICENSES-THIRD-PARTY.md\n\n---------\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>\nCo-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "d8097805ed02d7fecc445307884a0817d8abaaed",
+      "date": "2026-09-14T09:47:52+02:00",
+      "author": "Jan-Hendrik Spahn",
+      "email": "jan-hendrik.spahn@soptim.de",
+      "message": "fix: apply a changed fixed value only to the attribute it belongs to (#270, RDFA-738)\n\nThe fixed-value update matched `?instance a ?class` with an OPTIONAL over any\ntriple of that instance. Both `?class` and the OPTIONAL's predicate were left\nunbound by the generator, so the pattern matched every typed resource in the\ngraph and the INSERT handed one attribute's fixed value to the instances of\nevery other class.\n\nSigned-off-by: Jan-Hendrik Spahn <jan-hendrik.spahn@soptim.de>"
+    },
+    {
+      "sha": "0a953e1f30e8837f41d5961c3a8ee7569331fdb7",
+      "date": "2026-09-10T14:24:23Z",
+      "author": "github-actions[bot]",
+      "email": "41898282+github-actions[bot]@users.noreply.github.com",
+      "message": "chore(changelog): prepare v1.6.0 (#269)\n\nSigned-off-by: Jan-Hendrik Spahn <jan-hendrik.spahn@soptim.de>\nCo-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>\nCo-authored-by: Jan-Hendrik Spahn <jan-hendrik.spahn@soptim.de>"
+    },
+    {
+      "sha": "1f665390f7db79121732939cb55857a6dac233ee",
+      "date": "2026-09-10T16:13:05+02:00",
+      "author": "Finn Tarnowsky",
+      "email": "finn.tarnowsky@soptim.de",
+      "message": "feature: generate change protocol during migration (#200, RDFA-624)\n\nAdds a autogenerated migration report to the migration process and fixes several other issues in regards to the migration.\n\n---------\n\nSigned-off-by: Jan-Hendrik Spahn <jan-hendrik.spahn@soptim.de>\nSigned-off-by: Finn Tarnowsky <finn.tarnowsky@soptim.de>\nCo-authored-by: Jan-Hendrik Spahn <jan-hendrik.spahn@soptim.de>\nCo-authored-by: Claude Opus 5 <noreply@anthropic.com>\nCo-authored-by: Philipp <philipp.kirchner@soptim.de>"
+    },
+    {
+      "sha": "f13d04b7ae7b150d4ca4489b9785aa443dfe3958",
+      "date": "2026-09-10T15:18:14+02:00",
+      "author": "Jan-Hendrik Spahn",
+      "email": "jan-hendrik.spahn@soptim.de",
+      "message": "fix: persist a new association into its named graph (#267, RDFA-732)\n\n`CIMUpdates.insertAssociation` scopes its operation with `WITH <graphUri>`, but\n`createAssociation` executed the request with `UpdateAction.execute(request, graph)`,\nwhich offers the graph as the *default* graph. The insert therefore went into a named\ngraph nobody holds: Jena raised nothing, the transaction committed, and the API answered\nwith the new UUIDs, so the class editor showed the association from its optimistic store\nwhile the diagram — which re-reads from the backend — never saw it and a reload lost it.\n\nBoth writes now go through `SessionDataStore.wrapGraphInDataset`, as `replaceAssociation`\nalready did; `replaceAllAssociations` had the same defect and is fixed with it.\n\nThe regression test runs on a named graph, as every schema in the app is. The existing\nservice tests use the \"default\" graph, where a missing `WITH` clause makes no difference,\nwhich is why this went unnoticed.\n\nSigned-off-by: Jan-Hendrik Spahn <jan-hendrik.spahn@soptim.de>\nCo-authored-by: Claude Opus 5 <noreply@anthropic.com>"
+    },
+    {
+      "sha": "fda98707a6d5171cd792a402d729177702e06f5c",
+      "date": "2026-09-10T12:36:22+02:00",
+      "author": "Jan-Hendrik Spahn",
+      "email": "jan-hendrik.spahn@soptim.de",
+      "message": "fix: profile header datatypes overwritten with entry IRIs (GH-254) (#257)\n\nexpandOntologyIris captured the entry IRI into `entryNamespace` and then\nexpanded that same variable again for the datatype, so every literal entry\nwith a datatype was stored as `\"value\"^^<predicateIRI>`:\n\n    <dct:issued rdf:datatype=\"http://purl.org/dc/terms/issued\">...\n\nThe corruption is progressive. On the first save it hits the two known\nfields that carry a datatype, dct:issued (xsd:dateTime) and dct:modified\n(xsd:date). From the second save on it hits every literal entry, because\nOntologyFactory reports xsd:string for plain literals when the header is\nread back, so the round-tripped DTO arrives with a non-null datatype that\nthen gets clobbered too.\n\nExpand entry.getDatatypeIri() instead. While in the same loop, also expand\nthe value of IRI entries: OntologyEntryRow stores IRI values in prefixed\nform just like entry IRIs and datatypes, but nothing ever expanded them,\nso an IRI value under a registered namespace was written as <owl:Thing>.\nLiteral values stay untouched.\n\nAdds UpdateOntologyServiceTest, which had no coverage before; all four\ncases fail against the previous behaviour.\n\nSigned-off-by: Jan-Hendrik Spahn <jan-hendrik.spahn@soptim.de>\nCo-authored-by: Claude Opus 5 <noreply@anthropic.com>"
+    },
+    {
+      "sha": "0b308207b7d2de8e8bdacc832766ff61a346e7c3",
+      "date": "2026-09-10T10:28:43+02:00",
+      "author": "Jan-Hendrik Spahn",
+      "email": "jan-hendrik.spahn@soptim.de",
+      "message": "fix: keep the diagram from freezing on an unlaid-out layout (#260, GH-256)\n\nEvery class of a diagram without a stored layout sits at (0,0), so any two of the\nsame measured size share a centre. getNodeIntersection had no border intersection\nto compute there and turned 0 * Infinity into NaN, for the edge path and for the\nplacement of its labels alike.\n\nThat was fatal in syncLabelNodes, whose effect writes the nodes it reads and\ncompared positions with !==: NaN !== NaN reported a change on every rebuild, so\nthe effect never settled. Svelte aborted the batch with effect_update_depth_exceeded\nand the main thread stayed busy, which left the app unresponsive and the loading\nspinner up for good - the ELK layout that would have separated the classes could\nno longer be delivered.\n\n- an edge between two classes on the same spot now ends on their shared centre\n- labelNodesChanged moved next to buildLabelNodes and compares coordinates with\n  Object.is, so a coordinate that is not a number can no longer keep a\n  self-writing effect running\n- a failing ELK layout clears the loading state and says so, rather than leaving\n  the user watching the spinner\n\nSigned-off-by: Jan-Hendrik Spahn <jan-hendrik.spahn@soptim.de>"
+    },
+    {
+      "sha": "756d5a382546567a63fda00bbb606b774aa2ff3c",
+      "date": "2026-09-10T09:31:17+02:00",
+      "author": "Philipp Kirchner",
+      "email": "philipp.kirchner@soptim.de",
+      "message": "feat: added support for attribute stereotypes (#251, RDFA-705)"
+    },
+    {
+      "sha": "5cdd8b4602de3240544ade8a4e94bdcd910c7216",
+      "date": "2026-09-07T08:13:59Z",
+      "author": "github-actions[bot]",
+      "email": "41898282+github-actions[bot]@users.noreply.github.com",
+      "message": "chore(changelog): prepare v1.5.0 (#264)\n\nCo-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "33e6fd9c8d80e4cabef88a42d45afa285b0e40ca",
+      "date": "2026-09-07T09:31:32+02:00",
+      "author": "Jan-Hendrik Spahn",
+      "email": "jan-hendrik.spahn@soptim.de",
+      "message": "fix: show association labels in diagrams (#255, RDFA-719, GH-232)\n\n- both ends of an association edge now carry the label of their association\n  end next to the multiplicity, stacked a line below it so that neither label\n  covers the other whatever way the edge runs\n- association labels are moved, reset and stored like multiplicity labels,\n  under a diagram object style of their own\n- an association end without a label keeps rendering, just without the label\n\nSigned-off-by: Jan-Hendrik Spahn <jan-hendrik.spahn@soptim.de>\nCo-authored-by: Claude Opus 5 <noreply@anthropic.com>"
+    },
+    {
+      "sha": "36c9602f83dac64d73e3faf96a5dd2165236e38f",
+      "date": "2026-09-04T15:18:59+02:00",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "chore(deps): update all non-major dependencies (#253)\n\n* chore(deps): update all non-major dependencies\n\n* chore: update frontend LICENSES-THIRD-PARTY.md\n\n---------\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>\nCo-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "3a739ec695b526c9ca3ef4b1859a9bcae2ec54c3",
+      "date": "2026-09-03T15:54:45+02:00",
+      "author": "Maximilian Reisch",
+      "email": "maximilian.reisch@soptim.de",
+      "message": "feat: movable multiplicity labels (#244, RDFA-586)\n\n- Multiplicity labels can now be moved around in a defined circle around its original position\n- added highlighting to selected multiplicity label\n\nSigned-off-by: Maximilian Reisch <maximilian.reisch@soptim.de>\nCo-authored-by: Maximilian Reisch <maximilian.reisch@soptim.de>\n\nSigned-off-by: Jan-Hendrik Spahn <jan-hendrik.spahn@soptim.de>\nCo-authored-by: Jan-Hendrik Spahn <jan-hendrik.spahn@soptim.de>"
+    },
+    {
+      "sha": "346d2954954169d3d8cf56ccf1237f758cc65a29",
+      "date": "2026-09-01T13:28:43+02:00",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "chore(deps): update all non-major dependencies (#245)\n\n* chore(deps): update all non-major dependencies\n\n* chore: update frontend LICENSES-THIRD-PARTY.md\n\n---------\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>\nCo-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "b3f58445838d402604c9069c300772c41c68add8",
+      "date": "2026-09-01T13:12:51+02:00",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "chore(deps): update actions/setup-java action to v6 (#249)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "c784148482e7f144b9e16dedfd9381ca5f7f8f2d",
+      "date": "2026-08-31T15:20:46+02:00",
+      "author": "Jan-Hendrik Spahn",
+      "email": "jan-hendrik.spahn@soptim.de",
+      "message": "docs: document required npm run api:generate step (#248)\n\nThe hey-api client under frontend/src/lib/api/generated is git-ignored and\nimported by +layout.svelte, so a fresh checkout cannot run or build the\nfrontend until it is generated from the committed frontend/openapi.json.\nThe setup instructions only listed npm install and npm run dev.\n\nAdd the step to every place that describes running or checking the frontend\n(README quickstart, CONTRIBUTING setup and required checks, installation,\ndeveloper overview, testing, contribution scenarios) and explain when it has\nto be repeated. Also point out the generated directory in the repository\nlayout and the frontend architecture page, and make the adding-a-feature step\nshow the backend contract export that precedes regeneration.\n\nCo-authored-by: Claude Opus 5 <noreply@anthropic.com>"
+    },
+    {
+      "sha": "0b0c3fa3713e437300c49c058454d9ec0988813c",
+      "date": "2026-08-31T13:27:28+02:00",
+      "author": "Jan-Hendrik Spahn",
+      "email": "jan-hendrik.spahn@soptim.de",
+      "message": "fix: restore share snapshot (#247, RDFA-710, GH-246)\n\nThe client migration in 64d25ac1 broke every step of the snapshot flow:\n\n- SnapshotDialog left `workspaces` undefined until the store answered, so\n  opening the dialog from the File menu threw on `workspaces.length` before\n  it rendered. Only the workspace tab context menu still worked, because it\n  locks the workspace and hides the select.\n- createSnapshot passed the workspace name as a path parameter. The endpoint\n  takes it as a raw request body that the backend reads verbatim, so it has\n  to be sent unserialized instead of as a quoted JSON string.\n- loadSnapshot passed the token as `base64Param`, while the path placeholder\n  is `base64Token`, so a shared link requested a literal\n  /api/snapshots/{base64Token}.\n\nSigned-off-by: Jan-Hendrik Spahn <jan-hendrik.spahn@soptim.de>"
+    },
+    {
+      "sha": "e86666b969c8da668969468d760f7b7d896adb29",
+      "date": "2026-08-28T13:32:00Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "fix(deps): update all non-major dependencies (#242)\n\n* fix(deps): update all non-major dependencies\n\n* chore: update frontend LICENSES-THIRD-PARTY.md\n\n* chore: update backend LICENSES-THIRD-PARTY.md\n\n---------\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>\nCo-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "2bb7e3d95b43bc9ef273353155680be7dfdf6797",
+      "date": "2026-08-28T15:23:32+02:00",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "chore(deps): update dependency com.puppycrawl.tools:checkstyle to v14 (#239)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "c7e8c96e14037d3a28ebca6628a5c36dc5f7e061",
+      "date": "2026-08-28T14:44:02+02:00",
+      "author": "Maximilian Reisch",
+      "email": "maximilian.reisch@soptim.de",
+      "message": "feat: merged view style for custom diagrams (#237, RDFA-674)\n\nChanged custom schema and workspace view to show properly merged classes similar to the merged view\n\nSigned-off-by: Maximilian Reisch <maximilian.reisch@soptim.de>"
+    },
+    {
+      "sha": "9050d16bd9e85d3037d7f4a53eea657b7400f9d1",
+      "date": "2026-08-28T14:31:39+02:00",
+      "author": "Maximilian Reisch",
+      "email": "maximilian.reisch@soptim.de",
+      "message": "feat: multiprofile maintenance (#233, RDFA-699)\n\nimproved extending class in other schemas in the same workspace\n\n---------\n\nSigned-off-by: Maximilian Reisch <maximilian.reisch@soptim.de>"
+    },
+    {
+      "sha": "77e72d733bddc5a4fa95b11f51403a216c62040d",
+      "date": "2026-08-28T09:24:08+02:00",
+      "author": "Maximilian Reisch",
+      "email": "maximilian.reisch@soptim.de",
+      "message": "fix: package diagram scope (#238, RDFA-704)\n\nSigned-off-by: Maximilian Reisch <maximilian.reisch@soptim.de>"
+    }
+  ],
+  "commit_sha": "45a149c62029d7d24c6fa9d5302db49074ec4993",
+  "extracted_at": "2026-10-05T18:38:50.545256+00:00"
+}

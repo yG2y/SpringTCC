@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "e36e4eefbab1f05c3afb2d54f4751a020dbdce1a",
+      "date": "2026-08-23T23:12:53+08:00",
+      "author": "svnlab",
+      "email": "xuzhaoah@163.com",
+      "message": "fix(handler): enqueue disruptor/MQ retry send off the consumer thread\n\nCo-authored-by: Cursor <cursoragent@cursor.com>\n"
+    },
+    {
+      "sha": "e2db0eef9aa0ffd25f257ad4ffcba41b7e8053f1",
+      "date": "2026-08-23T23:05:24+08:00",
+      "author": "svnlab",
+      "email": "xuzhaoah@163.com",
+      "message": "fix(handler): set async-trigger flag on default retry worker\n\nCo-authored-by: Cursor <cursoragent@cursor.com>\n"
+    },
+    {
+      "sha": "58eeeba01e3e27e4e1b26bdc0e50f7d006503085",
+      "date": "2026-08-23T22:53:13+08:00",
+      "author": "svnlab",
+      "email": "xuzhaoah@163.com",
+      "message": "fix(server): parse execute_param for remote retry reexecute\n\nCo-authored-by: Cursor <cursoragent@cursor.com>\n"
+    },
+    {
+      "sha": "ac805587d73c46235ea810d792cd037db89421d1",
+      "date": "2026-08-23T22:45:40+08:00",
+      "author": "svnlab",
+      "email": "xuzhaoah@163.com",
+      "message": "fix(retry): scope listRetryable to appId and harden scanner lifecycle\n\nCo-authored-by: Cursor <cursoragent@cursor.com>\n"
+    },
+    {
+      "sha": "6ea297527d9169f6c98af60874d5c6792cc7e22f",
+      "date": "2026-08-23T22:31:08+08:00",
+      "author": "svnlab",
+      "email": "xuzhaoah@163.com",
+      "message": "feat(admin): retry FAIL download tasks from the console\n\nCo-authored-by: Cursor <cursoragent@cursor.com>\n"
+    },
+    {
+      "sha": "10ffaf31db660cd3826e66fa04fc802435822d69",
+      "date": "2026-08-23T22:28:01+08:00",
+      "author": "svnlab",
+      "email": "xuzhaoah@163.com",
+      "message": "fix(starter): keep download retry scanner running after list failures\n\nWrap DownloadRetryScanner.scan() in an outer try/catch so listRetryable\nexceptions are logged and swallowed, preventing scheduleAtFixedRate from\nstopping on transient storage errors.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>\n"
+    },
+    {
+      "sha": "8d7ab2dc217c6cebeaa0941c4b51a0260d99d62e",
+      "date": "2026-08-23T22:25:38+08:00",
+      "author": "svnlab",
+      "email": "xuzhaoah@163.com",
+      "message": "feat(starter): scan claimable FAIL and orphan NONE retries\n\nCo-authored-by: Cursor <cursoragent@cursor.com>\n"
+    },
+    {
+      "sha": "10d5538b4d6229764cc1b77e1bafb632087acd40",
+      "date": "2026-08-23T22:19:22+08:00",
+      "author": "svnlab",
+      "email": "xuzhaoah@163.com",
+      "message": "feat(handler): dispatch business retry after execute completes\n\nCo-authored-by: Cursor <cursoragent@cursor.com>\n"
+    },
+    {
+      "sha": "df77946b0d94b996801f5e235a1bb1cddc59720e",
+      "date": "2026-08-23T22:15:18+08:00",
+      "author": "svnlab",
+      "email": "xuzhaoah@163.com",
+      "message": "feat(trigger): reset existing trigger rows for business retry\n\nCo-authored-by: Cursor <cursoragent@cursor.com>\n"
+    },
+    {
+      "sha": "9ffd70d71b13feeb72a51cc0cd5881ceb3966342",
+      "date": "2026-08-23T22:11:55+08:00",
+      "author": "svnlab",
+      "email": "xuzhaoah@163.com",
+      "message": "feat(remote): add null-safe download retry client calls\n\nCo-authored-by: Cursor <cursoragent@cursor.com>\n"
+    },
+    {
+      "sha": "2b765cd7333f55a2e18e0e1f0b7a30a14ad9039f",
+      "date": "2026-08-23T22:08:21+08:00",
+      "author": "svnlab",
+      "email": "xuzhaoah@163.com",
+      "message": "feat(server): expose download retry claim and list APIs\n\nCo-authored-by: Cursor <cursoragent@cursor.com>\n"
+    },
+    {
+      "sha": "6ee73a460c6cd6a85f4b2a067ab7d896c41d53b6",
+      "date": "2026-08-23T22:04:43+08:00",
+      "author": "svnlab",
+      "email": "xuzhaoah@163.com",
+      "message": "fix(storage): bind retry SQL status codes as parameters\n\nMessageFormat was stripping quoted literals in claim/list retry SQL.\nUse JDBC and named parameters for FAIL/NONE codes and empty error_msg.\nAdd AsyncDownloadRecordMapperImplClaimSqlTest to guard formatted SQL.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>\n"
+    },
+    {
+      "sha": "5385147cd24c3c0ca3c2ad192aeed530f4f4ee35",
+      "date": "2026-08-23T22:01:45+08:00",
+      "author": "svnlab",
+      "email": "xuzhaoah@163.com",
+      "message": "feat(storage): add download claimRetry and listRetryable\n\nCo-authored-by: Cursor <cursoragent@cursor.com>\n"
+    },
+    {
+      "sha": "272603ff56419ecefdfb605c8e442a556651f37b",
+      "date": "2026-08-23T21:57:53+08:00",
+      "author": "svnlab",
+      "email": "xuzhaoah@163.com",
+      "message": "docs: add async download retry implementation plan\n\nBreak the approved spec into TDD tasks so claim, retrigger, dispatch, scanner, and admin can land independently.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>\n"
+    },
+    {
+      "sha": "4b2cabd873c21bd387d50add73e6b5e05f545f6d",
+      "date": "2026-08-23T21:51:30+08:00",
+      "author": "svnlab",
+      "email": "xuzhaoah@163.com",
+      "message": "docs: add async download business-retry design spec\n\nRecord the approved retry chain so implementation can reuse execute/doExecute without mixing trigger compensation.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>\n"
+    },
+    {
+      "sha": "5f20a0a3a27677cc326e67ffd693fd2df7c67747",
+      "date": "2026-05-17T23:07:26+08:00",
+      "author": "svnlab",
+      "email": "xuzhaoah@163.com",
+      "message": "feat(): 优化readme\n"
+    },
+    {
+      "sha": "9119cb5e0ce225af5bf5d7a6d052ef98d2387634",
+      "date": "2026-02-01T15:58:00+08:00",
+      "author": "svnlab",
+      "email": "xuzhaoah@163.com",
+      "message": "feat(): 优化readme\n"
+    },
+    {
+      "sha": "7218b2ea420ef78cc045a3df7ac6d0b317525d40",
+      "date": "2026-02-01T15:57:32+08:00",
+      "author": "svnlab",
+      "email": "xuzhaoah@163.com",
+      "message": "Merge remote-tracking branch 'origin/master'\n\n# Conflicts:\n#\tREADME_zh.md\n"
+    },
+    {
+      "sha": "2197830d8942f9ea5ff00a5ccc13df01785a9fae",
+      "date": "2026-02-01T15:55:58+08:00",
+      "author": "svnlab",
+      "email": "xuzhaoah@163.com",
+      "message": "feat(): 优化readme\n"
+    },
+    {
+      "sha": "476db3e1bce8bdb25a8f2338a0ec8204477af678",
+      "date": "2026-02-01T15:54:35+08:00",
+      "author": "svnlab",
+      "email": "97527612+svnlab@users.noreply.github.com",
+      "message": "docs: 新增 README_en.md，提供英文版本与语言切换"
+    },
+    {
+      "sha": "610e0c40823f0a01de4b01a35d631a6a5c06bf8e",
+      "date": "2026-02-01T15:54:17+08:00",
+      "author": "svnlab",
+      "email": "97527612+svnlab@users.noreply.github.com",
+      "message": "docs: README.md 设为中文默认并增加英文切换链接与徽章"
+    },
+    {
+      "sha": "2d30347067bc1eb9d4b30b8cf741a242228f8a4d",
+      "date": "2026-02-01T15:50:19+08:00",
+      "author": "svnlab",
+      "email": "97527612+svnlab@users.noreply.github.com",
+      "message": "docs: 重写并优化 README_zh.md，强化卖点与文档导航"
+    },
+    {
+      "sha": "37c2f094697c8e26d90d42cb3bbe502457e82213",
+      "date": "2025-10-08T23:19:50+08:00",
+      "author": "svnlab",
+      "email": "xuzhaoah@163.com",
+      "message": "fix(): fix execute param bug\n"
+    },
+    {
+      "sha": "3d38361015b733107e2cc637231621e59b5740a7",
+      "date": "2025-07-14T21:22:09+08:00",
+      "author": "svnlab",
+      "email": "xuzhaoah@163.com",
+      "message": "refactor(json): json compile cache\n"
+    },
+    {
+      "sha": "9aa5fa75dcfeb94701efb73afb9023d7d7479fe6",
+      "date": "2025-06-01T21:23:08+08:00",
+      "author": "svnlab",
+      "email": "xuzhaoah@163.com",
+      "message": "feat(): readme support english\n"
+    },
+    {
+      "sha": "490a5f359831c4e62f094ba5fb39b21ea94eba04",
+      "date": "2025-05-31T14:03:05+08:00",
+      "author": "svnlab",
+      "email": "xuzhaoah@163.com",
+      "message": "feat(): readme support english\n"
+    },
+    {
+      "sha": "58e8ceb940f137b70e24a4d756ebf46abfeca80e",
+      "date": "2025-05-31T11:46:18+08:00",
+      "author": "svnlab",
+      "email": "xuzhaoah@163.com",
+      "message": "feat(): readme support english\n"
+    },
+    {
+      "sha": "eb827898cf335235de5df4d7deccf962797c7331",
+      "date": "2025-05-22T17:57:11+08:00",
+      "author": "svnlab",
+      "email": "xuzhaoah@163.com",
+      "message": "feat(): 变更主页地址\n"
+    },
+    {
+      "sha": "e453e785eb40d4ecfcbd0681c39c56fa42bf3268",
+      "date": "2024-12-10T21:05:30+08:00",
+      "author": "svnlab",
+      "email": "openquartz@gmail.com",
+      "message": "feat(i18n): README.md\n"
+    },
+    {
+      "sha": "2b1b3af5b367848762746bdc1d4885ecad1d6a03",
+      "date": "2024-12-10T20:45:51+08:00",
+      "author": "svnlab",
+      "email": "openquartz@gmail.com",
+      "message": "refactor(): format code\n"
+    }
+  ],
+  "commit_sha": "e36e4eefbab1f05c3afb2d54f4751a020dbdce1a",
+  "extracted_at": "2026-10-05T18:42:54.140117+00:00"
+}

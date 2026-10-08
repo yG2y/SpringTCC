@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "b944592ccffb890196e31d14407a2d1f836649ce",
+      "date": "2026-01-05T17:47:59-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Update READMEs\n"
+    },
+    {
+      "sha": "af8019a3b28e4b7aa925b5d1d5a8d35662cdf489",
+      "date": "2026-01-05T17:42:25-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Project upgrade\n\n- Upgrade to Java 25\n- Upgrade to Spring Boot 4.0.1\n- Upgrade to Spring Cloud 2025.1.0\n- Upgrade to SpringDoc OpenAPI 3.0.1\n- Upgrade to Apache Maven to 3.9.12\n- Upgrade to wrapperVersion to 3.3.4\n- Upgrade to Cassandra Docker image 5.0.6\n- Upgrade to MySQL Docker image 9.5.0\n- Upgrade to Vault Docker image 1.21.1\n- Upgrade to Consul Docker image 1.22.2\n- Replace Jib with Paketo Buildpacks\n- Some adjustments on setup-spring*.sh scripts\n"
+    },
+    {
+      "sha": "3c1a9d6297e86dfa4ea708d3744b4f07425615f2",
+      "date": "2025-08-20T18:01:14+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- Upgrade to Spring Boot 3.5.4\n- Upgrade to Spring Cloud 2025.0.0\n- Upgrade to Spring Vault 3.2.0\n- Upgrade to SpringDoc OpenAPI 2.8.9\n- Upgrade to Jib Maven Plugin 3.4.6\n- Upgrade to MySQL Docker image 9.4.0\n- Upgrade to Vault Docker image 1.20.2\n- Upgrade to Consul Docker image 1.21.4\n- Upgrade to Cassandra Docker image 5.0.5\n- Small adjustment in init-environment and remove-docker-images scripts\n- Update jq link in README files\n"
+    },
+    {
+      "sha": "7bd957cc3d4f99d909900120c8b14c5d6f2c8a65",
+      "date": "2025-08-20T16:39:21+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- Add the .gitattributes file\n- Upgrade Apache Maven to 3.9.11\n- Update README files\n"
+    },
+    {
+      "sha": "265973cdfe525bfb78630ca5eebafbf655bbfbad",
+      "date": "2024-12-20T14:48:56-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Remove some Actuator references that were left behind\n"
+    },
+    {
+      "sha": "3b90549f741a188cafbfde893052182c19574c98",
+      "date": "2024-12-18T14:19:02-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Update README file\n"
+    },
+    {
+      "sha": "f1700c9a11e00f5dbcc2d49064189df983ba688c",
+      "date": "2024-12-18T13:47:02-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Refactor application packages\n"
+    },
+    {
+      "sha": "15bf609c447422cf00f246ede1af27dc0217f2b8",
+      "date": "2024-12-18T11:40:25-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Refactor the mappings using the from() method in the classes\n"
+    },
+    {
+      "sha": "9ef758bec3b5975b7908b81eac063f18581d7414",
+      "date": "2024-12-15T14:09:15-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Improve encapsulation in Controller classes\n"
+    },
+    {
+      "sha": "54b44f498916b701fb473da8ea3592ba8770a52a",
+      "date": "2024-12-15T14:05:25-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Rename docker-build.sh to build-docker-images.sh\n"
+    },
+    {
+      "sha": "57acc24d8b4f83ee258c2f06aeb30d06319b823a",
+      "date": "2024-12-13T14:32:03-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Remove Services and Mappers to simplify the project\n"
+    },
+    {
+      "sha": "dd1349174ef20713ff9bfe030349a9481274690a",
+      "date": "2024-12-13T12:17:27-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Remove public keyword from Beans\n"
+    },
+    {
+      "sha": "2fa7f9889190cfa91c2f737cc59e43e518d3aad3",
+      "date": "2024-12-13T12:06:25-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Remove lombok; Convert Create DTOs from class to record\n"
+    },
+    {
+      "sha": "b67bebd756747f612ad79783aa4a62e7e79b6b83",
+      "date": "2024-12-13T10:55:16-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Refactor the way docker images are built\n"
+    },
+    {
+      "sha": "c57f748aca755886e7e9bc6989ed1faf73d08c4e",
+      "date": "2024-12-13T10:14:06-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Remove actuator dependency as it is not essencial to the project\n"
+    },
+    {
+      "sha": "4bbd346bc9454408d09edda6523faf3f663453ed",
+      "date": "2024-12-13T10:06:40-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- Upgrade to Java 21;\n- Upgrade to spring-boot 3.4.0;\n- Upgrade to spring-cloud 2024.0.0;\n- Upgrade to spring-vault 3.1.2;\n- Upgrade to springdoc-openapi 2.7.0;\n- Upgrade to jib-maven-plugin 3.4.4;\n- Upgrade to apache-maven 3.9.9;\n- Upgrade to Cassandra docker image 5.0.2;\n- Upgrade to Mysql docker image 9.1.0;\n- Upgrade to Vault docker image 1.18.2;\n- Upgrade to Consul docker image 1.20.1;\n- Refactor pom.xml files;\n- Update README files.\n"
+    },
+    {
+      "sha": "ab2359ca2dc8ea777ee97813d5a82c8558513d72",
+      "date": "2024-08-17T12:46:29+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Update links in README\n"
+    },
+    {
+      "sha": "b257b181793f7f5c4a63d25d1634a845007620f0",
+      "date": "2024-08-08T15:36:40+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n- upgrade to spring-boot 3.3.2;\n- upgrade to spring-cloud 2023.0.3;\n- upgrade to spring-vault 3.1.1;\n- upgrade to springdoc-openapi 2.6.0;\n- upgrade to jib 3.4.3;\n- upgrade to mysql docker image 9.0.1;\n- upgrade to cassandra docker image 4.1.5;\n- upgrade to vault docker image 1.17.3;\n- upgrade to consul docker image 1.19.1;\n- upgrade wrapperVersion to 3.3.2 and apache-maven to 3.9.7.\n"
+    },
+    {
+      "sha": "0d76c965633130d50a5e8ee22647203a9fb32be7",
+      "date": "2023-12-11T08:00:04-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n- upgrade to spring-boot 3.2.0;\n- upgrade to spring-cloud 2023.0.0;\n- upgrade to spring-vault 3.1.0;\n- upgrade to springdoc-openapi 2.3.0;\n- upgrade to jib-maven-plugin 3.4.0.\n- upgrade to MySQL Docker image 8.2.0;\n- upgrade to Vault Docker image 1.15.2;\n- upgrade to Consul Docker image 1.17.0.\n"
+    },
+    {
+      "sha": "e9958008341fee2e838c8d69e9dee48bf78acc88",
+      "date": "2023-12-11T07:39:09-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to apache-maven 3.9.5\n"
+    },
+    {
+      "sha": "4dc291a9d6348a501e6edba49e3e5fb6c226e80d",
+      "date": "2023-12-11T07:26:07-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Add three Medium articles\n"
+    },
+    {
+      "sha": "9929a21cf8666b22873ab21a95f5bc56f16eec87",
+      "date": "2023-08-30T18:21:31+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Create FUNDING.yml\n"
+    },
+    {
+      "sha": "3855899f8485c2f635a1dbb92096f6263946fbbd",
+      "date": "2023-08-30T18:19:14+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade project dependencies to:\n- spring-boot 3.1.3;\n- spring-cloud 2022.0.4;\n- spring-vault 3.0.4;\n- springdoc-openapi 2.2.0;\n- jib 3.3.2.\n"
+    },
+    {
+      "sha": "4003e4f20721469a846c4f35685e11c2aaa43095",
+      "date": "2023-08-30T18:15:33+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to MySQL 8.1.0, Vault 1.13.3, Consul 1.15.4 and Cassandra 4.1.3\n"
+    },
+    {
+      "sha": "be2c2a7f93e5fbbecda425255d9097c57ca06e86",
+      "date": "2023-08-30T18:09:53+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to apache-maven 3.9.4 and maven-wrapper 3.2.0\n"
+    },
+    {
+      "sha": "3ad9cf548a3914f0ff4328c50ee5d469fc21020c",
+      "date": "2023-08-30T14:59:54+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Update goal description in README\n"
+    },
+    {
+      "sha": "aca13c972c162ed25a8c43ae64526a5c8a4fcd4f",
+      "date": "2023-08-30T14:43:20+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Add PoCs & Articles Section In README\n"
+    },
+    {
+      "sha": "3f95c6e9051e7a9a68c7db3264655ee9bf5cf6c8",
+      "date": "2023-08-30T14:42:12+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Remove docker-compose references as it is not used\n"
+    },
+    {
+      "sha": "5c8e235d0d3040003005853b5fb62315391a07b0",
+      "date": "2023-03-27T22:15:00+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "update to vault 1.13.0 and consul 1.15.1\n"
+    },
+    {
+      "sha": "33cc3f41bda43fa758f15170df56b043ed694997",
+      "date": "2023-03-27T14:20:26+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "project upgrade\n- upgrade to spring-boot 3.0.5;\n- upgrade to spring-vault 3.0.2;\n- add health-cmd to some docker containers in init-environment.sh.\n"
+    }
+  ],
+  "commit_sha": "b944592ccffb890196e31d14407a2d1f836649ce",
+  "extracted_at": "2026-10-05T18:41:37.077669+00:00"
+}

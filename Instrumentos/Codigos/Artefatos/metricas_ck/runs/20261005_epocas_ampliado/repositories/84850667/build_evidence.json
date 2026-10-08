@@ -1,0 +1,84 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${spring-boot.version};1.5.2.RELEASE",
+  "spring_boot_major": "1",
+  "java_versions_declared": "${java.version};1.8",
+  "build_evidence": [
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-mail"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tifoon-app/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "tifoon-app/pom.xml",
+      "artifact": "spring-boot-loader"
+    },
+    {
+      "file": "tifoon-app/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tifoon-common/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "tifoon-core/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "tifoon-core/pom.xml",
+      "artifact": "spring-boot-starter-mail"
+    },
+    {
+      "file": "tifoon-core/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "tifoon-core/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tifoon-plugin-api/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "tifoon-plugin-api/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tifoon-plugins/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "tifoon-plugins/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tifoon-plugins/tifoon-json-io-plugin/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tifoon-plugins/tifoon-yaml-io-plugin/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

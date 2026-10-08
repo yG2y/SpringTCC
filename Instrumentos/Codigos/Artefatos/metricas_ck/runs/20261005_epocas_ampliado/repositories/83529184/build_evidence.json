@@ -1,0 +1,40 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "4.1.1",
+  "spring_boot_major": "4",
+  "java_versions_declared": "21",
+  "build_evidence": [
+    {
+      "file": "account/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "account/pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "account/pom.xml",
+      "artifact": "spring-boot-restclient"
+    },
+    {
+      "file": "customer/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "customer/pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "customer/pom.xml",
+      "artifact": "spring-boot-restclient"
+    },
+    {
+      "file": "gateway/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    }
+  ]
+}

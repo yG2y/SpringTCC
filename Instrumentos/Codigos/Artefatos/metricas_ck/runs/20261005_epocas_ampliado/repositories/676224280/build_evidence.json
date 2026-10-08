@@ -1,0 +1,568 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "2.6.7;2.7.2;2.7.5;2.7.6;2.7.8;3.0.0;3.0.10;3.1.0;3.1.2;3.1.5;3.2.0;3.2.1",
+  "spring_boot_major": "multiple",
+  "java_versions_declared": "11;17;20",
+  "build_evidence": [
+    {
+      "file": "GithubActions/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "GithubActions/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "GithubActions/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "GithubActions/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "gRPC/grpc-client/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "gRPC/grpc-client/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "gRPC/grpc-client/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "gRPC/grpc-client/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "kafka-partitions-k8s/consumer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "kafka-partitions-k8s/consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "kafka-partitions-k8s/consumer/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "kafka-partitions-k8s/consumer/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "kafka-partitions-k8s/producer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "kafka-partitions-k8s/producer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "kafka-partitions-k8s/producer/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "kafka-partitions-k8s/producer/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "kafka-retry-failure/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "kafka-retry-failure/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "kafka-retry-failure/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "kafka-retry-failure/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "kafka-retry-failure/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-argocd-app/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-argocd-app/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-argocd-app/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-argocd-app/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-aws-dynamodb/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-aws-dynamodb/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-aws-dynamodb/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-aws-dynamodb/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-aws-s3/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-aws-s3/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-aws-s3/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-aws-s3/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-aws-sqs/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-aws-sqs/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-aws-sqs/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-aws-sqs/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-boot-redis-cluster/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-boot-redis-cluster/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "spring-boot-redis-cluster/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-redis-cluster/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-redis-cluster/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-boot-retryable/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-boot-retryable/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-retryable/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-retryable/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-dockerize-java-flags/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-dockerize-java-flags/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-dockerize-java-flags/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-dockerize-java-flags/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-hikari-cp/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-hikari-cp/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "spring-hikari-cp/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-hikari-cp/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-hikari-cp/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-hikari-cp/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "spring-hikari-cp/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-kafka-parallel-consuming/spring-order-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-kafka-parallel-consuming/spring-order-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-kafka-parallel-consuming/spring-order-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-kafka-parallel-consuming/spring-order-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-kafka-parallel-consuming/spring-payment-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-kafka-parallel-consuming/spring-payment-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-kafka-parallel-consuming/spring-payment-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-kafka-parallel-consuming/spring-payment-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-kafka-parallel-consuming/spring-stock-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-kafka-parallel-consuming/spring-stock-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-kafka-parallel-consuming/spring-stock-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-kafka-parallel-consuming/spring-stock-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-open-telemetry-jaeger/comment-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-open-telemetry-jaeger/comment-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-open-telemetry-jaeger/comment-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-open-telemetry-jaeger/comment-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-open-telemetry-jaeger/comment-service/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "spring-open-telemetry-jaeger/comment-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-open-telemetry-jaeger/post-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-open-telemetry-jaeger/post-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-open-telemetry-jaeger/post-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-open-telemetry-jaeger/post-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-open-telemetry-jaeger/post-service/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "spring-open-telemetry-jaeger/post-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-open-telemetry-zipkin/comment-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-open-telemetry-zipkin/comment-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-open-telemetry-zipkin/comment-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-open-telemetry-zipkin/comment-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-open-telemetry-zipkin/comment-service/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "spring-open-telemetry-zipkin/comment-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-open-telemetry-zipkin/post-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-open-telemetry-zipkin/post-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-open-telemetry-zipkin/post-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-open-telemetry-zipkin/post-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-open-telemetry-zipkin/post-service/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "spring-open-telemetry-zipkin/post-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-pessimistic-lock/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-pessimistic-lock/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "spring-pessimistic-lock/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-pessimistic-lock/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-pessimistic-lock/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-prometheus-grafana/comment-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-prometheus-grafana/comment-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-prometheus-grafana/comment-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-prometheus-grafana/comment-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-prometheus-grafana/comment-service/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "spring-prometheus-grafana/comment-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-prometheus-grafana/post-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-prometheus-grafana/post-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-prometheus-grafana/post-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-prometheus-grafana/post-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-prometheus-grafana/post-service/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "spring-prometheus-grafana/post-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-reactive-redis/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-reactive-redis/pom.xml",
+      "artifact": "spring-boot-starter-data-redis-reactive"
+    },
+    {
+      "file": "spring-reactive-redis/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "spring-reactive-redis/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-reactive-redis/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-redis-distributed-lock/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-redis-distributed-lock/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-redis-distributed-lock/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-redis-distributed-lock/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "spring-redis-distributed-lock/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-redis-om/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-redis-om/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-redis-om/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-redis-om/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-test-containers/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-test-containers/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "spring-test-containers/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-test-containers/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-test-containers/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-virtual-thread/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-virtual-thread/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-virtual-thread/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-virtual-thread/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-virtual-thread/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "spring-virtual-thread/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "webflux/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "webflux/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "webflux/pom.xml",
+      "artifact": "spring-boot-starter-data-r2dbc"
+    },
+    {
+      "file": "webflux/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "webflux/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

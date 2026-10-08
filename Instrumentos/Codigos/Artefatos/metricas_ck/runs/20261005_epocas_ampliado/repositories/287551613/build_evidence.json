@@ -1,0 +1,1544 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${spring-boot.version}",
+  "spring_boot_major": "unknown",
+  "java_versions_declared": "11",
+  "build_evidence": [
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-boot-arthas/arthas-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-log4j2"
+    },
+    {
+      "file": "spring-boot-arthas/arthas-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-arthas/arthas-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-arthas/arthas-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "spring-boot-cache/cache-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-cache"
+    },
+    {
+      "file": "spring-boot-cache/cache-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "spring-boot-cache/cache-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-cache/cache-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "spring-boot-cache/cache-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-cache/cache-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-cache/cache-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "spring-boot-cps/cps-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-log4j2"
+    },
+    {
+      "file": "spring-boot-cps/cps-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-cps/cps-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-cps/cps-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "spring-boot-dependencies/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "spring-boot-dependencies/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-distributed-lock/distributed-lock-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "spring-boot-distributed-lock/distributed-lock-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "spring-boot-distributed-lock/distributed-lock-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-distributed-lock/distributed-lock-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-distributed-lock/distributed-lock-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "spring-boot-dynamic-datasource/dynamic-datasource-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-log4j2"
+    },
+    {
+      "file": "spring-boot-dynamic-datasource/dynamic-datasource-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "spring-boot-dynamic-datasource/dynamic-datasource-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "spring-boot-dynamic-datasource/dynamic-datasource-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-dynamic-datasource/dynamic-datasource-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-dynamic-datasource/dynamic-datasource-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "spring-boot-elasticsearch/elasticsearch-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-log4j2"
+    },
+    {
+      "file": "spring-boot-elasticsearch/elasticsearch-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-elasticsearch/elasticsearch-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-elasticsearch/elasticsearch-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "spring-boot-excel/excel-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-log4j2"
+    },
+    {
+      "file": "spring-boot-excel/excel-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-excel/excel-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-excel/excel-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "spring-boot-flyway/flyway-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-log4j2"
+    },
+    {
+      "file": "spring-boot-flyway/flyway-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-flyway/flyway-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-flyway/flyway-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "spring-boot-geoip/geoip-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-log4j2"
+    },
+    {
+      "file": "spring-boot-geoip/geoip-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-geoip/geoip-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-geoip/geoip-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "spring-boot-javacv/javacv-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-log4j2"
+    },
+    {
+      "file": "spring-boot-javacv/javacv-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-javacv/javacv-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-javacv/javacv-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "spring-boot-kafka/kafka-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-log4j2"
+    },
+    {
+      "file": "spring-boot-kafka/kafka-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-kafka/kafka-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-kafka/kafka-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "spring-boot-knife/knife-gateway-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-knife/knife-gateway-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-knife/knife-gateway-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "spring-boot-knife/knife-service-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-knife/knife-service-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-knife/knife-service-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "spring-boot-logging/logging-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-log4j2"
+    },
+    {
+      "file": "spring-boot-logging/logging-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-logging/logging-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "spring-boot-logging/logging-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-logging/logging-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-logging/logging-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "spring-boot-mail/mail-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-mail/mail-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-mail/mail-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-message/message-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "spring-boot-message/message-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "spring-boot-message/message-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-message/message-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-message/message-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-monitor/monitor-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-actuator-autoconfigure"
+    },
+    {
+      "file": "spring-boot-monitor/monitor-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-log4j2"
+    },
+    {
+      "file": "spring-boot-monitor/monitor-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-monitor/monitor-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-monitor/monitor-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "spring-boot-mybatis-plus/mybatis-plus-extensions/mybatis-plus-extensions-changelog-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-mybatis-plus/mybatis-plus-extensions/mybatis-plus-extensions-changelog-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-mybatis-plus/mybatis-plus-extensions/mybatis-plus-extensions-changelog-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-mybatis-plus/mybatis-plus-extensions/mybatis-plus-extensions-changelog-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "spring-boot-mybatis-plus/mybatis-plus-extensions/mybatis-plus-extensions-config-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-mybatis-plus/mybatis-plus-extensions/mybatis-plus-extensions-config-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-mybatis-plus/mybatis-plus-extensions/mybatis-plus-extensions-config-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-mybatis-plus/mybatis-plus-extensions/mybatis-plus-extensions-config-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "spring-boot-mybatis-plus/mybatis-plus-extensions/mybatis-plus-extensions-createtable-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-mybatis-plus/mybatis-plus-extensions/mybatis-plus-extensions-createtable-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-mybatis-plus/mybatis-plus-extensions/mybatis-plus-extensions-createtable-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-mybatis-plus/mybatis-plus-extensions/mybatis-plus-extensions-createtable-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "spring-boot-mybatis-plus/mybatis-plus-extensions/mybatis-plus-extensions-dataaudit-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "spring-boot-mybatis-plus/mybatis-plus-extensions/mybatis-plus-extensions-dataaudit-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-mybatis-plus/mybatis-plus-extensions/mybatis-plus-extensions-dataaudit-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-mybatis-plus/mybatis-plus-extensions/mybatis-plus-extensions-dataaudit-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-mybatis-plus/mybatis-plus-extensions/mybatis-plus-extensions-dataaudit-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "spring-boot-mybatis-plus/mybatis-plus-extensions/mybatis-plus-extensions-httplog-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-mybatis-plus/mybatis-plus-extensions/mybatis-plus-extensions-httplog-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-mybatis-plus/mybatis-plus-extensions/mybatis-plus-extensions-httplog-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "spring-boot-mybatis-plus/mybatis-plus-extensions/mybatis-plus-extensions-task-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-mybatis-plus/mybatis-plus-extensions/mybatis-plus-extensions-task-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-mybatis-plus/mybatis-plus-extensions/mybatis-plus-extensions-task-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-mybatis-plus/mybatis-plus-extensions/mybatis-plus-extensions-task-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "spring-boot-mybatis-plus/mybatis-plus-extensions/mybatis-plus-extensions-tpl-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-mybatis-plus/mybatis-plus-extensions/mybatis-plus-extensions-tpl-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-mybatis-plus/mybatis-plus-extensions/mybatis-plus-extensions-tpl-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-mybatis-plus/mybatis-plus-extensions/mybatis-plus-extensions-tpl-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "spring-boot-mybatis-plus/mybatis-plus-extensions/mybatis-plus-extensions-userconfig-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-mybatis-plus/mybatis-plus-extensions/mybatis-plus-extensions-userconfig-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-mybatis-plus/mybatis-plus-extensions/mybatis-plus-extensions-userconfig-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-mybatis-plus/mybatis-plus-extensions/mybatis-plus-extensions-userconfig-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "spring-boot-mybatis-plus/mybatis-plus-extensions/mybatis-plus-extensions-webmagic-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-mybatis-plus/mybatis-plus-extensions/mybatis-plus-extensions-webmagic-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-mybatis-plus/mybatis-plus-extensions/mybatis-plus-extensions-webmagic-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-mybatis-plus/mybatis-plus-extensions/mybatis-plus-extensions-webmagic-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "spring-boot-mybatis-plus/mybatis-plus-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-mybatis-plus/mybatis-plus-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-mybatis-plus/mybatis-plus-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-mybatis-plus/mybatis-plus-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "spring-boot-named/named-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "spring-boot-named/named-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-named/named-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "spring-boot-netty/netty-client-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "spring-boot-netty/netty-client-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-netty/netty-client-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-netty/netty-client-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "spring-boot-netty/netty-server-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "spring-boot-netty/netty-server-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-netty/netty-server-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-netty/netty-server-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "spring-boot-notify/notify-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-log4j2"
+    },
+    {
+      "file": "spring-boot-notify/notify-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-notify/notify-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-notify/notify-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "spring-boot-openfeign/openfeign-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-openfeign/openfeign-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-openfeign/openfeign-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-openfeign/openfeign-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "spring-boot-oss/oss-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-oss/oss-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-oss/oss-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-rocketmq/rocketmq-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-log4j2"
+    },
+    {
+      "file": "spring-boot-rocketmq/rocketmq-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-rocketmq/rocketmq-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-rocketmq/rocketmq-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "spring-boot-samples/arthas-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "spring-boot-samples/arthas-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-samples/arthas-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-samples/arthas-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-logging"
+    },
+    {
+      "file": "spring-boot-samples/cache-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "spring-boot-samples/cache-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-samples/cache-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-samples/cache-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-logging"
+    },
+    {
+      "file": "spring-boot-samples/cps-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "spring-boot-samples/cps-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-samples/cps-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-samples/cps-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-logging"
+    },
+    {
+      "file": "spring-boot-samples/excel-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "spring-boot-samples/excel-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-samples/excel-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-samples/excel-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-logging"
+    },
+    {
+      "file": "spring-boot-samples/geoip-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "spring-boot-samples/geoip-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-samples/geoip-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-samples/geoip-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-logging"
+    },
+    {
+      "file": "spring-boot-samples/geoip-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-samples/javacv-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "spring-boot-samples/javacv-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-samples/javacv-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-samples/javacv-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-logging"
+    },
+    {
+      "file": "spring-boot-samples/kafka-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "spring-boot-samples/kafka-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-samples/kafka-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-samples/kafka-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-logging"
+    },
+    {
+      "file": "spring-boot-samples/knife-gateway-sample/pom.xml",
+      "artifact": "spring-boot-actuator"
+    },
+    {
+      "file": "spring-boot-samples/knife-gateway-sample/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "spring-boot-samples/logging-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-samples/logging-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-samples/logging-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-samples/mail-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-samples/mail-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-samples/mail-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-samples/message-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "spring-boot-samples/message-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "spring-boot-samples/message-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-samples/message-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-samples/message-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-samples/mybatis-plus-extensions-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "spring-boot-samples/mybatis-plus-extensions-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-samples/mybatis-plus-extensions-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-samples/mybatis-plus-extensions-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-boot-samples/mybatis-plus-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-logging"
+    },
+    {
+      "file": "spring-boot-samples/mybatis-plus-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-samples/mybatis-plus-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-samples/mybatis-plus-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-samples/named-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-logging"
+    },
+    {
+      "file": "spring-boot-samples/named-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-samples/named-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-samples/named-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "spring-boot-samples/netty-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "spring-boot-samples/netty-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-samples/netty-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-samples/netty-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-logging"
+    },
+    {
+      "file": "spring-boot-samples/notify-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "spring-boot-samples/notify-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-samples/notify-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-samples/notify-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-logging"
+    },
+    {
+      "file": "spring-boot-samples/oss-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-samples/oss-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-samples/oss-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-samples/schedulerx-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "spring-boot-samples/schedulerx-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-samples/schedulerx-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-logging"
+    },
+    {
+      "file": "spring-boot-samples/schedulerx-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-samples/sentinel-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "spring-boot-samples/sentinel-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-samples/sentinel-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-samples/sentinel-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-logging"
+    },
+    {
+      "file": "spring-boot-samples/sms-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-samples/sms-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-samples/sms-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-samples/sso-client-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-samples/sso-server-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "spring-boot-samples/sso-server-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "spring-boot-samples/sso-server-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-oauth2-client"
+    },
+    {
+      "file": "spring-boot-samples/sso-server-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-samples/sso2-client-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-samples/sso2-server-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-samples/test-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "spring-boot-samples/test-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-samples/test-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-samples/tpl-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "spring-boot-samples/tpl-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-samples/tpl-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-samples/tpl-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-logging"
+    },
+    {
+      "file": "spring-boot-samples/web-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "spring-boot-samples/web-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-samples/web-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-samples/web-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-samples/webmagic-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-samples/webmagic-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "spring-boot-samples/webmagic-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-samples/webmagic-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-samples/webmagic-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-logging"
+    },
+    {
+      "file": "spring-boot-samples/ws-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "spring-boot-samples/ws-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "spring-boot-samples/ws-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-samples/ws-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-samples/ws-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-logging"
+    },
+    {
+      "file": "spring-boot-samples/xxljob-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-samples/xxljob-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-samples/xxljob-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-samples/youtube-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "spring-boot-samples/youtube-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "spring-boot-samples/youtube-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-samples/youtube-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-samples/youtube-spring-boot-sample/pom.xml",
+      "artifact": "spring-boot-starter-logging"
+    },
+    {
+      "file": "spring-boot-schedulerx/schedulerx-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-log4j2"
+    },
+    {
+      "file": "spring-boot-schedulerx/schedulerx-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-schedulerx/schedulerx-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-schedulerx/schedulerx-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "spring-boot-sentinel/sentinel-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-log4j2"
+    },
+    {
+      "file": "spring-boot-sentinel/sentinel-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-sentinel/sentinel-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "spring-boot-sentinel/sentinel-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-sentinel/sentinel-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-sentinel/sentinel-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "spring-boot-sms/sms-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-sms/sms-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-sms/sms-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-sso/sso-client-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-oauth2-client"
+    },
+    {
+      "file": "spring-boot-sso/sso-client-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-sso/sso-client-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "spring-boot-sso/sso-client-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-sso/sso-client-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-sso/sso2-client-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-sso/sso2-client-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-sso/sso2-client-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-starters/arthas-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-starters/cache-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-starters/cache-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter-cache"
+    },
+    {
+      "file": "spring-boot-starters/cache-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "spring-boot-starters/cps-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-starters/distributed-lock-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-starters/distributed-lock-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "spring-boot-starters/distributed-lock-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "spring-boot-starters/dynamic-datasource-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "spring-boot-starters/dynamic-datasource-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "spring-boot-starters/dynamic-datasource-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-starters/excel-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-starters/flyway-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-starters/geoip-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-starters/javacv-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-starters/kafka-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-starters/knife-gateway-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-starters/knife-service-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-starters/logging-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter-log4j2"
+    },
+    {
+      "file": "spring-boot-starters/logging-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "spring-boot-starters/logging-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-starters/mail-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-starters/monitor-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-starters/mybatis-plus-extensions-changelog-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-starters/mybatis-plus-extensions-config-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-starters/mybatis-plus-extensions-dataaudit-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-starters/mybatis-plus-extensions-httplog-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-starters/mybatis-plus-extensions-task-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-starters/mybatis-plus-extensions-userconfig-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-starters/mybatis-plus-extensions-webmagic-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-starters/mybatis-plus-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-starters/named-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "spring-boot-starters/named-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-starters/netty-client-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-starters/netty-server-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-starters/notify-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-starters/openfeign-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-starters/oss-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-starters/rocketmq-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-starters/schedulerx-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-starters/sentinel-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-starters/sms-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-starters/sso-client-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-starters/sso2-client-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-starters/test-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-starters/test-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-starters/tpl-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-starters/validation-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-starters/validation-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "spring-boot-starters/web-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-starters/webmagic-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-starters/ws-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-starters/wxcp-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-starters/wxma-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-starters/wxmp-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-starters/xxljob-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-starters/youtube-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-test/test-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-test/test-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-test/test-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-log4j2"
+    },
+    {
+      "file": "spring-boot-test/test-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-test/test-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-test/test-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "spring-boot-tpl/tpl-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-log4j2"
+    },
+    {
+      "file": "spring-boot-tpl/tpl-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-tpl/tpl-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-tpl/tpl-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "spring-boot-validation/validation-core/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "spring-boot-validation/validation-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-validation/validation-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-validation/validation-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-web/web-core/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-web/web-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-web/web-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-boot-web/web-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "spring-boot-web/web-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-web/web-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-web/web-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "spring-boot-webmagic/webmagic-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-log4j2"
+    },
+    {
+      "file": "spring-boot-webmagic/webmagic-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-webmagic/webmagic-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-webmagic/webmagic-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "spring-boot-ws/ws-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-websocket"
+    },
+    {
+      "file": "spring-boot-ws/ws-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-log4j2"
+    },
+    {
+      "file": "spring-boot-ws/ws-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-ws/ws-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-ws/ws-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "spring-boot-wxcp/wxcp-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-log4j2"
+    },
+    {
+      "file": "spring-boot-wxcp/wxcp-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-wxcp/wxcp-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-wxcp/wxcp-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "spring-boot-wxma/wxma-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-log4j2"
+    },
+    {
+      "file": "spring-boot-wxma/wxma-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-wxma/wxma-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-wxma/wxma-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "spring-boot-wxmp/wxmp-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-log4j2"
+    },
+    {
+      "file": "spring-boot-wxmp/wxmp-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-wxmp/wxmp-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-wxmp/wxmp-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "spring-boot-xxljob/xxljob-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-xxljob/xxljob-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-xxljob/xxljob-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-youtube/youtube-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "spring-boot-youtube/youtube-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-log4j2"
+    },
+    {
+      "file": "spring-boot-youtube/youtube-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-youtube/youtube-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-youtube/youtube-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "ff2128a8783c2c4f060522afbfd6d5c24fa7a611",
+      "date": "2024-03-27T18:39:01+04:00",
+      "author": "Oleg Galkin",
+      "email": "ogalleg@gmail.com",
+      "message": "Gradle version changed\n"
+    },
+    {
+      "sha": "8c0363adcf4c98b66f130f3d5cfe81a522629c5b",
+      "date": "2022-11-28T18:56:12+03:00",
+      "author": "Oleg Galkin",
+      "email": "ogalleg@gmail.com",
+      "message": "Token lifespan increased\n"
+    },
+    {
+      "sha": "94d586371dea1be59811b3b8f2bdff9ad903d66d",
+      "date": "2022-11-24T20:17:50+03:00",
+      "author": "Oleg Galkin",
+      "email": "ogalleg@gmail.com",
+      "message": "Rates API URL changed\n"
+    },
+    {
+      "sha": "db95ed2fcb6daf25a49e87379456b190a1e8ad1a",
+      "date": "2022-11-24T19:31:31+03:00",
+      "author": "Oleg Galkin",
+      "email": "ogalleg@gmail.com",
+      "message": "login.js line separators changed\n"
+    },
+    {
+      "sha": "62c2a97dc5b77811c4eb8480cd61a89118985530",
+      "date": "2022-11-24T17:46:01+03:00",
+      "author": "Oleg Galkin",
+      "email": "ogalleg@gmail.com",
+      "message": "Logout for the demo account fixed\n"
+    },
+    {
+      "sha": "9753aa6feaaa639a723f7753baf3ba60e4641498",
+      "date": "2022-11-24T14:13:56+03:00",
+      "author": "Oleg Galkin",
+      "email": "ogalleg@gmail.com",
+      "message": "UserRegisteredEventConsumer fixed\n"
+    },
+    {
+      "sha": "95e08e92653663b27bd0b7c33af67641c3add5db",
+      "date": "2022-11-23T14:55:23+03:00",
+      "author": "Oleg Galkin",
+      "email": "ogalleg@gmail.com",
+      "message": "Kafka consumer property autoOffsetReset changed to the default value\n"
+    },
+    {
+      "sha": "b2515d202ba0d64c3e57fb5f1e208ca73b81d8fb",
+      "date": "2022-10-11T18:04:52+03:00",
+      "author": "Oleg Galkin",
+      "email": "ogalleg@gmail.com",
+      "message": "reactor-kafka used instead of spring-cloud-stream\n"
+    },
+    {
+      "sha": "bba3833c5df181359bc03a4ae3ca794b285054cb",
+      "date": "2022-09-21T18:15:15+03:00",
+      "author": "Oleg Galkin",
+      "email": "ogalleg@gmail.com",
+      "message": "Startup Liquibase migration added\n"
+    },
+    {
+      "sha": "07419314c77649ddbf02a6872776afe56065c1f1",
+      "date": "2022-09-17T23:58:27+03:00",
+      "author": "Oleg Galkin",
+      "email": "ogalleg@gmail.com",
+      "message": "Skaffold configuration updated\n"
+    },
+    {
+      "sha": "323a371097a12b3c0c69c371bba7d972d7a0ad53",
+      "date": "2022-09-16T21:44:18+03:00",
+      "author": "Oleg Galkin",
+      "email": "ogalleg@gmail.com",
+      "message": "Readiness and liveness probes changed because Skaffold doensn't work with native Kubernetes grpc probes\n"
+    },
+    {
+      "sha": "961f03b4bf6405f7329ed1d3d7080e56b0e7a253",
+      "date": "2022-09-16T19:34:06+03:00",
+      "author": "Oleg Galkin",
+      "email": "ogalleg@gmail.com",
+      "message": "Licence link fixed\n"
+    },
+    {
+      "sha": "e3a736d5a30606a03fa8c497c515b7262ccb9ce8",
+      "date": "2022-09-16T17:21:09+03:00",
+      "author": "Oleg Galkin",
+      "email": "ogalleg@gmail.com",
+      "message": "Config map read error fixed\n"
+    },
+    {
+      "sha": "b23f718b0a090e8252dbaa8fb834e1ceb3ff95b7",
+      "date": "2022-09-13T18:27:25+03:00",
+      "author": "Oleg Galkin",
+      "email": "ogalleg@gmail.com",
+      "message": "Charts upgraded to Helm 3 and the latest versions of dependencies: Kafka, PostgreSQL and Keycloak\n"
+    },
+    {
+      "sha": "e0609ec08e8060ff62cc82f479078f1eb040daf0",
+      "date": "2022-08-31T13:40:33+03:00",
+      "author": "Oleg Galkin",
+      "email": "ogalleg@gmail.com",
+      "message": "Postgres version changed to 13.8\nKeycloak version changed to 18.0.2\n"
+    },
+    {
+      "sha": "5c2e39f79ef2a09e914b792926c930eae1356073",
+      "date": "2022-08-19T15:01:29+03:00",
+      "author": "Oleg Galkin",
+      "email": "ogalleg@gmail.com",
+      "message": "'enable.idempotence' set to Kafka producers\n"
+    },
+    {
+      "sha": "f8b9e05dc710589882031dbe38459908bfda764c",
+      "date": "2022-08-18T16:02:17+03:00",
+      "author": "Oleg Galkin",
+      "email": "ogalleg@gmail.com",
+      "message": "Move from JDBC to R2DBC\n"
+    },
+    {
+      "sha": "03bb80bf061f677974b6fbd353f31ad192333e1d",
+      "date": "2022-08-18T15:45:11+03:00",
+      "author": "Oleg Galkin",
+      "email": "ogalleg@gmail.com",
+      "message": "Name of some steps changed\n"
+    },
+    {
+      "sha": "69767e96131488b1e3b528528fc451e654331425",
+      "date": "2022-07-09T19:59:25+03:00",
+      "author": "Oleg Galkin",
+      "email": "ogalleg@gmail.com",
+      "message": "Excess bracket removed\n"
+    },
+    {
+      "sha": "70029cc7f3ce5e57a5dedbfd854435839f4d862b",
+      "date": "2022-07-09T19:44:08+03:00",
+      "author": "Oleg Galkin",
+      "email": "ogalleg@gmail.com",
+      "message": "Upload codecov reports added\n"
+    },
+    {
+      "sha": "7cca02c484a99d53e5597f7a056502adfd33810e",
+      "date": "2022-07-09T17:08:50+03:00",
+      "author": "Oleg Galkin",
+      "email": "ogalleg@gmail.com",
+      "message": "Github workflow badge added\n"
+    },
+    {
+      "sha": "cdaff13251cd3af93d7884257dcb2f0b5fe3d7f8",
+      "date": "2022-07-09T16:43:19+03:00",
+      "author": "Oleg Galkin",
+      "email": "ogalleg@gmail.com",
+      "message": "Github workflow corrected\n\nOptions added to Gradle check.\nOption -a (--all-tags) added to docker push.\nStep to create keycloak-provider shadow jar added.\n"
+    },
+    {
+      "sha": "e40cc52b0f790da08634600ba62dadbcad19d73f",
+      "date": "2022-07-09T15:10:50+03:00",
+      "author": "Oleg Galkin",
+      "email": "ogalleg@gmail.com",
+      "message": "Migration to Github Actions\n\nGithub Actions workflow created.\nTravis file deleted.\nChanged Jib image file for account-service, notification-service and statistics-service because Kubernetes supports gRPC health check now.\n"
+    },
+    {
+      "sha": "8449747fc376d019a70b949e8772f6839cad96b2",
+      "date": "2022-07-03T16:00:19+03:00",
+      "author": "Oleg Galkin",
+      "email": "ogalleg@gmail.com",
+      "message": "Dependent libraty upgraded\n\norg.javamoney:moneta to 1.4.2\norg.zalando:jackson-datatype-money to 1.3.0\ncom.google.guava:guava to 31.1-jre\norg.assertj:assertj-db to 2.0.2\ncommons-validator:commons-validator to 1.7\ncommons-io:commons-io to 2.11.0\nnet.javacrumbs.shedlock:shedlock-spring to 4.38.0\norg.simplejavamail:simple-java-mail to 6.7.6\norg.jboss.slf4j:slf4j-jboss-logging to 1.2.1.Final\n"
+    },
+    {
+      "sha": "840995878de013a48a8f0d672e645e9e049e3dbb",
+      "date": "2022-07-03T14:02:17+03:00",
+      "author": "Oleg Galkin",
+      "email": "ogalleg@gmail.com",
+      "message": "Tests changed to JUnit 5\n\nNew JUnit 5 extension com.asarkar.grpc:grpc-test introduced to replace GrpcCleanupRule that requires JUnit 4\n"
+    },
+    {
+      "sha": "6d8e7d0777dce0a6645e1d13ac6f96575e4784e6",
+      "date": "2022-07-02T20:38:58+03:00",
+      "author": "Oleg Galkin",
+      "email": "ogalleg@gmail.com",
+      "message": "Upgraded to Spring Boot 2.6.9\n\nSpring Boot version changed to 2.6.9.\nSpring Cloud version changed to 2021.0.3.\nJUnit version changed to 5.8.2.\ngRPC Spring Boot version changed to 2.13.1.RELEASE.\ngRPC version changed to 1.46.0.\nReactive gRPC version changed to 1.2.3.\nProtobuf version changed to 3.21.1.\nJooq version changed to 3.14.16.\nDependency on com.mattbertolini:liquibase-slf4j added.\nDeprecated dependencies fixed.\n"
+    },
+    {
+      "sha": "0e12b51cdcb8d7279a61d3485a3d4d276982e4fb",
+      "date": "2022-06-25T16:17:13+03:00",
+      "author": "Oleg Galkin",
+      "email": "ogalleg@gmail.com",
+      "message": "Gradle build scripts upgraded to Gradle 7.4.2\n\nGradle upgraded to the latest version 7.4.2.\nPlugin versions changed to be compatible with Gradle 7.4.2.\n\nJava version changed to 11.\nPostgreSQL driver version changed to 42.3.6.\nLombok version changed to 1.18.24.\n"
+    },
+    {
+      "sha": "0fcef211664caf7f10ddab4227fcbfc7b1b786ff",
+      "date": "2022-06-24T16:02:17+03:00",
+      "author": "Oleg Galkin",
+      "email": "ogalleg@gmail.com",
+      "message": "Testcontainers version updated to 1.17.2\n\nTestcontainers version updated to fix issues with the latest version of Docker\n"
+    },
+    {
+      "sha": "56b67c6be7f8d7e7689dcd002410763fa37f61fd",
+      "date": "2022-06-23T11:59:33+03:00",
+      "author": "Oleg Galkin",
+      "email": "ogalleg@gmail.com",
+      "message": "Dependency on 'io.disc99:protocol-buffers-spring-cloud-stream-starter' removed\n\nDependency removed because 'io.disc99:protocol-buffers-spring-cloud-stream-starter' was in disconnected Bintray repo. 'io.disc99:protocol-buffers-spring-cloud-stream-starter' was forked as a library of the project.\nUsed repositories was revised to resolve gradle build problems.\n"
+    },
+    {
+      "sha": "929a696131d635be08c50fc2655903a6fef96df2",
+      "date": "2020-02-08T20:26:12+03:00",
+      "author": "Oleg Galkin",
+      "email": "ogalleg@gmail.com",
+      "message": "Repository tests simplified\n"
+    }
+  ],
+  "commit_sha": "ff2128a8783c2c4f060522afbfd6d5c24fa7a611",
+  "extracted_at": "2026-10-05T18:30:42.004603+00:00"
+}

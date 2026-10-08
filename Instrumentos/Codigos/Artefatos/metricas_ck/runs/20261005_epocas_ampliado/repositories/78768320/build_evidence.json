@@ -1,0 +1,56 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "2.3.4.RELEASE",
+  "spring_boot_major": "2",
+  "java_versions_declared": "1.8",
+  "build_evidence": [
+    {
+      "file": "opentracing-spring-web-itest/boot/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "opentracing-spring-web-itest/boot/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "opentracing-spring-web-itest/common/pom.xml",
+      "artifact": "spring-boot-test"
+    },
+    {
+      "file": "opentracing-spring-web-itest/common/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "opentracing-spring-web-itest/common/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "opentracing-spring-web-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "opentracing-spring-web-starter/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "opentracing-spring-web-starter/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "opentracing-spring-web-starter/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "opentracing-spring-web-starter/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "opentracing-spring-web-starter/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-dependencies"
+    }
+  ]
+}

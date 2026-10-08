@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "c7dc0b274fa337446ccf4dac69993fc5b28629ce",
+      "date": "2026-08-14T22:56:11-04:00",
+      "author": "Jackson Wozniak",
+      "email": "105665813+Jackson-Wozniak@users.noreply.github.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "1583c704ed308fee0d60ce91c1f1886ebcbb7bb8",
+      "date": "2026-01-25T22:12:34-05:00",
+      "author": "Jackson Wozniak",
+      "email": "105665813+Jackson-Wozniak@users.noreply.github.com",
+      "message": "Merge pull request #38 from ramiyengar/patch-1\n\nUpdate Dockerfile to reflect currently available jdk-17 images"
+    },
+    {
+      "sha": "76742361aff3eba8f8771cb2320e81570e5628ec",
+      "date": "2026-01-24T21:43:40+05:30",
+      "author": "Ram Iyengar",
+      "email": "ramanujank@gmail.com",
+      "message": "Update Dockerfile to reflect currently available jdk-17 images"
+    },
+    {
+      "sha": "4e626d80c2d6ef51a071d46a68f5ce3db005e59f",
+      "date": "2025-12-24T22:52:28-05:00",
+      "author": "Jackson Wozniak",
+      "email": "jjw30@comcast.net",
+      "message": "add tests for market scheduling service\n"
+    },
+    {
+      "sha": "100baa4d998ab238e5cef52adb955c22cd3f3a26",
+      "date": "2025-12-23T18:57:02-05:00",
+      "author": "Jackson Wozniak",
+      "email": "jjw30@comcast.net",
+      "message": "use MUI icons for market utilities UI\n"
+    },
+    {
+      "sha": "4b32858ee8295fdd6b8188a38acf6694883c9f42",
+      "date": "2025-12-23T18:41:25-05:00",
+      "author": "Jackson Wozniak",
+      "email": "jjw30@comcast.net",
+      "message": "allow for updating market intervals through API, and add market dashboard that shows customizable market utilities for pausing, resuming etc.\n"
+    },
+    {
+      "sha": "a4ff42c7ce666f8bde850427c9268856eaa567a3",
+      "date": "2025-12-23T17:29:52-05:00",
+      "author": "Jackson Wozniak",
+      "email": "jjw30@comcast.net",
+      "message": "readd post construct\n"
+    },
+    {
+      "sha": "a911f0897da6ec5365076ea33ad8793a04365ff5",
+      "date": "2025-12-23T17:29:20-05:00",
+      "author": "Jackson Wozniak",
+      "email": "jjw30@comcast.net",
+      "message": "return market state, including running status and current time interval in MarketController\n"
+    },
+    {
+      "sha": "58b95313738b8a706dfff9e943bda3e706c8857a",
+      "date": "2025-12-23T13:36:44-05:00",
+      "author": "Jackson Wozniak",
+      "email": "jjw30@comcast.net",
+      "message": "use TaskScheduler in place of @Scheduling, and add API endpoints to update intervals, pause and unpause simulation\n"
+    },
+    {
+      "sha": "b7a4b73fc3d0264045740c40beac76b9ebe973cb",
+      "date": "2025-12-22T21:13:48-05:00",
+      "author": "Jackson Wozniak",
+      "email": "jjw30@comcast.net",
+      "message": "ui work\n"
+    },
+    {
+      "sha": "867bd30d096c30f191361927707cc326d4849a18",
+      "date": "2025-12-22T20:52:09-05:00",
+      "author": "Jackson Wozniak",
+      "email": "jjw30@comcast.net",
+      "message": "add h2 testing DB and market state tests\n"
+    },
+    {
+      "sha": "b6508908cea9d9157fe4b5c65c545637c5d2e2e3",
+      "date": "2025-12-22T19:44:52-05:00",
+      "author": "Jackson Wozniak",
+      "email": "jjw30@comcast.net",
+      "message": "README update\n"
+    },
+    {
+      "sha": "f31bf2300c99cea784f5c890f845f6b994fa0999",
+      "date": "2025-12-22T19:43:13-05:00",
+      "author": "Jackson Wozniak",
+      "email": "jjw30@comcast.net",
+      "message": "temporary usage of EAGER loading for stocks\n"
+    },
+    {
+      "sha": "fed68eec504a3da5d138e9fa09c342983a74f7dc",
+      "date": "2025-12-22T19:39:31-05:00",
+      "author": "Jackson Wozniak",
+      "email": "jjw30@comcast.net",
+      "message": "simplify StockController by using a shared view type to denote the detail level of returned stocks\n"
+    },
+    {
+      "sha": "5fd9188148c5d6618b909908353e782cf1da881c",
+      "date": "2025-12-22T18:56:00-05:00",
+      "author": "Jackson Wozniak",
+      "email": "jjw30@comcast.net",
+      "message": "update property name\n"
+    },
+    {
+      "sha": "4a887bec9f971d56d2d11f234a6989e42f2b1940",
+      "date": "2025-11-12T16:25:54-05:00",
+      "author": "Jackson Wozniak",
+      "email": "105665813+Jackson-Wozniak@users.noreply.github.com",
+      "message": "Merge pull request #36 from Jackson-Wozniak/remove-trading-service\n\nremove stock trading service"
+    },
+    {
+      "sha": "d987e2f63e65c4270eec2db1048bb1d459701ec8",
+      "date": "2025-11-12T16:25:25-05:00",
+      "author": "Jackson Wozniak",
+      "email": "jjw30@comcast.net",
+      "message": "remove stock trading service\n"
+    },
+    {
+      "sha": "2b8ea6424257412761db885809c7d9014094ed81",
+      "date": "2025-11-12T16:21:27-05:00",
+      "author": "Jackson Wozniak",
+      "email": "105665813+Jackson-Wozniak@users.noreply.github.com",
+      "message": "Merge pull request #35 from Jackson-Wozniak/market-tests\n\nMarket tests"
+    },
+    {
+      "sha": "97ca0b5174628ee33872e7b8e4286883bd3c9cf0",
+      "date": "2025-11-12T16:19:58-05:00",
+      "author": "Jackson Wozniak",
+      "email": "jjw30@comcast.net",
+      "message": "add utility tests\n"
+    },
+    {
+      "sha": "2301aac1a01ac3c2cc44cdc7b1be0bfde34fa92f",
+      "date": "2025-11-12T16:07:11-05:00",
+      "author": "Jackson Wozniak",
+      "email": "jjw30@comcast.net",
+      "message": "more tests for CSVUtils\n"
+    },
+    {
+      "sha": "49d7035a7c708789e9c8f9885f76391648e111d6",
+      "date": "2025-11-12T15:54:39-05:00",
+      "author": "Jackson Wozniak",
+      "email": "105665813+Jackson-Wozniak@users.noreply.github.com",
+      "message": "Merge pull request #33 from Jackson-Wozniak/market-tests\n\nMarket tests"
+    },
+    {
+      "sha": "ecf2b70c6ddb52f1f82131ce571a875699b66ced",
+      "date": "2025-11-12T15:54:00-05:00",
+      "author": "Jackson Wozniak",
+      "email": "jjw30@comcast.net",
+      "message": "add CSVUtils testing\n"
+    },
+    {
+      "sha": "f9ef4f3d13d89e2b9f8568f54d7d131212f551dc",
+      "date": "2025-11-12T15:37:48-05:00",
+      "author": "Jackson Wozniak",
+      "email": "jjw30@comcast.net",
+      "message": "add tests for StockCSVReader\n"
+    },
+    {
+      "sha": "8cda8bb24c9179d84471cc1b536ca3d16d4994eb",
+      "date": "2025-11-07T13:35:44-05:00",
+      "author": "Jackson Wozniak",
+      "email": "jjw30@comcast.net",
+      "message": "updates to frontend\n"
+    },
+    {
+      "sha": "0d76da652bd71681afa8843c50f132696167242b",
+      "date": "2025-10-16T15:32:17-04:00",
+      "author": "Jackson Wozniak",
+      "email": "jjw30@comcast.net",
+      "message": "generate and save news releases at EOD\n"
+    },
+    {
+      "sha": "fae15710dcf9d2ba99e25245e92085b6038633bf",
+      "date": "2025-10-16T15:24:57-04:00",
+      "author": "Jackson Wozniak",
+      "email": "jjw30@comcast.net",
+      "message": "calculate percent chances for positive or negative news\n"
+    },
+    {
+      "sha": "638c8e33e43adbe7244c5c328a4d6ba065992f8c",
+      "date": "2025-10-16T14:24:36-04:00",
+      "author": "Jackson Wozniak",
+      "email": "jjw30@comcast.net",
+      "message": "update news engine and price record archiving\n"
+    },
+    {
+      "sha": "8b38824ce4d1527bdcbdddd5a0483cfe638c9cd3",
+      "date": "2025-10-16T13:59:47-04:00",
+      "author": "Jackson Wozniak",
+      "email": "jjw30@comcast.net",
+      "message": "t pusMerge branch 'architecture-docs' of https://github.com/Jackson-Wozniak/Stock-Market-Simulation into architecture-docs\n"
+    },
+    {
+      "sha": "399e65fa1cc6c197572600926acf10a319f6f4a6",
+      "date": "2025-10-16T13:59:40-04:00",
+      "author": "Jackson Wozniak",
+      "email": "jjw30@comcast.net",
+      "message": "add diagram resource\n"
+    },
+    {
+      "sha": "2f54d799ee16432834156740b9cffef11351ff19",
+      "date": "2025-10-16T13:58:06-04:00",
+      "author": "Jackson Wozniak",
+      "email": "105665813+Jackson-Wozniak@users.noreply.github.com",
+      "message": "Update market service README.md link"
+    }
+  ],
+  "commit_sha": "c7dc0b274fa337446ccf4dac69993fc5b28629ce",
+  "extracted_at": "2026-10-05T18:11:09.013270+00:00"
+}

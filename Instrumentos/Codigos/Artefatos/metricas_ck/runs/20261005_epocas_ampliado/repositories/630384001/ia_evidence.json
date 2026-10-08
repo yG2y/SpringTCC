@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "85e16a0aeba82592b1e78d9a324a33104db418c9",
+      "date": "2026-04-20T22:24:43+02:00",
+      "author": "Kenan Rhoton",
+      "email": "kenan.rhoton@eurecat.org",
+      "message": "PR 3/3 - feat(gamification): expose weekly score history through existing endpoint (#300) (#1152)"
+    },
+    {
+      "sha": "5e71e9d9b60df5163acf121f1768a984822c4318",
+      "date": "2026-04-20T21:50:06+02:00",
+      "author": "Esther Arias Valor",
+      "email": "eariasvalor@gmail.com",
+      "message": "Merge branch 'develop' into feat/281/3-controller-response"
+    },
+    {
+      "sha": "9ea3c1c05afdd28ddb253e423d89d7983a6d9962",
+      "date": "2026-04-20T21:45:32+02:00",
+      "author": "Kenan Rhoton",
+      "email": "kenan.rhoton@eurecat.org",
+      "message": "PR3/3 — feat(gamification): expose weekly leagues leaderboard endpoint (#280) (#1151)"
+    },
+    {
+      "sha": "2520d81b48ae74e94c4f806ffa2108909ce28942",
+      "date": "2026-04-20T15:21:18+02:00",
+      "author": "Esther Arias Valor",
+      "email": "eariasvalor@gmail.com",
+      "message": "Merge branch 'develop' into feat/281/3-controller-response"
+    },
+    {
+      "sha": "460a2f8d73d35303bc216d12db65713f830f23e9",
+      "date": "2026-04-20T11:40:09+02:00",
+      "author": "carlosPc1987",
+      "email": "cadecozarrus@gmail.com",
+      "message": "test(gamification): add weekly leaderboard tie-break and boundary coverage\n"
+    },
+    {
+      "sha": "1f8c0a1dab59893fec987afb6ab26ccb05845ff3",
+      "date": "2026-04-20T11:18:23+02:00",
+      "author": "carlosPc1987",
+      "email": "cadecozarrus@gmail.com",
+      "message": "fix(gamification): resolve PR3 merge leftovers in weekly leaderboard\n\n# Conflicts:\n#\titachallenge-challenge/src/main/java/com/itachallenge/gamification/service/LeaderboardServiceImpl.java\n"
+    },
+    {
+      "sha": "7209f9196227d01155b4e950d4cf8efafb22f4a2",
+      "date": "2026-04-20T10:00:18+02:00",
+      "author": "Carlos",
+      "email": "cadecozarrus@gmail.com",
+      "message": "Merge branch 'develop' into feature/280-pr3-weekly-leaderboard-api"
+    },
+    {
+      "sha": "7f088b3ec2ad2d367b1d0410d49d6675b8bacbc2",
+      "date": "2026-04-17T21:52:54+02:00",
+      "author": "Kenan Rhoton",
+      "email": "kenan.rhoton@eurecat.org",
+      "message": "chore (contributors): Add Esther Herrero to contributors.md (#317) (#1158)"
+    },
+    {
+      "sha": "b09cce823f089ed2fe1499868b4eee72da9cef2e",
+      "date": "2026-04-17T21:52:32+02:00",
+      "author": "Kenan Rhoton",
+      "email": "kenan.rhoton@eurecat.org",
+      "message": "PR 2 - refactor(user): update bookmark controller (#279) (#1157)"
+    },
+    {
+      "sha": "f7b7eea9ef16a135689ab6106c07e28390f5e1b7",
+      "date": "2026-04-17T21:48:29+02:00",
+      "author": "Kenan Rhoton",
+      "email": "kenan.rhoton@eurecat.org",
+      "message": "feat(gamification): implement read-only endpoint for available activity types (#305) (#1153)"
+    },
+    {
+      "sha": "bc9a89e893e9978d36a5a21ff621fd12ef1d7a74",
+      "date": "2026-04-17T21:41:11+02:00",
+      "author": "Kenan Rhoton",
+      "email": "kenan.rhoton@eurecat.org",
+      "message": "PR 2/3 — feat(gamification): weekly leagues split in LeaderboardService (PR2) (#1149)"
+    },
+    {
+      "sha": "6e35929128c4f04395be880b48470baf2c639a46",
+      "date": "2026-04-16T17:53:09+02:00",
+      "author": "eariasvalor",
+      "email": "eariasvalor@gmail.com",
+      "message": "refactor(gamification): use isZero() assertion in ScoresHistoryResponseDtoTest and WeeklyPointsDtoTest.java (#300)\n"
+    },
+    {
+      "sha": "fb73896a4897e8e6818ca29b983857cf935f5854",
+      "date": "2026-04-09T11:22:18+02:00",
+      "author": "eariasvalor",
+      "email": "eariasvalor@gmail.com",
+      "message": "chore(gamification): update CHANGELOG to 3.5.0-RELEASE for weekly score history endpoint (#300)\n"
+    },
+    {
+      "sha": "0b0aec1e52f71a7800c0f248314d9ed7f6b97750",
+      "date": "2026-04-09T09:58:52+02:00",
+      "author": "eariasvalor",
+      "email": "eariasvalor@gmail.com",
+      "message": "test(gamification): add unit tests for ScoresHistoryResponseDto and WeeklyPointsDto (#300)\n"
+    },
+    {
+      "sha": "9a5427671f438fa3212b964249e7f8ca1d85abae",
+      "date": "2026-04-09T09:58:37+02:00",
+      "author": "eariasvalor",
+      "email": "eariasvalor@gmail.com",
+      "message": "refactor(gamification): remove PointsHistoryResponseDto and PointHistoryEntryDto dead code (#300)\n"
+    },
+    {
+      "sha": "3039d2af7fe3f364494cd198452e3f831f81b859",
+      "date": "2026-04-09T09:50:25+02:00",
+      "author": "eariasvalor",
+      "email": "eariasvalor@gmail.com",
+      "message": "refactor(gamification): remove getUserPointsHistory and dead DTOs from UserScoreService (#300)\n"
+    },
+    {
+      "sha": "4e290de1f12a002dfa95a728552f926c8c88d704",
+      "date": "2026-04-09T09:45:40+02:00",
+      "author": "eariasvalor",
+      "email": "eariasvalor@gmail.com",
+      "message": "test(gamification): update UserScoreControllerTest to use ScoresHistoryResponseDto (#300)\n"
+    },
+    {
+      "sha": "81374567562a603702e7c363de78d2cbd1486280",
+      "date": "2026-04-09T09:44:37+02:00",
+      "author": "eariasvalor",
+      "email": "eariasvalor@gmail.com",
+      "message": "test(gamification): update UserScoreControllerTest to use ScoresHistoryResponseDto (#300)\n"
+    },
+    {
+      "sha": "dd563436ebe29cac85b70926a952eb5a385c4ca1",
+      "date": "2026-04-09T09:28:17+02:00",
+      "author": "eariasvalor",
+      "email": "eariasvalor@gmail.com",
+      "message": "feat(gamification): update UserScoreController to return weekly score history chart (#300)\n"
+    },
+    {
+      "sha": "d8bc63ae43f91955f121dda67deda087b4af0d22",
+      "date": "2026-04-16T13:22:57+02:00",
+      "author": "Carlos",
+      "email": "cadecozarrus@gmail.com",
+      "message": "Merge branch 'develop' into feature/280-pr3-weekly-leaderboard-api"
+    },
+    {
+      "sha": "ed5b12399da587625998c39d1a5c212c1e25ce83",
+      "date": "2026-04-09T19:25:02+02:00",
+      "author": "JordiCasas87",
+      "email": "Jordicasas87@gmail.com",
+      "message": "fix(gamification): address PR review feedback\n"
+    },
+    {
+      "sha": "987e6aeb863d018ac8b2beba9deb04a4d5da39d8",
+      "date": "2026-04-09T18:29:20+02:00",
+      "author": "JordiCasas87",
+      "email": "Jordicasas87@gmail.com",
+      "message": "feat(gamification): add activity types endpoint\n"
+    },
+    {
+      "sha": "ace64a83c4b7c6890d827ee38b37241b7ab8375b",
+      "date": "2026-04-16T13:01:49+02:00",
+      "author": "Kenan Rhoton",
+      "email": "kenan.rhoton@eurecat.org",
+      "message": "Merge branch 'develop' into refactor/279/2-update-BookmarkController"
+    },
+    {
+      "sha": "d5f8eedda1067019750d8b2bef15765a813a56e8",
+      "date": "2026-04-16T12:45:02+02:00",
+      "author": "Carlos",
+      "email": "cadecozarrus@gmail.com",
+      "message": "Merge branch 'develop' into feature/280-pr2-weekly-leagues-service"
+    },
+    {
+      "sha": "5eaea9b469419cf197aa037559a9bee3bd86f73a",
+      "date": "2026-04-16T12:42:11+02:00",
+      "author": "Kenan Rhoton",
+      "email": "kenan.rhoton@eurecat.org",
+      "message": "PR 2/3 - feat(gamification): group user score history by week and calculate accumulated points (#296) (#1148)"
+    },
+    {
+      "sha": "e14c04e80f0261e9e375e9205e5323514d127bfd",
+      "date": "2026-04-13T09:45:26+02:00",
+      "author": "David Rey",
+      "email": "tintoelculo@gmail.com",
+      "message": "refactor: moving bookmark logic from UserController to BookmarkController\n"
+    },
+    {
+      "sha": "5a62edd64b0d741a60ce04142ad81fddfa26ec6d",
+      "date": "2026-04-15T14:56:00+02:00",
+      "author": "Carlos",
+      "email": "cadecozarrus@gmail.com",
+      "message": "Merge branch 'develop' into feature/280-pr3-weekly-leaderboard-api"
+    },
+    {
+      "sha": "438bec77362f9b7a91523c1ecfe9f48801daf1b9",
+      "date": "2026-04-15T14:42:30+02:00",
+      "author": "Carlos",
+      "email": "cadecozarrus@gmail.com",
+      "message": "Merge branch 'develop' into feature/280-pr2-weekly-leagues-service"
+    },
+    {
+      "sha": "489af7171e792e8ee01968218be9d7bb570cf603",
+      "date": "2026-04-15T13:56:09+02:00",
+      "author": "Esther",
+      "email": "61638965+EstherBlacksmith@users.noreply.github.com",
+      "message": "Merge branch 'develop' into feature/Esther-Herrero-onboarding"
+    },
+    {
+      "sha": "c38c40d97168867f6b00c95aa696badfadedf222",
+      "date": "2026-04-15T13:23:27+02:00",
+      "author": "Kenan Rhoton",
+      "email": "kenan.rhoton@eurecat.org",
+      "message": "Merge pull request #1147 from IT-Academy-BCN/refactor/Move-Bookmarks-to-BookmarkController\n\nrefactor(user): move bookmark logic from UserService to BookmarkService (#297)"
+    }
+  ],
+  "commit_sha": "85e16a0aeba82592b1e78d9a324a33104db418c9",
+  "extracted_at": "2026-10-05T18:35:28.582421+00:00"
+}

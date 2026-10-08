@@ -1,0 +1,48 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "3.3.8;3.4.3",
+  "spring_boot_major": "3",
+  "java_versions_declared": "${java.version};21",
+  "build_evidence": [
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "xs2a-adapter-app/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "xs2a-adapter-app/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "xs2a-adapter-app/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "xs2a-adapter-app/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "xs2a-adapter-app/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "xs2a-adapter-rest-impl/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "xs2a-adapter-rest-impl/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "xs2a-adapter-service-remote/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "xs2a-adapter-service-remote/pom.xml",
+      "artifact": "spring-boot-test-autoconfigure"
+    }
+  ]
+}

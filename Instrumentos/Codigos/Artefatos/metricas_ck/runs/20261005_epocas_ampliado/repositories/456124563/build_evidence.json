@@ -1,0 +1,84 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${webforj.spring-boot.version}",
+  "spring_boot_major": "unknown",
+  "java_versions_declared": "17;21",
+  "build_evidence": [
+    {
+      "file": "webforj-jbang/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "webforj-jbang/webforj-jbang-starter/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "webforj-spring/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "webforj-spring/webforj-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "webforj-spring/webforj-spring-devtools/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "webforj-spring/webforj-spring-devtools/pom.xml",
+      "artifact": "spring-boot-web-server"
+    },
+    {
+      "file": "webforj-spring/webforj-spring-devtools/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "webforj-spring/webforj-spring-devtools/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "webforj-spring/webforj-spring-devtools/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "webforj-spring/webforj-spring-devtools/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "webforj-spring/webforj-spring-integration/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "webforj-spring/webforj-spring-integration/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "webforj-spring/webforj-spring-integration/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "webforj-spring/webforj-spring-integration/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "webforj-spring/webforj-spring-integration/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "webforj-spring/webforj-spring-integration/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "webforj-spring/webforj-spring-integration/pom.xml",
+      "artifact": "spring-boot-data-jpa-test"
+    },
+    {
+      "file": "webforj-spring/webforj-spring-integration/pom.xml",
+      "artifact": "spring-boot-jpa-test"
+    },
+    {
+      "file": "webforj-spring/webforj-spring-integration/pom.xml",
+      "artifact": "spring-boot-devtools"
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "1de20e9911467855a03441899e84f39dfbd83903",
+      "date": "2020-07-06T07:10:22+02:00",
+      "author": "Tobias Schöneberg",
+      "email": "metas-ts@users.noreply.github.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "23c176fc7d6100b7f55c93deba01442537931be8",
+      "date": "2020-04-30T12:14:57+03:00",
+      "author": "TheBestPessimist",
+      "email": "cristian@tbp.land",
+      "message": "Add Swing \"Chat\" Feature to WebUI (#1411)\n\n"
+    },
+    {
+      "sha": "bea2144d71974440f09c49ee072a47c51015b0ed",
+      "date": "2020-04-28T20:25:31+02:00",
+      "author": "Tobias Schöneberg",
+      "email": "tobias.schoeneberg@metasfresh.com",
+      "message": "Merge remote-tracking branch 'origin/yeast_overgrowth'\n"
+    },
+    {
+      "sha": "17328d51fe03a88d4396e5ae0cd77819ef34d914",
+      "date": "2020-04-28T19:59:54+02:00",
+      "author": "Tobias Schöneberg",
+      "email": "metas-ts@users.noreply.github.com",
+      "message": "attempt to solve problem on yeast_overgrowth by synching.. (#1414)\n\n"
+    },
+    {
+      "sha": "947a67d0f06b843a99b08365e67d78f706ff75fd",
+      "date": "2020-04-28T10:10:23+03:00",
+      "author": "Teo Sarca",
+      "email": "teo.sarca@metasfresh.com",
+      "message": "Allow Invoice with Credit memo allocation (#1413)\n\nhttps://github.com/metasfresh/metasfresh/issues/6529\n"
+    },
+    {
+      "sha": "6584219770d775e0297836c27ffed49e35299bc4",
+      "date": "2020-04-03T08:52:55+03:00",
+      "author": "Teo Sarca",
+      "email": "teo.sarca@metasfresh.com",
+      "message": "Virtual column not updated anymore\n\nhttps://github.com/metasfresh/metasfresh/issues/6245\n(cherry picked from commit fe5a7a3e7d15cfb3f3361c97ada12519fb7c5c0f)\n"
+    },
+    {
+      "sha": "5195e55b44f2a8b9467d4559716f9d3cb40167bb",
+      "date": "2020-04-23T14:08:47+02:00",
+      "author": "Tobias Schöneberg",
+      "email": "tobias.schoeneberg@metasfresh.com",
+      "message": "Merge remote-tracking branch 'origin/5.134_grave_goldstine'\n"
+    },
+    {
+      "sha": "c0493c4f316a3afa2b99eeb4b5fb0457a02f3918",
+      "date": "2020-04-22T15:10:17+02:00",
+      "author": "Tobias Schöneberg",
+      "email": "tobias.schoeneberg@metasfresh.com",
+      "message": "Merge remote-tracking branch 'origin/busy_cohen'\n"
+    },
+    {
+      "sha": "c346df2efbd6d84ae3c8204efbc7e11379716d56",
+      "date": "2020-04-22T14:30:18+02:00",
+      "author": "Tobias Schöneberg",
+      "email": "tobias.schoeneberg@metasfresh.com",
+      "message": "Merge remote-tracking branch 'origin/invisible_croissant'\n\nsolved Conflicts:\n\tsrc/main/java/de/metas/ui/web/process/adprocess/ADProcessPostProcessService.java\n"
+    },
+    {
+      "sha": "540013927558c98a51a3397e4ec917b0492df568",
+      "date": "2020-04-22T14:29:15+02:00",
+      "author": "Tobias Schöneberg",
+      "email": "tobias.schoeneberg@metasfresh.com",
+      "message": "minor\n"
+    },
+    {
+      "sha": "b9a90453d63f65f34d9ccfa3f17387a25b806165",
+      "date": "2020-04-22T14:28:46+02:00",
+      "author": "Tobias Schöneberg",
+      "email": "tobias.schoeneberg@metasfresh.com",
+      "message": "remove calls to attachment-listener-service\n\nlistener is notified internally\n#6459\n"
+    },
+    {
+      "sha": "934d21ec530315bf002af97de34d9742e7dfe67c",
+      "date": "2020-04-16T18:58:11+02:00",
+      "author": "Tobias Schöneberg",
+      "email": "tobias.schoeneberg@metasfresh.com",
+      "message": "improve logging\n\nhttps://github.com/metasfresh/metasfresh-webui-frontend/issues/2691\n"
+    },
+    {
+      "sha": "39f76f8b422305865edc4fdff5a3f7c355860d15",
+      "date": "2020-04-16T12:17:58+03:00",
+      "author": "TheBestPessimist",
+      "email": "cristian@tbp.land",
+      "message": "webui views: sysconfig to configure how much time we keep the v… (#1407)\n\n* Make `DefaultViewsRepositoryStorage`'s view expiration timeout configurable\n\nhttps://github.com/metasfresh/metasfresh/issues/6480\n\n* Read viewExpirationTimeout from sysconfig\n\nhttps://github.com/metasfresh/metasfresh/issues/6480\n\n* Change expiration timeout unit to Minutes from Hours\n\nhttps://github.com/metasfresh/metasfresh/issues/6480\n\n* Remove redundant import\n\nhttps://github.com/metasfresh/metasfresh/issues/6480"
+    },
+    {
+      "sha": "90af899fd551b1b2c41656a35b7cdb9fd04a488c",
+      "date": "2020-04-16T10:01:08+03:00",
+      "author": "TheBestPessimist",
+      "email": "cristian@tbp.land",
+      "message": "Cloning with keyboard shortcut works even if action is hidden f… (#1408)\n\n* Throw error if cloning is disabled for table\n\nhttps://github.com/metasfresh/metasfresh/issues/6482\n\n* Throw error if cloning is disabled for table\n\nhttps://github.com/metasfresh/metasfresh/issues/6482\n\n* Add error Trl\n\nhttps://github.com/metasfresh/metasfresh/issues/6482\n\n* Use `Check.assumeNotNull` instead of `Objects.requireNonNull`\n\nhttps://github.com/metasfresh/metasfresh/issues/6482"
+    },
+    {
+      "sha": "fbd54d08f9a508f42267982a1609024b398f4943",
+      "date": "2020-04-16T08:18:00+03:00",
+      "author": "dragospodariu96",
+      "email": "58212697+dragospodariu96@users.noreply.github.com",
+      "message": "Gh6446 3 (#1409)\n\n* #6446 Intermediary commit.\n\n* #6446 Made Set Ownerhip action work as a toggle & added translations for it.\n\n* #6446 Setting flag value from parameter."
+    },
+    {
+      "sha": "9af8fce859db84c30cf3deaf8d6c2b10e2c69cbb",
+      "date": "2020-04-08T12:25:08+03:00",
+      "author": "Ruxandra Craciunescu",
+      "email": "ruxandra.craciunescu@metasfresh.com",
+      "message": "Gh6432 open linked accounts processes (#1403)\n\n* RecordsToOpen improvements\n\n* #6432 Open Linked Facts processes\n\nhttps://github.com/metasfresh/metasfresh/issues/6432\n\n* #6432 refactoring\n\nhttps://github.com/metasfresh/metasfresh/issues/6432\n\n* #6432 helper class for common logic in the 2 fact acct processes\n\nhttps://github.com/metasfresh/metasfresh/issues/6432\n\nCo-authored-by: Teo Sarca <teo.sarca@metasfresh.com>\n(cherry picked from commit 58bf538928cf84bc92bf1546769eb44c23fb085b)\n"
+    },
+    {
+      "sha": "d03c7b6370821cf336570e2bf4e0d4f0d6b8d2b1",
+      "date": "2020-04-15T10:21:42+03:00",
+      "author": "TheBestPessimist",
+      "email": "cristian@tbp.land",
+      "message": "User Query filters errors (#1406)\n\n* Fix User Query expecting Int contains the float value instead\n\nExpected: 1234\nActual: 1234.000000\n\nhttps://github.com/metasfresh/metasfresh/issues/6476\n\n* Use ColumnDisplayTypeProvider when calculating the object value.\n\nThis interface was introduced to ease testing\n\nhttps://github.com/metasfresh/metasfresh/issues/6476"
+    },
+    {
+      "sha": "efe01274c98d1daff250df2a143d9ed7a2f97816",
+      "date": "2020-04-15T09:33:40+03:00",
+      "author": "Teo Sarca",
+      "email": "teo.sarca@metasfresh.com",
+      "message": "Gh6436 (#1404)\n\n"
+    },
+    {
+      "sha": "e9e3ff260c50eb8a359699dc7d45a3d81c4e90df",
+      "date": "2020-04-15T06:51:19+02:00",
+      "author": "Tobias Schöneberg",
+      "email": "tobias.schoeneberg@metasfresh.com",
+      "message": "minor\n"
+    },
+    {
+      "sha": "c4a2cde93c3d167ffe3d04ac2f60f11610b42939",
+      "date": "2020-04-08T08:30:50+02:00",
+      "author": "Tobias Schöneberg",
+      "email": "metas-ts@users.noreply.github.com",
+      "message": "Fixing Material Receipt Candidates -> Create Material Receipt e… (#1402)\n\n(cherry picked from commit 68b92a59f8c205476d539382b9f3f1fe78808257)\n"
+    },
+    {
+      "sha": "58bf538928cf84bc92bf1546769eb44c23fb085b",
+      "date": "2020-04-08T12:25:08+03:00",
+      "author": "Ruxandra Craciunescu",
+      "email": "ruxandra.craciunescu@metasfresh.com",
+      "message": "Gh6432 open linked accounts processes (#1403)\n\n* RecordsToOpen improvements\n\n* #6432 Open Linked Facts processes\n\nhttps://github.com/metasfresh/metasfresh/issues/6432\n\n* #6432 refactoring\n\nhttps://github.com/metasfresh/metasfresh/issues/6432\n\n* #6432 helper class for common logic in the 2 fact acct processes\n\nhttps://github.com/metasfresh/metasfresh/issues/6432\n\nCo-authored-by: Teo Sarca <teo.sarca@metasfresh.com>"
+    },
+    {
+      "sha": "31145d2351845531fb7bf1aa862a50b661931dc9",
+      "date": "2020-04-08T08:30:50+02:00",
+      "author": "Tobias Schöneberg",
+      "email": "metas-ts@users.noreply.github.com",
+      "message": "Fixing Material Receipt Candidates -> Create Material Receipt e… (#1402)\n\n(cherry picked from commit 68b92a59f8c205476d539382b9f3f1fe78808257)\n"
+    },
+    {
+      "sha": "68b92a59f8c205476d539382b9f3f1fe78808257",
+      "date": "2020-04-08T08:30:50+02:00",
+      "author": "Tobias Schöneberg",
+      "email": "metas-ts@users.noreply.github.com",
+      "message": "Fixing Material Receipt Candidates -> Create Material Receipt e… (#1402)\n\n"
+    },
+    {
+      "sha": "c9e05f9d8bb1fe02805688eda9d26d521d5c1c7d",
+      "date": "2020-04-07T08:05:09+03:00",
+      "author": "dragospodariu96",
+      "email": "58212697+dragospodariu96@users.noreply.github.com",
+      "message": "#6446 Showing if rows have an own palette set in the handling u… (#1401)\n\n* #6446 Showing if rows have an own palette set in the handling unit editor window.\n\n* #6446 Only showing the checkbox for 'LU' rows."
+    },
+    {
+      "sha": "b876381456eba25e216c974b0caed2695d201b69",
+      "date": "2020-04-03T11:07:59+02:00",
+      "author": "Tobias Schöneberg",
+      "email": "tobias.schoeneberg@metasfresh.com",
+      "message": "Merge branch 'master' of github.com:metasfresh/metasfresh-webui-api\n"
+    },
+    {
+      "sha": "fe5a7a3e7d15cfb3f3361c97ada12519fb7c5c0f",
+      "date": "2020-04-03T08:52:55+03:00",
+      "author": "Teo Sarca",
+      "email": "teo.sarca@metasfresh.com",
+      "message": "Virtual column not updated anymore\n\nhttps://github.com/metasfresh/metasfresh/issues/6245"
+    },
+    {
+      "sha": "2e0c0f18305c2bb9999d425d58a99d03956d143c",
+      "date": "2020-04-02T16:13:09+02:00",
+      "author": "Tobias Schöneberg",
+      "email": "tobias.schoeneberg@metasfresh.com",
+      "message": "Merge remote-tracking branch 'origin/5.134_grave_goldstine'\n"
+    },
+    {
+      "sha": "9515eaa5c50f33c48cc9d42918bac8ebdb355fc8",
+      "date": "2020-04-02T15:37:53+02:00",
+      "author": "Tobias Schöneberg",
+      "email": "tobias.schoeneberg@metasfresh.com",
+      "message": "add process-related MDC keys\n"
+    },
+    {
+      "sha": "b8cf860366440222b4beed9fc8e9e6aca7f8f015",
+      "date": "2020-04-02T13:37:12+03:00",
+      "author": "dragospodariu96",
+      "email": "58212697+dragospodariu96@users.noreply.github.com",
+      "message": "#6386 modified create purchase orders from procurement window p… (#1392)\n\n* #6386 modified create purchase orders from procurement window process.\n\n* #6386 Made process work like in swing client.\n\n* #6385 Modified 'Create Purchase Orders' action to work as customer requested.\n\n* #6386 Removed unused imports, renamed process & only showing action when there are rows in the view."
+    },
+    {
+      "sha": "54be690b8bf92cb1ce240c73ca69b01891d53938",
+      "date": "2020-04-01T09:23:08+03:00",
+      "author": "Teo Sarca",
+      "email": "teo.sarca@metasfresh.com",
+      "message": "make sure filters are sorted correctly (#1398)\n\nhttps://github.com/metasfresh/metasfresh/issues/6390"
+    }
+  ],
+  "commit_sha": "1de20e9911467855a03441899e84f39dfbd83903",
+  "extracted_at": "2026-10-05T18:11:12.845899+00:00"
+}

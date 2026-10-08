@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "9fbe8f229cad3543e605457f5d9ded941e80b3ff",
+      "date": "2024-11-22T19:29:07+09:00",
+      "author": "Minji",
+      "email": "121149171+chosim-dvlpr@users.noreply.github.com",
+      "message": "feat: 운영 서버 api 변경 (#770)\n\n"
+    },
+    {
+      "sha": "9f3b2b46f86d8b746f7665fd421b101e25386777",
+      "date": "2024-11-22T19:02:00+09:00",
+      "author": "Minji",
+      "email": "121149171+chosim-dvlpr@users.noreply.github.com",
+      "message": "dev 개발 서버 api 재변경(issue #767) (#769)\n\n* feat: dev서버 api 주소 변경\n\n* feat: dev서버 api 주소 apin으로 변경"
+    },
+    {
+      "sha": "f8873cd211c03cfc540e76df67f43686ead59650",
+      "date": "2024-11-22T18:53:38+09:00",
+      "author": "Minji",
+      "email": "121149171+chosim-dvlpr@users.noreply.github.com",
+      "message": "feat: dev서버 api 주소 변경 (#768)\n\n"
+    },
+    {
+      "sha": "9431b5402e359957506b0fa2c05fe87a484349e8",
+      "date": "2024-11-16T22:31:45+09:00",
+      "author": "Minji",
+      "email": "121149171+chosim-dvlpr@users.noreply.github.com",
+      "message": "미션, 디스커션 제출 로직 리팩터링 (issue #765) (#766)\n\n* refactor: 미션 제출 페이지 리팩터링\n\n* rename: MissionSubmitPage 경로 변경\n\n* fix: useSubmitDiscussionMutation의 invalidateQuery Key 수정\n\n* refactor: discussion 제출 로직 리팩터링\n\n* refactor: discussion delete, post msw 핸들러 수정\n\n* refactor: 미션 제출 및 수정 로직 커스텀 훅으로 분리\n\n* refactor: useFormSubmission, 제출 핸들러 커스텀 훅 추상화 및 discussion 제출 로직 분리\n\n* rename: useSubmitDiscussionHandlers 네이밍, MissionSubmitPage 네이밍 변경\n\n* style: console.log 삭제"
+    },
+    {
+      "sha": "88a5fe6fe01af9f5942c589e1e81111cc6520dad",
+      "date": "2024-11-14T10:41:40+09:00",
+      "author": "Minji",
+      "email": "121149171+chosim-dvlpr@users.noreply.github.com",
+      "message": "랜딩 페이지 화면 크기에 따른 컴포넌트 크기 조절 및 디자인 이슈 수정 (issue #763) (#764)\n\n* refactor: 랜딩 페이지 useScrollComponent 리팩터링\n\n* fix: 아래 화살표 버튼 인덱스 오류 해결\n\n* design: 본문으로 바로가기 버튼에 의해 헤더 아래 공백이 생기는 현상 해결\n\n* fix: PrivateRoutes 설정되지 않은 부분 다시 적용\n\n* design: 본문으로 바로가기 버튼의 기본 position 속성을 absolute로 변경"
+    },
+    {
+      "sha": "0542effffabd06602c012824ed726ce5f3edc79d",
+      "date": "2024-11-04T22:31:43+09:00",
+      "author": "Minji",
+      "email": "121149171+chosim-dvlpr@users.noreply.github.com",
+      "message": "README 이미지 및 컨텐츠 추가 (issue #753) (#762)\n\n* docs: README 이미지 및 컨텐츠 추가\n\n* docs: 이미지 모바일에서 나오지 않는 문제 해결, 이미지 경로 변경 및  파일 삭제"
+    },
+    {
+      "sha": "80ff853bc1b4333ce0d01d4757ecd7b45a7f74b5",
+      "date": "2024-11-04T15:58:13+09:00",
+      "author": "Kim Minjoo(김민주/리브)",
+      "email": "131349867+Minjoo522@users.noreply.github.com",
+      "message": "bug: 데이터소스 뎁스 변경 (#761)\n\n"
+    },
+    {
+      "sha": "e4da02d0865f38f134bda8802f1bdf772f21e168",
+      "date": "2024-11-04T15:48:46+09:00",
+      "author": "Kim Minjoo(김민주/리브)",
+      "email": "131349867+Minjoo522@users.noreply.github.com",
+      "message": "bug: 개발 서버에서 mysql 사용하기 위해 순서 변경 (#759)\n\n"
+    },
+    {
+      "sha": "74c4a9a3689af5d6b2f141929ef4868894d1eb10",
+      "date": "2024-11-04T15:24:33+09:00",
+      "author": "Kim Minjoo(김민주/리브)",
+      "email": "131349867+Minjoo522@users.noreply.github.com",
+      "message": "bug: 플라이웨이 외래키 제약으로 init 안되는 오류 수정 (#757)\n\n"
+    },
+    {
+      "sha": "449a7d1c42bdce09d56378aa851d7bb2f1dd25a2",
+      "date": "2024-11-04T15:09:04+09:00",
+      "author": "임수빈",
+      "email": "robin980108@naver.com",
+      "message": "fix: 개발서버 datasource 수정 (#755)\n\n"
+    },
+    {
+      "sha": "7b5cc54d7897c098421559e16bf89a88cab0743a",
+      "date": "2024-10-24T21:59:36+09:00",
+      "author": "박한영(Ryan)",
+      "email": "phanyoung@naver.com",
+      "message": "카드 정렬 및 디스커션 서스펜스 처리 (#750)\n\n"
+    },
+    {
+      "sha": "5532b0a9147e1ee82a849a6a07d3014d6cdc1a10",
+      "date": "2024-10-24T17:36:30+09:00",
+      "author": "JEON TAEHEON",
+      "email": "brgndyy@gmail.com",
+      "message": "수정사항 반영 (issue #746) (#747)\n\n* refactor: 커스텀 뮤테이션 인자 변경\n\n* Merge branch 'dev' of https://github.com/woowacourse-teams/2024-devel-up into dev\n\n* remove: 파일 삭제\n\n* refactor: 수정사항 반영\n\n* refactor: privateRotue\n\n* refacotr: a링크로 대체\n\n* fix: 링크 삭제\n\n* design: 수정사항 반영\n\n* design: 수정사항 반영"
+    },
+    {
+      "sha": "076b5ba109f4f0c4163664c5118ea51d10ef085b",
+      "date": "2024-10-24T16:36:34+09:00",
+      "author": "JEON TAEHEON",
+      "email": "brgndyy@gmail.com",
+      "message": "빌드 에러 수정 (issue #744) (#745)\n\n* refactor: 커스텀 뮤테이션 인자 변경\n\n* Merge branch 'dev' of https://github.com/woowacourse-teams/2024-devel-up into dev\n\n* remove: 파일 삭제\n\n* refactor: 수정사항 반영"
+    },
+    {
+      "sha": "811bf8baf7730701b1aa5d2d6cc09ac794188f3d",
+      "date": "2024-10-24T16:22:32+09:00",
+      "author": "Minji",
+      "email": "121149171+chosim-dvlpr@users.noreply.github.com",
+      "message": "카드 컴포넌트 줄바꿈 수정 (issue #738) (#742)\n\n* design: Card 컴포넌트 줄바꿈 수정\n\n* design: 풀이 상세 타이틀 줄바꿈 조정\n\n* fix: import 타입에러 해결\n\n* fix: import 타입에러 해결\n\n* design: 풀이 상세 헤더 디자인 반응형 수정\n\n---------\n\nCo-authored-by: JEON TAEHEON <brgndyy@gmail.com>"
+    },
+    {
+      "sha": "95a5ea040830f99cc7eeb4e459d05b940a49dc1a",
+      "date": "2024-10-24T16:20:33+09:00",
+      "author": "JEON TAEHEON",
+      "email": "brgndyy@gmail.com",
+      "message": "대시보드 카드 공통 컴포넌트로 추출 (issue #741) (#743)\n\n* refactor: 커스텀 뮤테이션 인자 변경\n\n* Merge branch 'dev' of https://github.com/woowacourse-teams/2024-devel-up into dev\n\n* remove: 파일 삭제\n\n* chore : refactor\n\n* refactor: 수정사항 반영"
+    },
+    {
+      "sha": "227508ace1ef9abb4d998b82e0065e934568220e",
+      "date": "2024-10-24T15:16:38+09:00",
+      "author": "JEON TAEHEON",
+      "email": "brgndyy@gmail.com",
+      "message": "대시보드 카드 줄바꿈 수정 (issue  #739) (#740)\n\n* refactor: 커스텀 뮤테이션 인자 변경\n\n* Merge branch 'dev' of https://github.com/woowacourse-teams/2024-devel-up into dev\n\n* remove: 파일 삭제\n\n* refactor: 수정사항 반영"
+    },
+    {
+      "sha": "ee91b7a978b7c633fd194d6d4e045d5a3f8b0553",
+      "date": "2024-10-24T13:11:52+09:00",
+      "author": "박한영(Ryan)",
+      "email": "phanyoung@naver.com",
+      "message": "각종 QA 반영 (#737)\n\n* feat: QA 사항 반영\n\n* fix: 로컬 환경 테스트를 위해 임의로 수정한 isLoggedIn 수정\n\n* chore: msw 해제"
+    },
+    {
+      "sha": "a53d2b064b67ce0297555440d37ee3892cde9d66",
+      "date": "2024-10-24T11:39:12+09:00",
+      "author": "JEON TAEHEON",
+      "email": "brgndyy@gmail.com",
+      "message": "디스커션 페이지네이션 적용 문제 해결  (issue #731) (#734)\n\n* refactor: 커스텀 뮤테이션 인자 변경\n\n* Merge branch 'dev' of https://github.com/woowacourse-teams/2024-devel-up into dev\n\n* remove: 파일 삭제\n\n* refactor: 수정사항 반영\n\n* design: css 수정사항 반영\n\n* refactor: 미션리스트 디테일 로직 개선"
+    },
+    {
+      "sha": "b21e7518678c0c044a7eecb8d123696ad5d9e7e4",
+      "date": "2024-10-24T11:36:49+09:00",
+      "author": "임수빈",
+      "email": "robin980108@naver.com",
+      "message": "깃허브에서 이메일 수집하지 않도록 변경합니다. (issue #735) (#736)\n\n* feat: 깃허브에서 이메일 수집하지 않도록 변경합니다.\n\n* feat: 이메일 넘기지 않도록 수정"
+    },
+    {
+      "sha": "f6b81bfa30fd7179ef53336782fe2e19f6c5230a",
+      "date": "2024-10-23T17:37:21+09:00",
+      "author": "Minji",
+      "email": "121149171+chosim-dvlpr@users.noreply.github.com",
+      "message": "반응형 디자인 수정 (issue #730) (#733)\n\n* design: 랜딩 페이지 리스트 조정\n\n* design: card min-height 조정\n\n* design: 디스커션 리스트 레이아웃 조정"
+    },
+    {
+      "sha": "068e9081a012bac7e4d4891d79a8c6175d4b0028",
+      "date": "2024-10-23T16:53:21+09:00",
+      "author": "JEON TAEHEON",
+      "email": "brgndyy@gmail.com",
+      "message": "디스커션 및 솔루션 제출시 에러 수정 (issue #728) (#729)\n\n* refactor: 커스텀 뮤테이션 인자 변경\n\n* Merge branch 'dev' of https://github.com/woowacourse-teams/2024-devel-up into dev\n\n* remove: 파일 삭제\n\n* refactor: 변경사항 반영"
+    },
+    {
+      "sha": "4c1d353f29bb0092d72202fd21178a6be80595b1",
+      "date": "2024-10-23T16:49:44+09:00",
+      "author": "Minji",
+      "email": "121149171+chosim-dvlpr@users.noreply.github.com",
+      "message": "미션 카드 크기 반응형 조정 (issue #724) (#727)\n\n* design: 미션, 풀이 리스트 반응형 조정\n\n* design: 줄 수 조정"
+    },
+    {
+      "sha": "6f14cc7dd6632c42d11445ada51113d54ee6c3b3",
+      "date": "2024-10-23T16:03:56+09:00",
+      "author": "JEON TAEHEON",
+      "email": "brgndyy@gmail.com",
+      "message": "페이지네이션 로직 버그 수정 (issue #723) (#726)\n\n* refactor: 커스텀 뮤테이션 인자 변경\n\n* Merge branch 'dev' of https://github.com/woowacourse-teams/2024-devel-up into dev\n\n* remove: 파일 삭제\n\n* refactor: 태그 변경시 데이터 다시 받아오도록 수정\n\n* fix: useMissions인자로 미션 태그 주입\n\n* refactor: 페이지네이션 기능 개선\n\n* refactor: 에러사항 바로 적용"
+    },
+    {
+      "sha": "e238a6b68f1213e0f9610ad4bc3c12cb19c913a2",
+      "date": "2024-10-23T15:33:07+09:00",
+      "author": "박한영(Ryan)",
+      "email": "phanyoung@naver.com",
+      "message": "푸터 반응형 수정 및 about 간격 조정 (#725)\n\n* feat: 푸터 반응형 깨지는 현상 수정\n\n* fix: 본문으로 바로가기 포커스 시에만 보이도록 수정\n\n* fix: about 페이지 간격 조정\n\n* chore: 불필요한 주석 삭제"
+    },
+    {
+      "sha": "5e29fce53e0cbcddaed15877fb2df2734f0fb00e",
+      "date": "2024-10-23T15:07:52+09:00",
+      "author": "Kim Minjoo(김민주/리브)",
+      "email": "131349867+Minjoo522@users.noreply.github.com",
+      "message": "디스커션 목록 조회 쿼리 개선 (issue #715) (#716)\n\n* refactor: 디스커션 목록 조회 쿼리 개선\n\n* feat: mission id 인덱스 추가"
+    },
+    {
+      "sha": "61966e512237b07296a795d800e3fb9091508a8d",
+      "date": "2024-10-23T15:06:01+09:00",
+      "author": "임수빈",
+      "email": "robin980108@naver.com",
+      "message": "솔루션 목록 조회 개선 (issue #714) (#720)\n\n* fix: 시간 측정 코드 추가\n\n* fix: 목록 조회시 정렬 빠진 오류 수정\n\n* fix: 목록 조회시 카운트 쿼리 distinct 삭제\n\n* fix: 솔루션 목록 조회시 카운트 쿼리 오류 수정\n\n* fix: 솔루션 목록 조회 출력문 제거\n\n* fix: 시크릿 최신화\n\n* fix: 인덱스 추가\n"
+    },
+    {
+      "sha": "15c9a6f46e268971740b9fbea161517a97258d4f",
+      "date": "2024-10-23T14:42:50+09:00",
+      "author": "Minji",
+      "email": "121149171+chosim-dvlpr@users.noreply.github.com",
+      "message": "fix: 본문으로 바로가기 버튼 안보이도록 수정 (#721)\n\n"
+    },
+    {
+      "sha": "0fb1ea84144b3e4a44cebf28f760332fa118ac2d",
+      "date": "2024-10-23T11:17:46+09:00",
+      "author": "Minji",
+      "email": "121149171+chosim-dvlpr@users.noreply.github.com",
+      "message": "리스트 반응형 적용 (issue #717) (#718)\n\n* design: 미션 리스트 스타일 조정\n\n* design: min-width 지정\n\n* design: 풀이 리스트 스타일 조정\n\n* design: 디스커션 리스트 스타일 조정\n\n* design: 메인페이지 미션리스트 스타일 조정"
+    },
+    {
+      "sha": "4b40f8f3c26da6a14eea6ebc4f6777f081350038",
+      "date": "2024-10-22T11:58:23+09:00",
+      "author": "JEON TAEHEON",
+      "email": "brgndyy@gmail.com",
+      "message": "QA 사항 반영 및 페이지네이션 버그 수정 (issue #712) (#713)\n\n* refactor: 커스텀 뮤테이션 인자 변경\n\n* Merge branch 'dev' of https://github.com/woowacourse-teams/2024-devel-up into dev\n\n* remove: 파일 삭제\n\n* refactor:  솔루션 상세에 SpinnerSuspense 적용\n\n* fix: 페이지네이션 초기화 로직 적용"
+    },
+    {
+      "sha": "c7d9d0951fe5a433c9601b65e35409bf411ee12d",
+      "date": "2024-10-21T22:27:09+09:00",
+      "author": "Minji",
+      "email": "121149171+chosim-dvlpr@users.noreply.github.com",
+      "message": "헤더 반응형 구현 (issue #701) (#711)\n\n* feat: mediaQueries medium 추가\n\n* feat: 반응형 헤더 추가\n- medium 사이즈에서 dropdown 형태\n- hamburger Toggle Image 추가\n- Mobile, DeskTop 컴포넌트 분리\n\n* fix: 머지 에러 해결\n\n* design: 화면 너비에 맞춰 대시보드 메뉴 위치를 토글로 변경\n\n* style: 사용하지 않는 코드 제거\n\n* fix: 스크린 리더가 사용하지 않는 컴포넌트를 읽는 문제 해결"
+    }
+  ],
+  "commit_sha": "9fbe8f229cad3543e605457f5d9ded941e80b3ff",
+  "extracted_at": "2026-10-05T18:43:22.104147+00:00"
+}

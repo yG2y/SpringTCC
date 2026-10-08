@@ -1,0 +1,139 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 18,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "7c3c28ca091c3c3b8388301f4b986a55019b6664",
+      "date": "2026-08-28T17:04:22+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: add .editorconfig for consistent code style\n"
+    },
+    {
+      "sha": "f064aafe61dc09c8468fd3544ab8770bf8a7ec8a",
+      "date": "2026-07-30T07:55:01+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Add Medium article\n"
+    },
+    {
+      "sha": "86b0978de623ff57746bbff07d53cf884db0ed3e",
+      "date": "2026-07-30T07:28:06+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "refactor: centralize gRPC exception handling\n\n- Remove try-catch blocks from MovieGrpcService and MovieServiceGrpcClient\n- Add MovieGrpcExceptionHandler for centralized Status exception mapping\n- Configure named gRPC client channel with GrpcClientsConfig\n- Rename default channel to named \"movie\" channel in application properties\n- Update MovieGrpcServiceTest to expect exceptions directly\n"
+    },
+    {
+      "sha": "ff1d3d6906d5a5354ee73998c28c5510c80e3010",
+      "date": "2026-07-27T11:47:07+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "refactor: migrate from net.devh to Spring gRPC\n\n- Removed movie-grpc-lib module, embedding proto definitions directly in each app module\n- Replaced net.devh gRPC starter with org.springframework.grpc (Spring gRPC)\n- Updated client to use constructor injection instead of @GrpcClient\n- Moved proto files into movie-grpc-server and movie-grpc-client\n- Switched config to spring.grpc.client namespace\n- Added protobuf-maven-plugin for code generation in both modules\n- Updated imports, package names, and README\n"
+    },
+    {
+      "sha": "53238568c6867540f5c4ad3c3201e9a220394228",
+      "date": "2026-07-26T23:43:31+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "style: format code with google-java-format and enforce via Spotless\n\n- Apply Google Java Format (GOOGLE style) across all Java files\n- Configure Spotless Maven plugin in parent POM to enforce formatting\n- Add Spotless check to the validate phase of the build\n- Update README with code formatting instructions\n- Reorganize import order to comply with style rules\n- Fix missing newlines at end of several source files\n- Make movie-grpc-lib inherit from parent POM\n"
+    },
+    {
+      "sha": "bc2fb1a85cade7633aa9f89dce272653a3e58bde",
+      "date": "2026-07-26T23:20:32+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "docs: add license, funding, and architecture docs\n\n- Add MIT License file to the repository\n- Add Buy Me A Coffee funding link to FUNDING.yml\n- Add architecture diagram, badges, support, and license sections to README\n"
+    },
+    {
+      "sha": "34b6c8723a44a4cc7cf4b7743aa6860f30245fe0",
+      "date": "2026-07-26T23:03:44+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "test: add unit tests for server and client modules\n\n- Add MovieServiceTest, MovieGrpcServiceTest, MovieMapperTest for server module\n- Add MovieServiceGrpcClientTest, MovieResponseTest, MoviesCommandsTest for client module\n- Remove disabled placeholder application context tests\n- Add test instructions to README\n"
+    },
+    {
+      "sha": "a927ea746ecf2b2968689cb1e2df20ebc5e6288b",
+      "date": "2026-07-26T21:32:10+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "refactor: upgrade to Spring Boot 4.0.7 and Java 25\n\n- Update parent POM to Spring Boot 4.0.7 and Java 25\n- Migrate Spring Shell 4 API: replace @ShellMethod/@ShellComponent with @Command/@Component\n- Add jansi starter for Spring Shell 4 terminal support\n- Upgrade gRPC to 1.83.0 and protobuf to 3.25.9\n- Extract MovieMapper class for proto-domain mapping\n- Add MovieAlreadyExistsException and validation in MovieService\n- Add error handling with StatusRuntimeException in gRPC client and server\n- Replace offset/page with page parameter in pagination requests\n- Use protobuf optional fields for UpdateMovieRequest\n- Remove spring-boot-starter-web dependency from server\n- Update README with Java 25, PostgreSQL 18.4, and simplified instructions\n"
+    },
+    {
+      "sha": "32b7e5f0e919386901545d4c04a7d5e466880431",
+      "date": "2025-09-21T21:10:00+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- Upgrade to Spring Boot 3.5.6\n- Upgrade to Spring Shell 3.4.1\n- Upgrade to grpc 1.74.0\n"
+    },
+    {
+      "sha": "79aff6bcaa5ca791b1b31a8e9dbf703774fa1886",
+      "date": "2025-09-21T19:57:20+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- Upgrade wrapperVersion to 3.3.4 and Apache Maven to 3.9.11.\n- Add the .gitattributes file.\n- Update README.\n"
+    },
+    {
+      "sha": "98a493f16ea91527648f113d0f7647e4adcca197",
+      "date": "2024-12-26T15:55:25-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Update README file\n"
+    },
+    {
+      "sha": "b94b28fc7e41aef9ab0f9c73e021cf966daab4c5",
+      "date": "2024-12-26T15:38:41-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Refactor the mappings among Model, DTOs and Proto\n"
+    },
+    {
+      "sha": "3a7a40a01e13d55bc13f26a0d7517c330209e1c9",
+      "date": "2024-12-26T15:23:34-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project update\n\n- Refactor application packages;\n- Remove Service interface and just keep the implementation to keep it simple.\n"
+    },
+    {
+      "sha": "3ebd2a898360b59cca892805defec29c235ec120",
+      "date": "2024-12-26T15:08:34-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- Upgrade to Spring Boot 3.4.1;\n- Upgrade to Spring Shell 3.4.0;\n- Upgrade to Apache Maven 3.9.9;\n- Upgrade to protobuf 3.25.5;\n- Upgrade to grpc 1.69.0;\n- Refactor pom.xml files;\n- Update README.\n"
+    },
+    {
+      "sha": "7e0d921731b9f326017a11acd4a5f152b0135033",
+      "date": "2024-09-08T08:30:17+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Simplify movie.proto\n\n- GetMovie, CreateMovie, UpdateMovie and DeleteMovie return Movie instead of MovieResponse;\n- GetMovies return a stream of Movie;\n- Delete MovieResponse and GetMoviesResponse;\n- Adapt changes in server and client code.\n"
+    },
+    {
+      "sha": "a3c8dcaf5d487dc3869a71acbc24b8c613fff41d",
+      "date": "2024-09-04T06:41:32+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Create FUNDING.yml\n"
+    },
+    {
+      "sha": "c1f34bff9ef1d92b39bdcb1fd4d37ec4847ee1be",
+      "date": "2024-09-04T06:27:43+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Update README adding one Medium article\n"
+    },
+    {
+      "sha": "30c3a1691363307caa9fa80531f0eeb905994d2c",
+      "date": "2024-08-29T15:29:24+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Initial commit\n"
+    }
+  ],
+  "commit_sha": "7c3c28ca091c3c3b8388301f4b986a55019b6664",
+  "extracted_at": "2026-10-05T18:47:10.232197+00:00"
+}

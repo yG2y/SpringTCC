@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "93a9d02b11e62d179a557bfabfc4d63355993d7e",
+      "date": "2026-07-25T18:29:12+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: remove AGENTS.md\n"
+    },
+    {
+      "sha": "97a308888716003155018e492b89f750c74097e1",
+      "date": "2026-07-24T23:09:41+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: downgrade react-router-dom to v7.11.0\n\n- CVE-2025-43860 (GHSA-h5cw-625j-3rxh): XSS via member/target properties\n- Pin react-router-dom to version 7.11.0 (last safe version before 7.18.1)\n- Update package-lock.json to reflect the version change\n"
+    },
+    {
+      "sha": "a008dcbf80931bd0371cdb79728be0ea36c8fd9d",
+      "date": "2026-07-24T23:01:19+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: update dependencies and build tooling\n\n- Bump PostgreSQL image from 18.3 to 18.4 in compose.yaml\n- Upgrade Spotless Maven plugin to 3.8.0 and move check to validate phase\n- Update frontend dependencies: Mantine 9.4.2, React 19.2.8, Vite 8.1.5, Vitest 4.1.10\n- Upgrade @testing-library/jest-dom from 6.x to 7.0.0\n- Bump various transitive npm dependencies across the lockfile\n"
+    },
+    {
+      "sha": "5bd84e9caa766c5ffb23b6c399579ea481726191",
+      "date": "2026-07-24T11:27:24+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "docs: update Spotless Maven plugin link in README\n\n- Change Spotless repository URL to point to plugin-maven subdirectory\n"
+    },
+    {
+      "sha": "e04bfc335fe9edb7025da4006fd2b7f5a8afc9c2",
+      "date": "2026-07-03T09:06:33-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "refactor: replace custom ObjectMapperConfig with Spring Boot Jackson config\n\n- Remove ObjectMapperConfig bean in favor of application.yml properties\n- Update test controllers to inject JsonMapper instead of ObjectMapper\n"
+    },
+    {
+      "sha": "51b58c3269c397d3ea5684bd04ed4af60e788983",
+      "date": "2026-07-01T07:26:07-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Fix package.json indentation\n"
+    },
+    {
+      "sha": "9d268f799b0a74864653173c17b5295936c2bdb2",
+      "date": "2026-07-01T07:16:06-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: bump dependencies and rename project diagram\n\n- Upgrade Spring Boot from 4.0.6 to 4.1.0\n- Update Maven wrapper distribution to 3.9.16\n- Update frontend dependencies to latest versions\n- Rename \"Project Diagram\" section to \"Project Overview\" in README\n"
+    },
+    {
+      "sha": "d36729265095c3c58ccf33e3e5e788c27cb5dfb8",
+      "date": "2026-06-24T05:44:54-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "docs: update README\n"
+    },
+    {
+      "sha": "088c34354f5e5f1450afdbfa54a6815c205363c2",
+      "date": "2026-06-23T12:17:48-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Fix indentation in movie-api pom.xml\n"
+    },
+    {
+      "sha": "9aa65756683e59e2efd767ff9b0b3ec93ca298bd",
+      "date": "2026-06-14T15:01:46-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Add [*.java] section to .editorconfig\n"
+    },
+    {
+      "sha": "98b1aec349faa11f5b435ec217236387b7a787c1",
+      "date": "2026-06-14T09:38:41-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: rename docker-compose.yml to compose.yaml\n"
+    },
+    {
+      "sha": "e68954d9462a2240afb71f7f45533178cc7e748c",
+      "date": "2026-05-18T21:09:15+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Add project name to pom.xml\n"
+    },
+    {
+      "sha": "3e5c93682438e91af3390daa657ab9e30615e9d5",
+      "date": "2026-05-14T15:57:35+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Remove custom importOrder from Spotless and [*.java] from .editorconfig\n\n- Remove <importOrder> from pom.xml so IntelliJ google-java-format\n  plugin matches Spotless on import ordering\n- Remove [*.java] from .editorconfig to avoid overriding the\n  google-java-format plugin in the IDE\n- Run spotless:apply to reformat all Java sources with default\n  import sorting\n"
+    },
+    {
+      "sha": "c7165962eb72bd58e4e2fc241078432f876cffc6",
+      "date": "2026-05-14T14:51:43+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "test: migrate service tests to Spring test context\n\n- Switch MovieServiceTest and UserServiceTest from MockitoExtension to SpringExtension with @Import\n- Replace @Mock/@InjectMocks with @MockitoBean/@Autowired for Spring-managed beans\n- Add healthcheck configuration for PostgreSQL service in docker-compose\n"
+    },
+    {
+      "sha": "a08d71c3490c327c6e284bd3b23d2ed36cf388c6",
+      "date": "2026-05-05T14:17:37+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "style: set up code formatting with spotless and prettier\n\n- Add Spotless Maven plugin to backend for Java formatting\n- Add Prettier and eslint-config-prettier to frontend dependencies\n- Update AGENTS.md with formatting rules and import order\n- Add Code Formatting section to README.md\n- Reformat all existing code to comply with new standards\n- Correct version references in project documentation\n"
+    },
+    {
+      "sha": "d364b70c92fb7c0e70e68872bc70b3608b01a1d9",
+      "date": "2026-05-04T16:43:54+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@h7jh2x422d.acttoday.com",
+      "message": "chore: update dependencies and tooling configs\n\n- Update Spring Boot parent to 4.0.6, Maven wrapper to 3.9.15\n- Bump springdoc-openapi from 3.0.2 to 3.0.3\n- Add \"type\": \"module\" to movie-ui/package.json\n- Bump movie-ui production deps (Mantine 9.1.1, axios 1.16.0, react-router-dom 7.14.2)\n- Bump movie-ui dev deps (eslint-plugin-react-hooks, jsdom, vite, vitest)\n- Refactor ESLint config to use globals package, add test-specific globals\n- Add passWithNoTests and forks pool to vitest config\n- Remove deprecated react-hooks/set-state-in-effect rule\n"
+    },
+    {
+      "sha": "3dccf8c3bd75cc62aaa29b105e7f37283c483d78",
+      "date": "2026-04-13T13:51:35+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: update dependencies and fix bash compatibility\n\n- Upgrade npm dependencies in movie-ui (mantine, axios, react, vite, vitest)\n- Change test-endpoints.sh shebang from zsh to bash for broader compatibility\n- Use declare instead of typeset for associative arrays in test-endpoints.sh\n- Add Bash 4.0 requirement to README.md prerequisites\n"
+    },
+    {
+      "sha": "8c6abbf2d4034689f1586cada802a918b27a03ee",
+      "date": "2026-04-08T14:15:12+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@h7jh2x422d.acttoday.com",
+      "message": "build: upgrade mantine to v9 and other dependencies\n\n- upgrade @mantine/core and @mantine/hooks from 8.x to 9.x\n- upgrade react-router-dom from 7.13 to 7.14\n- upgrade vitest from 4.1.0 to 4.1.3\n- add vitest globals to eslint config\n- add test utility helpers and refactor tests to use them\n- adapt movie-ui test based on how tests are implemented in order-ui (https://github.com/ivangfr/springboot-react-jwt-token)\n"
+    },
+    {
+      "sha": "d4e9e6f26d09cfc5b552515f0d0ea705764aedca",
+      "date": "2026-04-06T11:48:26+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "refactor(services): convert service interfaces to concrete classes\n\n- remove MovieService interface and MovieServiceImpl class\n- remove UserService interface and UserServiceImpl class\n- rename test classes and update to use new service classes\n- add verifyNoMoreInteractions() to service tests\n- update AGENTS.md to reflect new service naming convention\n"
+    },
+    {
+      "sha": "de43f5b3b42d27e3b75377636018f2988336b77b",
+      "date": "2026-03-29T13:34:57+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: bump postgres to 18.3 and harden test-endpoints.sh\n\n- upgrade postgres image from 18.0 to 18.3\n- add restart: unless-stopped policy to postgres service\n- use exec-form healthcheck targeting moviedb database\n- add set -euo pipefail and validate curl dependency alongside jq\n- support configurable BASE_URL via positional arg or env var\n- add connectivity pre-check before running auth flows\n- validate each access token after acquisition and fail fast\n- try login before signup for user2 to handle existing accounts\n- quote all variables and %{http_code} in curl calls\n"
+    },
+    {
+      "sha": "08edcbdde280a1f849cd31802942be86bac50f51",
+      "date": "2026-03-28T23:15:15+01:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "test(security): add cors and token provider tests, enable cors in security config\n\n- wire cors into the security filter chain via Customizer.withDefaults()\n- add CorsConfigTest covering preflight and simple requests for allowed/disallowed origins\n- add CorsConfigMultipleOriginsTest verifying multiple allowed origins from config\n- add TokenProviderTest covering valid, expired, malformed, and wrong-key tokens\n- add MovieControllerTest case for blank text param returning all movies\n"
+    },
+    {
+      "sha": "ba8d185c264ab0e62ba8d6323a6629c544493e17",
+      "date": "2026-03-28T19:45:41+01:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "refactor(security): use explicit UTF-8 encoding and substring for token parsing\n\n- replace String.replace() with substring() to strip token prefix more precisely\n- use StandardCharsets.UTF_8 in getBytes() to avoid platform-default charset issues\n"
+    },
+    {
+      "sha": "0464be988d7dedd751b281d5c1441583b47d1fcf",
+      "date": "2026-03-28T19:20:29+01:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "refactor(movie-api): upgrade to Spring Boot 4.0.5 and remove providerId from User\n\n- Bump spring-boot-starter-parent from 4.0.3 to 4.0.5\n- Remove unused providerId field and constructor param from User entity\n- Add @Column constraints on User and Movie fields\n- Fix token constants and issuer/audience values in TokenProvider\n- Replace String.format() with .formatted() throughout\n- Treat blank text param as absent in movie search filter\n- Return null instead of empty string for missing OAuth2 attributes\n- Use Collections.emptyMap() instead of null for local user attributes\n- Promote DateTimeFormatter to static constant in MovieDto\n- Remove redundant @Repository from repository interfaces\n- Make helper methods static in DatabaseInitializer\n- Add jq preflight check to test-endpoints.sh\n- Update Joker movie poster URL in seed data\n- Bump brace-expansion to 1.1.13 and picomatch to 4.0.4 in lockfile\n- Sync AGENTS.md and README.md with current Spring Boot and API versions\n"
+    },
+    {
+      "sha": "33a14d70a07c5ef08664087ba409dfbc970ad77c",
+      "date": "2026-03-28T16:37:17+01:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "refactor(security): extract Role enum from SecurityConfig string constants\n\n- introduce dedicated Role enum with ADMIN and USER values\n- update User entity to persist role as enum with @Enumerated(EnumType.STRING)\n- replace all SecurityConfig.ADMIN/USER string references with Role enum\n- change UserDto role field from String to Role type\n- update UserRepository.countByRole signature to accept Role enum\n- fix enum comparison in UserController to use == instead of .equals()\n"
+    },
+    {
+      "sha": "c22bff4a6d5d55d2da8e328a4e96c98dff7ad83c",
+      "date": "2026-03-26T08:10:13+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Merge pull request #15 from ivangfr/project-update\n\nProject update"
+    },
+    {
+      "sha": "539f7bdaf9b2fb3fcb631fae518a501ace24cdb9",
+      "date": "2026-03-23T16:25:59+01:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore(infra): add Buy Me a Coffee custom funding link\n"
+    },
+    {
+      "sha": "0fdc3c4dc45f81da050dca96959ac16e878df486",
+      "date": "2026-03-23T12:59:53+01:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "docs(agents): add lint commands and clarify frontend conventions\n\nAdd lint script documentation and ESLint config notes to AGENTS.md,\nexpand useCallback requirement for context functions, and fix a\nWebEnvironment reference. Also wire up the lint npm script, tune ESLint\nglobals and rules to eliminate false positives, and refactor\nAuthContext to wrap all context functions in useCallback for stable\nreferences.\n"
+    },
+    {
+      "sha": "78e10be0b9e67d3b68835add3c323f08d3ddd295",
+      "date": "2026-03-23T10:49:22+01:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "docs(agents): update AGENTS.md\n"
+    },
+    {
+      "sha": "6d3f46be22305ce436e0b30ef7ca08280768561d",
+      "date": "2026-03-23T10:22:24+01:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore(api): disable open-in-view and silence jpa warning\n"
+    },
+    {
+      "sha": "beeac00a2e12e1f8e0f818406e9f3af958f57a81",
+      "date": "2026-03-23T09:50:49+01:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "feat(user): prevent self-deletion and last-admin deletion\n\nAdd guards to the delete-user endpoint that reject requests when the\nauthenticated user tries to delete their own account or when deleting\nthe only remaining admin. Introduce UserDeletionNotAllowedException,\na countByRole repository query, and a countAdmins service method to\nsupport these checks. Cover the new cases with controller and service\nunit tests.\n"
+    }
+  ],
+  "commit_sha": "93a9d02b11e62d179a557bfabfc4d63355993d7e",
+  "extracted_at": "2026-10-05T18:07:41.844110+00:00"
+}

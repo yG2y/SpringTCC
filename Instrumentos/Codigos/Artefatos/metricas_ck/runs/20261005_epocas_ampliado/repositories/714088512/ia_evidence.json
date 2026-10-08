@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "bbbabe06d3af9ddd78c5699ca7b4dab36792ee8c",
+      "date": "2026-05-14T12:39:35+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump the prod-deps group across 1 directory with 4 updates (#75)\n\nBumps the prod-deps group with 3 updates in the / directory: [org.springframework.boot:spring-boot-starter-parent](https://github.com/spring-projects/spring-boot), [org.springdoc:springdoc-openapi-starter-webmvc-ui](https://github.com/springdoc/springdoc-openapi) and [org.springframework.modulith:spring-modulith-bom](https://github.com/spring-projects/spring-modulith).\n\n\nUpdates `org.springframework.boot:spring-boot-starter-parent` from 4.0.4 to 4.0.6\n- [Release notes](https://github.com/spring-projects/spring-boot/releases)\n- [Commits](https://github.com/spring-projects/spring-boot/compare/v4.0.4...v4.0.6)\n\nUpdates `org.springdoc:springdoc-openapi-starter-webmvc-ui` from 3.0.2 to 3.0.3\n- [Release notes](https://github.com/springdoc/springdoc-openapi/releases)\n- [Changelog](https://github.com/springdoc/springdoc-openapi/blob/v3.0.3/CHANGELOG.md)\n- [Commits](https://github.com/springdoc/springdoc-openapi/compare/v3.0.2...v3.0.3)\n\nUpdates `org.projectlombok:lombok` from 1.18.44 to 1.18.46\n- [Changelog](https://github.com/projectlombok/lombok/blob/master/doc/changelog.markdown)\n- [Commits](https://github.com/projectlombok/lombok/compare/v1.18.44...v1.18.46)\n\nUpdates `org.springframework.modulith:spring-modulith-bom` from 2.0.3 to 2.0.5\n- [Release notes](https://github.com/spring-projects/spring-modulith/releases)\n- [Commits](https://github.com/spring-projects/spring-modulith/compare/2.0.3...2.0.5)\n\n---\nupdated-dependencies:\n- dependency-name: org.springframework.boot:spring-boot-starter-parent\n  dependency-version: 4.0.6\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: prod-deps\n- dependency-name: org.springdoc:springdoc-openapi-starter-webmvc-ui\n  dependency-version: 3.0.3\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: prod-deps\n- dependency-name: org.projectlombok:lombok\n  dependency-version: 1.18.46\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: prod-deps\n- dependency-name: org.springframework.modulith:spring-modulith-bom\n  dependency-version: 2.0.5\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: prod-deps\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "c4ba255a020e191c12569e0f2922b0ab08092045",
+      "date": "2026-04-22T16:51:33+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.apache.maven.plugins:maven-compiler-plugin (#71)\n\nBumps the dev-deps group with 1 update: [org.apache.maven.plugins:maven-compiler-plugin](https://github.com/apache/maven-compiler-plugin).\n\n\nUpdates `org.apache.maven.plugins:maven-compiler-plugin` from 3.14.1 to 3.15.0\n- [Release notes](https://github.com/apache/maven-compiler-plugin/releases)\n- [Commits](https://github.com/apache/maven-compiler-plugin/compare/maven-compiler-plugin-3.14.1...maven-compiler-plugin-3.15.0)\n\n---\nupdated-dependencies:\n- dependency-name: org.apache.maven.plugins:maven-compiler-plugin\n  dependency-version: 3.15.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: dev-deps\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Abhinav Sonkar <xsabhinav@gmail.com>"
+    },
+    {
+      "sha": "ce7e451406a1f9a5430a8f34c3dcdfcf98f4ee59",
+      "date": "2026-04-22T16:50:29+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump the prod-deps group across 1 directory with 4 updates (#72)\n\nBumps the prod-deps group with 3 updates in the / directory: [org.springframework.boot:spring-boot-starter-parent](https://github.com/spring-projects/spring-boot), [org.springdoc:springdoc-openapi-starter-webmvc-ui](https://github.com/springdoc/springdoc-openapi) and [org.springframework.modulith:spring-modulith-bom](https://github.com/spring-projects/spring-modulith).\n\n\nUpdates `org.springframework.boot:spring-boot-starter-parent` from 4.0.1 to 4.0.4\n- [Release notes](https://github.com/spring-projects/spring-boot/releases)\n- [Commits](https://github.com/spring-projects/spring-boot/compare/v4.0.1...v4.0.4)\n\nUpdates `org.springdoc:springdoc-openapi-starter-webmvc-ui` from 3.0.0 to 3.0.2\n- [Release notes](https://github.com/springdoc/springdoc-openapi/releases)\n- [Changelog](https://github.com/springdoc/springdoc-openapi/blob/v3.0.2/CHANGELOG.md)\n- [Commits](https://github.com/springdoc/springdoc-openapi/compare/v3.0.0...v3.0.2)\n\nUpdates `org.projectlombok:lombok` from 1.18.42 to 1.18.44\n- [Changelog](https://github.com/projectlombok/lombok/blob/master/doc/changelog.markdown)\n- [Commits](https://github.com/projectlombok/lombok/compare/v1.18.42...v1.18.44)\n\nUpdates `org.springframework.modulith:spring-modulith-bom` from 2.0.1 to 2.0.3\n- [Release notes](https://github.com/spring-projects/spring-modulith/releases)\n- [Commits](https://github.com/spring-projects/spring-modulith/compare/2.0.1...2.0.3)\n\n---\nupdated-dependencies:\n- dependency-name: org.springframework.boot:spring-boot-starter-parent\n  dependency-version: 4.0.4\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: prod-deps\n- dependency-name: org.springdoc:springdoc-openapi-starter-webmvc-ui\n  dependency-version: 3.0.2\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: prod-deps\n- dependency-name: org.projectlombok:lombok\n  dependency-version: 1.18.44\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: prod-deps\n- dependency-name: org.springframework.modulith:spring-modulith-bom\n  dependency-version: 2.0.3\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: prod-deps\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "7d92a2f9abd795bf2ff6669ad0057d320cb3db50",
+      "date": "2025-12-30T22:24:25Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump the prod-deps group with 3 updates (#67)\n\n"
+    },
+    {
+      "sha": "e0fe16e9272765dd99b5f9c582a16de761ff0c2f",
+      "date": "2025-11-29T01:06:35Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump the prod-deps group across 1 directory with 6 updates (#64)\n\n"
+    },
+    {
+      "sha": "709e8822ecc9442a1cf41eeb2207a7a6d2cc371a",
+      "date": "2025-11-29T02:01:33+01:00",
+      "author": "xsreality",
+      "email": "xsabhinav@gmail.com",
+      "message": "Update Buildpack JVM version to 25 in pom.xml\n"
+    },
+    {
+      "sha": "9236ff7c97e10ee744f19cf251f02a685b0342c6",
+      "date": "2025-06-05T19:36:15Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump com.tngtech.archunit:archunit-junit5 in the dev-deps group (#51)\n\n"
+    },
+    {
+      "sha": "d661390845934089c5dcc2d8d47beefe3dd5226f",
+      "date": "2025-06-05T19:35:49Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump the prod-deps group across 1 directory with 3 updates (#59)\n\n"
+    },
+    {
+      "sha": "5965115e33dc41ee39c56897c89bbb91e6e474b2",
+      "date": "2025-05-13T14:53:56Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump the prod-deps group across 1 directory with 6 updates (#57)\n\n"
+    },
+    {
+      "sha": "9e469fb2371c21fe076fd5b9a44045950522176b",
+      "date": "2025-01-29T22:49:22Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump the prod-deps group with 3 updates (#50)\n\n"
+    },
+    {
+      "sha": "a219f0e83d14e79e8c9de7bbe28fe6be235922d3",
+      "date": "2025-01-29T23:45:46+01:00",
+      "author": "Abhinav Sonkar",
+      "email": "xsabhinav@gmail.com",
+      "message": "group dependabot PRs"
+    },
+    {
+      "sha": "9a685ffd382e02907eaff201cd5549908a473b54",
+      "date": "2025-01-06T23:40:45+01:00",
+      "author": "Abhinav Sonkar",
+      "email": "xsabhinav@gmail.com",
+      "message": "Update dependencies and configurations for JDK 23 and Spring Boot 3.4 (#45)\n\nUpdated the project to use JDK 23 and Spring Boot 3.4 by modifying `README.md`, `pom.xml`, and configuration files. Additionally, switched the Keycloak image in `docker-compose.yml` to use the latest version for improved compatibility. These changes ensure the project remains up-to-date with the latest tools and dependencies."
+    },
+    {
+      "sha": "4b1ce74cb03977aa1d748543ee21bbf54262691d",
+      "date": "2025-01-06T23:18:17+01:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.springdoc:springdoc-openapi-starter-webmvc-ui (#44)\n\nBumps [org.springdoc:springdoc-openapi-starter-webmvc-ui](https://github.com/springdoc/springdoc-openapi) from 2.6.0 to 2.8.1.\n- [Release notes](https://github.com/springdoc/springdoc-openapi/releases)\n- [Changelog](https://github.com/springdoc/springdoc-openapi/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/springdoc/springdoc-openapi/compare/v2.6.0...v2.8.1)\n\n---\nupdated-dependencies:\n- dependency-name: org.springdoc:springdoc-openapi-starter-webmvc-ui\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Abhinav Sonkar <xsabhinav@gmail.com>"
+    },
+    {
+      "sha": "4b512c2680db31ca7347e7cb504f93192ef0265f",
+      "date": "2025-01-06T22:15:41Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.springframework.modulith:spring-modulith-bom (#43)\n\n"
+    },
+    {
+      "sha": "a8d4c62c0c8d68225f1888453188859909df40d1",
+      "date": "2025-01-06T22:14:02Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.jmolecules:jmolecules-bom from 2023.1.7 to 2023.2.1 (#39)\n\n"
+    },
+    {
+      "sha": "c854e21ab4838a7507395e4193feb47e6d32a840",
+      "date": "2025-01-06T22:13:46Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.springframework.boot:spring-boot-starter-parent (#42)\n\n"
+    },
+    {
+      "sha": "753da38eb2a2be921ccbf8ea23fb32d9f4bbd27e",
+      "date": "2024-11-05T19:31:39+05:30",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.springframework.modulith:spring-modulith-bom (#35)\n\nBumps [org.springframework.modulith:spring-modulith-bom](https://github.com/spring-projects/spring-modulith) from 1.2.4 to 1.2.5.\n- [Release notes](https://github.com/spring-projects/spring-modulith/releases)\n- [Commits](https://github.com/spring-projects/spring-modulith/compare/1.2.4...1.2.5)\n\n---\nupdated-dependencies:\n- dependency-name: org.springframework.modulith:spring-modulith-bom\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "3772847c16d492e6565ed9610f3931eb1dd84edd",
+      "date": "2024-11-05T19:30:57+05:30",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.jmolecules:jmolecules-bom from 2023.1.6 to 2023.1.7 (#34)\n\nBumps [org.jmolecules:jmolecules-bom](https://github.com/xmolecules/jmolecules-bom) from 2023.1.6 to 2023.1.7.\n- [Release notes](https://github.com/xmolecules/jmolecules-bom/releases)\n- [Commits](https://github.com/xmolecules/jmolecules-bom/compare/2023.1.6...2023.1.7)\n\n---\nupdated-dependencies:\n- dependency-name: org.jmolecules:jmolecules-bom\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "01f775cbbbdb78d2d1d410f335e1762d5ec97dc7",
+      "date": "2024-11-05T19:30:46+05:30",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.springframework.boot:spring-boot-starter-parent (#33)\n\nBumps [org.springframework.boot:spring-boot-starter-parent](https://github.com/spring-projects/spring-boot) from 3.3.4 to 3.3.5.\n- [Release notes](https://github.com/spring-projects/spring-boot/releases)\n- [Commits](https://github.com/spring-projects/spring-boot/compare/v3.3.4...v3.3.5)\n\n---\nupdated-dependencies:\n- dependency-name: org.springframework.boot:spring-boot-starter-parent\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "0c7e4138be9cb2c562ea9285ecabc7585e3096dd",
+      "date": "2024-10-07T20:27:45Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.jmolecules:jmolecules-bom from 2023.1.4 to 2023.1.6 (#32)\n\n"
+    },
+    {
+      "sha": "b59721edf66da2aa73178ba76494cde3c5410fde",
+      "date": "2024-09-23T21:06:43Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.springframework.modulith:spring-modulith-bom (#31)\n\n"
+    },
+    {
+      "sha": "7e30a2e45d58e8145d76a533fd60e8d76356e8c5",
+      "date": "2024-09-20T20:19:29Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.springframework.boot:spring-boot-starter-parent (#30)\n\n"
+    },
+    {
+      "sha": "f1f27c99ba730b41f6732b34250807c489683145",
+      "date": "2024-09-20T22:18:22+02:00",
+      "author": "Abhinav Sonkar",
+      "email": "xsabhinav@gmail.com",
+      "message": "Set dependabot frequency to daily"
+    },
+    {
+      "sha": "d81b3b9debe55bfac391f20e958f8450b80c6437",
+      "date": "2024-08-24T01:07:27+02:00",
+      "author": "xsreality",
+      "email": "xsabhinav@gmail.com",
+      "message": "Remove BookMapper and update mapping logic\n\nDeleted BookMapper interface and removed MapStruct dependencies from the project. Updated CatalogManagement class to use the static from method in BookDto for converting CatalogBook instances to DTOs.\n"
+    },
+    {
+      "sha": "d8ea5f0e54b69e67fe0e3439ee27e82fbbd64bff",
+      "date": "2024-08-24T00:47:12+02:00",
+      "author": "xsreality",
+      "email": "xsabhinav@gmail.com",
+      "message": "Simplify checkout workflow\n\nReplaced CheckoutDto with HoldInformation to streamline data handling during the checkout process. Updated related methods, tests, and controller to reflect the new structure and included hold status in the response.\n"
+    },
+    {
+      "sha": "89e6eb77f18557d428e267b0575a944a60cdf657",
+      "date": "2024-08-24T00:33:44+02:00",
+      "author": "xsreality",
+      "email": "xsabhinav@gmail.com",
+      "message": "Upgraded Spring Boot to 3.3.3, MapStruct to 1.6.0, and Spring Modulith BOM to 1.2.3.\n"
+    },
+    {
+      "sha": "2e964cfd9f73249239df1fbe5fc2a3da4d328e0a",
+      "date": "2024-07-29T18:04:18+02:00",
+      "author": "Abhinav Sonkar",
+      "email": "xsabhinav@gmail.com",
+      "message": "Simplify hexagonal implementation for borrow BC (#27)\n\n* Simplify hexagonal implementation for borrow BC\n\n* Remove HoldEventPublisher and Refactor Event Handling\n\nRemoved the HoldEventPublisher class and refactored event handling to use domain events directly within entity methods. Updated CirculationDesk and Hold classes accordingly to maintain event-driven logic. Adjusted tests and other dependent classes to match the new event handling approach."
+    },
+    {
+      "sha": "c254398ed80060a4411464a874e770f53eff3dd3",
+      "date": "2024-07-23T00:00:27+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.jmolecules:jmolecules-bom from 2023.1.3 to 2023.1.4 (#24)\n\nBumps [org.jmolecules:jmolecules-bom](https://github.com/xmolecules/jmolecules-bom) from 2023.1.3 to 2023.1.4.\n- [Release notes](https://github.com/xmolecules/jmolecules-bom/releases)\n- [Commits](https://github.com/xmolecules/jmolecules-bom/commits)\n\n---\nupdated-dependencies:\n- dependency-name: org.jmolecules:jmolecules-bom\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "6285dacf59f72548921f985e741e67770799fe55",
+      "date": "2024-07-22T23:59:06+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.springframework.modulith:spring-modulith-bom (#26)\n\nBumps [org.springframework.modulith:spring-modulith-bom](https://github.com/spring-projects/spring-modulith) from 1.2.1 to 1.2.2.\n- [Release notes](https://github.com/spring-projects/spring-modulith/releases)\n- [Commits](https://github.com/spring-projects/spring-modulith/compare/1.2.1...1.2.2)\n\n---\nupdated-dependencies:\n- dependency-name: org.springframework.modulith:spring-modulith-bom\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "9f60f20f632066917ec639adc521f3ed5414a878",
+      "date": "2024-07-22T23:58:31+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.springframework.boot:spring-boot-starter-parent (#25)\n\nBumps [org.springframework.boot:spring-boot-starter-parent](https://github.com/spring-projects/spring-boot) from 3.3.1 to 3.3.2.\n- [Release notes](https://github.com/spring-projects/spring-boot/releases)\n- [Commits](https://github.com/spring-projects/spring-boot/compare/v3.3.1...v3.3.2)\n\n---\nupdated-dependencies:\n- dependency-name: org.springframework.boot:spring-boot-starter-parent\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    }
+  ],
+  "commit_sha": "bbbabe06d3af9ddd78c5699ca7b4dab36792ee8c",
+  "extracted_at": "2026-10-05T18:11:41.721245+00:00"
+}

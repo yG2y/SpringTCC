@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "25c304519c37115108e45d3d6f4ee7a5bf5b815f",
+      "date": "2026-10-02T06:34:33+02:00",
+      "author": "Filip Cygan",
+      "email": "filipcygan@outlook.com",
+      "message": "Apply @Valid to list type arguments instead of containers (#465) (#478)\n\nHibernate Validator 9.1 (Spring Boot 4.1) deprecates @Valid on a\ncontainer and logs HV000271 for each such property at startup. Moving\nthe annotation to the type argument keeps the same element cascading."
+    },
+    {
+      "sha": "2d9e5a24a7422cc4aec42e1ece887e9f91dede1c",
+      "date": "2026-09-11T21:43:13+02:00",
+      "author": "Marc Giffing",
+      "email": "MarcGiffing@users.noreply.github.com",
+      "message": "add missing names (pom.xml)\n"
+    },
+    {
+      "sha": "23652fa15ea8bada69579aa8d02256a8fd194ba1",
+      "date": "2026-09-11T21:10:56+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.codehaus.mojo:flatten-maven-plugin from 1.7.3 to 1.8.0 (#475)\n\nBumps [org.codehaus.mojo:flatten-maven-plugin](https://github.com/mojohaus/flatten-maven-plugin) from 1.7.3 to 1.8.0.\n- [Release notes](https://github.com/mojohaus/flatten-maven-plugin/releases)\n- [Commits](https://github.com/mojohaus/flatten-maven-plugin/compare/1.7.3...1.8.0)\n\n---\nupdated-dependencies:\n- dependency-name: org.codehaus.mojo:flatten-maven-plugin\n  dependency-version: 1.8.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "bdc853adb5bba48f538e915ff6ce2bb30d72c1a3",
+      "date": "2026-09-11T21:10:47+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump io.micrometer:micrometer-registry-prometheus from 1.16.5 to 1.17.1 (#474)\n\nBumps [io.micrometer:micrometer-registry-prometheus](https://github.com/micrometer-metrics/micrometer-commercial) from 1.16.5 to 1.17.1.\n- [Commits](https://github.com/micrometer-metrics/micrometer-commercial/commits)\n\n---\nupdated-dependencies:\n- dependency-name: io.micrometer:micrometer-registry-prometheus\n  dependency-version: 1.17.1\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "71652414a5aade168953081936483e053fc1d574",
+      "date": "2026-09-11T21:10:30+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump io.lettuce:lettuce-core from 7.5.1.RELEASE to 7.7.0.RELEASE (#473)\n\nBumps [io.lettuce:lettuce-core](https://github.com/redis/lettuce) from 7.5.1.RELEASE to 7.7.0.RELEASE.\n- [Release notes](https://github.com/redis/lettuce/releases)\n- [Changelog](https://github.com/redis/lettuce/blob/main/RELEASE-NOTES.md)\n- [Commits](https://github.com/redis/lettuce/compare/7.5.1.RELEASE...7.7.0.RELEASE)\n\n---\nupdated-dependencies:\n- dependency-name: io.lettuce:lettuce-core\n  dependency-version: 7.7.0.RELEASE\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "35919eeecb72431e5991188291695657698689ad",
+      "date": "2026-09-11T21:03:56+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.redisson:redisson from 4.3.1 to 4.7.0 (#472)\n\nBumps [org.redisson:redisson](https://github.com/redisson/redisson) from 4.3.1 to 4.7.0.\n- [Release notes](https://github.com/redisson/redisson/releases)\n- [Changelog](https://github.com/redisson/redisson/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/redisson/redisson/compare/redisson-4.3.1...redisson-4.7.0)\n\n---\nupdated-dependencies:\n- dependency-name: org.redisson:redisson\n  dependency-version: 4.7.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "be15efdc58acce5b41216359f51ef6f8a93ae610",
+      "date": "2026-09-11T21:03:27+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.apache.maven.plugins:maven-surefire-plugin from 3.5.5 to 3.6.0 (#468)\n\nBumps [org.apache.maven.plugins:maven-surefire-plugin](https://github.com/apache/maven-surefire) from 3.5.5 to 3.6.0.\n- [Release notes](https://github.com/apache/maven-surefire/releases)\n- [Commits](https://github.com/apache/maven-surefire/compare/surefire-3.5.5...surefire-3.6.0)\n\n---\nupdated-dependencies:\n- dependency-name: org.apache.maven.plugins:maven-surefire-plugin\n  dependency-version: 3.6.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "c34ae51c012028565b2a0f3e30c73f80a0b163eb",
+      "date": "2026-09-11T21:03:14+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump redis.clients:jedis from 7.4.1 to 8.0.1 (#469)\n\nBumps [redis.clients:jedis](https://github.com/redis/jedis) from 7.4.1 to 8.0.1.\n- [Release notes](https://github.com/redis/jedis/releases)\n- [Commits](https://github.com/redis/jedis/compare/v7.4.1...v8.0.1)\n\n---\nupdated-dependencies:\n- dependency-name: redis.clients:jedis\n  dependency-version: 8.0.1\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "c03abbcfd7940098379c2eca9b4a7d97828aa6eb",
+      "date": "2026-09-11T21:02:58+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.springframework.cloud:spring-cloud-contract-wiremock (#470)\n\nBumps [org.springframework.cloud:spring-cloud-contract-wiremock](https://github.com/spring-cloud/spring-cloud-contract) from 5.0.2 to 5.0.3.\n- [Release notes](https://github.com/spring-cloud/spring-cloud-contract/releases)\n- [Commits](https://github.com/spring-cloud/spring-cloud-contract/compare/v5.0.2...v5.0.3)\n\n---\nupdated-dependencies:\n- dependency-name: org.springframework.cloud:spring-cloud-contract-wiremock\n  dependency-version: 5.0.3\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "88e4f2747f4924acc8c148786666495e89e411f7",
+      "date": "2026-09-11T21:02:43+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.springframework.boot:spring-boot-starter-parent (#471)\n\nBumps [org.springframework.boot:spring-boot-starter-parent](https://github.com/spring-projects/spring-boot) from 4.0.5 to 4.1.1.\n- [Release notes](https://github.com/spring-projects/spring-boot/releases)\n- [Commits](https://github.com/spring-projects/spring-boot/compare/v4.0.5...v4.1.1)\n\n---\nupdated-dependencies:\n- dependency-name: org.springframework.boot:spring-boot-starter-parent\n  dependency-version: 4.1.1\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "0ebddaec098a9b4a0efb7cb4dff660e11e0fcc29",
+      "date": "2026-09-11T20:53:32+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.redisson:redisson from 4.3.0 to 4.3.1 (#459)\n\nBumps [org.redisson:redisson](https://github.com/redisson/redisson) from 4.3.0 to 4.3.1.\n- [Release notes](https://github.com/redisson/redisson/releases)\n- [Changelog](https://github.com/redisson/redisson/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/redisson/redisson/compare/redisson-4.3.0...redisson-4.3.1)\n\n---\nupdated-dependencies:\n- dependency-name: org.redisson:redisson\n  dependency-version: 4.3.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "3d91a0aa57c42b2efac4ca91f2247a93119b7155",
+      "date": "2026-09-11T20:53:22+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.springframework.boot:spring-boot-starter-parent (#458)\n\nBumps [org.springframework.boot:spring-boot-starter-parent](https://github.com/spring-projects/spring-boot) from 4.0.3 to 4.0.5.\n- [Release notes](https://github.com/spring-projects/spring-boot/releases)\n- [Commits](https://github.com/spring-projects/spring-boot/compare/v4.0.3...v4.0.5)\n\n---\nupdated-dependencies:\n- dependency-name: org.springframework.boot:spring-boot-starter-parent\n  dependency-version: 4.0.5\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "832273d473653589d97b5a9a10f95c61f384f895",
+      "date": "2026-09-11T20:53:05+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump io.micrometer:micrometer-registry-prometheus from 1.16.4 to 1.16.5 (#462)\n\nBumps [io.micrometer:micrometer-registry-prometheus](https://github.com/micrometer-metrics/micrometer) from 1.16.4 to 1.16.5.\n- [Release notes](https://github.com/micrometer-metrics/micrometer/releases)\n- [Commits](https://github.com/micrometer-metrics/micrometer/compare/v1.16.4...v1.16.5)\n\n---\nupdated-dependencies:\n- dependency-name: io.micrometer:micrometer-registry-prometheus\n  dependency-version: 1.16.5\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "7a555a1c57cf18d01917d4486016dff1bc38195b",
+      "date": "2026-09-11T20:52:55+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump io.lettuce:lettuce-core from 7.5.0.RELEASE to 7.5.1.RELEASE (#460)\n\nBumps [io.lettuce:lettuce-core](https://github.com/redis/lettuce) from 7.5.0.RELEASE to 7.5.1.RELEASE.\n- [Release notes](https://github.com/redis/lettuce/releases)\n- [Changelog](https://github.com/redis/lettuce/blob/7.5.1.RELEASE/RELEASE-NOTES.md)\n- [Commits](https://github.com/redis/lettuce/compare/7.5.0.RELEASE...7.5.1.RELEASE)\n\n---\nupdated-dependencies:\n- dependency-name: io.lettuce:lettuce-core\n  dependency-version: 7.5.1.RELEASE\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "48e62b72bc5c6fe60b174624979fa2475c9a7e2b",
+      "date": "2026-09-11T20:52:44+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump redis.clients:jedis from 7.4.0 to 7.4.1 (#461)\n\nBumps [redis.clients:jedis](https://github.com/redis/jedis) from 7.4.0 to 7.4.1.\n- [Release notes](https://github.com/redis/jedis/releases)\n- [Commits](https://github.com/redis/jedis/compare/v7.4.0...v7.4.1)\n\n---\nupdated-dependencies:\n- dependency-name: redis.clients:jedis\n  dependency-version: 7.4.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "368f6d6de70f672b815a656615908869ab55551a",
+      "date": "2026-03-16T21:31:04+01:00",
+      "author": "MarcGiffing",
+      "email": "MarcGiffing@users.noreply.github.com",
+      "message": "#245 Support Cache PostgreSQL (#453)\n\n* #245 Support Cache PostgreSQL\n\n* #245 Support Cache PostgreSQL\n\n* #245 Support Cache PostgreSQL\n\n* #245 Support Cache PostgreSQL"
+    },
+    {
+      "sha": "8518775ced8c48098f965f3820ec9f7b53c6e382",
+      "date": "2026-03-16T21:09:05+01:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.glassfish.expressly:expressly from 5.0.0 to 6.0.0 (#455)\n\nBumps [org.glassfish.expressly:expressly](https://github.com/eclipse-ee4j/expressly) from 5.0.0 to 6.0.0.\n- [Release notes](https://github.com/eclipse-ee4j/expressly/releases)\n- [Commits](https://github.com/eclipse-ee4j/expressly/compare/5.0.0-RELEASE...6.0.0-RELEASE)\n\n---\nupdated-dependencies:\n- dependency-name: org.glassfish.expressly:expressly\n  dependency-version: 6.0.0\n  dependency-type: direct:development\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "2b683b268dc0716467f5f142ece98f78699f7eb6",
+      "date": "2026-03-16T21:08:51+01:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump redis.clients:jedis from 7.3.0 to 7.4.0 (#454)\n\nBumps [redis.clients:jedis](https://github.com/redis/jedis) from 7.3.0 to 7.4.0.\n- [Release notes](https://github.com/redis/jedis/releases)\n- [Commits](https://github.com/redis/jedis/compare/v7.3.0...v7.4.0)\n\n---\nupdated-dependencies:\n- dependency-name: redis.clients:jedis\n  dependency-version: 7.4.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "ff7e4f4075621daa322e9262798ab815c9bc2f35",
+      "date": "2026-03-16T21:08:34+01:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump io.lettuce:lettuce-core from 7.4.0.RELEASE to 7.5.0.RELEASE (#449)\n\nBumps [io.lettuce:lettuce-core](https://github.com/redis/lettuce) from 7.4.0.RELEASE to 7.5.0.RELEASE.\n- [Release notes](https://github.com/redis/lettuce/releases)\n- [Changelog](https://github.com/redis/lettuce/blob/main/RELEASE-NOTES.md)\n- [Commits](https://github.com/redis/lettuce/compare/7.4.0.RELEASE...7.5.0.RELEASE)\n\n---\nupdated-dependencies:\n- dependency-name: io.lettuce:lettuce-core\n  dependency-version: 7.5.0.RELEASE\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "0d4c9af57b8ed61ef71b13855688d38bd172b952",
+      "date": "2026-03-16T21:08:07+01:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump io.micrometer:micrometer-registry-prometheus from 1.16.3 to 1.16.4 (#452)\n\nBumps [io.micrometer:micrometer-registry-prometheus](https://github.com/micrometer-metrics/micrometer) from 1.16.3 to 1.16.4.\n- [Release notes](https://github.com/micrometer-metrics/micrometer/releases)\n- [Commits](https://github.com/micrometer-metrics/micrometer/compare/v1.16.3...v1.16.4)\n\n---\nupdated-dependencies:\n- dependency-name: io.micrometer:micrometer-registry-prometheus\n  dependency-version: 1.16.4\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "393ebf103c5b849aec7dc6bb2dce1a35251c3bba",
+      "date": "2026-03-16T21:07:53+01:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.redisson:redisson from 4.2.0 to 4.3.0 (#450)\n\nBumps [org.redisson:redisson](https://github.com/redisson/redisson) from 4.2.0 to 4.3.0.\n- [Release notes](https://github.com/redisson/redisson/releases)\n- [Changelog](https://github.com/redisson/redisson/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/redisson/redisson/compare/redisson-4.2.0...redisson-4.3.0)\n\n---\nupdated-dependencies:\n- dependency-name: org.redisson:redisson\n  dependency-version: 4.3.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "ce5f1f1c4e1b5f68e6b701edbc1a17e8e8723e26",
+      "date": "2026-03-12T19:31:53+01:00",
+      "author": "MarcGiffing",
+      "email": "MarcGiffing@users.noreply.github.com",
+      "message": "Delete .github/workflows/sonarqube.yml"
+    },
+    {
+      "sha": "52cb5c70a7bef1b2cc76d15fa445fd00f22638c6",
+      "date": "2026-03-11T17:33:01+01:00",
+      "author": "MarcGiffing",
+      "email": "MarcGiffing@users.noreply.github.com",
+      "message": "Add SonarQube analysis workflow\n\nThis workflow triggers a SonarQube analysis for code quality and security vulnerabilities."
+    },
+    {
+      "sha": "9512656bc67629d77fb76d9bf0b39df3afed67a0",
+      "date": "2026-03-11T17:26:23+01:00",
+      "author": "MarcGiffing",
+      "email": "MarcGiffing@users.noreply.github.com",
+      "message": "Delete .github/workflows/codeql.yml"
+    },
+    {
+      "sha": "5cdcfbc5546f27233bf72f1b1aae6866a4043fb0",
+      "date": "2026-03-11T17:26:12+01:00",
+      "author": "MarcGiffing",
+      "email": "MarcGiffing@users.noreply.github.com",
+      "message": "Delete .github/workflows/pmd.yml"
+    },
+    {
+      "sha": "2fa892b32f06ee99562545969438494f464a45b9",
+      "date": "2026-03-11T17:22:45+01:00",
+      "author": "MarcGiffing",
+      "email": "MarcGiffing@users.noreply.github.com",
+      "message": "feature/#448-Restructure-Code (#451)\n\n* #488 restrucute code - init\n\n* #488 restructure code - fix code smells\n\n* #488 restructure code - reorganize modules\n\n* #488 restructure code - remove allow-bean-definition-overriding\n\n* #488 restructure code - simplify maven module artifactIds\n\n* #488 restructure code - sonar warnings / deprecations\n\n* #488 restructure code - sonar warnings / deprecations\n\n* #488 restructure code - sonar warnings / deprecations\n\n* #488 restructure code - update README\n\n* #488 restructure code - rename/organize modules\n\n* #488 restructure code - rename/organize dependencies\n\n* #488 restructure code - rename/organize dependencies\n\n* #488 restructure code - update README.adoc\n\n* Upgrade CodeQL actions to version 3\n\n* Upgrade PMD GitHub Action to version 3\n\n* Downgrade PMD GitHub Action to version 2"
+    },
+    {
+      "sha": "142e527d31aa5e6f09dbf633d81ea22689992a67",
+      "date": "2026-02-28T21:18:38+01:00",
+      "author": "Marc Giffing",
+      "email": "MarcGiffing@users.noreply.github.com",
+      "message": "prepare release 0.14.0\n"
+    },
+    {
+      "sha": "df0f3ec15240a896844d6b2cd39ea607ad0303d5",
+      "date": "2026-03-01T00:17:31+04:00",
+      "author": "Manish Demblani",
+      "email": "mdemblani@gmail.com",
+      "message": "feat: enhance RateLimitException to return extra information (#426)\n\n* enhance RateLimitException to return extra information\n\n* feat: enhance RateLimitException to return extra information\n#426\n\n---------\n\nCo-authored-by: Marc Giffing <MarcGiffing@users.noreply.github.com>"
+    },
+    {
+      "sha": "ddd5717a6d9ce3ef7c8503fe60f7e2266d0d05e3",
+      "date": "2026-02-28T20:54:20+01:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump redis.clients:jedis from 6.0.0 to 7.3.0 (#445)\n\nBumps [redis.clients:jedis](https://github.com/redis/jedis) from 6.0.0 to 7.3.0.\n- [Release notes](https://github.com/redis/jedis/releases)\n- [Commits](https://github.com/redis/jedis/compare/v6.0.0...v7.3.0)\n\n---\nupdated-dependencies:\n- dependency-name: redis.clients:jedis\n  dependency-version: 7.3.0\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "ec1bd8c46d1ff8c31f918f88fda5dbbb823a5b73",
+      "date": "2026-02-28T20:54:03+01:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.springframework.cloud:spring-cloud-contract-wiremock (#446)\n\nBumps [org.springframework.cloud:spring-cloud-contract-wiremock](https://github.com/spring-cloud/spring-cloud-contract) from 5.0.0 to 5.0.2.\n- [Release notes](https://github.com/spring-cloud/spring-cloud-contract/releases)\n- [Commits](https://github.com/spring-cloud/spring-cloud-contract/compare/v5.0.0...v5.0.2)\n\n---\nupdated-dependencies:\n- dependency-name: org.springframework.cloud:spring-cloud-contract-wiremock\n  dependency-version: 5.0.2\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    }
+  ],
+  "commit_sha": "25c304519c37115108e45d3d6f4ee7a5bf5b815f",
+  "extracted_at": "2026-10-05T18:19:25.560685+00:00"
+}

@@ -1,0 +1,124 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "3.2.1",
+  "spring_boot_major": "3",
+  "java_versions_declared": "${java.version};17",
+  "build_evidence": [
+    {
+      "file": "blink-service/blink-server/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "blink-service/blink-server/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "blink-service/blink-server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "blog-service/blog-content-server/pom.xml",
+      "artifact": "spring-boot-starter-data-elasticsearch"
+    },
+    {
+      "file": "blog-service/blog-content-server/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "blog-service/blog-content-server/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "blog-service/blog-content-server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "blog-service/blog-server/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "blog-service/blog-server/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "blog-service/blog-server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "comment-service/comment-server/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "comment-service/comment-server/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "comment-service/comment-server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "common/common-amqp/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "common/common-redis/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "common/common-web/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "gateway-service/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "gateway-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "resource-service/resource-server/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "resource-service/resource-server/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "resource-service/resource-server/pom.xml",
+      "artifact": "spring-boot-starter-mail"
+    },
+    {
+      "file": "resource-service/resource-server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "user-service/user-server/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "user-service/user-server/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "user-service/user-server/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "user-service/user-server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

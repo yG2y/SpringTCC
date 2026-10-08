@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "bb76adc589f2092338e5a9f7f927e749c6275642",
+      "date": "2026-02-06T11:39:49+08:00",
+      "author": "如梦技术",
+      "email": "596392912@qq.com",
+      "message": "feat(ddddocr): 新增ddddocr验证码识别示例模块\n\n- 添加DdddOcrController，提供验证码图片识别接口\n- 新增 mica-ddddocr 依赖，集成ocr引擎功能\n- 更新pom.xml，mica版本升级至4.0.2-SNAPSHOT\n- 修改application.yml，新增server端口配置及管理端口8081\n- 禁用Redis Stream功能，修改stream.enable为false\n- 重构RedisController，改用@Autowired注入，增加RStreamTemplate可选依赖注入\n"
+    },
+    {
+      "sha": "0507e2368e03e2bdf2b73b3a29b00a86c90a2924",
+      "date": "2025-12-01T11:54:25+08:00",
+      "author": "如梦技术",
+      "email": "596392912@qq.com",
+      "message": "feat(redis): 添加 mica-redis 相关功能演示和示例代码\n"
+    },
+    {
+      "sha": "31f350d24f747fa6ab31aab46e081e39e544b711",
+      "date": "2025-11-28T15:05:38+08:00",
+      "author": "如梦技术",
+      "email": "596392912@qq.com",
+      "message": ":sparkles: 简化、测试 mica 4.0.0\n"
+    },
+    {
+      "sha": "0ea36e8128e800d7001c1aae47f2becd04e9f8ac",
+      "date": "2025-11-28T13:52:43+08:00",
+      "author": "如梦技术",
+      "email": "596392912@qq.com",
+      "message": ":sparkles: 简化、测试 mica 4.0.0\n"
+    },
+    {
+      "sha": "45f955891819d25d08efacd213dadf7f1cab0986",
+      "date": "2025-11-28T13:52:19+08:00",
+      "author": "如梦技术",
+      "email": "596392912@qq.com",
+      "message": ":sparkles: 简化、测试 mica 4.0.0\n"
+    },
+    {
+      "sha": "a97b53bf48fa1da276c8fcd87429c5c9e167c4a4",
+      "date": "2022-08-26T09:12:01+08:00",
+      "author": "如梦技术",
+      "email": "596392912@qq.com",
+      "message": ":sparkles: 代码优化\n"
+    },
+    {
+      "sha": "6a4b2e5495570dc4cf67b4b8883b6814e7755593",
+      "date": "2022-08-25T18:50:19+08:00",
+      "author": "如梦技术",
+      "email": "596392912@qq.com",
+      "message": ":arrow_up: 依赖升级\n"
+    },
+    {
+      "sha": "f87730fb7c64f6090b7dc92a1117de5b38dbc00d",
+      "date": "2022-06-28T16:29:40+08:00",
+      "author": "如梦技术",
+      "email": "596392912@qq.com",
+      "message": ":arrow_up: 依赖升级\n"
+    },
+    {
+      "sha": "c50d992a184401973c49a878e87f236100ef26fa",
+      "date": "2021-10-14T10:05:00+08:00",
+      "author": "如梦技术",
+      "email": "596392912@qq.com",
+      "message": "update\n"
+    },
+    {
+      "sha": "cf25a4afbede57acff74c73ca55d0293987aa784",
+      "date": "2021-10-14T10:00:20+08:00",
+      "author": "如梦技术",
+      "email": "596392912@qq.com",
+      "message": ":arrow_up: Upgrading dependencies.\n"
+    },
+    {
+      "sha": "8328aa9fbf65d8ff9355c49003185d4c3afe18aa",
+      "date": "2021-08-27T15:19:06+08:00",
+      "author": "如梦技术",
+      "email": "596392912@qq.com",
+      "message": ":arrow_up: Upgrading dependencies.\n"
+    },
+    {
+      "sha": "db6d0d60cee7d0a889b0fea06dee5ef9e3a84dbb",
+      "date": "2021-08-20T23:49:59+08:00",
+      "author": "如梦技术",
+      "email": "596392912@qq.com",
+      "message": ":arrow_up: Upgrading dependencies.\n"
+    },
+    {
+      "sha": "7dbaf98571c7e015b48c9f670fbb205819189827",
+      "date": "2021-08-19T22:56:12+08:00",
+      "author": "如梦技术",
+      "email": "596392912@qq.com",
+      "message": ":arrow_up: Upgrading dependencies.\n"
+    },
+    {
+      "sha": "3edbd0084ecaf5650ca6824aed9f7b629dc052c6",
+      "date": "2021-07-31T16:59:24+08:00",
+      "author": "如梦技术",
+      "email": "596392912@qq.com",
+      "message": ":arrow_down: Downgrading dependencies.\n"
+    },
+    {
+      "sha": "fd0545552353dfef594750e12e8db864b6d2e5e3",
+      "date": "2021-06-21T21:26:54+08:00",
+      "author": "如梦技术",
+      "email": "596392912@qq.com",
+      "message": ":sparkles: 使用 mica 2.x\n"
+    },
+    {
+      "sha": "24d0fca1306c504db6bd9dfd1ff8d03ea484ed51",
+      "date": "2020-01-10T20:51:13+08:00",
+      "author": "如梦技术",
+      "email": "596392912@qq.com",
+      "message": ":arrow_up: 依赖升级\n"
+    },
+    {
+      "sha": "0cde384c777cf985e1cafe2a42bfb063f4353ac2",
+      "date": "2019-08-06T21:55:44+08:00",
+      "author": "如梦技术",
+      "email": "596392912@qq.com",
+      "message": ":arrow_up: 升级 mica\n"
+    },
+    {
+      "sha": "ebcc51492d7bf7b2b22ee6b0b65a939a2cd376a2",
+      "date": "2019-08-06T21:51:17+08:00",
+      "author": "如梦技术",
+      "email": "596392912@qq.com",
+      "message": ":arrow_up: 升级 mica\n"
+    },
+    {
+      "sha": "03623060629b92cbc07033c8560aa7eeb5579672",
+      "date": "2019-08-06T21:38:43+08:00",
+      "author": "如梦技术",
+      "email": "596392912@qq.com",
+      "message": ":arrow_up: 升级 mica\n"
+    },
+    {
+      "sha": "b9e6fd50ce0502eda0ee0a4ed51619a794cd7d9f",
+      "date": "2019-06-08T10:47:03+08:00",
+      "author": "如梦技术",
+      "email": "596392912@qq.com",
+      "message": ":arrow_up: 升级 mica\n"
+    },
+    {
+      "sha": "2218b7fcd9933e91b5e8ee57e1314bfdf9b97382",
+      "date": "2019-06-05T00:13:14+08:00",
+      "author": "如梦技术",
+      "email": "596392912@qq.com",
+      "message": ":arrow_up: 测试 mica\n"
+    },
+    {
+      "sha": "9f369c54d4fd4fbcce0531a8a47fca022b3b3e83",
+      "date": "2019-05-15T19:54:58+08:00",
+      "author": "如梦技术",
+      "email": "596392912@qq.com",
+      "message": ":arrow_up: mica 版本升级\n"
+    },
+    {
+      "sha": "756b91e9e9cfe48f70ddb1ad76777208e649c923",
+      "date": "2019-05-11T20:57:53+08:00",
+      "author": "如梦技术",
+      "email": "596392912@qq.com",
+      "message": ":arrow_up: mica 版本升级\n"
+    },
+    {
+      "sha": "d26c312a739652244f935b74f632f9ef88ceea35",
+      "date": "2019-04-30T22:34:35+08:00",
+      "author": "如梦技术",
+      "email": "596392912@qq.com",
+      "message": ":egg: 添加文章示例\n"
+    },
+    {
+      "sha": "ab57ccf1d22752f8186094d13a43be0833f3a5dc",
+      "date": "2019-04-29T21:47:38+08:00",
+      "author": "如梦技术",
+      "email": "596392912@qq.com",
+      "message": ":arrow_up: mica 版本升级\n"
+    },
+    {
+      "sha": "f04f26d31d1034d7eb72648de9de57aeff7474df",
+      "date": "2019-04-22T01:12:11+08:00",
+      "author": "如梦技术",
+      "email": "596392912@qq.com",
+      "message": ":white_check_mark: 完善\n"
+    },
+    {
+      "sha": "c90682ad10bb31f0c7ff30f6ece1ac145b957d15",
+      "date": "2019-04-14T17:46:20+08:00",
+      "author": "如梦技术",
+      "email": "596392912@qq.com",
+      "message": ":white_check_mark: 测试 mica\n"
+    },
+    {
+      "sha": "fe5fbc3270cfdc456c786397ed1c44bc6a2222a4",
+      "date": "2019-03-25T21:06:39+08:00",
+      "author": "如梦技术",
+      "email": "596392912@qq.com",
+      "message": ":white_check_mark: 测试 mica\n"
+    },
+    {
+      "sha": "56af8067f2ceca35ea15dfa319bd5c32e33890d6",
+      "date": "2019-03-20T00:01:55+08:00",
+      "author": "如梦技术",
+      "email": "596392912@qq.com",
+      "message": ":white_check_mark: 测试 mica\n"
+    },
+    {
+      "sha": "3616040769fc41d301075cfb1c7130d2dc5fb523",
+      "date": "2019-03-18T20:56:02+08:00",
+      "author": "如梦技术",
+      "email": "596392912@qq.com",
+      "message": ":tada: Initial commit.\n"
+    }
+  ],
+  "commit_sha": "bb76adc589f2092338e5a9f7f927e749c6275642",
+  "extracted_at": "2026-10-05T18:27:27.218696+00:00"
+}

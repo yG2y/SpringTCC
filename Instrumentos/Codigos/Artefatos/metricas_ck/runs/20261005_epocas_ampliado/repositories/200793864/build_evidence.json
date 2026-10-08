@@ -1,0 +1,48 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "2.1.6.RELEASE",
+  "spring_boot_major": "2",
+  "java_versions_declared": "1.8",
+  "build_evidence": [
+    {
+      "file": "api-gateway/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "auth/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "auth/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "auth/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "business/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "business/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "common/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "monitor/springboot-admin/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "web-app/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    }
+  ]
+}

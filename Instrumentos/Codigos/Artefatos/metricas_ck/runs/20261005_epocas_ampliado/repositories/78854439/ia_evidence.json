@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "31588b3574d0b3194edf653825113885e83cb8e7",
+      "date": "2018-08-21T15:24:05-07:00",
+      "author": "Sharmarke Aden",
+      "email": "sharmarke.aden@daimler.com",
+      "message": "Updated next development version to 1.0.7-SNAPSHOT\n"
+    },
+    {
+      "sha": "a754b930f1c5b166e438876a25045367cdc3d97e",
+      "date": "2018-08-21T15:23:40-07:00",
+      "author": "Sharmarke Aden",
+      "email": "sharmarke.aden@daimler.com",
+      "message": "Merge tag '1.0.6' into develop\n\nRelease 1.0.6\n"
+    },
+    {
+      "sha": "9ee4cad14cd5ddb22a727d7067347100426aa12d",
+      "date": "2018-08-21T15:23:34-07:00",
+      "author": "Sharmarke Aden",
+      "email": "sharmarke.aden@daimler.com",
+      "message": "Merge branch 'release/1.0.6'\n"
+    },
+    {
+      "sha": "1a0a6b06a2de5ad4b934ee4440f1372dda5f1d62",
+      "date": "2018-08-21T15:22:53-07:00",
+      "author": "Sharmarke Aden",
+      "email": "sharmarke.aden@daimler.com",
+      "message": "Prepare release 1.0.6\n"
+    },
+    {
+      "sha": "34c95db7b2eef8ae9b45176b279cef5a56b2060a",
+      "date": "2018-08-21T15:03:29-07:00",
+      "author": "Sharmarke Aden",
+      "email": "sharmarke.aden@daimler.com",
+      "message": "Reverted changes made in release 1.0.3 which prevented SpringBoot applications from being testable"
+    },
+    {
+      "sha": "9d8cf1004cff0aed6f774060a903811339cbb5ff",
+      "date": "2018-08-20T20:56:33-07:00",
+      "author": "Sharmarke Aden",
+      "email": "sharmarke.aden@gmail.com",
+      "message": "Updated next development version to 1.0.6-SNAPSHOT\n"
+    },
+    {
+      "sha": "ebe224916f1e776670c02f87078ff5d3dba0ee84",
+      "date": "2018-08-20T20:56:02-07:00",
+      "author": "Sharmarke Aden",
+      "email": "sharmarke.aden@gmail.com",
+      "message": "Merge tag '1.0.5' into develop\n\nRelease 1.0.5\n"
+    },
+    {
+      "sha": "6e256612dc922f7c0ef78a9eba7026d14e3e3e68",
+      "date": "2018-08-20T20:55:46-07:00",
+      "author": "Sharmarke Aden",
+      "email": "sharmarke.aden@gmail.com",
+      "message": "Merge branch 'release/1.0.5'\n"
+    },
+    {
+      "sha": "932efa913f4f71f764b1691c9b684da21aeb2b0e",
+      "date": "2018-08-20T20:54:18-07:00",
+      "author": "Sharmarke Aden",
+      "email": "sharmarke.aden@gmail.com",
+      "message": "Prepare release 1.0.5\n"
+    },
+    {
+      "sha": "d74e7787a06bc616f9d884ead936c27566565c40",
+      "date": "2018-08-20T20:39:36-07:00",
+      "author": "Sharmarke Aden",
+      "email": "sharmarke.aden@gmail.com",
+      "message": "Merge branch 'feature/junit5-support' into develop\n"
+    },
+    {
+      "sha": "ca153ba183501814bebcbb0dea578545a26ca387",
+      "date": "2018-08-20T05:09:01-07:00",
+      "author": "Sharmarke Aden",
+      "email": "sharmarke.aden@gmail.com",
+      "message": "added support for junit5\n\n- made the value of @Name annotation optional, it defaults to \"\" \n- added collaborator provider provided instances to the DefaultServiceInstance\n- refactored the location of parameter resolvers\n- added the ability to resolve @Real and @Name parameters\n- added more test cases\n- fixed @SystemTest annotation (missing SystemTestExtension)"
+    },
+    {
+      "sha": "a0dffd5849f6cceeb77775c7cb0b9157ebc89b6a",
+      "date": "2018-08-18T09:22:02-07:00",
+      "author": "Sharmarke Aden",
+      "email": "sharmarke.aden@gmail.com",
+      "message": "added support for junit5\n\n- added a new module with junit 5 support\n- added new api for executing commands/queries/operations\n- brokedown the collaborator reifier so its logic can be reused"
+    },
+    {
+      "sha": "f0f3fb4b1ebb45f90a35ecbc5dfd8ce0f2c4563a",
+      "date": "2018-05-02T07:56:06-07:00",
+      "author": "Sharmarke Aden",
+      "email": "sharmarke.aden@gmail.com",
+      "message": "Updated next development version to 1.0.5-SNAPSHOT\n"
+    },
+    {
+      "sha": "3623e526afc2da1561e290d8be29403999d63a55",
+      "date": "2018-05-02T07:55:47-07:00",
+      "author": "Sharmarke Aden",
+      "email": "sharmarke.aden@gmail.com",
+      "message": "Merge tag '1.0.4' into develop\n\nRelease 1.0.4\n"
+    },
+    {
+      "sha": "9fce973cff3ffdbe9b6010040668ad9c8bdcee8d",
+      "date": "2018-05-02T07:55:36-07:00",
+      "author": "Sharmarke Aden",
+      "email": "sharmarke.aden@gmail.com",
+      "message": "Merge branch 'release/1.0.4'\n"
+    },
+    {
+      "sha": "7e24f59d26cc3c331cbedb526b88e541b341844d",
+      "date": "2018-05-02T07:54:20-07:00",
+      "author": "Sharmarke Aden",
+      "email": "sharmarke.aden@gmail.com",
+      "message": "Prepare release 1.0.4\n"
+    },
+    {
+      "sha": "4358c84daec90a73ce0d85b799cd794ce95d65af",
+      "date": "2018-05-02T07:47:08-07:00",
+      "author": "Sharmarke Aden",
+      "email": "sharmarke.aden@gmail.com",
+      "message": "improve logging by decoupling logback from testify\n\n- removed reference to testiy-logger dep from modules\n- added custom simple logger impl to use for internal logging\n- added logic to determine whether to use slf4j impl in the classpath or internal logger"
+    },
+    {
+      "sha": "dd8a739e7b7f17997672927db8643a151eed2fff",
+      "date": "2018-02-10T06:03:11-08:00",
+      "author": "Sharmarke Aden",
+      "email": "sharmarke.aden@gmail.com",
+      "message": "Updated next development version to 1.0.4-SNAPSHOT\n"
+    },
+    {
+      "sha": "195cd2617d053dbcb065ba8204a3dc576761711d",
+      "date": "2018-02-10T06:02:40-08:00",
+      "author": "Sharmarke Aden",
+      "email": "sharmarke.aden@gmail.com",
+      "message": "Merge tag '1.0.3' into develop\n\nRelease 1.0.3\n"
+    },
+    {
+      "sha": "2199e9c98dc3af1d5bb5ec4a5fc80f53730d5f55",
+      "date": "2018-02-10T06:02:26-08:00",
+      "author": "Sharmarke Aden",
+      "email": "sharmarke.aden@gmail.com",
+      "message": "Merge branch 'release/1.0.3'\n"
+    },
+    {
+      "sha": "abced23decacb6c8bcc896ad2cc071d98a3cca03",
+      "date": "2018-02-10T06:00:59-08:00",
+      "author": "Sharmarke Aden",
+      "email": "sharmarke.aden@gmail.com",
+      "message": "Prepare release 1.0.3\n"
+    },
+    {
+      "sha": "ae6f4e3a1a7f5559505c7dc1b31b1044084a7500",
+      "date": "2018-02-10T05:48:02-08:00",
+      "author": "Sharmarke Aden",
+      "email": "sharmarke.aden@gmail.com",
+      "message": "Merge origin/develop into develop"
+    },
+    {
+      "sha": "bc989009a76b3de158f329959bbd813642191da1",
+      "date": "2018-02-10T05:47:37-08:00",
+      "author": "Sharmarke Aden",
+      "email": "sharmarke.aden@gmail.com",
+      "message": "minor documentation update"
+    },
+    {
+      "sha": "25a725d8734a51e8db317365b74bd0bbc9a5878a",
+      "date": "2018-01-31T13:58:33-08:00",
+      "author": "saden",
+      "email": "saden@saden-vm-workstation",
+      "message": "fixed issue with springboot discovered while testing a springboot app that does not directly use a servlet container"
+    },
+    {
+      "sha": "fccae931da941f4be36f03952b4c0940dd7f8c91",
+      "date": "2018-01-03T05:29:48-08:00",
+      "author": "Sharmarke Aden",
+      "email": "sharmarke.aden@gmail.com",
+      "message": "Updated next development version to 1.0.3-SNAPSHOT\n"
+    },
+    {
+      "sha": "00fec7c2517371593d20f045a0bee7ed50c2ddce",
+      "date": "2018-01-03T05:29:22-08:00",
+      "author": "Sharmarke Aden",
+      "email": "sharmarke.aden@gmail.com",
+      "message": "Merge tag '1.0.2' into develop\n\nRelease 1.0.2\n"
+    },
+    {
+      "sha": "b43974e3ebb1b078442db64e446149f0b6ca040f",
+      "date": "2018-01-03T05:29:12-08:00",
+      "author": "Sharmarke Aden",
+      "email": "sharmarke.aden@gmail.com",
+      "message": "Merge branch 'release/1.0.2'\n"
+    },
+    {
+      "sha": "99db0991248354011b0f66dcdd3cdb481bf2c9a9",
+      "date": "2018-01-03T05:27:26-08:00",
+      "author": "Sharmarke Aden",
+      "email": "sharmarke.aden@gmail.com",
+      "message": "Prepare release 1.0.2\n"
+    },
+    {
+      "sha": "e8ee520855dc4d0d4be37e1178652daa85db02c1",
+      "date": "2018-01-03T05:14:56-08:00",
+      "author": "Sharmarke Aden",
+      "email": "sharmarke.aden@gmail.com",
+      "message": "- updated year to comply with license check\n- updated license violation error message"
+    },
+    {
+      "sha": "90e6efa5af4efe7f0b889b967cc24129522046fd",
+      "date": "2018-01-01T07:04:28-08:00",
+      "author": "Sharmarke Aden",
+      "email": "sharmarke.aden@gmail.com",
+      "message": "- cleaned up the readme file and added mailing list information\n- updates travis to send notification emails to the developer mailing list\n"
+    }
+  ],
+  "commit_sha": "31588b3574d0b3194edf653825113885e83cb8e7",
+  "extracted_at": "2026-10-05T18:21:58.562394+00:00"
+}

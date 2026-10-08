@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "f056f0862baf59971884fa990ee158b53e3e346f",
+      "date": "2025-12-18T22:08:38+08:00",
+      "author": "weiping wang",
+      "email": "948517839@qq.com",
+      "message": "Merge pull request #21 from javagossip/dependabot/maven/io.netty-netty-codec-http-4.1.129.Final\n\nBump io.netty:netty-codec-http from 4.1.125.Final to 4.1.129.Final"
+    },
+    {
+      "sha": "6b3e72fb95afd8320aab5056672db02bde5260d5",
+      "date": "2025-12-15T23:31:44Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump io.netty:netty-codec-http from 4.1.125.Final to 4.1.129.Final\n\nBumps [io.netty:netty-codec-http](https://github.com/netty/netty) from 4.1.125.Final to 4.1.129.Final.\n- [Commits](https://github.com/netty/netty/compare/netty-4.1.125.Final...netty-4.1.129.Final)\n\n---\nupdated-dependencies:\n- dependency-name: io.netty:netty-codec-http\n  dependency-version: 4.1.129.Final\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "8e67bb9503340f7eccbad2c4446727a5901845f9",
+      "date": "2025-10-14T18:14:43+08:00",
+      "author": "weiping wang",
+      "email": "948517839@qq.com",
+      "message": "Merge pull request #20 from javagossip/dependabot/maven/io.netty-netty-codec-http-4.1.125.Final\n\nBump io.netty:netty-codec-http from 4.1.115.Final to 4.1.125.Final"
+    },
+    {
+      "sha": "23e0b21e03e11a0f421a0a77e8ff4780187cc28e",
+      "date": "2025-09-04T17:37:14Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump io.netty:netty-codec-http from 4.1.115.Final to 4.1.125.Final\n\nBumps [io.netty:netty-codec-http](https://github.com/netty/netty) from 4.1.115.Final to 4.1.125.Final.\n- [Commits](https://github.com/netty/netty/compare/netty-4.1.115.Final...netty-4.1.125.Final)\n\n---\nupdated-dependencies:\n- dependency-name: io.netty:netty-codec-http\n  dependency-version: 4.1.125.Final\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "3b5f7aa4ed7e0efe74c4f4c5cc22ad0fbbb9af4c",
+      "date": "2025-05-20T13:03:46+08:00",
+      "author": "javagossip",
+      "email": "javagossip@gmail.com",
+      "message": "refactor: VirtualThreadPerTaskExecutorReflectionFactory重命名，原来名称太长\n"
+    },
+    {
+      "sha": "d5348103b797190171f5fb8de01fd8cfbafdee45",
+      "date": "2025-05-13T21:35:47+08:00",
+      "author": "javagossip",
+      "email": "javagossip@gmail.com",
+      "message": "docs: 更新README.md，增加虚拟线程相关配置参数\n"
+    },
+    {
+      "sha": "bcba14ba4901306d6e94e88403f65ddcee63208c",
+      "date": "2025-05-13T21:15:12+08:00",
+      "author": "javagossip",
+      "email": "javagossip@gmail.com",
+      "message": "Merge remote-tracking branch 'origin/master'\n"
+    },
+    {
+      "sha": "40597ad30947abd9a76124ba8b7e5c695b13f5c5",
+      "date": "2025-05-13T21:15:01+08:00",
+      "author": "javagossip",
+      "email": "javagossip@gmail.com",
+      "message": "docs: 更新README.md，增加虚拟线程相关配置参数\n"
+    },
+    {
+      "sha": "6e1d3efdcd1853ce1b7fd31372d28d629b6ac959",
+      "date": "2025-05-13T10:33:35Z",
+      "author": "javagossip",
+      "email": "javagossip@gmail.com",
+      "message": "[maven-release-plugin] prepare for next development iteration\n"
+    },
+    {
+      "sha": "1522d2d400770ac783dfa49e2f2080f591aed326",
+      "date": "2025-05-13T10:33:34Z",
+      "author": "javagossip",
+      "email": "javagossip@gmail.com",
+      "message": "[maven-release-plugin] prepare release v0.0.84\n"
+    },
+    {
+      "sha": "e9ca63a8bf09e00ded87b3c5f682234301ecbfc2",
+      "date": "2025-05-13T18:31:58+08:00",
+      "author": "javagossip",
+      "email": "javagossip@gmail.com",
+      "message": "docs: 更新README.md，增加虚拟线程相关配置参数\n"
+    },
+    {
+      "sha": "548f801f08b05d7dc2bdba2d38715b5017aab0b7",
+      "date": "2025-05-13T18:26:27+08:00",
+      "author": "javagossip",
+      "email": "javagossip@gmail.com",
+      "message": "fix:(core) 修复引入虚拟线程之后dorado status监控的数据展示异常\n"
+    },
+    {
+      "sha": "cb363cf39f0cd4cbab691daeb3d12ad5b4debbdd",
+      "date": "2025-05-13T18:10:59+08:00",
+      "author": "javagossip",
+      "email": "javagossip@gmail.com",
+      "message": "feat:(core) 支持在满足条件的情况下启用虚拟线程\n\n增加springboot配置：dorado.virtual-threads-on来启用虚拟线程，实际能否启用要看运行环境是否支持\n"
+    },
+    {
+      "sha": "37cc6c9a52ca05aa37d7aca4f910c093bac2c175",
+      "date": "2025-05-12T23:32:42+08:00",
+      "author": "javagossip",
+      "email": "javagossip@gmail.com",
+      "message": "fix:(core) 修复引用Filter类错误dorado过滤器无法注册为spring bean\n"
+    },
+    {
+      "sha": "9248f459de09cdca5132cb0d6ce0f2955751e168",
+      "date": "2025-05-12T15:27:58Z",
+      "author": "javagossip",
+      "email": "javagossip@gmail.com",
+      "message": "[maven-release-plugin] prepare for next development iteration\n"
+    },
+    {
+      "sha": "7c0ef02d2b1d605846cad4d82063f6ec63a0b0c9",
+      "date": "2025-05-12T15:27:57Z",
+      "author": "javagossip",
+      "email": "javagossip@gmail.com",
+      "message": "[maven-release-plugin] prepare release v0.0.83\n"
+    },
+    {
+      "sha": "35cf91baad3ced389d61a7a850637d4fcf293565",
+      "date": "2025-05-12T22:52:33+08:00",
+      "author": "javagossip",
+      "email": "javagossip@gmail.com",
+      "message": "fix:(core) 修复PackageScanner中针对spring-boot fatjar扫描的问题\n"
+    },
+    {
+      "sha": "b5816a867a03d965b84cdf0b8cfb69057cdecf83",
+      "date": "2025-05-12T18:05:52+08:00",
+      "author": "javagossip",
+      "email": "javagossip@gmail.com",
+      "message": "fix:(core) 修复PackageScanner中针对spring-boot fatjar扫描的问题\n"
+    },
+    {
+      "sha": "4c9d2c8df9b2b12a2d1f0c19d785418771a3a54b",
+      "date": "2025-05-11T20:51:22+08:00",
+      "author": "javagossip",
+      "email": "javagossip@gmail.com",
+      "message": "chore:(core) 更新github action配置, 调整maven-gpg-plugin插件配置\n\n去掉maven debug选项，增加-Prelease profile配置\n"
+    },
+    {
+      "sha": "dd5f5ee0d70fd6643a1a1153bcde6c75ee8d9e05",
+      "date": "2025-05-11T11:23:56Z",
+      "author": "javagossip",
+      "email": "javagossip@gmail.com",
+      "message": "[maven-release-plugin] prepare for next development iteration\n"
+    },
+    {
+      "sha": "594ae9667732f768698e4191926cbf9c87163243",
+      "date": "2025-05-11T11:23:55Z",
+      "author": "javagossip",
+      "email": "javagossip@gmail.com",
+      "message": "[maven-release-plugin] prepare release v0.0.82\n"
+    },
+    {
+      "sha": "37fbabd04a28b457d9acca1b6036ae8ba341f320",
+      "date": "2025-05-11T19:21:00+08:00",
+      "author": "javagossip",
+      "email": "javagossip@gmail.com",
+      "message": "chore:(core) 更新github action配置, 调整maven-gpg-plugin插件配置\n\n去掉maven debug选项，增加-Prelease profile配置\n"
+    },
+    {
+      "sha": "5076161981e7415b27b066ab7a41b89a8117cf0c",
+      "date": "2025-05-11T19:14:45+08:00",
+      "author": "javagossip",
+      "email": "javagossip@gmail.com",
+      "message": "[maven-release-plugin] prepare for next development iteration\n"
+    },
+    {
+      "sha": "58e4560c284621a7d7631124128b9ba60748bda0",
+      "date": "2025-05-11T19:14:41+08:00",
+      "author": "javagossip",
+      "email": "javagossip@gmail.com",
+      "message": "[maven-release-plugin] prepare release v0.0.81\n"
+    },
+    {
+      "sha": "45e65c68b117e3daab2ed5a01053e84e86588cba",
+      "date": "2025-05-11T19:13:23+08:00",
+      "author": "javagossip",
+      "email": "javagossip@gmail.com",
+      "message": "[maven-release-plugin] rollback the release of v0.0.81\n"
+    },
+    {
+      "sha": "0377fe9e0ae8ebfa040e044defd531b242a408b7",
+      "date": "2025-05-11T19:11:05+08:00",
+      "author": "javagossip",
+      "email": "javagossip@gmail.com",
+      "message": "[maven-release-plugin] prepare release v0.0.81\n"
+    },
+    {
+      "sha": "588afd246874a4911e26ee94419b546152d19d3b",
+      "date": "2025-05-11T08:44:51Z",
+      "author": "javagossip",
+      "email": "javagossip@gmail.com",
+      "message": "[maven-release-plugin] prepare for next development iteration\n"
+    },
+    {
+      "sha": "bd48fc2ce077d5c79e1d7a7bf3ac5e6978325675",
+      "date": "2025-05-11T08:44:50Z",
+      "author": "javagossip",
+      "email": "javagossip@gmail.com",
+      "message": "[maven-release-plugin] prepare release dorado-0.0.80\n"
+    },
+    {
+      "sha": "bd5bbf976501a382eca3b0edc7c7b4bd2d3fe9ee",
+      "date": "2025-05-11T08:40:10Z",
+      "author": "javagossip",
+      "email": "javagossip@gmail.com",
+      "message": "[maven-release-plugin] prepare for next development iteration\n"
+    },
+    {
+      "sha": "ff2869ef97adf4f4533bb5e53289231f8d73f733",
+      "date": "2025-05-11T08:40:09Z",
+      "author": "javagossip",
+      "email": "javagossip@gmail.com",
+      "message": "[maven-release-plugin] prepare release dorado-0.0.79\n"
+    }
+  ],
+  "commit_sha": "f056f0862baf59971884fa990ee158b53e3e346f",
+  "extracted_at": "2026-10-05T18:20:40.392590+00:00"
+}

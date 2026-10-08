@@ -1,0 +1,76 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "3.4.10",
+  "spring_boot_major": "3",
+  "java_versions_declared": "${java.version};17",
+  "build_evidence": [
+    {
+      "file": "jetlinks-components/configure-component/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "jetlinks-components/datasource-component/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb-reactive"
+    },
+    {
+      "file": "jetlinks-components/datasource-component/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "jetlinks-components/notify-component/notify-dingtalk/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "jetlinks-components/notify-component/notify-email/pom.xml",
+      "artifact": "spring-boot-starter-mail"
+    },
+    {
+      "file": "jetlinks-components/notify-component/notify-wechat/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "jetlinks-components/timeseries-component/pom.xml",
+      "artifact": "spring-boot-actuator-autoconfigure"
+    },
+    {
+      "file": "jetlinks-manager/authentication-manager/pom.xml",
+      "artifact": "spring-boot-starter-data-r2dbc"
+    },
+    {
+      "file": "jetlinks-standalone/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "jetlinks-standalone/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "jetlinks-standalone/pom.xml",
+      "artifact": "spring-boot-starter-data-r2dbc"
+    },
+    {
+      "file": "jetlinks-standalone/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "jetlinks-standalone/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "ia_status": "com_evidencia",
+  "ia_level": 2,
+  "ia_agents": "Claude Code; GitHub Copilot",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "f90505421c81c6b8d5e01e1cc155d0b07899bc15",
+      "trailer": "Claude Opus 5.5 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "GitHub Copilot",
+      "type": "coauthor",
+      "sha": "ac91166ad97540133c7c56a9d4441d27d11ca2c0",
+      "trailer": "copilot-swe-agent[bot] <198982749+Copilot@users.noreply.github.com>"
+    }
+  ],
+  "commits": [
+    {
+      "sha": "f90505421c81c6b8d5e01e1cc155d0b07899bc15",
+      "date": "2026-10-02T19:52:56+02:00",
+      "author": "Thomas Skjølberg",
+      "email": "thomas.skjolberg@gmail.com",
+      "message": "ci: bump entur/abt-gha-public to v2 (#394)\n\nNo interface changes in the reusable workflows and actions used here; v2\nremoves unused workflows, pins runners to ubuntu-24.04, updates actions and\ntightens permissions/credentials (see CHANGELOG.md in abt-gha-public).\n\nCo-authored-by: Claude Opus 5.5 <noreply@anthropic.com>"
+    },
+    {
+      "sha": "d65f810d14d0f7936124e3bee26904b357298bd6",
+      "date": "2026-10-01T01:00:08+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.mockito:mockito-core from 5.23.0 to 5.24.0 (#393)\n\nBumps [org.mockito:mockito-core](https://github.com/mockito/mockito) from 5.23.0 to 5.24.0.\n- [Release notes](https://github.com/mockito/mockito/releases)\n- [Commits](https://github.com/mockito/mockito/compare/v5.23.0...v5.24.0)\n\n---\nupdated-dependencies:\n- dependency-name: org.mockito:mockito-core\n  dependency-version: 5.24.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "1f8a25b74995e41eeb2ca604cce4cfb54ce33c9a",
+      "date": "2026-09-30T16:18:35+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump tools.jackson:jackson-bom from 3.2.2 to 3.2.3 (#391)\n\nBumps [tools.jackson:jackson-bom](https://github.com/FasterXML/jackson-bom) from 3.2.2 to 3.2.3.\n- [Commits](https://github.com/FasterXML/jackson-bom/compare/jackson-bom-3.2.2...jackson-bom-3.2.3)\n\n---\nupdated-dependencies:\n- dependency-name: tools.jackson:jackson-bom\n  dependency-version: 3.2.3\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "2be4bf618d5cd70a2f2b6218a474c94dfa7e5810",
+      "date": "2026-09-30T16:18:26+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump slf4j.version from 2.0.19 to 2.0.20 (#392)\n\nBumps `slf4j.version` from 2.0.19 to 2.0.20.\n\nUpdates `org.slf4j:slf4j-api` from 2.0.19 to 2.0.20\n\nUpdates `org.slf4j:slf4j-simple` from 2.0.19 to 2.0.20\n\n---\nupdated-dependencies:\n- dependency-name: org.slf4j:slf4j-api\n  dependency-version: 2.0.20\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n- dependency-name: org.slf4j:slf4j-simple\n  dependency-version: 2.0.20\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "f25ef68df7795fe668bfe6e6c71ceb9bd087f844",
+      "date": "2026-09-29T12:17:57+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump com.fasterxml.jackson:jackson-bom from 2.22.2 to 2.22.3 (#389)\n\nBumps [com.fasterxml.jackson:jackson-bom](https://github.com/FasterXML/jackson-bom) from 2.22.2 to 2.22.3.\n- [Commits](https://github.com/FasterXML/jackson-bom/compare/jackson-bom-2.22.2...jackson-bom-2.22.3)\n\n---\nupdated-dependencies:\n- dependency-name: com.fasterxml.jackson:jackson-bom\n  dependency-version: 2.22.3\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "9f3e7a4a96f894b3fad352005af8a9d70a942472",
+      "date": "2026-09-29T12:17:09+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump io.github.ascopes:protobuf-maven-plugin from 5.1.9 to 5.1.10 (#390)\n\nBumps [io.github.ascopes:protobuf-maven-plugin](https://github.com/ascopes/protobuf-maven-plugin) from 5.1.9 to 5.1.10.\n- [Release notes](https://github.com/ascopes/protobuf-maven-plugin/releases)\n- [Commits](https://github.com/ascopes/protobuf-maven-plugin/compare/v5.1.9...v5.1.10)\n\n---\nupdated-dependencies:\n- dependency-name: io.github.ascopes:protobuf-maven-plugin\n  dependency-version: 5.1.10\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "737aa50d2d6add50a0bedea8a2cba49f6260aec4",
+      "date": "2026-09-25T13:54:05+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump proto.version from 4.36.1 to 4.36.2 (#387)\n\nBumps `proto.version` from 4.36.1 to 4.36.2.\n\nUpdates `com.google.protobuf:protobuf-bom` from 4.36.1 to 4.36.2\n- [Release notes](https://github.com/protocolbuffers/protobuf/releases)\n- [Commits](https://github.com/protocolbuffers/protobuf/commits)\n\nUpdates `com.google.protobuf:protobuf-java` from 4.36.1 to 4.36.2\n- [Release notes](https://github.com/protocolbuffers/protobuf/releases)\n- [Commits](https://github.com/protocolbuffers/protobuf/commits)\n\nUpdates `com.google.protobuf:protobuf-java-util` from 4.36.1 to 4.36.2\n\n---\nupdated-dependencies:\n- dependency-name: com.google.protobuf:protobuf-bom\n  dependency-version: 4.36.2\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n- dependency-name: com.google.protobuf:protobuf-java\n  dependency-version: 4.36.2\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n- dependency-name: com.google.protobuf:protobuf-java-util\n  dependency-version: 4.36.2\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "b757a9b0dc9faa513cc54e19e408739ce0bc232f",
+      "date": "2026-09-25T13:53:57+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump com.nimbusds:nimbus-jose-jwt from 10.9.1 to 10.10 (#388)\n\nBumps [com.nimbusds:nimbus-jose-jwt](https://bitbucket.org/connect2id/nimbus-jose-jwt) from 10.9.1 to 10.10.\n- [Changelog](https://bitbucket.org/connect2id/nimbus-jose-jwt/src/master/CHANGELOG.txt)\n- [Commits](https://bitbucket.org/connect2id/nimbus-jose-jwt/branches/compare/10.10..10.9.1)\n\n---\nupdated-dependencies:\n- dependency-name: com.nimbusds:nimbus-jose-jwt\n  dependency-version: '10.10'\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "4f92036f7058c796f1fa51ed3dbdf178491eb6e5",
+      "date": "2026-09-22T13:03:44+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump io.github.ascopes:protobuf-maven-plugin from 5.1.8 to 5.1.9 (#385)\n\nBumps [io.github.ascopes:protobuf-maven-plugin](https://github.com/ascopes/protobuf-maven-plugin) from 5.1.8 to 5.1.9.\n- [Release notes](https://github.com/ascopes/protobuf-maven-plugin/releases)\n- [Commits](https://github.com/ascopes/protobuf-maven-plugin/compare/v5.1.8...v5.1.9)\n\n---\nupdated-dependencies:\n- dependency-name: io.github.ascopes:protobuf-maven-plugin\n  dependency-version: 5.1.9\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "fded19a72ae10005a16ab49236704827fa28ed73",
+      "date": "2026-09-22T13:03:34+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.apache.maven.plugins:maven-deploy-plugin from 3.1.4 to 3.2.0 (#386)\n\nBumps [org.apache.maven.plugins:maven-deploy-plugin](https://github.com/apache/maven-deploy-plugin) from 3.1.4 to 3.2.0.\n- [Release notes](https://github.com/apache/maven-deploy-plugin/releases)\n- [Commits](https://github.com/apache/maven-deploy-plugin/compare/maven-deploy-plugin-3.1.4...maven-deploy-plugin-3.2.0)\n\n---\nupdated-dependencies:\n- dependency-name: org.apache.maven.plugins:maven-deploy-plugin\n  dependency-version: 3.2.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "90ac810dadf1173fe28bab745f1b9e18aa5f1462",
+      "date": "2026-09-19T11:45:18+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump actions/checkout from 5 to 7 in /.github/workflows (#381)\n\nBumps [actions/checkout](https://github.com/actions/checkout) from 5 to 7.\n- [Release notes](https://github.com/actions/checkout/releases)\n- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/actions/checkout/compare/v5...v7)\n\n---\nupdated-dependencies:\n- dependency-name: actions/checkout\n  dependency-version: '7'\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "b87957c0f7cad59a9b17fa5a5d71b60da885df12",
+      "date": "2026-09-19T11:28:54+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.codehaus.mojo:versions-maven-plugin from 2.21.0 to 2.22.0 (#382)\n\nBumps [org.codehaus.mojo:versions-maven-plugin](https://github.com/mojohaus/versions) from 2.21.0 to 2.22.0.\n- [Release notes](https://github.com/mojohaus/versions/releases)\n- [Changelog](https://github.com/mojohaus/versions/blob/master/ReleaseNotes.md)\n- [Commits](https://github.com/mojohaus/versions/compare/2.21.0...2.22.0)\n\n---\nupdated-dependencies:\n- dependency-name: org.codehaus.mojo:versions-maven-plugin\n  dependency-version: 2.22.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "f3c13e059602019380f365955f1e6ad08e1a8d7d",
+      "date": "2026-09-19T11:28:45+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump actions/setup-java from 5 to 6 in /.github/workflows (#384)\n\nBumps [actions/setup-java](https://github.com/actions/setup-java) from 5 to 6.\n- [Release notes](https://github.com/actions/setup-java/releases)\n- [Commits](https://github.com/actions/setup-java/compare/v5...v6)\n\n---\nupdated-dependencies:\n- dependency-name: actions/setup-java\n  dependency-version: '6'\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "859b81c20a5acbd4a01525c5c877df984edd5b3a",
+      "date": "2026-09-19T11:28:35+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump actions/upload-artifact from 4 to 7 in /.github/workflows (#383)\n\nBumps [actions/upload-artifact](https://github.com/actions/upload-artifact) from 4 to 7.\n- [Release notes](https://github.com/actions/upload-artifact/releases)\n- [Commits](https://github.com/actions/upload-artifact/compare/v4...v7)\n\n---\nupdated-dependencies:\n- dependency-name: actions/upload-artifact\n  dependency-version: '7'\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "e535833a65fa46251bde3886ba63f119e0e4252e",
+      "date": "2026-09-18T20:13:03+02:00",
+      "author": "Thomas Skjølberg",
+      "email": "thomas.skjolberg@gmail.com",
+      "message": "fix: Fix jacoco report (#377)\n\n* Fix jacoco report - remove duplicate file names (although in seperate modules)\n\n* Fix broken root jacoco:report-aggregate execution\n\nreport-aggregate was bound at the root pom, but the root has no real\n<dependencies> on reactor modules (only <dependencyManagement>), so it\ncould never find their exec/class data and silently produced an empty\n'0 of 0' report. Adding real <dependencies> to the root pom to fix this\nwas tried and rejected: they are inherited by every child module and\nbreak the build.\n\n- Replace the root's report-aggregate execution with the plain 'report'\n  goal, which works correctly per-module (each module reports on its\n  own exec/class data with no cross-module dependency requirement).\n- Add .github/scripts/jacoco-flat-report.sh, which uses the standalone\n  jacococli.jar CLI to build one accurate report across all modules'\n  exec/class/source data, correctly attributing cross-module coverage\n  (e.g. jwt-spring-web/jwt-spring-webflux tests exercising\n  jwt-spring-common) that a per-module report cannot show.\n- Wire this script into a new coverage-report job in both\n  master-verify.yml and pr-verify.yml, uploading the report as a build\n  artifact.\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>\n\n* Add CHANGELOG entry for jwt-spring-webflux class renames\n\nDocuments the breaking rename of 3 public classes in jwt-spring-webflux\n(EnturAuthorizeHttpRequestsCustomizer, EnturOauth2ResourceServerCustomizer,\nIssuerAuthenticationManagerResolver -> Reactive* equivalents) done to\nresolve FQCN collisions with jwt-spring-web that were blocking accurate\nJaCoCo coverage reporting.\n\nVersioning for this repo is done via git tags at deploy time\n(entur/gha-maven-central maven-publish.yml, version_strategy: tag), not\nvia the pom.xml version property (which stays 0.0.0-SNAPSHOT), so no\npom.xml version bump is needed here - select 'minor' on the next manual\ndeploy-manual.yml run to match this 6.1.0 entry.\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>\n\n* Update CHANGELOG for class name changes in 6.1.0\n\nRenamed classes in jwt-spring-webflux to avoid name collisions.\n\n---------\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>"
+    },
+    {
+      "sha": "40aeb693c42c33b4be1a5b7c0635c15423c5d2dc",
+      "date": "2026-09-18T20:03:35+02:00",
+      "author": "Thomas Skjølberg",
+      "email": "thomas.skjolberg@gmail.com",
+      "message": "Update CHANGELOG with new version entries (#380)"
+    },
+    {
+      "sha": "ac91166ad97540133c7c56a9d4441d27d11ca2c0",
+      "date": "2026-09-18T19:54:40+02:00",
+      "author": "Thomas Skjølberg",
+      "email": "thomas.skjolberg@gmail.com",
+      "message": "Add more tests (#379)\n\n* Add more tests\n\n* Remove set/get testing\n\n* Address PR review feedback\n\nCo-authored-by: skjolber <1031478+skjolber@users.noreply.github.com>\n\n---------\n\nCo-authored-by: copilot-swe-agent[bot] <198982749+Copilot@users.noreply.github.com>\nCo-authored-by: skjolber <1031478+skjolber@users.noreply.github.com>"
+    },
+    {
+      "sha": "080bc4da06c1000569259a72371d1ff733c26121",
+      "date": "2026-09-18T17:55:09+02:00",
+      "author": "Thomas Skjølberg",
+      "email": "thomas.skjolberg@gmail.com",
+      "message": "Remove dead nexus-staging-maven-plugin/OSSRH properties (#378)\n\nThe nexus-staging-maven-plugin.version and distribution-respository-id\nproperties were leftover from before the project migrated to the\njreleaser-maven-plugin for publishing. Neither property is referenced\nby any plugin or profile in the reactor; publishing to Maven Central\n(including the legacy nexus2-compatible staging endpoint) is fully\nhandled by the jreleaser configuration further down in this file.\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>"
+    },
+    {
+      "sha": "aa6ab0d4dc951646d82ac6d55d14141cb052b990",
+      "date": "2026-09-18T17:41:27+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump io.netty:netty-bom from 4.2.17.Final to 4.2.18.Final (#374)\n\nBumps [io.netty:netty-bom](https://github.com/netty/netty) from 4.2.17.Final to 4.2.18.Final.\n- [Release notes](https://github.com/netty/netty/releases)\n- [Commits](https://github.com/netty/netty/compare/netty-4.2.17.Final...netty-4.2.18.Final)\n\n---\nupdated-dependencies:\n- dependency-name: io.netty:netty-bom\n  dependency-version: 4.2.18.Final\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "f7c324dede44e0283e5360b5b06a024629f9ccd2",
+      "date": "2026-09-18T17:26:43+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump tomcat.version from 11.0.25 to 11.0.26 (#375)\n\nBumps `tomcat.version` from 11.0.25 to 11.0.26.\n\nUpdates `org.apache.tomcat.embed:tomcat-embed-core` from 11.0.25 to 11.0.26\n\nUpdates `org.apache.tomcat.embed:tomcat-embed-el` from 11.0.25 to 11.0.26\n\nUpdates `org.apache.tomcat.embed:tomcat-embed-websocket` from 11.0.25 to 11.0.26\n\n---\nupdated-dependencies:\n- dependency-name: org.apache.tomcat.embed:tomcat-embed-core\n  dependency-version: 11.0.26\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n- dependency-name: org.apache.tomcat.embed:tomcat-embed-el\n  dependency-version: 11.0.26\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n- dependency-name: org.apache.tomcat.embed:tomcat-embed-websocket\n  dependency-version: 11.0.26\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "3db7cc8efccdc39f45830fcb71646ad27a1960fd",
+      "date": "2026-09-18T16:32:38+02:00",
+      "author": "Thomas Skjølberg",
+      "email": "thomas.skjolberg@gmail.com",
+      "message": "PR template (#376)\n\n* PR template\n\n* Fix HTML encoding in CONTRIBUTING.md\n\nCo-authored-by: Copilot Autofix powered by AI <175728472+Copilot@users.noreply.github.com>\n\n* Correct checklist items in PR template\n\nFix checklist formatting in pull request template.\n\nCo-authored-by: Copilot Autofix powered by AI <175728472+Copilot@users.noreply.github.com>\n\n---------\n\nCo-authored-by: Copilot Autofix powered by AI <175728472+Copilot@users.noreply.github.com>"
+    },
+    {
+      "sha": "01aa1e57a05e53144b19b7d0a9fee08d0b4f7144",
+      "date": "2026-09-15T13:08:31+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump entur/gha-security/.github/workflows/code-scan.yml (#371)\n\nBumps [entur/gha-security/.github/workflows/code-scan.yml](https://github.com/entur/gha-security) from 2.15.1 to 2.16.0.\n- [Release notes](https://github.com/entur/gha-security/releases)\n- [Changelog](https://github.com/entur/gha-security/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/entur/gha-security/compare/v2.15.1...v2.16.0)\n\n---\nupdated-dependencies:\n- dependency-name: entur/gha-security/.github/workflows/code-scan.yml\n  dependency-version: 2.16.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "3acf9b7552934f82270690b1b7a8b3af9d8551d5",
+      "date": "2026-09-15T13:08:18+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump com.github.spotbugs:spotbugs-maven-plugin from 4.10.4.0 to 4.10.4.1 (#373)\n\nBumps [com.github.spotbugs:spotbugs-maven-plugin](https://github.com/spotbugs/spotbugs-maven-plugin) from 4.10.4.0 to 4.10.4.1.\n- [Release notes](https://github.com/spotbugs/spotbugs-maven-plugin/releases)\n- [Commits](https://github.com/spotbugs/spotbugs-maven-plugin/compare/spotbugs-maven-plugin-4.10.4.0...spotbugs-maven-plugin-4.10.4.1)\n\n---\nupdated-dependencies:\n- dependency-name: com.github.spotbugs:spotbugs-maven-plugin\n  dependency-version: 4.10.4.1\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "215feb9b7af4fb161225fe2277f443d727e99d39",
+      "date": "2026-09-15T13:08:09+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump slf4j.version from 2.0.18 to 2.0.19 (#372)\n\nBumps `slf4j.version` from 2.0.18 to 2.0.19.\n\nUpdates `org.slf4j:slf4j-api` from 2.0.18 to 2.0.19\n\nUpdates `org.slf4j:slf4j-simple` from 2.0.18 to 2.0.19\n\n---\nupdated-dependencies:\n- dependency-name: org.slf4j:slf4j-api\n  dependency-version: 2.0.19\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n- dependency-name: org.slf4j:slf4j-simple\n  dependency-version: 2.0.19\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "23483be7ace68011aae6c832974a833c91c64dd2",
+      "date": "2026-09-09T15:35:34+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump proto.version from 4.36.0 to 4.36.1 (#369)\n\nBumps `proto.version` from 4.36.0 to 4.36.1.\n\nUpdates `com.google.protobuf:protobuf-bom` from 4.36.0 to 4.36.1\n- [Release notes](https://github.com/protocolbuffers/protobuf/releases)\n- [Commits](https://github.com/protocolbuffers/protobuf/commits)\n\nUpdates `com.google.protobuf:protobuf-java` from 4.36.0 to 4.36.1\n- [Release notes](https://github.com/protocolbuffers/protobuf/releases)\n- [Commits](https://github.com/protocolbuffers/protobuf/commits)\n\nUpdates `com.google.protobuf:protobuf-java-util` from 4.36.0 to 4.36.1\n\n---\nupdated-dependencies:\n- dependency-name: com.google.protobuf:protobuf-bom\n  dependency-version: 4.36.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n- dependency-name: com.google.protobuf:protobuf-java\n  dependency-version: 4.36.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n- dependency-name: com.google.protobuf:protobuf-java-util\n  dependency-version: 4.36.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "0a17609c481f3634aef961ca6173491cf6826e2c",
+      "date": "2026-09-08T13:18:02+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump maven-surefire-plugin.version from 3.5.6 to 3.6.0 (#366)\n\nBumps `maven-surefire-plugin.version` from 3.5.6 to 3.6.0.\n\nUpdates `org.apache.maven.plugins:maven-surefire-plugin` from 3.5.6 to 3.6.0\n- [Release notes](https://github.com/apache/maven-surefire/releases)\n- [Commits](https://github.com/apache/maven-surefire/compare/surefire-3.5.6...surefire-3.6.0)\n\nUpdates `org.apache.maven.plugins:maven-failsafe-plugin` from 3.5.6 to 3.6.0\n- [Release notes](https://github.com/apache/maven-surefire/releases)\n- [Commits](https://github.com/apache/maven-surefire/compare/surefire-3.5.6...surefire-3.6.0)\n\n---\nupdated-dependencies:\n- dependency-name: org.apache.maven.plugins:maven-surefire-plugin\n  dependency-version: 3.6.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n- dependency-name: org.apache.maven.plugins:maven-failsafe-plugin\n  dependency-version: 3.6.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "cb313c60b9543832a3d068e96919ed3563e92f5f",
+      "date": "2026-09-08T13:17:52+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.jreleaser:jreleaser-maven-plugin from 1.25.0 to 1.26.0 (#367)\n\nBumps [org.jreleaser:jreleaser-maven-plugin](https://github.com/jreleaser/jreleaser) from 1.25.0 to 1.26.0.\n- [Release notes](https://github.com/jreleaser/jreleaser/releases)\n- [Commits](https://github.com/jreleaser/jreleaser/compare/v1.25.0...v1.26.0)\n\n---\nupdated-dependencies:\n- dependency-name: org.jreleaser:jreleaser-maven-plugin\n  dependency-version: 1.26.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "55102163a4dc6cf208a0633aa385a331204c0f70",
+      "date": "2026-09-08T13:17:43+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.apache.maven.plugins:maven-compiler-plugin (#368)\n\nBumps [org.apache.maven.plugins:maven-compiler-plugin](https://github.com/apache/maven-compiler-plugin) from 3.15.0 to 3.16.0.\n- [Release notes](https://github.com/apache/maven-compiler-plugin/releases)\n- [Commits](https://github.com/apache/maven-compiler-plugin/compare/maven-compiler-plugin-3.15.0...maven-compiler-plugin-3.16.0)\n\n---\nupdated-dependencies:\n- dependency-name: org.apache.maven.plugins:maven-compiler-plugin\n  dependency-version: 3.16.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "37deddde3df54aeaeaa04218d6dd8b1c60dbabf0",
+      "date": "2026-09-02T23:43:42+02:00",
+      "author": "Thomas Skjølberg",
+      "email": "thomas.skjolberg@gmail.com",
+      "message": "Add volatile to disabled flag (#364)"
+    },
+    {
+      "sha": "fe3d5080bfecf64b1b8b7ffe6f62d3541fe0b28c",
+      "date": "2026-09-02T23:24:36+02:00",
+      "author": "Thomas Skjølberg",
+      "email": "thomas.skjolberg@gmail.com",
+      "message": "Add volatile to previuos health in health indicator (#363)"
+    }
+  ],
+  "commit_sha": "f90505421c81c6b8d5e01e1cc155d0b07899bc15",
+  "extracted_at": "2026-10-05T18:27:59.918454+00:00"
+}

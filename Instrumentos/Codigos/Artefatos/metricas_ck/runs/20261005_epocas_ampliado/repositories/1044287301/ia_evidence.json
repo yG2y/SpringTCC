@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "4c8648845fc310ecafee80b5a3ff4d469fe1e610",
+      "date": "2025-10-11T22:29:55-03:00",
+      "author": "Anderson de Souza",
+      "email": "anderson17ads@hotmail.com",
+      "message": "Adding created_at, updated_at and deleted_at to the client listing endpoint\n"
+    },
+    {
+      "sha": "7f747ed92589a394c09a90a6c97f86820060bce6",
+      "date": "2025-10-09T20:58:08-03:00",
+      "author": "Anderson de Souza",
+      "email": "anderson17ads@hotmail.com",
+      "message": "Creating createdAt, updatedAt and deletedAt to accounts\n"
+    },
+    {
+      "sha": "1577dc8c2e2f51226ad044e89b84570c694a355d",
+      "date": "2025-10-09T19:53:58-03:00",
+      "author": "Anderson de Souza",
+      "email": "anderson17ads@hotmail.com",
+      "message": "Creating createdAt, updatedAt and deletedAt to customer\n"
+    },
+    {
+      "sha": "b4a5f40afa8dd348821d3a65b10d07feb42e5af6",
+      "date": "2025-09-29T22:40:51-03:00",
+      "author": "Anderson de Souza",
+      "email": "anderson17ads@hotmail.com",
+      "message": "Creation find customer by id\n"
+    },
+    {
+      "sha": "ad12bbd9e1e505e14cf96fb3014a11b047489bbe",
+      "date": "2025-09-29T01:04:03-03:00",
+      "author": "Anderson de Souza",
+      "email": "anderson17ads@hotmail.com",
+      "message": "Creation RegexConstants\n"
+    },
+    {
+      "sha": "e6e495832b6495ab82df329fe7c1571352301e18",
+      "date": "2025-09-14T15:41:47-03:00",
+      "author": "Anderson de Souza",
+      "email": "anderson17ads@hotmail.com",
+      "message": "Creation endpoint to list all accounts\n"
+    },
+    {
+      "sha": "55d23b98ba6f9793a3fbeaefd88fbf98d1107596",
+      "date": "2025-09-14T15:03:51-03:00",
+      "author": "Anderson de Souza",
+      "email": "anderson17ads@hotmail.com",
+      "message": "Creation AccountMapper in the layers of inbound and outbound and refactoring AccountController and JpaAccountRepositoryAdapter to use the mapper\n"
+    },
+    {
+      "sha": "d5f56e06ff6a104214bb7039dd3aaffe1ddaf954",
+      "date": "2025-09-14T14:02:12-03:00",
+      "author": "Anderson de Souza",
+      "email": "anderson17ads@hotmail.com",
+      "message": "Creation of the CustomerMapper for the repository layer and refactoring of JpaCustomerRepositoryAdapter to use the mapper\n"
+    },
+    {
+      "sha": "5b336439840806e7da2d7c8149843ab81aac6e6e",
+      "date": "2025-09-14T13:37:15-03:00",
+      "author": "Anderson de Souza",
+      "email": "anderson17ads@hotmail.com",
+      "message": "Implementation endpoint to list all customers\n"
+    },
+    {
+      "sha": "ff6a86ba651b7f004e640fbf36b8371c774fcf24",
+      "date": "2025-09-11T14:31:53-03:00",
+      "author": "Anderson de Souza",
+      "email": "anderson17ads@hotmail.com",
+      "message": "applying CheckCustomerAlreadyExistsByEmailPolicy validation at the moment of customer criation\n"
+    },
+    {
+      "sha": "370908fe5ff587224cd39c142fbc0ccb805e0be0",
+      "date": "2025-09-09T08:27:25-03:00",
+      "author": "Anderson de Souza",
+      "email": "anderson17ads@hotmail.com",
+      "message": "Applying customer exist validation in create account\n"
+    },
+    {
+      "sha": "34e40f5c24b406701e559cb103c490c0657be249",
+      "date": "2025-09-09T08:26:20-03:00",
+      "author": "Anderson de Souza",
+      "email": "anderson17ads@hotmail.com",
+      "message": "Creating AccountPolicyConfig to separate the config\n"
+    },
+    {
+      "sha": "120050d9d1252679f87e9bd9bf3ad4e77e84596c",
+      "date": "2025-09-09T08:24:28-03:00",
+      "author": "Anderson de Souza",
+      "email": "anderson17ads@hotmail.com",
+      "message": "Creating CheckCustomerExistsPolicy for validate customer exists\n"
+    },
+    {
+      "sha": "33f3959f2de4444b9dd1f929b50f2e4d997eff62",
+      "date": "2025-09-09T08:03:33-03:00",
+      "author": "Anderson de Souza",
+      "email": "anderson17ads@hotmail.com",
+      "message": "Applying max account per customer in create account\n"
+    },
+    {
+      "sha": "a0724c1b82fb89c9c4ffd0f5ddea8f6bbac8a40f",
+      "date": "2025-09-09T08:02:18-03:00",
+      "author": "Anderson de Souza",
+      "email": "anderson17ads@hotmail.com",
+      "message": "Creating IllegalStateException exceptionHandler\n"
+    },
+    {
+      "sha": "84d32b9db7b02b974fbbb88ccc16d370774c1017",
+      "date": "2025-09-09T07:29:11-03:00",
+      "author": "Anderson de Souza",
+      "email": "anderson17ads@hotmail.com",
+      "message": "Creating of MaxAccountsPerCustomerPolicy in account\n"
+    },
+    {
+      "sha": "b5bd5a3d57c6aec3462ba1989585deaa6e4c0fad",
+      "date": "2025-09-09T07:28:23-03:00",
+      "author": "Anderson de Souza",
+      "email": "anderson17ads@hotmail.com",
+      "message": "Applying HttpMessageNotReadableException and InvalidFormatException in GlobalExceptionHandler\n"
+    },
+    {
+      "sha": "95304d66056088f1183ad2ccc780e92f1aef2f0d",
+      "date": "2025-09-09T07:26:09-03:00",
+      "author": "Anderson de Souza",
+      "email": "anderson17ads@hotmail.com",
+      "message": "Applying countByCustomerId  in accountRepository\n"
+    },
+    {
+      "sha": "367e5fdbf7454d18b1981220fd9a63d23368adea",
+      "date": "2025-09-09T07:25:12-03:00",
+      "author": "Anderson de Souza",
+      "email": "anderson17ads@hotmail.com",
+      "message": "Applying existsById  in customerRepository\n"
+    },
+    {
+      "sha": "2644a46b27d8f9e8b9411116fc8023154dbf820c",
+      "date": "2025-09-04T11:02:16-03:00",
+      "author": "Anderson de Souza",
+      "email": "anderson17ads@hotmail.com",
+      "message": "Adjust in the read.me\n"
+    },
+    {
+      "sha": "d48d71efab0cb6f07a9b73a9015d72d2ff7d1efe",
+      "date": "2025-09-04T10:28:08-03:00",
+      "author": "Anderson de Souza",
+      "email": "anderson17ads@hotmail.com",
+      "message": "Adjust in the read.me\n"
+    },
+    {
+      "sha": "a496f58e8dce5ca06493c231eb529d8efc014c2c",
+      "date": "2025-09-04T10:00:18-03:00",
+      "author": "Anderson de Souza",
+      "email": "anderson17ads@hotmail.com",
+      "message": "Applying docker-compose.yml and env;\nAdjustment readme.md\n"
+    },
+    {
+      "sha": "8b291d294699c5635b831ae6be45dbf18bd40605",
+      "date": "2025-09-04T08:10:23-03:00",
+      "author": "Anderson de Souza",
+      "email": "anderson17ads@hotmail.com",
+      "message": "Implementation the creating of customer\n"
+    },
+    {
+      "sha": "1ed03676a2716c5bd6bffc947b21b0c829eaa99a",
+      "date": "2025-09-02T00:05:28-03:00",
+      "author": "Anderson de Souza",
+      "email": "anderson17ads@hotmail.com",
+      "message": "Implementing domain, entity, repository for customer layer\n"
+    },
+    {
+      "sha": "7dc75238f265d66f07f61a0fc14da30628b782ba",
+      "date": "2025-08-31T23:13:26-03:00",
+      "author": "Anderson de Souza",
+      "email": "anderson17ads@hotmail.com",
+      "message": "Implementation accountNumberPolicy for account create\n"
+    },
+    {
+      "sha": "9f8a9059b6c383354af34c0469350aadec28dc9b",
+      "date": "2025-08-31T23:06:09-03:00",
+      "author": "Anderson de Souza",
+      "email": "anderson17ads@hotmail.com",
+      "message": "Implementation use case for account creation, following the factory and commando patterns.\n"
+    },
+    {
+      "sha": "386b82328a7180dff66582c1a43c79384861d9f1",
+      "date": "2025-08-31T21:27:05-03:00",
+      "author": "Anderson de Souza",
+      "email": "anderson17ads@hotmail.com",
+      "message": "Undock the AccountService from Spring boot\n"
+    },
+    {
+      "sha": "f2041f250a2a0d20abf8cdc0229c96e5455b24a4",
+      "date": "2025-08-31T04:34:17-03:00",
+      "author": "Anderson de Souza",
+      "email": "anderson17ads@hotmail.com",
+      "message": "Applying handle exception\n"
+    },
+    {
+      "sha": "75317f3cf1e6f1b9714173350fb997865b5ea074",
+      "date": "2025-08-31T02:58:56-03:00",
+      "author": "Anderson de Souza",
+      "email": "anderson17ads@hotmail.com",
+      "message": "Applying hibernate validation in account request\n"
+    },
+    {
+      "sha": "6c7723ac8b2523ff6b6393b8d51dfa33499b7ee4",
+      "date": "2025-08-30T19:29:25-03:00",
+      "author": "Anderson de Souza",
+      "email": "anderson17ads@hotmail.com",
+      "message": "Appplying ApiPaths in the account create and refactory directories\n"
+    }
+  ],
+  "commit_sha": "4c8648845fc310ecafee80b5a3ff4d469fe1e610",
+  "extracted_at": "2026-10-05T18:22:44.675578+00:00"
+}

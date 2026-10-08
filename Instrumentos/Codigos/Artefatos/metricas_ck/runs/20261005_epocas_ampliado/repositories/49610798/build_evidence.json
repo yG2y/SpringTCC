@@ -1,0 +1,44 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "3.5.5",
+  "spring_boot_major": "3",
+  "java_versions_declared": "${java.version};17",
+  "build_evidence": [
+    {
+      "file": "telegrambots-springboot-longpolling-starter/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "telegrambots-springboot-longpolling-starter/pom.xml",
+      "artifact": "spring-boot"
+    },
+    {
+      "file": "telegrambots-springboot-longpolling-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "telegrambots-springboot-longpolling-starter/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "telegrambots-springboot-webhook-starter/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "telegrambots-springboot-webhook-starter/pom.xml",
+      "artifact": "spring-boot"
+    },
+    {
+      "file": "telegrambots-springboot-webhook-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "telegrambots-springboot-webhook-starter/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "telegrambots-springboot-webhook-starter/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    }
+  ]
+}

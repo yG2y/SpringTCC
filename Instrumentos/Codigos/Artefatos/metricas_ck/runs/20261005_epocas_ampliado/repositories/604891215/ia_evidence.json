@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "5f54f6f2802f362fd562a2d11c03aa739846cc4d",
+      "date": "2024-05-22T00:02:27-04:00",
+      "author": "Emmanuel",
+      "email": "80619808+emmanuelU17@users.noreply.github.com",
+      "message": "Create LICENSE"
+    },
+    {
+      "sha": "bead80481e3d72a58ab302eaff5cb9311ed7d2b3",
+      "date": "2023-06-04T21:21:56-04:00",
+      "author": "emmanuelU17",
+      "email": "emmanueluluabuike@gmail.com",
+      "message": "project complete\n"
+    },
+    {
+      "sha": "903d3c2e71168f448fb07e9f5013bbc37ea2e07a",
+      "date": "2023-06-04T21:07:03-04:00",
+      "author": "emmanuelU17",
+      "email": "emmanueluluabuike@gmail.com",
+      "message": "redis implementation\n"
+    },
+    {
+      "sha": "246788a6c5c13393a322b4e9cd602aa4693a3be4",
+      "date": "2023-05-02T03:03:30-04:00",
+      "author": "emmanuelU17",
+      "email": "emmanueluluabuike@gmail.com",
+      "message": "remove unnecessary class:AuthProvider and improved readability\n"
+    },
+    {
+      "sha": "8179287b0f5c1179ebde9bbd611a9b87890b4be1",
+      "date": "2023-05-02T02:40:17-04:00",
+      "author": "emmanuelU17",
+      "email": "emmanueluluabuike@gmail.com",
+      "message": "remove unnecessary class:AuthProvider and improved readability\n"
+    },
+    {
+      "sha": "66ca65d807c79654ac0d294c96c55c007bca7d5f",
+      "date": "2023-04-18T02:02:35-04:00",
+      "author": "Emmanuel Uluabuike",
+      "email": "80619808+emmanuelU17@users.noreply.github.com",
+      "message": "Update EmployeeService.java"
+    },
+    {
+      "sha": "8ac5365f4951ef88ead8356eb2526dfce25c5a11",
+      "date": "2023-04-18T02:01:28-04:00",
+      "author": "Emmanuel Uluabuike",
+      "email": "80619808+emmanuelU17@users.noreply.github.com",
+      "message": "Update AuthService.java"
+    },
+    {
+      "sha": "79256b0abb00ca04a5b95a59336c2082a24dd2ed",
+      "date": "2023-04-18T01:59:12-04:00",
+      "author": "Emmanuel Uluabuike",
+      "email": "80619808+emmanuelU17@users.noreply.github.com",
+      "message": "Update SecurityConfig.java"
+    },
+    {
+      "sha": "4d11177115f7e9a12dc9450ba44c76733b99f047",
+      "date": "2023-04-04T18:11:33-04:00",
+      "author": "emmanuelU17",
+      "email": "emmanueluluabuike@gmail.com",
+      "message": "Max session per user. Also upgraded integration test\n"
+    },
+    {
+      "sha": "acf75e5a98a83399cfcc4dc4240295fdc618b7e9",
+      "date": "2023-03-30T09:47:23-04:00",
+      "author": "emmanuelU17",
+      "email": "emmanueluluabuike@gmail.com",
+      "message": "used sql script to define session table instead of relying on jpa\n"
+    },
+    {
+      "sha": "4e4d0023d76087dcddad72022f7290fd1c1dcafa",
+      "date": "2023-03-28T05:32:31-04:00",
+      "author": "emmanuelU17",
+      "email": "emmanueluluabuike@gmail.com",
+      "message": "Integration tests for logout and max session\n"
+    },
+    {
+      "sha": "46774ff8c9f7680dd830e5ff60ef24ca0e706cc4",
+      "date": "2023-03-28T05:30:58-04:00",
+      "author": "emmanuelU17",
+      "email": "emmanueluluabuike@gmail.com",
+      "message": "Integration tests for logout and max session\n"
+    },
+    {
+      "sha": "e6843d0b91b888d219abbedd8dd99d12d2ef0740",
+      "date": "2023-03-27T06:55:01-04:00",
+      "author": "emmanuelU17",
+      "email": "emmanueluluabuike@gmail.com",
+      "message": "Trying to figure out max session constraint\n"
+    },
+    {
+      "sha": "65702bf9e1feb3fc3fa0e3080bbec9f6ef7cbfb2",
+      "date": "2023-03-26T04:44:59-04:00",
+      "author": "emmanuelU17",
+      "email": "emmanueluluabuike@gmail.com",
+      "message": "integration test and controller advice\n"
+    },
+    {
+      "sha": "bdd1fa8655dda26ace14c517673029a01a542996",
+      "date": "2023-03-25T06:10:42-04:00",
+      "author": "emmanuelU17",
+      "email": "emmanueluluabuike@gmail.com",
+      "message": "Forgot to uncomment tests\n"
+    },
+    {
+      "sha": "d1411ba5d69a8388030ded7045df3208b7a430be",
+      "date": "2023-03-25T06:09:07-04:00",
+      "author": "emmanuelU17",
+      "email": "emmanueluluabuike@gmail.com",
+      "message": "Refactored to use one DB. Also instead of injecting Schema, I use JPA\n"
+    },
+    {
+      "sha": "be815c2419658cbf6d8e972c11e7663af4172d64",
+      "date": "2023-03-14T08:57:31-04:00",
+      "author": "emmanuelU17",
+      "email": "emmanueluluabuike@gmail.com",
+      "message": "refactored to use one DB also instead of relying on JPA, to create tables, I am writing mine\n"
+    },
+    {
+      "sha": "6a986eea9fff6b88387002dbdefc30fe91928033",
+      "date": "2023-03-12T01:46:52-05:00",
+      "author": "emmanuelU17",
+      "email": "emmanueluluabuike@gmail.com",
+      "message": "Merge branch 'main' of https://github.com/emmanuelU17/restful-session-authentication\n"
+    },
+    {
+      "sha": "bbd0f69ba96da4223083aac399e6a5987269df57",
+      "date": "2023-03-12T01:45:10-05:00",
+      "author": "emmanuelU17",
+      "email": "emmanueluluabuike@gmail.com",
+      "message": "Look at commit description for detailed notes\n"
+    },
+    {
+      "sha": "1dc1dfb3ce624e6bdb0d661d7635be1b1abc6a35",
+      "date": "2023-03-11T02:36:46-05:00",
+      "author": "Emmanuel Uluabuike",
+      "email": "80619808+emmanuelU17@users.noreply.github.com",
+      "message": "Merge pull request #1 from dashaun/main\n\nAdd Testcontainers, quick start, prerequisites and upgrade to Spring Boot 3.0.4"
+    },
+    {
+      "sha": "544fb2cd03b784da0f33d015521b752c6c0a514b",
+      "date": "2023-03-08T20:17:18-06:00",
+      "author": "dashaun",
+      "email": "dashaun@dashaun.com",
+      "message": "update title\n"
+    },
+    {
+      "sha": "7ca78c85a7948018cb7cf96762b101cb67f23003",
+      "date": "2023-03-08T20:16:30-06:00",
+      "author": "dashaun",
+      "email": "dashaun@dashaun.com",
+      "message": "add prerequisite and update links to 3.0.4\n"
+    },
+    {
+      "sha": "cb23442e439394d4b824daa16db28071cc9e5638",
+      "date": "2023-03-08T20:10:21-06:00",
+      "author": "dashaun",
+      "email": "dashaun@dashaun.com",
+      "message": "use testcontainers\n"
+    },
+    {
+      "sha": "1050e3cc45a0335a924a071153b4e6cb5721dd48",
+      "date": "2023-03-08T20:10:00-06:00",
+      "author": "dashaun",
+      "email": "dashaun@dashaun.com",
+      "message": "added testcontainers dependencies and upgrade to Spring Boot 3.0.4\n"
+    },
+    {
+      "sha": "c407f8171eaa4c1bf9310d67180dd624c9db63fb",
+      "date": "2023-03-08T20:08:46-06:00",
+      "author": "dashaun",
+      "email": "dashaun@dashaun.com",
+      "message": "add quickstart\n"
+    },
+    {
+      "sha": "6432ae930e84d76746dba836c08b79a17376d794",
+      "date": "2023-03-08T20:08:29-06:00",
+      "author": "dashaun",
+      "email": "dashaun@dashaun.com",
+      "message": "make executable\n"
+    },
+    {
+      "sha": "b593066e9881470f31c01de184dc170087be27a3",
+      "date": "2023-03-07T01:05:35-05:00",
+      "author": "emmanuelU17",
+      "email": "emmanueluluabuike@gmail.com",
+      "message": "refactored sessionRegistry Bean to the adviced implementation from Sp\n"
+    },
+    {
+      "sha": "75c0ac195dce199472b710f7fba4a649f7adecaf",
+      "date": "2023-03-07T00:39:39-05:00",
+      "author": "emmanuelU17",
+      "email": "emmanueluluabuike@gmail.com",
+      "message": "refactored sessionRegistry Bean to the adviced implementation from Spring Security\n"
+    },
+    {
+      "sha": "50239b785de5e9b9bf1b583dfe21dd5af586049d",
+      "date": "2023-03-03T05:58:24-05:00",
+      "author": "emmanuelU17",
+      "email": "emmanueluluabuike@gmail.com",
+      "message": "Refactored Session Creation and logout handler\n"
+    },
+    {
+      "sha": "8132a0857be1b5f385309603a03fb0bc8aba50af",
+      "date": "2023-02-27T10:27:17-05:00",
+      "author": "Emmanuel Uluabuike",
+      "email": "80619808+emmanuelU17@users.noreply.github.com",
+      "message": "Update README.md"
+    }
+  ],
+  "commit_sha": "5f54f6f2802f362fd562a2d11c03aa739846cc4d",
+  "extracted_at": "2026-10-05T18:34:48.090730+00:00"
+}

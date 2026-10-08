@@ -1,0 +1,52 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "3.2.5",
+  "spring_boot_major": "3",
+  "java_versions_declared": "17",
+  "build_evidence": [
+    {
+      "file": "common/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "common/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "core-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "core-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "core-service/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "core-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "core-service/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "core-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "event-handler/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "event-handler/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "event-handler/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

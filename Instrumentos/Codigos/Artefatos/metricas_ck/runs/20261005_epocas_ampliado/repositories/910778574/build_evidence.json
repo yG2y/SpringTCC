@@ -1,0 +1,92 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "3.4.0;3.4.1",
+  "spring_boot_major": "3",
+  "java_versions_declared": "23",
+  "build_evidence": [
+    {
+      "file": "src/apigateway/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/apigateway/pom.xml",
+      "artifact": "spring-boot-starter-oauth2-client"
+    },
+    {
+      "file": "src/apigateway/pom.xml",
+      "artifact": "spring-boot-starter-oauth2-resource-server"
+    },
+    {
+      "file": "src/apigateway/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/buildingblocks/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/buildingblocks/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "src/buildingblocks/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "src/buildingblocks/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "src/buildingblocks/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "src/buildingblocks/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb"
+    },
+    {
+      "file": "src/buildingblocks/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb-reactive"
+    },
+    {
+      "file": "src/buildingblocks/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "src/buildingblocks/pom.xml",
+      "artifact": "spring-boot-starter-oauth2-resource-server"
+    },
+    {
+      "file": "src/buildingblocks/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/buildingblocks/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/services/booking/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/services/booking/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/services/flight/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/services/flight/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/services/passenger/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "src/services/passenger/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

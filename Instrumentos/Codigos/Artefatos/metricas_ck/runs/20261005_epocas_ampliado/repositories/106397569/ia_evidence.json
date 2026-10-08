@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "1082b6724282836da0a99c5eb94bd39e238b8aa1",
+      "date": "2020-12-26T11:25:11+07:00",
+      "author": "davidch",
+      "email": "david.christianto1@gmail.com",
+      "message": "General Improvement\nUpdates:\n- Update spring boot version to `2.4.1`.\n- Update spring cloud version to `2020.0.0`.\n- Add logstash dependency and updated all logs to use standard logstash.\n- Add gracefully exit configuration in `ThreadPoolTaskExecutor`.\n- Update all tests for using junit5.\n"
+    },
+    {
+      "sha": "aeef4e9eb884d957a4fdf12aa7f036284ab4fd2c",
+      "date": "2019-12-30T16:52:53+07:00",
+      "author": "davidch",
+      "email": "david.christianto1@gmail.com",
+      "message": "Improve API Response Message with Generic Class & Use OpenAPI instead of Swagger.\nUpdate:\n- Added generic class into DTO and response builder.\n- Removed default Swagger dependencies and used OpenAPI instead.\n- Added more documentation use OpenAPI annotations.\n- Added more detail to handle http error.\n- Updated Javadoc.\n"
+    },
+    {
+      "sha": "fd5dddc7a4f5e7d154fbcd01fd348b9b9e835666",
+      "date": "2019-07-24T11:41:54+07:00",
+      "author": "davidch",
+      "email": "david.christianto1@gmail.com",
+      "message": "Improvement some code.\nUpdated:\n- Added @ComponentScan in `AuditConfigurerSupport` class.\n- Updated EnumType to Ordinal instead of String in `BaseEntity` class.\n- Created interface TokenFactory and update all references.\n"
+    },
+    {
+      "sha": "e7ed0ec15586eb12871afa942c05d762c4c749e4",
+      "date": "2019-07-14T17:57:08+07:00",
+      "author": "davidch",
+      "email": "david.christianto1@gmail.com",
+      "message": "Added new base entity.\nUpdated:\n- Added BaseMappedEntity that defined common field that mapped in <code>@ManyToMany</code> model.\n- Fixed indentation and some wrong word type.\n"
+    },
+    {
+      "sha": "5cb41180b7d8f5857e384859744a0265a349b61d",
+      "date": "2019-07-14T17:40:29+07:00",
+      "author": "David Christianto",
+      "email": "david.christianto1@gmail.com",
+      "message": "Merge pull request #3 from davidch93/dev\n\nAdd class ValidationUtils in common module"
+    },
+    {
+      "sha": "3abecf74cf1f80328f218b72ad0d381b47422750",
+      "date": "2019-07-14T17:10:55+07:00",
+      "author": "smsidki_",
+      "email": "sidqi_sm@nexsoft.co.id",
+      "message": "Add class ValidationUtils in common module\n\n- Validate model based on javax.validation.Validator\n- Add test for the class\n- Add dependencies in common module\n- Change test dependency \"google guava\" to \"caffeine guava\" (taken from spring boot dependencies)\n- Add developer in parent pom\n"
+    },
+    {
+      "sha": "4de16f8c0f5a101b3a50eecbee754f57347cdc81",
+      "date": "2019-07-07T13:47:02+07:00",
+      "author": "David Christianto",
+      "email": "david.christianto1@gmail.com",
+      "message": "Merge pull request #2 from davidch93/dev\n\nMove all dependency management to BOM module"
+    },
+    {
+      "sha": "a79bda9501b1dd898fa527a2e8d57aa874a44e47",
+      "date": "2019-07-05T19:22:07+07:00",
+      "author": "smsidki_",
+      "email": "sidqi_sm@nexsoft.co.id",
+      "message": "Move all dependency management to BOM module\n\n- Add spring boot dependencies to core BOM\n- Remove spring boot starter parent\n"
+    },
+    {
+      "sha": "74f1e4319274316974c51bcfcfb48d5fa4e2a9ee",
+      "date": "2019-06-30T15:18:27+07:00",
+      "author": "David Christianto",
+      "email": "david.christianto1@gmail.com",
+      "message": "Updated README.md\n\nUpdated link"
+    },
+    {
+      "sha": "7e9142753bb7bb9958c857c9864f620dc50d5440",
+      "date": "2019-06-30T15:16:43+07:00",
+      "author": "davidch",
+      "email": "david.christianto1@gmail.com",
+      "message": "Merge remote-tracking branch 'origin/master'\n"
+    },
+    {
+      "sha": "483b438063e88ab1a539e8200e584fb33790c6ed",
+      "date": "2019-06-30T15:16:31+07:00",
+      "author": "davidch",
+      "email": "david.christianto1@gmail.com",
+      "message": "Updated spring boot version to 2.1.6.RELEASE\n"
+    },
+    {
+      "sha": "5190fea248f94c87842354de3dba4e3ccb6e2c8d",
+      "date": "2019-06-30T14:49:40+07:00",
+      "author": "David Christianto",
+      "email": "david.christianto1@gmail.com",
+      "message": "Update README.md\n\nAdded link and fixed some grammar."
+    },
+    {
+      "sha": "91d0c32cce0f4a64f1266d8a6c32adfa54182417",
+      "date": "2019-06-30T14:45:20+07:00",
+      "author": "davidch",
+      "email": "david.christianto1@gmail.com",
+      "message": "Reconstruct module.\n- Renamed module `core-util` into `core-common` and updated all references.\n- Moved KV & KVTest into `core-common` store in package model.\n- Updated README.md for `core-parent`, `core-rest` & `core-bom`.\n"
+    },
+    {
+      "sha": "5beef2f5725edea589e23e91272db2c539570ade",
+      "date": "2019-06-28T13:41:20+07:00",
+      "author": "David Christianto",
+      "email": "david.christianto1@gmail.com",
+      "message": "Merge pull request #1 from smsidki/dev\n\nAdd bill of material"
+    },
+    {
+      "sha": "5e62a2eef552e47c91d2ab6d91e83f7a46763e55",
+      "date": "2019-06-26T17:20:53+07:00",
+      "author": "davidch",
+      "email": "david.christianto1@gmail.com",
+      "message": "Updated README.md\n"
+    },
+    {
+      "sha": "45d62f8444810977dd29b04368c288bac5311a1a",
+      "date": "2019-06-26T17:11:35+07:00",
+      "author": "davidch",
+      "email": "david.christianto1@gmail.com",
+      "message": "Removed unused import.\n"
+    },
+    {
+      "sha": "51dde8e45340d6f2dde3492190f31de485a3215c",
+      "date": "2019-06-26T17:09:15+07:00",
+      "author": "davidch",
+      "email": "david.christianto1@gmail.com",
+      "message": "Moved KV to submodule core-dto and added some test case.\n"
+    },
+    {
+      "sha": "eafb631f951904f2bf9e24069e5c3959b58e41cd",
+      "date": "2019-06-26T13:14:42+07:00",
+      "author": "davidch",
+      "email": "david.christianto1@gmail.com",
+      "message": "Added an immutable key/value pair object with compatibility to use Collection.sort function.\n"
+    },
+    {
+      "sha": "4349775cd25a74052ba9b282fba28d782fa5c866",
+      "date": "2019-06-11T15:59:40+07:00",
+      "author": "davidch",
+      "email": "david.christianto1@gmail.com",
+      "message": "Added parameterize TimeZone.\n"
+    },
+    {
+      "sha": "d29d706e5b6f5ba9574ee603c482f10469662b5d",
+      "date": "2019-05-29T00:05:48+07:00",
+      "author": "smsidki_",
+      "email": "sidqi_sm@nexsoft.co.id",
+      "message": "Add bill of material\n"
+    },
+    {
+      "sha": "69374b22f830edc03a4ea9a3027bf40b86da8b6c",
+      "date": "2019-05-27T16:27:05+07:00",
+      "author": "davidch",
+      "email": "david.christianto1@gmail.com",
+      "message": "Updated default value to true.\n"
+    },
+    {
+      "sha": "2aa09931036cac9d950d7083f7d787047b46d3b4",
+      "date": "2019-05-23T16:51:40+07:00",
+      "author": "davidch",
+      "email": "david.christianto1@gmail.com",
+      "message": "Added dependency springfox-spring-webflux.\n"
+    },
+    {
+      "sha": "87f021fd7a48d811d48ca5d826fbab7a7818f0f7",
+      "date": "2019-04-25T10:36:39+07:00",
+      "author": "davidch",
+      "email": "david.christianto1@gmail.com",
+      "message": "Updated README.md\n"
+    },
+    {
+      "sha": "a7a111bd02b55c522c96d3b003223fca230a7749",
+      "date": "2019-04-25T10:27:59+07:00",
+      "author": "davidch",
+      "email": "david.christianto1@gmail.com",
+      "message": "Common update.\n- Added maven wrapper.\n- Fixed some Javadoc.\n- Updated .gitignore.\n"
+    },
+    {
+      "sha": "04226abdb0308506dad8c1bf27b07a06c30a1ece",
+      "date": "2019-04-22T16:28:18+07:00",
+      "author": "davidch",
+      "email": "david.christianto1@gmail.com",
+      "message": "Fixed and updated some issue.\n- Added constructor(string) in RestException.\n- Fixed componentScan value.\n"
+    },
+    {
+      "sha": "13f56c59a09336023907ed7b461068b446c5a03a",
+      "date": "2019-04-15T13:36:00+07:00",
+      "author": "davidch",
+      "email": "david.christianto1@gmail.com",
+      "message": "Added @EnableConfigurationProperties.\n"
+    },
+    {
+      "sha": "a8e81b4581ea3e6832bc4957470bb3c205eaed5b",
+      "date": "2019-04-15T12:40:12+07:00",
+      "author": "davidch",
+      "email": "david.christianto1@gmail.com",
+      "message": "Updated developers.\n"
+    },
+    {
+      "sha": "ee598a96dc0382b8c9881f08b13665e4b458d87d",
+      "date": "2019-04-14T18:32:57+07:00",
+      "author": "davidch",
+      "email": "david.christianto1@gmail.com",
+      "message": "Added new module for core-retry.\n"
+    },
+    {
+      "sha": "2b62c3e1d61ea5dc527fe77e6665c2d739a8c67d",
+      "date": "2019-04-14T17:21:44+07:00",
+      "author": "davidch",
+      "email": "david.christianto1@gmail.com",
+      "message": "Fixed javadoc.\n"
+    },
+    {
+      "sha": "d097e168caf6a70a228710c2bac4adbde94aeb50",
+      "date": "2019-04-12T13:58:21+07:00",
+      "author": "davidch",
+      "email": "david.christianto1@gmail.com",
+      "message": "Added developers.\n"
+    }
+  ],
+  "commit_sha": "1082b6724282836da0a99c5eb94bd39e238b8aa1",
+  "extracted_at": "2026-10-05T18:45:25.319998+00:00"
+}

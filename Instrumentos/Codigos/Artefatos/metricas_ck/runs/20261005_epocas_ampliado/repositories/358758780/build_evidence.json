@@ -1,0 +1,84 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "2.6.15",
+  "spring_boot_major": "2",
+  "java_versions_declared": "1.8;17;8",
+  "build_evidence": [
+    {
+      "file": "yu-api/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "yu-api/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "yu-api/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "yu-api/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "yu-api/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "yu-api/yu-admin/admin-archive/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "yu-api/yu-admin/admin-base/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "yu-api/yu-admin/admin-base/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "yu-api/yu-admin/admin-gpt/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "yu-api/yu-common/common-core/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "yu-api/yu-common/common-core/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "yu-api/yu-common/common-jpa/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "yu-api/yu-common/common-jpa/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "yu-api/yu-common/common-starters/common-multidb-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "yu-api/yu-common/common-starters/common-redis-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "yu-api/yu-common/common-starters/common-web-spring-boot-starter/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "yu-api/yu-generate/pom.xml",
+      "artifact": "spring-boot-starter-freemarker"
+    },
+    {
+      "file": "yu-api/yu-serve/serve-system/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "yu-api/yu-serve/serve-system/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    }
+  ]
+}

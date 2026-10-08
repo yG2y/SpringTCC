@@ -1,0 +1,24 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "4.0.0",
+  "spring_boot_major": "4",
+  "java_versions_declared": "17",
+  "build_evidence": [
+    {
+      "file": "backend/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "backend/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "backend/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "backend/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

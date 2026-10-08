@@ -1,0 +1,76 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 9,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "c24297fbe083c27b0c7f30e7e0666f83a4a97e12",
+      "date": "2026-08-30T16:21:03+08:00",
+      "author": "zhwxp",
+      "email": "zhwxp@live.com",
+      "message": "Attach the Mockito agent explicitly instead of self-attaching\n\nJava 21 warns that a library attaching an agent to its own JVM will stop working, so surefire now passes -javaagent with the mockito-core jar resolved by the dependency plugin, as Mockito's documentation recommends.\n"
+    },
+    {
+      "sha": "1655f28aeb085bded6acdd6d29ef249371a987a0",
+      "date": "2026-08-30T16:17:07+08:00",
+      "author": "zhwxp",
+      "email": "zhwxp@live.com",
+      "message": "Upgrade to Spring Boot 4.1.1 on Java 21\n\nSpring Integration 7.1 moved TcpInboundGateway from org.springframework.integration.ip.tcp to the ip.tcp.inbound subpackage; the import is the only source change. README now lists the jdk17 and jdk8 branches.\n"
+    },
+    {
+      "sha": "457b4ec6ab381122761dc88ce38ebed207959db4",
+      "date": "2026-08-30T16:07:22+08:00",
+      "author": "zhwxp",
+      "email": "zhwxp@live.com",
+      "message": "Add a TCP round-trip integration test\n\nTcpServerIntegrationTests binds an OS-assigned port and asserts the replies over a plain socket, covering both a single request and consecutive requests on one connection. ApplicationTests now also uses port 0 so the suite does not clash with a locally running instance.\n"
+    },
+    {
+      "sha": "74ef4b5e288d1b27fe52549c762970c43a45034e",
+      "date": "2026-08-30T15:56:18+08:00",
+      "author": "zhwxp",
+      "email": "zhwxp@live.com",
+      "message": "Upgrade to Spring Boot 3.5.16 on Java 17\n\nNo source changes were needed: the project uses no javax.* APIs, and the Spring Integration IP classes it relies on are unchanged in 6.5.x. README now points at the jdk8 branch for the Java 8 line.\n"
+    },
+    {
+      "sha": "77e4a5ec5fbb0b7a2c560ae19719321376455c2e",
+      "date": "2026-08-30T15:35:57+08:00",
+      "author": "zhwxp",
+      "email": "zhwxp@live.com",
+      "message": "Rewrite README with build, run, and protocol details\n\nDocument the CRLF framing required by the default ByteArrayCrLfSerializer, the tcp.server.port property, the message flow, and that the server is unauthenticated.\n"
+    },
+    {
+      "sha": "e712d642f88f69bfd3acea0d22e3a14620b98503",
+      "date": "2026-08-30T15:35:57+08:00",
+      "author": "zhwxp",
+      "email": "zhwxp@live.com",
+      "message": "Upgrade Maven wrapper to 3.9.16\n\nRegenerated with maven-wrapper-plugin 3.3.4 using the only-script distribution type, which drops the committed maven-wrapper.jar.\n"
+    },
+    {
+      "sha": "1f0615292c221bad6d35acfd1629890674254a29",
+      "date": "2026-08-30T15:35:57+08:00",
+      "author": "zhwxp",
+      "email": "zhwxp@live.com",
+      "message": "Upgrade to Spring Boot 2.7.18\n\n2.7.18 is the last Spring Boot line supporting Java 8. Migrate ApplicationTests to JUnit 5, since spring-boot-starter-test no longer ships the JUnit 4 vintage engine.\n"
+    },
+    {
+      "sha": "a0c6af15acfffd07d8e8da5ac2afcfc119eb7081",
+      "date": "2018-08-22T11:07:38+08:00",
+      "author": "zhwxp",
+      "email": "zhwxp@live.com",
+      "message": "Initial commit\n"
+    },
+    {
+      "sha": "891ff8cf15b659ec362aa8035ac77f92b92865f8",
+      "date": "2018-08-21T17:27:11+08:00",
+      "author": "zhwxp",
+      "email": "36395619+zhwxp@users.noreply.github.com",
+      "message": "Initial commit"
+    }
+  ],
+  "commit_sha": "c24297fbe083c27b0c7f30e7e0666f83a4a97e12",
+  "extracted_at": "2026-10-05T18:42:07.822420+00:00"
+}

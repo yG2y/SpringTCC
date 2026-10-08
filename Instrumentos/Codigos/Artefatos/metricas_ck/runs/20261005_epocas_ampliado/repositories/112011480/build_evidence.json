@@ -1,0 +1,20 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${spring-boot.version}",
+  "spring_boot_major": "unknown",
+  "java_versions_declared": "",
+  "build_evidence": [
+    {
+      "file": "cxf-spring-boot-server/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "cxf-spring-boot-server/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "cxf-spring-boot-server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

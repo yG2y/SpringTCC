@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "278e029aa27c2bc3d3640901d31d8f12fa20b789",
+      "date": "2026-03-06T16:41:46-05:00",
+      "author": "Matt Heitker",
+      "email": "heitkergm@acm.org",
+      "message": "updates\n\ndependency-check-maven 12.2.1\nlombok 1.18.46\nmaven-resources-plugin 3.5.0\nmicrometer 1.16.5\n\nmaven 3.9.15\n"
+    },
+    {
+      "sha": "3b146014bb55f553c9e010796c23a53868e2779d",
+      "date": "2026-01-30T14:19:03-05:00",
+      "author": "Matt Heitker",
+      "email": "heitkergm@acm.org",
+      "message": "updates\n\ncheckstyle 13.3.0\ngroovy 5.0.3\nlogback 1.5.29\njboss-logging 3.6.2.Final\nmaven-compiler-plugin 3.15.0\nmaven-dependency-plugin 3.10.0\nmaven-surefire-plugin 3.5.5\npmd 7.22.0\n"
+    },
+    {
+      "sha": "540537f0ea742aae460ff64cc0a614cbc17b7f4d",
+      "date": "2025-10-10T14:35:53-04:00",
+      "author": "Matt Heitker",
+      "email": "heitkergm@acm.org",
+      "message": "updates\n\ncheckstyle 13.0.0\nclassgraph 4.8.184\nclassmate 1.7.3\ndependency-check-maven 12.2.0\nhibernate 6.6.41.Final\njunit-jupiter 6.0.2\nlogback 1.5.26\nmicrometer 1.16.2\nplexus-compiler-api 2.16.2\nplexus-compiler-javac 2.16.2\npmd 7.20.0\nspring-boot 3.5.9 and all needed updates\nversions-maven-plugin 2.21.0\n\nuse nu.validator plugin instead of using exec to run the validator\n"
+    },
+    {
+      "sha": "3ad5cd57ea30c31173735af2e4bc553a2020adf3",
+      "date": "2025-08-24T15:32:40-04:00",
+      "author": "Matt Heitker",
+      "email": "heitkergm@acm.org",
+      "message": "updates\n\ncheckstyle 11.1.0\nexec-maven-plugin 3.6.1\ndependency-check-maven 12.1.6\nfont-awesome 7.0.1\njakarta.mail 2.0.4\nhibernate 6.6.31.Final\nhikaricp 7.0.2\njackson-bom 2.20.0\njedis 6.2.0\njunit-juniper 6.0.0\nlogback 1.5.19\nlombok 1.18.42\nmaven-compiler-plugin 3.14.1\nmaven-dependency-plugin 3.9.0\nmaven-enforcer-plugin 3.6.2\nmaven-javadoc-plugin 3.12.0\nmaven-surefire-plugin 3.5.4\nmaven-wrapper-plugin 3.3.4\nmicrometer 1.15.4\nmockito 5.20.0\npmd 7.17.0\npostgresql 42.7.8\nsnakeyaml 2.5\nspotbugs 4.9.6\nspotbugs-maven-plugin 4.9.6.0\nspring-boot 3.5.6\nspring-data-bom 2025.0.4\nspring-framework 6.2.11\nspring-security 6.5.5\ntomcat 10.1.47\nversions-maven-plugin 2.19.0\nxmlunit2 2.10.4\n\nfix deprecation warning by replacing .requireChannel with .requireHttps\n\nmodified dependency-check-maven to use serverId's nvdapikey and ossindex;\nsee documentation for the plugin\n"
+    },
+    {
+      "sha": "5647ca42d6504a7ebc5e01c1b502a58ab7d3b05d",
+      "date": "2025-06-24T15:52:08-04:00",
+      "author": "Matt Heitker",
+      "email": "heitkergm@acm.org",
+      "message": "updates\n\nbyte-buddy 1.17.7\ncheckstyle 11.0.0\nclassgraph 4.8.181\nfont-awesome 7.0.0\nhibernate 6.6.26.Final\nhibernate-validator 8.0.3.Final\nhikaricp 6.3.1\njackson-bom 2.19.2\njedis 6.1.0\njunit-jupiter 5.13.4\nmaven 3.9.11\nmaven-enforcer-plugin 3.6.1\nmaven-javadoc-plugin 3.11.3\nmaven-pmd-plugin 3.27.0\nmicrometer 1.15.2\nmockito 5.19.0\npmd 7.16.0\nspotbugs 4.9.4\nspotbugs-maven-plugin 4.9.4.0\nspring-boot 3.5.5\nspring-data-bom 2025.0.3\nspring-framework 6.2.10\nspring-security 6.5.3\ntomcat 10.1.44\nxmlunit2 2.10.3\n"
+    },
+    {
+      "sha": "55dd55d62800d5377199d1dd370de2a2379f4514",
+      "date": "2025-06-21T18:04:05-04:00",
+      "author": "Matt Heitker",
+      "email": "heitkergm@acm.org",
+      "message": "updates\n\ncheckstyle 10.25.1\nclassgraph 4.8.179\nspring-boot 3.5.3\n"
+    },
+    {
+      "sha": "e8eeeb9d9d7549156004fa4a29a1c4fcc99b4b6f",
+      "date": "2025-05-21T16:46:36-04:00",
+      "author": "Matt Heitker",
+      "email": "heitkergm@acm.org",
+      "message": "updates\n\nbyte-buddy 1.17.6\ncheckstyle 10.25.0\ndependency-check-maven 12.1.3\nexec-maven-plugin 3.5.1\ngit-commit-id-maven-plugin 9.0.2\ngroovy 4.0.27\nhibernate 6.6.18.Final\njackson-bom 2.19.1\njunit-jupiter 5.13.1\nmaven 3.9.10\nmaven-clean-plugin 3.5.0\nmicrometer 1.15.1\nmockito 5.18.0\npmd 7.14.0\npostgresql 42.7.7\nspring-boot 3.5.1\nspring-data-bom 2025.0.1\nspring-framework 6.2.8\nspring-security 6.5.1\nspring-session 3.5.1\ntomcat 10.1.42\nxmlunit2 2.10.2\n"
+    },
+    {
+      "sha": "3287f000f95c6cc0f8ffbd11926d5a13fc0296e9",
+      "date": "2025-03-28T15:43:07-04:00",
+      "author": "Matt Heitker",
+      "email": "heitkergm@acm.org",
+      "message": "updates\n\npmd 7.13.0\ncheckstyle 10.23.1\nbyte-buddy 1.17.5\nhibernate 6.6.15.Final\nlombok 1.18.38\nmaven-surefire-plugin 3.5.3\njava 24\njacoco-maven-plugin 0.8.13\nmockito 5.17.0\ndependency-check-maven 12.1.1\ntomcat 10.1.40\naspectj 1.9.24\nspring-boot 3.4.5\njunit-jupiter 5.12.2\nbulma 1.0.4\njackson-bom 2.19.0\nhikaricp 6.3.0\njedis 6.0.0\nmicrometer 1.15.0\ntomcat 10.1.41\nspring-framework 6.2.7\n"
+    },
+    {
+      "sha": "7e54d536026010b8c684338945ab4d7a47b1db81",
+      "date": "2025-02-21T15:49:58-05:00",
+      "author": "Matt Heitker",
+      "email": "heitkergm@acm.org",
+      "message": "Updates\n\njunit-jupiter 5.12.1\ncheckstyle 10.21.4\nhibernate 6.6.11.Final\nmaven-clean-plugin 3.4.1\nmaven-compiler-plugin 3.14.0\nlogback 1.5.18\nslf4j 2.0.17\nmaven-deploy-plugin 3.1.4\npmd 7.11.0\nmaven-install-plugin 3.1.4\ngroovy 4.0.26\njackson-bom 2.18.3\nspotbugs 4.9.3\nspotbugs-maven-plugin 4.9.3.0\nmockito 5.16.1\nbyte-buddy 1.17.2\ntomcat 10.1.39\nspring-framework 6.2.5\nspring-data-bom 2024.1.4\nmicrometer 1.14.5\naspectj 1.9.23\nspring-security 6.4.4\nspring-boot 3.4.4\n"
+    },
+    {
+      "sha": "0adfb84b157e2fc5894eeef07982f2feb124e07b",
+      "date": "2025-01-25T14:06:25-05:00",
+      "author": "Matt Heitker",
+      "email": "heitkergm@acm.org",
+      "message": "updates\n\nbulma 1.0.3\ncheckstyle 10.21.2\ndependency-check-maven 12.1.0\npmd 7.10.0\nfont-awesome 6.7.2\nhibernate 6.6.8.Final\nbyte-buddy 1.17.1\nspotbugs 4.9.1\nthymeleaf-layout-dialect 3.4.0\ntomcat 10.1.36\ngroovy 4.0.25\nmicrometer 1.14.4\nchange back to jedis client for redis\nspotbugs-maven-plugin 4.9.1.0\nsnakeyaml 2.4\ncommons-pool2 2.12.1\nspring-data-bom 2024.1.3\nspring-framework 6.2.3\nspring-security 6.4.3\nspring-session 3.4.2\nspring-boot 3.4.3\n"
+    },
+    {
+      "sha": "7afb73aa2c1ab75a57128bc1e0ba626cd2c9e93e",
+      "date": "2024-11-21T15:01:59-05:00",
+      "author": "Matt Heitker",
+      "email": "heitkergm@acm.org",
+      "message": "updates\n\nspring-boot 3.4.2\nhibernate 6.6.5.Final\npmd 7.9.0\njackson-bom 2.18.2\nchange javadoc link to jakarta.ee for version 10\ncheckstyle 10.21.1\ncommons-dbcp2 2.13.0\ndependency-check-maven 12.0.1\nset spring.threads.virtual.enabled=true for java virtual threads\nmaven-javadoc-plugin 3.11.2\nfont-awesome 6.7.1\nmicrometer 1.14.3\nthymeleaf 3.1.3.RELEASE\nthymeleaf-extras-springsecurity 3.1.3.RELEASE\ntomcat 10.1.34\nspring-framework 6.2.2\nspring-data-bom 2024.1.1\nbyte-buddy 1.16.1\njunit-jupiter 5.11.4\nspring-security 6.4.2\nspring-session 3.4.1\nreplace log4j2 with logback 1.5.16\nswitch redis to the default io.lettuce client\nhikaricp 6.2.1\nmockito 5.15.2\nassertj 3.27.3\nreplace log4j2 hard codings with slf4j\nreplace beanutils in password validator with spring bean wrapper\nfixup some vscode issues (warnings)\npostgresql 42.7.5\nspotbugs 4.9.0\nspring-data-bom 2024.1.2\n"
+    },
+    {
+      "sha": "7370805c56296575cfb29a04852501ce23d46d1d",
+      "date": "2024-10-25T13:36:23-04:00",
+      "author": "Matt Heitker",
+      "email": "heitkergm@acm.org",
+      "message": "Updates\n\npmd 7.7.0\nmaven-checkstyle-plugin 3.6.0\nmaven-dependency-plugin 3.8.1\ncheckstyle 10.20.1\nmaven-pmd-plugin 3.26.0\njackson-bom 2.28.1\ndependency-check-maven 11.1.0\nbyte-buddy 1.15.10\nmaven-javadoc-plugin 3.11.1\nmaven-surefire-plugin 3.5.2\ndowngrade maven-site-plugin to 3.21.0 (compatible with maven 3.x)\nhibernate 6.6.2.Final\nmicrometer 1.14.1\ntomcat 10.1.33\nspotbugs-maven-plugin 4.8.6.6\nspring-framework 6.1.15\nversions-maven-plugin 2.18.0\nfont-awesome 6.6.0\nlombok 1.18.36\nspring-data-bom 2024.0.6\nspring-boot 3.3.6\n"
+    },
+    {
+      "sha": "fa08e7462b30798037be65ef432d1d1931a76099",
+      "date": "2024-08-22T15:51:18-04:00",
+      "author": "Matt Heitker",
+      "email": "heitkergm@acm.org",
+      "message": "updates\n\nmaven 3.9.9\nbyte-buddy 1.15.7\ncheckstyle 10.18.2\nmaven-surefire-plugin 3.5.1\nmaven-pmd-plugin 3.25.0\nmaven-javadoc-plugin 3.10.1\npmd 7.6.0\ndependency-check-maven 11.0.0\nmockito 5.14.2\nbulma 1.0.2\nsnakeyaml 2.3\nspotbugs-maven-plugin 4.8.6.5\nlog4j2 2.24.1\nmicrometer 1.13.6\nspring-framework 6.1.14\nspring-data-bom 2024.0.4\nspring-boot 3.3.5\njava 23\nhibernate 6.6.1.Final\njackson-bom 2.18.0\njedis 5.2.0\njunit-jupiter 5.11.3\ntomcat 10.1.31\nspring-data-bom 2024.0.5\nspring-security 6.3.4\nspring-session 3.3.3\nexec-maven-plugin 3.5.0\nmaven-help-plugin 3.5.1\n\nswitch from tomcat-jdbc to commons-dbcp2\n"
+    },
+    {
+      "sha": "85b82d8add7d1fb1344ab170ddb39959956e53d7",
+      "date": "2024-07-11T14:50:01-04:00",
+      "author": "Matt Heitker",
+      "email": "heitkergm@acm.org",
+      "message": "Updates\n\nmaven-surefire-plugin 3.4.0\nspring-framework 6.1.12\nspring-data-bom 2024.0.2\ntomcat 10.1.26\njboss-logging 3.6.0.Final\nmaven-pmd-plugin 3.24.0\nversions-maven-plugin 2.17.1\ndependency-check-maven 10.0.3\nspring-boot 3.3.3\nmaven-site-plugin 4.0.0-M16\nmaven-javadoc-plugin 3.8.0\npmd 7.4.0\nfix spring-framework javadoc link\njunit-jupiter 5.11.0\ntomcat 10.1.28\nslf4j 2.0.16\nexec-maven-plugin 3.4.1\nmicrometer 1.13.3\njquery-validation 1.21.0\nhibernate 6.6.0.Final\nspring-data-bom 2024.0.3\nbyte-buddy 1.14.19\nmaven-deploy-plugin 3.1.3\nmaven-install-plugin 3.1.3\nspring-security 6.3.3\nspring-session 3.3.2\npostgresql 42.7.4\nmaven-checkstyle-plugin 3.5.0\nmaven-dependency-plugin 3.8.0\nmaven-help-plugin 3.5.0\n"
+    },
+    {
+      "sha": "a5b98d70eca798018623eec6e558f713b5d55988",
+      "date": "2024-06-14T15:46:09-04:00",
+      "author": "Matt Heitker",
+      "email": "heitkergm@acm.org",
+      "message": "Updates\n\nspring-framework 6.1.10\nspring-data-bom 2024.0.1\nmaven-surefire-plugin 3.3.0\nmaven 3.9.8\nspring-security 6.3.1\nspring-boot 3.3.1\nmaven-dependency-plugin 3.7.1\nspotbugs-maven-plugin 4.8.6.2\nspotbugs 4.8.6\npmd 7.3.0\nlombok 1.18.34\njquery-validation 1.20.1\nversions-maven-plugin 2.17.0\ndependency-check-maven 10.0.2\nmicrometer 1.13.2\njackson-bom 2.17.2\ngroovy 4.0.22\nbyte-buddy 1.14.18\n"
+    },
+    {
+      "sha": "5f7bbaaaad05914e8720cda95f505ddc819d4b85",
+      "date": "2024-05-24T14:26:13-04:00",
+      "author": "Matt Heitker",
+      "email": "heitkergm@acm.org",
+      "message": "Updates\n\nmaven-wrapper-plugin 3.3.2\ncheckstyle 10.17.0\nbulma 1.0.1\nassertj 3.26.0\nmaven-enforcer-plugin 3.5.0\npmd 7.2.0\ngson 2.11.0\nmaven-javadoc-plugin 3.7.0\nmaven-site-plugin 4.0.0.M15\nmaven 3.9.7\nbyte-buddy 1.14.17\nmaven-checkstyle-plugin 3.4.0\nmaven-help-plugin 3.4.1\ngit-commit-id-maven-plugin 9.0.0\nwebjars-locator-core 0.59\nmaven-dependency-plugin 3.7.0\nmaven-pmd-plugin 3.23.0\nmicrometer 1.13.1\n"
+    },
+    {
+      "sha": "4d546d0f5e416874a9686c46020ed86bba5586e2",
+      "date": "2024-04-20T14:42:58-04:00",
+      "author": "Matt Heitker",
+      "email": "heitkergm@acm.org",
+      "message": "Updates\n\nmaven-wrapper-plugin 3.3.1\ntomcat 10.1.24\njunit-jupiter 5.11.0-M2\nmaven-pmd-plugin 3.22.0\npmd 7.1.0\nbyte-buddy 1.14.16\nhibernate 6.5.2.Final\ncheckstyle 10.16.0\nxmlunit 2.10.0\nmaven-deploy-version 3.1.2\nmaven-install-version 3.1.2\nclassgraph 4.8.72\nspotbugs 4.8.5\njackson-bom 2.17.1\nspotbugs-maven-plugin 4.8.5.0\nmaven-site-plugin 4.0.0-M14\nmockito 5.12.0\naspectj 1.9.22.1\nmicrometer 1.13.0\ndependency-check-maven 9.2.0\nspring-data-bom 2023.1.6\nspring-session 3.2.3\nexec-maven-plugin 3.3.0\nspring-framework 6.1.8\nspring-boot 3.3.0\n"
+    },
+    {
+      "sha": "d2aa347facbf1fe5fa1a32686f31a073c69a6905",
+      "date": "2024-03-22T12:16:05-04:00",
+      "author": "Matt Heitker",
+      "email": "heitkergm@acm.org",
+      "message": "Updates\n\nclassgraph 4.8.170\nupgrade to java 22\naspectj 1.9.22\nupgrade pmd to 7.0.0\nbyte-buddy 1.14.13\nhibernate 6.5.0.CR2\ntomcat 10.1.20\nhikaricp 5.1.0\nbulma 1.0.0\ndependency-check-maven 9.1.0\ncheckstyle 10.15.0\njson-smart 2.5.1\njacoco-maven-plugin 0.8.12\nuse spring-data-envers instead of hibernate-envers\nfont-awesome 6.5.2\nspotbugs 4.8.4\nmicrometer 1.12.5\nspotbugs-maven-plugin 4.8.4.0\nslf4j 2.0.13\nspring-framework 6.1.6\nspring-data-bom 2023.1.5\ngroovy 4.0.21\nspring-security 6.2.4\nspring-boot 3.2.5\n"
+    },
+    {
+      "sha": "438a6621a61db75c457aa8c8eb10939b1a225ac2",
+      "date": "2024-02-28T13:38:22-05:00",
+      "author": "Matt Heitker",
+      "email": "heitkergm@acm.org",
+      "message": "updates\n\ncheckstyle 10.14.2\nwebjars-locator-core 0.58\nmockito 5.11.0\ngroovy 4.0.19\ngit-commit-id-maven-plugin 8.0.2\njson 20240303\nangus-activation 2.0.2\njakarta.mail 2.0.3\nlog4j2 2.23.1\nmicrometer 1.12.4\nplexus-compiler-javac 2.15.0\nplexus-compiler-api 2.15.0\njackson-bom 2.17.0\naspectj 1.9.21.2\npostgresql 42.7.3\nspring-framework 6.1.5\nuse spring jpa auditing,remove home-grown prepersist, preupdate\nupdate serialVersionUID\nfixup formatting config for vscode\nmove all .vscode entries to .config/Code/User\ndependency-check-maven 9.0.10\nspring-data-bom 2023.1.4\nspring-security 6.2.3\nmaven-compiler-plugin 3.13.0\nspring-session 3.2.2\nawaitility 4.2.1\nlombok 1.18.32\ngroovy 4.0.20\nspring-boot 3.2.4\n"
+    },
+    {
+      "sha": "0e97b5a8d9008e6ec574c172ea695919689133ab",
+      "date": "2024-02-22T14:33:16-05:00",
+      "author": "Matt Heitker",
+      "email": "heitkergm@acm.org",
+      "message": "updates\n\nexec-maven-plugin 3.2.0\nspring-boot 3.2.3\n"
+    },
+    {
+      "sha": "cdf1f2e1b772804c73b8c55ce9c2268a688ba02e",
+      "date": "2024-01-21T14:39:54-05:00",
+      "author": "Matt Heitker",
+      "email": "heitkergm@acm.org",
+      "message": "updates\n\nchange copyright date to 2024\ngroovy 4.0.18\nmockito 5.10.0\nassertj 3.25.3\ncheckstyle 10.13.0\nhibernate 6.4.4.Final\njunit 5.10.2\nslf4j 2.0.12\nspotbugs-maven-plugin 4.8.3.1\naspectj 1.9.21.1\nspring-framework 6.1.4\nmicrometer 1.12.3\nbyte-buddy 1.14.12\nspring-data-bom 2023.1.3\nspring-security 6.2.2\ntomcat 10.1.19\npostgresql 42.7.2\nlog4j2 2.23.0\n"
+    },
+    {
+      "sha": "2744c89de181615653d2cfecd4ee4037bf3f0dbd",
+      "date": "2023-12-22T14:43:30-05:00",
+      "author": "Matt Heitker",
+      "email": "heitkergm@acm.org",
+      "message": "updates\n\nbyte-buddy 1.14.11\nmaven-compiler-plugin 3.12.1\njackson-bom 2.16.1\nlog4j2 2.22.1\nslf4j 2.0.11\ncheckstyle 10.12.7\nassertj 3.25.1\nclassmate 1.7.0\ndependency-check-maven 9.0.9\nadd -proc:all to compiler\ntomcat 10.1.18\nmaven-surefire-plugin 3.2.5\nmicrometer 1.12.2\nspring-framework 6.1.3\nspring-data-bom 2023.1.2\nspotbugs-maven-plugin 4.8.3.0\nmockito 5.9.0\nhibernate 6.4.2.Final\nspring-boot 3.2.2\n"
+    },
+    {
+      "sha": "0267d95eca2701c7939783ee174d9e784de61c6a",
+      "date": "2023-11-28T12:38:33-05:00",
+      "author": "Matt Heitker",
+      "email": "heitkergm@acm.org",
+      "message": "updates\n\ndependency-check-maven 9.0.7\nspotbugs 4.8.3\nmaven 3.9.6\ngroovy 4.0.16\nhibernate 6.4.1.Final\nmockito 5.8.0\nmaven-javadoc-plugin 3.6.3\nspotbugs-maven-plugin 4.8.2.0\npostgresql 42.7.1\ncheckstyle 10.12.6\naspectj 1.9.21\nmicrometer 1.12.1\nplexus-compiler-api 2.14.2\nplexus-compiler-javac 2.14.2\ntomcat 10.1.17\nmaven-surefire-plugin 3.2.3\nspring-framework 6.1.2\nmaven-site-plugin 4.0.0-M13\nmaven-compiler-plugin 3.12.0\nfont-awesome 6.5.1\nspring-security 6.2.1\nspring-session 3.2.1\nspring-boot 3.2.1\n"
+    },
+    {
+      "sha": "77e44bd07ad5b91bebf95c728209dfdc757b7b85",
+      "date": "2023-11-25T21:12:40-05:00",
+      "author": "Matt Heitker",
+      "email": "heitkergm@acm.org",
+      "message": "Updates\n\ndependency-check-maven 9.0.1\n"
+    },
+    {
+      "sha": "d3b4648bd3d2ecf77a147ce44c949f31f7b08932",
+      "date": "2023-10-22T17:41:35-04:00",
+      "author": "Matt Heitker",
+      "email": "heitkergm@acm.org",
+      "message": "Updates\n\ndependency-check-maven 8.4.3\nlog4j2 2.22.0\nmaven-checkstyle-plugin 3.3.1\nmaven-dependency-plugin 3.6.1\nmaven-surefire-plugin 3.2.2\nmaven-clean-plugin 3.3.2\nclassgraph 4.8.165\nmaven-pmd-plugin 3.21.2\nmockito 5.7.0\njunit-jupiter 5.10.1\nmaven-javadoc-plugin 3.6.2\nspotbugs-maven-plugin 4.8.1.0\nspotbugs 4.8.1\nwebjars-locator-core 0.55\nmicrometer 1.12.0\nclassmate 1.6.0\ncheckstyle 10.12.5\njackson-bom 2.16.0\nspring-data-bom 2023.1.0\nspring-framework 6.1.1\ntomcat 10.1.16\nexec-maven-plugin 3.1.1\nversions-maven-plugin 2.16.2\nspring-security 6.2.0\nbyte-buddy 1.14.10\npostgresql 42.7.0\nspring-session 3.2.0\njedis 5.1.0\nspring-boot 3.2.0\nhibernate 4.3.2.Final\nmaven-site-plugin 4.0.0-M12\n"
+    },
+    {
+      "sha": "87420ef19ea0876134d0e5c1f499ceb3f374cbe5",
+      "date": "2023-09-21T12:19:26-04:00",
+      "author": "Matt Heitker",
+      "email": "heitkergm@acm.org",
+      "message": "updates\n\nspring-boot 3.1.5\nmaven-spotbugs-plugin 4.7.3.6\ncheckstyle 10.12.4\nmaven 3.9.5\nmaven-site-plugin 4.0.0-M11\nbyte-buddy 1.14.9\nmockito 5.6.0\ntomcat 10.1.15\nmicrometer 1.11.5\njquery-validation 1.20.0\nhibernate 6.3.1.Final\njedis 4.4.5\nspring-framework 6.0.13\nspring-data-bom 2023.0.5\nspotbugs 4.8.0\njackson-bom 2.15.3\njson 20231013\nglassfish-jaxb 4.0.4\nlog4j2 2.21.0\nwebjars-locator-core 0.54\n"
+    },
+    {
+      "sha": "b2759f88c8b35279a5ea9f50342e8c29bf00df44",
+      "date": "2023-08-28T14:59:58-04:00",
+      "author": "Matt Heitker",
+      "email": "heitkergm@acm.org",
+      "message": "updates\n\ncheckstyle 10.12.3\nbyte-buddy 1.14.7\nsnakeyaml 2.2\njquery 3.7.1\nslf4j 2.0.9\njedis reverted to 4.0.4\nhibernate 6.2.8.Final\njson-smart 2.5.0\naspectj 1.9.20.1\nremove unsupported ciphers\nmaven-enforcer-plugin 3.4.1\nmicrometer 1.11.4\nspring-data-bom 2023.0.4\nmaven-javadoc-plugin 3.6.0\nthymeleaf-layout-dialect 3.3.0\nspring-security 6.1.4\njava 21\nlombok 1.18.30\nversions-maven-plugin 2.16.1\n"
+    },
+    {
+      "sha": "77ba2b5e6a437d02a1fb51b837e71f61fe2fd8fe",
+      "date": "2023-08-25T13:31:05-04:00",
+      "author": "Matt Heitker",
+      "email": "heitkergm@acm.org",
+      "message": "updates\n\ntomcat 10.1.13\n"
+    },
+    {
+      "sha": "c243a0f127c5ac66c6365ee1ee4542ab60196467",
+      "date": "2023-08-07T12:29:53-04:00",
+      "author": "Matt Heitker",
+      "email": "heitkergm@acm.org",
+      "message": "updates\n\nsnakeyaml 2.1\nmaven 3.9.4\ntomcat 10.1.12\nbyte-buddy 1.14.6\nmicrometer 1.11.3\nfont-awesome 6.4.2\naspectj 1.9.29\nclassgraph 4.8.162\nspring-data-bom 2023.0.3\nspring-session 3.1.2\ndependency-check-maven 8.4.0\nmaven-enforcer 3.4.0\nspring-security 6.1.3\nmockito 5.5.0\nspring-boot 3.1.3\n"
+    },
+    {
+      "sha": "dbe44fdd2ea6413b274448fdb9b387cb91bec31d",
+      "date": "2023-07-22T13:10:02-04:00",
+      "author": "Matt Heitker",
+      "email": "heitkergm@acm.org",
+      "message": "updates\n\nhibernate 6.2.7.Final\njunit-jupiter 5.10.0\ncheckstyle 10.12.2\nthymeleaf-extras-springsecurity.version 3.1.2.RELEASE\nthymeleaf 3.1.2.RELEASE\nmaven 3.9.3\n"
+    }
+  ],
+  "commit_sha": "278e029aa27c2bc3d3640901d31d8f12fa20b789",
+  "extracted_at": "2026-10-05T18:30:21.321864+00:00"
+}

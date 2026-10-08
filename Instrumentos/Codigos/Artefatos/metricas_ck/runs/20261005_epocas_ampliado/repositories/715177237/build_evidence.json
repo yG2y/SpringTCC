@@ -1,0 +1,88 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${spring-boot-dependencies.version};3.3.13;4.1.1",
+  "spring_boot_major": "multiple",
+  "java_versions_declared": "${java.version};17;21",
+  "build_evidence": [
+    {
+      "file": "core/springboot-core/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "core/springboot-core/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "core/springboot-core/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "dependencies/springboot/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "examples/allcomponent-springboot-sample/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "examples/allcomponent-springboot-sample/pom.xml",
+      "artifact": "spring-boot-starter-artemis"
+    },
+    {
+      "file": "examples/allcomponent-springboot-sample/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "examples/core-only-springboot-sample/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "examples/core-only-springboot-sample/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "examples/core-only-springboot-sample/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "security/springboot-security/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "security/springboot-security/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "security/springboot-security/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "starters/camelbee-springboot-starter/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "starters/camelbee-springboot-starter/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "starters/camelbee-springboot-starter/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "starters/camelbee-springboot-starter/pom.xml",
+      "artifact": "spring-boot-starter-jetty"
+    },
+    {
+      "file": "starters/camelbee-springboot-starter/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "starters/camelbee-springboot-starter/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "starters/camelbee-springboot-starter/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

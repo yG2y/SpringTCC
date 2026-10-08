@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "cf577c98e66cdcc9c10d582da006c22b0d8da8fa",
+      "date": "2022-11-25T20:19:49+03:00",
+      "author": "syermakov",
+      "email": "hekate.dev@gmail.com",
+      "message": "Set version to 4.1.3\n"
+    },
+    {
+      "sha": "fcfd5f9a41a52274b3a5cb097a39dba48fef1906",
+      "date": "2022-11-25T19:02:10+03:00",
+      "author": "syermakov",
+      "email": "hekate.dev@gmail.com",
+      "message": "Dependency upgrade.\n  - Spring Boot 2.6.13\n  - Zookeeper Curator 5.3.0\n  - Jetcd 0.7.3\n  - Fabric8io Kubernetes Client 6.1.1\n  - Apache JClouds 2.5.0\n  - AWS SDK 1.12.313\n"
+    },
+    {
+      "sha": "196e15206dea66c9a91b187fcddcecf5a48943ee",
+      "date": "2022-08-11T21:42:22+03:00",
+      "author": "syermakov",
+      "email": "hekate.dev@gmail.com",
+      "message": "Upgrade to codecov-action@v3 in GitHub Actions\n"
+    },
+    {
+      "sha": "eecc4481675ae1705597ae6cfe6dbd07efff9d87",
+      "date": "2022-05-12T22:07:57+03:00",
+      "author": "syermakov",
+      "email": "hekate.dev@gmail.com",
+      "message": "Add v.4.1.2 link.\n"
+    },
+    {
+      "sha": "d23267bef8100f99bd964c73c51526d3134a7fa5",
+      "date": "2022-05-12T21:39:47+03:00",
+      "author": "syermakov",
+      "email": "hekate.dev@gmail.com",
+      "message": "Set version to 4.1.2\n"
+    },
+    {
+      "sha": "fcd728ac71960a19c273769133c10a07c43fa68d",
+      "date": "2022-05-12T19:50:14+03:00",
+      "author": "syermakov",
+      "email": "hekate.dev@gmail.com",
+      "message": "Fix broken order in seed node selection logic in case of network timeouts\n"
+    },
+    {
+      "sha": "b6b25397237ad27230a974edf9cb4f6796c09d53",
+      "date": "2022-05-11T15:19:39+03:00",
+      "author": "syermakov",
+      "email": "hekate.dev@gmail.com",
+      "message": "Fix merge conflict.\n"
+    },
+    {
+      "sha": "1f96973b17544175b4f9ddb35df70f51393f803b",
+      "date": "2022-05-11T14:45:15+03:00",
+      "author": "syermakov",
+      "email": "hekate.dev@gmail.com",
+      "message": "Set version to 4.1.1\n"
+    },
+    {
+      "sha": "7118a3d6bbb92cb1d4f19e842570d99c435a11d4",
+      "date": "2022-05-11T14:42:51+03:00",
+      "author": "syermakov",
+      "email": "hekate.dev@gmail.com",
+      "message": "Add 'hekate.cluster.seed-node-fail-fast' configuration property (controls handling of seed node timeouts).\n"
+    },
+    {
+      "sha": "45c5fd8e242d291e35f7c53c3fe391fd468b9507",
+      "date": "2022-05-11T14:11:06+03:00",
+      "author": "syermakov",
+      "email": "hekate.dev@gmail.com",
+      "message": "Do not send redundant join requests to a node if there is already an inflight join request to the same node.\n"
+    },
+    {
+      "sha": "412ff852a2130764efbfea3a322c50d80843a1a3",
+      "date": "2022-04-03T19:45:49+03:00",
+      "author": "syermakov",
+      "email": "hekate.dev@gmail.com",
+      "message": "Fix typo.\n"
+    },
+    {
+      "sha": "90aef2e3a208bdef5c2afec8ad08634a5fef13b0",
+      "date": "2022-04-03T19:16:05+03:00",
+      "author": "syermakov",
+      "email": "hekate.dev@gmail.com",
+      "message": "Set version to 4.1.0.\n"
+    },
+    {
+      "sha": "782e694315ed820086cfbf5e42c781f76fc53e1c",
+      "date": "2022-04-03T19:12:37+03:00",
+      "author": "syermakov",
+      "email": "hekate.dev@gmail.com",
+      "message": "Update README.md [ci skip].\n"
+    },
+    {
+      "sha": "9db14bc7ac090599e20a9657905d702a9665756e",
+      "date": "2022-02-20T23:00:31+03:00",
+      "author": "syermakov",
+      "email": "hekate.dev@gmail.com",
+      "message": "Build on JDK 17.\n"
+    },
+    {
+      "sha": "d146155b5f29323f1de76777d9c74bf2d9cfb403",
+      "date": "2022-02-20T21:15:34+03:00",
+      "author": "syermakov",
+      "email": "hekate.dev@gmail.com",
+      "message": "GitHub Actions with setup-java@v2.\n"
+    },
+    {
+      "sha": "f3ee47fe80aa8442ad77d7480d995c3f1fe30a8c",
+      "date": "2022-02-20T18:09:39+03:00",
+      "author": "syermakov",
+      "email": "hekate.dev@gmail.com",
+      "message": "Build on JDK 17.\n"
+    },
+    {
+      "sha": "19684b79eebd1afddf6fc49514d48ac8d5ab6c66",
+      "date": "2022-01-28T20:16:10+03:00",
+      "author": "syermakov",
+      "email": "hekate.dev@gmail.com",
+      "message": "Merge branch 'master' into dev\n\n# Conflicts:\n#\tfindbugs/exclude.xml\n#\thekate-codec-fst/pom.xml\n#\thekate-codec-fst/src/main/java/io/hekate/codec/fst/package-info.java\n#\thekate-codec-kryo/pom.xml\n#\thekate-codec-kryo/src/main/java/io/hekate/codec/kryo/package-info.java\n#\thekate-core/src/main/java/io/hekate/codec/AutoSelectCodecFactory.java\n#\thekate-core/src/main/java/io/hekate/codec/HekateSerializableClasses.java\n#\thekate-core/src/main/java/io/hekate/codec/fst/FstCodec.java\n#\thekate-core/src/main/java/io/hekate/codec/fst/FstCodecFactory.java\n#\thekate-core/src/main/java/io/hekate/codec/fst/package-info.java\n#\thekate-core/src/main/java/io/hekate/codec/kryo/JavaKaffeeSerializersRegistrar.java\n#\thekate-core/src/main/java/io/hekate/codec/kryo/KryoCodec.java\n#\thekate-core/src/main/java/io/hekate/codec/kryo/KryoCodecFactory.java\n#\thekate-core/src/main/java/io/hekate/codec/kryo/package-info.java\n#\thekate-core/src/test/java/io/hekate/codec/AutoSelectCodecFactoryTest.java\n#\thekate-core/src/test/java/io/hekate/codec/HekateSerializableClassesTest.java\n#\thekate-core/src/test/java/io/hekate/codec/fst/FstCodecFactoryTest.java\n#\thekate-core/src/test/java/io/hekate/codec/fst/FstCodecTest.java\n#\thekate-core/src/test/java/io/hekate/codec/kryo/KryoCodecFactoryTest.java\n#\thekate-core/src/test/java/io/hekate/codec/kryo/KryoCodecTest.java\n#\thekate-core/src/test/java/io/hekate/javadoc/codec/fst/FstCodecFactoryJavadocTest.java\n#\thekate-core/src/test/java/io/hekate/javadoc/codec/kryo/KryoCodecFactoryJavadocTest.java\n#\thekate-spring-boot/src/main/java/io/hekate/spring/boot/codec/HekateFstCodecConfigurer.java\n#\thekate-spring-boot/src/main/java/io/hekate/spring/boot/codec/HekateKryoCodecConfigurer.java\n#\thekate-spring-boot/src/test/java/io/hekate/spring/boot/codec/HekateCodecConfigurerTest.java\n"
+    },
+    {
+      "sha": "e99fdb38a1383ca10b2f31b1f3951e6817a13722",
+      "date": "2022-01-28T20:15:33+03:00",
+      "author": "syermakov",
+      "email": "hekate.dev@gmail.com",
+      "message": "Update copyright to 2022.\n"
+    },
+    {
+      "sha": "ae34460f0470c414989871cf0b5618d96c815e3c",
+      "date": "2022-01-28T20:13:41+03:00",
+      "author": "syermakov",
+      "email": "hekate.dev@gmail.com",
+      "message": "Update copyright to 2022.\n"
+    },
+    {
+      "sha": "9d27f48271721b17e5c2015f4221b73f076e32c2",
+      "date": "2021-10-04T22:41:04+03:00",
+      "author": "syermakov",
+      "email": "hekate.dev@gmail.com",
+      "message": "Build on JDK 17.\n"
+    },
+    {
+      "sha": "df4bba1d023209b0f6107ec1059ea1f8f9576e94",
+      "date": "2021-10-02T23:55:15+03:00",
+      "author": "syermakov",
+      "email": "hekate.dev@gmail.com",
+      "message": "Remove Kryo and FST codecs.\n"
+    },
+    {
+      "sha": "b1aef5bc22eeaea33a7a13a71282b9484c234631",
+      "date": "2021-10-02T19:00:30+03:00",
+      "author": "syermakov",
+      "email": "hekate.dev@gmail.com",
+      "message": "Dependency upgrades (Spring Boot 2.5.5, ZooKeeper Curator 5.2.0, jEtcd 0.5.10, Consul Client 1.5.3, Kubernetes Client 5.6.0, jCoulds 2.4.0, AWS SDK 1.13.43)\n"
+    },
+    {
+      "sha": "37b0278e9b05afcf2466ea9ae1438abb09d76157",
+      "date": "2021-08-10T20:35:55+03:00",
+      "author": "syermakov",
+      "email": "hekate.dev@gmail.com",
+      "message": "Fix CVE-2020-8908.\n"
+    },
+    {
+      "sha": "c7ca08881a55e82532eba7b17cca46e5863ffca2",
+      "date": "2021-04-17T01:30:25+03:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump guava from 28.1-jre to 29.0-jre in /hekate-parent (#7)\n\nBumps [guava](https://github.com/google/guava) from 28.1-jre to 29.0-jre.\n- [Release notes](https://github.com/google/guava/releases)\n- [Commits](https://github.com/google/guava/commits)\n\nSigned-off-by: dependabot[bot] <support@github.com>\n\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: syermakov <hekate.dev@gmail.com>"
+    },
+    {
+      "sha": "f819bc9cee25630bf2e67f9c67af998f303b6a8f",
+      "date": "2021-04-16T22:30:21+03:00",
+      "author": "syermakov",
+      "email": "hekate.dev@gmail.com",
+      "message": "Tests stability improvements.\n"
+    },
+    {
+      "sha": "50f9df9b76d92026582b0795c385a35ce10eef4a",
+      "date": "2021-04-16T22:21:13+03:00",
+      "author": "syermakov",
+      "email": "hekate.dev@gmail.com",
+      "message": "Tests stability improvements.\n"
+    },
+    {
+      "sha": "56ddca3e1c9f42090f4ee51add72e4ab7170ccb0",
+      "date": "2021-04-08T01:30:59+03:00",
+      "author": "syermakov",
+      "email": "hekate.dev@gmail.com",
+      "message": "Fix flaky test.\n"
+    },
+    {
+      "sha": "181f18fa67f36ad5547f31bdff3db04cb3f42744",
+      "date": "2021-04-07T23:08:51+03:00",
+      "author": "syermakov",
+      "email": "hekate.dev@gmail.com",
+      "message": "Temporary disabled an unstable test.\n"
+    },
+    {
+      "sha": "30c383fc316e076378b059c3a1b8d9313d5545fc",
+      "date": "2021-04-07T20:07:08+03:00",
+      "author": "syermakov",
+      "email": "hekate.dev@gmail.com",
+      "message": "Fix environment-dependent test.\n"
+    },
+    {
+      "sha": "f25c1c50b73a90b6bda6840e799d3ef7100e0d30",
+      "date": "2021-04-07T20:04:37+03:00",
+      "author": "syermakov",
+      "email": "hekate.dev@gmail.com",
+      "message": "Tests coverage improvements.\n"
+    }
+  ],
+  "commit_sha": "cf577c98e66cdcc9c10d582da006c22b0d8da8fa",
+  "extracted_at": "2026-10-05T18:15:05.113656+00:00"
+}

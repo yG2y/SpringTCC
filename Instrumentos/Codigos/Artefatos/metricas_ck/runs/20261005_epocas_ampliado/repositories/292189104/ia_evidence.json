@@ -1,0 +1,160 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 21,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "c5acfac0916d0ffc1e0f89b104169c67d1005855",
+      "date": "2023-04-01T08:54:25+05:30",
+      "author": "K Siva Prasad Reddy",
+      "email": "sivaprasadreddy.k@gmail.com",
+      "message": "[maven-release-plugin] prepare for next development iteration\n"
+    },
+    {
+      "sha": "46ca4dbcbeced76a47e3b22366a5495908e77a87",
+      "date": "2023-04-01T08:54:22+05:30",
+      "author": "K Siva Prasad Reddy",
+      "email": "sivaprasadreddy.k@gmail.com",
+      "message": "[maven-release-plugin] prepare release localstack-spring-boot-starter-0.0.3\n"
+    },
+    {
+      "sha": "1e9735b42375c68956f867c6ed26c8533a6e2be5",
+      "date": "2023-04-01T08:48:53+05:30",
+      "author": "K Siva Prasad Reddy",
+      "email": "sivaprasadreddy.k@gmail.com",
+      "message": "Upgrading library versions\n"
+    },
+    {
+      "sha": "586860fb3b15616b32a597c85efcfab5664bc5c2",
+      "date": "2022-05-04T22:00:03+06:30",
+      "author": "P. Mohan",
+      "email": "pmverma.cs@gmail.com",
+      "message": "Update testcontainers version (#13)\n\n"
+    },
+    {
+      "sha": "4911b19c0c31eeee133c36f9f04bd48cdb1fd6fe",
+      "date": "2022-05-04T18:02:18+06:30",
+      "author": "P. Mohan",
+      "email": "pmverma.cs@gmail.com",
+      "message": "Remove requesting non-mapped, deprecated services port. (#12)\n\nCo-authored-by: P. Mohan <p.mohan@kbzbank.com>"
+    },
+    {
+      "sha": "f4300b77cb30017f5a42c4341ea352eb9a6d9f60",
+      "date": "2020-09-06T17:49:40+05:30",
+      "author": "K Siva Prasad Reddy",
+      "email": "sivaprasadreddy.k@gmail.com",
+      "message": "[maven-release-plugin] prepare for next development iteration\n"
+    },
+    {
+      "sha": "8da328086117ecc8d576c334e12d91738f152b06",
+      "date": "2020-09-06T17:49:29+05:30",
+      "author": "K Siva Prasad Reddy",
+      "email": "sivaprasadreddy.k@gmail.com",
+      "message": "[maven-release-plugin] prepare release localstack-spring-boot-starter-0.0.2\n"
+    },
+    {
+      "sha": "0da110292be93595f4b0c8aa8fb2587cb29588d8",
+      "date": "2020-09-06T17:43:19+05:30",
+      "author": "Neha Jain",
+      "email": "neha.jain216@gmail.com",
+      "message": "Neha | Updated README file (#6)\n\n"
+    },
+    {
+      "sha": "00d72a1dc01aa96ccc92ade6d6b92939bd734c4b",
+      "date": "2020-09-06T17:03:37+05:30",
+      "author": "K. Siva Prasad Reddy",
+      "email": "sivaprasadreddy.k@gmail.com",
+      "message": "Merge pull request #5 from sivalabs/v0.0.2\n\nAdd auto-configuration for SNS, DYNAMODB, DYNAMODBSTREAMS, KINESIS, IAM, SECRETSMANAGER, CLOUDWATCH, LAMBDA services"
+    },
+    {
+      "sha": "50d23f4bb45027e3f73d25ee4d152e2ad430fedd",
+      "date": "2020-09-06T16:49:16+05:30",
+      "author": "K Siva Prasad Reddy",
+      "email": "sivaprasadreddy.k@gmail.com",
+      "message": "Siva | Adding tests to verify auto-configured AWS services.\n"
+    },
+    {
+      "sha": "3623d6cf7722853cd4d7986c40f833504b0d5f09",
+      "date": "2020-09-05T19:25:50+05:30",
+      "author": "K Siva Prasad Reddy",
+      "email": "sivaprasadreddy.k@gmail.com",
+      "message": "Siva | Adding Maven Central Badge.\n"
+    },
+    {
+      "sha": "bf4a7badddb8df2d35fc99e00346a1bee83b1081",
+      "date": "2020-09-05T19:07:47+05:30",
+      "author": "K Siva Prasad Reddy",
+      "email": "sivaprasadreddy.k@gmail.com",
+      "message": "Siva | Created meta-annotation for LocalStackService.\n"
+    },
+    {
+      "sha": "fd21d5f58b482a705164ec11a443748dec4d2556",
+      "date": "2020-09-05T11:29:22+05:30",
+      "author": "K Siva Prasad Reddy",
+      "email": "sivaprasadreddy.k@gmail.com",
+      "message": "Siva | Removed registration of non async type of AmazonXXX beans.\n"
+    },
+    {
+      "sha": "5de9d620646c840c90ba0c1a5ead628de844ced7",
+      "date": "2020-09-04T18:23:00+05:30",
+      "author": "K Siva Prasad Reddy",
+      "email": "sivaprasadreddy.k@gmail.com",
+      "message": "Siva | Adding AutoConfiguration for AmazonDynamoDB.\n"
+    },
+    {
+      "sha": "d01566666cfac0636c83c77b631216c52b902f64",
+      "date": "2020-09-04T16:03:47+05:30",
+      "author": "K Siva Prasad Reddy",
+      "email": "sivaprasadreddy.k@gmail.com",
+      "message": "Siva | Adding AutoConfiguration for AmazonSNS.\n"
+    },
+    {
+      "sha": "c6962aef8a3823f003fb108a80c301c88bfa7bfd",
+      "date": "2020-09-03T12:06:25+05:30",
+      "author": "K Siva Prasad Reddy",
+      "email": "sivaprasadreddy.k@gmail.com",
+      "message": "Siva | Update README to include usage instructions.\n"
+    },
+    {
+      "sha": "617da35733f59f8d8283ab63f51e6adc46c21830",
+      "date": "2020-09-03T11:47:36+05:30",
+      "author": "K Siva Prasad Reddy",
+      "email": "sivaprasadreddy.k@gmail.com",
+      "message": "Siva | Update README to include badge and increase version for sample.\n"
+    },
+    {
+      "sha": "689e61def8dbb9e82a920dca8307502dde24d1c0",
+      "date": "2020-09-03T11:11:29+05:30",
+      "author": "K Siva Prasad Reddy",
+      "email": "sivaprasadreddy.k@gmail.com",
+      "message": "[maven-release-plugin] prepare for next development iteration\n"
+    },
+    {
+      "sha": "311da6d7a003c10cb454fea9b5c83ddc82ce4514",
+      "date": "2020-09-03T11:11:18+05:30",
+      "author": "K Siva Prasad Reddy",
+      "email": "sivaprasadreddy.k@gmail.com",
+      "message": "[maven-release-plugin] prepare release localstack-spring-boot-starter-0.0.1\n"
+    },
+    {
+      "sha": "3ec10e64370799134b86e024526b61616d01e2f3",
+      "date": "2020-09-03T11:03:26+05:30",
+      "author": "K Siva Prasad Reddy",
+      "email": "sivaprasadreddy.k@gmail.com",
+      "message": "Siva | Initial version of LocalStack SpringBoot Starter.\n"
+    },
+    {
+      "sha": "e828efa5849b96bc1b858c340cde68d384294480",
+      "date": "2020-09-02T11:07:45+05:30",
+      "author": "K. Siva Prasad Reddy",
+      "email": "sivaprasadreddy.k@gmail.com",
+      "message": "Initial commit"
+    }
+  ],
+  "commit_sha": "c5acfac0916d0ffc1e0f89b104169c67d1005855",
+  "extracted_at": "2026-10-05T18:26:47.293383+00:00"
+}

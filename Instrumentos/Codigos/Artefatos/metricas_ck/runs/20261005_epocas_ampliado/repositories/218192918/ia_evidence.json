@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "e03002ba566fe934b5cc112aa5ca26baa63d82ba",
+      "date": "2025-09-15T17:06:35-04:00",
+      "author": "Yaakov Chaikin",
+      "email": "ychaikin@users.noreply.github.com",
+      "message": "Emphasize assertion readout in documentation"
+    },
+    {
+      "sha": "24305db5f0f7a4ed160e7ff2ba0944c2324aa808",
+      "date": "2024-12-18T14:25:56-05:00",
+      "author": "Yaakov Chaikin",
+      "email": "ychaikin@users.noreply.github.com",
+      "message": "Update index.md"
+    },
+    {
+      "sha": "dc050b3ea2e69825a6a26796518197f79800b3cb",
+      "date": "2024-12-18T14:19:48-05:00",
+      "author": "Yaakov Chaikin",
+      "email": "ychaikin@users.noreply.github.com",
+      "message": "Update index.md"
+    },
+    {
+      "sha": "4abb872a5c684e232cee1b391897c7f4dd1121e3",
+      "date": "2024-12-18T14:17:20-05:00",
+      "author": "Yaakov Chaikin",
+      "email": "ychaikin@users.noreply.github.com",
+      "message": "Update index.md"
+    },
+    {
+      "sha": "c15dc40e70f8fa5c37092deb19ab8643c651ca7e",
+      "date": "2024-12-18T14:16:52-05:00",
+      "author": "Yaakov Chaikin",
+      "email": "ychaikin@users.noreply.github.com",
+      "message": "Update index.md"
+    },
+    {
+      "sha": "f3ec588b65a77eb8d421a33c06830ff9f05a677c",
+      "date": "2024-12-18T14:08:33-05:00",
+      "author": "Yaakov Chaikin",
+      "email": "ychaikin@users.noreply.github.com",
+      "message": "Update index.md"
+    },
+    {
+      "sha": "901a894c0102989d324acdcad333974a4af2a1e7",
+      "date": "2024-12-18T14:08:12-05:00",
+      "author": "Yaakov Chaikin",
+      "email": "ychaikin@users.noreply.github.com",
+      "message": "Update index.md"
+    },
+    {
+      "sha": "b77c507f0f38c77df7b5b9d92fa411c2b638b5aa",
+      "date": "2024-12-18T14:07:54-05:00",
+      "author": "Yaakov Chaikin",
+      "email": "ychaikin@users.noreply.github.com",
+      "message": "Update index.md"
+    },
+    {
+      "sha": "cd60a701661efa334abd05fbc26174a14a6d8fe2",
+      "date": "2024-12-18T14:07:31-05:00",
+      "author": "Yaakov Chaikin",
+      "email": "ychaikin@users.noreply.github.com",
+      "message": "Update index.md"
+    },
+    {
+      "sha": "c53a8eae4667358f8444dd2018c1749dd2af2e6c",
+      "date": "2024-12-18T14:07:07-05:00",
+      "author": "Yaakov Chaikin",
+      "email": "ychaikin@users.noreply.github.com",
+      "message": "Update index.md"
+    },
+    {
+      "sha": "b736a43487928c20e6e0fb7e048937767d3e3690",
+      "date": "2024-12-18T14:06:42-05:00",
+      "author": "Yaakov Chaikin",
+      "email": "ychaikin@users.noreply.github.com",
+      "message": "Update index.md"
+    },
+    {
+      "sha": "dce2fe4407c07eaeb94e84568ec6aeb4d2fb91f7",
+      "date": "2024-12-18T14:02:02-05:00",
+      "author": "Yaakov Chaikin",
+      "email": "ychaikin@users.noreply.github.com",
+      "message": "Update index.md"
+    },
+    {
+      "sha": "a1b41911c1d9774c06f882a5cc4444f3cb379e8d",
+      "date": "2024-12-18T14:01:48-05:00",
+      "author": "Yaakov Chaikin",
+      "email": "ychaikin@users.noreply.github.com",
+      "message": "Update index.md"
+    },
+    {
+      "sha": "144e7e205d9b1ef93a483acff7a563433f91ffa5",
+      "date": "2024-10-21T17:56:46-04:00",
+      "author": "Yaakov Chaikin",
+      "email": "ychaikin@users.noreply.github.com",
+      "message": "Upgrade to latest Spring Boot and latest Spring Framework along with another lib to fix vulnerabilities. (#46)\n\n"
+    },
+    {
+      "sha": "365c8178ff3b6e348c6c7f804d255269d7e7e9fd",
+      "date": "2024-10-21T16:41:35-04:00",
+      "author": "Yaakov Chaikin",
+      "email": "ychaikin@users.noreply.github.com",
+      "message": "Fix bug where Instant-based dates were output as time stamps instead of date format. Update javadoc and website instructions. (#45)\n\n"
+    },
+    {
+      "sha": "96f8dd558a0543cc5bc7648afe73d3b7bb721ede",
+      "date": "2024-10-20T20:53:09-04:00",
+      "author": "Yaakov Chaikin",
+      "email": "ychaikin@users.noreply.github.com",
+      "message": "Release 3.1.0 - adds UUID, -dbName flag for dataset generator, compatibility with JDK 17+ (#44)\n\n* Add Support For UUID type (originally by @thanasisKirmizis) (#43)\n\n* Fix bug where the dataset generator would fail to run when executed under JDK 21 and above.\n\n* Add ability to specify just the DB name and the generator should assume the URI to be mongodb://localhost:27017/\n\n* Update instructions that get printed out when correct args are not provided.\n\n* Update web site with new version and info. Update Javadoc to latest version for website display\n"
+    },
+    {
+      "sha": "5a4dda496cb39462ca83ca216e0d3756b53b1a5f",
+      "date": "2024-10-16T00:38:09-04:00",
+      "author": "Yaakov Chaikin",
+      "email": "ychaikin@users.noreply.github.com",
+      "message": "Update link to correct version of data generator jar"
+    },
+    {
+      "sha": "219fa16274b8872cc034d38aa00c2fc4e778964d",
+      "date": "2024-06-24T22:35:54-04:00",
+      "author": "Yaakov Chaikin",
+      "email": "yaakov@ClearlyDecoded.com",
+      "message": "Update to latest sonatype plugin\n"
+    },
+    {
+      "sha": "68466a91f6620a5faa05b4a9e7cd6b59a3d06b8a",
+      "date": "2024-06-24T21:02:39-04:00",
+      "author": "Yaakov Chaikin",
+      "email": "yaakov@ClearlyDecoded.com",
+      "message": "Website update\n"
+    },
+    {
+      "sha": "438023f115f9e32bb451ac7847a4655fa9d45418",
+      "date": "2024-06-24T21:00:03-04:00",
+      "author": "Yaakov Chaikin",
+      "email": "yaakov@ClearlyDecoded.com",
+      "message": "Website update\n"
+    },
+    {
+      "sha": "c889721af28e2b736b7c700ef74111ad9cf2ae5c",
+      "date": "2024-06-24T20:49:15-04:00",
+      "author": "Yaakov Chaikin",
+      "email": "yaakov@ClearlyDecoded.com",
+      "message": "Update Javadoc\n"
+    },
+    {
+      "sha": "94c87ededc5dfaa932209295ffee0aaccd085824",
+      "date": "2024-06-24T20:09:33-04:00",
+      "author": "Yaakov Chaikin",
+      "email": "ychaikin@users.noreply.github.com",
+      "message": "Development (#39)\n\n* Update mongodb dependency to 5.0.1 (#36)\n\n* Update mongodb dependency to 5.0.1\n\n* Update Spring Boot to 3.3.0\n\n* Update Java to 17\n\nCloses https://github.com/mongounit/mongounit/issues/37\n\n---------\n\nCo-authored-by: Alexis Gandar <alexis.gandar@intech.lu>\n\n* fixes #34, fixes #25; replaced Date with Instant on date time parsing/conversion (#35) (#38)\n\nCo-authored-by: Juan Soria <82479084+soriajuan@users.noreply.github.com>\n\n* Update plugin versions\n\n---------\n\nCo-authored-by: alexisGandar <alexis.gandar@hotmail.fr>\nCo-authored-by: Alexis Gandar <alexis.gandar@intech.lu>\nCo-authored-by: Juan Soria <82479084+soriajuan@users.noreply.github.com>"
+    },
+    {
+      "sha": "05d1abcc62be4fc78236c22d0885f0edd048242b",
+      "date": "2024-02-04T18:18:44-05:00",
+      "author": "Yaakov Chaikin",
+      "email": "ychaikin@users.noreply.github.com",
+      "message": "Update json-format.md"
+    },
+    {
+      "sha": "1649a6ee2432fcd33164147a61c5cc0491cc279c",
+      "date": "2024-01-29T21:23:48-05:00",
+      "author": "Yaakov Chaikin",
+      "email": "ychaikin@users.noreply.github.com",
+      "message": "Update _config.yml"
+    },
+    {
+      "sha": "7270c85c7bb4b0d1f23c67e1ca438dc8a0e2950f",
+      "date": "2024-01-29T21:21:26-05:00",
+      "author": "Yaakov Chaikin",
+      "email": "ychaikin@users.noreply.github.com",
+      "message": "Update index.md"
+    },
+    {
+      "sha": "fe727bc81de4500515424bb1165514236fb03689",
+      "date": "2021-03-16T14:10:38-04:00",
+      "author": "Yaakov Chaikin",
+      "email": "yaakov@ClearlyDecoded.com",
+      "message": "minor presentation update\n"
+    },
+    {
+      "sha": "2d5bd4c477e1d2383e74e73f7d02f5a40c23b833",
+      "date": "2021-03-16T14:05:05-04:00",
+      "author": "Yaakov Chaikin",
+      "email": "yaakov@ClearlyDecoded.com",
+      "message": "Updated docs to 2.0.1\n"
+    },
+    {
+      "sha": "7ef328b269e14fe807413df03d08bff6ae557f9a",
+      "date": "2021-03-15T00:53:52-04:00",
+      "author": "Yaakov Chaikin",
+      "email": "yaakov@ClearlyDecoded.com",
+      "message": "javadoc for v2.0.1\n"
+    },
+    {
+      "sha": "b684b0605431dede879535187fd37b1e5de6302e",
+      "date": "2021-03-14T23:30:50-04:00",
+      "author": "Yaakov Chaikin",
+      "email": "ychaikin@users.noreply.github.com",
+      "message": "Fixes issue where wrong type is detected and/or compared. (#20)\n\n"
+    },
+    {
+      "sha": "8e9a201945f19060cbbc01ab5db5c793f217477a",
+      "date": "2021-03-14T19:25:43-04:00",
+      "author": "Yaakov Chaikin",
+      "email": "yaakov@ClearlyDecoded.com",
+      "message": "Minor presentation update\n"
+    }
+  ],
+  "commit_sha": "e03002ba566fe934b5cc112aa5ca26baa63d82ba",
+  "extracted_at": "2026-10-05T18:40:12.057928+00:00"
+}

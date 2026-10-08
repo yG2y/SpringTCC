@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "eb6164b09a075685f6e9b1ed95d0bd3018e6103f",
+      "date": "2026-10-03T00:57:29+09:00",
+      "author": "Taewoong Kim",
+      "email": "116135174+ultramancode@users.noreply.github.com",
+      "message": "fix: preserve resolved PII decisions and enforce output limits (#50)\n\nPreserve resolved PII decisions when applying REDACT or BLOCK to JSON values, including merged fallback types outside the detection allowlist. Use batch results directly so enforcement does not depend on session cache retention.\n\nEnforce output length limits on unchanged BLOCK responses, including whitespace and original JSON formatting. Report processing-limit failures with the calling boundary's phase.\n\nSimplify internal JSON transformation, configuration-source collection, and authorization session handling. Document that tool disclosure permissions are checked against the final entity type after merging.\n\nSigned-off-by: Taewoong Kim <ktw2172@gmail.com>"
+    },
+    {
+      "sha": "c6d75697b78b6bfa8e4fc7f43685beba9cc5a24b",
+      "date": "2026-10-01T00:39:40+09:00",
+      "author": "Taewoong Kim",
+      "email": "116135174+ultramancode@users.noreply.github.com",
+      "message": "fix: scope privacy processing to runtime values (#49)\n\nLimit privacy analysis to runtime message content, tool arguments and results, and model output. Tool descriptions, input schemas, output-format instructions, and structured-output schemas no longer trigger PII-based rejection. Tool-call structure and registered tool names remain validated.\n\nPreserve JSON property names and value-tree map keys while protecting string and numeric values. Keys still count toward processing limits. Duplicate JSON properties are preserved in order, with each member value subject to privacy processing.\n\nSigned-off-by: Taewoong Kim <ktw2172@gmail.com>"
+    },
+    {
+      "sha": "1098d23a50c9af57b788371bbd5df0ff3af8c86c",
+      "date": "2026-09-30T19:26:28+09:00",
+      "author": "Taewoong Kim",
+      "email": "116135174+ultramancode@users.noreply.github.com",
+      "message": "feat: reuse PII analysis within privacy sessions (#48)\n\nCache successful analysis and completed tokenizations so repeated model, JSON, and tool processing can reuse results for identical text. Bound retained data, clear it on session close, and retry analysis after provider failures.\n\nUse session-aware batching for JSON scalars and plain decimal text for BigDecimal analysis. Count newly produced raw spans across batches without recounting reused results.\n\nStop scanning tool names for PII while retaining structural and registered-name checks.\n\nSigned-off-by: Taewoong Kim <ktw2172@gmail.com>"
+    },
+    {
+      "sha": "e7b67b51c21bf41df3ab400695257a56ff96f70b",
+      "date": "2026-09-28T02:33:54+09:00",
+      "author": "Taewoong Kim",
+      "email": "116135174+ultramancode@users.noreply.github.com",
+      "message": "feat: make privacy processing limits configurable (#47)\n\nReplace fixed processing limits with configurable PrivacyProcessingLimits for each service, keeping the existing defaults. Apply these limits across analyzers, text and value-tree transformations, and structured JSON processing, including batch analysis and combined analyzer results.\n\nAdd Spring Boot settings for processing limits and Presidio response depth.\n\nCustom PiiAnalyzer implementations now receive PrivacyProcessingLimits. The previous fixed processing-limit constants are removed.\n\nSigned-off-by: Taewoong Kim <ktw2172@gmail.com>"
+    },
+    {
+      "sha": "1b7ed6de552a9964fd38e88335a8c450f5e382c9",
+      "date": "2026-09-23T02:20:32+09:00",
+      "author": "Taewoong Kim",
+      "email": "116135174+ultramancode@users.noreply.github.com",
+      "message": "refactor: extract shared model request boundary (#46)\n\nExtract a shared model-request boundary that runs configured privacy, tool authorization, and inspection stages in a fixed order before each model call, including tool-loop re-entry.\n\nMove the privacy processing performed before model calls and the tool-definition authorization logic into dedicated request stages. Move Spring Boot-independent client configuration types into their runtime integration modules while keeping protection scoped to selected ChatClients.\n\nValidate duplicate boundaries and unsupported Tool Advisor placement, and require explicit opt-in for advisors after an inspection boundary. Prepare the common request path for the content inspection work tracked in #42.\n\nSigned-off-by: Taewoong Kim <ktw2172@gmail.com>"
+    },
+    {
+      "sha": "3119e054bb649104ab2de64de78cf07ebd1bac34",
+      "date": "2026-09-18T00:19:25+09:00",
+      "author": "Taewoong Kim",
+      "email": "116135174+ultramancode@users.noreply.github.com",
+      "message": "docs: improve localized metadata and link previews (#45)\n\nImprove English and Korean documentation metadata and link previews.\nRefresh project mentions and the shared preview image.\n\nSigned-off-by: Taewoong Kim <ktw2172@gmail.com>"
+    },
+    {
+      "sha": "e7917850d345abc98953b629499b8cee0dfbf5f9",
+      "date": "2026-09-18T00:06:14+09:00",
+      "author": "Taewoong Kim",
+      "email": "ktw2172@gmail.com",
+      "message": "chore: start 0.4.0 development\n\nSigned-off-by: Taewoong Kim <ktw2172@gmail.com>\n"
+    },
+    {
+      "sha": "b276c60824c432a0f98464f7f72df2c5714d543f",
+      "date": "2026-09-17T04:30:20+09:00",
+      "author": "Taewoong Kim",
+      "email": "ktw2172@gmail.com",
+      "message": "chore: prepare 0.3.0 release\n\nSigned-off-by: Taewoong Kim <ktw2172@gmail.com>\n"
+    },
+    {
+      "sha": "37de2e1d0d2d9b6fd6aaaf88309116f0a208e936",
+      "date": "2026-09-17T04:02:23+09:00",
+      "author": "Taewoong Kim",
+      "email": "116135174+ultramancode@users.noreply.github.com",
+      "message": "feat: add Spring Security demo and improve documentation (#44)\n\nAdd a Spring Security scenario to the Privacy Boundary Inspector to show how tool authorization works alongside PII protection.\n\nOrganize the sample code, improve Inspector result displays, and refine the English and Korean documentation and demo visuals.\n\nSigned-off-by: Taewoong Kim <ktw2172@gmail.com>"
+    },
+    {
+      "sha": "b17c326c5aadd501e6e5caebe36f6f40677695c3",
+      "date": "2026-09-16T02:19:49+09:00",
+      "author": "Taewoong Kim",
+      "email": "116135174+ultramancode@users.noreply.github.com",
+      "message": "docs: document Spring Security tool authorization (#40)\n\nDocument the optional Spring Security tool authorization introduced in #39, including the follow-up changes in #41 and #43.\n\nAdd English and Korean security guides and update the existing documentation and sample examples to cover configuration, security-context handling, and the relationship between tool authorization and PII disclosure.\n\nRefine the overall documentation for clarity and consistency, and improve navigation and table readability.\n\nSigned-off-by: Taewoong Kim <ktw2172@gmail.com>"
+    },
+    {
+      "sha": "54055c0d5f0283ab811ed79c13c24b577a980f6e",
+      "date": "2026-09-15T00:38:39+09:00",
+      "author": "Taewoong Kim",
+      "email": "116135174+ultramancode@users.noreply.github.com",
+      "message": "feat: prepare privacy boundaries from available beans (#43)\n\nConfigure privacy and tool authorization from available analyzers, services, and tool policies. Allow applications without the required beans to start without creating the corresponding client configurer or factory.\n\nRemove `spring.ai.privacy.enabled` and `spring.ai.privacy.security.enabled`. Setting these properties to `false` no longer disables the corresponding auto-configuration. Keep protection explicitly selected per `ChatClient`, while preserving analyzer-specific flags and `spring.ai.privacy.output.enabled`.\n\nRespect injection candidate settings and scoped proxies when detecting tool policies. Resolve eligible policies and default tool managers from parent contexts. Continue requiring an explicit `SpringSecurityToolBoundary` for custom tool managers.\n\nSigned-off-by: Taewoong Kim <ktw2172@gmail.com>"
+    },
+    {
+      "sha": "f2f34d2c9e5112e341e7b29710cc3c13a2c788d1",
+      "date": "2026-09-14T02:59:28+09:00",
+      "author": "Taewoong Kim",
+      "email": "116135174+ultramancode@users.noreply.github.com",
+      "message": "feat: scope tool authorization to clients and align privacy advisors (#41)\n\nScope tool authorization to selected ChatClients so protected and ordinary clients can share a model without replacing its ToolCallingManager.\n\nReplace the authorization configurers with client factories that copy tool advisor builders, including Tool Search builders, and configure the copies with the authorization-aware manager. Preserve Spring AI's automatic advisor registration and conversation history adjustment based on memory advisor placement.\n\nFilter unauthorized tool definitions before each model call and preserve authorization checks immediately before tool execution. Position privacy advisors around the configured tool advisor order without changing application advisor orders. Account for the output protection setting when determining the allowed order range.\n\nValidate call and stream advisor chains, including advisors added to individual requests. Require automatic registration for requests with tools and reject separately registered or PriorityOrdered tool advisors.\n\nSigned-off-by: Taewoong Kim <ktw2172@gmail.com>"
+    },
+    {
+      "sha": "1008a6651024f8aa3a6deb68c42e1657744e1020",
+      "date": "2026-09-06T20:05:57+09:00",
+      "author": "Taewoong Kim",
+      "email": "116135174+ultramancode@users.noreply.github.com",
+      "message": "feat: add optional Spring Security tool authorization (#39)\n\nAdd optional Spring Security tool authorization with standalone and privacy-integrated configuration.\n\nFilter unauthorized tool definitions and recheck authorization immediately before tool execution. When combined with privacy protection, authorize execution before restoring original PII.\n\nSupport Tool Search and request-scoped authorization across supported asynchronous paths. Add compatibility and publication checks for the new modules.\n\nCloses #33\n\nSigned-off-by: Taewoong Kim <ktw2172@gmail.com>"
+    },
+    {
+      "sha": "b8c8b3a69e029b63f7242b7f6dbf66e2cbef3323",
+      "date": "2026-08-29T21:58:07+09:00",
+      "author": "Taewoong Kim",
+      "email": "116135174+ultramancode@users.noreply.github.com",
+      "message": "fix: preserve scalar isolation in structured JSON analysis (#38)\n\nReplace concatenated JSON scalar batches with segment-aware analysis that keeps property names, string values, and numeric values independent.\n\nAdd a compatibility-preserving `PiiAnalyzer.analyzeSegments(...)` contract and expose it through `PrivacyService`. Provide optimized segmented implementations for Presidio and OpenNLP while preserving input order, text-relative offsets, processing limits, and aggregate result limits.\n\nAdd regression coverage across the core, built-in analyzers, and Spring AI model-input and tool-input boundaries.\n\nCloses #34\n\nSigned-off-by: Taewoong Kim <ktw2172@gmail.com>"
+    },
+    {
+      "sha": "ad578ddd48080ca70b379c6f83bc0c38e0deebb9",
+      "date": "2026-08-29T02:24:36+09:00",
+      "author": "Taewoong Kim",
+      "email": "116135174+ultramancode@users.noreply.github.com",
+      "message": "build: make Korean translations non-blocking (#37)\n\nMake Korean documentation updates optional for English-only changes by removing `verifyDocTranslations` from the regular `check` lifecycle.\n\nKeep strict translation verification in the release workflow and document the maintainer synchronization policy.\n\nClarify how existing input, structure, and output limits are measured in the English and Korean documentation.\n\nSigned-off-by: Taewoong Kim <ktw2172@gmail.com>"
+    },
+    {
+      "sha": "d882af8807c208016422e52166a3c00a2a015b4b",
+      "date": "2026-08-29T01:38:44+09:00",
+      "author": "NewChoBo",
+      "email": "whwjdrb1009@gmail.com",
+      "message": "fix: bound direct core text inputs (#36)\n\nMove the existing Spring AI payload-size limit into a shared core constant and apply it to direct core text operations.\n\nReject oversized text before analyzers run, caller-supplied spans are resolved, or blank-input paths return early.\n\nCloses #35\n\nSigned-off-by: NewChoBo <whwjdrb1009@gmail.com>"
+    },
+    {
+      "sha": "d486d878bb0178ecb2ff010ef5bc631fdfd01923",
+      "date": "2026-08-22T15:29:42+09:00",
+      "author": "Taewoong Kim",
+      "email": "ktw2172@gmail.com",
+      "message": "chore: start 0.3.0 development\n\nSigned-off-by: Taewoong Kim <ktw2172@gmail.com>\n"
+    },
+    {
+      "sha": "053a1cff7eb11ff12cc36a38bdd73abeecdf7ed9",
+      "date": "2026-08-22T15:04:03+09:00",
+      "author": "taewoong Kim",
+      "email": "116135174+ultramancode@users.noreply.github.com",
+      "message": "chore: prepare 0.2.1 release (#32)\n\nPrepare the repository for the 0.2.1 maintenance release.\n\nUpdate the changelog and release version references for 0.2.1.\n\nSigned-off-by: Taewoong Kim <ktw2172@gmail.com>"
+    },
+    {
+      "sha": "6949722897332b282bb1031f2345bd6a7f06ad7a",
+      "date": "2026-08-22T13:33:44+09:00",
+      "author": "taewoong Kim",
+      "email": "116135174+ultramancode@users.noreply.github.com",
+      "message": "docs: improve bilingual documentation navigation (#30)\n\nAdd the project's mention in Spring's This Week in Spring — August 18, 2026 to the English and Korean documentation entry points.\n\nAdd a Korean documentation home, align language links across the root READMEs and reference pages, and keep previous/next navigation within the selected language at the documentation boundary.\n\nSigned-off-by: Taewoong Kim <ktw2172@gmail.com>"
+    },
+    {
+      "sha": "f2ebd490663bdbcdb7c6a178bed537c62778f684",
+      "date": "2026-08-22T12:07:42+09:00",
+      "author": "taewoong Kim",
+      "email": "116135174+ultramancode@users.noreply.github.com",
+      "message": "build: run Presidio live integration on Java 17 (#29)\n\nRun the Presidio live integration job on Java 17 to align it with the project's minimum supported Java baseline.\n\nNo production code or public API is changed.\n\nSigned-off-by: Taewoong Kim <ktw2172@gmail.com>"
+    },
+    {
+      "sha": "070bcf7d45aafd9a6eeffffdeaeb7642fffeaebc",
+      "date": "2026-08-22T11:24:38+09:00",
+      "author": "taewoong Kim",
+      "email": "116135174+ultramancode@users.noreply.github.com",
+      "message": "build: update Spring AI compatibility baseline to 2.0.1 (#28)\n\nUpdate the default Spring AI baseline to 2.0.1 and Spring Boot to 4.1.1 while retaining Java 17 compatibility coverage for Spring AI 2.0.0.\n\nRefresh Presidio Analyzer to 2.2.364 and Apache OpenNLP to 2.5.11, and document Spring AI 2.0.x as the current compatibility line with 2.0.1 recommended for new users.\n\nUpdate response-inspection tests for the Spring AI 2.0.1 Media.Builder API without changing guardrail behavior.\n\nSigned-off-by: Taewoong Kim <ktw2172@gmail.com>"
+    },
+    {
+      "sha": "197123636c44bb5e2cb2365263bb5a014ed84b17",
+      "date": "2026-08-21T00:51:08+09:00",
+      "author": "Taewoong Kim",
+      "email": "ktw2172@gmail.com",
+      "message": "chore: update version references for 0.2.0\n\nSigned-off-by: Taewoong Kim <ktw2172@gmail.com>\n"
+    },
+    {
+      "sha": "b72202432cdd2e62610c8475181387f884d42a96",
+      "date": "2026-08-21T00:30:10+09:00",
+      "author": "Taewoong Kim",
+      "email": "ktw2172@gmail.com",
+      "message": "chore: prepare 0.2.0 release\n\nSigned-off-by: Taewoong Kim <ktw2172@gmail.com>\n"
+    },
+    {
+      "sha": "f456e63bff602ee621546e8fed376627e7cfea23",
+      "date": "2026-08-21T00:04:23+09:00",
+      "author": "taewoong Kim",
+      "email": "116135174+ultramancode@users.noreply.github.com",
+      "message": "feat: expose privacy-safe enforcement outcomes (#26)\n\nAdd an optional PrivacyEnforcementObserver for model, tool-input, tool-result, and application-output boundaries.\n\nExpose only privacy-safe boundary and outcome metadata, ensure non-fatal observer failures cannot affect privacy enforcement, and wire a configured observer via Spring Boot auto-configuration. \n\nCloses #22\n\nSigned-off-by: Taewoong Kim <ktw2172@gmail.com>"
+    },
+    {
+      "sha": "216ed1787e17c9c4fd07f59d7de7b60a080f1ba0",
+      "date": "2026-08-20T14:40:39+09:00",
+      "author": "taewoong Kim",
+      "email": "116135174+ultramancode@users.noreply.github.com",
+      "message": "build: lower the Java baseline to 17 (#25)\n\nLower the source and bytecode baseline and default Java toolchain from Java 21 to Java 17. Add Java 17 to the compatibility matrix and release checks while retaining Java 21 and 25 coverage.\n\nKeep virtual-thread coverage on Java 21 and later, replace newer JDK APIs with Java 17-compatible equivalents, and verify published artifact consumption on the Java 17 baseline.\n\nUse explicit ASCII boundaries for the sample regex rules so behavior stays consistent across supported JDKs. Align the evaluation corpus and synchronized English and Korean documentation with the new baseline.\n\nCloses #24\n\nSigned-off-by: Taewoong Kim <ktw2172@gmail.com>"
+    },
+    {
+      "sha": "80f5459934c0ba321a354bf28662b734b740b154",
+      "date": "2026-08-18T02:59:55+09:00",
+      "author": "taewoong Kim",
+      "email": "116135174+ultramancode@users.noreply.github.com",
+      "message": "docs: add bilingual getting started guides (#23)\n\nAdd English and Korean Getting Started guides covering the main Privacy Guardrails integration path, including Regex, protected ChatClient, local and MCP tools, analyzer choices, and output protection.\n\nAdd the guides to the README and documentation navigation, and align the existing user-facing documentation around analyzer selection, tool protection, and privacy-boundary behavior.\n\nSigned-off-by: Taewoong Kim <ktw2172@gmail.com>"
+    },
+    {
+      "sha": "7b29dd3bb87d3566fdd26f9a1ecb00fbffd5a48b",
+      "date": "2026-08-16T02:36:46+09:00",
+      "author": "taewoong Kim",
+      "email": "116135174+ultramancode@users.noreply.github.com",
+      "message": "docs: add bilingual demo videos and screenshots (#21)\n\nAdd English and Korean demo links to the root READMEs and embed the corresponding YouTube demos in the sample guides.\n\nAdd Local Tool, RAG, and MCP Inspector screenshots, and add Maven Central, CI, and Apache 2.0 badges to the root READMEs.\n\nSigned-off-by: Taewoong Kim <ktw2172@gmail.com>"
+    },
+    {
+      "sha": "78ff24e8ccc33e43aa74dd7a16541a5db49397dc",
+      "date": "2026-08-14T02:30:07+09:00",
+      "author": "Taewoong Kim",
+      "email": "ktw2172@gmail.com",
+      "message": "docs: sync translation source hashes\n\nSigned-off-by: Taewoong Kim <ktw2172@gmail.com>\n"
+    },
+    {
+      "sha": "037d07c807fe2554e724fc70d4bfd5cd2d8cf41b",
+      "date": "2026-08-14T02:19:39+09:00",
+      "author": "Taewoong Kim",
+      "email": "ktw2172@gmail.com",
+      "message": "docs: update dependency examples to 0.1.1\n\nSigned-off-by: Taewoong Kim <ktw2172@gmail.com>\n"
+    },
+    {
+      "sha": "42359eb2de58318a41404e64e403cded5bf44326",
+      "date": "2026-08-14T00:45:47+09:00",
+      "author": "taewoong Kim",
+      "email": "116135174+ultramancode@users.noreply.github.com",
+      "message": "fix: tune Maven Central release polling (#20)\n\nReplace fixed-attempt Maven Central polling with explicit validation and publication deadlines.\n\nLog polling progress, reduce requests while publication is in progress, and verify public module and consumer checks before publishing the GitHub Release.\n\nAlign the v0.1.1 changelog formatting with the published release notes.\n\nSigned-off-by: Taewoong Kim <ktw2172@gmail.com>"
+    }
+  ],
+  "commit_sha": "eb6164b09a075685f6e9b1ed95d0bd3018e6103f",
+  "extracted_at": "2026-10-05T18:48:43.763471+00:00"
+}

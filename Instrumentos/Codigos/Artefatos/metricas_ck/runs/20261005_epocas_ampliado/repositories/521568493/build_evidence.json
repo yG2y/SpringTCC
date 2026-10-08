@@ -1,0 +1,72 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "2.7.2",
+  "spring_boot_major": "2",
+  "java_versions_declared": "17",
+  "build_evidence": [
+    {
+      "file": "common/common-entities/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "infrastructure/kafka/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "order-service/order-adapters/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "order-service/order-adapters/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "order-service/order-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "payment-service/payment-adapters/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "payment-service/payment-adapters/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "payment-service/payment-adapters/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "payment-service/payment-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-logging"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "restaurant-service/restaurant-adapters/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "restaurant-service/restaurant-adapters/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "restaurant-service/restaurant-adapters/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "restaurant-service/restaurant-starter/pom.xml",
+      "artifact": "spring-boot-starter"
+    }
+  ]
+}

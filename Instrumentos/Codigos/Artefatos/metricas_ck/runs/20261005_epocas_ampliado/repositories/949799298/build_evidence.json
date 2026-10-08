@@ -1,0 +1,240 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${spring-boot.version};3.2.3",
+  "spring_boot_major": "3",
+  "java_versions_declared": "17",
+  "build_evidence": [
+    {
+      "file": "api-gateway/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "api-gateway/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "api-gateway/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "cart-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "cart-service/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb"
+    },
+    {
+      "file": "cart-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "cart-service/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "cart-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "cart-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "common/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "common/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "common/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb"
+    },
+    {
+      "file": "notification-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "notification-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "notification-service/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb"
+    },
+    {
+      "file": "notification-service/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "notification-service/pom.xml",
+      "artifact": "spring-boot-starter-mail"
+    },
+    {
+      "file": "notification-service/pom.xml",
+      "artifact": "spring-boot-starter-websocket"
+    },
+    {
+      "file": "notification-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "notification-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "order-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "order-service/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb"
+    },
+    {
+      "file": "order-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "order-service/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "order-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "order-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "payment-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "payment-service/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb"
+    },
+    {
+      "file": "payment-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "payment-service/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "payment-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "product-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "product-service/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb"
+    },
+    {
+      "file": "product-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "product-service/pom.xml",
+      "artifact": "spring-boot-starter-data-elasticsearch"
+    },
+    {
+      "file": "product-service/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "product-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "product-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "review-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "review-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "review-service/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb"
+    },
+    {
+      "file": "review-service/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "review-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "review-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "shipping-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "shipping-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "shipping-service/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb"
+    },
+    {
+      "file": "shipping-service/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "shipping-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "shipping-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "user-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "user-service/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb"
+    },
+    {
+      "file": "user-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "user-service/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "user-service/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "user-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "user-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

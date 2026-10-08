@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "e358402e0050c3abfc30b7c01433aa8fb101c9d9",
+      "date": "2026-01-21T21:20:07+01:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Fix SimpleServiceApplicationIT\n"
+    },
+    {
+      "sha": "ec11fe317314d5ebbd6888747cdd8b016cb049e5",
+      "date": "2026-01-21T21:09:41+01:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Project upgrade\n\n- Upgrade to Spring Boot 4.0.1\n- Upgrade to SpringDoc OpenAPI 3.0.1\n- Simplify NativeRuntimeHintsRegistrar class\n"
+    },
+    {
+      "sha": "217a3a64fe59e9b09b2403550d8d200d3d502819",
+      "date": "2025-12-13T14:42:48-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@h7jh2x422d.acttoday.com",
+      "message": "Fix SwaggerUI in native and remove jetbrains NotNull annotations\n"
+    },
+    {
+      "sha": "cf7e6ea36c093dd8f186f09c9641c6847de55fda",
+      "date": "2025-12-13T06:31:44-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Move maven-failsafe-plugin to simple-service pom.xml\n"
+    },
+    {
+      "sha": "2ee5b6a2225139b2c9ac05ca74c32a30a5856630",
+      "date": "2025-12-13T06:21:19-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Apply some adjustments\n"
+    },
+    {
+      "sha": "3b051a083854a6c5111aa57e0d5c808cc7440562",
+      "date": "2025-12-09T18:12:52-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Fix the Java version in README\n"
+    },
+    {
+      "sha": "e21cd9e6f5703f9d4ed6d678427c46fe79c75f69",
+      "date": "2025-12-09T18:07:07-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Upgrade project to Spring Boot 4.0.0 and Java 25\n"
+    },
+    {
+      "sha": "d548410046e3c10583eef577ffe3f9571fceccce",
+      "date": "2025-12-08T21:59:38-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Add NativeRuntimeHintsRegistrar class to fix Docker Native image runtime exception\n"
+    },
+    {
+      "sha": "852af4d999cdef377107555e10eae659690c7598",
+      "date": "2025-12-08T21:56:23-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Project upgrade\n\n- Upgrade to Spring Boot 3.5.8\n- Upgrade to Spring Doc OpenAPI 2.8.14\n- Upgrade wrapperVersion to 3.3.4 and Apache Maven to 3.9.11\n"
+    },
+    {
+      "sha": "94784eaabe626bc9bb9e5adc80b87061f8852f8c",
+      "date": "2025-04-23T09:35:53+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Add .gitattributes file and update README\n"
+    },
+    {
+      "sha": "0abc20d93d3d0dd448382ff3f490bc87613b6a7d",
+      "date": "2025-03-14T17:11:28+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to Spring Boot 3.4.3 and SpringDoc OpenAPI 2.8.5\n"
+    },
+    {
+      "sha": "ab66cee30a6c4aee3ab39e9e3fd343a20ff5d98a",
+      "date": "2025-01-26T16:34:31+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Update README file using help from GitHub Copilot\n"
+    },
+    {
+      "sha": "00321e3781efeda2dbcbd50e263c6d9a95ebb7b1",
+      "date": "2025-01-26T13:58:19+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- Upgrade to Spring Boot 3.4.2;\n- Upgrade to Springdoc OpenAPI 2.8.3;\n- Remove property in application.properties not used;\n- Rename package from rest to controller;\n- Update README file.\n"
+    },
+    {
+      "sha": "4563a68019219ed413a5d63423a92d911ab1f1a6",
+      "date": "2024-12-20T14:27:57-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Remove some Actuator references that were left behind\n"
+    },
+    {
+      "sha": "e5451cba0cb9f08b0b6da6298efc7d4889b7456a",
+      "date": "2024-12-15T15:38:44-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Rename docker-build.sh to build-docker-images.sh; Update README\n"
+    },
+    {
+      "sha": "059a186e08b2a53c0fc97d0d9efb2da53043d2ff",
+      "date": "2024-12-11T16:13:01-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- remove actuator dependency as it is not essencial to the project;\n- remove public keyword from the Beans;\n- update README.\n"
+    },
+    {
+      "sha": "8261bc4d5918a39d7abe5964cdf3aed07d986030",
+      "date": "2024-12-10T11:48:11-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Add commented log properties useful for debugging\n"
+    },
+    {
+      "sha": "2c705bfcf94ff75bbcf2c1fab54e42310ee39ba1",
+      "date": "2024-12-10T11:47:25-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Update README related to the LDIF groups\n"
+    },
+    {
+      "sha": "222cd95bcd954d6990bb8afa0bee24209442dc13",
+      "date": "2024-12-10T11:46:42-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Remove public keyword from Beans\n"
+    },
+    {
+      "sha": "0a8a66b2f530bb364b78364f76ebfd8fe5b294ce",
+      "date": "2024-12-09T18:12:07-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Apply some adjustments and renamings\n"
+    },
+    {
+      "sha": "c75e8c4cc650687d90d9fe7883ca2da9ef31bef0",
+      "date": "2024-12-09T11:40:05-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- upgrade to spring-boot 3.4.0;\n- upgrade to springdoc-openapi 2.7.0;\n- refactor pom.xml and docker-compose.yml;\n- update SecurityFilterChain by removing sessionManagement, csrf and cors;\n- remove unnecessary spring-ldap-core dependency;\n- remove unnecessary annotation in WebSecurityConfig and LdapAuthenticationConfig;\n- update README.\n"
+    },
+    {
+      "sha": "885af6163a718ffcd20081071febc5b5a92919da",
+      "date": "2024-11-06T23:09:44+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Replace Jib with Paketo Buildpacks and remove version from docker-compose.yml\n"
+    },
+    {
+      "sha": "2de568310e8fe855b1ddb3e2bb2956b6680a7a62",
+      "date": "2024-11-06T22:00:06+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- Upgrade to Java 21;\n- Upgrade to spring-boot 3.3.5;\n- Upgrade to springdoc-openapi 2.6.0;\n- Upgrade to jib-maven-plugin 3.4.4.\n"
+    },
+    {
+      "sha": "63a10a4074a8b993dcccb4ef0c9bfbbee8fbf325",
+      "date": "2024-11-06T21:50:29+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Update some links in README\n"
+    },
+    {
+      "sha": "0590be6a13af8c4025591854a2e1977e801bcf44",
+      "date": "2024-11-06T21:50:00+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade wrapperVersion to 3.3.2 and apache-maven to 3.9.9\n"
+    },
+    {
+      "sha": "c72285b9773fd59f1a091b55151dd73e4e54a97c",
+      "date": "2024-04-13T23:18:26+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- upgrade to spring-boot 3.2.4;\n- upgrade to springdoc-openapi 2.5.0;\n- upgrade to jib-maven-plugin 3.4.2;\n- upgrade to apache-maven 3.9.5.\n"
+    },
+    {
+      "sha": "e9f2ce0715305f1c2b1fc6c19b34926c22ca4419",
+      "date": "2023-09-05T22:59:27+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to spring-boot 3.1.3 and springdoc-openapi 2.2.0\n"
+    },
+    {
+      "sha": "9d1becf13732cb6d602d2937a03c05f07294da29",
+      "date": "2023-09-05T22:07:07+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Update enumeration in README\n"
+    },
+    {
+      "sha": "73592fc2ff159a59cf117d17843314c446c3acd4",
+      "date": "2023-09-05T21:58:52+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to apache-maven 3.9.4\n"
+    },
+    {
+      "sha": "33e88842be9681b39ee7555a1abe4821e132b81b",
+      "date": "2023-09-05T21:57:33+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Migrate to Compose V2\n"
+    }
+  ],
+  "commit_sha": "e358402e0050c3abfc30b7c01433aa8fb101c9d9",
+  "extracted_at": "2026-10-05T18:35:08.823374+00:00"
+}

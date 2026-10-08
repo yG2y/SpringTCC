@@ -1,0 +1,28 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "4.0.3",
+  "spring_boot_major": "4",
+  "java_versions_declared": "21",
+  "build_evidence": [
+    {
+      "file": "order-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "payment-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "product-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "shipment-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

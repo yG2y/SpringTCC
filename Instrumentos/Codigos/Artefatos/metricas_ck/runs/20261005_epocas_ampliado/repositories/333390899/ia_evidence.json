@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "95083389ccf2ed6f534fcd012fa4c8bdc643aa3b",
+      "date": "2026-09-14T09:48:28+08:00",
+      "author": "122006",
+      "email": "1109108466@qq.com",
+      "message": "chore: release Zircon 3.3.5\n"
+    },
+    {
+      "sha": "ca185140d71d4d2eded2e2a301f789dfda86e0e0",
+      "date": "2026-09-10T18:00:15+08:00",
+      "author": "122006",
+      "email": "1109108466@qq.com",
+      "message": "chore: release Zircon 3.3.4\n"
+    },
+    {
+      "sha": "4ae2a4db84128d2697f7943db4b6422bd08414eb",
+      "date": "2026-09-10T17:48:16+08:00",
+      "author": "122006",
+      "email": "1109108466@qq.com",
+      "message": "test: verify io.github Zircon branch coordinates\n"
+    },
+    {
+      "sha": "79c0c0910fef2cc3a1a11dae3f64eab958cc2bfa",
+      "date": "2026-09-09T19:16:19+08:00",
+      "author": "122006",
+      "email": "1109108466@qq.com",
+      "message": "fix: align Gradle plugin dependencies with resolved coordinates\n"
+    },
+    {
+      "sha": "651bb98423fdfc3061ddd6c5b283662b7859fe0c",
+      "date": "2026-09-09T17:15:07+08:00",
+      "author": "122006",
+      "email": "1109108466@qq.com",
+      "message": "fix: improve compiler diagnostics and unify regression tests\n\nUse source positions for generated and escaped template tokens across JDK 8, 11 and 17.\nReport structured template errors, preserve internal failure context and recover parsing.\nConsolidate compiler fixtures with strict expected-rejection and crash detection.\nRefresh embedded adapters used by JitPack branch builds and fix JDK 8 BiOp loading.\n\nValidated compiler regression tests on JDK 8, 11 and 17.\n"
+    },
+    {
+      "sha": "61425f7820d89499966ace744b5c0e4e6e2ce169",
+      "date": "2026-09-08T17:55:32+08:00",
+      "author": "122006",
+      "email": "1109108466@qq.com",
+      "message": "feat: publish Zircon 3.3.3 to Maven Central\n"
+    },
+    {
+      "sha": "569fafb5ce1e5b07c66f69c8bfec1962622c7b3e",
+      "date": "2026-09-08T11:21:17+08:00",
+      "author": "122006",
+      "email": "1109108466@qq.com",
+      "message": "docs: add English README and language switch\n"
+    },
+    {
+      "sha": "0ca78554c5b52c93b5ba39af6b8da6897cfbe15a",
+      "date": "2026-09-08T11:01:01+08:00",
+      "author": "122006",
+      "email": "1109108466@qq.com",
+      "message": "feat(idea): release 4.9 with modern IDEA compatibility\n\nSupport IDEA 2025.3 and 2026.1 while preserving legacy parser loading in one plugin archive. Improve shared template parsing and add compatibility regression coverage.\n\nSet Zircon dependencies to 3.3.2, refresh setup documentation and changelog, and include the 4.9 installation ZIP.\n"
+    },
+    {
+      "sha": "d316240822343ffe4064b3b6bd5d1b785895996a",
+      "date": "2026-07-26T22:43:38+08:00",
+      "author": "122006",
+      "email": "1109108466@qq.com",
+      "message": "fix(vscode): complete native JDT integration\n"
+    },
+    {
+      "sha": "5f52017a7931d522f631ae295d6733093b02c22b",
+      "date": "2026-07-26T17:56:24+08:00",
+      "author": "122006",
+      "email": "1109108466@qq.com",
+      "message": "fix(vscode): complete P0 and P1 integration\n"
+    },
+    {
+      "sha": "d91041454a24b9b175977c5b1d9c6039529ebd1d",
+      "date": "2026-07-11T09:25:29+08:00",
+      "author": "122006",
+      "email": "1109108466@qq.com",
+      "message": "fix(vscode): stop JDT vmargs reload loop\n"
+    },
+    {
+      "sha": "d9024875639987e104005723ac04943af5b73d6e",
+      "date": "2026-07-11T08:39:54+08:00",
+      "author": "122006",
+      "email": "1109108466@qq.com",
+      "message": "test(vscode): verify semantic JDT rename edits\n"
+    },
+    {
+      "sha": "36bc94c0bf215fdff233839cccff49c4e908f938",
+      "date": "2026-07-11T00:38:42+08:00",
+      "author": "122006",
+      "email": "1109108466@qq.com",
+      "message": "feat(vscode): bridge Zircon methods into JDT search\n"
+    },
+    {
+      "sha": "297af5a9829335b53e9e5ce3be4201e9a2a55036",
+      "date": "2026-07-11T00:00:58+08:00",
+      "author": "122006",
+      "email": "1109108466@qq.com",
+      "message": "feat(vscode): add Zircon language support and JDT agent\n"
+    },
+    {
+      "sha": "6cb71b42766ff4beea78d4dcc2374590568d37e9",
+      "date": "2026-03-06T09:18:56+08:00",
+      "author": "122006",
+      "email": "1109108466@qq.com",
+      "message": "3.3.2\n"
+    },
+    {
+      "sha": "4d0573f472b0d96e79a5de39e8c86849e55cdf15",
+      "date": "2026-01-30T16:30:29+08:00",
+      "author": "122006",
+      "email": "1109108466@qq.com",
+      "message": "fix jstring\n"
+    },
+    {
+      "sha": "4119388522ea2db60e7bb0a8b6b7792ca5eb8a10",
+      "date": "2026-01-29T13:59:31+08:00",
+      "author": "122006",
+      "email": "1109108466@qq.com",
+      "message": "fix elvis - primitive box\n"
+    },
+    {
+      "sha": "9efa289712c50460d645bd22e5d34af39eb8ec79",
+      "date": "2026-01-29T13:52:55+08:00",
+      "author": "122006",
+      "email": "1109108466@qq.com",
+      "message": "update .gitignore\n"
+    },
+    {
+      "sha": "2bc3c459be1fae02a549114f2517057959b69b5c",
+      "date": "2026-01-05T15:41:20+08:00",
+      "author": "122006",
+      "email": "1109108466@qq.com",
+      "message": "update idea plugin version:4.8\n"
+    },
+    {
+      "sha": "327955cbfad9872d00ef502a681d277bbda5e15a",
+      "date": "2025-11-25T17:57:49+08:00",
+      "author": "122006",
+      "email": "1109108466@qq.com",
+      "message": "fix issues/18\n"
+    },
+    {
+      "sha": "c333121e825cc4677c786058686f571f1cf8c5f6",
+      "date": "2025-11-11T10:58:54+08:00",
+      "author": "122006",
+      "email": "1109108466@qq.com",
+      "message": "3.3.1\n"
+    },
+    {
+      "sha": "f09bd77bdd4df58a4b065e2eb7da1e6fb4dd4295",
+      "date": "2025-11-11T10:28:59+08:00",
+      "author": "122006",
+      "email": "1109108466@qq.com",
+      "message": "update json\n"
+    },
+    {
+      "sha": "d2e526036c807de52521cbcef69ab93a2a2790ba",
+      "date": "2025-11-04T09:31:14+08:00",
+      "author": "122006",
+      "email": "1109108466@qq.com",
+      "message": "README.md\n"
+    },
+    {
+      "sha": "b795320267f162dab85a0ed8567a15c46939f831",
+      "date": "2025-11-04T08:54:33+08:00",
+      "author": "122006",
+      "email": "1109108466@qq.com",
+      "message": "README.md\n"
+    },
+    {
+      "sha": "5394ef940515a25862d9c0fe271d0b4a40966a5b",
+      "date": "2025-11-03T11:07:29+08:00",
+      "author": "122006",
+      "email": "1109108466@qq.com",
+      "message": "支持json风格的模板字符串:j\"{k:value1,k2:[\"\",1,v1]}\"\n"
+    },
+    {
+      "sha": "450795295d4bf5d7e37874fa4594c8b337f213d4",
+      "date": "2025-11-03T11:06:26+08:00",
+      "author": "122006",
+      "email": "1109108466@qq.com",
+      "message": "字符串模板支持自定义颜色\n"
+    },
+    {
+      "sha": "7fb34be656de88d7c521308a7d9b9c8de64ba7ea",
+      "date": "2025-10-29T13:37:16+08:00",
+      "author": "122006",
+      "email": "1109108466@qq.com",
+      "message": "support jstring\n"
+    },
+    {
+      "sha": "bc02733390faa5ec9257326545b74b6830ef9ade",
+      "date": "2025-10-28T16:45:04+08:00",
+      "author": "122006",
+      "email": "1109108466@qq.com",
+      "message": "support idea v 222.*~253.*\n"
+    },
+    {
+      "sha": "4d58c2ff83adf9e28fab54c5d78967c32af9d15b",
+      "date": "2025-10-28T10:19:19+08:00",
+      "author": "122006",
+      "email": "1109108466@qq.com",
+      "message": "JavaSpacePropertyProcessor ourTokenStickingMatrix\n"
+    },
+    {
+      "sha": "592130578cc4adfc7db98c4a594f409773c43ca5",
+      "date": "2025-10-27T16:06:43+08:00",
+      "author": "122006",
+      "email": "1109108466@qq.com",
+      "message": "Merge branch 'jString' into suport_ij252\n"
+    }
+  ],
+  "commit_sha": "95083389ccf2ed6f534fcd012fa4c8bdc643aa3b",
+  "extracted_at": "2026-10-05T18:16:56.996353+00:00"
+}

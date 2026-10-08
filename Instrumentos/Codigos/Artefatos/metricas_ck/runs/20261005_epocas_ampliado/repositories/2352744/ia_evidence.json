@@ -1,0 +1,28 @@
+{
+  "ia_status": "com_evidencia",
+  "ia_level": 1,
+  "ia_agents": "Claude Code; Codex / OpenAI; GitHub Copilot",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 0,
+  "evidence": [
+    {
+      "agent": "Claude Code",
+      "type": "file",
+      "path": "CLAUDE.md"
+    },
+    {
+      "agent": "GitHub Copilot",
+      "type": "file",
+      "path": ".github/copilot-instructions.md"
+    },
+    {
+      "agent": "Codex / OpenAI",
+      "type": "file",
+      "path": "AGENTS.md"
+    }
+  ],
+  "commits": [],
+  "commit_sha": "6011998ffe0d9ebcaa5399df55bd790638fe9f36",
+  "extracted_at": "2026-10-05T17:51:15.280977+00:00"
+}

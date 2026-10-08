@@ -1,0 +1,128 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "2.6.3",
+  "spring_boot_major": "2",
+  "java_versions_declared": "",
+  "build_evidence": [
+    {
+      "file": "common/common-application/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "common/common-application/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "common/common-dataaccess/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "customer-service/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "customer-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "customer-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "infrastructure/kafka/kafka-config-data/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "infrastructure/outbox/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "order-service/order-application/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "order-service/order-application/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "order-service/order-container/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "order-service/order-container/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "order-service/order-container/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "order-service/order-dataaccess/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "order-service/order-domain/order-application-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "order-service/order-domain/order-application-service/pom.xml",
+      "artifact": "spring-boot-starter-json"
+    },
+    {
+      "file": "order-service/order-domain/order-application-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "payment-service/payment-container/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "payment-service/payment-container/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "payment-service/payment-dataaccess/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "payment-service/payment-domain/payment-application-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "payment-service/payment-domain/payment-application-service/pom.xml",
+      "artifact": "spring-boot-starter-json"
+    },
+    {
+      "file": "payment-service/payment-domain/payment-application-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-logging"
+    },
+    {
+      "file": "restaurant-service/restaurant-container/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "restaurant-service/restaurant-container/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "restaurant-service/restaurant-dataaccess/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "restaurant-service/restaurant-domain/restaurant-application-service/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "restaurant-service/restaurant-domain/restaurant-application-service/pom.xml",
+      "artifact": "spring-boot-starter-json"
+    }
+  ]
+}

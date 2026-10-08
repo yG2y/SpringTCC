@@ -1,0 +1,38 @@
+{
+  "recorded_at": "2026-10-08T17:02:51.367269+00:00",
+  "reason": "A cadeia com formato de token GitHub encontrada em campos de email de commits coletados foi ocultada antes do versionamento. Sua validade não foi testada.",
+  "replacement": "[REDACTED_GITHUB_TOKEN]",
+  "scope": "Somente quatro campos de email em duas cópias da evidência do mesmo repositório. SHAs dos commits, classificação de IA, métricas e resultados estatísticos foram preservados.",
+  "files": [
+    {
+      "path": "Instrumentos/Codigos/Artefatos/metricas_ck/runs/20261005_epocas_ampliado/repositories/365599102/ia_evidence.json",
+      "original_file_sha256": "1d73be66ba63e252afd5adc4f1349395c813cc100eded4b8f7369f33f0fd764c",
+      "redacted_file_sha256": "a5d995e10b15cb82a99a26fdd68b8d0adb9f14ef5acc331ec0776e9e5c90e7c6",
+      "fields": [
+        {
+          "json_pointer": "/commits/2/email",
+          "commit_sha": "2f08427341bf662dcffc7493ef723defcea6b3c9"
+        },
+        {
+          "json_pointer": "/commits/3/email",
+          "commit_sha": "80cd95a704b4e4da6f0f3e8d1c9acd38ab11a510"
+        }
+      ]
+    },
+    {
+      "path": "Instrumentos/Codigos/Artefatos/metricas_ck/runs/20261005_epocas_ampliado/recovery_dns_1/repositories/365599102/ia_evidence.json",
+      "original_file_sha256": "1d73be66ba63e252afd5adc4f1349395c813cc100eded4b8f7369f33f0fd764c",
+      "redacted_file_sha256": "a5d995e10b15cb82a99a26fdd68b8d0adb9f14ef5acc331ec0776e9e5c90e7c6",
+      "fields": [
+        {
+          "json_pointer": "/commits/2/email",
+          "commit_sha": "2f08427341bf662dcffc7493ef723defcea6b3c9"
+        },
+        {
+          "json_pointer": "/commits/3/email",
+          "commit_sha": "80cd95a704b4e4da6f0f3e8d1c9acd38ab11a510"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${version.springBoot};2.5.12",
+  "spring_boot_major": "2",
+  "java_versions_declared": "",
+  "build_evidence": [
+    {
+      "file": "framework-parent/framework/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "framework-parent/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "framework-parent/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "framework-parent/pom.xml",
+      "artifact": "spring-boot-starter-tomcat"
+    },
+    {
+      "file": "framework-parent/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "framework-parent/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "framework-parent/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "framework-parent/pom.xml",
+      "artifact": "spring-boot-devtools"
+    }
+  ]
+}

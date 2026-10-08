@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "c3c29d0417cf9e693bd911642ea3ef3ba59fb13b",
+      "date": "2025-12-02T22:47:22+08:00",
+      "author": "PIGCLOUD",
+      "email": "wangiegie@gmail.com",
+      "message": "fix: 更新GitHub Actions和Maven配置，修复发布流程中的错误\n"
+    },
+    {
+      "sha": "6def80502daf2186e41abb7ffa11940614436c77",
+      "date": "2025-09-18T14:19:16+08:00",
+      "author": "冷冷",
+      "email": "wangiegie@gmail.com",
+      "message": "feat(oss): 支持阿里云OSS配置\n\n- 更新OssProperties中chunkedEncodingEnabled默认值为false\n- 升级Spring Boot版本至3.5.5和AWS SDK版本至2.33.11\n- 优化README文档添加阿里云配置示例\n- 重构OssTemplate中S3Configuration构建逻辑\n"
+    },
+    {
+      "sha": "66ecab2647e8ae6b6f0b7ef47872386318c417b3",
+      "date": "2025-09-18T14:00:46+08:00",
+      "author": "冷冷",
+      "email": "wangiegie@gmail.com",
+      "message": "feat(oss): 支持阿里云OSS配置\n\n- 更新OssProperties中chunkedEncodingEnabled默认值为false\n- 升级Spring Boot版本至3.5.5和AWS SDK版本至2.33.11\n- 优化README文档添加阿里云配置示例\n- 重构OssTemplate中S3Configuration构建逻辑\n"
+    },
+    {
+      "sha": "406234052f3b2b497473fd9793a792e4df33d7f3",
+      "date": "2025-09-18T11:57:19+08:00",
+      "author": "冷冷",
+      "email": "wangiegie@gmail.com",
+      "message": "Merge pull request #22 from alansun2/master\n\nfeat: 新增 chunkedEncodingEnabled 设置"
+    },
+    {
+      "sha": "7338cae64f2d25757f1575ba1f6a983a25fcd051",
+      "date": "2025-09-17T16:59:41+08:00",
+      "author": "alansun2",
+      "email": "18698525802@163.com",
+      "message": "feat: 新增 chunkedEncodingEnabled 设置\n\n- 在 OssProperties 中添加 chunkedEncodingEnabled 属性，用于控制是否启用分块编码\n- 在OssTemplate 中配置 S3Client时应用该设置\n- 默认启用分块编码，但提供配置项允许禁用\n"
+    },
+    {
+      "sha": "a0913c6b2307a6b052ad15077bdb06956233b7de",
+      "date": "2025-06-28T19:18:10+08:00",
+      "author": "PIG AI",
+      "email": "wangiegie@gmail.com",
+      "message": "chore: Upgrade AWS SDK to v2 and Spring Boot to v3.5.3\n\n- Updated Spring Boot version in pom.xml to 3.5.3.\n- Upgraded AWS SDK from v1 to v2, changing dependencies and method calls in OssTemplate and OssEndpoint.\n- Refactored object handling to use new SDK methods and return types.\n- Updated README to reflect the new version compatibility.\n"
+    },
+    {
+      "sha": "f239e31f0d2c0c2afc666281a0fd2717f8dd40c3",
+      "date": "2024-11-06T17:14:53+08:00",
+      "author": "冷冷",
+      "email": "2270033969@qq.com",
+      "message": "upgrade(version): 3.1.0-SNAPSHOT\n"
+    },
+    {
+      "sha": "de4a4ade0500eab69a4e7a0d14b991278f7eee39",
+      "date": "2024-11-06T16:52:48+08:00",
+      "author": "冷冷",
+      "email": "2270033969@qq.com",
+      "message": "ci(oss): add renovate.json\n"
+    },
+    {
+      "sha": "b7211c747e3e10647923ca7e78f9b478426c8041",
+      "date": "2022-12-06T21:25:32+08:00",
+      "author": "lbw",
+      "email": "wangiegie@163.com",
+      "message": ":green_heart: Fixing CI Build. github action supoort jdk 17\n"
+    },
+    {
+      "sha": "b4b83c24c7d1dc071ca8d637fb13de7a659799dc",
+      "date": "2022-12-06T10:53:06+08:00",
+      "author": "lbw",
+      "email": "wangiegie@163.com",
+      "message": ":green_heart: Fixing CI Build. github action supoort jdk 17\n"
+    },
+    {
+      "sha": "81ffd66009224becf718117e5c579ef48f7d6a3b",
+      "date": "2022-12-06T10:42:39+08:00",
+      "author": "lbw",
+      "email": "wangiegie@163.com",
+      "message": "Merge remote-tracking branch 'origin/master'\n"
+    },
+    {
+      "sha": "30f42b20299bcabb2fda28194f0b84fd873389ec",
+      "date": "2022-12-06T10:42:24+08:00",
+      "author": "lbw",
+      "email": "wangiegie@163.com",
+      "message": ":bookmark: Releasing / Version tags. 3.0.0 适配springboot 3.0 体系\n"
+    },
+    {
+      "sha": "928af5d7e153e261addc4a616aae5f1636596482",
+      "date": "2022-12-02T10:33:00+08:00",
+      "author": "aeizzz",
+      "email": "aeizzz@foxmail.com",
+      "message": ":sparkles: Introducing new features. up mica-auto 3.0.0\n"
+    },
+    {
+      "sha": "ef3c86ee7e0fac137fb1d5ae410f999d7677ceec",
+      "date": "2022-12-01T15:42:52+08:00",
+      "author": "aeizzz",
+      "email": "1129603149@qq.com",
+      "message": ":sparkles: Introducing new features. 更新适配 spring-boot 3\n"
+    },
+    {
+      "sha": "f350ac1bd9976d2347d8616bee69646e43c2c03e",
+      "date": "2022-07-16T14:44:16+08:00",
+      "author": "冷冷",
+      "email": "wangiegie@gmail.com",
+      "message": "Merge pull request #16 from pig-mesh/dependabot/maven/com.amazonaws-aws-java-sdk-s3-1.12.261\n\n⬆️ Bump aws-java-sdk-s3 from 1.12.218 to 1.12.261"
+    },
+    {
+      "sha": "9a97220ed9dd548a6497c33a05b942721ef9d0ce",
+      "date": "2022-07-15T21:14:32Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": ":arrow_up: Bump aws-java-sdk-s3 from 1.12.218 to 1.12.261\n\nBumps [aws-java-sdk-s3](https://github.com/aws/aws-sdk-java) from 1.12.218 to 1.12.261.\n- [Release notes](https://github.com/aws/aws-sdk-java/releases)\n- [Changelog](https://github.com/aws/aws-sdk-java/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/aws/aws-sdk-java/compare/1.12.218...1.12.261)\n\n---\nupdated-dependencies:\n- dependency-name: com.amazonaws:aws-java-sdk-s3\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "695713b55a9c43e46c8ca8daf8614fd16abe49ec",
+      "date": "2022-05-13T20:57:46+08:00",
+      "author": "lbw",
+      "email": "wangiegie@163.com",
+      "message": ":bookmark: Releasing / Version tags. 1.0.5 完善单元测试\n"
+    },
+    {
+      "sha": "e8b9d12c5eb3a01872f27757fbbb7436a58ce71d",
+      "date": "2022-05-13T20:50:08+08:00",
+      "author": "lbw",
+      "email": "wangiegie@163.com",
+      "message": "Merge remote-tracking branch 'origin/master'\n"
+    },
+    {
+      "sha": "2e7cf05e073ec45bf8cbe9750c77ceb8c294fb45",
+      "date": "2022-05-13T20:49:53+08:00",
+      "author": "lbw",
+      "email": "wangiegie@163.com",
+      "message": ":bookmark: Releasing / Version tags. 1.0.4\n"
+    },
+    {
+      "sha": "b07eb91009743e6277807fc4c3f1794a4b5f01f6",
+      "date": "2022-04-13T19:12:32+08:00",
+      "author": "付绪壮",
+      "email": "2235602974@qq.com",
+      "message": ":bookmark: Releasing / Version tags. 1.0.4\n"
+    },
+    {
+      "sha": "95ef0e99f67d6afe38b9c95cc5088c3379dfaa70",
+      "date": "2022-04-12T19:41:30+08:00",
+      "author": "付绪壮",
+      "email": "2235602974@qq.com",
+      "message": ":bug: 上传文件后关闭流，防止too many open files异常\n"
+    },
+    {
+      "sha": "33d3f6fa584a178b2e115163fa41ab79ba5eeefc",
+      "date": "2022-04-12T19:37:35+08:00",
+      "author": "付绪壮",
+      "email": "2235602974@qq.com",
+      "message": ":bug: 上传文件后关闭流，防止too many open files异常\n"
+    },
+    {
+      "sha": "01f0558b6084e5e3bf4948f142076421e744134f",
+      "date": "2021-12-27T10:02:28+08:00",
+      "author": "lbw",
+      "email": "wangiegie@163.com",
+      "message": ":bookmark: Releasing / Version tags. 1.0.3\n"
+    },
+    {
+      "sha": "6c9dcbcfd860dc7041d113f324b1d2ff06d03d9b",
+      "date": "2021-11-10T12:02:00+08:00",
+      "author": "冷冷",
+      "email": "wangiegie@gmail.com",
+      "message": "Merge pull request #13 from lishangbu/master\n\n:bug: Fixing a bug.修复获取用于上传的文件外链方法错误调用下载的文件外链的问题"
+    },
+    {
+      "sha": "a01665c1877b25cae31e75dedffb44af982308d7",
+      "date": "2021-11-10T10:44:55+08:00",
+      "author": "lishangbu",
+      "email": "shangshili@hotmail.com",
+      "message": ":bug: Fixing a bug.修复获取用于上传的文件外链方法重载错误调用的问题\n"
+    },
+    {
+      "sha": "d3c866dc24e13e099a793b76a0e6fe00f32ad84b",
+      "date": "2021-10-07T13:29:34+08:00",
+      "author": "YLC8E",
+      "email": "382170522@qq.com",
+      "message": "提供测试环境\n"
+    },
+    {
+      "sha": "ba727023dc7f5545595f5364c1b5746fc32c269c",
+      "date": "2021-10-07T13:28:38+08:00",
+      "author": "YLC8E",
+      "email": "382170522@qq.com",
+      "message": "提供测试环境\n"
+    },
+    {
+      "sha": "92c391bc207a6f36187bb1914b5f33f650eefd6c",
+      "date": "2021-08-24T15:58:58+08:00",
+      "author": "wjie",
+      "email": "libin8408@126.com",
+      "message": ":bookmark: Releasing / Version tags. v1.0.1\n"
+    },
+    {
+      "sha": "08c3036d11a89fa173e6980421df375a253ffdf8",
+      "date": "2021-08-20T18:36:04+08:00",
+      "author": "如梦技术",
+      "email": "596392912@qq.com",
+      "message": ":sparkles: 添加 swagger v3 注解、依赖升级和修改 OssEndpoint 返回值（避免序列化问题）。\n"
+    },
+    {
+      "sha": "1bc9aad44ec23c02ed5ea65a8c00fc111a8d1777",
+      "date": "2021-07-22T10:48:49+08:00",
+      "author": "如梦技术",
+      "email": "596392912@qq.com",
+      "message": ":sparkles: 优化 bean validation 和 swagger 支持。\n"
+    }
+  ],
+  "commit_sha": "c3c29d0417cf9e693bd911642ea3ef3ba59fb13b",
+  "extracted_at": "2026-10-05T18:05:03.346747+00:00"
+}

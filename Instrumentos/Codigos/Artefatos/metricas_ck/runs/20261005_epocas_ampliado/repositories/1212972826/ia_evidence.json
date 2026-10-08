@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "6d665cb0a221a6c1ef5ca4b9ce7415a7593501f2",
+      "date": "2026-09-08T13:24:52+03:00",
+      "author": "Evgeny Vasilenkov",
+      "email": "vaazhen@mail.ru",
+      "message": "Merge pull request #515 from vaazhen/fix/crypto-audit-hardening\n\nfix(crypto): close remaining E2EE audit holes"
+    },
+    {
+      "sha": "30d4084d68813c72252185e7278c443e8fd3e11d",
+      "date": "2026-09-08T13:21:58+03:00",
+      "author": "vaazhen",
+      "email": "vaazhen@mail.ru",
+      "message": "fix(crypto): close remaining audit holes in trust, self-whisper, and backup\n\nStop grouping device trust by server-supplied userId, delete the static self-whisper decoder, keep backups identity-only, and bind AAD to sender and target device ids so a malicious server cannot silently join a session.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>\n"
+    },
+    {
+      "sha": "093e1596ffc8507e8204c3a0804afba7c6675024",
+      "date": "2026-09-08T12:45:20+03:00",
+      "author": "Evgeny Vasilenkov",
+      "email": "vaazhen@mail.ru",
+      "message": "Merge pull request #514 from vaazhen/fix/crypto-audit-hardening\n\nfix(crypto): close audit holes around self-whisper, OTK, and identity"
+    },
+    {
+      "sha": "dc6c274fc3ea3834a8e990eebef53b1d90908f69",
+      "date": "2026-09-08T12:41:33+03:00",
+      "author": "vaazhen",
+      "email": "vaazhen@mail.ru",
+      "message": "fix(crypto): close the audit holes around self-whisper, OTK, and identity\n\nRatchet local copies, refuse empty prekey pools, and stop wiping device identity on a 409 unless the user confirms.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>\n"
+    },
+    {
+      "sha": "d3c559cf41da991697ad3b1c1981c0fc1e1c9f0e",
+      "date": "2026-09-06T18:40:37+03:00",
+      "author": "Evgeny Vasilenkov",
+      "email": "vaazhen@mail.ru",
+      "message": "Merge pull request #513 from vaazhen/harden/reliability-no-mls\n\nHarden delivery, group caps, and device revoke"
+    },
+    {
+      "sha": "08bc62df82e73adc6b5ca57539fa365cb3db38ac",
+      "date": "2026-09-06T10:02:53+03:00",
+      "author": "vaazhen",
+      "email": "vaazhen@mail.ru",
+      "message": "fix(devices): keep revoke from being undone by the stolen client\n\nA deactivated device kept its refresh family and JWT rebind turned it active again. Bind the session to the device, kill that family on revoke, and treat DEVICE_REVOKED as logout rather than missing enrollment.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>\n"
+    },
+    {
+      "sha": "96336a5b3f1cd15cc2d689888df73402c4755699",
+      "date": "2026-09-05T14:44:22+03:00",
+      "author": "Evgeny Vasilenkov",
+      "email": "vaazhen@mail.ru",
+      "message": "Merge pull request #512 from vaazhen/harden/reliability-no-mls\n\nfix(reliability): cap pairwise groups and make revoke durable"
+    },
+    {
+      "sha": "b09e0e290c6b6650004b94159f026c0cf502e2e0",
+      "date": "2026-09-05T14:40:07+03:00",
+      "author": "vaazhen",
+      "email": "vaazhen@mail.ru",
+      "message": "fix(reliability): cap pairwise groups and make revoke durable\n\nFreeze this protocol generation: 32-member groups, 8 devices, revoke\ncloses that device's WebSocket and emits DEVICE_REVOKED. Wire Prometheus\nalerts, default-deny NetworkPolicy, and a Postgres dump/restore drill.\nNo MLS, no claimed audit.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>\n"
+    },
+    {
+      "sha": "272bacc96849dfbb6985f5b57dcb174f8d324594",
+      "date": "2026-09-05T14:03:24+03:00",
+      "author": "Evgeny Vasilenkov",
+      "email": "vaazhen@mail.ru",
+      "message": "Merge pull request #511 from vaazhen/harden/review-correctness\n\nfix(delivery): keep real outbox events and bound sync abuse"
+    },
+    {
+      "sha": "3a5d24e33953a67e6df53f0886d78581a2bcbebe",
+      "date": "2026-09-05T14:03:00+03:00",
+      "author": "vaazhen",
+      "email": "vaazhen@mail.ru",
+      "message": "fix(delivery): keep real outbox events and bound sync abuse\n\nRecurring chat keys were collapsing distinct updates, and request/chat\naccept shared one idempotency key so the chat-list event never shipped.\nClamp sync, prekey, and lookup surfaces; stream attachments; fail closed\non call mediaKeys. Audit, S3, and TURN stay out of scope.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>\n"
+    },
+    {
+      "sha": "07bed8d0f406593f586b82e07559a625e8898ebb",
+      "date": "2026-09-05T11:44:46+03:00",
+      "author": "Evgeny Vasilenkov",
+      "email": "vaazhen@mail.ru",
+      "message": "Merge pull request #510 from vaazhen/refactor/core-seams\n\nCore seams, session hardening, and master CI unblock"
+    },
+    {
+      "sha": "3afc0a08f401c55e9edb64133dea40da22107cbd",
+      "date": "2026-09-05T11:36:29+03:00",
+      "author": "vaazhen",
+      "email": "vaazhen@mail.ru",
+      "message": "fix(ci): do not fail the workflow when Dependency graph is off\n\nRequired checks already pass; the review action only errors because the repo has not enabled the graph yet.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>\n"
+    },
+    {
+      "sha": "504ecac2e0ff139d89c8503d9a27ed2b3672950c",
+      "date": "2026-09-05T11:33:15+03:00",
+      "author": "vaazhen",
+      "email": "vaazhen@mail.ru",
+      "message": "fix(ci): land core seams so master verify and Trivy can go green\n\nSession revoke now closes WebSockets, message and crypto live in modules, and the durable cursor test plus Tomcat 10.1.59 stop the red master pipeline.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>\n"
+    },
+    {
+      "sha": "8a22e8a48298b8a86536f357f1ff6d9e9155015a",
+      "date": "2026-09-05T01:28:57+03:00",
+      "author": "Evgeny Vasilenkov",
+      "email": "vaazhen@mail.ru",
+      "message": "Merge pull request #509 from vaazhen/docs/readme-surfaces\n\ndocs: one surfaces strip and the send button"
+    },
+    {
+      "sha": "4a1b7c87f8f92d3bbf156f941fd95a5c2b7c8951",
+      "date": "2026-09-05T01:25:32+03:00",
+      "author": "vaazhen",
+      "email": "vaazhen@mail.ru",
+      "message": "docs: one surfaces strip, and the send button the mock was missing\n\nAuth, profile, and Safety Number now sit in a single editorial board instead of three leftover screenshots. The chat composer matches the real attach / emoji / timer / send control.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>\n"
+    },
+    {
+      "sha": "aee5aeb5f3681a577a5dd73252003649ec0baaa5",
+      "date": "2026-09-05T01:19:39+03:00",
+      "author": "Evgeny Vasilenkov",
+      "email": "vaazhen@mail.ru",
+      "message": "Merge pull request #508 from vaazhen/docs/readme-diagrams\n\ndocs: living README with UI mocks and architecture diagrams"
+    },
+    {
+      "sha": "de9b5ee4c65ff1424772d7ddc18bd572d244e012",
+      "date": "2026-09-05T01:17:22+03:00",
+      "author": "vaazhen",
+      "email": "vaazhen@mail.ru",
+      "message": "docs: show Chaos as a living messenger, not mermaid sketches\n\nREADME now opens on chat, profile, and Safety Number, then walks the real architecture instead of protocol diagrams nobody opens.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>\n"
+    },
+    {
+      "sha": "0df913c4b2ecac9c760db6073b187782d7d9a1f2",
+      "date": "2026-08-14T16:13:51+03:00",
+      "author": "Evgeny Vasilenkov",
+      "email": "vaazhen@mail.ru",
+      "message": "Merge pull request #507 from vaazhen/fix/temurin-jre-noble\n\nfix(docker): pin backend JRE to Ubuntu 24.04 LTS"
+    },
+    {
+      "sha": "ad97794d7dddd7f4989a1fc5d7442f32f5a5e243",
+      "date": "2026-08-14T16:07:12+03:00",
+      "author": "vaazhen",
+      "email": "vaazhen@mail.ru",
+      "message": "fix(docker): pin the backend JRE to Ubuntu 24.04 LTS\n\nThe floating eclipse-temurin:17-jre tag followed Ubuntu 26.04 and shipped unused Canonical Pebble with Go HIGH CVEs. Pin noble so the runtime OS no longer drifts with Ubuntu releases.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>\n"
+    },
+    {
+      "sha": "02448faf4c6f9a9b88c4f0bd8ee4721d94c8c23b",
+      "date": "2026-08-14T15:59:09+03:00",
+      "author": "Evgeny Vasilenkov",
+      "email": "vaazhen@mail.ru",
+      "message": "Merge pull request #506 from vaazhen/fix/crypto-trust-boundaries\n\nfix(crypto): close identity overwrite, public self-whisper, and open bundle lookup"
+    },
+    {
+      "sha": "a79823c4ccba9865a4a6ee4bc61ef7e2d5b20caf",
+      "date": "2026-08-14T15:53:50+03:00",
+      "author": "vaazhen",
+      "email": "vaazhen@mail.ru",
+      "message": "fix(crypto): close identity overwrite, public self-whisper, and open bundle lookup\n\nRefresh no longer mints device enrollment tokens, existing devices reject key rotation, and bundle fetch requires a shared chat.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>\n"
+    },
+    {
+      "sha": "c102daead150043aac7069957683767337513960",
+      "date": "2026-08-14T14:40:37+03:00",
+      "author": "vaazhen",
+      "email": "vaazhen@mail.ru",
+      "message": "docs: write Chaos as an engineering product, not a thin landing page\n\nPosition against self-hosted chat and Signal-class E2EE, show the shipped matrix, then prove it with the message path, outbox/delivery contract and an honest trust model.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>\n"
+    },
+    {
+      "sha": "e2b31627d9cdee3d00ffac8770b13e238f9f9563",
+      "date": "2026-08-14T14:31:32+03:00",
+      "author": "vaazhen",
+      "email": "vaazhen@mail.ru",
+      "message": "docs: present Chaos as a product, not a debugging log\n\nLead with what the messenger is and how to run it. Keep security bounds and architecture below. Drop Flyway/V42 restart notes from the public README.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>\n"
+    },
+    {
+      "sha": "66486381e752d71dc1140869a5a9119876efb004",
+      "date": "2026-08-14T14:26:45+03:00",
+      "author": "Evgeny Vasilenkov",
+      "email": "vaazhen@mail.ru",
+      "message": "Merge pull request #505 from vaazhen/feat/calls-media-chat\n\nfeat(chat): encrypted media, video notes and 1:1 calls"
+    },
+    {
+      "sha": "af0a1c06f612e837adc00cda017aa4bbdf24ee35",
+      "date": "2026-08-14T14:25:29+03:00",
+      "author": "vaazhen",
+      "email": "vaazhen@mail.ru",
+      "message": "feat(chat): deliver encrypted media and 1:1 call signaling\n\nVoice, video notes and photos now upload ciphertext instead of stuffing blob URLs or inline base64 into envelopes. Attachment inserts write object_key so Flyway V40 no longer 409s. Local calls use authenticated STOMP plus coturn; production stays gated until TURN exists.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>\n"
+    },
+    {
+      "sha": "c7cf6af5c580580c1a4386dd1c705237ad45322c",
+      "date": "2026-08-14T00:43:28+03:00",
+      "author": "Evgeny Vasilenkov",
+      "email": "vaazhen@mail.ru",
+      "message": "Merge pull request #504 from vaazhen/fix/trivy-backend-cves\n\nfix(deps): patch Trivy HIGH/CRITICAL CVEs in the backend image"
+    },
+    {
+      "sha": "f303ddc0c6b64af0f92183452821738ca1ec7b0c",
+      "date": "2026-08-14T00:42:29+03:00",
+      "author": "vaazhen",
+      "email": "vaazhen@mail.ru",
+      "message": "fix(deps): patch Trivy HIGH/CRITICAL CVEs in the backend image\n\nBump Spring Boot to 3.5.16 and pin Netty, PostgreSQL JDBC, BouncyCastle,\njose4j and async-http-client so the container scan gate can pass.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>\n"
+    },
+    {
+      "sha": "88fe9ccfb9aed4d930f4314385f081a8f0470789",
+      "date": "2026-08-14T00:18:03+03:00",
+      "author": "Evgeny Vasilenkov",
+      "email": "vaazhen@mail.ru",
+      "message": "Merge pull request #503 from vaazhen/feat/ui-messenger-shell\n\nfeat(ui): extract MessengerShell and apply realtime events serially"
+    },
+    {
+      "sha": "37b29465e58973f063088fc266e552c22da5e05c",
+      "date": "2026-08-14T00:17:28+03:00",
+      "author": "Evgeny Vasilenkov",
+      "email": "vaazhen@mail.ru",
+      "message": "Merge pull request #502 from vaazhen/feat/delivery-kafka-outbox\n\nfeat(delivery): require Kafka and persist durable events before notify"
+    },
+    {
+      "sha": "50422ea9f4ff3d1c08ed3be22e431f38d70e7fd1",
+      "date": "2026-08-14T00:12:25+03:00",
+      "author": "vaazhen",
+      "email": "vaazhen@mail.ru",
+      "message": "feat(ui): extract MessengerShell and apply realtime events serially\n\nSplit the messenger screen out of App.jsx and keep WebSocket cursor/dedupe\nupdates only after a successful apply so recovery cannot poison live delivery.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>\n"
+    }
+  ],
+  "commit_sha": "6d665cb0a221a6c1ef5ca4b9ce7415a7593501f2",
+  "extracted_at": "2026-10-05T18:39:57.440879+00:00"
+}

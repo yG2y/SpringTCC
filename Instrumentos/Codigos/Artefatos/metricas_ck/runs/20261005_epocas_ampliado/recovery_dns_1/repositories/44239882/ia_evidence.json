@@ -1,0 +1,23 @@
+{
+  "ia_status": "com_evidencia",
+  "ia_level": 1,
+  "ia_agents": "Claude Code; Codex / OpenAI",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 0,
+  "evidence": [
+    {
+      "agent": "Claude Code",
+      "type": "file",
+      "path": "CLAUDE.md"
+    },
+    {
+      "agent": "Codex / OpenAI",
+      "type": "file",
+      "path": "AGENTS.md"
+    }
+  ],
+  "commits": [],
+  "commit_sha": "03f19ecbae00533df4c2a9fc8bad9cb87b20b44d",
+  "extracted_at": "2026-10-05T18:19:43.360270+00:00"
+}

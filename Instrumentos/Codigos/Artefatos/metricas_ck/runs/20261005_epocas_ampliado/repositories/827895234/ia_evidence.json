@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "8924f04c70251a11d945570291c409c095e842a0",
+      "date": "2026-05-21T22:58:27+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump open-policy-agent/setup-opa from 2.3.0 to 2.4.0 (#72)\n\nBumps [open-policy-agent/setup-opa](https://github.com/open-policy-agent/setup-opa) from 2.3.0 to 2.4.0.\n- [Release notes](https://github.com/open-policy-agent/setup-opa/releases)\n- [Commits](https://github.com/open-policy-agent/setup-opa/compare/950f159a49aa91f9323f36f1de81c7f6b5de9576...b2b258e089860efaadaaf71bf6e3aecb4a3eeff1)\n\n---\nupdated-dependencies:\n- dependency-name: open-policy-agent/setup-opa\n  dependency-version: 2.4.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "252a56342c028ae5b945aeaa1d99c4695f1b4513",
+      "date": "2026-04-10T14:41:30-04:00",
+      "author": "Philip Conrad",
+      "email": "philip@chariot-chaser.net",
+      "message": "Release v2.0.1 (#70)\n\nSigned-off-by: Philip Conrad <philip@chariot-chaser.net>"
+    },
+    {
+      "sha": "622d10c1c10b82ff988df47c5decaddb553aa18f",
+      "date": "2026-04-10T14:37:58-04:00",
+      "author": "Philip Conrad",
+      "email": "philip@chariot-chaser.net",
+      "message": "ci: Fix docs build workflow permissions. (#69)\n\nSigned-off-by: Philip Conrad <philip@chariot-chaser.net>"
+    },
+    {
+      "sha": "8a658577e41a334abcd792d1e7e87d746fac35cb",
+      "date": "2026-04-10T14:25:25-04:00",
+      "author": "Philip Conrad",
+      "email": "philip@chariot-chaser.net",
+      "message": "Release v2.0.0 (#68)\n\nSigned-off-by: Philip Conrad <philip@chariot-chaser.net>"
+    },
+    {
+      "sha": "2130321ad1c81213a4cec8feee6a3277b6aca44b",
+      "date": "2026-04-10T18:15:35Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump zizmorcore/zizmor-action from 0.5.0 to 0.5.2 (#67)\n\nBumps [zizmorcore/zizmor-action](https://github.com/zizmorcore/zizmor-action) from 0.5.0 to 0.5.2.\n- [Release notes](https://github.com/zizmorcore/zizmor-action/releases)\n- [Commits](https://github.com/zizmorcore/zizmor-action/compare/0dce2577a4760a2749d8cfb7a84b7d5585ebcb7d...71321a20a9ded102f6e9ce5718a2fcec2c4f70d8)\n\n---\nupdated-dependencies:\n- dependency-name: zizmorcore/zizmor-action\n  dependency-version: 0.5.2\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "5904f6e7a52e6857e5a8a4307a6f4e2df0ccb148",
+      "date": "2026-04-10T20:12:51+02:00",
+      "author": "Tim Grafford",
+      "email": "tim@grafford.dev",
+      "message": "feat: Add support for Spring Boot 4 (#65)\n\nBREAKING CHANGE: Library no longer works with Spring Boot 3.\n\nSpring Boot upgraded to version 4.0.3. This changeset includes:\n\n - Upgraded Gradle to v8.14.3\n - Use the renamed module dependencies from Spring Boot 4\n   - This introduced some minor refactoring related to interface\n     and package structure of classes used\n - Introduce testing dependencies for each module included\n - Make use of JSpecify null-safety (introduced in Spring Boot 4)\n   - This also included some minor refactoring where possible\n     null-values were not handled as expected\n\nFixes: #59\n\nSigned-off-by: Tim Grafford <tim@grafford.dev>"
+    },
+    {
+      "sha": "9380076012e9d468e0db6b4d20dc3d896b60d569",
+      "date": "2026-04-10T14:02:10-04:00",
+      "author": "Philip Conrad",
+      "email": "philip@chariot-chaser.net",
+      "message": "ci: Harden CI, pin action versions, add zizmor linting. (#66)\n\nSigned-off-by: Philip Conrad <philip@chariot-chaser.net>"
+    },
+    {
+      "sha": "3a9f1b40d87468066a2243249a8f412e5306cc8d",
+      "date": "2026-04-10T12:34:28-04:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump actions/checkout from 5.0.1 to 6.0.2 (#64)\n\nBumps [actions/checkout](https://github.com/actions/checkout) from 5.0.1 to 6.0.2.\n- [Release notes](https://github.com/actions/checkout/releases)\n- [Commits](https://github.com/actions/checkout/compare/v5.0.1...v6.0.2)\n\n---\nupdated-dependencies:\n- dependency-name: actions/checkout\n  dependency-version: 6.0.2\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "4e569be9f042eef6ac1142a752da2626f505bdd4",
+      "date": "2025-11-21T07:39:08+01:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump mikepenz/action-junit-report from 5 to 6 (#60)\n\nBumps [mikepenz/action-junit-report](https://github.com/mikepenz/action-junit-report) from 5 to 6.\n- [Release notes](https://github.com/mikepenz/action-junit-report/releases)\n- [Commits](https://github.com/mikepenz/action-junit-report/compare/v5...v6)\n\n---\nupdated-dependencies:\n- dependency-name: mikepenz/action-junit-report\n  dependency-version: '6'\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "9f5756a0d3d19cda1c50aed1c21fc9bed3747c41",
+      "date": "2025-11-21T07:26:39+01:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump actions/checkout from 5 to 6 (#61)\n\nBumps [actions/checkout](https://github.com/actions/checkout) from 5 to 6.\n- [Release notes](https://github.com/actions/checkout/releases)\n- [Commits](https://github.com/actions/checkout/compare/v5...v6)\n\n---\nupdated-dependencies:\n- dependency-name: actions/checkout\n  dependency-version: '6'\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "f7be6bfdd7401947dc4e21943aa8a6db8dbc3f3f",
+      "date": "2025-10-07T14:32:52-04:00",
+      "author": "Philip Conrad",
+      "email": "philip@chariot-chaser.net",
+      "message": "chore: Add badges to README. (#58)\n\nSigned-off-by: Philip Conrad <philip@chariot-chaser.net>"
+    },
+    {
+      "sha": "e4b0aa96895e9fa279c8b9b90cc007bc74ffb17c",
+      "date": "2025-10-07T14:20:35-04:00",
+      "author": "Philip Conrad",
+      "email": "philip@chariot-chaser.net",
+      "message": "Release v1.0.5 (#57)\n\nSigned-off-by: Philip Conrad <philip@chariot-chaser.net>"
+    },
+    {
+      "sha": "ba9c8aeef16f04fc5a859a121ee9bacfa7aabb1e",
+      "date": "2025-10-07T13:35:08-04:00",
+      "author": "Philip Conrad",
+      "email": "philip@chariot-chaser.net",
+      "message": "Release v1.0.4 (#56)\n\nSigned-off-by: Philip Conrad <philip@chariot-chaser.net>"
+    },
+    {
+      "sha": "1cf704225f236836f83c15de6d3ff94208be0237",
+      "date": "2025-10-07T13:15:42-04:00",
+      "author": "Philip Conrad",
+      "email": "philip@chariot-chaser.net",
+      "message": "Release v1.0.3 (#55)\n\nSigned-off-by: Philip Conrad <philip@chariot-chaser.net>"
+    },
+    {
+      "sha": "18df20b9457ca4725564cace5564b65c243132d8",
+      "date": "2025-10-07T13:03:03-04:00",
+      "author": "Philip Conrad",
+      "email": "philip@chariot-chaser.net",
+      "message": "Release v1.0.2 (#54)\n\nSigned-off-by: Philip Conrad <philip@chariot-chaser.net>"
+    },
+    {
+      "sha": "97f4214575269a07167d453a7396436cd5ed0421",
+      "date": "2025-10-07T12:48:03-04:00",
+      "author": "Philip Conrad",
+      "email": "philip@chariot-chaser.net",
+      "message": "Release v1.0.1 (#53)\n\nSigned-off-by: Philip Conrad <philip@chariot-chaser.net>"
+    },
+    {
+      "sha": "d3a4c4bd765b0e7d8f149fe58c893d6a468e9dfe",
+      "date": "2025-10-07T12:18:52-04:00",
+      "author": "Philip Conrad",
+      "email": "philip@chariot-chaser.net",
+      "message": "ci: Rework pull-request and tag workflows. (#52)\n\nSigned-off-by: Philip Conrad <philip@chariot-chaser.net>"
+    },
+    {
+      "sha": "bd12bef7f4ee606c0b845bd82742815451fcc220",
+      "date": "2025-10-07T11:47:33-04:00",
+      "author": "Philip Conrad",
+      "email": "philip@chariot-chaser.net",
+      "message": "chore: Refactors and cleanups. (#50)\n\n* chore: Refactors and cleanups.\n\nThis commit is a systematic cleanup of older references to Styra\nproperties.\n\nRefactors and changes:\n - com.styra.XX -> org.openpolicyagent.XX\n - com/styra/... -> org/openpolicyagent/...\n - Mass move of /com/styra/... files -> /org/openpolicyagent/...\n - github.com/StyraInc -> github.com/open-policy-agent\n - Manual retargeting of Styra SDK docs links to this repo's `docs/` folder.\n - docs.styra.com links removal.\n - styrainc.github.io URLS -> open-policy-agent.github.io\n - LICENSE authors updated.\n - \"Enterprise OPA\" -> \"EOPA\". Misc cleanups.\n\nSigned-off-by: Philip Conrad <philip@chariot-chaser.net>\n\n* Rename and add permissions to GHA workflows.\n\nSigned-off-by: Philip Conrad <philip@chariot-chaser.net>\n\n* refactor: Migrate to new io.github prefix. Fix imports where needed.\n\nSigned-off-by: Philip Conrad <philip@chariot-chaser.net>\n\n* linter: Placate the checkStyleTest target.\n\nSigned-off-by: Philip Conrad <philip@chariot-chaser.net>\n\n* chore: Update checkstyle defaults to be less horrid.\n\nSigned-off-by: Philip Conrad <philip@chariot-chaser.net>\n\n* linter: Placate the checkStyle target.\n\nSigned-off-by: Philip Conrad <philip@chariot-chaser.net>\n\n---------\n\nSigned-off-by: Philip Conrad <philip@chariot-chaser.net>"
+    },
+    {
+      "sha": "321524e3df8294e6ccdc7708a94f5a2806cc2cf4",
+      "date": "2025-10-02T17:35:04+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump gradle/actions from 4 to 5 (#51)\n\nBumps [gradle/actions](https://github.com/gradle/actions) from 4 to 5.\n- [Release notes](https://github.com/gradle/actions/releases)\n- [Commits](https://github.com/gradle/actions/compare/v4...v5)\n\n---\nupdated-dependencies:\n- dependency-name: gradle/actions\n  dependency-version: '5'\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "fffc102191cdb2e5c38319ee58ec0bdeb2f02d15",
+      "date": "2025-09-08T15:34:44-04:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump actions/checkout from 4 to 5 (#48)\n\nBumps [actions/checkout](https://github.com/actions/checkout) from 4 to 5.\n- [Release notes](https://github.com/actions/checkout/releases)\n- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/actions/checkout/compare/v4...v5)\n\n---\nupdated-dependencies:\n- dependency-name: actions/checkout\n  dependency-version: '5'\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "1810a243f27561bee2ff6085c867717a1c8c7e8d",
+      "date": "2025-09-08T17:20:08Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump actions/setup-java from 4 to 5 (#49)\n\n"
+    },
+    {
+      "sha": "978e38c2ea2f779f366dd3fe3d35bb6a9f3642aa",
+      "date": "2025-08-13T10:47:22-07:00",
+      "author": "Chris Hendrix",
+      "email": "chendrix@users.noreply.github.com",
+      "message": "Add further documentation (#47)\n\n* Add further documentation\n\nSigned-off-by: Chris Hendrix <chendrix@styra.com>\n\n* Add security file\n\n---------\n\nSigned-off-by: Chris Hendrix <chendrix@styra.com>"
+    },
+    {
+      "sha": "001429a3450b5419c93e441c4c230c5d153aedfe",
+      "date": "2025-04-28T14:02:38-04:00",
+      "author": "Philip Conrad",
+      "email": "philip@chariot-chaser.net",
+      "message": ".github: Add default PR template. (#46)\n\nSigned-off-by: Philip Conrad <philip@chariot-chaser.net>"
+    },
+    {
+      "sha": "19bddc0977a57514f2e392c0e30f746efa5f583a",
+      "date": "2025-04-24T14:20:49-07:00",
+      "author": "Chris Hendrix",
+      "email": "chendrix@users.noreply.github.com",
+      "message": "Update the publishing actions to prepare for sonatype migration (#45)\n\n* Update the publishing actions to prepare for sonatype migration\n\n* Fix broken gradle builds"
+    },
+    {
+      "sha": "5684e1e5ee76ad98113c026db3481f92e73b9a3f",
+      "date": "2025-04-07T13:55:12+02:00",
+      "author": "Ali Jalal",
+      "email": "4487124+ali-jalaal@users.noreply.github.com",
+      "message": "feat: add OPAAccessDeniedException to convey OPAResponse (#44)\n\nResolves  #35"
+    },
+    {
+      "sha": "f3c978c1c950bd92bf009e92a0dce4a0167caebe",
+      "date": "2025-03-26T12:49:20-07:00",
+      "author": "Chris Hendrix",
+      "email": "chendrix@styra.com",
+      "message": "Incrementing unreleased version\n"
+    },
+    {
+      "sha": "8983f85d2e9abd6ae689eab52ca2eef25c05ca88",
+      "date": "2025-03-26T20:38:17+01:00",
+      "author": "Ali Jalal",
+      "email": "4487124+ali-jalaal@users.noreply.github.com",
+      "message": "fix: fix running gradlew bootJar (#43)\n\n"
+    },
+    {
+      "sha": "73b73166dd9b64c81ba322f179d87bebedde42f7",
+      "date": "2025-03-26T12:21:57-07:00",
+      "author": "Chris Hendrix",
+      "email": "chendrix@users.noreply.github.com",
+      "message": "Release v1.0.0 (#42)\n\n"
+    },
+    {
+      "sha": "563c8a7764027c5f5d5b0039511983a689023885",
+      "date": "2025-03-25T15:45:49+01:00",
+      "author": "Ali Jalal",
+      "email": "4487124+ali-jalaal@users.noreply.github.com",
+      "message": "feat: add `OPAAuthorizationEventPublisher` (#41)\n\n* feat: add OPAAuthorizationEventPublisher to publish OPA authorization events\n* Enhance README.md\n* Add `OPA Decision Logs` section in README.md\n\nResolves  #33"
+    },
+    {
+      "sha": "37499be4699afb39462aa7d1ac8a1d195dfc5774",
+      "date": "2025-03-20T15:00:50+01:00",
+      "author": "Ali Jalal",
+      "email": "4487124+ali-jalaal@users.noreply.github.com",
+      "message": "feat: add OPAInput*Customizers to customize OPA input (#40)\n\nImplements  #32"
+    }
+  ],
+  "commit_sha": "8924f04c70251a11d945570291c409c095e842a0",
+  "extracted_at": "2026-10-05T18:38:11.846743+00:00"
+}

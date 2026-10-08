@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "76644fa92d379c5d7c53bf1b5b083435baedd907",
+      "date": "2021-10-22T10:37:38+08:00",
+      "author": "muxiangqiu",
+      "email": "muxiangqiu@gmail.com",
+      "message": "Merge pull request #41 from cnxobo/master\n\n在\"权限分配\"时基于datatype显示label, 同时调整Pom"
+    },
+    {
+      "sha": "0abf045195613d0f311d599c1f26482fa65d248a",
+      "date": "2021-10-21T17:54:49+08:00",
+      "author": "Bing",
+      "email": "Bing@xobo.org",
+      "message": "调整pom结构，解决首次构建找不到parent的问题\n"
+    },
+    {
+      "sha": "6807003fa92adcb752512e310b8f07d5f798560f",
+      "date": "2021-10-21T17:53:14+08:00",
+      "author": "Bing",
+      "email": "Bing@xobo.org",
+      "message": "autoformelement datacolumn 在\"权限分配\"时基于datatype显示label\n"
+    },
+    {
+      "sha": "628c66489ad8f8183993184a3026d936e5d3105b",
+      "date": "2021-10-20T12:54:35+08:00",
+      "author": "Bing",
+      "email": "Bing@xobo.org",
+      "message": "Merge commit '5805dcfaae78198bb57345c648c78088c8a2dc60' into develop\n\n* commit '5805dcfaae78198bb57345c648c78088c8a2dc60':\n  一个更好的注解使用的建议\n  Bump commons-io from 2.1 to 2.7 in /bdf3-dependencies\n"
+    },
+    {
+      "sha": "36287a308a829f903b5619efc47e410b254b428e",
+      "date": "2021-10-20T11:45:33+08:00",
+      "author": "Bing",
+      "email": "Bing@xobo.org",
+      "message": "Merge branch 'master' into develop\n\n* master: (36 commits)\n  compressing images\n  compress screeshot\n  优化下载示例链接，让点击链接直接下载\n  Update Chat.view.xml\n  修改下载示例链接\n  发布2.0.0.RELEASE版本\n  删除Link实体类\n  修复在linus系统下，导出报找不到文件错误\n  添加一个bdf3.logoLarge属性，默认bdf3.logoLarge=url(static/images/logo-large.svg) no-repeat center\n  修复在方块风格主页下不可以关闭聊天窗口\n  补充文档\n  修改不能刷新问题\n  修改文档\n  修改bdf3文档说明位置\n  修改文档第一次启动初始化数据注意事项\n  修改文档\n  修改截图\n  完善文档\n  添加补充说明\n  修改格式\n  ...\n\n# Conflicts:\n#\tREADME.md\n#\tbdf3-dependencies/pom.xml\n#\tbdf3-parent/bdf3-autoconfigure/pom.xml\n#\tbdf3-parent/bdf3-cola/pom.xml\n#\tbdf3-parent/bdf3-dbconsole/pom.xml\n#\tbdf3-parent/bdf3-dictionary-ui/pom.xml\n#\tbdf3-parent/bdf3-dictionary/pom.xml\n#\tbdf3-parent/bdf3-dorado-jpa/pom.xml\n#\tbdf3-parent/bdf3-dorado-jpa/src/main/java/com/bstek/bdf3/dorado/jpa/policy/impl/SmartSavePolicy.java\n#\tbdf3-parent/bdf3-dorado-jpa/src/main/java/com/bstek/bdf3/dorado/jpa/policy/impl/SmartSavePolicyAdapter.java\n#\tbdf3-parent/bdf3-dorado/pom.xml\n#\tbdf3-parent/bdf3-export/pom.xml\n#\tbdf3-parent/bdf3-importer/pom.xml\n#\tbdf3-parent/bdf3-log/pom.xml\n#\tbdf3-parent/bdf3-multitenant-ui/pom.xml\n#\tbdf3-parent/bdf3-notice-ui/pom.xml\n#\tbdf3-parent/bdf3-notice-ui/src/main/java/com/bstek/bdf3/notice/ui/service/NoticeService.java\n#\tbdf3-parent/bdf3-notice-ui/src/main/java/com/bstek/bdf3/notice/ui/view/Chat.view.xml\n#\tbdf3-parent/bdf3-notice/pom.xml\n#\tbdf3-parent/bdf3-profile/pom.xml\n#\tbdf3-parent/bdf3-security-orm/pom.xml\n#\tbdf3-parent/bdf3-security-ui/pom.xml\n#\tbdf3-parent/bdf3-security/pom.xml\n#\tbdf3-parent/bdf3-swfviewer/pom.xml\n#\tbdf3-parent/pom.xml\n#\tbdf3-starter-parent/bdf3-sample-cola-base/pom.xml\n#\tbdf3-starter-parent/bdf3-sample-cola/pom.xml\n#\tbdf3-starter-parent/bdf3-sample-multitenant/pom.xml\n#\tbdf3-starter-parent/bdf3-sample-multitenant/src/main/java/com/bstek/bdf3/sample/multitenant/SampleMultitenantApplication.java\n#\tbdf3-starter-parent/bdf3-sample-multitenant/src/main/resources/application.properties\n#\tbdf3-starter-parent/bdf3-sample-multitenant/src/main/resources/data.sql\n#\tbdf3-starter-parent/bdf3-sample-multitenant/src/main/resources/dorado-home/configure.properties\n#\tbdf3-starter-parent/bdf3-sample-multitenant/velocity.log\n#\tbdf3-starter-parent/bdf3-sample/pom.xml\n#\tbdf3-starter-parent/bdf3-sample/src/main/java/com/bstek/bdf3/sample/SampleApplication.java\n#\tbdf3-starter-parent/pom.xml\n#\tbdf3-starters/bdf3-starter-cola-jetty/pom.xml\n#\tbdf3-starters/bdf3-starter-cola/pom.xml\n#\tbdf3-starters/bdf3-starter-jetty/pom.xml\n#\tbdf3-starters/bdf3-starter-multitenant/pom.xml\n#\tbdf3-starters/bdf3-starter-parent/bdf3-sample-multitenant/src/main/java/com/bstek/bdf3/sample/Multitenant/SampleMultitenantApplication.java\n#\tbdf3-starters/bdf3-starter-parent/bdf3-sample-multitenant/src/main/java/com/bstek/bdf3/sample/multitenant/SampleMultitenantApplication.java\n#\tbdf3-starters/bdf3-starter-parent/bdf3-sample-multitenant/src/main/resources/application.properties\n#\tbdf3-starters/bdf3-starter-parent/bdf3-sample/.rules\n#\tbdf3-starters/bdf3-starter/pom.xml\n#\tbdf3-starters/pom.xml\n#\tpom.xml\n#\tsample/bdf3-sample.zip\n"
+    },
+    {
+      "sha": "5805dcfaae78198bb57345c648c78088c8a2dc60",
+      "date": "2021-08-20T16:00:15+08:00",
+      "author": "muxiangqiu",
+      "email": "muxiangqiu@gmail.com",
+      "message": "Merge pull request #40 from WilliamSESE/patch-1\n\n一个更好的注解使用的建议"
+    },
+    {
+      "sha": "2dd84bdc3de7595ccc7052de198f0d84600a69d5",
+      "date": "2021-08-19T14:44:34+08:00",
+      "author": "William",
+      "email": "87509674+WilliamSESE@users.noreply.github.com",
+      "message": "一个更好的注解使用的建议\n\n您好，我发现您的代码中的注释可能有一些小的改进。\n\n服务层中的 Spring bean 应该使用 @service 而不是 @component 注解进行注解。\n@service注解是@component在服务层的特化。 通过使用专门的注解，可以得到更优的效果。 首先，它们被视为 Spring bean，其次，您可以放置该层所需的特殊行为。\n\n为了更好地理解和维护大型应用程序，@service 是更好的选择。"
+    },
+    {
+      "sha": "34b2de5f51bb6bef380c5f06670cec2a08be9cf7",
+      "date": "2021-04-29T21:40:12+08:00",
+      "author": "muxiangqiu",
+      "email": "muxiangqiu@gmail.com",
+      "message": "Merge pull request #38 from cnxobo/develop\n\nversion to 2.1.0-SNAPSHOT"
+    },
+    {
+      "sha": "659956b1c5beea707270930bfc9a6cf59655c5e6",
+      "date": "2021-04-29T18:47:23+08:00",
+      "author": "xiaobu",
+      "email": "cnxobo@gmail.com",
+      "message": "version to 2.1.0-SNAPSHOT\n"
+    },
+    {
+      "sha": "b1cc8bd5b67c29c528e391212963451381cbb56d",
+      "date": "2021-04-29T16:55:30+08:00",
+      "author": "muxiangqiu",
+      "email": "muxiangqiu@gmail.com",
+      "message": "Merge pull request #37 from cnxobo/develop\n\n解决自增id，无法返回前台的bug并修正Maven依赖升级SpringBoot版本"
+    },
+    {
+      "sha": "8d3e5c11396479139abc2ca298af13132edc25ca",
+      "date": "2021-04-29T16:55:08+08:00",
+      "author": "muxiangqiu",
+      "email": "muxiangqiu@gmail.com",
+      "message": "Merge pull request #36 from muxiangqiu/dependabot/maven/bdf3-dependencies/commons-io-commons-io-2.7\n\nBump commons-io from 2.1 to 2.7 in /bdf3-dependencies"
+    },
+    {
+      "sha": "af5328d334df522c66d443d0511f2475f3b6f664",
+      "date": "2021-04-26T18:22:09Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump commons-io from 2.1 to 2.7 in /bdf3-dependencies\n\nBumps commons-io from 2.1 to 2.7.\n\nSigned-off-by: dependabot[bot] <support@github.com>\n(cherry picked from commit 05a3b16cbf1c942144ec02ddc600c9d024b13151)\n"
+    },
+    {
+      "sha": "ac93f00287cbc2fe7f83c4a9847f7ea9e5a8e0d5",
+      "date": "2021-04-29T16:39:56+08:00",
+      "author": "xiaobu",
+      "email": "cnxobo@gmail.com",
+      "message": "升级Spring Boot版本\n"
+    },
+    {
+      "sha": "b08b0bd89ffe3ca65eb5ed53f359841ff77fab3c",
+      "date": "2021-04-29T13:30:24+08:00",
+      "author": "xiaobu",
+      "email": "cnxobo@gmail.com",
+      "message": "提升 bdf3-starter-parent 到上级目录\n"
+    },
+    {
+      "sha": "34afb9602bfdfdd8563be2e78779e62d339e7cbb",
+      "date": "2021-04-29T10:53:35+08:00",
+      "author": "xiaobu",
+      "email": "cnxobo@gmail.com",
+      "message": "1. 解决自增id，无法返回前台的bug\n2. version to 2.0.4-SNAPSHOT 并修正pom module依赖\n"
+    },
+    {
+      "sha": "05a3b16cbf1c942144ec02ddc600c9d024b13151",
+      "date": "2021-04-26T18:22:09Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump commons-io from 2.1 to 2.7 in /bdf3-dependencies\n\nBumps commons-io from 2.1 to 2.7.\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "18153c7c204cdaf79e13628def6bb50d6fa7a589",
+      "date": "2021-02-07T11:33:56+08:00",
+      "author": "muxiangqiu",
+      "email": "muxiangqiu@gmail.com",
+      "message": "Merge pull request #35 from muxiangqiu/dependabot/maven/bdf3-dependencies/org.apache.poi-poi-3.17\n\nBump poi from 3.9 to 3.17 in /bdf3-dependencies"
+    },
+    {
+      "sha": "176ce80583c85da724f99c2b5eae589394c38609",
+      "date": "2021-01-14T19:55:16Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump poi from 3.9 to 3.17 in /bdf3-dependencies\n\nBumps poi from 3.9 to 3.17.\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "34f699b383333b5b6f83ce29dae02d2f2b0883e8",
+      "date": "2020-11-02T18:32:45+08:00",
+      "author": "muxiangqiu",
+      "email": "muxiangqiu@gmail.com",
+      "message": "linq 版本升级到 1.1.2-RELEASE\n"
+    },
+    {
+      "sha": "90ab3def26f70add51e33f69fbea3104555c8292",
+      "date": "2020-10-01T00:49:34+08:00",
+      "author": "muxiangqiu",
+      "email": "muxiangqiu@gmail.com",
+      "message": "update readme file\n"
+    },
+    {
+      "sha": "bd64cca4a641874801e3f986907b7877ad1f1623",
+      "date": "2020-10-01T00:42:40+08:00",
+      "author": "muxiangqiu",
+      "email": "muxiangqiu@gmail.com",
+      "message": "update readme file\n"
+    },
+    {
+      "sha": "be543aadbdd4c28d9618fcc25fe801ca4e38604f",
+      "date": "2020-09-07T09:18:21+08:00",
+      "author": "muxiangqiu",
+      "email": "muxiangqiu@gmail.com",
+      "message": "Update README.md\n\n更新演示地址"
+    },
+    {
+      "sha": "fec6daf665e682a86d03143762b26f57191025a8",
+      "date": "2020-06-28T18:16:44+08:00",
+      "author": "muxiangqiu",
+      "email": "muxiangqiu@gmail.com",
+      "message": "Update FUNDING.yml"
+    },
+    {
+      "sha": "3e2513811fe2b07565004b0eb9b377d791115f26",
+      "date": "2020-06-18T22:40:22+08:00",
+      "author": "muxiangqiu",
+      "email": "muxiangqiu@gmail.com",
+      "message": "publish v2.0.3-SNAPSHOT\n"
+    },
+    {
+      "sha": "7d045cbb5e18135f9e30a0d70900113aed6cfd0d",
+      "date": "2019-10-21T11:05:52+08:00",
+      "author": "muxiangqiu",
+      "email": "1158025591@qq.com",
+      "message": "Create .gitattributes"
+    },
+    {
+      "sha": "f0b0acb127196728fd3b9f26856fd7a3add41b88",
+      "date": "2019-10-21T10:18:33+08:00",
+      "author": "muxiangqiu",
+      "email": "1158025591@qq.com",
+      "message": "Create FUNDING.yml"
+    },
+    {
+      "sha": "d21681e27cfb61fc2e36638c2ef5dbc0bd7fb7a2",
+      "date": "2019-01-09T13:19:56+08:00",
+      "author": "muxiangqiu",
+      "email": "1158025591@qq.com",
+      "message": "Merge pull request #25 from J-cafe/master\n\n fix #24"
+    },
+    {
+      "sha": "2d2032602c993e09ec00ed2a510f8f83bcc66d20",
+      "date": "2019-01-08T14:11:30+08:00",
+      "author": "MxpIO",
+      "email": "i@mxpio.com",
+      "message": "fix muxiangqiu#24"
+    },
+    {
+      "sha": "430f46a1d3151ab4df82db494c833ca9d58e8b5e",
+      "date": "2019-01-08T14:08:06+08:00",
+      "author": "MxpIO",
+      "email": "i@mxpio.com",
+      "message": "Merge pull request #5 from muxiangqiu/master\n\nupdate"
+    },
+    {
+      "sha": "5d5e9840fae59546ba78f9d491e04cb76d8843be",
+      "date": "2019-01-08T13:22:53+08:00",
+      "author": "muxiangqiu",
+      "email": "1158025591@qq.com",
+      "message": "Merge pull request #23 from bsdn/master\n\n修复bdf3-export模块与poi 3.16版本兼容性问题"
+    }
+  ],
+  "commit_sha": "76644fa92d379c5d7c53bf1b5b083435baedd907",
+  "extracted_at": "2026-10-05T18:01:18.877485+00:00"
+}

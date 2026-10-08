@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "b03122ba2397759cec21566b89b284856b16c040",
+      "date": "2025-07-25T14:12:59-03:00",
+      "author": "Thiago Henrique Domingues",
+      "email": "39653866+thenriquedb@users.noreply.github.com",
+      "message": "Merge pull request #2 from thenriquedb/configure-terraform\n\nfeat: add user data script for Docker installation in EC2 instance"
+    },
+    {
+      "sha": "06272dc5c4fa4924474a0282db47e85f7fe7cd6d",
+      "date": "2025-07-25T14:11:50-03:00",
+      "author": "thenriquedb",
+      "email": "thenrique2012@gmail.com",
+      "message": "feat: add user data script for Docker installation in EC2 instance\n"
+    },
+    {
+      "sha": "4bfcf99ed82228069cc0988b3e228194b3db0e7f",
+      "date": "2025-07-24T20:52:32-03:00",
+      "author": "Thiago Henrique Domingues",
+      "email": "39653866+thenriquedb@users.noreply.github.com",
+      "message": "Merge pull request #1 from thenriquedb/configure-terraform\n\nConfigure terraform"
+    },
+    {
+      "sha": "5e2366f637472685e921ab9059b4ebaeb41704b3",
+      "date": "2025-07-24T20:03:49-03:00",
+      "author": "thenriquedb",
+      "email": "thenrique2012@gmail.com",
+      "message": "chore: update .gitignore to exclude Terraform variable files\n"
+    },
+    {
+      "sha": "248b6fbc1f242b9ed04a6b3673d84e69cc3528a7",
+      "date": "2025-07-24T19:56:06-03:00",
+      "author": "thenriquedb",
+      "email": "thenrique2012@gmail.com",
+      "message": "build: add S3 bucket for Terraform state management with versioning\n"
+    },
+    {
+      "sha": "5437476aeeea71af3103e6994eb6ada94aa2fe93",
+      "date": "2025-07-24T16:10:33-03:00",
+      "author": "thenriquedb",
+      "email": "thenrique2012@gmail.com",
+      "message": "refactor: move instance public IP output to outputs.tf\n"
+    },
+    {
+      "sha": "3daf0c0a2b36e65b403f1601fbc286146ba1c119",
+      "date": "2025-07-24T15:07:20-03:00",
+      "author": "thenriquedb",
+      "email": "thenrique2012@gmail.com",
+      "message": "fix: use data source to store AMI reference in EC2 instance\n"
+    },
+    {
+      "sha": "bafb763eb1f9f4cf19129de1611bdf728d68b03f",
+      "date": "2025-07-24T11:35:06-03:00",
+      "author": "thenriquedb",
+      "email": "thenrique2012@gmail.com",
+      "message": "chore: update .gitignore to exclude Terraform backup state files\n"
+    },
+    {
+      "sha": "fed8ee5810a174559a451fce3b12eeb182f1ab70",
+      "date": "2025-07-24T11:34:17-03:00",
+      "author": "thenriquedb",
+      "email": "thenrique2012@gmail.com",
+      "message": "build: refactor Terraform configuration to use variables\n"
+    },
+    {
+      "sha": "024b6c353d9b52fb9ce25908c7ae27fe8ea3d7ae",
+      "date": "2025-07-24T11:00:14-03:00",
+      "author": "thenriquedb",
+      "email": "thenrique2012@gmail.com",
+      "message": "chore: add initial Terraform configuration for AWS infrastructure\n"
+    },
+    {
+      "sha": "775b4847b7f7f2c052ce74740776ecc16e4967ab",
+      "date": "2025-07-24T00:33:03-03:00",
+      "author": "thenriquedb",
+      "email": "thenrique2012@gmail.com",
+      "message": "chore: add Terraform configuration for AWS VPC and provider settings\n"
+    },
+    {
+      "sha": "dd751db9875437ebef0c2330902929b3cd6b2cae",
+      "date": "2025-07-24T00:32:51-03:00",
+      "author": "thenriquedb",
+      "email": "thenrique2012@gmail.com",
+      "message": "chore: update .gitignore to include Terraform and PEM files\n"
+    },
+    {
+      "sha": "64db490c60769f39076062823081cb417bcb0510",
+      "date": "2025-07-21T21:10:04-03:00",
+      "author": "thenriquedb",
+      "email": "thenrique2012@gmail.com",
+      "message": "chore: update Docker Swarm configuration to remove APP_PORT secret and set fixed port mapping\n"
+    },
+    {
+      "sha": "4207000dc450676ffb9d774f181a71d44c3765f3",
+      "date": "2025-07-21T21:07:43-03:00",
+      "author": "thenriquedb",
+      "email": "thenrique2012@gmail.com",
+      "message": "chore: update Docker Swarm configuration to use secrets for environment variables\n"
+    },
+    {
+      "sha": "bf1c2b595f9730572ff039cd6c80eb10242d130b",
+      "date": "2025-07-21T21:07:40-03:00",
+      "author": "thenriquedb",
+      "email": "thenrique2012@gmail.com",
+      "message": "chore: update Docker Swarm configuration to use secrets for environment variables\n"
+    },
+    {
+      "sha": "785976064c75b8df0a601b525c66b7f7565f5c67",
+      "date": "2025-07-21T20:29:01-03:00",
+      "author": "thenriquedb",
+      "email": "thenrique2012@gmail.com",
+      "message": "chore: add secrets configuration for MongoDB and Redis in Docker Swarm setup\n"
+    },
+    {
+      "sha": "af30035ea8f00e5bd23c7707e25c266ffbb3d3da",
+      "date": "2025-07-21T19:54:48-03:00",
+      "author": "thenriquedb",
+      "email": "thenrique2012@gmail.com",
+      "message": "chore: add Docker Swarm configuration for url-shortener services\n"
+    },
+    {
+      "sha": "80f80a6913ead27f0041f6e09ecf5b8c72330fb0",
+      "date": "2025-07-19T11:06:31-03:00",
+      "author": "thenriquedb",
+      "email": "thenrique2012@gmail.com",
+      "message": "chore: enhance shortenUrl method to handle forwarded headers and construct request URL accordingly\n"
+    },
+    {
+      "sha": "8ce9926b07efcfac4d7ca28716a4e07ce66c1df2",
+      "date": "2025-07-17T10:39:24-03:00",
+      "author": "thenriquedb",
+      "email": "thenrique2012@gmail.com",
+      "message": "chore: update nginx configuration to include additional forwarded headers\n"
+    },
+    {
+      "sha": "b55b1b53f91c048a8491909c8353f92e46320e7b",
+      "date": "2025-07-17T10:39:16-03:00",
+      "author": "thenriquedb",
+      "email": "thenrique2012@gmail.com",
+      "message": "chore: add configuration for forwarded headers filter\n"
+    },
+    {
+      "sha": "49b142dd72cd05338f68312f93227cf330fd1cad",
+      "date": "2025-07-17T10:39:03-03:00",
+      "author": "thenriquedb",
+      "email": "thenrique2012@gmail.com",
+      "message": "chore: configure server to use forward headers strategy in application.properties\n"
+    },
+    {
+      "sha": "f3711984a68e8a53fbd6d6623a2fa6ab16fa5a33",
+      "date": "2025-07-16T20:44:31-03:00",
+      "author": "thenriquedb",
+      "email": "thenrique2012@gmail.com",
+      "message": "chore: add headers for forwarded requests in nginx configuration\n"
+    },
+    {
+      "sha": "c956f8b664342600b0b77808c3f3f212bfeb4d2c",
+      "date": "2025-07-16T18:19:24-03:00",
+      "author": "thenriquedb",
+      "email": "thenrique2012@gmail.com",
+      "message": "chore: set server port to 8082 in application.properties\n"
+    },
+    {
+      "sha": "474b5366d7d3da61bb0465ed4250b334d16838de",
+      "date": "2025-07-16T18:19:17-03:00",
+      "author": "thenriquedb",
+      "email": "thenrique2012@gmail.com",
+      "message": "chore: add nginx service to docker-compose.yml for production environment\n"
+    },
+    {
+      "sha": "52ffaaf3d7bda4027e680b140ac1726d911d980d",
+      "date": "2025-07-16T18:19:07-03:00",
+      "author": "thenriquedb",
+      "email": "thenrique2012@gmail.com",
+      "message": "chore: add nginx configuration for reverse proxy to application\n"
+    },
+    {
+      "sha": "f60e19fe622bc809dc0dad79c18aec640b0487ef",
+      "date": "2025-07-16T16:37:15-03:00",
+      "author": "thenriquedb",
+      "email": "thenrique2012@gmail.com",
+      "message": "chore: update docker-compose.yml to add local volume for MongoDB and use environment variables for credentials\n"
+    },
+    {
+      "sha": "2d731cd88ebcf4302afc29eaf0a5162acd5fcba8",
+      "date": "2025-07-16T09:05:42-03:00",
+      "author": "thenriquedb",
+      "email": "thenrique2012@gmail.com",
+      "message": "chore: add production profile to app service in docker-compose.yml\n"
+    },
+    {
+      "sha": "db216f387e5362d94f2dcc19e249cb47207ddcc2",
+      "date": "2025-07-16T00:02:54-03:00",
+      "author": "thenriquedb",
+      "email": "thenrique2012@gmail.com",
+      "message": "chore: add .env to .gitignore to exclude environment variable file from version control\n"
+    },
+    {
+      "sha": "277b2964f223f93f1c3926ceeb424e955e22d416",
+      "date": "2025-07-16T00:02:47-03:00",
+      "author": "thenriquedb",
+      "email": "thenrique2012@gmail.com",
+      "message": "chore: update application.properties and docker-compose.yml to use environment variables for MongoDB and Redis configurations\n"
+    },
+    {
+      "sha": "867481967e8888b5c82df06706d079491d3b1f50",
+      "date": "2025-07-16T00:02:31-03:00",
+      "author": "thenriquedb",
+      "email": "thenrique2012@gmail.com",
+      "message": "chore: add .env.example file with environment variable configurations\n"
+    }
+  ],
+  "commit_sha": "b03122ba2397759cec21566b89b284856b16c040",
+  "extracted_at": "2026-10-05T18:45:08.550119+00:00"
+}

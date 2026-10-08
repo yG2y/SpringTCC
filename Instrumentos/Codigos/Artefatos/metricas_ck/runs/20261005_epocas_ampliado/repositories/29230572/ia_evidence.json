@@ -1,0 +1,23 @@
+{
+  "ia_status": "com_evidencia",
+  "ia_level": 1,
+  "ia_agents": "Codex / OpenAI; GitHub Copilot",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 0,
+  "evidence": [
+    {
+      "agent": "GitHub Copilot",
+      "type": "file",
+      "path": ".github/copilot-instructions.md"
+    },
+    {
+      "agent": "Codex / OpenAI",
+      "type": "file",
+      "path": "AGENTS.md"
+    }
+  ],
+  "commits": [],
+  "commit_sha": "4663692f6fbfc199506fe5dd55ec39ae1612a17f",
+  "extracted_at": "2026-10-05T18:42:26.003631+00:00"
+}

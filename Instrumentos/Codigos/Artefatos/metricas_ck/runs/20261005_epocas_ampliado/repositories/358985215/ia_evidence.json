@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "264ad3daaef8bfa15fe0e04670a0bf7aa184a8ae",
+      "date": "2026-07-13T15:26:21-07:00",
+      "author": "Ted M. Young",
+      "email": "tedyoung@gmail.com",
+      "message": "reduce logging volume\n"
+    },
+    {
+      "sha": "84942e5c1997a1d2bf515275f03d5ad57612d4a9",
+      "date": "2026-07-13T15:09:09-07:00",
+      "author": "Ted M. Young",
+      "email": "tedyoung@gmail.com",
+      "message": "added Brevo as new emailer and removed SendGrid\n"
+    },
+    {
+      "sha": "f0ba7b0d60740378bbefe99c67ecff40b91b9daf",
+      "date": "2026-07-05T22:41:34-07:00",
+      "author": "Ted M. Young",
+      "email": "tedyoung@gmail.com",
+      "message": "add single query loading enabler\n"
+    },
+    {
+      "sha": "a85aa023b7c19a63a556f8a9a3e24085f91b75da",
+      "date": "2026-07-05T22:35:38-07:00",
+      "author": "Ted M. Young",
+      "email": "tedyoung@gmail.com",
+      "message": "adding more perf debugging info\n"
+    },
+    {
+      "sha": "03eb9ee5b068fe233e0c2b6041a34c5547d7282c",
+      "date": "2026-07-05T22:22:15-07:00",
+      "author": "Ted M. Young",
+      "email": "tedyoung@gmail.com",
+      "message": "adding more perf debugging info\n"
+    },
+    {
+      "sha": "3d2086588581ca315d7b563951268c19deefd9ae",
+      "date": "2026-07-05T21:30:29-07:00",
+      "author": "Ted M. Young",
+      "email": "tedyoung@gmail.com",
+      "message": "added debug around all ensemble fetch\n"
+    },
+    {
+      "sha": "16bfc447f4268bb1edd61c85ff3232e7fd837bc6",
+      "date": "2026-07-05T21:27:02-07:00",
+      "author": "Ted M. Young",
+      "email": "tedyoung@gmail.com",
+      "message": "update maven wrapper to 3.9.9\n"
+    },
+    {
+      "sha": "f61124d7110cec9c73860107880425df321bd21b",
+      "date": "2026-07-05T21:22:02-07:00",
+      "author": "Ted M. Young",
+      "email": "tedyoung@gmail.com",
+      "message": "update Dockerfile to use Java 25\n"
+    },
+    {
+      "sha": "685d7292c54dbc68ce32908f8b218fe3c58fa7f9",
+      "date": "2026-07-05T21:19:01-07:00",
+      "author": "Ted M. Young",
+      "email": "tedyoung@gmail.com",
+      "message": "update GitHub build/test/verify workflow to Java 25\n"
+    },
+    {
+      "sha": "c8cd743cf64ccb9aef04df607f63e64dd2551a64",
+      "date": "2026-07-05T21:07:35-07:00",
+      "author": "Ted M. Young",
+      "email": "tedyoung@gmail.com",
+      "message": "set debug level for whole app\n"
+    },
+    {
+      "sha": "603ecd9718a1b1e2638564e9133ca5f4241f6272",
+      "date": "2026-07-05T20:56:19-07:00",
+      "author": "Ted M. Young",
+      "email": "tedyoung@gmail.com",
+      "message": "commented out SendGridEmailer until it gets replaced\n\nadded debug logging to figure out perf issue?\n\nupdated Spring Boot to 3.5.16 (latest 3.5.x) and Java versions (Java 25)\n"
+    },
+    {
+      "sha": "48dc4143d7abd84bcf9e49e954d2116d392b014a",
+      "date": "2025-09-25T11:42:04-05:00",
+      "author": "Ted M. Young",
+      "email": "tedyoung@gmail.com",
+      "message": "misc formatting\n"
+    },
+    {
+      "sha": "cba067b7d074c5a7525a41f4679ad8d12e924ed8",
+      "date": "2025-09-25T11:36:09-05:00",
+      "author": "Ted M. Young",
+      "email": "tedyoung@gmail.com",
+      "message": "misc formatting and minor text changesˆ\n"
+    },
+    {
+      "sha": "2a4ba945b736bbc7f6a3939d37731de038e9cb2c",
+      "date": "2025-04-11T12:48:14-07:00",
+      "author": "Ted M. Young",
+      "email": "tedyoung@gmail.com",
+      "message": "Fixed vertical spacing\n"
+    },
+    {
+      "sha": "579c1a4205dc6f4f413e2f0cb4c117b0506e3c7c",
+      "date": "2025-04-11T12:39:56-07:00",
+      "author": "Ted M. Young",
+      "email": "tedyoung@gmail.com",
+      "message": "Had Junie add a second button for 5-minute timer (required manual updating of tailwind.css to bring in the space-y-z style)\n"
+    },
+    {
+      "sha": "a6179f4b43b9bdce253f54c4450f52e2cbc6880b",
+      "date": "2024-12-18T15:25:57-08:00",
+      "author": "Ted M. Young",
+      "email": "tedyoung@gmail.com",
+      "message": "Update version to 1.0.23\n"
+    },
+    {
+      "sha": "a1364ca0ce81f4930b3284325ab0e6b1dc3d1b7b",
+      "date": "2024-12-18T15:21:11-08:00",
+      "author": "Ted M. Young",
+      "email": "tedyoung@gmail.com",
+      "message": "Update GitHub action to use JDK 23\n"
+    },
+    {
+      "sha": "c167c2c5c2149a84642c73cc9214595ccff5b9ff",
+      "date": "2024-12-18T15:19:17-08:00",
+      "author": "Ted M. Young",
+      "email": "tedyoung@gmail.com",
+      "message": "Change timerName in URL for PUT\n"
+    },
+    {
+      "sha": "5824acda3c1a8180a3e5ddd1bd3ad198145fae16",
+      "date": "2024-12-18T15:11:58-08:00",
+      "author": "Ted M. Young",
+      "email": "tedyoung@gmail.com",
+      "message": "Replaced two separate methods (hasTimer and currentTimer) with just currentTimer that returns an Optional\n"
+    },
+    {
+      "sha": "323d9f91da3c30dce09f370e24dd4382e602dfa4",
+      "date": "2024-12-18T14:57:43-08:00",
+      "author": "Ted M. Young",
+      "email": "tedyoung@gmail.com",
+      "message": "Fixed unintentional hard-coded ensemble ID in link and fixed missing close paragraph tag in HTML\n"
+    },
+    {
+      "sha": "2d13535535ed05edc0b4663378ef9c6e9531605f",
+      "date": "2024-12-18T14:41:23-08:00",
+      "author": "Ted M. Young",
+      "email": "tedyoung@gmail.com",
+      "message": "Changed the SingleEntryHashMap inside the EnsembleTimerHolder to clear out the old entry when a new one is being added via put.\n"
+    },
+    {
+      "sha": "d062355c48416893f23710517936f786ed9eaa9a",
+      "date": "2024-12-18T14:32:13-08:00",
+      "author": "Ted M. Young",
+      "email": "tedyoung@gmail.com",
+      "message": "Fixed naming of local variables in test\n"
+    },
+    {
+      "sha": "29167f124a1d4ed4776fa27cb6e7411164b4cc35",
+      "date": "2024-12-18T14:28:29-08:00",
+      "author": "Ted M. Young",
+      "email": "tedyoung@gmail.com",
+      "message": "Wrote characterization test for existing behavior of creating an ensemble timer when one already exists.\n"
+    },
+    {
+      "sha": "2bbf03ba8ffaa09f5694f79e08d6051dea065f9a",
+      "date": "2024-12-18T14:17:15-08:00",
+      "author": "Ted M. Young",
+      "email": "tedyoung@gmail.com",
+      "message": "UI now shows that another ensemble timer is running (if it is), with a link to that timer.\n"
+    },
+    {
+      "sha": "d5065adb12c7d81be0a0b702997126138d9e3835",
+      "date": "2024-12-18T13:53:36-08:00",
+      "author": "Ted M. Young",
+      "email": "tedyoung@gmail.com",
+      "message": "Fix misleading message when timer is/is not running for the Ensemble you're looking at\n"
+    },
+    {
+      "sha": "87e86cd7a1406855ff8302e14dbed117ee3ce66a",
+      "date": "2024-12-18T13:34:06-08:00",
+      "author": "Ted M. Young",
+      "email": "tedyoung@gmail.com",
+      "message": "Updated config to create more Members if there aren't at least 5 already in the database.\n"
+    },
+    {
+      "sha": "2d1449a50f9879a72c9506e24fccf73a5dfaeed7",
+      "date": "2024-12-18T13:20:12-08:00",
+      "author": "Ted M. Young",
+      "email": "tedyoung@gmail.com",
+      "message": "Renamed app to EnsemblerApplication from MobRegApplication.\n"
+    },
+    {
+      "sha": "ef673a5330197f5a9b0b825bf9aa33c7a79b1934",
+      "date": "2024-12-18T13:18:42-08:00",
+      "author": "Ted M. Young",
+      "email": "tedyoung@gmail.com",
+      "message": "Update Dockerfile to use JDK/JRE 23\n"
+    },
+    {
+      "sha": "29c7581cec611af5385cd234af9c57f1dd8caa90",
+      "date": "2024-12-18T13:14:08-08:00",
+      "author": "Ted M. Young",
+      "email": "tedyoung@gmail.com",
+      "message": "Renamed inmemory config flag to be \"ensembler\" instead of \"mobreg\"\n"
+    },
+    {
+      "sha": "ab787860146db07c7b0d9e78aa4bd7951fec76df",
+      "date": "2024-11-21T12:59:04-08:00",
+      "author": "Ted M. Young",
+      "email": "tedyoung@gmail.com",
+      "message": "Upgraded to Spring Boot 3.4.0\n\nDisabled the automatic creation of an Ensemble with 5 Members—needs a more comprehensive fix, only needed when running locally.\n"
+    }
+  ],
+  "commit_sha": "264ad3daaef8bfa15fe0e04670a0bf7aa184a8ae",
+  "extracted_at": "2026-10-05T18:18:09.284837+00:00"
+}

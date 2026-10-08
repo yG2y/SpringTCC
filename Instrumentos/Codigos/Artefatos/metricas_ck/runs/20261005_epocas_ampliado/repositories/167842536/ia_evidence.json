@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "df8e66cb5fd5869ff38b8c557068e919cb1582c1",
+      "date": "2026-01-06T17:19:29-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Project upgrade\n\n- Upgrade to Java 25\n- Upgrade to Spring Boot 4.0.1\n- Upgrade to SpringDoc OpenAPI 3.0.1\n- Upgrade to Elasticsearch Docker image 9.2.2\n"
+    },
+    {
+      "sha": "ef7ac8fcb8a3a6536f6ba93d2dae0460da93f6b5",
+      "date": "2026-01-06T15:46:26-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Project upgrade\n\n- Upgrade to Spring Boot 3.5.9\n- Upgrade to SpringDoc OpenAPI 2.8.15\n- Upgrade to Avro 1.12.1\n- Upgrade to Apache Maven to 3.9.12\n- Upgrade to wrapperVersion to 3.3.4\n- Upgrade to Confluentinc dependency and Docker images 7.9.5\n- Upgrade to MySQL Docker image 9.2.0\n- Upgrade to Elasticsearch Docker image 8.18.8\n- Upgrade to confluentinc-kafka-connect-elasticsearch 15.1.0\n- Upgrade to debezium-connector-mysql 3.4.0.Final\n- Update mysql.cnf and researchdb.sql due to the MySQL change from 5.7.44 to 9.2.0\n- Update README\n"
+    },
+    {
+      "sha": "04cf880091ee0cb32804ae327408ea4312c2deac",
+      "date": "2025-04-23T21:18:10+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Add .gitattributes file and update README\n"
+    },
+    {
+      "sha": "a066569fd00fb7131f73cb51ae121c0bb5ad698a",
+      "date": "2025-03-02T09:19:36+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project update\n\n- Refactor application packages;\n- Fix some mappings that were wrongly implemented after removing Mapstruct;\n- Remove the interface from the service classes to keep the code simpler.\n"
+    },
+    {
+      "sha": "2f57686c09b4a825694831a8c7b14d0dedff9b43",
+      "date": "2025-03-01T23:32:58+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Refactor the mappings using the from() method in the classes or records; remove Mapstruct.\n"
+    },
+    {
+      "sha": "7d050759e9552d539a3fee123c5022813bef4bcf",
+      "date": "2025-03-01T23:09:46+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project update\n\n- Remove public keyword from Beans;\n- Convert some DTOs, in research-service, from class to record.\n"
+    },
+    {
+      "sha": "bcc91d58c6476d0863167935c0082442114a9a55",
+      "date": "2025-03-01T23:01:34+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Refactor pom.xml and docker-compose.yml files\n"
+    },
+    {
+      "sha": "aa75b8ddf5a0e264c688f45a6b51f35e4f35648f",
+      "date": "2025-03-01T22:33:23+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- Upgrade to Java 21;\n- Upgrade to Spring Boot 3.4.3;\n- Upgrade to Avro 1.11.4;\n- Upgrade to SpringDoc OpenApi 2.8.5;\n- Upgrade to Mapstruct 1.6.3;\n- Update README.\n"
+    },
+    {
+      "sha": "80c59880eb5992def9841aad8e861717cf1a1757",
+      "date": "2025-03-01T22:22:03+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- Upgrade wrapperVersion to 3.3.2 and Apache Maven to 3.9.9;\n- Upgrade to MySQL Docker image 5.7.44;\n- Upgrade to Elasticsearch Docker image 8.15.4;\n- Upgrade to Confluentinc Docker images 7.8.0;\n- Upgrade to confluentinc-kafka-connect-elasticsearch 14.1.2;\n- Upgrade to debezium-connector-mysql 3.0.7.Final;\n- Update README.\n"
+    },
+    {
+      "sha": "fce7ff51059ba54835b11e3edf9ce54a31bbc91c",
+      "date": "2023-09-12T11:48:47+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Add Medium article\n"
+    },
+    {
+      "sha": "65536af5e52f50a162cfc9086282ef313ac24672",
+      "date": "2023-09-10T10:36:58+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n- upgrade to spring-boot 3.1.3;\n- upgrade to springdoc-openapi 2.2.0;\n- upgrade to mysql docker image 5.7.43;\n- upgrade to elasticsearch docker image 8.8.1\n- upgrade to confluentinc docker images 7.4.1;\n- upgrade to confluentinc-kafka-connect-elasticsearch 14.0.8;\n- upgrade to debezium-connector-mysql 2.3.2.Final.\n"
+    },
+    {
+      "sha": "7509956335b33b6f6ba474f7a531e658fdbba790",
+      "date": "2023-09-09T17:28:01+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to apache-maven 3.9.4 and maven-wrapper 3.2.0\n"
+    },
+    {
+      "sha": "a837861d6011cdeaf832681dbd6f55c6a10b1033",
+      "date": "2023-09-08T15:55:24+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Migrate to Compose V2\n"
+    },
+    {
+      "sha": "8010fd03d3162614f628bd2f4f1576d9280a4a92",
+      "date": "2023-09-08T15:34:12+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Add Additional Readings section with one Medium article\n"
+    },
+    {
+      "sha": "18022bd55db79262c6206611e0b3b16a5cf93185",
+      "date": "2023-09-08T15:31:20+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Add PoCs & Articles Section In README\n"
+    },
+    {
+      "sha": "d3df2f2e2e936f5f0a0e3fa5a6f46bab72c95103",
+      "date": "2023-05-21T11:43:46-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n- upgrade to spring-boot 3.0.7;\n- upgrade to springdoc-openapi 2.1.0;\n- upgrade to apache-maven 3.8.7 and maven-wrapper 3.1.1;\n- upgrade to mapstruct 1.5.5.Final;\n- upgrade to mysql docker image 5.7.42;\n- upgrade to confluentinc-kafka-connect-elasticsearch 14.0.6;\n- upgrade to debezium-connector-mysql 2.2.1.Final.\n"
+    },
+    {
+      "sha": "5456b6865c160d06362493108655cf07edf92eeb",
+      "date": "2023-05-20T17:34:32-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Create FUNDING.yml\n"
+    },
+    {
+      "sha": "038f826bcf3a281f42b21ba61fb1d888778417a8",
+      "date": "2023-02-12T09:42:54+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "project upgrade\n- upgrade to confluentinc-kafka-connect-elasticsearch version 14.0.5.zip and elasticsearch-sink-articles.json, -institutes.json and -researchers.json to the new changes;\n- upgrade to adapt debezium-connector-mysql to the version 2.1.2.Final and adapt debezium-mysql-source-researchdb.json connector to the new changes.\n"
+    },
+    {
+      "sha": "e39e05b4061c560b501c93cc533b269775eeef71",
+      "date": "2023-02-11T19:53:18+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "project upgrade\n- upgrade to spring-boot 3.0.2;\n- upgrade to springdoc-openapi 2.0.2;\n- upgrade to mapstruct 1.5.3.Final;\n- upgrade to confluent pom depensency and docker images 7.3.1;\n- replace mysql.mysql-connector-java dependency to com.mysql.mysql-connector-j;\n- upgrade to mysql docker image 5.7.41;\n- upgrade to elasticsearch docker image 8.5.3.\n"
+    },
+    {
+      "sha": "0e6e536c3da47c84d3b23e59a954ca33a53d07cf",
+      "date": "2022-09-12T07:49:49+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "project upgrade\n- upgrade to java 17;\n- upgrade to spring-boot 2.7.3;\n- upgrade to maven distributionUrl 3.8.6;\n- upgrade to springdoc-openapi 1.6.11;\n- upgrade to avro 1.11.1;\n- upgrade to mysql docker image 5.7.39;\n- upgrade to confluentinc-kafka-connect-elasticsearch 11.1.1;\n- upgrade to debezium-connector-mysql 1.9.5.Final;\n- convert some classes to records;\n- update README.\n"
+    },
+    {
+      "sha": "80cce1f1e58e28914c341a2d8d1a28c509c0a50f",
+      "date": "2022-07-21T00:04:52+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "rename groupId to com.ivanfranchin\n"
+    },
+    {
+      "sha": "70e9fcd7546844694d23d1e8e1b7efed09a5ffe3",
+      "date": "2022-06-28T10:57:51+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "project upgrade\n- upgrade to spring-boot 2.7.1;\n- upgrade to elasticsearch 7.17.4;\n- upgrade mapstruct to 1.5.2.Final;\n- upgrade to maven distributionUrl 3.8.5;\n- reduce screenshot sizes by changing from png to jpeg;\n- update README.\n"
+    },
+    {
+      "sha": "e0023619ed948945c29435ddac3dbdc4257936f3",
+      "date": "2022-05-28T14:07:07+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "project update\n- upgrade springdoc-openapi dependency in research-service to version 1.6.9;\n- remove springdoc-openapi dependency in kafka-research-consumer as it was not used.\n"
+    },
+    {
+      "sha": "4acc31221e52e59919783fd7bdfadaaaadc2211e",
+      "date": "2022-05-27T12:14:26+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "upgrade to spring-boot 2.7.0 and elasticsearch docker image 7.17.3\n"
+    },
+    {
+      "sha": "d7f38a3930effa7b8fe04b8fdc683509a7dfead8",
+      "date": "2022-05-02T16:50:53+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "upgrade to mysql docker image 5.7.38\n"
+    },
+    {
+      "sha": "00fdd71a5a7dce14f044b65f6a7d772e75ff1640",
+      "date": "2022-04-28T17:41:04+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "project upgrade\n- upgrade to spring-boot 2.6.7;\n- upgrade to springdoc-openapi 1.6.8;\n- upgrade to confluentinc-kafka-connect-elasticsearch 11.1.10;\n- upgrade to debezium-connector-mysql 1.9.1.Final;\n- add Mapping annotation to ignore some fields in mapper classes;\n- update README.\n"
+    },
+    {
+      "sha": "e022aa3fd4a3e60fa34630f7e2b0f75a4563d206",
+      "date": "2022-04-04T12:56:16+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "upgrade to spring-boot 2.6.6\n"
+    },
+    {
+      "sha": "8d256cf2b57bdebd127ba56a91b83f937023d5c6",
+      "date": "2022-02-25T09:58:11+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "project update\n- update to spring-boot 2.6.4;\n- update to springdoc-openapi 1.6.6.\n- update to avro 1.11.0;\n- generate new ReviewMessage avro generated class.\n"
+    },
+    {
+      "sha": "bf2dfd1dbd57c84c9fddb0f0bc52a3be6fb2e031",
+      "date": "2022-01-26T09:29:05+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "project update\n- update to spring-boot 2.6.3;\n- update to springdoc-openapi 1.6.4;\n- update to maven-wrapper 3.8.4;\n- update to mysql docker image 5.7.37;\n- set ES_JAVA_OPTS to elasticsearch in docker-compose.\n"
+    },
+    {
+      "sha": "c89a85b0effe572bda9ae5a1f6d4f375e23e99fe",
+      "date": "2021-12-23T14:39:52-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "project update\n- remove spring.data.elasticsearch.cluster-name property in kafka-research-consumer;\n- simplify elasticsearch config in docker-compose.yml;\n- add HOW-TO.txt file about updating confluentinc-kafka-connect-elasticsearch ZIP file.\n"
+    }
+  ],
+  "commit_sha": "df8e66cb5fd5869ff38b8c557068e919cb1582c1",
+  "extracted_at": "2026-10-05T18:19:18.707252+00:00"
+}

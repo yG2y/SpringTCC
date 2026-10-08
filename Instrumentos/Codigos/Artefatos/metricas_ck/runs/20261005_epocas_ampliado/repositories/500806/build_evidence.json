@@ -1,0 +1,12 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${spring.boot.version}",
+  "spring_boot_major": "unknown",
+  "java_versions_declared": "${java.version};17",
+  "build_evidence": [
+    {
+      "file": "tools/test-api-generator/citrus-openapi-codegen/pom.xml",
+      "artifact": "spring-boot-test"
+    }
+  ]
+}

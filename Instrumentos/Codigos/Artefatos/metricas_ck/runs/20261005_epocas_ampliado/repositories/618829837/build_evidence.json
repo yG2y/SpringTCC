@@ -1,0 +1,36 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "2.7.10;3.0.5",
+  "spring_boot_major": "multiple",
+  "java_versions_declared": "",
+  "build_evidence": [
+    {
+      "file": "server/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "server/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "server/pom.xml",
+      "artifact": "spring-boot-starter-websocket"
+    },
+    {
+      "file": "server/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "server/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "server/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "16d106748f9d98fbea03a986ebedc54e1d799cf0",
+      "date": "2026-01-20T23:12:05-03:00",
+      "author": "Gustavo Alves",
+      "email": "gustavoalvesb.dealmeida@gmail.com",
+      "message": "Refactor: simplify scheduled result checks in ScheduledConsumer (#52)\n\n"
+    },
+    {
+      "sha": "72a668259f4681617b58bde2f564468b7ca99977",
+      "date": "2026-01-19T21:22:28-03:00",
+      "author": "Gustavo Alves",
+      "email": "gustavoalvesb.dealmeida@gmail.com",
+      "message": "Refactor: replace System.out with SLF4J logging (#51)\n\n* Refactor LoteriasUpdate and ScheduledConsumer to use SLF4J for logging instead of System.out\n\n* Refactor error logging in LoteriasUpdate to include exception details"
+    },
+    {
+      "sha": "837319762de9e80d144e608e5fbc1e60fe6ba9b1",
+      "date": "2026-01-19T21:00:13-03:00",
+      "author": "Gustavo Alves",
+      "email": "gustavoalvesb.dealmeida@gmail.com",
+      "message": "Feat/return 404 on null results (#50)\n\n* Feat: return 404 on null results in ApiRestController\n\n* Feat: enhance ApiRestControllerTests with additional test cases and mock data\n\n* Feat: update LoteriasUpdate and ResultadoService to handle null results more gracefully\n\n* Feat: import nonNull utility for null checks in LoteriasUpdate\n\n* Feat: simplify PathVariable annotations in ApiRestController for improved readability\n\n* Feat: refactor lottery validation into a separate method for cleaner code"
+    },
+    {
+      "sha": "5a058f3c89b39adabe150ccb1b1b235e2384b3a4",
+      "date": "2026-01-19T20:05:52-03:00",
+      "author": "Gustavo Alves",
+      "email": "gustavoalvesb.dealmeida@gmail.com",
+      "message": "Feat: add PR checks workflow and integrate JaCoCo for test coverage (#49)\n\n"
+    },
+    {
+      "sha": "6be14bba483935a97c1346901c875cc9548ca27c",
+      "date": "2026-01-19T15:13:49-03:00",
+      "author": "Gustavo Alves",
+      "email": "gustavoalvesb.dealmeida@gmail.com",
+      "message": "Feat: add concurso especial indicator to Resultado model and update Consume (#48)\n\n* Add concurso especial indicator to Resultado model and update Consumer logic\n\n* Add tests for concurso especial indicator in Consumer and Resultado models\n\n* Refactor setConcursoEspecial method parameter for clarity\n\n* Update HttpConnectionService and SSLHttpConnectionService to throw IOException instead of Exception\n\n* Refactor JSON response creation in ConsumerTest for improved readability"
+    },
+    {
+      "sha": "b6621959ed2fde8b9088738f76c5a962963eb466",
+      "date": "2025-03-22T01:56:32-03:00",
+      "author": "guto-alves",
+      "email": "gustavoalvesb.dealmeida@gmail.com",
+      "message": "Update ApiRestControllerTests to reflect changes in lottery naming and expected results\n"
+    },
+    {
+      "sha": "13d436a044d4df997d8fde91b503f74d9a7caf00",
+      "date": "2024-12-16T19:04:09-03:00",
+      "author": "guto-alves",
+      "email": "gustavoalvesb.dealmeida@gmail.com",
+      "message": "Set server port to 8090 in application properties.\n"
+    },
+    {
+      "sha": "a7d08ff7001ac062ebe786817b126c77ef42a52e",
+      "date": "2024-12-16T19:02:58-03:00",
+      "author": "guto-alves",
+      "email": "gustavoalvesb.dealmeida@gmail.com",
+      "message": "Update Java version to 17 in pom.xml\n"
+    },
+    {
+      "sha": "5f03c027e69de1e2b60789a3405a6186fdab371b",
+      "date": "2024-12-16T19:00:05-03:00",
+      "author": "guto-alves",
+      "email": "gustavoalvesb.dealmeida@gmail.com",
+      "message": "Fix code indentation and refactor code\n"
+    },
+    {
+      "sha": "08d52d858d55a1860fdebd2e512751ed999d6f98",
+      "date": "2024-12-04T22:37:11-03:00",
+      "author": "Gustavo Alves",
+      "email": "gustavoalvesb.dealmeida@gmail.com",
+      "message": "Update README.md with the new donation options"
+    },
+    {
+      "sha": "2a1920555a206516f881d94c544af5db0f3a5119",
+      "date": "2024-07-04T16:22:16-03:00",
+      "author": "Gustavo Alves",
+      "email": "gustavoalvesb.dealmeida@gmail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "6e8dc9ac36c5bf193815288ac03ceb68c0e3314e",
+      "date": "2024-07-04T16:21:29-03:00",
+      "author": "Gustavo Alves",
+      "email": "gustavoalvesb.dealmeida@gmail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "dec490f8616d7c9e03e9ea6d06621ad39b2dd90a",
+      "date": "2024-05-14T10:39:29-03:00",
+      "author": "Gustavo Alves",
+      "email": "gustavoalvesb.dealmeida@gmail.com",
+      "message": "Change the check date format to \"dd/MM/yyyy HH:mm\" and refactor\nScheduledConsumer"
+    },
+    {
+      "sha": "0877bb605f1972959d1ff62efdad3b87348e9161",
+      "date": "2024-01-24T15:15:56-03:00",
+      "author": "Gustavo Alves",
+      "email": "gustavoalvesb.dealmeida@gmail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "914de27f4aa2f051d1c689116e8c0c11984c62b2",
+      "date": "2024-01-24T15:01:34-03:00",
+      "author": "Gustavo Alves",
+      "email": "gustavoalvesb.dealmeida@gmail.com",
+      "message": "Merge branch 'main' of https://github.com/guto-alves/loterias-api\n"
+    },
+    {
+      "sha": "cc32a0d38970bd1f242f7fce987420f00caada69",
+      "date": "2024-01-24T14:47:17-03:00",
+      "author": "Gustavo Alves",
+      "email": "gustavoalvesb.dealmeida@gmail.com",
+      "message": "Fix empty mesSorte/timeCoracao field"
+    },
+    {
+      "sha": "4a48e86fe0b91c8a584782bd2779dab0fad248f5",
+      "date": "2023-12-09T01:28:19-03:00",
+      "author": "Gustavo Alves",
+      "email": "gustavoalvesb.dealmeida@gmail.com",
+      "message": "Add Telegram group link to README.md"
+    },
+    {
+      "sha": "9eff6fad374872e9e0039049c0c08f2f0d019e11",
+      "date": "2023-08-14T19:36:19-03:00",
+      "author": "Gustavo Alves",
+      "email": "gustavoalvesb.dealmeida@gmail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "0353e9fb10db6a3f1c63d8a8d0b4e54e5e8ae6b0",
+      "date": "2023-08-14T19:17:16-03:00",
+      "author": "guto-alves",
+      "email": "gustavoalvesb.dealmeida@gmail.com",
+      "message": "Fix Api allowable values\n"
+    },
+    {
+      "sha": "88b1b66ffabc86638cfc25682aab6acf6d803352",
+      "date": "2023-08-14T19:08:38-03:00",
+      "author": "guto-alves",
+      "email": "gustavoalvesb.dealmeida@gmail.com",
+      "message": "Update java version\n"
+    },
+    {
+      "sha": "e5f9336ab3d5c30517a29b24a95a5375bb1e1dc8",
+      "date": "2023-08-14T18:54:51-03:00",
+      "author": "guto-alves",
+      "email": "gustavoalvesb.dealmeida@gmail.com",
+      "message": "Use servicebus2.caixa.gov.br as data source\n"
+    },
+    {
+      "sha": "9476ef6d8a0a63ec37ee5ffbec29708ed5879cc3",
+      "date": "2023-05-25T23:59:24-03:00",
+      "author": "Gustavo Alves",
+      "email": "gustavoalvesb.dealmeida@gmail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "f30b1d9fe0124e2ffdc9480950ae8fe7e49c42ef",
+      "date": "2023-05-23T23:01:41-03:00",
+      "author": "Gustavo Alves",
+      "email": "gustavoalvesb.dealmeida@gmail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "863592378f09bb8aa5144a4cc940217e60ab7a1d",
+      "date": "2023-05-23T22:44:51-03:00",
+      "author": "Gustavo Alves",
+      "email": "gustavoalvesb.dealmeida@gmail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "379c94ec21be12e57a5d150d2771cfef4a57d342",
+      "date": "2023-05-23T22:43:02-03:00",
+      "author": "Gustavo Alves",
+      "email": "gustavoalvesb.dealmeida@gmail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "7709e4c85efe4969fcb288ed41f005818d1fbf83",
+      "date": "2023-02-17T01:24:58-03:00",
+      "author": "Gustavo Alves",
+      "email": "gustavoalvesb.dealmeida@gmail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "05882a2bfac4d4b99a36e3f278f4a31eae8819b7",
+      "date": "2022-01-25T02:18:56-03:00",
+      "author": "Gustavo Alves",
+      "email": "gustavo.almeida13@fatec.sp.gov.br",
+      "message": "Update Loteria.java\n"
+    },
+    {
+      "sha": "4a91543ac1079c778b36ad7fd257639988402df0",
+      "date": "2021-12-31T04:19:52-03:00",
+      "author": "Gustavo Alves",
+      "email": "gustavo.almeida13@fatec.sp.gov.br",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "b443fbe15f28c6345dfdaff96bc55bb1905b26bb",
+      "date": "2021-12-31T04:05:53-03:00",
+      "author": "Gustavo Alves",
+      "email": "gustavo.almeida13@fatec.sp.gov.br",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "377f972e18a6645a22c4885ce50a58dda027c043",
+      "date": "2021-12-23T23:32:24-03:00",
+      "author": "Gustavo Alves",
+      "email": "gustavo.almeida13@fatec.sp.gov.br",
+      "message": "Fix result date format\n"
+    }
+  ],
+  "commit_sha": "16d106748f9d98fbea03a986ebedc54e1d799cf0",
+  "extracted_at": "2026-10-05T18:35:47.430656+00:00"
+}

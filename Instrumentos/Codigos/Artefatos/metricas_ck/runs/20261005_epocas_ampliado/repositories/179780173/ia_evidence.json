@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "8f157e1262ec26d77795f0531bdea414551fa5d7",
+      "date": "2025-02-11T16:43:07-08:00",
+      "author": "Jonatan Ivanov",
+      "email": "jonatan.ivanov@gmail.com",
+      "message": "Use Java 23 for the GHA build\n"
+    },
+    {
+      "sha": "18b5cc1ef80162ca05fbef48425eec9d819d79ce",
+      "date": "2025-02-11T16:08:09-08:00",
+      "author": "Jonatan Ivanov",
+      "email": "jonatan.ivanov@gmail.com",
+      "message": "Migrate to process info contributor\n"
+    },
+    {
+      "sha": "437c52b7379fb483c3edb5c75904bda21e71c412",
+      "date": "2025-02-11T16:02:01-08:00",
+      "author": "Jonatan Ivanov",
+      "email": "jonatan.ivanov@gmail.com",
+      "message": "Upgrade to Java 23\n"
+    },
+    {
+      "sha": "8ecf1bd97b8428350a0270cb32c7c3a14686c2db",
+      "date": "2025-02-11T16:01:33-08:00",
+      "author": "Jonatan Ivanov",
+      "email": "jonatan.ivanov@gmail.com",
+      "message": "Upgrade dependencies\n"
+    },
+    {
+      "sha": "6e41f349a5e92ed5bd3c4dfc51195d000de5338b",
+      "date": "2025-02-11T15:49:49-08:00",
+      "author": "Jonatan Ivanov",
+      "email": "jonatan.ivanov@gmail.com",
+      "message": "Fix invocation of Task.project at execution time\n\nInvocation of Task.project at execution time has been deprecated.\nSee https://docs.gradle.org/8.12.1/userguide/upgrading_version_7.html#task_project\n"
+    },
+    {
+      "sha": "9c97d0a57ac76a325871712928d4e796aee6a2b1",
+      "date": "2025-02-11T15:35:27-08:00",
+      "author": "Jonatan Ivanov",
+      "email": "jonatan.ivanov@gmail.com",
+      "message": "Upgrade Gradle to 8.12.1\n"
+    },
+    {
+      "sha": "6b9e67d6d929a9901622c38c5d650e1bcdf0baa8",
+      "date": "2024-09-12T14:56:08-07:00",
+      "author": "Jonatan Ivanov",
+      "email": "jonatan.ivanov@gmail.com",
+      "message": "Update dependencies\n"
+    },
+    {
+      "sha": "7de4d48a36b3ac209c657ffb90fe278fbbb635c1",
+      "date": "2024-09-12T14:55:33-07:00",
+      "author": "Jonatan Ivanov",
+      "email": "jonatan.ivanov@gmail.com",
+      "message": "Fix indentation in runtime.gradle\n"
+    },
+    {
+      "sha": "ccd5f47929e5817d5f5578d6de3fae095c34185a",
+      "date": "2024-09-12T14:35:23-07:00",
+      "author": "Jonatan Ivanov",
+      "email": "jonatan.ivanov@gmail.com",
+      "message": "Upgrade dependencies\n"
+    },
+    {
+      "sha": "314467f9c8bee384c9458bec66c9813f9d07e365",
+      "date": "2024-09-12T14:35:00-07:00",
+      "author": "Jonatan Ivanov",
+      "email": "jonatan.ivanov@gmail.com",
+      "message": "Add logback config for Gatling\n"
+    },
+    {
+      "sha": "a3957f7f76de950061b06e9d9b9a24f0f40fa004",
+      "date": "2024-09-12T14:18:49-07:00",
+      "author": "Jonatan Ivanov",
+      "email": "jonatan.ivanov@gmail.com",
+      "message": "Use the java plugin for perf-test\n"
+    },
+    {
+      "sha": "7dde72851db0e9193fc5ceeff0c20ad8fabe9a56",
+      "date": "2024-09-12T14:16:12-07:00",
+      "author": "Jonatan Ivanov",
+      "email": "jonatan.ivanov@gmail.com",
+      "message": "Upgrade Gradle to 8.10.1\n"
+    },
+    {
+      "sha": "c469cb99a9bcef0fd537a849c650f34375f7e237",
+      "date": "2024-03-28T11:00:39-07:00",
+      "author": "Jonatan Ivanov",
+      "email": "jonatan.ivanov@gmail.com",
+      "message": "Upgrade to Java 22\n"
+    },
+    {
+      "sha": "2e5e90020df41c7b2f1bf46bfb155f8d0e5d7f75",
+      "date": "2024-03-28T10:55:00-07:00",
+      "author": "Jonatan Ivanov",
+      "email": "jonatan.ivanov@gmail.com",
+      "message": "Upgrade dependencies\n"
+    },
+    {
+      "sha": "3f03ed6371f1c9081432b3c51335b06fcc0e7b16",
+      "date": "2024-03-28T10:52:32-07:00",
+      "author": "Jonatan Ivanov",
+      "email": "jonatan.ivanov@gmail.com",
+      "message": "Upgrade Gradle to 8.7\n"
+    },
+    {
+      "sha": "ca3d8449b6e1f1677e0ff2867db6e3afac049320",
+      "date": "2024-02-08T17:01:09-08:00",
+      "author": "Jonatan Ivanov",
+      "email": "jonatan.ivanov@gmail.com",
+      "message": "Upgrade dependencies\n"
+    },
+    {
+      "sha": "135ea41870a2a7be09c137c283b9156e1600912b",
+      "date": "2024-02-08T16:49:42-08:00",
+      "author": "Jonatan Ivanov",
+      "email": "jonatan.ivanov@gmail.com",
+      "message": "Upgrade Gradle to 8.6\n"
+    },
+    {
+      "sha": "4fbf6dc89a5706ea0de6d965a63cdb4f7ecd1501",
+      "date": "2023-12-08T16:30:24+01:00",
+      "author": "Jonatan Ivanov",
+      "email": "jonatan.ivanov@gmail.com",
+      "message": "Set management.observations.key-values\n"
+    },
+    {
+      "sha": "0d111f1737a21840f1d83239aaddaabe2f2e105e",
+      "date": "2023-12-08T16:29:55+01:00",
+      "author": "Jonatan Ivanov",
+      "email": "jonatan.ivanov@gmail.com",
+      "message": "Remove logging.pattern.level property\n\nBoot 3.2 supports log correlation without an extra property now.\n"
+    },
+    {
+      "sha": "7c3a4d7b8770dfda0b462a256ed239abbb4387ec",
+      "date": "2023-12-08T16:28:23+01:00",
+      "author": "Jonatan Ivanov",
+      "email": "jonatan.ivanov@gmail.com",
+      "message": "Upgrade dependencies\n"
+    },
+    {
+      "sha": "e9e169723eb40002b482176e2d3c6a7d93fb1ef7",
+      "date": "2023-11-15T12:27:26-08:00",
+      "author": "Jonatan Ivanov",
+      "email": "jonatan.ivanov@gmail.com",
+      "message": "Upgrade dependencies\n"
+    },
+    {
+      "sha": "0d3c008a5e72bd9a725f1942aef2d9930cbc3f40",
+      "date": "2023-11-15T12:19:33-08:00",
+      "author": "Jonatan Ivanov",
+      "email": "jonatan.ivanov@gmail.com",
+      "message": "Upgrade checkout action\n"
+    },
+    {
+      "sha": "bc8715745ed2ed300b0af142ffbac9b60096c266",
+      "date": "2023-11-15T12:12:21-08:00",
+      "author": "Jonatan Ivanov",
+      "email": "jonatan.ivanov@gmail.com",
+      "message": "Upgrade to Java 21\n"
+    },
+    {
+      "sha": "dbc7d4d6e5b953a9f757f73d79f1a9ad6d17f002",
+      "date": "2023-11-15T12:11:25-08:00",
+      "author": "Jonatan Ivanov",
+      "email": "jonatan.ivanov@gmail.com",
+      "message": "Upgrade Gradle to 8.4\n"
+    },
+    {
+      "sha": "eb7de196ca23627fab0ba086bab0f2c40330deab",
+      "date": "2023-07-17T20:15:15-07:00",
+      "author": "Jonatan Ivanov",
+      "email": "jonatan.ivanov@gmail.com",
+      "message": "Rename setup JDK job\n"
+    },
+    {
+      "sha": "c6e53f061cd818ef7cf72caa3ed992e5a01cbebb",
+      "date": "2023-07-17T20:08:11-07:00",
+      "author": "Jonatan Ivanov",
+      "email": "jonatan.ivanov@gmail.com",
+      "message": "Add MeterSimulation\n"
+    },
+    {
+      "sha": "c3870080f4b36f1ea14f4d3ff660606a9d6db5f2",
+      "date": "2023-07-17T19:50:13-07:00",
+      "author": "Jonatan Ivanov",
+      "email": "jonatan.ivanov@gmail.com",
+      "message": "Move perf-tests to the resourceater package\n"
+    },
+    {
+      "sha": "53b355f809dafb019ce3a960dc71b9e733a193aa",
+      "date": "2023-07-17T20:13:52-07:00",
+      "author": "Jonatan Ivanov",
+      "email": "jonatan.ivanov@gmail.com",
+      "message": "Use Java 20 for GHA\n"
+    },
+    {
+      "sha": "8094feb9c242626cd13f218180c20a07324ffcd6",
+      "date": "2023-07-17T19:05:52-07:00",
+      "author": "Jonatan Ivanov",
+      "email": "jonatan.ivanov@gmail.com",
+      "message": "Add property to use the Boot registry or a new one\n"
+    },
+    {
+      "sha": "6fd4a0d37bf0fe6251da263e5327c66067b1bbdc",
+      "date": "2023-07-17T19:00:16-07:00",
+      "author": "Jonatan Ivanov",
+      "email": "jonatan.ivanov@gmail.com",
+      "message": "Make the registry injectable in MeterResource\n"
+    }
+  ],
+  "commit_sha": "8f157e1262ec26d77795f0531bdea414551fa5d7",
+  "extracted_at": "2026-10-05T18:48:25.517861+00:00"
+}

@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "1fd95d9aa33061fe4afa89dc5ed3d84dbf0239f9",
+      "date": "2026-08-22T13:37:54-07:00",
+      "author": "Jason Yau",
+      "email": "contact@jasonpyau.com",
+      "message": "Merge pull request #18 from jasonpyau/2026-08-22\n\nAdd rate limits to unauthorized admin endpoint requests, UI fixes for smaller screens, patch security vulnerabilities, small refactors"
+    },
+    {
+      "sha": "5a1455fd6552a31a786c915aab7b1d84196a85dc",
+      "date": "2026-08-22T16:18:31-04:00",
+      "author": "jasonpyau",
+      "email": "contact@jasonpyau.com",
+      "message": "Add rate limits to unauthorized admin endpoint requests\n\nAdd a heavy rate limit (`RateLimit.EXPENSIVE_TOKEN`) to unauthorized admin endpoint requests to avoid brute force attacks\n"
+    },
+    {
+      "sha": "4fda0665ef05137480463c45fd15b0358598ab69",
+      "date": "2026-08-22T16:08:36-04:00",
+      "author": "jasonpyau",
+      "email": "contact@jasonpyau.com",
+      "message": "Fix experience warning and remove unneeded code\n\nFix a warning (HV000271) which logs that using `@Valid` on `java.util.Set` is deprecated, which was introduced in PR #17. Also remove unneeded code now that experience positions are updated with the `/experiences/{id}/positions/new` and `/experiences/{id}/positions/delete` endpoints instead of the `/experiences/update/{id}` endpoint.\n"
+    },
+    {
+      "sha": "1ad1e5d9a0c59a976c318194921962143d9edd68",
+      "date": "2026-08-22T16:04:17-04:00",
+      "author": "jasonpyau",
+      "email": "contact@jasonpyau.com",
+      "message": "Improve element widths for smaller screens\n\nIncrease widths for certain elements (skills, links, projects, about me, blog, and experiences containers) for smaller screens\n"
+    },
+    {
+      "sha": "2e5e4ddbb14f238d95d158b9d84b0432093c4d48",
+      "date": "2026-08-22T16:00:39-04:00",
+      "author": "jasonpyau",
+      "email": "contact@jasonpyau.com",
+      "message": "Bump version: Spring Boot 4.1.1\n\nBump Spring Boot 4.1.1: CVE-2026-49844, CVE-2026-53434, CVE-2026-55276, CVE-2026-59083, CVE-2026-59084, CVE-2026-53404, CVE-2026-55955, CVE-2026-55956, CVE-2026-50229\n"
+    },
+    {
+      "sha": "53006eda8f7f2ca2c90a8329916b2f307c500d3b",
+      "date": "2026-06-28T19:13:35-07:00",
+      "author": "Jason Yau",
+      "email": "contact@jasonpyau.com",
+      "message": "Merge pull request #17 from jasonpyau/2026-06-28\n\nRefactor an experience to be able to have multiple positions, patch security vulnerabilities, fix VS Code warnings"
+    },
+    {
+      "sha": "709703950b12d7ec3dc0b225e8ca08aa89252e5a",
+      "date": "2026-06-28T21:58:19-04:00",
+      "author": "jasonpyau",
+      "email": "contact@jasonpyau.com",
+      "message": "Refactor an experience to be able to have multiple positions\n"
+    },
+    {
+      "sha": "5716147f008701d955552868f190be3756ef2875",
+      "date": "2026-06-28T21:57:45-04:00",
+      "author": "jasonpyau",
+      "email": "contact@jasonpyau.com",
+      "message": "Fix VS Code warning JAVA_REPOSITORY and JAVA_CONSTRUCTOR_PARAMETER_INJECTION\n"
+    },
+    {
+      "sha": "9a5229306b7b9a4b84c2440a0c3c6c2831e5b944",
+      "date": "2026-06-28T21:51:42-04:00",
+      "author": "jasonpyau",
+      "email": "contact@jasonpyau.com",
+      "message": "Bump version: Spring Boot 4.1.0\n"
+    },
+    {
+      "sha": "7e13f9cec5a48a39f3c331bdd615f9b09c2acb0f",
+      "date": "2026-01-25T19:57:33-08:00",
+      "author": "Jason Yau",
+      "email": "contact@jasonpyau.com",
+      "message": "Merge pull request #16 from jasonpyau/dev\n\nBump version: Spring Boot 4.0.2, miscellaneous fixes"
+    },
+    {
+      "sha": "88a1d6465b68734fd6b9baa54a7ca4f2f7da1dec",
+      "date": "2026-01-25T22:40:11-05:00",
+      "author": "jasonpyau",
+      "email": "contact@jasonpyau.com",
+      "message": "Bump version: Spring Boot 4.0.2, miscellaneous fixes\n"
+    },
+    {
+      "sha": "eea329ae1460cba428a28d1ec60297e989749910",
+      "date": "2025-09-03T07:33:13-04:00",
+      "author": "Jason Yau",
+      "email": "contact@jasonpyau.com",
+      "message": "Merge pull request #15 from jasonpyau/dev\n\nPatch security vulnerabilities and update deployment pipeline for upgraded home server"
+    },
+    {
+      "sha": "5bed0018a572d36aa1549d7f642fa6c3749fd6d3",
+      "date": "2025-09-02T00:43:47-04:00",
+      "author": "jasonpyau",
+      "email": "contact@jasonpyau.com",
+      "message": "Update deployment pipeline\n"
+    },
+    {
+      "sha": "2c4a5ea5d7c9dac32137ccf14bf26e6eb8295545",
+      "date": "2025-09-02T00:21:55-04:00",
+      "author": "jasonpyau",
+      "email": "contact@jasonpyau.com",
+      "message": "Bump version: Spring Boot 3.4.9\n"
+    },
+    {
+      "sha": "4381744fbaab365197e94ea063e04dcd88b2c3e6",
+      "date": "2025-04-28T16:54:09-04:00",
+      "author": "Jason Yau",
+      "email": "contact@jasonpyau.com",
+      "message": "Merge pull request #14 from jasonpyau/dev\n\nPatch security vulnerabilities, improve simple icons service error handling, use HTML form input validation for contact section"
+    },
+    {
+      "sha": "58582ed694bc3dbcba3d85dbc07b93005119890e",
+      "date": "2025-04-28T16:31:45-04:00",
+      "author": "jasonpyau",
+      "email": "contact@jasonpyau.com",
+      "message": "Increase experience body max length\n"
+    },
+    {
+      "sha": "3b003d06e5a65b3bd9035b0238d4e2a339292d18",
+      "date": "2025-04-28T16:31:29-04:00",
+      "author": "jasonpyau",
+      "email": "contact@jasonpyau.com",
+      "message": "Use HTML form input validation for contact section\n"
+    },
+    {
+      "sha": "3cff1b971910bb019c0ebcc8ef7204b20b03824f",
+      "date": "2025-04-28T13:18:00-04:00",
+      "author": "jasonpyau",
+      "email": "contact@jasonpyau.com",
+      "message": "Improve simple icons service error handling and fix deprecated constructor\n"
+    },
+    {
+      "sha": "a1abdf7b063d8dca55be334cf4b2a75d925c2220",
+      "date": "2025-04-28T13:16:22-04:00",
+      "author": "jasonpyau",
+      "email": "contact@jasonpyau.com",
+      "message": "Bump version: Spring Boot 3.3.11\n"
+    },
+    {
+      "sha": "50957fa5d535c32131478bd839b9d46aa8f02a81",
+      "date": "2025-01-23T19:51:26-05:00",
+      "author": "Jason Yau",
+      "email": "contact@jasonpyau.com",
+      "message": "Merge pull request #13 from jasonpyau/dev\n\nAdd lazy loading to img elements in the home page, small frontend changes, bump versionss"
+    },
+    {
+      "sha": "d4e5cd7e794690845e21903560175f7ad09cf783",
+      "date": "2025-01-23T19:44:28-05:00",
+      "author": "jasonpyau",
+      "email": "contact@jasonpyau.com",
+      "message": "Add lazy loading and alt attributes to img elements, more consistent styling to anchor elements\n"
+    },
+    {
+      "sha": "0ac369e8f3207c685787ae717152d4910b31a14b",
+      "date": "2025-01-23T19:28:59-05:00",
+      "author": "jasonpyau",
+      "email": "contact@jasonpyau.com",
+      "message": "Bump version: Spring Boot 3.3.8\n"
+    },
+    {
+      "sha": "a8c5c361b80ed126cf42972ddea1f81b11a101db",
+      "date": "2025-01-12T21:34:19-05:00",
+      "author": "Jason Yau",
+      "email": "contact@jasonpyau.com",
+      "message": "Merge pull request #12 from jasonpyau/dev\n\nLoad resumeLink from Metadata, refactor SimpleIconsService to not loop through 6.23.0 Simple Icons data, small tweaks"
+    },
+    {
+      "sha": "413fd6a66e003d9aaff1a182f2b2c9ad515ebdea",
+      "date": "2025-01-12T21:16:48-05:00",
+      "author": "jasonpyau",
+      "email": "contact@jasonpyau.com",
+      "message": "Update frontend to make experience logos clickable and add title attributes to experiences, projects, and skills\n"
+    },
+    {
+      "sha": "8f005cb3d0e1a2a9ec0dee11a82a006bd9dd4626",
+      "date": "2025-01-12T20:46:06-05:00",
+      "author": "jasonpyau",
+      "email": "contact@jasonpyau.com",
+      "message": "Load resume link from Metadata instead of application.properties\n"
+    },
+    {
+      "sha": "60cce86d2defa4a48d3bddbad7820e817bd5de51",
+      "date": "2025-01-12T11:46:44-05:00",
+      "author": "jasonpyau",
+      "email": "contact@jasonpyau.com",
+      "message": "Refactor SimpleIconsService to not loop through 6.23.0 simple icons data for each SVG query\n"
+    },
+    {
+      "sha": "834e29e278a2466824441bb3b38dcbf551ce4bf3",
+      "date": "2025-01-12T11:40:58-05:00",
+      "author": "jasonpyau",
+      "email": "contact@jasonpyau.com",
+      "message": "Allow Experience logo links to start with '/', update Link href error message\n"
+    },
+    {
+      "sha": "e369a24c007db630309b61cd8a6db7ce2c56b842",
+      "date": "2025-01-05T22:43:15-05:00",
+      "author": "Jason Yau",
+      "email": "contact@jasonpyau.com",
+      "message": "Merge pull request #11 from jasonpyau/dev\n\nAdd enum for Experience type, split Experience section to Work Experience and Education"
+    },
+    {
+      "sha": "495a76d5a731ce27dbcb0360394d95e7fd7cfdfb",
+      "date": "2025-01-05T22:20:35-05:00",
+      "author": "jasonpyau",
+      "email": "contact@jasonpyau.com",
+      "message": "Use StringUtils.hasText instead of checking null and blank string\n"
+    },
+    {
+      "sha": "e2d98e5e607213488ecf5622afe294ee910b2826",
+      "date": "2025-01-05T22:03:44-05:00",
+      "author": "jasonpyau",
+      "email": "contact@jasonpyau.com",
+      "message": "Rename query functions in Repository classes to be more consistent and clear\n"
+    }
+  ],
+  "commit_sha": "1fd95d9aa33061fe4afa89dc5ed3d84dbf0239f9",
+  "extracted_at": "2026-10-05T18:47:23.497721+00:00"
+}

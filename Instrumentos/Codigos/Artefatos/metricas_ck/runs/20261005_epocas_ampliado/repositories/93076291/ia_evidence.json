@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "e2c6ab89687c6506f2e4f939b36810c6b2798286",
+      "date": "2025-11-20T17:25:48+01:00",
+      "author": "Jonathan Lermitage",
+      "email": "jonathan.lermitage@gmail.com",
+      "message": "upgrade libs\n"
+    },
+    {
+      "sha": "956d674d37a78523e7e522fb035e6a3fd8842d82",
+      "date": "2025-10-23T18:15:42+02:00",
+      "author": "Jonathan Lermitage",
+      "email": "jonathan.lermitage@gmail.com",
+      "message": "upgrade libs\n"
+    },
+    {
+      "sha": "23e663b0a3aafde26a6b55edd3780f7df6498727",
+      "date": "2025-07-24T14:05:27+02:00",
+      "author": "Jonathan Lermitage",
+      "email": "jonathan.lermitage@gmail.com",
+      "message": "upgrade libs, remove unused jackson-datatype-hibernate5-jakarta lib\n"
+    },
+    {
+      "sha": "01f703244d5bf77a3ea62b44b9caf8f12fe14d3a",
+      "date": "2025-07-16T16:50:17+02:00",
+      "author": "Jonathan Lermitage",
+      "email": "jonathan.lermitage@gmail.com",
+      "message": "upgrade libs\n"
+    },
+    {
+      "sha": "a231cfa0b4b34fea550dedebd696d8338b457699",
+      "date": "2025-06-10T15:44:51+02:00",
+      "author": "Jonathan Lermitage",
+      "email": "jonathan.lermitage@gmail.com",
+      "message": "actuator: get the application’s startup sequence\n"
+    },
+    {
+      "sha": "c940bbcc1a99c7b14aa4411c50614e80b000bc68",
+      "date": "2025-06-10T15:44:09+02:00",
+      "author": "Jonathan Lermitage",
+      "email": "jonathan.lermitage@gmail.com",
+      "message": "upgrade libs\n"
+    },
+    {
+      "sha": "dff61c679f3f55d6e1a5823d5ab7d142ba8a5109",
+      "date": "2025-06-10T15:43:56+02:00",
+      "author": "Jonathan Lermitage",
+      "email": "jonathan.lermitage@gmail.com",
+      "message": "fix deprecation cfg\n"
+    },
+    {
+      "sha": "dfe7646536cdeaba34885b66fc66e3a9282e5a8e",
+      "date": "2025-06-07T19:18:35+02:00",
+      "author": "Jonathan Lermitage",
+      "email": "jonathan.lermitage@gmail.com",
+      "message": "switch to jdk21\n"
+    },
+    {
+      "sha": "3974c73a2573ced254d43df379d730f9d8019fc0",
+      "date": "2025-06-07T19:09:08+02:00",
+      "author": "Jonathan Lermitage",
+      "email": "jonathan.lermitage@gmail.com",
+      "message": "switch to jdk21\n"
+    },
+    {
+      "sha": "5564040249dfb06f5e6e46dcd79d43597be7eca4",
+      "date": "2025-06-07T19:04:48+02:00",
+      "author": "Jonathan Lermitage",
+      "email": "jonathan.lermitage@gmail.com",
+      "message": "switch to jdk21\n"
+    },
+    {
+      "sha": "bcf937699e18e888de817a8dd2d894934f5c3056",
+      "date": "2025-06-07T19:04:26+02:00",
+      "author": "Jonathan Lermitage",
+      "email": "jonathan.lermitage@gmail.com",
+      "message": "upgrade maven wrapper\n"
+    },
+    {
+      "sha": "b0dd78a81501c22cf107f1db4f767a6c8de3ae40",
+      "date": "2025-05-30T16:02:34+02:00",
+      "author": "Jonathan Lermitage",
+      "email": "jonathan.lermitage@gmail.com",
+      "message": "code rework\n"
+    },
+    {
+      "sha": "e8f63469ddacfe012f20923f0ca2961938968211",
+      "date": "2025-05-30T16:02:21+02:00",
+      "author": "Jonathan Lermitage",
+      "email": "jonathan.lermitage@gmail.com",
+      "message": "migrate to spring boot 3.5.0\n"
+    },
+    {
+      "sha": "9f329077e8599167b31506eafa2f3da60a241278",
+      "date": "2025-05-22T22:29:24+02:00",
+      "author": "Jonathan Lermitage",
+      "email": "jonathan.lermitage@gmail.com",
+      "message": "upgrade libs\n"
+    },
+    {
+      "sha": "af777a2ae6c0477497ec3a7a0713e1a1ece680c0",
+      "date": "2025-04-15T17:59:07+02:00",
+      "author": "Jonathan Lermitage",
+      "email": "jonathan.lermitage@gmail.com",
+      "message": "upgrade libs\n"
+    },
+    {
+      "sha": "3116ac9aabdfa23668db0c2fec8bae06b495977d",
+      "date": "2025-03-21T15:15:56+01:00",
+      "author": "Jonathan Lermitage",
+      "email": "jonathan.lermitage@gmail.com",
+      "message": "migrate to spring boot 3.4.4\n\nFix BCrypt password handling by doing a preliminary hash to allow longer passwords (BCrypt max len is 72 bytes)\n"
+    },
+    {
+      "sha": "dc353f5322ac42ff1317446d3507a4a2131a760f",
+      "date": "2025-03-21T14:53:28+01:00",
+      "author": "Jonathan Lermitage",
+      "email": "jonathan.lermitage@gmail.com",
+      "message": "upgrade libs\n"
+    },
+    {
+      "sha": "be2205fe3053b39644892b5939912f1ca36cb707",
+      "date": "2025-02-06T16:57:17+01:00",
+      "author": "Jonathan Lermitage",
+      "email": "jonathan.lermitage@gmail.com",
+      "message": "upgrade libs\n"
+    },
+    {
+      "sha": "0464c697fcead495bd4a0896883e522fa0104c42",
+      "date": "2024-11-27T11:04:48+01:00",
+      "author": "Jonathan Lermitage",
+      "email": "jonathan.lermitage@gmail.com",
+      "message": "doc\n"
+    },
+    {
+      "sha": "5d5c77bdfdac552e7aada1c269f691731b0c2691",
+      "date": "2024-11-26T16:15:00+01:00",
+      "author": "Jonathan Lermitage",
+      "email": "jonathan.lermitage@gmail.com",
+      "message": "cleanup\n"
+    },
+    {
+      "sha": "f5bfcae443a973de4b051d13204fa64438bf574b",
+      "date": "2024-11-22T17:10:05+01:00",
+      "author": "Jonathan Lermitage",
+      "email": "jonathan.lermitage@gmail.com",
+      "message": "upgrade redis and greenmail image everywhere\n"
+    },
+    {
+      "sha": "d75606957a56b5832e458b44db21abe3b698fcd1",
+      "date": "2024-11-22T17:02:16+01:00",
+      "author": "Jonathan Lermitage",
+      "email": "jonathan.lermitage@gmail.com",
+      "message": "upgrade postgres image everywhere\n"
+    },
+    {
+      "sha": "15a7bf56482c95cfa7d123df15ea55347ca3d8ae",
+      "date": "2024-11-22T16:59:14+01:00",
+      "author": "Jonathan Lermitage",
+      "email": "jonathan.lermitage@gmail.com",
+      "message": "version is no longer needed in compose yaml\n"
+    },
+    {
+      "sha": "6c259b9d9f7ec27db9278caf016809966d50f8f7",
+      "date": "2024-11-22T16:42:33+01:00",
+      "author": "Jonathan Lermitage",
+      "email": "jonathan.lermitage@gmail.com",
+      "message": "upgrade mariadb image everywhere\n"
+    },
+    {
+      "sha": "16fb6dcd67c798709fea371762a7bb23fb2e58e1",
+      "date": "2024-11-22T15:57:56+01:00",
+      "author": "Jonathan Lermitage",
+      "email": "jonathan.lermitage@gmail.com",
+      "message": "fix azure pipeline\n"
+    },
+    {
+      "sha": "76a3e6196a6c4d2898ac034924cc0a4e5c6cc306",
+      "date": "2024-11-22T15:51:02+01:00",
+      "author": "Jonathan Lermitage",
+      "email": "jonathan.lermitage@gmail.com",
+      "message": "fix some deprecated API usage, cleanup\n"
+    },
+    {
+      "sha": "4f084535a948a2e6292939365c73965ad9d1ab61",
+      "date": "2024-11-22T01:15:47+01:00",
+      "author": "Jonathan Lermitage",
+      "email": "jonathan.lermitage@gmail.com",
+      "message": "logback deprecated 'converterClass' in favor of 'class'\n"
+    },
+    {
+      "sha": "0333e90c9a3ee9a31dfa2b3e20e4ecc9a8c9681d",
+      "date": "2024-11-22T00:59:20+01:00",
+      "author": "Jonathan Lermitage",
+      "email": "jonathan.lermitage@gmail.com",
+      "message": "new banner\n\nThe previous banner had some \"\\\" before \"${...}\", which are not compatible with Spring Boot 3.4 (it escapes the dollar character)\n"
+    },
+    {
+      "sha": "a557480bee4fc0ba3328ebe776603ce2311decc7",
+      "date": "2024-11-22T00:05:30+01:00",
+      "author": "Jonathan Lermitage",
+      "email": "jonathan.lermitage@gmail.com",
+      "message": "fix some deprecated API usage\n"
+    },
+    {
+      "sha": "341a977ebc25b1dd1ffe156b265a4909a3098830",
+      "date": "2024-11-21T23:53:01+01:00",
+      "author": "Jonathan Lermitage",
+      "email": "jonathan.lermitage@gmail.com",
+      "message": "migrate to spring boot 3.4\n"
+    }
+  ],
+  "commit_sha": "e2c6ab89687c6506f2e4f939b36810c6b2798286",
+  "extracted_at": "2026-10-05T18:09:38.341565+00:00"
+}

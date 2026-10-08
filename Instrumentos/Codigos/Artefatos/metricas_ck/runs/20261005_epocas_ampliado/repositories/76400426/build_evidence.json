@@ -1,0 +1,588 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${spring-boot.version}",
+  "spring_boot_major": "unknown",
+  "java_versions_declared": "",
+  "build_evidence": [
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-cloud-kubernetes-client-autoconfig/pom.xml",
+      "artifact": "spring-boot-actuator-autoconfigure"
+    },
+    {
+      "file": "spring-cloud-kubernetes-client-autoconfig/pom.xml",
+      "artifact": "spring-boot-health"
+    },
+    {
+      "file": "spring-cloud-kubernetes-client-autoconfig/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-cloud-kubernetes-client-autoconfig/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-cloud-kubernetes-client-autoconfig/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-cloud-kubernetes-client-autoconfig/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "spring-cloud-kubernetes-client-autoconfig/pom.xml",
+      "artifact": "spring-boot-webtestclient"
+    },
+    {
+      "file": "spring-cloud-kubernetes-client-config/pom.xml",
+      "artifact": "spring-boot-starter-logging"
+    },
+    {
+      "file": "spring-cloud-kubernetes-client-config/pom.xml",
+      "artifact": "spring-boot-actuator"
+    },
+    {
+      "file": "spring-cloud-kubernetes-client-config/pom.xml",
+      "artifact": "spring-boot-actuator-autoconfigure"
+    },
+    {
+      "file": "spring-cloud-kubernetes-client-config/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-cloud-kubernetes-client-config/pom.xml",
+      "artifact": "spring-boot-health"
+    },
+    {
+      "file": "spring-cloud-kubernetes-client-config/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-cloud-kubernetes-client-config/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-cloud-kubernetes-client-config/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "spring-cloud-kubernetes-client-config/pom.xml",
+      "artifact": "spring-boot-starter-aspectj"
+    },
+    {
+      "file": "spring-cloud-kubernetes-client-config/pom.xml",
+      "artifact": "spring-boot-webtestclient"
+    },
+    {
+      "file": "spring-cloud-kubernetes-client-discovery/pom.xml",
+      "artifact": "spring-boot-actuator"
+    },
+    {
+      "file": "spring-cloud-kubernetes-client-discovery/pom.xml",
+      "artifact": "spring-boot-actuator-autoconfigure"
+    },
+    {
+      "file": "spring-cloud-kubernetes-client-discovery/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-cloud-kubernetes-client-discovery/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "spring-cloud-kubernetes-client-discovery/pom.xml",
+      "artifact": "spring-boot-health"
+    },
+    {
+      "file": "spring-cloud-kubernetes-client-discovery/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-cloud-kubernetes-client-discovery/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-cloud-kubernetes-client-leader/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-cloud-kubernetes-client-leader/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-cloud-kubernetes-client-leader/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-cloud-kubernetes-client-leader/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "spring-cloud-kubernetes-client-leader/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-cloud-kubernetes-client-leader/pom.xml",
+      "artifact": "spring-boot-webtestclient"
+    },
+    {
+      "file": "spring-cloud-kubernetes-client-loadbalancer/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-cloud-kubernetes-client-loadbalancer/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-cloud-kubernetes-client-loadbalancer/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-cloud-kubernetes-client-loadbalancer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-cloud-kubernetes-client-loadbalancer/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "spring-cloud-kubernetes-commons/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-cloud-kubernetes-commons/pom.xml",
+      "artifact": "spring-boot-health"
+    },
+    {
+      "file": "spring-cloud-kubernetes-commons/pom.xml",
+      "artifact": "spring-boot-actuator-autoconfigure"
+    },
+    {
+      "file": "spring-cloud-kubernetes-commons/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-cloud-kubernetes-commons/pom.xml",
+      "artifact": "spring-boot-starter-logging"
+    },
+    {
+      "file": "spring-cloud-kubernetes-commons/pom.xml",
+      "artifact": "spring-boot-starter-aspectj"
+    },
+    {
+      "file": "spring-cloud-kubernetes-commons/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-cloud-kubernetes-controllers/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-cloud-kubernetes-controllers/spring-cloud-kubernetes-configserver/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-cloud-kubernetes-controllers/spring-cloud-kubernetes-configserver/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-cloud-kubernetes-controllers/spring-cloud-kubernetes-configserver/pom.xml",
+      "artifact": "spring-boot-restclient"
+    },
+    {
+      "file": "spring-cloud-kubernetes-controllers/spring-cloud-kubernetes-configserver/pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "spring-cloud-kubernetes-controllers/spring-cloud-kubernetes-configuration-watcher/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-cloud-kubernetes-controllers/spring-cloud-kubernetes-configuration-watcher/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "spring-cloud-kubernetes-controllers/spring-cloud-kubernetes-configuration-watcher/pom.xml",
+      "artifact": "spring-boot-webclient"
+    },
+    {
+      "file": "spring-cloud-kubernetes-controllers/spring-cloud-kubernetes-configuration-watcher/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-cloud-kubernetes-controllers/spring-cloud-kubernetes-discoveryserver/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "spring-cloud-kubernetes-controllers/spring-cloud-kubernetes-discoveryserver/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-cloud-kubernetes-controllers/spring-cloud-kubernetes-discoveryserver/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-cloud-kubernetes-controllers/spring-cloud-kubernetes-discoveryserver/pom.xml",
+      "artifact": "spring-boot-webtestclient"
+    },
+    {
+      "file": "spring-cloud-kubernetes-discovery/pom.xml",
+      "artifact": "spring-boot-restclient"
+    },
+    {
+      "file": "spring-cloud-kubernetes-discovery/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-cloud-kubernetes-discovery/pom.xml",
+      "artifact": "spring-boot-actuator"
+    },
+    {
+      "file": "spring-cloud-kubernetes-discovery/pom.xml",
+      "artifact": "spring-boot-actuator-autoconfigure"
+    },
+    {
+      "file": "spring-cloud-kubernetes-discovery/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-cloud-kubernetes-discovery/pom.xml",
+      "artifact": "spring-boot-health"
+    },
+    {
+      "file": "spring-cloud-kubernetes-discovery/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "spring-cloud-kubernetes-discovery/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-cloud-kubernetes-examples/kubernetes-leader-election-example/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "spring-cloud-kubernetes-examples/kubernetes-leader-election-example/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-cloud-kubernetes-examples/kubernetes-leader-election-example/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-cloud-kubernetes-examples/kubernetes-leader-election-example/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-cloud-kubernetes-examples/kubernetes-leader-election-example/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-cloud-kubernetes-fabric8-autoconfig/pom.xml",
+      "artifact": "spring-boot-starter-logging"
+    },
+    {
+      "file": "spring-cloud-kubernetes-fabric8-autoconfig/pom.xml",
+      "artifact": "spring-boot-actuator-autoconfigure"
+    },
+    {
+      "file": "spring-cloud-kubernetes-fabric8-autoconfig/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-cloud-kubernetes-fabric8-autoconfig/pom.xml",
+      "artifact": "spring-boot-health"
+    },
+    {
+      "file": "spring-cloud-kubernetes-fabric8-autoconfig/pom.xml",
+      "artifact": "spring-boot-starter-json"
+    },
+    {
+      "file": "spring-cloud-kubernetes-fabric8-autoconfig/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-cloud-kubernetes-fabric8-autoconfig/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-cloud-kubernetes-fabric8-autoconfig/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "spring-cloud-kubernetes-fabric8-autoconfig/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-cloud-kubernetes-fabric8-autoconfig/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-cloud-kubernetes-fabric8-autoconfig/pom.xml",
+      "artifact": "spring-boot-webtestclient"
+    },
+    {
+      "file": "spring-cloud-kubernetes-fabric8-config/pom.xml",
+      "artifact": "spring-boot-starter-logging"
+    },
+    {
+      "file": "spring-cloud-kubernetes-fabric8-config/pom.xml",
+      "artifact": "spring-boot-actuator"
+    },
+    {
+      "file": "spring-cloud-kubernetes-fabric8-config/pom.xml",
+      "artifact": "spring-boot-actuator-autoconfigure"
+    },
+    {
+      "file": "spring-cloud-kubernetes-fabric8-config/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-cloud-kubernetes-fabric8-config/pom.xml",
+      "artifact": "spring-boot-starter-aspectj"
+    },
+    {
+      "file": "spring-cloud-kubernetes-fabric8-config/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-cloud-kubernetes-fabric8-config/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-cloud-kubernetes-fabric8-config/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "spring-cloud-kubernetes-fabric8-config/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-cloud-kubernetes-fabric8-config/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-cloud-kubernetes-fabric8-config/pom.xml",
+      "artifact": "spring-boot-webtestclient"
+    },
+    {
+      "file": "spring-cloud-kubernetes-fabric8-discovery/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-cloud-kubernetes-fabric8-discovery/pom.xml",
+      "artifact": "spring-boot-actuator"
+    },
+    {
+      "file": "spring-cloud-kubernetes-fabric8-discovery/pom.xml",
+      "artifact": "spring-boot-actuator-autoconfigure"
+    },
+    {
+      "file": "spring-cloud-kubernetes-fabric8-discovery/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "spring-cloud-kubernetes-fabric8-discovery/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-cloud-kubernetes-fabric8-discovery/pom.xml",
+      "artifact": "spring-boot-health"
+    },
+    {
+      "file": "spring-cloud-kubernetes-fabric8-discovery/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-cloud-kubernetes-fabric8-discovery/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-cloud-kubernetes-fabric8-istio/pom.xml",
+      "artifact": "spring-boot-restclient"
+    },
+    {
+      "file": "spring-cloud-kubernetes-fabric8-istio/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-cloud-kubernetes-fabric8-istio/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-cloud-kubernetes-fabric8-istio/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-cloud-kubernetes-fabric8-leader/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-cloud-kubernetes-fabric8-leader/pom.xml",
+      "artifact": "spring-boot-webtestclient"
+    },
+    {
+      "file": "spring-cloud-kubernetes-fabric8-loadbalancer/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-cloud-kubernetes-fabric8-loadbalancer/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-cloud-kubernetes-fabric8-loadbalancer/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-cloud-kubernetes-fabric8-loadbalancer/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "spring-cloud-kubernetes-integration-tests/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring-cloud-kubernetes-integration-tests/spring-cloud-kubernetes-fabric8-client-catalog-watcher/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "spring-cloud-kubernetes-integration-tests/spring-cloud-kubernetes-fabric8-client-catalog-watcher/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-cloud-kubernetes-integration-tests/spring-cloud-kubernetes-fabric8-client-discovery/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "spring-cloud-kubernetes-integration-tests/spring-cloud-kubernetes-fabric8-client-discovery/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-cloud-kubernetes-integration-tests/spring-cloud-kubernetes-fabric8-client-istio/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "spring-cloud-kubernetes-integration-tests/spring-cloud-kubernetes-fabric8-client-istio/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-cloud-kubernetes-integration-tests/spring-cloud-kubernetes-fabric8-client-reload/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "spring-cloud-kubernetes-integration-tests/spring-cloud-kubernetes-fabric8-client-reload/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-cloud-kubernetes-integration-tests/spring-cloud-kubernetes-fabric8-leader-election/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-cloud-kubernetes-integration-tests/spring-cloud-kubernetes-fabric8-leader-election/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-cloud-kubernetes-integration-tests/spring-cloud-kubernetes-k8s-client-catalog-watcher/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "spring-cloud-kubernetes-integration-tests/spring-cloud-kubernetes-k8s-client-catalog-watcher/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-cloud-kubernetes-integration-tests/spring-cloud-kubernetes-k8s-client-configuration-watcher/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-cloud-kubernetes-integration-tests/spring-cloud-kubernetes-k8s-client-configuration-watcher/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-cloud-kubernetes-integration-tests/spring-cloud-kubernetes-k8s-client-configuration-watcher/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-cloud-kubernetes-integration-tests/spring-cloud-kubernetes-k8s-client-configuration-watcher/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "spring-cloud-kubernetes-integration-tests/spring-cloud-kubernetes-k8s-client-discovery-server/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-cloud-kubernetes-integration-tests/spring-cloud-kubernetes-k8s-client-discovery-server/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-cloud-kubernetes-integration-tests/spring-cloud-kubernetes-k8s-client-discovery-server/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "spring-cloud-kubernetes-integration-tests/spring-cloud-kubernetes-k8s-client-discovery/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "spring-cloud-kubernetes-integration-tests/spring-cloud-kubernetes-k8s-client-discovery/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-cloud-kubernetes-integration-tests/spring-cloud-kubernetes-k8s-client-kafka-configmap-reload/kafka-configmap-app/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-cloud-kubernetes-integration-tests/spring-cloud-kubernetes-k8s-client-kafka-configmap-reload/kafka-configmap-app/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-cloud-kubernetes-integration-tests/spring-cloud-kubernetes-k8s-client-kafka-configmap-reload/kafka-configmap-test-app/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-cloud-kubernetes-integration-tests/spring-cloud-kubernetes-k8s-client-kafka-configmap-reload/kafka-configmap-test-app/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "spring-cloud-kubernetes-integration-tests/spring-cloud-kubernetes-k8s-client-leader-election/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-cloud-kubernetes-integration-tests/spring-cloud-kubernetes-k8s-client-leader-election/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-cloud-kubernetes-integration-tests/spring-cloud-kubernetes-k8s-client-rabbitmq-secret-reload/rabbitmq-secret-app/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-cloud-kubernetes-integration-tests/spring-cloud-kubernetes-k8s-client-rabbitmq-secret-reload/rabbitmq-secret-app/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-cloud-kubernetes-integration-tests/spring-cloud-kubernetes-k8s-client-rabbitmq-secret-reload/rabbitmq-secret-test-app/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-cloud-kubernetes-integration-tests/spring-cloud-kubernetes-k8s-client-rabbitmq-secret-reload/rabbitmq-secret-test-app/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "spring-cloud-kubernetes-integration-tests/spring-cloud-kubernetes-k8s-client-reload/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "spring-cloud-kubernetes-integration-tests/spring-cloud-kubernetes-k8s-client-reload/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "spring-cloud-kubernetes-test-support/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-cloud-kubernetes-test-support/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    }
+  ]
+}

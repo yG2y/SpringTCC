@@ -1,0 +1,230 @@
+{
+  "ia_status": "com_evidencia",
+  "ia_level": 2,
+  "ia_agents": "Claude Code",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "ccba886b339dd733758647cd50179398a6147235",
+      "trailer": "Claude Opus 5 <noreply@anthropic.com>"
+    }
+  ],
+  "commits": [
+    {
+      "sha": "9a89e72900928df908b14e952eba89f5780f3b6a",
+      "date": "2026-10-02T06:54:42-06:00",
+      "author": "Jose Morales",
+      "email": "joseluis.delacruz@gmail.com",
+      "message": "[hotFix]We should not update a vaccine to status APPLIED if date is 6 months or more (#931)\n\n* Bringing back deleted logic from issue #912\n\n* Adding missing field date"
+    },
+    {
+      "sha": "6f8f303f39e2713eaa711f616900c78800166086",
+      "date": "2026-09-07T10:11:22-06:00",
+      "author": "Jose Morales",
+      "email": "joseluis.delacruz@gmail.com",
+      "message": "[small]Feature/925 (#930)\n\n* #925 Moving vaccine validation status before evaluating FeLV requirement\n\n* #925 Updating project version"
+    },
+    {
+      "sha": "7982100394edfa2425c81450c26e4f2969bef48d",
+      "date": "2026-09-04T17:40:36-06:00",
+      "author": "josdem",
+      "email": "joseluis.delacruz@gmail.com",
+      "message": "Updating project version\n"
+    },
+    {
+      "sha": "6447e59f79f6b77e5e310bcc5afb8049c26574ca",
+      "date": "2026-09-04T23:11:23+09:00",
+      "author": "Yeongjin Lee",
+      "email": "yjinlee99@gmail.com",
+      "message": "fix: allow five-character username search (#924)"
+    },
+    {
+      "sha": "108d85f6a17d677afedf43ee7b74b827ff126fac",
+      "date": "2026-09-03T17:05:45-06:00",
+      "author": "allcontributors[bot]",
+      "email": "46447321+allcontributors[bot]@users.noreply.github.com",
+      "message": "docs: add yjinlee99 as a contributor for code (#929)\n\n* docs: update README.md [skip ci]\n\n* docs: update .all-contributorsrc [skip ci]\n\n---------\n\nCo-authored-by: allcontributors[bot] <46447321+allcontributors[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "45be9435c8798da01572512da261e8ec71378610",
+      "date": "2026-09-03T16:57:50-06:00",
+      "author": "josdem",
+      "email": "joseluis.delacruz@gmail.com",
+      "message": "Adding shiva for bug detection\n"
+    },
+    {
+      "sha": "ccba886b339dd733758647cd50179398a6147235",
+      "date": "2026-09-02T20:29:18+05:30",
+      "author": "shivamjg101",
+      "email": "106482996+shivamjg101@users.noreply.github.com",
+      "message": "test: cover TRICAT not being scheduled for an unapplied Rabies (#922)\n\nCatVaccinationStrategyTest exercised only the applied path: every case\npassed a previously-PENDING vaccine alongside an APPLIED one, so the\nstatus guard in updateVaccines had no test behind it.\n\nAdd a case where the incoming Rabies vaccine is still PENDING and assert\nthat no TRICAT is scheduled.\n\nCo-authored-by: Claude Opus 5 <noreply@anthropic.com>"
+    },
+    {
+      "sha": "41cc5b9467d3f6e59bca1398631954f8d9bfc625",
+      "date": "2026-09-01T11:51:33+08:00",
+      "author": "alttt",
+      "email": "alttt666777@gmail.com",
+      "message": "refactor: move vaccination update logic to strategies (#915)\n\nCo-authored-by: 贺7 <15671588+alttty@user.noreply.gitee.com>"
+    },
+    {
+      "sha": "426a91eb80727e5c850640f9c43f93d6d4913e3d",
+      "date": "2026-08-31T12:04:22-06:00",
+      "author": "josdem",
+      "email": "joseluis.delacruz@gmail.com",
+      "message": "Updating version\n"
+    },
+    {
+      "sha": "c6a0e5bcabec5feea7f2445a718fd611f1b79c51",
+      "date": "2026-08-30T21:54:48+05:30",
+      "author": "dog-key",
+      "email": "nithinsurisetti@gmail.com",
+      "message": "fix: validate future vaccination dates\n"
+    },
+    {
+      "sha": "e3e494e5437c4fb4963f267b41fb86f4f6ba09c0",
+      "date": "2026-08-30T16:16:32+05:30",
+      "author": "dog-key",
+      "email": "nithinsurisetti@gmail.com",
+      "message": "refactor: simplify vaccination date validation\n"
+    },
+    {
+      "sha": "59888bf1ad86b9e02196dceb98fb73c9b1696218",
+      "date": "2026-08-30T00:33:36+05:30",
+      "author": "dog-key",
+      "email": "nithinsurisetti@gmail.com",
+      "message": "fix: prevent applying vaccinations scheduled six months or later\n"
+    },
+    {
+      "sha": "c6a28dc37c3a3ccd3482b8c10971ff1fd593bda6",
+      "date": "2026-08-31T20:59:43+05:30",
+      "author": "Thaitheyasudan P K",
+      "email": "91272336+Thaitheya@users.noreply.github.com",
+      "message": "Style validator error messages in red and bold (#916)\n\n* Style validator error messages\n\n* Style validator error messages\n\n* Added contribution info in .all-conbritbutorsrc\n\n* Removed  info in .all-conbritbutorsrc\n\n---------\n\nCo-authored-by: Thaitheya <thaitheyasudanpk@gmail.com>"
+    },
+    {
+      "sha": "de4bd3752adb3916cac6e60fd7b1ddcc8c6023e7",
+      "date": "2026-08-30T19:51:11Z",
+      "author": "allcontributors[bot]",
+      "email": "46447321+allcontributors[bot]@users.noreply.github.com",
+      "message": "docs: update .all-contributorsrc [skip ci]"
+    },
+    {
+      "sha": "660c23e38f041dfdce2ce1d10f7ad974dde41214",
+      "date": "2026-08-30T19:51:10Z",
+      "author": "allcontributors[bot]",
+      "email": "46447321+allcontributors[bot]@users.noreply.github.com",
+      "message": "docs: update README.md [skip ci]"
+    },
+    {
+      "sha": "dace4f002a41943efb11bf22d39e373837211550",
+      "date": "2026-08-30T10:14:57-06:00",
+      "author": "josdem",
+      "email": "joseluis.delacruz@gmail.com",
+      "message": "Adding tkim602\n"
+    },
+    {
+      "sha": "cf8e6c4f0bf8ad27e75b0d02329b377d087fba40",
+      "date": "2026-08-30T16:06:18Z",
+      "author": "allcontributors[bot]",
+      "email": "46447321+allcontributors[bot]@users.noreply.github.com",
+      "message": "docs: update .all-contributorsrc [skip ci]"
+    },
+    {
+      "sha": "08a48c477652d4c568d36cec6c31d22cba8f26b9",
+      "date": "2026-08-30T16:06:17Z",
+      "author": "allcontributors[bot]",
+      "email": "46447321+allcontributors[bot]@users.noreply.github.com",
+      "message": "docs: update README.md [skip ci]"
+    },
+    {
+      "sha": "9fe87005939011f4d2c2d1385aa2696aba72ab71",
+      "date": "2026-08-30T15:56:24Z",
+      "author": "allcontributors[bot]",
+      "email": "46447321+allcontributors[bot]@users.noreply.github.com",
+      "message": "docs: update .all-contributorsrc [skip ci]"
+    },
+    {
+      "sha": "083c8befad1240d4c73e284fb50a2fda6da132bc",
+      "date": "2026-08-30T15:56:23Z",
+      "author": "allcontributors[bot]",
+      "email": "46447321+allcontributors[bot]@users.noreply.github.com",
+      "message": "docs: update README.md [skip ci]"
+    },
+    {
+      "sha": "f1e97f19145f45683f2d0ec7b6063bee704f22f3",
+      "date": "2026-08-28T09:56:12-06:00",
+      "author": "josdem",
+      "email": "joseluis.delacruz@gmail.com",
+      "message": "Quick fix, avoiding create rabies one year offset\n"
+    },
+    {
+      "sha": "b41f4c267e940e334852478d83b1d03a7c94597c",
+      "date": "2026-08-27T17:18:16-06:00",
+      "author": "josdem",
+      "email": "joseluis.delacruz@gmail.com",
+      "message": "Updating project version\n"
+    },
+    {
+      "sha": "c962af62c07c1ed0856d64d8d6ada56c6535d0c3",
+      "date": "2026-08-26T18:51:11-06:00",
+      "author": "Omar Morales Ortega",
+      "email": "66653667+OmarMorales71@users.noreply.github.com",
+      "message": "feat: create TRICAT vaccination one year later when Rabies is applied to a cat (#903)\n"
+    },
+    {
+      "sha": "ee8c55ddea0ab08131cad1167b67ec1f6f9ccd2b",
+      "date": "2026-08-26T21:38:12+05:30",
+      "author": "shiva",
+      "email": "shivamghatge50@gmail.com",
+      "message": "#904 Adding spring-boot-flyway so migrations run on application startup\n"
+    },
+    {
+      "sha": "976e8e1d606921e4b18572c6455d209932d5ddc8",
+      "date": "2026-08-27T22:53:26Z",
+      "author": "allcontributors[bot]",
+      "email": "46447321+allcontributors[bot]@users.noreply.github.com",
+      "message": "docs: update .all-contributorsrc [skip ci]"
+    },
+    {
+      "sha": "14be3e20f4800d95222ae8d9a012fd6ddb976215",
+      "date": "2026-08-27T22:53:25Z",
+      "author": "allcontributors[bot]",
+      "email": "46447321+allcontributors[bot]@users.noreply.github.com",
+      "message": "docs: update README.md [skip ci]"
+    },
+    {
+      "sha": "dc4fa7aba35736c08db755ca18327e8ddfbfceeb",
+      "date": "2026-08-26T14:53:05-06:00",
+      "author": "josdem",
+      "email": "joseluis.delacruz@gmail.com",
+      "message": "#902 Updating project version\n"
+    },
+    {
+      "sha": "6ab480af25bc91ffbb1e37c52406403fa89c6898",
+      "date": "2026-08-26T14:52:39-06:00",
+      "author": "josdem",
+      "email": "joseluis.delacruz@gmail.com",
+      "message": "#902 Improving avoid empty birthdate solution\n"
+    },
+    {
+      "sha": "05c9f91f74a18b7b8c2bc8f1c175baee832d467e",
+      "date": "2026-08-27T01:02:59Z",
+      "author": "allcontributors[bot]",
+      "email": "46447321+allcontributors[bot]@users.noreply.github.com",
+      "message": "docs: update .all-contributorsrc [skip ci]"
+    },
+    {
+      "sha": "6ede57104a5760fd35491840c47acb43244b97fc",
+      "date": "2026-08-27T01:02:58Z",
+      "author": "allcontributors[bot]",
+      "email": "46447321+allcontributors[bot]@users.noreply.github.com",
+      "message": "docs: update README.md [skip ci]"
+    }
+  ],
+  "commit_sha": "9a89e72900928df908b14e952eba89f5780f3b6a",
+  "extracted_at": "2026-10-05T18:06:48.974247+00:00"
+}

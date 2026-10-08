@@ -1,0 +1,400 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "2.1.2.RELEASE;2.3.7.RELEASE;2.4.5;2.5.3;2.6.3;2.6.6;2.6.8;2.7.0;3.0.0",
+  "spring_boot_major": "multiple",
+  "java_versions_declared": "1.8;8",
+  "build_evidence": [
+    {
+      "file": "demo-spring-boot-api/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "demo-spring-boot-binlog/demo-spring-boot-binlog-starter/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "demo-spring-boot-binlog/demo-spring-boot-binlog-starter/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "demo-spring-boot-binlog/demo-spring-boot-binlog-starter/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "demo-spring-boot-bom/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "demo-spring-boot-bom/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "demo-spring-boot-bom/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "demo-spring-boot-bom/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "demo-spring-boot-bom/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "demo-spring-boot-bom/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "demo-spring-boot-bom/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "demo-spring-boot-bom/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb"
+    },
+    {
+      "file": "demo-spring-boot-bom/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "demo-spring-boot-core/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "demo-spring-boot-core/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "demo-spring-boot-druid/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "demo-spring-boot-druid/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "demo-spring-boot-druid/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "demo-spring-boot-druid/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "demo-spring-boot-encrypt-rsa/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "demo-spring-boot-encrypt-rsa/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "demo-spring-boot-encrypt-rsa/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "demo-spring-boot-example/demo-spring-boot-elk/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "demo-spring-boot-example/demo-spring-boot-elk/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "demo-spring-boot-example/demo-spring-boot-elk/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "demo-spring-boot-example/demo-spring-boot-elk/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "demo-spring-boot-example/demo-spring-boot-example-easyExcel/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "demo-spring-boot-example/demo-spring-boot-example-easyExcel/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "demo-spring-boot-example/demo-spring-boot-example-easyExcel/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "demo-spring-boot-example/demo-spring-boot-example-easyExcel/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "demo-spring-boot-example/demo-spring-boot-example-easyExcel/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "demo-spring-boot-example/demo-spring-boot-example-java/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "demo-spring-boot-example/demo-spring-boot-example-pay/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "demo-spring-boot-example/demo-spring-boot-example-pay/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "demo-spring-boot-example/demo-spring-boot-example-pay/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "demo-spring-boot-example/demo-spring-boot-example-pay/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "demo-spring-boot-example/demo-spring-boot-example-pay/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "demo-spring-boot-example/demo-spring-boot-example-redisson/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "demo-spring-boot-example/demo-spring-boot-example-threadpool/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "demo-spring-boot-example/demo-spring-boot-example-threadpool/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "demo-spring-boot-example/demo-spring-boot-example-threadpool/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "demo-spring-boot-gateway/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "demo-spring-boot-generator/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "demo-spring-boot-generator/pom.xml",
+      "artifact": "spring-boot-starter-log4j2"
+    },
+    {
+      "file": "demo-spring-boot-generator/pom.xml",
+      "artifact": "spring-boot-starter-freemarker"
+    },
+    {
+      "file": "demo-spring-boot-generator/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "demo-spring-boot-generator/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "demo-spring-boot-generator/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "demo-spring-boot-minio-slice-upload/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "demo-spring-boot-minio-slice-upload/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "demo-spring-boot-minio-slice-upload/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "demo-spring-boot-mongodb/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb"
+    },
+    {
+      "file": "demo-spring-boot-mongodb/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "demo-spring-boot-mongodb/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "demo-spring-boot-mqtt/demo-spring-boot-mqtt-provider/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "demo-spring-boot-mqtt/demo-spring-boot-mqtt-provider/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "demo-spring-boot-mqtt/demo-spring-boot-mqtt-provider/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "demo-spring-boot-mybatis-plus/pom.xml",
+      "artifact": "spring-boot-starter-freemarker"
+    },
+    {
+      "file": "demo-spring-boot-mybatis-plus/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "demo-spring-boot-rabbitmq/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "demo-spring-boot-rabbitmq/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "demo-spring-boot-rabbitmq/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "demo-spring-boot-rabbitmq/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "demo-spring-boot-redis/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "demo-spring-boot-redis/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "demo-spring-boot-repeatSubmit/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "demo-spring-boot-repeatSubmit/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "demo-spring-boot-springSecurity/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "demo-spring-boot-springSecurity/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "demo-spring-boot-springSecurity/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "demo-spring-boot-springSecurity/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "demo-spring-boot-springSecurity/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "demo-spring-boot-websocket/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "demo-springCloud/demo-springCloud-all-client/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "demo-springCloud/demo-springCloud-hystrix/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "demo-springCloud/demo-springCloud-hystrix/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "demo-springCloud/demo-springCloud-hystrix/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "demo-springCloud/demo-springCloud-oauth2/demo-oauth2-api/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "demo-springCloud/demo-springCloud-oauth2/demo-oauth2-auth/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "demo-springCloud/demo-springCloud-oauth2/demo-oauth2-auth/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "demo-springCloud/demo-springCloud-oauth2/demo-oauth2-auth/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "demo-springCloud/demo-springCloud-oauth2/demo-oauth2-gateway/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "demo-springCloud/demo-springCloud-oauth2/demo-oauth2-gateway/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "demo-springCloud/demo-springCloud-oauth2/demo-oauth2-gateway/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "demo-springCloud/demo-springCloud-oauth2/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "demo-springCloud/demo-springCloud-oauth2/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "demo-springCloud/demo-springCloud-oauth2/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "demo-springCloud/demo-springCloud-oauth2/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "demo-springCloud/demo-springCloud-seata/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "demo-springCloud/demo-springCloud-seata/pom.xml",
+      "artifact": "spring-boot-actuator"
+    },
+    {
+      "file": "demo-springCloud/demo-springCloud-seata/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "demo-springCloud/demo-springCloud-sentinel-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "demo-springCloud/demo-springCloud-sentinel-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "demo-springCloud/demo-springCloud-sentinel-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "demo-springCloud/demo-springCloud-sentinel-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "demo-springCloud/demo-springCloud-sleuth/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "demo-springCloud/demo-springCloud-sleuth/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-dependencies"
+    }
+  ]
+}

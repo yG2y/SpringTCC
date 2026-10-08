@@ -1,0 +1,23 @@
+{
+  "ia_status": "com_evidencia",
+  "ia_level": 1,
+  "ia_agents": "Claude Code; Coderabbit",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 0,
+  "evidence": [
+    {
+      "agent": "Coderabbit",
+      "type": "file",
+      "path": ".coderabbit.yaml"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "file",
+      "path": ".claude/skills/book-authoring/SKILL.md"
+    }
+  ],
+  "commits": [],
+  "commit_sha": "84bf1bc9848c1c28a26c9fc68f756844e2c9d336",
+  "extracted_at": "2026-10-05T18:06:51.332534+00:00"
+}

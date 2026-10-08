@@ -1,0 +1,68 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "2.3.5.RELEASE",
+  "spring_boot_major": "2",
+  "java_versions_declared": "8",
+  "build_evidence": [
+    {
+      "file": "microservices/files_api_gateway/pom.xml",
+      "artifact": "spring-boot-starter-oauth2-client"
+    },
+    {
+      "file": "microservices/files_api_gateway/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "microservices/files_commons/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "microservices/files_commons/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "microservices/files_management/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "microservices/files_metadata/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb"
+    },
+    {
+      "file": "microservices/files_metadata/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "microservices/files_notifications/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb"
+    },
+    {
+      "file": "microservices/files_notifications/pom.xml",
+      "artifact": "spring-boot-starter-websocket"
+    },
+    {
+      "file": "microservices/files_notifications/pom.xml",
+      "artifact": "spring-boot-starter-reactor-netty"
+    },
+    {
+      "file": "microservices/files_notifications/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "microservices/files_search/pom.xml",
+      "artifact": "spring-boot-starter-data-elasticsearch"
+    },
+    {
+      "file": "microservices/files_search/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "microservices/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "microservices/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    }
+  ]
+}

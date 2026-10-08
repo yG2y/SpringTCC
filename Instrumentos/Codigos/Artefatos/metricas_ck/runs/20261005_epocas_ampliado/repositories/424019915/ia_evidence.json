@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "9669758a05916ee9ff60585a3a4e179c2b95398d",
+      "date": "2026-10-03T05:34:26-04:00",
+      "author": "Raphael J. Sandor",
+      "email": "45048465+R-Sandor@users.noreply.github.com",
+      "message": "Update docker versions\n"
+    },
+    {
+      "sha": "3ca24f742b9abddc5ec2cddde0120d0b46fc3969",
+      "date": "2026-08-23T05:21:23-04:00",
+      "author": "Raphael J. Sandor",
+      "email": "45048465+R-Sandor@users.noreply.github.com",
+      "message": "TagContext.tsx: comment update\n"
+    },
+    {
+      "sha": "8cfe1ffe7540ed738fc942433d002f38c98e77d1",
+      "date": "2026-08-22T05:33:53-04:00",
+      "author": "Raphael J. Sandor",
+      "email": "45048465+R-Sandor@users.noreply.github.com",
+      "message": "simple downstream test break from default avatar\n"
+    },
+    {
+      "sha": "71ae812c741d3cd99c155c7fad823f0bdff66600",
+      "date": "2026-08-16T06:01:31-04:00",
+      "author": "Raphael J. Sandor",
+      "email": "45048465+R-Sandor@users.noreply.github.com",
+      "message": "better exeception handling\n"
+    },
+    {
+      "sha": "5645830bbf15feabd3b186ad56b1b1a7b4f7f059",
+      "date": "2026-08-16T15:08:02+05:30",
+      "author": "Abhishek",
+      "email": "106641190+Abhishek84313@users.noreply.github.com",
+      "message": "fix(bookmarks): keep explicit title over scraped title (#426)\n\nAn explicit title on POST /api/bookmark was thrown away whenever the\nurl turned out to be scrapable, so a scrapable bookmark could never be\ngiven a custom title.\n\naddBookmark now resolves the title in order of precedence: the title the\nuser gave us, then the scraped page title, then the host of the url.\nClients default the title field to the url itself, so a title equal to\nthe url is treated as unset and the scraped title wins.\n\nThe scrape and the title resolution are split into scrape(),\nresolveTitle() and hasExplicitTitle(). The page is still fetched,\nindexed in Typesense and screenshotted when the title is explicit, only\nthe title is left alone. This also removes an NPE when a null title met\na failed scrape, and a debug log that dereferenced\nretDoc.connection().response().\n\nTests cover a scrapable request with no title (null, empty, blank and\nurl), with an explicit title, with a page that has no title of its own,\nand a failed scrape falling back to the host. The updateBookmark\ncontroller test asserted the old behaviour and now expects the posted\ntitle to be kept.\n\nCo-authored-by: Raphael J. Sandor <45048465+R-Sandor@users.noreply.github.com>"
+    },
+    {
+      "sha": "9a3adcb36f29a3d9f77715f6b48e4d77a78d973a",
+      "date": "2026-08-16T15:00:55+05:30",
+      "author": "Abhishek",
+      "email": "106641190+Abhishek84313@users.noreply.github.com",
+      "message": "Fix Add testing vitest for untagged bookmarks (#427)"
+    },
+    {
+      "sha": "2e8957dbd73d4cb857d31f3dac374652c82931ca",
+      "date": "2026-08-16T14:59:44+05:30",
+      "author": "Figes",
+      "email": "saishivapacha@gmail.com",
+      "message": "issue-137-User-Deletion-feature (#422)\n\n* issue-137-User-Deletion-feature\n\n* Implemented User Deletion feature\n\n* added second test and removed null ambiguity of wrapper classes"
+    },
+    {
+      "sha": "cb85c8da8ea3fa55a10d105ff64b4cef11578e74",
+      "date": "2026-08-16T14:57:47+05:30",
+      "author": "Abhishek",
+      "email": "106641190+Abhishek84313@users.noreply.github.com",
+      "message": "Fix409 (#428)\n\n* fix(bookmarks): keep explicit title over scraped title\nAn explicit title on POST /api/bookmark was thrown away whenever the\nurl turned out to be scrapable, so a scrapable bookmark could never be\ngiven a custom title.\n\naddBookmark now resolves the title in order of precedence: the title the\nuser gave us, then the scraped page title, then the host of the url.\nClients default the title field to the url itself, so a title equal to\nthe url is treated as unset and the scraped title wins.\n\nThe scrape and the title resolution are split into scrape(),\nresolveTitle() and hasExplicitTitle(). The page is still fetched,\nindexed in Typesense and screenshotted when the title is explicit, only\nthe title is left alone. This also removes an NPE when a null title met\na failed scrape, and a debug log that dereferenced\nretDoc.connection().response().\n\nTests cover a scrapable request with no title (null, empty, blank and\nurl), with an explicit title, with a page that has no title of its own,\nand a failed scrape falling back to the host. The updateBookmark\ncontroller test asserted the old behaviour and now expects the posted\ntitle to be kept.\n\n* fix(robots): never fail a bookmark over an unfetchable robots.txt\n\nRobotsFetcher only caught URISyntaxException and HttpClientErrorException,\nso an unreachable host, a 5xx, a body-less response or a url with no scheme\nescaped through WebCheckService into addBookmark and failed the request with\na 500 instead of saving the bookmark.\n\nFetching is now best effort. A site that answers with something other than a\nrobots.txt comes back carrying its own status so the parser can apply the\nright rule; anything with no response at all comes back as a 500 with an\nempty body. Previously every failure was mapped to 500, which meant a plain\n404 -- a site that simply publishes no rules -- was read as a server error\nand the site was never scraped.\n\nisScrapable parses only on a 2xx and hands every other status to\nfailedFetch, closing the gap where a 3xx fell through to parseContent, and\nreports a robots.txt it cannot make sense of as off limits rather than\nraising. scrape() now keeps its promise to return null for a page it cannot\nreach, including on Jsoup's IllegalArgumentException for a malformed url.\n\nCloses #409"
+    },
+    {
+      "sha": "db1abd82085bc7f1398bce5c79e097ac48277841",
+      "date": "2026-08-16T05:25:28-04:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump nanoid in /frontend in the npm_and_yarn group across 0 directory (#429)\n\nUpdates `nanoid` from 3.3.16 to 3.3.18\n- [Release notes](https://github.com/ai/nanoid/releases)\n- [Changelog](https://github.com/ai/nanoid/blob/3.3.18/CHANGELOG.md)\n- [Commits](https://github.com/ai/nanoid/compare/3.3.16...3.3.18)\n\n---\nupdated-dependencies:\n- dependency-name: nanoid\n  dependency-version: 3.3.18\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "4153db3baf2784412508a71357aefb30e2cbc0b9",
+      "date": "2026-08-10T05:54:55-04:00",
+      "author": "Raphael J. Sandor",
+      "email": "45048465+R-Sandor@users.noreply.github.com",
+      "message": "config changes\n\napp/global.scss: sass import relative\n\nnext.config.js: ignoring if functions deprecation inherited from bootstrap\n"
+    },
+    {
+      "sha": "cb8ff50336e9abb8d676139c8b8d0b352ec96a50",
+      "date": "2026-08-05T06:10:55-04:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump the npm_and_yarn group across 1 directory with 2 updates (#425)\n\nBumps the npm_and_yarn group with 1 update in the /frontend directory: [next](https://github.com/vercel/next.js).\n\n\nUpdates `next` from 16.2.9 to 16.2.11\n- [Release notes](https://github.com/vercel/next.js/releases)\n- [Commits](https://github.com/vercel/next.js/compare/v16.2.9...v16.2.11)\n\nUpdates `postcss` from 8.5.21 to 8.5.25\n- [Release notes](https://github.com/postcss/postcss/releases)\n- [Changelog](https://github.com/postcss/postcss/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/postcss/postcss/compare/8.5.21...8.5.25)\n\n---\nupdated-dependencies:\n- dependency-name: next\n  dependency-version: 16.2.11\n  dependency-type: direct:production\n  dependency-group: npm_and_yarn\n- dependency-name: postcss\n  dependency-version: 8.5.25\n  dependency-type: direct:production\n  dependency-group: npm_and_yarn\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Raphael J. Sandor <45048465+R-Sandor@users.noreply.github.com>"
+    },
+    {
+      "sha": "c2ef9a7fc35463e24eec8c13b0065d2177602904",
+      "date": "2026-01-14T05:04:48-05:00",
+      "author": "Raphael J. Sandor",
+      "email": "45048465+R-Sandor@users.noreply.github.com",
+      "message": "CONTRIBUTING update\n"
+    },
+    {
+      "sha": "e93416674295ec376e178350d45cf9aace4c56ba",
+      "date": "2026-01-13T04:24:52-05:00",
+      "author": "Raphael J. Sandor",
+      "email": "45048465+R-Sandor@users.noreply.github.com",
+      "message": "AI POLICY\n"
+    },
+    {
+      "sha": "1d49d82593c6a8f19bb7d3f09f4da172bd78aeaa",
+      "date": "2026-08-05T05:21:56-04:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump axios in /frontend in the npm_and_yarn group across 1 directory (#423)\n\nBumps the npm_and_yarn group with 1 update in the /frontend directory: [axios](https://github.com/axios/axios).\n\n\nUpdates `axios` from 1.17.0 to 1.18.0\n- [Release notes](https://github.com/axios/axios/releases)\n- [Changelog](https://github.com/axios/axios/blob/v1.x/CHANGELOG.md)\n- [Commits](https://github.com/axios/axios/compare/v1.17.0...v1.18.0)\n\n---\nupdated-dependencies:\n- dependency-name: axios\n  dependency-version: 1.18.0\n  dependency-type: direct:production\n  dependency-group: npm_and_yarn\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "7b511e8a4c51aa0a81d0c8e8f957422e04b3c839",
+      "date": "2026-08-05T11:59:10+03:00",
+      "author": "Uliana Karavatskaya",
+      "email": "ulanakaravackaa@gmail.com",
+      "message": "created indexes on Postgres (#424)"
+    },
+    {
+      "sha": "6bed5118bf408a40c067ed77ab3c03afdf942bfb",
+      "date": "2026-06-27T05:45:30-04:00",
+      "author": "Raphael J. Sandor",
+      "email": "45048465+R-Sandor@users.noreply.github.com",
+      "message": "fix casing\n"
+    },
+    {
+      "sha": "c316737273367ee5fc47e2fb0ea12a0290b8a9bd",
+      "date": "2026-06-27T05:42:26-04:00",
+      "author": "Raphael J. Sandor",
+      "email": "45048465+R-Sandor@users.noreply.github.com",
+      "message": "hardcode image type for avatar to image/png\n"
+    },
+    {
+      "sha": "9f2345efd135c55731c7451249abce7ca0ab4051",
+      "date": "2026-06-27T04:30:09-05:00",
+      "author": "Lucas Ramage",
+      "email": "lucas.ramage@infinite-omicron.com",
+      "message": "feat(extension): browser extension core for Chrome and Firefox (#418)\n\n* fix(server): support browser extension auth via Bearer token\n\n- Add chrome-extension:// and moz-extension:// to CORS allowed origin\n  patterns so the extension can make credentialed requests\n- Fix UserContext.getUserId() to handle JwtAuthenticationToken (set by\n  oauth2ResourceServer for Bearer token requests) in addition to the\n  existing UserAuthenticationToken (set by the cookie filter); the hard\n  cast was causing a ClassCastException and 500 on all extension API calls\n\n* fix(frontend): resolve failing SonarQube frontend test suite\n\n- Mock next/font/google in vitestSetup to fix Libre_Baskerville not-a-function error in app.test.tsx\n- Always render brand logo in Navbar (remove isMobile conditional that hid it on desktop); drop unused isMobile state and resize effect\n- Update default avatar test to assert SVG icon presence instead of stale img/src expectation\n\n* fix(server): support browser extension Bearer token auth\n\n- Add jwtAuthenticationConverter inline in securityFilterChain so\n  Bearer token requests produce UserAuthenticationToken directly;\n  avoids registering a Converter bean that breaks Spring MVC startup\n- Remove JwtAuthenticationToken fallback from UserContext since the\n  converter now handles Bearer token auth uniformly\n- Add accessToken to TokenRefreshResponse so the extension can read\n  the JWT from the sign-in response body (httpOnly cookie is not\n  accessible from moz-extension:// origin)\n- Build server image from source in docker-compose for local dev\n\n---------\n\nCo-authored-by: Raphael J. Sandor <45048465+R-Sandor@users.noreply.github.com>"
+    },
+    {
+      "sha": "fad6d7307128b28c49fc9404be8c2ee83462be34",
+      "date": "2026-06-10T10:45:52-04:00",
+      "author": "Raphael J. Sandor",
+      "email": "45048465+R-Sandor@users.noreply.github.com",
+      "message": "updates\n"
+    },
+    {
+      "sha": "7efadc259aaf1310dd198cc77c11bf85130df1b8",
+      "date": "2026-06-10T10:39:37-04:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump next in /frontend in the npm_and_yarn group across 1 directory (#415)\n\nBumps the npm_and_yarn group with 1 update in the /frontend directory: [next](https://github.com/vercel/next.js).\n\n\nUpdates `next` from 15.5.10 to 16.1.5\n- [Release notes](https://github.com/vercel/next.js/releases)\n- [Changelog](https://github.com/vercel/next.js/blob/canary/release.js)\n- [Commits](https://github.com/vercel/next.js/compare/v15.5.10...v16.1.5)\n\n---\nupdated-dependencies:\n- dependency-name: next\n  dependency-version: 16.1.5\n  dependency-type: direct:production\n  dependency-group: npm_and_yarn\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "98824de3ac985b3fd19eac9d93d5e6bc4b1ef2dc",
+      "date": "2026-06-10T06:02:45-04:00",
+      "author": "Raphael J. Sandor",
+      "email": "45048465+R-Sandor@users.noreply.github.com",
+      "message": "fix new bookmark delete tag\n"
+    },
+    {
+      "sha": "dcb045f75327e59b6d3ea7f24b11690192593fe1",
+      "date": "2026-05-24T20:21:26-05:00",
+      "author": "Lucas Ramage",
+      "email": "ramage.lucas@protonmail.com",
+      "message": "fix(frontend): resolve failing SonarQube frontend test suite\n\n- Mock next/font/google in vitestSetup to fix Libre_Baskerville not-a-function error in app.test.tsx\n- Always render brand logo in Navbar (remove isMobile conditional that hid it on desktop); drop unused isMobile state and resize effect\n- Update default avatar test to assert SVG icon presence instead of stale img/src expectation\n"
+    },
+    {
+      "sha": "50db5eed1d205503d3df8ce23749737292349011",
+      "date": "2026-06-06T11:11:32+02:00",
+      "author": "Sabina Gušić",
+      "email": "sgusic1@etf.unsa.ba",
+      "message": "fix: add 'untagged' tag to bookmarks without tags on creation (#412)\n\n* fix: add 'untagged' tag to bookmarks without tags on creation\n\n* refactor: derive 'untagged' tag on frontend instead of backend\n\n* untagged bookmarks populate the BookmarkCardsView\n\n---------\n\nCo-authored-by: Sabina Gušić <sabinagusic3@gmail.com>\nCo-authored-by: Raphael J. Sandor <45048465+R-Sandor@users.noreply.github.com>"
+    },
+    {
+      "sha": "8158aba61538d7826c1f58f5090b59d121e82f54",
+      "date": "2026-04-18T07:03:12-04:00",
+      "author": "Raphael J. Sandor",
+      "email": "45048465+R-Sandor@users.noreply.github.com",
+      "message": "update github actions\n"
+    },
+    {
+      "sha": "5e7434a5e194c79cc7bd51ba726cd3a13b5ed082",
+      "date": "2026-04-18T06:25:58-04:00",
+      "author": "Raphael J. Sandor",
+      "email": "45048465+R-Sandor@users.noreply.github.com",
+      "message": "fix playwright test containers for end to end tests\n"
+    },
+    {
+      "sha": "80813ce7aa4e0f7893728037ca0fe813b63d59af",
+      "date": "2026-01-28T06:40:37-05:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump lodash in /frontend in the npm_and_yarn group across 1 directory (#414)\n\nBumps the npm_and_yarn group with 1 update in the /frontend directory: [lodash](https://github.com/lodash/lodash).\n\n\nUpdates `lodash` from 4.17.21 to 4.17.23\n- [Release notes](https://github.com/lodash/lodash/releases)\n- [Commits](https://github.com/lodash/lodash/compare/4.17.21...4.17.23)\n\n---\nupdated-dependencies:\n- dependency-name: lodash\n  dependency-version: 4.17.23\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Raphael J. Sandor <45048465+R-Sandor@users.noreply.github.com>"
+    },
+    {
+      "sha": "9444ced95b8938a415bb57c44005cfeb3ee62291",
+      "date": "2026-01-11T06:39:21-05:00",
+      "author": "Raphael J. Sandor",
+      "email": "45048465+R-Sandor@users.noreply.github.com",
+      "message": "decide to use modal to managed account\n"
+    },
+    {
+      "sha": "79c230d2d4c15b7bbb8799fea6709197a3c2b91f",
+      "date": "2026-01-28T05:39:07-05:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump lodash-es in /frontend in the npm_and_yarn group across 1 directory (#413)\n\nBumps the npm_and_yarn group with 1 update in the /frontend directory: [lodash-es](https://github.com/lodash/lodash).\n\n\nUpdates `lodash-es` from 4.17.21 to 4.17.23\n- [Release notes](https://github.com/lodash/lodash/releases)\n- [Commits](https://github.com/lodash/lodash/compare/4.17.21...4.17.23)\n\n---\nupdated-dependencies:\n- dependency-name: lodash-es\n  dependency-version: 4.17.23\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "344a38dc6b6770942c83f302cb915cd6c5e30902",
+      "date": "2026-01-06T06:09:22-05:00",
+      "author": "Raphael J. Sandor",
+      "email": "45048465+R-Sandor@users.noreply.github.com",
+      "message": "set person to generic person icon\n"
+    },
+    {
+      "sha": "c2d8e55e7f34ac6a40d362e1385f078ad9e77f1f",
+      "date": "2026-01-10T09:05:19-05:00",
+      "author": "Raphael J. Sandor",
+      "email": "45048465+R-Sandor@users.noreply.github.com",
+      "message": "add subsets'\n"
+    }
+  ],
+  "commit_sha": "9669758a05916ee9ff60585a3a4e179c2b95398d",
+  "extracted_at": "2026-10-05T18:40:28.160909+00:00"
+}

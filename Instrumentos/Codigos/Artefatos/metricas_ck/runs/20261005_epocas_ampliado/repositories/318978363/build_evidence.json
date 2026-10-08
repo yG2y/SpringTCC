@@ -1,0 +1,28 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${spring.boot.version};2.7.15",
+  "spring_boot_major": "2",
+  "java_versions_declared": "8",
+  "build_evidence": [
+    {
+      "file": "example/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "example/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "example/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "tucache-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "tucache-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    }
+  ]
+}

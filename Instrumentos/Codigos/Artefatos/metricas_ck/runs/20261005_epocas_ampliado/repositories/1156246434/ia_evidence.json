@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "7778097966966d4be66a9df92a0cd52e6c4b0bd0",
+      "date": "2026-04-16T08:13:12+08:00",
+      "author": "scj",
+      "email": "2209188259@qq.com",
+      "message": "feat: 新增guardian-dependencies模块，统一管理项目所有starter模块\n"
+    },
+    {
+      "sha": "d20457e29c2b701fd8d6238d41ea713d0f1c2d8d",
+      "date": "2026-03-12T22:16:39+08:00",
+      "author": "scj",
+      "email": "2209188259@qq.com",
+      "message": "feat: 功能说明添加\n"
+    },
+    {
+      "sha": "ef3c1f99bfd86916543e04ae21aae59eebf124e6",
+      "date": "2026-03-11T14:07:17+08:00",
+      "author": "scj",
+      "email": "2209188259@qq.com",
+      "message": "fix: 重复依赖删除\n"
+    },
+    {
+      "sha": "712da838366e995a1f874e5c6ada8c8dd0c6a93c",
+      "date": "2026-03-10T12:08:49+08:00",
+      "author": "scj",
+      "email": "2209188259@qq.com",
+      "message": "feat: xmind图更新\n"
+    },
+    {
+      "sha": "28e99a82fb65091b44a58a4c559b9f701820f76f",
+      "date": "2026-03-10T12:05:04+08:00",
+      "author": "scj",
+      "email": "2209188259@qq.com",
+      "message": "feat: 新增请求加解密模块，支持 RSA+AES / SM2+SM4 加密方案\n\n## 新增功能\n- 新增请求加解密模块（guardian-encrypt），支持 RSA+AES 和 SM2+SM4 两种加密方案\n- 新增请求解密过滤器，自动解密请求参数（支持 param 和 body 两种方式）\n- 新增响应加密 Advice（EncryptResponseAdvice），自动加密响应结果\n- 新增密钥加密服务，支持 RSA 和 SM2 算法\n- 新增数据加密服务，支持 AES-GCM 和 SM4-CBC 算法\n- 新增加密模块 Actuator 端点\n- 新增前端示例页面（sign-test.html、encrypt-test.html）\n- 签名模块新增 SM3 算法支持\n\n## 优化\n- 加密模块支持动态密钥和静态密钥两种模式\n- 签名模块前端实现文档简化，指向示例页面\n- 完善 README 文档，新增加密模块完整说明\n\n## 版本\n- 版本升级到 1.10.0\n"
+    },
+    {
+      "sha": "69062b0e88a707d11d1c6261302d8e9decbd305c",
+      "date": "2026-03-05T09:52:34+08:00",
+      "author": "scj",
+      "email": "2209188259@qq.com",
+      "message": "feat: 新增防重复提交和接口限流模块SpEL动态Key支持\n\n- 新增SpElUtils工具类，支持#参数名和#body.参数名访问\n- @RepeatSubmit和@RateLimit注解新增spEl属性\n- YAML配置新增sp-el配置项\n- 支持仅params、仅body、params+body混合三种场景\n- 升级版本至1.9.0\n"
+    },
+    {
+      "sha": "e6f6bf758c4030aa474b7f375dc3aa2eea3b59c9",
+      "date": "2026-03-03T22:00:05+08:00",
+      "author": "scj",
+      "email": "2209188259@qq.com",
+      "message": "fix: readme xmind图更新\n"
+    },
+    {
+      "sha": "a71987c789652097e495354f9b37d23cb769d499",
+      "date": "2026-03-03T21:56:15+08:00",
+      "author": "scj",
+      "email": "2209188259@qq.com",
+      "message": "feat: 新增 ResponseBodyAdvice 执行顺序配置，支持 YAML 动态控制\n\n- 新增签名模块 result-advice-order 配置项（默认100）\n- 新增幂等模块 result-advice-order 配置项（默认200）\n- 实现 Ordered 接口，支持动态配置执行顺序\n- 推荐执行顺序：幂等缓存(200) → 签名(100) → 加密(300)\n- 更新 README 文档\n- 升级版本号至 1.8.1\n"
+    },
+    {
+      "sha": "1f7960ab7ea6cc45a809eb638c3b55d65d6da517",
+      "date": "2026-03-03T19:42:29+08:00",
+      "author": "scj",
+      "email": "2209188259@qq.com",
+      "message": "fix：readme优化\n"
+    },
+    {
+      "sha": "0f76b18a79c4b6f9917ba38e1fcfb480f7e4430f",
+      "date": "2026-03-03T19:36:48+08:00",
+      "author": "scj",
+      "email": "2209188259@qq.com",
+      "message": "fix：readme优化\n"
+    },
+    {
+      "sha": "6ba9ba232c2208ce38353ce397d21d1697e3a799",
+      "date": "2026-03-03T19:33:25+08:00",
+      "author": "scj",
+      "email": "2209188259@qq.com",
+      "message": "fix：readme删除重复内容\n"
+    },
+    {
+      "sha": "6790e327e20e0c0432374e5b5dce5a1da46f799a",
+      "date": "2026-03-03T19:30:40+08:00",
+      "author": "scj",
+      "email": "2209188259@qq.com",
+      "message": "fix：readme修复代码块丢失\n"
+    },
+    {
+      "sha": "54cd1084aa9a1814587e12b8deb5198bec0d8e9a",
+      "date": "2026-03-03T19:24:44+08:00",
+      "author": "scj",
+      "email": "2209188259@qq.com",
+      "message": "feat(sign): 发布1.8.0版本，新增签名模块\n\n1. 新增guardian-sign-spring-boot-starter模块，提供参数签名功能\n2. 支持多种签名算法：base64、md5、sha256、hmac_sha256\n3. 实现请求参数签名验证和响应结果签名\n4. 支持注解和YAML两种配置方式\n5. 完善README.md文档：\n   - 添加签名模块详细使用示例\n   - 增加前端签名生成完整示例（JS/TS）\n   - 添加常见问题解答部分\n6. 统一版本号为1.8.0\n\n1.8.0版本专注于发布签名模块，为API请求提供安全的参数签名机制，确保请求参数未被篡改。\n"
+    },
+    {
+      "sha": "a6c5bac68a1d6612ed51fd619a2c53357df5c266",
+      "date": "2026-03-01T15:43:00+08:00",
+      "author": "scj",
+      "email": "2209188259@qq.com",
+      "message": "fix：readme文档，guardian-core共享类说明删除\n"
+    },
+    {
+      "sha": "ca99da94fbf02d741a5f37aace5ee53b834a11ed",
+      "date": "2026-03-01T15:41:39+08:00",
+      "author": "scj",
+      "email": "2209188259@qq.com",
+      "message": "fix：readme文档-接口开关-动态配置模块提示信息更改\n"
+    },
+    {
+      "sha": "2e74221ad793493e47bc3b3202bc8a018c5e85f5",
+      "date": "2026-03-01T15:40:41+08:00",
+      "author": "scj",
+      "email": "2209188259@qq.com",
+      "message": "fix：readme文档名词统一规范\n"
+    },
+    {
+      "sha": "2adca930814df3176007068ed6807feae56a0fbb",
+      "date": "2026-03-01T15:39:15+08:00",
+      "author": "scj",
+      "email": "2209188259@qq.com",
+      "message": "fix：readme文档顺序修改\n"
+    },
+    {
+      "sha": "cf695db13547277d440db251d831664591439bf7",
+      "date": "2026-03-01T15:36:10+08:00",
+      "author": "scj",
+      "email": "2209188259@qq.com",
+      "message": "feat: V1.7.2\n- **新增**：整合所有starter模块（`guardian-starter-all`），以便于引用所有功能时只需引用此模块\n- **优化**：共享类重新分类分包\n"
+    },
+    {
+      "sha": "1560bed8e37a2d2cc819f5e6c98dc4cbc44b83b4",
+      "date": "2026-02-28T16:00:56+08:00",
+      "author": "scj",
+      "email": "2209188259@qq.com",
+      "message": "fix: readme xmind图更新\n"
+    },
+    {
+      "sha": "558cb2fd6ec77830bf15ec233650bf6f12df1ecd",
+      "date": "2026-02-28T14:02:45+08:00",
+      "author": "scj",
+      "email": "2209188259@qq.com",
+      "message": "feat: Guardian v1.7.0 — 新增整合所有starter模块（`guardian-starter-all`），以便于引用所有功能时只需引用此模块\n"
+    },
+    {
+      "sha": "cbbad0dcbc342618891690d22ac9a73f09c9cd4c",
+      "date": "2026-02-27T16:43:45+08:00",
+      "author": "scj",
+      "email": "2209188259@qq.com",
+      "message": "feat: Guardian v1.7.0 — 新增防重放攻击模块 + 全模块 Javadoc 完善\n\n- 新增 guardian-anti-replay 模块（core + starter 双模块），Timestamp + Nonce 双重校验拦截重放请求\n- 新增 NonceStorage 存储接口，支持 Redis（分布式）和 Local（单机）两种实现\n- 新增 nonce-ttl 与 max-age 解耦设计，防止 Nonce 过期后篡改 Timestamp 重放\n- 新增 Actuator 监控端点（GET /actuator/guardianAntiReplay）\n- 新增 AntiReplayResponseHandler SPI 扩展点 + 全部提示信息支持 i18n\n- 完善防重放模块全部 Java 文件 Javadoc 注释\n- 修复 AutoConfiguration Bean 方法名从限流模块复制未改名的问题\n- 修复 NonceStorage Javadoc typo（院子操作 → 原子操作）\n- guardian-example 新增防重放测试接口 + apifox-import.json 同步更新\n- README 新增防重放章节、动态配置参数表、Nacos 示例、Filter 执行顺序、更新日志\n- README 补充 trace 模块动态配置参数表和 Nacos 配置示例\n- 项目版本升级至 1.7.0\n"
+    },
+    {
+      "sha": "3bfd8a6d04a89f2bed2318f3501def29aaf9467c",
+      "date": "2026-02-26T23:03:42+08:00",
+      "author": "scj",
+      "email": "2209188259@qq.com",
+      "message": "feat(trace): 新增 MQ 批量消费工具类 & 修复自动配置加载顺序\n\n- 新增 TraceRabbitUtils / TraceKafkaUtils / TraceRocketMQUtils 工具类，\n  批量消费场景一行代码切换 traceId，替代手动提取 Header\n- 修复 MQ 自动配置类因加载顺序导致 @ConditionalOnBean 不生效的问题，\n  添加 @AutoConfigureAfter 确保在 TraceConfig 和 MQ Template 之后加载\n- Kafka/RocketMQ 配置类增加 @ConditionalOnBean 对 Template 的检查，\n  未配置 MQ 时自动跳过，不影响启动\n- Example Listener 参数类型从 String 改为 Message/ConsumerRecord/MessageExt，\n  修复 AOP 切面无法提取 traceId 的问题\n- Example 新增 RabbitMQ/Kafka/RocketMQ 批量发送接口和批量消费 Listener\n- Kafka/RocketMQ Controller 和 Listener 添加 @ConditionalOnProperty，\n  配置注释时不加载\n- 同步更新 README 和 apifox-import.json\n"
+    },
+    {
+      "sha": "c278cafd8986ba401d422c61f756568c3b4e02b8",
+      "date": "2026-02-25T22:40:30+08:00",
+      "author": "scj",
+      "email": "2209188259@qq.com",
+      "message": "feat: readme添加项目mind图\n"
+    },
+    {
+      "sha": "34af6d942ff33cb5d9c2c6938e7aae1db334e9da",
+      "date": "2026-02-25T20:35:13+08:00",
+      "author": "scj",
+      "email": "2209188259@qq.com",
+      "message": "fix: 忽略docs文件夹\n"
+    },
+    {
+      "sha": "b8bfeddb90ffb76c5a63a9c898c16bcab21cc23f",
+      "date": "2026-02-25T20:15:42+08:00",
+      "author": "scj",
+      "email": "2209188259@qq.com",
+      "message": "feat: Guardian v1.6.1 — 移除 hutool-all 依赖，全面切换 Spring/JDK 原生工具\n\n重构：\n- 移除 hutool-all 依赖，项目零外部工具包依赖，更轻量\n- 新增 GuardianJsonUtils（基于 Jackson），替代 JSONUtil / JSONObject / JSONArray\n- 新增 IpUtils，替代 ServletUtil.getClientIP\n- 新增 Md5Utils，替代 cn.hutool.crypto.digest.MD5\n- StrUtil.format → String.format，占位符统一为 %s\n- StrUtil.isBlank / isNotBlank → StringUtils.hasText / null 判断\n- StrUtil.equals → Objects.equals\n- Base64.encode → java.util.Base64.getEncoder().encodeToString\n- IoUtil.readBytes → StreamUtils.copyToByteArray\n- DateUtil.current → System.currentTimeMillis\n- cn.hutool.core.lang.UUID → java.util.UUID\n- IdUtil + DateUtil（TraceId 生成）→ ThreadLocalRandom + LocalTime\n- BeanUtil.beanToMap → ObjectMapper.convertValue\n- example 模块 JSONConfig + JSONUtil → GuardianJsonUtils\n\n修复：\n- jackson-databind 作用域由 provided 改为 compile，解决下游模块编译失败\n"
+    },
+    {
+      "sha": "8c7fa8edddb5905009325f816539de4db06f83ab",
+      "date": "2026-02-24T22:37:03+08:00",
+      "author": "scj",
+      "email": "2209188259@qq.com",
+      "message": "feat: v1.6.0 — 新增 IP 黑白名单模块 + IpMatcher IPv6 兼容 + Actuator 端点集成 + i18n 完善\n\n【新增】IP 黑白名单模块（guardian-ip-filter）\n- 新增 guardian-ip-filter-core / guardian-ip-filter-spring-boot-starter 双模块\n- 支持全局 IP 黑名单 + URL 绑定白名单，匹配优先级：黑名单 > URL 白名单 > 放行\n- IP 规则支持精确匹配、通配符（192.168.1.*）、CIDR（10.0.0.0/8）三种格式\n- 新增 IpFilterStatistics 拦截统计 + Actuator 端点（GET /actuator/guardianIpFilter）\n- 新增 reject403 方法，IP 拦截返回 HTTP 403 + JSON body code 403\n- 支持 response-mode（json / exception）、log-enabled 拦截日志、i18n 国际化消息\n\n【修复】IpMatcher IPv6 环回地址兼容\n- IPv6 环回地址（0:0:0:0:0:0:0:1、::1）自动标准化为 127.0.0.1\n- 防止 IPv6 地址进入 IPv4 CIDR/通配符解析导致 NumberFormatException\n- 新增 null 安全检查\n\n【优化】Filter 执行顺序调整\n- TraceId Filter 默认 order 从 -20000 调整为 -30000，避免与 IpFilter 冲突\n- README 完整梳理 Filter/Interceptor 执行顺序及请求链路图\n\n【完善】i18n 国际化补充\n- 新增 guardian.ip-filter.rejected 国际化 Key（中文/英文）\n- IP Filter message 配置改为 i18n Key\n\n【文档】\n- README 新增 IP 黑白名单完整文档，版本号升级至 1.6.0\n- apifox-import.json 新增 IP Filter 测试接口 + 5 个 Actuator 监控端点\n\n【其他】\n- example 模块新增 IpFilterController 测试接口\n- pom.xml 新增 guardian-ip-filter 模块依赖管理，版本升至 1.6.0\n"
+    },
+    {
+      "sha": "df2325e89f5a04ef0df09063d7fe0f04020b5dc9",
+      "date": "2026-02-24T17:05:50+08:00",
+      "author": "scj",
+      "email": "2209188259@qq.com",
+      "message": "feat: v1.5.3\n- **新增**：消息国际化支持，拒绝响应消息（防重、限流、幂等）支持 Spring `MessageSource` 国际化，message 字段可配置 i18n Key，根据 `Accept-Language` 自动匹配语言\n- **新增**：`GuardianMessageResolver` 消息解析工具，MessageSource 能解析则返回翻译，否则原样返回，不使用国际化的用户零感知\n- **新增**：幂等模块 `missing-token-message` 配置项，缺少 Token 时的提示信息支持自定义及国际化\n"
+    },
+    {
+      "sha": "741321796a6262eae5da5a9b3bac7b72e964ad11",
+      "date": "2026-02-22T23:13:15+08:00",
+      "author": "scj",
+      "email": "2209188259@qq.com",
+      "message": "fix: `GuardianRateLimitProperties` / `GuardianRepeatSubmitProperties` 删除多余无用参数\n"
+    },
+    {
+      "sha": "2dd9e406db25f8397ec00a47560c9877b99f8b1f",
+      "date": "2026-02-22T22:35:35+08:00",
+      "author": "scj",
+      "email": "2209188259@qq.com",
+      "message": "feat: pom文件版本号修改1.5.1\n"
+    },
+    {
+      "sha": "30c1959f4668d8167452d036441eb10b12f1a875",
+      "date": "2026-02-22T22:34:47+08:00",
+      "author": "scj",
+      "email": "2209188259@qq.com",
+      "message": "feat: v1.5.1 动态配置支持 & 全局默认参数 & 模块完善\n\n- 所有模块 YAML 配置支持配置中心动态刷新（Nacos/Apollo），无需重启即时生效\n- 接口限流新增全局默认参数（qps/window/algorithm/capacity/rateLimitScope/message），注解未显式指定时自动使用全局配置\n- 防重复提交新增全局默认参数（interval/timeUnit/keyScope/clientType/message），注解未显式指定时自动使用全局配置\n- 幂等 Token 服务重构为动态读取 timeout/timeUnit，支持运行期调整有效期\n- 字符替换工具 CharacterSanitizer 增加缓存机制，配置变更时自动重建\n- 防重复提交模块补齐 enabled 总开关（与其他模块保持一致）\n- 核心模块引入 Config 接口层，拦截器通过接口引用动态读取配置\n- 完善 README 文档，新增规则优先级说明、动态配置参数表及 Nacos 配置示例\n"
+    }
+  ],
+  "commit_sha": "7778097966966d4be66a9df92a0cd52e6c4b0bd0",
+  "extracted_at": "2026-10-05T18:19:39.710985+00:00"
+}

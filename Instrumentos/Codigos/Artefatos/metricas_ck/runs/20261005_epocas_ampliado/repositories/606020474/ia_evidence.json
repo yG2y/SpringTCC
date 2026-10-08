@@ -1,0 +1,314 @@
+{
+  "ia_status": "com_evidencia",
+  "ia_level": 2,
+  "ia_agents": "Claude Code",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "d3eef6ac6bf219d63e45a3546b0ea7c6bd93c4b9",
+      "trailer": "Claude Sonnet 5 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "d1c800b721a6d9a24027a10336b98127563b8baa",
+      "trailer": "Claude Opus 5 (1M context) <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "d1c800b721a6d9a24027a10336b98127563b8baa",
+      "trailer": "Claude Opus 5 (1M context) <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "d1c800b721a6d9a24027a10336b98127563b8baa",
+      "trailer": "Claude Opus 5 (1M context) <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "d1c800b721a6d9a24027a10336b98127563b8baa",
+      "trailer": "Claude Opus 5 (1M context) <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "c301d5c8c3455ff212dfa9f4674375b38e78ea16",
+      "trailer": "Claude Sonnet 5 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "ba20707fc85826309f4338769f9ef614ecd868c8",
+      "trailer": "Claude Sonnet 5 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "eea53fea7d3cecb174d14096197f3e8874af0b1a",
+      "trailer": "Claude Sonnet 5 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "90cfff1f4238f34c67a1b040829e2a050fafea36",
+      "trailer": "Claude Sonnet 5 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "1d6c97ca09bb3a386beb304554d5129ef97b5d22",
+      "trailer": "Claude Sonnet 5 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "51cc7aa75b6c6482cfa741d99b2b62cfcc3e400f",
+      "trailer": "Claude Sonnet 5 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "e84e40bc8bdb63aa571e925d7f86cd6924f9603f",
+      "trailer": "Claude Sonnet 5 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "eb7096ccef9a2f78eeec24d7c52268614bbfebb9",
+      "trailer": "Claude Sonnet 5 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "f97c0ab7ce8fc8d17855fdc3fd998f81e0c2c90c",
+      "trailer": "Claude Sonnet 5 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "bdd65b02db67b81393ba1a0234f9fe5234a5f0cc",
+      "trailer": "Claude Sonnet 5 <noreply@anthropic.com>"
+    }
+  ],
+  "commits": [
+    {
+      "sha": "d3eef6ac6bf219d63e45a3546b0ea7c6bd93c4b9",
+      "date": "2026-10-05T16:04:04+02:00",
+      "author": "Tomas Bjerre",
+      "email": "tomas.bjerre85@gmail.com",
+      "message": "fix: inject @InjectWireMock fields without explicit SpringExtension (#213)\n\n@ConfigureWireMock and @EnableWireMock only meta-annotated @ExtendWith\nwith WireMockSpringJunitExtension, which became a pure ParameterResolver\nin #204. Field injection, resets and the default WireMock client now run\nfrom a Spring TestExecutionListener, which only fires when SpringExtension\nis registered - previously an implicit side effect of\nSpringExtension.getApplicationContext() being called during field lookup.\nTest classes without @SpringBootTest, @SpringJUnitConfig or an explicit\n@ExtendWith(SpringExtension.class) got null @InjectWireMock fields.\n\nMeta-annotate both annotations with an additional\n@ExtendWith(SpringExtension.class); @ExtendWith is @Repeatable so this\nstacks cleanly with whatever a test class already registers.\n\nFixes #212\n\nCo-authored-by: Claude Sonnet 5 <noreply@anthropic.com>"
+    },
+    {
+      "sha": "d1c800b721a6d9a24027a10336b98127563b8baa",
+      "date": "2026-09-21T10:35:33+02:00",
+      "author": "Tomas Bjerre",
+      "email": "tomas.bjerre85@gmail.com",
+      "message": "fix: only reset default WireMock client for tests that opt in (fixes #210) (#211)\n\n* fix: only reset default WireMock client for tests that opt in (fixes #210)\n\n4.4.0 moved resetting the static WireMock DSL client from\nWireMockSpringJunitExtension into WireMockTestExecutionListener, but the\ntwo have very different scope: the extension is registered by @ExtendWith\non @EnableWireMock/@ConfigureWireMock, whereas the listener is registered\nin META-INF/spring.factories and so runs for every Spring test in any\nproject that merely has wiremock-spring-boot on its test classpath.\n\nafterTestMethod called WireMock.configureFor(-1) unconditionally, which\nfor a test that never opted in clobbers whatever else configured the\nstatic client - notably WireMock's own @WireMockTest extension, which\nconfigures it once per test class. Every test method after the first then\naddressed localhost with port -1, rendered as the URI default:\n\n  org.apache.hc.client5.http.HttpHostConnectException:\n  Connect to http://localhost:80 failed: Connection refused\n\nbeforeTestMethod and afterTestMethod now return early unless the test\nclass declares @EnableWireMock or @ConfigureWireMock, restoring the\npre-4.4.0 scope. prepareTestInstance stays ungated: it is already a\nno-op without @InjectWireMock fields, and gating it would turn a missing\n@EnableWireMock from a clear IllegalStateException into a silently unset\nfield.\n\nAdds usecases.CoreWireMockTestAnnotationTest, a @SpringBootTest using\n@WireMockTest that stubs with the static DSL in two ordered test\nmethods. It fails on main with exactly the reported error and passes\nwith this change.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n* test: add the reproduction reported in #210\n\nAdds corewiremock.GetNumberAdapterTest, the scenario from the issue\nitself: a @SpringBootTest whose service bean talks to a statically\nconfigured port via RestClient, stubbed with the static WireMock DSL\nthrough WireMock's own @WireMockTest. Without the preceding fix its\nsecond test method fails with the reported error,\n\n  org.apache.hc.client5.http.HttpHostConnectException:\n  Connect to http://localhost:80 failed: Connection refused\n\nThis needs RestClient.Builder to be auto-configured, which in Spring\nBoot 4 lives in spring-boot-starter-restclient rather than\nspring-boot-starter-web, so that starter is added as a test dependency.\n\nThe adapter bean and its @SpringBootApplication live in their own\ntop-level package, so that usecases.App's component scan over the\n\"usecases\" package does not sweep the bean into every other test's\napplication context - the same reason nodirtycontext has its own app.\nCoreWireMockTestAnnotationTest moves there too, keeping both tests for\nthis regression together: that one covers the same defect with a\ndynamic port and no service bean.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n* test: stub #210's reproduction with rest-assured, drop the RestClient scaffolding\n\nThe RestClient in the issue was incidental: the call that fails is\nstubFor, WireMock's own admin call over the static DSL client, not the\napplication's request. So the service bean added nothing to the\nreproduction, and everything propping it up went with it - the\n@SpringBootApplication that existed only to keep that @Service out of\nusecases.App's component scan, and the spring-boot-starter-restclient\ntest dependency that RestClient.Builder injection needed.\n\nThe test is now a single class in usecases that stubs and asserts with\nrest-assured, like the rest of the suite, keeping the issue's fixed\nport and its status404/statusOk methods. It still fails without the\npreceding fix with the reported error:\n\n  org.apache.hc.client5.http.HttpHostConnectException:\n  Connect to http://localhost:80 failed: Connection refused\n\nAlso drops the duplicate rest-assured testImplementation line.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\n---------\n\nCo-authored-by: Claude Opus 5 (1M context) <noreply@anthropic.com>"
+    },
+    {
+      "sha": "65560776047f79bc24124967ea53dffe17c2cd07",
+      "date": "2026-09-19T22:36:31+02:00",
+      "author": "Tomas Bjerre",
+      "email": "tomas.bjerre85@gmail.com",
+      "message": "Merge pull request #209 from wiremock/refactor/readability-cleanups\n\nrefactor: readability cleanups (shared resolve helper, decompose server creation)"
+    },
+    {
+      "sha": "f1d69e3b55d56f72dc66be3eb2fb77030ed34496",
+      "date": "2026-09-19T22:34:07+02:00",
+      "author": "Tomas Bjerre",
+      "email": "tomas.bjerre85@gmail.com",
+      "message": "Merge branch 'main' into refactor/readability-cleanups\n\nResolves the conflict in WireMockServerCreator.java against #208\n(merged to main after this branch was opened) by keeping this\nbranch's decomposed version, which already removes the same\nunnecessary collect(toList()) calls as part of splitting\ncreateWireMockServer into named steps. WireMockContextCustomizerFactory.java\nmerged cleanly, picking up #208's O(n^2) duplicate-detection fix\nalongside this branch's resolveConfigureWireMocks addition.\n"
+    },
+    {
+      "sha": "c301d5c8c3455ff212dfa9f4674375b38e78ea16",
+      "date": "2026-09-19T22:28:29+02:00",
+      "author": "Tomas Bjerre",
+      "email": "tomas.bjerre85@gmail.com",
+      "message": "refactor: split WireMockServerCreator.createWireMockServer into named steps\n\nThe method mixed ~9 distinct concerns inline - resolving ports and TLS,\nmappings/extensions/templating/customizers, starting the server,\nregistering shutdown hooks, publishing 4 groups of Spring properties in\nnear-identical blocks, and Spring bean registration - in one ~120 line\nmethod. Split into buildServerOptions, registerShutdownHooks and\npublishServerProperties (plus small publishProperties/publishProperty\nhelpers replacing the 4 repeated blocks), so the top-level method now\nreads as a short sequence of named steps.\n\nDerives httpEnabled/httpsEnabled from the started WireMockServer\n(isHttpEnabled()/isHttpsEnabled()) instead of threading local booleans\ncomputed earlier in the method through to the property-publishing\nstep - same values, one less thing to pass around.\n\nLog message text is unchanged (verified no test asserts on it).\nBehavior and ordering are otherwise identical.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>\n"
+    },
+    {
+      "sha": "ba20707fc85826309f4338769f9ef614ecd868c8",
+      "date": "2026-09-19T22:25:26+02:00",
+      "author": "Tomas Bjerre",
+      "email": "tomas.bjerre85@gmail.com",
+      "message": "refactor: extract shared resolveConfigureWireMocks helper\n\nWireMockTestExecutionListener.resetWireMockServersIfConfigured had\ntwo near-identical blocks - one iterating EnableWireMock-derived\nConfigureWireMock entries, one iterating standalone ones - that both\ndid the same filter(resetWireMockServer).map(lookup).forEach(resetAll)\nafterward. The \"flatten EnableWireMock + standalone ConfigureWireMock\nentries for a class\" step itself was also duplicated with\nWireMockContextCustomizerFactory.parseDefinitions.\n\nExtracts that resolution into\nWireMockContextCustomizerFactory.resolveConfigureWireMocks(Class<?>),\nand uses it in resetWireMockServersIfConfigured, which shrinks from\ntwo loops to one. parseDefinitions is left as-is since it has\ndifferent semantics (validates via add(), skips by name via\naddIfAbsent()) that don't map cleanly onto a flat resolve.\n\nconfigureWireMockForDefaultInstance also duplicates this resolution\nstep, but its \"pick the one default candidate\" branching has enough\nparticular behavior (e.g. a multi-entry EnableWireMock group still\npicks index 0 with just a log warning, while multiple groups aborts\nentirely) that folding it into this helper deserves its own pass with\ndedicated test coverage rather than being bundled here.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>\n"
+    },
+    {
+      "sha": "cd63759886e7225f8552667eee2b6fbc12f7a1bf",
+      "date": "2026-09-19T22:24:28+02:00",
+      "author": "Tomas Bjerre",
+      "email": "tomas.bjerre85@gmail.com",
+      "message": "Merge pull request #208 from wiremock/perf/minor-cleanups\n\nrefactor: minor efficiency cleanups in server creation and validation"
+    },
+    {
+      "sha": "4d61ecd8ad93dd9c96d43c20c6c7137967a55498",
+      "date": "2026-09-19T22:22:19+02:00",
+      "author": "Tomas Bjerre",
+      "email": "tomas.bjerre85@gmail.com",
+      "message": "Merge branch 'main' into perf/minor-cleanups\n\nResolves the import-list conflict with #207's annotation-scan\ncaching (merged to main after this branch was opened) by keeping\nboth the Function and ConcurrentHashMap imports; everything else\nmerged cleanly.\n"
+    },
+    {
+      "sha": "eea53fea7d3cecb174d14096197f3e8874af0b1a",
+      "date": "2026-09-19T22:17:16+02:00",
+      "author": "Tomas Bjerre",
+      "email": "tomas.bjerre85@gmail.com",
+      "message": "refactor: minor efficiency cleanups in server creation and validation\n\n- WireMockServerCreator: drop the unnecessary collect(toList()) before\n  each forEach() over property-name streams; forEach runs directly on\n  the filtered stream.\n- WireMockContextCustomizerFactory.ConfigureWiremockHolder: replace\n  the O(n^2) Collections.frequency(list, it) duplicate-detection\n  pattern (scanning the whole list once per element) with a single\n  grouping-by-count pass. Exception message text is unchanged, N is\n  always small here (a handful of @ConfigureWireMock entries), so this\n  is a minor clarity/efficiency cleanup rather than a fix for an\n  observed problem.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>\n"
+    },
+    {
+      "sha": "e483777cd766a6153f9bc78811501ae3e7848405",
+      "date": "2026-09-19T22:16:17+02:00",
+      "author": "Tomas Bjerre",
+      "email": "tomas.bjerre85@gmail.com",
+      "message": "Merge pull request #207 from wiremock/perf/cache-annotation-scans\n\nperf: cache reflection-based annotation and field scans per test class"
+    },
+    {
+      "sha": "90cfff1f4238f34c67a1b040829e2a050fafea36",
+      "date": "2026-09-19T22:13:58+02:00",
+      "author": "Tomas Bjerre",
+      "email": "tomas.bjerre85@gmail.com",
+      "message": "perf: cache reflection-based annotation and field scans per test class\n\nWireMockContextCustomizerFactory.getEnableWireMockAnnotations,\ngetStandaloneConfigureWireMockAnnotations, and\nWireMockTestExecutionListener's @InjectWireMock field scan all\nre-walk a class's annotations/fields via reflection on every call.\nSince WireMockTestExecutionListener now drives this on every test\nmethod (not just once per test class), and resetWireMockServersIfConfigured\nand configureWireMockForDefaultInstance each independently re-scan\nthe same class within a single beforeTestMethod call, the same\nreflection work was being redone on every single test.\n\nA test class's own annotations and fields can't change during a JVM\nrun, so memoize each per Class<?> in a ConcurrentHashMap. Repeated\ncalls for the same class become an O(1) lookup instead of a fresh\nreflective scan.\n\nThe recursive enclosing/superclass lookup inside each scan had to be\nchanged to call the uncached scan method rather than the cached entry\npoint - ConcurrentHashMap.computeIfAbsent forbids its mapping\nfunction from making another computeIfAbsent call on the same map\n(\"Recursive update\"), which EnableWireMockOnSuperClassAndSubClassTest\ncaught as a flaky IllegalStateException depending on cache-population\norder across the suite.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>\n"
+    },
+    {
+      "sha": "75ad8b474846951ecb89d5a37e67fcca4b76e865",
+      "date": "2026-09-19T22:09:25+02:00",
+      "author": "Tomas Bjerre",
+      "email": "tomas.bjerre85@gmail.com",
+      "message": "Merge pull request #206 from wiremock/perf/store-log-level\n\nperf: log Store context resolution at debug instead of info"
+    },
+    {
+      "sha": "1d6c97ca09bb3a386beb304554d5129ef97b5d22",
+      "date": "2026-09-19T22:06:52+02:00",
+      "author": "Tomas Bjerre",
+      "email": "tomas.bjerre85@gmail.com",
+      "message": "perf: log Store context resolution at debug instead of info\n\nStore.resolve(ApplicationContext) is now called several times per\ntest method (once per @InjectWireMock field, once per server reset,\nonce for the default-instance lookup) since\nWireMockTestExecutionListener drives this on every test rather than\nonce per test class. Logging it at INFO added synchronous log I/O on\nevery one of those calls, for a message that never varies within a\nrun and isn't actionable. DEBUG is more appropriate for this level of\nper-call, high-frequency internal bookkeeping.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>\n"
+    },
+    {
+      "sha": "a098e9d3ce028e3cbecc4eb441496b4b7655ede5",
+      "date": "2026-09-19T22:00:36+02:00",
+      "author": "Tomas Bjerre",
+      "email": "tomas.bjerre85@gmail.com",
+      "message": "Merge pull request #205 from wiremock/test/189-static-port-no-dirty-context-coverage\n\ntest: verify staticPortDirtySpringContext=false actually prevents dirtying"
+    },
+    {
+      "sha": "51cc7aa75b6c6482cfa741d99b2b62cfcc3e400f",
+      "date": "2026-09-19T21:57:57+02:00",
+      "author": "Tomas Bjerre",
+      "email": "tomas.bjerre85@gmail.com",
+      "message": "test: verify staticPortDirtySpringContext=false actually prevents dirtying (refs #189)\n\nThe existing StaticPortNoDirtyContextTest only asserted that the\nconfigured port was applied - that assertion would pass even if\nstaticPortDirtySpringContext did nothing at all, so it gave no\ncoverage for the actual regression #189 reported (a shared BaseIT\nlosing Spring's test context cache reuse).\n\nReplaces it with a test that drives two independent\nTestContextManager instances for the same configuration directly and\nasserts they resolve to the exact same ApplicationContext, with a\ncontext-creation counter bean as a second, independent signal. This\navoids relying on JUnit Jupiter's cross-class execution order (which\nis not guaranteed) to prove context reuse across \"two test classes\".\n\nThe counter bean lives in its own top-level package (nodirtycontext)\nrather than under an existing one, since @SpringBootApplication's\ndefault component scan is based on package, not source file, and an\nexisting @ComponentScan elsewhere in the suite (usecases.App, and\neven the nested AppConfiguration classes under the flat `test`\npackage) would otherwise silently sweep it up and inflate the count\nfrom unrelated tests - this was verified against the full suite, not\njust this test in isolation.\n\nVerified the new test fails as expected when\nstaticPortDirtySpringContext is flipped back to true, both in\nisolation and as part of the full suite.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>\n"
+    },
+    {
+      "sha": "ce4c35daf75e69a89277ccf2bef3d968f37b2077",
+      "date": "2026-09-19T21:54:18+02:00",
+      "author": "Tomas Bjerre",
+      "email": "tomas.bjerre85@gmail.com",
+      "message": "chore: disabling dependabot, I don't want latest dependencies and I have ./gradlew sUD.\n"
+    },
+    {
+      "sha": "984fb885499a78e3ae1209a7bfa1c973ca58fe58",
+      "date": "2026-09-19T21:33:08+02:00",
+      "author": "Tomas Bjerre",
+      "email": "tomas.bjerre85@gmail.com",
+      "message": "Merge pull request #204 from wiremock/feature/198-non-jupiter-test-engines\n\nfeat: support test engines other than JUnit Jupiter"
+    },
+    {
+      "sha": "e84e40bc8bdb63aa571e925d7f86cd6924f9603f",
+      "date": "2026-09-19T21:30:17+02:00",
+      "author": "Tomas Bjerre",
+      "email": "tomas.bjerre85@gmail.com",
+      "message": "style: remove explanatory comment in cucumber Steps\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>\n"
+    },
+    {
+      "sha": "eb7096ccef9a2f78eeec24d7c52268614bbfebb9",
+      "date": "2026-09-19T21:26:54+02:00",
+      "author": "Tomas Bjerre",
+      "email": "tomas.bjerre85@gmail.com",
+      "message": "feat: support test engines other than JUnit Jupiter (refs #198)\n\nMoves per-test WireMock behavior - resetting servers, configuring the\ndefault WireMock client, and injecting @InjectWireMock fields - from\nWireMockSpringJunitExtension (a JUnit Jupiter-only extension) into\nWireMockTestExecutionListener, a Spring TestExecutionListener already\nauto-registered via spring.factories.\n\nTestExecutionListener is invoked by Spring's TestContextManager\nregardless of which test engine drives it, so this also makes\nresetWireMockServer and the default WireMock client work under\nCucumber (via cucumber-spring), TestNG and JUnit 4, not just JUnit\nJupiter. Annotation discovery reuses\nWireMockContextCustomizerFactory's existing class-based scanning\n(which already walks enclosing/superclasses for @Nested support), so\n@Nested JUnit Jupiter tests are unaffected.\n\n@InjectWireMock on a constructor/method *parameter* remains JUnit\nJupiter-only (no Spring TestContext equivalent), so\nWireMockSpringJunitExtension now only implements ParameterResolver.\n\nField injection of @InjectWireMock does not reach Cucumber\nglue/step-definition classes, since those are managed as regular\nSpring beans by cucumber-spring rather than as TestContextManager\ntest instances - they still need @Autowired/@Qualifier with\nregisterSpringBean=true, as before. Updated the usecases/cucumber\nexample to drop its manual resetAll() call and use the static\nWireMock DSL client, proving both now work automatically.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>\n"
+    },
+    {
+      "sha": "d1623fcfd7e3b53892b7b0106655d778f1b46868",
+      "date": "2026-09-19T21:12:27+02:00",
+      "author": "Tomas Bjerre",
+      "email": "tomas.bjerre85@gmail.com",
+      "message": "Merge pull request #203 from wiremock/feature/72-tls-configuration\n\nfeat: support TLS keystore/truststore configuration"
+    },
+    {
+      "sha": "f97c0ab7ce8fc8d17855fdc3fd998f81e0c2c90c",
+      "date": "2026-09-19T21:10:01+02:00",
+      "author": "Tomas Bjerre",
+      "email": "tomas.bjerre85@gmail.com",
+      "message": "style: remove explanatory comment in HttpsTlsConfigurationTest\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>\n"
+    },
+    {
+      "sha": "bdd65b02db67b81393ba1a0234f9fe5234a5f0cc",
+      "date": "2026-09-19T21:06:24+02:00",
+      "author": "Tomas Bjerre",
+      "email": "tomas.bjerre85@gmail.com",
+      "message": "feat: support TLS keystore/truststore configuration (fixes #72)\n\nAdds keystorePath, keystorePassword, keystoreType, keyManagerPassword,\ntrustStorePath, trustStorePassword, trustStoreType and needClientAuth\nattributes to @ConfigureWireMock, forwarded to WireMockConfiguration\nwhen the corresponding httpsPort is enabled.\n\nkeystorePath resolves from the filesystem or, failing that, the\nclasspath (WireMock's own behavior). trustStorePath is resolved by\nJetty directly and only supports filesystem paths.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>\n"
+    },
+    {
+      "sha": "3685c03870acd9e3f196ccf39453d47f36858328",
+      "date": "2026-09-08T12:14:01+02:00",
+      "author": "Magnus Ihse Bursie",
+      "email": "magnus.ihse.bursie@fortnox.se",
+      "message": "fix: Fix WireMockServerCreator logging (fixes #201)\n"
+    },
+    {
+      "sha": "4ebf8792ef0e1dbdbddf4f3d65062f1a0ceeb9a8",
+      "date": "2026-07-13T15:00:04-03:00",
+      "author": "Fausto Moya",
+      "email": "37676075+moyis@users.noreply.github.com",
+      "message": "fix: stop WireMock servers when context closes during AOT processing (#200)\n\nDuring Spring test AOT processing (SpringBootTestAotProcessor), the test\napplication context is loaded and closed outside the JUnit lifecycle.\nThe ContextClosedEvent is never delivered in that case (the event\nmulticaster is not initialized by refreshForAotProcessing), so the\nWireMock servers were never stopped and their non-daemon Jetty threads\nkept the AOT processing JVM alive forever, hanging processTestAot.\n\nSingletons are still destroyed when that context is closed, so each\nstarted server is now also registered as a disposable bean. The existing\nContextClosedEvent listener is kept, and both paths are guarded against\ndouble-stop.\n\nFixes #199\n\nCo-authored-by: moyis <fausto@moyis.dev>"
+    },
+    {
+      "sha": "d61d6d739025d296c391506a15c8015007ca52ec",
+      "date": "2026-07-13T19:57:23+02:00",
+      "author": "Tomas Bjerre",
+      "email": "tomas.bjerre85@gmail.com",
+      "message": "chore: java 25 in ci"
+    },
+    {
+      "sha": "c74e4ae8910269f8504f66e948412c2e25e1fd0e",
+      "date": "2026-03-12T06:48:15Z",
+      "author": "Andris Horváth",
+      "email": "59876688+horvathandris@users.noreply.github.com",
+      "message": "fix: disable HTTP for HTTPS only config (#196)\n\n* chore: disable HTTP for HTTPS only config\n\n* chore: fix continuation indent"
+    },
+    {
+      "sha": "5f24c06dcf1d8e0b8c6454913cf6aa3bd2d2755c",
+      "date": "2026-03-01T08:34:24+01:00",
+      "author": "Tomas Bjerre",
+      "email": "tomas.bjerre85@gmail.com",
+      "message": "chore: doc\n"
+    },
+    {
+      "sha": "9b48d6e984e87de8f96950d18bfd3ab41b73c2bd",
+      "date": "2026-03-01T08:32:27+01:00",
+      "author": "Tomas Bjerre",
+      "email": "tomas.bjerre85@gmail.com",
+      "message": "chore: doc\n"
+    },
+    {
+      "sha": "144505628fe1d06ab1299476250e151ea547d2ef",
+      "date": "2026-03-01T08:31:12+01:00",
+      "author": "Tomas Bjerre",
+      "email": "tomas.bjerre85@gmail.com",
+      "message": "chore: doc\n"
+    },
+    {
+      "sha": "5ec9a2e439bbc9c56f7cb96c77a51782f49d8606",
+      "date": "2026-03-01T08:25:33+01:00",
+      "author": "Tomas Bjerre",
+      "email": "tomas.bjerre85@gmail.com",
+      "message": "chore: doc\n"
+    }
+  ],
+  "commit_sha": "d3eef6ac6bf219d63e45a3546b0ea7c6bd93c4b9",
+  "extracted_at": "2026-10-05T18:00:27.876201+00:00"
+}

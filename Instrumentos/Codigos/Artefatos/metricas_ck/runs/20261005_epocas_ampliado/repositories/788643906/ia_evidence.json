@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "96302c1dd26a1d851143973268adeca91cea7104",
+      "date": "2026-07-24T16:27:20+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: remove unused google-java-format version property\n\n- Remove `google-java-format.version` property from pom.xml\n- Remove version reference from Spotless googleJavaFormat config\n"
+    },
+    {
+      "sha": "a10793c63ec00d7f1f837d3e2f3b143a0ea86d3c",
+      "date": "2026-07-24T15:55:59+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: update spotless plugin configuration\n\n- Bump spotless-maven-plugin to 3.8.0\n- Move spotless:check execution from verify to validate phase\n- Update README to reflect the phase change\n"
+    },
+    {
+      "sha": "0b5135302dfab61a7daa91ffa1cfbc0fb7c6f1a2",
+      "date": "2026-07-20T08:24:46+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "doc: Add new Medium article\n"
+    },
+    {
+      "sha": "7cee92029ba06c596d187664cc9eb84483062212",
+      "date": "2026-07-14T18:00:53+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "feat: add company-services keycloak realm configuration\n\n- Define realm with simple-service OIDC client and secret\n- Configure APP_USER client role assigned to USERS group\n- Add user-test with password credentials assigned to USERS group\n"
+    },
+    {
+      "sha": "aa27f29746a67ea5372686ad1fe2247dc8fce266",
+      "date": "2026-07-14T17:20:58+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "docs: add code formatting section to README\n"
+    },
+    {
+      "sha": "8552dc51143883930df02bc7865ce0b75258d531",
+      "date": "2026-07-14T17:10:55+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "feat: auto-import keycloak realm on startup\n\n- Replace init-keycloak.sh with realm JSON auto-import via --import-realm flag\n- Mount company-services-realm.json into both Keycloak containers\n- Extract SIMPLE_SERVICE_CLIENT_SECRET from realm JSON at end of init\n- Remove init-keycloak.sh script and update README accordingly\n"
+    },
+    {
+      "sha": "899a6815cfe199f18fe7add55864d93e515164eb",
+      "date": "2026-07-14T15:45:27+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: add Buy Me a Coffee funding option\n\n- Add custom funding link to FUNDING.yml for Buy Me a Coffee\n"
+    },
+    {
+      "sha": "381ab04148aefa493b806c472a6976eadf11d2c1",
+      "date": "2026-07-14T13:45:31+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: add spotless plugin and editorconfig for code formatting\n\n- Add .editorconfig for consistent IDE settings\n- Configure spotless-maven-plugin with Google Java Format\n- Reformat all Java sources to comply with new style rules\n"
+    },
+    {
+      "sha": "72cbe179d39e099a706564f42eee10a5623db604",
+      "date": "2026-07-14T13:36:44+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: update dependencies and improve shell scripts\n\n- Update Maven distribution URL to 3.9.16\n- Upgrade Spring Boot to 4.1.0, Postgres to 18.4, Keycloak to 26.7.0, Nginx to 1.31.2\n- Add `set -e` to build-docker-images.sh and init-keycloak.sh for early error detection\n- Refactor init-keycloak.sh with better error handling, variable usage, and cleaner output\n- Fix null safety in JwtAuthenticationTokenConverter for principal name extraction\n- Improve shell scripting hygiene in my-functions.sh with proper quoting and variable scoping\n"
+    },
+    {
+      "sha": "f8353577f65fb2d7c7572ba52b2983f1d52a9e64",
+      "date": "2026-07-14T13:34:34+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "test: enable and add controller tests\n\n- Enable SimpleServiceApplicationTests by removing @Disabled annotation\n- Add SimpleServiceControllerTests with WebMvcTest for public and secured endpoints\n- Add running tests section to README\n"
+    },
+    {
+      "sha": "2d3d09af12fe1f6bab38bab8583fa79f7122a7c6",
+      "date": "2026-07-14T13:28:10+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "docs: rename project diagram to project overview\n\n- Rename project-diagram files to project-overview in documentation\n- Update README references to use new naming and image paths\n"
+    },
+    {
+      "sha": "0f35c0fedaab1a9c9d66a781ac1d1ab3a898083f",
+      "date": "2026-07-14T12:17:17+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "docs: Add license and update README\n\n- Add MIT License file\n- Replace project diagram with PNG version\n- Add license and support badges to README\n- Improve README wording and formatting\n- Add documentation optimization and support sections\n"
+    },
+    {
+      "sha": "fc58557accefe95d5f7873fc358ca6ef13fd8913",
+      "date": "2025-12-17T18:28:17-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Upgrade to Java 25 and Spring Boot 4.0.0\n"
+    },
+    {
+      "sha": "30907189507d46b4a19b9705d59a576a89cad58b",
+      "date": "2025-12-17T18:21:18-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Project upgrade\n\n- Upgrade to Spring Boot 3.5.8\n- Upgrade wrapperVersion to 3.3.4 and Apache Maven to 3.9.11\n- Upgrade to PostgreSQL Docker image 18.0\n- Upgrade to Keycloak Docker image 26.4.7\n- Upgrade to Nginx Docker image 1.29.3\n- Add restart policy to services in init-environment.sh\n- Update README\n"
+    },
+    {
+      "sha": "d86bdea80b49d4ffa5d0cfdfdbb001619fdf673e",
+      "date": "2025-04-25T14:37:33+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- Upgrade to Spring Boot 3.4.5\n- Remove Jib Maven plugin\n- Upgrade to Nginx Docker image 1.27.5\n"
+    },
+    {
+      "sha": "c4f18d1a79b5d5e3754ad6ab068fd2fbe2eb0b31",
+      "date": "2025-04-24T23:43:38+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Add .gitattributes file and update README\n"
+    },
+    {
+      "sha": "cc8f795c9ebcfba7c12195cc25f7d76e4fada758",
+      "date": "2025-03-06T23:06:48+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to Spring Boot 3.4.3, Keycloak 26.0.8 and Ngnix 1.27.4; Update README\n"
+    },
+    {
+      "sha": "6ed5885e6de75ccef0bd06cb1ba1a8d7c1cbfd8a",
+      "date": "2024-12-20T19:16:52-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to Spring Boot 3.4.1\n"
+    },
+    {
+      "sha": "6ae436bbb6dfdf79047fc56393dca46254c616cf",
+      "date": "2024-12-20T19:12:33-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to Keycloak 26.0.7\n"
+    },
+    {
+      "sha": "a3cc1e8796384dec3b640bf2f2cab68022fe6d1d",
+      "date": "2024-12-20T19:07:52-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Rename WebSecurityConfig to SecurityConfig; Remove public keyword from Beans\n"
+    },
+    {
+      "sha": "730796c7da7585af1ccb717a38a75db61cf681b7",
+      "date": "2024-12-20T19:03:51-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Rename docker-build.sh to build-docker-images.sh; Update README\n"
+    },
+    {
+      "sha": "6b019839daba4ff297ab6a312678aa9b29f4a2fa",
+      "date": "2024-12-04T08:50:25-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Refactor pom.xml files\n"
+    },
+    {
+      "sha": "5bbbeaed3f6d3c702b69d1b0630a189f515240b6",
+      "date": "2024-12-04T08:43:27-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Add Jib Maven Plugin\n"
+    },
+    {
+      "sha": "cf9f322bcc25bdb7dac3e5fbdb19b501b864e40c",
+      "date": "2024-12-04T08:42:54-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Update README\n"
+    },
+    {
+      "sha": "183beb4716858d28fe253a7fc33d9158a351eb7a",
+      "date": "2024-12-04T08:42:02-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade docker images\n\n- upgrade to postgres 17.2;\n- upgrade to keycloak 26.0.6;\n- upgrade to nginx 1.27.3.\n"
+    },
+    {
+      "sha": "89693797a35a50a1287cd6a585530b596fea62f2",
+      "date": "2024-12-04T08:39:11-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Remove unnecessary annotation in WebSecurityConfig\n"
+    },
+    {
+      "sha": "3d70712454886ca6c33ab733b4d1c6c5b81661ae",
+      "date": "2024-11-23T17:15:23+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Replace Jib with Paketo Buildpacks\n"
+    },
+    {
+      "sha": "7c4c39e3a24267b65aaffdfd648d41a84019949b",
+      "date": "2024-11-23T16:42:56+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- upgrade to Java 21;\n- upgrade to spring-boot 3.4.0;\n- upgrade wrapperVersion to 3.3.2 and apache-maven to 3.9.9;\n- upgrade to jib-maven-plugin 3.4.4;\n- upgrade to Postgres docker image 17.0;\n- upgrade to Keycloak docker image 26.0.5;\n- upgrade to Nginx docker image 1.27.2;\n- upgrade to jib-maven-plugin 3.4.4;\n- update README.\n"
+    },
+    {
+      "sha": "b89a75151d0f7444faf71dfcff0999129fca4dfd",
+      "date": "2024-05-02T06:45:00+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Small fix in simple-service pom.xml\n"
+    },
+    {
+      "sha": "55dbc9d5f68222a59a1af43b109515de83fd6f97",
+      "date": "2024-05-02T06:38:13+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Create FUNDING.yml\n"
+    }
+  ],
+  "commit_sha": "96302c1dd26a1d851143973268adeca91cea7104",
+  "extracted_at": "2026-10-05T18:42:58.908520+00:00"
+}

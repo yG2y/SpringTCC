@@ -1,0 +1,40 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "2.1.18.RELEASE;3.5.4",
+  "spring_boot_major": "multiple",
+  "java_versions_declared": "1.8;17",
+  "build_evidence": [
+    {
+      "file": "junit4/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "junit4/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "junit4/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "junit4/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "junit5/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "junit5/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "junit5/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "junit5/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

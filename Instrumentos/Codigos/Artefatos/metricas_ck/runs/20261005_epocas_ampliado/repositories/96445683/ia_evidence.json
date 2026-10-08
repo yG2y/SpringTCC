@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "a72ed5d16e9f8f8c124dc602f470fcb81a592e69",
+      "date": "2024-11-06T02:58:16+01:00",
+      "author": "Enrico Giurin",
+      "email": "egch@users.noreply.github.com",
+      "message": "issue_82 - disabling security when local profile is active (#83)\n\n"
+    },
+    {
+      "sha": "1f83ede9bd5a535bb547b3b072b34c6d9d9d1238",
+      "date": "2024-11-06T02:34:19+01:00",
+      "author": "Enrico Giurin",
+      "email": "enricogiurin@gmail.com",
+      "message": "issue_80 - defined local profile but ignored\n"
+    },
+    {
+      "sha": "1acf95b5f5b8c43852c652bf10f3bcf632dd274e",
+      "date": "2024-11-06T02:17:35+01:00",
+      "author": "Enrico Giurin",
+      "email": "egch@users.noreply.github.com",
+      "message": "issue_80 - enabling ProcessedOrderKafkaListenerTest (#81)\n\n"
+    },
+    {
+      "sha": "7a52ff52c50e40f6b73054e6971c0bd09cdffbf4",
+      "date": "2024-11-03T21:31:34+01:00",
+      "author": "Enrico Giurin",
+      "email": "egch@users.noreply.github.com",
+      "message": "78 processedorderkafkalistenertest fails when kafka registry is not running (#79)\n\n* issue_78 - first version working\n\n* issue_78 - added github workflows\n\n* issue_78 - added github workflows - disabled test (temporary)\n\n* issue_78 - added github workflows - disabled test (temporary) - update README.md\n\n* issue_78 - added github workflows - disabled test (temporary) - remove maven.yml extra"
+    },
+    {
+      "sha": "4d4e16903517ed847cb4b1d38074abbd72473dee",
+      "date": "2024-10-21T20:11:40+05:30",
+      "author": "SARTHAK GUPTA",
+      "email": "sarthakgupta115@gmail.com",
+      "message": "added few more meal types (#74)\n\n"
+    },
+    {
+      "sha": "2e68631543e3ea7dcaeb5047e1f1042bba4f6441",
+      "date": "2024-06-20T02:24:39+02:00",
+      "author": "Enrico Giurin",
+      "email": "enricogiurin@gmail.com",
+      "message": "build - work in progress test container registry\n"
+    },
+    {
+      "sha": "990e4c2de592f7edec62e82e54d15a58ce8807ef",
+      "date": "2024-04-06T02:30:34+02:00",
+      "author": "Enrico Giurin",
+      "email": "egch@users.noreply.github.com",
+      "message": "Update README.md - yml vs json"
+    },
+    {
+      "sha": "7099abd8d1ba7ca395ca0685d78d4e844977c9d8",
+      "date": "2024-04-06T02:27:26+02:00",
+      "author": "Enrico Giurin",
+      "email": "egch@users.noreply.github.com",
+      "message": "31 setting up security for the rest api (#72)\n\n* [app] - oauth2 gmail authentication for rest api\n\n* [app] - oauth2 gmail authentication for rest api - minor fixes readme"
+    },
+    {
+      "sha": "6908cfc7677b18c1c9ed6a5baeb4765e108e4433",
+      "date": "2024-04-05T02:22:26+02:00",
+      "author": "Enrico Giurin",
+      "email": "egch@users.noreply.github.com",
+      "message": "Update README.md - minor updates"
+    },
+    {
+      "sha": "acc31511412d73134f63eb30c74dabf71c82542e",
+      "date": "2024-04-05T02:16:42+02:00",
+      "author": "Enrico Giurin",
+      "email": "egch@users.noreply.github.com",
+      "message": "Update README.md - prerequisites"
+    },
+    {
+      "sha": "4d895bbc62c972b106aaee63448a13b31bdc9059",
+      "date": "2024-04-05T01:56:08+02:00",
+      "author": "Enrico Giurin",
+      "email": "egch@users.noreply.github.com",
+      "message": "68 enhance unit tests with docker (#69)\n\n* testcontainer for Kafka listener\n\n* [cook] - test container for KafkaListener"
+    },
+    {
+      "sha": "1fc27ae2c973dc2c49e2dc5e9f1603d854d57487",
+      "date": "2024-04-03T02:30:26+02:00",
+      "author": "Enrico Giurin",
+      "email": "egch@users.noreply.github.com",
+      "message": "54 cook basic use case (#65)\n\n* first draft complete flow from the main app to cook and back to the main app.\n\n* completed flow from the main app to cook and back to the main app."
+    },
+    {
+      "sha": "56d9daa909068387427de83b0fd54c6fd53a3468",
+      "date": "2024-03-31T03:51:31+02:00",
+      "author": "Enrico Giurin",
+      "email": "egch@users.noreply.github.com",
+      "message": "issue-62 - applying google style, rest for find all the orders (#63)\n\n"
+    },
+    {
+      "sha": "be16d6bba061d407b3f178c0fb210cd255ebea5a",
+      "date": "2024-03-29T01:32:14+01:00",
+      "author": "Enrico Giurin",
+      "email": "egch@users.noreply.github.com",
+      "message": "Bump version (#61)\n\n* work in progress\n\n* updated versions, using records\n\n* update jdk version in circleci"
+    },
+    {
+      "sha": "c031ed54b966e2354f64d04c3b4f7514a683bd88",
+      "date": "2023-09-30T14:49:34+02:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.apache.avro:avro from 1.11.1 to 1.11.3 (#59)\n\nBumps org.apache.avro:avro from 1.11.1 to 1.11.3.\n\n---\nupdated-dependencies:\n- dependency-name: org.apache.avro:avro\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "e715fe1645a971f62b5f71285386697d00af4ba0",
+      "date": "2023-08-06T23:28:45+02:00",
+      "author": "Enrico Giurin",
+      "email": "egch@users.noreply.github.com",
+      "message": "issue-57 added swagger open api\n\n"
+    },
+    {
+      "sha": "1446d203999a1ad2e9d54f98b8dcf388d3e69509",
+      "date": "2023-07-18T11:53:13+02:00",
+      "author": "Enrico Giurin",
+      "email": "egch@users.noreply.github.com",
+      "message": "55 - adoption of circuit breaker pattern\n\n* 55 - cb work in progress\n\n* 55 - working version"
+    },
+    {
+      "sha": "f03bd8f01bd8a496da467bb3c9039660d74f8a26",
+      "date": "2023-05-28T14:04:35+02:00",
+      "author": "Enrico Giurin",
+      "email": "egch@users.noreply.github.com",
+      "message": "30 - bump spring boot version to 3.1.0 \n\n* 30 - updated spring boot version and removed all the unused code\n\n* 30 - using java version 19\n\n* 30 - using java version 17\n\n* 30 - setting right open jdk for circleci\n\n* 30 - setting right open jdk for circleci"
+    },
+    {
+      "sha": "440971d75146204c05611322382ecab331b448e1",
+      "date": "2023-05-21T16:10:56+02:00",
+      "author": "Enrico Giurin",
+      "email": "egch@users.noreply.github.com",
+      "message": "51 to update status order after callback is completed (#52)\n\n* 51 - draft update status in moongo after callback is completed\n\n* 51 - minor fixes pom(s) & avro"
+    },
+    {
+      "sha": "931e6b4450cc7df890bbaa443497e5e28c2f9d3b",
+      "date": "2023-05-09T13:03:23+02:00",
+      "author": "Enrico Giurin",
+      "email": "egch@users.noreply.github.com",
+      "message": "49 - fixing test issue  & minor improvements\n\n* 49 - removed spring data dependency from cook app\n\n* 49 - fixed issue in the integration tests due to timeout in topic creation\n\n* 49 - minor fixes"
+    },
+    {
+      "sha": "67410b2f50fa9146ffe9f26a4fdc58da2f8fc7f1",
+      "date": "2023-02-23T23:25:17+01:00",
+      "author": "Enrico Giurin",
+      "email": "enricogiurin@gmail.com",
+      "message": "minor fixes\n"
+    },
+    {
+      "sha": "69fb61093a58a385fe4ad683b9717108115d58a5",
+      "date": "2023-01-17T09:26:33+01:00",
+      "author": "Enrico Giurin",
+      "email": "egch@users.noreply.github.com",
+      "message": "43 to fix issue with springboottest (#44)\n\n* issue_43 - using proper names for modules and packages\n\n* issue_43 - using proper names for modules and packages\n\n* issue_43 - fixing integration tests & loggers"
+    },
+    {
+      "sha": "08051d685868d72d48f4b30733e184b83d30de86",
+      "date": "2023-01-07T10:11:50+05:30",
+      "author": "SARTHAK GUPTA",
+      "email": "sarthakgupta115@gmail.com",
+      "message": "40 create cook ms submodule (#42)\n\n* cook submodule added\n\n* COOK MS added"
+    },
+    {
+      "sha": "cbc9ecfffbee3fdcef445983e3b67e9f4d31d1b4",
+      "date": "2023-01-02T01:57:15+01:00",
+      "author": "Enrico Giurin",
+      "email": "enricogiurin@gmail.com",
+      "message": "fixing test container issue\n"
+    },
+    {
+      "sha": "4e83d31d97ecb230477661d4ad207d3f7101b61f",
+      "date": "2022-12-31T11:26:07+05:30",
+      "author": "SARTHAK GUPTA",
+      "email": "sarthakgupta115@gmail.com",
+      "message": "added generic kafka producer (#41)\n\n"
+    },
+    {
+      "sha": "17a3f932f5a96f1b4707d93015650c50f88fd654",
+      "date": "2022-12-18T07:42:58+01:00",
+      "author": "Enrico Giurin",
+      "email": "egch@users.noreply.github.com",
+      "message": "36 submit order functionality\n\n* issue_36 - first draft confirmation order\n\n* issue_36 - unit tests\n\n* issue_36 - unit tests - disabling when running on circleci\n\n* issue_36 - rest advice"
+    },
+    {
+      "sha": "0f4524149405d68b647e43ac57354bd2f68b8335",
+      "date": "2022-11-29T02:45:28+01:00",
+      "author": "Enrico Giurin",
+      "email": "egch@users.noreply.github.com",
+      "message": "issue_29 - programmatically topics creation & minor improvements (#34)\n\n"
+    },
+    {
+      "sha": "db06f045018820a00e0af44478bf16ecca89a3e6",
+      "date": "2022-11-26T13:03:37+01:00",
+      "author": "Enrico Giurin",
+      "email": "egch@users.noreply.github.com",
+      "message": "improving docs (#33)\n\n* improving docs\n\n* improving docs - postman collection api"
+    },
+    {
+      "sha": "30033364ba6ad14380445d9118d1e6e32c512565",
+      "date": "2022-11-26T05:00:05+05:30",
+      "author": "SARTHAK GUPTA",
+      "email": "sarthakgupta115@gmail.com",
+      "message": "26 mongo integration (#28)\n\n* work in progress\n\n* mongo db configuration\n\n* issue_24 - draft integration with mongo db\n\n* issue_24 - package optimization\n\n* Sink Connectors Added\n\n* Added order service impl\n\n* removed unused imports\n\n* refactored\n\nCo-authored-by: egch <enricogiurin@gmail.com>"
+    },
+    {
+      "sha": "c42bd9268084bd82993193c3aff9e4f5bc8bb435",
+      "date": "2022-11-22T20:03:53+05:30",
+      "author": "SARTHAK GUPTA",
+      "email": "sarthakgupta115@gmail.com",
+      "message": "26 mongo integration (#27)\n\n* work in progress\n\n* mongo db configuration\n\n* issue_24 - draft integration with mongo db\n\n* issue_24 - package optimization\n\n* Sink Connectors Added\n\nCo-authored-by: egch <enricogiurin@gmail.com>"
+    }
+  ],
+  "commit_sha": "a72ed5d16e9f8f8c124dc602f470fcb81a592e69",
+  "extracted_at": "2026-10-05T18:34:04.792330+00:00"
+}

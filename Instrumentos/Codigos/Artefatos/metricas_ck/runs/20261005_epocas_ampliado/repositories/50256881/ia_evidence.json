@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "3a354391f4c52a5015cb5ee091bea325dcc1dc24",
+      "date": "2024-01-08T10:32:45-04:00",
+      "author": "Ramon Marquez",
+      "email": "ramon.marquez@graylog.com",
+      "message": "chore: new year new copyright statements\n"
+    },
+    {
+      "sha": "24f7e2c150b05eb5281e5cb45128f35c73a21ce7",
+      "date": "2023-07-18T23:20:32-06:00",
+      "author": "Rob Dickinson",
+      "email": "robfromboulder@gmail.com",
+      "message": "Update copyright\n"
+    },
+    {
+      "sha": "26f52e4189fd2ab4a0b7b919a143fa5d9b6c9397",
+      "date": "2023-04-06T22:28:31-06:00",
+      "author": "robfromboulder",
+      "email": "RobDickinson@users.noreply.github.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "49e09c6a05e46272ab9ad166f5ab1405e6344a16",
+      "date": "2023-03-02T22:19:15+01:00",
+      "author": "monrax",
+      "email": "ramn.marquez@gmail.com",
+      "message": "chore: update LICENSE copyright\n"
+    },
+    {
+      "sha": "533eb4e0b7dc7140f8d6b6f3983372c534aa690f",
+      "date": "2023-03-02T17:35:01+01:00",
+      "author": "monrax",
+      "email": "ramn.marquez@gmail.com",
+      "message": "chore: update copyrights\n"
+    },
+    {
+      "sha": "2172a1afc4bb6101452116531cb780acfb528e2f",
+      "date": "2022-09-21T23:41:47-06:00",
+      "author": "Rob Dickinson",
+      "email": "robfromboulder@gmail.com",
+      "message": "Update README\n"
+    },
+    {
+      "sha": "e39d0e09881ff94a365b5e9527ece075d66b2687",
+      "date": "2022-09-21T17:45:09-06:00",
+      "author": "Rob Dickinson",
+      "email": "robfromboulder@gmail.com",
+      "message": "Update version to 2.2.1\n"
+    },
+    {
+      "sha": "b26a97e404cbbe642454dd4585d940b2f5454734",
+      "date": "2022-09-21T17:26:24-06:00",
+      "author": "Rob Dickinson",
+      "email": "robfromboulder@gmail.com",
+      "message": "Update CONTRIBUTING\n"
+    },
+    {
+      "sha": "1fb8cdb92262371dd35ad360566d6cf84fbab035",
+      "date": "2022-09-21T17:26:04-06:00",
+      "author": "Rob Dickinson",
+      "email": "robfromboulder@gmail.com",
+      "message": "Update version to 2.2.0\n"
+    },
+    {
+      "sha": "c88ac87a244409fd5e1fe0b334ffe38868bbf22f",
+      "date": "2022-09-21T17:13:39-06:00",
+      "author": "Rob Dickinson",
+      "email": "robfromboulder@gmail.com",
+      "message": "Update test dependencies\n"
+    },
+    {
+      "sha": "63794c2fd6e1afbd49a854ce5cf4d3d7337e5345",
+      "date": "2022-09-06T21:46:17-04:00",
+      "author": "monrax",
+      "email": "ramn.marquez@gmail.com",
+      "message": "chore(ThroughputTest): add ignore annotation to skip automated mvn tests\n"
+    },
+    {
+      "sha": "56b12631eed00babbb288af6ff83b4dc786738ee",
+      "date": "2022-09-06T20:31:51-04:00",
+      "author": "monrax",
+      "email": "ramn.marquez@gmail.com",
+      "message": "fix(BaseLoggerTest): join thread instead of using barrier await for messageQueuePutTakeTest\n"
+    },
+    {
+      "sha": "d2f1d49e45fd8bca4a6ee87bf445e738673ad98c",
+      "date": "2022-09-06T19:02:47-04:00",
+      "author": "monrax",
+      "email": "ramn.marquez@gmail.com",
+      "message": "fix(HttpLoggerForJersey): pass map instead of null for custom fields\n"
+    },
+    {
+      "sha": "73c4dafe63c8da6effde38db833c8b8e31367949",
+      "date": "2022-09-06T18:24:23-04:00",
+      "author": "monrax",
+      "email": "ramn.marquez@gmail.com",
+      "message": "fix(SampleRulesTest): unravel queue to count number of messages, including batches\n"
+    },
+    {
+      "sha": "ede78984cb166927252a01d69ef5b5a6dc3c4e79",
+      "date": "2022-09-06T18:22:45-04:00",
+      "author": "monrax",
+      "email": "ramn.marquez@gmail.com",
+      "message": "fix(HttpMessage): pass map instead of null for constructors without custom fields\n"
+    },
+    {
+      "sha": "ecaaae03ce63a530da091b38f4f52f2dfd206af0",
+      "date": "2022-09-06T17:09:26-04:00",
+      "author": "Ramón Márquez",
+      "email": "ramn.marquez@gmail.com",
+      "message": "Merge pull request #68 from resurfaceio/background-sub\n\nBackground sub"
+    },
+    {
+      "sha": "457e20da454fd55535cd5237a53eb021f2c62f1a",
+      "date": "2022-09-06T17:09:04-04:00",
+      "author": "Ramón Márquez",
+      "email": "ramn.marquez@gmail.com",
+      "message": "Merge pull request #69 from resurfaceio/3.0.x\n\nfeat(HttpLogger): add support for v3 custom fields"
+    },
+    {
+      "sha": "2348cd7ecdf2e1efc54f1ba4c5ec60acb2699a5e",
+      "date": "2022-09-02T12:58:00-04:00",
+      "author": "Ramon Marquez",
+      "email": "ramn.marquez@gmail.com",
+      "message": "fix(Tests): initialize and stop dispatcher thread when required\n"
+    },
+    {
+      "sha": "57b3c194015b2ae28612731943fa17c0f95912aa",
+      "date": "2022-08-09T07:10:04-04:00",
+      "author": "Ramon Marquez",
+      "email": "ramn.marquez@gmail.com",
+      "message": "style(ThroughputTest): move helper classes inside top-level class\n"
+    },
+    {
+      "sha": "b5d902e96c31dc829158c4a00932cc05c1f8a85b",
+      "date": "2022-08-08T20:41:26-04:00",
+      "author": "Ramon Marquez",
+      "email": "ramn.marquez@gmail.com",
+      "message": "chore(pom.xml): rollback version change\n"
+    },
+    {
+      "sha": "4df635d6018945b5679e8eb9f21287e3a46fcffb",
+      "date": "2022-08-08T20:27:39-04:00",
+      "author": "Ramón Márquez",
+      "email": "ramn.marquez@gmail.com",
+      "message": "Merge pull request #67 from resurfaceio/dependabot/maven/com.google.code.gson-gson-2.8.9\n\nBump gson from 2.8.6 to 2.8.9"
+    },
+    {
+      "sha": "d9eff374eb68d8d10c4e77ef4e8e5bd64223015e",
+      "date": "2022-06-16T20:21:30-04:00",
+      "author": "Ramon Marquez",
+      "email": "ramn.marquez@gmail.com",
+      "message": "fix: add key prefix for custom fields\n"
+    },
+    {
+      "sha": "2728350ec1f488ef89ed97b74306136c825a39b6",
+      "date": "2022-06-15T10:11:12-04:00",
+      "author": "Ramon Marquez",
+      "email": "ramn.marquez@gmail.com",
+      "message": "fix(HttpMessage): remove query string from request url\n"
+    },
+    {
+      "sha": "d8f640b531bade9622eda7a03a476746d1d45202",
+      "date": "2022-06-03T12:27:10-04:00",
+      "author": "Ramon Marquez",
+      "email": "ramn.marquez@gmail.com",
+      "message": "tests: add blocking queue throughput comparison module\n"
+    },
+    {
+      "sha": "f9b7f4fdd1379092ef61ccbe709063d373b63083",
+      "date": "2022-06-02T15:44:31-04:00",
+      "author": "Ramon Marquez",
+      "email": "ramn.marquez@gmail.com",
+      "message": "test: add batching test\n"
+    },
+    {
+      "sha": "cd7c2588b6a77bb03e0f707ff2553d668c740dab",
+      "date": "2022-06-02T11:08:19-04:00",
+      "author": "Ramon Marquez",
+      "email": "ramn.marquez@gmail.com",
+      "message": "test: update BaseLoggerTest with message queue unit tests\n"
+    },
+    {
+      "sha": "0842fb2592c4584f64c61357c9481df8b4339e86",
+      "date": "2022-06-02T11:07:17-04:00",
+      "author": "Ramon Marquez",
+      "email": "ramn.marquez@gmail.com",
+      "message": "fix: move init dispatcher out of constructor. Add poison pill method to terminate worker thread\n"
+    },
+    {
+      "sha": "17253254c3d645ee177a7f188f2c70542491a87f",
+      "date": "2022-05-27T15:31:59-04:00",
+      "author": "Ramon Marquez",
+      "email": "ramn.marquez@gmail.com",
+      "message": "chore: change default batch size to 100 kiB (51200 chars)\n"
+    },
+    {
+      "sha": "d86e9cea4eb403b4db3eb8c45daccbc24834d204",
+      "date": "2022-05-27T14:44:01-04:00",
+      "author": "Ramon Marquez",
+      "email": "ramn.marquez@gmail.com",
+      "message": "feat: add empty queue flush condition\n"
+    },
+    {
+      "sha": "e9f88e4b2e122bc499d4c879b16fe386fd8c3040",
+      "date": "2022-05-27T14:39:59-04:00",
+      "author": "Ramon Marquez",
+      "email": "ramn.marquez@gmail.com",
+      "message": "fix: dispatch batch when threshold is reached\n"
+    }
+  ],
+  "commit_sha": "3a354391f4c52a5015cb5ee091bea325dcc1dc24",
+  "extracted_at": "2026-10-05T18:21:06.011656+00:00"
+}

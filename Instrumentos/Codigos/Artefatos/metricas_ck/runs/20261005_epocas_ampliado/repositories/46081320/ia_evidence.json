@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "9fc9bfb876aab0a134de78ffbbcdfe8cb9da6547",
+      "date": "2026-05-20T20:29:45+02:00",
+      "author": "MarcGiffing",
+      "email": "MarcGiffing@users.noreply.github.com",
+      "message": "Merge pull request #234 from newgro/update-springboot-4\n\nUpdate springboot 4"
+    },
+    {
+      "sha": "59218151f946e6591cb5eb5add3d8c48c404b3e7",
+      "date": "2026-05-05T08:59:20+02:00",
+      "author": "Per Newgro",
+      "email": "per.newgro@gmx.ch",
+      "message": "Example: Set language to html files\n\nImproves accessibility (screen readers)\nIs relevant for SEO\nIs recommended as part of HTML5 compliance\n"
+    },
+    {
+      "sha": "890eb66d972643f6425611a9693f87d735783266",
+      "date": "2026-05-05T08:59:15+02:00",
+      "author": "Per Newgro",
+      "email": "per.newgro@gmx.ch",
+      "message": "Example: Fixed a mount path spelling mistake\n"
+    },
+    {
+      "sha": "d32bf50704ff1fec2796fcc640531908db1f4b79",
+      "date": "2026-05-05T08:59:10+02:00",
+      "author": "Per Newgro",
+      "email": "per.newgro@gmx.ch",
+      "message": "Example: Fixed an exception log on closed connections.\n\nIf the tab was already close message sending failed on null\nconnections.\n"
+    },
+    {
+      "sha": "678f55112899d3ca4481fd94eb608e11be228b25",
+      "date": "2026-05-05T08:58:48+02:00",
+      "author": "Per Newgro",
+      "email": "per.newgro@gmx.ch",
+      "message": "Update to springboot 4.0.6\n"
+    },
+    {
+      "sha": "de8037d6398ce73936e1f134594862b1a6037c1e",
+      "date": "2026-04-30T10:48:37+02:00",
+      "author": "Per Newgro",
+      "email": "per.newgro@gmx.ch",
+      "message": "Code cleanup.\n\nTo simplify library update we need to cleanup the code.\nOtherwise we can not really see deprecations.\n\nRemoved unused imports.\nRemoved unnecessary public modifiers from spring-bean definitions.\nAdded some ignore flags to hide false positive warnings."
+    },
+    {
+      "sha": "74a6f03fb4f807001eb4e9a7f24b3104eb98c7cd",
+      "date": "2025-09-04T20:14:33+02:00",
+      "author": "Marc Giffing",
+      "email": "MarcGiffing@users.noreply.github.com",
+      "message": "prepare version 4.1.1\n"
+    },
+    {
+      "sha": "657f5c6635b18695b6b93e2b11f534790c197d67",
+      "date": "2025-09-04T20:14:11+02:00",
+      "author": "Marc Giffing",
+      "email": "MarcGiffing@users.noreply.github.com",
+      "message": "Null Pointer Exception when starting development mode using 4.1.0 #232\n"
+    },
+    {
+      "sha": "b45c5d4c9f43db75263e0267c9c350cf2acf3a49",
+      "date": "2025-09-04T17:43:23+02:00",
+      "author": "Marc Giffing",
+      "email": "MarcGiffing@users.noreply.github.com",
+      "message": "prepare next release 4.1.0\n"
+    },
+    {
+      "sha": "6927d579910c23b8b8a9fc617b95af530c481327",
+      "date": "2025-09-04T17:34:56+02:00",
+      "author": "Marc Giffing",
+      "email": "MarcGiffing@users.noreply.github.com",
+      "message": "prepare next release 4.1.0\n"
+    },
+    {
+      "sha": "6e65721e833d90e481ef18709214195a1f200f9a",
+      "date": "2025-09-04T17:23:10+02:00",
+      "author": "Marc Giffing",
+      "email": "MarcGiffing@users.noreply.github.com",
+      "message": "prepare next release 4.1.0\n\nupdated README.adoc\n"
+    },
+    {
+      "sha": "97c336847e158d21be4f0dd8a54cb28af8dcc3eb",
+      "date": "2025-09-04T16:50:11+02:00",
+      "author": "MarcGiffing",
+      "email": "MarcGiffing@users.noreply.github.com",
+      "message": "Merge pull request #231 from squins/framework-updates\n\nUpdate frameworks and migrate code"
+    },
+    {
+      "sha": "8a4732c9452370af3c53b1e5ca32fa31a3dc6091",
+      "date": "2025-08-29T23:08:26+02:00",
+      "author": "Kees van Dieren",
+      "email": "kees@squins.com",
+      "message": "Upgrade starter example versions\n\nUpdate wicket-bootstrap to 7.0.11\nUpdate hibernate processor to 7.1.0.Final\n\nVerified with mvn verify and by running the starter application\n"
+    },
+    {
+      "sha": "f04e3d5a047f43e622862aef030e5ec1a2f8feba",
+      "date": "2025-08-29T23:00:39+02:00",
+      "author": "Kees van Dieren",
+      "email": "kees@squins.com",
+      "message": "Update frameworks and migrate code\n\nUpgrade Wicket to latest: 10.6.0\nUpgrade Spring Boot to latest: 3.5.5\nUpgrade Mockito usage to Spring Boot 3.5.x\n\nUpgrade some Maven plugins to latest versions\n"
+    },
+    {
+      "sha": "f27f23b570f8ae5887cc8c45002db0dd1622efc4",
+      "date": "2024-11-13T21:38:52+01:00",
+      "author": "Marc Giffing",
+      "email": "MarcGiffing@users.noreply.github.com",
+      "message": "minor improvements\n"
+    },
+    {
+      "sha": "697e6857a5feb64e8c732a7ec4e111f62b1c8fcc",
+      "date": "2024-11-12T21:57:57+01:00",
+      "author": "Marc Giffing",
+      "email": "MarcGiffing@users.noreply.github.com",
+      "message": "Example project - minor improvements\n"
+    },
+    {
+      "sha": "1297e3559d4347e49f2b2f184a9580cb71cc861e",
+      "date": "2024-11-11T22:14:01+01:00",
+      "author": "Marc Giffing",
+      "email": "MarcGiffing@users.noreply.github.com",
+      "message": "Use Wicket Bootstrap - Fix example project\n"
+    },
+    {
+      "sha": "9bdc4387e02012ee52caee2aa940c80c0a5a5acc",
+      "date": "2024-11-06T20:40:59+01:00",
+      "author": "MarcGiffing",
+      "email": "MarcGiffing@users.noreply.github.com",
+      "message": "Merge pull request #219 from MarcGiffing/dependabot/maven/org.webjars-bootstrap-5.3.3\n\nBump org.webjars:bootstrap from 3.4.1 to 5.3.3"
+    },
+    {
+      "sha": "e673a559c0368b532d715cbce4cd55c61aa18029",
+      "date": "2024-11-06T20:40:48+01:00",
+      "author": "MarcGiffing",
+      "email": "MarcGiffing@users.noreply.github.com",
+      "message": "Merge pull request #218 from MarcGiffing/dependabot/maven/org.asciidoctor-asciidoctor-maven-plugin-3.1.0\n\nBump org.asciidoctor:asciidoctor-maven-plugin from 2.2.2 to 3.1.0"
+    },
+    {
+      "sha": "ef9b2878d67bd0a9801a37af9fbddb83d461bc31",
+      "date": "2024-11-06T20:40:40+01:00",
+      "author": "MarcGiffing",
+      "email": "MarcGiffing@users.noreply.github.com",
+      "message": "Merge pull request #217 from MarcGiffing/dependabot/maven/de.agilecoders.wicket-jquery-selectors-4.0.6\n\nBump de.agilecoders.wicket:jquery-selectors from 4.0.2 to 4.0.6"
+    },
+    {
+      "sha": "f2297e509cb889e7229d246fcd71bfdb2021f08a",
+      "date": "2024-11-06T20:40:25+01:00",
+      "author": "MarcGiffing",
+      "email": "MarcGiffing@users.noreply.github.com",
+      "message": "Merge pull request #216 from MarcGiffing/dependabot/maven/de.agilecoders.wicket.webjars-wicket-webjars-4.0.5\n\nBump de.agilecoders.wicket.webjars:wicket-webjars from 3.0.7 to 4.0.5"
+    },
+    {
+      "sha": "1a53a2ca3178ed0ea8302f711dc315ad5d03064c",
+      "date": "2024-11-06T20:38:57+01:00",
+      "author": "MarcGiffing",
+      "email": "MarcGiffing@users.noreply.github.com",
+      "message": "Merge pull request #215 from MarcGiffing/dependabot/maven/org.springframework.boot-spring-boot-starter-parent-3.3.5\n\nBump org.springframework.boot:spring-boot-starter-parent from 3.2.4 to 3.3.5"
+    },
+    {
+      "sha": "1eb15b05004740d2dc048d212ab018b4aee4c2d7",
+      "date": "2024-11-06T19:36:39Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.webjars:bootstrap from 3.4.1 to 5.3.3\n\nBumps [org.webjars:bootstrap](https://github.com/webjars/bootstrap) from 3.4.1 to 5.3.3.\n- [Commits](https://github.com/webjars/bootstrap/compare/bootstrap-3.4.1...bootstrap-5.3.3)\n\n---\nupdated-dependencies:\n- dependency-name: org.webjars:bootstrap\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "ac4815a36d3340290e9a192ac72ff488e6fa87d0",
+      "date": "2024-11-06T19:36:34Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.asciidoctor:asciidoctor-maven-plugin from 2.2.2 to 3.1.0\n\nBumps [org.asciidoctor:asciidoctor-maven-plugin](https://github.com/asciidoctor/asciidoctor-maven-plugin) from 2.2.2 to 3.1.0.\n- [Release notes](https://github.com/asciidoctor/asciidoctor-maven-plugin/releases)\n- [Changelog](https://github.com/asciidoctor/asciidoctor-maven-plugin/blob/main/CHANGELOG.adoc)\n- [Commits](https://github.com/asciidoctor/asciidoctor-maven-plugin/compare/asciidoctor-maven-plugin-2.2.2...asciidoctor-maven-tools-3.1.0)\n\n---\nupdated-dependencies:\n- dependency-name: org.asciidoctor:asciidoctor-maven-plugin\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "254be49ec88d1159e6efc627aa2a27a0fb1d6103",
+      "date": "2024-11-06T19:36:18Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump de.agilecoders.wicket:jquery-selectors from 4.0.2 to 4.0.6\n\nBumps [de.agilecoders.wicket:jquery-selectors](https://github.com/l0rdn1kk0n/wicket-jquery-selectors) from 4.0.2 to 4.0.6.\n- [Release notes](https://github.com/l0rdn1kk0n/wicket-jquery-selectors/releases)\n- [Commits](https://github.com/l0rdn1kk0n/wicket-jquery-selectors/compare/jquery-selectors-4.0.2...jquery-selectors-4.0.6)\n\n---\nupdated-dependencies:\n- dependency-name: de.agilecoders.wicket:jquery-selectors\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "c5a618a5fd2ad7441f9c41e8ca36ce4c4ce73ceb",
+      "date": "2024-11-06T19:36:14Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump de.agilecoders.wicket.webjars:wicket-webjars from 3.0.7 to 4.0.5\n\nBumps [de.agilecoders.wicket.webjars:wicket-webjars](https://github.com/l0rdn1kk0n/wicket-webjars) from 3.0.7 to 4.0.5.\n- [Release notes](https://github.com/l0rdn1kk0n/wicket-webjars/releases)\n- [Commits](https://github.com/l0rdn1kk0n/wicket-webjars/compare/wicket-webjars-parent-3.0.7...wicket-webjars-parent-4.0.5)\n\n---\nupdated-dependencies:\n- dependency-name: de.agilecoders.wicket.webjars:wicket-webjars\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "08f8a5c97868f59b07163ea1a0558f6dc444283f",
+      "date": "2024-11-06T20:36:03+01:00",
+      "author": "MarcGiffing",
+      "email": "MarcGiffing@users.noreply.github.com",
+      "message": "Merge pull request #213 from MarcGiffing/dependabot/maven/org.apache.shiro-shiro-spring-boot-web-starter-2.0.1\n\nBump org.apache.shiro:shiro-spring-boot-web-starter from 1.8.0 to 2.0.1"
+    },
+    {
+      "sha": "5aeec1fba6c63be8bcdabf3252411f3f34861388",
+      "date": "2024-11-06T19:35:09Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.springframework.boot:spring-boot-starter-parent\n\nBumps [org.springframework.boot:spring-boot-starter-parent](https://github.com/spring-projects/spring-boot) from 3.2.4 to 3.3.5.\n- [Release notes](https://github.com/spring-projects/spring-boot/releases)\n- [Commits](https://github.com/spring-projects/spring-boot/compare/v3.2.4...v3.3.5)\n\n---\nupdated-dependencies:\n- dependency-name: org.springframework.boot:spring-boot-starter-parent\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "453ab9691196b12a667aca8b8cf3a04fa772d015",
+      "date": "2024-11-06T20:32:36+01:00",
+      "author": "MarcGiffing",
+      "email": "MarcGiffing@users.noreply.github.com",
+      "message": "Merge pull request #214 from MarcGiffing/dependabot/maven/org.apache.maven.plugins-maven-gpg-plugin-3.2.7\n\nBump org.apache.maven.plugins:maven-gpg-plugin from 3.0.1 to 3.2.7"
+    },
+    {
+      "sha": "def2749c769d9d17231291048938703f9038bc54",
+      "date": "2024-11-06T19:32:08Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.apache.shiro:shiro-spring-boot-web-starter from 1.8.0 to 2.0.1\n\nBumps org.apache.shiro:shiro-spring-boot-web-starter from 1.8.0 to 2.0.1.\n\n---\nupdated-dependencies:\n- dependency-name: org.apache.shiro:shiro-spring-boot-web-starter\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    }
+  ],
+  "commit_sha": "9fc9bfb876aab0a134de78ffbbcdfe8cb9da6547",
+  "extracted_at": "2026-10-05T18:35:09.647110+00:00"
+}

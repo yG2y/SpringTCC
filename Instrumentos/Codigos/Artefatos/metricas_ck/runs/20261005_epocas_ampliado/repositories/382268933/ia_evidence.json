@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "97991ee89c5ab443a24910245db2e374c974db61",
+      "date": "2021-12-12T17:43:27+09:00",
+      "author": "Hyeon9mak",
+      "email": "jinha3507@gmail.com",
+      "message": "fix: log4j2 버전 업데이트 (#753)\n\n"
+    },
+    {
+      "sha": "c51685ded1246ddf555fd17e9681e3aa31c6a3eb",
+      "date": "2021-12-12T14:51:12+09:00",
+      "author": "Hyeon9mak",
+      "email": "jinha3507@gmail.com",
+      "message": "Merge pull request #752 from woowacourse-teams/hotfix/log4j-issue\n\nHotfix: log4j 보안 이슈 해결 "
+    },
+    {
+      "sha": "29c5bf1f75454ef5477a7975a3ae38fe3462e4b8",
+      "date": "2021-12-10T18:45:23+09:00",
+      "author": "unluckyjung",
+      "email": "ybook2012@gmail.com",
+      "message": "chore: log4j 보안 이슈로 인해 설정 추가\n\n"
+    },
+    {
+      "sha": "f6d0335a6eefb14887e8c7254d993e4c8ebdab75",
+      "date": "2021-11-24T22:56:42+09:00",
+      "author": "Hyeon9mak",
+      "email": "jinha3507@gmail.com",
+      "message": "Merge pull request #749 from woowacourse-teams/infrastructure-backup\n\nfeat: 인프라 구성요소 백업파일 추가"
+    },
+    {
+      "sha": "54d113b245095082506c2623925d3fddabe25675",
+      "date": "2021-11-24T19:52:26+09:00",
+      "author": "Hyeon9mak",
+      "email": "jinha3507@gmail.com",
+      "message": "feat: 인프라 구성요소 백업파일 추가\n\n"
+    },
+    {
+      "sha": "fb451f3aff2096a675fb02a2f9e3cd16040b5d56",
+      "date": "2021-11-23T22:41:13+09:00",
+      "author": "yoonsung.jung",
+      "email": "ybook2012@gmail.com",
+      "message": "docs: release 브랜치 설명 추가 (#745)\n\n"
+    },
+    {
+      "sha": "eac0a0b32f368e0d65a1d7015df87c92081b592f",
+      "date": "2021-11-22T16:51:09+09:00",
+      "author": "An Hyun Cheol",
+      "email": "42052110+iborymagic@users.noreply.github.com",
+      "message": "fix: 다라쓰 다크모드 전환 추가 (#747)\n\n* feat: 줄임말에 대한 자동완성 기능 구현\n\nCo-authored-by: An Hyun Cheol <iborymagic@users.noreply.github.com>\n\n* fix: 다라쓰 다크모드 적용\n- useTheme 코드 일부 수정\n\nCo-authored-by: Min Kyung Kang <mnk918p@gmail.com>\nCo-authored-by: An Hyun Cheol <iborymagic@users.noreply.github.com>"
+    },
+    {
+      "sha": "1b3a474a9acd20d0acdcccd03d44e09f71027c77",
+      "date": "2021-11-15T15:59:35+09:00",
+      "author": "yoonsung.jung",
+      "email": "ybook2012@gmail.com",
+      "message": "fix: 잘못되어있던 테스트 코드 삭제 (#743)\n\n"
+    },
+    {
+      "sha": "3bc9fbbcae69211c73274daa8bd4085e584fc7b7",
+      "date": "2021-11-07T21:48:43+09:00",
+      "author": "Nasung",
+      "email": "rkdrbgks22@ks.ac.kr",
+      "message": "refactor: test profile 변경 (#742)\n\n"
+    },
+    {
+      "sha": "e0f276f28ebc7ff85dbe19056d11c7466d1b1d35",
+      "date": "2021-11-07T17:46:09+09:00",
+      "author": "Nasung",
+      "email": "rkdrbgks22@ks.ac.kr",
+      "message": "refactor: n + 1 문제 해결 (#739)\n\n* refactor: n + 1 문제 해결\n\n* refactor: batch size 조절\n\n* refactor: EmbeddedRedisConfig profile 변경\n\n* refactor: Session LAZY 로딩방식으로 변경\n\n* refactor: test 기본 프로필 local 로 변경"
+    },
+    {
+      "sha": "41cc5142d292f5b8460f58140772affe6432b292",
+      "date": "2021-10-31T23:52:44+09:00",
+      "author": "An Hyun Cheol",
+      "email": "42052110+iborymagic@users.noreply.github.com",
+      "message": "Merge pull request #714 from woowacourse-teams/release\n\ndocs: main으로 Readme 반영"
+    },
+    {
+      "sha": "1b4179756f09b2bf2b895c4359661354ab377e24",
+      "date": "2021-10-29T16:23:18+09:00",
+      "author": "An Hyun Cheol",
+      "email": "42052110+iborymagic@users.noreply.github.com",
+      "message": "Merge pull request #735 from woowacourse-teams/develop\n\nfix: z-index issue (#734)"
+    },
+    {
+      "sha": "b76c35ff56ea5190f51fc2a1ab0332b857a90251",
+      "date": "2021-10-29T16:17:14+09:00",
+      "author": "Min Kyung Kang",
+      "email": "mnk918p@gmail.com",
+      "message": "hotfix: name issue (#736)\n\n* fix: z-index issue\n\n* fix: name"
+    },
+    {
+      "sha": "c63e81b818b39a6bff743d314ac7a92138386af5",
+      "date": "2021-10-29T16:01:16+09:00",
+      "author": "Min Kyung Kang",
+      "email": "mnk918p@gmail.com",
+      "message": "fix: z-index issue (#734)\n\n"
+    },
+    {
+      "sha": "0ec8bf9667d324cbe26eec4b7d528a28de6a89a1",
+      "date": "2021-10-29T14:03:45+09:00",
+      "author": "Min Kyung Kang",
+      "email": "mnk918p@gmail.com",
+      "message": "Merge pull request #733 from woowacourse-teams/develop\n\nfix: 에러 수정 (#732)"
+    },
+    {
+      "sha": "4a0420a0b3db03b603b5e110f6dde1fa716f1b4f",
+      "date": "2021-10-29T14:02:41+09:00",
+      "author": "An Hyun Cheol",
+      "email": "42052110+iborymagic@users.noreply.github.com",
+      "message": "fix: 에러 수정 (#732)\n\n* feat: 줄임말에 대한 자동완성 기능 구현\n\nCo-authored-by: An Hyun Cheol <iborymagic@users.noreply.github.com>\n\n* fix: loadable components 관련 에러 수정\n\n* fix: loadable components 에러 수정\n\n* fix: 관리자 페이지 경로 수정\n\n* fix: 에러수정\n\nCo-authored-by: Min Kyung Kang <mnk918p@gmail.com>\nCo-authored-by: An Hyun Cheol <iborymagic@users.noreply.github.com>"
+    },
+    {
+      "sha": "45bf4e690dc22542838c596b00ccfb79ca3928d4",
+      "date": "2021-10-29T13:46:42+09:00",
+      "author": "Min Kyung Kang",
+      "email": "mnk918p@gmail.com",
+      "message": "Merge pull request #731 from woowacourse-teams/develop\n\nfix: 오류 수정"
+    },
+    {
+      "sha": "0a64165d03989cfa33f47c8d26803e50b83b48ab",
+      "date": "2021-10-29T13:45:39+09:00",
+      "author": "An Hyun Cheol",
+      "email": "42052110+iborymagic@users.noreply.github.com",
+      "message": "fix: 오류 수정 (#730)\n\n* feat: 줄임말에 대한 자동완성 기능 구현\n\nCo-authored-by: An Hyun Cheol <iborymagic@users.noreply.github.com>\n\n* fix: loadable components 관련 에러 수정\n\n* fix: loadable components 에러 수정\n\n* fix: 관리자 페이지 경로 수정\n\nCo-authored-by: Min Kyung Kang <mnk918p@gmail.com>\nCo-authored-by: An Hyun Cheol <iborymagic@users.noreply.github.com>"
+    },
+    {
+      "sha": "98fa09117482423e94c6a8e210630c19d5d4192b",
+      "date": "2021-10-29T13:43:57+09:00",
+      "author": "Min Kyung Kang",
+      "email": "mnk918p@gmail.com",
+      "message": "docs: readme (#729)\n\n* merge: merge with origin\n\n* docs: readme 수정"
+    },
+    {
+      "sha": "39160f1a9d470f6b0a40d2a5097dca11efa60d8f",
+      "date": "2021-10-29T13:35:17+09:00",
+      "author": "An Hyun Cheol",
+      "email": "42052110+iborymagic@users.noreply.github.com",
+      "message": "Merge pull request #728 from woowacourse-teams/develop\n\nfix: 핫픽스"
+    },
+    {
+      "sha": "c62e27894119966ea8511d36d6da35cbc6273176",
+      "date": "2021-10-29T13:29:10+09:00",
+      "author": "An Hyun Cheol",
+      "email": "42052110+iborymagic@users.noreply.github.com",
+      "message": "fix: loadable components 에러 수정 (#727)\n\n* feat: 줄임말에 대한 자동완성 기능 구현\n\nCo-authored-by: An Hyun Cheol <iborymagic@users.noreply.github.com>\n\n* fix: loadable components 관련 에러 수정\n\nCo-authored-by: Min Kyung Kang <mnk918p@gmail.com>\nCo-authored-by: An Hyun Cheol <iborymagic@users.noreply.github.com>"
+    },
+    {
+      "sha": "fd73a3192e3515c58c0e1834a304657c419a9234",
+      "date": "2021-10-29T13:25:24+09:00",
+      "author": "Min Kyung Kang",
+      "email": "mnk918p@gmail.com",
+      "message": "fix: darkmode (#726)\n\n* merge: merge with origin\n\n* fix: 게시판 border bottom 수정\n\n* fix: merge conflict\n\n* css: dark-mode 구현\n\n* fix: merge conflict 해결\n\n* fix: 사파리 문제 해결\n\n* fix: modal dark"
+    },
+    {
+      "sha": "2a17210883de7e5fe97d659c9b918199208dfab4",
+      "date": "2021-10-29T07:46:51+09:00",
+      "author": "An Hyun Cheol",
+      "email": "42052110+iborymagic@users.noreply.github.com",
+      "message": "Merge pull request #725 from woowacourse-teams/develop\n\nfix: 사파리 버그 픽스 (#724)"
+    },
+    {
+      "sha": "d082a4acdc04b9dd74798d68d299abfffc03a8c8",
+      "date": "2021-10-29T07:41:23+09:00",
+      "author": "Min Kyung Kang",
+      "email": "mnk918p@gmail.com",
+      "message": "fix: 사파리 버그 픽스 (#724)\n\n* merge: merge with origin\n\n* fix: 게시판 border bottom 수정\n\n* fix: merge conflict\n\n* css: dark-mode 구현\n\n* fix: merge conflict 해결\n\n* fix: 사파리 문제 해결"
+    },
+    {
+      "sha": "d72a8f81f8d801efe72fd37b4563781043b80891",
+      "date": "2021-10-29T07:29:31+09:00",
+      "author": "An Hyun Cheol",
+      "email": "42052110+iborymagic@users.noreply.github.com",
+      "message": "Merge pull request #723 from woowacourse-teams/develop\n\nfix: z-index 문제 해결 (#722)"
+    },
+    {
+      "sha": "332f95ade7527e0f65736286b4f4683dd30bfff0",
+      "date": "2021-10-29T07:19:35+09:00",
+      "author": "Min Kyung Kang",
+      "email": "mnk918p@gmail.com",
+      "message": "fix: z-index 문제 해결 (#722)\n\n* merge: merge with origin\n\n* fix: 게시판 border bottom 수정\n\n* temp\n\n* css: dark-mode 구현\n\n* fix: merge conflict 해결\n\n* fix: Z-index 문제 해결"
+    },
+    {
+      "sha": "cb75adc33094dcdb56579351cc538b54e238e8eb",
+      "date": "2021-10-29T07:04:20+09:00",
+      "author": "An Hyun Cheol",
+      "email": "42052110+iborymagic@users.noreply.github.com",
+      "message": "Merge pull request #719 from woowacourse-teams/develop\n\ndocs: 리드미 수정"
+    },
+    {
+      "sha": "437aa9a5c5104063f3faae9dbc14006206a1d08f",
+      "date": "2021-10-29T06:50:40+09:00",
+      "author": "Min Kyung Kang",
+      "email": "mnk918p@gmail.com",
+      "message": "feat: 다크모드 구현 (#720)\n\n* merge: merge with origin\n\n* fix: 게시판 border bottom 수정\n\n* temp\n\n* css: dark-mode 구현\n\n* fix: merge conflict 해결"
+    },
+    {
+      "sha": "9353c4118fe46ea68fadb17f93b7cf16e9e6c54c",
+      "date": "2021-10-29T06:50:13+09:00",
+      "author": "Min Kyung Kang",
+      "email": "mnk918p@gmail.com",
+      "message": "hotfix: 인피니트 스크롤 실시간 업데이트 / 태그 검색 안되는 오류 해결 (#721)\n\n* merge: merge with origin\n\n* docs: README 수정\n\n* fix:: 게임리스트 해결\n\n* fix: 태그 검색 안되는 문제 해결"
+    },
+    {
+      "sha": "9e9be9cdf774110cd09415aa13610b678ed81e1b",
+      "date": "2021-10-29T05:52:09+09:00",
+      "author": "Min Kyung Kang",
+      "email": "mnk918p@gmail.com",
+      "message": "hotfix: README 수정! (#718)\n\n* merge: merge with origin\n\n* docs: README 수정\n\n* fix:: 게임리스트 해결"
+    }
+  ],
+  "commit_sha": "97991ee89c5ab443a24910245db2e374c974db61",
+  "extracted_at": "2026-10-05T18:27:23.047802+00:00"
+}

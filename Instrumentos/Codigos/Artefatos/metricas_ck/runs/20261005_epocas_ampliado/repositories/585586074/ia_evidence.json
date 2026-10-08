@@ -1,0 +1,174 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 23,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "6d15a94deae6487f2a775ee4f4b42042ad5195ed",
+      "date": "2025-12-19T10:21:15+01:00",
+      "author": "Hannes Brandstätter-Müller",
+      "email": "hannes.brandstaetter@cloudflight.io",
+      "message": "Ensure resolved versions are written to generated POMs (#23)\n\n"
+    },
+    {
+      "sha": "468d55218af662d85556b6cfd1fe7adbcf8c3228",
+      "date": "2025-12-18T14:08:21+01:00",
+      "author": "mjahn2",
+      "email": "michael.jahn.at@gmail.com",
+      "message": "Update build.gradle.kts"
+    },
+    {
+      "sha": "6107a97a636f3736030fa26de1268fa86dabea0c",
+      "date": "2025-12-18T13:39:59+01:00",
+      "author": "mjahn2",
+      "email": "michael.jahn.at@gmail.com",
+      "message": "chore: update publish config"
+    },
+    {
+      "sha": "6b1e49ab00e4b9a82499cb9ff2829b034acc2663",
+      "date": "2025-12-18T11:12:00+01:00",
+      "author": "Hannes Brandstätter-Müller",
+      "email": "hannes.brandstaetter@cloudflight.io",
+      "message": "Readded erroneously removed library dependency (#22)\n\n"
+    },
+    {
+      "sha": "efc761288c7d4a5f6113ab74d9b3486447b8c351",
+      "date": "2025-12-18T09:46:21+01:00",
+      "author": "Hannes Brandstätter-Müller",
+      "email": "hannes.mueller@gmail.com",
+      "message": "update for spring boot 3.5.7 (#21)\n\n* - Refactor Gradle dependencies to use version catalogs for consistency and maintainability.\n- Add and improve class-level Javadoc for better documentation and clarity of purpose.\n- Update Gradle wrapper to version 8.10.2 for compatibility with newer tools.\n- Update dependencies for compatibility with Spring Boot 3.5.7\n\n* Removed some erroneously committed stuff"
+    },
+    {
+      "sha": "d6a88a0a3699d852162bc7ea5f3091e673b1152d",
+      "date": "2023-03-30T10:23:00+02:00",
+      "author": "Klaus Lehner",
+      "email": "172195+klu2@users.noreply.github.com",
+      "message": "update to Spring Boot 3.0.5 (#20)\n\n"
+    },
+    {
+      "sha": "c710923631455fbaea225071c738bb6a26756bfa",
+      "date": "2023-03-30T09:46:32+02:00",
+      "author": "Klaus Lehner",
+      "email": "172195+klu2@users.noreply.github.com",
+      "message": "update to micronaut 3.8.7 and the according micronaut gradle plugin (#19)\n\n"
+    },
+    {
+      "sha": "f2dae3d223ba66b86e58c75df029741b1a921ee4",
+      "date": "2023-03-30T08:25:03+02:00",
+      "author": "Klaus Lehner",
+      "email": "172195+klu2@users.noreply.github.com",
+      "message": "update to testresources 1.2.5 (#18)\n\n"
+    },
+    {
+      "sha": "4ac05d2e09510a06619438b4b1d9311bd4eeddca",
+      "date": "2023-03-29T17:45:04+02:00",
+      "author": "Christoph",
+      "email": "chrisiover9000@gmail.com",
+      "message": "Add Elasticsearch support (#17)\n\nCo-authored-by: Christoph Schmid <christoph.schmid@cloudflight.io>"
+    },
+    {
+      "sha": "03b6241e22385b0611d66f288c067e80b1a81c31",
+      "date": "2023-03-03T08:31:31+01:00",
+      "author": "Klaus Lehner",
+      "email": "172195+klu2@users.noreply.github.com",
+      "message": "update to Spring Boot 3.0.3, Kotlin 1.8, remove JUnit4 from the classpath (#15)\n\n"
+    },
+    {
+      "sha": "4569c3d9eefdbbabce135355a284c85f1eb1d294",
+      "date": "2023-02-22T20:23:47+01:00",
+      "author": "nils-degroot",
+      "email": "53556985+nils-degroot@users.noreply.github.com",
+      "message": "Add mailhog support (#14)\n\n"
+    },
+    {
+      "sha": "34da924e4e2bb4dd65b3d0da345f2ce1201542c5",
+      "date": "2023-01-19T14:31:57+01:00",
+      "author": "Marco Streitner",
+      "email": "123062121+mstreitner@users.noreply.github.com",
+      "message": "#10 add MSSQL Server support (#13)\n\n"
+    },
+    {
+      "sha": "df863e55ea2967ac15fc31bf5a66856346d14382",
+      "date": "2023-01-11T14:53:39+01:00",
+      "author": "Klaus Lehner",
+      "email": "172195+klu2@users.noreply.github.com",
+      "message": "#11 added support for Azurite (#12)\n\n"
+    },
+    {
+      "sha": "8883f19a86f51147a3ce3e10cb0f338a2358faf4",
+      "date": "2023-01-10T07:54:01+01:00",
+      "author": "Klaus Lehner",
+      "email": "172195+klu2@users.noreply.github.com",
+      "message": "add missing description (#8)\n\n"
+    },
+    {
+      "sha": "939eaf6ff8dfc7813d2552a2c8c39768a592d4c3",
+      "date": "2023-01-10T07:18:02+01:00",
+      "author": "Klaus Lehner",
+      "email": "172195+klu2@users.noreply.github.com",
+      "message": "#2 add RabbitMQ support (#7)\n\n"
+    },
+    {
+      "sha": "306171c3cb835e60ef20601aef6dcb33eafdc9f2",
+      "date": "2023-01-09T20:17:19+01:00",
+      "author": "Klaus Lehner",
+      "email": "172195+klu2@users.noreply.github.com",
+      "message": "#3 add Redis support (#6)\n\n"
+    },
+    {
+      "sha": "bed253c110ea7bb263d01597b87a6c212674820c",
+      "date": "2023-01-09T19:44:05+01:00",
+      "author": "Klaus Lehner",
+      "email": "172195+klu2@users.noreply.github.com",
+      "message": "#1 add postgres support (#5)\n\n"
+    },
+    {
+      "sha": "4468f9fb1d38ac3bc77713bdad952f16a6207dd2",
+      "date": "2023-01-09T09:13:03+01:00",
+      "author": "Klaus Lehner",
+      "email": "172195+klu2@users.noreply.github.com",
+      "message": "create testprojects for each module (#4)\n\n* create testprojects for each module\n* use Java 17"
+    },
+    {
+      "sha": "7a40df217bb791759825126bad67a95f5981a346",
+      "date": "2023-01-08T19:00:38+01:00",
+      "author": "Klaus Lehner",
+      "email": "172195+klu2@users.noreply.github.com",
+      "message": "better README.md\n"
+    },
+    {
+      "sha": "23cdad32e3500a42770dadde5606c25624865f6f",
+      "date": "2023-01-05T16:09:59+01:00",
+      "author": "Klaus Lehner",
+      "email": "172195+klu2@users.noreply.github.com",
+      "message": "add module descriptions\n"
+    },
+    {
+      "sha": "efc2e372a9a22483551f24c84d30bd61d4c6a0e9",
+      "date": "2023-01-05T15:52:38+01:00",
+      "author": "Klaus Lehner",
+      "email": "172195+klu2@users.noreply.github.com",
+      "message": "update metadata\n"
+    },
+    {
+      "sha": "cb3eb89f8e1eba6cd4875205b8fb0c01e06aed3d",
+      "date": "2023-01-05T15:52:09+01:00",
+      "author": "Klaus Lehner",
+      "email": "172195+klu2@users.noreply.github.com",
+      "message": "make file executable\n"
+    },
+    {
+      "sha": "27888af79b1a62e33109fe179d10361e224809c7",
+      "date": "2023-01-05T15:51:31+01:00",
+      "author": "Klaus Lehner",
+      "email": "172195+klu2@users.noreply.github.com",
+      "message": "initial import\n"
+    }
+  ],
+  "commit_sha": "6d15a94deae6487f2a775ee4f4b42042ad5195ed",
+  "extracted_at": "2026-10-05T18:39:13.553912+00:00"
+}

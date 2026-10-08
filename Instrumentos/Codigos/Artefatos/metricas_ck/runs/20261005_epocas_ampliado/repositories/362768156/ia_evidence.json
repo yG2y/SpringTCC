@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "3b3d3f37b4d12117b20f88a2fc9a1976b4a640b8",
+      "date": "2026-10-03T17:12:08+09:00",
+      "author": "FOSSLight Developer",
+      "email": "fosslight-dev@lge.com",
+      "message": "Fixed license exclude handling logic"
+    },
+    {
+      "sha": "322c67782ed1254b2450d6eae13969f7bb4345d5",
+      "date": "2026-10-02T15:30:09+09:00",
+      "author": "FOSSLight Developer",
+      "email": "fosslight-dev@lge.com",
+      "message": "Fixed vulnerability handling logic for OSS without versions"
+    },
+    {
+      "sha": "425033622d63acb35b385be5a46be61b805c676b",
+      "date": "2026-10-02T15:07:59+09:00",
+      "author": "FOSSLight Developer",
+      "email": "fosslight-dev@lge.com",
+      "message": "Fixed vulnerability recalcurated mailing logic"
+    },
+    {
+      "sha": "7579d68004239414a4bafe7e6cf21d722039828e",
+      "date": "2026-10-02T11:55:09+09:00",
+      "author": "FOSSLight Developer",
+      "email": "fosslight-dev@lge.com",
+      "message": "Fixed osv version matching query"
+    },
+    {
+      "sha": "596cb26d96a48917cbd26124a1243e5356868f68",
+      "date": "2026-10-01T18:59:42+09:00",
+      "author": "Copilot",
+      "email": "223556219+Copilot@users.noreply.github.com",
+      "message": "fix: prevent trailing commas in vulnerability email links\n\n- Add separators only between rendered links\n- Remove collection-size-based separator logic\n"
+    },
+    {
+      "sha": "a6b1ad23a23538de0b76e1d722269910936ce4a3",
+      "date": "2026-10-01T18:57:28+09:00",
+      "author": "hyeinlee00",
+      "email": "141611764+hyeinlee00@users.noreply.github.com",
+      "message": "fix: prevent nested OSS links in vulnerability emails (#1179)\n\n- Preserve the original OSS name in ossNameTemp\n- Build noVersionMsg vulnerability tab links using the original name\n- Escape OSS names while preserving existing table links\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>"
+    },
+    {
+      "sha": "93e758fa18d48cc84e0d5bf05212f47f3826bc35",
+      "date": "2026-10-01T18:00:20+09:00",
+      "author": "hyeinlee00",
+      "email": "141611764+hyeinlee00@users.noreply.github.com",
+      "message": "chore: vulnerability 메일 포맷 변경 (#1178)\n\nversion 없는 oss 문구 위치 변경\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>"
+    },
+    {
+      "sha": "b60af67908abc044cf930149648cfb946ce6723d",
+      "date": "2026-10-01T15:05:57+09:00",
+      "author": "FOSSLight Developer",
+      "email": "fosslight-dev@lge.com",
+      "message": "Fixed security data setting logic"
+    },
+    {
+      "sha": "f4518c6df1b188a68114d36ab4758e0ef04a3699",
+      "date": "2026-10-01T14:37:25+09:00",
+      "author": "FOSSLight Developer",
+      "email": "fosslight-dev@lge.com",
+      "message": "Fixed osv version data check logic"
+    },
+    {
+      "sha": "70aebae56b2240e71c1cab679c2b091bfe3dd7c9",
+      "date": "2026-10-01T12:20:25+09:00",
+      "author": "FOSSLight Developer",
+      "email": "fosslight-dev@lge.com",
+      "message": "Fixed oss data matching logic"
+    },
+    {
+      "sha": "a28c21589f0078e04ca86bb8f04d1c7398b00108",
+      "date": "2026-09-30T22:42:35+09:00",
+      "author": "FOSSLight Developer",
+      "email": "fosslight-dev@lge.com",
+      "message": "Fixed osv data select query"
+    },
+    {
+      "sha": "cdfcc92108d1527037081bb9ee5e30140f3b67b8",
+      "date": "2026-09-30T19:39:36+09:00",
+      "author": "FOSSLight Developer",
+      "email": "fosslight-dev@lge.com",
+      "message": "Fixed Excel file generation logic during identification confirmation"
+    },
+    {
+      "sha": "f76e3cdd911e624b7778da1ca7df9fb488c33089",
+      "date": "2026-09-30T18:07:10+09:00",
+      "author": "FOSSLight Developer",
+      "email": "fosslight-dev@lge.com",
+      "message": "Fix osv data check logic"
+    },
+    {
+      "sha": "4eb7ee93f9d984a9983aeca9171556aed56de392",
+      "date": "2026-09-30T12:17:27+09:00",
+      "author": "FOSSLight Developer",
+      "email": "fosslight-dev@lge.com",
+      "message": "Fixed osv data load logic"
+    },
+    {
+      "sha": "5113e52a05422a2fa4c87d51585e7dc92ab1d77b",
+      "date": "2026-09-30T11:21:04+09:00",
+      "author": "hyeinlee",
+      "email": "hyein.lee.work@gmail.com",
+      "message": "chore: add creator info to project search api\n\ncreator id will be added to project search api response\n"
+    },
+    {
+      "sha": "484c6e91259d84f7f80943c37484f35db895ea3d",
+      "date": "2026-09-29T17:15:04+09:00",
+      "author": "FOSSLight Developer",
+      "email": "fosslight-dev@lge.com",
+      "message": "Fixed comment data retrieval logic"
+    },
+    {
+      "sha": "86d8613b81c7dcc6d386ffe0fdfae5ccb1bdac12",
+      "date": "2026-09-29T14:58:02+09:00",
+      "author": "FOSSLight Developer",
+      "email": "fosslight-dev@lge.com",
+      "message": "Fixed vulnerability processing logic"
+    },
+    {
+      "sha": "42c9368f09261fb7a743f35d9eda695e622f0f39",
+      "date": "2026-09-29T11:35:00+09:00",
+      "author": "FOSSLight Developer",
+      "email": "fosslight-dev@lge.com",
+      "message": "Fix osv data select query"
+    },
+    {
+      "sha": "5a0dbfd50f7e1adc9c98aa4eb818f223e72af370",
+      "date": "2026-09-28T20:13:58+09:00",
+      "author": "FOSSLight Developer",
+      "email": "fosslight-dev@lge.com",
+      "message": "Fix nvd sync mailing logic"
+    },
+    {
+      "sha": "7357ad4f2568ddb7bbde29d89ece463165c73c08",
+      "date": "2026-09-28T19:30:21+09:00",
+      "author": "FOSSLight Developer",
+      "email": "fosslight-dev@lge.com",
+      "message": "Fixed enterprise sync logic"
+    },
+    {
+      "sha": "1fa00d5e68ecb0de3e4ef43cbde4464cbee8c7ed",
+      "date": "2026-09-28T17:07:07+09:00",
+      "author": "FOSSLight Developer",
+      "email": "fosslight-dev@lge.com",
+      "message": "Fix vulnerability discovered mailing logic"
+    },
+    {
+      "sha": "3e56a67170151e9531304dee480ee55f9fc3971b",
+      "date": "2026-09-28T12:33:17+09:00",
+      "author": "FOSSLight Developer",
+      "email": "fosslight-dev@lge.com",
+      "message": "Fix vulnerability discovered mailing logic"
+    },
+    {
+      "sha": "092874868f19ac242ee5873e9e38a4f45eb706ed",
+      "date": "2026-09-23T21:18:29+09:00",
+      "author": "FOSSLight Developer",
+      "email": "fosslight-dev@lge.com",
+      "message": "Fixed vulnerability sync mailing logic"
+    },
+    {
+      "sha": "82b82ac9fa3668b21cf211c871e39275f0e6c3ef",
+      "date": "2026-09-23T18:56:11+09:00",
+      "author": "hyeinlee",
+      "email": "hyein.lee.work@gmail.com",
+      "message": "chore: deactive swaggerUI validator\n\ndeactive swaggerUI validator\n"
+    },
+    {
+      "sha": "a0a08f66ad9a8eb69854e5df736f125b3f5ee668",
+      "date": "2026-09-23T12:29:39+09:00",
+      "author": "FOSSLight Developer",
+      "email": "fosslight-dev@lge.com",
+      "message": "Fix oss copy logic"
+    },
+    {
+      "sha": "21d4faba4a4aa21301154ec3eefd96c07d9cfab6",
+      "date": "2026-09-23T12:23:14+09:00",
+      "author": "hyeinlee",
+      "email": "hyein.lee.work@gmail.com",
+      "message": "Update licenseListVersion in SPDX\n\nupdate licenseListVersion to 3.29 in SPDX document\n"
+    },
+    {
+      "sha": "6d715d863e89b5587b7cab98ce78694e9c72ca1b",
+      "date": "2026-09-23T12:06:05+09:00",
+      "author": "FOSSLight Developer",
+      "email": "fosslight-dev@lge.com",
+      "message": "Fix oss save logic"
+    },
+    {
+      "sha": "5e3954d04d8d4f30e3bcbb808d495364dd9a6108",
+      "date": "2026-09-23T11:57:21+09:00",
+      "author": "hyeinlee00",
+      "email": "141611764+hyeinlee00@users.noreply.github.com",
+      "message": "Fix: uploading spdx yaml file (#1177)\n\n* Enhance SPDX relationship validation to include external document references\n\n* Remove externalDocumentRef from spdx\n\ndont use externalDocumentRef info to read sbom from spdx\n\n* Fix SPDX YAML loading path\n\nUse robust YAML parsing flow for SPDX validation/conversion, including UTF-8/BOM-safe handling and fallback parsing to avoid runtime parser linkage failures.\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>\n\n* fix: change template file name\n\nmodify file name SPDXRdf_2.2.2.xlsx to SPDXRdf_2.3.xlsx\n\n* Fix SPDX spreadsheet extensions and MIME types\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>\n\n* Revert \"Fix SPDX spreadsheet extensions and MIME types\"\n\nThis reverts commit 33bdab508e4a4e84be926df96bc7de06046ffdbc.\n\n* Revert \"fix: change template file name\"\n\nThis reverts commit 944ba0586c512d3e164b2d00f19c3d8a771e7605.\n\n* chore: update spdx version text\n\nupdate spdx version text to 2.3 in template file\n\n---------\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>"
+    },
+    {
+      "sha": "ae052eda41eb8d3d9c8b400a9e5e829076e81cc0",
+      "date": "2026-09-22T18:32:04+09:00",
+      "author": "FOSSLight Developer",
+      "email": "fosslight-dev@lge.com",
+      "message": "Fix vulnerability data search query"
+    },
+    {
+      "sha": "1d5d5257df64a7e607173875e73d323e134e350f",
+      "date": "2026-09-22T18:14:45+09:00",
+      "author": "hyeinlee00",
+      "email": "141611764+hyeinlee00@users.noreply.github.com",
+      "message": "Revert \"Fix: upload spdx yaml, Update spdx template version (#1175)\" (#1176)\n\nThis reverts commit ec1d085399ea7cd90f93af1d98a7162e3809c39d."
+    }
+  ],
+  "commit_sha": "3b3d3f37b4d12117b20f88a2fc9a1976b4a640b8",
+  "extracted_at": "2026-10-05T18:08:41.069528+00:00"
+}

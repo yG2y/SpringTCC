@@ -1,0 +1,68 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "2.7.1",
+  "spring_boot_major": "2",
+  "java_versions_declared": "1.8",
+  "build_evidence": [
+    {
+      "file": "lemon-demo-jpa/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "lemon-demo-jpa/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "lemon-demo-reactive/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-lemon-commons-jpa/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "spring-lemon-commons-mongo/pom.xml",
+      "artifact": "spring-boot-starter-data-mongodb-reactive"
+    },
+    {
+      "file": "spring-lemon-commons-reactive/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "spring-lemon-commons-reactive/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-lemon-commons-web/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-lemon-commons-web/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-lemon-commons/pom.xml",
+      "artifact": "spring-boot-starter-mail"
+    },
+    {
+      "file": "spring-lemon-commons/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "spring-lemon-commons/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-lemon-exceptions/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    }
+  ]
+}

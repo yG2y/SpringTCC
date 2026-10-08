@@ -1,0 +1,24 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${spring-boot.version}",
+  "spring_boot_major": "unknown",
+  "java_versions_declared": "11;17",
+  "build_evidence": [
+    {
+      "file": "webassembly4j-spring/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "webassembly4j-spring/pom.xml",
+      "artifact": "spring-boot-actuator-autoconfigure"
+    },
+    {
+      "file": "webassembly4j-spring/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "webassembly4j-spring/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    }
+  ]
+}

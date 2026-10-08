@@ -1,0 +1,16 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "4.1.1;@bootVersion@",
+  "spring_boot_major": "4",
+  "java_versions_declared": "17",
+  "build_evidence": [
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "src/it/consumer/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "f1641a9f703df955b5f49dd3ee2e84dcb72b3ad7",
+      "date": "2026-09-19T09:30:11+05:30",
+      "author": "in28minutes",
+      "email": "14139137+in28minutes@users.noreply.github.com",
+      "message": "Merge pull request #81 from bsmahi/main - Update Spring Boot to 4.1.1\n\nUpdate Spring Boot to 4.1.1"
+    },
+    {
+      "sha": "d11fb0c0ab4ba39da32fe0c33f014aad51d2cec0",
+      "date": "2026-09-17T22:35:33+05:30",
+      "author": "Bs Mahi",
+      "email": "bs.mahi@gmail.com",
+      "message": "Update Spring Boot to 4.1.1\n\nThis change updates all project examples and docs from Spring Boot 4.1.0 to 4.1.1 to align with the current dependency version. It also removes the Spring milestone repository from Gradle/Spring Security examples, and updates the README note to clarify that Spring Boot 4.x requires Java 17+.\n"
+    },
+    {
+      "sha": "ec8b9955c66e7c0ab4fb5e430081adb1ff2fa1f6",
+      "date": "2026-06-15T06:46:15+05:30",
+      "author": "in28minutes",
+      "email": "14139137+in28minutes@users.noreply.github.com",
+      "message": "Merge pull request #78 from bsmahi/main\n\nUpgraded Spring Boot to v4.1.0"
+    },
+    {
+      "sha": "acd7d82404de88da235d6fe046dc1878d540d04a",
+      "date": "2026-06-12T22:01:06+05:30",
+      "author": "Bs Mahi",
+      "email": "bs.mahi@gmail.com",
+      "message": "Upgraded Spring Boot to 4.1.0\n\nUpgrade spring-boot-starter-parent from 4.0.6 to 4.1.0 across numerous Maven modules and documentation files. Also update org.springframework.boot plugin versions in Gradle builds to 4.1.0 and bump Gradle wrapper distributions to 9.5.1, adding wrapper properties (networkTimeout, retries, retryBackOffMs, validateDistributionUrl) to align build tooling with the Spring Boot upgrade.\n"
+    },
+    {
+      "sha": "0f3735db134435c15fb1e8e77e2663529dd16ad3",
+      "date": "2026-06-01T12:53:09+05:30",
+      "author": "in28minutes",
+      "email": "14139137+in28minutes@users.noreply.github.com",
+      "message": "Merge pull request #77 from bsmahi/main\n\nUpgraded to Spring Boot v4.0.6"
+    },
+    {
+      "sha": "aaa6dc7d414a51907548b340db2ef5e40a2a9206",
+      "date": "2026-05-31T19:14:41+05:30",
+      "author": "Bs Mahi",
+      "email": "bs.mahi@gmail.com",
+      "message": "Upgraded to Spring Boot v4.0.6\n\n- Modified spring-boot-starter-aop to spring-boot-starter-aspectj in 73-spring-aop project\n- Modified distributionUrl in gradle-wrapper.properties\n"
+    },
+    {
+      "sha": "08234611a234bb88d13ad0cf96b0034dc098b3f1",
+      "date": "2026-04-08T09:42:10+05:30",
+      "author": "in28minutes",
+      "email": "14139137+in28minutes@users.noreply.github.com",
+      "message": "Merge pull request #72 from Hafeezbaig/CVE-2026-32141-Fix-v1\n\nfix: patch CVE-2026-32141 and resolve backend runtime issues"
+    },
+    {
+      "sha": "8bf2956fdae505813f002b2686f13f403e639cc4",
+      "date": "2026-04-06T07:44:14+05:30",
+      "author": "Hafeezbaig",
+      "email": "hafeezbaig3138@gmail.com",
+      "message": "fix: add spring-boot-h2console dependency and update PathRequest import for Spring Boot 4\n"
+    },
+    {
+      "sha": "7851d367e0840cab0ee022aed9fdf082d38da86f",
+      "date": "2026-03-23T03:19:50+05:30",
+      "author": "Hafeezbaig",
+      "email": "hafeezbaig3138@gmail.com",
+      "message": "fixed some npm vulnerabilities\n"
+    },
+    {
+      "sha": "9cebe9f4977573ab8d9cc6a37e2e544810538124",
+      "date": "2026-03-18T15:38:22+05:30",
+      "author": "Hafeezbaig",
+      "email": "hafeezbaig3138@gmail.com",
+      "message": "fix: patch CVE-2026-32141 and resolve backend runtime issues\n\n- Bump flatted from 3.2.7 to 3.4.1 via npm overrides to fix CVE-2026-32141\n- Add .cors(withDefaults()) to Spring Security filter chain to fix CORS blocking frontend API calls\n- Remove broken PathRequest.toH2Console() reference causing ClassNotFoundException in Spring Boot 4\n"
+    },
+    {
+      "sha": "4c0807b7fdaa19ad688d32f3613d3e0ba199a7b2",
+      "date": "2026-02-02T13:24:17+05:30",
+      "author": "in28minutes",
+      "email": "14139137+in28minutes@users.noreply.github.com",
+      "message": "Merge pull request #69 from Hafeezbaig/rest-api-guide-update\n\nREST API Guide Update"
+    },
+    {
+      "sha": "55110572e2ef21a1c98eae99375c142d3872b330",
+      "date": "2026-01-31T12:11:58+05:30",
+      "author": "Hafeezbaig",
+      "email": "hafeezbaig3138@gmail.com",
+      "message": "REST API Guide Update\n"
+    },
+    {
+      "sha": "9950ac93d8a3d5a2c151191905b5c185b7c954e0",
+      "date": "2026-01-21T08:08:21+05:30",
+      "author": "in28minutes",
+      "email": "14139137+in28minutes@users.noreply.github.com",
+      "message": "Merge pull request #68 from bsmahi/main\n\nUpdated Filtering and Versioning with Spring Boot 4"
+    },
+    {
+      "sha": "5e9f00634fbd0aa5f6cd9cf063da1645e5821788",
+      "date": "2026-01-20T22:26:16+05:30",
+      "author": "bsmahi",
+      "email": "bs.mahi@gmail.com",
+      "message": "Updated Filtering and Versioning with Spring Boot 4\n"
+    },
+    {
+      "sha": "48632f7977ff480fc61a97d3e5909b8dc0400a89",
+      "date": "2026-01-20T22:24:02+05:30",
+      "author": "bsmahi",
+      "email": "bs.mahi@gmail.com",
+      "message": "Updated Filtering and Versioning with Spring Boot 4\n"
+    },
+    {
+      "sha": "e85ccba31a3d72ac2284e83de2bf7a742610046c",
+      "date": "2025-12-04T07:06:24+05:30",
+      "author": "in28minutes",
+      "email": "14139137+in28minutes@users.noreply.github.com",
+      "message": "Merge pull request #67 from bsmahi/main\n\nIncluded OpenTelemetry With Spring Boot 4 Guide"
+    },
+    {
+      "sha": "7f8dc1b65f1e5d63e59cb5c0aa63e7241c84a6c3",
+      "date": "2025-12-03T09:46:30+05:30",
+      "author": "bsmahi",
+      "email": "bs.mahi@gmail.com",
+      "message": "Included OpenTelemetry With Spring Boot 4 Guide\n"
+    },
+    {
+      "sha": "c8d752d7db830effe8ccad725605d79f03b1e2c8",
+      "date": "2025-12-03T08:52:05+05:30",
+      "author": "in28minutes",
+      "email": "14139137+in28minutes@users.noreply.github.com",
+      "message": "Merge pull request #66 from bsmahi/main\n\nIncluded OpenTelemetry With Spring Boot 4 Guide"
+    },
+    {
+      "sha": "6389893bb7df7837d37f31fef720c52a9d14d788",
+      "date": "2025-12-03T08:34:36+05:30",
+      "author": "bsmahi",
+      "email": "bs.mahi@gmail.com",
+      "message": "Included OpenTelemetry With Spring Boot 4 Guide\n"
+    },
+    {
+      "sha": "0dcfa52f7530eb4024aab72558d89064615b73fa",
+      "date": "2025-12-03T08:18:50+05:30",
+      "author": "bsmahi",
+      "email": "bs.mahi@gmail.com",
+      "message": "Included OpenTelemetry With Spring Boot 4 Guide\n"
+    },
+    {
+      "sha": "043ddf1c6305ab9808c9512330cac1b1043dcac6",
+      "date": "2025-12-03T07:43:01+05:30",
+      "author": "bsmahi",
+      "email": "bs.mahi@gmail.com",
+      "message": "Included OpenTelemetry With Spring Boot 4 Guide\n"
+    },
+    {
+      "sha": "5723a56118f763a79e78da03508e52472e1868ec",
+      "date": "2025-11-27T10:24:58+05:30",
+      "author": "in28minutes",
+      "email": "14139137+in28minutes@users.noreply.github.com",
+      "message": "Merge pull request #65 from bsmahi/main\n\nUpgraded to Spring Boot 4.0.0 and Java 25, restored 99-reuse"
+    },
+    {
+      "sha": "b0c3d7290bc76e2eab1c8b7c2e142295c224bfff",
+      "date": "2025-11-27T10:20:06+05:30",
+      "author": "bsmahi",
+      "email": "bs.mahi@gmail.com",
+      "message": "Upgraded to Spring Boot 4.0.0 and Java 25\n\nRestored 99-reuse folder\n"
+    },
+    {
+      "sha": "be15070a393eb20abd8d8d660ec214651b3cea17",
+      "date": "2025-11-26T11:02:59+05:30",
+      "author": "in28minutes",
+      "email": "14139137+in28minutes@users.noreply.github.com",
+      "message": "Merge pull request #64 from bsmahi/main\n\nUpgraded to Spring Boot v4.0.0"
+    },
+    {
+      "sha": "bf7af3d87431921f804bd519b4c0eafe800e7198",
+      "date": "2025-11-26T09:37:46+05:30",
+      "author": "bsmahi",
+      "email": "bs.mahi@gmail.com",
+      "message": "Upgraded to Spring Boot v4.0.0\n"
+    },
+    {
+      "sha": "92530a7ffed7f6f70b59a64f4128e7a6e49acecc",
+      "date": "2025-11-22T10:19:52+05:30",
+      "author": "in28minutes",
+      "email": "14139137+in28minutes@users.noreply.github.com",
+      "message": "Merge pull request #63 from bsmahi/main\n\nUpgrade to Spring Boot 4.0.x and Java 25"
+    },
+    {
+      "sha": "cbb6d8ad85a6f34d08062d050cc2d3471db7ec41",
+      "date": "2025-11-18T06:54:24+05:30",
+      "author": "bsmahi",
+      "email": "bs.mahi@gmail.com",
+      "message": "Upgrade to Spring Boot 4.0.x and Java 25\n"
+    },
+    {
+      "sha": "186da825018d6488ae303d1dde5b076674f20468",
+      "date": "2025-11-17T11:18:53+05:30",
+      "author": "in28minutes",
+      "email": "14139137+in28minutes@users.noreply.github.com",
+      "message": "Merge pull request #62 from bsmahi/main\n\nUpgrade to Spring Boot 4.0.x and Java 25"
+    },
+    {
+      "sha": "c59ee760f0d6bdff46250bfeb6cb12bfe40b5cf4",
+      "date": "2025-11-17T10:10:58+05:30",
+      "author": "bsmahi",
+      "email": "bs.mahi@gmail.com",
+      "message": "Upgrade to Spring Boot 4.0.x and Java 25\n"
+    },
+    {
+      "sha": "1d768e0c240e15c92c99c08b047f7a226394ac4f",
+      "date": "2025-11-17T10:09:19+05:30",
+      "author": "bsmahi",
+      "email": "bs.mahi@gmail.com",
+      "message": "Upgraded to Spring Boot 4.0.0-M3 and Java 25\n"
+    }
+  ],
+  "commit_sha": "f1641a9f703df955b5f49dd3ee2e84dcb72b3ad7",
+  "extracted_at": "2026-10-05T17:53:11.589629+00:00"
+}

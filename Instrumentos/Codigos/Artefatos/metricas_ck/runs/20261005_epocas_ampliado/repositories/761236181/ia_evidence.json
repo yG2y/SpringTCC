@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "2be01e019adfef60de0cdfe336eb0ac77d80259a",
+      "date": "2026-05-23T12:10:15+05:30",
+      "author": "Amith Koujalgi",
+      "email": "1876165+amithkoujalgi@users.noreply.github.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "2a156ba37e507039e502cc89323eb4bac61b2bce",
+      "date": "2025-03-19T10:38:04+05:30",
+      "author": "Amith Koujalgi",
+      "email": "1876165+amithkoujalgi@users.noreply.github.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "0ac7a95a21cff759fad634043c800e70dfe27285",
+      "date": "2025-03-18T19:25:38+05:30",
+      "author": "Amith Koujalgi",
+      "email": "1876165+amithkoujalgi@users.noreply.github.com",
+      "message": "Merge pull request #16 from samie/vaadin-24.6\n\nUpgrade to Vaadin 24.6"
+    },
+    {
+      "sha": "01bf1d2397d6ea2e87736b2527f806dc4faac3c5",
+      "date": "2025-03-12T14:35:11+02:00",
+      "author": "Sami Ekblad",
+      "email": "sami.ekblad@gmail.com",
+      "message": "Upgrade to Vaadin 24.6\n\n- Upgrade to Vaadin 24.6.6\n- Move frontend folder to recommended location\n"
+    },
+    {
+      "sha": "d624f2e1c8cfb0110f046974ea3495d262679571",
+      "date": "2025-02-13T10:01:59+05:30",
+      "author": "amithkoujalgi",
+      "email": "koujalgi.amith@gmail.com",
+      "message": "Update .gitignore\n"
+    },
+    {
+      "sha": "a6db33b82b86cab9281814ef97af6b91a05cd7b6",
+      "date": "2025-02-13T09:43:01+05:30",
+      "author": "amithkoujalgi",
+      "email": "koujalgi.amith@gmail.com",
+      "message": "Updated `ollama4j` to the latest version\n"
+    },
+    {
+      "sha": "93770c206c84270f7fbf6b9b49d78b18df4173f6",
+      "date": "2025-01-27T19:05:28+05:30",
+      "author": "Amith Koujalgi",
+      "email": "1876165+amithkoujalgi@users.noreply.github.com",
+      "message": "Merge pull request #7 from samie/connection_view\n\nImplemented a Ollama connection view "
+    },
+    {
+      "sha": "e9dad4df143520d85814fc89f75baea29563b949",
+      "date": "2025-01-27T19:05:08+05:30",
+      "author": "Amith Koujalgi",
+      "email": "1876165+amithkoujalgi@users.noreply.github.com",
+      "message": "Merge pull request #11 from vesanieminen/auto-color-theme\n\nSet the application color theme automatically"
+    },
+    {
+      "sha": "90c0e5c193b0a658feb168804a843628b2c44690",
+      "date": "2025-01-27T19:01:39+05:30",
+      "author": "Amith Koujalgi",
+      "email": "1876165+amithkoujalgi@users.noreply.github.com",
+      "message": "Merge pull request #12 from vesanieminen/auto-scroll\n\nImplement autoscroll for the chat view"
+    },
+    {
+      "sha": "098307a51c413491a392fb1ed95dda894ff671fb",
+      "date": "2025-01-27T09:47:18+02:00",
+      "author": "Sami Ekblad",
+      "email": "sami.ekblad@gmail.com",
+      "message": "Merge branch 'connection_view' of github.com:samie/ollama4j-web-ui into connection_view\n\n# Conflicts:\n#\tsrc/main/java/io/github/ollama4j/webui/service/ChatService.java\n"
+    },
+    {
+      "sha": "2ee7234972af6eba9b5399b23d5444658f463984",
+      "date": "2024-12-12T14:06:45+02:00",
+      "author": "Sami Ekblad",
+      "email": "sami.ekblad@gmail.com",
+      "message": "Moved connect check from afterNavigation to beforeEnter\n"
+    },
+    {
+      "sha": "8fa5440608ce4c794d6c89c766949387e2753ea8",
+      "date": "2024-12-12T11:48:18+02:00",
+      "author": "Sami Ekblad",
+      "email": "sami.ekblad@gmail.com",
+      "message": "Check the Ollama connection before showing any other views.\n\nRedirect to connection view when needed\n"
+    },
+    {
+      "sha": "82a1296d55013a40586f54f5ffbe928016e93a9a",
+      "date": "2024-12-12T11:43:31+02:00",
+      "author": "Sami Ekblad",
+      "email": "sami.ekblad@gmail.com",
+      "message": "Implemented a view to check the connection to Ollama service\n"
+    },
+    {
+      "sha": "38577c376989db4a80c0aed852d1ab34d119ed8b",
+      "date": "2025-01-26T21:01:25+02:00",
+      "author": "Vesa Nieminen",
+      "email": "vesa.nieminen@gmail.com",
+      "message": "Scroll the chat view to the end.\n"
+    },
+    {
+      "sha": "75df9c340674ae479bdf68b7d94f83583ea58e42",
+      "date": "2025-01-26T17:50:00+02:00",
+      "author": "Vesa Nieminen",
+      "email": "vesa.nieminen@gmail.com",
+      "message": "Set OS color theme automatically.\n"
+    },
+    {
+      "sha": "6d787c28519a48dd8ba04b8fb5cbdd31ffe030b9",
+      "date": "2025-01-26T17:06:33+02:00",
+      "author": "Vesa Nieminen",
+      "email": "vesa.nieminen@gmail.com",
+      "message": "Fix issue #9.\n"
+    },
+    {
+      "sha": "64c934a9f89d22021265ff6acca8826c4701b888",
+      "date": "2025-01-26T00:20:38+05:30",
+      "author": "Amith Koujalgi",
+      "email": "1876165+amithkoujalgi@users.noreply.github.com",
+      "message": "Merge pull request #8 from samie/library_view_rewrite\n\nModel library view update"
+    },
+    {
+      "sha": "9128247935ee8306ed917f3e0140e51aad88aaf4",
+      "date": "2024-12-12T21:19:24+02:00",
+      "author": "Sami Ekblad",
+      "email": "sami.ekblad@gmail.com",
+      "message": "Rewrote the library model view.\n\n- code cleanup. original code had lot of non-related example code.\n- added info/pull dialog\n"
+    },
+    {
+      "sha": "127c33b1288c1f2f698e59cf3660574560c2e993",
+      "date": "2024-12-12T21:17:16+02:00",
+      "author": "Sami Ekblad",
+      "email": "sami.ekblad@gmail.com",
+      "message": "Added badge component\n\nAdapted from https://github.com/anezthes/vaadinplus by @anezthes\n"
+    },
+    {
+      "sha": "8b532cf7a38c50dde4d4327101dd588c59d9b36d",
+      "date": "2024-12-12T21:15:44+02:00",
+      "author": "Sami Ekblad",
+      "email": "sami.ekblad@gmail.com",
+      "message": "Added asynchronous pullModel method.\n\nIn next iteration this could return the future to allow better UI feedback.\n"
+    },
+    {
+      "sha": "3a69ec8ef424d93a7b421687e859287eaddad6ab",
+      "date": "2024-12-12T14:06:45+02:00",
+      "author": "Sami Ekblad",
+      "email": "sami.ekblad@gmail.com",
+      "message": "Moved connect check from afterNavigation to beforeEnter\n"
+    },
+    {
+      "sha": "65184942aa9b3269fd20e19234dda65aad68681c",
+      "date": "2024-12-12T11:48:18+02:00",
+      "author": "Sami Ekblad",
+      "email": "sami.ekblad@gmail.com",
+      "message": "Check the Ollama connection before showing any other views.\n\nRedirect to connection view when needed\n"
+    },
+    {
+      "sha": "87b4869dbff7f821f26ed9d506162ea4a0273f7f",
+      "date": "2024-12-12T11:43:31+02:00",
+      "author": "Sami Ekblad",
+      "email": "sami.ekblad@gmail.com",
+      "message": "Implemented a view to check the connection to Ollama service\n"
+    },
+    {
+      "sha": "8b943abe2d28804bb4d2fe64ef4b8f97fcd60e40",
+      "date": "2024-12-12T11:43:03+02:00",
+      "author": "Sami Ekblad",
+      "email": "sami.ekblad@gmail.com",
+      "message": "Added connection information to chat service\n"
+    },
+    {
+      "sha": "7ae7e4e353b5e4996eb1a72e83de58f396027e43",
+      "date": "2024-11-09T10:29:27+05:30",
+      "author": "amithkoujalgi",
+      "email": "koujalgi.amith@gmail.com",
+      "message": "Added docker-compose.yaml\n"
+    },
+    {
+      "sha": "37d1687fe101fd96539a292abeb0bc43b5cb3979",
+      "date": "2024-11-09T00:50:53+05:30",
+      "author": "amithkoujalgi",
+      "email": "koujalgi.amith@gmail.com",
+      "message": "Updated Readme\n"
+    },
+    {
+      "sha": "bf639a9901786a8a35d8f61cafe8e0e010b5e51c",
+      "date": "2024-11-09T00:42:15+05:30",
+      "author": "amithkoujalgi",
+      "email": "koujalgi.amith@gmail.com",
+      "message": "Updated GitHub Actions\n"
+    },
+    {
+      "sha": "304b93efb2f17fb756facb7e0fb3c3a9753506c8",
+      "date": "2024-11-09T00:38:01+05:30",
+      "author": "amithkoujalgi",
+      "email": "koujalgi.amith@gmail.com",
+      "message": "Updated GitHub Actions\n"
+    },
+    {
+      "sha": "8e786039c018316a9479ace5659331ae1bdd5c8b",
+      "date": "2024-11-09T00:36:32+05:30",
+      "author": "amithkoujalgi",
+      "email": "koujalgi.amith@gmail.com",
+      "message": "Updated GitHub Actions\n"
+    },
+    {
+      "sha": "659b610f5d38cf07778e489296b95720daaa5d93",
+      "date": "2024-11-09T00:05:52+05:30",
+      "author": "amithkoujalgi",
+      "email": "koujalgi.amith@gmail.com",
+      "message": "Updated GitHub Actions\n\nUpdated GitHub Actions\n"
+    }
+  ],
+  "commit_sha": "2be01e019adfef60de0cdfe336eb0ac77d80259a",
+  "extracted_at": "2026-10-05T18:00:51.707819+00:00"
+}

@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "f7ad33d3d42740b473011d11633044e8576917b7",
+      "date": "2026-09-11T09:25:28+02:00",
+      "author": "Lasse Tyrihjell",
+      "email": "lasse.tyrihjell@entur.org",
+      "message": "Merge pull request #245 from entur/add-publiccode-yml\n\nAdd publiccode.yml"
+    },
+    {
+      "sha": "973aac8fb099dd450769e57ae64a9bebf565f4e0",
+      "date": "2026-09-10T22:35:17+02:00",
+      "author": "Tom Erik Støwer",
+      "email": "testower@gmail.com",
+      "message": "Add publiccode.yml\n"
+    },
+    {
+      "sha": "dcf30cb87c35d971c9ba391e516614cb1f003366",
+      "date": "2026-09-10T15:24:44+02:00",
+      "author": "Lasse Tyrihjell",
+      "email": "lassetyr@gmail.com",
+      "message": "Updating dependencies\n"
+    },
+    {
+      "sha": "a3eb02290670a5f9ce16ffbf54f07f66316d7dfa",
+      "date": "2026-09-10T15:22:28+02:00",
+      "author": "Lasse Tyrihjell",
+      "email": "lassetyr@gmail.com",
+      "message": "Masking oauth2- and custom header values when logging outgoing requests\n\nThe log-endpoints in the subscription-routes use showAll=true, which renders the\ncomplete header-map. Since they are placed after addCustomHeaders() and after\ndirect:oauth2.authorize, every subscription start, check-status, cancel and data\nrequest wrote the customHeaders of the data provider and the Authorization-header\nto the log at INFO.\n\nRequests that may carry credentials are now logged through a formatter that masks\nthe values of the oauth2-headers, Authorization and every header name configured\nas a customHeader on any subscription. The key is still logged, so it remains\nvisible that the header was applied.\n\nNote that the log-component has no uri-option for supplying a formatter, and an\nendpoint resolved through the CamelContext is already initialized - hence the\nendpoint is constructed directly.\n"
+    },
+    {
+      "sha": "045271c5006e6aaf1e33dd2de254a08eaab70c97",
+      "date": "2026-09-03T11:30:08+02:00",
+      "author": "Lasse Tyrihjell",
+      "email": "lasse.tyrihjell@entur.org",
+      "message": "Merge pull request #243 from entur/harmonize/use-shared-renovate-config\n\nHarmonize Renovate onto shared config"
+    },
+    {
+      "sha": "d2daa3e7a60f4dee5404a2946bc721da86a920b0",
+      "date": "2026-09-03T11:20:49+02:00",
+      "author": "Lasse Tyrihjell",
+      "email": "lassetyr@gmail.com",
+      "message": "Comparing customHeaders and oauth2Config when detecting updated subscriptions\n\nBoth change the outgoing request, so a difference in either is exactly the\nupdated subscription-config equals() is meant to detect. Without this, a pod\nholding a correct config discarded it in favour of a stale copy already in\nHazelcast, and no redeploy could fix it.\n\nTreating null and empty as equivalent to avoid flagging already registered\nsubscriptions as updated. Logging the differing keys only - the values are\ncredentials.\n"
+    },
+    {
+      "sha": "3cf76cc24b1382ba2e8365d8bad2a41e6e7ac22a",
+      "date": "2026-09-03T11:20:43+02:00",
+      "author": "Lasse Tyrihjell",
+      "email": "lassetyr@gmail.com",
+      "message": "Failing startup on unresolved placeholders in subscription-config\n\nSpring binds an unresolvable ${...} as the literal string, so a secret that was\nnot available when the config was bound is sent to the data provider as-is -\nlooking like an auth-failure at the far end, with no signal on our side.\n\nChecking customHeaders, oauth2Config and urlMap in isValid. Only the offending\nkey is logged - the value may be a secret.\n"
+    },
+    {
+      "sha": "f5622eb71fddaf75fb553af09c3aad2780fd9d1e",
+      "date": "2026-08-17T15:41:18+02:00",
+      "author": "Lasse Tyrihjell",
+      "email": "lassetyr@gmail.com",
+      "message": "Ignoring SaneSpeed-validation for negative run-times. Will be caught by other validator\n"
+    },
+    {
+      "sha": "f3d7ced88d17a973e074077c5f13c91703163873",
+      "date": "2026-08-13T13:21:19+02:00",
+      "author": "Lasse Tyrihjell",
+      "email": "lassetyr@gmail.com",
+      "message": "Adding test for pinned serialVersionUid\n"
+    },
+    {
+      "sha": "bb42fd6f77be0a20cc5294773de496c948354578",
+      "date": "2026-08-13T11:22:27+02:00",
+      "author": "Lasse Tyrihjell",
+      "email": "lassetyr@gmail.com",
+      "message": "Setting mappingAdapters as transient (phase 2 of previous commit)\n"
+    },
+    {
+      "sha": "8f918657f2f84212d25fb005841e639407179812",
+      "date": "2026-08-13T10:54:34+02:00",
+      "author": "Lasse Tyrihjell",
+      "email": "lassetyr@gmail.com",
+      "message": "Resolve ValueAdapters from locally deployed code to allow hot-deploy also when adding/removing adapters.\n"
+    },
+    {
+      "sha": "c24b4b7eabac2798330875e737c269440fbef53d",
+      "date": "2026-08-12T12:52:56+02:00",
+      "author": "Lasse Tyrihjell",
+      "email": "lassetyr@gmail.com",
+      "message": "Extracting InfoLink-cleanup.\nNow also fixes missing uri-scheme\n"
+    },
+    {
+      "sha": "3fc1596c041e3deb83e3a7bc2432ad5c7b8724dc",
+      "date": "2026-07-07T09:00:21+02:00",
+      "author": "Tom Erik Støwer",
+      "email": "testower@gmail.com",
+      "message": "Harmonize Renovate onto shared entur/ror-renovate-config"
+    },
+    {
+      "sha": "88ec4431e41513087a127fdea441248fce5fed56",
+      "date": "2026-06-10T15:25:15+02:00",
+      "author": "Lasse Tyrihjell",
+      "email": "lassetyr@gmail.com",
+      "message": "Harden XML parsing against XXE in SiriXmlValidator\n\nInbound SIRI-XML from external providers was parsed with the permissive\nJDK defaults (XMLInputFactory/DocumentBuilderFactory), allowing external\nentity resolution and DTD-based attacks (XXE / billion laughs).\n\nAdd SecureXmlFactories with DTD and external entities disabled, and use\nit for both the StAX and DOM parsers in SiriXmlValidator.\n\nVerified with SecureXmlFactoriesTest: the previous DocumentBuilder\nactually attempted to read file:///etc/hostname; the hardened factory\nnow rejects the DOCTYPE while still parsing valid SIRI.\n"
+    },
+    {
+      "sha": "174080e6199252f34ea439a7f458e25068e463ca",
+      "date": "2026-06-08T13:05:51+02:00",
+      "author": "Lasse Tyrihjell",
+      "email": "lassetyr@gmail.com",
+      "message": "Hardening subscription-restart when remote server is down _and_ heartbeats are not supported remotely\n"
+    },
+    {
+      "sha": "bc328ceb8310a8a90df5051a155faf76f291021f",
+      "date": "2026-06-08T13:05:44+02:00",
+      "author": "Lasse Tyrihjell",
+      "email": "lassetyr@gmail.com",
+      "message": "Downgrading Kafka to avoid missing transient dependency\n"
+    },
+    {
+      "sha": "eeeb74212168f4bc1c292c49e3d19b43209f780c",
+      "date": "2026-06-08T11:59:24+02:00",
+      "author": "Lasse Tyrihjell",
+      "email": "lassetyr@gmail.com",
+      "message": "Dependency upgrades\n"
+    },
+    {
+      "sha": "8f626245c91e82f016773bc4ba08cd821f9069c0",
+      "date": "2026-06-02T10:03:41+02:00",
+      "author": "Lasse Tyrihjell",
+      "email": "lassetyr@gmail.com",
+      "message": "Improve handling of relative urls in validation-index\n"
+    },
+    {
+      "sha": "1b45cfe6a903c73f5395b5cdfdf0f76155d215d9",
+      "date": "2026-05-29T15:10:02+02:00",
+      "author": "Lasse Tyrihjell",
+      "email": "lassetyr@gmail.com",
+      "message": "Remove annotations from codespace-names\n"
+    },
+    {
+      "sha": "c9f7cff1d8e3d6c1b2e351ec47b7c2fd78de4d56",
+      "date": "2026-05-29T14:53:32+02:00",
+      "author": "Lasse Tyrihjell",
+      "email": "lassetyr@gmail.com",
+      "message": "Adjust validation landingpage\n"
+    },
+    {
+      "sha": "510e9cdcaec62a4c0667b16eae8b240032dc3472",
+      "date": "2026-05-29T14:32:17+02:00",
+      "author": "Lasse Tyrihjell",
+      "email": "lassetyr@gmail.com",
+      "message": "Add optional mapping list for codespace-names - used in validation landing-page\n"
+    },
+    {
+      "sha": "284b0bc7074b84992f733f2d45eab6361055d7fe",
+      "date": "2026-05-29T11:42:47+02:00",
+      "author": "Lasse Tyrihjell",
+      "email": "lassetyr@gmail.com",
+      "message": "Add SIRI Validation landing page listing all codespaces\n\nNew GET /anshar/validation endpoint renders a responsive Bootstrap card\ngrid (up to 4 columns) with one card per codespace and its subscription\ncount. Cards are clickable into the existing per-codespace validation\npage; that page gains a back-link to the landing page.\n\nImplementation:\n- SubscriptionManager.getCodespaces() aggregates subscriptions by\n  case-insensitive codespace, skipping null/blank dataset ids, and\n  picks the alphabetically smallest variant per group for deterministic\n  display (Hazelcast IMap iteration order is not insertion-ordered).\n- New Camel route direct:validation.index renders templates/validation-index.ftl\n- Unit test in SubscriptionManagerTest covers grouping, counting,\n  sorting and the null/blank filter.\n"
+    },
+    {
+      "sha": "e74bace0786ef0bbe86657e820f1a48ca1feb31a",
+      "date": "2026-05-28T11:40:29+02:00",
+      "author": "Lasse Tyrihjell",
+      "email": "lassetyr@gmail.com",
+      "message": "Updating Camel + Spring Boot to latest versions\n"
+    },
+    {
+      "sha": "cdc255460e28a7b0b6977e754a4c3e90c3801e4d",
+      "date": "2026-05-28T10:11:55+02:00",
+      "author": "Lasse Tyrihjell",
+      "email": "lassetyr@gmail.com",
+      "message": "Reduce more logging\n"
+    },
+    {
+      "sha": "fcd9e16774c484e8d43d735b541205fccb8ad988",
+      "date": "2026-05-20T15:29:15+02:00",
+      "author": "Trygve Aasjord",
+      "email": "trygve.aasjord@ruter.no",
+      "message": "Reduce logging in splitDataForProcessing route, also adding routeId so logging levels can be configured for the route.\n"
+    },
+    {
+      "sha": "44e91d6ec0adbd222d2c0e0cb834b13ec1acbd30",
+      "date": "2026-05-12T11:35:33+02:00",
+      "author": "Lasse Tyrihjell",
+      "email": "lassetyr@gmail.com",
+      "message": "Add missing license-info\n"
+    },
+    {
+      "sha": "6dfae270e135c54704a0ed10247518b5389fc567",
+      "date": "2026-05-12T10:17:27+02:00",
+      "author": "Lasse Tyrihjell",
+      "email": "lassetyr@gmail.com",
+      "message": "Remove Advice if version-downgrade resulted in an empty Advice-block\n"
+    },
+    {
+      "sha": "fbeb63cac03c8454311bff6e8db051f2b9b6e9aa",
+      "date": "2026-05-08T14:18:39+02:00",
+      "author": "Lasse Tyrihjell",
+      "email": "lassetyr@gmail.com",
+      "message": "Update situations-template with more details\n"
+    },
+    {
+      "sha": "d78c37b504f698bbb2b03e1cecb796d1f5a037a5",
+      "date": "2026-04-30T13:02:22+02:00",
+      "author": "Lasse Tyrihjell",
+      "email": "lassetyr@gmail.com",
+      "message": "Update situations-template\n"
+    },
+    {
+      "sha": "60185a74a1194627eb08d5d3c8cd2dea15ed560a",
+      "date": "2026-04-29T13:23:08+02:00",
+      "author": "Lasse Tyrihjell",
+      "email": "lassetyr@gmail.com",
+      "message": "Fix BaseHttpTest\n"
+    }
+  ],
+  "commit_sha": "f7ad33d3d42740b473011d11633044e8576917b7",
+  "extracted_at": "2026-10-05T18:16:17.812641+00:00"
+}

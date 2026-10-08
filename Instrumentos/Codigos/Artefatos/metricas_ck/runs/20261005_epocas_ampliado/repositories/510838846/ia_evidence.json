@@ -1,0 +1,230 @@
+{
+  "ia_status": "com_evidencia",
+  "ia_level": 2,
+  "ia_agents": "Claude Code",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "85b6c06d0443af5e1f6b3e44f05a1eaf315bd7cc",
+      "trailer": "Claude Sonnet 5 <noreply@anthropic.com>"
+    }
+  ],
+  "commits": [
+    {
+      "sha": "c103395eedd6909eab57648c6d55246808723b48",
+      "date": "2026-10-02T13:57:14+02:00",
+      "author": "Oliver Drotbohm",
+      "email": "oliver.drotbohm@broadcom.com",
+      "message": "GH-1921 - Upgrade Maven Wrapper to 3.10.\n"
+    },
+    {
+      "sha": "67989011c3107493a84db93eeb71b11644a89e7c",
+      "date": "2026-10-02T13:56:29+02:00",
+      "author": "Oliver Drotbohm",
+      "email": "oliver.drotbohm@broadcom.com",
+      "message": "GH-1920 - Upgrade to Develocity conventions 0.0.27.\n"
+    },
+    {
+      "sha": "6acf573d78d91c2dccbd88a502203c3482066ea0",
+      "date": "2026-10-02T12:55:57+02:00",
+      "author": "Oliver Drotbohm",
+      "email": "oliver.drotbohm@broadcom.com",
+      "message": "GH-1917 - Skip stale-publication handling for statuses without configured staleness.\n\nDefaultEventPublicationRegistry now only marks publications as failed for statuses Staleness.isMonitored(…) reports as monitored, so configuring only the resubmitted timeout no longer fails PUBLISHED and PROCESSING publications. StalenessProperties rejects zero and negative durations and refuses staleness lookups for statuses that cannot become stale.\n"
+    },
+    {
+      "sha": "5b319b4554d50d48826ef18fc829a02db47672a6",
+      "date": "2026-10-01T14:19:23+02:00",
+      "author": "Oliver Drotbohm",
+      "email": "oliver.drotbohm@broadcom.com",
+      "message": "GH-1903 - Honor registry trigger annotation for publication completion.\n\nCompletionRegisteringAdvisor used to decorate all AFTER_COMMIT @TransactionalEventListener methods, no matter whether spring.modulith.events.registry-trigger-annotation excluded them. For an excluded listener no publication is ever registered, so the completion fell back to the payload-based lookup in the repository, which serializes the event and thus failed for events that cannot be serialized.\n\nThe decision which event listener methods are considered by the Event Publication Registry is now encapsulated in EventListenerMethodMetadata, used by both the advisor and TransactionalEventListeners.\n"
+    },
+    {
+      "sha": "e75d14ab6cca966fc0531624d2b8d11bccc4cee3",
+      "date": "2026-10-01T10:50:53+02:00",
+      "author": "Oliver Drotbohm",
+      "email": "oliver.drotbohm@broadcom.com",
+      "message": "GH-1901 - Polishing.\n\nRefactored test cases.\n"
+    },
+    {
+      "sha": "d648975880a656c9b88c22d80a4f07161d76d112",
+      "date": "2026-09-28T13:38:33+09:00",
+      "author": "cwjohnpark",
+      "email": "pierrotcw@gmail.com",
+      "message": "GH-1901 - Use type name for array types in FormattableType.of(ResolvableType).\n\nFormattableType.of(ResolvableType) used Class#getName(), which renders array types by their JVM binary names (e.g. [B or [Ljava.lang.String;). As the instance is cached under the same key that FormattableType.of(Class) uses, the broken instance also leaked into Class-based lookups, so the result depended on call order. We now use Class#getTypeName() in line with FormattableType.of(Class).\n\nOriginal pull request: GH-1902\nSigned-off-by: cwjohnpark <pierrotcw@gmail.com>\n"
+    },
+    {
+      "sha": "9afdcf40815bfcfdc22ca6a26978f47c336a9f04",
+      "date": "2026-09-23T15:31:25+02:00",
+      "author": "Oliver Drotbohm",
+      "email": "oliver.drotbohm@broadcom.com",
+      "message": "GH-1896 - Calculate Broker routing on original event instead of the mapped payload.\n"
+    },
+    {
+      "sha": "e48d3f902ac049f58bded48944f327440d6af0e0",
+      "date": "2026-09-20T20:47:25+02:00",
+      "author": "Roland Beisel",
+      "email": "info@rolandbeisel.de",
+      "message": "GH-1895 - Defer event mapping in Namastack outbox mode\n\nStore the original domain event in the Namastack outbox and apply the configured mapping when the record is delivered. This keeps selection and routing based on the original event and reports mapping or broker serialization failures as outbox failures.\n\nOriginal pull request: GH-1897\nSigned-off-by: Roland Beisel <info@rolandbeisel.de>\n"
+    },
+    {
+      "sha": "3ac51f5090771561431150c75e7b55543b323786",
+      "date": "2026-09-23T14:14:37+02:00",
+      "author": "Oliver Drotbohm",
+      "email": "oliver.drotbohm@broadcom.com",
+      "message": "GH-1899 - Declare releaseTrain profile explicitly to deactivate profiles active by default.\n\nMaven only deactivates profiles active by default if any of the explicitly activated profiles is declared in the same pom that declares the one active by default. We now explicitly declare the releaseTrain profile so that the one named \"default\" is properly disabled.\n"
+    },
+    {
+      "sha": "3c27a88f3f1f5b55a141fda8a5de1fe127da6e62",
+      "date": "2026-09-18T23:31:11+02:00",
+      "author": "Oliver Drotbohm",
+      "email": "oliver.drotbohm@broadcom.com",
+      "message": "GH-1882 - Release version 2.2.0-M2.\n"
+    },
+    {
+      "sha": "b90dd81ed5efe9af5f7eb800d55166565711c927",
+      "date": "2026-09-18T23:31:12+02:00",
+      "author": "Oliver Drotbohm",
+      "email": "oliver.drotbohm@broadcom.com",
+      "message": "GH-1887 - Upgrade to Micrometer Tracing 1.8.0-M2.\n"
+    },
+    {
+      "sha": "b6a3df79ca54d656345492b306211fbed9791158",
+      "date": "2026-09-18T23:31:11+02:00",
+      "author": "Oliver Drotbohm",
+      "email": "oliver.drotbohm@broadcom.com",
+      "message": "GH-1889 - Upgrade to Spring Boot 4.2.0-M2.\n"
+    },
+    {
+      "sha": "ce7cd2500b503a56486af4d547aad515d80d31d1",
+      "date": "2026-09-21T11:13:19+01:00",
+      "author": "Andy Wilkinson",
+      "email": "andy.wilkinson@broadcom.com",
+      "message": "GH-1882 - Update release train workflows.\n"
+    },
+    {
+      "sha": "750e968f66746db958dcb2e932a52ab21143e6e0",
+      "date": "2026-09-21T08:28:05+02:00",
+      "author": "Oliver Drotbohm",
+      "email": "oliver.drotbohm@broadcom.com",
+      "message": "GH-1565 - Prevent rewrapping of ApplicationEvent implementations into PayloadApplicationEvent.\n"
+    },
+    {
+      "sha": "9bd02551749d5485bd52a84c234a48a0a1b9e819",
+      "date": "2026-09-19T00:30:06+02:00",
+      "author": "Oliver Drotbohm",
+      "email": "oliver.drotbohm@broadcom.com",
+      "message": "GH-1565 - Avoid eager string formatting in the resubmission debug log.\n"
+    },
+    {
+      "sha": "ef3f400ba3e960959ffb20591108cc10e1b53fd1",
+      "date": "2026-09-19T00:27:02+02:00",
+      "author": "Oliver Drotbohm",
+      "email": "oliver.drotbohm@broadcom.com",
+      "message": "GH-1565 - Allow resubmission of publications with a null status.\n\nThe JPA, JDBC and Neo4j event publication repositories guarded status transitions (markProcessing(…), markFailed(…), markResubmitted(…)) with a \"status != target\" condition. NULL never compares equal or unequal to anything in SQL/Cypher, so publications whose status column was NULL (e.g. carried over from a schema predating that column, or written by another persistence layer) could never be resubmitted or marked failed again, without any error or log output.\n"
+    },
+    {
+      "sha": "85b6c06d0443af5e1f6b3e44f05a1eaf315bd7cc",
+      "date": "2026-09-19T00:20:36+02:00",
+      "author": "Oliver Drotbohm",
+      "email": "oliver.drotbohm@broadcom.com",
+      "message": "GH-1890 - Fix ModuleTestExecution resolution for @Nested test classes.\n\nUse TestContextAnnotationUtils.findMergedAnnotation() instead of\nAnnotatedElementUtils.findMergedAnnotation() to resolve\n@ApplicationModuleTest/@ModuleSlicing, so that annotations declared on\nan enclosing class are found for @Nested test classes as well.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>\n"
+    },
+    {
+      "sha": "f64b41a50bdbdd5c6064d6cff5b910791418c42a",
+      "date": "2026-09-18T23:51:44+02:00",
+      "author": "Oliver Drotbohm",
+      "email": "oliver.drotbohm@broadcom.com",
+      "message": "GH-1882 - Upgrade to Develocity conventions 0.0.26.\n"
+    },
+    {
+      "sha": "5673cb68a1105d8a4e4a73c90b79a26d267668b8",
+      "date": "2026-09-18T23:48:00+02:00",
+      "author": "Oliver Drotbohm",
+      "email": "oliver.drotbohm@broadcom.com",
+      "message": "GH-1882 - Update build plugins.\n"
+    },
+    {
+      "sha": "478cd5499ff32e2b00d634a827ef122928affccd",
+      "date": "2026-09-18T22:45:31+02:00",
+      "author": "Oliver Drotbohm",
+      "email": "oliver.drotbohm@broadcom.com",
+      "message": "GH-1882 - Add release.properties for upstream dependency automation.\n"
+    },
+    {
+      "sha": "5b832a1681953481377fc5adf3b9f935a0e1d421",
+      "date": "2026-09-18T22:44:56+02:00",
+      "author": "Oliver Drotbohm",
+      "email": "oliver.drotbohm@broadcom.com",
+      "message": "GH-1882 - Remove obsolete Spring Framework property.\n"
+    },
+    {
+      "sha": "b0c9fe7aa4fc491f30537a476268276dff363ba2",
+      "date": "2026-09-18T17:05:07+02:00",
+      "author": "Oliver Drotbohm",
+      "email": "oliver.drotbohm@broadcom.com",
+      "message": "GH-1882 - Use hardcoded generation references in Javadoc generation.\n"
+    },
+    {
+      "sha": "97ceda4959fb44121b9233b71d9635fe882edf02",
+      "date": "2026-09-18T16:36:32+02:00",
+      "author": "Oliver Drotbohm",
+      "email": "oliver.drotbohm@broadcom.com",
+      "message": "GH-1889 - Upgrade to Spring Boot 4.2 snapshots.\n"
+    },
+    {
+      "sha": "eae134ae18b52ba6176218346e25ad51a922bfd8",
+      "date": "2026-09-18T16:35:59+02:00",
+      "author": "Oliver Drotbohm",
+      "email": "oliver.drotbohm@broadcom.com",
+      "message": "GH-1888 - Upgrade to Spring Framework 7.1 snapshots.\n"
+    },
+    {
+      "sha": "33ba2072f56eb22bd7c444cb202a6715960b296f",
+      "date": "2026-09-18T16:35:34+02:00",
+      "author": "Oliver Drotbohm",
+      "email": "oliver.drotbohm@broadcom.com",
+      "message": "GH-1887 - Upgrade to Micrometer Tracing 1.8 snapshots.\n"
+    },
+    {
+      "sha": "333fa7494d1e02bd6cebe3ba17b95a49b43455d8",
+      "date": "2026-09-18T16:26:09+02:00",
+      "author": "Oliver Drotbohm",
+      "email": "oliver.drotbohm@broadcom.com",
+      "message": "GH-1886 - Upgrade to jGit 7.8.0.202609011348-r.\n"
+    },
+    {
+      "sha": "914fed601f301d2c5e8bd7fd1640e5829c175125",
+      "date": "2026-09-18T16:25:39+02:00",
+      "author": "Oliver Drotbohm",
+      "email": "oliver.drotbohm@broadcom.com",
+      "message": "GH-1883 - Upgrade to Namastack Outbox 1.9.0.\n"
+    },
+    {
+      "sha": "0c4e71669bff2e9689cbe613fd5d623cd25329ea",
+      "date": "2026-09-18T12:17:18+02:00",
+      "author": "Oliver Drotbohm",
+      "email": "oliver.drotbohm@broadcom.com",
+      "message": "GH-1879 - Pin MongoDB integration tests to MongoDB 7.0.\n\nAlso bootstrap a replica set properly.\n"
+    },
+    {
+      "sha": "05383c52e2a54dbe9b9f946b1e7e07aa7d365f02",
+      "date": "2026-09-18T11:23:14+02:00",
+      "author": "Oliver Drotbohm",
+      "email": "oliver.drotbohm@broadcom.com",
+      "message": "GH-1876 - Polishing.\n"
+    },
+    {
+      "sha": "e9e003a6363e2793a0e5eebe320cb02816ed1e0c",
+      "date": "2026-09-17T23:21:40+02:00",
+      "author": "Oliver Drotbohm",
+      "email": "oliver.drotbohm@broadcom.com",
+      "message": "GH-1118 - Polishing.\n"
+    }
+  ],
+  "commit_sha": "c103395eedd6909eab57648c6d55246808723b48",
+  "extracted_at": "2026-10-05T17:54:29.676579+00:00"
+}

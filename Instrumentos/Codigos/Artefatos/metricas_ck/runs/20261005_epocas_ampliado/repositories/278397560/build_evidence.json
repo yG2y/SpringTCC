@@ -1,0 +1,696 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "4.1.1",
+  "spring_boot_major": "4",
+  "java_versions_declared": "${java.version};25",
+  "build_evidence": [
+    {
+      "file": "src/apps/base-images/geoserver/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/apps/base-images/spring-boot/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/apps/geoserver/gwc/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "src/apps/geoserver/gwc/pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "src/apps/geoserver/gwc/pom.xml",
+      "artifact": "spring-boot-starter-gson"
+    },
+    {
+      "file": "src/apps/geoserver/gwc/pom.xml",
+      "artifact": "spring-boot-starter-gson-test"
+    },
+    {
+      "file": "src/apps/geoserver/gwc/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/apps/geoserver/gwc/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/apps/geoserver/pom.xml",
+      "artifact": "spring-boot-starter-aspectj"
+    },
+    {
+      "file": "src/apps/geoserver/pom.xml",
+      "artifact": "spring-boot-starter-aspectj-test"
+    },
+    {
+      "file": "src/apps/geoserver/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "src/apps/geoserver/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/apps/geoserver/restconfig/pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "src/apps/geoserver/restconfig/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/apps/geoserver/wcs/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/apps/geoserver/webui/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "src/apps/geoserver/webui/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "src/apps/geoserver/webui/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/apps/geoserver/wfs/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "src/apps/geoserver/wfs/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "src/apps/geoserver/wfs/pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "src/apps/geoserver/wfs/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/apps/geoserver/wms/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "src/apps/geoserver/wms/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "src/apps/geoserver/wms/pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "src/apps/geoserver/wms/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/apps/geoserver/wps/pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "src/apps/geoserver/wps/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/apps/infrastructure/config/pom.xml",
+      "artifact": "spring-boot-starter-aspectj"
+    },
+    {
+      "file": "src/apps/infrastructure/config/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "src/apps/infrastructure/config/pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "src/apps/infrastructure/config/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/apps/infrastructure/config/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/apps/infrastructure/gateway-webmvc/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "src/apps/infrastructure/gateway-webmvc/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "src/apps/infrastructure/gateway-webmvc/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "src/apps/infrastructure/gateway-webmvc/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "src/apps/infrastructure/gateway-webmvc/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/apps/infrastructure/gateway-webmvc/pom.xml",
+      "artifact": "spring-boot-starter-validation-test"
+    },
+    {
+      "file": "src/apps/infrastructure/gateway-webmvc/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "src/apps/infrastructure/gateway-webmvc/pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "src/apps/infrastructure/gateway-webmvc/pom.xml",
+      "artifact": "spring-boot-starter-restclient"
+    },
+    {
+      "file": "src/apps/infrastructure/gateway-webmvc/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/apps/infrastructure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "src/apps/infrastructure/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/apps/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/build-tools/spring-config-transpiler/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/catalog/backends/common/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "src/catalog/backends/common/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "src/catalog/backends/common/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "src/catalog/backends/common/pom.xml",
+      "artifact": "spring-boot-starter-actuator-test"
+    },
+    {
+      "file": "src/catalog/backends/datadir/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "src/catalog/backends/datadir/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "src/catalog/backends/datadir/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "src/catalog/backends/datadir/pom.xml",
+      "artifact": "spring-boot-starter-actuator-test"
+    },
+    {
+      "file": "src/catalog/backends/pgconfig/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "src/catalog/backends/pgconfig/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "src/catalog/backends/pgconfig/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "src/catalog/backends/pgconfig/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "src/catalog/backends/pgconfig/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/catalog/backends/pgconfig/pom.xml",
+      "artifact": "spring-boot-starter-integration-test"
+    },
+    {
+      "file": "src/catalog/backends/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "src/catalog/backends/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/catalog/cache/pom.xml",
+      "artifact": "spring-boot-starter-cache"
+    },
+    {
+      "file": "src/catalog/cache/pom.xml",
+      "artifact": "spring-boot-starter-cache-test"
+    },
+    {
+      "file": "src/catalog/cache/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "src/catalog/cache/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "src/catalog/events/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "src/catalog/events/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "src/catalog/events/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/catalog/events/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "src/catalog/jackson-bindings/geoserver/pom.xml",
+      "artifact": "spring-boot-starter-json"
+    },
+    {
+      "file": "src/catalog/jackson-bindings/geotools/pom.xml",
+      "artifact": "spring-boot-starter-json"
+    },
+    {
+      "file": "src/catalog/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/config/geoserver-configuration/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/config/spring-boot-simplejndi/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "src/config/spring-boot-simplejndi/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "src/config/spring-boot-simplejndi/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/config/spring-boot-simplejndi/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "src/config/spring-boot-simplejndi/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "src/config/spring-factory/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "src/config/spring-factory/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/config/spring-factory/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "src/config/spring-factory/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "src/extensions/app-schema/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "src/extensions/app-schema/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "src/extensions/control-flow/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "src/extensions/control-flow/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "src/extensions/control-flow/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "src/extensions/core/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "src/extensions/core/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "src/extensions/css-styling/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "src/extensions/css-styling/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "src/extensions/importer/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "src/extensions/importer/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "src/extensions/input-formats/raster-formats/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "src/extensions/input-formats/raster-formats/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "src/extensions/input-formats/raster-formats/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "src/extensions/input-formats/vector-formats/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "src/extensions/input-formats/vector-formats/pom.xml",
+      "artifact": "spring-boot-starter-cache"
+    },
+    {
+      "file": "src/extensions/input-formats/vector-formats/pom.xml",
+      "artifact": "spring-boot-starter-cache-test"
+    },
+    {
+      "file": "src/extensions/input-formats/vector-formats/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "src/extensions/input-formats/vector-formats/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "src/extensions/inspire/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "src/extensions/inspire/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "src/extensions/mapbox-styling/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "src/extensions/mapbox-styling/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "src/extensions/ogcapi/core/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "src/extensions/ogcapi/core/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "src/extensions/ogcapi/features/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "src/extensions/ogcapi/features/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "src/extensions/output-formats/dxf/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "src/extensions/output-formats/dxf/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "src/extensions/output-formats/flatgeobuf/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "src/extensions/output-formats/flatgeobuf/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "src/extensions/output-formats/flatgeobuf/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "src/extensions/output-formats/vector-tiles/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "src/extensions/output-formats/vector-tiles/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "src/extensions/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "src/extensions/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/extensions/security/auth-key/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "src/extensions/security/auth-key/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "src/extensions/security/environment-admin-auth/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "src/extensions/security/environment-admin-auth/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "src/extensions/security/gateway-shared-auth/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "src/extensions/security/gateway-shared-auth/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "src/extensions/security/geoserver-acl/pom.xml",
+      "artifact": "spring-boot-amqp"
+    },
+    {
+      "file": "src/extensions/security/geoserver-acl/pom.xml",
+      "artifact": "spring-boot-starter-cache-test"
+    },
+    {
+      "file": "src/extensions/security/geoserver-acl/pom.xml",
+      "artifact": "spring-boot-starter-cache"
+    },
+    {
+      "file": "src/extensions/security/geoserver-acl/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "src/extensions/security/geoserver-acl/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "src/extensions/security/jdbc/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "src/extensions/security/jdbc/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "src/extensions/security/ldap/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "src/extensions/security/ldap/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "src/extensions/tileverse/parquetry/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "src/extensions/tileverse/parquetry/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "src/gwc/autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-aspectj"
+    },
+    {
+      "file": "src/gwc/autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "src/gwc/autoconfigure/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "src/gwc/autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-aspectj-test"
+    },
+    {
+      "file": "src/gwc/autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-cache-test"
+    },
+    {
+      "file": "src/gwc/autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-jdbc-test"
+    },
+    {
+      "file": "src/gwc/backends/pgconfig/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "src/gwc/backends/pgconfig/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "src/gwc/backends/pgconfig/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/gwc/backends/pgconfig/pom.xml",
+      "artifact": "spring-boot-starter-cache-test"
+    },
+    {
+      "file": "src/gwc/backends/pgconfig/pom.xml",
+      "artifact": "spring-boot-starter-jdbc-test"
+    },
+    {
+      "file": "src/gwc/core/pom.xml",
+      "artifact": "spring-boot-starter-aspectj"
+    },
+    {
+      "file": "src/gwc/core/pom.xml",
+      "artifact": "spring-boot-starter-aspectj-test"
+    },
+    {
+      "file": "src/gwc/core/pom.xml",
+      "artifact": "spring-boot-starter-cache-test"
+    },
+    {
+      "file": "src/gwc/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "src/gwc/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/main/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "src/main/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "src/main/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "src/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "src/starters/observability/pom.xml",
+      "artifact": "spring-boot"
+    },
+    {
+      "file": "src/starters/observability/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "src/starters/observability/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "src/starters/observability/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "src/starters/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "src/starters/spring-boot/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "src/starters/spring-boot/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "src/starters/spring-boot/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "src/starters/spring-boot/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "src/starters/webmvc/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "src/starters/webmvc/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "src/starters/webmvc/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "src/starters/webmvc/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "src/starters/webmvc/pom.xml",
+      "artifact": "spring-boot-starter-actuator-test"
+    }
+  ]
+}

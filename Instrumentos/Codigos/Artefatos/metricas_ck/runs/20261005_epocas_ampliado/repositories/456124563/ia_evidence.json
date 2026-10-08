@@ -1,0 +1,28 @@
+{
+  "ia_status": "com_evidencia",
+  "ia_level": 1,
+  "ia_agents": "Claude Code; Codex / OpenAI",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 0,
+  "evidence": [
+    {
+      "agent": "Codex / OpenAI",
+      "type": "file",
+      "path": "AGENTS.md"
+    },
+    {
+      "agent": "Codex / OpenAI",
+      "type": "file",
+      "path": ".codex/config.toml"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "file",
+      "path": ".claude/skills"
+    }
+  ],
+  "commits": [],
+  "commit_sha": "753fb0b67f7eb1f6bc7c2a1bde1a2966717e4dfc",
+  "extracted_at": "2026-10-05T18:10:51.051973+00:00"
+}

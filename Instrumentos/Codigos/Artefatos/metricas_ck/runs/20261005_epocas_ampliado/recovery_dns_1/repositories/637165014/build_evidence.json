@@ -1,0 +1,20 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "1.0.3;3.2.4",
+  "spring_boot_major": "multiple",
+  "java_versions_declared": "",
+  "build_evidence": [
+    {
+      "file": "chat-service/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "edge-service/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "instrument-service/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    }
+  ]
+}

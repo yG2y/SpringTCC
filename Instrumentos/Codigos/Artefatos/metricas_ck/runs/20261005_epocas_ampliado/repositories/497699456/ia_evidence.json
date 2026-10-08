@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "94d56e54fbce59338065abd07ea1d75bdde1bddc",
+      "date": "2026-08-21T10:20:27+02:00",
+      "author": "Peter Zmilczak",
+      "email": "peter.zmilczak@gmail.com",
+      "message": "adjust create-release workflow to use token input instead of GITHUB_TOKEN (#177)"
+    },
+    {
+      "sha": "178060727a23a486dfb9f92dc7522efbf3c9c0d9",
+      "date": "2026-08-21T08:51:33+02:00",
+      "author": "Peter Zmilczak",
+      "email": "peter.zmilczak@gmail.com",
+      "message": "release to main - preparation for next development cycle (#176)\n\n* [ci skip] Generated CHANGELOG.md and prepare version for next release\n\n* [Releasing new version] prepare release 3.1.0\n\n* [Releasing new version] prepare for next development iteration\n\n---------\n\nCo-authored-by: hofund-bot <hofund-bot@logchange.dev>\nCo-authored-by: release-bot <release-bot@github.com>"
+    },
+    {
+      "sha": "81b22ef3ecf68d0e82750c9db598b02bab8ccbb4",
+      "date": "2026-08-21T08:44:16+02:00",
+      "author": "Peter Zmilczak",
+      "email": "peter.zmilczak@gmail.com",
+      "message": "Add queue connection support and improve metric binding resilience (#175)\n\n* Add queue connection support and improve metric binding resilience\n\n- Introduced `SimpleHofundQueueConnection` and `AbstractHofundBasicQueueConnection` for handling queue, topic, and message broker connections.\n- Prevented `null` connections from breaking metric binding by skipping and logging invalid entries.\n- Updated `HofundEdgeMeter` and `HofundNodeMeter` to utilize the new `HofundConnections.from` utility.\n- Added Spring support for queue connections with `HofundBasicQueueConnectionProvider`.\n- Bumped project version to `3.1.0-SNAPSHOT`.\n\n* Add merge request references to changelog entries\n\n* Add tests for skipping null connections in queue provider and connection utils"
+    },
+    {
+      "sha": "446be2e46506c4a0030af66ebe2da6b3e0ce666b",
+      "date": "2026-08-20T16:20:56+02:00",
+      "author": "Peter Zmilczak",
+      "email": "peter.zmilczak@gmail.com",
+      "message": "Update dependency io.github.git-commit-id:git-commit-id-maven-plugin to v10 (#167)\n\nCo-authored-by: Renovate Bot <renovate@whitesourcesoftware.com>"
+    },
+    {
+      "sha": "bae741f074062c01c044b88dcdedc400239096a9",
+      "date": "2026-08-20T16:15:02+02:00",
+      "author": "Peter Zmilczak",
+      "email": "peter.zmilczak@gmail.com",
+      "message": "Update dependency org.jacoco:jacoco-maven-plugin to v0.8.15 (#170)"
+    },
+    {
+      "sha": "fead34c96cc8a15cc8610211d9be851460d56bc7",
+      "date": "2026-08-20T16:14:47+02:00",
+      "author": "Peter Zmilczak",
+      "email": "peter.zmilczak@gmail.com",
+      "message": "Update dependency org.slf4j:slf4j-simple to v2.0.18 (#169)"
+    },
+    {
+      "sha": "7d4c5db6aaa4b02b11ab86bd031869ae7beb7f1f",
+      "date": "2026-08-20T16:13:41+02:00",
+      "author": "Peter Zmilczak",
+      "email": "peter.zmilczak@gmail.com",
+      "message": "Update dependency io.github.git-commit-id:git-commit-id-maven-plugin to v9.2.0 (#166)\n\nCo-authored-by: Renovate Bot <renovate@whitesourcesoftware.com>"
+    },
+    {
+      "sha": "73f1fda23c04689782d1041d8f5f49202c29a050",
+      "date": "2026-08-20T16:13:28+02:00",
+      "author": "Peter Zmilczak",
+      "email": "peter.zmilczak@gmail.com",
+      "message": "Update Renovate GitHub Action to version 46.2.2"
+    },
+    {
+      "sha": "38c79f5c51d575a7296b9d86585c03e6552eaf1c",
+      "date": "2026-08-20T16:10:43+02:00",
+      "author": "Peter Zmilczak",
+      "email": "peter.zmilczak@gmail.com",
+      "message": "Update spring boot to v4.0.6 (#164)\n\nCo-authored-by: Renovate Bot <renovate@whitesourcesoftware.com>"
+    },
+    {
+      "sha": "10b12d2756aa46e93031e70d9d86432414b4228b",
+      "date": "2026-08-20T16:10:18+02:00",
+      "author": "Peter Zmilczak",
+      "email": "peter.zmilczak@gmail.com",
+      "message": "Update codecov/codecov-action action to v7 (#171)"
+    },
+    {
+      "sha": "2df4ed82359abb59f76bd870f0d29057ebf48572",
+      "date": "2026-08-20T16:09:31+02:00",
+      "author": "Peter Zmilczak",
+      "email": "peter.zmilczak@gmail.com",
+      "message": "Update codecov/codecov-action action to v6 (#165)\n\nCo-authored-by: Renovate Bot <renovate@whitesourcesoftware.com>"
+    },
+    {
+      "sha": "dcf572f68fe6f4215b93068174c943f10d7b077f",
+      "date": "2026-08-20T16:09:05+02:00",
+      "author": "Peter Zmilczak",
+      "email": "peter.zmilczak@gmail.com",
+      "message": "Update renovatebot/github-action action to v46.1.14 (#163)\n\nCo-authored-by: Renovate Bot <renovate@whitesourcesoftware.com>"
+    },
+    {
+      "sha": "04d2114f2235a3642737c4bfd542fef0c8aaf9c3",
+      "date": "2026-08-20T16:08:48+02:00",
+      "author": "Peter Zmilczak",
+      "email": "peter.zmilczak@gmail.com",
+      "message": "Update softprops/action-gh-release action to v3 (#168)\n\nCo-authored-by: Renovate Bot <renovate@whitesourcesoftware.com>"
+    },
+    {
+      "sha": "d9c75c618b2b16e9bf03dcf36153adacd153a9e2",
+      "date": "2026-08-20T16:08:22+02:00",
+      "author": "Peter Zmilczak",
+      "email": "peter.zmilczak@gmail.com",
+      "message": "Update dependency org.sonatype.central:central-publishing-maven-plugin to v0.11.0 (#173)"
+    },
+    {
+      "sha": "55bd9a7e685325894b6b349263c65da885562a36",
+      "date": "2026-08-20T15:48:55+02:00",
+      "author": "Peter Zmilczak",
+      "email": "peter.zmilczak@gmail.com",
+      "message": "Update dependency com.squareup.okhttp3:mockwebserver to v5.5.0 (#174)"
+    },
+    {
+      "sha": "eaa4c22f612829845e1012706d0581c2db0ce360",
+      "date": "2026-03-08T08:31:22+01:00",
+      "author": "Peter Zmilczak",
+      "email": "peter.zmilczak@gmail.com",
+      "message": "Update Maven version and command in renovate config"
+    },
+    {
+      "sha": "66978e4187a2281abf3b7ffd8595b9cb7f5ece77",
+      "date": "2026-03-08T08:30:37+01:00",
+      "author": "Peter Zmilczak",
+      "email": "peter.zmilczak@gmail.com",
+      "message": "Update renovatebot/github-action action to v46.1.3 (#162)\n\nCo-authored-by: Renovate Bot <renovate@whitesourcesoftware.com>"
+    },
+    {
+      "sha": "633338156040cead249770ab529868d766136790",
+      "date": "2026-02-23T14:57:25+01:00",
+      "author": "Peter Zmilczak",
+      "email": "peter.zmilczak@gmail.com",
+      "message": "Update renovatebot/github-action action to v46.1.2 (#160)\n\nCo-authored-by: Renovate Bot <renovate@whitesourcesoftware.com>"
+    },
+    {
+      "sha": "0bcfd496f743320d13b44f229778457a9638ee17",
+      "date": "2026-02-23T14:56:49+01:00",
+      "author": "Peter Zmilczak",
+      "email": "peter.zmilczak@gmail.com",
+      "message": "Update spring boot to v4.0.3 (#161)\n\nCo-authored-by: Renovate Bot <renovate@whitesourcesoftware.com>"
+    },
+    {
+      "sha": "1bf55f2c5aa7f0d1c8a51f4c4c7a304a38932338",
+      "date": "2026-02-12T22:19:18+01:00",
+      "author": "Peter Zmilczak",
+      "email": "peter.zmilczak@gmail.com",
+      "message": "Update renovatebot/github-action action to v46.0.2 (#159)\n\nCo-authored-by: Renovate Bot <renovate@whitesourcesoftware.com>"
+    },
+    {
+      "sha": "4fce8124325e1056bf5db752b8d185ceea2f23e1",
+      "date": "2026-02-07T23:08:25+01:00",
+      "author": "Peter Zmilczak",
+      "email": "peter.zmilczak@gmail.com",
+      "message": "Update renovatebot/github-action action to v46 (#158)\n\nCo-authored-by: Renovate Bot <renovate@whitesourcesoftware.com>"
+    },
+    {
+      "sha": "ca81458a44252fc6914b90cb5a80a3cede4ed873",
+      "date": "2026-01-31T17:22:16+01:00",
+      "author": "Peter Zmilczak",
+      "email": "peter.zmilczak@gmail.com",
+      "message": "Fix command syntax in renovate-config.js"
+    },
+    {
+      "sha": "937db9f2204be5ad69734de6722ea2af6ffb39f2",
+      "date": "2026-01-31T17:17:54+01:00",
+      "author": "Peter Zmilczak",
+      "email": "peter.zmilczak@gmail.com",
+      "message": "Update spring boot to v4.0.2 (#157)\n\nCo-authored-by: Renovate Bot <renovate@whitesourcesoftware.com>"
+    },
+    {
+      "sha": "cd6eb4e68bfccb049e9bb749a48c762038ee23ae",
+      "date": "2026-01-31T17:17:38+01:00",
+      "author": "Peter Zmilczak",
+      "email": "peter.zmilczak@gmail.com",
+      "message": "Update renovatebot/github-action action to v44.2.6 (#156)\n\nCo-authored-by: Renovate Bot <renovate@whitesourcesoftware.com>"
+    },
+    {
+      "sha": "c02dea4e1cb1443379a036cb475c5e32cd426bf0",
+      "date": "2026-01-31T17:17:21+01:00",
+      "author": "Peter Zmilczak",
+      "email": "peter.zmilczak@gmail.com",
+      "message": "release to main - preparation for next development cycle (#155)\n\n* [ci skip] Generated CHANGELOG.md and prepare version for next release\n\n* [Releasing new version] prepare release 3.0.1\n\n* [Releasing new version] prepare for next development iteration\n\n---------\n\nCo-authored-by: hofund-bot <hofund-bot@logchange.dev>\nCo-authored-by: release-bot <release-bot@github.com>"
+    },
+    {
+      "sha": "a6aefc8f6068309a0cc7d5ee88c65461061bb8da",
+      "date": "2026-01-18T20:23:20+01:00",
+      "author": "Peter Zmilczak",
+      "email": "peter.zmilczak@gmail.com",
+      "message": "Update spring boot to v4.0.1 (#153)\n\n* Update spring boot to v4.0.1\n\n* add test dependencies for restclient and actuator\n\n---------\n\nCo-authored-by: Renovate Bot <renovate@whitesourcesoftware.com>"
+    },
+    {
+      "sha": "223b78877f0a8db18cd99aa6abb3cc2763f35fd3",
+      "date": "2026-01-18T20:18:09+01:00",
+      "author": "Peter Zmilczak",
+      "email": "peter.zmilczak@gmail.com",
+      "message": "Update renovatebot/github-action action to v44.2.4 (#152)\n\nCo-authored-by: Renovate Bot <renovate@whitesourcesoftware.com>"
+    },
+    {
+      "sha": "c83333e0050abcc7a3b37c36378e3fd08419daad",
+      "date": "2026-01-18T20:17:54+01:00",
+      "author": "Peter Zmilczak",
+      "email": "peter.zmilczak@gmail.com",
+      "message": "Update dependency org.sonatype.central:central-publishing-maven-plugin to v0.10.0 (#154)\n\nCo-authored-by: Renovate Bot <renovate@whitesourcesoftware.com>"
+    },
+    {
+      "sha": "5d53993cd98872c8f72f983b7cff88e43dafbd2f",
+      "date": "2025-12-02T19:00:53+01:00",
+      "author": "Peter Zmilczak",
+      "email": "peter.zmilczak@gmail.com",
+      "message": "Update renovatebot/github-action action to v44.0.5 (#151)\n\nCo-authored-by: Renovate Bot <renovate@whitesourcesoftware.com>"
+    },
+    {
+      "sha": "3bcba204f7699f9f3e0387d10a7e4d6ba7714a32",
+      "date": "2025-12-02T19:00:42+01:00",
+      "author": "Peter Zmilczak",
+      "email": "peter.zmilczak@gmail.com",
+      "message": "Update dependency org.apache.maven.plugins:maven-source-plugin to v3.4.0 (#150)\n\nCo-authored-by: Renovate Bot <renovate@whitesourcesoftware.com>"
+    }
+  ],
+  "commit_sha": "94d56e54fbce59338065abd07ea1d75bdde1bddc",
+  "extracted_at": "2026-10-05T18:14:33.575767+00:00"
+}

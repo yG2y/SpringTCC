@@ -1,0 +1,48 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "2.4.13;2.7.18",
+  "spring_boot_major": "2",
+  "java_versions_declared": "",
+  "build_evidence": [
+    {
+      "file": "collapse-executor-integration/collapse-executor-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "collapse-executor-integration/collapse-executor-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "collapse-executor-integration/collapse-executor-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-undertow"
+    },
+    {
+      "file": "collapse-executor-integration/collapse-executor-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-starter-jetty"
+    },
+    {
+      "file": "collapse-executor-integration/collapse-executor-spring-boot-autoconfigure/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "collapse-executor-integration/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "collapse-executor-samples/collapse-executor-sample-sequence/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "collapse-executor-samples/collapse-executor-sample-spring-boot/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "collapse-executor-samples/collapse-executor-sample-spring-boot/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "collapse-executor-samples/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    }
+  ]
+}

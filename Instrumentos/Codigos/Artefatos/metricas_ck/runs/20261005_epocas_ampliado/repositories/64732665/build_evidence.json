@@ -1,0 +1,44 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${spring.version}",
+  "spring_boot_major": "unknown",
+  "java_versions_declared": "17",
+  "build_evidence": [
+    {
+      "file": "juneau-examples/juneau-examples-mcp/build-overlay/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "juneau-examples/juneau-examples-mcp/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "juneau-integration-tests/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "juneau-integration-tests/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "juneau-integration-tests/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "juneau-petstore/juneau-petstore-springboot/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "juneau-petstore/juneau-petstore-springboot/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "juneau-rest/juneau-rest-server-springboot/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "juneau-rest/juneau-rest-server-springboot/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    }
+  ]
+}

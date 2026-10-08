@@ -1,0 +1,392 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${spring-boot.version};4.1.1",
+  "spring_boot_major": "4",
+  "java_versions_declared": "21;25",
+  "build_evidence": [
+    {
+      "file": "examples/jwt-client-spring-boot-example/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "examples/jwt-client-spring-boot-example/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "examples/jwt-client-spring-boot-example/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "examples/jwt-client-spring-boot-example/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "examples/jwt-client-spring-boot-example/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "examples/jwt-client-spring-boot-example/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "examples/jwt-client-spring-boot-example/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "examples/jwt-client-spring-boot-example/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "examples/jwt-resource-server-spring-boot-example/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "examples/jwt-resource-server-spring-boot-example/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "examples/jwt-resource-server-spring-boot-example/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "examples/jwt-resource-server-spring-boot-example/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "examples/jwt-resource-server-spring-boot-example/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "examples/jwt-resource-server-spring-boot-example/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "examples/jwt-resource-server-spring-boot-example/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "examples/jwt-resource-server-spring-boot-example/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "jwt-client/jwt-client-spring-core/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "jwt-client/jwt-client-spring-core/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "jwt-client/jwt-client-spring-core/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "jwt-client/jwt-client-spring-core/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "jwt-client/jwt-client-spring-resttemplate/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "jwt-client/jwt-client-spring-resttemplate/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "jwt-client/jwt-client-spring-resttemplate/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "jwt-client/jwt-client-spring-resttemplate/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "jwt-client/jwt-client-spring-resttemplate/pom.xml",
+      "artifact": "spring-boot-restclient"
+    },
+    {
+      "file": "jwt-client/jwt-client-spring-resttemplate/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "jwt-client/jwt-client-spring-resttemplate/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "jwt-client/jwt-client-spring-webflux/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "jwt-client/jwt-client-spring-webflux/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "jwt-client/jwt-client-spring-webflux/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "jwt-client/jwt-client-spring-webflux/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "jwt-client/jwt-client-spring-webflux/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "jwt-client/jwt-client-spring-webflux/pom.xml",
+      "artifact": "spring-boot-starter-webclient"
+    },
+    {
+      "file": "jwt-client/jwt-client-spring/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "jwt-client/jwt-client-spring/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "jwt-client/jwt-client-spring/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "jwt-client/jwt-client-spring/pom.xml",
+      "artifact": "spring-boot-starter-oauth2-client"
+    },
+    {
+      "file": "jwt-client/jwt-client-spring/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "jwt-client/jwt-client-spring/pom.xml",
+      "artifact": "spring-boot-restclient"
+    },
+    {
+      "file": "jwt-client/jwt-client-spring/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "jwt-client/jwt-client-spring/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "jwt-client/jwt-client-spring/pom.xml",
+      "artifact": "spring-boot-restclient-test"
+    },
+    {
+      "file": "jwt-server/spring/jwt-spring-common/pom.xml",
+      "artifact": "spring-boot-starter-oauth2-resource-server"
+    },
+    {
+      "file": "jwt-server/spring/jwt-spring-common/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "jwt-server/spring/jwt-spring-common/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "jwt-server/spring/jwt-spring-common/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "jwt-server/spring/jwt-spring-common/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "jwt-server/spring/jwt-spring-common/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "jwt-server/spring/jwt-spring-grpc-common/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "jwt-server/spring/jwt-spring-grpc-common/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "jwt-server/spring/jwt-spring-grpc-common/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "jwt-server/spring/jwt-spring-grpc-common/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "jwt-server/spring/jwt-spring-grpc-common/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "jwt-server/spring/jwt-spring-grpc-common/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "jwt-server/spring/jwt-spring-grpc-native/pom.xml",
+      "artifact": "spring-boot-starter-grpc-server"
+    },
+    {
+      "file": "jwt-server/spring/jwt-spring-grpc-native/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "jwt-server/spring/jwt-spring-grpc-native/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "jwt-server/spring/jwt-spring-grpc-native/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "jwt-server/spring/jwt-spring-grpc-native/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "jwt-server/spring/jwt-spring-grpc-native/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "jwt-server/spring/jwt-spring-grpc-native/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "jwt-server/spring/jwt-spring-grpc-native/pom.xml",
+      "artifact": "spring-boot-webmvc-test"
+    },
+    {
+      "file": "jwt-server/spring/jwt-spring-web/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "jwt-server/spring/jwt-spring-web/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "jwt-server/spring/jwt-spring-web/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "jwt-server/spring/jwt-spring-web/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "jwt-server/spring/jwt-spring-web/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "jwt-server/spring/jwt-spring-web/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "jwt-server/spring/jwt-spring-web/pom.xml",
+      "artifact": "spring-boot-restclient-test"
+    },
+    {
+      "file": "jwt-server/spring/jwt-spring-web/pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "jwt-server/spring/jwt-spring-webflux/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "jwt-server/spring/jwt-spring-webflux/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "jwt-server/spring/jwt-spring-webflux/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "jwt-server/spring/jwt-spring-webflux/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "jwt-server/spring/jwt-spring-webflux/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "jwt-server/spring/jwt-spring-webflux/pom.xml",
+      "artifact": "spring-boot-webmvc-test"
+    },
+    {
+      "file": "jwt-server/spring/jwt-spring-webflux/pom.xml",
+      "artifact": "spring-boot-webtestclient"
+    },
+    {
+      "file": "jwt-test/jwt-junit5-spring/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-oauth2-client"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-webmvc-test"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-oauth2-resource-server"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-restclient"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-restclient-test"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-grpc-server"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-webclient"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-restclient"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-webtestclient"
+    }
+  ]
+}

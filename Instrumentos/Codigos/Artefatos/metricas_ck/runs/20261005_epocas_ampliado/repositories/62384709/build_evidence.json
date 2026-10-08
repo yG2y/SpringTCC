@@ -1,0 +1,112 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "$springBootVersion;${springboot.version};2.0.3.RELEASE;2.0.4.RELEASE;2.2.4.RELEASE;2.4.0;2.5.12;2.6.6;3.5.3",
+  "spring_boot_major": "multiple",
+  "java_versions_declared": "",
+  "build_evidence": [
+    {
+      "file": "SpringAuth0/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "SpringBoot/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "SpringBoot/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "SpringBoot/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "SpringBoot/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "SpringBoot/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "SpringBoot/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "SpringBootKafka/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "SpringBootKafka/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "SpringBootKafka/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "SpringCloud/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "SpringCloud/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "SpringCloud/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "SpringCloud/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "SpringCloud/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "SpringGraphQL/Client/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "SpringGraphQL/Server/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "SpringGraphQL/Server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "SpringGraphQL/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "SpringHazelcast/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "SpringReactive/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "SpringReactive/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "SpringReactive/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "SpringSecurity/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "spring-boot-environment-starter/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring-boot-environment-starter/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    }
+  ]
+}

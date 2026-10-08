@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "6fa0e66cab52e36face8bcd4d35da506d06b6a2f",
+      "date": "2026-09-03T09:52:10+01:00",
+      "author": "Jacob Harrison",
+      "email": "35296832+JacobHarrisonONS@users.noreply.github.com",
+      "message": "RAS-2044 - migrate to wif (#272)\n\n* migrate to wif\n\n* formatting\n\n* auto patch increment\n\n* remove unneeded\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "b440dcef26517ec9c7ec41c7fad5a400d25bd3f7",
+      "date": "2026-07-14T12:27:17+01:00",
+      "author": "Jacob Harrison",
+      "email": "35296832+JacobHarrisonONS@users.noreply.github.com",
+      "message": "bump cloud proxy (#271)\n\n* bump cloud proxy\n\n* auto patch increment\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "6ed63daf5ef2b6a9fc899a9694fb5d3458af35cf",
+      "date": "2026-04-08T09:03:07+01:00",
+      "author": "Mark Price",
+      "email": "pricem14pc@users.noreply.github.com",
+      "message": "Address sample unit distribution heap memory issues (#269)"
+    },
+    {
+      "sha": "fab9f76a3d11cde479ebc0f02509337899946249",
+      "date": "2026-03-23T08:45:31Z",
+      "author": "matthew-robinson-ons",
+      "email": "113037557+matthew-robinson-ons@users.noreply.github.com",
+      "message": "Upgrade logstash and jackson (#270)\n\n* upgrade logstash and jackson\n\n* auto patch increment\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "8b4b4357904763c55e5987b7eb52a8c6712e4d04",
+      "date": "2026-02-23T12:03:07Z",
+      "author": "Mark Price",
+      "email": "pricem14pc@users.noreply.github.com",
+      "message": "Allow livenessProbe and heap memory allocation (#268)\n\n"
+    },
+    {
+      "sha": "206b7981576badff655efff5404a45eb28c2104d",
+      "date": "2025-10-28T11:11:24Z",
+      "author": "matthew-robinson-ons",
+      "email": "113037557+matthew-robinson-ons@users.noreply.github.com",
+      "message": "Introduce ArchiveExemption.txt (#266)\n\n* Introduce ArchiveExemption.txt\n\n* auto patch increment\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "807422d5cdb4bebe53b08ea6da1b1ae7d70a4ebb",
+      "date": "2025-05-13T13:39:30+01:00",
+      "author": "Alejandro Arroyo",
+      "email": "41422777+arroyoAle@users.noreply.github.com",
+      "message": "RAS-1418 EPIC: Unpinned tag for a non-immutable Action in workflow (#264)\n\n* pinning gha to commit refs\n\n* auto patch increment\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "9f321685d30eb8edee580f584f30b3a425ad28b0",
+      "date": "2025-04-01T10:22:58+01:00",
+      "author": "Serena",
+      "email": "matt.crocker@gmail.com",
+      "message": "Run app with user instead of root (#263)\n\n* Run app with user instead of root\n\n* Remove unnecessary line for Java\n\n* Alpine does stuff differently\n\n* Whoops\n\n* Double whoops\n\n* Try without chown\n\n* auto patch increment\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "9e83226722f82e3c27418baad4603f269cbf93f6",
+      "date": "2025-02-10T09:37:45Z",
+      "author": "Mark Price",
+      "email": "pricem14pc@users.noreply.github.com",
+      "message": "Use migrated GAR pubsub-emulator image (#262)\n\n* Use migrated GAR pubsub-emulator image\n\n* auto patch increment\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "dd3288fc6cae6b7b21092943ccd10d093107bfb9",
+      "date": "2025-01-16T14:28:11Z",
+      "author": "matthew-robinson-ons",
+      "email": "113037557+matthew-robinson-ons@users.noreply.github.com",
+      "message": "Upgrade actions/cache to v4 (#261)\n\n* upgrade actions/cache to v4\n\n* auto patch increment\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "ce11665ebaaad8ab0580e1a094f415d722c08bb1",
+      "date": "2024-12-16T14:25:36Z",
+      "author": "Mark Price",
+      "email": "pricem14pc@users.noreply.github.com",
+      "message": "Upgrade to Java 21 spring boot 3 (#258)\n\n* Initial Java 21 and Spring Boot 3 updates\n\n* POM Java 21 update\n\n* Updates\n\n* More updates\n\n* auto patch increment\n\n* Missing application.yml subscription\n\n* update dependencies and tidy up testing\n\n* remove more testing\n\n* remove deprecated setLabels\n\n* fix hibernate error\n\n* fix hibernate dependency\n\n* furhter fixes\n\n* fix pom\n\n* testing-java-upgrade\n\n* auto patch increment\n\n* testing\n\n* remove wiremock testing\n\n* Adding memory logging\n\n* Reformat\n\n* Save SampleUnit each time\n\n* Save SampleUnit each time test\n\n* Revert memory and save unit logic\n\n* add codeowners file\n\n* gar migration (#260)\n\n* gar migration\n\n* adjust collection exercise image reference\n\n* adjust other images\n\n* revert pubsub emulator image change\n\n* remove GCR line from main.yml\n\n* add another docker command to  main.yml\n\n* re-add configure gcr step\n\n* revert postgres image ref\n\n* fix docker command\n\n* revert previous change\n\n* auto patch increment\n\n* remove release_host variable\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>\n\n* auto patch increment\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>\nCo-authored-by: matthew-robinson-ons <matthew.robinson@ons.gov.uk>\nCo-authored-by: anwilkie <47449873+anwilkie@users.noreply.github.com>\nCo-authored-by: matthew-robinson-ons <113037557+matthew-robinson-ons@users.noreply.github.com>"
+    },
+    {
+      "sha": "c1370c8db3f1d1d6a57d6594c20e83014d137b4c",
+      "date": "2024-12-16T11:10:53Z",
+      "author": "anwilkie",
+      "email": "47449873+anwilkie@users.noreply.github.com",
+      "message": "gar migration (#260)\n\n* gar migration\n\n* adjust collection exercise image reference\n\n* adjust other images\n\n* revert pubsub emulator image change\n\n* remove GCR line from main.yml\n\n* add another docker command to  main.yml\n\n* re-add configure gcr step\n\n* revert postgres image ref\n\n* fix docker command\n\n* revert previous change\n\n* auto patch increment\n\n* remove release_host variable\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "8cd64ec783ff54c3cffa5c163c938a93bb9a587a",
+      "date": "2024-09-06T11:22:44+01:00",
+      "author": "Mark Price",
+      "email": "pricem14pc@users.noreply.github.com",
+      "message": "Upgrading Spring Boot to 2.7 (#257)\n\n* Upgrading Spring Boot to 2.7\n* Update other dependencies\n* Upgrade google libraries\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "02ebb1bac22eefcda6341668ee4ba4a8be3167ac",
+      "date": "2024-08-14T10:01:28+02:00",
+      "author": "Alejandro Arroyo",
+      "email": "41422777+arroyoAle@users.noreply.github.com",
+      "message": "RAS-1238 Update to docker compose from docker-compose (#256)\n\n* updating docker compose with gpg sign\n\n* auto patch increment\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "798d9fe37f5cd28c47c05d962f98e9f1204a2df1",
+      "date": "2024-04-16T09:33:53+01:00",
+      "author": "SteveScorfield",
+      "email": "47788084+SteveScorfield@users.noreply.github.com",
+      "message": "Sample service CachingTestIT requires redesign (#254)\n\n* Initial commit of fix\n\n* auto patch increment\n\n* Have removed caching test\n\n* Forgot to revert changes\n\n* Putting the collection instrument port setting back in for future use\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "921765b63ccb4c99dd698583bd08391022b196ab",
+      "date": "2024-03-12T11:08:22Z",
+      "author": "matthew-robinson-ons",
+      "email": "113037557+matthew-robinson-ons@users.noreply.github.com",
+      "message": "Migrate Spring cloud pubsub to google cloud pubsub (#253)\n\n* update dependencies\n\n* auto patch increment\n\n* update to latest versionof bom\n\n* update actions\n\n* re-add charts\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "5e2e0557c096f6a3befc4df0119feb6b82acb4e9",
+      "date": "2024-02-21T09:34:58Z",
+      "author": "mfcrocker",
+      "email": "matt.crocker@gmail.com",
+      "message": "Update build dependencies (#250)\n\n* Update build dependencies\n\n---------\n\nCo-authored-by: Mark Price <mark.price@ons.gov.uk>\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "32265c17d1c2f9673a832b067694a716a6eff4f6",
+      "date": "2023-12-22T09:59:16Z",
+      "author": "matthew-robinson-ons",
+      "email": "113037557+matthew-robinson-ons@users.noreply.github.com",
+      "message": "Migrate to eclipse temurin 17 image (#251)\n\n* update docker image\n\n* update package management command\n\n* new line eof\n\n* auto patch increment\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "32d51571df89480b4d1db17fa74dc845a082f6a8",
+      "date": "2023-12-12T11:09:47Z",
+      "author": "matthew-robinson-ons",
+      "email": "113037557+matthew-robinson-ons@users.noreply.github.com",
+      "message": "Update set-output to environment variables (#249)\n\n* update set-output to environment variables\n\n* auto patch increment\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "dd0f380676cf3672602a1b65f48d5a9157e58c39",
+      "date": "2023-10-10T15:11:56+01:00",
+      "author": "Alejandro Arroyo",
+      "email": "41422777+arroyoAle@users.noreply.github.com",
+      "message": "RAS-638 Investigate how \"Ready for live\" button works, when replacing sample file (track time) (#248)\n\n* Adding Sample Readiness request to collection exercise\n\n* Formatting\n\n* Fixing test\n\n* auto patch increment\n\n* Adding app configuration and helm values for collex\n\n* Tidying up and changing values form String to UUID\n\n* fixing helm template\n\n* only sending sample summary id to collex\n\n* updating request URI\n\n* moving call out of db session\n\n* adding prints to see url\n\n* adding test\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "7e1ec2f0f293f4029898f2bd10a4d732a429e362",
+      "date": "2023-09-22T14:12:09+01:00",
+      "author": "anwilkie",
+      "email": "47449873+anwilkie@users.noreply.github.com",
+      "message": "change mockito inline to mockito core (#247)\n\n* change mockito inline to mockito core\n\n* change mockito core version to 2.22.0\n\n* auto patch increment\n\n* change mockito core version to 3.3.0\n\n* change mockito core version to 4.0.0\n\n* change mockito core version to 5.0.0\n\n* change mockito core version to 4.11.0\n\n* change mockito core version to 4.6.0\n\n* change mockito core version to 4.3.0\n\n* change mockito core version to 4.5.0\n\n* change mockito core version to 4.4.0\n\n* add bytebuddy\n\n* update mockito core to latest version\n\n* fix indentation\n\n* fix indentation 2\n\n* fix indentation 3\n\n* fix indentation 5\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "0fb5d2806c7880c9eb62238aac53986287a75d00",
+      "date": "2023-09-14T14:50:18+01:00",
+      "author": "mfcrocker",
+      "email": "matt.crocker@gmail.com",
+      "message": "Update the Maven fmt plugin (#246)\n\n* Update the Maven fmt plugin\n\n* auto patch increment\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "3c2971ae78ce2c1b66f0f55b6d19718c2e46e46c",
+      "date": "2023-09-08T15:10:16+01:00",
+      "author": "LJBabbage",
+      "email": "lewis.babbage@ons.gov.uk",
+      "message": "RAS-850 Cloud sql proxy term timeout and verbose (#245)\n\n* RAS-850 Cloud sql proxy term timeout and verbose"
+    },
+    {
+      "sha": "fc0d10409ecdc33b3e09d8283a6291df5e6f6e3b",
+      "date": "2023-08-24T13:39:19+01:00",
+      "author": "JacobHarrisonONS",
+      "email": "35296832+JacobHarrisonONS@users.noreply.github.com",
+      "message": "update dependencies (#244)\n\n* update io.commons and opencsv\n\n* auto patch increment\n\n* update dependencies\n\n* revert logstash\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "f2d62ab4af32caedca9852a6ea09ceeb9d8cf7e4",
+      "date": "2023-06-08T09:33:28+01:00",
+      "author": "anwilkie",
+      "email": "47449873+anwilkie@users.noreply.github.com",
+      "message": "updated testng (#242)\n\n* updated testng\n\n* auto patch increment\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <matt.crocker+rasrm@gmail.com>"
+    },
+    {
+      "sha": "fc2edc9e93eb08425ac8187c6a2e9bedf68006f9",
+      "date": "2023-05-12T15:00:33+01:00",
+      "author": "LJBabbage",
+      "email": "lewis.babbage@ons.gov.uk",
+      "message": "Update HPA to v2 (#241)\n\n* Update HPA to v2"
+    },
+    {
+      "sha": "d9e68b871352fa1c8d900e98a9f7a0a6766fb6c5",
+      "date": "2023-04-26T14:44:02+01:00",
+      "author": "JacobHarrisonONS",
+      "email": "35296832+JacobHarrisonONS@users.noreply.github.com",
+      "message": "Upgrade to java 17 (#239)\n\n* upgrading springboot and adding custom liquibase\n\n* formatting errors\n\n* auto patch increment\n\n* revert minor changes to sql files\n\n* Downgrade to 2.5.12\n\n* Try deleting not used liquibase changes\n\n* Upgrade back to 2.6.7\n\n* Update dependencies\n\n* Attempt to fix\n\n* auto patch increment\n\n* Copy what case did\n\n* Copy pasta error\n\n* Another copy paste mistake\n\n* try higher springboot\n\n* do not create sequence if it exists\n\n* change ddl auto\n\n* change liquibase to not run\n\n* change liquibase back\n\n* auto patch increment\n\n* auto patch increment\n\n* create sampleunit table if none exists\n\n* revert changes to sql file\n\n* fix typo\n\n* add liquibase schema property and change database url to match other services\n\n* removing hibernate properties\n\n* removing custom provider\n\n* upgrade to java 17, remove orika for custom mapping, update dependancies for compatibility\n\n* add custom mapper, edit PR template\n\n* bump java version in github workflow\n\n* Revert \"removing hibernate properties\"\n\nThis reverts commit d66d3c1d5c10bd87166244583da869760d0438c1.\n\n* Revert \"removing custom provider\"\n\nThis reverts commit 20026e72c43fbbf67ba76611bf1b9c1570dceb89.\n\n* add spring liquibase default schema\n\n* moving hibernate default_schema location\n\n* set databasechangelog and databasechangeloglock tables\n\n* fix small error\n\n* test\n\n* Enable hibernate logging\n\n* Move default_schema to hibernate root\n\n* Try hibernate ddl none\n\n* Retry hibernate ddl update\n\n* hibernate ddl none\n\n* Trying a new spring datasource property\n\n* Dont defer the running of the script\n\n* Revert and install pgcrypto\n\n* set path\n\n* Testing impact of groundzero script if any\n\n* Deleting groundzero\n\n* Reinstate deltas\n\n* Deleting spring boot ddl\n\n* Adding schema.sql back in\n\n* Fixing pgcrypto quotes\n\n* Dont defer initialization\n\n* Simplifying initialisation\n\n* Updating schema name\n\n* Back to hibernate update\n\n* Stop on error\n\n* Dont let hibernate create tables\n\n* Remove create user\n\n* pgcrypto with no set path\n\n* Reverting schema.sql\n\n* Dont want uer though\n\n* Another schema.sql update\n\n* Add pgcrypto to sample schema and dont run hibernate\n\n* Add pgcrypto to sample schema and dont run hibernate\n\n* Missing WITH keyword\n\n* Remove setDefaultSchema as it affects search_path\n\n* Dont run hibernate ddl\n\n* Removing Hibernate DDL and custom provider\n\n* Re-deleting the redundant deltas 9.32.0 and 9.32.1\n\n* mvn format\n\n* set fmt-maven-plugin back to 2.5.0\n\n* auto patch increment\n\n* bump fmt maven plugin to 2.9.1\n\n* adjust log to see if its causing value to be null\n\n* temp null check\n\n* cottect sampleUnitRef map and remove sampleUnitId because its a uuid.random\n\n* mvn format\n\n* remove debug lines, remove commented code\n\n* remove junit version and set back depencies versions\n\n---------\n\nCo-authored-by: Adam Wilkie <Adam.Wilkie@ons.gov.uk>\nCo-authored-by: ras-rm-pr-bot <matt.crocker+rasrm@gmail.com>\nCo-authored-by: Adam Mann <manny160389@hotmail.com>\nCo-authored-by: anwilkie <47449873+anwilkie@users.noreply.github.com>\nCo-authored-by: Mark Price <mark.price@ons.gov.uk>"
+    },
+    {
+      "sha": "7859f1dae09e6a18b127053fd7b804f2cfeb8d6c",
+      "date": "2023-04-04T16:16:52+01:00",
+      "author": "anwilkie",
+      "email": "47449873+anwilkie@users.noreply.github.com",
+      "message": "upgrading springboot and adding custom liquibase (#226)\n\n"
+    },
+    {
+      "sha": "bf3db3ed95d8a610235e3cff2b76de1754fb835f",
+      "date": "2022-12-22T12:04:14Z",
+      "author": "SteveScorfield",
+      "email": "47788084+SteveScorfield@users.noreply.github.com",
+      "message": "Fix setouput (#238)\n\n* Intial commit of fix to deprecated setouput\n\n* auto patch increment\n\nCo-authored-by: ras-rm-pr-bot <matt.crocker+rasrm@gmail.com>"
+    },
+    {
+      "sha": "c9ac755e7d61d54319d71b245b3dacfd0a304f31",
+      "date": "2022-11-04T14:26:12Z",
+      "author": "JacobHarrisonONS",
+      "email": "35296832+JacobHarrisonONS@users.noreply.github.com",
+      "message": "remove duplication package declaration (#237)\n\n* remove duplication package declaration\n\n* auto patch increment\n\nCo-authored-by: ras-rm-pr-bot <matt.crocker+rasrm@gmail.com>"
+    }
+  ],
+  "commit_sha": "6fa0e66cab52e36face8bcd4d35da506d06b6a2f",
+  "extracted_at": "2026-10-05T18:34:50.072229+00:00"
+}

@@ -1,0 +1,36 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${spring-boot.version}",
+  "spring_boot_major": "unknown",
+  "java_versions_declared": "1.8",
+  "build_evidence": [
+    {
+      "file": "grpcmock-examples/grpcmock-example-spring-boot-async/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "grpcmock-examples/grpcmock-example-spring-boot-async/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "grpcmock-examples/grpcmock-example-spring-boot/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "grpcmock-examples/grpcmock-example-spring-boot/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "grpcmock-spring-boot/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "grpcmock-spring-boot/pom.xml",
+      "artifact": "spring-boot-autoconfigure-processor"
+    },
+    {
+      "file": "grpcmock-spring-boot/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "346cb823cd55d735aac8fc8069ce96623c508813",
+      "date": "2024-11-02T23:13:14+09:00",
+      "author": "yb__char",
+      "email": "68099546+char-yb@users.noreply.github.com",
+      "message": "Merge pull request #327 from depromeet/fix/#324-public-record-alarm\n\nfix: 알림 리스트 페이지 where 조건 처리"
+    },
+    {
+      "sha": "3387549f79b7822550c60e78d85745e6ef4784b4",
+      "date": "2024-11-02T23:11:03+09:00",
+      "author": "ybchar",
+      "email": "uiurihappy@naver.com",
+      "message": "fix: 알림 조회 테스트 수정\n"
+    },
+    {
+      "sha": "c01bf4477aef9a4b0cec931db847307f87f4ff54",
+      "date": "2024-11-02T22:54:00+09:00",
+      "author": "ybchar",
+      "email": "uiurihappy@naver.com",
+      "message": "fix: 알림 리스트 페이지 where 조건 처리\n"
+    },
+    {
+      "sha": "ac1871bd1ec7da990ffba4590d8a5a6578cc554d",
+      "date": "2024-11-01T18:37:56+09:00",
+      "author": "yb__char",
+      "email": "68099546+char-yb@users.noreply.github.com",
+      "message": "Merge pull request #325 from depromeet/fix/#324-public-record-alarm\n\nfix: 알림 페이지, 기록에 대한 예외 처리"
+    },
+    {
+      "sha": "a1fe9c323903e159ff736723bbe557e2ceca9699",
+      "date": "2024-11-01T18:32:46+09:00",
+      "author": "ybchar",
+      "email": "uiurihappy@naver.com",
+      "message": "fix: 알림 페이지, 기록에 대한 예외 처리\n"
+    },
+    {
+      "sha": "2779921ee2f0586996045a8d29c0f21ade908211",
+      "date": "2024-10-25T17:45:32+09:00",
+      "author": "ybchar",
+      "email": "uiurihappy@naver.com",
+      "message": "fix: MissionRecord 불필요한 Comment 연관관계 제거\n"
+    },
+    {
+      "sha": "499730461f06722b10dac308a9f20768cf1eb20d",
+      "date": "2024-10-22T17:29:48+09:00",
+      "author": "yb__char",
+      "email": "68099546+char-yb@users.noreply.github.com",
+      "message": "Merge pull request #322 from depromeet/chore/#321-deploy-workflow\n\nchore: 배포 버전 workflow 추가 구성"
+    },
+    {
+      "sha": "9e688a9006b0d506ddd18f7a811614cf2d205f40",
+      "date": "2024-10-22T17:27:13+09:00",
+      "author": "ybchar",
+      "email": "uiurihappy@naver.com",
+      "message": "hotfix: 자식_댓글을_조회합니다 memberStatus\n"
+    },
+    {
+      "sha": "acd37624400ae2907e7bc121a4d6bd230460bac5",
+      "date": "2024-10-22T17:12:54+09:00",
+      "author": "ybchar",
+      "email": "uiurihappy@naver.com",
+      "message": "chore: 배포 버전 workflow 추가 구성\n"
+    },
+    {
+      "sha": "5596675157ea6d2cdc9da305655fef95017b83b4",
+      "date": "2024-10-22T16:13:35+09:00",
+      "author": "ybchar",
+      "email": "uiurihappy@naver.com",
+      "message": "hotfix: 피드 댓글 수 조회 쿼리 수정 및 탈퇴 회원 예외처리\n"
+    },
+    {
+      "sha": "cebb0b0cd30408e3d7c6e8eaeab69e54db94b6b0",
+      "date": "2024-10-22T13:44:23+09:00",
+      "author": "yb__char",
+      "email": "68099546+char-yb@users.noreply.github.com",
+      "message": "Merge pull request #320 from depromeet/refactor/319-report-entity\n\nrefactor: 신고 엔티티 구조 변경"
+    },
+    {
+      "sha": "346bd48e41f7334fb25ef19e1ac44645f432e5a8",
+      "date": "2024-10-22T13:41:41+09:00",
+      "author": "ybchar",
+      "email": "uiurihappy@naver.com",
+      "message": "fix: repository 메서드 삭제\n"
+    },
+    {
+      "sha": "8eb390bf4db89220ee93bed6a13e49a82f564bae",
+      "date": "2024-10-22T13:37:11+09:00",
+      "author": "ybchar",
+      "email": "uiurihappy@naver.com",
+      "message": "fix: member -> reporter\n"
+    },
+    {
+      "sha": "be6044b6feff482cd2093a78cf8a315834087b28",
+      "date": "2024-10-22T13:32:56+09:00",
+      "author": "ybchar",
+      "email": "uiurihappy@naver.com",
+      "message": "refactor: report 엔티티 구조 변경\n"
+    },
+    {
+      "sha": "9f5fd3604e4891869bca46231a9df376dc412ca4",
+      "date": "2024-10-22T12:09:23+09:00",
+      "author": "ybchar",
+      "email": "uiurihappy@naver.com",
+      "message": "refactor: 회원 탈퇴 report 데이터 삭제\n"
+    },
+    {
+      "sha": "ec66a6311930fb6393d2f9e81063efb7e1ffe8cf",
+      "date": "2024-10-22T11:18:23+09:00",
+      "author": "yb__char",
+      "email": "68099546+char-yb@users.noreply.github.com",
+      "message": "Merge pull request #316 from depromeet/fix/#315-withdraw-comment\n\nfix: 회원 탈퇴 시 탈퇴자 댓글 예외 처리"
+    },
+    {
+      "sha": "f3838378f28ee9f4cb6601c6127fb6f00dc9e46e",
+      "date": "2024-10-21T22:19:22+09:00",
+      "author": "ybchar",
+      "email": "uiurihappy@naver.com",
+      "message": "fix: 탈퇴 회원 nickname 처리\n"
+    },
+    {
+      "sha": "f2af10dd32cd8ae6a8c7db5005e73af65ce050f4",
+      "date": "2024-10-21T22:15:22+09:00",
+      "author": "ybchar",
+      "email": "uiurihappy@naver.com",
+      "message": "Merge branch 'develop' into fix/#315-withdraw-comment\n"
+    },
+    {
+      "sha": "86387c2371b9397e30c3643d3ca7e00c4c22373e",
+      "date": "2024-10-21T01:03:06+09:00",
+      "author": "yb__char",
+      "email": "68099546+char-yb@users.noreply.github.com",
+      "message": "Merge pull request #317 from depromeet/test/#296-comment\n\ntest: 댓글 테스트 코드"
+    },
+    {
+      "sha": "f253cbb9f6355cd9a99a57908971c4062aaa6e00",
+      "date": "2024-10-21T01:01:05+09:00",
+      "author": "ybchar",
+      "email": "uiurihappy@naver.com",
+      "message": "test: 자식 댓글 조회 테스트 코드 검증 추가\n"
+    },
+    {
+      "sha": "122a651a90e2775545325cd65a5ea88bce7337fe",
+      "date": "2024-10-21T00:59:25+09:00",
+      "author": "ybchar",
+      "email": "uiurihappy@naver.com",
+      "message": "test: 자식 댓글 조회 테스트 코드\n"
+    },
+    {
+      "sha": "c7ac781d6bba2d596f16c0248e9676d4ea0d01d2",
+      "date": "2024-10-20T18:23:35+09:00",
+      "author": "ybchar",
+      "email": "uiurihappy@naver.com",
+      "message": "test: 부모 댓글 조회\n"
+    },
+    {
+      "sha": "b0e621b360c22c76389cf60c08592596eda5aa48",
+      "date": "2024-10-20T17:45:33+09:00",
+      "author": "ybchar",
+      "email": "uiurihappy@naver.com",
+      "message": "test: 자식 댓글 테스트 코드\n"
+    },
+    {
+      "sha": "c5eb4d089bc054b4c79fb7b3e4f33f6e0bc0670f",
+      "date": "2024-10-20T16:57:02+09:00",
+      "author": "ybchar",
+      "email": "uiurihappy@naver.com",
+      "message": "test: 부모 댓글 테스트 코드\n"
+    },
+    {
+      "sha": "26f2eb4fcfcda6d877f78ba99bff3839aafd1375",
+      "date": "2024-10-20T01:02:34+09:00",
+      "author": "ybchar",
+      "email": "uiurihappy@naver.com",
+      "message": "fix: 회원 탈퇴 기능 수정\n"
+    },
+    {
+      "sha": "5c6408fb481f44b35d70eee3ed6e0db0181a25e0",
+      "date": "2024-10-20T01:02:01+09:00",
+      "author": "ybchar",
+      "email": "uiurihappy@naver.com",
+      "message": "refactor: comment 연관관계 해제로 인한 쿼리 수정 및 개선\n"
+    },
+    {
+      "sha": "3d9269afc48dd7941717b3ba3315df5bfc6df9ba",
+      "date": "2024-10-20T01:01:05+09:00",
+      "author": "ybchar",
+      "email": "uiurihappy@naver.com",
+      "message": "fix: comment-record 연관관계 해제\n"
+    },
+    {
+      "sha": "df0157d08690cb9e2e63a34a541bbcd0b4171737",
+      "date": "2024-10-20T01:00:26+09:00",
+      "author": "ybchar",
+      "email": "uiurihappy@naver.com",
+      "message": "fix: 탈퇴 회원 대상 null 예외 처리\n"
+    },
+    {
+      "sha": "bcd8cbd505faafc6123b89af1f91f88eb7527e2b",
+      "date": "2024-10-20T00:59:50+09:00",
+      "author": "ybchar",
+      "email": "uiurihappy@naver.com",
+      "message": "fix: 회원 탈퇴 시 writer null로 변경\n"
+    },
+    {
+      "sha": "199eac274aa363a43e2def5a167196bf1c9d8184",
+      "date": "2024-10-20T00:58:20+09:00",
+      "author": "ybchar",
+      "email": "uiurihappy@naver.com",
+      "message": "fix: comment-record 연관관계 해제\n"
+    }
+  ],
+  "commit_sha": "346cb823cd55d735aac8fc8069ce96623c508813",
+  "extracted_at": "2026-10-05T18:43:24.692407+00:00"
+}

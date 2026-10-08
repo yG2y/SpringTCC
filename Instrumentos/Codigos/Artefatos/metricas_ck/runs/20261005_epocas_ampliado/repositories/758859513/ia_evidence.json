@@ -1,0 +1,28 @@
+{
+  "ia_status": "com_evidencia",
+  "ia_level": 1,
+  "ia_agents": "Claude Code; Codex / OpenAI",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 0,
+  "evidence": [
+    {
+      "agent": "Claude Code",
+      "type": "file",
+      "path": "CLAUDE.md"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "file",
+      "path": ".claude/settings.json"
+    },
+    {
+      "agent": "Codex / OpenAI",
+      "type": "file",
+      "path": ".codex/agents/contradiction-finder.toml"
+    }
+  ],
+  "commits": [],
+  "commit_sha": "c5bf9f5025a0c089105a846478f2a9a56e47746c",
+  "extracted_at": "2026-10-05T18:39:52.367515+00:00"
+}

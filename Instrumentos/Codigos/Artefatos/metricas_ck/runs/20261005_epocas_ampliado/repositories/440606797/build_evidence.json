@@ -1,0 +1,1660 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "3.2.5;3.3.0;3.5.13;3.5.14;3.5.6;4.0.3",
+  "spring_boot_major": "multiple",
+  "java_versions_declared": "21",
+  "build_evidence": [
+    {
+      "file": "modules/chassis/chassis-java/labs/chassis-demo/product-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/chassis/chassis-java/labs/chassis-demo/product-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/chassis/chassis-java/labs/chassis-demo/product-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "modules/chassis/chassis-java/labs/chassis-demo/product-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/chassis/chassis-java/labs/chassis-demo/product-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/chassis/chassis-java/labs/chassis-demo/product-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/communication-async/labs/pubsub-amqp/publisher-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/communication-async/labs/pubsub-amqp/publisher-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/communication-async/labs/pubsub-amqp/publisher-service/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "modules/communication-async/labs/pubsub-amqp/publisher-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/communication-async/labs/pubsub-amqp/publisher-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/communication-async/labs/pubsub-amqp/subscriber-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/communication-async/labs/pubsub-amqp/subscriber-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/communication-async/labs/pubsub-amqp/subscriber-service/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "modules/communication-async/labs/pubsub-amqp/subscriber-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/communication-async/labs/pubsub-amqp/subscriber-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/communication-async/labs/pubsub-mqtt/publisher-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/communication-async/labs/pubsub-mqtt/publisher-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/communication-async/labs/pubsub-mqtt/publisher-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/communication-async/labs/pubsub-mqtt/publisher-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/communication-async/labs/pubsub-mqtt/subscriber-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/communication-async/labs/pubsub-mqtt/subscriber-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/communication-async/labs/pubsub-mqtt/subscriber-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/communication-async/labs/pubsub-mqtt/subscriber-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/communication-async/labs/pubsub-spring-cloud/publisher-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/communication-async/labs/pubsub-spring-cloud/publisher-service/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "modules/communication-async/labs/pubsub-spring-cloud/publisher-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/communication-async/labs/pubsub-spring-cloud/publisher-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/communication-async/labs/pubsub-spring-cloud/publisher-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/communication-async/labs/pubsub-spring-cloud/subscriber-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/communication-async/labs/pubsub-spring-cloud/subscriber-service/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "modules/communication-async/labs/pubsub-spring-cloud/subscriber-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/communication-async/labs/pubsub-spring-cloud/subscriber-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/communication-async/labs/pubsub-spring-cloud/subscriber-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/communication-async/labs/rabbitmq-cpu-intensive/math-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/communication-async/labs/rabbitmq-cpu-intensive/math-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/communication-async/labs/rabbitmq-cpu-intensive/math-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/communication-async/labs/rabbitmq-cpu-intensive/math-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/communication-async/labs/rabbitmq-cpu-intensive/math-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/communication-async/labs/rabbitmq-cpu-intensive/notification-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/communication-async/labs/rabbitmq-cpu-intensive/notification-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/communication-async/labs/rabbitmq-cpu-intensive/notification-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/communication-async/labs/rabbitmq-cpu-intensive/notification-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/communication-async/labs/rabbitmq-cpu-intensive/proxy-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/communication-async/labs/rabbitmq-cpu-intensive/proxy-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/communication-async/labs/rabbitmq-cpu-intensive/proxy-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/communication-async/labs/rabbitmq-cpu-intensive/proxy-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/communication-async/labs/rabbitmq-cpu-intensive/proxy-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/communication-sync/labs/graphql-social-network/post-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/communication-sync/labs/graphql-social-network/post-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/communication-sync/labs/graphql-social-network/post-service/pom.xml",
+      "artifact": "spring-boot-starter-graphql"
+    },
+    {
+      "file": "modules/communication-sync/labs/graphql-social-network/post-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "modules/communication-sync/labs/graphql-social-network/post-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/communication-sync/labs/graphql-social-network/post-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/communication-sync/labs/graphql-social-network/post-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/communication-sync/labs/graphql-social-network/user-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/communication-sync/labs/graphql-social-network/user-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/communication-sync/labs/graphql-social-network/user-service/pom.xml",
+      "artifact": "spring-boot-starter-graphql"
+    },
+    {
+      "file": "modules/communication-sync/labs/graphql-social-network/user-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "modules/communication-sync/labs/graphql-social-network/user-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/communication-sync/labs/graphql-social-network/user-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/communication-sync/labs/graphql-social-network/user-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/communication-sync/labs/rest-cpu-intensive/math-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/communication-sync/labs/rest-cpu-intensive/math-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/communication-sync/labs/rest-cpu-intensive/math-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/communication-sync/labs/rest-cpu-intensive/math-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/communication-sync/labs/rest-cpu-intensive/math-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/communication-sync/labs/rest-cpu-intensive/proxy-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/communication-sync/labs/rest-cpu-intensive/proxy-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/communication-sync/labs/rest-cpu-intensive/proxy-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/communication-sync/labs/rest-cpu-intensive/proxy-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/communication-sync/labs/rest-cpu-intensive/proxy-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/communication-sync/labs/rest-idempotent-post/post-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/communication-sync/labs/rest-idempotent-post/post-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/communication-sync/labs/rest-idempotent-post/post-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "modules/communication-sync/labs/rest-idempotent-post/post-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/communication-sync/labs/rest-idempotent-post/post-service/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "modules/communication-sync/labs/rest-idempotent-post/post-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/communication-sync/labs/rest-idempotent-post/post-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/communication-sync/labs/rest-social-network/post-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/communication-sync/labs/rest-social-network/post-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/communication-sync/labs/rest-social-network/post-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "modules/communication-sync/labs/rest-social-network/post-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/communication-sync/labs/rest-social-network/post-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/communication-sync/labs/rest-social-network/post-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/communication-sync/labs/rest-social-network/user-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/communication-sync/labs/rest-social-network/user-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/communication-sync/labs/rest-social-network/user-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "modules/communication-sync/labs/rest-social-network/user-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/communication-sync/labs/rest-social-network/user-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/communication-sync/labs/rest-social-network/user-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/containerization/labs/cpu-memory-meter/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/containerization/labs/cpu-memory-meter/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/containerization/labs/cpu-memory-meter/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/containerization/labs/cpu-memory-meter/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/containerization/labs/cpu-memory-meter/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/containerization/labs/echo-server-java/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/containerization/labs/echo-server-java/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/containerization/labs/echo-server-java/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/containerization/labs/echo-server-java/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/containerization/labs/echo-server-java/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/containerization/labs/echo-server-logs-java/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/containerization/labs/echo-server-logs-java/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/containerization/labs/echo-server-logs-java/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/containerization/labs/echo-server-logs-java/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/containerization/labs/echo-server-logs-java/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/containerization/labs/network-example/echo-server-logs-db-java/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/containerization/labs/network-example/echo-server-logs-db-java/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/containerization/labs/network-example/echo-server-logs-db-java/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "modules/containerization/labs/network-example/echo-server-logs-db-java/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/containerization/labs/network-example/echo-server-logs-db-java/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/containerization/labs/network-example/echo-server-logs-db-java/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/data-management/labs/cqrs/inventory-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/data-management/labs/cqrs/inventory-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/data-management/labs/cqrs/inventory-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "modules/data-management/labs/cqrs/inventory-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/data-management/labs/cqrs/inventory-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/data-management/labs/cqrs/inventory-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/data-management/labs/cqrs/order-read-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/data-management/labs/cqrs/order-read-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/data-management/labs/cqrs/order-read-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "modules/data-management/labs/cqrs/order-read-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/data-management/labs/cqrs/order-read-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/data-management/labs/cqrs/order-read-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/data-management/labs/cqrs/order-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/data-management/labs/cqrs/order-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/data-management/labs/cqrs/order-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "modules/data-management/labs/cqrs/order-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/data-management/labs/cqrs/order-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/data-management/labs/cqrs/order-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/data-management/labs/cqrs/payment-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/data-management/labs/cqrs/payment-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/data-management/labs/cqrs/payment-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "modules/data-management/labs/cqrs/payment-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/data-management/labs/cqrs/payment-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/data-management/labs/cqrs/payment-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/data-management/labs/event-sourcing/account-read-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/data-management/labs/event-sourcing/account-read-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/data-management/labs/event-sourcing/account-read-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "modules/data-management/labs/event-sourcing/account-read-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/data-management/labs/event-sourcing/account-read-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/data-management/labs/event-sourcing/account-read-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/data-management/labs/event-sourcing/account-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/data-management/labs/event-sourcing/account-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/data-management/labs/event-sourcing/account-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "modules/data-management/labs/event-sourcing/account-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/data-management/labs/event-sourcing/account-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/data-management/labs/event-sourcing/account-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/data-management/labs/saga-choreography/inventory-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/data-management/labs/saga-choreography/inventory-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/data-management/labs/saga-choreography/inventory-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "modules/data-management/labs/saga-choreography/inventory-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/data-management/labs/saga-choreography/inventory-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/data-management/labs/saga-choreography/inventory-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/data-management/labs/saga-choreography/order-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/data-management/labs/saga-choreography/order-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/data-management/labs/saga-choreography/order-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "modules/data-management/labs/saga-choreography/order-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/data-management/labs/saga-choreography/order-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/data-management/labs/saga-choreography/order-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/data-management/labs/saga-choreography/payment-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/data-management/labs/saga-choreography/payment-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/data-management/labs/saga-choreography/payment-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "modules/data-management/labs/saga-choreography/payment-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/data-management/labs/saga-choreography/payment-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/data-management/labs/saga-choreography/payment-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/data-management/labs/saga-orchestration/inventory-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/data-management/labs/saga-orchestration/inventory-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/data-management/labs/saga-orchestration/inventory-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "modules/data-management/labs/saga-orchestration/inventory-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/data-management/labs/saga-orchestration/inventory-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/data-management/labs/saga-orchestration/inventory-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/data-management/labs/saga-orchestration/order-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/data-management/labs/saga-orchestration/order-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/data-management/labs/saga-orchestration/order-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "modules/data-management/labs/saga-orchestration/order-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/data-management/labs/saga-orchestration/order-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/data-management/labs/saga-orchestration/order-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/data-management/labs/saga-orchestration/payment-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/data-management/labs/saga-orchestration/payment-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/data-management/labs/saga-orchestration/payment-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "modules/data-management/labs/saga-orchestration/payment-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/data-management/labs/saga-orchestration/payment-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/data-management/labs/saga-orchestration/payment-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/distributed-algorithms/labs/raft/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/distributed-algorithms/labs/raft/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/distributed-algorithms/labs/raft/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "modules/distributed-algorithms/labs/raft/pom.xml",
+      "artifact": "spring-boot-starter-data-r2dbc"
+    },
+    {
+      "file": "modules/distributed-algorithms/labs/raft/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "modules/distributed-algorithms/labs/raft/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/distributed-algorithms/labs/raft/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "modules/distributed-algorithms/labs/raft/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/infrastructure/labs/centralized-configuration/config-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/infrastructure/labs/centralized-configuration/config-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/infrastructure/labs/centralized-configuration/config-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/infrastructure/labs/centralized-configuration/config-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/infrastructure/labs/centralized-configuration/config-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/infrastructure/labs/centralized-configuration/datetime-composite-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/infrastructure/labs/centralized-configuration/datetime-composite-service/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "modules/infrastructure/labs/centralized-configuration/datetime-composite-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/infrastructure/labs/centralized-configuration/datetime-composite-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/infrastructure/labs/centralized-configuration/datetime-composite-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/infrastructure/labs/centralized-configuration/datetime-composite-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/infrastructure/labs/centralized-configuration/datetime-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/infrastructure/labs/centralized-configuration/datetime-service/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "modules/infrastructure/labs/centralized-configuration/datetime-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/infrastructure/labs/centralized-configuration/datetime-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/infrastructure/labs/centralized-configuration/datetime-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/infrastructure/labs/centralized-configuration/datetime-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/infrastructure/labs/centralized-configuration/eureka-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/infrastructure/labs/centralized-configuration/eureka-service/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "modules/infrastructure/labs/centralized-configuration/eureka-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/infrastructure/labs/centralized-configuration/eureka-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/infrastructure/labs/centralized-configuration/eureka-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-load-balancing/datetime-composite-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-load-balancing/datetime-composite-service/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-load-balancing/datetime-composite-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-load-balancing/datetime-composite-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-load-balancing/datetime-composite-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-load-balancing/datetime-composite-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-load-balancing/datetime-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-load-balancing/datetime-service/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-load-balancing/datetime-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-load-balancing/datetime-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-load-balancing/datetime-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-load-balancing/datetime-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-load-balancing/eureka-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-load-balancing/eureka-service/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-load-balancing/eureka-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-load-balancing/eureka-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-load-balancing/eureka-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-routing/bff-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-routing/bff-service/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-routing/bff-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-routing/bff-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-routing/bff-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-routing/bff-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-routing/comment-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-routing/comment-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-routing/comment-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-routing/comment-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-routing/comment-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-routing/comment-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-routing/eureka-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-routing/eureka-service/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-routing/eureka-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-routing/eureka-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-routing/eureka-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-routing/gateway-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-routing/gateway-service/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-routing/gateway-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-routing/gateway-service/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-routing/gateway-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-routing/gateway-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-routing/post-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-routing/post-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-routing/post-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-routing/post-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-routing/post-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-routing/post-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-routing/user-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-routing/user-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-routing/user-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-routing/user-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-routing/user-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/infrastructure/labs/service-routing/user-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/introduction/labs/architectures/clean-monolith/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/introduction/labs/architectures/clean-monolith/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/introduction/labs/architectures/clean-monolith/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "modules/introduction/labs/architectures/clean-monolith/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/introduction/labs/architectures/clean-monolith/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/introduction/labs/architectures/clean-monolith/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "modules/introduction/labs/architectures/clean-monolith/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/introduction/labs/architectures/layered-monolith/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/introduction/labs/architectures/layered-monolith/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/introduction/labs/architectures/layered-monolith/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "modules/introduction/labs/architectures/layered-monolith/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/introduction/labs/architectures/layered-monolith/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/introduction/labs/architectures/layered-monolith/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "modules/introduction/labs/architectures/layered-monolith/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/introduction/labs/architectures/microservices/gateway/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/introduction/labs/architectures/microservices/gateway/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "modules/introduction/labs/architectures/microservices/gateway/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/introduction/labs/architectures/microservices/gateway/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/introduction/labs/architectures/microservices/product-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/introduction/labs/architectures/microservices/product-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "modules/introduction/labs/architectures/microservices/product-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/introduction/labs/architectures/microservices/product-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/introduction/labs/architectures/microservices/product-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/introduction/labs/architectures/microservices/product-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/introduction/labs/architectures/microservices/recommendation-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/introduction/labs/architectures/microservices/recommendation-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "modules/introduction/labs/architectures/microservices/recommendation-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/introduction/labs/architectures/microservices/recommendation-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/introduction/labs/architectures/microservices/recommendation-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/introduction/labs/architectures/microservices/review-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/introduction/labs/architectures/microservices/review-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "modules/introduction/labs/architectures/microservices/review-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/introduction/labs/architectures/microservices/review-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/introduction/labs/architectures/microservices/review-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/introduction/labs/architectures/microservices/service-registry/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/introduction/labs/architectures/microservices/service-registry/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/introduction/labs/architectures/microservices/service-registry/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/introduction/labs/architectures/modular-monolith/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/introduction/labs/architectures/modular-monolith/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/introduction/labs/architectures/modular-monolith/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "modules/introduction/labs/architectures/modular-monolith/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/introduction/labs/architectures/modular-monolith/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/introduction/labs/architectures/modular-monolith/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "modules/introduction/labs/architectures/modular-monolith/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/kubernetes/labs/istio-traffic-management/bff-service-v2/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/kubernetes/labs/istio-traffic-management/bff-service-v2/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "modules/kubernetes/labs/istio-traffic-management/bff-service-v2/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/kubernetes/labs/istio-traffic-management/bff-service-v2/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/kubernetes/labs/istio-traffic-management/bff-service-v2/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/kubernetes/labs/istio-traffic-management/bff-service-v2/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/kubernetes/labs/service-mesh/bff-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/kubernetes/labs/service-mesh/bff-service/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "modules/kubernetes/labs/service-mesh/bff-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/kubernetes/labs/service-mesh/bff-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/kubernetes/labs/service-mesh/bff-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/kubernetes/labs/service-mesh/bff-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/kubernetes/labs/service-mesh/comment-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/kubernetes/labs/service-mesh/comment-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/kubernetes/labs/service-mesh/comment-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "modules/kubernetes/labs/service-mesh/comment-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/kubernetes/labs/service-mesh/comment-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/kubernetes/labs/service-mesh/comment-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/kubernetes/labs/service-mesh/post-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/kubernetes/labs/service-mesh/post-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/kubernetes/labs/service-mesh/post-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "modules/kubernetes/labs/service-mesh/post-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/kubernetes/labs/service-mesh/post-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/kubernetes/labs/service-mesh/post-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/kubernetes/labs/service-mesh/user-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/kubernetes/labs/service-mesh/user-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/kubernetes/labs/service-mesh/user-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "modules/kubernetes/labs/service-mesh/user-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/kubernetes/labs/service-mesh/user-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/kubernetes/labs/service-mesh/user-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/observability/labs/math-otlp/eureka-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/observability/labs/math-otlp/eureka-service/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "modules/observability/labs/math-otlp/eureka-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/observability/labs/math-otlp/eureka-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/observability/labs/math-otlp/eureka-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/observability/labs/math-otlp/gateway-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/observability/labs/math-otlp/gateway-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/observability/labs/math-otlp/gateway-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/observability/labs/math-otlp/gateway-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/observability/labs/math-otlp/gateway-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/observability/labs/math-otlp/math-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/observability/labs/math-otlp/math-service/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "modules/observability/labs/math-otlp/math-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/observability/labs/math-otlp/math-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/observability/labs/math-otlp/math-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/observability/labs/math-otlp/math-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/resiliency/labs/math-resiliency/eureka-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/resiliency/labs/math-resiliency/eureka-service/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "modules/resiliency/labs/math-resiliency/eureka-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/resiliency/labs/math-resiliency/eureka-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/resiliency/labs/math-resiliency/eureka-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/resiliency/labs/math-resiliency/gateway-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/resiliency/labs/math-resiliency/gateway-service/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "modules/resiliency/labs/math-resiliency/gateway-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/resiliency/labs/math-resiliency/gateway-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/resiliency/labs/math-resiliency/gateway-service/pom.xml",
+      "artifact": "spring-boot-starter-aop"
+    },
+    {
+      "file": "modules/resiliency/labs/math-resiliency/gateway-service/pom.xml",
+      "artifact": "spring-boot-starter-cache"
+    },
+    {
+      "file": "modules/resiliency/labs/math-resiliency/gateway-service/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "modules/resiliency/labs/math-resiliency/gateway-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/resiliency/labs/math-resiliency/gateway-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/resiliency/labs/math-resiliency/math-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules/resiliency/labs/math-resiliency/math-service/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "modules/resiliency/labs/math-resiliency/math-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "modules/resiliency/labs/math-resiliency/math-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules/resiliency/labs/math-resiliency/math-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules/resiliency/labs/math-resiliency/math-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules/security/code/microservices/auth/build.gradle.kts",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "modules/security/code/microservices/grades/build.gradle.kts",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "modules/security/code/microservices/students/build.gradle.kts",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "modules_extra/social-network/composite-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules_extra/social-network/composite-service/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "modules_extra/social-network/composite-service/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "modules_extra/social-network/composite-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules_extra/social-network/composite-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules_extra/social-network/composite-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "modules_extra/social-network/composite-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules_extra/social-network/interaction-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules_extra/social-network/interaction-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "modules_extra/social-network/interaction-service/pom.xml",
+      "artifact": "spring-boot-starter-graphql"
+    },
+    {
+      "file": "modules_extra/social-network/interaction-service/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "modules_extra/social-network/interaction-service/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "modules_extra/social-network/interaction-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules_extra/social-network/interaction-service/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "modules_extra/social-network/interaction-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules_extra/social-network/interaction-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules_extra/social-network/post-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules_extra/social-network/post-service/pom.xml",
+      "artifact": "spring-boot-starter-graphql"
+    },
+    {
+      "file": "modules_extra/social-network/post-service/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "modules_extra/social-network/post-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules_extra/social-network/post-service/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "modules_extra/social-network/post-service/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "modules_extra/social-network/post-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules_extra/social-network/post-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "modules_extra/social-network/post-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "modules_extra/social-network/user-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "modules_extra/social-network/user-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "modules_extra/social-network/user-service/pom.xml",
+      "artifact": "spring-boot-starter-graphql"
+    },
+    {
+      "file": "modules_extra/social-network/user-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "modules_extra/social-network/user-service/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "modules_extra/social-network/user-service/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    },
+    {
+      "file": "modules_extra/social-network/user-service/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "modules_extra/social-network/user-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "modules_extra/social-network/user-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

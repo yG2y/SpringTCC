@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "5adc637931ab66cc42de0ac955bbe5de650a8c78",
+      "date": "2025-03-07T13:33:07+08:00",
+      "author": "冷冷",
+      "email": "2270033969@qq.com",
+      "message": "📦 build(renovate): 删除renovate配置文件\n\n- 移除不再使用的renovate配置文件\n"
+    },
+    {
+      "sha": "2fe0dddd7bba1696238c94e2da97fd75e4258ca9",
+      "date": "2025-03-07T13:28:41+08:00",
+      "author": "冷冷",
+      "email": "2270033969@qq.com",
+      "message": "✨ feat(ci): 添加issue检查工作流\n"
+    },
+    {
+      "sha": "6b60fc3d8e3443e6879873478223cc3da60a0488",
+      "date": "2025-03-07T13:26:41+08:00",
+      "author": "冷冷",
+      "email": "2270033969@qq.com",
+      "message": "📝 docs(github): 完善问题模板确认事项\n"
+    },
+    {
+      "sha": "5b07d1fc345aa2f1988b8fcfeff34b9f5b55b340",
+      "date": "2025-03-07T13:20:03+08:00",
+      "author": "冷冷",
+      "email": "2270033969@qq.com",
+      "message": "📝 docs(github): 完善项目文档与问题模板\n\n- 新增 GitHub 问题咨询模板，标准化问题提交格式\n- 添加 Maven Central 版本徽章至 README\n- 更新项目文档结构，移除旧版更新日志并增加致谢说明\n\n📦 build(version): 统一升级项目版本至2.2.5\n\n- 更新所有子模块 pom.xml 版本号至2.2.5\n- 新增 Renovate 配置文件用于依赖管理\n- 同步更新 Gradle 和 Maven 安装说明中的版本号\n"
+    },
+    {
+      "sha": "d60ae0d3876307f18643397471991f8fc81e137c",
+      "date": "2025-03-06T19:38:50+08:00",
+      "author": "冷冷",
+      "email": "2270033969@qq.com",
+      "message": "Merge pull request #24 from VioletAyatan/master\n\n更新captcha-spring-boot-starter里依赖的captcha-core版本号"
+    },
+    {
+      "sha": "44dbe6c867ad1f2d5ab3ded265a5feae25b29291",
+      "date": "2025-01-20T09:21:19+08:00",
+      "author": "lichengkun",
+      "email": "lichengkun@csrd.cn",
+      "message": "更新captcha-spring-boot-starter里依赖的captcha-core版本号\n"
+    },
+    {
+      "sha": "5eb8331f1190d2bc1bf35774f1a8d12ead1208c8",
+      "date": "2024-10-22T11:41:37+08:00",
+      "author": "冷冷",
+      "email": "2270033969@qq.com",
+      "message": "upgrade(core): 2.2.4\n\nCloses #17\n"
+    },
+    {
+      "sha": "659785bcc711c0d4a5d4f675ecbcb93f3516299d",
+      "date": "2023-09-27T19:33:42+08:00",
+      "author": "lbw",
+      "email": "wangiegie@163.com",
+      "message": ":bookmark: Releasing / Version tags. rename package name\n"
+    },
+    {
+      "sha": "12252a2e86894a1791f59967537e3867bd17df7c",
+      "date": "2023-08-23T23:16:32+08:00",
+      "author": "lbw",
+      "email": "wangiegie@163.com",
+      "message": ":arrow_up: Upgrading dependencies. 2.2.3\n"
+    },
+    {
+      "sha": "7f459f1248abca4c40b7db26f4fccfa003c6255a",
+      "date": "2023-08-23T23:04:41+08:00",
+      "author": "lbw",
+      "email": "wangiegie@163.com",
+      "message": ":recycle: Refactoring code. 默认情况下不开启除法 （字体库问题）\n"
+    },
+    {
+      "sha": "007f67e340a639cc9364c1452fb95b343bcaddf3",
+      "date": "2023-08-23T22:48:07+08:00",
+      "author": "lbw",
+      "email": "wangiegie@163.com",
+      "message": ":bookmark: Releasing / Version tags. 2.2.3\n"
+    },
+    {
+      "sha": "3cdd81d70836727327e15a84850a8923300b0655",
+      "date": "2023-08-23T21:55:25+08:00",
+      "author": "冷冷",
+      "email": "2270033969@qq.com",
+      "message": "Merge pull request #10 from FULaBUla/CaptchaUtil\n\n恢复源项目中的 CaptchaUtil 和 CaptchaServlet 并添加支持 Jakarta 版本的实现"
+    },
+    {
+      "sha": "fa85122a947f0bebd67a1f0fd7619d4ebb656045",
+      "date": "2023-01-28T13:19:58+08:00",
+      "author": "FULaBUla",
+      "email": "46469068+FULaBUla@users.noreply.github.com",
+      "message": "Refactor (captcha-core): 使用抽象父类合并一些共用的属性\n\n# 修改\n1. 属性定义是重复的，因此提取父类\n"
+    },
+    {
+      "sha": "af84390c868f5a915a5dffb512742474f60e7ad0",
+      "date": "2023-01-28T13:13:12+08:00",
+      "author": "FULaBUla",
+      "email": "46469068+FULaBUla@users.noreply.github.com",
+      "message": "Docs: 更新 README.md\n"
+    },
+    {
+      "sha": "cb508748c1f4b298f8f77a972faa0bf633caba4c",
+      "date": "2023-01-28T13:05:49+08:00",
+      "author": "FULaBUla",
+      "email": "46469068+FULaBUla@users.noreply.github.com",
+      "message": "Feat (captcha-core): 添加验证码 servlet 并分别对 Javax、Jakarta 进行支持\n\n# 修改\n1. 基于原有代码做迁移，并新增适配 Jakarta 的实现\n"
+    },
+    {
+      "sha": "0ddc4d19abfb1abf3d692959be58e8591bf41e36",
+      "date": "2023-01-28T13:03:38+08:00",
+      "author": "FULaBUla",
+      "email": "46469068+FULaBUla@users.noreply.github.com",
+      "message": "Feat (captcha-core): 添加 javax 和 jakarta 的 servlet 依赖，仅在编译时使用\n"
+    },
+    {
+      "sha": "9ca75b5def62c84e71e477a53257abbb16dba6f5",
+      "date": "2023-01-28T13:02:50+08:00",
+      "author": "FULaBUla",
+      "email": "46469068+FULaBUla@users.noreply.github.com",
+      "message": "Feat (captcha-core): 添加 CaptchaUtil 和 CaptchaJakartaUtil 分别对 javax、Jakarta 进行支持\n\n# 修改\n1. 基于原有代码做迁移，并新增适配 Jakarta 的工具类\n"
+    },
+    {
+      "sha": "b6175c55f15ffa6e84752aa2ed36fb90ab8fd554",
+      "date": "2023-01-27T18:18:53+08:00",
+      "author": "冷冷",
+      "email": "2270033969@qq.com",
+      "message": "Merge pull request #7 from FULaBUla/log\n\n使用 slf4j 代替控制台打印 "
+    },
+    {
+      "sha": "b1a868889b728325d595ba49f51a0bf08bd9fa03",
+      "date": "2023-01-27T18:18:33+08:00",
+      "author": "冷冷",
+      "email": "2270033969@qq.com",
+      "message": "Merge pull request #6 from FULaBUla/div\n\n添加除法运算实现"
+    },
+    {
+      "sha": "c8bfca437c58b5a76c81e59e7aee20f394f14da3",
+      "date": "2023-01-21T17:31:20+08:00",
+      "author": "FULaBUla",
+      "email": "46469068+FULaBUla@users.noreply.github.com",
+      "message": "Chore: 增加合并请求前置依赖检查\n"
+    },
+    {
+      "sha": "66557669b9097122bd5bc33d49c1939fe26eafe5",
+      "date": "2023-01-21T17:10:53+08:00",
+      "author": "FULaBUla",
+      "email": "46469068+FULaBUla@users.noreply.github.com",
+      "message": "Doc (captcha-core): 更新 Readme\n"
+    },
+    {
+      "sha": "9c98ee038b095c5fc34595e7e68a9645a7290989",
+      "date": "2023-01-21T17:10:32+08:00",
+      "author": "FULaBUla",
+      "email": "46469068+FULaBUla@users.noreply.github.com",
+      "message": "Refactor (captcha-core): 使用 slf4j 代替控制台打印\n\n# 修改\n1. 通过 slf4j 的方式将打印和系统的日志框架结合，避免输出到控制台\n"
+    },
+    {
+      "sha": "154dd4094f358696633003818f6780fa4ee42ce9",
+      "date": "2023-01-21T15:10:58+08:00",
+      "author": "FULaBUla",
+      "email": "46469068+FULaBUla@users.noreply.github.com",
+      "message": "Doc (captcha-core): 更新 Readme\n"
+    },
+    {
+      "sha": "c4bf7114f560eae22381e63af181a1c34b4a1ed9",
+      "date": "2023-01-21T15:00:25+08:00",
+      "author": "FULaBUla",
+      "email": "46469068+FULaBUla@users.noreply.github.com",
+      "message": "Feat (captcha-core): 增加除法运算\n\n# 修改\n1. 不论算式多长，都只有一次除法，否则第一个除数会变得很大\n2. 将原来字符串拼接改为放入数组，最后转为一个字符串，这样除法算式在调整除数和被除数的时候能快速索引到位置\n3. 算数验证码设置参数时做上下界检测，避免越界\n4. 将运算符号枚举里的算数符号属性从 char 改为 string，避免使用时再进行转换\n5. 优化注释与格式\n"
+    },
+    {
+      "sha": "ea5fdaf89b2339d244b446dc90a76a6a322ce0c0",
+      "date": "2022-03-08T09:18:06+08:00",
+      "author": "qraddx",
+      "email": "eoyacm81453@unionstone.com.cn",
+      "message": ":bookmark: Releasing / Version tags. 2.2.2\n"
+    },
+    {
+      "sha": "83103b18b052051ae0f53c082b30038ce0bbc3c5",
+      "date": "2021-10-15T10:24:02+08:00",
+      "author": "MicLng",
+      "email": "eoyacm81453@unionstone.com.cn",
+      "message": ":arrow_up: 依赖升级，避免 common-beanutils 无法引入问题\n"
+    },
+    {
+      "sha": "aeee32c27773d67ce1de4058b2c174460adbd8b1",
+      "date": "2020-12-10T14:49:14+08:00",
+      "author": "lengleng",
+      "email": "wangiegie@gmail.com",
+      "message": ":bookmark: Releasing / Version tags. 版本说明\n"
+    },
+    {
+      "sha": "ff8662aea73aec846331efd935797731abf72e23",
+      "date": "2020-10-04T19:48:29+08:00",
+      "author": "lbwNB",
+      "email": "wangiegie@163.com",
+      "message": ":bookmark: Releasing / Version tags. 2.2.0\n"
+    },
+    {
+      "sha": "0053ba46360840859777528302f02940b243cf30",
+      "date": "2020-07-31T16:08:48+08:00",
+      "author": "lltx",
+      "email": "50090230+lltx@users.noreply.github.com",
+      "message": "Merge pull request #1 from ChunMengLu/master\n\n:sparkles: 优化配置."
+    },
+    {
+      "sha": "4e912f383b7766af2db26fd13a12b5dea7a44a18",
+      "date": "2020-07-31T16:03:54+08:00",
+      "author": "如梦技术",
+      "email": "596392912@qq.com",
+      "message": ":sparkles: 优化配置.\n"
+    }
+  ],
+  "commit_sha": "5adc637931ab66cc42de0ac955bbe5de650a8c78",
+  "extracted_at": "2026-10-05T18:30:17.454965+00:00"
+}

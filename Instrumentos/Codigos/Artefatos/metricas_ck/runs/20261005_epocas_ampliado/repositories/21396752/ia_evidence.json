@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "de31953558efc940af94d8ab3133c01f7b6d5c76",
+      "date": "2024-08-14T16:46:47+03:00",
+      "author": "Itai Agmon",
+      "email": "itai.agmon@gmail.com",
+      "message": "Bumping TestNG version to 7.5.1 .Issue #283\n"
+    },
+    {
+      "sha": "f3022effe339f1de24b5304995e2f1fc8ca69ae7",
+      "date": "2024-08-14T14:20:22+03:00",
+      "author": "Itai Agmon",
+      "email": "itai.agmon@gmail.com",
+      "message": "Adding the missing JSystem example to the parent and changing the references to the new Nexus server. issue #282\n"
+    },
+    {
+      "sha": "8cd40a90ddf36d8d230ed7371ae6d10d588817c9",
+      "date": "2023-02-05T15:23:23+02:00",
+      "author": "itaiag",
+      "email": "itai.agmon@gmail.com",
+      "message": "Bumping to version 3.1.02-SNAPSHOT\n"
+    },
+    {
+      "sha": "837159c5911a0a7a55577b6229ba045f622f0830",
+      "date": "2023-02-05T14:41:47+02:00",
+      "author": "itaiag",
+      "email": "itai.agmon@gmail.com",
+      "message": "Adding description and url to the project\n"
+    },
+    {
+      "sha": "e3a3c2359134a5429f555935bb6c707269a146bc",
+      "date": "2023-02-05T14:26:16+02:00",
+      "author": "itaiag",
+      "email": "itai.agmon@gmail.com",
+      "message": "Upgrading to version 3.1.01\n"
+    },
+    {
+      "sha": "ccb73d9bf7d21de6a04833b40c739020a6f1c870",
+      "date": "2023-02-05T14:24:48+02:00",
+      "author": "itaiag",
+      "email": "itai.agmon@gmail.com",
+      "message": "Forgot to change the dependency in the server to the plugin common to the new group id\n"
+    },
+    {
+      "sha": "60bb32a184b2ae8e4f69965454cfcc69b34233bf",
+      "date": "2023-02-05T14:14:23+02:00",
+      "author": "itaiag",
+      "email": "itai.agmon@gmail.com",
+      "message": "Added deprected group id and added reference to the old Nexus to the server. issue #274\n"
+    },
+    {
+      "sha": "3ef57771f3494427c6bb8c7c8b59e39e96c15e50",
+      "date": "2023-02-05T13:46:12+02:00",
+      "author": "itaiag",
+      "email": "itai.agmon@gmail.com",
+      "message": "Final adaptations of the POM files to Maven Central. issue #274\n"
+    },
+    {
+      "sha": "903204945a0970f287bbc57be7c1682b3d287545",
+      "date": "2023-01-30T13:06:05+02:00",
+      "author": "itaiag",
+      "email": "itai.agmon@gmail.com",
+      "message": "Preparing the project for publishing in Maven centeral. issue #274\n"
+    },
+    {
+      "sha": "05df46d91c985fec690acd104529a1890db375a3",
+      "date": "2023-01-23T10:07:59+02:00",
+      "author": "itaiag",
+      "email": "itai.agmon@gmail.com",
+      "message": "Support for multiple suits. issue #276\n"
+    },
+    {
+      "sha": "4e1043061ded95b18844d262c7e6080c08cdb5e6",
+      "date": "2022-12-26T12:25:55+02:00",
+      "author": "itaiag",
+      "email": "itai.agmon@gmail.com",
+      "message": "Adding colors to rows according the execution status. issue #275\n"
+    },
+    {
+      "sha": "884dde295dcdf490861c6d5b8de8a9b67fe5f840",
+      "date": "2022-10-23T11:45:56+03:00",
+      "author": "itaiag",
+      "email": "itai.agmon@gmail.com",
+      "message": "Updated to the pytest plugin documentation\n"
+    },
+    {
+      "sha": "4c56f1cfe6b16bb529a4b567bca1516dcde8369a",
+      "date": "2022-10-20T19:31:38+03:00",
+      "author": "itaiag",
+      "email": "itai.agmon@gmail.com",
+      "message": "Initial commit of the pytest plugin. issue #270\n"
+    },
+    {
+      "sha": "d29faa745d2ef9442f9edf5467cf5b51801028b0",
+      "date": "2022-08-01T15:34:25+03:00",
+      "author": "itaiag",
+      "email": "itai.agmon@gmail.com",
+      "message": "Added support for the TestNG client to work with HTTPS servers. issue #269\n"
+    },
+    {
+      "sha": "d328b20b0db5c014c02b123dfa33ce7f4d9eba53",
+      "date": "2022-07-27T12:17:23+03:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump logback-core from 1.2.3 to 1.2.9 in /binders/difido-generic-binder (#266)\n\nBumps logback-core from 1.2.3 to 1.2.9.\n\n---\nupdated-dependencies:\n- dependency-name: ch.qos.logback:logback-core\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\n\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "cf31bc87cb68eadfefb9447cf050efa61ebd6020",
+      "date": "2022-07-27T12:16:57+03:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump SharpZipLib in /binders/difido-nunit/difido-client (#263)\n\nBumps [SharpZipLib](https://github.com/icsharpcode/SharpZipLib) from 0.86.0 to 1.3.3.\n- [Release notes](https://github.com/icsharpcode/SharpZipLib/releases)\n- [Changelog](https://github.com/icsharpcode/SharpZipLib/blob/master/docs/Changes.txt)\n- [Commits](https://github.com/icsharpcode/SharpZipLib/commits/v1.3.3)\n\n---\nupdated-dependencies:\n- dependency-name: SharpZipLib\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\n\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "3d581eeaaa5b09988d0f44cebc7518fc5f579aa2",
+      "date": "2022-07-27T12:15:33+03:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump jackson-databind in /difido-reports-common (#267)\n\nBumps [jackson-databind](https://github.com/FasterXML/jackson) from 2.9.10.7 to 2.12.6.1.\n- [Release notes](https://github.com/FasterXML/jackson/releases)\n- [Commits](https://github.com/FasterXML/jackson/commits)\n\n---\nupdated-dependencies:\n- dependency-name: com.fasterxml.jackson.core:jackson-databind\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\n\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "59472f82d1c45a121e5a41b07e904ee3add0efa6",
+      "date": "2022-07-27T12:14:55+03:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump h2 from 1.4.193 to 2.1.210 in /server/difido-server (#262)\n\nBumps [h2](https://github.com/h2database/h2database) from 1.4.193 to 2.1.210.\n- [Release notes](https://github.com/h2database/h2database/releases)\n- [Commits](https://github.com/h2database/h2database/compare/version-1.4.193...version-2.1.210)\n\n---\nupdated-dependencies:\n- dependency-name: com.h2database:h2\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\n\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "d40bb2787f748c557663978bfe99a6e8d1b5d0e5",
+      "date": "2022-07-17T10:17:21+03:00",
+      "author": "itaiag",
+      "email": "itai.agmon@gmail.com",
+      "message": "Upgrading to version 3.1.01-SNAPSHOT\n"
+    },
+    {
+      "sha": "cac3c72e16ed87865f9c3e547d4720cd8b8886e9",
+      "date": "2022-07-17T10:15:53+03:00",
+      "author": "itaiag",
+      "email": "itai.agmon@gmail.com",
+      "message": "Upgrading to version 3.1.00\n"
+    },
+    {
+      "sha": "49b608e9450a0643b38bd4df8d2d76119a5ef769",
+      "date": "2022-07-17T10:05:50+03:00",
+      "author": "itaiag",
+      "email": "itai.agmon@gmail.com",
+      "message": "Support for Elasticsearch 7.x. issue #268\n"
+    },
+    {
+      "sha": "ab29596576066161f0fea6b4c6b49257e7f70012",
+      "date": "2021-10-12T11:54:43+03:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump logback-classic in /server/difido-server-plugins-common (#254)\n\nBumps logback-classic from 1.1.9 to 1.2.0.\n\n---\nupdated-dependencies:\n- dependency-name: ch.qos.logback:logback-classic\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\n\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "179f414ebbf175d3bacde37e409e53362284c1f5",
+      "date": "2021-10-12T11:54:26+03:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump commons-io from 2.3 to 2.7 in /difido-reports-common (#253)\n\nBumps commons-io from 2.3 to 2.7.\n\nSigned-off-by: dependabot[bot] <support@github.com>\n\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "cf2544700f4506b66800d3f7e3eff2a5179e6ba3",
+      "date": "2021-10-12T11:53:04+03:00",
+      "author": "Hen Goldburd",
+      "email": "hengoldburd@gmail.com",
+      "message": "Add Pytest binder + example + Fix travis (Elasticsearch + jdk version) (please move to travis-ci.com since travis-ci.org is ceased) (#256)\n\n* Update .travis.yml\n\n* Update .travis.yml\n\n* Update .travis.yml\n\n* add Difido Pytest binder example\n\n* removed unused files\n\n* removed cache folder\n\n* remove cache folder\n\nCo-authored-by: Hen Goldburd <hgoldburd@paloaltonetworks.com>"
+    },
+    {
+      "sha": "a6dc7113c31093680565afec1903a456e9b44323",
+      "date": "2021-04-06T13:09:02+03:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump junit from 4.11 to 4.13.1 in /difido-reports-common (#245)\n\nBumps [junit](https://github.com/junit-team/junit4) from 4.11 to 4.13.1.\n- [Release notes](https://github.com/junit-team/junit4/releases)\n- [Changelog](https://github.com/junit-team/junit4/blob/main/doc/ReleaseNotes4.11.md)\n- [Commits](https://github.com/junit-team/junit4/compare/r4.11...r4.13.1)\n\nSigned-off-by: dependabot[bot] <support@github.com>\n\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "96f1436d4a60a5631141c976e426817e133baef4",
+      "date": "2021-04-06T13:08:34+03:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump jackson-databind from 2.3.2 to 2.9.10.7 in /difido-reports-common (#250)\n\nBumps [jackson-databind](https://github.com/FasterXML/jackson) from 2.3.2 to 2.9.10.7.\n- [Release notes](https://github.com/FasterXML/jackson/releases)\n- [Commits](https://github.com/FasterXML/jackson/commits)\n\nSigned-off-by: dependabot[bot] <support@github.com>\n\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "86d8c71bc4de5d2af5f61e38c0bd8b677669ce5a",
+      "date": "2020-12-16T14:53:35+02:00",
+      "author": "itaiag",
+      "email": "itai.agmon@gmail.com",
+      "message": "Small fix in case there is no test details due to skipping all tests\n"
+    },
+    {
+      "sha": "03d94a9d591e65356ecb0a33eb49e304b9003532",
+      "date": "2020-12-15T12:47:18+02:00",
+      "author": "Rony Byalsky",
+      "email": "rony.byalsky@gmail.com",
+      "message": "TestNG binder -> AbstractDifidoReporter -> fix double reports for SKIPPED tests (#249)\n\n"
+    },
+    {
+      "sha": "76b6e4304c32e997ceaf3f450842a3045cc3f7c2",
+      "date": "2020-11-09T14:36:55+02:00",
+      "author": "itaiag",
+      "email": "itai.agmon@top-q.co.il",
+      "message": "Upgrading to version 3.1.00-SNAPSHOT\n"
+    },
+    {
+      "sha": "cb63d5779b2e690bcfd8a62ee234abb589c8a0c7",
+      "date": "2020-11-09T14:35:40+02:00",
+      "author": "itaiag",
+      "email": "itai.agmon@top-q.co.il",
+      "message": "Upgrading to version 3.0.00\n"
+    }
+  ],
+  "commit_sha": "de31953558efc940af94d8ab3133c01f7b6d5c76",
+  "extracted_at": "2026-10-05T18:08:37.572683+00:00"
+}

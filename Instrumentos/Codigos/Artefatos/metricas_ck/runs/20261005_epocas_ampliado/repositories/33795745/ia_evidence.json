@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "c95b333736581c204bbbd86f01691e83ae48ab33",
+      "date": "2025-10-27T14:09:09+08:00",
+      "author": "tomoya",
+      "email": "py2qiuse@gmail.com",
+      "message": "修复bug https://github.com/atjiu/pybbs/issues/215\n"
+    },
+    {
+      "sha": "fa120a461f3ff2ce0f42a9b95f81059a41e17e1f",
+      "date": "2025-07-30T14:09:19+08:00",
+      "author": "tomoya",
+      "email": "py2qiuse@gmail.com",
+      "message": "Cookie里的SameSite属性改为Strict\n\nhttps://github.com/atjiu/pybbs/issues/211\nhttps://github.com/atjiu/pybbs/issues/212\n"
+    },
+    {
+      "sha": "8aa2bb1aef3346e49aec6358edf5e47ce905ae7b",
+      "date": "2025-07-30T14:03:20+08:00",
+      "author": "tomoya",
+      "email": "py2qiuse@gmail.com",
+      "message": "利用Cookie里的SameSite属性防止CSRF攻击\n\nhttps://github.com/atjiu/pybbs/issues/211\nhttps://github.com/atjiu/pybbs/issues/212\n"
+    },
+    {
+      "sha": "edb14ff13e9e05394960ba46c3d31d844ff2deac",
+      "date": "2025-07-30T13:31:54+08:00",
+      "author": "tomoya",
+      "email": "py2qiuse@gmail.com",
+      "message": "修复切换语言重定向页面可被用户控制的漏洞\n\nhttps://github.com/atjiu/pybbs/issues/210\n"
+    },
+    {
+      "sha": "2fe4a51afbce0068c291bc1818bbc8f7f3b01a22",
+      "date": "2025-07-30T11:54:25+08:00",
+      "author": "tomoya",
+      "email": "py2qiuse@gmail.com",
+      "message": "修复XSS攻击\n\nhttps://github.com/atjiu/pybbs/issues/203\nhttps://github.com/atjiu/pybbs/issues/204\nhttps://github.com/atjiu/pybbs/issues/205\nhttps://github.com/atjiu/pybbs/issues/206\nhttps://github.com/atjiu/pybbs/issues/207\nhttps://github.com/atjiu/pybbs/issues/208\nhttps://github.com/atjiu/pybbs/issues/209\n"
+    },
+    {
+      "sha": "0577fac2c4dff41b6deb16ad36b9077b6efdfa54",
+      "date": "2025-07-30T11:24:46+08:00",
+      "author": "tomoya",
+      "email": "py2qiuse@gmail.com",
+      "message": "如果验证code通过，将code标记为已使用\n"
+    },
+    {
+      "sha": "d09cb19a8e7d7e5151282926ada54080244d499f",
+      "date": "2025-07-30T11:21:02+08:00",
+      "author": "tomoya",
+      "email": "py2qiuse@gmail.com",
+      "message": "强密码策略\n\nhttps://github.com/atjiu/pybbs/issues/201\n"
+    },
+    {
+      "sha": "044f22893bee254dc2bb0d30f614913fab3c22c2",
+      "date": "2025-07-30T11:02:41+08:00",
+      "author": "tomoya",
+      "email": "py2qiuse@gmail.com",
+      "message": "如果后台开启了新注册邮箱需要验证则即时验证邮箱否则不允许注册\n\n系统配置中添加配置项：邮箱或手机验证码每天发送最大条数\n\nhttps://github.com/atjiu/pybbs/issues/200\n"
+    },
+    {
+      "sha": "234197c4f8fc7ce24bdcff5430cd42492f28936a",
+      "date": "2025-07-30T09:45:45+08:00",
+      "author": "tomoya",
+      "email": "py2qiuse@gmail.com",
+      "message": "修复修改邮箱时发送邮件验证码时的验证信息告知用户邮箱是否存在的漏洞\n\nhttps://github.com/atjiu/pybbs/issues/202\n"
+    },
+    {
+      "sha": "ecaf8d46944fd03e3c4ea05698f8acf0aaa570cf",
+      "date": "2025-07-30T09:21:41+08:00",
+      "author": "tomoya",
+      "email": "py2qiuse@gmail.com",
+      "message": "修复图形验证码可重复使用的漏洞\n\nhttps://github.com/atjiu/pybbs/issues/199\n"
+    },
+    {
+      "sha": "008d07eab6834634a502681fd6fdd328611dc795",
+      "date": "2024-07-30T14:45:09+08:00",
+      "author": "Tomoya",
+      "email": "py2qiuse@gmail.com",
+      "message": "将项目中的fastjson相关代码删去，换用jackson\n\n但：justauth依赖中也用到了fastjson，如果用不到第三方登录，可以打开pom.xml找到justauth依赖处，有注释说明\n"
+    },
+    {
+      "sha": "714b1bbc17938de0bef1bb3320868ba0457a422f",
+      "date": "2024-04-15T15:27:10+08:00",
+      "author": "iuiu",
+      "email": "py2qiuse@gmail.com",
+      "message": "Update README.en_US.md"
+    },
+    {
+      "sha": "104bc3f35ae843462b0cecca2ad02f05e34c6494",
+      "date": "2024-04-15T13:45:40+08:00",
+      "author": "Tomoya",
+      "email": "py2qiuse@gmail.com",
+      "message": "update\n"
+    },
+    {
+      "sha": "f669506b90ecc48ddfd29e1095a6c2011c304779",
+      "date": "2024-04-15T13:38:19+08:00",
+      "author": "Tomoya",
+      "email": "py2qiuse@gmail.com",
+      "message": "update\n"
+    },
+    {
+      "sha": "b561b4447cd2ed457737d0e206957a589b18af72",
+      "date": "2024-04-15T13:28:26+08:00",
+      "author": "iuiu",
+      "email": "py2qiuse@gmail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "89bb9cc0114b21485f6392affb3eca939cab5fe3",
+      "date": "2023-05-10T10:32:58+08:00",
+      "author": "valavala",
+      "email": "py2qiuse@gmail.com",
+      "message": "替换网址 yiiu.co -> atjiu.github.io\n"
+    },
+    {
+      "sha": "e399579970340fa4a00fb1db46d6e0e65e89634c",
+      "date": "2023-05-10T10:29:10+08:00",
+      "author": "valavala",
+      "email": "py2qiuse@gmail.com",
+      "message": "https://github.com/atjiu/pybbs/issues/184\n"
+    },
+    {
+      "sha": "c1617c4cb1edda11dc7b117a37e05e8c3c185c78",
+      "date": "2023-05-10T10:08:19+08:00",
+      "author": "valavala",
+      "email": "py2qiuse@gmail.com",
+      "message": "https://github.com/atjiu/pybbs/issues/175\n"
+    },
+    {
+      "sha": "7d83b97d19f5fed9f29f72e654ef3c2818021b4d",
+      "date": "2023-05-10T10:01:31+08:00",
+      "author": "valavala",
+      "email": "py2qiuse@gmail.com",
+      "message": "修复了一部分页面上输入框的xss注入\nhttps://github.com/atjiu/pybbs/issues/171\n"
+    },
+    {
+      "sha": "da65bce230a757f4325ad6255f2c7662aa49136f",
+      "date": "2023-05-10T09:34:10+08:00",
+      "author": "valavala",
+      "email": "py2qiuse@gmail.com",
+      "message": "Merge remote-tracking branch 'origin/master'\n"
+    },
+    {
+      "sha": "14e4d78194764972ed97c4f1d657e57c776c7061",
+      "date": "2023-05-10T09:33:52+08:00",
+      "author": "valavala",
+      "email": "py2qiuse@gmail.com",
+      "message": "修复当配置上redis缓存后无法修改前台用户密码的问题\n"
+    },
+    {
+      "sha": "39fd6c5da82f469229d2acfda0db6208e247dc7b",
+      "date": "2023-03-14T20:38:24+08:00",
+      "author": "tomoya92",
+      "email": "py2qiuse@gmail.com",
+      "message": "ftl页面中可取值对象site里去掉类型为password的数据\n"
+    },
+    {
+      "sha": "513c963154c38d068262781a9715f7a90a09ccd0",
+      "date": "2023-03-14T19:33:29+08:00",
+      "author": "tomoya92",
+      "email": "py2qiuse@gmail.com",
+      "message": "更新项目及博客链接\n"
+    },
+    {
+      "sha": "63489747056eee3d71fb4a1b12989b7672249f5a",
+      "date": "2023-03-14T15:22:36+08:00",
+      "author": "iuiu",
+      "email": "py2qiuse@gmail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "284c1762875ab5d438207541de0adc9a3d31392a",
+      "date": "2023-03-10T14:27:25+08:00",
+      "author": "valavala",
+      "email": "py2qiuse@gmail.com",
+      "message": "后台系统设置中配置回调鉴权密钥(webhook)时，自动setWebhook\n"
+    },
+    {
+      "sha": "ad816784adf8f9d6632da1d881afcc9715c87af9",
+      "date": "2023-03-10T11:11:17+08:00",
+      "author": "valavala",
+      "email": "py2qiuse@gmail.com",
+      "message": "更新文档\n"
+    },
+    {
+      "sha": "429f4b310504cea8fc35c7db437f452a67bfa917",
+      "date": "2023-03-10T10:34:43+08:00",
+      "author": "valavala",
+      "email": "py2qiuse@gmail.com",
+      "message": "1. 评论添加审核功能\n2. 系统设置里添加配置项：telegram, 代理\n3. 站长可通过配置telegram从而实现在telegram上接收新评论以及进行审核删除操作\n"
+    },
+    {
+      "sha": "2bc31780b8798dfb8dd07967d310ee45f0376b2b",
+      "date": "2022-12-12T14:01:59+08:00",
+      "author": "valavala",
+      "email": "py2qiuse@gmail.com",
+      "message": "去掉sql中数据库名前缀\n"
+    },
+    {
+      "sha": "d95c52f742a2d2a3f7262bb6fc89c5c0f1637718",
+      "date": "2022-10-20T13:45:24+08:00",
+      "author": "iuiu",
+      "email": "py2qiuse@gmail.com",
+      "message": "Update README.en_US.md"
+    },
+    {
+      "sha": "109e8fa59eb23c5d31d4a2698a1020fb6b1be118",
+      "date": "2022-10-20T13:45:01+08:00",
+      "author": "iuiu",
+      "email": "py2qiuse@gmail.com",
+      "message": "Update README.md"
+    }
+  ],
+  "commit_sha": "c95b333736581c204bbbd86f01691e83ae48ab33",
+  "extracted_at": "2026-10-05T17:57:29.601083+00:00"
+}

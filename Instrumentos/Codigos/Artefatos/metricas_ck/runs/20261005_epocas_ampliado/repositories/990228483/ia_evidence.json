@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "5ea3b995f5d13e19c592a6399973fe7dadb5e656",
+      "date": "2026-07-10T18:25:03+01:00",
+      "author": "Debs Gayen",
+      "email": "debsgayen@gmail.com",
+      "message": "fix: runelite profile loading; refactor: optimise profile; feat: onFirstCycle() (#66)\n\n* fix: runelite profile loading; refactor: optimise profile\n\n* bump version"
+    },
+    {
+      "sha": "cad08479a89de4305d5f03eb2664438a31a7f070",
+      "date": "2026-05-21T19:34:47+01:00",
+      "author": "Debs Gayen",
+      "email": "debsgayen@gmail.com",
+      "message": "fix: BufferedImage <-> Mat conversion; refacfor: MouseOverText extraction (#65)\n\n* fix: Mat to BufferedImage conversions, MouseOver reliability"
+    },
+    {
+      "sha": "580a619abd0d3b99fb664fcaf3cc89aec2941edb",
+      "date": "2026-04-14T21:39:54+02:00",
+      "author": "TechnologicalDifferences",
+      "email": "Inhumanskillsspam@hotmail.com",
+      "message": "refactor: cross-platform and build improvements (#64)\n\n* refactor: cross-platform and build improvements\n\n- LinuxProcessManager: implement getPid() via /proc/[pid]/cmdline\n  scanning; remove X11/JNA window operations, fields, constructor,\n  close(), and AutoCloseable — class now implements ProcessManager only\n- ProcessManagerFactory: add explicit Linux guard and throw\n  UnsupportedOperationException for unrecognised OSes instead of\n  silently falling through to Linux\n- ProfileManager: replace hard-coded ~/.runelite/profiles2 path with\n  OS-aware resolveProfileDir() that handles Windows AppData, Linux Bolt\n  Flatpak, macOS Library/Application Support, and standard Linux\n- settings.gradle.kts: canonicalise project dir to fix Spotless on\n  systems where /home is a symlink (e.g. Fedora /var/home)\n- ScriptInstance: clear thread interrupted flag before broadcast() so\n  the WebSocket semaphore acquire succeeds after stop() interrupts the\n  script thread\n- CVTemplates.sh: add setup script to fetch SRL fonts, OSBC UI\n  templates, and mouse-click images and generate font index files\n- gradlew: mark as executable\n\n* docs: update third-party/DEV_README.md"
+    },
+    {
+      "sha": "c4de3f4651678d8bb2d2561e64bb217e31d15fb9",
+      "date": "2026-04-09T18:23:35+01:00",
+      "author": "Debs Gayen",
+      "email": "debsgayen@gmail.com",
+      "message": "bump version (#61)\n\nBump SemVer to 0.4.0-SNAPSHOT"
+    },
+    {
+      "sha": "69ff913d89fe8d6474038b6740d1615c62c72550",
+      "date": "2026-04-09T18:08:46+01:00",
+      "author": "Debs Gayen",
+      "email": "debsgayen@gmail.com",
+      "message": "Integrate RemoteInput (#60)\n\n* remove cached files\n\n* integrate Brandon-T's RemoteInput\n\n* Revise README for RemoteInput updates and binaries\n\nUpdated the README to reflect changes in RemoteInput and added information about pre-built binaries."
+    },
+    {
+      "sha": "5ea2a164168ac0e0227c1231a0fbc5df9042057c",
+      "date": "2026-02-27T23:02:29Z",
+      "author": "Debs Gayen",
+      "email": "debsgayen@gmail.com",
+      "message": "refactor: optimise exceptions thrown; feat: MatchResult (#59)\n\n"
+    },
+    {
+      "sha": "6038886ef5e4997f343c10429b521bed545c49d8",
+      "date": "2026-02-18T05:48:56Z",
+      "author": "Debs Gayen",
+      "email": "debsgayen@gmail.com",
+      "message": "refactor: clarify failsafe logic in DemoAgilityScript (#58)\n\nSeparate mark of grace handling from walking to reset tile for clarity."
+    },
+    {
+      "sha": "0f412fb696c44ad95d0ba7487cde6eeaa15dfd78",
+      "date": "2026-02-15T09:16:58Z",
+      "author": "Debs Gayen",
+      "email": "debsgayen@gmail.com",
+      "message": "feat: add Discord webhook & centre point logic; refactor: remove unused modules & fix KInput makefile (#57)\n\n**NOTE: Pulling these changes will update your DLL files, you will manually have to compile them again if you did so already!**\n\n- Created a `DiscordNotification` class to send yourself pings upon certain scripting events.\n  - This sends a post request to the WebHook URL stated in the `secrets.properties` file (gitignored).\n- Added click closest to centre logic in the `ColourContours` class to prevent selecting an arbitrary first ChromaObj by detection.\n  - The closest object to the centre is now the default logic for the `PointSelector` actions utility.\n- The `AccountManager`, `.chromascape` directory and `CVTemplates.sh` have been removed due to not being used and support not being planned.\n- Several changes have been made to the demo scripts including using `Minimap.getXP` in the `DemoAgilityScript`, and better conformity to professional code style, namely for magic numbers and removal of redundant constructors.\n- KInput's makefile has been changed to remove redundant references to `MinHook`.\n- Added `sendFunctionKey()` in `VirtualKeyboardUtils` and reduced code duplication in `Kinput.java`.\n\nMisc JavaDoc corrections have been made across the board."
+    },
+    {
+      "sha": "c6628067553ff0e552c1e86e08fd92d83eda978e",
+      "date": "2026-02-01T12:42:48Z",
+      "author": "Debs Gayen",
+      "email": "debsgayen@gmail.com",
+      "message": "Revise README for clarity and detail improvements\n\nUpdated the README.md to improve clarity and detail about the ChromaScape framework, including changes to the description, setup instructions, and feature explanations."
+    },
+    {
+      "sha": "ac06b03c13bf50cf5c174c1ac81fe360c1777853",
+      "date": "2026-01-29T02:59:17Z",
+      "author": "Debs Gayen",
+      "email": "debsgayen@gmail.com",
+      "message": "Bump version (#56)\n\n* Bump version to v0.3.0-SNAPSHOT\n"
+    },
+    {
+      "sha": "b7feca0f844fc828db025ed3a05d086ea0018777",
+      "date": "2026-01-29T02:51:00Z",
+      "author": "Debs Gayen",
+      "email": "debsgayen@gmail.com",
+      "message": "Release v0.2.0 (#55)\n\nUpdate versioning to v0.2.0"
+    },
+    {
+      "sha": "db1752978023e0f8429dfc69465df6f5ceda1cef",
+      "date": "2026-01-29T02:30:03Z",
+      "author": "Debs Gayen",
+      "email": "debsgayen@gmail.com",
+      "message": "Add several runtime optimisations relating to screen capture (#54)\n\n- Add MouseOver.getText() utility to return all text in the MouseOverText zone regardless of colour.\n- Idler holds the colour variables for less runtime overhead.\n- Changed Minimap.getXP() to return Integer rather than String.\n- Drastically improve ScreenManager zone extraction speed.\n- Drastically improve Ocr speed through memory management and font map optimisation.\n- Add abstraction to extract text from a CU81 Mat object directly to reduce BufferedImage conversion overhead.\n- Add more attempts to MovingObject.\n- Add Morphological closing to default ColourContours behaviour to minimise attempts, reduce duplicate contours and to make contour extraction robust."
+    },
+    {
+      "sha": "afef25d440540935d41576c75612538515d217ef",
+      "date": "2026-01-12T18:27:49-05:00",
+      "author": "William Valli",
+      "email": "wvcosmic@gmail.com",
+      "message": "Add minimap class (#53)\n\n* Add minimap class\n\n- Retrieves orb data: HP, prayer, run energy, and special attack energy.\n- Adds XP counter detection\n\n* Prevent XP color lazy loading"
+    },
+    {
+      "sha": "88b7b5f5a79cbb67dea0204eb51f4c5af578c4bc",
+      "date": "2026-01-10T00:10:51Z",
+      "author": "Debs Gayen",
+      "email": "debsgayen@gmail.com",
+      "message": "Add DemoAgility, moving object support and tightness overload (#52)\n\n- Add new `DemoAgilityScript`\n  - This script was tested at Draynor, Varrock, and Canifis and has Reset tiles for each (Configuration needed)\n  - Picks up marks\n- Add MovingObject class\n  - Finds the object onscreen\n  - Clicks it\n  - Uses concurrency to retry until a red click event ocurrs\n- Add overloads for a new \"tightness\" parameter\n  - The higher the tightness parameter -> the closer to the centre the click location distribution\n  - You'll find this parameter inside  `PointSelector` and `ClickDistribution`\n  - Essential for ground items\n- Update `CVTemplates.bat` to include red click event images from OSBC\n  - These are the images that we search for when looking for a red click\n- Remove destruction of KInput in controller\n  - After testing, I verified that it wasn't working"
+    },
+    {
+      "sha": "a87899d27442beea16a79dac10d9e0b8add77796",
+      "date": "2025-12-23T16:10:10-05:00",
+      "author": "Kauky",
+      "email": "42544099+ImKauky@users.noreply.github.com",
+      "message": "Fixed HeadlessException that was thrown sometimes on script start (#49)\n\n"
+    },
+    {
+      "sha": "46db1c462752d39bd0c04da630bfe5d35edc117a",
+      "date": "2025-12-21T16:27:33Z",
+      "author": "Debs Gayen",
+      "email": "debsgayen@gmail.com",
+      "message": "Update CONTRIBUTING.md to remove outdated sections\n\nRemoved sections on improving documentation, styleguides, commit messages, and joining the project team from the contributing guidelines."
+    },
+    {
+      "sha": "5c078a2effacb3ee7d49cffe6278e3993683b51d",
+      "date": "2025-12-21T10:44:07Z",
+      "author": "Debs Gayen",
+      "email": "debsgayen@gmail.com",
+      "message": "Bump version to 0.2.0-SNAPSHOT (#48)\n\nCo-authored-by: Debajit Gayen <gayend1@cardiff.ac.uk>"
+    },
+    {
+      "sha": "a41d8ea4e6709aa8a6a5d69209f273bb9a3177df",
+      "date": "2025-12-21T10:41:40Z",
+      "author": "Debs Gayen",
+      "email": "debsgayen@gmail.com",
+      "message": "Release v0.1.0 (#47)\n\nCo-authored-by: Debajit Gayen <gayend1@cardiff.ac.uk>"
+    },
+    {
+      "sha": "9b0ebcf19ad4e6584faacf62cf7555312f55a466",
+      "date": "2025-12-21T10:37:17Z",
+      "author": "Debs Gayen",
+      "email": "debsgayen@gmail.com",
+      "message": "Interface Revamp, Upgrade Mouse Integration & Performance Enhancements (#46)\n\n# PR #46: Interface Revamp, Humanized Mouse & Performance Overhaul\n\nThis is a massive update that updates almost every part of the bot. I wanted to make the client look better, feel more human, and run a lot smoother.\n\n### Complete Web Interface Rehaul\n\nThe frontend has been completely rebuilt with a modern **GlassMorphism** aesthetic. Theres also several components in the tech stack which have been created to utilise `WebSockets` for real time updates.\n\n* **Live Debug Viewport:** You can now see exactly what the bot \"sees\" in real-time. The `ColourContours` and `TemplateMatching` logic push their state directly to the browser. If the stream gets overloaded, the system discards old frames to keep the bot logic running.\n* **Reactive Status:** The header now displays the live sensor state (`SEARCHING`, `ACTING`, `WAITING`, `ERROR`) so you know exactly what the bot is thinking.\n* **Live Statistics:** Runtime, cycles, and inputs are streamed live.\n* **Smart Logs:** Console logs are now colour-coded by severity in the web UI.\n* **Better Controls:** Fixed the sliders (you can no longer break them by pushing min past max), and added a **Copy Button** to the colour picker. You can now generate the Java code for a `ColourObj` and paste it directly into your script.\n* **Slider performance** Slider performance has been greatly improved by no longer writing modified.png to disk.\n\n### WindMouse Integration\n\nI’ve completely replaced the old `MousePathing` with **WindMouse**.\n\n- Instead of calculating a geometric path, WindMouse simulates a physical cursor with mass. It uses `gravity` to pull towards the target and `wind` to apply randomness making it pixel imperfect.\n- Movement includes natural overshoots, micro-jitters, and variable speeds, As a result, overshoot and undershoot methods are now deprecated and removed.\n\n###  Performance & Multithreading\n\nWe've moved to a **Producer -> Consumer threading model** for inputs. The physics engine calculates mouse movement on one thread, while a separate background thread handles the hardware remote inputs. If the hardware input lag spikes, the physics calculation remains accurate.\n\n**OpenCV Improvements:**\n\n* **Font Caching:** OCR no longer lazy loads on each OCR call, it's cached in memory at startup.\n* **Viewport:** The state tracker uses a no-op interface by default and is only hooked up when Spring loads, preventing memory leaks during headless runs.\n\n### Background Mode\n\nThis is probably the biggest Quality of Life improvement **You can now hide the RuneLite.**\n\nI replaced the standard Java `Robot` capture with native Windows calls. This reads the window's device context directly and writes it into a buffer.\n\nThe bot can see and use the game window even if it is covered by another window. You can finally use your laptop for other things while the bot runs in the background!\n> You can't minimise it, however you can maximise other things and cover it completely.\n\n### New Actions Utility\nYou can now call `ItemDropper.dropAll(controller());` to drop all the items in your inventory.\nThere are also different dropping patterns to choose from, see the class.\n\n## BREAKING CHANGES: \n- `VirtualMouseUtils.moveToPause()` & `VirtualMouseUtils.moveToAndOvershoot()` have been removed.\n- There is no longer a \"fastest\" option in mouse.moveTo()."
+    },
+    {
+      "sha": "9e6c01c38d46789a873c0455b424b1c750f48f3b",
+      "date": "2025-10-01T00:39:49+01:00",
+      "author": "Debs Gayen",
+      "email": "debsgayen@gmail.com",
+      "message": "Demo fishing (#45)\n\n- Add new DemoFishingScript.\n- Improve JavaDocs in PointSelector.\n- Change getRandomPointByColour to getRandomPointByColourObj to be more intuitive."
+    },
+    {
+      "sha": "88d3995a9859ac29c455b3138259f290659c67bf",
+      "date": "2025-09-30T23:41:20+01:00",
+      "author": "Debs Gayen",
+      "email": "debsgayen@gmail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "258d828ba48a1f1b4b5b516557aab5a734fd18a0",
+      "date": "2025-09-30T21:32:01+01:00",
+      "author": "Debs Gayen",
+      "email": "debsgayen@gmail.com",
+      "message": "Add custom profile manager (#44)\n\n- Bundles a custom ChromaScape specific profile.properties file for RuneLite\n- At runtime: loads it into RuneLite if one doesn't already exist\n- Doesn't force users to load it automatically"
+    },
+    {
+      "sha": "4dbee7de5b5c4e91b3a90bedf198c18a2fa9c4a7",
+      "date": "2025-09-22T01:13:05+01:00",
+      "author": "Debs Gayen",
+      "email": "debsgayen@gmail.com",
+      "message": "Automatic fixed mode (#43)\n\n* Make ZoneManager detect fixed mode on launch\n\n* Delete unfinished change\n\n* Add JavaDoc for checkIfFixed()"
+    },
+    {
+      "sha": "146d83a065b7891a6f5878509903c82b6a771cc4",
+      "date": "2025-09-18T03:58:17+01:00",
+      "author": "Debs Gayen",
+      "email": "debsgayen@gmail.com",
+      "message": "Switch char event to 400 and remove parameter for eventID (#42)\n\nCo-authored-by: debajit gayen <gayend1@cardiff.ac.uk>"
+    },
+    {
+      "sha": "7168c5413e3190d78305ab8fdbf01fafeeecae6e",
+      "date": "2025-09-17T00:59:56+01:00",
+      "author": "Debs Gayen",
+      "email": "debsgayen@gmail.com",
+      "message": "Update Idler.java to remove log"
+    },
+    {
+      "sha": "b4550bc807c07d98ac71ad2b6924ddef6eac5096",
+      "date": "2025-09-17T00:52:01+01:00",
+      "author": "debajit gayen",
+      "email": "gayend1@cardiff.ac.uk",
+      "message": "Add timestamp to idler\n"
+    },
+    {
+      "sha": "ee74c1a5fcb015c9c3ab18af4bb290536bf459ed",
+      "date": "2025-09-16T15:53:30-07:00",
+      "author": "evoke-afk",
+      "email": "evokeknife@gmail.com",
+      "message": "Add Custom Script Directory Support (#41)\n\n- Scripts can now be placed in subdirectories under /scripts (subdirectory names can be anything).\n- These subdirectories are ignored by Git (so your custom scripts won’t get committed by accident).\n- Scripts stored this way are still fully functional and discoverable by the system, just like scripts in the top-level /scripts folder.\n- `PointSelector` now has a second function `getRandomPointByColour() to accept `ColourObj`s directly, allowing users to store colours inline."
+    },
+    {
+      "sha": "b73b3e594a3bf0d2da7a118676697ce685916232",
+      "date": "2025-09-16T03:38:38+01:00",
+      "author": "Debs Gayen",
+      "email": "debsgayen@gmail.com",
+      "message": "Fix comparison in Idler (#40)\n\nDefensively compare strings using .equals() to ensure that string content is compared."
+    },
+    {
+      "sha": "60267ea567a87091738d6cb56711f8992973644c",
+      "date": "2025-09-15T18:26:03-07:00",
+      "author": "evoke-afk",
+      "email": "evokeknife@gmail.com",
+      "message": "Add Various Utilities (#39)\n\n"
+    },
+    {
+      "sha": "140976762ab438b57766fbba39f5469885a279e0",
+      "date": "2025-09-15T22:25:26+01:00",
+      "author": "Debs Gayen",
+      "email": "debsgayen@gmail.com",
+      "message": "Fix stop in UI and remove duration parameter (#37)\n\nBlocking tasks such as moving the mouse and waiting throw if the user requests a stop.\nWaiting has been moved inside of BaseScript so it can throw without being caught in cycle().\nWaiting is static and can be called by utilities at runtime, namely the walker.\nBaseScript's run() and therefore cycle() now run indefinitely until the user requests a stop.\nDuration parameter has been dropped altogether."
+    }
+  ],
+  "commit_sha": "5ea3b995f5d13e19c592a6399973fe7dadb5e656",
+  "extracted_at": "2026-10-05T18:15:27.971696+00:00"
+}

@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "a203c830f475a6cd662aaa796941e1b6286e1740",
+      "date": "2023-12-12T18:26:05-08:00",
+      "author": "Chris Phillipson",
+      "email": "cphillipson@pivotal.io",
+      "message": "Update Spring Cloud to 2023.0.0 and other dependencies\n"
+    },
+    {
+      "sha": "4107ec3cca7ffd722a8cb22ac2374efe62d2cc97",
+      "date": "2023-11-24T05:31:17-08:00",
+      "author": "Chris Phillipson",
+      "email": "cphillipson@pivotal.io",
+      "message": "Upgrade spring-restdocs and httpclient5 versions\n"
+    },
+    {
+      "sha": "712837cfc30c1d6d340ffb4c9e93c6d291686fb6",
+      "date": "2023-11-24T05:05:08-08:00",
+      "author": "Chris Phillipson",
+      "email": "cphillipson@pivotal.io",
+      "message": "Reactivate Codecov\n"
+    },
+    {
+      "sha": "02758b7f94035d6724be34bbf1838df140ba1b71",
+      "date": "2023-11-24T04:27:22-08:00",
+      "author": "Chris Phillipson",
+      "email": "fastnsilver@gmail.com",
+      "message": "Upgrade to Spring Boot 3.2.0 (#155)\n\n* Thanksgiving 2023 surprise! Spring Boot 3.2.0\n* Add -Dspring.cloud.compatibility-verifier.enabled=false to runtime config\n* Upgrade Flyway version to 10.1.0\n  * reactivate HSQLDB sproc test\n* Upgrade dependency and plugin properties in POMs\n* Update ROADMAP"
+    },
+    {
+      "sha": "018d5d3ba76187119b8e834621c6fd4af351648b",
+      "date": "2023-11-22T08:50:34-08:00",
+      "author": "Chris Phillipson",
+      "email": "cphillipson@pivotal.io",
+      "message": "Update ROADMAP; reflect completion of Java 21 baseline\n"
+    },
+    {
+      "sha": "7ef52e4e4e9fbd19ad96247e9e60907d39ad8e1e",
+      "date": "2023-11-22T08:27:26-08:00",
+      "author": "Chris Phillipson",
+      "email": "cphillipson@pivotal.io",
+      "message": "Baseline on Java 21\n"
+    },
+    {
+      "sha": "e14d563cc2fddfbf313d52a22a2c2de9679bd98f",
+      "date": "2023-11-22T07:49:06-08:00",
+      "author": "Chris Phillipson",
+      "email": "cphillipson@pivotal.io",
+      "message": "Use var for reference-typed variables; and some test cleanup\n"
+    },
+    {
+      "sha": "e77f1c84d53e600ee6b74f27b67cda760c44517a",
+      "date": "2023-11-22T07:21:02-08:00",
+      "author": "Chris Phillipson",
+      "email": "cphillipson@pivotal.io",
+      "message": "No code changes; added spring-java-format-maven-plugin, executed spring-javaformat:apply\n"
+    },
+    {
+      "sha": "fa40dda64da033e3245168039c6d1c35ec939214",
+      "date": "2023-11-20T09:11:09-08:00",
+      "author": "Chris Phillipson",
+      "email": "cphillipson@pivotal.io",
+      "message": "Cleanup unused imports\n"
+    },
+    {
+      "sha": "607a3b2593a6851e715c78e51829bab7e614fa8c",
+      "date": "2023-11-19T23:36:45-08:00",
+      "author": "Chris Phillipson",
+      "email": "cphillipson@pivotal.io",
+      "message": "Replace Reflection-oriented impls for toString, hashcode and equals method overrides\n"
+    },
+    {
+      "sha": "9526f3706d17ca3dc45074f50e41367ea76b077e",
+      "date": "2023-11-19T23:00:16-08:00",
+      "author": "Chris Phillipson",
+      "email": "cphillipson@pivotal.io",
+      "message": "SCGW service instance must be created w/ host config to be publicly addressable\n"
+    },
+    {
+      "sha": "7d8418c3e729c38702afccc58f09a15714a0fcf3",
+      "date": "2023-11-19T22:32:42-08:00",
+      "author": "Chris Phillipson",
+      "email": "cphillipson@pivotal.io",
+      "message": "Bind apps to gateway service instance before attempting to start them up\n"
+    },
+    {
+      "sha": "28c3ffb3838e1b36633a4c2c8e5f020c53cc3b06",
+      "date": "2023-11-19T22:30:34-08:00",
+      "author": "Chris Phillipson",
+      "email": "cphillipson@pivotal.io",
+      "message": "Fix service binding\n"
+    },
+    {
+      "sha": "36cb1c794d8a154219107647fe9bcee15024d913",
+      "date": "2023-11-19T22:15:52-08:00",
+      "author": "Chris Phillipson",
+      "email": "cphillipson@pivotal.io",
+      "message": "Create variant scripts one using OSS (AI) and the other using tile (SI)\n"
+    },
+    {
+      "sha": "879b70a2a15a1d20fa5792705a62e27b5269050c",
+      "date": "2023-11-19T19:55:52-08:00",
+      "author": "Chris Phillipson",
+      "email": "cphillipson@pivotal.io",
+      "message": "Add step for creating new release on Github\n"
+    },
+    {
+      "sha": "1b4667594709b98cfb203c28599a42519ec8d4c7",
+      "date": "2023-11-19T18:43:40-08:00",
+      "author": "Chris Phillipson",
+      "email": "cphillipson@pivotal.io",
+      "message": "Address issue #151; strip away Lombok plugin and dependencies, remove annotations\n"
+    },
+    {
+      "sha": "26ab9ccb25969ea6eb66e5ca590b65b09931d7a8",
+      "date": "2023-11-19T17:45:25-08:00",
+      "author": "Chris Phillipson",
+      "email": "cphillipson@pivotal.io",
+      "message": "[maven-release-plugin] prepare for next development iteration\n"
+    },
+    {
+      "sha": "216353301bfa908c0bcee01709ef7a91cd16ac7c",
+      "date": "2023-11-19T17:45:22-08:00",
+      "author": "Chris Phillipson",
+      "email": "cphillipson@pivotal.io",
+      "message": "[maven-release-plugin] prepare release 1.0.0\n"
+    },
+    {
+      "sha": "b651affac65e35e3362667172f5467192a4b8b10",
+      "date": "2023-11-17T07:57:08-08:00",
+      "author": "Chris Phillipson",
+      "email": "cphillipson@pivotal.io",
+      "message": "Fix Maven Site generation; add missing refs to parent modules\n"
+    },
+    {
+      "sha": "1d200d2380db61e77a62b8def8fa0a07bc0e119b",
+      "date": "2023-11-17T07:07:15-08:00",
+      "author": "Chris Phillipson",
+      "email": "cphillipson@pivotal.io",
+      "message": "Remove trailing whitespace\n"
+    },
+    {
+      "sha": "14b87d6eecfa81f277ae89bf5c2a0165fe6c3481",
+      "date": "2023-11-16T17:24:47-08:00",
+      "author": "Chris Phillipson",
+      "email": "cphillipson@pivotal.io",
+      "message": "Add sh script to push suite of container images to Dockerhub\n"
+    },
+    {
+      "sha": "fa1e091d926eb4739210998b021b5889c322d58e",
+      "date": "2023-11-16T17:23:38-08:00",
+      "author": "Chris Phillipson",
+      "email": "cphillipson@pivotal.io",
+      "message": "Update template for config-repo based upon latest config updates\n"
+    },
+    {
+      "sha": "c847429a234b33ad5714f25b956c57f9f58d3b03",
+      "date": "2023-11-16T16:57:10-08:00",
+      "author": "Chris Phillipson",
+      "email": "cphillipson@pivotal.io",
+      "message": "Repair fallout from last PR merge; maintain dual pipeline modes and CF deploy support\n"
+    },
+    {
+      "sha": "192650decf831265e3ef28d83db3992f2482c52d",
+      "date": "2023-11-16T16:28:58-08:00",
+      "author": "Chris Phillipson",
+      "email": "fastnsilver@gmail.com",
+      "message": "Groom ROADMAP: Grivet makes use of Reflection; GraalVM is not really an option\n\n* but we might be able to consider CRaC"
+    },
+    {
+      "sha": "5982d3634de58166d2502b9e39f0a7f6371d7883",
+      "date": "2023-11-16T16:22:43-08:00",
+      "author": "Chris Phillipson",
+      "email": "fastnsilver@gmail.com",
+      "message": "Revise project structure to support variant pipeline modes (#153)\n\n* Add CF manifests and scripts to deploy\n* Add spring-cloud-services-dependencies, java-cfenv-boot\n* Update how deployables are deployed to CF; and highlight new efforts in ROADMAP\n* Unfortunately can't get OSS SCGW to work w/ internal routes on CF so fell back to public routes"
+    },
+    {
+      "sha": "278c918f902b1f9a55a377f933ebab6b988552b5",
+      "date": "2023-11-15T07:53:53-08:00",
+      "author": "Chris Phillipson",
+      "email": "cphillipson@pivotal.io",
+      "message": "Update template.zip; upddates to Spring profile configuration\n"
+    },
+    {
+      "sha": "f8851d13def238fb8386949793dd757f059f12b4",
+      "date": "2023-11-14T22:54:03-08:00",
+      "author": "Chris Phillipson",
+      "email": "cphillipson@pivotal.io",
+      "message": "Add alternate pipeline mode where spring-cloud-stream-binder-rabbit is employed\n"
+    },
+    {
+      "sha": "5aeaed23ec7b4cb7fbe784a0b8fea2859686a779",
+      "date": "2023-11-14T06:45:34-08:00",
+      "author": "Chris Phillipson",
+      "email": "cphillipson@pivotal.io",
+      "message": "Ooops! GitGaurdian expired PAT thankfully, just setting this value blank\n"
+    },
+    {
+      "sha": "d10272bf6bd7a900dfa03922d3cef1ef943bfea4",
+      "date": "2023-11-14T06:26:03-08:00",
+      "author": "Chris Phillipson",
+      "email": "cphillipson@pivotal.io",
+      "message": "Update DEV_NOTES and ROADMAP for 1.0.0 release\n"
+    },
+    {
+      "sha": "c744432430779620bef6cb7070e4c572118443b5",
+      "date": "2023-11-14T05:41:29-08:00",
+      "author": "Chris Phillipson",
+      "email": "cphillipson@pivotal.io",
+      "message": "Fix Docker Compose pipeline mode and MySQL persistence/query\n"
+    }
+  ],
+  "commit_sha": "a203c830f475a6cd662aaa796941e1b6286e1740",
+  "extracted_at": "2026-10-05T18:35:35.183949+00:00"
+}

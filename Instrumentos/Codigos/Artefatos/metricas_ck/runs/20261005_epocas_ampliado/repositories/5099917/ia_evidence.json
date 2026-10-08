@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "398834833b05131a449c6e159408c1940c3b0961",
+      "date": "2026-07-11T17:48:39+02:00",
+      "author": "ron190",
+      "email": "ron190@ymail.com",
+      "message": "Add percona tidb healthcheck\n"
+    },
+    {
+      "sha": "734707dcea735c31a5a6ef4e291610fe99a80de0",
+      "date": "2026-07-11T16:59:42+02:00",
+      "author": "ron190",
+      "email": "ron190@ymail.com",
+      "message": "Add engines percona and tidb with docker ITs (mysql clone)\n\n- Adapt scraping and fixed row\n- Bump dependencies\n"
+    },
+    {
+      "sha": "055b2c48b509d9ce95f2d6e5225bac198f0cce19",
+      "date": "2026-07-04T20:07:50+02:00",
+      "author": "ron190",
+      "email": "ron190@ymail.com",
+      "message": "Use jdbc greenplum container name\n\n- Bump dependencies\n"
+    },
+    {
+      "sha": "11c9d1d3bb24e3aaedbd6525279a4e44600b4e9c",
+      "date": "2026-07-04T18:49:00+02:00",
+      "author": "ron190",
+      "email": "ron190@ymail.com",
+      "message": "Fix fingerprint postgres\n\n- Try jdbc greenplum tcp address\n"
+    },
+    {
+      "sha": "52afb33911bcc5d3b96113c7a294bd7b835e7cc1",
+      "date": "2026-07-04T17:11:03+02:00",
+      "author": "ron190",
+      "email": "ron190@ymail.com",
+      "message": "Fix fingerprint collision: cockroachdb duckdb postgres\n"
+    },
+    {
+      "sha": "9f45c99d8c873d403d2e4b86f8429a432d9b4a52",
+      "date": "2026-07-04T15:43:43+02:00",
+      "author": "ron190",
+      "email": "ron190@ymail.com",
+      "message": "Fix postgres fingerprint\n"
+    },
+    {
+      "sha": "85150c9857f0843862b6bf5b1b840cbf26dbc7cd",
+      "date": "2026-07-04T14:01:27+02:00",
+      "author": "ron190",
+      "email": "ron190@ymail.com",
+      "message": "Fix fingerprint collision: greenplum exasol vertica postgres\n"
+    },
+    {
+      "sha": "96ed3a82f93ef308fef8f599cf6967776c3d2043",
+      "date": "2026-07-04T11:49:57+02:00",
+      "author": "ron190",
+      "email": "ron190@ymail.com",
+      "message": "Add engine greenplum (postgres clone)\n\n- Add greenplum tests on docker\n- Improve cockroachdb fingerprint\n- Bump dependencies\n"
+    },
+    {
+      "sha": "6068dc0a6d93c02b6a421ae07a6b073e0cfd59af",
+      "date": "2026-06-28T18:22:20+02:00",
+      "author": "ron190",
+      "email": "ron190@ymail.com",
+      "message": "Fix collision between cockroachdb and virtuoso\n\n- Fix specific sleep for cockroachdb\n"
+    },
+    {
+      "sha": "1272ae1f70b8d53bdcde7c0e9828344648e919b5",
+      "date": "2026-06-28T16:50:10+02:00",
+      "author": "ron190",
+      "email": "ron190@ymail.com",
+      "message": "Add engine with ITs on docker: cockroachdb\n\n- Align postgres syntax with cockroachdb\n- Bump dependencies\n"
+    },
+    {
+      "sha": "028f8303b1e210a030e3ffcc3db760c09b9c8bcc",
+      "date": "2026-06-27T19:33:22+02:00",
+      "author": "ron190",
+      "email": "ron190@ymail.com",
+      "message": "Filter dameng on default IT\n\n- Set clickhouse container version\n"
+    },
+    {
+      "sha": "df915193230da39441fb71a95d1fadb6f35aa02a",
+      "date": "2026-06-27T17:28:07+02:00",
+      "author": "ron190",
+      "email": "ron190@ymail.com",
+      "message": "Add dameng to github actions\n"
+    },
+    {
+      "sha": "e4b76fff239ab5c244a32d4f9e712637424f0f6d",
+      "date": "2026-06-27T17:27:20+02:00",
+      "author": "ron190",
+      "email": "ron190@ymail.com",
+      "message": "Add engine with ITs: dameng (oracle clone)\n\n- Add strategy Error ITs: oracle\n- Improve oracle fingerprint\n- Rename github actions environment\n"
+    },
+    {
+      "sha": "397934a5af8c17fdc80b8829637afd8bfc26d2b2",
+      "date": "2026-06-25T19:18:46+02:00",
+      "author": "ron190",
+      "email": "ron190@ymail.com",
+      "message": "Bump dependencies\n"
+    },
+    {
+      "sha": "54afd2035493d4213fb059100107a5bcc1f4b636",
+      "date": "2026-06-23T22:06:29Z",
+      "author": "Github Actions",
+      "email": "no-response@github.com",
+      "message": "[Pipeline] Release v0.115\n"
+    },
+    {
+      "sha": "e15cb04ae920b37933046bf3d5e2993c9c6c0b25",
+      "date": "2026-06-23T22:10:01+02:00",
+      "author": "ron190",
+      "email": "ron190@ymail.com",
+      "message": "Ignore sonar java:S8786 on regex backtracking\n\n- Bump dependencies\n"
+    },
+    {
+      "sha": "81b884da03cce94a3becc4068471fe9961525ef4",
+      "date": "2026-06-22T00:25:43+02:00",
+      "author": "ron190",
+      "email": "ron190@ymail.com",
+      "message": "Sonar fixes\n\n- Bump dependencies\n"
+    },
+    {
+      "sha": "da0bfcf0bcfc421fa7347ba177a6fb94db69aca4",
+      "date": "2026-06-21T18:37:45+02:00",
+      "author": "ron190",
+      "email": "ron190@ymail.com",
+      "message": "Sonar fixes\n"
+    },
+    {
+      "sha": "a24a6fe9c8687298919b92460987c84c6d93ce46",
+      "date": "2026-06-21T17:36:34+02:00",
+      "author": "ron190",
+      "email": "ron190@ymail.com",
+      "message": "Various fixes and rewording\n\n- Fix custom csrf displayed as placeholder\n- Fix #96490: check invalid custom csrf\n- Fix #96410\n"
+    },
+    {
+      "sha": "04eac2294dff2839f6f01c1cec1515138445ebbc",
+      "date": "2026-06-21T14:54:26+02:00",
+      "author": "ron190",
+      "email": "ron190@ymail.com",
+      "message": "Adapt SubscriberView defensive check on scan\n"
+    },
+    {
+      "sha": "b33134af451c2fa3d56df6ccab4e5aab01d1a143",
+      "date": "2026-06-21T14:49:06+02:00",
+      "author": "ron190",
+      "email": "ron190@ymail.com",
+      "message": "Merge branch 'master' of https://github.com/ron190/jsql-injection\n"
+    },
+    {
+      "sha": "7d6e5931ea1089d50093411f6bcd03c86a51f237",
+      "date": "2026-06-21T14:48:58+02:00",
+      "author": "ron190",
+      "email": "ron190@ymail.com",
+      "message": "Prevent scan/injection when already started\n\n- Add defensive concurrency check on scan\n- Improve mariadb fingerprint\n- Fixes #96099 #96407: spinner init NPE\n- Fix #96398\n- Fix sonar issues and code cleaning\n- Bump dependencies\n"
+    },
+    {
+      "sha": "940739f89b1ccf6b99e0f08ffcb334025ceb37f9",
+      "date": "2026-06-21T20:31:40+08:00",
+      "author": "Wu Shuwen",
+      "email": "mikewushuwen@outlook.com",
+      "message": "fix: add null check for subscriber view before canceling subscription (#96496)"
+    },
+    {
+      "sha": "ce6fa76e8dad021da5854b7d7fd0f7c46e1d112c",
+      "date": "2026-03-22T14:15:16+01:00",
+      "author": "ron190",
+      "email": "ron190@ymail.com",
+      "message": "Freeze docker gcp spanner version\n"
+    },
+    {
+      "sha": "2b14bb798094f279da706343c74895555db8a85f",
+      "date": "2026-03-22T12:04:59+01:00",
+      "author": "ron190",
+      "email": "ron190@ymail.com",
+      "message": "Improve mariadb fingerprint\n"
+    },
+    {
+      "sha": "fc1888b9fecc530c97006dd8ff602f11fedee55c",
+      "date": "2026-03-22T00:01:17+01:00",
+      "author": "ron190",
+      "email": "ron190@ymail.com",
+      "message": "Add mariadb healthcheck\n"
+    },
+    {
+      "sha": "713de616e5f9dd56d7c0662bb8ddd6072f2ffa4a",
+      "date": "2026-03-21T23:06:02+01:00",
+      "author": "ron190",
+      "email": "ron190@ymail.com",
+      "message": "Add engine mariadb with ITs on docker\n\n- Manage engine clone to avoid duplication\n- Disambiguate mysql from mariadb\n- Bump dependencies\n"
+    },
+    {
+      "sha": "26192f80443dc7791b1f873daff8c26394f282e3",
+      "date": "2026-03-21T12:42:10+01:00",
+      "author": "ron190",
+      "email": "ron190@ymail.com",
+      "message": "Run duckdb container without network\n"
+    },
+    {
+      "sha": "76dbf8c3e29191c479f1a20da78acad738ef72fe",
+      "date": "2026-03-21T12:18:14+01:00",
+      "author": "ron190",
+      "email": "ron190@ymail.com",
+      "message": "Add duckdb mock container\n"
+    },
+    {
+      "sha": "b6d72144d6f0cf4913345630d5f5ca3658bb6ede",
+      "date": "2026-03-21T11:42:02+01:00",
+      "author": "ron190",
+      "email": "ron190@ymail.com",
+      "message": "Disable duckdb ITs concurrency\n"
+    }
+  ],
+  "commit_sha": "398834833b05131a449c6e159408c1940c3b0961",
+  "extracted_at": "2026-10-05T17:53:03.598453+00:00"
+}

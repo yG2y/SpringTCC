@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "a1ea13ae8c2390bd44f8b7a240406ccb5d47dc2f",
+      "date": "2023-02-28T23:03:12+01:00",
+      "author": "Sai Upadhyayula",
+      "email": "subramanyam.sai90@gmail.com",
+      "message": "- Update README.md file\n"
+    },
+    {
+      "sha": "f57a3968590535388064c76ee03c7da4272a0ba3",
+      "date": "2023-02-28T23:01:00+01:00",
+      "author": "Sai Upadhyayula",
+      "email": "subramanyam.sai90@gmail.com",
+      "message": "- Upgrade Spring Boot to v3.0.3\n- Removed SpringFox and replaced it with OpenAPI Documentation\n"
+    },
+    {
+      "sha": "4f389dc7655048061411d57a5b6df620cab275e7",
+      "date": "2022-03-12T16:41:24+01:00",
+      "author": "Sai Subramanyam Upadhyayula",
+      "email": "subramanyam.sai90@gmail.com",
+      "message": "Refactor getCurrentUser method to return JWT instead of User object"
+    },
+    {
+      "sha": "52cc5a285b56d15efc52641ad8c84b02c952b40d",
+      "date": "2022-01-24T21:10:10+01:00",
+      "author": "Sai Subramanyam Upadhyayula",
+      "email": "subramanyam.sai90@gmail.com",
+      "message": "Merge pull request #30 from SaiUpadhyayula/dependabot/maven/com.h2database-h2-2.1.210\n\nBump h2 from 2.0.206 to 2.1.210"
+    },
+    {
+      "sha": "41862fbb8b1b79b664495ec5e835b1ab7f0241a4",
+      "date": "2022-01-21T23:54:55Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump h2 from 2.0.206 to 2.1.210\n\nBumps [h2](https://github.com/h2database/h2database) from 2.0.206 to 2.1.210.\n- [Release notes](https://github.com/h2database/h2database/releases)\n- [Commits](https://github.com/h2database/h2database/compare/version-2.0.206...version-2.1.210)\n\n---\nupdated-dependencies:\n- dependency-name: com.h2database:h2\n  dependency-type: direct:development\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "1ae039f7a9aa026e14268803a80049abc25bb4e9",
+      "date": "2022-01-19T13:46:36+01:00",
+      "author": "saiupadhyayula",
+      "email": "subramanyam.sai90@gmail.com",
+      "message": "Upgrade h2 to version - 2.0.206\n"
+    },
+    {
+      "sha": "58688cfa9e4acac6228fb7abb7d8f02faabb129b",
+      "date": "2022-01-19T13:44:43+01:00",
+      "author": "saiupadhyayula",
+      "email": "subramanyam.sai90@gmail.com",
+      "message": "Add Tests\n"
+    },
+    {
+      "sha": "439c5cfe762fe3fc5cf0bededd6da69b219b93e8",
+      "date": "2022-01-19T02:13:00+01:00",
+      "author": "saiupadhyayula",
+      "email": "subramanyam.sai90@gmail.com",
+      "message": "Add disclaimer\n"
+    },
+    {
+      "sha": "df31eaed0e61f3c07fcd8d5d1cda6324926f273e",
+      "date": "2022-01-19T02:09:13+01:00",
+      "author": "saiupadhyayula",
+      "email": "subramanyam.sai90@gmail.com",
+      "message": "Update README.md file\n"
+    },
+    {
+      "sha": "a74d79ae653e74df53f1fb48f454b6c09cc50246",
+      "date": "2022-01-19T02:08:30+01:00",
+      "author": "saiupadhyayula",
+      "email": "subramanyam.sai90@gmail.com",
+      "message": "- Set spring.jpa.open-in-view as false\n"
+    },
+    {
+      "sha": "66fe28499e3ba64439eb72ffceba059e69a81201",
+      "date": "2022-01-19T02:02:18+01:00",
+      "author": "saiupadhyayula",
+      "email": "subramanyam.sai90@gmail.com",
+      "message": "- Updated to latest spring boot version - 2.6.2\n- Added 'spring-boot-starter-validation' dependency in pom.xml file to support Java Bean Validation annotations.\n\n- *IMPORTANT*: Removed Legacy JWT Authentication Mechanism and replaced it with latest Spring Security JWT Support.\n\n- Adapted SecurityConfig.java class according to latest Spring Security configuration settings, see method configure(AuthenticationManagerBuilder) inside SecurityConfig.java class\n"
+    },
+    {
+      "sha": "ef150e8655039af9f6a4a06f9913261e5db18937",
+      "date": "2021-09-09T13:46:54+02:00",
+      "author": "Sai Subramanyam Upadhyayula",
+      "email": "subramanyam.sai90@gmail.com",
+      "message": "Merge pull request #27 from SaiUpadhyayula/revert-16-patch-1\n\nRevert \"Fixed Deprecated methods\""
+    },
+    {
+      "sha": "9bc6ce4b2a3f8879bf2c0d275f6f4acdacdeaccf",
+      "date": "2021-09-09T13:46:30+02:00",
+      "author": "Sai Subramanyam Upadhyayula",
+      "email": "subramanyam.sai90@gmail.com",
+      "message": "Revert \"Fixed Deprecated methods\"\n"
+    },
+    {
+      "sha": "bdedc07f2ad419063f57fca9cc7827dce5efd96c",
+      "date": "2021-04-20T22:58:53+02:00",
+      "author": "Sai Subramanyam Upadhyayula",
+      "email": "subramanyam.sai90@gmail.com",
+      "message": "Merge pull request #16 from rohan2810/patch-1\n\nFixed Deprecated methods"
+    },
+    {
+      "sha": "f1506be093d3d979d10ad5b21748438a6823ebe9",
+      "date": "2021-04-19T22:56:40+05:30",
+      "author": "Rohan Surana",
+      "email": "rohansurana2810@gmail.com",
+      "message": "Fixed Deprecated methods\n\nFixed two deprecated methods:\n1. public static JwtParser parser();\n2. JwtParser setSigningKey(Key var1);"
+    },
+    {
+      "sha": "2c6ceedea9fbde6908f4b3707987b4c58b88f108",
+      "date": "2021-04-07T09:57:54+02:00",
+      "author": "Sai Subramanyam Upadhyayula",
+      "email": "subramanyam.sai90@gmail.com",
+      "message": "Merge pull request #15 from saurabhkumar998/master\n\nsolved issue"
+    },
+    {
+      "sha": "f633e9f39c61c330266b3aa800566762014ed433",
+      "date": "2021-04-06T03:52:46+05:30",
+      "author": "Saurabh Kumar",
+      "email": "49653295+saurabhkumar998@users.noreply.github.com",
+      "message": "solved issue \n\njava.lang.ClassCastException: org.springframework.security.core.userdetails.User cannot be cast to model.User"
+    },
+    {
+      "sha": "d8a8ef463b5d85d0bf1aef842a65f6b6300621dc",
+      "date": "2021-03-08T13:43:12+01:00",
+      "author": "Sai Subramanyam Upadhyayula",
+      "email": "subramanyam.sai90@gmail.com",
+      "message": "Merge pull request #14 from Nikhil-Wani/patch-1\n\n@PathVariable"
+    },
+    {
+      "sha": "0ef0cd7323938a3985d57aa302dcd27b28d43c50",
+      "date": "2021-01-30T01:43:34+05:30",
+      "author": "NIKHIL WANI",
+      "email": "65514201+Nikhil-Wani@users.noreply.github.com",
+      "message": "@PathVariable\n\n@PathVariable String name"
+    },
+    {
+      "sha": "6204cda1fe689b4f6d40264ca232cfd428d071c8",
+      "date": "2020-10-19T22:54:52+02:00",
+      "author": "Sai Subramanyam Upadhyayula",
+      "email": "subramanyam.sai90@gmail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "e4173e7cd423f25a3fc06b55dfd99dbb8f1cc1a2",
+      "date": "2020-10-19T22:52:29+02:00",
+      "author": "Sai Subramanyam Upadhyayula",
+      "email": "subramanyam.sai90@gmail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "d2d4a622ea0517575a729e7761afa83f17ff86d1",
+      "date": "2020-10-11T01:13:29+02:00",
+      "author": "Sai Upadhyayula",
+      "email": "subramanyam.sai90@gmail.com",
+      "message": "Replaced the deprectaed property spring.datasource.initialize=true with spring.datasource.initialization-mode=always\n"
+    },
+    {
+      "sha": "83799746af4c6ad73e2061e89164109aaacce601",
+      "date": "2020-09-01T19:55:47+02:00",
+      "author": "Sai Subramanyam Upadhyayula",
+      "email": "subramanyam.sai90@gmail.com",
+      "message": "Merge pull request #7 from mohdarif8299/NullPointerExceptionInCommentService\n\nChanges in comment service"
+    },
+    {
+      "sha": "71aaa0a325c82a80cf74012ad832039d2a5d0e91",
+      "date": "2020-09-01T01:50:43+05:30",
+      "author": "@mohdarif8299",
+      "email": "mohdarif8299@gmail.com",
+      "message": "initial commit\n"
+    },
+    {
+      "sha": "b7f4d0fbef5316662787fbc54bb260294a202e61",
+      "date": "2020-09-01T01:49:06+05:30",
+      "author": "@mohdarif8299",
+      "email": "mohdarif8299@gmail.com",
+      "message": "initial commit\n"
+    },
+    {
+      "sha": "ebbdb5eab3bad8de69d8ac50342fd7ac6e50d7b7",
+      "date": "2020-06-11T21:46:35+02:00",
+      "author": "Sai Upadhyayula",
+      "email": "subramanyam.sai90@gmail.com",
+      "message": "Updated source code\n"
+    },
+    {
+      "sha": "847f0e9ed45828490a0e6518b303c10d319a143b",
+      "date": "2020-06-11T19:53:19+02:00",
+      "author": "Sai Upadhyayula",
+      "email": "subramanyam.sai90@gmail.com",
+      "message": "Fixed incorrect import\n"
+    },
+    {
+      "sha": "33e0d5714467a3d816e4ca892537e637192c669b",
+      "date": "2020-05-28T06:59:26+02:00",
+      "author": "Sai Upadhyayula",
+      "email": "subramanyam.sai90@gmail.com",
+      "message": "Added another constructor in SpringRedditException class, now root cause of checked exceptions should be logged.\n"
+    },
+    {
+      "sha": "b6675b1c18877398c019e7262c4aa0499f4c48bf",
+      "date": "2020-04-09T10:01:10+02:00",
+      "author": "Sai Upadhyayula",
+      "email": "subramanyam.sai90@gmail.com",
+      "message": "Changes to fix CORS error\n"
+    },
+    {
+      "sha": "04c819e216f1c47ca9cc00af8711811464430c78",
+      "date": "2020-03-23T19:22:01+01:00",
+      "author": "Sai Upadhyayula",
+      "email": "subramanyam.sai90@gmail.com",
+      "message": "Changes\n"
+    }
+  ],
+  "commit_sha": "a1ea13ae8c2390bd44f8b7a240406ccb5d47dc2f",
+  "extracted_at": "2026-10-05T18:13:06.876303+00:00"
+}

@@ -1,0 +1,120 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "2.4.2;3.2.2;3.3.13;3.4.1;3.5.11;4.0.8;4.2.0-M1",
+  "spring_boot_major": "multiple",
+  "java_versions_declared": "1.8;17",
+  "build_evidence": [
+    {
+      "file": "tests/tests-gradle-junit-platform-jupiter-boot32/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "tests/tests-maven-junit-platform-jupiter-boot35/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "tests/tests-maven-junit-platform-jupiter-boot35/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tests/tests-maven-junit-platform-jupiter-boot35/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "tests/tests-maven-junit-platform-jupiter-boot35/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tests/tests-maven-junit-platform-jupiter-boot35/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "tests/tests-maven-junit-platform-jupiter-boot35/pom.xml",
+      "artifact": "spring-boot-testcontainers"
+    },
+    {
+      "file": "tests/tests-maven-junit-platform-jupiter-boot41/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "tests/tests-maven-junit-platform-jupiter-boot41/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tests/tests-maven-junit-platform-jupiter-boot41/pom.xml",
+      "artifact": "spring-boot-restclient"
+    },
+    {
+      "file": "tests/tests-maven-junit-platform-jupiter-boot41/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "tests/tests-maven-junit-platform-jupiter-boot41/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tests/tests-maven-junit-platform-jupiter-boot41/pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "tests/tests-maven-junit-platform-jupiter-boot41/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "tests/tests-maven-junit-platform-kotest-boot40/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "tests/tests-maven-junit-platform-kotest-boot40/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tests/tests-maven-junit-platform-kotest-boot40/pom.xml",
+      "artifact": "spring-boot-restclient"
+    },
+    {
+      "file": "tests/tests-maven-junit-platform-kotest-boot40/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "tests/tests-maven-junit-platform-kotest-boot40/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tests/tests-maven-junit-platform-kotest-boot40/pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "tests/tests-maven-junit-platform-mixed-boot34/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "tests/tests-maven-junit-platform-mixed-boot34/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tests/tests-maven-junit-platform-mixed-boot34/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tests/tests-maven-junit-platform-testng-boot32/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "tests/tests-maven-junit-platform-testng-boot32/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "tests/tests-maven-junit-platform-testng-boot32/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "tests/tests-maven-testng-boot24/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "tests/tests-maven-testng-boot24/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    }
+  ]
+}

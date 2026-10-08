@@ -1,0 +1,124 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${spring.boot.version};3.2.0",
+  "spring_boot_major": "3",
+  "java_versions_declared": "17",
+  "build_evidence": [
+    {
+      "file": "examples/email-logging-example/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "examples/email-logging-example/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "examples/email-service-autowiring-example/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "examples/email-service-autowiring-example/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "examples/scheduling-and-persistence-example/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "examples/scheduling-and-persistence-example/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "examples/scheduling-mime-email-with-freemarker-example/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "examples/scheduling-mime-email-with-freemarker-example/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "examples/scheduling-plain-text-email-example/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "examples/scheduling-plain-text-email-example/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "examples/sending-mime-email-with-freemarker-example/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "examples/sending-mime-email-with-freemarker-example/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "examples/sending-mime-email-with-mustache-example/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "examples/sending-mime-email-with-mustache-example/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "examples/sending-mime-email-with-pebble-example/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "examples/sending-mime-email-with-pebble-example/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "examples/sending-mime-email-with-thymeleaf-example/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "examples/sending-mime-email-with-thymeleaf-example/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "examples/sending-plain-text-email-example/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "examples/sending-plain-text-email-example/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-email-core/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring-boot-email-core/pom.xml",
+      "artifact": "spring-boot-starter-mail"
+    },
+    {
+      "file": "spring-boot-email-core/pom.xml",
+      "artifact": "spring-boot-starter-data-redis"
+    },
+    {
+      "file": "spring-boot-email-core/pom.xml",
+      "artifact": "spring-boot-starter-jdbc"
+    },
+    {
+      "file": "spring-boot-email-template-engines/spring-boot-freemarker-email/pom.xml",
+      "artifact": "spring-boot-starter-freemarker"
+    },
+    {
+      "file": "spring-boot-email-template-engines/spring-boot-mustache-email/pom.xml",
+      "artifact": "spring-boot-starter-mustache"
+    },
+    {
+      "file": "spring-boot-email-template-engines/spring-boot-thymeleaf-email/pom.xml",
+      "artifact": "spring-boot-starter-thymeleaf"
+    }
+  ]
+}

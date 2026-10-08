@@ -1,0 +1,236 @@
+{
+  "ia_status": "com_evidencia",
+  "ia_level": 2,
+  "ia_agents": "Claude Code",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "4f5d369a360d417bdb43c38e89ab6303700b66ad",
+      "trailer": "Claude Sonnet 4.6 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "e9fde1a6449d46753a8b34167899b7bba36fe9b3",
+      "trailer": "Claude Sonnet 4.6 <noreply@anthropic.com>"
+    }
+  ],
+  "commits": [
+    {
+      "sha": "6c172736c0f59fa01e81ba19dad3a4bae55781e9",
+      "date": "2026-10-03T10:03:11Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency org.instancio:instancio-junit to v6.1.0 (#210)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "0496d3787d086e8c955596c42b959b41887d2770",
+      "date": "2026-09-26T00:32:02+02:00",
+      "author": "Piotr Mińkowski",
+      "email": "piotr.minkowski@gmail.com",
+      "message": "Merge pull request #208 from piomin/renovate/maven-2.x\n\nUpdate dependency maven to v2.2.0"
+    },
+    {
+      "sha": "cfc7441335b7e38d6826d880a3b079b61dfeda07",
+      "date": "2026-09-26T00:31:50+02:00",
+      "author": "Piotr Mińkowski",
+      "email": "piotr.minkowski@gmail.com",
+      "message": "Merge pull request #204 from piomin/renovate/org.springdoc-springdoc-openapi-starter-webmvc-ui-3.x\n\nUpdate dependency org.springdoc:springdoc-openapi-starter-webmvc-ui to v3.1.1"
+    },
+    {
+      "sha": "5697fcce73df3856631310672522c0167a2523e9",
+      "date": "2026-09-24T06:40:06Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency org.springdoc:springdoc-openapi-starter-webmvc-ui to v3.1.1"
+    },
+    {
+      "sha": "76b963c6ee98d6a7612574def02672a47d98fe0c",
+      "date": "2026-09-24T06:40:01Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency maven to v2.2.0"
+    },
+    {
+      "sha": "dcbe987bd3cfdcdeddc75b09cddf929b3ec4e657",
+      "date": "2026-09-24T06:39:51Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update grafana/loki Docker tag to v3.7.8 (#206)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "970e3119768c5d2d4db2c873b61be14e39ded449",
+      "date": "2026-09-24T00:23:17+02:00",
+      "author": "Piotr Mińkowski",
+      "email": "piotr.minkowski@gmail.com",
+      "message": "Merge pull request #209 from piomin/renovate/org.instancio-instancio-junit-6.x\n\nUpdate dependency org.instancio:instancio-junit to v6"
+    },
+    {
+      "sha": "5c0655c1521081ecf35ccb5fa21e5610b54c928a",
+      "date": "2026-09-23T20:02:24Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency com.github.loki4j:loki-logback-appender to v2.1.0 (#203)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "868087a7bb9d8118bd79c4a53d9c6a68de14b5eb",
+      "date": "2026-09-23T05:16:28Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency org.springframework.boot:spring-boot-starter-parent to v4.1.1 (#207)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "0c81aa3b56f3c83a25a9c7807c11fe9b4db71a00",
+      "date": "2026-09-23T01:01:41Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update cimg/openjdk Docker tag to v25.0.4 (#205)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "ac457e748857621fbaf4f4dc49d20f24ecf7d562",
+      "date": "2026-09-22T11:37:33+02:00",
+      "author": "piomin",
+      "email": "piotr.minkowski@gmail.com",
+      "message": "fix azure pipeline for PRs\n"
+    },
+    {
+      "sha": "4f5d369a360d417bdb43c38e89ab6303700b66ad",
+      "date": "2026-09-22T11:26:59+02:00",
+      "author": "piomin",
+      "email": "piotr.minkowski@gmail.com",
+      "message": "Add BRANCH parameter to OpenShift template and BuildConfig git ref\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>\n"
+    },
+    {
+      "sha": "e9fde1a6449d46753a8b34167899b7bba36fe9b3",
+      "date": "2026-09-22T11:24:23+02:00",
+      "author": "piomin",
+      "email": "piotr.minkowski@gmail.com",
+      "message": "Pass build branch name to oc process via BRANCH parameter\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>\n"
+    },
+    {
+      "sha": "91ca093ceed2f916345d258ff25fe14e0c241d73",
+      "date": "2026-09-22T11:15:40+02:00",
+      "author": "Piotr Mińkowski",
+      "email": "piotr.minkowski@gmail.com",
+      "message": "Update NAMESPACE in Azure Pipelines YAML"
+    },
+    {
+      "sha": "0db92c280d192d4eb51e06ed6decf3603752726a",
+      "date": "2026-09-22T11:13:40+02:00",
+      "author": "Piotr Mińkowski",
+      "email": "piotr.minkowski@gmail.com",
+      "message": "Reduce build timeout from 5 to 3 minutes"
+    },
+    {
+      "sha": "75e5c6966d297660d29c1d922bf9dd351e2344cf",
+      "date": "2026-09-22T11:05:29+02:00",
+      "author": "Piotr Mińkowski",
+      "email": "piotr.minkowski@gmail.com",
+      "message": "Update azure-pipelines.yml for Azure Pipelines"
+    },
+    {
+      "sha": "fe57f1cd6d5fa33cf92dbe971fb160a17fee15d8",
+      "date": "2026-09-22T11:02:57+02:00",
+      "author": "Piotr Mińkowski",
+      "email": "piotr.minkowski@gmail.com",
+      "message": "Update azure-pipelines.yml for Azure Pipelines"
+    },
+    {
+      "sha": "b16f5a70b5207704a1547dc61e45060667e6257c",
+      "date": "2026-09-22T10:50:50+02:00",
+      "author": "Piotr Mińkowski",
+      "email": "piotr.minkowski@gmail.com",
+      "message": "Update azure-pipelines.yml for Azure Pipelines"
+    },
+    {
+      "sha": "b20a1c684cf3e07270f7f1bf033e409d8aa584e5",
+      "date": "2026-09-22T10:10:30+02:00",
+      "author": "Piotr Mińkowski",
+      "email": "piotr.minkowski@gmail.com",
+      "message": "Update SonarCloud command in CircleCI config"
+    },
+    {
+      "sha": "63e2603d9aa5f349ac83bbcb5bb8c69f344274f0",
+      "date": "2026-09-18T21:25:25Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency org.instancio:instancio-junit to v6"
+    },
+    {
+      "sha": "b4e00ead3d6e7ef713ede892d41771f5f4b20332",
+      "date": "2026-07-22T17:44:41Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update grafana/loki Docker tag to v3.7.4 (#202)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "6a3dcc46977f5492f6688fd3aa462ce61475e790",
+      "date": "2026-06-25T02:13:01Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update grafana/loki Docker tag to v3.7.3 (#201)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "b82ce228088c647b87f915f4de3f7f175c3b5bab",
+      "date": "2026-06-11T01:06:25Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update spring boot to v4.1.0 (#200)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "3bed637cb3310e35abbe874d448fabea31ea65d3",
+      "date": "2026-06-06T02:35:00Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency org.jacoco:jacoco-maven-plugin to v0.8.15 (#199)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "2ede310bfb719e1b82507fbdb6e4cf12bbbb814a",
+      "date": "2026-05-27T10:59:08Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency org.instancio:instancio-junit to v5.6.0 (#198)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "02566d9aa6d29e8f988220bf1bf4723f2594d98f",
+      "date": "2026-05-19T05:10:47Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update cimg/openjdk Docker tag to v25.0.3 (#197)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "fb70851f666be360edab9213ff26d7094f4a5185",
+      "date": "2026-05-13T17:25:54Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update grafana/loki Docker tag to v3.7.2 (#196)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "1bb6b6be13e9b04ae58997d440070decbc7e80b3",
+      "date": "2026-04-23T22:05:17Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency org.springframework.boot:spring-boot-starter-parent to v4.0.6 (#195)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "ccfa0049c95ca40358fbd02547799b6555c02f5b",
+      "date": "2026-04-21T09:43:57+02:00",
+      "author": "Piotr Mińkowski",
+      "email": "piotr.minkowski@gmail.com",
+      "message": "Merge pull request #192 from piomin/renovate/spring-boot\n\nUpdate dependency org.springframework.boot:spring-boot-starter-parent to v4.0.5"
+    },
+    {
+      "sha": "4c6ab758f9ca71bb93c5e1316cf591dbd85fb33e",
+      "date": "2026-04-12T05:36:12Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency org.springframework.boot:spring-boot-starter-parent to v4.0.5"
+    }
+  ],
+  "commit_sha": "6c172736c0f59fa01e81ba19dad3a4bae55781e9",
+  "extracted_at": "2026-10-05T18:21:45.829371+00:00"
+}

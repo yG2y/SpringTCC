@@ -1,0 +1,62 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 7,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "595bcc404aa51313ec7a9cd616bd2408b98985df",
+      "date": "2026-03-11T13:35:39+01:00",
+      "author": "Horacio Gonzalez",
+      "email": "horacio.gonzalez@gmail.com",
+      "message": "Update Spring Boot to 3.4.3 and Java to 25\n\n  - Migrate from Spring Boot 1.5.3 to 3.4.3 with Java 25\n  - Update Spring Data MongoDB API (findById, deleteById)\n  - Migrate tests from JUnit 4 to JUnit 5\n  - Use constructor injection and modern mapping annotations\n  - Add Maven wrapper for reproducible builds\n  - Rewrite README with structured deployment instructions\n  - Keep MongoDB 4.0.3 compatibility (Clever Cloud)\n"
+    },
+    {
+      "sha": "4fa1c72926ed29c308173c3cd0b35e4a2b61a347",
+      "date": "2022-03-15T09:53:09+01:00",
+      "author": "Alexandre DUVAL",
+      "email": "alexandre.duval@clever-cloud.com",
+      "message": "Merge pull request #1 from Keksoj/fix-deployment\n\nFix deployment"
+    },
+    {
+      "sha": "ffb9597e7d921ab67fb74c48943ae5217d02aa00",
+      "date": "2022-03-15T09:50:37+01:00",
+      "author": "Emmanuel Bosquet",
+      "email": "emmanuel.bosquet@ecole404.fr",
+      "message": "replace Alexandre Duval with Robert Cloud in the readme\n"
+    },
+    {
+      "sha": "7544908af52cb7aa068b4e084bb679e7622561b1",
+      "date": "2022-03-11T16:20:38+01:00",
+      "author": "Emmanuel Bosquet",
+      "email": "bjokac@gmail.com",
+      "message": "reset java to 1.8\n"
+    },
+    {
+      "sha": "9d0a24f6dcaceeee16228185473ec7a234118033",
+      "date": "2022-03-11T16:15:08+01:00",
+      "author": "Emmanuel Bosquet",
+      "email": "bjokac@gmail.com",
+      "message": "update java version to 17, edit the readme\n"
+    },
+    {
+      "sha": "2e5d3bd9d41bd0c34f71a965ada8662513081854",
+      "date": "2017-05-31T16:52:56+02:00",
+      "author": "Alexandre DUVAL",
+      "email": "alexandre.duval@clever-cloud.com",
+      "message": "clevercloud\n"
+    },
+    {
+      "sha": "5d347a6f90aed3cbb85fc2c02923de058cd6af0b",
+      "date": "2017-05-31T15:47:46+02:00",
+      "author": "Alexandre DUVAL",
+      "email": "alexandre.duval@clever-cloud.com",
+      "message": "init\n"
+    }
+  ],
+  "commit_sha": "595bcc404aa51313ec7a9cd616bd2408b98985df",
+  "extracted_at": "2026-10-05T18:39:58.500144+00:00"
+}

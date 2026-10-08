@@ -1,0 +1,84 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${spring-boot.version};3.5.8",
+  "spring_boot_major": "3",
+  "java_versions_declared": "${java.version};${version.java}",
+  "build_evidence": [
+    {
+      "file": "example/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "example/pom.xml",
+      "artifact": "spring-boot"
+    },
+    {
+      "file": "example/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "spring-boot-starter-camunda/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring-boot-starter-camunda/pom.xml",
+      "artifact": "spring-boot"
+    },
+    {
+      "file": "spring-boot-starter-camunda/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "spring-boot-starter-camunda/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring-boot-starter-camunda/pom.xml",
+      "artifact": "spring-boot-actuator"
+    },
+    {
+      "file": "spring-boot-starter-camunda/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring-boot-starter-camunda/pom.xml",
+      "artifact": "spring-boot-test"
+    },
+    {
+      "file": "spring-boot-starter-camunda/pom.xml",
+      "artifact": "spring-boot-actuator-autoconfigure"
+    },
+    {
+      "file": "spring-client-zeebe/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "test/common/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "test/common/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "test/common/pom.xml",
+      "artifact": "spring-boot-test"
+    },
+    {
+      "file": "test/embedded/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "test/embedded/pom.xml",
+      "artifact": "spring-boot-test"
+    },
+    {
+      "file": "test/testcontainer/pom.xml",
+      "artifact": "spring-boot-test"
+    }
+  ]
+}

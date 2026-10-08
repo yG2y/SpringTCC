@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "e8341ddcc06f3d5d38e1b70745537c15e78efa47",
+      "date": "2019-04-10T21:14:39+02:00",
+      "author": "Frank Bruch",
+      "email": "fbruch@users.noreply.github.com",
+      "message": "Update main.workflow"
+    },
+    {
+      "sha": "aad4cb778202c0d17cf2fc058e6eb06a8e9ef880",
+      "date": "2019-04-10T21:10:47+02:00",
+      "author": "Frank Bruch",
+      "email": "fbruch@users.noreply.github.com",
+      "message": "Update tika"
+    },
+    {
+      "sha": "babcb453f75e3fa3cd5c881d1079d4d3e7ab8ce1",
+      "date": "2019-04-10T21:10:21+02:00",
+      "author": "Frank Bruch",
+      "email": "fbruch@users.noreply.github.com",
+      "message": "Update main.workflow"
+    },
+    {
+      "sha": "445669505719659cf8e1fa480947c92075dfb671",
+      "date": "2017-11-01T21:11:47+01:00",
+      "author": "Frank Bruch",
+      "email": "fbruch@users.noreply.github.com",
+      "message": "Merge pull request #4 from fbruch/feature/json-dir-meta\n\nFeature/json dir meta"
+    },
+    {
+      "sha": "169f0d3a27de58c49ad0af520271efe0f69d25f6",
+      "date": "2017-11-01T21:11:09+01:00",
+      "author": "Frank Bruch",
+      "email": "fbruch@users.noreply.github.com",
+      "message": "Merge pull request #3 from fbruch/feature/external-plugin-java\n\nFeature/external plugin java"
+    },
+    {
+      "sha": "2952307caf1af75709ae3ce4bdf91e75430a6cb1",
+      "date": "2017-11-01T21:09:13+01:00",
+      "author": "Frank Bruch",
+      "email": "frank.bruch@shks.de",
+      "message": "merge HomeController and BoxController into FileController\nrelocated /fs/ and /fb/ to /\nmoved static resources to /static/\nremoved content field from FileResult\n"
+    },
+    {
+      "sha": "e4e5bcfbfbdce1824fa3d3491d3fbc89dc3675f3",
+      "date": "2017-11-01T00:42:38+01:00",
+      "author": "Frank Bruch",
+      "email": "frank.bruch@shks.de",
+      "message": "json response for directories\nexperimental blocking remote acccess\nfixes\n"
+    },
+    {
+      "sha": "71075ec74bee241beff46f8e556dab31c0cb96ac",
+      "date": "2017-05-27T13:49:30+02:00",
+      "author": "Frank Bruch",
+      "email": "frank.bruch@shks.de",
+      "message": "maven-shade-plugin for server,  profiles\n"
+    },
+    {
+      "sha": "6e97612dd88000b87d1a4d67ac32a6731101cc7f",
+      "date": "2017-05-25T15:23:23+02:00",
+      "author": "Frank Bruch",
+      "email": "frank.bruch@shks.de",
+      "message": "WIP java-plugin is not found on external start\n"
+    },
+    {
+      "sha": "a5a0817fd86c0309e34f96e7e3c3b6e5d96bd3a8",
+      "date": "2017-05-19T20:36:46+02:00",
+      "author": "Frank Bruch",
+      "email": "frank.bruch@shks.de",
+      "message": "- External Config, Charset/Encoding, FileResult, Test data\n\n- Configuration\n  - externalized validated box directory configuration\n  - Externall configuration for plugins (e. g. Asciidoctor)\n-  Charset / Encoding\n  - Controller negotiation using Accept-Header and Box configuration\n  - Converter honoring configured box encoding\n- FileService\n  - using FileResult structure including content and metadata\n  - extracted FileTypeService\n- Other\n  - more test data\n  - activated automatic gzip compression on Encoding HEader \"gzip\"\n"
+    },
+    {
+      "sha": "69fad762c32973f472a364dde7a1a5e73ed18ebc",
+      "date": "2017-04-16T12:21:53+02:00",
+      "author": "Frank Bruch",
+      "email": "frank.bruch@shks.de",
+      "message": "Undertow replacing Tomcat\n"
+    },
+    {
+      "sha": "bc6ddae5d2b0f550ed6f2f186899b1d6689ad53e",
+      "date": "2017-04-16T11:44:27+02:00",
+      "author": "Frank Bruch",
+      "email": "frank.bruch@shks.de",
+      "message": "Spring Boot Actuator\n"
+    },
+    {
+      "sha": "4918ce9227b784cdc9943b422c0b2e09a76f4813",
+      "date": "2017-04-13T11:43:30+02:00",
+      "author": "Frank Bruch",
+      "email": "frank.bruch@shks.de",
+      "message": "Custom Bean Validation for box file path configuration\n"
+    },
+    {
+      "sha": "900a8983111a42be8d9a72ed35de1fb4c2554382",
+      "date": "2017-04-13T02:23:46+02:00",
+      "author": "Frank Bruch",
+      "email": "frank.bruch@shks.de",
+      "message": "Spring Boot 1.5.2, README updated, fixed asciidoc sample\n"
+    },
+    {
+      "sha": "ab0dbb0512378788ade003598f492724be656a82",
+      "date": "2017-04-13T02:16:11+02:00",
+      "author": "Frank Bruch",
+      "email": "frank.bruch@shks.de",
+      "message": "FileServiceConfig, multiple content dirs\n"
+    },
+    {
+      "sha": "7fe7ecddaa9a5a4087e91e1d1a763945cc305412",
+      "date": "2017-04-13T01:52:38+02:00",
+      "author": "Frank Bruch",
+      "email": "frank.bruch@shks.de",
+      "message": "Package refactoring\n"
+    },
+    {
+      "sha": "838645052e9714f8f90964b10be89775003472a6",
+      "date": "2017-03-25T19:14:57+01:00",
+      "author": "Frank Bruch",
+      "email": "frank.bruch@shks.de",
+      "message": "asciidoc rendering\n"
+    },
+    {
+      "sha": "3163dd24c7760a197106cc37f2e6045b42efe570",
+      "date": "2017-03-25T19:06:38+01:00",
+      "author": "Frank Bruch",
+      "email": "frank.bruch@shks.de",
+      "message": "Refactorings (renamings and such)\n"
+    },
+    {
+      "sha": "0408ac933a72e486cee2b238334943d96c7dcd18",
+      "date": "2017-03-18T15:13:26+01:00",
+      "author": "Frank Bruch",
+      "email": "frank.bruch@shks.de",
+      "message": "Refactoring separating service (/fs) and browser (/fb)\n"
+    },
+    {
+      "sha": "e26ecc2754f5093632f91c8f1a5cdefcb9052d3c",
+      "date": "2017-03-10T22:12:09+01:00",
+      "author": "Frank Bruch",
+      "email": "frank.bruch@shks.de",
+      "message": "Automatic markdown->html conversion and metadata in http header\n"
+    },
+    {
+      "sha": "f69119fd06f4400b60a92a15282b2bd2528ed464",
+      "date": "2017-03-10T19:23:32+01:00",
+      "author": "Frank Bruch",
+      "email": "frank.bruch@shks.de",
+      "message": "context root /fs\n"
+    },
+    {
+      "sha": "4190f3f165dc62b2b30010f201f53c052ee80a6c",
+      "date": "2017-03-10T19:11:37+01:00",
+      "author": "Frank Bruch",
+      "email": "frank.bruch@shks.de",
+      "message": "override tika for markdown, closes #1\n"
+    },
+    {
+      "sha": "134bd6bf3e44a131f0a455e356780c599e3e5173",
+      "date": "2017-03-07T21:45:23+01:00",
+      "author": "Frank Bruch",
+      "email": "frank.bruch@shks.de",
+      "message": "Mime-Type-Header using Apache Tika\n"
+    },
+    {
+      "sha": "506494ff5471c3a348bdebe60d52744fc7677c87",
+      "date": "2017-03-07T18:31:43+01:00",
+      "author": "Frank Bruch",
+      "email": "frank.bruch@shks.de",
+      "message": "Customizable content root directory\n"
+    },
+    {
+      "sha": "e7392ad2008d00b700d840e52fde32714e0b3f91",
+      "date": "2017-03-07T18:31:12+01:00",
+      "author": "Frank Bruch",
+      "email": "frank.bruch@shks.de",
+      "message": "Unit Test Refinement\n"
+    },
+    {
+      "sha": "e1d39251a0ee1a3573a9a7fec06cb2e64dd337d2",
+      "date": "2017-03-05T17:59:20+01:00",
+      "author": "Frank Bruch",
+      "email": "frank.bruch@shks.de",
+      "message": "Some test data\n"
+    },
+    {
+      "sha": "804e6cb82de26b96827426d87e5bbfe48f505414",
+      "date": "2017-03-05T17:59:00+01:00",
+      "author": "Frank Bruch",
+      "email": "frank.bruch@shks.de",
+      "message": "Listing files from boxes and browse into dirs\n"
+    },
+    {
+      "sha": "fa9296bc9428a251d92f6dfd1de20cf138addf8b",
+      "date": "2017-03-04T17:28:06+01:00",
+      "author": "Frank Bruch",
+      "email": "frank.bruch@shks.de",
+      "message": "Setup: Dependencies, Controller, Error-Handler\n"
+    },
+    {
+      "sha": "ef80891ed79f216ada9c6a7da97a0f9022f91794",
+      "date": "2017-03-01T17:43:35+01:00",
+      "author": "Frank Bruch",
+      "email": "frank.bruch@shks.de",
+      "message": "rebranding demo application\n"
+    },
+    {
+      "sha": "4f06c202e209d143e5d6573fc27365f43653b069",
+      "date": "2017-03-01T17:37:35+01:00",
+      "author": "Frank Bruch",
+      "email": "frank.bruch@shks.de",
+      "message": "spring boot 1.5.1 initializr\n"
+    }
+  ],
+  "commit_sha": "e8341ddcc06f3d5d38e1b70745537c15e78efa47",
+  "extracted_at": "2026-10-05T18:26:31.373413+00:00"
+}

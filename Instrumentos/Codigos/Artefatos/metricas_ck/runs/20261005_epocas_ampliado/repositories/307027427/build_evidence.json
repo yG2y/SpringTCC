@@ -1,0 +1,448 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "2.2.5.RELEASE;2.2.6.RELEASE;2.3.2.RELEASE;2.3.4.RELEASE;2.4.0;2.5.4;2.7.1;3.2.0;3.4.5;4.0.1",
+  "spring_boot_major": "multiple",
+  "java_versions_declared": "${java.version};${jdk.version};13;14;15;16;18;21;25",
+  "build_evidence": [
+    {
+      "file": "@/archives/spring/springboot3-aop-method-logging/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "@/archives/spring/springboot3-aop-method-logging/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "@/archives/spring/springboot3-aop-method-logging/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "@/archives/spring/springboot3-aop-method-logging/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "@archive/spring/springboot2-aop-retry-on-failure/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "@archive/spring/springboot2-aop-retry-on-failure/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "@archive/spring/springboot2-aop-retry-on-failure/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "@archive/spring/springboot2-aop-retry-on-failure/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "java/docker-healthcheck/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "java/docker-healthcheck/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "java/docker-healthcheck/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "java/docker-healthcheck/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring/spring-content-negotiation/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring/spring-content-negotiation/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring/spring-content-negotiation/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring/spring-data-jdbc-hikari-leak-detection/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring/spring-data-jdbc-hikari-leak-detection/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring/spring-data-jdbc-hikari-leak-detection/pom.xml",
+      "artifact": "spring-boot-starter-data-jdbc"
+    },
+    {
+      "file": "spring/spring-data-jdbc-hikari-leak-detection/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring/spring-data-micronaut-data/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "spring/spring-file-upload/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring/spring-file-upload/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring/spring-file-upload/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring/spring-file-upload/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring/spring-file-upload/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring/spring-rest-error-handling/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring/spring-rest-error-handling/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring/spring-rest-error-handling/pom.xml",
+      "artifact": "spring-boot-starter-data-jdbc"
+    },
+    {
+      "file": "spring/spring-rest-error-handling/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "spring/spring-rest-error-handling/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring/spring-security-jwt-auth-custom-user/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring/spring-security-jwt-auth-custom-user/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "spring/spring-security-jwt-auth-custom-user/pom.xml",
+      "artifact": "spring-boot-starter-security-oauth2-resource-server"
+    },
+    {
+      "file": "spring/spring-security-jwt-auth-custom-user/pom.xml",
+      "artifact": "spring-boot-starter-data-jdbc"
+    },
+    {
+      "file": "spring/spring-security-jwt-auth-custom-user/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "spring/spring-security-jwt-auth-custom-user/pom.xml",
+      "artifact": "spring-boot-starter-security-oauth2-resource-server-test"
+    },
+    {
+      "file": "spring/spring-security-jwt-auth-custom-user/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring/spring-security-jwt-auth-eddsa/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring/spring-security-jwt-auth-eddsa/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "spring/spring-security-jwt-auth-eddsa/pom.xml",
+      "artifact": "spring-boot-starter-security-oauth2-resource-server"
+    },
+    {
+      "file": "spring/spring-security-jwt-auth-eddsa/pom.xml",
+      "artifact": "spring-boot-starter-data-jdbc"
+    },
+    {
+      "file": "spring/spring-security-jwt-auth-eddsa/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "spring/spring-security-jwt-auth-eddsa/pom.xml",
+      "artifact": "spring-boot-starter-security-oauth2-resource-server-test"
+    },
+    {
+      "file": "spring/spring-security-jwt-auth-eddsa/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring/spring-security-jwt-auth/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring/spring-security-jwt-auth/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "spring/spring-security-jwt-auth/pom.xml",
+      "artifact": "spring-boot-starter-security-oauth2-resource-server"
+    },
+    {
+      "file": "spring/spring-security-jwt-auth/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "spring/spring-security-jwt-auth/pom.xml",
+      "artifact": "spring-boot-starter-security-oauth2-resource-server-test"
+    },
+    {
+      "file": "spring/spring-security-jwt-auth/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring/spring-security-resource-server-error-handling/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring/spring-security-resource-server-error-handling/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring/spring-security-resource-server-error-handling/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "spring/spring-security-resource-server-error-handling/pom.xml",
+      "artifact": "spring-boot-starter-oauth2-resource-server"
+    },
+    {
+      "file": "spring/spring-security-resource-server-error-handling/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring/spring-security-resource-server-error-handling/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring/spring-security-token-introspection/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring/spring-security-token-introspection/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring/spring-security-token-introspection/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "spring/spring-security-token-introspection/pom.xml",
+      "artifact": "spring-boot-starter-oauth2-resource-server"
+    },
+    {
+      "file": "spring/spring-security-token-introspection/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring/spring-security-token-introspection/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring/spring-security-token-validation-hybrid/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring/spring-security-token-validation-hybrid/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring/spring-security-token-validation-hybrid/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "spring/spring-security-token-validation-hybrid/pom.xml",
+      "artifact": "spring-boot-starter-oauth2-resource-server"
+    },
+    {
+      "file": "spring/spring-security-token-validation-hybrid/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring/spring-security-token-validation-hybrid/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring/spring-security-token-validation-hybrid/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring/spring-security-token-validation-local/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring/spring-security-token-validation-local/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring/spring-security-token-validation-local/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "spring/spring-security-token-validation-local/pom.xml",
+      "artifact": "spring-boot-starter-oauth2-resource-server"
+    },
+    {
+      "file": "spring/spring-security-token-validation-local/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring/spring-security-token-validation-local/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring/spring-security-token-validation-local/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring/springboot3-aop-retry-on-failure/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring/springboot3-aop-retry-on-failure/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "spring/springboot3-aop-retry-on-failure/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring/springboot3-aop-retry-on-failure/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring/springboot3-local-dev-docker-compose/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring/springboot3-local-dev-docker-compose/pom.xml",
+      "artifact": "spring-boot-starter-data-rest"
+    },
+    {
+      "file": "spring/springboot3-local-dev-docker-compose/pom.xml",
+      "artifact": "spring-boot-starter-data-jdbc"
+    },
+    {
+      "file": "spring/springboot3-local-dev-docker-compose/pom.xml",
+      "artifact": "spring-boot-docker-compose"
+    },
+    {
+      "file": "spring/springboot3-local-dev-docker-compose/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring/springboot3-local-dev-testcontainers/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring/springboot3-local-dev-testcontainers/pom.xml",
+      "artifact": "spring-boot-starter-data-rest"
+    },
+    {
+      "file": "spring/springboot3-local-dev-testcontainers/pom.xml",
+      "artifact": "spring-boot-starter-data-jdbc"
+    },
+    {
+      "file": "spring/springboot3-local-dev-testcontainers/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring/springboot3-local-dev-testcontainers/pom.xml",
+      "artifact": "spring-boot-testcontainers"
+    },
+    {
+      "file": "spring/springboot3-local-dev-testcontainers/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring/springboot4-aop-method-logging/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring/springboot4-aop-method-logging/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "spring/springboot4-aop-method-logging/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring/springboot4-aop-method-logging/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring/springboot4-messaging-rabbitmq/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring/springboot4-messaging-rabbitmq/pom.xml",
+      "artifact": "spring-boot-starter-amqp"
+    },
+    {
+      "file": "spring/springboot4-messaging-rabbitmq/pom.xml",
+      "artifact": "spring-boot-starter-amqp-test"
+    },
+    {
+      "file": "spring/springboot4-messaging-rabbitmq/pom.xml",
+      "artifact": "spring-boot-testcontainers"
+    },
+    {
+      "file": "spring/springboot4-messaging-rabbitmq/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring/springboot4-springdoc-integration/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring/springboot4-springdoc-integration/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "spring/springboot4-springdoc-integration/pom.xml",
+      "artifact": "spring-boot-starter-data-jdbc"
+    },
+    {
+      "file": "spring/springboot4-springdoc-integration/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "spring/springboot4-springdoc-integration/pom.xml",
+      "artifact": "spring-boot-testcontainers"
+    },
+    {
+      "file": "spring/springboot4-springdoc-integration/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "spring/springrx-file-upload/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "spring/springrx-file-upload/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "spring/springrx-file-upload/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "spring/springrx-file-upload/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

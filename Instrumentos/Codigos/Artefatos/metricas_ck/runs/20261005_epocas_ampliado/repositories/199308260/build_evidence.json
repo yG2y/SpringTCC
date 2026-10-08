@@ -1,0 +1,32 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "2.1.6.RELEASE",
+  "spring_boot_major": "2",
+  "java_versions_declared": "1.8",
+  "build_evidence": [
+    {
+      "file": "kanban-app/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "kanban-app/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "kanban-app/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "kanban-app/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "kanban-app/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "kanban-app/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

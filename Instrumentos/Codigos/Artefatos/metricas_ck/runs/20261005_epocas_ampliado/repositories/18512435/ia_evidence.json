@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "ce2bf0dfe75ba9eb87b426e734361badee890a4a",
+      "date": "2026-10-04T10:08:35+02:00",
+      "author": "Ralph Schaer",
+      "email": "ralphschaer@gmail.com",
+      "message": "upgrade\n"
+    },
+    {
+      "sha": "b9d3a01e60810fb0be2f1e49cd18d0fcad850db4",
+      "date": "2026-09-25T06:43:02+02:00",
+      "author": "Ralph Schaer",
+      "email": "ralphschaer@gmail.com",
+      "message": "upgrade\n"
+    },
+    {
+      "sha": "7c70a3612bcd4063b32f261b10f25bef9b0eb605",
+      "date": "2026-09-17T05:57:43+02:00",
+      "author": "Ralph Schaer",
+      "email": "ralphschaer@gmail.com",
+      "message": "upgrade\n"
+    },
+    {
+      "sha": "69f1fcf7fb78ae3ebaae43463149f999c737ded0",
+      "date": "2026-09-12T13:49:18+02:00",
+      "author": "Ralph Schaer",
+      "email": "ralphschaer@gmail.com",
+      "message": "upgrade\n"
+    },
+    {
+      "sha": "acf8bb4b562d1f4e0f4c137ca9d676b1dba47d89",
+      "date": "2026-09-06T18:49:55+02:00",
+      "author": "Ralph Schaer",
+      "email": "ralphschaer@gmail.com",
+      "message": "upgrade\n"
+    },
+    {
+      "sha": "2fabacf7da71be1fc26709958dc60ad928b72f0f",
+      "date": "2026-09-03T21:22:10+02:00",
+      "author": "Ralph Schaer",
+      "email": "ralphschaer@gmail.com",
+      "message": "Harden TOTP authentication and enrollment\n\n- persist pending authentication and signup flows across page reloads\n- prevent immediate TOTP replay and strengthen secret generation\n- handle clock drift and multi-code verification correctly\n- normalize usernames and tighten request validation\n- rotate sessions after password authentication\n- simplify authentication, CSRF, and error-handling code\n- prevent duplicate form submissions and improve form feedback\n- add the missing loading-bar interceptor\n- migrate the database and regenerate jOOQ sources\n- expand controller and TOTP test coverage\n"
+    },
+    {
+      "sha": "b12dc453087064f528ef911ab03ed1f0d507a4a1",
+      "date": "2026-08-30T20:55:22+02:00",
+      "author": "Ralph Schaer",
+      "email": "ralphschaer@gmail.com",
+      "message": "upgrade\n"
+    },
+    {
+      "sha": "9fc8ebf7138a611a3c387f6da24428c57e59a14c",
+      "date": "2026-08-22T05:58:02+02:00",
+      "author": "Ralph Schaer",
+      "email": "ralphschaer@gmail.com",
+      "message": "upgrade\n"
+    },
+    {
+      "sha": "552a9986b0f0da8d858d6322c8d38a3a21c9bd28",
+      "date": "2026-08-15T05:25:53+02:00",
+      "author": "Ralph Schaer",
+      "email": "ralphschaer@gmail.com",
+      "message": "upgrade\n"
+    },
+    {
+      "sha": "4969a13a556bf56ecfb67073fe42fa2ad78cd16a",
+      "date": "2026-08-12T04:19:53+02:00",
+      "author": "Ralph Schaer",
+      "email": "ralphschaer@gmail.com",
+      "message": "upgrade\n"
+    },
+    {
+      "sha": "3dc6be6ed0e513a64f521a6eed8ca6e14235dff3",
+      "date": "2026-08-08T08:13:18+02:00",
+      "author": "Ralph Schaer",
+      "email": "ralphschaer@gmail.com",
+      "message": "upgrade\n"
+    },
+    {
+      "sha": "e9b8fdc0744477c1c3364c7ba6b59d54a68f128f",
+      "date": "2026-07-30T22:04:17+02:00",
+      "author": "Ralph Schaer",
+      "email": "ralphschaer@gmail.com",
+      "message": "upgrade\n"
+    },
+    {
+      "sha": "4fa017e9df61d313ada601589bd58a1dedfd07f1",
+      "date": "2026-07-30T09:21:45+02:00",
+      "author": "Ralph Schaer",
+      "email": "ralphschaer@gmail.com",
+      "message": "upgrade\n"
+    },
+    {
+      "sha": "fdfbb9538dcff959cd7623affdf150159d5ea87a",
+      "date": "2026-07-29T18:28:39+02:00",
+      "author": "Ralph Schaer",
+      "email": "ralphschaer@gmail.com",
+      "message": "upgrade\n"
+    },
+    {
+      "sha": "851a52a73c02552833db1cbd8c0b415bcefb4024",
+      "date": "2026-07-27T05:31:52+02:00",
+      "author": "Ralph Schaer",
+      "email": "ralphschaer@gmail.com",
+      "message": "upgrade\n"
+    },
+    {
+      "sha": "2962faf64625baea173a3f7556e2787ba1a9b3db",
+      "date": "2026-07-23T20:07:15+02:00",
+      "author": "Ralph Schaer",
+      "email": "ralphschaer@gmail.com",
+      "message": "upgrade\n"
+    },
+    {
+      "sha": "1edc8e40d3c402ff3eb62951dcab30a2ce83db3e",
+      "date": "2026-07-23T06:18:11+02:00",
+      "author": "Ralph Schaer",
+      "email": "ralphschaer@gmail.com",
+      "message": "upgrade\n"
+    },
+    {
+      "sha": "b0eb0f41e4e6f1f7ee6490bbb02bfd9172ea4233",
+      "date": "2026-07-17T19:38:19+02:00",
+      "author": "Ralph Schaer",
+      "email": "ralphschaer@gmail.com",
+      "message": "upgrade\n"
+    },
+    {
+      "sha": "4d1bd469901b6ef26e36f2c0c70e4bf91d004ede",
+      "date": "2026-07-17T07:55:46+02:00",
+      "author": "Ralph Schaer",
+      "email": "ralphschaer@gmail.com",
+      "message": "upgrade\n"
+    },
+    {
+      "sha": "4a0932417cdff52cd6382d2c4ef969bc30c1e9df",
+      "date": "2026-07-11T16:51:03+02:00",
+      "author": "Ralph Schaer",
+      "email": "ralphschaer@gmail.com",
+      "message": "upgrade\n"
+    },
+    {
+      "sha": "72bd935f31a15ed09ff2728f701059efc9f4f23c",
+      "date": "2026-07-09T22:14:04+02:00",
+      "author": "Ralph Schaer",
+      "email": "ralphschaer@gmail.com",
+      "message": "upgrade\n"
+    },
+    {
+      "sha": "0c0f58f431406cc312daa4d5989a4c6344ac00b4",
+      "date": "2026-07-09T05:45:38+02:00",
+      "author": "Ralph Schaer",
+      "email": "ralphschaer@gmail.com",
+      "message": "upgrade\n"
+    },
+    {
+      "sha": "922955fcfa0a42c7387cdf91c7751896333f71d3",
+      "date": "2026-07-07T17:55:59+02:00",
+      "author": "Ralph Schaer",
+      "email": "ralphschaer@gmail.com",
+      "message": "upgrade\n"
+    },
+    {
+      "sha": "49f36e463d853f47f7c7f805a9f9aa7cb82bb5c2",
+      "date": "2026-07-03T09:39:42+02:00",
+      "author": "Ralph Schaer",
+      "email": "ralphschaer@gmail.com",
+      "message": "upgrade\n"
+    },
+    {
+      "sha": "481dec81c370db960e1e4b5fd307b379b444b05b",
+      "date": "2026-06-28T06:56:07+02:00",
+      "author": "Ralph Schaer",
+      "email": "ralphschaer@gmail.com",
+      "message": "upgrade\n"
+    },
+    {
+      "sha": "522a0d224fdf15fbf8a4d0168c59c5fa5875daa8",
+      "date": "2026-06-27T18:16:33+02:00",
+      "author": "Ralph Schaer",
+      "email": "ralphschaer@gmail.com",
+      "message": "upgrade\n"
+    },
+    {
+      "sha": "1e54c6fb8fd4b758c85f1d2fde78e528dcbd2fb1",
+      "date": "2026-06-07T04:39:20+02:00",
+      "author": "Ralph Schaer",
+      "email": "ralphschaer@gmail.com",
+      "message": "Enhance TOTP implementation and update project documentation\n\n- Updated README.md to reflect project structure and requirements.\n- Upgraded dependencies in package.json for PrimeNG and TypeScript ESLint.\n- Modified proxy configuration to include CSRF endpoint.\n- Refactored AuthService to include CSRF token handling for authentication requests.\n- Updated SignupController to normalize usernames and handle exceptions.\n- Improved CustomTotp class with code validation logic.\n- Added unit tests for invalid TOTP code handling.\n"
+    },
+    {
+      "sha": "8da9c09359cb32d65ea96201cd307619c4bc5be0",
+      "date": "2026-05-31T15:49:40+02:00",
+      "author": "Ralph Schaer",
+      "email": "ralphschaer@gmail.com",
+      "message": "upgrade\n"
+    },
+    {
+      "sha": "d51f41bba345d7eaec3f84eb04bf6658efa78841",
+      "date": "2026-05-01T09:51:03+02:00",
+      "author": "Ralph Schaer",
+      "email": "ralphschaer@gmail.com",
+      "message": "upgrade\n"
+    },
+    {
+      "sha": "9a17e66ee0bc08d28571b7c861399acb86f39588",
+      "date": "2026-03-16T19:21:01+01:00",
+      "author": "Ralph Schaer",
+      "email": "ralphschaer@gmail.com",
+      "message": "update\n"
+    }
+  ],
+  "commit_sha": "ce2bf0dfe75ba9eb87b426e734361badee890a4a",
+  "extracted_at": "2026-10-05T18:05:04.720695+00:00"
+}

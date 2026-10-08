@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "430dcb6301cbb94527da0fd8a00b1c2aacb1dad9",
+      "date": "2024-06-26T17:00:43+02:00",
+      "author": "Ozren Dabić",
+      "email": "dabico@usi.ch",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "f31e7e3fc7438c852834aae90ce4979849e573e6",
+      "date": "2024-06-25T19:04:15+02:00",
+      "author": "dabico",
+      "email": "dabico@usi.ch",
+      "message": "Fix: Restore static positioning for highlighted code blocks in modals\n"
+    },
+    {
+      "sha": "0c9e25917cdaa677ee90cb4d880cca775941464a",
+      "date": "2024-06-25T18:36:00+02:00",
+      "author": "dabico",
+      "email": "dabico@usi.ch",
+      "message": "Fix: Restore automatic toggling of `NavBar` item active state\n"
+    },
+    {
+      "sha": "179edf855a051ef49d14925a0dc8706a0cf9f7f8",
+      "date": "2024-06-25T18:33:48+02:00",
+      "author": "Ozren Dabić",
+      "email": "dabico@usi.ch",
+      "message": "Merge pull request #56 from seart-group/feature/browser\n\n"
+    },
+    {
+      "sha": "c21ccefd7c06708b04b51030c5acbe8822583de7",
+      "date": "2024-06-25T18:29:51+02:00",
+      "author": "dabico",
+      "email": "dabico@usi.ch",
+      "message": "Add a navbar link to navigate to the search page\n"
+    },
+    {
+      "sha": "93e8412b5caf17bd6c0ce2d32c172a59dd8e9f70",
+      "date": "2024-06-25T18:28:12+02:00",
+      "author": "dabico",
+      "email": "dabico@usi.ch",
+      "message": "Add a search page for easier navigation\n"
+    },
+    {
+      "sha": "67eab615fe517b1db581088625d38b014e524478",
+      "date": "2024-06-25T17:54:23+02:00",
+      "author": "dabico",
+      "email": "dabico@usi.ch",
+      "message": "Fix positioning of `HighlightedCode` component elements\n"
+    },
+    {
+      "sha": "b8d5b98ebd963bdeaf07491928a1951381cdfa5c",
+      "date": "2024-06-25T17:45:35+02:00",
+      "author": "dabico",
+      "email": "dabico@usi.ch",
+      "message": "Remove obsolete `PreformattedCode` component\n"
+    },
+    {
+      "sha": "cc1cc0b849222e82a4a9c892e3f75272255eb39b",
+      "date": "2024-06-25T17:45:20+02:00",
+      "author": "dabico",
+      "email": "dabico@usi.ch",
+      "message": "Integrate new component into `CodeInstanceView`\n"
+    },
+    {
+      "sha": "0a625ccbf30291ead108de0fe1527da6803d1321",
+      "date": "2024-06-25T17:16:41+02:00",
+      "author": "dabico",
+      "email": "dabico@usi.ch",
+      "message": "Integrate new component into `DetailsModal`\n"
+    },
+    {
+      "sha": "84932f1c3820e86159ef89f1a09b946a2ad49f1b",
+      "date": "2024-06-25T17:08:22+02:00",
+      "author": "dabico",
+      "email": "dabico@usi.ch",
+      "message": "Create `HighlightedCode` wrapper component for `highlightjs`\n\nThis was done in order to make the naming consistent, while adding\nscoped custom stying. Has the same props. Note that the component could\nnot be defined as `functional` due to limitations with the third party\nplugin.\n"
+    },
+    {
+      "sha": "703864c52f7bc6c5ab8a744cdab2f5a42d6175df",
+      "date": "2024-06-25T17:01:51+02:00",
+      "author": "dabico",
+      "email": "dabico@usi.ch",
+      "message": "Register missing plaintext \"language\"\n"
+    },
+    {
+      "sha": "7b1b4e7135209fd333668ceaeae682488dc31a6f",
+      "date": "2024-06-25T16:41:19+02:00",
+      "author": "dabico",
+      "email": "dabico@usi.ch",
+      "message": "Downgrade HLJS and add official Vue 2 plugin\n\n> [!NOTE]\n> We can not use a newer version for the plugin. If there are two\n> different dependencies registered, the plugin will cease to work.\n"
+    },
+    {
+      "sha": "5402bd70aebfb7bf3bcccb608947a7a7dae3cf8f",
+      "date": "2024-06-25T16:38:01+02:00",
+      "author": "dabico",
+      "email": "dabico@usi.ch",
+      "message": "Register default languages for HLJS\n"
+    },
+    {
+      "sha": "9dd6dcf1faf1f4dd68517c2ed247dba6044ae795",
+      "date": "2024-06-25T15:01:39+02:00",
+      "author": "dabico",
+      "email": "dabico@usi.ch",
+      "message": "Add `highlight.js` package\n"
+    },
+    {
+      "sha": "d2aa13044a890bc6ae830bb1ef103b29add25c26",
+      "date": "2024-06-24T22:40:44+02:00",
+      "author": "dabico",
+      "email": "dabico@usi.ch",
+      "message": "Merge branch 'main' into feature/browser\n"
+    },
+    {
+      "sha": "f83863c050d8cc2f50daf7be9247df4beb0cba40",
+      "date": "2024-06-24T22:39:25+02:00",
+      "author": "Ozren Dabić",
+      "email": "dabico@usi.ch",
+      "message": "Merge pull request #55 from seart-group/feature/password\n\n"
+    },
+    {
+      "sha": "fe2c5582b6b1be7f5530f5882ec43cb534d3b6c4",
+      "date": "2024-06-24T22:34:27+02:00",
+      "author": "dabico",
+      "email": "dabico@usi.ch",
+      "message": "Change style of `ClearableInput`\n\nThis component is a sibling to the one we introduced. It makes sense\nthat they should at least look similar.\n"
+    },
+    {
+      "sha": "4baeb886b1686e04f8c424d7be7cdff8bf1f5127",
+      "date": "2024-06-24T22:31:39+02:00",
+      "author": "dabico",
+      "email": "dabico@usi.ch",
+      "message": "Integrate new component into views that use forms with password field\n"
+    },
+    {
+      "sha": "4cc110f4c203e2da67be4870034ef3e25f70591f",
+      "date": "2024-06-24T22:29:21+02:00",
+      "author": "dabico",
+      "email": "dabico@usi.ch",
+      "message": "Add `FormInputPassword` component\n\nSimilar to most other websites, it allows for toggling the input type\nbetween hidden `password` and regular `text`.\n"
+    },
+    {
+      "sha": "b24c0a0001608ab391171831c08e2ec73d95a9ff",
+      "date": "2024-06-24T22:03:55+02:00",
+      "author": "dabico",
+      "email": "dabico@usi.ch",
+      "message": "Add extra bottom margin to primary headings of \"form page\" views\n"
+    },
+    {
+      "sha": "2b256a73a6083af0dc89dd59cf08acdd4520ed50",
+      "date": "2024-06-24T20:41:04+02:00",
+      "author": "dabico",
+      "email": "dabico@usi.ch",
+      "message": "Set default length for input groups in \"form page\" views\n"
+    },
+    {
+      "sha": "34adfb93d6ec5908e4a56749bf5c1fa782ba6e3f",
+      "date": "2024-06-24T17:53:04+02:00",
+      "author": "dabico",
+      "email": "dabico@usi.ch",
+      "message": "Add missing class to manually created form groups\n"
+    },
+    {
+      "sha": "50e93b9b4f9da53b2724d8ee5ab6d4c777bb3771",
+      "date": "2024-06-24T17:48:54+02:00",
+      "author": "dabico",
+      "email": "dabico@usi.ch",
+      "message": "Add a navigational prompt to guide new users\n"
+    },
+    {
+      "sha": "e790a39e11ac6caf056a848c87a66a5408d19f65",
+      "date": "2024-06-24T17:46:59+02:00",
+      "author": "dabico",
+      "email": "dabico@usi.ch",
+      "message": "Restructure login form to place links next to the labels\n\nThis looks way cleaner than a list of links at the bottom\n"
+    },
+    {
+      "sha": "850ac14898c99601f109dec6065846df9a32447f",
+      "date": "2024-06-24T17:00:18+02:00",
+      "author": "dabico",
+      "email": "dabico@usi.ch",
+      "message": "Remove redundant class\n"
+    },
+    {
+      "sha": "fec429923ec4b1586b10d1f5128335bd35b8874b",
+      "date": "2024-06-24T16:47:20+02:00",
+      "author": "dabico",
+      "email": "dabico@usi.ch",
+      "message": "Change form text variant from `secondary` to `dark`\n\nThis only affects the \"Required fields\" clarification in various forms\n"
+    },
+    {
+      "sha": "edcdbad16c321f020cf606882e649b25c6c0f3e0",
+      "date": "2024-06-24T16:15:28+02:00",
+      "author": "dabico",
+      "email": "dabico@usi.ch",
+      "message": "Fix small logic inconsistency in `VerifyView`\n"
+    },
+    {
+      "sha": "261576dc3ffc8390f5f876ea14cec2ef4e93df0c",
+      "date": "2024-06-24T16:00:40+02:00",
+      "author": "Ozren Dabić",
+      "email": "dabico@usi.ch",
+      "message": "Merge pull request #54 from seart-group/enhancement/home\n\n"
+    },
+    {
+      "sha": "9db529e1b3c4fd45437719a96718b7367267ae87",
+      "date": "2024-06-24T15:25:28+02:00",
+      "author": "dabico",
+      "email": "dabico@usi.ch",
+      "message": "Rename `content` slot and props to `body` in TextCarouselSlide\n"
+    }
+  ],
+  "commit_sha": "430dcb6301cbb94527da0fd8a00b1c2aacb1dad9",
+  "extracted_at": "2026-10-05T18:40:32.894819+00:00"
+}

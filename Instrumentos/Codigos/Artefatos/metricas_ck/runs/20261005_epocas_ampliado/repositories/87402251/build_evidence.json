@@ -1,0 +1,252 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${spring-boot.version};4.0.6",
+  "spring_boot_major": "4",
+  "java_versions_declared": "${java.version};17",
+  "build_evidence": [
+    {
+      "file": "chaos-monkey-dependencies/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "chaos-monkey-spring-boot-external/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "chaos-monkey-spring-boot/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "chaos-monkey-spring-boot/pom.xml",
+      "artifact": "spring-boot-starter-restclient"
+    },
+    {
+      "file": "chaos-monkey-spring-boot/pom.xml",
+      "artifact": "spring-boot-starter-webclient"
+    },
+    {
+      "file": "chaos-monkey-spring-boot/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    },
+    {
+      "file": "chaos-monkey-spring-boot/pom.xml",
+      "artifact": "spring-boot-test"
+    },
+    {
+      "file": "chaos-monkey-spring-boot/pom.xml",
+      "artifact": "spring-boot"
+    },
+    {
+      "file": "chaos-monkey-spring-boot/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "chaos-monkey-spring-boot/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "chaos-monkey-spring-boot/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "chaos-monkey-spring-boot/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "chaos-monkey-spring-boot/pom.xml",
+      "artifact": "spring-boot-resttestclient"
+    },
+    {
+      "file": "chaos-monkey-spring-boot/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "demo-apps/chaos-monkey-demo-app-ext-jar/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "demo-apps/chaos-monkey-demo-app-ext-jar/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "demo-apps/chaos-monkey-demo-app-ext-jar/pom.xml",
+      "artifact": "spring-boot-starter-restclient"
+    },
+    {
+      "file": "demo-apps/chaos-monkey-demo-app-ext-jar/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "demo-apps/chaos-monkey-demo-app-ext-jar/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "demo-apps/chaos-monkey-demo-app-ext-jar/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "demo-apps/chaos-monkey-demo-app-ext-jar/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "demo-apps/chaos-monkey-demo-app-jdbc/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "demo-apps/chaos-monkey-demo-app-jdbc/pom.xml",
+      "artifact": "spring-boot-starter-restclient"
+    },
+    {
+      "file": "demo-apps/chaos-monkey-demo-app-jdbc/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "demo-apps/chaos-monkey-demo-app-jdbc/pom.xml",
+      "artifact": "spring-boot-starter-data-jdbc"
+    },
+    {
+      "file": "demo-apps/chaos-monkey-demo-app-jdbc/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "demo-apps/chaos-monkey-demo-app-jdbc/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "demo-apps/chaos-monkey-demo-app-jdbc/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "demo-apps/chaos-monkey-demo-app-naked/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "demo-apps/chaos-monkey-demo-app-naked/pom.xml",
+      "artifact": "spring-boot-starter-restclient"
+    },
+    {
+      "file": "demo-apps/chaos-monkey-demo-app-naked/pom.xml",
+      "artifact": "spring-boot-starter-data-rest"
+    },
+    {
+      "file": "demo-apps/chaos-monkey-demo-app-naked/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "demo-apps/chaos-monkey-demo-app-naked/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "demo-apps/chaos-monkey-demo-app-naked/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "demo-apps/chaos-monkey-demo-app-naked/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "demo-apps/chaos-monkey-demo-app-naked/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "demo-apps/chaos-monkey-demo-app-unleash-toggles/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "demo-apps/chaos-monkey-demo-app-unleash-toggles/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "demo-apps/chaos-monkey-demo-app-unleash-toggles/pom.xml",
+      "artifact": "spring-boot-starter-security"
+    },
+    {
+      "file": "demo-apps/chaos-monkey-demo-app-unleash-toggles/pom.xml",
+      "artifact": "spring-boot-starter-restclient"
+    },
+    {
+      "file": "demo-apps/chaos-monkey-demo-app-unleash-toggles/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "demo-apps/chaos-monkey-demo-app-unleash-toggles/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "demo-apps/chaos-monkey-demo-app-unleash-toggles/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "demo-apps/chaos-monkey-demo-app-unleash-toggles/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "demo-apps/chaos-monkey-demo-app/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "demo-apps/chaos-monkey-demo-app/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "demo-apps/chaos-monkey-demo-app/pom.xml",
+      "artifact": "spring-boot-starter-restclient"
+    },
+    {
+      "file": "demo-apps/chaos-monkey-demo-app/pom.xml",
+      "artifact": "spring-boot-starter-data-rest"
+    },
+    {
+      "file": "demo-apps/chaos-monkey-demo-app/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "demo-apps/chaos-monkey-demo-app/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "demo-apps/chaos-monkey-demo-app/pom.xml",
+      "artifact": "spring-boot-starter-webmvc-test"
+    },
+    {
+      "file": "demo-apps/chaos-monkey-demo-app/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "demo-apps/chaos-monkey-demo-app/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "demo-apps/chaos-monkey-web-reactive-app/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "demo-apps/chaos-monkey-web-reactive-app/pom.xml",
+      "artifact": "spring-boot-starter-restclient"
+    },
+    {
+      "file": "demo-apps/chaos-monkey-web-reactive-app/pom.xml",
+      "artifact": "spring-boot-starter-webclient"
+    },
+    {
+      "file": "demo-apps/chaos-monkey-web-reactive-app/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "demo-apps/chaos-monkey-web-reactive-app/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "demo-apps/chaos-monkey-web-reactive-app/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "demo-apps/chaos-monkey-web-reactive-app/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "f9a0c4a47fc3ce97cb849fbde5cd8ee3b67b1fae",
+      "date": "2026-04-03T17:37:53+05:30",
+      "author": "Vighnesh Ise",
+      "email": "137636878+vighnesh-xi@users.noreply.github.com",
+      "message": "fix: Add RedisConnectionFailureException handler in GlobalExceptionHandler (#50)\n\n* fix: add RedisConnectionFailureException handler in GlobalExceptionHandler\n\n* fix: use Map response, add ApiMessages constant and test for Redis handler\n\n* fix: add missing lombok.val import in GlobalExceptionHandlerTest"
+    },
+    {
+      "sha": "7519f5b07deb00edfe4ad8a26bbad9134c12e34f",
+      "date": "2025-11-05T03:46:26+09:00",
+      "author": "Joonseo Lee",
+      "email": "43516757+joonseolee@users.noreply.github.com",
+      "message": "Add idempotency support for state‑changing endpoints (#49)\n\n"
+    },
+    {
+      "sha": "82d9a7954b23213539efd587f890d8f2dd6a8df0",
+      "date": "2025-10-06T23:25:16+03:00",
+      "author": "Amr Elsayyad",
+      "email": "20210190+AmrElsayyad@users.noreply.github.com",
+      "message": "Merge pull request #44 from ManjuVasanth/feature/banking-statement\n\nSend Bank Statement on Email feature added"
+    },
+    {
+      "sha": "db017f13aa4085f5457e979973684ea3c564d628",
+      "date": "2025-10-06T23:23:26+03:00",
+      "author": "Amr Elsayyad",
+      "email": "20210190+AmrElsayyad@users.noreply.github.com",
+      "message": "Update src/main/java/com/webapp/bankingportal/controller/AccountController.java\n\nCo-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>"
+    },
+    {
+      "sha": "da455897078e40656c77d920e32abca182ddc053",
+      "date": "2025-10-06T23:23:11+03:00",
+      "author": "Amr Elsayyad",
+      "email": "20210190+AmrElsayyad@users.noreply.github.com",
+      "message": "Update src/main/java/com/webapp/bankingportal/service/AccountServiceImpl.java\n\nCo-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>"
+    },
+    {
+      "sha": "124f3f9cf799e4788e42dbf19424cde53fce4005",
+      "date": "2025-10-06T23:23:02+03:00",
+      "author": "Amr Elsayyad",
+      "email": "20210190+AmrElsayyad@users.noreply.github.com",
+      "message": "Update src/main/java/com/webapp/bankingportal/security/JwtAuthenticationFilter.java\n\nCo-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>"
+    },
+    {
+      "sha": "1ec4db81fbb56a4e6df88b314c81ba3220669b76",
+      "date": "2025-10-06T23:22:53+03:00",
+      "author": "Amr Elsayyad",
+      "email": "20210190+AmrElsayyad@users.noreply.github.com",
+      "message": "Update src/main/java/com/webapp/bankingportal/security/JwtAuthenticationFilter.java\n\nCo-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>"
+    },
+    {
+      "sha": "6e34c72bbf09539e31d6ab99ec79da09fa3a1a3d",
+      "date": "2025-10-06T23:22:44+03:00",
+      "author": "Amr Elsayyad",
+      "email": "20210190+AmrElsayyad@users.noreply.github.com",
+      "message": "Update src/main/java/com/webapp/bankingportal/service/TransactionServiceImpl.java\n\nCo-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>"
+    },
+    {
+      "sha": "cca20f7a2ed578749a3c7fa1782e6b076d15ae2b",
+      "date": "2025-10-06T23:22:34+03:00",
+      "author": "Amr Elsayyad",
+      "email": "20210190+AmrElsayyad@users.noreply.github.com",
+      "message": "Update src/main/java/com/webapp/bankingportal/service/TransactionServiceImpl.java\n\nCo-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>"
+    },
+    {
+      "sha": "35c1aff4ecedd6e0a9501faef184d431760437ce",
+      "date": "2025-08-29T11:08:28+03:00",
+      "author": "Amr Elsayyad",
+      "email": "20210190+AmrElsayyad@users.noreply.github.com",
+      "message": "Merge branch 'main' into feature/banking-statement"
+    },
+    {
+      "sha": "b4ba15075efb345e82eef118a7fc3dce2033b150",
+      "date": "2025-08-26T16:06:50-05:00",
+      "author": "ManjuVasanth",
+      "email": "manjuvasanthbe@gmail.com",
+      "message": "Send Bank Statement on Email feature added\n"
+    },
+    {
+      "sha": "d1a3951012152fc4cbdf8c4aeb6f9390e61fc4f2",
+      "date": "2025-08-22T14:00:58-05:00",
+      "author": "ManjuVasanth",
+      "email": "manjuvasanthbe@gmail.com",
+      "message": "Addressed review comments\n"
+    },
+    {
+      "sha": "ffc65a57525f19814884e48c4af4934ddf5382c3",
+      "date": "2025-08-16T16:08:34-05:00",
+      "author": "ManjuVasanth",
+      "email": "manjuvasanthbe@gmail.com",
+      "message": "Send email if registration succeeded feature added\n"
+    },
+    {
+      "sha": "8985f6202c2e0f372323f4a0b6e8a16b0b604b39",
+      "date": "2025-08-22T14:00:58-05:00",
+      "author": "ManjuVasanth",
+      "email": "manjuvasanthbe@gmail.com",
+      "message": "Addressed review comments\n"
+    },
+    {
+      "sha": "dd729f48be6c9794e8a22fcab663875134f8f901",
+      "date": "2025-08-16T16:08:34-05:00",
+      "author": "ManjuVasanth",
+      "email": "manjuvasanthbe@gmail.com",
+      "message": "Send email if registration succeeded feature added\n"
+    },
+    {
+      "sha": "7742b13d0f44889e170523a26f417ea24fc85f7a",
+      "date": "2025-02-02T14:00:08+03:30",
+      "author": "AmirHossein",
+      "email": "76530552+emamagic@users.noreply.github.com",
+      "message": "Fix: Ensure cash transaction methods are transactional (#40)\n\nAdded @Transactional annotation to ensure consistency during cashDeposit, cashWithdrawal, and fundTransfer. This prevents partial updates in case of failures."
+    },
+    {
+      "sha": "efe1d2152e10110172359caa98e0d9d6d319b202",
+      "date": "2024-09-09T12:02:24+03:00",
+      "author": "Amr Elsayyad",
+      "email": "amrelsayyad96@gmail.com",
+      "message": "chore: Removed useOtp parameter from LoginRequest DTO.\n"
+    },
+    {
+      "sha": "46af90961731859d8b61426c263b7f61eed45c61",
+      "date": "2024-09-09T11:45:55+03:00",
+      "author": "Amr Elsayyad",
+      "email": "amrelsayyad96@gmail.com",
+      "message": "fix(Auth): move the `Transactional` to annotate `resetPassword` instead of `verifyPasswordResetToken`\n"
+    },
+    {
+      "sha": "76fe5bebd703cf786e16a206603771850ab78fca",
+      "date": "2024-07-16T20:56:31+03:00",
+      "author": "Amr Elsayyad",
+      "email": "amrelsayyad96@gmail.com",
+      "message": "refactor: move all logic from the controllers to the service layer (#33)\n\n* refactor: move all logic from the controllers to the service layer\n\n* refactor: use enum for messages"
+    },
+    {
+      "sha": "48dc66d4389cf14fd345bab98c79dacc2c8cc14b",
+      "date": "2024-07-14T22:03:49+03:00",
+      "author": "Amr Elsayyad",
+      "email": "amrelsayyad96@gmail.com",
+      "message": "feat: use **Project Lombok** and add support for login using email or account number (#26)\n\n"
+    },
+    {
+      "sha": "e6b40b4ee856ea55c34029b297d92d9268cb251d",
+      "date": "2024-07-07T18:08:08+03:00",
+      "author": "Amr Elsayyad",
+      "email": "amrelsayyad96@gmail.com",
+      "message": "Update Test Suite (#23)\n\n"
+    },
+    {
+      "sha": "173269265d8e034708dff4cf130274240bf8c071",
+      "date": "2024-06-30T23:08:14+05:30",
+      "author": "Abhishek Tiwari",
+      "email": "68281476+abhi9720@users.noreply.github.com",
+      "message": "swagger documentation added with jwt token (#22)\n\n"
+    },
+    {
+      "sha": "ee2a1c12e442f21f5dabc8151eb84711eaa21a51",
+      "date": "2024-06-30T22:09:36+05:30",
+      "author": "root",
+      "email": "root@abhi9720.localdomain",
+      "message": "Removing target folder from git history\n"
+    },
+    {
+      "sha": "ee6cef1a92324315e2d73a56841e16d90e2e5910",
+      "date": "2024-06-30T21:28:19+05:30",
+      "author": "abhi9720",
+      "email": "abhishektiwari9720@gmail.com",
+      "message": "Merge branch 'main' of https://github.com/abhi9720/BankingPortal-API\n"
+    },
+    {
+      "sha": "26a9480ef5b94cca94eaf78b25c1411601b745c4",
+      "date": "2024-06-30T14:53:20+05:30",
+      "author": "Abhishek Tiwari",
+      "email": "68281476+abhi9720@users.noreply.github.com",
+      "message": "Implement Password Reset Flow with OTP Verification (#21)\n\n* Update .gitignore to exclude target directory and remove target from Git index\n\n* reset passwod implemented"
+    },
+    {
+      "sha": "ec8c5bc15bcca84a1eabe78eda38a13043dac653",
+      "date": "2024-06-30T00:18:55+05:30",
+      "author": "abhi9720",
+      "email": "abhishektiwari9720@gmail.com",
+      "message": "Merge branch 'main' of https://github.com/abhi9720/BankingPortal-API\n"
+    },
+    {
+      "sha": "5e31c48ca2ad501e48d077f7a9983f89d796ab3d",
+      "date": "2024-06-30T00:18:45+05:30",
+      "author": "Abhishek Tiwari",
+      "email": "68281476+abhi9720@users.noreply.github.com",
+      "message": " Introduce JSONUtil and Fix Missing Country Code in Update Profile (#18)\n\n* Update .gitignore to exclude target directory and remove target from Git index\n\n* dto to json stringify utility class added"
+    },
+    {
+      "sha": "bbad012b612f955589b09708c13f1747fe4a1b9a",
+      "date": "2024-06-30T00:14:26+05:30",
+      "author": "abhi9720",
+      "email": "abhishektiwari9720@gmail.com",
+      "message": "Merge branch 'main' of https://github.com/abhi9720/BankingPortal-API\n"
+    },
+    {
+      "sha": "5c5d84063fcac81c867bb88a3f8873302e55ef0b",
+      "date": "2024-06-30T00:13:59+05:30",
+      "author": "Abhishek Tiwari",
+      "email": "68281476+abhi9720@users.noreply.github.com",
+      "message": "Revert \"Add Utility for Converting DTOs to JSON Strings (#16)\" (#17)\n\nThis reverts commit 4866ccacd1699ccff75edcc55f28c3128dcf2aad."
+    },
+    {
+      "sha": "82d36a22232b8f2d42e026ad53e72ebc6f0d0f54",
+      "date": "2024-06-30T00:05:25+05:30",
+      "author": "Abhishek Tiwari",
+      "email": "68281476+abhi9720@users.noreply.github.com",
+      "message": "Add Utility for Converting DTOs to JSON Strings (#16)\n\n* Update .gitignore to exclude target directory and remove target from Git index\n\n* dto to json stringify utility class added"
+    }
+  ],
+  "commit_sha": "f9a0c4a47fc3ce97cb849fbde5cd8ee3b67b1fae",
+  "extracted_at": "2026-10-05T18:11:48.726390+00:00"
+}

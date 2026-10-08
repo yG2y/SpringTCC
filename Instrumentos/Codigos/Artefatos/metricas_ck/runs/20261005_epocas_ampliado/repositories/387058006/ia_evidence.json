@@ -1,0 +1,236 @@
+{
+  "ia_status": "com_evidencia",
+  "ia_level": 2,
+  "ia_agents": "coderabbitai[bot]",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [
+    {
+      "agent": "coderabbitai[bot]",
+      "type": "author_identity",
+      "sha": "7cfee4fd5d64420227f4ae5a55ba218c7a839f8a",
+      "identity": "coderabbitai[bot] 136622811+coderabbitai[bot]@users.noreply.github.com"
+    },
+    {
+      "agent": "coderabbitai[bot]",
+      "type": "author_identity",
+      "sha": "730990b37727996b2ef77383234bd4474f6dbcd8",
+      "identity": "coderabbitai[bot] 136622811+coderabbitai[bot]@users.noreply.github.com"
+    }
+  ],
+  "commits": [
+    {
+      "sha": "7cfee4fd5d64420227f4ae5a55ba218c7a839f8a",
+      "date": "2026-10-01T23:24:11+05:30",
+      "author": "coderabbitai[bot]",
+      "email": "136622811+coderabbitai[bot]@users.noreply.github.com",
+      "message": "test(search): correct actor search pagination input and verify response metadata (#2704)\n\nCo-authored-by: coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "61465585011b9edf2c806dd0d17aca8dff7ea586",
+      "date": "2026-10-01T23:24:10+05:30",
+      "author": "Raja Kolli",
+      "email": "rajadilipkolli@gmail.com",
+      "message": "feat(search): implement support for nested conditions in search functionality (#2703)\n\n* feat(search): implement support for nested conditions in search functionality\n\n* fix(search): honor request-body pagination, skip null criteria, and return 400 for invalid IN and BETWEEN values\n\n* docs(search): document actor search criteria, pagination, validation, and test behavior\n\n---------\n\nCo-authored-by: coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "66e4735e60d149469291f963a7371c4febf90746",
+      "date": "2026-10-01T21:51:31+05:30",
+      "author": "Raja Kolli",
+      "email": "rajadilipkolli@gmail.com",
+      "message": "feat(chore) : prepare for multinode deployment (#2702)\n\n* feat(chore) : prepare for multinode deployment\n\n* Update boot-ultimate-postgres/README.md\n\nCo-authored-by: coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>\n\n* docs(boot-ultimate-postgres): Document scheduler lock provider, monitoring, and cache cleanup behavior\n\n---------\n\nCo-authored-by: coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "35f5fb7b86e0424cde92ebdbc5b9d828da04fb99",
+      "date": "2026-09-23T14:50:58+05:30",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "chore(deps): update dependency com.julien-dubois.bootui:bootui-spring-boot-starter to v1.18.0 (#2700)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "0b2d2e0f34f3cbc2b6e079af03ac0733715baec4",
+      "date": "2026-09-22T19:02:40+05:30",
+      "author": "Raja Kolli",
+      "email": "rajadilipkolli@gmail.com",
+      "message": "adds missing baseline"
+    },
+    {
+      "sha": "653c2a8c785985f019ea9e4eff2f1362b9bc99f4",
+      "date": "2026-09-22T19:01:06+05:30",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "chore(deps): update redis docker tag to v8.10.2 (#2699)\n\n* chore(deps): update redis docker tag to v8.10.2\n\n* update in tests\n\n---------\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>\nCo-authored-by: Raja Kolli <rajadilipkolli@gmail.com>"
+    },
+    {
+      "sha": "e9f710b44e884c4602cdec89b6aae4bf93f12c15",
+      "date": "2026-09-20T17:54:04Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "fix(deps): update dependency io.hypersistence:hypersistence-utils-hibernate-73 to v3.16.0 (#2698)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "963a1bf0099346dd37f374b40faaf2456068d60e",
+      "date": "2026-09-19T18:36:31+05:30",
+      "author": "Raja Kolli",
+      "email": "rajadilipkolli@gmail.com",
+      "message": "update LGTM version in Tests"
+    },
+    {
+      "sha": "b6164bb9d5bb5c8b0020198a1f65ea5b414c3ea0",
+      "date": "2026-09-19T09:29:48+05:30",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "fix(deps): update dependency org.zalando:logbook-spring-boot-starter to v4.2.0 (#2696)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "170431b1645185905d36b653d3c568458aed72bf",
+      "date": "2026-09-19T03:10:39Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "fix(deps): update instancio.version to v6.0.1 (#2695)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "0fac59aada7ad4cda93d0337299a9ca800861d0e",
+      "date": "2026-09-18T23:31:49Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "chore(deps): update grafana/otel-lgtm docker tag to v0.33.1 (#2694)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "7f53e7d58732293f00647b6dfeed26618a13bf11",
+      "date": "2026-09-18T16:51:04+05:30",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "fix(deps): update opensearch.version to v3.1.4 (#2693)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "f782e4fec07f2dcae2ec6253fe67b01156e014ee",
+      "date": "2026-09-18T05:54:34Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "chore(deps): update prom/alertmanager docker tag to v0.34.1 (#2692)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "a1b855a412ce850074d488fdb9296e65394b2629",
+      "date": "2026-09-18T01:46:44Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "chore(deps): update grafana/loki docker tag to v3.7.8 (#2691)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "7d18167bc46b1cc21c8374c116032d533e60bc67",
+      "date": "2026-09-17T09:58:41+05:30",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "chore(deps): update mongo docker tag to v8.3.11 (#2680)\n\n* chore(deps): update mongo docker tag to v8.3.11\n\n* Update Elasticsearch and MongoDB container versions\n\n* Update Elasticsearch and MongoDB container versions\n\n---------\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>\nCo-authored-by: Raja Kolli <rajadilipkolli@gmail.com>"
+    },
+    {
+      "sha": "a924a479eaf29d1fdb684d11266a0aa851127d85",
+      "date": "2026-09-16T08:37:28+05:30",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "chore(deps): update mariadb docker tag to v13 (#2689)\n\n* chore(deps): update mariadb docker tag to v13\n\n* Update MariaDB container version to 13.0\n\n---------\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>\nCo-authored-by: Raja Kolli <rajadilipkolli@gmail.com>"
+    },
+    {
+      "sha": "76b1e875575567fdaab909d866b5e72f72b1a2b6",
+      "date": "2026-09-16T08:37:09+05:30",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "chore(deps): update grafana/grafana docker tag to v13.2.2 (#2682)\n\n* chore(deps): update grafana/grafana docker tag to v13.2.2\n\n* Update Java version in boot-strategy-plugin.yml\n\n---------\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>\nCo-authored-by: Raja Kolli <rajadilipkolli@gmail.com>"
+    },
+    {
+      "sha": "86cb0a96302e5c7acacbcb92a063919d37c6ef92",
+      "date": "2026-09-16T08:29:23+05:30",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "chore(deps): update rabbitmq docker tag to v4.3.6 (#2687)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "6ed582b7ca2fb5c9795be07fb228db558167c4ec",
+      "date": "2026-09-16T08:24:13+05:30",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "chore(deps): update docker.elastic.co/kibana/kibana docker tag to v9.5.4 (#2686)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "6d0f12139b5592e5f56927fb9fb53155c71c1f73",
+      "date": "2026-09-16T08:23:02+05:30",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "fix(deps): update dependency org.opensearch.client:spring-data-opensearch-starter to v3.1.3 (#2688)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "efe5c55b83f2135b7be701cbb3e452944918c8c9",
+      "date": "2026-09-16T01:19:46Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "chore(deps): update docker.elastic.co/elasticsearch/elasticsearch docker tag to v9.5.4 (#2685)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "19aa48ccb8f2bf15a9c23e464cde527fd7981a66",
+      "date": "2026-09-15T19:48:03Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "chore(deps): update dependency java-jdk to v25.0.4+101.0.lts (#2681)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "730990b37727996b2ef77383234bd4474f6dbcd8",
+      "date": "2026-09-16T01:07:51+05:30",
+      "author": "coderabbitai[bot]",
+      "email": "136622811+coderabbitai[bot]@users.noreply.github.com",
+      "message": "Stabilize high-RPS Kafka and Redis integration tests (#2683)\n\nCo-authored-by: coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "3e3cde1725a9426218c448013c448894ae5a7069",
+      "date": "2026-09-16T01:07:50+05:30",
+      "author": "Raja Kolli",
+      "email": "rajadilipkolli@gmail.com",
+      "message": "Refactor Kafka configuration and improve Redis update performance (#2678)\n\n* Refactor Kafka configuration and improve Redis update performance\n\n- Renamed eventsTopic method to applicationTopics and removed events topic creation from KafkaConfig.\n- Updated PostCommandService and PostCommentCommandService to perform asynchronous updates to Redis, improving performance by avoiding blocking the main execution path.\n- Added Cache configuration properties to AppProperties for local cache size management.\n- Updated application-local.properties and application-production.properties to include new cache settings and optimized Kafka producer configurations.\n- Enhanced load testing configuration by introducing mutable and deletable pools for posts and comments, and adjusted traffic weights for various operations.\n- Implemented new MutationFeeder class to handle CSV data feeding for mutable and deletable posts and comments.\n- Updated scenarios for posts and comments to include update and delete operations, ensuring comprehensive load testing coverage.\n- Adjusted integration tests to reflect changes in Kafka topic names and improved observability metrics.\n\n* Implement code review comments\n\n* Document high-RPS cache and Kafka methods\n\n* Update boot-high-rps-sample/src/main/resources/application.properties\n\nCo-authored-by: coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>\n\n* Update boot-high-rps-sample/src/test/java/com/example/highrps/gatling/scenarios/PostScenario.java\n\nCo-authored-by: coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>\n\n* Update boot-high-rps-sample/src/test/java/com/example/highrps/gatling/config/LoadTestConfig.java\n\nCo-authored-by: coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>\n\n* implement code review comments\n\n* spotless format fix\n\n* fix test case failure\n\n* Prevent stale Redis writes and propagate Gatling failures\n\n* Document high-RPS cache and load test APIs\n\n---------\n\nCo-authored-by: coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "33dc47724bdf9dfb2a8e539a004c29f4a7e8f3c9",
+      "date": "2026-09-14T08:38:09Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "chore(deps): update dependency org.asciidoctor:asciidoctorj-pdf to v2.3.27 (#2679)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "ccd4f7e847c5b6cfa26ac6af3b752479e5f111ee",
+      "date": "2026-09-14T10:01:08+05:30",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "chore(deps): update actions/upload-artifact action to v7 (#2677)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "e6111e3c62a02fd49237c0071d97831988636bd6",
+      "date": "2026-09-14T02:54:22+05:30",
+      "author": "Raja Kolli",
+      "email": "rajadilipkolli@gmail.com",
+      "message": "fix : port conflict issue"
+    },
+    {
+      "sha": "143fc8c0c801dd09110afa898d0be3914e3ce927",
+      "date": "2026-09-14T02:32:37+05:30",
+      "author": "Raja Kolli",
+      "email": "rajadilipkolli@gmail.com",
+      "message": "feat: Implement load testing framework with Gatling (#2676)\n\n* feat: Implement load testing framework with Gatling\n\n- Add LoadTestConfig class for configurable load test parameters.\n- Create feeders for authors, posts, and tags to support dynamic data generation.\n- Implement scenarios for author registration, post creation, comment creation, and reading posts/comments.\n- Develop DataGenerator for populating test data into CSV files.\n- Set up HighRpsSimulation for executing load tests with varying user loads.\n- Enhance PostControllerIT and PostCommentControllerIT with duplicate title checks for posts and comments.\n- Introduce load-test.properties for easy configuration of load test parameters.\n\n* fix : test case failure issue.\n\n* fix issue with starting infra\n\n* fix : test case failure\n\n* docs(boot-high-rps): document service APIs and exception handling\n\n* Update boot-high-rps-sample/src/test/java/com/example/highrps/gatling/scenarios/CommentScenario.java\n\nCo-authored-by: coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>\n\n* Update boot-high-rps-sample/docker/docker-compose-monitoring.yml\n\nCo-authored-by: coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>\n\n* Update boot-high-rps-sample/src/main/java/com/example/highrps/post/query/PostQueryService.java\n\nCo-authored-by: coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>\n\n* docs(boot-high-rps): add Javadocs across application and load-test code\n\n* code review comments implementation\n\n* fix imports issue\n\n* fix(boot-high-rps): allow zero-minute Gatling warmups\n\n---------\n\nCo-authored-by: coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "1d2c8694b539c04b4c64f6ae83892769efc91461",
+      "date": "2026-09-13T18:38:34Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "fix(deps): update datasource-micrometer-boot.version to v2.3.0 (#2675)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "54170fe171a7c88a3542d6d0cbaa9ddcee600a40",
+      "date": "2026-09-13T19:30:57+05:30",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "chore(deps): update dependency org.codehaus.mojo:properties-maven-plugin to v1.3.1 (#2668)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    }
+  ],
+  "commit_sha": "7cfee4fd5d64420227f4ae5a55ba218c7a839f8a",
+  "extracted_at": "2026-10-05T18:43:04.966035+00:00"
+}

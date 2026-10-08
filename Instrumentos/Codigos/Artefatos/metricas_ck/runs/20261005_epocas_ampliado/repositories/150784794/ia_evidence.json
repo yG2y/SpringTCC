@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "8585a68d22b1ef473b1db7e8f065776e9ee267b3",
+      "date": "2026-07-25T18:29:10+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: remove AGENTS.md\n"
+    },
+    {
+      "sha": "aebbd7e4311e3d7e1e79a04a75ba084e92572856",
+      "date": "2026-07-25T09:14:18+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: upgrade dependencies and fix formatting\n\n- Bump Spring Boot from 4.0.6 to 4.1.0\n- Bump Spring Cloud from 2025.1.1 to 2025.1.2\n- Bump MySQL image from 9.6.0 to 9.7.1\n- Bump Maven wrapper from 3.9.15 to 3.9.16\n- Update Spotless plugin to 3.8.0 and remove redundant version properties\n- Apply Prettier formatting fixes to JS and CSS\n- Update test section in README\n"
+    },
+    {
+      "sha": "dcdc07626fec6436d12eee292a1560bb7858851e",
+      "date": "2026-06-24T05:44:31-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "docs: update README\n"
+    },
+    {
+      "sha": "9f585527ef27c84339298e79faee6d2a3ff5a3a8",
+      "date": "2026-06-14T15:01:41-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Add [*.java] section to .editorconfig\n"
+    },
+    {
+      "sha": "ff903adaaec85c16d9a418ceaae00f8ac045b49f",
+      "date": "2026-06-14T09:38:42-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: rename docker-compose.yml to compose.yaml\n"
+    },
+    {
+      "sha": "8a46a9c4c9861099f415d727a46080b501e8e14d",
+      "date": "2026-05-21T15:18:03+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "docs: reorder cleanup section and fix formatting\n"
+    },
+    {
+      "sha": "a352f89b549e4521fd273d8fdf60715af1d9bdae",
+      "date": "2026-05-18T21:26:33+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: reduce container log wait timeout from 120 to 60 seconds\n"
+    },
+    {
+      "sha": "37172f12cf11f8f934770c5cf2e30429938ac2d1",
+      "date": "2026-05-18T21:17:06+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: remove Spring Boot demo description from pom.xml\n"
+    },
+    {
+      "sha": "f828992379487f984e727e368afe3ec0c492013e",
+      "date": "2026-05-14T15:57:30+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Remove custom importOrder from Spotless and [*.java] from .editorconfig\n\n- Remove <importOrder> from pom.xml so IntelliJ google-java-format\n  plugin matches Spotless on import ordering\n- Remove [*.java] from .editorconfig to avoid overriding the\n  google-java-format plugin in the IDE\n- Run spotless:apply to reformat all Java sources with default\n  import sorting\n"
+    },
+    {
+      "sha": "1a2acd6221f9caa9db16835a40752eef9787ddf3",
+      "date": "2026-05-14T14:39:19+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "refactor: migrate tests to Spring context and Mockito\n\n- Replace MockitoExtension with SpringExtension + @MockitoBean for proper DI\n- Swap BDDMockito given/then for standard Mockito when/verify\n- Add healthcheck interval, timeout, and retries to docker-compose services\n- Simplify remove-docker-images.sh by inlining image variables\n- Upgrade Maven wrapper distribution to 3.9.15\n"
+    },
+    {
+      "sha": "d847bf6a1db9bb5207509b375516203f29aa1fd8",
+      "date": "2026-05-03T10:10:26+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "docs: small update in a label in architecture diagram\n"
+    },
+    {
+      "sha": "9b8a3112e1ae7f5d748ef006a97e64104adba1d7",
+      "date": "2026-05-03T10:07:44+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "docs: update chat flow labels in architecture diagram\n"
+    },
+    {
+      "sha": "5f369386c6c9a7c565d2654641ab4da2c19c5bb4",
+      "date": "2026-05-03T09:29:09+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "docs(docs): update docs with mermaid diagram and version changes\n\n- Add Mermaid flowchart to README.md replacing static project diagram image\n- Update Spring Cloud version from 2025.1.0 to 2025.1.1 in AGENTS.md\n- Change .editorconfig to target *.md instead of *.adoc for trim_trailing_whitespace\n- Remove Excalidraw project diagram source and PNG files\n- Rename README media optimization section to specify GIF only\n"
+    },
+    {
+      "sha": "91e55b60508718a7178550263b6d18021e46b90b",
+      "date": "2026-05-01T00:25:36+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "fix(infra): correct zookeeper healthcheck command\n"
+    },
+    {
+      "sha": "f6f9c14c5246fdb92ff911ff6ede2d06c8c7c583",
+      "date": "2026-04-30T12:31:04+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: convert readme to markdown and update shell scripts\n\n- Replace README.adoc with README.md, converting AsciiDoc syntax to Markdown\n- Remove `set -e` from remove-docker-images.sh and stop-apps.sh\n- Hardcode APP_VERSION to 1.0.0 in start-apps.sh, remove dynamic Maven version fetch\n- Remove error suppression from `docker stop` command in stop-apps.sh\n"
+    },
+    {
+      "sha": "ee5c0741fc24500a32862fa7cf654a15477ccec5",
+      "date": "2026-04-30T08:37:11+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore(formatting): add automated code formatting tooling and apply it\n\n- Add .editorconfig defining coding style rules (2-space indent, LF line endings, etc.)\n- Configure Spotless Maven plugin 3.4.0 with Google Java Format 1.35.0 and Prettier 3.5.3\n- Update AGENTS.md: revise import order to static → java → jakarta → org → com, document formatting rules\n- Add Code Formatting section to README.adoc with spotless commands and verify phase integration\n- Reformat all Java, JavaScript, and HTML files to comply with new formatting standards\n"
+    },
+    {
+      "sha": "4dcc15b4894f9b36c64a6d6a1c1e4682e6edd42d",
+      "date": "2026-04-29T20:44:10+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: dependency upgrades and resilience improvements\n\n- Deps: Spring Boot 4.0.4 → 4.0.6, Spring Cloud 2025.1.0 → 2025.1.1, springdoc-openapi 3.0.2 → 3.0.3, Maven wrapper 3.9.11 → 3.9.14\n- Frontend: jQuery 3.7.1 → 4.0.0 (new CDN), STOMP.js 2.3.3 → @stomp/stompjs 7.3.0 (new API + CDN), day.js 1.11.13 → 1.11.18\n- API: GET /api/bitcoin/last now returns 404 when no price exists; SimulationRunner skips seeding if data already present; cron expression externalized to a property; MySQL credentials use env vars\n- Code quality: BINDING_NAME constant extracted, unused @Slf4j removed, chat form validation feedback added\n- Docs/config: AGENTS.md updated, FUNDING.yml gets Buy Me a Coffee link\n"
+    },
+    {
+      "sha": "9111f787af4a44cf7a03eb50e826565c6f905849",
+      "date": "2026-04-28T23:56:36+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore(infra): hardcode app version and improve docker compose reliability\n\n- Replace dynamic ./mvnw help:evaluate version lookup with hardcoded 1.0.0 in build and remove scripts\n- Add named variables for Docker image names in remove-docker-images.sh for clarity\n- Remove silent error suppression (2>/dev/null || true) from docker rmi commands\n- Update kafdrop dependency in docker-compose.yml to use condition: service_healthy instead of bare service name\n"
+    },
+    {
+      "sha": "4ce9fe55974dd643247dda6658a365c8f73d8f87",
+      "date": "2026-04-06T09:30:26+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Fix link in README.adoc\n"
+    },
+    {
+      "sha": "8ea748063872ede7e35ef72dedf63d4ed2375b10",
+      "date": "2026-03-28T13:37:18+01:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: fix stale comments, healthcheck formats, and test assertion\n\n- correct misleading cron comment from \"every 5 seconds\" to \"every 2 seconds\"\n- update AGENTS.md to reflect Enter-submits/Shift+Enter-newline textarea behaviour\n- convert docker-compose healthcheck strings to exec-form arrays for correctness\n- strengthen unauthenticated redirect test to assert exact /login url\n"
+    },
+    {
+      "sha": "a0899837987b999dc38511cb289a7dfa9e7ec7f9",
+      "date": "2026-03-27T23:56:20+01:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "feat: increase price tick rate and improve ui layout\n\n- change price scheduler cron from every 5s to every 2s\n- fix chat textarea submit to trigger on enter, shift+enter for newlines\n- replace hardcoded max-height with flexbox-based full-viewport layout\n- update placeholder text to reflect new keyboard shortcut\n- update demo gif\n"
+    },
+    {
+      "sha": "584609bc42ba077c6d5d64bee2bef949fbfbc1b6",
+      "date": "2026-03-27T23:30:08+01:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore(infra): harden shell scripts and improve docker compose reliability\n\n- derive APP_VERSION from maven instead of hardcoding it\n- add set -e to all scripts for fail-fast behavior\n- make remove-docker-images.sh dynamic and handle missing images gracefully\n- remove broken tcp health-cmd from start-apps.sh docker run calls\n- fix docker compose kafka dependency to wait for zookeeper healthy\n- improve kafka healthcheck to use kafka-topics instead of nc\n- add --silent to mysql healthcheck to suppress password warnings\n- refactor my-functions.sh for correctness and shellcheck compliance\n- add newline at end of my-functions.sh and fix shebang comment\n"
+    },
+    {
+      "sha": "a740bcdf9b346ea4ae1f279bc215e5a10bfdc9ed",
+      "date": "2026-03-27T17:01:44+01:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "feat(bitcoin-client): redesign UI with Tailwind CSS and add logout support\n\n- replace Materialize CSS with Tailwind CSS and dark theme layout\n- replace Moment.js with day.js for date formatting\n- add color-coded price variation badge and animated status indicator\n- refactor chat panel with avatar initials, private/broadcast tags\n- add logout form with CSRF token in navbar and enable default logout config\n- add Ctrl+Enter shortcut to submit chat textarea\n- document frontend stack, ui behaviour, and kafka topic config in AGENTS.md\n- update test examples and spring boot version reference in AGENTS.md\n- add logout redirect test to SecurityConfigTests\n- update demo gif\n"
+    },
+    {
+      "sha": "68de89ffbbc155341ab4d90acbf5a5f8f12acbb9",
+      "date": "2026-03-25T12:38:24+01:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "test(bitcoin-api,bitcoin-client): expand unit test coverage across both modules\n\n- replace placeholder @SpringBootTest smoke tests with focused slice and unit tests\n- add PriceServiceTests, PriceSchedulerTests, PriceResponseTests, SimulationRunnerTests\n- add UIControllerTests, UIControllerChatTests, SecurityConfigTests\n- strengthen existing tests with argument captors and payload assertions\n- fix AGENTS.md: split merged bullet, add @WebMvcTest/SecurityConfig, BDDMockito, and Lombok LSP guidance\n- add \"Running Tests\" section to README with module and method-level examples\n"
+    },
+    {
+      "sha": "0b322917876822e302b1a1b9250eba593e656923",
+      "date": "2026-03-25T11:33:01+01:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "refactor: modernize codebase, add tests, and update dependencies\n\n- Replace SecureRandom/Random with ThreadLocalRandom in PriceScheduler\n- Add PriceResponse.from() factory method and use it in PriceController\n- Fix SimulationRunner to use instance method for initial price creation\n- Remove redundant @Repository from PriceRepository\n- Remove GroupedOpenApi bean from SwaggerConfig\n- Disable CSRF for websocket endpoints in SecurityConfig\n- Add unit tests for PriceController, PriceEventEmitter, PriceEventListener\n- Add AGENTS.md with coding guidelines for agentic tools\n- Add MIT LICENSE file\n- Bump Spring Boot to 4.0.4, springdoc-openapi to 3.0.2, MySQL image to 9.6.0\n- Replace project-diagram.jpeg with PNG, add badges and support section to README\n"
+    },
+    {
+      "sha": "5c023d67a9ba2f8841cecfb892a229bee8de2f84",
+      "date": "2025-12-15T10:23:10-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Project upgrade\n\n- Upgrade to Spring Boot 4.0.0\n- Upgrade to Spring Cloud 2025.1.0\n- Upgrade to SpringDoc OpenAPI 3.0.0\n- Upgrade to Confluentinc Docker images 7.9.5\n- Update README\n"
+    },
+    {
+      "sha": "42107bd1728bcca15800d068bdbea802f2b9461c",
+      "date": "2025-12-15T10:07:37-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Project upgrade\n\n- Upgrade to Spring Boot 3.5.8\n- Upgrade to Spring Cloud 2025.0.0\n- Upgrade to SpringDoc OpenAPI 2.8.14\n- Upgrade to Confluentinc Docker images 7.9.5\n"
+    },
+    {
+      "sha": "377c8a27109c042c6cf2bace998f921466ff8f55",
+      "date": "2025-04-11T14:17:42+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Update README file\n"
+    },
+    {
+      "sha": "9b0a5123d2926de7e93b006920ae114e9c393ff0",
+      "date": "2025-04-11T12:45:39+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Add .gitattributes file\n"
+    },
+    {
+      "sha": "f5eaa07dff6d2b9c72c7121e21e97b145f604ebb",
+      "date": "2025-04-11T10:26:18+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- Upgrade to Spring Boot 3.4.4\n- Upgrade to Spring Cloud 2024.0.1\n- Upgrade to MySQL Docker image 9.2.0\n- Upgrade to SpringDoc OpenAPI 2.8.6\n- Update README file\n"
+    }
+  ],
+  "commit_sha": "8585a68d22b1ef473b1db7e8f065776e9ee267b3",
+  "extracted_at": "2026-10-05T18:23:04.242265+00:00"
+}

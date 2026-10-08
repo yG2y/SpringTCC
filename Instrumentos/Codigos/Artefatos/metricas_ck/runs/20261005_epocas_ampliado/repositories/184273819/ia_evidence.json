@@ -1,0 +1,230 @@
+{
+  "ia_status": "com_evidencia",
+  "ia_level": 2,
+  "ia_agents": "Claude Code",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "88647a49f2e065a1d54ee3a653f18cae64e42592",
+      "trailer": "Claude Opus 4.6 <noreply@anthropic.com>"
+    }
+  ],
+  "commits": [
+    {
+      "sha": "5cb01e21acd7fd8ef362a96f6e7ac9e8777d0eef",
+      "date": "2026-10-03T00:43:40+02:00",
+      "author": "Piotr Mińkowski",
+      "email": "piotr.minkowski@gmail.com",
+      "message": "Merge pull request #323 from piomin/opencode/issue322-20261002223239\n\nSkip input stream for multipart requests"
+    },
+    {
+      "sha": "fa0737d45640cd398b36db083bbe0f5a91ee1d0f",
+      "date": "2026-10-02T22:37:59Z",
+      "author": "opencode-agent[bot]",
+      "email": "opencode-agent[bot]@users.noreply.github.com",
+      "message": "Skip input stream for multipart requests\n\nCo-authored-by: piomin <piomin@users.noreply.github.com>\n"
+    },
+    {
+      "sha": "ddad97eb8cac98710a12698e66474de66ec17007",
+      "date": "2026-10-01T20:36:51Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update maven Docker tag to v3.10.0 (#321)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "107cd2f9f40febc991a0530f18709e36a7393fb4",
+      "date": "2026-10-01T19:43:41Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency ch.qos.logback:logback-classic to v1.6.5 (#320)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "6f64d55920a667908fff8f380f86b43f844a97ba",
+      "date": "2026-10-01T14:14:45Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency maven to v2.2.0 (#315)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "88647a49f2e065a1d54ee3a653f18cae64e42592",
+      "date": "2026-09-30T12:18:48+02:00",
+      "author": "piomin",
+      "email": "piotr.minkowski@gmail.com",
+      "message": "v3.1.0\n\nCo-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>\n"
+    },
+    {
+      "sha": "f43e82213ffd4d81080fa943cea074f196260379",
+      "date": "2026-09-30T11:39:47+02:00",
+      "author": "Piotr Mińkowski",
+      "email": "piotr.minkowski@gmail.com",
+      "message": "Merge pull request #319 from piomin/opencode/issue57-20260930075927\n\nFix response data loss in interceptors"
+    },
+    {
+      "sha": "9064849e5ef581652dadf5f78b3d35739f7cb99e",
+      "date": "2026-09-30T08:03:02Z",
+      "author": "opencode-agent[bot]",
+      "email": "opencode-agent[bot]@users.noreply.github.com",
+      "message": "Fix response data loss in interceptors\n\nCo-authored-by: piomin <piomin@users.noreply.github.com>\n"
+    },
+    {
+      "sha": "22d63d801948ced4bcf4a0da08ccc2b184ebbb67",
+      "date": "2026-09-30T09:57:27+02:00",
+      "author": "Piotr Mińkowski",
+      "email": "piotr.minkowski@gmail.com",
+      "message": "Merge pull request #308 from piomin/renovate/loki-logback.version\n\nUpdate dependency com.github.loki4j:loki-logback-appender to v2.1.0"
+    },
+    {
+      "sha": "46529e7ac063dbdacbabec08c70e0816baae360e",
+      "date": "2026-09-30T07:06:07Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency com.github.loki4j:loki-logback-appender to v2.1.0"
+    },
+    {
+      "sha": "a67beea982a66601e1fa726005e535522ec63d51",
+      "date": "2026-09-30T09:04:56+02:00",
+      "author": "piomin",
+      "email": "piotr.minkowski@gmail.com",
+      "message": "Add OpenCode GitHub workflow\n"
+    },
+    {
+      "sha": "cbd7197cf2761c182325dc70ee60318497c6aeb4",
+      "date": "2026-09-30T08:56:02+02:00",
+      "author": "Piotr Mińkowski",
+      "email": "piotr.minkowski@gmail.com",
+      "message": "Merge pull request #316 from piomin/renovate/org.apache.maven.plugins-maven-compiler-plugin-3.x\n\nUpdate dependency org.apache.maven.plugins:maven-compiler-plugin to v3.16.0"
+    },
+    {
+      "sha": "56bb2c0ecf99102ffa464dbf94a53ef9b29e6fc1",
+      "date": "2026-09-29T10:53:56Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency org.apache.maven.plugins:maven-compiler-plugin to v3.16.0"
+    },
+    {
+      "sha": "20e46f198c94d2901c9ccc88c29ece41d71355b0",
+      "date": "2026-09-29T10:53:26Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update spring core to v7.0.9 (#313)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "274a01b46ff7c0010117668d538ecb7ef86eae13",
+      "date": "2026-09-29T00:23:02Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency ch.qos.logback:logback-classic to v1.6.4 (#318)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "5446dda2d71d9840f397341da78054333f6c7e17",
+      "date": "2026-09-28T12:29:56+02:00",
+      "author": "Piotr Mińkowski",
+      "email": "piotr.minkowski@gmail.com",
+      "message": "Merge pull request #309 from piomin/renovate/org.springdoc-springdoc-openapi-starter-webflux-ui-3.x\n\nUpdate dependency org.springdoc:springdoc-openapi-starter-webflux-ui to v3.1.1"
+    },
+    {
+      "sha": "4adbcf61d410a05f14d74c238b3a5d3693d441f9",
+      "date": "2026-09-24T05:01:46Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency org.springdoc:springdoc-openapi-starter-webflux-ui to v3.1.1"
+    },
+    {
+      "sha": "5f0694ebdb9e8b57af50eaae580e204a4c094aa0",
+      "date": "2026-09-24T05:01:16Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency ch.qos.logback:logback-classic to v1.6.3 (#306)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "b7369b921e0a0d75df2c809155e53e854d27d0da",
+      "date": "2026-09-23T20:08:30Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update grafana/loki Docker tag to v3.7.8 (#311)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "7241a2c466b2318b589d3f9f768718ec4a091983",
+      "date": "2026-09-23T05:02:04Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency org.slf4j:slf4j-api to v2.0.20 (#317)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "10767ccae1b8f24c6fba8adcb0a829214a73e3ad",
+      "date": "2026-09-23T04:01:20Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency io.projectreactor:reactor-core to v3.8.7 (#312)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "640744384a7d6046090a79f2e53d4636dcabb0be",
+      "date": "2026-09-22T23:04:22Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update cimg/openjdk Docker tag to v25.0.4 (#310)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "ab00ec40863a592361679f3c321749f87ecc6e38",
+      "date": "2026-09-22T10:14:10+02:00",
+      "author": "Piotr Mińkowski",
+      "email": "piotr.minkowski@gmail.com",
+      "message": "Merge pull request #314 from piomin/renovate/spring-boot\n\nUpdate spring boot to v4.1.1"
+    },
+    {
+      "sha": "b9014fcbcb9a7f2b6c7df62ee45f9aaea5953be1",
+      "date": "2026-09-22T08:12:04Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update spring boot to v4.1.1"
+    },
+    {
+      "sha": "0a788de6e09ad87f01ed8bc33e61ad9f7a5254c8",
+      "date": "2026-09-22T10:08:30+02:00",
+      "author": "Piotr Mińkowski",
+      "email": "piotr.minkowski@gmail.com",
+      "message": "Modify SonarCloud analysis to skip tests\n\nSkip tests during SonarCloud analysis in CI pipeline."
+    },
+    {
+      "sha": "6520a5eb9383d11b9f2c127ec59c64dc15b485ea",
+      "date": "2026-09-22T10:04:09+02:00",
+      "author": "Piotr Mińkowski",
+      "email": "piotr.minkowski@gmail.com",
+      "message": "Merge pull request #294 from codingkiddo/docs/update-readme-version\n\ndocs: update README dependency examples to 3.0.1"
+    },
+    {
+      "sha": "d58d5ef0a9ec7e5b7e64ee0b278f5cc69e24646c",
+      "date": "2026-09-22T10:01:51+02:00",
+      "author": "Piotr Mińkowski",
+      "email": "piotr.minkowski@gmail.com",
+      "message": "Update SonarCloud command in CircleCI config"
+    },
+    {
+      "sha": "dd956f606c504b45b1e90f2f58847b598492e4d5",
+      "date": "2026-07-22T17:34:18Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update grafana/loki Docker tag to v3.7.4 (#307)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "3f19f9141133952a6c06f2a31c98b7a1f7030c5b",
+      "date": "2026-06-27T02:11:01Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update dependency ch.qos.logback:logback-classic to v1.5.37 (#305)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "86b1336886b5d6ef9018dfe653a513bd53f663ab",
+      "date": "2026-06-26T04:46:07Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "Update grafana/loki Docker tag to v3.7.3 (#304)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>"
+    }
+  ],
+  "commit_sha": "5cb01e21acd7fd8ef362a96f6e7ac9e8777d0eef",
+  "extracted_at": "2026-10-05T18:04:59.981701+00:00"
+}

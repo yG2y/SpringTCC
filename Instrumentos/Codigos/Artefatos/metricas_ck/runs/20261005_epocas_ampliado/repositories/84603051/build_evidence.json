@@ -1,0 +1,24 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "2.6.13",
+  "spring_boot_major": "2",
+  "java_versions_declared": "",
+  "build_evidence": [
+    {
+      "file": "hekate-parent/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "hekate-spring-boot/pom.xml",
+      "artifact": "spring-boot-autoconfigure"
+    },
+    {
+      "file": "hekate-spring-boot/pom.xml",
+      "artifact": "spring-boot-test-autoconfigure"
+    },
+    {
+      "file": "hekate-spring-boot/pom.xml",
+      "artifact": "spring-boot-starter-validation"
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "68619903a57432aaf49655bca11affbaaca9788f",
+      "date": "2025-05-07T20:05:55+08:00",
+      "author": "Ahaochan",
+      "email": "844394093@qq,com",
+      "message": "build(ahao-spring-boot-apollo): 更新 Apollo 配置和依赖\n\n- 在 bootstrap.properties 中添加应用名称和 app.id\n- 更新 bootstrap-dev.properties，增加集群配置- 将 bootstrap-test.yml 重命名为 bootstrap-test.properties 并调整格式\n- 更新 pom.xml，替换 spring-cloud-context 为 spring-cloud-starter-bootstrap\n"
+    },
+    {
+      "sha": "5ecdac7918a8cbfead3c3938ab4875f53ba4dd5f",
+      "date": "2025-05-07T18:31:44+08:00",
+      "author": "Ahaochan",
+      "email": "844394093@qq,com",
+      "message": "apollo配置中心\n"
+    },
+    {
+      "sha": "e7d8b7a8a108466014071c1d9c5d3db410e98641",
+      "date": "2025-04-22T13:53:14+08:00",
+      "author": "Ahaochan",
+      "email": "844394093@qq,com",
+      "message": "test(ai): 添加 RAG 相关测试用例\n\n- 新增 SpringAIRAGTest 类，包含多个测试用例\n- 测试 QuestionAnswerAdvisor 和 RetrievalAugmentationAdvisor 的功能\n- 验证知识库存在和不存在时的回复情况\n- 涉及向量存储、文档检索等 RAG相关技术\n"
+    },
+    {
+      "sha": "0d0bd4c9f87c094f665e1deeccbe2106c6b31752",
+      "date": "2025-04-22T11:29:14+08:00",
+      "author": "Ahaochan",
+      "email": "844394093@qq,com",
+      "message": "feat(ahao-spring-boot-ai): 更新 API 端点和聊天模型\n\n- 将 OpenAI API 端点从 https://api.deepseek.com 修改为 https://api.siliconflow.cn- 聊天模型从 deepseek-chat 更改为 Qwen/Qwen2.5-7B-Instruct\n- 在测试中将 multiAnswer 方法的 n 值从1 调整为 3，以支持多个答案输出\n"
+    },
+    {
+      "sha": "f4d8d2a0e4a6692ac8475338faaa5b81060a4747",
+      "date": "2025-04-22T11:04:09+08:00",
+      "author": "Ahaochan",
+      "email": "844394093@qq,com",
+      "message": "refactor(ahao-spring-boot-ai): 重构配置并适配 DeepSeek 模型\n\n- 更新 OpenAI 配置，包括 API 密钥、基础 URL等\n- 移除 Google Gemini 和 Anthropic Claude 配置\n- 调整聊天模型配置，增加 DeepSeek 模型支持\n- 更新测试用例以适配新的 DeepSeek 模型\n"
+    },
+    {
+      "sha": "0c489076e0f24cacba7cb70321aca93d60acc928",
+      "date": "2025-04-21T17:55:02+08:00",
+      "author": "Ahaochan",
+      "email": "844394093@qq,com",
+      "message": "test(ai): 添加 Spring AI 功能测试\n\n- 新增 SpringAITest 类，实现对 AI 聊天功能的测试\n- 测试内容包括：\n  - 基本聊天响应测试\n  - 实体解析测试\n  -带记忆功能的聊天测试 - 流式响应测试 - 多答案测试\n- 使用 JUnit 和 Spring Boot Test 进行集成测试\n"
+    },
+    {
+      "sha": "094801227469377858532d47d8cdb8a39081aabd",
+      "date": "2025-04-21T16:15:33+08:00",
+      "author": "Ahaochan",
+      "email": "844394093@qq,com",
+      "message": "feat(notify): 添加飞书告警通知配置\n\n- 新增 NotifyFeishuProperties 类用于飞书通知配置\n- 在 application.properties 中添加飞书告警通知的配置项\n- 修改 FeishuMessageTest 类，使用配置中的飞书相关配置\n"
+    },
+    {
+      "sha": "79d6395e9ffdab592b4d68ff89409afd372b89a1",
+      "date": "2025-04-21T15:48:08+08:00",
+      "author": "Ahaochan",
+      "email": "844394093@qq,com",
+      "message": "refactor(feishu): 重命名消息卡片 URL 类\n"
+    },
+    {
+      "sha": "17165077c53993519ed79555df64baaab3acb2e6",
+      "date": "2025-04-21T15:21:16+08:00",
+      "author": "Ahaochan",
+      "email": "844394093@qq,com",
+      "message": "refactor(feishu): 重构飞书消息发送功能\n"
+    },
+    {
+      "sha": "1b195fe4321d25791a389a40922a191582396aba",
+      "date": "2025-04-18T11:22:01+08:00",
+      "author": "Ahaochan",
+      "email": "844394093@qq,com",
+      "message": "feat(feishu): 优化飞书卡片消息功能\n\n- 添加消息配置和消息头\n- 实现消息体的文本和按钮元素- 整合卡片消息并发送\n"
+    },
+    {
+      "sha": "a25b348c8228b5d541b6986488ff2afdcfe8de65",
+      "date": "2025-04-16T17:41:51+08:00",
+      "author": "Ahaochan",
+      "email": "844394093@qq,com",
+      "message": "build(ahao-spring-boot-ai): 重构 OpenAI 相关配置和依赖\n\n- 移除自定义 OpenAIProperties 类，改为使用 Spring AI 提供的 OpenAiConnectionProperties\n- 更新 OpenAIConfig 类，使用新的 OpenAiConnectionProperties\n- 修改 application.properties 中的 OpenAI 配置项\n- 更新 pom.xml，添加 Spring Boot 和 Spring AI 依赖，移除冗余依赖\n"
+    },
+    {
+      "sha": "109c9801e9c435da69666d5586028667760a4a2e",
+      "date": "2025-04-16T16:06:12+08:00",
+      "author": "Ahaochan",
+      "email": "844394093@qq,com",
+      "message": "build(pom): 修改子模块的父模块引用\n"
+    },
+    {
+      "sha": "c1b400957dac881cf7f491e53e41c2e385c7b709",
+      "date": "2025-04-14T13:45:50+08:00",
+      "author": "Ahaochan",
+      "email": "844394093@qq,com",
+      "message": "feat(fegin): 添加全局重试策略配置\n\n- 在 application.yml 中添加了 Feign 客户端的全局重试策略配置\n- 设置最大重试次数为 3 次\n- 设置重试间隔时间为 1000毫秒\n"
+    },
+    {
+      "sha": "2ec1ec7b28f710ed33d9102a5ba12ebfacbac691",
+      "date": "2025-04-10T18:17:54+08:00",
+      "author": "Ahaochan",
+      "email": "844394093@qq,com",
+      "message": "飞书\n"
+    },
+    {
+      "sha": "d7912a93821261dc6d164325865f123c90473864",
+      "date": "2025-04-08T11:42:07+08:00",
+      "author": "Ahaochan",
+      "email": "844394093@qq,com",
+      "message": "test:重命名 OpenAITest 为 NativeOpenAITest\n"
+    },
+    {
+      "sha": "fcf4075ff5ed2804c593f91b40e088c1dde5bd08",
+      "date": "2025-04-07T15:12:10+08:00",
+      "author": "Ahaochan",
+      "email": "844394093@qq,com",
+      "message": "test(ai): 添加multiAnswer测试\n"
+    },
+    {
+      "sha": "a311296652f49ac50a4328ebe0312660063c2b2a",
+      "date": "2025-04-07T15:03:50+08:00",
+      "author": "Ahaochan",
+      "email": "844394093@qq,com",
+      "message": "test(ai): 添加stream测试\n"
+    },
+    {
+      "sha": "79c402d0753e3febc25bbdd9d99884d51d579792",
+      "date": "2025-04-07T14:12:21+08:00",
+      "author": "Ahaochan",
+      "email": "844394093@qq,com",
+      "message": "test(ai): 添加chatWithAssistant测试\n"
+    },
+    {
+      "sha": "8726f9ca099d2ede28cdea5885623d82dff5c6a4",
+      "date": "2025-04-03T16:47:48+08:00",
+      "author": "Ahaochan",
+      "email": "844394093@qq,com",
+      "message": "AI 接口对接调用demo\n"
+    },
+    {
+      "sha": "9b945c0115646bc32d5212441f9d88595351a54d",
+      "date": "2025-04-03T16:42:30+08:00",
+      "author": "Ahaochan",
+      "email": "844394093@qq,com",
+      "message": "AI 接口对接调用demo\n"
+    },
+    {
+      "sha": "e8ca3588d03ef22375fdfe10b13bcac1c1da3826",
+      "date": "2025-04-03T13:33:20+08:00",
+      "author": "Ahaochan",
+      "email": "844394093@qq,com",
+      "message": "feign打印日志\n"
+    },
+    {
+      "sha": "deea898b02644ceed7b9c17390494e7fd996a740",
+      "date": "2025-04-02T15:56:32+08:00",
+      "author": "Ahaochan",
+      "email": "844394093@qq,com",
+      "message": "skywalking 拦截对外请求\n"
+    },
+    {
+      "sha": "ddf1633ee14fd6f6041c0323ca218429ca4ac830",
+      "date": "2025-03-31T14:23:43+08:00",
+      "author": "Ahaochan",
+      "email": "844394093@qq,com",
+      "message": "docs(ahao-image): 添加项目 README 文件\n"
+    },
+    {
+      "sha": "3b385e13ca7b30b8492f9a80d79dac22fa65cce7",
+      "date": "2025-03-31T14:13:49+08:00",
+      "author": "Ahaochan",
+      "email": "844394093@qq,com",
+      "message": "docs(README): 更新使用说明和目录\n"
+    },
+    {
+      "sha": "6528b2e10a739a2cd11846a60ceebf4013c63ace",
+      "date": "2025-02-17T15:19:32+08:00",
+      "author": "Ahaochan",
+      "email": "844394093@qq.com",
+      "message": "👽 随便更新\n"
+    },
+    {
+      "sha": "21b0a969281fe305fe825e6666e30d81de923d2e",
+      "date": "2024-04-25T18:44:28+08:00",
+      "author": "Ahaochan",
+      "email": "844394093@qq.com",
+      "message": "✨ 获取不限制的小程序码\n"
+    },
+    {
+      "sha": "f0de6b66a5d1c0714d9918a9faf9c1b6456a4938",
+      "date": "2024-04-12T22:51:02+08:00",
+      "author": "Ahaochan",
+      "email": "844394093@qq.com",
+      "message": "打包可执行jar\n"
+    },
+    {
+      "sha": "2b245ba37c3679f39545e750e629d7e610477d76",
+      "date": "2024-04-06T21:31:32+08:00",
+      "author": "Ahaochan",
+      "email": "844394093@qq.com",
+      "message": "unidbg\n"
+    },
+    {
+      "sha": "ae92394fe7217a4fb0c185403b8d62c4b1d45480",
+      "date": "2024-04-05T21:14:55+08:00",
+      "author": "Ahaochan",
+      "email": "844394093@qq.com",
+      "message": "fuck 23\n"
+    },
+    {
+      "sha": "9761cf11ab9e4779209d0060a641880454da151e",
+      "date": "2024-04-05T12:21:12+08:00",
+      "author": "Ahaochan",
+      "email": "844394093@qq.com",
+      "message": "unidbg\n"
+    }
+  ],
+  "commit_sha": "68619903a57432aaf49655bca11affbaaca9788f",
+  "extracted_at": "2026-10-05T18:15:55.197382+00:00"
+}

@@ -1,0 +1,62 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 7,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "3fdd850f507a2f5b43f626454c877ed17554f80f",
+      "date": "2026-01-03T16:08:07+01:00",
+      "author": "Christian Tzolov",
+      "email": "christian.tzolov@broadcom.com",
+      "message": "Upgrade to Spring Boot 4.0.1 and Spring AI 2.0.0-SNAPSHOT\n\n- Switch from OpenAI to Anthropic Claude with Transformers embeddings\n- Update to new Spring AI 2.0 APIs (MessageWindowChatMemory, SearchRequest)\n- Pin Chroma to 1.0.0 and configure embedding dimension\n- Reorganize PDF resources into rag/ directory\n- Add ANSI color formatting for console output\n\nSigned-off-by: Christian Tzolov <christian.tzolov@broadcom.com>\n"
+    },
+    {
+      "sha": "1c2fd84a91e1ddf784198da2fdc3cccc97fd9c31",
+      "date": "2024-10-11T18:32:31+02:00",
+      "author": "Christian Tzolov",
+      "email": "ctzolov@vmware.com",
+      "message": "Experiments\n"
+    },
+    {
+      "sha": "acc8d0042608137bfa9e2c25c36b87e458dfc615",
+      "date": "2026-01-02T17:06:50+01:00",
+      "author": "Christian Tzolov",
+      "email": "1351573+tzolov@users.noreply.github.com",
+      "message": "Merge pull request #3 from amagnolo/patch-1\n\nUpdate docker-compose.yaml"
+    },
+    {
+      "sha": "2c63aee76914f61b54d1cf00f1ede49c3c592abb",
+      "date": "2025-03-12T09:24:49+01:00",
+      "author": "Alessandro Magnolo",
+      "email": "ale@magnolo.com",
+      "message": "Update docker-compose.yaml"
+    },
+    {
+      "sha": "86c86bef1d891c687049dbfe68631c52c49e304b",
+      "date": "2024-10-11T18:36:48+02:00",
+      "author": "Christian Tzolov",
+      "email": "ctzolov@vmware.com",
+      "message": "Add Spring Snapshots and Prereleases repositories\n\n Include Spring Snapshots repository with releases disabled\n\n Resolves #1\n"
+    },
+    {
+      "sha": "766e8c17d4a4975a12cd188a22fb8703c0073dfb",
+      "date": "2024-10-11T09:19:19+02:00",
+      "author": "Christian Tzolov",
+      "email": "ctzolov@vmware.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "94f868568a94790da2c51e0580bdd21a353eb610",
+      "date": "2024-10-10T15:45:45+02:00",
+      "author": "Christian Tzolov",
+      "email": "ctzolov@vmware.com",
+      "message": "initial commit\n"
+    }
+  ],
+  "commit_sha": "3fdd850f507a2f5b43f626454c877ed17554f80f",
+  "extracted_at": "2026-10-05T18:11:22.070585+00:00"
+}

@@ -1,0 +1,106 @@
+[versions]
+spring-boot = "4.0.2"
+spring-dependency-management = "1.1.7"
+testcontainers = "2.0.3"
+kotlin = "2.2.10"
+flyway = "11.8.0"
+postgresql = "42.7.7"
+h2 = "2.3.232"
+lombok = "1.18.38"
+logback = "1.5.18"
+junit-jupiter = "5.13.4"
+testng = "7.11.0"
+awaitility = "4.3.0"
+wiremock = "3.13.1"
+mockserver = "5.15.0"
+resilience4j = "2.3.0"
+spotless = "8.2.1"
+palantir-java-format = "2.85.0"
+spring-cloud-aws = "4.0.0-RC1"
+jackson-module-kotlin = "3.0.0"
+
+[libraries]
+# Spring Boot starters
+spring-boot-starter-data-jpa = { group = "org.springframework.boot", name = "spring-boot-starter-data-jpa" }
+spring-boot-starter-webmvc = { group = "org.springframework.boot", name = "spring-boot-starter-webmvc" }
+spring-boot-starter-validation = { group = "org.springframework.boot", name = "spring-boot-starter-validation" }
+spring-boot-starter-amqp = { group = "org.springframework.boot", name = "spring-boot-starter-amqp" }
+spring-boot-starter-data-redis = { group = "org.springframework.boot", name = "spring-boot-starter-data-redis" }
+spring-boot-starter-data-couchbase = { group = "org.springframework.boot", name = "spring-boot-starter-data-couchbase" }
+spring-boot-starter-data-mongodb = { group = "org.springframework.boot", name = "spring-boot-starter-data-mongodb" }
+spring-boot-starter-kafka = { group = "org.springframework.boot", name = "spring-boot-starter-kafka" }
+spring-boot-starter-actuator = { group = "org.springframework.boot", name = "spring-boot-starter-actuator" }
+spring-boot-starter-jdbc = { group = "org.springframework.boot", name = "spring-boot-starter-jdbc" }
+spring-boot-starter-restclient = { group = "org.springframework.boot", name = "spring-boot-starter-restclient" }
+spring-boot-starter-flyway = { group = "org.springframework.boot", name = "spring-boot-starter-flyway" }
+
+# Spring Boot test starters
+spring-boot-starter-test = { group = "org.springframework.boot", name = "spring-boot-starter-test" }
+spring-boot-starter-webmvc-test = { group = "org.springframework.boot", name = "spring-boot-starter-webmvc-test" }
+spring-boot-starter-data-jpa-test = { group = "org.springframework.boot", name = "spring-boot-starter-data-jpa-test" }
+spring-boot-starter-data-couchbase-test = { group = "org.springframework.boot", name = "spring-boot-starter-data-couchbase-test" }
+spring-boot-testcontainers = { group = "org.springframework.boot", name = "spring-boot-testcontainers" }
+
+# Spring Boot other
+spring-boot-jackson2 = { group = "org.springframework.boot", name = "spring-boot-jackson2" }
+spring-boot-devtools = { group = "org.springframework.boot", name = "spring-boot-devtools" }
+spring-boot-configuration-processor = { group = "org.springframework.boot", name = "spring-boot-configuration-processor" }
+spring-rabbit-test = { group = "org.springframework.amqp", name = "spring-rabbit-test" }
+
+# Testcontainers
+testcontainers-bom = { group = "org.testcontainers", name = "testcontainers-bom", version.ref = "testcontainers" }
+testcontainers = { group = "org.testcontainers", name = "testcontainers" }
+testcontainers-junit-jupiter = { group = "org.testcontainers", name = "testcontainers-junit-jupiter" }
+testcontainers-postgresql = { group = "org.testcontainers", name = "testcontainers-postgresql" }
+testcontainers-mongodb = { group = "org.testcontainers", name = "testcontainers-mongodb" }
+testcontainers-couchbase = { group = "org.testcontainers", name = "testcontainers-couchbase" }
+testcontainers-kafka = { group = "org.testcontainers", name = "testcontainers-kafka" }
+testcontainers-rabbitmq = { group = "org.testcontainers", name = "testcontainers-rabbitmq" }
+testcontainers-oracle-xe = { group = "org.testcontainers", name = "testcontainers-oracle-xe" }
+testcontainers-mockserver = { group = "org.testcontainers", name = "testcontainers-mockserver" }
+testcontainers-localstack = { group = "org.testcontainers", name = "testcontainers-localstack" }
+testcontainers-toxiproxy = { group = "org.testcontainers", name = "testcontainers-toxiproxy" }
+testcontainers-jdbc = { group = "org.testcontainers", name = "testcontainers-jdbc" }
+
+# Database
+postgresql = { group = "org.postgresql", name = "postgresql", version.ref = "postgresql" }
+h2 = { group = "com.h2database", name = "h2" }
+ojdbc8 = { group = "com.oracle.database.jdbc", name = "ojdbc8" }
+
+# Flyway
+flyway-core = { group = "org.flywaydb", name = "flyway-core" }
+flyway-database-postgresql = { group = "org.flywaydb", name = "flyway-database-postgresql" }
+flyway-database-oracle = { group = "org.flywaydb", name = "flyway-database-oracle" }
+
+# Logging
+logback-classic = { group = "ch.qos.logback", name = "logback-classic", version.ref = "logback" }
+
+# Lombok
+lombok = { group = "org.projectlombok", name = "lombok" }
+
+# Test
+junit-jupiter = { group = "org.junit.jupiter", name = "junit-jupiter", version.ref = "junit-jupiter" }
+testng = { group = "org.testng", name = "testng", version.ref = "testng" }
+awaitility = { group = "org.awaitility", name = "awaitility" }
+wiremock-standalone = { group = "org.wiremock", name = "wiremock-standalone", version.ref = "wiremock" }
+mockserver-netty = { group = "org.mock-server", name = "mockserver-netty", version.ref = "mockserver" }
+resilience4j-spring-boot3 = { group = "io.github.resilience4j", name = "resilience4j-spring-boot3", version.ref = "resilience4j" }
+
+# Kotlin
+kotlin-reflect = { group = "org.jetbrains.kotlin", name = "kotlin-reflect" }
+kotlin-stdlib = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib" }
+jackson-module-kotlin = { group = "tools.jackson.module", name = "jackson-module-kotlin" }
+
+# AWS / LocalStack
+spring-cloud-aws-dependencies = { group = "io.awspring.cloud", name = "spring-cloud-aws-dependencies", version.ref = "spring-cloud-aws" }
+spring-cloud-aws-starter-s3 = { group = "io.awspring.cloud", name = "spring-cloud-aws-starter-s3" }
+spring-cloud-aws-starter-sqs = { group = "io.awspring.cloud", name = "spring-cloud-aws-starter-sqs" }
+spring-cloud-aws-starter-dynamodb = { group = "io.awspring.cloud", name = "spring-cloud-aws-starter-dynamodb" }
+spring-cloud-aws-testcontainers = { group = "io.awspring.cloud", name = "spring-cloud-aws-testcontainers" }
+
+[plugins]
+spring-boot = { id = "org.springframework.boot", version.ref = "spring-boot" }
+spring-dependency-management = { id = "io.spring.dependency-management", version.ref = "spring-dependency-management" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-spring = { id = "org.jetbrains.kotlin.plugin.spring", version.ref = "kotlin" }
+spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }

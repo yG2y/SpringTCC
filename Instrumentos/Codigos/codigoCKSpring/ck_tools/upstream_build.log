@@ -1,0 +1,220 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.github.mauricioaniche:ck:jar:0.7.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-assembly-plugin is missing. @ line 153, column 12
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] --------------------< com.github.mauricioaniche:ck >--------------------
+[INFO] Building CK calculator 0.7.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] Loaded 23996 auto-discovered prefixes for remote repository central (prefixes-central.txt)
+[INFO] Loaded 74 auto-discovered prefixes for remote repository apache.snapshots (prefixes-apache.snapshots.txt)
+[INFO] 
+[INFO] --- jacoco:0.8.14:prepare-agent (default) @ ck ---
+[INFO] argLine set to -javaagent:/tmp/springtcc-maven-cache/org/jacoco/org.jacoco.agent/0.8.14/org.jacoco.agent-0.8.14-runtime.jar=destfile=/private/tmp/springtcc-ck-8a1ef916/target/jacoco.exec
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ ck ---
+[INFO] skip non existing resourceDirectory /private/tmp/springtcc-ck-8a1ef916/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.9.0:compile (default-compile) @ ck ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 53 source files to /private/tmp/springtcc-ck-8a1ef916/target/classes
+[INFO] /private/tmp/springtcc-ck-8a1ef916/src/main/java/com/github/mauricioaniche/ck/metric/WMC.java: Some input files use or override a deprecated API.
+[INFO] /private/tmp/springtcc-ck-8a1ef916/src/main/java/com/github/mauricioaniche/ck/metric/WMC.java: Recompile with -Xlint:deprecation for details.
+[INFO] /private/tmp/springtcc-ck-8a1ef916/src/main/java/com/github/mauricioaniche/ck/metric/MethodInvocationsLocal.java: Some input files use unchecked or unsafe operations.
+[INFO] /private/tmp/springtcc-ck-8a1ef916/src/main/java/com/github/mauricioaniche/ck/metric/MethodInvocationsLocal.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ ck ---
+[INFO] Copying 1 resource from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.9.0:testCompile (default-testCompile) @ ck ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 59 source files to /private/tmp/springtcc-ck-8a1ef916/target/test-classes
+[INFO] /private/tmp/springtcc-ck-8a1ef916/src/test/java/com/github/mauricioaniche/ck/integration/IntegrationTest.java: Some input files use or override a deprecated API.
+[INFO] /private/tmp/springtcc-ck-8a1ef916/src/test/java/com/github/mauricioaniche/ck/integration/IntegrationTest.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- surefire:2.22.2:test (default-test) @ ck ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.github.mauricioaniche.ck.LOCTest
+log4j:WARN No appenders could be found for logger (org.reflections.Reflections).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.868 s - in com.github.mauricioaniche.ck.LOCTest
+[INFO] Running com.github.mauricioaniche.ck.LCOMTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 s - in com.github.mauricioaniche.ck.LCOMTest
+[INFO] Running com.github.mauricioaniche.ck.NumberOfNumbersTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in com.github.mauricioaniche.ck.NumberOfNumbersTest
+[INFO] Running com.github.mauricioaniche.ck.NumberOfInnerClassesLambdasAndAnonymousClassesTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in com.github.mauricioaniche.ck.NumberOfInnerClassesLambdasAndAnonymousClassesTest
+[INFO] Running com.github.mauricioaniche.ck.MetricsPerClassesAndInnerClassesTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in com.github.mauricioaniche.ck.MetricsPerClassesAndInnerClassesTest
+[INFO] Running com.github.mauricioaniche.ck.CBOTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 s - in com.github.mauricioaniche.ck.CBOTest
+[INFO] Running com.github.mauricioaniche.ck.FieldUsageTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in com.github.mauricioaniche.ck.FieldUsageTest
+[INFO] Running com.github.mauricioaniche.ck.LocalFieldsAccessedTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in com.github.mauricioaniche.ck.LocalFieldsAccessedTest
+[INFO] Running com.github.mauricioaniche.ck.CouplingTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 s - in com.github.mauricioaniche.ck.CouplingTest
+[INFO] Running com.github.mauricioaniche.ck.MethodsDetailsTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in com.github.mauricioaniche.ck.MethodsDetailsTest
+[INFO] Running com.github.mauricioaniche.ck.NumberOfTryCatchesTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in com.github.mauricioaniche.ck.NumberOfTryCatchesTest
+[INFO] Running com.github.mauricioaniche.ck.NOSITest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in com.github.mauricioaniche.ck.NOSITest
+[INFO] Running com.github.mauricioaniche.ck.NumberOfAssignmentsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in com.github.mauricioaniche.ck.NumberOfAssignmentsTest
+[INFO] Running com.github.mauricioaniche.ck.util.FileUtilsTest
+[WARNING] Tests run: 10, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 0.005 s - in com.github.mauricioaniche.ck.util.FileUtilsTest
+[INFO] Running com.github.mauricioaniche.ck.util.LOCCalculatorTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.github.mauricioaniche.ck.util.LOCCalculatorTest
+[INFO] Running com.github.mauricioaniche.ck.util.WordCounterTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.github.mauricioaniche.ck.util.WordCounterTest
+[INFO] Running com.github.mauricioaniche.ck.util.DependencySorterTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 s - in com.github.mauricioaniche.ck.util.DependencySorterTest
+[INFO] Running com.github.mauricioaniche.ck.NumberOfReturnsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in com.github.mauricioaniche.ck.NumberOfReturnsTest
+[INFO] Running com.github.mauricioaniche.ck.NumberOfStringsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in com.github.mauricioaniche.ck.NumberOfStringsTest
+[INFO] Running com.github.mauricioaniche.ck.Java21SupportTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in com.github.mauricioaniche.ck.Java21SupportTest
+[INFO] Running com.github.mauricioaniche.ck.RFCTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in com.github.mauricioaniche.ck.RFCTest
+[INFO] Running com.github.mauricioaniche.ck.ClassTypeTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in com.github.mauricioaniche.ck.ClassTypeTest
+[INFO] Running com.github.mauricioaniche.ck.NumberOfLoopsTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in com.github.mauricioaniche.ck.NumberOfLoopsTest
+[INFO] Running com.github.mauricioaniche.ck.integration.IntegrationTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 30.36 s - in com.github.mauricioaniche.ck.integration.IntegrationTest
+[INFO] Running com.github.mauricioaniche.ck.Java11SupportTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in com.github.mauricioaniche.ck.Java11SupportTest
+[INFO] Running com.github.mauricioaniche.ck.GenericsTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in com.github.mauricioaniche.ck.GenericsTest
+[INFO] Running com.github.mauricioaniche.ck.ParametersTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.github.mauricioaniche.ck.ParametersTest
+[INFO] Running com.github.mauricioaniche.ck.NumberOfMathOperationsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.github.mauricioaniche.ck.NumberOfMathOperationsTest
+[INFO] Running com.github.mauricioaniche.ck.FieldsAccessedTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in com.github.mauricioaniche.ck.FieldsAccessedTest
+[INFO] Running com.github.mauricioaniche.ck.NumberOfLogStatementsTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in com.github.mauricioaniche.ck.NumberOfLogStatementsTest
+[INFO] Running com.github.mauricioaniche.ck.NumberOfVariablesTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.github.mauricioaniche.ck.NumberOfVariablesTest
+[INFO] Running com.github.mauricioaniche.ck.MethodInvocationsTest
+[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in com.github.mauricioaniche.ck.MethodInvocationsTest
+[INFO] Running com.github.mauricioaniche.ck.ModifiersTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in com.github.mauricioaniche.ck.ModifiersTest
+[INFO] Running com.github.mauricioaniche.ck.IndividualFilesWithContextTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.263 s - in com.github.mauricioaniche.ck.IndividualFilesWithContextTest
+[INFO] Running com.github.mauricioaniche.ck.VariableNameExtractionTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in com.github.mauricioaniche.ck.VariableNameExtractionTest
+[INFO] Running com.github.mauricioaniche.ck.FieldsTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in com.github.mauricioaniche.ck.FieldsTest
+[INFO] Running com.github.mauricioaniche.ck.LocalFieldsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in com.github.mauricioaniche.ck.LocalFieldsTest
+[INFO] Running com.github.mauricioaniche.ck.JavadocLinesTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in com.github.mauricioaniche.ck.JavadocLinesTest
+[INFO] Running com.github.mauricioaniche.ck.VariableOrParameterUsageCountTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in com.github.mauricioaniche.ck.VariableOrParameterUsageCountTest
+[INFO] Running com.github.mauricioaniche.ck.EnumTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in com.github.mauricioaniche.ck.EnumTest
+[INFO] Running com.github.mauricioaniche.ck.NumberOfComparisonsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in com.github.mauricioaniche.ck.NumberOfComparisonsTest
+[INFO] Running com.github.mauricioaniche.ck.WMCTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in com.github.mauricioaniche.ck.WMCTest
+[INFO] Running com.github.mauricioaniche.ck.BindingsTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in com.github.mauricioaniche.ck.BindingsTest
+[INFO] Running com.github.mauricioaniche.ck.NOCTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in com.github.mauricioaniche.ck.NOCTest
+[INFO] Running com.github.mauricioaniche.ck.LCOMNormalizedTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in com.github.mauricioaniche.ck.LCOMNormalizedTest
+[INFO] Running com.github.mauricioaniche.ck.WordCountsTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in com.github.mauricioaniche.ck.WordCountsTest
+[INFO] Running com.github.mauricioaniche.ck.JDTUtilsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.github.mauricioaniche.ck.JDTUtilsTest
+[INFO] Running com.github.mauricioaniche.ck.LooseClassCohesionTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.741 s - in com.github.mauricioaniche.ck.LooseClassCohesionTest
+[INFO] Running com.github.mauricioaniche.ck.MethodsTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in com.github.mauricioaniche.ck.MethodsTest
+[INFO] Running com.github.mauricioaniche.ck.realworld.RealWorldClassesTest
+- variable: rec
+- variable: records
+- variable: charset
+- variable: format
+- variable: url
+- variable: reader
+- variable: format
+- variable: formatHeader
+- variable: headerRecord
+- variable: hdrMap
+- variable: i
+- variable: header
+- variable: containsHeader
+- variable: nextRecord
+- variable: emptyHeader
+- variable: string
+- variable: format
+- variable: charset
+- variable: file
+- variable: format
+- variable: result
+- variable: comment
+- variable: sb
+- variable: input
+- variable: nullString
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.134 s - in com.github.mauricioaniche.ck.realworld.RealWorldClassesTest
+[INFO] Running com.github.mauricioaniche.ck.realworld.HugeRealWorldClassTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.672 s - in com.github.mauricioaniche.ck.realworld.HugeRealWorldClassTest
+[INFO] Running com.github.mauricioaniche.ck.TightClassCohesionTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.721 s - in com.github.mauricioaniche.ck.TightClassCohesionTest
+[INFO] Running com.github.mauricioaniche.ck.NumberOfMaxNestedBlocksTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in com.github.mauricioaniche.ck.NumberOfMaxNestedBlocksTest
+[INFO] Running com.github.mauricioaniche.ck.NumberOfParenthesisTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.github.mauricioaniche.ck.NumberOfParenthesisTest
+[INFO] Running com.github.mauricioaniche.ck.DITTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in com.github.mauricioaniche.ck.DITTest
+[INFO] Running com.github.mauricioaniche.ck.VisibleMethodsTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in com.github.mauricioaniche.ck.VisibleMethodsTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[WARNING] Tests run: 298, Failures: 0, Errors: 0, Skipped: 4
+[INFO] 
+[INFO] 
+[INFO] --- jacoco:0.8.14:report (report) @ ck ---
+[INFO] Loading execution data file /private/tmp/springtcc-ck-8a1ef916/target/jacoco.exec
+[INFO] Analyzed bundle 'CK calculator' with 56 classes
+[INFO] 
+[INFO] --- jar:3.5.1:jar (default-jar) @ ck ---
+[INFO] Building jar: /private/tmp/springtcc-ck-8a1ef916/target/ck-0.7.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- assembly:3.8.0:single (default) @ ck ---
+[INFO] Building jar: /private/tmp/springtcc-ck-8a1ef916/target/ck-0.7.1-SNAPSHOT-jar-with-dependencies.jar
+[INFO] 
+[INFO] >>> source:3.2.0:jar (attach-sources) > generate-sources @ ck >>>
+[INFO] 
+[INFO] --- jacoco:0.8.14:prepare-agent (default) @ ck ---
+[INFO] argLine set to -javaagent:/tmp/springtcc-maven-cache/org/jacoco/org.jacoco.agent/0.8.14/org.jacoco.agent-0.8.14-runtime.jar=destfile=/private/tmp/springtcc-ck-8a1ef916/target/jacoco.exec
+[INFO] 
+[INFO] <<< source:3.2.0:jar (attach-sources) < generate-sources @ ck <<<
+[INFO] 
+[INFO] 
+[INFO] --- source:3.2.0:jar (attach-sources) @ ck ---
+[INFO] Building jar: /private/tmp/springtcc-ck-8a1ef916/target/ck-0.7.1-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --- javadoc:3.2.0:jar (attach-javadocs) @ ck ---
+[INFO] Skipping javadoc generation
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  57.484 s
+[INFO] Finished at: 2026-10-05T14:47:50-03:00
+[INFO] ------------------------------------------------------------------------

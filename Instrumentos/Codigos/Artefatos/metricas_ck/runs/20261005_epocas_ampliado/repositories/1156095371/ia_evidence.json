@@ -1,0 +1,125 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 16,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "ed2129f80c3dfd669b878c1aabb2af2f24316dc6",
+      "date": "2026-06-23T13:31:19+08:00",
+      "author": "沉默王二",
+      "email": "www.qing_gee@163.com",
+      "message": "Add StepFun image skill and Responses API support\n\nAdd a StepFun-based image generation skill and update provider plumbing to support native Responses API providers.\n\nChanges included:\n- Add .agents/skills/step-image: SKILL.md, openai agent descriptor, a generate_step_image.py CLI script, and a sample output image. Provides a script to call StepFun /v1/images/generations and docs for prompt templates and workflow.\n- Backend: register a built-in `stepfun` provider in DefaultUserInitializer; update CodexSettingsWriterService to detect providers that natively speak the Responses API and point Codex directly at their real base_url (bypassing the local proxy) with helper methods (speaksResponsesNatively, trimTrailingSlash); adjust settings TOML generation accordingly; add validation for Responses replies.\n- ProviderService: introduce RESPONSES provider style, add logic to test /responses endpoints (buildResponsesTestUrl, buildResponsesTestRequestBody), validate Responses responses, and a new deleteCustomProvider method to soft-delete user-created providers (removes API key and marks inactive).\n- Controller/API: add DELETE /providers/{code} endpoint to remove custom providers.\n- Frontend: expose providerApi.delete, add deleteProvider in provider store, and UI button/flow in ProvidersView.vue to delete non-builtin providers with user confirmation and toast feedback.\n- Tests: add CodexSettingsWriterServiceTest to verify native Responses providers are written without proxying.\n\nOverall intent: enable StepFun image generation when Codex built-in image_gen is unavailable, and properly support providers that natively implement the Responses API while allowing users to delete custom providers.\n"
+    },
+    {
+      "sha": "2c0d076e48ca656f7797de65eb595ee6991f78c8",
+      "date": "2026-06-09T21:53:19+08:00",
+      "author": "沉默王二",
+      "email": "www.qing_gee@163.com",
+      "message": "Polish desktop release flow\n"
+    },
+    {
+      "sha": "4ed38ef707c143a6cde73d11af601bcee13dee84",
+      "date": "2026-06-09T20:50:03+08:00",
+      "author": "沉默王二",
+      "email": "www.qing_gee@163.com",
+      "message": "Add macOS desktop build and XFYUN adapter\n\nAdd full desktop build and release flow for macOS and compatibility fixes for upstream providers. Key changes:\n\n- CI/workflow: add .github/workflows/release-desktop.yml to build macOS .app/.dmg on a macOS runner and upload assets to GitHub Release.\n- Desktop packaging: integrate Tauri and add many src-tauri files (Cargo.toml, build.rs, icons, config, Rust sources) plus a new npm script and build helper script (paiswitch-web/scripts/build-desktop-backend.mjs) that bundles the backend JAR and a minimal Java runtime.\n- Frontend: update paiswitch-web package.json to add Tauri deps and desktop scripts; update README docs for desktop build; update .gitignore to ignore bundled artifacts.\n- Backend config: add application-desktop.yml for desktop defaults; change H2 dependency scope to runtime in pom.xml.\n- Proxy/tooling: implement XfyunRequestAdapter to sanitize/strip tool protocol for XFYUN MaaS models and restore tool names on responses; wire adapter into ClaudeProxyService so requests/responses are adapted as needed.\n- Validation/transform: enhance ChatResponseValidator to recognize reasoning_content and empty-tool cases; update AnthropicToChatTransformer and AnthropicEventEmitter to handle reasoning content, not forward top_k, and convert internal system messages into user messages; small provider/settings logic changes to better detect OpenAI-wire/Claude providers.\n- Tests: add and extend unit tests for ChatResponseValidator, AnthropicToChatTransformer and new XfyunRequestAdapter behavior.\n\nOverall this enables producing a self-contained macOS desktop distribution (including backend jar and runtime), CI release automation, and improves compatibility with XFYUN MaaS and Anthropic/OpenAI-compatible upstreams.\n"
+    },
+    {
+      "sha": "4f5b66c3e6be3f2f9a7d9f246a5c31c7b71acbf1",
+      "date": "2026-06-02T22:38:49+08:00",
+      "author": "沉默王二",
+      "email": "www.qing_gee@163.com",
+      "message": "Add UpstreamRequestConfig and XFYun MaaS provider\n\nIntroduce UpstreamRequestConfig to parse provider base URLs with lightweight options (e.g. ?lora_id=...). The config strips query params from the base URL and exposes supported values (currently lora_id) as headers. Wire the new config into ClaudeProxyService, CodexProxyService and ProviderService so proxy/test requests forward those headers and resolve the correct upstream URL. Add a Flyway migration to insert iFlytek (xfyun-maas) as built-in providers for Claude Code and Codex, update DefaultUserInitializer to create the entries at startup, and add unit tests for UpstreamRequestConfig. Also update README to reflect product/architecture and feature changes.\n"
+    },
+    {
+      "sha": "e82a6ca23ddea9310ef8fb109a462ffb57b49341",
+      "date": "2026-05-31T22:24:22+08:00",
+      "author": "沉默王二",
+      "email": "www.qing_gee@163.com",
+      "message": "Change default backend port to 8086\n\nSwitch the default local backend/API port from 8080 to 8086 across the repo. Updates include iOS clients (AuthManager, APIClient, LoginView), web frontend (vite proxy, nginx), docker-compose and backend docker files (port mappings and EXPOSE), backend config (application.yml), proxy controllers/resolver and related tests, plus README/docs to reflect the new port. Also simplifies discovery ports in vite.config.ts to only include 8086 for development.\n"
+    },
+    {
+      "sha": "ee8f5a6758b2413a4a50a256b1bf0caf3c2534bc",
+      "date": "2026-05-27T19:28:38+08:00",
+      "author": "沉默王二",
+      "email": "www.qing_gee@163.com",
+      "message": "Handle body-level errors from upstreams\n\nAdd ChatResponseValidator to detect \"HTTP 2xx + body-level error\" patterns (e.g. providers like apifree.ai/SkyClaw that return HTTP 200 with an error object or code in the JSON). Integrate checks into CodexProxyService and ClaudeProxyService to log upstream status/size/snippet and to fail/emit an error when the body indicates an error. Update ProviderService to validate test responses with validateOpenAiChatBody and return localized error messages for test results. Add ChatResponseValidatorTest covering valid completions, wrapped auth errors, missing/empty choices, and null bodies.\n"
+    },
+    {
+      "sha": "cf307ed13aca404e7e942c1b9779044387167996",
+      "date": "2026-05-27T18:29:39+08:00",
+      "author": "沉默王二",
+      "email": "www.qing_gee@163.com",
+      "message": "Support multiple tools and add Codex/Claude proxies\n\nIntroduce multi-tool support and local proxy plumbing for Codex and Claude Code. Key changes:\n\n- Add TargetTool enum and propagate tool-aware logic across services/controllers (optional `tool` query param) so operations can target CLAUDE_CODE or CODEX.\n- Extend ModelProvider and UserConfig entities with target_tool, wire_api, provider_key, and currentCodexProvider to store Codex-specific metadata and selections.\n- Update DefaultUserInitializer to create built-in providers for Codex (OpenAI, DeepSeek, Zhipu, Kimi, Qwen, SkyClaw) and wire_api/providerKey handling; provider creation now checks target tool.\n- Add local proxy controllers and services (codex-proxy and claude-proxy) with transformers and SSE emitters to translate between Anthropic/Responses APIs and OpenAI-style chat-completions. Includes token budget policy and related tests.\n- Security: permit /codex-proxy/** and /claude-proxy/** and skip JWT filtering for those proxy paths.\n- Simplify PortConfig by removing dynamic port probing code and leaving a port logger.\n- Add Flyway migration scripts to register new providers/models and tests for proxy/transform logic.\n\nThese changes enable switching and proxying for both Claude Code and Codex CLI workflows, persisting tool-specific provider data and exposing new translation/proxy endpoints.\n"
+    },
+    {
+      "sha": "65ed537c5015397927a43c41a2da8e2518f0d397",
+      "date": "2026-04-24T16:57:25+08:00",
+      "author": "沉默王二",
+      "email": "www.qing_gee@163.com",
+      "message": "Sync settings.json on provider changes\n\nEnsure settings.json is kept in sync when provider configuration or API keys change and refresh settings on redundant switches. Backend: inject UserConfigRepository and SettingsWriterService into ApiKeyService and ProviderService, add syncSettingsIfCurrentProvider calls after set/delete/update operations, and update SwitchService to refresh settings.json and touch API key last-used when switching to the current provider. Database: add migration V5 to rename provider display 'DeepSeek V3' -> 'DeepSeek'. UX/docs: update README, UI strings and dist assets to reflect the DeepSeek rename. Tests: add unit tests for ApiKeyService, ProviderService and SwitchService covering the new sync behavior.\n"
+    },
+    {
+      "sha": "d7270e2db64cb4c3f720cf8b1ed923f4b84e200a",
+      "date": "2026-04-24T12:51:28+08:00",
+      "author": "沉默王二",
+      "email": "www.qing_gee@163.com",
+      "message": "Normalize Anthropic base URL & add defaults\n\nNormalize and centralize handling of Anthropic/Claude base URLs (trim whitespace, remove trailing slashes and optional `/v1`) across clients and writer services to avoid double `/v1` requests. Update Swift app (ClaudeConfig/MainViewModel) and backend SettingsWriterService/LocalConfigService/ProviderService to use normalized URLs and treat the official Claude endpoint as special (pin official base URL and default models). Add builtin provider seeding in DefaultUserInitializer and enforce Claude defaults for the official provider. Improve DB init robustness for non-MySQL JDBC URLs and add a Flyway migration renaming table `user` -> `users` plus corresponding User entity update. Add unit tests for DatabaseInitializer and SettingsWriterService, update .env.example and .gitignore, and include built web asset updates.\n"
+    },
+    {
+      "sha": "149da08148aefad984280d66069f86c621652b20",
+      "date": "2026-03-22T13:25:15+08:00",
+      "author": "沉默王二",
+      "email": "www.qing_gee@163.com",
+      "message": "Add Skills management & backend/web updates\n\nIntroduce a local \"Skills\" management feature and related infra changes. Added .env.example and ignore .env. Updated Xcode project to register new source files. Implemented Swift models (ClaudeSkillModels), a SkillManager service to list/load/rename/trash/restore skills (parses SKILL.md frontmatter, computes stats, handles .trash), and a full SwiftUI SkillsManagementView integrated into the sidebar (plus minor UI refactors: SidebarProviderRow, small onChange fixes, removed preview stubs).\n\nAlso added backend and web pieces for Paiswitch: new SkillController, SkillService, DTO and tests in paiswitch-backend; frontend updates in paiswitch-web (API, stores, views, assets), Dockerfiles, nginx config and docker-compose for running services. These changes enable local skill inspection and management and wire up server/web improvements for the Paiswitch project.\n"
+    },
+    {
+      "sha": "e9c54133d2c81d1d7d4e2969e1b609006ecea039",
+      "date": "2026-02-21T21:26:19+08:00",
+      "author": "沉默王二",
+      "email": "www.qing_gee@163.com",
+      "message": "Add custom provider creation flow\n\nIntroduce CustomProviderCreateRequest and use it in the provider API; add a store action to create custom providers (with optional API key saving) and refresh providers/keys. Add UI for creating custom providers in ProvidersView.vue: modal form, validation, auto-generated provider code, optional API key input, and mark custom providers in the list. Files changed: src/types/api.ts, src/api/index.ts, src/stores/provider.ts, src/views/ProvidersView.vue.\n"
+    },
+    {
+      "sha": "c7eebfbd2714f074f7d4d86eb88240bff86c9ec4",
+      "date": "2026-02-13T07:19:46+08:00",
+      "author": "沉默王二",
+      "email": "www.qing_gee@163.com",
+      "message": "Add AI conversation retrieval & OpenRouter support\n\nAdd conversation storage, retrieval endpoints and OpenRouter integration.\n\nBackend:\n- Add spring-boot-devtools dependency and enable devtools in application.yml for hot reload.\n- Add /ai/conversations/latest and /ai/conversations/{sessionId} endpoints in AiController.\n- Extend SwitchDto with ConversationMessage and ConversationHistoryResponse DTOs.\n- Add repository methods to query conversations and latest session.\n- Expand AiChatService to persist conversations, parse AI function/tool call blocks to detect model-switch commands, execute switches, and return enriched AI responses.\n- Implement OpenRouter HTTP client support (request/response parsing, retry with available providers, provider order handling) and various utility helpers.\n\nFrontend:\n- Expose conversation APIs in api/index.ts and add types for conversation messages and history.\n- Add store methods to fetch latest conversation and by session id.\n- Enhance AiChatView: restore/persist chat state in localStorage, load latest conversation on mount, provide quick prompt buttons, and improved UI/behavior for clearing and persisting chats.\n\nThese changes enable fetching past AI chat sessions, allow AI-driven provider switching via parsed tool/function calls, and support OpenRouter provider calls with retry and provider-ordering logic.\n"
+    },
+    {
+      "sha": "b31270e1e6c1103c48ea0694a526a6f270a98fb5",
+      "date": "2026-02-13T06:48:00+08:00",
+      "author": "沉默王二",
+      "email": "www.qing_gee@163.com",
+      "message": "Expose plain API key and improve provider tests\n\nBackend: add GET /api-keys/{providerCode}/plain endpoint, ApiKeyDto.PlainKeyInfo DTO and ApiKeyService.getDecryptedApiKeyOptional to return decrypted (plain) API keys. Overhaul ProviderService test logic: normalize base URLs and API keys, detect and handle OpenRouter endpoints, build appropriate test URLs/bodies, add retry with available provider order, improve logging, mask API keys, and extract error handling helpers. Add DB migration V3 to normalize OpenRouter base_url.\n\nFrontend: add api client call for plain API key, new ApiKeyPlainInfo type, provider store method getApiKeyPlain, and update ProvidersView to fetch/show/edit API key inline in the config modal (removed separate key modal), validate config vs original values, and adjust save/test flows/UI (show/hide key, loading states).\n\nOther: add AGENTS.md with developer guidance.\n"
+    },
+    {
+      "sha": "bd786ffcfe054e3ae2c2c8066860d5e3eae6144e",
+      "date": "2026-02-13T04:56:27+08:00",
+      "author": "沉默王二",
+      "email": "www.qing_gee@163.com",
+      "message": "Sync ~/.claude settings with DB & UI\n\nAdd automatic synchronization between local ~/.claude/settings.json and the application, plus provider config/testing and UI notifications.\n\nKey changes:\n- README: document local settings auto-sync behavior and supported providers.\n- Backend:\n  - New LocalConfigService: read ~/.claude/settings.json, detect provider, and expose LocalConfig record; syncs provider model/baseUrl/timeout to DB.\n  - New SettingsWriterService: write provider config and API key back to settings.json (with backups) when switching.\n  - DefaultUserInitializer now attempts to import local config and API key at startup and creates default user/config accordingly.\n  - New LocalConfigController: endpoints to read/sync local config.\n  - ProviderService: added endpoints to update provider config and test provider connection (HTTP test with timeout, error handling), plus DTOs for requests/results.\n  - SwitchService: writes settings.json on successful provider switch.\n  - ApiKey handling: import and encrypted storage integration when reading local config.\n- Frontend:\n  - API client extended for provider config update and test connection.\n  - New Toast component and toast store for notifications; integrated into Layout, Config, Dashboard and Providers views.\n  - Provider store: init flow, updateConfig and testConnection methods.\n  - ProvidersView: UI for editing provider baseUrl/model, test connection, and improved API key UX.\n\nThis enables users to auto-import local Claude config and API keys, test provider connectivity, update provider settings from the UI, and persist changes back to the local settings file when switching providers.\n"
+    },
+    {
+      "sha": "32982674061a8a35584d5fface6845a129fdca86",
+      "date": "2026-02-12T19:58:18+08:00",
+      "author": "沉默王二",
+      "email": "www.qing_gee@163.com",
+      "message": "Add online mode, auth, API client & AI chat\n\nIntroduce online mode and remote integration: add AuthManager, APIClient and PaiSwitchService (with request/response models) to support authentication, provider listing, API key management, config and AI natural-language switching. Persist API tokens in Keychain (KeychainManager extended) and wire auth state into MainViewModel and ContentView to enable login, AI chat (AIChatView) and remote provider switching. Add LoginView, update provider switching logic to sync with server when online, and provide helper utilities (ModelProvider extension, notifications). Update README to document online mode and default credentials, and add a backend initializer to create a default admin account on startup.\n"
+    },
+    {
+      "sha": "3946c57fa03a3306d974bc66c205b6295bbd5bb5",
+      "date": "2026-02-12T16:57:59+08:00",
+      "author": "沉默王二",
+      "email": "www.qing_gee@163.com",
+      "message": "Add PaiSwitch app, backend and web\n\nInitial import of the PaiSwitch project. Adds a macOS SwiftUI app (ClaudeModelSwitcher) including Xcode project, app entry, models, views, view models, services, assets and Info.plist; a Spring Boot backend (paiswitch-backend) with controllers, services, repositories, DTOs, entities and DB migrations; and a Vue frontend (paiswitch-web) with routes, stores, API client and views. Also adds a .gitignore and other supporting files.\n"
+    }
+  ],
+  "commit_sha": "ed2129f80c3dfd669b878c1aabb2af2f24316dc6",
+  "extracted_at": "2026-10-05T18:33:08.824518+00:00"
+}

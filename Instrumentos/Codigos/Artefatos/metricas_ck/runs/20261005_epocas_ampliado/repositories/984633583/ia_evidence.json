@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "d1b32ef46c5cf59e0c2b92d4d6eb0484cc8a4f27",
+      "date": "2025-09-26T21:55:33+08:00",
+      "author": "czy!",
+      "email": "1322596900@qq.com",
+      "message": "docs(readme): 更新系统架构和功能说明\n\n- 添加推荐系统算法和架构说明- 更新AI问诊模块技术栈和RAG增强索引\n- 补充文章搜索策略和搜索引擎流程图\n- 说明Netty长连接和Protobuf数据传输优化\n- 添加聊天模块消息传递和数据持久化方案- 更新挂号预约模块Redisson锁和RabbitMq延迟队列\n- 区分2025年升级版本和2024年毕业设计内容\n"
+    },
+    {
+      "sha": "9b7d681e74f159466812cd76124075e4a5bf1b19",
+      "date": "2025-09-26T21:35:27+08:00",
+      "author": "czy!",
+      "email": "1322596900@qq.com",
+      "message": "docs(readme): 更新项目功能介绍和截图了展示\n\n- 添加项目各主要功能页面的截图展示- 补充了AI问诊功能的技术升级说明\n- 增加了挂号预约流程的图片展示\n- 完善了用户交互界面的视觉呈现\n-优化了文档结构和可读性\n"
+    },
+    {
+      "sha": "faac8bcab6c7577189dfd69be6d65a970a12ea2e",
+      "date": "2025-09-25T21:17:43+08:00",
+      "author": "czy!",
+      "email": "1322596900@qq.com",
+      "message": "feat(ai-service): 增加医学实体知识查询的日志记录与测试- 在知识查询接口中添加模型响应日志- 在医学问题工具服务中增加实体信息和疾病详情的日志输出\n- 添加针对单个医学实体的知识查询测试用例\n- 更新测试中的用户问题示例以匹配咽炎相关症状\n"
+    },
+    {
+      "sha": "9632ee2b5102d9e1dad3b36cdc2fc410e86f5420",
+      "date": "2025-09-25T21:17:22+08:00",
+      "author": "czy!",
+      "email": "1322596900@qq.com",
+      "message": "feat(ai): 实现AI问答功能并优化网络请求\n\n- 在 AiQuestionFragment 中设置 adapter 为 AI 模式- 为 AiQuestionVm 添加 Handler 和 Looper 支持主线程更新 UI- 配置 OkHttpClient 超时时间，提升网络稳定性\n- 增加日志记录，便于调试网络请求问题\n- 修改 handleSendQuestion 方法参数，适配上下文环境\n- 使用 Handler.post 确保在主线程中更新聊天列表\n- 在 ChatMessageAdapter 中增加 isAI 标志位及相应头像显示逻辑\n"
+    },
+    {
+      "sha": "c97ab01cd195bf506616be3a2c61f8b64293988d",
+      "date": "2025-09-25T20:41:07+08:00",
+      "author": "czy!",
+      "email": "1322596900@qq.com",
+      "message": "fix(medicine):修复AI问答功能中消息发送逻辑与列表更新问题- 调整消息发送点击监听器绑定位置，确保在视图创建后设置\n- 更新聊天列表数据源，使用adapter直接刷新列表而非依赖LiveData\n- 修正请求URL拼接方式，去除多余空格并添加日志输出\n- 在关键网络请求节点增加日志记录，便于调试追踪- 调整setListener调用时机，避免空指针异常\n"
+    },
+    {
+      "sha": "34533baf752655f735a3a9427a2da2a84d6392e2",
+      "date": "2025-09-25T16:55:15+08:00",
+      "author": "chenzy",
+      "email": "1322596900@qq.com",
+      "message": "feat(ai-question): 实现AI问答功能并集成聊天消息展示\n\n- 在 AiQuestionFragment 中初始化并绑定 ChatMessageAdapter，用于展示聊天消息列表\n- 通过 AiQuestionVm 实现发送问题至AI接口，并处理响应结果\n- 新增 QuestionRequest 类用于封装请求数据\n- 扩展 AiQuestionFAo 数据结构，支持聊天消息列表及数量监听\n- 使用 OkHttp 实现网络请求，并通过 Gson 解析响应数据- 添加 SyncRequestCallback 回调处理请求成功与异常情况\n"
+    },
+    {
+      "sha": "1a11e8c533e6f9fdac03f428ba1c4d4967349ad3",
+      "date": "2025-09-25T16:11:01+08:00",
+      "author": "chenzy",
+      "email": "1322596900@qq.com",
+      "message": "feat(ai-service): 新增医疗知识搜索接口与基础响应结构\n\n- 添加 SearchKnowledgeController 控制器，实现 /ai/question 接口，用于处理用户医疗问题- 集成 DashScopeChatModel与 MedicalQuestionToolService 实现 AI 对话与工具调用- 引入 BaseResponse 作为统一响应封装类，支持成功与错误状态返回\n- 添加 QuestionRequest DTO用于接收前端提问内容\n- 支持医疗实体与关系识别，并通过提示词模板驱动 AI 调用知识查询工具\n"
+    },
+    {
+      "sha": "255a71665ca23c4b38d342f3f59886e012eda365",
+      "date": "2025-09-25T15:57:05+08:00",
+      "author": "chenzy",
+      "email": "1322596900@qq.com",
+      "message": "feat(ai-service): 新增医疗知识服务\n\n新增疾病知识图谱枚举、意图识别枚举、医疗实体枚举及相关关系枚举，用于支持医疗AI问答系统中的意图识别与知识查询功能。同时添加了Neo4j节点与关系的DO类，以及对应的Repository和服务实现，为后续构建医疗知识图谱查询能力提供基础支撑。\n"
+    },
+    {
+      "sha": "ebb7b4c03fdf3679197ca71a076c2244f142dfaf",
+      "date": "2025-09-23T22:09:52+08:00",
+      "author": "czy!",
+      "email": "1322596900@qq.com",
+      "message": "fix(SignActivity): 优化注册流程，增加手机号合法性检查\n\n在注册结束后，只有当手机号合法时才执行注册检查逻辑，避免无效请求。\n"
+    },
+    {
+      "sha": "5fd4566f152c3fde093f2a0d3075d48f4d17a4d4",
+      "date": "2025-09-23T13:22:14+08:00",
+      "author": "czy!",
+      "email": "1322596900@qq.com",
+      "message": "docs(purchase-service): 更新金融服务设计思路文档结构\n\n调整文档标题层级，将支付和催收章节移至P2p平台相关内容之前，\n优化文档整体结构和逻辑顺序。\n"
+    },
+    {
+      "sha": "65eb2b9348c27c8b21a49c9ffb34657c446c45ed",
+      "date": "2025-09-23T12:04:19+08:00",
+      "author": "czy!",
+      "email": "1322596900@qq.com",
+      "message": "docs(purchase-service): 添加金融服务设计思路文档\n\n新增金融服务设计思路文档，涵盖信贷进件、P2P平台、支付和催收等模块的业务流程与技术实现细节。\n"
+    },
+    {
+      "sha": "1a208df4713dd70b19fd1395827df394ac723f74",
+      "date": "2025-09-22T14:07:40+08:00",
+      "author": "chenzy",
+      "email": "1322596900@qq.com",
+      "message": "feat(baseUtil): 添加 AndroidBaseBean 接口和 AndroidJsonUtil 工具类新增 AndroidBaseBean 接口，提供默认方法将对象转换为 JSON 字符串及 JsonObject。\n新增 AndroidJsonUtil 工具类，支持将 Map<String, Object> 转换为 JSON 字符串。\n"
+    },
+    {
+      "sha": "2f16b538391da113f070b93a8daffa609468aeb7",
+      "date": "2025-09-21T23:29:46+08:00",
+      "author": "czy!",
+      "email": "1322596900@qq.com",
+      "message": "refactor(chat): 优化聊天界面初始化逻辑与头像加载方式\n\n移除不必要的 Optional 包装，简化 intent 数据获取逻辑。\n调整 ChatVm 初始化方法，去除冗余参数传递。在 ChatMessageAdapter 中增加头像 URL 设置方法，并在聊天界面中监听头像数据变化进行加载。\n统一使用 avatarUrl 字段，移除 avatarUrlOrUri 的使用。\n完善空值判断，避免无效数据显示。\n"
+    },
+    {
+      "sha": "88469fec336f9a54289a432b7e58b1bb44e0fcaa",
+      "date": "2025-09-21T23:08:52+08:00",
+      "author": "czy!",
+      "email": "1322596900@qq.com",
+      "message": "feat(view): 更新消息布局以支持更长文本显示\n\n将接收和发送消息的布局文件中 TextView 的宽度从 wrap_content 或固定宽度修改为\nmatch_parent，并调整约束以更好地支持长文本显示。同时，将外层容器从ConstraintLayout 更换为 LinearLayoutCompat以优化布局结构。\n"
+    },
+    {
+      "sha": "6a3efc1a47d874f3e9b1dca13dd142768c71d4d6",
+      "date": "2025-09-21T20:25:19+08:00",
+      "author": "czy!",
+      "email": "1322596900@qq.com",
+      "message": "feat(ui): 调整首页与医疗页面UI细节\n\n- 移除预约背景的边框样式\n- 更新首页浮动按钮和卡片的背景色及阴影效果\n- 调整 MainActivity 和 MedicineFragment 中状态栏和基础栏颜色资源\n"
+    },
+    {
+      "sha": "ddc0461c468bc745e4b7d82c0abad3a0b36ecc71",
+      "date": "2025-09-21T20:09:57+08:00",
+      "author": "czy!",
+      "email": "1322596900@qq.com",
+      "message": "fix(MainActivity):修复 Fragment 切换逻辑并优化状态管理\n\n- 调整 `changeFragment` 方法，移除参数，使用成员变量 `currentSelected` 控制切换逻辑\n- 添加 `lastSelected` 变量避免重复切换相同 Fragment\n-修复底部导航栏选中状态与实际 Fragment 不一致的问题\n- 优化状态栏颜色设置逻辑，确保与当前页面匹配\n\nchore(fragment_home.xml): 更新按钮背景色值\n\n- 将 `btn_ai` 按钮的背景色从 `green_90` 修改为 `green_100`，以符合设计规范\n"
+    },
+    {
+      "sha": "cbc8b5ecea4c4ee0d56ec858bf99a4d8f5086814",
+      "date": "2025-09-21T16:44:05+08:00",
+      "author": "czy!",
+      "email": "1322596900@qq.com",
+      "message": "fix(HomeFragment): 优化AI按钮的拖动与点击逻辑\n\n- 添加Log日志记录触摸事件的动作类型，便于调试\n- 使用箭头语法重构switch-case语句，提升代码可读性action- 引入DownStartTime变量，用于判断用户操作是点击还是拖动\n- 当拖动时间小于150ms时也视为点击，增强用户体验\n-修复可能由于快速点击导致的事件误判问题f\n"
+    },
+    {
+      "sha": "d887bdd325c56becf8a8aa24406ff635c36485ac",
+      "date": "2025-09-21T16:29:15+08:00",
+      "author": "czy!",
+      "email": "1322596900@qq.com",
+      "message": "feat(home): 用viewTreeObserver.addOnGlobalLayoutListener实现viewPager2的初始化跳转\n\n- 增大 CardView 尺寸从 50dp 到 55dp\n- 增大 ImageView 的 padding 从8dp 到10dp- 优化按钮点击与拖动逻辑，区分点击和拖动事件- 添加对按钮拖动状态的判断，确保点击事件正确触发\n\nfeat(main): 引入 Fragment 缓存机制并支持跳转至 AI 页面\n\n- 使用 SparseArray 缓存 Fragment 实例，避免重复创建\n- 新增 turnToAiFragment 方法用于跳转到 AI问诊页面- 设置状态栏和底部导航栏颜色为 green_0\n- 集成 MedicineViewPagerEnum 控制 ViewPager 初始位置\n\nfeat(medicine): 支持设置 ViewPager 初始化位置并优化生命周期处理\n\n- 新增 setInitPosition 方法设置初始页面索引\n- 在 onResume 中根据 initPosition 设置当前项\n- 添加 isFirst 标志防止首次 onPageSelected 回调干扰- 使用 ViewTreeObserver 确保布局完成后再设置当前项\n- 增加日志输出便于调试初始化流程\n"
+    },
+    {
+      "sha": "1149abdcca7116f9375ceb9667cd29b58157cd31",
+      "date": "2025-09-21T14:56:56+08:00",
+      "author": "czy!",
+      "email": "1322596900@qq.com",
+      "message": "feat(home): 添加可拖拽的AI按钮并优化布局\n\n在首页布局中新增了一个可拖拽的AI按钮，使用CardView和ImageView实现圆形按钮效果，并通过OnTouchListener实现拖拽逻辑，限制按钮在父布局范围内移动。\n"
+    },
+    {
+      "sha": "08bda1640ac3064ba527c20fa7c7cedfbbd4db2b",
+      "date": "2025-09-21T14:14:32+08:00",
+      "author": "czy!",
+      "email": "1322596900@qq.com",
+      "message": "feat(PostDataManager): 添加NonNull注解以增强空安全新增NonNull注解到PostDataManager中的推荐、热门和社区帖子列表，提升代码健壮性。\n\nfeat(RecommendFragment): 初始化并观察FAo数据\n在RecommendFragment中初始化FragmentActivityAo，并监听recommendPostCount变化以控制进度条显示。\n\nfeat(RecommendVm): 引入FragmentActivityAo优化数据管理\n添加RecommendFAo用于管理推荐页面的数据状态，并更新adapter的数据源为FAo中的推荐帖子列表。refactor(PostHomeAdapter):重命名变量并移除Optional使用将postPreviewAoList重命名为postPreviewAoListPointer，避免空指针并简化item数量获取逻辑。feat(domain): 新增RecommendFAo类\n创建RecommendFAo用于管理推荐页面的Fragment级别数据，包含推荐帖子列表和数量LiveData。\n\nfix(view_chat_card_item): 调整布局底部约束和边距\n为聊天卡片项布局添加底部约束和margin，优化UI显示效果。\n"
+    },
+    {
+      "sha": "be1c4794c1c2dce58e80336aec9ae5f41a9d3188",
+      "date": "2025-09-21T12:51:54+08:00",
+      "author": "czy!",
+      "email": "1322596900@qq.com",
+      "message": "fix(chat):修复聊天联系人列表更新逻辑并优化图片加载方式- 将 ChatCardItemViewHolder 中的图片加载方法从网络加载调整为资源加载- 简化 ChatContactAdapter 的列表更新逻辑，移除 DiffUtil 相关代码，使用 notifyDataSetChanged 统一刷新- 优化 MessageFragment 中 RecyclerView 数据更新时机，确保界面正确显示\n- 在 MessageVm 中增加空列表判断，避免空指针异常，并调整 UI 更新逻辑\n- 移除部分冗余的日志打印和无用的错误提示逻辑\n"
+    },
+    {
+      "sha": "f719bf1d468538778ba388b6e220359088a462d7",
+      "date": "2025-09-21T11:58:33+08:00",
+      "author": "czy!",
+      "email": "1322596900@qq.com",
+      "message": "refactor(message): 重构联系人相关数据结构和包路径\n\n将 ChatContactItemAo 和 ContactItemAo 相关类迁移至 message 包下，统一管理消息模块的联系人数据结构。同时重命名字段 avatarUrlOrUri 为 avatarUrl，并新增 remark 字段用于存储联系人备注信息。调整了部分 ViewModel 和 Adapter中对联系人数据的处理逻辑，以适配新的数据结构。主要变更包括：- 类包路径调整：com.czy.domain.ao.chat.* → com.czy.domain.ao.message.*\n- 字段重命名：avatarUrlOrUri → avatarUrl- 新增字段：remark（备注）\n- 更新 DiffUtil 回调和 Adapter 数据绑定逻辑- 移除冗余代码和无用 Fragment 文件\n"
+    },
+    {
+      "sha": "54f4b73cd11602a89f01d7a86e7a3a6cdf3c2609",
+      "date": "2025-09-21T11:29:10+08:00",
+      "author": "czy!",
+      "email": "1322596900@qq.com",
+      "message": "feat(user-auth-relation-service): 添加姓名排序工具类支持中英文混合排序\n\n新增 NameSort 工具类，用于实现包含中文和英文的字符串数组排序功能。该排序器优先按字母和数字顺序排列非中文字符，再按拼音顺序排列中文字符。\n"
+    },
+    {
+      "sha": "1fda0ae4130714e23a3c2ef9a162648ebe2663f0",
+      "date": "2025-09-21T00:53:23+08:00",
+      "author": "czy!",
+      "email": "1322596900@qq.com",
+      "message": "feat(post-service): 更新推荐意图处理逻辑以支持用户个性化数据\n\n- 修改 `PostRecommendAo` 类，将 `postInfoUrlAos` 字段替换为 `postPreviewVos`，类型从 `PostInfoUrlAo` 改为 `PostPreviewVo`\n- 在 `SearchController` 中优化导入语句，使用通配符简化搜索相关 AO 的引入\n- 更新 `handleRecommendIntent` 方法签名，增加 `userId` 参数以支持用户关联数据查询\n- 调用 `postSearchService.getPostPreviewVosByIds` 替代旧的数据获取方法，传递 `userId` 实现个性化推荐- 保留代码中一处 todo 注释，待后续完善 `PostPreviewVo` 相关逻辑\n"
+    },
+    {
+      "sha": "2041b6d52e3682afa0677cf5c76e2c230b8c0775",
+      "date": "2025-09-21T00:47:03+08:00",
+      "author": "czy!",
+      "email": "1322596900@qq.com",
+      "message": "feat(search):优化搜索结果展示与数据结构- 将 PostExVo 相关引用替换为 PostPreviewExVo，统一使用预览数据结构\n- 调整 RecyclerView 适配器初始化逻辑，分离绑定与设置 Adapter 步骤- 修改时间格式化方式，增强异常处理\n- 更新布局文件上下文信息及 tint 属性配置\n- 增加日志输出，便于调试搜索结果和列表更新情况-修复 notifyDataSetChanged 调用位置，确保主线程执行\n"
+    },
+    {
+      "sha": "4f0147533a9f12b5ee95d184faf20b3e5a5fcd8d",
+      "date": "2025-09-20T19:27:42+08:00",
+      "author": "czy!",
+      "email": "1322596900@qq.com",
+      "message": "feat(address-book): 实现联系人列表刷新与用户点击功能\n\n- 为 AddressBookFAo 添加 ContactListVo 支持\n- 在 AddressBookFragment 中集成下拉刷新与联系人列表展示逻辑\n- 新增 ContactAdapter 实现联系人列表的绑定与点击事件处理\n- 完善 AddressBookVm 中好友列表获取及用户点击交互逻辑\n- 更新布局文件，使用 SwipeRefreshLayout 支持下拉刷新\n"
+    },
+    {
+      "sha": "d6f3d9fcdc6bb6b96242578e6b1993ab813b904d",
+      "date": "2025-09-20T18:42:35+08:00",
+      "author": "czy!",
+      "email": "1322596900@qq.com",
+      "message": "feat(address-book): 新增好友申请与搜索用户功能\n\n- 在 AddressBookFAo 中添加好友相关 LiveData 字段\n- 在 AddressBookFragment 中集成新用户和搜索用户的启动逻辑- 使用 ActivityResultLauncher 替代 startActivityForResult- 在 AddressBookVm 中处理网络请求与 EventBus 消息接收\n- 更新布局文件，新增“搜索用户”入口\n- 调整 contact_background.xml 中的背景位置参数\n"
+    },
+    {
+      "sha": "464900554308ee31c873aa8ca2e283909d39405a",
+      "date": "2025-09-20T17:57:14+08:00",
+      "author": "czy!",
+      "email": "1322596900@qq.com",
+      "message": "feat(medicine): 设置AI问答页面顶部状态栏颜色在 MedicineFragment 中根据 ViewPager 的不同页面，动态设置 MainActivity顶部状态栏的颜色。\n同时调用 SendMessage 的 setAiView 方法隐藏不需要的按钮。\n\nrefactor(message): 统一使用 currentPositionLd 命名将 MessageMainFAo 中的 currentPosition 字段重命名为 currentPositionLd，并在相关 Fragment 和 ViewModel 中同步更新字段引用，\n以保持命名一致性。\n"
+    },
+    {
+      "sha": "48b449596a0371c841e4f21606b76a6ecb64d2c2",
+      "date": "2025-09-20T17:44:41+08:00",
+      "author": "czy!",
+      "email": "1322596900@qq.com",
+      "message": "feat(ai-question): 初始化AI问答页面并优化布局结构\n\n- 在 AiQuestionFragment 中添加 ViewModel 的初始化流程，包括数据初始化、  数据观察、初始请求以及数据绑定\n- 移除 fragment_ai_question.xml 中的冗余顶部工具栏布局，调整界面元素约束\n- 在 ChatVm 中增加消息发送前的空值校验，避免发送空内容\n"
+    },
+    {
+      "sha": "87685b68e69e88808e1dd69619ab2fe1dd2b6aed",
+      "date": "2025-09-20T17:31:29+08:00",
+      "author": "czy!",
+      "email": "1322596900@qq.com",
+      "message": "refactor(medicine): 重命名 currentPosition 为 currentPositionLd 以提高代码一致性\n\n将 MedicineFAo 中的 currentPosition 字段重命名为 currentPositionLd，\n并在 MedicineFragment 和 MedicineViewPagerBar 中同步更新相关引用。同时添加 observeData 方法监听 currentPositionLd 的变化，\n以实现界面与 ViewPager 的联动。\n```\n"
+    }
+  ],
+  "commit_sha": "d1b32ef46c5cf59e0c2b92d4d6eb0484cc8a4f27",
+  "extracted_at": "2026-10-05T18:40:49.965496+00:00"
+}

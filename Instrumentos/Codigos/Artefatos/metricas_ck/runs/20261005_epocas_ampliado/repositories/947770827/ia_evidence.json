@@ -1,0 +1,132 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 17,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "3e6ba9972c32de87190d4f02df0dfd8cb3d8bb7b",
+      "date": "2026-06-18T09:58:44+08:00",
+      "author": "🇨🇳钟智强 『哪吒网络安全』",
+      "email": "johnmelodymel@qq.com",
+      "message": "refactor: 重构爬虫为Selenium优先模式，优化前端页面与配置\n\n1.  引入WebDriverManager和HttpClient5依赖，配置Tomcat编码与宽松查询字符\n2.  重构Scrapper类，使用Selenium无头浏览器替代原Jsoup直连API，新增HTML兜底解析\n3.  大幅简化并优化前端页面UI与交互逻辑，新增快速搜索标签\n4.  统一代码风格与工具类方法，调整请求重试与间隔配置\n"
+    },
+    {
+      "sha": "4547fcf40a103975edcc1b57a0f1af5976238ed0",
+      "date": "2026-06-18T08:53:02+08:00",
+      "author": "🇨🇳钟智强 『哪吒网络安全』",
+      "email": "johnmelodymel@qq.com",
+      "message": "refactor: 2026版BOSS直聘爬虫全面重构升级\n\n重构内容包括：\n1.  升级项目配置与Docker镜像，更新端口为8000\n2.  重构API控制器，支持分页参数与标准JSON响应格式\n3.  重写爬虫服务，使用官方API解析并增加重试机制\n4.  优化数据库操作，增加字段兼容与搜索功能\n5.  统一代码规范与注释，完善类型安全与异常处理\n6.  更新依赖版本与项目元信息\n"
+    },
+    {
+      "sha": "5d5dcbc8ce61f69e558858c308c493f79acdd0bd",
+      "date": "2025-03-16T19:18:52+08:00",
+      "author": "钟智强",
+      "email": "johnmelodymel@qq.com",
+      "message": " 更新README\n"
+    },
+    {
+      "sha": "f0f53948ecf3cc301b2b416b308333e8e64698c2",
+      "date": "2025-03-16T19:05:13+08:00",
+      "author": "钟智强",
+      "email": "johnmelodymel@qq.com",
+      "message": "`Update README.md with revised declaration statement`\n"
+    },
+    {
+      "sha": "09f4e62240a87d9b4e5abffee98d4f67408e7aad",
+      "date": "2025-03-16T19:02:25+08:00",
+      "author": "钟智强",
+      "email": "johnmelodymel@qq.com",
+      "message": "更新README\n"
+    },
+    {
+      "sha": "d7699080050360b48a336c1ed9ac67e85bbbeb0d",
+      "date": "2025-03-16T18:52:16+08:00",
+      "author": "钟智强",
+      "email": "johnmelodymel@qq.com",
+      "message": "更新README\n"
+    },
+    {
+      "sha": "a7ad690cd7c7c152a9f67e9098f6e79090288dc2",
+      "date": "2025-03-16T04:34:32+08:00",
+      "author": "钟智强",
+      "email": "johnmelodymel@qq.com",
+      "message": "更新 Dockerfile\n"
+    },
+    {
+      "sha": "57677fa3401275ae794e61e15d455594f0745d39",
+      "date": "2025-03-14T23:04:18+08:00",
+      "author": "钟智强",
+      "email": "johnmelodymel@qq.com",
+      "message": "更新 Dockerfile\n"
+    },
+    {
+      "sha": "224c47d7a51fe9f4a609deae59647df8e6d5e1e7",
+      "date": "2025-03-14T22:59:37+08:00",
+      "author": "钟智强",
+      "email": "johnmelodymel@qq.com",
+      "message": "更新 Dockerfile\n"
+    },
+    {
+      "sha": "3d03a41e7add24d82a8002d8855f3ffb8ef38de1",
+      "date": "2025-03-14T22:44:53+08:00",
+      "author": "钟智强",
+      "email": "johnmelodymel@qq.com",
+      "message": "feat(文档): 完善项目文档和系统说明\n\n- 添加系统主页和数据分析页面截图\n- 优化API文档结构和说明\n- 添加数据库表结构说明\n- 补充系统流程图和算法说明\n- 新增开源赞助计划和社交媒体信息\n- 完善许可证和免责声明\n\n相关: #DOC-001\n"
+    },
+    {
+      "sha": "b6e2bc52a0723f08cadc9ac54190dcda120c7ee5",
+      "date": "2025-03-14T02:51:10+08:00",
+      "author": "钟智强",
+      "email": "johnmelodymel@qq.com",
+      "message": "更新 Readme\n"
+    },
+    {
+      "sha": "a366f66ecb46b2cc42be1ccb8774e6d1c6aad295",
+      "date": "2025-03-14T02:49:33+08:00",
+      "author": "钟智强",
+      "email": "johnmelodymel@qq.com",
+      "message": "更新 Readme\n"
+    },
+    {
+      "sha": "a60a9c32ce2647eb9cd37cfbac55398688482969",
+      "date": "2025-03-14T02:19:50+08:00",
+      "author": "钟智强",
+      "email": "johnmelodymel@qq.com",
+      "message": "feat(启动器): 优化系统启动信息展示\n\n- 添加系统环境信息输出\n- 显示Java运行时信息\n- 集成Maven和Spring版本检测\n- 美化控制台输出格式\n- 完善开发者信息展示\n"
+    },
+    {
+      "sha": "87c2808999776a49fb3073649af1be89a8357554",
+      "date": "2025-03-14T01:01:33+08:00",
+      "author": "钟智强",
+      "email": "johnmelodymel@qq.com",
+      "message": "更新 .gitignore\n"
+    },
+    {
+      "sha": "f5ce8a9f4b92d35d83b4134cc8d45d75f9529fa0",
+      "date": "2025-03-14T00:57:35+08:00",
+      "author": "钟智强",
+      "email": "johnmelodymel@qq.com",
+      "message": "优化(爬虫): 改进BOSS直聘职位爬取功能\n\n- 修复访问限制检测逻辑\n- 优化职位数据解析方式\n- 统一使用中文日志输出\n- 完善错误处理机制\n"
+    },
+    {
+      "sha": "9db3ce72223b752e93332570d61a24756d80ea7a",
+      "date": "2025-03-13T19:12:28+08:00",
+      "author": "钟智强",
+      "email": "johnmelodymel@qq.com",
+      "message": "添加爬虫功能：实现BOSS直聘职位信息抓取\n"
+    },
+    {
+      "sha": "b24d95036502133de214c969de2b94c5adc23b84",
+      "date": "2025-03-13T16:17:09+08:00",
+      "author": "钟智强",
+      "email": "johnmelodymel@qq.com",
+      "message": "添加爬虫功能：实现BOSS直聘职位信息抓取\n"
+    }
+  ],
+  "commit_sha": "3e6ba9972c32de87190d4f02df0dfd8cb3d8bb7b",
+  "extracted_at": "2026-10-05T18:18:46.849136+00:00"
+}

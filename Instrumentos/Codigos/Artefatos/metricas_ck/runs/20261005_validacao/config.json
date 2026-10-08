@@ -1,0 +1,39 @@
+{
+  "created_at": "2026-10-05T15:43:11.975608+00:00",
+  "config": {
+    "protocol": "ck-comparison-v1",
+    "input_sha256": "a69e784858cef9ba93d0c017020b5d4733e7ec0390f077904501c673aa88d67f",
+    "population": 38456,
+    "jar": "/Users/gabrielferreiraamaral/Desktop/SpringTCC/Instrumentos/Codigos/codigoCKSpring/ck.jar",
+    "ck_sha256": "634f7c58dde51a652397e61ffa1d63bab80a1f0481f923d6b23a55c69a204866",
+    "ck_version": "0.7.0",
+    "java": "/opt/homebrew/Cellar/openjdk@17/17.0.20.1/libexec/openjdk.jdk/Contents/Home/bin/java",
+    "java_version": "openjdk version \"17.0.20.1\" 2026-08-18\nOpenJDK Runtime Environment Homebrew (build 17.0.20.1+0)\nOpenJDK 64-Bit Server VM Homebrew (build 17.0.20.1+0, mixed mode, sharing)",
+    "commits": 30,
+    "min_loc": 2000,
+    "heap": "2g",
+    "partition": 100,
+    "clone_timeout": 900,
+    "ck_timeout": 1800,
+    "classification_sha256": null,
+    "detect_ai": false,
+    "source_scope": "tracked_java_including_tests_without_hidden_build_generated_vendor",
+    "lcom_column": "lcom*",
+    "use_jars": false,
+    "pipeline_sha256": {
+      "analisar_ck.py": "86602fce3b012b86759b85aee3942b933abef78272b38c218c1f28517316ada3",
+      "ck_pipeline/__init__.py": "04954b4284974a678b7f0d07a0f834f53dcb9c88691cf3f1a938348de2fa8d10",
+      "ck_pipeline/extraction.py": "397b7d3057eed3b19dc6571b5760613a9515a84bc54865edecb6de8e52b36139",
+      "ck_pipeline/statistics.py": "fde9ed70c6beb831cf7c010e3c75e17141ce1cb5293efd41e6b729c5931e21dd",
+      "detectar_agentes_ia.py": "b34a53342856588bdf9e2ddb81a6d7923c11faa17e7ab82932a16cf4c1cc238e"
+    },
+    "packages": {
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "pandas": "3.0.6",
+      "matplotlib": "3.11.2",
+      "requests": "2.34.2",
+      "python-dotenv": "1.2.4"
+    }
+  }
+}

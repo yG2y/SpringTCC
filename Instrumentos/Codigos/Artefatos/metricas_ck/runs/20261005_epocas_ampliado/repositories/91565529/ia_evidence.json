@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "e646bc7ff20c1c49e33e2e574fcdae16e956c0e1",
+      "date": "2026-08-17T13:29:14+01:00",
+      "author": "matthew-robinson-ons",
+      "email": "113037557+matthew-robinson-ons@users.noreply.github.com",
+      "message": "RAS-2031 WIF migration (#317)\n\n* RAS-2031 WIF migration\n\n* auto patch increment\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "e7ca473602d057327a048ce47def14fc537d526b",
+      "date": "2026-07-14T13:34:07+01:00",
+      "author": "matthew-robinson-ons",
+      "email": "113037557+matthew-robinson-ons@users.noreply.github.com",
+      "message": "Update alpine-curl to 3.24.1 (#315)\n\n* update alpine-curl to 3.24.1\n\n* auto patch increment\n\n* auto patch increment\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "4c135d623ce7e71b8c6d2ba376839decd4eedbd5",
+      "date": "2026-07-14T10:48:35+01:00",
+      "author": "Jacob Harrison",
+      "email": "35296832+JacobHarrisonONS@users.noreply.github.com",
+      "message": "bump cloud proxy (#316)\n\n* bump cloud proxy\n\n* auto patch increment\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "741a7a0e6de90afc1e3eae2f42383b563f4d1e5d",
+      "date": "2026-02-23T09:26:25Z",
+      "author": "Mark Price",
+      "email": "pricem14pc@users.noreply.github.com",
+      "message": "Allow livenessProbe and heap memory configuration (#312)\n\n"
+    },
+    {
+      "sha": "1bba3880874646b10e210a3129c40a4c30753b88",
+      "date": "2026-02-11T15:37:03Z",
+      "author": "Alejandro Arroyo",
+      "email": "41422777+arroyoAle@users.noreply.github.com",
+      "message": "RAS-1741-Create-WIF-dependabot-specific-workflow-solution-for-case-service (#313)\n\n* fixing and testing GitHub token permissions\n\n* adding in missing values\n\n* reverting testing changes\n\n* bumping version just in case"
+    },
+    {
+      "sha": "99c0082e8df0ca63938d29757afeaf51ecfd2e92",
+      "date": "2026-02-11T14:07:58Z",
+      "author": "Alejandro Arroyo",
+      "email": "41422777+arroyoAle@users.noreply.github.com",
+      "message": "RAS-1741-Create-WIF-dependabot-specific-workflow-solution-for-case-service (#311)\n\n* adding extra auth step for dependabot\n\n* updating id\n\n* auto patch increment\n\n* updating postgres image location\n\n* testing image pull\n\n* adding required permissions\n\n* adding an audience\n\n* updating provider\n\n* testing audience\n\n* testing audience\n\n* testing audience\n\n* removing audience\n\n* adding debug test\n\n* testing audience again\n\n* testing audience\n\n* removing debug\n\n* updating docker images for testing\n\n* testing GAR project\n\n* testing without ce\n\n* reverting testing without ce\n\n* adding service account definition\n\n* checking gcloud auth\n\n* testing secret access\n\n* testing secret access\n\n* testing secret access\n\n* replacing project var\n\n* removing secret test\n\n* testing solo docker compose\n\n* testing direct docker auth\n\n* testing direct docker auth\n\n* testing adding project id\n\n* trying service account impersonation instead\n\n* adding token format\n\n* testing gcloud command\n\n* list auth\n\n* removing debug jobs\n\n* removing unneeded audience\n\n* adding other ifs\n\n* updating ifs\n\n* reverting temporary project updates\n\n* adding postgres version\n\n* reverting gcr change\n\n* updating project id and number\n\n* updating postgres test image\n\n* adding variable for project number\n\n* testing variable change\n\n* testing variable change\n\n* testing variable change\n\n* removing \"\"\n\n* testing env variable\n\n* removing \"\"\n\n* adding env. for project id as well\n\n* testing GHA variable\n\n* reverting testing changes\n\n* test with all the relevant ifs flipped\n\n* test with all the relevant ifs flipped\n\n* test with all the relevant ifs flipped\n\n* reverting test changes\n\n* testing in sandbox ci\n\n* flipping if statements\n\n* updating variable\n\n* fixing variable\n\n* reverting testing changes\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "e432b49eaa3365638410c1bb87fa487037074ffe",
+      "date": "2025-11-14T09:44:12Z",
+      "author": "LJBabbage",
+      "email": "lewis.babbage@ons.gov.uk",
+      "message": "update findReportingUnitsByPartyAndSurveyId order (#310)\n\n* update findReportingUnitsByPartyAndSurveyId order\n"
+    },
+    {
+      "sha": "d6df76c6948f0b74b9fdfeb64973f2157dc1be5c",
+      "date": "2025-11-05T10:45:30Z",
+      "author": "LJBabbage",
+      "email": "lewis.babbage@ons.gov.uk",
+      "message": "RAS-1107 Create endpoint for casegroup survey, party id (#305)\n\n* RAS-1107 Create endpoint for casegroup survey, party id"
+    },
+    {
+      "sha": "a18dc6555e578b023bf0ce50bf4b9d23e5134a6b",
+      "date": "2025-10-27T13:33:00Z",
+      "author": "matthew-robinson-ons",
+      "email": "113037557+matthew-robinson-ons@users.noreply.github.com",
+      "message": "Introduce ArchiveExemption.txt (#306)\n\n* Introduce ArchiveExemption.txt\n\n* auto patch increment\n\n* auto patch increment\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "2a11f6fe58808d778279622e75427e4d150406fa",
+      "date": "2025-10-27T08:02:50Z",
+      "author": "SteveScorfield",
+      "email": "47788084+SteveScorfield@users.noreply.github.com",
+      "message": "RAS-1715: Update Case Docker images to reference Artifact Registry (#308)\n\n* Initial changes to swap gcr with gar\n\n* auto patch increment\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "668e03c2df64fb492fd688070fbef5f931715b4f",
+      "date": "2025-10-20T13:50:43+01:00",
+      "author": "Mark Price",
+      "email": "pricem14pc@users.noreply.github.com",
+      "message": "Use alpine-curl image (#307)\n\n* Use RASRM managed alpine-curl image\n\n* auto patch increment\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "9cafad154fa98010e8bd25acb562cf8c5f61f42e",
+      "date": "2025-05-22T11:53:14+01:00",
+      "author": "Mark Price",
+      "email": "pricem14pc@users.noreply.github.com",
+      "message": "Upgrade to Java 21 and Spring Boot 3 (#303)\n\n* godaddy logger no longer compatible with Spring Boot 3 so replace with slf4j and logstash to provide structured logging. All godaddy logging references have been replaced throughout.\n* the embedded WireMock server and client/stubs are no longer compatible with Spring Boot 3 (as it causes known jetty 11 web server conflicts) so this replaces embedded wiremock libraries with the wiremock-standalone libraries\n* the embedded WireMock server is now run using Wiremock in Docker in our existing docker-compose, completely removing any dependency conflicts with runtime libraries\n* libraries moving from javax to jakarta\n* swap out unmaintained mashape unirest for kong unirest implementation\n* Spring MockMvc no longer handles exceptions thrown in tests and generates test errors, these exception now need to be explicitly asserted as part of the test case"
+    },
+    {
+      "sha": "9904591a0509eb57293a4ce56b40757f9982d52d",
+      "date": "2025-05-13T13:04:32+01:00",
+      "author": "Alejandro Arroyo",
+      "email": "41422777+arroyoAle@users.noreply.github.com",
+      "message": "RAS-1418 EPIC: Unpinned tag for a non-immutable Action in workflow (#302)\n\n* pinning gha to commit refs\n\n* auto patch increment\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "d8111c568b4af6e5e3e4c376e9686e315bc63909",
+      "date": "2025-03-12T07:55:52Z",
+      "author": "Mark Price",
+      "email": "pricem14pc@users.noreply.github.com",
+      "message": "Adding graceful handling of duplicate case creation (#300)\n\nAdding graceful handling of duplicate case creation"
+    },
+    {
+      "sha": "7ccd780c80c38e6187ec59388de3ed85208370d8",
+      "date": "2025-02-08T10:07:39Z",
+      "author": "Mark Price",
+      "email": "pricem14pc@users.noreply.github.com",
+      "message": "Use migrated GAR pubsub-emulator image (#299)\n\n* Use migrated GAR pubsub-emulator image\n\n* auto patch increment\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "6cf95112fa6910fd898b989a5cd3eb98b58a728b",
+      "date": "2025-01-16T13:56:01Z",
+      "author": "matthew-robinson-ons",
+      "email": "113037557+matthew-robinson-ons@users.noreply.github.com",
+      "message": "Upgrade actions/cache to v4 (#298)\n\n* upgrade actions/cache\n\n* auto patch increment\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "2d4a5ec78cf31a0a19f8e29b14d67516238156d6",
+      "date": "2025-01-07T13:36:56Z",
+      "author": "matthew-robinson-ons",
+      "email": "113037557+matthew-robinson-ons@users.noreply.github.com",
+      "message": "fix docker push command (#297)\n\n"
+    },
+    {
+      "sha": "fc0ba31369688a52e3790cce5f4fe4f4fdf5c156",
+      "date": "2025-01-07T11:00:41Z",
+      "author": "anwilkie",
+      "email": "47449873+anwilkie@users.noreply.github.com",
+      "message": "gar migration (#296)\n\n* gar migration\n\n* revert survey image change\n\n* add gcloud auth command\n\n* auto patch increment\n\n* add CODEOWNERS\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>\nCo-authored-by: matthew-robinson-ons <matthew.robinson@ons.gov.uk>"
+    },
+    {
+      "sha": "725e571432a7c4ddf9f009edf158777a89ed22a8",
+      "date": "2024-10-17T09:39:56+01:00",
+      "author": "Mark Price",
+      "email": "pricem14pc@users.noreply.github.com",
+      "message": "Maven surefire not running and failing test and warnings (#294)\n\n* Maven surefire wasn't running and failing test and warnings\n* Fix src/test/java/uk/gov/ons/ctp/response/casesvc/state/StateTransitionManagerUnitTest.java\n* auto patch increment\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "4c8823bc24b73c6f44f3c8a60fd544b7a1c6cc54",
+      "date": "2024-08-14T10:20:16+02:00",
+      "author": "Alejandro Arroyo",
+      "email": "41422777+arroyoAle@users.noreply.github.com",
+      "message": "RAS-1238 Update to docker compose from docker-compose (#293)\n\n* updating docker compose with gpg sign\n\n* Update Chart.yaml\n\nChecking BOT version bump and signing\n\n* auto patch increment\n\n* Avoid rebuild if BOT bumps Chart.yaml\n\n* Update Chart.yaml\n\nTesting paths-ignore so BOT version bump doesn't retrigger build\n\n* auto patch increment\n\n* Try glob pattern for paths-ignore\n\n* auto patch increment\n\n* Try a different glob pattern\n\n* auto patch increment\n\n---------\n\nCo-authored-by: Mark Price <pricem14pc@users.noreply.github.com>\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>\nCo-authored-by: Mark Price <mark.price@ons.gov.uk>"
+    },
+    {
+      "sha": "703af578717ac3d639a5093fda2c1522582974fc",
+      "date": "2024-02-27T11:05:29Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.postgresql:postgresql from 42.7.1 to 42.7.2 (#291)\n\n* Bump org.postgresql:postgresql from 42.7.1 to 42.7.2\n\nBumps [org.postgresql:postgresql](https://github.com/pgjdbc/pgjdbc) from 42.7.1 to 42.7.2.\n- [Release notes](https://github.com/pgjdbc/pgjdbc/releases)\n- [Changelog](https://github.com/pgjdbc/pgjdbc/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/pgjdbc/pgjdbc/commits)\n\n---\nupdated-dependencies:\n- dependency-name: org.postgresql:postgresql\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\n\n--------\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Mark Price <pricem14pc@users.noreply.github.com>\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "a69d047df228d8dcc1f2ce7f5d4d0b850f4f1e2c",
+      "date": "2024-02-19T15:47:56Z",
+      "author": "Alejandro Arroyo",
+      "email": "41422777+arroyoAle@users.noreply.github.com",
+      "message": "RAS-1030 Migrate from the spring cloud pubsub providers to google cloud Case service (#290)\n\n* start of migration for pubsub starter\n\n* auto patch increment\n\n* moving where the dependency is\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "57e114584d2963ab020f086910af935665741db7",
+      "date": "2024-02-15T11:54:53Z",
+      "author": "Alejandro Arroyo",
+      "email": "41422777+arroyoAle@users.noreply.github.com",
+      "message": "RAS-939 Survey Status Change (#289)\n\n* Adding new casegroup transition\n\n* auto patch increment\n\n* adding test for transition\n\n* cleaning up name\n\n* swapping asserts for consistency\n\n* making the test change to the right state\n\n* auto patch increment\n\n* updating comment\n\n* formatting\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "d4d13dd56eccd51d2203434bed5c0f91f5bc8677",
+      "date": "2024-02-05T16:05:46Z",
+      "author": "SteveScorfield",
+      "email": "47788084+SteveScorfield@users.noreply.github.com",
+      "message": "RAS-940: Questionnaire Completion Rate Information (#288)\n\n* Initial commit of code changes\n\n* auto patch increment\n\n* Have updated the naming\n\n* Updated changelog\n\n* Have added an additional test to ensure that datetime is added\n\n* Have ran mvn format\n\n* I have removed the test and just added the check within the first test\n\n* Have made changes based on recommendations and have updated name of audit test\n\n* Forgot to format\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "a420bf001346e1feeb3a6f1fe8b063667ec3296d",
+      "date": "2024-01-23T16:05:06Z",
+      "author": "Alejandro Arroyo",
+      "email": "41422777+arroyoAle@users.noreply.github.com",
+      "message": "RAS-899 Update dependencies in case service (#287)\n\n* Updating all possible packages\n\n* auto patch increment\n\n* Updating gcloud setup and create release\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "0d4da413b70edf2da055df24103486aeda95f104",
+      "date": "2023-12-12T16:28:53Z",
+      "author": "matthew-robinson-ons",
+      "email": "113037557+matthew-robinson-ons@users.noreply.github.com",
+      "message": "fix tag_name environment variable (#286)\n\n"
+    },
+    {
+      "sha": "8fa21d551373da11865385112dca3b7c9e70f44c",
+      "date": "2023-12-12T09:58:42Z",
+      "author": "matthew-robinson-ons",
+      "email": "113037557+matthew-robinson-ons@users.noreply.github.com",
+      "message": "Update set-output to environment variables (#285)\n\n* update set-output to environment variables\n\n* auto patch increment\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "7cf88ac7171e66177c15613318e85bdae41fafd0",
+      "date": "2023-12-01T15:34:22Z",
+      "author": "matthew-robinson-ons",
+      "email": "113037557+matthew-robinson-ons@users.noreply.github.com",
+      "message": "Update Mockito-inline to Mockito-core (#284)\n\n* update package and dependency\n\n* auto patch increment\n\n* update depencies to latest versions\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "ef03cdee8af63ffc070dd8c3256ec95bfd1bfc93",
+      "date": "2023-11-27T16:03:41Z",
+      "author": "Mark Price",
+      "email": "pricem14pc@users.noreply.github.com",
+      "message": "Migrate from openjdk to eclipse-temurin (#282)\n\n* Migrate from openjdk to eclipse-temurin\n\n* auto patch increment\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    },
+    {
+      "sha": "40090ac42e252fd09677894cbbd991d3f5b4df9d",
+      "date": "2023-09-25T16:02:22+01:00",
+      "author": "JacobHarrisonONS",
+      "email": "35296832+JacobHarrisonONS@users.noreply.github.com",
+      "message": "rename NOT_ENGLAND variable to NI_REGION_CODE  (#280)\n\n* rename NOT_ENGLAND variable to NI_REGION_CODE to make a little more sense with what code is doing\n\n* auto patch increment\n\n* update comment\n\n---------\n\nCo-authored-by: ras-rm-pr-bot <rasrm.team@ons.gov.uk>"
+    }
+  ],
+  "commit_sha": "e646bc7ff20c1c49e33e2e574fcdae16e956c0e1",
+  "extracted_at": "2026-10-05T18:32:15.290968+00:00"
+}

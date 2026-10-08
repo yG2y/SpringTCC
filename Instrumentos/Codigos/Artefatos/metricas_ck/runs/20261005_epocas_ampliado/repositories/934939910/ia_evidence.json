@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "7f37a45fd87b90a04fe6cb2c8a061d44c8024024",
+      "date": "2025-07-03T15:02:56-03:00",
+      "author": "Isabel Henrique",
+      "email": "contato.isabelhenrique@gmail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "eb3c8de1a83da2ad523ed2e8ac2982380f171354",
+      "date": "2025-04-22T13:22:35-03:00",
+      "author": "Isabel Henrique",
+      "email": "contato.isabelhenrique@gmail.com",
+      "message": "refactor: improve exception messages\n"
+    },
+    {
+      "sha": "2ad986986e86071225ec6848adcd7e41853c9491",
+      "date": "2025-04-22T12:46:25-03:00",
+      "author": "Isabel Henrique",
+      "email": "contato.isabelhenrique@gmail.com",
+      "message": "refactor: extract email message to enum (EmailTemplate)\n"
+    },
+    {
+      "sha": "1f82087ad3b145f6b80d3707b3a603da35d6844d",
+      "date": "2025-04-21T12:04:10-03:00",
+      "author": "Isabel Henrique",
+      "email": "contato.isabelhenrique@gmail.com",
+      "message": "chore(config): adjust indentation in application.yml\n"
+    },
+    {
+      "sha": "4cfc6f3e14a1ab421b2c9c6239dd3d78a41a3451",
+      "date": "2025-04-17T15:44:09-03:00",
+      "author": "Isabel Henrique",
+      "email": "contato.isabelhenrique@gmail.com",
+      "message": "feat(security): implement access control with PreAuthorize for methods\n"
+    },
+    {
+      "sha": "28aa4502ed961b86774e5cc3ef4ee1c644c4f9ca",
+      "date": "2025-04-17T11:47:32-03:00",
+      "author": "Isabel Henrique",
+      "email": "contato.isabelhenrique@gmail.com",
+      "message": "refactor: move SMS message logic into OrderStatus enum\n"
+    },
+    {
+      "sha": "5e91716ded3c4f464b5216e9acb0cd618021d136",
+      "date": "2025-04-16T12:46:19-03:00",
+      "author": "Isabel Henrique",
+      "email": "contato.isabelhenrique@gmail.com",
+      "message": "fix: improve JWT token validation and exception handling\n"
+    },
+    {
+      "sha": "30b5dd440ff1305134914cb8ebd873b956d38bd1",
+      "date": "2025-04-16T12:38:35-03:00",
+      "author": "Isabel Henrique",
+      "email": "contato.isabelhenrique@gmail.com",
+      "message": "refactor: renamed SecurityUtil to SecurityValidator and OrderFactory to factory directory\n"
+    },
+    {
+      "sha": "80e9af7996f19a4b9c7e555593cde354f5c2402e",
+      "date": "2025-04-15T18:48:06-03:00",
+      "author": "Isabel Henrique",
+      "email": "contato.isabelhenrique@gmail.com",
+      "message": "Merge remote-tracking branch 'origin/main'\n"
+    },
+    {
+      "sha": "49fc278a9f2506918f2e832ba23ae320676911c4",
+      "date": "2025-04-15T18:46:38-03:00",
+      "author": "Isabel Henrique",
+      "email": "contato.isabelhenrique@gmail.com",
+      "message": "refactor(security): simplify token validation\n"
+    },
+    {
+      "sha": "3c8a5332003b7a0ae60480094672b542ea83096a",
+      "date": "2025-04-15T11:14:34-03:00",
+      "author": "Isabel Henrique",
+      "email": "contato.isabelhenrique@gmail.com",
+      "message": "add section 'imagens do projeto' to README.md"
+    },
+    {
+      "sha": "b23a97a586899ae4b4723ec9066a3a92597a3f11",
+      "date": "2025-04-14T15:56:02-03:00",
+      "author": "Isabel Henrique",
+      "email": "contato.isabelhenrique@gmail.com",
+      "message": "fix: change register response status to 201 Created\n"
+    },
+    {
+      "sha": "80965216d5b64adab91db426edb4008afabe015b",
+      "date": "2025-04-11T13:57:36-03:00",
+      "author": "Isabel Henrique",
+      "email": "contato.isabelhenrique@gmail.com",
+      "message": "add 'test' to README.md"
+    },
+    {
+      "sha": "68efc18095c5cfcbafeea57dd00fabb444e4ae98",
+      "date": "2025-04-11T11:40:01-03:00",
+      "author": "Isabel Henrique",
+      "email": "contato.isabelhenrique@gmail.com",
+      "message": "add 'authentication' to README.md"
+    },
+    {
+      "sha": "c5e83fe9e0a05368efae9b0e9c6a61d7b7765651",
+      "date": "2025-04-10T15:04:42-03:00",
+      "author": "Isabel Henrique",
+      "email": "contato.isabelhenrique@gmail.com",
+      "message": "test: add unit tests for OrderService and OrderController\n"
+    },
+    {
+      "sha": "c8c78c5e66b1fb565466ed043fed6e253629fe33",
+      "date": "2025-04-10T14:19:59-03:00",
+      "author": "Isabel Henrique",
+      "email": "contato.isabelhenrique@gmail.com",
+      "message": "test: add unit tests for AuthenticationService and AuthenticationController\n"
+    },
+    {
+      "sha": "8c23a3f3451856caaecce79496270713e2b288c1",
+      "date": "2025-04-10T14:11:32-03:00",
+      "author": "Isabel Henrique",
+      "email": "contato.isabelhenrique@gmail.com",
+      "message": "test: add unit tests for AddressService and AddressController\n"
+    },
+    {
+      "sha": "645fcfb68335fd145571561ad7179e420a7bf6dd",
+      "date": "2025-04-10T13:42:09-03:00",
+      "author": "Isabel Henrique",
+      "email": "contato.isabelhenrique@gmail.com",
+      "message": "test: add unit tests for UserService and UserController\n"
+    },
+    {
+      "sha": "033a16e1479f3832067d536aedccc656a7660b3e",
+      "date": "2025-04-10T13:14:32-03:00",
+      "author": "Isabel Henrique",
+      "email": "contato.isabelhenrique@gmail.com",
+      "message": "test: add unit tests for ProductService and ProductController\n"
+    },
+    {
+      "sha": "83403faa035bcf36667955a9e75b2092bf8d881b",
+      "date": "2025-04-10T11:56:11-03:00",
+      "author": "Isabel Henrique",
+      "email": "contato.isabelhenrique@gmail.com",
+      "message": "test: add unit tests for CategoryService and CategoryController\n"
+    },
+    {
+      "sha": "68a706da0ea64dedb5f0adc84a926f96c63172b5",
+      "date": "2025-04-10T11:08:32-03:00",
+      "author": "Isabel Henrique",
+      "email": "contato.isabelhenrique@gmail.com",
+      "message": "feat(auth): add documentation and service layer for authentication\n"
+    },
+    {
+      "sha": "8d3d6316ffefd97d09d32d32bd6e1a32bdc495db",
+      "date": "2025-04-09T14:10:29-03:00",
+      "author": "Isabel Henrique",
+      "email": "contato.isabelhenrique@gmail.com",
+      "message": "feat(security): implement authentication and authorization using JWT\n"
+    },
+    {
+      "sha": "167f0fd44ad256d78bf9fc8a4d5d893eb71f116c",
+      "date": "2025-04-05T12:36:17-03:00",
+      "author": "Isabel Henrique",
+      "email": "contato.isabelhenrique@gmail.com",
+      "message": "docs: adjust SMS image height\n"
+    },
+    {
+      "sha": "1cd680674d3cc585a9e05db002681afa1df6e2b5",
+      "date": "2025-04-05T12:30:32-03:00",
+      "author": "Isabel Henrique",
+      "email": "contato.isabelhenrique@gmail.com",
+      "message": "docs: create README\n"
+    },
+    {
+      "sha": "177601f8ae6596089818a2eb757078b9ff51077a",
+      "date": "2025-04-05T10:17:22-03:00",
+      "author": "Isabel Henrique",
+      "email": "contato.isabelhenrique@gmail.com",
+      "message": "refactor(categoryController): change PostMapping to PatchMapping when adding product to category\n"
+    },
+    {
+      "sha": "ef794247b616aef130f687e3ea5e6ea53321237d",
+      "date": "2025-04-04T12:36:22-03:00",
+      "author": "Isabel Henrique",
+      "email": "contato.isabelhenrique@gmail.com",
+      "message": "docs(dtos): add Swagger documentation for response DTOs\n"
+    },
+    {
+      "sha": "47a517bcc8de5435050917df4ac6c548118e624a",
+      "date": "2025-04-04T12:20:21-03:00",
+      "author": "Isabel Henrique",
+      "email": "contato.isabelhenrique@gmail.com",
+      "message": "docs(dtos): add Swagger documentation for request DTOs\n"
+    },
+    {
+      "sha": "6cc48ec1523c069910f8e766542f38f6f28be046",
+      "date": "2025-04-04T12:17:16-03:00",
+      "author": "Isabel Henrique",
+      "email": "contato.isabelhenrique@gmail.com",
+      "message": "docs(controllers): add Swagger documentation for API endpoints\n"
+    },
+    {
+      "sha": "f11a6bca56123ec48e5796a90524fe21bfff5a09",
+      "date": "2025-04-03T16:56:23-03:00",
+      "author": "Isabel Henrique",
+      "email": "contato.isabelhenrique@gmail.com",
+      "message": "feat(database): add PostgreSQL and Flyway for versioning\n"
+    },
+    {
+      "sha": "6238862b33c2adcc2fbc50157740b9c3db275b9d",
+      "date": "2025-04-03T15:42:28-03:00",
+      "author": "Isabel Henrique",
+      "email": "contato.isabelhenrique@gmail.com",
+      "message": "delete duplicate application.yml\n"
+    }
+  ],
+  "commit_sha": "7f37a45fd87b90a04fe6cb2c8a061d44c8024024",
+  "extracted_at": "2026-10-05T18:35:48.879772+00:00"
+}

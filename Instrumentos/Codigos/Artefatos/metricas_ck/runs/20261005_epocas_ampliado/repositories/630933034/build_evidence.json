@@ -1,0 +1,32 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "${project.parent.version};4.1.1",
+  "spring_boot_major": "4",
+  "java_versions_declared": "21",
+  "build_evidence": [
+    {
+      "file": "getting-started/spring-boot-integration/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "getting-started/spring-boot-integration/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "getting-started/spring-boot-integration/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "getting-started/spring-boot-integration/pom.xml",
+      "artifact": "spring-boot-starter-webmvc"
+    },
+    {
+      "file": "getting-started/spring-boot-integration/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "getting-started/spring-boot-integration/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

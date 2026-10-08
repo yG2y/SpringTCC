@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "ef4f7d7d2def3c1339f25e8de50064b64486c96a",
+      "date": "2025-05-08T15:16:04-03:00",
+      "author": "Luis Machado Reis",
+      "email": "luis.reis@singularideas.com.br",
+      "message": "Merge pull request #6 from luismr/feature/decoupled-websocket-events-publisher\n\nImplement Decoupled WebSocket Events Publisher with Kafka"
+    },
+    {
+      "sha": "9e9d4e076008b111a31d95aff51e98ed64f3073b",
+      "date": "2025-05-08T18:14:57Z",
+      "author": "luismr",
+      "email": "1530679+luismr@users.noreply.github.com",
+      "message": "Update coverage badges\n"
+    },
+    {
+      "sha": "814900ab137da738c5ddc1e7c1f97c8c8a4a7458",
+      "date": "2025-05-08T15:14:05-03:00",
+      "author": "Luis Machado Reis",
+      "email": "luis.reis@singularideas.com.br",
+      "message": "ByPassingKafka to Update Pings when deployed into a single node\n"
+    },
+    {
+      "sha": "feb07dcad64c754f2cfcff9f1506462d04cbbf1e",
+      "date": "2025-05-08T15:47:14Z",
+      "author": "luismr",
+      "email": "1530679+luismr@users.noreply.github.com",
+      "message": "Update coverage badges\n"
+    },
+    {
+      "sha": "7e0c501d526d7c7525fce6f4eb759e17e1243330",
+      "date": "2025-05-08T12:26:35-03:00",
+      "author": "Luis Machado Reis",
+      "email": "luis.reis@singularideas.com.br",
+      "message": "Fixing Serialization issues\n"
+    },
+    {
+      "sha": "34fac5d354020e60193b701b4baf262e08ac9fa5",
+      "date": "2025-05-08T12:09:24-03:00",
+      "author": "Luis Machado Reis",
+      "email": "luis.reis@singularideas.com.br",
+      "message": "updating README.md with new Kafka Configuration\n"
+    },
+    {
+      "sha": "ad5822df908eb0c6c2cc69e976ba876810da143a",
+      "date": "2025-05-08T11:18:51-03:00",
+      "author": "Luis Machado Reis",
+      "email": "luis.reis@singularideas.com.br",
+      "message": "Adding Test Coverage\n"
+    },
+    {
+      "sha": "80beabf61df26e3c4e413d4b92b939d005c6a357",
+      "date": "2025-05-08T10:59:03-03:00",
+      "author": "Luis Machado Reis",
+      "email": "luis.reis@singularideas.com.br",
+      "message": "Publishing PingCreatedEvent to Kafka deliver the message on all Websocket sessions across the cluster\n"
+    },
+    {
+      "sha": "06cffc24314bbe26e8b0c408392a8213e7059621",
+      "date": "2025-05-05T22:26:30-03:00",
+      "author": "Luis Machado Reis",
+      "email": "luis.reis@singularideas.com.br",
+      "message": "Configurations to enable/disable websocket and flight-data kafka topic subscriber\n"
+    },
+    {
+      "sha": "c22f94751ef0acdcc0ceea3530ebb964b7bbc53f",
+      "date": "2025-05-05T22:11:00-03:00",
+      "author": "Luis Machado Reis",
+      "email": "luis.reis@singularideas.com.br",
+      "message": "Optmizing imports\n"
+    },
+    {
+      "sha": "965cdc7fe8f7c7ed2760ee3a45ca88a8a56026fe",
+      "date": "2025-05-05T22:07:26-03:00",
+      "author": "Luis Machado Reis",
+      "email": "luis.reis@singularideas.com.br",
+      "message": "Cleanup configs\n"
+    },
+    {
+      "sha": "619b30caf4ec2b02ebcdad3235f689567c10bea0",
+      "date": "2025-05-05T22:07:10-03:00",
+      "author": "Luis Machado Reis",
+      "email": "luis.reis@singularideas.com.br",
+      "message": "Adding Virtual Threads to WebSocket notifications\n"
+    },
+    {
+      "sha": "bb4d2eee64418eef98e356cda1ebb670df513758",
+      "date": "2025-05-04T14:56:50-03:00",
+      "author": "Luis Machado Reis",
+      "email": "luis.reis@singularideas.com.br",
+      "message": "Updating ADRs, Analysis and README.md\n"
+    },
+    {
+      "sha": "529102f1baab8b4094f94a64a41f2993481dedc1",
+      "date": "2025-05-01T17:53:07-03:00",
+      "author": "Luis Machado Reis",
+      "email": "luis.reis@singularideas.com.br",
+      "message": "Merge pull request #5 from luismr/feature/ping-created-event-decoupled-from-model-to-use-ping-dto\n\nSimplify PingCreatedEvent and Add Message Payload Documentation"
+    },
+    {
+      "sha": "5541521f3dcd1ba2d84afda1d4b92812cef59439",
+      "date": "2025-05-01T18:25:05Z",
+      "author": "luismr",
+      "email": "1530679+luismr@users.noreply.github.com",
+      "message": "Update coverage badges\n"
+    },
+    {
+      "sha": "a3d9b25628473056b7e40c6697fb274ec0ddb655",
+      "date": "2025-05-01T15:20:07-03:00",
+      "author": "Luis Machado Reis",
+      "email": "luis.reis@singularideas.com.br",
+      "message": "👀 README now have mentions about the expected/supported payloads in pub/sub messaging\n"
+    },
+    {
+      "sha": "3f185786171561d2bbddc8d4d64c920b889e9879",
+      "date": "2025-05-01T15:14:57-03:00",
+      "author": "Luis Machado Reis",
+      "email": "luis.reis@singularideas.com.br",
+      "message": "✅ PingCreatedEvent doesn't overhead Ping and PingDTO anymore\n\n👀 PingCreatedEvent now is just an event to sign it is created and available on the database and then the PingEventPublisher uses the PingMapper to convert Ping into a PingDTO to be notified for all connected flight-tracker-event-app clients.\n"
+    },
+    {
+      "sha": "4faaee441ddfde000fffc4a11d415f116d6daffc",
+      "date": "2025-04-30T22:16:23-03:00",
+      "author": "Luis Machado Reis",
+      "email": "luis.reis@singularideas.com.br",
+      "message": "Merge pull request #4 from luismr/hotfix/tests-rely-instant-with-clock\n\nAdd Clock Support for Deterministic Timestamps"
+    },
+    {
+      "sha": "55ce1de6e3315b765686cfbdb9b85fb7ba857be1",
+      "date": "2025-05-01T01:15:49Z",
+      "author": "luismr",
+      "email": "1530679+luismr@users.noreply.github.com",
+      "message": "Update coverage badges\n"
+    },
+    {
+      "sha": "15ef4efa0d23c1f974400e311672228e8853cd8e",
+      "date": "2025-04-30T22:14:53-03:00",
+      "author": "Luis Machado Reis",
+      "email": "luis.reis@singularideas.com.br",
+      "message": "Fixing GitHub Copilot Bug\n"
+    },
+    {
+      "sha": "9a8c9abe5fbf50785c0f96c285b65c19b9f32f4d",
+      "date": "2025-05-01T01:06:37Z",
+      "author": "luismr",
+      "email": "1530679+luismr@users.noreply.github.com",
+      "message": "Update coverage badges\n"
+    },
+    {
+      "sha": "b4e9e4b495afce9b33bc30b156033b394f01563d",
+      "date": "2025-04-30T22:05:40-03:00",
+      "author": "Luis Machado Reis",
+      "email": "luis.reis@singularideas.com.br",
+      "message": "Update src/main/java/dev/luismachadoreis/flighttracker/server/common/infrastructure/ClockProperties.java\n\nCo-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>"
+    },
+    {
+      "sha": "a1dfdfef3dc385fcb38912162d5487fa2073b5a9",
+      "date": "2025-04-30T22:01:23-03:00",
+      "author": "Luis Machado Reis",
+      "email": "luis.reis@singularideas.com.br",
+      "message": "Adding Clock support to Mapper, Configs, and Tests\n"
+    },
+    {
+      "sha": "6df48ad4c23f670f6a1c938f05c6aa7a62f213d8",
+      "date": "2025-04-17T23:53:19Z",
+      "author": "luismr",
+      "email": "1530679+luismr@users.noreply.github.com",
+      "message": "Update coverage badges\n"
+    },
+    {
+      "sha": "0487ab3f93922570fd1baee4964dfed9ac105433",
+      "date": "2025-04-17T20:52:35-03:00",
+      "author": "Luis Machado Reis",
+      "email": "luis.reis@singularideas.com.br",
+      "message": "[issues/1] Ping Model was no following DDD\n👀 It was moved to PingMapper class\n"
+    },
+    {
+      "sha": "07c82874c8bd7cc920900964aa065c1723b87db8",
+      "date": "2025-04-14T16:30:16-03:00",
+      "author": "Luis Machado Reis",
+      "email": "luis.reis@singularideas.com.br",
+      "message": "Fixing Maven Cache issues on Dockerfile build\n"
+    },
+    {
+      "sha": "90e9989128c2af6194ec1bd11ac52404da9c10e4",
+      "date": "2025-04-14T15:15:20-03:00",
+      "author": "Luis Machado Reis",
+      "email": "luis.reis@singularideas.com.br",
+      "message": "Adding Dockerfile to build and run server\n"
+    },
+    {
+      "sha": "5809cce48dbfe69fdebce48e36010df34ad0f16a",
+      "date": "2025-04-11T14:06:50Z",
+      "author": "luismr",
+      "email": "1530679+luismr@users.noreply.github.com",
+      "message": "Update coverage badges\n"
+    },
+    {
+      "sha": "c054767d40adb700ccafe3a64ce3a8d9c45132e0",
+      "date": "2025-04-11T11:03:49-03:00",
+      "author": "Luis Machado Reis",
+      "email": "luis.reis@singularideas.com.br",
+      "message": "Fixing tests\n"
+    },
+    {
+      "sha": "70749f1c88618bd5aff4ddfdc83028c84409a288",
+      "date": "2025-04-11T11:01:10-03:00",
+      "author": "Luis Machado Reis",
+      "email": "luis.reis@singularideas.com.br",
+      "message": "Adding Heading support\n"
+    }
+  ],
+  "commit_sha": "ef4f7d7d2def3c1339f25e8de50064b64486c96a",
+  "extracted_at": "2026-10-05T18:29:31.166759+00:00"
+}

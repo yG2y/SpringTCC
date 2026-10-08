@@ -1,0 +1,146 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 19,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "3284a7cc44ae1b50258b4edcf59ec3c92e9de9db",
+      "date": "2026-09-09T14:53:07+08:00",
+      "author": "kongweiguang",
+      "email": "240524885@qq.com",
+      "message": "feat: support Solon executable JAR encryption and distribution\n\nRecognize Solon's default JarLauncher and reuse BOOT-INF encryption and\ndecryption while preserving uncompressed nested dependencies. Add a Solon\nlauncher that retains its archive discovery and decrypts through XJarClassLoader.\n\nAdd archive routing regression tests and opt-in Solon JAR/Windows Go\ndistribution checks. Expand README coverage, usage and verification instructions,\nand document license fallback and the existing expiry-stop timing delay.\n\nValidation: mvn package passes (3 tests); Solon 4.1.0 on JDK 25 passes four\nencryption/restore profiles and nine Windows x64 distribution scenarios.\nObserved expiry-stop delay remains approximately 3.2 seconds; not fixed here.\n"
+    },
+    {
+      "sha": "655c7d23fb9306be104ee064def4099ff1575f46",
+      "date": "2026-08-05T16:52:53+08:00",
+      "author": "kongweiguang",
+      "email": "240524885@qq.com",
+      "message": "fix code\n"
+    },
+    {
+      "sha": "8c3c39ce107a09fa11be06996f926995ddfaf0c9",
+      "date": "2026-08-03T14:10:51+08:00",
+      "author": "kongweiguang",
+      "email": "240524885@qq.com",
+      "message": "fix code\n"
+    },
+    {
+      "sha": "4cd8d2bd6550947b7e993002ab0ad1bfbf99a2d2",
+      "date": "2026-08-03T10:12:27+08:00",
+      "author": "kongweiguang",
+      "email": "240524885@qq.com",
+      "message": "fix code\n"
+    },
+    {
+      "sha": "a10b1f9218ff3f6cc62016af5de29ca4ee2ca265",
+      "date": "2026-04-22T23:14:11+08:00",
+      "author": "kongweiguang",
+      "email": "240524885@qq.com",
+      "message": "fix code\n"
+    },
+    {
+      "sha": "5f259e8e84daca168eca65d5b5dd9b8c5c2e36a3",
+      "date": "2026-04-22T16:33:08+08:00",
+      "author": "kongweiguang",
+      "email": "240524885@qq.com",
+      "message": "fix code\n"
+    },
+    {
+      "sha": "a0293867437a3f2bce17e4f39e4c26f0297b92a6",
+      "date": "2026-04-18T15:53:04+08:00",
+      "author": "kongweiguang",
+      "email": "240524885@qq.com",
+      "message": "fix code\n"
+    },
+    {
+      "sha": "5a0e0b2c5d8d698aa8764f6bd1477bb08d6ec860",
+      "date": "2026-04-18T01:09:40+08:00",
+      "author": "kongweiguang",
+      "email": "240524885@qq.com",
+      "message": "fix code\n"
+    },
+    {
+      "sha": "04cc4b04329feabc595b8a852c6808824f65cae7",
+      "date": "2026-04-18T00:58:01+08:00",
+      "author": "kongweiguang",
+      "email": "240524885@qq.com",
+      "message": "fix code\n"
+    },
+    {
+      "sha": "e87929e7e06b9759023d9ea92871eb33cba106c0",
+      "date": "2026-04-17T17:33:11+08:00",
+      "author": "kongweiguang",
+      "email": "240524885@qq.com",
+      "message": "fix code\n"
+    },
+    {
+      "sha": "10096d2d1936c1dd6b03b1f2a884ad6af6ff6b30",
+      "date": "2025-07-01T17:22:04+08:00",
+      "author": "kongweiguang",
+      "email": "240524885@qq.com",
+      "message": "fix code\n"
+    },
+    {
+      "sha": "3b14d981501311349bbb7594cb8f648171826c9c",
+      "date": "2025-07-01T17:18:30+08:00",
+      "author": "kongweiguang",
+      "email": "240524885@qq.com",
+      "message": "fix code\n"
+    },
+    {
+      "sha": "7178b94c25fc8a2bf4dba5c8ca33d0cbadc72962",
+      "date": "2025-06-03T16:26:28+08:00",
+      "author": "kongweiguang",
+      "email": "240524885@qq.com",
+      "message": "fix code\n"
+    },
+    {
+      "sha": "358403955f1910f94dbf38dc4afa216e5fb34434",
+      "date": "2025-06-03T15:03:23+08:00",
+      "author": "kongweiguang",
+      "email": "240524885@qq.com",
+      "message": "fix code\n"
+    },
+    {
+      "sha": "d0bae0d54b727c07ed76673ac8a62ce4f3084098",
+      "date": "2025-05-29T11:39:58+08:00",
+      "author": "kongweiguang",
+      "email": "240524885@qq.com",
+      "message": "fix code\n"
+    },
+    {
+      "sha": "e956f3f899c8661c0e4476007b8ff66f37203ca3",
+      "date": "2025-05-21T13:41:14+08:00",
+      "author": "kongweiguang",
+      "email": "240524885@qq.com",
+      "message": "fix code\n"
+    },
+    {
+      "sha": "55782ea9edb607446de0ff49562dbf55c5c52a81",
+      "date": "2025-05-21T09:45:47+08:00",
+      "author": "kongweiguang",
+      "email": "240524885@qq.com",
+      "message": "fix code\n"
+    },
+    {
+      "sha": "e37aef80a12704380ff7e33f4d9788a771fde9a9",
+      "date": "2025-05-17T18:57:43+08:00",
+      "author": "kongweiguang",
+      "email": "240524885@qq.com",
+      "message": "fix code\n"
+    },
+    {
+      "sha": "337cae297670d332b1201f5b27b68b1299d7efde",
+      "date": "2025-05-16T18:39:50+08:00",
+      "author": "kongweiguang",
+      "email": "240524885@qq.com",
+      "message": "init\n"
+    }
+  ],
+  "commit_sha": "3284a7cc44ae1b50258b4edcf59ec3c92e9de9db",
+  "extracted_at": "2026-10-05T18:41:31.841387+00:00"
+}

@@ -1,0 +1,62 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 7,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "609e02db93adfbfe8e35f5fa79a970ecc37751e7",
+      "date": "2026-01-26T09:43:03+01:00",
+      "author": "Prasad Subrahmanya",
+      "email": "prasadus92@gmail.com",
+      "message": "Merge pull request #1 from prasadus92/claude/refactor-codebase-production-8RJnU\n\nrefactor: Complete production-grade modernization of currency converter"
+    },
+    {
+      "sha": "7135df07753bfb870ff86d0fc9a3aa15e074f3e5",
+      "date": "2026-01-26T07:54:35Z",
+      "author": "Claude",
+      "email": "noreply@anthropic.com",
+      "message": "refactor: Complete production-grade modernization of currency converter\n\nMajor changes:\n- Upgrade to Spring Boot 3.3.5 with Java 21\n- Replace EHCache with Caffeine caching\n- Add OpenAPI/Swagger documentation (springdoc-openapi)\n- Implement circuit breaker and retry with Resilience4j\n- Add Prometheus metrics and Actuator endpoints\n- Restructure codebase with clean architecture patterns\n- Use Java Records for immutable DTOs\n- Add comprehensive exception handling with GlobalExceptionHandler\n- Add comprehensive test suite (unit + integration tests)\n- Add Docker support with multi-stage builds\n- Add docker-compose with optional monitoring stack\n- Update README with comprehensive API documentation\n- Add legacy endpoint support for backward compatibility\n\nTechnical improvements:\n- Type-safe Currency enum with ISO 4217 codes\n- Bean Validation for request parameters\n- Structured error responses\n- Health checks and observability\n- JaCoCo code coverage\n- WireMock for integration testing\n"
+    },
+    {
+      "sha": "0c970d7187b3dca056ef8779b6a1265b03e30eab",
+      "date": "2017-04-07T13:25:13+05:30",
+      "author": "Prasad U S",
+      "email": "prasadus92@gmail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "6d1d86b658bfac2e181bf409695df4409ebe9fbc",
+      "date": "2017-03-17T16:11:18+05:30",
+      "author": "Prasad U S",
+      "email": "prasadus92@gmail.com",
+      "message": "Added license file"
+    },
+    {
+      "sha": "8cb891c97191c1e302673d69d49ea42bb3cc200a",
+      "date": "2017-03-15T18:27:16+05:30",
+      "author": "Prasad U S",
+      "email": "prasadus92@gmail.com",
+      "message": "Update README.md"
+    },
+    {
+      "sha": "34d7d275144dca94ce25a6b372b7c7afdfb178be",
+      "date": "2017-03-15T18:24:44+05:30",
+      "author": "Prasad U S",
+      "email": "prasad@boomerangcommerce.com",
+      "message": "Initial commit with all the source files.\n"
+    },
+    {
+      "sha": "346d7887f0e2c40410b8064b9d0d07b14ca3cc2d",
+      "date": "2017-03-15T18:22:09+05:30",
+      "author": "Prasad U S",
+      "email": "prasadus92@gmail.com",
+      "message": "Initial commit"
+    }
+  ],
+  "commit_sha": "609e02db93adfbfe8e35f5fa79a970ecc37751e7",
+  "extracted_at": "2026-10-05T18:30:33.366592+00:00"
+}

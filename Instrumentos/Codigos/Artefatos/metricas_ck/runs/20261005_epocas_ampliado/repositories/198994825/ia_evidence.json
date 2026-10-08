@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "b6776d848c9cfbbd52e2a979fcd80be495f28860",
+      "date": "2026-06-14T23:59:40+08:00",
+      "author": "yl-yue",
+      "email": "yl-yue@qq.com",
+      "message": "docs: 清理冗余文档并优化现有文档内容\n\n- 删除大量废弃/冗余的文档文件\n- 修复mybatis文档中BaseEntity类路径引用错误\n- 补充RESTful文档中R工厂方法速查内容\n- 完善mybatis分页优化规约说明\n"
+    },
+    {
+      "sha": "727a3cc804fac3ead3a5711628a2f0ac6fba4855",
+      "date": "2026-06-14T18:40:18+08:00",
+      "author": "yl-yue",
+      "email": "yl-yue@qq.com",
+      "message": "1\n"
+    },
+    {
+      "sha": "a048a98da2ea850d154a94ffb94b3eb3cc2276bc",
+      "date": "2026-06-10T11:50:48+08:00",
+      "author": "yl-yue",
+      "email": "yl-yue@qq.com",
+      "message": "build: 新增Spring AI及阿里AI starter依赖\n\n- 添加spring-ai-bom依赖管理\n- 引入spring-ai-alibaba-agent-framework\n- 引入spring-ai-alibaba-starter-dashscope\n"
+    },
+    {
+      "sha": "9593e7cf0f6cf0aba9f1dfe2e2af920f6035bc20",
+      "date": "2026-06-06T20:45:30+08:00",
+      "author": "yl-yue",
+      "email": "yl-yue@qq.com",
+      "message": "1\n"
+    },
+    {
+      "sha": "963ea7ef2ad80059da808544fbabe9839a1750cc",
+      "date": "2026-06-06T17:05:57+08:00",
+      "author": "yl-yue",
+      "email": "yl-yue@qq.com",
+      "message": "1\n"
+    },
+    {
+      "sha": "ce2152aa08f849799285786d27e37586353e2b02",
+      "date": "2026-06-06T16:48:08+08:00",
+      "author": "yl-yue",
+      "email": "yl-yue@qq.com",
+      "message": "1\n"
+    },
+    {
+      "sha": "678dad15ace1dee20e709f794b748654df552c6b",
+      "date": "2026-06-06T16:03:31+08:00",
+      "author": "yl-yue",
+      "email": "yl-yue@qq.com",
+      "message": "1\n"
+    },
+    {
+      "sha": "6707de84fe8cd139d817c9c17251cb2b6173c28d",
+      "date": "2026-06-03T15:53:42+08:00",
+      "author": "yl-yue",
+      "email": "yl-yue@qq.com",
+      "message": "docs(mybatis): 补充多数据源租户和逻辑删除忽略配置，以及动态数据源文档\n\n- 新增按数据源忽略企业租户拦截的配置说明\n- 新增按数据源忽略逻辑删除拦截的配置说明\n- 补充运行时动态添加移除数据源的完整文档\n"
+    },
+    {
+      "sha": "b27ca0f0b942e1c11243463348f2ce048eb7b7d4",
+      "date": "2026-05-27T13:35:00+08:00",
+      "author": "yl-yue",
+      "email": "yl-yue@qq.com",
+      "message": "test(api-version): 添加API版本请求条件测试用例并修复上下文路径处理问题\n\n- 新增ApiVersionRequestConditionTest测试类，覆盖多种版本匹配场景\n- 修复版本号不在第一段且有context-path时的匹配问题\n- 添加对废弃版本接口异常抛出的测试验证\n- 实现对不同版本号位置和上下文路径组合的完整测试覆盖\n- 验证版本号低于接口要求时返回null的正确行为\n"
+    },
+    {
+      "sha": "8f6b43a1e15256f39483bd98f5befeea3c82eed8",
+      "date": "2026-05-26T22:51:08+08:00",
+      "author": "yl-yue",
+      "email": "yl-yue@qq.com",
+      "message": "refactor(mybatis): 优化 Mybatis 配置以支持动态映射器包扫描\n\n- 将 mapperScannerConfigurer 方法改为静态方法并注入 Environment 替代 MybatisProperties\n- 使用 Binder 绑定配置属性实现动态 extra-mapper-packages 扫描\n- 将 getStartupPackageName 和 discoverModuleMapperPackages 方法改为静态方法\n- 在 yue-library-web 模块中添加 spring-boot-starter-aop 依赖\n"
+    },
+    {
+      "sha": "88ee958761a8ecdb014b9bebddce0f7f54d33423",
+      "date": "2026-05-26T11:04:42+08:00",
+      "author": "yl-yue",
+      "email": "yl-yue@qq.com",
+      "message": "refactor(data-log): 优化日志持久化模式配置\n\n- 新增LogModeEnum枚举类统一管理日志持久化模式\n- 将配置类的mode字段从String类型替换为枚举类型\n- 重构模式判断方法，使用枚举比较替代字符串比较\n- 优化配置注释信息\n"
+    },
+    {
+      "sha": "9293c9dd2135948be4659a637916b983633bc9b9",
+      "date": "2026-05-25T15:37:12+08:00",
+      "author": "yl-yue",
+      "email": "yl-yue@qq.com",
+      "message": "feat(dependencies): 添加 Micrometer 追踪依赖项\n\n- 在 pom.xml 中添加 micrometer.version 变量定义\n- 添加 micrometer-tracing 依赖项\n- 添加 micrometer-tracing-bridge-brave 依赖项\n- 集成 Plumelog 和 Micrometer 追踪功能\n- 配置追踪桥接以支持 Brave 实现\n"
+    },
+    {
+      "sha": "055e624ae7f9019ff51be850de3d889cf20279c2",
+      "date": "2026-05-25T15:04:15+08:00",
+      "author": "yl-yue",
+      "email": "yl-yue@qq.com",
+      "message": "feat(data-log): 重构日志模块，支持多持久化模式与plumelog集成\n\n- 重构持久化配置逻辑，将原http.enabled配置改为mode配置，支持http转发/直连写库两种模式\n- 调整自动建表逻辑，仅在直连写库模式下执行自动建表\n- 新增请求日志拦截器，自动注入traceId并打印请求IP、URI等信息\n- 集成plumelog日志聚合功能，新增相关依赖、配置属性类与标准logback输出模板\n- 新增Forest依赖缺失时的NoOp空实现兜底，避免启动报错\n- 完善模块文档，更新快速开始与微服务日志使用说明\n- 优化自动配置类，根据配置自动匹配对应的日志存储提供者\n- 新增请求日志排除路径配置，支持Ant风格路径过滤\n\nBreaking change: 持久化配置项发生变更，原`yue.data.log.http.enabled`配置移除，改用`yue.data.log.mode`配置持久化模式，详见模块文档。\n"
+    },
+    {
+      "sha": "06a990da028ba9ce08ce5834ee1567be32dce508",
+      "date": "2026-05-23T19:51:43+08:00",
+      "author": "yl-yue",
+      "email": "yl-yue@qq.com",
+      "message": "feat(data-log): 增强日志注解与脱敏能力\n\n- 新增Log注解配置项：saveRequestData、saveResponseData、excludeParamNames\n- 新增测试用例验证新增配置功能\n- 重构OperLogService与LogMaskService，支持自定义排除参数\n- 实现按需采集请求/响应数据与敏感参数脱敏\n"
+    },
+    {
+      "sha": "8fde956c26d132859316f2dc8ea021af90a79d81",
+      "date": "2026-05-22T23:31:54+08:00",
+      "author": "yl-yue",
+      "email": "yl-yue@qq.com",
+      "message": "feat: 新增原生响应写入能力，优化内网IP检测适配Filter场景\n\n- 为WebEnv新增带原生响应参数的resultResponse默认实现\n- 为Result新增原生响应写入方法，脱离ThreadLocal依赖\n- 重构WebMvcEnv的resultResponse实现，拆分通用逻辑\n- 为NetUtils新增带HttpServletRequest参数的内网IP检测方法\n- 适配LanSecurityFilter，使用新的API解决Filter中ThreadLocal未就绪问题\n"
+    },
+    {
+      "sha": "681dd70d701fc503da9af492c0e2697146d84d65",
+      "date": "2026-05-22T11:08:11+08:00",
+      "author": "yl-yue",
+      "email": "yl-yue@qq.com",
+      "message": "feat(lan-security): 添加排除路径配置与拦截逻辑\n\n- 新增LanSecurityProperties排除路径配置项\n- 实现基于Ant风格路径匹配的排除拦截逻辑\n- 新增示例回调控制器与集成测试用例\n- 更新LAN安全认证文档说明排除路径配置\n"
+    },
+    {
+      "sha": "f084d574b4c261e8bd748ed89a84ed9010e5b577",
+      "date": "2026-05-21T22:45:56+08:00",
+      "author": "yl-yue",
+      "email": "yl-yue@qq.com",
+      "message": "feat(web,auth): 新增LAN接口安全拦截功能\n\n- 新增LAN接口安全拦截配置与实现，默认仅允许内网IP访问\n- 支持配置额外IP白名单与Basic Auth认证\n- 添加Spring Security放行配置避免被业务安全策略拦截\n- 新增测试用例覆盖IP白名单、Basic Auth等场景\n- 完善文档说明与侧边栏导航\n- 优化WebMvc响应格式处理代码\n"
+    },
+    {
+      "sha": "e7390663e0357e222de30fa71659e40dbc9b9e67",
+      "date": "2026-05-18T16:34:30Z",
+      "author": "yl-yue",
+      "email": "yl-yue@qq.com",
+      "message": "删除子模块 .trae"
+    },
+    {
+      "sha": "2cb551231f8df753413b9fa80a96bd88e040ebaa",
+      "date": "2026-05-18T14:22:52+08:00",
+      "author": "yl-yue",
+      "email": "yl-yue@qq.com",
+      "message": "chore: 更新子模块并修正gitignore\n\n- 更新.trae子模块到最新提交\n- 将.trae目录加入gitignore忽略列表\n"
+    },
+    {
+      "sha": "987c145b76cd98d18e865d025d2e0c6cab269e27",
+      "date": "2026-05-16T16:27:51+08:00",
+      "author": "yl-yue",
+      "email": "yl-yue@qq.com",
+      "message": "refactor(jvm): 优化JVM空闲GC优化配置\n\n- 将Resource注解替换为Autowired并设置非必填\n- 添加MetricsEndpoint空值检查避免NPE\n- 新增ConditionalOnBean注解确保MetricsEndpoint存在时才生效\n"
+    },
+    {
+      "sha": "e42545ead9030c2721beebbd2423925f1083dd7f",
+      "date": "2026-05-16T14:17:30+08:00",
+      "author": "yl-yue",
+      "email": "yl-yue@qq.com",
+      "message": "docs: 清理废弃的规约文档并更新导航链接\n\n- 删除了所有规约相关的markdown文档和配套图片\n- 从导航栏移除了规约菜单入口\n- 更新了文档中对规约链接的引用\n- 简化了文档内的外部链接引用\n"
+    },
+    {
+      "sha": "e2cc8644be81bfd9e0f21036c1099f5b7947213d",
+      "date": "2026-05-15T19:10:40+08:00",
+      "author": "yl-yue",
+      "email": "yl-yue@qq.com",
+      "message": "feat(data-log): 添加登录日志客户端UA和仅查询个人日志功能\n\n- 新增LoginLogEntity的userAgent字段并补全SQL表结构\n- 新增LoginLogPageIPO的onlyMine参数实现个人日志过滤\n- 自动从请求头获取User-Agent存储到登录日志\n- 实现通过LogUserProvider获取当前用户并过滤日志\n- 优化分页查询的权限过滤逻辑\n"
+    },
+    {
+      "sha": "223ab9b9c75d704baf68a7b57bb2c3d2eb5f35ae",
+      "date": "2026-05-14T20:19:54+08:00",
+      "author": "yl-yue",
+      "email": "yl-yue@qq.com",
+      "message": "Content7\n"
+    },
+    {
+      "sha": "938e9bfb32d7eaaf661283a1dcb1d76c6d881daf",
+      "date": "2026-05-14T19:28:18+08:00",
+      "author": "yl-yue",
+      "email": "yl-yue@qq.com",
+      "message": "feat(data-log): 添加日志模块完整功能实现\n\n- 新增登录日志与操作日志分页查询API\n- 新增日志查询配置项与自动配置类\n- 补全文档侧边栏与各模块文档\n- 添加日志查询单元测试与集成测试\n- 完善日志服务的查询与分页能力\n"
+    },
+    {
+      "sha": "350e13e33425769b50e187ffd5dcd9b17fba5786",
+      "date": "2026-05-14T18:29:37+08:00",
+      "author": "yl-yue",
+      "email": "yl-yue@qq.com",
+      "message": "feat(data-log): 新增日志存储SPI与HTTP转发能力\n\n- 新增日志存储SPI接口LogStorageProvider\n- 实现本地数据库存储实现DefaultLogStorageProvider\n- 实现HTTP远程转发实现HttpLogStorageProvider\n- 新增Forest HTTP客户端封装LogStorageForestClient\n- 新增日志存储REST接口LogStorageController\n- 重构日志服务类，基于SPI解耦存储实现\n- 新增日志HTTP转发与存储API配置项\n- 新增多套测试用例验证功能正确性\n- 优化日志结果序列化逻辑\n- 更新.gitignore与项目依赖配置\n"
+    },
+    {
+      "sha": "740bea580cb6c5e4a944136325cc7fdfd068f177",
+      "date": "2026-05-14T10:38:49+08:00",
+      "author": "yl-yue",
+      "email": "yl-yue@qq.com",
+      "message": "feat(data-log): 添加数据日志模块，支持操作/登录日志记录\n\n- 新增日志自动配置、实体类、Mapper、Service等完整模块\n- 实现基于注解的日志自动切面记录\n- 支持请求参数脱敏与异步日志记录\n- 提供日志归档定时任务功能\n- 扩展MyBatis Mapper自动扫描能力\n- 添加测试用例与示例代码\n"
+    },
+    {
+      "sha": "a95d5c38fc86df6ee5bed4b89b421b1dce5bc844",
+      "date": "2026-05-13T15:32:02+08:00",
+      "author": "yl-yue",
+      "email": "yl-yue@qq.com",
+      "message": "chore: 添加ai-docs/到gitignore\n\n将ai-docs目录加入忽略清单，避免提交临时文档目录文件\n"
+    },
+    {
+      "sha": "3805c86313b7a96b91c25bd8eae38c045e6dff6d",
+      "date": "2026-05-12T17:25:43+08:00",
+      "author": "yl-yue",
+      "email": "yl-yue@qq.com",
+      "message": "chore(config): 更新 .gitignore 文件以忽略新目录\n\n- 添加 .trae/ 目录到忽略列表\n- 添加 AI协同矩阵/ 目录到忽略列表\n"
+    },
+    {
+      "sha": "fc5453440b67e0a0bab8fa8c6a7a78f930ae4122",
+      "date": "2026-05-10T22:39:10+08:00",
+      "author": "yl-yue",
+      "email": "yl-yue@qq.com",
+      "message": "config(base): 更新异步线程池默认配置并优化Redis示例\n\n- 将异步线程池自动配置默认值从false改为true\n- 在Redis示例中使用@Resource注解替代@Autowired\n- 添加第三方widget脚本到文档页面\n"
+    },
+    {
+      "sha": "9b9a7ba86b6b61c08f7d9004d5af1af2d75a13f1",
+      "date": "2026-04-20T11:08:04+08:00",
+      "author": "yl-yue",
+      "email": "yl-yue@qq.com",
+      "message": "企业租户Id\n"
+    }
+  ],
+  "commit_sha": "b6776d848c9cfbbd52e2a979fcd80be495f28860",
+  "extracted_at": "2026-10-05T18:17:27.392304+00:00"
+}

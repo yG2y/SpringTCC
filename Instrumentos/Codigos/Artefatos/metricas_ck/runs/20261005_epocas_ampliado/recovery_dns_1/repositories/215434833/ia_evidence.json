@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "a99c4ede10c98dc3e45cf8f83e2ac209296c5e21",
+      "date": "2022-02-24T10:46:28+08:00",
+      "author": "perye",
+      "email": "peryedev@gmail.com",
+      "message": "Merge pull request #41 from perye/dependabot/maven/xerces-xercesImpl-2.12.2\n\nBump xercesImpl from 2.12.0 to 2.12.2"
+    },
+    {
+      "sha": "8434b5ca275a878e76fd3f8b89410a6bb99755d6",
+      "date": "2022-02-24T10:46:15+08:00",
+      "author": "perye",
+      "email": "peryedev@gmail.com",
+      "message": "Merge pull request #43 from perye/develop\n\nupdate"
+    },
+    {
+      "sha": "9cac2d90c713276ce094b812fe338f5c92ba3692",
+      "date": "2022-02-24T10:44:05+08:00",
+      "author": "perye",
+      "email": "peryedev@gmail.com",
+      "message": "update\n"
+    },
+    {
+      "sha": "7305ff9ca3817ded165201b857d67a676325f60c",
+      "date": "2022-01-27T16:20:34Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump xercesImpl from 2.12.0 to 2.12.2\n\nBumps xercesImpl from 2.12.0 to 2.12.2.\n\n---\nupdated-dependencies:\n- dependency-name: xerces:xercesImpl\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "bd0f6218de7829efc5b1a3be2c48e1b0aae94a86",
+      "date": "2021-12-29T22:00:40+08:00",
+      "author": "perye",
+      "email": "peryedev@gmail.com",
+      "message": "Merge pull request #38 from perye/develop\n\n更新"
+    },
+    {
+      "sha": "5e5c9060e2a692faa65030dbedb6669079edf60a",
+      "date": "2021-12-29T21:49:26+08:00",
+      "author": "honggd",
+      "email": "11143526@qq.com",
+      "message": "1、修复SecurityProperties参数配置自定义令牌前缀bug(允许自定义令牌前缀，就不应该固定截取七位)\n2、文件上传优化，加入FileProperties，根据系统选择上传目录\n3、修复QueryHelp::getPredicate查询会产生多余的Join\n4、修复不存在账号登录时，userService.findByName抛出异常，而loadUserByUsername未将其捕获处理的bug\n5、ServiceImpl.ftl--生成代码 deleteAll 方法 参数错误\n6、修复当前用户如果没有任何权限时，在输入用户名后，刷新验证码会抛IllegalArgumentException\n7、加入审计功能，继承 BaseEntity 后自动写入创建时间、修改时间、创建人、更新人\n8、Token 自动续期功能，用户在快过期的时间内操作活跃，可将 Token 过期时间延长\n9、数据权限注解的实现，摈弃在 Controller 的操作方式，采用 @DataPermission 注解实现\n10、新的服务监控实现，后端采用 oshi，前端采用 echarts 做可视化\n11、定时任务创建时支持添加异常通知人，当定时任务执行失败发送邮件通知 [支持多邮箱]\n12、定时任务支持添加子任务，当主任务执行完后自动执行子任务 [支持多子任务，顺序执行]\n13、去除首页 ip，pv 统计\n14、邮箱验证功能的验证码改为存储在 Redis 中，删除了原来从数据库中取的逻辑代码\n15、修改不规范的字段名/包名，将 mapper 包改为 mapstruct，避免与 mybatis 的 mapper 冲突\n16、重新设计缓存功能，去除不必要的缓存，去除监控模块\n17、用户管理、角色管理、菜单管理、部门管理中树形均采用懒加载方式实现，避免大量的数据导致页面卡顿\n18、加入RsaUtils工具类解决Hutool工具Rsa解密过慢的问题，IP 归属地查询改为用太平洋IP地址查询接口\n19、TokenFilter Token 验证逻辑优化，对于已放行的接口不去验证 Token 合法性\n20、代码生成器前端 index.vue 模板查询优化，取消以前的下拉方式查询\n21、修复运维管理解决不能向不同服务器部署应用的缺陷\n22、修复运维管理解决部署到linux服务器路径拼接不正确问题\n23、修复运维管理解决每次连接不同服务器都默认访问第一台服务器的问题\n24、同一界面内，多CRUD共存，支持自定义数据id字段名\n25、字典管理使用CRUD组件改写，CRUD组件增加对table延迟实例化支持，完善组件注册、注销\n26、登录页背景使用本地图片，服务监控采用 v-echarts 实现\n27、用户管理、角色管理、菜单管理、部门管理，列表和弹窗数据懒加载\n28、用户头像裁剪上传节省空间\n29、@crud/CRUD.operation中增加对列隐藏(初始阶段)支持\n30、@crud/CRUD.operation中增加对列忽略支持\n31、@crud/CRUD.operation中列可见性控制选项顺序跟随表格列顺序变更\n32、优化主题切换按钮下移问题、优化tabs被footer遮挡问题、优化主题在页面刷新后重置的问题\n33、取消crud.props记录tableColumns，调整表格列可见性控制时插入位置计算\n34、修改Token过期的提示，由原来的弹窗提示改为登录界面消息提示\n35、修复路由懒加载问题\n36、修复菜单管理选择图标，backspace删除时不过滤数据\n37、修复重定向到登录页，登录后参数丢失问题\n38、修复首页搜索菜单外链无法点击跳转问题\n39、解决部署管理和数据库管理，选择记录不能启用自定义按钮的问题\n40、修复字典管理模块点击编辑后再点击新增报错的问题\n41、所有表按功能加入前缀：sys、tool、mnt 方便后续管理维护\n42、所有表字段的主键改为: 表名_id，方便与关联表的 id 统一\n43、所有表加入 create_by、update_by、create_time、update_time 字段,便于审计\n44、去除无用字段，加入必要索引加快查询速度，去除外键改为程序控制\n45、sys_user 表中加入 is_admin 字段用户区分是否为管理员\n46、删除 avatar 头像表，将头像的的头像名称与路径存入 sys_user 表\n"
+    },
+    {
+      "sha": "70cdfb0886564008a51247f33c94025dd4a302b6",
+      "date": "2021-12-28T11:18:56+08:00",
+      "author": "honggd",
+      "email": "11143526@qq.com",
+      "message": "update\n"
+    },
+    {
+      "sha": "18e018bd2f5ac49684d36c577bbef5197caee735",
+      "date": "2021-05-01T16:27:12+08:00",
+      "author": "perye",
+      "email": "11143526@qq.com",
+      "message": "Merge pull request #35 from perye/dependabot/maven/commons-io-commons-io-2.7\n\nBump commons-io from 2.5 to 2.7"
+    },
+    {
+      "sha": "74f0e0caaa83011b26fc1fe0e29fc16e555a4621",
+      "date": "2021-04-26T19:50:37Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump commons-io from 2.5 to 2.7\n\nBumps commons-io from 2.5 to 2.7.\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "784fea42bc3fb12782ea42d97878cb1321ab3043",
+      "date": "2020-07-06T09:44:48+08:00",
+      "author": "perye",
+      "email": "peryedev@gmail.com",
+      "message": "Merge pull request #13 from Perye/dependabot/maven/xerces-xercesImpl-2.12.0\n\nBump xercesImpl from 2.11.0 to 2.12.0"
+    },
+    {
+      "sha": "e469d17502150ac72addeafc1fd96a5090bf9184",
+      "date": "2020-06-15T19:33:53Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump xercesImpl from 2.11.0 to 2.12.0\n\nBumps xercesImpl from 2.11.0 to 2.12.0.\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "60dfa5ed88e8cf7f33a98173abbb6f7ab70a8938",
+      "date": "2020-04-20T16:18:55+08:00",
+      "author": "perye",
+      "email": "peryedev@gmail.com",
+      "message": "Delete 表"
+    },
+    {
+      "sha": "dba458e471e1391811e17907e8d0861cead0de59",
+      "date": "2020-03-19T02:26:42+08:00",
+      "author": "perye",
+      "email": "peryedev@gmail.com",
+      "message": "1、SecurityUtils 加入获取当前登录用户ID方法，Security 结构调整\n2、代码生成器优化\n3、字典管理-字典详情DictDetail 排序更改为Integer\n4、字典支持多选删除\n5、同一界面内，多CRUD共存\n6、解决多crud，对inject修改造成注入混乱，弃用Vue注入方式\n7、自定义数据id字段名\n8、以$options.cruds()方式实例化crud，避免多组件实例共享crud\n9、优化主题切换按钮下移问题、优化tabs被footer遮挡问题\n10、优化主题在页面刷新后重置的问题\n11、解决组件实例与crud，及其中page、pagination、form未进行绑定关联\n12、字典管理使用CRUD组件改写，CRUD组件增加对table延迟实例化支持，完善组件注册、注销\n13、crud.js 清除参数无值优化\n"
+    },
+    {
+      "sha": "5395adafe18fcdd20e916b7477aca11ea5894f97",
+      "date": "2020-02-12T11:47:00+08:00",
+      "author": "perye",
+      "email": "11143526@qq.com",
+      "message": "update\n"
+    },
+    {
+      "sha": "eaacde40c7230f95fde9b17e86188d0770c428bc",
+      "date": "2020-02-12T11:37:38+08:00",
+      "author": "perye",
+      "email": "11143526@qq.com",
+      "message": "添加Element UI表单设计及代码生成器，引用https://github.com/JakHuang/form-generator\n"
+    },
+    {
+      "sha": "f779e03d0af399c92f7718103ddc680ef98405ee",
+      "date": "2020-02-11T13:59:12+08:00",
+      "author": "perye",
+      "email": "11143526@qq.com",
+      "message": "update\n"
+    },
+    {
+      "sha": "7ea1f00eee3ec5d0af01a3c0ed0b6f2a9d3d5858",
+      "date": "2020-01-20T17:11:01+08:00",
+      "author": "perye",
+      "email": "11143526@qq.com",
+      "message": "update\n"
+    },
+    {
+      "sha": "5f00fd5f565e7e117f93d0aefc839b027397925e",
+      "date": "2020-01-20T17:04:34+08:00",
+      "author": "perye",
+      "email": "11143526@qq.com",
+      "message": "1、解决部署时命令符号被xss拦截的情况\n2、使用kickOut需要重复解密，key已经解密过一次了，直接使用解密出来的token退出登录就行\n3、优化BaseEntity,开启审计功能。保存时自动设置创建人\n,修改时自动设置修改人\n"
+    },
+    {
+      "sha": "43bc1c89662c55976427061673b91af7177f78fe",
+      "date": "2020-01-20T00:41:19+08:00",
+      "author": "perye",
+      "email": "11143526@qq.com",
+      "message": "update\n"
+    },
+    {
+      "sha": "4a786a3c0f8a8e4e99b3f4781bce0526219f9a2d",
+      "date": "2020-01-07T10:03:23+08:00",
+      "author": "perye",
+      "email": "11143526@qq.com",
+      "message": "update\n"
+    },
+    {
+      "sha": "ec7d716f1c28baf8cf70db7260da8e0a879761be",
+      "date": "2020-01-07T09:46:00+08:00",
+      "author": "perye",
+      "email": "11143526@qq.com",
+      "message": "update\n"
+    },
+    {
+      "sha": "4673cb30e6c2a26290561210512ebfad40b4e14b",
+      "date": "2020-01-03T15:30:07+08:00",
+      "author": "perye",
+      "email": "11143526@qq.com",
+      "message": "update\n"
+    },
+    {
+      "sha": "9b74dcd0d1837f039d39331ff53e1c3d25143e3b",
+      "date": "2020-01-03T15:15:04+08:00",
+      "author": "perye",
+      "email": "11143526@qq.com",
+      "message": "update\n"
+    },
+    {
+      "sha": "f067ce399471b30f4c627283a71aed98c6b15a19",
+      "date": "2020-01-03T13:38:32+08:00",
+      "author": "perye",
+      "email": "11143526@qq.com",
+      "message": "update\n"
+    },
+    {
+      "sha": "9a2dbcbbceec9bf67a1d78793f21a198b157c7cd",
+      "date": "2020-01-03T13:34:02+08:00",
+      "author": "perye",
+      "email": "11143526@qq.com",
+      "message": "update\n"
+    },
+    {
+      "sha": "6773bec67f21ace1a8199db0326acb715e274b6c",
+      "date": "2020-01-03T11:11:10+08:00",
+      "author": "perye",
+      "email": "11143526@qq.com",
+      "message": "update sql\n"
+    },
+    {
+      "sha": "ae9f65c2f11bfddd6d8944669ec38a59048297fd",
+      "date": "2020-01-03T11:09:42+08:00",
+      "author": "perye",
+      "email": "11143526@qq.com",
+      "message": "update\n"
+    },
+    {
+      "sha": "5589a0ce990c9a9ced1607ecd0e8345ff131622d",
+      "date": "2020-01-03T10:10:35+08:00",
+      "author": "perye",
+      "email": "11143526@qq.com",
+      "message": "新增Vue警告日志捕获\n"
+    },
+    {
+      "sha": "a484709217a6d90a6f914459aee32da156f88311",
+      "date": "2020-01-02T22:59:05+08:00",
+      "author": "perye",
+      "email": "11143526@qq.com",
+      "message": "新增Vue错误日志捕获\n"
+    },
+    {
+      "sha": "f2c92e784953027a0a84650065df99d5f5207c73",
+      "date": "2020-01-02T16:54:21+08:00",
+      "author": "perye",
+      "email": "11143526@qq.com",
+      "message": "修复存储管理删除图片不刷新缓存\n"
+    }
+  ],
+  "commit_sha": "a99c4ede10c98dc3e45cf8f83e2ac209296c5e21",
+  "extracted_at": "2026-10-05T18:20:54.319965+00:00"
+}

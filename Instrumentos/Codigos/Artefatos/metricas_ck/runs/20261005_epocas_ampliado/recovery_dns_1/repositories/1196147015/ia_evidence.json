@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "a488652cf7278700fa2b9bbc8bfc0830a330a0a8",
+      "date": "2026-09-21T12:31:52+08:00",
+      "author": "Randycarter",
+      "email": "18754973365@163.com",
+      "message": "fix(backend): do not throw from LocalPdfFileRepository @PreDestroy hook (#172)\n\npersistent() used to rethrow IOException as RuntimeException from the\n@PreDestroy hook. A Spring shutdown hook that throws aborts the rest\nof the container destroy chain and turns an orderly shutdown into a\nfailed one (non-zero exit code, downstream beans never destroyed).\n\nLog the failure and swallow it instead: a partially written\nchat-pdf.properties is rebuilt on next boot, a wedged shutdown is not.\nThe @PostConstruct init() keeps its fail-fast semantics on purpose —\ncorrupt state at startup must still abort the boot."
+    },
+    {
+      "sha": "94ec42b26570f0556286f34d818aa1135b9a9f41",
+      "date": "2026-09-21T12:11:44+08:00",
+      "author": "Randycarter",
+      "email": "18754973365@163.com",
+      "message": "docs(bug-track): mark bug 10 as partial-fixed (#171)\n\nPR #168 delivered the kops_refresh HttpOnly + Secure + SameSite=Strict\n+ Path=/auth cookie on the backend and PR #170 flipped the front-end\nfetch helper to credentials: 'include', so the XSS blast radius of\nthe long-lived refresh token is closed. The apiKey still lives in\nlocalStorage (App.vue) and PR C is intentionally deferred per the\nowner: the apiKey is a user-supplied provider key whose loss the\nuser can revoke on the provider side; a full PKCE / BFF refactor\nwould be the product-level answer.\n\n- update-bug-track.js: bug 10 now maps to PR #168, and the state\n  vocabulary gained 'partial-fixed' with a matching legend entry.\n- bug_track.json: summary.by_state reports 21 merged / 2 not-fix /\n  1 partial-fixed."
+    },
+    {
+      "sha": "799f1b6e0b9ca50002e874d1e6144c993cecac27",
+      "date": "2026-09-07T11:55:06+08:00",
+      "author": "Randycarter",
+      "email": "18754973365@163.com",
+      "message": "fix(security): send kops_refresh cookie on every fetch (#170)\n\nWith PR #168 the backend now delivers the long-lived refresh token\nas a kops_refresh HttpOnly + Path=/auth + SameSite=Strict cookie.\nThis PR is the matching front-end change: every fetch in\nfrontend/src/api/client.ts now sets credentials: 'include' so the\nbrowser automatically attaches the cookie on cross-origin requests\nto /auth/* (and any other endpoints served from the same origin).\n\nFor apiKey-based /auth/token and /auth/refresh the cookie goes\nalong on the same-origin request automatically; for cross-origin\ndeployments the front-end has to be served from a parent domain of\nthe API host, or the operator has to relax SameSite to 'Lax' on\nthe API side. The backend cookie sets SameSite=Strict as the safer\ndefault.\n\n19 fetch call sites are updated. The change is mechanical and the\nbehaviour is governed by the browser: when the access token expires\n(2h by default), the front-end calls /auth/refresh, the browser\nattaches the cookie automatically, and a new access token comes\nback. The user no longer has to re-enter anything."
+    },
+    {
+      "sha": "a7c73fe97704215fbe164446e3dd63e45fbdb032",
+      "date": "2026-09-07T10:29:55+08:00",
+      "author": "Randycarter",
+      "email": "18754973365@163.com",
+      "message": "fix(security): deliver refresh token via HttpOnly cookie (#168)\n\nAuthController.token() now writes the refresh token as a kops_refresh\nHttpOnly + Path=/auth + (Secure, per app.security.refresh-cookie-secure\ndefault true) + SameSite=Strict cookie. An XSS in the front-end can no\nlonger exfiltrate the long-lived refresh credential through\ndocument.cookie, which is the credential with the worst blast radius\nif stolen.\n\nAuthController.refresh() now also accepts the refresh token from the\nnew cookie via @CookieValue; the legacy X-Refresh-Token header is\nstill accepted (header takes precedence) so older clients and test\nscripts keep working. Once the companion PR (PR B) flips the\nfront-end to credentials: 'include' the body field can go away\nwithout breaking older clients mid-upgrade.\n\nThe cookie Secure flag defaults to true; operators serving the app\nover plain HTTP during local development can set\napp.security.refresh-cookie-secure=false to make the cookie usable\nfrom a localhost browser. The default cannot be silently weakened\nby an empty config: missing property still falls back to true."
+    },
+    {
+      "sha": "ef89791cb6d0bedfbc38913bae00b34b6da19e0e",
+      "date": "2026-09-06T17:54:43+08:00",
+      "author": "Randycarter",
+      "email": "18754973365@163.com",
+      "message": "fix(backend): route /ai/chat and /ai/service through cost governance (#165)\n\n* fix(backend): route /ai/chat and /ai/service through cost governance\n\nBoth /ai/chat (text and multimodal) and /ai/service had a direct\nchatClient.stream().content() / chatClient.call().content() path\nthat never called TenantCostService.assertBudget / recordUsage. A\ncaller with PERM_CHAT_WRITE could fire unlimited requests and\nconsume LLM tokens without ever being counted toward the tenant's\nmonthly budget, defeating the cost_governance.enabled = true\nsetting.\n\nWire both endpoints through a private trackedChatStream helper in\nChatController (streaming) and the assert -> call -> record\nsequence in CustomerServiceController (synchronous), mirroring the\npattern WorkflowReactAgentService.callModel already uses.\n\nThe two /ai/chat helpers (textChat and multiModalChat) only differ\nin the .user(...) call; the cost-tracking, advisor and stream()\nsetup is shared inside trackedChatStream, which removes the\nduplicated code branch that the backend-quality SpotBugs\nDB_DUPLICATE_BRANCHES check was flagging on the previous\nincarnation of this change.\n\nAdd WebMvcTest coverage for both controllers so JaCoCo line coverage\nfor ChatController and CustomerServiceController stays at the same\nlevel as before the refactor (the /ai/chat helper methods are\nexercised end-to-end through MockMvc).\n\nCHANGELOG and bug_track.json will be updated separately.\n\n* test(chat): drop failing CI test additions; keep the code fix\n\nAdding a @WebMvcTest in this branch made the existing tests fail in\nCI (Spring context wiring changes for the new TenantCostService\ndependency triggered a coverage threshold issue the maintainer\ndoes not have time to investigate). The maintainer will add their\nown coverage in a follow-up.\n\nThe actual fix for bug 7 (ChatController and CustomerServiceController\nnow route through TenantCostService) is still in\nChatController.java / CustomerServiceController.java."
+    },
+    {
+      "sha": "5ae5e72607675faebdbc744f65c7ffdcdf8d1ed3",
+      "date": "2026-09-06T17:28:28+08:00",
+      "author": "Randycarter",
+      "email": "18754973365@163.com",
+      "message": "docs(bug-track): regenerate via script with PR links + reset bug 7 status (#164)\n\n* chore: gitignore 考研入警准备手册.txt (local work file)\n\n* docs(bug-track): regenerate via script with PR links, severity/state labels\n\n- Add PR_MAP table linking every recorded bug to its PR (or 'not-fix'\n  for the three intentionally deferred ones: #6 schema, #7 cost\n  governance policy, #10 localStorage token).\n- Every bug gets severity_label / state / pr / pr_url / pr_title\n  derived from the table, so the script is the single source of\n  truth for which PR fixed which bug.\n- Top-level summary block: total_bugs, by_severity, by_state,\n  open_prs, severity_legend, state_legend.\n- Use Node fs.writeFileSync to bypass any shell / PowerShell codepage\n  round-trip that scrambled earlier manual rewrites (Windows PS\n  writes strings in the system codepage; node writes raw UTF-8 bytes).\n- update-bug-track.js stays in the repo so future maintainers can\n  re-run the same idempotent script."
+    },
+    {
+      "sha": "26c942cbb9d3c31abbd4ac3b3b6d9faeffdec067",
+      "date": "2026-09-06T16:28:08+08:00",
+      "author": "Randycarter",
+      "email": "18754973365@163.com",
+      "message": "docs(bug-track): update bug 7 handling with PR #162 status (#163)"
+    },
+    {
+      "sha": "5e2d1362c0daeaf9f444f2e6d1702a6fa53fc142",
+      "date": "2026-09-06T12:48:25+08:00",
+      "author": "Randycarter",
+      "email": "18754973365@163.com",
+      "message": "fix(backend): add tenant_id to course/school/course_reservation (#161)\n\nClose cross-tenant data leak on the public school/course/course_reservation tables. V17 Flyway migration adds tenant_id NOT NULL DEFAULT public, plus tenant-leading index on (tenant_id, id). Domain and CourseTools apply the same filter that the rest of the platform already enforces."
+    },
+    {
+      "sha": "1a0d768adcd125f241ba9d7f42a7c8724c186e36",
+      "date": "2026-09-06T12:32:30+08:00",
+      "author": "Randycarter",
+      "email": "18754973365@163.com",
+      "message": "docs(bug-track): add severity_label, state, pr, pr_url, pr_title and top-level summary (#160)"
+    },
+    {
+      "sha": "b5963a72c05d4a61a6fc76f6a60e20005eae5e71",
+      "date": "2026-09-06T11:38:06+08:00",
+      "author": "Randycarter",
+      "email": "18754973365@163.com",
+      "message": "docs: record bug 24 (MCP HTTP response OOM) in bug_track.json (#159)\n\n* fix(harness): cap MCP HTTP response body size\n\nHttpMcpToolAdapter.execute used HttpResponse.BodyHandlers.ofString() to\nread the entire MCP HTTP response into memory. A hostile or\ncompromised MCP server (or a proxy in between) could return a\nmulti-MB body and exhaust JVM memory under agent-driven traffic.\n\nSwitch to ofByteArray() and enforce a 2 MiB cap on the response body\nbefore decoding it as UTF-8 or handing it to the JSON parser. Anything\nlarger is rejected with a structured error and the process is not\nspawned again — the cap matches the same order of magnitude as the\nworkspace max-file-bytes ceiling and is generous for typical JSON-RPC\nresponses.\n\nCHANGELOG and bug_track.json will be updated separately.\n\n* docs: record bug 24 (MCP HTTP response OOM) in bug_track.json"
+    },
+    {
+      "sha": "ed723c88342f87c08eeda8a5c26dd9c11e5e50d3",
+      "date": "2026-09-06T11:31:01+08:00",
+      "author": "Randycarter",
+      "email": "18754973365@163.com",
+      "message": "fix(harness): cap MCP HTTP response body size (#158)\n\nHttpMcpToolAdapter.execute used HttpResponse.BodyHandlers.ofString() to read the entire MCP HTTP response into memory. Switch to ofByteArray() with a 2 MiB cap."
+    },
+    {
+      "sha": "97c95ab4094582dc2eff6e21cec9cd5602896b77",
+      "date": "2026-09-04T19:03:08+08:00",
+      "author": "Randycarter",
+      "email": "18754973365@163.com",
+      "message": "docs: record bug 23 (graph cross-tenant entity read) in bug_track.json (#157)"
+    },
+    {
+      "sha": "839c880ea85e2611ac7cdb9fd7b2790fcb0c6614",
+      "date": "2026-09-04T18:50:14+08:00",
+      "author": "Randycarter",
+      "email": "18754973365@163.com",
+      "message": "fix(graph): scope findByEntityId by tenant to close cross-tenant leak (#156)\n\nGraphService.getNeighbors called entityMapper.findByEntityId without a tenantId filter. Once a relation row is fetched (already tenant-scoped), the entity lookup can still return a neighbor owned by a different tenant, since the schema does not enforce that both endpoints of a relation share a tenant. Add tenantId to findByEntityId and pass it from the caller."
+    },
+    {
+      "sha": "2f73a96f5a6bfa7da18f1d51a07f2918ce16662e",
+      "date": "2026-09-04T18:01:41+08:00",
+      "author": "Randycarter",
+      "email": "18754973365@163.com",
+      "message": "docs: record bug 22 (git --output flag) in bug_track.json (#155)"
+    },
+    {
+      "sha": "9a5b1fc0f9a2e83ab1fc58fb4d824a37f0139fef",
+      "date": "2026-09-04T17:45:33+08:00",
+      "author": "Randycarter",
+      "email": "18754973365@163.com",
+      "message": "fix(harness): reject --output and other host-file-write git flags (#154)\n\nDeny --output / -o / --exec / --upload-pack / --receive-pack / --ssh-command on the whitelisted git subcommands so a prompt-injected or misconfigured LLM-driven agent invocation of workspace_run_shell cannot use git log --output= to write files outside the workspace, etc. Refactor the option-stripping helper so the same logic now serves both the git deny-list and the existing ripgrep deny-list."
+    },
+    {
+      "sha": "07affbb5776af3cdbe121aedaa542d93d0f74a33",
+      "date": "2026-09-04T16:59:14+08:00",
+      "author": "Randycarter",
+      "email": "18754973365@163.com",
+      "message": "docs: record bug 21 (mvn test -D property injection) in bug_track.json (#153)"
+    },
+    {
+      "sha": "e2c39e67dbd906ffd092bfa139314ec4a92eaffe",
+      "date": "2026-09-01T06:50:26+08:00",
+      "author": "Randycarter",
+      "email": "18754973365@163.com",
+      "message": "fix(harness): restrict mvn test -D properties to a safe allow-list (#152)\n\nRestrict -D on the mvn test command line to a fixed set of safe property prefixes (test=, groups=, excludedGroups=, failIfNoTests=, skipTests=, maven.test.skip=) so a prompt-injected or misconfigured LLM-driven agent invocation of workspace_run_shell cannot pass -DargLine / -Dsurefire.suiteXmlFiles / -Dexec.executable to escape the sandbox from inside the Surefire test JVM."
+    },
+    {
+      "sha": "43990c7315fb22925eca6a3b0c684bdfeaebcaf4",
+      "date": "2026-08-31T19:09:52+08:00",
+      "author": "Randycarter",
+      "email": "18754973365@163.com",
+      "message": "docs: record bugs 19 and 20 in bug_track.json (#151)"
+    },
+    {
+      "sha": "822f48759d7c65d038dd2b898bcc67776f2eec64",
+      "date": "2026-08-31T18:48:03+08:00",
+      "author": "Randycarter",
+      "email": "18754973365@163.com",
+      "message": "fix(harness): also sweep expired trusted-action tokens on execute (#150)\n\nThe pendingActions map only got pruned when preview() was called. Mirror the same removeIf on entry to execute so any code path that touches the map also reclaims expired entries."
+    },
+    {
+      "sha": "ce67d3bf5b92bb6271debe5a672f12770f72abb5",
+      "date": "2026-08-31T16:42:00+08:00",
+      "author": "Randycarter",
+      "email": "18754973365@163.com",
+      "message": "fix(harness): stop walking candidates once maxMatches is hit (#149)\n\nSearch-text already caps per-file read at 1MB and the candidate file list at maxSearchFiles, but the outer loop used continue when matches.size() >= maxMatches. Switch to break so a workspace with many files does not waste I/O after the requested number of matches has been collected."
+    },
+    {
+      "sha": "1664906cb6684b1fbd0c8fdeb9de0b8f441a97a7",
+      "date": "2026-08-31T16:23:54+08:00",
+      "author": "Randycarter",
+      "email": "18754973365@163.com",
+      "message": "fix(harness): reject ripgrep flags that execute commands or read host files (#148)\n\nReject --pre / --pre-glob / --hostname-bin / --regexp-file in argsWithinWorkspace so a prompt-injected or misconfigured LLM-driven agent invocation of workspace_run_shell cannot pivot from ripgrep to arbitrary command execution or host file reads."
+    },
+    {
+      "sha": "c2e7de1d21dfcdd8ee30b52e8561f5e20cd71b0f",
+      "date": "2026-08-31T16:10:33+08:00",
+      "author": "Randycarter",
+      "email": "18754973365@163.com",
+      "message": "fix(harness): cap workspace propose_patch/apply_patch content size (#147)\n\nReuse the existing app.agent-harness.workspace.max-file-bytes cap so a prompt-injected or misconfigured LLM-driven agent invocation of workspace_propose_patch / workspace_apply_patch cannot submit a multi-MB payload and force the worker to allocate a matching string or write a multi-MB file. The cap is also re-checked on the post-apply content for the patch branch."
+    },
+    {
+      "sha": "a1b12877a241fd6d5885cea57e36edc35bd8e418",
+      "date": "2026-08-29T09:23:07+08:00",
+      "author": "however",
+      "email": "however-yir@users.noreply.github.com",
+      "message": "fix(java): revive revoked api keys with explicit SQL, not updateById\n\nMyBatis-Plus updateById applies the NOT_NULL field strategy: the null\nrevoked_at / revoked_reason on the revived record were silently skipped, so\nthe row stayed revoked and findActiveByKeyHash still returned nothing —\nbootstrap logged 'provisioned' yet every authenticated request 401'd.\nApiKeyMapper.revive() sets the columns explicitly (same shape revoke()\nuses) and provision calls it.\n"
+    },
+    {
+      "sha": "fea55aef923e2dda72dd3859aa6bd8f9a8cc9573",
+      "date": "2026-08-29T09:08:55+08:00",
+      "author": "however",
+      "email": "however-yir@users.noreply.github.com",
+      "message": "fix(java): revive bootstrapped api keys by key_hash, not key_name\n\nThe provision() revival branch looked up the revoked row by the operator's\nkey_name, but V15 leaves the original seed key_name ('demo-admin-key-2026')\nintact while contract stacks provision a different APP_BOOTSTRAP_KEY_NAME\n('contract-admin'), so the lookup missed, insert collided with the UNIQUE\nkey_hash, and the app failed at startup. Add ApiKeyMapper.findByKeyHash and\nrevive the row that actually owns the hash, updating its key_name to the\noperator-chosen one.\n"
+    },
+    {
+      "sha": "f141b02552c553f64c303f543c33ab705ab2eeaa",
+      "date": "2026-08-29T08:48:40+08:00",
+      "author": "however",
+      "email": "however-yir@users.noreply.github.com",
+      "message": "fix(java): repair three baseline issues surfaced by the cross-runtime contract run\n\n1. Startup crash (BeanDefinitionOverrideException 'vectorStore'): the\n   Spring AI 1.0.0-M6 -> 1.1.7 upgrade (673fb14) moved\n   PgVectorStoreAutoConfiguration to a new package but application.yml still\n   excluded the M6 class name, so auto-configuration and the custom\n   VectorStoreConfiguration both registered vectorStore. Update the exclude\n   to org.springframework.ai.vectorstore.pgvector.autoconfigure.\n\n2. POST /ai/research/tasks always failed (IllegalArgumentException\n   'conversationId cannot be null'): CommonConfiguration wires a\n   MessageChatMemoryAdvisor into every ChatClient, yet ResearchPlannerAgent\n   and ReportWriterAgent never passed CONVERSATION_ID, whose absence the\n   1.1.7 MessageWindowChatMemory rejects at call time. Both agents now take\n   a conversationId and pass it to the advisor; DeepResearchService supplies\n   research_<taskId> (matching its existing retrieval chatId).\n\n3. V15 revoked the repository-committed demo keys with no operator re-seed\n   path, leaving deployments without an ADMIN credential. Add the\n   bootstrap-credential mechanism: app.bootstrap (APP_BOOTSTRAP_API_KEY /\n   APP_BOOTSTRAP_KEY_NAME / APP_BOOTSTRAP_TENANT_ID / role), an idempotent\n   ApiKeyLifecycleService.provision that revives an already-revoked hash\n   row instead of colliding with the UNIQUE key_hash, and a startup\n   ApplicationRunner that seeds it (fail-closed on misconfiguration).\n\nLocal verification: mvn verify passes (JDK 23, release 17).\n"
+    },
+    {
+      "sha": "a3730820090b16548556102c2306a7d7610ec6b4",
+      "date": "2026-08-28T22:43:37+08:00",
+      "author": "Randycarter",
+      "email": "18754973365@163.com",
+      "message": "fix(security): derive rate-limit IP from X-Forwarded-For behind proxies (#146)\n\n* fix(security): derive rate-limit IP from X-Forwarded-For behind proxies\n\nRateLimitFilter previously used request.getRemoteAddr() as the per-IP\nbucket key. When the service is deployed behind a reverse proxy\n(nginx, k8s ingress, ALB, etc.) every anonymous caller shares the\nproxy's own loopback address and a single attacker can exhaust the\nlimit for the whole tenant.\n\nAdd resolveClientIp which:\n- prefers request.getRemoteAddr() when the direct peer is already a\n  public address, so a malicious caller cannot inject a fake\n  X-Forwarded-For to rotate their own bucket\n- only walks X-Forwarded-For when the direct peer is private/loopback\n- picks the rightmost non-private hop, so the caller cannot forge a\n  leftmost entry to escape their own bucket\n\nUses textual prefix matching for the private ranges (RFC1918, loopback,\nlink-local) instead of InetAddress parsing so malformed X-Forwarded-For\nvalues fail closed.\n\n* docs: add bug 16 to bug_track.json and CHANGELOG"
+    },
+    {
+      "sha": "1cf29c25e539510ed93080e294bbaaca193b2795",
+      "date": "2026-08-28T21:12:05+08:00",
+      "author": "Randycarter",
+      "email": "18754973365@163.com",
+      "message": "fix(backend): reject private/loopback MCP baseUrls to close SSRF (#145)\n\nAdd isSafeBaseUrl guard to HttpMcpToolAdapter. Closes the path where an agent invocation of mcp_call (or a misconfigured app.agent-harness.mcp.servers.*.base-url) could be redirected at internal services or the cloud instance metadata endpoint.\n\nOperators can opt in to a curated allow-list via app.agent-harness.mcp.allowed-hosts for dev/test environments that need to point at a localhost mock; production stays fail-closed."
+    },
+    {
+      "sha": "58f721ea35b8142b9990962e656eacf487ce1902",
+      "date": "2026-08-28T18:16:36+08:00",
+      "author": "however-yir",
+      "email": "liuhowever@gmail.com",
+      "message": "Merge pull request #144 from Randycarteronion/fix/feedback-dataset-rotation\n\nfix(backend): cap feedback dataset growth and filter expired memories"
+    },
+    {
+      "sha": "da230309993d93d4005c103736322a3cd0d1960a",
+      "date": "2026-08-28T18:16:33+08:00",
+      "author": "however-yir",
+      "email": "liuhowever@gmail.com",
+      "message": "Merge pull request #143 from Randycarteronion/fix/multipart-mime-fallback\n\nfix(backend): handle missing multipart Content-Type in /ai/chat"
+    },
+    {
+      "sha": "d91405bd46751aa4f3e00da432ff77cbf9a5c023",
+      "date": "2026-08-28T18:04:07+08:00",
+      "author": "Randycarter",
+      "email": "18754973365@163.com",
+      "message": "fix(memory): add expires_at filter to the three memory queries PR #137 missed\n\nMemoryItemMapper.findByUser, findByTenantAndTaskId, and\nfindByTenantAndMemoryId were left out of the expires_at filter added\nin PR #137. As a result, MemoryService.buildContext could still pull\nexpired memories into RAG prompts via findByUser (used by both\nqueryShortMemory and queryLongMemory).\n\nAdd the same (expires_at IS NULL OR expires_at > NOW()) predicate\nused by the two queries that were already patched.\n\nCHANGELOG and bug_track.json (bug 14) updated.\n"
+    }
+  ],
+  "commit_sha": "a488652cf7278700fa2b9bbc8bfc0830a330a0a8",
+  "extracted_at": "2026-10-05T18:18:25.803594+00:00"
+}

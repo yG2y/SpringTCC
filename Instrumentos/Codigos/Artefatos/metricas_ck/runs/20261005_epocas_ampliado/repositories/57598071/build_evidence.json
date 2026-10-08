@@ -1,0 +1,32 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "2.0.7.RELEASE",
+  "spring_boot_major": "2",
+  "java_versions_declared": "1.8",
+  "build_evidence": [
+    {
+      "file": "matrix-spring-boot-proxy-example/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "matrix-spring-boot-proxy-example/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "matrix-spring-boot-registrar-example/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "matrix-spring-boot-registrar-example/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "matrix-spring-boot-selector-example/pom.xml",
+      "artifact": "spring-boot-dependencies"
+    },
+    {
+      "file": "matrix-spring-boot-selector-example/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    }
+  ]
+}

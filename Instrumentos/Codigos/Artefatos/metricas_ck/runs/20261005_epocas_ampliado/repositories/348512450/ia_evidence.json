@@ -1,0 +1,209 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 28,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "8e3d6a5c37355c3b7e3e703b277f13af856bd306",
+      "date": "2025-01-09T15:42:00-06:00",
+      "author": "Antoine",
+      "email": "meyer.ant@gmail.com",
+      "message": "Merge pull request #34 from antoinemeyer/issue-33-fix-jdk-proxy-mocking\n\nfix #33 : fix jdk proxy mocking"
+    },
+    {
+      "sha": "d8545144ed59d1c6a8b26b74d8ab519a71f12931",
+      "date": "2025-01-09T14:48:38-06:00",
+      "author": "antoine",
+      "email": "meyer.ant@gmail.com",
+      "message": "fix #33 : fix jdk proxy mocking"
+    },
+    {
+      "sha": "fdb9541dbc28bc333abe4d52e1e3a79e1986d133",
+      "date": "2024-11-30T08:06:58-06:00",
+      "author": "Antoine",
+      "email": "meyer.ant@gmail.com",
+      "message": "Merge pull request #31 from antoinemeyer/v1.8\n\nv1.8 version"
+    },
+    {
+      "sha": "49afd6b6d52b2771c6eb7c40b171ae3e2046a233",
+      "date": "2024-11-30T07:48:26-06:00",
+      "author": "antoine",
+      "email": "meyer.ant@gmail.com",
+      "message": "version update to 1.8"
+    },
+    {
+      "sha": "ad342ad7a56a46daf0796589a9eb4ed42558edbf",
+      "date": "2024-11-30T07:47:07-06:00",
+      "author": "Antoine",
+      "email": "meyer.ant@gmail.com",
+      "message": "Fix mock implementations of interface (#32)\n\n"
+    },
+    {
+      "sha": "20fbc5de3deb5538db4fbd2f2e87fe8ad427f9d6",
+      "date": "2024-11-28T10:52:59-06:00",
+      "author": "Antoine",
+      "email": "meyer.ant@gmail.com",
+      "message": "Issue 23 fix verify in advised beans (#29)\n\n"
+    },
+    {
+      "sha": "1e9be00a2b90bca52126bef043c3cdf499a3856d",
+      "date": "2024-08-10T09:14:59-05:00",
+      "author": "Antoine",
+      "email": "meyer.ant@gmail.com",
+      "message": "Merge pull request #26 from antoinemeyer/v1.7\n\nv1.7"
+    },
+    {
+      "sha": "e417bb0087c59ff32d703684db1fef396394a0bd",
+      "date": "2024-08-10T08:59:27-05:00",
+      "author": "antoine",
+      "email": "meyer.ant@gmail.com",
+      "message": "update documentation for v1.7"
+    },
+    {
+      "sha": "999d54c7c080c51726ff496e0041511c6943b4e7",
+      "date": "2024-08-10T15:46:42+02:00",
+      "author": "kyriosX",
+      "email": "ivankyrios@gmail.com",
+      "message": "Allow @MockInBean to be used in meta-annotations (#25)\n\nCo-authored-by: Ivan_Kyryliuk <Ivan_Kyryliuk@epam.com>"
+    },
+    {
+      "sha": "c71daa096caf6aa497970c6abc189d19cae15832",
+      "date": "2024-03-23T10:23:41-05:00",
+      "author": "Antoine",
+      "email": "meyer.ant@gmail.com",
+      "message": "Update README.MD"
+    },
+    {
+      "sha": "a55802f0292f1dbf5970df6d94e3c65b5643914a",
+      "date": "2024-03-23T10:18:34-05:00",
+      "author": "Antoine",
+      "email": "meyer.ant@gmail.com",
+      "message": "v1.6: Fix mocks in spies (#24)\n\nFix mocks in spies"
+    },
+    {
+      "sha": "f223fa8c52837f93aecbcb329b49a7f4b607e98b",
+      "date": "2023-04-12T13:57:11-05:00",
+      "author": "Antoine",
+      "email": "meyer.ant@gmail.com",
+      "message": "(issue 20): Handle top-level nested test classes (#22)\n\n* (issue 20): fix issue where spring integration tests that do not declare any @MockInBean fields throw an exception due to applicableTestContext being null\n\n* handle top-level nested test classes\n\n---------\n\nCo-authored-by: jamesforward <james.forward@mettle.co.uk>"
+    },
+    {
+      "sha": "17f5f3da9eef80f39cd646c97bebca2015c08480",
+      "date": "2022-11-03T11:52:51-04:00",
+      "author": "Antoine",
+      "email": "meyer.ant@gmail.com",
+      "message": "Merge pull request #19 from antoinemeyer/v1.5.1\n\nv1.5.1 handle multiple layers of nested test classes (#18)"
+    },
+    {
+      "sha": "342c540479ae06c7f7a8ad2b7af7aebaf518a0ba",
+      "date": "2022-11-03T16:47:12+01:00",
+      "author": "Maximilian Wiedemann",
+      "email": "MaximilianWiedemann@users.noreply.github.com",
+      "message": "v1.5.1 handle multiple layers of nested test classes (#18)\n\n"
+    },
+    {
+      "sha": "e9565bcf01abf355738f03c6eecf95d56d227c76",
+      "date": "2022-10-30T15:05:02-04:00",
+      "author": "Antoine",
+      "email": "meyer.ant@gmail.com",
+      "message": "v1.5 handle nested test classes (#17)\n\n"
+    },
+    {
+      "sha": "960522696faaaf540a8211aef9d2f1a26f270267",
+      "date": "2022-09-17T11:46:02-04:00",
+      "author": "Antoine",
+      "email": "meyer.ant@gmail.com",
+      "message": "Allow mock injection in beans implementing interface by interface reference (#14)\n\n"
+    },
+    {
+      "sha": "346e78f1e51aaafe1d1844aa3117bcbc3c52ad50",
+      "date": "2022-01-05T13:29:58-05:00",
+      "author": "Antoine",
+      "email": "antoine.meyer@trizic.com",
+      "message": "Add License (#10)\n\n"
+    },
+    {
+      "sha": "82f95cf2d856ea621b790ad1f4f70d189735615c",
+      "date": "2021-12-07T08:49:40-05:00",
+      "author": "Antoine",
+      "email": "antoine.meyer@trizic.com",
+      "message": "Fix parameterized Type (#8)\n\n"
+    },
+    {
+      "sha": "09c3a31481d89eb012c13707c35edbfbac28b25a",
+      "date": "2021-12-03T19:57:06-05:00",
+      "author": "Antoine",
+      "email": "antoine.meyer@trizic.com",
+      "message": "Fix injection in AOP proxies (#6)\n\n"
+    },
+    {
+      "sha": "8e5e2be6a2d3a94eee4d6874af896483c4a76f2d",
+      "date": "2021-04-10T13:54:00-04:00",
+      "author": "Antoine",
+      "email": "antoine.meyer@trizic.com",
+      "message": "Update README.MD"
+    },
+    {
+      "sha": "b7ff3057db61c26d17d9ebe1a2e00f0d6a05041c",
+      "date": "2021-04-10T13:04:24-04:00",
+      "author": "Antoine",
+      "email": "antoine.meyer@trizic.com",
+      "message": "Isolation from package-protected spring boot test code (#2)\n\n"
+    },
+    {
+      "sha": "44dbbb5e68fa9862a15a7c5fdda41aad6f2aa42c",
+      "date": "2021-03-17T20:43:23-04:00",
+      "author": "Antoine",
+      "email": "antoine.meyer@trizic.com",
+      "message": "Update README.MD"
+    },
+    {
+      "sha": "0152a525ff78c7a880c92b9c6585e21051333cb1",
+      "date": "2021-03-16T18:51:52-04:00",
+      "author": "Antoine",
+      "email": "antoine.meyer@trizic.com",
+      "message": "Update README.MD"
+    },
+    {
+      "sha": "703d3ad50df4ed5423cb9d7ef22558f3a0023a70",
+      "date": "2021-03-16T18:50:12-04:00",
+      "author": "Antoine",
+      "email": "antoine.meyer@trizic.com",
+      "message": "Update README.MD"
+    },
+    {
+      "sha": "0d62a46682b53bbc647aadcb9aaa1a13edc8d411",
+      "date": "2021-03-16T18:47:47-04:00",
+      "author": "Antoine",
+      "email": "antoine.meyer@trizic.com",
+      "message": "Create maven.yml"
+    },
+    {
+      "sha": "e7d1749200e23cbbfcb0165f988cef6f6d7408db",
+      "date": "2021-03-16T18:46:38-04:00",
+      "author": "Antoine",
+      "email": "antoine.meyer@trizic.com",
+      "message": "Update README.MD"
+    },
+    {
+      "sha": "3f2edeaea08210aebbf6e2664b66c01528bf3a8f",
+      "date": "2021-03-16T18:45:40-04:00",
+      "author": "Antoine",
+      "email": "antoine.meyer@trizic.com",
+      "message": "Update README.MD"
+    },
+    {
+      "sha": "f082b5710469c2e0a184e82e4bc898becc38da68",
+      "date": "2021-03-16T18:44:56-04:00",
+      "author": "antoine",
+      "email": "antoine.meyer@trizic.com",
+      "message": "initial"
+    }
+  ],
+  "commit_sha": "8e3d6a5c37355c3b7e3e703b277f13af856bd306",
+  "extracted_at": "2026-10-05T18:16:42.239512+00:00"
+}

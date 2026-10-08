@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "3d2978560b469bd6e6724534ca54942c0df24e60",
+      "date": "2026-09-16T10:52:09+03:00",
+      "author": "ekaraosmanoglu",
+      "email": "ege.karaosmanoglu@vodafoneziggo.com",
+      "message": "Merge branch 'dev'\n"
+    },
+    {
+      "sha": "95f20ef94ae4316e6a69f50a4bee2c4d6b33ca4f",
+      "date": "2026-09-16T10:50:18+03:00",
+      "author": "egekaraosmanoglu",
+      "email": "egekaraosmanoglu@gmail.com",
+      "message": "Merge pull request #595 from camelbee/renovate/tanstack-query-monorepo\n\nchore(deps): update dependency @tanstack/react-query to v5.103.0"
+    },
+    {
+      "sha": "366f0c9cc541b1fe43fb3d080f38923577a5839a",
+      "date": "2026-09-16T07:44:12Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "chore(deps): update dependency @tanstack/react-query to v5.103.0"
+    },
+    {
+      "sha": "7fddf0d0fb7370898beb43bc558673c521f0c1eb",
+      "date": "2026-09-16T10:42:37+03:00",
+      "author": "ekaraosmanoglu",
+      "email": "ege.karaosmanoglu@vodafoneziggo.com",
+      "message": "Merge branch 'dev'\n"
+    },
+    {
+      "sha": "6aeee00f53962ec97be201a1f2a4b04e1e86c900",
+      "date": "2026-09-16T07:59:25+03:00",
+      "author": "egekaraosmanoglu",
+      "email": "egekaraosmanoglu@gmail.com",
+      "message": "Merge pull request #594 from camelbee/renovate/react-router-monorepo\n\nchore(deps): update dependency react-router-dom to v7.18.4"
+    },
+    {
+      "sha": "b87150cb7cc97118bcc6680fd11ae7ea3f7d774e",
+      "date": "2026-09-15T21:36:14Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "chore(deps): update dependency react-router-dom to v7.18.4"
+    },
+    {
+      "sha": "76e23a38359054f3c46f647facaf7170ebc3b1b9",
+      "date": "2026-09-15T12:08:09+03:00",
+      "author": "egekaraosmanoglu",
+      "email": "egekaraosmanoglu@gmail.com",
+      "message": "Merge pull request #592 from camelbee/renovate/vitest-monorepo\n\nchore(deps): update vitest monorepo to v5.0.1"
+    },
+    {
+      "sha": "07a5a132be6334b5ec79398099edd4ce9992272e",
+      "date": "2026-09-15T09:03:06Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "chore(deps): update vitest monorepo to v5.0.1"
+    },
+    {
+      "sha": "64f694bddfc3be7e5a7368257d469952735a760c",
+      "date": "2026-09-15T12:01:40+03:00",
+      "author": "ekaraosmanoglu",
+      "email": "ege.karaosmanoglu@vodafoneziggo.com",
+      "message": "fix(deps): pin langchain4j.version to 1.19.0 to match quarkus-camel-bom\n\nThe Quarkus platform BOM pins dev.langchain4j:langchain4j-core to 1.19.0,\nbut this property drifted to 1.20.0. Since langchain4j-anthropic,\n-mistral-ai, -pgvector, and -embeddings-all-minilm-l6-v2 aren't managed\nby the Quarkus platform BOMs, this property alone pins them — the skew\ncaused NoClassDefFoundError on LANGCHAIN4JEMBEDDING projects and\nmalformed provider requests on LANGCHAIN4JAGENT ones at boot.\n\nSpringboot's langchain4j.version is kept equal to Quarkus's for\nconsistency, even though camel-spring-boot-bom doesn't pin\nlangchain4j-core itself.\n"
+    },
+    {
+      "sha": "6c2436c3427488acb38771c7279d01a673498682",
+      "date": "2026-09-14T17:52:18+03:00",
+      "author": "ekaraosmanoglu",
+      "email": "ege.karaosmanoglu@vodafoneziggo.com",
+      "message": "chore(release): 4.1.0\n\nMechanical version bump, 4.0.1 -> 4.1.0, no functional changes.\n\nCovers the reactor POMs (versions:set scope), the three out-of-reactor\npom-custom.xml files, pom_maven_central.xml, the UI (package.json /\npackage-lock.json; NavBar reads it via the Vite __APP_VERSION__\ndefine), the Camel K modeline in MusicianRoute.java, the io.camelbee\ncoordinates in the dependencies.list files, and the <version> install\nsnippets plus the camel-k staging commands in the READMEs.\n\nVerified with a full `mvn install` from repo root — the rebuilt UI\nbundle embeds 4.1.0 and is correctly referenced from the core jars'\nindex.html.\n"
+    },
+    {
+      "sha": "16c39d6d212e3c4c17b813bb920de7e283f35df1",
+      "date": "2026-09-14T14:33:00+03:00",
+      "author": "ekaraosmanoglu",
+      "email": "ege.karaosmanoglu@vodafoneziggo.com",
+      "message": "chore(deps): regenerate dependencies.list snapshots\n"
+    },
+    {
+      "sha": "bc410a7d0a8725f7986ed84fb8ad672f4a16b4b2",
+      "date": "2026-09-14T10:18:22+03:00",
+      "author": "egekaraosmanoglu",
+      "email": "egekaraosmanoglu@gmail.com",
+      "message": "Merge pull request #591 from camelbee/renovate/major-quarkus-mcp-server.version\n\nfix(deps): update quarkus-mcp-server.version to v2"
+    },
+    {
+      "sha": "da09885669b4dc5146e8c1a8755897f35a63065b",
+      "date": "2026-09-14T00:54:40Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "fix(deps): update quarkus-mcp-server.version to v2"
+    },
+    {
+      "sha": "3a13405a0d24f22de3c03dfecd394bc39587d91e",
+      "date": "2026-09-14T00:55:24+03:00",
+      "author": "egekaraosmanoglu",
+      "email": "egekaraosmanoglu@gmail.com",
+      "message": "Merge pull request #590 from camelbee/renovate/major-vitest-monorepo\n\nchore(deps): update vitest monorepo to v5"
+    },
+    {
+      "sha": "a4e8121274952e84b2446e0e0b6e140227027cf6",
+      "date": "2026-09-14T00:55:05+03:00",
+      "author": "egekaraosmanoglu",
+      "email": "egekaraosmanoglu@gmail.com",
+      "message": "Merge pull request #589 from camelbee/renovate/testing-library-monorepo\n\nchore(deps): update dependency @testing-library/dom to v10.4.2"
+    },
+    {
+      "sha": "6a2eb8ca72fcdc75b8d003a1c90694a9df0ce518",
+      "date": "2026-09-13T21:27:04Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "chore(deps): update vitest monorepo to v5"
+    },
+    {
+      "sha": "295226f6923ac4f836a420177466ab389db5565a",
+      "date": "2026-09-13T21:26:49Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "chore(deps): update dependency @testing-library/dom to v10.4.2"
+    },
+    {
+      "sha": "75c23a2f4a69dc79ae97afb721f4367c12e47765",
+      "date": "2026-09-13T19:19:06+02:00",
+      "author": "egekaraosmanoglu",
+      "email": "egekaraosmanoglu@gmail.com",
+      "message": "Merge pull request #588 from camelbee/renovate/snakeyaml.version\n\nfix(deps): update dependency org.yaml:snakeyaml to v2.7"
+    },
+    {
+      "sha": "b9d98de6515e678a7ae0f2133fb54636bcd9cccf",
+      "date": "2026-09-13T19:18:51+02:00",
+      "author": "egekaraosmanoglu",
+      "email": "egekaraosmanoglu@gmail.com",
+      "message": "Merge pull request #587 from camelbee/renovate/commons-lang3.version\n\nfix(deps): update dependency org.apache.commons:commons-lang3 to v3.20.0"
+    },
+    {
+      "sha": "3c11a0f2221058e74306f38dc2150e6b0522eb56",
+      "date": "2026-09-13T17:18:23Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "fix(deps): update dependency org.yaml:snakeyaml to v2.7"
+    },
+    {
+      "sha": "2b6594115d6f2b06ba06216006aa1ab74658ac23",
+      "date": "2026-09-13T19:18:20+02:00",
+      "author": "egekaraosmanoglu",
+      "email": "egekaraosmanoglu@gmail.com",
+      "message": "Merge pull request #586 from camelbee/renovate/langchain4j-monorepo\n\nfix(deps): update dependency dev.langchain4j:langchain4j-bom to v1.20.0"
+    },
+    {
+      "sha": "61c2ed37017a3a7036d9d287584976616de6b8a7",
+      "date": "2026-09-13T17:18:19Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "fix(deps): update dependency org.apache.commons:commons-lang3 to v3.20.0"
+    },
+    {
+      "sha": "a501d149e0414000ca0c52f59e43823e5102ea5b",
+      "date": "2026-09-13T19:18:02+02:00",
+      "author": "egekaraosmanoglu",
+      "email": "egekaraosmanoglu@gmail.com",
+      "message": "Merge pull request #585 from camelbee/renovate/proto-google-common-protos.version\n\nfix(deps): update dependency com.google.api.grpc:proto-google-common-protos to v2.76.0"
+    },
+    {
+      "sha": "be04a8f0e1c01255bb4d6d9acd38e3d79bd1116a",
+      "date": "2026-09-13T19:17:44+02:00",
+      "author": "egekaraosmanoglu",
+      "email": "egekaraosmanoglu@gmail.com",
+      "message": "Merge pull request #584 from camelbee/renovate/react-monorepo\n\nchore(deps): update react monorepo to v19.3.0"
+    },
+    {
+      "sha": "af6a4b5f6e8752fbeeaaf5e8bbd8110b7291b643",
+      "date": "2026-09-13T19:17:30+02:00",
+      "author": "egekaraosmanoglu",
+      "email": "egekaraosmanoglu@gmail.com",
+      "message": "Merge pull request #583 from camelbee/renovate/vite-8.x-lockfile\n\nchore(deps): update dependency vite to v8.3.0"
+    },
+    {
+      "sha": "e487e949291bf961d1059b1eef5733337074a8dd",
+      "date": "2026-09-13T13:25:06Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "fix(deps): update dependency dev.langchain4j:langchain4j-bom to v1.20.0"
+    },
+    {
+      "sha": "e6f4f0f89cd432690a6a9588b21c1e86b8ab317b",
+      "date": "2026-09-13T13:24:58Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "fix(deps): update dependency com.google.api.grpc:proto-google-common-protos to v2.76.0"
+    },
+    {
+      "sha": "85b89b7276d53c6d740b4f176296642e7971ae2e",
+      "date": "2026-09-13T10:35:03Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "chore(deps): update react monorepo to v19.3.0"
+    },
+    {
+      "sha": "342ac59659299e3cd038b350b4b53edf7b60b61b",
+      "date": "2026-09-13T10:34:56Z",
+      "author": "renovate[bot]",
+      "email": "29139614+renovate[bot]@users.noreply.github.com",
+      "message": "chore(deps): update dependency vite to v8.3.0"
+    },
+    {
+      "sha": "d83184c197a8a12694bc6f043d1407d4de5ae02c",
+      "date": "2026-09-13T12:58:30+03:00",
+      "author": "ekaraosmanoglu",
+      "email": "ege.karaosmanoglu@vodafoneziggo.com",
+      "message": "chore(deps): regenerate dependencies.list snapshots\n\nRefresh the resolved-dependency manifests to match the already-pinned\nQuarkus platform 3.39.3 and Lombok 1.18.48, which had bumped\ntransitive versions (e.g. quarkus-arc, jackson 2.22.2) without the\nsnapshots being regenerated.\n"
+    }
+  ],
+  "commit_sha": "3d2978560b469bd6e6724534ca54942c0df24e60",
+  "extracted_at": "2026-10-05T18:16:11.338930+00:00"
+}

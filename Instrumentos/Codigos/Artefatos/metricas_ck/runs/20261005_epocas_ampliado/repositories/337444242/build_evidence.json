@@ -1,0 +1,264 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "3.5.11;4.0.3",
+  "spring_boot_major": "multiple",
+  "java_versions_declared": "${java.version};21",
+  "build_evidence": [
+    {
+      "file": "camel-spring/person-demo/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "camel-spring/person-demo/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "camel-spring/person-demo/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "camel-spring/person-demo/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "camel-spring/person-demo/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "camel-spring/person-demo/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "camel-spring/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "event-driven/consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "event-driven/consumer/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "event-driven/consumer/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "event-driven/event-gateway/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "event-driven/event-gateway/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "event-driven/order-query-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "event-driven/order-query-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "event-driven/order-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "event-driven/order-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "event-driven/payment-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "event-driven/payment-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "event-driven/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "event-driven/producer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "event-driven/producer/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "event-driven/producer/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "event-driven/shipment-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "event-driven/shipment-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "event-driven/streams/consumer-streams/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "event-driven/streams/consumer-streams/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "event-driven/streams/producer-streams/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "messaging/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "messaging/simple-consumer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "messaging/simple-consumer/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "messaging/simple-consumer/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "messaging/simple-consumer/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "messaging/simple-counter/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "messaging/simple-counter/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "messaging/simple-producer/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "messaging/simple-producer/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "messaging/simple-producer/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "messaging/simple-producer/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "micro-springboot/insurance-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "micro-springboot/insurance-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "micro-springboot/insurance-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "micro-springboot/insurance-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "micro-springboot/insurance-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "micro-springboot/insurance-service/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "micro-springboot/insurance-service/pom.xml",
+      "artifact": "spring-boot-testcontainers"
+    },
+    {
+      "file": "micro-springboot/insurance-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "micro-springboot/person-service/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "micro-springboot/person-service/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "micro-springboot/person-service/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "micro-springboot/person-service/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "micro-springboot/person-service/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "micro-springboot/person-service/pom.xml",
+      "artifact": "spring-boot-starter-webflux"
+    },
+    {
+      "file": "micro-springboot/person-service/pom.xml",
+      "artifact": "spring-boot-testcontainers"
+    },
+    {
+      "file": "micro-springboot/person-service/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "micro-view/department/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "micro-view/department/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "micro-view/department/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "micro-view/employee/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "micro-view/employee/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "micro-view/employee/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "micro-view/organization/pom.xml",
+      "artifact": "spring-boot-starter-data-jpa"
+    },
+    {
+      "file": "micro-view/organization/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "micro-view/organization/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "micro-view/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    }
+  ]
+}

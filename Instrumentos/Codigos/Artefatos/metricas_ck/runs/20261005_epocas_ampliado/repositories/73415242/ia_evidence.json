@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "86bef80634f02ad264b30b2ff27c5b020bd4fb7a",
+      "date": "2025-11-30T13:49:45+01:00",
+      "author": "Petr Knap",
+      "email": "8299754+petrknap@users.noreply.github.com",
+      "message": "Merge pull request #38 from petrknap/zoned-date-times\n\n`backups.Metadata.refreshedAt` switched to `ZonedDateTime`"
+    },
+    {
+      "sha": "9e875f029dbed6a3b0bab97780544881cd6ec336",
+      "date": "2025-11-30T13:43:23+01:00",
+      "author": "Petr Knap",
+      "email": "8299754+petrknap@users.noreply.github.com",
+      "message": "refactor: `backups.Metadata.refreshedAt` switched to `ZonedDateTime`\n"
+    },
+    {
+      "sha": "63512e1096b3860c8c362b957118bd31af79ab0e",
+      "date": "2025-05-17T09:36:49+02:00",
+      "author": "Petr Knap",
+      "email": "8299754+petrknap@users.noreply.github.com",
+      "message": "Merge pull request #37 from petrknap/http-retry-after\n\nAdded `Retry-After` header to relevant responses"
+    },
+    {
+      "sha": "605c5897328b59d4bee18afd29052cbda320fc01",
+      "date": "2025-05-17T09:30:10+02:00",
+      "author": "Petr Knap",
+      "email": "8299754+petrknap@users.noreply.github.com",
+      "message": "feat: added `Retry-After` header to relevant responses\n"
+    },
+    {
+      "sha": "61928309830a280af02481ae3239132832b5a9fc",
+      "date": "2025-05-14T20:27:20+02:00",
+      "author": "Petr Knap",
+      "email": "8299754+petrknap@users.noreply.github.com",
+      "message": "Merge pull request #36 from petrknap/dark-theme\n\nAdded support for dark Bootstrap theme"
+    },
+    {
+      "sha": "df208f6df24bfdcf5ad4b8c921028cd251a1a27f",
+      "date": "2025-05-14T20:19:49+02:00",
+      "author": "Petr Knap",
+      "email": "8299754+petrknap@users.noreply.github.com",
+      "message": "feat: added support for dark Bootstrap theme\n"
+    },
+    {
+      "sha": "f318fa5afeb43ee0be96888830a4c98d74ab54a0",
+      "date": "2025-05-14T20:18:22+02:00",
+      "author": "Petr Knap",
+      "email": "8299754+petrknap@users.noreply.github.com",
+      "message": "Merge pull request #35 from petrknap/request-rate-limiter-via-atomic-integer\n\nRequest rate limiter now uses atomic integer"
+    },
+    {
+      "sha": "07a3ff60c4a885f1ef8286fa037942bf32f0549f",
+      "date": "2025-05-14T20:15:44+02:00",
+      "author": "Petr Knap",
+      "email": "8299754+petrknap@users.noreply.github.com",
+      "message": "refactor: request rate limiter now uses atomic integer\n"
+    },
+    {
+      "sha": "0b4bcdb07c894bd0b0cc16d403d5883467423ab6",
+      "date": "2025-05-13T23:28:06+02:00",
+      "author": "Petr Knap",
+      "email": "8299754+petrknap@users.noreply.github.com",
+      "message": "Merge pull request #34 from petrknap/css-fix\n\nFixed CSS"
+    },
+    {
+      "sha": "f135f4a35d42f3a436bdd43faa73dcce94f92585",
+      "date": "2025-05-13T23:26:43+02:00",
+      "author": "Petr Knap",
+      "email": "8299754+petrknap@users.noreply.github.com",
+      "message": "chore: fixed CSS\n"
+    },
+    {
+      "sha": "c73eaeffec2cd86aa87e795ef5e00735a7a10c16",
+      "date": "2025-05-13T23:18:32+02:00",
+      "author": "Petr Knap",
+      "email": "8299754+petrknap@users.noreply.github.com",
+      "message": "Merge pull request #33 from petrknap/request-limiter-before-authorization\n\nRequest rate limiter now has highest precedence"
+    },
+    {
+      "sha": "9e4d951acbf8776153237f0da329fa8407fdc4a8",
+      "date": "2025-05-13T23:16:45+02:00",
+      "author": "Petr Knap",
+      "email": "8299754+petrknap@users.noreply.github.com",
+      "message": "chore: request rate limiter now has highest precedence\n"
+    },
+    {
+      "sha": "e11d7bdeb987106b98a88397445bdc667d9651a7",
+      "date": "2025-05-13T22:57:05+02:00",
+      "author": "Petr Knap",
+      "email": "8299754+petrknap@users.noreply.github.com",
+      "message": "Merge pull request #32 from petrknap/throttled-by-filter\n\nRequest rate limiter as filter"
+    },
+    {
+      "sha": "ed4391278d112a051edbf2e45ea618e1738730b6",
+      "date": "2025-05-13T22:46:12+02:00",
+      "author": "Petr Knap",
+      "email": "8299754+petrknap@users.noreply.github.com",
+      "message": "refactor: request rate limiter as filter\n"
+    },
+    {
+      "sha": "d2740e3b3ff478753d59ecc1f23e351c45f431c8",
+      "date": "2025-05-13T17:51:36+02:00",
+      "author": "Petr Knap",
+      "email": "8299754+petrknap@users.noreply.github.com",
+      "message": "Merge pull request #31 from petrknap/http-authorization-username-injector\n\nNow injects username to requests for logging purposes"
+    },
+    {
+      "sha": "009d32f2e74b96bb53220ed17b5fa4c0f91f7145",
+      "date": "2025-05-12T18:24:08+02:00",
+      "author": "Petr Knap",
+      "email": "8299754+petrknap@users.noreply.github.com",
+      "message": "feat: now injects username to requests for logging purposes\n"
+    },
+    {
+      "sha": "7e0397346127c3020374a2e260e44d893de7df7f",
+      "date": "2025-05-12T17:15:19+02:00",
+      "author": "Petr Knap",
+      "email": "8299754+petrknap@users.noreply.github.com",
+      "message": "Merge pull request #30 from petrknap/favicon\n\nAdded support for favicons"
+    },
+    {
+      "sha": "e065d40fc994368d2015e8e13c51869e08d1fd97",
+      "date": "2025-05-12T17:04:25+02:00",
+      "author": "Petr Knap",
+      "email": "8299754+petrknap@users.noreply.github.com",
+      "message": "feat: added support for favicons\n"
+    },
+    {
+      "sha": "d9831de21dfc65f4dd27214f6c199e89fddc147e",
+      "date": "2025-05-11T10:04:11+02:00",
+      "author": "Petr Knap",
+      "email": "8299754+petrknap@users.noreply.github.com",
+      "message": "Merge pull request #29 from petrknap/allowed-forwardable\n\nAllowed fake route to allow forwarding"
+    },
+    {
+      "sha": "1a9d4c74fa07f0b5e9d5a77007370eab3e59c621",
+      "date": "2025-05-11T10:02:35+02:00",
+      "author": "Petr Knap",
+      "email": "8299754+petrknap@users.noreply.github.com",
+      "message": "feat: allowed fake route to allow forwarding\n"
+    },
+    {
+      "sha": "1ed097f99b9357c71519c9e0fe4fd6d55b5a93bd",
+      "date": "2025-05-11T09:40:45+02:00",
+      "author": "Petr Knap",
+      "email": "8299754+petrknap@users.noreply.github.com",
+      "message": "Merge pull request #28 from petrknap/head-support\n\nAllowed head on backups freshness endpoint"
+    },
+    {
+      "sha": "210c2ca0743fefd9bb46045386d2e63128677804",
+      "date": "2025-05-11T09:38:44+02:00",
+      "author": "Petr Knap",
+      "email": "8299754+petrknap@users.noreply.github.com",
+      "message": "feat: allowed head on backups freshness endpoint\n"
+    },
+    {
+      "sha": "1fa842727b022417d953228653aed463f40d40a2",
+      "date": "2025-05-10T12:05:32+02:00",
+      "author": "Petr Knap",
+      "email": "8299754+petrknap@users.noreply.github.com",
+      "message": "Merge pull request #27 from petrknap/boot-guard\n\nImplemented SQLite backup on startup"
+    },
+    {
+      "sha": "64df0074dd6ce9a64208f698039fdbf07d305422",
+      "date": "2025-05-10T11:28:02+02:00",
+      "author": "Petr Knap",
+      "email": "8299754+petrknap@users.noreply.github.com",
+      "message": "feat: implemented SQLite backup on startup\n"
+    },
+    {
+      "sha": "489b67e5ba4bd446fe554de106ddf33fc8162296",
+      "date": "2025-05-10T09:51:38+02:00",
+      "author": "Petr Knap",
+      "email": "8299754+petrknap@users.noreply.github.com",
+      "message": "Merge pull request #26 from petrknap/config\n\n`users.json` replaced by `config.json`"
+    },
+    {
+      "sha": "d8492d1917da28853550fcb864712aeb6cdcbf21",
+      "date": "2025-05-10T09:38:13+02:00",
+      "author": "Petr Knap",
+      "email": "8299754+petrknap@users.noreply.github.com",
+      "message": "refactor: `users.json` replaced by `config.json`\n"
+    },
+    {
+      "sha": "774ec1fcad56229865be9e68ee8c8e7437a8a1d9",
+      "date": "2025-05-08T09:25:50+02:00",
+      "author": "Petr Knap",
+      "email": "8299754+petrknap@users.noreply.github.com",
+      "message": "Merge pull request #25 from petrknap/chores\n\nAdded link to GitHub pages"
+    },
+    {
+      "sha": "f20fb35af0097313d70078018969d6ba3e83762c",
+      "date": "2025-05-08T09:24:24+02:00",
+      "author": "Petr Knap",
+      "email": "8299754+petrknap@users.noreply.github.com",
+      "message": "chore: added link to GitHub pages\n"
+    },
+    {
+      "sha": "0eefcd8f6d7be50757b930335f8f2fc3e1308ec0",
+      "date": "2025-05-08T09:11:51+02:00",
+      "author": "Petr Knap",
+      "email": "8299754+petrknap@users.noreply.github.com",
+      "message": "Merge pull request #24 from petrknap/chores\n\nUpdated dependencies"
+    },
+    {
+      "sha": "398556539ba4dabf7b7716147669aeddb8b70430",
+      "date": "2025-05-08T09:10:21+02:00",
+      "author": "Petr Knap",
+      "email": "8299754+petrknap@users.noreply.github.com",
+      "message": "chore: updated dependencies\n"
+    }
+  ],
+  "commit_sha": "86bef80634f02ad264b30b2ff27c5b020bd4fb7a",
+  "extracted_at": "2026-10-05T18:46:56.187061+00:00"
+}

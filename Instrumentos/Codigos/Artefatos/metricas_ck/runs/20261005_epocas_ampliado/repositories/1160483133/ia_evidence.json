@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "d46b2c0c06084152c82b4188aabe90a185667dc1",
+      "date": "2026-07-30T16:43:59-04:00",
+      "author": "Zachary Whitley",
+      "email": "zachary.whitley@tegmentum.ai",
+      "message": "fix(bindgen): 6 fixes across parser + codegen + CLI\n\n\n- CodeGenerator.generate() merges per-file BindgenModels before code\n  emission. Previously each WIT file's javaCodeGenerator invocation\n  emitted its own <RuntimeProvider>.java, and the last write silently\n  overwrote earlier ones — killing SPI dispatchers for every interface\n\n- BindgenCli.validateSources uses Files.walk instead of listFiles so\n  `-w wit/deps` picks up every .wit under the tree. Combined with the\n  merge fix, multi-file WIT packages resolve intra-package `use` refs\n  correctly. Test: BindgenCliTest.shouldRecursivelyExpandDirectorySource.\n\n- WitParser accepts stream<T> and future<T>: coerces to list<T> and\n  option<T> respectively with a WARNING log rather than throwing\n  BindgenException. Async component-model types are not modeled but the\n  surrounding file stays parseable. Test: WitParserTest.asyncTypesCoerced.\n\n- JavaCodeGenerator.mapType gains a TUPLE arm that recursively maps\n  each element (was defaulting to embedding raw WIT text as a Java\n  type name). TypeMappingRegistry.mapTuple emits parameterised\n  headers shape) and parameterised TupleN placeholder otherwise. Test:\n  NestedContainerFieldTest.\n\n- ImplementationCodeGenerator passes parametrised Class<?>/Class<T>\n  (not raw Class) to JavaPoet for WasmBindingProvider.supports/create\n  overrides, resolving name-clash errors under erasure. Marshalling\n  strategy branches on WIT element kind for list<T> params: real unbox\n  loop for list<u8>/list<s8>, honest TODO-fallback for other elements.\n  Tests: ImplementationCodeGeneratorBugsTest.\n\n- MarshallingStrategy.liftReturn returns Optional<CodeBlock>; caller\n  emits UnsupportedOperationException throw when Optional is empty\n  (mirrors resultDispatch fallback). JavaCodeGenerator.shouldSkipInterface\n  filters interface-and-record-with-same-name pairs (per ADR pattern\n  in provider-manifest.wit) skipping emission with a warning rather\n  than colliding on class name. Tests: InterfaceNestedTypeCollisionTest.\n\nSuite: 458 -> 510 tests, all pass. Full 18-module install green.\n"
+    },
+    {
+      "sha": "016c4c9d13ffde2bdf273427fecf5c6844af28f0",
+      "date": "2026-07-27T19:40:25-04:00",
+      "author": "Zachary Whitley",
+      "email": "zachary.whitley@tegmentum.ai",
+      "message": "docs(caller): add caller-scoped design-alignment references (Charter A r.1)\n\n(with scope correction: doctrine applies at webassembly4j layer — the\nportable engine abstraction — not at wasmtime4j which is wasmtime-specific\nJNI binding). Per user 2026-07-27.\n\nClass-level Javadoc gains a 'Design alignment' section citing the doctrine\n+ translation rules (WIT kebab-case → Java camelCase, borrow<store>\nremoved since Caller has implicit store binding, result<T, error> →\nthrows, option<T> → Optional<T>, list<u8> → byte[]).\n\n  getMemory/Table/Function/Global → instance.instance.get-*\n  compileModule → module-compile.from-binary (deviation: engine implicit)\n  instantiate → linker.linker.instantiate (deviation: LinkingContext\n    bundles pre-linker define-* calls)\n  setTableElement → instance.wasm-table.set (upstream via r.2)\n  growMemory → instance.wasm-memory.grow\n  readMemory → instance.wasm-memory.read (deviation: name-lookup vs borrow)\n  writeMemory → instance.wasm-memory.write\n\n"
+    },
+    {
+      "sha": "3bd760d438aca529db04a95ba729e57e02102214",
+      "date": "2026-07-27T06:46:48-04:00",
+      "author": "Zachary Whitley",
+      "email": "zachary.whitley@tegmentum.ai",
+      "message": "feat(provider): caller-scoped externImports wire-through\n\nF-Wasmtime4j-Caller-Scoped-Instantiate-Extern-Imports r.2. Replaces\nWasmtimeCallerAdapter.instantiate's blanket LinkingException on\nexternImports with a per-def routing loop:\n\n- MemoryImport / TableImport whose source is a WasmtimeMemoryAdapter /\n  WasmtimeTableAdapter carrying a callerExportName (minted by\n  Caller.getMemory/getTable in a callback frame) → route to the new\n  caller-scoped linkerDefineMemoryFromExport / TableFromExport by-name\n  native path (avoids registry-handle mismatch).\n\n- MemoryImport / TableImport / GlobalImport with outer-scoped externs\n  → route to linkerDefineMemory / Table / Global handle-based path.\n\n- FunctionImport remains unsupported (waits on Function.unwrap).\n\nWasmtimeMemoryAdapter / WasmtimeTableAdapter gain an optional\ncallerExportName field to signal caller-scoped origin; getMemory /\ngetTable on WasmtimeCallerAdapter set it.\n"
+    },
+    {
+      "sha": "997943f47681b6865159ada0f0c0304ed2165ca2",
+      "date": "2026-07-26T21:55:19-04:00",
+      "author": "Zachary Whitley",
+      "email": "zachary.whitley@tegmentum.ai",
+      "message": "feat(api,wasmtime-provider): mirror Caller.readMemory/writeMemory (post wasmtime4j r.1 close)\n\nMirrors the wasmtime4j Caller-Scoped-Memory-IO r.1 additions at webassembly4j\napi layer + wasmtime4j-provider bridge. Enables engine-agnostic scoped memory\nI/O from caller-aware host callbacks — unblocks Fiji jit-loader r.5.d retry.\n\napi: 2 default methods (throw UOE)\nprovider: WasmtimeCallerAdapter delegates to native Caller.readMemory/\nwriteMemory\n\nNon-wasmtime providers inherit UOE default (safe).\n"
+    },
+    {
+      "sha": "983149585fd45dbfb2757fb2abb94dbecdd0b11c",
+      "date": "2026-07-26T20:53:11-04:00",
+      "author": "Zachary Whitley",
+      "email": "zachary.whitley@tegmentum.ai",
+      "message": "merge: F-Webassembly4j-Caller-Aware-Host-Function r.1 (api + wasmtime provider bridge)\n"
+    },
+    {
+      "sha": "77bb0060c75b0064916697cd85341dda798fe7b1",
+      "date": "2026-07-26T20:52:00-04:00",
+      "author": "Zachary Whitley",
+      "email": "zachary.whitley@tegmentum.ai",
+      "message": "docs(caller): webassembly4j caller-aware r.1 CLOSED_SUCCEEDED close notes\n\nDocuments the full charter close: r.1-1 (api additions, landed\npre-partial), r.1-2 (WasmtimeCallerAdapter), r.1-3 (WasmtimeModuleAdapter\ncallerAwareHostFunctions consumption), r.1-4 (integration test + native\ncrash discovery), r.1-5 (mvn install SNAPSHOT refresh).\n\nNotes the api adjustment reconciling Caller.instantiate(Module,\nLinkingContext) at api layer against wasmtime4j's InstancePre-only\nCaller.instantiate (transient linker + linker.instantiatePre inside\nadapter). Notes the test-discovery finding that regular WasmTable/Memory\naccessors SIGSEGV from callback frames — restated the wasmtime4j r.2\ndoctrine that mutation from callbacks MUST use caller-scoped ops.\n\nr.5.c (F-JIT-Loader-Java-Reference Fiji retry) is UNBLOCKED.\n"
+    },
+    {
+      "sha": "802e6af47d29929e99b1b5b14210654d719fa00d",
+      "date": "2026-07-26T20:50:20-04:00",
+      "author": "Zachary Whitley",
+      "email": "zachary.whitley@tegmentum.ai",
+      "message": "test(wasmtime-provider): restrict caller-aware test callback to scoped ops only\n\nInitial test called t.size() from inside the caller callback via the\nregular WasmtimeTableAdapter delegate; that path routes through\nWasmTable.getSize which acquires the store lock, and inside a live\ncaller-borrow the JniTable native SIGSEGVs — witnessed via hs_err\ncrash at libwasmtime4j.dylib Table::size + JniTable_nativeGetSize.\n\nCallback now:\n- reads args via observedArg, not size()\n- calls only caller.growTable (borrow-safe scoped path)\n\nAlso swaps the run(param i32) wasm to a run() no-param variant that\ncalls trigger_grow with an inline i32.const 1 — sidesteps the\npre-existing WasmtimeFunctionAdapter I_V fast-path bug where\n(i32) -> () signatures route through callVoid() and drop the arg\n(\"Parameter validation failed for function 'run'\"). Wasm bytes\nregenerated (88 -> 91 bytes).\n\nAssertions unchanged: pre/post-callback table size, growTable return\nvalue, use-after-return IllegalStateException from wasmtime4j r.2\ngeneration counter.\n"
+    },
+    {
+      "sha": "f8b64193214076b4edc35439aab5be49af01a6c8",
+      "date": "2026-07-26T20:46:44-04:00",
+      "author": "Zachary Whitley",
+      "email": "zachary.whitley@tegmentum.ai",
+      "message": "test(wasmtime-provider): caller-aware host function + scoped growTable from callback\n\nHand-authored 88-byte wasm module imports env.trigger_grow, exports a\n1-slot funcref table + memory, and calls trigger_grow(1) from run().\nTest registers trigger_grow as a CallerAwareHostFunction whose\ncallback resolves the caller's table export via caller.getTable(\"table\")\nthen grows it by 1 via caller.growTable — the borrow-safe scoped path\nrouted through the wasmtime4j r.2 caller handle. Asserts:\n\n- pre-grow size observed inside the callback is 1\n- growTable return value is the previous size (1)\n- post-callback instance.table(\"table\").size() is 2\n- retained Caller handle used after callback return throws\n  IllegalStateException with a caller-generation message\n  (proves wasmtime4j's use-after-return generation counter propagates\n  through the api-layer adapter unchanged)\n\nKept in the WasmtimeLinkingContextExternImportsTest style — inline\nhand-authored wasm bytes so the test needs no build-time toolchain.\n"
+    },
+    {
+      "sha": "35b5daa2ecef0f5edb55a862e32f7f58baeaafe6",
+      "date": "2026-07-26T20:45:10-04:00",
+      "author": "Zachary Whitley",
+      "email": "zachary.whitley@tegmentum.ai",
+      "message": "feat(wasmtime-provider): WasmtimeModuleAdapter consumes callerAwareHostFunctions from LinkingContext\n\nExtends WasmtimeModuleAdapter.instantiate(LinkingContext) to consume\nthe new LinkingContext.callerAwareHostFunctions() list added at\nr.1-1. Each CallerAwareHostFunctionDefinition is registered on the\nlinker as a wasmtime4j CallerAwareHostFunction — the subclass of\nHostFunction whose execute runs with the native Caller available via\nthe CallerContextProvider SPI wired at wasmtime4j r.2. The native\ncaller is wrapped in a WasmtimeCallerAdapter and handed to the user's\nCallerAwareHostFunction implementation.\n\nAlso adds a caller-scoped factory (WasmtimeModuleAdapter.callerScoped)\nso WasmtimeCallerAdapter.compileModule can return a Module wrapper\nthat has no owning store; its own instantiate() paths throw with a\nclear message pointing at Caller.instantiate. Extracts\ndefineHostFunctions to a package-private static helper for reuse\nfrom WasmtimeCallerAdapter and adds a package-private nativeModule()\naccessor for the caller-scoped instantiate bridge.\n"
+    },
+    {
+      "sha": "a9c7f4959b0586796266ce23baf222dda396814a",
+      "date": "2026-07-26T20:44:56-04:00",
+      "author": "Zachary Whitley",
+      "email": "zachary.whitley@tegmentum.ai",
+      "message": "feat(wasmtime-provider): WasmtimeCallerAdapter — wraps wasmtime4j Caller<T> as api Caller<T>\n\nBridges wasmtime4j's caller-scoped host-callback handle\n(ai.tegmentum.wasmtime4j.func.Caller) into the webassembly4j api\nCaller<T> interface added at r.1-1. Delegates each api method to the\nunderlying wasmtime4j Caller, wrapping/unwrapping types via existing\nWasmtime{Memory,Table,Function,Global,Instance}Adapter classes.\n\nFor instantiate(Module, LinkingContext), reconciles the api signature\nagainst wasmtime4j's Caller.instantiate(InstancePre) by building a\ntransient linker from the caller's engine, calling instantiatePre on\nit, then routing the pre through the caller's borrow-safe scoped\nentrypoint. externImports are rejected at this path — they require a\nlive store binding that wasmtime4j's Caller does not expose.\n\ncompileModule returns a caller-scoped Module wrapper that has no\nowning store; instantiation must go through Caller.instantiate.\n"
+    },
+    {
+      "sha": "5fee0c6f7a401fd89e660ee00cb1ecfd2d3919ee",
+      "date": "2026-07-26T20:23:23-04:00",
+      "author": "Zachary Whitley",
+      "email": "zachary.whitley@tegmentum.ai",
+      "message": "feat(api): add Caller<T> + CallerAwareHostFunction<T> interfaces + LinkingContext plumbing\n\nCharter r.1-1. Engine-agnostic exposure of the wasmtime4j r.2 / r.2.b\nCaller<T> scoped-mutation pattern.\n\n- Caller<T>: 10 scoped methods (data, getMemory, getTable, getFunction,\n  getGlobal, compileModule, instantiate, growTable, setTableElement,\n  growMemory, unwrap).\n- CallerAwareHostFunction<T>: @FunctionalInterface — Object[] execute(\n  Caller<T>, Object...).\n- CallerAwareHostFunctionDefinition: parallel to HostFunctionDefinition\n  but wraps CallerAwareHostFunction.\n- LinkingContext.callerAwareHostFunctions(): default returns empty list;\n  providers that do not support the pattern inherit safe no-op behavior.\n- DefaultLinkingContext.Builder.addCallerAwareHostFunction(...): two\n  overloads matching addHostFunction shape.\n"
+    },
+    {
+      "sha": "772f9c810890433e4a65e31f1e21681063043220",
+      "date": "2026-07-26T20:21:01-04:00",
+      "author": "Zachary Whitley",
+      "email": "zachary.whitley@tegmentum.ai",
+      "message": "docs(caller): begin webassembly4j caller-aware charter r.1\n\nCharter: f-webassembly4j-caller-aware-host-function-charter-2026-07-26\n\nPropagates the wasmtime4j r.2 / r.2.b Caller<T> pattern up to the\nwebassembly4j api layer so any provider can offer caller-aware host\nfunctions engine-agnostically.\n"
+    },
+    {
+      "sha": "2f3245b68371cb095598d2fe479e1850a205cb41",
+      "date": "2026-07-26T14:51:53-04:00",
+      "author": "Zachary Whitley",
+      "email": "zachary.whitley@tegmentum.ai",
+      "message": "test(wasmtime-provider): cross-module store sharing via Engine.loadModule(byte[], Instance)\n\nPositive-witness test for F-Webassembly4j-Cross-Module-Store-Sharing r.1.\nUses the new engine-agnostic overload (no provider escape) to load a\nconsumer module against a producer instance's store, wires producer's\nexported memory as a MemoryImport, and asserts consumer's store/load\nhelpers round-trip through the shared memory.\n\n2 tests: happy-path round-trip + null-argument rejection.\n\nContrasts with WasmtimeLinkingContextExternImportsTest which uses\n((WasmtimeModuleAdapter) module).store() provider escape for the same\nscenario. Both patterns coexist post-charter.\n\nAll 88 wasmtime-provider tests pass. 162 api + 18 spi tests unchanged.\n"
+    },
+    {
+      "sha": "49e3b4ba380d2f25770af3972d029dc6eb5c9b36",
+      "date": "2026-07-26T14:50:11-04:00",
+      "author": "Zachary Whitley",
+      "email": "zachary.whitley@tegmentum.ai",
+      "message": "feat(api,wasmtime-provider): add Engine.loadModule(byte[], Instance) cross-module store sharing\n\nF-Webassembly4j-Cross-Module-Store-Sharing r.1. Adds default-throwing overload\nEngine.loadModule(byte[] bytes, Instance shareStoreWith) so consumers can load\na related module against an existing instance's store — required for any\ncomposition pattern where the new module imports memory/table/global exports\nof the shared instance (JIT install, plugin loading, incremental linking,\nmulti-module workflows).\n\nwasmtime4j-provider implements: unwraps shareStoreWith to native Instance,\nextracts its Store via getStore(), reuses the store when constructing the\nnew WasmtimeModuleAdapter (which already accepted an explicit Store — no\nrefactor needed).\n\nNon-wasmtime providers inherit UnsupportedOperationException default.\n\nDisciplined per operator gate: cross-module store sharing is a general\nWasm-embedding pattern already used internally by wasmtime4j-provider's\nown tests via ((WasmtimeModuleAdapter) module).store() escape. This surfaces\nthe capability at the api layer.\n\nCompile clean. Tests to follow in a separate commit.\n"
+    },
+    {
+      "sha": "876b2bd27c3a7746390700450b15aaad34edb85e",
+      "date": "2026-07-26T13:52:50-04:00",
+      "author": "Zachary Whitley",
+      "email": "zachary.whitley@tegmentum.ai",
+      "message": "chore(release): bump version to 2.5.2-SNAPSHOT\n\nBundles Charter A (Table interface completion), Charter B (LinkingContext\nimports wiring fix), and Function.unwrap mini-arc. Local SNAPSHOT for\ndownstream Fiji jit-loader-java consumption before release cut to Maven\nCentral.\n"
+    },
+    {
+      "sha": "bd77465a762e2bccc2d4db03e81b018713640f41",
+      "date": "2026-07-26T13:51:29-04:00",
+      "author": "Zachary Whitley",
+      "email": "zachary.whitley@tegmentum.ai",
+      "message": "feat(api,wasmtime-provider): add Function.unwrap(Class<T>) parity mini-arc\n\nFunction was the sole api-layer type lacking unwrap(Class<T>). All other\ntypes (Table, Memory, Global, Engine, Instance) already provide it as the\nprovider-escape hatch for capabilities not surfaced at the api layer.\n\nDefault in interface returns Optional.empty(). WasmtimeFunctionAdapter\nimplements to return the underlying ai.tegmentum.wasmtime4j.WasmFunction.\n\nDisciplined per operator gate: parity across api-layer types; applies to\nany consumer needing funcref extraction for Table.set or dynamic dispatch\nscenarios (JIT loaders, plugin systems, callback registries) — not a\nJIT-loader-specific convenience.\n\nUnblocks the FunctionImport stub in wasmtime4j-provider's\nWasmtimeModuleAdapter (deferred by F-Webassembly4j-LinkingContext-Imports-\nWiring-Fix charter B r.1 pending this method).\n"
+    },
+    {
+      "sha": "c4d6937337f158d1c7796cd28048fd4c94e74352",
+      "date": "2026-07-26T12:55:48-04:00",
+      "author": "Zachary Whitley",
+      "email": "zachary.whitley@tegmentum.ai",
+      "message": "merge: F-LinkingContext-Imports-Wiring-Fix charter r.1\n"
+    },
+    {
+      "sha": "7ebef3b5d2e9a671208fe2d40604f16a89e92cc9",
+      "date": "2026-07-26T12:55:36-04:00",
+      "author": "Zachary Whitley",
+      "email": "zachary.whitley@tegmentum.ai",
+      "message": "merge: F-Table-Interface-Completion charter r.1\n"
+    },
+    {
+      "sha": "5b713fd3debf3bfd57a8ea078e90b644201122e9",
+      "date": "2026-07-26T12:51:22-04:00",
+      "author": "Zachary Whitley",
+      "email": "zachary.whitley@tegmentum.ai",
+      "message": "feat(api,wasmtime-provider): Table interface completion (charter r.1 close)\n\nCloses r.1 of the F-Webassembly4j-Table-Interface-Completion charter.\n\nInterface (webassembly4j-api):\n  - Adds default-throwing OptionalInt maxSize(), Object get(int),\n    void set(int, Object), int grow(int, Object) to Table.\n  - Default bodies throw UnsupportedOperationException so wamr4j-provider,\n    graalwasm4j-provider, wasm3-provider, endive4j-provider remain\n    compile-clean without modification.\n  - Interface-level Javadoc documents the try/catch escape and points\n    to EngineCapabilities as the coarser probe.\n\nImplementation (wasmtime4j-provider):\n  - WasmtimeTableAdapter overrides all four methods, delegating to\n    ai.tegmentum.wasmtime4j.WasmTable.\n  - maxSize maps native -1 (unbounded) to OptionalInt.empty().\n  - get/set bounds-check locally so the native JniTable RuntimeException\n    (out-of-bounds) and IllegalArgumentException (negative) are both\n    normalized to the api-contract IndexOutOfBoundsException.\n\nTests (wasmtime4j-provider):\n  - WasmtimeTableAdapterTest covers all four operations plus baseline\n    size and IOOBE contract (9 tests, all pass on JNI backend).\n\nVerification: mvn -B -pl webassembly4j-api,wasmtime4j-provider -am\n-Dskip.rust.build=true -Dtest='!JavaToWasmRoundTripTest,!WasmtimeCallableResourceTest'\n-DfailIfNoTests=false test => BUILD SUCCESS (162 api + 78 provider tests).\n\nDeferred (charter): fill/copy/init/dropElementSegment/growAsync,\nelementType(), the Ref abstraction, release cut, CHANGELOG update.\n"
+    },
+    {
+      "sha": "f2273f4b59e405208c7bd80a1c7966b44b29926c",
+      "date": "2026-07-26T12:50:13-04:00",
+      "author": "Zachary Whitley",
+      "email": "zachary.whitley@tegmentum.ai",
+      "message": "test(wasmtime-provider): cover shared-import wiring via typed ExternImportDefinition\n\nWasmtimeLinkingContextExternImportsTest exercises:\n\n  - api-layer builder collects all four typed variants; ordering preserved\n  - api-layer accepts a pre-built ExternImportDefinition via addExternImport\n  - default LinkingContext.externImports() is empty\n  - end-to-end MemoryImport wired on the module's own native store; host\n    write is observable from the guest via the exported load_i32\n  - end-to-end TableImport wired on the same store; instantiate succeeds\n    and the api-layer table size flows through\n  - end-to-end GlobalImport wired on the same store; guest bump is\n    observable on the host handle and vice versa\n  - FunctionImport raises UnsupportedOperationException with the variant\n    kind and (moduleName, name) coordinates in the message\n  - MemoryImport with a memory that unwrap-fails raises LinkingException\n    naming the (moduleName, name) pair and identifying the cause\n\nThe three end-to-end tests reach through the package-private\nWasmtimeModuleAdapter.store() accessor to construct WasmMemory / WasmTable\n/ WasmGlobal on the module's own native store — the wasmtime constraint is\nthat extern imports must live on the same Store as the module being\ninstantiated. That accessor already existed; no adapter API change is\nneeded for these tests.\n\nNote: bump in IMPORT_GLOBAL_MODULE is 0-arg to sidestep a pre-existing\ni32-in/void-out fast-path shortcut in WasmtimeFunctionAdapter (out of scope\nfor this charter).\n\nRefs: f-webassembly4j-linkingcontext-imports-wiring-fix-charter-2026-07-26\n"
+    },
+    {
+      "sha": "9df7f8ab7be820bd0180438dc1de5797cd75e5c1",
+      "date": "2026-07-26T12:49:32-04:00",
+      "author": "Zachary Whitley",
+      "email": "zachary.whitley@tegmentum.ai",
+      "message": "fix(wasmtime-provider): translate native Table bounds errors to IOOBE\n\nThe api-layer Table contract (webassembly4j-api) promises\nIndexOutOfBoundsException from get(int) and set(int, Object) when\nindex >= size(). The underlying ai.tegmentum.wasmtime4j.jni.JniTable\nimplementation surfaces out-of-bounds access as a bare RuntimeException\nwrapping a WasmRuntimeException, and negative indices come out as\nIllegalArgumentException (Validation.requireNonNegative).\n\nNeither shape matches the contract, so the adapter now bounds-checks the\nindex against nativeTable.getSize() before delegating; failures raise\nIndexOutOfBoundsException with a descriptive message. The delegating\ncall itself is unchanged.\n\nFixes the getOutOfBoundsThrows / setOutOfBoundsThrows cases in\nWasmtimeTableAdapterTest introduced by the preceding commit.\n"
+    },
+    {
+      "sha": "99ae7e8a14fa91d39ce8247e2cd678b526d91f8d",
+      "date": "2026-07-26T12:45:17-04:00",
+      "author": "Zachary Whitley",
+      "email": "zachary.whitley@tegmentum.ai",
+      "message": "feat(wasmtime-provider): consume LinkingContext.externImports for shared-import wiring\n\nWasmtimeModuleAdapter.instantiate(LinkingContext) now processes each\nExternImportDefinition:\n\n  - MemoryImport unwraps to WasmMemory and calls Linker.defineMemory\n  - TableImport  unwraps to WasmTable  and calls Linker.defineTable\n  - GlobalImport unwraps to WasmGlobal and calls Linker.defineGlobal\n  - FunctionImport is not yet supported — throws UnsupportedOperationException\n    with a clear message pointing at addHostFunction; wiring blocked on a\n    Function.unwrap(Class) accessor scheduled for a follow-up charter\n\nThe empty-list fast-path is preserved: when hostFunctions, wasiContext, and\nexternImports are all empty, the adapter delegates to instantiate() as\nbefore so today's callers see no behaviour change.\n\nAn unwrap that hands back Optional.empty (e.g. because the value came from\na different provider) raises LinkingException with the (moduleName, name)\ncoordinates identified.\n\nRefs: f-webassembly4j-linkingcontext-imports-wiring-fix-charter-2026-07-26\n"
+    },
+    {
+      "sha": "ba006458b29c9f32d16e20570d165fcef89bfd98",
+      "date": "2026-07-26T12:43:57-04:00",
+      "author": "Zachary Whitley",
+      "email": "zachary.whitley@tegmentum.ai",
+      "message": "feat(api): add typed extern-import builder methods; deprecate untyped addImport\n\nDefaultLinkingContext.Builder grows:\n\n  - addMemoryImport(moduleName, name, Memory)\n  - addTableImport (moduleName, name, Table)\n  - addGlobalImport(moduleName, name, Global)\n  - addFunctionImport(moduleName, name, Function)\n  - addExternImport(ExternImportDefinition)  // pre-built variant\n\nDefaultLinkingContext now implements\nLinkingContext.externImports() by handing back an unmodifiable snapshot of\nthe builder-collected list.\n\nBuilder.addImport(String, Object) is marked @Deprecated — the call has\nalways been a no-op with respect to instantiation because the imports map\nwas never exposed through the LinkingContext interface. The method is kept\nfunctional (still writes to the private map) so existing call-sites compile\nwith only a warning.\n\nRefs: f-webassembly4j-linkingcontext-imports-wiring-fix-charter-2026-07-26\n"
+    },
+    {
+      "sha": "97bc872408a0e765239c9a4bf7e00fa30e78e427",
+      "date": "2026-07-26T12:43:57-04:00",
+      "author": "Zachary Whitley",
+      "email": "zachary.whitley@tegmentum.ai",
+      "message": "feat(api): add LinkingContext.externImports() accessor\n\nDefault method returns an empty list so all existing LinkingContext\nimplementations (DefaultLinkingContext and any downstream custom impls) stay\nsource- and binary-compatible. Providers now have a stable channel to reach\nthe typed extern-imports carried by DefaultLinkingContext.\n\nRefs: f-webassembly4j-linkingcontext-imports-wiring-fix-charter-2026-07-26\n"
+    },
+    {
+      "sha": "b9fd731469e9274d0bdd80379b12cf580bdd29c9",
+      "date": "2026-07-26T12:43:44-04:00",
+      "author": "Zachary Whitley",
+      "email": "zachary.whitley@tegmentum.ai",
+      "message": "feat(api): add ExternImportDefinition types for typed extern-imports\n\nIntroduces a typed replacement for the untyped\nDefaultLinkingContext.Builder.addImport(String, Object) call — which was\nnever reachable through the LinkingContext interface, so had no effect. The\nnew hierarchy carries both the (moduleName, name) pair that Wasm imports\nrequire and the target-typed value that a provider can hand to its native\nlinker:\n\n  ExternImportDefinition (interface)\n    - MemoryImport(moduleName, name, Memory)\n    - TableImport (moduleName, name, Table)\n    - GlobalImport(moduleName, name, Global)\n    - FunctionImport(moduleName, name, Function)\n\nBecause the webassembly4j-api module targets Java 8, the interface is not\n`sealed` and the variants are plain final classes rather than records;\ncallers should still treat the set of implementations as closed and dispatch\nvia `instanceof`.\n\nOnly the value types land here — the LinkingContext interface accessor and\nthe wasmtime provider wiring follow in the next commits.\n\nRefs: f-webassembly4j-linkingcontext-imports-wiring-fix-charter-2026-07-26\n"
+    },
+    {
+      "sha": "b04b237dc687aedc3af17427ed011bcfe734aa22",
+      "date": "2026-07-26T12:39:19-04:00",
+      "author": "Zachary Whitley",
+      "email": "zachary.whitley@tegmentum.ai",
+      "message": "test(wasmtime-provider): cover new Table operations\n\nAdds WasmtimeTableAdapterTest exercising all four new Table methods:\n\n- sizeReportsInitialMinimum (baseline sanity)\n- maxSizeBoundedReturnsDeclaredMax (max=10)\n- maxSizeUnboundedReturnsEmpty (funcref table with no declared max)\n- getUninitializedSlotReturnsNull (funcref default)\n- setThenGetRoundTripsFuncref (native WasmFunction obtained via Instance\n  unwrap because api-layer Function has no unwrap)\n- growReturnsPreGrowSizeAndIncreasesSize\n- growBeyondMaxReturnsMinusOne (grow past declared max)\n- getOutOfBoundsThrows / setOutOfBoundsThrows (IOOBE contract)\n\nFixtures are hand-encoded WASM binaries (three tiny tables) rather than\nWAT compiled through native wasmtime4j unwrap; the api Engine exposes\nonly loadModule(byte[]) and hand-encoding keeps the test dependency\ngraph clean.\n\nAll tests are gated on WasmtimeProvider().availability().available() via\n@EnabledIf, matching the pattern of the sibling WasmtimeIntegrationTest.\n"
+    },
+    {
+      "sha": "ff19fc34d554361681974726656ff08b473d0caa",
+      "date": "2026-07-26T12:36:45-04:00",
+      "author": "Zachary Whitley",
+      "email": "zachary.whitley@tegmentum.ai",
+      "message": "docs(api): begin LinkingContext-Imports-Wiring-Fix (r.1 in progress)\n\nWorking notes for the semantic-hole fix on LinkingContext extern-imports.\nOption B.2 selected; three variants (Memory/Table/Global) fully wired in\nr.1, Function variant deferred pending Function.unwrap on the api layer.\n"
+    },
+    {
+      "sha": "9d7da209a593a0c5a9a7a7af6038180106ce0165",
+      "date": "2026-07-26T12:36:45-04:00",
+      "author": "Zachary Whitley",
+      "email": "zachary.whitley@tegmentum.ai",
+      "message": "feat(wasmtime-provider): implement spec-standard Table operations\n\nDelegates api-layer Table.maxSize/get/set/grow to the native\nai.tegmentum.wasmtime4j.WasmTable methods.\n\nConvention note: WasmTable#getMaxSize returns -1 when the table is\nunbounded (per its Javadoc); the adapter maps any negative value to\nOptionalInt.empty() to remain defensive against future sentinel\nextensions.\n"
+    },
+    {
+      "sha": "2751452eba9cef928b13988d99287dd230669a39",
+      "date": "2026-07-26T12:36:45-04:00",
+      "author": "Zachary Whitley",
+      "email": "zachary.whitley@tegmentum.ai",
+      "message": "docs(api): begin LinkingContext-Imports-Wiring-Fix (r.1 in progress)\n\nWorking notes for the semantic-hole fix on LinkingContext extern-imports.\nOption B.2 selected; three variants (Memory/Table/Global) fully wired in\nr.1, Function variant deferred pending Function.unwrap on the api layer.\n"
+    },
+    {
+      "sha": "5891d6bf0d2532fd0c9db5c36bb776324453fabe",
+      "date": "2026-07-26T12:36:27-04:00",
+      "author": "Zachary Whitley",
+      "email": "zachary.whitley@tegmentum.ai",
+      "message": "feat(api): add spec-standard Table operations (maxSize/get/set/grow)\n\nExtends ai.tegmentum.webassembly4j.api.Table with four WebAssembly-spec\noperations so api-layer consumers can perform basic dynamic table\nmanagement without dropping through unwrap():\n\n- OptionalInt maxSize() maps to table.type().max\n- Object get(int) maps to table.get\n- void set(int, Object) maps to table.set\n- int grow(int, Object) maps to table.grow (returns -1 on failure)\n\nAll four are declared as default methods that throw\nUnsupportedOperationException so unchanged provider adapters\n(wamr4j-provider, graalwasm4j-provider, wasm3-provider,\nendive4j-provider) continue to compile without modification. Providers\nopt in by overriding.\n\nThe Object element type is provider-specific until a spec-based Ref\nabstraction lands (deferred). For funcref-typed tables, null denotes an\nuninitialized slot.\n\nNo removals, no signature changes; existing consumers are unaffected.\n"
+    }
+  ],
+  "commit_sha": "d46b2c0c06084152c82b4188aabe90a185667dc1",
+  "extracted_at": "2026-10-05T18:41:27.794968+00:00"
+}

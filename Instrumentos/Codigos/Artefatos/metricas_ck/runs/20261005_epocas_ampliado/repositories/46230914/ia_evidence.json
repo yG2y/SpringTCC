@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "3fe241510fcaf65e7495cccc5fb915800395d377",
+      "date": "2026-06-21T14:51:35+02:00",
+      "author": "g00glen00b",
+      "email": "4865705+g00glen00b@users.noreply.github.com",
+      "message": "chore: removed macOS files\n"
+    },
+    {
+      "sha": "f63da8cdeaf59c9c2754d7843b8df34c65c173b0",
+      "date": "2026-06-21T14:50:39+02:00",
+      "author": "g00glen00b",
+      "email": "4865705+g00glen00b@users.noreply.github.com",
+      "message": "chore: renamed producer --> provider\n"
+    },
+    {
+      "sha": "4d3e90705f73c079c9fc5597cb0a8dc6cdaee73b",
+      "date": "2026-06-19T23:50:58+02:00",
+      "author": "g00glen00b",
+      "email": "4865705+g00glen00b@users.noreply.github.com",
+      "message": "chore(pact): remove broker auth for local dev setup\n"
+    },
+    {
+      "sha": "5afb3988a9ee4fb2de6ccc3a79561ca32a341195",
+      "date": "2026-06-19T23:24:33+02:00",
+      "author": "g00glen00b",
+      "email": "4865705+g00glen00b@users.noreply.github.com",
+      "message": "feat(pact): replace file-based pact sharing with Pact Broker via Docker Compose\n"
+    },
+    {
+      "sha": "0a110462355e37baf5d0b1728415bca852ae4071",
+      "date": "2026-06-19T23:03:24+02:00",
+      "author": "g00glen00b",
+      "email": "4865705+g00glen00b@users.noreply.github.com",
+      "message": "feat(producer): add PactOrderVerificationTest\n"
+    },
+    {
+      "sha": "767bab33c17d4bdf1bd95e64d6b86196b50d3af7",
+      "date": "2026-06-19T23:01:05+02:00",
+      "author": "g00glen00b",
+      "email": "4865705+g00glen00b@users.noreply.github.com",
+      "message": "feat(producer): add pact-jvm provider dependency and committed pact file\n"
+    },
+    {
+      "sha": "54e43a2598773278bc1b7d44fee6ea8658b01b36",
+      "date": "2026-06-19T22:59:35+02:00",
+      "author": "g00glen00b",
+      "email": "4865705+g00glen00b@users.noreply.github.com",
+      "message": "refactor(consumer): improve PactOrderClientTest quality\n"
+    },
+    {
+      "sha": "9bb244808eed1321b6a72de63b8846a09e679356",
+      "date": "2026-06-19T22:56:43+02:00",
+      "author": "g00glen00b",
+      "email": "4865705+g00glen00b@users.noreply.github.com",
+      "message": "feat(consumer): add PactOrderClientTest with three interactions\n"
+    },
+    {
+      "sha": "d3d70b4d0bd1ba1546450ba96acb15a51f3650ef",
+      "date": "2026-06-19T22:52:58+02:00",
+      "author": "g00glen00b",
+      "email": "4865705+g00glen00b@users.noreply.github.com",
+      "message": "feat(consumer): add pact-jvm consumer dependency\n"
+    },
+    {
+      "sha": "fd579c197fd9234fa2daa3a90c913da2f9e822ef",
+      "date": "2026-06-19T22:46:20+02:00",
+      "author": "g00glen00b",
+      "email": "4865705+g00glen00b@users.noreply.github.com",
+      "message": "docs: add Pact contract testing design spec\n"
+    },
+    {
+      "sha": "0e3e745fe37653bcaaa68aadc874b67be1bc6681",
+      "date": "2026-06-19T22:21:58+02:00",
+      "author": "g00glen00b",
+      "email": "4865705+g00glen00b@users.noreply.github.com",
+      "message": "feat(spring-contract-testing): restructured project with separate consumer\n"
+    },
+    {
+      "sha": "4827e062d751809136b06875afcf71effd7aae96",
+      "date": "2026-06-16T23:23:15+02:00",
+      "author": "g00glen00b",
+      "email": "4865705+g00glen00b@users.noreply.github.com",
+      "message": "chore(spring-contract-testing): remove stub-runner dependency from producer\n"
+    },
+    {
+      "sha": "201477c8e0d456eac148f319675e9a0923d6bd6f",
+      "date": "2026-06-16T23:21:16+02:00",
+      "author": "g00glen00b",
+      "email": "4865705+g00glen00b@users.noreply.github.com",
+      "message": "feat(spring-contract-testing): move consumer to separate spring-contract-testing-consumer project\n"
+    },
+    {
+      "sha": "a004e382d3da24f4628affec684014387ebaf991",
+      "date": "2026-06-15T23:09:50+02:00",
+      "author": "g00glen00b",
+      "email": "4865705+g00glen00b@users.noreply.github.com",
+      "message": "test(spring-contract-testing): add consumer-side OrderClientTest using Spring Cloud Contract stubs\n"
+    },
+    {
+      "sha": "bbc60d047bc798ab0324caf916e21c6f22baaf4d",
+      "date": "2026-06-15T23:06:05+02:00",
+      "author": "g00glen00b",
+      "email": "4865705+g00glen00b@users.noreply.github.com",
+      "message": "feat(spring-contract-testing): add OrderClient HTTP client for consumer-side testing\n"
+    },
+    {
+      "sha": "888bcb130ddb8dd3ad2f03a5444dc5ec60e28e0d",
+      "date": "2026-06-15T23:04:37+02:00",
+      "author": "g00glen00b",
+      "email": "4865705+g00glen00b@users.noreply.github.com",
+      "message": "test(spring-contract-testing): add ContractVerifierBase for Spring Cloud Contract producer tests\n"
+    },
+    {
+      "sha": "45e11f85e382ab45d516d74f9b98abb0f9fa4492",
+      "date": "2026-06-15T22:44:48+02:00",
+      "author": "g00glen00b",
+      "email": "4865705+g00glen00b@users.noreply.github.com",
+      "message": "test(spring-contract-testing): add Spring Cloud Contract YAML contracts for Orders API\n"
+    },
+    {
+      "sha": "67b3481cd1b6e82ab52981d60433e32ad53137f3",
+      "date": "2026-06-15T22:41:29+02:00",
+      "author": "g00glen00b",
+      "email": "4865705+g00glen00b@users.noreply.github.com",
+      "message": "chore(spring-contract-testing): add Spring Cloud Contract 5.0.3 dependencies and plugin\n"
+    },
+    {
+      "sha": "4e1f0317a08c3a7acdcf3e01b62c93f490c7cd22",
+      "date": "2026-06-15T22:19:15+02:00",
+      "author": "g00glen00b",
+      "email": "4865705+g00glen00b@users.noreply.github.com",
+      "message": "Merge remote-tracking branch 'origin/master'\n"
+    },
+    {
+      "sha": "e04916cab09adcc45771c755f6f81aadb384f288",
+      "date": "2026-06-15T22:18:16+02:00",
+      "author": "g00glen00b",
+      "email": "4865705+g00glen00b@users.noreply.github.com",
+      "message": "fix(spring-contract-testing): fixed pageable parameter\n"
+    },
+    {
+      "sha": "b4f283990deb833d631cb9859781981680e466ef",
+      "date": "2026-06-14T22:50:03+02:00",
+      "author": "g00glen00b",
+      "email": "4865705+g00glen00b@users.noreply.github.com",
+      "message": "test(spring-contract-testing): update full OpenAPI snapshot with /orders/paged endpoint\n"
+    },
+    {
+      "sha": "2bb7f01102c4cbf62630f5d7b7cc268b3a7968c7",
+      "date": "2026-06-14T22:32:14+02:00",
+      "author": "g00glen00b",
+      "email": "4865705+g00glen00b@users.noreply.github.com",
+      "message": "test(spring-contract-testing): add MockMvc test for GET /orders/paged\n"
+    },
+    {
+      "sha": "4be37a5796c1d0d4077bb9909e5e73897f6016ec",
+      "date": "2026-06-14T22:31:10+02:00",
+      "author": "g00glen00b",
+      "email": "4865705+g00glen00b@users.noreply.github.com",
+      "message": "feat(spring-contract-testing): add GET /orders/paged returning Page<Order>\n"
+    },
+    {
+      "sha": "67d664d5021039b90085735500e472d0751ef0a6",
+      "date": "2026-06-14T22:29:27+02:00",
+      "author": "g00glen00b",
+      "email": "4865705+g00glen00b@users.noreply.github.com",
+      "message": "feat(spring-contract-testing): seed Orders database with HSQLDB data.sql\n"
+    },
+    {
+      "sha": "734fdb73d49e329f2e396dec8bb024fa5cef8284",
+      "date": "2026-06-14T22:28:46+02:00",
+      "author": "g00glen00b",
+      "email": "4865705+g00glen00b@users.noreply.github.com",
+      "message": "feat(spring-contract-testing): replace in-memory OrderRepository with JpaRepository\n"
+    },
+    {
+      "sha": "643038a3f8c664760c8508bd8923a4ab230a3f09",
+      "date": "2026-06-14T22:27:46+02:00",
+      "author": "g00glen00b",
+      "email": "4865705+g00glen00b@users.noreply.github.com",
+      "message": "feat(spring-contract-testing): convert Order record to JPA entity\n"
+    },
+    {
+      "sha": "9b755dcee06a62cf628b8b3e25a79630a4cf4f16",
+      "date": "2026-06-14T22:24:50+02:00",
+      "author": "g00glen00b",
+      "email": "4865705+g00glen00b@users.noreply.github.com",
+      "message": "chore(spring-contract-testing): add Spring Data JPA and HSQLDB dependencies\n"
+    },
+    {
+      "sha": "2edb4198e848010ce619e66ace040863fca2b19b",
+      "date": "2026-06-14T22:09:07+02:00",
+      "author": "g00glen00b",
+      "email": "4865705+g00glen00b@users.noreply.github.com",
+      "message": "test(spring-contract-testing): add partial snapshot compatibility test\n"
+    },
+    {
+      "sha": "ca2b5a2de335ebf076d0f90468705827d48cddfa",
+      "date": "2026-06-14T22:03:41+02:00",
+      "author": "g00glen00b",
+      "email": "4865705+g00glen00b@users.noreply.github.com",
+      "message": "refactor(spring-contract-testing): replace SpringBootTest with WebMvcTest slice in snapshot test\n"
+    },
+    {
+      "sha": "8684056acb95e022d0e3421dfe247096cfc6fb14",
+      "date": "2026-06-14T21:38:07+02:00",
+      "author": "g00glen00b",
+      "email": "4865705+g00glen00b@users.noreply.github.com",
+      "message": "refactor(spring-contract-testing): replace MockMvc with direct springdoc bean injection in snapshot test\n"
+    }
+  ],
+  "commit_sha": "3fe241510fcaf65e7495cccc5fb915800395d377",
+  "extracted_at": "2026-10-05T18:30:04.627071+00:00"
+}

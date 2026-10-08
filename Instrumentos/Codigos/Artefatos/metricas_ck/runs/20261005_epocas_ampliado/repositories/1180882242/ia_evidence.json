@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "5671a94c6941ca5f5b20141048acfa992308384c",
+      "date": "2026-09-24T10:12:07+08:00",
+      "author": "HuangHuixiang",
+      "email": "huanghuixiang@qq.com",
+      "message": "refactor: 收尾 erp-platform-api 拆分 (PlatformOrderSync 接口从 service 抽到 api 模块)\n\n- erp-platform-api/pom.xml: 新增 erp-order-service 依赖(接口签名引用 Order/OrderItem)\n- erp-platform-service/pom.xml: 新增 erp-platform-api 依赖(5 个 impl 类实现接口)\n- PlatformOrderSync.java: 由 erp-platform-service 迁移至 erp-platform-api 模块\n- 根 pom.xml: 7 个半成品新模块(erp-finance/warehouse/analytics 等)先注释,\n  待 entity/mapper/vo 内部引用补齐后启用, 避免空壳模块污染主编译链\n\n全量 mvn compile 通过, 还原到 2026-07-31 重构中断时的干净状态\n"
+    },
+    {
+      "sha": "a22ec1917f46c8265bc2c62de13b025080374576",
+      "date": "2026-07-31T22:45:44+08:00",
+      "author": "Huanghuixiang",
+      "email": "noreply@dobara.demo",
+      "message": "refactor: 删除冗余 erp-order library 模块，合并到 erp-order-service\n\nerp-order 原本是 library（含 dto/entity/enums/mapper/OrderService接口+实现），\nerp-order-service 才是真正的启动模块（含 Application/Controller）。\n两者职责重叠，且 OrderServiceImpl 在两边都存在（不同版本），\n导致 Spring 启动时 @Service bean 冲突。\n\n修复：\n- 把 erp-order 独有文件（dto/entity/enums/mapper/OrderService 接口）\n  mv 到 erp-order-service\n- 删除 erp-order 整个模块\n- 父 pom 移除 <module>erp-order</module>\n- depMgmt 新增 erp-order-service 版本定义（替换原 erp-order）\n- erp-platform-service/erp-assembly 把 erp-order 依赖改成 erp-order-service\n- erp-order-service 移除对自己的依赖\n\nmvn validate 通过。\n"
+    },
+    {
+      "sha": "d7e4829eb50d8746feb1b480e2204c56956f4bc7",
+      "date": "2026-07-30T16:24:31+08:00",
+      "author": "nplszfl",
+      "email": "1172720786@QQ.COM",
+      "message": "fix：\n- 修正错误文字内容\n"
+    },
+    {
+      "sha": "1169d420a9ddd4327460a638200c2894dc73b9dd",
+      "date": "2026-07-30T16:22:12+08:00",
+      "author": "nplszfl",
+      "email": "1172720786@QQ.COM",
+      "message": "fix：\n- 修正错误文字内容\n"
+    },
+    {
+      "sha": "4c6b30f96badd55ac8992b1f17fb07c27d21d890",
+      "date": "2026-07-22T12:06:26+08:00",
+      "author": "HuangHuixiang",
+      "email": "huanghuixiang@qq.com",
+      "message": "docs(README): v2.0.0 智能定价引擎升级更新日志\n\n新增 erp-pricing-service v2.0.0 更新日志章节:\n- 竞品分析真实化 (移除硬编码, 走 CompetitorScrapeService 真实数据)\n- 季节性因子动态化 (基于月份计算)\n- 市场调整钳制 (最大涨跌幅限制)\n- Bug 修复 (NPE/null price/批处理容错)\n- 架构改进 (构造器注入 / PriceRandomizer 抽象)\n- 60/60 测试通过\n\n🤖 Generated with [MiniMax-M3](https://MiniMax.cn)\n\nCo-Authored-By: MiniMax <noreply@MiniMax.cn>\n"
+    },
+    {
+      "sha": "82f4ff08a03976e590455e3c3d51948cba0fecf8",
+      "date": "2026-07-22T12:05:55+08:00",
+      "author": "HuangHuixiang",
+      "email": "huanghuixiang@qq.com",
+      "message": "feat(erp-pricing-service): v2.0.0 AI 智能定价引擎升级\n\n## 核心升级 (v1.5.0 → v2.0.0)\n\n### 业务改进\n1. **竞品分析真实化** - 移除 PricingServiceImpl.analyzeCompetitors 硬编码竞品价格 (130-180 固定区间)，改为通过 CompetitorScrapeService.getCompetitorPriceStats 拉取真实竞品统计\n2. **季节性因子动态化** - 移除 getSeasonalFactor 固定返回 +2%，改为基于当前月份动态计算（春季 +2%, 黑五 +5%, 其他 0%）\n3. **市场调整钳制** - adjustPriceByMarket 新增最大涨跌幅钳制（最多涨 15%, 最多降 10%），避免极端行情下剧烈调价\n4. **batchCalculateOptimalPrice 容错** - 修复 NPE bug，新增 null/empty 入参安全返回\n5. **CompetitorScrapeServiceImpl.getCompetitorPriceStats** - 增加 null price 跳过保护，避免空指针\n6. **batchScrape 部分失败容错** - 单个产品抓取失败不影响整个批次\n\n### 架构改进\n- PricingServiceImpl 改为构造器注入 CompetitorScrapeService，便于 Mockito 单测\n- CompetitorScrapeServiceImpl 抽取 PriceRandomizer 接口 + DefaultPriceRandomizer / SeededRandomizer 双实现，让 mock 数据可注入确定性 seed\n- generateMockCompetitor 改为 protected，支持子类定制\n- 常量提取为 static final：PRICE_MIN/MAX、RATING_MIN/MAX、REVIEW_MIN/MAX、SALES_MIN/MAX\n\n### 测试覆盖 (15 → 60，新增 45 个)\n- PricingServiceImplTest 22 个: 全分支覆盖（基础计算、上下调、钳制、validatePrice 边界、null cost 异常、竞品服务异常、batch 多场景、adjustPriceByCompetitors、manualPriceAdjustment、getProductPricingInfo）\n- CompetitorScrapeServiceImplTest 17 个: min/max/avg 算法、SeededRandomizer 确定性、DefaultPriceRandomizer 边界、addCompetitor 时间戳、3 平台数据生成\n- PricingControllerTest 6 个: 6 个 endpoint 委托验证（纯 Mockito 单测避开 @WebMvcTest + Nacos 上下文加载）\n\n### 验证\n- mvn -pl erp-pricing-service test → 60/60 通过\n- 编译时间 < 5s（纯 Mockito 单测）\n- 复用 v1.9.1 FeedbackControllerTest 的纯 Mockito 单测模式，避开 Spring Cloud + Nacos 下 @WebMvcTest 必失败的坑\n\n🤖 Generated with [MiniMax-M3](https://MiniMax.cn)\n\nCo-Authored-By: MiniMax <noreply@MiniMax.cn>\n"
+    },
+    {
+      "sha": "c8f4784cbdccf5f1b31f72d14d46287322d8f2b4",
+      "date": "2026-07-22T00:32:41+08:00",
+      "author": "Hermes Agent",
+      "email": "hermes@MiniMax.local",
+      "message": "feat(erp-product-recommendation): v1.9.1 FeedbackController 单元测试 (62/62 通过)\n\n为 v1.9.0 引入的 FeedbackController REST API 补充单元测试，\n覆盖 5 个端点 (7 个测试用例):\n- POST /api/v1/feedback          提交反馈 (委托 + DTO 序列化)\n- GET  /api/v1/feedback          查询反馈列表 (参数透传 + null 边界)\n- GET  /api/v1/feedback/stats    反馈统计\n- POST /api/v1/feedback/tune     触发权重调优 (tuned=true / tuned=false)\n- GET  /api/v1/feedback/weights  当前权重查询 (无副作用校验)\n\n测试策略说明:\n采用纯单元测试 (extendWith(MockitoExtension)) 而非 @WebMvcTest，\n以避开 spring-cloud + spring-cloud-starter-alibaba-nacos 在测试\n上下文下触发的 'spring.config.import missing nacos:' 加载异常。\n本测试验证 controller 层的委托逻辑、参数传递和响应状态码，\nJSON 序列化层由 MockMvc/Spring 集成测试另行覆盖。\n\n测试结果: 62 passed (原 55 + 7 新增), 0 failed, 0 skipped\n"
+    },
+    {
+      "sha": "81be4f0f1c661ce0b9d537d12c8b21bfa866d12d",
+      "date": "2026-07-18T20:20:10+08:00",
+      "author": "nplszfl",
+      "email": "1172720786@QQ.COM",
+      "message": "fix：\n- 祛除read.me的错误生成信息\n"
+    },
+    {
+      "sha": "c96848fea5e04d3a8a26ecdff14d49e5eabcce73",
+      "date": "2026-07-16T20:19:06+08:00",
+      "author": "HuangHuixiang",
+      "email": "huanghuixiang@qq.com",
+      "message": "docs: README 更新 v1.7.0/1.8.0/1.9.0 更新日志 + AI服务数 4→9\n\n- 对比表: AI能力从 4大 → 9大服务\n- Mermaid 架构图: 新增异常检测/选品/Feedback闭环分支\n- 服务目录: erp-ai-assistant 标记 RAG 知识库能力\n- 更新日志: 补充 v1.7.0 选品推荐、v1.8.0 RAG 生产级重构、v1.9.0 Feedback 闭环\n- 修复: 智能商业服务版本日期从 06-03 恢复为正确的 05-29\n"
+    },
+    {
+      "sha": "5bfba5298acc0f91ef48156590e8f35780213ffb",
+      "date": "2026-07-11T09:40:05+08:00",
+      "author": "HuangHuixiang",
+      "email": "huanghuixiang@qq.com",
+      "message": "feat(OmniTradeERP): v1.9.0 AI 选品推荐 Feedback 闭环 (55/55 测试通过)\n\n## 核心新增\n- RecommendFeedback + RecommendWeightSnapshot 两个新实体\n- WeightTuner 自适应权重调优器\n  - 皮尔逊相关系数计算维度 vs accuracy_score 相关性\n  - LEARNING_RATE=0.08 梯度式更新\n  - 钳制 [0.05, 0.50] + 归一化总和=1.0\n  - 样本 >= 5 自动触发\n- FeedbackService 提交反馈 + 统计\n- FeedbackController 5 个 REST 端点\n- ScoringEngine 支持动态权重切换\n- V2 migration: recommend_feedback + recommend_weight_snapshot 表\n\n## API\nPOST /api/v1/feedback           提交反馈\nGET  /api/v1/feedback           查询反馈列表\nGET  /api/v1/feedback/stats     反馈统计 (采纳率/平均利润/平均评分)\nPOST /api/v1/feedback/tune      触发权重调优\nGET  /api/v1/feedback/weights   查询当前权重\n\n## 测试\n- FeedbackServiceTest: 11 个测试\n- WeightTunerTest: 17 个测试\n- ScoringEngineTest 新增 5 个动态权重测试\n- 总计 55/55 测试通过 (原 22 + 新增 33)\n\n## 闭环逻辑\n推荐 → 卖家采纳 → 真实 outcome 回填 → WeightTuner 计算维度相关性\n→ 调优 5 维权重 → ScoringEngine 立即生效 → 下次推荐更准\n"
+    },
+    {
+      "sha": "0986283d6028f46577f220e0d856645a365a67f8",
+      "date": "2026-07-09T23:02:56+08:00",
+      "author": "HuangHuixiang",
+      "email": "huanghuixiang@qq.com",
+      "message": "feat(erp-web): 补全缺失菜单和页面 (#4)\n\n新增 API 客户端:\n- src/api/index.ts axios 客户端 (token 拦截器, 401 跳转)\n- src/api/{analytics,ai,purchase,social,tenant}.ts 业务接口\n\n新增菜单和路由 (5 个一级 + 9 个二级):\n- 数据分析 / AI 智能中心 / 采购管理 / 社交电商 / 租户管理\n- AI 助手 / 智能定价 / 选品推荐 / 异常检测 / 描述生成 / 库存预测\n- 报表中心 / 采购订单 / 社交电商\n\n新增 11 个 vue 页面 (统一 Element Plus 设计):\n- analytics/index KPI + 趋势图 + 平台占比\n- ai/{Assistant,Pricing,Recommend,Anomaly,Description,InventoryPredict}\n- purchase/index 6 状态采购订单\n- report/index 报表生成\n- social/index TikTok/直播/达人/抖音\n- tenant/index 多套餐卡片\n\nBug fix:\n- Logistics.vue Calculator icon 不存在 → 改为 DataAnalysis\n- npm run build 验证通过 (0 错误)\n"
+    },
+    {
+      "sha": "225dc8fd0c882cf8e58d99e8a7be985b96382751",
+      "date": "2026-07-09T23:02:47+08:00",
+      "author": "HuangHuixiang",
+      "email": "huanghuixiang@qq.com",
+      "message": "fix(database): 修复 SQL DDL 7 处语法错误 (#3)\n\n- init.sql:44  TEXT TEXT → TEXT\n- init.sql:148 TINYINTINT → TINYINT\n- init.sql:404 多余反引号清理\n- pricing-service.sql:16 COMMENT UNIQUE → 表级 UNIQUE KEY\n- inventory-prediction-service.sql:8 数据库名修正\n- inventory-prediction-service.sql:100 重复 INDEX 关键字\n- ai-assistant-service.sql:88 行首多余引号\n\n新增:\n- database/seed-data.sql 19 张业务表 330 行种子数据 (issue #4)\n- database/README.md 数据库初始化指南 + 默认账号\n\n全部通过 MySQL 8.0 实际执行验证\n"
+    },
+    {
+      "sha": "ad7018e5bf83756013f347db683b997f2e594b33",
+      "date": "2026-07-09T10:37:21+08:00",
+      "author": "HuangHuixiang",
+      "email": "huanghuixiang@qq.com",
+      "message": "merge: 合并 origin/main 到 master\n\n集成内容：\n- 前端：Register.vue、index.html、各模块页面更新、Login.vue 调整\n- 后端：用户注册流程 + SecurityConfig + AuthController/Service/ServiceImpl 调整\n- 平台服务：OrderServiceClient (Feign) + OrderSyncController/Schedule 调整\n- 产品服务：ProductController/Entity/Service 适配数据库结构 + keyword/brand 搜索\n- 本地启动修复\n- 基础设施：Nginx 反向代理 + HTTPS/SSL 自动化配置 + docker-compose.ssl.yml + setup-ssl.sh\n- 网关路由：supplier/customer/warehouse/inventory/finance/logistics + 原有 AI 服务路由\n- gateway application.yml 冲突解决：保留 master 的 platform StripPrefix=2 (匹配 feign /api/xxx/... 路径)\n- 两个 add/add 测试文件取 main 版（更新更全）\n"
+    },
+    {
+      "sha": "0e02df7302610c4c4fde381465d4d63e5b5fa501",
+      "date": "2026-06-25T18:21:22+08:00",
+      "author": "HuangHuixiang",
+      "email": "huanghuixiang@qq.com",
+      "message": "feat(ai-assistant): v1.8.0 RAG 知识库 - 向量检索 + 真实持久化\n\n把 v1.7.0 的内存 ArrayList+关键词匹配玩具 RAG 升级为生产级 RAG：\n\n新增 8 个文件:\n- entity/KnowledgeDocument - JPA 实体 (title/content/embedding/active/时间戳)\n- repository/KnowledgeDocumentRepository - JPA Repository\n- service/EmbeddingService + impl - SHA-256 确定性伪向量 (384维 L2归一化)\n- service/VectorSearchService - 余弦相似度 + topK + 阈值\n- service/RAGService - 入库自动算 embedding + retrieve + answer\n- controller/KnowledgeController - 6 个 REST 端点\n- dto/RetrievalResult, RAGAnswer, KnowledgeStats\n\n测试新增 29 个 (EmbeddingServiceTest 8 / VectorSearchServiceTest 10 / RAGServiceTest 11)\n全模块测试 48/48 通过。\n\n修复 3 个预存 bug (顺带):\n- pom 缺 spring-boot-starter-test 依赖 (测试根本编译不过)\n- springdoc-openapi artifactId 拼错 (springdoc-openapi-starter-webmvc-ui)\n- AIAssistantServiceImpl raw List 缺泛型 (Java 编译失败)\n"
+    },
+    {
+      "sha": "6b98c7d5cddc3019b14208be77a4a55b1776ea50",
+      "date": "2026-06-17T10:58:27+08:00",
+      "author": "HuangHuixiang",
+      "email": "huanghuixiang@qq.com",
+      "message": "feat(OmniTradeERP): AI 智能选品推荐服务 v1.7.0 (22/22 测试通过)\n\n新增 erp-product-recommendation-service 微服务 (:8139):\n- ScoringEngine 5 维度加权评分 (需求 0.30 + 趋势 0.20 + 利润 0.20 + 竞争 0.15 + 质量 0.15)\n- STRONG_BUY / BUY / HOLD / SKIP 四级推荐\n- 季节性加成 (trend>0 + seasonality>=0.7 时趋势分 ×1.15)\n- 9 类规则命中 + 关键优势/风险提示\n- MyBatis-Plus 持久化 (recommend_candidate / recommend_result 表) + H2/PostgreSQL 兼容\n- Nacos discovery/config 接入 + Actuator health\n- 4 个 REST 端点: /run /results /results/{id}/adoption /health\n- Swagger/OpenAPI 文档 + 5 条种子数据\n\n测试: 22/22 全过 (ScoringEngineTest 12 + ProductRecommendationServiceTest 10)\n\n集成:\n- 父 pom 注册新模块\n- Gateway 添加 /api/v1/recommend/** 路由 (lb://erp-product-recommendation-service)\n- README + PROJECT_SUMMARY 更新到 v1.7.0\n\n配合 SmartITSM 7e0ed7a、SmartHR cdba4ac、SmartCRM 26fd63b、InsightAI 7506831，v1.7.0 多项目并行交付完成。\n"
+    },
+    {
+      "sha": "7a71618212b35f47ad0512a401bde0525244c7c4",
+      "date": "2026-06-03T15:42:40+08:00",
+      "author": "HuangHuixiang",
+      "email": "huanghuixiang@qq.com",
+      "message": "fix(anomaly): 接入 Nacos 服务发现/配置中心 + Gateway 路由\n\n❌ v1.6.0 架构缺陷: AI 异常检测服务没接 Nacos，等于孤岛\n  - pom 用了独立的 spring-boot-starter-parent，绕开 cross-border-erp 父依赖\n  - 缺 nacos-discovery / nacos-config 依赖\n  - Application 缺 @EnableDiscoveryClient\n  - application.yml 缺 Nacos server-addr 配置\n  - Gateway 没有 anomaly-detection-service 路由\n\n✅ 修复:\n  - pom.xml 改为挂在 cross-border-erp parent 下（与 pricing/order 一致）\n  - 删除手写的 dependencyManagement（BOM 全部由父 pom 统一管理）\n  - 添加 nacos-discovery + nacos-config 依赖\n  - Application 加 @EnableDiscoveryClient\n  - application.yml 加 spring.cloud.nacos.discovery/config 配置\n  - Gateway 添加 lb://erp-anomaly-detection-service 路由\n\n✅ 验证: 23 个单元测试 100% 通过\n"
+    },
+    {
+      "sha": "b15b7322881357d4faee008dfbcbcfffc6721b8b",
+      "date": "2026-06-03T14:33:23+08:00",
+      "author": "HuangHuixiang",
+      "email": "huanghuixiang@qq.com",
+      "message": "docs: README 添加 erp-anomaly-detection-service 到服务列表\n"
+    },
+    {
+      "sha": "2a2afd8ab66d63c28a7891121dc3317c0678cf9e",
+      "date": "2026-06-03T14:29:53+08:00",
+      "author": "HuangHuixiang",
+      "email": "huanghuixiang@qq.com",
+      "message": "feat(v1.6.0): AI订单异常检测服务 + 测试覆盖增强\n\n🎯 战略：AI优先 + 持续完善\n\n✨ 新增 AI 服务 (erp-anomaly-detection-service):\n  - 规则引擎：8 条核心业务规则\n    * R001 新客户大额订单\n    * R002 IP与收货国家不一致\n    * R003 高风险国家\n    * R004 支付延迟异常（机器人特征）\n    * R005 新客户大额优惠券\n    * R006 NEW 客户大额订单\n    * R007 新设备大额订单\n    * R008 极高金额新客户\n  - AI 评分引擎：10 维特征工程加权\n  - 双层融合：规则 60% + AI 40%，取 max 兜底\n  - 风险等级：LOW / MEDIUM / HIGH / CRITICAL\n  - 处置建议：ALLOW / REVIEW / HOLD / REJECT\n  - 23 个单元测试 100% 通过\n\n✅ 测试覆盖大幅提升（4 个零测试模块补齐）:\n  - erp-customer-service: 11 tests\n  - erp-supplier-service: 8 tests\n  - erp-inventory-alert-service: 14 tests\n  - erp-platform-service: 7 tests (Amazon SP-API 签名验证)\n\n📊 统计:\n  - 新增代码 ~3000 行\n  - 新增测试 63 个\n  - 5 个服务编译/测试通过，耗时 ~6s\n\n📝 文档:\n  - PROJECT_SUMMARY.md 更新 v1.6.0 章节\n  - README.md 添加 v1.6.0 版本说明\n"
+    },
+    {
+      "sha": "1ca4ccea406415fd358217193e8fafdaf0e4cc68",
+      "date": "2026-05-29T15:44:15+08:00",
+      "author": "HuangHuixiang",
+      "email": "huanghuixiang@qq.com",
+      "message": "docs: 更新README文档，反映新增功能\n"
+    },
+    {
+      "sha": "74b7f744722c0caa603e97cd6fb4ad43d7bf366f",
+      "date": "2026-05-29T14:07:53+08:00",
+      "author": "HuangHuixiang",
+      "email": "huanghuixiang@qq.com",
+      "message": "feat(OmniTradeERP): 新增智能报表、采购建议、库存预警增强功能\n"
+    },
+    {
+      "sha": "02dfb672f3fb2101cdcd068673771770ec6b4a04",
+      "date": "2026-05-28T16:32:27+08:00",
+      "author": "HuangHuixiang",
+      "email": "huanghuixiang@qq.com",
+      "message": "fix: 更新各服务 API Key 配置\n"
+    },
+    {
+      "sha": "18aad506fef2864ff6bbc6bb80d2228f9074e60f",
+      "date": "2026-05-14T11:04:26+08:00",
+      "author": "HUI XINAG",
+      "email": "108574576+nplszfl@users.noreply.github.com",
+      "message": "fix: ProductController和Product实体适配数据库结构\n\n- ProductController: 支持keyword和brand参数搜索\n- Product实体: sku字段映射到internal_sku, 移除不存在的platform_sku/cost_price/sale_price字段\n- ProductServiceImpl: 支持keyword搜索(匹配name/sku/description)和brand精确匹配\n"
+    },
+    {
+      "sha": "db3f47084164dce596217b92698b032c0e590783",
+      "date": "2026-05-14T10:22:49+08:00",
+      "author": "HUI XINAG",
+      "email": "108574576+nplszfl@users.noreply.github.com",
+      "message": "fix: ProductController支持keyword和brand参数搜索\n"
+    },
+    {
+      "sha": "4d80bafc87b6b823c830214268cb340e99051aa3",
+      "date": "2026-05-12T17:59:20+08:00",
+      "author": "HUI XINAG",
+      "email": "108574576+nplszfl@users.noreply.github.com",
+      "message": "feat: 添加 HTTPS/SSL 证书自动配置\n\n- 新增 Certbot 自动续期服务（docker-compose.ssl.yml）\n- 新增一键 SSL 配置脚本（scripts/setup-ssl.sh）\n  - 支持 Standalone 模式（80 端口验证）\n  - 支持 Cloudflare DNS 验证\n  - 支持阿里云 DNS 验证\n- 更新 nginx.conf HTTPS 配置模板\n  - 使用 Let's Encrypt 证书路径\n  - 添加 HSTS 强制 HTTPS\n  - 添加 SSL 凭证装订（OCSP Stapling）\n  - 强化 TLS 加密套件配置\n- 添加 SSL 证书配置文档\n\n使用方式:\n  ./scripts/setup-ssl.sh erp.example.com admin@example.com\n  docker-compose -f docker-compose.yml -f docker-compose.ssl.yml up -d\n"
+    },
+    {
+      "sha": "b6237c233af732ad55b489ef922caba1ff77bb48",
+      "date": "2026-05-12T14:28:58+08:00",
+      "author": "HUI XINAG",
+      "email": "108574576+nplszfl@users.noreply.github.com",
+      "message": "feat: 添加 Nginx 反向代理配置\n\n- 新增 Nginx 反向代理服务，统一所有外部请求入口\n- 配置 API 限流防护（10r/s）和登录限流（5r/s）\n- 启用 Gzip 压缩和静态资源缓存（7 天）\n- 隐藏内部微服务端口，仅暴露 80/443\n- 支持 HTTPS（生产环境配置 SSL 证书后启用）\n- 添加健康检查和 Nginx 状态监控端点\n- 更新 docker-compose.yml，微服务改为内部暴露\n- 添加完整的 Nginx 配置文档\n\n技术栈：\n- Nginx 1.25 Alpine\n- Docker Compose 集成\n- 限流、缓存、压缩、HTTPS 支持\n"
+    },
+    {
+      "sha": "9776ca69f843c553bca04f3ba847f49df4c6606e",
+      "date": "2026-05-11T11:43:47+08:00",
+      "author": "HUI XINAG",
+      "email": "108574576+nplszfl@users.noreply.github.com",
+      "message": "fix: 修复API路径不匹配和网关路由缺失问题\n\n1. 网关添加缺失路由配置:\n   - supplier-service (/api/supplier/**)\n   - customer-service (/api/customer/**)\n   - warehouse-service (/api/warehouse/**)\n   - inventory-service (/api/inventory/**)\n   - finance-service (/api/finance/**)\n   - logistics-service (/api/logistics/**)\n\n2. 修复前端API路径 (去除重复的前缀):\n   - supplier.ts: /supplier/supplier/ -> /supplier/\n   - customer.ts: /customer/customer/ -> /customer/\n   - order.ts: /order/order/ -> /order/\n   - evaluation路径修复\n\n3. 评估接口路径对应后端:\n   - /supplier/evaluation/supplier/{id} (后端)\n   - getEvaluationList使用正确路径\n"
+    },
+    {
+      "sha": "8f38e5019e49944e812cdd652693de05f599330e",
+      "date": "2026-05-11T09:15:30+08:00",
+      "author": "HUI XINAG",
+      "email": "108574576+nplszfl@users.noreply.github.com",
+      "message": "feat: 添加用户注册功能及多页面优化\n\n- 新增用户注册页面(Register.vue)和注册API\n- 新增RegisterRequest DTO\n- 优化AuthService支持注册流程\n- 优化SecurityConfig安全配置\n- 完善各模块Controller和页面\n"
+    },
+    {
+      "sha": "639f0e1cf295fe5faac1cbd0f2f5bbdf4ba6bd72",
+      "date": "2026-05-09T16:16:02+08:00",
+      "author": "HUI XINAG",
+      "email": "108574576+nplszfl@users.noreply.github.com",
+      "message": "fix: 修复本地启动问题\n\n1. 修复 pom.xml spring-boot-maven-plugin 缺少 repackage goal\n2. 修复 application.yml 中 nacos config/discovery 重复 key 问题\n3. 修复 gateway 需要 reactive web 类型 (web-application-type: reactive)\n4. 修复 gateway 需要排除 DataSourceAutoConfiguration\n5. 添加 user-service 的 SecurityConfig 和 spring-boot-starter-security\n6. 添加 platform-service 的 OrderServiceClient (Feign) 替代直接依赖\n7. 添加 platform-service 的 spring-cloud-starter-loadbalancer\n8. 修复 platform-service 启动成功\n"
+    },
+    {
+      "sha": "0c1448df166495f9d738d6c1a451800310b51dc4",
+      "date": "2026-05-09T11:36:25+08:00",
+      "author": "nplszfl",
+      "email": "1172720786@QQ.COM",
+      "message": "refactor：\n- 修改工件的名称，统一整个项目的命名的风格\n"
+    },
+    {
+      "sha": "966baacba7e2572d20ffc6be67354f6af97938c0",
+      "date": "2026-05-09T11:30:04+08:00",
+      "author": "nplszfl",
+      "email": "1172720786@QQ.COM",
+      "message": "Merge remote-tracking branch 'origin/master'\n"
+    }
+  ],
+  "commit_sha": "5671a94c6941ca5f5b20141048acfa992308384c",
+  "extracted_at": "2026-10-05T18:08:05.501141+00:00"
+}

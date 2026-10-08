@@ -1,0 +1,32 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "3.3.0",
+  "spring_boot_major": "3",
+  "java_versions_declared": "22",
+  "build_evidence": [
+    {
+      "file": "reactive-api/pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "reactive-api/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "reactive-api/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "reactive-api/pom.xml",
+      "artifact": "spring-boot-starter"
+    },
+    {
+      "file": "reactive-api/pom.xml",
+      "artifact": "spring-boot-configuration-processor"
+    },
+    {
+      "file": "reactive-api/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

@@ -1,0 +1,254 @@
+{
+  "ia_status": "com_evidencia",
+  "ia_level": 2,
+  "ia_agents": "Claude Code",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "3ded295146f6f217b918ad1407c1bf6f12e67916",
+      "trailer": "Claude Sonnet 4.6 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "ff1db9c393802ec53bffa8f6a14e7bb3089028b1",
+      "trailer": "Claude Sonnet 4.6 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "7c9bd1e35849fc4a55e9ce31a0540c35161bc849",
+      "trailer": "Claude Sonnet 4.6 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "46617afe192aa1fd60f5130f08c7eced1bbf1c5b",
+      "trailer": "Claude Sonnet 4.6 <noreply@anthropic.com>"
+    },
+    {
+      "agent": "Claude Code",
+      "type": "coauthor",
+      "sha": "243da5c1d88345a3a5367616b8671a060fb3d68c",
+      "trailer": "Claude Sonnet 4.6 (1M context) <noreply@anthropic.com>"
+    }
+  ],
+  "commits": [
+    {
+      "sha": "d40e53c91868a1b27692ab58b9d19f02f4b1eb03",
+      "date": "2026-10-02T16:35:01-04:00",
+      "author": "Art Morozov",
+      "email": "artyom.morozov315@gmail.com",
+      "message": "chore(DATAGO-154169): track reusable workflows by branch instead of SHA (#222)"
+    },
+    {
+      "sha": "6d4fc0a2be99ba2b952c2dcede44a1728d227bde",
+      "date": "2026-09-29T20:01:22Z",
+      "author": "Jeffrey D",
+      "email": "11084623+Nephery@users.noreply.github.com",
+      "message": "add exclusion for inhouse libraries in dependabot cooldown (#221)"
+    },
+    {
+      "sha": "488d1ea73a9a0cbd4bc79bd566cb981e1bef1f78",
+      "date": "2026-09-29T19:29:53Z",
+      "author": "GitHub Action",
+      "email": "action@github.com",
+      "message": "[maven-release-plugin] prepare for next development iteration\n"
+    },
+    {
+      "sha": "9a9219ce5dff1d2b91ab46a5797c126f31c4a8d3",
+      "date": "2026-09-29T19:29:49Z",
+      "author": "GitHub Action",
+      "email": "action@github.com",
+      "message": "[maven-release-plugin] prepare release 3.1.1\n"
+    },
+    {
+      "sha": "2072d54e2dad409a741a3b2de2179ad1ef46bcd8",
+      "date": "2026-09-29T19:08:23Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump com.solacesystems:sol-jms-jakarta from 10.30.1 to 10.30.2 (#217)\n\nBumps [com.solacesystems:sol-jms-jakarta](https://github.com/SolaceDev/solsuite) from 10.30.1 to 10.30.2.\n- [Commits](https://github.com/SolaceDev/solsuite/commits)\n\n---\nupdated-dependencies:\n- dependency-name: com.solacesystems:sol-jms-jakarta\n  dependency-version: 10.30.2\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "a8cb9ac3511d7349d56fbfcbace6f06a6f9e08d2",
+      "date": "2026-09-29T14:59:28-04:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump com.solacesystems:sol-jcsmp from 10.30.1 to 10.30.2 (#218)\n\nBumps [com.solacesystems:sol-jcsmp](https://github.com/SolaceDev/solsuite) from 10.30.1 to 10.30.2.\n- [Commits](https://github.com/SolaceDev/solsuite/commits)\n\n---\nupdated-dependencies:\n- dependency-name: com.solacesystems:sol-jcsmp\n  dependency-version: 10.30.2\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "ce37fca07ca2d6fcbf68ddc1d5c6580a1b936caf",
+      "date": "2026-09-28T14:18:47-04:00",
+      "author": "Art Morozov",
+      "email": "art.morozov@solace.com",
+      "message": "chore(DATAGO-154169): Update SolaceDev/solace-public-workflows digest to 668d31d (#220)"
+    },
+    {
+      "sha": "2ae2860d992d823f0986845d0da2d284b98b290b",
+      "date": "2026-09-25T08:58:56-04:00",
+      "author": "Art Morozov",
+      "email": "art.morozov@solace.com",
+      "message": "chore(DATAGO-154169): Pin GitHub Actions to immutable SHA digests (#219)"
+    },
+    {
+      "sha": "088987ce6f970b146e3fd3dc3f3bf6bbd431079e",
+      "date": "2026-09-02T20:16:24Z",
+      "author": "GitHub Action",
+      "email": "action@github.com",
+      "message": "[maven-release-plugin] prepare for next development iteration\n"
+    },
+    {
+      "sha": "dd8216749083182941a51dc8b8f18438c0cdf9ef",
+      "date": "2026-09-02T20:16:20Z",
+      "author": "GitHub Action",
+      "email": "action@github.com",
+      "message": "[maven-release-plugin] prepare release 3.1.0\n"
+    },
+    {
+      "sha": "5205021e85fd5a5832e2053668c625b76bbd6363",
+      "date": "2026-09-02T15:57:32-04:00",
+      "author": "mayur-solace",
+      "email": "81177023+mayur-solace@users.noreply.github.com",
+      "message": "Added a version compatibility note (#216)"
+    },
+    {
+      "sha": "0d9040091e2fef8f7bb5eb5c0a5c258acfd587e4",
+      "date": "2026-09-02T12:03:01-04:00",
+      "author": "mayur-solace",
+      "email": "81177023+mayur-solace@users.noreply.github.com",
+      "message": "Prepare for 3.1.0 release (#215)"
+    },
+    {
+      "sha": "565ac19ec87f55836441477c856ff7501a2d95b4",
+      "date": "2026-09-02T10:15:50-04:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump spring.boot.version from 4.1.0 to 4.1.1 (#214)\n\nBumps `spring.boot.version` from 4.1.0 to 4.1.1.\n\nUpdates `org.springframework.boot:spring-boot-maven-plugin` from 4.1.0 to 4.1.1\n- [Release notes](https://github.com/spring-projects/spring-boot/releases)\n- [Commits](https://github.com/spring-projects/spring-boot/compare/v4.1.0...v4.1.1)\n\nUpdates `org.springframework.boot:spring-boot-dependencies` from 4.1.0 to 4.1.1\n- [Release notes](https://github.com/spring-projects/spring-boot/releases)\n- [Commits](https://github.com/spring-projects/spring-boot/compare/v4.1.0...v4.1.1)\n\n---\nupdated-dependencies:\n- dependency-name: org.springframework.boot:spring-boot-maven-plugin\n  dependency-version: 4.1.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n- dependency-name: org.springframework.boot:spring-boot-dependencies\n  dependency-version: 4.1.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "ca3b01d562241df9641784dabdd739fb88d23394",
+      "date": "2026-09-02T10:15:22-04:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump com.solacesystems:sol-jms-jakarta from 10.29.1 to 10.30.1 (#209)\n\nBumps [com.solacesystems:sol-jms-jakarta](https://github.com/SolaceDev/solsuite) from 10.29.1 to 10.30.1.\n- [Commits](https://github.com/SolaceDev/solsuite/commits)\n\n---\nupdated-dependencies:\n- dependency-name: com.solacesystems:sol-jms-jakarta\n  dependency-version: 10.30.1\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "1fb7593abd7e5c3612711590594746bca95f0e1f",
+      "date": "2026-09-02T10:05:44-04:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump com.solacesystems:sol-jcsmp from 10.29.1 to 10.30.1 (#210)\n\nBumps [com.solacesystems:sol-jcsmp](https://github.com/SolaceDev/solsuite) from 10.29.1 to 10.30.1.\n- [Commits](https://github.com/SolaceDev/solsuite/commits)\n\n---\nupdated-dependencies:\n- dependency-name: com.solacesystems:sol-jcsmp\n  dependency-version: 10.30.1\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "0f13ff7cd4a5f10cd17d8fc872586ba78f19580a",
+      "date": "2026-09-02T10:05:01-04:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump spring.boot.version from 4.0.3 to 4.1.0 (#211)\n\nBumps `spring.boot.version` from 4.0.3 to 4.1.0.\n\nUpdates `org.springframework.boot:spring-boot-maven-plugin` from 4.0.3 to 4.1.0\n- [Release notes](https://github.com/spring-projects/spring-boot/releases)\n- [Commits](https://github.com/spring-projects/spring-boot/compare/v4.0.3...v4.1.0)\n\nUpdates `org.springframework.boot:spring-boot-dependencies` from 4.0.3 to 4.1.0\n- [Release notes](https://github.com/spring-projects/spring-boot/releases)\n- [Commits](https://github.com/spring-projects/spring-boot/compare/v4.0.3...v4.1.0)\n\n---\nupdated-dependencies:\n- dependency-name: org.springframework.boot:spring-boot-maven-plugin\n  dependency-version: 4.1.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n- dependency-name: org.springframework.boot:spring-boot-dependencies\n  dependency-version: 4.1.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "61f58f65b088483324b31b5328cfbace5a9d26c5",
+      "date": "2026-08-25T13:13:13-04:00",
+      "author": "Aman Riat",
+      "email": "aman.riat@solace.com",
+      "message": "Fix FOSSA scan: scan repository root instead of per-module paths (#213)\n\n* Scan repository root for FOSSA instead of per-module paths\n\nThe matrix-based scan produced no results in FOSSA. Each matrix entry ran\n`fossa analyze --only-path <child-module>`, but the FOSSA Maven strategy\ndiscovers a single project at the root reactor pom. Filtering discovery to a\nchild module directory excluded that root project, so the maven project was\nskipped and zero dependencies were uploaded.\n\nBoth matrix entries also passed the identical\n`--project SolaceProducts_solace-spring-boot --revision <sha>`, so they raced\nto write the same FOSSA locator regardless.\n\nCollapse to a single root scan and add a root .fossa.yml. Verified locally:\nthe root scan resolves 84 Maven dependencies where --only-path resolved 0.\n\nupdate_manifest is collapsed to one entry named after the repository, matching\nthe product name the Guardian upload already derives from the FOSSA project ID.\n\n* Run the SCA scan on pull requests as well as pushes to master\n\nLets the root-scan fix be validated on the PR itself instead of only after\nmerge. The reusable workflow already handles PR context: it scans in diff mode,\nposts a PR comment and status check, and uploads under branch 'PR'.\n\nupdate_manifest stays master-only -- its existing\n`github.ref_name == github.event.repository.default_branch` guard is false on\npull_request events, so no DynamoDB writes happen from PRs.\n\n* Give the FOSSA scan Maven credentials for GitHub Packages\n\nThe root scan uploaded real data but the dependency graph was shallow:\n23 dependencies for spring-cloud where a local run with a warm ~/.m2 resolves 92.\n`fossa analyze --debug` showed why:\n\n    Warn: Could not analyze edges between dependencies.\n    Warn: Could not analyze deep dependencies.\n    [ERROR] Non-resolvable import POM: com.solace.test.integration:\n            solace-integration-test-support-bom:pom:3.0.0 (absent):\n            Could not find artifact ... in central\n\nThat BOM is published to GitHub Packages, not Maven Central. build-test.yml\nresolves it with `mvn -s maven/settings.xml` plus GITHUB_TOKEN, but the FOSSA\nCLI shells out to a plain `mvn` that never sees that file, so the import POM\nfails, dependency:tree errors out, and FOSSA degrades to a graph with no\ntransitive edges -- silently, as a warning rather than a failure.\n\nConfigure the same repository and credentials into ~/.m2/settings.xml via the\nreusable workflow's maven-settings setup action, which plain `mvn` picks up.\n\n* Use github.token instead of secrets.GITHUB_TOKEN in the reusable call\n\nThe secrets context is not available in jobs.<id>.with for a reusable workflow\ncall, so the workflow failed validation before any job started. github.token\ncarries the same value and is an allowed context there.\n\n* Set up Java before writing Maven settings\n\nmaven-settings-xml-action failed with \"Cannot read properties of undefined\n(reading 'nodeType')\" because it was run without setup-java, so there was no\n~/.m2 settings.xml for it to build on. Restore setup-java alongside it and pin\nJDK 17 / zulu to match build-test.yml.\n\n* Revert the Maven-credentials attempt for the FOSSA scan\n\nThe shallow-dependency-graph problem is real but cannot be fixed from the\ncaller side. Two blockers:\n\n  1. github.token (and secrets.*) resolve to an empty string when passed\n     through a reusable workflow's `with:` block, so the server password\n     arrived empty:\n       servers: [{\"id\": \"...\", \"username\": \"AmanRiat1\", \"password\": \"\"}]\n  2. maven-settings-xml-action then failed outright:\n       invalid doc source @#[line:0,col:undefined]\n       ##[error]Cannot read properties of undefined (reading 'nodeType')\n\nRevert to the known-good root-scan configuration, which is green and uploads\nreal results. The remaining transitive-depth gap needs either a credential\nsecret plumbed through sca-scan-and-guard.yaml or a Vault-sourced\npackages-read token; tracked separately.\n\n* Install the test-support BOM so FOSSA resolves transitive dependencies\n\nThe root scan uploaded real data but a shallow graph: 18 dependencies where a\nlocal run with a warm ~/.m2 resolves 84. The root pom imports\ncom.solace.test.integration:solace-integration-test-support-bom:3.0.0, which is\nnot on Maven Central. The FOSSA CLI shells out to a plain `mvn`, the import POM\nfails to resolve, dependency:tree errors, and FOSSA degrades to a graph with no\ntransitive edges -- as a warning, not a failure.\n\nNo credentials are required. build-test.yml already handles this by cloning the\npublic SolaceDev/solace-integration-test-support repo at the tag named by\nsolace.integration.test.support.version and running `mvn install`. Do the same\nin custom_setup_script, cloning to RUNNER_TEMP so FOSSA does not pick the clone\nup as a separate project to scan.\n\nThis supersedes the reverted attempt to authenticate against GitHub Packages,\nwhich could not work: github.token is emptied when passed through a reusable\nworkflow's `with:` block."
+    },
+    {
+      "sha": "976435f2fbbd6e4ab731335f2c638d2bbd1ca8da",
+      "date": "2026-08-21T11:25:52-04:00",
+      "author": "mustafaal-sakkaf",
+      "email": "122825543+mustafaal-sakkaf@users.noreply.github.com",
+      "message": "Merge pull request #212 from SolaceProducts/DATAGO-142436-fossa-guardian-onboarding\n\n[Bucket B] Add FOSSA SCA scan and Guardian manifest workflow"
+    },
+    {
+      "sha": "fdc5be932b16b39fa0de774453b20dd946cdb898",
+      "date": "2026-08-21T11:01:07-04:00",
+      "author": "mustafaal-sakkaf",
+      "email": "122825543+mustafaal-sakkaf@users.noreply.github.com",
+      "message": "Update sca-scan-and-guard.yml"
+    },
+    {
+      "sha": "3ded295146f6f217b918ad1407c1bf6f12e67916",
+      "date": "2026-07-29T11:06:37-04:00",
+      "author": "Mustafa Al-Sakkaf",
+      "email": "mustafa.al-sakkaf@solace.com",
+      "message": "Remove root .fossa.yml (submodule-level files used instead)\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>\n"
+    },
+    {
+      "sha": "ff1db9c393802ec53bffa8f6a14e7bb3089028b1",
+      "date": "2026-07-29T10:55:34-04:00",
+      "author": "Mustafa Al-Sakkaf",
+      "email": "mustafa.al-sakkaf@solace.com",
+      "message": "Fix squad to temp\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>\n"
+    },
+    {
+      "sha": "7c9bd1e35849fc4a55e9ce31a0540c35161bc849",
+      "date": "2026-07-29T10:52:36-04:00",
+      "author": "Mustafa Al-Sakkaf",
+      "email": "mustafa.al-sakkaf@solace.com",
+      "message": "Add per-submodule FOSSA scanning with manifest writes\n\nDATAGO-142436: matrix scan over 2 publishable submodules using fossa.only_path.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>\n"
+    },
+    {
+      "sha": "46617afe192aa1fd60f5130f08c7eced1bbf1c5b",
+      "date": "2026-07-27T11:42:56-04:00",
+      "author": "Mustafa Al-Sakkaf",
+      "email": "mustafa.al-sakkaf@solace.com",
+      "message": "Update squad to connectors-core\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>\n"
+    },
+    {
+      "sha": "243da5c1d88345a3a5367616b8671a060fb3d68c",
+      "date": "2026-07-23T14:39:49-04:00",
+      "author": "Mustafa Al-Sakkaf",
+      "email": "mustafa.al-sakkaf@solace.com",
+      "message": "Add FOSSA SCA scan and Guardian manifest workflow\n\nAdds .fossa.yml, .github/workflows/sca-scan-and-guard.yml, and\n.github/workflow-config.json to onboard this repo to FOSSA scanning\non merge to default branch per DATAGO-142436.\n\nCo-Authored-By: Claude Sonnet 4.6 (1M context) <noreply@anthropic.com>\n"
+    },
+    {
+      "sha": "b1e24afa4dcf2ad875e6a9a29d612e9803e86a2a",
+      "date": "2026-03-05T20:37:55Z",
+      "author": "GitHub Action",
+      "email": "action@github.com",
+      "message": "[maven-release-plugin] prepare for next development iteration\n"
+    },
+    {
+      "sha": "e05bc6bb440f772857bfb0c8d376d0b1d1781fbe",
+      "date": "2026-03-05T20:37:53Z",
+      "author": "GitHub Action",
+      "email": "action@github.com",
+      "message": "[maven-release-plugin] prepare release 3.0.0\n"
+    },
+    {
+      "sha": "eddf4cb271fc5678bbf5b1482a99230098ef60d0",
+      "date": "2026-03-05T15:20:15-05:00",
+      "author": "mayur-solace",
+      "email": "81177023+mayur-solace@users.noreply.github.com",
+      "message": "Fix release plugin (#202)\n\n"
+    },
+    {
+      "sha": "ca0f2c5598ee0ea5c9457bca5616595d44732d2a",
+      "date": "2026-03-05T13:57:15-05:00",
+      "author": "Salman Hooshmand",
+      "email": "salman.hooshmand@solace.com",
+      "message": "DATAGO-127387: Fix the token used for pulling from GitHub packages\n\nDATAGO-127387: Fix the token used for pulling from GitHub packages"
+    },
+    {
+      "sha": "57f21490940873f03131bf7182320e05ebc15c9a",
+      "date": "2026-03-05T13:31:14-05:00",
+      "author": "Salman Hooshmand",
+      "email": "salman.hooshmand@solace.com",
+      "message": "fix the token"
+    },
+    {
+      "sha": "a4558889a3d7c202d0bbd0df80782427236c506e",
+      "date": "2026-03-04T17:03:45-05:00",
+      "author": "mayur-solace",
+      "email": "81177023+mayur-solace@users.noreply.github.com",
+      "message": "Update Solace Test Support Dependency (#200)\n\n"
+    }
+  ],
+  "commit_sha": "d40e53c91868a1b27692ab58b9d19f02f4b1eb03",
+  "extracted_at": "2026-10-05T18:38:11.481723+00:00"
+}

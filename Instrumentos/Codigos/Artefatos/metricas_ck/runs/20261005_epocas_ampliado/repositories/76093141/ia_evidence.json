@@ -1,0 +1,272 @@
+{
+  "ia_status": "com_evidencia",
+  "ia_level": 2,
+  "ia_agents": "GitHub Copilot",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [
+    {
+      "agent": "GitHub Copilot",
+      "type": "coauthor",
+      "sha": "e77c98571a4785657ea6cb834842308f40698e75",
+      "trailer": "copilot-swe-agent[bot] <198982749+Copilot@users.noreply.github.com>"
+    },
+    {
+      "agent": "GitHub Copilot",
+      "type": "coauthor",
+      "sha": "743e4ae060d021591e689bb946dbd56d8247c22a",
+      "trailer": "copilot-swe-agent[bot] <198982749+Copilot@users.noreply.github.com>"
+    },
+    {
+      "agent": "GitHub Copilot",
+      "type": "coauthor",
+      "sha": "f67860d315293a9470dbf7fce96e3685e2a787d9",
+      "trailer": "copilot-swe-agent[bot] <198982749+Copilot@users.noreply.github.com>"
+    },
+    {
+      "agent": "GitHub Copilot",
+      "type": "coauthor",
+      "sha": "d208f97dc79bab1f2edfcc00f7478621a2a3050a",
+      "trailer": "copilot-swe-agent[bot] <198982749+Copilot@users.noreply.github.com>"
+    },
+    {
+      "agent": "GitHub Copilot",
+      "type": "coauthor",
+      "sha": "6514555e671f42c87c04517a843787ce2624d6e9",
+      "trailer": "copilot-swe-agent[bot] <198982749+Copilot@users.noreply.github.com>"
+    },
+    {
+      "agent": "GitHub Copilot",
+      "type": "coauthor",
+      "sha": "6624dd7f1a155925dec730a5650d6dbaed279030",
+      "trailer": "copilot-swe-agent[bot] <198982749+Copilot@users.noreply.github.com>"
+    },
+    {
+      "agent": "GitHub Copilot",
+      "type": "coauthor",
+      "sha": "73826750b420f4b66a2958340d770aeddcdac682",
+      "trailer": "copilot-swe-agent[bot] <198982749+Copilot@users.noreply.github.com>"
+    },
+    {
+      "agent": "GitHub Copilot",
+      "type": "coauthor",
+      "sha": "739044761fd20759fd9743fb0c7e867e4a89e0c3",
+      "trailer": "copilot-swe-agent[bot] <198982749+Copilot@users.noreply.github.com>"
+    }
+  ],
+  "commits": [
+    {
+      "sha": "e77c98571a4785657ea6cb834842308f40698e75",
+      "date": "2026-07-08T07:52:34+08:00",
+      "author": "Copilot",
+      "email": "198982749+Copilot@users.noreply.github.com",
+      "message": "Improve unit test TDD quality: add branch coverage, missing method tests, and GlobalExceptionHandlerTest (#258)\n\nCo-authored-by: copilot-swe-agent[bot] <198982749+Copilot@users.noreply.github.com>"
+    },
+    {
+      "sha": "743e4ae060d021591e689bb946dbd56d8247c22a",
+      "date": "2026-06-15T00:48:18+08:00",
+      "author": "Copilot",
+      "email": "198982749+Copilot@users.noreply.github.com",
+      "message": "Remove OAuth2 modules, routes, config, and docs (#255)\n\n* Initial plan\n\n* 移除所有 OAuth2 相关模块、配置、依赖和文档说明\n\n---------\n\nCo-authored-by: copilot-swe-agent[bot] <198982749+Copilot@users.noreply.github.com>"
+    },
+    {
+      "sha": "207e1fea4c604788660b9f80133b72ab56aa211f",
+      "date": "2026-06-14T23:27:29+08:00",
+      "author": "zheng",
+      "email": "275688448@qq.com",
+      "message": "更新 SampleWebApplication.java"
+    },
+    {
+      "sha": "f67860d315293a9470dbf7fce96e3685e2a787d9",
+      "date": "2026-06-14T22:27:39+08:00",
+      "author": "zheng",
+      "email": "techa@foxmail.com",
+      "message": "Feat tracing 0612 (#254)\n\n* feat(tracing): 集成OpenTelemetry实现分布式追踪功能\n\n- 添加core-tracing模块并集成OpenTelemetry自动配置\n- 在各服务模块中引入OpenTelemetry依赖和配置\n- 配置Jaeger和Loki容器用于链路追踪和日志收集\n- 修改OrderDTO中seckillId字段类型从BigInteger改为Long\n- 更新MongoDB配置和相关数据访问层代码适配Long类型\n- 在各个应用的日志配置中添加OpenTelemetry appender支持\n- 更新全局配置文件添加OTLP导出端点配置\n\n* fix(loki): 配置Loki日志收集服务并修正OTLP端点\n\n- 添加Loki配置文件挂载和数据持久化卷\n- 配置Loki容器启动参数和网络设置\n- 修正了日志收集系统的HTTP端点地址\n\n* refactor(infrastructure): 重构监控栈配置\n\n- 移除独立的 grafana 和 loki 服务\n- 引入 grafana/otel-lgtm 镜像替代原有监控组件\n\n* feat(gateway): 添加网关请求日志过滤器并优化跟踪配置\n\n- 新增 RequestLoggingFilter 实现网关请求路径、状态码和耗时记录\n- 配置 GatewayBootApplication 启用 REACTIVE Web应用类型\n- 添加 Loki 日志聚合系统配置文件 loki.yml\n- 更新 docker-compose.yml 中的 Grafana OTel LGTM 镜像配置\n- 优化 OpenTelemetry 自动配置类注释和依赖注入\n- 调整 SeckillService 实现类中的方法参数类型引用\n- 将状态机服务中的日志级别从 info 调整为 debug\n- 修复 goodskill-common.yml 配置文件中的中文注释乱码问题\n\n* config: 更新应用配置和优化图片加载逻辑\n\n- 在auth-service和ai服务中添加dev环境配置\n- 新增logback-spring.xml日志配置文件用于统一日志管理\n- 优化产品管理页面图片加载逻辑，支持HTTP URL直接显示\n- 更新通用连接配置中的MongoDB和MinIO地址配置\n- 修复公共服务扫描包配置问题\n- 在秒杀响应监听器中添加延迟处理防止并发问题\n\n* docs(readme): 更新文档添加OpenTelemetry集成说明\n\n- 移除docker-compose.yml中的jaeger配置\n- 添加OpenTelemetry可观测性能力说明\n- 在依赖技术表格中增加OpenTelemetry条目\n- 更新服务端口映射信息表\n- 添加minio到hosts配置示例\n\n* refactor(test): 优化测试代码中的数据类型和Mock配置\n\n- 将BigInteger类型替换为long基本类型以简化测试数据设置\n- 移除不必要的BigInteger导入语句\n- 使用lenient()配置Mock行为以避免严格的验证异常\n- 统一订单服务测试中的数据类型转换处理\n\n* feat(tracing): 集成 OpenTelemetry 分布式追踪功能\n\n- 添加 ContextPropagatingTaskDecorator Bean 实现跨线程传递 trace context\n- 新增 TraceIdFilter 用于 Servlet 环境将 trace id 写入响应头\n- 新增 TraceIdWebFilter 用于 WebFlux 环境将 trace id 写入响应头\n- 修改 ThreadPoolConfig 使用 ThreadPoolTaskExecutor 并注入 task decorator\n- 更新 pom.xml 添加必要的依赖配置\n- 修改 SampleWebApplication 启用 tracing 包扫描\n\n* refactor(core): 将Feign客户端替换为RestClient\n\n- 删除所有Feign客户端接口及其实现类\n- 添加OrderRestClient、SeckillRestClient、SeckillGoodsRestClient和AuthRestClient\n- 配置RestClient负载均衡支持\n- 更新AI模块中的SeckillMockRestClient依赖\n- 修改定时任务和分布式事务中的客户端调用\n- 移除Feign相关配置和依赖项\n\n* refactor(core): 将Feign客户端重构为RestClient并更新包结构\n\n- 将core-feign模块中的客户端类从com.goodskill.core.feign包移动到com.goodskill.core.rest.client包\n- 在README.md中更新技术架构描述，将Feign替换为原生RestClient\n- 删除goodskill-ai模块中原有的SeckillMockRestClient类并重新创建到新的包路径下\n- 更新所有依赖注入的导入路径以使用新的RestClient包位置\n- 修改Spring Boot应用扫描包配置以包含新的rest.client包路径\n- 在测试类中同步更新客户端类的引用和验证mock对象\n\n* refactor(gateway): 将认证服务调用从Feign替换为WebClient\n\n- 移除AuthFeignClient接口及@EnableFeignClients注解\n- 新增AuthWebClient类使用WebClient进行服务调用\n- 更新StpInterfaceImpl中权限和角色获取逻辑使用WebClient\n- 添加WebClientConfig配置类支持负载均衡\n- 从pom.xml移除spring-cloud-starter-openfeign依赖\n- 在core-feign模块添加spring-cloud-starter-loadbalancer依赖\n- 从core-util模块移除web和loadbalancer相关依赖\n\nfix(auth): 修复角色列表获取时的空值异常\n\n- 在getRoleList方法中添加loginType为空的校验\n- 添加roleIds为空集合的边界情况处理\n- 使用Lists.newArrayList()返回空列表避免NPE\n\n* docs(readme): 更新OpenTelemetry文档链接\n\n---------\n\nCo-authored-by: AI Agent <ai-agent@example.com>\nCo-authored-by: copilot-swe-agent[bot] <198982749+Copilot@users.noreply.github.com>"
+    },
+    {
+      "sha": "f644f0e185a60a438dfbaf876eb53d3df7cac26d",
+      "date": "2026-06-14T12:21:59+08:00",
+      "author": "zheng",
+      "email": "techa@foxmail.com",
+      "message": "Update README.md\n\nSigned-off-by: zheng <techa@foxmail.com>"
+    },
+    {
+      "sha": "f16cbac3ac2add829e8766df9c4c3a75998b0fa9",
+      "date": "2026-06-14T12:19:20+08:00",
+      "author": "zheng",
+      "email": "techa@foxmail.com",
+      "message": "Feat tracing 0612 (#253)\n\n* feat(tracing): 集成OpenTelemetry实现分布式追踪功能\n\n- 添加core-tracing模块并集成OpenTelemetry自动配置\n- 在各服务模块中引入OpenTelemetry依赖和配置\n- 配置Jaeger和Loki容器用于链路追踪和日志收集\n- 修改OrderDTO中seckillId字段类型从BigInteger改为Long\n- 更新MongoDB配置和相关数据访问层代码适配Long类型\n- 在各个应用的日志配置中添加OpenTelemetry appender支持\n- 更新全局配置文件添加OTLP导出端点配置\n\n* fix(loki): 配置Loki日志收集服务并修正OTLP端点\n\n- 添加Loki配置文件挂载和数据持久化卷\n- 配置Loki容器启动参数和网络设置\n- 修正了日志收集系统的HTTP端点地址\n\n* refactor(infrastructure): 重构监控栈配置\n\n- 移除独立的 grafana 和 loki 服务\n- 引入 grafana/otel-lgtm 镜像替代原有监控组件\n\n* feat(gateway): 添加网关请求日志过滤器并优化跟踪配置\n\n- 新增 RequestLoggingFilter 实现网关请求路径、状态码和耗时记录\n- 配置 GatewayBootApplication 启用 REACTIVE Web应用类型\n- 添加 Loki 日志聚合系统配置文件 loki.yml\n- 更新 docker-compose.yml 中的 Grafana OTel LGTM 镜像配置\n- 优化 OpenTelemetry 自动配置类注释和依赖注入\n- 调整 SeckillService 实现类中的方法参数类型引用\n- 将状态机服务中的日志级别从 info 调整为 debug\n- 修复 goodskill-common.yml 配置文件中的中文注释乱码问题\n\n* config: 更新应用配置和优化图片加载逻辑\n\n- 在auth-service和ai服务中添加dev环境配置\n- 新增logback-spring.xml日志配置文件用于统一日志管理\n- 优化产品管理页面图片加载逻辑，支持HTTP URL直接显示\n- 更新通用连接配置中的MongoDB和MinIO地址配置\n- 修复公共服务扫描包配置问题\n- 在秒杀响应监听器中添加延迟处理防止并发问题\n\n* docs(readme): 更新文档添加OpenTelemetry集成说明\n\n- 移除docker-compose.yml中的jaeger配置\n- 添加OpenTelemetry可观测性能力说明\n- 在依赖技术表格中增加OpenTelemetry条目\n- 更新服务端口映射信息表\n- 添加minio到hosts配置示例\n\n* refactor(test): 优化测试代码中的数据类型和Mock配置\n\n- 将BigInteger类型替换为long基本类型以简化测试数据设置\n- 移除不必要的BigInteger导入语句\n- 使用lenient()配置Mock行为以避免严格的验证异常\n- 统一订单服务测试中的数据类型转换处理\n\n---------\n\nCo-authored-by: AI Agent <ai-agent@example.com>"
+    },
+    {
+      "sha": "044c0e3e349c2501d64e61b5abd4e81a5abdc2ee",
+      "date": "2026-05-23T16:05:09+08:00",
+      "author": "zheng",
+      "email": "techa@foxmail.com",
+      "message": "Update Nacos, Elasticsearch, and Kibana versions\n\nSigned-off-by: zheng <techa@foxmail.com>"
+    },
+    {
+      "sha": "6dd77f2a14e4d37afd47d45f524614d998e4a182",
+      "date": "2026-05-23T15:56:19+08:00",
+      "author": "zheng",
+      "email": "techa@foxmail.com",
+      "message": "Update SeckillMockControllerTest.java\n\nSigned-off-by: zheng <techa@foxmail.com>"
+    },
+    {
+      "sha": "bf935a4547f78770495dbc1325ed1c9a41b3733a",
+      "date": "2026-05-23T15:48:59+08:00",
+      "author": "zheng",
+      "email": "techa@foxmail.com",
+      "message": "Update README.md\n\nSigned-off-by: zheng <techa@foxmail.com>"
+    },
+    {
+      "sha": "d208f97dc79bab1f2edfcc00f7478621a2a3050a",
+      "date": "2026-05-23T15:45:29+08:00",
+      "author": "zheng",
+      "email": "techa@foxmail.com",
+      "message": "Upgrade Nacos and Spring Boot dependencies with authentication support (#249)\n\n* feat(nacos): 升级 Nacos 配置并启用认证功能\n\n- 将 Nacos 版本从 2.3.2 升级到 3.2.1\n- 在 application.properties 中配置 MySQL 数据库平台\n\n* chore(deps): 升级项目依赖至Spring Boot 4和相关组件新版本\n\n- 将Spring Boot版本从3.3.13升级至4.0.0\n- 将Spring Cloud版本从2023.0.6升级至2025.1.0\n- 将MyBatis-Plus版本从3.5.7升级至3.5.15\n- 将Redisson版本从3.26.0升级至4.4.0\n- 将Sa-Token版本从1.38.0升级至1.45.0\n- 更新Nacos镜像版本从2.3.2-slim至3.1.1\n- 替换sa-token-spring-boot3-starter为sa-token-spring-boot4-starter\n- 替换mybatis-plus-spring-boot3-starter为mybatis-plus-spring-boot4-starter\n- 移除spring-boot-properties-migrator依赖\n- 更新OAuth2相关配置和依赖项\n- 将javax.annotation.Resource替换为jakarta.annotation.Resource\n\n* refactor(gateway): 移除knife4j依赖并升级sa-token到Spring Boot 4\n\n- 移除knife4j网关相关依赖和配置\n- 将sa-token从Spring Boot 3升级到Spring Boot 4启动器\n- 更新SaTokenConfiguration中Reactor上下文获取方式\n- 删除application.yml中的knife4j网关配置项\n\n* docs: 更新项目依赖版本和配置\n\n- 将Spring Cloud版本从2023.x升级至2025.x\n- 将Spring Boot版本从3.x升级至4.x\n- 将Nacos镜像版本从2.3.2-slim升级至3.1.1\n- 将Elasticsearch和Kibana版本从7.17.3升级至9.2.2\n- 更新Docker Compose配置中的镜像版本\n- 删除已废弃的goodskill-simple.yml配置文件\n- 移除README_bak.adoc备份文件\n- 在SeckillApplication中排除状态机Redis配置避免冲突\n\n* config(docker): 更新Nacos端口配置\n\n- 将Nacos端口从8080更改为18080\n- 更新README文档中的端口映射信息\n- 移除英文文档链接\n- 重新格式化Docker镜像表格布局\n\n* docs(readme): 删除英文版README文档\n\n- 移除完整的英文版项目介绍文档 README_EN.md\n- 清理关于项目技术栈、模块结构的英文说明\n- 删除快速启动指南和开发环境配置的英文版本\n- 移除FAQ和常见问题解答的英文内容\n- 删除状态机、数据库分片等技术实现的英文文档\n- 清理所有与英文文档相关的图片引用和链接\n- 简化项目说明，保留核心功能描述\n\n* refactor(security): 移除OAuth2相关依赖并优化状态机配置\n\n- 从SeckillApplication中排除SecurityAutoConfiguration等安全自动配置\n- 注释掉Sa-Token相关依赖避免冲突\n- 移除Spring State Machine Redis持久化改为内存缓存实现\n- 移除OAuth2客户端相关自动配置类\n- 更新pom.xml移除security oauth2相关依赖\n- 在gateway中增强sa-token异常日志记录功能\n- 更新.gitignore文件添加新的忽略规则\n\n* docs(readme): 更新项目介绍文档\n\n* chore(deps): 升级项目依赖版本并修复模块配置\n\n- 将Spring Boot版本从4.0.0升级至4.0.6\n- 将Spring Cloud版本从2025.1.0升级至2025.1.1\n- 将Spring Boot Admin版本从3.3.0升级至4.0.4\n- 将goodskill-admin模块中的spring-boot-starter-web替换为spring-boot-webmvc\n- 为goodskill-job模块添加spring-boot-jdbc依赖\n- 在README.md中添加已知问题说明\n\n* fix(tests): Fix unit test failures for Spring Boot 4.0 and MyBatis-Plus 3.5.15 (#250)\n\nCo-authored-by: copilot-swe-agent[bot] <198982749+Copilot@users.noreply.github.com>\n\n---------\n\nCo-authored-by: AI Agent <ai-agent@example.com>\nCo-authored-by: Copilot <198982749+Copilot@users.noreply.github.com>"
+    },
+    {
+      "sha": "6514555e671f42c87c04517a843787ce2624d6e9",
+      "date": "2026-05-02T15:06:08+08:00",
+      "author": "zheng",
+      "email": "techa@foxmail.com",
+      "message": "Bugsfix/patch UI status (#246)\n\n* fix(customer-ui): 修复订单状态字段与后端保持一致\n\n- 将前端state字段改为status，与后端Order实体保持一致\n- 修复订单状态显示、筛选、统计功能\n- 支持status字段字符串和数字类型转换\n\n* Add unit tests for order-service controllers, AlipayService, OrderStatusEnum, and expand seckill-service tests (#243)\n\nNew tests added:\n- OrderControllerTest (8 tests)\n- AdminOrderControllerTest (9 tests)\n- AlipayControllerTest (10 tests)\n- AlipayServiceImplTest (6 tests)\n- OrderStatusEnumTest (10 tests)\n- GoodsEsControllerTest (6 tests)\n- ResponseDTOTest (10 tests)\n- SeckillGoodsServiceImplTest (6 tests)\n- UploadFileUtilTest (2 tests)\n- Expanded GoodsControllerTest with 12 additional tests\n\nAgent-Logs-Url: https://github.com/techa03/goodsKill/sessions/8d42cc2e-b0cb-45f0-b6b6-8e179803f216\n\nCo-authored-by: copilot-swe-agent[bot] <198982749+Copilot@users.noreply.github.com>\nCo-authored-by: techa03 <16450027+techa03@users.noreply.github.com>\n(cherry picked from commit 73826750b420f4b66a2958340d770aeddcdac682)\n\n* feat(auth): 添加用户信息更新和头像上传功能\n\n- 实现用户信息更新接口，支持邮箱等个人信息修改\n- 添加用户头像更新功能，支持头像URL上传\n- 新增CustomerUserInfoUpdateDTO用于接收更新数据\n- 集成UserInfoUtil进行用户身份验证\n- 在前端UI中添加用户资料页面和确认对话框组件\n- 更新mock数据以支持新的API接口测试\n- 添加订单取消功能和相关API接口\n- 优化商品详情页面UI和用户体验\n\n* fix(test): 修复测试中的类型匹配和空指针异常问题\n\n- 修复UserServiceImplTest中userId类型转换问题，使用Integer.valueOf进行包装\n- 更新AlipayControllerTest中mock方法参数匹配器，适配新增的可空字符串参数\n- 修改StateMachineService移除CommandLineRunner接口实现，避免启动时执行测试代码\n- 在StateMachineServiceTest中添加宽松mock配置，防止状态机测试中的验证冲突\n- 修复StateMachineServiceTest中空状态机处理逻辑，返回false而非抛出异常\n\n* feat(mock): 添加模拟数据并实现个人中心页面\n\n- 新增 mock/goods.js 文件，包含商品相关的模拟接口\n- 新增 mock/index.js 文件，统一注册所有模拟数据\n- 新增 mock/order.js 文件，包含订单相关的模拟接口\n- 新增 mock/user.js 文件，包含用户信息相关的模拟接口\n- 实现 ProfileView.vue 页面，包含用户信息展示和编辑功能\n- 添加头像上传和用户信息更新功能\n- 实现订单统计功能和快捷入口导航\n- 集成主题切换和响应式设计\n\n---------\n\nCo-authored-by: AI Agent <ai-agent@example.com>\nCo-authored-by: Copilot <198982749+Copilot@users.noreply.github.com>\nCo-authored-by: techa03 <16450027+techa03@users.noreply.github.com>"
+    },
+    {
+      "sha": "6624dd7f1a155925dec730a5650d6dbaed279030",
+      "date": "2026-05-02T14:47:59+08:00",
+      "author": "zheng",
+      "email": "techa@foxmail.com",
+      "message": "Bugsfix/patch UI status (#244)\n\n* fix(customer-ui): 修复订单状态字段与后端保持一致\n\n- 将前端state字段改为status，与后端Order实体保持一致\n- 修复订单状态显示、筛选、统计功能\n- 支持status字段字符串和数字类型转换\n\n* Add unit tests for order-service controllers, AlipayService, OrderStatusEnum, and expand seckill-service tests (#243)\n\nNew tests added:\n- OrderControllerTest (8 tests)\n- AdminOrderControllerTest (9 tests)\n- AlipayControllerTest (10 tests)\n- AlipayServiceImplTest (6 tests)\n- OrderStatusEnumTest (10 tests)\n- GoodsEsControllerTest (6 tests)\n- ResponseDTOTest (10 tests)\n- SeckillGoodsServiceImplTest (6 tests)\n- UploadFileUtilTest (2 tests)\n- Expanded GoodsControllerTest with 12 additional tests\n\nAgent-Logs-Url: https://github.com/techa03/goodsKill/sessions/8d42cc2e-b0cb-45f0-b6b6-8e179803f216\n\nCo-authored-by: copilot-swe-agent[bot] <198982749+Copilot@users.noreply.github.com>\nCo-authored-by: techa03 <16450027+techa03@users.noreply.github.com>\n(cherry picked from commit 73826750b420f4b66a2958340d770aeddcdac682)\n\n* feat(auth): 添加用户信息更新和头像上传功能\n\n- 实现用户信息更新接口，支持邮箱等个人信息修改\n- 添加用户头像更新功能，支持头像URL上传\n- 新增CustomerUserInfoUpdateDTO用于接收更新数据\n- 集成UserInfoUtil进行用户身份验证\n- 在前端UI中添加用户资料页面和确认对话框组件\n- 更新mock数据以支持新的API接口测试\n- 添加订单取消功能和相关API接口\n- 优化商品详情页面UI和用户体验\n\n* fix(test): 修复测试中的类型匹配和空指针异常问题\n\n- 修复UserServiceImplTest中userId类型转换问题，使用Integer.valueOf进行包装\n- 更新AlipayControllerTest中mock方法参数匹配器，适配新增的可空字符串参数\n- 修改StateMachineService移除CommandLineRunner接口实现，避免启动时执行测试代码\n- 在StateMachineServiceTest中添加宽松mock配置，防止状态机测试中的验证冲突\n- 修复StateMachineServiceTest中空状态机处理逻辑，返回false而非抛出异常\n\n---------\n\nSigned-off-by: zheng <techa@foxmail.com>\nCo-authored-by: AI Agent <ai-agent@example.com>\nCo-authored-by: Copilot <198982749+Copilot@users.noreply.github.com>\nCo-authored-by: techa03 <16450027+techa03@users.noreply.github.com>"
+    },
+    {
+      "sha": "73826750b420f4b66a2958340d770aeddcdac682",
+      "date": "2026-04-17T21:58:51+08:00",
+      "author": "Copilot",
+      "email": "198982749+Copilot@users.noreply.github.com",
+      "message": "Add unit tests for order-service controllers, AlipayService, OrderStatusEnum, and expand seckill-service tests (#243)\n\nNew tests added:\n- OrderControllerTest (8 tests)\n- AdminOrderControllerTest (9 tests)\n- AlipayControllerTest (10 tests)\n- AlipayServiceImplTest (6 tests)\n- OrderStatusEnumTest (10 tests)\n- GoodsEsControllerTest (6 tests)\n- ResponseDTOTest (10 tests)\n- SeckillGoodsServiceImplTest (6 tests)\n- UploadFileUtilTest (2 tests)\n- Expanded GoodsControllerTest with 12 additional tests\n\nAgent-Logs-Url: https://github.com/techa03/goodsKill/sessions/8d42cc2e-b0cb-45f0-b6b6-8e179803f216\n\nCo-authored-by: copilot-swe-agent[bot] <198982749+Copilot@users.noreply.github.com>\nCo-authored-by: techa03 <16450027+techa03@users.noreply.github.com>"
+    },
+    {
+      "sha": "46c2e184bf75303c1155b77deb75b0a07c66f37a",
+      "date": "2026-04-12T18:30:48+08:00",
+      "author": "zheng",
+      "email": "techa@foxmail.com",
+      "message": "fix(customer-ui): 修复订单状态字段与后端保持一致 (#240)\n\n- 将前端state字段改为status，与后端Order实体保持一致\n- 修复订单状态显示、筛选、统计功能\n- 支持status字段字符串和数字类型转换\n\nCo-authored-by: AI Agent <ai-agent@example.com>"
+    },
+    {
+      "sha": "19dfeab82d68f5522c0117bd9150d6b4555dac3f",
+      "date": "2026-04-12T18:17:51+08:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump io.minio:minio from 8.5.10 to 8.6.0 (#226)\n\nBumps [io.minio:minio](https://github.com/minio/minio-java) from 8.5.10 to 8.6.0.\n- [Release notes](https://github.com/minio/minio-java/releases)\n- [Commits](https://github.com/minio/minio-java/compare/8.5.10...8.6.0)\n\n---\nupdated-dependencies:\n- dependency-name: io.minio:minio\n  dependency-version: 8.6.0\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "0d1af49d59675e6387af07d927ab0ed45d56185f",
+      "date": "2026-04-12T18:04:21+08:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump vite from 8.0.3 to 8.0.8 in /goodskill-customer-ui (#237)\n\nBumps [vite](https://github.com/vitejs/vite/tree/HEAD/packages/vite) from 8.0.3 to 8.0.8.\n- [Release notes](https://github.com/vitejs/vite/releases)\n- [Changelog](https://github.com/vitejs/vite/blob/main/packages/vite/CHANGELOG.md)\n- [Commits](https://github.com/vitejs/vite/commits/v8.0.8/packages/vite)\n\n---\nupdated-dependencies:\n- dependency-name: vite\n  dependency-version: 8.0.8\n  dependency-type: direct:development\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "706efaa8db48efcaf2508ce12e76a4b3acaa5c0c",
+      "date": "2026-04-12T18:03:59+08:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump axios from 1.14.0 to 1.15.0 in /goodskill-customer-ui (#238)\n\nBumps [axios](https://github.com/axios/axios) from 1.14.0 to 1.15.0.\n- [Release notes](https://github.com/axios/axios/releases)\n- [Changelog](https://github.com/axios/axios/blob/v1.x/CHANGELOG.md)\n- [Commits](https://github.com/axios/axios/compare/v1.14.0...v1.15.0)\n\n---\nupdated-dependencies:\n- dependency-name: axios\n  dependency-version: 1.15.0\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "50362260473055caecce7fc67f12299d094f96f5",
+      "date": "2026-04-12T17:45:39+08:00",
+      "author": "zheng",
+      "email": "techa@foxmail.com",
+      "message": "Update README\n\nSigned-off-by: zheng <techa@foxmail.com>"
+    },
+    {
+      "sha": "1f1eef3fb9b5a112329f9b3b08f1187d783e0c36",
+      "date": "2026-04-12T17:40:18+08:00",
+      "author": "zheng",
+      "email": "techa@foxmail.com",
+      "message": "Refactor/patch seata (#236)\n\n* feat(config): 更新Kafka配置并启用Seata分布式事务\n\n- 将Kafka镜像从bitnami/kafka:3.1.1升级至apache/kafka:3.9.1\n- 移除Zookeeper依赖，配置Kafka使用KRaft模式替代\n- 替换Kafka Manager为Kafbat UI管理界面\n- 在auth-service中启用Seata分布式事务功能\n- 添加Kafka主题配置类自动创建goodskill-kafka主题\n\n* feat(payment): 集成支付宝支付功能并优化系统配置\n\n- 集成支付宝支付SDK，实现支付订单创建、状态查询和回调处理功能\n- 新增支付相关DTO和服务接口，包括AlipayRequestDTO、AlipayResponseDTO和AlipayService\n- 添加支付宝控制器和配置类，支持PC端和移动端支付方式\n- 优化网关统一响应包装过滤器，确保所有接口返回Result包装对象\n- 重构秒杀服务，将商品信息服务从远程调用改为本地依赖注入\n- 更新系统依赖版本，包括Spring Boot 3.3.13、Spring Cloud 2023.0.6等\n- 修改文件上传控制器，返回文件的公共访问链接而不是内部ID\n- 在Feign拦截器中排除特定HTTP头信息，避免重复传输\n- 添加AI模块pom配置，集成AgentScope等人工智能相关依赖\n- 更新网关白名单配置，添加API文档相关路径\n- 修复订单服务实体类中的序列化ID格式和日期类型问题\n\n* feat: add C端前端项目\n\n* refactor(支付): 将支付宝支付功能从秒杀模块迁移到订单模块\n\n* feat(认证): 新增C端用户信息接口\n\n* feat(订单): 实现支付宝支付功能并优化订单管理\n\n* feat(秒杀): 优化秒杀流程，适配支付功能迁移\n\n* feat(网关): 优化响应包装器并添加支付宝回调白名单\n\n* chore: 更新.gitignore文件\n\n* feat(seckill): 新增Feign客户端和服务重构\n\n- 添加了OrderFeignClient、SeckillFeignClient和SeckillGoodsFeignClient三个Feign客户端接口\n- 创建了多个DTO类包括ExposerDTO、GoodsDTO、OrderDTO、SeckillInfoDTO等数据传输对象\n- 将原有的API模块中的DTO和VO类迁移到core-feign模块\n- 添加了core-feign模块并配置相关依赖\n- 在UserService中修复CustomerUserInfoVO类型的导入路径\n\n* feat: 新增C端用户前端项目 goodskill-customer-ui\n\n- 新增C端秒杀商城前端项目，基于Vue 3 + Vite构建\n- 实现首页商品展示、商品详情、订单管理等功能\n- 支持亮色/暗色主题切换\n- 使用Tailwind CSS实现响应式设计\n- 更新README.md文档，增加C端项目介绍和截图展示\n- 优化文档图片排版，使用表格形式展示系统截图\n\n* chore(project): 将项目名称从 goodskill-customer 更新为 goodskill-customer-ui\n\n- 更新 index.html 中的页面标题\n- 修改 package.json 中的项目名称\n- 更新 package-lock.json 中的项目名称引用\n\n* feat(order): 完善订单管理功能并优化界面\n\n- 添加订单详情查看功能，支持显示订单基础、用户、商品和支付信息\n- 实现多字段高级搜索，包括订单ID、秒杀ID、用户手机、用户ID、状态和时间范围\n- 集成全局错误通知系统，改进错误处理和用户体验\n- 更新API接口路径，统一使用/admin前缀进行后台管理\n- 重构搜索表单UI，使用网格布局替代单一输入框\n- 调整表格操作按钮，添加详情查看图标按钮\n- 优化分页组件样式，使用圆角边框并调整阴影效果\n- 实现响应式设计适配不同屏幕尺寸\n- 添加滚动条样式优化表格区域用户体验\n- 补充CSS动画效果提升界面交互体验\n\n---------\n\nSigned-off-by: zheng <techa@foxmail.com>\nCo-authored-by: AI Agent <ai-agent@example.com>"
+    },
+    {
+      "sha": "f4b176937d54a15918d15041e05f41c214dbfd7a",
+      "date": "2026-03-28T22:58:31+08:00",
+      "author": "zheng",
+      "email": "techa@foxmail.com",
+      "message": "Refactor/pgsql (#235)\n\n* feat(ai): 添加AI知识库和向量存储功能\n\n- 添加EmbeddingModel支持和多提供商选择配置(dashscope/ollama)\n- 新增KnowledgeBaseProperties和VectorStoreProperties配置类\n- 实现KnowledgeController提供文档增删查接口\n- 添加QaController支持知识库问答和流式响应\n- 更新application.yml添加知识库和向量存储配置\n\n* feat(docker): 添加 PostgreSQL 向量数据库服务\n\n- 更新 AI 机器人服务文档，添加知识库问答功能说明\n\n* 添加 goodskill-ai 模块说明文档，包含环境配置、启动服务、API 接口及使用示例\n\n---------\n\nCo-authored-by: AI Agent <ai-agent@example.com>"
+    },
+    {
+      "sha": "5be761470f2e10fb4114bc6232f63822a11a25bc",
+      "date": "2026-03-28T22:47:53+08:00",
+      "author": "zheng",
+      "email": "techa@foxmail.com",
+      "message": "[新增]添加AI知识库和向量存储功能 (#234)\n\n* feat(ai): 添加AI知识库和向量存储功能\n\n- 添加EmbeddingModel支持和多提供商选择配置(dashscope/ollama)\n- 新增KnowledgeBaseProperties和VectorStoreProperties配置类\n- 实现KnowledgeController提供文档增删查接口\n- 添加QaController支持知识库问答和流式响应\n- 更新application.yml添加知识库和向量存储配置\n\n* feat(docker): 添加 PostgreSQL 向量数据库服务\n\n- 更新 AI 机器人服务文档，添加知识库问答功能说明\n\n---------\n\nCo-authored-by: AI Agent <ai-agent@example.com>"
+    },
+    {
+      "sha": "542f823956e71d731ff7b6283551312cd74d209e",
+      "date": "2026-03-20T20:20:53+08:00",
+      "author": "zheng",
+      "email": "techa@foxmail.com",
+      "message": "Delete README_EN.adoc\n\nSigned-off-by: zheng <techa@foxmail.com>"
+    },
+    {
+      "sha": "49adab444576874b5e64c0d110efe76cbb009984",
+      "date": "2026-03-20T20:19:56+08:00",
+      "author": "zheng",
+      "email": "techa@foxmail.com",
+      "message": "Rename README_bak.adoc to README.adoc\n\nSigned-off-by: zheng <techa@foxmail.com>"
+    },
+    {
+      "sha": "739044761fd20759fd9743fb0c7e867e4a89e0c3",
+      "date": "2026-03-20T20:05:29+08:00",
+      "author": "Copilot",
+      "email": "198982749+Copilot@users.noreply.github.com",
+      "message": "Convert README.adoc → README.md, improve FAQ section layout (#233)\n\n* Initial plan\n\n* Add README.md and README_EN.md converted from AsciiDoc format\n\nCo-authored-by: techa03 <16450027+techa03@users.noreply.github.com>\n\n* Improve FAQ layout: use ### Q: headings to clearly separate questions from answers\n\nCo-authored-by: techa03 <16450027+techa03@users.noreply.github.com>\n\n---------\n\nCo-authored-by: copilot-swe-agent[bot] <198982749+Copilot@users.noreply.github.com>\nCo-authored-by: techa03 <16450027+techa03@users.noreply.github.com>"
+    },
+    {
+      "sha": "b764ecd9cd235ac2b413179f8209240b158e044a",
+      "date": "2026-03-17T16:22:58+08:00",
+      "author": "zheng",
+      "email": "techa@foxmail.com",
+      "message": "Bugsfix/patch redis 0311 (#232)\n\n* feat(ai): 添加SSE响应去重过滤器和重构聊天机器人配置\n\n- 新增RunSseDedupFilter实现SSE响应流去重功能\n- 添加ChatbotAgent配置类替代原有的UserSupportAssistant\n- 新增PythonTool、SeckillTools和TaskTimeInfoTool工具类\n- 修改SeckillMockFeignClient接口方法签名\n- 注释掉旧的AssistantController和UserSupportAssistant类\n- 更新工具回调配置和ReactAgent构建逻辑\n\n* refactor(assistant): 重构助手控制器以使用Spring AI ChatClient\n\n- 移除UserSupportAssistant依赖并替换为ChatClient\n- 更新构造函数注入方式为ChatClient Builder模式\n- 修改chat方法实现，使用prompt流式处理用户消息\n- 简化聊天响应逻辑，直接返回流式内容\n\n* refactor(ai): 重构AI模块结构并集成多种AI框架\n\n- 将AgentStaticLoader移至config包下\n- 新增AiChatModelConfig配置类实现多提供商ChatModel选择\n- 更新ChatbotAgent配置支持Ollama和DashScope双提供商\n- 集成MCP客户端支持Jina AI服务\n- 移除废弃的UserSupportAssistant和LoggingAdvisor类\n- 更新应用配置支持Redisson缓存和多AI提供商配置\n- 引入GraalVM Polyglot支持Python执行环境\n- 添加技能注册表和Shell工具钩子增强功能\n\n* chore(elasticsearch): 升级Elasticsearch和Kibana版本并优化秒杀策略\n\n- 将Elasticsearch从7.16.2升级到8.14.3版本\n- 将Kibana从7.16.2升级到8.14.3版本\n- 禁用Elasticsearch的X-Pack安全功能\n- 更新相关文档中的版本信息\n- 在秒杀策略中引入Redisson分布式锁\n- 使用Lua脚本优化库存扣减逻辑\n- 禁用Dubbo的QoS功能避免端口冲突\n- 更新测试代码适配新的实现方式"
+    },
+    {
+      "sha": "edb0f26a7884a5841f1791e0438f2740c21aca25",
+      "date": "2026-03-13T10:27:24+08:00",
+      "author": "zheng",
+      "email": "techa@foxmail.com",
+      "message": "Update project description in README.adoc\n\nAdded a note about the importance of not overusing technology stacks in projects.\n\nSigned-off-by: zheng <techa@foxmail.com>"
+    },
+    {
+      "sha": "a28bbeea088757b0798c82ef6b5c96fb9e40774c",
+      "date": "2026-03-10T15:46:07+08:00",
+      "author": "zheng",
+      "email": "techa@foxmail.com",
+      "message": "Feature/auto improve (#231)\n\n* feat(auth): 实现JWT令牌认证与订单管理功能\n\n- 添加AuthTokenProperties配置类用于管理令牌过期时间\n- 创建AuthTokenFacade门面接口封装Sa-Token操作\n- 实现登录登出及访问令牌、刷新令牌的完整流程\n- 添加refreshTokenDTO和LoginTokenVO数据传输对象\n- 在前端页面集成新的认证流程和令牌刷新逻辑\n- 添加订单管理模块包含列表展示、搜索和删除功能\n- 实现前端请求拦截器和全局错误处理机制\n- 更新路由配置和页面头部组件适配新功能\n- 添加完整的单元测试覆盖新的认证功能\n\n* test(auth): 添加认证模块单元测试并优化项目配置\n\n- 新增 AuthTokenFacadeImpl 单元测试，覆盖登录状态、令牌操作等功能\n- 新增 PermissionServiceImpl 单元测试，验证权限基础CRUD操作\n- 新增 UserServiceImpl 单元测试，包含用户管理核心功能验证\n- 新增 OrderServiceImpl 单元测试，测试订单服务核心业务逻辑\n- 新增秒杀策略相关单元测试，包括AtomicUpdate、Redisson、Sentinel、Zookeeper策略\n- 修复 ApiResult 类中 ResultCode 字段访问方式，使用 getter 方法替代直接访问\n- 将 pom.xml 中 maven-compiler-plugin 升级到 3.11.0 版本并配置 Lombok 注解处理器\n- 注释掉 chat-provider 模块以临时排除该组件"
+    },
+    {
+      "sha": "83838bd9b4c5b60b55df07a4db454e1012e46d19",
+      "date": "2026-03-09T11:52:26+08:00",
+      "author": "zheng",
+      "email": "techa@foxmail.com",
+      "message": "Remove production build instructions from README (#230)\n\nRemove build instructions for production version from README.\n\nSigned-off-by: zheng <techa@foxmail.com>"
+    },
+    {
+      "sha": "b2c725517fff521742cc116f0fc1361052fe11ed",
+      "date": "2026-01-30T17:45:35+08:00",
+      "author": "zheng",
+      "email": "techa@foxmail.com",
+      "message": "Feat/UI improve (#229)\n\n* feat(ui): 添加AI聊天助手功能并优化页面头部和侧边栏样式\n\n- 添加AI聊天助手组件(AIChat.vue)，支持SSE流式响应和打字机效果\n- 为PageHeader组件添加夜间模式和glass-header样式的背景一致性\n- 更新Sidebar菜单项的图标配置，替换为更合适的图标类型\n- 重构Sidebar组件的图标路径映射，支持新的图标类型\n- 实现AI聊天窗口的拖拽功能和浮动显示效果\n- 添加AI助手的欢迎消息和快速操作按钮功能\n- 优化聊天消息的显示样式和动画效果\n- 实现SSE流式数据处理和错误处理机制\n\n* feat(ai): 实现AI聊天助手窗口拖拽和动画效果\n\n- 添加聊天窗口和图标的拖拽功能，支持边界检测\n- 实现窗口打开关闭的缩放和平滑过渡动画\n- 添加响应式窗口大小调整和初始位置计算\n- 优化图标样式和交互效果，增加悬停动画\n- 改进消息文本渲染支持HTML格式和富文本样式\n- 修复WebSocket连接断开时的安全处理机制\n- 添加组件错误处理和调试日志功能"
+    },
+    {
+      "sha": "f0057aae9331555a83aa3be66450469e4cfef9e4",
+      "date": "2026-01-29T18:58:56+08:00",
+      "author": "zheng",
+      "email": "techa@foxmail.com",
+      "message": "增加后台管理前端UI界面 (#228)\n\n* feat(ui): 添加基础组件和路由配置\n\n- 创建 HelloWorld.vue 组件用于测试 HMR 功能\n- 实现 PageHeader.vue 组件包含主题切换和用户信息显示\n- 开发 Sidebar.vue 组件支持折叠和菜单导航功能\n- 配置 router/index.js 设置基本页面路由\n- 创建 Dashboard.vue 页面实现仪表板功能\n- 添加 Login.vue 页面实现用户登录功能\n\n* feat(router): 添加秒杀模拟功能路由和界面\n\n- 在路由配置中注册 SeckillSimulation 组件\n- 在仪表板界面添加秒杀模拟卡片入口\n- 实现秒杀模拟界面的完整功能，包括策略选择、参数配置、执行模拟\n- 集成 WebSocket 实时日志监控功能\n- 添加执行耗时统计图表展示\n- 优化登录界面输入框样式结构\n\n* feat(gateway): 添加 WebSocket 路由和公共服务配置\n\n- 配置 WebSocket 路由规则以正确处理 WebSocket 握手请求\n- 添加对 /api/web/ws/** 路径的路由支持\n- 新增公共服务 goodskill-common 的路由映射\n- 在 Swagger 文档中注册公共服务中心接口\n- 统一服务路由配置的前缀剥离规则\n\n* refactor(common): 移除数据源配置和相关依赖\n\n- 排除 DataSourceAutoConfiguration 自动配置\n- 删除 application.yml 中的 flyway 数据库迁移配置\n- 移除 mybatis-plus-spring-boot3-starter 依赖\n- 移除 mysql-connector-j 数据库连接器依赖\n- 移除 flyway-core 和 flyway-mysql 数据库迁移依赖\n- 移除 jackson-annotations 重复依赖\n\n* feat(web): 添加WebSocket实时日志和线程池配置\n\n- 新增LogbackConfig实现动态添加WebSocket日志appender\n- 添加ThreadPoolConfig配置秒杀任务线程池参数\n- 集成WebSocketConfig支持STOMP消息代理\n- 实现Slf4jWebSocketLogHandler处理实时日志推送\n- 修改SeckillMockController返回任务ID并优化异步执行\n- 更新TaskTimeCaculateUtil添加任务详情查询功能\n- 在logback-spring.xml中注册WebSocket日志appender\n- 添加获取任务详细信息的REST接口\n\n* feat(user): 添加用户管理功能实现完整的CRUD操作\n\n- 实现了分页获取用户列表接口，支持关键词搜索\n- 添加获取用户详情、创建、更新、删除用户接口\n- 实现批量删除用户功能\n- 集成Spring Security密码加密功能\n- 添加用户存在性验证和用户名唯一性检查\n- 在AuthApplication中配置Web应用类型为SERVLET\n- 完善用户服务层接口定义和实现逻辑\n\n* feat(goods): 新增商品管理功能并重构服务接口\n\n- 添加 GoodsService 接口定义\n- 实现 GoodsServiceImpl 服务类\n- 重命名 GoodsServiceImpl 为 GoodsThirdPartyServiceImpl\n- 更新 SeckillGraphqlController 使用 GoodsThirdPartyService\n- 更新 SeckillController 使用 GoodsThirdPartyService\n- 更新 SeckillServiceImpl 使用 GoodsThirdPartyService\n- 添加完整的商品管理 REST API 接口\n- 禁用 Seata 分布式事务\n- 修复 REDISSON 枚举常量引用错误\n\n* refactor(seata): 禁用Seata并重命名商品服务接口\n\n- 将application.yml中seata.enabled设置为false以禁用Seata\n- 重命名GoodsService接口为GoodsThirdPartyService\n- 更新MyJob中对商品服务的引用以使用新接口名称\n- 更新GoodskillSeataApplication中对商品服务的引用以使用新接口名称\n- 移除枚举类中秒杀方案描述的前缀文字\n- 更新MinIO配置中的访问密钥和密钥\n- 在README中添加前端项目启动说明文档\n- 更新README中的相关页面展示图片和描述\n\n* test(core): 添加MD5和用户信息工具类测试\n\n- 新增MD5UtilTest测试类，验证MD5加密功能\n- 新增UserInfoUtilTest测试类，验证用户ID获取功能\n- 修复SeckillMockControllerTest中的方法名拼写错误\n- 在测试方法中添加异步任务等待逻辑，确保测试准确性\n\n* Add feature descriptions to README\n\nSigned-off-by: zheng <techa@foxmail.com>\n\n* docs(readme): 更新文档中的列表标记格式\n\n- 将技术栈部分的破折号列表转换为星号列表\n- 将登录凭证部分的破折号列表转换为星号列表\n- 将功能说明部分的破折号列表转换为星号列表\n- 保持文档内容的一致性和可读性\n\n---------\n\nSigned-off-by: zheng <techa@foxmail.com>"
+    }
+  ],
+  "commit_sha": "e77c98571a4785657ea6cb834842308f40698e75",
+  "extracted_at": "2026-10-05T17:55:37.496965+00:00"
+}

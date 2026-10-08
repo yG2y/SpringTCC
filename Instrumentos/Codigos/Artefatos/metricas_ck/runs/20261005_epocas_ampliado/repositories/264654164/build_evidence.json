@@ -1,0 +1,32 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "",
+  "spring_boot_major": "unknown",
+  "java_versions_declared": "",
+  "build_evidence": [
+    {
+      "file": "account/infra/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "gradle/libs.versions.toml",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "inventory/infra/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "order/infra/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "payment/infra/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "shared/infra/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    }
+  ]
+}

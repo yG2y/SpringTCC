@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "8991be76be8f877f4634548baa2a8c9d035dfccf",
+      "date": "2026-10-01T02:13:39-03:00",
+      "author": "Christian Ricardo",
+      "email": "57886390+buongarzoni@users.noreply.github.com",
+      "message": "Release v2.4.0-beta.1 (#382)\n\n* doc: update changelog for v2.4.0-beta.1\n\n* bump version to 2.4.0-beta.1"
+    },
+    {
+      "sha": "c4ffad12d1a486aec8fe5d9848b6620b3ded7bb2",
+      "date": "2026-09-29T02:08:15-03:00",
+      "author": "Christian Ricardo",
+      "email": "57886390+buongarzoni@users.noreply.github.com",
+      "message": "[Feat] [SDK-399] Add java agent for network telemetry events (#374)\n\n* feat(java-agent): add rollbar-java-agent module skeleton\n\n* feat(java-agent): instrument HttpURLConnection and java.net.http.HttpClient\n\n* feat(java-agent): instrument Apache HttpClient 4.x and 5.x\n\n* test(java-agent): add integration tests for instrumented HTTP clients\n\n* docs(java-agent): add README with installation and manual testing guide\n\n* chore(java-agent): upgrade wiremock to org.wiremock:wiremock:3.13.2\n\n* refactor(java-agent): replace resetForTesting with injectable Provider<Long> in AgentTelemetryStore\n\n* fix(java-agent): resolve checkstyle violations in rollbar-java-agent\n\n* fix(java-agent): resolve checkstyle violations in rollbar-java-agent\n\n* fix(rollbar-java-agent): declare explicit dependency on jar task in test\n\n* feat(java-agent): instrument HttpClient.sendAsync() for async network telemetry\n\n* fix(java-agent): fix Apache HC4 transformer to handle all execute() overloads safely\n\n* fix(java-agent): fix Apache HC5 transformer to handle all execute() overloads safely\n\n* docs: update readme of rollbar-java-agent\n\n* style(java-agent): fix checkstyle line length violations in HC4 and HC5 instrumentation\n\n* fix(java-agent): record full URL in HC5 instrumentation\n\n* fix(java-agent): decouple getTelemetryTracker() from INSTANCE identity\n\n* refactor(java-agent): rename AgentTelemetryStore.init() to initForTesting()\n\n* fix(java-agent): disable plain jar to prevent overwriting shaded artifact\n\n* fix(java-agent): always install HC4/HC5 transformers regardless of classloader\n\n* feat(java-agent): capture HttpURLConnection requests that skip getResponseCode\n\n* fix(java-agent): strip query and userinfo in UrlSanitizer fallback path\n\n* fix(java-agent): make shadowJar the sole artifact, prevent thin jar from overwriting it\n\n* fix(java-agent): preserve host in UrlSanitizer for underscore hostnames and @-in-path URLs\n\n* fix(java-agent): prevent getInputStream advice recursion on connection-level failures\n\n* fix: lint\n\n* chore: update readme\n\n* fix(java-agent): instrument Apache HC doExecute() to cover all execute() overloads\n\n* fix(java-agent): bound scheme check in composeUrl to the authority position\n\n* fix(java-agent): use raw URI components when stripping userinfo\n\n* fix(java-agent): support current JDKs and surface instrumentation failures\n\n* fix(java-agent): shade only Byte Buddy, not the Rollbar SDK\n\n* chore(java-agent): drop unused byte-buddy-agent dependency\n\n* docs(java-agent): narrow the zero code change claim to HTTP call sites\n\n* fix(ci): exclude rollbar-java-agent on JDKs older than 17\n\n* fix(java-agent): type Apache advice parameters as Object\n\n* fix(java-agent): dedup connection failures on the connection\n\n* perf(java-agent): restore the ignore-matcher defaults ByteBuddy provides\n\n* fix(java-agent): keep Rollbar SDK types out of the agent jar\n\n* test(java-agent): assert the reflective getAll() contract\n\n* fix(java-agent): strip through the last '@' in the sanitizer fallback\n\n* fix(java-agent): close two credential leaks in the sanitizer fallback\n\n* fix(java-agent): keep one telemetry buffer per application\n\n* fix(java-agent): attribute telemetry by who called, not by who registered"
+    },
+    {
+      "sha": "e5b2b8433e1baa04a3ff726eeee21ac9ddc4a7eb",
+      "date": "2026-09-29T02:07:58-03:00",
+      "author": "Christian Ricardo",
+      "email": "57886390+buongarzoni@users.noreply.github.com",
+      "message": "[Feat][SDK-601] Add built in scrubbing (#377)\n\n* feat(scrubbing): add StringUrlSanitizer and DefaultUrlSanitizer\n\n* feat(scrubbing): add ScrubDataTransformer\n\n* feat(config): expose redactedKeys and urlSanitizer\n\n* feat(notifier): apply built-in scrubbing to every payload\n\n* refactor(okhttp): reuse the shared DefaultUrlSanitizer\n\n* refactor(api): update imports\n\n* refactor(scrubbing): update imports\n\n* refactor(config): update imports\n\n* refactor(okhttp): reuse the shared DefaultUrlSanitizer\n\n* fix(scrubbing): scrub Frame.locals in Body.rollbarThreads\n\n* fix(scrubbing): match percent-encoded query parameter names\n\n* fix(scrubbing): scrub Request.params and Request.metadata\n\n* fix(scrubbing): traverse collections and arrays when scrubbing nested data\n\n* fix(telemetry): sanitize URLs recorded as network telemetry events\n\n* test(scrubbing): cover ordering, reconfiguration and the okhttp sanitizer\n\n* docs: add scrubbing documentation\n\n* feat(scrubbing): seed field scrubbing with a built-in key list\n\n* feat(config): expose useDefaultRedactedKeys\n\n* test(scrubbing): cover the built-in key list and the opt-out\n\n* test(scrubbing): prove secrets are redacted with no configuration\n\n* docs: document the built-in redacted key list\n\n* perf(scrubbing): match literal keys without the regex engine\n\n* fix(scrubbing): redact Message.metadata in the body content + ignore blank entries in redactedKeys\n\n* fix(scrubbing): redact Message.metadata in the body content + ignore blank entries in redactedKeys"
+    },
+    {
+      "sha": "7705df6168d8dff66e4ac8e9b42fbff3f3fc664f",
+      "date": "2026-09-21T02:43:36-03:00",
+      "author": "Christian Ricardo",
+      "email": "57886390+buongarzoni@users.noreply.github.com",
+      "message": "[Fix][issue-227] Native agent 10x start up (#379)\n\n* fix(native-agent): request JVMTI 1.2 instead of the build JDK's version\n\n* perf(native-agent): gate activation on ClassPrepare and cache JNI handles\n\n* perf(native-agent): skip locals capture for non-app frames\n\n* fix(rollbar-java): handle null and throwing toString in JSON serializer\n\n* docs(native-agent): document activation model and build requirements\n\n* fix: SpotBugs false positive analysis\n\n* fix(native-agent): defer to Java filter when app-frame scan is truncated\n\n* fix(native-agent): capture every frame so cached locals stay aligned\n\n* test(rollbar-java): pin CacheFrame alignment contract in BodyFactory\n\n* test(rollbar-java): cover shouldCacheThrowable re-capture guard\n\n* fix(rollbar-java): align cached frames positionally so constructors keep locals\n\n* fix(native-agent): promote jfloat to c_double before the variadic JNI call\n\n* fix(native-agent): contain per-slot and per-frame failures during capture"
+    },
+    {
+      "sha": "417dad6a04ba3c6bbce0f42f18b78116a09d17c4",
+      "date": "2026-09-21T02:25:03-03:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump io.projectreactor:reactor-bom from 2020.0.6 to 2025.0.4 (#368)\n\nBumps [io.projectreactor:reactor-bom](https://github.com/reactor/reactor) from 2020.0.6 to 2025.0.4.\n- [Release notes](https://github.com/reactor/reactor/releases)\n- [Commits](https://github.com/reactor/reactor/compare/2020.0.6...2025.0.4)\n\n---\nupdated-dependencies:\n- dependency-name: io.projectreactor:reactor-bom\n  dependency-version: 2025.0.4\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "a56bc8b3214e6e3356ea2cab9c88d844eb977ddc",
+      "date": "2026-07-15T01:47:16-03:00",
+      "author": "Christian Ricardo",
+      "email": "57886390+buongarzoni@users.noreply.github.com",
+      "message": "Release 2.3.1 (#378)\n\n* doc: update changelog for v2.3.1\n\n* bump version to 2.3.1"
+    },
+    {
+      "sha": "23663b31b4d21067ebaf13c0b80888318a3d6ca9",
+      "date": "2026-06-15T15:10:54-07:00",
+      "author": "Michael Mendy",
+      "email": "montana@linux.com",
+      "message": "fix(logback): restrict recursive logger suppression to Rollbar package (#376)\n\n* fix(logback): restrict recursive logger suppression to Rollbar package\n\n* fix(logback): restrict recursive logger suppression to Rollbar package\n\n* fix(logback): remove hidden Unicode characters\n\n* fix(logback): remove duplicate logger boundary check block"
+    },
+    {
+      "sha": "4bd68c5b6166640a00f024ba0d03703945f0baa8",
+      "date": "2026-05-29T19:41:25-03:00",
+      "author": "Christian Ricardo",
+      "email": "57886390+buongarzoni@users.noreply.github.com",
+      "message": "Release 2.3.0 (#375)\n\n* doc: update changelog for v2.3.0\n\n* bump version to 2.3.0"
+    },
+    {
+      "sha": "bdd2bb821c321dce3a9367c407c04afeb39a74fd",
+      "date": "2026-05-05T19:59:24-03:00",
+      "author": "Christian Ricardo",
+      "email": "57886390+buongarzoni@users.noreply.github.com",
+      "message": "Release 2.3.0 beta.1 (#373)\n\n* doc: update changelog for v2.3.0-beta.1\n\n* bump version to 2.3.0-beta.1"
+    },
+    {
+      "sha": "d02dd2fd0fd0cab83f67a07ed53963a63f4d080c",
+      "date": "2026-05-05T19:58:56-03:00",
+      "author": "Christian Ricardo",
+      "email": "57886390+buongarzoni@users.noreply.github.com",
+      "message": "[Feat] [SDK-399] Okhttp interceptor (#367)\n\n* feat(okhttp): add telemetry interceptor\n\n* build(okhttp): update dependencies\n\n* chore(okhttp): add readme\n\n* chore(okhttp): fix lint\n\n* fix(okhttp): isolate NetworkTelemetryRecorder failures in interceptor\n\n* build(okhttp): remove hardcoded version to inherit from root\n\n* build(okhttp): remove redundant plugins and repositories blocks\n\n* fix(okhttp): strip query params from recorded URLs by default to prevent sensitive data leakage\n\n* fix(okhttp): strip query params from recorded URLs by default to prevent sensitive data leakage\n\n* fix(okhttp): lint error, decrease line length\n\n* fix(okhttp): attribute sanitizer exceptions to urlSanitizer in logs\n\n* fix(okhttp): strip credentials and fragment from URLs in default sanitizer\n\n* fix(okhttp): replace JUL logger with SLF4J to match SDK conventions\n\n* build(okhttp): remove redundant mockito-core declaration\n\n* docs(okhttp): add rollbar-java to installation snippet\n\n* fix(okhttp): lint line length\n\n* style(okhttp): make test class public and use 2-space indentation\n\n* style: add missing colon prefix to rollbar-okhttp in settings.gradle.kts\n\n* docs(okhttp): update sanitizer docs to list all stripped URL components\n\n* fix(okhttp): replace java.util.function.Function with custom UrlSanitizer interface for API 21 compatibility\n\n* fix(okhttp): remove incorrect group override so module publishes as com.rollbar:rollbar-okhttp"
+    },
+    {
+      "sha": "62eccb8538a7ce5e319aa20ae8504648aa3be0d4",
+      "date": "2026-05-05T19:58:03-03:00",
+      "author": "Christian Ricardo",
+      "email": "57886390+buongarzoni@users.noreply.github.com",
+      "message": "[Feat] [SDK-399] Capture logcat output as telemetry events (#369)\n\n* feat(android): capture logcat output as telemetry events\n\n* fix: include verbosity logs for debug level\n\n* fix(android): reset logcat capture state on unexpected process death\n\n* fix(android): skip logcat ring buffer replay on startup\n\n* fix(android): classify captured logcat entries as log telemetry type\n\n* fix(android): resolve test failure caused by missing Android stub defaults\n\n* fix(android): use Rollbar.TAG in ConnectivityDetector to suppress SDK logs from telemetry\n\n* docs(android): correct captureLogsAsTelemetry javadoc to reference log telemetry type\n\n* docs: fix stale dump() references in telemetry javadoc\n\n* fix(android): call stop() before Log.w() to avoid Android stub throwing before state reset"
+    },
+    {
+      "sha": "4d56b32395781201c6cc0fd5d0fb3b817edbcd3f",
+      "date": "2026-05-04T20:28:17-03:00",
+      "author": "Christian Ricardo",
+      "email": "57886390+buongarzoni@users.noreply.github.com",
+      "message": "[Feat][SDK-594] Compress payload and update payload max size to 1mb (#371)\n\n* feat(java): raise max payload size to 1MB\n\n* feat(java): compress outgoing payloads with gzip by default\n\n* style(java): fix import order in SyncSender\n\n* fix(java): add default implementation to compressPayload to avoid API break\n\n* feat(reactive-streams): wire gzip compression into AsyncSender matching SyncSender behaviour\n\n* fix(java): close raw stream if GZIPOutputStream constructor throws in sendJson\n\n* fix(reactive-streams): disable compression in AsyncSenderTest to avoid null getBody()\n\n* refactor(reactive-streams): use compression-intent pattern for safe third-party extensibility\n\n* fix(reactive-streams): prevent GZIPOutputStream and ByteBuf resource leaks"
+    },
+    {
+      "sha": "08d41d70d6da385b73bc42c90ca14565bb738c1f",
+      "date": "2026-05-04T19:42:03-03:00",
+      "author": "Christian Ricardo",
+      "email": "57886390+buongarzoni@users.noreply.github.com",
+      "message": "fix(android): remove global ProGuard option from consumer rules (#372)"
+    },
+    {
+      "sha": "00d5b2c1a585059747b1286f8e5c39b608739105",
+      "date": "2026-04-06T19:13:07-03:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump com.google.code.gson:gson from 2.8.2 to 2.13.2 (#357)\n\nBumps [com.google.code.gson:gson](https://github.com/google/gson) from 2.8.2 to 2.13.2.\n- [Release notes](https://github.com/google/gson/releases)\n- [Changelog](https://github.com/google/gson/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/google/gson/compare/gson-parent-2.8.2...gson-parent-2.13.2)\n\n---\nupdated-dependencies:\n- dependency-name: com.google.code.gson:gson\n  dependency-version: 2.13.2\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "222c2c21f5a4eb5d6dc39d82452129dff03826f3",
+      "date": "2026-04-06T19:12:08-03:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump bytes from 1.10.1 to 1.11.1 in /native-agent (#364)\n\nBumps [bytes](https://github.com/tokio-rs/bytes) from 1.10.1 to 1.11.1.\n- [Release notes](https://github.com/tokio-rs/bytes/releases)\n- [Changelog](https://github.com/tokio-rs/bytes/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/tokio-rs/bytes/compare/v1.10.1...v1.11.1)\n\n---\nupdated-dependencies:\n- dependency-name: bytes\n  dependency-version: 1.11.1\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "01d4a8474616cf18342a22e51d38263f159b3ec3",
+      "date": "2026-03-16T17:47:48-03:00",
+      "author": "Christian Ricardo",
+      "email": "57886390+buongarzoni@users.noreply.github.com",
+      "message": "Release 2.2.0 (#366)\n\n* doc: update changelog for v2.2.0\n\n* bump version to 2.2.0"
+    },
+    {
+      "sha": "a86bb0ede7a8308e3a808fde9a505d836cb400a0",
+      "date": "2026-03-04T22:12:39-03:00",
+      "author": "Christian Ricardo",
+      "email": "57886390+buongarzoni@users.noreply.github.com",
+      "message": "Release 2.2.0-beta.1 (#365)\n\n* doc: update changelog for v2.2.0-beta.1\n\n* bump version to 2.2.0-beta.1"
+    },
+    {
+      "sha": "c916ff2733563f8a0838fcf1ee5c51e5c7404d2a",
+      "date": "2026-02-04T20:58:08-03:00",
+      "author": "Christian Ricardo",
+      "email": "57886390+buongarzoni@users.noreply.github.com",
+      "message": "Release 2.2.0-alpha.1 (#363)\n\n* doc: update changelog for v2.2.0-alpha.1\n\n* bump version to 2.2.0-alpha.1"
+    },
+    {
+      "sha": "5b00b919c6f050a39ba99c070683c4053caf0c38",
+      "date": "2026-02-04T13:56:29-03:00",
+      "author": "Christian Ricardo",
+      "email": "57886390+buongarzoni@users.noreply.github.com",
+      "message": "[Fix][SDK-575] Keep telemetry events during session (#362)\n\n* fix: keep telemetry events during session,\n\ndump method is replaced by getAll\nthis shouldn't be a problem for a user since this functions are new and expected to be used internally only\n\n* fix: lint\n\n* fix: revapi file\n\n* fix: revapi file"
+    },
+    {
+      "sha": "c97abeb8864fc710c231602ca3aff798424e2285",
+      "date": "2026-01-11T17:30:54-03:00",
+      "author": "Christian Ricardo",
+      "email": "57886390+buongarzoni@users.noreply.github.com",
+      "message": "[Feat][SDK-483] Update dependencies (#359)\n\n* build: update struts2 and javax.servlet-api\n\n* build: update logback"
+    },
+    {
+      "sha": "9a2e6a53cc66427bf8fd8be3870a751075846023",
+      "date": "2026-01-11T17:30:40-03:00",
+      "author": "Christian Ricardo",
+      "email": "57886390+buongarzoni@users.noreply.github.com",
+      "message": "[Feat][SDK-574] Automatic navigation telemetry events (#361)\n\n* feat: add flag to capture navigation events in AndroidConfiguration\n\n* doc: update javadoc for TelemetryEventTracker\n\n* doc: update javadoc for RollbarTelemetryEventTracker\n\n* feat: Add TelemetryNavigationCallbacks implementation\n\n* feat: init automatic capture of navigation telemetry events\n\n* ci: fix lint\n\n* ci: fix lint"
+    },
+    {
+      "sha": "3a4ccb842fb48c6a05581a0eb6b40d80f5d082a7",
+      "date": "2025-12-17T22:44:47-03:00",
+      "author": "Christian Ricardo",
+      "email": "57886390+buongarzoni@users.noreply.github.com",
+      "message": "Release 2.1.0 (#360)\n\n* doc: Update changelog for v2.1.0\n\n* bump version to 2.1.0"
+    },
+    {
+      "sha": "d032c5db697f8cdc8110e56b9f9a74e077220039",
+      "date": "2025-12-08T03:03:09-03:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.apache.httpcomponents.client5:httpclient5 from 5.0.3 to 5.5.1 (#350)\n\nBumps [org.apache.httpcomponents.client5:httpclient5](https://github.com/apache/httpcomponents-client) from 5.0.3 to 5.5.1.\n- [Changelog](https://github.com/apache/httpcomponents-client/blob/rel/v5.5.1/RELEASE_NOTES.txt)\n- [Commits](https://github.com/apache/httpcomponents-client/compare/rel/v5.0.3...rel/v5.5.1)\n\n---\nupdated-dependencies:\n- dependency-name: org.apache.httpcomponents.client5:httpclient5\n  dependency-version: 5.5.1\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "3d4cbad2a97bb336aadb6e7dac0d7252e32f5af8",
+      "date": "2025-12-08T03:02:46-03:00",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump org.mockito:mockito-android from 5.18.0 to 5.20.0 (#347)\n\nBumps [org.mockito:mockito-android](https://github.com/mockito/mockito) from 5.18.0 to 5.20.0.\n- [Release notes](https://github.com/mockito/mockito/releases)\n- [Commits](https://github.com/mockito/mockito/compare/v5.18.0...v5.20.0)\n\n---\nupdated-dependencies:\n- dependency-name: org.mockito:mockito-android\n  dependency-version: 5.20.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    {
+      "sha": "91b6a0425e0ba6f214d9241d8eea073e6cf9603f",
+      "date": "2025-10-06T19:17:12-03:00",
+      "author": "Christian Ricardo",
+      "email": "57886390+buongarzoni@users.noreply.github.com",
+      "message": "Release 2.1.0-alpha.3 (#355)\n\n* doc: Update changelog for v2.1.0-alpha.3\n\n* bump version to 2.1.0-alpha.3\n\n---------\n\nCo-authored-by: chris <christian.buongarzoni@gmail.com>"
+    },
+    {
+      "sha": "e44e256f2863f321731174183512000217e94487",
+      "date": "2025-10-06T17:41:08-03:00",
+      "author": "Christian Ricardo",
+      "email": "57886390+buongarzoni@users.noreply.github.com",
+      "message": "refactor: set AndroidConfiguration Builder visibility as public (#354)\n\nCo-authored-by: chris <christian.buongarzoni@gmail.com>"
+    },
+    {
+      "sha": "39aed9db6c6179d1723c865f3d2efb16931e02e8",
+      "date": "2025-10-01T22:09:46-03:00",
+      "author": "Christian Ricardo",
+      "email": "57886390+buongarzoni@users.noreply.github.com",
+      "message": "build: run release if we are in a version tag (#353)\n\nCo-authored-by: chris <christian.buongarzoni@gmail.com>"
+    },
+    {
+      "sha": "c5bb810c805366893e3d94503307ced4c07e97b5",
+      "date": "2025-10-01T20:32:44-03:00",
+      "author": "Christian Ricardo",
+      "email": "57886390+buongarzoni@users.noreply.github.com",
+      "message": "build: run CI when a release is published from Github UI (#352)\n\nCo-authored-by: chris <christian.buongarzoni@gmail.com>"
+    },
+    {
+      "sha": "eef213508f28d2233e67f1768c75b9c4c2782ff4",
+      "date": "2025-09-30T20:18:15-03:00",
+      "author": "Christian Ricardo",
+      "email": "57886390+buongarzoni@users.noreply.github.com",
+      "message": "Release 2.1.0-alpha.2 (#351)\n\n* doc: Update changelog for v2.1.0-alpha.2\n\n* bump version to 2.1.0-alpha.2\n\n---------\n\nCo-authored-by: chris <christian.buongarzoni@gmail.com>"
+    },
+    {
+      "sha": "2a20748ef6d0ae6b4916d2b76f342e4cad092455",
+      "date": "2025-09-30T19:04:23-03:00",
+      "author": "Christian Ricardo",
+      "email": "57886390+buongarzoni@users.noreply.github.com",
+      "message": "fix: init ANR detector (#346)\n\nCo-authored-by: chris <christian.buongarzoni@gmail.com>"
+    }
+  ],
+  "commit_sha": "8991be76be8f877f4634548baa2a8c9d035dfccf",
+  "extracted_at": "2026-10-05T18:05:20.042850+00:00"
+}

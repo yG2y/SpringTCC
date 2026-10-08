@@ -1,0 +1,32 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "4.0.0",
+  "spring_boot_major": "4",
+  "java_versions_declared": "21",
+  "build_evidence": [
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "retailstore-rest-server/build.gradle",
+      "artifact": "Gradle Spring Boot declaration"
+    },
+    {
+      "file": "retailstore-rest-server/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "retailstore-rest-server/pom.xml",
+      "artifact": "spring-boot-starter-reactor-netty"
+    },
+    {
+      "file": "retailstore-rest-server/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "retailstore-rest-server/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

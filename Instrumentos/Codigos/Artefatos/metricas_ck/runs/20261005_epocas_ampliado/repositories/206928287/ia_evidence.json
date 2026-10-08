@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "fe5629f82f7cff4b0fa7f3d89f77851c6e4e7394",
+      "date": "2026-10-05T08:17:54Z",
+      "author": "preetkaran20",
+      "email": "preetkaran20@gmail.com",
+      "message": "chore: update ZAP legacy benchmark results [2026-10-05]\n"
+    },
+    {
+      "sha": "4b7451af6ddca1af92fd0791a78c5fe9c3295c01",
+      "date": "2026-10-05T06:56:20Z",
+      "author": "preetkaran20",
+      "email": "preetkaran20@gmail.com",
+      "message": "chore: update ZAP modern benchmark results [2026-10-05]\n"
+    },
+    {
+      "sha": "93a389ac03945bc568d3edaab149f4a498686cd7",
+      "date": "2026-10-05T06:22:57Z",
+      "author": "preetkaran20",
+      "email": "preetkaran20@gmail.com",
+      "message": "Update multi-repo traffic metrics (2026-10-05T06:22:57Z)\n"
+    },
+    {
+      "sha": "96b426f3b2724da4ad996f5caad527ff59de2869",
+      "date": "2026-10-04T10:22:06-07:00",
+      "author": "Karan Preet Singh Sasan",
+      "email": "preetkaran20@gmail.com",
+      "message": "making reviews easier (#822)\n\nCo-authored-by: Karan Preet Singh Sasan <karanpreetsinghsasan@Mac.lan>"
+    },
+    {
+      "sha": "b9c06c80a8e2a9a6b0dfc7e1a3ef491d803d7047",
+      "date": "2026-10-04T08:38:15Z",
+      "author": "preetkaran20",
+      "email": "preetkaran20@gmail.com",
+      "message": "chore: update ZAP legacy benchmark results [2026-10-04]\n"
+    },
+    {
+      "sha": "ea1df61c77c18ee6cf8200fc922f0027452ec22d",
+      "date": "2026-10-04T06:59:06Z",
+      "author": "preetkaran20",
+      "email": "preetkaran20@gmail.com",
+      "message": "chore: update ZAP modern benchmark results [2026-10-04]\n"
+    },
+    {
+      "sha": "b22415bb5167b2b7ebaec93d751d40ddebdc80c5",
+      "date": "2026-10-04T06:29:49Z",
+      "author": "preetkaran20",
+      "email": "preetkaran20@gmail.com",
+      "message": "Update multi-repo traffic metrics (2026-10-04T06:29:49Z)\n"
+    },
+    {
+      "sha": "ce89884c39dc57ea8dffba7a1668cfab39ce91e0",
+      "date": "2026-10-04T06:21:53+01:00",
+      "author": "Gonçalo Simões Pereira",
+      "email": "goncalosimoespereira@gmail.com",
+      "message": "test: run every level of the error and union based sql injection against the seed data (#815)\n\nThe existing tests mock JdbcTemplate, so the query of a level and the code\nthat reads its result never run. Run each level against the real schema\nand seed data instead, the same way AuthSeedDataRegressionTest does.\n\n- levels meant to be injectable are proven to be: another row, another\n  table through union and, for the error based ones, the data of the\n  database inside the error that is returned\n- levels that are not injectable are proven not to leak, without fixing\n  how they answer an unknown id"
+    },
+    {
+      "sha": "f33545da31b7dbc0aec8fe1c16b85ded16211a2d",
+      "date": "2026-10-04T06:14:56+01:00",
+      "author": "Gonçalo Simões Pereira",
+      "email": "goncalosimoespereira@gmail.com",
+      "message": "fix: reject path traversal in PreflightController before reading the file (#818)\n\n* fix: reject a path traversal filename in PreflightController before reading it\n\nPreflightController serves back a file previously stored under\nUnrestrictedFileUpload's content disposition root, resolving the path\nvariable directly with Path#resolve and no check that the result still\nfalls under that root.\n\nTested against a running instance: Tomcat/Spring already reject a plain\n\"..\", url-encoded, double-encoded, backslash, encoded-slash, null-byte and\noverlong-UTF-8 traversal in this path variable (400/404), so the read side\nwas not reproducible as filed in #344. The write side is a separate,\nintended vulnerability (LEVEL_8/9 of UnrestrictedFileUpload write the\nupload wherever an unvalidated filename says to, by design).\n\nRelying only on the container for this is fragile: a different Tomcat\nversion, a reverse proxy, or a loosened URL-decoding setting could let a\ntraversal filename through. Normalize the resolved path and reject it with\n404 if it is not under the content disposition root, the same outcome a\nmissing file already produces, before ever opening a FileInputStream.\n\n* test: fix flaky outside-root file and an overclaiming test in PreflightControllerTest\n\n- use Files.createTempFile for the outside-root file instead of a fixed\n  name, a leftover file from an earlier run could otherwise get truncated\n  and then deleted by this test\n- the MockMvc test for a literal \"..\" claimed to prove the new containment\n  check runs, but verified empirically (by removing the check) that\n  Spring's own routing normalizes a raw \"..\" segment away before the\n  request ever reaches the controller, so it was proving routing\n  behaviour, not the check. Renamed it to say that and point at the direct\n  fetchFile(..) calls above, which do exercise the check (confirmed the\n  same way, they fail without it)"
+    },
+    {
+      "sha": "21a5a686d755b2a339c358e206687581fb89314c",
+      "date": "2026-10-03T07:59:58Z",
+      "author": "preetkaran20",
+      "email": "preetkaran20@gmail.com",
+      "message": "chore: update ZAP legacy benchmark results [2026-10-03]\n"
+    },
+    {
+      "sha": "f8710f5c3bed002ab0bc7f0c89eb97f96d598c3f",
+      "date": "2026-10-03T06:43:07Z",
+      "author": "preetkaran20",
+      "email": "preetkaran20@gmail.com",
+      "message": "chore: update ZAP modern benchmark results [2026-10-03]\n"
+    },
+    {
+      "sha": "27fc7e85922551c16cf6792e9daa71be0e10e8ce",
+      "date": "2026-10-03T05:52:30Z",
+      "author": "preetkaran20",
+      "email": "preetkaran20@gmail.com",
+      "message": "Update multi-repo traffic metrics (2026-10-03T05:52:30Z)\n"
+    },
+    {
+      "sha": "d6285f27352de2bbaa9e6b9eef7dd032a64b5437",
+      "date": "2026-10-02T22:43:11+01:00",
+      "author": "Gonçalo Simões Pereira",
+      "email": "goncalosimoespereira@gmail.com",
+      "message": "fix: strip translator instruction from HEADER_INJECTION_VULNERABILITY (#817)\n\nmessages_bn_IN.properties and messages_mr_IN.properties carried a second\nsentence after the translated description, written for the translator\n(\"all keys such as INVALID_END_POINT, XSS_VULNERABILITY etc. must remain\nunchanged\") rather than for the reader. The key is the description of an\n@AttackVector in JWTVulnerability, so it is served to users browsing the\nJWT module in either language. Removed the sentence, kept the translation."
+    },
+    {
+      "sha": "2f47af51a3f68acfadadcbfe75247e1a49917f3e",
+      "date": "2026-10-02T08:24:49Z",
+      "author": "preetkaran20",
+      "email": "preetkaran20@gmail.com",
+      "message": "chore: update ZAP legacy benchmark results [2026-10-02]\n"
+    },
+    {
+      "sha": "b99716b757bc01be271adad66395795b3d3fd688",
+      "date": "2026-10-02T06:44:55Z",
+      "author": "preetkaran20",
+      "email": "preetkaran20@gmail.com",
+      "message": "chore: update ZAP modern benchmark results [2026-10-02]\n"
+    },
+    {
+      "sha": "01fcff06ea8ca0d30925d846190dcc31eb3f5ec7",
+      "date": "2026-10-02T06:23:10Z",
+      "author": "preetkaran20",
+      "email": "preetkaran20@gmail.com",
+      "message": "Update multi-repo traffic metrics (2026-10-02T06:23:10Z)\n"
+    },
+    {
+      "sha": "18b41392ddf92ae61457987196e0533a7ab269f0",
+      "date": "2026-10-01T23:07:11Z",
+      "author": "preetkaran20",
+      "email": "preetkaran20@gmail.com",
+      "message": "chore: update ZAP legacy benchmark results [2026-10-01]\n"
+    },
+    {
+      "sha": "8f5c0c56f05e90ea4d32b2ab6cf5d8143c93409d",
+      "date": "2026-10-01T21:52:06Z",
+      "author": "preetkaran20",
+      "email": "preetkaran20@gmail.com",
+      "message": "chore: update ZAP modern benchmark results [2026-10-01]\n"
+    },
+    {
+      "sha": "6b7ca709bb54d878b3685c9e03cf48eb22be776d",
+      "date": "2026-10-01T11:22:52-07:00",
+      "author": "Karan Preet Singh Sasan",
+      "email": "preetkaran20@gmail.com",
+      "message": "Update crawl depth and browser count in YAML config\n\nIncreased max crawl depth and number of browsers for legacy automation tests."
+    },
+    {
+      "sha": "4ea3c51fb4d9a73ff3926647ce5566ebd8c68c1f",
+      "date": "2026-10-01T11:22:01-07:00",
+      "author": "Karan Preet Singh Sasan",
+      "email": "preetkaran20@gmail.com",
+      "message": "Update zap-automation-modern.yaml"
+    },
+    {
+      "sha": "fd4ce063dfec4746bc1d048296b218b821db4956",
+      "date": "2026-10-01T08:08:53Z",
+      "author": "preetkaran20",
+      "email": "preetkaran20@gmail.com",
+      "message": "chore: update ZAP legacy benchmark results [2026-10-01]\n"
+    },
+    {
+      "sha": "c8472a430c213db3dc4d1a6ed26a8d74b8d0c159",
+      "date": "2026-10-01T06:51:12Z",
+      "author": "preetkaran20",
+      "email": "preetkaran20@gmail.com",
+      "message": "chore: update ZAP modern benchmark results [2026-10-01]\n"
+    },
+    {
+      "sha": "6fa835d32be2fe7297aacfb60e351c415dbc1e45",
+      "date": "2026-10-01T06:39:31Z",
+      "author": "preetkaran20",
+      "email": "preetkaran20@gmail.com",
+      "message": "Update multi-repo traffic metrics (2026-10-01T06:39:31Z)\n"
+    },
+    {
+      "sha": "a5152ecfd8e28dbd7f43861265498cef817fcb39",
+      "date": "2026-09-30T06:52:41Z",
+      "author": "preetkaran20",
+      "email": "preetkaran20@gmail.com",
+      "message": "chore: update ZAP modern benchmark results [2026-09-30]\n"
+    },
+    {
+      "sha": "7c91a359d23ecaeed2b7d7e9069614d8a5293676",
+      "date": "2026-09-30T06:06:16Z",
+      "author": "preetkaran20",
+      "email": "preetkaran20@gmail.com",
+      "message": "Update multi-repo traffic metrics (2026-09-30T06:06:16Z)\n"
+    },
+    {
+      "sha": "43101ebc1502e54347f466012e9eafef4a00fd15",
+      "date": "2026-09-29T08:31:23Z",
+      "author": "preetkaran20",
+      "email": "preetkaran20@gmail.com",
+      "message": "chore: update ZAP legacy benchmark results [2026-09-29]\n"
+    },
+    {
+      "sha": "eee502950e5544d2fe7328404dd1980d74f569a7",
+      "date": "2026-09-29T07:02:49Z",
+      "author": "preetkaran20",
+      "email": "preetkaran20@gmail.com",
+      "message": "chore: update ZAP modern benchmark results [2026-09-29]\n"
+    },
+    {
+      "sha": "359f212c7eec3e192171abb0f664281ff233dac8",
+      "date": "2026-09-29T06:22:28Z",
+      "author": "preetkaran20",
+      "email": "preetkaran20@gmail.com",
+      "message": "Update multi-repo traffic metrics (2026-09-29T06:22:27Z)\n"
+    },
+    {
+      "sha": "c4dd7572e92b992fc89b898de0cbd09d8713ac73",
+      "date": "2026-09-28T07:41:36Z",
+      "author": "preetkaran20",
+      "email": "preetkaran20@gmail.com",
+      "message": "chore: update ZAP legacy benchmark results [2026-09-28]\n"
+    },
+    {
+      "sha": "00da26903ff7f540b1a2d6efeb536f6eb7a99f77",
+      "date": "2026-09-28T06:28:14Z",
+      "author": "preetkaran20",
+      "email": "preetkaran20@gmail.com",
+      "message": "chore: update ZAP modern benchmark results [2026-09-28]\n"
+    }
+  ],
+  "commit_sha": "fe5629f82f7cff4b0fa7f3d89f77851c6e4e7394",
+  "extracted_at": "2026-10-05T18:28:31.838347+00:00"
+}

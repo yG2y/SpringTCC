@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "0ee871efeaa92b4ae5bbd4b0707b9d47c0867ddb",
+      "date": "2026-09-29T22:12:59+08:00",
+      "author": "zhouxx",
+      "email": "mozu_2008@163.com",
+      "message": "v2.1.6:\nrouting-datasource: fix the bug that the data source set externally is cleared by the aspect when runtime = true;\nrouting-datasource: use @Around to bind the annotation directly instead of reflection\n"
+    },
+    {
+      "sha": "1645468fc1d52a523dc2ad74be938b6bee650423",
+      "date": "2026-09-21T22:50:27+08:00",
+      "author": "zhouxx",
+      "email": "mozu_2008@163.com",
+      "message": "v2.1.6:\nrouting-datasource: fix the bug that the data source set externally is cleared by the aspect when runtime = true;\nrouting-datasource: use @Around to bind the annotation directly instead of reflection\n"
+    },
+    {
+      "sha": "f57302fd9a6d118098f608a5f4e1666aca3b194c",
+      "date": "2025-11-17T21:59:46+08:00",
+      "author": "zhouxx",
+      "email": "mozu_2008@163.com",
+      "message": "v2.1.5:\nfix bug: when dict exist key but not exist value key throw exception, now not throw.\n"
+    },
+    {
+      "sha": "c9b31a346c786aacb6a5b83994e05e56dfc9e9cc",
+      "date": "2025-03-30T19:53:02+08:00",
+      "author": "zhouxx",
+      "email": "mozu_2008@163.com",
+      "message": "v2.1.4:\nupgrade spring boot version to 2.7.18\n"
+    },
+    {
+      "sha": "bc6ca872049f4eab82e224da50fa7eb48f9b22b4",
+      "date": "2024-02-13T21:07:59+08:00",
+      "author": "zhouxx",
+      "email": "mozu_2008@163.com",
+      "message": "CHANGELOG.md\n"
+    },
+    {
+      "sha": "9d2c8f26a1c3764bd9152cd4009756aa3496cc53",
+      "date": "2024-02-12T22:43:18+08:00",
+      "author": "zhouxx",
+      "email": "mozu_2008@163.com",
+      "message": "version: upgrade to 2.1.3;\nweb: support BusinessException of super valid exception;\nweb: fix the bug when the placeholder value is not exist in parameters throw NullPointer Exception\n"
+    },
+    {
+      "sha": "94bef1f5780fc4c5091e977a23ef802d136693ea",
+      "date": "2023-12-27T22:29:00+08:00",
+      "author": "zhouxx",
+      "email": "mozu_2008@163.com",
+      "message": "Merge remote-tracking branch 'origin/master'\n"
+    },
+    {
+      "sha": "48a6dcc9a84fe993169d47160ab9ba2a154d654a",
+      "date": "2023-12-27T22:28:13+08:00",
+      "author": "zhouxx",
+      "email": "mozu_2008@163.com",
+      "message": "README.md\n"
+    },
+    {
+      "sha": "a9d159fdb5a8a5b1709a4b6390ed9d0f98139f06",
+      "date": "2023-10-23T22:04:39+08:00",
+      "author": "zhouxx",
+      "email": "mozu_2008@163.com",
+      "message": "version: upgrade to 2.1.2;\nweb: ValidationException support 'Http status' customize\nweb: file download or view support 'Http headers' and 'Http status' customize\n"
+    },
+    {
+      "sha": "8435090c8623c358ea1dbfbf46e283d305ba0137",
+      "date": "2023-10-23T22:00:22+08:00",
+      "author": "zhouxx",
+      "email": "mozu_2008@163.com",
+      "message": "feature: ValidationException support 'Http status' customize\n"
+    },
+    {
+      "sha": "370e72fad77bec700a87c338e47725aec4671fd6",
+      "date": "2023-10-23T21:59:10+08:00",
+      "author": "zhouxx",
+      "email": "mozu_2008@163.com",
+      "message": "feature: file download or view support 'Http headers' and 'Http status' customize\n"
+    },
+    {
+      "sha": "b45ccee9905c6e252238bf8560f1d331976d9052",
+      "date": "2023-06-13T22:28:58+08:00",
+      "author": "zhouxx",
+      "email": "mozu_2008@163.com",
+      "message": "CHANGELOG.md\n"
+    },
+    {
+      "sha": "2f0b812ec46a70b3368ffd451ff3b5e726c46ddc",
+      "date": "2023-06-13T22:19:08+08:00",
+      "author": "zhouxx",
+      "email": "mozu_2008@163.com",
+      "message": "version: upgrade to 2.1.1\ncore: fix bug when one property copy fails, other properties cannot continue to copy\n"
+    },
+    {
+      "sha": "b1290ce0f8e8691c3ca92547f5ab429d5d908768",
+      "date": "2023-02-26T15:17:56+08:00",
+      "author": "zhouxx",
+      "email": "mozu_2008@163.com",
+      "message": "CHANGELOG.md\n"
+    },
+    {
+      "sha": "6357495d2676e391c82a7bdc263a45ae8a81d27b",
+      "date": "2023-02-15T23:37:54+08:00",
+      "author": "zhouxx",
+      "email": "mozu_2008@163.com",
+      "message": "version: upgrade to v2.1.0\nall: upgrade spring boot to v2.7.x and adaptation related functions\n"
+    },
+    {
+      "sha": "728323d4b5b411e1b197b504474ee445eb405ea8",
+      "date": "2022-12-13T21:25:41+08:00",
+      "author": "zhouxx",
+      "email": "mozu_2008@163.com",
+      "message": "remove test module\n"
+    },
+    {
+      "sha": "3af0d6a93819c6b2c37c0a2ba8700581bf908f3f",
+      "date": "2022-12-13T21:25:10+08:00",
+      "author": "zhouxx",
+      "email": "mozu_2008@163.com",
+      "message": "Merge remote-tracking branch 'origin/master'\n"
+    },
+    {
+      "sha": "d5843a43f68f35b5d8dd76f331e386baf6c7065e",
+      "date": "2022-12-13T21:22:21+08:00",
+      "author": "zhouxx",
+      "email": "mozu_2008@163.com",
+      "message": "remove test module\n"
+    },
+    {
+      "sha": "18287080ae76f2364942c426400f5e22684511fd",
+      "date": "2022-12-13T21:22:21+08:00",
+      "author": "zhouxx",
+      "email": "mozu_2008@163.com",
+      "message": "swagger: fix bug: sometimes set global auth was not effective\nversion: upgrade to 2.0.5\n"
+    },
+    {
+      "sha": "f57c48e3612d35a73c3eab336f25bc908668be0a",
+      "date": "2022-12-04T13:50:59+08:00",
+      "author": "zhouxx",
+      "email": "mozu_2008@163.com",
+      "message": "version: upgrade to v2.0.4\ncore: fix bugs when copy list with ignore properties\n"
+    },
+    {
+      "sha": "c67f69d89deb566c34173d7a8c48ea6eec2724fd",
+      "date": "2022-09-27T21:34:31+08:00",
+      "author": "zhouxx",
+      "email": "mozu_2008@163.com",
+      "message": "CHANGELOG.md\n"
+    },
+    {
+      "sha": "14b2c81ac1dbb45f36557af7df5223d854bcee23",
+      "date": "2022-09-26T22:31:18+08:00",
+      "author": "zhouxx",
+      "email": "mozu_2008@163.com",
+      "message": "version: upgrade to v2.0.3\n"
+    },
+    {
+      "sha": "dda38894459442d266eb130069d894fbb9580f28",
+      "date": "2022-09-26T22:30:33+08:00",
+      "author": "zhouxx",
+      "email": "mozu_2008@163.com",
+      "message": "fix bug: BeanUtils can not copy parent properties\n"
+    },
+    {
+      "sha": "d1fb6ddfa07c1b9c0916d65792ff40e639310f80",
+      "date": "2022-09-17T15:24:25+08:00",
+      "author": "zhouxx",
+      "email": "mozu_2008@163.com",
+      "message": "version: upgrade to v2.0.2\n"
+    },
+    {
+      "sha": "8e0f8ac72836172592e311a364961579f03eab73",
+      "date": "2022-09-17T15:16:07+08:00",
+      "author": "zhouxx",
+      "email": "mozu_2008@163.com",
+      "message": "dict cache support refreshed base on event\n"
+    },
+    {
+      "sha": "e248e15e62edbe15b52128cc6225c91b7d7e69f2",
+      "date": "2022-06-27T23:32:23+08:00",
+      "author": "zhouxx",
+      "email": "mozu_2008@163.com",
+      "message": "document\n"
+    },
+    {
+      "sha": "e8f813b2fbad318b11afbb127486e86c552390ba",
+      "date": "2022-06-27T23:25:51+08:00",
+      "author": "zhouxx",
+      "email": "mozu_2008@163.com",
+      "message": "CHANGELOG.md\n"
+    },
+    {
+      "sha": "03d1ccf7ed57bf2d21623d9e7c444008946af5ca",
+      "date": "2022-06-27T23:14:45+08:00",
+      "author": "zhouxx",
+      "email": "mozu_2008@163.com",
+      "message": "version: upgrade to v2.0.1\n"
+    },
+    {
+      "sha": "536935b7bf52d2a0c026f7881c3913e57f3586ea",
+      "date": "2022-06-27T23:12:20+08:00",
+      "author": "zhouxx",
+      "email": "mozu_2008@163.com",
+      "message": "web: ValidException support locale message\n"
+    },
+    {
+      "sha": "67e5d9689e6904cc63e0a37c90e26e44080fa7b7",
+      "date": "2022-06-27T23:11:41+08:00",
+      "author": "zhouxx",
+      "email": "mozu_2008@163.com",
+      "message": "core: BeanUtils ignore static field\n"
+    }
+  ],
+  "commit_sha": "0ee871efeaa92b4ae5bbd4b0707b9d47c0867ddb",
+  "extracted_at": "2026-10-05T18:40:53.001245+00:00"
+}

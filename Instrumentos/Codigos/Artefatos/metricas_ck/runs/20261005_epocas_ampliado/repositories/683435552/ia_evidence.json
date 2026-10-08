@@ -1,0 +1,19 @@
+{
+  "ia_status": "com_evidencia",
+  "ia_level": 1,
+  "ia_agents": "Claude Code",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 0,
+  "evidence": [
+    {
+      "agent": "Claude Code",
+      "type": "gitignore",
+      "path": ".gitignore",
+      "line": "/CLAUDE.md"
+    }
+  ],
+  "commits": [],
+  "commit_sha": "5029cd32d019cf921ad19bfe26329d2828e3865b",
+  "extracted_at": "2026-10-05T18:14:57.189079+00:00"
+}

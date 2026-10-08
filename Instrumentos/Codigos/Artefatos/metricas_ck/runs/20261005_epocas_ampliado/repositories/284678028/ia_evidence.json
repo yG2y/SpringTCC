@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "a46df16c7fd25c98599019ba32e4c42a489e3597",
+      "date": "2026-07-25T18:29:08+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: remove AGENTS.md\n"
+    },
+    {
+      "sha": "bfb4a8a186bdfe74f3e779d750740c044bb82d12",
+      "date": "2026-07-25T13:40:56+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: update dependencies and build config\n\n- Upgrade Spring Boot from 4.0.6 to 4.1.0\n- Bump Spotless Maven Plugin from 3.4.0 to 3.8.0 with simplified configuration\n- Remove explicit google-java-format and prettier version properties\n- Move spotless:check from verify to validate phase\n- Bump MySQL to 9.7.1, PostgreSQL to 18.4, MongoDB to 8.2.12\n- Update Maven wrapper distribution URL to 3.9.16\n- Fix trailing commas in JavaScript files across all services\n"
+    },
+    {
+      "sha": "2378dc10ccba0301ae6a882d1748983bed32a4cd",
+      "date": "2026-06-24T05:44:08-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "docs: update README\n"
+    },
+    {
+      "sha": "5eef67a5f7b5c4d5a57d011ce6574c3e4a1a8db7",
+      "date": "2026-06-23T12:17:46-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Fix indentation in food-ordering-service pom.xml\n"
+    },
+    {
+      "sha": "57305da1164696c3f2c95380611a822a8f259b36",
+      "date": "2026-06-14T15:01:43-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Add [*.java] section to .editorconfig\n"
+    },
+    {
+      "sha": "96948f79eab583b2f40b0a66c664a6811a13490e",
+      "date": "2026-06-14T11:22:24-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: add Buy Me a Coffee funding option\n\n- Add custom funding URL to FUNDING.yml\n- Remove extra blank line in README.md\n"
+    },
+    {
+      "sha": "a39e8a973f9c0e4ea658d8fda09c0017613ba661",
+      "date": "2026-06-02T06:12:51+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Update README.md\n"
+    },
+    {
+      "sha": "bb3acc82ecf4e5c0f09216de67e1d5c26e5c5f9d",
+      "date": "2026-05-25T08:14:36+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "docs: add Medium article\n"
+    },
+    {
+      "sha": "72f532eb23534dab0753838362f8ca0ae6d18061",
+      "date": "2026-05-21T23:24:08+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "docs: add AGENTS.md with project documentation\n\n- Document build order and module dependencies\n- Cover formatting, testing, and Docker operations\n- Outline architecture conventions and environment variables\n"
+    },
+    {
+      "sha": "bd45e3a3ccc09afa630764ff789f3eac35413b4e",
+      "date": "2026-05-21T07:31:32+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "docs: reorganize README and add formatting section\n\n- Move \"Running Tests\" section after Shutdown instructions\n- Add \"Code Formatting\" section with Spotless + Prettier details\n- Add GIF optimization tips documentation section\n- Move \"References\" section to end of document\n"
+    },
+    {
+      "sha": "9d9fd0d3c78b157f44fc0cbfea064868c0b69867",
+      "date": "2026-05-21T07:09:45+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "docs: update README and axon-event-commons pom\n\n- Remove service screenshot images from README and delete image files\n- Fix code block syntax highlighting for SQL and JS queries\n- Make axon-event-commons a standalone module with its own groupId and version\n- Add Spotless Maven plugin with Google Java Format to axon-event-commons\n"
+    },
+    {
+      "sha": "15d3bd246702f0a7d7046b2ca1ed4f684ebb9f69",
+      "date": "2026-05-18T20:58:17+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "style: format code with Spotless plugin\n\n- Add .editorconfig for consistent editor settings\n- Add Spotless Maven plugin with Google Java Format and Prettier\n- Reformat all Java sources to Google style (2-space indent)\n- Reformat JavaScript and HTML files with Prettier\n- Reorganize import order across all modules\n- Clean up empty constructors, interfaces, and record definitions\n"
+    },
+    {
+      "sha": "658163d228b19d8bdd34e5e1418772ed82c67f63",
+      "date": "2026-05-18T12:41:34+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "test: add Testcontainers support for MongoDB tests\n\n- Create MongoDBTestcontainers interface with service connection\n- Import testcontainers in MongoRepositoriesDataMongoTest\n- Add testcontainers dependencies to food-ordering-service pom\n- Set project name in parent and module pom files\n- Clean up empty description and dependencies in axon-event-commons\n"
+    },
+    {
+      "sha": "0377426c4e28aa8118ead0dff0d066c9fe22cc62",
+      "date": "2026-05-18T00:54:51+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "feat: redesign order placement as multi-step wizard\n\n- Replace accordion-based UI with a 4-step wizard flow (Customer → Restaurant → Dishes → Review)\n- Add client-side data store for caching customers, restaurants, and dishes\n- Implement step navigation with back/next buttons and visual step indicator\n- Add review step before order submission with itemized summary\n- Reset wizard state after successful order placement\n"
+    },
+    {
+      "sha": "203eed5f1ad3a7de4e924c8236cef7179d49dac2",
+      "date": "2026-05-17T23:57:36+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "refactor: migrate UI from Semantic UI to Tailwind CSS\n\n- Replace Semantic UI CSS/JS with Tailwind CSS CDN in all templates\n- Redesign HTML layouts with Tailwind utility classes and responsive grid\n- Implement custom dropdown, accordion, and tab components\n- Refactor modals to use Tailwind-styled custom implementation\n- Add WebSocket status indicator with dynamic dot and text styling\n- Remove unused error callbacks from AJAX success handlers\n- Update README documentation to reflect new UI framework\n"
+    },
+    {
+      "sha": "656727ae40a9ab607a983f5cd606940586724ef1",
+      "date": "2026-05-17T23:32:18+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "refactor: upgrade WebSocket client and replace moment with dayjs\n\n- Migrate from stomp.js to @stomp/stompjs v7 with new Client API\n- Replace moment.js with dayjs for date formatting\n- Add WebSocket disconnect functionality on reconnect\n- Move CDN sources from cdnjs to jsdelivr\n"
+    },
+    {
+      "sha": "3b415683add13cf67ddf9624f2c4cf89c9be585b",
+      "date": "2026-05-17T23:31:33+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "fix: set eager fetch for dishes relationship\n\n- Add FetchType.EAGER to prevent lazy loading issues in the Restaurant entity's dishes relationship\n"
+    },
+    {
+      "sha": "74d48d89cc1f336aa5f7bfbb537bcbb6e6902aa5",
+      "date": "2026-05-17T20:41:43+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "refactor: remove swagger and actuator dependencies\n\n- Remove SpringDoc OpenAPI and Spring Boot Actuator from all services\n- Remove Swagger config classes, DTO schema annotations, and properties\n- Add jackson-databind runtime dependency for Hibernate JSON compatibility\n- Update README and startup script to remove Swagger URL columns\n- Replace JPEG documentation images with PNG versions\n- Reduce container wait timeout from 120s to 60s\n"
+    },
+    {
+      "sha": "dca29f7f37d34459d61bc5726bb2a7f791ec347c",
+      "date": "2026-05-17T16:59:45+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: add license, env scripts, and configurable datasource\n\n- Add MIT License file\n- Replace docker-compose.yml with init-environment.sh and shutdown-environment.sh scripts\n- Make database credentials configurable via environment variables in application.properties\n- Improve README with test, support, and license sections\n- Enhance shell scripts with set -e and better variable scoping\n"
+    },
+    {
+      "sha": "88a07bbff6c8227c83e948853c0204daadda36e5",
+      "date": "2026-05-17T13:35:36+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "fix: resolve Java 25 Axon fixture test issues\n\n- Remove @Disabled annotations from RestaurantAggregateTest methods\n- Suppress illegal state change detection in Axon test fixture\n- Update README Java prerequisite from 17 to 25\n"
+    },
+    {
+      "sha": "e288e768eb27cdedf5d86f0059255f682e35a125",
+      "date": "2026-05-17T08:58:51+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "test: add comprehensive test suite across all services\n\n- Add Axon aggregate tests for Customer, Order, and Restaurant aggregates\n- Add JPA repository tests with Testcontainers for MySQL and PostgreSQL\n- Add Web MVC controller tests for all REST endpoints\n- Add JSON serialization/deserialization tests for DTOs and events\n- Add MongoDB repository tests for food-ordering-service\n- Add testcontainers support with ServiceConnection auto-configuration\n- Add test dependencies (axon-test, testcontainers) to all service POMs\n- Refactor RestaurantAggregate.Dish to use explicit equals/hashCode\n"
+    },
+    {
+      "sha": "35c2f02ade6a4ba84195fae3724706bed2392f4c",
+      "date": "2026-05-16T23:33:57+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "fix: improve healthcheck configuration for databases\n\n- Use array syntax for healthcheck test commands in docker-compose\n- Add interval, timeout, and retries to healthcheck definitions\n- Remove FetchType.EAGER from dishes relationship to avoid eager loading\n- Rename path variable from {id} to {restaurantId} for clarity\n"
+    },
+    {
+      "sha": "765e474ef0040f690a4b8349a30fe632ac222dc7",
+      "date": "2026-05-16T22:02:28+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "refactor: extract order service and refactor entity equals/hashCode\n\n- Move order creation logic from OrderController into new OrderService\n- Replace @Data with @Getter/@Setter/@NoArgsConstructor across entities\n- Add custom equals/hashCode based on entity ID instead of @EqualsAndHashCode\n- Add @ResponseStatus(NO_CONTENT) to DELETE endpoints returning void\n- Add @NotNull validation to CreateOrderRequest fields\n"
+    },
+    {
+      "sha": "b4e432c234a511c0fc9e719986a24a1116934dc3",
+      "date": "2026-05-16T21:22:34+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "refactor: remove Lombok dependency and update Java version to 25\n\n- Remove Lombok dependency from axon-event-commons pom.xml\n- Replace Lombok annotations with manual constructors, getters, setters, equals, hashCode, and toString in all event classes\n- Update Maven compiler source and target from 17 to 25\n"
+    },
+    {
+      "sha": "5a426ca556b9e124c9f66bf82aaa95de9b55f1a7",
+      "date": "2026-05-16T18:32:07+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: upgrade to Spring Boot 4.0.6 and Java 25\n\n- Bump Spring Boot parent from 3.5.14 to 4.0.6 and Java from 17 to 25\n- Upgrade Axon Framework from 4.11.2 to 4.13.1\n- Upgrade springdoc-openapi from 2.8.17 to 3.0.3\n- Replace spring-boot-starter-web with spring-boot-starter-webmvc\n- Migrate ErrorAttributes imports from spring-boot-web.servlet to spring-boot-webmvc\n- Replace spring-boot-starter-test with focused test starters per module\n- Remove Include.EXCEPTION from error attribute options\n"
+    },
+    {
+      "sha": "ad4efbbec1d1247fc6db4b8668aa8d49133cd74c",
+      "date": "2026-05-16T15:57:01+02:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "chore: upgrade deps and restructure POM config\n\n- Upgrade Spring Boot to 3.5.14, Lombok to 1.18.46\n- Upgrade Maven wrapper to 3.3.4 and Maven to 3.9.15\n- Update Docker images (MySQL 9.6.0, Postgres 18.3, Mongo 8.2.5)\n- Move Axon BOM and dependency declarations to child POMs\n- Restructure maven-compiler-plugin with explicit execution blocks\n- Update README punctuation and rename diagram file references\n"
+    },
+    {
+      "sha": "a7af07dae6a42fb6fe9d5eba1756691c199cb45b",
+      "date": "2025-04-28T15:36:41+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- Upgrade to Spring Boot 3.4.5\n- Upgrade to SpringDoc OpenAPI 2.8.6\n- Upgrade to Axon 4.11.2\n- Upgrade to Lombok 1.18.38\n- Upgrade to MySQL Docker image 9.2.0\n- Upgrade to Mongo Docker image 8.0.6\n- Upgrade to jQuery 3.7.1\n- Upgrade to Moment.js 2.30.1\n- Replace Jib with Paketo Buildpacks\n"
+    },
+    {
+      "sha": "fc777992997eb5399c11a55f8112803e48850205",
+      "date": "2025-04-27T15:37:03+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Add .gitattributes file and update README\n"
+    },
+    {
+      "sha": "a33b399e82bd50c9f7acc9f7cca6b3c2bfad932e",
+      "date": "2025-02-14T06:47:59+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Update start-apps.sh\n"
+    },
+    {
+      "sha": "fbc915e39bfda2d341768fc06591662506ba6323",
+      "date": "2025-02-14T06:44:53+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Update README file\n"
+    }
+  ],
+  "commit_sha": "a46df16c7fd25c98599019ba32e4c42a489e3597",
+  "extracted_at": "2026-10-05T18:35:38.456974+00:00"
+}

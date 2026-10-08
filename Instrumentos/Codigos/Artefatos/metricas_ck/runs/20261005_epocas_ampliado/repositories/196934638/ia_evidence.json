@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "f0f7cad68418abb182129633d7c45bdd67c5074d",
+      "date": "2026-09-25T11:58:18+08:00",
+      "author": "Hank",
+      "email": "true.cp@gmail.com",
+      "message": "Merge pull request #65 from Skilled1710/fix/actuator-bean-missing\n\nexclude SslHealthContributorAutoConfiguration from plugin context"
+    },
+    {
+      "sha": "9f9b1392a7216567e6bc5f7024ac253e240ffeac",
+      "date": "2026-08-12T19:50:33+08:00",
+      "author": "dzh",
+      "email": "dingzhihao@currentcad.com",
+      "message": "exclude SslHealthContributorAutoConfiguration from plugin context\n\nSslHealthContributorAutoConfiguration was added to spring-boot-actuator\nin 3.4.0. Since it is not excluded from the plugin application context,\nplugins fail to start when actuator is present.\n"
+    },
+    {
+      "sha": "567aef1ef44010789b4c651bfca28f6651a3d8c5",
+      "date": "2025-07-24T00:26:57+08:00",
+      "author": "Hank CP",
+      "email": "true.cp@gmail.com",
+      "message": "fix unit test\n"
+    },
+    {
+      "sha": "e96a9320536239e413c1be1ad4b1fe9bbab8d377",
+      "date": "2025-07-23T22:03:16+08:00",
+      "author": "Hank CP",
+      "email": "true.cp@gmail.com",
+      "message": "remove unnecessary dependencies\n"
+    },
+    {
+      "sha": "2bcbd1628f5af6a27ff05e5a21fe381e630c748f",
+      "date": "2025-07-23T20:43:35+08:00",
+      "author": "Hank CP",
+      "email": "true.cp@gmail.com",
+      "message": "add Spring AI mcp support\n"
+    },
+    {
+      "sha": "e351e8c223437ac5cc13d555b423285a3e51d322",
+      "date": "2025-07-17T20:54:53+08:00",
+      "author": "Hank CP",
+      "email": "true.cp@gmail.com",
+      "message": "update github action\n"
+    },
+    {
+      "sha": "c26039786c2e738b5ef87633a78d91c5304e71f0",
+      "date": "2025-07-17T11:39:31+08:00",
+      "author": "Hank CP",
+      "email": "true.cp@gmail.com",
+      "message": "update github action\n"
+    },
+    {
+      "sha": "78b0ab59811e0441cd0f02f510d6b11daa7b9f1a",
+      "date": "2025-07-17T11:28:33+08:00",
+      "author": "Hank CP",
+      "email": "true.cp@gmail.com",
+      "message": "update github action\n"
+    },
+    {
+      "sha": "46a1d8d2c6cbd47b593d91955d2a77ba2e990241",
+      "date": "2025-07-17T10:21:40+08:00",
+      "author": "Hank CP",
+      "email": "true.cp@gmail.com",
+      "message": "update github action\n"
+    },
+    {
+      "sha": "3386ee4fed790d21fe79413e59ec2d0e9a3c9475",
+      "date": "2025-07-17T10:21:15+08:00",
+      "author": "Hank CP",
+      "email": "true.cp@gmail.com",
+      "message": "update github action\n"
+    },
+    {
+      "sha": "e784533c38c9a16c377e48f9b983d859375f4c5b",
+      "date": "2025-07-17T09:31:12+08:00",
+      "author": "Hank CP",
+      "email": "true.cp@gmail.com",
+      "message": "upgrade Spring Boot to 3.5\n"
+    },
+    {
+      "sha": "e8c48639375926143b8a4f244ceb25b9109220e0",
+      "date": "2024-06-26T00:03:36+08:00",
+      "author": "Hank CP",
+      "email": "true.cp@gmail.com",
+      "message": "fix dependencies\n"
+    },
+    {
+      "sha": "99ff35a3e159525207d9b4244066306d3e1bec15",
+      "date": "2024-06-25T23:24:49+08:00",
+      "author": "Hank CP",
+      "email": "true.cp@gmail.com",
+      "message": "fix dependencies\n"
+    },
+    {
+      "sha": "cf33e3cc2f56082c36e8e21bfc4e0304b2a26eb7",
+      "date": "2024-06-25T20:46:16+08:00",
+      "author": "Hank CP",
+      "email": "true.cp@gmail.com",
+      "message": "fix dependencies\n"
+    },
+    {
+      "sha": "ef21231ed570081941854db12f7b8cbb22657b05",
+      "date": "2024-06-25T19:21:03+08:00",
+      "author": "Hank CP",
+      "email": "true.cp@gmail.com",
+      "message": "Merge branch 'master' of github.com:hank-cp/sbp\n"
+    },
+    {
+      "sha": "286ae390f0ece195d201ac09bee00b1c90ac7950",
+      "date": "2024-06-25T19:20:47+08:00",
+      "author": "Hank CP",
+      "email": "true.cp@gmail.com",
+      "message": "update spring boot version;\nupdate pf4j version;\n"
+    },
+    {
+      "sha": "c32e6e22a6ff59a55b860c4be71294d7ac0952b2",
+      "date": "2024-04-18T11:14:21+08:00",
+      "author": "Hank",
+      "email": "true_cp@163.com",
+      "message": "Update issue templates"
+    },
+    {
+      "sha": "f09075b17a7149ad859b97888b28b7a7a8f310d8",
+      "date": "2024-04-17T15:47:23+08:00",
+      "author": "Hank CP",
+      "email": "true.cp@gmail.com",
+      "message": "release new version. Remove cacheManager from SbpDataSrouceConfigurer\n"
+    },
+    {
+      "sha": "c6eb6bc76cb5fde572c3e00100481484d6092e3b",
+      "date": "2024-04-16T16:25:53+08:00",
+      "author": "Hank CP",
+      "email": "true.cp@gmail.com",
+      "message": "update docs\n"
+    },
+    {
+      "sha": "c901ecc627cb741b144f399947677e88444bee50",
+      "date": "2024-04-16T15:38:37+08:00",
+      "author": "Hank CP",
+      "email": "true.cp@gmail.com",
+      "message": "merge and test thymeleaf plugin configurer\n"
+    },
+    {
+      "sha": "e67dc0370ba9ff223fb1c2ffabbba0393dc656f8",
+      "date": "2024-04-16T11:43:55+08:00",
+      "author": "Hank",
+      "email": "true.cp@gmail.com",
+      "message": "Merge pull request #49 from kenpb/feat-thymeleaf-starter\n\nAdd thymeleaf plugin configurer"
+    },
+    {
+      "sha": "383c2b8cf0ee4f21e27887f4325e3c5064092876",
+      "date": "2024-04-15T03:12:01Z",
+      "author": "kenpb",
+      "email": "kpalmab@icloud.com",
+      "message": "add thymeleaf plugin configurer\n"
+    },
+    {
+      "sha": "e0a2110db4c4f757923d16c5884fa7a9af806f7d",
+      "date": "2024-04-12T12:05:00+08:00",
+      "author": "Hank CP",
+      "email": "true.cp@gmail.com",
+      "message": "update docs\n"
+    },
+    {
+      "sha": "bfcbce42a43a3ee7fd4db4cfb18eb80d5d6e14f1",
+      "date": "2024-04-11T04:44:15+08:00",
+      "author": "Hank CP",
+      "email": "true.cp@gmail.com",
+      "message": "update sbp to version 3.2.23\n"
+    },
+    {
+      "sha": "605ec6ce4d34281eaa1d9658cec796a1f94da63b",
+      "date": "2024-04-11T04:09:48+08:00",
+      "author": "Hank CP",
+      "email": "true.cp@gmail.com",
+      "message": "Merge branch 'master' of github.com:hank-cp/sbp\n"
+    },
+    {
+      "sha": "fcb1b64ad916b58278033d1756d18e378ed97015",
+      "date": "2024-04-11T04:08:54+08:00",
+      "author": "Hank CP",
+      "email": "true.cp@gmail.com",
+      "message": "support spring boot 3.2;\nfix webflux loading lock;\nfix sbp autoconfiguration loaded by plugin issue\n"
+    },
+    {
+      "sha": "16e8999cc8024451ed6b8cf4bd3deccd06c0af63",
+      "date": "2024-04-07T19:14:51+08:00",
+      "author": "Hank",
+      "email": "true.cp@gmail.com",
+      "message": "Merge pull request #48 from batugane/master\n\nfeat: minor .md improvement"
+    },
+    {
+      "sha": "1f02e50630ccff6c9a3da420f9c6746c6ee3831f",
+      "date": "2024-04-02T07:07:03Z",
+      "author": "batuhan duras",
+      "email": "batugane@gmail.com",
+      "message": "feat: minor .md improvement\n"
+    },
+    {
+      "sha": "178e2ee4fa4f3c5ff100c755b93a3e7ca628a8af",
+      "date": "2023-11-27T15:36:44+08:00",
+      "author": "Hank CP",
+      "email": "true.cp@gmail.com",
+      "message": "update docs\n"
+    },
+    {
+      "sha": "f569e5a105f4d4c95a370358e9bce32ced5fb7f5",
+      "date": "2023-11-21T18:33:27+08:00",
+      "author": "Hank CP",
+      "email": "true.cp@gmail.com",
+      "message": "#44 import WebProperties\n"
+    }
+  ],
+  "commit_sha": "f0f7cad68418abb182129633d7c45bdd67c5074d",
+  "extracted_at": "2026-10-05T18:04:13.316291+00:00"
+}

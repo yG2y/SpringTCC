@@ -1,0 +1,56 @@
+{
+  "spring_boot_confirmed": true,
+  "spring_boot_versions": "2.7.18",
+  "spring_boot_major": "2",
+  "java_versions_declared": "11",
+  "build_evidence": [
+    {
+      "file": "docker-network-client/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "docker-network-client/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "pom.xml",
+      "artifact": "spring-boot-starter-parent"
+    },
+    {
+      "file": "weatherbackend/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "weatherbackend/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "weatherbackend/pom.xml",
+      "artifact": "spring-boot-devtools"
+    },
+    {
+      "file": "weatherbackend/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "weatherbackend/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    },
+    {
+      "file": "weatherclient/pom.xml",
+      "artifact": "spring-boot-starter-web"
+    },
+    {
+      "file": "weatherclient/pom.xml",
+      "artifact": "spring-boot-starter-actuator"
+    },
+    {
+      "file": "weatherclient/pom.xml",
+      "artifact": "spring-boot-starter-test"
+    },
+    {
+      "file": "weatherclient/pom.xml",
+      "artifact": "spring-boot-maven-plugin"
+    }
+  ]
+}

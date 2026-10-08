@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "8c923510986034a2dba38c4582f4e84fff47086f",
+      "date": "2024-07-21T20:32:59+08:00",
+      "author": "YJ211",
+      "email": "1056025931@qq.com",
+      "message": "同步更改\n"
+    },
+    {
+      "sha": "8ca4b8dc6cb840832172a59a11a9a0abf22c694d",
+      "date": "2024-07-21T20:26:10+08:00",
+      "author": "YJ211",
+      "email": "1056025931@qq.com",
+      "message": "Merge branch 'refactor-liveurl' into update\n\n# Conflicts:\n#\tsrc/main/java/work/yj1211/live/controller/LiveRoomCrl.java\n#\tsrc/main/java/work/yj1211/live/service/platforms/impl/Bilibili.java\n#\tsrc/main/java/work/yj1211/live/service/platforms/impl/CC.java\n#\tsrc/main/java/work/yj1211/live/service/platforms/impl/Douyu.java\n#\tsrc/main/java/work/yj1211/live/service/platforms/impl/Huya.java\n#\tsrc/main/resources/application-prod.properties\n#\tsrc/main/resources/application.properties\n"
+    },
+    {
+      "sha": "d21d2f47185e2c84b36a3208f06780784281e647",
+      "date": "2024-02-08T10:21:15+08:00",
+      "author": "guyijie",
+      "email": "1056025931@qq.com",
+      "message": "fix: 修复b站\n"
+    },
+    {
+      "sha": "60502868437989bf7fcfc8211159520be17bb291",
+      "date": "2024-01-09T16:33:04+08:00",
+      "author": "guyijie",
+      "email": "1056025931@qq.com",
+      "message": "fix: 修复虎牙\n"
+    },
+    {
+      "sha": "7d358afaba7b832240c79c1ae5d4149f547a4b19",
+      "date": "2023-10-11T14:54:49+08:00",
+      "author": "guyijie",
+      "email": "1056025931@qq.com",
+      "message": "feat: 抖音搜索用房间号\n"
+    },
+    {
+      "sha": "a560b5d158810657c552ac4bd9b498215e7d436c",
+      "date": "2023-10-11T10:45:45+08:00",
+      "author": "guyijie",
+      "email": "1056025931@qq.com",
+      "message": "feat: getRealUrlMultiSource接口返回的Map按照线路排序\n"
+    },
+    {
+      "sha": "e1809ac668a071bc699a95fb0b89e363d3abab1d",
+      "date": "2023-10-10T18:50:07+08:00",
+      "author": "guyijie",
+      "email": "1056025931@qq.com",
+      "message": "feat: 增加获取虎牙huyaAyyuid接口\n"
+    },
+    {
+      "sha": "222dd367320dad1306cbe630424fd3dfd80514ed",
+      "date": "2023-10-08T18:43:01+08:00",
+      "author": "guyijie",
+      "email": "1056025931@qq.com",
+      "message": "feat: 修改抖音和b站的logo图\n"
+    },
+    {
+      "sha": "6eb70c80cd246ed46271e5e3d6bb863819e4fd31",
+      "date": "2023-10-06T15:53:09+08:00",
+      "author": "YJ211",
+      "email": "1056025931@qq.com",
+      "message": "b站多线路完成\n"
+    },
+    {
+      "sha": "312358bb00463fe8f154b7ea57bbb9a235a0355e",
+      "date": "2023-10-05T22:52:22+08:00",
+      "author": "YJ211",
+      "email": "1056025931@qq.com",
+      "message": "修复部分关注的直播间，房间号不是数值导致获取房间信息时报错-->目前解决方案是直接跳过,但是可能之后会有平台的房间号不是数值？\n"
+    },
+    {
+      "sha": "b1af461db811e05b4a9aedf7b9e06a21103f3ea4",
+      "date": "2023-10-04T11:54:59+08:00",
+      "author": "YJ211",
+      "email": "1056025931@qq.com",
+      "message": "修复CC搜索接口\n"
+    },
+    {
+      "sha": "a2bb0958d340ac735ea08797f3e1463b4ca79a15",
+      "date": "2023-10-04T11:53:46+08:00",
+      "author": "YJ211",
+      "email": "1056025931@qq.com",
+      "message": "修复搜索接口空指针异常\n"
+    },
+    {
+      "sha": "daed28920fe3e3b4c66e7f619b08f945df68ae0c",
+      "date": "2023-10-04T11:46:53+08:00",
+      "author": "YJ211",
+      "email": "1056025931@qq.com",
+      "message": "修复cc获取推荐报错\n"
+    },
+    {
+      "sha": "26e8038dce2c2566a7737d51cbf0c5a1862e3727",
+      "date": "2023-10-04T11:40:40+08:00",
+      "author": "YJ211",
+      "email": "1056025931@qq.com",
+      "message": "修复部分虎牙房间找不到\n"
+    },
+    {
+      "sha": "65f41127743e82d8458f2b41c9c4a5ece7c63ffc",
+      "date": "2023-10-04T11:20:44+08:00",
+      "author": "YJ211",
+      "email": "1056025931@qq.com",
+      "message": "修改获取关注列表的多线程执行方式\n"
+    },
+    {
+      "sha": "893c4599f113320c400f1085c9029a9e35a4940d",
+      "date": "2023-10-02T16:45:11+08:00",
+      "author": "YJ211",
+      "email": "1056025931@qq.com",
+      "message": "增加根据平台刷新分区\n"
+    },
+    {
+      "sha": "f4138d2e7dc90317024208b8f9006603f02a9c4c",
+      "date": "2023-10-02T14:07:39+08:00",
+      "author": "YJ211",
+      "email": "1056025931@qq.com",
+      "message": "修改\n"
+    },
+    {
+      "sha": "8ed7c0f3b09e23258491c9ca9f182390c4f2f678",
+      "date": "2023-10-02T13:43:14+08:00",
+      "author": "YJ211",
+      "email": "1056025931@qq.com",
+      "message": "增加/api/live/getRealUrlMultiSource接口\n"
+    },
+    {
+      "sha": "3e2769984ff5b377d9e0658373258ed0bedb933b",
+      "date": "2023-09-27T13:47:06+08:00",
+      "author": "guyijie",
+      "email": "1056025931@qq.com",
+      "message": "feat: huya 的public Map<String, List<UrlQuality>> getRealUrl 完成\n"
+    },
+    {
+      "sha": "7810dbdaae9fac0bfff5145190a63ff0bdc20f6f",
+      "date": "2023-09-26T15:42:32+08:00",
+      "author": "guyijie",
+      "email": "1056025931@qq.com",
+      "message": "feat: bilibili cc huya 的public Map<String, List<UrlQuality>> getRealUrl先通过原始方法转一下，有空再重构\n"
+    },
+    {
+      "sha": "30a5264d68f39a8cfa3ee33d35e6408d3437140e",
+      "date": "2023-09-26T15:23:54+08:00",
+      "author": "guyijie",
+      "email": "1056025931@qq.com",
+      "message": "Merge remote-tracking branch 'origin/refactor-new' into refactor-liveurl\n"
+    },
+    {
+      "sha": "39f281276df0867a5bd44fbca1df97c7cd3ac5cc",
+      "date": "2023-09-23T22:54:12+08:00",
+      "author": "YJ1211",
+      "email": "1056025931@qq.com",
+      "message": "修改\n"
+    },
+    {
+      "sha": "afbadb4572d0397f53dd28b92f17fd05c9d019a0",
+      "date": "2023-09-20T19:24:48+08:00",
+      "author": "guyijie",
+      "email": "1056025931@qq.com",
+      "message": "feat: 斗鱼getRealUrl()完成\n"
+    },
+    {
+      "sha": "f8f8a323ecc8d1b415328359784714a1e38f61fa",
+      "date": "2023-09-20T15:46:57+08:00",
+      "author": "guyijie",
+      "email": "1056025931@qq.com",
+      "message": "feat: 抖音getRealUrl()完成\n"
+    },
+    {
+      "sha": "9a1f57c4e79aaf4b991b1fa159416262ed4bb514",
+      "date": "2023-09-20T15:44:47+08:00",
+      "author": "guyijie",
+      "email": "1056025931@qq.com",
+      "message": "feat: 抖音getRealUrl()完成\n"
+    },
+    {
+      "sha": "461297fbd3090cea792041da6eecfcb5f6027d87",
+      "date": "2023-09-20T14:44:20+08:00",
+      "author": "guyijie",
+      "email": "1056025931@qq.com",
+      "message": "refactor: model目录结构修改\n"
+    },
+    {
+      "sha": "5b675d45ba01b9a42b856f8a6f838ebc32d65eea",
+      "date": "2023-09-20T14:04:54+08:00",
+      "author": "guyijie",
+      "email": "1056025931@qq.com",
+      "message": "feat: getRealUrl()完成\n"
+    },
+    {
+      "sha": "9167b8f3f6ff72a685ff0786226e99b4533fbcef",
+      "date": "2023-09-20T13:29:58+08:00",
+      "author": "guyijie",
+      "email": "1056025931@qq.com",
+      "message": "fix: getAreaList()修改\n"
+    },
+    {
+      "sha": "a2f685bbf66ee75758f7acb7fd0778031ad26e60",
+      "date": "2023-09-20T12:23:16+08:00",
+      "author": "guyijie",
+      "email": "1056025931@qq.com",
+      "message": "feat: search()接口完成\n"
+    },
+    {
+      "sha": "20a6c5565c2976bf02fab5a2503d11171f6abf94",
+      "date": "2023-09-19T16:28:16+08:00",
+      "author": "YJ211",
+      "email": "1056025931@qq.com",
+      "message": "douyin\n"
+    }
+  ],
+  "commit_sha": "8c923510986034a2dba38c4582f4e84fff47086f",
+  "extracted_at": "2026-10-05T18:06:49.492594+00:00"
+}

@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "750635fe4ccd0cbd65fbebcdcb6f96cd13368a30",
+      "date": "2025-12-18T10:39:50-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Project upgrade\n\n- Upgrade to Java 25\n- Upgrade to Spring Boot 4.0.0\n- Upgrade to Spring Cloud 2025.1.0\n- Upgrade to SpringDoc OpenAPI 3.0.0\n- Upgrade to Elasticsearch Docker image 9.2.1\n"
+    },
+    {
+      "sha": "516be150ba46dcf57f48558367a319b2eb7e97dd",
+      "date": "2025-12-17T20:22:00-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Merge pull request #8 from ivangfr/upgrade-to-spring-boot-3.5.8\n\nUpgrade to Spring Boot 3.5.8"
+    },
+    {
+      "sha": "71a5e96cf38e9c0519de6cdeb25ee6e570d75e04",
+      "date": "2025-12-17T20:19:22-03:00",
+      "author": "ivangfr",
+      "email": "ivangfr@yahoo.com.br",
+      "message": "Project upgrade\n\n- Upgrade to Spring Boot 3.5.8\n- Upgrade to Spring Cloud 2025.0.0\n- Upgrade to SpringDoc OpenAPI 2.8.14\n- Upgrade wrapperVersion to 3.3.4 and Apache Maven to 3.9.11\n- Upgrade to Avro 1.12.1\n- Upgrade to Confluentic Docker images 7.9.5\n- Upgrade to Kafdrop Docker image 4.2.0\n- Upgrade to Zipkin Docker image 3.5.1\n- Remove if present in build-docker-images.sh\n- Refactor pom.xml files\n"
+    },
+    {
+      "sha": "fe4fd15433ec38367c00eca7c8380f69217557d8",
+      "date": "2025-07-17T23:39:57+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Set to DOCKER_HOST the PODMAN_SOCK if podman param is informed to build-docker-images.sh\n"
+    },
+    {
+      "sha": "5b81bdd174ab106525c073e0ce777b9b9f234693",
+      "date": "2025-07-17T17:07:52+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Replace Jib with Paketo Buildpacks\n"
+    },
+    {
+      "sha": "c436ed318e6ac871fbaa07c5d63718d9934cf367",
+      "date": "2025-07-17T13:53:39+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Replace Kafka Manager and Kafka Topics UI with Kafdrop\n"
+    },
+    {
+      "sha": "b7c15547268bc0b1ad846aad13c10c53eac42cac",
+      "date": "2025-07-17T12:59:01+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n- Upgrade to Spring Boot 3.5.3\n- Upgrade to Spring Cloud 2025.0.0\n- Upgrade to SpringDoc OpenAPI 2.8.9\n- Upgrade to Jib 3.4.5\n- Upgrade to Elasticsearch Docker image 9.0.2\n- Upgrade to Zipkin Docker image 3.5.0\n"
+    },
+    {
+      "sha": "1510ddbd846fec49faee0c94750eb6b8ae37538d",
+      "date": "2025-07-17T12:31:59+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade Apache Maven to 3.9.10\n"
+    },
+    {
+      "sha": "5bfe894beff9dbc88e1f0b372c96f8da6aabbdef",
+      "date": "2025-07-17T12:31:05+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Add .gitattributes file\n"
+    },
+    {
+      "sha": "6b6ca9a3d417122afcf12e25b88891a27102e715",
+      "date": "2025-07-17T12:30:46+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Update README file\n"
+    },
+    {
+      "sha": "baef5c86bf95963081c885e9b78338d4c3ac5c48",
+      "date": "2024-12-16T15:50:37-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project update\n\n- Convert CreateNewsRequest from class to record;\n- Add back News record in producer-api;\n- Add a note in news-client SearchRequest.\n"
+    },
+    {
+      "sha": "c3b41c660c768aea60dfbc4957f41faee68c7533",
+      "date": "2024-12-16T13:54:07-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project update\n\n- Upgrade to Avro 1.12.0;\n- Convert some DTOs from class to record;\n- Refactor packages;\n- Remove MapStruct dependency;\n- Try to simplify a bit the code.\n"
+    },
+    {
+      "sha": "3f7be5fec10e10478e187c53136f77689751f7ab",
+      "date": "2024-12-16T10:00:42-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project update\n\n- Remove public keyword from Beans;\n- Rename docker-build.sh to build-docker-images.sh;\n- Replace docker compose ps with docker ps -a.\n"
+    },
+    {
+      "sha": "fbc6a63b7a72a67c9eb385ef8f2f1e24f00987de",
+      "date": "2024-12-04T11:54:28-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- upgrade to spring-boot 3.4.0;\n- upgrade to spring-could 2024.0.0;\n- upgrade to springdoc-openapi 2.7.0;\n- upgrade to mapstruct 1.6.3;\n- upgrade to confluentinc docker images 7.8.0;\n- upgrade to elasticsearch docker image 8.15.4;\n- upgrade to zipkin docker image 3.4.1;\n- remove logging.pattern.level as it was not needed;\n- refactor docker-compose.yml, docker-build.sh, and pom.xml files;\n- update README.\n"
+    },
+    {
+      "sha": "4713562aa14bd243ac097389119960eb9e4081e7",
+      "date": "2024-10-23T14:05:14+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- upgrade to Java 21;\n- upgrade to Spring Boot 3.3.4;\n- upgrade to Spring Cloud 2023.0.3;\n- upgrade to Springdoc OpenApi 2.6.0;\n- upgrade to Jib 3.4.4;\n- upgrade wrapperVersion to 3.3.2 and apache-maven to 3.9.9;\n- upgrade to Avro 1.11.4;\n- update README.\n"
+    },
+    {
+      "sha": "af492177bb421e7cf7e1929cacd3fde256f6cf20",
+      "date": "2024-08-17T17:15:31+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Update links in README\n"
+    },
+    {
+      "sha": "b26a0df212b2609f921a4fba3fec1a731ffc3fb4",
+      "date": "2024-06-30T09:52:43+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- upgrade to spring-boot 3.3.1;\n- upgrade to spring-cloud-stream 2023.0.2;\n- upgrade to jib-maven-plugin 3.4.3;\n- upgrade to amazoncorretto-jdk 17.0.11;\n- upgrade wrapperVersion to 3.3.2 and apache-maven to 3.9.7;\n- upgrade to springdoc-openapi 2.5.0;\n- upgrade to elasticsearch docker image 8.13.4;\n- upgrade to confluentinc docker images 7.6.1;\n- upgrade to jquery 3.7.1;\n- upgrade to moment.js 2.30.1;\n- remove version from docker-compose.yml;\n- fix the output-bindings property by news-out-0 instead of news;\n- removed exclusion of org.apache.httpcomponents:httpclient in spring-cloud-starter-netflix-eureka-client present in collector and publisher;\n- add SpringDataWebSupportConfig class, see https://docs.spring.io/spring-data/jpa/reference/repositories/core-extensions.html\\#core.web.page.config\n- update README.\n"
+    },
+    {
+      "sha": "405a390561b46a2198f190174368931ce8e26a51",
+      "date": "2024-02-19T14:13:13+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n\n- Upgrade to spring-boot 3.2.2;\n- Upgrade to spring-cloud 2023.0.0;\n- Upgrade to springdoc-openapi 2.3.0;\n- Upgrade to elasticsearch docker image 8.10.4;\n- Upgrade to confluentinc docker images 7.5.3;\n- Upgrade to amazoncorretto-jdk 17.0.10;\n- Upgrade to apache-maven 3.9.5;\n- Change kafka manager port to 9001.\n"
+    },
+    {
+      "sha": "327422ceeab21354d02080300faf40afc9a996fb",
+      "date": "2023-11-13T22:23:40+01:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Add five Medium articles\n"
+    },
+    {
+      "sha": "cfc6ed34a970df48a6e9bddcd7f5c977913c504e",
+      "date": "2023-10-03T12:30:05+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to spring-boot 3.1.4, spring-cloud 2022.0.4, springdoc-openapi 2.2.0 and avro 1.11.3\n"
+    },
+    {
+      "sha": "b0dc325dd3c6145116462db21f6d36b53c2519a8",
+      "date": "2023-10-03T12:28:11+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade docker images: confluentinc 7.4.1 and zipkin 2.24.3\n"
+    },
+    {
+      "sha": "7375e51909c0ea92ef5c98c1e0d131fbe8c52dbb",
+      "date": "2023-10-03T12:01:08+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to jib-maven-plugin 3.4.0 and amazoncorretto-jdk 17.0.8\n"
+    },
+    {
+      "sha": "f4bc2ccb4a076c789af3372d4383b730ee00f2e4",
+      "date": "2023-10-03T11:58:30+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Upgrade to apache-maven 3.9.4\n"
+    },
+    {
+      "sha": "aadd7e56f327a33d65084c380d867a726bd5b6ae",
+      "date": "2023-10-03T11:57:16+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Migrate to Compose V2\n"
+    },
+    {
+      "sha": "030dcccec5f0f91988d99eb04ec916589c535910",
+      "date": "2023-07-07T14:57:53+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Update README with PoCs & Articles section and link\n"
+    },
+    {
+      "sha": "86e49fc970a29a4ea2c9556603d48d0c59c2071e",
+      "date": "2023-07-07T14:54:50+02:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n- upgrade to spring-boot 3.1.1;\n- upgrade to elasticsearch 8.7.1;\n- exclude org.apache.httpcomponents:httpclient in collector and publisher because it is very old and conflicting with spring-data-elasticsearch.\n"
+    },
+    {
+      "sha": "6b227d9d9a601f9c444b790db9d7a1019b749c3f",
+      "date": "2023-05-27T08:07:30-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Project upgrade\n- upgrade to spring-boot 3.0.7;\n- upgrade to spring-cloud 2022.0.3;\n- upgrade to springdoc-openapi 2.1.0;\n- upgrade to mapstruct 1.5.5.Final;\n- upgrade to jquery 3.7.0;\n- upgrade to jib-maven-plugin 3.3.2;\n- upgrade to zipkin docker image 2.24.1.\n"
+    },
+    {
+      "sha": "8e49ba6cb9dd08d8dffaf92566783008d74f06ee",
+      "date": "2023-05-27T08:06:15-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Fix to traceId propagation and replace deprecated s.c.s.source\n"
+    },
+    {
+      "sha": "794548fcc7e9fd6577bcddde8b7ea0ede80fe48f",
+      "date": "2023-05-27T08:01:35-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Update Maven files\n"
+    },
+    {
+      "sha": "31fe30791ec9cd79def92a236ea18c9aa2dc6cc1",
+      "date": "2023-05-20T17:39:40-03:00",
+      "author": "Ivan Franchin",
+      "email": "ivan.franchin@takeaway.com",
+      "message": "Create FUNDING.yml\n"
+    }
+  ],
+  "commit_sha": "750635fe4ccd0cbd65fbebcdcb6f96cd13368a30",
+  "extracted_at": "2026-10-05T18:16:21.689168+00:00"
+}

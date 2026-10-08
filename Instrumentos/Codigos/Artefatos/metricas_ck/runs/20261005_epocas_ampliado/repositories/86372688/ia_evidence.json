@@ -1,0 +1,97 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 12,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "b5a8c34aad70599d025114f4e07f3ca3f4bfd109",
+      "date": "2019-07-30T11:50:53-04:00",
+      "author": "Craig Andrews",
+      "email": "candrews@integralblue.com",
+      "message": "Bump version to 2.0.0-SNAPSHOT; major version bump due to Spring Boot 1 to 2 upgrade\n"
+    },
+    {
+      "sha": "1f0c5ef2292ca34196f28ca1ae399c9fbdca81c9",
+      "date": "2019-07-30T11:50:39-04:00",
+      "author": "Craig Andrews",
+      "email": "candrews@integralblue.com",
+      "message": "Update to Spring Boot 2.1\n"
+    },
+    {
+      "sha": "ddc53a999cac48273f6037749fd2d6fdbe4e1b85",
+      "date": "2019-07-30T11:49:32-04:00",
+      "author": "Craig Andrews",
+      "email": "candrews@integralblue.com",
+      "message": "Remove absolute paths from pmdruleset.xml\n"
+    },
+    {
+      "sha": "0263dd95da350a82835b092d87c38e095267d4fc",
+      "date": "2019-07-30T11:48:51-04:00",
+      "author": "Craig Andrews",
+      "email": "candrews@integralblue.com",
+      "message": "Bump jcabi parent to 0.49.5\n"
+    },
+    {
+      "sha": "8296c469ff0fe6dec2fee7b37a10feece5dc2e5f",
+      "date": "2019-07-30T09:57:49-04:00",
+      "author": "Craig Andrews",
+      "email": "candrews@integralblue.com",
+      "message": "Update maven wrapper to maven 3.6.1\n"
+    },
+    {
+      "sha": "a4740efe674d66126c6ccc593038f535ae54a525",
+      "date": "2019-07-30T09:56:26-04:00",
+      "author": "Craig Andrews",
+      "email": "candrews@integralblue.com",
+      "message": "Rename .pmdruleset.xml to pmdruleset.xml and ignore .pmdruleset.xml in source control\n"
+    },
+    {
+      "sha": "bfa8bf9ed5475dfecbaabb4e351064e06f0e71df",
+      "date": "2017-07-27T09:09:16-04:00",
+      "author": "Craig Andrews",
+      "email": "candrews@integralblue.com",
+      "message": "Wrap the datasource in postProcessBeforeInitialization instead of postProcessAfterInitialization\n"
+    },
+    {
+      "sha": "47b8fe24dc54d4e91676f12b98200cfedfa150a0",
+      "date": "2017-03-31T15:36:11-04:00",
+      "author": "Craig Andrews",
+      "email": "candrews@integralblue.com",
+      "message": "Make the log4jdbcBeanPostProcessor bean definition static so DataSource beans are eligible for getting processed by all BeanPostProcessors\n"
+    },
+    {
+      "sha": "ea70564bf5565f31325bb6c7dad4adb4f4e9659c",
+      "date": "2017-03-31T15:34:19-04:00",
+      "author": "Craig Andrews",
+      "email": "candrews@integralblue.com",
+      "message": "Enable the use of @SuppressWarnings annotations to suppress CheckStyle violations\n"
+    },
+    {
+      "sha": "2391cc0c9578398c0d1edf3b5074c9b9c5b4bb82",
+      "date": "2017-03-30T10:57:40-04:00",
+      "author": "Craig Andrews",
+      "email": "candrews@integralblue.com",
+      "message": "In README.md, add headers for Configuration and Loggers, improve Quick Start content\n"
+    },
+    {
+      "sha": "327c414cabed1dc10bd0fa2bd42f50d037641b32",
+      "date": "2017-03-30T10:39:10-04:00",
+      "author": "Craig Andrews",
+      "email": "candrews@integralblue.com",
+      "message": "Add metadata for log4jdbc.* keys, improve README.md\n\nFixes #2\n"
+    },
+    {
+      "sha": "635e10ded07c95b35d6ad656d0534b858763d3c9",
+      "date": "2017-03-27T14:54:47-04:00",
+      "author": "Craig Andrews",
+      "email": "candrews@integralblue.com",
+      "message": "Initial commit\n"
+    }
+  ],
+  "commit_sha": "b5a8c34aad70599d025114f4e07f3ca3f4bfd109",
+  "extracted_at": "2026-10-05T18:05:13.462330+00:00"
+}

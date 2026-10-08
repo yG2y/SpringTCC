@@ -1,0 +1,223 @@
+{
+  "ia_status": "sem_evidencia_detectada",
+  "ia_level": 0,
+  "ia_agents": "",
+  "ia_method": "local_files_then_git_last_n",
+  "ia_commits_requested": 30,
+  "ia_commits_scanned": 30,
+  "evidence": [],
+  "commits": [
+    {
+      "sha": "4e4dd8970d2bc1bb63970093e2049689d6189f30",
+      "date": "2022-09-06T14:01:49+02:00",
+      "author": "Gregory Fernandez",
+      "email": "gregory.fernandez@kosmos.fr",
+      "message": "Fix build\n\n* Update gradle to 6.9.2\n* Update build: plugin maven has been renamed: maven -> maven-publish\n* Update version: library net.jodah:typetools 0.6.2 -> 0.6.3\n* Update build: adapt docker tasks (see Changelog https://bmuschko.github.io/gradle-docker-plugin/#change_log)\n* Update test: Force locale into ValidationEndToEndTest.java\n"
+    },
+    {
+      "sha": "be425dbf0e73f5e75f032f31455d381d43547a6b",
+      "date": "2022-09-14T12:02:07+02:00",
+      "author": "Marco Lehmann-Mörz",
+      "email": "marco.lehmann.ext@siemens.com",
+      "message": "fix for 854\n"
+    },
+    {
+      "sha": "931acccbc48b3fc6d7006fb99b5ee5fc79bf98f6",
+      "date": "2022-07-30T17:46:05-05:00",
+      "author": "exceptionfactory",
+      "email": "exceptionfactory@apache.org",
+      "message": "Updated GitHub Actions to use Temurin\n\n- Updated README.md with badge for Maven Central\n- Upgraded gradle-git-publish plugins for Maven Central retrieval\n"
+    },
+    {
+      "sha": "7164f377ca6d9f973a8d060b331193e48ef7f099",
+      "date": "2022-02-03T09:23:57+11:00",
+      "author": "Mikael Blomström",
+      "email": "49477447+mikaelblomstrom@users.noreply.github.com",
+      "message": "Update crnk-core/build.gradle\n\nCo-authored-by: Lorenz Leutgeb <lorenz@leutgeb.xyz>"
+    },
+    {
+      "sha": "7f2cf5b7d96c3374486d6b3215bc0b59e72b077a",
+      "date": "2022-02-02T09:25:20+11:00",
+      "author": "Mikael Blomström",
+      "email": "49477447+mikaelblomstrom@users.noreply.github.com",
+      "message": "Update versions.properties\n\nUplift of TypeTools version.\n\nCo-authored-by: Lorenz Leutgeb <lorenz@leutgeb.xyz>"
+    },
+    {
+      "sha": "08b1628c8d7b4d58e9f6295a4c7060c3b03bc256",
+      "date": "2020-11-16T10:41:49+11:00",
+      "author": "Mikael Blomström",
+      "email": "49477447+mikaelblomstrom@users.noreply.github.com",
+      "message": "Update .gitignore\n\nAdding ignore of macos custom attributes files\n"
+    },
+    {
+      "sha": "0c3fe0a8f7120bb6b420d18b478f262dd0ec6e23",
+      "date": "2020-03-12T10:57:09+11:00",
+      "author": "Mikael Blomström",
+      "email": "49477447+mikaelblomstrom@users.noreply.github.com",
+      "message": "Update dependency typetools's version\n\nUpdate dependency typetools's version to 0.6.2 to resolve issue with java.lang.StackOverflowError.\n"
+    },
+    {
+      "sha": "6d5ecf64ef05468c3181251842fcc3b94543272b",
+      "date": "2019-09-30T13:04:48+02:00",
+      "author": "Mikael Blomström",
+      "email": "49477447+mikaelblomstrom@users.noreply.github.com",
+      "message": "Correcting ResourceInformationProviderBase to support nestled self-referenced generics\n\nSolving so that a MappedSuperclass of type: Foo<T extends Bar<T>> implements Bar<T> will be correctly resoled as opposite resource field.\n"
+    },
+    {
+      "sha": "1703b0643aac35f0b10eb674dbb725bc298f66d3",
+      "date": "2021-08-11T20:40:26-04:00",
+      "author": "luusteve",
+      "email": "45112541+luusteve@users.noreply.github.com",
+      "message": "23534 Try to unblock Crnk update (#1)\n\n* Added JsonInclude Test\n* Fixed JsonInclude.Non_Empty\n* isDefaultNodeValue method fix"
+    },
+    {
+      "sha": "9824505c166f763e7f21b5657a3fcdf844d326ef",
+      "date": "2021-08-11T17:36:23-05:00",
+      "author": "Erik Smith",
+      "email": "erik.smith.mhab@statefarm.com",
+      "message": "fix broken test by setting the include-message property to 'always'"
+    },
+    {
+      "sha": "408920f8bf1ef64e3c7d2fcce5208b183ad4659d",
+      "date": "2021-08-11T11:31:09-05:00",
+      "author": "Erik Smith",
+      "email": "erik.smith.mhab@statefarm.com",
+      "message": "add validation starter as it is no longer included in the web starter"
+    },
+    {
+      "sha": "0ed1721159943f6ffc5260ac502252efbbcc39c8",
+      "date": "2021-08-11T11:11:07-05:00",
+      "author": "Erik Smith",
+      "email": "erik.smith.mhab@statefarm.com",
+      "message": "fix CrnkErrorController by using the new 'getErrorAttributes' method"
+    },
+    {
+      "sha": "638ec661a8030d05244b672f4b30c7c9641a1ed6",
+      "date": "2021-08-11T11:07:34-05:00",
+      "author": "Erik Smith",
+      "email": "erik.smith.mhab@statefarm.com",
+      "message": "Update dependency spring-boot-dependencies to v2.3.12.RELEASE"
+    },
+    {
+      "sha": "50830cf93ec11efef57ff6ece39c9a3f937f835a",
+      "date": "2021-07-19T00:10:46+08:00",
+      "author": "giddyhut",
+      "email": "cicaktech@gmail.com",
+      "message": "Revert to previous\n"
+    },
+    {
+      "sha": "17a2f77630d832eb611815eeec7cc3714ad2b1e4",
+      "date": "2021-07-19T00:05:43+08:00",
+      "author": "giddyhut",
+      "email": "cicaktech@gmail.com",
+      "message": "Added example for MicroProfile 4 using Open Liberty runtime.\n"
+    },
+    {
+      "sha": "a6bc40588369b9893e821520d3db539ea67d4450",
+      "date": "2021-07-19T00:03:59+08:00",
+      "author": "giddyhut",
+      "email": "cicaktech@gmail.com",
+      "message": "To enable build on Windows to be more robust. Happened to have my Git folder in D:\n"
+    },
+    {
+      "sha": "1949e9d16f9c5087732caef7ab8f74d8cdd81653",
+      "date": "2021-05-06T17:35:09Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump lodash from 4.17.13 to 4.17.21 in /crnk-client-angular-ngrx\n\nBumps [lodash](https://github.com/lodash/lodash) from 4.17.13 to 4.17.21.\n- [Release notes](https://github.com/lodash/lodash/releases)\n- [Commits](https://github.com/lodash/lodash/compare/4.17.13...4.17.21)\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "a56d4ef9dd93c94758174b49a1573703f986ae97",
+      "date": "2021-05-06T17:36:30Z",
+      "author": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "message": "Bump lodash from 4.17.19 to 4.17.21 in /crnk-ui\n\nBumps [lodash](https://github.com/lodash/lodash) from 4.17.19 to 4.17.21.\n- [Release notes](https://github.com/lodash/lodash/releases)\n- [Commits](https://github.com/lodash/lodash/compare/4.17.19...4.17.21)\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+    },
+    {
+      "sha": "1e33a2f2fb8d532fdfcb31929224856b795c2941",
+      "date": "2021-05-27T12:06:54+02:00",
+      "author": "Victor Mosin",
+      "email": "vicmosin@gmail.com",
+      "message": "fix(core): made sure self links at document level use service-url-provider as base url\n"
+    },
+    {
+      "sha": "a14a80f298103775e42ef7949d9c46c8fbee233b",
+      "date": "2021-05-09T09:20:26+02:00",
+      "author": "Remo Meier",
+      "email": "remo.meier@adnovum.ch",
+      "message": "Move to maven central #802\n\n- Gradle update to use new publish plugins\n- Disabled UI frontend as not maintained, presentation model remains.\n- Updated publishing\n\nPending: publishing to GitHub packages & GitHub actions integration\n"
+    },
+    {
+      "sha": "af8f84394a302e5da37d80456d246a5348eecb73",
+      "date": "2021-05-07T12:35:01-05:00",
+      "author": "exceptionfactory",
+      "email": "exceptionfactory@gmail.com",
+      "message": "Added GitHub Actions build workflow and removed Travis CI\n"
+    },
+    {
+      "sha": "252b7822c5bf8436da72a96b8e8900f63b579abc",
+      "date": "2021-01-20T09:34:14+02:00",
+      "author": "Pekka Iso-Ahola",
+      "email": "pekka.iso-ahola@qvantel.com",
+      "message": "Fixed exception message to correctly contain the applicable application version.\n"
+    },
+    {
+      "sha": "d9fc756b23f78f475019a3e47dbd13debcf019c1",
+      "date": "2020-12-14T08:17:37+01:00",
+      "author": "sylvain-charton",
+      "email": "sylvain.charton@local.ch",
+      "message": "fix the `links` structure containing the `meta` information"
+    },
+    {
+      "sha": "5c7f44547008cff9289145471c2ed815cfd12e0b",
+      "date": "2021-01-01T16:06:24+05:30",
+      "author": "Rishabh Sairawat",
+      "email": "rishabh.sairawat01@gmail.com",
+      "message": "Fixes json api link on readme file\n"
+    },
+    {
+      "sha": "dae2abd561b075ad001acb219309f871e1757a70",
+      "date": "2020-09-21T10:34:23-04:00",
+      "author": "MacLeod Broad",
+      "email": "macleod.broad@workiva.com",
+      "message": "Fixes issue #786 - null pointer exception when merging tags\n"
+    },
+    {
+      "sha": "0f93a90b4093dd5c2c7a082f70b7a9ef2353ac6c",
+      "date": "2020-09-20T08:40:56+02:00",
+      "author": "Remo Meier",
+      "email": "remo.meier@adnovum.ch",
+      "message": "version update\n"
+    },
+    {
+      "sha": "57e902ffc26e31e9c8147438311b2c9ad5f17b3f",
+      "date": "2020-09-20T07:54:08+02:00",
+      "author": "Remo Meier",
+      "email": "remo.meier@adnovum.ch",
+      "message": "release notes\n"
+    },
+    {
+      "sha": "4d86e207549ef3d997cdc06d90754a8a95e2818c",
+      "date": "2020-08-31T07:41:47+02:00",
+      "author": "Remo Meier",
+      "email": "remo.meier@adnovum.ch",
+      "message": "error handling added to publishing\n"
+    },
+    {
+      "sha": "d34efccf47a4e89d014064c4cd6fd7b7fc49a22f",
+      "date": "2020-08-30T14:24:28+02:00",
+      "author": "Remo Meier",
+      "email": "remo.meier@adnovum.ch",
+      "message": "move to 3.4 version\n"
+    },
+    {
+      "sha": "6e13bc2824a2def67cdb03d9901e9b538e3736be",
+      "date": "2020-08-30T08:05:16+02:00",
+      "author": "Remo Meier",
+      "email": "remo.meier@adnovum.ch",
+      "message": "automatically release when pushing to stable #775\n"
+    }
+  ],
+  "commit_sha": "4e4dd8970d2bc1bb63970093e2049689d6189f30",
+  "extracted_at": "2026-10-05T18:21:42.069325+00:00"
+}
