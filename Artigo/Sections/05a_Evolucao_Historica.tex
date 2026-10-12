@@ -1,10 +1,14 @@
-% Generated from 20261011_historico_v3; review narrative when changing runs.
+% Base numérica gerada de 20261011_historico_v3; narrativa revisada editorialmente.
+% As tabelas foram preservadas. Regenerar este arquivo restaura a narrativa original.
+% Ver Artigo/revisao_textual_manifest.json para a procedência desta revisão.
 \subsection{Execução histórica ampliada}
 \label{subsec:ampliacao-historica}
 
 A coleta percorreu os 1.616 candidatos congelados, sem reposição. Foram registrados 29.088 cortes anuais, incluindo anos anteriores à existência do histórico: 17.087 sem snapshot, 11.850 com extração CK concluída, 62 sem fontes Java, 30 com erro de extração, cinco com inconsistências temporais e 54 com falha de recuperação. Os últimos correspondem aos 18 cortes de três repositórios indisponíveis, também verificados pelo identificador na API do GitHub. Um retorno 404 não permite distinguir remoção de mudança de visibilidade.
 
 A confirmação do framework e os critérios por snapshot retiveram \textbf{388 projetos e 2.533 observações anuais}. São versões repetidas dos mesmos projetos, não 2.533 observações independentes. A Tabela~\ref{tab:historico-cobertura} informa a retenção por coorte. Os 116 candidatos antigos foram todos processados; 52 possuem ao menos uma versão elegível, somando 609 observações. As outras coortes oferecem contexto e não alteram esse conjunto principal.
+
+A extração CK concluída não basta para tornar uma versão elegível: a comparação também exige confirmação do framework, porte mínimo e cobertura adequada. Por sua vez, um corte sem snapshot pode anteceder a existência do projeto, sem representar uma falha da ferramenta. Essas distinções impedem interpretar todos os registros fora da comparação principal como erros de coleta ou projetos de baixa qualidade.
 
 \begin{table}[htbp]
 \centering\small
@@ -23,15 +27,15 @@ Total & 1.616 & 388 & 2.533 \\
 \end{tabular}
 \end{table}
 
-A auditoria validou a lista sorteada, os 18 registros por candidato, os limites temporais e as sete médias recalculadas dos dados brutos, incluindo os escopos de produção e testes. Foram 3.142 extrações distintas, reutilizadas quando as fontes Java eram idênticas. O percurso adicional de 1.576 candidatos, após o piloto, consumiu aproximadamente 109 minutos com quatro trabalhadores. Os clones ocuparam 13,18 GiB, e as extrações, cerca de 598 MiB. Esses custos descrevem o ambiente e o cache da execução, sem incluir toda a descoberta ou estimar o custo de outro ambiente.
+A auditoria automatizada validou a lista sorteada, os 18 registros por candidato, os limites temporais e as médias recalculadas dos dados brutos, incluindo produção e testes. Foram 3.142 extrações distintas, reutilizadas quando as fontes Java eram idênticas. A ampliação após o piloto consumiu aproximadamente 109 minutos com quatro trabalhadores, nas condições de cache da execução; clones e extrações ocuparam, respectivamente, 13,18 GiB e cerca de 598 MiB.
 
 \paragraph{Emenda de classificação de framework.}
-A inspeção revelou que CAS declara dependências por mapas Groovy em scripts Gradle aplicados ao build. A primeira classificação não resolvia esses usos e indicava Boot somente em 2026. O complemento foi aplicado uniformemente às árvores históricas da amostra, sem selecionar pelo resultado CK. Corrigiu 17 classificações anuais de dois projetos: dez no CAS e sete em RobotsJavaBackend. O segundo permaneceu abaixo do tamanho mínimo; oito versões adicionais do CAS tornaram-se elegíveis, enquanto duas permaneceram excluídas por submódulos não inspecionados. O CAS confirma Boot desde o snapshot de 2016, comparado com Spring tradicional em 2015. As métricas, os SHA, a amostra e as evidências de IA dos 29.088 registros permaneceram idênticos; a execução derivada conserva hash próprio da classificação e referência ao produtor CK original. Após a alteração da síntese para médias aritméticas, a bateria de 88 testes passou.
+Um complemento de leitura de catálogos Gradle corrigiu 17 classificações anuais: dez no CAS e sete em RobotsJavaBackend. O complemento foi aplicado a toda a amostra, sem seleção pelo resultado CK. O segundo projeto permaneceu abaixo do tamanho mínimo; oito versões adicionais do CAS tornaram-se elegíveis e duas continuaram excluídas por submódulos não inspecionados. A classificação passou a reconhecer Boot no CAS desde 2016, após Spring tradicional em 2015, em vez de apenas em 2026. As métricas, os SHA, a amostra e as evidências de IA permaneceram idênticos nos 29.088 registros. Os manifestos conservam a emenda e a referência ao produtor CK original. Após a revisão da síntese para médias, os 88 testes passaram.
 
 \subsection{Trajetórias dos projetos criados entre 2009 e 2013}
 \label{subsec:trajetorias-antigas}
 
-A Tabela~\ref{tab:historico-eras-e1} descreve exclusivamente a coorte antiga. Cada projeto contribui uma vez por época, pela média de seus snapshots elegíveis. Os conjuntos por época não são idênticos, pois a disponibilidade e a elegibilidade variam. Portanto, diferenças entre linhas não substituem a inspeção das trajetórias individuais.
+A Tabela~\ref{tab:historico-eras-e1} descreve exclusivamente a coorte antiga. Cada projeto contribui uma vez por época, pela média de seus snapshots elegíveis. E1 reúne 33 projetos e E4 reúne 43; esses conjuntos não são idênticos. Portanto, diferenças entre linhas combinam possíveis mudanças de código e de composição, não sendo uma comparação pareada dos mesmos projetos entre épocas.
 
 \begin{table}[htbp]
 \centering\scriptsize
@@ -50,7 +54,7 @@ E4 & 43 & 172 & 6,238 & 8,838 & 9,029 & 6,173 & 1,317 & 0,173 & 0,289 \\
 \end{tabular}}
 \end{table}
 
-Entre E1 e E4, as médias passam pelos seguintes valores: CBO, de 5,758 para 6,238; RFC, de 8,111 para 8,838; WMC, de 8,781 para 9,029; LOC por método, de 5,985 para 6,173; DIT, de 1,346 para 1,317; NOC, de 0,201 para 0,173; LCOM*, de 0,2894 para 0,2890. As dimensões se movem em direções distintas, e parte da diferença pode decorrer de composição, tamanho e atividade. Não se observa uma melhoria uniforme que autorize uma nota geral de maturidade.
+Entre E1 e E4, as médias passam pelos seguintes valores: CBO, de 5,758 para 6,238; RFC, de 8,111 para 8,838; WMC, de 8,781 para 9,029; LOC por método, de 5,985 para 6,173; DIT, de 1,346 para 1,317; NOC, de 0,201 para 0,173; LCOM*, de 0,2894 para 0,2890. Os indicadores variam em direções distintas. Esses valores não demonstram piora geral por haver aumentos, nem melhoria geral por haver reduções: tamanho, responsabilidades e composição dos projetos participam de sua interpretação.
 
 A estabilidade também precisa ser interpretada: em 2025, 20 dos 43 snapshots elegíveis da coorte antiga repetem o SHA do corte anterior; em 2026, são 23 de 43. Assim, a distribuição inclui código legado mantido disponível, além de projetos em evolução ativa. A Figura~\ref{fig:historico-wmc} separa a média anual da amostra de contexto das trajetórias individuais antigas. Lacunas são conservadas nas tabelas; segmentos entre pontos não significam observações intermediárias.
 
@@ -62,6 +66,7 @@ A estabilidade também precisa ser interpretada: em 2025, 20 dos 43 snapshots el
 \end{figure}
 
 \subsection{Mudanças que acompanharam Spring Boot}
+\label{subsec:historico-boot}
 
 Na coorte antiga, 16 projetos possuem versões elegíveis antes e depois da primeira presença anual observável de Boot, em anos completos. A Tabela~\ref{tab:historico-boot} mostra médias antes/depois e, separadamente, a média das diferenças calculadas projeto a projeto. Para os mesmos pares e pesos, a média das diferenças corresponde à média depois menos a média antes.
 
@@ -86,13 +91,20 @@ LCOM* & 0,306 & 0,310 & 0,0043 \\
 
 A média das mudanças é positiva para CBO, RFC e LCOM*, e negativa para WMC, LOC por método, DIT e NOC. As magnitudes descrevem esta amostra; não são testes de significância ou efeitos causais. Quatorze pares usam anos consecutivos, um tem intervalo de dois anos e o Causeway tem intervalo de oito anos entre versões elegíveis. Esse último agrega muitas mudanças concorrentes. No conjunto das quatro coortes, existem 21 pares completos de Boot. As tabelas de contexto preservam separadamente os projetos sem transição observada nas mesmas janelas.
 
+A redução média de WMC descreve menor complexidade agregada por classe nos pares, mas não informa se a maioria dos projetos apresentou redução. De modo semelhante, o aumento médio de CBO não identifica quais dependências mudaram nem se eram necessárias às novas responsabilidades. Como não foi realizada uma análise específica da influência do par com oito anos de intervalo, não se afirma que a direção das médias permaneceria sem ele. Os grupos sem transição fornecem contexto descritivo, não um controle experimental equivalente.
+
+Os casos já inspecionados ajudam a interpretar o marco observado: Hawtio passa de Spring tradicional em 2013 para presença de Boot em 2014, e BroadleafCommerce apresenta essa sequência entre 2016 e 2017. Esses intervalos localizam a mudança entre versões anuais, sem isolar uma migração de todas as demais alterações. Já o caso CAS mostra que a data reconhecida depende da capacidade do detector de resolver as declarações do build; uma configuração não reconhecida não comprova ausência anterior de Boot.
+
 Também há Boot preliminar antes de 2014: o snapshot de 2013 de \texttt{spring-guides/gs-rest-service} declara 0.5.0.M6. Com 43 LOC, ele fica fora da comparação principal, mas permanece registrado. Isso não contradiz o lançamento estável de abril de 2014.
 
-\subsection{Mudanças que acompanharam evidências de IA}
+\subsection{Análise exploratória das evidências de IA}
+\label{subsec:historico-ia}
 
 Onze projetos antigos apresentam evidência em alguma versão elegível. Apenas um possui par em anos completos até 2025: OpenESPI-DataCustodian, de 2024 para 2025. A evidência de coautoria Claude foi integrada em 1º de julho de 2025; a data de autoria é 24 de junho. No mesmo ano aparece Boot, impedindo separar essas mudanças. CBO passa de 9,895 para 12,180 e WMC de 11,140 para 10,079. Esse caso isolado não representa o comportamento geral de projetos assistidos por IA.
 
 Os outros dez pares antigos usam 2025 e o corte parcial de 2026, fixado em 11 de outubro de 2026 às 19:34:13 UTC. A Tabela~\ref{tab:historico-ia-parcial} mantém esse acompanhamento separado. Sinais como identidades de bot, arquivos de instruções e entradas de gitignore não determinam quanto código foi gerado nem demonstram uso contínuo.
+
+No piloto, MyBatis/Spring apresentou uma identidade de bot Copilot, enquanto Hawtio apresentou um arquivo \texttt{AGENTS.md}. O primeiro sinal se refere à identidade registrada no histórico; o segundo, a instruções presentes no projeto. A reunião desses casos permite estudar a presença de vestígios, mas não estabelece uma exposição uniforme à assistência. Além disso, mudanças medidas entre o encerramento de 2025 e o corte parcial de 2026 podem anteceder a primeira evidência ou ocorrer depois dela dentro do mesmo intervalo.
 
 \begin{table}[htbp]
 \centering\small
@@ -115,8 +127,8 @@ LCOM* & 0,232 & 0,232 & 0,0006 \\
 
 Na amostra de todas as coortes, há quatro pares de IA em anos completos e 17 pares adicionais no período parcial. As contagens são menores que o total de positivos porque nem todo projeto tem uma versão anterior elegível sem evidência. Esses resultados permitem descrever os casos, mas não sustentar uma conclusão geral de melhora ou piora associada à IA. A ausência dos sinais procurados também não estabelece um grupo comprovadamente sem uso.
 
-\subsection{Síntese das evidências e limites}
+\subsection{Interpretação conjunta}
 
-O estudo recuperou trajetórias e mudanças estruturais de projetos antigos, incluindo inativos e arquivados que a seleção anterior excluía. A hipótese de progresso uniforme da comunidade não é sustentada por essas descrições: as métricas têm direções distintas, há estabilidade por inatividade e as amostras anuais mudam. Os pares de Boot mostram mudanças observáveis, enquanto o acompanhamento de IA é recente e reduzido. Tamanho, idade, domínio, composição da equipe e migração de framework permanecem explicações concorrentes.
+O acompanhamento histórico mostra que permanência, mudança estrutural e adoção de ferramentas são fenômenos distintos. Um projeto pode repetir código por vários anos, incorporar Boot em um intervalo e apresentar vestígios de IA muito depois. O valor do desenho está em localizar essas observações em versões verificáveis, evitando atribuir uma tecnologia atual a toda a história do repositório.
 
-A amostra vem de metadados atuais e a identificação técnica depende de declarações reconhecidas. Projetos com configurações antigas em Ant, dependências dinâmicas ou versões não resolvidas podem permanecer não confirmados. Os resultados não estimam a evolução de toda a comunidade Java nem medem produtividade, desempenho de execução ou funcionalidade. As tabelas de produção e testes, as janelas de comparação e os diagnósticos devem acompanhar a interpretação dos valores agregados. O relatório histórico é descritivo, sem p-valores, deltas de Cliff ou nota única de maturidade.
+As direções distintas das métricas não constituem um teste que refute o progresso da comunidade. Elas delimitam o que esta descrição permite afirmar sobre a amostra, diante de mudanças de composição e de contexto. A resolução anual e os indicadores Java também não capturam todas as alterações de configuração, funcionalidade ou esforço. As conclusões a seguir respondem às perguntas do estudo nesse alcance.

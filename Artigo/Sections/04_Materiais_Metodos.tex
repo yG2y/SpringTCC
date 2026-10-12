@@ -1,14 +1,14 @@
 \section{Materiais e Métodos}
 \label{sec:metodologia}
 
-O estudo é empírico, quantitativo, observacional e longitudinal. A unidade de acompanhamento é o repositório; a unidade de medição é uma versão anual de seu código. A análise principal acompanha projetos criados entre 2009 e 2013, e as demais coortes oferecem contexto. As conclusões descrevem mudanças e associações. Uma sequência antes/depois não identifica, por si só, um efeito causal de Spring Boot ou de IA.
+O estudo é empírico, quantitativo, observacional e longitudinal, com síntese descritiva. A unidade de acompanhamento é o repositório; a unidade de medição é uma versão anual de seu código. A análise principal acompanha projetos criados entre 2009 e 2013, e as demais coortes oferecem contexto. O acompanhamento de evidências de IA é exploratório, condicionado à existência de versões elegíveis antes e depois do primeiro vestígio. As conclusões descrevem mudanças observadas. Uma sequência antes/depois não identifica, por si só, um efeito causal de Spring Boot ou de IA.
 
 \subsection{Ambiente e instrumentos}
 \label{subsec:ambiente}
 
 O instrumento \texttt{analisar\_evolucao.py} separa recontagem, descoberta, planejamento, coleta e relatório. A descoberta utiliza a API REST de busca do GitHub, com paginação particionada e controle de limites. Os filtros e o sorteio operam sobre metadados salvos. A clonagem e a inspeção de evidências de IA são posteriores ao congelamento da amostra; a inspeção histórica usa objetos Git locais, sem requisições por snapshot.
 
-A extração reutiliza CK 0.7.1-SNAPSHOT do commit \texttt{8a1ef916d597d33ad619d748b616bb7dbc3f0c36}, com JDT 3.44.0 e o adaptador auditado que preserva a chave arquivo e classe. A JVM, os parâmetros, os hashes do JAR, do adaptador e dos scripts são registrados e congelados. Nenhum projeto amostrado é compilado ou executado, nem suas dependências são baixadas. As fórmulas permanecem as do CK; dependências ausentes e resolução parcial de tipos continuam sendo limitações \cite{aniche:ck,child:19}.
+A extração reutiliza CK 0.7.1-SNAPSHOT do commit \texttt{8a1ef916}, com identificador completo registrado no manifesto do instrumento, JDT 3.44.0 e o adaptador auditado que preserva a chave arquivo e classe. A JVM, os parâmetros, os hashes do JAR, do adaptador e dos scripts são registrados e congelados. Nenhum projeto amostrado é compilado ou executado, nem suas dependências são baixadas. As fórmulas permanecem as do CK; dependências ausentes e resolução parcial de tipos continuam sendo limitações \cite{aniche:ck,child:19}.
 
 \subsection{Descoberta, filtros e sorteio}
 \label{subsec:amostragem}
@@ -41,12 +41,16 @@ A detecção de IA é uma adaptação local inspirada em \cite{robbes:26}. Após
 
 Dois estados são conservados: sinais presentes no snapshot e evidências já observadas no histórico disponível até ele. A inspeção de arquivos segue a lista de caminhos do detector, predominantemente a partir da raiz; arquivos equivalentes em caminhos não previstos podem não ser encontrados. O primeiro vestígio observado não é apresentado como a data exata do primeiro uso. ``Sem evidência detectada'' não equivale a ``sem IA''; configurações copiadas, gitignore e nomes genéricos podem ser ambíguos. As primeiras evidências e transições dos projetos antigos do piloto passam por inspeção dos objetos Git, com identificação de quem realizou a revisão. A precisão do estudo original não é atribuída automaticamente ao detector adaptado.
 
+Os tipos de vestígio têm interpretações diferentes. Uma coautoria atribuída a um agente vincula uma declaração de assistência a um commit; um arquivo de instruções registra configuração ou intenção de uso; uma entrada no gitignore pode apenas prever arquivos de uma ferramenta. Nenhum desses sinais, isoladamente, mede a quantidade de código assistido. A classificação agregada conserva esses vestígios sob a expressão ``com evidência detectada'', sem conferir a todos a mesma força como demonstração de uso.
+
 \subsection{Métricas e operacionalização GQM}
 \label{subsec:metricas-avaliacao}
 
 O instrumento conserva sete medidas: médias por classe de CBO geral, RFC, WMC, DIT, NOC e LCOM*, além da média de LOC por método. Na implementação CK adotada, RFC conta chamadas distintas identificadas pelo visitante; WMC agrega complexidade ciclomática e não mede desempenho de execução. LCOM* corresponde à coluna \texttt{lcom*}, preservando-se \texttt{lcom} original apenas como auxiliar. Dados brutos por classe e método e agregações de produção e de testes são conservados.
 
 O corte principal de 2.000 LOC é aplicado a cada snapshot, com linhas físicas Java contendo código, sem comentários ou linhas vazias e sem contar arquivos repetidamente por classes internas. A versão principal inclui fontes e testes, com sensibilidade somente de produção. Versões menores continuam registradas e não excluem toda a trajetória do projeto. Cobertura incompleta, métricas ausentes e erros impedem a participação da versão na comparação principal; ausência de dados não é convertida em zero. Submódulos não inspecionados e diagnósticos de configuração também permanecem explícitos.
+
+O limiar de 2.000 LOC delimita operacionalmente o porte das versões incluídas; não é um valor validado de maturidade ou qualidade. Ele pode excluir fases iniciais de projetos e aplicações pequenas, ainda que legítimas. As conclusões ficam condicionadas a esse recorte. A comparação com outros limiares constitui uma análise adicional ainda não realizada nesta execução.
 
 \begin{table}[H]
 \centering\footnotesize
@@ -57,7 +61,7 @@ O corte principal de 2.000 LOC é aplicado a cada snapshot, com linhas físicas 
 \textbf{Q} & \textbf{Questão e objetivo} & \textbf{Medidas e evidências} \\\hline
 Q1 & Como a estrutura dos mesmos projetos evolui anualmente? Caracterizar trajetórias, sem presumir melhoria. & Sete medidas CK; LOC; cobertura; idade do projeto. \\\hline
 Q2 & Quais mudanças acompanham a primeira presença observável de Boot? Descrever antes/depois e projetos sem transição observada. & Sete medidas; framework e versão declarada; SHA anterior e posterior. \\\hline
-Q3 & Quais mudanças acompanham o aparecimento de vestígios de IA? Separar presença atual e evidência histórica. & Sete medidas; caminhos, trailers, datas e primeira evidência observada. \\\hline
+Q3 & Quais mudanças acompanham os vestígios de IA nos casos observáveis? Explorar os pares disponíveis, separando presença atual e evidência histórica. & Sete medidas; caminhos, trailers, datas e primeira evidência observada. \\\hline
 Q4 & Como essas trajetórias se relacionam com projetos da mesma época? Distinguir evolução interna e composição dos grupos. & Médias por repositório e época; quantidades; estratos de LOC, framework e coorte. \\\hline
 \end{tabularx}
 \end{table}
@@ -67,7 +71,9 @@ Q4 & Como essas trajetórias se relacionam com projetos da mesma época? Disting
 
 Apresentam-se quantidades de projetos e snapshots, médias, mudanças entre versões e gráficos de trajetória. Nas sínteses por época, calcula-se primeiro a média aritmética das observações anuais do repositório naquela época e, depois, a média aritmética entre repositórios. Assim, cada projeto tem uma contribuição, independentemente de quantos snapshots possui. Mudanças de evidência de IA dentro de uma época são apresentadas como transição observada, sem duplicar o projeto entre grupos. O período parcial de 2026 permanece separado.
 
-A permanência de um SHA em anos sem novos commits descreve a estrutura disponível no projeto ao final do período, e não código produzido naquele ano. A síntese da comunidade inclui esse legado. A marcação de versões repetidas permite distinguir estabilidade por inatividade de mudanças estruturais observadas em projetos que continuaram evoluindo.
+As médias por época descrevem os projetos elegíveis em cada período, cujos conjuntos podem mudar. Elas não constituem um pareamento entre épocas nem isolam mudanças dos mesmos projetos. A atribuição de pesos iguais evita que o número de snapshots determine o peso do repositório, mas não controla diferenças de tamanho, domínio ou arquitetura. As médias também podem ser influenciadas por valores extremos; seu sinal não informa quantos projetos aumentaram ou diminuíram uma métrica.
+
+A permanência de um SHA em anos sem novos commits descreve a estrutura disponível no projeto ao final do período, e não código produzido naquele ano. A síntese da amostra inclui esse legado. A marcação de versões repetidas permite distinguir estabilidade por inatividade de mudanças estruturais observadas em projetos que continuaram evoluindo.
 
 Nas comparações antes/depois, utilizam-se a última versão anual elegível anterior ao marco e a primeira elegível posterior. Projetos já positivos na primeira observação são marcados como censurados à esquerda: sua transição não foi observada. A transição para Boot exige uma versão anterior com Spring confirmado. Apresentam-se os valores antes/depois e a média das diferenças individuais; percentuais não são calculados quando o denominador é zero. Lacunas entre anos são informadas. O contexto inclui projetos sem a mesma transição e estratos de tamanho, framework e coorte, sem afirmar equivalência de domínio ou causalidade.
 
@@ -75,14 +81,23 @@ O relatório histórico principal não apresenta p-valores ou deltas de Cliff. T
 
 Um complemento identificado separadamente apresenta pares cuja primeira observação elegível posterior ao marco está disponível apenas no corte parcial de 2026. Esses pares não são reunidos aos de anos completos. O complemento conserva os SHA, a data do corte e um manifesto próprio de apresentação, sem alterar a extração CK.
 
-\subsection{Validação, ampliação e limitações}
+\subsection{Validação e ampliação}
 \label{subsec:validacao-historica}
 
 A validação verifica recontagem e invariância do sorteio à atividade, limites anuais UTC, merges, repetição de SHA, ausência de histórico, datas inconsistentes, recuperação após falhas, invalidação do cache e ausência de código ou evidências posteriores ao corte. O piloto percorre até 40 candidatos, com revisão das transições e primeiras evidências dos projetos antigos e registro de tempo, armazenamento e cobertura. Somente após a validação percorre-se a lista congelada de até 500 candidatos por coorte. O encerramento depende da lista, nunca de valores CK, da prevalência de IA ou da direção dos resultados.
 
 Na inspeção do piloto, a presença de módulos de exemplo com dependências Boot em Spring Security evidenciou uma limitação na identificação do próprio framework. A execução revisada reconhece a combinação entre grupo Maven/Gradle declarado pelo projeto e fontes de produção no namespace Spring. A amostra e as referências Git são mantidas, o piloto é repetido com novo fingerprint e os valores CK nos mesmos SHA são conferidos. A tentativa anterior e a justificativa da emenda permanecem preservadas.
 
-As ameaças incluem projetos desaparecidos ou privados, tópicos e linguagem observados nos metadados atuais, migrações e reescrita de histórico, diferenças de idade e domínio, mudanças de tamanho e framework, versões declaradas sem resolução completa de dependências, falhas de extração e uso de IA sem vestígios. A retenção de inativos e arquivados reduz uma seleção explícita por sobrevivência, mas não recupera repositórios que já desapareceram. As métricas Java não medem diretamente configuração XML/YAML nem comportamento em execução; mudanças nessas dimensões podem não aparecer nos indicadores CK. ``Maturidade'' é discutida por dimensões estruturais, sem nota única ou pressuposto de progresso.
+\subsection{Ameaças à validade}
+
+\paragraph{Seleção e cobertura.}
+A descoberta depende de tópicos e linguagem observados nos metadados atuais. Projetos desaparecidos ou privados não são recuperados, e configurações antigas ou dinâmicas podem não ser reconhecidas. A retenção de inativos e arquivados reduz uma seleção explícita por atividade, mas não elimina essas perdas. O limiar de tamanho, as falhas de extração e a confirmação técnica por snapshot alteram a cobertura temporal. A amostra elegível não representa automaticamente todos os projetos Spring.
+
+\paragraph{Medição.}
+Migrações e reescrita de histórico limitam a reconstrução temporal. Dependências não resolvidas podem afetar medidas estáticas, e a ferramenta CK documenta limites de resolução de tipos e chamadas \cite{aniche:ck}. As métricas Java não medem diretamente configuração XML/YAML, comportamento em execução, defeitos ou esforço de manutenção. Assim, mudanças relevantes à adoção de Boot podem ocorrer fora das dimensões medidas. A detecção de IA, por sua vez, pode omitir usos sem vestígios ou encontrar configurações sem uso efetivo.
+
+\paragraph{Interpretação.}
+Tamanho, idade, domínio, composição da equipe e mudanças de framework são explicações concorrentes para as variações. A composição dos conjuntos anuais e a repetição de versões também influenciam as sínteses. Os pares antes/depois mantêm a identidade do projeto, mas não controlam todas as mudanças ocorridas no intervalo, sobretudo quando há lacunas de vários anos. Não se estimam efeitos causais nem uma nota de maturidade, e a ausência de uma tendência uniforme não demonstra ausência de evolução em projetos específicos.
 
 \subsection{Relação com os pilotos anteriores}
 
@@ -90,4 +105,6 @@ Os pilotos transversais de setembro e outubro de 2026 apoiaram a validação da 
 
 \subsection{Reprodução e revisão dos autores}
 
-O pacote preserva a população, a lista sorteada, as referências Git, os planos de snapshots, os dados brutos CK, as evidências de framework e IA e os diagnósticos. Os comandos estão no arquivo README do instrumento histórico. A revisão dos objetos Git foi assistida por IA, com referências concretas a SHA e arquivos; não constitui uma classificação independente por dois pesquisadores. A dupla deverá conferir especialmente os sinais ambíguos e os casos de transição antes da submissão final do TCC.
+Os artefatos da execução preservam a população, a lista sorteada, as referências Git, os planos de snapshots, os dados brutos CK, as evidências de framework e IA e os diagnósticos. O repositório versiona instrumentos, amostras, tabelas consolidadas, relatórios e manifestos. Clones e arquivos volumosos da coleta permanecem no ambiente local; sua restauração é necessária para repetir a auditoria dos dados brutos e a extração exata. Os comandos e os limites do pacote versionado estão nos arquivos README do instrumento e dos artefatos históricos.
+
+A revisão dos objetos Git foi assistida por IA, com referências concretas a SHA e arquivos; não constitui uma classificação independente por dois pesquisadores. A validação automatizada verifica regras e consistência dos cálculos, mas não substitui a avaliação humana da interpretação dos sinais. Permanece necessária uma revisão independente pelos autores dos casos de transição e de uma amostra dos negativos, com registro das divergências e de sua resolução. Essa etapa é uma recomendação para a submissão, não uma atividade já concluída.

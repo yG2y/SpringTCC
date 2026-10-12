@@ -66,7 +66,7 @@
 
 \sloppy
 
-\title{Evolução da Qualidade Estrutural de Projetos Spring:\\transição para Spring Boot e assistência por IA}
+\title{Evolução da Qualidade Estrutural de Projetos Spring:\\transição para Spring Boot e evidências de assistência por IA}
 
 \author{Gabriel Ferreira\inst{1}, Guilherme Augusto\inst{1}}
 
@@ -81,11 +81,11 @@
 \maketitle
 
 \begin{abstract}
-Internal software quality can be described through structural measures of coupling, complexity, inheritance, cohesion and size. This observational longitudinal study follows public Java projects in the Spring ecosystem, focusing on repositories created between 2009 and 2013. Annual snapshots from 2009 to 2025, plus a separately reported partial observation in 2026, are recovered from pinned Git histories. A reproducible sample includes traditional Spring and Spring Boot projects, retaining accessible inactive and archived repositories. Seven measures are extracted with an audited CK instrument. Within-project trajectories and changes surrounding the first observable presence of Spring Boot and AI-assistance evidence are described separately from differences between projects. The analysis reports coverage, arithmetic means and paired changes, without interpreting temporal sequence as causation or absence of AI traces as non-use. The frozen sample contains 1,616 candidates; 388 projects contribute 2,533 eligible annual observations. In the oldest cohort, 16 complete-year Boot pairs and only one AI pair are available, plus ten partial-year AI pairs. The dimensions move in different directions, without establishing uniform improvement.
+This observational longitudinal study characterizes the structural evolution of public Java projects in the Spring ecosystem, focusing on repositories created between 2009 and 2013. Annual snapshots from 2009 to 2025 and a separate partial observation in 2026 are recovered from pinned Git histories. Seven measures are extracted with the CK tool and an audited adapter, retaining accessible inactive and archived repositories. The frozen sample contains 1,616 candidates; 388 projects contribute 2,533 eligible annual observations. The oldest cohort comprises 52 eligible projects and 609 observations. Arithmetic means, individual trajectories and within-project changes describe coupling, complexity, size, inheritance and cohesion. Sixteen oldest-cohort projects have complete-year before/after pairs around the first observable presence of Spring Boot. AI evidence supports only one complete-year pair and ten partial-year pairs in that cohort, making this analysis exploratory. The observed dimensions vary in different directions. These descriptions do not establish uniform improvement, causal effects of Boot or AI, or the maturity of the broader developer community. Absence of detectable AI traces is not interpreted as non-use.
 \end{abstract}
 
 \begin{resumo}
-A qualidade interna de \emph{software} pode ser descrita por medidas estruturais de acoplamento, complexidade, herança, coesão e tamanho. Este estudo observacional longitudinal acompanha projetos Java públicos do ecossistema Spring, com foco nos repositórios criados entre 2009 e 2013. Recuperam-se versões anuais de 2009 a 2025 e uma observação parcial de 2026, apresentada separadamente, a partir de históricos Git com referências fixadas. A amostra reproduzível inclui Spring tradicional e Spring Boot e mantém projetos inativos e arquivados acessíveis. Sete medidas são extraídas por um instrumento CK auditado. As trajetórias e diferenças dentro de cada projeto, em torno da primeira presença observável de Boot e de evidências de assistência por IA, são separadas das diferenças entre projetos. A análise apresenta cobertura, médias e mudanças pareadas, sem interpretar sequência temporal como causalidade ou ausência de vestígios de IA como ausência de uso. A amostra congelada contém 1.616 candidatos; 388 projetos contribuem com 2.533 observações anuais elegíveis. Na coorte antiga, há 16 pares completos de Boot e apenas um de IA, além de dez pares parciais de IA. As dimensões se movem em direções distintas, sem estabelecer melhoria uniforme.
+Este estudo observacional longitudinal caracteriza a evolução estrutural de projetos Java públicos do ecossistema Spring, com foco nos repositórios criados entre 2009 e 2013. Recuperam-se versões anuais de 2009 a 2025 e uma observação parcial de 2026, apresentada separadamente, a partir de históricos Git com referências fixadas. Sete medidas são extraídas pela ferramenta CK e por um adaptador auditado, mantendo projetos inativos e arquivados acessíveis. A amostra congelada contém 1.616 candidatos; 388 projetos contribuem com 2.533 observações anuais elegíveis. A coorte antiga reúne 52 projetos elegíveis e 609 observações. Médias aritméticas, trajetórias individuais e mudanças dentro dos projetos descrevem acoplamento, complexidade, tamanho, herança e coesão. Dezesseis projetos antigos possuem pares antes/depois em anos completos em torno da primeira presença observável de Spring Boot. As evidências de IA permitem apenas um par completo e dez pares parciais nessa coorte, tornando essa análise exploratória. As dimensões observadas variam em direções distintas. Essas descrições não estabelecem melhoria uniforme, efeitos causais de Boot ou IA, nem a maturidade da comunidade de desenvolvedores. Ausência de vestígios detectáveis de IA não é interpretada como ausência de uso.
 \end{resumo}
 
 \begin{tcolorbox}
@@ -97,7 +97,6 @@ Trabalho de Conclusão de Curso (TCC)} \\
 Orientador de conteúdo (TCC I): João Pedro Batisteli - joaobatisteli@pucminas.br\\
 Orientador de conteúdo (TCC I): Leonardo Vilela - leonardocardoso@pucminas.br \\
 Orientador acadêmico (TCC I): Cleiton Tavares - cleitontavares@pucminas.br \\
-Orientador do TCC II: (A ser definido no próximo semestre)\\ \\
 Belo Horizonte, versão de trabalho de 11 de outubro de 2026.
 \end{tcolorbox}
 
@@ -106,6 +105,7 @@ Belo Horizonte, versão de trabalho de 11 de outubro de 2026.
 \input{Sections/03_Trabalhos_Relacionados}
 \input{Sections/04_Materiais_Metodos}
 \input{Sections/05_Resultados}
+\input{Sections/06_Conclusao}
 
 \bibliographystyle{sbc}
 \bibliography{sbc-template}

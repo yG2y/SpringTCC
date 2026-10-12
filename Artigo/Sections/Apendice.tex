@@ -8,3 +8,28 @@ As tabelas por época apresentam uma contribuição por repositório, com quanti
 Nas tabelas antes/depois, \texttt{n\_a} é o número de projetos com medição anterior e \texttt{n\_b} o número com medição posterior. Os pares correspondem aos mesmos repositórios. A diferença é calculada dentro de cada par antes de obter a média; para os mesmos pares e pesos, ela corresponde à média posterior menos a média anterior. Os SHA e as datas permitem conferir cada versão utilizada.
 
 As sete medidas conservam suas unidades originais. Não se cria uma nota composta de maturidade. Não se apresentam p-valores, deltas de Cliff ou afirmações automáticas de melhoria. Arquivos CSV, gráficos PNG/SVG, referências fixadas, evidências, diagnósticos e hashes do instrumento integram o pacote de reprodução. Os relatórios dos pilotos transversais anteriores permanecem identificados separadamente.
+
+\section*{Apêndice B --- Cobertura do piloto histórico}
+
+O piloto compreendeu os primeiros dez candidatos sorteados de cada coorte. Dos 720 cortes anuais, 373 não tinham histórico disponível até o corte, 346 tiveram extração CK concluída e um não continha fontes Java. Os 347 snapshots com árvore disponível corresponderam a 127 extrações distintas, em razão da reutilização de fontes idênticas. A tabela conserva os resultados do piloto corrigido, anterior à ampliação.
+
+\begin{table}[htbp]
+\centering
+\caption{Cobertura do piloto histórico por coorte de criação.}
+\label{tab:piloto-historico-cobertura}
+\small
+\begin{tabular}{lrrrr}
+\hline
+Coorte & Candidatos & Snapshots disponíveis & Elegíveis & Projetos elegíveis \\
+\hline
+E1 & 10 & 155 & 77 & 5 \\
+E2 & 10 & 101 & 31 & 3 \\
+E3 & 10 & 75 & 8 & 1 \\
+E4 & 10 & 16 & 3 & 3 \\
+\hline
+Total & 40 & 347 & 119 & 12 \\
+\hline
+\end{tabular}
+\end{table}
+
+A reexecução utilizou quatro trabalhadores e consumiu aproximadamente 355 segundos, reutilizando cerca de 505 MiB de clones e produzindo aproximadamente 44 MiB de extrações. Esses valores descrevem o ambiente e o cache daquela execução, sem estimar o custo de uma coleta inteiramente nova.

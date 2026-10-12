@@ -1,0 +1,18 @@
+\section{Conclusão}
+\label{sec:conclusao}
+
+Este trabalho caracterizou versões históricas de projetos públicos do ecossistema Spring, com foco nos criados entre 2009 e 2013. A execução percorreu 1.616 candidatos e reuniu 2.533 observações anuais elegíveis de 388 projetos. A coorte principal contribuiu com 52 projetos e 609 observações. A contribuição é um acompanhamento rastreável de dimensões estruturais e marcos observáveis, com versões, cobertura e limitações associados às medições.
+
+\paragraph{Q1: evolução estrutural.}
+As trajetórias e sínteses registram mudanças em acoplamento, complexidade, tamanho, herança e coesão, além da permanência de código sem novos commits. As médias por época variam em direções distintas e reúnem conjuntos parcialmente diferentes de projetos. O estudo não estabelece uma melhoria uniforme da amostra nem permite extrapolar uma medida de maturidade para a comunidade. Essa limitação não elimina a possibilidade de evolução favorável em projetos ou dimensões específicos.
+
+\paragraph{Q2: presença observável de Spring Boot.}
+Os 16 pares da coorte antiga em anos completos apresentam redução média de WMC e LOC por método e aumento médio de CBO, RFC e LCOM*, acompanhados de reduções de DIT e NOC. Esses movimentos descrevem os pares disponíveis; não equivalem, isoladamente, a melhora ou piora arquitetural. Os intervalos variáveis e as mudanças concorrentes impedem atribuir as diferenças ao Boot. O estudo também não mede diretamente possíveis alterações em configuração XML/YAML ou esforço de desenvolvimento.
+
+\paragraph{Q3: evidências de assistência por IA.}
+A coorte antiga fornece apenas um par em anos completos e dez pares com acompanhamento parcial em 2026. No único par completo, a presença observável de Boot coincide com o ano da evidência de IA. Portanto, os dados permitem descrever casos e diferenças temporais, mas não sustentar uma conclusão geral sobre benefício ou prejuízo da IA. Vestígios de identidade, coautoria e configuração têm alcances diferentes; a ausência dos sinais procurados não confirma ausência de uso.
+
+\paragraph{Q4: contexto entre projetos.}
+As demais coortes e os estratos de tamanho e framework situam as trajetórias no conjunto observado. Essas comparações mostram o contexto da amostra, sem formar grupos experimentalmente equivalentes ou separar todos os efeitos de idade, domínio e composição. Comparações entre projetos e mudanças dentro do mesmo repositório devem, assim, permanecer identificadas separadamente.
+
+Como desdobramentos, recomenda-se comparar épocas adjacentes usando os projetos presentes em ambos os períodos, descrever a distribuição das mudanças individuais e examinar a influência de valores extremos e de intervalos longos. Também são necessárias análises de sensibilidade ao limiar de tamanho e uma revisão humana independente das transições e de uma amostra dos negativos. Essas atividades permanecem fora da execução apresentada. A ampliação do acompanhamento de IA deve preservar o protocolo e a distinção entre anos completos e períodos parciais, sem selecionar projetos em função da direção das métricas.
