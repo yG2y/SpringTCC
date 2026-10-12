@@ -355,3 +355,12 @@ A descoberta preserva o universo amplo. A primeira etapa local exige `primary_la
 ```powershell
 python select_spring_boot.py --run-dir ../Artefatos/selecao_spring_boot/runs/20260920_java --limit 50000 run
 ```
+
+## Evolução histórica do ecossistema Spring
+
+O instrumento `analisar_evolucao.py` acompanha versões anuais de projetos Spring
+tradicional e Spring Boot, com foco na coorte criada em 2009–2013. Consulte
+[evolution/README.md](evolution/README.md) para seleção, piloto, coleta, emendas,
+auditoria e reprodução. O relatório consolidado desta etapa está em
+`../Artefatos/evolucao_spring/runs/20261011_historico_v3/report.html`.
+Os pilotos transversais anteriores permanecem preservados em suas próprias execuções.

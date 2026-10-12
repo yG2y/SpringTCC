@@ -1,0 +1,24 @@
+{
+  "recorded_at": "2026-10-11T20:50:07.149916+00:00",
+  "full_collection_started_at": "2026-10-11T20:22:58Z",
+  "start_time_precision": "seconds; recorded from execution session",
+  "command": [
+    ".venv/bin/python",
+    "Instrumentos/Codigos/codigoCKSpring/analisar_evolucao.py",
+    "collect",
+    "--scope",
+    "all",
+    "--workers",
+    "4",
+    "--output",
+    "Instrumentos/Codigos/Artefatos/evolucao_spring/runs/20261011_historico_v2"
+  ],
+  "scope": "all frozen candidates, including the completed pilot",
+  "candidate_count": 1616,
+  "additional_candidates_at_start": 1576,
+  "workers": 4,
+  "terminal_log": "/tmp/spring-historico-full.log",
+  "status_source": "collection_status.json",
+  "pilot_preserved_in": "pilot_snapshot/",
+  "note": "Operational provenance; no credentials or remote authentication material stored"
+}

@@ -1,0 +1,116 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Evolução da Qualidade Estrutural de Projetos Spring
+% TCC - Engenharia de Software - PUC Minas
+%
+% Para compilar:
+%   pdflatex Article.tex
+%   bibtex   Article
+%   pdflatex Article.tex
+%   pdflatex Article.tex
+%
+% Observação: o arquivo de estilo `sbc-template.sty` deve estar no mesmo
+% diretório (download em [https://www.sbc.org.br/documentos-da-sbc/](https://www.sbc.org.br/documentos-da-sbc/)
+% summary/169-templates-para-artigos-e-capitulos-de-livros/878-modelosparapublicaodeartigos).
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article}
+
+\usepackage{sbc-template}
+\usepackage{graphicx,url}
+\usepackage{float}
+\usepackage[brazil]{babel}
+\usepackage{tabularx}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[inline]{enumitem}
+\usepackage{tcolorbox}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning}
+\usepackage{amsmath}
+
+%%%%%%%%%%%%%%%%% Pacotes para inserção de algoritmos - BEGIN
+\usepackage{xcolor}
+\definecolor{verde}{rgb}{0.25,0.5,0.35}
+\definecolor{jpurple}{rgb}{0.5,0,0.35}
+\definecolor{darkgreen}{rgb}{0.0, 0.2, 0.13}
+
+\usepackage{listings}
+\lstset{
+    language=Java,
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{jpurple}\bfseries,
+    stringstyle=\color{red},
+    commentstyle=\color{verde},
+    morecomment=[s][\color{blue}]{/**}{*/},
+    extendedchars=true,
+    showspaces=false,
+    showstringspaces=false,
+    numbers=left,
+    numberstyle=\tiny,
+    breaklines=true,
+    backgroundcolor=\color{white!10},
+    breakautoindent=true,
+    captionpos=b,
+    xleftmargin=0pt,
+    tabsize=2
+}
+%%%%%%%%%%%%%%%%% Pacotes para inserção de algoritmos - END
+
+\graphicspath{%
+  {imgs/}%
+  {Sections/imgs/}%
+  {../Divulgacao/Apresentacao/imgs/}%
+  {./}%
+}
+
+\sloppy
+
+\title{Evolução da Qualidade Estrutural de Projetos Spring:\\transição para Spring Boot e assistência por IA}
+
+\author{Gabriel Ferreira\inst{1}, Guilherme Augusto\inst{1}}
+
+\address{Engenharia de Software\\
+  Pontifícia Universidade Católica de Minas Gerais (PUC-MG)\\
+  Belo Horizonte -- MG -- Brazil
+  \email{\{gabriel.amaral.1447804,gajsouza\}@sga.pucminas.br}
+}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Internal software quality can be described through structural measures of coupling, complexity, inheritance, cohesion and size. This observational longitudinal study follows public Java projects in the Spring ecosystem, focusing on repositories created between 2009 and 2013. Annual snapshots from 2009 to 2025, plus a separately reported partial observation in 2026, are recovered from pinned Git histories. A reproducible sample includes traditional Spring and Spring Boot projects, retaining accessible inactive and archived repositories. Seven measures are extracted with an audited CK instrument. Within-project trajectories and changes surrounding the first observable presence of Spring Boot and AI-assistance evidence are described separately from differences between projects. The analysis reports coverage, medians and paired changes, without interpreting temporal sequence as causation or absence of AI traces as non-use. The frozen sample contains 1,616 candidates; 388 projects contribute 2,533 eligible annual observations. In the oldest cohort, 16 complete-year Boot pairs and only one AI pair are available, plus ten partial-year AI pairs. The dimensions move in different directions, without establishing uniform improvement.
+\end{abstract}
+
+\begin{resumo}
+A qualidade interna de \emph{software} pode ser descrita por medidas estruturais de acoplamento, complexidade, herança, coesão e tamanho. Este estudo observacional longitudinal acompanha projetos Java públicos do ecossistema Spring, com foco nos repositórios criados entre 2009 e 2013. Recuperam-se versões anuais de 2009 a 2025 e uma observação parcial de 2026, apresentada separadamente, a partir de históricos Git com referências fixadas. A amostra reproduzível inclui Spring tradicional e Spring Boot e mantém projetos inativos e arquivados acessíveis. Sete medidas são extraídas por um instrumento CK auditado. As trajetórias e diferenças dentro de cada projeto, em torno da primeira presença observável de Boot e de evidências de assistência por IA, são separadas das diferenças entre projetos. A análise apresenta cobertura, medianas e mudanças pareadas, sem interpretar sequência temporal como causalidade ou ausência de vestígios de IA como ausência de uso. A amostra congelada contém 1.616 candidatos; 388 projetos contribuem com 2.533 observações anuais elegíveis. Na coorte antiga, há 16 pares completos de Boot e apenas um de IA, além de dez pares parciais de IA. As dimensões se movem em direções distintas, sem estabelecer melhoria uniforme.
+\end{resumo}
+
+\begin{tcolorbox}
+\footnotesize
+\textbf{Bacharelado em Engenharia de \emph{Software} - PUC Minas\\
+Trabalho de Conclusão de Curso (TCC)} \\
+
+\indent Orientador de conteúdo (TCC I): Danilo Maia - danilomaia@pucminas.br \\
+Orientador de conteúdo (TCC I): João Pedro Batisteli - joaobatisteli@pucminas.br\\
+Orientador de conteúdo (TCC I): Leonardo Vilela - leonardocardoso@pucminas.br \\
+Orientador acadêmico (TCC I): Cleiton Tavares - cleitontavares@pucminas.br \\
+Orientador do TCC II: (A ser definido no próximo semestre)\\ \\
+Belo Horizonte, versão de trabalho de 11 de outubro de 2026.
+\end{tcolorbox}
+
+\input{Sections/01_Introducao}
+\input{Sections/02_Fundamentacao_Teorica}
+\input{Sections/03_Trabalhos_Relacionados}
+\input{Sections/04_Materiais_Metodos}
+\input{Sections/05_Resultados}
+
+\bibliographystyle{sbc}
+\bibliography{sbc-template}
+
+\appendix
+\input{Sections/Apendice}
+
+\end{document}

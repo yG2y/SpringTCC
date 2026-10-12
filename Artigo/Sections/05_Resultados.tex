@@ -1,231 +1,52 @@
-\section{Resultados Parciais}
+\section{Resultados e Discussão}
 \label{sec:resultados}
 
-Esta seção apresenta os resultados das etapas de coleta e experimentação já concluídas: a filtragem da amostra de repositórios Java Spring Boot, a distribuição temporal por épocas históricas e o piloto de identificação de adoção de agentes de IA. Além das fases preparatórias, esta seção apresenta a execução CK de outubro de 2026 sobre os 50 repositórios com classificação de IA disponível. Essa execução não cobre toda a seleção de 38.456 repositórios e suas limitações técnicas são explicitadas.
+Esta seção distingue a execução histórica dos resultados transversais anteriores. Nos pilotos transversais, E1--E4 correspondem à criação do repositório e o código medido é atual; seus contrastes não demonstram a evolução dos mesmos projetos ao longo dos anos. No protocolo histórico, a época das métricas depende do snapshot.
 
-\subsection{Coleta e filtragem da amostra}
-\label{subsec:res-coleta}
+\subsection{Recontagem para o desenho histórico}
 
-A coleta foi conduzida em Python com a API REST do GitHub, com paginação por janelas anuais de \texttt{createdAt} de 2008 a 2026 e controle de \emph{rate limit}. Em 17 de setembro de 2026 às 16:36 UTC, a API reportou 95.666 candidatos; ao término da coleta, em 20 de setembro de 2026 às 17:42 UTC, o total era de 95.972. Foram efetivamente coletados 95.894 registros únicos; a diferença de 78 em relação à consulta final reflete variação temporal do índice e da paginação da API, não uma exclusão por critério.
+A reaplicação local dos filtros sobre a população original de 95.894 registros, preservando inativos e arquivados, resulta em 70.280 candidatos da base Boot salva: 30 em E1, 3.831 em E2, 20.380 em E3 e 46.039 em E4. Esses totais antecedem a união com as consultas adicionais de Spring. Entre os 30 candidatos de E1, quatro estão arquivados. A retenção não confirma disponibilidade do histórico, uso de Spring na versão antiga ou elegibilidade de 2.000 LOC; essas verificações pertencem à coleta de snapshots.
 
-A Tabela~\ref{tab:atrito-filtros} detalha o atrito sequencial dos filtros aplicados sobre os 95.894 registros coletados. Cada repositório é contabilizado uma única vez no filtro que o rejeitou primeiro.
+A união das quatro fontes reúne 117.621 identificadores únicos. Os filtros de metadados mantêm 84.633 candidatos, dos quais um foi criado antes das coortes do estudo. Restam 84.632 candidatos nas coortes: 116 em E1, 5.836 em E2, 25.819 em E3 e 52.861 em E4. Entre os 116 de E1, 14 estão arquivados e 54 têm atividade antiga; esses atributos não os excluíram. A lista congelada contém 1.616 candidatos: todos os 116 de E1 e 500 de cada outra coorte. O piloto utiliza os primeiros dez sorteados por coorte.
 
-\begin{table}[H]
-    \centering
-    \caption{Atrito dos filtros aplicados à amostra de repositórios Java Spring Boot.}
-    \label{tab:atrito-filtros}
-    \footnotesize
-    \renewcommand{\arraystretch}{1.2}
-    \begin{tabularx}{\linewidth}{|>{\raggedright\arraybackslash}X|r|r|r|}
-        \hline
-        \textbf{Filtro} & \textbf{Antes} & \textbf{Excluídos} & \textbf{Restantes} \\
-        \hline
-        Linguagem principal diferente de Java ou ausente & 95.894 & 23.298 & 72.596 \\
-        \hline
-        Forks (\texttt{is\_fork = true}) & 72.596 & 1.089 & 71.507 \\
-        \hline
-        Espelhos (\texttt{is\_mirror = true}) & 71.507 & 0 & 71.507 \\
-        \hline
-        Arquivados (\texttt{archived = true}) & 71.507 & 1.607 & 69.900 \\
-        \hline
-        Desabilitados (\texttt{disabled = true}) & 69.900 & 0 & 69.900 \\
-        \hline
-        Sem \emph{push} desde o corte ou sem data válida & 69.900 & 30.856 & 39.044 \\
-        \hline
-        Templates (\texttt{is\_template = true}) & 39.044 & 238 & 38.806 \\
-        \hline
-        Vazios ou sem \emph{branch} padrão & 38.806 & 3 & 38.803 \\
-        \hline
-        Materiais educacionais ou listas identificados & 38.803 & 347 & 38.456 \\
-        \hline
-        \textbf{Total elegível e selecionado} & — & \textbf{57.438} & \textbf{38.456} \\
-        \hline
-    \end{tabularx}
-    \vspace{4pt}
-    {\footnotesize Fonte: Elaborada pelos autores. Artefato: \texttt{runs/20260920\_java/filter\_attrition.csv}. A soma 57.438 + 38.456 = 95.894 foi verificada por auditoria automatizada com 13 verificações de integridade, todas aprovadas.}
-\end{table}
+A confirmação do framework, a disponibilidade dos snapshots e a cobertura CK são verificadas depois do sorteio. Nenhum resultado CK transversal abaixo foi reutilizado como uma medição anual histórica.
 
-Os 38.456 repositórios elegíveis foram selecionados em sua totalidade, pois não atingiram o teto operacional de 50.000 estabelecido na metodologia. Os metadados coletados incluem identificador, nome completo, URL, descrição, tópicos, estrelas, número de forks, datas de criação, atualização e último \emph{push}, tamanho estimado em KB, \emph{branch} padrão, licença e indicadores booleanos de \emph{fork}, template, arquivado e desabilitado.
+\subsection{Validação do piloto histórico}
+\label{subsec:piloto-historico}
 
-\subsection{Distribuição da amostra por épocas históricas}
-\label{subsec:res-epocas}
-
-Cada repositório foi associado a exatamente uma época com base no campo \texttt{createdAt} (UTC). A Tabela~\ref{tab:epocas} apresenta os limites operacionais das quatro coortes e os marcos históricos que as caracterizam.
-
-\begin{table}[H]
-    \centering
-    \caption{Épocas históricas: delimitação operacional das coortes no GitHub.}
-    \label{tab:epocas}
-    \footnotesize
-    \renewcommand{\arraystretch}{1.2}
-    \begin{tabularx}{\linewidth}{|c|c|c|>{\raggedright\arraybackslash}p{0.18\linewidth}|>{\raggedright\arraybackslash}X|}
-        \hline
-        \textbf{Época} & \textbf{Início} & \textbf{Fim} & \textbf{Denominação} & \textbf{Marcos representativos} \\
-        \hline
-        E1 & 01/01/2009 & 31/12/2013 & Colaboração emergente &
-        Consolidação inicial do GitHub e do ecossistema \emph{open source} Java. \\
-        \hline
-        E2 & 01/01/2014 & 31/12/2017 & Estruturação e \emph{frameworks} &
-        Popularização do Spring Boot; difusão de Docker e CI. \\
-        \hline
-        E3 & 01/01/2018 & 31/12/2021 & Maturidade colaborativa &
-        Consolidação de práticas de qualidade e revisão por pares. \\
-        \hline
-        E4 & 01/01/2022 & data da coleta & Era da IA assistida &
-        GitHub Copilot, Claude Code, Cursor, ChatGPT e adoção de IA generativa. \\
-        \hline
-    \end{tabularx}
-    \vspace{4pt}
-    {\footnotesize Fonte: Elaborada pelos autores. Critério de alocação: campo \texttt{createdAt} do repositório no GitHub (limites inclusivos).}
-\end{table}
-
-A concentração de repositórios na coorte E4 (criados a partir de 2022) era esperada dada a aceleração do uso do GitHub no período recente e o recorte temporal da coleta. Esse desequilíbrio será controlado na análise estatística por estratificação e testes não paramétricos, conforme descrito na metodologia.
-
-\subsection{Piloto de identificação de agentes de IA}
-\label{subsec:res-piloto-ia}
-
-O \emph{script} \texttt{detectar\_agentes\_ia.py} foi executado sobre os 50 repositórios mais populares da amostra (por número de estrelas), como experimento piloto para validar a metodologia de dois níveis descrita na Seção~\ref{subsec:identificacao-ia}. A Tabela~\ref{tab:piloto-ia} consolida os agentes identificados e o nível de detecção correspondente.
-
-\begin{table}[H]
-    \centering
-    \caption{Agentes de IA identificados no piloto com os 50 repositórios mais populares.}
-    \label{tab:piloto-ia}
-    \footnotesize
-    \renewcommand{\arraystretch}{1.2}
-    \begin{tabularx}{\linewidth}{|>{\raggedright\arraybackslash}X|c|c|}
-        \hline
-        \textbf{Agente identificado} & \textbf{Repositórios} & \textbf{Nível de detecção} \\
-        \hline
-        Claude Code & 8 & Nível~1 (arquivos de configuração) \\
-        \hline
-        GitHub Copilot & 5 & Nível~1 (arquivos de configuração) \\
-        \hline
-        Codex/OpenAI (\texttt{AGENTS.md}) & 5 & Nível~1 (arquivos de configuração) \\
-        \hline
-        Adoção silenciosa (referência no \texttt{.gitignore}) & 2 & Nível~1 (extensão via \texttt{.gitignore}) \\
-        \hline
-        Outros agentes (\emph{trailer} de commit) & 2 & Nível~2 (commits recentes) \\
-        \hline
-        \textbf{Total com evidência de IA} & \textbf{16} & — \\
-        \hline
-    \end{tabularx}
-    \vspace{4pt}
-    {\footnotesize Fonte: Elaborada pelos autores. Artefato: \texttt{resultado\_deteccao\_ia.csv}. Nota: dois repositórios (\texttt{springdoc/springdoc-openapi} e \texttt{metasfresh/metasfresh}) foram classificados como adotantes silenciosos por referenciarem diretórios de configuração no \texttt{.gitignore} sem incluí-los no repositório.}
-\end{table}
-
-Dos 50 repositórios analisados, 16 (32,0\%) apresentaram evidência verificável de adoção de agentes de IA: 14 detectados no Nível~1 (arquivos de configuração) e 2 no Nível~2 (commits recentes). Essa taxa descreve somente o subconjunto mais popular analisado. O resultado confirma a presença de sinais detectáveis na amostra, mas não estima a precisão do classificador, pois não foi confrontado com uma classificação manual de referência. A coorte de criação, entretanto, não permite afirmar que o código atual de E3 foi produzido sem IA nem que o código de E4 foi produzido com IA.
-
-O piloto fornece candidatos com sinais de adoção para as comparações das métricas previstas no GQM (Tabela~\ref{tab:gqm-objetivos}). O instrumento aplicado mede CBO geral do CK, e não uma variante específica de acoplamento horizontal entre pacotes de domínio. A classificação por evidências permite construir grupos observacionais, mas não determina quais classes foram produzidas por IA. A ampliação descrita adiante utiliza 1.520 candidatos da população filtrada de 38.456, sem afirmar que toda essa população recebeu extração CK.
-
-
-\subsection{Piloto CK dos 50 repositórios com classificação de IA}
-\label{subsec:res-ck-classificados}
-
-Em 5 de outubro de 2026, o instrumento de extração foi aplicado aos 50 repositórios do CSV de classificação fornecido, todos conferidos contra a seleção final. Foram preservados os 16 rótulos positivos e os 34 rótulos sem evidência detectada. Os outros 38.406 selecionados não possuem classificação nesse arquivo e não integram esta comparação. Os resultados brutos, os SHAs analisados, as evidências de construção e os diagnósticos foram armazenados em \texttt{metricas\_ck/runs/20261005\_classificados}.
-
-Dos 50 processados, 22 apresentaram cobertura completa no diagnóstico por arquivo, 27 tiveram cobertura parcial e um, \texttt{apache/camel}, encontrou uma exceção interna do parser JDT. Entre os 22 de cobertura completa, três foram excluídos pelo mínimo de 2.000 LOC ou pela ausência de confirmação técnica de Spring Boot. Assim, a análise principal contém \textbf{19 repositórios}: quatro com evidência de IA e 15 sem evidência detectada. A taxa de retenção foi de 25,0\% no primeiro grupo e de 44,1\% no segundo, evidenciando a possibilidade de viés de seleção introduzido pelas limitações da ferramenta.
-
-A Tabela~\ref{tab:ck-comparativo-ia} apresenta as medianas e os testes de Mann--Whitney bilaterais, com Bonferroni de sete métricas. O tamanho de efeito adota a ordem ``sem evidência menos com evidência'': valores negativos indicam métricas maiores no grupo com evidência.
+O piloto histórico processou os 40 candidatos previamente sorteados, sem substituição. Foram registrados 720 cortes anuais: 373 sem histórico disponível até o corte, 346 com extração CK concluída e um sem código Java. Os 347 snapshots com código ou árvore disponível correspondem a 127 extrações distintas, pois anos sem novo commit e inventários Java idênticos podem reutilizar a extração. Na execução corrigida, 119 snapshots de 12 projetos satisfazem os critérios da comparação principal. A Tabela~\ref{tab:piloto-historico-cobertura} separa candidatos, observações disponíveis e observações elegíveis.
 
 \begin{table}[htbp]
 \centering
-\caption{Comparação principal por evidência de IA, com cobertura completa do CK.}
-\label{tab:ck-comparativo-ia}
+\caption{Cobertura do piloto histórico por coorte de criação.}
+\label{tab:piloto-historico-cobertura}
 \small
 \begin{tabular}{lrrrr}
 \hline
-Métrica & Sem evidência ($n=15$) & Com evidência ($n=4$) & $p_{\mathrm{aj}}$ & $\delta$ \\
+Coorte & Candidatos & Snapshots disponíveis & Elegíveis & Projetos elegíveis \\
 \hline
-CBO & 5,987 & 6,631 & 1,000 & $-0,300$ \\
-RFC & 7,828 & 10,883 & 0,561 & $-0,600$ \\
-WMC & 6,230 & 7,720 & 1,000 & $-0,100$ \\
-LOC/método & 5,249 & 5,685 & 1,000 & $-0,067$ \\
-DIT & 1,259 & 1,244 & 1,000 & 0,000 \\
-NOC & 0,028 & 0,110 & 0,843 & $-0,533$ \\
-LCOM* & 0,240 & 0,288 & 1,000 & $-0,267$ \\
+E1 & 10 & 155 & 77 & 5 \\
+E2 & 10 & 101 & 31 & 3 \\
+E3 & 10 & 75 & 8 & 1 \\
+E4 & 10 & 16 & 3 & 3 \\
+\hline
+Total & 40 & 347 & 119 & 12 \\
 \hline
 \end{tabular}
 \end{table}
 
-Nenhuma das sete métricas rejeitou a hipótese nula após a correção adotada. Esse resultado não demonstra equivalência: o grupo com evidência tem apenas quatro observações e a retenção foi desigual. Na amostra principal restaram nove projetos E2 e dez E3, sem E1 ou E4. Portanto, o Kruskal--Wallis entre quatro épocas, o pós-teste de Dunn e o contraste principal E3/E4 não foram estimados; os arquivos de saída registram insuficiência amostral, sem substituir grupos ausentes por zeros.
+A inspeção dos dez candidatos antigos encontrou, por exemplo, a presença observável de Boot em 2014 no Hawtio, após um snapshot de Spring tradicional de 2013, e em 2017 no BroadleafCommerce, após uma versão tradicional de 2016. No Vogon, Boot aparece em 2014, mas o snapshot de 2013 não confirmou Spring: esse caso é censurado à esquerda para a transição Spring--Boot. São limites de observação anual, não datas exatas de migração.
 
-\paragraph{Sensibilidade exploratória à cobertura.}
-Após observar as omissões da ferramenta, mas antes de examinar as diferenças de métricas entre grupos, acrescentou-se uma análise exploratória com cobertura de arquivos de pelo menos 95\%, mantendo os demais critérios. Esse limiar não integrava o planejamento original e não substitui a análise principal. Foram incluídos 36 projetos: 13 com evidência de IA e 23 sem evidência, distribuídos em E1/E2/E3/E4 como 3/16/15/2.
+As primeiras evidências de IA dos projetos antigos com pares elegíveis apareceram no período parcial de 2026: uma identidade de bot Copilot no histórico de MyBatis/Spring e um arquivo \texttt{AGENTS.md} em Hawtio. O arquivo de instruções não comprova qual ferramenta foi efetivamente utilizada. Esses dois pares são apresentados separadamente dos anos completos; o piloto não forneceu pares antes/depois de IA nos anos completos até 2025. A ausência de vestígios nos demais projetos não demonstra ausência de uso.
 
-Nessa análise, CBO e RFC apresentaram diferenças ajustadas significativas, com valores maiores no grupo com evidência de IA: CBO, $p_{\mathrm{aj}}=0,0263$, $\delta=-0,592$; RFC, $p_{\mathrm{aj}}=0,0171$, $\delta=-0,619$. As demais métricas não foram significativas após correção. As métricas descrevem apenas as entidades emitidas pelo CK, e as omissões podem não ser aleatórias. Além disso, o Kruskal--Wallis de LOC entre épocas foi significativo ($p=0,0358$), reforçando a necessidade dos controles de tamanho exportados nas análises de sensibilidade por LOC, versão e densidade. Nenhuma métrica estrutural teve significância global entre as quatro épocas; por isso Dunn não foi acionado. Nenhum teste E3/E4 foi significativo após Bonferroni, e E4 contém somente duas observações.
+A revisão também identificou o código do próprio Spring Security, cujos módulos de exemplo usam Boot. A classificação inicial foi corrigida para código de framework, excluído da comparação principal. A execução anterior foi preservada, e a nova execução manteve amostra e SHAs: os 720 registros conservaram seus valores CK. A auditoria independente recalculou as sete médias a partir dos arquivos brutos e verificou os cortes temporais de código e evidências, sem divergências. Os 72 testes do instrumento passaram. A revisão dos objetos Git foi assistida por IA e está documentada; não equivale a uma avaliação independente dos autores.
 
-Os achados são, portanto, preliminares e sensíveis à cobertura da extração. Não sustentam atribuir causalmente maior ou menor qualidade à adoção de IA. A confirmação exige ampliar a classificação, revisar os candidatos ambíguos e resolver as limitações de parsing e dos projetos com módulos homônimos mantendo um protocolo de medição comum.
+A reexecução do piloto consumiu aproximadamente 355 segundos de processamento com quatro trabalhadores, reutilizando cerca de 505 MiB de clones e produzindo cerca de 44 MiB de extrações. Esses números descrevem o ambiente e o cache dessa execução, sem estimar o custo de uma coleta inteiramente nova. A ampliação utiliza a lista congelada de 1.616 candidatos e conserva os diagnósticos de falha e inelegibilidade.
 
+\input{Sections/05a_Evolucao_Historica}
 
-\subsection{Ampliação por época e evidência de IA}
-\label{subsec:res-ampliacao-ck}
+\subsection{Papel dos resultados transversais anteriores}
 
-A ampliação de 5 de outubro de 2026 percorreu a lista fixada de 1.520 candidatos. Foram obtidas 1.512 extrações sem omissões no diagnóstico por arquivo, duas com cobertura parcial, duas sem fontes Java analisáveis e quatro falhas: três internas do CK e uma por repositório indisponível. As 156 falhas iniciais de conexão foram repetidas com a mesma configuração, com preservação dos registros anteriores. Na classificação alinhada ao commit medido, 246 candidatos apresentaram evidência de IA, 1.273 não apresentaram os sinais procurados e um permaneceu indeterminado. Os 50 integrantes do piloto estão incluídos e mantiveram seus rótulos.
+O piloto inicial de outubro de 2026 mediu 50 candidatos com classificação disponível: 16 com vestígios e 34 sem evidência detectada. Somente 19 satisfizeram a comparação principal daquela execução, sendo quatro positivos e 15 sem sinais. O piloto ampliado percorreu 1.520 candidatos da seleção anterior e reteve 879, dos quais 187 positivos e 692 sem evidência. Esses números descrevem seleções e instrumentos diferentes da execução histórica.
 
-Após os critérios técnicos, a análise principal reúne \textbf{879 repositórios}, sendo \textbf{187 com evidência de IA e 692 sem evidência detectada}. A Tabela~\ref{tab:ck-ampliado-celulas} apresenta os cortes de criação. Na contagem mutuamente exclusiva dos motivos principais, foram excluídos 587 candidatos pelo tamanho, 46 pela ausência de confirmação de Spring Boot, quatro por erro, dois por ausência de Java e dois por cobertura incompleta. A retenção foi de 76,0\% entre os positivos e 54,4\% entre os negativos para os sinais procurados, indicando seleção desigual mesmo com a maior cobertura da ferramenta.
-
-\begin{table}[htbp]
-\centering
-\caption{Candidatos processados e repositórios elegíveis por época e evidência de IA.}
-\label{tab:ck-ampliado-celulas}
-\small
-\begin{tabular}{lrrrr}
-\hline
-Época & Processados & Com evidência & Sem evidência & Elegíveis \\
-\hline
-E1 (2009--2013) & 20 & 8 & 8 & 16 \\
-E2 (2014--2017) & 500 & 41 & 187 & 228 \\
-E3 (2018--2021) & 500 & 48 & 247 & 295 \\
-E4 (2022--coleta) & 500 & 90 & 250 & 340 \\
-\hline
-Total & 1.520 & 187 & 692 & 879 \\
-\hline
-\end{tabular}
-\end{table}
-
-Na comparação geral por evidência, RFC, WMC e LOC/método são maiores no grupo com sinais de IA (Tabela~\ref{tab:ck-ampliado-geral}). CBO, DIT, NOC e LCOM* não apresentam diferença após Bonferroni de sete métricas; a não rejeição não demonstra equivalência. Os projetos com evidência também são maiores: mediana de 17.445 LOC, contra 7.434 no outro grupo.
-
-\begin{table}[htbp]
-\centering
-\caption{Medianas e Mann--Whitney da amostra ampliada; $\delta$ na ordem sem evidência menos com evidência.}
-\label{tab:ck-ampliado-geral}
-\small
-\begin{tabular}{lrrrr}
-\hline
-Métrica & Sem ($n=692$) & Com ($n=187$) & $p_{\mathrm{aj},7}$ & $\delta$ \\
-\hline
-CBO & 5,825 & 5,992 & 0,7359 & -0,077 \\
-RFC & 7,697 & 9,849 & $4,75\times 10^{-13}$ & -0,357 \\
-WMC & 4,964 & 6,185 & $3,00\times 10^{-7}$ & -0,261 \\
-LOC/método & 5,712 & 6,635 & $4,94\times 10^{-8}$ & -0,276 \\
-DIT & 1,202 & 1,188 & 0,9278 & 0,072 \\
-NOC & 0,042 & 0,041 & 1,0000 & 0,003 \\
-LCOM* & 0,217 & 0,230 & 0,5432 & -0,084 \\
-\hline
-\end{tabular}
-\end{table}
-
-\paragraph{Comparações dentro de cada época.}
-Sob a correção conjunta de 28 testes, E3 apresenta RFC maior com evidência de IA ($p_{\mathrm{aj},28}=0,00785$, $\delta=-0,331$). Em E4, o grupo com evidência apresenta RFC maior ($p_{\mathrm{aj},28}=2,55\times10^{-6}$, $\delta=-0,380$), WMC maior ($1,28\times10^{-5}$, $\delta=-0,358$), LOC/método maior ($0,000121$, $\delta=-0,327$) e DIT menor ($0,0243$, $\delta=0,237$). E1 e E2 não rejeitam sob essa correção. Em E2, RFC é significativo apenas na família local de sete métricas ($p_{\mathrm{aj},7}=0,0397$), mas não na conjunta ($0,1589$). A Figura~\ref{fig:ck-ampliado-rfc} mostra a distribuição de RFC nas oito células.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=\linewidth]{../Instrumentos/Codigos/Artefatos/metricas_ck/runs/20261005_epocas_ampliado/figures/F12_avg_rfc_por_epoca.png}
-\caption{RFC médio por repositório, por época e evidência de IA. Os boxplots omitem a exibição dos pontos extremos; os testes mantêm todos os valores elegíveis. Os p-valores exibidos têm Bonferroni de 28 testes.}
-\label{fig:ck-ampliado-rfc}
-\end{figure}
-
-\paragraph{Pareamento e sensibilidade ao tamanho.}
-A auditoria de 17 catálogos Gradle corrigiu uma versão incorreta de Boot e identificou oito antes desconhecidas. Com os metadados conferidos, formaram-se 132 pares: 2 em E1, 23 em E2, 33 em E3 e 74 em E4. No conjunto pareado, Wilcoxon com Bonferroni de sete mantém RFC ($p_{\mathrm{aj}}=0,0151$; efeito rank-biserial $=0,308$; mediana da diferença pareada $=1,571$) e LOC/método ($p_{\mathrm{aj}}=0,0288$; efeito $=0,288$; diferença $=0,813$), maiores com evidência. Aqui o sinal do efeito segue com evidência menos controle. WMC não permanece significativa ($p_{\mathrm{aj}}=0,1848$).
-
-Nos pareamentos separados por época, somente LCOM* em E2 apresenta diferença ajustada ($p_{\mathrm{aj},7}=0,0498$, 23 pares), maior com evidência; trata-se de resultado exploratório próximo do limiar e sem correção conjunta de 28. Não há diferenças ajustadas em E1, E3 ou E4 nos pares. Esses estratos são menores que a amostra principal, e o pareamento não controla domínio, composição da equipe ou outros confundidores não observados.
-
-\paragraph{Contrastes temporais.}
-O Kruskal--Wallis de LOC entre épocas é significativo ($p=0,0000767$). Para as métricas estruturais, as seis métricas exceto CBO apresentam significância global após correção de sete; os pares de Dunn têm correção de 42. E3/E4 diferem em RFC ($p_{\mathrm{aj},7}=0,0000444$) e LOC/método ($0,000120$), maiores em E4. Essas duas diferenças também ocorrem entre os projetos sem evidência detectada ($0,0143$ e $0,0252$). Assim, o contraste temporal não pode ser interpretado como efeito específico da adoção de IA.
-
-\paragraph{Robustez e interpretação.}
-A sensibilidade com cobertura de pelo menos 95\% inclui 880 repositórios e mantém os mesmos contrastes significativos por evidência no conjunto e nas épocas. A exclusão dos 81 candidatos sinalizados para revisão educacional, dos 226 repositórios com nomes de classes duplicados, dos 31 positivos sustentados só por gitignore ou dos cinco sustentados somente pelo grupo conservador de revisão/assistência mantém os sinais gerais em RFC, WMC e LOC/método. A análise de produção acrescenta uma diferença de LCOM*, indicando dependência do recorte para as conclusões sobre coesão. As sensibilidades por LOC, versão e época estão integralmente exportadas; suas correções são por família exploratória, não uma correção única de toda a exploração.
-
-A ampliação oferece evidências associativas mais informativas que o piloto: RFC maior e métodos mais longos permanecem no controle geral por época, versão e tamanho. Não permite concluir que a IA causou aumento de complexidade, piora de qualidade ou melhora de produtividade. A classificação mede sinais de adoção no HEAD atual; o desenho não acompanha mudanças antes e depois do uso de IA, e a seleção favorece popularidade e atividade recente. O instrumento também mudou em relação ao piloto, de modo que as diferenças entre execuções não decorrem exclusivamente do aumento amostral.
-
-O pacote \texttt{20261005\_epocas\_ampliado} contém oito subconjuntos, testes, efeitos, 18 figuras em PNG/SVG e dados brutos por repositório. A auditoria validou os identificadores, o alinhamento de 1.519 classificações ao SHA medido, as médias e denominadores dos 879 elegíveis e as restrições dos 132 pares. Os instrumentos locais passaram em 37 testes. As exceções e as correções de metadados permanecem rastreáveis.
+A ampliação transversal descreveu diferenças entre projetos com e sem sinais de IA, com grupos de tamanhos distintos e seleção favorecendo popularidade e atividade recente. O código medido era atual, inclusive para projetos criados em E1; esses resultados não demonstram o efeito de IA nem a evolução do código desde 2009. O detalhamento original permanece nos arquivos de reprodução e em \texttt{Artigo/Arquivo}. As sínteses históricas deste artigo utilizam médias aritméticas.

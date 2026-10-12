@@ -1,898 +1,765 @@
-<!doctype html><html lang="pt-BR"><meta charset="utf-8"><title>CK ampliado — épocas e evidência de IA</title>
-<style>body{font:16px system-ui,sans-serif;color:#243746;max-width:1220px;margin:40px auto;padding:0 28px}h1,h2{color:#154c65}h1{font-size:32px}p,li{line-height:1.65}.notice{padding:20px 24px;background:#eaf4f6;border-left:5px solid #28798d}.limits{background:#fff2dc;padding:20px 24px}.scroll{overflow-x:auto}table{border-collapse:collapse;font-size:13px;margin:22px 0;width:100%}th,td{padding:8px;border-bottom:1px solid #dce3e8;text-align:left}th{background:#edf3f6}img{max-width:100%;height:auto}figure{margin:34px 0}figcaption{font-size:12px;color:#657987}code{background:#f0f1f2;padding:2px 4px}a{color:#176482}</style>
-<h1>Épocas de criação × evidência de IA</h1><p>Ampliação da análise CK • 2026-10-05T18:56:19.664889+00:00</p>
-<div class="notice"><strong>Concluída: 1,520 de 1.520 candidatos processados.</strong><br>
-879 repositórios na análise principal. Com evidência: 187; sem evidência detectada: 692.<br>
-População de origem: 38.456 repositórios já filtrados. E1 contém somente 20 candidatos na população e foi integralmente percorrida; as outras épocas receberam 500 candidatos cada.</div>
-<h2>Leitura dos resultados</h2><p><strong>5 contraste(s) época × métrica apresentaram diferença após a correção de 28 testes.</strong> Na comparação geral por IA, diferenças ajustadas em: RFC, WMC, LOC/método. No pareamento por época, versão conhecida e tamanho, diferenças ajustadas em: RFC, LOC/método.</p>
-<p>Diferença estatística descreve associação entre grupos neste recorte. Não prova que a IA causou a diferença, nem que maior ou menor métrica representa, isoladamente, melhor qualidade. Não encontrar significância também não demonstra equivalência. A conclusão deve considerar os estratos e o pareamento, e não somente o agrupamento geral.</p>
-<h2>Amostra nas oito células</h2><table border="1" class="dataframe">
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Métricas CK por era e evidência de IA</title>
+<style>
+body{font:16px system-ui,sans-serif;color:#243746;max-width:1220px;margin:40px auto;padding:0 28px}
+h1,h2,h3{color:#154c65}h1{font-size:32px}h2{margin-top:40px}p,li{line-height:1.65}
+.notice{padding:20px 24px;background:#eaf4f6;border-left:5px solid #28798d}
+.limits{background:#fff5e4;padding:18px 24px;margin:24px 0}
+.scroll{overflow-x:auto}table{border-collapse:collapse;font-size:14px;margin:22px 0;width:100%}
+th,td{padding:12px 10px;border-bottom:1px solid #dce3e8;text-align:left;vertical-align:top}
+th{background:#edf3f6}tbody tr:nth-child(even){background:#f8fafb}
+#amostra tbody tr:last-child{font-weight:bold;background:#eaf4f6}
+img{max-width:100%;height:auto}figure{margin:34px 0}figcaption,.meta{font-size:13px;color:#586d78}
+code{background:#f0f1f2;padding:2px 4px}a{color:#176482}nav{display:flex;gap:10px 20px;flex-wrap:wrap;margin:24px 0}
+@media(max-width:650px){body{padding:0 16px;margin:24px auto}h1{font-size:27px}table{min-width:580px}}
+@media print{body{font-size:11pt;margin:0;padding:0}nav{display:none}.scroll{overflow:visible}table{font-size:9pt;min-width:0}tr,figure{break-inside:avoid}h2,h3{break-after:avoid}thead{display:table-header-group}}
+</style></head><body>
+<h1>Métricas CK por era e evidência de IA</h1>
+<p class="meta">Execução da análise: 2026-10-05 · Apresentação atualizada: 2026-10-08</p>
+<div class="notice"><strong>Concluída: 1,520 candidatos processados em 4 eras.</strong><br>
+879 repositórios na comparação principal: 692 sem evidência detectada e 187 com evidência de IA.</div>
+<nav><a href="#amostra">Totais por era</a><a href="#metricas">O que medimos</a><a href="#geral">Comparação geral</a><a href="#por-era">IA em cada era</a><a href="#eras">Valores por era</a><a href="#graficos">Gráficos</a></nav>
+<section id="amostra"><h2>Repositórios analisados por era</h2>
+<div class="scroll"><table class="dataframe">
   <thead>
     <tr style="text-align: right;">
-      <th>Época</th>
-      <th>Grupo</th>
-      <th>Classificados</th>
-      <th>Elegíveis</th>
+      <th>Era</th>
+      <th>Período de criação</th>
+      <th>Candidatos processados</th>
+      <th>n_a · Sem evidência</th>
+      <th>n_b · Com evidência</th>
+      <th>Total elegível da era</th>
+      <th>Fora da comparação</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>E1</td>
-      <td>sem_evidencia_detectada</td>
-      <td>11</td>
+      <td>2009–2013</td>
+      <td>20</td>
       <td>8</td>
-    </tr>
-    <tr>
-      <td>E1</td>
-      <td>com_evidencia</td>
-      <td>9</td>
       <td>8</td>
+      <td>16</td>
+      <td>4</td>
     </tr>
     <tr>
       <td>E2</td>
-      <td>sem_evidencia_detectada</td>
-      <td>424</td>
+      <td>2014–2017</td>
+      <td>500</td>
       <td>187</td>
-    </tr>
-    <tr>
-      <td>E2</td>
-      <td>com_evidencia</td>
-      <td>75</td>
       <td>41</td>
+      <td>228</td>
+      <td>272</td>
     </tr>
     <tr>
       <td>E3</td>
-      <td>sem_evidencia_detectada</td>
-      <td>442</td>
+      <td>2018–2021</td>
+      <td>500</td>
       <td>247</td>
-    </tr>
-    <tr>
-      <td>E3</td>
-      <td>com_evidencia</td>
-      <td>58</td>
       <td>48</td>
+      <td>295</td>
+      <td>205</td>
     </tr>
     <tr>
       <td>E4</td>
-      <td>sem_evidencia_detectada</td>
-      <td>396</td>
+      <td>2022–coleta original</td>
+      <td>500</td>
       <td>250</td>
-    </tr>
-    <tr>
-      <td>E4</td>
-      <td>com_evidencia</td>
-      <td>104</td>
       <td>90</td>
-    </tr>
-  </tbody>
-</table>
-<p>E1: 2009–2013; E2: 2014–2017; E3: 2018–2021; E4: 2022–coleta original. As épocas descrevem criação, não autoria histórica do código atual. "Sem evidência detectada" é ausência dos sinais procurados, não prova de desenvolvimento sem IA.</p>
-<p>Seleção: primeiros 500 por época na ordem original de estrelas, push e ID; todos os 20 de E1. Não é uma amostra probabilística. O tamanho das células depende das evidências e dos critérios técnicos; não foram removidos negativos para tornar os grupos artificialmente iguais.</p>
-<h2>Tamanho e valores agregados</h2><p>Medianas entre repositórios; cada repositório contribui uma vez. A coluna LOC é código físico contado uma vez por arquivo.</p><table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th>ia_status</th>
-      <th>total_loc</th>
-      <th>classes</th>
-      <th>avg_cbo</th>
-      <th>avg_rfc</th>
-      <th>avg_wmc</th>
-      <th>avg_loc_method</th>
-      <th>avg_lcom</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>com_evidencia</td>
-      <td>1.744e+04</td>
-      <td>341</td>
-      <td>5.992</td>
-      <td>9.849</td>
-      <td>6.185</td>
-      <td>6.635</td>
-      <td>0.2298</td>
+      <td>340</td>
+      <td>160</td>
     </tr>
     <tr>
-      <td>sem_evidencia_detectada</td>
-      <td>7434</td>
-      <td>199.5</td>
-      <td>5.825</td>
-      <td>7.697</td>
-      <td>4.964</td>
-      <td>5.712</td>
-      <td>0.2173</td>
-    </tr>
-  </tbody>
-</table>
-<h2>IA dentro de cada época</h2><p>Mann–Whitney bilateral. <code>p_adjusted</code>: Bonferroni de sete métricas dentro da época; <code>p_adjusted_across_4_epochs</code>: Bonferroni de 28 testes no conjunto das quatro épocas. Delta de Cliff segue "sem evidência menos com evidência": negativo indica valores maiores no grupo com evidência. N menor que dois em qualquer grupo é insuficiente.</p>
-<div class="scroll"><table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th>family</th>
-      <th>metric</th>
-      <th>n_a</th>
-      <th>n_b</th>
-      <th>p_adjusted</th>
-      <th>p_adjusted_across_4_epochs</th>
-      <th>cliffs_delta_a_minus_b</th>
-      <th>status</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>IA_within_E1</td>
-      <td>avg_cbo</td>
-      <td>8</td>
-      <td>8</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0.0625</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>IA_within_E1</td>
-      <td>avg_rfc</td>
-      <td>8</td>
-      <td>8</td>
-      <td>1</td>
-      <td>1</td>
-      <td>-0.2188</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>IA_within_E1</td>
-      <td>avg_wmc</td>
-      <td>8</td>
-      <td>8</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0.09375</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>IA_within_E1</td>
-      <td>avg_loc_method</td>
-      <td>8</td>
-      <td>8</td>
-      <td>0.7249</td>
-      <td>1</td>
-      <td>-0.5</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>IA_within_E1</td>
-      <td>avg_dit</td>
-      <td>8</td>
-      <td>8</td>
-      <td>1</td>
-      <td>1</td>
-      <td>-0.2812</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>IA_within_E1</td>
-      <td>avg_noc</td>
-      <td>8</td>
-      <td>8</td>
-      <td>1</td>
-      <td>1</td>
-      <td>-0.2969</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>IA_within_E1</td>
-      <td>avg_lcom</td>
-      <td>8</td>
-      <td>8</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0.375</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>IA_within_E2</td>
-      <td>avg_cbo</td>
+      <td>Total · 4 eras</td>
+      <td>Todos os períodos</td>
+      <td>1520</td>
+      <td>692</td>
       <td>187</td>
-      <td>41</td>
-      <td>0.3225</td>
-      <td>1</td>
-      <td>-0.1992</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>IA_within_E2</td>
-      <td>avg_rfc</td>
-      <td>187</td>
-      <td>41</td>
-      <td>0.03973</td>
-      <td>0.1589</td>
-      <td>-0.2761</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>IA_within_E2</td>
-      <td>avg_wmc</td>
-      <td>187</td>
-      <td>41</td>
-      <td>0.07851</td>
-      <td>0.314</td>
-      <td>-0.2532</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>IA_within_E2</td>
-      <td>avg_loc_method</td>
-      <td>187</td>
-      <td>41</td>
-      <td>0.8387</td>
-      <td>1</td>
-      <td>-0.1553</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>IA_within_E2</td>
-      <td>avg_dit</td>
-      <td>187</td>
-      <td>41</td>
-      <td>0.5944</td>
-      <td>1</td>
-      <td>-0.172</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>IA_within_E2</td>
-      <td>avg_noc</td>
-      <td>187</td>
-      <td>41</td>
-      <td>1</td>
-      <td>1</td>
-      <td>-0.1195</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>IA_within_E2</td>
-      <td>avg_lcom</td>
-      <td>187</td>
-      <td>41</td>
-      <td>0.1541</td>
-      <td>0.6164</td>
-      <td>-0.2286</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>IA_within_E3</td>
-      <td>avg_cbo</td>
-      <td>247</td>
-      <td>48</td>
-      <td>1</td>
-      <td>1</td>
-      <td>-0.0749</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>IA_within_E3</td>
-      <td>avg_rfc</td>
-      <td>247</td>
-      <td>48</td>
-      <td>0.001963</td>
-      <td>0.007854</td>
-      <td>-0.3315</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>IA_within_E3</td>
-      <td>avg_wmc</td>
-      <td>247</td>
-      <td>48</td>
-      <td>0.7</td>
-      <td>1</td>
-      <td>-0.1501</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>IA_within_E3</td>
-      <td>avg_loc_method</td>
-      <td>247</td>
-      <td>48</td>
-      <td>0.218</td>
-      <td>0.8721</td>
-      <td>-0.1967</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>IA_within_E3</td>
-      <td>avg_dit</td>
-      <td>247</td>
-      <td>48</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0.01569</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>IA_within_E3</td>
-      <td>avg_noc</td>
-      <td>247</td>
-      <td>48</td>
-      <td>1</td>
-      <td>1</td>
-      <td>-0.1087</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>IA_within_E3</td>
-      <td>avg_lcom</td>
-      <td>247</td>
-      <td>48</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0.006579</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>IA_within_E4</td>
-      <td>avg_cbo</td>
-      <td>250</td>
-      <td>90</td>
-      <td>1</td>
-      <td>1</td>
-      <td>-0.009867</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>IA_within_E4</td>
-      <td>avg_rfc</td>
-      <td>250</td>
-      <td>90</td>
-      <td>6.369e-07</td>
-      <td>2.548e-06</td>
-      <td>-0.3799</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>IA_within_E4</td>
-      <td>avg_wmc</td>
-      <td>250</td>
-      <td>90</td>
-      <td>3.207e-06</td>
-      <td>1.283e-05</td>
-      <td>-0.3585</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>IA_within_E4</td>
-      <td>avg_loc_method</td>
-      <td>250</td>
-      <td>90</td>
-      <td>3.024e-05</td>
-      <td>0.000121</td>
-      <td>-0.3267</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>IA_within_E4</td>
-      <td>avg_dit</td>
-      <td>250</td>
-      <td>90</td>
-      <td>0.006071</td>
-      <td>0.02428</td>
-      <td>0.2368</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>IA_within_E4</td>
-      <td>avg_noc</td>
-      <td>250</td>
-      <td>90</td>
-      <td>0.3143</td>
-      <td>1</td>
-      <td>0.142</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>IA_within_E4</td>
-      <td>avg_lcom</td>
-      <td>250</td>
-      <td>90</td>
-      <td>0.7086</td>
-      <td>1</td>
-      <td>-0.1165</td>
-      <td>ok</td>
+      <td>879</td>
+      <td>641</td>
     </tr>
   </tbody>
 </table></div>
-<h2>E3 versus E4 e quatro épocas</h2><p>O contraste temporal não substitui a identificação de IA. Resultados gerais e separados por evidência, com Bonferroni de sete métricas por família:</p>
-<table border="1" class="dataframe">
+<p><strong>n_a</strong> é a quantidade de repositórios elegíveis sem evidência detectada de IA. <strong>n_b</strong> é a quantidade de elegíveis com evidência de IA. O total elegível de cada era é <strong>n_a + n_b</strong>. A linha final soma as quatro eras.</p>
+<p>“Candidatos processados” inclui todos os repositórios percorridos. “Fora da comparação” reúne os que não atenderam aos critérios técnicos ou tiveram falhas. Um candidato de E2 ficou com classificação indeterminada e está nesse total de exclusões.</p>
+<p>As eras representam a <strong>data de criação do repositório</strong>. O código medido é a versão recuperada na coleta de outubro de 2026. Um repositório antigo pode conter alterações recentes e uso recente de IA.</p></section>
+<section id="metricas"><h2>O que estamos medindo</h2>
+<div class="scroll"><table class="dataframe">
   <thead>
     <tr style="text-align: right;">
-      <th>family</th>
-      <th>metric</th>
+      <th>Métrica</th>
+      <th>O que mede</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CBO</td>
+      <td>Acoplamento: quantidade de outras classes relacionadas à classe, pelas regras do CK.</td>
+    </tr>
+    <tr>
+      <td>RFC</td>
+      <td>Quantidade de chamadas distintas de métodos identificadas na classe pela versão CK utilizada.</td>
+    </tr>
+    <tr>
+      <td>WMC</td>
+      <td>Complexidade acumulada dos métodos de uma classe, considerando decisões e caminhos lógicos.</td>
+    </tr>
+    <tr>
+      <td>LOC/método</td>
+      <td>Tamanho médio dos métodos, em linhas contadas pelo CK.</td>
+    </tr>
+    <tr>
+      <td>DIT</td>
+      <td>Profundidade da hierarquia de herança das classes.</td>
+    </tr>
+    <tr>
+      <td>NOC</td>
+      <td>Quantidade de subclasses diretas de uma classe.</td>
+    </tr>
+    <tr>
+      <td>LCOM*</td>
+      <td>Falta de coesão na variante normalizada do CK, baseada no compartilhamento de atributos pelos métodos.</td>
+    </tr>
+  </tbody>
+</table></div>
+<p>Calculamos primeiro as médias por repositório. As tabelas mostram a <strong>mediana desses valores em cada grupo</strong>: o valor central após ordenar os repositórios. Cada projeto contribui uma vez, independentemente da quantidade de classes. Para LOC/método, a média é calculada sobre os métodos; para as demais métricas, sobre as classes com valores válidos.</p>
+<p>Nas comparações por IA, <strong>A = sem evidência detectada</strong> e <strong>B = com evidência</strong>. As contagens <code>n_a</code> e <code>n_b</code> informam quantos repositórios têm valores válidos para cada métrica. Os valores são exibidos com três casas decimais.</p></section>
+<section id="geral"><h2>Métricas CK: comparação geral</h2>
+<div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Métrica CK</th>
       <th>n_a</th>
       <th>n_b</th>
-      <th>p_adjusted</th>
-      <th>cliffs_delta_a_minus_b</th>
-      <th>status</th>
+      <th>Mediana A · Sem evidência</th>
+      <th>Mediana B · Com evidência</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>E3_vs_E4_overall</td>
-      <td>avg_cbo</td>
-      <td>295</td>
-      <td>340</td>
-      <td>0.4601</td>
-      <td>-0.08462</td>
-      <td>ok</td>
+      <td>CBO</td>
+      <td>692</td>
+      <td>187</td>
+      <td>5,825</td>
+      <td>5,992</td>
     </tr>
     <tr>
-      <td>E3_vs_E4_overall</td>
-      <td>avg_rfc</td>
-      <td>295</td>
-      <td>340</td>
-      <td>4.445e-05</td>
-      <td>-0.2076</td>
-      <td>ok</td>
+      <td>RFC</td>
+      <td>692</td>
+      <td>187</td>
+      <td>7,697</td>
+      <td>9,849</td>
     </tr>
     <tr>
-      <td>E3_vs_E4_overall</td>
-      <td>avg_wmc</td>
-      <td>295</td>
-      <td>340</td>
-      <td>1</td>
-      <td>-9.97e-05</td>
-      <td>ok</td>
+      <td>WMC</td>
+      <td>692</td>
+      <td>187</td>
+      <td>4,964</td>
+      <td>6,185</td>
     </tr>
     <tr>
-      <td>E3_vs_E4_overall</td>
-      <td>avg_loc_method</td>
-      <td>295</td>
-      <td>340</td>
-      <td>0.0001204</td>
-      <td>-0.1976</td>
-      <td>ok</td>
+      <td>LOC/método</td>
+      <td>692</td>
+      <td>187</td>
+      <td>5,712</td>
+      <td>6,635</td>
     </tr>
     <tr>
-      <td>E3_vs_E4_overall</td>
-      <td>avg_dit</td>
-      <td>295</td>
-      <td>340</td>
-      <td>0.4033</td>
-      <td>0.0873</td>
-      <td>ok</td>
+      <td>DIT</td>
+      <td>692</td>
+      <td>187</td>
+      <td>1,202</td>
+      <td>1,188</td>
     </tr>
     <tr>
-      <td>E3_vs_E4_overall</td>
-      <td>avg_noc</td>
-      <td>295</td>
-      <td>340</td>
-      <td>1</td>
-      <td>0.04078</td>
-      <td>ok</td>
+      <td>NOC</td>
+      <td>692</td>
+      <td>187</td>
+      <td>0,042</td>
+      <td>0,041</td>
     </tr>
     <tr>
-      <td>E3_vs_E4_overall</td>
-      <td>avg_lcom</td>
-      <td>295</td>
-      <td>340</td>
-      <td>0.1279</td>
-      <td>0.1085</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>E3_vs_E4_sem_evidencia_detectada</td>
-      <td>avg_cbo</td>
-      <td>247</td>
-      <td>250</td>
-      <td>0.5291</td>
-      <td>-0.09215</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>E3_vs_E4_sem_evidencia_detectada</td>
-      <td>avg_rfc</td>
-      <td>247</td>
-      <td>250</td>
-      <td>0.01434</td>
-      <td>-0.1599</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>E3_vs_E4_sem_evidencia_detectada</td>
-      <td>avg_wmc</td>
-      <td>247</td>
-      <td>250</td>
-      <td>1</td>
-      <td>0.07372</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>E3_vs_E4_sem_evidencia_detectada</td>
-      <td>avg_loc_method</td>
-      <td>247</td>
-      <td>250</td>
-      <td>0.02524</td>
-      <td>-0.1509</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>E3_vs_E4_sem_evidencia_detectada</td>
-      <td>avg_dit</td>
-      <td>247</td>
-      <td>250</td>
-      <td>1</td>
-      <td>0.02682</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>E3_vs_E4_sem_evidencia_detectada</td>
-      <td>avg_noc</td>
-      <td>247</td>
-      <td>250</td>
-      <td>1</td>
-      <td>-0.01679</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>E3_vs_E4_sem_evidencia_detectada</td>
-      <td>avg_lcom</td>
-      <td>247</td>
-      <td>250</td>
-      <td>0.06073</td>
-      <td>0.1361</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>E3_vs_E4_com_evidencia</td>
-      <td>avg_cbo</td>
-      <td>48</td>
-      <td>90</td>
-      <td>1</td>
-      <td>-0.0338</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>E3_vs_E4_com_evidencia</td>
-      <td>avg_rfc</td>
-      <td>48</td>
-      <td>90</td>
-      <td>0.1537</td>
-      <td>-0.2375</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>E3_vs_E4_com_evidencia</td>
-      <td>avg_wmc</td>
-      <td>48</td>
-      <td>90</td>
-      <td>0.4701</td>
-      <td>-0.1898</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>E3_vs_E4_com_evidencia</td>
-      <td>avg_loc_method</td>
-      <td>48</td>
-      <td>90</td>
-      <td>0.02475</td>
-      <td>-0.3023</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>E3_vs_E4_com_evidencia</td>
-      <td>avg_dit</td>
-      <td>48</td>
-      <td>90</td>
-      <td>0.1294</td>
-      <td>0.2442</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>E3_vs_E4_com_evidencia</td>
-      <td>avg_noc</td>
-      <td>48</td>
-      <td>90</td>
-      <td>0.1583</td>
-      <td>0.2356</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>E3_vs_E4_com_evidencia</td>
-      <td>avg_lcom</td>
-      <td>48</td>
-      <td>90</td>
-      <td>1</td>
-      <td>0.03889</td>
-      <td>ok</td>
+      <td>LCOM* (Henderson–Sellers)</td>
+      <td>692</td>
+      <td>187</td>
+      <td>0,217</td>
+      <td>0,230</td>
     </tr>
   </tbody>
-</table>
-<p>Kruskal–Wallis e Dunn são calculados no conjunto e em cada grupo IA, com as quatro épocas presentes e pelo menos dois repositórios por época. Dunn só é acionado após global bruto &lt;0,05, corrigido por 42 comparações por família.</p>
-<table border="1" class="dataframe">
+</table></div>
+<p>Compare os valores de cada métrica entre as duas colunas. Por exemplo, a mediana de RFC é 7,697 no grupo sem evidência e 9,849 no grupo com evidência. Esses números descrevem os projetos desta amostra.</p>
+<p>Valores maiores ou menores não representam, isoladamente, uma nota de qualidade. A interpretação depende do indicador, do tamanho e das características dos projetos.</p></section>
+<section id="por-era"><h2>Métricas CK: com e sem evidência em cada era</h2>
+<p>Em cada tabela, A é o grupo sem evidência detectada e B é o grupo com evidência. As duas colunas de mediana mostram o valor medido da mesma métrica nesses grupos.</p>
+<h3>E1 · 2009–2013</h3><div class="scroll"><table class="dataframe">
   <thead>
     <tr style="text-align: right;">
-      <th>family</th>
-      <th>metric</th>
-      <th>h</th>
-      <th>p_raw</th>
-      <th>p_adjusted_7</th>
-      <th>status</th>
+      <th>Métrica CK</th>
+      <th>n_a</th>
+      <th>n_b</th>
+      <th>Mediana A · Sem evidência</th>
+      <th>Mediana B · Com evidência</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>all</td>
-      <td>avg_cbo</td>
-      <td>6.664</td>
-      <td>0.0834</td>
-      <td>0.5838</td>
-      <td>ok</td>
+      <td>CBO</td>
+      <td>8</td>
+      <td>8</td>
+      <td>5,907</td>
+      <td>5,548</td>
     </tr>
     <tr>
-      <td>all</td>
-      <td>avg_rfc</td>
-      <td>31.7</td>
-      <td>6.056e-07</td>
-      <td>4.239e-06</td>
-      <td>ok</td>
+      <td>RFC</td>
+      <td>8</td>
+      <td>8</td>
+      <td>8,903</td>
+      <td>11,385</td>
     </tr>
     <tr>
-      <td>all</td>
-      <td>avg_wmc</td>
-      <td>19.47</td>
-      <td>0.0002187</td>
-      <td>0.001531</td>
-      <td>ok</td>
+      <td>WMC</td>
+      <td>8</td>
+      <td>8</td>
+      <td>7,234</td>
+      <td>7,556</td>
     </tr>
     <tr>
-      <td>all</td>
-      <td>avg_loc_method</td>
-      <td>21.48</td>
-      <td>8.355e-05</td>
-      <td>0.0005849</td>
-      <td>ok</td>
+      <td>LOC/método</td>
+      <td>8</td>
+      <td>8</td>
+      <td>5,715</td>
+      <td>7,167</td>
     </tr>
     <tr>
-      <td>all</td>
-      <td>avg_dit</td>
-      <td>27.87</td>
-      <td>3.86e-06</td>
-      <td>2.702e-05</td>
-      <td>ok</td>
+      <td>DIT</td>
+      <td>8</td>
+      <td>8</td>
+      <td>1,239</td>
+      <td>1,519</td>
     </tr>
     <tr>
-      <td>all</td>
-      <td>avg_noc</td>
-      <td>19.35</td>
-      <td>0.0002311</td>
-      <td>0.001618</td>
-      <td>ok</td>
+      <td>NOC</td>
+      <td>8</td>
+      <td>8</td>
+      <td>0,060</td>
+      <td>0,130</td>
     </tr>
     <tr>
-      <td>all</td>
-      <td>avg_lcom</td>
-      <td>28.57</td>
-      <td>2.754e-06</td>
-      <td>1.928e-05</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>all</td>
-      <td>total_loc</td>
-      <td>21.66</td>
-      <td>7.669e-05</td>
-      <td>—</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>sem_evidencia_detectada</td>
-      <td>avg_cbo</td>
-      <td>4.436</td>
-      <td>0.218</td>
-      <td>1</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>sem_evidencia_detectada</td>
-      <td>avg_rfc</td>
-      <td>20.11</td>
-      <td>0.0001607</td>
-      <td>0.001125</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>sem_evidencia_detectada</td>
-      <td>avg_wmc</td>
-      <td>20.63</td>
-      <td>0.0001258</td>
-      <td>0.0008805</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>sem_evidencia_detectada</td>
-      <td>avg_loc_method</td>
-      <td>8.555</td>
-      <td>0.03583</td>
-      <td>0.2508</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>sem_evidencia_detectada</td>
-      <td>avg_dit</td>
-      <td>8.437</td>
-      <td>0.03779</td>
-      <td>0.2645</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>sem_evidencia_detectada</td>
-      <td>avg_noc</td>
-      <td>8.299</td>
-      <td>0.04022</td>
-      <td>0.2815</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>sem_evidencia_detectada</td>
-      <td>avg_lcom</td>
-      <td>21.81</td>
-      <td>7.13e-05</td>
-      <td>0.0004991</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>sem_evidencia_detectada</td>
-      <td>total_loc</td>
-      <td>9.583</td>
-      <td>0.02246</td>
-      <td>—</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>com_evidencia</td>
-      <td>avg_cbo</td>
-      <td>4.754</td>
-      <td>0.1907</td>
-      <td>1</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>com_evidencia</td>
-      <td>avg_rfc</td>
-      <td>5.877</td>
-      <td>0.1178</td>
-      <td>0.8244</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>com_evidencia</td>
-      <td>avg_wmc</td>
-      <td>5.565</td>
-      <td>0.1348</td>
-      <td>0.9438</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>com_evidencia</td>
-      <td>avg_loc_method</td>
-      <td>13.91</td>
-      <td>0.003037</td>
-      <td>0.02126</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>com_evidencia</td>
-      <td>avg_dit</td>
-      <td>27.84</td>
-      <td>3.929e-06</td>
-      <td>2.75e-05</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>com_evidencia</td>
-      <td>avg_noc</td>
-      <td>18.62</td>
-      <td>0.0003281</td>
-      <td>0.002297</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>com_evidencia</td>
-      <td>avg_lcom</td>
-      <td>14.23</td>
-      <td>0.002611</td>
-      <td>0.01828</td>
-      <td>ok</td>
-    </tr>
-    <tr>
-      <td>com_evidencia</td>
-      <td>total_loc</td>
-      <td>7.291</td>
-      <td>0.06317</td>
-      <td>—</td>
-      <td>ok</td>
+      <td>LCOM* (Henderson–Sellers)</td>
+      <td>8</td>
+      <td>8</td>
+      <td>0,258</td>
+      <td>0,231</td>
     </tr>
   </tbody>
-</table>
-<p><a href="epochs_dunn.csv">Resultados Dunn</a> · <a href="epoch_ia_descriptive.csv">Medianas, Q1, Q3 e IQR por época × IA</a></p>
-<h2>Pareamento por tamanho e versão</h2><p>132 pares 1:1, sem reutilização de controles, mesma época, mesma versão principal de Boot declarada e identificada e LOC dentro de fator 2. A atribuição minimiza distância de log(LOC), com termos menores de estrelas e idade. Não utiliza métricas CK de resultado. Versões desconhecidas ou múltiplas ficam fora deste controle. Ele não garante equivalência de domínio, maturidade ou proporção de código produzido com IA.</p>
-<p>Auditoria de metadados: 17 catálogos Gradle foram conferidos por coordenadas e referências TOML no mesmo commit. Após detectar a confusão entre um plugin Docker e o Boot, o procedimento foi aplicado a todos os elegíveis desse formato, preservando as versões originais. Essa é uma emenda de qualidade posterior à primeira análise, sem alterar as métricas CK ou a inclusão principal. <a href="boot_catalog_qc.json">Fontes, hashes e correções dos catálogos</a>.</p><table border="1" class="dataframe">
+</table></div><h3>E2 · 2014–2017</h3><div class="scroll"><table class="dataframe">
   <thead>
     <tr style="text-align: right;">
-      <th>metric</th>
-      <th>n_pairs</th>
-      <th>p_adjusted</th>
-      <th>rank_biserial_ia_minus_control</th>
-      <th>median_paired_difference</th>
-      <th>status</th>
+      <th>Métrica CK</th>
+      <th>n_a</th>
+      <th>n_b</th>
+      <th>Mediana A · Sem evidência</th>
+      <th>Mediana B · Com evidência</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>avg_cbo</td>
-      <td>132</td>
-      <td>1</td>
-      <td>0.08271</td>
-      <td>0.002118</td>
-      <td>ok</td>
+      <td>CBO</td>
+      <td>187</td>
+      <td>41</td>
+      <td>5,973</td>
+      <td>6,440</td>
     </tr>
     <tr>
-      <td>avg_rfc</td>
-      <td>132</td>
-      <td>0.01512</td>
-      <td>0.3078</td>
-      <td>1.571</td>
-      <td>ok</td>
+      <td>RFC</td>
+      <td>187</td>
+      <td>41</td>
+      <td>8,167</td>
+      <td>9,575</td>
     </tr>
     <tr>
-      <td>avg_wmc</td>
-      <td>132</td>
-      <td>0.1848</td>
-      <td>0.2228</td>
-      <td>0.864</td>
-      <td>ok</td>
+      <td>WMC</td>
+      <td>187</td>
+      <td>41</td>
+      <td>5,570</td>
+      <td>7,210</td>
     </tr>
     <tr>
-      <td>avg_loc_method</td>
-      <td>132</td>
-      <td>0.02876</td>
-      <td>0.288</td>
-      <td>0.8127</td>
-      <td>ok</td>
+      <td>LOC/método</td>
+      <td>187</td>
+      <td>41</td>
+      <td>5,804</td>
+      <td>6,073</td>
     </tr>
     <tr>
-      <td>avg_dit</td>
-      <td>132</td>
-      <td>0.3857</td>
-      <td>-0.1925</td>
-      <td>-0.04592</td>
-      <td>ok</td>
+      <td>DIT</td>
+      <td>187</td>
+      <td>41</td>
+      <td>1,236</td>
+      <td>1,312</td>
     </tr>
     <tr>
-      <td>avg_noc</td>
-      <td>132</td>
-      <td>1</td>
-      <td>-0.1317</td>
-      <td>-0.005365</td>
-      <td>ok</td>
+      <td>NOC</td>
+      <td>187</td>
+      <td>41</td>
+      <td>0,059</td>
+      <td>0,088</td>
     </tr>
     <tr>
-      <td>avg_lcom</td>
-      <td>132</td>
-      <td>0.3453</td>
-      <td>0.1973</td>
-      <td>0.02129</td>
-      <td>ok</td>
+      <td>LCOM* (Henderson–Sellers)</td>
+      <td>187</td>
+      <td>41</td>
+      <td>0,230</td>
+      <td>0,264</td>
     </tr>
   </tbody>
-</table>
-<p>Wilcoxon bilateral para pares, com Bonferroni de sete métricas. Aqui o efeito é "com IA menos controle", por isso o sinal tem orientação diferente do delta nas tabelas não pareadas. <a href="matched_pairs.csv">Pares e distâncias de covariáveis</a> · <a href="matched_wilcoxon.csv">Resultados completos por época</a></p>
-<h2>Sensibilidades e auditoria</h2><p>A análise de cobertura ≥95% contém 880 repositórios. É exploratória, pois omissões podem não ser aleatórias. Outros controles: faixas de LOC, Boot, época × LOC, código de produção, densidades por KLOC e exclusão de sinais ambíguos de IA, nomes de classes duplicados ou candidatos educacionais sinalizados. A sensibilidade <code>no_review_only_positive</code> exclui o grupo conservador Coderabbit, coderabbitai[bot], Qodo/Codium, qodo-merge-pro[bot] e sourcery-ai[bot]; é uma regra de ambiguidade e não comprova uso exclusivo para revisão.</p>
-<p><a href="covariate_sensitivity.csv">Sensibilidades da análise principal</a> · <a href="coverage95_mann_whitney.csv">Comparações com cobertura ≥95%</a> · <a href="coverage95_sensitivity.csv">Controles com cobertura ≥95%</a> · <a href="attrition_primary_reason.csv">Motivo principal de exclusão por época e IA</a> · <a href="spring_boot_distribution.csv">Distribuição das versões do Spring Boot</a>. As famílias exploratórias são corrigidas separadamente; não existe correção única sobre todos os estratos explorados.</p>
-<div class="limits"><strong>Limites para interpretar.</strong><ul><li>Classificação e CK foram executados no mesmo commit. Arquivos de agente, gitignore e até 30 commits são sinais de adoção, não uma medida da porcentagem de código gerada. Configuração de revisão pode produzir um positivo sem geração de código.</li>
-<li>CK 0.7.1-SNAPSHOT, commit upstream 8a1ef916d597d33ad619d748b616bb7dbc3f0c36, com adaptador que preserva arquivo + classe. Todas as métricas deste comparativo foram recalculadas com o mesmo instrumento. Não se misturam valores do CK 0.7.0 anterior.</li>
-<li>O adaptador evita sobrescrita, mas não muda a resolução de tipos, o NOC ou as fórmulas. Nomes homônimos e dependências externas ausentes podem afetar herança/acoplamento. Cobertura de arquivos completa não garante resolução perfeita do AST. Há sensibilidade excluindo nomes duplicados.</li>
-<li>O limiar mínimo é 2.000 LOC, com confirmação técnica de Spring Boot e cobertura completa na análise principal. Erros não viram zeros nem negativos para IA. Candidatos ambíguos ainda precisam de revisão manual.</li>
-<li>A amostra favorece popularidade e atividade recente. E1 é estruturalmente limitada a 20 candidatos. O HEAD atual pode conter anos de evolução; diferenças entre coortes não representam automaticamente efeito da era de IA.</li></ul></div>
-<h2>Gráficos reproduzíveis</h2><p>Os boxplots omitem a exibição dos pontos extremos para facilitar a leitura; os cálculos e os testes mantêm todos os valores elegíveis. Quartis são descritivos, não intervalos de confiança.</p><figure><img loading="lazy" src="figures/F01_avg_cbo.png" alt="F01_avg_cbo"><figcaption>F01_avg_cbo</figcaption></figure><figure><img loading="lazy" src="figures/F02_avg_rfc.png" alt="F02_avg_rfc"><figcaption>F02_avg_rfc</figcaption></figure><figure><img loading="lazy" src="figures/F04_avg_wmc.png" alt="F04_avg_wmc"><figcaption>F04_avg_wmc</figcaption></figure><figure><img loading="lazy" src="figures/F05_avg_loc_method.png" alt="F05_avg_loc_method"><figcaption>F05_avg_loc_method</figcaption></figure><figure><img loading="lazy" src="figures/F07_avg_dit.png" alt="F07_avg_dit"><figcaption>F07_avg_dit</figcaption></figure><figure><img loading="lazy" src="figures/F08_avg_noc.png" alt="F08_avg_noc"><figcaption>F08_avg_noc</figcaption></figure><figure><img loading="lazy" src="figures/F09_avg_lcom.png" alt="F09_avg_lcom"><figcaption>F09_avg_lcom</figcaption></figure><figure><img loading="lazy" src="figures/F03_medianas.png" alt="F03_medianas"><figcaption>F03_medianas</figcaption></figure><figure><img loading="lazy" src="figures/F06_dispersao.png" alt="F06_dispersao"><figcaption>F06_dispersao</figcaption></figure><figure><img loading="lazy" src="figures/F10_E3_E4.png" alt="F10_E3_E4"><figcaption>F10_E3_E4</figcaption></figure><figure><img loading="lazy" src="figures/F11_evidencia_IA.png" alt="F11_evidencia_IA"><figcaption>F11_evidencia_IA</figcaption></figure><figure><img loading="lazy" src="figures/F12_avg_cbo_por_epoca.png" alt="F12_avg_cbo_por_epoca"><figcaption>F12_avg_cbo_por_epoca</figcaption></figure><figure><img loading="lazy" src="figures/F12_avg_rfc_por_epoca.png" alt="F12_avg_rfc_por_epoca"><figcaption>F12_avg_rfc_por_epoca</figcaption></figure><figure><img loading="lazy" src="figures/F12_avg_wmc_por_epoca.png" alt="F12_avg_wmc_por_epoca"><figcaption>F12_avg_wmc_por_epoca</figcaption></figure><figure><img loading="lazy" src="figures/F12_avg_loc_method_por_epoca.png" alt="F12_avg_loc_method_por_epoca"><figcaption>F12_avg_loc_method_por_epoca</figcaption></figure><figure><img loading="lazy" src="figures/F12_avg_dit_por_epoca.png" alt="F12_avg_dit_por_epoca"><figcaption>F12_avg_dit_por_epoca</figcaption></figure><figure><img loading="lazy" src="figures/F12_avg_noc_por_epoca.png" alt="F12_avg_noc_por_epoca"><figcaption>F12_avg_noc_por_epoca</figcaption></figure><figure><img loading="lazy" src="figures/F12_avg_lcom_por_epoca.png" alt="F12_avg_lcom_por_epoca"><figcaption>F12_avg_lcom_por_epoca</figcaption></figure>
-<h2>Pacote de replicação</h2><p><a href="analysis_main.csv">Base principal / Power BI</a> · <a href="repository_metrics.csv">Todos os processados</a> · <a href="classification.csv">Classificações</a> · <a href="epoch_ia_counts.csv">Atrito por época/grupo</a> · <a href="exclusions.csv">Exclusões</a> · <a href="sampling_manifest.json">Plano fixado</a> · <a href="config.json">Configuração e hashes</a></p>
-<p>CSV de cada célula em <code>subsets/E1…E4/</code>; fontes de evidência, métricas de classe/método compactadas, SHA do commit e diagnóstico por repositório em <code>repositories/</code>. Gráficos em PNG e SVG. Intervalos apresentados são quartis descritivos, não intervalos de confiança.</p></html>
+</table></div><h3>E3 · 2018–2021</h3><div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Métrica CK</th>
+      <th>n_a</th>
+      <th>n_b</th>
+      <th>Mediana A · Sem evidência</th>
+      <th>Mediana B · Com evidência</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CBO</td>
+      <td>247</td>
+      <td>48</td>
+      <td>5,729</td>
+      <td>5,776</td>
+    </tr>
+    <tr>
+      <td>RFC</td>
+      <td>247</td>
+      <td>48</td>
+      <td>6,938</td>
+      <td>9,277</td>
+    </tr>
+    <tr>
+      <td>WMC</td>
+      <td>247</td>
+      <td>48</td>
+      <td>4,669</td>
+      <td>5,411</td>
+    </tr>
+    <tr>
+      <td>LOC/método</td>
+      <td>247</td>
+      <td>48</td>
+      <td>5,455</td>
+      <td>6,340</td>
+    </tr>
+    <tr>
+      <td>DIT</td>
+      <td>247</td>
+      <td>48</td>
+      <td>1,192</td>
+      <td>1,208</td>
+    </tr>
+    <tr>
+      <td>NOC</td>
+      <td>247</td>
+      <td>48</td>
+      <td>0,035</td>
+      <td>0,059</td>
+    </tr>
+    <tr>
+      <td>LCOM* (Henderson–Sellers)</td>
+      <td>247</td>
+      <td>48</td>
+      <td>0,224</td>
+      <td>0,216</td>
+    </tr>
+  </tbody>
+</table></div><h3>E4 · 2022–coleta original</h3><div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Métrica CK</th>
+      <th>n_a</th>
+      <th>n_b</th>
+      <th>Mediana A · Sem evidência</th>
+      <th>Mediana B · Com evidência</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CBO</td>
+      <td>250</td>
+      <td>90</td>
+      <td>5,908</td>
+      <td>5,939</td>
+    </tr>
+    <tr>
+      <td>RFC</td>
+      <td>250</td>
+      <td>90</td>
+      <td>7,977</td>
+      <td>10,444</td>
+    </tr>
+    <tr>
+      <td>WMC</td>
+      <td>250</td>
+      <td>90</td>
+      <td>4,552</td>
+      <td>6,477</td>
+    </tr>
+    <tr>
+      <td>LOC/método</td>
+      <td>250</td>
+      <td>90</td>
+      <td>5,877</td>
+      <td>7,143</td>
+    </tr>
+    <tr>
+      <td>DIT</td>
+      <td>250</td>
+      <td>90</td>
+      <td>1,188</td>
+      <td>1,141</td>
+    </tr>
+    <tr>
+      <td>NOC</td>
+      <td>250</td>
+      <td>90</td>
+      <td>0,037</td>
+      <td>0,022</td>
+    </tr>
+    <tr>
+      <td>LCOM* (Henderson–Sellers)</td>
+      <td>250</td>
+      <td>90</td>
+      <td>0,199</td>
+      <td>0,212</td>
+    </tr>
+  </tbody>
+</table></div></section>
+<section id="eras"><h2>Métricas CK nas quatro eras</h2>
+<p>Medianas de todos os elegíveis de cada era, reunindo os dois grupos de evidência.</p>
+<div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Era</th>
+      <th>Total de repositórios</th>
+      <th>CBO</th>
+      <th>RFC</th>
+      <th>WMC</th>
+      <th>LOC/método</th>
+      <th>DIT</th>
+      <th>NOC</th>
+      <th>LCOM* (Henderson–Sellers)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>E1</td>
+      <td>16</td>
+      <td>5,625</td>
+      <td>10,535</td>
+      <td>7,556</td>
+      <td>6,574</td>
+      <td>1,307</td>
+      <td>0,102</td>
+      <td>0,244</td>
+    </tr>
+    <tr>
+      <td>E2</td>
+      <td>228</td>
+      <td>6,056</td>
+      <td>8,555</td>
+      <td>5,805</td>
+      <td>5,982</td>
+      <td>1,241</td>
+      <td>0,063</td>
+      <td>0,240</td>
+    </tr>
+    <tr>
+      <td>E3</td>
+      <td>295</td>
+      <td>5,734</td>
+      <td>7,203</td>
+      <td>4,867</td>
+      <td>5,583</td>
+      <td>1,196</td>
+      <td>0,039</td>
+      <td>0,222</td>
+    </tr>
+    <tr>
+      <td>E4</td>
+      <td>340</td>
+      <td>5,926</td>
+      <td>8,579</td>
+      <td>5,038</td>
+      <td>6,102</td>
+      <td>1,171</td>
+      <td>0,034</td>
+      <td>0,204</td>
+    </tr>
+  </tbody>
+</table></div>
+<h2>Comparação de E3 com E4</h2>
+<p>Nestas tabelas, <strong>A = E3</strong> e <strong>B = E4</strong>. Portanto, <code>n_a</code> e <code>n_b</code> passam a contar os repositórios dessas eras.</p>
+<h3>Todos os elegíveis</h3><div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Métrica CK</th>
+      <th>n_a</th>
+      <th>n_b</th>
+      <th>Mediana A · E3</th>
+      <th>Mediana B · E4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CBO</td>
+      <td>295</td>
+      <td>340</td>
+      <td>5,734</td>
+      <td>5,926</td>
+    </tr>
+    <tr>
+      <td>RFC</td>
+      <td>295</td>
+      <td>340</td>
+      <td>7,203</td>
+      <td>8,579</td>
+    </tr>
+    <tr>
+      <td>WMC</td>
+      <td>295</td>
+      <td>340</td>
+      <td>4,867</td>
+      <td>5,038</td>
+    </tr>
+    <tr>
+      <td>LOC/método</td>
+      <td>295</td>
+      <td>340</td>
+      <td>5,583</td>
+      <td>6,102</td>
+    </tr>
+    <tr>
+      <td>DIT</td>
+      <td>295</td>
+      <td>340</td>
+      <td>1,196</td>
+      <td>1,171</td>
+    </tr>
+    <tr>
+      <td>NOC</td>
+      <td>295</td>
+      <td>340</td>
+      <td>0,039</td>
+      <td>0,034</td>
+    </tr>
+    <tr>
+      <td>LCOM* (Henderson–Sellers)</td>
+      <td>295</td>
+      <td>340</td>
+      <td>0,222</td>
+      <td>0,204</td>
+    </tr>
+  </tbody>
+</table></div><h3>Somente sem evidência detectada</h3><div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Métrica CK</th>
+      <th>n_a</th>
+      <th>n_b</th>
+      <th>Mediana A · E3</th>
+      <th>Mediana B · E4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CBO</td>
+      <td>247</td>
+      <td>250</td>
+      <td>5,729</td>
+      <td>5,908</td>
+    </tr>
+    <tr>
+      <td>RFC</td>
+      <td>247</td>
+      <td>250</td>
+      <td>6,938</td>
+      <td>7,977</td>
+    </tr>
+    <tr>
+      <td>WMC</td>
+      <td>247</td>
+      <td>250</td>
+      <td>4,669</td>
+      <td>4,552</td>
+    </tr>
+    <tr>
+      <td>LOC/método</td>
+      <td>247</td>
+      <td>250</td>
+      <td>5,455</td>
+      <td>5,877</td>
+    </tr>
+    <tr>
+      <td>DIT</td>
+      <td>247</td>
+      <td>250</td>
+      <td>1,192</td>
+      <td>1,188</td>
+    </tr>
+    <tr>
+      <td>NOC</td>
+      <td>247</td>
+      <td>250</td>
+      <td>0,035</td>
+      <td>0,037</td>
+    </tr>
+    <tr>
+      <td>LCOM* (Henderson–Sellers)</td>
+      <td>247</td>
+      <td>250</td>
+      <td>0,224</td>
+      <td>0,199</td>
+    </tr>
+  </tbody>
+</table></div><h3>Somente com evidência de IA</h3><div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Métrica CK</th>
+      <th>n_a</th>
+      <th>n_b</th>
+      <th>Mediana A · E3</th>
+      <th>Mediana B · E4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CBO</td>
+      <td>48</td>
+      <td>90</td>
+      <td>5,776</td>
+      <td>5,939</td>
+    </tr>
+    <tr>
+      <td>RFC</td>
+      <td>48</td>
+      <td>90</td>
+      <td>9,277</td>
+      <td>10,444</td>
+    </tr>
+    <tr>
+      <td>WMC</td>
+      <td>48</td>
+      <td>90</td>
+      <td>5,411</td>
+      <td>6,477</td>
+    </tr>
+    <tr>
+      <td>LOC/método</td>
+      <td>48</td>
+      <td>90</td>
+      <td>6,340</td>
+      <td>7,143</td>
+    </tr>
+    <tr>
+      <td>DIT</td>
+      <td>48</td>
+      <td>90</td>
+      <td>1,208</td>
+      <td>1,141</td>
+    </tr>
+    <tr>
+      <td>NOC</td>
+      <td>48</td>
+      <td>90</td>
+      <td>0,059</td>
+      <td>0,022</td>
+    </tr>
+    <tr>
+      <td>LCOM* (Henderson–Sellers)</td>
+      <td>48</td>
+      <td>90</td>
+      <td>0,216</td>
+      <td>0,212</td>
+    </tr>
+  </tbody>
+</table></div></section>
+<section><h2>Métricas em projetos de tamanho e versão semelhantes</h2>
+<p>Este recorte reúne 132 pares: um projeto com evidência e outro sem evidência, da mesma era e da mesma versão principal identificada do Spring Boot, com tamanho em LOC dentro de um fator de dois. Aqui, A volta a ser o grupo sem evidência e B o grupo com evidência.</p>
+<div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Métrica CK</th>
+      <th>n_a</th>
+      <th>n_b</th>
+      <th>Mediana A · Sem evidência</th>
+      <th>Mediana B · Com evidência</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CBO</td>
+      <td>132</td>
+      <td>132</td>
+      <td>5,834</td>
+      <td>5,968</td>
+    </tr>
+    <tr>
+      <td>RFC</td>
+      <td>132</td>
+      <td>132</td>
+      <td>9,198</td>
+      <td>9,869</td>
+    </tr>
+    <tr>
+      <td>WMC</td>
+      <td>132</td>
+      <td>132</td>
+      <td>5,943</td>
+      <td>6,229</td>
+    </tr>
+    <tr>
+      <td>LOC/método</td>
+      <td>132</td>
+      <td>132</td>
+      <td>5,917</td>
+      <td>6,680</td>
+    </tr>
+    <tr>
+      <td>DIT</td>
+      <td>132</td>
+      <td>132</td>
+      <td>1,232</td>
+      <td>1,159</td>
+    </tr>
+    <tr>
+      <td>NOC</td>
+      <td>132</td>
+      <td>132</td>
+      <td>0,049</td>
+      <td>0,033</td>
+    </tr>
+    <tr>
+      <td>LCOM* (Henderson–Sellers)</td>
+      <td>132</td>
+      <td>132</td>
+      <td>0,223</td>
+      <td>0,232</td>
+    </tr>
+  </tbody>
+</table></div>
+<p>As colunas apresentam as medianas das métricas dos dois grupos de projetos pareados.</p></section>
+<section id="graficos"><h2>Distribuição das métricas CK por era</h2>
+<p>A linha dentro de cada caixa mostra a mediana. A caixa reúne os 50% centrais dos valores. A marcação <code>n</code> indica quantos repositórios estão representados. Os pontos extremos ficam ocultos no gráfico para facilitar a leitura, mas permanecem no cálculo das medianas e nos arquivos de dados.</p>
+<figure><img loading="lazy" src="figures_descriptive/F12_avg_cbo_por_epoca.png" alt="CBO por era e evidência de IA"><figcaption>CBO: valores por repositório em cada era.</figcaption></figure><figure><img loading="lazy" src="figures_descriptive/F12_avg_rfc_por_epoca.png" alt="RFC por era e evidência de IA"><figcaption>RFC: valores por repositório em cada era.</figcaption></figure><figure><img loading="lazy" src="figures_descriptive/F12_avg_wmc_por_epoca.png" alt="WMC por era e evidência de IA"><figcaption>WMC: valores por repositório em cada era.</figcaption></figure><figure><img loading="lazy" src="figures_descriptive/F12_avg_loc_method_por_epoca.png" alt="LOC/método por era e evidência de IA"><figcaption>LOC/método: valores por repositório em cada era.</figcaption></figure><figure><img loading="lazy" src="figures_descriptive/F12_avg_dit_por_epoca.png" alt="DIT por era e evidência de IA"><figcaption>DIT: valores por repositório em cada era.</figcaption></figure><figure><img loading="lazy" src="figures_descriptive/F12_avg_noc_por_epoca.png" alt="NOC por era e evidência de IA"><figcaption>NOC: valores por repositório em cada era.</figcaption></figure><figure><img loading="lazy" src="figures_descriptive/F12_avg_lcom_por_epoca.png" alt="LCOM* (Henderson–Sellers) por era e evidência de IA"><figcaption>LCOM* (Henderson–Sellers): valores por repositório em cada era.</figcaption></figure></section>
+<section class="limits"><h2>Contexto da medição</h2><ul>
+<li>“Sem evidência detectada” significa ausência dos sinais procurados; não comprova ausência de uso de IA. Os sinais encontrados também não medem quanto código foi produzido por IA.</li>
+<li>A comparação principal exige Spring Boot confirmado, pelo menos 2.000 linhas de Java pelo contador adotado e extração completa no diagnóstico definido. Erros não são transformados em zeros.</li>
+<li>A lista veio de 38.456 repositórios filtrados: todos os 20 candidatos de E1 e os primeiros 500 de E2, E3 e E4 na ordenação original por estrelas, push e identificador.</li>
+<li>As medições usam CK 0.7.1-SNAPSHOT. A análise estática e a resolução de dependências têm limitações, especialmente para herança e acoplamento.</li>
+<li>Os valores descrevem versões atuais de projetos criados em épocas diferentes. Para medir evolução histórica ou amadurecimento do mesmo sistema, é necessário medir também suas versões antigas.</li>
+</ul></section>
+<h2>Dados das medições</h2><p><a href="analysis_main.csv">Métricas por repositório elegível</a> · <a href="repository_metrics.csv">Todos os candidatos processados</a> · <a href="epoch_ia_counts.csv">Contagens por era e evidência</a> · <a href="classification.csv">Classificações</a> · <a href="exclusions.csv">Exclusões</a></p>
+</body></html>

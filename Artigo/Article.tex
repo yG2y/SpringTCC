@@ -1,5 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Evolução da Maturidade de Desenvolvimento em Projetos Spring Boot
+% Evolução da Qualidade Estrutural de Projetos Spring
 % TCC - Engenharia de Software - PUC Minas
 %
 % Para compilar:
@@ -22,6 +22,7 @@
 \usepackage{tabularx}
 \newcolumntype{C}{>{\centering\arraybackslash}X}
 \usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
 \usepackage[inline]{enumitem}
 \usepackage{tcolorbox}
 \usepackage{tikz}
@@ -29,8 +30,6 @@
 \usepackage{amsmath}
 
 %%%%%%%%%%%%%%%%% Pacotes para inserção de algoritmos - BEGIN
-\usepackage[ruled,lined]{algorithm2e}
-
 \usepackage{xcolor}
 \definecolor{verde}{rgb}{0.25,0.5,0.35}
 \definecolor{jpurple}{rgb}{0.5,0,0.35}
@@ -67,11 +66,11 @@
 
 \sloppy
 
-\title{Evolução da Maturidade de Desenvolvimento\\em Projetos Spring Boot}
+\title{Evolução da Qualidade Estrutural de Projetos Spring:\\transição para Spring Boot e assistência por IA}
 
 \author{Gabriel Ferreira\inst{1}, Guilherme Augusto\inst{1}}
 
-\address{Engenharia de Software --
+\address{Engenharia de Software\\
   Pontifícia Universidade Católica de Minas Gerais (PUC-MG)\\
   Belo Horizonte -- MG -- Brazil
   \email{\{gabriel.amaral.1447804,gajsouza\}@sga.pucminas.br}
@@ -82,11 +81,11 @@
 \maketitle
 
 \begin{abstract}
-Internal software quality in object-oriented systems can be observed through structural metrics of coupling, complexity, inheritance, cohesion and size. In the Java ecosystem, Spring Boot is a widely adopted framework, yet longitudinal evidence on how the structural quality of public GitHub projects evolves---and whether the generative-AI era (2022--present) coincides with measurable change---remains scarce. This work aims to analyse that evolution across four temporal cohorts defined by repository creation date. Object-oriented metrics will be extracted with the CK tool, organised through an ETL pipeline in Power BI and compared with non-parametric tests (Kruskal--Wallis, Mann--Whitney, Bonferroni correction) in reproducible Python/R notebooks.
+Internal software quality can be described through structural measures of coupling, complexity, inheritance, cohesion and size. This observational longitudinal study follows public Java projects in the Spring ecosystem, focusing on repositories created between 2009 and 2013. Annual snapshots from 2009 to 2025, plus a separately reported partial observation in 2026, are recovered from pinned Git histories. A reproducible sample includes traditional Spring and Spring Boot projects, retaining accessible inactive and archived repositories. Seven measures are extracted with an audited CK instrument. Within-project trajectories and changes surrounding the first observable presence of Spring Boot and AI-assistance evidence are described separately from differences between projects. The analysis reports coverage, arithmetic means and paired changes, without interpreting temporal sequence as causation or absence of AI traces as non-use. The frozen sample contains 1,616 candidates; 388 projects contribute 2,533 eligible annual observations. In the oldest cohort, 16 complete-year Boot pairs and only one AI pair are available, plus ten partial-year AI pairs. The dimensions move in different directions, without establishing uniform improvement.
 \end{abstract}
 
 \begin{resumo}
-A qualidade interna de \emph{software} orientado a objetos pode ser observada por métricas estruturais de acoplamento, complexidade, herança, coesão e tamanho. No ecossistema Java, o Spring Boot é um \emph{framework} de ampla adoção; contudo, ainda são escassas evidências longitudinais sobre como a qualidade estrutural de projetos públicos no GitHub evolui e se a Era da IA generativa (2022--atual) coincide com alterações mensuráveis nessas métricas. O objetivo deste trabalho é analisar essa evolução em quatro coortes temporais definidas pela data de criação dos repositórios. As métricas serão extraídas com a ferramenta CK, organizadas em um \emph{pipeline} de ETL no Power BI e comparadas por testes não paramétricos (Kruskal--Wallis, Mann--Whitney e correção de Bonferroni) em \emph{notebooks} reproduzíveis em Python/R.
+A qualidade interna de \emph{software} pode ser descrita por medidas estruturais de acoplamento, complexidade, herança, coesão e tamanho. Este estudo observacional longitudinal acompanha projetos Java públicos do ecossistema Spring, com foco nos repositórios criados entre 2009 e 2013. Recuperam-se versões anuais de 2009 a 2025 e uma observação parcial de 2026, apresentada separadamente, a partir de históricos Git com referências fixadas. A amostra reproduzível inclui Spring tradicional e Spring Boot e mantém projetos inativos e arquivados acessíveis. Sete medidas são extraídas por um instrumento CK auditado. As trajetórias e diferenças dentro de cada projeto, em torno da primeira presença observável de Boot e de evidências de assistência por IA, são separadas das diferenças entre projetos. A análise apresenta cobertura, médias e mudanças pareadas, sem interpretar sequência temporal como causalidade ou ausência de vestígios de IA como ausência de uso. A amostra congelada contém 1.616 candidatos; 388 projetos contribuem com 2.533 observações anuais elegíveis. Na coorte antiga, há 16 pares completos de Boot e apenas um de IA, além de dez pares parciais de IA. As dimensões se movem em direções distintas, sem estabelecer melhoria uniforme.
 \end{resumo}
 
 \begin{tcolorbox}
@@ -99,7 +98,7 @@ Orientador de conteúdo (TCC I): João Pedro Batisteli - joaobatisteli@pucminas.
 Orientador de conteúdo (TCC I): Leonardo Vilela - leonardocardoso@pucminas.br \\
 Orientador acadêmico (TCC I): Cleiton Tavares - cleitontavares@pucminas.br \\
 Orientador do TCC II: (A ser definido no próximo semestre)\\ \\
-Belo Horizonte, 24 de agosto de 2026.
+Belo Horizonte, versão de trabalho de 11 de outubro de 2026.
 \end{tcolorbox}
 
 \input{Sections/01_Introducao}

@@ -1,0 +1,52 @@
+\section{Resultados e Discussão}
+\label{sec:resultados}
+
+Esta seção distingue a execução histórica dos resultados transversais anteriores. Nos pilotos transversais, E1--E4 correspondem à criação do repositório e o código medido é atual; seus contrastes não demonstram a evolução dos mesmos projetos ao longo dos anos. No protocolo histórico, a época das métricas depende do snapshot.
+
+\subsection{Recontagem para o desenho histórico}
+
+A reaplicação local dos filtros sobre a população original de 95.894 registros, preservando inativos e arquivados, resulta em 70.280 candidatos da base Boot salva: 30 em E1, 3.831 em E2, 20.380 em E3 e 46.039 em E4. Esses totais antecedem a união com as consultas adicionais de Spring. Entre os 30 candidatos de E1, quatro estão arquivados. A retenção não confirma disponibilidade do histórico, uso de Spring na versão antiga ou elegibilidade de 2.000 LOC; essas verificações pertencem à coleta de snapshots.
+
+A união das quatro fontes reúne 117.621 identificadores únicos. Os filtros de metadados mantêm 84.633 candidatos, dos quais um foi criado antes das coortes do estudo. Restam 84.632 candidatos nas coortes: 116 em E1, 5.836 em E2, 25.819 em E3 e 52.861 em E4. Entre os 116 de E1, 14 estão arquivados e 54 têm atividade antiga; esses atributos não os excluíram. A lista congelada contém 1.616 candidatos: todos os 116 de E1 e 500 de cada outra coorte. O piloto utiliza os primeiros dez sorteados por coorte.
+
+A confirmação do framework, a disponibilidade dos snapshots e a cobertura CK são verificadas depois do sorteio. Nenhum resultado CK transversal abaixo foi reutilizado como uma medição anual histórica.
+
+\subsection{Validação do piloto histórico}
+\label{subsec:piloto-historico}
+
+O piloto histórico processou os 40 candidatos previamente sorteados, sem substituição. Foram registrados 720 cortes anuais: 373 sem histórico disponível até o corte, 346 com extração CK concluída e um sem código Java. Os 347 snapshots com código ou árvore disponível correspondem a 127 extrações distintas, pois anos sem novo commit e inventários Java idênticos podem reutilizar a extração. Na execução corrigida, 119 snapshots de 12 projetos satisfazem os critérios da comparação principal. A Tabela~\ref{tab:piloto-historico-cobertura} separa candidatos, observações disponíveis e observações elegíveis.
+
+\begin{table}[htbp]
+\centering
+\caption{Cobertura do piloto histórico por coorte de criação.}
+\label{tab:piloto-historico-cobertura}
+\small
+\begin{tabular}{lrrrr}
+\hline
+Coorte & Candidatos & Snapshots disponíveis & Elegíveis & Projetos elegíveis \\
+\hline
+E1 & 10 & 155 & 77 & 5 \\
+E2 & 10 & 101 & 31 & 3 \\
+E3 & 10 & 75 & 8 & 1 \\
+E4 & 10 & 16 & 3 & 3 \\
+\hline
+Total & 40 & 347 & 119 & 12 \\
+\hline
+\end{tabular}
+\end{table}
+
+A inspeção dos dez candidatos antigos encontrou, por exemplo, a presença observável de Boot em 2014 no Hawtio, após um snapshot de Spring tradicional de 2013, e em 2017 no BroadleafCommerce, após uma versão tradicional de 2016. No Vogon, Boot aparece em 2014, mas o snapshot de 2013 não confirmou Spring: esse caso é censurado à esquerda para a transição Spring--Boot. São limites de observação anual, não datas exatas de migração.
+
+As primeiras evidências de IA dos projetos antigos com pares elegíveis apareceram no período parcial de 2026: uma identidade de bot Copilot no histórico de MyBatis/Spring e um arquivo \texttt{AGENTS.md} em Hawtio. O arquivo de instruções não comprova qual ferramenta foi efetivamente utilizada. Esses dois pares são apresentados separadamente dos anos completos; o piloto não forneceu pares antes/depois de IA nos anos completos até 2025. A ausência de vestígios nos demais projetos não demonstra ausência de uso.
+
+A revisão também identificou o código do próprio Spring Security, cujos módulos de exemplo usam Boot. A classificação inicial foi corrigida para código de framework, excluído da comparação principal. A execução anterior foi preservada, e a nova execução manteve amostra e SHAs: os 720 registros conservaram seus valores CK. A auditoria independente recalculou as sete médias a partir dos arquivos brutos e verificou os cortes temporais de código e evidências, sem divergências. Os 72 testes do instrumento passaram. A revisão dos objetos Git foi assistida por IA e está documentada; não equivale a uma avaliação independente dos autores.
+
+A reexecução do piloto consumiu aproximadamente 355 segundos de processamento com quatro trabalhadores, reutilizando cerca de 505 MiB de clones e produzindo cerca de 44 MiB de extrações. Esses números descrevem o ambiente e o cache dessa execução, sem estimar o custo de uma coleta inteiramente nova. A ampliação utiliza a lista congelada de 1.616 candidatos e conserva os diagnósticos de falha e inelegibilidade.
+
+\input{Sections/05a_Evolucao_Historica}
+
+\subsection{Papel dos resultados transversais anteriores}
+
+O piloto inicial de outubro de 2026 mediu 50 candidatos com classificação disponível: 16 com vestígios e 34 sem evidência detectada. Somente 19 satisfizeram a comparação principal daquela execução, sendo quatro positivos e 15 sem sinais. O piloto ampliado percorreu 1.520 candidatos da seleção anterior e reteve 879, dos quais 187 positivos e 692 sem evidência. Esses números descrevem seleções e instrumentos diferentes da execução histórica.
+
+Na ampliação transversal, RFC, WMC e LOC por método apresentaram medianas maiores no grupo com evidências de IA. Os projetos desse grupo também eram maiores: mediana de 17.445 LOC, contra 7.434. Os contrastes eram sensíveis ao recorte, e a seleção favorecia popularidade e atividade recente. O código medido era atual, inclusive para projetos criados em E1; esses resultados não demonstram o efeito de IA nem a evolução do código desde 2009. O detalhamento, incluindo os testes originalmente calculados, permanece nos arquivos de reprodução e em \texttt{Artigo/Arquivo}.

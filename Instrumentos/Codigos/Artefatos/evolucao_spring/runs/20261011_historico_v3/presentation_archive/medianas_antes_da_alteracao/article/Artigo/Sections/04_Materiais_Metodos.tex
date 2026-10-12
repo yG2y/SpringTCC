@@ -1,0 +1,93 @@
+\section{Materiais e Métodos}
+\label{sec:metodologia}
+
+O estudo é empírico, quantitativo, observacional e longitudinal. A unidade de acompanhamento é o repositório; a unidade de medição é uma versão anual de seu código. A análise principal acompanha projetos criados entre 2009 e 2013, e as demais coortes oferecem contexto. As conclusões descrevem mudanças e associações. Uma sequência antes/depois não identifica, por si só, um efeito causal de Spring Boot ou de IA.
+
+\subsection{Ambiente e instrumentos}
+\label{subsec:ambiente}
+
+O instrumento \texttt{analisar\_evolucao.py} separa recontagem, descoberta, planejamento, coleta e relatório. A descoberta utiliza a API REST de busca do GitHub, com paginação particionada e controle de limites. Os filtros e o sorteio operam sobre metadados salvos. A clonagem e a inspeção de evidências de IA são posteriores ao congelamento da amostra; a inspeção histórica usa objetos Git locais, sem requisições por snapshot.
+
+A extração reutiliza CK 0.7.1-SNAPSHOT do commit \texttt{8a1ef916d597d33ad619d748b616bb7dbc3f0c36}, com JDT 3.44.0 e o adaptador auditado que preserva a chave arquivo e classe. A JVM, os parâmetros, os hashes do JAR, do adaptador e dos scripts são registrados e congelados. Nenhum projeto amostrado é compilado ou executado, nem suas dependências são baixadas. As fórmulas permanecem as do CK; dependências ausentes e resolução parcial de tipos continuam sendo limitações \cite{aniche:ck,child:19}.
+
+\subsection{Descoberta, filtros e sorteio}
+\label{subsec:amostragem}
+
+Reaproveita-se a população original de 95.894 repositórios da consulta \texttt{topic:spring-boot fork:true}, salva antes dos filtros em setembro de 2026. Essa população é unida às consultas por tópicos \texttt{spring}, \texttt{spring-framework} e \texttt{spring-mvc}, com deduplicação pelo identificador do GitHub. A procedência e as datas de observação são preservadas, sem apresentar a união como um censo simultâneo. Tópicos indicam candidatos; a confirmação de Spring ocorre no conteúdo das versões históricas.
+
+Aplicam-se localmente filtros de linguagem principal Java, forks, espelhos, repositórios desabilitados, templates, vazios e materiais claramente não relacionados a desenvolvimento de software. Os critérios operacionais de nomes e tópicos são preservados em configuração, e casos educacionais ambíguos permanecem sinalizados para revisão. Arquivamento e falta de atividade recente não excluem candidatos. Projetos que deixaram de estar acessíveis são registrados como falhas de recuperação, sem substituição silenciosa.
+
+As coortes de criação são E1 (2009--2013), E2 (2014--2017), E3 (2018--2021) e E4 (2022--2026, até o corte da execução). A data de criação estratifica o sorteio; a data do snapshot determina a época de cada medição. Para cada coorte, ordenam-se candidatos pelo SHA-256 de \texttt{20261011:identificador}, selecionando até 500; quando houver menos, incluem-se todos. A semente e a lista são congeladas antes das métricas. Os primeiros dez sorteados de cada coorte formam o piloto, com até 40 candidatos. Não se substituem candidatos por falha, tamanho ou resultado CK. O teto por coorte produz frações amostrais diferentes: as medianas conjuntas descrevem a amostra observada, sem ponderação para estimar a distribuição de toda a população do GitHub.
+
+Depois de fixar a amostra e o piloto, ordena-se o processamento por atividade recente, antiga e data desconhecida. Essa ordem é operacional e não altera pertencimento à amostra. Antes da clonagem, publicam-se população, exclusões e candidatos por coorte, com comprovação de retenção de inativos e arquivados.
+
+\subsection{Recuperação das versões históricas}
+\label{subsec:snapshots}
+
+Cada repositório é clonado uma vez com o histórico completo alcançável da branch padrão, sem limite de profundidade ou de 30 commits. A referência e seu SHA são fixados. O histórico é percorrido pelo primeiro pai dos merges, representando a linha principal de integração \cite{git:firstparent}. Para cada encerramento de ano em UTC, seleciona-se o último commit dessa linha com data de committer anterior ou igual ao corte. Registra-se também a data de autoria. A data Git do committer é uma aproximação operacional da integração, não prova de quando o conteúdo foi publicado no GitHub.
+
+Medem-se os anos completos de 2009 a 2025. O ano de 2026 usa o instante fixado no início da execução e é apresentado separadamente como período parcial. Sem novos commits, reutiliza-se o SHA anterior e marca-se ``sem novo commit''. Sem histórico anterior ao corte, registra-se ausência de snapshot. Datas não monotônicas, autoria futura, ancestrais posteriores ao corte e histórico raso ou incompleto geram diagnósticos; nenhum caso é substituído pelo código atual. Históricos anteriores à criação do repositório no GitHub são sinalizados como possíveis importações ou migrações.
+
+Cada observação conserva identificador, ano, corte, SHA, datas, framework, versões declaradas, cobertura, métricas e motivos de exclusão. Extrações idênticas são reutilizadas pelo hash do inventário de fontes Java e do instrumento. As evidências de IA mantêm uma chave temporal própria, pois árvores iguais podem ter históricos distintos. Resultados concluídos são reutilizados na retomada; erros permanecem explícitos.
+
+\subsection{Framework e evidências de assistência por IA}
+\label{subsec:identificacao-ia}
+
+A identificação técnica inspeciona declarações Maven e Gradle disponíveis no snapshot, distinguindo dependências de produção, testes, gerenciamento, catálogos e plugins. Referências locais de propriedades e versões são resolvidas quando possível; valores não resolvidos são preservados. Um catálogo sem uso não confirma adoção. Dependências exclusivamente de teste não confirmam Boot no código de produção. Código do próprio framework Spring é identificado separadamente e não integra a comparação principal de projetos que utilizam Spring. Declarações de perfis são registradas como condicionais; a análise estática não confirma a configuração efetivamente executada.
+
+Um complemento de classificação resolve usos efetivos de mapas Groovy em scripts Gradle locais referenciados por \texttt{apply from}, incluindo indireções para catálogos TOML. As declarações são lidas no mesmo SHA; expressões dinâmicas e referências ambíguas permanecem sem resolução. O complemento tem hash próprio, preservando a identificação do produtor CK e seus valores brutos. Essa emenda está identificada na execução derivada, sem ser apresentada como componente do instrumento inicialmente congelado.
+
+A detecção de IA é uma adaptação local inspirada em \cite{robbes:26}. Após a seleção, inspecionam-se arquivos de configuração presentes na versão, entradas de gitignore, identidades Git de autor e trailers de coautoria nos commits alcançáveis. A inspeção de commits não se limita aos 30 mais recentes. Evidências de branches laterais só se tornam disponíveis quando integradas à linha principal. As mudanças dos caminhos de configuração ao longo do primeiro pai permitem preservar sinais observados em versões intermediárias, mesmo se removidos depois.
+
+Dois estados são conservados: sinais presentes no snapshot e evidências já observadas no histórico disponível até ele. A inspeção de arquivos segue a lista de caminhos do detector, predominantemente a partir da raiz; arquivos equivalentes em caminhos não previstos podem não ser encontrados. O primeiro vestígio observado não é apresentado como a data exata do primeiro uso. ``Sem evidência detectada'' não equivale a ``sem IA''; configurações copiadas, gitignore e nomes genéricos podem ser ambíguos. As primeiras evidências e transições dos projetos antigos do piloto passam por inspeção dos objetos Git, com identificação de quem realizou a revisão. A precisão do estudo original não é atribuída automaticamente ao detector adaptado.
+
+\subsection{Métricas e operacionalização GQM}
+\label{subsec:metricas-avaliacao}
+
+O instrumento conserva sete medidas: médias por classe de CBO geral, RFC, WMC, DIT, NOC e LCOM*, além da média de LOC por método. Na implementação CK adotada, RFC conta chamadas distintas identificadas pelo visitante; WMC agrega complexidade ciclomática e não mede desempenho de execução. LCOM* corresponde à coluna \texttt{lcom*}, preservando-se \texttt{lcom} original apenas como auxiliar. Dados brutos por classe e método e agregações de produção e de testes são conservados.
+
+O corte principal de 2.000 LOC é aplicado a cada snapshot, com linhas físicas Java contendo código, sem comentários ou linhas vazias e sem contar arquivos repetidamente por classes internas. A versão principal inclui fontes e testes, com sensibilidade somente de produção. Versões menores continuam registradas e não excluem toda a trajetória do projeto. Cobertura incompleta, métricas ausentes e erros impedem a participação da versão na comparação principal; ausência de dados não é convertida em zero. Submódulos não inspecionados e diagnósticos de configuração também permanecem explícitos.
+
+\begin{table}[H]
+\centering\footnotesize
+\caption{Objetivos, questões e medidas do desenho histórico (GQM).}
+\label{tab:gqm-objetivos}
+\begin{tabularx}{\linewidth}{|p{0.05\linewidth}|X|p{0.26\linewidth}|}
+\hline
+\textbf{Q} & \textbf{Questão e objetivo} & \textbf{Medidas e evidências} \\\hline
+Q1 & Como a estrutura dos mesmos projetos evolui anualmente? Caracterizar trajetórias, sem presumir melhoria. & Sete medidas CK; LOC; cobertura; idade do projeto. \\\hline
+Q2 & Quais mudanças acompanham a primeira presença observável de Boot? Descrever antes/depois e projetos sem transição observada. & Sete medidas; framework e versão declarada; SHA anterior e posterior. \\\hline
+Q3 & Quais mudanças acompanham o aparecimento de vestígios de IA? Separar presença atual e evidência histórica. & Sete medidas; caminhos, trailers, datas e primeira evidência observada. \\\hline
+Q4 & Como essas trajetórias se relacionam com projetos da mesma época? Distinguir evolução interna e composição dos grupos. & Medianas por repositório e época; quantidades; estratos de LOC, framework e coorte. \\\hline
+\end{tabularx}
+\end{table}
+
+\subsection{Síntese descritiva e comparações}
+\label{subsec:estatistica}
+
+Apresentam-se quantidades de projetos e snapshots, medianas, mudanças entre versões e gráficos de trajetória. Nas sínteses por época, calcula-se primeiro a mediana das observações anuais do repositório naquela época e, depois, a mediana entre repositórios. Assim, cada projeto tem uma contribuição, independentemente de quantos snapshots possui. Mudanças de evidência de IA dentro de uma época são apresentadas como transição observada, sem duplicar o projeto entre grupos. O período parcial de 2026 permanece separado.
+
+A permanência de um SHA em anos sem novos commits descreve a estrutura disponível no projeto ao final do período, e não código produzido naquele ano. A síntese da comunidade inclui esse legado. A marcação de versões repetidas permite distinguir estabilidade por inatividade de mudanças estruturais observadas em projetos que continuaram evoluindo.
+
+Nas comparações antes/depois, utilizam-se a última versão anual elegível anterior ao marco e a primeira elegível posterior. Projetos já positivos na primeira observação são marcados como censurados à esquerda: sua transição não foi observada. A transição para Boot exige uma versão anterior com Spring confirmado. Apresentam-se os valores antes/depois e a mediana das diferenças individuais; percentuais não são calculados quando o denominador é zero. Lacunas entre anos são informadas. O contexto inclui projetos sem a mesma transição e estratos de tamanho, framework e coorte, sem afirmar equivalência de domínio ou causalidade.
+
+O relatório histórico principal não apresenta p-valores ou deltas de Cliff. Testes de grupos independentes dos pilotos transversais não validam este painel de medições repetidas. Inferência futura, se proposta, demandará um desenho específico que considere dependência dentro do repositório, confundimento temporal e perdas de cobertura; ela não integra a apresentação descritiva atual.
+
+Um complemento identificado separadamente apresenta pares cuja primeira observação elegível posterior ao marco está disponível apenas no corte parcial de 2026. Esses pares não são reunidos aos de anos completos. O complemento conserva os SHA, a data do corte e um manifesto próprio de apresentação, sem alterar a extração CK.
+
+\subsection{Validação, ampliação e limitações}
+\label{subsec:validacao-historica}
+
+A validação verifica recontagem e invariância do sorteio à atividade, limites anuais UTC, merges, repetição de SHA, ausência de histórico, datas inconsistentes, recuperação após falhas, invalidação do cache e ausência de código ou evidências posteriores ao corte. O piloto percorre até 40 candidatos, com revisão das transições e primeiras evidências dos projetos antigos e registro de tempo, armazenamento e cobertura. Somente após a validação percorre-se a lista congelada de até 500 candidatos por coorte. O encerramento depende da lista, nunca de valores CK, da prevalência de IA ou da direção dos resultados.
+
+Na inspeção do piloto, a presença de módulos de exemplo com dependências Boot em Spring Security evidenciou uma limitação na identificação do próprio framework. A execução revisada reconhece a combinação entre grupo Maven/Gradle declarado pelo projeto e fontes de produção no namespace Spring. A amostra e as referências Git são mantidas, o piloto é repetido com novo fingerprint e os valores CK nos mesmos SHA são conferidos. A tentativa anterior e a justificativa da emenda permanecem preservadas.
+
+As ameaças incluem projetos desaparecidos ou privados, tópicos e linguagem observados nos metadados atuais, migrações e reescrita de histórico, diferenças de idade e domínio, mudanças de tamanho e framework, versões declaradas sem resolução completa de dependências, falhas de extração e uso de IA sem vestígios. A retenção de inativos e arquivados reduz uma seleção explícita por sobrevivência, mas não recupera repositórios que já desapareceram. As métricas Java não medem diretamente configuração XML/YAML nem comportamento em execução; mudanças nessas dimensões podem não aparecer nos indicadores CK. ``Maturidade'' é discutida por dimensões estruturais, sem nota única ou pressuposto de progresso.
+
+\subsection{Relação com os pilotos anteriores}
+
+Os pilotos transversais de setembro e outubro de 2026 apoiaram a validação da detecção e do extrator. Eles mediram código atual e agruparam projetos pela criação. Seus testes entre grupos independentes, pareamentos e análises exploratórias não são utilizados como validação do acompanhamento longitudinal. O detalhamento anterior permanece em \texttt{Artigo/Arquivo}, e os dados, gráficos e instrumentos foram preservados nas execuções de \texttt{metricas\_ck}. A execução histórica tem amostra, corte e manifestos próprios.
+
+\subsection{Reprodução e revisão dos autores}
+
+O pacote preserva a população, a lista sorteada, as referências Git, os planos de snapshots, os dados brutos CK, as evidências de framework e IA e os diagnósticos. Os comandos estão no arquivo README do instrumento histórico. A revisão dos objetos Git foi assistida por IA, com referências concretas a SHA e arquivos; não constitui uma classificação independente por dois pesquisadores. A dupla deverá conferir especialmente os sinais ambíguos e os casos de transição antes da submissão final do TCC.

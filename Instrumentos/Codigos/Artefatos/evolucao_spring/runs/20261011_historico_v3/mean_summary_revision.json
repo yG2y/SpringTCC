@@ -1,0 +1,20 @@
+{
+  "changed_at": "2026-10-11T23:04:21.878514+00:00",
+  "requested_by": "user",
+  "from_statistic": "median",
+  "to_statistic": "arithmetic_mean",
+  "scope": "historical report, tables, figures and thesis",
+  "weighting": "Mean across eligible snapshots within each repository and era, then equal-weight mean across repositories",
+  "ck_extraction_unchanged": true,
+  "mean_loc": "Replaces median_loc in project_era CSV and defines size strata",
+  "preserved_presentation": "presentation_archive/medianas_antes_da_alteracao",
+  "validation": "mean_summary_validation.json",
+  "source_files": {
+    "evolution/reporting.py": "6fc7255a75134d90728710ff81c519c54df0a61590dc2df6e742bcbe3383a5f2",
+    "relatorio_coorte_antiga.py": "a7b6b5d9d4700defa41e48ce7d59db7e0c37d408fc1b8635994afdb3a041f4a4",
+    "relatorio_evolucao_parcial.py": "8694ef90990104ee652bc38ca89dabd5e073a054cc8c23b256af34c909d92dce",
+    "gerar_resultados_historicos.py": "38c28bfbea3b53d12aeaaf19f97b3a992195cefd790414406cd7dfdf89b2c568",
+    "auditar_medias_historicas.py": "156461c4a41a56ec76628f9bbdc550f633547ff153d42e9389131ba1743caf95",
+    "tests/test_evolution.py": "4f1217242d392324f59e96d7b748b71b155ac2771a46c58ac1fc315686f23445"
+  }
+}

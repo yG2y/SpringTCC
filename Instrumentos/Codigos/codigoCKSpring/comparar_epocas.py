@@ -30,13 +30,14 @@ def dump_frame(path,frame):
     write_csv(path,frame.astype(object).where(pd.notna(frame),None).to_dict('records'),fields=list(frame.columns))
 
 
-def epoch_ia_figures(df,tests,out):
+def epoch_ia_figures(df,tests,out,*,include_tests=True,directory='figures'):
     os.environ.setdefault('MPLCONFIGDIR',str(out/'.mplconfig'))
     import matplotlib
     matplotlib.use('Agg')
     import matplotlib.pyplot as plt
     from matplotlib.patches import Patch
     paths=[]
+    (out/directory).mkdir(parents=True,exist_ok=True)
     colors=['#447fa4','#b96943']
     for metric in METRICS:
         fig,ax=plt.subplots(figsize=(11,5))
@@ -49,16 +50,17 @@ def epoch_ia_figures(df,tests,out):
                 if len(values):
                     box=ax.boxplot([values],positions=[pos],widths=.65,showfliers=False,patch_artist=True)
                     box['boxes'][0].set_facecolor(colors[j])
-            t=next(t for t in tests if t['family']=='IA_within_'+e and t['metric']==metric)
-            p=t.get('p_adjusted_across_4_epochs')
-            ax.text(3*i+1.5,1.01,'p28='+f'{p:.3g}' if p is not None else 'n insuficiente',ha='center',transform=ax.get_xaxis_transform(),fontsize=9)
+            if include_tests:
+                t=next(t for t in tests if t['family']=='IA_within_'+e and t['metric']==metric)
+                p=t.get('p_adjusted_across_4_epochs')
+                ax.text(3*i+1.5,1.01,'p28='+f'{p:.3g}' if p is not None else 'n insuficiente',ha='center',transform=ax.get_xaxis_transform(),fontsize=9)
         ax.set_xticks(positions,labels,fontsize=9);ax.set_ylabel(LABELS[metric]);ax.grid(axis='y',alpha=.2)
         ax.legend(handles=[Patch(color=c,label=l) for c,l in zip(colors,['Sem evidência detectada','Com evidência de IA'])],loc='upper left',bbox_to_anchor=(0,1.2),ncol=2,frameon=False)
         fig.suptitle(LABELS[metric]+' — comparação dentro de cada época',y=1.03)
         fig.tight_layout()
         name='F12_'+metric+'_por_epoca'
-        for ext in ['png','svg']:fig.savefig(out/'figures'/f'{name}.{ext}',bbox_inches='tight',dpi=150)
-        plt.close(fig);paths.append('figures/'+name+'.png')
+        for ext in ['png','svg']:fig.savefig(out/directory/f'{name}.{ext}',bbox_inches='tight',dpi=150)
+        plt.close(fig);paths.append(directory+'/'+name+'.png')
     return paths
 
 
@@ -136,66 +138,182 @@ def analyze(out):
     atomic_json(out/'analysis_status.json',summary)
     for p in [Path(__file__),BASE/'ck_pipeline/cohorts.py',BASE/'ck_pipeline/statistics.py']:
         target=out/'analysis_instruments'/p.relative_to(BASE);target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(p,target)
-    write_report(out,status,main,cells,mw,kw,paired,pairs,relaxed,figures,summary,config)
+    write_report(out,status,main,cells,pairs,summary,config)
     print(json.dumps({'output':str(out),'finished':status['finished'],'main_n':len(main),'IA':summary['main_ia'],'pairs':len(pairs),'within_epoch_p28_significant':len(hits)},ensure_ascii=False))
 
 
-def write_report(out,status,main,cells,mw,kw,paired,pairs,relaxed,figures,summary,config):
-    state='Concluída' if status['complete'] else 'Em andamento — resultados provisórios'
+def write_report(out,status,main,cells,pairs,summary,config):
+    """Render only repository counts and descriptive CK measurements."""
+    state='Concluída' if status['complete'] else 'Em andamento'
+    periods={'E1':'2009–2013','E2':'2014–2017','E3':'2018–2021','E4':'2022–coleta original'}
     counts=pd.DataFrame(cells)
-    visible=counts[counts.ia_status.isin(AI)]
-    display=visible[['epoch','ia_status','classified','primary_eligible']].copy()
-    display.columns=['Época','Grupo','Classificados','Elegíveis']
-    medians=main.groupby('ia_status')[['total_loc','classes','avg_cbo','avg_rfc','avg_wmc','avg_loc_method','avg_lcom']].median().reset_index()
-    within=[r for r in mw if r['family'].startswith('IA_within_')]
-    columns=['family','metric','n_a','n_b','p_adjusted','p_adjusted_across_4_epochs','cliffs_delta_a_minus_b','status']
-    pooled=[r for r in mw if r['family']=='IA_overall']
-    temporal=[r for r in mw if r['family'].startswith('E3_vs_E4')]
-    hits=summary['significant_epoch_ia_p28']
-    headline=(f'{len(hits)} contraste(s) época × métrica apresentaram diferença após a correção de 28 testes.' if hits else 'Nenhum contraste IA dentro de época apresentou diferença após a correção de 28 testes.')
-    basehits=summary['significant_pooled_ia']
-    pooled_message='Na comparação geral por IA, diferenças ajustadas em: '+(', '.join(LABELS[r['metric']] for r in basehits) if basehits else 'nenhuma das sete métricas')+'.'
-    pairhits=summary['matched_significant']
-    pair_message='No pareamento por época, versão conhecida e tamanho, diferenças ajustadas em: '+(', '.join(LABELS[r['metric']] for r in pairhits) if pairhits else 'nenhuma das sete métricas')+'.'
-    pairs_table=table([r for r in paired if r['family']=='all'],['metric','n_pairs','p_adjusted','rank_biserial_ia_minus_control','median_paired_difference','status'])
-    figure_html=''.join(f'<figure><img loading="lazy" src="{p}" alt="{html.escape(Path(p).stem)}"><figcaption>{html.escape(Path(p).stem)}</figcaption></figure>' for p in figures)
-    body=f'''<!doctype html><html lang="pt-BR"><meta charset="utf-8"><title>CK ampliado — épocas e evidência de IA</title>
-<style>body{{font:16px system-ui,sans-serif;color:#243746;max-width:1220px;margin:40px auto;padding:0 28px}}h1,h2{{color:#154c65}}h1{{font-size:32px}}p,li{{line-height:1.65}}.notice{{padding:20px 24px;background:#eaf4f6;border-left:5px solid #28798d}}.limits{{background:#fff2dc;padding:20px 24px}}.scroll{{overflow-x:auto}}table{{border-collapse:collapse;font-size:13px;margin:22px 0;width:100%}}th,td{{padding:8px;border-bottom:1px solid #dce3e8;text-align:left}}th{{background:#edf3f6}}img{{max-width:100%;height:auto}}figure{{margin:34px 0}}figcaption{{font-size:12px;color:#657987}}code{{background:#f0f1f2;padding:2px 4px}}a{{color:#176482}}</style>
-<h1>Épocas de criação × evidência de IA</h1><p>Ampliação da análise CK • {html.escape(summary['generated_at'])}</p>
-<div class="notice"><strong>{state}: {status['finished']:,} de 1.520 candidatos processados.</strong><br>
-{len(main):,} repositórios na análise principal. Com evidência: {summary['main_ia'].get('com_evidencia',0)}; sem evidência detectada: {summary['main_ia'].get('sem_evidencia_detectada',0)}.<br>
-População de origem: 38.456 repositórios já filtrados. E1 contém somente 20 candidatos na população e foi integralmente percorrida; as outras épocas receberam 500 candidatos cada.</div>
-<h2>Leitura dos resultados</h2><p><strong>{headline}</strong> {pooled_message} {pair_message}</p>
-<p>Diferença estatística descreve associação entre grupos neste recorte. Não prova que a IA causou a diferença, nem que maior ou menor métrica representa, isoladamente, melhor qualidade. Não encontrar significância também não demonstra equivalência. A conclusão deve considerar os estratos e o pareamento, e não somente o agrupamento geral.</p>
-<h2>Amostra nas oito células</h2>{table(display.to_dict('records'))}
-<p>E1: 2009–2013; E2: 2014–2017; E3: 2018–2021; E4: 2022–coleta original. As épocas descrevem criação, não autoria histórica do código atual. "Sem evidência detectada" é ausência dos sinais procurados, não prova de desenvolvimento sem IA.</p>
-<p>Seleção: primeiros 500 por época na ordem original de estrelas, push e ID; todos os 20 de E1. Não é uma amostra probabilística. O tamanho das células depende das evidências e dos critérios técnicos; não foram removidos negativos para tornar os grupos artificialmente iguais.</p>
-<h2>Tamanho e valores agregados</h2><p>Medianas entre repositórios; cada repositório contribui uma vez. A coluna LOC é código físico contado uma vez por arquivo.</p>{table(medians.to_dict('records'))}
-<h2>IA dentro de cada época</h2><p>Mann–Whitney bilateral. <code>p_adjusted</code>: Bonferroni de sete métricas dentro da época; <code>p_adjusted_across_4_epochs</code>: Bonferroni de 28 testes no conjunto das quatro épocas. Delta de Cliff segue "sem evidência menos com evidência": negativo indica valores maiores no grupo com evidência. N menor que dois em qualquer grupo é insuficiente.</p>
-<div class="scroll">{table(within,columns)}</div>
-<h2>E3 versus E4 e quatro épocas</h2><p>O contraste temporal não substitui a identificação de IA. Resultados gerais e separados por evidência, com Bonferroni de sete métricas por família:</p>
-{table(temporal,['family','metric','n_a','n_b','p_adjusted','cliffs_delta_a_minus_b','status'])}
-<p>Kruskal–Wallis e Dunn são calculados no conjunto e em cada grupo IA, com as quatro épocas presentes e pelo menos dois repositórios por época. Dunn só é acionado após global bruto &lt;0,05, corrigido por 42 comparações por família.</p>
-{table(kw,['family','metric','h','p_raw','p_adjusted_7','status'])}
-<p><a href="epochs_dunn.csv">Resultados Dunn</a> · <a href="epoch_ia_descriptive.csv">Medianas, Q1, Q3 e IQR por época × IA</a></p>
-<h2>Pareamento por tamanho e versão</h2><p>{len(pairs)} pares 1:1, sem reutilização de controles, mesma época, mesma versão principal de Boot declarada e identificada e LOC dentro de fator 2. A atribuição minimiza distância de log(LOC), com termos menores de estrelas e idade. Não utiliza métricas CK de resultado. Versões desconhecidas ou múltiplas ficam fora deste controle. Ele não garante equivalência de domínio, maturidade ou proporção de código produzido com IA.</p>
-<p>Auditoria de metadados: {int(main.boot_catalog_audited.sum())} catálogos Gradle foram conferidos por coordenadas e referências TOML no mesmo commit. Após detectar a confusão entre um plugin Docker e o Boot, o procedimento foi aplicado a todos os elegíveis desse formato, preservando as versões originais. Essa é uma emenda de qualidade posterior à primeira análise, sem alterar as métricas CK ou a inclusão principal. <a href="boot_catalog_qc.json">Fontes, hashes e correções dos catálogos</a>.</p>{pairs_table}
-<p>Wilcoxon bilateral para pares, com Bonferroni de sete métricas. Aqui o efeito é "com IA menos controle", por isso o sinal tem orientação diferente do delta nas tabelas não pareadas. <a href="matched_pairs.csv">Pares e distâncias de covariáveis</a> · <a href="matched_wilcoxon.csv">Resultados completos por época</a></p>
-<h2>Sensibilidades e auditoria</h2><p>A análise de cobertura ≥95% contém {len(relaxed)} repositórios. É exploratória, pois omissões podem não ser aleatórias. Outros controles: faixas de LOC, Boot, época × LOC, código de produção, densidades por KLOC e exclusão de sinais ambíguos de IA, nomes de classes duplicados ou candidatos educacionais sinalizados. A sensibilidade <code>no_review_only_positive</code> exclui o grupo conservador Coderabbit, coderabbitai[bot], Qodo/Codium, qodo-merge-pro[bot] e sourcery-ai[bot]; é uma regra de ambiguidade e não comprova uso exclusivo para revisão.</p>
-<p><a href="covariate_sensitivity.csv">Sensibilidades da análise principal</a> · <a href="coverage95_mann_whitney.csv">Comparações com cobertura ≥95%</a> · <a href="coverage95_sensitivity.csv">Controles com cobertura ≥95%</a> · <a href="attrition_primary_reason.csv">Motivo principal de exclusão por época e IA</a> · <a href="spring_boot_distribution.csv">Distribuição das versões do Spring Boot</a>. As famílias exploratórias são corrigidas separadamente; não existe correção única sobre todos os estratos explorados.</p>
-<div class="limits"><strong>Limites para interpretar.</strong><ul><li>Classificação e CK foram executados no mesmo commit. Arquivos de agente, gitignore e até 30 commits são sinais de adoção, não uma medida da porcentagem de código gerada. Configuração de revisão pode produzir um positivo sem geração de código.</li>
-<li>CK {html.escape(config['ck_version'])}, commit upstream 8a1ef916d597d33ad619d748b616bb7dbc3f0c36, com adaptador que preserva arquivo + classe. Todas as métricas deste comparativo foram recalculadas com o mesmo instrumento. Não se misturam valores do CK 0.7.0 anterior.</li>
-<li>O adaptador evita sobrescrita, mas não muda a resolução de tipos, o NOC ou as fórmulas. Nomes homônimos e dependências externas ausentes podem afetar herança/acoplamento. Cobertura de arquivos completa não garante resolução perfeita do AST. Há sensibilidade excluindo nomes duplicados.</li>
-<li>O limiar mínimo é 2.000 LOC, com confirmação técnica de Spring Boot e cobertura completa na análise principal. Erros não viram zeros nem negativos para IA. Candidatos ambíguos ainda precisam de revisão manual.</li>
-<li>A amostra favorece popularidade e atividade recente. E1 é estruturalmente limitada a 20 candidatos. O HEAD atual pode conter anos de evolução; diferenças entre coortes não representam automaticamente efeito da era de IA.</li></ul></div>
-<h2>Gráficos reproduzíveis</h2><p>Os boxplots omitem a exibição dos pontos extremos para facilitar a leitura; os cálculos e os testes mantêm todos os valores elegíveis. Quartis são descritivos, não intervalos de confiança.</p>{figure_html}
-<h2>Pacote de replicação</h2><p><a href="analysis_main.csv">Base principal / Power BI</a> · <a href="repository_metrics.csv">Todos os processados</a> · <a href="classification.csv">Classificações</a> · <a href="epoch_ia_counts.csv">Atrito por época/grupo</a> · <a href="exclusions.csv">Exclusões</a> · <a href="sampling_manifest.json">Plano fixado</a> · <a href="config.json">Configuração e hashes</a></p>
-<p>CSV de cada célula em <code>subsets/E1…E4/</code>; fontes de evidência, métricas de classe/método compactadas, SHA do commit e diagnóstico por repositório em <code>repositories/</code>. Gráficos em PNG e SVG. Intervalos apresentados são quartis descritivos, não intervalos de confiança.</p></html>'''
-    (out/'report.html').write_text(body,encoding='utf-8')
+    display=[]
+    for epoch in EPOCHS:
+        part=counts[counts.epoch.eq(epoch)]
+        processed=int(part.classified.sum())
+        a=int(part.loc[part.ia_status.eq(AI[0]),'primary_eligible'].sum())
+        b=int(part.loc[part.ia_status.eq(AI[1]),'primary_eligible'].sum())
+        display.append({'Era':epoch,'Período de criação':periods[epoch],
+                        'Candidatos processados':processed,'n_a · Sem evidência':a,
+                        'n_b · Com evidência':b,'Total elegível da era':a+b,
+                        'Fora da comparação':processed-a-b})
+    numeric=['Candidatos processados','n_a · Sem evidência','n_b · Com evidência',
+             'Total elegível da era','Fora da comparação']
+    totals={'Era':f'Total · {len(display)} eras','Período de criação':'Todos os períodos'}
+    totals.update({name:sum(row[name] for row in display) for name in numeric})
+    display.append(totals)
 
+    def pt_number(value):
+        return f'{value:,.3f}'.replace(',','§').replace('.',',').replace('§','.')
+
+    def measurement_table(rows):
+        frame=pd.DataFrame(rows)
+        if frame.empty:return '<p>Sem medições disponíveis para este recorte.</p>'
+        markup=frame.to_html(index=False,border=0,escape=True,float_format=pt_number,na_rep='—')
+        return '<div class="scroll">'+markup+'</div>'
+
+    def comparison_rows(a,b,label_a='Mediana A · Sem evidência',label_b='Mediana B · Com evidência'):
+        result=[]
+        for metric in METRICS:
+            av=pd.to_numeric(a[metric],errors='coerce').replace([np.inf,-np.inf],np.nan).dropna()
+            bv=pd.to_numeric(b[metric],errors='coerce').replace([np.inf,-np.inf],np.nan).dropna()
+            result.append({'Métrica CK':LABELS[metric],'n_a':len(av),'n_b':len(bv),
+                           label_a:av.median(),label_b:bv.median()})
+        return result
+
+    def ia_rows(frame):
+        return comparison_rows(frame[frame.ia_status.eq(AI[0])],frame[frame.ia_status.eq(AI[1])])
+
+    era_tables=''.join(
+        f'<h3>{epoch} · {periods[epoch]}</h3>'+measurement_table(ia_rows(main[main.epoch.eq(epoch)]))
+        for epoch in EPOCHS)
+    era_medians=[]
+    for epoch in EPOCHS:
+        part=main[main.epoch.eq(epoch)]
+        row={'Era':epoch,'Total de repositórios':len(part)}
+        row.update({LABELS[metric]:part[metric].median() for metric in METRICS})
+        era_medians.append(row)
+    temporal=''
+    for label,part in [('Todos os elegíveis',main),('Somente sem evidência detectada',main[main.ia_status.eq(AI[0])]),('Somente com evidência de IA',main[main.ia_status.eq(AI[1])])]:
+        temporal+=f'<h3>{label}</h3>'+measurement_table(comparison_rows(
+            part[part.epoch.eq('E3')],part[part.epoch.eq('E4')],
+            'Mediana A · E3','Mediana B · E4'))
+
+    control_ids={str(row['control_repository_id']) for row in pairs}
+    ia_ids={str(row['ia_repository_id']) for row in pairs}
+    control=main[main.repository_id.astype(str).isin(control_ids)]
+    treated=main[main.repository_id.astype(str).isin(ia_ids)]
+    if len(control)!=len(pairs) or len(treated)!=len(pairs):
+        raise ValueError('Os pares devem apontar para repositórios distintos da base principal.')
+    pair_table=measurement_table(comparison_rows(control,treated))
+    figures=epoch_ia_figures(main,[],out,include_tests=False,directory='figures_descriptive')
+    figure_html=''.join(
+        f'<figure><img loading="lazy" src="{path}" alt="{html.escape(LABELS[metric])} por era e evidência de IA">'
+        f'<figcaption>{html.escape(LABELS[metric])}: valores por repositório em cada era.</figcaption></figure>'
+        for metric,path in zip(METRICS,figures))
+    descriptions=[
+        {'Métrica':'CBO','O que mede':'Acoplamento: quantidade de outras classes relacionadas à classe, pelas regras do CK.'},
+        {'Métrica':'RFC','O que mede':'Quantidade de chamadas distintas de métodos identificadas na classe pela versão CK utilizada.'},
+        {'Métrica':'WMC','O que mede':'Complexidade acumulada dos métodos de uma classe, considerando decisões e caminhos lógicos.'},
+        {'Métrica':'LOC/método','O que mede':'Tamanho médio dos métodos, em linhas contadas pelo CK.'},
+        {'Métrica':'DIT','O que mede':'Profundidade da hierarquia de herança das classes.'},
+        {'Métrica':'NOC','O que mede':'Quantidade de subclasses diretas de uma classe.'},
+        {'Métrica':'LCOM*','O que mede':'Falta de coesão na variante normalizada do CK, baseada no compartilhamento de atributos pelos métodos.'},
+    ]
+    generated_at=now()
+    body=f'''<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Métricas CK por era e evidência de IA</title>
+<style>
+body{{font:16px system-ui,sans-serif;color:#243746;max-width:1220px;margin:40px auto;padding:0 28px}}
+h1,h2,h3{{color:#154c65}}h1{{font-size:32px}}h2{{margin-top:40px}}p,li{{line-height:1.65}}
+.notice{{padding:20px 24px;background:#eaf4f6;border-left:5px solid #28798d}}
+.limits{{background:#fff5e4;padding:18px 24px;margin:24px 0}}
+.scroll{{overflow-x:auto}}table{{border-collapse:collapse;font-size:14px;margin:22px 0;width:100%}}
+th,td{{padding:12px 10px;border-bottom:1px solid #dce3e8;text-align:left;vertical-align:top}}
+th{{background:#edf3f6}}tbody tr:nth-child(even){{background:#f8fafb}}
+#amostra tbody tr:last-child{{font-weight:bold;background:#eaf4f6}}
+img{{max-width:100%;height:auto}}figure{{margin:34px 0}}figcaption,.meta{{font-size:13px;color:#586d78}}
+code{{background:#f0f1f2;padding:2px 4px}}a{{color:#176482}}nav{{display:flex;gap:10px 20px;flex-wrap:wrap;margin:24px 0}}
+@media(max-width:650px){{body{{padding:0 16px;margin:24px auto}}h1{{font-size:27px}}table{{min-width:580px}}}}
+@media print{{body{{font-size:11pt;margin:0;padding:0}}nav{{display:none}}.scroll{{overflow:visible}}table{{font-size:9pt;min-width:0}}tr,figure{{break-inside:avoid}}h2,h3{{break-after:avoid}}thead{{display:table-header-group}}}}
+</style></head><body>
+<h1>Métricas CK por era e evidência de IA</h1>
+<p class="meta">Execução da análise: {html.escape(summary['generated_at'][:10])} · Apresentação atualizada: {html.escape(generated_at[:10])}</p>
+<div class="notice"><strong>{state}: {int(status['finished']):,} candidatos processados em {len(EPOCHS)} eras.</strong><br>
+{len(main)} repositórios na comparação principal: {totals['n_a · Sem evidência']} sem evidência detectada e {totals['n_b · Com evidência']} com evidência de IA.</div>
+<nav><a href="#amostra">Totais por era</a><a href="#metricas">O que medimos</a><a href="#geral">Comparação geral</a><a href="#por-era">IA em cada era</a><a href="#eras">Valores por era</a><a href="#graficos">Gráficos</a></nav>
+<section id="amostra"><h2>Repositórios analisados por era</h2>
+{measurement_table(display)}
+<p><strong>n_a</strong> é a quantidade de repositórios elegíveis sem evidência detectada de IA. <strong>n_b</strong> é a quantidade de elegíveis com evidência de IA. O total elegível de cada era é <strong>n_a + n_b</strong>. A linha final soma as quatro eras.</p>
+<p>“Candidatos processados” inclui todos os repositórios percorridos. “Fora da comparação” reúne os que não atenderam aos critérios técnicos ou tiveram falhas. Um candidato de E2 ficou com classificação indeterminada e está nesse total de exclusões.</p>
+<p>As eras representam a <strong>data de criação do repositório</strong>. O código medido é a versão recuperada na coleta de outubro de 2026. Um repositório antigo pode conter alterações recentes e uso recente de IA.</p></section>
+<section id="metricas"><h2>O que estamos medindo</h2>
+{measurement_table(descriptions)}
+<p>Calculamos primeiro as médias por repositório. As tabelas mostram a <strong>mediana desses valores em cada grupo</strong>: o valor central após ordenar os repositórios. Cada projeto contribui uma vez, independentemente da quantidade de classes. Para LOC/método, a média é calculada sobre os métodos; para as demais métricas, sobre as classes com valores válidos.</p>
+<p>Nas comparações por IA, <strong>A = sem evidência detectada</strong> e <strong>B = com evidência</strong>. As contagens <code>n_a</code> e <code>n_b</code> informam quantos repositórios têm valores válidos para cada métrica. Os valores são exibidos com três casas decimais.</p></section>
+<section id="geral"><h2>Métricas CK: comparação geral</h2>
+{measurement_table(ia_rows(main))}
+<p>Compare os valores de cada métrica entre as duas colunas. Por exemplo, a mediana de RFC é {pt_number(main.loc[main.ia_status.eq(AI[0]),'avg_rfc'].median())} no grupo sem evidência e {pt_number(main.loc[main.ia_status.eq(AI[1]),'avg_rfc'].median())} no grupo com evidência. Esses números descrevem os projetos desta amostra.</p>
+<p>Valores maiores ou menores não representam, isoladamente, uma nota de qualidade. A interpretação depende do indicador, do tamanho e das características dos projetos.</p></section>
+<section id="por-era"><h2>Métricas CK: com e sem evidência em cada era</h2>
+<p>Em cada tabela, A é o grupo sem evidência detectada e B é o grupo com evidência. As duas colunas de mediana mostram o valor medido da mesma métrica nesses grupos.</p>
+{era_tables}</section>
+<section id="eras"><h2>Métricas CK nas quatro eras</h2>
+<p>Medianas de todos os elegíveis de cada era, reunindo os dois grupos de evidência.</p>
+{measurement_table(era_medians)}
+<h2>Comparação de E3 com E4</h2>
+<p>Nestas tabelas, <strong>A = E3</strong> e <strong>B = E4</strong>. Portanto, <code>n_a</code> e <code>n_b</code> passam a contar os repositórios dessas eras.</p>
+{temporal}</section>
+<section><h2>Métricas em projetos de tamanho e versão semelhantes</h2>
+<p>Este recorte reúne {len(pairs)} pares: um projeto com evidência e outro sem evidência, da mesma era e da mesma versão principal identificada do Spring Boot, com tamanho em LOC dentro de um fator de dois. Aqui, A volta a ser o grupo sem evidência e B o grupo com evidência.</p>
+{pair_table}
+<p>As colunas apresentam as medianas das métricas dos dois grupos de projetos pareados.</p></section>
+<section id="graficos"><h2>Distribuição das métricas CK por era</h2>
+<p>A linha dentro de cada caixa mostra a mediana. A caixa reúne os 50% centrais dos valores. A marcação <code>n</code> indica quantos repositórios estão representados. Os pontos extremos ficam ocultos no gráfico para facilitar a leitura, mas permanecem no cálculo das medianas e nos arquivos de dados.</p>
+{figure_html}</section>
+<section class="limits"><h2>Contexto da medição</h2><ul>
+<li>“Sem evidência detectada” significa ausência dos sinais procurados; não comprova ausência de uso de IA. Os sinais encontrados também não medem quanto código foi produzido por IA.</li>
+<li>A comparação principal exige Spring Boot confirmado, pelo menos 2.000 linhas de Java pelo contador adotado e extração completa no diagnóstico definido. Erros não são transformados em zeros.</li>
+<li>A lista veio de 38.456 repositórios filtrados: todos os 20 candidatos de E1 e os primeiros 500 de E2, E3 e E4 na ordenação original por estrelas, push e identificador.</li>
+<li>As medições usam CK {html.escape(config['ck_version'])}. A análise estática e a resolução de dependências têm limitações, especialmente para herança e acoplamento.</li>
+<li>Os valores descrevem versões atuais de projetos criados em épocas diferentes. Para medir evolução histórica ou amadurecimento do mesmo sistema, é necessário medir também suas versões antigas.</li>
+</ul></section>
+<h2>Dados das medições</h2><p><a href="analysis_main.csv">Métricas por repositório elegível</a> · <a href="repository_metrics.csv">Todos os candidatos processados</a> · <a href="epoch_ia_counts.csv">Contagens por era e evidência</a> · <a href="classification.csv">Classificações</a> · <a href="exclusions.csv">Exclusões</a></p>
+</body></html>'''
+    (out/'report.html').write_text(body,encoding='utf-8')
+    snapshot=out/'presentation_instruments'/Path(__file__).name
+    snapshot.parent.mkdir(parents=True,exist_ok=True)
+    shutil.copyfile(Path(__file__),snapshot)
+    sources=['analysis_main.csv','epoch_ia_counts.csv','matched_pairs.csv','status.json','analysis_status.json','config.json']
+    atomic_json(out/'report_presentation.json',{
+        'generated_at':generated_at,'mode':'descriptive_ck_metrics_and_counts',
+        'eras':len(EPOCHS),'processed':totals['Candidatos processados'],
+        'eligible':totals['Total elegível da era'],
+        'n_a':totals['n_a · Sem evidência'],'n_b':totals['n_b · Com evidência'],
+        'source_sha256':{name:digest(out/name) for name in sources},
+        'renderer':str(snapshot.relative_to(out)),'renderer_sha256':digest(snapshot),
+        'report_sha256':digest(out/'report.html'),
+        'figures':[{'path':path,'sha256':digest(out/path)} for path in figures]})
+
+
+def render_existing_report(out):
+    """Refresh the presentation from saved measurements without reanalysis."""
+    out=out.resolve()
+    main=pd.read_csv(out/'analysis_main.csv',dtype={'repository_id':str,'spring_boot_major':str})
+    cells=pd.read_csv(out/'epoch_ia_counts.csv').to_dict('records')
+    pairs=pd.read_csv(out/'matched_pairs.csv',dtype={'ia_repository_id':str,'control_repository_id':str}).to_dict('records')
+    status=json.loads((out/'status.json').read_text())
+    summary=json.loads((out/'analysis_status.json').read_text())
+    config=json.loads((out/'config.json').read_text())['config']
+    write_report(out,status,main,cells,pairs,summary,config)
+    print(json.dumps({'report':str(out/'report.html'),'eras':len(EPOCHS),'eligible':len(main),'mode':'descriptive'},ensure_ascii=False))
 
 def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--output',type=Path,default=DEFAULT)
-    args=p.parse_args();analyze(args.output)
+    p.add_argument('--report-only',action='store_true',help='Atualizar somente o HTML e os gráficos descritivos a partir dos resultados salvos.')
+    args=p.parse_args()
+    if args.report_only:render_existing_report(args.output)
+    else:analyze(args.output)
 
 if __name__=='__main__':main()

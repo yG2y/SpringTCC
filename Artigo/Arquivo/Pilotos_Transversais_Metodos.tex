@@ -1,0 +1,51 @@
+% Arquivo de procedimentos transversais anteriores; não integra o protocolo longitudinal.
+\subsection{Relação com os pilotos anteriores}
+
+As execuções abaixo são preservadas como pilotos transversais. Mediram código atual e agruparam repositórios pela criação; portanto, seus valores e testes não descrevem versões históricas nem validam as comparações repetidas do novo desenho. Seus artefatos permanecem em execuções separadas, sem sobrescrita.
+
+\subsection{Piloto transversal inicial de outubro de 2026}
+\label{subsec:execucao-ck}
+
+O arquivo de classificação disponibilizado para esta etapa contém 50 repositórios da seleção final de 38.456: 16 com evidência de IA e 34 sem evidência detectada. Os identificadores e nomes foram conferidos contra a seleção e os rótulos foram preservados. Portanto, a comparação desta execução é restrita a esse subconjunto; os demais 38.406 não foram tratados como negativos para IA. As classes e métodos são agregados primeiro por repositório, que constitui a unidade estatística.
+
+O código analisado foi recuperado da branch padrão em 5 de outubro de 2026. Cada resultado registra o SHA do commit, a data da extração, as métricas brutas e a configuração. O CSV de classificação não informa SHA ou horário de detecção, de modo que não se pode garantir identidade temporal entre a classificação e o código medido. A coorte de criação do repositório não representa a data de autoria de seu código atual.
+
+A extração é estática, sem executar os projetos nem baixar suas dependências. O corte de 2.000 LOC utiliza linhas físicas de Java com código, excluindo comentários e linhas vazias e contando cada arquivo uma única vez. A soma do LOC das classes do CK não aplica o corte, pois pode contar classes internas repetidamente. Incluem-se fontes e testes versionados, com exclusões de diretórios de construção, fontes geradas e dependências registradas no protocolo; uma análise de sensibilidade utiliza apenas caminhos de produção.
+
+Além dos critérios de tamanho e confirmação de Spring Boot nos arquivos de construção, a análise principal exige cobertura completa dos arquivos com tipos mensuráveis no diagnóstico adotado. Arquivos contendo somente anotações não são exigidos como classes. Resultados com omissões, erros ou métricas ausentes permanecem disponíveis, mas não integram a inferência principal. A versão do CK utilizada não suporta todos os recursos recentes da linguagem, e repositórios com tipos homônimos em diferentes módulos podem apresentar omissões. O atrito decorrente dessas limitações é informado por grupo e pode introduzir viés de seleção. O CBO obtido é o indicador geral do CK, não uma implementação específica de acoplamento horizontal entre pacotes de domínio.
+
+Esta descrição registra o protocolo transversal anterior, sem estender seus testes a medições repetidas. O protocolo completo e os comandos de reprodução estão em \texttt{METODOLOGIA\_METRICAS\_CK.md}. Medianas, quartis, testes ajustados, tamanhos de efeito e diagnósticos de cobertura são exportados em CSV e em relatório HTML. O contraste por evidência de IA e o contraste E3/E4 são famílias distintas de testes; ambos permitem apenas interpretação associativa, sem atribuição causal à IA.
+
+\subsection{Piloto transversal ampliado: coorte de criação e evidência de IA}
+\label{subsec:ampliacao-ck}
+
+Após o piloto, fixou-se uma nova lista de 1.520 candidatos, exclusivamente da seleção final: todos os 20 de E1 e os primeiros 500 de cada uma das épocas E2, E3 e E4. Preservou-se a ordenação original por estrelas decrescentes, último push decrescente e identificador crescente. O teto de 500 é operacional, não resulta de cálculo de poder e não configura amostragem probabilística. A lista foi congelada antes da comparação das métricas; o encerramento depende de percorrer todos os candidatos, não da quantidade de positivos ou dos p-valores. Não é possível ampliar E1 além de 20 candidatos sem alterar a população de origem.
+
+A detecção em dois níveis foi refeita no mesmo commit analisado pela CK. Na implementação local, o nível~1 inspeciona arquivos versionados e entradas de gitignore; na ausência de sinais, o nível~2 inspeciona até 30 commits, incluindo trailers e identidades de autor em nome/e-mail Git, que não equivalem exatamente ao login da API. Evidências e SHA são preservados. O grupo negativo é denominado ``sem evidência detectada'': nem essa ausência, nem um arquivo de configuração positivo, mede a fração do código produzida por IA. Sinais genéricos, arquivos de revisão e entradas de gitignore podem ser ambíguos, motivando análises de sensibilidade.
+
+A ampliação usa CK 0.7.1-SNAPSHOT, compilado do commit upstream \texttt{8a1ef916d597d33ad619d748b616bb7dbc3f0c36}, com JDT 3.44.0, configuração Java~21 e JVM OpenJDK~17.0.20.1. Trata-se de uma revisão de desenvolvimento identificada por hash, não de uma release publicada 0.7.1. O build upstream registrou 298 testes, com quatro ignorados e nenhuma falha ou erro. Um adaptador mantém as saídas por chave composta arquivo e classe, evitando sobrescrita de classes homônimas de módulos distintos pelo Runner. As fórmulas e os visitantes CK permanecem os originais. A resolução de tipos e herança continua sujeita às limitações do CK e das dependências ausentes; preservar as linhas não resolve todas as ambiguidades. Não se misturam valores do instrumento antigo com os novos.
+
+Mantêm-se o mínimo de 2.000 LOC físicos de código Java, a confirmação técnica de Spring Boot, as sete médias por repositório e a cobertura completa na análise principal. As oito células época $\times$ evidência são exportadas separadamente. Aplicam-se Mann--Whitney dentro de cada época com Bonferroni de sete métricas e, adicionalmente, de 28 testes sobre as quatro épocas; Kruskal--Wallis/Dunn e E3/E4 são apresentados tanto no conjunto quanto por evidência de IA. A correção de Dunn continua considerando 42 comparações por família.
+
+Os controles complementares incluem faixas fixas de LOC (2--10 mil, acima de 10--50 mil, acima de 50--150 mil e acima de 150 mil), versão principal do Spring Boot e época $\times$ LOC. Um pareamento exploratório 1:1, sem reutilização de controles, exige mesma época, mesma versão principal conhecida e LOC dentro de fator dois. A atribuição maximiza o número de pares e minimiza distância em log(LOC), acrescida de termos menores de estrelas e idade; não utiliza métricas CK de resultado. Os pares são comparados por Wilcoxon bilateral, Bonferroni de sete métricas e efeito rank-biserial. Isso não controla confundidores não observados nem torna os grupos equivalentes em domínio.
+
+Sensibilidades adicionais consideram apenas produção, densidades por KLOC, cobertura de arquivos de pelo menos 95\% e exclusão de nomes de classe duplicados, candidatos educacionais sinalizados ou positivos sustentados somente por gitignore/revisão. Essas famílias exploratórias têm correção própria; não há correção única sobre todos os estratos explorados. Falhas operacionais são repetidas com a mesma configuração e mantêm histórico auditável. O protocolo fixado e os comandos constam de \texttt{METODOLOGIA\_AMOSTRA\_AMPLIADA.md}.
+
+Uma emenda de qualidade dos metadados foi aplicada após a primeira análise ampliada: a inspeção de um número de versão anômalo revelou confusão entre um plugin Docker e Spring Boot. Foram então conferidos todos os elegíveis com catálogos Gradle identificados, independentemente das métricas observadas. A resolução passou a usar coordenadas explícitas e referências TOML no mesmo SHA. Fontes, valores originais e correções são preservados; o pareamento foi regenerado. Essa emenda não altera a amostra principal nem os valores CK e não é apresentada como parte do planejamento inicialmente congelado.
+
+\subsection{Experimentos já realizados}
+\label{subsec:piloto}
+
+Três experimentos foram executados para validar instrumentos e procedimentos antes da análise principal. Os resultados quantitativos obtidos em cada experimento são apresentados na Seção~\ref{sec:resultados}.
+
+\textbf{Piloto de extração CK (novembro de 2025):} \emph{scripts} em Python clonaram repositórios Java públicos e invocaram a CK, em versão histórica não harmonizada com o instrumento atual, e consolidaram CBO, RFC, WMC, DIT, NOC, LOC e indicadores auxiliares em CSV. O artefato \texttt{analise\_repositorios\_java.csv} reúne a análise de 520 repositórios, incluindo projetos Spring Boot de ampla adoção, como \texttt{spring-projects/spring-boot} (CBO médio 5,45; WMC 4,96; DIT 1,29) e \texttt{xkcoding/spring-boot-demo} (CBO 5,05; WMC 2,77; DIT 1,13). O piloto confirma que o ambiente (Python, Git, JVM e CK) está operacional e que as métricas previstas são extraíveis em escala.
+
+\textbf{Coleta completa da amostra (setembro de 2026):} a execução do \emph{pipeline} de coleta e filtragem foi concluída em 20 de setembro de 2026. Os quantitativos de repositórios coletados, os filtros aplicados e o conjunto final selecionado são detalhados na Seção~\ref{subsec:res-coleta}.
+
+\textbf{Piloto de identificação de agentes de IA (setembro de 2026):} o \emph{script} \texttt{detectar\_agentes\_ia.py} foi executado sobre os 50 repositórios mais populares da amostra (por estrelas), aplicando a metodologia de dois níveis descrita na Subseção~\ref{subsec:identificacao-ia}. Os resultados quantitativos e a tabela de agentes identificados são apresentados na Seção~\ref{subsec:res-piloto-ia}.
+
+
+\subsection{Sequência de entrega do TCC II}
+\label{subsec:cronograma}
+
+A execução segue cinco marcos: recontagem da população e descoberta ampliada; validação do instrumento histórico; piloto e revisão das evidências; ampliação da lista congelada; consolidação do artigo, relatório histórico, tabelas e pacote de reprodução. A dupla compartilha a conferência dos resultados: coleta e rastreabilidade do histórico devem ser verificadas junto à cobertura e interpretação das métricas, antes da redação das conclusões.

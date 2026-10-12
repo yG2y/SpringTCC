@@ -1,95 +1,10 @@
-\section*{Apêndice A --- Planejamento das visualizações longitudinais}
+\section*{Apêndice A --- Visualizações históricas e leitura dos resultados}
 \label{ap:visualizacoes}
 
-As Tabelas~\ref{tab:planejamento-figuras} e~\ref{tab:planejamento-figuras-cont}
-apresentam o planejamento das visualizações que serão geradas durante a
-execução do TCC~II, relacionando cada figura prevista à respectiva questão
-de pesquisa, à métrica principal e ao tipo de visualização adotado. O
-conjunto foi desenhado para permitir a comparação entre as quatro épocas
-históricas E1 (2009--2013), E2 (2014--2017), E3 (2018--2021) e E4
-(2022--atual), conforme delimitação operacional na
-Seção~\ref{sec:metodologia}, e para evidenciar \emph{(i)}~tendências
-evolutivas de longo prazo (E1~$\rightarrow$~E3) e \emph{(ii)}~o eventual
-impacto da Era da IA assistida (E3~$\rightarrow$~E4).
+Os gráficos de trajetória usam o ano do snapshot no eixo horizontal e uma medida CK por painel. São apresentadas separadamente a média anual entre projetos e as linhas individuais dos projetos criados entre 2009 e 2013. O ponto parcial de 2026 é identificado; lacunas de cobertura não são substituídas por zero. Mudanças na média anual podem decorrer da composição de projetos disponíveis, enquanto a trajetória individual acompanha o mesmo repositório.
 
-\begin{table}[htbp]
-\centering
-\caption{Planejamento das visualizações por questão de pesquisa (parte~1).}
-\label{tab:planejamento-figuras}
-\scriptsize
-\setlength{\tabcolsep}{3pt}
-\renewcommand{\arraystretch}{1.05}
-\begin{tabularx}{\linewidth}{|c|c|>{\raggedright\arraybackslash}p{0.20\linewidth}|>{\raggedright\arraybackslash}p{0.18\linewidth}|>{\raggedright\arraybackslash}X|}
-\hline
-\textbf{Fig.} & \textbf{Q} & \textbf{Métrica} & \textbf{Visualização} & \textbf{Descrição} \\
-\hline
-F1 & Q1 & CBO &
-\emph{Boxplot} &
-Acoplamento médio entre classes por época (mediana, dispersão e
-\emph{outliers}). \\
-\hline
-F2 & Q1 & RFC &
-\emph{Boxplot} &
-Métodos potencialmente acionados por classe em cada época. \\
-\hline
-F3 & Q1 & CBO, RFC &
-Série temporal &
-Medianas de CBO e RFC ao longo das quatro épocas. \\
-\hline
-F4 & Q2 & WMC &
-\emph{Boxplot} &
-Complexidade lógica agregada por classe em cada época. \\
-\hline
-F5 & Q2 & \texttt{avg\_loc\_method} &
-\emph{Boxplot} &
-Tamanho médio dos métodos; hipótese de métodos maiores na Era da IA. \\
-\hline
-\end{tabularx}
-\end{table}
+As tabelas por época apresentam uma contribuição por repositório, com quantidades de projetos e snapshots. O total de projetos únicos não deve ser obtido pela soma das épocas, pois um mesmo projeto pode atravessá-las. Os contrastes por evidência distinguem presença observada, ausência de evidência e transição dentro da época.
 
-\begin{table}[htbp]
-\centering
-\caption{Planejamento das visualizações por questão de pesquisa (parte~2).}
-\label{tab:planejamento-figuras-cont}
-\scriptsize
-\setlength{\tabcolsep}{3pt}
-\renewcommand{\arraystretch}{1.05}
-\begin{tabularx}{\linewidth}{|c|c|>{\raggedright\arraybackslash}p{0.20\linewidth}|>{\raggedright\arraybackslash}p{0.18\linewidth}|>{\raggedright\arraybackslash}X|}
-\hline
-\textbf{Fig.} & \textbf{Q} & \textbf{Métrica} & \textbf{Visualização} & \textbf{Descrição} \\
-\hline
-F6 & Q2 & \texttt{avg\_wmc}, \texttt{avg\_loc\_method} &
-Dispersão &
-Correlação entre tamanho e complexidade médios, colorida por época. \\
-\hline
-F7 & Q3 & DIT &
-\emph{Violin plot} &
-Profundidade média da hierarquia de herança por época. \\
-\hline
-F8 & Q3 & NOC &
-\emph{Violin plot} &
-Número médio de subclasses diretas por classe. \\
-\hline
-F9 & Q3 & LCOM\_HS &
-\emph{Boxplot} &
-Ausência média de coesão por repositório em cada época. \\
-\hline
-F10 & Q4 & Todas &
-Painel comparativo E3 vs.\ E4 &
-Contraste da Era da IA, com \emph{p-valores} ajustados (Mann--Whitney). \\
-\hline
-\end{tabularx}
-\end{table}
+Nas tabelas antes/depois, \texttt{n\_a} é o número de projetos com medição anterior e \texttt{n\_b} o número com medição posterior. Os pares correspondem aos mesmos repositórios. A diferença é calculada dentro de cada par antes de obter a média; para os mesmos pares e pesos, ela corresponde à média posterior menos a média anterior. Os SHA e as datas permitem conferir cada versão utilizada.
 
-{\footnotesize Elaborado pelos autores. Os artefatos finais (PNG,
-\emph{notebooks} Python/R e arquivo \texttt{.pbix} do Power~BI) serão
-publicados no pacote de replicação previsto para o TCC~II.}
-
-\medskip
-Para garantir a comparabilidade entre figuras, todas as visualizações
-adotarão a mesma paleta de cores por época, escala consistente
-entre painéis e identificação explícita das épocas E1 (2009--2013),
-E2 (2014--2017), E3 (2018--2021) e E4 (2022--atual). Sempre que
-cabível, os \emph{p-valores} ajustados (Bonferroni) dos testes de
-Kruskal--Wallis e Mann--Whitney (E3 \emph{vs.} E4) serão reportados no
-próprio painel ou em legenda associada.
+As sete medidas conservam suas unidades originais. Não se cria uma nota composta de maturidade. Não se apresentam p-valores, deltas de Cliff ou afirmações automáticas de melhoria. Arquivos CSV, gráficos PNG/SVG, referências fixadas, evidências, diagnósticos e hashes do instrumento integram o pacote de reprodução. Os relatórios dos pilotos transversais anteriores permanecem identificados separadamente.

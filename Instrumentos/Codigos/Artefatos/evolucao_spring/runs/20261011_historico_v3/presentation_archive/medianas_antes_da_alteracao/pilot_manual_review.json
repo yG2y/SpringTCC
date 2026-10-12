@@ -1,0 +1,1569 @@
+{
+  "sample_sha256": "9b70cff4f543618b22efc677f9bd38c6cb7caf3cd4636c39119693ba9d972883",
+  "instrument_hash": "85e09bc90252105345554cb7698faf7b491879f6883ad6b8a639b759a9ed3abd",
+  "reviewed_at": "2026-10-11T20:22:42.087523+00:00",
+  "reviewer": "Codex: inspeção assistida por IA de fontes Git e evidências; não substitui revisão independente dos autores",
+  "repositories": [
+    {
+      "repository_id": "2948949",
+      "full_name": "BroadleafCommerce/BroadleafCommerce",
+      "assessment": "Spring tradicional até o corte de 2016; primeira declaração Boot de produção em common/pom.xml no corte de 2017 (spring-boot-autoconfigure). Os três usos Boot de teste foram distinguidos. Nenhum sinal de IA até o corte parcial. Transição declarada, sem inferir migração completa nem causalidade.",
+      "observations": [
+        {
+          "year": 2009,
+          "sha": "69f3f11fcd4d831c9bef8fa3f8560911a09d23a4",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2010,
+          "sha": "11bb490efa6b0b9c9a1b24f467f7bfab5f224ff9",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2011,
+          "sha": "5580ff9b4b54e54d94b41f4cfe54f0ac6b6d783e",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2012,
+          "sha": "30f1ac332fb300d86cfac70441ce4f3317d78137",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2013,
+          "sha": "099ac357d9617e7f574cd92cb548607ce5852966",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2014,
+          "sha": "cb5b03d435bd2d05ceefbd6aba840ee14eab9813",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2015,
+          "sha": "ef8310407ad1744e33edf6e03d737119d1854d50",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2016,
+          "sha": "1ac596c6251bf15863fc2ff383637b9d91cce212",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2017,
+          "sha": "9fd5d6e86dd7dc46ffaa90ac97ee39621be442b4",
+          "framework": "spring_boot",
+          "boot_present": true,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2018,
+          "sha": "6490baa7c0d5d2f6a9d9eafecada6aa74d2cb6b2",
+          "framework": "spring_boot",
+          "boot_present": true,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2019,
+          "sha": "c91a4746ae06cde525b8c8f4aee5a13c1336c92e",
+          "framework": "spring_boot",
+          "boot_present": true,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2020,
+          "sha": "2989f00fd2a92af5c1bcf3b3d8fad4ba355e56e0",
+          "framework": "spring_boot",
+          "boot_present": true,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2021,
+          "sha": "c80c3649848b97ef5aebf8f8a76099bc176f82cb",
+          "framework": "spring_boot",
+          "boot_present": true,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2022,
+          "sha": "a8d4a48243348685903456e589b76e6cee763824",
+          "framework": "spring_boot",
+          "boot_present": true,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2023,
+          "sha": "23c3c36cfa5c28190429eb2b127b89b9c240e1e7",
+          "framework": "spring_boot",
+          "boot_present": true,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2024,
+          "sha": "fd1e0d8571c707aef7baf9fea03cd10e17a7fe0c",
+          "framework": "spring_boot",
+          "boot_present": true,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2025,
+          "sha": "337c5469290d7b0ba9c76ff49cca2e70d944d350",
+          "framework": "spring_boot",
+          "boot_present": true,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2026,
+          "sha": "9a5d7e909c1148420b8738f1561308879baff1de",
+          "framework": "spring_boot",
+          "boot_present": true,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        }
+      ],
+      "references": [
+        "repositories/2948949/snapshot_plan.csv",
+        "repositories/2948949/ai_history.json",
+        "repositories/2948949/snapshots/"
+      ]
+    },
+    {
+      "repository_id": "12090282",
+      "full_name": "markiewb/springjerseywebappprototype",
+      "assessment": "Spring tradicional nas declarações Maven; nenhum marco Boot ou IA detectado no histórico inspecionado. Versões pequenas permanecem registradas e não alcançam o corte CK principal. SHA repetido nos anos inativos foi preservado.",
+      "observations": [
+        {
+          "year": 2009,
+          "sha": null,
+          "framework": null,
+          "boot_present": null,
+          "ia_status": "indeterminada",
+          "eligible": false
+        },
+        {
+          "year": 2010,
+          "sha": null,
+          "framework": null,
+          "boot_present": null,
+          "ia_status": "indeterminada",
+          "eligible": false
+        },
+        {
+          "year": 2011,
+          "sha": null,
+          "framework": null,
+          "boot_present": null,
+          "ia_status": "indeterminada",
+          "eligible": false
+        },
+        {
+          "year": 2012,
+          "sha": null,
+          "framework": null,
+          "boot_present": null,
+          "ia_status": "indeterminada",
+          "eligible": false
+        },
+        {
+          "year": 2013,
+          "sha": "b4abd0d27c2a9451f0abb06a90ad1cd01a119c73",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2014,
+          "sha": "b4abd0d27c2a9451f0abb06a90ad1cd01a119c73",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2015,
+          "sha": "b4abd0d27c2a9451f0abb06a90ad1cd01a119c73",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2016,
+          "sha": "b4abd0d27c2a9451f0abb06a90ad1cd01a119c73",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2017,
+          "sha": "b4abd0d27c2a9451f0abb06a90ad1cd01a119c73",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2018,
+          "sha": "b4abd0d27c2a9451f0abb06a90ad1cd01a119c73",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2019,
+          "sha": "b4abd0d27c2a9451f0abb06a90ad1cd01a119c73",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2020,
+          "sha": "b4abd0d27c2a9451f0abb06a90ad1cd01a119c73",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2021,
+          "sha": "b4abd0d27c2a9451f0abb06a90ad1cd01a119c73",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2022,
+          "sha": "b4abd0d27c2a9451f0abb06a90ad1cd01a119c73",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2023,
+          "sha": "b4abd0d27c2a9451f0abb06a90ad1cd01a119c73",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2024,
+          "sha": "b4abd0d27c2a9451f0abb06a90ad1cd01a119c73",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2025,
+          "sha": "b4abd0d27c2a9451f0abb06a90ad1cd01a119c73",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2026,
+          "sha": "b4abd0d27c2a9451f0abb06a90ad1cd01a119c73",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        }
+      ],
+      "references": [
+        "repositories/12090282/snapshot_plan.csv",
+        "repositories/12090282/ai_history.json",
+        "repositories/12090282/snapshots/"
+      ]
+    },
+    {
+      "repository_id": "14874487",
+      "full_name": "zlogic/vogon-java",
+      "assessment": "Primeiro Boot em 2014: dependências de produção em vogon-web/vogon-web-service/pom.xml e versões 1.1.6.RELEASE declaradas no gerenciamento do pom raiz. A versão de 2013 não confirma Spring; a transição Spring→Boot é censurada à esquerda, sem par comparável. Nenhum vestígio IA.",
+      "observations": [
+        {
+          "year": 2009,
+          "sha": null,
+          "framework": null,
+          "boot_present": null,
+          "ia_status": "indeterminada",
+          "eligible": false
+        },
+        {
+          "year": 2010,
+          "sha": null,
+          "framework": null,
+          "boot_present": null,
+          "ia_status": "indeterminada",
+          "eligible": false
+        },
+        {
+          "year": 2011,
+          "sha": null,
+          "framework": null,
+          "boot_present": null,
+          "ia_status": "indeterminada",
+          "eligible": false
+        },
+        {
+          "year": 2012,
+          "sha": "41ddc15ac52d3328d19c842da75628b1de234a72",
+          "framework": "not_confirmed",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2013,
+          "sha": "61711a9932b61cba90dcde7705c4f96698036cae",
+          "framework": "not_confirmed",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2014,
+          "sha": "1ecac6296bd492b0955f2141293632aaa69047e1",
+          "framework": "spring_boot",
+          "boot_present": true,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2015,
+          "sha": "1ecac6296bd492b0955f2141293632aaa69047e1",
+          "framework": "spring_boot",
+          "boot_present": true,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2016,
+          "sha": "1ecac6296bd492b0955f2141293632aaa69047e1",
+          "framework": "spring_boot",
+          "boot_present": true,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2017,
+          "sha": "a7f093861f98dea47d656dc7b0e9e880ac664856",
+          "framework": "spring_boot",
+          "boot_present": true,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2018,
+          "sha": "a7f093861f98dea47d656dc7b0e9e880ac664856",
+          "framework": "spring_boot",
+          "boot_present": true,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2019,
+          "sha": "93f702a6994a4d80c65306a1d6bfa3c3ad446b45",
+          "framework": "spring_boot",
+          "boot_present": true,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2020,
+          "sha": "a6179ddcbc56ca3b36e1992bf3d436f88c00cadc",
+          "framework": "spring_boot",
+          "boot_present": true,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2021,
+          "sha": "a6179ddcbc56ca3b36e1992bf3d436f88c00cadc",
+          "framework": "spring_boot",
+          "boot_present": true,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2022,
+          "sha": "a6179ddcbc56ca3b36e1992bf3d436f88c00cadc",
+          "framework": "spring_boot",
+          "boot_present": true,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2023,
+          "sha": "a6179ddcbc56ca3b36e1992bf3d436f88c00cadc",
+          "framework": "spring_boot",
+          "boot_present": true,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2024,
+          "sha": "a6179ddcbc56ca3b36e1992bf3d436f88c00cadc",
+          "framework": "spring_boot",
+          "boot_present": true,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2025,
+          "sha": "a6179ddcbc56ca3b36e1992bf3d436f88c00cadc",
+          "framework": "spring_boot",
+          "boot_present": true,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2026,
+          "sha": "a6179ddcbc56ca3b36e1992bf3d436f88c00cadc",
+          "framework": "spring_boot",
+          "boot_present": true,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        }
+      ],
+      "references": [
+        "repositories/14874487/snapshot_plan.csv",
+        "repositories/14874487/ai_history.json",
+        "repositories/14874487/snapshots/"
+      ]
+    },
+    {
+      "repository_id": "8247368",
+      "full_name": "mybatis/spring",
+      "assessment": "Spring tradicional ao longo das versões; primeiro vestígio IA em commit de identidade copilot-swe-agent[bot], 35d010158410f56bfc3455255086a23c5df35201, integrado em 2026-03-14T17:27:29Z. Não há arquivo de agente presente em 2026; o sinal é histórico, sem retroação aos cortes anteriores.",
+      "observations": [
+        {
+          "year": 2009,
+          "sha": null,
+          "framework": null,
+          "boot_present": null,
+          "ia_status": "indeterminada",
+          "eligible": false
+        },
+        {
+          "year": 2010,
+          "sha": "1445b4f41467dc429ac3b944d67a2a8e92b2f5aa",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2011,
+          "sha": "b3dff5655f903faac3707f1cfbc713939aff2636",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2012,
+          "sha": "42e2bc5f9a132554da57d35117462fe202890239",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2013,
+          "sha": "6e817bce76d520096fc8bcdee834e3cffcbd99cb",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2014,
+          "sha": "427b8d8b7908fca2947158770ceabcd9301dd71d",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2015,
+          "sha": "698aa21f1faa37f4f1abb2c4aa27b6ae86327095",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2016,
+          "sha": "76f7e0df49cf7d411bfff9624fa7c556eafe7e2a",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2017,
+          "sha": "2948bfeb5a6b0ed2663d649225c20f7c0f9b5906",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2018,
+          "sha": "c40732a7a2e793a9490584e2447ea9cc3be3f3c0",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2019,
+          "sha": "de8316e3630c2004c0aa3cd81148a9119d7daeea",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2020,
+          "sha": "290578bef25fcc00d5c5243566f8b291b8becdac",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2021,
+          "sha": "b0cbbfae5bfc1180a41b873e3f92a3f97bc28d1f",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2022,
+          "sha": "c3c6dabb05fb2aded48537ab173cb2f68fc62a3e",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2023,
+          "sha": "fda5e153a699357ea3925c77002579fd3443e150",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2024,
+          "sha": "7bb78a5a9e304655709b1925f9fc42d5c0d75d7f",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2025,
+          "sha": "5b94b98c656b1d2dbdeb8bb117e65842457599e4",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2026,
+          "sha": "9bc504d6b14b7240c8f93726ce68bf85d9df479b",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "com_evidencia",
+          "eligible": true
+        }
+      ],
+      "references": [
+        "repositories/8247368/snapshot_plan.csv",
+        "repositories/8247368/ai_history.json",
+        "repositories/8247368/snapshots/"
+      ]
+    },
+    {
+      "repository_id": "11793859",
+      "full_name": "adrianmilne/jpa-lucene-spring-demo",
+      "assessment": "Demonstração sinalizada mantida no sorteio. Declarações Spring tradicionais, sem Boot ou IA observados. Nenhum snapshot supera os critérios da comparação principal; os valores CK disponíveis continuam registrados.",
+      "observations": [
+        {
+          "year": 2009,
+          "sha": null,
+          "framework": null,
+          "boot_present": null,
+          "ia_status": "indeterminada",
+          "eligible": false
+        },
+        {
+          "year": 2010,
+          "sha": null,
+          "framework": null,
+          "boot_present": null,
+          "ia_status": "indeterminada",
+          "eligible": false
+        },
+        {
+          "year": 2011,
+          "sha": null,
+          "framework": null,
+          "boot_present": null,
+          "ia_status": "indeterminada",
+          "eligible": false
+        },
+        {
+          "year": 2012,
+          "sha": null,
+          "framework": null,
+          "boot_present": null,
+          "ia_status": "indeterminada",
+          "eligible": false
+        },
+        {
+          "year": 2013,
+          "sha": "d2b40fd71780dd127f30e0c2406196f2e455f269",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2014,
+          "sha": "d2b40fd71780dd127f30e0c2406196f2e455f269",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2015,
+          "sha": "fb382c1ef81108bb804a45d6b4727dc3ee6431cd",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2016,
+          "sha": "fb382c1ef81108bb804a45d6b4727dc3ee6431cd",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2017,
+          "sha": "fb382c1ef81108bb804a45d6b4727dc3ee6431cd",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2018,
+          "sha": "fb382c1ef81108bb804a45d6b4727dc3ee6431cd",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2019,
+          "sha": "fb382c1ef81108bb804a45d6b4727dc3ee6431cd",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2020,
+          "sha": "fb382c1ef81108bb804a45d6b4727dc3ee6431cd",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2021,
+          "sha": "fb382c1ef81108bb804a45d6b4727dc3ee6431cd",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2022,
+          "sha": "fb382c1ef81108bb804a45d6b4727dc3ee6431cd",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2023,
+          "sha": "fb382c1ef81108bb804a45d6b4727dc3ee6431cd",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2024,
+          "sha": "fb382c1ef81108bb804a45d6b4727dc3ee6431cd",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2025,
+          "sha": "fb382c1ef81108bb804a45d6b4727dc3ee6431cd",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2026,
+          "sha": "fb382c1ef81108bb804a45d6b4727dc3ee6431cd",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        }
+      ],
+      "references": [
+        "repositories/11793859/snapshot_plan.csv",
+        "repositories/11793859/ai_history.json",
+        "repositories/11793859/snapshots/"
+      ]
+    },
+    {
+      "repository_id": "3148979",
+      "full_name": "spring-projects/spring-security",
+      "assessment": "Código do próprio Spring Security: grupo org.springframework.security e fontes Java nesse namespace conferidos no pom/build.gradle dos cortes antigos e recentes. Os módulos com Boot não constituem adoção por uma aplicação independente. Todos os 18 cortes são framework_source. Primeiro sinal IA em 2026-03-18 no trailer de 49bea1dd15c54dea1e7d642dd3b4a55e9dbd9500; preservado como evidência, fora da comparação principal de aplicações.",
+      "observations": [
+        {
+          "year": 2009,
+          "sha": "b737fa451ded0661133c76bf2192f0758701afd7",
+          "framework": "framework_source",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2010,
+          "sha": "313fe78cc17ee370e63eb39381c6de3bf06347c3",
+          "framework": "framework_source",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2011,
+          "sha": "22225effcca867527a8e1d2e38821b84ebcd7f45",
+          "framework": "framework_source",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2012,
+          "sha": "d06eae996741139003344e2b0e8dbc0c7f3cf1dd",
+          "framework": "framework_source",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2013,
+          "sha": "add3aae6ef35f307dec4de578635aea23f7dd385",
+          "framework": "framework_source",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2014,
+          "sha": "07124311da6f1e3858188b62b291ce8f9321d2b3",
+          "framework": "framework_source",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2015,
+          "sha": "1f32e96d31c6a149e480ebdb5ce0274889877995",
+          "framework": "framework_source",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2016,
+          "sha": "38492a5794e27e543da8801ca55ae4d7d314fbba",
+          "framework": "framework_source",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2017,
+          "sha": "b9152701a65df5b3fa78fe4bd2a946018f9ca352",
+          "framework": "framework_source",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2018,
+          "sha": "d77b12d229cfbd38c324ad55ba090c2e3748a756",
+          "framework": "framework_source",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2019,
+          "sha": "22c222005b967447af69c54d8777101957deda40",
+          "framework": "framework_source",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2020,
+          "sha": "848bd448374156020210c329b886fca010a5f710",
+          "framework": "framework_source",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2021,
+          "sha": "ad907457eeeee46da101215f5408d3cd98de4881",
+          "framework": "framework_source",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2022,
+          "sha": "65b9dbf031fddff61fb8e13baa67d55131c99055",
+          "framework": "framework_source",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2023,
+          "sha": "6b9ba644830842c70192b48f8069a35fd7463747",
+          "framework": "framework_source",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2024,
+          "sha": "fe9edc8d2227aaf239dd208f8da27c5ef5ac8ca2",
+          "framework": "framework_source",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2025,
+          "sha": "6d6552a602b5b57fdceb8188797b55154542ed40",
+          "framework": "framework_source",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2026,
+          "sha": "126f02bf0fbda597f5ef86fd6305b62e5282104a",
+          "framework": "framework_source",
+          "boot_present": false,
+          "ia_status": "com_evidencia",
+          "eligible": false
+        }
+      ],
+      "references": [
+        "repositories/3148979/snapshot_plan.csv",
+        "repositories/3148979/ai_history.json",
+        "repositories/3148979/snapshots/"
+      ]
+    },
+    {
+      "repository_id": "6966619",
+      "full_name": "hawtio/hawtio",
+      "assessment": "Spring tradicional em 2013; Boot de produção em hawtio-springboot/pom.xml no corte 2014, versão declarada 1.2.0.RELEASE. Primeiro arquivo AGENTS.md em cd9be1aadbe321d578e2ee5598228ccfbfa6b0da, 2026-09-02, lido e confirmado como orientações explícitas para agentes de IA. O nome Codex/OpenAI é apenas a família da heurística: o arquivo não identifica exclusivamente uma ferramenta nem comprova a fração de código gerada.",
+      "observations": [
+        {
+          "year": 2009,
+          "sha": null,
+          "framework": null,
+          "boot_present": null,
+          "ia_status": "indeterminada",
+          "eligible": false
+        },
+        {
+          "year": 2010,
+          "sha": null,
+          "framework": null,
+          "boot_present": null,
+          "ia_status": "indeterminada",
+          "eligible": false
+        },
+        {
+          "year": 2011,
+          "sha": null,
+          "framework": null,
+          "boot_present": null,
+          "ia_status": "indeterminada",
+          "eligible": false
+        },
+        {
+          "year": 2012,
+          "sha": "bc2fc65d2e6451d83bde9c5faf13c80b27bdc678",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2013,
+          "sha": "9f055d71cb359c8933bf02af7afa7ef0d54871cf",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2014,
+          "sha": "42cd562c2d552711625887d4fb79b2473a8b724d",
+          "framework": "spring_boot",
+          "boot_present": true,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2015,
+          "sha": "5c99f94eac50aeaf999b3933d053736ea48c0f2e",
+          "framework": "spring_boot",
+          "boot_present": true,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2016,
+          "sha": "ed40c79a574d826094223a4891f10e4176345470",
+          "framework": "spring_boot",
+          "boot_present": true,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2017,
+          "sha": "12122a0a7bc3c73c38dbb9366e818eeaa54b768d",
+          "framework": "spring_boot",
+          "boot_present": true,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2018,
+          "sha": "873b550975f487d59dc3987e82e226042f9098cd",
+          "framework": "spring_boot",
+          "boot_present": true,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2019,
+          "sha": "8d80564e664aff6032f58ed081b8143bb390b14e",
+          "framework": "spring_boot",
+          "boot_present": true,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2020,
+          "sha": "811e7490c03fb14453f9c8724e7c4f4c8c460b33",
+          "framework": "spring_boot",
+          "boot_present": true,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2021,
+          "sha": "449cacbdec8909a47e19208963b4c4226d2da9da",
+          "framework": "spring_boot",
+          "boot_present": true,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2022,
+          "sha": "68a48ad66fbf8985e554cc3c2a6c4044fd40cf26",
+          "framework": "spring_boot",
+          "boot_present": true,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2023,
+          "sha": "7ae9a236806e0d0620ab7b2eb6118e0f025e83cf",
+          "framework": "spring_boot",
+          "boot_present": true,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2024,
+          "sha": "a28869a6131cb0792ac703384642e4d10a8d564e",
+          "framework": "spring_boot",
+          "boot_present": true,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2025,
+          "sha": "e56132b39dcfa334e18ccc78cc0750bc03fe9577",
+          "framework": "spring_boot",
+          "boot_present": true,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2026,
+          "sha": "db08d63a60677a78f947bd478a0f2d2b5c518e10",
+          "framework": "spring_boot",
+          "boot_present": true,
+          "ia_status": "com_evidencia",
+          "eligible": true
+        }
+      ],
+      "references": [
+        "repositories/6966619/snapshot_plan.csv",
+        "repositories/6966619/ai_history.json",
+        "repositories/6966619/snapshots/"
+      ]
+    },
+    {
+      "repository_id": "15389906",
+      "full_name": "phasenraum2010/addresslist_jsf",
+      "assessment": "Sem confirmação de Spring nos arquivos de construção inspecionados e sem evidência de IA. Não foi convertido em ausência comprovada de Spring ou IA. Mantido na amostra com exclusões técnicas por snapshot.",
+      "observations": [
+        {
+          "year": 2009,
+          "sha": null,
+          "framework": null,
+          "boot_present": null,
+          "ia_status": "indeterminada",
+          "eligible": false
+        },
+        {
+          "year": 2010,
+          "sha": null,
+          "framework": null,
+          "boot_present": null,
+          "ia_status": "indeterminada",
+          "eligible": false
+        },
+        {
+          "year": 2011,
+          "sha": null,
+          "framework": null,
+          "boot_present": null,
+          "ia_status": "indeterminada",
+          "eligible": false
+        },
+        {
+          "year": 2012,
+          "sha": null,
+          "framework": null,
+          "boot_present": null,
+          "ia_status": "indeterminada",
+          "eligible": false
+        },
+        {
+          "year": 2013,
+          "sha": "5b319ef3d08aa267e17a084ed837c101b76328e8",
+          "framework": "not_confirmed",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2014,
+          "sha": "8a9d8eed67990f212ea94ff16558aff6628dfb42",
+          "framework": "not_confirmed",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2015,
+          "sha": "8a9d8eed67990f212ea94ff16558aff6628dfb42",
+          "framework": "not_confirmed",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2016,
+          "sha": "8a9d8eed67990f212ea94ff16558aff6628dfb42",
+          "framework": "not_confirmed",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2017,
+          "sha": "8a9d8eed67990f212ea94ff16558aff6628dfb42",
+          "framework": "not_confirmed",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2018,
+          "sha": "8a9d8eed67990f212ea94ff16558aff6628dfb42",
+          "framework": "not_confirmed",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2019,
+          "sha": "8a9d8eed67990f212ea94ff16558aff6628dfb42",
+          "framework": "not_confirmed",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2020,
+          "sha": "8a9d8eed67990f212ea94ff16558aff6628dfb42",
+          "framework": "not_confirmed",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2021,
+          "sha": "8a9d8eed67990f212ea94ff16558aff6628dfb42",
+          "framework": "not_confirmed",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2022,
+          "sha": "8a9d8eed67990f212ea94ff16558aff6628dfb42",
+          "framework": "not_confirmed",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2023,
+          "sha": "8a9d8eed67990f212ea94ff16558aff6628dfb42",
+          "framework": "not_confirmed",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2024,
+          "sha": "8a9d8eed67990f212ea94ff16558aff6628dfb42",
+          "framework": "not_confirmed",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2025,
+          "sha": "8a9d8eed67990f212ea94ff16558aff6628dfb42",
+          "framework": "not_confirmed",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2026,
+          "sha": "8a9d8eed67990f212ea94ff16558aff6628dfb42",
+          "framework": "not_confirmed",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        }
+      ],
+      "references": [
+        "repositories/15389906/snapshot_plan.csv",
+        "repositories/15389906/ai_history.json",
+        "repositories/15389906/snapshots/"
+      ]
+    },
+    {
+      "repository_id": "7369025",
+      "full_name": "Kowsi/Jira_Report_Tracker",
+      "assessment": "Spring tradicional; nenhum Boot ou vestígio IA observado. As versões não satisfazem o corte da comparação principal; repetição de SHA nos anos posteriores é registrada como inatividade.",
+      "observations": [
+        {
+          "year": 2009,
+          "sha": null,
+          "framework": null,
+          "boot_present": null,
+          "ia_status": "indeterminada",
+          "eligible": false
+        },
+        {
+          "year": 2010,
+          "sha": null,
+          "framework": null,
+          "boot_present": null,
+          "ia_status": "indeterminada",
+          "eligible": false
+        },
+        {
+          "year": 2011,
+          "sha": null,
+          "framework": null,
+          "boot_present": null,
+          "ia_status": "indeterminada",
+          "eligible": false
+        },
+        {
+          "year": 2012,
+          "sha": "aec94d810909727628de5b989db89af631db345b",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2013,
+          "sha": "aec94d810909727628de5b989db89af631db345b",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2014,
+          "sha": "b8bb6fae31c55e5e97c69f9ed8f2d75b28d04369",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2015,
+          "sha": "b8bb6fae31c55e5e97c69f9ed8f2d75b28d04369",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2016,
+          "sha": "b8bb6fae31c55e5e97c69f9ed8f2d75b28d04369",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2017,
+          "sha": "b8bb6fae31c55e5e97c69f9ed8f2d75b28d04369",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2018,
+          "sha": "b8bb6fae31c55e5e97c69f9ed8f2d75b28d04369",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2019,
+          "sha": "b8bb6fae31c55e5e97c69f9ed8f2d75b28d04369",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2020,
+          "sha": "b8bb6fae31c55e5e97c69f9ed8f2d75b28d04369",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2021,
+          "sha": "b8bb6fae31c55e5e97c69f9ed8f2d75b28d04369",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2022,
+          "sha": "b8bb6fae31c55e5e97c69f9ed8f2d75b28d04369",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2023,
+          "sha": "b8bb6fae31c55e5e97c69f9ed8f2d75b28d04369",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2024,
+          "sha": "b8bb6fae31c55e5e97c69f9ed8f2d75b28d04369",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2025,
+          "sha": "b8bb6fae31c55e5e97c69f9ed8f2d75b28d04369",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        },
+        {
+          "year": 2026,
+          "sha": "b8bb6fae31c55e5e97c69f9ed8f2d75b28d04369",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": false
+        }
+      ],
+      "references": [
+        "repositories/7369025/snapshot_plan.csv",
+        "repositories/7369025/ai_history.json",
+        "repositories/7369025/snapshots/"
+      ]
+    },
+    {
+      "repository_id": "3310595",
+      "full_name": "helmedeiros/myCAB",
+      "assessment": "Spring tradicional, sem transição Boot ou sinal IA observado. Quinze snapshots elegíveis no painel; os demais cortes ausentes/inelegíveis permanecem explícitos. Sem substituição de candidato.",
+      "observations": [
+        {
+          "year": 2009,
+          "sha": null,
+          "framework": null,
+          "boot_present": null,
+          "ia_status": "indeterminada",
+          "eligible": false
+        },
+        {
+          "year": 2010,
+          "sha": null,
+          "framework": null,
+          "boot_present": null,
+          "ia_status": "indeterminada",
+          "eligible": false
+        },
+        {
+          "year": 2011,
+          "sha": null,
+          "framework": null,
+          "boot_present": null,
+          "ia_status": "indeterminada",
+          "eligible": false
+        },
+        {
+          "year": 2012,
+          "sha": "6378f35bc580737856d77beaaa6cf96c6011fb06",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2013,
+          "sha": "ba91090241c06a5e919340f32608b594552dcd3f",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2014,
+          "sha": "ba91090241c06a5e919340f32608b594552dcd3f",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2015,
+          "sha": "ba91090241c06a5e919340f32608b594552dcd3f",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2016,
+          "sha": "ba91090241c06a5e919340f32608b594552dcd3f",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2017,
+          "sha": "ba91090241c06a5e919340f32608b594552dcd3f",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2018,
+          "sha": "ba91090241c06a5e919340f32608b594552dcd3f",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2019,
+          "sha": "ba91090241c06a5e919340f32608b594552dcd3f",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2020,
+          "sha": "ba91090241c06a5e919340f32608b594552dcd3f",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2021,
+          "sha": "ba91090241c06a5e919340f32608b594552dcd3f",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2022,
+          "sha": "ba91090241c06a5e919340f32608b594552dcd3f",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2023,
+          "sha": "ba91090241c06a5e919340f32608b594552dcd3f",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2024,
+          "sha": "ba91090241c06a5e919340f32608b594552dcd3f",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2025,
+          "sha": "ba91090241c06a5e919340f32608b594552dcd3f",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        },
+        {
+          "year": 2026,
+          "sha": "7bd319747ddd4a643eade8533d8e79d1bc251f46",
+          "framework": "spring_traditional",
+          "boot_present": false,
+          "ia_status": "sem_evidencia_detectada",
+          "eligible": true
+        }
+      ],
+      "references": [
+        "repositories/3310595/snapshot_plan.csv",
+        "repositories/3310595/ai_history.json",
+        "repositories/3310595/snapshots/"
+      ]
+    }
+  ],
+  "method": "Conferência dos dez candidatos E1; conteúdos e datas de marcos positivos; classificação de escopo; censura, ausência e repetição de SHA."
+}

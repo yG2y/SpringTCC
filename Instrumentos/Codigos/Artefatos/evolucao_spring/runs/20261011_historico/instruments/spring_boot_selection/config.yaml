@@ -1,0 +1,100 @@
+# Criterios da selecao de repositorios Spring Boot.
+# Alterar um valor aqui nao muda execucoes ja gravadas: cada run copia este arquivo.
+
+target_count: 50000
+
+# Linguagem principal informada pelo GitHub (campo REST language).
+# Aplicado localmente para registrar o antes/depois da exclusao.
+primary_language: Java
+
+discovery:
+  # Populacao operacional: topic do GitHub, nao evidencia de dependencia.
+  query: "topic:spring-boot"
+  # fork:true INCLUI forks na busca. Sem esse qualificativo a Search os omite
+  # e o filtro de forks ficaria invisivel. Nao usar language:Java.
+  include_forks_in_search: true
+  start_year: 2008
+  end_year: 2026
+  api_version: "2022-11-28"
+
+activity:
+  max_inactive_years: 3
+  field: pushed_at
+
+exclude:
+  forks: true
+  mirrors: true
+  archived: true
+  disabled: true
+  templates: true
+  empty: true
+  inactive: true
+  non_software: true
+
+ordering:
+  - field: stargazers_count
+    direction: desc
+  - field: pushed_at
+    direction: desc
+  - field: repository_id
+    direction: asc
+
+# Exclusao automatica so com sinais de alta confianca.
+# Termos ambiguos (example, demo, sample, learning) apenas sinalizam.
+non_software:
+  auto_exclude_topics:
+    - tutorial
+    - tutorials
+    - course
+    - courses
+    - workshop
+    - workshops
+    - bootcamp
+    - bootcamps
+    - cheatsheet
+    - cheat-sheet
+    - cheat-sheets
+    - awesome-list
+    - awesome
+    - slides
+    - slideshow
+    - lecture
+    - lectures
+    - mooc
+    - udemy
+    - exercism
+  auto_exclude_name_regex:
+    - "^awesome-.+"
+    - ".+-(course|tutorial|workshops?|bootcamps?|cheatsheets?|slides)$"
+    - "^(course|tutorial|workshop|bootcamp)-.+"
+  flag_name_regex:
+    - "example"
+    - "examples"
+    - "demo"
+    - "sample"
+    - "samples"
+    - "tutorial"
+    - "course"
+    - "learning"
+  flag_description_terms:
+    - tutorial
+    - course
+    - workshop
+    - bootcamp
+    - cheatsheet
+    - awesome list
+    - "how to"
+    - textbook
+    - "lecture notes"
+
+technical_validation:
+  files:
+    - pom.xml
+    - build.gradle
+    - build.gradle.kts
+  patterns:
+    - "org\\.springframework\\.boot"
+    - "spring-boot-starter-parent"
+    - "spring-boot-starter"
+    - "spring-boot-maven-plugin"
+    - "id\\s*\\(?\\s*['\\\"]org\\.springframework\\.boot['\\\"]"

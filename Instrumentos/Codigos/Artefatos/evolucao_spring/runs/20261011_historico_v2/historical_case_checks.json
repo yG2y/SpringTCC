@@ -1,0 +1,32 @@
+{
+  "reviewed_at": "2026-10-11T20:50:36.249275+00:00",
+  "reviewer": "Codex: inspection of stored Git objects, not independent author review",
+  "sample_sha256": "9b70cff4f543618b22efc677f9bd38c6cb7caf3cd4636c39119693ba9d972883",
+  "cases": [
+    {
+      "repository_id": "9396682",
+      "repository": "spring-guides/gs-rest-service",
+      "year": 2013,
+      "sha": "5244889fcb1ed5ebc52ef3107ac809b7efbc73f3",
+      "path": "complete/pom.xml",
+      "finding": "spring-boot-starter-parent 0.5.0.M6 with production spring-boot-starter-web; legitimate prerelease, below LOC cutoff",
+      "eligible": false
+    },
+    {
+      "repository_id": "4528518",
+      "repository": "surajcm/Poseidon",
+      "years": [
+        2009,
+        2010,
+        2011
+      ],
+      "sha": "2b09e6121c6d46839702c22ff7daf25fc1fd3fb2",
+      "latest_dated_ancestor": [
+        "5ee60d6ef0adf09401a1dfad5767dbd3a89b025f",
+        "2012-07-23T06:12:41+05:30",
+        "2012-07-23T06:12:41+05:30"
+      ],
+      "finding": "2009-dated selected commit reaches an ancestor dated 2012; annual records correctly temporal_anomaly with no CK metrics"
+    }
+  ]
+}

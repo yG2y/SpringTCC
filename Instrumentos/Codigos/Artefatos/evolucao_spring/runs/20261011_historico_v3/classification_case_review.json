@@ -1,0 +1,130 @@
+{
+  "reviewed_at": "2026-10-11T22:21:21.046995+00:00",
+  "reviewer": "Codex, AI-assisted inspection of exact Git blobs; not independent human adjudication",
+  "cases": [
+    {
+      "repository_id": "2352744",
+      "name": "apereo/cas",
+      "year": 2016,
+      "sha": "891a791e8882295cef808de556ab37450c1d6f20",
+      "framework": "spring_boot",
+      "usage_file": "core/cas-server-core-authentication/build.gradle",
+      "usage_lines": [
+        {
+          "line": 14,
+          "text": "    compile libraries.springboot"
+        }
+      ],
+      "catalog_file": "gradle/dependencies.gradle",
+      "catalog_lines": [
+        {
+          "line": 1,
+          "text": "ext.libraries = ["
+        },
+        {
+          "line": 1159,
+          "text": "        springboot              : ["
+        },
+        {
+          "line": 1180,
+          "text": "                dependencies.create(\"org.springframework.boot:spring-boot-starter-web:$springBootVersion\") {"
+        }
+      ]
+    },
+    {
+      "repository_id": "2352744",
+      "name": "apereo/cas",
+      "year": 2020,
+      "sha": "f6b85643134269274a1dd8918e5efeb8a683bdba",
+      "framework": "spring_boot",
+      "usage_file": "build.gradle",
+      "usage_lines": [
+        {
+          "line": 81,
+          "text": "apply from: rootProject.file(\"gradle/dependencies.gradle\")"
+        },
+        {
+          "line": 547,
+          "text": "        api libraries.springboot"
+        }
+      ],
+      "catalog_file": "gradle/dependencies.gradle",
+      "catalog_lines": [
+        {
+          "line": 1,
+          "text": "ext.libraries = ["
+        },
+        {
+          "line": 2357,
+          "text": "        springboot              : ["
+        },
+        {
+          "line": 2376,
+          "text": "                dependencies.create(\"org.springframework.boot:spring-boot-starter-web:$springBootVersion\") {"
+        }
+      ]
+    },
+    {
+      "repository_id": "2352744",
+      "name": "apereo/cas",
+      "year": 2025,
+      "sha": "c400f6df159fd565381313191d40dda85b62e652",
+      "framework": "spring_boot",
+      "usage_file": "build.gradle",
+      "usage_lines": [
+        {
+          "line": 99,
+          "text": "apply from: rootProject.file(\"gradle/dependencies.gradle\")"
+        },
+        {
+          "line": 439,
+          "text": "        api libraries.springboot"
+        },
+        {
+          "line": 460,
+          "text": "        testImplementation libraries.springboottomcat"
+        }
+      ],
+      "catalog_file": "gradle/dependencies.gradle",
+      "catalog_lines": [
+        {
+          "line": 1,
+          "text": "ext.libraries = ["
+        },
+        {
+          "line": 2772,
+          "text": "        springboot                 : ["
+        },
+        {
+          "line": 2773,
+          "text": "                dependencies.create(libs.spring.boot.starter.aspectj.get()) {"
+        }
+      ]
+    },
+    {
+      "repository_id": "256594115",
+      "name": "smac89/robotsjavabackend",
+      "year": 2020,
+      "sha": "aeb44fe2ad828bb76927898570aa4fda24bcaba2",
+      "framework": "spring_boot",
+      "usage_file": "backend/build.gradle",
+      "usage_lines": [
+        {
+          "line": 120,
+          "text": "    implementation libraries.spring_boot"
+        }
+      ],
+      "catalog_file": "build.gradle",
+      "catalog_lines": [
+        {
+          "line": 52,
+          "text": "    ext.libraries = ["
+        },
+        {
+          "line": 54,
+          "text": "            spring_boot     : 'org.springframework.boot:spring-boot-starter-jooq',"
+        }
+      ]
+    }
+  ]
+}
