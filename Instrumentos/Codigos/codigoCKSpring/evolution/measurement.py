@@ -45,7 +45,8 @@ def instrument(out):
         hashes['ck_tools/'+relative] = actual
     config = dict(protocol=PROTOCOL, java=java, java_version=version, jar=str(tools/'ck-8a1ef916.jar'),
                   runner_classes=str(tools/'classes'), heap='2g', partition=100, ck_timeout=1800,
-                  clone_timeout=900, min_loc=2000, loc_scope='production and tests, physical Java SLOC',
+                  clone_timeout=900, min_loc=2000, min_java_files=10,
+                  loc_scope='production and tests, physical Java SLOC, distinct paths',
                   hashes=hashes)
     config['instrument_hash'] = hashlib.sha256(json.dumps(config, sort_keys=True).encode()).hexdigest()
     path = out/'instrument.json'
@@ -70,7 +71,7 @@ def gz_csv(path, rows, fields):
 
 def measure(source, paths, config, out, retry_errors=False):
     inventory = []
-    for path in sorted(paths):
+    for path in sorted(set(paths)):
         if not is_source(path) or not (source/path).is_file():
             continue
         content = (source/path).read_bytes()
@@ -94,7 +95,10 @@ def measure(source, paths, config, out, retry_errors=False):
                       extracted_at=now(), status='running', java_files=len(inventory),
                       total_loc=sum(r['sloc'] for r in inventory),
                       production_loc=sum(r['sloc'] for r in inventory if not r['is_test']),
-                      test_loc=sum(r['sloc'] for r in inventory if r['is_test']))
+                      test_loc=sum(r['sloc'] for r in inventory if r['is_test']),
+                      java_code_files=sum(r['sloc'] > 0 for r in inventory),
+                      production_java_files=sum(not r['is_test'] for r in inventory),
+                      test_java_files=sum(r['is_test'] for r in inventory))
         gz_csv(dest/'source_inventory.csv.gz', inventory, ['file','sha256','sloc','is_test','measurable_type'])
         try:
             if not inventory:
@@ -154,12 +158,19 @@ def measure(source, paths, config, out, retry_errors=False):
         return result
 
 
-def eligibility(measured, framework, submodules=0):
+def eligibility(measured, framework, submodules=0, min_loc=2000, min_java_files=10):
     reasons = []
     if measured['status'] != 'ok': reasons.append(measured['status'])
     if not framework['framework_confirmed']: reasons.append(framework['framework'])
     if framework['diagnostics']: reasons.append('framework_parse_diagnostic')
-    if measured.get('total_loc',0) < 2000: reasons.append('below_2000_loc')
+    if measured.get('total_loc') is None:
+        reasons.append('missing_loc')
+    elif measured['total_loc'] < min_loc:
+        reasons.append(f'below_{min_loc}_loc')
+    if measured.get('java_files') is None:
+        reasons.append('missing_java_files')
+    elif measured['java_files'] < min_java_files:
+        reasons.append(f'below_{min_java_files}_java_files')
     if submodules: reasons.append('uninspected_submodule')
     if any(measured.get(m) is None or not math.isfinite(measured[m]) for m in METRICS): reasons.append('missing_metric')
     return reasons

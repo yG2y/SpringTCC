@@ -1,366 +1,43 @@
-# Etapa CK com classificação IA (05/10/2026)
+# Instrumentos do TCC
 
-A execução ampliada está documentada em [METODOLOGIA_AMOSTRA_AMPLIADA.md](METODOLOGIA_AMOSTRA_AMPLIADA.md): 1.520 candidatos fixados, oito células época × IA, classificação alinhada ao commit e CK identificado por hash. Use `analisar_ck.py collect` para extrair, `comparar_epocas.py` para o comparativo ampliado e `auditar_ampliacao.py` para verificar o resultado contra os arquivos brutos. `recuperar_ck.py` incorpora repetições documentadas de falhas de DNS com a mesma configuração científica.
+O protocolo vigente é o [painel da seleção original](METODOLOGIA_PAINEL_ORIGINAL.md).
+Leia também as [regras do estudo](../../../AGENTS.md) e a
+[auditoria](../../../docs/AUDITORIA_TCC.md). A entrada é a seleção de 38.456 IDs;
+o recorte até 2017 contém todos os 540 candidatos autorizados.
 
-O piloto de 50 repositórios permanece preservado em [METODOLOGIA_METRICAS_CK.md](METODOLOGIA_METRICAS_CK.md). O comando antigo `analisar_ck.py report` descreve esse piloto; use o comparador específico para a ampliação. Os scripts e as versões abaixo documentam instrumentos e pilotos anteriores.
-
-# Analise de Metricas de Codigo - Repositorios Java
-
-Script Python para analise automatizada de metricas de qualidade de codigo dos top 10 repositorios Java do GitHub.
-
-## Funcionalidades
-
-Este script realiza analise completa de metricas de codigo Java, incluindo:
-
-### Questoes de Pesquisa (Research Questions)
-
-**Q1: Qual e o nivel medio de complexidade ciclomatica dos projetos Java?**
-- M1: Complexidade ciclomatica media por metodo
-- M2: Numero medio de condicionais por classe
-- M3: Linhas de codigo por metodo (LOC/metodo)
-
-**Q2: Existe correlacao entre complexidade ciclomatica e numero de bugs?**
-- M1: Media de complexidade ciclomatica por projeto
-- M2: Quantidade total de issues marcadas como "bug"
-- M3: Correlacao de Pearson entre complexidade e bugs
-
-**Q3: Qual e a proporcao media de codigo duplicado e sua relacao com manutenibilidade?**
-- M1: Percentual de duplicacao de codigo
-- M2: Indice de manutenibilidade
-- M3: Relacao entre duplicacao e esforco de manutencao
-
-## Requisitos
-
-### Software Necessario
-
-1. **Python 3.8+**
-2. **Java JDK/JRE** (para executar a ferramenta CK)
-3. **Git** (opcional, para clonar repositorios)
-
-### Dependencias Python
-
-```bash
-pip install -r requirements.txt
-```
-
-## Configuracao
-
-### 1. Token do GitHub
-
-Voce precisa de um token de acesso pessoal do GitHub:
-
-1. Acesse: https://github.com/settings/tokens
-2. Clique em "Generate new token (classic)"
-3. Selecione os escopos: `public_repo`, `read:user`
-4. Copie o token gerado
-
-### 2. Configurar Arquivo .env
-
-1. Copie o arquivo de exemplo:
-```bash
-cp .env.example .env
-```
-
-2. Edite o arquivo `.env` e adicione seu token:
-```
-GITHUB_TOKEN=seu_token_aqui
-```
-
-**IMPORTANTE**: O arquivo `.env` ja esta no `.gitignore` para proteger seu token.
-
-## Coleta de metadados Java web
-
-Script **sem clone e sem CK**: descobre repositorios Java web pela Search REST do GitHub, coleta estrelas, issues, contribuidores e topics, le `pom.xml` / `build.gradle` na raiz (Contents API) e classifica o framework.
-
-```powershell
-cd Instrumentos\Codigos\codigoCKSpring
-python collect_java_web_metadata.py --limit 200
-python collect_java_web_metadata.py --limit 50 --min-stars 25   # amostra menor
-```
-
-Saida padrao: `Instrumentos/Codigos/Artefatos/metadados_java_web.csv`
-
-| Coluna | Origem | Significado |
+| Responsabilidade | Instrumento | Observação |
 | --- | --- | --- |
-| `full_name`, `url` | REST Search | identificador e URL do repositorio |
-| `created_at`, `pushed_at` | REST Search | datas ISO-8601 |
-| `stars`, `forks` | REST Search | popularidade |
-| `open_issues`, `total_issues` | GraphQL | issues abertas e totais (nao so label bug); `0` quando o repositorio tem issues desabilitadas e usa Jira, como `apache/camel` |
-| `contributors` | REST | total via header `Link` em `/contributors?per_page=1` |
-| `topics` | REST Search | topics do GitHub, separados por `; ` |
-| `frameworks` | topics + build | todos os frameworks detectados (multi-rotulo) |
-| `framework_primary` | prioridade abaixo | rotulo principal |
-| `detection_source` | -- | `topics`, `build`, `both` ou `none` |
-| `spring_boot_version` | pom/gradle | se Spring Boot for detectado |
-| `collected_at` | local | instante da coleta (UTC) |
-
-O GitHub **nao** expoe o framework como campo nativo. Topics sao metadado incompleto; o arquivo de build e o criterio confiavel.
-
-### Taxonomia (`framework_primary`, maior prioridade primeiro)
-
-1. Spring Boot (`spring-boot-starter`, `spring-boot-starter-web`, `webflux`)
-2. Quarkus (`io.quarkus`)
-3. Micronaut (`io.micronaut`)
-4. Helidon (`io.helidon`)
-5. Dropwizard (`io.dropwizard`)
-6. Vert.x (`io.vertx`)
-7. Play Framework (`com.typesafe.play` / topic `play-framework`)
-8. Vaadin (`com.vaadin`)
-9. JSF / PrimeFaces (`jakarta.faces`, `javax.faces`, `org.primefaces`)
-10. Struts (`org.apache.struts`)
-11. Wicket (`org.apache.wicket`)
-12. Javalin (`io.javalin`)
-13. Spark Java (`com.sparkjava`)
-14. Spring MVC sem Boot (`spring-webmvc`)
-15. Jakarta EE / Java EE (`jakarta.servlet`, `javax.servlet`, `jakarta.ws.rs`)
-16. GWT (`com.google.gwt`)
-17. Nao web / indefinido
-
-### Estrategia de busca
-
-A amostra e estratificada em 96 consultas: 24 topics x 4 janelas `created:` (2009--2013, 2014--2017, 2018--2021, 2022--2026). Cada consulta tem a forma `language:Java stars:>=10 topic:<topic> created:<janela>` e contribui com uma cota fixa de repositorios, para que a amostra nao fique dominada por Spring Boot nem pela epoca mais recente. O excedente de cada consulta fica em reserva e completa a amostra sem gastar novas chamadas. Filtros de 2000 LOC e delay de 12 meses ficam para a etapa da CK.
-
-Duas restricoes da API moldam esse desenho:
-
-- **A Search de repositorios nao aceita `OR` nem parenteses.** Booleanos so existem na busca de codigo e de issues. Uma consulta como `(topic:quarkus OR topic:micronaut)` retorna HTTP 200 com `total_count=0`, sem mensagem de erro, enquanto `topic:quarkus` sozinho retorna 162 resultados. Por isso cada topic e consultado separadamente.
-- **A Search tem cota propria de 30 requisicoes/minuto**, distinta das 5.000/hora do restante da API. O limiar de pausa e escolhido pelo header `X-RateLimit-Resource`; usar um piso unico faria o script dormir 60s a cada busca.
-
-Os topics foram conferidos um a um contra a API. `vert.x`, `spark-java`, `eclipse-vertx` e `grails` retornam zero ou quase zero e foram removidos da lista.
-
-## Selecao auditavel Spring Boot (populacao, filtros, TOP N)
-
-Protocolo reproduzivel, separado do piloto de 200 e do snapshot `collect_spring_boot_50k.py`. A descoberta usa `topic:spring-boot fork:true` **sem** `language:Java` e **sem** limiar de estrelas. Forks entram na populacao para que o filtro `is_fork` possa ser medido. Documentacao: `METODOLOGIA_SELECAO_SPRING_BOOT.md`.
-
-```powershell
-cd Instrumentos\Codigos\codigoCKSpring
-pip install -r requirements.txt
-python select_spring_boot.py count
-python select_spring_boot.py discover
-python select_spring_boot.py filter
-python select_spring_boot.py --limit 50000 sample
-python select_spring_boot.py --limit 50000 run
-python select_spring_boot.py validate --sample-size 30
-```
-
-Saida em `Instrumentos/Codigos/Artefatos/selecao_spring_boot/runs/<timestamp>/` (`population.csv`, `filter_attrition.csv`, `eligible_repositories.csv`, `selected_repositories.csv`, `excluded/*.jsonl`, `report.txt`, `run_metadata.json`). Retoma janelas ja coletadas em `windows.json`. `--limit` so e aplicado **depois** dos filtros; se restarem menos que N, os filtros nao sao relaxados.
-
-## Coleta em massa Spring Boot (snapshot anterior)
-
-Script legado. A Search so devolve 1.000 resultados por consulta; as janelas `created:` (e, se um dia ainda passar de 1.000, `stars:`) sao partidas sozinhas. A descoberta grava o CSV a cada pagina. Contribuidores e issues totais entram depois, tambem com checkpoint — da para matar o processo e retomar.
-
-```powershell
-cd Instrumentos\Codigos\codigoCKSpring
-python collect_spring_boot_50k.py --limit 50000
-python collect_spring_boot_50k.py --phase enrich   # se a busca ja acabou
-```
-
-Saida: `Instrumentos/Codigos/Artefatos/metadados_spring_boot_50k.csv` (nao sobrescreve o CSV de 200). Checkpoint das janelas: `metadados_spring_boot_50k.windows.json`.
-
-Consulta base: `language:Java topic:spring-boot created:<janela>` — sem filtro de estrelas, senao a API so tem ~3.700 repos. Framework fica Spring Boot por construcao da busca (`detection_source=topics`). O `pom.xml` nao e lido nos 50 mil: seriam 150 mil chamadas extras.
-
-## Como Usar (metricas CK)
-
-
-### Execucao Basica
-
-```bash
-python main.py
-```
-
-### O que o Script Faz
-
-1. **Busca Repositorios**: Encontra os top 10 repositorios Java por estrelas
-2. **Download CK**: Baixa automaticamente a ferramenta CK Metrics
-3. **Clona Repositorios**: Faz download de cada repositorio
-4. **Analisa Metricas**: Executa CK para extrair metricas de codigo
-5. **Coleta Bugs**: Busca issues marcadas como "bug" via API do GitHub
-6. **Calcula Estatisticas**: Gera correlacoes e analises estatisticas
-7. **Exporta CSV**: Salva todos os resultados em CSV
-
-## Resultados
-
-### Arquivo CSV Gerado
-
-O script gera `analise_repositorios_java.csv` com as seguintes colunas:
-
-- `repository`: Nome completo do repositorio
-- `stars`: Numero de estrelas
-- `url`: URL do repositorio
-- `total_classes`: Total de classes analisadas
-- `total_methods`: Total de metodos
-- `total_loc`: Total de linhas de codigo
-- `avg_cyclomatic_complexity`: Complexidade ciclomatica media
-- `avg_conditionals_per_class`: Media de condicionais por classe
-- `avg_loc_per_method`: Media de LOC por metodo
-- `total_bugs`: Total de bugs reportados (issues)
-- `code_duplication_percent`: Percentual de duplicacao estimado
-- `maintainability_index`: Indice de manutenibilidade (0-100)
-- `analysis_date`: Data/hora da analise
-
-### Relatorio no Console
-
-O script tambem exibe um relatorio completo no console com:
-
-- Metricas individuais de cada repositorio
-- Estatisticas agregadas (Q1, Q2, Q3)
-- Correlacoes de Pearson
-- Interpretacao das hipoteses
-
-## Ferramentas Utilizadas
-
-### CK Metrics
-- **Ferramenta**: CK (Chidamber and Kemerer Java Metrics)
-- **URL**: https://github.com/mauricioaniche/ck
-- **Versao**: 0.7.1
-- **Metricas Extraidas**: WMC, CBO, LOC, RFC, LCOM, etc.
-
-### GitHub API
-- **Endpoint**: https://api.github.com
-- **Rate Limit**: 5000 requests/hora (autenticado)
-
-## Limitacoes e Melhorias Futuras
-
-### Limitacoes Atuais
-
-1. **Duplicacao de Codigo**: A analise de duplicacao e uma estimativa. Para analise real, seria necessario integrar PMD CPD ou Simian.
-2. **Timeout**: Repositorios muito grandes podem exceder o timeout de 10 minutos.
-3. **Dependencias**: Requer Java instalado no sistema.
-
-### Melhorias Sugeridas
-
-- [ ] Integrar PMD CPD para analise real de duplicacao
-- [ ] Adicionar analise de cobertura de testes
-- [ ] Implementar cache de repositorios ja analisados
-- [ ] Adicionar visualizacao de graficos (matplotlib/seaborn)
-- [ ] Exportar tambem para JSON e Excel
-- [ ] Analise paralela de multiplos repositorios
-
-## Estrutura do Projeto
-
-```
-Lab 06/
-├── main.py                          # Script principal
-├── requirements.txt                 # Dependencias Python
-├── README.md                       # Este arquivo
-├── .env.example                    # Template do arquivo de configuracao
-├── .env                            # Configuracao (criar a partir do .env.example)
-├── .gitignore                      # Arquivos ignorados pelo Git
-├── analise_repositorios_java.csv   # Resultados (gerado)
-├── ck.jar                          # CK Metrics JAR (baixado automaticamente)
-└── temp_repos/                     # CSVs das metricas CK (repositorios removidos apos analise)
-    ├── ck_output_*class.csv        # Metricas de classes
-    └── ck_output_*method.csv       # Metricas de metodos
-```
-
-## Troubleshooting
-
-### Erro: "GITHUB_TOKEN nao encontrado"
-**Solucao**:
-1. Copie `.env.example` para `.env`
-2. Adicione seu token no arquivo `.env`
-3. Verifique se o arquivo esta na mesma pasta do `main.py`
-
-### Erro: "Java nao encontrado"
-**Solucao**: Instale o Java JDK/JRE e adicione ao PATH do sistema.
-
-### Erro: "Token invalido"
-**Solucao**: Verifique se o token do GitHub foi copiado corretamente e tem as permissoes necessarias.
-
-### Erro: "Timeout ao clonar repositorio"
-**Solucao**: Repositorios muito grandes podem exceder o timeout. O script tentara baixar via ZIP como fallback.
-
-### Erro: "CK retornou codigo de erro"
-**Solucao**: Verifique se o repositorio contem arquivos .java validos.
-
-### Erro: "[WinError 5] Acesso negado" ao remover repositorios
-**Solucao**: O script agora trata automaticamente permissoes especiais do Git no Windows. Se persistir, execute como administrador.
-
-## Exemplo de Saida
-
-```
-============================================================
-ANALISE DE REPOSITORIOS JAVA - METRICAS DE CODIGO
-============================================================
-
-[*] Buscando top 10 repositorios Java...
-[+] Encontrados 10 repositorios
-  1. spring-projects/spring-boot - Stars: 71234
-  2. elastic/elasticsearch - Stars: 65432
-  ...
-
-[*] Baixando CK JAR...
-[+] CK JAR baixado com sucesso
-
-[1/10] Processando repositorio...
-============================================================
-[*] Analisando: spring-projects/spring-boot
-============================================================
-[*] Bugs encontrados: 234
-[*] Baixando repositorio...
-[+] Repositorio clonado com sucesso
-[*] Executando analise CK...
-[+] Analise CK concluida
-[+] Metricas parseadas: 1234 classes, 5678 metodos
-[*] Analisando duplicacao de codigo...
-[+] Duplicacao estimada: 8.45%
-
-[+] Analise concluida para spring-projects/spring-boot
-   - Complexidade ciclomatica media: 3.24
-   - LOC/metodo: 12.56
-   - Bugs reportados: 234
-   - Duplicacao: 8.45%
-   - Indice de manutenibilidade: 72.34
-
-...
-
-============================================================
-[*] ESTATISTICAS E CORRELACOES
-============================================================
-
-[Q1] Nivel medio de complexidade ciclomatica
-   - M1 - Complexidade ciclomatica media: 3.45
-   - M2 - Condicionais medios por classe: 15.67
-   - M3 - LOC/metodo medio: 13.89
-
-[Q2] Correlacao entre complexidade e bugs
-   - M1 - Complexidade media: 3.45
-   - M2 - Total de bugs medio: 189.50
-   - M3 - Correlacao de Pearson: 0.673
-   [+] Correlacao POSITIVA FORTE detectada!
-
-[Q3] Duplicacao de codigo e manutenibilidade
-   - M1 - Duplicacao media: 9.23%
-   - M2 - Indice de manutenibilidade medio: 68.45
-   - M3 - Correlacao duplicacao x manutenibilidade: -0.512
-   [+] Correlacao NEGATIVA detectada - duplicacao REDUZ manutenibilidade!
-
-============================================================
-[+] ANALISE CONCLUIDA COM SUCESSO!
-[+] Resultados salvos em: analise_repositorios_java.csv
-============================================================
-```
-
-## Licenca
-
-Este script e fornecido para fins educacionais e de pesquisa.
-
-## Contato
-
-Para duvidas ou sugestoes, abra uma issue no repositorio.
-
-## Continuação com linguagem principal Java (20/09/2026)
-
-A descoberta preserva o universo amplo. A primeira etapa local exige `primary_language: Java` em `spring_boot_selection/config.yaml`, usando o campo REST `language`. Os CSVs elegíveis/selecionados incluem também a coluna `primary_language`. O filtro exclui outras linguagens e valores ausentes, com contagem própria e justificativa na metodologia.
-
-```powershell
-python select_spring_boot.py --run-dir ../Artefatos/selecao_spring_boot/runs/20260920_java --limit 50000 run
-```
-
-## Evolução histórica do ecossistema Spring
-
-O instrumento `analisar_evolucao.py` acompanha versões anuais de projetos Spring
-tradicional e Spring Boot, com foco na coorte criada em 2009–2013. Consulte
-[evolution/README.md](evolution/README.md) para seleção, piloto, coleta, emendas,
-auditoria e reprodução. O relatório consolidado desta etapa está em
-`../Artefatos/evolucao_spring/runs/20261011_historico_v3/report.html`.
-Os pilotos transversais anteriores permanecem preservados em suas próprias execuções.
+| Filtrar metadados, fixar amostra, coletar endpoints | `analisar_painel_original.py` | Instrumento congelado; não mudar/reexecutar na execução encerrada |
+| Conferir Git, fontes, médias, elegibilidade e IA | `auditar_painel_original.py` | Use `--report-path` fora da execução |
+| Sínteses descritivas e trajetórias | `relatorio_painel_original.py` | Médias, um projeto por era; não altera CK |
+| Tabelas LaTeX | `gerar_tabelas_painel.py` | Revalida tabelas contra medições e auditoria |
+| CK, parser e adaptador | `ck_tools/`, `evolution/measurement.py` | Valores brutos e produção/testes separados |
+| Snapshots e IA histórica | `evolution/history.py` | SHA fixo, primeiro pai e disponibilidade temporal |
+| Framework declarado no snapshot | `evolution/framework.py` | Não executa Maven/Gradle nem resolve tudo |
+| Coleta original de setembro | `select_spring_boot.py`, `spring_boot_selection/` | Histórico; não refazer para substituir a população |
+| Pilotos transversais | `analisar_ck.py`, `comparar_epocas.py`, `ck_pipeline/` | Resultados anteriores, não misturar ao painel |
+| Painel anual ampliado de 11/10 | `analisar_evolucao.py`, complementos | Coleta bloqueada; outra população |
+| Protótipos antigos | `legacy/` | Desativados; duplicação/MI sem validade científica |
+
+## Verificação e reprodução
+
+Na raiz do repositório, prepare Python 3.12 e Java 17 conforme o
+[README principal](../../../README.md) e execute `.venv/bin/python scripts/verificar.py`.
+`requirements-ck.lock.txt` fixa dependências Python; `ck_tools/manifest.json`
+identifica o binário CK e seu adaptador. Não substitua pelo `ck.jar` legado 0.7.0.
+A separação `production_*`/`test_*` é heurística por caminho, não por execução dos testes.
+
+A nova coleta, quando necessária e autorizada, segue `filter → plan --mode all540
+→ collect --scope all → audit → report`. Ela exige diretório novo e obtém referências
+remotas no instante da execução; não garante os mesmos SHAs de uma coleta anterior.
+Reexecutar exatamente CK histórico exige os objetos Git e referências congelados.
+
+Uma reanálise das tabelas pode usar as medições e CSVs brutos sem GitHub ou CK.
+`validate_existing_report()` recusa alterações nos dados ou tabelas antes da
+exportação LaTeX. `scripts/exportar_reanalise.py`, na raiz, prepara um ZIP local
+com esses dados e hashes; ele não contém clones nem publica nada.
+
+Os documentos `METODOLOGIA_METRICAS_CK.md`, `METODOLOGIA_AMOSTRA_AMPLIADA.md`
+e `evolution/README.md` registram protocolos históricos. Não são instruções para
+mudar a base atual. Os CSVs antigos em pastas de código ficaram nos caminhos
+originais porque coletores e checkpoints os referenciam; estão fora do fluxo vigente.

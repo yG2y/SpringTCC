@@ -1,10 +1,17 @@
-"""
+# Protocolo histórico de seleção — setembro de 2026
+
+> Este documento descreve a formação da base original. Para o painel vigente,
+> use [METODOLOGIA_PAINEL_ORIGINAL.md](METODOLOGIA_PAINEL_ORIGINAL.md). Não execute
+> coleta ou filtros sobre a execução de setembro para substituir seus resultados.
+> O `config.yaml` atual acrescenta criação até 2017; a configuração histórica
+> permanece em `20260920_java/config.used.yaml`.
+
 Selecao de repositorios Spring Boot — populacao, filtros e amostra TOP N
 =======================================================================
 
 Este documento descreve o protocolo implementado em `select_spring_boot.py`.
-Ele e distinto da amostra CK do artigo (2.000 repositorios, 500 por coorte,
-Java dominante, 10 estrelas, 2.000 LOC). Aqui o objetivo e montar um catalogo
+Ele documenta um catálogo anterior à definição do painel atual.
+Aqui o objetivo era montar um catalogo
 auditavel de candidatos Spring Boot, aplicar criterios de elegibilidade e
 so depois cortar os primeiros N por popularidade.
 
@@ -62,7 +69,8 @@ Cada filtro e uma etapa independente, com JSONL dos removidos em
 
 ### remove_primary_language (`primary_language_not_java`)
 
-- Primeira etapa, antes de forks: manter somente `primary_language = Java`.
+- Na execução de setembro, primeira etapa antes de forks: `primary_language = Java`.
+- O código atual pode aplicar criação antes dela; não confundir com a ordem histórica.
 - Origem: campo `language` da API REST do GitHub; o alias `primary_language` aparece nos CSVs elegíveis/selecionados e nas evidências de exclusão.
 - Comparação exata, sem diferenciar maiúsculas/minúsculas. JavaScript, Kotlin, outras linguagens e valores ausentes são excluídos.
 - Justificativa: concentrar a análise de complexidade em projetos cuja linguagem principal é Java, conforme o recorte solicitado em 20/09/2026.
@@ -153,8 +161,9 @@ Eligible e grava os que restaram.
 
 ## Relacao com o artigo e com o CSV de 50 mil anterior
 
-- Artigo (TCC): 2.000 projetos, Java, 10 estrelas, 2.000 LOC, delay de 12
-  meses, 500 por epoca. Esse recorte continua sendo o da extracao CK.
+- Rascunhos anteriores citavam 2.000 projetos, dez estrelas, intervalo de
+  12 meses e 500 por época. Esses parâmetros não são o protocolo vigente.
+  O painel atual usa todos os 540 IDs da seleção original criados até 2017.
 - `collect_spring_boot_50k.py`: snapshot anterior com `language:Java` e forks
   ja omitidos na query. Nao serve como universo para auditar o filtro de
   forks. Foi preservado; o protocolo auditavel e este pipeline.

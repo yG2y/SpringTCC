@@ -286,7 +286,7 @@ def process_repository(row, config, out, external=None):
             atomic_json(result_dir / 'build_evidence.json', boot)
             result.update({k: v for k, v in boot.items() if k != 'build_evidence'})
             inventory = []
-            for path in paths:
+            for path in sorted(set(paths)):
                 if not is_source(path): continue
                 original = repo / path
                 if original.is_symlink() or not original.is_file(): continue
@@ -297,6 +297,9 @@ def process_repository(row, config, out, external=None):
                 dest.write_bytes(content)
                 inventory.append({'file': path, 'sha256': hashlib.sha256(content).hexdigest(), 'sloc': sloc, 'is_test': is_test(path), 'measurable_type': has_measurable_type(content.decode('utf-8', errors='replace'))})
             result['java_files'] = len(inventory)
+            result['java_code_files'] = sum(r['sloc'] > 0 for r in inventory)
+            result['production_java_files'] = sum(not r['is_test'] for r in inventory)
+            result['test_java_files'] = sum(r['is_test'] for r in inventory)
             result['total_loc'] = sum(r['sloc'] for r in inventory)
             result['production_loc'] = sum(r['sloc'] for r in inventory if not r['is_test'])
             result['test_loc'] = result['total_loc'] - result['production_loc']
@@ -344,6 +347,7 @@ def process_repository(row, config, out, external=None):
                 if result['status'] != 'ok': reasons.append('incomplete_ck_coverage')
                 if not result['spring_boot_confirmed']: reasons.append('spring_boot_not_confirmed')
                 if result['total_loc'] < config['min_loc']: reasons.append('below_min_loc')
+                if result['java_files'] < config.get('min_java_files', 10): reasons.append('below_min_java_files')
                 # Extraction eligibility is independent of the availability of an IA label.
                 if result['epoch'] == 'fora_das_coortes': reasons.append('outside_epochs')
                 if any(result[m] is None for m in METRICS): reasons.append('missing_metric')

@@ -1,0 +1,190 @@
+\section{Materiais e Métodos}
+\label{sec:metodologia}
+
+Esta revisão, definida em 15 de outubro de 2026, restringe a investigação à
+seleção original do trabalho. O estudo é observacional, longitudinal e
+descritivo. A unidade acompanhada é o repositório, e a unidade medida é o último
+snapshot disponível dentro de cada era. As comparações descrevem mudanças
+estruturais; não identificam efeitos causais de Spring Boot ou de assistência
+por IA.
+
+\subsection{Base de origem e filtragem anterior ao processamento}
+
+A entrada exclusiva é o arquivo \texttt{selected\_repositories.csv} da execução
+\texttt{20260920\_java}, com 38.456 identificadores únicos. Não são acrescentados
+repositórios de outras consultas ou anteriormente excluídos. A descoberta
+ampliada realizada em outubro pertence a um protocolo anterior e não constitui
+a população desta revisão.
+
+A seleção de setembro deriva de 95.894 candidatos únicos recuperados pela
+consulta REST \texttt{topic:spring-boot fork:true}, particionada por data e,
+quando necessário, por estrelas para respeitar o limite de recuperação da API.
+O tópico identifica candidatos, não comprova dependência do framework.
+Foram excluídos, nessa ordem, linguagem principal diferente de Java ou ausente
+(23.298), forks (1.089), espelhos (zero), arquivados (1.607), desabilitados
+(zero), atividade ausente ou anterior ao corte (30.856), templates (238),
+vazios ou sem branch padrão (três) e materiais identificados pelas heurísticas
+educacionais (347). Cada candidato foi contabilizado na primeira exclusão.
+A soma de 57.438 exclusões e 38.456 selecionados reconcilia a população salva.
+Zeros nos filtros não comprovam ausência das características quando a API
+omite campos. O teto operacional de 50 mil não eliminou elegíveis; portanto,
+a ordenação por estrelas não selecionou um subconjunto nessa etapa.
+
+A coleta ocorreu em momentos distintos. A diferença entre a contagem final
+da API (95.972) e os registros únicos recuperados (95.894) não é um filtro nem
+prova de um censo simultâneo. Datas, configuração, partições e exclusões são
+mantidas na execução original. Casos educacionais ambíguos foram apenas
+sinalizados: 91 estão no recorte de 540, com revisão humana ainda pendente.
+
+Sobre os metadados salvos, aplica-se o limite de criação até o último dia de
+2017 em UTC, operacionalizado por \texttt{created\_at} anterior a
+\texttt{2018-01-01T00:00:00Z}. O recorte contém 540 candidatos: 20 criados até
+2013 e 520 em 2014--2017. A filtragem exclui 37.916 registros e antecede a
+recuperação de históricos, a detecção de IA e a execução de CK. Arquivo de
+entrada, hashes, regras, candidatos e motivos de exclusão são preservados.
+
+A composição confirmada inclui todos os 540 candidatos, sem sorteio ou
+substituição: os 20 antigos são acompanhados em E1, E2, E3 e E4; os 520
+posteriores, em E2, E3 e E4. Estão previstas 1.640 posições projeto--era,
+distintas da quantidade de versões efetivamente recuperadas ou elegíveis.
+A lista e o corte temporal de E4 são congelados antes da coleta principal.
+E1 utiliza somente os 20 antigos originais.
+
+\subsection{Atividade e fundamentação dos limites}
+
+Preserva-se o critério de atividade já aplicado à seleção original: presença
+de \texttt{pushed\_at} a partir de 17/09/2023 16:36:06 UTC, usando como
+referência a coleta de 17/09/2026. A data atual não desloca retrospectivamente
+esse corte. Oliveira et al.~\cite{oliveira:2021:experts} utilizaram uma janela
+de três anos sem commits e mínimo de 1 KLOC em um estudo sobre especialistas
+em bibliotecas Java e microserviços. Trata-se de precedente metodológico com
+outro objetivo, não de validação universal para CK. Nosso uso de
+\texttt{pushed\_at} é uma aproximação por metadados, distinta de verificar
+commits no histórico.
+
+Uma comparação local com três meses, mantendo a mesma referência temporal,
+reteria 219 dos 540 candidatos. Essa análise de sensibilidade não altera a
+amostra. A restrição original à atividade pode introduzir viés de sobrevivência;
+as conclusões não abrangem automaticamente projetos antigos inativos ou
+desaparecidos.
+
+\subsection{Snapshots por era}
+
+As eras de medição são E1 (2009--2013), E2 (2014--2017), E3 (2018--2021) e E4
+(2022 até o instante fixado da execução). E4 é parcial. A criação serve à
+seleção; a data do código determina a medição. Não se interpreta um projeto
+criado em 2010 e medido em 2026 como código de 2010.
+
+Recupera-se todo o histórico alcançável da branch padrão, com referência e SHA
+fixados. Na linha do primeiro pai dos merges, escolhe-se o último commit cuja
+data de committer esteja dentro da era. Registram-se também autoria e maior
+data da ancestralidade. Datas posteriores ao corte geram diagnóstico. A data
+de committer é uma aproximação operacional de integração, não comprovação da
+publicação do código no GitHub.
+
+Sem commit no intervalo, registra-se ausência de snapshot. Não se usa o HEAD
+atual, não se transporta um commit de outra era e não se troca a última versão
+por uma anterior mais conveniente. Em E1, verifica-se elegibilidade somente
+nos 20 projetos originais; falhas não são substituídas por outros repositórios.
+Migrações e reescritas de histórico continuam sendo limitações.
+
+\subsection{Contagem de tamanho e extração CK}
+
+O instrumento \texttt{analisar\_painel\_original.py} reutiliza o CK auditado e
+seu adaptador, sem compilar ou executar os projetos. Preservam-se médias por
+classe de CBO geral, RFC, WMC, DIT, NOC e LCOM*, além de LOC por método, os
+valores brutos e a separação entre produção e testes.
+
+Utiliza-se CK 0.7.1-SNAPSHOT, revisão \texttt{8a1ef916} do código oficial,
+JDT 3.44.0 com configuração de linguagem Java 21 e JVM OpenJDK 17.0.20.1
+\cite{aniche:ck}. Não se trata de uma versão estável 0.7.1 publicada.
+O adaptador conserva a chave arquivo e classe, evitando sobrescrever classes
+homônimas de módulos diferentes, sem alterar os calculadores de métricas.
+Heap de 2 GiB, partições de cem arquivos e hashes dos binários são fixados.
+Sem baixar dependências externas, a resolução de tipos pode afetar
+acoplamento e herança; preservar linhas de classes não resolve essa limitação.
+
+Operacionalmente, CBO conta dependências de tipos segundo o CK; RFC conta
+invocações distintas identificadas pela análise estática, e não a definição
+teórica completa do conjunto de resposta. WMC agrega a complexidade calculada
+pelo visitante, não custo de execução. DIT inclui a convenção de profundidade
+base um; NOC registra subclasses diretas resolvidas. LCOM* usa
+$\frac{1}{a}\sum_{i=1}^{a}\frac{m-\mu(A_i)}{m}$ na implementação, em que
+$a$ é o número de atributos, $m$ o de métodos e $\mu(A_i)$ conta métodos que
+acessam o atributo. LOC por método vem da representação do parser, podendo
+diferir da contagem física empregada no filtro de tamanho.
+
+Valores não finitos são retirados somente da média da métrica correspondente,
+sem imputação por zero. Cada média possui denominador registrado; em particular,
+\texttt{n\_lcom\_star} pode ser menor que a quantidade total de classes.
+Cobertura completa de arquivos não significa disponibilidade de todas as
+métricas para todas as classes. Classes internas e anônimas seguem a saída
+do CK; a identificação de testes é heurística por segmentos de caminhos.
+
+Mantêm-se os limites operacionais anteriormente documentados: 2.000 LOC e dez
+arquivos Java por snapshot. O limite de arquivos, ausente no extrator histórico,
+foi implementado. Não foi identificada nas referências consultadas validação
+do par exato de limites; eles permanecem escolhas explícitas do TCC. O estudo
+de Oliveira et al. utiliza 1 KLOC, não 2.000 LOC nem dez arquivos.
+
+Cada caminho de arquivo Java é contado uma vez. As linhas físicas com código
+excluem linhas vazias e exclusivamente de comentário; classes internas não
+duplicam LOC. A soma de LOC das classes CK não aplica o corte. São registrados
+arquivos totais, arquivos com código e contagens de produção e testes. Essas
+definições explícitas seguem a preocupação de Park~\cite{park:1992:size} com
+a comparabilidade das medidas de tamanho; a referência não fornece os limites
+mínimos de inclusão adotados aqui.
+
+A comparação principal exige confirmação de Spring no conteúdo da versão,
+cobertura completa no diagnóstico adotado e sete métricas disponíveis. Código
+do próprio framework é separado de aplicações usuárias. Arquivos de build,
+código gerado e dependências seguem as exclusões documentadas no extrator.
+Falhas, ausência de histórico e métricas indisponíveis não são convertidas em
+zero. A resolução estática de dependências pode ser parcial.
+Configurações dinâmicas ou dependências que o detector não resolve podem
+produzir o diagnóstico de framework não confirmado. Esse diagnóstico não
+comprova ausência de Spring e não autoriza alterar a regra após observar CK.
+A presença de Boot significa declaração em pelo menos um módulo incluído no
+escopo; pode estar em exemplos ou módulos auxiliares. Portanto, não equivale
+à migração integral da arquitetura. Essa distinção também acompanha os casos
+de bibliotecas que acrescentam integração com Boot.
+
+\subsection{IA, comparações e reprodução}
+
+\begin{table}[htbp]
+\centering\footnotesize
+\caption{Questões e medidas do protocolo revisado (GQM).}
+\begin{tabularx}{\linewidth}{|p{0.05\linewidth}|X|p{0.27\linewidth}|}
+\hline
+\textbf{Q} & \textbf{Questão} & \textbf{Medidas} \\\hline
+Q1 & Como a estrutura dos mesmos projetos varia entre eras? & Sete médias CK; diferenças pareadas; cobertura. \\\hline
+Q2 & Quais mudanças acompanham configurações distintas de Spring e Boot? & Framework e versão declarada em cada SHA; métricas CK. \\\hline
+Q3 & Quais diferenças aparecem entre versões e projetos com e sem evidências detectadas de IA? & Evidências temporalmente delimitadas; quantidades e médias CK. \\\hline
+Q4 & Quanto a composição dos conjuntos e o tamanho variam entre eras? & IDs compartilhados, arquivos, LOC e motivos de exclusão. \\\hline
+\end{tabularx}
+\end{table}
+
+A detecção local inspeciona sinais em arquivos e commits disponíveis até cada
+snapshot, conservando separadamente presença na versão e evidência histórica.
+Sinais de branches laterais dependem de sua integração. Ausência de vestígio
+não significa ausência de uso; primeiro vestígio observado não é a data exata
+da adoção. Não se atribui à adaptação local a precisão do estudo que a inspirou.
+
+Apresentam-se quantidades de candidatos, tentativas, versões elegíveis, médias
+aritméticas das sete medidas e diferenças pareadas dos mesmos projetos entre
+eras. Cada projeto contribui uma vez por era. Comparações com e sem evidência
+de IA são descritivas e têm denominadores explícitos. Não se apresentam
+p-valores ou deltas de Cliff. Tamanho, arquitetura, domínio, equipe e seleção
+temporal são explicações concorrentes para mudanças observadas.
+
+As médias gerais usam classes e métodos de produção e testes, com as duas
+categorias também preservadas separadamente nos dados. Médias entre projetos
+atribuem peso igual a cada repositório. Painéis balanceados incluem somente
+IDs elegíveis em todas as eras de sua coorte; comparações de duas eras exigem
+elegibilidade apenas nas duas versões envolvidas e informam o número de pares.
+
+A validação cobre origem dos IDs, limites UTC, primeiro pai, ancestralidade
+futura, ausência de commits na era, tamanho, arquivos distintos e retomada.
+Execuções congeladas não são sobrescritas; alterações de instrumento exigem
+nova execução. O protocolo detalhado e os comandos estão em
+\texttt{METODOLOGIA\_PAINEL\_ORIGINAL.md}.

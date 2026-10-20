@@ -1,0 +1,11 @@
+{
+  "repository": "muxiangqiu/bdf3",
+  "era": "E3",
+  "sha": "76644fa92d379c5d7c53bf1b5b083435baedd907",
+  "missing_files": [
+    "bdf3-starters/bdf3-starter-parent/bdf3-sample-multitenant/src/main/java/com/bstek/bdf3/sample/multitenant/SampleMultitenantApplication.java"
+  ],
+  "cause": "CK emitted no class record for one expected Java source file",
+  "action": "Preserve partial_ck and exclude from principal comparison; do not silently ignore missing source",
+  "additional_observation": "Git contains paths sample/Multitenant and sample/multitenant for SampleMultitenantApplication.java, with the same blob 7ca54898605434dc1b26edbb029ceb348442b838. CK did not emit a separate record for both versioned paths; coverage remains partial."
+}

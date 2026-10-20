@@ -208,6 +208,18 @@ def run_filters(
     record_stage("universe", len(current), 0)
 
     stages: List[Tuple[str, str, Callable[[Dict[str, Any]], bool], str]] = []
+    creation_cfg = config.get('creation') or {}
+    if creation_cfg.get('before'):
+        creation_cutoff = parse_iso(str(creation_cfg['before']))
+        if creation_cutoff is None:
+            raise ValueError('Invalid creation.before cutoff')
+
+        def created_outside_cutoff(row):
+            created = parse_iso(str(row.get('created_at') or ''))
+            return created is None or created >= creation_cutoff
+
+        stages.append(('remove_creation_date', 'created_at_missing_or_after_cutoff',
+                       created_outside_cutoff, 'creation_date.jsonl'))
     required_language = str(config.get("primary_language") or "").strip()
     if required_language:
         stages.append((

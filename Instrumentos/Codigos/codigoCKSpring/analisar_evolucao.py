@@ -21,6 +21,10 @@ def main():
     p.add_argument('--workers', type=int, default=2)
     p.add_argument('--retry-errors', action='store_true')
     args = p.parse_args()
+    if args.stage in {'recount', 'discover', 'plan', 'collect'}:
+        p.error('Fluxo ampliado descontinuado por decisão do autor em 15/10/2026. '
+                'Use analisar_painel_original.py, limitado à seleção original. '
+                'Os relatórios anteriores continuam disponíveis para consulta.')
     out = args.output.resolve()
     out.mkdir(parents=True, exist_ok=True)
     if args.stage == 'recount':

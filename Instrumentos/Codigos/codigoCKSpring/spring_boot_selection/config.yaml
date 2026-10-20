@@ -7,6 +7,11 @@ target_count: 50000
 # Aplicado localmente para registrar o antes/depois da exclusao.
 primary_language: Java
 
+# Recorte solicitado em 15/10/2026. Limite exclusivo inclui todo 31/12/2017 UTC.
+# A análise corrigida parte do selected_repositories.csv original, não de discovery.
+creation:
+  before: "2018-01-01T00:00:00Z"
+
 discovery:
   # Populacao operacional: topic do GitHub, nao evidencia de dependencia.
   query: "topic:spring-boot"

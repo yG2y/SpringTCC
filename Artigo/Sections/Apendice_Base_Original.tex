@@ -1,0 +1,48 @@
+\section*{Apêndice A --- Dados e reprodução do painel original}
+
+Os artefatos desta revisão estão na execução
+\path{20261015_base_original_ate2017}, sob
+\path{Instrumentos/Codigos/Artefatos/evolucao_spring/runs/}.
+O arquivo \texttt{sample.csv} contém os 540 identificadores congelados;
+\texttt{e1\_20.csv} e \texttt{e2\_520.csv} explicitam os dois recortes de
+criação. Não há sorteio nesta composição. A semente registrada no formato
+geral do manifesto não altera a inclusão de todos os candidatos.
+
+\texttt{measurements.csv} registra cada posição projeto--era, com SHA, datas,
+framework, classificação de IA, arquivos, LOC, sete medidas, elegibilidade e
+motivos de exclusão. A trajetória dos 20 antigos também está em
+\texttt{e1\_trajectories.csv}. Os arquivos brutos de classes, métodos e inventário
+de fontes permanecem comprimidos por chave de extração. Contagens de produção
+e testes são separadas; o corte usa LOC físicos por arquivo, não a soma dos
+tamanhos das classes.
+
+\texttt{paired\_summary.csv} compara os mesmos IDs elegíveis nas duas eras de
+cada par. \texttt{balanced\_panel.csv} informa os IDs compartilhados em todas
+as eras da coorte. \texttt{ai\_ck\_comparison.csv} explicita as médias e os
+denominadores dos grupos: $n_a$ corresponde a projetos com evidência e $n_b$ a
+projetos sem evidência detectada, ambos elegíveis para CK. Esses denominadores
+não são contagens de classes, métodos ou commits.
+
+Os manifestos de filtragem, amostra e instrumento conservam hashes e limites
+temporais. O auditor verifica identidade dos registros, completude das posições
+previstas, escolha de commits, ancestralidade, arquivos efetivamente presentes
+no SHA, inventário de LOC, médias contra os dados brutos e delimitação temporal
+das evidências de IA. Falhas de extração podem coexistir com auditoria aprovada
+quando estão corretamente registradas como falhas e excluídas da síntese CK;
+a auditoria não as transforma em medições válidas.
+
+Os instrumentos são \texttt{analisar\_painel\_original.py},
+\texttt{auditar\_painel\_original.py} e
+\texttt{relatorio\_painel\_original.py}. Os comandos e dependências estão em
+\texttt{METODOLOGIA\_PAINEL\_ORIGINAL.md}. Os relatórios anteriores, incluindo
+o protocolo ampliado e seus apêndices, permanecem arquivados no repositório;
+seus resultados não integram as tabelas desta revisão.
+
+A auditoria posterior, sem alteração das medições, está em
+\path{docs/auditoria/20261015/}. Inclui conferência de integridade,
+dispersão descritiva, denominadores das métricas, datas efetivas de E4 e a fila
+de casos educacionais pendentes. O diagnóstico e a matriz de conformidade
+estão em \path{docs/AUDITORIA_TCC.md}. A revisão é assistida por IA e não
+substitui validação humana independente. O pacote local de reanálise inclui
+CSVs brutos e manifestos, mas não os objetos Git; repetir a seleção histórica
+ou a extração CK exige conservar também os clones originais.

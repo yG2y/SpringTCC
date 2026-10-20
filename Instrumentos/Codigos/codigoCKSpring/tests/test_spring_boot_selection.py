@@ -31,7 +31,7 @@ def repo(**overrides):
         "stargazers_count": 10,
         "forks_count": 1,
         "topics": "spring-boot",
-        "created_at": "2024-01-01T00:00:00Z",
+        "created_at": "2017-01-01T00:00:00Z",
         "updated_at": "2026-01-01T00:00:00Z",
         "pushed_at": "2026-06-01T00:00:00Z",
         "license": "MIT",
@@ -137,7 +137,8 @@ class FilterPipelineTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             result = run_filters(rows, self.config, Path(tmp), collection_time=self.now)
         self.assertEqual({r["repository_id"] for r in result["eligible"]}, {1, 5})
-        self.assertEqual(result["attrition"][1]["excluded_count"], 4)
+        attrition = {r['stage']:r for r in result['attrition']}
+        self.assertEqual(attrition['remove_primary_language']["excluded_count"], 4)
         self.assertTrue(all(r["primary_language"].lower() == "java" for r in result["eligible"]))
 
     def test_language_filter_can_be_disabled(self):

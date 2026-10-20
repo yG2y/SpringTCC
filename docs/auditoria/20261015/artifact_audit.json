@@ -1,0 +1,39 @@
+{
+  "checked_at": "2026-10-15T23:04:59.425861+00:00",
+  "run": "Instrumentos/Codigos/Artefatos/evolucao_spring/runs/20261015_base_original_ate2017",
+  "script_sha256": "ff9fa354d0e76cf320278267dd0c005caaad6740521d3b654a8fe915f53d38b2",
+  "passed": true,
+  "provenance": {
+    "result_set_hash": "24242712edb3101f218399069b028ff5f02e2203ea6b60930018e97bd97ce165",
+    "verified_tables": [
+      "cohort_era_summary",
+      "ai_ck_comparison",
+      "paired_summary",
+      "balanced_panel",
+      "transition_summary"
+    ],
+    "slots": 1640
+  },
+  "eligibility_mismatches": [],
+  "frozen_files_checked": 6248,
+  "frozen_file_failures": [],
+  "producer_failures": [],
+  "tracked_files": 18232,
+  "python_files_parsed": 63,
+  "credential_pattern_paths": [],
+  "credential_scan_scope": "Tracked text files below 50 MB; pattern scan, not a guarantee of absence of every secret",
+  "flagged_candidates": 91,
+  "flagged_ever_eligible": 29,
+  "eligible_snapshots": 584,
+  "snapshots_with_undefined_lcom": 451,
+  "snapshots_production_below_2000": 98,
+  "snapshots_missing_version": 105,
+  "identical_inventory_groups": 0,
+  "legacy_rows": 520,
+  "legacy_duplication_matches_seeded_random": 520,
+  "caveats": [
+    "No manual review or new collection performed",
+    "No fuzzy code-clone detection; only exact path/content inventories compared",
+    "Supplementary descriptive dispersion; no inferential tests"
+  ]
+}

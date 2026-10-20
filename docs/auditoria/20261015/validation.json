@@ -1,0 +1,43 @@
+{
+  "checked_at": "2026-10-15T23:09:36.286116+00:00",
+  "tests_passed": 108,
+  "tests_skipped": 0,
+  "tests_command": ".venv/bin/python scripts/verificar.py",
+  "full_panel_audit": true,
+  "artifacts_audit": true,
+  "producer_and_original_dataset_unchanged": true,
+  "article_tables_byte_identical": true,
+  "local_links_checked": 37,
+  "broken_links": [],
+  "python_files_parsed": 66,
+  "dependency_check": "uv pip check --python .venv/bin/python: 27 packages compatible",
+  "pdf": {
+    "path": "output/pdf/Article_auditado_20261015.pdf",
+    "pages": 16,
+    "all_pages_visually_reviewed": true,
+    "overfull_boxes": 0,
+    "undefined_citations": 0
+  },
+  "user_preexisting_report_unchanged": true,
+  "new_collection": false,
+  "new_ck_on_candidates": false,
+  "commit": false,
+  "push": false,
+  "merge": false,
+  "limitations": [
+    "No human independent review",
+    "PBIX not executed",
+    "No exact Git replay without local clones",
+    "No complete external bibliographic audit"
+  ],
+  "eligibility_mismatches": [],
+  "link_check_documents": [
+    "README.md",
+    "docs/AUDITORIA_TCC.md",
+    "Instrumentos/Codigos/README.md",
+    "Instrumentos/Codigos/Artefatos/README.md",
+    "Instrumentos/Codigos/codigoCKSpring/README.md",
+    "Instrumentos/Codigos/codigoCKSpring/legacy/README.md",
+    "Instrumentos/Codigos/codigoCKSpring/METODOLOGIA_PAINEL_ORIGINAL.md"
+  ]
+}

@@ -1,0 +1,126 @@
+\section{Resultados e Discussão}
+\label{sec:resultados}
+
+\subsection{População e cobertura efetiva}
+
+A filtragem da seleção original reduziu 38.456 registros a 540 candidatos
+criados até 2017: 20 antigos e 520 criados em 2014--2017. Todos foram
+percorridos, sem substituição. Foram registradas as 1.640 posições previstas,
+com 1.460 snapshots recuperados. Houve 174 posições sem commit dentro da era
+e seis falhas de recuperação, correspondentes a dois repositórios indisponíveis
+em suas três eras previstas.
+
+Entre os snapshots recuperados, 1.441 tiveram extração CK com estado completo
+no diagnóstico adotado; 15 não continham fontes Java no escopo, três
+apresentaram erro do extrator e um teve cobertura parcial. Extração completa
+não implica elegibilidade: confirmação do framework, tamanho e demais
+critérios reduziram a comparação principal a 584 versões, pertencentes a
+245 projetos distintos. Os totais por era são versões de projetos que podem
+se repetir; não devem ser somados como repositórios únicos.
+
+\input{Generated/PainelOriginalCobertura}
+
+Os 20 antigos tiveram suas quatro eras verificadas. Foram elegíveis seis
+versões em E1, nove em E2, onze em E3 e dez em E4. A versão de E1 do próprio
+Spring Boot foi identificada como código do framework; a presença preliminar
+de Boot no guia de serviço REST também foi registrada, mas seu tamanho não
+atingiu os limites principais. Assim, não se presumiu ausência de Boot antes
+do lançamento estável nem se confundiu código do framework com uma aplicação.
+
+As falhas permanecem individualizadas nos dados. Dois erros ocorreram em
+versões de um projeto com arquivos de template e outro em um exemplo Java
+não processado pelo visitante do CK. A cobertura parcial envolveu caminhos
+Java que diferem apenas por maiúsculas/minúsculas. Nenhum desses casos foi
+convertido em métrica zero ou trocado por uma versão anterior conveniente.
+
+\subsection{Mudanças nos mesmos projetos}
+
+Cinco projetos antigos foram elegíveis em E1 e E4. Nesse conjunto, CBO e RFC
+aumentaram em média, enquanto WMC diminuiu. LOC por método, NOC e LCOM*
+variaram pouco em termos absolutos. Esses resultados descrevem dimensões
+distintas; não sustentam uma direção única de melhoria estrutural.
+
+Nos 123 projetos criados em 2014--2017 elegíveis em E2 e E4, as médias de CBO,
+RFC, WMC e LOC por método aumentaram. DIT e NOC variaram pouco, e LCOM*
+diminuiu. A redução desse indicador de falta de coesão coexistiu com aumento
+de acoplamento e complexidade. Não se agrega esse comportamento em uma nota
+única de maturidade.
+
+\input{Generated/PainelOriginalPares}
+
+Os gráficos do relatório mantêm composição constante em todas as eras de
+cada coorte: quatro projetos antigos em E1--E4 e 118 posteriores em E2--E4.
+Esses conjuntos são menores que os pares das tabelas, pois exigem elegibilidade
+também nas eras intermediárias. A cobertura pode alterar a leitura: nos
+quatro antigos do painel balanceado, LCOM* passou de 0,279 para 0,302,
+enquanto nos cinco pares E1--E4 houve pequena redução de 0,290 para 0,287.
+Portanto, explicitar os IDs compartilhados é necessário mesmo em uma análise
+descritiva.
+
+\subsection{Presença de Spring Boot e evidências de IA}
+
+Entre endpoints adjacentes elegíveis, a passagem observável de Spring
+tradicional para presença declarada de Boot ocorreu em quatro pares E1--E2,
+nove E2--E3 e quatro E3--E4. A diferença média de CBO nesses conjuntos foi,
+respectivamente, $-0,260$, $+1,136$ e $-0,498$. Os conjuntos e períodos
+distintos não apresentaram uma direção uniforme. A presença de Boot em um
+módulo ou exemplo não equivale à migração integral do projeto; esses números
+não isolam um efeito do framework.
+
+Em E4, 94 candidatos apresentaram evidência detectada de IA, 349 não
+apresentaram os sinais procurados e 97 permaneceram indeterminados: 95 sem
+snapshot na era e dois sem recuperação do repositório. Entre os 206
+snapshots elegíveis para CK, 49 tinham evidência e 157 não tinham evidência
+detectada. Não foram encontrados sinais nas versões de E1--E3 pelo detector
+adotado; isso não comprova inexistência de assistência nesses períodos.
+
+\input{Generated/PainelOriginalIA}
+
+As sete médias de E4 foram maiores no grupo com evidência. Entretanto, esse
+grupo também apresentou maior porte: média de 125.578 LOC totais por projeto,
+contra 15.222 no grupo sem evidência detectada. A comparação não controla
+tamanho, domínio, arquitetura ou equipe e não permite concluir que a IA
+aumentou complexidade ou piorou qualidade.
+
+O momento observado também difere. Os snapshots elegíveis com evidência estão,
+em média, 34,4 dias antes do corte fixado; os sem evidência, 475,0 dias antes.
+Os primeiros variam de novembro de 2025 a outubro de 2026, enquanto os segundos
+incluem versões desde fevereiro de 2022. Compartilhar a era E4 não iguala a
+oportunidade temporal de observar vestígios dos agentes. Essa diferença deve
+acompanhar a interpretação, sem reclassificar versões antigas por sinais futuros.
+
+Nos 43 pares elegíveis com ausência de vestígio em E3 e evidência observada em
+E4, CBO médio passou de 6,356 para 6,618. Nos 139 pares sem vestígio nos dois
+endpoints, passou de 5,925 para 5,975. A diferença entre esses conjuntos já
+aparecia na versão de E3. Além disso, a primeira evidência observada não data
+o primeiro uso real. A análise representa associação temporal, sem identificação
+causal.
+
+\subsection{Alcance das evidências}
+
+O resultado central é uma descrição longitudinal rastreável, com cobertura
+explícita e mudanças heterogêneas entre dimensões. A seleção original por
+tópicos atuais, atividade e arquivamento preserva viés de sobrevivência.
+Configurações não resolvidas pelo detector, perdas de histórico, falhas do CK
+e assistência sem vestígios também restringem o alcance. Os poucos projetos
+antigos comparáveis impedem generalizar sua trajetória para toda a comunidade
+Spring. Os resultados de populações anteriores não foram incorporados a
+essas tabelas.
+
+A auditoria posterior identificou limitações adicionais de composição, sem
+alterar a amostra ou as medições. Dos 91 candidatos sinalizados para revisão
+educacional, 29 tiveram alguma versão elegível; a confirmação estática de Spring
+não determina se o projeto é uma aplicação, biblioteca ou demonstração.
+Em 451 dos 584 snapshots elegíveis há classes sem valor finito de LCOM*,
+excluídas apenas do denominador dessa média. Em 98 versões, LOC classificados
+como produção ficam abaixo de 2.000, embora produção e testes juntos atendam
+ao limite adotado. A classificação por caminho pode errar e não foi validada
+individualmente em todos os módulos.
+
+Além disso, 105 snapshots elegíveis não possuem versão declarada preenchida.
+O estudo atual registra porte e framework, mas não executa o controle de
+tamanho e versão originalmente previsto para os contrastes inferenciais.
+Dispersão descritiva está disponível no suplemento de auditoria; médias e
+extremos não eliminam confundimento. Uma análise de sensibilidade com regras
+fixadas previamente pode complementar o estudo, sem substituir os resultados
+principais ou retirar casos em função das métricas observadas.

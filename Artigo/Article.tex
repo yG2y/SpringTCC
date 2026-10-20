@@ -65,6 +65,7 @@
 }
 
 \sloppy
+\raggedbottom
 
 \title{Evolução da Qualidade Estrutural de Projetos Spring:\\transição para Spring Boot e evidências de assistência por IA}
 
@@ -81,11 +82,11 @@
 \maketitle
 
 \begin{abstract}
-This observational longitudinal study characterizes the structural evolution of public Java projects in the Spring ecosystem, focusing on repositories created between 2009 and 2013. Annual snapshots from 2009 to 2025 and a separate partial observation in 2026 are recovered from pinned Git histories. Seven measures are extracted with the CK tool and an audited adapter, retaining accessible inactive and archived repositories. The frozen sample contains 1,616 candidates; 388 projects contribute 2,533 eligible annual observations. The oldest cohort comprises 52 eligible projects and 609 observations. Arithmetic means, individual trajectories and within-project changes describe coupling, complexity, size, inheritance and cohesion. Sixteen oldest-cohort projects have complete-year before/after pairs around the first observable presence of Spring Boot. AI evidence supports only one complete-year pair and ten partial-year pairs in that cohort, making this analysis exploratory. The observed dimensions vary in different directions. These descriptions do not establish uniform improvement, causal effects of Boot or AI, or the maturity of the broader developer community. Absence of detectable AI traces is not interpreted as non-use.
+This observational study follows 540 Spring candidate repositories from the original selection, created through 2017. The 20 oldest projects are examined in four eras and the remaining 520 in three, using the last mainline commit within each era. Of 1,640 planned project-era positions, 1,460 snapshots were recovered and 584 met the structural-comparison criteria. Five older projects could be compared between E1 and E4, and 123 later projects between E2 and E4. Coupling and class response increased in these paired sets, while other dimensions showed heterogeneous changes. In E4, 49 eligible projects with AI evidence had higher means across the seven measures than 157 without detected evidence, but also substantially larger codebases. The findings describe structural trajectories and observed associations, not causal effects of Spring Boot or AI, nor a single measure of community maturity.
 \end{abstract}
 
 \begin{resumo}
-Este estudo observacional longitudinal caracteriza a evolução estrutural de projetos Java públicos do ecossistema Spring, com foco nos repositórios criados entre 2009 e 2013. Recuperam-se versões anuais de 2009 a 2025 e uma observação parcial de 2026, apresentada separadamente, a partir de históricos Git com referências fixadas. Sete medidas são extraídas pela ferramenta CK e por um adaptador auditado, mantendo projetos inativos e arquivados acessíveis. A amostra congelada contém 1.616 candidatos; 388 projetos contribuem com 2.533 observações anuais elegíveis. A coorte antiga reúne 52 projetos elegíveis e 609 observações. Médias aritméticas, trajetórias individuais e mudanças dentro dos projetos descrevem acoplamento, complexidade, tamanho, herança e coesão. Dezesseis projetos antigos possuem pares antes/depois em anos completos em torno da primeira presença observável de Spring Boot. As evidências de IA permitem apenas um par completo e dez pares parciais nessa coorte, tornando essa análise exploratória. As dimensões observadas variam em direções distintas. Essas descrições não estabelecem melhoria uniforme, efeitos causais de Boot ou IA, nem a maturidade da comunidade de desenvolvedores. Ausência de vestígios detectáveis de IA não é interpretada como ausência de uso.
+Este estudo observacional acompanha 540 candidatos Spring da seleção original, criados até 2017. Os 20 antigos são examinados em quatro eras e os 520 posteriores em três, usando o último commit da linha principal dentro de cada era. Das 1.640 posições projeto--era previstas, 1.460 snapshots foram recuperados e 584 atenderam aos critérios de comparação estrutural. Cinco projetos antigos puderam ser comparados entre E1 e E4, e 123 posteriores entre E2 e E4. Acoplamento e resposta das classes aumentaram nesses conjuntos pareados, enquanto outras dimensões apresentaram mudanças heterogêneas. Em E4, 49 projetos elegíveis com evidência de IA apresentaram médias maiores nas sete medidas que 157 sem evidência detectada, mas também tinham código substancialmente maior. Os resultados descrevem trajetórias e associações observadas, sem identificar efeitos causais de Spring Boot ou IA nem uma nota única de maturidade da comunidade.
 \end{resumo}
 
 \begin{tcolorbox}
@@ -97,20 +98,20 @@ Trabalho de Conclusão de Curso (TCC)} \\
 Orientador de conteúdo (TCC I): João Pedro Batisteli - joaobatisteli@pucminas.br\\
 Orientador de conteúdo (TCC I): Leonardo Vilela - leonardocardoso@pucminas.br \\
 Orientador acadêmico (TCC I): Cleiton Tavares - cleitontavares@pucminas.br \\
-Belo Horizonte, versão de trabalho de 11 de outubro de 2026.
+Belo Horizonte, versão de trabalho de 15 de outubro de 2026.
 \end{tcolorbox}
 
 \input{Sections/01_Introducao}
 \input{Sections/02_Fundamentacao_Teorica}
 \input{Sections/03_Trabalhos_Relacionados}
-\input{Sections/04_Materiais_Metodos}
-\input{Sections/05_Resultados}
-\input{Sections/06_Conclusao}
+\input{Sections/04_Metodo_Base_Original}
+\input{Sections/05_Painel_Base_Original}
+\input{Sections/06_Conclusao_Base_Original}
 
 \bibliographystyle{sbc}
 \bibliography{sbc-template}
 
 \appendix
-\input{Sections/Apendice}
+\input{Sections/Apendice_Base_Original}
 
 \end{document}

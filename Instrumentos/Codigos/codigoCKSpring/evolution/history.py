@@ -23,7 +23,7 @@ def git(repo, *args, timeout=600):
     return run(['git', '--no-replace-objects', '-c', 'core.hooksPath=/dev/null', *args], cwd=repo, timeout=timeout)
 
 
-def pin_clone(row, out, timeout=900):
+def pin_clone(row, out, timeout=900, reference_repo=None):
     repo = out/'clones'/str(row['repository_id'])
     record = out/'repositories'/str(row['repository_id'])/'reference.json'
     if record.exists():
@@ -39,7 +39,8 @@ def pin_clone(row, out, timeout=900):
     if temp.exists():
         shutil.rmtree(temp)
     if not repo.exists():
-        run(['git', '-c', 'core.hooksPath=/dev/null', 'clone', '--bare', '--single-branch', '--no-tags',
+        reuse = ['--reference-if-able', str(reference_repo), '--dissociate'] if reference_repo else []
+        run(['git', '-c', 'core.hooksPath=/dev/null', 'clone', *reuse, '--bare', '--single-branch', '--no-tags',
              'https://github.com/'+row['full_name']+'.git', str(temp)], timeout=timeout)
         temp.rename(repo)
     if git(repo, 'rev-parse', '--is-shallow-repository').strip() != 'false':
@@ -49,7 +50,8 @@ def pin_clone(row, out, timeout=900):
     git(repo, 'fsck', '--connectivity-only', '--no-dangling', tip, timeout=timeout)
     ref = dict(repository_id=row['repository_id'], full_name=row['full_name'], tip=tip,
                reference=branch, metadata_branch=row.get('default_branch'), pinned_at=now(),
-               shallow=False, clone_mode='bare single default branch, all reachable history, no depth limit')
+               shallow=False, clone_mode='bare single default branch, all reachable history, no depth limit',
+               object_cache=str(reference_repo) if reference_repo else None)
     atomic_json(record, ref)
     return repo, ref
 

@@ -20,7 +20,7 @@ A justificativa é delimitar o estudo a projetos cuja linguagem principal é Jav
 - **Espelhos:** 71.507 antes − 0 excluídos = **71.507 restantes**.
 - **Arquivados:** 71.507 antes − 1.607 excluídos = **69.900 restantes**.
 - **Desabilitados:** 69.900 antes − 0 excluídos = **69.900 restantes**.
-- **Sem atividade desde o corte ou sem data válida:** 69.900 antes − 30.856 excluídos = **39.044 restantes**.
+- **Sem atividade desde o corte ou sem data válida:** 69.900 antes − 30.856 excluídos = **39.044 restantes**.(aplicar como último filtro)
 - **Templates:** 39.044 antes − 238 excluídos = **38.806 restantes**.
 - **Vazios ou sem branch padrão:** 38.806 antes − 3 excluídos = **38.803 restantes**.
 - **Materiais educacionais/listas identificados pelos critérios:** 38.803 antes − 347 excluídos = **38.456 restantes**.

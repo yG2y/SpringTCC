@@ -1,5 +1,10 @@
 # Instrumento histórico Spring
 
+**Protocolo anterior, preservado para consulta.** Desde 15/10/2026 a entrada
+autorizada é a seleção original de 38.456 IDs, com criação até 2017. Não execute
+a descoberta ampliada descrita abaixo. Use `../analisar_painel_original.py` e
+leia [o protocolo vigente](../METODOLOGIA_PAINEL_ORIGINAL.md).
+
 Entrada principal: `../analisar_evolucao.py`. Este instrumento é separado dos
 pilotos transversais de outubro de 2026 e não altera seus dados ou relatórios.
 

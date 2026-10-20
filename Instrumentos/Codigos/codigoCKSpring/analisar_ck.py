@@ -99,6 +99,7 @@ def collect(args):
         config = {'protocol': PROTOCOL, 'input_sha256': digest(args.input), 'population': len(population),
                   'jar': str(jar), 'ck_sha256': digest(jar), 'ck_version': ck_version, 'java': java,
                   'java_version': java_version, 'commits': args.commits, 'min_loc': args.min_loc,
+                  'min_java_files': args.min_java_files,
                   'heap': args.heap, 'partition': args.partition, 'clone_timeout': args.clone_timeout,
                   'ck_timeout': args.ck_timeout, 'runner_classes': str(args.runner_classes.resolve()) if args.runner_classes else None,
                   'runner_sha256': {p.name:digest(p) for p in sorted(args.runner_classes.glob('*.class'))} if args.runner_classes else None, 'classification_sha256': digest(args.classification) if args.classification else None,
@@ -166,6 +167,7 @@ def main():
     c.add_argument('--workers', type=int, default=2)
     c.add_argument('--commits', type=int, default=30)
     c.add_argument('--min-loc', type=int, default=2000)
+    c.add_argument('--min-java-files', type=int, default=10)
     c.add_argument('--heap', default='2g')
     c.add_argument('--partition', type=int, default=100)
     c.add_argument('--clone-timeout', type=int, default=900)
