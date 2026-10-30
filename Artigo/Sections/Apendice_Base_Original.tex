@@ -1,48 +1,38 @@
-\section*{Apêndice A --- Dados e reprodução do painel original}
+\section*{Apêndice A --- Dados, curadoria local e reprodução do painel}
 
-Os artefatos desta revisão estão na execução
-\path{20261015_base_original_ate2017}, sob
-\path{Instrumentos/Codigos/Artefatos/evolucao_spring/runs/}.
-O arquivo \texttt{sample.csv} contém os 540 identificadores congelados;
-\texttt{e1\_20.csv} e \texttt{e2\_520.csv} explicitam os dois recortes de
-criação. Não há sorteio nesta composição. A semente registrada no formato
-geral do manifesto não altera a inclusão de todos os candidatos.
+Os artefatos empíricos desta investigação derivam da base de descoberta
+\path{Instrumentos/Codigos/Artefatos/selecao_spring_boot/runs/20260920_java/population.csv}
+(95.894 registros únicos), da execução longitudinal auditada
+\path{Instrumentos/Codigos/Artefatos/evolucao_spring/runs/20261015_base_original_ate2017/}
+e da consolidação expandida da janela E4 (\texttt{pushed\_at >= 2022-01-01T00:00:00Z}),
+que reúne os 785 candidatos criados até 2017 sem filtro por contagem de estrelas. Não há
+sorteio nem substituição de identificadores em nenhuma etapa do protocolo.
 
-\texttt{measurements.csv} registra cada posição projeto--era, com SHA, datas,
-framework, classificação de IA, arquivos, LOC, sete medidas, elegibilidade e
-motivos de exclusão. A trajetória dos 20 antigos também está em
-\texttt{e1\_trajectories.csv}. Os arquivos brutos de classes, métodos e inventário
-de fontes permanecem comprimidos por chave de extração. Contagens de produção
-e testes são separadas; o corte usa LOC físicos por arquivo, não a soma dos
-tamanhos das classes.
+A higienização local pelos quatro cenários conjuntos do RepoReaper (C1 de finalidade não
+didática, C2 ajustado sem penalizar \texttt{demo}/\texttt{sample}/\texttt{example}, C3 de
+arquitetura de build Maven/Gradle e C4 de presença de testes automatizados) é executada
+pelo instrumento \texttt{reporeaper\_curation.py}, registrando as decisões por cenário,
+as \emph{flags} lexicais acionadas e os indicadores estruturais de build e testes para
+cada um dos 785 candidatos (607 aprovados na curadoria). A filtragem subsequente de
+completude longitudinal retém exclusivamente os repositórios com extração válida de
+métricas CK em todas as eras previstas para o seu respectivo grupo temporal, definindo os
+\textbf{470 repositórios válidos finais}: 17 no grupo pioneiro (medidos em E1, E2, E3 e
+E4; 68 snapshots) e 453 no grupo principal (medidos em E2, E3 e E4; 1.359 snapshots),
+perfazendo 1.427 snapshots analisados.
 
-\texttt{paired\_summary.csv} compara os mesmos IDs elegíveis nas duas eras de
-cada par. \texttt{balanced\_panel.csv} informa os IDs compartilhados em todas
-as eras da coorte. \texttt{ai\_ck\_comparison.csv} explicita as médias e os
-denominadores dos grupos: $n_a$ corresponde a projetos com evidência e $n_b$ a
-projetos sem evidência detectada, ambos elegíveis para CK. Esses denominadores
-não são contagens de classes, métodos ou commits.
+Os arquivos de medição registram cada posição projeto--era com identificador do
+repositório, nome completo, contagem de estrelas, grupo temporal, era, SHA do commit
+avaliado, status de recuperação e extração, quantidade de arquivos Java, linhas físicas
+de código (contadas uma vez por arquivo como contexto descritivo, sem duplicação de
+classes internas), sete métricas estruturais do CK (com separação entre produção e testes
+nos dados brutos) e classificação temporalizada de vestígios de IA em E4. Falhas de
+clonagem, ausência de commit no intervalo da era ou ausência de arquivos Java permanecem
+registradas nos artefatos de triagem e nunca são convertidas em métrica zero, assim como
+valores indefinidos de LCOM* são retirados apenas do denominador correspondente.
 
-Os manifestos de filtragem, amostra e instrumento conservam hashes e limites
-temporais. O auditor verifica identidade dos registros, completude das posições
-previstas, escolha de commits, ancestralidade, arquivos efetivamente presentes
-no SHA, inventário de LOC, médias contra os dados brutos e delimitação temporal
-das evidências de IA. Falhas de extração podem coexistir com auditoria aprovada
-quando estão corretamente registradas como falhas e excluídas da síntese CK;
-a auditoria não as transforma em medições válidas.
-
-Os instrumentos são \texttt{analisar\_painel\_original.py},
-\texttt{auditar\_painel\_original.py} e
-\texttt{relatorio\_painel\_original.py}. Os comandos e dependências estão em
-\texttt{METODOLOGIA\_PAINEL\_ORIGINAL.md}. Os relatórios anteriores, incluindo
-o protocolo ampliado e seus apêndices, permanecem arquivados no repositório;
-seus resultados não integram as tabelas desta revisão.
-
-A auditoria posterior, sem alteração das medições, está em
-\path{docs/auditoria/20261015/}. Inclui conferência de integridade,
-dispersão descritiva, denominadores das métricas, datas efetivas de E4 e a fila
-de casos educacionais pendentes. O diagnóstico e a matriz de conformidade
-estão em \path{docs/AUDITORIA_TCC.md}. A revisão é assistida por IA e não
-substitui validação humana independente. O pacote local de reanálise inclui
-CSVs brutos e manifestos, mas não os objetos Git; repetir a seleção histórica
-ou a extração CK exige conservar também os clones originais.
+As tabelas de valores e de diferenças operam estritamente sobre os mesmos identificadores
+válidos em cada grupo ($n = 17$ em todas as comparações de E1 a E4; $n = 453$ em E2 vs.\
+E3, E3 vs.\ E4 e E2 vs.\ E4; e $N = 470$ na comparação de vestígios de IA em E4, com 75
+projetos com evidência detectada e 395 sem evidência detectada). Manifestos JSON e
+arquivos CSV intermediários conservam os hashes dos instrumentos, parâmetros de execução
+e contagens reconciliáveis para verificação e reanálise independente.

@@ -1,33 +1,73 @@
+% Tabelas longitudinais estritas: apenas repositórios válidos com CK em todas as eras de seu grupo (17 pioneiros em E1-E4; 453 principais em E2-E4)
+
 \begin{table}[H]
 \centering\small
-\caption{Mesmos 5 projetos criados até 2013: E1 e E4; diferença = depois menos antes.}
-\begin{tabular}{lrrr}
+\caption{Grupo pioneiro (criados até 2013, $n = 17$): médias das métricas CK dos mesmos 17 repositórios válidos em E1, E2, E3 e E4.}
+\label{tab:valores_pioneiro}
+\begin{tabular}{lrrrr}
 \hline
-Métrica & Média E1 & Média E4 & Diferença \\ \hline
-CBO & 5,055 & 6,512 & 1,457 \\
-RFC & 8,880 & 10,601 & 1,721 \\
-WMC & 8,952 & 8,077 & -0,875 \\
-LOC/método & 6,684 & 6,695 & 0,012 \\
-DIT & 1,428 & 1,401 & -0,027 \\
-NOC & 0,104 & 0,104 & 0,000 \\
-LCOM* & 0,290 & 0,287 & -0,002 \\
+\textbf{Métrica} & \textbf{E1} & \textbf{E2} & \textbf{E3} & \textbf{E4} \\ \hline
+CBO & 4,878 & 5,394 & 5,626 & 5,803 \\
+RFC & 7,639 & 8,387 & 8,972 & 9,956 \\
+WMC & 8,094 & 8,076 & 7,936 & 7,201 \\
+LOC/método & 6,316 & 5,957 & 6,208 & 6,446 \\
+DIT & 1,416 & 1,355 & 1,376 & 1,341 \\
+NOC & 0,083 & 0,068 & 0,104 & 0,081 \\
+LCOM* & 0,298 & 0,276 & 0,277 & 0,249 \\
 \hline
 \end{tabular}
 \end{table}
 
 \begin{table}[H]
 \centering\small
-\caption{Mesmos 123 projetos criados em 2014--2017: E2 e E4; diferença = depois menos antes.}
+\caption{Grupo pioneiro (criados até 2013, $n = 17$): diferenças das médias de E1 em relação às eras subsequentes nos mesmos 17 repositórios válidos.}
+\label{tab:diferencas_pioneiro}
 \begin{tabular}{lrrr}
 \hline
-Métrica & Média E2 & Média E4 & Diferença \\ \hline
-CBO & 5,836 & 6,131 & 0,295 \\
-RFC & 8,289 & 9,812 & 1,523 \\
-WMC & 6,898 & 7,126 & 0,228 \\
-LOC/método & 5,928 & 6,264 & 0,336 \\
-DIT & 1,296 & 1,293 & -0,003 \\
-NOC & 0,089 & 0,087 & -0,002 \\
-LCOM* & 0,269 & 0,259 & -0,010 \\
+\textbf{Métrica} & \textbf{(E2 $-$ E1)} & \textbf{(E3 $-$ E1)} & \textbf{(E4 $-$ E1)} \\ \hline
+CBO & +0,516 & +0,748 & +0,925 \\
+RFC & +0,748 & +1,333 & +2,317 \\
+WMC & -0,019 & -0,158 & -0,893 \\
+LOC/método & -0,359 & -0,108 & +0,130 \\
+DIT & -0,062 & -0,040 & -0,076 \\
+NOC & -0,015 & +0,021 & -0,002 \\
+LCOM* & -0,022 & -0,021 & -0,049 \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering\small
+\caption{Grupo principal (criados entre 2014 e 2017, $n = 453$): médias das métricas CK dos mesmos 453 repositórios válidos em E2, E3 e E4.}
+\label{tab:valores_principal}
+\begin{tabular}{lrrr}
+\hline
+\textbf{Métrica} & \textbf{E2} & \textbf{E3} & \textbf{E4} \\ \hline
+CBO & 5,405 & 5,591 & 5,671 \\
+RFC & 6,603 & 7,224 & 7,587 \\
+WMC & 5,819 & 5,801 & 5,759 \\
+LOC/método & 5,308 & 5,489 & 5,616 \\
+DIT & 1,221 & 1,229 & 1,226 \\
+NOC & 0,059 & 0,065 & 0,063 \\
+LCOM* & 0,245 & 0,243 & 0,235 \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering\small
+\caption{Grupo principal (criados entre 2014 e 2017, $n = 453$): diferenças das médias entre E2, E3 e E4 nos mesmos 453 repositórios válidos.}
+\label{tab:diferencas_principal}
+\begin{tabular}{lrrr}
+\hline
+\textbf{Métrica} & \textbf{(E3 $-$ E2)} & \textbf{(E4 $-$ E3)} & \textbf{(E4 $-$ E2)} \\ \hline
+CBO & +0,186 & +0,080 & +0,266 \\
+RFC & +0,622 & +0,363 & +0,984 \\
+WMC & -0,018 & -0,042 & -0,060 \\
+LOC/método & +0,181 & +0,127 & +0,307 \\
+DIT & +0,008 & -0,003 & +0,005 \\
+NOC & +0,006 & -0,002 & +0,004 \\
+LCOM* & -0,002 & -0,007 & -0,009 \\
 \hline
 \end{tabular}
 \end{table}

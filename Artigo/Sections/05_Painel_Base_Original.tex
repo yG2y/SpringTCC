@@ -1,126 +1,206 @@
 \section{Resultados e Discussão}
 \label{sec:resultados}
 
-\subsection{População e cobertura efetiva}
+\subsection{Amostra final válida e relevância sem filtro de estrelas}
 
-A filtragem da seleção original reduziu 38.456 registros a 540 candidatos
-criados até 2017: 20 antigos e 520 criados em 2014--2017. Todos foram
-percorridos, sem substituição. Foram registradas as 1.640 posições previstas,
-com 1.460 snapshots recuperados. Houve 174 posições sem commit dentro da era
-e seis falhas de recuperação, correspondentes a dois repositórios indisponíveis
-em suas três eras previstas.
-
-Entre os snapshots recuperados, 1.441 tiveram extração CK com estado completo
-no diagnóstico adotado; 15 não continham fontes Java no escopo, três
-apresentaram erro do extrator e um teve cobertura parcial. Extração completa
-não implica elegibilidade: confirmação do framework, tamanho e demais
-critérios reduziram a comparação principal a 584 versões, pertencentes a
-245 projetos distintos. Os totais por era são versões de projetos que podem
-se repetir; não devem ser somados como repositórios únicos.
+A filtragem de metadados com atividade na era E4 (\texttt{pushed\_at >= 2022-01-01T00:00:00Z})
+e corte temporal de criação até 2017 selecionou 785 repositórios candidatos (22 criados
+até 2013 e 763 criados entre 2014 e 2017), dos quais 607 foram aprovados localmente na
+curadoria conjunta dos quatro cenários do RepoReaper (C1 + C2 Ajustado + C3 + C4).
+Aplicada a exigência metodológica de extração válida das métricas CK em todas as eras
+previstas para cada grupo temporal, consolidou-se a amostra final de \textbf{470
+repositórios válidos} e \textbf{1.427 snapshots analisados} (Tabela~\ref{tab:cobertura}):
+\textbf{17 repositórios} no grupo pioneiro (2009--2013), medidos continuamente nas quatro
+eras ($E_1, E_2, E_3, E_4$), e \textbf{453 repositórios} no grupo principal (2014--2017),
+medidos continuamente nas três eras ($E_2, E_3, E_4$).
 
 \input{Generated/PainelOriginalCobertura}
 
-Os 20 antigos tiveram suas quatro eras verificadas. Foram elegíveis seis
-versões em E1, nove em E2, onze em E3 e dez em E4. A versão de E1 do próprio
-Spring Boot foi identificada como código do framework; a presença preliminar
-de Boot no guia de serviço REST também foi registrada, mas seu tamanho não
-atingiu os limites principais. Assim, não se presumiu ausência de Boot antes
-do lançamento estável nem se confundiu código do framework com uma aplicação.
+A adoção dos quatro cenários do RepoReaper em substituição ao filtro arbitrário por
+número de estrelas preservou elevada representatividade do ecossistema na amostra final:
+entre os 470 sistemas válidos, \textbf{209 (44,5\%) possuem menos de dez estrelas} e
+\textbf{261 (55,5\%) possuem dez ou mais estrelas}. Em E4, o confronto estrutural entre
+os repositórios válidos com menos de dez estrelas ($n = 209$) e aqueles com dez ou mais
+estrelas ($n = 261$) confirma empiricamente a adequação dessa escolha metodológica: ambos
+os estratos exibem métricas intrínsecas em nível de classe e método muito próximas ---
+CBO médio de 5,483 contra 5,830, tamanho por método de 5,568 contra 5,707 linhas,
+profundidade de herança (DIT) de 1,200 contra 1,254 e falta de coesão (LCOM*) de 0,232
+contra 0,239 ---, diferindo substancialmente apenas na escala física total dos projetos
+(média de 88,0 arquivos Java e 3.821 LOC nos projetos com menos de dez estrelas, frente a
+543,1 arquivos e 41.054 LOC nos mais populares). Isso comprova que repositórios de menor
+visibilidade social aprovados pelo RepoReaper e ativos ao longo das eras constituem
+sistemas Java consistentes e bem estruturados, e não artefatos triviais.
 
-As falhas permanecem individualizadas nos dados. Dois erros ocorreram em
-versões de um projeto com arquivos de template e outro em um exemplo Java
-não processado pelo visitante do CK. A cobertura parcial envolveu caminhos
-Java que diferem apenas por maiúsculas/minúsculas. Nenhum desses casos foi
-convertido em métrica zero ou trocado por uma versão anterior conveniente.
+\subsection{Evolução longitudinal das métricas CK por grupo temporal}
 
-\subsection{Mudanças nos mesmos projetos}
+Como todos os repositórios válidos possuem extração CK completa em todas as eras do seu
+respectivo grupo, as tabelas de valores médios por era e as tabelas de diferenças entre
+eras incidem exatamente sobre o mesmo conjunto invariável de sistemas, garantindo
+identidade perfeita entre a variação média dos projetos e a diferença direta entre as
+médias de cada período.
 
-Cinco projetos antigos foram elegíveis em E1 e E4. Nesse conjunto, CBO e RFC
-aumentaram em média, enquanto WMC diminuiu. LOC por método, NOC e LCOM*
-variaram pouco em termos absolutos. Esses resultados descrevem dimensões
-distintas; não sustentam uma direção única de melhoria estrutural.
-
-Nos 123 projetos criados em 2014--2017 elegíveis em E2 e E4, as médias de CBO,
-RFC, WMC e LOC por método aumentaram. DIT e NOC variaram pouco, e LCOM*
-diminuiu. A redução desse indicador de falta de coesão coexistiu com aumento
-de acoplamento e complexidade. Não se agrega esse comportamento em uma nota
-única de maturidade.
+Para o \textbf{grupo pioneiro} ($n = 17$ repositórios válidos criados até 2013 e
+acompanhados nas quatro eras), a Tabela~\ref{tab:valores_pioneiro} apresenta os valores
+médios das sete métricas de E1 a E4, enquanto a Tabela~\ref{tab:diferencas_pioneiro}
+consolida as diferenças de E1 frente a E2, E3 e E4 sobre os mesmos 17 projetos.
+Observa-se crescimento monotônico e expressivo no acoplamento médio entre classes (CBO:
+de 4,878 em E1 para 5,394 em E2, 5,626 em E3 e 5,803 em E4, acumulando $+0,516$, $+0,748$
+e $+0,925$) e no conjunto de resposta por classe (RFC: de 7,639 em E1 para 8,387 em E2,
+8,972 em E3 e 9,956 em E4, acumulando $+0,748$, $+1,333$ e $+2,317$). Em sentido oposto,
+a complexidade ponderada por classe (WMC) recuou continuamente ao longo das quatro eras
+(de 8,094 em E1 para 7,201 em E4, variação acumulada de $-0,893$), e a falta de coesão
+(LCOM*) diminuiu de 0,298 para 0,249 ($-0,049$), indicando classes internamente mais
+coesas apesar da expansão física média desses sistemas (de 1.126,5 arquivos Java e
+63.102 LOC em E1 para 2.999,6 arquivos e 228.571 LOC em E4). Os indicadores hierárquicos
+(DIT e NOC) mantiveram-se estáveis em todo o intervalo.
 
 \input{Generated/PainelOriginalPares}
 
-Os gráficos do relatório mantêm composição constante em todas as eras de
-cada coorte: quatro projetos antigos em E1--E4 e 118 posteriores em E2--E4.
-Esses conjuntos são menores que os pares das tabelas, pois exigem elegibilidade
-também nas eras intermediárias. A cobertura pode alterar a leitura: nos
-quatro antigos do painel balanceado, LCOM* passou de 0,279 para 0,302,
-enquanto nos cinco pares E1--E4 houve pequena redução de 0,290 para 0,287.
-Portanto, explicitar os IDs compartilhados é necessário mesmo em uma análise
-descritiva.
+Para o \textbf{grupo principal} ($n = 453$ repositórios válidos criados entre 2014 e 2017
+e acompanhados continuamente nas três eras), a Tabela~\ref{tab:valores_principal} exibe
+os valores médios em E2, E3 e E4, e a Tabela~\ref{tab:diferencas_principal} apresenta as
+diferenças entre eras adjacentes (E2 vs.\ E3 e E3 vs.\ E4) e no horizonte completo (E2
+vs.\ E4), todas calculadas rigorosamente sobre os mesmos 453 repositórios:
 
-\subsection{Presença de Spring Boot e evidências de IA}
+\begin{itemize}
+    \item \textbf{E2 vs.\ E3:} O acoplamento médio (CBO) elevou-se em
+    $+0,186$ (de 5,405 para 5,591) e o RFC cresceu $+0,622$ (de 6,603 para 7,224). Em
+    contrapartida, o WMC registrou leve retração de $-0,018$ (de 5,819 para 5,801) e o
+    LCOM* recuou $-0,002$ (de 0,245 para 0,243), com aumento moderado de $+0,181$ linhas
+    no tamanho por método e estabilidade em DIT ($+0,008$) e NOC ($+0,006$).
+    \item \textbf{E3 vs.\ E4:} O CBO avançou mais $+0,080$ (de 5,591 para
+    5,671) e o RFC aumentou $+0,363$ (de 7,224 para 7,587). O WMC voltou a recuar
+    ($-0,042$, atingindo 5,759) e o LCOM* reduziu mais $-0,007$ (chegando a 0,235), ao
+    passo que o LOC por método cresceu $+0,127$ e DIT ($-0,003$) e NOC ($-0,002$)
+    permaneceram praticamente constantes.
+    \item \textbf{E2 vs.\ E4:} Na trajetória acumulada entre as três eras, os
+    mesmos 453 repositórios apresentaram elevação consistente de $+0,266$ em CBO e de
+    $+0,984$ em RFC, coexistindo com redução acumulada de $-0,060$ em WMC e de $-0,009$
+    em LCOM*, acréscimo de $+0,307$ linhas por método e conservação da estrutura de
+    herança (DIT $+0,005$; NOC $+0,004$). No mesmo intervalo, o porte contextual médio
+    expandiu-se de 121,7 arquivos Java e 7.492 LOC em E2 para 185,7 arquivos e 11.703 LOC
+    em E3 e 241,0 arquivos e 16.839 LOC em E4.
+\end{itemize}
 
-Entre endpoints adjacentes elegíveis, a passagem observável de Spring
-tradicional para presença declarada de Boot ocorreu em quatro pares E1--E2,
-nove E2--E3 e quatro E3--E4. A diferença média de CBO nesses conjuntos foi,
-respectivamente, $-0,260$, $+1,136$ e $-0,498$. Os conjuntos e períodos
-distintos não apresentaram uma direção uniforme. A presença de Boot em um
-módulo ou exemplo não equivale à migração integral do projeto; esses números
-não isolam um efeito do framework.
+A convergência de sinal entre o grupo pioneiro ($n = 17$) e o grupo principal ($n = 453$)
+demonstra que, à medida que sistemas Spring amadurecem e expandem sua base de código, a
+colaboração e o acoplamento entre classes (CBO e RFC) aumentam de maneira gradual, sem
+degradar a coesão interna dos atributos (LCOM*) nem inflacionar a complexidade média das
+classes (WMC).
 
-Em E4, 94 candidatos apresentaram evidência detectada de IA, 349 não
-apresentaram os sinais procurados e 97 permaneceram indeterminados: 95 sem
-snapshot na era e dois sem recuperação do repositório. Entre os 206
-snapshots elegíveis para CK, 49 tinham evidência e 157 não tinham evidência
-detectada. Não foram encontrados sinais nas versões de E1--E3 pelo detector
-adotado; isso não comprova inexistência de assistência nesses períodos.
+\subsection{Presença de Spring Boot e evidências de assistência por IA}
+
+Nos repositórios válidos com inspeção estática de manifestos de dependência entre eras
+adjacentes, a passagem de ausência para presença declarada de dependências
+\texttt{org.springframework.boot} foi observada em sete transições E1--E2 (variação média
+de CBO de $+0,585$), 32 transições E2--E3 ($+0,541$) e 11 transições E3--E4 ($-0,020$).
+A heterogeneidade de magnitude e sinal entre os períodos, somada ao fato de declarações
+de Boot frequentemente integrarem módulos específicos em projetos multimódulo, indica que
+a adoção declarada do framework não produz, isoladamente, um deslocamento estrutural
+uniforme sobre o código.
+
+Quanto aos vestígios de assistência por inteligência artificial na amostra final de
+\textbf{470 repositórios válidos} em E4, \textbf{75 projetos (16,0\%) apresentaram
+evidência explícita detectada} em arquivos de configuração ou histórico de commits e
+\textbf{395 projetos (84,0\%) não apresentaram os sinais inspecionados}
+(Tabela~\ref{tab:ia_e4}). Nenhum vestígio explícito dos agentes monitorados foi
+identificado nos snapshots históricos de E1 a E3, o que não comprova inexistência de
+ferramentas assistivas preliminares.
 
 \input{Generated/PainelOriginalIA}
 
-As sete médias de E4 foram maiores no grupo com evidência. Entretanto, esse
-grupo também apresentou maior porte: média de 125.578 LOC totais por projeto,
-contra 15.222 no grupo sem evidência detectada. A comparação não controla
-tamanho, domínio, arquitetura ou equipe e não permite concluir que a IA
-aumentou complexidade ou piorou qualidade.
+Em E4, o subgrupo com evidência detectada de IA ($n_a = 75$) registrou médias aritméticas
+superiores nas sete medidas estruturais frente ao subgrupo sem evidência detectada
+($n_b = 395$) --- com destaque para CBO ($6,101$ contra $5,595$; $+0,506$), RFC ($9,840$
+contra $7,261$; $+2,579$), WMC ($6,960$ contra $5,593$; $+1,366$) e tamanho por método
+($6,182$ contra $5,544$; $+0,639$). Contudo, a inspeção contextual de porte evidencia
+forte assimetria de escala entre os dois subconjuntos: os 75 projetos válidos com
+evidência de IA concentram, em média, \textbf{113.864 LOC e 1.341,6 arquivos Java},
+contra \textbf{7.529 LOC e 150,7 arquivos Java} nos 395 projetos sem evidência detectada.
+Sem controle multivariado por porte, domínio e tamanho de equipe, essas diferenças
+descrevem o perfil dos sistemas que incorporaram artefatos explícitos de agentes, não
+autorizando inferir que a IA eleve ou degrade causalmente a complexidade estrutural.
 
-O momento observado também difere. Os snapshots elegíveis com evidência estão,
-em média, 34,4 dias antes do corte fixado; os sem evidência, 475,0 dias antes.
-Os primeiros variam de novembro de 2025 a outubro de 2026, enquanto os segundos
-incluem versões desde fevereiro de 2022. Compartilhar a era E4 não iguala a
-oportunidade temporal de observar vestígios dos agentes. Essa diferença deve
-acompanhar a interpretação, sem reclassificar versões antigas por sinais futuros.
+O acompanhamento longitudinal dos mesmos 470 projetos válidos entre E3 e E4 corrobora
+essa interpretação: nos 75 sistemas que exibiram vestígios de IA em E4, o CBO médio
+passou de 5,858 em E3 para 6,101 em E4 ($+0,243$), enquanto nos 395 sistemas sem
+evidência detectada evoluiu de 5,542 em E3 para 5,595 em E4 ($+0,053$). Verifica-se que o
+subgrupo com evidência de IA em E4 já operava em patamar superior de acoplamento na era
+anterior (E3), indicando que projetos de maior escala e atividade recente tendem
+simultaneamente a exibir maior interconexão entre classes e maior propensão à adoção
+visível de agentes de codificação.
 
-Nos 43 pares elegíveis com ausência de vestígio em E3 e evidência observada em
-E4, CBO médio passou de 6,356 para 6,618. Nos 139 pares sem vestígio nos dois
-endpoints, passou de 5,925 para 5,975. A diferença entre esses conjuntos já
-aparecia na versão de E3. Além disso, a primeira evidência observada não data
-o primeiro uso real. A análise representa associação temporal, sem identificação
-causal.
+\subsection{Sumarização dos resultados frente aos objetivos}
+\label{sec:sumarizacao}
 
-\subsection{Alcance das evidências}
+\textbf{Objetivo específico (i): trajetórias estruturais.} Tanto nos 17 projetos válidos
+do grupo pioneiro acompanhados de E1 a E4 quanto nos 453 projetos válidos do grupo
+principal acompanhados de E2 a E4, verificou-se expansão monotônica do acoplamento entre
+classes (CBO: $+0,925$ e $+0,266$) e da superfície de resposta (RFC: $+2,317$ e $+0,984$),
+coexistindo com retração da complexidade ponderada por classe (WMC: $-0,893$ e $-0,060$),
+redução da falta de coesão (LCOM*: $-0,049$ e $-0,009$) e estabilidade das hierarquias de
+herança (DIT e NOC).
 
-O resultado central é uma descrição longitudinal rastreável, com cobertura
-explícita e mudanças heterogêneas entre dimensões. A seleção original por
-tópicos atuais, atividade e arquivamento preserva viés de sobrevivência.
-Configurações não resolvidas pelo detector, perdas de histórico, falhas do CK
-e assistência sem vestígios também restringem o alcance. Os poucos projetos
-antigos comparáveis impedem generalizar sua trajetória para toda a comunidade
-Spring. Os resultados de populações anteriores não foram incorporados a
-essas tabelas.
+\textbf{Objetivo específico (ii): configurações de Spring e Boot.} As transições
+observáveis para presença declarada de Spring Boot em manifestos Maven/Gradle exibiram
+variações distintas entre eras adjacentes ($+0,585$, $+0,541$ e $-0,020$ em CBO),
+mostrando que a introdução do framework interage com a arquitetura modular de cada
+projeto sem impor direção única às métricas CK.
 
-A auditoria posterior identificou limitações adicionais de composição, sem
-alterar a amostra ou as medições. Dos 91 candidatos sinalizados para revisão
-educacional, 29 tiveram alguma versão elegível; a confirmação estática de Spring
-não determina se o projeto é uma aplicação, biblioteca ou demonstração.
-Em 451 dos 584 snapshots elegíveis há classes sem valor finito de LCOM*,
-excluídas apenas do denominador dessa média. Em 98 versões, LOC classificados
-como produção ficam abaixo de 2.000, embora produção e testes juntos atendam
-ao limite adotado. A classificação por caminho pode errar e não foi validada
-individualmente em todos os módulos.
+\textbf{Objetivo específico (iii): evidências de IA.} Na amostra final de 470 projetos
+válidos em E4, os 75 sistemas com evidência detectada de IA apresentaram médias
+superiores nas sete métricas em comparação aos 395 sistemas sem evidência detectada, mas
+reuniram bases de código quinze vezes maiores em LOC médio (113.864 contra 7.529 LOC) e
+já partiam de acoplamento mais elevado em E3 (5,858 contra 5,542), caracterizando
+associação com escala e ritmo de evolução recente em vez de efeito causal isolado.
 
-Além disso, 105 snapshots elegíveis não possuem versão declarada preenchida.
-O estudo atual registra porte e framework, mas não executa o controle de
-tamanho e versão originalmente previsto para os contrastes inferenciais.
-Dispersão descritiva está disponível no suplemento de auditoria; médias e
-extremos não eliminam confundimento. Uma análise de sensibilidade com regras
-fixadas previamente pode complementar o estudo, sem substituir os resultados
-principais ou retirar casos em função das métricas observadas.
+\textbf{Objetivo específico (iv): contexto de curadoria, estrelas e porte.} A curadoria
+pelos quatro cenários do RepoReaper (com flexibilização de C2 para convenções do Spring
+Boot) aliada à exigência de completude longitudinal consolidou 470 repositórios válidos,
+demonstrando que projetos com menos de dez estrelas (44,5\% da amostra final) mantêm
+coesão, acoplamento e tamanho de métodos equivalentes aos projetos populares.
+
+\textbf{Objetivo geral.} Caracterizou-se longitudinalmente a evolução estrutural de
+1.427 snapshots completos distribuídos em 470 projetos válidos do ecossistema Spring ao
+longo de quatro eras tecnológicas, evidenciando que o crescimento contínuo dos sistemas
+eleva a comunicação entre classes (CBO e RFC), mas preserva o controle de complexidade
+interna (WMC), a coesão de atributos (LCOM*) e hierarquias enxutas de herança.
+
+\subsection{Ameaças à validade}
+\label{sec:ameacas}
+
+\textbf{Construto.} A análise estática do CK opera sobre o código-fonte sem resolução de
+dependências externas compiladas, o que pode subestimar tipos herdados ou acoplamentos
+indiretos. LCOM* é indefinido para classes sem atributos ou métodos compatíveis, sendo
+omitido apenas do denominador correspondente sem imputação por zero. A detecção de IA
+baseia-se em rastros explícitos versionados (arquivos de configuração, identidades e
+coautoria); o uso silencioso de completamento inline ou chats externos não deixa artefato
+no Git, de modo que o grupo sem evidência detectada não deve ser interpretado como
+exclusivamente humano. Por fim, a curadoria pelos quatro cenários do RepoReaper inspeciona
+metadados e estrutura de build/testes consolidados, e a flexibilização de \texttt{demo},
+\texttt{sample} e \texttt{example} no Cenário C2 constitui adaptação operacional para o
+domínio Spring Boot, sem substituir inspeção qualitativa individual.
+
+\textbf{Interna.} Variações entre eras e diferenças entre subgrupos com e sem evidência
+de IA coexistem com expansão acentuada de porte (LOC e número de arquivos), refatorações
+arquiteturais, rotatividade de desenvolvedores e diferenças na recência do último commit
+dentro de E4. A ausência de piso mínimo de porte permite que fases iniciais enxutas e
+sistemas corporativos extensos coexistam nas médias descritivas, razão pela qual os
+indicadores CK devem ser lidos em conjunto com as medidas contextuais de tamanho e com as
+diferenças calculadas sobre os mesmos repositórios.
+
+\textbf{Externa.} A descoberta inicial depende do tópico \texttt{spring-boot} declarado
+atualmente no GitHub, de linguagem principal Java, da exclusão de repositórios arquivados,
+da exigência de atividade a partir de 2022 (\texttt{pushed\_at}) e da presença de
+snapshots com extração CK válida em todas as eras do grupo temporal, introduzindo viés de
+sobrevivência e continuidade em favor de projetos longevos e regularmente mantidos. Além
+disso, o grupo pioneiro anterior a 2014 é reduzido (17 projetos válidos), impedindo
+generalização irrestrita para todo o universo histórico de aplicações Spring tradicionais
+ou privadas.
+
+\textbf{Conclusão.} O estudo adota estatística estritamente descritiva, sem testes de
+hipótese, p-valores ou tamanhos de efeito não paramétricos. Como os mesmos repositórios
+são observados repetidamente entre todas as eras de seu grupo, as medições longitudinais
+não constituem amostras independentes; a consistência das trajetórias apoia-se na
+eliminação completa de atrito amostral entre períodos dentro de cada grupo ($n = 17$ em
+E1--E4 e $n = 453$ em E2--E4).

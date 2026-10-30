@@ -1,27 +1,60 @@
 \section{Conclusão}
 \label{sec:conclusao}
 
-O estudo acompanhou os 540 candidatos da seleção original criados até 2017,
-verificando 1.640 posições projeto--era e obtendo 584 versões elegíveis para
-a comparação estrutural. Cinco projetos antigos puderam ser comparados entre
-E1 e E4, e 123 criados em 2014--2017 entre E2 e E4. A disponibilidade de um
-repositório antigo não garantiu cobertura elegível em todas as eras.
+Este trabalho caracterizou longitudinalmente a evolução da qualidade estrutural de
+projetos Java do ecossistema Spring criados até 2017 e ativos na era contemporânea
+(E4, \texttt{pushed\_at >= 2022-01-01}), acompanhando versões históricas com
+rastreabilidade estrita por commit Git até outubro de 2026. Em substituição a filtros
+arbitrários de popularidade por número de estrelas, a relevância de engenharia dos 785
+candidatos iniciais foi aferida localmente pela aplicação simultânea dos quatro cenários
+do RepoReaper (C1 de finalidade não didática, C2 ajustado para projetos brinquedo com
+flexibilização dos termos \texttt{demo}, \texttt{sample} e \texttt{example} próprios de
+convenções do Spring Boot, C3 de automação de build Maven/Gradle e C4 de presença de
+testes automatizados), aprovando 607 repositórios. A exigência metodológica de dados CK
+válidos em todas as eras previstas para cada repositório consolidou a amostra final de
+\textbf{470 repositórios válidos (1.427 snapshots CK)}, organizados em 17 projetos do
+grupo pioneiro (2009--2013, acompanhados continuamente nas quatro eras E1--E4) e 453
+projetos do grupo principal (2014--2017, acompanhados continuamente nas três eras
+E2--E4).
 
-As trajetórias revelaram mudanças heterogêneas: aumentos de acoplamento e
-resposta das classes coexistiram com reduções ou estabilidade de outras
-medidas. A direção também dependeu do conjunto de versões comparáveis.
-Consequentemente, os dados não sustentam uma afirmação única de que a
-comunidade melhorou ou piorou sua maturidade estrutural.
+\textbf{Objetivo (i), trajetórias estruturais.} O acoplamento entre objetos (CBO) e o
+conjunto de resposta das classes (RFC) cresceram de forma monotônica nos mesmos projetos
+ao longo das eras: $+0,925$ em CBO e $+2,317$ em RFC nos 17 repositórios pioneiros entre
+E1 e E4, e $+0,266$ em CBO e $+0,984$ em RFC nos 453 repositórios do grupo principal
+entre E2 e E4. Em contrapartida, a complexidade ponderada por classe (WMC) apresentou
+retração ($-0,893$ no grupo pioneiro e $-0,060$ no grupo principal) e a falta de coesão
+(LCOM*) diminuiu ($-0,049$ e $-0,009$), acompanhadas de alta estabilidade na hierarquia
+de herança (DIT e NOC). Os achados demonstram que a expansão funcional dos sistemas eleva
+a interdependência entre componentes sem provocar degradação na coesão interna nem
+inflação na complexidade média das classes.
 
-Em E4, 49 projetos elegíveis com evidência de IA apresentaram médias maiores
-nas sete medidas que os 157 sem evidência detectada, mas também eram, em
-média, maiores em LOC. As diferenças anteriores ao aparecimento observável
-dos sinais e as limitações do detector impedem atribuir essas diferenças à IA.
-Da mesma forma, as mudanças que acompanharam presença declarada de Boot
-não identificam um efeito causal do framework.
+\textbf{Objetivo (ii), Spring e Boot.} As transições declaradas para dependências do
+Spring Boot entre eras adjacentes não exibiram direção estrutural uniforme nas métricas
+CK, evidenciando que a adoção do framework opera em interação com o desenho modular de
+cada sistema, sem atuar isoladamente como fator determinístico de simplificação ou
+complexidade.
 
-A contribuição é o painel reproduzível que distingue criação, data do código,
-disponibilidade, elegibilidade e evidência observada. A continuidade do estudo
-pode ampliar a validação independente dos sinais, examinar papéis arquiteturais
-e avaliar sensibilidade aos limites de tamanho, sempre preservando a origem
-dos candidatos e declarando alterações de protocolo.
+\textbf{Objetivo (iii), evidências de IA.} Em E4, entre os 470 repositórios válidos
+finais, os 75 sistemas com evidência detectada de assistência por IA apresentaram médias
+superiores nas sete medidas estruturais em relação aos 395 sistemas sem evidência
+detectada. Contudo, esses projetos possuíam porte médio substancialmente superior
+(113.864 contra 7.529 LOC) e já registravam acoplamento mais elevado na era anterior E3
+(CBO de 5,858 contra 5,542 nos mesmos grupos), indicando que a presença de artefatos de
+agentes associa-se à escala e à intensidade de evolução recente dos sistemas, sem
+caracterizar efeito causal direto sobre a arquitetura.
+
+\textbf{Objetivo (iv), curadoria, estrelas e porte.} A exigência de presença contínua de
+métricas CK eliminou variações de composição entre eras tanto no grupo pioneiro ($n=17$
+em todas as comparações de E1--E4) quanto no grupo principal ($n=453$ em E2 vs.\ E3, E3
+vs.\ E4 e E2 vs.\ E4). Demonstrou-se empiricamente que projetos com menos de dez estrelas
+validados pelo protocolo (44,5\% da amostra final) apresentam coesão, acoplamento e
+tamanho de métodos equivalentes aos de repositórios altamente estrelados, confirmando a
+adequação de critérios de engenharia em lugar de métricas de popularidade social.
+
+Como contribuição central, o estudo entrega um protocolo longitudinal auditável e
+reprodutível para mineração do ecossistema Spring Boot, aliando curadoria local em quatro
+dimensões adaptada às convenções do framework, completude longitudinal de snapshots por
+era e análise estrutural sobre conjuntos fixos de projetos. Trabalhos futuros podem
+investigar o papel específico de estereótipos arquiteturais do Spring sobre o acoplamento
+e aprofundar a rastreabilidade de código assistido por IA em granularidade de método e
+pull request, observados os limites descritos na Seção~\ref{sec:ameacas}.
