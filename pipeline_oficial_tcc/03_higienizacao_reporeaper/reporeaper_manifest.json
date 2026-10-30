@@ -1,0 +1,68 @@
+{
+  "tool": "RepoReaper Local Curation Instrument (4 Scenarios: C1 + C2 Adjusted + C3 + C4)",
+  "reference": "Munaiah et al. (2017) DOI: 10.1007/s10664-017-9512-6",
+  "script_sha256": "42c39579caf4a2b26d0cb32be1b7c82446402d8f7c4ae6f966c7800fd0b41407",
+  "timestamp_utc": "2026-10-30T01:16:50.326968+00:00",
+  "input_dataset": "pipeline_oficial_tcc\\02_coortes_e_shas\\sample_785.csv",
+  "input_sha256": "665924d3fff0d0b47178b8fb10639a187cccbb6ad98e24ba92c301801ad440a4",
+  "parameters": {
+    "c1_didactic_keywords": [
+      "course",
+      "homework",
+      "assignment",
+      "learning",
+      "tutorial",
+      "exercicio",
+      "exercicios",
+      "aula",
+      "curso",
+      "treinamento",
+      "udemy",
+      "mooc",
+      "exercism",
+      "lecture"
+    ],
+    "c2_toy_keywords_adjusted": [
+      "playground",
+      "sandbox",
+      "toy",
+      "practice",
+      "boilerplate",
+      "cheatsheet",
+      "cheat-sheet",
+      "slides"
+    ],
+    "c2_spring_boot_exempted_terms": [
+      "demo",
+      "demos",
+      "sample",
+      "samples",
+      "example",
+      "examples"
+    ],
+    "c3_build_descriptors": [
+      "pom.xml",
+      "build.gradle",
+      "build.gradle.kts"
+    ],
+    "c4_automated_test_markers": [
+      "src/test",
+      "*Test.java",
+      "*Tests.java"
+    ]
+  },
+  "required_eras_filter": null,
+  "total_candidates_evaluated": 785,
+  "scenario_approvals": {
+    "c1_non_didactic": 765,
+    "c2_non_toy_spring_adjusted": 768,
+    "c3_standard_build": 752,
+    "c4_automated_tests": 665,
+    "all_4_jointly": 607
+  },
+  "approved_count": 607,
+  "rejected_count": 178,
+  "approval_rate_percent": 77.32,
+  "output_results_csv": "pipeline_oficial_tcc\\03_higienizacao_reporeaper\\reporeaper_results.csv",
+  "output_results_sha256": "e2d58241a702c1c229fa8a275451bfb29e6348e736d9dc0acf47b7a406ec8477"
+}
