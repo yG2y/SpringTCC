@@ -24,6 +24,8 @@ A justificativa é delimitar o estudo a projetos cuja linguagem principal é Jav
 - **Templates:** 39.044 antes − 238 excluídos = **38.806 restantes**.
 - **Vazios ou sem branch padrão:** 38.806 antes − 3 excluídos = **38.803 restantes**.
 - **Materiais educacionais/listas identificados pelos critérios:** 38.803 antes − 347 excluídos = **38.456 restantes**.
+- **Filtro data de criação 2009 - 2017:** 38.456 antes − 37.916 excluídos = **540 restantes**.
+
 
 A soma foi conferida: **95.894 = 57.438 + 38.456**. As exclusões são sequenciais, sem contar o mesmo repositório duas vezes.
 
