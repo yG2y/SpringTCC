@@ -98,7 +98,13 @@ def activity_sensitivity(out, rows):
         window=label, reference='2026-09-17T16:36:06Z', cutoff=date,
         retained=sum(bool(parse_iso(r.get('pushed_at',''))) and parse_iso(r['pushed_at']) >= parse_iso(date) for r in rows),
         input_count=len(rows), applied_to_membership=False)
-        for label,date in [('3_years','2023-09-17T16:36:06Z'),('3_months','2026-06-17T16:36:06Z')]])
+        for label,date in [
+            ('e4_era_start','2022-01-01T00:00:00Z'),
+            ('3_years','2023-09-17T16:36:06Z'),
+            ('1_year','2025-09-17T16:36:06Z'),
+            ('6_months','2026-03-17T16:36:06Z'),
+            ('3_months','2026-06-17T16:36:06Z')
+        ]])
 
 
 def validate_filter(out):

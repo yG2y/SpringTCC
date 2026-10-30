@@ -182,8 +182,13 @@ def run_filters(
     activity_cfg = config.get("activity") or {}
     non_software_cfg = config.get("non_software") or {}
     now = collection_time or utc_now()
-    years = int(activity_cfg.get("max_inactive_years") or 3)
-    cutoff = minus_years(now, years)
+    if activity_cfg.get("cutoff"):
+        cutoff = parse_iso(str(activity_cfg["cutoff"]))
+        if cutoff is None:
+            raise ValueError(f"Invalid activity cutoff: {activity_cfg.get('cutoff')}")
+    else:
+        years = int(activity_cfg.get("max_inactive_years") or 3)
+        cutoff = minus_years(now, years)
     activity_field = activity_cfg.get("field") or "pushed_at"
 
     attrition: List[Dict[str, Any]] = []

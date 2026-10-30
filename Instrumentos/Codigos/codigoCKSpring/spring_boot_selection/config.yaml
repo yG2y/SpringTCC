@@ -8,7 +8,7 @@ target_count: 50000
 primary_language: Java
 
 # Recorte solicitado em 15/10/2026. Limite exclusivo inclui todo 31/12/2017 UTC.
-# A análise corrigida parte do selected_repositories.csv original, não de discovery.
+# A analise corrigida parte do selected_repositories.csv original, nao de discovery.
 creation:
   before: "2018-01-01T00:00:00Z"
 
@@ -23,6 +23,8 @@ discovery:
   api_version: "2022-11-28"
 
 activity:
+  # Parametro de atividade ancorado no inicio da Era E4 (Era da IA / ferramentas generativas)
+  cutoff: "2022-01-01T00:00:00Z"
   max_inactive_years: 3
   field: pushed_at
 
