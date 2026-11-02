@@ -1,38 +1,9 @@
-\section*{Apêndice A --- Dados, curadoria local e reprodução do painel}
+\section*{Apêndice A: Artefatos, curadoria local e reprodução do painel}
 
-Os artefatos empíricos desta investigação derivam da base de descoberta
-\path{Instrumentos/Codigos/Artefatos/selecao_spring_boot/runs/20260920_java/population.csv}
-(95.894 registros únicos), da execução longitudinal auditada
-\path{Instrumentos/Codigos/Artefatos/evolucao_spring/runs/20261015_base_original_ate2017/}
-e da consolidação expandida da janela E4 (\texttt{pushed\_at >= 2022-01-01T00:00:00Z}),
-que reúne os 785 candidatos criados até 2017 sem filtro por contagem de estrelas. Não há
-sorteio nem substituição de identificadores em nenhuma etapa do protocolo.
+Os artefatos empíricos deste estudo partem da base de descoberta \path{Instrumentos/Codigos/Artefatos/selecao_spring_boot/runs/20260920_java/population.csv} (95.894 registros únicos) e encontram-se consolidados de forma modular e auditável em \path{pipeline_oficial_tcc/}, preservando separadamente a execução histórica congelada de 15/10/2026 (\path{Instrumentos/Codigos/Artefatos/evolucao_spring/runs/20261015_base_original_ate2017/}, que empregava corte móvel de três anos e 540 candidatos). No protocolo vigente, a janela \texttt{pushed\_at >= 2022-01-01T00:00:00Z} sem filtro por número de estrelas seleciona 52.419 repositórios Java ativos em E4 e 785 candidatos criados até 2017, sem sorteio ou substituição de identificadores.
 
-A higienização local pelos quatro cenários conjuntos do RepoReaper (C1 de finalidade não
-didática, C2 ajustado sem penalizar \texttt{demo}/\texttt{sample}/\texttt{example}, C3 de
-arquitetura de build Maven/Gradle e C4 de presença de testes automatizados) é executada
-pelo instrumento \texttt{reporeaper\_curation.py}, registrando as decisões por cenário,
-as \emph{flags} lexicais acionadas e os indicadores estruturais de build e testes para
-cada um dos 785 candidatos (607 aprovados na curadoria). A filtragem subsequente de
-completude longitudinal retém exclusivamente os repositórios com extração válida de
-métricas CK em todas as eras previstas para o seu respectivo grupo temporal, definindo os
-\textbf{470 repositórios válidos finais}: 17 no grupo pioneiro (medidos em E1, E2, E3 e
-E4; 68 snapshots) e 453 no grupo principal (medidos em E2, E3 e E4; 1.359 snapshots),
-perfazendo 1.427 snapshots analisados.
+A etapa de higienização local nos quatro critérios conjuntos (C1 de finalidade não didática, C2 ajustado sem penalizar \texttt{demo}/\texttt{sample}/\texttt{example}, C3 de automação de \emph{build} Maven/Gradle e C4 de presença de testes automatizados) é executada por \path{pipeline_oficial_tcc/03_higienizacao_reporeaper/reporeaper_curation.py}, gravando decisões individuais, \emph{flags} lexicais e indicadores estruturais para os 785 candidatos (607 aprovados). Em seguida, \path{pipeline_oficial_tcc/04_extracao_ck/executar_extracao_ck.py} aplica o filtro de completude longitudinal com extração válida do CK em todas as eras previstas por grupo, materializando os 470 repositórios válidos finais em \texttt{repositorios\_470\_validos.csv} e os 1.427 \emph{snapshots} em \texttt{measurements\_470\_validos.csv} (17 pioneiros em E1--E4, com 68 \emph{snapshots}, e 453 principais em E2--E4, com 1.359 \emph{snapshots}).
 
-Os arquivos de medição registram cada posição projeto--era com identificador do
-repositório, nome completo, contagem de estrelas, grupo temporal, era, SHA do commit
-avaliado, status de recuperação e extração, quantidade de arquivos Java, linhas físicas
-de código (contadas uma vez por arquivo como contexto descritivo, sem duplicação de
-classes internas), sete métricas estruturais do CK (com separação entre produção e testes
-nos dados brutos) e classificação temporalizada de vestígios de IA em E4. Falhas de
-clonagem, ausência de commit no intervalo da era ou ausência de arquivos Java permanecem
-registradas nos artefatos de triagem e nunca são convertidas em métrica zero, assim como
-valores indefinidos de LCOM* são retirados apenas do denominador correspondente.
+Cada linha de medição registra identificador, nome completo, contagem de estrelas, grupo temporal, era, SHA avaliado, status de extração, total de classes, arquivos Java distintos, LOC físico contextual (contado uma única vez por arquivo, sem duplicação por classes internas), as sete médias estruturais do CK (mantendo produção e testes discriminados nas extrações brutas) e a classificação temporalizada de vestígios de IA em E4 (\texttt{resultado\_deteccao\_ia\_470\_validos.csv}). Falhas de clonagem, ausência de \emph{commit} na era ou ausência de classes Java permanecem documentadas nos artefatos de triagem sem conversão em zero, e classes com LCOM* indefinido são omitidas apenas do respectivo denominador.
 
-As tabelas de valores e de diferenças operam estritamente sobre os mesmos identificadores
-válidos em cada grupo ($n = 17$ em todas as comparações de E1 a E4; $n = 453$ em E2 vs.\
-E3, E3 vs.\ E4 e E2 vs.\ E4; e $N = 470$ na comparação de vestígios de IA em E4, com 75
-projetos com evidência detectada e 395 sem evidência detectada). Manifestos JSON e
-arquivos CSV intermediários conservam os hashes dos instrumentos, parâmetros de execução
-e contagens reconciliáveis para verificação e reanálise independente.
+Por fim, \path{pipeline_oficial_tcc/06_tabelas_artigo/gerar_tabelas_artigo.py} gera deterministicamente as tabelas LaTeX em \path{Artigo/Generated/} diretamente a partir dos CSVs validados ($n = 17$ em E1--E4; $n = 453$ em E2--E4; e $N = 470$ em E4, com $n_a = 75$ e $n_b = 395$), acompanhadas de manifestos JSON com \emph{hashes} SHA-256 para verificação independente.

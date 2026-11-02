@@ -1,6 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Evolução da Qualidade Estrutural de Projetos Spring
-% TCC - Engenharia de Software - PUC Minas
+% TCC II - Engenharia de Software - PUC Minas
 %
 % Para compilar:
 %   pdflatex Article.tex
@@ -8,9 +8,8 @@
 %   pdflatex Article.tex
 %   pdflatex Article.tex
 %
-% Observação: o arquivo de estilo `sbc-template.sty` deve estar no mesmo
-% diretório (download em [https://www.sbc.org.br/documentos-da-sbc/](https://www.sbc.org.br/documentos-da-sbc/)
-% summary/169-templates-para-artigos-e-capitulos-de-livros/878-modelosparapublicaodeartigos).
+% Observação: utiliza o estilo oficial `sbc-template.sty` adotado pelo
+% Bacharelado em Engenharia de Software da PUC Minas.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass[12pt]{article}
@@ -28,7 +27,6 @@
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta,positioning}
 \usepackage{amsmath}
-
 
 %%%%%%%%%%%%%%%%% Pacotes para inserção de algoritmos - BEGIN
 \usepackage{xcolor}
@@ -73,8 +71,8 @@
 \author{Gabriel Ferreira\inst{1}, Guilherme Augusto\inst{1}}
 
 \address{Engenharia de Software\\
-  Pontifícia Universidade Católica de Minas Gerais (PUC-MG)\\
-  Belo Horizonte -- MG -- Brazil
+  Pontifícia Universidade Católica de Minas Gerais (PUC Minas)\\
+  Belo Horizonte -- MG -- Brasil
   \email{\{gabriel.amaral.1447804,gajsouza\}@sga.pucminas.br}
 }
 
@@ -83,25 +81,20 @@
 \maketitle
 
 \begin{abstract}
-This observational longitudinal study investigates the structural evolution of Java repositories in the Spring ecosystem created through 2017 and active during Era E4 (\texttt{pushed\_at >= 2022-01-01}). Rather than filtering by star counts, repository relevance was assessed locally across 785 candidates using four complementary RepoReaper curation scenarios (non-didactic purpose, non-toy projects adjusted to preserve Spring Boot \texttt{demo}/\texttt{sample}/\texttt{example} naming conventions, standardized Maven/Gradle build descriptors, and automated test presence), approving 607 repositories. Requiring complete and valid CK metric extraction across every era of each repository's lifecycle yielded 470 valid longitudinal repositories (1,427 CK snapshots): 17 in the pioneer group (2009--2013) tracked continuously across four eras (E1--E4) and 453 in the main group (2014--2017) tracked continuously across three eras (E2--E4). Longitudinal comparisons across the exact same repositories revealed monotonic growth in coupling (CBO) and class response (RFC), accompanied by slight reductions in class complexity (WMC) and lack of cohesion (LCOM*) and stable inheritance hierarchies. In E4, valid repositories with detected AI traces ($n=75$) exhibited higher metric averages than those without detected traces ($n=395$), alongside substantially larger codebases. Findings describe historical trajectories and observed associations without claiming causal effects of Spring Boot or AI.
+This longitudinal study evaluates the evolution of software structural quality through Chidamber and Kemerer (CK) metrics across four technological eras, E1 (2009--2013), E2 (2014--2017), E3 (2018--2021), and E4 (2022--2026), and analyzes structural quality differences in projects with artificial intelligence (AI) assistance in the Spring ecosystem. From 785 Java candidates created through 2017 and active since 2022, RepoReaper-inspired engineering curation without star thresholds approved 607 repositories, of which 470 had valid CK extractions in all eras of their group (1,427 snapshots: 17 pioneer across E1--E4 and 453 main across E2--E4). Across eras, the same systems showed monotonic growth in coupling (CBO) and response (RFC), slight declines in complexity (WMC) and lack of cohesion (LCOM*), and stable inheritance. In E4, projects with detected AI traces ($n=75$) had higher coupling and complexity means than those without ($n=395$), while keeping comparable cohesion and inheritance in codebases about fifteen times larger in lines of code, characterizing structural differences without causal attribution.
 \end{abstract}
 
 \begin{resumo}
-Este estudo observacional longitudinal investiga a evolução estrutural de repositórios Java do ecossistema Spring criados até 2017 e ativos na era E4 (\texttt{pushed\_at >= 2022-01-01}). Em vez de aplicar cortes por número de estrelas, a relevância de engenharia dos 785 candidatos foi aferida localmente pelos quatro cenários conjuntos do RepoReaper (finalidade não didática, exclusão de projetos brinquedo flexibilizada para preservar as convenções \texttt{demo}/\texttt{sample}/\texttt{example} do Spring Boot, automação de compilação Maven/Gradle e presença de testes automatizados), aprovando 607 repositórios. A exigência metodológica de extração válida do CK em todas as eras previstas para cada repositório definiu a amostra final de 470 repositórios válidos (1.427 snapshots extraídos com CK): 17 no grupo pioneiro (2009--2013) acompanhados continuamente nas quatro eras (E1--E4) e 453 no grupo principal (2014--2017) acompanhados continuamente nas três eras (E2--E4). As comparações longitudinais sobre os mesmos projetos indicaram crescimento consistente de acoplamento (CBO) e resposta por classe (RFC), coexistindo com leve redução de complexidade ponderada (WMC) e falta de coesão (LCOM*) e estabilidade em herança. Em E4, sistemas válidos com evidência detectada de IA ($n=75$) exibiram médias superiores nas sete métricas frente aos sistemas sem evidência detectada ($n=395$), mas também bases de código expressivamente maiores. Os resultados descrevem trajetórias e associações observadas, sem atribuir efeitos causais isolados ao Spring Boot ou à IA.
+Este estudo longitudinal avalia a evolução da qualidade estrutural de \emph{software} por meio das métricas de Chidamber e Kemerer (CK) ao longo de quatro eras tecnológicas, E1 (2009--2013), E2 (2014--2017), E3 (2018--2021) e E4 (2022--2026), e analisa diferenças de qualidade estrutural em projetos com assistência por inteligência artificial (IA) no ecossistema Spring. De 785 candidatos Java criados até 2017 e ativos desde 2022, uma curadoria de engenharia inspirada no RepoReaper (sem corte por estrelas) aprovou 607 projetos, dos quais 470 tiveram extração CK válida em todas as eras de seu grupo (1.427 \emph{snapshots}: 17 pioneiros de E1 a E4 e 453 principais de E2 a E4). Entre as eras, os mesmos sistemas exibiram alta monotônica em acoplamento (CBO) e resposta (RFC), leve redução em complexidade (WMC) e falta de coesão (LCOM*) e herança estável. Em E4, projetos com vestígios de IA ($n=75$) tiveram médias maiores de acoplamento e complexidade que os demais ($n=395$), mantendo coesão e herança próximas em bases cerca de quinze vezes maiores em linhas de código, caracterizando diferenças estruturais sem inferência causal.
 \end{resumo}
 
 \begin{tcolorbox}
 \footnotesize
-\textbf{Bacharelado em Engenharia de \emph{Software} - PUC Minas\\
-Trabalho de Conclusão de Curso (TCC)} \\
-
-\indent Orientador de conteúdo (TCC I): Danilo Maia - danilomaia@pucminas.br \\
-Orientador de conteúdo (TCC I): João Pedro Batisteli - joaobatisteli@pucminas.br\\
-Orientador de conteúdo (TCC I): Leonardo Vilela - leonardocardoso@pucminas.br \\
-Orientador acadêmico (TCC I): Cleiton Tavares - cleitontavares@pucminas.br \\
-Belo Horizonte, versão de trabalho de 29 de outubro de 2026.
+\textbf{Bacharelado em Engenharia de \emph{Software} (PUC Minas)\\
+Trabalho de Conclusão de Curso II (TCC II)} \\[2pt]
+Orientador: Prof.\ Cleiton Silva Tavares (\texttt{cleitontavares@pucminas.br}) \\
+Belo Horizonte, novembro de 2026.
 \end{tcolorbox}
-
 
 \input{Sections/01_Introducao}
 \input{Sections/02_Fundamentacao_Teorica}
@@ -110,6 +103,7 @@ Belo Horizonte, versão de trabalho de 29 de outubro de 2026.
 \input{Sections/05_Painel_Base_Original}
 \input{Sections/06_Conclusao_Base_Original}
 
+\clearpage
 \bibliographystyle{sbc}
 \bibliography{sbc-template}
 
