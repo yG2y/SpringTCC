@@ -12,23 +12,23 @@ Leia [AGENTS.md](AGENTS.md) antes de alterar scripts, tabelas ou texto do artigo
 
 A partir da base consolidada `population.csv` (**95.894 registros únicos** coletados via `topic:spring-boot fork:true` na execução `20260920_java`), aplicaram-se filtros determinísticos de metadados com janela contemporânea `pushed_at >= 2022-01-01T00:00:00Z` (abertura da era E4) e **sem filtro por número de estrelas**, selecionando **52.419 repositórios Java ativos em E4**. O corte histórico `created_at < 2018-01-01T00:00:00Z` definiu **785 candidatos** (22 criados até 2013 e 763 criados entre 2014 e 2017; 389 com menos de dez estrelas e 396 com dez ou mais estrelas).
 
-A curadoria local determinística inspirada no RepoReaper em quatro critérios simultâneos (`C1` finalidade não didática, `C2 Ajustado` exclusão de projetos brinquedo adaptada às convenções `demo`/`sample`/`example` do Spring Boot, `C3` automação Maven/Gradle e `C4` presença de testes automatizados) aprovou **607 repositórios**. Aplicado o requisito de **painel longitudinal balanceado** (extração válida do CK em todas as eras previstas para cada grupo temporal, sem atrito nem substituição), consolidou-se a amostra final de **470 repositórios válidos** e **1.427 snapshots CK**:
+A curadoria local determinística inspirada no RepoReaper em quatro critérios simultâneos (`C1` finalidade não didática, `C2 Ajustado` exclusão de projetos brinquedo adaptada às convenções `demo`/`sample`/`example` do Spring Boot, `C3` automação Maven/Gradle e `C4` presença de testes automatizados) aprovou **634 repositórios**. Aplicado o requisito de **painel longitudinal balanceado** (extração válida do CK em todas as eras previstas para cada grupo temporal, sem atrito nem substituição), consolidou-se a amostra final de **537 repositórios válidos** e **1.631 snapshots CK**. Em E4 o snapshot é o *commit* de referência fixado da *branch* principal na coleta, sem exigir *commit* datado a partir de 2022 (em 150 dos válidos ele coincide com o último *commit* de E3). Todas as medições são produzidas pelo próprio pipeline (clonagem, seleção do *commit* de cada era, CK e detecção de IA por snapshot):
 
 | Grupo temporal | Eras exigidas | Candidatos | Aprovados (Curadoria) | Válidos (CK completo) | Snapshots CK |
 | --- | --- | ---: | ---: | ---: | ---: |
-| Pioneiro (2009–2013) | E1, E2, E3 e E4 | 22 | 20 | 17 | 68 |
-| Principal (2014–2017) | E2, E3 e E4 | 763 | 587 | 453 | 1.359 |
-| **Total** | | **785** | **607** | **470** | **1.427** |
+| Pioneiro (2009–2013) | E1, E2, E3 e E4 | 22 | 22 | 20 | 80 |
+| Principal (2014–2017) | E2, E3 e E4 | 763 | 612 | 517 | 1.551 |
+| **Total** | | **785** | **634** | **537** | **1.631** |
 
-- **Trajetórias longitudinais:** crescimento monotônico de CBO e RFC e leve redução de WMC e LCOM* tanto no grupo pioneiro ($n = 17$, E1–E4) quanto no grupo principal ($n = 453$, E2–E4), com estabilidade em DIT e NOC.
-- **Faixas de estrelas ($N = 470$):** 209 repositórios válidos (44,5%) possuem menos de dez estrelas e 261 (55,5%) possuem dez ou mais estrelas, apresentando médias em nível de classe e método equivalentes em E4 e diferindo principalmente na escala física agregada.
-- **Vestígios de IA em E4 ($N = 470$):** **75** projetos (16,0%) com vestígios explícitos detectados vs. **395** (84,0%) sem vestígios detectados. Os 75 projetos com vestígios reúnem bases de código cerca de quinze vezes maiores em LOC médio (113.864 vs. 7.529 LOC) e já partiam de CBO superior em E3 (5,858 vs. 5,542). Ausência de vestígio não comprova ausência de uso de IA.
+- **Trajetórias longitudinais:** crescimento monotônico de CBO e RFC e leve redução de WMC e LCOM* tanto no grupo pioneiro ($n = 20$, E1–E4) quanto no grupo principal ($n = 517$, E2–E4), com estabilidade em DIT e NOC.
+- **Faixas de estrelas ($N = 537$):** 240 repositórios válidos (44,7%) possuem menos de dez estrelas e 297 (55,3%) possuem dez ou mais estrelas.
+- **Vestígios de IA em E4 ($N = 537$):** **88** projetos (16,4%) com vestígios explícitos detectados vs. **449** (83,6%) sem vestígios detectados. Os 88 projetos com vestígios reúnem bases de código cerca de treze vezes maiores em LOC médio (105.537 vs. 7.863 LOC; medianas de 5.517 vs. 2.025 LOC) e já partiam de CBO superior em E3 (5,899 vs. 5,560). Ausência de vestígio não comprova ausência de uso de IA.
 
 ### Artefatos principais do protocolo vigente
-- [Artigo em LaTeX](Artigo/Article.tex) e [PDF compilado do TCC II](output/pdf/Article.pdf) (corpo principal em 15 páginas + Referências + Apêndice A).
+- [Artigo em LaTeX](Artigo/Article.tex) e [PDF compilado do TCC II](output/pdf/Article.pdf) (corpo principal em 13 páginas + Referências + Apêndice A).
 - [Documentação do pipeline oficial](pipeline_oficial_tcc/README.md).
 - [Amostra de 785 candidatos](pipeline_oficial_tcc/02_coortes_e_shas/sample_785.csv) e [auditoria dos 4 critérios de curadoria](pipeline_oficial_tcc/03_higienizacao_reporeaper/reporeaper_results.csv).
-- [470 repositórios válidos finais](pipeline_oficial_tcc/04_extracao_ck/repositorios_470_validos.csv), [1.427 medições CK](pipeline_oficial_tcc/04_extracao_ck/measurements_470_validos.csv) e [detecção de IA em E4](pipeline_oficial_tcc/05_deteccao_ia/resultado_deteccao_ia_470_validos.csv).
+- [537 repositórios válidos finais](pipeline_oficial_tcc/04_extracao_ck/repositorios_validos.csv), [1.631 medições CK](pipeline_oficial_tcc/04_extracao_ck/measurements_validos.csv) e [detecção de IA em E4](pipeline_oficial_tcc/05_deteccao_ia/resultado_deteccao_ia_validos.csv).
 - [Gerador determinístico das tabelas LaTeX](pipeline_oficial_tcc/06_tabelas_artigo/gerar_tabelas_artigo.py) → `Artigo/Generated/*.tex`.
 
 ---
@@ -40,12 +40,12 @@ Artigo/                         Artigo oficial (estilo SBC / PUC Minas), seçõe
   Sections/*Base_Original.tex    Seções ativas (Introdução, Fundamentação, Relacionados, Método, Resultados, Conclusão, Apêndice)
   Generated/                    Tabelas LaTeX geradas deterministicamente a partir dos CSVs oficiais
   Arquivo/                      Textos de pilotos anteriores, fora do artigo ativo
-pipeline_oficial_tcc/           Implementação modular oficial do protocolo vigente (785 -> 607 -> 470 / 1.427 snapshots)
+pipeline_oficial_tcc/           Implementação modular oficial do protocolo vigente (785 -> 634 -> 537 / 1.631 snapshots)
   01_coleta_descoberta/          Filtragem determinística sem filtro de estrelas (95.894 -> 52.419 ativos em E4)
-  02_coortes_e_shas/             Corte created_at < 2018-01-01 (785 candidatos) e mapeamento de SHAs por era
-  03_higienizacao_reporeaper/    Curadoria local C1 + C2 Ajustado (Spring Boot) + C3 + C4 (607 aprovados)
-  04_extracao_ck/                Extração CK 0.7.1-SNAPSHOT e filtro de completude longitudinal (470 válidos)
-  05_deteccao_ia/                Detecção temporalizada de vestígios explícitos de agentes de IA (75 vs. 395 em E4)
+  02_coortes_e_shas/             Corte created_at < 2018-01-01 (785 candidatos) e commit de cada era
+  03_higienizacao_reporeaper/    Curadoria local C1 + C2 Ajustado (Spring Boot) + C3 + C4 (634 aprovados)
+  04_extracao_ck/                Clonagem, commit por era, CK 0.7.1-SNAPSHOT e IA por snapshot; filtro de completude (537 válidos)
+  05_deteccao_ia/                Consolidação dos vestígios de IA por era (88 vs. 449 em E4)
   06_tabelas_artigo/             Geração determinística das tabelas LaTeX no padrão aberto IBGE
 Instrumentos/Codigos/
   codigoCKSpring/               Instrumentos históricos do painel anterior, adaptador CK/JVM e suíte de testes POSIX
@@ -60,12 +60,14 @@ output/pdf/                     PDFs compilados (vigente e históricos congelado
 
 ## Reprodução das tabelas e compilação do artigo
 
-A regeneração das tabelas a partir dos CSVs validados não requer dependências externas além da biblioteca padrão do Python 3.12+:
+A execução completa do pipeline (clonagem, CK e IA incluídos) está descrita em [pipeline_oficial_tcc/README.md](pipeline_oficial_tcc/README.md). A regeneração das tabelas a partir dos CSVs validados e a compilação do artigo requerem apenas Python 3.12+ e o Tectonic:
 
 ```bash
 python pipeline_oficial_tcc/06_tabelas_artigo/gerar_tabelas_artigo.py
 tectonic -X compile Artigo/Article.tex -o output/pdf
 ```
+
+Versões datadas do PDF ficam em `output/pdf/` (`Article_<data>_<rótulo>.pdf`) para comparação; `Article.pdf` é sempre a vigente.
 
 *(Também compatível com `pdflatex` + `bibtex` dentro de `Artigo/`.)*
 

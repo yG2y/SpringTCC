@@ -1,0 +1,24 @@
+{
+  "step": "03a_inspecao_build_testes",
+  "timestamp_utc": "2026-11-13T21:30:30.242955+00:00",
+  "rule": "C3 e C4 apurados na arvore do estado atual do repositorio (snapshot de E4)",
+  "c3_build_files": [
+    "pom.xml",
+    "build.gradle",
+    "build.gradle.kts"
+  ],
+  "c4_test_markers": [
+    "src/test",
+    "*Test.java",
+    "*Tests.java"
+  ],
+  "total_candidates": 785,
+  "by_source": {
+    "clone_fixado": 783,
+    "indisponivel": 2
+  },
+  "c3_ok": 779,
+  "c4_ok": 669,
+  "output_csv": "pipeline_oficial_tcc/03_higienizacao_reporeaper/evidencias_build_testes.csv",
+  "output_sha256": "b61e291295329d4a09d4a6361adbe36947fb6ce2e77b6af61719dca2ce5913b7"
+}

@@ -1,0 +1,162 @@
+{
+  "commit": "4e91cadf8",
+  "candidates": 785,
+  "curated": 607,
+  "valid": 470,
+  "snapshots": 1427,
+  "groups": {
+    "principal_2014_2017": 453,
+    "pioneiro_2009_2013": 17
+  },
+  "eras": {
+    "E2": 470,
+    "E3": 470,
+    "E4": 470,
+    "E1": 17
+  },
+  "ia": {
+    "sem_evidencia_detectada": 395,
+    "com_evidencia": 75
+  },
+  "stars": {
+    ">=10": 261,
+    "<10": 209
+  },
+  "same_sha_e3_e4": 96,
+  "metrics": {
+    "pioneiro_2009_2013": {
+      "E1": {
+        "avg_cbo": 4.877815010625499,
+        "avg_rfc": 7.639002181347033,
+        "avg_wmc": 8.094430958879734,
+        "avg_loc_method": 6.315850822310903,
+        "avg_dit": 1.4163146524112349,
+        "avg_noc": 0.08322438834404113,
+        "avg_lcom": 0.29811273354399054
+      },
+      "E2": {
+        "avg_cbo": 5.393715119008769,
+        "avg_rfc": 8.38733404717993,
+        "avg_wmc": 8.07582474333613,
+        "avg_loc_method": 5.9569374367027965,
+        "avg_dit": 1.3545141113207033,
+        "avg_noc": 0.06780653769157474,
+        "avg_lcom": 0.27635171627533867
+      },
+      "E3": {
+        "avg_cbo": 5.6261284126619415,
+        "avg_rfc": 8.97248530116396,
+        "avg_wmc": 7.93602248386161,
+        "avg_loc_method": 6.208333181850027,
+        "avg_dit": 1.3760691791130921,
+        "avg_noc": 0.10395994309994301,
+        "avg_lcom": 0.27677821205561426
+      },
+      "E4": {
+        "avg_cbo": 5.802637010136316,
+        "avg_rfc": 9.956249633949808,
+        "avg_wmc": 7.201189546568696,
+        "avg_loc_method": 6.445521239578654,
+        "avg_dit": 1.3405396315832376,
+        "avg_noc": 0.08086862636648542,
+        "avg_lcom": 0.248899802619203
+      }
+    },
+    "principal_2014_2017": {
+      "E2": {
+        "avg_cbo": 5.404625160296697,
+        "avg_rfc": 6.602581725251382,
+        "avg_wmc": 5.818575814776658,
+        "avg_loc_method": 5.30838711175083,
+        "avg_dit": 1.2207081896114431,
+        "avg_noc": 0.0592075155488346,
+        "avg_lcom": 0.2445747657720659
+      },
+      "E3": {
+        "avg_cbo": 5.591020997937061,
+        "avg_rfc": 7.224117190542989,
+        "avg_wmc": 5.801039689870412,
+        "avg_loc_method": 5.488889255447541,
+        "avg_dit": 1.2288861745178983,
+        "avg_noc": 0.06529869363336586,
+        "avg_lcom": 0.2425299218030019
+      },
+      "E4": {
+        "avg_cbo": 5.670929956674704,
+        "avg_rfc": 7.58691092670289,
+        "avg_wmc": 5.759045954498846,
+        "avg_loc_method": 5.615575536645018,
+        "avg_dit": 1.2258297200239168,
+        "avg_noc": 0.06329256560294873,
+        "avg_lcom": 0.2353870403081479
+      }
+    },
+    "ia": {
+      "com_evidencia": {
+        "avg_cbo": 6.100591984269597,
+        "avg_rfc": 9.840395394590415,
+        "avg_wmc": 6.959552901709635,
+        "avg_loc_method": 6.182344149977048,
+        "avg_dit": 1.3013981110147783,
+        "avg_noc": 0.07872311823871876,
+        "avg_lcom": 0.25122914859727424
+      },
+      "sem_evidencia_detectada": {
+        "avg_cbo": 5.595016963862629,
+        "avg_rfc": 7.261005668301961,
+        "avg_wmc": 5.593168536839044,
+        "avg_loc_method": 5.543680425125954,
+        "avg_dit": 1.2164181736244075,
+        "avg_noc": 0.061119151894840816,
+        "avg_lcom": 0.232960606985625
+      }
+    }
+  },
+  "source_hash_differences": [
+    {
+      "path": "Artigo/Generated/PainelOriginalCobertura.tex",
+      "matches_if_lf_replaced_by_crlf": true
+    },
+    {
+      "path": "Artigo/Generated/PainelOriginalParesPioneiro.tex",
+      "matches_if_lf_replaced_by_crlf": true
+    },
+    {
+      "path": "Artigo/Generated/PainelOriginalParesPrincipal.tex",
+      "matches_if_lf_replaced_by_crlf": true
+    },
+    {
+      "path": "Artigo/Generated/PainelOriginalPares.tex",
+      "matches_if_lf_replaced_by_crlf": true
+    },
+    {
+      "path": "Artigo/Generated/PainelOriginalIA.tex",
+      "matches_if_lf_replaced_by_crlf": true
+    }
+  ],
+  "tables_match": [
+    "PainelOriginalIA.tex",
+    "PainelOriginalPares.tex",
+    "PainelOriginalParesPioneiro.tex",
+    "PainelOriginalCobertura.tex",
+    "PainelOriginalParesPrincipal.tex"
+  ],
+  "prepared_on": "2026-11-12",
+  "presentation_minutes": 15,
+  "guide_pages": 16,
+  "pull_commit": "4e91cadf8e4c6331f26991d02b3a81bb6e852cc1",
+  "source_sha256": {
+    "output/pdf/Article.pdf": "230d400023147d65243c731f7b51e30ab11e03cffbf0ffe315eb30f45ec0af6b",
+    "output/pdf/Article_tcc2_pucminas_20261101.pdf": "230d400023147d65243c731f7b51e30ab11e03cffbf0ffe315eb30f45ec0af6b",
+    "pipeline_oficial_tcc/02_coortes_e_shas/sample_785.csv": "e1adb7fcd8662c2481c895bc01584f6f999466d0f3dc815314107260bb283589",
+    "pipeline_oficial_tcc/03_higienizacao_reporeaper/reporeaper_results.csv": "60e45e896b72cb884022eb2ce64ce65e0f4e8e78e5f526219c3070bc0766daa2",
+    "pipeline_oficial_tcc/04_extracao_ck/repositorios_470_validos.csv": "095b0de1ab60ff3b9abc951ab8ec609e8416c364fa43c4679595a1fb68e531a4",
+    "pipeline_oficial_tcc/04_extracao_ck/measurements_470_validos.csv": "2cb17868ec81920263e661c54362e169ed7550781dd9e947d2a6948ecdcd3ae1",
+    "pipeline_oficial_tcc/05_deteccao_ia/resultado_deteccao_ia_470_validos.csv": "cad541f0e4cc3bb273ab3fa4655c00a9df12d49da635fd0491b6bc4b753e9cf0"
+  },
+  "guide_sha256": "b31fae295b4c03dec46d27b61c709687c7312160740437e0250242c89657c977",
+  "generator_sha256": "35d810ed0355d87afc7265c309cdb65bb17983220b334c1cc00a89ce309553d3",
+  "all_guide_pages_visually_reviewed": true,
+  "text_outside_safe_area": 0,
+  "verification_scope": "Contagens, unicidade de IDs e projeto-era, completude, métricas finitas, médias, cinco tabelas LaTeX e SHA repetido E3/E4. Sem nova coleta, execução CK ou auditoria integral dos históricos do pipeline recebido."
+}

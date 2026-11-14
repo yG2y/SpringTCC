@@ -1,0 +1,42 @@
+{
+  "step": "05_deteccao_ia",
+  "timestamp_utc": "2026-11-13T21:30:30.481820+00:00",
+  "method": "arquivos e .gitignore no snapshot; bots e trailers Co-authored-by no historico ate o snapshot",
+  "valid_repositories": 537,
+  "status_by_era": {
+    "E1": {
+      "sem_evidencia_detectada": 20
+    },
+    "E2": {
+      "sem_evidencia_detectada": 537
+    },
+    "E3": {
+      "sem_evidencia_detectada": 537
+    },
+    "E4": {
+      "com_evidencia": 88,
+      "sem_evidencia_detectada": 449
+    }
+  },
+  "e4_signal_types": {
+    "author_identity": 7,
+    "coauthor": 42,
+    "file": 40,
+    "gitignore": 39
+  },
+  "e4_agents": {
+    "Aider": 1,
+    "Claude Code": 71,
+    "Codex": 1,
+    "Codex / OpenAI": 40,
+    "Cursor": 6,
+    "Devin": 2,
+    "GitHub Copilot": 20,
+    "Windsurf": 2,
+    "coderabbitai[bot]": 4,
+    "copilot-swe-agent": 2,
+    "devin-ai-integration[bot]": 1
+  },
+  "output_csv": "pipeline_oficial_tcc/05_deteccao_ia/resultado_deteccao_ia_validos.csv",
+  "output_sha256": "0854eae973fbc54e045c69c59b5f94eed62bfd0f9270252eda319499e871d0e6"
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Figura 1 - Processo metodológico do estudo</title>
+<!--
+  Fonte da Figura 1 do artigo. Para regenerar o PNG (3000 px de largura):
+    chrome-headless-shell --headless --hide-scrollbars --force-device-scale-factor=2 \
+      --window-size=1500,640 --screenshot=processo_metodologico.png processo_metodologico.html
+  A figura não traz contagens; elas ficam na Tabela 1 do artigo.
+-->
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1500px; height: 640px; background: #ffffff; }
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #1d2733;
+    padding: 26px 30px 0 30px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 400px 120px 400px 120px 400px;
+    grid-template-rows: 236px 104px 236px;
+    align-items: center;
+  }
+
+  /* ---------- caixa 3D ---------- */
+  .card {
+    --c: #2563a8;      /* cor principal */
+    --d: #17406f;      /* cor escura (lateral / extrusão) */
+    position: relative;
+    height: 218px;
+    align-self: start;
+    border-radius: 18px;
+    background: linear-gradient(180deg, #ffffff 0%, #f1f5fa 100%);
+    border: 2px solid var(--c);
+    box-shadow:
+      0 2px 0 var(--d), 0 4px 0 var(--d), 0 6px 0 var(--d),
+      0 8px 0 var(--d), 0 10px 0 var(--d), 0 12px 0 var(--d),
+      0 14px 2px rgba(0,0,0,.35),
+      0 26px 30px rgba(20,30,50,.30);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .head {
+    flex: none;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 0 18px;
+    color: #fff;
+    background: linear-gradient(180deg,
+      color-mix(in srgb, var(--c) 78%, #fff) 0%,
+      var(--c) 48%,
+      var(--d) 100%);
+    border-bottom: 2px solid var(--d);
+    box-shadow: inset 0 2px 0 rgba(255,255,255,.45);
+  }
+  .num {
+    flex: none;
+    width: 46px; height: 46px;
+    border-radius: 50%;
+    display: grid; place-items: center;
+    font-size: 27px; font-weight: 800;
+    color: var(--d);
+    background: radial-gradient(circle at 32% 28%, #ffffff 0%, #eef2f7 55%, #c9d2de 100%);
+    box-shadow: 0 3px 0 rgba(0,0,0,.30), inset 0 -2px 3px rgba(0,0,0,.12);
+  }
+  .title {
+    font-size: 33px; font-weight: 800; letter-spacing: .2px;
+    text-shadow: 0 2px 2px rgba(0,0,0,.30);
+  }
+  .body {
+    flex: 1;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    text-align: center;
+    padding: 4px 16px 6px 16px;
+    font-size: 27px; line-height: 35px;
+  }
+  .body code {
+    font-family: "SF Mono", Menlo, Consolas, monospace;
+    font-size: 25px;
+    background: #e6ecf4; border-radius: 6px; padding: 1px 7px;
+  }
+  .body i { font-style: italic; }
+  .pill {
+    align-self: center;
+    margin: 6px 0 16px 0;
+    padding: 5px 20px;
+    border-radius: 999px;
+    font-size: 25px; font-weight: 800; color: #fff;
+    background: linear-gradient(180deg, color-mix(in srgb, var(--c) 85%, #fff), var(--d));
+    box-shadow: 0 3px 0 rgba(0,0,0,.28), inset 0 1px 0 rgba(255,255,255,.45);
+  }
+  .pill.ghost { display: none; }
+  .card:has(.pill.ghost) .body { padding-bottom: 8px; }
+
+  /* ---------- cores por etapa ---------- */
+  .s1 { --c: #2563a8; --d: #173f6e; }
+  .s2 { --c: #1b86a3; --d: #0f566b; }
+  .s3 { --c: #1c9a6c; --d: #106346; }
+  .s4 { --c: #c88a14; --d: #86590a; }
+  .s5 { --c: #d0622a; --d: #8c3c14; }
+  .s6 { --c: #7b4db8; --d: #4e2e7c; }
+
+  /* ---------- setas ---------- */
+  .arrow { display: grid; place-items: center; align-self: start; height: 218px; }
+  .arrow.v { height: 104px; align-self: center; padding-top: 14px; }
+  svg { overflow: visible; filter: drop-shadow(0 6px 5px rgba(20,30,50,.35)); }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7b8796"/>
+      <stop offset=".5" stop-color="#4a5564"/>
+      <stop offset="1" stop-color="#2b3440"/>
+    </linearGradient>
+  </defs>
+</svg>
+
+<div class="grid">
+  <!-- linha 1: da esquerda para a direita -->
+  <div class="card s1" style="grid-column:1; grid-row:1">
+    <div class="head"><div class="num">1</div><div class="title">Coleta</div></div>
+    <div class="body"><p>API de busca do GitHub,<br>tópico <code>spring-boot</code></p></div>
+  </div>
+  <div class="arrow" style="grid-column:2; grid-row:1">
+    <svg width="92" height="56" viewBox="0 0 92 56"><path d="M2 19 H52 V4 L90 28 L52 52 V37 H2 Z" fill="url(#g)" stroke="#232b35" stroke-width="2" stroke-linejoin="round"/></svg>
+  </div>
+  <div class="card s2" style="grid-column:3; grid-row:1">
+    <div class="head"><div class="num">2</div><div class="title">Filtragem</div></div>
+    <div class="body"><p>Metadados, atividade<br>desde 2022 e criação<br>até 2017</p></div>
+  </div>
+  <div class="arrow" style="grid-column:4; grid-row:1">
+    <svg width="92" height="56" viewBox="0 0 92 56"><path d="M2 19 H52 V4 L90 28 L52 52 V37 H2 Z" fill="url(#g)" stroke="#232b35" stroke-width="2" stroke-linejoin="round"/></svg>
+  </div>
+  <div class="card s3" style="grid-column:5; grid-row:1">
+    <div class="head"><div class="num">3</div><div class="title">Curadoria</div></div>
+    <div class="body"><p>Quatro critérios de<br>práticas de engenharia</p></div>
+  </div>
+
+  <!-- seta descendo de 3 para 4 -->
+  <div class="arrow v" style="grid-column:5; grid-row:2">
+    <svg width="56" height="78" viewBox="0 0 56 78"><path d="M19 2 V40 H4 L28 76 L52 40 H37 V2 Z" fill="url(#g)" stroke="#232b35" stroke-width="2" stroke-linejoin="round"/></svg>
+  </div>
+
+  <!-- linha 2: da direita para a esquerda -->
+  <div class="card s6" style="grid-column:1; grid-row:3">
+    <div class="head"><div class="num">6</div><div class="title">Síntese</div></div>
+    <div class="body"><p>Médias por era e<br>diferenças pareadas<br>nos mesmos sistemas</p></div>
+  </div>
+  <div class="arrow" style="grid-column:2; grid-row:3">
+    <svg width="92" height="56" viewBox="0 0 92 56"><path d="M90 19 H40 V4 L2 28 L40 52 V37 H90 Z" fill="url(#g)" stroke="#232b35" stroke-width="2" stroke-linejoin="round"/></svg>
+  </div>
+  <div class="card s5" style="grid-column:3; grid-row:3">
+    <div class="head"><div class="num">5</div><div class="title">Detecção de IA</div></div>
+    <div class="body"><p>Vestígios em arquivos<br>e <i>commits</i> até o<br><i>snapshot</i></p></div>
+  </div>
+  <div class="arrow" style="grid-column:4; grid-row:3">
+    <svg width="92" height="56" viewBox="0 0 92 56"><path d="M90 19 H40 V4 L2 28 L40 52 V37 H90 Z" fill="url(#g)" stroke="#232b35" stroke-width="2" stroke-linejoin="round"/></svg>
+  </div>
+  <div class="card s4" style="grid-column:5; grid-row:3">
+    <div class="head"><div class="num">4</div><div class="title">Extração CK</div></div>
+    <div class="body"><p><i>Snapshot</i> por era<br>e sete métricas</p></div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+{
+  "step": "04a_extracao_por_snapshot",
+  "timestamp_utc": "2026-11-13T21:30:07.415539+00:00",
+  "run_dir": "Instrumentos/Codigos/Artefatos/evolucao_spring/runs/20261113_pipeline_oficial_785",
+  "ck_version": "0.7.1-SNAPSHOT (commit 8a1ef916d597d33ad619d748b616bb7dbc3f0c36)",
+  "java_version": "openjdk version \"17.0.20.1\" 2026-08-18",
+  "instrument_hash": "f2ea777d8db5783f191f7f3a9fbe4cff21fa7424ebc7aa24c9bd90f780836416",
+  "extractor_sha256": "ba492c758bf09e93d3efd70625df26166fd0f86e40dcf1115b1b9a10b77ebaeb",
+  "collection_cutoff": "2026-11-13T20:53:36.994236+00:00",
+  "e4_rule": "tip fixado da branch principal; sem exigir commit datado em E4",
+  "ai_pattern_amendment": {
+    "coauthor": {
+      "GitHub Copilot": [
+        "copilot@users.noreply.github.com"
+      ]
+    },
+    "gitignore": {
+      "Claude Code": [
+        ".claude"
+      ],
+      "Cursor": [
+        ".cursor"
+      ]
+    }
+  },
+  "candidates": 785,
+  "tip_sources": {
+    "clone_fixado_20261015": 538,
+    "head_no_clone_de_20261113": 1,
+    "sem_clone": 2,
+    "sha_e4_registrado_na_coleta_de_outubro": 244
+  },
+  "snapshot_rows": 2377,
+  "status_by_era": {
+    "E1": {
+      "missing_snapshot": 1,
+      "no_java": 1,
+      "ok": 20
+    },
+    "E2": {
+      "error": 1,
+      "missing_snapshot": 20,
+      "no_java": 21,
+      "ok": 741,
+      "retrieval_error": 2
+    },
+    "E3": {
+      "error": 1,
+      "missing_snapshot": 106,
+      "no_java": 3,
+      "ok": 672,
+      "partial_ck": 1,
+      "retrieval_error": 2
+    },
+    "E4": {
+      "error": 2,
+      "ok": 780,
+      "partial_ck": 1,
+      "retrieval_error": 2
+    }
+  },
+  "ia_by_era": {
+    "E1": {
+      "sem_evidencia_detectada": 20
+    },
+    "E2": {
+      "sem_evidencia_detectada": 741
+    },
+    "E3": {
+      "sem_evidencia_detectada": 672
+    },
+    "E4": {
+      "com_evidencia": 99,
+      "sem_evidencia_detectada": 681
+    }
+  },
+  "measurements_csv": "pipeline_oficial_tcc/04_extracao_ck/measurements_785_candidatos.csv",
+  "measurements_sha256": "d683b1891daf99966cbbde3544f2909a807871e1c55005bd8431650374f775ad",
+  "shas_csv": "pipeline_oficial_tcc/02_coortes_e_shas/shas_mapeados_por_era.csv",
+  "shas_sha256": "7889b7226e5d7fe0f11301f3deaf8074588e8ad7a292e31de95f4a03192daa73"
+}

@@ -1,32 +1,15 @@
 \section{Fundamentação Teórica}
 \label{sec:fund}
 
-Esta seção apresenta os conceitos que sustentam a investigação: qualidade interna de \emph{software} e métricas orientadas a objetos, o paradigma \emph{Goal-Question-Metric}, a mineração de repositórios históricos e os vestígios observáveis de assistência por inteligência artificial.
+Esta seção apresenta os conceitos que sustentam a investigação: a qualidade interna de \emph{software} e as métricas orientadas a objetos empregadas para caracterizá-la.
 
 \subsection{Qualidade interna e métricas orientadas a objetos}
 \label{subsec:fund-qualidade}
 
 A norma ISO/IEC 25010 define qualidade de \emph{software} como o grau em que um sistema satisfaz necessidades explícitas e implícitas \cite{iso25010}. Nesse modelo, a qualidade interna compreende propriedades estruturais do código-fonte aferíveis por análise estática, tais como modularidade, coesão e manutenibilidade. Sistemas com estrutura interna disciplinada tendem a demandar menor esforço evolutivo ao longo de seu ciclo de vida \cite{pressman:21}.
 
-Para mensurar propriedades de projeto em sistemas orientados a objetos, Chidamber e Kemerer propuseram seis indicadores clássicos em nível de classe \cite{chidamber:94}: acoplamento entre objetos (\emph{Coupling Between Objects}, CBO), que expressa dependências entre classes; métodos ponderados por classe (\emph{Weighted Methods per Class}, WMC), que soma a complexidade dos métodos; profundidade da árvore de herança (\emph{Depth of Inheritance Tree}, DIT) e número de filhos (\emph{Number of Children}, NOC), que descrevem a estrutura hierárquica; resposta de uma classe (\emph{Response for a Class}, RFC), que dimensiona métodos potencialmente acionáveis; e falta de coesão em métodos (\emph{Lack of Cohesion in Methods}, LCOM), que avalia a disjunção no acesso a atributos. Essas medidas consolidaram-se em estudos empíricos sobre arquitetura, manutenção e propensão a defeitos \cite{singh:12,radjenovic:13,aniche:16}.
+Para mensurar propriedades de projeto em sistemas orientados a objetos, Chidamber and Kemerer (1994)\nocite{chidamber:94} propuseram seis indicadores clássicos em nível de classe: acoplamento entre objetos (\emph{Coupling Between Objects}, CBO), que expressa dependências entre classes; métodos ponderados por classe (\emph{Weighted Methods per Class}, WMC), que soma a complexidade dos métodos; profundidade da árvore de herança (\emph{Depth of Inheritance Tree}, DIT) e número de filhos (\emph{Number of Children}, NOC), que descrevem a estrutura hierárquica; resposta de uma classe (\emph{Response for a Class}, RFC), que dimensiona métodos potencialmente acionáveis; e falta de coesão em métodos (\emph{Lack of Cohesion in Methods}, LCOM), que avalia a disjunção no acesso a atributos. Essas medidas consolidaram-se em estudos empíricos sobre arquitetura, manutenção e propensão a defeitos \cite{singh:12,radjenovic:13,aniche:16}.
 
 Na operacionalização adotada neste estudo (Seção~\ref{sec:metodologia}), WMC quantifica complexidade estrutural estática segundo a ferramenta CK \cite{aniche:ck}, sem medir custo computacional em tempo de execução. O CBO corresponde ao acoplamento geral entre tipos resolvidos na árvore sintática, sem distinção entre eixos horizontal e vertical, e a coesão é representada pela variante normalizada \texttt{lcom*}, em vez do \texttt{lcom} não normalizado. As seis métricas de classe são acompanhadas pela média de linhas de código por método (LOC/método) como indicador complementar de granularidade, sem tratá-la como integrante original da suíte CK.
 
 A leitura dessas medidas exige interpretação conjunta e contextualizada. Alterações em DIT, NOC, WMC ou CBO descrevem reconfigurações estruturais, mas não provam isoladamente melhoria arquitetural nem violação de princípios de projeto, pois sofrem influência direta do papel das classes e do porte físico do sistema \cite{elemam:01,aniche:16}.
-
-\subsection{Goal-Question-Metric}
-\label{subsec:fund-gqm}
-
-O paradigma \emph{Goal-Question-Metric} (GQM) estrutura programas de medição em três níveis hierárquicos: objetivo conceitual (\emph{goal}), questões operacionais (\emph{questions}) e indicadores quantitativos (\emph{metrics}) \cite{basili:94}. Ao subordinar a coleta de métricas a perguntas explicitamente delimitadas, o GQM previne extrações desconectadas do problema investigado. Neste trabalho, o paradigma conecta o objetivo de caracterizar a evolução estrutural de sistemas Spring às dimensões de acoplamento, complexidade, herança, coesão e porte especificadas na Seção~\ref{sec:metodologia}.
-
-\subsection{Mineração de Repositórios de Software}
-\label{subsec:fund-msr}
-
-A Mineração de Repositórios de \emph{Software} (\emph{Mining Software Repositories}, MSR) extrai evidências empíricas de artefatos versionados, tais como código-fonte, grafos de \emph{commits} e metadados, para investigar padrões evolutivos reais \cite{hassan:08}. Em plataformas como o GitHub, estudos metodológicos demonstram a necessidade de filtrar \emph{forks}, distinguir data de cadastro do repositório e idade efetiva de cada versão, e substituir limiares de popularidade social (como contagem de estrelas) por critérios objetivos de práticas de engenharia, evitando descartar projetos corporativos ou independentes de menor exposição pública \cite{kalliamvakou:14,kalliamvakou:16,munaiah:17}.
-
-\subsection{Inteligência artificial generativa}
-\label{subsec:fund-ia}
-
-Neste estudo, inteligência artificial generativa refere-se a modelos de linguagem de grande porte treinados em \emph{corpora} de texto e código, capazes de sintetizar ou completar programas a partir de contexto e de \emph{prompts} \cite{hou:2024:llm}. Assistentes como GitHub Copilot, ChatGPT, Claude Code e Cursor exemplificam modalidades distintas de suporte introduzidas em momentos variados. Embora a era E4 (iniciada em 2022) demarque a difusão comercial dessas soluções, pertencer ao período não atesta uso de IA, assim como versões anteriores não o excluem por completo.
-
-Experimentos controlados sobre tempo de tarefa e correção funcional motivam examinar o fenômeno, mas avaliam construtos distintos das métricas CK de repositórios completos \cite{peng:23,dakhel:23}. Além disso, agentes autônomos tendem a deixar artefatos explícitos, como arquivos de instruções e registros de coautoria em \emph{commits}, com frequência superior à de assistentes de completamento \emph{inline} \cite{robbes:26}. Assim, os vestígios observáveis capturam apenas a parcela rastreável dessa adoção.

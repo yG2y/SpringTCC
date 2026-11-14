@@ -1,44 +1,87 @@
 {
   "file": "Article.pdf",
-  "archive_copy": "Article_tcc2_pucminas_20261101.pdf",
-  "pdf_sha256": "230d400023147d65243c731f7b51e30ab11e03cffbf0ffe315eb30f45ec0af6b",
-  "pages_total": 18,
-  "pages_main_body": 15,
-  "pages_references_and_appendix": "16-18",
-  "compiler": "Tectonic 0.17.0 x86_64-pc-windows-msvc",
+  "archive_copy": "Article_20261113_pipeline_completo.pdf",
+  "pdf_sha256": "bccb7ee1b7a8d00343a9b6938062e006ff8ead135f9eb16469c3d01d74636cf9",
+  "pages_total": 16,
+  "pages_main_body": 13,
+  "pages_main_body_scope": "Titulo ate o fim da Secao 8 (Pacote de Replicacao)",
+  "pages_references_and_appendix": "14-16",
+  "compiler": "Tectonic 0.17.0 (macOS arm64)",
   "compiled": true,
-  "compiled_at": "2026-11-02T02:48:30.870425+00:00",
-  "pipeline": "pipeline_oficial_tcc",
+  "compiled_at": "2026-11-13T21:35:44.243538+00:00",
+  "title": "Evolução da Qualidade Estrutural de Projetos Spring Boot: análise longitudinal por métricas CK e evidências de assistência por IA",
+  "pipeline": "pipeline_oficial_tcc (executado de ponta a ponta em 13/11/2026)",
+  "extraction_run": "Instrumentos/Codigos/Artefatos/evolucao_spring/runs/20261113_pipeline_oficial_785",
   "activity_window_e4": "pushed_at >= 2022-01-01T00:00:00Z",
-  "star_filter": "none (engineering relevance assessed by 4 local curation criteria inspired by RepoReaper)",
-  "selection_criteria": "C1_and_C2_Adjusted_SpringBoot_and_C3_and_C4_plus_Complete_CK_Across_Group_Eras",
+  "star_filter": "none",
+  "e4_rule": "tip fixado da branch principal; sem exigir commit datado em E4",
+  "ai_pattern_amendment": {
+    "coauthor": {
+      "GitHub Copilot": [
+        "copilot@users.noreply.github.com"
+      ]
+    },
+    "gitignore": {
+      "Claude Code": [
+        ".claude"
+      ],
+      "Cursor": [
+        ".cursor"
+      ]
+    }
+  },
   "candidates_evaluated": 785,
-  "curation_approved_repos": 607,
-  "valid_final_repos": 470,
-  "valid_pioneer_group_e1_to_e4": 17,
-  "valid_main_group_e2_to_e4": 453,
-  "valid_ck_snapshots_total": 1427,
-  "e4_ai_detected_valid": 75,
-  "e4_ai_not_detected_valid": 395,
+  "curation_approved_repos": 634,
+  "valid_final_repos": 537,
+  "valid_pioneer_group_e1_to_e4": 20,
+  "valid_main_group_e2_to_e4": 517,
+  "valid_ck_snapshots_total": 1631,
+  "excluded_incomplete_longitudinal": {
+    "total": 97,
+    "erro_de_extracao_ck": 2,
+    "extracao_ck_parcial": 1,
+    "sem_classes_java_mensuraveis": 16,
+    "sem_commit_na_linha_principal_em_alguma_era": 78
+  },
+  "valid_with_e4_sha_equal_e3": 150,
+  "e4_ai_classification": {
+    "com_evidencia": 88,
+    "sem_evidencia_detectada": 449
+  },
   "summary_statistic": "arithmetic_mean",
-  "visual_check": "All 18 pages visually inspected: 15 pages main body (Title through Section 6 Conclusion), References on pages 16-18, Appendix A on page 18. IBGE open-border tables with Fonte:, narrative citations, decimal commas, and proper-noun BibTeX casing verified. Zero compilation errors, undefined references, or overfull boxes.",
+  "visual_check": "Paginas 5, 6 e 7 (Figura 1, Secao 4.1 e Tabela 1) inspecionadas visualmente; demais paginas conferidas por extracao de texto. Compilacao sem erros, referencias indefinidas ou caixas estouradas.",
+  "previous_versions": [
+    "Article_tcc2_pucminas_20261101.pdf",
+    "Article_20261113_painel554.pdf"
+  ],
   "sources": {
-    "Artigo/Article.tex": "f2221287200c4689dac4a85180c723071029e609bd58588e338f01ae4eac8638",
-    "Artigo/Sections/01_Introducao.tex": "3108d8222023bba853ca55e3325b73c1ccd679ddb56b1874b8d23c632241b25a",
-    "Artigo/Sections/02_Fundamentacao_Teorica.tex": "ebf093d8ff5e100a8c61c046611b51bc860a97a7f73c625b61c2a160657b86e2",
-    "Artigo/Sections/03_Trabalhos_Relacionados.tex": "95c33027bba20fb3d543b31849a1e6efdd6d68a37140b21c14ad2a302e1dd9c2",
-    "Artigo/Sections/04_Metodo_Base_Original.tex": "14ef0296ea9ce6b313ff9130f09d743180cf93d358b5bbbe236eced5e7b244b0",
-    "Artigo/Sections/05_Painel_Base_Original.tex": "ac3528dd49963a63fe0e07c3bbccbcdd75d16c861c9302864fd70a8c49b0bd7e",
-    "Artigo/Sections/06_Conclusao_Base_Original.tex": "1ccbe86b4aedd5893eda82fae2366344fad15f44b58aa264e168b5edcfbaff6b",
-    "Artigo/Sections/Apendice_Base_Original.tex": "d0aac6e95248d0832d8367440d489b6d95daf7c6d8d8871731ebe7926d61eda4",
-    "Artigo/Generated/PainelOriginalCobertura.tex": "0a649b16095948315a612055e490fd3bc5688748166818994533ce57766d506a",
-    "Artigo/Generated/PainelOriginalParesPioneiro.tex": "d40176a2092d3b56bdf909bd41423a7575a3d0d042496c27f4da884aa63ce4d9",
-    "Artigo/Generated/PainelOriginalParesPrincipal.tex": "4bfbcdfffb35069123812a8d8663a843a2149df5c8b365fb1b9f76b8cf047808",
-    "Artigo/Generated/PainelOriginalPares.tex": "1acab919eda3fa3ca23272a759c95eb0d1925c89c086628ee15a27daa3a03bb6",
-    "Artigo/Generated/PainelOriginalIA.tex": "e75bee2705f155fc319db3e72ea6acef6b56f2a4f862d946057808ccb0fb78c9",
-    "Artigo/sbc-template.bib": "e120f7dd2281dee44e7ad7689f08810263e218222bbc6824de79590802c0f306",
-    "Artigo/sbc-template.sty": "a33aa2f47faf5fd9b9c5c1efeac96a1df2ceae5d8959dde75846f7bc1ea31043",
-    "Artigo/sbc.bst": "53894c21bd49a7fec8476f0a2cf24a7edecde4d009a570508314dd54df5fa31e",
-    "pipeline_oficial_tcc/06_tabelas_artigo/gerar_tabelas_artigo.py": "b8b84b47f7044b1b457fe2277eaa4bae4a562fc5c404904574f36720f77a6c94"
+    "Artigo/Article.tex": "4a65487de4c8f233e89322b4bcd648f5b2b8af0ef2ac0667672863ff9fcbc502",
+    "Artigo/Generated/PainelOriginal.tex": "89319f49d8f6d959c19e7daf8f3e21905cab9520cdcd4076783bf32350a73084",
+    "Artigo/Generated/PainelOriginalCobertura.tex": "1f382663b16982242f1ba356db15e691b5429d5ca079fea315e1bd76b95d3d10",
+    "Artigo/Generated/PainelOriginalIA.tex": "c10617d26afd82e1b15f59c52304dd7264ae3f0e523e7530ef59996c6f2a92d7",
+    "Artigo/Generated/PainelOriginalPares.tex": "fe75b540832c5f03b33394ea5b21ad745227526b57794cb60e91ecf4826d2e6f",
+    "Artigo/Generated/PainelOriginalParesPioneiro.tex": "14bbc9dbbc36bddd5cd5375fd29361209fea11972f574e8026e699e7a9b33a00",
+    "Artigo/Generated/PainelOriginalParesPrincipal.tex": "eca3ded6f510461daf38dd52b28246cb2feba2c73a3ce1b27b16538b1958e46f",
+    "Artigo/Sections/01_Introducao.tex": "2e498795d43fe642e742d979ede070b8da566e488c21aa2e0594d89138790723",
+    "Artigo/Sections/02_Fundamentacao_Teorica.tex": "1b2c923c90966efa8b0551ca09af77aff989e91e1727d7cad63c51d1831aa7d9",
+    "Artigo/Sections/03_Trabalhos_Relacionados.tex": "ce8c8e072352c1b6a641cce00799e9df4953e035dbab1e13903a98e0878d0068",
+    "Artigo/Sections/04_Metodo_Base_Original.tex": "70ca4f53a8a375ef4950c58cd0d0e31a155d620a820f63c517085e7cacef3d45",
+    "Artigo/Sections/05_Painel_Base_Original.tex": "fa3e5474cd4b727156d56d482dd88e42ae94054879ad64af36033750490fc620",
+    "Artigo/Sections/06_Ameacas_Validade.tex": "0319f95ac45b1f79d7396701b08535ec92b20700f1af59a085e52fedd1e1a7dc",
+    "Artigo/Sections/06_Conclusao_Base_Original.tex": "98d3b2c866644411c84a0cc85905da0743846942695f132b52aacd710f9cc897",
+    "Artigo/Sections/07_Pacote_Replicacao.tex": "e7b2f6ce968cf417f17ed14eda197d0606c741619e8018fcdcb3662f37dc35f4",
+    "Artigo/Sections/Apendice_Base_Original.tex": "5d04f7ff1614c11d5c71b07bacd115d566ce605b659532ee93ce2f0c156c20d6",
+    "Artigo/imgs/processo_metodologico.html": "99ac49c4052b1b0bca889a28b5ac52e4ef2a52172f957af1a6cd57fc28c7c56b",
+    "Artigo/imgs/processo_metodologico.png": "fff778bf47d2e6664a2d2611b1e33e0c5791e8c0f2fa73faf9e32064567da40c",
+    "Artigo/sbc-template.bib": "8be513f5fc2bbe86e4de4bc9c2bb85f8be118553c23dbc360c65690302aafd43",
+    "Artigo/sbc-template.sty": "a33aa2f47faf5fd9b9c5c1efeac96a1df2ceae5d8959dde75846f7bc1ea31043"
+  },
+  "data": {
+    "pipeline_oficial_tcc/04_extracao_ck/measurements_785_candidatos.csv": "d683b1891daf99966cbbde3544f2909a807871e1c55005bd8431650374f775ad",
+    "pipeline_oficial_tcc/04_extracao_ck/repositorios_validos.csv": "04976ca4f86eb4f72448e27acbae2a97d384819fe351e06db87d52bc36a4ddf9",
+    "pipeline_oficial_tcc/04_extracao_ck/measurements_validos.csv": "23abd7b244b164224e7b032a22e1165215cf09eb2cc7f06e280f4256e0f3b4cd",
+    "pipeline_oficial_tcc/03_higienizacao_reporeaper/reporeaper_results.csv": "63ed7cb35afbc3bec2bb779fe4c8336451d03d96a7cefecb9374043c27f58996",
+    "pipeline_oficial_tcc/03_higienizacao_reporeaper/evidencias_build_testes.csv": "b61e291295329d4a09d4a6361adbe36947fb6ce2e77b6af61719dca2ce5913b7",
+    "pipeline_oficial_tcc/05_deteccao_ia/resultado_deteccao_ia_validos.csv": "0854eae973fbc54e045c69c59b5f94eed62bfd0f9270252eda319499e871d0e6"
   }
 }

@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Etapa 6: Gerador Deterministico das Tabelas LaTeX do Artigo (470 Repositorios Validos)
+Etapa 6: Gerador Deterministico das Tabelas LaTeX do Artigo (repositorios validos finais)
 Gera diretamente em Artigo/Generated/ segundo as normas IBGE / Padrao PUC Minas / SBC:
-- PainelOriginalCobertura.tex (Tabela de sintese da filtragem: 785 -> 607 -> 470 validos)
-- PainelOriginalParesPioneiro.tex (2 tabelas: valores e diferencas do grupo pioneiro [n=17])
-- PainelOriginalParesPrincipal.tex (2 tabelas: valores e diferencas do grupo principal [n=453])
+- PainelOriginalCobertura.tex (sintese da filtragem: candidatos, curadoria e validos)
+- PainelOriginalParesPioneiro.tex (2 tabelas: valores e diferencas do grupo pioneiro )
+- PainelOriginalParesPrincipal.tex (2 tabelas: valores e diferencas do grupo principal )
 - PainelOriginalPares.tex (4 tabelas consolidadas por retrocompatibilidade)
-- PainelOriginalIA.tex (Comparacao em E4 nos 470 validos: n_a=75 vs n_b=395)
+- PainelOriginalIA.tex (comparacao em E4 nos validos com e sem evidencia de IA)
 """
 
 from __future__ import annotations
@@ -193,7 +193,7 @@ Total & & {len(s785)} & {app_p + app_m} & {len(v470)} & {snap_tot_str} \\\\
         f"{pioneiro_tex}\n{principal_tex}", encoding="utf-8"
     )
 
-    # 3. IA em E4 nos 470 validos
+    # 3. IA em E4 nos validos
     ia_rows_tex: List[str] = []
     for col, label in METRICS:
         va = _mean(meas[(rid, "E4")][col] for rid in ia_yes)
@@ -218,11 +218,11 @@ Total & & {len(s785)} & {app_p + app_m} & {len(v470)} & {snap_tot_str} \\\\
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Etapa 6: Geracao deterministica das tabelas LaTeX (470 validos).")
+    parser = argparse.ArgumentParser(description="Etapa 6: Geracao deterministica das tabelas LaTeX .")
     parser.add_argument("--sample", type=Path, default=Path("pipeline_oficial_tcc/02_coortes_e_shas/sample_785.csv"))
     parser.add_argument("--reporeaper", type=Path, default=Path("pipeline_oficial_tcc/03_higienizacao_reporeaper/reporeaper_results.csv"))
-    parser.add_argument("--valid-repos", type=Path, default=Path("pipeline_oficial_tcc/04_extracao_ck/repositorios_470_validos.csv"))
-    parser.add_argument("--valid-measurements", type=Path, default=Path("pipeline_oficial_tcc/04_extracao_ck/measurements_470_validos.csv"))
+    parser.add_argument("--valid-repos", type=Path, default=Path("pipeline_oficial_tcc/04_extracao_ck/repositorios_validos.csv"))
+    parser.add_argument("--valid-measurements", type=Path, default=Path("pipeline_oficial_tcc/04_extracao_ck/measurements_validos.csv"))
     parser.add_argument("--generated-dir", type=Path, default=Path("Artigo/Generated"))
     args = parser.parse_args()
 

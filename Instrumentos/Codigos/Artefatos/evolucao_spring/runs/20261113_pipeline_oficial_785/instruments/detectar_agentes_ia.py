@@ -56,8 +56,8 @@ PASTA_ARTEFATOS = (
     / "runs"
     / "20260920_java"
 )
-CSV_ENTRADA_PADRAO = PASTA_SCRIPT.parent / "04_extracao_ck" / "repositorios_470_validos.csv"
-CSV_SAIDA_PADRAO = PASTA_SCRIPT / "resultado_deteccao_ia_470_validos.csv"
+CSV_ENTRADA_PADRAO = PASTA_ARTEFATOS / "selected_repositories.csv"
+CSV_SAIDA_PADRAO = PASTA_SCRIPT / "resultado_deteccao_ia.csv"
 
 REST_URL = "https://api.github.com"
 
@@ -277,7 +277,7 @@ def processar_repositorios(
     cliente = ClienteGitHub(token)
 
     with csv_entrada.open(encoding="utf-8") as f:
-        repos = list(csv.DictReader(f))[:limite] if limite and limite > 0 else list(csv.DictReader(f))
+        repos = list(csv.DictReader(f))[:limite]
 
     total = len(repos)
     print(f"Analisando {total} repositórios de '{csv_entrada.name}' ...\n")
@@ -365,7 +365,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(
         description="Detecta adocao de agentes de IA em repositorios Java Spring Boot."
     )
-    parser.add_argument("--limite",   type=int,  default=0,                    help="Quantos repositorios analisar (0 = todos os 470 validos).")
+    parser.add_argument("--limite",   type=int,  default=50,                   help="Quantos repositorios analisar (padrao: 50).")
     parser.add_argument("--commits",  type=int,  default=30,                   help="Commits recentes no Nivel 2 (padrao: 30).")
     parser.add_argument("--entrada",  type=Path, default=CSV_ENTRADA_PADRAO,   help="CSV de entrada.")
     parser.add_argument("--saida",    type=Path, default=CSV_SAIDA_PADRAO,     help="CSV de saida.")

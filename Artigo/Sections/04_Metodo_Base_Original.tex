@@ -1,66 +1,80 @@
 \section{Materiais e Métodos}
 \label{sec:metodologia}
 
-Este estudo adota delineamento observacional, longitudinal e descritivo sobre repositórios públicos do ecossistema Spring no GitHub. A unidade acompanhada é o repositório, e a unidade de medição corresponde ao último \emph{snapshot} válido na linha principal dentro de cada era (em E4, o \emph{commit} \texttt{HEAD} da \emph{branch} principal coletado em outubro de 2026). As análises caracterizam trajetórias históricas e associações empíricas, sem reivindicar identificação causal isolada para o Spring Boot ou para ferramentas de inteligência artificial.
+Este estudo adota delineamento observacional, longitudinal e descritivo sobre repositórios públicos de projetos Spring Boot no GitHub. A unidade acompanhada é o repositório, e a unidade de medição corresponde ao último \emph{snapshot} válido na linha principal dentro de cada era. As análises caracterizam trajetórias históricas e associações empíricas, sem reivindicar identificação causal para ferramentas de inteligência artificial. A Figura~\ref{fig:processo} resume o processo metodológico, detalhado nas subseções seguintes.
 
-\subsection{Base de origem, ausência de filtro de estrelas e recorte de candidatos}
+\begin{figure}[htbp]
+\centering
+\caption{Processo metodológico do estudo.}
+\label{fig:processo}
+\includegraphics[width=\linewidth]{processo_metodologico.png}
+\par\vspace{2pt}{\footnotesize Fonte: Elaborada pelos autores (2026).}
+\end{figure}
 
-A população inicial compreende os 95.894 registros únicos consolidados em \texttt{population.csv} (execução \texttt{20260920\_java}), coletados via API REST de busca do GitHub mediante a consulta \texttt{topic:spring-boot fork:true}, particionada por janelas de data de criação e, apenas quando necessário para contornar o teto técnico de mil resultados por requisição da API, subdividida por faixas de estrelas sem descarte de registros.
-
-Sobre os 95.894 registros aplicaram-se filtros sequenciais e determinísticos de metadados, contabilizando cada repositório na primeira condição de rejeição: linguagem principal ausente ou distinta de Java (23.298), \emph{forks} (1.089), espelhos (0), arquivados (1.607), desabilitados (0), ausência de atividade a partir da abertura da era E4 em \texttt{2022-01-01T00:00:00Z} (16.615), \emph{templates} (323), repositórios vazios ou sem \emph{branch} padrão (3) e listas ou exercícios retidos por triagem lexical preliminar estritamente escolar (540). As 43.475 exclusões resultaram em 52.419 repositórios Java ativos em E4. Em seguida, o recorte histórico de criação até o final de 2017 em UTC (\texttt{created\_at < 2018-01-01T00:00:00Z}) descartou 51.634 projetos recentes e definiu os 785 repositórios candidatos do estudo: 22 criados até 2013 e 763 criados entre 2014 e 2017.
-
-Diferentemente de levantamentos que impõem cortes arbitrários de popularidade (como o limiar usual de dez estrelas), este protocolo não aplica filtro por número de estrelas. Contadores de estrelas refletem exposição social ou difusão didática, e não práticas de engenharia de \emph{software} \cite{kalliamvakou:16,munaiah:17}. Entre os 785 candidatos, 389 (49,6\%) possuem menos de dez estrelas (sendo 156 com zero e 73 com uma estrela) e 396 (50,4\%) possuem dez ou mais estrelas. Excluir projetos com menos de dez estrelas descartaria metade dos candidatos históricos, como microsserviços organizacionais e sistemas mantidos por equipes independentes; por isso, a relevância técnica é aferida pela curadoria multidimensional descrita na Seção~\ref{subsec:reporeaper}.
-
-\subsection{Janela de atividade na era E4 e fundamentação temporal}
-
-O critério de atividade contemporânea adota \texttt{pushed\_at >= 2022-01-01T00:00:00Z}, alinhando a exigência de sobrevivência operacional exatamente ao início da era E4 (2022--2026), marco da disseminação de LLMs, assistentes de código e agentes de programação \cite{hou:2024:llm,mozannar:2024,robbes:26}. A adoção de janeiro de 2022, em substituição a um corte móvel de três anos contado de setembro de 2023 (que reteria 540 candidatos), preserva 245 sistemas Java longevos criados até 2017 que permaneceram ativos durante o ciclo da assistência generativa, em consonância com janelas plurianuais empregadas na mineração de projetos Java \cite{oliveira:2021:experts}. Registra-se como limitação dos metadados que \texttt{pushed\_at} atua como aproximação de atividade (podendo refletir envio de \emph{tags} ou atualizações em ramos secundários, e não \emph{commits} contínuos na \emph{branch} padrão) e que o descarte de arquivados ou inativos antes de 2022 introduz viés de sobrevivência.
-
-\subsection{Higienização local inspirada no RepoReaper e adaptação ao Spring Boot}
+\subsection{Seleção dos repositórios}
 \label{subsec:reporeaper}
 
-Para selecionar projetos com práticas verificáveis de engenharia e descartar exercícios acadêmicos, rascunhos efêmeros ou depósitos não estruturados, implementou-se em ambiente local o instrumento determinístico \texttt{reporeaper\_curation.py}, fundamentado nas dimensões conceituais do arcabouço RepoReaper \cite{munaiah:17} e nas diretrizes de triagem de repositórios do GitHub \cite{kalliamvakou:16}. A aprovação exige atendimento simultâneo a quatro critérios operacionais (C1 + C2 Ajustado + C3 + C4):
+A seleção e a medição dos repositórios seguiram as quatro primeiras etapas da Figura~\ref{fig:processo}, aplicadas de forma sequencial e determinística, sem sorteio nem substituição de repositórios reprovados:
 
-\begin{enumerate}
-    \item \textbf{Critério C1 (Finalidade não didática):} exclusão de repositórios voltados a disciplinas, cursos ou exercícios, identificados pelos 14 vocábulos \texttt{course}, \texttt{homework}, \texttt{assignment}, \texttt{learning}, \texttt{tutorial}, \texttt{aula}, \texttt{curso}, \texttt{exercicio}, \texttt{exercicios}, \texttt{treinamento}, \texttt{udemy}, \texttt{mooc}, \texttt{exercism} e \texttt{lecture} em nome, descrição ou tópicos, preservando compostos técnicos de domínio (\texttt{machine-learning} e \texttt{deep-learning}).
-    \item \textbf{Critério C2 Ajustado (Exclusão de projetos brinquedo adaptada ao Spring Boot):} rejeição de áreas de teste descartáveis e esqueletos identificados por \texttt{playground}, \texttt{sandbox}, \texttt{toy}, \texttt{practice}, \texttt{boilerplate}, \texttt{cheatsheet}, \texttt{cheat-sheet} e \texttt{slides}, isentando de penalização os termos \texttt{demo}, \texttt{sample} e \texttt{example} (e suas formas plurais).
-    \item \textbf{Critério C3 (Automação de \emph{build} padronizada):} comprovação de descritores formais de compilação e dependências do ecossistema Java (\texttt{pom.xml}, \texttt{build.gradle} ou \texttt{build.gradle.kts}).
-    \item \textbf{Critério C4 (Presença de testes automatizados):} comprovação estrutural de verificação automatizada pela presença do diretório padrão \texttt{src/test} ou de classes \texttt{*Test.java} e \texttt{*Tests.java}.
-\end{enumerate}
+\begin{itemize}
+    \item \textbf{Coleta:} 95.894 registros únicos coletados em setembro de 2026 pela API REST de busca do GitHub com a consulta \texttt{topic:spring-boot fork:true}, particionada por janelas de data de criação e, apenas para contornar o teto de mil resultados por consulta, por faixas de estrelas, sem descarte de registros.
+    \item \textbf{Filtragem:} cada repositório foi contabilizado na primeira condição de rejeição: linguagem principal ausente ou distinta de Java (23.298), \emph{forks} (1.089), arquivados (1.607), sem envio de código (\emph{push}) a partir de 1\textsuperscript{o} de janeiro de 2022, início da era E4 (16.615), \emph{templates} (323), vazios ou sem \emph{branch} padrão (3) e listas ou exercícios retidos por triagem lexical escolar preliminar (540); nenhum espelho ou repositório desabilitado foi encontrado, e não se aplicou filtro por número de estrelas. Restaram 52.419 repositórios Java ativos. Em seguida, mantiveram-se os repositórios criados até 31 de dezembro de 2017, o que definiu os 785 candidatos do estudo: 22 criados até 2013 e 763 criados entre 2014 e 2017.
+    \item \textbf{Curadoria:} os candidatos foram avaliados pelo instrumento determinístico local \texttt{reporeaper\_curation.py}, que exige o atendimento simultâneo de quatro critérios de práticas de engenharia. Seu fundamento conceitual são as dimensões do arcabouço RepoReaper \cite{munaiah:17} e as diretrizes de triagem de repositórios do GitHub \cite{kalliamvakou:16}; as regras heurísticas e adaptações lexicais são próprias deste trabalho e não correspondem à execução do classificador original. Os critérios são:
+    \begin{itemize}
+        \item \emph{C1 (finalidade não didática):} exclusão de repositórios voltados a disciplinas, cursos ou exercícios, identificados por 14 vocábulos em nome, descrição ou tópicos (\texttt{course}, \texttt{homework}, \texttt{assignment}, \texttt{learning}, \texttt{tutorial}, \texttt{aula}, \texttt{curso}, \texttt{exercicio}, \texttt{exercicios}, \texttt{treinamento}, \texttt{udemy}, \texttt{mooc}, \texttt{exercism} e \texttt{lecture}), preservando compostos técnicos como \texttt{machine-learning} e \texttt{deep-learning}; 765 candidatos atenderam ao critério (97,5\%).
+        \item \emph{C2 ajustado (exclusão de projetos brinquedo):} rejeição de áreas de teste descartáveis e esqueletos identificados por \texttt{playground}, \texttt{sandbox}, \texttt{toy}, \texttt{practice}, \texttt{boilerplate}, \texttt{cheatsheet}, \texttt{cheat-sheet} e \texttt{slides}. Os termos \texttt{demo}, \texttt{sample} e \texttt{example} (e plurais) foram isentos, porque o gerador oficial Spring Initializr preenche por padrão o identificador \texttt{demo} e mantenedores corporativos nomeiam implementações completas de referência com \texttt{sample} ou \texttt{example}; bloqueá-los descartaria 149 repositórios aprovados nos demais critérios. Atenderam ao critério 768 candidatos (97,8\%).
+        \item \emph{C3 (automação de build):} presença, na árvore de arquivos do estado atual do repositório, de \texttt{pom.xml}, \texttt{build.gradle} ou \texttt{build.gradle.kts}; 779 candidatos (99,2\%).
+        \item \emph{C4 (testes automatizados):} presença, na mesma árvore, do diretório \texttt{src/test} ou de classes \texttt{*Test.java} e \texttt{*Tests.java}; 669 candidatos (85,2\%).
+    \end{itemize}
+    A interseção dos quatro critérios aprovou 634 repositórios.
+    \item \textbf{Extração CK:} cada candidato foi clonado com o histórico completo da \emph{branch} principal (dois não estavam mais disponíveis no GitHub), e um \emph{snapshot} por era foi selecionado e medido com as sete métricas (Seções~\ref{subsec:eras} e~\ref{subsec:ck}). Entre os aprovados na curadoria, mantiveram-se apenas os repositórios com extração válida em todas as eras previstas para seu grupo. Saíram 97 repositórios (78 por ausência de \emph{commit} na linha principal em E1, E2 ou E3, 16 por ausência de classes Java mensuráveis em alguma era e 3 por falha ou cobertura incompleta da extração), resultando em 537 repositórios válidos.
+\end{itemize}
 
-A isenção de \texttt{demo}, \texttt{sample} e \texttt{example} no Critério C2 decorre de duas convenções técnicas do ecossistema Spring Boot: o gerador oficial Spring Initializr (\texttt{start.spring.io}) preenche por padrão o identificador de artefato \texttt{demo} (assim como gera classes \texttt{*ApplicationTests.java} contempladas em C4), e mantenedores corporativos nomeiam rotineiramente implementações completas de microsserviços, autenticação OAuth2 e mensageria Kafka com \texttt{sample} ou \texttt{example}. A auditoria empírica confirmou que bloquear esses três radicais descartaria 149 repositórios aprovados nos demais critérios de engenharia (114 deles com histórico CK completo em todas as eras), dotados de \emph{build} Maven/Gradle, suíte de testes e manutenção plurianual. Nos 785 candidatos, observaram-se 765 aprovações em C1 (97,5\%), 768 em C2 Ajustado (97,8\%), 752 em C3 (95,8\%) e 665 em C4 (84,7\%); a interseção estrita dos quatro critérios aprovou 607 repositórios (77,3\%): 20 criados até 2013 e 587 criados entre 2014 e 2017.
+A Tabela~\ref{tab:etapas} apresenta a quantidade de repositórios ao final de cada etapa.
 
-\subsection{Grupos temporais, seleção de SHAs e completude longitudinal}
-
-As eras tecnológicas analisadas são E1 (2009--2013), E2 (2014--2017), E3 (2018--2021) e E4 (2022 até outubro de 2026). A data de criação define o grupo de ingresso, enquanto a data do \emph{commit} posiciona cada medição em sua era efetiva. Em E1, E2 e E3, percorrendo a história pela linha do primeiro pai (\texttt{-\/-first-parent}) nos \emph{commits} de \emph{merge} \cite{git:firstparent}, seleciona-se o último \emph{commit} com data de \emph{committer} contida na era, sem projetar retroativamente código futuro na ausência de \emph{commit} no período. Em E4, fixa-se o SHA do \texttt{HEAD} da \emph{branch} principal na coleta; quando a atividade recente capturada por \texttt{pushed\_at} ocorreu apenas em ramos secundários ou \emph{tags}, o \texttt{HEAD} de E4 conserva legitimamente o mesmo SHA observado ao final de E3 (variação nula no par E3--E4).
-
-Para eliminar flutuações de composição amostral entre períodos, adotou-se critério estrito de painel longitudinal balanceado: um repositório integra a amostra analítica final somente quando possui \emph{snapshot} recuperável e extração válida do CK em todas as eras previstas para seu grupo temporal. Dos 607 repositórios aprovados na curadoria, 137 não cumpriram essa completude (122 por ausência de \emph{commit} na linha principal em alguma era intermediária e 15 por falha de clonagem ou ausência de classes Java mensuráveis em ao menos uma era), saindo da síntese sem substituição. A amostra final reúne 470 repositórios válidos (1.427 \emph{snapshots} CK), divididos em dois grupos disjuntos: (1) \textbf{Grupo Pioneiro} (criados até 31/12/2013), com 17 repositórios acompanhados continuamente nas quatro eras (E1, E2, E3 e E4; 68 \emph{snapshots}); e (2) \textbf{Grupo Principal} (criados entre 2014 e 2017), com 453 repositórios acompanhados continuamente nas três eras (E2, E3 e E4; 1.359 \emph{snapshots}). Assim, todas as comparações entre eras operam exatamente sobre os mesmos identificadores em cada grupo ($n = 17$ e $n = 453$).
-
-\subsection{Extração estática CK e medidas contextuais de porte}
-
-As métricas estruturais foram extraídas sobre cada árvore recuperada por \texttt{checkout} determinístico do SHA com o CK 0.7.1-SNAPSHOT (revisão \texttt{8a1ef916}), baseado no Eclipse JDT 3.44.0 (configuração Java 21) sob JVM OpenJDK 17 \cite{aniche:ck}, sem compilação ou execução dos projetos. Calculam-se por \emph{snapshot} as médias de CBO geral, RFC, WMC, DIT, NOC, LCOM* e LOC/método, preservando nos artefatos brutos a separação entre código de produção e de testes.
-
-No extrator, CBO contabiliza tipos distintos acoplados na AST; RFC soma invocações únicas estaticamente resolvidas; WMC agrega pontos de ramificação estrutural por classe; DIT inicia em base unitária na raiz; NOC conta subclasses diretas no \emph{snapshot}; e LCOM* aplica a expressão normalizada $\frac{1}{a}\sum_{i=1}^{a}\frac{m-\mu(A_i)}{m}$, onde $a$ indica atributos, $m$ métodos e $\mu(A_i)$ métodos que acessam cada atributo. Classes com LCOM* matematicamente indefinido são omitidas apenas do denominador dessa métrica, sem imputação por zero, assim como falhas de extração jamais são convertidas em zero. Não se impõe piso mínimo de LOC ou de arquivos Java para inclusão; o porte físico entra como variável contextual descritiva, contando cada caminho distinto \texttt{.java} uma única vez e somando linhas físicas não vazias e não exclusivamente comentadas sem duplicação por classes internas, em conformidade com diretrizes formais de medição de tamanho \cite{park:1992:size}.
-
-\subsection{Evidências de IA, síntese GQM e reprodutibilidade}
-
-A Tabela~\ref{tab:gqm} sintetiza a correspondência entre as quatro questões de pesquisa (Q1--Q4) e os indicadores operacionalizados pelo paradigma GQM.
-
-\begin{table}[!htbp]
+\begin{table}[H]
 \centering\footnotesize
-\caption{Questões de pesquisa e medidas associadas no paradigma GQM.}
-\label{tab:gqm}
-\begin{tabularx}{\linewidth}{lXp{0.31\linewidth}}
+\caption{Repositórios ao final de cada etapa de seleção.}
+\label{tab:etapas}
+\begin{tabular}{lr}
 \hline
-\textbf{Q} & \textbf{Questão de pesquisa} & \textbf{Medidas operacionais} \\ \hline
-Q1 & Como a qualidade estrutural (métricas CK) dos mesmos projetos válidos evolui ao longo das eras? & Médias das sete métricas CK por era e diferenças exatas por grupo ($n=17$ e $n=453$). \\
-Q2 & Como as métricas estruturais comportam-se nas transições declaradas de Spring e Boot? & Dependências Maven/Gradle em cada SHA e variações longitudinais de CBO. \\
-Q3 & Quais diferenças de qualidade estrutural (métricas CK) distinguem projetos com e sem evidências de IA em E4? & Rastros em arquivos e \emph{commits} até o \emph{snapshot} ($N=470$); médias CK e porte físico. \\
-Q4 & Como a curadoria sem filtro de estrelas, a popularidade e o porte contextualizam as métricas CK? & Taxas nos quatro critérios de curadoria, estratos de estrelas, arquivos Java e LOC. \\
+\textbf{Etapa} & \textbf{Repositórios} \\ \hline
+1. Coleta & 95.894 \\
+2. Filtragem & 785 \\
+3. Curadoria & 634 \\
+4. Extração CK & 537 \\
 \hline
-\end{tabularx}
+\end{tabular}
 \par\vspace{2pt}{\footnotesize Fonte: Elaborada pelos autores (2026).}
 \end{table}
 
-A detecção local de vestígios de IA inspeciona arquivos e diretórios de configuração de agentes (incluindo GitHub Copilot, Cursor, Claude Code e Codex/OpenAI), entradas correlatas em \texttt{.gitignore}, identidades de \emph{bots} de codificação e \emph{trailers} \texttt{Co-authored-by} alcançáveis no histórico Git até o SHA avaliado \cite{robbes:26}. A ausência desses sinais não prova inexistência de assistência por IA, nem o primeiro registro versionado data o início exato do uso.
+\subsection{Eras, grupos temporais e seleção de \emph{snapshots}}
+\label{subsec:eras}
 
-A síntese analítica é estritamente descritiva, atribuindo peso idêntico a cada repositório nas médias por período e abstendo-se de testes inferenciais, p-valores ou delta de Cliff. Pela completude longitudinal dos dois grupos, os resultados são reportados em pares de tabelas (médias por era e diferenças exatas entre eras sobre os mesmos sistemas), mantendo todos os manifestos, SHAs, \emph{hashes} e extrações brutas auditáveis localmente.
+As eras tecnológicas analisadas são E1 (2009--2013), E2 (2014--2017), E3 (2018--2021) e E4 (2022 até outubro de 2026). A data de criação define o grupo de ingresso, enquanto a data do \emph{commit} posiciona cada medição em sua era. Em E1, E2 e E3, percorrendo a história pela linha do primeiro pai (\texttt{-\/-first-parent}) \cite{git:firstparent}, seleciona-se o último \emph{commit} com data contida na era, sem projetar código futuro para o passado; a ausência de \emph{commit} no período é tratada como dado ausente. Em E4, como se trata da era corrente, não se exige \emph{commit} datado no período: o \emph{snapshot} é o estado atual da \emph{branch} principal na coleta. Quando a atividade a partir de 2022 ocorreu apenas em ramos secundários ou \emph{tags}, esse estado coincide com o último \emph{commit} de E3 e a variação entre E3 e E4 é nula.
+
+Para eliminar flutuações de composição entre períodos, adotou-se um painel longitudinal balanceado, em que cada repositório é medido em todas as eras de seu grupo. A amostra final reúne 537 repositórios e 1.631 \emph{snapshots} em dois grupos disjuntos: o \textbf{grupo pioneiro} (criados até 2013), com 20 repositórios acompanhados em E1, E2, E3 e E4 (80 \emph{snapshots}), e o \textbf{grupo principal} (criados entre 2014 e 2017), com 517 repositórios acompanhados em E2, E3 e E4 (1.551 \emph{snapshots}). Assim, todas as comparações entre eras operam sobre os mesmos sistemas.
+
+\subsection{Extração estática das métricas CK}
+\label{subsec:ck}
+
+As métricas foram extraídas de cada \emph{snapshot} com a ferramenta CK 0.7.1-SNAPSHOT (revisão \texttt{8a1ef916}), baseada no Eclipse JDT 3.44.0 sob OpenJDK 17 \cite{aniche:ck}, sem compilação ou execução dos projetos. Para cada \emph{snapshot}, calcula-se a média entre classes de sete medidas, preservando nos artefatos brutos a separação entre código de produção e de testes:
+
+\begin{itemize}
+    \item \textbf{CBO (\emph{Coupling Between Objects}):} número de tipos distintos dos quais a classe depende, por atributos, parâmetros, retornos, variáveis e invocações; valores maiores indicam maior acoplamento.
+    \item \textbf{RFC (\emph{Response for a Class}):} número de invocações únicas de métodos resolvidas estaticamente na classe; dimensiona o conjunto de comportamentos que ela pode acionar.
+    \item \textbf{WMC (\emph{Weighted Methods per Class}):} soma dos pontos de ramificação dos métodos da classe; expressa sua complexidade estrutural.
+    \item \textbf{DIT (\emph{Depth of Inheritance Tree}):} profundidade da classe na hierarquia de herança, iniciando em um na raiz.
+    \item \textbf{NOC (\emph{Number of Children}):} número de subclasses diretas da classe presentes no \emph{snapshot}.
+    \item \textbf{LCOM* (\emph{Lack of Cohesion in Methods} normalizada):} varia de zero (coesão máxima) a um e é dada por $\frac{1}{a}\sum_{i=1}^{a}\frac{m-\mu(A_i)}{m}$, em que $a$ é o número de atributos, $m$ o de métodos e $\mu(A_i)$ o de métodos que acessam o atributo $A_i$. Classes com valor indefinido são omitidas apenas do denominador dessa métrica, sem conversão em zero.
+    \item \textbf{LOC/método:} média de linhas de código por método, indicador complementar de granularidade que não integra a suíte CK original.
+\end{itemize}
+
+Falhas de extração nunca são convertidas em zero. Não há piso mínimo de linhas de código (LOC) ou de arquivos Java para inclusão: o porte físico entra como variável contextual, contando cada arquivo \texttt{.java} uma única vez e somando suas linhas físicas não vazias e não exclusivamente comentadas \cite{park:1992:size}.
+
+\subsection{Detecção de evidências de IA e síntese dos dados}
+\label{subsec:ia}
+
+A detecção de vestígios de IA é aplicada a cada \emph{snapshot}, em todas as eras, e inspeciona arquivos e diretórios de configuração de agentes (como GitHub Copilot, Cursor, Claude Code e Codex), entradas correlatas em \texttt{.gitignore}, identidades de \emph{bots} de codificação e \emph{trailers} \texttt{Co-authored-by} alcançáveis no histórico Git até o \emph{snapshot} avaliado \cite{robbes:26}. A ausência desses sinais não comprova ausência de uso de IA, e o primeiro registro versionado não data o início do uso.
+
+A síntese é estritamente descritiva: cada repositório tem peso igual nas médias por era, e as diferenças entre eras são calculadas sobre os mesmos sistemas, sem testes inferenciais. Os resultados são reportados em pares de tabelas (médias por era e diferenças entre eras) para cada grupo temporal.

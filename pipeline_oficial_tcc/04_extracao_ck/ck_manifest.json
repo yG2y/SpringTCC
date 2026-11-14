@@ -1,25 +1,27 @@
 {
-  "step": "04_extracao_ck_e_completude_longitudinal",
-  "ck_version": "0.7.1-SNAPSHOT (commit 8a1ef916d597d33ad619d748b616bb7dbc3f0c36)",
-  "timestamp_utc": "2026-10-30T01:16:50.689565+00:00",
-  "reporeaper_approved_evaluated": 607,
+  "step": "04b_completude_longitudinal",
+  "timestamp_utc": "2026-11-13T21:30:30.436173+00:00",
+  "measurements_source": "pipeline_oficial_tcc/04_extracao_ck/measurements_785_candidatos.csv",
+  "measurements_source_sha256": "d683b1891daf99966cbbde3544f2909a807871e1c55005bd8431650374f775ad",
+  "reporeaper_approved_evaluated": 634,
   "excluded_incomplete_longitudinal": {
-    "total": 137,
-    "missing_commit_sha_in_intermediate_era": 122,
-    "clone_failure_or_no_measurable_java_classes": 15
+    "total": 97,
+    "erro_de_extracao_ck": 2,
+    "extracao_ck_parcial": 1,
+    "sem_classes_java_mensuraveis": 16,
+    "sem_commit_na_linha_principal_em_alguma_era": 78
   },
-  "valid_repositories_total": 470,
-  "pioneer_group_valid_e1_to_e4": 17,
-  "main_group_valid_e2_to_e4": 453,
-  "valid_ck_snapshots_total": 1427,
-  "e4_ai_classification_on_470_valid": {
-    "com_evidencia": 75,
-    "sem_evidencia_detectada": 395
+  "valid_repositories_total": 537,
+  "pioneer_group_valid_e1_to_e4": 20,
+  "main_group_valid_e2_to_e4": 517,
+  "valid_ck_snapshots_total": 1631,
+  "valid_with_e4_sha_equal_e3": 150,
+  "e4_ai_classification_on_valid": {
+    "com_evidencia": 88,
+    "sem_evidencia_detectada": 449
   },
-  "valid_repos_csv": "pipeline_oficial_tcc\\04_extracao_ck\\repositorios_470_validos.csv",
-  "valid_repos_sha256": "934bedd50e59e32484a98a516b9680a12af9960f44fd9d5ba60c72eb0a45bdae",
-  "valid_measurements_csv": "pipeline_oficial_tcc\\04_extracao_ck\\measurements_470_validos.csv",
-  "valid_measurements_sha256": "4b4fc11d91753bd52fc290413e78a49e0f5c89f7392b7dfbc83c382fce454234",
-  "ia_valid_csv": "pipeline_oficial_tcc\\05_deteccao_ia\\resultado_deteccao_ia_470_validos.csv",
-  "ia_valid_sha256": "696bb66dc12d700746d620d5d5e95b19dfb7f28859b93d539d6ddeaa90a58b33"
+  "valid_repos_csv": "pipeline_oficial_tcc/04_extracao_ck/repositorios_validos.csv",
+  "valid_repos_sha256": "04976ca4f86eb4f72448e27acbae2a97d384819fe351e06db87d52bc36a4ddf9",
+  "valid_measurements_csv": "pipeline_oficial_tcc/04_extracao_ck/measurements_validos.csv",
+  "valid_measurements_sha256": "23abd7b244b164224e7b032a22e1165215cf09eb2cc7f06e280f4256e0f3b4cd"
 }

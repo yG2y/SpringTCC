@@ -29,6 +29,12 @@ estrelas), exigindo aprovacao simultanea nos quatro cenarios complementares:
 4. Cenario C4 (Engenharia de Testes Automatizados):
    Presenca comprovada de estrutura ou classes de testes automatizados (src/test ou
    arquivos *Test.java / *Tests.java).
+
+C3 e C4 sao apurados na arvore de arquivos do estado atual de cada repositorio (o
+snapshot de E4) por `inspecionar_build_testes.py`, que grava
+`evidencias_build_testes.csv` com a fonte, o SHA inspecionado e um caminho de exemplo.
+Este script le essas evidencias; nenhum resultado de CK ou de IA participa da decisao.
+Repositorio cuja arvore nao pode ser inspecionada nao comprova C3/C4 e e reprovado.
 """
 
 from __future__ import annotations
@@ -120,6 +126,7 @@ def evaluate_repository_reaper(
 
     has_build = False
     has_tests = False
+    inspected = True
 
     if repo_path and repo_path.exists():
         for root, _, files in os.walk(repo_path):
@@ -136,29 +143,12 @@ def evaluate_repository_reaper(
                     has_tests = True
             if has_build and has_tests:
                 break
+    elif build_test_hint:
+        has_build = bool(build_test_hint.get("has_build", False))
+        has_tests = bool(build_test_hint.get("has_tests", False))
+        inspected = bool(build_test_hint.get("inspected", False))
     else:
-        if build_test_hint:
-            has_build = bool(build_test_hint.get("has_build", False))
-            has_tests = bool(build_test_hint.get("has_tests", False))
-
-        for b_key in ("c3_ok", "has_build_tool", "has_build", "framework_confirmed"):
-            if _parse_bool(repo_data.get(b_key)) is True:
-                has_build = True
-
-        for t_key in ("c4_ok", "has_automated_tests", "has_tests"):
-            if _parse_bool(repo_data.get(t_key)) is True:
-                has_tests = True
-
-        if not has_tests:
-            for num_key in ("test_n_cbo", "test_classes", "test_loc", "test_java_files"):
-                raw_val = repo_data.get(num_key)
-                if raw_val not in (None, ""):
-                    try:
-                        if float(raw_val) > 0:
-                            has_tests = True
-                            break
-                    except ValueError:
-                        pass
+        inspected = False
 
     c3_ok = has_build
     c4_ok = has_tests
@@ -169,10 +159,13 @@ def evaluate_repository_reaper(
         reasons.extend(f"c1_didactic:{kw}" for kw in c1_flags)
     if not c2_ok:
         reasons.extend(f"c2_toy_adjusted:{kw}" for kw in c2_flags)
-    if not c3_ok:
-        reasons.append("c3_missing_maven_or_gradle_build")
-    if not c4_ok:
-        reasons.append("c4_missing_automated_tests")
+    if not inspected:
+        reasons.append("c3_c4_arvore_nao_inspecionavel")
+    else:
+        if not c3_ok:
+            reasons.append("c3_missing_maven_or_gradle_build")
+        if not c4_ok:
+            reasons.append("c4_missing_automated_tests")
     if is_approved:
         reasons.append("approved_all_4_scenarios")
 
@@ -208,7 +201,7 @@ def run_reporeaper_curation(
     repos_dir: Optional[Path] = None,
     required_eras: Optional[List[str]] = None,
     measurements_csv: Optional[Path] = None,
-    audit_hint_csv: Optional[Path] = Path("pipeline_oficial_tcc/03_higienizacao_reporeaper/auditoria_completa_785_4cenarios.csv"),
+    evidence_csv: Optional[Path] = Path("pipeline_oficial_tcc/03_higienizacao_reporeaper/evidencias_build_testes.csv"),
     population_csv: Optional[Path] = Path(
         "Instrumentos/Codigos/Artefatos/selecao_spring_boot/runs/20260920_java/population.csv"
     ),
@@ -244,35 +237,24 @@ def run_reporeaper_curation(
     repo_shas: Dict[str, Set[str]] = {}
     bt_hints: Dict[str, Dict[str, bool]] = {}
 
-    if audit_hint_csv and audit_hint_csv.exists():
-        with open(audit_hint_csv, "r", encoding="utf-8") as af:
-            for arow in csv.DictReader(af):
-                rid = str(arow.get("repository_id", ""))
-                hint = bt_hints.setdefault(rid, {"has_build": False, "has_tests": False})
-                if _parse_bool(arow.get("c3_ok")) is True:
-                    hint["has_build"] = True
-                if _parse_bool(arow.get("c4_ok")) is True:
-                    hint["has_tests"] = True
+    if evidence_csv and evidence_csv.exists():
+        with open(evidence_csv, "r", encoding="utf-8") as ef:
+            for erow in csv.DictReader(ef):
+                bt_hints[str(erow.get("repository_id", ""))] = {
+                    "has_build": _parse_bool(erow.get("c3_ok")) is True,
+                    "has_tests": _parse_bool(erow.get("c4_ok")) is True,
+                    "inspected": erow.get("status") == "ok",
+                }
+    elif not repos_dir:
+        print(f"[!] Erro: evidencias de build/testes nao encontradas: {evidence_csv}. "
+              "Execute antes inspecionar_build_testes.py.", file=sys.stderr)
+        sys.exit(1)
 
     if measurements_csv and measurements_csv.exists():
         with open(measurements_csv, "r", encoding="utf-8") as f:
             for mrow in csv.DictReader(f):
-                rid = str(mrow.get("repository_id", ""))
-                era = str(mrow.get("era", ""))
-                sha = (mrow.get("sha") or "").strip()
-                if sha:
-                    repo_shas.setdefault(rid, set()).add(era)
-                hint = bt_hints.setdefault(rid, {"has_build": False, "has_tests": False})
-                if _parse_bool(mrow.get("framework_confirmed")) is True or _parse_bool(mrow.get("has_build")) is True:
-                    hint["has_build"] = True
-                for num_key in ("test_loc", "test_java_files", "test_n_cbo", "test_classes"):
-                    val = mrow.get(num_key)
-                    if val not in (None, ""):
-                        try:
-                            if float(val) > 0:
-                                hint["has_tests"] = True
-                        except ValueError:
-                            pass
+                if (mrow.get("sha") or "").strip():
+                    repo_shas.setdefault(str(mrow.get("repository_id", "")), set()).add(str(mrow.get("era", "")))
 
     if required_eras and repo_shas:
         req_set = set(required_eras)
@@ -334,6 +316,9 @@ def run_reporeaper_curation(
             "c3_build_descriptors": BUILD_FILES,
             "c4_automated_test_markers": ["src/test", "*Test.java", "*Tests.java"],
         },
+        "c3_c4_source": str(evidence_csv) if not repos_dir else str(repos_dir),
+        "c3_c4_evidence_sha256": _sha256_file(evidence_csv) if (evidence_csv and evidence_csv.exists()) else None,
+        "c3_c4_not_inspectable": sum(1 for r in results if "c3_c4_arvore_nao_inspecionavel" in r["reasons"]),
         "required_eras_filter": required_eras,
         "total_candidates_evaluated": total_candidates,
         "scenario_approvals": {
