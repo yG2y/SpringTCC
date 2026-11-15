@@ -61,7 +61,8 @@ Requer o ambiente `.venv` do repositório, Git e OpenJDK 17.
 ```bash
 .venv/bin/python pipeline_oficial_tcc/01_coleta_descoberta/coleta_spring_boot.py
 .venv/bin/python pipeline_oficial_tcc/02_coortes_e_shas/identificar_shas_eras.py
-.venv/bin/python pipeline_oficial_tcc/04_extracao_ck/extrair_snapshots_ck_ia.py      # clona e mede; retomável
+.venv/bin/python pipeline_oficial_tcc/04_extracao_ck/extrair_snapshots_ck_ia.py \
+  --shas-registrados docs/historico_instrucoes/20261113_antes_da_regra_unica_e4/measurements_785_candidatos_consolidado_anterior.csv  # clona e mede; retomável
 .venv/bin/python pipeline_oficial_tcc/03_higienizacao_reporeaper/inspecionar_build_testes.py
 .venv/bin/python pipeline_oficial_tcc/03_higienizacao_reporeaper/reporeaper_curation.py
 .venv/bin/python pipeline_oficial_tcc/04_extracao_ck/executar_extracao_ck.py
@@ -99,12 +100,16 @@ os mesmos clones; a curadoria não consulta nenhum resultado de CK ou de IA.
 8. **IA em E4 nos 537 válidos:** 88 com evidência detectada e 449 sem. Nenhum vestígio
    em E1–E3.
 
-## Proveniência dos clones
+## Proveniência dos clones e fixação de SHAs (`--shas-registrados`)
 
-- 538 candidatos reutilizam o clone e o commit de referência da execução de 15/10/2026.
-- 244 foram clonados em 13/11/2026 e fixados no SHA de E4 registrado na coleta de outubro.
-- 1 foi clonado em 13/11/2026 e fixado no HEAD daquele momento.
-- 2 não estavam mais disponíveis no GitHub e ficam como falha de recuperação.
+Para garantir reprodutibilidade exata (sem depender do `HEAD` móvel do GitHub em execuções futuras), `04_extracao_ck/extrair_snapshots_ck_ia.py` registra e fixa o commit de referência (`tip`) de cada candidato conforme registrado em `04_extracao_ck/extracao_manifest.json` (`tip_sources`):
+
+- **538 candidatos** (`clone_fixado_20261015`): reutilizam o clone bare e o commit de referência da execução congelada de 15/10/2026 (`Instrumentos/Codigos/Artefatos/evolucao_spring/runs/20261015_base_original_ate2017/`).
+- **244 candidatos** (`sha_e4_registrado_na_coleta_de_outubro`): foram clonados em 13/11/2026 e fixados no SHA de E4 registrado na coleta de outubro via `--shas-registrados docs/historico_instrucoes/20261113_antes_da_regra_unica_e4/measurements_785_candidatos_consolidado_anterior.csv`.
+- **1 candidato** (`head_no_clone_de_20261113`, ID `91772867` — `bureku/kokyo-space-geonames`): não possuía SHA de E4 registrado na listagem anterior e foi fixado no `HEAD` do clone em 13/11/2026 (SHA `f9dbb4bfc1bea2988451aeab3245c44e9817d3f0`, datado de `2023-06-26`; excluído na Etapa 4b por ausência de commit em E3).
+- **2 candidatos** (`sem_clone`): não estavam mais disponíveis no GitHub e ficam registrados como falha de recuperação (`retrieval_error`).
+
+Todos os SHAs efetivamente inspecionados por era nos 783 repositórios clonáveis (cujo commit mais recente em E4 data de `2026-10-15`) encontram-se versionados em `02_coortes_e_shas/shas_mapeados_por_era.csv`, que também pode ser informado em `--shas-registrados` para fixar o `tip` de E4 caso os clones sejam recriados do zero em outro ambiente.
 
 A reextração reproduziu exatamente as 1.441 medições válidas da execução de 15/10. As
 medições consolidadas anteriores dos demais candidatos, que não tinham script gerador,

@@ -25,7 +25,7 @@ A curadoria local determinística inspirada no RepoReaper em quatro critérios s
 - **Vestígios de IA em E4 ($N = 537$):** **88** projetos (16,4%) com vestígios explícitos detectados vs. **449** (83,6%) sem vestígios detectados. Os 88 projetos com vestígios reúnem bases de código cerca de treze vezes maiores em LOC médio (105.537 vs. 7.863 LOC; medianas de 5.517 vs. 2.025 LOC) e já partiam de CBO superior em E3 (5,899 vs. 5,560). Ausência de vestígio não comprova ausência de uso de IA.
 
 ### Artefatos principais do protocolo vigente
-- [Artigo em LaTeX](Artigo/Article.tex) e [PDF compilado do TCC II](output/pdf/Article.pdf) (corpo principal em 13 páginas + Referências + Apêndice A).
+- [Artigo em LaTeX](Artigo/Article.tex) e [PDF compilado do TCC II](output/pdf/Article.pdf) (corpo principal em 13 páginas + Referências).
 - [Documentação do pipeline oficial](pipeline_oficial_tcc/README.md).
 - [Amostra de 785 candidatos](pipeline_oficial_tcc/02_coortes_e_shas/sample_785.csv) e [auditoria dos 4 critérios de curadoria](pipeline_oficial_tcc/03_higienizacao_reporeaper/reporeaper_results.csv).
 - [537 repositórios válidos finais](pipeline_oficial_tcc/04_extracao_ck/repositorios_validos.csv), [1.631 medições CK](pipeline_oficial_tcc/04_extracao_ck/measurements_validos.csv) e [detecção de IA em E4](pipeline_oficial_tcc/05_deteccao_ia/resultado_deteccao_ia_validos.csv).
@@ -37,7 +37,7 @@ A curadoria local determinística inspirada no RepoReaper em quatro critérios s
 
 ```text
 Artigo/                         Artigo oficial (estilo SBC / PUC Minas), seções, BibTeX e tabelas geradas
-  Sections/*Base_Original.tex    Seções ativas (Introdução, Fundamentação, Relacionados, Método, Resultados, Conclusão, Apêndice)
+  Sections/                     Seções ativas (Introdução, Fundamentação, Relacionados, Método, Resultados, Ameaças, Conclusão, Pacote de Replicação)
   Generated/                    Tabelas LaTeX geradas deterministicamente a partir dos CSVs oficiais
   Arquivo/                      Textos de pilotos anteriores, fora do artigo ativo
 pipeline_oficial_tcc/           Implementação modular oficial do protocolo vigente (785 -> 634 -> 537 / 1.631 snapshots)
