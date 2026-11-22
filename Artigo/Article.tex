@@ -28,6 +28,9 @@
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta,positioning,fit,backgrounds,calc}
 \usepackage{amsmath}
+\usepackage{pgfplots}
+\usepgfplotslibrary{statistics,groupplots}
+\pgfplotsset{compat=1.17}
 
 %%%%%%%%%%%%%%%%% Pacotes para inserção de algoritmos - BEGIN
 \usepackage{xcolor}
@@ -70,7 +73,7 @@
 \sloppy
 \raggedbottom
 
-\title{Evolução da Qualidade Estrutural de Projetos Spring Boot:\\análise longitudinal por métricas CK e evidências de assistência por IA}
+\title{Evolução da Qualidade Estrutural de Projetos Spring Boot:\\uma análise longitudinal}
 
 \author{Gabriel Ferreira\inst{1}, Guilherme Augusto\inst{1}}
 
@@ -85,19 +88,23 @@
 \maketitle
 
 \begin{abstract}
-This longitudinal study evaluates the evolution of software structural quality through Chidamber and Kemerer (CK) metrics across four technological eras, E1 (2009--2013), E2 (2014--2017), E3 (2018--2021), and E4 (2022--2026), and analyzes structural quality differences in Spring Boot projects with artificial intelligence (AI) assistance. From 785 Java candidates created through 2017 and active since 2022, a RepoReaper-inspired engineering curation approved 634 repositories, of which 537 had valid CK extractions in all eras of their group (1,631 snapshots: 20 pioneer across E1--E4 and 517 main across E2--E4). Across eras, the same systems showed monotonic growth in coupling (CBO) and response (RFC), slight declines in complexity (WMC) and lack of cohesion (LCOM*), and stable inheritance. In E4, projects with detected AI traces ($n=88$) had higher coupling and complexity means than those without ($n=449$), while keeping comparable cohesion and inheritance in codebases about thirteen times larger in mean lines of code, characterizing structural differences without causal attribution.
+The structural quality of source code influences the maintenance effort of software systems, but little is known about how it evolves in long-lived Spring Boot projects. This longitudinal study evaluates the evolution of software structural quality through CK metrics across four technological eras in Spring Boot projects. As a result, 537 repositories were analyzed, in 1,631 versions of their code. Between the first and the last era, mean coupling (CBO) rose from 4.769 to 5.666 in projects created through 2013 and from 5.434 to 5.688 in those created from 2014 to 2017, while mean complexity and lack of cohesion did not increase and inheritance remained stable. In addition, for the most recent era, 88 repositories with traces of AI use were identified; they showed higher mean coupling than the other 449 (6.116 versus 5.603), in larger codebases, which characterizes structural differences without causal inference.
 \end{abstract}
 
 \begin{resumo}
-Este estudo longitudinal avalia a evolução da qualidade estrutural de \emph{software} por meio das métricas de Chidamber e Kemerer (CK) ao longo de quatro eras tecnológicas, E1 (2009--2013), E2 (2014--2017), E3 (2018--2021) e E4 (2022--2026), e analisa diferenças de qualidade estrutural em projetos Spring Boot com assistência por inteligência artificial (IA). De 785 candidatos Java criados até 2017 e ativos desde 2022, uma curadoria de engenharia inspirada no RepoReaper aprovou 634 projetos, dos quais 537 tiveram extração CK válida em todas as eras de seu grupo (1.631 \emph{snapshots}: 20 pioneiros de E1 a E4 e 517 principais de E2 a E4). Entre as eras, os mesmos sistemas exibiram alta monotônica em acoplamento (CBO) e resposta (RFC), leve redução em complexidade (WMC) e falta de coesão (LCOM*) e herança estável. Em E4, projetos com vestígios de IA ($n=88$) tiveram médias maiores de acoplamento e complexidade que os demais ($n=449$), mantendo coesão e herança próximas em bases cerca de treze vezes maiores na média de linhas de código, caracterizando diferenças estruturais sem inferência causal.
+A qualidade estrutural do código-fonte influencia o esforço de manutenção de sistemas de \emph{software}, mas pouco se sabe sobre como ela evolui em projetos Spring Boot longevos. Este estudo longitudinal avalia a evolução da qualidade estrutural de \emph{software} por meio das métricas CK ao longo de quatro eras tecnológicas em projetos Spring Boot. Como resultado, foram analisados 537 repositórios, em 1.631 versões de seu código. Entre a primeira e a última era, o acoplamento médio (CBO) subiu de 4,769 para 5,666 nos projetos criados até 2013 e de 5,434 para 5,688 nos criados de 2014 a 2017, enquanto a complexidade e a falta de coesão não aumentaram na média e a herança permaneceu estável. Além disso, para a era mais recente, foram identificados 88 repositórios com vestígios de uso de IA, que apresentaram acoplamento médio maior que os 449 demais (6,116 contra 5,603), em bases de código maiores, o que caracteriza diferenças estruturais sem inferência causal.
 \end{resumo}
 
 \begin{tcolorbox}
 \footnotesize
-\textbf{Bacharelado em Engenharia de \emph{Software} (PUC Minas)\\
-Trabalho de Conclusão de Curso II (TCC II)} \\[2pt]
-Orientador: Prof.\ Cleiton Silva Tavares (\texttt{cleitontavares@pucminas.br}) \\
-Belo Horizonte, novembro de 2026.
+\textbf{Bacharelado em Engenharia de \emph{Software} - PUC Minas\\
+Trabalho de Conclusão de Curso (TCC)} \\[2pt]
+Orientador de conteúdo (TCC I): Danilo Maia - \texttt{danilomaia@pucminas.br} \\
+Orientador de conteúdo (TCC I): João Pedro Batisteli - \texttt{joaobatisteli@pucminas.br} \\
+Orientador de conteúdo (TCC I): Leonardo Vilela - \texttt{leonardocardoso@pucminas.br} \\
+Orientador acadêmico (TCC I): Cleiton Tavares - \texttt{cleitontavares@pucminas.br} \\
+Orientador do TCC II: Cleiton Silva Tavares - \texttt{cleitontavares@pucminas.br} \\
+Belo Horizonte, 22 de novembro de 2026.
 \end{tcolorbox}
 
 \input{Sections/01_Introducao}
@@ -109,7 +116,6 @@ Belo Horizonte, novembro de 2026.
 \input{Sections/06_Conclusao_Base_Original}
 \input{Sections/07_Pacote_Replicacao}
 
-\clearpage
 \bibliographystyle{sbc}
 \bibliography{sbc-template}
 

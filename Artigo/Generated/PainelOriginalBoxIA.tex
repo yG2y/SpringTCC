@@ -1,0 +1,133 @@
+\begin{figure}[htbp]
+\centering
+\caption{Repositórios com IA (laranja, $n = 88$) e sem IA (cinza, $n = 449$): distribuição das métricas CK por era (o ponto indica a média). Em E1, apenas os repositórios criados até 2013 (9 com IA e 11 sem IA).}
+\label{fig:box_ia}
+\begin{tikzpicture}
+\begin{groupplot}[group style={group size=4 by 2, horizontal sep=0.8cm, vertical sep=0.95cm},
+  width=0.295\linewidth, height=3.5cm, boxplot/draw direction=y,
+  boxplot/box extend=0.32, xmin=0.4, xmax=4.6,
+  xtick={1,2,3,4}, xticklabels={E1,E2,E3,E4},
+  tick label style={font=\scriptsize}, title style={font=\scriptsize\bfseries, yshift=-5pt},
+  /pgf/number format/use comma, ymajorgrids, grid style={gray!25}]
+\nextgroupplot[title={CBO}]
+\addplot+[black, solid, fill=orange!55, mark=none, boxplot/draw position=0.8, boxplot prepared={lower whisker=3.2500, lower quartile=3.7156, median=4.7129, upper quartile=4.8678, upper whisker=5.4160}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(0.8,4.3648)};
+\addplot+[black, solid, fill=gray!30, mark=none, boxplot/draw position=1.2, boxplot prepared={lower whisker=2.2500, lower quartile=3.5769, median=5.0244, upper quartile=6.0569, upper whisker=6.4755}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(1.2,5.1002)};
+\addplot+[black, solid, fill=orange!55, mark=none, boxplot/draw position=1.8, boxplot prepared={lower whisker=2.3333, lower quartile=4.2738, median=5.2075, upper quartile=6.2461, upper whisker=8.5490}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(1.8,5.3744)};
+\addplot+[black, solid, fill=gray!30, mark=none, boxplot/draw position=2.2, boxplot prepared={lower whisker=1.3083, lower quartile=4.3092, median=5.2727, upper quartile=6.3913, upper whisker=9.5000}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(2.2,5.4371)};
+\addplot+[black, solid, fill=orange!55, mark=none, boxplot/draw position=2.8, boxplot prepared={lower whisker=2.4038, lower quartile=4.9337, median=5.7261, upper quartile=6.9261, upper whisker=9.0520}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(2.8,5.8986)};
+\addplot+[black, solid, fill=gray!30, mark=none, boxplot/draw position=3.2, boxplot prepared={lower whisker=1.9167, lower quartile=4.4739, median=5.4230, upper quartile=6.4595, upper whisker=9.2836}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(3.2,5.5601)};
+\addplot+[black, solid, fill=orange!55, mark=none, boxplot/draw position=3.8, boxplot prepared={lower whisker=2.5185, lower quartile=5.0181, median=5.9380, upper quartile=6.9462, upper whisker=9.3000}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(3.8,6.1158)};
+\addplot+[black, solid, fill=gray!30, mark=none, boxplot/draw position=4.2, boxplot prepared={lower whisker=1.9167, lower quartile=4.5000, median=5.4444, upper quartile=6.4835, upper whisker=9.2836}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(4.2,5.6032)};
+\nextgroupplot[title={RFC}]
+\addplot+[black, solid, fill=orange!55, mark=none, boxplot/draw position=0.8, boxplot prepared={lower whisker=6.0008, lower quartile=6.5431, median=7.8713, upper quartile=9.0000, upper whisker=10.2531}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(0.8,7.4728)};
+\addplot+[black, solid, fill=gray!30, mark=none, boxplot/draw position=1.2, boxplot prepared={lower whisker=3.6735, lower quartile=6.4316, median=7.5447, upper quartile=10.0021, upper whisker=11.7949}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(1.2,7.7478)};
+\addplot+[black, solid, fill=orange!55, mark=none, boxplot/draw position=1.8, boxplot prepared={lower whisker=0.0000, lower quartile=5.0995, median=6.6852, upper quartile=9.4636, upper whisker=14.8542}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(1.8,7.2561)};
+\addplot+[black, solid, fill=gray!30, mark=none, boxplot/draw position=2.2, boxplot prepared={lower whisker=0.3333, lower quartile=4.2105, median=6.0000, upper quartile=8.7000, upper whisker=15.3147}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(2.2,6.7057)};
+\addplot+[black, solid, fill=orange!55, mark=none, boxplot/draw position=2.8, boxplot prepared={lower whisker=1.7000, lower quartile=5.8163, median=7.9167, upper quartile=10.0478, upper whisker=15.9516}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(2.8,8.5231)};
+\addplot+[black, solid, fill=gray!30, mark=none, boxplot/draw position=3.2, boxplot prepared={lower whisker=0.3333, lower quartile=4.6667, median=6.4583, upper quartile=9.0000, upper whisker=15.2131}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(3.2,7.1453)};
+\addplot+[black, solid, fill=orange!55, mark=none, boxplot/draw position=3.8, boxplot prepared={lower whisker=1.7000, lower quartile=6.5258, median=8.5176, upper quartile=11.6524, upper whisker=17.7624}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(3.8,9.6320)};
+\addplot+[black, solid, fill=gray!30, mark=none, boxplot/draw position=4.2, boxplot prepared={lower whisker=0.3333, lower quartile=4.8000, median=6.5494, upper quartile=9.3333, upper whisker=16.1147}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(4.2,7.3500)};
+\nextgroupplot[title={WMC}]
+\addplot+[black, solid, fill=orange!55, mark=none, boxplot/draw position=0.8, boxplot prepared={lower whisker=2.9167, lower quartile=5.1258, median=6.2341, upper quartile=9.5676, upper whisker=11.8898}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(0.8,7.0846)};
+\addplot+[black, solid, fill=gray!30, mark=none, boxplot/draw position=1.2, boxplot prepared={lower whisker=1.6667, lower quartile=6.2537, median=7.9919, upper quartile=10.4744, upper whisker=12.7204}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(1.2,8.4675)};
+\addplot+[black, solid, fill=orange!55, mark=none, boxplot/draw position=1.8, boxplot prepared={lower whisker=1.0000, lower quartile=3.8027, median=5.2183, upper quartile=8.4823, upper whisker=14.5455}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(1.8,6.5591)};
+\addplot+[black, solid, fill=gray!30, mark=none, boxplot/draw position=2.2, boxplot prepared={lower whisker=0.6667, lower quartile=3.2381, median=4.7490, upper quartile=6.9500, upper whisker=12.4030}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(2.2,5.7841)};
+\addplot+[black, solid, fill=orange!55, mark=none, boxplot/draw position=2.8, boxplot prepared={lower whisker=1.2222, lower quartile=4.3125, median=5.2843, upper quartile=7.8719, upper whisker=12.7692}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(2.8,6.6788)};
+\addplot+[black, solid, fill=gray!30, mark=none, boxplot/draw position=3.2, boxplot prepared={lower whisker=0.8000, lower quartile=3.2157, median=4.8824, upper quartile=6.8571, upper whisker=12.0656}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(3.2,5.7158)};
+\addplot+[black, solid, fill=orange!55, mark=none, boxplot/draw position=3.8, boxplot prepared={lower whisker=1.0200, lower quartile=4.3333, median=5.7618, upper quartile=7.9345, upper whisker=13.3280}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(3.8,6.9747)};
+\addplot+[black, solid, fill=gray!30, mark=none, boxplot/draw position=4.2, boxplot prepared={lower whisker=0.6667, lower quartile=3.0377, median=4.7352, upper quartile=6.8686, upper whisker=12.5000}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(4.2,5.5996)};
+\nextgroupplot[title={LOC/método}]
+\addplot+[black, solid, fill=orange!55, mark=none, boxplot/draw position=0.8, boxplot prepared={lower whisker=5.6594, lower quartile=6.0708, median=6.2234, upper quartile=7.5729, upper whisker=8.4622}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(0.8,6.4804)};
+\addplot+[black, solid, fill=gray!30, mark=none, boxplot/draw position=1.2, boxplot prepared={lower whisker=3.2000, lower quartile=5.3819, median=5.7084, upper quartile=7.2861, upper whisker=8.6750}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(1.2,6.7869)};
+\addplot+[black, solid, fill=orange!55, mark=none, boxplot/draw position=1.8, boxplot prepared={lower whisker=2.0000, lower quartile=4.4283, median=5.5138, upper quartile=6.2254, upper whisker=8.4560}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(1.8,5.3706)};
+\addplot+[black, solid, fill=gray!30, mark=none, boxplot/draw position=2.2, boxplot prepared={lower whisker=2.4286, lower quartile=4.0502, median=4.9412, upper quartile=6.1061, upper whisker=8.9348}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(2.2,5.3035)};
+\addplot+[black, solid, fill=orange!55, mark=none, boxplot/draw position=2.8, boxplot prepared={lower whisker=3.1849, lower quartile=4.6254, median=5.7151, upper quartile=6.7055, upper whisker=9.1380}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(2.8,5.9341)};
+\addplot+[black, solid, fill=gray!30, mark=none, boxplot/draw position=3.2, boxplot prepared={lower whisker=2.5714, lower quartile=4.2212, median=5.0441, upper quartile=6.1538, upper whisker=8.9804}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(3.2,5.3417)};
+\addplot+[black, solid, fill=orange!55, mark=none, boxplot/draw position=3.8, boxplot prepared={lower whisker=3.5545, lower quartile=4.9992, median=5.9816, upper quartile=6.9064, upper whisker=8.7500}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(3.8,6.0777)};
+\addplot+[black, solid, fill=gray!30, mark=none, boxplot/draw position=4.2, boxplot prepared={lower whisker=2.5714, lower quartile=4.2863, median=5.1858, upper quartile=6.2268, upper whisker=9.1291}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(4.2,5.4501)};
+\nextgroupplot[title={DIT}]
+\addplot+[black, solid, fill=orange!55, mark=none, boxplot/draw position=0.8, boxplot prepared={lower whisker=1.2500, lower quartile=1.2952, median=1.3679, upper quartile=1.5479, upper whisker=1.5764}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(0.8,1.4146)};
+\addplot+[black, solid, fill=gray!30, mark=none, boxplot/draw position=1.2, boxplot prepared={lower whisker=1.0000, lower quartile=1.2804, median=1.3590, upper quartile=1.4853, upper whisker=1.5000}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(1.2,1.4343)};
+\addplot+[black, solid, fill=orange!55, mark=none, boxplot/draw position=1.8, boxplot prepared={lower whisker=1.0000, lower quartile=1.0629, median=1.2618, upper quartile=1.3750, upper whisker=1.7327}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(1.8,1.2653)};
+\addplot+[black, solid, fill=gray!30, mark=none, boxplot/draw position=2.2, boxplot prepared={lower whisker=1.0000, lower quartile=1.0370, median=1.1667, upper quartile=1.3243, upper whisker=1.7460}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(2.2,1.2156)};
+\addplot+[black, solid, fill=orange!55, mark=none, boxplot/draw position=2.8, boxplot prepared={lower whisker=1.0000, lower quartile=1.1240, median=1.3037, upper quartile=1.4445, upper whisker=1.8889}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(2.8,1.3163)};
+\addplot+[black, solid, fill=gray!30, mark=none, boxplot/draw position=3.2, boxplot prepared={lower whisker=1.0000, lower quartile=1.0581, median=1.1738, upper quartile=1.3112, upper whisker=1.6854}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(3.2,1.2116)};
+\addplot+[black, solid, fill=orange!55, mark=none, boxplot/draw position=3.8, boxplot prepared={lower whisker=1.0000, lower quartile=1.1107, median=1.2714, upper quartile=1.4183, upper whisker=1.8084}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(3.8,1.2919)};
+\addplot+[black, solid, fill=gray!30, mark=none, boxplot/draw position=4.2, boxplot prepared={lower whisker=1.0000, lower quartile=1.0580, median=1.1739, upper quartile=1.3143, upper whisker=1.6813}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(4.2,1.2108)};
+\nextgroupplot[title={NOC}]
+\addplot+[black, solid, fill=orange!55, mark=none, boxplot/draw position=0.8, boxplot prepared={lower whisker=0.0000, lower quartile=0.0816, median=0.1081, upper quartile=0.1530, upper whisker=0.1648}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(0.8,0.1111)};
+\addplot+[black, solid, fill=gray!30, mark=none, boxplot/draw position=1.2, boxplot prepared={lower whisker=0.0000, lower quartile=0.0000, median=0.0279, upper quartile=0.0638, upper whisker=0.0989}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(1.2,0.0531)};
+\addplot+[black, solid, fill=orange!55, mark=none, boxplot/draw position=1.8, boxplot prepared={lower whisker=0.0000, lower quartile=0.0000, median=0.0404, upper quartile=0.1055, upper whisker=0.2376}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(1.8,0.0697)};
+\addplot+[black, solid, fill=gray!30, mark=none, boxplot/draw position=2.2, boxplot prepared={lower whisker=0.0000, lower quartile=0.0000, median=0.0000, upper quartile=0.0784, upper whisker=0.1944}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(2.2,0.0566)};
+\addplot+[black, solid, fill=orange!55, mark=none, boxplot/draw position=2.8, boxplot prepared={lower whisker=0.0000, lower quartile=0.0000, median=0.0598, upper quartile=0.1231, upper whisker=0.2903}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(2.8,0.0784)};
+\addplot+[black, solid, fill=gray!30, mark=none, boxplot/draw position=3.2, boxplot prepared={lower whisker=0.0000, lower quartile=0.0000, median=0.0178, upper quartile=0.0851, upper whisker=0.2083}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(3.2,0.0619)};
+\addplot+[black, solid, fill=orange!55, mark=none, boxplot/draw position=3.8, boxplot prepared={lower whisker=0.0000, lower quartile=0.0000, median=0.0569, upper quartile=0.1097, upper whisker=0.2590}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(3.8,0.0707)};
+\addplot+[black, solid, fill=gray!30, mark=none, boxplot/draw position=4.2, boxplot prepared={lower whisker=0.0000, lower quartile=0.0000, median=0.0159, upper quartile=0.0833, upper whisker=0.2077}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(4.2,0.0614)};
+\nextgroupplot[title={LCOM*}]
+\addplot+[black, solid, fill=orange!55, mark=none, boxplot/draw position=0.8, boxplot prepared={lower whisker=0.1518, lower quartile=0.1891, median=0.2306, upper quartile=0.2778, upper whisker=0.3319}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(0.8,0.2394)};
+\addplot+[black, solid, fill=gray!30, mark=none, boxplot/draw position=1.2, boxplot prepared={lower whisker=0.2897, lower quartile=0.2898, median=0.3208, upper quartile=0.3460, upper whisker=0.3576}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(1.2,0.3261)};
+\addplot+[black, solid, fill=orange!55, mark=none, boxplot/draw position=1.8, boxplot prepared={lower whisker=0.0000, lower quartile=0.1799, median=0.2494, upper quartile=0.3164, upper whisker=0.4759}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(1.8,0.2450)};
+\addplot+[black, solid, fill=gray!30, mark=none, boxplot/draw position=2.2, boxplot prepared={lower whisker=0.0000, lower quartile=0.1672, median=0.2405, upper quartile=0.3211, upper whisker=0.5189}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(2.2,0.2457)};
+\addplot+[black, solid, fill=orange!55, mark=none, boxplot/draw position=2.8, boxplot prepared={lower whisker=0.0301, lower quartile=0.1888, median=0.2396, upper quartile=0.2976, upper whisker=0.4589}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(2.8,0.2478)};
+\addplot+[black, solid, fill=gray!30, mark=none, boxplot/draw position=3.2, boxplot prepared={lower whisker=0.0000, lower quartile=0.1707, median=0.2383, upper quartile=0.3185, upper whisker=0.5312}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(3.2,0.2421)};
+\addplot+[black, solid, fill=orange!55, mark=none, boxplot/draw position=3.8, boxplot prepared={lower whisker=0.0431, lower quartile=0.1906, median=0.2426, upper quartile=0.2957, upper whisker=0.4422}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(3.8,0.2486)};
+\addplot+[black, solid, fill=gray!30, mark=none, boxplot/draw position=4.2, boxplot prepared={lower whisker=0.0000, lower quartile=0.1611, median=0.2295, upper quartile=0.3125, upper whisker=0.5312}] coordinates {};
+\addplot[only marks, mark=*, mark size=1.3pt, black] coordinates {(4.2,0.2343)};
+\end{groupplot}
+\end{tikzpicture}
+\end{figure}

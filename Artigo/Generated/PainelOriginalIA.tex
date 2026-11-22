@@ -1,18 +1,28 @@
 \begin{table}[htbp]
 \centering\footnotesize
-\caption{E4: médias entre os repositórios válidos finais ($N = 537$) com evidência detectada de IA (A, $n_a=88$) e sem evidência detectada (B, $n_b=449$).}
+\caption{Repositórios com IA ($n = 88$) e sem IA ($n = 449$): estatísticas das métricas CK por era.}
 \label{tab:ia_e4}
-\begin{tabular}{lrrr}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{ll|rrrr|rrrr|rrrr|rrrr}
 \hline
-\textbf{Métrica} & \textbf{Média A} & \textbf{Média B} & \textbf{A $-$ B} \\ \hline
-CBO & 6,116 & 5,603 & $+$0,513 \\
-RFC & 9,632 & 7,350 & $+$2,282 \\
-WMC & 6,975 & 5,600 & $+$1,375 \\
-LOC/método & 6,078 & 5,450 & $+$0,628 \\
-DIT & 1,292 & 1,211 & $+$0,081 \\
-NOC & 0,071 & 0,061 & $+$0,009 \\
-LCOM* & 0,249 & 0,234 & $+$0,014 \\
+ &  & \multicolumn{4}{|c}{\textbf{Mínimo}} & \multicolumn{4}{|c}{\textbf{Média}} & \multicolumn{4}{|c}{\textbf{Mediana}} & \multicolumn{4}{|c}{\textbf{Máximo}} \\
+\cline{3-6}\cline{7-10}\cline{11-14}\cline{15-18}
+\textbf{Métrica} & \textbf{Grupo} & \textbf{E1} & \textbf{E2} & \textbf{E3} & \textbf{E4} & \textbf{E1} & \textbf{E2} & \textbf{E3} & \textbf{E4} & \textbf{E1} & \textbf{E2} & \textbf{E3} & \textbf{E4} & \textbf{E1} & \textbf{E2} & \textbf{E3} & \textbf{E4} \\ \hline
+CBO & Com IA & 3,250 & 2,333 & 2,404 & 2,519 & 4,365 & 5,374 & 5,899 & 6,116 & 4,713 & 5,208 & 5,726 & 5,938 & 5,416 & 10,093 & 10,857 & 10,857 \\
+ & Sem IA & 2,250 & 1,308 & 1,917 & 1,917 & 5,100 & 5,437 & 5,560 & 5,603 & 5,024 & 5,273 & 5,423 & 5,444 & 10,500 & 12,867 & 15,000 & 16,600 \\[3pt]
+RFC & Com IA & 1,167 & 0,000 & 1,700 & 1,700 & 7,473 & 7,256 & 8,523 & 9,632 & 7,871 & 6,685 & 7,917 & 8,518 & 10,253 & 27,302 & 35,944 & 51,052 \\
+ & Sem IA & 1,000 & 0,333 & 0,333 & 0,333 & 7,748 & 6,706 & 7,145 & 7,350 & 7,545 & 6,000 & 6,458 & 6,549 & 11,795 & 41,000 & 31,333 & 31,333 \\[3pt]
+WMC & Com IA & 2,917 & 1,000 & 1,222 & 1,020 & 7,085 & 6,559 & 6,679 & 6,975 & 6,234 & 5,218 & 5,284 & 5,762 & 11,890 & 21,721 & 29,268 & 40,948 \\
+ & Sem IA & 1,667 & 0,667 & 0,800 & 0,667 & 8,468 & 5,784 & 5,716 & 5,600 & 7,992 & 4,749 & 4,882 & 4,735 & 18,308 & 39,769 & 42,583 & 27,357 \\[3pt]
+LOC/método & Com IA & 3,229 & 2,000 & 3,185 & 3,555 & 6,480 & 5,371 & 5,934 & 6,078 & 6,223 & 5,514 & 5,715 & 5,982 & 8,462 & 8,967 & 14,200 & 14,200 \\
+ & Sem IA & 3,200 & 2,429 & 2,571 & 2,571 & 6,787 & 5,304 & 5,342 & 5,450 & 5,708 & 4,941 & 5,044 & 5,186 & 14,226 & 17,688 & 17,312 & 17,312 \\[3pt]
+DIT & Com IA & 1,250 & 1,000 & 1,000 & 1,000 & 1,415 & 1,265 & 1,316 & 1,292 & 1,368 & 1,262 & 1,304 & 1,271 & 1,576 & 1,940 & 2,000 & 1,889 \\
+ & Sem IA & 1,000 & 1,000 & 1,000 & 1,000 & 1,434 & 1,216 & 1,212 & 1,211 & 1,359 & 1,167 & 1,174 & 1,174 & 2,042 & 2,500 & 2,107 & 2,111 \\[3pt]
+NOC & Com IA & 0,000 & 0,000 & 0,000 & 0,000 & 0,111 & 0,070 & 0,078 & 0,071 & 0,108 & 0,040 & 0,060 & 0,057 & 0,165 & 0,583 & 0,419 & 0,314 \\
+ & Sem IA & 0,000 & 0,000 & 0,000 & 0,000 & 0,053 & 0,057 & 0,062 & 0,061 & 0,028 & 0,000 & 0,018 & 0,016 & 0,269 & 0,732 & 0,977 & 0,494 \\[3pt]
+LCOM* & Com IA & 0,152 & 0,000 & 0,000 & 0,000 & 0,239 & 0,245 & 0,248 & 0,249 & 0,231 & 0,249 & 0,240 & 0,243 & 0,332 & 0,760 & 0,562 & 0,518 \\
+ & Sem IA & 0,111 & 0,000 & 0,000 & 0,000 & 0,326 & 0,246 & 0,242 & 0,234 & 0,321 & 0,241 & 0,238 & 0,230 & 0,569 & 0,762 & 0,591 & 0,591 \\
 \hline
-\end{tabular}
-\par\vspace{2pt}{\footnotesize Fonte: Elaborada pelos autores (2026). Nota: diferenças calculadas antes do arredondamento.}
+\end{tabular}}
+\par\vspace{2pt}{\footnotesize Nota: estatísticas entre repositórios; cada repositório é representado pela média de suas classes. NOC igual a zero indica repositório sem subclasses entre suas próprias classes. E1 foi medida apenas nos repositórios criados até 2013 (9 com IA e 11 sem IA).}
 \end{table}

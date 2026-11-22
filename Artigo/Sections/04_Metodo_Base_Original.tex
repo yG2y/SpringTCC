@@ -1,80 +1,72 @@
 \section{Materiais e Métodos}
 \label{sec:metodologia}
 
-Este estudo adota delineamento observacional, longitudinal e descritivo sobre repositórios públicos de projetos Spring Boot no GitHub. A unidade acompanhada é o repositório, e a unidade de medição corresponde ao último \emph{snapshot} válido na linha principal dentro de cada era. As análises caracterizam trajetórias históricas e associações empíricas, sem reivindicar identificação causal para ferramentas de inteligência artificial. A Figura~\ref{fig:processo} resume o processo metodológico, detalhado nas subseções seguintes.
+Este estudo analisa repositórios públicos de projetos Spring Boot no GitHub e é observacional, longitudinal e descritivo. É observacional porque os repositórios são analisados como existem, sem intervenção dos autores; longitudinal porque os mesmos repositórios são medidos em vários períodos; e descritivo porque os resultados são resumidos por estatística descritiva, sem testes de hipótese nem atribuição de causa. O processo foi organizado em seis etapas, apresentadas na Figura~\ref{fig:processo} e detalhadas a seguir.
 
 \begin{figure}[htbp]
 \centering
 \caption{Processo metodológico do estudo.}
 \label{fig:processo}
 \includegraphics[width=\linewidth]{processo_metodologico.png}
-\par\vspace{2pt}{\footnotesize Fonte: Elaborada pelos autores (2026).}
 \end{figure}
 
-\subsection{Seleção dos repositórios}
-\label{subsec:reporeaper}
+\textbf{Coleta.} A coleta reuniu os repositórios públicos do GitHub marcados com o tópico \texttt{spring-boot}, por meio da API REST de busca, em setembro de 2026. Como a API devolve no máximo mil resultados por consulta, a busca foi dividida por períodos de data de criação e, quando necessário, por faixas de número de estrelas, sem descartar registros. Foram obtidos 95.894 repositórios únicos, com os metadados usados na etapa seguinte, que são a linguagem principal, as datas de criação e de último envio de código, o número de estrelas e os indicadores de \emph{fork}, arquivamento e \emph{template}.
 
-A seleção e a medição dos repositórios seguiram as quatro primeiras etapas da Figura~\ref{fig:processo}, aplicadas de forma sequencial e determinística, sem sorteio nem substituição de repositórios reprovados:
+\textbf{Filtragem.} A filtragem aplicou aos metadados coletados os critérios de inclusão e de exclusão. A Tabela~\ref{tab:criterios} apresenta todos os critérios do estudo, com a etapa em que cada um foi aplicado, sua justificativa e a quantidade de repositórios que não o atenderam.
 
-\begin{itemize}
-    \item \textbf{Coleta:} 95.894 registros únicos coletados em setembro de 2026 pela API REST de busca do GitHub com a consulta \texttt{topic:spring-boot fork:true}, particionada por janelas de data de criação e, apenas para contornar o teto de mil resultados por consulta, por faixas de estrelas, sem descarte de registros.
-    \item \textbf{Filtragem:} cada repositório foi contabilizado na primeira condição de rejeição: linguagem principal ausente ou distinta de Java (23.298), \emph{forks} (1.089), arquivados (1.607), sem envio de código (\emph{push}) a partir de 1\textsuperscript{o} de janeiro de 2022, início da era E4 (16.615), \emph{templates} (323), vazios ou sem \emph{branch} padrão (3) e listas ou exercícios retidos por triagem lexical escolar preliminar (540); nenhum espelho ou repositório desabilitado foi encontrado, e não se aplicou filtro por número de estrelas. Restaram 52.419 repositórios Java ativos. Em seguida, mantiveram-se os repositórios criados até 31 de dezembro de 2017, o que definiu os 785 candidatos do estudo: 22 criados até 2013 e 763 criados entre 2014 e 2017.
-    \item \textbf{Curadoria:} os candidatos foram avaliados pelo instrumento determinístico local \texttt{reporeaper\_curation.py}, que exige o atendimento simultâneo de quatro critérios de práticas de engenharia. Seu fundamento conceitual são as dimensões do arcabouço RepoReaper \cite{munaiah:17} e as diretrizes de triagem de repositórios do GitHub \cite{kalliamvakou:16}; as regras heurísticas e adaptações lexicais são próprias deste trabalho e não correspondem à execução do classificador original. Os critérios são:
-    \begin{itemize}
-        \item \emph{C1 (finalidade não didática):} exclusão de repositórios voltados a disciplinas, cursos ou exercícios, identificados por 14 vocábulos em nome, descrição ou tópicos (\texttt{course}, \texttt{homework}, \texttt{assignment}, \texttt{learning}, \texttt{tutorial}, \texttt{aula}, \texttt{curso}, \texttt{exercicio}, \texttt{exercicios}, \texttt{treinamento}, \texttt{udemy}, \texttt{mooc}, \texttt{exercism} e \texttt{lecture}), preservando compostos técnicos como \texttt{machine-learning} e \texttt{deep-learning}; 765 candidatos atenderam ao critério (97,5\%).
-        \item \emph{C2 ajustado (exclusão de projetos brinquedo):} rejeição de áreas de teste descartáveis e esqueletos identificados por \texttt{playground}, \texttt{sandbox}, \texttt{toy}, \texttt{practice}, \texttt{boilerplate}, \texttt{cheatsheet}, \texttt{cheat-sheet} e \texttt{slides}. Os termos \texttt{demo}, \texttt{sample} e \texttt{example} (e plurais) foram isentos, porque o gerador oficial Spring Initializr preenche por padrão o identificador \texttt{demo} e mantenedores corporativos nomeiam implementações completas de referência com \texttt{sample} ou \texttt{example}; bloqueá-los descartaria 149 repositórios aprovados nos demais critérios. Atenderam ao critério 768 candidatos (97,8\%).
-        \item \emph{C3 (automação de build):} presença, na árvore de arquivos do estado atual do repositório, de \texttt{pom.xml}, \texttt{build.gradle} ou \texttt{build.gradle.kts}; 779 candidatos (99,2\%).
-        \item \emph{C4 (testes automatizados):} presença, na mesma árvore, do diretório \texttt{src/test} ou de classes \texttt{*Test.java} e \texttt{*Tests.java}; 669 candidatos (85,2\%).
-    \end{itemize}
-    A interseção dos quatro critérios aprovou 634 repositórios.
-    \item \textbf{Extração CK:} cada candidato foi clonado com o histórico completo da \emph{branch} principal (dois não estavam mais disponíveis no GitHub), e um \emph{snapshot} por era foi selecionado e medido com as sete métricas (Seções~\ref{subsec:eras} e~\ref{subsec:ck}). Entre os aprovados na curadoria, mantiveram-se apenas os repositórios com extração válida em todas as eras previstas para seu grupo. Saíram 97 repositórios (78 por ausência de \emph{commit} na linha principal em E1, E2 ou E3, 16 por ausência de classes Java mensuráveis em alguma era e 3 por falha ou cobertura incompleta da extração), resultando em 537 repositórios válidos.
-\end{itemize}
-
-A Tabela~\ref{tab:etapas} apresenta a quantidade de repositórios ao final de cada etapa.
-
-\begin{table}[H]
+\begin{table}[!t]
 \centering\footnotesize
-\caption{Repositórios ao final de cada etapa de seleção.}
-\label{tab:etapas}
-\begin{tabular}{lr}
+\caption{Critérios de inclusão (CI) e de exclusão (CE) dos repositórios e quantidade de repositórios que não atenderam a cada um.}
+\label{tab:criterios}
+\begin{tabularx}{\linewidth}{llXXr}
 \hline
-\textbf{Etapa} & \textbf{Repositórios} \\ \hline
-1. Coleta & 95.894 \\
-2. Filtragem & 785 \\
-3. Curadoria & 634 \\
-4. Extração CK & 537 \\
+\textbf{Id.} & \textbf{Etapa} & \textbf{Critério} & \textbf{Justificativa} & \textbf{Não atenderam} \\ \hline
+CI1 & Filtragem & Linguagem principal Java & A ferramenta CK mede apenas código Java & 23.298 \\
+CI2 & Filtragem & Criado até 31 de dezembro de 2017 & Garante histórico em pelo menos três eras & 51.634 \\
+CI3 & Filtragem & Envio de código a partir de 1\textsuperscript{o} de janeiro de 2022 & Garante que o projeto permanece ativo na era mais recente & 16.615 \\
+CI4 & Curadoria & Arquivo de \emph{build} (Maven ou Gradle) & Indica projeto construído de forma automatizada & 6 \\
+CI5 & Curadoria & Testes automatizados & Indica prática mínima de engenharia de \emph{software} & 116 \\
+CI6 & Extração CK & Medição válida em todas as eras do grupo & Permite comparar os mesmos repositórios entre as eras & 97 \\ \hline
+CE1 & Filtragem & \emph{Fork} ou espelho de outro repositório & Evita medir o mesmo código mais de uma vez & 1.089 \\
+CE2 & Filtragem & Arquivado ou desabilitado & Projeto sem manutenção & 1.607 \\
+CE3 & Filtragem & \emph{Template}, vazio ou lista de exercícios & Não contém um sistema a ser medido & 866 \\
+CE4 & Curadoria & Finalidade didática & Não representa um projeto de engenharia de \emph{software} & 20 \\
+CE5 & Curadoria & Projeto de brinquedo & Não representa um projeto de engenharia de \emph{software} & 17 \\
 \hline
-\end{tabular}
-\par\vspace{2pt}{\footnotesize Fonte: Elaborada pelos autores (2026).}
+\end{tabularx}
+\par\vspace{2pt}{\footnotesize Nota: na filtragem, cada repositório foi contado no primeiro critério que não atendeu, na ordem CI1, CE1, CE2, CI3, CE3 e CI2; na curadoria, um mesmo repositório pode não atender a mais de um critério.}
 \end{table}
 
-\subsection{Eras, grupos temporais e seleção de \emph{snapshots}}
-\label{subsec:eras}
+Após a filtragem, restaram 785 repositórios, sendo 22 criados de 2009 a 2013 e 763 criados de 2014 a 2017, que seguiram para a curadoria.
 
-As eras tecnológicas analisadas são E1 (2009--2013), E2 (2014--2017), E3 (2018--2021) e E4 (2022 até outubro de 2026). A data de criação define o grupo de ingresso, enquanto a data do \emph{commit} posiciona cada medição em sua era. Em E1, E2 e E3, percorrendo a história pela linha do primeiro pai (\texttt{-\/-first-parent}) \cite{git:firstparent}, seleciona-se o último \emph{commit} com data contida na era, sem projetar código futuro para o passado; a ausência de \emph{commit} no período é tratada como dado ausente. Em E4, como se trata da era corrente, não se exige \emph{commit} datado no período: o \emph{snapshot} é o estado atual da \emph{branch} principal na coleta. Quando a atividade a partir de 2022 ocorreu apenas em ramos secundários ou \emph{tags}, esse estado coincide com o último \emph{commit} de E3 e a variação entre E3 e E4 é nula.
-
-Para eliminar flutuações de composição entre períodos, adotou-se um painel longitudinal balanceado, em que cada repositório é medido em todas as eras de seu grupo. A amostra final reúne 537 repositórios e 1.631 \emph{snapshots} em dois grupos disjuntos: o \textbf{grupo pioneiro} (criados até 2013), com 20 repositórios acompanhados em E1, E2, E3 e E4 (80 \emph{snapshots}), e o \textbf{grupo principal} (criados entre 2014 e 2017), com 517 repositórios acompanhados em E2, E3 e E4 (1.551 \emph{snapshots}). Assim, todas as comparações entre eras operam sobre os mesmos sistemas.
-
-\subsection{Extração estática das métricas CK}
-\label{subsec:ck}
-
-As métricas foram extraídas de cada \emph{snapshot} com a ferramenta CK 0.7.1-SNAPSHOT (revisão \texttt{8a1ef916}), baseada no Eclipse JDT 3.44.0 sob OpenJDK 17 \cite{aniche:ck}, sem compilação ou execução dos projetos. Para cada \emph{snapshot}, calcula-se a média entre classes de sete medidas, preservando nos artefatos brutos a separação entre código de produção e de testes:
+\textbf{Curadoria.} A curadoria removeu os repositórios que não aparentam ser projetos de engenharia de \emph{software}, ideia proposta por Munaiah et al.\ (2017)\nocite{munaiah:17} e recomendada para estudos com dados do GitHub \cite{kalliamvakou:16}. As quatro regras a seguir são próprias deste trabalho e mais simples que o classificador daqueles autores. Um repositório só é aprovado se atender às quatro ao mesmo tempo, e a contagem ao final de cada regra indica quantos dos 785 repositórios a atendem quando ela é considerada isoladamente.
 
 \begin{itemize}
-    \item \textbf{CBO (\emph{Coupling Between Objects}):} número de tipos distintos dos quais a classe depende, por atributos, parâmetros, retornos, variáveis e invocações; valores maiores indicam maior acoplamento.
-    \item \textbf{RFC (\emph{Response for a Class}):} número de invocações únicas de métodos resolvidas estaticamente na classe; dimensiona o conjunto de comportamentos que ela pode acionar.
-    \item \textbf{WMC (\emph{Weighted Methods per Class}):} soma dos pontos de ramificação dos métodos da classe; expressa sua complexidade estrutural.
-    \item \textbf{DIT (\emph{Depth of Inheritance Tree}):} profundidade da classe na hierarquia de herança, iniciando em um na raiz.
-    \item \textbf{NOC (\emph{Number of Children}):} número de subclasses diretas da classe presentes no \emph{snapshot}.
-    \item \textbf{LCOM* (\emph{Lack of Cohesion in Methods} normalizada):} varia de zero (coesão máxima) a um e é dada por $\frac{1}{a}\sum_{i=1}^{a}\frac{m-\mu(A_i)}{m}$, em que $a$ é o número de atributos, $m$ o de métodos e $\mu(A_i)$ o de métodos que acessam o atributo $A_i$. Classes com valor indefinido são omitidas apenas do denominador dessa métrica, sem conversão em zero.
-    \item \textbf{LOC/método:} média de linhas de código por método, indicador complementar de granularidade que não integra a suíte CK original.
+    \item \textbf{Finalidade não didática (CE4):} o nome completo, a descrição e os tópicos do repositório não contêm termos de cursos e exercícios (\texttt{course}, \texttt{homework}, \texttt{assignment}, \texttt{learning}, \texttt{tutorial}, \texttt{aula}, \texttt{curso}, \texttt{exercicio}, \texttt{exercicios}, \texttt{treinamento}, \texttt{udemy}, \texttt{mooc}, \texttt{exercism} e \texttt{lecture}), preservando termos técnicos como \texttt{machine-learning}. Isoladamente, 765 repositórios atendem a esta regra.
+    \item \textbf{Não ser projeto de brinquedo (CE5):} os mesmos campos não contêm \texttt{playground}, \texttt{sandbox}, \texttt{toy}, \texttt{practice}, \texttt{boilerplate}, \texttt{cheatsheet}, \texttt{cheat-sheet} ou \texttt{slides}. Os termos \texttt{demo}, \texttt{sample} e \texttt{example} não excluem o repositório, porque o gerador oficial de projetos Spring Boot usa \texttt{demo} como nome padrão e projetos de referência completos costumam ser nomeados com \texttt{sample} ou \texttt{example}. Isoladamente, 768 repositórios atendem a esta regra.
+    \item \textbf{Arquivo de \emph{build} (CI4):} o repositório contém \texttt{pom.xml}, \texttt{build.gradle} ou \texttt{build.gradle.kts}. Isoladamente, 779 repositórios atendem a esta regra.
+    \item \textbf{Testes automatizados (CI5):} o repositório contém o diretório \texttt{src/test} ou classes terminadas em \texttt{Test.java} ou \texttt{Tests.java}. Isoladamente, 669 repositórios atendem a esta regra.
 \end{itemize}
 
-Falhas de extração nunca são convertidas em zero. Não há piso mínimo de linhas de código (LOC) ou de arquivos Java para inclusão: o porte físico entra como variável contextual, contando cada arquivo \texttt{.java} uma única vez e somando suas linhas físicas não vazias e não exclusivamente comentadas \cite{park:1992:size}.
+Os dois últimos critérios foram verificados nos arquivos do estado atual de cada repositório. Dos 785 repositórios, 634 atenderam às quatro regras ao mesmo tempo e foram aprovados. Os outros 151 deixaram de atender a pelo menos uma delas e não foram substituídos.
 
-\subsection{Detecção de evidências de IA e síntese dos dados}
-\label{subsec:ia}
+\textbf{Extração CK.} Cada repositório foi clonado com seu histórico completo, e seu código foi medido em uma versão (\emph{snapshot}) por era. As quatro eras e os motivos de seus limites são:
 
-A detecção de vestígios de IA é aplicada a cada \emph{snapshot}, em todas as eras, e inspeciona arquivos e diretórios de configuração de agentes (como GitHub Copilot, Cursor, Claude Code e Codex), entradas correlatas em \texttt{.gitignore}, identidades de \emph{bots} de codificação e \emph{trailers} \texttt{Co-authored-by} alcançáveis no histórico Git até o \emph{snapshot} avaliado \cite{robbes:26}. A ausência desses sinais não comprova ausência de uso de IA, e o primeiro registro versionado não data o início do uso.
+\begin{itemize}
+    \item \textbf{E1 (2009--2013):} começa no ano de criação do repositório mais antigo do estudo e termina no último ano anterior à versão 1.0 do Spring Boot, lançada em abril de 2014 \cite{springboot:2014}.
+    \item \textbf{E2 (2014--2017):} corresponde ao período da linha 1.x do Spring Boot, da versão 1.0 até o último ano anterior à versão 2.0.
+    \item \textbf{E3 (2018--2021):} começa no ano de lançamento da versão 2.0 do Spring Boot, em março de 2018 \cite{springboot:2018}, e termina no último ano anterior à disponibilidade geral de assistentes de IA para codificação.
+    \item \textbf{E4 (2022--2026):} começa no ano em que o GitHub Copilot foi aberto a todos os desenvolvedores, em junho de 2022 \cite{copilot:2022}, e termina em outubro de 2026, mês em que o estado dos repositórios foi registrado.
+\end{itemize}
 
-A síntese é estritamente descritiva: cada repositório tem peso igual nas médias por era, e as diferenças entre eras são calculadas sobre os mesmos sistemas, sem testes inferenciais. Os resultados são reportados em pares de tabelas (médias por era e diferenças entre eras) para cada grupo temporal.
+Um repositório só pode ser medido nas eras em que já existia. Por isso, os repositórios foram divididos em dois grupos conforme o ano de criação, o \textbf{grupo pioneiro}, criado de 2009 a 2013 e medido em E1, E2, E3 e E4, e o \textbf{grupo principal}, criado de 2014 a 2017 e medido em E2, E3 e E4. Em E1, E2 e E3, o \emph{snapshot} é o último \emph{commit} da \emph{branch} principal com data dentro da era, percorrida pela linha do primeiro pai \cite{git:firstparent}. Em E4, por ser a era em curso, o \emph{snapshot} é o estado da \emph{branch} principal registrado em outubro de 2026.
+
+As métricas foram extraídas de cada \emph{snapshot} com a ferramenta CK 0.7.1-SNAPSHOT (revisão \texttt{8a1ef916}) \cite{aniche:ck}, que analisa o código-fonte sem compilar nem executar os projetos. Para cada \emph{snapshot}, calculou-se a média entre as classes das sete medidas descritas na Seção~\ref{sec:fund}, que são CBO, RFC, WMC, DIT, NOC, LCOM* e LOC/método. Classes com LCOM* indefinido não entram no cálculo da média dessa métrica.
+
+Também se registrou o tamanho do código de cada \emph{snapshot}, dado pelo número de arquivos Java e pelo de linhas de código (LOC), contadas sem linhas vazias ou apenas de comentário \cite{park:1992:size}. Não há tamanho mínimo para inclusão, e falhas de extração nunca são convertidas em zero.
+
+Por fim, mantiveram-se apenas os repositórios com medição válida em todas as eras de seu grupo (CI6), de modo que as comparações entre eras usem sempre os mesmos repositórios. Dos 634 aprovados na curadoria, saíram 97, sendo 78 sem \emph{commit} na \emph{branch} principal em alguma era anterior a E4, 16 sem classes Java em alguma era e 3 por falha na extração. Restaram 537 repositórios, 20 pioneiros e 517 principais.
+
+\textbf{Detecção de IA.} Em cada \emph{snapshot}, procuraram-se os vestígios de uso de agentes de IA descritos por Robbes et al.\ (2026)\nocite{robbes:26}, que são arquivos e diretórios de configuração de agentes (como GitHub Copilot, Cursor, Claude Code e Codex), entradas correspondentes no arquivo \texttt{.gitignore}, contas de agentes como autoras de \emph{commits} e marcas de coautoria (\texttt{Co-authored-by}) nas mensagens dos \emph{commits} até aquele \emph{snapshot}. Os repositórios com ao menos um vestígio em E4 formam o grupo \textbf{com IA}, e os demais, o grupo \textbf{sem IA}. A ausência de vestígio não comprova que a IA não foi usada, apenas que seu uso não deixou os registros procurados.
+
+\textbf{Análise.} A análise utilizou estatística descritiva. Para cada grupo e era, calcularam-se o mínimo, a média, a mediana e o máximo de cada métrica CK e do tamanho do código entre os repositórios, cada repositório com o mesmo peso. A evolução foi descrita pela diferença entre as eras nos mesmos repositórios, e os grupos com IA e sem IA foram comparados em cada era.

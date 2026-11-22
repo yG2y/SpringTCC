@@ -98,10 +98,11 @@ histórico.
    porte físico entre os estratos.
 7. **Rigor científico, tabelas e síntese descritiva (`06_tabelas_artigo/`):** não
    inventar fundamentação científica; reportar estatística estritamente descritiva
-   (médias com peso igual por repositório e diferenças pareadas exatas sobre os
-   mesmos sistemas, sem p-valores ou delta de Cliff). Gerar as tabelas LaTeX de
+   (mínimo, média, mediana e máximo entre repositórios por era, cada um com
+   peso igual, e diferenças entre eras sobre os mesmos sistemas, sem p-valores ou delta de Cliff). Gerar as tabelas LaTeX de
    `Artigo/Generated/` deterministicamente via `gerar_tabelas_artigo.py` a partir dos
-   CSVs validados, seguindo o padrão tabular aberto (IBGE) e indicação de `Fonte:`.
+   CSVs validados, seguindo o padrão tabular aberto (IBGE), sem linha de `Fonte:` para elaboração
+   própria (orientação do TCC II em 19/11/2026).
    Manter o corpo textual do artigo (Título até o fim da Conclusão, Seção 7) em **no máximo 15
    páginas**, conforme diretriz do TCC II da Engenharia de Software da PUC Minas.
 8. **Preservação histórica e segurança operacional:** preservar integralmente todas

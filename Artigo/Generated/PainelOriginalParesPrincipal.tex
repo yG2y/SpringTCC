@@ -1,38 +1,21 @@
-% Tabelas longitudinais estritas do grupo principal (517 repositorios validos em E2-E4)
 \begin{table}[htbp]
 \centering\footnotesize
-\caption{Grupo principal (criados entre 2014 e 2017, $n = 517$): médias das métricas CK dos mesmos 517 repositórios válidos em E2, E3 e E4.}
+\caption{Grupo principal ($n = 517$): estatísticas das métricas CK por era.}
 \label{tab:valores_principal}
-\begin{tabular}{lrrr}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{l|rrr|rrr|rrr|rrr}
 \hline
-\textbf{Métrica} & \textbf{E2} & \textbf{E3} & \textbf{E4} \\ \hline
-CBO & 5,434 & 5,621 & 5,688 \\
-RFC & 6,736 & 7,307 & 7,636 \\
-WMC & 5,838 & 5,799 & 5,777 \\
-LOC/método & 5,284 & 5,408 & 5,522 \\
-DIT & 1,218 & 1,222 & 1,219 \\
-NOC & 0,058 & 0,063 & 0,062 \\
-LCOM* & 0,245 & 0,242 & 0,236 \\
+ & \multicolumn{3}{|c}{\textbf{Mínimo}} & \multicolumn{3}{|c}{\textbf{Média}} & \multicolumn{3}{|c}{\textbf{Mediana}} & \multicolumn{3}{|c}{\textbf{Máximo}} \\
+\cline{2-4}\cline{5-7}\cline{8-10}\cline{11-13}
+\textbf{Métrica} & \textbf{E2} & \textbf{E3} & \textbf{E4} & \textbf{E2} & \textbf{E3} & \textbf{E4} & \textbf{E2} & \textbf{E3} & \textbf{E4} & \textbf{E2} & \textbf{E3} & \textbf{E4} \\ \hline
+CBO & 1,308 & 1,917 & 1,917 & 5,434 & 5,621 & 5,688 & 5,292 & 5,496 & 5,528 & 12,867 & 15,000 & 16,600 \\
+RFC & 0,000 & 0,333 & 0,333 & 6,736 & 7,307 & 7,636 & 6,111 & 6,700 & 6,941 & 41,000 & 35,944 & 51,052 \\
+WMC & 0,667 & 0,800 & 0,667 & 5,838 & 5,799 & 5,777 & 4,786 & 4,891 & 4,910 & 39,769 & 42,583 & 40,948 \\
+LOC/método & 2,000 & 2,571 & 2,571 & 5,284 & 5,408 & 5,522 & 4,979 & 5,136 & 5,216 & 17,688 & 17,312 & 17,312 \\
+DIT & 1,000 & 1,000 & 1,000 & 1,218 & 1,222 & 1,219 & 1,171 & 1,182 & 1,180 & 2,500 & 2,000 & 2,000 \\
+NOC & 0,000 & 0,000 & 0,000 & 0,058 & 0,063 & 0,062 & 0,000 & 0,020 & 0,019 & 0,732 & 0,977 & 0,494 \\
+LCOM* & 0,000 & 0,000 & 0,000 & 0,245 & 0,242 & 0,236 & 0,241 & 0,236 & 0,233 & 0,762 & 0,591 & 0,591 \\
 \hline
-\end{tabular}
-\par\vspace{2pt}{\footnotesize Fonte: Elaborada pelos autores (2026).}
-\end{table}
-
-\begin{table}[htbp]
-\centering\footnotesize
-\caption{Grupo principal (criados entre 2014 e 2017, $n = 517$): diferenças das médias entre E2, E3 e E4 nos mesmos 517 repositórios válidos.}
-\label{tab:diferencas_principal}
-\begin{tabular}{lrrr}
-\hline
-\textbf{Métrica} & \textbf{(E3 $-$ E2)} & \textbf{(E4 $-$ E3)} & \textbf{(E4 $-$ E2)} \\ \hline
-CBO & $+$0,187 & $+$0,067 & $+$0,254 \\
-RFC & $+$0,571 & $+$0,329 & $+$0,900 \\
-WMC & $-$0,039 & $-$0,023 & $-$0,061 \\
-LOC/método & $+$0,125 & $+$0,114 & $+$0,239 \\
-DIT & $+$0,005 & $-$0,004 & $+$0,001 \\
-NOC & $+$0,005 & $-$0,001 & $+$0,004 \\
-LCOM* & $-$0,003 & $-$0,006 & $-$0,008 \\
-\hline
-\end{tabular}
-\par\vspace{2pt}{\footnotesize Fonte: Elaborada pelos autores (2026). Nota: diferenças calculadas antes do arredondamento.}
+\end{tabular}}
+\par\vspace{2pt}{\footnotesize Nota: estatísticas entre repositórios; cada repositório é representado pela média de suas classes. NOC igual a zero indica repositório sem subclasses entre suas próprias classes.}
 \end{table}

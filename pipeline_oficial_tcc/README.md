@@ -44,7 +44,8 @@ pipeline_oficial_tcc/
 │   ├── resultado_deteccao_ia_validos.csv  # 88 com evidência vs. 449 sem evidência em E4
 │   └── deteccao_ia_manifest.json
 └── 06_tabelas_artigo/
-    └── gerar_tabelas_artigo.py            # Gera Artigo/Generated/*.tex
+    ├── gerar_tabelas_artigo.py            # Gera tabelas (eras em colunas), comparações entre eras e boxplots
+    └── estatisticas_descritivas.json      # Estatísticas citadas no texto do artigo
 ```
 
 Dados brutos da execução (clones bare, extrações por classe e por método, evidências de

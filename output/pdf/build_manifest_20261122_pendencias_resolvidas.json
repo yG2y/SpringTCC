@@ -1,0 +1,87 @@
+{
+  "file": "Article.pdf",
+  "archive_copy": "Article_20261122_pendencias_resolvidas.pdf",
+  "pdf_sha256": "f662a6a68cb01a4849ccf9f6d1db884e52bb67058c82ec5d49f525faa3440003",
+  "pages_total": 17,
+  "pages_main_body": 15,
+  "pages_main_body_scope": "Titulo ate o Pacote de Replicacao (secao nao numerada); Conclusao termina na pagina 15",
+  "compiler": "Tectonic 0.17.0 (macOS arm64)",
+  "compiled": true,
+  "compiled_at": "2026-11-22T19:32:51.544155+00:00",
+  "title": "Evolução da Qualidade Estrutural de Projetos Spring Boot: uma análise longitudinal",
+  "pipeline": "pipeline_oficial_tcc (executado de ponta a ponta em 13/11/2026)",
+  "extraction_run": "Instrumentos/Codigos/Artefatos/evolucao_spring/runs/20261113_pipeline_oficial_785",
+  "activity_window_e4": "pushed_at >= 2022-01-01T00:00:00Z",
+  "star_filter": "none",
+  "e4_rule": "tip fixado da branch principal; sem exigir commit datado em E4",
+  "ai_pattern_amendment": {
+    "coauthor": {
+      "GitHub Copilot": [
+        "copilot@users.noreply.github.com"
+      ]
+    },
+    "gitignore": {
+      "Claude Code": [
+        ".claude"
+      ],
+      "Cursor": [
+        ".cursor"
+      ]
+    }
+  },
+  "candidates_evaluated": 785,
+  "curation_approved_repos": 634,
+  "valid_final_repos": 537,
+  "valid_pioneer_group_e1_to_e4": 20,
+  "valid_main_group_e2_to_e4": 517,
+  "valid_ck_snapshots_total": 1631,
+  "excluded_incomplete_longitudinal": {
+    "total": 97,
+    "erro_de_extracao_ck": 2,
+    "extracao_ck_parcial": 1,
+    "sem_classes_java_mensuraveis": 16,
+    "sem_commit_na_linha_principal_em_alguma_era": 78
+  },
+  "valid_with_e4_sha_equal_e3": 150,
+  "e4_ai_classification": {
+    "com_evidencia": 88,
+    "sem_evidencia_detectada": 449
+  },
+  "summary_statistic": "arithmetic_mean",
+  "visual_check": "Paginas 5, 6 e 7 (Figura 1, Secao 4.1 e Tabela 1) inspecionadas visualmente; demais paginas conferidas por extracao de texto. Compilacao sem erros, referencias indefinidas ou caixas estouradas.",
+  "previous_versions": [
+    "Article_tcc2_pucminas_20261101.pdf",
+    "Article_20261113_painel554.pdf"
+  ],
+  "sources": {
+    "Artigo/Article.tex": "3a2e0afe809ac3cb7042689d1b82c814fa2158d09156e729bae3e1ba837abfc5",
+    "Artigo/Generated/PainelOriginal.tex": "8c697e4fc5587da2b05d2517daf2d1b2666ad8ec505ad5b295d6d71d13716846",
+    "Artigo/Generated/PainelOriginalCobertura.tex": "5bb69697ed76c668d0f3a60a51613fdc2765a99054dbc072c2c4b8a434651eed",
+    "Artigo/Generated/PainelOriginalIA.tex": "9e376cffce7d839d5eb5744e4e6d22ca0418aa320d1bb56b151dbd46fd2e14a9",
+    "Artigo/Generated/PainelOriginalPares.tex": "a1c008fc144b19a8244be666ad1410934fe32360fab3bcd2f9d575e528ed16f4",
+    "Artigo/Generated/PainelOriginalParesPioneiro.tex": "42ff06f922a7e0400bfa81cb6fac79b56fa92d6c5318be9138a675cb93709330",
+    "Artigo/Generated/PainelOriginalParesPrincipal.tex": "3dbcd7fdb7631b45d0d36ba5a5b693a4036320a29dd4fdf313da521ee66cbb4a",
+    "Artigo/Sections/01_Introducao.tex": "df6598c7e35cd8bb2f41cfb590f918787911b449cbb7c79f70833e0b478f6aca",
+    "Artigo/Sections/02_Fundamentacao_Teorica.tex": "95a805075132ac80a2981f2dc0d9033702d5f5b964122cda15c7ea19ded9a6c4",
+    "Artigo/Sections/03_Trabalhos_Relacionados.tex": "cb4c24d7cc9361d240d329369790033f09aabe557460d31258f8684ecf937a97",
+    "Artigo/Sections/04_Metodo_Base_Original.tex": "e7d29649dea3361f1ad9e58ff6a4d65e087f525bbe747bdbf61a4cc78c6bfb3c",
+    "Artigo/Sections/05_Painel_Base_Original.tex": "4613cd7dfaf2198f72cc8c539242aca3e6b2795e8bee4e072739d8e9c3e96f05",
+    "Artigo/Sections/06_Ameacas_Validade.tex": "b97e17bd794697d4b5458253e19bf619711527a2448cbc8633a6d784c010c046",
+    "Artigo/Sections/06_Conclusao_Base_Original.tex": "143898c3af63ff8031ebad552bed69f1892b1fb95ada39c802e870a7d2fc8e28",
+    "Artigo/Sections/07_Pacote_Replicacao.tex": "e943e9ae979af2e94e2cf4bde8439be461473a130f3fe4b8d72ee0c5ffb4f6d3",
+    "Artigo/imgs/processo_metodologico.html": "dd8f0dc8d5be88d37f4035ed5c169e52b3bbf98a2d49a71f502ebb9e95885de3",
+    "Artigo/imgs/processo_metodologico.png": "fff778bf47d2e6664a2d2611b1e33e0c5791e8c0f2fa73faf9e32064567da40c",
+    "Artigo/sbc-template.bib": "0557f319b17fdff7be5915586394bf565b9c4ffc58a8649d6c58c8b9aae1fabe",
+    "Artigo/sbc-template.sty": "e3ecea78337f54e6f363438f05f304ee37d456737050a0b37c1b6f1abbdeef55"
+  },
+  "data": {
+    "pipeline_oficial_tcc/04_extracao_ck/measurements_785_candidatos.csv": "d683b1891daf99966cbbde3544f2909a807871e1c55005bd8431650374f775ad",
+    "pipeline_oficial_tcc/04_extracao_ck/repositorios_validos.csv": "04976ca4f86eb4f72448e27acbae2a97d384819fe351e06db87d52bc36a4ddf9",
+    "pipeline_oficial_tcc/04_extracao_ck/measurements_validos.csv": "23abd7b244b164224e7b032a22e1165215cf09eb2cc7f06e280f4256e0f3b4cd",
+    "pipeline_oficial_tcc/03_higienizacao_reporeaper/reporeaper_results.csv": "63ed7cb35afbc3bec2bb779fe4c8336451d03d96a7cefecb9374043c27f58996",
+    "pipeline_oficial_tcc/03_higienizacao_reporeaper/evidencias_build_testes.csv": "b61e291295329d4a09d4a6361adbe36947fb6ce2e77b6af61719dca2ce5913b7",
+    "pipeline_oficial_tcc/05_deteccao_ia/resultado_deteccao_ia_validos.csv": "0854eae973fbc54e045c69c59b5f94eed62bfd0f9270252eda319499e871d0e6"
+  },
+  "pages_references": "14-15",
+  "revision_note": "Revisao de 22/11/2026: etapas da Secao 4 em negrito, metricas so por nome, sem tabela de etapas, Secao 2 em texto corrido, descricao dos quatro criterios reformulada; corpo dentro do limite de 15 paginas."
+}

@@ -1,38 +1,21 @@
-% Tabelas longitudinais estritas do grupo pioneiro (20 repositorios validos em E1-E4)
 \begin{table}[htbp]
 \centering\footnotesize
-\caption{Grupo pioneiro (criados até 2013, $n = 20$): médias das métricas CK dos mesmos 20 repositórios válidos em E1, E2, E3 e E4.}
+\caption{Grupo pioneiro ($n = 20$): estatísticas das métricas CK por era.}
 \label{tab:valores_pioneiro}
-\begin{tabular}{lrrrr}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{l|rrrr|rrrr|rrrr|rrrr}
 \hline
-\textbf{Métrica} & \textbf{E1} & \textbf{E2} & \textbf{E3} & \textbf{E4} \\ \hline
-CBO & 4,769 & 5,246 & 5,475 & 5,666 \\
-RFC & 7,624 & 8,346 & 9,032 & 9,994 \\
-WMC & 7,845 & 7,802 & 7,795 & 7,076 \\
-LOC/método & 6,649 & 6,115 & 6,230 & 6,347 \\
-DIT & 1,425 & 1,379 & 1,396 & 1,365 \\
-NOC & 0,079 & 0,069 & 0,100 & 0,087 \\
-LCOM* & 0,287 & 0,266 & 0,269 & 0,243 \\
+ & \multicolumn{4}{|c}{\textbf{Mínimo}} & \multicolumn{4}{|c}{\textbf{Média}} & \multicolumn{4}{|c}{\textbf{Mediana}} & \multicolumn{4}{|c}{\textbf{Máximo}} \\
+\cline{2-5}\cline{6-9}\cline{10-13}\cline{14-17}
+\textbf{Métrica} & \textbf{E1} & \textbf{E2} & \textbf{E3} & \textbf{E4} & \textbf{E1} & \textbf{E2} & \textbf{E3} & \textbf{E4} & \textbf{E1} & \textbf{E2} & \textbf{E3} & \textbf{E4} & \textbf{E1} & \textbf{E2} & \textbf{E3} & \textbf{E4} \\ \hline
+CBO & 2,250 & 2,835 & 2,500 & 2,500 & 4,769 & 5,246 & 5,475 & 5,666 & 4,789 & 5,054 & 5,311 & 5,519 & 10,500 & 8,830 & 9,052 & 9,965 \\
+RFC & 1,000 & 2,750 & 2,333 & 2,500 & 7,624 & 8,346 & 9,032 & 9,994 & 7,708 & 7,873 & 8,447 & 9,423 & 11,795 & 14,407 & 16,301 & 18,687 \\
+WMC & 1,667 & 1,750 & 1,500 & 1,000 & 7,845 & 7,802 & 7,795 & 7,076 & 6,888 & 6,722 & 6,602 & 6,772 & 18,308 & 18,000 & 17,306 & 17,936 \\
+LOC/método & 3,200 & 3,143 & 3,000 & 2,833 & 6,649 & 6,115 & 6,230 & 6,347 & 5,984 & 5,719 & 5,924 & 6,210 & 14,226 & 11,116 & 11,517 & 10,996 \\
+DIT & 1,000 & 1,000 & 1,000 & 1,000 & 1,425 & 1,379 & 1,396 & 1,365 & 1,363 & 1,338 & 1,366 & 1,307 & 2,042 & 2,176 & 2,107 & 2,111 \\
+NOC & 0,000 & 0,000 & 0,000 & 0,000 & 0,079 & 0,069 & 0,100 & 0,087 & 0,072 & 0,053 & 0,087 & 0,070 & 0,269 & 0,236 & 0,290 & 0,275 \\
+LCOM* & 0,111 & 0,083 & 0,056 & 0,000 & 0,287 & 0,266 & 0,269 & 0,243 & 0,290 & 0,251 & 0,255 & 0,243 & 0,569 & 0,447 & 0,466 & 0,468 \\
 \hline
-\end{tabular}
-\par\vspace{2pt}{\footnotesize Fonte: Elaborada pelos autores (2026).}
-\end{table}
-
-\begin{table}[htbp]
-\centering\footnotesize
-\caption{Grupo pioneiro (criados até 2013, $n = 20$): diferenças das médias de E1 em relação às eras subsequentes nos mesmos 20 repositórios válidos.}
-\label{tab:diferencas_pioneiro}
-\begin{tabular}{lrrr}
-\hline
-\textbf{Métrica} & \textbf{(E2 $-$ E1)} & \textbf{(E3 $-$ E1)} & \textbf{(E4 $-$ E1)} \\ \hline
-CBO & $+$0,476 & $+$0,706 & $+$0,897 \\
-RFC & $+$0,722 & $+$1,408 & $+$2,370 \\
-WMC & $-$0,043 & $-$0,050 & $-$0,769 \\
-LOC/método & $-$0,534 & $-$0,419 & $-$0,302 \\
-DIT & $-$0,046 & $-$0,030 & $-$0,061 \\
-NOC & $-$0,011 & $+$0,020 & $+$0,008 \\
-LCOM* & $-$0,021 & $-$0,018 & $-$0,044 \\
-\hline
-\end{tabular}
-\par\vspace{2pt}{\footnotesize Fonte: Elaborada pelos autores (2026). Nota: diferenças calculadas antes do arredondamento.}
+\end{tabular}}
+\par\vspace{2pt}{\footnotesize Nota: estatísticas entre repositórios; cada repositório é representado pela média de suas classes. NOC igual a zero indica repositório sem subclasses entre suas próprias classes.}
 \end{table}

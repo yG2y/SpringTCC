@@ -1,0 +1,18 @@
+\begin{table}[htbp]
+\centering\footnotesize
+\caption{Repositórios com IA ($n = 88$) e sem IA ($n = 449$): tamanho do código por era.}
+\label{tab:porte_ia}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{ll|rrrr|rrrr|rrrr|rrrr}
+\hline
+ &  & \multicolumn{4}{|c}{\textbf{Mínimo}} & \multicolumn{4}{|c}{\textbf{Média}} & \multicolumn{4}{|c}{\textbf{Mediana}} & \multicolumn{4}{|c}{\textbf{Máximo}} \\
+\cline{3-6}\cline{7-10}\cline{11-14}\cline{15-18}
+\textbf{Grupo} & \textbf{Medida} & \textbf{E1} & \textbf{E2} & \textbf{E3} & \textbf{E4} & \textbf{E1} & \textbf{E2} & \textbf{E3} & \textbf{E4} & \textbf{E1} & \textbf{E2} & \textbf{E3} & \textbf{E4} & \textbf{E1} & \textbf{E2} & \textbf{E3} & \textbf{E4} \\ \hline
+Com IA & Arquivos Java & 12 & 1 & 2 & 2 & 1.955 & 614 & 850 & 1.274 & 566 & 50 & 72 & 102 & 10.022 & 17.661 & 18.445 & 25.490 \\
+ & LOC & 231 & 12 & 30 & 30 & 107.070 & 43.847 & 62.068 & 105.537 & 31.712 & 2.666 & 3.826 & 5.517 & 559.664 & 1.252.521 & 1.661.096 & 2.338.447 \\[3pt]
+Sem IA & Arquivos Java & 1 & 2 & 2 & 2 & 226 & 91 & 136 & 148 & 67 & 31 & 49 & 50 & 1.948 & 2.770 & 3.055 & 3.055 \\
+ & LOC & 43 & 21 & 24 & 30 & 15.505 & 4.560 & 7.079 & 7.863 & 5.469 & 1.246 & 1.942 & 2.025 & 130.528 & 182.475 & 197.126 & 206.732 \\
+\hline
+\end{tabular}}
+\par\vspace{2pt}{\footnotesize Nota: E1 foi medida apenas nos repositórios criados até 2013 (9 com IA e 11 sem IA).}
+\end{table}
