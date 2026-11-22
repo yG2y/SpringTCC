@@ -1,7 +1,7 @@
 \section{Resultados}
 \label{sec:resultados}
 
-Esta seção apresenta os resultados obtidos com a aplicação do método proposto na Seção~\ref{sec:metodologia}. Inicialmente, caracterizam-se os repositórios analisados. Em seguida, descreve-se a evolução das métricas CK nos grupos pioneiro e principal e comparam-se os repositórios com e sem IA.
+Esta seção apresenta os resultados obtidos com a aplicação do método proposto na Seção~\ref{sec:metodologia}. Inicialmente, caracterizam-se os repositórios analisados. Em seguida, descreve-se a evolução das métricas CK nos grupos pioneiro e principal e comparam-se os repositórios com e sem IA. Por fim, os resultados são sumarizados em relação aos objetivos.
 
 \subsection{Caracterização dos repositórios analisados}
 
@@ -52,15 +52,14 @@ Por fim, a Tabela~\ref{tab:porte_ia} apresenta o tamanho do código dos dois gru
 
 \input{Generated/PainelOriginalPorteIA}
 
-% Seção 5.4 mantida comentada por orientação do TCC II (limite de páginas); pode ser reativada futuramente.
-% \subsection{Sumarização dos resultados}
-% \label{subsec:sumarizacao}
-%
-% Os resultados apresentados permitem responder aos objetivos do trabalho:
-%
-% \begin{itemize}
-%     \item \textbf{Objetivo geral, avaliar a evolução da qualidade estrutural de projetos Spring Boot por meio de métricas CK, comparando projetos com e sem evidências de uso de IA:} alcançado. Foram analisados 537 repositórios em 1.631 \emph{snapshots}. Ao longo das eras, o acoplamento e a resposta por classe cresceram, a complexidade e a falta de coesão não aumentaram na média e a herança ficou estável; na era E4, os projetos com IA mostraram mais acoplamento e complexidade que os sem IA, em bases de código maiores.
-%     \item \textbf{Objetivo (i), mensurar o acoplamento, a resposta, a complexidade, o tamanho de métodos, a herança e a coesão de repositórios ao longo de diferentes eras:} alcançado. Entre a primeira e a última era, a média do CBO variou $+0{,}897$ no grupo pioneiro e $+0{,}254$ no principal; a do RFC, $+2{,}370$ e $+0{,}900$; a do WMC, $-0{,}769$ e $-0{,}061$; a do LCOM*, $-0{,}044$ e $-0{,}008$; a do LOC/método, $-0{,}302$ e $+0{,}239$; a do DIT, $-0{,}061$ e $+0{,}001$; e a do NOC, $+0{,}008$ e $+0{,}004$.
-%     \item \textbf{Objetivo (ii), caracterizar o tamanho do código dos repositórios em cada era:} alcançado. A mediana de LOC passou de 6.888 para 33.071 no grupo pioneiro (E1 a E4) e de 1.308 para 2.213 no principal (E2 a E4), e a de arquivos Java, de 110 para 506 e de 34 para 54. O aumento de CBO e RFC ocorreu, portanto, junto ao crescimento dos projetos.
-%     \item \textbf{Objetivo (iii), comparar as métricas CK entre repositórios criados em períodos distintos e entre repositórios com e sem evidências de uso de IA:} alcançado. Os grupos pioneiro e principal variaram na mesma direção, com variações maiores no pioneiro. Em E4, os 88 repositórios com IA tiveram médias maiores de CBO (6,116 contra 5,603), RFC (9,632 contra 7,350) e WMC (6,975 contra 5,600) que os 449 sem IA, com coesão e herança próximas, em bases de código maiores (mediana de 5.517 contra 2.025 LOC) e que já eram mais acopladas em E3 (CBO de 5,899 contra 5,560).
-% \end{itemize}
+\subsection{Sumarização dos resultados}
+\label{subsec:sumarizacao}
+
+Os resultados apresentados permitem responder aos objetivos do trabalho:
+
+\begin{itemize}
+    \item \textbf{Objetivo geral, avaliar a evolução da qualidade estrutural de projetos Spring Boot por meio de métricas CK, comparando projetos com e sem evidências de uso de IA:} alcançado. Ao longo das eras, o acoplamento e a resposta por classe cresceram, a complexidade e a falta de coesão não aumentaram na média e a herança ficou estável; na era E4, os projetos com IA mostraram mais acoplamento e complexidade que os sem IA, em bases de código maiores.
+    \item \textbf{Objetivo (i), mensurar o acoplamento, a resposta, a complexidade, o tamanho de métodos, a herança e a coesão de repositórios ao longo de diferentes eras:} alcançado. Entre a primeira e a última era, a média do CBO variou $+0{,}897$ no grupo pioneiro e $+0{,}254$ no principal; a do RFC, $+2{,}370$ e $+0{,}900$; a do WMC, $-0{,}769$ e $-0{,}061$; a do LCOM*, $-0{,}044$ e $-0{,}008$; a do LOC/método, $-0{,}302$ e $+0{,}239$; a do DIT, $-0{,}061$ e $+0{,}001$; e a do NOC, $+0{,}008$ e $+0{,}004$.
+    \item \textbf{Objetivo (ii), caracterizar o tamanho do código dos repositórios em cada era:} alcançado. A mediana de LOC passou de 6.888 para 33.071 no grupo pioneiro (E1 a E4) e de 1.308 para 2.213 no principal (E2 a E4), e a de arquivos Java, de 110 para 506 e de 34 para 54. O aumento de CBO e RFC ocorreu, portanto, junto ao crescimento dos projetos.
+    \item \textbf{Objetivo (iii), comparar as métricas CK entre repositórios criados em períodos distintos e entre repositórios com e sem evidências de uso de IA:} alcançado. Os grupos pioneiro e principal variaram na mesma direção, com variações maiores no pioneiro. Em E4, os 88 repositórios com IA tiveram médias maiores de CBO (6,116 contra 5,603), RFC (9,632 contra 7,350) e WMC (6,975 contra 5,600) que os 449 sem IA, com coesão e herança próximas, em bases de código maiores (mediana de 5.517 contra 2.025 LOC) e que já eram mais acopladas em E3 (CBO de 5,899 contra 5,560).
+\end{itemize}
