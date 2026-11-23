@@ -12,32 +12,28 @@ Este estudo analisa repositórios públicos de projetos Spring Boot no GitHub e 
 
 \textbf{Coleta.} A coleta reuniu os repositórios públicos do GitHub marcados com o tópico \texttt{spring-boot}, por meio da API REST de busca, em setembro de 2026. Como a API devolve no máximo mil resultados por consulta, a busca foi dividida por períodos de data de criação e, quando necessário, por faixas de número de estrelas, sem descartar registros. Foram obtidos 95.894 repositórios únicos, com os metadados usados na etapa seguinte, que são a linguagem principal, as datas de criação e de último envio de código, o número de estrelas e os indicadores de \emph{fork}, arquivamento e \emph{template}.
 
-\textbf{Filtragem.} A filtragem aplicou aos metadados coletados os critérios de inclusão e de exclusão. A Tabela~\ref{tab:criterios} apresenta todos os critérios do estudo, com a etapa em que cada um foi aplicado, sua justificativa e a quantidade de repositórios que não o atenderam.
+\textbf{Filtragem.} A filtragem aplicou aos metadados coletados os critérios de inclusão e de exclusão. A Tabela~\ref{tab:criterios} apresenta todos os critérios do estudo na ordem em que foram aplicados, com a etapa, a justificativa e a quantidade de repositórios removidos e restantes após cada um. Dos 95.894 repositórios coletados, restaram 785 após a filtragem, sendo 22 criados de 2009 a 2013 e 763 criados de 2014 a 2017, que seguiram para a curadoria.
 
 \begin{table}[!t]
 \centering\footnotesize
-\caption{Critérios de inclusão (CI) e de exclusão (CE) dos repositórios e quantidade de repositórios que não atenderam a cada um.}
+\caption{Critérios de inclusão (CI) e de exclusão (CE) na ordem em que foram aplicados, com a quantidade de repositórios removidos e restantes.}
 \label{tab:criterios}
-\begin{tabularx}{\linewidth}{llXXr}
+\begin{tabularx}{\linewidth}{llXXrr}
 \hline
-\textbf{Id.} & \textbf{Etapa} & \textbf{Critério} & \textbf{Justificativa} & \textbf{Não atenderam} \\ \hline
-CI1 & Filtragem & Linguagem principal Java & A ferramenta CK mede apenas código Java & 23.298 \\
-CI2 & Filtragem & Criado até 31 de dezembro de 2017 & Garante histórico em pelo menos três eras & 51.634 \\
-CI3 & Filtragem & Envio de código a partir de 1\textsuperscript{o} de janeiro de 2022 & Garante que o projeto permanece ativo na era mais recente & 16.615 \\
-CI4 & Curadoria & Arquivo de \emph{build} (Maven ou Gradle) & Indica projeto construído de forma automatizada & 6 \\
-CI5 & Curadoria & Testes automatizados & Indica prática mínima de engenharia de \emph{software} & 116 \\
-CI6 & Extração CK & Medição válida em todas as eras do grupo & Permite comparar os mesmos repositórios entre as eras & 97 \\ \hline
-CE1 & Filtragem & \emph{Fork} ou espelho de outro repositório & Evita medir o mesmo código mais de uma vez & 1.089 \\
-CE2 & Filtragem & Arquivado ou desabilitado & Projeto sem manutenção & 1.607 \\
-CE3 & Filtragem & \emph{Template}, vazio ou lista de exercícios & Não contém um sistema a ser medido & 866 \\
-CE4 & Curadoria & Finalidade didática & Não representa um projeto de engenharia de \emph{software} & 20 \\
-CE5 & Curadoria & Projeto de brinquedo & Não representa um projeto de engenharia de \emph{software} & 17 \\
+\textbf{Id.} & \textbf{Etapa} & \textbf{Critério} & \textbf{Justificativa} & \textbf{Removidos} & \textbf{Restaram} \\ \hline
+-- & Coleta & Tópico \texttt{spring-boot} no GitHub & Delimita os projetos Spring Boot & -- & 95.894 \\
+CI1 & Filtragem & Linguagem principal Java & A ferramenta CK mede apenas código Java & 23.298 & 72.596 \\
+CE1 & Filtragem & \emph{Fork} ou espelho de outro repositório & Evita medir o mesmo código mais de uma vez & 1.089 & 71.507 \\
+CE2 & Filtragem & Arquivado ou desabilitado & Projeto sem manutenção & 1.607 & 69.900 \\
+CI3 & Filtragem & Envio de código a partir de 1\textsuperscript{o} de janeiro de 2022 & Garante que o projeto permanece ativo na era mais recente & 16.615 & 53.285 \\
+CE3 & Filtragem & \emph{Template}, vazio ou lista de exercícios & Não contém um sistema a ser medido & 866 & 52.419 \\
+CI2 & Filtragem & Criado até 31 de dezembro de 2017 & Garante histórico em pelo menos três eras & 51.634 & 785 \\
+-- & Curadoria & Quatro regras ao mesmo tempo (CE4, CE5, CI4 e CI5) & Mantém apenas projetos de engenharia de \emph{software} & 151 & 634 \\
+CI6 & Extração CK & Medição válida em todas as eras do grupo & Permite comparar os mesmos repositórios entre as eras & 97 & 537 \\
 \hline
 \end{tabularx}
-\par\vspace{2pt}{\footnotesize Nota: na filtragem, cada repositório foi contado no primeiro critério que não atendeu, na ordem CI1, CE1, CE2, CI3, CE3 e CI2; na curadoria, um mesmo repositório pode não atender a mais de um critério.}
+\par\vspace{2pt}{\footnotesize Nota: na filtragem, cada repositório foi contado no primeiro critério que não atendeu, na ordem das linhas; na curadoria, as quatro regras são avaliadas ao mesmo tempo.}
 \end{table}
-
-Após a filtragem, restaram 785 repositórios, sendo 22 criados de 2009 a 2013 e 763 criados de 2014 a 2017, que seguiram para a curadoria.
 
 \textbf{Curadoria.} A curadoria removeu os repositórios que não aparentam ser projetos de engenharia de \emph{software}, ideia proposta por Munaiah et al.\ (2017)\nocite{munaiah:17} e recomendada para estudos com dados do GitHub \cite{kalliamvakou:16}. As quatro regras a seguir são próprias deste trabalho e mais simples que o classificador daqueles autores. Um repositório só é aprovado se atender às quatro ao mesmo tempo, e a contagem ao final de cada regra indica quantos dos 785 repositórios a atendem quando ela é considerada isoladamente.
 
@@ -61,9 +57,7 @@ Os dois últimos critérios foram verificados nos arquivos do estado atual de ca
 
 Um repositório só pode ser medido nas eras em que já existia. Por isso, os repositórios foram divididos em dois grupos conforme o ano de criação, o \textbf{grupo pioneiro}, criado de 2009 a 2013 e medido em E1, E2, E3 e E4, e o \textbf{grupo principal}, criado de 2014 a 2017 e medido em E2, E3 e E4. Em E1, E2 e E3, o \emph{snapshot} é o último \emph{commit} da \emph{branch} principal com data dentro da era, percorrida pela linha do primeiro pai \cite{git:firstparent}. Em E4, por ser a era em curso, o \emph{snapshot} é o estado da \emph{branch} principal registrado em outubro de 2026.
 
-As métricas foram extraídas de cada \emph{snapshot} com a ferramenta CK 0.7.1-SNAPSHOT (revisão \texttt{8a1ef916}) \cite{aniche:ck}, que analisa o código-fonte sem compilar nem executar os projetos. Para cada \emph{snapshot}, calculou-se a média entre as classes das sete medidas descritas na Seção~\ref{sec:fund}, que são CBO, RFC, WMC, DIT, NOC, LCOM* e LOC/método. Classes com LCOM* indefinido não entram no cálculo da média dessa métrica.
-
-Também se registrou o tamanho do código de cada \emph{snapshot}, dado pelo número de arquivos Java e pelo de linhas de código (LOC), contadas sem linhas vazias ou apenas de comentário \cite{park:1992:size}. Não há tamanho mínimo para inclusão, e falhas de extração nunca são convertidas em zero.
+As métricas foram extraídas de cada \emph{snapshot} com a ferramenta CK 0.7.1-SNAPSHOT (revisão \texttt{8a1ef916}) \cite{aniche:ck}, que analisa o código-fonte sem compilar nem executar os projetos. Para cada \emph{snapshot}, calculou-se a média entre as classes das sete medidas descritas na Seção~\ref{sec:fund}, que são CBO, RFC, WMC, DIT, NOC, LCOM* e LOC/método. Classes com LCOM* indefinido não entram no cálculo da média dessa métrica. Também se registrou o tamanho do código de cada \emph{snapshot}, dado pelo número de arquivos Java e pelo de linhas de código (LOC), contadas sem linhas vazias ou apenas de comentário \cite{park:1992:size}. Não há tamanho mínimo para inclusão, e falhas de extração nunca são convertidas em zero.
 
 Por fim, mantiveram-se apenas os repositórios com medição válida em todas as eras de seu grupo (CI6), de modo que as comparações entre eras usem sempre os mesmos repositórios. Dos 634 aprovados na curadoria, saíram 97, sendo 78 sem \emph{commit} na \emph{branch} principal em alguma era anterior a E4, 16 sem classes Java em alguma era e 3 por falha na extração. Restaram 537 repositórios, 20 pioneiros e 517 principais.
 
