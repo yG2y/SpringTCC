@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="slides-format" content="viewport">
-  <title>Proposta TCC - Complexidade Estrutural em Projetos Spring Boot</title>
+  <title>Evolução da Qualidade Estrutural de Projetos Spring Boot — Apresentação TCC II</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600;7..72,700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Literata:opsz,wght@7..72,400;7..72,600;7..72,700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
   <style type="text/tailwindcss">
@@ -17,8 +17,8 @@
       --color-bg-deep: #f0eeea;
       --color-surface: #ffffff;
       --color-text: #1a1a1a;
-      --color-text-secondary: rgba(0,0,0,0.72);
-      --color-text-muted: rgba(0,0,0,0.45);
+      --color-text-secondary: rgba(0,0,0,0.74);
+      --color-text-muted: rgba(0,0,0,0.50);
       --color-gqm: #ad5128;
       --color-method-1: #855644;
       --color-method-2: #874225;
@@ -26,11 +26,9 @@
       --color-accent-1: #ad5128;
       --color-accent-2: #855644;
       --color-accent-3: #874225;
-      --color-glass-bg: rgba(0,0,0,0.04);
-      --color-glass-border: rgba(0,0,0,0.10);
-      --color-vignette: rgba(255,255,255,0.35);
       --font-display: 'Literata', serif;
       --font-body: 'Source Sans 3', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
     }
   </style>
 
@@ -42,446 +40,1741 @@
     }
     *, *::before, *::after { box-sizing: border-box; }
     html, body { background: var(--color-bg); margin: 0; }
-    body { font-family: var(--font-body); color: var(--color-text); overflow: hidden; height: 100vh; width: 100vw; }
+    body {
+      font-family: var(--font-body);
+      color: var(--color-text);
+      overflow: hidden;
+      height: 100vh;
+      height: 100dvh;
+      width: 100vw;
+      width: 100dvw;
+    }
+    .visually-hidden:where(:not(:focus-within, :active)) {
+      position: absolute !important;
+      clip-path: inset(50%) !important;
+      overflow: hidden !important;
+      width: 1px !important;
+      height: 1px !important;
+      margin: -1px !important;
+      padding: 0 !important;
+      border: 0 !important;
+      white-space: nowrap !important;
+    }
     .deck-particle-canvas {
       position: fixed;
       inset: 0;
       width: 100vw;
+      width: 100dvw;
       height: 100vh;
       height: 100dvh;
       z-index: 0;
       pointer-events: none;
       display: block;
     }
-    .deck { width: 100vw; height: 100vh; position: relative; z-index: 1; background: transparent; }
-    .slide { position: absolute; inset: 0; width: 100%; height: 100%; background: transparent; display: flex; flex-direction: column; align-items: center; justify-content: center; opacity: 0; transform: scale(0.95); transition: opacity 0.7s ease, transform 0.7s ease; pointer-events: none; overflow: hidden; color: #1a1a1a; }
-    .slide.active { opacity: 1; transform: scale(1); pointer-events: all; }
-    .slide > .content { position: relative; z-index: 2; width: 100%; max-width: 1400px; padding: clamp(1rem, 2.5vw, 2.5rem); }
-    .nav-controls { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: 16px; z-index: 100; background: rgba(255,255,255,0.85); backdrop-filter: blur(12px); padding: 10px 24px; border-radius: 40px; border: 1px solid rgba(0,0,0,0.10); box-shadow: 0 10px 40px rgba(0,0,0,0.10); }
-    .nav-btn { width: 40px; height: 40px; border: none; background: rgba(0,0,0,0.06); color: var(--color-gqm); border-radius: 50%; font-size: 1.2rem; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.3s; }
-    .nav-btn:hover { background: rgba(0,0,0,0.12); }
-    .slide-dots { display: flex; gap: 8px; }
-    .slide-dots .dot { width: 10px; height: 10px; border-radius: 50%; background: rgba(0,0,0,0.15); cursor: pointer; transition: background 0.3s, transform 0.3s; }
-    .slide-dots .dot.active { background: var(--color-gqm); transform: scale(1.3); }
-    .slide-counter { font-size: 0.8rem; color: rgba(0,0,0,0.45); min-width: 46px; text-align: center; }
-    .reveal { opacity: 0; transform: translateY(20px); }
+    .section-rail {
+      position: fixed;
+      top: 14px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      background: rgba(255,255,255,0.82);
+      backdrop-filter: blur(12px);
+      padding: 5px 8px;
+      border-radius: 999px;
+      border: 1px solid rgba(0,0,0,0.09);
+      box-shadow: 0 6px 24px rgba(0,0,0,0.06);
+      max-width: calc(100dvw - 24px);
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .section-rail::-webkit-scrollbar { display: none; }
+    .sec-pill {
+      border: none;
+      background: transparent;
+      color: rgba(26,26,26,0.62);
+      font-family: var(--font-body);
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 5px 11px;
+      min-block-size: 28px;
+      border-radius: 999px;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
+    .sec-pill:hover { background: rgba(173,81,40,0.09); color: #1a1a1a; }
+    .sec-pill[aria-current="true"] {
+      background: #ad5128;
+      color: #ffffff;
+    }
+
+    .deck {
+      width: 100vw;
+      width: 100dvw;
+      height: 100vh;
+      height: 100dvh;
+      position: relative;
+      z-index: 1;
+      background: transparent;
+    }
+    .slide {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: safe center;
+      opacity: 0;
+      pointer-events: none;
+      overflow-y: auto;
+      overflow-x: hidden;
+      padding: 3.4rem 0 4.8rem 0;
+      color: #1a1a1a;
+      transition: opacity 0.35s ease;
+    }
+    @media (prefers-reduced-motion: no-preference) {
+      .slide {
+        transform: scale(0.975);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+      }
+      .slide.active { transform: scale(1); }
+    }
+    .slide.active { opacity: 1; pointer-events: all; }
+    .slide > .content {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      max-width: 1380px;
+      padding: clamp(0.75rem, 1.8vw, 1.75rem) clamp(1rem, 2.5vw, 2.25rem);
+      margin-block: auto;
+    }
+
+    .nav-controls {
+      position: fixed;
+      bottom: 14px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      z-index: 100;
+      background: rgba(255,255,255,0.88);
+      backdrop-filter: blur(12px);
+      padding: 6px 16px;
+      border-radius: 999px;
+      border: 1px solid rgba(0,0,0,0.10);
+      box-shadow: 0 10px 34px rgba(0,0,0,0.10);
+      max-width: calc(100dvw - 20px);
+    }
+    .nav-btn {
+      min-inline-size: 34px;
+      min-block-size: 34px;
+      padding: 0 8px;
+      border: none;
+      background: rgba(0,0,0,0.06);
+      color: var(--color-gqm);
+      border-radius: 999px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
+    .nav-btn:hover { background: rgba(173,81,40,0.15); }
+    .motion-btn {
+      font-size: 0.74rem;
+      font-weight: 600;
+      color: rgba(26,26,26,0.72);
+      padding: 0 10px;
+    }
+    .slide-dots {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .slide-dots::-webkit-scrollbar { display: none; }
+    .slide-dots .dot {
+      min-inline-size: 24px;
+      min-block-size: 24px;
+      padding: 0;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .slide-dots .dot::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: rgba(0,0,0,0.18);
+      transition: background-color 0.25s ease, transform 0.25s ease;
+    }
+    .slide-dots .dot:hover::before { background: rgba(173,81,40,0.55); }
+    .slide-dots .dot[aria-current="step"]::before {
+      background: var(--color-gqm);
+      transform: scale(1.35);
+    }
+    .slide-counter {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      color: rgba(0,0,0,0.58);
+      min-width: 54px;
+      text-align: center;
+      font-variant-numeric: tabular-nums;
+    }
+
+    :where(a:any-link, button, [tabindex="0"]):focus-visible {
+      outline: 2.5px solid #ad5128;
+      outline-offset: 2px;
+    }
+
+    .reveal { opacity: 1; transform: none; }
 
     .gradient-mesh { position: absolute; inset: 0; z-index: 0; overflow: hidden; pointer-events: none; }
-    .blob { position: absolute; border-radius: 50%; filter: blur(80px); animation: float-slow 12s ease-in-out infinite; }
-    .blob:nth-child(2) { animation: float-drift 16s ease-in-out infinite; }
-    .blob:nth-child(3) { animation: float-slow 18s ease-in-out infinite reverse; }
-    @keyframes float-slow { 0% { transform: translate(0,0) scale(1);} 25% { transform: translate(60px,-50px) scale(1.08);} 50% { transform: translate(-40px,40px) scale(0.92);} 75% { transform: translate(50px,20px) scale(1.04);} 100% { transform: translate(0,0) scale(1);} }
-    @keyframes float-drift { 0% { transform: translate(0,0) scale(1) rotate(0deg);} 33% { transform: translate(-50px,-60px) scale(1.12) rotate(3deg);} 66% { transform: translate(40px,30px) scale(0.9) rotate(-2deg);} 100% { transform: translate(0,0) scale(1) rotate(0deg);} }
-    @keyframes glow-pulse { 0%,100% { box-shadow: 0 0 0 rgba(var(--glow-color-rgb),0.12);} 50% { box-shadow: 0 0 30px rgba(var(--glow-color-rgb),0.18);} }
-    @keyframes float { 0%,100% { transform: translateY(0);} 50% { transform: translateY(-12px);} }
+    .blob { position: absolute; border-radius: 50%; filter: blur(80px); }
+    @media (prefers-reduced-motion: no-preference) {
+      body:not(.motion-paused) .blob { animation: float-slow 14s ease-in-out infinite; }
+      body:not(.motion-paused) .blob:nth-child(2) { animation: float-drift 18s ease-in-out infinite; }
+      body:not(.motion-paused) .blob:nth-child(3) { animation: float-slow 20s ease-in-out infinite reverse; }
+      body:not(.motion-paused) .hero-logo { animation: float-logo 3.4s ease-in-out infinite; }
+      body:not(.motion-paused) .metric-card { animation: glow-pulse 4.5s ease-in-out infinite; }
+    }
+    @keyframes float-slow { 0% { transform: translate(0,0) scale(1);} 25% { transform: translate(50px,-40px) scale(1.06);} 50% { transform: translate(-35px,35px) scale(0.94);} 75% { transform: translate(40px,18px) scale(1.03);} 100% { transform: translate(0,0) scale(1);} }
+    @keyframes float-drift { 0% { transform: translate(0,0) scale(1);} 33% { transform: translate(-45px,-50px) scale(1.1);} 66% { transform: translate(35px,25px) scale(0.92);} 100% { transform: translate(0,0) scale(1);} }
+    @keyframes glow-pulse { 0%,100% { box-shadow: 0 6px 24px rgba(var(--glow-color-rgb),0.08);} 50% { box-shadow: 0 8px 30px rgba(var(--glow-color-rgb),0.16);} }
+    @keyframes float-logo { 0%,100% { transform: translateY(0);} 50% { transform: translateY(-8px);} }
+
     .slide::before {
-      content: ''; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+      content: ''; position: fixed; inset: 0; z-index: 1; pointer-events: none;
       background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
       background-repeat: repeat; background-size: 256px 256px; opacity: 0.02; mix-blend-mode: multiply;
     }
     .slide::after {
-      content: ''; position: absolute; inset: 0; z-index: 1; pointer-events: none;
-      background: radial-gradient(ellipse at center, transparent 60%, rgba(248,247,244,0.6) 100%);
+      content: ''; position: fixed; inset: 0; z-index: 1; pointer-events: none;
+      background: radial-gradient(ellipse at center, transparent 62%, rgba(248,247,244,0.58) 100%);
     }
 
     .glass-card {
-      background: rgba(255,255,255,0.7);
-      border: 1px solid rgba(0,0,0,0.08);
-      border-radius: 24px;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.06);
+      background: rgba(255,255,255,0.78);
+      border: 1px solid rgba(0,0,0,0.085);
+      border-radius: 20px;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.055);
       backdrop-filter: blur(8px);
     }
-    .eyebrow { letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-gqm); font-weight: 700; font-size: 1rem; }
-    .eyebrow-muted { letter-spacing: 0.18em; text-transform: uppercase; color: rgba(0,0,0,0.40); font-weight: 700; font-size: 1rem; }
-    .metric-card { animation: glow-pulse 4s ease-in-out infinite; }
-    .method-step { position: relative; }
-    .method-step::after {
-      content: '→'; position: absolute; right: -26px; top: 50%; transform: translateY(-50%);
-      font-size: 1.8rem; color: var(--color-method-3); font-weight: 700;
+    .eyebrow {
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--color-gqm);
+      font-weight: 700;
+      font-size: 0.85rem;
     }
-    .method-step:last-child::after { display: none; }
-    .chip { border: 1px solid rgba(173,81,40,0.35); background: rgba(173,81,40,0.12); color: #1a1a1a; }
-    .soft-panel { background: rgba(0,0,0,0.03); border: 1px solid rgba(0,0,0,0.08); border-radius: 20px; }
-    .line { height: 1px; background: linear-gradient(90deg, rgba(133,86,68,0.5), rgba(173,81,40,0.3), transparent); }
-    .text-glow { text-shadow: 0 0 20px rgba(var(--glow-color-rgb), 0.15); }
-    #metodologia-figura img, #metodologia-figura svg { max-width: 100%; height: auto; display: block; margin: 0 auto; }
+    .slide-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.55rem, 1.1rem + 1.8vw, 2.55rem);
+      line-height: 1.18;
+      font-weight: 700;
+      color: #171717;
+    }
+    .chip {
+      border: 1px solid rgba(173,81,40,0.34);
+      background: rgba(173,81,40,0.11);
+      color: #6b2e13;
+      font-weight: 600;
+    }
+    .chip-neutral {
+      border: 1px solid rgba(0,0,0,0.14);
+      background: rgba(0,0,0,0.045);
+      color: #262626;
+      font-weight: 600;
+    }
+    .soft-panel {
+      background: rgba(0,0,0,0.03);
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 14px;
+    }
+    .num-mono {
+      font-family: var(--font-mono);
+      font-variant-numeric: tabular-nums;
+    }
 
-    @media (max-width: 980px) {
-      .method-step::after { display: none; }
+    /* Responsive IBGE-style academic tables */
+    .table-focus-shell:focus-within {
+      outline: 2.5px solid #ad5128;
+      outline-offset: 2px;
+      border-radius: 14px;
     }
-    @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.2s !important; }
+    .table-wrapper {
+      overflow: auto;
+      max-inline-size: 100%;
+      max-block-size: min(440px, 60dvh);
+      container-type: inline-size;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.86);
+    }
+    .table-wrapper:focus-visible { outline: none; }
+    table.ibge-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      font-size: 0.86rem;
+      line-height: 1.32;
+      font-variant-numeric: tabular-nums;
+      border-top: 1.5px solid #1f2937;
+      border-bottom: 1.5px solid #1f2937;
+    }
+    table.ibge-table thead {
+      position: sticky;
+      inset-block-start: 0;
+      z-index: 2;
+      background: #f5f2ed;
+    }
+    table.ibge-table thead th {
+      padding: 7px 9px;
+      font-weight: 700;
+      color: #1a1a1a;
+      border-bottom: 1px solid #374151;
+      white-space: nowrap;
+    }
+    table.ibge-table thead tr.subhead th {
+      padding-top: 4px;
+      padding-bottom: 6px;
+      font-size: 0.78rem;
+      background: #f5f2ed;
+    }
+    table.ibge-table tbody th {
+      position: sticky;
+      inset-inline-start: 0;
+      z-index: 1;
+      background: #fcfbf9;
+      padding: 6px 9px;
+      font-weight: 600;
+      text-align: left;
+      color: #1a1a1a;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      white-space: nowrap;
+    }
+    table.ibge-table tbody td {
+      padding: 6px 9px;
+      color: rgba(26,26,26,0.88);
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+    }
+    table.ibge-table tbody tr:last-child th,
+    table.ibge-table tbody tr:last-child td {
+      border-bottom: none;
+    }
+    table.ibge-table tbody tr.row-total th,
+    table.ibge-table tbody tr.row-total td {
+      border-top: 1px solid #374151;
+      font-weight: 700;
+      background: #f5f2ed;
+    }
+    .pos-val { color: #874225; font-weight: 600; }
+    .neg-val { color: #1e566e; font-weight: 600; }
+
+    .boxplot-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 8px;
+    }
+    @media (max-width: 900px) {
+      .boxplot-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    .boxplot-cell {
+      background: rgba(255,255,255,0.86);
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 12px;
+      padding: 6px 6px 4px 6px;
     }
   </style>
 </head>
 <body>
 <canvas id="deck-particles" class="deck-particle-canvas" aria-hidden="true"></canvas>
-<div class="mouse-spotlight" style="position:fixed;inset:0;z-index:99;pointer-events:none;"></div>
-<div class="deck">
+<div class="mouse-spotlight" aria-hidden="true" style="position:fixed;inset:0;z-index:99;pointer-events:none;"></div>
 
-  <div class="slide slide-1 active" data-slide="1">
-    <div class="gradient-mesh">
-      <div class="blob" style="width: 520px; height: 520px; top: -120px; right: -120px; background: #ad5128; opacity: 0.18;"></div>
+<nav class="section-rail" aria-label="Seções do artigo">
+  <button type="button" class="sec-pill" data-target="1" aria-current="true">Capa</button>
+  <button type="button" class="sec-pill" data-target="2">1. Introdução</button>
+  <button type="button" class="sec-pill" data-target="5">2. Fundamentação</button>
+  <button type="button" class="sec-pill" data-target="6">3. Relacionados</button>
+  <button type="button" class="sec-pill" data-target="7">4. Método</button>
+  <button type="button" class="sec-pill" data-target="10">5. Resultados</button>
+  <button type="button" class="sec-pill" data-target="17">6. Ameaças</button>
+  <button type="button" class="sec-pill" data-target="18">7. Conclusão</button>
+</nav>
+
+<main id="slide-deck" class="deck">
+
+  <!-- ==================== SLIDE 1: CAPA ==================== -->
+  <section class="slide active" data-slide="1" data-section="1" aria-label="Capa">
+    <div class="gradient-mesh" aria-hidden="true">
+      <div class="blob" style="width: 500px; height: 500px; top: -120px; right: -120px; background: #ad5128; opacity: 0.17;"></div>
       <div class="blob" style="width: 360px; height: 360px; bottom: -100px; left: -80px; background: #855644; opacity: 0.14;"></div>
-      <div class="blob" style="width: 220px; height: 220px; top: 32%; left: 15%; background: #874225; opacity: 0.16;"></div>
+      <div class="blob" style="width: 220px; height: 220px; top: 30%; left: 15%; background: #874225; opacity: 0.14;"></div>
     </div>
     <div class="content text-center">
-      <div class="text-[110px] mb-6 animate-[float_3s_ease-in-out_infinite]"><img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="" class="drop-shadow-[0_0_24px_rgba(173,81,40,0.35)]"></div>
-      <p class="eyebrow mb-5 reveal">Proposta de TCC</p>
-      <h1 class="font-display text-[clamp(2.8rem,6vw,5.4rem)] font-bold tracking-tight text-gray-900 mb-5 reveal">Complexidade Estrutural em Projetos Spring Boot</h1>
-      <p class="text-[clamp(1.15rem,2vw,1.6rem)] text-black/55 max-w-[1100px] mx-auto mb-8 reveal">Métricas orientadas a objetos em repositórios públicos do GitHub</p>
-      <div class="grid md:grid-cols-2 gap-5 max-w-[1100px] mx-auto">
-        <div class="glass-card p-5 text-left reveal">
-          <div class="text-sm uppercase tracking-[0.14em] text-black/45 mb-2">Aluno</div>
-          <div class="text-2xl font-semibold text-gray-900">Guilherme Augusto</div>
-          <div class="text-2xl font-semibold text-gray-900">Gabriel Ferreira</div>
+      <div class="mb-4 flex justify-center reveal">
+        <img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="" width="76" height="76" class="hero-logo drop-shadow-[0_0_22px_rgba(173,81,40,0.32)]">
+      </div>
+      <p class="eyebrow mb-3 reveal">Trabalho de Conclusão de Curso · Engenharia de Software · PUC Minas</p>
+      <h1 class="font-display text-[clamp(2rem,1.25rem+2.6vw,3.9rem)] font-bold tracking-tight text-gray-900 max-w-[1120px] mx-auto mb-3 leading-[1.12] reveal">
+        Evolução da Qualidade Estrutural de Projetos Spring Boot: uma análise longitudinal
+      </h1>
+      <p class="text-[clamp(1rem,0.88rem+0.55vw,1.35rem)] text-black/65 max-w-[980px] mx-auto mb-6 reveal">
+        Análise observacional, longitudinal e descritiva de <strong>537 repositórios públicos</strong> (<strong>1.631 <em>snapshots</em></strong>) ao longo de quatro eras tecnológicas (2009–2026)
+      </p>
+      <div class="grid md:grid-cols-2 gap-4 max-w-[1060px] mx-auto text-left">
+        <div class="glass-card p-5 reveal">
+          <div class="text-xs uppercase tracking-[0.14em] text-black/50 font-semibold mb-2">Autores</div>
+          <div class="text-xl font-semibold text-gray-900">Gabriel Ferreira</div>
+          <div class="text-xl font-semibold text-gray-900 mb-2">Guilherme Augusto</div>
+          <div class="text-sm text-black/60 num-mono">{gabriel.amaral.1447804, gajsouza}@sga.pucminas.br</div>
         </div>
-        <div class="glass-card p-5 text-left reveal">
-          <div class="text-sm uppercase tracking-[0.14em] text-black/45 mb-2">Orientadores</div>
-          <div class="text-2xl font-semibold text-gray-900">Cleiton Tavares</div>
-          <div class="text-2xl font-semibold text-gray-900">Leonardo Vilela</div>
-          <div class="text-2xl font-semibold text-gray-900">Danilo Maia</div>
-          <div class="text-2xl font-semibold text-gray-900">João Pedro</div>
+        <div class="glass-card p-5 reveal">
+          <div class="text-xs uppercase tracking-[0.14em] text-black/50 font-semibold mb-2">Orientação · Belo Horizonte, novembro de 2026</div>
+          <div class="text-base text-gray-900 mb-1"><strong>Orientador (TCC II):</strong> Cleiton Silva Tavares</div>
+          <div class="text-sm text-black/70 leading-relaxed">
+            <strong>Orientadores de conteúdo (TCC I):</strong> Danilo Maia, João Pedro Batisteli e Leonardo Vilela<br>
+            <strong>Orientador acadêmico (TCC I):</strong> Cleiton Tavares
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="slide slide-2" data-slide="2">
-    <div class="gradient-mesh">
+  <!-- ==================== SLIDE 2: 1. INTRODUÇÃO (CONTEXTO) ==================== -->
+  <section class="slide" data-slide="2" data-section="2" aria-label="Introdução: Contexto" inert>
+    <div class="gradient-mesh" aria-hidden="true">
       <div class="blob" style="width: 320px; height: 320px; top: -80px; right: -60px; background: #ad5128; opacity: 0.14;"></div>
       <div class="blob" style="width: 260px; height: 260px; bottom: -70px; left: -40px; background: #855644; opacity: 0.12;"></div>
     </div>
     <div class="content">
-      <p class="eyebrow mb-4 reveal">Contexto</p>
-      <h2 class="font-display text-[clamp(2.2rem,4.5vw,3.4rem)] font-bold mb-6 text-gray-900 reveal">Onde o trabalho se posiciona</h2>
-      <div class="grid grid-cols-3 gap-6">
-        <div class="glass-card p-6 reveal">
-          <div class="text-5xl mb-4">💻</div>
-          <h3 class="text-3xl font-semibold mb-3 text-gray-900">Área</h3>
-          <p class="text-xl text-gray-900/80">Qualidade interna de software e métricas orientadas a objetos.</p>
+      <p class="eyebrow mb-2 reveal">1. Introdução · Contexto</p>
+      <h2 class="slide-title mb-5 reveal">Onde o trabalho se posiciona</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="glass-card p-5 reveal">
+          <span class="chip inline-flex px-2.5 py-0.5 rounded-full text-xs mb-3">Qualidade Interna</span>
+          <h3 class="text-xl font-bold mb-2 text-gray-900">ISO/IEC 25010</h3>
+          <p class="text-base text-gray-900/80 leading-relaxed">
+            Descreve propriedades estruturais do código-fonte — modularidade, coesão e acoplamento — investigáveis por análise estática e ligadas ao esforço de manutenção (Pressman, 2021).
+          </p>
         </div>
-        <div class="glass-card p-6 reveal">
-          <div class="text-5xl mb-4">🧱</div>
-          <h3 class="text-3xl font-semibold mb-3 text-gray-900">Objeto</h3>
-          <p class="text-xl text-gray-900/80">Projetos Java com Spring Boot em repositórios públicos.</p>
+        <div class="glass-card p-5 reveal">
+          <span class="chip inline-flex px-2.5 py-0.5 rounded-full text-xs mb-3">Métricas OO</span>
+          <h3 class="text-xl font-bold mb-2 text-gray-900">Suíte CK (1994)</h3>
+          <p class="text-base text-gray-900/80 leading-relaxed">
+            Chidamber e Kemerer propuseram indicadores clássicos em nível de classe (CBO, RFC, WMC, DIT, NOC e LCOM) para dimensionar acoplamento, complexidade, herança e coesão.
+          </p>
         </div>
-        <div class="glass-card p-6 reveal">
-          <div class="text-5xl mb-4">📐</div>
-          <h3 class="text-3xl font-semibold mb-3 text-gray-900">Perspectiva</h3>
-          <p class="text-xl text-gray-900/80">Acoplamento, complexidade e herança via métricas CK.</p>
+        <div class="glass-card p-5 reveal">
+          <span class="chip inline-flex px-2.5 py-0.5 rounded-full text-xs mb-3">Ecossistema Java</span>
+          <h3 class="text-xl font-bold mb-2 text-gray-900">Spring Boot</h3>
+          <p class="text-base text-gray-900/80 leading-relaxed">
+            Com versão 1.0 estável lançada em abril de 2014, acumula mais de uma década de histórico versionado em aplicações públicas hospedadas no GitHub.
+          </p>
+        </div>
+        <div class="glass-card p-5 reveal">
+          <span class="chip inline-flex px-2.5 py-0.5 rounded-full text-xs mb-3">Fluxo Contemporâneo</span>
+          <h3 class="text-xl font-bold mb-2 text-gray-900">Agentes de IA</h3>
+          <p class="text-base text-gray-900/80 leading-relaxed">
+            Assistentes generativos, como o GitHub Copilot (prévia em jun/2021; abertura geral em jun/2022), passaram a integrar a codificação desses mesmos sistemas (Hou et al., 2024).
+          </p>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="slide slide-3" data-slide="3">
-    <div class="gradient-mesh">
+  <!-- ==================== SLIDE 3: 1. INTRODUÇÃO (PROBLEMA E RELEVÂNCIA) ==================== -->
+  <section class="slide" data-slide="3" data-section="2" aria-label="Introdução: Problema e Relevância" inert>
+    <div class="gradient-mesh" aria-hidden="true">
       <div class="blob" style="width: 320px; height: 320px; top: -50px; left: -60px; background: #874225; opacity: 0.14;"></div>
       <div class="blob" style="width: 280px; height: 280px; bottom: -60px; right: -40px; background: #855644; opacity: 0.12;"></div>
     </div>
     <div class="content">
-      <p class="eyebrow mb-4 reveal">Problema</p>
-      <h2 class="font-display text-[clamp(2.2rem,4.5vw,3.4rem)] font-bold mb-6 text-gray-900 reveal">Problema de pesquisa</h2>
-      <div class="grid grid-cols-[1.15fr_0.85fr] gap-6">
-        <div class="glass-card p-8 reveal">
-          <p class="text-2xl leading-relaxed text-gray-900/85">Faltam evidências empíricas sobre como projetos Spring Boot organizam acoplamento, complexidade e herança em larga escala.</p>
+      <p class="eyebrow mb-2 reveal">1. Introdução · Problema e Relevância</p>
+      <h2 class="slide-title mb-4 reveal">Lacuna empírica e questão de pesquisa</h2>
+
+      <div class="glass-card p-6 mb-5 border-[#ad5128]/35 reveal">
+        <div class="text-xs uppercase tracking-[0.14em] text-[#ad5128] font-bold mb-1">Questão de Pesquisa</div>
+        <p class="font-display text-[clamp(1.3rem,1rem+1.1vw,2rem)] font-bold text-gray-900 leading-snug">
+          Como a qualidade estrutural de projetos Spring Boot evoluiu ao longo dos anos?
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-5">
+        <div class="glass-card p-5 reveal">
+          <h3 class="text-lg font-bold text-gray-900 mb-3">O que falta nos estudos atuais</h3>
+          <ul class="space-y-3 text-base text-gray-900/85 leading-relaxed">
+            <li>
+              <strong>Recortes transversais (Aniche et al., 2016; Sun et al., 2022):</strong> comparam projetos distintos em um único instante e não separam a evolução de um sistema das diferenças entre os sistemas comparados.
+            </li>
+            <li>
+              <strong>Adoção de IA sem estrutura (Robbes et al., 2026):</strong> quantificam quantos projetos exibem vestígios de agentes no GitHub, mas não relacionam esses vestígios às métricas estruturais do código.
+            </li>
+          </ul>
         </div>
-        <div class="grid gap-5">
-          <div class="glass-card p-6 metric-card reveal">
-            <div class="text-base uppercase tracking-[0.14em] text-black/45 mb-2">Lacuna</div>
-            <div class="text-6xl font-bold text-glow text-gray-900 mb-2">Pouca</div>
-            <p class="text-xl text-gray-900/80">evidência empírica em Spring Boot.</p>
-          </div>
-          <div class="glass-card p-6 metric-card reveal">
-            <div class="text-base uppercase tracking-[0.14em] text-black/45 mb-2">Impacto</div>
-            <div class="text-6xl font-bold text-glow text-gray-900 mb-2">Alto</div>
-            <p class="text-xl text-gray-900/80">para diagnóstico arquitetural.</p>
-          </div>
+        <div class="glass-card p-5 reveal">
+          <h3 class="text-lg font-bold text-gray-900 mb-3">Dupla relevância deste estudo</h3>
+          <ul class="space-y-3 text-base text-gray-900/85 leading-relaxed">
+            <li>
+              <strong>1. Isolamento longitudinal:</strong> medir os <em>mesmos repositórios</em> ao longo das eras isola a trajetória estrutural interna de cada sistema (Hassan, 2008; Kalliamvakou et al., 2016).
+            </li>
+            <li>
+              <strong>2. Linha de base empírica sobre IA:</strong> caracteriza onde a adoção rastreável de agentes se concentra em repositórios Spring Boot completos e longevos, sem extrapolação causal.
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="slide slide-4" data-slide="4">
-    <div class="gradient-mesh">
-      <div class="blob" style="width: 300px; height: 300px; top: -40px; right: -50px; background: #ad5128; opacity: 0.12;"></div>
-      <div class="blob" style="width: 260px; height: 260px; bottom: -50px; left: -30px; background: #874225; opacity: 0.1;"></div>
-    </div>
-    <div class="content">
-      <p class="eyebrow mb-4 reveal">Justificativa</p>
-      <h2 class="font-display text-[clamp(2.2rem,4.5vw,3.4rem)] font-bold mb-6 text-gray-900 reveal">Por que investigar Spring Boot</h2>
-      <div class="glass-card p-8 max-w-[1100px] mx-auto reveal">
-        <ul class="space-y-5 text-xl text-gray-900/85">
-          <li class="reveal">• Framework dominante que molda decisões arquiteturais.</li>
-          <li class="reveal">• Métricas estruturais revelam riscos de manutenção.</li>
-          <li class="reveal">• 500 repositórios públicos disponíveis para análise quantitativa.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <div class="slide slide-5" data-slide="5">
-    <div class="gradient-mesh">
+  <!-- ==================== SLIDE 4: 1. INTRODUÇÃO (OBJETIVOS) ==================== -->
+  <section class="slide" data-slide="4" data-section="2" aria-label="Introdução: Objetivos" inert>
+    <div class="gradient-mesh" aria-hidden="true">
       <div class="blob" style="width: 300px; height: 300px; top: -80px; right: -70px; background: #ad5128; opacity: 0.14;"></div>
       <div class="blob" style="width: 220px; height: 220px; bottom: -40px; left: 8%; background: #874225; opacity: 0.12;"></div>
     </div>
     <div class="content">
-      <p class="eyebrow mb-4 reveal">Objetivos · GQM</p>
-      <h2 class="font-display text-[clamp(2.2rem,4.5vw,3.4rem)] font-bold mb-6 text-gray-900 reveal">Objetivos da pesquisa</h2>
-      <div class="glass-card p-7 mb-6 reveal border-[#ad5128]/35">
-        <div class="text-base uppercase tracking-[0.14em] text-black/45 mb-2">Objetivo geral</div>
-        <p class="text-[1.7rem] leading-snug text-gray-900">Caracterizar a complexidade estrutural de projetos Spring Boot por meio de métricas OO extraídas de repositórios públicos.</p>
+      <p class="eyebrow mb-2 reveal">1. Introdução · Objetivos</p>
+      <h2 class="slide-title mb-4 reveal">Objetivo geral e objetivos específicos</h2>
+
+      <div class="glass-card p-6 mb-5 border-[#ad5128]/35 reveal">
+        <div class="text-xs uppercase tracking-[0.14em] text-[#ad5128] font-bold mb-1">Objetivo Geral</div>
+        <p class="text-[clamp(1.15rem,0.95rem+0.7vw,1.55rem)] leading-snug font-semibold text-gray-900">
+          Avaliar a evolução da qualidade estrutural de projetos Spring Boot por meio de métricas CK, comparando projetos com e sem evidências de uso de IA.
+        </p>
       </div>
-      <div class="grid grid-cols-3 gap-6">
-        <div class="glass-card p-6 reveal">
-          <div class="chip inline-flex px-3 py-1 rounded-full text-base font-semibold mb-4">Pergunta 1</div>
-          <h3 class="text-3xl font-semibold mb-2 text-gray-900">Acoplamento</h3>
-          <p class="text-xl text-gray-900/85">Qual o nível de dependência entre classes (CBO, RFC)?</p>
+
+      <div class="grid md:grid-cols-3 gap-5">
+        <div class="glass-card p-5 metric-card reveal">
+          <span class="chip inline-flex px-3 py-1 rounded-full text-sm mb-3">Objetivo Específico (i)</span>
+          <h3 class="text-xl font-bold mb-2 text-gray-900">Mensurar</h3>
+          <p class="text-base text-gray-900/85 leading-relaxed">
+            Mensurar a qualidade dos códigos de repositórios ao longo de diferentes eras por meio das sete medidas extraídas com a ferramenta CK.
+          </p>
         </div>
-        <div class="glass-card p-6 reveal">
-          <div class="chip inline-flex px-3 py-1 rounded-full text-base font-semibold mb-4">Pergunta 2</div>
-          <h3 class="text-3xl font-semibold mb-2 text-gray-900">Complexidade</h3>
-          <p class="text-xl text-gray-900/85">Métodos longos aumentam a complexidade estrutural (WMC)?</p>
+        <div class="glass-card p-5 metric-card reveal">
+          <span class="chip inline-flex px-3 py-1 rounded-full text-sm mb-3">Objetivo Específico (ii)</span>
+          <h3 class="text-xl font-bold mb-2 text-gray-900">Caracterizar a evolução</h3>
+          <p class="text-base text-gray-900/85 leading-relaxed">
+            Caracterizar a evolução desses repositórios em cada era, acompanhando as variações pareadas das métricas e o crescimento do tamanho do código.
+          </p>
         </div>
-        <div class="glass-card p-6 reveal">
-          <div class="chip inline-flex px-3 py-1 rounded-full text-base font-semibold mb-4">Pergunta 3</div>
-          <h3 class="text-3xl font-semibold mb-2 text-gray-900">Herança</h3>
-          <p class="text-xl text-gray-900/85">Hierarquias são rasas ou profundas (DIT, NOC)?</p>
+        <div class="glass-card p-5 metric-card reveal">
+          <span class="chip inline-flex px-3 py-1 rounded-full text-sm mb-3">Objetivo Específico (iii)</span>
+          <h3 class="text-xl font-bold mb-2 text-gray-900">Comparar com e sem IA</h3>
+          <p class="text-base text-gray-900/85 leading-relaxed">
+            Comparar repositórios com e sem evidências de uso de IA quanto às métricas CK, à trajetória histórica entre eras e ao tamanho do código.
+          </p>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="slide slide-6" data-slide="6">
-    <div class="gradient-mesh">
+  <!-- ==================== SLIDE 5: 2. FUNDAMENTAÇÃO TEÓRICA ==================== -->
+  <section class="slide" data-slide="5" data-section="5" aria-label="Fundamentação Teórica" inert>
+    <div class="gradient-mesh" aria-hidden="true">
+      <div class="blob" style="width: 340px; height: 340px; top: -70px; right: -60px; background: #855644; opacity: 0.14;"></div>
+      <div class="blob" style="width: 260px; height: 260px; bottom: -60px; left: -50px; background: #ad5128; opacity: 0.12;"></div>
+    </div>
+    <div class="content">
+      <p class="eyebrow mb-2 reveal">2. Fundamentação Teórica</p>
+      <h2 class="slide-title mb-4 reveal">Qualidade interna de software e métricas CK</h2>
+
+      <div class="grid lg:grid-cols-[0.95fr_1.45fr] gap-5">
+        <div class="space-y-4">
+          <div class="glass-card p-5 reveal">
+            <div class="text-xs uppercase tracking-[0.14em] text-[#ad5128] font-bold mb-1">2.1 Qualidade Interna</div>
+            <p class="text-base text-gray-900/85 leading-relaxed">
+              Na norma <strong>ISO/IEC 25010</strong>, a qualidade interna compreende propriedades estruturais aferíveis por análise estática (modularidade, coesão e manutenibilidade). Estruturas disciplinadas tendem a exigir menor esforço evolutivo (Pressman, 2021).
+            </p>
+          </div>
+          <div class="glass-card p-5 reveal">
+            <div class="text-xs uppercase tracking-[0.14em] text-[#ad5128] font-bold mb-1">Leitura Contextualizada</div>
+            <p class="text-base text-gray-900/85 leading-relaxed">
+              Alterações em CBO, WMC, DIT ou NOC descrevem reconfigurações estruturais, mas não provam isoladamente melhoria ou degradação, pois sofrem influência direta do <strong>papel arquitetural</strong> e do <strong>tamanho do sistema</strong> (El Emam et al., 2001; Aniche et al., 2016).
+            </p>
+          </div>
+        </div>
+
+        <div class="glass-card p-5 reveal">
+          <div class="text-xs uppercase tracking-[0.14em] text-[#ad5128] font-bold mb-3">2.2 Suíte CK (Chidamber &amp; Kemerer, 1994) + Granularidade Complementar</div>
+          <div class="grid sm:grid-cols-2 gap-2.5 text-sm">
+            <div class="soft-panel p-3">
+              <strong class="text-gray-900 num-mono">CBO</strong> · <em>Coupling Between Objects</em><br>
+              <span class="text-black/70">Acoplamento geral entre tipos resolvidos na árvore sintática (sem separar eixos horizontal/vertical).</span>
+            </div>
+            <div class="soft-panel p-3">
+              <strong class="text-gray-900 num-mono">RFC</strong> · <em>Response for a Class</em><br>
+              <span class="text-black/70">Quantidade de métodos próprios e externos potencialmente acionáveis a partir da classe.</span>
+            </div>
+            <div class="soft-panel p-3">
+              <strong class="text-gray-900 num-mono">WMC</strong> · <em>Weighted Methods per Class</em><br>
+              <span class="text-black/70">Soma da complexidade estrutural estática dos métodos (não mede custo em tempo de execução).</span>
+            </div>
+            <div class="soft-panel p-3">
+              <strong class="text-gray-900 num-mono">LOC/método</strong> · <em>Indicador complementar</em><br>
+              <span class="text-black/70">Média de linhas de código por método (granularidade complementar, fora da suíte CK original).</span>
+            </div>
+            <div class="soft-panel p-3">
+              <strong class="text-gray-900 num-mono">DIT</strong> e <strong class="text-gray-900 num-mono">NOC</strong> · <em>Herança</em><br>
+              <span class="text-black/70">Profundidade na árvore de herança (inicia em 1) e número de subclasses diretas no próprio projeto.</span>
+            </div>
+            <div class="soft-panel p-3">
+              <strong class="text-gray-900 num-mono">LCOM*</strong> · <em>Falta de coesão normalizada</em><br>
+              <span class="text-black/70">Varia em [0, 1] (0 = coesão máxima): <span class="num-mono">(1/a) &Sigma; (m &minus; &mu;(A<sub>i</sub>)) / m</span>. Classes indefinidas saem só dessa média.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SLIDE 6: 3. TRABALHOS RELACIONADOS ==================== -->
+  <section class="slide" data-slide="6" data-section="6" aria-label="Trabalhos Relacionados" inert>
+    <div class="gradient-mesh" aria-hidden="true">
       <div class="blob" style="width: 340px; height: 340px; top: -80px; left: -80px; background: #855644; opacity: 0.14;"></div>
-      <div class="blob" style="width: 240px; height: 240px; bottom: -60px; right: -40px; background: #ad5128; opacity: 0.1;"></div>
+      <div class="blob" style="width: 240px; height: 240px; bottom: -60px; right: -40px; background: #ad5128; opacity: 0.10;"></div>
     </div>
     <div class="content">
-      <p class="eyebrow mb-4 reveal">Trabalhos relacionados</p>
-      <div class="grid grid-cols-2 gap-6">
-        <div class="glass-card p-8 reveal">
-          <div class="text-sm uppercase tracking-[0.14em] text-black/45 mb-2">Sun et al. (2022)</div>
-          <h3 class="text-3xl font-semibold mb-4 text-gray-900">Impacto da injeção de dependência</h3>
-          <p class="text-lg text-gray-900/85 mb-4">Mostra que mecanismos de DI podem alterar a interpretação tradicional de métricas de acoplamento, especialmente em ecossistemas Java modernos.</p>
-          <div class="soft-panel p-4">
-            <div class="text-sm uppercase tracking-[0.14em] text-black/45 mb-2">Contribuição para este TCC</div>
-            <p class="text-lg text-gray-900/85">Reforça a necessidade de analisar Spring Boot considerando o papel arquitetural do framework.</p>
-        </div>
-        </div>
-        <div class="glass-card p-8 reveal">
-          <div class="text-sm uppercase tracking-[0.14em] text-black/45 mb-2">Child, Rosner e Counsell (2019)</div>
-          <h3 class="text-3xl font-semibold mb-4 text-gray-900">Variações da métrica CBO</h3>
-          <p class="text-lg text-gray-900/85 mb-4">Discute como diferentes definições e ferramentas podem produzir resultados distintos para acoplamento entre objetos.</p>
-          <div class="soft-panel p-4">
-            <div class="text-sm uppercase tracking-[0.14em] text-black/45 mb-2">Contribuição para este TCC</div>
-            <p class="text-lg text-gray-900/85">Justifica o uso explícito da ferramenta CK e a documentação clara das métricas adotadas.</p>
-        </div>
-        </div>
-        <div class="glass-card p-8 reveal">
-          <div class="text-sm uppercase tracking-[0.14em] text-black/45 mb-2">Gregor, Schnappinger & Pretschner (2023)</div>
-          <h3 class="text-3xl font-semibold mb-4 text-gray-900">Indicadores de manutenibilidade interclasses</h3>
-          <p class="text-lg text-gray-900/85 mb-4">Revisita métricas de acoplamento e coesão entre classes, avaliando quais indicadores realmente predizem esforço de manutenção em sistemas OO.</p>
-          <div class="soft-panel p-4">
-            <div class="text-sm uppercase tracking-[0.14em] text-black/45 mb-2">Contribuição para este TCC</div>
-            <p class="text-lg text-gray-900/85">Fundamenta a escolha de CBO e RFC como proxies de manutenibilidade e reforça a importância de avaliar relações interclasses.</p>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
+      <p class="eyebrow mb-2 reveal">3. Trabalhos Relacionados</p>
+      <h2 class="slide-title mb-4 reveal">Estudos antecedentes e diferenciais deste trabalho</h2>
 
-  <div class="slide slide-7" data-slide="7">
-    <div class="gradient-mesh">
-      <div class="blob" style="width: 330px; height: 330px; top: -70px; right: -80px; background: #874225; opacity: 0.12;"></div>
-      <div class="blob" style="width: 260px; height: 260px; bottom: -70px; left: -50px; background: #855644; opacity: 0.1;"></div>
-    </div>
-    <div class="content">
-      <p class="eyebrow mb-4 reveal">Materiais e métodos</p>
-      <h2 class="font-display text-[clamp(2.2rem,4.5vw,3.4rem)] font-bold mb-6 text-gray-900 reveal">Como o estudo funciona</h2>
-      <div class="grid grid-cols-3 gap-5 mb-6">
-        <div class="glass-card p-6 text-center reveal">
-          <div class="text-6xl font-bold text-gray-900 mb-2">1</div>
-          <h3 class="text-2xl font-semibold text-gray-900 mb-2">Coleta</h3>
-          <p class="text-xl text-gray-900/85">500 repositórios Spring Boot via GitHub API com filtros de qualidade.</p>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="glass-card p-4 reveal">
+          <div class="text-xs uppercase tracking-[0.12em] text-[#ad5128] font-bold mb-1">Godfrey &amp; Tu (2000)</div>
+          <h3 class="text-base font-bold text-gray-900 mb-1.5">Evolução do núcleo do Linux</h3>
+          <p class="text-sm text-gray-900/80 mb-2">Mediram 96 versões (1994–2000), observando salto de 165 mil para mais de 2 milhões de LOC em crescimento superlinear.</p>
+          <div class="soft-panel p-2.5 text-xs text-gray-900/85"><strong>Diferencial:</strong> acompanhamos versões sucessivas de sistemas Java/Spring Boot por métricas CK além do tamanho.</div>
         </div>
-        <div class="glass-card p-6 text-center reveal">
-          <div class="text-6xl font-bold text-gray-900 mb-2">2</div>
-          <h3 class="text-2xl font-semibold text-gray-900 mb-2">Extração</h3>
-          <p class="text-xl text-gray-900/85">Métricas OO extraídas automaticamente de cada classe Java.</p>
-        </div>
-        <div class="glass-card p-6 text-center reveal">
-          <div class="text-6xl font-bold text-gray-900 mb-2">3</div>
-          <h3 class="text-2xl font-semibold text-gray-900 mb-2">Análise</h3>
-          <p class="text-xl text-gray-900/85">Consolidação via ETL e visualização de padrões por repositório.</p>
-        </div>
-      </div>
-      <div class="glass-card p-6 reveal">
-        <h3 class="text-2xl font-semibold mb-3 text-gray-900">Métricas analisadas</h3>
-        <div class="grid grid-cols-6 gap-3 text-xl">
-          <div class="soft-panel p-4 text-center reveal"><strong class="text-gray-900">CBO</strong><br><span class="text-black/50">acoplamento</span></div>
-          <div class="soft-panel p-4 text-center reveal"><strong class="text-gray-900">RFC</strong><br><span class="text-black/50">resposta</span></div>
-          <div class="soft-panel p-4 text-center reveal"><strong class="text-gray-900">WMC</strong><br><span class="text-black/50">complexidade</span></div>
-          <div class="soft-panel p-4 text-center reveal"><strong class="text-gray-900">LOC</strong><br><span class="text-black/50">tamanho</span></div>
-          <div class="soft-panel p-4 text-center reveal"><strong class="text-gray-900">DIT</strong><br><span class="text-black/50">herança</span></div>
-          <div class="soft-panel p-4 text-center reveal"><strong class="text-gray-900">NOC</strong><br><span class="text-black/50">filhos</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="slide slide-8" data-slide="8">
-    <div class="gradient-mesh">
+        <div class="glass-card p-4 reveal">
+          <div class="text-xs uppercase tracking-[0.12em] text-[#ad5128] font-bold mb-1">Munaiah et al. (2017)</div>
+          <h3 class="text-base font-bold text-gray-900 mb-1.5">Curadoria de projetos (<span class="num-mono">reaper</span>)</h3>
+          <p class="text-sm text-gray-900/80 mb-2">Em 1,85M repositórios, filtrar por estrelas obteve 97% de precisão, mas só 32% de revocação ante práticas de engenharia.</p>
+          <div class="soft-panel p-2.5 text-xs text-gray-900/85"><strong>Diferencial:</strong> adotamos a seleção por evidências de engenharia, aplicando 4 regras determinísticas próprias (sem o classificador original).</div>
+        </div>
+
+        <div class="glass-card p-4 reveal">
+          <div class="text-xs uppercase tracking-[0.12em] text-[#ad5128] font-bold mb-1">Aniche et al. (2016)</div>
+          <h3 class="text-base font-bold text-gray-900 mb-1.5">Limiares sensíveis ao papel (SATT)</h3>
+          <p class="text-sm text-gray-900/80 mb-2">Em 120 projetos Spring MVC e 301 Android (&gt; 127 mil classes), 24 de 25 comparações diferiram entre <em>Controller</em>, <em>Service</em> e <em>Repository</em>.</p>
+          <div class="soft-panel p-2.5 text-xs text-gray-900/85"><strong>Diferencial:</strong> em vez de derivar limiares estáticos, acompanhamos as médias dos mesmos repositórios ao longo das eras.</div>
+        </div>
+
+        <div class="glass-card p-4 reveal lg:col-span-1">
+          <div class="text-xs uppercase tracking-[0.12em] text-[#ad5128] font-bold mb-1">Sun et al. (2022)</div>
+          <h3 class="text-base font-bold text-gray-900 mb-1.5">Injeção de dependências e acoplamento</h3>
+          <p class="text-sm text-gray-900/80 mb-2">Propuseram o DCBO em projetos Java (proporção de DI entre 0,16 e 0,40), mostrando crescimento de CBO e DCBO com menor inclinação no DCBO.</p>
+          <div class="soft-panel p-2.5 text-xs text-gray-900/85"><strong>Diferencial:</strong> mantemos o CBO geral da ferramenta CK para assegurar comparabilidade uniforme entre todas as eras.</div>
+        </div>
+
+        <div class="glass-card p-4 reveal md:col-span-2">
+          <div class="text-xs uppercase tracking-[0.12em] text-[#ad5128] font-bold mb-1">Robbes et al. (2026)</div>
+          <h3 class="text-base font-bold text-gray-900 mb-1.5">Mapeamento de agentes de codificação no GitHub</h3>
+          <p class="text-sm text-gray-900/80 mb-2">Inspecionaram 128.018 projetos quanto a arquivos de configuração de agentes e marcas de coautoria em <em>commits</em>, encontrando arquivos em 12,08% e estimando adoção total entre 22,20% e 28,66% em fev/2026.</p>
+          <div class="soft-panel p-2.5 text-xs text-gray-900/85"><strong>Diferencial:</strong> empregamos os mesmos tipos de vestígio rastreável, mas comparamos as métricas estruturais CK e o tamanho do código dos projetos com e sem esses vestígios.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SLIDE 7: 4. MATERIAIS E MÉTODOS (VISÃO GERAL / FIGURA 1) ==================== -->
+  <section class="slide" data-slide="7" data-section="7" aria-label="Materiais e Métodos: Processo em 6 etapas" inert>
+    <div class="gradient-mesh" aria-hidden="true">
       <div class="blob" style="width: 360px; height: 360px; top: -100px; right: -90px; background: #ad5128; opacity: 0.12;"></div>
-      <div class="blob" style="width: 300px; height: 300px; bottom: -90px; left: -70px; background: #855644; opacity: 0.1;"></div>
-      <div class="blob" style="width: 200px; height: 200px; top: 50%; left: 35%; background: #874225; opacity: 0.1;"></div>
+      <div class="blob" style="width: 300px; height: 300px; bottom: -90px; left: -70px; background: #855644; opacity: 0.10;"></div>
     </div>
     <div class="content">
-      <p class="eyebrow mb-3 reveal">Materiais e métodos</p>
-      <h2 class="font-display text-[clamp(2rem,4vw,3rem)] font-bold mb-4 text-gray-900 reveal text-center"> Fluxo metodológico do estudo (GQM)</h2>
-      <div id="metodologia-figura" class="w-full max-w-6xl mx-auto rounded-2xl border border-black/10 bg-white/60 px-4 py-6 flex items-center justify-center reveal">
-        <img src="imgs/Metodologia.png" alt="Fluxo metodológico do estudo (GQM)" class="max-h-[min(65vh,680px)] w-auto max-w-full object-contain">
+      <p class="eyebrow mb-2 reveal">4. Materiais e Métodos · Visão Geral</p>
+      <h2 class="slide-title mb-3 reveal">Estudo observacional, longitudinal e descritivo em seis etapas</h2>
+
+      <div class="grid sm:grid-cols-3 gap-3 mb-4">
+        <div class="glass-card px-4 py-3 reveal">
+          <strong class="text-gray-900">Observacional:</strong> <span class="text-sm text-black/75">repositórios analisados como existem no GitHub, sem intervenção dos autores.</span>
+        </div>
+        <div class="glass-card px-4 py-3 reveal">
+          <strong class="text-gray-900">Longitudinal:</strong> <span class="text-sm text-black/75">os mesmos repositórios são medidos repetidamente ao longo das eras tecnológicas.</span>
+        </div>
+        <div class="glass-card px-4 py-3 reveal">
+          <strong class="text-gray-900">Descritivo:</strong> <span class="text-sm text-black/75">síntese por mínimo, média, mediana e máximo, sem testes de hipótese nem inferência causal.</span>
+        </div>
+      </div>
+
+      <figure class="glass-card p-4 flex flex-col items-center justify-center reveal">
+        <img src="imgs/processo_metodologico.png" alt=" Seis etapas do processo metodológico: 1 Coleta na API de busca do GitHub pelo tópico spring-boot; 2 Filtragem de projetos Java criados até 2017 e ativos desde 2022; 3 Curadoria removendo projetos didáticos, de brinquedo, sem build ou sem testes; 4 Extração CK de uma versão por era com sete métricas; 5 Detecção de IA em arquivos e commits; e 6 Análise por estatística descritiva." width="1500" height="640" class="max-h-[min(48dvh,430px)] w-auto max-w-full object-contain rounded-lg">
+        <figcaption class="text-xs text-black/55 mt-2">Figura 1 do artigo — Processo metodológico do estudo: 95.894 coletados &rarr; 785 filtrados &rarr; 634 curados &rarr; 537 repositórios analisados (1.631 <em>snapshots</em>).</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ==================== SLIDE 8: 4. MATERIAIS E MÉTODOS (FUNIL E CURADORIA — TABELA 1) ==================== -->
+  <section class="slide" data-slide="8" data-section="7" aria-label="Materiais e Métodos: Coleta, Filtragem e Curadoria" inert>
+    <div class="gradient-mesh" aria-hidden="true">
+      <div class="blob" style="width: 330px; height: 330px; top: -70px; right: -80px; background: #874225; opacity: 0.12;"></div>
+      <div class="blob" style="width: 260px; height: 260px; bottom: -70px; left: -50px; background: #855644; opacity: 0.10;"></div>
+    </div>
+    <div class="content">
+      <p class="eyebrow mb-2 reveal">4. Materiais e Métodos · Coleta, Filtragem e Curadoria</p>
+      <h2 class="slide-title mb-4 reveal">Critérios de inclusão/exclusão (Tabela 1) e curadoria determinística</h2>
+
+      <div class="grid lg:grid-cols-[1.35fr_1fr] gap-5 items-start">
+        <div class="glass-card p-4 table-focus-shell reveal">
+          <div id="cap-criterios" class="text-sm font-bold text-gray-900 mb-2">Funil sequencial de seleção (setembro de 2026 · sem filtro mínimo de estrelas)</div>
+          <div tabindex="0" role="region" aria-labelledby="cap-criterios" class="table-wrapper">
+            <table class="ibge-table">
+              <thead>
+                <tr>
+                  <th scope="col" class="text-left">Id.</th>
+                  <th scope="col" class="text-left">Etapa</th>
+                  <th scope="col" class="text-left">Critério aplicado</th>
+                  <th scope="col" class="text-right">Removidos</th>
+                  <th scope="col" class="text-right">Restaram</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">--</th><td>Coleta</td><td>Tópico <code class="num-mono text-xs">spring-boot</code> na API REST</td><td class="text-right num-mono">--</td><td class="text-right num-mono font-semibold">95.894</td></tr>
+                <tr><th scope="row">CI1</th><td>Filtragem</td><td>Linguagem principal Java</td><td class="text-right num-mono">23.298</td><td class="text-right num-mono">72.596</td></tr>
+                <tr><th scope="row">CE1</th><td>Filtragem</td><td><em>Fork</em> ou espelho</td><td class="text-right num-mono">1.089</td><td class="text-right num-mono">71.507</td></tr>
+                <tr><th scope="row">CE2</th><td>Filtragem</td><td>Arquivado ou desabilitado</td><td class="text-right num-mono">1.607</td><td class="text-right num-mono">69.900</td></tr>
+                <tr><th scope="row">CI3</th><td>Filtragem</td><td>Envio a partir de 01/01/2022 (era E4)</td><td class="text-right num-mono">16.615</td><td class="text-right num-mono">53.285</td></tr>
+                <tr><th scope="row">CE3</th><td>Filtragem</td><td><em>Template</em>, vazio ou exercícios</td><td class="text-right num-mono">866</td><td class="text-right num-mono">52.419</td></tr>
+                <tr><th scope="row">CI2</th><td>Filtragem</td><td>Criado até 31/12/2017 (&ge; 3 eras)</td><td class="text-right num-mono">51.634</td><td class="text-right num-mono font-semibold">785</td></tr>
+                <tr><th scope="row">--</th><td>Curadoria</td><td>4 regras simultâneas (CE4, CE5, CI4, CI5)</td><td class="text-right num-mono">151</td><td class="text-right num-mono font-semibold">634</td></tr>
+                <tr class="row-total"><th scope="row">CI6</th><td>Extração CK</td><td>Medição válida em todas as eras do grupo</td><td class="text-right num-mono">97</td><td class="text-right num-mono">537</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="glass-card p-5 reveal">
+          <div class="text-xs uppercase tracking-[0.14em] text-[#ad5128] font-bold mb-2">Curadoria (inspirada em Munaiah et al., 2017)</div>
+          <p class="text-sm text-gray-900/80 mb-3">Quatro regras próprias avaliadas <strong>ao mesmo tempo</strong> sobre os 785 candidatos (sem substituição dos 151 reprovados):</p>
+          <div class="space-y-2.5 text-sm">
+            <div class="soft-panel p-2.5">
+              <strong>CE4 · Finalidade não didática (<span class="num-mono">765/785</span>):</strong> exclui 14 vocábulos escolares (<code class="num-mono text-xs">course</code>, <code class="num-mono text-xs">tutorial</code>, <code class="num-mono text-xs">aula</code>, <code class="num-mono text-xs">udemy</code>…), preservando termos como <code class="num-mono text-xs">machine-learning</code>.
+            </div>
+            <div class="soft-panel p-2.5">
+              <strong>CE5 · Não ser brinquedo (<span class="num-mono">768/785</span>):</strong> exclui <code class="num-mono text-xs">playground</code>, <code class="num-mono text-xs">sandbox</code>, <code class="num-mono text-xs">toy</code>, <code class="num-mono text-xs">boilerplate</code>…; isenta <code class="num-mono text-xs">demo</code>, <code class="num-mono text-xs">sample</code> e <code class="num-mono text-xs">example</code> (padrão do <em>Spring Initializr</em>).
+            </div>
+            <div class="soft-panel p-2.5">
+              <strong>CI4 · Arquivo de <em>build</em> (<span class="num-mono">779/785</span>):</strong> presença verificada de <code class="num-mono text-xs">pom.xml</code>, <code class="num-mono text-xs">build.gradle</code> ou <code class="num-mono text-xs">build.gradle.kts</code>.
+            </div>
+            <div class="soft-panel p-2.5">
+              <strong>CI5 · Testes automatizados (<span class="num-mono">669/785</span>):</strong> diretório <code class="num-mono text-xs">src/test</code> ou classes <code class="num-mono text-xs">*Test.java</code> / <code class="num-mono text-xs">*Tests.java</code>.
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="slide slide-9" data-slide="9">
-    <div class="gradient-mesh">
+  <!-- ==================== SLIDE 9: 4. MATERIAIS E MÉTODOS (ERAS, CK, IA E ANÁLISE) ==================== -->
+  <section class="slide" data-slide="9" data-section="7" aria-label="Materiais e Métodos: Eras, Extração CK e Detecção de IA" inert>
+    <div class="gradient-mesh" aria-hidden="true">
       <div class="blob" style="width: 300px; height: 300px; top: -60px; left: -70px; background: #855644; opacity: 0.14;"></div>
       <div class="blob" style="width: 260px; height: 260px; bottom: -60px; right: -50px; background: #874225; opacity: 0.12;"></div>
     </div>
     <div class="content">
-      <p class="eyebrow mb-4 reveal">Materiais e métodos</p>
-      <h2 class="font-display text-[clamp(2.2rem,4.5vw,3.4rem)] font-bold mb-6 text-gray-900 reveal">Como respondemos cada questão</h2>
-      <div class="grid grid-cols-3 gap-6">
-        <div class="glass-card p-6 reveal">
-          <div class="chip inline-flex px-3 py-1 rounded-full text-base font-semibold mb-4">Pergunta 1</div>
-          <h3 class="text-3xl font-semibold mb-3 text-gray-900">Acoplamento</h3>
-          <p class="text-xl text-gray-900/85">Distribuição de CBO e RFC: mediana, dispersão e outliers.</p>
+      <p class="eyebrow mb-2 reveal">4. Materiais e Métodos · Extração CK, IA e Análise</p>
+      <h2 class="slide-title mb-4 reveal">Eras tecnológicas, seleção de <em>snapshots</em> e detecção de IA</h2>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-4">
+        <div class="glass-card p-4 reveal">
+          <span class="chip inline-flex px-2.5 py-0.5 rounded-full text-xs num-mono mb-2">E1 · 2009–2013</span>
+          <h3 class="text-base font-bold text-gray-900 mb-1">Pré-Spring Boot 1.0</h3>
+          <p class="text-xs text-gray-900/80 leading-relaxed">Da criação do repositório mais antigo do estudo até o último ano anterior ao lançamento do Spring Boot 1.0 (abril de 2014).</p>
         </div>
-        <div class="glass-card p-6 reveal">
-          <div class="chip inline-flex px-3 py-1 rounded-full text-base font-semibold mb-4">Pergunta 2</div>
-          <h3 class="text-3xl font-semibold mb-3 text-gray-900">Complexidade</h3>
-          <p class="text-xl text-gray-900/85">Relação entre tamanho de métodos e WMC agregado.</p>
+        <div class="glass-card p-4 reveal">
+          <span class="chip inline-flex px-2.5 py-0.5 rounded-full text-xs num-mono mb-2">E2 · 2014–2017</span>
+          <h3 class="text-base font-bold text-gray-900 mb-1">Linha Spring Boot 1.x</h3>
+          <p class="text-xs text-gray-900/80 leading-relaxed">Corresponde ao ciclo da linha 1.x do framework, da versão 1.0 até o último ano anterior à versão 2.0.</p>
         </div>
-        <div class="glass-card p-6 reveal">
-          <div class="chip inline-flex px-3 py-1 rounded-full text-base font-semibold mb-4">Pergunta 3</div>
-          <h3 class="text-3xl font-semibold mb-3 text-gray-900">Herança</h3>
-          <p class="text-xl text-gray-900/85">DIT e NOC indicam hierarquias rasas ou profundas.</p>
+        <div class="glass-card p-4 reveal">
+          <span class="chip inline-flex px-2.5 py-0.5 rounded-full text-xs num-mono mb-2">E3 · 2018–2021</span>
+          <h3 class="text-base font-bold text-gray-900 mb-1">Linha Spring Boot 2.x</h3>
+          <p class="text-xs text-gray-900/80 leading-relaxed">Do lançamento do Spring Boot 2.0 (março de 2018) até o último ano antes da abertura geral de assistentes de IA.</p>
+        </div>
+        <div class="glass-card p-4 reveal">
+          <span class="chip inline-flex px-2.5 py-0.5 rounded-full text-xs num-mono mb-2">E4 · 2022–out/2026</span>
+          <h3 class="text-base font-bold text-gray-900 mb-1">Era de IA aberta a todos</h3>
+          <p class="text-xs text-gray-900/80 leading-relaxed">Da abertura geral do GitHub Copilot (junho de 2022) até outubro de 2026, quando o estado dos repositórios foi registrado.</p>
         </div>
       </div>
-      <div class="glass-card p-7 mt-6 reveal">
-        <h3 class="text-2xl font-semibold mb-3 text-gray-900">Resultado esperado</h3>
-        <p class="text-xl text-gray-900/85">Caracterização quantitativa da estrutura de projetos Spring Boot com padrões úteis para diagnóstico e manutenção.</p>1      </div>
-    </div>
-  </div>
-</div>
 
-<div class="nav-controls" aria-label="Controles de navegação">
-  <button class="nav-btn" onclick="changeSlide(-1)" aria-label="Slide anterior">&#8249;</button>
+      <div class="grid md:grid-cols-3 gap-4">
+        <div class="glass-card p-4 reveal">
+          <h3 class="text-base font-bold text-gray-900 mb-1.5">4. Extração CK e Grupos</h3>
+          <p class="text-sm text-gray-900/80 leading-relaxed">
+            <strong>Grupo pioneiro</strong> (2009–2013: E1–E4) e <strong>grupo principal</strong> (2014–2017: E2–E4). Último <em>commit</em> <code class="num-mono text-xs">--first-parent</code> na <em>branch</em> principal em E1–E3 e estado de out/2026 em E4. Extração com <strong>CK 0.7.1-SNAPSHOT</strong> (<code class="num-mono text-xs">8a1ef916</code>). Saíram 97 incompletos (78 sem <em>commit</em> em era anterior, 16 sem classes Java, 3 falhas).
+          </p>
+        </div>
+        <div class="glass-card p-4 reveal">
+          <h3 class="text-base font-bold text-gray-900 mb-1.5">5. Detecção de IA</h3>
+          <p class="text-sm text-gray-900/80 leading-relaxed">
+            Em cada <em>snapshot</em>, buscam-se vestígios segundo Robbes et al. (2026): configurações de agentes (Copilot, Cursor, Claude Code, Codex), entradas em <code class="num-mono text-xs">.gitignore</code>, contas de agentes autoras e <code class="num-mono text-xs">Co-authored-by</code>. Ausência de vestígio não prova ausência de uso.
+          </p>
+        </div>
+        <div class="glass-card p-4 reveal">
+          <h3 class="text-base font-bold text-gray-900 mb-1.5">6. Análise Descritiva</h3>
+          <p class="text-sm text-gray-900/80 leading-relaxed">
+            Mínimo, média, mediana e máximo entre repositórios (peso igual por projeto), além de arquivos Java e LOC líquidos (sem linhas vazias ou só de comentário). Diferenças entre eras equivalem exatamente à variação média dos mesmos sistemas.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SLIDE 10: 5.1 RESULTADOS (CARACTERIZAÇÃO — TABELA 2) ==================== -->
+  <section class="slide" data-slide="10" data-section="10" aria-label="Resultados 5.1: Caracterização dos repositórios" inert>
+    <div class="gradient-mesh" aria-hidden="true">
+      <div class="blob" style="width: 340px; height: 340px; top: -80px; right: -60px; background: #ad5128; opacity: 0.14;"></div>
+      <div class="blob" style="width: 260px; height: 260px; bottom: -60px; left: -50px; background: #855644; opacity: 0.12;"></div>
+    </div>
+    <div class="content">
+      <p class="eyebrow mb-2 reveal">5. Resultados · 5.1 Caracterização dos Repositórios Analisados</p>
+      <h2 class="slide-title mb-4 reveal">Painel longitudinal balanceado: 537 repositórios e 1.631 <em>snapshots</em></h2>
+
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-5">
+        <div class="glass-card p-4 text-center metric-card reveal">
+          <div class="text-xs uppercase tracking-[0.12em] text-black/50 font-semibold">Repositórios analisados</div>
+          <div class="text-4xl font-bold text-[#ad5128] num-mono my-1">537</div>
+          <div class="text-xs text-black/65">20 pioneiros + 517 principais</div>
+        </div>
+        <div class="glass-card p-4 text-center metric-card reveal">
+          <div class="text-xs uppercase tracking-[0.12em] text-black/50 font-semibold">Versões medidas</div>
+          <div class="text-4xl font-bold text-gray-900 num-mono my-1">1.631</div>
+          <div class="text-xs text-black/65">80 + 1.551 <em>snapshots</em> CK</div>
+        </div>
+        <div class="glass-card p-4 text-center metric-card reveal">
+          <div class="text-xs uppercase tracking-[0.12em] text-black/50 font-semibold">Com IA em E4</div>
+          <div class="text-4xl font-bold text-[#874225] num-mono my-1">88</div>
+          <div class="text-xs text-black/65">16,4% (9 pioneiros + 79 principais)</div>
+        </div>
+        <div class="glass-card p-4 text-center metric-card reveal">
+          <div class="text-xs uppercase tracking-[0.12em] text-black/50 font-semibold">Sem IA em E4</div>
+          <div class="text-4xl font-bold text-gray-900 num-mono my-1">449</div>
+          <div class="text-xs text-black/65">83,6% (inclui os 150 com E4 = E3)</div>
+        </div>
+      </div>
+
+      <div class="glass-card p-5 table-focus-shell reveal">
+        <div id="cap-cobertura" class="text-sm font-bold text-gray-900 mb-2">Tabela 2 — Caracterização dos repositórios analisados, por grupo</div>
+        <div tabindex="0" role="region" aria-labelledby="cap-cobertura" class="table-wrapper">
+          <table class="ibge-table">
+            <thead>
+              <tr>
+                <th scope="col" class="text-left">Grupo</th>
+                <th scope="col" class="text-left">Criação</th>
+                <th scope="col" class="text-left">Eras medidas</th>
+                <th scope="col" class="text-right">Repositórios</th>
+                <th scope="col" class="text-right"><em>Snapshots</em></th>
+                <th scope="col" class="text-right">E4 igual a E3</th>
+                <th scope="col" class="text-right">Com IA (E4)</th>
+                <th scope="col" class="text-right">Sem IA (E4)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Pioneiro</th>
+                <td>2009 a 2013</td>
+                <td>E1, E2, E3 e E4</td>
+                <td class="text-right num-mono">20</td>
+                <td class="text-right num-mono">80</td>
+                <td class="text-right num-mono">2</td>
+                <td class="text-right num-mono">9</td>
+                <td class="text-right num-mono">11</td>
+              </tr>
+              <tr>
+                <th scope="row">Principal</th>
+                <td>2014 a 2017</td>
+                <td>E2, E3 e E4</td>
+                <td class="text-right num-mono">517</td>
+                <td class="text-right num-mono">1.551</td>
+                <td class="text-right num-mono">148</td>
+                <td class="text-right num-mono">79</td>
+                <td class="text-right num-mono">438</td>
+              </tr>
+              <tr class="row-total">
+                <th scope="row">Total</th>
+                <td>--</td>
+                <td>--</td>
+                <td class="text-right num-mono">537</td>
+                <td class="text-right num-mono">1.631</td>
+                <td class="text-right num-mono">150</td>
+                <td class="text-right num-mono">88</td>
+                <td class="text-right num-mono">449</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-xs text-black/60 mt-2">Nota: E4 igual a E3 indica repositório cuja <em>branch</em> principal não recebeu <em>commits</em> a partir de 2022 (variação nula entre E3 e E4).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SLIDE 11: 5.2 RESULTADOS (GRUPO PIONEIRO — TABELAS 3/4 E FIGURA 2) ==================== -->
+  <section class="slide" data-slide="11" data-section="10" aria-label="Resultados 5.2: Evolução do Grupo Pioneiro" inert>
+    <div class="gradient-mesh" aria-hidden="true">
+      <div class="blob" style="width: 320px; height: 320px; top: -70px; left: -60px; background: #ad5128; opacity: 0.13;"></div>
+      <div class="blob" style="width: 260px; height: 260px; bottom: -60px; right: -40px; background: #855644; opacity: 0.11;"></div>
+    </div>
+    <div class="content">
+      <p class="eyebrow mb-1.5 reveal">5. Resultados · 5.2 Evolução das Métricas CK por Grupo</p>
+      <h2 class="slide-title mb-3 reveal">Grupo pioneiro (<span class="num-mono">n = 20</span>): acoplamento sobe em todas as eras</h2>
+
+      <div class="grid lg:grid-cols-[1.12fr_1fr] gap-4 items-start">
+        <div class="glass-card p-4 table-focus-shell reveal">
+          <div id="cap-pioneiro" class="text-xs font-bold text-gray-900 mb-2">Tabelas 3 e 4 — Médias por era, extremos em E4 e diferenças pareadas</div>
+          <div tabindex="0" role="region" aria-labelledby="cap-pioneiro" class="table-wrapper">
+            <table class="ibge-table">
+              <thead>
+                <tr>
+                  <th scope="col" class="text-left">Métrica</th>
+                  <th scope="col" class="text-right">E1</th>
+                  <th scope="col" class="text-right">E2</th>
+                  <th scope="col" class="text-right">E3</th>
+                  <th scope="col" class="text-right">E4</th>
+                  <th scope="col" class="text-right">&Delta;Méd (E4&minus;E1)</th>
+                  <th scope="col" class="text-right">&Delta;Med (E4&minus;E1)</th>
+                  <th scope="col" class="text-right">Mín–Máx (E4)</th>
+                </tr>
+              </thead>
+              <tbody class="num-mono text-xs">
+                <tr><th scope="row">CBO</th><td class="text-right">4,769</td><td class="text-right">5,246</td><td class="text-right">5,475</td><td class="text-right font-semibold">5,666</td><td class="text-right pos-val">+0,897</td><td class="text-right pos-val">+0,730</td><td class="text-right">2,500–9,965</td></tr>
+                <tr><th scope="row">RFC</th><td class="text-right">7,624</td><td class="text-right">8,346</td><td class="text-right">9,032</td><td class="text-right font-semibold">9,994</td><td class="text-right pos-val">+2,370</td><td class="text-right pos-val">+1,715</td><td class="text-right">2,500–18,687</td></tr>
+                <tr><th scope="row">WMC</th><td class="text-right">7,845</td><td class="text-right">7,802</td><td class="text-right">7,795</td><td class="text-right font-semibold">7,076</td><td class="text-right neg-val">&minus;0,769</td><td class="text-right neg-val">&minus;0,116</td><td class="text-right">1,000–17,936</td></tr>
+                <tr><th scope="row">LOC/mét.</th><td class="text-right">6,649</td><td class="text-right">6,115</td><td class="text-right">6,230</td><td class="text-right font-semibold">6,347</td><td class="text-right neg-val">&minus;0,302</td><td class="text-right pos-val">+0,226</td><td class="text-right">2,833–10,996</td></tr>
+                <tr><th scope="row">DIT</th><td class="text-right">1,425</td><td class="text-right">1,379</td><td class="text-right">1,396</td><td class="text-right font-semibold">1,365</td><td class="text-right neg-val">&minus;0,061</td><td class="text-right neg-val">&minus;0,056</td><td class="text-right">1,000–2,111</td></tr>
+                <tr><th scope="row">NOC</th><td class="text-right">0,079</td><td class="text-right">0,069</td><td class="text-right">0,100</td><td class="text-right font-semibold">0,087</td><td class="text-right pos-val">+0,008</td><td class="text-right neg-val">&minus;0,002</td><td class="text-right">0,000–0,275</td></tr>
+                <tr><th scope="row">LCOM*</th><td class="text-right">0,287</td><td class="text-right">0,266</td><td class="text-right">0,269</td><td class="text-right font-semibold">0,243</td><td class="text-right neg-val">&minus;0,044</td><td class="text-right neg-val">&minus;0,046</td><td class="text-right">0,000–0,468</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="text-xs text-gray-900/80 mt-2.5 leading-relaxed">
+            <strong>Crescimento etapa a etapa:</strong> CBO subiu <span class="num-mono">+0,476</span> (E1&rarr;E2), <span class="num-mono">+0,230</span> (E2&rarr;E3) e <span class="num-mono">+0,191</span> (E3&rarr;E4); RFC subiu <span class="num-mono">+0,722</span>, <span class="num-mono">+0,686</span> e <span class="num-mono">+0,962</span>. Quase toda a queda de WMC ocorreu em E3&rarr;E4 (<span class="num-mono">&minus;0,719</span>).
+          </p>
+        </div>
+
+        <div class="glass-card p-4 reveal">
+          <div class="text-xs font-bold text-gray-900 mb-2">Figura 2 — Distribuição por era no grupo pioneiro (caixa Q1–Q3, linha = mediana, ponto = média)</div>
+          <div id="boxplots-pioneiro" class="boxplot-grid"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SLIDE 12: 5.2 RESULTADOS (GRUPO PRINCIPAL — TABELAS 5/6 E FIGURA 3) ==================== -->
+  <section class="slide" data-slide="12" data-section="10" aria-label="Resultados 5.2: Evolução do Grupo Principal" inert>
+    <div class="gradient-mesh" aria-hidden="true">
+      <div class="blob" style="width: 320px; height: 320px; top: -70px; right: -60px; background: #874225; opacity: 0.13;"></div>
+      <div class="blob" style="width: 260px; height: 260px; bottom: -60px; left: -40px; background: #855644; opacity: 0.11;"></div>
+    </div>
+    <div class="content">
+      <p class="eyebrow mb-1.5 reveal">5. Resultados · 5.2 Evolução das Métricas CK por Grupo</p>
+      <h2 class="slide-title mb-3 reveal">Grupo principal (<span class="num-mono">n = 517</span>): mesma direção com variações moderadas</h2>
+
+      <div class="grid lg:grid-cols-[1.12fr_1fr] gap-4 items-start">
+        <div class="glass-card p-4 table-focus-shell reveal">
+          <div id="cap-principal" class="text-xs font-bold text-gray-900 mb-2">Tabelas 5 e 6 — Médias em E2, E3 e E4, extremos em E4 e diferenças pareadas</div>
+          <div tabindex="0" role="region" aria-labelledby="cap-principal" class="table-wrapper">
+            <table class="ibge-table">
+              <thead>
+                <tr>
+                  <th scope="col" class="text-left">Métrica</th>
+                  <th scope="col" class="text-right">E2</th>
+                  <th scope="col" class="text-right">E3</th>
+                  <th scope="col" class="text-right">E4</th>
+                  <th scope="col" class="text-right">&Delta;Méd (E4&minus;E2)</th>
+                  <th scope="col" class="text-right">&Delta;Med (E4&minus;E2)</th>
+                  <th scope="col" class="text-right">Mín–Máx (E4)</th>
+                </tr>
+              </thead>
+              <tbody class="num-mono text-xs">
+                <tr><th scope="row">CBO</th><td class="text-right">5,434</td><td class="text-right">5,621</td><td class="text-right font-semibold">5,688</td><td class="text-right pos-val">+0,254</td><td class="text-right pos-val">+0,236</td><td class="text-right">1,917–16,600</td></tr>
+                <tr><th scope="row">RFC</th><td class="text-right">6,736</td><td class="text-right">7,307</td><td class="text-right font-semibold">7,636</td><td class="text-right pos-val">+0,900</td><td class="text-right pos-val">+0,830</td><td class="text-right">0,333–51,052</td></tr>
+                <tr><th scope="row">WMC</th><td class="text-right">5,838</td><td class="text-right">5,799</td><td class="text-right font-semibold">5,777</td><td class="text-right neg-val">&minus;0,061</td><td class="text-right pos-val">+0,124</td><td class="text-right">0,667–40,948</td></tr>
+                <tr><th scope="row">LOC/mét.</th><td class="text-right">5,284</td><td class="text-right">5,408</td><td class="text-right font-semibold">5,522</td><td class="text-right pos-val">+0,239</td><td class="text-right pos-val">+0,237</td><td class="text-right">2,571–17,312</td></tr>
+                <tr><th scope="row">DIT</th><td class="text-right">1,218</td><td class="text-right">1,222</td><td class="text-right font-semibold">1,219</td><td class="text-right pos-val">+0,001</td><td class="text-right pos-val">+0,009</td><td class="text-right">1,000–2,000</td></tr>
+                <tr><th scope="row">NOC</th><td class="text-right">0,058</td><td class="text-right">0,063</td><td class="text-right font-semibold">0,062</td><td class="text-right pos-val">+0,004</td><td class="text-right pos-val">+0,019</td><td class="text-right">0,000–0,494</td></tr>
+                <tr><th scope="row">LCOM*</th><td class="text-right">0,245</td><td class="text-right">0,242</td><td class="text-right font-semibold">0,236</td><td class="text-right neg-val">&minus;0,008</td><td class="text-right neg-val">&minus;0,008</td><td class="text-right">0,000–0,591</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="text-xs text-gray-900/80 mt-2.5 leading-relaxed">
+            <strong>Consistência consecutiva:</strong> CBO cresceu <span class="num-mono">+0,187</span> (E2&rarr;E3) e <span class="num-mono">+0,067</span> (E3&rarr;E4); RFC cresceu <span class="num-mono">+0,571</span> e <span class="num-mono">+0,329</span>. O WMC ficou praticamente estável (média <span class="num-mono">&minus;0,061</span>; mediana <span class="num-mono">4,786 &rarr; 4,910</span>), com LCOM* e herança estáveis.
+          </p>
+        </div>
+
+        <div class="glass-card p-4 reveal">
+          <div class="text-xs font-bold text-gray-900 mb-2">Figura 3 — Distribuição por era no grupo principal (E2, E3 e E4)</div>
+          <div id="boxplots-principal" class="boxplot-grid"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SLIDE 13: 5.2 RESULTADOS (TAMANHO DO CÓDIGO — TABELA 7) ==================== -->
+  <section class="slide" data-slide="13" data-section="10" aria-label="Resultados 5.2: Tamanho do código por grupo e era" inert>
+    <div class="gradient-mesh" aria-hidden="true">
+      <div class="blob" style="width: 330px; height: 330px; top: -70px; left: -60px; background: #855644; opacity: 0.14;"></div>
+      <div class="blob" style="width: 250px; height: 250px; bottom: -60px; right: -40px; background: #ad5128; opacity: 0.11;"></div>
+    </div>
+    <div class="content">
+      <p class="eyebrow mb-2 reveal">5. Resultados · 5.2 Tamanho do Código</p>
+      <h2 class="slide-title mb-4 reveal">Expansão contínua do código contextualiza o aumento de CBO e RFC</h2>
+
+      <div class="glass-card p-4 mb-4 table-focus-shell reveal">
+        <div id="cap-porte" class="text-sm font-bold text-gray-900 mb-2">Tabela 7 — Tamanho do código dos repositórios por grupo e era (Média, Mediana e Extremos)</div>
+        <div tabindex="0" role="region" aria-labelledby="cap-porte" class="table-wrapper">
+          <table class="ibge-table">
+            <thead>
+              <tr>
+                <th scope="col" class="text-left">Grupo</th>
+                <th scope="col" class="text-left">Medida</th>
+                <th scope="col" class="text-right">Mediana E1</th>
+                <th scope="col" class="text-right">Mediana E2</th>
+                <th scope="col" class="text-right">Mediana E3</th>
+                <th scope="col" class="text-right">Mediana E4</th>
+                <th scope="col" class="text-right">Média E4</th>
+                <th scope="col" class="text-right">Mín–Máx E4</th>
+              </tr>
+            </thead>
+            <tbody class="num-mono text-xs">
+              <tr>
+                <th scope="row">Pioneiro (20)</th>
+                <td class="font-sans">Arquivos Java</td>
+                <td class="text-right">110</td>
+                <td class="text-right">256</td>
+                <td class="text-right">400</td>
+                <td class="text-right font-semibold">506</td>
+                <td class="text-right">3.044</td>
+                <td class="text-right">6 – 25.490</td>
+              </tr>
+              <tr>
+                <th scope="row">Pioneiro (20)</th>
+                <td class="font-sans">LOC</td>
+                <td class="text-right">6.888</td>
+                <td class="text-right">20.116</td>
+                <td class="text-right">28.678</td>
+                <td class="text-right font-semibold">33.071</td>
+                <td class="text-right">223.919</td>
+                <td class="text-right">72 – 2.132.666</td>
+              </tr>
+              <tr>
+                <th scope="row">Principal (517)</th>
+                <td class="font-sans">Arquivos Java</td>
+                <td class="text-right">--</td>
+                <td class="text-right">34</td>
+                <td class="text-right">50</td>
+                <td class="text-right font-semibold">54</td>
+                <td class="text-right">228</td>
+                <td class="text-right">2 – 23.514</td>
+              </tr>
+              <tr>
+                <th scope="row">Principal (517)</th>
+                <td class="font-sans">LOC</td>
+                <td class="text-right">--</td>
+                <td class="text-right">1.308</td>
+                <td class="text-right">2.070</td>
+                <td class="text-right font-semibold">2.213</td>
+                <td class="text-right">16.131</td>
+                <td class="text-right">30 – 2.338.447</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-4">
+        <div class="glass-card p-4 reveal">
+          <h3 class="text-base font-bold text-gray-900 mb-1">Crescimento em todas as eras</h3>
+          <p class="text-sm text-gray-900/80">Mediana subiu de <span class="num-mono">6.888 &rarr; 33.071</span> LOC nos pioneiros (4,8&times;) e de <span class="num-mono">1.308 &rarr; 2.213</span> LOC nos principais (1,7&times;).</p>
+        </div>
+        <div class="glass-card p-4 reveal">
+          <h3 class="text-base font-bold text-gray-900 mb-1">Assimetria (Média &gg; Mediana)</h3>
+          <p class="text-sm text-gray-900/80">Poucos sistemas acima de 2 milhões de LOC elevam a média (<span class="num-mono">223.919</span> vs. <span class="num-mono">33.071</span> no pioneiro), justificando reportar mediana e máximo.</p>
+        </div>
+        <div class="glass-card p-4 reveal">
+          <h3 class="text-base font-bold text-gray-900 mb-1">Síntese evolutiva</h3>
+          <p class="text-sm text-gray-900/80">À medida que os sistemas cresceram, a colaboração interclasses (CBO e RFC) aumentou sem elevar WMC ou LCOM* na média.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SLIDE 14: 5.3 RESULTADOS (PROJETOS COM E SEM IA — TABELAS 8/9 E FIGURA 4) ==================== -->
+  <section class="slide" data-slide="14" data-section="10" aria-label="Resultados 5.3: Métricas CK em projetos com e sem IA" inert>
+    <div class="gradient-mesh" aria-hidden="true">
+      <div class="blob" style="width: 340px; height: 340px; top: -80px; right: -70px; background: #ad5128; opacity: 0.14;"></div>
+      <div class="blob" style="width: 260px; height: 260px; bottom: -60px; left: -40px; background: #874225; opacity: 0.11;"></div>
+    </div>
+    <div class="content">
+      <p class="eyebrow mb-1.5 reveal">5. Resultados · 5.3 Métricas CK em Projetos com e sem IA</p>
+      <h2 class="slide-title mb-3 reveal">Vestígios em E4 (<span class="num-mono">n = 88</span>) e comparação com o grupo sem IA (<span class="num-mono">n = 449</span>)</h2>
+
+      <div class="grid lg:grid-cols-[1.08fr_1fr] gap-4 items-start">
+        <div class="space-y-3">
+          <div class="glass-card p-3.5 reveal">
+            <div class="text-xs font-bold text-gray-900 mb-2">Tabela 8 — Tipos de vestígio nos 88 repositórios com IA em E4 (zero em E1–E3)</div>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-center">
+              <div class="soft-panel p-2"><div class="text-xl font-bold text-[#ad5128] num-mono">42</div><div class="text-[0.72rem] text-black/70">Coautoria em <em>commits</em></div></div>
+              <div class="soft-panel p-2"><div class="text-xl font-bold text-[#ad5128] num-mono">40</div><div class="text-[0.72rem] text-black/70">Config. de agente</div></div>
+              <div class="soft-panel p-2"><div class="text-xl font-bold text-[#ad5128] num-mono">39</div><div class="text-[0.72rem] text-black/70">Entrada em <code class="num-mono">.gitignore</code></div></div>
+              <div class="soft-panel p-2"><div class="text-xl font-bold text-[#ad5128] num-mono">7</div><div class="text-[0.72rem] text-black/70">Conta autora de <em>commit</em></div></div>
+            </div>
+          </div>
+
+          <div class="glass-card p-3.5 table-focus-shell reveal">
+            <div id="cap-ia-e4" class="text-xs font-bold text-gray-900 mb-1.5">Tabela 9 — Comparação em E4: Com IA (n = 88) vs. Sem IA (n = 449)</div>
+            <div tabindex="0" role="region" aria-labelledby="cap-ia-e4" class="table-wrapper">
+              <table class="ibge-table">
+                <thead>
+                  <tr>
+                    <th scope="col" class="text-left">Métrica</th>
+                    <th scope="col" class="text-right">Média Com IA</th>
+                    <th scope="col" class="text-right">Média Sem IA</th>
+                    <th scope="col" class="text-right">Mediana Com IA</th>
+                    <th scope="col" class="text-right">Mediana Sem IA</th>
+                  </tr>
+                </thead>
+                <tbody class="num-mono text-xs">
+                  <tr><th scope="row">CBO</th><td class="text-right pos-val">6,116</td><td class="text-right">5,603</td><td class="text-right pos-val">5,938</td><td class="text-right">5,444</td></tr>
+                  <tr><th scope="row">RFC</th><td class="text-right pos-val">9,632</td><td class="text-right">7,350</td><td class="text-right pos-val">8,518</td><td class="text-right">6,549</td></tr>
+                  <tr><th scope="row">WMC</th><td class="text-right pos-val">6,975</td><td class="text-right">5,600</td><td class="text-right pos-val">5,762</td><td class="text-right">4,735</td></tr>
+                  <tr><th scope="row">LOC/método</th><td class="text-right pos-val">6,078</td><td class="text-right">5,450</td><td class="text-right pos-val">5,982</td><td class="text-right">5,186</td></tr>
+                  <tr><th scope="row">DIT</th><td class="text-right">1,292</td><td class="text-right">1,211</td><td class="text-right">1,271</td><td class="text-right">1,174</td></tr>
+                  <tr><th scope="row">NOC</th><td class="text-right">0,071</td><td class="text-right">0,061</td><td class="text-right">0,057</td><td class="text-right">0,016</td></tr>
+                  <tr><th scope="row">LCOM*</th><td class="text-right">0,249</td><td class="text-right">0,234</td><td class="text-right">0,243</td><td class="text-right">0,230</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card p-4 reveal">
+          <div class="text-xs font-bold text-gray-900 mb-2">Figura 4 — Distribuição por era: Com IA (laranja) vs. Sem IA (cinza)*</div>
+          <div id="boxplots-ia" class="boxplot-grid"></div>
+          <p class="text-[0.7rem] text-black/55 mt-1.5">*Em E1, apenas os 20 repositórios criados até 2013 (9 com IA e 11 sem IA); em E2–E4, todos os 537.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SLIDE 15: 5.3 RESULTADOS (TRAJETÓRIA E TAMANHO COM/SEM IA — TABELAS 10 E 11) ==================== -->
+  <section class="slide" data-slide="15" data-section="10" aria-label="Resultados 5.3: Trajetória prévia e tamanho do código nos grupos de IA" inert>
+    <div class="gradient-mesh" aria-hidden="true">
+      <div class="blob" style="width: 320px; height: 320px; top: -70px; left: -60px; background: #874225; opacity: 0.13;"></div>
+      <div class="blob" style="width: 260px; height: 260px; bottom: -60px; right: -50px; background: #855644; opacity: 0.11;"></div>
+    </div>
+    <div class="content">
+      <p class="eyebrow mb-2 reveal">5. Resultados · 5.3 Trajetória Prévia e Tamanho do Código</p>
+      <h2 class="slide-title mb-4 reveal">Por que as diferenças descrevem perfil e não efeito causal da IA</h2>
+
+      <div class="grid lg:grid-cols-2 gap-4 mb-4">
+        <div class="glass-card p-4 table-focus-shell reveal">
+          <div id="cap-dif-ia" class="text-xs font-bold text-gray-900 mb-2">Tabela 10 — Diferença formada antes de E4 (variação das médias nos 537 projetos)</div>
+          <div tabindex="0" role="region" aria-labelledby="cap-dif-ia" class="table-wrapper">
+            <table class="ibge-table">
+              <thead>
+                <tr>
+                  <th scope="col" class="text-left">Métrica / Grupo</th>
+                  <th scope="col" class="text-right">Média E2</th>
+                  <th scope="col" class="text-right">&Delta; E3&minus;E2</th>
+                  <th scope="col" class="text-right">Média E3</th>
+                  <th scope="col" class="text-right">&Delta; E4&minus;E3</th>
+                  <th scope="col" class="text-right">Média E4</th>
+                </tr>
+              </thead>
+              <tbody class="num-mono text-xs">
+                <tr><th scope="row">CBO · Com IA (88)</th><td class="text-right">5,374</td><td class="text-right pos-val">+0,524</td><td class="text-right font-semibold">5,899</td><td class="text-right pos-val">+0,217</td><td class="text-right font-semibold">6,116</td></tr>
+                <tr><th scope="row">CBO · Sem IA (449)</th><td class="text-right">5,437</td><td class="text-right">+0,123</td><td class="text-right">5,560</td><td class="text-right">+0,043</td><td class="text-right">5,603</td></tr>
+                <tr><th scope="row">RFC · Com IA (88)</th><td class="text-right">7,256</td><td class="text-right pos-val">+1,267</td><td class="text-right font-semibold">8,523</td><td class="text-right pos-val">+1,109</td><td class="text-right font-semibold">9,632</td></tr>
+                <tr><th scope="row">RFC · Sem IA (449)</th><td class="text-right">6,706</td><td class="text-right">+0,440</td><td class="text-right">7,145</td><td class="text-right">+0,205</td><td class="text-right">7,350</td></tr>
+                <tr><th scope="row">WMC · Com IA (88)</th><td class="text-right">6,559</td><td class="text-right pos-val">+0,120</td><td class="text-right">6,679</td><td class="text-right pos-val">+0,296</td><td class="text-right font-semibold">6,975</td></tr>
+                <tr><th scope="row">WMC · Sem IA (449)</th><td class="text-right">5,784</td><td class="text-right neg-val">&minus;0,068</td><td class="text-right">5,716</td><td class="text-right neg-val">&minus;0,116</td><td class="text-right">5,600</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="glass-card p-4 table-focus-shell reveal">
+          <div id="cap-porte-ia" class="text-xs font-bold text-gray-900 mb-2">Tabela 11 — Tamanho do código nos grupos com IA e sem IA (E2 a E4)</div>
+          <div tabindex="0" role="region" aria-labelledby="cap-porte-ia" class="table-wrapper">
+            <table class="ibge-table">
+              <thead>
+                <tr>
+                  <th scope="col" class="text-left">Grupo / Medida</th>
+                  <th scope="col" class="text-right">Mediana E2</th>
+                  <th scope="col" class="text-right">Mediana E3</th>
+                  <th scope="col" class="text-right">Mediana E4</th>
+                  <th scope="col" class="text-right">Média E4</th>
+                  <th scope="col" class="text-right">Máximo E4</th>
+                </tr>
+              </thead>
+              <tbody class="num-mono text-xs">
+                <tr><th scope="row">Com IA · Arq. Java</th><td class="text-right">50</td><td class="text-right">72</td><td class="text-right pos-val">102</td><td class="text-right">1.274</td><td class="text-right">25.490</td></tr>
+                <tr><th scope="row">Sem IA · Arq. Java</th><td class="text-right">31</td><td class="text-right">49</td><td class="text-right">50</td><td class="text-right">148</td><td class="text-right">3.055</td></tr>
+                <tr><th scope="row">Com IA · LOC</th><td class="text-right">2.666</td><td class="text-right">3.826</td><td class="text-right pos-val">5.517</td><td class="text-right">105.537</td><td class="text-right">2.338.447</td></tr>
+                <tr><th scope="row">Sem IA · LOC</th><td class="text-right">1.246</td><td class="text-right">1.942</td><td class="text-right">2.025</td><td class="text-right">7.863</td><td class="text-right">206.732</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="glass-card p-4 border-[#ad5128]/35 reveal">
+        <div class="grid md:grid-cols-3 gap-4 text-sm text-gray-900/85">
+          <div><strong>1. Divergência pré-IA (E2&rarr;E3):</strong> sem nenhum vestígio de IA em E3, o grupo com IA já havia se tornado mais acoplado (<span class="num-mono">5,899</span> vs. <span class="num-mono">5,560</span>).</div>
+          <div><strong>2. Atividade em E4:</strong> os <span class="num-mono">150</span> repositórios sem <em>commits</em> na <em>branch</em> principal desde 2022 pertencem todos ao grupo sem IA (&Delta; nulo em E3&rarr;E4).</div>
+          <div><strong>3. Diferença de tamanho:</strong> com IA tem ~13&times; mais LOC na média (<span class="num-mono">105.537</span> vs. <span class="num-mono">7.863</span>) e 2,7&times; na mediana (<span class="num-mono">5.517</span> vs. <span class="num-mono">2.025</span>; El Emam et al., 2001).</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SLIDE 16: 5.4 RESULTADOS (SUMARIZAÇÃO DOS RESULTADOS) ==================== -->
+  <section class="slide" data-slide="16" data-section="10" aria-label="Resultados 5.4: Sumarização dos resultados" inert>
+    <div class="gradient-mesh" aria-hidden="true">
+      <div class="blob" style="width: 300px; height: 300px; top: -60px; right: -70px; background: #ad5128; opacity: 0.14;"></div>
+      <div class="blob" style="width: 260px; height: 260px; bottom: -60px; left: -50px; background: #855644; opacity: 0.12;"></div>
+    </div>
+    <div class="content">
+      <p class="eyebrow mb-2 reveal">5. Resultados · 5.4 Sumarização dos Resultados</p>
+      <h2 class="slide-title mb-4 reveal">Síntese direta em resposta aos objetivos</h2>
+
+      <div class="grid md:grid-cols-3 gap-4 mb-4">
+        <div class="glass-card p-5 reveal">
+          <span class="chip inline-flex px-2.5 py-0.5 rounded-full text-xs mb-2.5">Objetivo Específico (i)</span>
+          <h3 class="text-lg font-bold text-gray-900 mb-2">Qualidade medida nas eras</h3>
+          <p class="text-sm text-gray-900/85 leading-relaxed">
+            Nos 537 repositórios, entre a primeira e a última era de cada grupo: CBO passou de <span class="num-mono">4,769 &rarr; 5,666</span> (pioneiro) e <span class="num-mono">5,434 &rarr; 5,688</span> (principal); RFC de <span class="num-mono">7,624 &rarr; 9,994</span> e <span class="num-mono">6,736 &rarr; 7,636</span>; WMC de <span class="num-mono">7,845 &rarr; 7,076</span> e <span class="num-mono">5,838 &rarr; 5,777</span>; e LCOM* de <span class="num-mono">0,287 &rarr; 0,243</span> e <span class="num-mono">0,245 &rarr; 0,236</span>.
+          </p>
+        </div>
+        <div class="glass-card p-5 reveal">
+          <span class="chip inline-flex px-2.5 py-0.5 rounded-full text-xs mb-2.5">Objetivo Específico (ii)</span>
+          <h3 class="text-lg font-bold text-gray-900 mb-2">Evolução em cada era</h3>
+          <p class="text-sm text-gray-900/85 leading-relaxed">
+            CBO (<span class="num-mono">+0,897</span> e <span class="num-mono">+0,254</span>) e RFC (<span class="num-mono">+2,370</span> e <span class="num-mono">+0,900</span>) subiram em todas as comparações consecutivas, sem aumento médio de WMC nem de LCOM* e com herança estável, acompanhando a expansão da mediana de LOC (<span class="num-mono">6.888 &rarr; 33.071</span> e <span class="num-mono">1.308 &rarr; 2.213</span>).
+          </p>
+        </div>
+        <div class="glass-card p-5 reveal">
+          <span class="chip inline-flex px-2.5 py-0.5 rounded-full text-xs mb-2.5">Objetivo Específico (iii)</span>
+          <h3 class="text-lg font-bold text-gray-900 mb-2">Com IA vs. Sem IA</h3>
+          <p class="text-sm text-gray-900/85 leading-relaxed">
+            Em E4, os 88 projetos com IA exibiram médias maiores de CBO (<span class="num-mono">6,116</span> vs. <span class="num-mono">5,603</span>), RFC (<span class="num-mono">9,632</span> vs. <span class="num-mono">7,350</span>) e WMC (<span class="num-mono">6,975</span> vs. <span class="num-mono">5,600</span>), com coesão e herança próximas, em códigos maiores (mediana <span class="num-mono">5.517</span> vs. <span class="num-mono">2.025</span> LOC) e já mais acoplados em E3.
+          </p>
+        </div>
+      </div>
+
+      <div class="glass-card p-5 border-[#ad5128]/35 reveal">
+        <div class="text-xs uppercase tracking-[0.14em] text-[#ad5128] font-bold mb-1">Síntese do Objetivo Geral</div>
+        <p class="text-base text-gray-900/90 leading-relaxed">
+          Ao longo das eras, o acoplamento e a resposta por classe cresceram junto ao tamanho do código, sem aumento médio da complexidade nem da falta de coesão, e os projetos com vestígios de IA mostraram maior acoplamento e complexidade que os sem IA, <strong>sem que os resultados permitam atribuir essa diferença à IA</strong>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SLIDE 17: 6. AMEAÇAS À VALIDADE ==================== -->
+  <section class="slide" data-slide="17" data-section="17" aria-label="Seção 6: Ameaças à Validade" inert>
+    <div class="gradient-mesh" aria-hidden="true">
+      <div class="blob" style="width: 340px; height: 340px; top: -80px; left: -80px; background: #855644; opacity: 0.14;"></div>
+      <div class="blob" style="width: 240px; height: 240px; bottom: -60px; right: -40px; background: #ad5128; opacity: 0.10;"></div>
+    </div>
+    <div class="content">
+      <p class="eyebrow mb-2 reveal">6. Ameaças à Validade</p>
+      <h2 class="slide-title mb-4 reveal">Ameaças e estratégias de mitigação (Wohlin et al., 2012)</h2>
+
+      <div class="grid md:grid-cols-2 gap-4">
+        <div class="glass-card p-5 reveal">
+          <span class="chip inline-flex px-2.5 py-0.5 rounded-full text-xs mb-2">Validade de Construto</span>
+          <p class="text-sm text-gray-900/85 mb-2">
+            O CK analisa o código estaticamente sem resolver dependências externas compiladas; o detector de IA cobre apenas vestígios explícitos de um catálogo fixo; e a curadoria usa heurísticas.
+          </p>
+          <div class="soft-panel p-2.5 text-xs text-gray-900/85">
+            <strong>Mitigação:</strong> mesma versão do extrator CK em todos os <em>snapshots</em>; regras determinísticas pré-definidas; ausência de vestígio nunca é lida como ausência de uso de IA.
+          </div>
+        </div>
+
+        <div class="glass-card p-5 reveal">
+          <span class="chip inline-flex px-2.5 py-0.5 rounded-full text-xs mb-2">Validade Interna</span>
+          <p class="text-sm text-gray-900/85 mb-2">
+            Expansão de tamanho, refatorações e equipe variam junto às métricas. Além disso, 150 dos 449 projetos sem IA (e 0 com IA) não tiveram <em>commits</em> na <em>branch</em> principal desde 2022 (variação nula em E3&rarr;E4).
+          </p>
+          <div class="soft-panel p-2.5 text-xs text-gray-900/85">
+            <strong>Mitigação:</strong> comparações sobre os mesmos repositórios, reporte conjunto de arquivos Java e LOC, e nenhuma relação causal atribuída à IA.
+          </div>
+        </div>
+
+        <div class="glass-card p-5 reveal">
+          <span class="chip inline-flex px-2.5 py-0.5 rounded-full text-xs mb-2">Validade Externa</span>
+          <p class="text-sm text-gray-900/85 mb-2">
+            A seleção depende do tópico <code class="num-mono text-xs">spring-boot</code>, linguagem Java, atividade desde 2022 e medição em todas as eras — introduzindo <strong>viés de sobrevivência</strong> em favor de sistemas longevos, além do grupo pioneiro reduzido (<span class="num-mono">n = 20</span>).
+          </p>
+          <div class="soft-panel p-2.5 text-xs text-gray-900/85">
+            <strong>Mitigação:</strong> análise separada dos grupos pioneiro e principal e delimitação explícita das conclusões ao conjunto observado.
+          </div>
+        </div>
+
+        <div class="glass-card p-5 reveal">
+          <span class="chip inline-flex px-2.5 py-0.5 rounded-full text-xs mb-2">Validade de Conclusão</span>
+          <p class="text-sm text-gray-900/85 mb-2">
+            O estudo restringe-se à estatística descritiva, e as medições repetidas dos mesmos repositórios ao longo das eras não constituem amostras independentes.
+          </p>
+          <div class="soft-panel p-2.5 text-xs text-gray-900/85">
+            <strong>Mitigação:</strong> ausência de p-valores ou tamanhos de efeito, peso igual por repositório, reporte de mínimo/média/mediana/máximo e zero atrito entre eras.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SLIDE 18: 7. CONCLUSÃO E PACOTE DE REPLICAÇÃO ==================== -->
+  <section class="slide" data-slide="18" data-section="18" aria-label="Seção 7: Conclusão, Trabalhos Futuros e Pacote de Replicação" inert>
+    <div class="gradient-mesh" aria-hidden="true">
+      <div class="blob" style="width: 380px; height: 380px; top: -90px; right: -80px; background: #ad5128; opacity: 0.16;"></div>
+      <div class="blob" style="width: 300px; height: 300px; bottom: -80px; left: -60px; background: #855644; opacity: 0.13;"></div>
+    </div>
+    <div class="content">
+      <p class="eyebrow mb-2 reveal">7. Conclusão e Pacote de Replicação</p>
+      <h2 class="slide-title mb-4 reveal">Conclusões principais e agenda de trabalhos futuros</h2>
+
+      <div class="grid lg:grid-cols-[1.1fr_0.9fr] gap-5 mb-4">
+        <div class="glass-card p-5 reveal">
+          <h3 class="text-lg font-bold text-gray-900 mb-2.5">Síntese Conclusiva (537 repositórios · 1.631 <em>snapshots</em>)</h3>
+          <ul class="space-y-2.5 text-base text-gray-900/85 leading-relaxed">
+            <li>
+              <strong>Evolução longitudinal:</strong> nos mesmos sistemas, o acoplamento cresceu a cada era (CBO médio <span class="num-mono">4,769 &rarr; 5,666</span> nos pioneiros e <span class="num-mono">5,434 &rarr; 5,688</span> nos principais), enquanto complexidade (WMC) e falta de coesão (LCOM*) não aumentaram na média e a herança permaneceu estável — indicando maior colaboração entre classes sem perda média de coesão.
+            </li>
+            <li>
+              <strong>Perfil com e sem IA em E4:</strong> os 88 projetos com vestígios de IA apresentaram CBO médio maior (<span class="num-mono">6,116</span> contra <span class="num-mono">5,603</span> nos 449 sem IA), mas em bases de código maiores e já mais acopladas na era anterior, não sustentando atribuição causal.
+            </li>
+          </ul>
+        </div>
+
+        <div class="glass-card p-5 reveal">
+          <h3 class="text-lg font-bold text-gray-900 mb-2.5">Trabalhos Futuros</h3>
+          <ol class="space-y-2.5 text-sm text-gray-900/85 leading-relaxed list-decimal pl-5">
+            <li>
+              <strong>Controles multivariados:</strong> controlar simultaneamente tamanho do código, domínio de aplicação e equipe nas comparações entre projetos com e sem IA.
+            </li>
+            <li>
+              <strong>Granularidade mais fina:</strong> investigar a assistência por IA em nível de método e de <em>pull request</em>.
+            </li>
+            <li>
+              <strong>Ampliação do grupo pioneiro:</strong> incorporar outras fontes de descoberta para expandir a cobertura da era E1 (2009–2013).
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="glass-card p-4 border-[#ad5128]/35 flex flex-wrap items-center justify-between gap-3 reveal">
+        <div>
+          <div class="text-xs uppercase tracking-[0.14em] text-[#ad5128] font-bold">Pacote de Replicação Público</div>
+          <div class="text-sm text-gray-900/80">Scripts determinísticos de coleta, curadoria, extração CK, detecção de IA e geração das tabelas/figuras:</div>
+        </div>
+        <a href="https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2026-1-tcci-3585100-pes-gabriel-ferreira-e-guilherme-souza" target="_blank" rel="noopener noreferrer" class="chip px-4 py-2 rounded-full text-xs num-mono hover:bg-[#ad5128]/20 transition-colors">
+          github.com/ICEI-PUC-Minas-PPLES-TI/...gabriel-ferreira-e-guilherme-souza &nearr;
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<nav class="nav-controls" aria-label="Navegação entre slides">
+  <button type="button" class="nav-btn" id="prev-btn" aria-label="Slide anterior">&#8249;</button>
   <div class="slide-dots" id="dots"></div>
-  <button class="nav-btn" onclick="changeSlide(1)" aria-label="Próximo slide">&#8250;</button>
-  <span class="slide-counter" id="counter">1 / 9</span>
-</div>
+  <button type="button" class="nav-btn" id="next-btn" aria-label="Próximo slide">&#8250;</button>
+  <span class="slide-counter" id="counter" aria-live="polite">1 / 18</span>
+  <button type="button" class="nav-btn motion-btn" id="motion-toggle">Pausar fundo</button>
+</nav>
 
 <script>
-let current = 1;
-const total = document.querySelectorAll('.slide').length;
-const dotsContainer = document.getElementById('dots');
-const counter = document.getElementById('counter');
-for (let i = 1; i <= total; i++) { const dot = document.createElement('div'); dot.className = 'dot' + (i === 1 ? ' active' : ''); dot.onclick = () => goToSlide(i); dotsContainer.appendChild(dot); }
-function goToSlide(n) {
-  const prev = document.querySelector('.slide.active');
-  const next = document.querySelector(`.slide[data-slide="${n}"]`);
-  if (prev) prev.classList.remove('active');
-  if (next) { next.classList.add('active'); animateSlide(next); }
-  current = n; updateNav();
-}
-function changeSlide(dir) { let next = current + dir; if (next < 1) next = total; if (next > total) next = 1; goToSlide(next); }
-function updateNav() { document.querySelectorAll('.dot').forEach((d, i) => d.classList.toggle('active', i + 1 === current)); counter.textContent = current + ' / ' + total; }
-document.addEventListener('keydown', (e) => { if (e.key === 'ArrowRight' || e.key === ' ') { e.preventDefault(); changeSlide(1); } if (e.key === 'ArrowLeft') { e.preventDefault(); changeSlide(-1); } });
-let touchStartX = 0;
-document.addEventListener('touchstart', (e) => { touchStartX = e.touches[0].clientX; });
-document.addEventListener('touchend', (e) => { const diff = touchStartX - e.changedTouches[0].clientX; if (Math.abs(diff) > 50) changeSlide(diff > 0 ? 1 : -1); });
-function animateSlide(slide) {
-  slide.querySelectorAll('.reveal').forEach((el, i) => {
-    el.style.transition = 'none';
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(20px)';
-    el.offsetHeight;
-    const delay = i * 0.08;
-    el.style.transition = `opacity 0.35s ease ${delay}s, transform 0.35s ease ${delay}s`;
-    el.style.opacity = '1';
-    el.style.transform = 'translateY(0px)';
-  });
-}
-document.addEventListener('mousemove', (e) => {
-  const spotlight = document.querySelector('.mouse-spotlight');
-  if (spotlight) {
-    const rgb = getComputedStyle(document.documentElement).getPropertyValue('--glow-color-rgb').trim() || '173,81,40';
-    spotlight.style.background = `radial-gradient(600px circle at ${e.clientX}px ${e.clientY}px, rgba(${rgb}, 0.04), transparent 40%)`;
+  // Exact boxplot coordinates extracted from Artigo/Generated/PainelOriginalBox*.tex
+  const BOX_PIONEIRO = {
+    eras: ['E1', 'E2', 'E3', 'E4'],
+    metrics: [
+      { title: 'CBO', data: [[2.2500,3.6979,4.7894,5.3638,6.4755,4.7693],[2.8348,4.2413,5.0538,6.2479,8.8299,5.2456],[2.5000,4.4600,5.3107,6.3716,9.0520,5.4754],[2.5000,4.5574,5.5194,6.5602,7.6260,5.6660]] },
+      { title: 'RFC', data: [[3.6735,6.4658,7.7080,9.8484,11.7949,7.6241],[2.7500,6.2362,7.8735,10.3754,14.4066,8.3456],[5.1445,7.5619,8.4474,10.2392,14.1613,9.0319],[2.5000,7.5619,9.4226,11.9990,16.1147,9.9939]] },
+      { title: 'WMC', data: [[1.6667,5.5803,6.8878,9.8280,12.7204,7.8452],[1.7500,5.2366,6.7222,10.8782,18.0000,7.8025],[1.5000,5.3311,6.6021,10.4579,17.3065,7.7953],[1.0000,5.0690,6.7716,8.3912,12.0382,7.0759]] },
+      { title: 'LOC/mét.', data: [[3.2000,5.5243,5.9840,7.6591,8.6750,6.6490],[3.1429,4.9897,5.7188,7.2891,8.2483,6.1146],[3.0000,4.7106,5.9245,7.3482,9.3011,6.2299],[4.4130,5.5687,6.2103,7.0548,7.6479,6.3466]] },
+      { title: 'DIT', data: [[1.0000,1.2949,1.3635,1.5272,1.5764,1.4255],[1.0000,1.2519,1.3382,1.4759,1.6331,1.3794],[1.0000,1.1948,1.3660,1.5146,1.7903,1.3959],[1.0000,1.1659,1.3070,1.5393,1.7251,1.3646]] },
+      { title: 'NOC', data: [[0.0000,0.0000,0.0720,0.1170,0.2688,0.0792],[0.0000,0.0000,0.0535,0.1174,0.2363,0.0685],[0.0000,0.0426,0.0867,0.1428,0.2903,0.0995],[0.0000,0.0227,0.0698,0.1375,0.2747,0.0870]] },
+      { title: 'LCOM*', data: [[0.1111,0.2125,0.2898,0.3323,0.4750,0.2871],[0.0833,0.1994,0.2508,0.3314,0.4474,0.2658],[0.0556,0.2066,0.2551,0.3212,0.4661,0.2690],[0.1021,0.2026,0.2434,0.2876,0.3542,0.2434]] }
+    ]
+  };
+
+  const BOX_PRINCIPAL = {
+    eras: ['E2', 'E3', 'E4'],
+    metrics: [
+      { title: 'CBO', data: [[1.3083,4.3103,5.2917,6.3667,9.3676,5.4338],[1.9167,4.5000,5.4959,6.5441,9.5000,5.6210],[1.9167,4.5625,5.5281,6.5995,9.5000,5.6880]] },
+      { title: 'RFC', data: [[0.0000,4.2308,6.1111,8.7333,15.3147,6.7359],[0.3333,4.7623,6.7000,9.2611,15.9516,7.3068],[0.3333,5.0000,6.9412,9.5192,16.1370,7.6362]] },
+      { title: 'WMC', data: [[0.6667,3.2273,4.7857,6.9500,12.4030,5.8380],[0.8000,3.2568,4.8909,6.9500,12.3659,5.7992],[0.6667,3.1974,4.9100,7.0000,12.5000,5.7765]] },
+      { title: 'LOC/mét.', data: [[2.0000,4.0928,4.9792,6.0844,8.9674,5.2836],[2.5714,4.2551,5.1361,6.1905,8.9804,5.4082],[2.5714,4.3269,5.2159,6.3189,9.1883,5.5223]] },
+      { title: 'DIT', data: [[1.0000,1.0357,1.1712,1.3333,1.7736,1.2177],[1.0000,1.0612,1.1818,1.3333,1.7000,1.2223],[1.0000,1.0612,1.1804,1.3333,1.7317,1.2186]] },
+      { title: 'NOC', data: [[0.0000,0.0000,0.0000,0.0800,0.2000,0.0583],[0.0000,0.0000,0.0196,0.0928,0.2287,0.0633],[0.0000,0.0000,0.0190,0.0902,0.2235,0.0620]] },
+      { title: 'LCOM*', data: [[0.0000,0.1687,0.2409,0.3209,0.5295,0.2448],[0.0000,0.1748,0.2364,0.3156,0.5181,0.2421],[0.0000,0.1653,0.2328,0.3120,0.5312,0.2364]] }
+    ]
+  };
+
+  const BOX_IA = {
+    eras: ['E1', 'E2', 'E3', 'E4'],
+    paired: true,
+    metrics: [
+      { title: 'CBO',
+        a: [[3.2500,3.7156,4.7129,4.8678,5.4160,4.3648],[2.3333,4.2738,5.2075,6.2461,8.5490,5.3744],[2.4038,4.9337,5.7261,6.9261,9.0520,5.8986],[2.5185,5.0181,5.9380,6.9462,9.3000,6.1158]],
+        b: [[2.2500,3.5769,5.0244,6.0569,6.4755,5.1002],[1.3083,4.3092,5.2727,6.3913,9.5000,5.4371],[1.9167,4.4739,5.4230,6.4595,9.2836,5.5601],[1.9167,4.5000,5.4444,6.4835,9.2836,5.6032]] },
+      { title: 'RFC',
+        a: [[6.0008,6.5431,7.8713,9.0000,10.2531,7.4728],[0.0000,5.0995,6.6852,9.4636,14.8542,7.2561],[1.7000,5.8163,7.9167,10.0478,15.9516,8.5231],[1.7000,6.5258,8.5176,11.6524,17.7624,9.6320]],
+        b: [[3.6735,6.4316,7.5447,10.0021,11.7949,7.7478],[0.3333,4.2105,6.0000,8.7000,15.3147,6.7057],[0.3333,4.6667,6.4583,9.0000,15.2131,7.1453],[0.3333,4.8000,6.5494,9.3333,16.1147,7.3500]] },
+      { title: 'WMC',
+        a: [[2.9167,5.1258,6.2341,9.5676,11.8898,7.0846],[1.0000,3.8027,5.2183,8.4823,14.5455,6.5591],[1.2222,4.3125,5.2843,7.8719,12.7692,6.6788],[1.0200,4.3333,5.7618,7.9345,13.3280,6.9747]],
+        b: [[1.6667,6.2537,7.9919,10.4744,12.7204,8.4675],[0.6667,3.2381,4.7490,6.9500,12.4030,5.7841],[0.8000,3.2157,4.8824,6.8571,12.0656,5.7158],[0.6667,3.0377,4.7352,6.8686,12.5000,5.5996]] },
+      { title: 'LOC/mét.',
+        a: [[5.6594,6.0708,6.2234,7.5729,8.4622,6.4804],[2.0000,4.4283,5.5138,6.2254,8.4560,5.3706],[3.1849,4.6254,5.7151,6.7055,9.1380,5.9341],[3.5545,4.9992,5.9816,6.9064,8.7500,6.0777]],
+        b: [[3.2000,5.3819,5.7084,7.2861,8.6750,6.7869],[2.4286,4.0502,4.9412,6.1061,8.9348,5.3035],[2.5714,4.2212,5.0441,6.1538,8.9804,5.3417],[2.5714,4.2863,5.1858,6.2268,9.1291,5.4501]] },
+      { title: 'DIT',
+        a: [[1.2500,1.2952,1.3679,1.5479,1.5764,1.4146],[1.0000,1.0629,1.2618,1.3750,1.7327,1.2653],[1.0000,1.1240,1.3037,1.4445,1.8889,1.3163],[1.0000,1.1107,1.2714,1.4183,1.8084,1.2919]],
+        b: [[1.0000,1.2804,1.3590,1.4853,1.5000,1.4343],[1.0000,1.0370,1.1667,1.3243,1.7460,1.2156],[1.0000,1.0581,1.1738,1.3112,1.6854,1.2116],[1.0000,1.0580,1.1739,1.3143,1.6813,1.2108]] },
+      { title: 'NOC',
+        a: [[0.0000,0.0816,0.1081,0.1530,0.1648,0.1111],[0.0000,0.0000,0.0404,0.1055,0.2376,0.0697],[0.0000,0.0000,0.0598,0.1231,0.2903,0.0784],[0.0000,0.0000,0.0569,0.1097,0.2590,0.0707]],
+        b: [[0.0000,0.0000,0.0279,0.0638,0.0989,0.0531],[0.0000,0.0000,0.0000,0.0784,0.1944,0.0566],[0.0000,0.0000,0.0178,0.0851,0.2083,0.0619],[0.0000,0.0000,0.0159,0.0833,0.2077,0.0614]] },
+      { title: 'LCOM*',
+        a: [[0.1518,0.1891,0.2306,0.2778,0.3319,0.2394],[0.0000,0.1799,0.2494,0.3164,0.4759,0.2450],[0.0301,0.1888,0.2396,0.2976,0.4589,0.2478],[0.0431,0.1906,0.2426,0.2957,0.4422,0.2486]],
+        b: [[0.2897,0.2898,0.3208,0.3460,0.3576,0.3261],[0.0000,0.1672,0.2405,0.3211,0.5189,0.2457],[0.0000,0.1707,0.2383,0.3185,0.5312,0.2421],[0.0000,0.1611,0.2295,0.3125,0.5312,0.2343]] }
+    ]
+  };
+
+  function fmtNum(v) {
+    return v.toFixed(v < 1 ? 2 : 1).replace('.', ',');
   }
-});
-window.initParticles = function(canvas, options) {
-  if (!canvas) return;
-  const ctx = canvas.getContext('2d');
-  const interactive = options.interactive !== false;
-  const count = options.count || (interactive ? 55 : 18);
-  const documentMouse = options.documentMouse === true;
-  let mx = -1000, my = -1000;
-  const rgb = getComputedStyle(document.documentElement).getPropertyValue('--glow-color-rgb').trim() || '173,81,40';
-  const [r, g, b] = rgb.split(',').map(Number);
-  let particles = [];
-  function syncSize() {
-    const w = window.innerWidth;
-    const h = window.innerHeight;
-    canvas.width = w;
-    canvas.height = h;
-    particles.forEach(p => {
-      if (p.x > w) p.x = w;
-      if (p.y > h) p.y = h;
-    });
-  }
-  syncSize();
-  particles = Array.from({ length: count }, () => ({ x: Math.random() * canvas.width, y: Math.random() * canvas.height, vx: (Math.random() - 0.5) * 0.3, vy: (Math.random() - 0.5) * 0.3, size: Math.random() * 2.5 + 0.8, alpha: Math.random() * 0.35 + 0.1 }));
-  window.addEventListener('resize', syncSize);
-  if (interactive) {
-    if (documentMouse) {
-      document.addEventListener('mousemove', (e) => { mx = e.clientX; my = e.clientY; });
-      document.addEventListener('mouseleave', () => { mx = -1000; my = -1000; });
-    } else {
-      canvas.addEventListener('mousemove', (e) => { const rect = canvas.getBoundingClientRect(); mx = e.clientX - rect.left; my = e.clientY - rect.top; });
-      canvas.addEventListener('mouseleave', () => { mx = -1000; my = -1000; });
-    }
-  }
-  (function animate() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    particles.forEach(p => {
-      if (interactive) {
-        const dx = p.x - mx, dy = p.y - my, dist = Math.sqrt(dx * dx + dy * dy) || 1;
-        if (dist < 120) {
-          const force = (120 - dist) / 120 * 2;
-          p.vx += (dx / dist) * force * 0.1;
-          p.vy += (dy / dist) * force * 0.1;
-        }
+
+  function renderBoxplotGrid(containerId, cfg) {
+    const root = document.getElementById(containerId);
+    if (!root) return;
+    const W = 170, H = 128, padL = 28, padR = 8, padT = 16, padB = 20;
+    const plotW = W - padL - padR, plotH = H - padT - padB;
+
+    cfg.metrics.forEach(m => {
+      const allVals = [];
+      if (cfg.paired) {
+        m.a.concat(m.b).forEach(d => allVals.push(d[0], d[4], d[5]));
+      } else {
+        m.data.forEach(d => allVals.push(d[0], d[4], d[5]));
       }
-      p.vx *= 0.98; p.vy *= 0.98; p.x += p.vx; p.y += p.vy;
-      if (p.x < 0) p.x = canvas.width; if (p.x > canvas.width) p.x = 0;
-      if (p.y < 0) p.y = canvas.height; if (p.y > canvas.height) p.y = 0;
-      ctx.beginPath(); ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-      ctx.fillStyle = `rgba(${r},${g},${b},${p.alpha})`; ctx.fill();
+      let minV = Math.min(...allVals), maxV = Math.max(...allVals);
+      const span = (maxV - minV) || 1;
+      minV = Math.max(0, minV - span * 0.08);
+      maxV = maxV + span * 0.08;
+      const yOf = (v) => padT + plotH - ((v - minV) / (maxV - minV)) * plotH;
+
+      const ticks = [minV, (minV + maxV) / 2, maxV];
+      let svgParts = [];
+      svgParts.push(`<svg role="img" aria-label="Boxplot de ${m.title} por era" viewBox="0 0 ${W} ${H}" class="w-full h-auto block">`);
+      svgParts.push(`<text x="${W / 2}" y="11" text-anchor="middle" font-size="9.5" font-weight="700" fill="#1a1a1a">${m.title}</text>`);
+
+      ticks.forEach(t => {
+        const y = yOf(t);
+        svgParts.push(`<line x1="${padL}" y1="${y}" x2="${W - padR}" y2="${y}" stroke="rgba(0,0,0,0.09)" stroke-width="0.7"/>`);
+        svgParts.push(`<text x="${padL - 3}" y="${y + 3}" text-anchor="end" font-size="7.2" fill="rgba(0,0,0,0.55)">${fmtNum(t)}</text>`);
+      });
+
+      const nEras = cfg.eras.length;
+      const drawSingleBox = (cx, boxW, d, fill, stroke) => {
+        const [lw, q1, med, q3, uw, mean] = d;
+        const yLw = yOf(lw), yQ1 = yOf(q1), yMed = yOf(med), yQ3 = yOf(q3), yUw = yOf(uw), yMean = yOf(mean);
+        const half = boxW / 2, cap = boxW * 0.34;
+        svgParts.push(`<line x1="${cx}" y1="${yUw}" x2="${cx}" y2="${yQ3}" stroke="${stroke}" stroke-width="0.9"/>`);
+        svgParts.push(`<line x1="${cx}" y1="${yQ1}" x2="${cx}" y2="${yLw}" stroke="${stroke}" stroke-width="0.9"/>`);
+        svgParts.push(`<line x1="${cx - cap}" y1="${yUw}" x2="${cx + cap}" y2="${yUw}" stroke="${stroke}" stroke-width="0.9"/>`);
+        svgParts.push(`<line x1="${cx - cap}" y1="${yLw}" x2="${cx + cap}" y2="${yLw}" stroke="${stroke}" stroke-width="0.9"/>`);
+        svgParts.push(`<rect x="${cx - half}" y="${yQ3}" width="${boxW}" height="${Math.max(1.2, yQ1 - yQ3)}" fill="${fill}" stroke="${stroke}" stroke-width="0.95" rx="1"/>`);
+        svgParts.push(`<line x1="${cx - half}" y1="${yMed}" x2="${cx + half}" y2="${yMed}" stroke="#111827" stroke-width="1.3"/>`);
+        svgParts.push(`<circle cx="${cx}" cy="${yMean}" r="1.9" fill="#111827"/>`);
+      };
+
+      cfg.eras.forEach((era, idx) => {
+        const center = padL + ((idx + 0.5) / nEras) * plotW;
+        if (cfg.paired) {
+          const bw = Math.min(11, (plotW / nEras) * 0.34);
+          drawSingleBox(center - bw * 0.62, bw, m.a[idx], 'rgba(234,88,12,0.58)', '#7c2d12');
+          drawSingleBox(center + bw * 0.62, bw, m.b[idx], 'rgba(148,163,184,0.55)', '#334155');
+        } else {
+          const bw = Math.min(18, (plotW / nEras) * 0.52);
+          drawSingleBox(center, bw, m.data[idx], 'rgba(173,81,40,0.30)', '#6b2e13');
+        }
+        svgParts.push(`<text x="${center}" y="${H - 5}" text-anchor="middle" font-size="7.8" font-weight="600" fill="#1f2937">${era}</text>`);
+      });
+
+      svgParts.push(`</svg>`);
+      const cell = document.createElement('div');
+      cell.className = 'boxplot-cell';
+      cell.innerHTML = svgParts.join('');
+      root.appendChild(cell);
     });
-    requestAnimationFrame(animate);
-  })();
-};
-(function () {
-  const deckParticles = document.getElementById('deck-particles');
-  if (deckParticles) {
-    window.initParticles(deckParticles, { interactive: true, count: 55, documentMouse: true });
+
+    // 8th slot: compact legend
+    const legend = document.createElement('div');
+    legend.className = 'boxplot-cell flex flex-col justify-center gap-1.5 text-[0.7rem] text-gray-900/80 px-2.5';
+    if (cfg.paired) {
+      legend.innerHTML = `
+        <div class="font-bold text-gray-900">Legenda</div>
+        <div class="flex items-center gap-1.5"><span style="width:10px;height:10px;background:rgba(234,88,12,0.58);border:1px solid #7c2d12;display:inline-block;border-radius:2px"></span> Com IA (88)</div>
+        <div class="flex items-center gap-1.5"><span style="width:10px;height:10px;background:rgba(148,163,184,0.55);border:1px solid #334155;display:inline-block;border-radius:2px"></span> Sem IA (449)</div>
+        <div class="text-[0.66rem] text-black/60">Linha = mediana · Ponto = média</div>
+      `;
+    } else {
+      legend.innerHTML = `
+        <div class="font-bold text-gray-900">Como ler</div>
+        <div>Caixa: <strong>Q1 a Q3</strong></div>
+        <div>Linha interna: <strong>Mediana</strong></div>
+        <div>Ponto preto: <strong>Média</strong></div>
+      `;
+    }
+    root.appendChild(legend);
   }
-})();
-try { animateSlide(document.querySelector('.slide.active')); } catch(e) { console.warn('Initial animation error:', e); }
+
+  renderBoxplotGrid('boxplots-pioneiro', BOX_PIONEIRO);
+  renderBoxplotGrid('boxplots-principal', BOX_PRINCIPAL);
+  renderBoxplotGrid('boxplots-ia', BOX_IA);
+
+  // Slide Deck Navigation & Accessibility
+  let current = 1;
+  const slides = Array.from(document.querySelectorAll('.slide'));
+  const total = slides.length;
+  const dotsContainer = document.getElementById('dots');
+  const counter = document.getElementById('counter');
+  const secPills = Array.from(document.querySelectorAll('.sec-pill'));
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  let motionPaused = prefersReducedMotion.matches;
+
+  slides.forEach((slide, idx) => {
+    const n = idx + 1;
+    const label = slide.getAttribute('aria-label') || `Slide ${n}`;
+    const dot = document.createElement('button');
+    dot.type = 'button';
+    dot.className = 'dot';
+    dot.setAttribute('aria-label', `Ir para slide ${n}: ${label}`);
+    if (n === 1) dot.setAttribute('aria-current', 'step');
+    dot.addEventListener('click', () => goToSlide(n));
+    dotsContainer.appendChild(dot);
+  });
+
+  function animateSlide(slide) {
+    if (prefersReducedMotion.matches || motionPaused) {
+      slide.querySelectorAll('.reveal').forEach(el => {
+        el.style.transition = 'none';
+        el.style.opacity = '1';
+        el.style.transform = 'none';
+      });
+      return;
+    }
+    slide.querySelectorAll('.reveal').forEach((el, i) => {
+      el.style.transition = 'none';
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(14px)';
+      el.offsetHeight;
+      const delay = Math.min(i * 0.055, 0.35);
+      el.style.transition = `opacity 0.32s ease ${delay}s, transform 0.32s ease ${delay}s`;
+      el.style.opacity = '1';
+      el.style.transform = 'translateY(0px)';
+    });
+  }
+
+  function updateNav() {
+    const dots = dotsContainer.querySelectorAll('.dot');
+    dots.forEach((d, i) => {
+      if (i + 1 === current) d.setAttribute('aria-current', 'step');
+      else d.removeAttribute('aria-current');
+    });
+    counter.textContent = `${current} / ${total}`;
+
+    const activeSlide = slides[current - 1];
+    const activeSec = activeSlide ? activeSlide.getAttribute('data-section') : '1';
+    secPills.forEach(pill => {
+      if (pill.getAttribute('data-target') === activeSec) pill.setAttribute('aria-current', 'true');
+      else pill.removeAttribute('aria-current');
+    });
+  }
+
+  function goToSlide(n) {
+    if (n < 1 || n > total || n === current) return;
+    const prev = slides[current - 1];
+    const next = slides[n - 1];
+    if (prev) {
+      prev.classList.remove('active');
+      prev.setAttribute('inert', '');
+    }
+    if (next) {
+      next.removeAttribute('inert');
+      next.classList.add('active');
+      next.scrollTop = 0;
+      animateSlide(next);
+    }
+    current = n;
+    updateNav();
+  }
+
+  function changeSlide(dir) {
+    let next = current + dir;
+    if (next < 1) next = total;
+    if (next > total) next = 1;
+    goToSlide(next);
+  }
+
+  document.getElementById('prev-btn').addEventListener('click', () => changeSlide(-1));
+  document.getElementById('next-btn').addEventListener('click', () => changeSlide(1));
+  secPills.forEach(pill => {
+    pill.addEventListener('click', () => goToSlide(Number(pill.getAttribute('data-target'))));
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.target.closest('a, button, input, textarea, select')) {
+      if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+    }
+    if (e.target.closest('.table-wrapper') && (e.key === 'ArrowRight' || e.key === 'ArrowLeft')) {
+      return;
+    }
+    if (e.key === 'ArrowRight' || e.key === 'PageDown' || (e.key === ' ' && !e.target.closest('button, a'))) {
+      e.preventDefault();
+      changeSlide(1);
+    } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
+      e.preventDefault();
+      changeSlide(-1);
+    } else if (e.key === 'Home') {
+      e.preventDefault();
+      goToSlide(1);
+    } else if (e.key === 'End') {
+      e.preventDefault();
+      goToSlide(total);
+    }
+  });
+
+  let touchStartX = 0, touchStartY = 0;
+  document.addEventListener('touchstart', (e) => {
+    touchStartX = e.touches[0].clientX;
+    touchStartY = e.touches[0].clientY;
+  }, { passive: true });
+  document.addEventListener('touchend', (e) => {
+    if (e.target.closest('.table-wrapper')) return;
+    const dx = touchStartX - e.changedTouches[0].clientX;
+    const dy = touchStartY - e.changedTouches[0].clientY;
+    if (Math.abs(dx) > 55 && Math.abs(dx) > Math.abs(dy) * 1.4) {
+      changeSlide(dx > 0 ? 1 : -1);
+    }
+  }, { passive: true });
+
+  document.addEventListener('mousemove', (e) => {
+    if (motionPaused) return;
+    const spotlight = document.querySelector('.mouse-spotlight');
+    if (spotlight) {
+      const rgb = getComputedStyle(document.documentElement).getPropertyValue('--glow-color-rgb').trim() || '173,81,40';
+      spotlight.style.background = `radial-gradient(600px circle at ${e.clientX}px ${e.clientY}px, rgba(${rgb}, 0.04), transparent 40%)`;
+    }
+  });
+
+  // Pause/Play control for background motion (WCAG 2.2.2)
+  const motionToggle = document.getElementById('motion-toggle');
+  function syncMotionState() {
+    document.body.classList.toggle('motion-paused', motionPaused);
+    motionToggle.textContent = motionPaused ? 'Animar fundo' : 'Pausar fundo';
+  }
+  motionToggle.addEventListener('click', () => {
+    motionPaused = !motionPaused;
+    syncMotionState();
+    if (!motionPaused && window.resumeParticles) window.resumeParticles();
+  });
+  syncMotionState();
+
+  window.initParticles = function(canvas, options) {
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    const count = options.count || 48;
+    let mx = -1000, my = -1000;
+    const rgb = getComputedStyle(document.documentElement).getPropertyValue('--glow-color-rgb').trim() || '173,81,40';
+    const [r, g, b] = rgb.split(',').map(Number);
+    let particles = [];
+    let rafId = null;
+
+    function syncSize() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      particles.forEach(p => {
+        if (p.x > canvas.width) p.x = canvas.width;
+        if (p.y > canvas.height) p.y = canvas.height;
+      });
+      drawStatic();
+    }
+
+    particles = Array.from({ length: count }, () => ({
+      x: Math.random() * window.innerWidth,
+      y: Math.random() * window.innerHeight,
+      vx: (Math.random() - 0.5) * 0.28,
+      vy: (Math.random() - 0.5) * 0.28,
+      size: Math.random() * 2.3 + 0.8,
+      alpha: Math.random() * 0.32 + 0.10
+    }));
+
+    function drawStatic() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      particles.forEach(p => {
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(${r},${g},${b},${p.alpha})`;
+        ctx.fill();
+      });
+    }
+
+    syncSize();
+    window.addEventListener('resize', syncSize);
+    document.addEventListener('mousemove', (e) => { mx = e.clientX; my = e.clientY; });
+    document.addEventListener('mouseleave', () => { mx = -1000; my = -1000; });
+
+    function tick() {
+      if (motionPaused) {
+        rafId = null;
+        return;
+      }
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      particles.forEach(p => {
+        const dx = p.x - mx, dy = p.y - my, dist = Math.sqrt(dx * dx + dy * dy) || 1;
+        if (dist < 115) {
+          const force = (115 - dist) / 115 * 1.8;
+          p.vx += (dx / dist) * force * 0.08;
+          p.vy += (dy / dist) * force * 0.08;
+        }
+        p.vx *= 0.98; p.vy *= 0.98; p.x += p.vx; p.y += p.vy;
+        if (p.x < 0) p.x = canvas.width; if (p.x > canvas.width) p.x = 0;
+        if (p.y < 0) p.y = canvas.height; if (p.y > canvas.height) p.y = 0;
+        ctx.beginPath(); ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(${r},${g},${b},${p.alpha})`;
+        ctx.fill();
+      });
+      rafId = requestAnimationFrame(tick);
+    }
+
+    window.resumeParticles = function() {
+      if (!rafId && !motionPaused) rafId = requestAnimationFrame(tick);
+    };
+    if (!motionPaused) rafId = requestAnimationFrame(tick);
+  };
+
+  initParticles(document.getElementById('deck-particles'), { count: 48 });
+  animateSlide(slides[0]);
 </script>
 </body>
 </html>
